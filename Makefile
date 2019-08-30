@@ -19,9 +19,6 @@ help:
 %: Makefile
 	@$(SPHINXBUILD) -M $@ "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
 
-install-deps:
-	pip3 install -r requirements-docs.txt
-
 fetchnotebooks:
 	[ -d notebooks ] || git clone https://github.com/GeoscienceAustralia/dea-notebooks.git notebooks
 	cd notebooks && git pull
