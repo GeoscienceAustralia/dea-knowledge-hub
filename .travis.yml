@@ -9,7 +9,7 @@ addons:
       - pandoc
 
 script:
-  - make fetchnotebooks html
+  - make install-deps fetchnotebooks html
 
 deploy:
   - provider: s3
