@@ -40,14 +40,12 @@ and list what you would like to see changed.
 
 .. toctree::
    :maxdepth: 1
-   :caption: Connect
+   :caption: Setup
 
-   connect/account.rst
-   connect/install.rst
-   connect/get_help.rst
-   connect/nci_basics.rst
-   connect/jupyter.rst
-   internal/other_modules.rst
+   setup/README.rst
+   setup/sandbox.rst
+   setup/NCI/README.rst
+   setup/jupyter.rst
 
 
 .. toctree::
@@ -82,4 +80,3 @@ and list what you would like to see changed.
   :caption: Indexes
 
   genindex
-
