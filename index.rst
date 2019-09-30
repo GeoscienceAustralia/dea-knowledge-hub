@@ -46,6 +46,7 @@ and list what you would like to see changed.
    setup/sandbox.rst
    setup/NCI/README.rst
    setup/CIAB/README.rst
+   setup/independent.rst
    setup/jupyter.rst
 
 

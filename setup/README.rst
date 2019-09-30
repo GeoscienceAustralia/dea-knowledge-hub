@@ -10,12 +10,23 @@ The primary software for DEA is the `Open Data Cube`_ (ODC), which can be easily
 Instances
 ---------
 
+**Pre-built instance:**
+
 There are two available pre-built instances: the `Digital Earth Australia Sandbox`_ and the `National Computational Infrastructure`_ (NCI).
 The Sandbox is suitable for all users, containing a representative sample of available data.
 The NCI contains all available data, but users must apply and be approved to gain an account.
 
 .. _Digital Earth Australia Sandbox: sandbox.rst
 .. _National Computational Infrastructure: NCI/README.rst
+
+**Building your own instance:**
+
+There are two options for building your own instance: the `Cube in a Box`_ or an `Independent Install`_. 
+The Cube in a Box option uses a reference installation of the Open Data Cube, which will automatically install the required packages. Performing an independent install is more complex, but will allow you full control over the install. 
+Both options allow you to install the ODC on either your local machine or a cloud instance.
+
+.. _Cube in a Box: CIAB/README.rst
+.. _Independent Install: independent.rst
 
 Examples
 --------

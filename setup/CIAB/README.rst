@@ -1,5 +1,5 @@
-Cube in a box
-==============
+Cube in a Box
+=============
 
 The Cube in a Box is a pre-configured option to run the Open Data Cube (ODC). 
 It utilises `Docker <https://www.docker.com/>`_ and `Docker-compose <https://docs.docker.com/compose/>`_ to 
@@ -28,7 +28,7 @@ To run Cube in a Box you are need to have the following tools and accounts:
 
       * As part of the sign-up, you will need to provide a credit card. However, this will only be charged for resources used. You can check the Disclaimer section on the `DEA S3 Bucket <http://dea-public-data.s3-ap-southeast-2.amazonaws.com/index.html>`_ to understand potential resource charges.
 
-Once you have downloaded the tools and have accounts on the necessary services, read the `additional guide <https://www.dea-learning-portal.test.frontiersi.io/more-help-docker-aws-setip>`_ for more information on the install and set-up processes.
+Once you have downloaded the tools and have accounts on the necessary services, read the `additional guide <additional.rst>`_.
 
 Step 1 - Get and start the Cube in a Box environment
 ----------------------------------------------------
@@ -43,7 +43,7 @@ Once you have the cube-in-a-box folder, enter it from your terminal program. You
 
 **Windows Powershell:**
 
-.. code-block:: bash
+.. code-block:: powershell
     
     cd <path>\<to>\cube-in-a-box-master
 
@@ -57,7 +57,7 @@ In your terminal program, set the environment variables for ODC_ACCESS_KEY and O
 
 **Windows Powershell:**
 
-.. code-block:: bash
+.. code-block:: powershell
     
     $env:ODC_ACCESS_KEY = "<your_access_key_id>"
     $env:ODC_SECRET_KEY = "<your_secret_access_key>"
@@ -97,7 +97,7 @@ Loging in will start the Jupyter environment, which looks like:
 
 This environment has the ODC Python library ready to go, but the database doesn't contain any data (or references to where data is stored). To analyse data, you need to provide the database with a location and description of the data you want to work with. This is known as "indexing" data. Click the below link on instructions on how to index.
 
-Now you can ready to `Index your first satellite dataset <cube-in-a-box-index.html>`_.
+Now you can ready to `Index your first satellite dataset <indexing.rst>`_.
 
 How to stop the environment
 ---------------------------
