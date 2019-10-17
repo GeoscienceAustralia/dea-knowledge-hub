@@ -1,11 +1,18 @@
 To build a local copy of the DEA docs, install the programs in
-requirements-docs.txt and run 'make fetchnotebooks html'.
+requirements.txt and run 'make fetchnotebooks html'.
 After building for the first time, you only need to run 'make html'.
-If you use the conda package manager these commands suffice::
+The instructions below are specific to building the docs for the `dea-notebooks <https://github.com/GeoscienceAustralia/dea-notebooks/tree/develop>`_ ``develop`` branch.
+If you use the conda package manager these commands will suffice::
 
-  git clone git@github.com:GeoscienceAustralia/digitalearthau.git
-  cd digitalearthau/docs
-  conda create -c conda-forge -n deadocs --file requirements-docs.txt
+  git clone https://github.com/GeoscienceAustralia/dea-docs.git
+  cd dea-docs
+  conda create -c conda-forge -n deadocs --file requirements.txt
   conda activate deadocs
-  make fetchnotebooks html
+  make fetchnotebooks
+  cd notebooks
+  git checkout develop
+  cd ..
+  make html
   open _build/html/index.html
+  
+See the `contribution instructions <https://github.com/GeoscienceAustralia/dea-docs/wiki/Contribution-instructions>`_ for more details.
