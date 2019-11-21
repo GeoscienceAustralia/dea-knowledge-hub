@@ -5,17 +5,31 @@
 Jupyter Notebooks
 =================
 
+Jupyter Notebooks are one of the primary tools for developing analyses with DEA.
+The ability to combine code with easy-to-read Markdown makes them useful for both developing and sharing work.
+Jupyter Notebooks can be used on both the `DEA Sandbox`_ and the `NCI`_.
+
+.. _DEA Sandbox: sandbox.rst
+.. _NCI: NCI/README.rst
+
+Opening a notebook
+------------------
+
+After launching JupterLab on the Sandbox or NCI (see the respective guides), double-click through the available folders to view notebooks (indicated by the ``.ipynb`` file extension).
+Then, double-click the notebook to open it in the main work area.
+
+Read more about opening files in the `JupyterLab Documentation`_.
+
+.. _JupyterLab Documentation: https://jupyterlab.readthedocs.io/en/stable/user/files.html
+
 Executing a notebook
 --------------------
 
-The Digital Earth Australia link on your VDI desktop (described in Install step) will start Jupyter Notebooks in the dea_examples folder.
-Here you will find the notebooks from the User Guide below, as well as the notebook *Digital Earth Australia.ipynb* which provides a brief introduction to using Jupyter Notebooks.
-
 To run a notebook follow these steps:
 
-* In the Notebook Dashboard navigate to find the notebook: clicking on its name will open it in a new browser tab.
-* You can run the notebook document step-by-step (one cell a time) by pressing **shift + enter**.
-* You can run the whole notebook in a single step by clicking on the menu **Cell -> Run All**.
+* Open the notebook you want to run
+* To execute a given code cell, click the cell and run it by pressing **shift + enter**.
+* To run the whole notebook in a single step, click on the menu **Run -> Run All**.
 * To restart the kernel (i.e. the computational engine), click on the menu **Kernel -> Restart**. This can be useful to start over a computation from scratch (e.g. variables are deleted, open files are closed, etc...).
 
 Closing a notebook
