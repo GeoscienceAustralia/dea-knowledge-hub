@@ -26,15 +26,35 @@ Glossary
 
    GA
       Geoscience Australia
+      
+   HLTC
+      High and Low Tide Composites, a Digital Earth Australia product providing
+      cloud-free imagery mosaics of Australia's coast, estuaries and reefs at low 
+      and high tide.
+      
+   ITEM
+      Intertidal Extents Model, a Digital Earth Australia product that maps the 
+      relative extent of the Australian intertidal zone at regular intervals of 
+      the observed tidal range.
 
    NBAR
-      Nadir-corrected BRDF Adjusted Reflectance
+      Nadir-corrected BRDF Adjusted Reflectance, where BRDF stands for Bidirectional
+      reflectance distribution function.
+      
+   NBAR-T
+      Nadir-corrected BRDF Adjusted Reflectance with terrain illumination reflectance 
+      correction.
 
    NCI
       The Australian National Computational Infrastructure is Australia's
       national research computing facility. It provides computing facilities for
       use by Australian researchers, industry and government. For more
       information see http://www.nci.org.au/.
+
+   NIDEM
+      National Intertidal Digital Elevation Model, a Digital Earth Australia product 
+      derived from ITEM that maps the elevation relative to Mean Sea Level of the 
+      Australian intertidal zone. 
       
    ODC
       Open Data Cube, an international open-source project developing the technology
@@ -58,6 +78,11 @@ Glossary
       Virtual Desktop Infrastructure is a virtual laboratory at NCI that provides a
       linux desktop environment for scientific computing. For more see
       http://vdi.nci.org.au/help.
+      
+   WOfS
+      Water Observations from Space, a Digital Earth Australia product that provides
+      images and data showing where water has been seen in Australia from 1987 to 
+      the present. 
 
    YAML
       YAML is a human friendly data serialization standard for all programming
