@@ -5,8 +5,9 @@ If you use the conda package manager these commands will suffice::
 
   git clone https://github.com/GeoscienceAustralia/dea-docs.git
   cd dea-docs
-  conda create -c conda-forge -n deadocs --file requirements.txt
+  conda create -c conda-forge -n deadocs python=3.7 pandoc
   conda activate deadocs
+  pip install -r requirements.txt
   make fetchnotebooks html
   open _build/html/index.html
   
