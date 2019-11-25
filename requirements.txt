@@ -1,5 +1,8 @@
 Sphinx>=2
 nbsphinx
+#sphinx-rtd-theme==0.4.3
+# Use a development build of RTD theme in Sphinx>2 to fix warnings and rendering of Definition Lists
+git+https://github.com/readthedocs/sphinx_rtd_theme.git@ab7d388448258a24f8f4fa96dccb69d24f571736
 sphinx_rtd_theme
 IPython
 recommonmark
