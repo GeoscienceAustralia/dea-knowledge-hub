@@ -32,7 +32,7 @@ For a more detailed introduction, visit the `Jupyter Notebook Documentation`_.
 
 The examples contained in each instance are the same as those covered in the `User Guide`_.
 
-.. _User Guide: ../notebooks/01_Getting_started/README.rst
+.. _User Guide: ../notebooks/Beginners_guide/README.rst
 
 Getting help
 ------------
