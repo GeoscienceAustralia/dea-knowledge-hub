@@ -37,11 +37,11 @@ You can see a list of available modules by running::
 
 The first time you load the module, it will register your account with the datacube, granting you read-only access.
 
-It will store your password in the file `~/.pgpass`.
+It will store your password in the file ``~/.pgpass``.
 
-You can then launch the jupyter-lab notebook by running::
+You can then launch a Jupyter notebook by running::
 
-    $ jupyter-lab notebook
+    $ jupyter-lab <path_to_notebook>
 
 .. note::
     ``VDI`` and ``gadi`` have separate home directories, so you must copy your pgpass to the other if
