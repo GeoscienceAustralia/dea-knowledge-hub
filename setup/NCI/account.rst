@@ -25,7 +25,7 @@ Virtual Desktop Analysis
 
 The easiest way to use Digital Earth Australia is to connect to a remote
 desktop at NCI, called :term:`VDI`. (It is also possible to run on NCI's
-``raijin`` HPC cluster, but is recommended that you prototype on VDI first.)
+``gadi`` HPC cluster, but is recommended that you prototype on VDI first.)
 
 Your NCI account will need to be a member of a VDI project. You can view your
 project memberships at https://my.nci.org.au/. If you do not already have access to
@@ -87,12 +87,12 @@ High Performance Computing
 --------------------------
 
 The DEA environment can also be accessed within the High Performance Computing
-(HPC) environment (i.e. Raijin_). This will require compute and storage quota
+(HPC) environment (i.e. Gadi_). This will require compute and storage quota
 allocations to be made via NCI's Allocation Scheme processes, on a per-project
 basis. This does not need to be specific to DEA – all users with computing
-capabilities on Raijin are able to access DEA through the HPC system.
+capabilities on Gadi are able to access DEA through the HPC system.
 
 This guide focuses on accessing and exploring DEA via the VDI environment.
 
 
-.. _Raijin: http://nci.org.au/systems-services/peak-system/raijin/
+.. _Gadi: https://nci.org.au/our-systems/hpc-systems/
