@@ -75,6 +75,7 @@ by using the same process as joining a VDI Project as described above.
      - Geophysics reference data
 
 .. _rs0: https://my.nci.org.au/mancini/project/rs0
+.. _xu18: https://my.nci.org.au/mancini/project/xu18
 .. _if87: https://my.nci.org.au/mancini/project/if87
 .. _fk4: https://my.nci.org.au/mancini/project/fk4
 .. _fj7: https://my.nci.org.au/mancini/project/fj7
