@@ -52,6 +52,9 @@ by using the same process as joining a VDI Project as described above.
 
    * - rs0_
      - Analysis Ready Surface Reflectance Data from Landsat satellites.
+     
+   * - xu18_
+     - GA Landsat Analysis Ready Data (Collection 3) is a foundation product enabling delivery of Digital Earth Australia.
 
    * - if87_
      - Sentinel-2 Analysis Ready Data
