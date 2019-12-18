@@ -22,15 +22,12 @@ Read more about opening files in the `JupyterLab Documentation`_.
 
 .. _JupyterLab Documentation: https://jupyterlab.readthedocs.io/en/stable/user/files.html
 
-Executing a notebook
---------------------
+Working with notebooks
+----------------------
 
-To run a notebook follow these steps:
+For an in-depth guide on running and editing notebooks, see the `introduction to Jupyter notebooks`_ section of the Beginner's guide.
 
-* Open the notebook you want to run
-* To execute a given code cell, click the cell and run it by pressing **shift + enter**.
-* To run the whole notebook in a single step, click on the menu **Run -> Run All**.
-* To restart the kernel (i.e. the computational engine), click on the menu **Kernel -> Restart**. This can be useful to start over a computation from scratch (e.g. variables are deleted, open files are closed, etc...).
+.. _introduction to Jupyter notebooks: ../notebooks/Beginners_guide/01_Jupyter_notebooks.ipynb
 
 Closing a notebook
 ------------------
