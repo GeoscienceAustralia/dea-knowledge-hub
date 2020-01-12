@@ -7,6 +7,7 @@ If you use the conda package manager these commands will suffice::
   cd dea-docs
   conda create -c conda-forge -n deadocs --file requirements.txt
   conda activate deadocs
+  pip install -r requirements.txt
   make fetchnotebooks html
   open _build/html/index.html
 
