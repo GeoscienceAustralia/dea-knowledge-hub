@@ -9,19 +9,19 @@ Command Line Usage (Advanced)
 
    This section is intended for advanced users, and describes using DEA from
    a command line interface. This is mostly useful if you intend on running
-   batch jobs on ``raijin`` and need to do some testing on VDI. Or simply if
+   batch jobs on ``gadi`` and need to do some testing on the ``VDI``. Or simply if
    you're curious.
 
 
 On ``VDI``, you can start a terminal window from **Applications** -> **System Tools**.
 
-To manually use the modules on ``raijin`` or ``VDI``, add the datacube module path::
+To manually use the modules on ``gadi`` or the ``VDI``, add the datacube module path::
 
     $ module use /g/data/v10/public/modules/modulefiles/
 
 (you can add the above to your ``.bashrc`` to avoid running it every time)
 
-You should now be able to load the DEA module by running::
+You should now be able to load the ``dea`` module by running::
 
     $ module load dea
 
@@ -37,27 +37,27 @@ You can see a list of available modules by running::
 
 The first time you load the module, it will register your account with the datacube, granting you read-only access.
 
-It will store your password in the file `~/.pgpass`.
+It will store your password in the file ``~/.pgpass``.
 
-You can then launch the jupyter-lab notebook by running::
+You can then launch a Jupyter notebook by running::
 
-    $ jupyter-lab notebook
+    $ jupyter-lab <path_to_notebook>
 
 .. note::
-    VDI and Raijin have separate home directories, so you must copy your pgpass to the other if
+    ``VDI`` and ``gadi`` have separate home directories, so you must copy your pgpass to the other if
     you use both environments.
 
-    You can push the contents of your pgpass file from VDI to Raijin by running on a terminal window in VDI::
+    You can push the contents of your pgpass file from the ``VDI`` to ``gadi`` by running on a terminal window in VDI::
 
         remote-hpc-cmd init
-        ssh raijin "cat >> ~/.pgpass" < ~/.pgpass
-        ssh raijin "chmod 0600 ~/.pgpass"
+        ssh gadi "cat >> ~/.pgpass" < ~/.pgpass
+        ssh gadi "chmod 0600 ~/.pgpass"
 
     You will most likely be prompted for your NCI password.
 
-    To pull the contents of your pgpass from Raijin to VDI instead, run ::
+    To pull the contents of your pgpass from ``gadi`` to the ``VDI`` instead, run ::
 
-        ssh raijin "cat ~/.pgpass" >> ~/.pgpass
+        ssh gadi "cat ~/.pgpass" >> ~/.pgpass
         chmod 0600 ~/.pgpass
 
 .. warning::
