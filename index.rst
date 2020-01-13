@@ -18,10 +18,10 @@ Digital Earth Australia is an analysis platform for satellite imagery and other 
 For more information on the project, see http://www.ga.gov.au/dea
 
 Digital Earth Australia is currently in beta for users with
-accounts on the National Computational Infrastructure (NCI).
+accounts on the National Computational Infrastructure (NCI) or the Digital Earth Australia Sandbox (see the :ref:`Setup introduction <setup>` page).
 
 Data can be viewed on `NationalMap <https://nationalmap.gov.au/>`_,
-or accessed directly at https://data.dea.ga.gov.au (see :ref:`s3`).
+or accessed directly from `Amazon S3 Storage <https://data.dea.ga.gov.au>`_.
 
 Our OGC Web Service supporting WMS, WCS and some WPS functionality is `<https://ows.services.dea.ga.gov.au/>`_.
 
@@ -40,46 +40,25 @@ and list what you would like to see changed.
 
 .. toctree::
    :maxdepth: 1
-   :caption: Connect
+   :caption: Setup
 
-   connect/account.rst
-   connect/install.rst
-   connect/get_help.rst
-   connect/nci_basics.rst
-   connect/jupyter.rst
-   internal/other_modules.rst
+   setup/README.rst
+   setup/sandbox.rst
+   setup/NCI/README.rst
+   setup/jupyter.rst
 
 
 .. toctree::
    :caption: User Guide
+   :maxdepth: 1
    :glob:
 
-   notebooks/*/README
-
-
-.. toctree::
-   :maxdepth: 1
-   :caption: Data Guide
-
-   data/data.rst
-   data/s3.rst
-   data/s3-sftp.rst
-
+   notebooks/Beginners_guide/README.rst
+   notebooks/DEA_datasets/README.rst
+   notebooks/Frequently_used_code/README.rst
+   notebooks/Real_world_examples/README.rst
 
 .. toctree::
-   :maxdepth: 1
-   :caption: Developer Guide
-
-   internal/new_product.rst
-   internal/git_best_practice.rst
-   internal/release.rst
-   internal/modules.rst
-   internal/collection_management.rst
-   internal/requirements_met.ipynb
-
-
-.. toctree::
-  :caption: Indexes
+  :caption: Index
 
   genindex
-
