@@ -6,18 +6,23 @@ addons:
   apt:
     packages:
     - pandoc
-script:
-- make fetchnotebooks html
-deploy:
-- provider: s3
-  bucket: docs.dea.ga.gov.au
-  region: ap-southeast-2
-  local_dir: _build/html/
-  skip_cleanup: true
-  on:
-    branch: master
-    repo: GeoscienceAustralia/dea-docs
 env:
   global:
+    # include $HOME/.local/bin for `aws`
+    - PATH=$HOME/.local/bin:$PATH
+    - DISTRIBUTION_ID=E181UE1XIZWFWI
+    # Authentication for AWS Deployment
     - AWS_ACCESS_KEY_ID=AKIAJXBYJBQGLDCKMLYA 
     - secure: Fo7aD7XloyCktaKumkhGMQ6CWV4YT5/tY01ffmS+z+O8WkyOvrB4f/p1JXREvmTxpb7PpdSEPPCNh0uFd0tfAotTeYk7cyvPuIRvjQT0Ha3Uf4+Crwe/d15Cm+VS3nVaHpMEC+bRmC7AlMpl9MV61K9zEvZtREQ0ljFp3m6C411NEhrOodBVRu1ZhCbsBMsTy3ymM6kJGXpAFAVSrS5bXK96Pqhr0KwYfW4Uqt55MKziMcDyL8vHWLg9IKLLRfuulnLlKe1h95bRmWrkRs4SNTstN22fupCeE6m4Rs5S0VIiREXmqb0mcDKUW5heyJ5QWTawO4U+arM1zp5w0Gb/QR9PAUF2rtoJpqpCBxO4B8Wnhr6uFshrLKFzErIMWTRkMyQe4sudRpIYoTEzwEz1+RR8XbdfAPZLf7asJybHZSl3ClNE3He2yhhe7srtpmKxl/X9+dApk7NxMFylFugIemjETGaKjexgAoLC+NmijPxsORtcra8YxTjgSRPbGMD2x3gqC9oaOau3iAWPtHUyss27DZXrT/TFLWYxst7D8xwtNRc5XIbXnyyFGu854uWQd7XeIgMMSo+DTnkrGpN0F4ypdaq6aay/8uMEwdnwXQerAQ90rIt+n0MbsLngo0K+8RgHAphWmfluNo9Xht+pD1W+m9HM0vy+2Or50QM28iU=
+
+script:
+- make fetchnotebooks html
+
+after_success:
+ - |
+    if [[ $TRAVIS_BRANCH == master && $TRAVIS_REPO_SLUG == GeoscienceAustralia/dea-docs ]]; then
+      pip install --user awscli
+      aws s3 sync --size-only --delete _build/html/ s3://docs.dea.ga.gov.au
+      aws cloudfront create-invalidation --distribution-id $DISTRIBUTION_ID --paths '/*'
+    fi
+
