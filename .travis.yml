@@ -14,5 +14,5 @@ deploy:
   on:
     branch: master
     repo: GeoscienceAustralia/dea-docs
-  script: .deployment/deploy.sh
+  script: bash .deployment/deploy.sh
 
