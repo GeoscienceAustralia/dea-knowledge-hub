@@ -3,8 +3,7 @@ language: python
 python: ['3.7']
 addons:
   apt:
-    packages:
-    - pandoc
+    packages: [ pandoc ]
 
 script:
 - make fetchnotebooks html
@@ -15,7 +14,5 @@ deploy:
   on:
     branch: master
     repo: GeoscienceAustralia/dea-docs
-  script: |
-      pip install awscli
-      aws s3 sync --size-only --delete _build/html/ s3://docs.dea.ga.gov.au
-      aws cloudfront create-invalidation --distribution-id $DISTRIBUTION_ID --paths '/*'
+  script: .deployment/deploy.sh
+
