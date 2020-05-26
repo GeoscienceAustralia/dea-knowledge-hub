@@ -26,13 +26,27 @@ Glossary
       http://ceos-cube.org/
       
    COG
-      Cloud Optimised GeoTIFF, a data file format. 
+      Cloud Optimised GeoTIFF, a data file format optimised for efficient 
+      workflows on the cloud and remote reading. 
    
    CSIRO
       Commonwealth Scientific and Industrial Research Organisation
 
    DEA
       Digital Earth Australia
+      
+   DEA Notebooks
+      Digital Earth Australia Notebooks, a open-source repository containing 
+      Jupyter Notebooks, tools and workflows for geospatial analysis with Open 
+      Data Cube and xarray.
+      
+   DEA Sandbox
+      Digital Earth Australia Sandbox, a learning and analysis environment for 
+      getting started with DEA and the Open Data Cube. It includes sample data 
+      and Jupyter notebooks that demonstrate the capability of the Open Data Cube.
+      
+   DE Africa
+      Digital Earth Africa
 
    EO
       Earth Observation
@@ -50,14 +64,14 @@ Glossary
       Geoscience Australia
     
    Geomedian
-      Geometric median of a time series of data (i.e. an average 
-      that tries to also be robust and spectrally realistic)
+      Geometric median, a robust high-dimensional statistic that maintains 
+      relationships between spectral bands.
       
    GEE
       Google Earth Engine
       
    GIS
-      Geospatial Information System
+      Geographic Information System
    
    HLTC
       High and Low Tide Composites, a Digital Earth Australia product providing
@@ -68,9 +82,19 @@ Glossary
       Intertidal Extents Model, a Digital Earth Australia product that maps the 
       relative extent of the Australian intertidal zone at regular intervals of 
       the observed tidal range.
+      
+   Jupyter notebook
+      A computational "notebook" that allows code to be run and presented alongside 
+      explanatory documentation, figures, scientific notation etc.
+      
+   JupyterLab
+      An interactive web-based user interface for editing and running Jupyter notebooks.
+      JupyterLab is used as an analysis environment on both the DEA Sandbox and the NCI's
+      Virtual Desktop Infrastructure.
 
    Landsat
-      Satellites from NASA that have publicly available Earth Observation data.
+      A joint NASA/USGS program of medium resolution satellites that have been 
+      collecting publicly available Earth observation data continuously since 1972.
    
    LCCS
       Land Cover Classification Scheme
@@ -79,8 +103,9 @@ Glossary
       Median Absolute Deviation, used as a form of standard deviation for the geomedians.
    
    MODIS
-      Moderate Resolution Imaging Spectroradiometer, satellite from NASA that has 
-      publicly available Earth Observation Data
+      Moderate Resolution Imaging Spectroradiometer, a sensor on board NASA's Terra and 
+      Aqua satellites that collects publicly available low resolution Earth observation 
+      data every one to two days.
    
    NASA
       National Aeronautics and Space Administration (United States)
@@ -89,7 +114,7 @@ Glossary
       Nadir-corrected BRDF Adjusted Reflectance, where BRDF stands for Bidirectional
       reflectance distribution function.
       
-   NBAR-T
+   NBART
       Nadir-corrected BRDF Adjusted Reflectance with terrain illumination reflectance 
       correction.
    
@@ -127,7 +152,7 @@ Glossary
       Cube schema makes use of both of these capabilities.
 
    Python
-      The programming language used to develop the Data Cube. It is easy to use
+      The programming language used to develop the Open Data Cube. It is easy to use
       while still allowing high performance access and processing capabilities.
       See http://www.python.org/ for more.
 
@@ -135,8 +160,9 @@ Glossary
       Synthetic Aperture Radar
    
    Sentinel
-      Satellites from ESA that have publicly available Earth Observation data, also
-      the name of one of GA's fire hotspots websites.
+      A program of satellites from ESA that collect publicly available Earth 
+      observation data. The program includes the medium resolution Sentinel-2 mission, 
+      and the Sentinel-1 SAR mission.
    
    USGS
       United States Geological Survey
@@ -153,6 +179,10 @@ Glossary
       Water Observations from Space, a Digital Earth Australia product that provides
       images and data showing where water has been seen in Australia from 1987 to 
       the present. 
+      
+   xarray
+      An open source project and Python package that for working with labelled 
+      multi-dimensional arrays such as those returned by the Open Data Cube (ODC).
 
    YAML
       YAML is a human friendly data serialization standard for all programming
