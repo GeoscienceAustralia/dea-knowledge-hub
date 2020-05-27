@@ -6,11 +6,12 @@ Glossary
 .. glossary::
 
    AGDC
-      The Australian Geoscience Data Cube, an Australian implementation of the
-      ODC.
+      The Australian Geoscience Data Cube prototype, an early Australian 
+      implementation of the Open Data Cube. The AGDC has since been superseded by 
+      Digital Earth Australia.
 
    API
-      The Data Cube Application Programming Interface gives programmers full
+      The Open Data Cube Application Programming Interface gives programmers full
       access to the capabilities of the Cube, allowing query and advanced data
       retrieval.
       
@@ -33,7 +34,10 @@ Glossary
       Commonwealth Scientific and Industrial Research Organisation
 
    DEA
-      Digital Earth Australia
+      Digital Earth Australia, a platform that uses spatial data and images 
+      recorded by satellites orbiting our planet to detect physical changes 
+      across Australia in unprecedented detail. DEA is an implementation of
+      the Open Data Cube.
       
    DEA Notebooks
       Digital Earth Australia Notebooks, a open-source repository containing 
