@@ -36,21 +36,22 @@ Glossary
    DEA
       Digital Earth Australia, a platform that uses spatial data and images 
       recorded by satellites orbiting our planet to detect physical changes 
-      across Australia in unprecedented detail. DEA is an implementation of
-      the Open Data Cube.
+      across Australia in unprecedented detail. DEA is the Australian implementation of
+      the Open Data Cube. For more information see https://www.ga.gov.au/dea.
       
    DEA Notebooks
       Digital Earth Australia Notebooks, a open-source repository containing 
       Jupyter Notebooks, tools and workflows for geospatial analysis with Open 
-      Data Cube and xarray.
+      Data Cube and xarray. See https://github.com/GeoscienceAustralia/dea-notebooks.
       
    DEA Sandbox
       Digital Earth Australia Sandbox, a learning and analysis environment for 
       getting started with DEA and the Open Data Cube. It includes sample data 
-      and Jupyter notebooks that demonstrate the capability of the Open Data Cube.
+      and Jupyter notebooks that demonstrate the capability of the Open Data Cube. 
+      For more information see https://github.com/GeoscienceAustralia/dea-notebooks/wiki.
       
    DE Africa
-      Digital Earth Africa
+      Digital Earth Africa. For more information see https://www.digitalearthafrica.org/.
 
    EO
       Earth Observation
@@ -62,7 +63,10 @@ Glossary
       Food and Agriculture Organization of the United Nations
    
    FC
-      Fractional Cover
+      Fractional Cover. Fractional Cover (FC) is a measurement that splits the landscape into 
+      three parts, or fractions; green (leaves, grass, and growing crops), brown (branches, 
+      dry grass or hay, and dead leaf litter), and bare ground (soil or rock). For more information
+      and for details of the methodology, see https://www.ga.gov.au/dea/products/fc.
    
    GA
       Geoscience Australia
@@ -80,12 +84,12 @@ Glossary
    HLTC
       High and Low Tide Composites, a Digital Earth Australia product providing
       cloud-free imagery mosaics of Australia's coast, estuaries and reefs at low 
-      and high tide.
+      and high tide. For more information see https://www.ga.gov.au/dea/products/hltc.
       
    ITEM
       Intertidal Extents Model, a Digital Earth Australia product that maps the 
       relative extent of the Australian intertidal zone at regular intervals of 
-      the observed tidal range.
+      the observed tidal range. For more information see https://www.ga.gov.au/dea/products/iem.
       
    Jupyter notebook
       A computational "notebook" that allows code to be run and presented alongside 
@@ -139,7 +143,7 @@ Glossary
    NIDEM
       National Intertidal Digital Elevation Model, a Digital Earth Australia product 
       derived from ITEM that maps the elevation relative to Mean Sea Level of the 
-      Australian intertidal zone. 
+      Australian intertidal zone. For more information see https://www.ga.gov.au/dea/products/nidem.
       
    NIR
       Near Infrared, referring to particular bands used to collect Earth observation 
@@ -148,7 +152,7 @@ Glossary
    ODC
       Open Data Cube, an international open-source project developing the technology
       that powers Digital Earth Australia. For more information see
-      http://opendatacube.org/ .
+      http://opendatacube.org/.
 
    PostgreSQL
       The high performance database engine used as an index of Datasets by the
@@ -182,7 +186,7 @@ Glossary
    WOfS
       Water Observations from Space, a Digital Earth Australia product that provides
       images and data showing where water has been seen in Australia from 1987 to 
-      the present. 
+      the present. For more information see https://www.ga.gov.au/dea/products/wofs.
       
    xarray
       An open source project and Python package that for working with labelled 
@@ -191,7 +195,6 @@ Glossary
    YAML
       YAML is a human friendly data serialization standard for all programming
       languages. It is used for all on disk metadata files and product
-      definitions in the Data Cube.
-
-      For more information on the YAML standard see http://yaml.org/.
+      definitions in the Data Cube. For more information on the YAML standard 
+      see http://yaml.org/.
 
