@@ -1,5 +1,6 @@
 Sphinx>=2
-nbsphinx==0.4.3
+nbsphinx==0.7.1
+nbconvert<6
 sphinx_rtd_theme
 IPython
 recommonmark
