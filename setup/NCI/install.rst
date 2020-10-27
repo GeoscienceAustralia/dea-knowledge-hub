@@ -10,6 +10,12 @@ Required Software
 Install TurboVNC and Strudel according to the instructions at http://vdi.nci.org.au/help.
 
 .. note::
+   The NCI released a new version of the Virtual Desktop Infrastructure (VDI) on 28/10/2020. 
+   If you are having trouble connecting to the VDI after this date (and did not have trouble
+   before this date) please consult the most recent 
+   `VDI FAQ help <https://opus.nci.org.au/display/Help/4.+VDI+FAQ>`_
+   
+.. note::
    The NCI instructions recommend specific versions of 
    `TurboVNC <https://sourceforge.net/projects/turbovnc/files/>`_ and
    `Strudel <https://cvl.massive.org.au/launcher_files/stable/>`_.
