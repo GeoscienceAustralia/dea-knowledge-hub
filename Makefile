@@ -21,7 +21,7 @@ help:
 
 fetchnotebooks:
 	[ -d notebooks ] || git clone https://github.com/GeoscienceAustralia/dea-notebooks.git notebooks
-	cd notebooks && git checkout master && git reset --hard origin/master && git pull 
+	cd notebooks && git checkout stable && git reset --hard origin/stable && git pull 
 #	rm -rf notebooks
 #	git clone --depth 1
 
