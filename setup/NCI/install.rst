@@ -59,20 +59,28 @@ Setting up DEA
 
 Once you have logged on to the VDI, you can add a desktop shortcut to Digital Earth Australia.
 
-From the **Applications** menu in the top left of the screen, choose **System** -> **Terminal**.
+From the **Applications** menu in the top left of the screen, choose **System Tools** -> **Terminal**.
 
 .. figure:: /_static/vdi-launch-terminal.png
    :align: center
    :alt: Start Terminal Menu
 
-   Launch the Terminal from the System Tools menu.
-
 In the terminal window run the command::
 
    sh /g/data/v10/public/digitalearthau/install.sh
 
-You can then launch Jupyter Notebooks, with the Digital Earth Australia environment preconfigured, by double-clicking the icon.
-From within this environment you can access the notebooks from the User Guide below, or create your own notebooks to work with Digital Earth Australia.
+This will copy a shortcut icon called **dea.desktop** to your VDI desktop.
+Right click on this icon and select **Allow launching**. 
+
+.. figure:: /_static/allow_launching.gif
+   :align: center
+   :alt: Allow launching
+
+You can then launch Jupyter Lab with the Digital Earth Australia environment preconfigured by double-clicking the icon.
+From within this environment you can access the notebooks from the User Guide, or create your own notebooks to work with Digital Earth Australia.
+
+.. note::
+   For more information about getting started with Digital Earth Australia on the NCI, refer to the `Digital Earth Australia Notebooks wiki page <https://github.com/GeoscienceAustralia/dea-notebooks/wiki#getting-started-on-the-ncivirtual-desktop-infrastructure>`_.
 
 Shutting Down VDI
 =================
