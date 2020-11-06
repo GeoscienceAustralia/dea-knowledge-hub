@@ -46,18 +46,18 @@ To setup Strudel to connect to the NCI, run the Strudel application, then:
 To connect:
 
 * Site: **NCI Virtual Desktops**
-* Username: Your NCI username (eg `abc123` or `ab1234`)
+* Username: Your NCI username (eg ``abc123`` or ``ab1234``)
 * Click **Login**
 
 .. note::
    If the drop-down site list in Strudel remains empty, it most likely means 
-   that the software is unable to retrieve the strudel.json URL, 
+   that the software is unable to retrieve the ``strudel.json`` URL, 
    such as due to firewall or network proxy configuration.
 
 Setting up DEA
 ==============
 
-Once you have logged on to the VDI, you can add a desktop shortcut to Digital Earth Australia.
+Once you have logged on to the VDI, you can install Digital Earth Australia.
 
 From the **Applications** menu in the top left of the screen, choose **System Tools** -> **Terminal**.
 
@@ -69,14 +69,16 @@ In the terminal window run the command::
 
    sh /g/data/v10/public/digitalearthau/install.sh
 
-This will copy a shortcut icon called **dea.desktop** to your VDI desktop.
-Right click on this icon and select **Allow launching**. 
+This will download the latest version of the `Digital Earth Australia notebooks repository <https://github.com/GeoscienceAustralia/dea-notebooks/tree/stable>`_ into your VDI home directory (e.g. ``~/dea-notebooks``).
 
-.. figure:: /_static/allow_launching.gif
+Once this has completed, click **Applications** menu in the top left of the screen, then **Science**.
+This menu will now include a new program called **Digital Earth Australia**.
+
+.. figure:: /_static/dea_install.jpg
    :align: center
-   :alt: Allow launching
+   :alt: New menu item
 
-You can then launch Jupyter Lab with the Digital Earth Australia environment preconfigured by double-clicking the icon.
+You can then click this icon to launch Jupyter Lab with the Digital Earth Australia environment preconfigured.
 From within this environment you can access the notebooks from the User Guide, or create your own notebooks to work with Digital Earth Australia.
 
 .. note::
