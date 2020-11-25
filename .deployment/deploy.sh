@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Travis-CI Needs an external script to run multiple deployment commands. :sadface:
+# Deploy the docs to S3 and invalidate the cloudfront distribution
 #
 
 pip install awscli
