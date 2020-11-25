@@ -26,9 +26,10 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
+          sudo apt install pandoc
       - name: Fetch notebooks
         run: |
-          make fetchnotebooks
+          git clone --depth 1 https://github.com/GeoscienceAustralia/dea-notebooks.git notebooks
       - name: Build docs
         run: |
           make html
