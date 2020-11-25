@@ -2,6 +2,8 @@ name: Publish
 
 on:
   workflow_dispatch:
+  repository_dispatch:
+    types: [ republish-docs ]
   push:
     branches:
       - master
