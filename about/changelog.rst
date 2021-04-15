@@ -6,6 +6,12 @@
  Changelog
 ===========
 
+2021-04-15
+==========
+
+Refresh of the data documentation has been written.
+
+
 2020-01-09
 ==========
 
