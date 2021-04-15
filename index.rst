@@ -41,6 +41,7 @@ and list what you would like to see changed.
    setup/README.rst
    setup/sandbox.rst
    setup/NCI/README.rst
+   setup/AWS/data_and_metadata.rst
    setup/jupyter.rst
 
 
