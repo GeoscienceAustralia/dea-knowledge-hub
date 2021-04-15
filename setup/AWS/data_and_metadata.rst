@@ -82,7 +82,7 @@ and have message attributes including the following:
 * ``bbox.ll_lon``, ``bbox.ll_lat``, ``bbox.ur_lon``, ``bbox.ur_lat``: the lower left
   or upper right longitude or latitude of the scene
 
-For Surface Reflectance products, the following attidional attributes are included:
+For Surface Reflectance products, the following additional attributes are included:
 
 * ``cloud_cover``: percentage cloud cover, a number between 0 and 100
 * ``gqa_iterative_mean_xy``: a measure of the scenes geometric accuracy in pixels
