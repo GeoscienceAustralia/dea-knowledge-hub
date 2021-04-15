@@ -79,7 +79,7 @@ and have message attributes including the following:
 * ``product``: the Open Data Cube product name for the scene
 * ``datetime``: the datetime stamp for the scene, this is the capture time of the scene
 * ``maturity``: the maturity level of the dataset, either "nrt", "interim" or "final"
-* ``bbox.ll_lon``, `bbox.ll_lat``, `bbox.ur_lon``, `bbox.ur_lat``: the lower left
+* ``bbox.ll_lon``, ``bbox.ll_lat``, ``bbox.ur_lon``, ``bbox.ur_lat``: the lower left
   or upper right longitude or latitude of the scene
 
 For Surface Reflectance products, the following attidional attributes are included:
