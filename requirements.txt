@@ -4,3 +4,4 @@ nbconvert<6
 sphinx_rtd_theme
 IPython
 recommonmark
+Jinja2<3
