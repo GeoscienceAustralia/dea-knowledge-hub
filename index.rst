@@ -36,7 +36,7 @@ and list what you would like to see changed.
 
 .. toctree::
    :maxdepth: 1
-   :caption: Setup
+   :caption: Access
 
    setup/README.rst
    setup/sandbox.rst

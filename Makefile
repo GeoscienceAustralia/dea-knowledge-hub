@@ -26,4 +26,4 @@ fetchnotebooks:
 #	git clone --depth 1
 
 livehtml:
-	sphinx-autobuild -b html -p 8123 --watch . --ignore _build --ignore "*_tmp_*" --ignore "*_old_*" . $(ALLSPHINXOPTS) $(BUILDDIR)/html
+	sphinx-autobuild --open-browser --port 8001 --ignore notebooks --ignore .direnv --ignore _build/ --ignore .git/ --ignore .idea/ -b html $(SPHINXOPTS) . $(BUILDDIR)/html
