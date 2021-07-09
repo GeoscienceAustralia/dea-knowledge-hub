@@ -43,6 +43,7 @@ and list what you would like to see changed.
    setup/NCI/README.rst
    setup/AWS/data_and_metadata.rst
    setup/jupyter.rst
+   setup/faq.rst
 
 
 .. toctree::
