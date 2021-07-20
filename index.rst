@@ -16,7 +16,7 @@ For more information on the project, see http://www.ga.gov.au/dea
 Digital Earth Australia is currently in beta for users with
 accounts on the National Computational Infrastructure (NCI) or the Digital Earth Australia Sandbox (see the :ref:`Setup introduction <setup>` page).
 
-Data can be viewed on `NationalMap <https://nationalmap.gov.au/>`_,
+Data can be viewed on the interactive `Digital Earth Australia Maps <https://maps.dea.ga.gov.au/>`_ platform,
 or accessed directly from `Amazon S3 Storage <https://data.dea.ga.gov.au>`_.
 
 Our OGC Web Service supporting WMS, WCS and some WPS functionality is `<https://ows.services.dea.ga.gov.au/>`_.
