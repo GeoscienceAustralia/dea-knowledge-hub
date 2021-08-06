@@ -70,38 +70,30 @@ Do this by using the same process as joining a VDI Project as described above.
    * - Project
      - Contents
 
-   * - rs0_
-     - Analysis Ready Surface Reflectance Data from Landsat satellites.
-     
-   * - xu18_
-     - GA Landsat Analysis Ready Data (Collection 3) is a foundation product enabling delivery of Digital Earth Australia.
+   * - wd8_
+     - To use the NCI's Virtual Desktop Infrastructure (VDI)
 
+   * - xu18_
+     - Geoscience Australia Landsat Analysis Ready Data (Collection 3)
+     
    * - if87_
-     - Sentinel-2 Analysis Ready Data
+     - Geoscience Australia Sentinel-2 Analysis Ready Data (Collection 1) 
+     
+   * - jw04_
+     - Geoscience Australia Landsat Derivatives (Collection 3), e.g. WO, FC
 
    * - fk4_
-     - Derivative EO data. WOfS, Fractional Cover, NIDEM, statistical summaries.
-
-   * - fj7_
-     - Copernicus Hub data. Sentinel 1-3
-
-   * - u39_
-     - IMOS and TERN-AusCover Satellite Products (MODIS)
-
-   * - rr5_
-     - Bureau of Meteorology. Rainfall grids, Himawari 8, etc.
-
-   * - rr2_
-     - Geophysics reference data
-
-.. _rs0: https://my.nci.org.au/mancini/project/rs0
+     - Geoscience Australia Landsat Derivatives (Collection 2), e.g. WOfS, Fractional Cover, NIDEM, statistical summaries
+     
+   * - rs0_
+     - Geoscience Australia Landsat Analysis Ready Data (Collection 2); to be decommissioned by 2022
+     
+.. _wd8: https://my.nci.org.au/mancini/project/wd8
 .. _xu18: https://my.nci.org.au/mancini/project/xu18
 .. _if87: https://my.nci.org.au/mancini/project/if87
+.. _jw04: https://my.nci.org.au/mancini/project/jw04
 .. _fk4: https://my.nci.org.au/mancini/project/fk4
-.. _fj7: https://my.nci.org.au/mancini/project/fj7
-.. _u39: https://my.nci.org.au/mancini/project/u39
-.. _rr5: https://my.nci.org.au/mancini/project/rr5
-.. _rr2: https://my.nci.org.au/mancini/project/rr2
+.. _rs0: https://my.nci.org.au/mancini/project/rs0
 
 High Performance Computing
 ==========================
