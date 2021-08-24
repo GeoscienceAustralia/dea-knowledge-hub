@@ -31,8 +31,6 @@ and list what you would like to see changed.
    :caption: Overview
 
    about/intro.rst
-   about/glossary.rst
-   about/changelog.rst
 
 .. toctree::
    :maxdepth: 1
@@ -42,21 +40,22 @@ and list what you would like to see changed.
    setup/sandbox.rst
    setup/NCI/README.rst
    setup/AWS/data_and_metadata.rst
-   setup/jupyter.rst
-   setup/faq.rst
-
 
 .. toctree::
    :caption: User Guide
    :maxdepth: 1
    :glob:
 
+   setup/jupyter.rst
    notebooks/Beginners_guide/README.rst
    notebooks/DEA_datasets/README.rst
    notebooks/Frequently_used_code/README.rst
    notebooks/Real_world_examples/README.rst
 
 .. toctree::
-  :caption: Index
+  :caption: Appendix
 
-  genindex
+   about/glossary.rst
+   setup/faq.rst
+   about/changelog.rst
+   genindex
