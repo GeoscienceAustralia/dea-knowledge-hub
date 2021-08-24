@@ -105,13 +105,13 @@ It can be useful to compare different satellite datasets, or imagery from differ
    :align: center
    :alt: Compare
 
-2. A screen splitter will appear at the centre of the map, and a new copy of our dataset will been added to the workbench. This will be marked with an orange ``Left``, and our original data will be labelled ``Right``. 
+2. A screen splitter will appear at the centre of the map, and a new copy of our dataset will be added to the workbench. The workbench has also updated with orange labels to show that this new copy will be shown on the ``Left`` of the screen, and our original data shown on the ``Right``. 
 
 .. figure:: /_static/DEA_maps/dea_maps_compare_2.jpg
    :align: center
    :alt: Screen splitter
 
-3. Filter this new copy of our dataset to the same location (e.g. ``Filter by location`` then click on the map), then select a new date from the "Time" dropdown. You should see the left-hand side of the map update with Sentinel-2 imagery. Using your mouse, you can now grab the screen splitter in the centre of the screen, and swipe from side to side to compare imagery from these two time periods side-by-side.
+3. Filter this new copy of our dataset to the same location (e.g. ``Filter by location`` then click on the map), then select a new date from the "Time" dropdown. The left-hand side of the map will update with Sentinel-2 imagery from this date. Using your mouse, you can now grab the screen splitter in the centre of the screen, and swipe from side to side to compare imagery from these two time periods side-by-side.
 
 .. figure:: /_static/DEA_maps/dea_maps_compare_3.jpg
    :align: center
