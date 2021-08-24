@@ -16,7 +16,7 @@ There are two available pre-built instances: the `Digital Earth Australia Sandbo
 The Sandbox is suitable for all users, containing a representative sample of available data.
 The NCI contains all available data, but users must apply and be approved to gain an account.
 
-.. _Digital Earth Australia Sandbox: sandbox.rst
+.. _Digital Earth Australia Sandbox: Sandbox/sandbox.rst
 .. _National Computational Infrastructure: NCI/README.rst
 
 Examples

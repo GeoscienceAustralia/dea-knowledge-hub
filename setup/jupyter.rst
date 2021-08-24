@@ -9,7 +9,7 @@ Jupyter Notebooks are one of the primary tools for developing analyses with DEA.
 The ability to combine code with easy-to-read Markdown makes them useful for both developing and sharing work.
 Jupyter Notebooks can be used on both the `DEA Sandbox`_ and the `NCI`_.
 
-.. _DEA Sandbox: sandbox.rst
+.. _DEA Sandbox: Sandbox/sandbox.rst
 .. _NCI: NCI/README.rst
 
 Opening a notebook
