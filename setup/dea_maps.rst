@@ -36,7 +36,7 @@ To explore DEA Maps:
    :align: center
    :alt: Menindee
 
-4. click ``Explore map data`` on the top-left to start adding data to the map. This will bring up a view of the DEA data catalogue.
+4. Click ``Explore map data`` on the top-left to start adding data to the map. This will bring up a view of the DEA data catalogue.
 
 .. figure:: /_static/DEA_maps/dea_maps_4.jpg
    :align: center
@@ -48,8 +48,14 @@ To explore DEA Maps:
    :align: center
    :alt: Adding data
 
-6. The ``DEA Surface Reflectance (Sentinel-2)`` product will now be added to the "workbench" on the left of the screen. At this point, it may not display on the map - this is because there may not have been any Sentinel-2 images captured over this location on the day we have selected. To filter our satellite data to images captured in this location, click ``Filter by location``, then click on the map:
+6. The ``DEA Surface Reflectance (Sentinel-2)`` product will now be added to the "workbench" on the left of the screen. At this point, satellite data may not display on the map - this may be because there were no Sentinel-2 images captured over this location on the select day. To filter our satellite data to all images captured at this location, click ``Filter by location``, then click on the map.
 
 .. figure:: /_static/DEA_maps/dea_maps_6.jpg
    :align: center
    :alt: Adding data
+
+7. Sentinel-2 satellite data will now appear on the map. To view imagery for a different date, select a new time by clicking on the date in the workbench, or drag the time slider along the bottom of the map window.
+
+.. figure:: /_static/DEA_maps/dea_maps_7.jpg
+   :align: center
+   :alt: Changing time
