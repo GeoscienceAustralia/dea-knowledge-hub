@@ -9,7 +9,7 @@
 2021-07-16
 ==========
 
-Thanks to the `Geoscience Australia Landsat Collection Upgrade (video)<https://www.youtube.com/watch?v=BNEIG91lu44>`_, our data catalogue now 
+Thanks to the `Geoscience Australia Landsat Collection Upgrade (video) <https://www.youtube.com/watch?v=BNEIG91lu44>`_, our data catalogue now 
 includes Collection 3 data for `DEA Surface Reflectance <https://cmi.ga.gov.au/collection/geoscience-australia-landsat-collection-3>`_, 
 also available through `OWS <https://ows.dea.ga.gov.au/>`_. Other Collection 3 products will soon follow, including DEA Water Observations (WOfS), 
 and DEA Fractional Cover.
@@ -31,7 +31,7 @@ Questions can be raised to dea@ga.gov.au.
 
 Added a new guide to accessing DEA data via `Amazon Web Services`_.
 
-.. _Amazon Web Services: ../setup/AWS/data_and_metadata.rst
+.. _Amazon Web Services: ../access/AWS/data_and_metadata.rst
 
 
 2020-01-09
