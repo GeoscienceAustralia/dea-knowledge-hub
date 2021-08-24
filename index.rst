@@ -30,18 +30,18 @@ and list what you would like to see changed.
    :maxdepth: 1
    :caption: Overview
 
-   overview/intro.rst
+   about/intro.rst
 
 .. toctree::
    :maxdepth: 1
    :caption: Access
 
-   access/README.rst
-   access/dea_maps.rst
-   access/Sandbox/sandbox.rst
-   access/NCI/README.rst
-   access/AWS/data_and_metadata.rst
-   access/jupyter.rst
+   setup/README.rst
+   setup/dea_maps.rst
+   setup/Sandbox/sandbox.rst
+   setup/NCI/README.rst
+   setup/AWS/data_and_metadata.rst
+   setup/jupyter.rst
 
 .. toctree::
    :caption: User Guide
@@ -56,7 +56,7 @@ and list what you would like to see changed.
 .. toctree::
   :caption: Appendix
 
-  appendix/faq.rst
-  appendix/changelog.rst
-  appendix/glossary.rst
+  about/faq.rst
+  about/changelog.rst
+  about/glossary.rst
   genindex
