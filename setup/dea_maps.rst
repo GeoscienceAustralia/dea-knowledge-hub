@@ -48,7 +48,8 @@ To explore DEA Maps:
    :align: center
    :alt: Adding data
 
-6. The ``DEA Surface Reflectance (Sentinel-2)`` product will now be added to the "workbench" on the left of the screen. At this point, satellite data may not display on the map - this may be because there were no Sentinel-2 images captured over this location on the select day. To filter our satellite data to all images captured at this location, click ``Filter by location``, then click on the map.
+6. The ``DEA Surface Reflectance (Sentinel-2)`` product will now be added to the "workbench" on the left of the screen. At this point, satellite data may not display on the map - this may be because there were no Sentinel-2 images captured over this location on the select day. To filter our satellite data to all images captured at this location, click ``Filter by location``, then click on the map. You will see the filter applied in blue in the workbench
+ on the left.
 
 .. figure:: /_static/DEA_maps/dea_maps_6.jpg
    :align: center
@@ -59,3 +60,18 @@ To explore DEA Maps:
 .. figure:: /_static/DEA_maps/dea_maps_7.jpg
    :align: center
    :alt: Changing time
+
+.. note::
+   The time slider can also be used to animate satellite imagery. Click the arrow "Play" button to the left of the time slider, and control the speed of the animation using the "Play faster" and "Play slower" buttons.
+
+
+Changing styles
+---------------
+
+Data on DEA Maps often contains multiple layers for each product that can be visualised to reveal important information about the Australian landscape. To access this data:
+
+1. Load a satellite dataset into your workbench and filter it to your location (e.g. follow the ``DEA Surface Reflectance (Sentinel-2)`` example above). Click the white box below ``Styles`` at the bottom of the dataset box. This will bring up a list of available styles for the dataset.
+
+.. figure:: /_static/DEA_maps/dea_maps_styles_1.jpg
+   :align: center
+   :alt: Styles
