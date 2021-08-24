@@ -6,10 +6,32 @@
  Changelog
 ===========
 
+2021-07-16
+==========
+
+Thanks to the `Geoscience Australia Landsat Collection Upgrade (video)<https://www.youtube.com/watch?v=BNEIG91lu44>`_, our data catalogue now 
+includes Collection 3 data for `DEA Surface Reflectance <https://cmi.ga.gov.au/collection/geoscience-australia-landsat-collection-3>`_, 
+also available through `OWS <https://ows.dea.ga.gov.au/>`_. Other Collection 3 products will soon follow, including DEA Water Observations (WOfS), 
+and DEA Fractional Cover.
+ 
+`DEA Notebooks <https://github.com/GeoscienceAustralia/dea-notebooks/tree/develop/DEA_datasets>`_ 
+and the `User Guide`_ have been updated with Collection 3 code examples to reflect the upgrade, 
+and our `Content Management Interface <https://cmi.ga.gov.au/>`_ and 
+`DEA Maps platforms <https://maps.dea.ga.gov.au/>`_ are also being updated.
+ 
+Users of Collection 2 are encouraged to use Collection 3 data.
+A staged decommissioning of Collection 2 is underway and will continue into 2022.
+Questions can be raised to dea@ga.gov.au.
+
+.. _User Guide: ../notebooks/Beginners_guide/README.rst
+
+
 2021-04-15
 ==========
 
-Refresh of the data documentation has been written.
+Added a new guide to accessing DEA data via `Amazon Web Services`_.
+
+.. _Amazon Web Services: ../setup/AWS/data_and_metadata.rst
 
 
 2020-01-09
