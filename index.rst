@@ -53,6 +53,7 @@ and list what you would like to see changed.
    notebooks/Real_world_examples/README.rst
 
 .. toctree::
+  :maxdepth: 1
   :caption: Appendix
 
    about/glossary.rst

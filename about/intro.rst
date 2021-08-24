@@ -1,7 +1,7 @@
 .. _introduction:
 
-Introduction
-============
+About DEA
+=========
 
 Overview
 --------
