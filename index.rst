@@ -32,7 +32,6 @@ and list what you would like to see changed.
 
    about/intro.rst
    about/glossary.rst
-   about/changelog.rst
 
 .. toctree::
    :maxdepth: 1
@@ -44,7 +43,6 @@ and list what you would like to see changed.
    setup/AWS/data_and_metadata.rst
    setup/jupyter.rst
    setup/faq.rst
-
 
 .. toctree::
    :caption: User Guide
@@ -59,4 +57,5 @@ and list what you would like to see changed.
 .. toctree::
   :caption: Index
 
+  about/changelog.rst
   genindex
