@@ -92,4 +92,4 @@ For Surface Reflectance products, the following additional attributes are includ
 .. _`DEA Surface Reflectance (Landsat 7 ETM+)`: https://cmi.ga.gov.au/data-products/dea/475/dea-surface-reflectance-landsat-7-etm
 .. _`DEA Surface Reflectance (Landsat 8 OLI-TIRS)`: https://cmi.ga.gov.au/data-products/dea/365/dea-surface-reflectance-landsat-8-oli-tirs
 .. _website: https://data.dea.ga.gov.au
-.. _DEA Sandbox: Sandbox/sandbox.rst
+.. _DEA Sandbox: ../Sandbox/sandbox.rst
