@@ -31,7 +31,6 @@ and list what you would like to see changed.
    :caption: Overview
 
    about/intro.rst
-   about/glossary.rst
 
 .. toctree::
    :maxdepth: 1
@@ -58,4 +57,5 @@ and list what you would like to see changed.
   :caption: Index
 
   about/changelog.rst
+  about/glossary.rst
   genindex
