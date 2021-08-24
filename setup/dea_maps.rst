@@ -82,7 +82,12 @@ Data on DEA Maps often contains multiple layers for each product that can be vis
    :align: center
    :alt: False colour
 
-3. Experiment with selecting other views of the data. The list includes several specialised remote sensing indices developed to emphasise vegetation (e.g. ``Normalised Difference Vegetation Index - Red, NIR``), water (e.g. ``Normalised Difference Water Index - Green, NIR``, ``Modified Normalised Difference Water Index - Green, SWIR``), algal blooms (e.g. ``Normalised Difference Chlorophyll Index - Red Edge, Red``), and burnt vegetation (e.g. ``Normalised Burn Ratio - NIR, SWIR``).
+3. Experiment with selecting other views of the data. The list includes several specialised remote sensing indices developed to emphasise different features in the landscape:
+
+* Vegetation (``Normalised Difference Vegetation Index - Red, NIR``)
+* Water (``Normalised Difference Water Index - Green, NIR``, ``Modified Normalised Difference Water Index - Green, SWIR``)
+* Algal blooms (``Normalised Difference Chlorophyll Index - Red Edge, Red``)
+* Burnt areas (``Normalised Burn Ratio - NIR, SWIR``)
 
 .. figure:: /_static/DEA_maps/dea_maps_styles_3.jpg
    :align: center
