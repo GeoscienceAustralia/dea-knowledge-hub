@@ -17,11 +17,11 @@ Data and Services Listing
 * The public S3 bucket can be explored using the interactive web application
   available at https://data.dea.ga.gov.au/.
 
-* Data products' extent and complete scene listing is available via explorer
+* Data products' extent and complete scene listing is available via Explorer
   at https://explorer.sandbox.dea.ga.gov.au/.
 
-* Explorer has a STAC endpoint, for listing or searching metadata records
-  and is available at https://explorer.sandbox.dea.ga.gov.au/stac/.
+* Explorer has a STAC endpoint for listing or searching metadata records,
+ available at https://explorer.sandbox.dea.ga.gov.au/stac/.
 
 * Open Web Services are available at https://ows.dea.ga.gov.au/ and provide
   access to visualisations and data exports via WMS, WMTS and WCS.
@@ -50,12 +50,18 @@ DEA's public data bucket is named ``dea-public-data`` and the ARN for it is
 
 Key products that are available on S3 include the following:
 
-* `DEA Surface Reflectance (Landsat 5 TM)`_: https://data.dea.ga.gov.au/?prefix=baseline/ga_ls5t_ard_3/
-* `DEA Surface Reflectance (Landsat 7 ETM+)`_: https://data.dea.ga.gov.au/?prefix=baseline/ga_ls7e_ard_3/
-* `DEA Surface Reflectance (Landsat 8 OLI-TIRS)`_: https://data.dea.ga.gov.au/?prefix=baseline/ga_ls8c_ard_3/
-* DEA Water Observations: https://data.dea.ga.gov.au/?prefix=derivative/ga_ls_wo_3/
-* DEA Fractional Cover: https://data.dea.ga.gov.au/?prefix=derivative/ga_ls_fc_3/
-* DEA Coastlines: https://data.dea.ga.gov.au/?prefix=derivative/dea_coastlines/
+* `DEA Surface Reflectance (Landsat 5 TM)`_
+  * https://data.dea.ga.gov.au/?prefix=baseline/ga_ls5t_ard_3/
+* `DEA Surface Reflectance (Landsat 7 ETM+)`_
+  * https://data.dea.ga.gov.au/?prefix=baseline/ga_ls7e_ard_3/
+* `DEA Surface Reflectance (Landsat 8 OLI-TIRS)`_
+  * https://data.dea.ga.gov.au/?prefix=baseline/ga_ls8c_ard_3/
+* `DEA Water Observations`_
+  * https://data.dea.ga.gov.au/?prefix=derivative/ga_ls_wo_3/
+* `DEA Fractional Cover`_
+  * https://data.dea.ga.gov.au/?prefix=derivative/ga_ls_fc_3/
+* `DEA Coastlines`_
+  * https://data.dea.ga.gov.au/?prefix=derivative/dea_coastlines/
 
 
 Notifications
@@ -63,14 +69,14 @@ Notifications
 
 We provide a number of notifications for newly produced data that lands on AWS.
 
-* DEA New Data: ``arn:aws:sns:ap-southeast-2:538673716275:DEANewData`` - this is a bucket notifications
-  that is triggered by every object that lands in the ``dea-public-data`` bucket.
-* dea-public-data-landsat-3: ``arn:aws:sns:ap-southeast-2:538673716275:dea-public-data-landsat-3`` - this
-  is a notification that is triggered for each new DEA Surface Reflectance scene
-* dea-public-data-landsat-3-fc: ``arn:aws:sns:ap-southeast-2:538673716275:dea-public-data-landsat-3-fc`` - this
-  is a notification for each DEA Fractional Cover scene produced
-* dea-public-data-landsat-3-wo: ``arn:aws:sns:ap-southeast-2:538673716275:dea-public-data-landsat-3-wo`` - this
-  is a notification for each DEA Water Observations scene produced
+* DEA New Data: ``arn:aws:sns:ap-southeast-2:538673716275:DEANewData``
+  * This is a bucket notifications that is triggered by every object that lands in the ``dea-public-data`` bucket
+* dea-public-data-landsat-3: ``arn:aws:sns:ap-southeast-2:538673716275:dea-public-data-landsat-3``
+  * This is a notification that is triggered for each new DEA Surface Reflectance scene
+* dea-public-data-landsat-3-fc: ``arn:aws:sns:ap-southeast-2:538673716275:dea-public-data-landsat-3-fc``
+  * This is a notification for each DEA Fractional Cover scene produced
+* dea-public-data-landsat-3-wo: ``arn:aws:sns:ap-southeast-2:538673716275:dea-public-data-landsat-3-wo``
+  * This is a notification for each DEA Water Observations scene produced
 
 All the the scene level notifications include a STAC 1.0.0-beta.2 JSON document
 and have message attributes including the following:
@@ -91,5 +97,8 @@ For Surface Reflectance products, the following additional attributes are includ
 .. _`DEA Surface Reflectance (Landsat 5 TM)`: https://cmi.ga.gov.au/data-products/dea/358/dea-surface-reflectance-landsat-5-tm
 .. _`DEA Surface Reflectance (Landsat 7 ETM+)`: https://cmi.ga.gov.au/data-products/dea/475/dea-surface-reflectance-landsat-7-etm
 .. _`DEA Surface Reflectance (Landsat 8 OLI-TIRS)`: https://cmi.ga.gov.au/data-products/dea/365/dea-surface-reflectance-landsat-8-oli-tirs
+.. _`DEA Water Observations`: https://cmi.ga.gov.au/data-products/dea/613/dea-water-observations-landsat
+.. _`DEA Fractional Cover`: https://cmi.ga.gov.au/data-products/dea/629/dea-fractional-cover-landsat
+.. _`DEA Coastlines`: https://cmi.ga.gov.au/data-products/dea/581/dea-coastlines
 .. _website: https://data.dea.ga.gov.au
 .. _DEA Sandbox: ../Sandbox/sandbox.rst

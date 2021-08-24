@@ -53,7 +53,7 @@ and list what you would like to see changed.
    notebooks/Real_world_examples/README.rst
 
 .. toctree::
-  :caption: Index
+  :caption: Appendix
 
   setup/faq.rst
   about/changelog.rst
