@@ -13,7 +13,7 @@ DEA Maps aims to provide easy access to DEA's products to help users to make mor
 Getting started with DEA Maps
 -----------------------------
 
-To explore DEA Maps:
+To explore the data available on DEA Maps:
 
 1. Launch DEA Maps: https://maps.dea.ga.gov.au/. A pop-up window will appear:
 
@@ -75,3 +75,15 @@ Data on DEA Maps often contains multiple layers for each product that can be vis
 .. figure:: /_static/DEA_maps/dea_maps_styles_1.jpg
    :align: center
    :alt: Styles
+
+2. From this menu, click ``False colour - Green, SWIR, NIR``. This will display a false colour view of the satellite imagery that uses wavelengths of light that are invisible to the human eye (near and short-wave infrared) to highlight the presence of water (blue) and growing vegetation (bright green).
+
+.. figure:: /_static/DEA_maps/dea_maps_styles_2.jpg
+   :align: center
+   :alt: False colour
+
+3. Experiment with selecting other views of the data. The list includes several specialised remote sensing indices developed to emphasise vegetation (e.g. ``Normalised Difference Vegetation Index - Red, NIR``), water (e.g. ``Normalised Difference Water Index - Green, NIR``, ``Modified Normalised Difference Water Index - Green, SWIR``), algal blooms (e.g. ``Normalised Difference Chlorophyll Index - Red Edge, Red``), and burnt vegetation (e.g. ``Normalised Burn Ratio - NIR, SWIR``).
+
+.. figure:: /_static/DEA_maps/dea_maps_styles_3.jpg
+   :align: center
+   :alt: Other styles
