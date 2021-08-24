@@ -14,18 +14,10 @@ the DEA data and services on AWS.
 Data and services listing
 -----------------------------
 
-* The public S3 bucket can be explored using the interactive web application
-  available at https://data.dea.ga.gov.au/.
-
-* Data products' extent and complete scene listing is available via Explorer
-  at https://explorer.sandbox.dea.ga.gov.au/.
-
-* Explorer has a STAC endpoint for listing or searching metadata records,
- available at https://explorer.sandbox.dea.ga.gov.au/stac/.
-
-* Open Web Services are available at https://ows.dea.ga.gov.au/ and provide
-  access to visualisations and data exports via WMS, WMTS and WCS.
-
+* The public S3 bucket can be explored using the interactive web application available at https://data.dea.ga.gov.au/.
+* Data products' extent and complete scene listing is available via Explorer at https://explorer.sandbox.dea.ga.gov.au/.
+* Explorer has a STAC endpoint for listing or searching metadata records, available at https://explorer.sandbox.dea.ga.gov.au/stac/.
+* Open Web Services are available at https://ows.dea.ga.gov.au/ and provide access to visualisations and data exports via WMS, WMTS and WCS.
 * The Sandbox is accessible at https://app.sandbox.dea.ga.gov.au/ (see `DEA Sandbox`_).
 
 

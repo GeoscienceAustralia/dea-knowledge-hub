@@ -37,6 +37,7 @@ and list what you would like to see changed.
    :caption: Access
 
    access/README.rst
+   access/dea_maps.rst
    access/Sandbox/sandbox.rst
    access/NCI/README.rst
    access/AWS/data_and_metadata.rst

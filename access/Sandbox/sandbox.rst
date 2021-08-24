@@ -28,7 +28,7 @@ The JupyterLab interface consists of the main work area (right-hand panel), the
 left sidebar (containing a file browser and other useful features), and a menu
 bar along the top.
 
-.. image:: /_static/sandbox-jupyterlab-startup.png
+.. image:: /_static/Sandbox/sandbox-jupyterlab-startup.png
    :align: center
    :alt: JupyterLab Start Up
 

@@ -61,7 +61,7 @@ Once you have logged on to the VDI, you can install Digital Earth Australia.
 
 From the **Applications** menu in the top left of the screen, choose **System Tools** -> **Terminal**.
 
-.. figure:: /_static/vdi-launch-terminal.png
+.. figure:: /_static/NCI/vdi-launch-terminal.png
    :align: center
    :alt: Start Terminal Menu
 
@@ -74,9 +74,9 @@ This will download the latest version of the `Digital Earth Australia notebooks 
 Once this has completed, click **Applications** menu in the top left of the screen, then **Science**.
 This menu will now include a new program called **Digital Earth Australia**.
 
-.. figure:: /_static/dea_install.jpg
+.. figure:: /_static/NCI/dea_install.jpg
    :align: center
-   :alt: New menu item
+   :alt: Install DEA on NCI
 
 You can then click this icon to launch Jupyter Lab with the Digital Earth Australia environment preconfigured.
 From within this environment you can access the notebooks from the User Guide, or create your own notebooks to work with Digital Earth Australia.
