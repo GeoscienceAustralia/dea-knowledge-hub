@@ -37,7 +37,7 @@ and list what you would like to see changed.
    :caption: Access
 
    setup/README.rst
-   setup/sandbox.rst
+   setup/Sandbox/sandbox.rst
    setup/NCI/README.rst
    setup/AWS/data_and_metadata.rst
 
@@ -54,9 +54,10 @@ and list what you would like to see changed.
 
 .. toctree::
   :maxdepth: 1
-  :caption: Appendix
+  :caption: Index
 
    about/glossary.rst
    setup/faq.rst
    about/changelog.rst
-   genindex
+   
+* :ref:`genindex`

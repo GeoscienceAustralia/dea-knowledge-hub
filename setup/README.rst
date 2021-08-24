@@ -1,7 +1,7 @@
 .. _setup:
 
-Introduction
-============
+Accessing DEA data
+==================
 
 This section focusses on getting started with Digital Earth Australia (DEA) through pre-built instances.
 These instances come with examples that teach you how to use DEA, as well as data and software you can use for your own work.
