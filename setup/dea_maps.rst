@@ -68,9 +68,9 @@ To explore the data available on DEA Maps:
 Changing styles
 ---------------
 
-Data on DEA Maps often contains multiple layers for each product that can be visualised to reveal important information about the Australian landscape. To access this data:
+Data on DEA Maps often contains multiple layers for each product that can be visualised to reveal important information about the Australian landscape. To view these layers:
 
-1. Load a satellite dataset into your workbench and filter it to your location (e.g. follow the ``DEA Surface Reflectance (Sentinel-2)`` example above). Click the white box below ``Styles`` at the bottom of the dataset box. This will bring up a list of available styles for the dataset.
+1. Load a satellite dataset into your workbench and filter it to your location (e.g. follow the ``DEA Surface Reflectance (Sentinel-2)`` example above). Click the white box below ``Styles`` to bring up a list of available styles for the dataset.
 
 .. figure:: /_static/DEA_maps/dea_maps_styles_1.jpg
    :align: center
@@ -82,7 +82,7 @@ Data on DEA Maps often contains multiple layers for each product that can be vis
    :align: center
    :alt: False colour
 
-3. Experiment with selecting other views of the data. The list includes several specialised remote sensing indices developed to emphasise different features in the landscape:
+3. Experiment with selecting other styles. The list includes several specialised remote sensing indices developed to emphasise different features in the landscape:
 
 * Vegetation (``Normalised Difference Vegetation Index - Red, NIR``)
 * Water (``Normalised Difference Water Index - Green, NIR``, ``Modified Normalised Difference Water Index - Green, SWIR``)
@@ -92,3 +92,27 @@ Data on DEA Maps often contains multiple layers for each product that can be vis
 .. figure:: /_static/DEA_maps/dea_maps_styles_3.jpg
    :align: center
    :alt: Other styles
+
+
+Compare tool
+------------
+
+It can be useful to compare different satellite datasets, or imagery from different dates to investigate change over time. To do this:
+
+1. Load a satellite dataset into your workbench and filter it to your location (e.g. follow the ``DEA Surface Reflectance (Sentinel-2)`` example above). Click the three vertical dots on the dataset ("Show more actions"), then click ``Compare``.
+
+.. figure:: /_static/DEA_maps/dea_maps_compare_1.jpg
+   :align: center
+   :alt: Compare
+
+2. A screen splitter will appear at the centre of the map, and a new copy of our dataset will been added to the workbench. This will be marked with an orange ``Left``, and our original data will be labelled ``Right``. 
+
+.. figure:: /_static/DEA_maps/dea_maps_compare_2.jpg
+   :align: center
+   :alt: Screen splitter
+
+3. Filter this new copy of our dataset to the same location (e.g. ``Filter by location`` then click on the map), then select a new date from the "Time" dropdown. You should see the left-hand side of the map update with Sentinel-2 imagery. Using your mouse, you can now grab the screen splitter in the centre of the screen, and swipe from side to side to compare imagery from these two time periods side-by-side.
+
+.. figure:: /_static/DEA_maps/dea_maps_compare_3.jpg
+   :align: center
+   :alt: Screen splitter 2
