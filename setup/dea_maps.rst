@@ -116,3 +116,9 @@ It can be useful to compare different satellite datasets, or imagery from differ
 .. figure:: /_static/DEA_maps/dea_maps_compare_3.jpg
    :align: center
    :alt: Screen splitter 2
+
+4. To deactive the compare tool, click the orange "Compare" icon on the top right of the map.
+
+.. figure:: /_static/DEA_maps/dea_maps_compare_4.jpg
+   :align: center
+   :alt: Deactiveate screen splitter
