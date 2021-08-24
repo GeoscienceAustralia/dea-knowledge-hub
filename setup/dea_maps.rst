@@ -21,20 +21,35 @@ To explore DEA Maps:
    :align: center
    :alt: Starting with DEA Maps
 
-2. Click "Take the tour". A series of pop-up tips will appear explaining how to use the main features of DEA Maps. Click "Next" to proceed to the next tip, then finally "Finish" to complete the tour.
+2. Click ``Take the tour``. A series of pop-up tips will appear explaining how to use the main features of DEA Maps. Click ``Next`` to proceed to the next tip, then finally ``Finish`` to complete the tour.
 
 .. figure:: /_static/DEA_maps/dea_maps_2.jpg
    :align: center
    :alt: Guide to DEA Maps
 
-3. Once the tour is complete, click "Explore map data" on the top-left to start adding data to the map. This will bring up a view of the DEA data catalogue.
+3. Once the tour is complete, experiment with scrolling and zooming in and out of the map (use your mouse wheel, double click, or click the ``+`` or ``-`` buttons on the top right). For this example, zoom in to Lake Menindee in western New South Wales.
+
+.. note::
+   You can also zoom to a location by typing into the ``Search for locations`` box on the top-left, then clicking on your location in the drop-down menu. Try this with "Lake Menindee".
 
 .. figure:: /_static/DEA_maps/dea_maps_3.jpg
    :align: center
-   :alt: Data catalogue
+   :alt: Menindee
 
-4. We can now add data to the map. In this example, we will load 10 m resolution satellite imagery from the Copernicus Sentinel-2 satellites. First, click on "Satellite data" to open this folder, then click on the "DEA Surface Reflectance (Sentinel-2)" product. This will show you a preview of the data we are about to load. When you are ready, click "Add to the map".
+4. click ``Explore map data`` on the top-left to start adding data to the map. This will bring up a view of the DEA data catalogue.
 
 .. figure:: /_static/DEA_maps/dea_maps_4.jpg
+   :align: center
+   :alt: Data catalogue
+
+5. We can now add data to the map. In this example, we will load 10 m resolution satellite imagery from the Copernicus Sentinel-2 satellites. First, click on ``Satellite data`` to open this folder, then click on the ``DEA Surface Reflectance (Sentinel-2)`` product. This will show you a preview of the data we are about to load. When you are ready, click ``Add to the map``.
+
+.. figure:: /_static/DEA_maps/dea_maps_5.jpg
+   :align: center
+   :alt: Adding data
+
+6. The ``DEA Surface Reflectance (Sentinel-2)`` product will now be added to the "workbench" on the left of the screen. At this point, it may not display on the map - this is because there may not have been any Sentinel-2 images captured over this location on the day we have selected. To filter our satellite data to images captured in this location, click ``Filter by location``, then click on the map:
+
+.. figure:: /_static/DEA_maps/dea_maps_6.jpg
    :align: center
    :alt: Adding data
