@@ -1,23 +1,23 @@
 .. _sandbox:
 
-Digital Earth Australia Sandbox
-===============================
+DEA Sandbox
+===========
 
-The Sandbox is a learning and analysis environment for getting started with
+The DEA Sandbox is a learning and analysis environment for getting started with
 Digital Earth Australia and the Open Data Cube. It includes sample data and
 Jupyter notebooks that demonstrate the capability of the Open Data Cube.
 
 Register
 --------
 
-The Sandbox is free to use. Visit https://app.sandbox.dea.ga.gov.au to sign up
+The DEA Sandbox is free to use. Visit https://app.sandbox.dea.ga.gov.au to sign up
 for a new account, or sign in if you have an existing account. A verification
 code will be sent to the email address you register with.
 
 Access
 ------
 
-After signing in, the Sandbox will prepare a JupyterLab environment for you.
+After signing in, the DEA Sandbox will prepare a JupyterLab environment for you.
 All necessary software is provided as part of this environment, so no additional
 installation or configuration is required.
 
@@ -47,7 +47,7 @@ To learn more about JupyterLab, visit the `JupyterLab Documentation`_.
 Available Data
 --------------
 
-The available data for the Sandbox can be viewed through the
-`Digital Earth Australia Sandbox Explorer`_ tool.
+The available data for the DEA Sandbox can be viewed through the
+`DEA Sandbox Explorer`_ tool.
 
-.. _Digital Earth Australia Sandbox Explorer: https://explorer.sandbox.dea.ga.gov.au
+.. _DEA Sandbox Explorer: https://explorer.sandbox.dea.ga.gov.au
