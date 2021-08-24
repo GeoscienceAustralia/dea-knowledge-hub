@@ -41,7 +41,6 @@ and list what you would like to see changed.
    setup/NCI/README.rst
    setup/AWS/data_and_metadata.rst
    setup/jupyter.rst
-   setup/faq.rst
 
 .. toctree::
    :caption: User Guide
@@ -56,6 +55,7 @@ and list what you would like to see changed.
 .. toctree::
   :caption: Index
 
+  setup/faq.rst
   about/changelog.rst
   about/glossary.rst
   genindex
