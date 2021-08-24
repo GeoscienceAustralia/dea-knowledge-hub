@@ -54,10 +54,13 @@ and list what you would like to see changed.
 
 .. toctree::
   :maxdepth: 1
-  :caption: Index
+  :caption: Appendix
 
    about/glossary.rst
    setup/faq.rst
    about/changelog.rst
-   
-* :ref:`genindex`
+
+.. toctree::
+  :caption: Index
+
+   genindex
