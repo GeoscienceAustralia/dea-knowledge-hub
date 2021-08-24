@@ -11,7 +11,7 @@ including an interactive code environment using Jupyter, a metadata explorer
 and web services available. This page provides basic technical documentation for
 the DEA data and services on AWS.
 
-Data and Services Listing
+Data and services listing
 -----------------------------
 
 * The public S3 bucket can be explored using the interactive web application
@@ -29,7 +29,7 @@ Data and Services Listing
 * The Sandbox is accessible at https://app.sandbox.dea.ga.gov.au/ (see `DEA Sandbox`_).
 
 
-S3 Details
+S3 details
 ----------
 
 DEA's public data bucket is named ``dea-public-data`` and the ARN for it is
@@ -51,16 +51,27 @@ DEA's public data bucket is named ``dea-public-data`` and the ARN for it is
 Key products that are available on S3 include the following:
 
 * `DEA Surface Reflectance (Landsat 5 TM)`_
+
   * https://data.dea.ga.gov.au/?prefix=baseline/ga_ls5t_ard_3/
+
 * `DEA Surface Reflectance (Landsat 7 ETM+)`_
+
   * https://data.dea.ga.gov.au/?prefix=baseline/ga_ls7e_ard_3/
+
 * `DEA Surface Reflectance (Landsat 8 OLI-TIRS)`_
+
   * https://data.dea.ga.gov.au/?prefix=baseline/ga_ls8c_ard_3/
+
 * `DEA Water Observations`_
+
   * https://data.dea.ga.gov.au/?prefix=derivative/ga_ls_wo_3/
+
 * `DEA Fractional Cover`_
+
   * https://data.dea.ga.gov.au/?prefix=derivative/ga_ls_fc_3/
+
 * `DEA Coastlines`_
+
   * https://data.dea.ga.gov.au/?prefix=derivative/dea_coastlines/
 
 
@@ -70,12 +81,19 @@ Notifications
 We provide a number of notifications for newly produced data that lands on AWS.
 
 * DEA New Data: ``arn:aws:sns:ap-southeast-2:538673716275:DEANewData``
+
   * This is a bucket notifications that is triggered by every object that lands in the ``dea-public-data`` bucket
+
 * dea-public-data-landsat-3: ``arn:aws:sns:ap-southeast-2:538673716275:dea-public-data-landsat-3``
+
   * This is a notification that is triggered for each new DEA Surface Reflectance scene
+
 * dea-public-data-landsat-3-fc: ``arn:aws:sns:ap-southeast-2:538673716275:dea-public-data-landsat-3-fc``
+
   * This is a notification for each DEA Fractional Cover scene produced
+
 * dea-public-data-landsat-3-wo: ``arn:aws:sns:ap-southeast-2:538673716275:dea-public-data-landsat-3-wo``
+
   * This is a notification for each DEA Water Observations scene produced
 
 All the the scene level notifications include a STAC 1.0.0-beta.2 JSON document
