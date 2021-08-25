@@ -125,7 +125,7 @@ It can be useful to compare different satellite datasets, or imagery from differ
 Difference tool
 ---------------
 
-The "Compare" tool above allowed us to visually compare different satellite data. However, it can also be useful to quantitatively compare differences between different satellite images to reveal parts of the landscape that have changed significantly over time. To do this, we can use the advanced "difference" tool:
+The "Compare" tool above allowed us to visually compare different satellite data. However, it can also be useful to quantitatively compare differences between different satellite images to reveal parts of the landscape that have changed significantly over time. To do this, we can use the more advanced "Difference" tool:
 
 1. Load a satellite dataset into your workbench (e.g. follow the ``DEA Surface Reflectance (Sentinel-2)`` example above). Click the three vertical dots on the dataset ("Show more actions"), then click ``Difference``.
 
@@ -139,7 +139,7 @@ The "Compare" tool above allowed us to visually compare different satellite data
    :align: center
    :alt: Difference 2
 
-3. Once the data is filtered, click on the date below ``Date Comparison A`` and ``Date Comparison B``, and use the date picker to change the dates that are displayed on the left and right of the map. Try and choose two dates without clouds, as these will be used to identify parts of the landscape that have changed through time.
+3. Once the data is filtered, click on the date below ``Date Comparison A`` and ``Date Comparison B``, and use the date picker (i.e. click on the dates) to change the dates that are displayed on the left and right of the map. Try and choose two dates without clouds, as these will be used to identify parts of the landscape that have changed through time.
 
 .. note::
    If using the Lake Menindee example, try setting ``Date Comparison A`` to ``18/04/2021`` and ``Date Comparison B`` to ``18/05/2021`` for a example of a dry and wet landscape.
@@ -149,7 +149,7 @@ The "Compare" tool above allowed us to visually compare different satellite data
    :alt: Difference 3
 
 .. warning::
-   25 August 2021 update: due to a temporary bug, *do not* use the left and right arrows to choose dates until you have first selected a date using the date picker.
+   25 August 2021 update: due to `a temporary bug <https://github.com/TerriaJS/terriajs/issues/5762>`_, *do not* use the left and right arrows to choose dates until you have first selected a date using the date picker:
 
 .. figure:: /_static/DEA_maps/date_bug.png
    :align: center
