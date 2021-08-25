@@ -93,6 +93,28 @@ Data on DEA Maps often contains multiple layers for each product that can be vis
    :alt: Other styles
 
 
+Exporting data
+--------------
+To export data directly from DEA Maps for use in a GIS:
+
+1. Load a satellite dataset into your workbench and filter it to your location (e.g. follow the ``DEA Surface Reflectance (Sentinel-2)`` example above). Click the three vertical dots on the dataset ("Show more actions"), then click ``Export``.
+
+.. figure:: /_static/DEA_maps/dea_maps_export_1.jpg
+   :align: center
+   :alt: Export
+
+2. Follow the instructions in the pop-up by clicking twice on the map to draw a rectangle. When done, press ``Download extent``.
+
+.. figure:: /_static/DEA_maps/dea_maps_export_2.jpg
+   :align: center
+   :alt: Export 2
+
+3. Satellite data for this extent will be downloaded to your PC. This data can now be loaded into GIS software like QGIS or ArcGIS.
+
+.. note::
+   Data will be exported at the resolution of the DEA Maps window. To access the original high resolution data, please use the `DEA Sandbox <Sandbox/sandbox.rst>`_ or `NCI <NCI/README.rst>`_ analysis environments.
+
+
 Compare tool
 ------------
 
