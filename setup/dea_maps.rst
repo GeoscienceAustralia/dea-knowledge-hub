@@ -142,7 +142,7 @@ The "Compare" tool above allowed us to visually compare different satellite data
 3. Once the data is filtered, use click on the date below ``Date Comparison A`` and ``Date Comparison B``, and use the date picker to change the dates that are displayed on the left and right of the map. Try and choose two dates without clouds, as these will be used to identify parts of the landscape that have changed through time.
 
 .. note::
-   If using the Lake Menindee example, try setting ``Date Comparison A`` to ``18/4/2021`` and ``Date Comparison B`` to ``18/5/2021`` for a example of a dry and wet landscape.
+   If using the Lake Menindee example, try setting ``Date Comparison A`` to ``18/04/2021`` and ``Date Comparison B`` to ``18/05/2021`` for a example of a dry and wet landscape.
 
 .. figure:: /_static/DEA_maps/dea_maps_diff_3.jpg
    :align: center
@@ -157,6 +157,14 @@ The "Compare" tool above allowed us to visually compare different satellite data
 
 4. We can now run the change detection computation. Click ``Choose a difference output`` on the "Difference" tool. This gives us several options that can be used to compare differences in specific landscape characteristics over time (e.g. water, vegetation, fire scars). For this example, select ``Modified Normalised Difference Water Index - Green, SWIR`` which is useful for comparing the distribution of water in the landscape. When ready, click ``Generate change detection``.
 
-5. A new layer will appear on the map. Locations that have grown wetter over time are shown in blue, while locations that have have become drier are shown in red. Scroll around the map to explore patterns of change.
+.. figure:: /_static/DEA_maps/dea_maps_diff_4.jpg
+   :align: center
+   :alt: Difference 4
 
-6. To close the "Difference" tool, click "Exit" at the top of the window. Your workbench will reappear, with the difference output layer added as a new dataset on the map.
+5. A new layer will appear on the map. Locations that have grown wetter over time are shown in blue, while locations that have have become drier are shown in red. Scroll around the map to explore patterns of change. To close the "Difference" tool, click "Exit" at the top of the window. 
+
+.. figure:: /_static/DEA_maps/dea_maps_diff_5.jpg
+   :align: center
+   :alt: Difference 5
+
+6. Your workbench will reappear, with the difference output layer added as a new dataset on the map.
