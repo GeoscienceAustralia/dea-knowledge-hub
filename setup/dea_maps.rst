@@ -222,3 +222,17 @@ The "Compare" tool above allowed us to visually compare different satellite data
 .. figure:: /_static/DEA_maps/dea_maps_diff_6.jpg
    :align: center
    :alt: Difference 6
+
+For more assistance
+-------------------
+DEA Maps contains additional helpful guides for assisting with exploring our datasets. To access this help at any point, click the ``Help`` button on the bottom-right:
+
+.. figure:: /_static/DEA_maps/dea_maps_help_1.jpg
+   :align: center
+   :alt: Help 1
+
+This will bring up a menu containing detailed guides to performing useful tasks with DEA Maps:
+
+.. figure:: /_static/DEA_maps/dea_maps_help_2.jpg
+   :align: center
+   :alt: Help 2
