@@ -95,7 +95,7 @@ Data on DEA Maps often contains multiple layers for each product that can be vis
 
 Exporting data
 --------------
-To export data directly from DEA Maps for use in a GIS:
+To export data directly from DEA Maps for use in GIS software:
 
 1. Load a satellite dataset into your workbench and filter it to your location (e.g. follow the ``DEA Surface Reflectance (Sentinel-2)`` example above). Click the three vertical dots on the dataset ("Show more actions"), then click ``Export``.
 
@@ -113,6 +113,33 @@ To export data directly from DEA Maps for use in a GIS:
 
 .. note::
    Data will be exported at the resolution of the DEA Maps window. To access the original high resolution data, please use the `DEA Sandbox <Sandbox/sandbox.rst>`_ or `NCI <NCI/README.rst>`_ analysis environments.
+
+
+Sharing and printing
+--------------------
+
+DEA Maps allows you to easily create print-friendly views of satellite data for sharing outside the interactive website. It also allows you to create custom "share links" which preserve the exact layers you have loaded into the map. 
+
+**Creating a share link**
+
+1. Load one or more satellite datasets into your workbench and filter it them your location (e.g. follow the ``DEA Surface Reflectance (Sentinel-2)`` example above). Click ``Share / Print`` at the top-right of the map.
+
+2. Click ``Copy`` to copy a customised share link to your clipboard. When opened, this link will contain an identical view of the map containing all the layers you have loaded into the map.
+
+.. figure:: /_static/DEA_maps/dea_maps_share_1.jpg
+   :align: center
+   :alt: Share 1
+
+**Showing a print view**
+
+1. After clicking ``Share / Print`` at the top-right of the map, click ``Print`` or ``Show Print View`` to bring up a print-friendly view of your map window.
+
+.. figure:: /_static/DEA_maps/dea_maps_share_2.jpg
+   :align: center
+   :alt: Share 2
+
+.. note::
+   Hint: To obtain a high-res image file of your map, right click on the image at the top of the print view and select ``Save image as ...``.
 
 
 Compare tool
