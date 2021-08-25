@@ -139,7 +139,7 @@ The "Compare" tool above allowed us to visually compare different satellite data
    :align: center
    :alt: Difference 2
 
-3. Once the data is filtered, use click on the date below ``Date Comparison A`` and ``Date Comparison B``, and use the date picker to change the dates that are displayed on the left and right of the map. Try and choose two dates without clouds, as these will be used to identify parts of the landscape that have changed through time.
+3. Once the data is filtered, click on the date below ``Date Comparison A`` and ``Date Comparison B``, and use the date picker to change the dates that are displayed on the left and right of the map. Try and choose two dates without clouds, as these will be used to identify parts of the landscape that have changed through time.
 
 .. note::
    If using the Lake Menindee example, try setting ``Date Comparison A`` to ``18/04/2021`` and ``Date Comparison B`` to ``18/05/2021`` for a example of a dry and wet landscape.
@@ -154,6 +154,7 @@ The "Compare" tool above allowed us to visually compare different satellite data
 .. figure:: /_static/DEA_maps/date_bug.png
    :align: center
    :alt: Bug
+   :width: 300
 
 4. We can now run the change detection computation. Click ``Choose a difference output`` on the "Difference" tool. This gives us several options that can be used to compare differences in specific landscape characteristics over time (e.g. water, vegetation, fire scars). For this example, select ``Modified Normalised Difference Water Index - Green, SWIR`` which is useful for comparing the distribution of water in the landscape. When ready, click ``Generate change detection``.
 
@@ -168,3 +169,7 @@ The "Compare" tool above allowed us to visually compare different satellite data
    :alt: Difference 5
 
 6. Your workbench will reappear, with the difference output layer added as a new dataset on the map.
+
+.. figure:: /_static/DEA_maps/dea_maps_diff_6.jpg
+   :align: center
+   :alt: Difference 6
