@@ -112,7 +112,7 @@ To export data directly from DEA Maps for use in GIS software:
 3. Satellite data for this extent will be downloaded to your PC. This data can now be loaded into GIS software like QGIS or ArcGIS.
 
 .. note::
-   Data will be exported at the resolution of the DEA Maps window. To access the original high resolution data, please use the `DEA Sandbox <Sandbox/sandbox.rst>`_ or `NCI <NCI/README.rst>`_ analysis environments.
+   Data will be exported at low resolution based on the zoom of the DEA Maps window. To access the original high resolution data, please use the `DEA Sandbox <Sandbox/sandbox.rst>`_ or `NCI <NCI/README.rst>`_ analysis environments.
 
 
 Sharing and printing
