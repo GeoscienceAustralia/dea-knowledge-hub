@@ -55,6 +55,13 @@ and list what you would like to see changed.
    notebooks/Real_world_examples/README.rst
 
 .. toctree::
+   :caption: Reference
+   :maxdepth: 1
+   :glob:
+
+   reference/*
+
+.. toctree::
   :caption: Appendix
 
   about/faq.rst
