@@ -7,7 +7,7 @@
 .. based on a conversation in Slack on <2021-07-06 Tue>
 
 Why does Collection 3 ARD have a higher latency than Collection 2 ARD?
-==================================================================
+======================================================================
 
 Collection 3 ARD appears to lag about a week behind Collection 2 ARD. When will this be fixed?
 
