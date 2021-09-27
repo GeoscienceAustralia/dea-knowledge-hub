@@ -87,6 +87,8 @@ References
 
 -  `View the Grid in an online
    map <https://maps.dea.ga.gov.au/#share=s-yUPQrYI0zfAYDldoQSqxzHjpeKx>`__
+-  `Download the Grid in GeoJSON
+   map <https://data.dea.ga.gov.au/derivative/ga_summary_grid_c3.geojson>`__
 -  `CMI Grid
    Product <http://cmi.ga.gov.au/data-products/dea/641/dea-collection-3-grid-specification>`__
 -  `CMI Raster
