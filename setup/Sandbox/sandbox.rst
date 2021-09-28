@@ -60,10 +60,10 @@ To learn more about JupyterLab, visit the `JupyterLab Documentation`_.
 
 .. _JupyterLab Documentation: https://jupyterlab.readthedocs.io/en/stable/user/interface.html
 .. _DEA Notebooks repository: https://github.com/GeoscienceAustralia/dea-notebooks/
-.. _Beginner's guide: ../notebooks/Beginners_guide/README.rst
-.. _DEA datasets: ../notebooks/DEA_datasets/README.rst
-.. _Frequently used code: ../notebooks/Frequently_used_code/README.rst
-.. _Real world examples: ../notebooks/Real_world_examples/README.rst
+.. _Beginner's guide: .../notebooks/Beginners_guide/README.rst
+.. _DEA datasets: .../notebooks/DEA_datasets/
+.. _Frequently used code: .../notebooks/Frequently_used_code/README.html
+.. _Real world examples: .../notebooks/Real_world_examples/README.rst
 .. _see guide here: https://github.com/GeoscienceAustralia/dea-notebooks/wiki/Guide-to-using-DEA-Notebooks-with-git
 
 Available Data
