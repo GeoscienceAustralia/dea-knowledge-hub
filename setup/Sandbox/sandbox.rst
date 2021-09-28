@@ -27,7 +27,7 @@ Navigate
 The JupyterLab interface consists of the main work area (right-hand panel), the
 left sidebar (containing a file browser and other useful features), and a menu
 bar along the top. The main work area is where Jupyter notebooks will be displayed 
-once opened. By default, the Launcher is displayed, which allows you to open new files.
+once opened. By default, the Launcher is displayed, which allows you to create new files.
 
 .. image:: /_static/Sandbox/sandbox-jupyterlab-startup.png
    :align: center
@@ -37,7 +37,7 @@ The Sandbox comes pre-loaded with Jupyter notebooks from the `DEA Notebooks repo
 These notebooks are automatically updated every time you start your DEA Sandbox environment.
 These include:
 
-- `Beginner's guide`_: Introductory guides that introduce Jupyter Notebooks and how to load, plot and interact with DEA data
+- `Beginner's guide`_: An introduction to Jupyter Notebooks and how to load, plot and interact with DEA data
 
 - `DEA datasets`_: An introduction to DEA's satellite datasets and derived products, including how to load each product
 
@@ -60,10 +60,10 @@ To learn more about JupyterLab, visit the `JupyterLab Documentation`_.
 
 .. _JupyterLab Documentation: https://jupyterlab.readthedocs.io/en/stable/user/interface.html
 .. _DEA Notebooks repository: https://github.com/GeoscienceAustralia/dea-notebooks/
-.. _Beginner's guide: ../notebooks/Beginners_guide/
-.. _DEA datasets: ../notebooks/DEA_datasets/
-.. _Frequently used code: ../notebooks/Frequently_used_code/
-.. _Real world examples: ../notebooks/Real_world_examples/
+.. _Beginner's guide: ../notebooks/Beginners_guide/README.rst
+.. _DEA datasets: ../notebooks/DEA_datasets/README.rst
+.. _Frequently used code: ../notebooks/Frequently_used_code/README.rst
+.. _Real world examples: ../notebooks/Real_world_examples/README.rst
 .. _see guide here: https://github.com/GeoscienceAustralia/dea-notebooks/wiki/Guide-to-using-DEA-Notebooks-with-git
 
 Available Data
