@@ -66,7 +66,7 @@ The extent of this grid is based upon the maximal extents of:
 
 |grid_image|
 
-Show here is an image of the new grid in EPSG:3577 projection, with tiles shown
+Shown here is an image of the new grid in EPSG:3577 projection, with tiles shown
 where we expect to have land imagery available.
 
 How can I use this grid?
