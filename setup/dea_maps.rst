@@ -117,11 +117,15 @@ DEA Maps allows you to easily create print-friendly views of satellite data for 
    :alt: Share 2
 
 .. note::
-   Hint: To obtain a high-res image file of your map, right click on the image at the top of the print view and select ``Save image as ...``.
+   Hint: To obtain a high quality image of your map, right click on the image at the top of the print view and select ``Save image as ...``.
 
 
 Exporting data
 --------------
+
+.. note::
+   This method will export data at low resolution based on the zoom of the DEA Maps window. To access the original high resolution data, please use the `DEA Sandbox <Sandbox/sandbox.rst>`_ or `NCI <NCI/README.rst>`_ analysis environments.
+   
 To export data directly from DEA Maps for use in GIS software:
 
 1. Load a satellite dataset into your workbench and filter it to your location (e.g. follow the ``DEA Surface Reflectance (Sentinel-2)`` example above). Click the three vertical dots on the dataset ("Show more actions"), then click ``Export``.
@@ -137,9 +141,6 @@ To export data directly from DEA Maps for use in GIS software:
    :alt: Export 2
 
 3. Satellite data for this extent will be downloaded to your PC. This data can now be loaded into GIS software like QGIS or ArcGIS.
-
-.. note::
-   Data will be exported at low resolution based on the zoom of the DEA Maps window. To access the original high resolution data, please use the `DEA Sandbox <Sandbox/sandbox.rst>`_ or `NCI <NCI/README.rst>`_ analysis environments.
 
 
 Compare tool
