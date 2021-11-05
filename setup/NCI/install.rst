@@ -1,13 +1,14 @@
 
 .. _install:
 
-Installation and Software Setup
-*******************************
+Connecting to the NCI's Virtual Desktop Infrastructure (VDI)
+============================================================
 
-Required Software
-=================
-
-Install TurboVNC and Strudel according to the instructions at http://vdi.nci.org.au/help.
+.. note::
+   As of 2021, the Open OnDemand (OOD) online portal is now the recommended method for 
+   accessing the NCI's Virtual Desktop Infrastructure (VDI), replacing the previous 
+   Strudel/Turbo VNC method. This allows you more easily access NCI systems from a 
+   browser without needing to install software.   
 
 .. note::
    The NCI released a new version of the Virtual Desktop Infrastructure (VDI) on 28/10/2020. 
@@ -15,49 +16,30 @@ Install TurboVNC and Strudel according to the instructions at http://vdi.nci.org
    before this date) please consult the most recent 
    `VDI FAQ help <https://opus.nci.org.au/display/Help/4.+VDI+FAQ>`_
    
-.. note::
-   The NCI instructions recommend specific versions of 
-   `TurboVNC <https://sourceforge.net/projects/turbovnc/files/>`_ and
-   `Strudel <https://cvl.massive.org.au/launcher_files/stable/>`_.
-   More recent versions may or may not be compatible with the VDI.
+The NCI's Open OnDemand (OOD) online portal allows users to quickly connect to Digital 
+Earth Australia from a web browser. 
+To get started with the OOD portal, please follow the following NCI guide:
 
-.. note::
-   Your institution may provide this software to be installed via an internal process.
-   For example at Geoscience Australia, the software can be requested from the
-   `Software Service Management System (SSMS) <http://intranet.ga.gov.au/CherwellPortal/SSMS>`_
-   [internal link only].
+* `Introduction to Open OnDemand (OOD) <https://opus.nci.org.au/display/OOD/0.+Introduction+to+OOD>`_
 
-Connecting to the VDI
-=====================
+Launching the VDI from OOD
+==========================
 
-To setup Strudel to connect to the NCI, run the Strudel application, then:
+After successfully logging into the OOD, you will see the OOD Dashboard below. We recommend that most users select the "Virtual Desktop" option which will launch an interactive virtual desktop session that can be used to access DEA. 
 
-* Select **File** -> **Manage Sites**
-* Click **New**
-* Enter the details:
+The following NCI guide introduces how to connect to the VDI for the first time:
 
-  - Name: **NCI Virtual Desktops**
-  - URL: **https://vdi.nci.org.au/strudel.json**
+* `Connecting to the VDI <https://opus.nci.org.au/display/OOD/2.1.+Connecting+to+the+VDI>`_
 
-* Click **OK**
-* Make sure the **Active** checkbox is ticked.
-* Click **OK**
+.. figure:: https://opus.nci.org.au/download/attachments/116719863/image2021-7-12_12-33-36.png?version=1&modificationDate=1626057216773&api=v2
+   :align: center
+   :alt: Install DEA on NCI
 
-To connect:
 
-* Site: **NCI Virtual Desktops**
-* Username: Your NCI username (eg ``abc123`` or ``ab1234``)
-* Click **Login**
+Setting up Digital Earth Australia
+==================================
 
-.. note::
-   If the drop-down site list in Strudel remains empty, it most likely means 
-   that the software is unable to retrieve the ``strudel.json`` URL, 
-   such as due to firewall or network proxy configuration.
-
-Setting up DEA
-==============
-
-Once you have logged on to the VDI, you can install Digital Earth Australia.
+Once you have successfully launched the VDI, you can install Digital Earth Australia.
 
 From the **Applications** menu in the top left of the screen, choose **System Tools** -> **Terminal**.
 
@@ -84,15 +66,3 @@ From within this environment you can access the notebooks from the User Guide, o
 .. note::
    For more information about getting started with Digital Earth Australia on the NCI, refer to the `Digital Earth Australia Notebooks wiki page <https://github.com/GeoscienceAustralia/dea-notebooks/wiki#getting-started-on-the-ncivirtual-desktop-infrastructure>`_.
 
-Shutting Down VDI
-=================
-
-After you have finished working on the VDI, any open terminals can be closed using the x in
-the corner of the tab and the VDI can be closed by clicking your name displayed in the top
-right corner of the VDI interface and selecting Quit. The Strudel window will subsequently also
-close after a few moments.
-
-If you wish to disconnect from the VDI but keep the session running you can close the VDI
-window using the x in the top right corner of the window and select keep the session running
-when prompted by the Strudel window. Later you can reconnect to the VDI and resume the previous
-session.
