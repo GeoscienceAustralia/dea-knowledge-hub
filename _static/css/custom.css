@@ -36,6 +36,15 @@ div.document a:visited {
 }
 
 /*Fixes for xarray display issues*/
+.rst-content ul.xr-var-list li>* {
+     margin-top: 0px !important;
+     margin-bottom: 0px !important;
+}
+.rst-content ul.xr-dim-list li {
+     display: inline-block !important;
+     padding: 0 !important;
+     margin: 0 !important;
+}
 .rst-content dl.xr-attrs dt, .rst-content dl.xr-attrs dd {
      margin: 0px 0 !important;
      font-size: inherit !important;
