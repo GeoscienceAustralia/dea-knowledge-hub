@@ -83,10 +83,7 @@ Do this by using the same process as joining a VDI Project as described above.
      - Geoscience Australia Landsat Derivatives (Collection 3), e.g. WO, FC
 
    * - fk4_
-     - Geoscience Australia Landsat Derivatives (Collection 2), e.g. WOfS, Fractional Cover, NIDEM, statistical summaries
-     
-   * - rs0_
-     - Geoscience Australia Landsat Analysis Ready Data (Collection 2); to be decommissioned by 2022
+     - Legacy Geoscience Australia Landsat Derivatives (Collection 2), e.g. NIDEM, ITEM, HLTC
      
 .. _wd8: https://my.nci.org.au/mancini/project/wd8
 .. _xu18: https://my.nci.org.au/mancini/project/xu18
