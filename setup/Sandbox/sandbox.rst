@@ -60,13 +60,14 @@ extension. The JupyterLab interface also supports plain text and Markdown files.
 
 To learn more about JupyterLab, visit the `JupyterLab Documentation`_.
 
-Some things to know about The Sandbox
+Important information about The Sandbox
 -------------------------------
 
 The Sandbox is not a production environment and should be used for protyping and exploring
 DEA's data and tools. Changes made to Jupyter notebooks in the DEA Sandbox may be automatically 
-overwritten as part of the automatic update process. To avoid this, we recommend advanced 
-users use Git to clone a new copy of ``dea-notebook`` into the Sandbox (`see guide here`_).
+overwritten as part of the automatic update process, meaning any changes you make to these notebooks
+may be lost. To avoid this, we recommend advanced 
+users use Git to clone a new copy of ``dea-notebooks`` into the Sandbox (`see guide here`_).
 and the default notebooks provided. We strongly encourage you to back up your work (e.g. 
 to GitHub, or by downloading it to your local machine) each time you log in. 
 
