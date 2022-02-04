@@ -3,9 +3,17 @@
 DEA Sandbox
 ===========
 
-The DEA Sandbox is a learning and analysis environment for getting started with
-Digital Earth Australia and the Open Data Cube. It includes sample data and
-Jupyter notebooks that demonstrate the capability of the Open Data Cube.
+The Digital Earth Australia (DEA) Sandbox is a learning and analysis environment 
+for getting started with DEA data and our `Open Data Cube`_. The Sandbox includes 
+sample data and Jupyter notebooks that allow you to experiment with DEA’s Earth 
+Observation datasets and explore proof-of-concept applications. 
+
+The Sandbox is free to use, and provides you with a managed environment with 2 
+cores with 16GB of RAM, 10GB of storage, and regularly used Python packages 
+pre-installed. The Sandbox also includes Jupyter notebook user guides to help you 
+get started with DEA and the Open Data Cube.
+
+.. _Open Data Cube: https://www.dea.ga.gov.au/about/open-data-cube
 
 Register
 --------
@@ -52,11 +60,24 @@ extension. The JupyterLab interface also supports plain text and Markdown files.
 
 To learn more about JupyterLab, visit the `JupyterLab Documentation`_.
 
-.. note::
-   Changes made to Jupyter notebooks in the DEA Sandbox may be automatically 
-   overwritten as part of the automatic update process. To avoid this, we
-   recommend advanced users use Git to clone a new copy of ``dea-notebook``
-   into the Sandbox (`see guide here`_).
+Important information about The Sandbox
+-------------------------------
+
+The Sandbox is not a production environment and should be used for protyping and exploring
+DEA's data and tools. Changes made to Jupyter notebooks in the DEA Sandbox may be automatically 
+overwritten as part of the automatic update process, meaning any changes you make to these notebooks
+may be lost. To avoid this, we recommend advanced 
+users use Git to clone a new copy of ``dea-notebooks`` into the Sandbox (`see guide here`_).
+and the default notebooks provided. We strongly encourage you to back up your work (e.g. 
+to GitHub, or by downloading it to your local machine) each time you log in. 
+
+You are able to download any of the files in your Sandbox environment by right-clicking them in the left side bar
+navigation panel and selecting 'download'. This download function is limited to 10 files at a time so you
+may need to download your files in batches if you have more than 10.
+
+Please note that if you have not logged into your account in the past 90 days, 
+we consider this account inactive and reserve the right to remove any data you 
+have saved in your account. 
 
 .. _JupyterLab Documentation: https://jupyterlab.readthedocs.io/en/stable/user/interface.html
 .. _DEA Notebooks repository: https://github.com/GeoscienceAustralia/dea-notebooks/
@@ -73,3 +94,14 @@ The available data for the DEA Sandbox can be viewed through the
 `DEA Sandbox Explorer`_ tool.
 
 .. _DEA Sandbox Explorer: https://explorer.sandbox.dea.ga.gov.au
+
+Where can I get help?
+---------------------
+
+You can ask questions (and view previously asked questions) on the `Open Data Cube Stack Exchange`_ page. 
+When asking a question, tag it with `open-data-cube`.
+
+You can also `join our Slack community`_ for help setting up or using Digital Earth Australia.
+
+.. _Open Data Cube Stack Exchange: https://gis.stackexchange.com/questions/tagged/open-data-cube
+.. _join our Slack community: http://slack.opendatacube.org/
