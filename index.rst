@@ -41,7 +41,7 @@ and list what you would like to see changed.
    setup/Sandbox/sandbox.rst
    setup/NCI/README.rst
    setup/AWS/data_and_metadata.rst
-   setup/gis/web_services.ipynb
+   setup/gis/README.rst
    setup/jupyter.rst
 
 .. toctree::
