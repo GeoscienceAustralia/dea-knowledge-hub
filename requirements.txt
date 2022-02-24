@@ -5,3 +5,4 @@ sphinx_rtd_theme
 IPython
 recommonmark
 Jinja2<3
+markupsafe==2.0.1
