@@ -1,4 +1,4 @@
-.. _sandbox:
+.. _sandbox_disclaimer:
 
 DEA Sandbox disclaimer
 ======================
