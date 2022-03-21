@@ -114,10 +114,8 @@ DEA Sandbox disclaimer
    To the maximum extent permitted by law, your use of the Digital Earth Australia Sandbox (including any associated
    data or services):
    
-   - Is on an 'as is' and 'as available' basis with all faults, and the Commonwealth of Australia disclaims all
-   warranties, guarantees or representations of any kind, and
-   - Is entirely at your own risk, and the Commonwealth of Australia disclaims any liability to you or anyone else
-   for any liability whatsoever (including, without limitation, any liability for negligence).
+   - Is on an 'as is' and 'as available' basis with all faults, and the Commonwealth of Australia disclaims all warranties, guarantees or representations of any kind, and
+   - Is entirely at your own risk, and the Commonwealth of Australia disclaims any liability to you or anyone else for any liability whatsoever (including, without limitation, any liability for negligence).
    
    The Commonwealth of Australia does not intend to create any contractual legal relations with you in relation to your
    registration for, or use of, the Digital Earth Australia Sandbox (including any associated data or services).
