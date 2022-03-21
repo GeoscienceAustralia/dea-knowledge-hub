@@ -61,7 +61,7 @@ extension. The JupyterLab interface also supports plain text and Markdown files.
 To learn more about JupyterLab, visit the `JupyterLab Documentation`_.
 
 Important information about The Sandbox
--------------------------------
+---------------------------------------
 
 The Sandbox is not a production environment and should be used for protyping and exploring
 DEA's data and tools. Changes made to Jupyter notebooks in the DEA Sandbox may be automatically 
@@ -77,7 +77,7 @@ may need to download your files in batches if you have more than 10.
 
 Please note that if you have not logged into your account in the past 90 days, 
 we consider this account inactive and reserve the right to remove any data you 
-have saved in your account. 
+have saved in your account. Please read the `DEA Sandbox Disclaimer`_ for further information.
 
 .. _JupyterLab Documentation: https://jupyterlab.readthedocs.io/en/stable/user/interface.html
 .. _DEA Notebooks repository: https://github.com/GeoscienceAustralia/dea-notebooks/
@@ -86,6 +86,7 @@ have saved in your account.
 .. _Frequently used code: ../../notebooks/Frequently_used_code/README.rst
 .. _Real world examples: ../../notebooks/Real_world_examples/README.rst
 .. _see guide here: https://github.com/GeoscienceAustralia/dea-notebooks/wiki/Guide-to-using-DEA-Notebooks-with-git
+.. _DEA Sandbox Disclaimer: ./sandbox_disclaimer.rst
 
 Available Data
 --------------

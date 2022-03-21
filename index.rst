@@ -39,6 +39,7 @@ and list what you would like to see changed.
    setup/README.rst
    setup/dea_maps.rst
    setup/Sandbox/sandbox.rst
+   setup/Sandbox/sandbox_disclaimer.rst
    setup/NCI/README.rst
    setup/AWS/data_and_metadata.rst
    setup/gis/README.rst
