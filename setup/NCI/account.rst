@@ -19,10 +19,7 @@ institutional email address.
 
 
 .. important::
-   When signing up, you will need to join at least the ``v10`` project for
-   access to the DEA code environment and ``wd8`` for VDI access.
-
-   You **also** need to join some of the :ref:`data_access` projects listed
+   When signing up, you will need to join some of the :ref:`data_access` projects listed
    below to access the DEA data.
 
 
