@@ -47,6 +47,8 @@ References
    System <https://landsat.gsfc.nasa.gov/about/the-worldwide-reference-system/>`__
 -  `Wikipedia's article on the Military Grid Refrence
    System <https://en.wikipedia.org/wiki/Military_Grid_Reference_System>`__
+-  `DEA Summary Product Grid (Collection 
+   3) <./collection_3_summary_grid.rst>`__
 
 .. |ard_ls_image| image:: ./images/ARD_Landsat_Filename.svg
 .. |ard_s2_image| image:: ./images/ARD_S-2_Filename.svg
