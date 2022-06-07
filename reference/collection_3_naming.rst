@@ -1,4 +1,4 @@
- DEA Naming Conventions (Collection 3) 
+DEA Naming Conventions (Collection 3) 
 =========================================
 
 Introduction
