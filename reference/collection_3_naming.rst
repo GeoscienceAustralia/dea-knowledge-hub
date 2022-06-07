@@ -40,6 +40,14 @@ will use the Collection 3 grid specification (link)
 
 |odc_fc_image|
 
+References
+----------
+
+-  `The Worldwide Reference 
+   System <https://landsat.gsfc.nasa.gov/about/the-worldwide-reference-system/>`__
+-  `Wikipedia's article on the Military Grid Refrence
+   System <https://en.wikipedia.org/wiki/Military_Grid_Reference_System>`__
+
 .. |ard_ls_image| image:: ./images/ARD_Landsat_Filename.svg
 .. |ard_s2_image| image:: ./images/ARD_S-2_Filename.svg
 .. |fc_ls_image| image:: ./images/Landsat_Fractional_Cover.svg
