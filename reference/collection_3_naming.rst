@@ -36,8 +36,14 @@ will use the Collection 3 grid specification (link)
 
 |summary_image|
 
+|odc_ard_image|
+
+|odc_fc_image|
+
 .. |ard_ls_image| image:: ./images/ARD_Landsat_Filename.svg
 .. |ard_s2_image| image:: ./images/ARD_S-2_Filename.svg
 .. |fc_ls_image| image:: ./images/Landsat_Fractional_Cover.svg
 .. |wo_s2_image| image:: ./images/S-2_Water_Observations.svg
 .. |summary_image| image:: ./images/Derivative_Summary_Product.svg
+.. |odc_ard_image| image:: ./images/ODC_Product_ID_LS_ARD.svg
+.. |odc_fc_image| image:: ./images/ODC_Product_ID_LS_FC.svg
