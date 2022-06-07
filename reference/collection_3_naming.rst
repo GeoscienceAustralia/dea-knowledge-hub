@@ -10,6 +10,10 @@ Satellite missions.
 The DEA Naming Conventions aim to make naming of collections at rest on 
 NCI THREDDS, NCI projects and AWS S3 buckets consistent across products.
 
+This page explains the naming convention of files/datasets found within 
+DEA's digital products as well as the Open Data Cube (ODC) product naming
+convention.
+
 Different types of products
 ------------
 
@@ -29,32 +33,38 @@ principle forms:
   seasonal, calendar year, financial year, all of available time). These 
   will use the Collection 3 grid specification for its spatial reference.
 
-Landsat ARD filename explained
+Filename Examples
 ------------
+
+Landsat ARD
+^^^^^^^^^^^^
 |ard_ls_image|
 
-Sentinel-2 ARD filename explained
-------------
+Sentinel-2 ARD
+^^^^^^^^^^^^
 |ard_s2_image|
 
-Landsat Fractional Cover filename explained
-------------
+Landsat Fractional Cover
+^^^^^^^^^^^^
 |fc_ls_image|
 
-Sentinel-2 Water Observations filename explained
-------------
+Sentinel-2 Water Observations
+^^^^^^^^^^^^
 |wo_s2_image|
 
-Landsat Geomedian Summary filename explained
-------------
+Landsat Geomedian Summary
+^^^^^^^^^^^^
 |summary_image|
 
-Open Data Cube (ODC) ARD Product name explained
+ODC Product Examples
 ------------
+
+Landsat ARD ODC Product
+^^^^^^^^^^^^
 |odc_ard_image|
 
-ODC Fractional Cover Product name explained
-------------
+Landsat Fractional Cover ODC Product
+^^^^^^^^^^^^
 |odc_fc_image|
 
 References
