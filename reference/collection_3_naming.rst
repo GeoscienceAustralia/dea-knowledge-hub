@@ -16,6 +16,7 @@ Different types of products
 Depending on the type of digital product, or from which Satellite 
 mission the data was sourced, products published by DEA come in 3 
 principle forms:
+
 - Analysis Ready Data (ARD) or surface reflectance. This can use 
   the World Reference System (WRS-2) for spacial reference if 
   sourced from Landsat or the Military Grid Reference System (MGRS)
