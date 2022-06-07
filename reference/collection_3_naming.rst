@@ -18,16 +18,16 @@ mission the data was sourced, products published by DEA come in 3
 principle forms:
 
 - Analysis Ready Data (ARD) or surface reflectance. This can use 
-  the World Reference System (WRS-2) for spacial reference if 
-  sourced from Landsat or the Military Grid Reference System (MGRS)
-  if sourced from Sentinel-2.
+  the World Reference System (WRS-2) if sourced from Landsat or 
+  the Military Grid Reference System (MGRS) if sourced from Sentinel-2
+  for its spatial reference.
 - Derivative (of ARD) data that has a one to one corresponence of 
   pixels and datasets to its parent ARD. This can use WRS-2 if
   sourced from Landsat or MGRS if sourced from Sentinel-2 for its
   spatial reference.
 - Derivative summary data, that is a summary of a time period (monthly,
   seasonal, calendar year, financial year, all of available time). These 
-  will use the Collection 3 grid specification
+  will use the Collection 3 grid specification for its spatial reference.
 
 |ard_ls_image|
 
