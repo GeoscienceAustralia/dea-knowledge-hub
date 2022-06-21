@@ -17,14 +17,15 @@ convention.
 Naming components
 ------------
 DEA product names include the following components:
-- organisation - typically 'ga' or Geoscience Australia
+
+- organisation - typically 'ga' for Geoscience Australia
 - platform - the name of the satellite, for example ls5 for Landsat 5 or 
   s2b for Sentinel-2B
 - sensor - letter designating the sensor on the satellite that the data
   was sourced from, for instance ls5t in the case of Landsat 5's Thematic 
   Mapper (TM), ls7e for Landsat 7's Enhanced Thematic Mapper (ETM), ls8c
   for Landsat 8's (C)ombined Object Land Imager (OLI) with Thermal 
-  Infrared Sensor (TIRS) and s2am or s2bm for Sentinel-2A/B's MultiSpectral
+  Infrared Sensor (TIRS) and s2am or s2bm for Sentinel-2A / B's MultiSpectral
   Instrument (MSI).
 - product - name of product, for example fc for "Fractional Cover", wo for
   "Water Observations" or nbart for "Nadir corrected Bi-directional reflectance
