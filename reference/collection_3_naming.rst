@@ -4,15 +4,15 @@ DEA Naming Conventions (Collection 3)
 Introduction
 ------------
 
-Digital Earth Australia (DEA) maintains and distributes collections of
-Satellite derived information sourced from a growing number of different
-Satellite missions.
-The DEA Naming Conventions aim to make naming of collections at rest on 
-NCI THREDDS, NCI projects and AWS S3 buckets consistent across products.
-
 This page explains the naming convention of files/datasets found within 
 DEA's digital products as well as the Open Data Cube (ODC) product naming
 convention.
+
+Digital Earth Australia (DEA) maintains and distributes collections of
+Satellite derived information sourced from a growing number of different
+Satellite missions.
+The DEA Naming Conventions aim to make naming of data collections at rest
+consistent across products and platforms.
 
 Naming components
 ------------
