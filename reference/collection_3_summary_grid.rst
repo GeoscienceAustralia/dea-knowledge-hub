@@ -90,7 +90,7 @@ References
 -  `Download the Grid in GeoJSON
    map <https://data.dea.ga.gov.au/derivative/ga_summary_grid_c3.geojson>`__
 -  `CMI Grid
-   Product <http://cmi.ga.gov.au/data-products/dea/641/dea-collection-3-grid-specification>`__
+   Specifications <https://cmi.ga.gov.au/node/701>`__
 -  `CMI Raster
    Schema <https://cmi.ga.gov.au/raster-schema/dea-collection-3-grid-specification>`__
 -  `The Grid as implemented in ODC Statistician
