@@ -66,5 +66,6 @@ and list what you would like to see changed.
 
   about/faq.rst
   about/changelog.rst
+  about/citations.rst
   about/glossary.rst
   genindex
