@@ -8,17 +8,19 @@ Digital Earth Australia program citations
 
 Dunn, B., Ai, E., Alger, M.J., Fanson, B., Fickas, K.C., Krause, C.K., Lymburner, L., Nanson, R., Papas, P., Ronan, M., Thomas, R.F. Wetlands Insight Tool: Characterising the surface water and vegetation cover dynamics of individual wetlands using multidecadal Landsat satellite data, in review.  
 
-Nanson, R., Bishop-Taylor, R., Sagar, S., Lymburner, L., 2022. Geomorphic insights into Australia's coastal change using a national dataset derived from the multi-decadal Landsat archive. Estuarine, Coastal and Shelf Science, 265, p.107712. https://doi.org/10.1016/j.ecss.2021.107712 
-
-Christopher J. Owers, Richard M. Lucas, Daniel Clewley, Belle Tissott, Sean M. T. Chua, Gabrielle Hunt, Norman Mueller, Carole Planque, Suvarna M. Punalekar, Pete Bunting, Peter Tan, Graciela Metternicht, “Operational continental-scale land cover mapping of Australia using the Open Data Cube”, ISPRS Journal of Photogrammetry and Remote Sensing, In Review.  
+Christopher J. Owers, Richard M. Lucas, Daniel Clewley, Belle Tissott, Sean M. T. Chua, Gabrielle Hunt, Norman Mueller, Carole Planque, Suvarna M. Punalekar, Pete Bunting, Peter Tan, Graciela Metternicht, “Operational continental-scale land cover mapping of Australia using the Open Data Cube”, ISPRS Journal of Photogrammetry and Remote Sensing, In Review. 
 
 Richard M. Lucas, Sophia German, Graciela Metternicht, Rebecca K. Schmidt, Chris Owers, Suzanne M. Prober, Anna Richards, Sally Tetreault-Campbell, Kristen J. Williams, Norman Mueller, Belle Tissott, Sean Chua, Alison Cowood, Terry Hills, Dayani Gunawardana, Alexis McIntyre, Sebastien Chognard, Clive Hurford, Carole Planque, Suvarna Punalekar, Daniel Clewley, Ruth Sonnenschein, Nicholas Murray, Ioannis Manakos, Palma Blonda, Kate Owers, Stephen Roxburgh, Heather Kay, Peter Bunting, and Claire Horton, “A Globally Relevant Change Taxonomy and Evidence-based Change Framework for Land Monitoring”, Global Change Biology, In Press.  
+
+Nanson, R., Bishop-Taylor, R., Sagar, S., Lymburner, L., 2022. Geomorphic insights into Australia's coastal change using a national dataset derived from the multi-decadal Landsat archive. Estuarine, Coastal and Shelf Science, 265, p.107712. https://doi.org/10.1016/j.ecss.2021.107712 
+
+Sudmanns, M., Augustin, H., Killough, B., Giuliani, G., Tiede, D., Leith, A., Yuan, F., Lewis, A., 2022. Think global, cube local: an Earth Observation Data Cube’s contribution to the Digital Earth vision. 1–29. https://doi.org/10.1080/20964471.2022.2099236
 
 Wang L.-W., Garthwaite M., Du Z., Deane A., McCubbine J., Wheeler M., O’Hehir A., Davies B., 2022. InSAR Analysis Ready Data.  Accepted paper to be published in Institute of Electrical and Electronics Engineers (IEEE) XPlore and presented at 2022 IEEE International Geoscience and Remote Sensing Symposium IGARSS 
 
 Yuan, F., Repse M., Leith A., Rosenqvist A., Milcinski G., Moghaddam N.F., Dhar T., Burton C., Hall L., Jorand C., Lewis A.,2022. An operational Analysis Ready Radar Backscatter dataset for the African continent. Remote Sensing,14(2), p.351. https://doi.org/10.3390/rs14020351 
 
-Zhao, L., Liu, J., Peters, S., Li, J., Oliver, S., Mueller, N., Investigating the Impact of Using IR Bands on Early Fire Smoke Detection from Landsat Imagery with a Lightweight CNN Model. Remote Sens. 2022, In Press 
+Zhao, L., Liu, J., Peters, S., Li, J., Oliver, S., Mueller, N., 2022. Investigating the Impact of Using IR Bands on Early Fire Smoke Detection from Landsat Imagery with a Lightweight CNN Model. Remote Sensing 14. https://doi.org/10.3390/rs14133047
 
 Earth Observation: Data, Processing and Applications, https://www.eoa.org.au/earth-observation-textbooks  
 
