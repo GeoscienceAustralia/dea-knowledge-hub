@@ -22,6 +22,10 @@ The DEA Sandbox is free to use. Visit https://app.sandbox.dea.ga.gov.au to sign 
 for a new account, or sign in if you have an existing account. A verification
 code will be sent to the email address you register with.
 
+.. image:: /_static/Sandbox/sandbox_signup.jpg
+   :align: center
+   :alt: Sandbox register
+
 Access
 ------
 
