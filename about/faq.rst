@@ -10,7 +10,7 @@ There are several options for downloading data from DEA depending on your use ca
 
 **1) You want to download a small area of data from a specific satellite image**
 
-Use `DEA Maps`_ to directly export a small amount of data from the map using the :ref:`Export functionality <dea_maps_exporting>`. This is the easiest method, but it is not suitable for downloading large areas of data or multiple steps (see below).
+Use :ref:`DEA Maps <dea_maps>` to directly export a small amount of data from the map using the :ref:`Export functionality <dea_maps_exporting>`. This is the easiest method, but it is not suitable for downloading large areas of data or multiple steps (see below).
 
 **2) You want to download all available data for a bounding box and/or time range**
 
