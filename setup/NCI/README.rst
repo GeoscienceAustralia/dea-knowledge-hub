@@ -10,3 +10,4 @@ on the National Computational Infrastructure (NCI).
    account.rst
    install.rst
    nci_basics.rst
+   projects.rst
