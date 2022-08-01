@@ -124,7 +124,7 @@ Exporting data
 --------------
 
 .. note::
-   This method will export data at low resolution based on the zoom of the DEA Maps window. To access the original high resolution data, please use the `DEA Sandbox <Sandbox/sandbox.rst>`_ or `NCI <NCI/README.rst>`_ analysis environments.
+   This method is suitable for exporting small areas of DEA data at high resolution. To download large areas of data or multiple timesteps, please use the `DEA Sandbox <Sandbox/sandbox.rst>`_ or `NCI <NCI/README.rst>`_ analysis environments, or download directly from [DEA's Amazon S3 buckets](http://dea-public-data-dev.s3-website-ap-southeast-2.amazonaws.com/).
    
 To export data directly from DEA Maps for use in GIS software:
 
@@ -197,14 +197,6 @@ The "Compare" tool above allowed us to visually compare different satellite data
 .. figure:: /_static/DEA_maps/dea_maps_diff_3.jpg
    :align: center
    :alt: Difference 3
-
-.. warning::
-   25 August 2021 update: due to `a temporary bug <https://github.com/TerriaJS/terriajs/issues/5762>`_, *do not* use the left and right arrows to choose dates until you have first selected a date using the date picker:
-
-.. figure:: /_static/DEA_maps/date_bug.png
-   :align: center
-   :alt: Bug
-   :width: 300
 
 4. We can now run the change detection computation. Click ``Choose a difference output`` on the "Difference" tool. This gives us several options that can be used to compare differences in specific landscape characteristics over time (e.g. water, vegetation, fire scars). For this example, select ``Modified Normalised Difference Water Index - Green, SWIR`` which is useful for comparing the distribution of water in the landscape. When ready, click ``Generate change detection``.
 
