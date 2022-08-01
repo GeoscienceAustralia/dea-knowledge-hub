@@ -11,14 +11,14 @@ There are several options for downloading data from DEA depending on your use ca
 You want to download a small area of data from a specific satellite image
 -------------------------------------------------------------------------
 
-Use `DEA Maps`_ to directly export a small amount of data from the map using the :ref:`Export functionality <_dea_maps_exporting>`. This is the easiest method, but it is not suitable for downloading large areas of data or multiple steps (see below).
+Use `DEA Maps`_ to directly export a small amount of data from the map using the :ref:`Export functionality <dea_maps_exporting>`. This is the easiest method, but it is not suitable for downloading large areas of data or multiple steps (see below).
 
 You want to download all available data for a bounding box and/or time range
 ----------------------------------------------------------------------------
 
 Use DEA's STAC metadata to find the data you are interested in using the `Downloading and streaming data using STAC metadata guide`_. 
 
-.. _Downloading and streaming data using STAC metadata guide:  ../Frequently_used_code/Downloading_data_with_STAC.ipynb
+.. _Downloading and streaming data using STAC metadata guide:  ../notebooks/Frequently_used_code/Downloading_data_with_STAC.ipynb
 
 You want to download specific files from DEA's Amazon S3 buckets
 ----------------------------------------------------------------
@@ -30,7 +30,7 @@ Download data directly from our `Amazon S3 buckets`_ using the AWS Command Line 
 .. _Amazon S3 buckets:  ../setup/AWS/data_and_metadata.rst
 
 To download multiple files::
-    
+
     insert code code
 
 Why does Collection 3 ARD have a higher latency than Collection 2 ARD?
