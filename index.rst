@@ -53,6 +53,7 @@ and list what you would like to see changed.
    notebooks/DEA_datasets/README.rst
    notebooks/Frequently_used_code/README.rst
    notebooks/Real_world_examples/README.rst
+   notebooks/Tools/index
 
 .. toctree::
    :caption: Reference
