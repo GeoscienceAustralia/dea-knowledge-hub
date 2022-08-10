@@ -17,7 +17,10 @@ extensions = [
 ]
 
 # Test of activating autosummary
-autosummary_generate = True
+autosummary_generate = ['notebooks/Tools/index.rst']
+autodoc_default_options = {
+    'members': True,
+}
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
