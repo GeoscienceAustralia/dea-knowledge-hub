@@ -27,7 +27,7 @@ autodoc_default_options = {
     "members": True,
 }
 
-# We are are not installing dea_tools dependancies, so we need
+# We are are not installing dea_tools dependencies, so we need
 # to mock them so autodocs does not fail
 autodoc_mock_imports = [
     "aiohttp",
