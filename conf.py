@@ -58,6 +58,8 @@ autodoc_mock_imports = [
     "numexpr",
     "numpy",
     "odc",
+    "odc.algo",
+    "odc.ui",
     "osgeo",
     "otps",
     "OWSLib",
