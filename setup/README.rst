@@ -13,7 +13,7 @@ Instances
 ---------
 
 There are two available pre-built instances: the `Digital Earth Australia Sandbox`_ and the `National Computational Infrastructure`_ (NCI).
-The Sandbox is suitable for all users, containing a representative sample of available data.
+The Sandbox is suitable for all users, containing a representative sample of available data.
 The NCI contains all available data, but users must apply and be approved to gain an account.
 
 .. _Digital Earth Australia Sandbox: Sandbox/sandbox.rst
@@ -23,7 +23,7 @@ Examples
 --------
 
 The examples are provided as Jupyter Notebooks, which can be run in either instance.
-Jupyter Notebooks contain code and explanations side-by-side so that you can understand the steps involved in an analysis.
+Jupyter Notebooks contain code and explanations side-by-side so that you can understand the steps involved in an analysis.
 Our `Jupyter Notebooks`_ page provides a quick introduction to using Jupyter Notebooks.
 For a more detailed introduction, visit the `Jupyter Notebook Documentation`_.
 
