@@ -45,7 +45,7 @@ and list what you would like to see changed.
    setup/jupyter.rst
 
 .. toctree::
-   :caption: User Guide
+   :caption: User Guide (sourced from `dea-notebooks repository <https://github.com/GeoscienceAustralia/dea-notebooks>`_)
    :maxdepth: 1
    :glob:
 
