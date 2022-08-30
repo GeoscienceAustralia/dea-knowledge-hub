@@ -1,5 +1,5 @@
 Digital Earth Australia National Computational Infrastructure Projects
-=============================
+======================================================================
 
 Digital Earth Australia maintains the following publically accessible projects for use within National Computational Infrastrcture:
 

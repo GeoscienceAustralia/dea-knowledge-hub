@@ -96,12 +96,10 @@ napoleon_numpy_docstring = True
 templates_path = ["_templates"]
 
 # disable automatic running of .ipynb files
-# because Simon's smoke test notebook takes a long time to run
 nbsphinx_execute = "never"
 
 # The suffix(es) of source filenames.
 # You can specify multiple suffix as a list of string:
-#
 source_suffix = [".rst", ".md"]
 # source_suffix = '.rst'
 
@@ -141,7 +139,10 @@ exclude_patterns = [
     "Thumbs.db",
     ".DS_Store",
     "**.ipynb_checkpoints",
-    "notebooks/*.rst",
+    "notebooks/Scientific_workflows",
+    "notebooks/.github",
+    "notebooks/DEA_notebooks_template.ipynb",
+    "notebooks/USAGE.rst",
     ".*",
 ]
 
@@ -254,11 +255,11 @@ texinfo_documents = [
 ]
 
 
-# Example configuration for intersphinx: refer to the Python standard library.
-intersphinx_mapping = {
-    "python": ("https://docs.python.org/3/", None),
-    "odc": ("https://datacube-core.readthedocs.io/en/stable/", None),
-}
+# # Example configuration for intersphinx: refer to the Python standard library.
+# intersphinx_mapping = {
+#     "python": ("https://docs.python.org/3/", None),
+#     "odc": ("https://datacube-core.readthedocs.io/en/stable/", None),
+# }
 
 
 def setup(app):

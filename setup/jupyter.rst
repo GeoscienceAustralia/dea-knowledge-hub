@@ -9,8 +9,7 @@ Jupyter Notebooks are one of the primary tools for developing analyses with DEA.
 The ability to combine code with easy-to-read Markdown makes them useful for both developing and sharing work.
 Jupyter Notebooks can be used on both the `DEA Sandbox`_ and the `NCI`_.
 
-In addition to the documentation found in the following `DEA Jupyter Notebooks User Guide`_ section, please see the `dea-notebooks wiki on GitHub <https://github.com/GeoscienceAustralia/dea-notebooks/wiki>`_
-
+In addition to the documentation found in the following `DEA Notebooks User Guide <notebooks/README.rst>`_ section, please see the `dea-notebooks wiki on GitHub <https://github.com/GeoscienceAustralia/dea-notebooks/wiki>`_ for more details on interacting and developing code with Jupyter Notebooks.
 
 .. _DEA Sandbox: Sandbox/sandbox.rst
 .. _NCI: NCI/README.rst

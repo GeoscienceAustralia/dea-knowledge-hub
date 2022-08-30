@@ -45,10 +45,11 @@ and list what you would like to see changed.
    setup/jupyter.rst
 
 .. toctree::
-   :caption: DEA Jupyter Notebooks User Guide (built from: `dea-notebooks <https://github.com/GeoscienceAustralia/dea-notebooks>`_)
+   :caption: DEA Notebooks User Guide
    :maxdepth: 1
    :glob:
-   notebooks-other-doco.rst
+   
+   notebooks/README.rst
    notebooks/Beginners_guide/README.rst
    notebooks/DEA_datasets/README.rst
    notebooks/Frequently_used_code/README.rst
