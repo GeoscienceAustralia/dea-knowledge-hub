@@ -1,5 +1,5 @@
 DEA Naming Conventions (Collection 3) 
-=========================================
+=====================================
 
 Introduction
 ------------
@@ -9,13 +9,13 @@ DEA's digital products as well as the Open Data Cube (ODC) product naming
 convention.
 
 Digital Earth Australia (DEA) maintains and distributes collections of
-Satellite derived information sourced from a growing number of different
-Satellite missions.
-The DEA Naming Conventions aim to make naming of data collections at rest
-consistent across products and platforms.
+satellite-derived information sourced from a growing number of different
+satellite missions.
+The DEA Naming Conventions aim to make naming of data collections consistent 
+across products and platforms.
 
 Naming components
-------------
+-----------------
 DEA product names include the following components:
 
 - organisation - typically 'ga' for Geoscience Australia
@@ -51,56 +51,55 @@ DEA product names include the following components:
   .tif for cloud optimized geotiff.
 
 Different types of products
-------------
+---------------------------
 
-Depending on the type of digital product, or from which Satellite 
-mission the data was sourced, products published by DEA come in 3 
+Depending on the type of digital product, or from which satellite 
+mission the data was sourced, products published by DEA come in three 
 principle forms:
 
 - Analysis Ready Data (ARD) or surface reflectance. This can use 
-  the World Reference System (WRS-2) if sourced from Landsat or 
-  the Military Grid Reference System (MGRS) if sourced from Sentinel-2
-  as its spatial reference.
-- Derivative (of ARD) data that has a one to one corresponence of 
-  pixels and datasets to its parent ARD. This can use WRS-2 if
-  sourced from Landsat or MGRS if sourced from Sentinel-2 as its
-  spatial reference.
-- Derivative summary data, that is a summary of a time period (monthly,
+  the World Reference System (WRS-2) as its spatial reference if sourced 
+  from Landsat, or the Military Grid Reference System (MGRS) if sourced 
+  from Sentinel-2.
+- Derivative (of ARD) data that has a one-to-one corresponence of 
+  pixels and datasets to its parent ARD. This can use WRS-2 as its
+  spatial reference if sourced from Landsat, or MGRS if sourced from Sentinel-2.
+- Derivative summary data, or a summary of a time period (monthly,
   seasonal, calendar year, financial year, all of available time). These 
   will use the Collection 3 grid specification for its spatial reference.
 
 Filename Examples
-------------
+-----------------
 
 Landsat ARD
-^^^^^^^^^^^^
+^^^^^^^^^^^
 |ard_ls_image|
 
 Sentinel-2 ARD
-^^^^^^^^^^^^
+^^^^^^^^^^^^^^
 |ard_s2_image|
 
 Landsat Fractional Cover
-^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^
 |fc_ls_image|
 
 Sentinel-2 Water Observations
-^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 |wo_s2_image|
 
 Landsat Geomedian Summary
-^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^
 |summary_image|
 
 ODC Product Examples
-------------
+--------------------
 
 Landsat ARD ODC Product
-^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^
 |odc_ard_image|
 
 Landsat Fractional Cover ODC Product
-^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 |odc_fc_image|
 
 References
