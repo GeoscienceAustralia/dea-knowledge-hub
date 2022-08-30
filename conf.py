@@ -39,6 +39,7 @@ autodoc_mock_imports = [
     "dask_gateway",
     "dask_ml",
     "datacube",
+    "dea_tools",
     "dill",
     "distutils",
     "fsspec",
