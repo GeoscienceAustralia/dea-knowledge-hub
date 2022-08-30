@@ -55,6 +55,7 @@ autodoc_mock_imports = [
     "lxml",
     "matplotlib",
     "mpl_toolkits",
+    "multiprocessing",
     "numexpr",
     "numpy",
     "odc",
