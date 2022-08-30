@@ -32,7 +32,7 @@ jobs:
       - name: Fetch notebooks
         run: |
           git clone --depth 1 https://github.com/GeoscienceAustralia/dea-notebooks.git notebooks
-          cd notebooks && git checkout -b stable
+          cd notebooks && git checkout -b docs_testing
       - name: Build docs
         run: |
           make html
