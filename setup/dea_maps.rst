@@ -216,6 +216,49 @@ The "Compare" tool above allowed us to visually compare different satellite data
    :align: center
    :alt: Difference 6
 
+
+Watercourse Discharge tool 
+--------------------------
+
+The Bureau of Meteorology provides current and historic water discharge data for 3,500 hydrological measurement stations across Australia. The Digital Earth Australia “Watercourse Discharge" tool can be used to match satellite imagery to watercourse discharge information over time at each measuring station. The tool enables the user to plot watercourse discharge and then easily search the related satellite images for the date of measurement.
+
+1. Load a satellite dataset into your workbench (e.g. follow the ``DEA Surface Reflectance (Sentinel-2)`` example above).
+
+2. Load watercourse discharge data (e.g. the Hydrologic Reference Stations dataset) to your workbench by clicking on ``Explore map data``. Scroll down and click ``Other`` > ``Water Regulations Data (BoM)`` > ``Hydrological Reference Stations`` > ``Water Discharge``. Then click ``Add to the map``.  
+
+.. figure:: /_static/DEA_maps/dea_maps_wdt_1.jpg
+   :align: center
+   :alt: Watercourse Discharge Tool 1
+   
+3. The Hydrological Reference Stations watercourse measuring locations located across the country are shown below. Zoom into the map and click on a station of interest. A pop up with the stations name, location and other details will appear. Click ``Show DEA Surface Reflectance (Sentinel-2) at this location``. Then click ``Expand`` and then close the pop up.
+
+.. figure:: /_static/DEA_maps/dea_maps_wdt_2.jpg
+   :align: center
+   :alt: Watercourse Discharge Tool 2
+
+.. figure:: /_static/DEA_maps/dea_maps_wdt_3.jpg
+   :align: center
+   :alt: Watercourse Discharge Tool 3
+   
+4. A hydrograph of your chosen station will now be at the bottom of the screen. To link the Sentinel-2 data to the hydrograph, click on the ``Show available times`` chart symbol in the DEA Surface Reflectance (Sentinel-2) card on your workbench.
+
+.. figure:: /_static/DEA_maps/dea_maps_wdt_4.jpg
+   :align: center
+   :alt: Watercourse Discharge Tool 4
+   
+5. Sentinel-2 captures will now appear as dots on the hydrograph. Clicking on a dot will load imagery from that date onto the map. Hovering over a dot will show the date and time of capture and the average watercourse discharge rate. Note: Sentinel-2 data is only available for 2015 onwards. To clearly see the dots on the hydrograph, you may need to zoom in using your mouse wheel. 
+
+.. figure:: /_static/DEA_maps/dea_maps_wdt_5.jpg
+   :align: center
+   :alt: Watercourse Discharge Tool 5
+   
+6. You can change the style of the Sentinel-2 data by clicking on the ``Styles`` dropdown menu in the DEA Surface Reflectance (Sentinel-2) card on your workbench. The example below shows Modified Normalised Difference Water Index – Green, SWIR.
+
+.. figure:: /_static/DEA_maps/dea_maps_wdt_6.jpg
+   :align: center
+   :alt: Watercourse Discharge Tool 6
+
+
 For more assistance
 -------------------
 DEA Maps contains additional helpful guides for assisting with exploring our datasets. To access this help at any point, click the ``Help`` button on the bottom-right:
