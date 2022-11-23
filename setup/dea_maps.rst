@@ -119,6 +119,7 @@ DEA Maps allows you to easily create print-friendly views of satellite data for 
 .. note::
    Hint: To obtain a high quality image of your map, right click on the image at the top of the print view and select ``Save image as ...``.
 
+.. _dea_maps_exporting:
 
 Exporting data
 --------------
