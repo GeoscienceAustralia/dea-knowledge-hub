@@ -74,7 +74,7 @@ Do this by using the same process as joining a VDI Project as described above.
      - Geoscience Australia Landsat Analysis Ready Data (Collection 3)
  
    * - ka08_
-     - Geoscience Australia Sentinel-2 Analysis Ready Data (Collection 3)         
+     - Geoscience Australia Sentinel-2 Analysis Ready Data (Collection 3)
      
    * - jw04_
      - Geoscience Australia Landsat Derivatives (Collection 3), e.g. WO, FC
@@ -83,7 +83,7 @@ Do this by using the same process as joining a VDI Project as described above.
      - Legacy Geoscience Australia Landsat Derivatives (Collection 2), e.g. NIDEM, ITEM, HLTC
  
    * - if87_
-     - Legacy Geoscience Australia Sentinel-2 Analysis Ready Data (Collection 1) 
+     - Legacy Geoscience Australia Sentinel-2 Analysis Ready Data (Collection 1)
      
 .. _wd8: https://my.nci.org.au/mancini/project/wd8
 .. _xu18: https://my.nci.org.au/mancini/project/xu18
