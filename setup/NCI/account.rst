@@ -72,15 +72,18 @@ Do this by using the same process as joining a VDI Project as described above.
 
    * - xu18_
      - Geoscience Australia Landsat Analysis Ready Data (Collection 3)
-     
-   * - if87_
-     - Geoscience Australia Sentinel-2 Analysis Ready Data (Collection 1) 
+ 
+   * - ka08_
+     - Geoscience Australia Sentinel-2 Analysis Ready Data (Collection 3)         
      
    * - jw04_
      - Geoscience Australia Landsat Derivatives (Collection 3), e.g. WO, FC
 
    * - fk4_
      - Legacy Geoscience Australia Landsat Derivatives (Collection 2), e.g. NIDEM, ITEM, HLTC
+ 
+   * - if87_
+     - Legacy Geoscience Australia Sentinel-2 Analysis Ready Data (Collection 1) 
      
 .. _wd8: https://my.nci.org.au/mancini/project/wd8
 .. _xu18: https://my.nci.org.au/mancini/project/xu18
@@ -88,6 +91,7 @@ Do this by using the same process as joining a VDI Project as described above.
 .. _jw04: https://my.nci.org.au/mancini/project/jw04
 .. _fk4: https://my.nci.org.au/mancini/project/fk4
 .. _rs0: https://my.nci.org.au/mancini/project/rs0
+.. _ka08: https://my.nci.org.au/mancini/project/ka08
 
 High Performance Computing
 ==========================
