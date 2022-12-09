@@ -10,7 +10,7 @@ Connecting to the NCI's Virtual Desktop Infrastructure (VDI)
    recommended method for accessing the NCI's Virtual Desktop Infrastructure (VDI), 
    replacing the previous Open OnDemand (OOD; see below). This doc will be updated
    in 2023 to provide instructions for getting set up with DEA in ARE; if you encounter
-   issues in the meantime, we recommend using the `DEA Sandbox </setup/Sandbox/sandbox.rst>`_ instead.
+   issues in the meantime, we recommend using the `DEA Sandbox </setup/Sandbox/sandbox.html>`_ instead.
 
 
    
