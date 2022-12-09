@@ -10,19 +10,18 @@ Connecting to the NCI's Virtual Desktop Infrastructure (VDI)
    recommended method for accessing the NCI's Virtual Desktop Infrastructure (VDI), 
    replacing the previous OOD Strudel/Turbo VNC method. This doc will be updated
    to provide instructions for getting set up with DEA in ARE; if you encounter
-   issues in the meantime, we recommend using the DEA Sandbox instead.
-
+   issues in the meantime, we recommend using the `DEA Sandbox </setup/Sandbox/sandbox.rst>`_ instead.
 
 
    
+Launching the VDI from OOD
+==========================
+
 The NCI's Open OnDemand (OOD) online portal allows users to quickly connect to Digital 
 Earth Australia from a web browser. 
 To get started with the OOD portal, please follow the following NCI guide:
 
 * `Introduction to Open OnDemand (OOD) <https://opus.nci.org.au/display/OOD/0.+Introduction+to+OOD>`_
-
-Launching the VDI from OOD
-==========================
 
 After successfully logging into the OOD, you will see the OOD Dashboard below. We recommend that most users select the "Virtual Desktop" option which will launch an interactive virtual desktop session that can be used to access DEA. 
 
