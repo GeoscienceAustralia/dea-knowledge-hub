@@ -6,16 +6,16 @@ Connecting to the NCI's Virtual Desktop Infrastructure (VDI)
 ============================================================
 
 .. note::
-   As of 2021, the Open OnDemand (OOD) online portal is now the recommended method for 
-   accessing the NCI's Virtual Desktop Infrastructure (VDI), replacing the previous 
-   Strudel/Turbo VNC method. This allows you more easily access NCI systems from a 
-   browser without needing to install software.   
+   As of 2022, the **Australian Research Environment (ARE)** online portal is now the 
+   recommended method for accessing the NCI's Virtual Desktop Infrastructure (VDI), 
+   replacing the previous OOD Strudel/Turbo VNC method. This doc will be updated
+   to provide instructions for getting set up with DEA in ARE; if you encounter
+   issues in the meantime, we recommend using the DEA Sandbox instead.
 
-.. note::
-   The NCI released a new version of the Virtual Desktop Infrastructure (VDI) on 28/10/2020. 
-   If you are having trouble connecting to the VDI after this date (and did not have trouble
-   before this date) please consult the most recent 
-   `VDI FAQ help <https://opus.nci.org.au/display/Help/4.+VDI+FAQ>`_
+* `Australian Research Environment (ARE) <https://are.nci.org.au/pun/sys/dashboard>`_
+
+
+.. _Amazon Web Services: ../access/AWS/data_and_metadata.rst
    
 The NCI's Open OnDemand (OOD) online portal allows users to quickly connect to Digital 
 Earth Australia from a web browser. 
