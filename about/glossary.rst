@@ -22,6 +22,19 @@ Glossary
       Amazon Web Services: Cloud computing infrastructure provided by Amazon 
       (United States).   
    
+   BRDF
+      “Bidirectional reflectance distribution function” is a theoretical concept that describes the 
+      relationship between light and an opaque surface, using a target's irradiance geometry and 
+      the remote sensing system’s relative angle to the target.
+   
+   C2
+      Collection 2 - Digital Earth Australia's second collection of Landsat data that has now 
+      been superceded by Collection 3 (C3).
+      
+   C3
+      Collection 3 - The third collection of Digital Earth Australia's Landsat or Sentinel data 
+      and the most up-to-date collection available.
+   
    CEOS-SEO
       Committee on Earth Observation, Systems Engineering Office
       http://ceos-cube.org/
@@ -29,6 +42,15 @@ Glossary
    COG
       Cloud Optimised GeoTIFF, a data file format optimised for efficient 
       workflows on the cloud and remote reading. 
+  
+   Collection
+     C1, C2, C3 ...n - the whole suite of data from the Landsat or Sentinel mission. 
+     Collections are updated when there are fundamental changes and upgrades to the data suite that 
+     make it incompatible with the existing collection. Therefore a collection upgrade is more 
+     akin to a movie franchise reboot than a re-release (think of C2 as the 1968 version of Planet 
+     of the Apes starring Charlton Heston alongside actors playing apes in hairy costume, and 
+     C3 as the 2011 reboot, Rise of the Planet of the Apes, where Andy Serkis played the CGI 
+     ape Caesar using of ‘performance capture’ acting).
    
    CSIRO
       Commonwealth Scientific and Industrial Research Organisation
@@ -37,7 +59,7 @@ Glossary
       Digital Earth Australia, a platform that uses spatial data and images 
       recorded by satellites orbiting our planet to detect physical changes 
       across Australia in unprecedented detail. DEA is the Australian implementation of
-      the Open Data Cube. For more information see https://www.ga.gov.au/dea.
+      the Open Data Cube. For more information see https://www.dea.ga.gov.au/.
       
    DEA Notebooks
       Digital Earth Australia Notebooks, a open-source repository containing 
@@ -59,14 +81,11 @@ Glossary
    ESA
       European Space Agency
    
-   FAO
-      Food and Agriculture Organization of the United Nations
-   
    FC
       Fractional Cover. Fractional Cover (FC) is a measurement that splits the landscape into 
       three parts, or fractions; green (leaves, grass, and growing crops), brown (branches, 
       dry grass or hay, and dead leaf litter), and bare ground (soil or rock). For more information
-      and for details of the methodology, see https://www.ga.gov.au/dea/products/fc.
+      and for details of the methodology, see https://www.dea.ga.gov.au/products/dea-fractional-cover.
    
    GA
       Geoscience Australia
@@ -84,12 +103,12 @@ Glossary
    HLTC
       High and Low Tide Composites, a Digital Earth Australia product providing
       cloud-free imagery mosaics of Australia's coast, estuaries and reefs at low 
-      and high tide. For more information see https://www.ga.gov.au/dea/products/hltc.
+      and high tide. For more information see https://www.dea.ga.gov.au/products/dea-high-low.
       
    ITEM
       Intertidal Extents Model, a Digital Earth Australia product that maps the 
       relative extent of the Australian intertidal zone at regular intervals of 
-      the observed tidal range. For more information see https://www.ga.gov.au/dea/products/iem.
+      the observed tidal range. For more information see https://www.dea.ga.gov.au/products/dea-intertidal-extents.
       
    Jupyter notebook
       A computational "notebook" that allows code to be run and presented alongside 
@@ -143,11 +162,14 @@ Glossary
    NIDEM
       National Intertidal Digital Elevation Model, a Digital Earth Australia product 
       derived from ITEM that maps the elevation relative to Mean Sea Level of the 
-      Australian intertidal zone. For more information see https://www.ga.gov.au/dea/products/nidem.
+      Australian intertidal zone. For more information see https://www.dea.ga.gov.au/products/dea-intertidal-elevation.
       
    NIR
       Near Infrared, referring to particular bands used to collect Earth observation 
       data
+  
+   NRT
+     Near-real time
    
    ODC
       Open Data Cube, an international open-source project developing the technology
@@ -158,6 +180,9 @@ Glossary
       The high performance database engine used as an index of Datasets by the
       Data Cube. It is both a relational and document database, and the Data
       Cube schema makes use of both of these capabilities.
+   
+   PQ
+     Pixel quality
 
    Python
       The programming language used to develop the Open Data Cube. It is easy to use
@@ -181,12 +206,13 @@ Glossary
       http://vdi.nci.org.au/help.
 
    WOFL
-      Water Observation Feature Layer (a WOfS observation for one point in time)
+      Water Observation Feature Layer (a WO observation for one point in time)
             
-   WOfS
-      Water Observations from Space, a Digital Earth Australia product that provides
+   WO
+      Water Observations (previously called Water Observations from Space), 
+      a Digital Earth Australia product that provides
       images and data showing where water has been seen in Australia from 1987 to 
-      the present. For more information see https://www.ga.gov.au/dea/products/wofs.
+      the present. For more information see https://www.dea.ga.gov.au/products/dea-water-observations.
       
    xarray
       An open source project and Python package that for working with labelled 
