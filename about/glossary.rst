@@ -166,7 +166,8 @@ Glossary
       data
   
    NRT
-     Near-real time
+     Near-real time. NRT data is a less refined/calibrated dataset, which is available significantly 
+     sooner after satellite acquisition than standard ARD data. 
    
    ODC
       Open Data Cube, an international open-source project developing the technology
