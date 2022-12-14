@@ -47,10 +47,7 @@ Glossary
      C1, C2, C3 ...n - the whole suite of data from the Landsat or Sentinel mission. 
      Collections are updated when there are fundamental changes and upgrades to the data suite that 
      make it incompatible with the existing collection. Therefore a collection upgrade is more 
-     akin to a movie franchise reboot than a re-release (think of C2 as the 1968 version of Planet 
-     of the Apes starring Charlton Heston alongside actors playing apes in hairy costume, and 
-     C3 as the 2011 reboot, Rise of the Planet of the Apes, where Andy Serkis played the CGI 
-     ape Caesar using of ‘performance capture’ acting).
+     akin to a movie franchise reboot than a re-release.
    
    CSIRO
       Commonwealth Scientific and Industrial Research Organisation
