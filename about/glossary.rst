@@ -53,7 +53,8 @@ Glossary
       Commonwealth Scientific and Industrial Research Organisation
 
    DEA
-      Digital Earth Australia, a platform that uses spatial data and images 
+      Digital Earth Australia, a program of Geoscience Australia 
+      that uses spatial data and images 
       recorded by satellites orbiting our planet to detect physical changes 
       across Australia in unprecedented detail. DEA is the Australian implementation of
       the Open Data Cube. For more information see https://www.dea.ga.gov.au/.
