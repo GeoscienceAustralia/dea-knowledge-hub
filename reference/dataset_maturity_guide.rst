@@ -63,16 +63,14 @@ How do I load only Near Real Time/Interim/Final data using the datacube?
 
 DEA data can be filtered to specific dataset maturity levels using `dataset_maturity` 
 metadata field. Valid options are “final”, “nrt” or “interim”; for example, 
-to load only “final” maturity Landsat 8 data: 
+to load only “final” maturity Landsat 8 data::
 
-``` 
-import datacube  
-dc = datacube.Datacube()  
+  import datacube  
+  dc = datacube.Datacube()  
 
-dc.load(product="ga_ls8c_ard_3", 
-        measurements=['nbart_red'], 
-        x=(150, 150.1), 
-        y=(-30, -30.1), 
-        time=('2022-01', '2022-02'), 
-        dataset_maturity="final") 
-``` 
+  dc.load(product="ga_ls8c_ard_3", 
+          measurements=['nbart_red'], 
+          x=(150, 150.1), 
+          y=(-30, -30.1), 
+          time=('2022-01', '2022-02'), 
+          dataset_maturity="final") 
