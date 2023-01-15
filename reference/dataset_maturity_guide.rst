@@ -18,10 +18,11 @@ ancillaries, ‘Final’ maturity ARD is produced.
 * **Final** ARD is DEA’s best quality ARD, produced using high quality ancillary datasets derived 
   from observed data. These ancillary datasets are slower to produce but are observational 
   datasets of the conditions at the time of image capture and so provide our most accurate dataset 
-  corrections.  
-* DEA uses the following dynamic ancillary datasets to produce its Final ARD 
+  corrections. DEA uses the following dynamic ancillary datasets to produce its Final ARD:
+
     * Bidirectional reflectance distribution function (BRDF) data from the United States Geological Survey 
-    * Water Vapour from USA National Oceanographic and Atmospheric Administration 
+    * Water Vapour from USA National Oceanographic and Atmospheric Administration
+
 As the higher quality ancillary datasets become available, a “Final” version of the data is produced, 
 which replaces the NRT or interim product (see below).  
 
