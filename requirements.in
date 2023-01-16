@@ -1,0 +1,9 @@
+Sphinx>=2,<4
+nbsphinx==0.7.1
+nbconvert<6
+sphinx_rtd_theme
+IPython
+recommonmark
+Jinja2<3
+markupsafe==2.0.1
+ipython_genutils

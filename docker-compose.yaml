@@ -1,0 +1,17 @@
+---
+version: "3.7"
+
+services:
+  # Start docker container for sphinx-autobuild
+  sphinx:
+    image: local-sphinx
+    user: ${UID_GID}
+    environment:
+      - SPHINX_IMMATERIAL_EXTERNAL_RESOURCE_CACHE_DIR=/tmp/.cache
+    ports:
+      - 8000:8000
+    volumes:
+      - .:/tmp/docs
+    build:
+      context: .
+      dockerfile: Dockerfile-sphinx
