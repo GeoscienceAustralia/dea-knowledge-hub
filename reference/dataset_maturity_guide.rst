@@ -57,13 +57,14 @@ Dataset maturity flowchart
 
 .. |dataset_maturity_flowchart| image:: ./images/dataset_maturity_flowchart.drawio.svg
 
-**Tip: to view larger, right-click then select `open image in new tab`**
+**Tip:** to view larger, right-click then select **open image in new tab**
 
-**Diagram editing notes for internal use:**
-The SVG above contains an embedded copy of the source used to generate it.
-Download it, then drop it into `Diagrams.net <https://app.diagrams.net/>`__ to edit.
-When finished, *save* it, OR use *export as SGV* with the **`Include a copy of my diagram`** option checked.
-Then commit it back to the repo.
+..
+  Diagram editing notes for internal use:
+  The SVG above contains an embedded copy of the source used to generate it.
+  Download it, then drop it into https://app.diagrams.net/ to edit.
+  When finished, *save* it, OR use *export as SGV* with the **Include a copy of my diagram** option checked.
+  Then commit it back to the repo.
 
 How is this different from what DEA used to do? 
 -----------------------------------------------
