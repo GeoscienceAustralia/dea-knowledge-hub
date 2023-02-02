@@ -36,7 +36,7 @@ corrections. DEA uses the following dynamic ancillary datasets to produce its **
 
 Interim
 ------------
-If high quality ancillaries required for the **final** ARD model don’t become available **within 18 days** of image capture,
+If high quality ancillaries required for the **final** ARD model don’t become available **within 23 days** of image capture,
 ‘**interim**’ maturity data is produced as a *stand-in* until the full ancillaries are available to produce the ‘**final**’ version.
 This is our fall-back until the issue is resolved.
 
