@@ -42,7 +42,7 @@ idna==3.4
     # via requests
 imagesize==1.4.1
     # via sphinx
-ipython==8.8.0
+ipython==8.10.0
     # via -r requirements.in
 ipython-genutils==0.2.0
     # via -r requirements.in
