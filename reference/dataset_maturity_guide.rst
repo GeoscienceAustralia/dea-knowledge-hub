@@ -13,7 +13,7 @@ DEA produces data to three maturity levels:
 
 
 Near Real Time (NRT)
-------------
+--------------------
 **Near Real Time (NRT)**
 is a rapid ARD product produced within 48 hours after image capture. NRT 
 data is corrected using existing long term climatology data that is of slightly lower 
@@ -52,7 +52,7 @@ maturity level to suit their requirements. Datasets with lower maturity level wi
 mature dataset versions (interim and final) as they are generated. 
 
 Dataset maturity flowchart
-------------
+--------------------------
 |dataset_maturity_flowchart|
 
 .. |dataset_maturity_flowchart| image:: ./images/dataset_maturity_flowchart.drawio.svg
