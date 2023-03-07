@@ -25,9 +25,9 @@ jobs:
         python-version: [3.9]
     name: Publish Docs
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: Set up Python ${{ matrix.python-version }}
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@v4
         with:
           python-version: ${{ matrix.python-version }}
       - name: Install dependencies
@@ -44,7 +44,7 @@ jobs:
           make html
 
       - name: Configure AWS credentials via OIDC
-        uses: aws-actions/configure-aws-credentials@v1
+        uses: aws-actions/configure-aws-credentials@v2
         with:
           role-to-assume: arn:aws:iam::538673716275:role/github-actions-dea-docs
           aws-region: ap-southeast-2
