@@ -264,3 +264,8 @@ texinfo_documents = [
 
 def setup(app):
     app.add_css_file("css/custom.css")
+
+spelling_lang = tokenizer_lang = 'en_AU'
+spelling_show_suggestions = True
+spelling_ignore_acronyms = True
+spelling_word_list_filename = ['spelling_wordlist.txt', 'spellcheck_wordlist.txt']
