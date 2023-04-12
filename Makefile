@@ -27,6 +27,5 @@ livehtml:
 	sphinx-autobuild --open-browser --port 8001 --ignore notebooks --ignore .direnv --ignore _build/ --ignore .git/ --ignore .idea/ -b html $(SPHINXOPTS) . $(BUILDDIR)/html
 
 docker-live:
-# Explicitly use an empty string for the first stage, to suppress the warning
 	docker-compose build
 	UID_GID="$(shell id -u):$(shell id -g)" docker-compose up
