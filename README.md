@@ -9,36 +9,25 @@ cd dea-docs
 ```
 
 ## Building the DEA docs locally for live editing
-Local building can be done either by:
-- **(recommended):** running a live server in Docker, which also supports live-reloading.
-- **(legacy approach):** installing the requirements in Conda, then manually building after each change.
+Local building can be done by running a live server in Docker, which supports live-reloading.
+> There is also a legacy approach, retained at the end of this document.
 
-
-### Local build with Docker (recommended)
-
-> Note: the `make fetchnotebooks` target downloads the `dea-notebooks` repository to incorporate documentation from there.
-
-> **Caution:** The `dea-notebooks` repository is very large (~2GB), so including it will ***significantly** slow down the build!*
->
->If you don't need to see documentation pages from `dea-notebooks` in your live test, it is suggested you *do not* run the  step.
-
->**Known issue!** Local builds with `make fetchnotebooks` are  **currently broken** (relevant documentation is not output). Until this is resolved there is no point running this step.
-
+### Build and host in Docker:
 ```
 make fetchnotebooks
 make docker-live
 ```
 
+Notes:
+- The `make fetchnotebooks` target downloads the `dea-notebooks` repository to incorporate documentation from there.
+If you don't need to see documentation pages from `dea-notebooks` in your live test, it is suggested you *do not* run the  step.
 
-### Legacy local build (does not live-reload)
-```
-conda create -c conda-forge -n deadocs --file requirements.txt
-conda activate deadocs
-pip install -r requirements.txt
-make fetchnotebooks html
-open _build/html/index.html
-```
-> Note: to perform subsequent legacy builds that don't include updates to the `dea-notebooks` repository, you only need to run `make html`.
+- The `dea-notebooks` repository is very large (~2GB). Therefore:
+    - We clone using the flag `--depth 1` (to only fetch the latest commit on the current branch). We specify the branch as `stable` during the clone.
+    - The resultant clone is typically a couple of hundred MB.
+
+**Known issues!**
+- Local builds with `make fetchnotebooks` currently output a significant number of warnings before stabilising.
 
 ## Updating packages
 Package versions are pinned in `requirements.txt` and built from `requirements.in` (with less specific pinning). Check the top of `requirements.txt` for info (do not make changes there).
@@ -55,3 +44,13 @@ pip-compile --output-file=requirements.txt requirements.in
 
 ## Futher contribution info
 See the [contribution instructions](https://github.com/GeoscienceAustralia/dea-docs/wiki/Contribution-instructions) for more details.
+
+## Legacy local build (NOT RECOMMENDED, does not live-reload)
+```
+conda create -c conda-forge -n deadocs --file requirements.txt
+conda activate deadocs
+pip install -r requirements.txt
+make fetchnotebooks html
+open _build/html/index.html
+```
+> Note: to perform subsequent legacy builds that don't include updates to the `dea-notebooks` repository, you only need to run `make html`.

@@ -20,14 +20,13 @@ help:
 	@$(SPHINXBUILD) -M $@ "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
 
 fetchnotebooks:
-	[ -d notebooks ] || git clone https://github.com/GeoscienceAustralia/dea-notebooks.git notebooks
+	[ -d notebooks ] || git clone --branch stable --depth 1 https://github.com/GeoscienceAustralia/dea-notebooks.git notebooks
 	cd notebooks && git checkout stable && git reset --hard origin/stable && git pull 
-#	rm -rf notebooks
-#	git clone --depth 1
 
 livehtml:
 	sphinx-autobuild --open-browser --port 8001 --ignore notebooks --ignore .direnv --ignore _build/ --ignore .git/ --ignore .idea/ -b html $(SPHINXOPTS) . $(BUILDDIR)/html
 
 docker-live:
+# Explicitly use an empty string for the first stage, to suppress the warning
 	docker-compose build
 	UID_GID="$(shell id -u):$(shell id -g)" docker-compose up
