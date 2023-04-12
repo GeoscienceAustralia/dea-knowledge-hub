@@ -51,8 +51,9 @@ and list what you would like to see changed.
    
    notebooks/README.rst
    notebooks/Beginners_guide/README.rst
-   notebooks/DEA_datasets/README.rst
-   notebooks/Frequently_used_code/README.rst
+   notebooks/DEA_products/README.rst
+   notebooks/How_to_guides/README.rst
+   notebooks/Interactive_apps/README.rst
    notebooks/Real_world_examples/README.rst
    notebooks/Tools/index
 

@@ -51,9 +51,11 @@ These include:
 
 - `Beginner's guide`_: An introduction to Jupyter Notebooks and how to load, plot and interact with DEA data
 
-- `DEA datasets`_: An introduction to DEA's satellite datasets and derived products, including how to load each product
+- `DEA products`_: An introduction to DEA's satellite datasets and derived products, including how to load each product
 
-- `Frequently used code`_: A recipe book of simple code examples demonstrating how to perform common analysis tasks using DEA
+- `How-to guides`_: A recipe book of simple code examples demonstrating how to perform common analysis tasks using DEA
+
+- `Interactive apps`_: Interactive apps and widgets that require little or no coding to run
 
 - `Real world examples`_: More complex case studies demonstrating how DEA can be used to address real-world problems
 
@@ -86,8 +88,9 @@ have saved in your account. Please read the DEA Sandbox disclaimer below for mor
 .. _JupyterLab Documentation: https://jupyterlab.readthedocs.io/en/stable/user/interface.html
 .. _DEA Notebooks repository: https://github.com/GeoscienceAustralia/dea-notebooks/
 .. _Beginner's guide: ../../notebooks/Beginners_guide/README.rst
-.. _DEA datasets: ../../notebooks/DEA_datasets/README.rst
-.. _Frequently used code: ../../notebooks/Frequently_used_code/README.rst
+.. _DEA products: ../../notebooks/DEA_products/README.rst
+.. _How-to guides: ../../notebooks/How_to_guides/README.rst
+.. _Interactive apps: ../../notebooks/Interactive_apps/README.rst
 .. _Real world examples: ../../notebooks/Real_world_examples/README.rst
 .. _see guide here: https://github.com/GeoscienceAustralia/dea-notebooks/wiki/Guide-to-using-DEA-Notebooks-with-git
 
