@@ -3,10 +3,14 @@ Digital Earth Australia program citations
 =========================================
 
 ****
-2022
+2023
 ****
 
-Dunn, B., Ai, E., Alger, M.J., Fanson, B., Fickas, K.C., Krause, C.K., Lymburner, L., Nanson, R., Papas, P., Ronan, M., Thomas, R.F. Wetlands Insight Tool: Characterising the surface water and vegetation cover dynamics of individual wetlands using multidecadal Landsat satellite data, in review.  
+Dunn, B., Ai, E., Alger, M.J., Fanson, B., Fickas, K.C., Krause, C.E., Lymburner, L., Nanson, R., Papas, P., Ronan, M., Thomas, R.F., 2023. Wetlands Insight Tool: Characterising the Surface Water and Vegetation Cover Dynamics of Individual Wetlands Using Multidecadal Landsat Satellite Data. Wetlands 43, 37. https://doi.org/10.1007/s13157-023-01682-7
+
+****
+2022
+****
 
 Christopher J. Owers, Richard M. Lucas, Daniel Clewley, Belle Tissott, Sean M. T. Chua, Gabrielle Hunt, Norman Mueller, Carole Planque, Suvarna M. Punalekar, Pete Bunting, Peter Tan, Graciela Metternicht, “Operational continental-scale land cover mapping of Australia using the Open Data Cube”, ISPRS Journal of Photogrammetry and Remote Sensing, In Review. 
 
