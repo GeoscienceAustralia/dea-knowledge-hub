@@ -1,6 +1,8 @@
-============================================
-Digital Earth Australia program publications
-============================================
+========================
+DEA program publications
+========================
+
+Scientific articles, conference talks and other publications with Digital Earth Australia authors:
 
 ****
 2023
