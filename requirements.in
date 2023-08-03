@@ -8,3 +8,4 @@ ipython_genutils
 #sphinxcontrib.spelling
 myst_parser
 sphinx-autobuild
+ipywidgets
