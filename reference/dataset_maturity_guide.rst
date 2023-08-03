@@ -1,5 +1,5 @@
-DEA dataset maturity explained 
-==============================
+DEA Dataset Maturity
+====================
 
 In December 2022, DEA implemented **dataset maturity** levels to provide a more streamlined user 
 experience and access mechanism for DEA ARD (Analysis Ready Data) datasets. Dataset metadata 
@@ -14,6 +14,7 @@ DEA produces data to three maturity levels:
 
 Near Real Time (NRT)
 --------------------
+
 **Near Real Time (NRT)**
 is a rapid ARD product produced within 48 hours after image capture. NRT 
 data is corrected using existing long term climatology data that is of slightly lower 
@@ -24,7 +25,8 @@ atmospheric conditions at the time and location the satellite image was captured
 ancillaries, ‘**Final**’ maturity ARD is produced. This replaces the '**NRT**' or '**interim**' product (see below).  
 
 Final
-------------
+-----
+
 **Final**
 ARD is DEA’s best quality ARD, produced using high quality ancillary datasets derived 
 from observed data. These ancillary datasets are slower to produce but are observational 
@@ -35,7 +37,8 @@ corrections. DEA uses the following dynamic ancillary datasets to produce its **
   * Water Vapour from USA National Oceanographic and Atmospheric Administration
 
 Interim
-------------
+-------
+
 If high quality ancillaries required for the **final** ARD model don’t become available **within 23 days** of image capture,
 ‘**interim**’ maturity data is produced as a *stand-in* until the full ancillaries are available to produce the ‘**final**’ version.
 This is our fall-back until the issue is resolved.
@@ -53,6 +56,7 @@ mature dataset versions (interim and final) as they are generated.
 
 Dataset maturity flowchart
 --------------------------
+
 |dataset_maturity_flowchart|
 
 .. |dataset_maturity_flowchart| image:: ./images/dataset_maturity_flowchart.drawio.svg
@@ -63,7 +67,7 @@ Dataset maturity flowchart
   Diagram editing notes for internal use:
   The SVG above contains an embedded copy of the source used to generate it.
   Download it, then drop it into https://app.diagrams.net/ to edit.
-  When finished, *save* it, OR use *export as SGV* with the **Include a copy of my diagram** option checked.
+  When finished, *save* it, OR use *export as SVG* with the **Include a copy of my diagram** option checked.
   Then commit it back to the repo.
 
 How is this different from what DEA used to do? 
