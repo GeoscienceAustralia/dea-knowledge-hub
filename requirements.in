@@ -1,9 +1,10 @@
-Sphinx>=2,<4
-nbsphinx==0.7.1
-nbconvert<6
+Sphinx
+nbsphinx
+nbconvert>=7.2.9
 sphinx_rtd_theme
+jinja2
 IPython
-recommonmark
-Jinja2<3
-markupsafe==2.0.1
 ipython_genutils
+#sphinxcontrib.spelling
+myst_parser
+sphinx-autobuild
