@@ -22,7 +22,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        python-version: [3.9]
+        python-version: [3.10]
     name: Publish Docs
     steps:
       - uses: actions/checkout@v3
@@ -37,7 +37,7 @@ jobs:
           sudo apt-get install pandoc
       - name: Fetch notebooks
         run: |
-          git clone --depth 1 https://github.com/GeoscienceAustralia/dea-notebooks.git notebooks
+          git clone --depth 1 https://github.com/GeoscienceAustralia/dea-notebooks notebooks
           cd notebooks && git checkout -b stable
       - name: Build docs
         run: |
