@@ -19,6 +19,7 @@ extensions = [
     "sphinx.ext.viewcode",
     "sphinx.ext.todo",
     "myst_parser",
+    "sphinxext.rediraffe",
 #    "sphinxcontrib.spelling",
 ]
 

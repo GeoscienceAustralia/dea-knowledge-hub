@@ -9,3 +9,4 @@ ipython_genutils
 myst_parser
 sphinx-autobuild
 ipywidgets
+sphinxext-rediraffe

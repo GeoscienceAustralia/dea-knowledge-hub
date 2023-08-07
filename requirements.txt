@@ -132,7 +132,7 @@ ptyprocess==0.7.0
     # via pexpect
 pure-eval==0.2.2
     # via stack-data
-pygments==2.15.1
+pygments==2.16.1
     # via
     #   ipython
     #   nbconvert
@@ -143,7 +143,7 @@ pyyaml==6.0.1
     # via myst-parser
 pyzmq==25.1.0
     # via jupyter-client
-referencing==0.30.0
+referencing==0.30.2
     # via
     #   jsonschema
     #   jsonschema-specifications
@@ -171,6 +171,7 @@ sphinx==6.2.1
     #   sphinx-autobuild
     #   sphinx-rtd-theme
     #   sphinxcontrib-jquery
+    #   sphinxext-rediraffe
 sphinx-autobuild==2021.3.14
     # via -r requirements.in
 sphinx-rtd-theme==1.2.2
@@ -189,6 +190,8 @@ sphinxcontrib-qthelp==1.0.3
     # via sphinx
 sphinxcontrib-serializinghtml==1.1.5
     # via sphinx
+sphinxext-rediraffe==0.2.7
+    # via -r requirements.in
 stack-data==0.6.2
     # via ipython
 tinycss2==1.2.1
