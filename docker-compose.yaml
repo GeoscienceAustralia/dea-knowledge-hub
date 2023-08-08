@@ -5,7 +5,7 @@ services:
   # Start docker container for sphinx-autobuild
   sphinx:
     image: local-sphinx
-    user: ${UID_GID}
+    user: "${UID:-1000}:${GID:-1000}"
     environment:
       - SPHINX_IMMATERIAL_EXTERNAL_RESOURCE_CACHE_DIR=/tmp/.cache
     ports:
