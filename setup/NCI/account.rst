@@ -19,8 +19,8 @@ institutional email address.
 
 
 .. important::
-   When signing up, you will need to join some of the :ref:`data_access` projects listed
-   below to access the DEA data.
+   When signing up, you need to join some :ref:`data_access` projects 
+   to access the DEA data.
 
 
 
@@ -31,44 +31,40 @@ Commercial access
 =================
 
 Commercial entities wanting to participate in project partnerships or training
-with DEA should contact earth.observation@ga.gov.au.
+with DEA should contact the |DEA Helpdesk|.
 
 NCI can also provision compute and storage resources to commercial entities
 under contract for those looking to leverage DEA resources. It is suggested that
-commercial entities contact DEA in the first instance through
-earth.observation@ga.gov.au to help determine requirements.
+commercial entities contact the  |DEA Helpdesk| to help determine requirements.
 
-Virtual Desktop Analysis
-========================
+.. |DEA Helpdesk| replace:: `DEA Helpdesk <mailto:earth.observation@ga.gov.au>`_
 
-The easiest way to use Digital Earth Australia is to connect to a remote desktop
-at the NCI called :term:`VDI`. (It is also possible to run on the NCI's Gadi_
-HPC cluster, but it's recommended that you prototype on VDI first.)
+Australian Research Environment
+===============================
 
-Your NCI account will need to be a member of a VDI project. You can view your
-project memberships at https://my.nci.org.au/. If you do not already have access to
-a VDI project, you can request to join the **wd8** project. Once approved, you
-will be a member of the project and able to access DEA through the VDI.
+The easiest way to use Digital Earth Australia on the NCI is to use their
+:term:`Australian Research Environment<ARE>`. It allows you to sign in and access
+Virtual Desktop and JupyterLab Notebook environments via a web browser.
+
+It is possible to run on the NCI's Gadi_ :term:`HPC` Supercomputer, but unless
+you're experience with :term:`SSH` and HPC systems, it's a lot easier to get
+started on :term:`ARE` first.
 
 .. _data_access:
 
 Data Access
 ===========
 
-DEA Data is store in a variety of locations on the NCI, knows as *projects*. You
-need to request access to projects individually, depending on the data you will
-need to access.
+DEA Data is stored on several "GData filesystems" on the NCI. To access the data you 
+need to request access to one or more of the **Projects** listed below.
 
-Do this by using the same process as joining a VDI Project as described above.
+Use `MyNCI <https://my.nci.org.au/>`_ to view and manage your project memberships.
 
 .. list-table:: NCI Data Access Projects
    :header-rows: 1
 
    * - Project
      - Contents
-
-   * - wd8_
-     - To use the NCI's Virtual Desktop Infrastructure (VDI)
 
    * - xu18_
      - Geoscience Australia Landsat Analysis Ready Data (Collection 3)

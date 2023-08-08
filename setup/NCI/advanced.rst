@@ -1,6 +1,5 @@
 .. highlight:: console
 
-.. nci_basics:
 
 Command Line Usage (Advanced)
 =============================
@@ -61,5 +60,7 @@ You can then launch a Jupyter notebook by running::
         chmod 0600 ~/.pgpass
 
 .. warning::
-    If you have created a ``.datacube.conf`` file in your home folder from early Data Cube betas, you should rename or remove it
-    to avoid it conflicting with the settings loaded by the module.
+
+    If you have created a ``.datacube.conf`` file in your home folder from
+    early Data Cube betas, you should rename or remove it to avoid it
+    conflicting with the settings loaded by the module.

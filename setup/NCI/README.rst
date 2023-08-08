@@ -7,7 +7,7 @@ on the National Computational Infrastructure (NCI).
 .. toctree::
    :maxdepth: 1
 
-   account.rst
-   install.rst
-   nci_basics.rst
-   projects.rst
+   account
+   basics
+   advanced
+   projects

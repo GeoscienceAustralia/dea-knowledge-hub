@@ -16,28 +16,38 @@ Glossary
       retrieval.
       
    ARD
-      Analysis Ready Data
+      Analysis Ready Data. Imagery of the earth's surface which has had a standard
+      set of corrections applied, making it ready for use in scientific analyses.
+
+   ARE
+      The `Australian Research Environment <https://are.nci.org.au/>`_ is a tool for
+      using the data and software available on the :term:`NCI`. It is a replacement 
+      the old :term:`VDI` system.
       
    AWS
-      Amazon Web Services: Cloud computing infrastructure provided by Amazon 
-      (United States).   
+      One of the two environments used for hosting Digital Earth Australia.
+      Amazon Web Services is a commercial cloud computing provider. Used
+      by Digital Earth Australia for our JupyterHub Sandbox and Web Mapping 
+      Services.
    
    BRDF
-      “Bidirectional reflectance distribution function” is a theoretical concept that describes the 
-      relationship between light and an opaque surface, using a target's irradiance geometry and 
-      the remote sensing system’s relative angle to the target.
+      "Bidirectional reflectance distribution function" is a theoretical concept 
+      that describes the relationship between light and an opaque surface, 
+      using a target's irradiance geometry and the remote sensing system’s 
+      relative angle to the target.
    
    C2
-      Collection 2 - Digital Earth Australia's second collection of Landsat data that has now 
-      been superceded by Collection 3 (C3).
+   Collection 2
+      Digital Earth Australia's second collection of Landsat data. Now 
+      superceded by :term:`Collection 3` (C3).
       
    C3
-      Collection 3 - The third collection of Digital Earth Australia's Landsat or Sentinel data 
-      and the most up-to-date collection available.
+   Collection 3
+      The third collection of Digital Earth Australia's Landsat or Sentinel data, 
+      published in and the most up-to-date collection available.
    
    CEOS-SEO
-      Committee on Earth Observation, Systems Engineering Office
-      http://ceos-cube.org/
+      `Committee on Earth Observation Systems Engineering Office <https://ceos-cube.org/>`_ 
       
    COG
       Cloud Optimised GeoTIFF, a data file format optimised for efficient 
@@ -50,19 +60,19 @@ Glossary
      akin to a movie franchise reboot than a re-release.
    
    CSIRO
-      Commonwealth Scientific and Industrial Research Organisation
+      `Commonwealth Scientific and Industrial Research Organisation <https://www.csiro.au/>`_
 
    DEA
-      Digital Earth Australia, a program of Geoscience Australia 
-      that uses spatial data and images 
+   Digital Earth Australia
+      A Program of Geoscience Australia that uses spatial data and images 
       recorded by satellites orbiting our planet to detect physical changes 
       across Australia in unprecedented detail. DEA is the Australian implementation of
       the Open Data Cube. For more information see https://www.dea.ga.gov.au/.
       
    DEA Notebooks
-      Digital Earth Australia Notebooks, a open-source repository containing 
+      `Digital Earth Australia Notebooks <https://github.com/GeoscienceAustralia/dea-notebooks>`_, an open-source repository containing 
       Jupyter Notebooks, tools and workflows for geospatial analysis with Open 
-      Data Cube and xarray. See https://github.com/GeoscienceAustralia/dea-notebooks.
+      Data Cube and xarray. See 
       
    DEA Sandbox
       Digital Earth Australia Sandbox, a learning and analysis environment for 
@@ -71,7 +81,10 @@ Glossary
       For more information see https://github.com/GeoscienceAustralia/dea-notebooks/wiki.
       
    DE Africa
-      Digital Earth Africa. For more information see https://www.digitalearthafrica.org/.
+   Digital Earth Africa
+      `Digital Earth Africa <https://www.digitalearthafrica.org/>`_. A sister project to
+      Digital Earth Australia but for the African Continent. Originally run out of Geoscience
+      Australia, but transitioning to ownership within African Nations.
 
    EO
       Earth Observation
@@ -82,8 +95,9 @@ Glossary
    FC
       Fractional Cover. Fractional Cover (FC) is a measurement that splits the landscape into 
       three parts, or fractions; green (leaves, grass, and growing crops), brown (branches, 
-      dry grass or hay, and dead leaf litter), and bare ground (soil or rock). For more information
-      and for details of the methodology, see https://www.dea.ga.gov.au/products/dea-fractional-cover.
+      dry grass or hay, and dead leaf litter), and bare ground (soil or rock). For more 
+      information and for details of the methodology, see 
+      https://www.dea.ga.gov.au/products/dea-fractional-cover.
    
    GA
       Geoscience Australia
@@ -103,6 +117,9 @@ Glossary
       cloud-free imagery mosaics of Australia's coast, estuaries and reefs at low 
       and high tide. For more information see https://www.dea.ga.gov.au/products/dea-high-low.
       
+   HPC
+      High Performance Computing. 
+
    ITEM
       Intertidal Extents Model, a Digital Earth Australia product that maps the 
       relative extent of the Australian intertidal zone at regular intervals of 
@@ -148,10 +165,11 @@ Glossary
       (SWIR).
 
    NCI
-      The Australian National Computational Infrastructure is Australia's
-      national research computing facility. It provides computing facilities for
-      use by Australian researchers, industry and government. For more
-      information see http://www.nci.org.au/.
+
+      The Australian `National Computational Infrastructure
+      <https://www.nci.org.au/>`_ is Australia's national research computing
+      facility. It provides computing facilities for Australian researchers,
+      industry and government.
 
    NDVI
       Normalised Difference Vegetation Index, calculated from visible and near-infrared
@@ -167,13 +185,13 @@ Glossary
       data
   
    NRT
-     Near-real time. NRT data is a less refined/calibrated dataset, which is available significantly 
-     sooner after satellite acquisition than standard ARD data. 
+     Near-real time. NRT data is a less refined/calibrated dataset, which is 
+     available much sooner after satellite acquisition than standard ARD data. 
    
    ODC
-      Open Data Cube, an international open-source project developing the technology
-      that powers Digital Earth Australia. For more information see
-      http://opendatacube.org/.
+   Open Data Cube
+      The `Open Data Cube <https://www.opendatacube.org>`_ is an international 
+      open-source project developing the software used by Digital Earth Australia.
 
    PostgreSQL
       The high performance database engine used as an index of Datasets by the
@@ -184,9 +202,10 @@ Glossary
      Pixel quality
 
    Python
-      The programming language used to develop the Open Data Cube. It is easy to use
-      while still allowing high performance access and processing capabilities.
-      See http://www.python.org/ for more.
+      `Python <https://www.python.org/>`_ is the programming language used to 
+      develop the Open Data Cube and most of Digital Earth Australia. It is an easy
+      to use language, which also provides simple access to high performance 
+      processing capabilities.
 
    SAR
       Synthetic Aperture Radar
@@ -196,13 +215,18 @@ Glossary
       observation data. The program includes the medium resolution Sentinel-2 mission, 
       and the Sentinel-1 SAR mission.
    
+   SSH
+      SSH or Secure Shell is a means to access remote computers using a text based
+      terminal interface. It comes build in with Linux, but requires additional software
+      to use it from Windows computers.
+
    USGS
       United States Geological Survey
       
    VDI
-      Virtual Desktop Infrastructure is a virtual laboratory at NCI that provides a
-      linux desktop environment for scientific computing. For more see
-      http://vdi.nci.org.au/help.
+      The Virtual Desktop Infrastructure was a service offered by the :term:`NCI`
+      that provided a linux desktop environment for scientific computing. It has
+      been replaced by :term:`ARE`.
 
    WOFL
       Water Observation Feature Layer (a WO observation for one point in time)
@@ -218,8 +242,7 @@ Glossary
       multi-dimensional arrays such as those returned by the Open Data Cube (ODC).
 
    YAML
-      YAML is a human friendly data serialization standard for all programming
-      languages. It is used for all on disk metadata files and product
-      definitions in the Data Cube. For more information on the YAML standard 
-      see http://yaml.org/.
+      `YAML <https://yaml.org/>`_ is a human readable data storage format.
+      It is used throughout DEA for metadata files, product
+      definitions and other configuration files.
 
