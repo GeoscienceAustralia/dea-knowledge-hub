@@ -1,49 +1,49 @@
 
 .. _install:
 
-============================================================
-Connecting to the NCI's Virtual Desktop Infrastructure (VDI)
-============================================================
-
-.. note::
-   As of 2022, the `Australian Research Environment (ARE) <https://are.nci.org.au/pun/sys/dashboard>`_ online portal is now the
-   recommended method for accessing the NCI's Virtual Desktop Infrastructure (VDI), 
-   replacing the previous Open OnDemand (OOD; see below). This doc will be updated
-   in 2023 to provide instructions for getting set up with DEA in ARE; if you encounter
-   issues in the meantime, we recommend using the `DEA Sandbox </setup/Sandbox/sandbox.html>`_ instead.
+===================================================
+Basics - Using JupyterLab and Virtual Desktop (ARE)
+===================================================
 
 
-   
-Launching the VDI from OOD
+Australian Research Environment
+===============================
+
+The easiest way to use Digital Earth Australia on the NCI is to use their
+:term:`Australian Research Environment<ARE>`. It allows you to sign in and access
+Virtual Desktop and JupyterLab Notebook environments via a web browser.
+
+It is possible to run on the NCI's Gadi_ :term:`HPC` Supercomputer, but unless
+you're experience with :term:`SSH` and HPC systems, it's a lot easier to get
+started on :term:`ARE` first.
+
+High Performance Computing
 ==========================
 
-The NCI's Open OnDemand (OOD) online portal allows users to quickly connect to Digital 
-Earth Australia from a web browser. 
-To get started with the OOD portal, please follow the following NCI guide:
+The DEA environment can be accessed within the High Performance Computing (HPC)
+environment (i.e. Gadi_). This will require compute and storage quota
+allocations to be made via NCI's Allocation Scheme processes, on a per-project
+basis. This does not need to be specific to DEA – all users with computing
+capabilities on Gadi are able to access DEA through the HPC system.
 
-* `Introduction to Open OnDemand (OOD) <https://opus.nci.org.au/display/OOD/0.+Introduction+to+OOD>`_
 
-After successfully logging into the OOD, you will see the OOD Dashboard below. We recommend that most users select the "Virtual Desktop" option which will launch an interactive virtual desktop session that can be used to access DEA. 
+.. _Gadi: https://nci.org.au/our-systems/hpc-systems/
+   
+Launching JupyterLab from ARE
+=============================
 
-The following NCI guide introduces how to connect to the VDI for the first time:
+The NCI's Australian Research Environment (ARE) online portal allows users to
+quickly connect to Digital Earth Australia from a web browser. 
 
-* `Connecting to the VDI <https://opus.nci.org.au/display/OOD/2.1.+Connecting+to+the+VDI>`_
+To get started with the ARE portal, please follow the following NCI guide:
 
-.. figure:: https://opus.nci.org.au/download/attachments/116719863/image2021-7-12_12-33-36.png?version=1&modificationDate=1626057216773&api=v2
-   :align: center
-   :alt: Install DEA on NCI
+   `ARE User Guide <https://opus.nci.org.au/display/Help/ARE+User+Guide>`_
+
+After successfully logging into ARE, you will see the ARE Dashboard. The following NCI guide introduces how to connect to the VDI for the first time:
 
 
 Setting up Digital Earth Australia
 ==================================
-
-Once you have successfully launched the VDI, you can install Digital Earth Australia.
-
-From the **Applications** menu in the top left of the screen, choose **System Tools** -> **Terminal**.
-
-.. figure:: /_static/NCI/vdi-launch-terminal.png
-   :align: center
-   :alt: Start Terminal Menu
 
 In the terminal window run the command::
 
@@ -51,16 +51,4 @@ In the terminal window run the command::
 
 This will download the latest version of the `Digital Earth Australia notebooks repository <https://github.com/GeoscienceAustralia/dea-notebooks/tree/stable>`_ into your VDI home directory (e.g. ``~/dea-notebooks``).
 
-Once this has completed, click **Applications** menu in the top left of the screen, then **Science**.
-This menu will now include a new program called **Digital Earth Australia**.
-
-.. figure:: /_static/NCI/dea_install.jpg
-   :align: center
-   :alt: Install DEA on NCI
-
-You can then click this icon to launch Jupyter Lab with the Digital Earth Australia environment preconfigured.
-From within this environment you can access the notebooks from the User Guide, or create your own notebooks to work with Digital Earth Australia.
-
-.. note::
-   For more information about getting started with Digital Earth Australia on the NCI, refer to the `Digital Earth Australia Notebooks wiki page <https://github.com/GeoscienceAustralia/dea-notebooks/wiki#getting-started-on-the-ncivirtual-desktop-infrastructure>`_.
 

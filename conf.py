@@ -20,6 +20,8 @@ extensions = [
     "sphinx.ext.todo",
     "myst_parser",
     "sphinxext.rediraffe",
+    "sphinxext.opengraph",
+    "sphinxcontrib.video",
 #    "sphinxcontrib.spelling",
 ]
 
@@ -29,6 +31,9 @@ autosummary_generate = ["notebooks/Tools/index.rst"]
 autodoc_default_options = {
     "members": True,
 }
+
+ogp_site_url = "https://docs.dea.ga.gov.au/"
+ogp_image = "_static/dea-logo-inline.png"
 
 # We are are not installing dea_tools dependencies, so we need
 # to mock them so autodocs does not fail

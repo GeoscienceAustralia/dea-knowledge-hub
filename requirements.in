@@ -10,3 +10,5 @@ myst_parser
 sphinx-autobuild
 ipywidgets
 sphinxext-rediraffe
+sphinxext-opengraph
+sphinxcontrib-video

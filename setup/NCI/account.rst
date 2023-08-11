@@ -31,24 +31,14 @@ Commercial access
 =================
 
 Commercial entities wanting to participate in project partnerships or training
-with DEA should contact the |DEA Helpdesk|.
+with DEA should contact the `DEA Helpdesk`_.
 
 NCI can also provision compute and storage resources to commercial entities
 under contract for those looking to leverage DEA resources. It is suggested that
-commercial entities contact the  |DEA Helpdesk| to help determine requirements.
+commercial entities contact the  `DEA Helpdesk`_ to help determine requirements.
 
-.. |DEA Helpdesk| replace:: `DEA Helpdesk <mailto:earth.observation@ga.gov.au>`_
+.. _DEA Helpdesk: mailto:earth.observation@ga.gov.au
 
-Australian Research Environment
-===============================
-
-The easiest way to use Digital Earth Australia on the NCI is to use their
-:term:`Australian Research Environment<ARE>`. It allows you to sign in and access
-Virtual Desktop and JupyterLab Notebook environments via a web browser.
-
-It is possible to run on the NCI's Gadi_ :term:`HPC` Supercomputer, but unless
-you're experience with :term:`SSH` and HPC systems, it's a lot easier to get
-started on :term:`ARE` first.
 
 .. _data_access:
 
@@ -89,16 +79,3 @@ Use `MyNCI <https://my.nci.org.au/>`_ to view and manage your project membership
 .. _rs0: https://my.nci.org.au/mancini/project/rs0
 .. _ka08: https://my.nci.org.au/mancini/project/ka08
 
-High Performance Computing
-==========================
-
-The DEA environment can be accessed within the High Performance Computing (HPC)
-environment (i.e. Gadi_). This will require compute and storage quota
-allocations to be made via NCI's Allocation Scheme processes, on a per-project
-basis. This does not need to be specific to DEA – all users with computing
-capabilities on Gadi are able to access DEA through the HPC system.
-
-This guide focuses on accessing and exploring DEA via the VDI environment.
-
-
-.. _Gadi: https://nci.org.au/our-systems/hpc-systems/

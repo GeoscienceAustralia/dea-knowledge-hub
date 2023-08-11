@@ -1,12 +1,10 @@
-FROM python:3.10-alpine
+FROM python:3.11
 MAINTAINER Damien Ayers <damien.ayers@ga.gov.au>
 
-# Install git so we can pull packages from git
-# Will require changing to alpine instead of slim
-RUN apk add --no-cache git pandoc
+RUN apt-get update && apt-get install -y git pandoc
 
 ADD requirements.txt /tmp/
-RUN pip install -r /tmp/requirements.txt
+RUN pip install -r /tmp/requirements.txt --no-cache
 
 
 EXPOSE 8000
