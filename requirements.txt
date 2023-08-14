@@ -228,7 +228,7 @@ stack-data==0.6.2
     # via ipython
 tinycss2==1.2.1
     # via nbconvert
-tornado==6.3.2
+tornado==6.3.3
     # via
     #   jupyter-client
     #   livereload
