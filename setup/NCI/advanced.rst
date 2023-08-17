@@ -1,8 +1,23 @@
 .. highlight:: console
 
-
-Command Line Usage (Advanced)
 =============================
+Advanced Access - HPC and CLI
+=============================
+
+
+High Performance Computing
+==========================
+
+The DEA environment can be accessed within the High Performance Computing (HPC)
+environment (i.e. Gadi_). This will require compute and storage quota
+allocations to be made via NCI's Allocation Scheme processes, on a per-project
+basis. This does not need to be specific to DEA – all users with computing
+capabilities on Gadi are able to access DEA through the HPC system.
+
+.. _Gadi: https://nci.org.au/our-systems/hpc-systems/
+
+Command Line Usage
+==================
 
 .. note:
 
