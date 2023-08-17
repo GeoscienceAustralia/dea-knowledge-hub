@@ -10,4 +10,3 @@ on the National Computational Infrastructure (NCI).
    account
    basics
    advanced
-   projects

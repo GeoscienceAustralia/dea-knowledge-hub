@@ -19,8 +19,8 @@ institutional email address.
 
 
 .. important::
-   When signing up, you need to join some :ref:`data_access` projects 
-   to access the DEA data.
+   When signing up, you must join some :ref:`nci_data_access` projects 
+   to access DEA data.
 
 
 
@@ -40,7 +40,7 @@ commercial entities contact the  `DEA Helpdesk`_ to help determine requirements.
 .. _DEA Helpdesk: mailto:earth.observation@ga.gov.au
 
 
-.. _data_access:
+.. _nci_data_access:
 
 Data Access
 ===========

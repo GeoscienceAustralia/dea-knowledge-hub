@@ -9,14 +9,16 @@ Basics - JupyterLab and Virtual Desktop
 Australian Research Environment
 ===============================
 
-The easiest access to Digital Earth Australia on the NCI is via their
-:term:`Australian Research Environment<ARE>`. It lets you use your web browser to
-run a complete Virtual Desktop or execute code in JupyterLab Notebooks.
+The easiest access to Digital Earth Australia on the NCI is via the
+:term:`Australian Research Environment<ARE>`. Through your web browser you can
+access a Virtual Desktop environment or execute code in JupyterLab Notebooks.
 
-It's also possible to access DEA on the NCI's Gadi_ :term:`HPC` Supercomputer, but unless
-you're experienced with :term:`SSH` and HPC systems, it's much easier to get
-started on :term:`ARE`.
+For more information on ARE see the `NCI's
+ARE User Guide <https://opus.nci.org.au/display/Help/ARE+User+Guide>`_.
 
+It's also possible to use DEA on the NCI's Gadi_ :term:`HPC` Supercomputer,
+however unless you're experienced with :term:`SSH` and HPC systems, it's much
+easier to get started with :term:`ARE`.
 
 
 .. _Gadi: https://nci.org.au/our-systems/hpc-systems/
@@ -24,34 +26,35 @@ started on :term:`ARE`.
 Launching JupyterLab from ARE
 =============================
 
-The NCI's Australian Research Environment (ARE) online portal allows users to
-quickly connect to Digital Earth Australia from a web browser. 
+To launch a JupyterLab session, follow the instructions in `Starting JupyterLab
+App (ARE User Guide) <https://opus.nci.org.au/display/Help/3.1+Starting+JupyterLab+App>`_ 
+page in the NCI Help. See below for the settings required to use DEA .
 
-To get started with the ARE portal, please follow the NCI 
-`ARE User Guide <https://opus.nci.org.au/display/Help/ARE+User+Guide>`_.
+.. note:: To run an ARE session you must be part of a project at
+   NCI with compute capacity. DEA does not currently
+   provide access to such a project.
 
-1. After successfully logging into ARE, you will see the ARE Dashboard. 
+Access to DEA
+-------------
 
-2. From here, choose **JupyterHub** to launch a new session.
+The first time you start a JupyterLab session, there are some settings required
+to access DEA.
 
-3. The first time you start a session, there are a few options you need to configure.
+**Storage**
 
-   **Storage**
-
-   Type `gdata/v10` into the **Storage**, then use the dropdown to select other
-   projects containing data you wish to access.
+   Type `gdata/v10` into the :guilabel:`Storage` box, then use the dropdown to select other
+   projects containing data you wish to access. See :ref:`nci_data_access`.
 
    .. figure:: are_highlight_v10_storage_setting.png
 
-   **DEA Environment**
+**DEA Environment**
 
-   Scroll down and expand the **Advanced** options, and set:
+   Scroll down and expand :guilabel:`Advanced options...`.
 
-   **Module directories** to ``/g/data/v10/public/modules/modulefiles``.
+   Set :guilabel:`Module directories` to ``/g/data/v10/public/modules/modulefiles``.
 
-   **Modules** to ``dea``.
+   Set :guilabel:`Modules` to ``dea``.
 
-   As seen here:
 
    .. video:: /_static/are_jupyterhub_launch_setup.webm
       :loop:
@@ -66,12 +69,14 @@ Virtual Desktops with ARE
 
 
 Setting up Digital Earth Australia
-==================================
+----------------------------------
 
 In the terminal window run the command::
 
    sh /g/data/v10/public/digitalearthau/install.sh
 
-This will download the latest version of the `Digital Earth Australia notebooks repository <https://github.com/GeoscienceAustralia/dea-notebooks/tree/stable>`_ into your VDI home directory (e.g. ``~/dea-notebooks``).
+This will download the latest version of the `Digital Earth Australia notebooks
+repository <https://github.com/GeoscienceAustralia/dea-notebooks/tree/stable>`_
+into your home directory (e.g. :file:`~/dea-notebooks`).
 
 
