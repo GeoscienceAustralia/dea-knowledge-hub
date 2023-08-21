@@ -10,6 +10,8 @@ Scientific articles, conference talks and other publications with Digital Earth 
 
 Dunn, B., Ai, E., Alger, M.J., Fanson, B., Fickas, K.C., Krause, C.E., Lymburner, L., Nanson, R., Papas, P., Ronan, M., Thomas, R.F., 2023. Wetlands Insight Tool: Characterising the Surface Water and Vegetation Cover Dynamics of Individual Wetlands Using Multidecadal Landsat Satellite Data. Wetlands 43, 37. https://doi.org/10.1007/s13157-023-01682-7
 
+Li, F., Jupp, D.L.B., Markham, B.L., Lau, I.C., Ong, C., Byrne, G., Thankappan, M., Oliver, S., Malthus, T., Fearns, P. 2023. Choice of Solar Spectral Irradiance Model for Current and Future Remote Sensing Satellite Missions. Remote Sens 15, 3391. https://doi.org/10.3390/rs15133391
+
 ****
 2022
 ****
