@@ -46,7 +46,7 @@ executing==1.2.0
     # via stack-data
 fastjsonschema==2.18.0
     # via nbformat
-fonttools==4.42.0
+fonttools==4.42.1
     # via matplotlib
 idna==3.4
     # via requests
@@ -111,7 +111,7 @@ myst-parser==2.0.0
     # via -r requirements.in
 nbclient==0.8.0
     # via nbconvert
-nbconvert==7.7.3
+nbconvert==7.7.4
     # via
     #   -r requirements.in
     #   nbsphinx
@@ -149,6 +149,8 @@ ptyprocess==0.7.0
     # via pexpect
 pure-eval==0.2.2
     # via stack-data
+pyenchant==3.2.2
+    # via sphinxcontrib-spelling
 pygments==2.16.1
     # via
     #   ipython
@@ -197,6 +199,7 @@ sphinx==6.2.1
     #   sphinxcontrib-jquery
     #   sphinxcontrib-qthelp
     #   sphinxcontrib-serializinghtml
+    #   sphinxcontrib-spelling
     #   sphinxcontrib-video
     #   sphinxext-opengraph
     #   sphinxext-rediraffe
@@ -204,20 +207,22 @@ sphinx-autobuild==2021.3.14
     # via -r requirements.in
 sphinx-rtd-theme==1.2.2
     # via -r requirements.in
-sphinxcontrib-applehelp==1.0.6
+sphinxcontrib-applehelp==1.0.7
     # via sphinx
-sphinxcontrib-devhelp==1.0.4
+sphinxcontrib-devhelp==1.0.5
     # via sphinx
-sphinxcontrib-htmlhelp==2.0.3
+sphinxcontrib-htmlhelp==2.0.4
     # via sphinx
 sphinxcontrib-jquery==4.1
     # via sphinx-rtd-theme
 sphinxcontrib-jsmath==1.0.1
     # via sphinx
-sphinxcontrib-qthelp==1.0.5
+sphinxcontrib-qthelp==1.0.6
     # via sphinx
-sphinxcontrib-serializinghtml==1.1.7
+sphinxcontrib-serializinghtml==1.1.9
     # via sphinx
+sphinxcontrib-spelling==8.0.0
+    # via -r requirements.in
 sphinxcontrib-video==0.2.0
     # via -r requirements.in
 sphinxext-opengraph==0.8.2

@@ -5,7 +5,7 @@ sphinx_rtd_theme
 jinja2
 IPython
 ipython_genutils
-#sphinxcontrib.spelling
+sphinxcontrib.spelling
 myst_parser
 sphinx-autobuild
 ipywidgets

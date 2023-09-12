@@ -22,6 +22,9 @@ extensions = [
     "sphinxext.rediraffe",
     "sphinxext.opengraph",
     "sphinxcontrib.video",
+    # Fix jQuery is not defined error on Sphinx 6+
+    # See https://github.com/readthedocs/sphinx_rtd_theme/issues/1452#issuecomment-1490504991
+    "sphinxcontrib.jquery", 
 #    "sphinxcontrib.spelling",
 ]
 
