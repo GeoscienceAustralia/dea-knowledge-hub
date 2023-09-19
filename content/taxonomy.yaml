@@ -3,9 +3,6 @@ entries:
   - file: data-products/index
     title: Data Products
     subtrees:
-      - caption: Land and Vegetation
-        entries:
-        - file: data-products/land-and-vegetation/dea-cloud-and-cloud-shadow-mask-sentinel-2-msi/index
       - caption: Inland Water
         entries:
         - file: data-products/inland-water/dea-water-observations-landsat/index

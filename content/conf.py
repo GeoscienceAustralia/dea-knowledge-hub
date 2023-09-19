@@ -5,7 +5,7 @@ version = '0.1'
 
 html_static_path = ['_static']
 templates_path = ['_templates']
-exclude_patterns = ["_*.md", "notebooks"]
+exclude_patterns = ["**/_*.md", "notebooks"]
 
 html_title = "DEA Docs"
 html_logo = "https://docs.dea.ga.gov.au/_images/dea-logo-inline.svg"
