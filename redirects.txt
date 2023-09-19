@@ -1,3 +1,0 @@
-"setup/NCI/install.rst" "setup/NCI/basics.rst"
-"setup/NCI/nci_basics.rst" "setup/NCI/advanced.rst"
-"setup/NCI/projects.rst" "setup/NCI/account.rst"
