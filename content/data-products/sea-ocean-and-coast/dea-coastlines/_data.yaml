@@ -1,0 +1,16 @@
+# Details
+
+title: DEA Coastlines
+long_title: Geoscience Australia Landsat Coastlines Collection 3
+version: 2.1.0
+release: Latest
+program: Digital Earth Australia
+collection: Geoscience Australia Landsat Collection 3
+resource_type: Derivative
+published: 15/08/2023
+author: Sagar Stephen
+
+# Sources
+
+ecat: 116268
+doi: 10.26186/116268

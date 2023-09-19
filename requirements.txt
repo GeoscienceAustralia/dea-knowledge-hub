@@ -1,0 +1,10 @@
+sphinx
+sphinx-autobuild
+pydata-sphinx-theme
+myst_parser
+nbsphinx
+sphinx_design
+sphinx-external-toc
+sphinxext-rediraffe
+sphinxcontrib.datatemplates
+sphinx-tags

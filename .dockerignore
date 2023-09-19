@@ -1,0 +1,7 @@
+.git
+.idea
+Thumbs.db
+.DS_Store
+_build
+content/tags
+content/notebooks

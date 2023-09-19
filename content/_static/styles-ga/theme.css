@@ -1,0 +1,8 @@
+html[data-theme="light"] {
+    --pst-color-primary: rgb(8, 46, 65);
+    --pst-color-text-base: rgb(8, 46, 65);
+    --bs-link-color: rgb(0, 113, 139);
+    --bs-link-hover-color: rgb(0, 113, 139);
+    --pst-color-link: rgb(0, 113, 139);
+    --pst-color-link-hover: rgb(0, 113, 139);
+}

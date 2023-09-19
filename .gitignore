@@ -1,0 +1,4 @@
+.env
+_build
+content/tags
+content/notebooks

@@ -1,0 +1,26 @@
+root: index
+entries:
+  - file: data-products/index
+    title: Data Products
+    subtrees:
+      - caption: Land and Vegetation
+        entries:
+        - file: data-products/land-and-vegetation/dea-cloud-and-cloud-shadow-mask-sentinel-2-msi/index
+      - caption: Inland Water
+        entries:
+        - file: data-products/inland-water/dea-water-observations-landsat/index
+      - caption: Sea, Ocean, and Coast
+        entries:
+        - file: data-products/sea-ocean-and-coast/dea-coastlines/index
+  - file: notebooks/README
+    title: Notebooks
+    subtrees:
+      - caption: Beginner's Guide
+        entries:
+          - glob: notebooks/Beginners_guide/**
+      - caption: DEA Products
+        entries:
+          - glob: notebooks/DEA_products/**
+      - caption: How-To Guides
+        entries:
+          - glob: notebooks/How_to_guides/**

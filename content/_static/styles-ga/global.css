@@ -1,0 +1,24 @@
+footer.bd-footer {
+    text-align: center;
+}
+
+.bd-sidebar .bd-links__title {
+    display: none;
+}
+
+#ga-footer-links {
+    padding-left: 0;
+}
+
+#ga-footer-links li {
+    display: inline;
+    padding-right: 1em;
+}
+
+.bd-content .subtitle {
+    font-size: 1.1em;
+}
+
+#title, #subtitle {
+    text-align: center;
+}
