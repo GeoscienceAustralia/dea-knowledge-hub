@@ -1,6 +1,6 @@
 # Home
 
-```{image} _static/images/dea-logo-inline.svg
+```{image} https://docs.dea.ga.gov.au/_images/dea-logo-inline.svg
 :alt: Digital Earth Australia logo
 :width: 550px
 :height: 225px

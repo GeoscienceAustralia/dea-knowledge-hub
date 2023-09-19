@@ -8,8 +8,8 @@ templates_path = ['_templates']
 exclude_patterns = ["_*.md", "notebooks"]
 
 html_title = "DEA Docs"
-html_logo = "_static/logos/dea-logo-inline.svg"
-html_favicon = "_static/logos/dea-favicon.ico"
+html_logo = "https://docs.dea.ga.gov.au/_images/dea-logo-inline.svg"
+html_favicon = "https://docs.dea.ga.gov.au/_static/dea-favicon.ico"
 html_theme = 'pydata_sphinx_theme'
 language = "en"
 
