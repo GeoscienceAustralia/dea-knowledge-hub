@@ -1,19 +1,9 @@
-::::{tab-set}
+:::{datatemplate:yaml} ./_data.yaml
 
-:::{tab-item} Overview
-Content 1
-:::
+{#title}
+{{ data["title"] }}
+===================
 
-:::{tab-item} Details
-Content 2
-:::
+{{ data["long_title"] }}
 
-:::{tab-item} Access
-Content 3
-:::
-
-:::{tab-item} History
-Content 4
-:::
-
-::::
+::: <!-- datatemplate -->
