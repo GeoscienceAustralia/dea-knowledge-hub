@@ -22,23 +22,3 @@ footer.bd-footer {
 #title, #subtitle {
     text-align: center;
 }
-
-.bd-article h1 {
-    display: none;
-}
-
-.bd-article .rubric {
-    border-bottom: none;
-}
-
-.bd-article .rubric.rubric-1 {
-    color: var(--pst-color-primary);
-    font-size: var(--pst-font-size-h4);
-    font-color: var(--pst-color-text-base);
-}
-
-.bd-article .rubric.rubric-2 {
-    color: var(--pst-color-primary);
-    font-size: var(--pst-font-size-h6);
-    font-color: var(--pst-color-text-base);
-}

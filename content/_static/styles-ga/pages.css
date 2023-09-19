@@ -1,0 +1,21 @@
+/* Home */
+
+#home h1 {
+    display: none;
+}
+
+#home .rubric {
+    border-bottom: none;
+}
+
+#home .rubric.rubric-1 {
+    color: var(--pst-color-primary);
+    font-size: var(--pst-font-size-h4);
+    font-color: var(--pst-color-text-base);
+}
+
+#home .rubric.rubric-2 {
+    color: var(--pst-color-primary);
+    font-size: var(--pst-font-size-h6);
+    font-color: var(--pst-color-text-base);
+}
