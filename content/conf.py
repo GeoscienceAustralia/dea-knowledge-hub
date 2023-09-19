@@ -29,7 +29,7 @@ myst_enable_extensions = [
     "fieldlist",
 ]
 
-external_toc_path = "taxonomy.yaml"
+external_toc_path = "table_of_contents.yaml"
 
 rediraffe_redirects = "redirects.txt"
 
