@@ -1,7 +1,3 @@
 Inland Water
 ============
 
-.. toctree::
-   :glob:
-
-   **

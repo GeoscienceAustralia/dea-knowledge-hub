@@ -4,15 +4,13 @@ entries:
     title: Data Products
     subtrees:
       - entries:
-        - file: data/inland-water/
-          subtrees:
-            - entries:
-              - file: data/inland-water/dea-water-observations-landsat/
+        - file: data/inland-water/index
+          entries:
+            - glob: data/inland-water/*/index
       - entries:
-        - file: data/sea-ocean-and-coast/
-          subtrees:
-            - entries:
-              - file: data/sea-ocean-and-coast/dea-coastlines/
+        - file: data/sea-ocean-and-coast/index
+          entries:
+            - glob: data/sea-ocean-and-coast/*/index
   - file: notebooks/README
     title: Notebooks
     subtrees:
