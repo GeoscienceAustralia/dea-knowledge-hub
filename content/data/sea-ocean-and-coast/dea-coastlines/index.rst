@@ -47,8 +47,6 @@
               
                  GitHub repository
 
-          .. rubric:: About
-
           .. include:: _about.md
              :parser: myst_parser.sphinx_
 
@@ -64,7 +62,12 @@
 
           .. rubric:: Sources
 
-          :Test: A
+          :See it on a map:
+             * `DEACoastlines <https://maps.dea.ga.gov.au/story/DEACoastlines>`_
+          :Get the data:
+             * `dea_coastlines <https://data.dea.ga.gov.au/?prefix=derivative/dea_coastlines/2-1-0/>`_
+          :Explore data samples:
+             * `AWS <https://explorer.prod.dea.ga.gov.au/products/geodata_coast_100k>`_
        
           .. include:: _access.md
              :parser: myst_parser.sphinx_

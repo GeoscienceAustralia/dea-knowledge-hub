@@ -24,6 +24,12 @@ extensions = [
     "sphinx_tags",
 ]
 
+myst_enable_extensions = [
+    "colon_fence",
+    "attrs_block",
+    "fieldlist",
+]
+
 external_toc_path = "table_of_contents.yaml"
 
 rediraffe_redirects = "redirects.txt"
