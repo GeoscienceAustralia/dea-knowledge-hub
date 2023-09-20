@@ -1,14 +1,14 @@
 root: index
 entries:
-  - file: data-products/index
+  - file: data/index
     title: Data Products
     subtrees:
       - caption: Inland Water
         entries:
-        - file: data-products/inland-water/dea-water-observations-landsat/index
+        - file: data/inland-water/dea-water-observations-landsat/index
       - caption: Sea, Ocean, and Coast
         entries:
-        - file: data-products/sea-ocean-and-coast/dea-coastlines/index
+        - file: data/sea-ocean-and-coast/dea-coastlines/index
   - file: notebooks/README
     title: Notebooks
     subtrees:
