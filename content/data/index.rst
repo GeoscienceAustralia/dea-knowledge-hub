@@ -1,15 +1,23 @@
 Data Products
 =============
 
+Inland Water
+++++++++++++
+
 .. grid:: 4
 
-   .. grid-item-card:: Inland Water
-      :link: inland-water/
+   .. grid-item-card:: Example
+      :link: example/
       :img-top: https://www.gifpng.com/500x300
 
-   .. grid-item-card:: Sea, Ocean, and Coast
-      :link: sea-ocean-and-coast/
+   .. grid-item-card:: Example
+      :link: example/
       :img-top: https://www.gifpng.com/500x300
+
+Sea, Ocean, and Coast
++++++++++++++++++++++
+
+.. grid:: 4
 
    .. grid-item-card:: Example
       :link: example/
@@ -18,3 +26,8 @@ Data Products
    .. grid-item-card:: Example
       :link: example/
       :img-top: https://www.gifpng.com/500x300
+
+   .. grid-item-card:: Example
+      :link: example/
+      :img-top: https://www.gifpng.com/500x300
+

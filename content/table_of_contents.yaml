@@ -3,14 +3,12 @@ entries:
   - file: data/index
     title: Data Products
     subtrees:
-      - entries:
-        - file: data/inland-water/index
-          entries:
-            - glob: data/inland-water/*/index
-      - entries:
-        - file: data/sea-ocean-and-coast/index
-          entries:
-            - glob: data/sea-ocean-and-coast/*/index
+      - caption: Inland Water
+        entries:
+        - glob: data/inland-water/*/index
+      - caption: Sea, Ocean, and Coast
+        entries:
+        - glob: data/sea-ocean-and-coast/*/index
   - file: notebooks/README
     title: Notebooks
     subtrees:
