@@ -6,6 +6,7 @@ version = '0.1'
 html_static_path = ['_static']
 templates_path = ['_templates']
 exclude_patterns = ["**/_*.md", "notebooks"]
+source_suffix = ['.rst', '.md']
 
 html_title = "DEA Docs"
 html_logo = "https://docs.dea.ga.gov.au/_images/dea-logo-inline.svg"
@@ -14,19 +15,13 @@ html_theme = 'pydata_sphinx_theme'
 language = "en"
 
 extensions = [
-    "myst_parser",
+    "m2r2",
     "nbsphinx",
     "sphinx_design",
     "sphinx_external_toc",
     "sphinxext.rediraffe",
     "sphinxcontrib.datatemplates",
     "sphinx_tags",
-]
-
-myst_enable_extensions = [
-    "colon_fence",
-    "attrs_block",
-    "fieldlist",
 ]
 
 external_toc_path = "table_of_contents.yaml"
