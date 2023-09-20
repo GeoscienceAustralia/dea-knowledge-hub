@@ -1,4 +1,4 @@
-DEA Coastlines
+DEA Water Observations
 ==============
 
 .. tableofcontents::

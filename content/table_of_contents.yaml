@@ -5,10 +5,14 @@ entries:
     subtrees:
       - caption: Inland Water
         entries:
-        - glob: data/inland-water/*/index
+        - file: data/inland-water/dea-water-observations/index
+          entries:
+            - glob: data/inland-water/dea-water-observations/*/index
       - caption: Sea, Ocean, and Coast
         entries:
-        - glob: data/sea-ocean-and-coast/*/index
+        - file: data/sea-ocean-and-coast/dea-coastlines/index
+          entries:
+            - glob: data/sea-ocean-and-coast/dea-coastlines/*/index
   - file: notebooks/README
     title: Notebooks
     subtrees:
