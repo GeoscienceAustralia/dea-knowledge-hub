@@ -1,6 +1,8 @@
 Data Products
 =============
 
+.. tableofcontents::
+
 Inland Water
 ++++++++++++
 
