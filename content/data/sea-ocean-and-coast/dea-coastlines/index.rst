@@ -1,7 +1,5 @@
 .. |middledot| unicode:: 0xB7
 
-.. mdinclude:: _about.md
-
 .. datatemplate:yaml:: ./_data.yaml
 
    {{ data["title"] }}
@@ -51,7 +49,7 @@
 
           .. rubric:: About
 
-          .. mdinclude:: about.md
+          .. include:: _about.md
 
           .. rubric:: Key information
 
@@ -68,6 +66,8 @@
        .. tab-item:: Details
    
            Content 2
+
+           .. TODO add quality tab
 
        .. tab-item:: History
        
