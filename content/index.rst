@@ -13,7 +13,7 @@ Home
 .. grid:: 2
 
    .. grid-item-card:: Access the data
-      :link: data-products/
+      :link: data/
       :img-top: https://www.gifpng.com/500x300
       :img-alt: Placeholder image
 
