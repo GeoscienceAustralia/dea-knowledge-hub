@@ -49,7 +49,7 @@
 
           .. rubric:: About
 
-          .. include:: _about.md
+          .. include:: _about.rst
 
           .. rubric:: Key information
 
@@ -60,21 +60,25 @@
           :Published: 15/08/2023 (Sagar Stephen)
 
        .. tab-item:: Access
+
+          .. rubric:: Sources
+
+          :Test: A
        
-          .. include:: _access.md
+          .. include:: _access.rst
 
        .. tab-item:: Details
    
-          .. include:: _details.md
+          .. include:: _details.rst
 
        .. tab-item:: Quality
 
-          .. include:: _quality.md
+          .. include:: _quality.rst
 
        .. tab-item:: History
        
-          .. include:: _history.md
+          .. include:: _history.rst
 
        .. tab-item:: Credits
        
-           .. include:: _credits.md
+           .. include:: _credits.rst
