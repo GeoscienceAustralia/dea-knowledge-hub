@@ -56,7 +56,7 @@ html_theme_options = {
     "navbar_center": ["navbar-nav"],
     "navbar_end": ["search-field"],
     "navbar_persistent": [],
-    "secondary_sidebar_items": ["page-toc"],
+    "secondary_sidebar_items": [],
     "footer_start": [
         "acknowledgement-of-country",
         "footer-links",
