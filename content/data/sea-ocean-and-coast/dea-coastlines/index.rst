@@ -66,20 +66,25 @@
 
           :Test: A
        
-          .. include:: _access.rst
+          .. include:: _access.md
+             :parser: myst_parser.sphinx_
 
        .. tab-item:: Details
    
-          .. include:: _details.rst
+          .. include:: _details.md
+             :parser: myst_parser.sphinx_
 
        .. tab-item:: Quality
 
-          .. include:: _quality.rst
+          .. include:: _quality.md
+             :parser: myst_parser.sphinx_
 
        .. tab-item:: History
        
-          .. include:: _history.rst
+          .. include:: _history.md
+             :parser: myst_parser.sphinx_
 
        .. tab-item:: Credits
        
-           .. include:: _credits.rst
+           .. include:: _credits.md
+              :parser: myst_parser.sphinx_
