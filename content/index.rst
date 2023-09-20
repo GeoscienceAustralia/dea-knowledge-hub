@@ -15,14 +15,12 @@ Home
    .. grid-item-card:: Access the data
       :link: data/
       :img-top: https://www.gifpng.com/500x300
-      :img-alt: Placeholder image
 
       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 
    .. grid-item-card:: Use the DEA notebooks
       :link: notebooks/
       :img-top: https://www.gifpng.com/500x300
-      :img-alt: Placeholder image
    
       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 
