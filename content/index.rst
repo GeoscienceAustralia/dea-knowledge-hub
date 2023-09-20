@@ -13,12 +13,14 @@ Home
 .. grid:: 2
 
    .. grid-item-card:: Access the data
+      :link: data-products/
       :img-top: https://www.gifpng.com/500x300
       :img-alt: Placeholder image
 
       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 
    .. grid-item-card:: Use the DEA notebooks
+      :link: notebooks/
       :img-top: https://www.gifpng.com/500x300
       :img-alt: Placeholder image
    
@@ -27,4 +29,4 @@ Home
 .. rubric:: About the DEA
    :class: rubric-2
 
-Digital Earth Australia is an analysis platform for satellite imagery and other Earth observations. For more information, see the [DEA website](https://www.dea.ga.gov.au/).
+Digital Earth Australia is an analysis platform for satellite imagery and other Earth observations. For more information, see the `DEA website <https://www.dea.ga.gov.au/>`_.
