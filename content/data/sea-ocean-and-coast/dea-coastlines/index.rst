@@ -61,14 +61,20 @@
 
        .. tab-item:: Access
        
-           Content 2
+          .. include:: _access.md
 
        .. tab-item:: Details
    
-           Content 2
+          .. include:: _details.md
 
-           .. TODO add quality tab
+       .. tab-item:: Quality
+
+          .. include:: _quality.md
 
        .. tab-item:: History
        
-           Content 2
+          .. include:: _history.md
+
+       .. tab-item:: Credits
+       
+           .. include:: _credits.md
