@@ -15,7 +15,7 @@ html_theme = 'pydata_sphinx_theme'
 language = "en"
 
 extensions = [
-    "m2r2",
+    "myst_parser",
     "nbsphinx",
     "sphinx_design",
     "sphinx_external_toc",

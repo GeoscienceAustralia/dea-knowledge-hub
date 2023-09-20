@@ -1,7 +1,7 @@
 sphinx
 sphinx-autobuild
 pydata-sphinx-theme
-m2r2
+myst-parser
 nbsphinx
 sphinx_design
 sphinx-external-toc

@@ -49,7 +49,8 @@
 
           .. rubric:: About
 
-          .. include:: _about.rst
+          .. include:: _about.md
+             :parser: myst_parser.sphinx_
 
           .. rubric:: Key information
 
