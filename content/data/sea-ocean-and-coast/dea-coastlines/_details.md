@@ -272,6 +272,37 @@ The following software was used to generate this product: 
 -   [Interactive DEA Coastlines product on DEA Maps](https://maps.dea.ga.gov.au/story/DEACoastlines)
 -   [DEA Coastlines Github code repository](https://github.com/GeoscienceAustralia/dea-coastlines)
 
+### Data sources
+
+-   [DEA Surface Reflectance (Landsat 5 TM)](https://cmi.ga.gov.au/data-products/dea/358/dea-surface-reflectance-landsat-5-tm)
+-   [DEA Surface Reflectance (Landsat 7 ETM+)](https://cmi.ga.gov.au/data-products/dea/475/dea-surface-reflectance-landsat-7-etm)
+-   [DEA Surface Reflectance (Landsat 8 OLI-TIRS)](https://cmi.ga.gov.au/data-products/dea/365/dea-surface-reflectance-landsat-8-oli-tirs)
+-   [DEA Surface Reflectance OA (Landsat 5 TM)](https://cmi.ga.gov.au/data-products/dea/369/dea-surface-reflectance-oa-landsat-5-tm)
+-   [DEA Surface Reflectance OA (Landsat 7 ETM+)](https://cmi.ga.gov.au/data-products/dea/478/dea-surface-reflectance-oa-landsat-7-etm)
+-   [DEA Surface Reflectance OA (Landsat 8 OLI-TIRS)](https://cmi.ga.gov.au/data-products/dea/404/dea-surface-reflectance-oa-landsat-8-oli-tirs)
+
+### Processing steps
+
+1.  [Load stack of all available Landsat 5, 7, 8 and 9 satellite imagery for a location](https://cmi.ga.gov.au/node/589)
+2.  [Convert satellite observations to a remote sensing water index (MNDWI)](https://cmi.ga.gov.au/node/594)
+3.  [For each satellite image, model ocean tides into a 5 x 5 km grid based on exact time of image acquisition](https://cmi.ga.gov.au/node/590)
+4.  [Interpolate tide heights into spatial extent of image stack](https://cmi.ga.gov.au/node/591)
+5.  [Mask out high and low tide pixels by removing all observations acquired outside of 50 percent of the observed tidal range centered over mean sea level](https://cmi.ga.gov.au/node/592)
+6.  [Combine tidally-masked data into annual median composites from 1988 to the present representing the coastline at approximately mean sea level](https://cmi.ga.gov.au/node/593)
+7.  [Apply morphological extraction algorithms to mask annual median composite rasters to a valid coastal region](https://cmi.ga.gov.au/node/596)
+8.  [Extract waterline vectors using subpixel waterline extraction](https://cmi.ga.gov.au/node/595)
+9.  [Compute rates of coastal change at every 30 m along Australia's non-rocky coastlines using linear regression](https://cmi.ga.gov.au/node/597)
+
+### Major algorithms
+
+-   [FES (Finite Element Solution) 2014 global tide model](https://cmi.ga.gov.au/node/837)
+-   [Modified Normalised Difference Water Index (MNDWI)](https://cmi.ga.gov.au/node/583)
+-   [Spatial tide interpolation](https://cmi.ga.gov.au/node/582)
+-   [Median compositing](https://cmi.ga.gov.au/node/584)
+-   [Coastline morphological extraction](https://cmi.ga.gov.au/node/586)
+-   [Subpixel resolution waterline extraction](https://cmi.ga.gov.au/node/585)
+-   [Rates of change and linear regression statistics](https://cmi.ga.gov.au/node/587)
+
 ### References
 
 Bishop-Taylor, R., Nanson, R., Sagar, S., Lymburner, L. (2021). Mapping Australia's dynamic coastline at mean sea level using three decades of Landsat imagery. *Remote Sensing of Environment*, 267, 112734. Available: <https://doi.org/10.1016/j.rse.2021.112734>

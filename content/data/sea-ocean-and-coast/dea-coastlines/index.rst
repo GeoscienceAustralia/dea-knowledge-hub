@@ -60,6 +60,16 @@
 
        .. tab-item:: Access
 
+          .. dropdown:: How do I access the data?
+
+              Instructions for accessing the data via AWS `Frequently Asked Questions — Digital Earth Australia 1.0.0 documentation <ga.gov.au>`_
+
+              For instructions on Downloading and streaming data using STAC, see this notebook guide `Downloading and streaming data using STAC metadata — Digital Earth Australia 1.0.0 documentation <ga.gov.au>`_
+
+              For information on how to use DEA Maps and download simple datasets, see the user guide here. `DEA Maps — Digital Earth Australia 1.0.0 documentation <ga.gov.au>`_
+
+              For instructions on connecting to DEA's web services, see the user guide here. `DEA Web Services — Digital Earth Australia 1.0.0 documentation <ga.gov.au>`_
+
           .. rubric:: Sources
 
           {% if data["maps"] %}
@@ -79,7 +89,7 @@
              :parser: myst_parser.sphinx_
 
        .. tab-item:: Details
-   
+
           .. include:: _details.md
              :parser: myst_parser.sphinx_
 
