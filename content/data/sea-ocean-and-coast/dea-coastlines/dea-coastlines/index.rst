@@ -69,6 +69,20 @@
              .. image:: https://www.gifpng.com/896x350
                 :alt: Map of the schema / spatial extent
 
+             .. dropdown:: Schema / Spatial Extent data
+
+                =========================== =========================================
+                Update frequency            annually
+                Temporal extent             1988-01-01 00:00:00 – 2022-12-31 11:59:59
+                Min. longitude              -4846590.00
+                Max. longitude              -1887450.00
+                Min. latitude               -1015650.00
+                Max. latitude               2121650.00
+                Coordinate reference system Australian Albers / GDA94 (EPSG: 3577)
+                Cell size X                 30.00
+                Cell size Y                 30.00
+                =========================== =========================================
+
              .. dropdown:: How do I access the data?
 
                  Instructions for accessing the data via AWS `Frequently Asked Questions — Digital Earth Australia 1.0.0 documentation <ga.gov.au>`_

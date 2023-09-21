@@ -1,8 +1,13 @@
-html[data-theme="light"] {
-    --pst-color-primary: rgb(8, 46, 65);
-    --pst-color-text-base: rgb(8, 46, 65);
-    --bs-link-color: rgb(0, 113, 139);
-    --bs-link-hover-color: rgb(0, 113, 139);
-    --pst-color-link: rgb(0, 113, 139);
-    --pst-color-link-hover: rgb(0, 113, 139);
+html {
+    --pst-color-primary: rgb(8, 46, 65) !important;
+    --pst-color-text-base: rgb(8, 46, 65) !important;
+    --bs-link-color: rgb(0, 113, 139) !important;
+    --bs-link-hover-color: rgb(0, 113, 139) !important;
+    --pst-color-link: rgb(0, 113, 139) !important;
+    --pst-color-link-hover: rgb(0, 113, 139) !important;
+    --pst-font-size-h2: 1.5rem !important;
+    --pst-font-size-h3: 1.25rem !important;
+    --pst-font-size-h4: 1.1rem !important;
+    --pst-font-size-h5: 1rem !important;
+    --pst-font-size-h6: 1rem !important;
 }

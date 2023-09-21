@@ -23,3 +23,10 @@ footer.bd-footer ul li {
     display: inline;
     padding-right: 1em;
 }
+
+.rubric {
+    font-size: var(--pst-font-size-h2) !important;
+    font-weight: normal !important;
+    border-bottom: none !important;
+}
+
