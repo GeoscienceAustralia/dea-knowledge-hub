@@ -1,0 +1,19 @@
+# Details
+
+title: DEA Surface Reflectance OA (Landsat 8 OLI-TIRS)
+long_title: Geoscience Australia Landsat 8 OLI-TIRS Observation Attributes Collection 3
+version: 3.0.0
+release: Latest
+program: Digital Earth Australia
+collection: Geoscience Australia Landsat Collection 3
+resource_type: Derivative
+published: 26/11/2019
+author: Bacon Susannah
+ecat: 132317
+doi: null
+
+# Access
+
+data:
+  - "NCI - THREDDS": https://dapds00.nci.org.au/thredds/catalog/xu18/catalog.html
+  - "DEA Public": https://data.dea.ga.gov.au/?prefix=baseline/ga_ls8c_ard_3/
