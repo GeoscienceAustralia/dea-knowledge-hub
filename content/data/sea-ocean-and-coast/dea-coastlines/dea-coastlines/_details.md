@@ -121,7 +121,7 @@ Figure 3: Coastal change hotspots from DEA Coastlines visualised on the [intera
 * [DEA Intertidal Extents (Landsat)](https://cmi.ga.gov.au/data-products/dea/174/dea-intertidal-extents-landsat)
 * [DEA High and Low Tide Imagery (Landsat)](https://cmi.ga.gov.au/data-products/dea/133/dea-high-and-low-tide-imagery-landsat)
 
-### References
+## References
 
 Bishop-Taylor, R., Nanson, R., Sagar, S., Lymburner, L. (2021). Mapping Australia's dynamic coastline at mean sea level using three decades of Landsat imagery. *Remote Sensing of Environment*, 267, 112734. Available: <https://doi.org/10.1016/j.rse.2021.112734>
 
