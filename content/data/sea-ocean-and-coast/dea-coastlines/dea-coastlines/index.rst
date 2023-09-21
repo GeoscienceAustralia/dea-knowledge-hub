@@ -13,7 +13,7 @@
 
       .. container:: quick-details
 
-         | **Version:** {{ data["version"] }} :bdg-success:`{{ data["release"] }}` |middledot| **Product type:** Derivative; Vector
+         | **Version:** {{ data["version"] }} ({{ data["release"] }}) |middledot| **Product type:** Derivative; Vector
          | **Time span:** 01/01/1988 – 31/12/2022 |middledot| **Update frequency:** Annually
 
       .. tab-set::
