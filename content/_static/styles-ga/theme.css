@@ -1,10 +1,12 @@
 html {
-    --pst-color-primary: rgb(8, 46, 65) !important;
-    --pst-color-text-base: rgb(8, 46, 65) !important;
-    --bs-link-color: rgb(0, 113, 139) !important;
-    --bs-link-hover-color: rgb(0, 113, 139) !important;
-    --pst-color-link: rgb(0, 113, 139) !important;
-    --pst-color-link-hover: rgb(0, 113, 139) !important;
+    --pst-color-primary: #082e41 !important;
+    --pst-color-secondary: #00708b !important;
+    --pst-color-text-base: #082e41 !important;
+    --bs-link-color: #00718b !important;
+    --bs-link-hover-color: #00718b !important;
+    --pst-color-link: #00718b !important;
+    --pst-color-link-hover: #00718b !important;
+    --sd-color-card-border-hover: #00718b !important;
     --pst-font-size-h2: 1.5rem !important;
     --pst-font-size-h3: 1.25rem !important;
     --pst-font-size-h4: 1.1rem !important;

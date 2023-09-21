@@ -2,6 +2,10 @@ h1 {
     text-align: center;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    color: var(#082e41);
+}
+
 footer.bd-footer {
     text-align: center;
 }
@@ -30,3 +34,6 @@ footer.bd-footer ul li {
     border-bottom: none !important;
 }
 
+.bd-content .sd-tab-set>label:hover {
+    border-top: none;
+}
