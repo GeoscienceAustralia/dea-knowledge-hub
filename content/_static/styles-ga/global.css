@@ -45,3 +45,7 @@ footer.bd-footer ul li {
 .bd-content .sd-tab-set>label:hover {
     border-top: none;
 }
+
+nav.bd-links .current > a {
+    box-shadow: none;
+}

@@ -1,4 +1,4 @@
-.. |middledot| unicode:: 0xB7
+.. |dot| replace:: **·**
 
 .. datatemplate:yaml:: ./_data.yaml
 
@@ -13,8 +13,8 @@
 
       .. container:: quick-details
 
-         | **Version:** {{ data["version"] }} ({{ data["release"] }}) |middledot| **Product type:** Derivative; Vector
-         | **Time span:** 01/01/1988 – 31/12/2022 |middledot| **Update frequency:** Annually
+         | **Version:** {{ data["version"] }} ({{ data["release"] }}) |dot| **Product type:** Derivative; Vector
+         | **Time span:** 01/01/1988 – 31/12/2022 |dot| **Update frequency:** Annually
 
       .. tab-set::
       
