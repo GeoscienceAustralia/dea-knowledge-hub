@@ -1,23 +1,3 @@
-## Owner
-
-Commonwealth of Australia (Geoscience Australia)
-
-## Principal contributors
-
-Robbi Bishop-Taylor, Rachel Nanson, Stephen Sagar, Leo Lymburner
-
-## Subject matter experts
-
-Robbi Bishop-Taylor
-
-## License
-
-CC BY Attribution 4.0 International License
-
-## Rights statement
-
-© Commonwealth of Australia (Geoscience Australia) 2023. [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
-
 ## Acknowledgments
 
 The authors would like to sincerely thank the following organisations and individuals for providing validation data and valuable feedback on preliminary versions of this product: 
@@ -39,3 +19,23 @@ The authors would like to sincerely thank the following organisations and indiv
 This research was undertaken with the assistance of resources from the National Computational Infrastructure High Performance Data (HPD) platform, which is supported by the Australian Government.
 
 Tidal modelling is provided by the FES2014 global tidal model, implemented using the pyTMD Python package. FES2014 was produced by NOVELTIS, LEGOS, CLS Space Oceanography Division and CNES. It is distributed by AVISO, with support from CNES (<http://www.aviso.altimetry.fr/>).
+
+## License and copyright
+
+CC BY Attribution 4.0 International License
+
+© Commonwealth of Australia (Geoscience Australia) 2023. [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
+
+<!--
+## Owner
+
+Commonwealth of Australia (Geoscience Australia)
+
+## Principal contributors
+
+Robbi Bishop-Taylor, Rachel Nanson, Stephen Sagar, Leo Lymburner
+
+## Subject matter experts
+
+Robbi Bishop-Taylor
+-->

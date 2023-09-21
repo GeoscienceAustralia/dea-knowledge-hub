@@ -155,15 +155,17 @@ TASMARC, 2021. TASMARC (The Tasmanian Shoreline Monitoring and Archiving Project
 
 Turner, I. L., Harley, M. D., Short, A. D., Simmons, J. A., Bracs, M. A., Phillips, M. S., & Splinter, K. D. (2016). A multi-decade dataset of monthly beach profile surveys and inshore wave forcing at Narrabeen, Australia. *Scientific data*, *3*(1), 1-13. Available: <http://narrabeen.wrl.unsw.edu.au/>
 
-<!-- ### Software -->
-<!--  -->
-<!-- The following software was used to generate this product:  -->
-<!--  -->
-<!-- -   [DEA Coastlines Github code](https://github.com/GeoscienceAustralia/dea-coastlines) -->
-<!-- -   [OpenDataCube](https://github.com/opendatacube) -->
-<!-- -   [FES2014 global tide model](https://www.aviso.altimetry.fr/en/data/products/auxiliary-products/global-tide-fes/description-fes2014.html) -->
-<!--  -->
-<!-- ### Relevant websites -->
-<!--  -->
-<!-- -   [Interactive DEA Coastlines product on DEA Maps](https://maps.dea.ga.gov.au/story/DEACoastlines) -->
-<!-- -   [DEA Coastlines Github code repository](https://github.com/GeoscienceAustralia/dea-coastlines) -->
+<!--
+### Software
+
+The following software was used to generate this product: 
+
+-   [DEA Coastlines Github code](https://github.com/GeoscienceAustralia/dea-coastlines)
+-   [OpenDataCube](https://github.com/opendatacube)
+-   [FES2014 global tide model](https://www.aviso.altimetry.fr/en/data/products/auxiliary-products/global-tide-fes/description-fes2014.html)
+
+### Relevant websites
+
+-   [Interactive DEA Coastlines product on DEA Maps](https://maps.dea.ga.gov.au/story/DEACoastlines)
+-   [DEA Coastlines Github code repository](https://github.com/GeoscienceAustralia/dea-coastlines)
+-->
