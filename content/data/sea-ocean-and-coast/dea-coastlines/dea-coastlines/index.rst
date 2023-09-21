@@ -80,7 +80,7 @@
           :Get the data:
              * `dea_coastlines <https://data.dea.ga.gov.au/?prefix=derivative/dea_coastlines/2-1-0/>`_
           {% endif %}
-          {% if data["data"] %}
+          {% if data["explorer"] %}
           :Explore data samples:
              * `AWS <https://explorer.prod.dea.ga.gov.au/products/geodata_coast_100k>`_
           {% endif %}

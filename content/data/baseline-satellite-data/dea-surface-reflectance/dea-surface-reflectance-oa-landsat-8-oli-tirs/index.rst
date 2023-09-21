@@ -17,46 +17,30 @@
           .. grid:: 4
               :gutter: 2
 
-              .. grid-item-card:: See it on a map
+              .. grid-item-card:: Get the data
                  :img-top: https://www.gifpng.com/300x200
-                 :link: https://maps.dea.ga.gov.au/story/DEACoastlines
+                 :link: https://dapds00.nci.org.au/thredds/catalog/xu18/catalog.html
 
-                 DEACoastlines
+                 NCI - THREDDS
 
               .. grid-item-card:: Get the data
                  :img-top: https://www.gifpng.com/300x200
-                 :link: https://data.dea.ga.gov.au/?prefix=derivative/dea_coastlines/2-1-0/
+                 :link: https://data.dea.ga.gov.au/?prefix=baseline/ga_ls8c_ard_3/
 
-                 dea_coastlines
-   
-              .. grid-item-card:: Explore data samples
-                 :img-top: https://www.gifpng.com/300x200
-                 :link: https://explorer.prod.dea.ga.gov.au/products/geodata_coast_100k
-              
-                 AWS
-
-              .. grid-item-card:: Code example
-                 :img-top: https://www.gifpng.com/300x200
-                 :link: https://docs.dea.ga.gov.au/notebooks/DEA_products/DEA_Coastlines.html
-
-                 Jupyter notebook
-              
-              .. grid-item-card:: Code example
-                 :img-top: https://www.gifpng.com/300x200
-                 :link: https://github.com/GeoscienceAustralia/dea-coastlines
-              
-                 GitHub repository
+                 DEA Public
 
           .. include:: _about.md
              :parser: myst_parser.sphinx_
 
           .. rubric:: Key information
 
-          :Product ID: geodata_coast_100k
+          :Product ID: ga_ls8c_ard_3
           :DOI: 10.26186/116268
           :Program: Digital Earth Australia
           :Collection: Geoscience Australia Landsat Collection 3
           :Published: 15/08/2023 (Sagar Stephen)
+          :NCI project code: xu18
+          :Security classification: Unclassified
 
        .. tab-item:: Access
 
@@ -78,9 +62,10 @@
           {% endif %}
           {% if data["data"] %}
           :Get the data:
-             * `dea_coastlines <https://data.dea.ga.gov.au/?prefix=derivative/dea_coastlines/2-1-0/>`_
+             * `NCI - THREDDS <https://dapds00.nci.org.au/thredds/catalog/xu18/catalog.html>`_
+             * `DEA Public <https://data.dea.ga.gov.au/?prefix=baseline/ga_ls8c_ard_3/>`_
           {% endif %}
-          {% if data["data"] %}
+          {% if data["explorer"] %}
           :Explore data samples:
              * `AWS <https://explorer.prod.dea.ga.gov.au/products/geodata_coast_100k>`_
           {% endif %}

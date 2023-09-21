@@ -1,338 +1,282 @@
-## What this product offers
+### What this product offers
 
-[Digital Earth Australia Coastlines](https://maps.dea.ga.gov.au/story/DEACoastlines) is a continental dataset that includes annual shorelines and rates of coastal change along the entire Australian coastline from 1988 to the present. 
+This product contains a range of pixel-level **observation attributes (OA)** derived from satellite observation, providing rich data provenance:
 
-The product combines satellite data from Geoscience Australia's Digital Earth Australia program with tidal modelling to map the most representative location of the shoreline at mean sea level for each year. The product enables trends of coastal retreat and growth to be examined annually at both a local and continental scale, and for patterns of coastal change to be mapped historically and updated regularly as data continues to be acquired. This allows current rates of coastal change to be compared with that observed in previous years or decades. 
+-   null pixels
+-   clear pixels
+-   cloud pixels
+-   cloud shadow pixels
+-   snow pixels
+-   water pixels
+-   spectrally contiguous pixels
+-   terrain shaded pixels
 
-The ability to map shoreline positions for each year provides valuable insights into whether changes to our coastline are the result of particular events or actions, or a process of more gradual change over time. This information can enable scientists, managers and policy makers to assess impacts from the range of drivers impacting our coastlines and potentially assist planning and forecasting for future scenarios.
+It also features the following pixel-level information pertaining to **satellite, solar and sensing geometries**:
 
-## Applications
+-   solar zenith
+-   solar azimuth
+-   satellite view
+-   incident angle
+-   exiting angle
+-   azimuthal incident
+-   azimuthal exiting
+-   relative azimuth
+-   timedelta
 
-* Monitoring and mapping rates of coastal erosion along the Australian coastline 
-* Prioritise and evaluate the impacts of local and regional coastal management based on historical coastline change 
-* Modelling how coastlines respond to drivers of change, including extreme weather events, sea level rise or human development 
-* Supporting geomorphological studies of how and why coastlines have changed across time
+### Related products
 
-## Related products
+-   [DEA Surface Reflectance (Landsat 8 OLI-TIRS)](https://cmi.ga.gov.au/data-products/dea/365/dea-surface-reflectance-landsat-8-oli-tirs)
+-   [DEA Surface Reflectance NBAR (Landsat 8 OLI-TIRS)](https://cmi.ga.gov.au/data-products/dea/402/dea-surface-reflectance-nbar-landsat-8-oli-tirs)
+-   [DEA Surface Reflectance NBART (Landsat 8 OLI-TIRS)](https://cmi.ga.gov.au/data-products/dea/400/dea-surface-reflectance-nbart-landsat-8-oli-tirs)
 
-* [DEA Intertidal Elevation (Landsat)](https://cmi.ga.gov.au/data-products/dea/325/dea-intertidal-elevation-landsat)
-* [DEA Intertidal Extents (Landsat)](https://cmi.ga.gov.au/data-products/dea/174/dea-intertidal-extents-landsat)
-* [DEA High and Low Tide Imagery (Landsat)](https://cmi.ga.gov.au/data-products/dea/133/dea-high-and-low-tide-imagery-landsat)
+### Technical information
 
-## Publications
+#### How observation attributes can be used
 
-Bishop-Taylor, R., Nanson, R., Sagar, S., Lymburner, L. (2021). Mapping Australia's dynamic coastline at mean sea level using three decades of Landsat imagery. *Remote Sensing of Environment*, 267, 112734. Available: <https://doi.org/10.1016/j.rse.2021.112734>
+This product provides pixel- and acquisition-level information that can be used in a variety of services and applications. This information includes:
 
-Nanson, R., Bishop-Taylor, R., Sagar, S., Lymburner, L., (2022). Geomorphic insights into Australia's coastal change using a national dataset derived from the multi-decadal Landsat archive. *Estuarine, Coastal and Shelf Science*, 265, p.107712. Available: <https://doi.org/10.1016/j.ecss.2021.107712>
+-   data provenance, which:
 
-Bishop-Taylor, R., Sagar, S., Lymburner, L., Alam, I., & Sixsmith, J. (2019). Sub-pixel waterline extraction: Characterising accuracy and sensitivity to indices and spectra. *Remote Sensing*, 11(24), 2984. Available: <https://www.mdpi.com/2072-4292/11/24/2984>
+               -  denotes which inputs/parameters were used in running the algorithm\
+               -  demonstrates how a particular result was achieved\
+               -  can be used as evidence for the reasoning behind particular decisions\
+               -  enables traceability
 
-## Technical information
+-   training data for input into machine learning algorithms, or additional likelihood metrics for image feature content, where pre-classified content includes:
 
-### 2022 DEA Coastlines update
+               -  cloud\
+               -  cloud shadow\
+               -  snow\
+               -  water
 
-In August 2023, the DEA Coastlines product was updated to version 2.1.0.
+-   additional pixel filtering (e.g. exclude pixels with high incident angles)
+-   pre-analysis filtering based on image content (e.g. return acquisitions that have less than 10% cloud coverage)
+-   input into temporal statistical summaries to produce probability estimates on classification likelihood
 
-This update consists of the addition of annual shoreline data for 2022. The 2022 shoreline is interim data that is subject to change, and will be updated to a final version in the following 2023 DEA Coastlines update (in July 2024).
+This product allows you to screen your data for undesired anomalies that can occur during any phase: from the satellite's acquisition, to the processing of surface reflectance, which relies on various auxiliary sources each having their own anomalies and limitations.
 
-### 2021 DEA Coastlines update
+Pixel-level information on satellite and solar geometries is useful if you wish to exclude pixels that might be deemed questionable based on their angular measure. This is especially useful if you are using the NBAR product, where pixels located on sloping surfaces can exhibit a lower than expected surface reflectance due to a higher incidence or solar zenith angle.
 
-In March 2023, the DEA Coastlines product [was updated to version 2.0.0](https://github.com/GeoscienceAustralia/dea-coastlines/releases/tag/2.0.0). This includes the following key changes to the data and web services: 
+##### ***Example - Terrain shadow and high incident angles***
 
-#### Improvements and additions: 
+These images depict an area containing high topographic relief, terrain shadow, and high incident angles. Applications, such as water classification, can mis-classify dark regions as water due to the effect of high incident angles in regions of high topographic relief.
 
--   Added annual shoreline data for 2021. The 2021 shoreline is interim data that is subject to change, and will be updated to a final version in the following 2022 DEA Coastlines update (in July 2023).
+![NBAR, terrain shadow, high incident angle, NBAR+ mask overlay, NBART](https://cmi.ga.gov.au/sites/default/files/inline-images/Surface%20Reflectance%20OA%203%20-%20figure%201.png)
 
--   Improved data coverage over offshore islands and reefs. This includes new shorelines and rates of coastal change over the Indian Ocean, Great Barrier Reef and Coral Sea.
+*Figure 1. (A) Surface Reflectance (Landsat 5 TM NBAR) image; (B) terrain shadow mask; (C) high incident angle mask (>65); (D) NBAR+ mask overlay; (E) equivalent Surface Reflectance (Landsat 5 TM NBART) image.*
 
--   DEA Coastlines now uses data from the FES2014 global tidal model. This model produces accurate tide modelling across Australia ([Seifi et al. 2019](https://www.mdpi.com/2072-4292/11/10/1211)) and globally ([Lyard et al. 2021](https://os.copernicus.org/articles/17/615/2021)) and is more flexible and easier to install than the older TPXO8 tidal model.
+#### Terminology for satellite, solar and sensing geometries
 
--   Inclusion of Landsat 9 data to provide additional satellite data from late 2021 onwards.
+-   **Zenith**\
+    The point in the sky or celestial sphere directly above a point of interest (in this case, the point being imaged on Earth).
+-   **Solar zenith (degrees)**\
+    The angle between the zenith and the centre of the sun's disc.
+-   **Solar azimuth (degrees)**\
+    The angle of the sun's position from true north; i.e. the angle between true north and a vertical circle passing through the sun and the point being imaged on Earth. 
+-   **Satellite view or satellite zenith (degrees)**\
+    The angle between the zenith and the satellite.
+-   **Satellite azimuth (degrees)**\
+    The angle of the satellite's position from true north; i.e. the angle between true north and a vertical circle passing through the satellite and the point being imaged on Earth. 
+-   **Incident angle (degrees)**\
+    The angle between a ray incident on a surface and the line perpendicular to the surface at the point of incidence. 
+-   **Exiting angle (degrees)**\
+    The angle between a ray reflected from a surface and the line perpendicular to the surface at the point of emergence.
+-   **Azimuthal incident (degrees)**\
+    The angle between true north and the incident direction in the slope geometry.
+-   **Azimuthal exiting (degrees)**\
+    The angle between true north and the exiting direction in the slope geometry.
+-   **Relative azimuth (degrees)**\
+    The relative azimuth angle between the sun and view directions. 
+-   **Relative slope (degrees)**\
+    The relative azimuth angle between the incident and exiting directions in the slope geometry. 
+-   **Timedelta (seconds)**\
+    The time from satellite apogee (the point of orbit at which the satellite is furthest from the Earth).
 
--   Improved shoreline mapping certainty attributes to provide information about the quality of each individual annual shoreline (compared to the previous approach of identifying all annual shorelines in an area as low or good quality; see **Quality assurance** below for more detail).
+![Zenith angles](https://cmi.ga.gov.au/sites/default/files/inline-images/Surface%20Reflectance%20OA%203%20-%20figure%202.png)
 
--   New rates of change points certainty attributes to provide information about the quality of each point (see **Quality assurance** below for more detail).
+*Figure 2. Zenith angles. Image modified from Support to Aviation Control Service (2011).*
 
--   Three coastal change hotspot layers are now included in the product, summarising coastal change within 1 km, 5 km and 10 km windows around each hotspot point. These layers now include attributes providing the median position of all annual shorelines around each hotspot point, which can be used to plot and identify regional trends of coastal change.
+![Zenith and azimuth angles](https://cmi.ga.gov.au/sites/default/files/inline-images/Surface%20Reflectance%20OA%203%20-%20figure%203.png)
 
--   Rates of change points now contain a new "uid" ID field containing a unique [geohash](https://en.wikipedia.org/wiki/Geohash) ID that can be used to more easily track rates of change points as they are updated in future DEA Coastlines updates.
+*Figure 3. Zenith and azimuth angles. θs = solar zenith; θν = satellite view; Φs = solar azimuth (green); Φν = satellite azimuth (blue); Φ = relative azimuth (red). Image modified from Hudson et al. (2006).*
 
--   Rates of change points include a new "id_primary" field containing the ID of their Primary sediment compartment from the [Australian Coastal Sediment Compartments](https://ecat.ga.gov.au/geonetwork/srv/api/records/21a23d9a-00dd-ab19-e053-10a3070a2746) framework. This enables points to be easily queried and summarised by coastal sediment compartment.
+![Incident (i) and exiting (e) angles](https://cmi.ga.gov.au/sites/default/files/inline-images/Surface%20Reflectance%20OA%203%20-%20figure%204.png)
 
-#### Backwards incompatible changes:
+*Figure 4. Incident (i) and exiting (e) angles for a level and inclined surface. Image modified from Dymond and Shepherd (1999).*
 
--   The annual shorelines WFS layer "dea:coastlines" has been renamed to "dea:annual_shorelines".
+#### The Fmask algorithm
 
--   The rates of change points WFS layer "dea:coastlines_statistics" has been renamed to "dea:rates_of_change".
+Fmask allows you to have pre-classified image content for use within their applications. This can include:
 
-#### Previous updates
+-   additional confidence metrics in image content classifiers
+-   pre-labelled data for machine learning classifiers
+-   pixel screening for cloud and cloud shadow
+-   on-the-fly mapping applications for water and snow
 
-For a full summary of changes made in previous versions, [refer to Github](https://github.com/GeoscienceAustralia/dea-coastlines/releases/tag/v1.1.0). 
+The result of the Fmask algorithm contains mutually exclusive classified pixels, and the numerical schema for the pixels are as follows:
 
-###\
-DEA Coastlines dataset
+-   0 = null
+-   1 = clear
+-   2 = cloud
+-   3 = cloud shadow
+-   4 = snow
+-   5 = water
 
-The DEA Coastlines product contains five layers:
+The spectrally contiguous pixels which have a valid observation in each spectral band. This is particularly useful for applications undertaking band math, as it allows non-contiguous data to be ignored during the band math evaluation or masked during post-evaluation. The product can be utilised as a strict mask, and the numerical schema for the pixels are as follows:
 
--   Annual shorelines
--   Rates of change points
--   Coastal change hotspots (1 km)
--   Coastal change hotspots (5 km)
--   Coastal change hotspots (10 km)
+-   0 = non-contiguous
+-   1 = contiguous
 
-#### Annual shorelines
+The terrain-shaded pixels product can be utilised as a strict mask and exclude pixels that were unobservable by the sun or sensor. The numerical schema for the pixels are as follows:
 
-Annual shoreline vectors that represent the median or 'most representative' position of the shoreline at approximately 0 m Above Mean Sea Level for each year since 1988 (Figure 1).
+-   0 = shaded
+-   1 = not shaded
 
-Dashed shorelines have low certainty (see **Caveats and limitations** below).
+![Different types of terrain-shaded pixels](https://cmi.ga.gov.au/sites/default/files/inline-images/Surface%20Reflectance%20OA%203%20-%20figure%205.png)
 
-Annual shorelines include the following attribute fields:
+*Figure 5. Different types of terrain-shaded pixels. C = point of interest; D = point located along the direction of the sun; 90-θS = solar zenith; Z0 = elevation at location C; Zd = elevation at location D. Image sourced from Jupp et al. (2012).*
 
--   *year:* The year of each annual shoreline.
--   *certainty:* A column providing important data quality flags for each annual shoreline (see **Quality assurance** below for more detail about each data quality flag).
--   *tide_datum:* The tide datum of each annual shoreline (e.g. "0 m AMSL").
--   *id_primary:* The name of the annual shoreline's Primary sediment compartment from the [Australian Coastal Sediment Compartments](https://ecat.ga.gov.au/geonetwork/srv/api/records/21a23d9a-00dd-ab19-e053-10a3070a2746) framework
+##### ***Example - Fmask***
 
-###### ![DEA CoastLines coastline layer](https://cmi.ga.gov.au/sites/default/files/inline-images/deacl_coastlines.JPG)
+Some analyses might want to exclude targets that are obscured by cloud or cloud shadow. This is particularly useful for applications looking to harvest statistical information for particular regions of interest, such as field crops, where large swaths of data aren't required to be loaded into computer memory. Instead, only the regions of interest are loaded, analysed and summarised, reducing computational costs.
 
-Figure 1: Annual coastlines from DEA Coastlines visualised on the [interactive DEA Coastlines web map](https://maps.dea.ga.gov.au/#share=s-DEACoastlines&playStory=1)
+The following images represent the surface reflectance image and derived Fmask classification result for visual context. The colours for the Fmask classification are displayed as:
 
-#### Rates of change points
+-   Black = clear
+-   Magenta = cloud
+-   Yellow = cloud shadow
+-   Cyan = snow
+-   Dark blue = water
 
-A point dataset providing robust rates of coastal change for every 30 m along Australia's non-rocky coastlines (Figure 2). The most recent annual shoreline is used as a baseline for measuring rates of change.
+![False colour composite and the resulting Fmask classification](https://cmi.ga.gov.au/sites/default/files/inline-images/Surface%20Reflectance%20OA%203%20-%20figure%206.png)
 
-###### ![DEA CoastLines rates of change statistics layer](https://cmi.ga.gov.au/sites/default/files/inline-images/deacl_statistics_2.JPG)
+*Figure 6. (A) False colour composite; (B) the resulting Fmask classification.*
 
-Figure 2: Rates of change points from DEA Coastlines visualised on the [interactive DEA Coastlines web map](https://maps.dea.ga.gov.au/#share=s-DEACoastlines&playStory=1)
+For this product, the Fmask dataset has had the object dilation for the cloud and cloud shadow layers removed. This enables you to customise object dilation to meet your needs for specific applications. For example, one application might work better having a 7-pixel dilation, whereas another might require 5.
 
-On the [interactive DEA Coastlines web map](https://maps.dea.ga.gov.au/#share=s-DEACoastlines&playStory=1), points are shown for locations with statistically significant rates of change (p-value <= 0.01; see *sig_time* below) and good quality data (certainty = "good"; see *certainty* below) only. Each point shows annual rates of change (in metres per year; see *rate_time* below), and an estimate of uncertainty in brackets (95% confidence interval; see *se_time*). For example, there is a 95% chance that a point with a label **-10.0 m (±1.0 m)** is retreating at a rate of between -9.0 and -11.0 metres per year.
+You can also choose your own kernel shape and size in which to apply a particular dilation. Dilation can be useful for filling holes within objects and extending the edges of detected objects. It is important to note that small objects (e.g. 1 or 2 pixels in size) will be dilated and become large objects. If this is an undesired outcome, it is best to filter out any small objects prior to applying dilation filters.
 
-Rates of change points contains the following attribute columns that can be accessed by clicking on labelled points in the web map: 
+For more information on dilation, see:
 
-##### Annual shoreline distances
+-   [Mathematical morphology (Wikipedia)](https://en.wikipedia.org/wiki/Mathematical_morphology)
+-   [Dilation (Wikipedia)](https://en.wikipedia.org/wiki/Dilation_%28morphology%29)
+-   [Multi-dimensional binary dilation (SciPy.org)](https://docs.scipy.org/doc/scipy/reference/generated/scipy.ndimage.binary_dilation.html#scipy.ndimage.binary_dilation)
 
--   *dist_1990, dist_1991 etc*: Annual shoreline distances (in metres) relative to the most recent baseline shoreline. Negative values indicate that an annual shoreline was located inland of the baseline shoreline. By definition, the most recent baseline column will always have a distance of 0 m.
+Other uses of Fmask:
 
-##### Rates of change statistics
+-   **For training data for use with machine learning classifiers**\
+    Fmask can help refine the result and produce a more accurate classification result. The data can also be combined with other classifiers, creating a confidence metric that users can then filter by. For example, you can filter cloud pixels rated >70% as a combined metric from the combination of cloud classifiers. 
+-   **For input into a statistical summary**\
+    It can provide another information product that can be used to indicate the probability of being a particular classified feature. For example, a statistical summary of cloud and/or cloud shadow can highlight pixels that are consistently being detected as a cloud or cloud shadow. As clouds and cloud shadows are non-persistent features, pixels with a high cloud or cloud shadow frequency can be labelled or attributed as highly probable of not being cloud or cloud shadow. 
 
--   *rate_time*: Annual rates of change (in metres per year) calculated by linearly regressing annual shoreline distances against time (excluding outliers). Negative values indicate retreat and positive values indicate growth. 
--   *sig_time*: Significance (p-value) of the linear relationship between annual shoreline distances and time. Small values (e.g. p-value < 0.01 or 0.05) may indicate a coastline is undergoing consistent coastal change through time. 
--   *se_time*: Standard error (in metres) of the linear relationship between annual shoreline distances and time. This can be used to generate confidence intervals around the rate of change given by *rate_time* (e.g. 95% confidence interval = *se_time * 1.96*)
--   *outl_time*: Individual annual shoreline are noisy estimators of coastline position that can be influenced by environmental conditions (e.g. clouds, breaking waves, sea spray) or modelling issues (e.g. poor tidal modelling results or limited clear satellite observations). To obtain reliable rates of change, outlier shorelines are excluded using a robust Median Absolute Deviation outlier detection algorithm, and recorded in this column. 
+#### Image format specifications
 
-##### Other fields
+##### ***Fmask***
 
--   *uid: *A unique [geohash](https://en.wikipedia.org/wiki/Geohash) identifier for each point.
--   *id_primary:* The name of the point's Primary sediment compartment from the [Australian Coastal Sediment Compartments](https://ecat.ga.gov.au/geonetwork/srv/api/records/21a23d9a-00dd-ab19-e053-10a3070a2746) framework. 
--   *certainty:* A column providing important data quality flags for each point in the dataset (see **Quality assurance** below for more detail about each data quality flag).
--   *sce*: Shoreline Change Envelope (SCE). A measure of the maximum change or variability across all annual shorelines, calculated by computing the maximum distance between any two annual shorelines (excluding outliers). This statistic excludes sub-annual shoreline variability.
--   *nsm*: Net Shoreline Movement (NSM). The distance between the oldest (1988) and most recent annual shoreline (excluding outliers). Negative values indicate the coastline retreated between the oldest and most recent shoreline; positive values indicate growth. This statistic does not reflect sub-annual shoreline variability, so will underestimate the full extent of variability at any given location.
--   *max_year, min_year*: The year that annual shorelines were at their maximum (i.e. located furthest towards the ocean) and their minimum (i.e. located furthest inland) respectively (excluding outliers). This statistic excludes sub-annual shoreline variability.
--   *angle_mean, angle_std*: The mean angle and standard deviation between the baseline point to all annual shorelines. This data is used to calculate how well shorelines fall along a consistent line; high angular standard deviation indicates that derived rates of change are unlikely to be correct.
--   *valid_obs, valid_span:* The total number of valid (i.e. non-outliers, non-missing) annual shoreline observations, and the maximum number of years between the first and last valid annual shoreline.
+| **Format** | GeoTIFF |
+| **Resolution** | 30 m |
+| **Dataype** | UInt8 |
+| **Classification ENUM** | 0 = null\
+1 = clear\
+2 = cloud\
+3 = cloud shadow\
+4 = snow\
+5 = water |
+| **Valid data range** | [0,5] |
+| **Tiled with X and Y block sizes** | 512x512 |
+| **Compression** | Deflate, Level 9, Predictor 2 |
+| **Pyramids** | Levels: [8,16,32]\
+Compression: deflate\
+Resampling: mode\
+Overview X&Y block sizes: 512x512 |
+| **Contrast stretch** | None |
+| **Output CRS** | As specified by source dataset; source is UTM with WGS84 as the datum |
 
-#### Coastal change hotspots (1 km, 5 km, 10 km)
+##### ***nbar-contiguity, nbart-contiguity***
 
-Three points layers summarising coastal change within moving 1 km, 5 km and 10km windows along the coastline (Figure 3). These layers are useful for visualising regional or continental-scale patterns of coastal change. 
+| **Format** | GeoTIFF |
+| **Resolution** | 30 m |
+| **Dataype** | UInt8 |
+| **Classification ENUM** | 0 = non-contiguous (spectral information not present in each band)\
+1 = contiguous (spectral information present in each band) |
+| **Valid data range** | [0,1] |
+| **Tiled with X and Y block sizes** | 512x512 |
+| **Compression** | Deflate, Level 9, Predictor 2 |
+| **Pyramids** | Levels: [8,16,32]\
+Compression: deflate\
+Resampling: GDAL default (nearest)\
+Overview X&Y block sizes: 512x512 |
+| **Contrast stretch** | None |
+| **Output CRS** | As specified by source dataset; source is UTM with WGS84 as the datum |
 
-###### ![DEA CoastLines summary layer](https://cmi.ga.gov.au/sites/default/files/inline-images/deacl_summary.JPG)
+##### ***c******ombined-terrain-shadow***
 
-Figure 3: Coastal change hotspots from DEA Coastlines visualised on the [interactive DEA Coastlines web map](https://maps.dea.ga.gov.au/story/DEACoastlines)
+| **Format** | GeoTIFF |
+| **Resolution** | 30 m |
+| **Dataype** | UInt8 |
+| **Classification ENUM** | 0 = terrain shadow\
+1 = not terrain shadow |
+| **Valid data range** | [0,1] |
+| **Tiled with X and Y block sizes** | 512x512 |
+| **Compression** | Deflate, Level 9, Predictor 2 |
+| **Pyramids** | None |
+| **Contrast stretch** | None |
+| **Output CRS** | As specified by source dataset; source is UTM with WGS84 as the datum |
+
+##### ***incident, exiting, azimuthal-incident, azimuthal-exiting, relative-azimuth, relative-slope, timedelta***
+
+| **Format** | GeoTIFF |
+| **Resolution** | 30 m |
+| **No data value** | NaN (IEEE 754) |
+| **Tiled with X and Y block sizes** | 512x512 |
+| **Compression** | Deflate, Level 9, Predictor 2 |
+| **Pyramids** | None |
+| **Contrast stretch** | None |
+| **Output CRS** | As specified by source dataset; source is UTM with WGS84 as the datum |
 
 ### Accuracy and limitations
 
-### Annual shoreline accuracy and precision
+#### Accuracy
 
-An extensive validation against independent coastal monitoring datasets was conducted to evaluate the positional accuracy and precision of DEA Coastlines annual shorelines, and the accuracy of our modelled long-term rates of coastal change (i.e. metres retreat or growth per year). In total, 57,662 independent measurements of coastline position were acquired across coastal Australia from the following data sources (Figure 4):
+For information on the accuracy of the algorithms for test locations, see Zhu and Woodcock (2012) and Zhu, Wang and Woodcock (2015).
 
--   City of Gold Coast ETA Lines (Strauss et al., 2017)
--   Moruya and Pedro Beach survey (Short et al. 2014)
--   [Narrabeen-Collaroy Beach Survey Program](http://narrabeen.wrl.unsw.edu.au/) (Turner et al., 2016)
--   [NSW Beach Profile Database](http://www.nswbpd.wrl.unsw.edu.au/) (Harrison et al., 2017)
--   South Australia Coastal Monitoring Profile Lines (South Australian Coast Protection Board, 2000)
--   Sunshine Coast Council ETA Lines (Griffith Centre for Coastal Management, 2016) 
--   [Tasmanian Shoreline Monitoring and Archiving Project](http://www.tasmarc.info/) (TASMARC, 2021)
--   Victorian Coastal Monitoring Program (Pucino et al., 2021)
--   Western Australia Department of Transport (WA DoT) Coastline Movements (Department of Transport, 2009)
+#### Limitations
 
-![Validation sites](https://cmi.ga.gov.au/sites/default/files/inline-images/Figure1_validation_temporal%20%281%29.png)
+##### ***Fmask***
 
-###### Figure 4: The spatial and temporal distribution of the independent validation data that was compared against DEA Coastlines annual shorelines and rates of change.
+Fmask has limitations due to the complex nature of detecting natural phenomena, such as cloud. For example, bright targets, such as beaches, buildings and salt lakes often get mistaken for clouds.
 
-#### Annual shoreline accuracy and precision
+Fmask is designed to be used as an immediate/rapid source of information screening. The idea is that over a temporal period enough observations will be made to form a temporal likelihood. For example, if a feature is consistently being masked as cloud, it is highly probable that it is not cloud. As such, derivative processes can be created to form an information layer containing feature probabilities.
 
-This validation assessed the ability of DEA Coastlines to reproduce a specific shoreline proxy: the median annual position of the shoreline at mean sea level (0 m Above Mean Sea Level; AMSL). Validations were performed using existing beach profile lines where possible. For each validation profile line, we identified the median annual position of the 0 m AMSL tide datum across all annual validation observations, and compared this to the position of the corresponding DEA Coastlines shoreline for each year (Figure 5).
+Edges and fringes of clouds tend to be more opaque and can be missed by the cloud detection algorithm. In this instance, applying a morphological dilation will grow the original cloud object and capture edges and fringes of clouds. However, it is important to note that other cloud objects could also be dilated. Be mindful of single-pixel objects that could grow to become large objects. Consider filtering out these small objects prior to analysis.
 
-To ensure a like-for-like comparison, we selected a subset of validation data with an annual survey frequency approximately equivalent to the Landsat satellite imagery used to generate DEA Coastlines data (i.e. 22 annual observations or greater based on a 16 day overpass frequency). Absolute mapping accuracy (i.e. how far the mapped shorelines were from the median annual position of the shoreline for each year, after correcting for tide) was assessed using Mean Absolute Error (MAE) and Root Mean Squared Error (RMSE):
+##### ***Angular measurement and shadow classification***
 
--   **Absolute mapping accuracy: **7.3metres MAE (10.3 metres RMSE) accuracy at mapping the median annual position of the shoreline after correcting for tide
-
-Shoreline mapping bias and precision (i.e. how well modelled shorelines reproduced relative shoreline dynamics even when affected by substrate-specific seaward or landward biases) was evaluated by calculating the average of all individual errors, then subtracting these systematic biases from our results to produce bias-corrected MAE and RMSE. R-squared was also calculated to compare overall correlations between DEA Coastlines and validation shoreline positions:
-
--   **Bias:** 5.6 metre landward bias (i.e. shorelines mapped inland of their true position)
--   **Precision: **6.1 metres bias-corrected MAE (8.7 metres bias-corrected RMSE)
--   **R-squared**: 0.92
-
-> *For a more detailed breakdown of validation results by substrate, please refer to [Bishop-Taylor et al. 2021](https://www.sciencedirect.com/science/article/pii/S0034425721004545).*
-
-####\
-Rates of change points accuracy
-
-To evaluate our long-term rates of change, we identified 330 validation transects with an extensive (> 10 years) temporal record of coastal monitoring data, encompassing a total of 11,632 independent measurements of shoreline position. We computed linear regression-based annual rates of coastal change (metres per year) between 0 m AMSL shoreline positions and time, and compared these against rates calculated from DEA Coastlines for corresponding years of data to ensure a like-for-like comparison. Validation statistics were then calculated across all 330 transects regardless of statistical significance, and a smaller subset of 144 transects with statistically significant rates of retreat or growth (p < 0.01) in either the validation data or DEA Coastlines:
-
-All transects:
-
--   **Accuracy:** 0.35 m / year MAE (0.60 m / year RMSE)
--   **Bias:** 0.08 m / year
--   **R-squared:** 0.90
-
-Significant transects only:
-
--   **Accuracy:** 0.31 m / year MAE (0.52 m / year RMSE)
--   **Bias:** 0.08 m / year
--   **R-squared:** 0.95
-
-> *For a more detailed discussion of rates of change validation results, please refer to [Bishop-Taylor et al. 2021](https://www.sciencedirect.com/science/article/pii/S0034425721004545).*
-
-![Validation results](https://cmi.ga.gov.au/sites/default/files/inline-images/Figure4_subpixel%20%281%29.png)
-
-###### Figure 5: DEA Coastlines annual shorelines compared against a) aerial photogrammetry-derived annual ~0 m AMSL shorelines from the Western Australian Department of Transport Coastline Movements dataset, and b) transect-based in-situ validation data for three example locations that demonstrate sub-pixel precision shoreline extraction: Narrabeen Beach, Tugun Beach, and West Beach. DEA Coastlines transect data in panel b represent the 0 m AMSL Median Annual Shoreline Position shoreline proxy, and have been corrected for consistent local inland biases to assess the ability to capture relative coastline dynamics through time.
-
-#### Caveats and limitations
-
-##### Annual shorelines
-
--   Annual shorelines from DEA Coastlines summarise the median (i.e. "dominant") position of the shoreline throughout the entire year, corrected to a consistent tide height (0 m AMSL). Annual shorelines will therefore not reflect shorter-term coastal variability, for example changes in shoreline position between low and high tide, seasonal effects, or short-lived influences of individual storms. This means that these annual shorelines will show lower variability than the true range of coastal variability observed along the Australian coastline.
-
-##### Rates of change points
-
--   Rates of change points do not assign a reason for change, and do not necessarily represent processes of coastal erosion or sea level rise. In locations undergoing rapid coastal development, the construction of new inlets or marinas may be represented as hotspots of coastline retreat, while the construction of ports or piers may be represented as hotspots of coastline growth. Rates of change points should therefore be evaluated with reference to the underlying annual coastlines and external data sources or imagery.
--   Rates of change points may be inaccurate or invalid within complex mouthbars, or other coastal environments undergoing rapid non-linear change through time. In these regions, it is advisable to visually assess the underlying annual shoreline data when interpreting rates of change to ensure these values are fit-for-purpose. Regions significantly affected by this issue include:
-    -   Cambridge Gulf, Western Australia
-    -   Joseph Bonaparte Gulf, Western Australia/Northern Territory
-
-##### Data quality issues
-
--   Annual shorelines may be less accurate in regions with complex tidal dynamics or large tidal ranges, and low-lying intertidal flats where small tidal modelling errors can lead to large horizontal offsets in coastline positions (Figure 6). Annual shoreline accuracy in intertidal environments may also be reduced by the influence of wet muddy substrate or intertidal vegetation, which can make it difficult to extract a single unambiguous coastline (Bishop-Taylor et al. 2019a, 2019b, 2021). It is anticipated that future versions of this product will show improved results due to integrating more advanced methods for waterline detection in intertidal regions, and through improvements in tidal modelling methods. Regions significantly affected by intertidal issues include:
-    -   The Pilbara coast, Western Australia from Onslow to Pardoo
-    -   The Mackay region, Queensland from Proserpine to Broad Sound
-    -   The upper Spencer Gulf, South Australia from Port Broughton to Port Augusta
-    -   Western Port Bay, Victoria from Tooradin to Pioneer Bay
-    -   Hunter Island Group, Tasmania from Woolnorth to Perkins Island
-    -   Moreton Bay, Queensland from Sandstone Bay to Wellington Point
--   Annual shorelines may be noisier and more difficult to interpret in regions with low availability of satellite observations caused by persistent cloud cover. In these regions it can be difficult to obtain the minimum number of clear satellite observations required to generate clean, noise-free annual shorelines. Affected regions include:
-    -   South-western Tasmania from Macquarie Heads to Southport
--   In some urban locations, the spectra of bright white buildings located near the coastline may be inadvertently confused with water, causing a land-ward offset from true shoreline positions. 
--   Some areas of extremely dark and persistent shadows (e.g. steep coastal cliffs across southern Australia) may be inadvertently mapped as water, resulting in a landward offset from true shoreline positions. 
--   1991 and 1992 shorelines are currently affected by aerosol-related issues caused by the 1991 Mount Pinatubo eruption. These shorelines should be interpreted with care, particularly across northern Australia. 
-
-##### Validation approach
-
--   To compare annual shorelines to validation datasets, multiple validation observations in a year were combined into a single median measurement of coastline position. In the case where only a single validation observation was taken for a year, this single observation may not be reflective of typical shoreline conditions across the entire year period. Because of this, validation results are expected to be more reliable for validation datasets with multiple observations per year.
--   The current validation approach was biased towards Australia's south-western, southern and south-eastern coastlines due to the availability of historical coastal monitoring data. This bias prevented us from including more complex intertidal environments in our validation, which is likely to have inflated the accuracy of our results due to issues outlined above.
-
-![Intertidal issues](https://cmi.ga.gov.au/sites/default/files/inline-images/Figure10_intertidal%20%281%29.png)
-
-###### Figure 6: Potentially spurious shorelines in macrotidal coastal regions characterised by gently sloped tidal flat environments: a) Broad Sound and b) Shoalwater Bay, Queensland. Dashed shorelines indicate data that was flagged as affected by tidal modelling issues based on MNDWI standard deviation. In these locations, the TPXO 8 tidal model was unable to effectively sort satellite observations by tide heights, resulting in output shorelines that did not adequately suppress the influence of the tide.
+The Digital Elevation Model (DEM) is used for identifying terrain shadow, as well as producing incident and exiting angles. It is derived from the Shuttle Radar Topography Mission (SRTM) and produced with approximately 30 m resolution. As such, any angular measurements and shadow classifications are limited to the precision of the DEM itself. The DEM is known to be noisy across various locations, so to reduce any potential extrema, a Gaussian smooth is applied prior to analysis.
 
 ### Quality assurance
 
-To allow problematic data to be accounted for or excluded from future analyses, DEA Coastlines data is automatically screened for several potential data quality issues. These issues are flagged in the "certainty" field and symbolised by dashed lines or white points on the [interactive DEA Coastlines map](https://maps.dea.ga.gov.au/story/DEACoastlines). These flags include:
+The authors evaluated the Fmask algorithm using a total of 188 randomly selected Worldwide Reference System (WRS) locations across nine latitudinal zones. From these locations, 212 Landsat scenes were used as a reference set as part of the accuracy assessment. The average accuracy for cloud detection was 96.4%.
 
-##### Annual shorelines
+The calculation of the satellite and solar positional geometry datasets are largely influenced by the publicly available ephemeris data and whether the satellite has an on-board GPS, as well as the geographical information that resides with the imagery data and the metadata published by the data providers. The code to generate the geometry grids is routinely tested and evaluated for accuracy at >6 decimal places of precision.
 
--   *aerosol issues:* The accuracy of this shoreline may be affected by aerosol issues caused by the 1991 eruption of Mount Pinatubo.
--   *insufficient data:* The accuracy of this shoreline may be affected by limited good quality satellite observations at this location. This can lead to noisier and less reliable shorelines.
--   *unstable data:*The accuracy of this shoreline is affected by unstable data at this location. This may be caused by errors in the tidal model used to reduce the influence of tide, the presence of gently sloping intertidal mudflats or sandbars that can lead to inaccurate shoreline mapping, or noisy satellite imagery caused by high levels of cloud.
-
-##### Rates of change points
-
--   *insufficient observations:* There are insufficient years of good quality annual shoreline data (< 25 years) to calculate reliable rates of coastal change at this location.
--   *likely rocky shoreline:* This coastline has been identified as a probable rocky or cliff shoreline. Rates of coastal change at this location may be less accurate due to noisy shoreline mapping caused by dark terrain shadows.
--   *extreme value (> 50 m):* This location has been identified as having an extreme rate of coastal change (> 50 metres per year) and should be interpreted with caution.
--   *high angular variability:* This rate of coastal change is unlikely to be accurate due to high levels of angular variability from this point to each annual shoreline. This can occur in complex coastal environments like river mouths, sandbars and mudflats that do not show linear patterns of coastal change over time.
--   *baseline outlier:* The baseline (i.e. most recent) annual shoreline is itself flagged as an outlier, potentially resulting in inaccurate rates of change at this location.
-
-##### Coastal change hotspots
-
--   *insufficient points: *There are too few valid rates of change points in the 1 km/5 km/10 km radius around this location to calculate a reliable regional rate of change.
-
-For more information, refer to **Caveats and limitations** above.
-
-### Software
-
-The following software was used to generate this product: 
-
--   [DEA Coastlines Github code](https://github.com/GeoscienceAustralia/dea-coastlines)
--   [OpenDataCube](https://github.com/opendatacube)
--   [FES2014 global tide model](https://www.aviso.altimetry.fr/en/data/products/auxiliary-products/global-tide-fes/description-fes2014.html)
-
-### Relevant websites
-
--   [Interactive DEA Coastlines product on DEA Maps](https://maps.dea.ga.gov.au/story/DEACoastlines)
--   [DEA Coastlines Github code repository](https://github.com/GeoscienceAustralia/dea-coastlines)
+The technical report containing the data summary for the Phase 1 DEA Surface Reflectance Validation is available: [DEA Analysis Ready Data Phase 1 Validation Project : Data Summary](http://pid.geoscience.gov.au/dataset/ga/14510)
 
 ### Data sources
 
--   [DEA Surface Reflectance (Landsat 5 TM)](https://cmi.ga.gov.au/data-products/dea/358/dea-surface-reflectance-landsat-5-tm)
--   [DEA Surface Reflectance (Landsat 7 ETM+)](https://cmi.ga.gov.au/data-products/dea/475/dea-surface-reflectance-landsat-7-etm)
--   [DEA Surface Reflectance (Landsat 8 OLI-TIRS)](https://cmi.ga.gov.au/data-products/dea/365/dea-surface-reflectance-landsat-8-oli-tirs)
--   [DEA Surface Reflectance OA (Landsat 5 TM)](https://cmi.ga.gov.au/data-products/dea/369/dea-surface-reflectance-oa-landsat-5-tm)
--   [DEA Surface Reflectance OA (Landsat 7 ETM+)](https://cmi.ga.gov.au/data-products/dea/478/dea-surface-reflectance-oa-landsat-7-etm)
--   [DEA Surface Reflectance OA (Landsat 8 OLI-TIRS)](https://cmi.ga.gov.au/data-products/dea/404/dea-surface-reflectance-oa-landsat-8-oli-tirs)
+-   [USGS Collection 1 Landsat 8 Optical Land Imager Thermal Infrared Sensor](https://cmi.ga.gov.au/node/397)
+-   [SRTM DSM/DEM data](https://cmi.ga.gov.au/node/70)
+-   [Ephemeris Data](https://cmi.ga.gov.au/node/62)
 
 ### Processing steps
 
-1.  [Load stack of all available Landsat 5, 7, 8 and 9 satellite imagery for a location](https://cmi.ga.gov.au/node/589)
-2.  [Convert satellite observations to a remote sensing water index (MNDWI)](https://cmi.ga.gov.au/node/594)
-3.  [For each satellite image, model ocean tides into a 5 x 5 km grid based on exact time of image acquisition](https://cmi.ga.gov.au/node/590)
-4.  [Interpolate tide heights into spatial extent of image stack](https://cmi.ga.gov.au/node/591)
-5.  [Mask out high and low tide pixels by removing all observations acquired outside of 50 percent of the observed tidal range centered over mean sea level](https://cmi.ga.gov.au/node/592)
-6.  [Combine tidally-masked data into annual median composites from 1988 to the present representing the coastline at approximately mean sea level](https://cmi.ga.gov.au/node/593)
-7.  [Apply morphological extraction algorithms to mask annual median composite rasters to a valid coastal region](https://cmi.ga.gov.au/node/596)
-8.  [Extract waterline vectors using subpixel waterline extraction](https://cmi.ga.gov.au/node/595)
-9.  [Compute rates of coastal change at every 30 m along Australia's non-rocky coastlines using linear regression](https://cmi.ga.gov.au/node/597)
-
-### Major algorithms
-
--   [FES (Finite Element Solution) 2014 global tide model](https://cmi.ga.gov.au/node/837)
--   [Modified Normalised Difference Water Index (MNDWI)](https://cmi.ga.gov.au/node/583)
--   [Spatial tide interpolation](https://cmi.ga.gov.au/node/582)
--   [Median compositing](https://cmi.ga.gov.au/node/584)
--   [Coastline morphological extraction](https://cmi.ga.gov.au/node/586)
--   [Subpixel resolution waterline extraction](https://cmi.ga.gov.au/node/585)
--   [Rates of change and linear regression statistics](https://cmi.ga.gov.au/node/587)
-
-### References
-
-Bishop-Taylor, R., Nanson, R., Sagar, S., Lymburner, L. (2021). Mapping Australia's dynamic coastline at mean sea level using three decades of Landsat imagery. *Remote Sensing of Environment*, 267, 112734. Available: <https://doi.org/10.1016/j.rse.2021.112734>
-
-Nanson, R., Bishop-Taylor, R., Sagar, S., Lymburner, L., (2022). Geomorphic insights into Australia's coastal change using a national dataset derived from the multi-decadal Landsat archive. *Estuarine, Coastal and Shelf Science*, 265, p.107712. Available: <https://doi.org/10.1016/j.ecss.2021.107712>
-
-Bishop-Taylor, R., Sagar, S., Lymburner, L., & Beaman, R. J. (2019a). Between the tides: Modelling the elevation of Australia's exposed intertidal zone at continental scale. *Estuarine, Coastal and Shelf Science*, 223, 115-128. Available: <https://doi.org/10.1016/j.ecss.2019.03.006>
-
-Bishop-Taylor, R., Sagar, S., Lymburner, L., Alam, I., & Sixsmith, J. (2019b). Sub-pixel waterline extraction: Characterising accuracy and sensitivity to indices and spectra. *Remote Sensing*, 11(24), 2984. Available: <https://doi.org/10.3390/rs11242984>
-
-DoT, (2018). Capturing the Coastline: Mapping Coastlines in WA over 75 Years. Department of Transport, Western Australia (2018). Available: <https://www.transport.wa.gov.au/mediaFiles/marine/MAC_P_CapturingtheCoastline.pdf>
-
-Griffith Centre for Coastal Management, 2016. Sunshine Coast Beach Profile Database: Description of BPA Historical Database and Recommendations for Ongoing Monitoring Programs (No. 188), Griffith Centre for Coastal Management Research Report. 
-
-Harrison, A.J., Miller, B.M., Carley, J.T., Turner, I.L., Clout, R., Coates, B., 2017. NSW beach photogrammetry: A new online database and toolbox. Australasian Coasts & Ports 2017: Working with Nature 565.
-
-Lyard, F.H., Allain, D.J., Cancet, M., Carrère, L. and Picot, N., 2021. FES2014 global ocean tide atlas: design and performance. Ocean Science, 17(3), pp.615-649.
-
-Pucino, N., Kennedy, D.M., Carvalho, R.C., Allan, B., Ierodiaconou, D., 2021. Citizen science for monitoring seasonal-scale beach erosion and behaviour with aerial drones. Scientific Reports 11, 3935. https://doi.org/10.1038/s41598-021-83477-6 
-
-Sagar, S., Roberts, D., Bala, B., & Lymburner, L. (2017). Extracting the intertidal extent and topography of the Australian coastline from a 28 year time series of Landsat observations. *Remote Sensing of Environment*, 195, 153-169. Available: <https://doi.org/10.1016/j.rse.2017.04.009>
-
-Seifi, F., Deng, X. and Baltazar Andersen, O., 2019. Assessment of the accuracy of recent empirical and assimilated tidal models for the Great Barrier Reef, Australia, using satellite and coastal data. Remote Sensing, 11(10), p.1211.
-
-Short, A.D., Bracs, M.A., Turner, I.L., 2014. Beach oscillation and rotation: local and regional response at three beaches in southeast Australia. Journal of Coastal Research 712--717. https://doi.org/10.2112/SI-120.1 
-
-South Australian Coast Protection Board, 2000. Monitoring Sand Movements along the Adelaide Coastline. Department for Environment and Heritage, South Australia. 
-
-Strauss, D., Murray, T., Harry, M., Todd, D., 2017. Coastal data collection and profile surveys on the Gold Coast: 50 years on. Australasian Coasts & Ports 2017: Working with Nature 1030. 
-
-TASMARC, 2021. TASMARC (The Tasmanian Shoreline Monitoring and Archiving Project) (2019) TASMARC database. Available: h[ttp://www.tasmarc.info/](http://www.tasmarc.info/)
-
-Turner, I. L., Harley, M. D., Short, A. D., Simmons, J. A., Bracs, M. A., Phillips, M. S., & Splinter, K. D. (2016). A multi-decade dataset of monthly beach profile surveys and inshore wave forcing at Narrabeen, Australia. *Scientific data*, *3*(1), 1-13. Available: <http://narrabeen.wrl.unsw.edu.au/>
+1.  [Longitude and Latitude Calculation](https://cmi.ga.gov.au/node/379)
+2.  [Satellite and Solar Geometry Calculation](https://cmi.ga.gov.au/node/382)
+3.  [Elevation Retrieval and Smoothing](https://cmi.ga.gov.au/node/384)
+4.  [Slope and Aspect Calculation](https://cmi.ga.gov.au/node/385)
+5.  [Incidence and Azimuthal Incident Angles Calculation](https://cmi.ga.gov.au/node/387)
+6.  [Exiting and Azimuthal Exiting Angles Calculation](https://cmi.ga.gov.au/node/388)
+7.  [Relative Slope Calculation](https://cmi.ga.gov.au/node/389)
+8.  [Terrain Occlusion Mask](https://cmi.ga.gov.au/node/386)
+9.  [Function of Mask (Fmask)](https://cmi.ga.gov.au/node/395)
+10. [Contiguous Spectral Data Mask Calculation](https://cmi.ga.gov.au/node/398)
