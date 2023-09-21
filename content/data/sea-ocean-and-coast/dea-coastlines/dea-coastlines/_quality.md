@@ -1,5 +1,61 @@
 ## Accuracy
 
+### Annual shoreline accuracy and precision
+
+An extensive validation against independent coastal monitoring datasets was conducted to evaluate the positional accuracy and precision of DEA Coastlines annual shorelines, and the accuracy of our modelled long-term rates of coastal change (i.e. metres retreat or growth per year). In total, 57,662 independent measurements of coastline position were acquired across coastal Australia from the following data sources (Figure 4):
+
+-   City of Gold Coast ETA Lines (Strauss et al., 2017)
+-   Moruya and Pedro Beach survey (Short et al. 2014)
+-   [Narrabeen-Collaroy Beach Survey Program](http://narrabeen.wrl.unsw.edu.au/) (Turner et al., 2016)
+-   [NSW Beach Profile Database](http://www.nswbpd.wrl.unsw.edu.au/) (Harrison et al., 2017)
+-   South Australia Coastal Monitoring Profile Lines (South Australian Coast Protection Board, 2000)
+-   Sunshine Coast Council ETA Lines (Griffith Centre for Coastal Management, 2016) 
+-   [Tasmanian Shoreline Monitoring and Archiving Project](http://www.tasmarc.info/) (TASMARC, 2021)
+-   Victorian Coastal Monitoring Program (Pucino et al., 2021)
+-   Western Australia Department of Transport (WA DoT) Coastline Movements (Department of Transport, 2009)
+
+![Validation sites](https://cmi.ga.gov.au/sites/default/files/inline-images/Figure1_validation_temporal%20%281%29.png)
+
+**Figure 4:** The spatial and temporal distribution of the independent validation data that was compared against DEA Coastlines annual shorelines and rates of change.
+
+### Annual shoreline accuracy and precision
+
+This validation assessed the ability of DEA Coastlines to reproduce a specific shoreline proxy: the median annual position of the shoreline at mean sea level (0 m Above Mean Sea Level; AMSL). Validations were performed using existing beach profile lines where possible. For each validation profile line, we identified the median annual position of the 0 m AMSL tide datum across all annual validation observations, and compared this to the position of the corresponding DEA Coastlines shoreline for each year (Figure 5).
+
+To ensure a like-for-like comparison, we selected a subset of validation data with an annual survey frequency approximately equivalent to the Landsat satellite imagery used to generate DEA Coastlines data (i.e. 22 annual observations or greater based on a 16 day overpass frequency). Absolute mapping accuracy (i.e. how far the mapped shorelines were from the median annual position of the shoreline for each year, after correcting for tide) was assessed using Mean Absolute Error (MAE) and Root Mean Squared Error (RMSE):
+
+-   **Absolute mapping accuracy: **7.3metres MAE (10.3 metres RMSE) accuracy at mapping the median annual position of the shoreline after correcting for tide
+
+Shoreline mapping bias and precision (i.e. how well modelled shorelines reproduced relative shoreline dynamics even when affected by substrate-specific seaward or landward biases) was evaluated by calculating the average of all individual errors, then subtracting these systematic biases from our results to produce bias-corrected MAE and RMSE. R-squared was also calculated to compare overall correlations between DEA Coastlines and validation shoreline positions:
+
+-   **Bias:** 5.6 metre landward bias (i.e. shorelines mapped inland of their true position)
+-   **Precision: **6.1 metres bias-corrected MAE (8.7 metres bias-corrected RMSE)
+-   **R-squared**: 0.92
+
+> *For a more detailed breakdown of validation results by substrate, please refer to [Bishop-Taylor et al. 2021](https://www.sciencedirect.com/science/article/pii/S0034425721004545).*
+
+### Rates of change points accuracy
+
+To evaluate our long-term rates of change, we identified 330 validation transects with an extensive (> 10 years) temporal record of coastal monitoring data, encompassing a total of 11,632 independent measurements of shoreline position. We computed linear regression-based annual rates of coastal change (metres per year) between 0 m AMSL shoreline positions and time, and compared these against rates calculated from DEA Coastlines for corresponding years of data to ensure a like-for-like comparison. Validation statistics were then calculated across all 330 transects regardless of statistical significance, and a smaller subset of 144 transects with statistically significant rates of retreat or growth (p < 0.01) in either the validation data or DEA Coastlines:
+
+All transects:
+
+-   **Accuracy:** 0.35 m / year MAE (0.60 m / year RMSE)
+-   **Bias:** 0.08 m / year
+-   **R-squared:** 0.90
+
+Significant transects only:
+
+-   **Accuracy:** 0.31 m / year MAE (0.52 m / year RMSE)
+-   **Bias:** 0.08 m / year
+-   **R-squared:** 0.95
+
+> *For a more detailed discussion of rates of change validation results, please refer to [Bishop-Taylor et al. 2021](https://www.sciencedirect.com/science/article/pii/S0034425721004545).*
+
+![Validation results](https://cmi.ga.gov.au/sites/default/files/inline-images/Figure4_subpixel%20%281%29.png)
+
+**Figure 5:** DEA Coastlines annual shorelines compared against a) aerial photogrammetry-derived annual ~0 m AMSL shorelines from the Western Australian Department of Transport Coastline Movements dataset, and b) transect-based in-situ validation data for three example locations that demonstrate sub-pixel precision shoreline extraction: Narrabeen Beach, Tugun Beach, and West Beach. DEA Coastlines transect data in panel b represent the 0 m AMSL Median Annual Shoreline Position shoreline proxy, and have been corrected for consistent local inland biases to assess the ability to capture relative coastline dynamics through time.
+
 ## Quality Assurance
 
 To allow problematic data to be accounted for or excluded from future analyses, DEA Coastlines data is automatically screened for several potential data quality issues. These issues are flagged in the "certainty" field and symbolised by dashed lines or white points on the [interactive DEA Coastlines map](https://maps.dea.ga.gov.au/story/DEACoastlines). These flags include:
