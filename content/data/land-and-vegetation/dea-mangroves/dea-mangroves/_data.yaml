@@ -14,11 +14,6 @@ doi: 10.26186/116268
 
 # Access
 
-maps:
-  - DEACoastlines: https://maps.dea.ga.gov.au/story/DEACoastlines
-
 data:
-  - dea_coastlines: https://data.dea.ga.gov.au/?prefix=derivative/dea_coastlines/2-1-0/
-
-explorer:
-  - AWS: https://explorer.prod.dea.ga.gov.au/products/geodata_coast_100k
+  - "NCI - THREDDS": https://dapds00.nci.org.au/thredds/catalog/xu18/catalog.html
+  - "DEA Public": https://data.dea.ga.gov.au/?prefix=baseline/ga_ls8c_ard_3/

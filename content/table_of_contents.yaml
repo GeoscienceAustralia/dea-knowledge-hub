@@ -18,6 +18,9 @@ entries:
         - file: data/sea-ocean-and-coast/dea-coastlines/index
           entries:
             - glob: data/sea-ocean-and-coast/dea-coastlines/*/index
+        - file: data/sea-ocean-and-coast/test/index
+          entries:
+            - glob: data/sea-ocean-and-coast/test/*/index
   - file: notebooks/README
     title: Notebooks
     subtrees:

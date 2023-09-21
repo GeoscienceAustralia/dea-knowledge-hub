@@ -1,0 +1,24 @@
+# Details
+
+title: Test Page
+long_title: Digital Earth Australia Coastlines
+version: 2.1.0
+release: Latest
+program: Digital Earth Australia
+collection: Geoscience Australia Landsat Collection 3
+resource_type: Derivative
+published: 15/08/2023
+author: Sagar Stephen
+ecat: 116268
+doi: 10.26186/116268
+
+# Access
+
+maps:
+  - DEACoastlines: https://maps.dea.ga.gov.au/story/DEACoastlines
+
+data:
+  - dea_coastlines: https://data.dea.ga.gov.au/?prefix=derivative/dea_coastlines/2-1-0/
+
+explorer:
+  - AWS: https://explorer.prod.dea.ga.gov.au/products/geodata_coast_100k

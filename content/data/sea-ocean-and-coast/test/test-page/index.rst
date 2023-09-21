@@ -3,7 +3,7 @@
 .. datatemplate:yaml:: ./_data.yaml
 
    {{ data["title"] }}
-   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   ^^^^^^^^^^^^^^^^^^^
 
    {{ data["long_title"] }}
 
@@ -19,40 +19,40 @@
 
               .. grid-item-card:: See it on a map
                  :img-top: https://www.gifpng.com/300x200
-                 :link: https://maps.dea.ga.gov.au/#share=s-lkNZRIoEC2JixvX3a7RoCGR5czq
+                 :link: https://maps.dea.ga.gov.au/story/DEACoastlines
 
-                 DEA maps
-
-              .. grid-item-card:: Get the data
-                 :img-top: https://www.gifpng.com/300x200
-                 :link: https://dapds00.nci.org.au/thredds/catalog/xu18/catalog.html
-
-                 NCI - THREDDS
+                 DEACoastlines
 
               .. grid-item-card:: Get the data
                  :img-top: https://www.gifpng.com/300x200
-                 :link: https://data.dea.ga.gov.au/?prefix=baseline/ga_ls8c_ard_3/
+                 :link: https://data.dea.ga.gov.au/?prefix=derivative/dea_coastlines/2-1-0/
 
-                 DEA Public
-
-              .. grid-item-card:: Web service
+                 dea_coastlines
+   
+              .. grid-item-card:: Explore data samples
                  :img-top: https://www.gifpng.com/300x200
-                 :link: https://ows.dea.ga.gov.au/
+                 :link: https://explorer.prod.dea.ga.gov.au/products/geodata_coast_100k
+              
+                 AWS
 
-                 OWS
-
-              .. grid-item-card:: Product catalogue
+              .. grid-item-card:: Code example
                  :img-top: https://www.gifpng.com/300x200
-                 :link: http://pid.geoscience.gov.au/dataset/ga/145497
+                 :link: https://docs.dea.ga.gov.au/notebooks/DEA_products/DEA_Coastlines.html
 
-                 eCat 145497
+                 Jupyter notebook
+              
+              .. grid-item-card:: Code example
+                 :img-top: https://www.gifpng.com/300x200
+                 :link: https://github.com/GeoscienceAustralia/dea-coastlines
+              
+                 GitHub repository
 
           .. include:: _about.md
              :parser: myst_parser.sphinx_
 
           .. rubric:: Key information
 
-          :Product ID: ga_ls_mangrove_cover_cyear_3
+          :Product ID: geodata_coast_100k
           :DOI: 10.26186/116268
           :Program: Digital Earth Australia
           :Collection: Geoscience Australia Landsat Collection 3
@@ -78,8 +78,7 @@
           {% endif %}
           {% if data["data"] %}
           :Get the data:
-             * `NCI - THREDDS <https://dapds00.nci.org.au/thredds/catalog/xu18/catalog.html>`_
-             * `DEA Public <https://data.dea.ga.gov.au/?prefix=baseline/ga_ls8c_ard_3/>`_
+             * `dea_coastlines <https://data.dea.ga.gov.au/?prefix=derivative/dea_coastlines/2-1-0/>`_
           {% endif %}
           {% if data["explorer"] %}
           :Explore data samples:
