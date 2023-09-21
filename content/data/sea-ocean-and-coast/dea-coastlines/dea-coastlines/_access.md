@@ -1,6 +1,6 @@
 ## Access Notes
 
-**Data download**
+### Data download
 
 DEA Coastlines data for the entire Australian coastline is available to download in two formats:
 
@@ -19,7 +19,7 @@ To load OGC GeoPackage data in QGIS:
 2.  When prompted to `Select Vector Layers to Add`, select all layers and then `OK`.
 3.  The DEA Coastlines layers will load with built-in symbology. By default, DEA Coastlines layers automatically transition based on the zoom level of the map. To deactivate this: right click on a layer in the QGIS Layers panel, click `Set Layer Scale Visibility`, and untick `Scale visibility.`
 
-**DEA Maps**
+### DEA Maps
 
 To explore DEA Coastlines on the interactive DEA Maps platform, visit the link below:
 
@@ -44,7 +44,7 @@ Zoom in further to view individual annual shorelines:
 
 **Note:** To view a DEA Coastlines layer that is not currently visible (e.g. rates of change points at full zoom), each layer can be added to the map individually from the `Sea, ocean and coast > DEA Coastlines > Supplementary data` directory.
 
-**Loading DEA Coastlines data from the Web Feature Service (WFS) using Python**
+### Loading DEA Coastlines data from the Web Feature Service (WFS) using Python
 
 DEA Coastlines data can be loaded directly in a Python script or Jupyter Notebook using the DEA Coastlines Web Feature Service (WFS) and `geopandas`:
 
@@ -80,7 +80,7 @@ deacl_ratesofchange_gdf.crs = 'EPSG:3577'
 deacl_ratesofchange_gdf = deacl_ratesofchange_gdf.query("certainty == 'good'")
 ```
 
-**Loading DEA Coastlines data from the Web Feature Service (WFS) using R**
+### Loading DEA Coastlines data from the Web Feature Service (WFS) using R
 
 DEA Coastlines data can be loaded directly into R using the DEA Coastlines Web Feature Service (WFS) and the `sf` package:
 

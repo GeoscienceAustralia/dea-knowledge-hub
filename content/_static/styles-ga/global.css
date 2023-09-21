@@ -3,7 +3,15 @@ h1 {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: var(#082e41);
+    color: var(--pst-color-primary);
+}
+
+h3, h4, h5, h6 {
+    color: var(--pst-color-secondary);
+}
+
+h4, h5, h6 {
+    font-weight: bold;
 }
 
 footer.bd-footer {
