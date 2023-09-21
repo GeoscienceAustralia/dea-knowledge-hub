@@ -1,4 +1,4 @@
-DEA Water Observations
+DEA Mangroves
 ==============
 
 .. tableofcontents::

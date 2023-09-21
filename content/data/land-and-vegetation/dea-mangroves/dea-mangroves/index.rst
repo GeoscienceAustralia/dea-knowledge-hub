@@ -17,6 +17,12 @@
           .. grid:: 4
               :gutter: 2
 
+              .. grid-item-card:: See it on a map
+                 :img-top: https://www.gifpng.com/300x200
+                 :link: https://maps.dea.ga.gov.au/#share=s-lkNZRIoEC2JixvX3a7RoCGR5czq
+
+                 DEA maps
+
               .. grid-item-card:: Get the data
                  :img-top: https://www.gifpng.com/300x200
                  :link: https://dapds00.nci.org.au/thredds/catalog/xu18/catalog.html
@@ -29,18 +35,28 @@
 
                  DEA Public
 
+              .. grid-item-card:: Web service
+                 :img-top: https://www.gifpng.com/300x200
+                 :link: https://ows.dea.ga.gov.au/
+
+                 OWS
+
+              .. grid-item-card:: Product catalogue
+                 :img-top: https://www.gifpng.com/300x200
+                 :link: http://pid.geoscience.gov.au/dataset/ga/145497
+
+                 eCat 145497
+
           .. include:: _about.md
              :parser: myst_parser.sphinx_
 
           .. rubric:: Key information
 
-          :Product ID: ga_ls8c_ard_3
+          :Product ID: ga_ls_mangrove_cover_cyear_3
           :DOI: 10.26186/116268
           :Program: Digital Earth Australia
           :Collection: Geoscience Australia Landsat Collection 3
           :Published: 15/08/2023 (Sagar Stephen)
-          :NCI project code: xu18
-          :Security classification: Unclassified
 
        .. tab-item:: Access
 
@@ -62,8 +78,7 @@
           {% endif %}
           {% if data["data"] %}
           :Get the data:
-             * `NCI - THREDDS <https://dapds00.nci.org.au/thredds/catalog/xu18/catalog.html>`_
-             * `DEA Public <https://data.dea.ga.gov.au/?prefix=baseline/ga_ls8c_ard_3/>`_
+             * `dea_coastlines <https://data.dea.ga.gov.au/?prefix=derivative/dea_coastlines/2-1-0/>`_
           {% endif %}
           {% if data["explorer"] %}
           :Explore data samples:

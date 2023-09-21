@@ -1,0 +1,24 @@
+# Details
+
+title: DEA Mangrove Canopy Cover (Landsat)
+long_title: Geoscience Australia Mangrove Canopy Cover Collection 3
+version: 3.0.0
+release: Latest
+program: Digital Earth Australia
+collection: Geoscience Australia Landsat Collection 3
+resource_type: Derivative
+published: 01/07/2021
+author: Bacon Susannah
+ecat: 116268
+doi: 10.26186/116268
+
+# Access
+
+maps:
+  - DEACoastlines: https://maps.dea.ga.gov.au/story/DEACoastlines
+
+data:
+  - dea_coastlines: https://data.dea.ga.gov.au/?prefix=derivative/dea_coastlines/2-1-0/
+
+explorer:
+  - AWS: https://explorer.prod.dea.ga.gov.au/products/geodata_coast_100k

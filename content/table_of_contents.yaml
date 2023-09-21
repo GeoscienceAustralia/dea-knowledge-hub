@@ -8,11 +8,11 @@ entries:
         - file: data/baseline-satellite-data/dea-surface-reflectance/index
           entries:
             - glob: data/baseline-satellite-data/dea-surface-reflectance/*/index
-      - caption: Inland Water
+      - caption: Land and Vegetation
         entries:
-        - file: data/inland-water/dea-water-observations/index
+        - file: data/land-and-vegetation/dea-mangroves/index
           entries:
-            - glob: data/inland-water/dea-water-observations/*/index
+            - glob: data/land-and-vegetation/dea-mangroves/*/index
       - caption: Sea, Ocean, and Coast
         entries:
         - file: data/sea-ocean-and-coast/dea-coastlines/index
