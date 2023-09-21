@@ -3,9 +3,7 @@ Home
 
 .. image:: https://docs.dea.ga.gov.au/_images/dea-logo-inline.svg
    :alt: Digital Earth Australia logo
-   :width: 550px
-   :height: 225px
-   :align: center
+   :class: logo
 
 .. rubric:: Welcome to the DEA Documentation
    :class: rubric-1

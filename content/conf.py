@@ -58,9 +58,10 @@ html_theme_options = {
     "navbar_persistent": [],
     "secondary_sidebar_items": [],
     "footer_start": [
+        "footer-links-1",
+        "footer-links-2",
         "acknowledgement-of-country",
-        "footer-links",
-        "copyright"
+        "copyright",
     ],
     "footer_end": [],
     "navigation_with_keys": False,

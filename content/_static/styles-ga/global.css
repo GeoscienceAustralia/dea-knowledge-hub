@@ -1,16 +1,25 @@
+h1 {
+    text-align: center;
+}
+
 footer.bd-footer {
     text-align: center;
+}
+
+footer.bd-footer .footer-item {
+    max-width: 896px;
+    margin: 0 auto;
 }
 
 .bd-sidebar .bd-links__title {
     display: none;
 }
 
-#ga-footer-links {
+footer.bd-footer ul {
     padding-left: 0;
 }
 
-#ga-footer-links li {
+footer.bd-footer ul li {
     display: inline;
     padding-right: 1em;
 }

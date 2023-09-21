@@ -4,6 +4,13 @@
     display: none;
 }
 
+#home .logo {
+    max-width: 550px;
+    max-height: 225px;
+    display: block;
+    margin: 0 auto;
+}
+
 #home .rubric {
     border-bottom: none;
 }
@@ -18,4 +25,11 @@
     color: var(--pst-color-primary);
     font-size: var(--pst-font-size-h6);
     font-color: var(--pst-color-text-base);
+}
+
+/* Data Product */
+
+.data-product .long-title,
+.data-product .quick-details {
+    text-align: center;
 }
