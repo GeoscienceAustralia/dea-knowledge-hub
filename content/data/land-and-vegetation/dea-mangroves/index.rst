@@ -1,4 +1,0 @@
-DEA Mangroves
-==============
-
-.. tableofcontents::

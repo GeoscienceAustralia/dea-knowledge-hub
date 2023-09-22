@@ -8,25 +8,46 @@ Home
 .. rubric:: Welcome to the DEA Documentation
    :class: rubric-1
 
-.. grid:: 2
+.. grid:: 3
 
-   .. grid-item-card:: Access the data
-      :link: data/
-      :img-top: https://www.gifpng.com/500x300
+   .. grid-item-card::
 
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      **Access the data**
+      ^^^
 
-   .. grid-item-card:: Use the DEA notebooks
-      :link: notebooks/
-      :img-top: https://www.gifpng.com/500x300
+      `Land and vegetation <example.com>`_
+
+      `Inland water <example.com>`_
+
+      `Sea, ocean and coast <data/sea-ocean-and-coast/>`_
+
+      `Baseline satellite data <example.com>`_
+
+      `Hazards <example.com>`_
+
+      `Data services <example.com>`_
+
+   .. grid-item-card::
+
+      **Use the DEA notebooks**
+      ^^^
    
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      `View the notebooks <example.com>`_
 
-   .. grid-item-card:: Getting started
-      :link: get-started/
-      :img-top: https://www.gifpng.com/500x300
+      Read our most popular articles:
 
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      `Open and run analysis on multiple polygons <example.com>`_
+
+      `Measuring crop health <example.com>`_
+
+   .. grid-item-card::
+
+      **Getting started**
+      ^^^
+
+      `Guide 1 <example.com>`_
+
+      `Guide 2 <example.com>`_
 
 .. rubric:: About the DEA
    :class: rubric-2

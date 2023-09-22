@@ -3,24 +3,16 @@ entries:
   - file: data/index
     title: Data Products
     subtrees:
-      - caption: Baseline satellite data
-        entries:
-        - file: data/baseline-satellite-data/dea-surface-reflectance/index
-          entries:
-            - glob: data/baseline-satellite-data/dea-surface-reflectance/*/index
-      - caption: Land and Vegetation
-        entries:
-        - file: data/land-and-vegetation/dea-mangroves/index
-          entries:
-            - glob: data/land-and-vegetation/dea-mangroves/*/index
       - caption: Sea, Ocean, and Coast
         entries:
-        - file: data/sea-ocean-and-coast/dea-coastlines/index
-          entries:
-            - glob: data/sea-ocean-and-coast/dea-coastlines/*/index
-        - file: data/sea-ocean-and-coast/test/index
-          entries:
-            - glob: data/sea-ocean-and-coast/test/*/index
+        - file: data/sea-ocean-and-coast/index
+          subtrees:
+            - caption: DEA Coastlines
+              entries:
+                - glob: data/sea-ocean-and-coast/dea-coastlines/*/index
+            - caption: Test
+              entries:
+                - glob: data/sea-ocean-and-coast/test/*/index
   - file: notebooks/README
     title: Notebooks
     subtrees:
@@ -35,3 +27,14 @@ entries:
           - glob: notebooks/How_to_guides/**
   - file: get-started/index
     title: Get started
+
+# - caption: Baseline satellite data
+#   entries:
+#   - file: data/baseline-satellite-data/dea-surface-reflectance/index
+#     entries:
+#       - glob: data/baseline-satellite-data/dea-surface-reflectance/*/index
+# - caption: Land and Vegetation
+#   entries:
+#   - file: data/land-and-vegetation/dea-mangroves/index
+#     entries:
+#       - glob: data/land-and-vegetation/dea-mangroves/*/index
