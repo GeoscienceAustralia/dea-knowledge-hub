@@ -1,7 +1,7 @@
 .. |dot| replace:: **·**
 
 {{ data["title"] }}
-^^^^^^^^^^^^^^^^^^^
+===================
 
 .. container:: data-product
 
