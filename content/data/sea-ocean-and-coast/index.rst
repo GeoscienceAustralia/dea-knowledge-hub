@@ -1,4 +1,4 @@
 Sea, Ocean and Coast
 ====================
 
-.. tableofcontents::
+.. include:: ../../_components/data-product-category-page.rst
