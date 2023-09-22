@@ -1,3 +1,6 @@
+{{ data["title"] }}
+===================
+
 .. image:: https://docs.dea.ga.gov.au/_images/dea-logo-inline.svg
    :alt: Digital Earth Australia logo
    :class: logo

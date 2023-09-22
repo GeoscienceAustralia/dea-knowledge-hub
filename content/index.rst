@@ -1,4 +1,2 @@
-Home
-====
-
-.. include:: ./_components/home-page.rst
+.. datatemplate:yaml:: ./_data.yaml
+   :template: home-page-v1.rst
