@@ -58,10 +58,7 @@ html_theme_options = {
     "navbar_persistent": [],
     "secondary_sidebar_items": [],
     "footer_start": [
-        "footer-links-1",
-        "footer-links-2",
-        "acknowledgement-of-country",
-        "copyright",
+        "footer"
     ],
     "footer_end": [],
     "navigation_with_keys": False,
@@ -69,3 +66,8 @@ html_theme_options = {
     "show_nav_level": 1,
     "show_prev_next": False,
 }
+
+# "footer-links-1",
+# "footer-links-2",
+# "acknowledgement-of-country",
+# "copyright",

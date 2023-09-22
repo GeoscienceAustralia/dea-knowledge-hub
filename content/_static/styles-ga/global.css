@@ -14,10 +14,6 @@ h4, h5, h6 {
     font-weight: bold;
 }
 
-footer.bd-footer {
-    text-align: center;
-}
-
 footer.bd-footer .footer-item {
     max-width: 896px;
     margin: 0 auto;
@@ -25,15 +21,6 @@ footer.bd-footer .footer-item {
 
 .bd-sidebar .bd-links__title {
     display: none;
-}
-
-footer.bd-footer ul {
-    padding-left: 0;
-}
-
-footer.bd-footer ul li {
-    display: inline;
-    padding-right: 1em;
 }
 
 .rubric {
