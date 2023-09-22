@@ -42,10 +42,15 @@ footer.bd-footer ul li {
     border-bottom: none !important;
 }
 
-.bd-content .sd-tab-set>label:hover {
+.bd-content .sd-tab-set > label:hover {
     border-top: none;
 }
 
-nav.bd-links .current > a {
+nav.bd-links .active > a {
     box-shadow: none;
+    font-weight: normal;
+}
+
+nav.bd-links a.current.reference {
+    font-weight: bold;
 }
