@@ -14,13 +14,18 @@ h4, h5, h6 {
     font-weight: bold;
 }
 
-footer.bd-footer .footer-item {
-    max-width: 1400px;
-    margin: 0 auto;
-}
-
 .bd-sidebar .bd-links__title {
     display: none;
+}
+
+footer.bd-footer .footer-items__start,
+footer.bd-footer .footer-items__end {
+    width: 50%;
+    justify-content: start;
+}
+
+footer.bd-footer .footer-items__end {
+    text-align: left;
 }
 
 footer.bd-footer ul {

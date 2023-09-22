@@ -33,3 +33,5 @@ entries:
       - caption: How-To Guides
         entries:
           - glob: notebooks/How_to_guides/**
+  - file: get-started/index
+    title: Get started

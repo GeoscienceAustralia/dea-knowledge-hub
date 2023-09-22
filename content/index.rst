@@ -22,6 +22,12 @@ Home
    
       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 
+   .. grid-item-card:: Getting started
+      :link: get-started/
+      :img-top: https://www.gifpng.com/500x300
+
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
 .. rubric:: About the DEA
    :class: rubric-2
 
