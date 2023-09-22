@@ -1,4 +1,2 @@
-Data Products
-=============
-
-.. include:: ../_components/data-products-root-page.rst
+.. datatemplate:yaml:: ./_data.yaml
+   :template: data-products-root-page-v1.rst

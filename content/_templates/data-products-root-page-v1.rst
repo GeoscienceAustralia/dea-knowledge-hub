@@ -1,3 +1,6 @@
+{{ data["title"] }}
+===================
+
 `Land and vegetation <example.com>`_
 
 `Inland water <example.com>`_
