@@ -15,12 +15,21 @@ h4, h5, h6 {
 }
 
 footer.bd-footer .footer-item {
-    max-width: 896px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
 .bd-sidebar .bd-links__title {
     display: none;
+}
+
+footer.bd-footer ul {
+    padding-left: 0;
+}
+
+footer.bd-footer ul li {
+    display: inline;
+    padding-right: 1em;
 }
 
 .rubric {
