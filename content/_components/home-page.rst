@@ -29,13 +29,15 @@
       **Use the DEA notebooks**
       ^^^
    
-      `View the notebooks <example.com>`_
+      `View all notebooks <example.com>`_
 
-      Read our most popular articles:
+      You may be interested in ...
 
-      `Open and run analysis on multiple polygons <example.com>`_
+      `How-to guides <example.com>`_
 
-      `Measuring crop health <example.com>`_
+      `Interactive apps <example.com>`_
+
+      `Real-world examples <example.com>`_
 
    .. grid-item-card::
 
