@@ -1,5 +1,9 @@
 ## Previous Versions
 
+| Version | Release date |
+| :--- | ---: |
+| [v2.0.0 DEA Coastlines]() | 22 Sep 2020 |
+
 ## Changelog
 
 ### 2022 DEA Coastlines update

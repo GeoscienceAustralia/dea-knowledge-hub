@@ -22,3 +22,11 @@ data:
 
 explorer:
   - AWS: https://explorer.prod.dea.ga.gov.au/products/geodata_coast_100k
+
+# History
+
+previous_versions:
+  - version: 2.0.0
+    name: DEA Coastlines
+    release_date: 22/9/2020
+    link: a/b/c/index
