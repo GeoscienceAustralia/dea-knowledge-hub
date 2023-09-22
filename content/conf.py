@@ -57,17 +57,10 @@ html_theme_options = {
     "navbar_end": ["search-field"],
     "navbar_persistent": [],
     "secondary_sidebar_items": [],
-    "footer_start": [
-        "footer"
-    ],
+    "footer_start": ["footer", "copyright"],
     "footer_end": [],
     "navigation_with_keys": False,
     "search_bar_text": "Search ...",
     "show_nav_level": 1,
     "show_prev_next": False,
 }
-
-# "footer-links-1",
-# "footer-links-2",
-# "acknowledgement-of-country",
-# "copyright",
