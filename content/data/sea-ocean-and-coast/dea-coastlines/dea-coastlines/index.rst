@@ -1,8 +1,3 @@
-.. datatemplate:yaml:: ./_data.yaml
+.. |page_path| replace:: ../data/sea-ocean-and-coast/dea-coastlines/dea-coastlines
 
-   .. |title| replace:: {{ data["title"] }}
-   .. |long_title| replace:: {{ data["long_title"] }}
-   .. |version| replace:: {{ data["version"] }}
-   .. |release| replace:: {{ data["release"] }}
-
-   .. include:: ../../../../_components/data-product-page.rst
+.. include:: ../../../../_components/data-product-page.rst
