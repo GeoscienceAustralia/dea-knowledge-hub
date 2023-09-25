@@ -1,5 +1,7 @@
+import datetime
+
 project = 'DEA Docs'
-copyright = '2023, Geoscience Australia'
+copyright = f'{datetime.date.today().year}, Geoscience Australia'
 author = 'Geoscience Australia'
 version = '0.1'
 
@@ -31,6 +33,7 @@ myst_enable_extensions = [
 ]
 
 external_toc_path = "table_of_contents.yaml"
+external_toc_exclude_missing = True
 
 rediraffe_redirects = "redirects.txt"
 
