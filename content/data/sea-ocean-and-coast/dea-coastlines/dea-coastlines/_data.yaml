@@ -4,10 +4,13 @@ title: DEA Coastlines
 long_title: Digital Earth Australia Coastlines
 image: https://www.dea.ga.gov.au/_nuxt/image/3d7bbc.png
 product_id: geodata_coast_100k
+
 version: 2.1.0
-is_latest_version: False
-is_deprecated: True
+is_latest_version: True
+is_deprecated: False
+latest_version_link: /example-page
 new_product_link: /example-page
+
 product_type: Derivative
 spatial_data_type: Vector
 time_span:

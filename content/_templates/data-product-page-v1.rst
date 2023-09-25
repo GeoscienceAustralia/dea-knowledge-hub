@@ -1,7 +1,7 @@
 .. |dot| replace:: **·**
 
-{{ "Deprecated: " if data["is_deprecated"] }}{{ data["title"] }}{{ ", v" + data["version"] if not data["is_latest_version"] }}
-==============================================================================================================================
+{{ "v" + data["version"] + " – " if not data["is_latest_version"] }}{{ data["title"] }}{{ " (Deprecated)" if data["is_deprecated"] }}
+=====================================================================================================================================
 
 .. container:: data-product
 
@@ -35,11 +35,11 @@
              {% endif %}
           {% endif %}
 
-          {% if data["is_latest_version"] %}
+          {% if not data["is_latest_version"] %}
           .. admonition:: A newer version exists
          
-             {% if data["new_product_link"] %}
-             See the `latest version of this data product <{{ data["new_product_link"] }}>`_.
+             {% if data["latest_version_link"] %}
+             See the `latest version of this data product <{{ data["latest_version_link"] }}>`_.
              {% else %}
              Please see the latest version of this data product.
              {% endif %}
