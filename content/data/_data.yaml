@@ -1,1 +1,26 @@
 title: Data Products
+
+items:
+  - name: Land and vegetation
+    image: https://www.gifpng.com/300x200
+    link: example.com
+
+  - name: Inland water
+    image: https://www.gifpng.com/300x200
+    link: example.com
+
+  - name: Sea, ocean, and coast
+    image: https://www.gifpng.com/300x200
+    link: sea-ocean-and-coast
+
+  - name: Baseline satellite data
+    image: https://www.gifpng.com/300x200
+    link: example.com
+
+  - name: Hazards
+    image: https://www.gifpng.com/300x200
+    link: example.com
+
+  - name: Data services
+    image: https://www.gifpng.com/300x200
+    link: example.com

@@ -1,4 +1,11 @@
 {{ data["title"] }}
 ===================
 
-.. tableofcontents::
+.. grid:: 4
+    :gutter: 2
+
+    {% for item in data["items"] %}
+    .. grid-item-card:: {{ item.get("name") }}
+       :img-top: {{ item.get("image", "https://www.gifpng.com/300x200") }}
+       :link: {{ item.get("link") }}
+    {% endfor %}
