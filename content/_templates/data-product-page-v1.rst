@@ -1,5 +1,3 @@
-.. |dot| replace:: **·**
-
 {{ "v" + data["version"] + " – " if not data["is_latest_version"] }}{{ data["title"] }}{{ " (Deprecated)" if data["is_deprecated"] }}
 =====================================================================================================================================
 
@@ -13,9 +11,11 @@
 
       .. container:: quick-info
 
-         | **Version:** {{ data["version"] }} ({{ "Latest" if data["is_latest_version"] else "Previous version" }}) |dot| **Product type:** {{ data["product_type"] }}; {{ data["spatial_data_type"] }}
+         | **Version:** {{ data["version"] }} ({{ "Latest" if data["is_latest_version"] else "Previous version" }})
+         | **Product type:** {{ data["product_type"] }}; {{ data["spatial_data_type"] }}
          | **Time span:** {{ data["time_span"]["start"] }} – {{ data["time_span"]["end"] }}
-         | **Update frequency:** {{ data["update_frequency"] }} {% if data["parent_product"] %} |dot| **Child of:** `{{ data["parent_product"]["name"] }} <{{ data["parent_product"]["link"] }}>`_{% endif %}
+         | **Update frequency:** {{ data["update_frequency"] }}
+         | **Product ID:** {{ data["product_id"] }}
 
    .. container:: header-image
 
@@ -117,17 +117,17 @@
 
           .. rubric:: Key information
 
-          {% if data["product_id"] %}
-          :Product ID: {{ data["product_id"] }}
+          {% if data["parent_product"] %}
+          :Parent product: `{{ data["parent_product"]["name"] }} <{{ data["parent_product"]["link"] }}>`_
+          {% endif %}
+          {% if data["program"] %}
+          :Program: `{{ data["program"] }} <example.com>`_
+          {% endif %}
+          {% if data["collection"] %}
+          :Collection: `{{ data["collection"] }} <example.com>`_
           {% endif %}
           {% if data["doi"] %}
           :DOI: {{ data["doi"] }}
-          {% endif %}
-          {% if data["program"] %}
-          :Program: {{ data["program"] }}
-          {% endif %}
-          {% if data["collection"] %}
-          :Collection: {{ data["collection"] }}
           {% endif %}
           {% if data["published"] and data["author"] %}
           :Published: {{ data["published"] }} ({{ data["author"] }})

@@ -3,7 +3,7 @@
 title: DEA Coastlines
 long_title: Digital Earth Australia Coastlines
 image: https://www.dea.ga.gov.au/_nuxt/image/3d7bbc.png
-product_id: geodata_coast_100k
+product_id: dea_coastlines
 
 version: 2.1.0
 is_latest_version: True
