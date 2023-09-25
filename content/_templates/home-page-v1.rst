@@ -34,11 +34,11 @@
    
       `View all notebooks <example.com>`_
 
-      You may be interested in ...
+      Popular topics ...
+
+      `Beginner's guide <example.com>`_
 
       `How-to guides <example.com>`_
-
-      `Interactive apps <example.com>`_
 
       `Real-world examples <example.com>`_
 
@@ -47,11 +47,19 @@
       **Getting started**
       ^^^
 
-      `Guide 1 <example.com>`_
+      `Get started with DEA <example.com>`_
 
-      `Guide 2 <example.com>`_
+      Popular topics ...
+
+      `DEA Maps <example.com>`_
+
+      `DEA Sandbox <example.com>`_
+
+      `National Computational Infrastructure (NCI) <example.com>`_
+
+      `Jupyter notebooks <example.com>`_
 
 .. rubric:: About the DEA
    :class: rubric-2
 
-Digital Earth Australia is an analysis platform for satellite imagery and other Earth observations. For more information, see the `DEA website <https://www.dea.ga.gov.au/>`_.
+Digital Earth Australia is an analysis platform for satellite imagery and other Earth observations. To see case studies, learning modules, developer portal, and more, `visit the DEA website <https://www.dea.ga.gov.au/>`_.
