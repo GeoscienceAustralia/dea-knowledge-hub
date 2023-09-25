@@ -27,9 +27,24 @@
     font-color: var(--pst-color-text-base);
 }
 
-/* Data Product */
+#dea-coastlines {
+    position: relative;
+}
 
-.data-product .long-title,
-.data-product .quick-details {
-    text-align: center;
+#dea-coastlines h1,
+#dea-coastlines .header-text {
+    background-color: white;
+    width: 50%;
+}
+
+#dea-coastlines .header-image img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 210px;
+    z-index: -1;
+}
+
+#dea-coastlines .subtitle {
+    font-size: var(--pst-font-size-h4);
 }

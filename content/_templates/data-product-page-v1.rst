@@ -5,15 +5,21 @@
 
 .. container:: data-product
 
-   .. container:: long-title
+   .. container:: header-text
 
-      {{ data["long_title"] }}
+      .. container:: subtitle
 
-   .. container:: quick-details
+         {{ data["long_title"] }}
 
-      | **Version:** {{ data["version"] }} ({{ data["release"] }}) |dot| **Product type:** Derivative; Vector
-      | **Time span:** 01/01/1988 – 31/12/2022 |dot| **Update frequency:** Annually
-      | {% if data["parent_product"] %}**Child of:** `{{ data["parent_product"]["name"] }} <{{ data["parent_product"]["link"] }}>`_{% endif %}
+      .. container:: quick-info
+
+         | **Version:** {{ data["version"] }} ({{ data["release"] }}) |dot| **Product type:** Derivative; Vector
+         | **Time span:** 01/01/1988 – 31/12/2022
+         | **Update frequency:** Annually {% if data["parent_product"] %} |dot| **Child of:** `{{ data["parent_product"]["name"] }} <{{ data["parent_product"]["link"] }}>`_{% endif %}
+
+   .. container:: header-image
+
+      .. image:: {{ data["image"] }}
 
    .. tab-set::
    

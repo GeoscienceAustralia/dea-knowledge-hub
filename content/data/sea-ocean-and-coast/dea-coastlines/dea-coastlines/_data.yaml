@@ -5,13 +5,7 @@ long_title: Digital Earth Australia Coastlines
 product_id: geodata_coast_100k
 version: 2.1.0
 release: Latest
-program: Digital Earth Australia
-collection: Geoscience Australia Landsat Collection 3
-resource_type: Derivative
-published: 15/08/2023
-author: Sagar Stephen
-ecat: 116268
-doi: 10.26186/116268
+image: https://www.dea.ga.gov.au/_nuxt/image/3d7bbc.png
 
 parent_product:
   name: Example product
@@ -20,6 +14,14 @@ parent_product:
 tags:
   - Geoscience_Australia_Landsat_Collection_3
   - DEA_CoastLines
+
+program: Digital Earth Australia
+collection: Geoscience Australia Landsat Collection 3
+resource_type: Derivative
+published: 15/08/2023
+author: Sagar Stephen
+ecat: 116268
+doi: 10.26186/116268
 
 # Access
 
