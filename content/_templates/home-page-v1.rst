@@ -8,7 +8,7 @@
 .. rubric:: Welcome to the DEA Documentation
    :class: rubric-1
 
-.. grid:: 3
+.. grid:: 2
 
    .. grid-item-card::
 
@@ -58,6 +58,13 @@
       `National Computational Infrastructure (NCI) <example.com>`_
 
       `Jupyter notebooks <example.com>`_
+
+   .. grid-item-card::
+
+      **Our services**
+      ^^^
+
+      `View our service catalogue <example.com>`_
 
 .. rubric:: About the DEA
    :class: rubric-2
