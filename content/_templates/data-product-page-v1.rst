@@ -78,6 +78,10 @@
           :Published by: {{ data["author"] }}
           {% endif %}
 
+          -----
+
+          .. tags:: {{ data["tags"]|join(', ') }}
+
        .. tab-item:: Access
 
           .. image:: https://www.gifpng.com/896x350

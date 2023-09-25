@@ -1,4 +1,4 @@
-# Details
+# Overview
 
 title: DEA Coastlines
 long_title: Digital Earth Australia Coastlines
@@ -12,6 +12,10 @@ published: 15/08/2023
 author: Sagar Stephen
 ecat: 116268
 doi: 10.26186/116268
+
+tags:
+  - Geoscience_Australia_Landsat_Collection_3
+  - DEA_CoastLines
 
 # Access
 
