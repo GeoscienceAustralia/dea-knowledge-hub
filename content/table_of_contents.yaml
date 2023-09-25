@@ -12,9 +12,6 @@ entries:
           - caption: DEA Coastlines
             entries:
               - glob: data/sea-ocean-and-coast/dea-coastlines/*/index
-          - caption: Test
-            entries:
-              - glob: data/sea-ocean-and-coast/test/*/index
 
   - file: notebooks/README
     title: Notebooks

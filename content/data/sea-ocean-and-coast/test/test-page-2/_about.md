@@ -1,5 +1,0 @@
-## About
-
-A groundbreaking data product, DEA Coastlines combines satellite data with tidal modelling to map the typical location of the Australian coastline at mean sea level for every year since 1988. Resulting shorelines and detailed rates of change show how beaches, sandspits, river mouths, and tidal flats have grown and eroded over time.
-
-Australia has a highly dynamic coastline of over 30,000 km, with over 85% of its population living within 50 km of the coast. This coastline is subject to a wide range of pressures, including extreme weather and climate, sea level rise and human development. Understanding how the coastline responds to these pressures is crucial to managing this region, from social, environmental and economic perspectives. 
