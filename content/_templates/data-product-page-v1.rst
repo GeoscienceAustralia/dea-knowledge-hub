@@ -21,36 +21,39 @@
           .. grid:: 4
               :gutter: 2
 
+              {% for item in data["maps"] %}
+
               .. grid-item-card:: See it on a map
-                 :img-top: https://www.gifpng.com/300x200
-                 :link: https://maps.dea.ga.gov.au/story/DEACoastlines
+                 :img-top: {{ item.get("image", "https://www.gifpng.com/300x200") }}
+                 :link: {{ item.get("link") }}
 
-                 DEACoastlines
+                 {{ item.get("name", "Map") }}
+              {% endfor %}
 
+              {% for item in data["data"] %}
               .. grid-item-card:: Get the data
-                 :img-top: https://www.gifpng.com/300x200
-                 :link: https://data.dea.ga.gov.au/?prefix=derivative/dea_coastlines/2-1-0/
+                 :img-top: {{ item.get("image", "https://www.gifpng.com/300x200") }}
+                 :link: {{ item.get("link") }}
 
-                 dea_coastlines
-   
+                 {{ item.get("name", "Data") }}
+              {% endfor %}
+
+              {% for item in data["explorer"] %}
               .. grid-item-card:: Explore data samples
-                 :img-top: https://www.gifpng.com/300x200
-                 :link: https://explorer.prod.dea.ga.gov.au/products/geodata_coast_100k
-              
-                 AWS
+                 :img-top: {{ item.get("image", "https://www.gifpng.com/300x200") }}
+                 :link: {{ item.get("link") }}
 
-              .. grid-item-card:: Code example
-                 :img-top: https://www.gifpng.com/300x200
-                 :link: https://docs.dea.ga.gov.au/notebooks/DEA_products/DEA_Coastlines.html
+                 {{ item.get("name", "Data Explorer") }}
+              {% endfor %}
 
-                 Jupyter notebook
-              
-              .. grid-item-card:: Code example
-                 :img-top: https://www.gifpng.com/300x200
-                 :link: https://github.com/GeoscienceAustralia/dea-coastlines
-              
-                 GitHub repository
+              {% for item in data["code_samples"] %}
+              .. grid-item-card:: Code sample
+                 :img-top: {{ item.get("image", "https://www.gifpng.com/300x200") }}
+                 :link: {{ item.get("link") }}
 
+                 {{ item.get("name", "Code") }}
+              {% endfor %}
+   
           .. include:: _about.md
              :parser: myst_parser.sphinx_
 

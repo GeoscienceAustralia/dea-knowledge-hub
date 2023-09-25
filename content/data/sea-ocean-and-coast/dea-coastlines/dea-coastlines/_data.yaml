@@ -15,13 +15,23 @@ doi: 10.26186/116268
 # Access
 
 maps:
-  - DEACoastlines: https://maps.dea.ga.gov.au/story/DEACoastlines
+  - name: DEACoastlines
+    image: https://www.gifpng.com/300x200
+    link: https://maps.dea.ga.gov.au/story/DEACoastlines
 
 data:
-  - dea_coastlines: https://data.dea.ga.gov.au/?prefix=derivative/dea_coastlines/2-1-0/
+  - name: dea_coastlines
+    link: https://data.dea.ga.gov.au/?prefix=derivative/dea_coastlines/2-1-0/
 
 explorer:
-  - AWS: https://explorer.prod.dea.ga.gov.au/products/geodata_coast_100k
+  - name: AWS
+    link: https://explorer.prod.dea.ga.gov.au/products/geodata_coast_100k
+
+code_samples:
+  - name: Jupyter notebook
+    link: https://docs.dea.ga.gov.au/notebooks/DEA_products/DEA_Coastlines.html
+  - name: GitHub repository
+    link: https://github.com/GeoscienceAustralia/dea-coastlines
 
 # History
 
