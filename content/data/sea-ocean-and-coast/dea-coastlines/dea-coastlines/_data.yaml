@@ -13,6 +13,10 @@ author: Sagar Stephen
 ecat: 116268
 doi: 10.26186/116268
 
+parent_product:
+  name: Example product
+  link: example.com
+
 tags:
   - Geoscience_Australia_Landsat_Collection_3
   - DEA_CoastLines

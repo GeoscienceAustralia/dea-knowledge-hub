@@ -77,8 +77,11 @@
           {% elif data["author"] %}
           :Published by: {{ data["author"] }}
           {% endif %}
+          {% if data["parent_product"] %}
+          :Parent product: `{{ data["parent_product"]["name"] }} <{{ data["parent_product"]["link"] }}>`_
+          {% endif %}
 
-          -----
+          ----
 
           .. tags:: {{ data["tags"]|join(', ') }}
 
