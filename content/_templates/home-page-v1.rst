@@ -55,30 +55,3 @@
    :class: rubric-2
 
 Digital Earth Australia is an analysis platform for satellite imagery and other Earth observations. For more information, see the `DEA website <https://www.dea.ga.gov.au/>`_.
-
-.. grid:: 3
-
-    .. grid-item::
-       :columns: 3
-
-       **Our websites**
-
-       -  `Digital Earth Australia <https://www.dea.ga.gov.au/>`__
-       -  `DEA Maps <https://maps.dea.ga.gov.au/>`__
-       -  `DEA Explorer <https://explorer.prod.dea.ga.gov.au/>`__
-       -  `Open Data Cube <https://www.opendatacube.org/>`__
-
-    .. grid-item::
-       :columns: 3
-
-       **Page lists**
-
-       -  `Tags </tags/tagsindex/>`__
-       -  `Deprecated products <>`__
-
-    .. grid-item::
-       :columns: 6
-
-       **Acknowledgement of country**
-
-       We acknowledge the Traditional Owners of the country where we work throughout Australia. We acknowledge Aboriginal and Torres Strait Islander people’s continuing connection to land, sea and community. We pay our respects to their elders past and present and emerging.
