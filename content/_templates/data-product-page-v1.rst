@@ -22,7 +22,6 @@
               :gutter: 2
 
               {% for item in data["maps"] %}
-
               .. grid-item-card:: See it on a map
                  :img-top: {{ item.get("image", "https://www.gifpng.com/300x200") }}
                  :link: {{ item.get("link") }}
@@ -137,6 +136,24 @@
              :parser: myst_parser.sphinx_
 
        .. tab-item:: History
+
+          .. rubric:: Previous versions
+
+          {% if data["previous_versions"] %}
+
+          View previous versions of this data product.
+
+          .. list-table::
+
+             {% for item in data["previous_versions"] %}
+             * - `v{{ item.get("version") }}, {{ item.get("name") }} <{{ item.get("link") }}>`_
+               - {{ item.get("release_date") }}
+             {% endfor %}
+          {% else %}
+          None
+          {% endif %}
+
+          .. rubric: Changelog
        
           .. include:: _history.md
              :parser: myst_parser.sphinx_
