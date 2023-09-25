@@ -13,9 +13,9 @@
 
       .. container:: quick-info
 
-         | **Version:** {{ data["version"] }} ({{ data["release"] }}) |dot| **Product type:** Derivative; Vector
-         | **Time span:** 01/01/1988 – 31/12/2022
-         | **Update frequency:** Annually {% if data["parent_product"] %} |dot| **Child of:** `{{ data["parent_product"]["name"] }} <{{ data["parent_product"]["link"] }}>`_{% endif %}
+         | **Version:** {{ data["version"] }} ({{ data["release"] }}) |dot| **Product type:** {{ data["product_type"] }}; {{ data["spatial_data_type"] }}
+         | **Time span:** {{ data["time_span"]["start"] }} – {{ data["time_span"]["end"] }}
+         | **Update frequency:** {{ data["update_frequency"] }} {% if data["parent_product"] %} |dot| **Child of:** `{{ data["parent_product"]["name"] }} <{{ data["parent_product"]["link"] }}>`_{% endif %}
 
    .. container:: header-image
 
