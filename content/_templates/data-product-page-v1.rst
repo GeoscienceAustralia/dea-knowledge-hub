@@ -13,6 +13,7 @@
 
       | **Version:** {{ data["version"] }} ({{ data["release"] }}) |dot| **Product type:** Derivative; Vector
       | **Time span:** 01/01/1988 – 31/12/2022 |dot| **Update frequency:** Annually
+      | {% if data["parent_product"] %}**Child of:** `{{ data["parent_product"]["name"] }} <{{ data["parent_product"]["link"] }}>`_{% endif %}
 
    .. tab-set::
    
@@ -76,9 +77,6 @@
           :Published: {{ data["published"] }}
           {% elif data["author"] %}
           :Published by: {{ data["author"] }}
-          {% endif %}
-          {% if data["parent_product"] %}
-          :Parent product: `{{ data["parent_product"]["name"] }} <{{ data["parent_product"]["link"] }}>`_
           {% endif %}
 
           ----
