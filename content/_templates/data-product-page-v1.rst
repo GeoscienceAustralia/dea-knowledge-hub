@@ -1,7 +1,7 @@
 .. |dot| replace:: **·**
 
-{{ data["title"] }}
-===================
+{{ "Deprecated: " if data["is_deprecated"] }}{{ data["title"] }}{{ ", v" + data["version"] if not data["is_latest_version"] }}
+==============================================================================================================================
 
 .. container:: data-product
 
@@ -13,7 +13,7 @@
 
       .. container:: quick-info
 
-         | **Version:** {{ data["version"] }} ({{ data["release"] }}) |dot| **Product type:** {{ data["product_type"] }}; {{ data["spatial_data_type"] }}
+         | **Version:** {{ data["version"] }} ({{ "Latest" if data["is_latest_version"] else "Previous version" }}) |dot| **Product type:** {{ data["product_type"] }}; {{ data["spatial_data_type"] }}
          | **Time span:** {{ data["time_span"]["start"] }} – {{ data["time_span"]["end"] }}
          | **Update frequency:** {{ data["update_frequency"] }} {% if data["parent_product"] %} |dot| **Child of:** `{{ data["parent_product"]["name"] }} <{{ data["parent_product"]["link"] }}>`_{% endif %}
 
@@ -24,6 +24,26 @@
    .. tab-set::
    
        .. tab-item:: Overview
+
+          {% if data["is_deprecated"] %}
+          .. admonition:: This product is deprecated
+
+             {% if data["new_product_link"] %}
+             It is no longer active or in use. See the `new data product <{{ data["new_product_link"] }}>`_.
+             {% else %}
+             It is no longer active or in use.
+             {% endif %}
+          {% endif %}
+
+          {% if data["is_latest_version"] %}
+          .. admonition:: A newer version exists
+         
+             {% if data["new_product_link"] %}
+             See the `latest version of this data product <{{ data["new_product_link"] }}>`_.
+             {% else %}
+             Please see the latest version of this data product.
+             {% endif %}
+          {% endif %}
 
           .. grid:: 4
               :gutter: 2
