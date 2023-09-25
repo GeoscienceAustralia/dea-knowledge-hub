@@ -150,7 +150,7 @@
                - {{ item.get("release_date") }}
              {% endfor %}
           {% else %}
-          None
+          No previous versions available.
           {% endif %}
 
           .. rubric: Changelog
