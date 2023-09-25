@@ -1,5 +1,13 @@
-{{ "v" + data["version"] + " – " if not data["is_latest_version"] }}{{ data["title"] }}{{ " (Deprecated)" if data["is_deprecated"] }}
-=====================================================================================================================================
+{% if not data["is_latest_version"] %}
+{{ "v" + data["version"] + ":" }} {{ data["title"] }}
+=====================================================
+{% elif data["is_deprecated"] %}
+{{ "Deprecated:" }} {{ data["title"] }}
+=====================================================
+{% else %}
+{{ data["title"] }}
+=====================================================
+{% endif %}
 
 .. container:: data-product
 
@@ -11,7 +19,7 @@
 
       .. container:: quick-info
 
-         | **Version:** {{ data["version"] }} ({{ "Latest" if data["is_latest_version"] else "Previous version" }})
+         | **Version:** {{ data["version"] }} ({{ "Latest" if data["is_latest_version"] else "Old version" }})
          | **Product type:** {{ data["product_type"] }}; {{ data["spatial_data_type"] }}
          | **Time span:** {{ data["time_span"]["start"] }} – {{ data["time_span"]["end"] }}
          | **Update frequency:** {{ data["update_frequency"] }}
@@ -25,24 +33,14 @@
    
        .. tab-item:: Overview
 
-          {% if data["is_deprecated"] %}
-          .. admonition:: This product is deprecated
-
-             {% if data["new_product_link"] %}
-             It is no longer active or in use. See the `new data product <{{ data["new_product_link"] }}>`_.
-             {% else %}
-             It is no longer active or in use.
-             {% endif %}
-          {% endif %}
-
           {% if not data["is_latest_version"] %}
-          .. admonition:: A newer version exists
-         
-             {% if data["latest_version_link"] %}
-             See the `latest version of this data product <{{ data["latest_version_link"] }}>`_.
-             {% else %}
-             Please see the latest version of this data product.
-             {% endif %}
+          .. admonition:: This is an old version (v{{ data["version"] }})
+          
+             See the `latest version of the product <{{ data["latest_version_link"] }}>`_.
+          {% elif data["is_deprecated"] %}
+          .. admonition:: This product is deprecated
+          
+             It is no longer active or in use.
           {% endif %}
 
           .. grid:: 4
