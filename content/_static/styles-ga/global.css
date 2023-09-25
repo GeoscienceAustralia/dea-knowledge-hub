@@ -14,6 +14,10 @@ h4, h5, h6 {
     display: none;
 }
 
+footer.bd-footer {
+    background-color: var(--sd-color-primary-bg);
+}
+
 footer.bd-footer .footer-items__start,
 footer.bd-footer .footer-items__end {
     width: 50%;
@@ -47,4 +51,8 @@ nav.bd-links .active > a {
 
 nav.bd-links a.current.reference {
     font-weight: bold;
+}
+
+input[type="search"].form-control {
+    border: none;
 }
