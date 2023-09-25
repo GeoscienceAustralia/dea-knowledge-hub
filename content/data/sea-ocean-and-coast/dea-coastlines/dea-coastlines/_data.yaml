@@ -38,6 +38,10 @@ explorer:
   - name: AWS
     link: https://explorer.prod.dea.ga.gov.au/products/geodata_coast_100k
 
+sandbox:
+  - name: AWS
+    link: https://explorer.prod.dea.ga.gov.au/products/geodata_coast_100k
+
 code_samples:
   - name: Jupyter notebook
     link: https://docs.dea.ga.gov.au/notebooks/DEA_products/DEA_Coastlines.html
@@ -51,3 +55,4 @@ previous_versions:
     name: DEA Coastlines
     release_date: 22 Sep 2020
     link: a/b/c/index
+

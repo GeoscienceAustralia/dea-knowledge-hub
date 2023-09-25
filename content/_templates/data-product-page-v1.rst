@@ -29,7 +29,7 @@
               :gutter: 2
 
               {% for item in data["maps"] %}
-              .. grid-item-card:: See it on a map
+              .. grid-item-card:: See the map
                  :img-top: {{ item.get("image", "https://www.gifpng.com/300x200") }}
                  :link: {{ item.get("link") }}
 
