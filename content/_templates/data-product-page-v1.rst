@@ -123,91 +123,90 @@
 
        .. tab-item:: Access
 
-          .. .. image:: https://www.gifpng.com/896x350
-          ..    :alt: Map of the schema / spatial extent
-          ..
-          .. .. dropdown:: Schema / Spatial Extent data
-          ..
-          ..    =========================== =========================================
-          ..    Update frequency            annually
-          ..    Temporal extent             1988-01-01 00:00:00 – 2022-12-31 11:59:59
-          ..    Min. longitude              -4846590.00
-          ..    Max. longitude              -1887450.00
-          ..    Min. latitude               -1015650.00
-          ..    Max. latitude               2121650.00
-          ..    Coordinate reference system Australian Albers / GDA94 (EPSG: 3577)
-          ..    Cell size X                 30.00
-          ..    Cell size Y                 30.00
-          ..    =========================== =========================================
-          ..
-
           .. rubric:: Access the data
 
-          {% if data["maps"] %}
-          :See the map:
-          {% for item in data["maps"] %}
-             * `{{ item.get("name", "Map") }} <{{ item.get("link") }}>`_
-          {% endfor %}
-          {% endif %}
+          .. list-table::
 
-          {% if data["data"] %}
-          :Get the data:
-          {% for item in data["data"] %}
-             * `{{ item.get("name", "Data") }} <{{ item.get("link") }}>`_
-          {% endfor %}
-          {% endif %}
+             {% if data["maps"] %}
+             * - **See the map**
+               - {% for item in data["maps"] %}
+                 * `{{ item.get("name", "Map") }} <{{ item.get("link") }}>`_
+                 {% endfor %}
+               - Learn how to `use DEA Maps <example.com>`_.
+             {% endif %}
 
-          {% if data["stac"] %}
-          :Get via STAC:
-          {% for item in data["stac"] %}
-             * `{{ item.get("name", "STAC") }} <{{ item.get("link") }}>`_
-          {% endfor %}
-          {% endif %}
+             {% if data["data"] %}
+             * - **Get the data**
+               - {% for item in data["data"] %}
+                 * `{{ item.get("name", "Data") }} <{{ item.get("link") }}>`_
+                 {% endfor %}
+               -
+             {% endif %}
 
-          {% if data["explorer"] %}
-          :Explore data samples:
-          {% for item in data["explorer"] %}
-             * `{{ item.get("name", "Data Explorer") }} <{{ item.get("link") }}>`_
-          {% endfor %}
-          {% endif %}
+             {% if data["stac"] %}
+             * - **Get via STAC**
+               - {% for item in data["stac"] %}
+                 * `{{ item.get("name", "STAC") }} <{{ item.get("link") }}>`_
+                 {% endfor %}
+               - Learn how to `access and stream the data using STAC <example.com>`_.
+             {% endif %}
 
-          {% if data["sandbox"] %}
-          :Play with the sandbox:
-          {% for item in data["sandbox"] %}
-             * `{{ item.get("name", "Sandbox") }} <{{ item.get("link") }}>`_
-          {% endfor %}
-          {% endif %}
+             {% if data["explorer"] %}
+             * - **Explore data samples**
+               - {% for item in data["explorer"] %}
+                 * `{{ item.get("name", "Data Explorer") }} <{{ item.get("link") }}>`_
+                 {% endfor %}
+               - Learn how to `access the data via AWS <example.com>`_.
+             {% endif %}
 
-          {% if data["ecat"] %}
-          :Product catalogue:
-          {% for item in data["ecat"] %}
-             * `ecat {{ item.get("id") }} <https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/{{ item.get("id") }}>`_
-          {% endfor %}
-          {% endif %}
+             {% if data["sandbox"] %}
+             * - **Play with the sandbox**
+               - {% for item in data["sandbox"] %}
+                 * `{{ item.get("name", "Sandbox") }} <{{ item.get("link") }}>`_
+                 {% endfor %}
+               -
+             {% endif %}
 
-          {% if data["web_services"] %}
-          :Web service:
-          {% for item in data["web_services"] %}
-             * `{{ item.get("name", "Web service") }} <{{ item.get("link") }}>`_
-          {% endfor %}
-          {% endif %}
+             {% if data["ecat"] %}
+             * - **Product catalogue**
+               - {% for item in data["ecat"] %}
+                 * `ecat {{ item.get("id") }} <https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/{{ item.get("id") }}>`_
+                 {% endfor %}
+               -
+             {% endif %}
 
-          {% if data["code_samples"] %}
-          :Code sample:
-          {% for item in data["code_samples"] %}
-             * `{{ item.get("name", "Code") }} <{{ item.get("link") }}>`_
-          {% endfor %}
-          {% endif %}
+             {% if data["web_services"] %}
+             * - **Web service**
+               - {% for item in data["web_services"] %}
+                 * `{{ item.get("name", "Web service") }} <{{ item.get("link") }}>`_
+                 {% endfor %}
+               - Learn how to `connect to DEA's web services <example.com>`_.
+             {% endif %}
 
-          .. dropdown:: How do I access the data?
+             {% if data["code_samples"] %}
+             * - **Code sample**
+               - {% for item in data["code_samples"] %}
+                 * `{{ item.get("name", "Code") }} <{{ item.get("link") }}>`_
+                 {% endfor %}
+               -
+             {% endif %}
 
-              Instructions for accessing the data via AWS `Frequently Asked Questions — Digital Earth Australia 1.0.0 documentation <ga.gov.au>`_
+          .. image:: https://www.gifpng.com/896x350
+             :alt: Map of the schema / spatial extent
 
-              For instructions on Downloading and streaming data using STAC, see this notebook guide `Downloading and streaming data using STAC metadata — Digital Earth Australia 1.0.0 documentation <ga.gov.au>`_
+          .. dropdown:: Schema / Spatial Extent data
 
-              For information on how to use DEA Maps and download simple datasets, see the user guide here. `DEA Maps — Digital Earth Australia 1.0.0 documentation <ga.gov.au>`_
-
-              For instructions on connecting to DEA's web services, see the user guide here. `DEA Web Services — Digital Earth Australia 1.0.0 documentation <ga.gov.au>`_
+             =========================== =========================================
+             Update frequency            annually
+             Temporal extent             1988-01-01 00:00:00 – 2022-12-31 11:59:59
+             Min. longitude              -4846590.00
+             Max. longitude              -1887450.00
+             Min. latitude               -1015650.00
+             Max. latitude               2121650.00
+             Coordinate reference system Australian Albers / GDA94 (EPSG: 3577)
+             Cell size X                 30.00
+             Cell size Y                 30.00
+             =========================== =========================================
 
           .. include:: _access.md
              :parser: myst_parser.sphinx_
