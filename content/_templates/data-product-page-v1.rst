@@ -152,7 +152,7 @@
                - {% for item in data["maps"] %}
                  * `{{ item.get("name", "Map") }} <{{ item.get("link") }}>`_
                  {% endfor %}
-               - Learn how to `use DEA Maps <example.com>`_.
+               - Learn how to `use DEA Maps </setup/dea_maps.html>`_.
              {% endif %}
 
              {% if data["data"] %}
@@ -168,7 +168,7 @@
                - {% for item in data["stac"] %}
                  * `{{ item.get("name", "STAC") }} <{{ item.get("link") }}>`_
                  {% endfor %}
-               - Learn how to `access and stream the data using STAC <example.com>`_.
+               - Learn how to `access and stream the data using STAC </notebooks/How_to_guides/Downloading_data_with_STAC.html>`_.
              {% endif %}
 
              {% if data["explorer"] %}
@@ -176,7 +176,7 @@
                - {% for item in data["explorer"] %}
                  * `{{ item.get("name", "Data Explorer") }} <{{ item.get("link") }}>`_
                  {% endfor %}
-               - Learn how to `access the data via AWS <example.com>`_.
+               - Learn how to `access the data via AWS </about/faq.html#how-do-i-download-data-from-dea>`_.
              {% endif %}
 
              {% if data["sandbox"] %}
@@ -200,7 +200,7 @@
                - {% for item in data["web_services"] %}
                  * `{{ item.get("name", "Web service") }} <{{ item.get("link") }}>`_
                  {% endfor %}
-               - Learn how to `connect to DEA's web services <example.com>`_.
+               - Learn how to `connect to DEA's web services </setup/gis/README.html>`_.
              {% endif %}
 
              {% if data["code_samples"] %}
