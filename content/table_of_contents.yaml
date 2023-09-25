@@ -3,6 +3,8 @@ entries:
 
   - title: Data Products
     file: data/index
+    options:
+      maxdepth: 1
     entries:
       - title: Sea, Ocean, and Coast
         file: data/sea-ocean-and-coast/index
