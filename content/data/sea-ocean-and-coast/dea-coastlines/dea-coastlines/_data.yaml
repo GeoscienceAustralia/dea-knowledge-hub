@@ -2,6 +2,7 @@
 
 title: DEA Coastlines
 long_title: Digital Earth Australia Coastlines
+product_id: geodata_coast_100k
 version: 2.1.0
 release: Latest
 program: Digital Earth Australia

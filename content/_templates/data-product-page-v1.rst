@@ -59,11 +59,25 @@
 
           .. rubric:: Key information
 
-          :Product ID: geodata_coast_100k
-          :DOI: 10.26186/116268
-          :Program: Digital Earth Australia
-          :Collection: Geoscience Australia Landsat Collection 3
-          :Published: 15/08/2023 (Sagar Stephen)
+          {% if data["product_id"] %}
+          :Product ID: {{ data["product_id"] }}
+          {% endif %}
+          {% if data["doi"] %}
+          :DOI: {{ data["doi"] }}
+          {% endif %}
+          {% if data["program"] %}
+          :Program: {{ data["program"] }}
+          {% endif %}
+          {% if data["collection"] %}
+          :Collection: {{ data["collection"] }}
+          {% endif %}
+          {% if data["published"] and data["author"] %}
+          :Published: {{ data["published"] }} ({{ data["author"] }})
+          {% elif data["published"] %}
+          :Published: {{ data["published"] }}
+          {% elif data["author"] %}
+          :Published by: {{ data["author"] }}
+          {% endif %}
 
        .. tab-item:: Access
 
