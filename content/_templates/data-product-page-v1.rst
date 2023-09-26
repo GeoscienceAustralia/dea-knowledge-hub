@@ -43,7 +43,7 @@
              :name: notifications
 
              {% if not data["is_latest_version"] %}
-             .. ADMONITION:: v{{ data["version"] }} is an old version
+             .. ADMONITION:: This is an old version (v{{ data["version"] }})
              
                 See the `latest version of the product <{{ data["latest_version_link"] }}>`_.
              {% endif %}
@@ -127,8 +127,8 @@
           .. rubric:: Key information
              :name: key-information
 
-          {% if data["parent_product"] %}
-          :Parent product: `{{ data["parent_product"]["name"] }} <{{ data["parent_product"]["link"] }}>`_
+          {% if data["parent_products"] %}
+          :Parent product(s): `{{ data["parent_products"]["name"] }} <{{ data["parent_products"]["link"] }}>`_
           {% endif %}
           {% if data["collection"] %}
           :Collection: `{{ data["collection"] }} <example.com>`_
