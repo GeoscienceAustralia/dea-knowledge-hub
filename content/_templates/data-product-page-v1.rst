@@ -1,4 +1,4 @@
-{% if data["is_old_version"] %}
+{% if not data["is_latest_version"] %}
 {{ "v" + data["version"] + ":" }} {{ data["title"] }} (Old version)
 ===================================================================
 {% else %}
@@ -16,7 +16,7 @@
 
       .. container:: quick-info
 
-         | {% if data["is_old_version"] %}**Version:** {{ data["version"] }} (`See latest version <{{ data["latest_version_link"] }}>`_){% else %}**Version:** {{ data["version"] }} (Latest){% endif %}
+         | {% if not data["is_latest_version"] %}**Version:** {{ data["version"] }} (`See latest version <{{ data["latest_version_link"] }}>`_){% else %}**Version:** {{ data["version"] }} (Latest){% endif %}
          | **Product type:** {{ data["product_type"] }}; {{ data["spatial_data_type"] }}
          | **Time span:** {{ data["time_span"]["start"] }} – {{ data["time_span"]["end"] }}
          | **Update frequency:** {{ data["update_frequency"] }}
@@ -30,7 +30,7 @@
    
        .. tab-item:: Overview
 
-          {% if data["is_old_version"] %}
+          {% if not data["is_latest_version"] %}
           .. ADMONITION:: v{{ data["version"] }} is an old version
           
              See the `latest version of the product <{{ data["latest_version_link"] }}>`_.
