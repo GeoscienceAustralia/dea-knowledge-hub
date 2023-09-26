@@ -233,7 +233,7 @@
           .. list-table::
 
              {% for item in data["previous_versions"] %}
-             * - `v{{ item.get("version") }} – {{ item.get("name") }} <{{ item.get("link") }}>`_
+             * - `v{{ item.get("version") }}: {{ item.get("name") }} <{{ item.get("link") }}>`_
                - {{ item.get("release_date") }}
              {% endfor %}
           {% else %}
