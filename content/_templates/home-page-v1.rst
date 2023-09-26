@@ -40,7 +40,7 @@
 
    .. grid-item-card::
 
-      **Our agency**
+      **Our program**
       ^^^
 
       `View our service catalogue <example.com>`_

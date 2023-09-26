@@ -1,12 +1,9 @@
-{% if not data["is_latest_version"] %}
-{{ "v" + data["version"] + ":" }} {{ data["title"] }}
-=====================================================
-{% elif data["is_deprecated"] %}
-{{ "Deprecated:" }} {{ data["title"] }}
-=====================================================
+{% if data["is_old_version"] %}
+{{ "v" + data["version"] + ":" }} {{ data["title"] }} (Old version)
+===================================================================
 {% else %}
 {{ data["title"] }}
-=====================================================
+===================================================================
 {% endif %}
 
 .. container:: data-product
@@ -19,7 +16,7 @@
 
       .. container:: quick-info
 
-         | **Version:** {{ data["version"] }} ({{ "Latest" if data["is_latest_version"] else "Old version" }})
+         | {% if data["is_old_version"] %}**Version:** {{ data["version"] }} (`See latest version <{{ data["latest_version_link"] }}>`_){% else %}**Version:** {{ data["version"] }} (Latest){% endif %}
          | **Product type:** {{ data["product_type"] }}; {{ data["spatial_data_type"] }}
          | **Time span:** {{ data["time_span"]["start"] }} – {{ data["time_span"]["end"] }}
          | **Update frequency:** {{ data["update_frequency"] }}
@@ -33,14 +30,10 @@
    
        .. tab-item:: Overview
 
-          {% if not data["is_latest_version"] %}
-          .. admonition:: This is an old version (v{{ data["version"] }})
+          {% if data["is_old_version"] %}
+          .. admonition:: v{{ data["version"] }} is an old version
           
              See the `latest version of the product <{{ data["latest_version_link"] }}>`_.
-          {% elif data["is_deprecated"] %}
-          .. admonition:: This product is deprecated
-          
-             It is no longer active or in use.
           {% endif %}
 
           .. grid:: 4
@@ -117,9 +110,6 @@
 
           {% if data["parent_product"] %}
           :Parent product: `{{ data["parent_product"]["name"] }} <{{ data["parent_product"]["link"] }}>`_
-          {% endif %}
-          {% if data["program"] %}
-          :Program: `{{ data["program"] }} <example.com>`_
           {% endif %}
           {% if data["collection"] %}
           :Collection: `{{ data["collection"] }} <example.com>`_

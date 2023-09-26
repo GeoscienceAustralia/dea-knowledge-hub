@@ -6,9 +6,7 @@ image: https://www.dea.ga.gov.au/_nuxt/image/3d7bbc.png
 product_id: dea_coastlines
 
 version: 2.1.0
-status: OLD_VERSION # DEPRECATED, ACTIVE
-is_latest_version: True
-is_deprecated: False
+is_old_version: True
 latest_version_link: /example-page
 
 product_type: Derivative
@@ -26,7 +24,6 @@ tags:
   - Geoscience_Australia_Landsat_Collection_3
   - DEA_CoastLines
 
-program: Digital Earth Australia
 collection: Geoscience Australia Landsat Collection 3
 resource_type: Derivative
 published: 15 Aug 2023
