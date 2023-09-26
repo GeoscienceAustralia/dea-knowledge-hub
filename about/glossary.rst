@@ -74,7 +74,7 @@ Glossary
    Australian Research Environment
    ARE
       The `Australian Research Environment <https://are.nci.org.au/>`_ is a tool for
-      using the data and software available on the :term:`NCI`. It is a replacement 
+      using the data and software available on the :term:`NCI`. It is a replacement for
       the old :term:`VDI` system.
 
    Azimuth
@@ -159,93 +159,193 @@ Glossary
 
       For more information, see `Copernicus Programme. <https://www.copernicus.eu/en>`_
 
+   Dataset
+      A related set of files composed of separate elements that can be manipulated as a unit.
+      It is an instantiation of a :term:`product`.
+
    Digital Earth Australia
    DEA
-      A Program of Geoscience Australia that uses spatial data and images 
+      A Program of :term:`Geoscience Australia` that uses spatial data and images
       recorded by satellites orbiting our planet to detect physical changes 
-      across Australia in unprecedented detail. DEA is the Australian implementation of
-      the Open Data Cube. For more information see https://www.dea.ga.gov.au/.
+      across Australia. DEA prepares these vast volumes of Earth observation data and makes it available
+      to governments and industry for easy use. DEA is the Australian implementation of
+      the :term:`Open Data Cube`.
+
+      For more information, see `the DEA website. <https://www.dea.ga.gov.au/>`_
       
    DEA Notebooks
-      `Digital Earth Australia Notebooks <https://github.com/GeoscienceAustralia/dea-notebooks>`_, an open-source repository containing 
-      Jupyter Notebooks, tools and workflows for geospatial analysis with Open 
-      Data Cube and xarray. See 
+      An open-source repository containing :term:`Jupyter notebooks`, tools and workflows for geospatial
+      analysis with :term:`Open Data Cube` and :term:`xarray`.
+
+      For more information, see `the GitHub repository. <https://github.com/GeoscienceAustralia/dea-notebooks>`_
       
    DEA Sandbox
-      Digital Earth Australia Sandbox, a learning and analysis environment for 
-      getting started with DEA and the Open Data Cube. It includes sample data 
-      and Jupyter notebooks that demonstrate the capability of the Open Data Cube. 
-      For more information see https://github.com/GeoscienceAustralia/dea-notebooks/wiki.
-      
-   DE Africa
-   Digital Earth Africa
-      `Digital Earth Africa <https://www.digitalearthafrica.org/>`_. A sister project to
-      Digital Earth Australia but for the African Continent. Originally run out of Geoscience
-      Australia, but transitioning to ownership within African Nations.
+      The Digital Earth Australia Sandbox is a learning and analysis environment for
+      getting started with DEA and the :term:`Open Data Cube`. It includes sample data
+      and :term:`Jupyter notebooks` that demonstrate the capability of the Open Data Cube.
 
+      For more information, see `the getting started wiki. <https://github.com/GeoscienceAustralia/dea-notebooks/wiki>`_
+      
+   Digital Earth Africa
+   DE Africa
+      A sister project to Digital Earth Australia but for the African Continent.
+
+      For more information, see `Digital Earth Africa <https://www.digitalearthafrica.org/>`_.
+
+   Dynamic range
+      The range between the maximum and minimum amount of input radiant energy that an instrument can measure.
+
+   Earth Observation
    EO
-      Earth Observation
-   
+      The process of acquiring observations of the Earth's surface via remote sensing instruments. These can
+      include satellite-based observations, as well as drone or aerial images.
+
+   Enhanced Thematic Mapper Plus
+   ETM+
+      The sensor aboard Landsat 7 that picks up solar radiation reflected by or emitted from the Earth.
+      It is an enhanced version of the :term:`Thematic Mapper`.
+
+      For more information, see `NASA Enhanced Thematic Mapper Plus <https://landsat.gsfc.nasa.gov/etm-plus/>`_
+
+   Ephemeris
+      A table of satellite orbital locations for specific time intervals. The ephemeris data helps
+      characterise the conditions under which remotely sensed data is collected and is commonly used to
+      correct the sensor data before analysis.
+
+   European Space Agency
    ESA
-      European Space Agency
-   
+      The European Space Agency is a European intergovernmental collaboration focussed on the development of
+      Europe's space capability. The ESA is a partner of the :term:`Copernicus Programme`.
+
+   Exiting angle (degrees)
+      The angle between a ray reflected from a surface and the line perpendicular to the surface at the
+      point of emergence.
+
+   Fractional Cover
    FC
-      Fractional Cover. Fractional Cover (FC) is a measurement that splits the landscape into 
-      three parts, or fractions; green (leaves, grass, and growing crops), brown (branches, 
-      dry grass or hay, and dead leaf litter), and bare ground (soil or rock). For more 
-      information and for details of the methodology, see 
-      https://www.dea.ga.gov.au/products/dea-fractional-cover.
-   
+      Fractional Cover (FC) is a DEA product that uses an algorithm to split the landscape into
+      three parts, or fractions;
+      * green (leaves, grass, and growing crops),
+      * brown (branches, dry grass or hay, and dead leaf litter), and
+      * bare ground (soil or rock).
+      FC provides a representation of the proportions of living vegetation, dry and dying vegetation (including
+      deciduous trees during autumn, dying grass, etc.), and bare soils across the Australian continent
+      for any point in time in the Landsat archive since 1987.
+
+      For more information, and for details of the methodology, see
+      `DEA Fractional Cover. <https://www.dea.ga.gov.au/products/dea-fractional-cover>`_
+
+   Gain
+      A general term used to denote an increase in signal power in transmission from one point to another,
+      usually expressed in decibels. It can also be used to represent the multiplier used to transform
+      satellite image digital numbers to measures of at-sensor radiance.
+
+   Geoscience Australia
    GA
-      Geoscience Australia
+      Geoscience Australia is the national public-sector geoscience organisation. It is the government’s
+      technical advisor on all aspects of geoscience and is the custodian of geographic and geological data.
+      :term:`Digital Earth Australia` is a program of Geoscience Australia.
+
+      For more information, see `Geoscience Australia. <https://www.ga.gov.au/>`_
     
    Geomedian
-      Geometric median, a robust high-dimensional statistic that maintains 
-      relationships between spectral bands.
-      
-   GEE
-      Google Earth Engine
-      
-   GIS
-      Geographic Information System
-   
-   HLTC
-      High and Low Tide Composites, a Digital Earth Australia product providing
-      cloud-free imagery mosaics of Australia's coast, estuaries and reefs at low 
-      and high tide. For more information see https://www.dea.ga.gov.au/products/dea-high-low.
-      
-   HPC
-      High Performance Computing. 
+      Geometric median is a robust high-dimensional statistic that maintains relationships between
+      spectral bands, while producing a multi-dimensional median over a timeseries of satellite images.
 
-   ITEM
-      Intertidal Extents Model, a Digital Earth Australia product that maps the 
-      relative extent of the Australian intertidal zone at regular intervals of 
-      the observed tidal range. For more information see https://www.dea.ga.gov.au/products/dea-intertidal-extents.
+      The Geometric Median provides information on the general conditions of a landscape over a timeseries.
+
+      For more information, see `Geomedian. <https://doi.org/10.1109/TGRS.2017.2723896>`_
+
+   Google Earth Engine
+   GEE
+      A Google-based platform for analysis and visualisation of geospatial datasets.
       
-   Jupyter notebook
+   Geographic Information System
+   GIS
+      A system that manages and visualises spatially referenced data.
+
+   High and Low Tide Composites
+   HLTC
+      High and Low Tide Composites is a Digital Earth Australia product providing
+      cloud-free imagery mosaics of Australia's coast, estuaries and reefs at low 
+      and high tide.
+
+      For more information, see `HLTC. <https://www.dea.ga.gov.au/products/dea-high-low>`_
+
+   High Performance Computing
+   HPC
+      The practice of aggregating computing power in a way that delivers much higher performance
+      than one could get out of a typical desktop computer or workstation in order to solve large
+      problems in science, engineering, or business.
+
+   Incident angle (degrees)
+      The angle between a ray incident on a surface and the line perpendicular to the surface at
+      the point of incidence.
+
+   Intertidal Extents Model
+   ITEM
+      Intertidal Extents Model is a DEA product that maps the
+      relative extent of the Australian intertidal zone at regular intervals of 
+      the observed tidal range.
+
+      For more information, see `DEA ITEM. <https://www.dea.ga.gov.au/products/dea-intertidal-extents>`_
+      
+   Jupyter notebooks
       A computational "notebook" that allows code to be run and presented alongside 
       explanatory documentation, figures, scientific notation etc.
       
    JupyterLab
       An interactive web-based user interface for editing and running Jupyter notebooks.
-      JupyterLab is used as an analysis environment on both the DEA Sandbox and the NCI's
-      Virtual Desktop Infrastructure.
+      JupyterLab is used as an analysis environment on both the :item:`DEA Sandbox` and the NCI's
+      :item:`ARE`.
 
    Landsat
-      A joint NASA/USGS program of medium resolution satellites that have been 
+      A joint :item:`NASA`/:item:`USGS` program of medium resolution satellites that have been
       collecting publicly available Earth observation data continuously since 1972.
-   
+
+      For more information, see `Landsat Science <https://landsat.gsfc.nasa.gov/>`_.
+
+   Land Cover Classification Scheme
    LCCS
-      Land Cover Classification Scheme
+      The Land Cover Classification Scheme was developed by the United Nations Food and Agriculture
+      Organization to provide a consistent framework for the classification and mapping of land cover.
+
+      For more information, see `LCCS. <https://www.fao.org/land-water/land/land-governance/land-resources-planning-toolbox/category/details/en/c/1036361/>`_
    
-   MADs
+   Median Absolute Deviation
+   MAD
       Median Absolute Deviation, used as a form of standard deviation for the geomedians.
-   
+
+      The Median Absolute Deviation provides information on how a landscape is changing over a
+      timeseries.
+
+      For more information, see `MAD. <https://doi.org/10.1109/IGARSS.2018.8518312>`_
+
+   Moderate Resolution Imaging Spectroradiometer
    MODIS
-      Moderate Resolution Imaging Spectroradiometer, a sensor on board NASA's Terra and 
-      Aqua satellites that collects publicly available low resolution Earth observation 
-      data every one to two days.
-   
+      A sensor aboard NASA’s Terra and Aqua satellites. MODIS instruments view the entire Earth’s
+      surface every 1-2 days, acquiring data in 36 spectral bands. It plays a vital role in the
+      development of validated, global, interactive Earth system models which aim to accurately
+      predict global change.
+
+      For more information, see `NASA: MODIS. <https://modis.gsfc.nasa.gov/about/>`_
+
+   MultiSpectral Instrument
+   MSI
+      The MSI is carried on the Sentinel-2 satellites. Light reflected up to the MSI instrument from
+      the Earth and its atmosphere is collected by a three-mirror (M1, M2 and M3) telescope and
+      focused, via a beam-splitter, onto two Focal Plane Assemblies: one for the ten very-near
+      infrared wavelengths and one for the three shortwave infrared wavelengths.
+
+      For more information see: `ESA missions - Sentinel-2. <https://sentinel.esa.int/web/sentinel/missions/sentinel-2>`_
+
+   Multispectral Scanner
+   MSS
+      A line-scanning instrument carried by Landsat satellites that continually scans the Earth in a
+      185 km swath and collects data over a variety of wavelengths.
+
+      For more information, see `Landsat: Multispectral Scanner. <https://landsat.gsfc.nasa.gov/multispectral-scanner/>`_
+
    NASA
       National Aeronautics and Space Administration (United States)
    
@@ -294,6 +394,10 @@ Glossary
       The high performance database engine used as an index of Datasets by the
       Data Cube. It is both a relational and document database, and the Data
       Cube schema makes use of both of these capabilities.
+
+   Product
+      A categorical term applied to describe the output from a process. Typically, a product has
+      an associated product definition which contains the product description and specification.
    
    PQ
      Pixel quality
@@ -321,6 +425,15 @@ Glossary
       The science and technology of automatic measurement and transmission of data by wire,
       radio or other means from remote sources (e.g. space vehicles) to receiving stations
       for recording and analysis.
+
+   Thematic Mapper
+   TM
+      An advanced, multispectral-scanning, Earth resources sensor featured on Landsat 4 and 5.
+      TM is designed to acquire data to categorise the Earth's surface and is particularly useful
+      for agricultural applications and identification of land use. It continuously scans the surface
+      of the Earth, simultaneously acquiring data in seven spectral channels.
+
+      For more information see `NASA Thematic Mapper Plus <https://landsat.gsfc.nasa.gov/thematic-mapper/>`_
 
    USGS
       United States Geological Survey
