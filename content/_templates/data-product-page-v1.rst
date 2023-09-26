@@ -13,17 +13,20 @@
 
       .. grid-item::
 
-         .. container:: subtitle
+         .. container::
+            :name: hero-information
 
-            {{ data["long_title"] }}
+            .. container:: subtitle
 
-         .. container:: quick-info
+               {{ data["long_title"] }}
 
-            | {% if not data["is_latest_version"] %}**Version:** {{ data["version"] }} (`See latest version <{{ data["latest_version_link"] }}>`_){% else %}**Version:** {{ data["version"] }} (Latest){% endif %}
-            | **Product type:** {{ data["product_type"] }}; {{ data["spatial_data_type"] }}
-            | **Time span:** {{ data["time_span"]["start"] }} – {{ data["time_span"]["end"] }}
-            | **Update frequency:** {{ data["update_frequency"] }}
-            | **Product ID:** {{ data["product_id"] }}
+            .. container:: quick-info
+
+               | {% if not data["is_latest_version"] %}**Version:** {{ data["version"] }} (`See latest version <{{ data["latest_version_link"] }}>`_){% else %}**Version:** {{ data["version"] }} (Latest){% endif %}
+               | **Product type:** {{ data["product_type"] }}; {{ data["spatial_data_type"] }}
+               | **Time span:** {{ data["time_span"]["start"] }} – {{ data["time_span"]["end"] }}
+               | **Update frequency:** {{ data["update_frequency"] }}
+               | **Product ID:** {{ data["product_id"] }}
 
       .. grid-item::
 
@@ -36,78 +39,84 @@
        .. tab-item:: Overview
           :name: overview-tab
 
-          {% if not data["is_latest_version"] %}
-          .. ADMONITION:: v{{ data["version"] }} is an old version
-          
-             See the `latest version of the product <{{ data["latest_version_link"] }}>`_.
-          {% endif %}
+          .. container::
+             :name: notifications
 
-          .. grid:: 4
-              :gutter: 2
+             {% if not data["is_latest_version"] %}
+             .. ADMONITION:: v{{ data["version"] }} is an old version
+             
+                See the `latest version of the product <{{ data["latest_version_link"] }}>`_.
+             {% endif %}
 
-              {% for item in data["maps"] %}
-              .. grid-item-card:: {{ item.get("title", "See the map") }}
-                 :img-top: {{ item.get("image", "https://www.gifpng.com/300x200") }}
-                 :link: {{ item.get("link") }}
+          .. container::
+             :name: access-cards
 
-                 {{ item.get("name", "Map") }}
-              {% endfor %}
+             .. grid:: 4
+                :gutter: 2
 
-              {% for item in data["data"] %}
-              .. grid-item-card:: {{ item.get("title", "Get the data") }}
-                 :img-top: {{ item.get("image", "https://www.gifpng.com/300x200") }}
-                 :link: {{ item.get("link") }}
+                {% for item in data["maps"] %}
+                .. grid-item-card:: {{ item.get("title", "See the map") }}
+                   :img-top: {{ item.get("image", "https://www.gifpng.com/300x200") }}
+                   :link: {{ item.get("link") }}
 
-                 {{ item.get("name", "Data") }}
-              {% endfor %}
+                   {{ item.get("name", "Map") }}
+                {% endfor %}
 
-              {% for item in data["stac"] %}
-              .. grid-item-card:: {{ item.get("title", "Get via STAC") }}
-                 :img-top: {{ item.get("image", "https://www.gifpng.com/300x200") }}
-                 :link: {{ item.get("link") }}
+                {% for item in data["data"] %}
+                .. grid-item-card:: {{ item.get("title", "Get the data") }}
+                   :img-top: {{ item.get("image", "https://www.gifpng.com/300x200") }}
+                   :link: {{ item.get("link") }}
 
-                 {{ item.get("name", "STAC") }}
-              {% endfor %}
+                   {{ item.get("name", "Data") }}
+                {% endfor %}
 
-              {% for item in data["explorer"] %}
-              .. grid-item-card:: {{ item.get("title", "Explore data samples") }}
-                 :img-top: {{ item.get("image", "https://www.gifpng.com/300x200") }}
-                 :link: {{ item.get("link") }}
+                {% for item in data["stac"] %}
+                .. grid-item-card:: {{ item.get("title", "Get via STAC") }}
+                   :img-top: {{ item.get("image", "https://www.gifpng.com/300x200") }}
+                   :link: {{ item.get("link") }}
 
-                 {{ item.get("name", "Data Explorer") }}
-              {% endfor %}
+                   {{ item.get("name", "STAC") }}
+                {% endfor %}
 
-              {% for item in data["sandbox"] %}
-              .. grid-item-card:: {{ item.get("title", "Play with the sandbox") }}
-                 :img-top: {{ item.get("image", "https://www.gifpng.com/300x200") }}
-                 :link: {{ item.get("link") }}
+                {% for item in data["explorer"] %}
+                .. grid-item-card:: {{ item.get("title", "Explore data samples") }}
+                   :img-top: {{ item.get("image", "https://www.gifpng.com/300x200") }}
+                   :link: {{ item.get("link") }}
 
-                 {{ item.get("name", "Sandbox") }}
-              {% endfor %}
+                   {{ item.get("name", "Data Explorer") }}
+                {% endfor %}
 
-              {% for item in data["ecat"] %}
-              .. grid-item-card:: {{ item.get("title", "Product catalogue") }}
-                 :img-top: {{ item.get("image", "https://www.gifpng.com/300x200") }}
-                 :link: https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/{{ item.get("id") }}
+                {% for item in data["sandbox"] %}
+                .. grid-item-card:: {{ item.get("title", "Play with the sandbox") }}
+                   :img-top: {{ item.get("image", "https://www.gifpng.com/300x200") }}
+                   :link: {{ item.get("link") }}
 
-                 ecat {{ item.get("id") }}
-              {% endfor %}
+                   {{ item.get("name", "Sandbox") }}
+                {% endfor %}
 
-              {% for item in data["web_services"] %}
-              .. grid-item-card:: {{ item.get("title", "Web service") }}
-                 :img-top: {{ item.get("image", "https://www.gifpng.com/300x200") }}
-                 :link: {{ item.get("link") }}
+                {% for item in data["ecat"] %}
+                .. grid-item-card:: {{ item.get("title", "Product catalogue") }}
+                   :img-top: {{ item.get("image", "https://www.gifpng.com/300x200") }}
+                   :link: https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/{{ item.get("id") }}
 
-                 {{ item.get("name", "Service") }}
-              {% endfor %}
+                   ecat {{ item.get("id") }}
+                {% endfor %}
 
-              {% for item in data["code_samples"] %}
-              .. grid-item-card:: {{ item.get("title", "Code sample") }}
-                 :img-top: {{ item.get("image", "https://www.gifpng.com/300x200") }}
-                 :link: {{ item.get("link") }}
+                {% for item in data["web_services"] %}
+                .. grid-item-card:: {{ item.get("title", "Web service") }}
+                   :img-top: {{ item.get("image", "https://www.gifpng.com/300x200") }}
+                   :link: {{ item.get("link") }}
 
-                 {{ item.get("name", "Code") }}
-              {% endfor %}
+                   {{ item.get("name", "Service") }}
+                {% endfor %}
+
+                {% for item in data["code_samples"] %}
+                .. grid-item-card:: {{ item.get("title", "Code sample") }}
+                   :img-top: {{ item.get("image", "https://www.gifpng.com/300x200") }}
+                   :link: {{ item.get("link") }}
+
+                   {{ item.get("name", "Code") }}
+                {% endfor %}
    
           .. rubric:: About
              :name: about
@@ -140,6 +149,7 @@
           .. tags:: {{ data["tags"]|join(', ') }}
 
        .. tab-item:: Access
+          :name: access-tab
 
           .. rubric:: Access the data
              :name: access-data
@@ -215,16 +225,19 @@
              :parser: myst_parser.sphinx_
 
        .. tab-item:: Details
+          :name: details-tab
 
           .. include:: _details.md
              :parser: myst_parser.sphinx_
 
        .. tab-item:: Quality
+          :name: quality-tab
 
           .. include:: _quality.md
              :parser: myst_parser.sphinx_
 
        .. tab-item:: History
+          :name: history-tab
 
           .. rubric:: Previous versions
              :name: previous-versions
@@ -247,6 +260,7 @@
              :parser: myst_parser.sphinx_
 
        .. tab-item:: Credits
+          :name: credits-tab
        
            .. include:: _credits.md
               :parser: myst_parser.sphinx_
