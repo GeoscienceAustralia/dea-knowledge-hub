@@ -5,30 +5,74 @@ Glossary
 
 .. glossary::
 
-   AGDC
-      The Australian Geoscience Data Cube prototype, an early Australian 
-      implementation of the Open Data Cube. The AGDC has since been superseded by 
-      Digital Earth Australia.
+   Acquisition
+      An image captured by a satellite sensor.
 
-   API
-      The Open Data Cube Application Programming Interface gives programmers full
-      access to the capabilities of the Cube, allowing query and advanced data
-      retrieval.
-      
-   ARD
-      Analysis Ready Data. Imagery of the earth's surface which has had a standard
-      set of corrections applied, making it ready for use in scientific analyses.
+   Advanced Land Observing Satellite (ALOS)
+      A Japanese satellite launched in 2006. After five years of service, the satellite
+      lost power and ceased communication with Earth, but remains in orbit.
 
-   ARE
+   Advanced Spaceborne Thermal and Reflection radiometer (ASTER)
+      An imaging instrument onboard Terra, the flagship satellite of NASA's Earth Observing
+      System (EOS) launched in December 1999. ASTER data is used to create detailed maps of
+      land surface temperature, reflectance, and elevation.
+
+      For more information, see `NASA: ASTER<https://asterweb.jpl.nasa.gov/>`_.
+
+   Advanced Very-High Resolution Radiometer (AVHRR)
+      A radiation-detection sensor that can be used for remotely determining cloud cover
+      and the surface temperature. AVHRR instruments are carried by the National Oceanic and
+      Atmospheric Administration (NOAA) family of polar orbiting platforms and European MetOp
+      satellites.
+
+      For more information, see `ESA: AVHRR<https://earth.esa.int/eogateway/missions/noaa>`_.
+
+   Aerosol optical depth
+      Aerosol optical depth is a measure of the extinction of the solar beam by dust and haze.
+
+   Algorithm
+      In the context of remote sensing, algorithms generally specify how to determine higher-level
+      data products from lower-level source data. For example, algorithms prescribe how atmospheric
+      temperature and moisture profiles are determined from a set of radiation observations originally
+      sensed by satellite sounding instruments.
+
+   Amazon Web Services (AWS)
+      One of the two environments used for hosting Digital Earth Australia.
+      Amazon Web Services is a commercial cloud computing provider. Used
+      by Digital Earth Australia for our JupyterHub Sandbox and Web Mapping
+      Services.
+
+   Analysis Ready Data (ARD)
+      Satellite data that has been processed to a minimum set of requirements and organised into a form
+      that allows immediate analysis and interoperability through time and with other datasets.
+
+   Application Programming Interface (API)
+      A software intermediary that allows two applications to talk to each other. The :term:`Open Data Cube`
+      API gives programmers full access to the capabilities of the Cube, allowing query and advanced data retrieval.
+
+   Atmospheric correction
+      The process of removing the effects of the atmosphere on the reflectance values of images taken by
+      satellite or airborne sensors.
+
+   Australian Geoscience Data Cube (AGDC)
+      A collaborative prototype project between Geoscience Australia, CSIRO and :term:`NCI`, which aimed to provide
+      better public access to NASA’s extensive Landsat archive. The AGDC has since been superseded by
+      :term:`Digital Earth Australia`.
+
+   Australian Research Environment (ARE)
       The `Australian Research Environment <https://are.nci.org.au/>`_ is a tool for
       using the data and software available on the :term:`NCI`. It is a replacement 
       the old :term:`VDI` system.
-      
-   AWS
-      One of the two environments used for hosting Digital Earth Australia.
-      Amazon Web Services is a commercial cloud computing provider. Used
-      by Digital Earth Australia for our JupyterHub Sandbox and Web Mapping 
-      Services.
+
+   Azimuth
+      The angle of an object’s position from true north.
+
+   Azimuthal exiting (degrees)
+      The angle between true north and the exiting direction in the slope geometry.
+
+   Azimuthal incident (degrees)
+      The angle between true north and the incident direction in the slope geometry.
+
    
    BRDF
       "Bidirectional reflectance distribution function" is a theoretical concept 
