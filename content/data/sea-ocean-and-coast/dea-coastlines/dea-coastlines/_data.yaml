@@ -6,7 +6,7 @@ image: https://www.dea.ga.gov.au/_nuxt/image/3d7bbc.png
 product_id: dea_coastlines
 
 version: 2.1.0
-is_old_version: True
+is_old_version: False
 latest_version_link: /example-page
 
 product_type: Derivative
