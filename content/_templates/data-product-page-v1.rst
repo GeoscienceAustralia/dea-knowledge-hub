@@ -235,7 +235,7 @@
           No previous versions available.
           {% endif %}
 
-          .. rubric: Changelog
+          .. rubric:: Changelog
        
           .. include:: _history.md
              :parser: myst_parser.sphinx_
