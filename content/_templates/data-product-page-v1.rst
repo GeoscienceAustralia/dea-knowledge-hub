@@ -34,6 +34,7 @@
    .. tab-set::
    
        .. tab-item:: Overview
+          :name: overview-tab
 
           {% if not data["is_latest_version"] %}
           .. ADMONITION:: v{{ data["version"] }} is an old version
@@ -108,10 +109,14 @@
                  {{ item.get("name", "Code") }}
               {% endfor %}
    
+          .. rubric:: About
+             :name: about
+
           .. include:: _about.md
              :parser: myst_parser.sphinx_
 
           .. rubric:: Key information
+             :name: key-information
 
           {% if data["parent_product"] %}
           :Parent product: `{{ data["parent_product"]["name"] }} <{{ data["parent_product"]["link"] }}>`_
@@ -137,8 +142,10 @@
        .. tab-item:: Access
 
           .. rubric:: Access the data
+             :name: access-data
 
           .. list-table::
+             :name: access-table
 
              {% if data["maps"] %}
              * - **See the map**
@@ -220,6 +227,7 @@
        .. tab-item:: History
 
           .. rubric:: Previous versions
+             :name: previous-versions
 
           {% if data["previous_versions"] %}
 
@@ -235,8 +243,6 @@
           No previous versions available.
           {% endif %}
 
-          .. rubric:: Changelog
-       
           .. include:: _history.md
              :parser: myst_parser.sphinx_
 

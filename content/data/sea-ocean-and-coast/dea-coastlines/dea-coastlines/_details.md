@@ -1,3 +1,4 @@
+{#product-offering}
 ## What this product offers
 
 [Digital Earth Australia Coastlines](https://maps.dea.ga.gov.au/story/DEACoastlines) is a continental dataset that includes annual shorelines and rates of coastal change along the entire Australian coastline from 1988 to the present. 
@@ -6,6 +7,7 @@ The product combines satellite data from Geoscience Australia's Digital Earth Au
 
 The ability to map shoreline positions for each year provides valuable insights into whether changes to our coastline are the result of particular events or actions, or a process of more gradual change over time. This information can enable scientists, managers and policy makers to assess impacts from the range of drivers impacting our coastlines and potentially assist planning and forecasting for future scenarios.
 
+{#applications}
 ## Applications
 
 * Monitoring and mapping rates of coastal erosion along the Australian coastline 
@@ -13,6 +15,7 @@ The ability to map shoreline positions for each year provides valuable insights 
 * Modelling how coastlines respond to drivers of change, including extreme weather events, sea level rise or human development 
 * Supporting geomorphological studies of how and why coastlines have changed across time
 
+{#technical-information}
 ## Technical information
 
 ### DEA Coastlines dataset
@@ -121,6 +124,7 @@ Figure 3: Coastal change hotspots from DEA Coastlines visualised on the [intera
 * [DEA Intertidal Extents (Landsat)](https://cmi.ga.gov.au/data-products/dea/174/dea-intertidal-extents-landsat)
 * [DEA High and Low Tide Imagery (Landsat)](https://cmi.ga.gov.au/data-products/dea/133/dea-high-and-low-tide-imagery-landsat)
 
+{#references}
 ## References
 
 Bishop-Taylor, R., Nanson, R., Sagar, S., Lymburner, L. (2021). Mapping Australia's dynamic coastline at mean sea level using three decades of Landsat imagery. *Remote Sensing of Environment*, 267, 112734. Available: <https://doi.org/10.1016/j.rse.2021.112734>
@@ -154,18 +158,3 @@ Strauss, D., Murray, T., Harry, M., Todd, D., 2017. Coastal data collection and 
 TASMARC, 2021. TASMARC (The Tasmanian Shoreline Monitoring and Archiving Project) (2019) TASMARC database. Available: h[ttp://www.tasmarc.info/](http://www.tasmarc.info/)
 
 Turner, I. L., Harley, M. D., Short, A. D., Simmons, J. A., Bracs, M. A., Phillips, M. S., & Splinter, K. D. (2016). A multi-decade dataset of monthly beach profile surveys and inshore wave forcing at Narrabeen, Australia. *Scientific data*, *3*(1), 1-13. Available: <http://narrabeen.wrl.unsw.edu.au/>
-
-<!--
-### Software
-
-The following software was used to generate this product: 
-
--   [DEA Coastlines Github code](https://github.com/GeoscienceAustralia/dea-coastlines)
--   [OpenDataCube](https://github.com/opendatacube)
--   [FES2014 global tide model](https://www.aviso.altimetry.fr/en/data/products/auxiliary-products/global-tide-fes/description-fes2014.html)
-
-### Relevant websites
-
--   [Interactive DEA Coastlines product on DEA Maps](https://maps.dea.ga.gov.au/story/DEACoastlines)
--   [DEA Coastlines Github code repository](https://github.com/GeoscienceAustralia/dea-coastlines)
--->

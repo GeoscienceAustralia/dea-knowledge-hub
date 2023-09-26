@@ -1,3 +1,6 @@
+{#changelog}
+## Changelog
+
 ### 2022 DEA Coastlines update
 
 In August 2023, the DEA Coastlines product was updated to version 2.1.0.
