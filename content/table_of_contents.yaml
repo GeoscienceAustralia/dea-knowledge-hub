@@ -13,17 +13,17 @@ entries:
             entries:
               - glob: data/sea-ocean-and-coast/dea-coastlines/*/index
 
-  - file: notebooks/README
-    title: Notebooks
-    subtrees:
-      - title: Beginner's Guide
-        entries:
-          - glob: notebooks/Beginners_guide/**
-      - title: DEA Products
-        entries:
-          - glob: notebooks/DEA_products/**
-      - title: How-To Guides
-        entries:
-          - glob: notebooks/How_to_guides/**
-  - file: get-started/index
-    title: Get started
+  # - file: notebooks/README
+  #   title: Notebooks
+  #   subtrees:
+  #     - title: Beginner's Guide
+  #       entries:
+  #         - glob: notebooks/Beginners_guide/**
+  #     - title: DEA Products
+  #       entries:
+  #         - glob: notebooks/DEA_products/**
+  #     - title: How-To Guides
+  #       entries:
+  #         - glob: notebooks/How_to_guides/**
+  # - file: get-started/index
+  #   title: Get started
