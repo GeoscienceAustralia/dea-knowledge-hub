@@ -8,23 +8,28 @@
 
 .. container:: data-product
 
-   .. container:: header-text
+   .. grid:: 2
+      :padding: 0
 
-      .. container:: subtitle
+      .. grid-item::
 
-         {{ data["long_title"] }}
+         .. container:: subtitle
 
-      .. container:: quick-info
+            {{ data["long_title"] }}
 
-         | {% if not data["is_latest_version"] %}**Version:** {{ data["version"] }} (`See latest version <{{ data["latest_version_link"] }}>`_){% else %}**Version:** {{ data["version"] }} (Latest){% endif %}
-         | **Product type:** {{ data["product_type"] }}; {{ data["spatial_data_type"] }}
-         | **Time span:** {{ data["time_span"]["start"] }} – {{ data["time_span"]["end"] }}
-         | **Update frequency:** {{ data["update_frequency"] }}
-         | **Product ID:** {{ data["product_id"] }}
+         .. container:: quick-info
 
-   .. container:: header-image
+            | {% if not data["is_latest_version"] %}**Version:** {{ data["version"] }} (`See latest version <{{ data["latest_version_link"] }}>`_){% else %}**Version:** {{ data["version"] }} (Latest){% endif %}
+            | **Product type:** {{ data["product_type"] }}; {{ data["spatial_data_type"] }}
+            | **Time span:** {{ data["time_span"]["start"] }} – {{ data["time_span"]["end"] }}
+            | **Update frequency:** {{ data["update_frequency"] }}
+            | **Product ID:** {{ data["product_id"] }}
 
-      .. image:: {{ data["image"] }}
+      .. grid-item::
+
+         .. container:: hero-image
+
+            .. image:: {{ data["image"] }}
 
    .. tab-set::
    

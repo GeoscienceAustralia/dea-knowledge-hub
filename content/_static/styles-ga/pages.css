@@ -27,24 +27,18 @@
     font-color: var(--pst-color-text-base);
 }
 
-#dea-coastlines {
+.data-product .header {
     position: relative;
 }
 
-#dea-coastlines h1,
-#dea-coastlines .header-text {
-    background-color: white;
-    width: 50%;
+.data-product .subtitle p {
+    font-size: var(--pst-font-size-h3);
 }
 
-#dea-coastlines .header-image img {
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 235px;
-    z-index: -1;
+.data-product .hero-image img {
+    text-align: right;
 }
 
-#dea-coastlines .subtitle {
-    font-size: var(--pst-font-size-h4);
+.data-product .hero-image img {
+    height: 200px;
 }
