@@ -8,18 +8,21 @@ Glossary
    Acquisition
       An image captured by a satellite sensor.
 
-   Advanced Land Observing Satellite (ALOS)
+   Advanced Land Observing Satellite
+   ALOS
       A Japanese satellite launched in 2006. After five years of service, the satellite
       lost power and ceased communication with Earth, but remains in orbit.
 
-   Advanced Spaceborne Thermal and Reflection radiometer (ASTER)
+   Advanced Spaceborne Thermal and Reflection radiometer
+   ASTER
       An imaging instrument onboard Terra, the flagship satellite of NASA's Earth Observing
       System (EOS) launched in December 1999. ASTER data is used to create detailed maps of
       land surface temperature, reflectance, and elevation.
 
       For more information, see `NASA: ASTER<https://asterweb.jpl.nasa.gov/>`_.
 
-   Advanced Very-High Resolution Radiometer (AVHRR)
+   Advanced Very-High Resolution Radiometer
+   AVHRR
       A radiation-detection sensor that can be used for remotely determining cloud cover
       and the surface temperature. AVHRR instruments are carried by the National Oceanic and
       Atmospheric Administration (NOAA) family of polar orbiting platforms and European MetOp
@@ -30,36 +33,46 @@ Glossary
    Aerosol optical depth
       Aerosol optical depth is a measure of the extinction of the solar beam by dust and haze.
 
+   Albedo
+      The fraction of light that a surface reflects. Albedo is measured on a scale of 0-1, with 1 indicating
+      that all light has been reflected by the surface.
+
    Algorithm
       In the context of remote sensing, algorithms generally specify how to determine higher-level
       data products from lower-level source data. For example, algorithms prescribe how atmospheric
       temperature and moisture profiles are determined from a set of radiation observations originally
       sensed by satellite sounding instruments.
 
-   Amazon Web Services (AWS)
+   Amazon Web Services
+   AWS
       One of the two environments used for hosting Digital Earth Australia.
       Amazon Web Services is a commercial cloud computing provider. Used
       by Digital Earth Australia for our JupyterHub Sandbox and Web Mapping
       Services.
 
-   Analysis Ready Data (ARD)
+   Analysis Ready Data
+   ARD
       Satellite data that has been processed to a minimum set of requirements and organised into a form
       that allows immediate analysis and interoperability through time and with other datasets.
 
-   Application Programming Interface (API)
+   Application Programming Interface
+   API
       A software intermediary that allows two applications to talk to each other. The :term:`Open Data Cube`
-      API gives programmers full access to the capabilities of the Cube, allowing query and advanced data retrieval.
+      API gives programmers full access to the capabilities of the Cube, allowing query and advanced data
+      retrieval.
 
    Atmospheric correction
       The process of removing the effects of the atmosphere on the reflectance values of images taken by
       satellite or airborne sensors.
 
-   Australian Geoscience Data Cube (AGDC)
-      A collaborative prototype project between Geoscience Australia, CSIRO and :term:`NCI`, which aimed to provide
-      better public access to NASA’s extensive Landsat archive. The AGDC has since been superseded by
+   Australian Geoscience Data Cube
+   AGDC
+      A collaborative prototype project between Geoscience Australia, :term:`CSIRO` and :term:`NCI`, which aimed to
+      provide better public access to NASA’s extensive Landsat archive. The AGDC has since been superseded by
       :term:`Digital Earth Australia`.
 
-   Australian Research Environment (ARE)
+   Australian Research Environment
+   ARE
       The `Australian Research Environment <https://are.nci.org.au/>`_ is a tool for
       using the data and software available on the :term:`NCI`. It is a replacement 
       the old :term:`VDI` system.
@@ -73,41 +86,81 @@ Glossary
    Azimuthal incident (degrees)
       The angle between true north and the incident direction in the slope geometry.
 
-   
-   BRDF
-      "Bidirectional reflectance distribution function" is a theoretical concept 
-      that describes the relationship between light and an opaque surface, 
-      using a target's irradiance geometry and the remote sensing system’s 
-      relative angle to the target.
-   
-   C2
-   Collection 2
-      Digital Earth Australia's second collection of Landsat data. Now 
-      superceded by :term:`Collection 3` (C3).
-      
-   C3
-   Collection 3
-      The third collection of Digital Earth Australia's Landsat or Sentinel data, 
-      published in and the most up-to-date collection available.
-   
-   CEOS-SEO
-      `Committee on Earth Observation Systems Engineering Office <https://ceos-cube.org/>`_ 
-      
-   COG
-      Cloud Optimised GeoTIFF, a data file format optimised for efficient 
-      workflows on the cloud and remote reading. 
-  
-   Collection
-     C1, C2, C3 ...n - the whole suite of data from the Landsat or Sentinel mission. 
-     Collections are updated when there are fundamental changes and upgrades to the data suite that 
-     make it incompatible with the existing collection. Therefore a collection upgrade is more 
-     akin to a movie franchise reboot than a re-release.
-   
-   CSIRO
-      `Commonwealth Scientific and Industrial Research Organisation <https://www.csiro.au/>`_
+   Band
+      A discrete wavelength interval or range observed by a remote sensing instrument.
 
-   DEA
+   Barest Earth
+      An estimate of the spectra of the barest state (i.e. least vegetation) observed from
+      imagery of the Australian continent collected by the Landsat 5, 7, and 8 satellites.
+
+   Bidirectional Reflectance Distribution Function
+   BRDF
+      Bidirectional reflectance distribution function is a theoretical concept
+      that describes the relationship between light and an opaque surface. It uses
+      a target's irradiance geometry and the remote sensing system’s
+      relative angle to the target.
+
+   Bidirectional Reflectance Distribution Function (BRDF) / Albedo Parameter
+      The Bidirectional Reflectance Distribution Function (BRDF)/Albedo parameters provide:
+      • coefficients for mathematical functions that describe the BRDF of each pixel in the
+      seven :term:`MODIS` 'Land' bands (1- 7); and
+      • :term:`albedo` measurements derived simultaneously from the BRDF for bands 1-7 as well as three
+      broad bands (0.4-0.7, 0.7-3.0, and 0.4- 3.0 micrometers).
+
+      For more information see: `NASA <https://modis.gsfc.nasa.gov/data/dataprod/mod43.php>`_
+
+   Cloud Optimised GeoTIFF
+   COG
+      A data file format optimised for efficient workflows on the cloud and partial file access.
+
+   Collection
+      All products downstream of the rawest form of the main input data (:term:`telemetry`), produced
+      sequentially and processed with consistent algorithms/code/inputs/outputs.
+
+   Collection 2
+   C2
+      Digital Earth Australia's second :term:`Collection` of Landsat data. Now
+      superceded by :term:`Collection 3` (C3). Note that there was no DEA Collection 2 of Sentinel 2 products.
+      
+   Collection 3
+   C3
+      The third :term:`Collection` of Digital Earth Australia's Landsat or Sentinel 2 data,
+      and the most up-to-date collection available.
+
+   Collection upgrade
+      The reproduction of the :term:`Collection`, including all downstream products, with the initial input being
+      the rawest form (:term:`telemetry`). Collections are updated when there are fundamental changes and
+      upgrades to the data suite that make it incompatible with the existing collection. Therefore a collection
+      upgrade is more akin to a movie franchise reboot than a re-release.
+
+   Committee on Earth Observations, Systems Engineering Office
+   CEOS-SEO
+      Established in 1984, CEOS is the primary forum for the international coordination of space-based
+      Earth observations. The SEO performs historical coverage analyses using the data archives for the
+      Landsat, Sentinel-1, and Sentinel-2 missions.
+      
+   Commonwealth Scientific and Industrial Research Organisation
+   CSIRO
+      An Australian federal government agency responsible for scientific research.
+
+      For more information, see `CSIRO. <https://www.csiro.au/>`_
+
+   Copernicus Australasia Regional Data Hub
+      Copernicus Australasia is a regional hub supporting the :term:`Copernicus Programme`. The Copernicus
+      Australasia Regional Data Hub provides free and open access to data from Europe's Sentinel satellite
+      missions for the following South-East Asia and South Pacific region.
+
+      For more information, see `Copernicus Australasia. <https://www.copernicus.gov.au/`_
+
+   Copernicus Programme
+      The Copernicus Programme, established in 2014, is the European Union (EU)'s Earth observation programme
+      coordinated and managed by the European Commission in partnership with the European Space Agency (ESA),
+      the EU Member States and EU Agencies.
+
+      For more information, see `Copernicus Programme. <https://www.copernicus.eu/en>`_
+
    Digital Earth Australia
+   DEA
       A Program of Geoscience Australia that uses spatial data and images 
       recorded by satellites orbiting our planet to detect physical changes 
       across Australia in unprecedented detail. DEA is the Australian implementation of
@@ -263,6 +316,11 @@ Glossary
       SSH or Secure Shell is a means to access remote computers using a text based
       terminal interface. It comes build in with Linux, but requires additional software
       to use it from Windows computers.
+
+   Telemetry
+      The science and technology of automatic measurement and transmission of data by wire,
+      radio or other means from remote sources (e.g. space vehicles) to receiving stations
+      for recording and analysis.
 
    USGS
       United States Geological Survey
