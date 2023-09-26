@@ -8,7 +8,7 @@
 .. rubric:: Welcome to the DEA Documentation
    :class: rubric-1
 
-.. grid:: 2
+.. grid:: 3
 
    .. grid-item-card::
 
@@ -29,42 +29,23 @@
 
    .. grid-item-card::
 
-      **Use the DEA notebooks**
+      **Use the data**
       ^^^
    
-      `View all notebooks <example.com>`_
-
-      Popular topics ...
-
-      `Beginner's guide <example.com>`_
-
-      `How-to guides <example.com>`_
-
-      `Real-world examples <example.com>`_
-
-   .. grid-item-card::
-
-      **Getting started**
-      ^^^
-
       `Get started with DEA <example.com>`_
 
-      Popular topics ...
+      `View all notebooks <example.com>`_
 
-      `DEA Maps <example.com>`_
-
-      `DEA Sandbox <example.com>`_
-
-      `National Computational Infrastructure (NCI) <example.com>`_
-
-      `Jupyter notebooks <example.com>`_
+      `Additional resources <example.com>`_
 
    .. grid-item-card::
 
-      **Our services**
+      **Our agency**
       ^^^
 
       `View our service catalogue <example.com>`_
+
+      `Get support <example.com>`_
 
 .. rubric:: About the DEA
    :class: rubric-2

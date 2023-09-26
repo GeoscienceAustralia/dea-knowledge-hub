@@ -1,4 +1,4 @@
-# Overview
+# Overview tab
 
 title: DEA Coastlines
 long_title: Digital Earth Australia Coastlines
@@ -33,7 +33,7 @@ published: 15 Aug 2023
 author: Sagar Stephen
 doi: 10.26186/116268
 
-# Access
+# Access tab
 
 maps:
   - name: DEACoastlines
@@ -78,7 +78,7 @@ code_samples:
   - name: GitHub repository
     link: https://github.com/GeoscienceAustralia/dea-coastlines
 
-# History
+# History tab
 
 previous_versions:
   - version: 2.0.0
