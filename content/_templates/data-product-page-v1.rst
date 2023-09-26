@@ -31,7 +31,7 @@
        .. tab-item:: Overview
 
           {% if data["is_old_version"] %}
-          .. admonition:: v{{ data["version"] }} is an old version
+          .. ADMONITION:: v{{ data["version"] }} is an old version
           
              See the `latest version of the product <{{ data["latest_version_link"] }}>`_.
           {% endif %}
