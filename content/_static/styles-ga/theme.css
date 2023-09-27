@@ -8,6 +8,7 @@ html {
     --bs-link-hover-color: #00718b !important;
     --pst-color-link: #00718b !important;
     --pst-color-link-hover: #00718b !important;
+    --sd-color-card-hover: #f2f2f2 !important;
     --sd-color-card-border-hover: var(--pst-color-border) !important;
     --sd-color-primary-bg: #e6edef !important;
     --pst-font-size-h1: 1.5rem !important;

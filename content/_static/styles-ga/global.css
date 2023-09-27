@@ -90,5 +90,5 @@ input[type="search"].form-control {
 }
 
 .bd-content .sd-card:hover {
-    background-color: #f2f2f2;
+    background-color: var(--sd-color-card-hover);
 }
