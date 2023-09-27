@@ -13,11 +13,11 @@
 
    .. container:: header
 
-      .. container:: subtitle
-
-         {{ data["long_title"] }}
-
       .. container:: quick-info
+
+         .. container:: subtitle
+
+            {{ data["long_title"] }}
 
          | {% if not data["is_latest_version"] %}**Version:** {{ data["version"] }} (`See latest version <{{ data["latest_version_link"] }}>`_){% else %}**Version:** {{ data["version"] }} (Latest){% endif %}
          | **Product type:** {{ data["product_type"] }}; {{ data["spatial_data_type"] }}

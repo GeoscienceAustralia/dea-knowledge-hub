@@ -32,7 +32,8 @@
 }
 
 .data-product .subtitle p {
-    font-size: var(--pst-font-size-h3);
+    font-weight: bold;
+    font-size: var(--pst-font-size-h4);
 }
 
 .data-product .header {
@@ -46,20 +47,23 @@
 .data-prodct h1,
 .data-product .subtitle,
 .data-product .quick-info {
-    max-width: 65%;
+    width: 65%;
+}
+
+.data-product .quick-info {
+    background-color: var(--pst-color-secondary-highlight);
+    padding: 0.1rem 1rem;
+    width: calc(65% - 2rem);
 }
 
 .data-product .hero-image {
     position: absolute;
     top: 0;
     right: 0;
-    height: calc(100% - 1rem);
+    height: 100%;
     width: 35%;
     background-image: url("https://www.dea.ga.gov.au/_nuxt/image/3d7bbc.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-}
-
-.data-product .quick-info {
 }
