@@ -31,6 +31,15 @@
     background-color: var(--sd-color-primary-bg);
 }
 
+#home .sd-card a {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#home .sd-card a:hover {
+    text-decoration: underline;
+}
+
 .data-product .header {
     position: relative;
 }
