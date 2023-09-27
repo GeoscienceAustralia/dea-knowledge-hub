@@ -1,5 +1,12 @@
 # DEA Docs
 
+## Prerequisites
+
+You must have the following installed.
+
+* Git
+* Docker
+
 ## How to build
 
 **Step 1.** Copy the `.env.example` file and rename it to `.env`. You can configure the following settings.
