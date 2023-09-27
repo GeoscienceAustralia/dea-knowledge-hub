@@ -1,12 +1,14 @@
 html {
     --pst-color-primary: #082e41 !important;
-    --pst-color-secondary: #00718b !important; /* 00708b */
+    --pst-color-secondary: #00718b !important;
+    --pst-color-primary-highlight: #00708b !important;
+    --pst-color-secondary-highlight: #e6edef !important;
     --pst-color-text-base: #082e41 !important;
     --bs-link-color: #00718b !important;
     --bs-link-hover-color: #00718b !important;
     --pst-color-link: #00718b !important;
     --pst-color-link-hover: #00718b !important;
-    --sd-color-card-border-hover: #00718b !important;
+    --sd-color-card-border-hover: var(--pst-color-border) !important;
     --sd-color-primary-bg: #e6edef !important;
     --pst-font-size-h2: 1.5rem !important;
     --pst-font-size-h3: 1.25rem !important;
