@@ -262,5 +262,5 @@
        .. tab-item:: Credits
           :name: credits-tab
        
-           .. include:: _credits.md
-              :parser: myst_parser.sphinx_
+          .. include:: _credits.md
+             :parser: myst_parser.sphinx_
