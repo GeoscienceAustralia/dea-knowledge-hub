@@ -15,7 +15,31 @@ h4, h5, h6 {
 }
 
 footer.bd-footer {
-    background-color: var(--sd-color-primary-bg);
+    /* background-color: var(--sd-color-primary-bg); */
+    padding-top: 24px;
+    background: linear-gradient(1turn, #00718b, var(--pst-color-primary));
+}
+
+footer.bd-footer p,
+footer.bd-footer a {
+    color: white;
+}
+
+footer.bd-footer a {
+    font-weight: bold;
+    text-decoration: underline;
+    /* border-bottom: 1px solid #000; */
+    /* padding-bottom: 3px; */
+}
+
+footer.bd-footer .footer-heading {
+    font-weight: bold;
+    font-size: var(--pst-font-size-h3);
+    margin-bottom: 1.05rem;
+}
+
+footer.bd-footer li {
+    margin-bottom: 1rem;
 }
 
 footer.bd-footer .footer-items__start,
