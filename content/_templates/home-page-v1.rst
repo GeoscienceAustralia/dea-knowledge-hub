@@ -36,6 +36,8 @@
 
       `View all notebooks <example.com>`_
 
+      `Use the DEA Tools package <example.com>`_
+
       `Additional resources <example.com>`_
 
    .. grid-item-card::
