@@ -32,8 +32,7 @@
 }
 
 .data-product .subtitle p {
-    font-weight: bold;
-    font-size: var(--pst-font-size-h4);
+    font-size: var(--pst-font-size-h3);
 }
 
 .data-product .header {
@@ -44,16 +43,14 @@
     margin-bottom: calc(var(--pst-font-size-h1) * 2 * -1);
 }
 
+.data-product .header .line-block {
+    margin-bottom: 0;
+}
+
 .data-prodct h1,
 .data-product .subtitle,
 .data-product .quick-info {
     width: 65%;
-}
-
-.data-product .quick-info {
-    background-color: var(--pst-color-secondary-highlight);
-    padding: 0.1rem 1rem;
-    width: calc(65% - 2rem);
 }
 
 .data-product .hero-image {
