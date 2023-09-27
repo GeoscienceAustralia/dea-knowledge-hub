@@ -34,23 +34,34 @@
 .data-product .header {
     position: relative;
     overflow: hidden;
-    top: calc((var(--pst-font-size-h1) * 2) * -1);
-    padding-top: calc(var(--pst-font-size-h1) * 2);
-    margin-bottom: calc(var(--pst-font-size-h1) * 2 * -1);
+    top: calc((var(--pst-font-size-h1) * 2 + 10px + 1rem) * -1);
+    padding-top: calc(var(--pst-font-size-h1) * 2 + 1rem);
+    margin-bottom: calc((var(--pst-font-size-h1) * 2) * -1);
 }
 
 .data-product .subtitle,
 .data-product .quick-info {
     width: 65%;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-top: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
 .data-product .quick-info,
 .data-product .quick-info dd p,
 .data-product .subtitle p {
     color: white;
+}
+
+.data-product .subtitle {
+    margin-bottom: 1.5rem;
+}
+
+.data-product .quick-info dt {
+    padding-left: 0;
+}
+
+.data-product .quick-info dl {
+    margin-bottom: 2rem;
 }
 
 .data-product .hero-box {
