@@ -85,6 +85,10 @@ input[type="search"].form-control {
     border: none;
 }
 
+.bd-content .sd-card-title {
+    color: var(--pst-color-primary);
+}
+
 .bd-content .sd-card:hover {
-    background-color: var(--pst-color-secondary-highlight)
+    background-color: #f2f2f2;
 }
