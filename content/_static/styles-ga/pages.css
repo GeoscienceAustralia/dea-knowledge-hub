@@ -39,7 +39,7 @@
     font-size: var(--pst-font-size-h3);
 }
 
-.data-product .hero-image img {
+.data-product .hero-image {
     text-align: right;
 }
 

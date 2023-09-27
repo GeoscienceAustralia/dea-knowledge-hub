@@ -8,31 +8,21 @@
 
 .. container:: data-product
 
-   .. grid:: 2
-      :padding: 0
+   .. container:: subtitle
 
-      .. grid-item::
+      {{ data["long_title"] }}
 
-         .. container::
-            :name: hero-information
+   .. container:: quick-info
 
-            .. container:: subtitle
+      | {% if not data["is_latest_version"] %}**Version:** {{ data["version"] }} (`See latest version <{{ data["latest_version_link"] }}>`_){% else %}**Version:** {{ data["version"] }} (Latest){% endif %}
+      | **Product type:** {{ data["product_type"] }}; {{ data["spatial_data_type"] }}
+      | **Time span:** {{ data["time_span"]["start"] }} – {{ data["time_span"]["end"] }}
+      | **Update frequency:** {{ data["update_frequency"] }}
+      | **Product ID:** {{ data["product_id"] }}
 
-               {{ data["long_title"] }}
+      .. container:: hero-image
 
-            .. container:: quick-info
-
-               | {% if not data["is_latest_version"] %}**Version:** {{ data["version"] }} (`See latest version <{{ data["latest_version_link"] }}>`_){% else %}**Version:** {{ data["version"] }} (Latest){% endif %}
-               | **Product type:** {{ data["product_type"] }}; {{ data["spatial_data_type"] }}
-               | **Time span:** {{ data["time_span"]["start"] }} – {{ data["time_span"]["end"] }}
-               | **Update frequency:** {{ data["update_frequency"] }}
-               | **Product ID:** {{ data["product_id"] }}
-
-      .. grid-item::
-
-         .. container:: hero-image
-
-            .. image:: {{ data["image"] }}
+         .. image:: {{ data["image"] }}
 
    .. tab-set::
    
