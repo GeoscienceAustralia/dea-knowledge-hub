@@ -1,5 +1,13 @@
 h1 {
     font-weight: bold;
+    padding-top: 1rem;
+    background: red;
+    opacity: 0.5;
+}
+
+.bd-article h1 {
+    color: white;
+    padding-left: 1rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -19,7 +27,6 @@ h4, h5, h6 {
 }
 
 footer.bd-footer {
-    /* background-color: var(--sd-color-primary-bg); */
     padding-top: 24px;
     background: linear-gradient(1turn, var(--pst-color-secondary), var(--pst-color-primary));
 }
@@ -32,8 +39,6 @@ footer.bd-footer a {
 footer.bd-footer a {
     font-weight: bold;
     text-decoration: underline;
-    /* border-bottom: 1px solid #000; */
-    /* padding-bottom: 3px; */
 }
 
 footer.bd-footer .footer-heading {

@@ -27,30 +27,40 @@
     font-color: var(--pst-color-text-base);
 }
 
-#home .sd-card-header {
-    background-color: var(--sd-color-primary-bg);
-}
-
 .data-product .subtitle p {
-    font-size: var(--pst-font-size-h3);
+    font-size: var(--pst-font-size-h4);
 }
 
 .data-product .header {
     position: relative;
     overflow: hidden;
-    top: calc(var(--pst-font-size-h1) * 2 * -1);
+    top: calc((var(--pst-font-size-h1) * 2) * -1);
     padding-top: calc(var(--pst-font-size-h1) * 2);
     margin-bottom: calc(var(--pst-font-size-h1) * 2 * -1);
 }
 
-.data-product .header .line-block {
-    margin-bottom: 0;
-}
-
-.data-prodct h1,
 .data-product .subtitle,
 .data-product .quick-info {
     width: 65%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+}
+
+.data-product .quick-info,
+.data-product .quick-info dd p,
+.data-product .subtitle p {
+    color: white;
+}
+
+.data-product .hero-box {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: linear-gradient(1turn, var(--pst-color-secondary), var(--pst-color-primary));
 }
 
 .data-product .hero-image {
