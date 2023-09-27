@@ -10,7 +10,8 @@ html {
     --pst-color-link-hover: #00718b !important;
     --sd-color-card-border-hover: var(--pst-color-border) !important;
     --sd-color-primary-bg: #e6edef !important;
-    --pst-font-size-h2: 1.5rem !important;
+    --pst-font-size-h1: 1.5rem !important;
+    --pst-font-size-h2: 1.4rem !important;
     --pst-font-size-h3: 1.25rem !important;
     --pst-font-size-h4: 1.1rem !important;
     --pst-font-size-h5: 1rem !important;

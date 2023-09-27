@@ -1,3 +1,7 @@
+h1 {
+    font-weight: bold;
+}
+
 h1, h2, h3, h4, h5, h6 {
     color: var(--pst-color-primary);
 }
@@ -83,4 +87,21 @@ input[type="search"].form-control {
 
 .bd-content .sd-card:hover {
     background-color: var(--pst-color-secondary-highlight)
+}
+
+h1, .subtitle, .quick-info {
+    max-width: 70%;
+}
+
+.hero-image {
+    position: relative;
+    height: 300px;
+    top: -300px;
+    margin-bottom: -300px;
+    overflow: hidden;
+}
+
+.hero-image img {
+    width: 100%
+    height: 100%;
 }
