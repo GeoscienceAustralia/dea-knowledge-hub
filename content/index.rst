@@ -5,3 +5,5 @@
    :hidden:
 
    data/index
+   tags/tagsindex
+   data-history/index

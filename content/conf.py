@@ -64,6 +64,7 @@ html_theme_options = {
     "search_bar_text": "Search ...",
     "show_prev_next": False,
     "show_nav_level": 1,
+    "header_links_before_dropdown": 1
 }
 
 suppress_warnings = ["myst.header"]
