@@ -1,3 +1,18 @@
+::selection {
+    background: var(--pst-color-secondary);
+    color: white;
+}
+
+::-webkit-selection {
+    background: var(--pst-color-secondary);
+    color: white;
+}
+
+::-moz-selection {
+    background: var(--pst-color-secondary);
+    color: white;
+}
+
 h1 {
     font-weight: bold;
     margin-top: 2rem;
