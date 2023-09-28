@@ -50,6 +50,11 @@
     z-index: -1;
 }
 
+.data-product .header a {
+    color: white;
+    font-weight: bold;
+}
+
 .data-product .subtitle,
 .data-product .quick-info {
     width: 65%;
