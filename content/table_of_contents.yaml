@@ -13,7 +13,7 @@ entries:
             entries:
               - glob: data/sea-ocean-and-coast/dea-coastlines/*/index
   - title: Tags
-    file: tags/tagindex/*
+    file: tags/tagindex
     entries:
       - glob: tags/*
 
