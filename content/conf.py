@@ -66,5 +66,3 @@ html_theme_options = {
     "show_nav_level": 1,
     "header_links_before_dropdown": 1
 }
-
-suppress_warnings = ["myst.header"]
