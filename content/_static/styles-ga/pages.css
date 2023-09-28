@@ -20,24 +20,25 @@
     font-color: var(--pst-color-text-base);
 }
 
+.home .sd-card a {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.home .sd-card a:hover {
+    text-decoration: underline;
+}
+
 /* Data Product */
 
 .data-product h1 {
     color: white;
     padding-left: 2rem;
+    margin-top: 2rem;
 }
 
 .data-product .subtitle p {
     font-size: var(--pst-font-size-h4);
-}
-
-#home .sd-card a {
-    font-weight: bold;
-    text-decoration: none;
-}
-
-#home .sd-card a:hover {
-    text-decoration: underline;
 }
 
 .data-product .header {

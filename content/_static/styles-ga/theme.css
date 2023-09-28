@@ -18,4 +18,6 @@ html {
     --pst-font-size-h4: 1.15rem !important;
     --pst-font-size-h5: 1rem !important;
     --pst-font-size-h6: 1rem !important;
+    --pst-font-family-heading: "Nimbus Sans Novus", sans-serif;
+    --pst-font-family-base-system: "Source Sans Pro", Arial, sans-serif;
 }

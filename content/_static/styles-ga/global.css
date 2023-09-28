@@ -13,13 +13,9 @@
     color: white;
 }
 
-h1 {
-    font-weight: bold;
-    margin-top: 2rem;
-}
-
 h1, h2, h3, h4, h5, h6 {
     color: var(--pst-color-primary);
+    font-weight: bold;
 }
 
 h3, h4, h5, h6 {
