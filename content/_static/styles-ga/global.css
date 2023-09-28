@@ -1,3 +1,8 @@
+h1 {
+    font-weight: bold;
+    margin-top: 2rem;
+}
+
 h1, h2, h3, h4, h5, h6 {
     color: var(--pst-color-primary);
 }
@@ -15,9 +20,8 @@ h4, h5, h6 {
 }
 
 footer.bd-footer {
-    /* background-color: var(--sd-color-primary-bg); */
     padding-top: 24px;
-    background: linear-gradient(1turn, #00718b, var(--pst-color-primary));
+    background: linear-gradient(1turn, var(--pst-color-secondary), var(--pst-color-primary));
 }
 
 footer.bd-footer p,
@@ -28,8 +32,6 @@ footer.bd-footer a {
 footer.bd-footer a {
     font-weight: bold;
     text-decoration: underline;
-    /* border-bottom: 1px solid #000; */
-    /* padding-bottom: 3px; */
 }
 
 footer.bd-footer .footer-heading {
@@ -79,4 +81,46 @@ nav.bd-links a.current.reference {
 
 input[type="search"].form-control {
     border: none;
+}
+
+.bd-content .sd-tab-content {
+    padding-top: 24px;
+}
+
+.bd-content .sd-container-fluid {
+    background-color: #e6edef;
+    padding-bottom: 24px;
+    margin-top: 24px;
+}
+
+.bd-content .sd-card {
+    border: none;
+    box-shadow: none;
+    background-color: white;
+}
+
+.bd-content .sd-card.sd-shadow-xs,
+.bd-content .sd-card.sd-shadow-sm,
+.bd-content .sd-card.sd-shadow-md,
+.bd-content .sd-card.sd-shadow-lg {
+    box-shadow: none !important;
+}
+
+.bd-content .sd-card-title {
+    color: var(--pst-color-primary);
+}
+
+.bd-content .sd-card a {
+    color: var(--pst-color-primary);
+    font-weight: bold;
+}
+
+.bd-content .sd-card:hover {
+    background-color: var(--sd-color-card-hover);
+    transform: none;
+    border: none;
+}
+
+.bd-content table tr:hover {
+    background-color: var(--sd-color-card-hover);
 }

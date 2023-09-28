@@ -1,3 +1,5 @@
+.. rst-class:: home
+
 {{ data["title"] }}
 ===================
 
@@ -9,6 +11,7 @@
    :class: rubric-1
 
 .. grid:: 3
+   :gutter: 3
 
    .. grid-item-card::
 

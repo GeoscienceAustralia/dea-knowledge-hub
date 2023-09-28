@@ -1,34 +1,41 @@
 /* Home */
 
-#home h1 {
+.home h1 {
     display: none;
 }
 
-#home .logo {
+.home .logo {
     max-width: 550px;
     max-height: 225px;
     display: block;
     margin: 0 auto;
 }
 
-#home .rubric {
+.home .rubric {
     border-bottom: none;
 }
 
-#home .rubric.rubric-1 {
+.home .rubric.rubric-1 {
     color: var(--pst-color-primary);
     font-size: var(--pst-font-size-h4);
     font-color: var(--pst-color-text-base);
 }
 
-#home .rubric.rubric-2 {
+.home .rubric.rubric-2 {
     color: var(--pst-color-primary);
     font-size: var(--pst-font-size-h6);
     font-color: var(--pst-color-text-base);
 }
 
-#home .sd-card-header {
-    background-color: var(--sd-color-primary-bg);
+/* Data Product */
+
+.data-product h1 {
+    color: white;
+    padding-left: 2rem;
+}
+
+.data-product .subtitle p {
+    font-size: var(--pst-font-size-h4);
 }
 
 #home .sd-card a {
@@ -42,16 +49,56 @@
 
 .data-product .header {
     position: relative;
+    overflow: hidden;
+    top: calc((var(--pst-font-size-h1) * 2 + 10px + 1rem) * -1);
+    padding-top: calc(var(--pst-font-size-h1) * 2 + 1rem);
+    margin-bottom: calc((var(--pst-font-size-h1) * 2) * -1);
+    z-index: -1;
 }
 
+.data-product .subtitle,
+.data-product .quick-info {
+    width: 65%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.data-product .quick-info,
+.data-product .quick-info dd p,
 .data-product .subtitle p {
-    font-size: var(--pst-font-size-h3);
+    color: white;
 }
 
-.data-product .hero-image img {
-    text-align: right;
+.data-product .subtitle {
+    margin-bottom: 1.5rem;
 }
 
-.data-product .hero-image img {
-    height: 200px;
+.data-product .quick-info dt {
+    padding-left: 0;
+}
+
+.data-product .quick-info dl {
+    margin-bottom: 2rem;
+}
+
+.data-product .hero-box {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: linear-gradient(1turn, var(--pst-color-secondary), var(--pst-color-primary));
+}
+
+.data-product .hero-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 35%;
+    background-image: url("https://www.dea.ga.gov.au/_nuxt/image/3d7bbc.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }

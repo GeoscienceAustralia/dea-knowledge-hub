@@ -1,8 +1,10 @@
+.. rst-class:: data-products-root
+
 {{ data["title"] }}
 ===================
 
 .. grid:: 4
-    :gutter: 2
+    :gutter: 3
 
     {% for item in data["items"] %}
     .. grid-item-card:: {{ item.get("name") }}
