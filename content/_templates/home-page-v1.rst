@@ -49,7 +49,7 @@
 
       `View our service catalogue <example.com>`_
 
-      `Get support <example.com>`_
+      `Get support <{{ config.html_context["support_link"] }}>`_
 
 .. rubric:: About the DEA
    :class: rubric-2
