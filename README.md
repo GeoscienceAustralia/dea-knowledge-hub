@@ -7,6 +7,8 @@ You must have the following installed on your computer.
 * Git
 * Docker
 
+All the other dependencies are installed automatically by Docker. It installs them inside a 'container', so it doesn't install anything on your operating system and it doesn't affect your existing Python version.
+
 ## How to build
 
 **Step 1.** Clone this git repository to your local computer then enter the folder.
