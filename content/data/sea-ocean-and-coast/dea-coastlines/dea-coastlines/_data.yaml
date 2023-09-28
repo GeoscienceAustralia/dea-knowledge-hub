@@ -16,7 +16,7 @@ time_span:
   end: 31 Dec 2022
 update_frequency: Annually
 
-parent_products:
+parent_product:
   name: LANDSAT 5, 7, 8, and 9 Analysis-Ready Data
   link: baseline-data-category.com
 

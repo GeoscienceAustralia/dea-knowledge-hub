@@ -125,8 +125,8 @@
        .. rubric:: Key information
           :name: key-information
 
-       {% if data["parent_products"] %}
-       :Parent product(s): `{{ data["parent_products"]["name"] }} <{{ data["parent_products"]["link"] }}>`_
+       {% if data["parent_product"] %}
+       :Parent product(s): `{{ data["parent_product"]["name"] }} <{{ data["parent_product"]["link"] }}>`_
        {% endif %}
        {% if data["collection"] %}
        :Collection: `{{ data["collection"] }} <example.com>`_
