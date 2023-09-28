@@ -120,3 +120,7 @@ input[type="search"].form-control {
     transform: none;
     border: none;
 }
+
+.bd-content table tr:hover {
+    background-color: var(--sd-color-card-hover);
+}
