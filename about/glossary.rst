@@ -19,7 +19,7 @@ Glossary
       System (EOS) launched in December 1999. ASTER data is used to create detailed maps of
       land surface temperature, reflectance, and elevation.
 
-      For more information, see `NASA: ASTER<https://asterweb.jpl.nasa.gov/>`_.
+      For more information, see `NASA: ASTER. <https://asterweb.jpl.nasa.gov/>`_
 
    Advanced Very-High Resolution Radiometer
    AVHRR
@@ -28,7 +28,7 @@ Glossary
       Atmospheric Administration (NOAA) family of polar orbiting platforms and European MetOp
       satellites.
 
-      For more information, see `ESA: AVHRR<https://earth.esa.int/eogateway/missions/noaa>`_.
+      For more information, see `ESA: AVHRR. <https://earth.esa.int/eogateway/missions/noaa>`_
 
    Aerosol optical depth
       Aerosol optical depth is a measure of the extinction of the solar beam by dust and haze.
@@ -73,9 +73,11 @@ Glossary
 
    Australian Research Environment
    ARE
-      The `Australian Research Environment <https://are.nci.org.au/>`_ is a tool for
+      The ARE is a tool for
       using the data and software available on the :term:`NCI`. It is a replacement for
       the old :term:`VDI` system.
+
+      For more information, see `Australian Research Environment. <https://are.nci.org.au/>`_
 
    Azimuth
       The angle of an object’s position from true north.
@@ -102,8 +104,10 @@ Glossary
 
    Bidirectional Reflectance Distribution Function (BRDF) / Albedo Parameter
       The Bidirectional Reflectance Distribution Function (BRDF)/Albedo parameters provide:
+
       • coefficients for mathematical functions that describe the BRDF of each pixel in the
       seven :term:`MODIS` 'Land' bands (1- 7); and
+
       • :term:`albedo` measurements derived simultaneously from the BRDF for bands 1-7 as well as three
       broad bands (0.4-0.7, 0.7-3.0, and 0.4- 3.0 micrometers).
 
@@ -150,7 +154,7 @@ Glossary
       Australasia Regional Data Hub provides free and open access to data from Europe's Sentinel satellite
       missions for the following South-East Asia and South Pacific region.
 
-      For more information, see `Copernicus Australasia. <https://www.copernicus.gov.au/`_
+      For more information, see `Copernicus Australasia. <https://www.copernicus.gov.au/>`_
 
    Copernicus Programme
       The Copernicus Programme, established in 2014, is the European Union (EU)'s Earth observation programme
@@ -205,7 +209,7 @@ Glossary
       The sensor aboard Landsat 7 that picks up solar radiation reflected by or emitted from the Earth.
       It is an enhanced version of the :term:`Thematic Mapper`.
 
-      For more information, see `NASA Enhanced Thematic Mapper Plus <https://landsat.gsfc.nasa.gov/etm-plus/>`_
+      For more information, see `NASA Enhanced Thematic Mapper Plus. <https://landsat.gsfc.nasa.gov/etm-plus/>`_
 
    Ephemeris
       A table of satellite orbital locations for specific time intervals. The ephemeris data helps
@@ -225,9 +229,13 @@ Glossary
    FC
       Fractional Cover (FC) is a DEA product that uses an algorithm to split the landscape into
       three parts, or fractions;
+
       * green (leaves, grass, and growing crops),
+
       * brown (branches, dry grass or hay, and dead leaf litter), and
+
       * bare ground (soil or rock).
+
       FC provides a representation of the proportions of living vegetation, dry and dying vegetation (including
       deciduous trees during autumn, dying grass, etc.), and bare soils across the Australian continent
       for any point in time in the Landsat archive since 1987.
@@ -296,11 +304,11 @@ Glossary
       
    JupyterLab
       An interactive web-based user interface for editing and running Jupyter notebooks.
-      JupyterLab is used as an analysis environment on both the :item:`DEA Sandbox` and the NCI's
-      :item:`ARE`.
+      JupyterLab is used as an analysis environment on both the :term:`DEA Sandbox` and the NCI's
+      :term:`ARE`.
 
    Landsat
-      A joint :item:`NASA`/:item:`USGS` program of medium resolution satellites that have been
+      A joint :term:`NASA`/:term:`USGS` program of medium resolution satellites that have been
       collecting publicly available Earth observation data continuously since 1972.
 
       For more information, see `Landsat Science <https://landsat.gsfc.nasa.gov/>`_.
