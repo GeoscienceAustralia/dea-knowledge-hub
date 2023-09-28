@@ -7,4 +7,4 @@
    :caption: Sea, Ocean, and Coast
 
    sea-ocean-and-coast/index
-   sea-ocean-and-coast/*/index
+   sea-ocean-and-coast/*/*/index
