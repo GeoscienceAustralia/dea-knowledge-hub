@@ -233,21 +233,21 @@
     .. tab-item:: History
        :name: history-tab
 
-       .. rubric:: Previous versions
-          :name: previous-versions
+       .. rubric:: Old versions
+          :name: old-versions
 
-       {% if data["previous_versions"] %}
+       {% if data["old_versions"] %}
 
        View previous versions of this data product.
 
        .. list-table::
 
-          {% for item in data["previous_versions"] %}
+          {% for item in data["old_versions"] %}
           * - `v{{ item.get("version") }}: {{ item.get("name") }} <{{ item.get("link") }}>`_
             - {{ item.get("release_date") }}
           {% endfor %}
        {% else %}
-       No previous versions available.
+       No old versions available.
        {% endif %}
 
        .. include:: _history.md

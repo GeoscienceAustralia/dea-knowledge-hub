@@ -4,7 +4,6 @@ pydata-sphinx-theme
 myst-parser
 nbsphinx
 sphinx_design
-sphinx-external-toc
 sphinxext-rediraffe
 sphinxcontrib.datatemplates
 sphinx-tags

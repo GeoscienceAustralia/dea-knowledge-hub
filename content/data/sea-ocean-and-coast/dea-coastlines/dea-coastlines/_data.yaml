@@ -73,11 +73,11 @@ code_samples:
 
 # History tab
 
-previous_versions:
+old_versions:
   - version: 2.0.0
     name: DEA Coastlines
     release_date: 22 Sep 2020
-    link: a/b/c/index
+    link: /data-history/dea-coastlines-v2.0.0
 
 # Unused
 

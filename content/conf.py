@@ -20,7 +20,6 @@ extensions = [
     "myst_parser",
     "nbsphinx",
     "sphinx_design",
-    "sphinx_external_toc",
     "sphinxext.rediraffe",
     "sphinxcontrib.datatemplates",
     "sphinx_tags",
@@ -30,9 +29,6 @@ myst_enable_extensions = [
     "colon_fence",
     "attrs_block",
 ]
-
-external_toc_path = "table_of_contents.yaml"
-external_toc_exclude_missing = True
 
 rediraffe_redirects = "redirects.txt"
 
