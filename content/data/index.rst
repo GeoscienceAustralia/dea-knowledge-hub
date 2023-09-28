@@ -6,5 +6,5 @@
    :glob:
    :caption: Sea, Ocean, and Coast
 
-   /data/sea-ocean-and-coast/index
-   /data/sea-ocean-and-coast/*/*/index
+   sea-ocean-and-coast/index
+   sea-ocean-and-coast/*/*/index
