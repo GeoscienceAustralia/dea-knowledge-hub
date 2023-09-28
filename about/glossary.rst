@@ -346,40 +346,57 @@ Glossary
 
       For more information, see `Landsat: Multispectral Scanner. <https://landsat.gsfc.nasa.gov/multispectral-scanner/>`_
 
-   NASA
-      National Aeronautics and Space Administration (United States)
-   
+   Nadir
+      The point of the celestial sphere that is vertically downward from the observer and directly
+      opposite the :term:`zenith`.
+
+   Nadir-corrected :term:`BRDF` Adjusted Reflectance
    NBAR
-      Nadir-corrected BRDF Adjusted Reflectance, where BRDF stands for Bidirectional
-      reflectance distribution function.
-      
+      Surface reflectance data that has been corrected to remove the effects of topography and angular
+      variation using bidirectional reflectance modelling.
+
+   Nadir-corrected :term:`BRDF` Adjusted Reflectance with Terrain illumination correction
    NBART
-      Nadir-corrected BRDF Adjusted Reflectance with terrain illumination reflectance 
-      correction.
-   
-   NBR
-      Normalised Burn Ratio, calculated from near-infrared (NIR) and short wave infrared
-      (SWIR).
+      Surface reflectance data that has been corrected to remove the effects of topography and angular
+      variation using bidirectional reflectance modelling, as well as corrected for the effects of terrain
+      shadow.
 
+   National Aeronautics and Space Administration
+   NASA
+      The United States of America's federal government's civil space, aeronautics and space research agency.
+   
+   National Computational Infrastructure
    NCI
+      A national facility that provides world-class, high-end computing services to Australian researchers,
+      including those working in the data-intensive areas of climate and Earth system science.
 
-      The Australian `National Computational Infrastructure
-      <https://www.nci.org.au/>`_ is Australia's national research computing
-      facility. It provides computing facilities for Australian researchers,
-      industry and government.
+      For more information, see `National Computational Infrastructure <https://www.nci.org.au/>`_
 
+   National Oceanic and Atmospheric Administration
+   NOAA
+      A scientific agency within the United States Department of Commerce that focuses on the conditions of
+      the oceans, major waterways and atmosphere.
+
+      For more information, see `NOAA. <https://www.noaa.gov/>`_
+
+   Normalised Burn Ratio
+   NBR
+      Calculated from near-infrared (:term:`NIR`) and short wave infrared (:term:`SWIR`).
+
+   Normalised Difference Vegetation Index
    NDVI
-      Normalised Difference Vegetation Index, calculated from visible and near-infrared
-      light reflected by vegetation. 
-   
+      Calculated from visible and near-infrared (:term:`NIR`) light reflected by vegetation.
+
+   National Intertidal Digital Elevation Model
    NIDEM
-      National Intertidal Digital Elevation Model, a Digital Earth Australia product 
-      derived from ITEM that maps the elevation relative to Mean Sea Level of the 
-      Australian intertidal zone. For more information see https://www.dea.ga.gov.au/products/dea-intertidal-elevation.
+      A Digital Earth Australia product derived from :term:`ITEM` that maps the elevation relative
+      to Mean Sea Level of the Australian intertidal zone.
+
+      For more information, see `NIDEM. <https://www.dea.ga.gov.au/products/dea-intertidal-elevation>`_
       
    NIR
       Near Infrared, referring to particular bands used to collect Earth observation 
-      data
+      data. 0.7 - 0.9 micrometers.
   
    NRT
      Near-real time. NRT data is a less refined/calibrated dataset, which is 
@@ -421,6 +438,8 @@ Glossary
       terminal interface. It comes build in with Linux, but requires additional software
       to use it from Windows computers.
 
+SWIR
+
    Telemetry
       The science and technology of automatic measurement and transmission of data by wire,
       radio or other means from remote sources (e.g. space vehicles) to receiving stations
@@ -461,3 +480,5 @@ Glossary
       It is used throughout DEA for metadata files, product
       definitions and other configuration files.
 
+   Zenith
+      The point on the celestial sphere directly above the observer, and directly opposite to :term:`nadir`.
