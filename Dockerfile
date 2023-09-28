@@ -14,4 +14,4 @@ RUN python3 -m pip install -r /docs/requirements.txt
 
 EXPOSE 8011
 
-CMD /bin/bash -c "/docs/scripts/start.sh"
+CMD /bin/bash -c "/docs/scripts/docker-start.sh"
