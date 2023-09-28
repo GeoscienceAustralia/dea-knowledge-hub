@@ -3,11 +3,6 @@ h1 {
     margin-top: 2rem;
 }
 
-.bd-article h1 {
-    color: white;
-    padding-left: 2rem;
-}
-
 h1, h2, h3, h4, h5, h6 {
     color: var(--pst-color-primary);
 }
@@ -113,6 +108,11 @@ input[type="search"].form-control {
 
 .bd-content .sd-card-title {
     color: var(--pst-color-primary);
+}
+
+.bd-content .sd-card a {
+    color: var(--pst-color-primary);
+    font-weight: bold;
 }
 
 .bd-content .sd-card:hover {

@@ -27,6 +27,13 @@
     font-color: var(--pst-color-text-base);
 }
 
+/* Data Product */
+
+.data-product h1 {
+    color: white;
+    padding-left: 2rem;
+}
+
 .data-product .subtitle p {
     font-size: var(--pst-font-size-h4);
 }
@@ -37,6 +44,7 @@
     top: calc((var(--pst-font-size-h1) * 2 + 10px + 1rem) * -1);
     padding-top: calc(var(--pst-font-size-h1) * 2 + 1rem);
     margin-bottom: calc((var(--pst-font-size-h1) * 2) * -1);
+    z-index: -1;
 }
 
 .data-product .subtitle,
