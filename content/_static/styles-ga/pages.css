@@ -4,13 +4,6 @@
     display: none;
 }
 
-.home .logo {
-    max-width: 550px;
-    max-height: 225px;
-    display: block;
-    margin: 0 auto;
-}
-
 .home .rubric {
     border-bottom: none;
 }

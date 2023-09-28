@@ -3,9 +3,8 @@
 {{ data["title"] }}
 ===================
 
-.. image:: https://docs.dea.ga.gov.au/_images/dea-logo-inline.svg
+.. image:: _static/images/home-page-hero.png
    :alt: Digital Earth Australia logo
-   :class: logo
 
 .. rubric:: Welcome to the DEA Documentation
    :class: rubric-1
