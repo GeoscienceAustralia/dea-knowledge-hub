@@ -62,8 +62,8 @@ html_theme_options = {
     "footer_end": [],
     "navigation_with_keys": False,
     "search_bar_text": "Search ...",
-    "show_nav_level": 1,
     "show_prev_next": False,
+    "show_nav_level": 1,
 }
 
 suppress_warnings = ["myst.header"]
