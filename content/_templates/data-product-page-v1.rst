@@ -37,13 +37,13 @@
     .. tab-item:: Overview
        :name: overview-tab
 
-       .. container::
-          :name: notifications
-
           {% if not data["is_latest_version"] %}
-          .. ADMONITION:: This is an old version (v{{ data["version"] }})
-          
-             See the `latest version of the product <{{ data["latest_version_link"] }}>`_.
+          .. container::
+             :name: notifications
+
+             .. ADMONITION:: This is an old version (v{{ data["version"] }})
+             
+                See the `latest version of the product <{{ data["latest_version_link"] }}>`_.
           {% endif %}
 
        .. container::
