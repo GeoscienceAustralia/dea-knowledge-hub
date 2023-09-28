@@ -393,52 +393,169 @@ Glossary
       to Mean Sea Level of the Australian intertidal zone.
 
       For more information, see `NIDEM. <https://www.dea.ga.gov.au/products/dea-intertidal-elevation>`_
-      
+
+   Near Infrared
    NIR
-      Near Infrared, referring to particular bands used to collect Earth observation 
-      data. 0.7 - 0.9 micrometers.
-  
+      Radiation just beyond the visible light spectrum. In Landsat and Sentinel 2 Earth observation
+      satellites, it refers to radiation between 0.7 - 0.9 micrometers.
+
+   Near-real time
    NRT
-     Near-real time. NRT data is a less refined/calibrated dataset, which is 
-     available much sooner after satellite acquisition than standard ARD data. 
-   
-   ODC
+      NRT data is a less refined/calibrated dataset, which is available much sooner after satellite
+      acquisition than standard :term:`ARD` data.
+
+      For more information, see `DEA dataset maturity. <https://docs.dea.ga.gov.au/reference/dataset_maturity_guide.html>`_
+
    Open Data Cube
-      The `Open Data Cube <https://www.opendatacube.org>`_ is an international 
-      open-source project developing the software used by Digital Earth Australia.
+   ODC
+      An open source geospatial data management and analysis software project. It is a global initiative
+      to increase the value and use of satellite data by providing users with access to free and open
+      data management technologies and analysis platforms.
+
+      At its core, ODC is a set of Python libraries and a :term:`PostgreSQL` database that allows you to work
+      with geospatial raster data.
+
+      For more information, see `Open Data Cube. <https://www.opendatacube.org>`_
+
+   Operational Land Imager
+   OLI
+      The Operational Land Imager is carried by the Landsat 8 satellite. It measures in the visible,
+      near infrared (:term:`NIR`), and short wave infrared (:term:`SWIR`) portions of the spectrum. Its images
+      have 15-meter (49 ft.) :term:`panchromatic` and 30-meter multi-spectral spatial resolutions along a 185 km
+      (115 miles) wide swath.
+
+      For more information, see `Landsat 8. <https://landsat.gsfc.nasa.gov/satellites/landsat-8/>`_
+
+   Operational Land Imager 2
+   OLI2
+      The OLI-2 instrument is carried by the Landsat 9 satellite. It provides visible and near infrared
+      / shortwave infrared (VNIR/:term:`SWIR`) imagery consistent with previous Landsat spectral, spatial, radiometric
+      and geometric qualities.
+
+      The OLI-2 instrument includes an optical telescope, Focal Plane Array / Focal Plane Electronics,
+      calibration hardware, and instrument support electronics. OLI-2 provides data for nine spectral bands with a
+      maximum ground sampling distance (GSD), both in-track and cross track, of 30 m (98 ft) for all bands
+      except the panchromatic band, which has a 15 m (49 ft) GSD.
+
+      For more information, see `Landsat 9 instruments. <https://landsat.gsfc.nasa.gov/satellites/landsat-9/landsat-9-instruments/>`_
+
+   Panchromatic
+      Sensitive to many wavelengths of light.
+
+   Pixel
+      The minimum size area on the ground detectable by a remote sensing device. The size varies depending
+      on the type of sensor.
+
+   Pixel quality
+   PQ
+     A categorical assessment of the quality of an observation at the pixel level.
+
+   Polar orbit
+      An orbit with an orbital inclination of near 90 degrees where the satellite ground track will cross
+      both polar regions once during each orbit. The term describes the near-polar orbits of a spacecraft.
 
    PostgreSQL
-      The high performance database engine used as an index of Datasets by the
-      Data Cube. It is both a relational and document database, and the Data
-      Cube schema makes use of both of these capabilities.
+      Also known as Postgres, it is an open source object-relational database management system with an
+      emphasis on extensibility and standards compliance. It is a high performance database engine used as
+      both a relational and document database by the :term:`Open Data Cube`.
+
+   Process
+      The generation of some form of output as the result of a set of actions, which may include sub-processes.
 
    Product
       A categorical term applied to describe the output from a process. Typically, a product has
       an associated product definition which contains the product description and specification.
-   
-   PQ
-     Pixel quality
 
    Python
-      `Python <https://www.python.org/>`_ is the programming language used to 
-      develop the Open Data Cube and most of Digital Earth Australia. It is an easy
-      to use language, which also provides simple access to high performance 
-      processing capabilities.
+      The programming language used to develop the :term:`Open Data Cube` and most of
+      :term:`Digital Earth Australia`. It is an easy to use language, which also provides simple
+      access to high performance processing capabilities.
 
-   SAR
-      Synthetic Aperture Radar
-   
-   Sentinel
-      A program of satellites from ESA that collect publicly available Earth 
-      observation data. The program includes the medium resolution Sentinel-2 mission, 
-      and the Sentinel-1 SAR mission.
-   
+      For more information, see `Python. <https://www.python.org/>`_
+
+   Radiance
+      The amount of light directly detected by remote sensing instruments.
+
+   Radiometer
+       A device that detects and measures electromagnetic radiation.
+
+   Radiometric
+      Relating to, using, or measured by a :term:`radiometer`. The measurement of radiation.
+
+   Raster data
+      An abstraction of the real world where spatial data is expressed as a matrix of cells or :term:`pixel`s,
+      with spatial position implicit in the ordering of the pixels. With the raster data model, spatial
+      data is not continuous but divided into discrete units. This makes raster data particularly suitable
+      for certain types of spatial operations (e.g. overlays or area calculations). Unlike :term:`vector data`,
+      there are no implicit topological relationships.
+
+   Raw data
+      Numerical values representing the direct observations output by a measuring instrument. The values
+      are transmitted as a bit stream in the order they were obtained.
+
+   Real time
+      The time in which reporting on events or recording of events is simultaneous with the events. For
+      example, the real time of a satellite is the time in which it simultaneously reports its environment
+      as it encounters it.
+
+   Reflectance
+      The measure of the proportion of light or other radiation striking a surface which is reflected off it.
+
+   Relative azimuth (degrees)
+      The relative :term:`azimuth` angle between the sun and view directions.
+
+   Relative slope (degrees)
+      The relative :term:`azimuth` angle between the incident and exiting directions in the slope geometry.
+
+   Remote sensing
+      The measurement or acquisition of information about some property of an object or phenomenon, by a
+      recording device that is not in physical or intimate contact with the object or phenomenon under study.
+
+   Resampling
+      Modifying the geometry of an image, which may be from either a remotely sensed or map data source.
+      This process usually involves rectification and/or registration.
+
+   Resolution
+      A measure of the amount of detail that can be seen in an image; i.e. the size of the smallest object
+      recognisable using the detector.
+
+      In remotely sensed imagery, resolution is significant in four measurement dimensions: spectral, spatial,
+      radiometric and temporal.
+
+   Satellite azimuth (degrees)
+      The angle of the satellite’s position from true north; i.e. the angle between true north and a
+      vertical circle passing through the satellite and the point being imaged on Earth.
+
+   Satellite view or satellite zenith (degrees)
+      The angle between the zenith and the satellite.
+
+   Saturation
+      The intensity of a colour. A highly saturated colour is vivid and brilliant. To dull a colour and
+      decrease its saturation, add small amounts of its complement, making it closer to grey.
+
+   Scene
+      A defined portion of the continuous strips of data collected by satellites. Satellite data is broken up
+      into scenes for ease in handling and cataloguing.
+
+   Secure Shell
    SSH
       SSH or Secure Shell is a means to access remote computers using a text based
       terminal interface. It comes build in with Linux, but requires additional software
       to use it from Windows computers.
 
+   Sentinel
+      A program of satellites from Europe that collect publicly available Earth
+      observation data. Each satellite has a different purpose or capability, and together, they address six
+      thematic areas: land, marine, atmosphere, climate change, emergency management and security.
+
+      For more information, see `Copernicus: Discover our satellites. <https://www.copernicus.eu/en/about-copernicus/infrastructure-overview/discover-our-satellites>`_
+   
+
+
 SWIR
+   Synthetic Aperture Radar
+   SAR
+      Synthetic Aperture Radar
 
    Telemetry
       The science and technology of automatic measurement and transmission of data by wire,
@@ -456,7 +573,9 @@ SWIR
 
    USGS
       United States Geological Survey
-      
+
+Vector data
+
    VDI
       The Virtual Desktop Infrastructure was a service offered by the :term:`NCI`
       that provided a linux desktop environment for scientific computing. It has
