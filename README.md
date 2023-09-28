@@ -22,10 +22,18 @@ git clone --depth 1 --branch dea-docs-v2 git@github.com:GeoscienceAustralia/dea-
 * `FETCH_NOTEBOOKS` &mdash; `Yes` or `No`
 * `BUILD_MODE` &mdash; `Development` or `Production`
 
-**Step 3.** Build and run the Docker image by running the following command.
+**Step 3.** Build and run the Docker image.
+
+If you are using Mac or Linux, run:
 
 ```bash
 make
+```
+
+Or, if you are using Windows PowerShell, run:
+
+```powershell
+bash make.sh
 ```
 
 **Step 4.** Open your web browser at <http://localhost:8011/>
