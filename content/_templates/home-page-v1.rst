@@ -1,3 +1,5 @@
+.. rst-class:: home
+
 {{ data["title"] }}
 ===================
 

@@ -1,3 +1,5 @@
+.. rst-class:: data-products-root
+
 {{ data["title"] }}
 ===================
 
