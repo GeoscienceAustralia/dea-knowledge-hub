@@ -26,14 +26,14 @@ git clone --depth 1 --branch dea-docs-v2 git@github.com:GeoscienceAustralia/dea-
 
 If you are using Mac or Linux, run:
 
-```bash
+```Shell
 make
 ```
 
-Or, if you are using Windows PowerShell, run:
+Or, if you are using Windows, run:
 
-```powershell
-bash make.sh
+```Batchfile
+make.cmd
 ```
 
 **Step 4.** Open your web browser at <http://localhost:8011/>
