@@ -49,7 +49,7 @@
              :name: access-cards
 
              .. grid:: 4
-                :gutter: 2
+                :gutter: 3
 
                 {% for item in data["maps"] %}
                 .. grid-item-card:: {{ item.get("title", "See the map") }}
