@@ -549,13 +549,55 @@ Glossary
       thematic areas: land, marine, atmosphere, climate change, emergency management and security.
 
       For more information, see `Copernicus: Discover our satellites. <https://www.copernicus.eu/en/about-copernicus/infrastructure-overview/discover-our-satellites>`_
-   
 
+   Short-Wave Infrared
+   SWIR
+      Radiation beyond the visible light spectrum. In Landsat and Sentinel 2 Earth observation
+      satellites, it refers to radiation between 1.5 - 2.4 micrometers.
 
-SWIR
+   Solar azimuth (degrees)
+      The angle of the sun’s position from true north; i.e. the angle between true north and a vertical
+      circle passing through the sun and the point being imaged on Earth.
+
+   Solar irradiance
+      The solar irradiance is the output of light energy from the entire disk of the Sun, measured at
+      the Earth.
+
+   Solar zenith (degrees)
+      The angle between the :term:`zenith` and the centre of the sun’s disc.
+
+   Solar Zenith Angle (SZA)
+      The angle between the local :term:`zenith` (i.e. directly above the point on the ground) and
+      the line of sight from that point to the sun.
+
+   Spatial resolution
+      The area on the ground that an imaging system, such as a satellite sensor, can distinguish.
+
+      See also :term:`resolution`.
+
+   Spectral response
+      The ratio of the relative amplitude of the response of a detector and the frequency of
+      incident electromagnetic radiation.
+
+   Spectrometer
+      An optical instrument that splits the light received from an object into its component
+      wavelengths by means of a diffraction grating, and then measures the amplitudes of the
+      individual wavelengths.
+
+   Sun-synchronous orbit
+      An orbit in which a satellite is always in the same position with respect to the rotating
+      Earth at the same time of day.
+
+   Surface reflectance
+      The fraction of incoming solar radiation that is reflected from Earth's surface for specific
+      incident or viewing cases (directional, conical, and hemispherical cases).
+
    Synthetic Aperture Radar
    SAR
-      Synthetic Aperture Radar
+      An imaging radar mounted on an instant moving platform. The signal is responsive to surface
+      characteristics like structure and moisture.
+
+      For more information, see: `NASA - What is Synthetic Aperture Radar? <https://www.earthdata.nasa.gov/learn/backgrounders/what-is-sar>`_
 
    Telemetry
       The science and technology of automatic measurement and transmission of data by wire,
@@ -569,34 +611,90 @@ SWIR
       for agricultural applications and identification of land use. It continuously scans the surface
       of the Earth, simultaneously acquiring data in seven spectral channels.
 
-      For more information see `NASA Thematic Mapper Plus <https://landsat.gsfc.nasa.gov/thematic-mapper/>`_
+      For more information, see `NASA Thematic Mapper Plus. <https://landsat.gsfc.nasa.gov/thematic-mapper/>`_
 
+   Thematic Real-time Environmental Distributed Data Services
+   THREDDS
+      An National Computational Infrastructure (:term:`NCI`) server, which is a high-performance and
+      high-availability installation of Unidata's Thematic Real-time Environmental Distributed Data
+      Services (THREDDS).
+
+      THREDDS serves many of NCI’s open data collections at the file level, as well as some aggregations.
+      It provides many different types of services to allow individual files to be selected, as well as
+      more advanced services such as OpenDAP, NetCDF subsetting, OGC WCS and WMS.
+
+      For more information, see `NCI: Data Services. <https://nci.org.au/our-services/data-services>`_
+
+   Timedelta (seconds)
+      The time in seconds from satellite apogee (the point of orbit at which the satellite is furthest
+      from the Earth).
+
+   United States Geological Survey
    USGS
-      United States Geological Survey
+      A scientific agency of the United States government. The scientists of the USGS study the landscape
+      of the United States, its natural resources, and the natural hazards that threaten it. The USGS and
+      :term:`NASA` jointly run the Landsat program of earth observation satellites.
 
-Vector data
+      For more information, see `USGS. <https://www.usgs.gov/>`_
 
+   Vector data
+      Vector data, when used in the context of spatial or map information, refers to a format where all
+      map data is stored as points, lines, and areas rather than as an image or continuous tone picture.
+      These vector data have location and attribute information associated with them.
+
+   Virtual Desktop Infrastructure
    VDI
       The Virtual Desktop Infrastructure was a service offered by the :term:`NCI`
       that provided a linux desktop environment for scientific computing. It has
       been replaced by :term:`ARE`.
 
-   WOFL
-      Water Observation Feature Layer (a WO observation for one point in time)
-            
-   WO
-      Water Observations (previously called Water Observations from Space), 
-      a Digital Earth Australia product that provides
-      images and data showing where water has been seen in Australia from 1987 to 
-      the present. For more information see https://www.dea.ga.gov.au/products/dea-water-observations.
-      
-   xarray
-      An open source project and Python package that for working with labelled 
-      multi-dimensional arrays such as those returned by the Open Data Cube (ODC).
+   Visible Infrared Imaging Radiometer Suite
+   VIIRS
+      The Visible Infrared Imaging Radiometer Suite (VIIRS) is one of the key instruments onboard the
+      NOAA-20 spacecraft, as well as the Suomi-NPP satellite. It collects visible and infrared imagery
+      and global observations of land, atmosphere, cryosphere and oceans.
 
+      For more information, see `Joint Polar Satellite System. <https://www.nesdis.noaa.gov/our-satellites/currently-flying/joint-polar-satellite-system>`_
+
+   Water Observation Feature Layer
+   WOFL
+      A :term:`WO` observation for one point in time
+
+   Water Observations
+   WO
+      Previously called Water Observations from Space. A Digital Earth Australia product that classifies
+      satellite pixels into 'wet', 'dry', or 'invalid' (e.g. cloudy or a poor quality observation).
+
+      For more information see `Water Observations. <https://www.dea.ga.gov.au/products/dea-water-observations>`_
+
+   Wavelength
+      The distance from crest to crest, or trough to trough, of an electromagnetic or other wave. The longer
+      the wavelength, the lower the frequency.
+
+   Web Map Service
+   WMS
+      A HTTP interface for requesting geo-registered map images that can be displayed in a browser application
+      or GIS software system.
+
+   Web Feature Service
+   WFS
+      An interface for querying, modifying and exchanging features or values in a database and retrieving features
+      for use.
+
+   World Reference System
+      A global indexing scheme designed for the Landsat Program. It is based on nominal scene centres defined
+      by path and row coordinates.
+
+      For more information, see `NASA: World Reference System. <https://landsat.gsfc.nasa.gov/about/the-worldwide-reference-system/>`_
+
+   xarray
+      An open source project and Python package for working with labelled
+      multi-dimensional arrays such as those returned by the :term:`Open Data Cube` (ODC).
+
+   Yet Another Markup Language
    YAML
-      `YAML <https://yaml.org/>`_ is a human readable data storage format.
-      It is used throughout DEA for metadata files, product
+      A human readable data storage format.
+      It is used throughout :term:`DEA` for metadata files, product
       definitions and other configuration files.
 
    Zenith
