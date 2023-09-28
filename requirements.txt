@@ -6,4 +6,3 @@ nbsphinx
 sphinx_design
 sphinxext-rediraffe
 sphinxcontrib.datatemplates
-sphinx-tags

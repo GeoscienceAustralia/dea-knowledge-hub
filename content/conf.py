@@ -22,7 +22,6 @@ extensions = [
     "sphinx_design",
     "sphinxext.rediraffe",
     "sphinxcontrib.datatemplates",
-    "sphinx_tags",
 ]
 
 myst_enable_extensions = [
@@ -31,16 +30,6 @@ myst_enable_extensions = [
 ]
 
 rediraffe_redirects = "redirects.txt"
-
-tags_create_tags = True
-tags_overview_title = "Tags"
-tags_page_title = "Pages with tag"
-tags_output_dir = "tags"
-tags_extension = ["rst", "md", "ipynb"]
-tags_create_badges = True
-tags_badge_colors = {
-    "*": "bdg-button-link-primary-outline"
-}
 
 html_sidebars = {
     "index": [],
