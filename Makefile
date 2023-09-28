@@ -1,2 +1,3 @@
 .DEFAULT:
+run:
 	./make.sh "$@"

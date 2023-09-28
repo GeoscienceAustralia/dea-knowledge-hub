@@ -12,6 +12,10 @@ entries:
           - caption: DEA Coastlines
             entries:
               - glob: data/sea-ocean-and-coast/dea-coastlines/*/index
+  - title: Tags
+    file: tags/tagindex/*
+    entries:
+      - glob: tags/*
 
   # - file: notebooks/README
   #   title: Notebooks

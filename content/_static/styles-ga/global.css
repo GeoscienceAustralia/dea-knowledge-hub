@@ -135,3 +135,17 @@ input[type="search"].form-control {
 .bd-content table tr:hover {
     background-color: var(--sd-color-card-hover);
 }
+
+.bd-content .sd-bg-bdg-button-link-primary-outline {
+    border-color: var(--sd-color-primary) !important;
+    color: var(--sd-color-primary) !important;
+    border-style: solid !important;
+    border-width: 1px !important;
+}
+
+.bd-content .sd-bg-bdg-button-link-primary-outline:hover {
+    background-color: var(--sd-color-primary) !important;
+    color: var(--sd-color-primary-text) !important;
+    border-color: var(--sd-color-primary) !important;
+    border-width: 1px !important;
+}

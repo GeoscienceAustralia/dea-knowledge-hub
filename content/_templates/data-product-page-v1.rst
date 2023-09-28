@@ -142,10 +142,6 @@
        :Published by: {{ data["author"] }}
        {% endif %}
 
-       ----
-
-       .. tags:: {{ data["tags"]|join(', ') }}
-
     .. tab-item:: Access
        :name: access-tab
 

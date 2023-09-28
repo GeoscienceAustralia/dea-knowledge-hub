@@ -20,10 +20,6 @@ parent_product:
   name: LANDSAT 5, 7, 8, and 9 Analysis-Ready Data
   link: baseline-data-category.com
 
-tags:
-  - Geoscience_Australia_Landsat_Collection_3
-  - DEA_CoastLines
-
 collection: Geoscience Australia Landsat Collection 3
 resource_type: Derivative
 published: 15 Aug 2023
