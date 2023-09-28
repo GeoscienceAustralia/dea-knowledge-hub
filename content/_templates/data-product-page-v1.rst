@@ -129,7 +129,7 @@
        :Parent product(s): `{{ data["parent_product"]["name"] }} <{{ data["parent_product"]["link"] }}>`_
        {% endif %}
        {% if data["collection"] %}
-       :Collection: `{{ data["collection"] }} <example.com>`_
+       :Collection: {{ data["collection"] }}
        {% endif %}
        {% if data["doi"] %}
        :DOI: {{ data["doi"] }}
