@@ -71,6 +71,11 @@ footer.bd-footer ul {
     padding: 0;
 }
 
+footer.bd-footer .policy-links li {
+    display: inline;
+    margin-right: 1rem;
+}
+
 .rubric {
     font-size: var(--pst-font-size-h2) !important;
     font-weight: normal !important;
