@@ -118,13 +118,11 @@
              {% endfor %}
 
        .. rubric:: About
-          :name: about
 
        .. include:: _about.md
           :parser: myst_parser.sphinx_
 
        .. rubric:: Key information
-          :name: key-information
 
        {% if data["parent_product"] %}
        :Parent product(s): `{{ data["parent_product"]["name"] }} <{{ data["parent_product"]["link"] }}>`_
@@ -147,7 +145,6 @@
        :name: access-tab
 
        .. rubric:: Access the data
-          :name: access-data
 
        .. list-table::
           :name: access-table
@@ -235,7 +232,6 @@
        :name: history-tab
 
        .. rubric:: Old versions
-          :name: old-versions
 
        {% if data["old_versions"] %}
 
