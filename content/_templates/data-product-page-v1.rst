@@ -27,11 +27,9 @@
       :Update frequency: {{ data["update_frequency"] }}
       :Product ID: {{ data["product_id"] }}
 
-      .. container:: hero-box
+   .. container:: hero-image
 
-         .. container:: hero-image
-
-            |nbsp|
+      |nbsp|
 
 {% if not data["is_latest_version"] %}
 .. container::
