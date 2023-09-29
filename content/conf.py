@@ -48,7 +48,7 @@ html_theme_options = {
     "navbar_end": ["search-field"],
     "navbar_persistent": [],
     "secondary_sidebar_items": [],
-    "footer_start": ["footer-v1"],
+    "footer_start": ["footer"],
     "footer_end": [],
     "navigation_with_keys": False,
     "search_bar_text": "Search ...",
