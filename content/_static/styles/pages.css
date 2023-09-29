@@ -94,6 +94,10 @@
     }
 }
 
+.data-product .header dt {
+    padding-left: 0;
+}
+
 .data-product .header dl {
     margin-bottom: 0;
 }
