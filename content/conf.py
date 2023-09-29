@@ -45,12 +45,13 @@ html_css_files = [
 ]
 
 html_theme_options = {
+    "navbar_start": ["navbar-logo"],
     "navbar_center": ["navbar-nav"],
     "navbar_end": ["search-field"],
     "navbar_persistent": [],
     "secondary_sidebar_items": [],
     "footer_start": ["footer-v1"],
-    "footer_end": [],
+    "footer_end": ["sticky-js-v1"],
     "navigation_with_keys": False,
     "search_bar_text": "Search ...",
     "show_prev_next": False,
