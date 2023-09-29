@@ -146,8 +146,6 @@
     .. tab-item:: Access
        :name: access-tab
 
-       **In this section:** `Access the data <#access-the-data>`_, `Access notes <#access-notes>`_, `Publications <#publications>`_
-
        .. rubric:: Access the data
           :name: access-the-data
 
