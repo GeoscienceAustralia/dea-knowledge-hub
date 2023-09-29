@@ -76,12 +76,6 @@ footer.bd-footer .policy-links li {
     margin-right: 2rem;
 }
 
-.rubric {
-    font-size: var(--pst-font-size-h2) !important;
-    font-weight: normal !important;
-    border-bottom: none !important;
-}
-
 .bd-content .sd-tab-set > label:hover {
     border-top: none;
 }
