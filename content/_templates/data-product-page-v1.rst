@@ -232,11 +232,29 @@
     .. tab-item:: Details
        :name: details-tab
 
+       .. container:: table-of-contents
+
+          **In this section:**
+
+          .. container::
+             :name: details-table-of-contents
+
+             |nbsp|
+
        .. include:: _details.md
           :parser: myst_parser.sphinx_
 
     .. tab-item:: Quality
        :name: quality-tab
+
+       .. container:: table-of-contents
+
+          **In this section:**
+
+          .. container::
+             :name: quality-table-of-contents
+
+             |nbsp|
 
        .. include:: _quality.md
           :parser: myst_parser.sphinx_
