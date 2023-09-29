@@ -21,11 +21,16 @@
 
    .. container:: quick-info
 
-      {% if not data["is_latest_version"] %}:Version: {{ data["version"] }} (`See latest version <{{ data["latest_version_link"] }}>`_){% else %}:Version: {{ data["version"] }} (Latest){% endif %}
+      {% if not data["is_latest_version"] %}
+      :Version: {{ data["version"] }} (`See latest version <{{ data["latest_version_link"] }}>`_)
+      {% else %}:Version: {{ data["version"] }} (Latest)
+      {% endif %}
       :Product type: {{ data["product_type"] }}; {{ data["spatial_data_type"] }}
       :Time span: {{ data["time_span"]["start"] }} – {{ data["time_span"]["end"] }}
       :Update frequency: {{ data["update_frequency"] }}
+      {% if data["product_id"] %}
       :Product ID: {{ data["product_id"] }}
+      {% endif %}
 
    .. container:: hero-image
 

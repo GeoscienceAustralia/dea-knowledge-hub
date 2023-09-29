@@ -61,7 +61,6 @@
     z-index: 0;
 }
 
-
 .data-product .header {
     position: relative;
     top: calc(-1 * var(--pst-font-size-h1) * 2);
