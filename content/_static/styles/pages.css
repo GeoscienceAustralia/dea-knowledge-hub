@@ -65,6 +65,7 @@
 .data-product .header {
     position: relative;
     top: calc(-1 * var(--pst-font-size-h1) * 2);
+    margin-bottom: calc(-1 * var(--pst-font-size-h1) * 2);
     background: linear-gradient(1turn, var(--pst-color-secondary), var(--pst-color-primary));
     padding: 2rem;
     z-index: -1;
