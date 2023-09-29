@@ -16,6 +16,8 @@ html_favicon = "https://docs.dea.ga.gov.au/_static/dea-favicon.ico"
 html_theme = 'pydata_sphinx_theme'
 language = "en"
 
+html_permalinks = False
+
 extensions = [
     "myst_parser",
     "nbsphinx",
