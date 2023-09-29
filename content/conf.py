@@ -37,9 +37,9 @@ html_sidebars = {
 }
 
 html_css_files = [
-    'styles-ga/theme.css',
-    'styles-ga/global.css',
-    'styles-ga/pages.css',
+    'styles/themevars.css',
+    'styles/global.css',
+    'styles/pages.css',
 ]
 
 html_theme_options = {
