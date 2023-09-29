@@ -5,6 +5,7 @@ RUN apk add git
 RUN apk add bash
 RUN apk add pandoc
 
+RUN mkdir -p /docs/scripts
 RUN mkdir -p /docs/content
 RUN mkdir -p /docs/_build
 
