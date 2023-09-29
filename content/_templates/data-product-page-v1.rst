@@ -33,19 +33,19 @@
 
             |nbsp|
 
+{% if not data["is_latest_version"] %}
+.. container::
+   :name: notifications
+
+   .. ADMONITION:: This is an old version
+   
+      See the `latest version of the product <{{ data["latest_version_link"] }}>`_.
+{% endif %}
+
 .. tab-set::
 
     .. tab-item:: Overview
        :name: overview-tab
-
-       {% if not data["is_latest_version"] %}
-       .. container::
-          :name: notifications
-
-          .. ADMONITION:: This is an old version (v{{ data["version"] }})
-          
-             See the `latest version of the product <{{ data["latest_version_link"] }}>`_.
-       {% endif %}
 
        .. include:: _about.md
           :parser: myst_parser.sphinx_
