@@ -15,25 +15,17 @@
 
    .. grid-item-card::
 
-      **Access the data**
-      ^^^
+      Access the data ...
+      ^^^^^^^^^^^^^^^^^^^
 
-      `Land and vegetation <example.com>`_
-
-      `Inland water <example.com>`_
-
-      `Sea, ocean and coast <data/sea-ocean-and-coast/>`_
-
-      `Baseline satellite data <example.com>`_
-
-      `Hazards <example.com>`_
-
-      `Data services <example.com>`_
+      {% for item in data["data"] %}
+      `{{ item.get("name") }} <{{ item.get("link") }}>`_
+      {% endfor %}
 
    .. grid-item-card::
 
-      **Use the data**
-      ^^^
+      Use the data ...
+      ^^^^^^^^^^^^^^^^
    
       `Get started with DEA <example.com>`_
 
@@ -45,8 +37,8 @@
 
    .. grid-item-card::
 
-      **Our program**
-      ^^^
+      Our program ...
+      ^^^^^^^^^^^^^^^
 
       `View our service catalogue <example.com>`_
 
