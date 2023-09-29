@@ -1,9 +1,9 @@
 title: Sea, Ocean, and Coast
 
-items:
+catalogues:
   - name: DEA Coastlines
     id: dea-coastlines
-    items:
+    products:
       - name: DEA Coastlines
         image: https://www.gifpng.com/300x200
         link: dea-coastlines/dea-coastlines

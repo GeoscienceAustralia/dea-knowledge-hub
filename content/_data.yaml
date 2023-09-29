@@ -1,6 +1,6 @@
 title: Home
 
-access_links:
+themes:
   - name: Baseline satellite data
     link: example.com
   - name: Land and vegetation
@@ -8,7 +8,7 @@ access_links:
   - name: Inland water
     link: example.com
   - name: Sea, ocean, and coast
-    link: sea-ocean-and-coast
+    link: data/sea-ocean-and-coast
   - name: Hazards
     link: example.com
   - name: Data services

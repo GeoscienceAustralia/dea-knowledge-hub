@@ -1,6 +1,6 @@
 title: Data Products
 
-product_types:
+themes:
   - name: Baseline satellite data
     image: https://www.gifpng.com/300x200
     link: example.com
