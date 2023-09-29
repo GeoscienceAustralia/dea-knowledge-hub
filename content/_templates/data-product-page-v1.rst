@@ -47,6 +47,9 @@
              See the `latest version of the product <{{ data["latest_version_link"] }}>`_.
        {% endif %}
 
+       .. include:: _about.md
+          :parser: myst_parser.sphinx_
+
        .. container::
           :name: access-cards
 
@@ -116,15 +119,6 @@
 
                 {{ item.get("name", "Code") }}
              {% endfor %}
-
-       .. rubric:: About
-          :name: about
-
-       .. include:: _about.md
-          :parser: myst_parser.sphinx_
-
-       .. rubric:: Key information
-          :name: key-information
 
        {% if data["parent_product"] %}
        :Parent product(s): `{{ data["parent_product"]["name"] }} <{{ data["parent_product"]["link"] }}>`_
