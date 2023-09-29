@@ -307,5 +307,5 @@
 
 .. raw:: html
 
-   <script src="/_static/scripts/tocbot.min.js"></script>
-   <script src="/_static/scripts/tocbot-data-product.js" /></script>
+   <script type="text/javascript" src="/_static/scripts/tocbot.min.js"></script>
+   <script type="text/javascript" src="/_static/scripts/tocbot-data-product.js" /></script>
