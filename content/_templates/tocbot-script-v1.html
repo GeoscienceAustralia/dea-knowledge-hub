@@ -1,9 +1,17 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.18.2/tocbot.min.js"></script>
 
 <script>
+    const sections = document.querySelectorAll(".data-product .sd-tab-content > section[id]");
+
+    for (section of sections) {
+        const id = section.id;
+        section.removeAttribute('id');
+        section.querySelector("* > h2").id = id;
+    }
+
     tocbot.init({
-        contentSelector: '#access-tab + .sd-tab-content',
-        tocSelector: '#access-table-of-contents',
+        contentSelector: '.data-product #access-tab + .sd-tab-content',
+        tocSelector: '.data-product #access-table-of-contents',
         headingSelector: 'h2'
     });
 </script>
