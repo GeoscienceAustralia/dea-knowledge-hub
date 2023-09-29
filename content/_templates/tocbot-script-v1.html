@@ -3,7 +3,8 @@
 <script>
     const sections = document.querySelectorAll(".data-product .sd-tab-content > section[id]");
 
-    for (section of sections) {
+    for (let i = 0; i < sections.length; i++) {
+        const section = sections[i];
         const id = section.id;
         section.removeAttribute('id');
         section.querySelector("* > h2").id = id;
