@@ -146,6 +146,13 @@
     .. tab-item:: Access
        :name: access-tab
 
+       **In this section:**
+
+       .. container::
+          :name: access-toc
+
+          |nbsp|
+
        .. rubric:: Access the data
           :name: access-the-data
 
