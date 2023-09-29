@@ -305,3 +305,48 @@
     
        .. include:: _credits.md
           :parser: myst_parser.sphinx_
+
+.. raw:: html
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.18.2/tocbot.min.js"></script>
+
+   <script>
+       const sections = document.querySelectorAll(".data-product .sd-tab-content > section[id]");
+
+       for (let i = 0; i < sections.length; i++) {
+           const section = sections[i];
+           const id = section.id;
+           section.removeAttribute('id');
+           section.querySelector("* > h2").id = id;
+       }
+
+       tocbot.init({
+           contentSelector: '.data-product #access-tab + .sd-tab-content',
+           tocSelector: '.data-product #access-table-of-contents',
+           headingSelector: 'h2'
+       });
+
+       tocbot.init({
+           contentSelector: '.data-product #details-tab + .sd-tab-content',
+           tocSelector: '.data-product #details-table-of-contents',
+           headingSelector: 'h2'
+       });
+
+       tocbot.init({
+           contentSelector: '.data-product #quality-tab + .sd-tab-content',
+           tocSelector: '.data-product #quality-table-of-contents',
+           headingSelector: 'h2'
+       });
+
+       tocbot.init({
+           contentSelector: '.data-product #history-tab + .sd-tab-content',
+           tocSelector: '.data-product #history-table-of-contents',
+           headingSelector: 'h2'
+       });
+
+       tocbot.init({
+           contentSelector: '.data-product #credits-tab + .sd-tab-content',
+           tocSelector: '.data-product #credits-table-of-contents',
+           headingSelector: 'h2'
+       });
+   </script>
