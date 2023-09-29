@@ -1,6 +1,9 @@
 title: Home
 
 data:
+  - name: Baseline satellite data
+    link: example.com
+
   - name: Land and vegetation
     link: example.com
 
@@ -9,9 +12,6 @@ data:
 
   - name: Sea, ocean, and coast
     link: sea-ocean-and-coast
-
-  - name: Baseline satellite data
-    link: example.com
 
   - name: Hazards
     link: example.com
