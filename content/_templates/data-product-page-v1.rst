@@ -262,6 +262,15 @@
     .. tab-item:: History
        :name: history-tab
 
+       .. container:: table-of-contents
+
+          **In this section:**
+
+          .. container::
+             :name: history-table-of-contents
+
+             |nbsp|
+
        .. rubric:: Old versions
           :name: old-versions
 
@@ -284,6 +293,15 @@
 
     .. tab-item:: Credits
        :name: credits-tab
+
+       .. container:: table-of-contents
+
+          **In this section:**
+
+          .. container::
+             :name: credits-table-of-contents
+
+             |nbsp|
     
        .. include:: _credits.md
           :parser: myst_parser.sphinx_
