@@ -18,8 +18,8 @@
       Access the data ...
       ^^^^^^^^^^^^^^^^^^^
 
-      {% for item in data["data"] %}
-      `{{ item.get("name") }} <{{ item.get("link") }}>`_
+      {% for access_link in data["access_links"] %}
+      `{{ access_link.get("name") }} <{{ access_link.get("link") }}>`_
       {% endfor %}
 
    .. grid-item-card::

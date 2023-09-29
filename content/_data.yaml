@@ -1,20 +1,31 @@
 title: Home
 
-data:
+access_links:
   - name: Baseline satellite data
     link: example.com
-
   - name: Land and vegetation
     link: example.com
-
   - name: Inland water
     link: example.com
-
   - name: Sea, ocean, and coast
     link: sea-ocean-and-coast
-
   - name: Hazards
     link: example.com
-
   - name: Data services
     link: example.com
+
+use_links:
+  - name: Get started with DEA
+    link: example.com
+  - name: View all notebooks
+    link: example.com
+  - name: Use the DEA Tools package
+    link: example.com
+  - name: Additional resources
+    link: example.com
+
+program_links:
+  - name: View our service catalogue
+    link: example.com
+  - name: Get support
+    link: '{{ config.html_context["support_link"] }}'
