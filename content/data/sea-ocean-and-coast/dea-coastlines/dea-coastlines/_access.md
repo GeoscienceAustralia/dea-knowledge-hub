@@ -1,4 +1,3 @@
-{#access-notes}
 ## Access Notes
 
 ### Data download
@@ -111,7 +110,6 @@ deacl_ratesofchange = "https://geoserver.dea.ga.gov.au/geoserver/wfs?service=WFS
   sf::st_set_crs(3577)
 ```
 
-{#publications}
 ## Publications
 
 Bishop-Taylor, R., Nanson, R., Sagar, S., Lymburner, L. (2021). Mapping Australia's dynamic coastline at mean sea level using three decades of Landsat imagery. *Remote Sensing of Environment*, 267, 112734. Available: <https://doi.org/10.1016/j.rse.2021.112734>

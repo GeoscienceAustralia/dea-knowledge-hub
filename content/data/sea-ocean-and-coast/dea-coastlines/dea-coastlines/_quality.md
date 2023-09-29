@@ -1,4 +1,3 @@
-{#accuracy}
 ## Accuracy
 
 ### Annual shoreline accuracy and precision

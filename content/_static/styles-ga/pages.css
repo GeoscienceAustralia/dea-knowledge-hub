@@ -101,3 +101,19 @@
     background-position: center;
     background-repeat: no-repeat;
 }
+
+.data-product .table-of-contents > p,
+.data-product .table-of-contents > div,
+.data-product .table-of-contents ol,
+.data-product .table-of-contents li {
+    display: inline;
+}
+
+.data-product .table-of-contents ol {
+    padding-left: 0;
+}
+
+.data-product .table-of-contents > p,
+.data-product .table-of-contents li {
+    margin-right: 1rem;
+}

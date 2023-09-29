@@ -146,15 +146,18 @@
     .. tab-item:: Access
        :name: access-tab
 
-       **In this section:**
+       .. container:: table-of-contents
 
-       .. container::
-          :name: access-toc
+          **In this section:**
 
-          |nbsp|
+          .. container::
+             :name: access-table-of-contents
 
-       .. rubric:: Access the data
-          :name: access-the-data
+             |nbsp|
+
+       .. raw:: html
+
+          <h2 id="access-the-data">Access the data</h2>
 
        .. list-table::
           :name: access-table

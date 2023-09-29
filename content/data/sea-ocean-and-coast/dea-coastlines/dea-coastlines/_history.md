@@ -1,4 +1,3 @@
-{#changelog}
 ## Changelog
 
 ### 2022 DEA Coastlines update

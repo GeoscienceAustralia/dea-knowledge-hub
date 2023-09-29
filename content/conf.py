@@ -26,10 +26,8 @@ extensions = [
     "sphinxcontrib.datatemplates",
 ]
 
-myst_enable_extensions = [
-    "colon_fence",
-    "attrs_block",
-]
+myst_enable_extensions = ["colon_fence"]
+myst_heading_anchors = 1
 
 rediraffe_redirects = "redirects.txt"
 
