@@ -154,8 +154,3 @@ input[type="search"].form-control {
     border-color: var(--sd-color-primary) !important;
     border-width: 1px !important;
 }
-
-.bd-content .sd-tab-set {
-    position: sticky;
-    top: 100px;
-}
