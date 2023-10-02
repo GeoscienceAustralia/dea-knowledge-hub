@@ -11,13 +11,13 @@
 .home .rubric.rubric-1 {
     color: var(--pst-color-primary);
     font-size: var(--pst-font-size-h4);
-    font-color: var(--pst-color-text-base);
+    color: var(--pst-color-text-base);
 }
 
 .home .rubric.rubric-2 {
     color: var(--pst-color-primary);
     font-size: var(--pst-font-size-h6);
-    font-color: var(--pst-color-text-base);
+    color: var(--pst-color-text-base);
 }
 
 .home .sd-card a {
@@ -115,4 +115,8 @@
 .data-product .table-of-contents li {
     margin-right: 1rem;
 }
+
+.data-product .table-of-contents a,
+.data-product .table-of-contents a:visited {
+    color: var(--pst-color-primary);
 }
