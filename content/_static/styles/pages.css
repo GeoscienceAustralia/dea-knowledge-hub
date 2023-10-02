@@ -32,12 +32,14 @@
 /* Data Product */
 
 .data-product h1 {
-    padding-left: 2rem;
-    padding-right: 2rem;
-    margin-bottom: 0;
+    display: none;
 }
 
-.data-product h1,
+.data-product .title {
+    font-size: var(--pst-font-size-h1);
+}
+
+.data-product .title p,
 .data-product .header a,
 .data-product .header .quick-info,
 .data-product .header .quick-info dd p,
@@ -45,29 +47,26 @@
     color: white;
 }
 
-.data-product h1,
+.data-product .title,
 .data-product .header > * {
     width: calc(100% - 271px);
 }
 
 @media only screen and (max-width: 768px) {
-    .data-product h1,
+    .data-product .title,
     .data-product .header > * {
         width: 100%;
     }
 }
 
-.data-product .header > * {
-    z-index: 0;
-}
-
 .data-product .header {
     position: relative;
-    top: calc(-1 * var(--pst-font-size-h1) * 2);
-    margin-bottom: calc(-1 * var(--pst-font-size-h1) * 2);
-    background: linear-gradient(1turn, var(--pst-color-secondary), var(--pst-color-primary));
+    background: linear-gradient(
+    1turn,
+    var(--pst-color-secondary),
+    var(--pst-color-primary)
+    );
     padding: 2rem;
-    z-index: -1;
 }
 
 .data-product .header .subtitle {
@@ -115,4 +114,5 @@
 .data-product .table-of-contents > p,
 .data-product .table-of-contents li {
     margin-right: 1rem;
+}
 }

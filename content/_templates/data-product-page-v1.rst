@@ -15,6 +15,14 @@
 
 .. container:: header
 
+   .. container:: title
+
+      {% if not data["is_latest_version"] %}
+      {{ "v" + data["version"] + ":" }} {{ data["title"] }}
+      {% else %}
+      {{ data["title"] }}
+      {% endif %}
+
    .. container:: subtitle
 
       {{ data["long_title"] }}
