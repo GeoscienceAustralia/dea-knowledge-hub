@@ -13,6 +13,12 @@
     color: white;
 }
 
+:active, :focus {
+    border: 1px solid var(--pst-color-primary);
+    border-style: dashed;
+    border-radius: 4px;
+}
+
 .skip-link {
     background-color: white;
     color: var(--pst-color-primary);
