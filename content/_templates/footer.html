@@ -41,4 +41,13 @@
             <li><a href="https://www.ga.gov.au/ips/foi">Freedom of Information Act</a></li>
         </ul>
     </div>
+    {% if show_copyright and copyright %}
+    <p class="copyright">
+        {% if hasdoc('copyright') %}
+        {% trans path=pathto('copyright'), copyright=copyright|e %}© <a href="{{ path }}">Copyright</a> {{ copyright }}.{% endtrans %}
+        {% else %}
+        {% trans copyright=copyright|e %}© Copyright {{ copyright }}.{% endtrans %}
+        {% endif %}
+    </p>
+    {% endif %}
 </div>
