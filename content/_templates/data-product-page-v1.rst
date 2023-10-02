@@ -173,7 +173,7 @@
             - {% for item in data["maps"] %}
               * `{{ item.get("name", "Map") }} <{{ item.get("link") }}>`_
               {% endfor %}
-            - Learn how to `use DEA Maps </setup/dea_maps.html>`_.
+            - Learn how to `use DEA Maps <{{ config.html_context["learn_access_dea_maps_link"] }}>`_.
           {% endif %}
 
           {% if data["data"] %}
@@ -189,7 +189,7 @@
             - {% for item in data["stac"] %}
               * `{{ item.get("name", "STAC") }} <{{ item.get("link") }}>`_
               {% endfor %}
-            - Learn how to `access and stream the data using STAC </notebooks/How_to_guides/Downloading_data_with_STAC.html>`_.
+            - Learn how to `access and stream the data using STAC <{{ config.html_context["learn_access_stac_link"] }}>`_.
           {% endif %}
 
           {% if data["explorer"] %}
@@ -197,7 +197,7 @@
             - {% for item in data["explorer"] %}
               * `{{ item.get("name", "Data Explorer") }} <{{ item.get("link") }}>`_
               {% endfor %}
-            - Learn how to `access the data via AWS </about/faq.html#how-do-i-download-data-from-dea>`_.
+            - Learn how to `access the data via AWS <{{ config.html_context["learn_access_data_explorer_link"] }}>`_.
           {% endif %}
 
           {% if data["sandbox"] %}
@@ -221,7 +221,7 @@
             - {% for item in data["web_services"] %}
               * `{{ item.get("name", "Web service") }} <{{ item.get("link") }}>`_
               {% endfor %}
-            - Learn how to `connect to DEA's web services </setup/gis/README.html>`_.
+            - Learn how to `connect to DEA's web services <{{ config.html_context["learn_access_web_service_link"] }}>`_.
           {% endif %}
 
           {% if data["code_samples"] %}
