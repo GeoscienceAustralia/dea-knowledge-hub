@@ -50,6 +50,11 @@ footer.bd-footer a {
     text-decoration: underline;
 }
 
+footer.bd-footer a:hover {
+    color: white;
+    text-decoration: none;
+}
+
 footer.bd-footer .footer-heading {
     font-weight: bold;
     font-size: var(--pst-font-size-h3);

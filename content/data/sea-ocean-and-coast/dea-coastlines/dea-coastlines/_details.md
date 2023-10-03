@@ -92,15 +92,15 @@ Figure 3: Coastal change hotspots from DEA Coastlines visualised on the [intera
 
 {#processing-steps-list}
 
-1. Load stack of all available [Landsat 5, 7, 8 and 9 satellite imagery](example.com) for a location.
-1. Convert satellite observations to a remote sensing water index (MNDWI) using this [algorithm](example.com).
-1. For each satellite image, model ocean tides into a 5 x 5 km grid based on exact time of image acquisition using this [algorithm](example.com).
+1. Load stack of all available [Landsat 5, 7, 8 and 9 satellite imagery](https://example.com/) for a location.
+1. Convert satellite observations to a remote sensing water index (MNDWI) using this [algorithm](https://example.com/).
+1. For each satellite image, model ocean tides into a 5 x 5 km grid based on exact time of image acquisition using this [algorithm](https://example.com/).
 1. Interpolate tide heights into spatial extent of image stack.
-1. Mask out high and low tide pixels by removing all observations acquired outside of 50 percent of the observed tidal range centered over mean sea level using this [algorithm](example.com).
+1. Mask out high and low tide pixels by removing all observations acquired outside of 50 percent of the observed tidal range centered over mean sea level using this [algorithm](https://example.com/).
 1. Combine tidally-masked data into annual median composites from 1988 to the present representing the coastline at approximately mean sea level.
-1. Apply morphological extraction algorithms to mask annual median composite rasters to a valid coastal region using this [algorithm](example.com).
+1. Apply morphological extraction algorithms to mask annual median composite rasters to a valid coastal region using this [algorithm](https://example.com/).
 1. Extract waterline vectors using subpixel waterline extraction.
-1. Compute rates of coastal change at every 30 m along Australia's non-rocky coastlines using linear regression using this [algorithm](example.com).
+1. Compute rates of coastal change at every 30 m along Australia's non-rocky coastlines using linear regression using this [algorithm](https://example.com/).
 
 ## References
 
