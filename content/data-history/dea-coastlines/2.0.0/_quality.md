@@ -1,4 +1,3 @@
-{#accuracy}
 ## Accuracy
 
 ### Annual shoreline accuracy and precision
@@ -57,7 +56,6 @@ Significant transects only:
 
 **Figure 5:** DEA Coastlines annual shorelines compared against a) aerial photogrammetry-derived annual ~0 m AMSL shorelines from the Western Australian Department of Transport Coastline Movements dataset, and b) transect-based in-situ validation data for three example locations that demonstrate sub-pixel precision shoreline extraction: Narrabeen Beach, Tugun Beach, and West Beach. DEA Coastlines transect data in panel b represent the 0 m AMSL Median Annual Shoreline Position shoreline proxy, and have been corrected for consistent local inland biases to assess the ability to capture relative coastline dynamics through time.
 
-{#quality-assurance}
 ## Quality Assurance
 
 To allow problematic data to be accounted for or excluded from future analyses, DEA Coastlines data is automatically screened for several potential data quality issues. These issues are flagged in the "certainty" field and symbolised by dashed lines or white points on the [interactive DEA Coastlines map](https://maps.dea.ga.gov.au/story/DEACoastlines). These flags include:

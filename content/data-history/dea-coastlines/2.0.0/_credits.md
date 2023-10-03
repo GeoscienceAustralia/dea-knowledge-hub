@@ -1,4 +1,3 @@
-{#acknowledgments}
 ## Acknowledgments
 
 The authors would like to sincerely thank the following organisations and individuals for providing validation data and valuable feedback on preliminary versions of this product: 
@@ -21,7 +20,6 @@ This research was undertaken with the assistance of resources from the National 
 
 Tidal modelling is provided by the FES2014 global tidal model, implemented using the pyTMD Python package. FES2014 was produced by NOVELTIS, LEGOS, CLS Space Oceanography Division and CNES. It is distributed by AVISO, with support from CNES (<http://www.aviso.altimetry.fr/>).
 
-{#license-and-copyright}
 ## License and copyright
 
 CC BY Attribution 4.0 International License

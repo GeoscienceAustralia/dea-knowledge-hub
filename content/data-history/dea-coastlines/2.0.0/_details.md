@@ -1,4 +1,7 @@
-{#product-offering}
+## Background
+
+Australia has a highly dynamic coastline of over 30,000 km, with over 85% of its population living within 50 km of the coast. This coastline is subject to a wide range of pressures, including extreme weather and climate, sea level rise and human development. Understanding how the coastline responds to these pressures is crucial to managing this region, from social, environmental and economic perspectives. 
+
 ## What this product offers
 
 [Digital Earth Australia Coastlines](https://maps.dea.ga.gov.au/story/DEACoastlines) is a continental dataset that includes annual shorelines and rates of coastal change along the entire Australian coastline from 1988 to the present. 
@@ -7,7 +10,6 @@ The product combines satellite data from Geoscience Australia's Digital Earth Au
 
 The ability to map shoreline positions for each year provides valuable insights into whether changes to our coastline are the result of particular events or actions, or a process of more gradual change over time. This information can enable scientists, managers and policy makers to assess impacts from the range of drivers impacting our coastlines and potentially assist planning and forecasting for future scenarios.
 
-{#applications}
 ## Applications
 
 * Monitoring and mapping rates of coastal erosion along the Australian coastline 
@@ -15,7 +17,6 @@ The ability to map shoreline positions for each year provides valuable insights 
 * Modelling how coastlines respond to drivers of change, including extreme weather events, sea level rise or human development 
 * Supporting geomorphological studies of how and why coastlines have changed across time
 
-{#technical-information}
 ## Technical information
 
 ### DEA Coastlines dataset
@@ -124,7 +125,6 @@ Figure 3: Coastal change hotspots from DEA Coastlines visualised on the [intera
 * [DEA Intertidal Extents (Landsat)](https://cmi.ga.gov.au/data-products/dea/174/dea-intertidal-extents-landsat)
 * [DEA High and Low Tide Imagery (Landsat)](https://cmi.ga.gov.au/data-products/dea/133/dea-high-and-low-tide-imagery-landsat)
 
-{#references}
 ## References
 
 Bishop-Taylor, R., Nanson, R., Sagar, S., Lymburner, L. (2021). Mapping Australia's dynamic coastline at mean sea level using three decades of Landsat imagery. *Remote Sensing of Environment*, 267, 112734. Available: <https://doi.org/10.1016/j.rse.2021.112734>

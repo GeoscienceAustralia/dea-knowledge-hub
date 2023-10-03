@@ -247,6 +247,22 @@
 
              |nbsp|
 
+       {% if data["processing_steps"] %}
+       .. rubric:: Processing steps
+          :name: processing-steps
+
+       .. list-table::
+          :name: processing-steps-table
+
+          {% for step in data["processing_steps"] %}
+          * - {{ loop.index }}.
+            - {{ step.get("description") }}
+              {% for link in step["links"] %}
+              * `{{ link.get("name") }} <{{ link.get("link") }}>`_
+              {% endfor %}
+          {% endfor %}
+          {% endif %}
+
        .. include:: _details.md
           :parser: myst_parser.sphinx_
 

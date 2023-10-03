@@ -71,6 +71,27 @@ code_samples:
   - name: GitHub repository
     link: https://github.com/GeoscienceAustralia/dea-coastlines
 
+# Details tab
+
+processing_steps:
+  - description: Load stack of all available Landsat 5, 7, 8 and 9 satellite imagery for a location.
+    links:
+      - name: LANDSAT 5, 7, 8, and 9 Analysis-Ready Data
+        link: baseline-data-category.com
+      - name: FES (Finite Element Solution) 2014 global tide model
+        link: baseline-data-category.com
+  - description: Convert satellite observations to a remote sensing water index (MNDWI).
+    links:
+      - name: Modified Normalised Difference Water Index (MNDWI)
+        link: baseline-data-category.com
+  - description: For each satellite image, model ocean tides into a 5 x 5 km grid based on exact time of image acquisition.
+  - description: Interpolate tide heights into spatial extent of image stack.
+  - description: Mask out high and low tide pixels by removing all observations acquired outside of 50 percent of the observed tidal range centered over mean sea level.
+  - description: Combine tidally-masked data into annual median composites from 1988 to the present representing the coastline at approximately mean sea level.
+  - description: Apply morphological extraction algorithms to mask annual median composite rasters to a valid coastal region.
+  - description: Extract waterline vectors using subpixel waterline extraction.
+  - description: Compute rates of coastal change at every 30 m along Australia's non-rocky coastlines using linear regression.
+
 # History tab
 
 old_versions:

@@ -57,6 +57,8 @@ html_theme_options = {
     "header_links_before_dropdown": 1,
 }
 
+suppress_warnings = ['myst.header']
+
 html_context = {
     'support_link': 'example-support.com',
     'learn_access_dea_maps_link': '/setup/dea_maps.html',

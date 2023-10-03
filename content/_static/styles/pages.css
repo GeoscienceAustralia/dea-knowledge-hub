@@ -62,9 +62,9 @@
 .data-product .header {
     position: relative;
     background: linear-gradient(
-    1turn,
-    var(--pst-color-secondary),
-    var(--pst-color-primary)
+        1turn,
+        var(--pst-color-secondary),
+        var(--pst-color-primary)
     );
     padding: 2rem;
 }
