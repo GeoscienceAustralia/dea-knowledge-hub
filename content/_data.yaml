@@ -4,7 +4,7 @@ themes:
   - name: Baseline satellite data
     link: example.com
   - name: Land and vegetation
-    link: example.com
+    link: data/land-and-vegetation
   - name: Inland water
     link: example.com
   - name: Sea, ocean, and coast
