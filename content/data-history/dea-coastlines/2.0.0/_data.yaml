@@ -3,7 +3,7 @@
 title: DEA Coastlines
 long_title: Digital Earth Australia Coastlines
 image: https://www.dea.ga.gov.au/_nuxt/image/3d7bbc.png
-product_id: dea_coastlines
+# product_id: dea_coastlines
 
 version: 2.0.0
 is_latest_version: False
@@ -77,7 +77,7 @@ old_versions:
   - version: 2.0.0
     name: DEA Coastlines
     release_date: 22 Sep 2020
-    link: a/b/c/index
+    link: /data-history/dea-coastlines/2.0.0/
 
 # Unused
 

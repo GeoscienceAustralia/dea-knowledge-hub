@@ -63,7 +63,7 @@ Old Version: {{ data["title"] }}
        .. include:: _about.md
           :parser: myst_parser.sphinx_
 
-       {% if data["maps"] or data["data"] or data["stac"] or data["explorer"] or data["sandbox"] or data["ecat"] or data["web_services"] or data["code_samples"] %}
+       {% if data["is_latest_version"] and (data["maps"] or data["data"] or data["stac"] or data["explorer"] or data["sandbox"] or data["ecat"] or data["web_services"] or data["code_samples"]) %}
        .. container::
           :name: access-cards
 
@@ -167,7 +167,7 @@ Old Version: {{ data["title"] }}
        .. rubric:: Access the data
           :name: access-the-data
 
-       {% if data["maps"] or data["data"] or data["stac"] or data["explorer"] or data["sandbox"] or data["ecat"] or data["web_services"] or data["code_samples"] %}
+       {% if data["is_latest_version"] and (data["maps"] or data["data"] or data["stac"] or data["explorer"] or data["sandbox"] or data["ecat"] or data["web_services"] or data["code_samples"]) %}
        .. list-table::
           :name: access-table
 
@@ -235,7 +235,11 @@ Old Version: {{ data["title"] }}
             -
           {% endif %}
        {% else %}
+       {% if not data["is_latest_version"] %}
+       You can find the data source links in the `latest version of the product <{{ data["latest_version_link"] }}>`_.
+       {% else %}
        There are no data source links available at the present time.
+       {% endif %}
        {% endif %}
 
        .. include:: _access.md
