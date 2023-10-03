@@ -7,7 +7,12 @@ version = '0.1'
 
 html_static_path = ['_static']
 templates_path = ['_templates']
-exclude_patterns = ["**/_*", "notebooks"]
+exclude_patterns = [
+    "README.*",
+    "**/README.*",
+    "**/_*",
+    "notebooks",
+]
 source_suffix = ['.rst', '.md']
 
 html_title = "DEA Docs"

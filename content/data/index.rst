@@ -7,7 +7,6 @@
    :glob:
 
    land-and-vegetation/index
-   land-and-vegetation/*/index
 
 .. toctree::
    :caption: Sea, Ocean, and Coast
@@ -15,4 +14,3 @@
    :glob:
 
    sea-ocean-and-coast/index
-   sea-ocean-and-coast/*/index
