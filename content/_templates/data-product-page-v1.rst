@@ -287,6 +287,9 @@
 
              |nbsp|
 
+       {% if not data["is_latest_version"] %}
+       You can find the history in the `latest version of the product <{{ data["latest_version_link"] }}>`_.
+       {% else %}
        .. rubric:: Old versions
           :name: old-versions
 
@@ -306,6 +309,7 @@
 
        .. include:: _history.md
           :parser: myst_parser.sphinx_
+       {% endif %}
 
     .. tab-item:: Credits
        :name: credits-tab
