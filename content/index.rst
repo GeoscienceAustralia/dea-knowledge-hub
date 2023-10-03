@@ -5,4 +5,4 @@
    :hidden:
 
    data/index
-   data-history/index
+   old-data/index
