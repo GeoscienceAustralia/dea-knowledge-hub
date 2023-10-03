@@ -1,5 +1,5 @@
 .. datatemplate:yaml:: ./_data.yaml
-   :template: data-product-category-page-v1.rst
+   :template: data-category-page-v1.rst
 
 .. toctree::
    :hidden:

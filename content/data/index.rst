@@ -1,5 +1,5 @@
 .. datatemplate:yaml:: ./_data.yaml
-   :template: data-products-root-page-v1.rst
+   :template: data-category-list-page-v1.rst
 
 .. toctree::
    :caption: Land and Vegetation
