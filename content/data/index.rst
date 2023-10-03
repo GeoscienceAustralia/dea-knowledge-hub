@@ -15,4 +15,4 @@
    :glob:
 
    sea-ocean-and-coast/index
-   sea-ocean-and-coast/*/*/index
+   sea-ocean-and-coast/*/index
