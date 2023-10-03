@@ -88,6 +88,20 @@ Three points layers summarising coastal change within moving 1 km, 5 km and 10km
 
 Figure 3: Coastal change hotspots from DEA Coastlines visualised on the [interactive DEA Coastlines web map](https://maps.dea.ga.gov.au/story/DEACoastlines)
 
+## Processing steps
+
+{#processing-steps-list}
+
+1. Load stack of all available [Landsat 5, 7, 8 and 9 satellite imagery](example.com) for a location.
+1. Convert satellite observations to a remote sensing water index (MNDWI) using this [algorithm](example.com).
+1. For each satellite image, model ocean tides into a 5 x 5 km grid based on exact time of image acquisition using this [algorithm](example.com).
+1. Interpolate tide heights into spatial extent of image stack.
+1. Mask out high and low tide pixels by removing all observations acquired outside of 50 percent of the observed tidal range centered over mean sea level using this [algorithm](example.com).
+1. Combine tidally-masked data into annual median composites from 1988 to the present representing the coastline at approximately mean sea level.
+1. Apply morphological extraction algorithms to mask annual median composite rasters to a valid coastal region using this [algorithm](example.com).
+1. Extract waterline vectors using subpixel waterline extraction.
+1. Compute rates of coastal change at every 30 m along Australia's non-rocky coastlines using linear regression using this [algorithm](example.com).
+
 ## References
 
 Bishop-Taylor, R., Nanson, R., Sagar, S., Lymburner, L. (2021). Mapping Australia's dynamic coastline at mean sea level using three decades of Landsat imagery. *Remote Sensing of Environment*, 267, 112734. Available: <https://doi.org/10.1016/j.rse.2021.112734>

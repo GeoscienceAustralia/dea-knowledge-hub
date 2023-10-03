@@ -120,3 +120,14 @@
 .data-product .table-of-contents a:visited {
     color: var(--pst-color-primary);
 }
+
+/* .data-product ol#processing-steps-list { */
+/* } */
+/*  */
+/* .data-product ol#processing-steps-list li { */
+/*     padding-left: 0.5rem; */
+/* } */
+/*  */
+/* .data-product ol#processing-steps-list li:hover { */
+/*     background-color: var(--sd-color-card-hover); */
+/* } */
