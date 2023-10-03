@@ -4,13 +4,13 @@
 .. rst-class:: data-product
 
 {% if not data["is_latest_version"] %}
-=====================================================
-{{ "v" + data["version"] + ":" }} {{ data["title"] }}
-=====================================================
+================================
+Old Version: {{ data["title"] }}
+================================
 {% else %}
-=====================================================
+================================
 {{ data["title"] }}
-=====================================================
+================================
 {% endif %}
 
 .. container:: header
@@ -18,7 +18,7 @@
    .. container:: title
 
       {% if not data["is_latest_version"] %}
-      {{ "v" + data["version"] + ":" }} {{ data["title"] }}
+      Old Version: {{ data["title"] }}
       {% else %}
       {{ data["title"] }}
       {% endif %}
@@ -48,7 +48,7 @@
 .. container::
    :name: notifications
 
-   .. ADMONITION:: This is an old version
+   .. ADMONITION:: This is an old version ({{ "v" + data["version"] }})
       :class: danger
    
       See the `latest version of the product <{{ data["latest_version_link"] }}>`_.
