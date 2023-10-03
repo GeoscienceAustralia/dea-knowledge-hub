@@ -1,4 +1,4 @@
-.. rst-class:: data-product-variants
+.. rst-class:: data-product-variants-page
 
 ===================================================================
 {{ data["title"] }}

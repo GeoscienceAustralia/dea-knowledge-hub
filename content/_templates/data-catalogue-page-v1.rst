@@ -1,4 +1,4 @@
-.. rst-class:: data-catalogue
+.. rst-class:: data-catalogue-page
 
 ===================================================================
 {{ data["title"] }}

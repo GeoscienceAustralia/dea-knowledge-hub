@@ -1,7 +1,7 @@
 .. |nbsp| unicode:: 0xA0 
    :trim:
 
-.. rst-class:: data-product
+.. rst-class:: data-product-page
 
 {% if not data["is_latest_version"] %}
 ================================================
