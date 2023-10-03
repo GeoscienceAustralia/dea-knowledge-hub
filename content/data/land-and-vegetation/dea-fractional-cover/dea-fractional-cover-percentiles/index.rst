@@ -1,5 +1,7 @@
-==========================================
-DEA Fractional Cover Percentiles (Landsat)
-==========================================
+.. datatemplate:yaml:: ./_data.yaml
+   :template: data-product-variants-page-v1.rst
 
-Sub-products table of contents ...
+.. toctree::
+   :glob:
+
+   **/index
