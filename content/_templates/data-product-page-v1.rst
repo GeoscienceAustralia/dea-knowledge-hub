@@ -167,6 +167,7 @@ Old Version: {{ data["title"] }}
        .. rubric:: Access the data
           :name: access-the-data
 
+       {% if data["maps"] or data["data"] or data["stac"] or data["explorer"] or data["sandbox"] or data["ecat"] or data["web_services"] or data["code_samples"] %}
        .. list-table::
           :name: access-table
 
@@ -233,6 +234,9 @@ Old Version: {{ data["title"] }}
               {% endfor %}
             -
           {% endif %}
+       {% else %}
+       There are no data source links available at the present time.
+       {% endif %}
 
        .. include:: _access.md
           :parser: myst_parser.sphinx_

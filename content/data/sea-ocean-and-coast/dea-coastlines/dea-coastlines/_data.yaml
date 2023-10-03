@@ -28,6 +28,12 @@ doi: 10.26186/116268
 
 # Access tab
 
+access:
+  maps:
+  data:
+  stac:
+  explorer:
+
 maps:
   - name: DEACoastlines
     image: https://www.gifpng.com/300x200
