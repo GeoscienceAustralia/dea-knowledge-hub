@@ -72,7 +72,6 @@
 
 .data-product .header .subtitle {
     font-size: var(--pst-font-size-h4);
-    margin-top: var(--pst-font-size-h1);
 }
 
 .data-product .header .hero-image {
