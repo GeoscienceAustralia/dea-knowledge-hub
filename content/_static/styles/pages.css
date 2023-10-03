@@ -37,6 +37,7 @@
 
 .data-product .title {
     font-size: var(--pst-font-size-h1);
+    font-weight: bold;
 }
 
 .data-product .title p,
@@ -90,10 +91,6 @@
     .data-product .header .hero-image {
         display: none;
     }
-}
-
-.data-product .header dt {
-    padding-left: 0;
 }
 
 .data-product .header dl {

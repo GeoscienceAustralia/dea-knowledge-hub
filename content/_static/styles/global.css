@@ -107,6 +107,10 @@ input[type="search"].form-control {
     border: none;
 }
 
+.bd-content dl.field-list > dt {
+    padding-left: 0;
+}
+
 .bd-content .sd-tab-content {
     padding-top: 24px;
 }
