@@ -63,6 +63,7 @@ Old Version: {{ data["title"] }}
        .. include:: _about.md
           :parser: myst_parser.sphinx_
 
+       {% if data["maps"] or data["data"] or data["stac"] or data["explorer"] or data["sandbox"] or data["ecat"] or data["web_services"] or data["code_samples"] %}
        .. container::
           :name: access-cards
 
@@ -132,6 +133,7 @@ Old Version: {{ data["title"] }}
 
                 {{ item.get("name", "Code") }}
              {% endfor %}
+       {% endif %}
 
        {% if data["parent_product"] %}
        :Parent product(s): `{{ data["parent_product"]["name"] }} <{{ data["parent_product"]["link"] }}>`_
