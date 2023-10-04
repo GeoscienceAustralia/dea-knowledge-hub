@@ -1,4 +1,4 @@
-.. rst-class:: data-product-category-page
+.. rst-class:: data-category-page
 
 ===================================================================
 {{ data["title"] }}
