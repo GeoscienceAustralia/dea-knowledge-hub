@@ -8,8 +8,8 @@ entries:
           - file: data/catalogues/dea-fractional-cover/index
             entries:
               - file: data/variants/dea-fractional-cover-percentiles/index
+              - file: data/products/dea-fractional-cover-percentiles-landsat-1/index
                 entries:
-                  - file: data/products/dea-fractional-cover-percentiles-landsat-1/index
                   - file: data/products/dea-fractional-cover-percentiles-landsat-2/index
       - caption: Sea, Ocean, and Coast
         entries:
