@@ -1,9 +1,0 @@
-title: Land and Vegetation
-
-catalogues:
-  - name: DEA Fractional Cover
-    id: dea-fractional-cover
-    products:
-      - name: DEA Fractional Cover Percentiles
-        image: https://www.dea.ga.gov.au/_nuxt/image/942676.jpeg
-        link: dea-fractional-cover/dea-fractional-cover-percentiles

@@ -5,4 +5,5 @@
    :hidden:
 
    data/index
+   notebooks/README
    old-data/index
