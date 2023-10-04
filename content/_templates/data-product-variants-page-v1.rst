@@ -5,3 +5,5 @@
 ===================================================================
 
 This product has the following variants.
+
+.. tableofcontents::

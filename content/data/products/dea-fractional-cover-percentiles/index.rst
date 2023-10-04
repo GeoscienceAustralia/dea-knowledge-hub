@@ -1,5 +1,2 @@
-=============================
-LANDSAT Variants
-=============================
-
-.. tableofcontents::
+.. datatemplate:yaml:: ./_data.yaml
+   :template: data-product-variants-page-v1.rst
