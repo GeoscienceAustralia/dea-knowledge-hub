@@ -42,15 +42,6 @@ external_toc_path = "table_of_contents.yaml"
 
 rediraffe_redirects = "redirects.txt"
 
-# html_sidebars = {
-#     "index": [],
-#     "**": ["sidebar-nav-bs"],
-# }
-
-# html_sidebars = {
-#    '**': ['globaltoc.html'],
-# }
-
 html_css_files = [
     'styles/themevars.css',
     'styles/global.css',

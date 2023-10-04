@@ -1,18 +1,20 @@
 root: index
-subtrees:
-  - entries:
-    - file: data/index
-      subtrees:
-        - caption: Land and vegetation
-          entries:
-            - file: data/themes/land-and-vegetation/index
-            - file: data/catalogues/dea-fractional-cover/index
-              entries:
-                - file: data/products/dea-fractional-cover-percentiles-landsat-1/index
-        - caption: Sea, Ocean, and Coast
-          entries:
-            - file: data/themes/sea-ocean-and-coast/index
-            - file: data/catalogues/dea-coastlines/index
-              entries:
-                - file: data/products/dea-coastlines/index
-    - file: data/old-versions/index
+entries:
+  - file: data/index
+    subtrees:
+      - caption: Land and Vegetation
+        entries:
+          - file: data/themes/land-and-vegetation/index
+          - file: data/catalogues/dea-fractional-cover/index
+            entries:
+              - file: data/variants/dea-fractional-cover-percentiles/index
+                entries:
+                  - file: data/products/dea-fractional-cover-percentiles-landsat-1/index
+                  - file: data/products/dea-fractional-cover-percentiles-landsat-2/index
+      - caption: Sea, Ocean, and Coast
+        entries:
+          - file: data/themes/sea-ocean-and-coast/index
+          - file: data/catalogues/dea-coastlines/index
+            entries:
+              - file: data/products/dea-coastlines/index
+  - file: data/old-versions/index
