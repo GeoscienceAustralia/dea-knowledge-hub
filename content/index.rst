@@ -5,5 +5,5 @@
    :hidden:
 
    data/index
+   data/old-versions/index
    notebooks/README
-   old-data/index
