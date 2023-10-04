@@ -5,4 +5,5 @@ Old product versions
 .. toctree::
    :glob:
 
-   */index
+   dea-coastlines-*/index
+   dea-landscape-*/index
