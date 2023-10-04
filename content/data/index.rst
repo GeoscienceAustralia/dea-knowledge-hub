@@ -3,6 +3,6 @@
 
 .. toctree::
    :caption: Sea, Ocean, and Coast
+   :hidden:
 
    themes/sea-ocean-and-coast/index
-   catalogues/dea-coastlines/index

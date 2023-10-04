@@ -39,10 +39,14 @@ myst_heading_anchors = 1
 
 rediraffe_redirects = "redirects.txt"
 
-html_sidebars = {
-    "index": [],
-    "**": ["sidebar-nav-bs"],
-}
+# html_sidebars = {
+#     "index": [],
+#     "**": ["sidebar-nav-bs"],
+# }
+
+# html_sidebars = {
+#    '**': ['globaltoc.html'],
+# }
 
 html_css_files = [
     'styles/themevars.css',
@@ -61,7 +65,6 @@ html_theme_options = {
     "navigation_with_keys": False,
     "search_bar_text": "Search ...",
     "show_prev_next": False,
-    "show_nav_level": 1,
     "header_links_before_dropdown": 1,
 }
 

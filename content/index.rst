@@ -6,4 +6,3 @@
 
    data/index
    data/old-versions/index
-   notebooks/README
