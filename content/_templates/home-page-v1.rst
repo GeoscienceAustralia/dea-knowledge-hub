@@ -46,7 +46,7 @@ Here you will find metadata for Geoscience Australia's earth observation data pr
 
       `Get support <{{ config.html_context["support_link"] }}>`_
 
-.. rubric:: About the DEA
+.. rubric:: About Digital Earth Australia
    :class: rubric-2
 
-Digital Earth Australia is an analysis platform for satellite imagery and other Earth observations. It is a program of Geoscience Australia. To see case studies, learning modules, developer portal, and more, `visit the DEA website <https://www.dea.ga.gov.au/>`_.
+DEA is an analysis platform for satellite imagery and other Earth observations. It is a program of Geoscience Australia. To see case studies, learning modules, developer portal, and more, `visit the DEA website <https://www.dea.ga.gov.au/>`_.
