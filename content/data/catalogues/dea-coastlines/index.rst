@@ -2,6 +2,5 @@
    :template: data-catalogue-page-v1.rst
 
 .. toctree::
-   :glob:
 
-   */index
+   /data/products/dea-coastlines/index
