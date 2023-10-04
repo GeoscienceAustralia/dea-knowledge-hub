@@ -2,6 +2,11 @@ root: index
 subtrees:
   - entries:
     - file: data/index
+      subtrees:
+        - caption: Sea, Ocean, and Coast
+          entries:
+            - file: data/themes/sea-ocean-and-coast/index
+            - file: data/catalogues/dea-coastlines/index
     - file: data/old-versions/index
 
 # root: index
