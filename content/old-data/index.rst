@@ -6,4 +6,3 @@ Old product versions
    :glob:
 
    dea-coastlines-*/index
-   dea-landscape-*/index
