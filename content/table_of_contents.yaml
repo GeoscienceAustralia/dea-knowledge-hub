@@ -1,0 +1,19 @@
+root: index
+subtrees:
+  - entries:
+    - file: /data/index
+      subtrees:
+        - caption: Sea, Ocean, and Coast
+          entries:
+            - file: /data/themes/sea-ocean-and-coast/index
+              subtrees:
+                - entries:
+                  - file: /data/catalogues/dea-coastlines/index
+                    subtrees:
+                      - entries:
+                        - file: /data/products/dea-coastlines/index
+  - entries:
+    - file: /data/old-versions/index
+      subtrees:
+        - entries:
+          - glob: /data/old-versions/dea-coastlines-*/index

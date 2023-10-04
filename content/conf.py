@@ -25,10 +25,11 @@ html_permalinks = False
 
 extensions = [
     "myst_parser",
-    "nbsphinx",
+    # "nbsphinx",
     "sphinx_design",
     "sphinxext.rediraffe",
     "sphinxcontrib.datatemplates",
+    "sphinx_external_toc",
 ]
 
 myst_enable_extensions = [
@@ -36,6 +37,8 @@ myst_enable_extensions = [
     "attrs_block",
 ]
 myst_heading_anchors = 1
+
+external_toc_path = "table_of_contents.yaml"
 
 rediraffe_redirects = "redirects.txt"
 
