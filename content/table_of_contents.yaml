@@ -1,6 +1,8 @@
 root: index
 entries:
   - file: data/index
+  - file: data/products/index
+    title: All products
     subtrees:
       - caption: Land and Vegetation
         entries:
@@ -17,8 +19,4 @@ entries:
           - file: data/catalogues/dea-coastlines/index
             entries:
               - file: data/products/dea-coastlines/index
-  - file: data/products/index
-    title: All products
-    entries:
-      - glob: data/products/*/index
   - file: data/old-versions/index
