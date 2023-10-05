@@ -42,6 +42,8 @@ Here you will find metadata for Geoscience Australia's earth observation data pr
       `{{ program_link.get("name") }} <{{ program_link.get("link") }}>`_
       {% endfor %}
 
+      `Get support <{{ config.html_context["support_link"] }}>`_
+
 .. rubric:: About Digital Earth Australia
    :class: rubric-2
 

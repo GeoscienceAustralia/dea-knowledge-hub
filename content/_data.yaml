@@ -27,5 +27,3 @@ use_links:
 program_links:
   - name: View our service catalogue
     link: example.com
-  - name: Get support
-    link: '{{ config.html_context["support_link"] }}'
