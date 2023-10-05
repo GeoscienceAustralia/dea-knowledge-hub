@@ -4,4 +4,6 @@
 {{ data["title"] }}
 ===================================================================
 
-This product has the following variants.
+This product has several variants.
+
+.. tableofcontents::

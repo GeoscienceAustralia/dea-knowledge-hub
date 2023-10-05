@@ -2,17 +2,17 @@ title: Home
 
 themes:
   - name: Baseline satellite data
-    link: example.com
+    slug: example.com
   - name: Land and vegetation
-    link: data/land-and-vegetation
+    slug: land-and-vegetation
   - name: Inland water
-    link: example.com
+    slug: example.com
   - name: Sea, ocean, and coast
-    link: data/sea-ocean-and-coast
+    slug: sea-ocean-and-coast
   - name: Hazards
-    link: example.com
+    slug: example.com
   - name: Data services
-    link: example.com
+    slug: example.com
 
 use_links:
   - name: Get started with DEA
@@ -27,5 +27,3 @@ use_links:
 program_links:
   - name: View our service catalogue
     link: example.com
-  - name: Get support
-    link: '{{ config.html_context["support_link"] }}'

@@ -3,19 +3,19 @@ title: Data Products
 themes:
   - name: Baseline satellite data
     image: https://www.gifpng.com/300x200
-    link: example.com
+    slug: example
   - name: Land and vegetation
     image: https://www.gifpng.com/300x200
-    link: land-and-vegetation
+    slug: land-and-vegetation
   - name: Inland water
     image: https://www.gifpng.com/300x200
-    link: example.com
+    slug: example
   - name: Sea, ocean, and coast
     image: https://www.gifpng.com/300x200
-    link: sea-ocean-and-coast
+    slug: sea-ocean-and-coast
   - name: Hazards
     image: https://www.gifpng.com/300x200
-    link: example.com
+    slug: example
   - name: Data services
     image: https://www.gifpng.com/300x200
-    link: example.com
+    slug: example

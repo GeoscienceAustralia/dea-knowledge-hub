@@ -21,28 +21,26 @@ Here you will find metadata for Geoscience Australia's earth observation data pr
       ^^^^^^^^^^^^^^^^^^^
 
       {% for theme in data["themes"] %}
-      `{{ theme.get("name") }} <{{ theme.get("link") }}>`_
+      `{{ theme.get("name") }} <data/themes/{{ theme.get("slug") }}>`_
       {% endfor %}
 
    .. grid-item-card::
 
       Use the data ...
       ^^^^^^^^^^^^^^^^
+
+      {% for use_link in data["use_links"] %}
+      `{{ use_link.get("name") }} <{{ use_link.get("link") }}>`_
+      {% endfor %}
    
-      `Get started with DEA <example.com>`_
-
-      `View all notebooks <example.com>`_
-
-      `Use the DEA Tools package <example.com>`_
-
-      `Additional resources <example.com>`_
-
    .. grid-item-card::
 
       Our program ...
       ^^^^^^^^^^^^^^^
 
-      `View our service catalogue <example.com>`_
+      {% for program_link in data["program_links"] %}
+      `{{ program_link.get("name") }} <{{ program_link.get("link") }}>`_
+      {% endfor %}
 
       `Get support <{{ config.html_context["support_link"] }}>`_
 

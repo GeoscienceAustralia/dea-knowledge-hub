@@ -2,7 +2,7 @@ sphinx
 sphinx-autobuild
 pydata-sphinx-theme
 myst-parser
-nbsphinx
 sphinx_design
 sphinxext-rediraffe
 sphinxcontrib.datatemplates
+sphinx-external-toc

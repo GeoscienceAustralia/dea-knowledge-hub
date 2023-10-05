@@ -14,6 +14,6 @@
    {% for product in catalog["products"] %}
    .. grid-item-card:: {{ product.get("name") }}
       :img-top: {{ product.get("image", "https://www.gifpng.com/300x200") }}
-      :link: {{ product.get("link") }}
+      :link: /data/products/{{ product.get("slug") }}
    {% endfor %}
 {% endfor %}

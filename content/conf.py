@@ -25,10 +25,11 @@ html_permalinks = False
 
 extensions = [
     "myst_parser",
-    "nbsphinx",
+    # "nbsphinx",
     "sphinx_design",
     "sphinxext.rediraffe",
     "sphinxcontrib.datatemplates",
+    "sphinx_external_toc",
 ]
 
 myst_enable_extensions = [
@@ -37,12 +38,9 @@ myst_enable_extensions = [
 ]
 myst_heading_anchors = 1
 
-rediraffe_redirects = "redirects.txt"
+external_toc_path = "table_of_contents.yaml"
 
-html_sidebars = {
-    "index": [],
-    "**": ["sidebar-nav-bs"],
-}
+rediraffe_redirects = "redirects.txt"
 
 html_css_files = [
     'styles/themevars.css',
@@ -61,7 +59,6 @@ html_theme_options = {
     "navigation_with_keys": False,
     "search_bar_text": "Search ...",
     "show_prev_next": False,
-    "show_nav_level": 1,
     "header_links_before_dropdown": 1,
 }
 
