@@ -2,4 +2,15 @@
 
 {% block extrahead %}
 <script type="text/javascript" src="/_static/scripts/external-links-behaviour.js"></script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4B9D450HR4"></script>
+<script>
+    if(window.location.hostname != "localhost") {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-4B9D450HR4');
+    }
+</script>
 {% endblock %}
