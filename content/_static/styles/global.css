@@ -142,11 +142,6 @@ input[type="search"].form-control {
     color: var(--pst-color-primary);
 }
 
-.bd-content .sd-card a {
-    color: var(--pst-color-primary);
-    font-weight: bold;
-}
-
 .bd-content .sd-card:hover {
     background-color: var(--sd-color-card-hover);
     transform: none;

@@ -23,6 +23,7 @@
 .home-page .sd-card a {
     font-weight: bold;
     text-decoration: none;
+    color: var(--pst-color-primary);
 }
 
 .home-page .sd-card a:hover {
