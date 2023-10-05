@@ -5,3 +5,5 @@
 ===================================================================
 
 This catalogue contains the following products.
+
+.. tableofcontents::
