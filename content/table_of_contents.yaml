@@ -5,6 +5,7 @@ entries:
       - caption: Land and Vegetation
         entries:
           - file: data/themes/land-and-vegetation/index
+            title: All
           - file: data/catalogues/dea-fractional-cover/index
             entries:
               - file: data/products/dea-fractional-cover-percentiles/index
@@ -14,6 +15,7 @@ entries:
       - caption: Sea, Ocean, and Coast
         entries:
           - file: data/themes/sea-ocean-and-coast/index
+            title: All
           - file: data/catalogues/dea-coastlines/index
             entries:
               - file: data/products/dea-coastlines/index
