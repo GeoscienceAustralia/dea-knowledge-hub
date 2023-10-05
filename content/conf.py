@@ -11,9 +11,11 @@ exclude_patterns = [
     "**/_*",
     "notebooks",
 ]
+html_extra_path = ['robots.txt']
 source_suffix = ['.rst', '.md']
 
 html_title = "DEA Docs"
+html_baseurl = "https://docs.dea.ga.gov.au/"
 html_logo = "https://docs.dea.ga.gov.au/_images/dea-logo-inline.svg"
 html_favicon = "https://docs.dea.ga.gov.au/_static/dea-favicon.ico"
 html_theme = 'pydata_sphinx_theme'
@@ -41,9 +43,7 @@ external_toc_path = "table_of_contents.yaml"
 
 rediraffe_redirects = "redirects.txt"
 
-html_baseurl = "https://docs.dea.ga.gov.au/"
 sitemap_url_scheme = "{link}"
-html_extra_path = ['robots.txt']
 
 html_css_files = [
     'styles/themevars.css',
