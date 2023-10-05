@@ -12,3 +12,7 @@
        :img-top: {{ theme.get("image", "https://www.gifpng.com/300x200") }}
        :link: {{ theme.get("link") }}
     {% endfor %}
+
+.. dropdown:: List of all products
+
+   .. tableofcontents::

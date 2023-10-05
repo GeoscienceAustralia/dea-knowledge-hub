@@ -1,8 +1,6 @@
 root: index
 entries:
   - file: data/index
-  - file: data/products/index
-    title: All products
     subtrees:
       - caption: Land and Vegetation
         entries:
