@@ -1,3 +1,5 @@
 ====================
 Old product versions
 ====================
+
+.. tableofcontents::
