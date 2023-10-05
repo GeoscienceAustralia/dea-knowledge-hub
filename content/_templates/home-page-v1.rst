@@ -21,7 +21,7 @@ Here you will find metadata for Geoscience Australia's earth observation data pr
       ^^^^^^^^^^^^^^^^^^^
 
       {% for theme in data["themes"] %}
-      `{{ theme.get("name") }} <{{ theme.get("link") }}>`_
+      `{{ theme.get("name") }} <data/themes/{{ theme.get("slug") }}>`_
       {% endfor %}
 
    .. grid-item-card::
