@@ -28,6 +28,7 @@ extensions = [
     "sphinxext.rediraffe",
     "sphinxcontrib.datatemplates",
     "sphinx_external_toc",
+    "sphinx_sitemap",
 ]
 
 myst_enable_extensions = [
@@ -39,6 +40,10 @@ myst_heading_anchors = 1
 external_toc_path = "table_of_contents.yaml"
 
 rediraffe_redirects = "redirects.txt"
+
+html_baseurl = "https://docs.dea.ga.gov.au/"
+sitemap_url_scheme = "{link}"
+html_extra_path = ['robots.txt']
 
 html_css_files = [
     'styles/themevars.css',

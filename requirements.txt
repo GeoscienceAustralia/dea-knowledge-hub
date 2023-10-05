@@ -6,3 +6,4 @@ sphinx_design
 sphinxext-rediraffe
 sphinxcontrib.datatemplates
 sphinx-external-toc
+sphinx-sitemap
