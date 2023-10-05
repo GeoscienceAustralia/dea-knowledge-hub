@@ -20,10 +20,13 @@
     color: var(--pst-color-text-base);
 }
 
+.home-page .sd-card .sd-card-header {
+    font-weight: bold;
+}
+
 .home-page .sd-card a {
     font-weight: bold;
     text-decoration: none;
-    color: var(--pst-color-primary);
 }
 
 .home-page .sd-card a:hover {
