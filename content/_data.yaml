@@ -4,11 +4,11 @@ themes:
   - name: Baseline satellite data
     link: example.com
   - name: Land and vegetation
-    link: data/land-and-vegetation
+    link: data/themes/land-and-vegetation
   - name: Inland water
     link: example.com
   - name: Sea, ocean, and coast
-    link: data/sea-ocean-and-coast
+    link: data/themes/sea-ocean-and-coast
   - name: Hazards
     link: example.com
   - name: Data services

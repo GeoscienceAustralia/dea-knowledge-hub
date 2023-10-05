@@ -6,4 +6,4 @@ catalogues:
     products:
       - name: DEA Coastlines
         image: https://www.dea.ga.gov.au/_nuxt/image/3d7bbc.png
-        link: dea-coastlines/dea-coastlines
+        link: /data/products/dea-coastlines
