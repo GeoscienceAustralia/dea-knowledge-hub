@@ -18,6 +18,10 @@
     color: var(--pst-color-primary);
 }
 
+.bd-search .search-button__kbd-shortcut {
+    display: none;
+}
+
 h1, h2, h3, h4, h5, h6 {
     color: var(--pst-color-primary);
     font-weight: bold;
