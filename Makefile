@@ -6,8 +6,7 @@ build:
 	docker build -t dea-docs .
 
 start:
-	docker rm dea-docs || true
-	docker run -it --name dea-docs --publish 8011:8011 --volume ./content:/docs/content --env-file .env dea-docs
+	docker run -it --rm --name dea-docs --publish 8011:8011 --volume ./content:/docs/content --env-file .env dea-docs
 
 rebuild:
 	docker build --no-cache -t dea-docs .
