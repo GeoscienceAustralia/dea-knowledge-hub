@@ -9,7 +9,7 @@ html_static_path = ['_static']
 templates_path = ['_templates']
 exclude_patterns = [
     "**/_*",
-    "notebooks",
+    # "notebooks",
 ]
 html_extra_path = ['robots.txt']
 source_suffix = ['.rst', '.md']
@@ -62,7 +62,7 @@ html_theme_options = {
     "navigation_with_keys": False,
     "search_bar_text": "Search ...",
     "show_prev_next": False,
-    "header_links_before_dropdown": 1,
+    "header_links_before_dropdown": 2,
 }
 
 suppress_warnings = ['myst.header']
