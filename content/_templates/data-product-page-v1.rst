@@ -71,7 +71,7 @@
              :gutter: 3
 
              {% for item in data["maps"] %}
-             .. grid-item-card:: {{ item.get("title", "See the map") }}
+             .. grid-item-card:: {{ item.get("title", "See it on a map") }}
                 :img-top: {{ item.get("image", "https://www.gifpng.com/300x200") }}
                 :link: {{ item.get("link") }}
 
@@ -79,7 +79,7 @@
              {% endfor %}
 
              {% for item in data["data"] %}
-             .. grid-item-card:: {{ item.get("title", "Get the data") }}
+             .. grid-item-card:: {{ item.get("title", "Get the data online") }}
                 :img-top: {{ item.get("image", "https://www.gifpng.com/300x200") }}
                 :link: {{ item.get("link") }}
 
@@ -144,12 +144,8 @@
        {% if data["doi"] %}
        :DOI: {{ data["doi"] }}
        {% endif %}
-       {% if data["published"] and data["author"] %}
-       :Published: {{ data["published"] }} ({{ data["author"] }})
-       {% elif data["published"] %}
-       :Published: {{ data["published"] }}
-       {% elif data["author"] %}
-       :Published by: {{ data["author"] }}
+       {% if data["published"] %}
+       :Last updated: {{ data["published"] }}
        {% endif %}
 
     .. tab-item:: Access
@@ -172,27 +168,11 @@
           :name: access-table
 
           {% if data["maps"] %}
-          * - **See the map**
+          * - **See the data on a map**
             - {% for item in data["maps"] %}
               * `{{ item.get("name", "Map") }} <{{ item.get("link") }}>`_
               {% endfor %}
             - Learn how to `use DEA Maps <{{ config.html_context["learn_access_dea_maps_link"] }}>`_.
-          {% endif %}
-
-          {% if data["data"] %}
-          * - **Get the data**
-            - {% for item in data["data"] %}
-              * `{{ item.get("name", "Data") }} <{{ item.get("link") }}>`_
-              {% endfor %}
-            -
-          {% endif %}
-
-          {% if data["stac"] %}
-          * - **Get via STAC**
-            - {% for item in data["stac"] %}
-              * `{{ item.get("name", "STAC") }} <{{ item.get("link") }}>`_
-              {% endfor %}
-            - Learn how to `access and stream the data using STAC <{{ config.html_context["learn_access_stac_link"] }}>`_.
           {% endif %}
 
           {% if data["explorer"] %}
@@ -200,40 +180,49 @@
             - {% for item in data["explorer"] %}
               * `{{ item.get("name", "Data Explorer") }} <{{ item.get("link") }}>`_
               {% endfor %}
-            - Learn how to `access the data via AWS <{{ config.html_context["learn_access_data_explorer_link"] }}>`_.
-          {% endif %}
-
-          {% if data["sandbox"] %}
-          * - **Play with the sandbox**
-            - {% for item in data["sandbox"] %}
-              * `{{ item.get("name", "Sandbox") }} <{{ item.get("link") }}>`_
-              {% endfor %}
             -
           {% endif %}
 
-          {% if data["ecat"] %}
-          * - **Product catalogue**
-            - {% for item in data["ecat"] %}
-              * `ecat {{ item.get("id") }} <https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/{{ item.get("id") }}>`_
+          {% if data["data"] %}
+          * - **Get the data online**
+            - {% for item in data["data"] %}
+              * `{{ item.get("name", "Data") }} <{{ item.get("link") }}>`_
               {% endfor %}
-            -
+            - Learn how to `access the data via AWS <{{ config.html_context["learn_access_data_AWS_link"] }}>`_.
+          {% endif %}
+
+          {% if data["code_samples"] %}
+          * - **See code sample**
+            - {% for item in data["code_samples"] %}
+              * `{{ item.get("name", "Code") }} <{{ item.get("link") }}>`_
+              {% endfor %}
+            - Learn how to `use DEA's Sandbox environment <{{ config.html_context["learn_access_DEA_Sandbox_link"] }}>`_.
           {% endif %}
 
           {% if data["web_services"] %}
-          * - **Web service**
+          * - **Bring the data to you via web service**
             - {% for item in data["web_services"] %}
               * `{{ item.get("name", "Web service") }} <{{ item.get("link") }}>`_
               {% endfor %}
             - Learn how to `connect to DEA's web services <{{ config.html_context["learn_access_web_service_link"] }}>`_.
           {% endif %}
 
-          {% if data["code_samples"] %}
-          * - **Code sample**
-            - {% for item in data["code_samples"] %}
-              * `{{ item.get("name", "Code") }} <{{ item.get("link") }}>`_
+          {% if data["stac"] %}
+          * - **Bring the data to you via STAC**
+            - {% for item in data["stac"] %}
+              * `{{ item.get("name", "STAC") }} <{{ item.get("link") }}>`_
+              {% endfor %}
+            - Learn how to `access and stream the data using STAC <{{ config.html_context["learn_access_stac_link"] }}>`_.
+          {% endif %}
+
+          {% if data["ecat"] %}
+          * - **View the product catalogue**
+            - {% for item in data["ecat"] %}
+              * `ecat ID: {{ item.get("id") }} <https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/{{ item.get("id") }}>`_
               {% endfor %}
             -
           {% endif %}
+
        {% else %}
        {% if not data["is_latest_version"] %}
        You can find the data source links in the `latest version of the product <{{ data["latest_version_link"] }}>`_.
