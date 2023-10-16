@@ -68,6 +68,7 @@ html_theme_options = {
 suppress_warnings = ['myst.header']
 
 html_context = {
+    'google_analytics_ga4_tag': 'G-0000000000',
     'support_link': 'example-support.com',
     'learn_access_dea_maps_link': '/setup/dea_maps.html',
     'learn_access_stac_link': '/notebooks/How_to_guides/Downloading_data_with_STAC.html',
