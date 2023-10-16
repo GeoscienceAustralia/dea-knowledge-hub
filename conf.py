@@ -173,7 +173,7 @@ try:
     html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
     html_theme_options = {
         "logo_only": True,
-        "analytics_id": "UA-113800428-1",
+        "analytics_id": "G-4B9D450HR4",
         "display_version": False,
         "canonical_url": "https://docs.dea.ga.gov.au/",
     }
