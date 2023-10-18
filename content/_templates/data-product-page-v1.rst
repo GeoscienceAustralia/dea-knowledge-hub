@@ -1,5 +1,7 @@
-.. |nbsp| unicode:: 0xA0 
+.. |nbsp| unicode:: 0xA0
    :trim:
+
+.. |copyright| unicode:: 0xA9
 
 .. rst-class:: data-product-page
 
@@ -325,6 +327,13 @@
     
        .. include:: _credits.md
           :parser: myst_parser.sphinx_
+
+       .. rubric:: License and copyright
+          :name: license-and-copyright
+
+       CC BY Attribution 4.0 International License
+
+       |copyright| Commonwealth of Australia (Geoscience Australia) 2023. `Creative Commons Attribution 4.0 International License <https://creativecommons.org/licenses/by/4.0/>`_
 
 .. raw:: html
 
