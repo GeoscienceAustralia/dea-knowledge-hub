@@ -1,0 +1,6 @@
+"node/581"   "data/products/dea-coastlines/index.rst"
+# "/data-products/dea/581/dea-coastlines"   "/products/dea-coastlines"
+# "/data-products/dea/581/digital-earth-australia-coastlines"   "/products/dea-coastlines"
+# "/data-products/dea/581/coastlines"   "/products/dea-coastlines"
+# "/data-products/dea/581/dea-coastlines-landsat"   "/products/dea-coastlines"
+
