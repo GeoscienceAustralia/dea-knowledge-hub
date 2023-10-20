@@ -237,11 +237,25 @@
             -
           {% endif %}
        {% else %}
-       {% if not data["is_latest_version"] %}
-       You can find the data source links in the `latest version of the product <{{ data["latest_version_link"] }}>`_.
-       {% else %}
        There are no data source links available at the present time.
        {% endif %}
+
+       {% if data["files"] %}
+
+       .. rubric:: Additional files
+          :name: additional-files
+
+       .. list-table::
+          :name: additional-files-table
+
+          {% for item in data["files"] %}
+          * - `{{ item.get("name", "File") }} <{{ item.get("link") }}>`_
+            - {{ item.get("description") }}
+          {% endfor %}
+       {% endif %}
+
+       {% if not data["is_latest_version"] %}
+       You can find the data source links in the `latest version of the product <{{ data["latest_version_link"] }}>`_.
        {% endif %}
 
        .. include:: _access.md

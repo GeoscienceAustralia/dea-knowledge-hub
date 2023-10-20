@@ -71,6 +71,14 @@ code_samples:
   - name: GitHub repository
     link: https://github.com/GeoscienceAustralia/dea-coastlines
 
+files:
+  - name: DEA Tiles_1.pdf
+    description: Image showing DEA tile locations and tile identifiers.
+    link: example.com
+  - name: DEA_v2_Albers_tiles_Australia.zip
+    link: example.com
+    description: DEA tile location shapefile (.shp) with tile identifiers.
+
 # History tab
 
 old_versions:
