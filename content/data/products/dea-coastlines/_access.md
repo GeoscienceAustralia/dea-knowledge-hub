@@ -1,4 +1,4 @@
-:::{dropdown} Access Notes
+:::{dropdown} How to access
 ### Data download
 
 DEA Coastlines data for the entire Australian coastline is available to download in two formats:
