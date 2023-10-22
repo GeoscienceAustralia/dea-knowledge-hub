@@ -121,6 +121,10 @@
     color: var(--pst-color-primary);
 }
 
+.data-product-page #additional-files-table {
+    margin-bottom: 2.75rem;
+}
+
 /* .data-product-page ol#processing-steps-list { */
 /* } */
 /*  */
