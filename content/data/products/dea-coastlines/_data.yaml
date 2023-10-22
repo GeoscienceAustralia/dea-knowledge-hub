@@ -3,7 +3,7 @@
 title: DEA Coastlines
 long_title: Digital Earth Australia Coastlines
 image: https://www.dea.ga.gov.au/_nuxt/image/3d7bbc.png
-# product_id: dea_coastlines
+product_id: null
 
 version: 2.1.0
 is_latest_version: True
@@ -70,6 +70,14 @@ code_samples:
     link: https://docs.dea.ga.gov.au/notebooks/DEA_products/DEA_Coastlines.html
   - name: GitHub repository
     link: https://github.com/GeoscienceAustralia/dea-coastlines
+
+files:
+  - name: DEA Tiles_1.pdf
+    description: Image showing DEA tile locations and tile identifiers.
+    link: example.com
+  - name: DEA_v2_Albers_tiles_Australia.zip
+    link: example.com
+    description: DEA tile location shapefile (.shp) with tile identifiers.
 
 # History tab
 
