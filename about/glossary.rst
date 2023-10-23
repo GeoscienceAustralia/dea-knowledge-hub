@@ -73,7 +73,7 @@ Glossary
 
    Australian Research Environment
    ARE
-      The ARE is a tool for
+      The ARE is an interface for
       using the data and software available on the :term:`NCI`. It is a replacement for
       the old :term:`VDI` system.
 
@@ -270,13 +270,13 @@ Glossary
    GIS
       A system that manages and visualises spatially referenced data.
 
-   High and Low Tide Composites
+   High and Low Tide Imagery
    HLTC
-      High and Low Tide Composites is a Digital Earth Australia product providing
-      cloud-free imagery mosaics of Australia's coast, estuaries and reefs at low 
-      and high tide.
+      Previously called High and Low Tide Composites. DEA High and Low Tide Imagery is a 
+      Digital Earth Australia product providing cloud-free imagery mosaics of Australia's 
+      coast, estuaries and reefs at low and high tide.
 
-      For more information, see `HLTC. <https://www.dea.ga.gov.au/products/dea-high-low>`_
+      For more information, see `DEA High and Low Tide Imagery. <https://www.dea.ga.gov.au/products/dea-high-low>`_
 
    High Performance Computing
    HPC
@@ -288,13 +288,19 @@ Glossary
       The angle between a ray incident on a surface and the line perpendicular to the surface at
       the point of incidence.
 
-   Intertidal Extents Model
-   ITEM
-      Intertidal Extents Model is a DEA product that maps the
+   Intertidal Elevation
+      Previously called National Intertidal Digital Elevation Model (NIDEM). A DEA product derived 
+      from DEA Intertidal Extents that maps the elevation of the Australian intertidal zone
+      relative to Mean Sea Level.
+
+      For more information, see `DEA Intertidal Elevation. <https://www.dea.ga.gov.au/products/dea-intertidal-elevation>`_
+
+   Intertidal Extents
+      Previously called Intertidal Extents Model (ITEM). DEA Intertidal Extents is a DEA product that maps the
       relative extent of the Australian intertidal zone at regular intervals of 
       the observed tidal range.
 
-      For more information, see `DEA ITEM. <https://www.dea.ga.gov.au/products/dea-intertidal-extents>`_
+      For more information, see `DEA Intertidal Extents. <https://www.dea.ga.gov.au/products/dea-intertidal-extents>`_
       
    Jupyter notebooks
       A computational "notebook" that allows code to be run and presented alongside 
@@ -393,13 +399,6 @@ Glossary
    NDVI
       Calculated from visible and near-infrared (:term:`NIR`) light reflected by vegetation.
 
-   National Intertidal Digital Elevation Model
-   NIDEM
-      A Digital Earth Australia product derived from :term:`ITEM` that maps the elevation relative
-      to Mean Sea Level of the Australian intertidal zone.
-
-      For more information, see `NIDEM. <https://www.dea.ga.gov.au/products/dea-intertidal-elevation>`_
-
    Near Infrared
    NIR
       Radiation just beyond the visible light spectrum. In Landsat and Sentinel 2 Earth observation
@@ -445,8 +444,12 @@ Glossary
 
       For more information, see `Landsat 9 instruments. <https://landsat.gsfc.nasa.gov/satellites/landsat-9/landsat-9-instruments/>`_
 
-   Panchromatic
-      Sensitive to many wavelengths of light.
+   Panchromatic band
+      A band that measures a wide range of light at high resolution, compared to standard multispectral
+      bands that measure a narrow range of light at lower resolution. On Landsat 7, 8, and 9, the
+      panchromatic band can be used to "sharpen" 30 metre visible bands to higher 15 metre resolution.
+
+      For more information, see `Pansharpening Landsat. <https://docs.dea.ga.gov.au/notebooks/How_to_guides/Pansharpening.html>`_
 
    Pixel
       The minimum size area on the ground detectable by a remote sensing device. The size varies depending
