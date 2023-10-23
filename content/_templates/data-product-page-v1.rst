@@ -35,7 +35,7 @@
       :Version: {{ data["version"] }} (`See latest version <{{ data["latest_version_link"] }}>`_)
       {% else %}:Version: {{ data["version"] }} (Latest)
       {% endif %}
-      :Product type: {{ data["product_type"] }}; {{ data["spatial_data_type"] }}
+      :Product type: {{ data["product_type"] }}, {{ data["spatial_data_type"] }}
       :Time span: {{ data["time_span"]["start"] }} – {{ data["time_span"]["end"] }}
       :Update frequency: {{ data["update_frequency"] }}
       {% if data["product_id"] %}
