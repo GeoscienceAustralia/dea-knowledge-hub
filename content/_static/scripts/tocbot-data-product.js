@@ -1,24 +1,28 @@
 // Enable tables of content on the data product pages using tocbot.
 
-document.addEventListener("DOMContentLoaded", function(event) {
+document.addEventListener("DOMContentLoaded", function (event) {
     // Move the section IDs to the H2 headings
 
-    let sections = document.querySelectorAll(".data-product-page .sd-tab-content > section[id]");
+    let sections = document.querySelectorAll(
+        ".data-product-page .sd-tab-content > section[id]"
+    );
 
     for (let i = 0; i < sections.length; i++) {
         let section = sections[i];
         let id = section.id;
-        section.removeAttribute('id');
+        section.removeAttribute("id");
         section.querySelector("* > h2").id = id;
     }
 
     // Convert the 'rubrics' to H2 headings
 
-    let rubrics = document.querySelectorAll(".data-product-page .sd-tab-content > p.rubric");
+    let rubrics = document.querySelectorAll(
+        ".data-product-page .sd-tab-content > p.rubric"
+    );
 
     for (let i = 0; i < rubrics.length; i++) {
         let rubric = rubrics[i];
-        let h2 = document.createElement('h2');
+        let h2 = document.createElement("h2");
         h2.id = rubric.id;
         h2.class = rubric.class;
         h2.innerHTML = rubric.innerHTML;
@@ -34,7 +38,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
         tocbot.init({
             contentSelector: `.data-product-page #${tab}-tab + .sd-tab-content`,
             tocSelector: `.data-product-page #${tab}-table-of-contents`,
-            headingSelector: 'h2'
+            headingSelector: "h2",
+            linkClass: "sd-badge",
+            extraLinkClasses: ["sd-text-primary"]
         });
     }
 });

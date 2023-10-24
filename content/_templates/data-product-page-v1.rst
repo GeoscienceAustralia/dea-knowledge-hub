@@ -159,8 +159,6 @@
 
        .. container:: table-of-contents
 
-          **In this section:**
-
           .. container::
              :name: access-table-of-contents
 
@@ -266,8 +264,6 @@
 
        .. container:: table-of-contents
 
-          **In this section:**
-
           .. container::
              :name: details-table-of-contents
 
@@ -281,8 +277,6 @@
 
        .. container:: table-of-contents
 
-          **In this section:**
-
           .. container::
              :name: quality-table-of-contents
 
@@ -295,8 +289,6 @@
        :name: history-tab
 
        .. container:: table-of-contents
-
-          **In this section:**
 
           .. container::
              :name: history-table-of-contents
@@ -331,8 +323,6 @@
        :name: credits-tab
 
        .. container:: table-of-contents
-
-          **In this section:**
 
           .. container::
              :name: credits-table-of-contents
