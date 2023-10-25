@@ -31,7 +31,14 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
     // Initialise the table of contents for each tab
 
-    let tabs = ["access", "details", "quality", "history", "credits"];
+    let tabs = [
+        "overview",
+        "access",
+        "details",
+        "quality",
+        "history",
+        "credits"
+    ];
 
     for (let i = 0; i < tabs.length; i++) {
         let tab = tabs[i];
