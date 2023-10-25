@@ -62,8 +62,18 @@
     .. tab-item:: Overview
        :name: overview-tab
 
-       .. include:: _about.md
+       .. container:: table-of-contents
+
+          .. container::
+             :name: access-table-of-contents
+
+             |nbsp|
+
+       .. include:: _overview.md
           :parser: myst_parser.sphinx_
+
+       .. rubric:: Access the data
+          :name: access-the-data-cards
 
        {% if data["is_latest_version"] and (data["maps"] or data["data"] or data["stac"] or data["explorer"] or data["sandbox"] or data["ecat"] or data["web_services"] or data["code_samples"]) %}
        .. container::
@@ -137,6 +147,9 @@
              {% endfor %}
        {% endif %}
 
+       .. rubric:: Key details
+          :name: key-details
+
        {% if data["parent_product"] %}
        :Parent product(s): `{{ data["parent_product"]["name"] }} <{{ data["parent_product"]["link"] }}>`_
        {% endif %}
@@ -154,6 +167,9 @@
        :Published by: {{ data["author"] }}
        {% endif %}
 
+       .. include:: _publications.md
+          :parser: myst_parser.sphinx_
+
     .. tab-item:: Access
        :name: access-tab
 
@@ -165,7 +181,7 @@
              |nbsp|
 
        .. rubric:: Access the data
-          :name: access-the-data
+          :name: access-the-data-table
 
        {% if data["is_latest_version"] and (data["maps"] or data["data"] or data["stac"] or data["explorer"] or data["sandbox"] or data["ecat"] or data["web_services"] or data["code_samples"]) %}
        .. list-table::
