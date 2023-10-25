@@ -19,3 +19,8 @@ The authors would like to sincerely thank the following organisations and indiv
 This research was undertaken with the assistance of resources from the National Computational Infrastructure High Performance Data (HPD) platform, which is supported by the Australian Government.
 
 Tidal modelling is provided by the FES2014 global tidal model, implemented using the pyTMD Python package. FES2014 was produced by NOVELTIS, LEGOS, CLS Space Oceanography Division and CNES. It is distributed by AVISO, with support from CNES (<http://www.aviso.altimetry.fr/>).
+
+## License and copyright
+
+CC BY Attribution 4.0 International License
+
