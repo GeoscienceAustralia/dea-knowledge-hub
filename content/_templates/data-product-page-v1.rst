@@ -348,7 +348,7 @@
        .. include:: _credits.md
           :parser: myst_parser.sphinx_
 
-       |copyright| Commonwealth of Australia (Geoscience Australia) 2023. `Creative Commons Attribution 4.0 International License <https://creativecommons.org/licenses/by/4.0/>`_
+       |copyright| Commonwealth of Australia (Geoscience Australia).
 
 .. raw:: html
 
