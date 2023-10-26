@@ -86,84 +86,68 @@
           .. grid:: 4
              :gutter: 3
 
-             {% for item in data["maps"] %}
-             {% if item["link"] %}
+             {% for item in data["maps"] | selectattr("link",  "!=", None) %}
              .. grid-item-card:: {{ item["title"] or "See it on a map" }}
                 :img-top: {{ item["image"] or "https://www.gifpng.com/300x200" }}
                 :link: {{ item["link"] }}
 
                 {{ item["name"] or "Map" }}
-             {% endif %}
              {% endfor %}
 
-             {% for item in data["data"] %}
-             {% if item["link"] %}
+             {% for item in data["data"] | selectattr("link",  "!=", None) %}
              .. grid-item-card:: {{ item["title"] or "Get the data online" }}
                 :img-top: {{ item["image"] or "https://www.gifpng.com/300x200" }}
                 :link: {{ item["link"] }}
 
                 {{ item["name"] or "Data" }}
-             {% endif %}
              {% endfor %}
 
-             {% for item in data["explorer"] %}
-             {% if item["link"] %}
+             {% for item in data["explorer"] | selectattr("link",  "!=", None) %}
              .. grid-item-card:: {{ item["title"] or "Explore data samples" }}
                 :img-top: {{ item["image"] or "https://www.gifpng.com/300x200" }}
                 :link: {{ item["link"] }}
 
                 {{ item["name"] or "Data Explorer" }}
-             {% endif %}
              {% endfor %}
 
-             {% for item in data["sandbox"] %}
-             {% if item["link"] %}
+             {% for item in data["sandbox"] | selectattr("link",  "!=", None) %}
              .. grid-item-card:: {{ item["title"] or "Play with the sandbox" }}
                 :img-top: {{ item["image"] or "https://www.gifpng.com/300x200" }}
                 :link: {{ item["link"] }}
 
                 {{ item["name"] or "Sandbox" }}
-             {% endif %}
              {% endfor %}
 
-             {% for item in data["web_services"] %}
-             {% if item["link"] %}
+             {% for item in data["web_services"] | selectattr("link",  "!=", None) %}
              .. grid-item-card:: {{ item["title"] or "Bring the data to you via web service" }}
                 :img-top: {{ item["image"] or "https://www.gifpng.com/300x200" }}
                 :link: {{ item["link"] }}
 
                 {{ item["name"] or "Service" }}
-             {% endif %}
              {% endfor %}
 
-             {% for item in data["stac"] %}
-             {% if item["link"] %}
+             {% for item in data["stac"] | selectattr("link",  "!=", None) %}
              .. grid-item-card:: {{ item["title"] or "Get via STAC" }}
                 :img-top: {{ item["image"] or "https://www.gifpng.com/300x200" }}
                 :link: {{ item["link"] }}
 
                 {{ item["name"] or "STAC" }}
-             {% endif %}
              {% endfor %}
 
-             {% for item in data["ecat"] %}
-             {% if item["id"] %}
+             {% for item in data["ecat"] | selectattr("id",  "!=", None) %}
              .. grid-item-card:: {{ item["title"] or "View the product catalogue" }}
                 :img-top: {{ item["image"] or "https://www.gifpng.com/300x200" }}
                 :link: https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/{{ item["id"] }}
 
                 ecat {{ item["id"] }}
-             {% endif %}
              {% endfor %}
 
-             {% for item in data["code_samples"] %}
-             {% if item["link"] %}
+             {% for item in data["code_samples"] | selectattr("link",  "!=", None) %}
              .. grid-item-card:: {{ item["title"] or "Code sample" }}
                 :img-top: {{ item["image"] or "https://www.gifpng.com/300x200" }}
                 :link: {{ item["link"] }}
 
                 {{ item["name"] or "Code" }}
-             {% endif %}
              {% endfor %}
        {% endif %}
 
@@ -203,9 +187,9 @@
        .. list-table::
           :name: access-table
 
-          {% if data["maps"]|selectattr("link") %}
+          {% if data["maps"] | selectattr("link",  "ne", "None") %}
           * - **See the data on a map**
-            - {% for item in data["maps"] %}
+            - {% for item in (data["maps"] | selectattr("link",  "defined")) %}
               {% if item["link"] %}
               * `{{ item["name"] or "Map" }} <{{ item["link"] }}>`_
               {% endif %}

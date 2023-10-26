@@ -44,8 +44,8 @@ stac:
 explorer:
   - name: AWS Explorer
     link: https://explorer.prod.dea.ga.gov.au/products/geodata_coast_100k
-  - name: NCI Explorer
-    link: https://explorer.prod.dea.ga.gov.au/products/geodata_coast_100k
+  # - name: NCI Explorer
+  #   link: https://explorer.prod.dea.ga.gov.au/products/geodata_coast_100k
 
 sandbox:
   - name: Sandbox
@@ -58,26 +58,26 @@ web_services:
   - title: Web Map Service
     name: WMS
     link: example.com
-  - title: Web Coverage Service
-    name: WCS
-    link: example.com
-  - title: Web Feature Service
-    name: WFS
-    link: example.com
+  # - title: Web Coverage Service
+  #   name: WCS
+  #   link: example.com
+  # - title: Web Feature Service
+  #   name: WFS
+  #   link: example.com
 
 code_samples:
   - name: Jupyter notebook
     link: https://docs.dea.ga.gov.au/notebooks/DEA_products/DEA_Coastlines.html
-  - name: GitHub repository
-    link: https://github.com/GeoscienceAustralia/dea-coastlines
+  # - name: GitHub repository
+  #   link: https://github.com/GeoscienceAustralia/dea-coastlines
 
 files:
   - name: DEA Tiles_1.pdf
     description: Image showing DEA tile locations and tile identifiers.
     link: example.com
-  - name: DEA_v2_Albers_tiles_Australia.zip
-    link: example.com
-    description: DEA tile location shapefile (.shp) with tile identifiers.
+  # - name: DEA_v2_Albers_tiles_Australia.zip
+  #   link: example.com
+  #   description: DEA tile location shapefile (.shp) with tile identifiers.
 
 # History tab
 
