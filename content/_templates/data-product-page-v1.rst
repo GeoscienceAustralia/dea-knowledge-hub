@@ -7,6 +7,12 @@
 {% set valid_ecat = data["ecat"] | selectattr("link",  "!=", None) %}
 {% set valid_code_samples = data["code_samples"] | selectattr("link",  "!=", None) %}
 
+{% set has_valid_maps = valid_maps | list | length > 0 %}
+{% set has_valid_data = valid_data | list | length > 0 %}
+
+{% set has_access_data = has_valid_maps or has_valid_data %}
+.. or valid_stac or valid_explorer or valid_sandbox or valid_ecat or valid_web_services or valid_code_samples
+
 .. |nbsp| unicode:: 0xA0
    :trim:
 
@@ -81,6 +87,8 @@
              :name: overview-table-of-contents
 
              |nbsp|
+
+       {{ valid_maps | list }}
 
        .. include:: _overview.md
           :parser: myst_parser.sphinx_
@@ -196,12 +204,10 @@
        .. list-table::
           :name: access-table
 
-          {% if valid_maps | list | length > 0 %}
+          {% if has_valid_maps %}
           * - **See the data on a map**
             - {% for item in valid_maps %}
-              {% if item["link"] %}
               * `{{ item["name"] or "Map" }} <{{ item["link"] }}>`_
-              {% endif %}
               {% endfor %}
             - Learn how to `use DEA Maps <{{ config.html_context["learn_access_dea_maps_link"] }}>`_.
           {% endif %}
@@ -222,7 +228,7 @@
             -
           {% endif %}
 
-          {% if data["data"] %}
+          {% if has_valid_data %}
           * - **Get the data online**
             - {% for item in data["data"] %}
               * `{{ item["name"] or "Data" }} <{{ item["link"] }}>`_
