@@ -11,6 +11,8 @@
 {% set valid_files = data["files"] | selectattr("link",  "!=", None) | list %}
 {% set valid_old_versions = data["old_versions"] | selectattr("slug",  "!=", None) | selectattr("version",  "!=", None) | selectattr("name",  "!=", None) | list %}
 
+{% set valid_product_types = [data["product_type"], data["spatial_data_type"]] | select("!=", None) | join(", ") %}
+
 {% set has_access_data = valid_maps or valid_data or valid_explorer or valid_sandbox or valid_web_services or valid_stac or valid_ecat or valid_code_samples %}
 
 {% set tab_title = data["title"] if is_latest_version else "v" + data["version"] + ": " + data["title"] %}
@@ -39,20 +41,23 @@
 
    .. container:: quick-info
 
-      {% if not is_latest_version %}
+      {%- if not is_latest_version %}
       :Version: {{ data["version"] }} (`See latest version <{{ data["latest_version_link"] }}>`_)
-      {% else %}:Version: {{ data["version"] }} (Latest)
-      {% endif %}
-      :Product type: {{ data["product_type"] }}, {{ data["spatial_data_type"] }}
-      {% if data["time_span"]["start"] and data["time_span"]["end"] %}
+      {%- else %}
+      :Version: {{ data["version"] }} (Latest)
+      {%- endif %}
+      {%- if valid_product_types %}
+      :Product type: {{ valid_product_types }}
+      {%- endif %}
+      {%- if data["time_span"]["start"] and data["time_span"]["end"] %}
       :Time span: {{ data["time_span"]["start"] }} – {{ data["time_span"]["end"] }}
-      {% elif data["time_span"]["start"] or data["time_span"]["end"]  %}
+      {%- elif data["time_span"]["start"] or data["time_span"]["end"]  %}
       :Time span: {{ data["time_span"]["start"] or data["time_span"]["end"] }}
-      {% endif %}
+      {%- endif %}
       :Update frequency: {{ data["update_frequency"] }}
-      {% if data["product_id"] %}
+      {%- if data["product_id"] %}
       :Product ID: {{ data["product_id"] }}
-      {% endif %}
+      {%- endif %}
 
    .. container:: hero-image
 
@@ -165,18 +170,18 @@
        .. rubric:: Key details
           :name: key-details
 
-       {% if data["parent_product"] %}
+       {%- if data["parent_product"] %}
        :Parent product(s): `{{ data["parent_product"]["name"] }} <{{ data["parent_product"]["link"] }}>`_
-       {% endif %}
-       {% if data["collection"] %}
+       {%- endif %}
+       {%- if data["collection"] %}
        :Collection: {{ data["collection"] }}
-       {% endif %}
-       {% if data["doi"] %}
+       {%- endif %}
+       {%- if data["doi"] %}
        :DOI: {{ data["doi"] }}
-       {% endif %}
-       {% if data["published"] %}
+       {%- endif %}
+       {%- if data["published"] %}
        :Last updated: {{ data["published"] }}
-       {% endif %}
+       {%- endif %}
 
        .. include:: _publications.md
           :parser: myst_parser.sphinx_
