@@ -21,7 +21,7 @@ Here you will find metadata for Geoscience Australia's earth observation data pr
       ^^^^^^^^^^^^^^^^^^^
 
       {% for theme in data.themes %}
-      `{{ theme.get("name") }} <data/themes/{{ theme.get("slug") }}>`_
+      `{{ theme.name }} <data/themes/{{ theme.slug }}>`_
       {% endfor %}
 
    .. grid-item-card::
@@ -30,7 +30,7 @@ Here you will find metadata for Geoscience Australia's earth observation data pr
       ^^^^^^^^^^^^^^^^
 
       {% for use_link in data.use_links %}
-      `{{ use_link.get("name") }} <{{ use_link.get("link") }}>`_
+      `{{ use_link.name }} <{{ use_link.link }}>`_
       {% endfor %}
    
    .. grid-item-card::
@@ -39,7 +39,7 @@ Here you will find metadata for Geoscience Australia's earth observation data pr
       ^^^^^^^^^^^^^^^
 
       {% for program_link in data.program_links %}
-      `{{ program_link.get("name") }} <{{ program_link.get("link") }}>`_
+      `{{ program_link.name }} <{{ program_link.link }}>`_
       {% endfor %}
 
       `Get support <{{ config.html_context.support_link }}>`_

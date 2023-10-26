@@ -8,9 +8,9 @@
     :gutter: 3
 
     {% for theme in data.themes %}
-    .. grid-item-card:: {{ theme.get("name") }}
-       :img-top: {{ theme.get("image", "https://www.gifpng.com/300x200") }}
-       :link: themes/{{ theme.get("slug") }}
+    .. grid-item-card:: {{ theme.name }}
+       :img-top: {{ theme.image or "https://www.gifpng.com/300x200" }}
+       :link: themes/{{ theme.slug }}
     {% endfor %}
 
 .. dropdown:: List of all products
