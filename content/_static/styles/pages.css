@@ -121,6 +121,15 @@
     color: var(--pst-color-primary);
 }
 
+.data-product-page .table-of-contents .sd-badge {
+    font-size: 0.8rem !important;
+    padding: 0 !important;
+}
+
+.data-product-page #additional-files-table {
+    margin-bottom: 2.75rem;
+}
+
 /* .data-product-page ol#processing-steps-list { */
 /* } */
 /*  */

@@ -22,6 +22,5 @@ Tidal modelling is provided by the FES2014 global tidal model, implemented using
 
 ## License and copyright
 
-CC BY Attribution 4.0 International License
+[CC BY Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
 
-&copy; Commonwealth of Australia (Geoscience Australia) 2023. [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
