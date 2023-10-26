@@ -8,6 +8,8 @@
 {% set valid_stac = data["stac"] | selectattr("link",  "!=", None) | list %}
 {% set valid_ecat = data["ecat"] | selectattr("link",  "!=", None) | list %}
 {% set valid_code_samples = data["code_samples"] | selectattr("link",  "!=", None) | list %}
+{% set valid_files = data["files"] | selectattr("link",  "!=", None) | list %}
+{% set valid_old_versions = data["old_versions"] | selectattr("slug",  "!=", None) | selectattr("version",  "!=", None) | selectattr("name",  "!=", None) | list %}
 
 {% set has_access_data = valid_maps or valid_data or valid_explorer or valid_sandbox or valid_web_services or valid_stac or valid_ecat or valid_code_samples %}
 
@@ -268,7 +270,7 @@
        There are no data source links available at the present time.
        {% endif %}
 
-       {% if data["files"] %}
+       {% if valid_files %}
 
        .. rubric:: Additional files
           :name: additional-files
@@ -276,8 +278,8 @@
        .. list-table::
           :name: additional-files-table
 
-          {% for item in data["files"] %}
-          * - `{{ item["name"] or "File" }} <{{ item["link"] }}>`_
+          {% for item in valid_files %}
+          * - `{{ item["name"] or item["link"] }} <{{ item["link"] }}>`_
             - {{ item["description"] }}
           {% endfor %}
        {% endif %}
@@ -331,15 +333,15 @@
        .. rubric:: Old versions
           :name: old-versions
 
-       {% if data["old_versions"] %}
+       {% if valid_old_versions %}
 
        View previous versions of this data product.
 
        .. list-table::
 
-          {% for item in data["old_versions"] %}
+          {% for item in valid_old_versions %}
           * - `v{{ item["version"] }}: {{ item["name"] }} </data/old-versions/{{ item["slug"] }}>`_
-            - {{ item["release_date"] }}
+            - {{ item["release_date"] or "" }}
           {% endfor %}
        {% else %}
        No old versions available.
