@@ -119,7 +119,7 @@
              {% for item in data["explorer"] %}
              {% if item["link"] %}
              .. grid-item-card:: {{ item["title"] or "Explore data samples" }}
-                :img-top: {{ item.get("image") or "https://www.gifpng.com/300x200" }}
+                :img-top: {{ item["image"] or "https://www.gifpng.com/300x200" }}
                 :link: {{ item["link"] }}
 
                 {{ item["name"] or "Data Explorer" }}
@@ -207,10 +207,12 @@
        .. list-table::
           :name: access-table
 
-          {% if data["maps"] %}
+          {% if data["maps"]|selectattr("link") %}
           * - **See the map**
             - {% for item in data["maps"] %}
-              * `{{ item.get("name", "Map") }} <{{ item.get("link") }}>`_
+              {% if item["link"] %}
+              * `{{ item["name"] or "Map" }} <{{ item["link"] }}>`_
+              {% endif %}
               {% endfor %}
             - Learn how to `use DEA Maps <{{ config.html_context["learn_access_dea_maps_link"] }}>`_.
           {% endif %}
@@ -218,7 +220,7 @@
           {% if data["data"] %}
           * - **Get the data**
             - {% for item in data["data"] %}
-              * `{{ item.get("name", "Data") }} <{{ item.get("link") }}>`_
+              * `{{ item["name"] or "Data" }} <{{ item["link"] }}>`_
               {% endfor %}
             -
           {% endif %}
@@ -226,7 +228,7 @@
           {% if data["stac"] %}
           * - **Get via STAC**
             - {% for item in data["stac"] %}
-              * `{{ item.get("name", "STAC") }} <{{ item.get("link") }}>`_
+              * `{{ item["name"] or "STAC" }} <{{ item["link"] }}>`_
               {% endfor %}
             - Learn how to `access and stream the data using STAC <{{ config.html_context["learn_access_stac_link"] }}>`_.
           {% endif %}
@@ -234,7 +236,7 @@
           {% if data["explorer"] %}
           * - **Explore data samples**
             - {% for item in data["explorer"] %}
-              * `{{ item.get("name", "Data Explorer") }} <{{ item.get("link") }}>`_
+              * `{{ item["name"] or "Data Explorer" }} <{{ item["link"] }}>`_
               {% endfor %}
             - Learn how to `access the data via AWS <{{ config.html_context["learn_access_data_explorer_link"] }}>`_.
           {% endif %}
@@ -242,7 +244,7 @@
           {% if data["sandbox"] %}
           * - **Play with the sandbox**
             - {% for item in data["sandbox"] %}
-              * `{{ item.get("name", "Sandbox") }} <{{ item.get("link") }}>`_
+              * `{{ item["name"] or "Sandbox" }} <{{ item["link"] }}>`_
               {% endfor %}
             -
           {% endif %}
@@ -250,7 +252,7 @@
           {% if data["ecat"] %}
           * - **Product catalogue**
             - {% for item in data["ecat"] %}
-              * `ecat {{ item.get("id") }} <https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/{{ item.get("id") }}>`_
+              * `ecat {{ item["id"] }} <https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/{{ item["id"] }}>`_
               {% endfor %}
             -
           {% endif %}
@@ -258,7 +260,7 @@
           {% if data["web_services"] %}
           * - **Web service**
             - {% for item in data["web_services"] %}
-              * `{{ item.get("name", "Web service") }} <{{ item.get("link") }}>`_
+              * `{{ item["name"] or "Web service" }} <{{ item["link"] }}>`_
               {% endfor %}
             - Learn how to `connect to DEA's web services <{{ config.html_context["learn_access_web_service_link"] }}>`_.
           {% endif %}
@@ -266,7 +268,7 @@
           {% if data["code_samples"] %}
           * - **Code sample**
             - {% for item in data["code_samples"] %}
-              * `{{ item.get("name", "Code") }} <{{ item.get("link") }}>`_
+              * `{{ item["name"] or "Code" }} <{{ item["link"] }}>`_
               {% endfor %}
             -
           {% endif %}
@@ -283,8 +285,8 @@
           :name: additional-files-table
 
           {% for item in data["files"] %}
-          * - `{{ item.get("name", "File") }} <{{ item.get("link") }}>`_
-            - {{ item.get("description") }}
+          * - `{{ item["name"] or "File" }} <{{ item["link"] }}>`_
+            - {{ item["description"] }}
           {% endfor %}
        {% endif %}
 
@@ -344,8 +346,8 @@
        .. list-table::
 
           {% for item in data["old_versions"] %}
-          * - `v{{ item.get("version") }}: {{ item.get("name") }} </data/old-versions/{{ item.get("slug") }}>`_
-            - {{ item.get("release_date") }}
+          * - `v{{ item["version"] }}: {{ item["name"] }} </data/old-versions/{{ item["slug"] }}>`_
+            - {{ item["release_date"] }}
           {% endfor %}
        {% else %}
        No old versions available.
