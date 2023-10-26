@@ -69,6 +69,9 @@
 
 {% endif %}
 
+{% if not is_latest_version %}
+{% endif %}
+
 .. tab-set::
 
     .. tab-item:: Overview
