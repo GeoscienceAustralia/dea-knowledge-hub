@@ -170,8 +170,10 @@
        .. rubric:: Key details
           :name: key-details
 
-       {%- if data["parent_product"] %}
+       {%- if data["parent_product"]["name"] and data["parent_product"]["link"] %}
        :Parent product(s): `{{ data["parent_product"]["name"] }} <{{ data["parent_product"]["link"] }}>`_
+       {% elif data["parent_product"]["name"] %}
+       :Parent product(s): {{ data["parent_product"]["name"] }}
        {%- endif %}
        {%- if data["collection"] %}
        :Collection: {{ data["collection"] }}
