@@ -1,7 +1,7 @@
 .. rst-class:: data-product-variants-page
 
 ===================================================================
-{{ data["title"] }}
+{{ data.title }}
 ===================================================================
 
 This product has several variants.

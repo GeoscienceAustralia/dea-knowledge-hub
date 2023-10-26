@@ -1,7 +1,7 @@
 .. rst-class:: home-page
 
 ===================================================================
-{{ data["title"] }}
+{{ data.title }}
 ===================================================================
 
 .. image:: _static/images/home-page-hero.png
@@ -20,7 +20,7 @@ Here you will find metadata for Geoscience Australia's earth observation data pr
       Access the data ...
       ^^^^^^^^^^^^^^^^^^^
 
-      {% for theme in data["themes"] %}
+      {% for theme in data.themes %}
       `{{ theme.get("name") }} <data/themes/{{ theme.get("slug") }}>`_
       {% endfor %}
 
@@ -29,7 +29,7 @@ Here you will find metadata for Geoscience Australia's earth observation data pr
       Use the data ...
       ^^^^^^^^^^^^^^^^
 
-      {% for use_link in data["use_links"] %}
+      {% for use_link in data.use_links %}
       `{{ use_link.get("name") }} <{{ use_link.get("link") }}>`_
       {% endfor %}
    
@@ -38,11 +38,11 @@ Here you will find metadata for Geoscience Australia's earth observation data pr
       Our program ...
       ^^^^^^^^^^^^^^^
 
-      {% for program_link in data["program_links"] %}
+      {% for program_link in data.program_links %}
       `{{ program_link.get("name") }} <{{ program_link.get("link") }}>`_
       {% endfor %}
 
-      `Get support <{{ config.html_context["support_link"] }}>`_
+      `Get support <{{ config.html_context.support_link }}>`_
 
 .. rubric:: About Digital Earth Australia
    :class: rubric-2

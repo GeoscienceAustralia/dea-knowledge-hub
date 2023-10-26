@@ -1,7 +1,7 @@
 .. rst-class:: data-old-versions-page
 
 ===================================================================
-{{ data["title"] }}
+{{ data.title }}
 ===================================================================
 
 This page lists the old versions of products.
