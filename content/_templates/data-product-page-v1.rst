@@ -7,11 +7,16 @@
 {% set valid_ecat = data["ecat"] | selectattr("link",  "!=", None) %}
 {% set valid_code_samples = data["code_samples"] | selectattr("link",  "!=", None) %}
 
-{% set has_valid_maps = valid_maps | list | length > 0 %}
-{% set has_valid_data = valid_data | list | length > 0 %}
+{% set has_valid_maps = data["maps"] | selectattr("link",  "!=", None) | list | length > 0 %}
+{% set has_valid_data = data["data"] | selectattr("link",  "!=", None) | list | length > 0 %}
+{% set has_valid_explorer = data["explorer"] | selectattr("link",  "!=", None) | list | length > 0 %}
+{% set has_valid_sandbox = data["sandbox"] | selectattr("link",  "!=", None) | list | length > 0 %}
+{% set has_valid_web_services = data["web_services"] | selectattr("link",  "!=", None) | list | length > 0 %}
+{% set has_valid_stac = data["stac"] | selectattr("link",  "!=", None) | list | length > 0 %}
+{% set has_valid_ecat = data["ecat"] | selectattr("link",  "!=", None) | list | length > 0 %}
+{% set has_valid_code_samples = data["code_samples"] | selectattr("link",  "!=", None) | list | length > 0 %}
 
-{% set has_access_data = has_valid_maps or has_valid_data %}
-.. or valid_stac or valid_explorer or valid_sandbox or valid_ecat or valid_web_services or valid_code_samples
+{% set has_access_data = has_valid_maps or has_valid_data or has_valid_explorer or has_valid_sandbox or has_valid_web_services or has_valid_stac or has_valid_ecat or has_valid_code_samples %}
 
 .. |nbsp| unicode:: 0xA0
    :trim:
@@ -88,7 +93,7 @@
 
              |nbsp|
 
-       {{ valid_maps | list }}
+       {{ valid_explorer | list }}
 
        .. include:: _overview.md
           :parser: myst_parser.sphinx_
@@ -96,7 +101,7 @@
        .. rubric:: Access the data
           :name: access-the-data-cards
 
-       {% if data["is_latest_version"] and (data["maps"] or data["data"] or data["stac"] or data["explorer"] or data["sandbox"] or data["ecat"] or data["web_services"] or data["code_samples"]) %}
+       {% if data["is_latest_version"] and has_access_data %}
        .. container::
           :name: access-cards
 
@@ -200,7 +205,7 @@
        .. rubric:: Access the data
           :name: access-the-data-table
 
-       {% if data["is_latest_version"] and (data["maps"] or data["data"] or data["stac"] or data["explorer"] or data["sandbox"] or data["ecat"] or data["web_services"] or data["code_samples"]) %}
+       {% if data["is_latest_version"] and has_access_data %}
        .. list-table::
           :name: access-table
 
@@ -220,7 +225,7 @@
             - Learn how to `access and stream the data using STAC <{{ config.html_context["learn_access_stac_link"] }}>`_.
           {% endif %}
 
-          {% if data["explorer"] %}
+          {% if has_valid_explorer %}
           * - **Explore data samples**
             - {% for item in data["explorer"] %}
               * `{{ item["name"] or "Data Explorer" }} <{{ item["link"] }}>`_
