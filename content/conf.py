@@ -72,6 +72,7 @@ html_context = {
     'support_link': 'example-support.com',
     'learn_access_dea_maps_link': '/setup/dea_maps.html',
     'learn_access_stac_link': '/notebooks/How_to_guides/Downloading_data_with_STAC.html',
-    'learn_access_data_explorer_link': '/about/faq.html#how-do-i-download-data-from-dea',
+    'learn_access_data_AWS_link': '/about/faq.html#how-do-i-download-data-from-dea',
     'learn_access_web_service_link': '/setup/gis/README.html',
+    'learn_access_DEA_Sandbox_link': '/setup/Sandbox/sandbox.html',
 }
