@@ -1,22 +1,13 @@
-{% set valid_maps = data["maps"] | selectattr("link",  "!=", None) %}
-{% set valid_data = data["data"] | selectattr("link",  "!=", None) %}
-{% set valid_explorer = data["explorer"] | selectattr("link",  "!=", None) %}
-{% set valid_sandbox = data["sandbox"] | selectattr("link",  "!=", None) %}
-{% set valid_web_services = data["web_services"] | selectattr("link",  "!=", None) %}
-{% set valid_stac = data["stac"] | selectattr("link",  "!=", None) %}
-{% set valid_ecat = data["ecat"] | selectattr("link",  "!=", None) %}
-{% set valid_code_samples = data["code_samples"] | selectattr("link",  "!=", None) %}
+{% set valid_maps = data["maps"] | selectattr("link",  "!=", None) | list %}
+{% set valid_data = data["data"] | selectattr("link",  "!=", None) | list %}
+{% set valid_explorer = data["explorer"] | selectattr("link",  "!=", None) | list %}
+{% set valid_sandbox = data["sandbox"] | selectattr("link",  "!=", None) | list %}
+{% set valid_web_services = data["web_services"] | selectattr("link",  "!=", None) | list %}
+{% set valid_stac = data["stac"] | selectattr("link",  "!=", None) | list %}
+{% set valid_ecat = data["ecat"] | selectattr("link",  "!=", None) | list %}
+{% set valid_code_samples = data["code_samples"] | selectattr("link",  "!=", None) | list %}
 
-{% set has_valid_maps = data["maps"] | selectattr("link",  "!=", None) | list | length > 0 %}
-{% set has_valid_data = data["data"] | selectattr("link",  "!=", None) | list | length > 0 %}
-{% set has_valid_explorer = data["explorer"] | selectattr("link",  "!=", None) | list | length > 0 %}
-{% set has_valid_sandbox = data["sandbox"] | selectattr("link",  "!=", None) | list | length > 0 %}
-{% set has_valid_web_services = data["web_services"] | selectattr("link",  "!=", None) | list | length > 0 %}
-{% set has_valid_stac = data["stac"] | selectattr("link",  "!=", None) | list | length > 0 %}
-{% set has_valid_ecat = data["ecat"] | selectattr("link",  "!=", None) | list | length > 0 %}
-{% set has_valid_code_samples = data["code_samples"] | selectattr("link",  "!=", None) | list | length > 0 %}
-
-{% set has_access_data = has_valid_maps or has_valid_data or has_valid_explorer or has_valid_sandbox or has_valid_web_services or has_valid_stac or has_valid_ecat or has_valid_code_samples %}
+{% set has_access_data = valid_maps or valid_data or valid_explorer or valid_sandbox or valid_web_services or valid_stac or valid_ecat or valid_code_samples %}
 
 .. |nbsp| unicode:: 0xA0
    :trim:
@@ -207,7 +198,7 @@
        .. list-table::
           :name: access-table
 
-          {% if has_valid_maps %}
+          {% if valid_maps %}
           * - **See the data on a map**
             - {% for item in valid_maps %}
               * `{{ item["name"] or "Map" }} <{{ item["link"] }}>`_
@@ -215,7 +206,7 @@
             - Learn how to `use DEA Maps <{{ config.html_context["learn_access_dea_maps_link"] }}>`_.
           {% endif %}
 
-          {% if has_valid_stac %}
+          {% if valid_stac %}
           * - **Get via STAC**
             - {% for item in valid_stac %}
               * `{{ item["name"] or "STAC" }} <{{ item["link"] }}>`_
@@ -223,7 +214,7 @@
             - Learn how to `access and stream the data using STAC <{{ config.html_context["learn_access_stac_link"] }}>`_.
           {% endif %}
 
-          {% if has_valid_explorer %}
+          {% if valid_explorer %}
           * - **Explore data samples**
             - {% for item in valid_explorer %}
               * `{{ item["name"] or "Data Explorer" }} <{{ item["link"] }}>`_
@@ -231,7 +222,7 @@
             -
           {% endif %}
 
-          {% if has_valid_data %}
+          {% if valid_data %}
           * - **Get the data online**
             - {% for item in valid_data %}
               * `{{ item["name"] or "Data" }} <{{ item["link"] }}>`_
@@ -239,33 +230,33 @@
             -
           {% endif %}
 
-          {% if data["sandbox"] %}
+          {% if valid_sandbox %}
           * - **Play with the sandbox**
-            - {% for item in data["sandbox"] %}
+            - {% for item in valid_sandbox %}
               * `{{ item["name"] or "Sandbox" }} <{{ item["link"] }}>`_
               {% endfor %}
             - Learn how to `access the data via AWS <{{ config.html_context["learn_access_data_AWS_link"] }}>`_.
           {% endif %}
 
-          {% if data["ecat"] %}
+          {% if valid_ecat %}
           * - **Product catalogue**
-            - {% for item in data["ecat"] %}
+            - {% for item in valid_ecat %}
               * `ecat {{ item["id"] }} <https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/{{ item["id"] }}>`_
               {% endfor %}
             - Learn how to `use DEA's Sandbox environment <{{ config.html_context["learn_access_DEA_Sandbox_link"] }}>`_.
           {% endif %}
 
-          {% if data["web_services"] %}
+          {% if valid_web_services %}
           * - **Bring the data to you via web service**
-            - {% for item in data["web_services"] %}
+            - {% for item in valid_web_services %}
               * `{{ item["name"] or "Web service" }} <{{ item["link"] }}>`_
               {% endfor %}
             - Learn how to `connect to DEA's web services <{{ config.html_context["learn_access_web_service_link"] }}>`_.
           {% endif %}
 
-          {% if data["code_samples"] %}
+          {% if valid_code_samples %}
           * - **Code sample**
-            - {% for item in data["code_samples"] %}
+            - {% for item in valid_code_samples %}
               * `{{ item["name"] or "Code" }} <{{ item["link"] }}>`_
               {% endfor %}
             -
