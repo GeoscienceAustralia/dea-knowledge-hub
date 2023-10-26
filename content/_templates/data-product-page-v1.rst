@@ -13,6 +13,9 @@
 
 {% set has_access_data = valid_maps or valid_data or valid_explorer or valid_sandbox or valid_web_services or valid_stac or valid_ecat or valid_code_samples %}
 
+{% set tab_title = data["title"] if is_latest_version else "v" + data["version"] + ": " + data["title"] %}
+{% set page_title = data["title"] if is_latest_version else "Old version: " + data["title"] %}
+
 .. |nbsp| unicode:: 0xA0
    :trim:
 
@@ -20,25 +23,15 @@
 
 .. rst-class:: data-product-page
 
-{% if not is_latest_version %}
 ================================================
-{{ "v" + data["version"] }}: {{ data["title"] }}
+{{ tab_title }}
 ================================================
-{% else %}
-================================================
-{{ data["title"] }}
-================================================
-{% endif %}
 
 .. container:: header
 
    .. container:: title
 
-      {% if not is_latest_version %}
-      Old Version: {{ data["title"] }}
-      {% else %}
-      {{ data["title"] }}
-      {% endif %}
+      {{ page_title }}
 
    .. container:: subtitle
 
