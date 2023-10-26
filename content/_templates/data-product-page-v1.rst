@@ -1,3 +1,12 @@
+{% set valid_maps = data["maps"] | selectattr("link",  "!=", None) %}
+{% set valid_data = data["data"] | selectattr("link",  "!=", None) %}
+{% set valid_explorer = data["explorer"] | selectattr("link",  "!=", None) %}
+{% set valid_sandbox = data["sandbox"] | selectattr("link",  "!=", None) %}
+{% set valid_web_services = data["web_services"] | selectattr("link",  "!=", None) %}
+{% set valid_stac = data["stac"] | selectattr("link",  "!=", None) %}
+{% set valid_ecat = data["ecat"] | selectattr("link",  "!=", None) %}
+{% set valid_code_samples = data["code_samples"] | selectattr("link",  "!=", None) %}
+
 .. |nbsp| unicode:: 0xA0
    :trim:
 
@@ -86,7 +95,7 @@
           .. grid:: 4
              :gutter: 3
 
-             {% for item in data["maps"] | selectattr("link",  "!=", None) %}
+             {% for item in valid_maps %}
              .. grid-item-card:: {{ item["title"] or "See it on a map" }}
                 :img-top: {{ item["image"] or "https://www.gifpng.com/300x200" }}
                 :link: {{ item["link"] }}
@@ -94,7 +103,7 @@
                 {{ item["name"] or "Map" }}
              {% endfor %}
 
-             {% for item in data["data"] | selectattr("link",  "!=", None) %}
+             {% for item in valid_data %}
              .. grid-item-card:: {{ item["title"] or "Get the data online" }}
                 :img-top: {{ item["image"] or "https://www.gifpng.com/300x200" }}
                 :link: {{ item["link"] }}
@@ -102,7 +111,7 @@
                 {{ item["name"] or "Data" }}
              {% endfor %}
 
-             {% for item in data["explorer"] | selectattr("link",  "!=", None) %}
+             {% for item in valid_explorer %}
              .. grid-item-card:: {{ item["title"] or "Explore data samples" }}
                 :img-top: {{ item["image"] or "https://www.gifpng.com/300x200" }}
                 :link: {{ item["link"] }}
@@ -110,7 +119,7 @@
                 {{ item["name"] or "Data Explorer" }}
              {% endfor %}
 
-             {% for item in data["sandbox"] | selectattr("link",  "!=", None) %}
+             {% for item in valid_sandbox %}
              .. grid-item-card:: {{ item["title"] or "Play with the sandbox" }}
                 :img-top: {{ item["image"] or "https://www.gifpng.com/300x200" }}
                 :link: {{ item["link"] }}
@@ -118,7 +127,7 @@
                 {{ item["name"] or "Sandbox" }}
              {% endfor %}
 
-             {% for item in data["web_services"] | selectattr("link",  "!=", None) %}
+             {% for item in valid_web_services %}
              .. grid-item-card:: {{ item["title"] or "Bring the data to you via web service" }}
                 :img-top: {{ item["image"] or "https://www.gifpng.com/300x200" }}
                 :link: {{ item["link"] }}
@@ -126,7 +135,7 @@
                 {{ item["name"] or "Service" }}
              {% endfor %}
 
-             {% for item in data["stac"] | selectattr("link",  "!=", None) %}
+             {% for item in valid_stac %}
              .. grid-item-card:: {{ item["title"] or "Get via STAC" }}
                 :img-top: {{ item["image"] or "https://www.gifpng.com/300x200" }}
                 :link: {{ item["link"] }}
@@ -134,7 +143,7 @@
                 {{ item["name"] or "STAC" }}
              {% endfor %}
 
-             {% for item in data["ecat"] | selectattr("id",  "!=", None) %}
+             {% for item in valid_ecat %}
              .. grid-item-card:: {{ item["title"] or "View the product catalogue" }}
                 :img-top: {{ item["image"] or "https://www.gifpng.com/300x200" }}
                 :link: https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/{{ item["id"] }}
@@ -142,7 +151,7 @@
                 ecat {{ item["id"] }}
              {% endfor %}
 
-             {% for item in data["code_samples"] | selectattr("link",  "!=", None) %}
+             {% for item in valid_code_samples %}
              .. grid-item-card:: {{ item["title"] or "Code sample" }}
                 :img-top: {{ item["image"] or "https://www.gifpng.com/300x200" }}
                 :link: {{ item["link"] }}
@@ -187,9 +196,9 @@
        .. list-table::
           :name: access-table
 
-          {% if data["maps"] | selectattr("link",  "ne", "None") %}
+          {% if valid_maps | list | length > 0 %}
           * - **See the data on a map**
-            - {% for item in (data["maps"] | selectattr("link",  "defined")) %}
+            - {% for item in valid_maps %}
               {% if item["link"] %}
               * `{{ item["name"] or "Map" }} <{{ item["link"] }}>`_
               {% endif %}
