@@ -93,8 +93,6 @@
 
              |nbsp|
 
-       {{ valid_explorer | list }}
-
        .. include:: _overview.md
           :parser: myst_parser.sphinx_
 
