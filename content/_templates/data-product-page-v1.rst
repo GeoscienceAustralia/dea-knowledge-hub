@@ -215,9 +215,9 @@
             - Learn how to `use DEA Maps <{{ config.html_context["learn_access_dea_maps_link"] }}>`_.
           {% endif %}
 
-          {% if data["stac"] %}
+          {% if has_valid_stac %}
           * - **Get via STAC**
-            - {% for item in data["stac"] %}
+            - {% for item in valid_stac %}
               * `{{ item["name"] or "STAC" }} <{{ item["link"] }}>`_
               {% endfor %}
             - Learn how to `access and stream the data using STAC <{{ config.html_context["learn_access_stac_link"] }}>`_.
@@ -225,7 +225,7 @@
 
           {% if has_valid_explorer %}
           * - **Explore data samples**
-            - {% for item in data["explorer"] %}
+            - {% for item in valid_explorer %}
               * `{{ item["name"] or "Data Explorer" }} <{{ item["link"] }}>`_
               {% endfor %}
             -
@@ -233,7 +233,7 @@
 
           {% if has_valid_data %}
           * - **Get the data online**
-            - {% for item in data["data"] %}
+            - {% for item in valid_data %}
               * `{{ item["name"] or "Data" }} <{{ item["link"] }}>`_
               {% endfor %}
             -
