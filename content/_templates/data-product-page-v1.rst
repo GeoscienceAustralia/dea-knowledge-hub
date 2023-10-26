@@ -1,3 +1,5 @@
+{% set is_latest_version = data["is_latest_version"] %}
+
 {% set valid_maps = data["maps"] | selectattr("link",  "!=", None) | list %}
 {% set valid_data = data["data"] | selectattr("link",  "!=", None) | list %}
 {% set valid_explorer = data["explorer"] | selectattr("link",  "!=", None) | list %}
@@ -16,7 +18,7 @@
 
 .. rst-class:: data-product-page
 
-{% if not data["is_latest_version"] %}
+{% if not is_latest_version %}
 ================================================
 {{ "v" + data["version"] }}: {{ data["title"] }}
 ================================================
@@ -30,7 +32,7 @@
 
    .. container:: title
 
-      {% if not data["is_latest_version"] %}
+      {% if not is_latest_version %}
       Old Version: {{ data["title"] }}
       {% else %}
       {{ data["title"] }}
@@ -42,7 +44,7 @@
 
    .. container:: quick-info
 
-      {% if not data["is_latest_version"] %}
+      {% if not is_latest_version %}
       :Version: {{ data["version"] }} (`See latest version <{{ data["latest_version_link"] }}>`_)
       {% else %}:Version: {{ data["version"] }} (Latest)
       {% endif %}
@@ -61,7 +63,7 @@
 
       |nbsp|
 
-{% if not data["is_latest_version"] %}
+{% if not is_latest_version %}
 .. container::
    :name: notifications
 
@@ -90,7 +92,7 @@
        .. rubric:: Access the data
           :name: access-the-data-cards
 
-       {% if data["is_latest_version"] and has_access_data %}
+       {% if is_latest_version and has_access_data %}
        .. container::
           :name: access-cards
 
@@ -194,7 +196,7 @@
        .. rubric:: Access the data
           :name: access-the-data-table
 
-       {% if data["is_latest_version"] and has_access_data %}
+       {% if is_latest_version and has_access_data %}
        .. list-table::
           :name: access-table
 
@@ -280,7 +282,7 @@
           {% endfor %}
        {% endif %}
 
-       {% if not data["is_latest_version"] %}
+       {% if not is_latest_version %}
        You can find the data source links in the `latest version of the product <{{ data["latest_version_link"] }}>`_.
        {% endif %}
 
@@ -323,7 +325,7 @@
 
              |nbsp|
 
-       {% if not data["is_latest_version"] %}
+       {% if not is_latest_version %}
        You can find the history in the `latest version of the product <{{ data["latest_version_link"] }}>`_.
        {% else %}
        .. rubric:: Old versions
