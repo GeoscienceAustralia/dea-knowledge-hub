@@ -1,9 +1,0 @@
-title: Data services
-
-catalogues:
-  - name: DEA Coastlines
-    id: dea-coastlines
-    products:
-      - name: DEA Coastlines
-        image: https://www.dea.ga.gov.au/_nuxt/image/3d7bbc.png
-        slug: dea-coastlines
