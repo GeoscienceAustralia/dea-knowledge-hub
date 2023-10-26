@@ -36,7 +36,11 @@
       {% else %}:Version: {{ data["version"] }} (Latest)
       {% endif %}
       :Product type: {{ data["product_type"] }}, {{ data["spatial_data_type"] }}
+      {% if data["time_span"]["start"] and data["time_span"]["end"] %}
       :Time span: {{ data["time_span"]["start"] }} – {{ data["time_span"]["end"] }}
+      {% elif data["time_span"]["start"] or data["time_span"]["end"]  %}
+      :Time span: {{ data["time_span"]["start"] or data["time_span"]["end"] }}
+      {% endif %}
       :Update frequency: {{ data["update_frequency"] }}
       {% if data["product_id"] %}
       :Product ID: {{ data["product_id"] }}
@@ -83,67 +87,83 @@
              :gutter: 3
 
              {% for item in data["maps"] %}
-             .. grid-item-card:: {{ item.get("title", "See the map") }}
-                :img-top: {{ item.get("image", "https://www.gifpng.com/300x200") }}
-                :link: {{ item.get("link") }}
+             {% if item["link"] %}
+             .. grid-item-card:: {{ item["title"] or "See the map" }}
+                :img-top: {{ item["image"] or "https://www.gifpng.com/300x200" }}
+                :link: {{ item["link"] }}
 
-                {{ item.get("name", "Map") }}
+                {{ item["name"] or "Map" }}
+             {% endif %}
              {% endfor %}
 
              {% for item in data["data"] %}
-             .. grid-item-card:: {{ item.get("title", "Get the data") }}
-                :img-top: {{ item.get("image", "https://www.gifpng.com/300x200") }}
-                :link: {{ item.get("link") }}
+             {% if item["link"] %}
+             .. grid-item-card:: {{ item["title"] or "Get the data" }}
+                :img-top: {{ item["image"] or "https://www.gifpng.com/300x200" }}
+                :link: {{ item["link"] }}
 
-                {{ item.get("name", "Data") }}
+                {{ item["name"] or "Data" }}
+             {% endif %}
              {% endfor %}
 
              {% for item in data["stac"] %}
-             .. grid-item-card:: {{ item.get("title", "Get via STAC") }}
-                :img-top: {{ item.get("image", "https://www.gifpng.com/300x200") }}
-                :link: {{ item.get("link") }}
+             {% if item["link"] %}
+             .. grid-item-card:: {{ item["title"] or "Get via STAC" }}
+                :img-top: {{ item["image"] or "https://www.gifpng.com/300x200" }}
+                :link: {{ item["link"] }}
 
-                {{ item.get("name", "STAC") }}
+                {{ item["name"] or "STAC" }}
+             {% endif %}
              {% endfor %}
 
              {% for item in data["explorer"] %}
-             .. grid-item-card:: {{ item.get("title", "Explore data samples") }}
-                :img-top: {{ item.get("image", "https://www.gifpng.com/300x200") }}
-                :link: {{ item.get("link") }}
+             {% if item["link"] %}
+             .. grid-item-card:: {{ item["title"] or "Explore data samples" }}
+                :img-top: {{ item.get("image") or "https://www.gifpng.com/300x200" }}
+                :link: {{ item["link"] }}
 
-                {{ item.get("name", "Data Explorer") }}
+                {{ item["name"] or "Data Explorer" }}
+             {% endif %}
              {% endfor %}
 
              {% for item in data["sandbox"] %}
-             .. grid-item-card:: {{ item.get("title", "Play with the sandbox") }}
-                :img-top: {{ item.get("image", "https://www.gifpng.com/300x200") }}
-                :link: {{ item.get("link") }}
+             {% if item["link"] %}
+             .. grid-item-card:: {{ item["title"] or "Play with the sandbox" }}
+                :img-top: {{ item["image"] or "https://www.gifpng.com/300x200" }}
+                :link: {{ item["link"] }}
 
-                {{ item.get("name", "Sandbox") }}
+                {{ item["name"] or "Sandbox" }}
+             {% endif %}
              {% endfor %}
 
              {% for item in data["ecat"] %}
-             .. grid-item-card:: {{ item.get("title", "Product catalogue") }}
-                :img-top: {{ item.get("image", "https://www.gifpng.com/300x200") }}
-                :link: https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/{{ item.get("id") }}
+             {% if item["id"] %}
+             .. grid-item-card:: {{ item["title"] or "Product catalogue" }}
+                :img-top: {{ item["image"] or "https://www.gifpng.com/300x200" }}
+                :link: https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/{{ item["id"] }}
 
-                ecat {{ item.get("id") }}
+                ecat {{ item["id"] }}
+             {% endif %}
              {% endfor %}
 
              {% for item in data["web_services"] %}
-             .. grid-item-card:: {{ item.get("title", "Web service") }}
-                :img-top: {{ item.get("image", "https://www.gifpng.com/300x200") }}
-                :link: {{ item.get("link") }}
+             {% if item["link"] %}
+             .. grid-item-card:: {{ item["title"] or "Web service" }}
+                :img-top: {{ item["image"] or "https://www.gifpng.com/300x200" }}
+                :link: {{ item["link"] }}
 
-                {{ item.get("name", "Service") }}
+                {{ item["name"] or "Service" }}
+             {% endif %}
              {% endfor %}
 
              {% for item in data["code_samples"] %}
-             .. grid-item-card:: {{ item.get("title", "Code sample") }}
-                :img-top: {{ item.get("image", "https://www.gifpng.com/300x200") }}
-                :link: {{ item.get("link") }}
+             {% if item["link"] %}
+             .. grid-item-card:: {{ item["title"] or "Code sample" }}
+                :img-top: {{ item["image"] or "https://www.gifpng.com/300x200" }}
+                :link: {{ item["link"] }}
 
-                {{ item.get("name", "Code") }}
+                {{ item["name"] or "Code" }}
+             {% endif %}
              {% endfor %}
        {% endif %}
 
