@@ -16,10 +16,13 @@ entries:
         entries:
           - file: data/themes/sea-ocean-and-coast/index
             title: All
+
           - file: data/catalogues/dea-coastlines/index
             entries:
               - file: data/products/dea-coastlines/index
-              - file: data/products/dea-surface-reflectance-nbar-landsat-9/index
+          - file: data/catalogues/dea-high-and-low-tide-imagery/index
+            entries:
+              - file: data/products/dea-high-and-low-tide-imagery-landsat/index
 
   # - file: notebooks/README
   #   title: Notebooks
