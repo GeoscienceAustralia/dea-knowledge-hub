@@ -228,7 +228,7 @@
             - {% for item in valid_maps %}
               * `{{ item.name or map_default_name }} <{{ item.link }}>`_
               {% endfor %}
-            - Learn how to `use DEA Maps <{{ config.html_context.learn_access_dea_maps_link }}>`_.
+            - Learn how to `use DEA Maps </setup/dea_maps.html>`_.
           {% endif %}
 
           {% if valid_explorer %}
@@ -244,7 +244,7 @@
             - {% for item in valid_data %}
               * `{{ item.name or data_default_name }} <{{ item.link }}>`_
               {% endfor %}
-            -
+            - Learn how to `access the data via AWS </about/faq.html#how-do-i-download-data-from-dea>`_.
           {% endif %}
 
           {% if valid_code_samples %}
@@ -252,7 +252,7 @@
             - {% for item in valid_code_samples %}
               * `{{ item.name or code_sample_default_name }} <{{ item.link }}>`_
               {% endfor %}
-            -
+            - Learn how to `connect to the DEA Sandbox </setup/Sandbox/sandbox.html>`_.
           {% endif %}
 
           {% if valid_web_services %}
@@ -260,7 +260,7 @@
             - {% for item in valid_web_services %}
               * `{{ item.name or web_service_default_name }} <{{ item.link }}>`_
               {% endfor %}
-            - Learn how to `connect to DEA's web services <{{ config.html_context.learn_access_web_service_link }}>`_.
+            - Learn how to `connect to DEA's web services </setup/gis/README.html>`_.
           {% endif %}
 
           {% if valid_stac %}
@@ -268,7 +268,7 @@
             - {% for item in valid_stac %}
               * `{{ item.name or stac_default_name }} <{{ item.link }}>`_
               {% endfor %}
-            - Learn how to `access and stream the data using STAC <{{ config.html_context.learn_access_stac_link }}>`_.
+            - Learn how to `access and stream the data using STAC </notebooks/How_to_guides/Downloading_data_with_STAC.html>`_.
           {% endif %}
 
           {% if valid_ecat %}
@@ -276,7 +276,7 @@
             - {% for item in valid_ecat %}
               * `ecat {{ item.id }} <https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/{{ item.id }}>`_
               {% endfor %}
-            - Learn how to `use DEA's Sandbox environment <{{ config.html_context.learn_access_DEA_Sandbox_link }}>`_.
+            -
           {% endif %}
 
           {% if valid_sandbox %}
@@ -284,7 +284,7 @@
             - {% for item in valid_sandbox %}
               * `{{ item.name or sandbox_default_name }} <{{ item.link }}>`_
               {% endfor %}
-            - Learn how to `access the data via AWS <{{ config.html_context.learn_access_data_AWS_link }}>`_.
+            -
           {% endif %}
 
        {% else %}
