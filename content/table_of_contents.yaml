@@ -17,12 +17,9 @@ entries:
           - file: data/themes/sea-ocean-and-coast/index
             title: All
 
+          - file: data/products/dea-coastlines/index
           - file: data/catalogues/dea-coastlines/index
             entries:
-              - file: data/products/dea-coastlines/index
-            entries:
-              - file: data/products/dea-high-and-low-tide-imagery-landsat/index
-              - file: data/products/dea-water-observations-landsat/index
               - file: data/products/dea-land-cover-landsat/index
 
   # - file: notebooks/README
