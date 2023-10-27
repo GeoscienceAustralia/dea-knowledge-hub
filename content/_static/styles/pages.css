@@ -52,6 +52,10 @@
     color: white;
 }
 
+.data-product-page .title p {
+    margin-bottom: 0;
+}
+
 .data-product-page .title,
 .data-product-page .header > * {
     width: calc(100% - 271px);
@@ -72,10 +76,6 @@
         var(--pst-color-primary)
     );
     padding: 2rem;
-}
-
-.data-product-page .header .subtitle {
-    font-size: var(--pst-font-size-h4);
 }
 
 .data-product-page .header .hero-image {
