@@ -41,7 +41,7 @@
 
    .. container:: quick-info
 
-      {%- if not is_latest_version %}
+      {% if not is_latest_version %}
       :Version: {{ data.version }} (`See latest version <{{ data.latest_version_link }}>`_)
       {%- else %}
       :Version: {{ data.version }} (Latest)
@@ -51,8 +51,10 @@
       {%- endif %}
       {%- if data.time_span.start and data.time_span.end %}
       :Time span: {{ data.time_span.start }} – {{ data.time_span.end }}
-      {%- elif data.time_span.start or data.time_span.end  %}
-      :Time span: {{ data.time_span.start or data.time_span.end }}
+      {%- elif data.time_span.start  %}
+      :Starts at: {{ data.time_span.start }}
+      {%- elif data.time_span.end  %}
+      :Ends at: {{ data.time_span.end }}
       {%- endif %}
       :Update frequency: {{ data.update_frequency }}
       {%- if data.product_id %}
@@ -170,8 +172,8 @@
        .. rubric:: Key details
           :name: key-details
 
-       {%- if data.parent_product %}
-       :Parent product(s): `{{ data.parent_product.name }} <{{ data.parent_product.link }}>`_
+       {% if data.parent_products %}
+       :Parent product(s): `{{ data.parent_products.name }} <{{ data.parent_products.link }}>`_
        {%- endif %}
        {%- if data.collection %}
        :Collection: {{ data.collection }}

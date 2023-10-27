@@ -11,14 +11,17 @@ latest_version_link: /example-page
 
 product_type: Derivative
 spatial_data_type: Vector
-time_span:
-  start: 1 Jan 1988
-  end: 31 Dec 2022
 update_frequency: Annually
 
-parent_product:
-  name: LANDSAT 5, 7, 8, and 9 Analysis-Ready Data
-  link: baseline-data-category.com
+time_span:
+  start: 31 Dec 1987
+  end: 31 Dec 2022
+parent_products:
+  name: null
+  link: null
+nci:
+  name: null
+  code: null
 
 collection: Geoscience Australia Landsat Collection 3
 resource_type: Derivative
