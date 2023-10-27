@@ -116,6 +116,10 @@
     margin-right: 1rem;
 }
 
+.data-product-page .table-of-contents a {
+    text-decoration-style: dashed;
+}
+
 .data-product-page .table-of-contents a,
 .data-product-page .table-of-contents a:visited {
     color: var(--pst-color-primary);

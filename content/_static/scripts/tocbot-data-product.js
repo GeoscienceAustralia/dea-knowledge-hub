@@ -45,9 +45,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
         tocbot.init({
             contentSelector: `.data-product-page #${tab}-tab + .sd-tab-content`,
             tocSelector: `.data-product-page #${tab}-table-of-contents`,
-            headingSelector: "h2",
-            linkClass: "sd-badge",
-            extraLinkClasses: ["sd-text-primary"]
+            headingSelector: "h2"
         });
     }
 });
