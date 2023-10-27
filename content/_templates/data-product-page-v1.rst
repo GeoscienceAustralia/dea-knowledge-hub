@@ -130,14 +130,6 @@
                 {{ item.name or map_default_name }}
              {% endfor %}
 
-             {% for item in valid_data %}
-             .. grid-item-card:: {{ item.title or data_label }}
-                :img-top: {{ item.image or "https://www.gifpng.com/300x200" }}
-                :link: {{ item.link }}
-
-                {{ item.name or data_default_name }}
-             {% endfor %}
-
              {% for item in valid_explorer %}
              .. grid-item-card:: {{ item.title or explorer_label }}
                 :img-top: {{ item.image or "https://www.gifpng.com/300x200" }}
@@ -146,12 +138,20 @@
                 {{ item.name or explorer_default_name }}
              {% endfor %}
 
-             {% for item in valid_sandbox %}
-             .. grid-item-card:: {{ item.title or sandbox_label }}
+             {% for item in valid_data %}
+             .. grid-item-card:: {{ item.title or data_label }}
                 :img-top: {{ item.image or "https://www.gifpng.com/300x200" }}
                 :link: {{ item.link }}
 
-                {{ item.name or sandbox_default_name }}
+                {{ item.name or data_default_name }}
+             {% endfor %}
+
+             {% for item in valid_code_samples %}
+             .. grid-item-card:: {{ item.title or code_sample_label }}
+                :img-top: {{ item.image or "https://www.gifpng.com/300x200" }}
+                :link: {{ item.link }}
+
+                {{ item.name or code_sample_default_name }}
              {% endfor %}
 
              {% for item in valid_web_services %}
@@ -178,12 +178,12 @@
                 ecat {{ item.id }}
              {% endfor %}
 
-             {% for item in valid_code_samples %}
-             .. grid-item-card:: {{ item.title or code_sample_label }}
+             {% for item in valid_sandbox %}
+             .. grid-item-card:: {{ item.title or sandbox_label }}
                 :img-top: {{ item.image or "https://www.gifpng.com/300x200" }}
                 :link: {{ item.link }}
 
-                {{ item.name or code_sample_default_name }}
+                {{ item.name or sandbox_default_name }}
              {% endfor %}
        {% endif %}
 
@@ -231,14 +231,6 @@
             - Learn how to `use DEA Maps <{{ config.html_context.learn_access_dea_maps_link }}>`_.
           {% endif %}
 
-          {% if valid_stac %}
-          * - **{{ stac_label }}**
-            - {% for item in valid_stac %}
-              * `{{ item.name or stac_default_name }} <{{ item.link }}>`_
-              {% endfor %}
-            - Learn how to `access and stream the data using STAC <{{ config.html_context.learn_access_stac_link }}>`_.
-          {% endif %}
-
           {% if valid_explorer %}
           * - **{{ explorer_label }}**
             - {% for item in valid_explorer %}
@@ -255,20 +247,12 @@
             -
           {% endif %}
 
-          {% if valid_sandbox %}
-          * - **{{ sandbox_label }}**
-            - {% for item in valid_sandbox %}
-              * `{{ item.name or sandbox_default_name }} <{{ item.link }}>`_
+          {% if valid_code_samples %}
+          * - **{{ code_sample_label }}**
+            - {% for item in valid_code_samples %}
+              * `{{ item.name or code_sample_default_name }} <{{ item.link }}>`_
               {% endfor %}
-            - Learn how to `access the data via AWS <{{ config.html_context.learn_access_data_AWS_link }}>`_.
-          {% endif %}
-
-          {% if valid_ecat %}
-          * - **{{ ecat_label }}**
-            - {% for item in valid_ecat %}
-              * `ecat {{ item.id }} <https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/{{ item.id }}>`_
-              {% endfor %}
-            - Learn how to `use DEA's Sandbox environment <{{ config.html_context.learn_access_DEA_Sandbox_link }}>`_.
+            -
           {% endif %}
 
           {% if valid_web_services %}
@@ -279,12 +263,28 @@
             - Learn how to `connect to DEA's web services <{{ config.html_context.learn_access_web_service_link }}>`_.
           {% endif %}
 
-          {% if valid_code_samples %}
-          * - **{{ code_sample_label }}**
-            - {% for item in valid_code_samples %}
-              * `{{ item.name or code_sample_default_name }} <{{ item.link }}>`_
+          {% if valid_stac %}
+          * - **{{ stac_label }}**
+            - {% for item in valid_stac %}
+              * `{{ item.name or stac_default_name }} <{{ item.link }}>`_
               {% endfor %}
-            -
+            - Learn how to `access and stream the data using STAC <{{ config.html_context.learn_access_stac_link }}>`_.
+          {% endif %}
+
+          {% if valid_ecat %}
+          * - **{{ ecat_label }}**
+            - {% for item in valid_ecat %}
+              * `ecat {{ item.id }} <https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/{{ item.id }}>`_
+              {% endfor %}
+            - Learn how to `use DEA's Sandbox environment <{{ config.html_context.learn_access_DEA_Sandbox_link }}>`_.
+          {% endif %}
+
+          {% if valid_sandbox %}
+          * - **{{ sandbox_label }}**
+            - {% for item in valid_sandbox %}
+              * `{{ item.name or sandbox_default_name }} <{{ item.link }}>`_
+              {% endfor %}
+            - Learn how to `access the data via AWS <{{ config.html_context.learn_access_data_AWS_link }}>`_.
           {% endif %}
 
        {% else %}
