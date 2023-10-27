@@ -20,9 +20,10 @@ entries:
           - file: data/catalogues/dea-coastlines/index
             entries:
               - file: data/products/dea-coastlines/index
-          - file: data/catalogues/dea-high-and-low-tide-imagery/index
             entries:
               - file: data/products/dea-high-and-low-tide-imagery-landsat/index
+              - file: data/products/dea-water-observations-landsat/index
+              - file: data/products/dea-land-cover-landsat/index
 
   # - file: notebooks/README
   #   title: Notebooks

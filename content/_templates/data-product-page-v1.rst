@@ -5,7 +5,7 @@
 {% set valid_explorer = data.explorer | selectattr("link",  "!=", None) | list %}
 {% set valid_web_services = data.web_services | selectattr("link",  "!=", None) | list %}
 {% set valid_stac = data.stac | selectattr("link",  "!=", None) | list %}
-{% set valid_ecat = data.ecat_records | selectattr("link",  "!=", None) | list %}
+{% set valid_ecat = data.ecat | selectattr("link",  "!=", None) | list %}
 {% set valid_code_samples = data.code_examples | selectattr("link",  "!=", None) | list %}
 {% set valid_files = data.files | selectattr("link",  "!=", None) | list %}
 {% set valid_old_versions = data.old_versions | selectattr("slug",  "!=", None) | selectattr("version",  "!=", None) | selectattr("name",  "!=", None) | list %}
@@ -178,7 +178,7 @@
                 :img-top: {{ item.image or "https://www.gifpng.com/300x200" }}
                 :link: https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/{{ item.id }}
 
-                ecat {{ item.id }}
+                eCat {{ item.id }}
              {% endfor %}
        {% endif %}
 
