@@ -17,13 +17,13 @@ time_span:
   start: 31 Dec 1987
   end: 31 Dec 2022
 parent_products:
-  name: null
-  link: null
+  name: Landsat
+  link: example.com
 nci:
   name: null
   code: null
 collection:
-  name: null
+  name: Collection 3
   link: null
 
 published: 15 Aug 2023
