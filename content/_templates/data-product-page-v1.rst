@@ -11,6 +11,7 @@
 {% set valid_old_versions = data.old_versions | selectattr("slug",  "!=", None) | selectattr("version",  "!=", None) | selectattr("name",  "!=", None) | list %}
 {% set valid_product_types = [data.product_type, data.spatial_data_type] | select("!=", None) | list %}
 {% set valid_product_ids = data.product_ids | select("!=", None) | list %}
+{% set valid_dois = data.dois | select("!=", None) | list %}
 
 {% set map_label = "See it on a map" %}
 {% set stac_label = "Get via STAC" %}
@@ -35,6 +36,7 @@
 
 {% set product_ids_label = "Product IDs" if valid_product_ids | length > 1 else "Product ID" %}
 {% set product_types_label = "Product types" if valid_product_types | length > 1 else "Product type" %}
+{% set dois_label = "DOIs" if valid_dois | length > 1 else "DOI" %}
 
 .. |nbsp| unicode:: 0xA0
    :trim:
@@ -190,8 +192,8 @@
        {%- elif data.collection.name %}
        :Collection: {{ data.collection.name }}
        {%- endif %}
-       {%- if data.doi %}
-       :DOI: {{ data.doi }}
+       {%- if valid_dois %}
+       :{{ dois_label }}: {{ valid_dois | join(", ") }}
        {%- endif %}
        {%- if data.published %}
        :Last updated: {{ data.published }}

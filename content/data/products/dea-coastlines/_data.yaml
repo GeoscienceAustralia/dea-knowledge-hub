@@ -28,7 +28,8 @@ collection:
 
 published: 15 Aug 2023
 author: Sagar Stephen
-doi: 10.26186/116268
+dois:
+  - 10.26186/116268
 
 # Access tab
 
