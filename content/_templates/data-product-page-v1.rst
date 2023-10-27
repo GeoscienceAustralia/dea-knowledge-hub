@@ -3,7 +3,6 @@
 {% set valid_maps = data.maps | selectattr("link",  "!=", None) | list %}
 {% set valid_data = data.data | selectattr("link",  "!=", None) | list %}
 {% set valid_explorer = data.explorer | selectattr("link",  "!=", None) | list %}
-{% set valid_sandbox = data.sandbox | selectattr("link",  "!=", None) | list %}
 {% set valid_web_services = data.web_services | selectattr("link",  "!=", None) | list %}
 {% set valid_stac = data.stac | selectattr("link",  "!=", None) | list %}
 {% set valid_ecat = data.ecat | selectattr("link",  "!=", None) | list %}
@@ -17,7 +16,6 @@
 {% set stac_label = "Get via STAC" %}
 {% set explorer_label = "Explore data samples" %}
 {% set data_label = "Get the data online" %}
-{% set sandbox_label = "Play with the sandbox" %}
 {% set ecat_label = "Product catalogue" %}
 {% set web_service_label = "Get via web service" %}
 {% set code_sample_label = "Code sample" %}
@@ -25,12 +23,11 @@
 {% set map_default_name = "DEA Map" %}
 {% set data_default_name = "DEA Data" %}
 {% set explorer_default_name = "Data Explorer" %}
-{% set sandbox_default_name = "DEA Sandbox" %}
 {% set web_service_default_name = "Web service" %}
 {% set stac_default_name = "STAC" %}
 {% set code_sample_default_name = "Code sample" %}
 
-{% set has_access_data = valid_maps or valid_data or valid_explorer or valid_sandbox or valid_web_services or valid_stac or valid_ecat or valid_code_samples %}
+{% set has_access_data = valid_maps or valid_data or valid_explorer or valid_web_services or valid_stac or valid_ecat or valid_code_samples %}
 
 {% set pretty_version = "v" + data.version %}
 {% set tab_title = data.title if is_latest_version else pretty_version + ": " + data.title %}
@@ -180,14 +177,6 @@
 
                 ecat {{ item.id }}
              {% endfor %}
-
-             {% for item in valid_sandbox %}
-             .. grid-item-card:: {{ item.title or sandbox_label }}
-                :img-top: {{ item.image or "https://www.gifpng.com/300x200" }}
-                :link: {{ item.link }}
-
-                {{ item.name or sandbox_default_name }}
-             {% endfor %}
        {% endif %}
 
        .. rubric:: Key details
@@ -283,15 +272,6 @@
               {% endfor %}
             -
           {% endif %}
-
-          {% if valid_sandbox %}
-          * - **{{ sandbox_label }}**
-            - {% for item in valid_sandbox %}
-              * `{{ item.name or sandbox_default_name }} <{{ item.link }}>`_
-              {% endfor %}
-            -
-          {% endif %}
-
        {% else %}
        There are no data source links available at the present time.
        {% endif %}

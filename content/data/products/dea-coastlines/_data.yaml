@@ -71,10 +71,6 @@ stac:
 ecat:
   - id: 116268
 
-sandbox:
-  - link: https://app.sandbox.dea.ga.gov.au/
-    name: Sandbox
-
 files:
   - link: example.com
     name: DEA Tiles_1.pdf

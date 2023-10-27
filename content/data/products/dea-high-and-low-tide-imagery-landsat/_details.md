@@ -86,9 +86,9 @@ The product has been developed to provide a geomedian composite visualisation of
 
 ## Processing steps
 
-* Create a continental scale tidal modelling framework
+1. Create a continental scale tidal modelling framework
 
-* Generate HOT and LOT composite imagery
+1. Generate HOT and LOT composite imagery
 
 % ## Software
 

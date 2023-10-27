@@ -5,7 +5,7 @@
 cmiNode: 133
 cmi_alias: /data-products/dea/133/dea-high-and-low-tide-imagery-landsat
 published_date: '2017-11-01'
-author: S. S. "at" ga.gov.au
+author: S. S. @ ga.gov.au
 created: 2018-03-12T12:00:00+1100
 
 # Basic
@@ -15,8 +15,8 @@ theme: Sea, ocean and coast
 catalogue: DEA High Low Tide Image (HLTC)
 is_deprecated: null
 is_primary_record: null
-project_leader: T. K. "at" ga.gov.au
-branch_head: A. L. "at" ga.gov.au
+project_leader: T. K. @ ga.gov.au
+branch_head: A. L. @ ga.gov.au
 related_items:
   - DEA Intertidal Extents (Landsat)
 anzsrc_research_code: null
