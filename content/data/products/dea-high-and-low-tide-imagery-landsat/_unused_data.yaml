@@ -1,0 +1,107 @@
+# Unused data migrated from the CMI. May be outdated.
+
+# General
+
+cmi_node: 133
+cmi_url: https://cmi.ga.gov.au/data-products/dea/133/dea-high-and-low-tide-imagery-landsat
+published_date: '2017-11-01'
+author: S. S. @ ga.gov.au
+created: 2018-03-12T12:00:00+1100
+
+# Basic
+
+program: dea
+theme: Sea, ocean and coast
+catalogue: DEA High Low Tide Image (HLTC)
+is_deprecated: null
+is_primary_record: null
+project_leader: T. K. @ ga.gov.au
+branch_head: A. L. @ ga.gov.au
+related_items:
+  - DEA Intertidal Extents (Landsat)
+anzsrc_research_code: null
+
+# Access
+
+map_names:
+  - DEA Maps
+ecat_url: http://pid.geoscience.gov.au/dataset/ga/113843
+doi_url: null
+open_data_cube_configuration: null
+security_classification: Unclassified
+time_span_full:
+  start: null
+  end: null
+
+# Details
+
+relevant_websites:
+  - link: http://www.ga.gov.au/dea/products
+    name: Digital Earth Australia
+
+# Processing
+
+data_sources:
+  - DEA Surface Reflectance NBAR (Landsat, DEPRECATED)
+  - DEA Surface Reflectance Geomedian (Landsat, DEPRECATED)
+major_algorithms:
+  - OTPS TPX08 Atlas Tidal Model
+  - Geometric Median
+schema_spatial_extent:
+  temporal_extent:
+    start: 1986-08-15T14:00:00+1000
+    end: 2017-07-31T13:59:59+1000
+  min_longitude: -1943830
+  max_longitude: 2170690
+  min_latitude: -1119030
+  max_latitude: -4856630
+  coordinate_reference_system: 'Australian Albers / GDA94 (EPSG: 3577)'
+  coordinate_reference_system_units: metre
+  cell_size_x: 25
+  cell_size_y: 25
+  pixel_origin: Top Left
+  spatial_extent:
+    geo_type: Polygon
+    lat: '-34.714349000000'
+    long: '133.725681300000'
+    left: '93.771493500000'
+    top: '-8.483833800000'
+    right: '173.679869100000'
+    bottom: '-60.944864200000'
+    geohash: null
+
+# Media
+
+media: null
+case_studies: null
+header_image_alt: image alt place holder
+files: null
+
+# Credits
+
+owners:
+  - Commonwealth of Australia (Geoscience Australia)
+custodians:
+  - Commonwealth of Australia (Geoscience Australia)
+principal_contributors:
+  - C. P.
+  - B. B.
+  - D. R.
+  - S. S.
+  - L. L.
+subject_matter_experts:
+  - S. S.
+  - C. P.
+publishing_entities:
+  - Commonwealth of Australia (Geoscience Australia)
+metadata_contacts:
+  - Geoscience Australia - Team Leader, Product Management, Operations Section NEMO
+media_contacts:
+  - Geoscience Australia - GA Media Hotline
+rights_statement: © Commonwealth of Australia (Geoscience Australia) 2015. [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/.).
+data_source_contacts:
+  - 'Geoscience Australia - Team Leader, Applications and Systems Support, NEMO '
+approvers_checklist: null
+approvers_checklist_hprm_reference: null
+pmp_hprm_reference: null
+
