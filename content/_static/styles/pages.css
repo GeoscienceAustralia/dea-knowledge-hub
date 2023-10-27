@@ -126,8 +126,8 @@
 }
 
 .data-product-page .table-of-contents a:hover {
-    border: 1px solid #001c34;
-    color: #001c34 !important;
+    border: 1px solid var(--pst-color-text-base);
+    color: var(--pst-color-text-base) !important;
 }
 
 .data-product-page .table-of-contents a,
