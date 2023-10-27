@@ -193,8 +193,10 @@
        {% if data.parent_products %}
        :Parent product(s): `{{ data.parent_products.name }} <{{ data.parent_products.link }}>`_
        {%- endif %}
-       {%- if data.collection %}
-       :Collection: {{ data.collection }}
+       {%- if data.collection.name and data.collection.link %}
+       :Collection: `{{ data.collection.name }} <{{ data.collection.link }}>`_
+       {%- elif data.collection.name %}
+       :Collection: {{ data.collection.name }}
        {%- endif %}
        {%- if data.doi %}
        :DOI: {{ data.doi }}
