@@ -5,13 +5,14 @@
 {% set valid_explorer = data.explorer | selectattr("link",  "!=", None) | list %}
 {% set valid_web_services = data.web_services | selectattr("link",  "!=", None) | list %}
 {% set valid_stac = data.stac | selectattr("link",  "!=", None) | list %}
-{% set valid_ecat = data.ecat | selectattr("link",  "!=", None) | list %}
-{% set valid_code_samples = data.code_samples | selectattr("link",  "!=", None) | list %}
+{% set valid_ecat = data.ecat_records | selectattr("link",  "!=", None) | list %}
+{% set valid_code_samples = data.code_examples | selectattr("link",  "!=", None) | list %}
 {% set valid_files = data.files | selectattr("link",  "!=", None) | list %}
 {% set valid_old_versions = data.old_versions | selectattr("slug",  "!=", None) | selectattr("version",  "!=", None) | selectattr("name",  "!=", None) | list %}
 {% set valid_product_types = [data.product_type, data.spatial_data_type] | select("!=", None) | list %}
 {% set valid_product_ids = data.product_ids | select("!=", None) | list %}
 {% set valid_dois = data.dois | select("!=", None) | list %}
+{% set valid_tags = data.tags | select("!=", None) | list %}
 
 {% set map_label = "See it on a map" %}
 {% set stac_label = "Get via STAC" %}
@@ -197,6 +198,9 @@
        {%- endif %}
        {%- if data.published %}
        :Last updated: {{ data.published }}
+       {%- endif %}
+       {%- if valid_tags %}
+       :Tags: {{ valid_tags | join(", ") }}
        {%- endif %}
 
        .. include:: _publications.md
