@@ -15,8 +15,26 @@
 
 {% set has_access_data = valid_maps or valid_data or valid_explorer or valid_sandbox or valid_web_services or valid_stac or valid_ecat or valid_code_samples %}
 
-{% set tab_title = data.title if is_latest_version else "v" + data.version + ": " + data.title %}
+{% set pretty_version = "v" + data.version %}
+{% set tab_title = data.title if is_latest_version else pretty_version + ": " + data.title %}
 {% set page_title = data.title if is_latest_version else "Old version: " + data.title %}
+
+{% set map_label = "See the data on a map" %}
+{% set stac_label = "Get via STAC" %}
+{% set explorer_label = "Explore data samples" %}
+{% set data_label = "Get the data online" %}
+{% set sandbox_label = "Play with the sandbox" %}
+{% set ecat_label = "Product catalogue" %}
+{% set web_service_label = "Bring the data to you via web service" %}
+{% set code_sample_label = "Code sample" %}
+
+{% set map_default_name = "Map" %}
+{% set data_default_name = "Data" %}
+{% set explorer_default_name = "Data Explorer" %}
+{% set sandbox_default_name = "Sandbox" %}
+{% set web_service_default_name = "Service" %}
+{% set stac_default_name = "STAC" %}
+{% set code_sample_default_name = "Code" %}
 
 .. |nbsp| unicode:: 0xA0
    :trim:
@@ -69,7 +87,7 @@
 .. container::
    :name: notifications
 
-   .. ADMONITION:: This is an old version ({{ "v" + data.version }})
+   .. ADMONITION:: This is an old version ({{ pretty_version }})
       :class: danger
    
       See the `latest version of the product <{{ data.latest_version_link }}>`_.
@@ -105,55 +123,55 @@
              :gutter: 3
 
              {% for item in valid_maps %}
-             .. grid-item-card:: {{ item.title or "See it on a map" }}
+             .. grid-item-card:: {{ item.title or map_label }}
                 :img-top: {{ item.image or "https://www.gifpng.com/300x200" }}
                 :link: {{ item.link }}
 
-                {{ item.name or "Map" }}
+                {{ item.name or map_default_name }}
              {% endfor %}
 
              {% for item in valid_data %}
-             .. grid-item-card:: {{ item.title or "Get the data online" }}
+             .. grid-item-card:: {{ item.title or data_label }}
                 :img-top: {{ item.image or "https://www.gifpng.com/300x200" }}
                 :link: {{ item.link }}
 
-                {{ item.name or "Data" }}
+                {{ item.name or data_default_name }}
              {% endfor %}
 
              {% for item in valid_explorer %}
-             .. grid-item-card:: {{ item.title or "Explore data samples" }}
+             .. grid-item-card:: {{ item.title or explorer_label }}
                 :img-top: {{ item.image or "https://www.gifpng.com/300x200" }}
                 :link: {{ item.link }}
 
-                {{ item.name or "Data Explorer" }}
+                {{ item.name or explorer_default_name }}
              {% endfor %}
 
              {% for item in valid_sandbox %}
-             .. grid-item-card:: {{ item.title or "Play with the sandbox" }}
+             .. grid-item-card:: {{ item.title or sandbox_label }}
                 :img-top: {{ item.image or "https://www.gifpng.com/300x200" }}
                 :link: {{ item.link }}
 
-                {{ item.name or "Sandbox" }}
+                {{ item.name or sandbox_default_name }}
              {% endfor %}
 
              {% for item in valid_web_services %}
-             .. grid-item-card:: {{ item.title or "Bring the data to you via web service" }}
+             .. grid-item-card:: {{ item.title or web_service_label }}
                 :img-top: {{ item.image or "https://www.gifpng.com/300x200" }}
                 :link: {{ item.link }}
 
-                {{ item.name or "Service" }}
+                {{ item.name or web_service_default_name }}
              {% endfor %}
 
              {% for item in valid_stac %}
-             .. grid-item-card:: {{ item.title or "Get via STAC" }}
+             .. grid-item-card:: {{ item.title or stac_label }}
                 :img-top: {{ item.image or "https://www.gifpng.com/300x200" }}
                 :link: {{ item.link }}
 
-                {{ item.name or "STAC" }}
+                {{ item.name or stac_default_name }}
              {% endfor %}
 
              {% for item in valid_ecat %}
-             .. grid-item-card:: {{ item.title or "View the product catalogue" }}
+             .. grid-item-card:: {{ item.title or ecat_label }}
                 :img-top: {{ item.image or "https://www.gifpng.com/300x200" }}
                 :link: https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/{{ item.id }}
 
@@ -161,11 +179,11 @@
              {% endfor %}
 
              {% for item in valid_code_samples %}
-             .. grid-item-card:: {{ item.title or "Code sample" }}
+             .. grid-item-card:: {{ item.title or code_sample_label }}
                 :img-top: {{ item.image or "https://www.gifpng.com/300x200" }}
                 :link: {{ item.link }}
 
-                {{ item.name or "Code" }}
+                {{ item.name or code_sample_default_name }}
              {% endfor %}
        {% endif %}
 
@@ -206,47 +224,47 @@
           :name: access-table
 
           {% if valid_maps %}
-          * - **See the data on a map**
+          * - **{{ map_label }}**
             - {% for item in valid_maps %}
-              * `{{ item.name or "Map" }} <{{ item.link }}>`_
+              * `{{ item.name or map_default_name }} <{{ item.link }}>`_
               {% endfor %}
             - Learn how to `use DEA Maps <{{ config.html_context.learn_access_dea_maps_link }}>`_.
           {% endif %}
 
           {% if valid_stac %}
-          * - **Get via STAC**
+          * - **{{ stac_label }}**
             - {% for item in valid_stac %}
-              * `{{ item.name or "STAC" }} <{{ item.link }}>`_
+              * `{{ item.name or stac_default_name }} <{{ item.link }}>`_
               {% endfor %}
             - Learn how to `access and stream the data using STAC <{{ config.html_context.learn_access_stac_link }}>`_.
           {% endif %}
 
           {% if valid_explorer %}
-          * - **Explore data samples**
+          * - **{{ explorer_label }}**
             - {% for item in valid_explorer %}
-              * `{{ item.name or "Data Explorer" }} <{{ item.link }}>`_
+              * `{{ item.name or explorer_default_name }} <{{ item.link }}>`_
               {% endfor %}
             -
           {% endif %}
 
           {% if valid_data %}
-          * - **Get the data online**
+          * - **{{ data_label }}**
             - {% for item in valid_data %}
-              * `{{ item.name or "Data" }} <{{ item.link }}>`_
+              * `{{ item.name or data_default_name }} <{{ item.link }}>`_
               {% endfor %}
             -
           {% endif %}
 
           {% if valid_sandbox %}
-          * - **Play with the sandbox**
+          * - **{{ sandbox_label }}**
             - {% for item in valid_sandbox %}
-              * `{{ item.name or "Sandbox" }} <{{ item.link }}>`_
+              * `{{ item.name or sandbox_default_name }} <{{ item.link }}>`_
               {% endfor %}
             - Learn how to `access the data via AWS <{{ config.html_context.learn_access_data_AWS_link }}>`_.
           {% endif %}
 
           {% if valid_ecat %}
-          * - **Product catalogue**
+          * - **{{ ecat_label }}**
             - {% for item in valid_ecat %}
               * `ecat {{ item.id }} <https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/{{ item.id }}>`_
               {% endfor %}
@@ -254,17 +272,17 @@
           {% endif %}
 
           {% if valid_web_services %}
-          * - **Bring the data to you via web service**
+          * - **{{ web_service_label }}**
             - {% for item in valid_web_services %}
-              * `{{ item.name or "Web service" }} <{{ item.link }}>`_
+              * `{{ item.name or web_service_default_name }} <{{ item.link }}>`_
               {% endfor %}
             - Learn how to `connect to DEA's web services <{{ config.html_context.learn_access_web_service_link }}>`_.
           {% endif %}
 
           {% if valid_code_samples %}
-          * - **Code sample**
+          * - **{{ code_sample_label }}**
             - {% for item in valid_code_samples %}
-              * `{{ item.name or "Code" }} <{{ item.link }}>`_
+              * `{{ item.name or code_sample_default_name }} <{{ item.link }}>`_
               {% endfor %}
             -
           {% endif %}
