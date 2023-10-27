@@ -32,63 +32,64 @@ doi: 10.26186/116268
 # Access tab
 
 maps:
-  - name: DEACoastlines
+  - link: https://maps.dea.ga.gov.au/story/DEACoastlines
+    name: DEACoastlines
     image: https://www.gifpng.com/300x200
-    link: https://maps.dea.ga.gov.au/story/DEACoastlines
 
 data:
-  - name: dea_coastlines
-    link: https://data.dea.ga.gov.au/?prefix=derivative/dea_coastlines/2-1-0/
+  - link: https://data.dea.ga.gov.au/?prefix=derivative/dea_coastlines/2-1-0/
+    name: dea_coastlines
 
 stac:
-  - name: example_layer
-    link: https://explorer.sandbox.dea.ga.gov.au/stac
+  - link: https://explorer.sandbox.dea.ga.gov.au/stac
+    name: example_layer
 
 explorer:
-  - name: AWS Explorer
-    link: https://explorer.prod.dea.ga.gov.au/products/geodata_coast_100k
-  # - name: NCI Explorer
-  #   link: https://explorer.prod.dea.ga.gov.au/products/geodata_coast_100k
+  - link: https://explorer.prod.dea.ga.gov.au/products/geodata_coast_100k
+    name: AWS Explorer
+  - link: https://explorer.prod.dea.ga.gov.au/products/geodata_coast_100k
+    name: NCI Explorer
 
 sandbox:
-  - name: Sandbox
-    link: https://app.sandbox.dea.ga.gov.au/
+  - link: https://app.sandbox.dea.ga.gov.au/
+    name: Sandbox
 
 ecat:
   - id: 116268
 
 web_services:
-  - title: Web Map Service
+  - link: example.com
+    title: Web Map Service
     name: WMS
-    link: example.com
-  # - title: Web Coverage Service
-  #   name: WCS
-  #   link: example.com
-  # - title: Web Feature Service
-  #   name: WFS
-  #   link: example.com
+  - link: example.com
+    title: Web Coverage Service
+    name: WCS
+  - link: example.com
+    title: Web Feature Service
+    name: WFS
 
 code_samples:
-  - name: Jupyter notebook
-    link: https://docs.dea.ga.gov.au/notebooks/DEA_products/DEA_Coastlines.html
-  # - name: GitHub repository
-  #   link: https://github.com/GeoscienceAustralia/dea-coastlines
+  - link: https://docs.dea.ga.gov.au/notebooks/DEA_products/DEA_Coastlines.html
+    name: Jupyter notebook
+  - link: https://github.com/GeoscienceAustralia/dea-coastlines
+    name: GitHub repository
 
 files:
-  - name: DEA Tiles_1.pdf
+  - link: example.com
+    name: DEA Tiles_1.pdf
     description: Image showing DEA tile locations and tile identifiers.
-    link: example.com
-  - name: DEA_v2_Albers_tiles_Australia.zip
-    link: example.com
+    
+  - link: example.com
+    name: DEA_v2_Albers_tiles_Australia.zip
     description: DEA tile location shapefile (.shp) with tile identifiers.
 
 # History tab
 
 old_versions:
-  - version: 2.0.0
+  - slug: dea-coastlines-2.0.0
+    version: 2.0.0
     name: DEA Coastlines
     release_date: 22 Sep 2020
-    slug: dea-coastlines-2.0.0
 
 # Unused
 
