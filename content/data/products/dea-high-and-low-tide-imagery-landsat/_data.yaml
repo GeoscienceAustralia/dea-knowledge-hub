@@ -4,7 +4,9 @@ title: DEA High and Low Tide Imagery (Landsat)
 long_title: 'High Tide and Low Tide Composites 25m 2.0.0 '
 header_image: ./images/HLTCv2.png
 version: 2.0.0
-product_id: high_tide_comp_20p, low_tide_comp_20p
+product_ids:
+  - high_tide_comp_20p
+  - low_tide_comp_20p
 update_frequency: As needed
 is_latest_version: true
 product_type: Derivative

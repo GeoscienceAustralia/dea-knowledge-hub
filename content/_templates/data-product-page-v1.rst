@@ -10,14 +10,8 @@
 {% set valid_code_samples = data.code_samples | selectattr("link",  "!=", None) | list %}
 {% set valid_files = data.files | selectattr("link",  "!=", None) | list %}
 {% set valid_old_versions = data.old_versions | selectattr("slug",  "!=", None) | selectattr("version",  "!=", None) | selectattr("name",  "!=", None) | list %}
-
-{% set valid_product_types = [data.product_type, data.spatial_data_type] | select("!=", None) | join(", ") %}
-
-{% set has_access_data = valid_maps or valid_data or valid_explorer or valid_sandbox or valid_web_services or valid_stac or valid_ecat or valid_code_samples %}
-
-{% set pretty_version = "v" + data.version %}
-{% set tab_title = data.title if is_latest_version else pretty_version + ": " + data.title %}
-{% set page_title = data.title if is_latest_version else "Old version: " + data.title %}
+{% set valid_product_types = [data.product_type, data.spatial_data_type] | select("!=", None) | list %}
+{% set valid_product_ids = data.product_ids | select("!=", None) | list %}
 
 {% set map_label = "See it on a map" %}
 {% set stac_label = "Get via STAC" %}
@@ -35,6 +29,15 @@
 {% set web_service_default_name = "Web service" %}
 {% set stac_default_name = "STAC" %}
 {% set code_sample_default_name = "Code sample" %}
+
+{% set has_access_data = valid_maps or valid_data or valid_explorer or valid_sandbox or valid_web_services or valid_stac or valid_ecat or valid_code_samples %}
+
+{% set pretty_version = "v" + data.version %}
+{% set tab_title = data.title if is_latest_version else pretty_version + ": " + data.title %}
+{% set page_title = data.title if is_latest_version else "Old version: " + data.title %}
+
+{% set product_ids_label = "Product IDs" if valid_product_ids | length > 1 else "Product ID" %}
+{% set product_types_label = "Product types" if valid_product_types | length > 1 else "Product type" %}
 
 .. |nbsp| unicode:: 0xA0
    :trim:
@@ -65,7 +68,7 @@
       :Version: {{ data.version }} (Latest)
       {%- endif %}
       {%- if valid_product_types %}
-      :Product type: {{ valid_product_types }}
+      :{{ product_types_label }}: {{ valid_product_types | join(", ") }}
       {%- endif %}
       {%- if data.time_span.start and data.time_span.end %}
       :Time span: {{ data.time_span.start }} – {{ data.time_span.end }}
@@ -75,8 +78,8 @@
       :Ends at: {{ data.time_span.end }}
       {%- endif %}
       :Update frequency: {{ data.update_frequency }}
-      {%- if data.product_id %}
-      :Product ID: {{ data.product_id }}
+      {%- if valid_product_ids %}
+      :{{ product_ids_label }}: {{ valid_product_ids | join(", ") }}
       {%- endif %}
 
    .. container:: hero-image
