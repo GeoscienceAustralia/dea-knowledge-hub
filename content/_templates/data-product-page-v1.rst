@@ -19,22 +19,22 @@
 {% set tab_title = data.title if is_latest_version else pretty_version + ": " + data.title %}
 {% set page_title = data.title if is_latest_version else "Old version: " + data.title %}
 
-{% set map_label = "See the data on a map" %}
+{% set map_label = "See it on a map" %}
 {% set stac_label = "Get via STAC" %}
 {% set explorer_label = "Explore data samples" %}
 {% set data_label = "Get the data online" %}
 {% set sandbox_label = "Play with the sandbox" %}
 {% set ecat_label = "Product catalogue" %}
-{% set web_service_label = "Bring the data to you via web service" %}
+{% set web_service_label = "Get via web service" %}
 {% set code_sample_label = "Code sample" %}
 
-{% set map_default_name = "Map" %}
-{% set data_default_name = "Data" %}
+{% set map_default_name = "DEA Map" %}
+{% set data_default_name = "DEA Data" %}
 {% set explorer_default_name = "Data Explorer" %}
-{% set sandbox_default_name = "Sandbox" %}
-{% set web_service_default_name = "Service" %}
+{% set sandbox_default_name = "DEA Sandbox" %}
+{% set web_service_default_name = "Web service" %}
 {% set stac_default_name = "STAC" %}
-{% set code_sample_default_name = "Code" %}
+{% set code_sample_default_name = "Code sample" %}
 
 .. |nbsp| unicode:: 0xA0
    :trim:

@@ -9,7 +9,9 @@ update_frequency: As needed
 is_latest_version: true
 product_type: Derivative
 spatial_data_type: Vector
-collection: Geoscience Australia Landsat Collection 2 (DEPRECATED)
+collection:
+  name: Geoscience Australia Landsat Collection 2 (DEPRECATED)
+  link: null
 collection_slug: geoscience-australia-landsat-collection-2-deprecated
 dois: null
 time_span:
@@ -24,22 +26,17 @@ nci:
 
 # Access
 
-data:
-  - link: http://dapds00.nci.org.au/thredds/catalogs/fk4/hltc_2_0.html
-    name: NCI - THREDDS
-    image: null
-
 maps:
   - link: https://maps.dea.ga.gov.au
     name: null
     image: null
 
-open_data_cubes:
-  - link: null
-    name: high_tide_comp_20p, low_tide_comp_20p
-    image: null
-
 explorers: null
+
+data:
+  - link: http://dapds00.nci.org.au/thredds/catalogs/fk4/hltc_2_0.html
+    name: NCI - THREDDS
+    image: null
 
 code_examples:
   - link: https://docs.dea.ga.gov.au/notebooks/DEA_products/DEA_High_and_Low_Tide_Imagery.html
@@ -54,6 +51,11 @@ web_services:
 ecat_records:
   - link: http://pid.geoscience.gov.au/dataset/ga/113843
     name: '113843'
+    image: null
+
+open_data_cubes:
+  - link: null
+    name: high_tide_comp_20p, low_tide_comp_20p
     image: null
 
 tags:
