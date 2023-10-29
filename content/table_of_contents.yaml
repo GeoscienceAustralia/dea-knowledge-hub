@@ -2,6 +2,8 @@ root: index
 entries:
   - file: data/index
     subtrees:
+      # - caption: Baseline satellite data
+
       - caption: Land and Vegetation
         entries:
           - file: data/themes/land-and-vegetation/index
@@ -20,6 +22,22 @@ entries:
           - file: data/products/dea-mangrove-canopy-cover-landsat/index
             title: DEA Mangroves
 
+      - caption: Inland water
+        entries:
+          - file: data/themes/inland-water/index
+            title: All
+
+          - file: data/catalogues/dea-wetlands-insight-tool/index
+            entries:
+              - file: data/products/dea-wetlands-insight-tool-qld/index
+          - file: data/catalogues/dea-water-observations/index
+            entries:
+              - file: data/products/dea-water-observations-landsat/index
+              - file: data/products/dea-water-observations-statistics-landsat/index
+              - file: data/products/dea-water-observations-provisional-sentinel-2-nrt/index
+          - file: data/products/dea-waterbodies-landsat/index
+            title: DEA Waterbodies
+
       - caption: Sea, Ocean, and Coast
         entries:
           - file: data/themes/sea-ocean-and-coast/index
@@ -32,6 +50,8 @@ entries:
             title: DEA Intertidal Elevation (NIDEM)
           - file: data/products/dea-intertidal-extents-landsat/index
             title: DEA Intertidal Extents (ITEM)
+
+      # - caption: Hazards
 
   # - file: notebooks/README
   #   title: Notebooks
@@ -55,6 +75,7 @@ entries:
 
   - file: data/old-versions/index
     entries:
+      - glob: data/old-versions/dea-coastlines-*/index
       - glob: data/old-versions/dea-coastlines-*/index
       - glob: data/old-versions/dea-coastlines-*/index
       - glob: data/old-versions/dea-coastlines-*/index

@@ -1,0 +1,72 @@
+# Overview
+
+title: DEA Water Observations Statistics (Landsat)
+long_title: Geoscience Australia Landsat Water Observation Statistics Collection 3
+header_image: ./images/WO_Frequency_2009_c2.jpg
+version: 3.1.6
+product_ids:
+  - ga_ls_wo_fq_apr_oct_3
+  - ga_ls_wo_fq_nov_mar_3
+  - ga_ls_wo_fq_cyear_3
+  - ga_ls_wo_fq_myear_3
+  - ga_ls_wo_filtfq_myear_3
+  - ''
+update_frequency: Periodically
+is_latest_version: true
+product_type: Derivative
+spatial_data_type: Vector
+collection:
+  name: Geoscience Australia Landsat Collection 3
+  link: null
+collection_slug: geoscience-australia-landsat-collection-3
+dois: null
+time_span:
+  start: null
+  end: null
+parent_products:
+  name: null
+  link: null
+nci:
+  name: null
+  code: null
+
+# Access
+
+maps:
+  - link: https://maps.dea.ga.gov.au
+    name: null
+    image: null
+
+explorers: null
+
+data:
+  - link: https://data.dea.ga.gov.au/?prefix=derivative/ga_ls_wo_fq_apr_oct_3/1-6-0/
+    name: Seasonal Water Summaries Apr-Oct periods since 1986
+    image: null
+  - link: https://data.dea.ga.gov.au/?prefix=derivative/ga_ls_wo_fq_nov_mar_3/1-6-0/
+    name: Seasonal Water Summaries Nov-Mar periods since 1986
+    image: null
+  - link: https://data.dea.ga.gov.au/?prefix=derivative/ga_ls_wo_fq_cyear_3/1-6-0/
+    name: Annual Water Summaries per Calendar Year since 1986
+    image: null
+  - link: https://data.dea.ga.gov.au/?prefix=derivative/ga_ls_wo_fq_myear_3/1-6-0/
+    name: All-time Water Summary (Unfiltered) 1986 to present
+    image: null
+
+code_examples: null
+
+web_services:
+  - link: https://ows.dea.ga.gov.au/
+    name: Open Web Services
+    image: null
+
+ecat:
+  - id: '146091'
+
+tags:
+  - geoscience_australia_landsat_collection_3
+  - surface_water
+  - water_detection
+  - floods
+  - wetlands
+
