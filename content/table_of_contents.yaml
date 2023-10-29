@@ -6,12 +6,20 @@ entries:
         entries:
           - file: data/themes/land-and-vegetation/index
             title: All
+
+          - file: data/products/dea-land-cover-landsat/index
+            title: DEA Land Cover
           - file: data/catalogues/dea-fractional-cover/index
             entries:
-              - file: data/products/dea-fractional-cover-percentiles/index
-                entries:
-                  - file: data/products/dea-fractional-cover-percentiles-landsat-1/index
-                  - file: data/products/dea-fractional-cover-percentiles-landsat-2/index
+              - file: data/products/dea-fractional-cover-landsat/index
+                title: DEA Fractional Cover
+              - file: data/products/dea-fractional-cover-percentiles-landsat/index
+                title: DEA Fractional Cover Percentiles
+          - file: data/products/dea-geometric-median-and-median-absolute-deviation-landsat/index
+            title: DEA Geomedian and Mean Absolute Deviation (GeoMAD)
+          - file: data/products/dea-mangrove-canopy-cover-landsat/index
+            title: DEA Mangroves
+
       - caption: Sea, Ocean, and Coast
         entries:
           - file: data/themes/sea-ocean-and-coast/index
@@ -25,29 +33,29 @@ entries:
           - file: data/products/dea-intertidal-extents-landsat/index
             title: DEA Intertidal Extents (ITEM)
 
-
-
-
   # - file: notebooks/README
   #   title: Notebooks
-    # entries:
-    #   - file: notebooks/Beginners_guide/README
-    #     title: Beginner's guide
-    #   - file: notebooks/DEA_products/README
-    #     title: DEA products
-    #   - file: notebooks/How_to_guides/README
-    #     title: How-to guides
-    #   - file: notebooks/Interactive_apps/README
-    #     title: Interactive apps
-    #   - file: notebooks/Real_world_examples/README
-    #     title: Real-world examples
-    #   - file: notebooks/Supplementary_data/README
-    #     title: Supplementary data
-    #   - file: notebooks/Supplementary_data/README
-    #     title: Supplementary data
-    #   - file: notebooks/Tools/README
-    #     title: Tools
+  # entries:
+  #   - file: notebooks/Beginners_guide/README
+  #     title: Beginner's guide
+  #   - file: notebooks/DEA_products/README
+  #     title: DEA products
+  #   - file: notebooks/How_to_guides/README
+  #     title: How-to guides
+  #   - file: notebooks/Interactive_apps/README
+  #     title: Interactive apps
+  #   - file: notebooks/Real_world_examples/README
+  #     title: Real-world examples
+  #   - file: notebooks/Supplementary_data/README
+  #     title: Supplementary data
+  #   - file: notebooks/Supplementary_data/README
+  #     title: Supplementary data
+  #   - file: notebooks/Tools/README
+  #     title: Tools
 
   - file: data/old-versions/index
     entries:
+      - glob: data/old-versions/dea-coastlines-*/index
+      - glob: data/old-versions/dea-coastlines-*/index
+      - glob: data/old-versions/dea-coastlines-*/index
       - glob: data/old-versions/dea-coastlines-*/index

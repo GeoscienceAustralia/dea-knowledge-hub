@@ -1,0 +1,146 @@
+# Unused data migrated from the CMI. May be outdated.
+
+# General
+
+cmi_node: 581
+cmi_url: https://cmi.ga.gov.au/data-products/dea/581/dea-coastlines
+published_date: '2023-08-15'
+author: R. B. @ ga.gov.au
+created: 2020-08-06T10:12:40+1000
+
+# Basic
+
+program: dea
+theme: Sea, ocean and coast
+catalogue: DEA Coastlines
+is_deprecated: null
+is_primary_record: null
+project_leader: N. M. @ ga.gov.au
+branch_head: M. W. @ ga.gov.au
+related_items:
+  - DEA Intertidal Elevation (Landsat)
+  - DEA Intertidal Extents (Landsat)
+  - DEA High and Low Tide Imagery (Landsat)
+anzsrc_research_code: EARTH SCIENCES
+
+# Access
+
+map_names:
+  - Interactive DEA Coastlines product on DEA Maps
+ecat_url: http://pid.geoscience.gov.au/dataset/ga/116268
+doi_url: https://doi.org/10.26186/116268
+open_data_cube_configuration: null
+security_classification: Unclassified
+time_span_full:
+  start: 1987-12-31T13:00:00+1100
+  end: 2022-12-31T12:59:59+1100
+
+# Details
+
+relevant_websites:
+  - link: https://maps.dea.ga.gov.au/story/DEACoastlines
+    name: Interactive DEA Coastlines product on DEA Maps
+  - link: https://github.com/GeoscienceAustralia/dea-coastlines
+    name: DEA Coastlines Github code repository
+
+# Processing
+
+data_sources:
+  - DEA Surface Reflectance (Landsat 5 TM)
+  - DEA Surface Reflectance (Landsat 7 ETM+)
+  - DEA Surface Reflectance (Landsat 8 OLI-TIRS)
+  - DEA Surface Reflectance OA (Landsat 5 TM)
+  - DEA Surface Reflectance OA (Landsat 7 ETM+)
+  - DEA Surface Reflectance OA (Landsat 8 OLI-TIRS)
+major_algorithms:
+  - FES (Finite Element Solution) 2014 global tide model
+  - Modified Normalised Difference Water Index (MNDWI)
+  - 'Spatial tide interpolation '
+  - Median compositing
+  - Coastline morphological extraction
+  - Subpixel resolution waterline extraction
+  - Rates of change and linear regression statistics
+schema_spatial_extent:
+  temporal_extent:
+    start: 1987-12-31T13:00:00+1100
+    end: 2022-12-31T00:59:59+1100
+  min_longitude: -4846590
+  max_longitude: -1887450
+  min_latitude: -1015650
+  max_latitude: 2121650
+  coordinate_reference_system: 'Australian Albers / GDA94 (EPSG: 3577)'
+  coordinate_reference_system_units: metre
+  cell_size_x: 30
+  cell_size_y: 30
+  pixel_origin: null
+  spatial_extent:
+    geo_type: Polygon
+    lat: '-26.571200000000'
+    long: '133.219900000000'
+    left: '111.525000000000'
+    top: '-8.212800000000'
+    right: '154.914800000000'
+    bottom: '-44.929600000000'
+    geohash: null
+
+# Media
+
+media:
+  - file: /2020-08/deacoastlines_busselton.JPG
+    caption: DEA CoastLines at Busselton, WA
+  - file: /2020-08/deacoastlines_cape_peron_rockingham.png
+    caption: DEA CoastLines at Cape Peron, Rockingham, WA
+  - file: /2020-08/deacoastlines_geographe_bay.JPG
+    caption: DEA CoastLines at Port Geographe, WA
+  - file: /2020-08/deacoastlines_pointstuart_nt.JPG
+    caption: DEA CoastLines at Point Stuart, NT
+  - file: /2020-08/deacoastlines_perth_wa.JPG
+    caption: DEA CoastLines rates of change statistics at Perth, WA
+  - file: /2020-08/deacoastlines_adelaide_sa.JPG
+    caption: DEA CoastLines rates of change statistics at Adelaide, SA
+  - file: /2020-08/deacoastlines_longbay_sa.JPG
+    caption: DEA CoastLines rates of change statistics at Long Bay, SA
+  - file: /2020-08/deacoastlines_cornerinlet_vic.JPG
+    caption: DEA CoastLines at Corner Inlet, Vic
+  - file: /2020-08/deacoastlines_duttonway_vic.JPG
+    caption: DEA CoastLines at Dutton Way, Vic
+  - file: /2020-08/deacoastlines_queenscliff_vic.JPG
+    caption: DEA CoastLines at Queenscliff, Vic
+  - file: /2020-08/deacoastlines_oldbar_nsw.JPG
+    caption: DEA CoastLines rates of change statistics at Old Bar, NSW
+  - file: /2020-08/deacoastlines_tweedheads_qldnsw.JPG
+    caption: DEA CoastLines at Tweed Heads, NSW and QLD
+  - file: /2020-08/deacoastlines_jumpinpinchannel_qld.JPG
+    caption: DEA CoastLines at Jumpinpin Channel, QLD
+  - file: /2020-08/deacoastlines_barubbraisland_qld.JPG
+    caption: DEA CoastLines at Barubbra Island, QLD
+case_studies: null
+header_image_alt: DEA Coastlines
+files: null
+
+# Credits
+
+owners:
+  - Commonwealth of Australia (Geoscience Australia)
+custodians:
+  - Commonwealth of Australia (Geoscience Australia)
+principal_contributors:
+  - R. B. T.
+  - R. N.
+  - S. S.
+  - L. L.
+subject_matter_experts:
+  - R. B. T.
+publishing_entities:
+  - Commonwealth of Australia (Geoscience Australia)
+metadata_contacts:
+  - Geoscience Australia - Team Leader, Product Management, Operations Section NEMO
+media_contacts:
+  - Geoscience Australia - GA Media Hotline
+rights_statement: © Commonwealth of Australia (Geoscience Australia) 2023. [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/.).
+data_source_contacts:
+  - 'Geoscience Australia - Team Leader, Applications and Systems Support, NEMO '
+approvers_checklist: null
+approvers_checklist_hprm_reference: D2021-20195
+pmp_hprm_reference: D2021-20197
+
