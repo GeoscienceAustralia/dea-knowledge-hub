@@ -51,7 +51,12 @@ entries:
           - file: data/products/dea-intertidal-extents-landsat/index
             title: DEA Intertidal Extents (ITEM)
 
-      # - caption: Hazards
+      - caption: Hazards
+        entries:
+          - file: data/themes/hazards/index
+            title: All
+
+          - file: data/products/dea-hotspots/index
 
   # - file: notebooks/README
   #   title: Notebooks
