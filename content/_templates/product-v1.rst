@@ -42,7 +42,7 @@
 .. |nbsp| unicode:: 0xA0
    :trim:
 
-.. rst-class:: data-product-page
+.. rst-class:: product-page
 
 ================================================
 {{ tab_title }}

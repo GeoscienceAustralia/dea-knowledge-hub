@@ -1,4 +1,4 @@
-.. rst-class:: data-category-page
+.. rst-class:: theme-page
 
 ===================================================================
 {{ data.title }}

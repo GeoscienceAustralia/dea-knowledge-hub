@@ -1,4 +1,4 @@
-.. rst-class:: data-old-versions-page
+.. rst-class:: old-version-product-page
 
 ===================================================================
 {{ data.title }}
