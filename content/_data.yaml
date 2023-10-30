@@ -2,17 +2,15 @@ title: Home
 
 themes:
   - name: Baseline satellite data
-    slug: example.com
+    slug: baseline-satellite-data
   - name: Land and vegetation
     slug: land-and-vegetation
   - name: Inland water
-    slug: example.com
+    slug: inland-water
   - name: Sea, ocean, and coast
     slug: sea-ocean-and-coast
   - name: Hazards
-    slug: example.com
-  - name: Data services
-    slug: example.com
+    slug: hazards
 
 use_links:
   - name: Get started with DEA

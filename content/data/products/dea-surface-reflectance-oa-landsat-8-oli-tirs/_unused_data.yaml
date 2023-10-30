@@ -1,0 +1,111 @@
+# Unused data migrated from the CMI. May be outdated.
+
+# General
+
+cmi_node: 404
+cmi_url: https://cmi.ga.gov.au/data-products/dea/404/dea-surface-reflectance-oa-landsat-8-oli-tirs
+published_date: '2019-11-26'
+author: J. S. @ ga.gov.au
+created: 2018-03-12T12:00:00+1100
+
+# Basic
+
+program: dea
+theme: Baseline satellite data
+catalogue: DEA Surface Reflectance
+is_deprecated: null
+is_primary_record: null
+project_leader: c...i @ ga.gov.au
+branch_head: c...i @ ga.gov.au
+related_items:
+  - DEA Surface Reflectance (Landsat 8 OLI-TIRS)
+  - DEA Surface Reflectance NBAR (Landsat 8 OLI-TIRS)
+  - DEA Surface Reflectance NBART (Landsat 8 OLI-TIRS)
+anzsrc_research_code: null
+
+# Access
+
+map_names: null
+ecat_url: http://pid.geoscience.gov.au/dataset/ga/132317
+doi_url: null
+open_data_cube_configuration: null
+security_classification: Unclassified
+time_span_full:
+  start: null
+  end: null
+
+# Details
+
+relevant_websites: null
+
+# Processing
+
+data_sources:
+  - USGS Collection 1 Landsat 8 Optical Land Imager Thermal Infrared Sensor
+  - SRTM DSM/DEM data
+  - Ephemeris Data
+major_algorithms: null
+schema_spatial_extent:
+  temporal_extent:
+    start: 1975-01-21T22:52:09+1100
+    end: 2049-01-21T13:00:00+1100
+  min_longitude: 112
+  max_longitude: 154
+  min_latitude: -44
+  max_latitude: -9
+  coordinate_reference_system: 'WGS 84 (EPSG: 4326)'
+  coordinate_reference_system_units: decimal_degrees
+  cell_size_x: null
+  cell_size_y: null
+  pixel_origin: Top Left
+  spatial_extent:
+    geo_type: Polygon
+    lat: '-26.500000000000'
+    long: '133.000000000000'
+    left: '112.000000000000'
+    top: '-9.000000000000'
+    right: '154.000000000000'
+    bottom: '-44.000000000000'
+    geohash: null
+
+# Media
+
+media: null
+case_studies: null
+header_image_alt: null
+files: null
+
+# Credits
+
+owners:
+  - Commonwealth of Australia (Geoscience Australia)
+custodians:
+  - Commonwealth of Australia (Geoscience Australia)
+principal_contributors:
+  - F. L.
+  - D. J.
+  - L. W. W.
+  - P. D.
+  - A. V.
+  - I. A.
+  - J. H.
+  - S. O.
+  - M. T.
+  - J. S.
+subject_matter_experts:
+  - F. L.
+  - D. J.
+  - J. S.
+publishing_entities:
+  - Commonwealth of Australia (Geoscience Australia)
+metadata_contacts:
+  - Geoscience Australia - Team Leader, Product Management, Operations Section NEMO
+media_contacts:
+  - Geoscience Australia - GA Media Hotline
+rights_statement: © Commonwealth of Australia (Geoscience Australia) 2020. [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/.).
+data_source_contacts:
+  - 'Geoscience Australia - Team Leader, Applications and Systems Support, NEMO '
+approvers_checklist: null
+approvers_checklist_hprm_reference: null
+pmp_hprm_reference: null
+

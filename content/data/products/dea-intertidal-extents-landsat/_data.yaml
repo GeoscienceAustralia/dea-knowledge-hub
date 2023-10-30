@@ -1,0 +1,58 @@
+# Overview
+
+title: DEA Intertidal Extents (Landsat)
+long_title: 'Intertidal Extents Model 25m 2.0.0 '
+header_image: ./images/intertidal extents.png
+version: 2.0.0
+product_ids:
+  - item_v2
+update_frequency: As needed
+is_latest_version: true
+product_type: Derivative
+spatial_data_type: Vector
+collection:
+  name: Geoscience Australia Landsat Collection 2 (DEPRECATED)
+  link: null
+collection_slug: geoscience-australia-landsat-collection-2-deprecated
+dois: null
+time_span:
+  start: null
+  end: null
+parent_products:
+  name: null
+  link: null
+nci:
+  name: null
+  code: null
+
+# Access
+
+maps:
+  - link: https://maps.dea.ga.gov.au
+    name: null
+    image: null
+
+explorers: null
+
+data:
+  - link: http://dapds00.nci.org.au/thredds/catalogs/fk4/item_2_0.html
+    name: THREDDS
+    image: null
+
+code_examples: null
+
+web_services:
+  - link: http://gsky.nci.org.au/ows/dea?service=WMS&amp;amp;version=1.3.0&amp;amp;request=GetCapabilities
+    name: GSKY WMS
+    image: null
+
+ecat:
+  - id: '113842'
+
+tags:
+  - geoscience_australia_landsat_collection_2_deprecated
+  - item
+  - topography
+  - habitat_mapping
+  - geomorphology
+

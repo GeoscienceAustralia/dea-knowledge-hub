@@ -1,7 +1,7 @@
 .. rst-class:: data-catalogue-page
 
 ===================================================================
-{{ data["title"] }}
+{{ data.title }}
 ===================================================================
 
 This catalogue contains the following products.

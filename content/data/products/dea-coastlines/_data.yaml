@@ -1,84 +1,72 @@
-# Overview tab
+# Overview
 
 title: DEA Coastlines
-long_title: Digital Earth Australia Coastlines
-image: https://www.dea.ga.gov.au/_nuxt/image/3d7bbc.png
-# product_id: dea_coastlines
-
+long_title: Geoscience Australia Landsat Coastlines Collection 3
+header_image: ./images/thumbnail_vertical.png
 version: 2.1.0
-is_latest_version: True
-latest_version_link: /example-page
-
+product_ids: null
+update_frequency: Annually
+is_latest_version: true
 product_type: Derivative
 spatial_data_type: Vector
+collection:
+  name: Geoscience Australia Landsat Collection 3
+  link: null
+collection_slug: geoscience-australia-landsat-collection-3
+dois:
+  - 10.26186/116268
 time_span:
-  start: 1 Jan 1988
+  start: 31 Dec 1987
   end: 31 Dec 2022
-update_frequency: Annually
+parent_products:
+  name: null
+  link: null
+nci:
+  name: null
+  code: null
 
-parent_product:
-  name: LANDSAT 5, 7, 8, and 9 Analysis-Ready Data
-  link: baseline-data-category.com
-
-collection: Geoscience Australia Landsat Collection 3
-resource_type: Derivative
-published: 15 Aug 2023
-author: Sagar Stephen
-doi: 10.26186/116268
-
-# Access tab
+# Access
 
 maps:
-  - name: DEACoastlines
-    image: https://www.gifpng.com/300x200
-    link: https://maps.dea.ga.gov.au/story/DEACoastlines
+  - link: https://maps.dea.ga.gov.au/story/DEACoastlines
+    name: null
+    image: null
+
+explorers: null
 
 data:
-  - name: dea_coastlines
-    link: https://data.dea.ga.gov.au/?prefix=derivative/dea_coastlines/2-1-0/
+  - link: https://data.dea.ga.gov.au/?prefix=derivative/dea_coastlines/2-1-0/
+    name: Digital Earth Australia - Public Data download (Esri Shapefiles, OGC GeoPackage)
+    image: null
 
-stac:
-  - name: example_layer
-    link: https://explorer.sandbox.dea.ga.gov.au/stac
-
-explorer:
-  - name: AWS Explorer
-    link: https://explorer.prod.dea.ga.gov.au/products/geodata_coast_100k
-  - name: NCI Explorer
-    link: https://explorer.prod.dea.ga.gov.au/products/geodata_coast_100k
-
-sandbox:
-  - name: Sandbox
-    link: https://app.sandbox.dea.ga.gov.au/
-
-ecat:
-  - id: 116268
+code_examples:
+  - link: https://docs.dea.ga.gov.au/notebooks/DEA_products/DEA_Coastlines.html
+    name: Jupyter notebook
+    image: null
+  - link: https://github.com/GeoscienceAustralia/dea-coastlines
+    name: Github repository
+    image: null
 
 web_services:
-  - title: Web Map Service
-    name: WMS
-    link: example.com
-  - title: Web Coverage Service
-    name: WCS
-    link: example.com
-  - title: Web Feature Service
-    name: WFS
-    link: example.com
+  - link: https://geoserver.dea.ga.gov.au/geoserver/wms
+    name: 'WMS (layer name: dea:DEACoastlines)'
+    image: null
+  - link: http://geoserver.dea.ga.gov.au/geoserver/wfs?service=WFS&version=1.1.0
+    name: 'WFS (layer names: dea:shorelines_annual, dea:rates_of_change)'
+    image: null
 
-code_samples:
-  - name: Jupyter notebook
-    link: https://docs.dea.ga.gov.au/notebooks/DEA_products/DEA_Coastlines.html
-  - name: GitHub repository
-    link: https://github.com/GeoscienceAustralia/dea-coastlines
+ecat:
+  - id: '116268'
 
-# History tab
+tags:
+  - geoscience_australia_landsat_collection_3
+  - marine_and_coastal
+  - coast
+  - erosion
+  - waterline_extraction
+  - subpixel_waterlines
+  - coastal_change
+  - dea_coast_lines
+  - coastline_data
+  - coastal_erosion
 
-old_versions:
-  - version: 2.0.0
-    name: DEA Coastlines
-    release_date: 22 Sep 2020
-    slug: dea-coastlines-2.0.0
-
-# Unused
-
-cmi_node_id: 581

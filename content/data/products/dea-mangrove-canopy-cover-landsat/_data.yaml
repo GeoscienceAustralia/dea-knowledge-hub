@@ -1,0 +1,62 @@
+# Overview
+
+title: DEA Mangrove Canopy Cover (Landsat)
+long_title: Geoscience Australia Mangrove Canopy Cover Collection 3
+header_image: ./images/DEA-mangroves.jpg
+version: 3.0.0
+product_ids:
+  - ga_ls_mangrove_cover_cyear_3
+update_frequency: Annually
+is_latest_version: true
+product_type: Derivative
+spatial_data_type: Vector
+collection:
+  name: Geoscience Australia Landsat Collection 3
+  link: null
+collection_slug: geoscience-australia-landsat-collection-3
+dois: null
+time_span:
+  start: null
+  end: null
+parent_products:
+  name: null
+  link: null
+nci:
+  name: null
+  code: null
+
+# Access
+
+maps:
+  - link: https://maps.dea.ga.gov.au/#share=s-lkNZRIoEC2JixvX3a7RoCGR5czq
+    name: null
+    image: null
+
+explorers: null
+
+data:
+  - link: http://dea-public-data.s3-website-ap-southeast-2.amazonaws.com/?prefix=derivative/ga_ls_mangrove_cover_cyear_3/3-0-0/
+    name: 'Digital Earth Australia - Public Data '
+    image: null
+  - link: https://dapds00.nci.org.au/thredds/catalog/jw04/ga_ls_mangrove_cover_cyear_3/3-0-0/catalog.html
+    name: NCI - THREDDS
+    image: null
+
+code_examples: null
+
+web_services:
+  - link: https://ows.dea.ga.gov.au/
+    name: OWS
+    image: null
+
+ecat:
+  - id: '145497'
+
+tags:
+  - geoscience_australia_landsat_collection_3
+  - forest
+  - woodland
+  - green
+  - coast
+  - coastal_ecosystem
+

@@ -9,7 +9,7 @@ html_static_path = ['_static']
 templates_path = ['_templates']
 exclude_patterns = [
     "**/_*",
-    "notebooks",
+    # "notebooks",
 ]
 html_extra_path = ['robots.txt']
 source_suffix = ['.rst', '.md']
@@ -62,15 +62,12 @@ html_theme_options = {
     "navigation_with_keys": False,
     "search_bar_text": "Search ...",
     "show_prev_next": False,
-    "header_links_before_dropdown": 1,
+    "header_links_before_dropdown": 2,
 }
 
 suppress_warnings = ['myst.header']
 
 html_context = {
-    'support_link': 'example-support.com',
-    'learn_access_dea_maps_link': '/setup/dea_maps.html',
-    'learn_access_stac_link': '/notebooks/How_to_guides/Downloading_data_with_STAC.html',
-    'learn_access_data_explorer_link': '/about/faq.html#how-do-i-download-data-from-dea',
-    'learn_access_web_service_link': '/setup/gis/README.html',
+    'google_analytics_ga4_tag': 'G-0000000000', # G-4B9D450HR4
+    'support_link': 'example-support.com'
 }

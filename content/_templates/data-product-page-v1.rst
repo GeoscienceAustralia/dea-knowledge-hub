@@ -1,58 +1,103 @@
-.. |nbsp| unicode:: 0xA0 
+{% set is_latest_version = data.is_latest_version %}
+
+{% set valid_maps = data.maps | selectattr("link",  "!=", None) | list %}
+{% set valid_data = data.data | selectattr("link",  "!=", None) | list %}
+{% set valid_explorer = data.explorer | selectattr("link",  "!=", None) | list %}
+{% set valid_web_services = data.web_services | selectattr("link",  "!=", None) | list %}
+{% set valid_stac = data.stac | selectattr("link",  "!=", None) | list %}
+{% set valid_ecat = data.ecat | selectattr("link",  "!=", None) | list %}
+{% set valid_code_samples = data.code_examples | selectattr("link",  "!=", None) | list %}
+{% set valid_files = data.files | selectattr("link",  "!=", None) | list %}
+{% set valid_old_versions = data.old_versions | selectattr("slug",  "!=", None) | selectattr("version",  "!=", None) | selectattr("name",  "!=", None) | list %}
+{% set valid_product_types = [data.product_type, data.spatial_data_type] | select("!=", None) | list %}
+{% set valid_product_ids = data.product_ids | select("!=", None) | list %}
+{% set valid_dois = data.dois | select("!=", None) | list %}
+{% set valid_tags = data.tags | select("!=", None) | list %}
+
+{% set map_label = "See it on a map" %}
+{% set stac_label = "Get via STAC" %}
+{% set explorer_label = "Explore data samples" %}
+{% set data_label = "Get the data online" %}
+{% set ecat_label = "Product catalogue" %}
+{% set web_service_label = "Get via web service" %}
+{% set code_sample_label = "Code sample" %}
+
+{% set map_default_name = "DEA Map" %}
+{% set data_default_name = "DEA Data" %}
+{% set explorer_default_name = "Data Explorer" %}
+{% set web_service_default_name = "Web service" %}
+{% set stac_default_name = "STAC" %}
+{% set code_sample_default_name = "Code sample" %}
+
+{% set has_access_data = valid_maps or valid_data or valid_explorer or valid_web_services or valid_stac or valid_ecat or valid_code_samples %}
+
+{% set pretty_version = "v" + data.version %}
+{% set tab_title = data.title if is_latest_version else pretty_version + ": " + data.title %}
+{% set page_title = data.title if is_latest_version else "Old version: " + data.title %}
+
+{% set product_ids_label = "Product IDs" if valid_product_ids | length > 1 else "Product ID" %}
+{% set product_types_label = "Product types" if valid_product_types | length > 1 else "Product type" %}
+{% set dois_label = "DOIs" if valid_dois | length > 1 else "DOI" %}
+
+.. |nbsp| unicode:: 0xA0
    :trim:
+
+.. |copyright| unicode:: 0xA9
 
 .. rst-class:: data-product-page
 
-{% if not data["is_latest_version"] %}
 ================================================
-{{ "v" + data["version"] }}: {{ data["title"] }}
+{{ tab_title }}
 ================================================
-{% else %}
-================================================
-{{ data["title"] }}
-================================================
-{% endif %}
 
 .. container:: header
 
    .. container:: title
 
-      {% if not data["is_latest_version"] %}
-      Old Version: {{ data["title"] }}
-      {% else %}
-      {{ data["title"] }}
-      {% endif %}
+      {{ page_title }}
 
    .. container:: subtitle
 
-      {{ data["long_title"] }}
+      {{ data.long_title }}
 
    .. container:: quick-info
 
-      {% if not data["is_latest_version"] %}
-      :Version: {{ data["version"] }} (`See latest version <{{ data["latest_version_link"] }}>`_)
-      {% else %}:Version: {{ data["version"] }} (Latest)
-      {% endif %}
-      :Product type: {{ data["product_type"] }}; {{ data["spatial_data_type"] }}
-      :Time span: {{ data["time_span"]["start"] }} – {{ data["time_span"]["end"] }}
-      :Update frequency: {{ data["update_frequency"] }}
-      {% if data["product_id"] %}
-      :Product ID: {{ data["product_id"] }}
-      {% endif %}
+      {% if not is_latest_version %}
+      :Version: {{ data.version }} (`See latest version <{{ data.latest_version_link }}>`_)
+      {%- else %}
+      :Version: {{ data.version }} (Latest)
+      {%- endif %}
+      {%- if valid_product_types %}
+      :{{ product_types_label }}: {{ valid_product_types | join(", ") }}
+      {%- endif %}
+      {%- if data.time_span.start and data.time_span.end %}
+      :Time span: {{ data.time_span.start }} – {{ data.time_span.end }}
+      {%- elif data.time_span.start  %}
+      :Starts at: {{ data.time_span.start }}
+      {%- elif data.time_span.end  %}
+      :Ends at: {{ data.time_span.end }}
+      {%- endif %}
+      :Update frequency: {{ data.update_frequency }}
+      {%- if valid_product_ids %}
+      :{{ product_ids_label }}: {{ valid_product_ids | join(", ") }}
+      {%- endif %}
 
    .. container:: hero-image
 
       |nbsp|
 
-{% if not data["is_latest_version"] %}
+{% if not is_latest_version %}
 .. container::
    :name: notifications
 
-   .. ADMONITION:: This is an old version ({{ "v" + data["version"] }})
+   .. ADMONITION:: This is an old version ({{ pretty_version }})
       :class: danger
    
-      See the `latest version of the product <{{ data["latest_version_link"] }}>`_.
+      See the `latest version of the product <{{ data.latest_version_link }}>`_.
 
+{% endif %}
+
+{% if not is_latest_version %}
 {% endif %}
 
 .. tab-set::
@@ -60,104 +105,111 @@
     .. tab-item:: Overview
        :name: overview-tab
 
-       .. include:: _about.md
+       .. container:: table-of-contents
+
+          .. container::
+             :name: overview-table-of-contents
+
+             |nbsp|
+
+       .. include:: _overview.md
           :parser: myst_parser.sphinx_
 
-       {% if data["is_latest_version"] and (data["maps"] or data["data"] or data["stac"] or data["explorer"] or data["sandbox"] or data["ecat"] or data["web_services"] or data["code_samples"]) %}
+       .. rubric:: Access the data
+          :name: access-the-data-cards
+
+       {% if is_latest_version and has_access_data %}
        .. container::
           :name: access-cards
 
           .. grid:: 4
              :gutter: 3
 
-             {% for item in data["maps"] %}
-             .. grid-item-card:: {{ item.get("title", "See the map") }}
-                :img-top: {{ item.get("image", "https://www.gifpng.com/300x200") }}
-                :link: {{ item.get("link") }}
+             {% for item in valid_maps %}
+             .. grid-item-card:: {{ item.title or map_label }}
+                :img-top: {{ item.image or "https://www.gifpng.com/300x200" }}
+                :link: {{ item.link }}
 
-                {{ item.get("name", "Map") }}
+                {{ item.name or map_default_name }}
              {% endfor %}
 
-             {% for item in data["data"] %}
-             .. grid-item-card:: {{ item.get("title", "Get the data") }}
-                :img-top: {{ item.get("image", "https://www.gifpng.com/300x200") }}
-                :link: {{ item.get("link") }}
+             {% for item in valid_explorer %}
+             .. grid-item-card:: {{ item.title or explorer_label }}
+                :img-top: {{ item.image or "https://www.gifpng.com/300x200" }}
+                :link: {{ item.link }}
 
-                {{ item.get("name", "Data") }}
+                {{ item.name or explorer_default_name }}
              {% endfor %}
 
-             {% for item in data["stac"] %}
-             .. grid-item-card:: {{ item.get("title", "Get via STAC") }}
-                :img-top: {{ item.get("image", "https://www.gifpng.com/300x200") }}
-                :link: {{ item.get("link") }}
+             {% for item in valid_data %}
+             .. grid-item-card:: {{ item.title or data_label }}
+                :img-top: {{ item.image or "https://www.gifpng.com/300x200" }}
+                :link: {{ item.link }}
 
-                {{ item.get("name", "STAC") }}
+                {{ item.name or data_default_name }}
              {% endfor %}
 
-             {% for item in data["explorer"] %}
-             .. grid-item-card:: {{ item.get("title", "Explore data samples") }}
-                :img-top: {{ item.get("image", "https://www.gifpng.com/300x200") }}
-                :link: {{ item.get("link") }}
+             {% for item in valid_code_samples %}
+             .. grid-item-card:: {{ item.title or code_sample_label }}
+                :img-top: {{ item.image or "https://www.gifpng.com/300x200" }}
+                :link: {{ item.link }}
 
-                {{ item.get("name", "Data Explorer") }}
+                {{ item.name or code_sample_default_name }}
              {% endfor %}
 
-             {% for item in data["sandbox"] %}
-             .. grid-item-card:: {{ item.get("title", "Play with the sandbox") }}
-                :img-top: {{ item.get("image", "https://www.gifpng.com/300x200") }}
-                :link: {{ item.get("link") }}
+             {% for item in valid_web_services %}
+             .. grid-item-card:: {{ item.title or web_service_label }}
+                :img-top: {{ item.image or "https://www.gifpng.com/300x200" }}
+                :link: {{ item.link }}
 
-                {{ item.get("name", "Sandbox") }}
+                {{ item.name or web_service_default_name }}
              {% endfor %}
 
-             {% for item in data["ecat"] %}
-             .. grid-item-card:: {{ item.get("title", "Product catalogue") }}
-                :img-top: {{ item.get("image", "https://www.gifpng.com/300x200") }}
-                :link: https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/{{ item.get("id") }}
+             {% for item in valid_stac %}
+             .. grid-item-card:: {{ item.title or stac_label }}
+                :img-top: {{ item.image or "https://www.gifpng.com/300x200" }}
+                :link: {{ item.link }}
 
-                ecat {{ item.get("id") }}
+                {{ item.name or stac_default_name }}
              {% endfor %}
 
-             {% for item in data["web_services"] %}
-             .. grid-item-card:: {{ item.get("title", "Web service") }}
-                :img-top: {{ item.get("image", "https://www.gifpng.com/300x200") }}
-                :link: {{ item.get("link") }}
+             {% for item in valid_ecat %}
+             .. grid-item-card:: {{ item.title or ecat_label }}
+                :img-top: {{ item.image or "https://www.gifpng.com/300x200" }}
+                :link: https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/{{ item.id }}
 
-                {{ item.get("name", "Service") }}
-             {% endfor %}
-
-             {% for item in data["code_samples"] %}
-             .. grid-item-card:: {{ item.get("title", "Code sample") }}
-                :img-top: {{ item.get("image", "https://www.gifpng.com/300x200") }}
-                :link: {{ item.get("link") }}
-
-                {{ item.get("name", "Code") }}
+                eCat {{ item.id }}
              {% endfor %}
        {% endif %}
 
-       {% if data["parent_product"] %}
-       :Parent product(s): `{{ data["parent_product"]["name"] }} <{{ data["parent_product"]["link"] }}>`_
-       {% endif %}
-       {% if data["collection"] %}
-       :Collection: {{ data["collection"] }}
-       {% endif %}
-       {% if data["doi"] %}
-       :DOI: {{ data["doi"] }}
-       {% endif %}
-       {% if data["published"] and data["author"] %}
-       :Published: {{ data["published"] }} ({{ data["author"] }})
-       {% elif data["published"] %}
-       :Published: {{ data["published"] }}
-       {% elif data["author"] %}
-       :Published by: {{ data["author"] }}
-       {% endif %}
+       .. rubric:: Key details
+          :name: key-details
+
+       {% if data.parent_products %}
+       :Parent product(s): `{{ data.parent_products.name }} <{{ data.parent_products.link }}>`_
+       {%- endif %}
+       {%- if data.collection.name and data.collection.link %}
+       :Collection: `{{ data.collection.name }} <{{ data.collection.link }}>`_
+       {%- elif data.collection.name %}
+       :Collection: {{ data.collection.name }}
+       {%- endif %}
+       {%- if valid_dois %}
+       :{{ dois_label }}: {{ valid_dois | join(", ") }}
+       {%- endif %}
+       {%- if data.published %}
+       :Last updated: {{ data.published }}
+       {%- endif %}
+       {%- if valid_tags %}
+       :Tags: {{ valid_tags | join(", ") }}
+       {%- endif %}
+
+       .. include:: _publications.md
+          :parser: myst_parser.sphinx_
 
     .. tab-item:: Access
        :name: access-tab
 
        .. container:: table-of-contents
-
-          **In this section:**
 
           .. container::
              :name: access-table-of-contents
@@ -165,81 +217,87 @@
              |nbsp|
 
        .. rubric:: Access the data
-          :name: access-the-data
+          :name: access-the-data-table
 
-       {% if data["is_latest_version"] and (data["maps"] or data["data"] or data["stac"] or data["explorer"] or data["sandbox"] or data["ecat"] or data["web_services"] or data["code_samples"]) %}
+       {% if is_latest_version and has_access_data %}
        .. list-table::
           :name: access-table
 
-          {% if data["maps"] %}
-          * - **See the map**
-            - {% for item in data["maps"] %}
-              * `{{ item.get("name", "Map") }} <{{ item.get("link") }}>`_
+          {% if valid_maps %}
+          * - **{{ map_label }}**
+            - {% for item in valid_maps %}
+              * `{{ item.name or map_default_name }} <{{ item.link }}>`_
               {% endfor %}
-            - Learn how to `use DEA Maps <{{ config.html_context["learn_access_dea_maps_link"] }}>`_.
+            - Learn how to `use DEA Maps </setup/dea_maps.html>`_.
           {% endif %}
 
-          {% if data["data"] %}
-          * - **Get the data**
-            - {% for item in data["data"] %}
-              * `{{ item.get("name", "Data") }} <{{ item.get("link") }}>`_
+          {% if valid_explorer %}
+          * - **{{ explorer_label }}**
+            - {% for item in valid_explorer %}
+              * `{{ item.name or explorer_default_name }} <{{ item.link }}>`_
               {% endfor %}
             -
           {% endif %}
 
-          {% if data["stac"] %}
-          * - **Get via STAC**
-            - {% for item in data["stac"] %}
-              * `{{ item.get("name", "STAC") }} <{{ item.get("link") }}>`_
+          {% if valid_data %}
+          * - **{{ data_label }}**
+            - {% for item in valid_data %}
+              * `{{ item.name or data_default_name }} <{{ item.link }}>`_
               {% endfor %}
-            - Learn how to `access and stream the data using STAC <{{ config.html_context["learn_access_stac_link"] }}>`_.
+            - Learn how to `access the data via AWS </about/faq.html#how-do-i-download-data-from-dea>`_.
           {% endif %}
 
-          {% if data["explorer"] %}
-          * - **Explore data samples**
-            - {% for item in data["explorer"] %}
-              * `{{ item.get("name", "Data Explorer") }} <{{ item.get("link") }}>`_
+          {% if valid_code_samples %}
+          * - **{{ code_sample_label }}**
+            - {% for item in valid_code_samples %}
+              * `{{ item.name or code_sample_default_name }} <{{ item.link }}>`_
               {% endfor %}
-            - Learn how to `access the data via AWS <{{ config.html_context["learn_access_data_explorer_link"] }}>`_.
+            - Learn how to `connect to the DEA Sandbox </setup/Sandbox/sandbox.html>`_.
           {% endif %}
 
-          {% if data["sandbox"] %}
-          * - **Play with the sandbox**
-            - {% for item in data["sandbox"] %}
-              * `{{ item.get("name", "Sandbox") }} <{{ item.get("link") }}>`_
+          {% if valid_web_services %}
+          * - **{{ web_service_label }}**
+            - {% for item in valid_web_services %}
+              * `{{ item.name or web_service_default_name }} <{{ item.link }}>`_
+              {% endfor %}
+            - Learn how to `connect to DEA's web services </setup/gis/README.html>`_.
+          {% endif %}
+
+          {% if valid_stac %}
+          * - **{{ stac_label }}**
+            - {% for item in valid_stac %}
+              * `{{ item.name or stac_default_name }} <{{ item.link }}>`_
+              {% endfor %}
+            - Learn how to `access and stream the data using STAC </notebooks/How_to_guides/Downloading_data_with_STAC.html>`_.
+          {% endif %}
+
+          {% if valid_ecat %}
+          * - **{{ ecat_label }}**
+            - {% for item in valid_ecat %}
+              * `ecat {{ item.id }} <https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/{{ item.id }}>`_
               {% endfor %}
             -
           {% endif %}
-
-          {% if data["ecat"] %}
-          * - **Product catalogue**
-            - {% for item in data["ecat"] %}
-              * `ecat {{ item.get("id") }} <https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/{{ item.get("id") }}>`_
-              {% endfor %}
-            -
-          {% endif %}
-
-          {% if data["web_services"] %}
-          * - **Web service**
-            - {% for item in data["web_services"] %}
-              * `{{ item.get("name", "Web service") }} <{{ item.get("link") }}>`_
-              {% endfor %}
-            - Learn how to `connect to DEA's web services <{{ config.html_context["learn_access_web_service_link"] }}>`_.
-          {% endif %}
-
-          {% if data["code_samples"] %}
-          * - **Code sample**
-            - {% for item in data["code_samples"] %}
-              * `{{ item.get("name", "Code") }} <{{ item.get("link") }}>`_
-              {% endfor %}
-            -
-          {% endif %}
-       {% else %}
-       {% if not data["is_latest_version"] %}
-       You can find the data source links in the `latest version of the product <{{ data["latest_version_link"] }}>`_.
        {% else %}
        There are no data source links available at the present time.
        {% endif %}
+
+       {% if valid_files %}
+
+       .. rubric:: Additional files
+          :name: additional-files
+
+       .. list-table::
+          :name: additional-files-table
+
+          {% for item in valid_files %}
+          * - `{{ item.name or item.link }} <{{ item.link }}>`_
+            - {{ item.description }}
+          {% endfor %}
+       {% endif %}
+
+       {% if not is_latest_version %}
+       You can find the data source links in the `latest version of the product <{{ data.latest_version_link }}>`_.
        {% endif %}
 
        .. include:: _access.md
@@ -249,8 +307,6 @@
        :name: details-tab
 
        .. container:: table-of-contents
-
-          **In this section:**
 
           .. container::
              :name: details-table-of-contents
@@ -265,8 +321,6 @@
 
        .. container:: table-of-contents
 
-          **In this section:**
-
           .. container::
              :name: quality-table-of-contents
 
@@ -280,28 +334,26 @@
 
        .. container:: table-of-contents
 
-          **In this section:**
-
           .. container::
              :name: history-table-of-contents
 
              |nbsp|
 
-       {% if not data["is_latest_version"] %}
-       You can find the history in the `latest version of the product <{{ data["latest_version_link"] }}>`_.
+       {% if not is_latest_version %}
+       You can find the history in the `latest version of the product <{{ data.latest_version_link }}>`_.
        {% else %}
        .. rubric:: Old versions
           :name: old-versions
 
-       {% if data["old_versions"] %}
+       {% if valid_old_versions %}
 
        View previous versions of this data product.
 
        .. list-table::
 
-          {% for item in data["old_versions"] %}
-          * - `v{{ item.get("version") }}: {{ item.get("name") }} </data/old-versions/{{ item.get("slug") }}>`_
-            - {{ item.get("release_date") }}
+          {% for item in valid_old_versions %}
+          * - `v{{ item.version }}: {{ item.name }} </data/old-versions/{{ item.slug }}>`_
+            - {{ item.release_date or "" }}
           {% endfor %}
        {% else %}
        No old versions available.
@@ -316,8 +368,6 @@
 
        .. container:: table-of-contents
 
-          **In this section:**
-
           .. container::
              :name: credits-table-of-contents
 
@@ -325,6 +375,8 @@
     
        .. include:: _credits.md
           :parser: myst_parser.sphinx_
+
+       |copyright| Commonwealth of Australia (Geoscience Australia).
 
 .. raw:: html
 

@@ -1,0 +1,103 @@
+# Unused data migrated from the CMI. May be outdated.
+
+# General
+
+cmi_node: 639
+cmi_url: https://cmi.ga.gov.au/data-products/dea/639/dea-water-observations-provisional-sentinel-2-nrt
+published_date: '2023-04-06'
+author: J. M. @ ga.gov.au
+created: 2021-05-04T15:20:36+1000
+
+# Basic
+
+program: dea
+theme: Inland water
+catalogue: DEA Water Observations (WOfS)
+is_deprecated: null
+is_primary_record: null
+project_leader: N. M. @ ga.gov.au
+branch_head: M. W. @ ga.gov.au
+related_items:
+  - DEA Water Observations (Landsat)
+  - ' DEA Surface Reflectance (Sentinel-2A MSI)'
+anzsrc_research_code: null
+
+# Access
+
+map_names:
+  - DEA Maps
+ecat_url: https://dx.doi.org/10.26186/146257
+doi_url: https://dx.doi.org/10.26186/146257
+open_data_cube_configuration:
+  - https://github.com/GeoscienceAustralia/dea-config/blob/master/products/inland_water/s2_wo/ga_s2_nrt_c3_wo.odc-product.yaml
+security_classification: Unclassified
+time_span_full:
+  start: null
+  end: null
+
+# Details
+
+relevant_websites: null
+
+# Processing
+
+data_sources:
+  - ' DEA Surface Reflectance (Sentinel-2A MSI)'
+  - SRTM DSM/DEM data
+major_algorithms:
+  - Water Observations from Space Detection Algorithm
+schema_spatial_extent:
+  temporal_extent:
+    start: null
+    end: null
+  min_longitude: null
+  max_longitude: null
+  min_latitude: null
+  max_latitude: null
+  coordinate_reference_system: 'WGS 84 (EPSG: 4326)'
+  coordinate_reference_system_units: null
+  cell_size_x: null
+  cell_size_y: null
+  pixel_origin: null
+  spatial_extent:
+    geo_type: Polygon
+    lat: '-26.500000000000'
+    long: '133.000000000000'
+    left: '112.000000000000'
+    top: '-9.000000000000'
+    right: '154.000000000000'
+    bottom: '-44.000000000000'
+    geohash: null
+
+# Media
+
+media: null
+case_studies: null
+header_image_alt: Sentinel 2 Provisional WO for flooding in the Gulf of Carpentaria, March 2023
+files: null
+
+# Credits
+
+owners:
+  - Commonwealth of Australia (Geoscience Australia)
+custodians:
+  - Commonwealth of Australia (Geoscience Australia)
+principal_contributors:
+  - N. M.
+  - J. M.
+  - E. T.
+subject_matter_experts:
+  - N. M.
+publishing_entities:
+  - Commonwealth of Australia (Geoscience Australia)
+metadata_contacts:
+  - Geoscience Australia - Team Leader, Product Management, Operations Section NEMO
+media_contacts:
+  - Geoscience Australia - GA Media Hotline
+rights_statement: © Commonwealth of Australia (Geoscience Australia) 2023. [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/.).
+data_source_contacts:
+  - 'Geoscience Australia - Team Leader, Applications and Systems Support, NEMO '
+approvers_checklist: null
+approvers_checklist_hprm_reference: D2023-30397
+pmp_hprm_reference: D2023-30400
+

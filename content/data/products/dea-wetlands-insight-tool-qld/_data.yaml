@@ -1,0 +1,53 @@
+# Overview
+
+title: DEA Wetlands Insight Tool (QLD)
+long_title: Wetlands Insight Tool Queensland Wetlands Polygons
+header_image: ./images/PlaceholderWIT.PNG
+version: 1.0.0
+product_ids: null
+update_frequency: As needed
+is_latest_version: true
+product_type: Data service
+spatial_data_type: Vector
+collection:
+  name: Geoscience Australia Landsat Collection 2 (DEPRECATED)
+  link: null
+collection_slug: geoscience-australia-landsat-collection-2-deprecated
+dois: null
+time_span:
+  start: 4 Dec 2020
+  end: 31 Dec 2022
+parent_products:
+  name: null
+  link: null
+nci:
+  name: null
+  code: null
+
+# Access
+
+maps:
+  - link: https://wetlandinfo.des.qld.gov.au/wetlands/
+    name: null
+    image: null
+
+explorers: null
+
+data:
+  - link: https://data.dea.ga.gov.au/?prefix=projects/Wetlands_Insight_Tool/QLD/
+    name: Digital Earth Australia - Public Data
+    image: null
+
+code_examples: null
+
+web_services: null
+
+ecat:
+  - id: '144795'
+
+tags:
+  - geoscience_australia_landsat_collection_2_deprecated
+  - landsat
+  - wetlands
+  - tasseled_cap
+
