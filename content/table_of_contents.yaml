@@ -2,7 +2,18 @@ root: index
 entries:
   - file: data/index
     subtrees:
-      # - caption: Baseline satellite data
+      - caption: Baseline satellite data
+        entries:
+          - file: data/themes/baseline-satellite-data/index
+            title: All
+
+          - file: data/catalogues/dea-surface-reflectance/index
+            entries:
+              - file: data/catalogues/landsat-5-analysis-ready-data/index
+                entries:
+                  - file: data/products/dea-surface-reflectance-landsat-5-tm/index
+                  - file: data/products/dea-surface-reflectance-nbar-landsat-5-tm/index
+                  - file: data/products/dea-surface-reflectance-oa-landsat-5-tm/index
 
       - caption: Land and Vegetation
         entries:
@@ -80,6 +91,10 @@ entries:
 
   - file: data/old-versions/index
     entries:
+      - glob: data/old-versions/dea-coastlines-*/index
+      - glob: data/old-versions/dea-coastlines-*/index
+      - glob: data/old-versions/dea-coastlines-*/index
+      - glob: data/old-versions/dea-coastlines-*/index
       - glob: data/old-versions/dea-coastlines-*/index
       - glob: data/old-versions/dea-coastlines-*/index
       - glob: data/old-versions/dea-coastlines-*/index
