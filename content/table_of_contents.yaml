@@ -32,6 +32,11 @@ entries:
                   - file: data/products/dea-surface-reflectance-nbar-landsat-9/index
                   - file: data/products/dea-surface-reflectance-nbart-landsat-9/index
                   - file: data/products/dea-surface-reflectance-oa-landsat-9/index
+              - file: data/catalogues/sentinel-2a-analysis-ready-data/index
+                entries:
+                  - file: data/products/dea-surface-reflectance-sentinel-2a-msi/index
+                  - file: data/products/dea-surface-reflectance-nbart-sentinel-2a-msi/index
+                  - file: data/products/dea-surface-reflectance-oa-sentinel-2a-msi/index
 
       - caption: Land and Vegetation
         entries:
@@ -109,6 +114,7 @@ entries:
 
   - file: data/old-versions/index
     entries:
+      - glob: data/old-versions/dea-coastlines-*/index
       - glob: data/old-versions/dea-coastlines-*/index
       - glob: data/old-versions/dea-coastlines-*/index
       - glob: data/old-versions/dea-coastlines-*/index
