@@ -12,37 +12,59 @@ entries:
               - file: data/catalogues/landsat-5-analysis-ready-data/index
                 entries:
                   - file: data/products/dea-surface-reflectance-landsat-5-tm/index
+                    title: Landsat 5 Surface Reflectance
                   - file: data/products/dea-surface-reflectance-nbar-landsat-5-tm/index
+                    title: Landsat 5 Surface Reflectance NBAR
                   - file: data/products/dea-surface-reflectance-nbart-landsat-5-tm/index
+                    title: Landsat 5 Surface Reflectance NBART
                   - file: data/products/dea-surface-reflectance-oa-landsat-5-tm/index
+                    title: Landsat 5 Observational Attributes
               - file: data/catalogues/landsat-7-analysis-ready-data/index
                 entries:
                   - file: data/products/dea-surface-reflectance-landsat-7-etm/index
+                    title: Landsat 7 Surface Reflectance
                   - file: data/products/dea-surface-reflectance-nbar-landsat-7-etm/index
+                    title: Landsat 7 Surface Reflectance NBAR
                   - file: data/products/dea-surface-reflectance-nbart-landsat-7-etm/index
+                    title: Landsat 7 Surface Reflectance NBART
                   - file: data/products/dea-surface-reflectance-oa-landsat-7-etm/index
+                    title: Landsat 7 Observational Attributes
               - file: data/catalogues/landsat-8-analysis-ready-data/index
                 entries:
                   - file: data/products/dea-surface-reflectance-landsat-8-oli-tirs/index
+                    title: Landsat 8 Surface Reflectance
                   - file: data/products/dea-surface-reflectance-nbar-landsat-8-oli-tirs/index
+                    title: Landsat 8 Surface Reflectance NBAR
                   - file: data/products/dea-surface-reflectance-nbart-landsat-8-oli-tirs/index
+                    title: Landsat 8 Surface Reflectance NBART
                   - file: data/products/dea-surface-reflectance-oa-landsat-8-oli-tirs/index
+                    title: Landsat 8 Observational Attributes
               - file: data/catalogues/landsat-9-analysis-ready-data/index
                 entries:
                   - file: data/products/dea-surface-reflectance-landsat-9/index
+                    title: Landsat 9 Surface Reflectance
                   - file: data/products/dea-surface-reflectance-nbar-landsat-9/index
+                    title: Landsat 9 Surface Reflectance NBAR
                   - file: data/products/dea-surface-reflectance-nbart-landsat-9/index
+                    title: Landsat 9 Surface Reflectance NBART
                   - file: data/products/dea-surface-reflectance-oa-landsat-9/index
+                    title: Landsat 9 Observational Attributes
               - file: data/catalogues/sentinel-2a-analysis-ready-data/index
                 entries:
                   - file: data/products/dea-surface-reflectance-sentinel-2a-msi/index
+                    title: Sentinel-2A Surface Reflectance
                   - file: data/products/dea-surface-reflectance-nbart-sentinel-2a-msi/index
+                    title: Sentinel-2A Surface Reflectance NBART
                   - file: data/products/dea-surface-reflectance-oa-sentinel-2a-msi/index
+                    title: Sentinel-2A Observational Attributes
               - file: data/catalogues/sentinel-2b-analysis-ready-data/index
                 entries:
                   - file: data/products/dea-surface-reflectance-sentinel-2b-msi/index
+                    title: Sentinel-2B Surface Reflectance
                   - file: data/products/dea-surface-reflectance-nbart-sentinel-2b-msi/index
+                    title: Sentinel-2B Surface Reflectance NBART
                   - file: data/products/dea-surface-reflectance-oa-sentinel-2b-msi/index
+                    title: Sentinel-2B Observational Attributes
           - file: data/products/australian-national-spectral-database/index
 
       - caption: Land and Vegetation
