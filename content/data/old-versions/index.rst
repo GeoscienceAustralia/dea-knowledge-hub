@@ -1,2 +1,2 @@
 .. datatemplate:yaml:: ./_data.yaml
-   :template: data-old-versions-page-v1.rst
+   :template: old-versions-v1.rst

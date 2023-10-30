@@ -1,2 +1,2 @@
 .. datatemplate:yaml:: ./_data.yaml
-   :template: data-category-page-v1.rst
+   :template: theme-v1.rst
