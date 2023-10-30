@@ -20,6 +20,18 @@ entries:
                   - file: data/products/dea-surface-reflectance-nbar-landsat-7-etm/index
                   - file: data/products/dea-surface-reflectance-nbart-landsat-7-etm/index
                   - file: data/products/dea-surface-reflectance-oa-landsat-7-etm/index
+              - file: data/catalogues/landsat-8-analysis-ready-data/index
+                entries:
+                  - file: data/products/dea-surface-reflectance-landsat-8-oli-tirs/index
+                  - file: data/products/dea-surface-reflectance-nbar-landsat-8-oli-tirs/index
+                  - file: data/products/dea-surface-reflectance-nbart-landsat-8-oli-tirs/index
+                  - file: data/products/dea-surface-reflectance-oa-landsat-8-oli-tirs/index
+              - file: data/catalogues/landsat-9-analysis-ready-data/index
+                entries:
+                  - file: data/products/dea-surface-reflectance-landsat-9/index
+                  - file: data/products/dea-surface-reflectance-nbar-landsat-9/index
+                  - file: data/products/dea-surface-reflectance-nbart-landsat-9/index
+                  - file: data/products/dea-surface-reflectance-oa-landsat-9/index
 
       - caption: Land and Vegetation
         entries:
@@ -97,6 +109,8 @@ entries:
 
   - file: data/old-versions/index
     entries:
+      - glob: data/old-versions/dea-coastlines-*/index
+      - glob: data/old-versions/dea-coastlines-*/index
       - glob: data/old-versions/dea-coastlines-*/index
       - glob: data/old-versions/dea-coastlines-*/index
       - glob: data/old-versions/dea-coastlines-*/index
