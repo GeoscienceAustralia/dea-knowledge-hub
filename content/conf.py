@@ -9,6 +9,7 @@ html_static_path = ['_static', '_files']
 templates_path = ['_layout', '_templates']
 exclude_patterns = [
     "**/_*",
+    "**/unpublished-product",
     # "notebooks",
 ]
 html_extra_path = ['robots.txt']
