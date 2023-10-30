@@ -6,7 +6,7 @@ author = 'Geoscience Australia'
 version = '0.1'
 
 html_static_path = ['_static', '_files']
-templates_path = ['_templates']
+templates_path = ['_layout', '_templates']
 exclude_patterns = [
     "**/_*",
     # "notebooks",
