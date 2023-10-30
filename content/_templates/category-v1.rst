@@ -4,6 +4,6 @@
 {{ data.title }}
 ===================================================================
 
-This catalogue contains the following products.
+This category contains the following products.
 
 .. tableofcontents::
