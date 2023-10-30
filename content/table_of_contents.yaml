@@ -42,7 +42,7 @@ entries:
                   - file: data/products/dea-surface-reflectance-sentinel-2b-msi/index
                   - file: data/products/dea-surface-reflectance-nbart-sentinel-2b-msi/index
                   - file: data/products/dea-surface-reflectance-oa-sentinel-2b-msi/index
-      - file: data/products/australian-national-spectral-database/index
+          - file: data/products/australian-national-spectral-database/index
 
       - caption: Land and Vegetation
         entries:
