@@ -376,5 +376,5 @@
 
 .. raw:: html
 
-   <script type="text/javascript" src="/_permanent_files/scripts/tocbot.min.js"></script>
-   <script type="text/javascript" src="/_permanent_files/scripts/tocbot-data-product.js" /></script>
+   <script type="text/javascript" src="/_static/scripts/tocbot.min.js"></script>
+   <script type="text/javascript" src="/_static/scripts/tocbot-data-product.js" /></script>

@@ -5,7 +5,7 @@ copyright = f'{datetime.date.today().year}, Geoscience Australia'
 author = 'Geoscience Australia'
 version = '0.1'
 
-html_static_path = ['_permanent_files', '_files']
+html_static_path = ['_static', '_files']
 templates_path = ['_templates']
 exclude_patterns = [
     "**/_*",

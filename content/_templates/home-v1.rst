@@ -4,7 +4,7 @@
 {{ data.title }}
 ===================================================================
 
-.. image:: /_permanent_files/images/home-page-hero.png
+.. image:: /_files/home-page/home-page-hero.png
    :alt: Digital Earth Australia logo
 
 .. rubric:: DEA Documentation and Metadata Hub
