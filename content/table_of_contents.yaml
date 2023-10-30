@@ -121,14 +121,3 @@ entries:
   - file: data/old-versions/index
     entries:
       - glob: data/old-versions/dea-coastlines-*/index
-      - glob: data/old-versions/dea-coastlines-*/index
-      - glob: data/old-versions/dea-coastlines-*/index
-      - glob: data/old-versions/dea-coastlines-*/index
-      - glob: data/old-versions/dea-coastlines-*/index
-      - glob: data/old-versions/dea-coastlines-*/index
-      - glob: data/old-versions/dea-coastlines-*/index
-      - glob: data/old-versions/dea-coastlines-*/index
-      - glob: data/old-versions/dea-coastlines-*/index
-      - glob: data/old-versions/dea-coastlines-*/index
-      - glob: data/old-versions/dea-coastlines-*/index
-      - glob: data/old-versions/dea-coastlines-*/index
