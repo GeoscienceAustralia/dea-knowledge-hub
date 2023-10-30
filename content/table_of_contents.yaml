@@ -13,6 +13,7 @@ entries:
                 entries:
                   - file: data/products/dea-surface-reflectance-landsat-5-tm/index
                   - file: data/products/dea-surface-reflectance-nbar-landsat-5-tm/index
+                  - file: data/products/dea-surface-reflectance-nbart-landsat-5-tm/index
                   - file: data/products/dea-surface-reflectance-oa-landsat-5-tm/index
               - file: data/catalogues/landsat-7-analysis-ready-data/index
                 entries:
