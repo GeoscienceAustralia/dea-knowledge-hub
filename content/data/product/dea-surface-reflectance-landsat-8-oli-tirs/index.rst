@@ -1,2 +1,2 @@
-.. datatemplate:yaml:: ./_data.yaml
+.. datatemplate:yaml:: _data.yaml
    :template: product-v1.rst

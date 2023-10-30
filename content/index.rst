@@ -1,2 +1,2 @@
-.. datatemplate:yaml:: ./_data.yaml
+.. datatemplate:yaml:: _data.yaml
    :template: home-v1.rst
