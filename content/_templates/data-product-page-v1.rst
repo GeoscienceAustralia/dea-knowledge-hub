@@ -42,8 +42,6 @@
 .. |nbsp| unicode:: 0xA0
    :trim:
 
-.. |copyright| unicode:: 0xA9
-
 .. rst-class:: data-product-page
 
 ================================================
@@ -375,8 +373,6 @@
     
        .. include:: _credits.md
           :parser: myst_parser.sphinx_
-
-       |copyright| Commonwealth of Australia (Geoscience Australia).
 
 .. raw:: html
 
