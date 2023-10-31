@@ -4,7 +4,6 @@
 {% set valid_data = data.data | selectattr("link",  "!=", None) | list %}
 {% set valid_explorer = data.explorer | selectattr("link",  "!=", None) | list %}
 {% set valid_web_services = data.web_services | selectattr("link",  "!=", None) | list %}
-{% set valid_stac = data.stac | selectattr("link",  "!=", None) | list %}
 {% set valid_ecat = data.ecat | selectattr("link",  "!=", None) | list %}
 {% set valid_code_samples = data.code_examples | selectattr("link",  "!=", None) | list %}
 {% set valid_files = data.files | selectattr("link",  "!=", None) | list %}
@@ -15,7 +14,6 @@
 {% set valid_tags = data.tags | select("!=", None) | list %}
 
 {% set map_label = "See it on a map" %}
-{% set stac_label = "Get via STAC" %}
 {% set explorer_label = "Explore data samples" %}
 {% set data_label = "Get the data online" %}
 {% set ecat_label = "Product catalogue" %}
@@ -26,10 +24,9 @@
 {% set data_default_name = "DEA Data" %}
 {% set explorer_default_name = "Data Explorer" %}
 {% set web_service_default_name = "Web service" %}
-{% set stac_default_name = "STAC" %}
 {% set code_sample_default_name = "Code sample" %}
 
-{% set has_access_data = valid_maps or valid_data or valid_explorer or valid_web_services or valid_stac or valid_ecat or valid_code_samples %}
+{% set has_access_data = valid_maps or valid_data or valid_explorer or valid_web_services or valid_ecat or valid_code_samples %}
 
 {% set pretty_version = "v" + data.version %}
 {% set tab_title = data.title if is_latest_version else pretty_version + ": " + data.title %}
@@ -125,49 +122,42 @@
              :gutter: 3
 
              {% for item in valid_maps %}
-             .. grid-item-card:: :octicon:`book` |nbsp| |nbsp| {{ item.title or map_label }}
+             .. grid-item-card:: :fas:`map` {{ item.title or map_label }}
                 :link: {{ item.link }}
 
                 {{ item.name or map_default_name }}
              {% endfor %}
 
              {% for item in valid_explorer %}
-             .. grid-item-card:: :octicon:`book` |nbsp| |nbsp| {{ item.title or explorer_label }}
+             .. grid-item-card:: :fas:`magnifying-glass` {{ item.title or explorer_label }}
                 :link: {{ item.link }}
 
                 {{ item.name or explorer_default_name }}
              {% endfor %}
 
              {% for item in valid_data %}
-             .. grid-item-card:: :octicon:`book` |nbsp| |nbsp| {{ item.title or data_label }}
+             .. grid-item-card:: :fas:`database` {{ item.title or data_label }}
                 :link: {{ item.link }}
 
                 {{ item.name or data_default_name }}
              {% endfor %}
 
              {% for item in valid_code_samples %}
-             .. grid-item-card:: :octicon:`book` |nbsp| |nbsp| {{ item.title or code_sample_label }}
+             .. grid-item-card:: :fas:`code` {{ item.title or code_sample_label }}
                 :link: {{ item.link }}
 
                 {{ item.name or code_sample_default_name }}
              {% endfor %}
 
              {% for item in valid_web_services %}
-             .. grid-item-card:: :octicon:`book` |nbsp| |nbsp| {{ item.title or web_service_label }}
+             .. grid-item-card:: :fas:`globe` {{ item.title or web_service_label }}
                 :link: {{ item.link }}
 
                 {{ item.name or web_service_default_name }}
              {% endfor %}
 
-             {% for item in valid_stac %}
-             .. grid-item-card:: :octicon:`book` |nbsp| |nbsp| {{ item.title or stac_label }}
-                :link: {{ item.link }}
-
-                {{ item.name or stac_default_name }}
-             {% endfor %}
-
              {% for item in valid_ecat %}
-             .. grid-item-card:: :octicon:`book` |nbsp| |nbsp| {{ item.title or ecat_label }}
+             .. grid-item-card:: :fas:`newspaper` {{ item.title or ecat_label }}
                 :link: https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/{{ item.id }}
 
                 eCat {{ item.id }}
@@ -255,14 +245,6 @@
               * `{{ item.name or web_service_default_name }} <{{ item.link }}>`_
               {% endfor %}
             - Learn how to `connect to DEA's web services </setup/gis/README.html>`_.
-          {% endif %}
-
-          {% if valid_stac %}
-          * - **{{ stac_label }}**
-            - {% for item in valid_stac %}
-              * `{{ item.name or stac_default_name }} <{{ item.link }}>`_
-              {% endfor %}
-            - Learn how to `access and stream the data using STAC </notebooks/How_to_guides/Downloading_data_with_STAC.html>`_.
           {% endif %}
 
           {% if valid_ecat %}
