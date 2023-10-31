@@ -167,23 +167,32 @@
        .. rubric:: Key details
           :name: key-details
 
-       {% if data.parent_products %}
-       :Parent product(s): `{{ data.parent_products.name }} <{{ data.parent_products.link }}>`_
-       {%- endif %}
-       {%- if data.collection.name and data.collection.link %}
-       :Collection: `{{ data.collection.name }} <{{ data.collection.link }}>`_
-       {%- elif data.collection.name %}
-       :Collection: {{ data.collection.name }}
-       {%- endif %}
-       {%- if valid_dois %}
-       :{{ dois_label }}: {{ valid_dois | join(", ") }}
-       {%- endif %}
-       {%- if data.published %}
-       :Last updated: {{ data.published }}
-       {%- endif %}
-       {%- if valid_tags %}
-       :Tags: {{ valid_tags | join(", ") }}
-       {%- endif %}
+       .. list-table::
+          :name: key-details-table
+
+          {% if data.parent_products %}
+          * - **Parent product(s)**
+            - `{{ data.parent_products.name }} <{{ data.parent_products.link }}>`_
+          {%- endif %}
+          {%- if data.collection.name and data.collection.link %}
+          * - **Collection**
+            - `{{ data.collection.name }} <{{ data.collection.link }}>`_
+          {%- elif data.collection.name %}
+          * - **Collection**
+            - {{ data.collection.name }}
+          {%- endif %}
+          {%- if valid_dois %}
+          * - **{{ dois_label }}**
+            - {{ valid_dois | join(", ") }}
+          {%- endif %}
+          {%- if data.published %}
+          * - **Last updated**
+            - {{ data.published }}
+          {%- endif %}
+          {%- if valid_tags %}
+          * - **Tags**
+            - {{ valid_tags | join(", ") }}
+          {%- endif %}
 
        .. include:: _overview_2.md
           :parser: myst_parser.sphinx_
