@@ -1,10 +1,10 @@
-.. rst-class:: theme-page
+.. rst-class:: cards-page
 
 ======================================================================================================================================================
 {{ data.title }}
 ======================================================================================================================================================
 
-{{ data.description if data.description else "This theme contains the following products." }}
+{{ data.description if data.description }}
 
 .. grid:: 4
     :gutter: 3
