@@ -4,7 +4,7 @@ title: Your title
 long_title: null
 header_image: ./images/thumbnail_vertical.png
 version: 0.0.0
-product_ids: null
+product_ids: null # List
 update_frequency: null
 is_latest_version: true
 product_type: null
@@ -13,7 +13,7 @@ collection:
   name: null
   link: null
 collection_slug: null
-dois: null
+dois: null # List
 time_span:
   start: null
   end: null
@@ -28,14 +28,36 @@ nci:
 
 maps: null
 
+  # - link: https://example.com
+  #   name: null
+  #   image: null
+
 explorers: null
+
+  # - link: https://example.com
+  #   name: null
+  #   image: null
 
 data: null
 
+  # - link: https://example.com
+  #   name: null
+  #   image: null
+
 code_examples: null
+
+  # - link: https://example.com
+  #   name: null
+  #   image: null
 
 web_services: null
 
+  # - link: https://example.com
+  #   name: null
+  #   image: null
+
 ecat: null
 
-tags: null
+  # - id: 000000
+
+tags: null # List
