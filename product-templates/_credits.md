@@ -9,8 +9,10 @@ Contains modified Copernicus Sentinel data [this Year].
 
 % NOT OPTIONAL
 % Please check whether this is correct for your product and update if required.
-## License and copyright
-
-[Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
+## Licence and copyright
 
 &copy;Commonwealth of Australia (Geoscience Australia).
+
+Released under [Creative Commons Attribution 4.0 International Licence](https://creativecommons.org/licenses/by/4.0/).
+
+
