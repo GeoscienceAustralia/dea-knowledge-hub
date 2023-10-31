@@ -39,7 +39,7 @@ myst_heading_anchors = 1
 
 external_toc_path = "table_of_contents.yaml"
 
-rediraffe_redirects = "redirects.txt"
+# rediraffe_redirects = "redirects.txt"
 
 sitemap_url_scheme = "{link}"
 
@@ -62,8 +62,6 @@ html_theme_options = {
     "show_prev_next": False,
     "header_links_before_dropdown": 2,
 }
-
-suppress_warnings = ['myst.header']
 
 html_context = {
     'google_analytics_ga4_tag': 'G-0000000000', # G-4B9D450HR4
