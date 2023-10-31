@@ -142,6 +142,6 @@ entries:
   #   - file: notebooks/Tools/README
   #     title: Tools
 
-  - file: data/old-version-product/index
-    entries:
-      - glob: data/old-version-product/dea-coastlines-*/index
+  # - file: data/old-version-product/index
+  #   entries:
+  #     - glob: data/old-version-product/dea-coastlines-*/index
