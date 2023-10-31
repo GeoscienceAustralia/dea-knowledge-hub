@@ -1,12 +1,12 @@
 # Overview
 
-title: null
+title: Your title
 long_title: null
-header_image: null
-version: null
+header_image: ./images/thumbnail_vertical.png
+version: 0.0.0
 product_ids: null
 update_frequency: null
-is_latest_version: null
+is_latest_version: true
 product_type: null
 spatial_data_type: null
 collection:
