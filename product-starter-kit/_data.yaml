@@ -61,3 +61,12 @@ web_services: null
 ecat: null
 
   # - id: 000000
+
+# Settings
+
+hide_overview: false
+hide_access: false
+hide_details: false
+hide_quality: false
+hide_history: false
+hide_credits: false
