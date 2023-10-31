@@ -125,56 +125,49 @@
              :gutter: 3
 
              {% for item in valid_maps %}
-             .. grid-item-card:: {{ item.title or map_label }}
-                :img-top: {{ item.image or "https://www.gifpng.com/300x200" }}
+             .. grid-item-card:: :octicon:`book` |nbsp| |nbsp| {{ item.title or map_label }}
                 :link: {{ item.link }}
 
                 {{ item.name or map_default_name }}
              {% endfor %}
 
              {% for item in valid_explorer %}
-             .. grid-item-card:: {{ item.title or explorer_label }}
-                :img-top: {{ item.image or "https://www.gifpng.com/300x200" }}
+             .. grid-item-card:: :octicon:`book` |nbsp| |nbsp| {{ item.title or explorer_label }}
                 :link: {{ item.link }}
 
                 {{ item.name or explorer_default_name }}
              {% endfor %}
 
              {% for item in valid_data %}
-             .. grid-item-card:: {{ item.title or data_label }}
-                :img-top: {{ item.image or "https://www.gifpng.com/300x200" }}
+             .. grid-item-card:: :octicon:`book` |nbsp| |nbsp| {{ item.title or data_label }}
                 :link: {{ item.link }}
 
                 {{ item.name or data_default_name }}
              {% endfor %}
 
              {% for item in valid_code_samples %}
-             .. grid-item-card:: {{ item.title or code_sample_label }}
-                :img-top: {{ item.image or "https://www.gifpng.com/300x200" }}
+             .. grid-item-card:: :octicon:`book` |nbsp| |nbsp| {{ item.title or code_sample_label }}
                 :link: {{ item.link }}
 
                 {{ item.name or code_sample_default_name }}
              {% endfor %}
 
              {% for item in valid_web_services %}
-             .. grid-item-card:: {{ item.title or web_service_label }}
-                :img-top: {{ item.image or "https://www.gifpng.com/300x200" }}
+             .. grid-item-card:: :octicon:`book` |nbsp| |nbsp| {{ item.title or web_service_label }}
                 :link: {{ item.link }}
 
                 {{ item.name or web_service_default_name }}
              {% endfor %}
 
              {% for item in valid_stac %}
-             .. grid-item-card:: {{ item.title or stac_label }}
-                :img-top: {{ item.image or "https://www.gifpng.com/300x200" }}
+             .. grid-item-card:: :octicon:`book` |nbsp| |nbsp| {{ item.title or stac_label }}
                 :link: {{ item.link }}
 
                 {{ item.name or stac_default_name }}
              {% endfor %}
 
              {% for item in valid_ecat %}
-             .. grid-item-card:: {{ item.title or ecat_label }}
-                :img-top: {{ item.image or "https://www.gifpng.com/300x200" }}
+             .. grid-item-card:: :octicon:`book` |nbsp| |nbsp| {{ item.title or ecat_label }}
                 :link: https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/{{ item.id }}
 
                 eCat {{ item.id }}
