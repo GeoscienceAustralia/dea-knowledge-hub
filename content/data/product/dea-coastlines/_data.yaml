@@ -49,14 +49,14 @@ code_examples:
 
 web_services:
   - link: https://geoserver.dea.ga.gov.au/geoserver/wms
-    name: 'WMS (layer name: dea:DEACoastlines)'
+    name: "WMS (layer name: dea:DEACoastlines)"
     image: null
   - link: http://geoserver.dea.ga.gov.au/geoserver/wfs?service=WFS&version=1.1.0
-    name: 'WFS (layer names: dea:shorelines_annual, dea:rates_of_change)'
+    name: "WFS (layer names: dea:shorelines_annual, dea:rates_of_change)"
     image: null
 
 ecat:
-  - id: '116268'
+  - id: "116268"
 
 tags:
   - geoscience_australia_landsat_collection_3
@@ -70,3 +70,11 @@ tags:
   - coastline_data
   - coastal_erosion
 
+# Settings
+
+hide_overview: false
+hide_access: false
+hide_details: false
+hide_quality: false
+hide_history: false
+hide_credits: false
