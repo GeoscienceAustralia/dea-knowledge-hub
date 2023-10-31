@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     // Move the section IDs to the H2 headings
 
     let sections = document.querySelectorAll(
-        ".data-product-page .sd-tab-content > section[id]"
+        ".product-page .sd-tab-content > section[id]"
     );
 
     for (let i = 0; i < sections.length; i++) {
@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     // Convert the 'rubrics' to H2 headings
 
     let rubrics = document.querySelectorAll(
-        ".data-product-page .sd-tab-content > p.rubric"
+        ".product-page .sd-tab-content > p.rubric"
     );
 
     for (let i = 0; i < rubrics.length; i++) {
@@ -43,8 +43,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
     for (let i = 0; i < tabs.length; i++) {
         let tab = tabs[i];
         tocbot.init({
-            contentSelector: `.data-product-page #${tab}-tab + .sd-tab-content`,
-            tocSelector: `.data-product-page #${tab}-table-of-contents`,
+            contentSelector: `.product-page #${tab}-tab + .sd-tab-content`,
+            tocSelector: `.product-page #${tab}-table-of-contents`,
             headingSelector: "h2"
         });
     }
