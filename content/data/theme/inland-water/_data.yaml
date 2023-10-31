@@ -1,9 +1,13 @@
 title: Inland water
+description: Browse inland water data products.
 
-catalogues:
-  - name: DEA Coastlines
-    id: dea-coastlines
-    products:
-      - name: DEA Coastlines
-        image: https://www.dea.ga.gov.au/_nuxt/image/3d7bbc.png
-        slug: dea-coastlines
+pages:
+  - name: DEA Wetlands Insight Tool
+    link: /data/category/dea-wetlands-insight-tool/
+    image: null
+  - name: DEA Water Observations
+    link: /data/category/dea-water-observations/
+    image: null
+  - name: DEA Waterbodies
+    link: /data/product/dea-waterbodies-landsat/
+    image: null

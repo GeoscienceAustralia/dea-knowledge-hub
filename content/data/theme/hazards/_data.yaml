@@ -1,9 +1,7 @@
 title: Hazards
+description: Browse hazards data products.
 
-catalogues:
-  - name: DEA Coastlines
-    id: dea-coastlines
-    products:
-      - name: DEA Coastlines
-        image: https://www.dea.ga.gov.au/_nuxt/image/3d7bbc.png
-        slug: dea-coastlines
+pages:
+  - name: DEA Hotspots
+    link: /data/product/dea-hotspots/
+    image: null
