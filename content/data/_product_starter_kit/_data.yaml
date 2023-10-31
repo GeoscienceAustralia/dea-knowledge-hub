@@ -1,0 +1,41 @@
+# Overview
+
+title: null
+long_title: null
+header_image: null
+version: null
+product_ids: null
+update_frequency: null
+is_latest_version: null
+product_type: null
+spatial_data_type: null
+collection:
+  name: null
+  link: null
+collection_slug: null
+dois: null
+time_span:
+  start: null
+  end: null
+parent_products:
+  name: null
+  link: null
+nci:
+  name: null
+  code: null
+
+# Access
+
+maps: null
+
+explorers: null
+
+data: null
+
+code_examples: null
+
+web_services: null
+
+ecat: null
+
+tags: null
