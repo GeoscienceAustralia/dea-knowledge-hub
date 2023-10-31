@@ -4,27 +4,25 @@ title: Your title
 long_title: null
 header_image: ./images/thumbnail_vertical.png
 version: 0.0.0
+product_ids: null # List
+update_frequency: null
 is_latest_version: true
 product_type: null
 spatial_data_type: null
-time_span:
-  start: null
-  end: null
-update_frequency: null
-product_ids: null # List
-
-parent_products:
-  name: null
-  link: null
 collection:
   name: null
   link: null
 collection_slug: null
 dois: null # List
+time_span:
+  start: null
+  end: null
+parent_products:
+  name: null
+  link: null
 nci:
   name: null
   code: null
-tags: null # List
 
 # Access
 
@@ -61,3 +59,5 @@ web_services: null
 ecat: null
 
   # - id: 000000
+
+tags: null # List
