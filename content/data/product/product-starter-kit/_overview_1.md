@@ -1,3 +1,0 @@
-## About
-
-Your content here.

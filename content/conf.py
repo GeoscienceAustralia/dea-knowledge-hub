@@ -34,10 +34,7 @@ extensions = [
     "sphinx_sitemap",
 ]
 
-myst_enable_extensions = [
-    "colon_fence",
-    "attrs_block",
-]
+myst_enable_extensions = ["colon_fence"]
 myst_heading_anchors = 1
 
 external_toc_path = "table_of_contents.yaml"
