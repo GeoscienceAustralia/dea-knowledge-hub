@@ -9,7 +9,7 @@ product_ids:
 update_frequency: As needed
 is_latest_version: true
 product_type: Baseline
-spatial_data_type: Vector
+spatial_data_type: Raster
 collection:
   name: Geoscience Australia Sentinel-2 Collection 3
   link: null

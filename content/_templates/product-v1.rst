@@ -110,7 +110,7 @@
 
              |nbsp|
 
-       .. include:: _overview.md
+       .. include:: _overview_1.md
           :parser: myst_parser.sphinx_
 
        .. rubric:: Access the data
@@ -201,7 +201,7 @@
        :Tags: {{ valid_tags | join(", ") }}
        {%- endif %}
 
-       .. include:: _publications.md
+       .. include:: _overview_2.md
           :parser: myst_parser.sphinx_
 
     .. tab-item:: Access
