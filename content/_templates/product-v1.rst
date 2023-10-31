@@ -170,7 +170,7 @@
        .. list-table::
           :name: key-details-table
 
-          {% if data.parent_products %}
+          {% if data.parent_products.name and data.parent_products.link %}
           * - **Parent product(s)**
             - `{{ data.parent_products.name }} <{{ data.parent_products.link }}>`_
           {%- endif %}
