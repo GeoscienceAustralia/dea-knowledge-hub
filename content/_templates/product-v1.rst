@@ -164,6 +164,54 @@
              {% endfor %}
        {% endif %}
 
+       .. container::
+          :name: access-cards-2
+
+          .. grid:: 5
+             :gutter: 3
+
+             {% for item in valid_maps %}
+             .. grid-item-card:: :fas:`map`
+                :link: {{ item.link }}
+
+                {{ item.name or map_default_name }}
+             {% endfor %}
+
+             {% for item in valid_explorer %}
+             .. grid-item-card:: :fas:`magnifying-glass`
+                :link: {{ item.link }}
+
+                {{ item.name or explorer_default_name }}
+             {% endfor %}
+
+             {% for item in valid_data %}
+             .. grid-item-card:: :fas:`database`
+                :link: {{ item.link }}
+
+                {{ item.name or data_default_name }}
+             {% endfor %}
+
+             {% for item in valid_code_samples %}
+             .. grid-item-card:: :fas:`code`
+                :link: {{ item.link }}
+
+                {{ item.name or code_sample_default_name }}
+             {% endfor %}
+
+             {% for item in valid_web_services %}
+             .. grid-item-card:: :fas:`globe`
+                :link: {{ item.link }}
+
+                {{ item.name or web_service_default_name }}
+             {% endfor %}
+
+             {% for item in valid_ecat %}
+             .. grid-item-card:: :fas:`newspaper`
+                :link: https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/{{ item.id }}
+
+                eCat {{ item.id }}
+             {% endfor %}
+
        .. rubric:: Key details
           :name: key-details
 

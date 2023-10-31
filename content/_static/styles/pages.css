@@ -148,6 +148,23 @@
     margin-right: 0.25rem;
 }
 
+.product-page #access-cards-2 .sd-card {
+    text-align: center;
+}
+
+.product-page #access-cards-2 .sd-card-body {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.product-page #access-cards-2 .svg-inline--fa {
+    font-size: 1.25rem;
+}
+
+.product-page #access-cards-2 .sd-card-text {
+    font-weight: bold;
+}
+
 /* .product-page ol#processing-steps-list { */
 /* } */
 /*  */
