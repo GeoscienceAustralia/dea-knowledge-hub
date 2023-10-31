@@ -4,7 +4,7 @@
 {{ data.title }}
 ======================================================================================================================================================
 
-{{ data.description if data.description }}
+{{ data.description if data.description else "I'm interested in..." }}
 
 .. grid:: 4
     :gutter: 3

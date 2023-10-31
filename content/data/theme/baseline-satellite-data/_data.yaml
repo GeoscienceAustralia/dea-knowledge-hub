@@ -1,9 +1,12 @@
 title: Baseline satellite data
 
-catalogues:
-  - name: DEA Coastlines
-    id: dea-coastlines
-    products:
-      - name: DEA Coastlines
-        image: https://www.dea.ga.gov.au/_nuxt/image/3d7bbc.png
-        slug: dea-coastlines
+title: Baseline satellite data
+description: Browse baseline satellite data products.
+
+pages:
+  - name: DEA Surface Reflectance
+    link: /data/category/dea-surface-reflectance/
+    image: null
+  - name: Australian National Spectral Database
+    link: /data/product/australian-national-spectral-database/
+    image: null
