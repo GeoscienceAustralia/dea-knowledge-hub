@@ -4,6 +4,6 @@
 {{ data.title }}
 ======================================================================================================================================================
 
-This category contains the following products.
+{{ data.description if data.description else "This category contains the following products." }}
 
 .. tableofcontents::

@@ -1,9 +1,16 @@
 title: Sea, Ocean, and Coast
+description: null
 
-catalogues:
+pages:
   - name: DEA Coastlines
-    id: dea-coastlines
-    products:
-      - name: DEA Coastlines
-        image: https://www.dea.ga.gov.au/_nuxt/image/3d7bbc.png
-        slug: dea-coastlines
+    link: /data/product/dea-coastlines
+    image: null
+  - name: DEA High and Low Tide Imagery
+    link: /data/product/dea-high-and-low-tide-imagery-landsat
+    image: null
+  - name: DEA Intertidal Elevation (NIDEM)
+    link: /data/product/dea-intertidal-elevation-landsat
+    image: null
+  - name: DEA Intertidal Extents (ITEM)
+    link: /data/product/dea-intertidal-extents-landsat
+    image: null

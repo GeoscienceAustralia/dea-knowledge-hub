@@ -1,21 +1,19 @@
 title: Data Products
+description: null
 
 themes:
   - name: Baseline satellite data
-    image: https://www.gifpng.com/300x200
-    slug: example
+    slug: baseline-satellite-data
+    image: null
   - name: Land and vegetation
-    image: https://www.gifpng.com/300x200
     slug: land-and-vegetation
+    image: null
   - name: Inland water
-    image: https://www.gifpng.com/300x200
-    slug: example
+    slug: inland-water
+    image: null
   - name: Sea, ocean, and coast
-    image: https://www.gifpng.com/300x200
     slug: sea-ocean-and-coast
+    image: null
   - name: Hazards
-    image: https://www.gifpng.com/300x200
-    slug: example
-  - name: Data services
-    image: https://www.gifpng.com/300x200
-    slug: example
+    slug: hazards
+    image: null

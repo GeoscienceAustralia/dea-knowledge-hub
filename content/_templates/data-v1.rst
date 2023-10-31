@@ -4,15 +4,13 @@
 {{ data.title }}
 ======================================================================================================================================================
 
+{{ data.description if data.description }}
+
 .. grid:: 4
     :gutter: 3
 
     {% for theme in data.themes %}
     .. grid-item-card:: {{ theme.name }}
        :img-top: {{ theme.image or "https://www.gifpng.com/300x200" }}
-       :link: themes/{{ theme.slug }}
+       :link: /data/themes/{{ theme.slug }}
     {% endfor %}
-
-.. dropdown:: List of all products
-
-   .. tableofcontents::

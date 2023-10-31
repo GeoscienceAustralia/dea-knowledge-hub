@@ -3,14 +3,19 @@ title: Home
 themes:
   - name: Baseline satellite data
     slug: baseline-satellite-data
+    image: null
   - name: Land and vegetation
     slug: land-and-vegetation
+    image: null
   - name: Inland water
     slug: inland-water
+    image: null
   - name: Sea, ocean, and coast
     slug: sea-ocean-and-coast
+    image: null
   - name: Hazards
     slug: hazards
+    image: null
 
 use_links:
   - name: Get started with DEA
