@@ -8,7 +8,7 @@ fi
 
 rm -r /output/*
 
-sass /docs/_static/styles/index.scss /docs/_static/styles/styles.css
+sass --style=compact /docs/_static/styles/index.scss /docs/_static/styles/styles.css
 
 sphinx-build \
     -b dirhtml \

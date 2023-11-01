@@ -86,10 +86,6 @@ footer.bd-footer {
     }
 }
 
-.bd-content .sd-tab-set > label:hover {
-    border-top: none;
-}
-
 nav.bd-links {
     .active > a {
         box-shadow: none;
@@ -112,6 +108,15 @@ input[type="search"].form-control {
 
     .sd-tab-content {
         padding-top: 24px;
+    }
+
+    .sd-tab-set > label:hover {
+        border-top: none;
+    }
+
+    .sd-container-fluid {
+        background-color: #e6edef;
+        padding-bottom: var(--sd-gutter-y);
     }
 
     .sd-card {
