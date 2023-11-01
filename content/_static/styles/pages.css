@@ -144,8 +144,8 @@
     margin-bottom: 2.75rem;
 }
 
-.product-page #access-cards {
-    margin-top: 2.5rem;
+.product-page #access-the-data-cards + p {
+    padding-bottom: 1.15rem;
 }
 
 .product-page #access-cards .svg-inline--fa {
@@ -157,6 +157,9 @@
 }
 
 .product-page #access-cards .sd-card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     padding-top: 2rem;
     padding-bottom: 2rem;
 }
@@ -167,6 +170,9 @@
 
 .product-page #access-cards .sd-card-text {
     font-weight: bold;
+    line-height: 1.3;
+    font-size: 0.9rem;
+    margin-top: 0.65rem;
 }
 
 /* .product-page ol#processing-steps-list { */
