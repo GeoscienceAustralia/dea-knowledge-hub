@@ -1,4 +1,0 @@
-% ## Accuracy
-
-% ## Quality assurance
-

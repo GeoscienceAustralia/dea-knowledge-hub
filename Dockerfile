@@ -1,18 +1,19 @@
-FROM python:3.11-alpine
+FROM python:3.11
 
-RUN apk update
-RUN apk add git
-RUN apk add bash
-RUN apk add pandoc
+RUN apt-get update
+RUN apt-get install -y git
+RUN apt-get install -y bash
+RUN apt-get install -y pandoc
+RUN apt-get install -y sass
 
-RUN mkdir -p /scripts
-RUN mkdir -p /docs/content
-RUN mkdir -p /docs/_build
+RUN mkdir -p /setup
+RUN mkdir -p /docs
+RUN mkdir -p /output
 
-COPY docker-start.sh /scripts
-COPY requirements.txt /docs
-RUN python3 -m pip install -r /docs/requirements.txt
+COPY docker-start.sh /setup
+COPY requirements.txt /setup
+RUN pip install -r /setup/requirements.txt --no-cache
 
 EXPOSE 8011
 
-CMD /bin/bash -c "/scripts/docker-start.sh"
+CMD /bin/bash -c "/setup/docker-start.sh"
