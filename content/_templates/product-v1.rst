@@ -124,7 +124,7 @@
              :gutter: 3
 
              {% for item in valid_maps %}
-             .. grid-item-card:: :fas:`map`
+             .. grid-item-card:: :fas:`map-location-dot`
                 :link: {{ item.link }}
                 :link-alt: {{ map_label }}
 
@@ -148,7 +148,7 @@
              {% endfor %}
 
              {% for item in valid_code_samples %}
-             .. grid-item-card:: :fas:`code`
+             .. grid-item-card:: :fas:`laptop-code`
                 :link: {{ item.link }}
                 :link-alt: {{ code_sample_label }}
 

@@ -46,7 +46,7 @@ sitemap_url_scheme = "{link}"
 html_css_files = [
     'styles/themevars.css',
     'styles/global.css',
-    'styles/pages.css',
+    'styles/pages.css'
 ]
 
 html_theme_options = {

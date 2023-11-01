@@ -9,7 +9,7 @@ html {
     --pst-color-link: #00718b !important;
     --pst-color-link-hover: #00718b !important;
     --pst-color-accent: #773775 !important;
-    --sd-color-card-hover: #f2f2f2 !important;
+    --sd-color-card-hover: #e6e6e6 !important;
     --sd-color-card-border-hover: var(--pst-color-border) !important;
     --sd-color-primary-bg: #e6edef !important;
     --pst-font-size-h1: 1.65rem !important;
@@ -20,4 +20,6 @@ html {
     --pst-font-size-h6: 1rem !important;
     --pst-font-family-heading: "Nimbus Sans Novus", sans-serif;
     --pst-font-family-base-system: "Source Sans Pro", Arial, sans-serif;
+    --sd-gutter-x: 1rem;
+    --sd-gutter-y: 1rem;
 }
