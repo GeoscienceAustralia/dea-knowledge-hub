@@ -14,3 +14,5 @@ sphinx-build \
     -b dirhtml \
     -j auto \
     /docs /output
+
+python3 -m http.server 8011
