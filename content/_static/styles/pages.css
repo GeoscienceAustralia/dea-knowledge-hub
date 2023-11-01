@@ -144,24 +144,28 @@
     margin-bottom: 2.75rem;
 }
 
+.product-page #access-cards {
+    margin-top: 2.5rem;
+}
+
 .product-page #access-cards .svg-inline--fa {
     margin-right: 0.25rem;
 }
 
-.product-page #access-cards-2 .sd-card {
+.product-page #access-cards .sd-card {
     text-align: center;
 }
 
-.product-page #access-cards-2 .sd-card-body {
+.product-page #access-cards .sd-card-body {
     padding-top: 2rem;
     padding-bottom: 2rem;
 }
 
-.product-page #access-cards-2 .svg-inline--fa {
+.product-page #access-cards .svg-inline--fa {
     font-size: 1.25rem;
 }
 
-.product-page #access-cards-2 .sd-card-text {
+.product-page #access-cards .sd-card-text {
     font-weight: bold;
 }
 

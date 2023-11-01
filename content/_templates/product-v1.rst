@@ -118,61 +118,13 @@
        .. container::
           :name: access-cards
 
-          .. grid:: 4
-             :gutter: 3
-
-             {% for item in valid_maps %}
-             .. grid-item-card:: :fas:`map` {{ item.title or map_label }}
-                :link: {{ item.link }}
-
-                {{ item.name or map_default_name }}
-             {% endfor %}
-
-             {% for item in valid_explorer %}
-             .. grid-item-card:: :fas:`magnifying-glass` {{ item.title or explorer_label }}
-                :link: {{ item.link }}
-
-                {{ item.name or explorer_default_name }}
-             {% endfor %}
-
-             {% for item in valid_data %}
-             .. grid-item-card:: :fas:`database` {{ item.title or data_label }}
-                :link: {{ item.link }}
-
-                {{ item.name or data_default_name }}
-             {% endfor %}
-
-             {% for item in valid_code_samples %}
-             .. grid-item-card:: :fas:`code` {{ item.title or code_sample_label }}
-                :link: {{ item.link }}
-
-                {{ item.name or code_sample_default_name }}
-             {% endfor %}
-
-             {% for item in valid_web_services %}
-             .. grid-item-card:: :fas:`globe` {{ item.title or web_service_label }}
-                :link: {{ item.link }}
-
-                {{ item.name or web_service_default_name }}
-             {% endfor %}
-
-             {% for item in valid_ecat %}
-             .. grid-item-card:: :fas:`newspaper` {{ item.title or ecat_label }}
-                :link: https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/{{ item.id }}
-
-                eCat {{ item.id }}
-             {% endfor %}
-       {% endif %}
-
-       .. container::
-          :name: access-cards-2
-
           .. grid:: 5
-             :gutter: 3
+             :gutter: 4
 
              {% for item in valid_maps %}
              .. grid-item-card:: :fas:`map`
                 :link: {{ item.link }}
+                :link-alt: {{ map_label }}
 
                 {{ item.name or map_default_name }}
              {% endfor %}
@@ -180,6 +132,7 @@
              {% for item in valid_explorer %}
              .. grid-item-card:: :fas:`magnifying-glass`
                 :link: {{ item.link }}
+                :link-alt: {{ explorer_label }}
 
                 {{ item.name or explorer_default_name }}
              {% endfor %}
@@ -187,6 +140,7 @@
              {% for item in valid_data %}
              .. grid-item-card:: :fas:`database`
                 :link: {{ item.link }}
+                :link-alt: {{ data_label }}
 
                 {{ item.name or data_default_name }}
              {% endfor %}
@@ -194,6 +148,7 @@
              {% for item in valid_code_samples %}
              .. grid-item-card:: :fas:`code`
                 :link: {{ item.link }}
+                :link-alt: {{ code_sample_label }}
 
                 {{ item.name or code_sample_default_name }}
              {% endfor %}
@@ -201,6 +156,7 @@
              {% for item in valid_web_services %}
              .. grid-item-card:: :fas:`globe`
                 :link: {{ item.link }}
+                :link-alt: {{ web_service_label }}
 
                 {{ item.name or web_service_default_name }}
              {% endfor %}
@@ -208,9 +164,11 @@
              {% for item in valid_ecat %}
              .. grid-item-card:: :fas:`newspaper`
                 :link: https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/{{ item.id }}
+                :link-alt: {{ ecat_label }}
 
                 eCat {{ item.id }}
              {% endfor %}
+       {%- endif %}
 
        .. rubric:: Key details
           :name: key-details
@@ -422,3 +380,4 @@
 
    <script type="text/javascript" src="/_static/scripts/tocbot.min.js"></script>
    <script type="text/javascript" src="/_static/scripts/tocbot-data-product.js" /></script>
+   <script type="text/javascript" src="/_static/scripts/access-cards-tooltips.js" /></script>
