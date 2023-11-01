@@ -9,6 +9,7 @@ html_static_path = ['_static', '_files']
 templates_path = ['_layout', '_templates']
 exclude_patterns = [
     "**/_*",
+    "**/*.scss",
     "**/unpublished-product",
     # "notebooks",
 ]
@@ -44,9 +45,7 @@ external_toc_path = "table_of_contents.yaml"
 sitemap_url_scheme = "{link}"
 
 html_css_files = [
-    'styles/themevars.css',
-    'styles/global.css',
-    'styles/pages.css'
+    'styles/styles.css'
 ]
 
 html_theme_options = {

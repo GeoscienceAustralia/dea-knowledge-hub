@@ -12,7 +12,8 @@ RUN mkdir -p /output
 
 COPY docker-start.sh /setup
 COPY requirements.txt /setup
-RUN pip install -r /setup/requirements.txt --no-cache
+COPY docs /docs
+RUN pip install -r /setup/requirements.txt
 
 EXPOSE 8011
 

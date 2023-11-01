@@ -1,0 +1,201 @@
+// /* Home */
+//
+// .home-page h1 {
+//     display: none;
+// }
+//
+// .home-page .rubric {
+//     border-bottom: none;
+// }
+//
+// .home-page .rubric.rubric-1 {
+//     color: var(--pst-color-primary);
+//     font-size: var(--pst-font-size-h4);
+//     color: var(--pst-color-text-base);
+// }
+//
+// .home-page .rubric.rubric-2 {
+//     color: var(--pst-color-primary);
+//     font-size: var(--pst-font-size-h6);
+//     color: var(--pst-color-text-base);
+// }
+//
+// .home-page .sd-card .sd-card-header {
+//     font-weight: bold;
+// }
+//
+// .home-page .sd-card a {
+//     font-weight: bold;
+//     text-decoration: none;
+// }
+//
+// .home-page .sd-card a:hover {
+//     text-decoration: underline;
+// }
+//
+// /* Data Product */
+//
+// .product-page h1 {
+//     display: none;
+// }
+//
+// .product-page .title {
+//     font-size: var(--pst-font-size-h1);
+//     font-weight: bold;
+// }
+//
+// .product-page .title p,
+// .product-page .header a,
+// .product-page .header .quick-info,
+// .product-page .header .quick-info dd p,
+// .product-page .header .subtitle p {
+//     color: white;
+// }
+//
+// .product-page .title p {
+//     margin-bottom: 0;
+// }
+//
+// .product-page .title,
+// .product-page .header > * {
+//     width: calc(100% - 271px);
+// }
+//
+// @media only screen and (max-width: 768px) {
+//     .product-page .title,
+//     .product-page .header > * {
+//         width: 100%;
+//     }
+// }
+//
+// .product-page .header {
+//     position: relative;
+//     background: linear-gradient(
+//         1turn,
+//         var(--pst-color-secondary),
+//         var(--pst-color-primary)
+//     );
+//     padding: 2rem;
+// }
+//
+// .product-page .header .hero-image {
+//     position: absolute;
+//     top: 0;
+//     right: 0;
+//     height: 100%;
+//     width: 271px;
+//     background-image: url("https://www.dea.ga.gov.au/_nuxt/image/3d7bbc.png");
+//     background-size: cover;
+//     background-position: center;
+//     background-repeat: no-repeat;
+// }
+//
+// @media only screen and (max-width: 768px) {
+//     .product-page .header .hero-image {
+//         display: none;
+//     }
+// }
+//
+// .product-page .header dl {
+//     margin-bottom: 0;
+// }
+//
+// .product-page .table-of-contents > p,
+// .product-page .table-of-contents > div,
+// .product-page .table-of-contents ol,
+// .product-page .table-of-contents li {
+//     display: inline;
+// }
+//
+// .product-page .table-of-contents ol {
+//     padding-left: 0;
+// }
+//
+// .product-page .table-of-contents > p,
+// .product-page .table-of-contents li {
+//     margin-right: 1rem;
+// }
+//
+// .product-page .table-of-contents a {
+//     font-size: 0.85rem;
+//     background-color: #f3f4f6;
+//     border: 1px solid #f3f4f6;
+//     padding: 0.25rem 0.5rem;
+//     border-radius: 0.25rem;
+//     text-decoration: none;
+// }
+//
+// .product-page .table-of-contents a:hover {
+//     border: 1px solid var(--pst-color-text-base);
+//     color: var(--pst-color-text-base) !important;
+// }
+//
+// .product-page .table-of-contents a,
+// .product-page .table-of-contents a:visited {
+//     color: var(--pst-color-primary);
+// }
+//
+// .product-page .table-of-contents .sd-badge {
+//     font-size: 0.8rem !important;
+//     padding: 0 !important;
+// }
+//
+// .bd-content .sd-container-fluid {
+//     background-color: #e6edef;
+//     padding-bottom: var(--sd-gutter-y);
+// }
+//
+// .product-page #additional-files-table {
+//     margin-bottom: 2.75rem;
+// }
+//
+// .product-page #access-the-data-cards + p {
+//     padding-bottom: 1.15rem;
+// }
+//
+// .product-page #access-cards .svg-inline--fa {
+//     margin-right: 0.25rem;
+// }
+//
+// .product-page #access-cards .sd-col {
+//     margin-top: calc(var(--sd-gutter-y) * 0.5);
+// }
+//
+// .product-page #access-cards .sd-card {
+//     text-align: center;
+//     border-radius: 0;
+// }
+//
+// .product-page #access-cards .sd-card-body {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     padding-top: 2rem;
+//     padding-bottom: 2rem;
+// }
+//
+// .product-page #access-cards .svg-inline--fa {
+//     font-size: 1.25rem;
+// }
+//
+// .product-page #access-cards .sd-card-title {
+//     margin-bottom: 0;
+// }
+//
+// .product-page #access-cards .sd-card-text {
+//     font-weight: 600;
+//     line-height: 1.3;
+//     font-size: 0.9rem;
+//     margin-top: 10px;
+// }
+//
+// /* .product-page ol#processing-steps-list { */
+// /* } */
+// /*  */
+// /* .product-page ol#processing-steps-list li { */
+// /*     padding-left: 0.5rem; */
+// /* } */
+// /*  */
+// /* .product-page ol#processing-steps-list li:hover { */
+// /*     background-color: var(--sd-color-card-hover); */
+// /* } */

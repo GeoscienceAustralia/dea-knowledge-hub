@@ -6,7 +6,9 @@ then
         https://github.com/GeoscienceAustralia/dea-notebooks /docs/notebooks
 fi
 
-sass /docs/_static/styles/test.scss /output/test.scss
+rm -r /output/*
+
+sass /docs/_static/styles/index.scss /docs/_static/styles/styles.css
 
 sphinx-build \
     -b dirhtml \

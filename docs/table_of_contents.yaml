@@ -122,23 +122,23 @@ entries:
 
           - file: data/product/dea-hotspots/index
 
-  - file: notebooks/README
-    title: Notebooks
-    entries:
-      - file: notebooks/Beginners_guide/README
-        title: Beginner's guide
-      - file: notebooks/DEA_products/README
-        title: DEA products
-      - file: notebooks/How_to_guides/README
-        title: How-to guides
-      - file: notebooks/Interactive_apps/README
-        title: Interactive apps
-      - file: notebooks/Real_world_examples/README
-        title: Real-world examples
-      - file: notebooks/Supplementary_data/README
-        title: Supplementary data
-      - file: notebooks/Tools/README
-        title: Tools
+  # - file: notebooks/README
+  #   title: Notebooks
+  #   entries:
+  #     - file: notebooks/Beginners_guide/README
+  #       title: Beginner's guide
+  #     - file: notebooks/DEA_products/README
+  #       title: DEA products
+  #     - file: notebooks/How_to_guides/README
+  #       title: How-to guides
+  #     - file: notebooks/Interactive_apps/README
+  #       title: Interactive apps
+  #     - file: notebooks/Real_world_examples/README
+  #       title: Real-world examples
+  #     - file: notebooks/Supplementary_data/README
+  #       title: Supplementary data
+  #     - file: notebooks/Tools/README
+  #       title: Tools
 
   # - file: data/old-version-product/index
   #   entries:

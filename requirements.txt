@@ -1,6 +1,5 @@
 sphinx
 nbsphinx
-sphinx-autobuild
 pydata-sphinx-theme
 myst-parser
 sphinx_design
