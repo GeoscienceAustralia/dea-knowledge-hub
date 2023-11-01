@@ -15,6 +15,8 @@ sphinx-build \
     -j auto \
     /docs /output
 
-cd /output
-
-python3 -m http.server 8011
+if [ "$DEMO_SERVER" == "Yes" ]
+then
+    cd /output
+    python3 -m http.server 8011
+fi
