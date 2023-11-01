@@ -3,5 +3,5 @@ description: Browse hazards data products.
 
 pages:
   - name: DEA Hotspots
-    link: /data/product/dea-hotspots/
+    link: /products/product/dea-hotspots/
     image: null

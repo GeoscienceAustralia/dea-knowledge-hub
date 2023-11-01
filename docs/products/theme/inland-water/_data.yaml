@@ -3,11 +3,11 @@ description: Browse inland water data products.
 
 pages:
   - name: DEA Wetlands Insight Tool
-    link: /data/category/dea-wetlands-insight-tool/
+    link: /products/category/dea-wetlands-insight-tool/
     image: null
   - name: DEA Water Observations
-    link: /data/category/dea-water-observations/
+    link: /products/category/dea-water-observations/
     image: null
   - name: DEA Waterbodies
-    link: /data/product/dea-waterbodies-landsat/
+    link: /products/product/dea-waterbodies-landsat/
     image: null

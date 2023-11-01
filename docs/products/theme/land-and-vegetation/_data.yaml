@@ -3,14 +3,14 @@ description: Browse land and vegetation data products.
 
 pages:
   - name: DEA Land Cover
-    link: /data/product/dea-land-cover-landsat/
+    link: /products/product/dea-land-cover-landsat/
     image: null
   - name: DEA Fractional Cover
-    link: /data/category/dea-fractional-cover/
+    link: /products/category/dea-fractional-cover/
     image: null
   - name: DEA Geomedian and Mean Absolute Deviation (GeoMAD)
-    link: /data/product/dea-geometric-median-and-median-absolute-deviation-landsat/
+    link: /products/product/dea-geometric-median-and-median-absolute-deviation-landsat/
     image: null
   - name: DEA Mangroves
-    link: /data/product/dea-mangrove-canopy-cover-landsat/
+    link: /products/product/dea-mangrove-canopy-cover-landsat/
     image: null

@@ -5,8 +5,8 @@ description: Browse baseline satellite data products.
 
 pages:
   - name: DEA Surface Reflectance
-    link: /data/category/dea-surface-reflectance/
+    link: /products/category/dea-surface-reflectance/
     image: null
   - name: Australian National Spectral Database
-    link: /data/product/australian-national-spectral-database/
+    link: /products/product/australian-national-spectral-database/
     image: null

@@ -53,7 +53,7 @@ web_services:
   - link: https://hotspots.dea.ga.gov.au/geoserver/wms/kml?layers=public:hotspots_three_days
     name: KML file access (last 3 days)
     image: null
-  - link: https://hotspots.dea.ga.gov.au/data/recent-hotspots.json
+  - link: https://hotspots.dea.ga.gov.au/products/recent-hotspots.json
     name: GeoJSON file access (last 3 days)
     image: null
 
