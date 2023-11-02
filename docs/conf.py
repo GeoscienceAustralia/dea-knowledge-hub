@@ -49,6 +49,8 @@ extensions = [
 myst_enable_extensions = ["colon_fence"]
 myst_heading_anchors = 1
 
+nbsphinx_execute = "never"
+
 external_toc_path = "table_of_contents.yaml"
 
 # rediraffe_redirects = "redirects.txt"

@@ -10,39 +10,39 @@
 .. rubric:: DEA Documentation and Metadata Hub
    :class: rubric-1
 
-Here you will find metadata for Geoscience Australia's earth observation data products and also documentation for using this data.
+Here you will find metadata for Geoscience Australia's earth observation data products, services, publications, help and learning, and other documentation.
 
 .. grid:: 3
    :gutter: 3
 
    .. grid-item-card::
 
-      Access the data ...
-      ^^^^^^^^^^^^^^^^^^^
-
-      {% for theme in data.themes %}
-      `{{ theme.name }} <{{ theme.link }}>`_
-      {% endfor %}
-
-   .. grid-item-card::
-
-      Use the data ...
-      ^^^^^^^^^^^^^^^^
-
-      {% for use_link in data.use_links %}
-      `{{ use_link.name }} <{{ use_link.link }}>`_
-      {% endfor %}
-   
-   .. grid-item-card::
-
-      Our program ...
-      ^^^^^^^^^^^^^^^
+      Knowledge Hub
+      ^^^^^^^^^^^^^
 
       {% for program_link in data.program_links %}
       `{{ program_link.name }} <{{ program_link.link }}>`_
       {% endfor %}
 
       `Get support <{{ config.html_context.support_link }}>`_
+
+   .. grid-item-card::
+
+      Data Products
+      ^^^^^^^^^^^^^
+
+      {% for theme in data.themes %}
+      `{{ theme.name }} <{{ theme.link }}>`_
+      {% endfor %}
+   
+   .. grid-item-card::
+
+      Notebooks
+      ^^^^^^^^^
+
+      {% for use_link in data.use_links %}
+      `{{ use_link.name }} <{{ use_link.link }}>`_
+      {% endfor %}
 
 .. rubric:: About Digital Earth Australia
    :class: rubric-2

@@ -1,4 +1,4 @@
-/* Home */
+// Home
 
 .home-page {
     h1 {
@@ -37,7 +37,7 @@
     }
 }
 
-/* Data Product */
+// Data Product
 
 .product-page {
     h1 {
@@ -187,4 +187,11 @@
             margin-right: 0.25rem;
         }
     }
+}
+
+// Notebooks
+
+.bd-article h1 img {
+    display: block;
+    margin-top: 1rem;
 }

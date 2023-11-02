@@ -102,6 +102,10 @@ input[type="search"].form-control {
 }
 
 .bd-content {
+    #searchbox {
+        display: none;
+    }
+
     dl.field-list > dt {
         padding-left: 0;
     }

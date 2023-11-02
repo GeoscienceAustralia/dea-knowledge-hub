@@ -1,5 +1,6 @@
 sphinx
 nbsphinx
+IPython
 pydata-sphinx-theme
 myst-parser
 sphinx_design
