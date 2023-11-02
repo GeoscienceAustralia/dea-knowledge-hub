@@ -1,126 +1,126 @@
 root: index
 entries:
-  - file: products/index
+  - file: data/index
     subtrees:
       - caption: Baseline satellite data
         entries:
-          - file: products/theme/baseline-satellite-products/index
+          - file: data/theme/baseline-satellite-products/index
             title: All
 
-          - file: products/product/product-starter-kit/index
-          - file: products/category/dea-surface-reflectance/index
+          - file: data/product/product-starter-kit/index
+          - file: data/category/dea-surface-reflectance/index
             entries:
-              - file: products/category/landsat-5-analysis-ready-products/index
+              - file: data/category/landsat-5-analysis-ready-products/index
                 entries:
-                  - file: products/product/dea-surface-reflectance-landsat-5-tm/index
+                  - file: data/product/dea-surface-reflectance-landsat-5-tm/index
                     title: Landsat 5 Surface Reflectance
-                  - file: products/product/dea-surface-reflectance-nbar-landsat-5-tm/index
+                  - file: data/product/dea-surface-reflectance-nbar-landsat-5-tm/index
                     title: Landsat 5 Surface Reflectance NBAR
-                  - file: products/product/dea-surface-reflectance-nbart-landsat-5-tm/index
+                  - file: data/product/dea-surface-reflectance-nbart-landsat-5-tm/index
                     title: Landsat 5 Surface Reflectance NBART
-                  - file: products/product/dea-surface-reflectance-oa-landsat-5-tm/index
+                  - file: data/product/dea-surface-reflectance-oa-landsat-5-tm/index
                     title: Landsat 5 Observational Attributes
-              - file: products/category/landsat-7-analysis-ready-products/index
+              - file: data/category/landsat-7-analysis-ready-products/index
                 entries:
-                  - file: products/product/dea-surface-reflectance-landsat-7-etm/index
+                  - file: data/product/dea-surface-reflectance-landsat-7-etm/index
                     title: Landsat 7 Surface Reflectance
-                  - file: products/product/dea-surface-reflectance-nbar-landsat-7-etm/index
+                  - file: data/product/dea-surface-reflectance-nbar-landsat-7-etm/index
                     title: Landsat 7 Surface Reflectance NBAR
-                  - file: products/product/dea-surface-reflectance-nbart-landsat-7-etm/index
+                  - file: data/product/dea-surface-reflectance-nbart-landsat-7-etm/index
                     title: Landsat 7 Surface Reflectance NBART
-                  - file: products/product/dea-surface-reflectance-oa-landsat-7-etm/index
+                  - file: data/product/dea-surface-reflectance-oa-landsat-7-etm/index
                     title: Landsat 7 Observational Attributes
-              - file: products/category/landsat-8-analysis-ready-products/index
+              - file: data/category/landsat-8-analysis-ready-products/index
                 entries:
-                  - file: products/product/dea-surface-reflectance-landsat-8-oli-tirs/index
+                  - file: data/product/dea-surface-reflectance-landsat-8-oli-tirs/index
                     title: Landsat 8 Surface Reflectance
-                  - file: products/product/dea-surface-reflectance-nbar-landsat-8-oli-tirs/index
+                  - file: data/product/dea-surface-reflectance-nbar-landsat-8-oli-tirs/index
                     title: Landsat 8 Surface Reflectance NBAR
-                  - file: products/product/dea-surface-reflectance-nbart-landsat-8-oli-tirs/index
+                  - file: data/product/dea-surface-reflectance-nbart-landsat-8-oli-tirs/index
                     title: Landsat 8 Surface Reflectance NBART
-                  - file: products/product/dea-surface-reflectance-oa-landsat-8-oli-tirs/index
+                  - file: data/product/dea-surface-reflectance-oa-landsat-8-oli-tirs/index
                     title: Landsat 8 Observational Attributes
-              - file: products/category/landsat-9-analysis-ready-products/index
+              - file: data/category/landsat-9-analysis-ready-products/index
                 entries:
-                  - file: products/product/dea-surface-reflectance-landsat-9/index
+                  - file:data/product/dea-surface-reflectance-landsat-9/index
                     title: Landsat 9 Surface Reflectance
-                  - file: products/product/dea-surface-reflectance-nbar-landsat-9/index
+                  - file:data/product/dea-surface-reflectance-nbar-landsat-9/index
                     title: Landsat 9 Surface Reflectance NBAR
-                  - file: products/product/dea-surface-reflectance-nbart-landsat-9/index
+                  - file:data/product/dea-surface-reflectance-nbart-landsat-9/index
                     title: Landsat 9 Surface Reflectance NBART
-                  - file: products/product/dea-surface-reflectance-oa-landsat-9/index
+                  - file:data/product/dea-surface-reflectance-oa-landsat-9/index
                     title: Landsat 9 Observational Attributes
-              - file: products/category/sentinel-2a-analysis-ready-products/index
+              - file:data/category/sentinel-2a-analysis-ready-products/index
                 entries:
-                  - file: products/product/dea-surface-reflectance-sentinel-2a-msi/index
+                  - file:data/product/dea-surface-reflectance-sentinel-2a-msi/index
                     title: Sentinel-2A Surface Reflectance
-                  - file: products/product/dea-surface-reflectance-nbart-sentinel-2a-msi/index
+                  - file:data/product/dea-surface-reflectance-nbart-sentinel-2a-msi/index
                     title: Sentinel-2A Surface Reflectance NBART
-                  - file: products/product/dea-surface-reflectance-oa-sentinel-2a-msi/index
+                  - file:data/product/dea-surface-reflectance-oa-sentinel-2a-msi/index
                     title: Sentinel-2A Observational Attributes
-              - file: products/category/sentinel-2b-analysis-ready-products/index
+              - file:data/category/sentinel-2b-analysis-ready-products/index
                 entries:
-                  - file: products/product/dea-surface-reflectance-sentinel-2b-msi/index
+                  - file:data/product/dea-surface-reflectance-sentinel-2b-msi/index
                     title: Sentinel-2B Surface Reflectance
-                  - file: products/product/dea-surface-reflectance-nbart-sentinel-2b-msi/index
+                  - file:data/product/dea-surface-reflectance-nbart-sentinel-2b-msi/index
                     title: Sentinel-2B Surface Reflectance NBART
-                  - file: products/product/dea-surface-reflectance-oa-sentinel-2b-msi/index
+                  - file:data/product/dea-surface-reflectance-oa-sentinel-2b-msi/index
                     title: Sentinel-2B Observational Attributes
-          - file: products/product/australian-national-spectral-database/index
+          - file:data/product/australian-national-spectral-database/index
 
       - caption: Land and Vegetation
         entries:
-          - file: products/theme/land-and-vegetation/index
+          - file:data/theme/land-and-vegetation/index
             title: All
 
-          - file: products/product/dea-land-cover-landsat/index
+          - file:data/product/dea-land-cover-landsat/index
             title: DEA Land Cover
-          - file: products/category/dea-fractional-cover/index
+          - file:data/category/dea-fractional-cover/index
             entries:
-              - file: products/product/dea-fractional-cover-landsat/index
+              - file:data/product/dea-fractional-cover-landsat/index
                 title: DEA Fractional Cover
-              - file: products/product/dea-fractional-cover-percentiles-landsat/index
+              - file:data/product/dea-fractional-cover-percentiles-landsat/index
                 title: DEA Fractional Cover Percentiles
-          - file: products/product/dea-geometric-median-and-median-absolute-deviation-landsat/index
+          - file:data/product/dea-geometric-median-and-median-absolute-deviation-landsat/index
             title: DEA Geomedian and Mean Absolute Deviation (GeoMAD)
-          - file: products/product/dea-mangrove-canopy-cover-landsat/index
+          - file:data/product/dea-mangrove-canopy-cover-landsat/index
             title: DEA Mangroves
 
       - caption: Inland water
         entries:
-          - file: products/theme/inland-water/index
+          - file:data/theme/inland-water/index
             title: All
 
-          - file: products/category/dea-wetlands-insight-tool/index
+          - file:data/category/dea-wetlands-insight-tool/index
             entries:
-              - file: products/product/dea-wetlands-insight-tool-qld/index
-          - file: products/category/dea-water-observations/index
+              - file:data/product/dea-wetlands-insight-tool-qld/index
+          - file:data/category/dea-water-observations/index
             entries:
-              - file: products/product/dea-water-observations-landsat/index
-              - file: products/product/dea-water-observations-statistics-landsat/index
-              - file: products/product/dea-water-observations-provisional-sentinel-2-nrt/index
-          - file: products/product/dea-waterbodies-landsat/index
+              - file:data/product/dea-water-observations-landsat/index
+              - file:data/product/dea-water-observations-statistics-landsat/index
+              - file:data/product/dea-water-observations-provisional-sentinel-2-nrt/index
+          - file:data/product/dea-waterbodies-landsat/index
             title: DEA Waterbodies
 
       - caption: Sea, Ocean, and Coast
         entries:
-          - file: products/theme/sea-ocean-and-coast/index
+          - file:data/theme/sea-ocean-and-coast/index
             title: All
 
-          - file: products/product/dea-coastlines/index
-          - file: products/product/dea-high-and-low-tide-imagery-landsat/index
+          - file:data/product/dea-coastlines/index
+          - file:data/product/dea-high-and-low-tide-imagery-landsat/index
             title: DEA High and Low Tide Imagery
-          - file: products/product/dea-intertidal-elevation-landsat/index
+          - file:data/product/dea-intertidal-elevation-landsat/index
             title: DEA Intertidal Elevation (NIDEM)
-          - file: products/product/dea-intertidal-extents-landsat/index
+          - file:data/product/dea-intertidal-extents-landsat/index
             title: DEA Intertidal Extents (ITEM)
 
       - caption: Hazards
         entries:
-          - file: products/theme/hazards/index
+          - file:data/theme/hazards/index
             title: All
 
-          - file: products/product/dea-hotspots/index
+          - file:data/product/dea-hotspots/index
 
   # - file: notebooks/README
   #   title: Notebooks
@@ -140,6 +140,6 @@ entries:
   #     - file: notebooks/Tools/README
   #       title: Tools
 
-  # - file: products/old-version-product/index
+  # - file:data/old-version-product/index
   #   entries:
-  #     - glob: products/old-version-product/dea-coastlines-*/index
+  #     - glob:data/old-version-product/dea-coastlines-*/index

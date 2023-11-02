@@ -4,17 +4,17 @@ description: null
 
 pages:
   - name: Baseline satellite data
-    link: /products/theme/baseline-satellite-data
+    link: /data/theme/baseline-satellite-data
     image: null
   - name: Land and vegetation
-    link: /products/theme/land-and-vegetation
+    link: /data/theme/land-and-vegetation
     image: null
   - name: Inland water
-    link: /products/theme/inland-water
+    link: /data/theme/inland-water
     image: null
   - name: Sea, ocean, and coast
-    link: /products/theme/sea-ocean-and-coast
+    link: /data/theme/sea-ocean-and-coast
     image: null
   - name: Hazards
-    link: /products/theme/hazards
+    link: /data/theme/hazards
     image: null
