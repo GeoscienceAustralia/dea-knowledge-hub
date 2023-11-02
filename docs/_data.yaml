@@ -2,19 +2,19 @@ title: Home
 
 themes:
   - name: Baseline satellite data
-    slug: baseline-satellite-data
+    link: /data/theme/baseline-satellite-data
     image: null
   - name: Land and vegetation
-    slug: land-and-vegetation
+    link: /data/theme/land-and-vegetation
     image: null
   - name: Inland water
-    slug: inland-water
+    link: /data/theme/inland-water
     image: null
   - name: Sea, ocean, and coast
-    slug: sea-ocean-and-coast
+    link: /data/theme/sea-ocean-and-coast
     image: null
   - name: Hazards
-    slug: hazards
+    link: /data/theme/hazards
     image: null
 
 use_links:
