@@ -12,6 +12,7 @@ exclude_patterns = [
     "**/*.scss",
     "**/unpublished-product",
     # "notebooks",
+    # **.ipynb_checkpoints,
 ]
 html_extra_path = ['robots.txt']
 source_suffix = ['.rst', '.md']
@@ -28,6 +29,7 @@ html_permalinks = False
 extensions = [
     "myst_parser",
     "nbsphinx",
+    "IPython.sphinxext.ipython_console_highlighting",
     "sphinx_design",
     "sphinxext.rediraffe",
     "sphinxcontrib.datatemplates",
