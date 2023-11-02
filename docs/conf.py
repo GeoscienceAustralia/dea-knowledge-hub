@@ -15,7 +15,6 @@ exclude_patterns = [
     "**/_*",
     "**/*.scss",
     "**/unpublished-product",
-    "**.ipynb_checkpoints",
 ]
 
 excludeNotebooks = (
