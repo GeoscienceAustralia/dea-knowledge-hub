@@ -1,11 +1,5 @@
 #!/bin/bash
 
-if [ "$FETCH_NOTEBOOKS" == "Yes" ] && [ ! -d "/docs/notebooks/.git" ]
-then
-    git clone --depth 1 --branch stable \
-        https://github.com/GeoscienceAustralia/dea-notebooks /docs/notebooks
-fi
-
 rm -r /output/*
 
 sass --style=compact /docs/_static/styles/index.scss /docs/_static/styles/styles.css
