@@ -125,6 +125,7 @@ entries:
   - file: notebooks/README
     title: Notebooks
     entries:
+      - file: self
       - file: notebooks/Beginners_guide/README
       - file: notebooks/DEA_products/README
       - file: notebooks/How_to_guides/README
@@ -133,6 +134,7 @@ entries:
       - file: notebooks/Supplementary_data/README
       - file: notebooks/Tools/README
       - file: notebooks/USAGE
+        title: Usage
 
   # - file: data/old-version-product/index
   #   entries:
