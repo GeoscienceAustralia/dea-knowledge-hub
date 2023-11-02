@@ -13,3 +13,6 @@ start:
 		| grep --invert-match --regexp 'WARNING.*Document headings start at' \
 		| grep --invert-match --regexp 'WARNING.*duplicate label' \
 		| grep --invert-match --regexp '.*GET /_.*'
+
+ssh:
+	docker exec -it dea-docs /bin/sh

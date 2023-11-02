@@ -1,0 +1,4 @@
+[submodule "dea-notebooks"]
+	shallow = true
+	path = docs/notebooks
+	url = https://github.com/GeoscienceAustralia/dea-notebooks

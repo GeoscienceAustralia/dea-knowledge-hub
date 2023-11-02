@@ -1,3 +1,4 @@
+import os
 import datetime
 
 project = 'DEA Docs'
@@ -7,15 +8,20 @@ version = '0.1'
 
 html_static_path = ['_static', '_files']
 templates_path = ['_layout', '_templates']
+html_extra_path = ['robots.txt']
+source_suffix = ['.rst', '.md']
+
 exclude_patterns = [
     "**/_*",
     "**/*.scss",
     "**/unpublished-product",
-    # "notebooks",
-    # **.ipynb_checkpoints,
+    "**.ipynb_checkpoints",
 ]
-html_extra_path = ['robots.txt']
-source_suffix = ['.rst', '.md']
+
+excludeNotebooks = "notebooks" if os.environ.get("BUILD_NOTEBOOKS") == "No" else None
+
+if excludeNotebooks is not None:
+    exclude_patterns.append(excludeNotebooks)
 
 html_title = "DEA Docs"
 html_baseurl = "https://docs.dea.ga.gov.au/"
@@ -29,7 +35,6 @@ html_permalinks = False
 extensions = [
     "myst_parser",
     "nbsphinx",
-    "IPython.sphinxext.ipython_console_highlighting",
     "sphinx_design",
     "sphinxext.rediraffe",
     "sphinxcontrib.datatemplates",
