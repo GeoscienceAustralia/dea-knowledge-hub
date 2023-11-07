@@ -18,12 +18,12 @@ exclude_patterns = [
 ]
 
 def exclude_section(environment_variable, exclude_pattern):
-    if os.environ.get(environment_variable) == "Yes" and not os.environ.get("PRODUCTION_MODE") == "Yes":
+    if os.environ.get(environment_variable) == "No" and not os.environ.get("PRODUCTION_MODE") == "Yes":
         exclude_patterns.append(exclude_pattern)
 
-exclude_section("EXCLUDE_KNOWLEDGE_HUB", "knowledge")
-exclude_section("EXCLUDE_DATA_PRODUCTS", "data")
-exclude_section("EXCLUDE_NOTEBOOKS", "notebooks")
+exclude_section("ENABLE_KNOWLEDGE_HUB", "knowledge")
+exclude_section("ENABLE_DATA_PRODUCTS", "data")
+exclude_section("ENABLE_NOTEBOOKS", "notebooks")
 
 html_title = "DEA Docs"
 html_baseurl = "https://docs.dea.ga.gov.au/"
@@ -51,7 +51,8 @@ nbsphinx_execute = "never"
 
 external_toc_path = "table_of_contents.yaml"
 
-# rediraffe_redirects = "redirects.txt"
+if os.environ.get("ENABLE_REDIRECTS") == "Yes" or os.environ.get("PRODUCTION_MODE") == "Yes":
+    rediraffe_redirects = "redirects.txt"
 
 sitemap_url_scheme = "{link}"
 
