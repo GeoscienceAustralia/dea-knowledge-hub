@@ -162,14 +162,6 @@ entries:
 
   - file: notebooks/README
     title: DEA Notebooks
-    entries:
-      - file: notebooks/Beginners_guide/README
-      - file: notebooks/DEA_products/README
-      - file: notebooks/How_to_guides/README
-      - file: notebooks/Interactive_apps/README
-      - file: notebooks/Real_world_examples/README
-      - file: notebooks/Supplementary_data/README
-      - file: notebooks/Tools/index
 
   - file: data/old-version-product/index
     entries:
