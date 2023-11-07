@@ -36,7 +36,6 @@ entries:
           - file: knowledge/about/changelog
           - file: knowledge/about/publications
           - file: knowledge/about/glossary
-          - file: genindex
 
   - file: data/index
     subtrees:
