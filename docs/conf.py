@@ -72,7 +72,7 @@ html_theme_options = {
     "navigation_with_keys": False,
     "search_bar_text": "Search ...",
     "show_prev_next": False,
-    "header_links_before_dropdown": 2,
+    "header_links_before_dropdown": 3,
 }
 
 html_context = {

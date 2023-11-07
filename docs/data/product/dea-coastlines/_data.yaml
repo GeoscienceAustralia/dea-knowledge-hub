@@ -2,7 +2,7 @@
 
 title: DEA Coastlines
 long_title: Geoscience Australia Landsat Coastlines Collection 3
-header_image: ./images/thumbnail_vertical.png
+header_image: https://www.dea.ga.gov.au/_nuxt/image/3d7bbc.png
 version: 2.1.0
 product_ids: null
 update_frequency: Annually

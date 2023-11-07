@@ -77,9 +77,9 @@
       :{{ product_ids_label }}: {{ valid_product_ids | join(", ") }}
       {%- endif %}
 
-   .. container:: hero-image
+   .. raw:: html
 
-      |nbsp|
+      <div class="hero-image" style="background-image: url('{{ data.header_image }}');"></div>
 
 {% if not is_latest_version %}
 .. container::

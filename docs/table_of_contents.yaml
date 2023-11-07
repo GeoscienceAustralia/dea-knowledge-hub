@@ -1,7 +1,7 @@
 root: index
 entries:
   - file: knowledge/index
-    title: Knowledge
+    title: Knowledge Hub
 
   - file: data/index
     subtrees:
