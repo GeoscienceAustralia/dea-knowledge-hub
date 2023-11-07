@@ -13,13 +13,22 @@ entries:
           - file: knowledge/setup/dea_maps
           - file: knowledge/setup/Sandbox/sandbox
           - file: knowledge/setup/NCI/README
+            entries:
+              - file: knowledge/setup/NCI/account
+              - file: knowledge/setup/NCI/basics
+              - file: knowledge/setup/NCI/advanced
           - file: knowledge/setup/AWS/data_and_metadata
           - file: knowledge/setup/gis/README
+            entries:
+              - file: knowledge/setup/gis/web_services
+              - file: knowledge/setup/gis/stac
           - file: knowledge/setup/jupyter
 
       - caption: Reference
         entries:
-          - glob: knowledge/reference/*
+          - file: knowledge/reference/collection_3_naming
+          - file: knowledge/reference/collection_3_summary_grid
+          - file: knowledge/reference/dataset_maturity_guide
 
       - caption: Appendix
         entries:
