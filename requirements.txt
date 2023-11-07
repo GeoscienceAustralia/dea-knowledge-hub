@@ -9,3 +9,4 @@ sphinxcontrib.datatemplates
 sphinx-external-toc
 sphinx-sitemap
 sphinxext-opengraph
+ipywidgets
