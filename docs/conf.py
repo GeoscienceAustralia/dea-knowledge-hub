@@ -48,7 +48,6 @@ extensions = [
     "sphinx.ext.autodoc",
     "sphinx.ext.autosummary",
     "sphinx.ext.viewcode",
-    "sphinx.ext.intersphinx",
     "sphinx.ext.mathjax",
     "sphinx.ext.napoleon",
 ]
@@ -78,11 +77,6 @@ autodoc_default_options = {
 }
 autodoc_mock_imports = ["aiohttp", "boto3", "botocore", "branca", "ciso8601", "dask", "dask_gateway", "dask_ml", "datacube", "dill", "distutils", "fsspec", "fiona", "folium", "geopandas", "geopy", "hdstats", "ipyleaflet", "ipython", "ipywidgets", "joblib", "lxml", "matplotlib", "mpl_toolkits", "numexpr", "numpy", "odc", "osgeo", "otps", "OWSLib", "owslib", "packaging", "pandas", "pathos", "pyproj", "python_dateutil", "psycopg2", "pyTMD", "pytz", "rasterio", "rasterstats", "requests", "rios", "rsgislib", "scikit_learn", "sklearn", "scipy", "setuptools", "setuptools_scm", "shapely", "skimage", "tqdm", "traitlets", "xarray"]
 autosummary_mock_imports = autodoc_mock_imports
-
-intersphinx_mapping = {
-    "python": ("https://docs.python.org/3/", None),
-    "odc": ("https://datacube-core.readthedocs.io/en/stable/", None),
-}
 
 napoleon_google_docstring = False
 napoleon_numpy_docstring = True
