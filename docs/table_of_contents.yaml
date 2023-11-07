@@ -2,6 +2,31 @@ root: index
 entries:
   - file: knowledge/index
     title: Knowledge Hub
+    subtrees:
+      - caption: Overview
+        entries:
+          - file: knowledge/about/intro
+
+      - caption: Access
+        entries:
+          - file: knowledge/setup/README
+          - file: knowledge/setup/dea_maps
+          - file: knowledge/setup/Sandbox/sandbox
+          - file: knowledge/setup/NCI/README
+          - file: knowledge/setup/AWS/data_and_metadata
+          - file: knowledge/setup/gis/README
+          - file: knowledge/setup/jupyter
+
+      - caption: Reference
+        entries:
+          - glob: knowledge/reference/*
+
+      - caption: Appendix
+        entries:
+          - file: knowledge/about/faq
+          - file: knowledge/about/changelog
+          - file: knowledge/about/publications
+          - file: knowledge/about/glossary
 
   - file: data/index
     subtrees:
@@ -126,7 +151,7 @@ entries:
           - file: data/product/dea-hotspots/index
 
   - file: notebooks/README
-    title: Notebooks
+    title: DEA Notebooks
     entries:
       - file: notebooks/Beginners_guide/README
       - file: notebooks/DEA_products/README

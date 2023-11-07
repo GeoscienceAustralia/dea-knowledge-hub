@@ -37,7 +37,7 @@ Here you will find metadata for Geoscience Australia's earth observation data pr
    
    .. grid-item-card::
 
-      Notebooks
+      DEA Notebooks
       ^^^^^^^^^
 
       {% for use_link in data.use_links %}
