@@ -56,11 +56,11 @@ to access DEA.
    Set :guilabel:`Modules` to ``dea``.
 
 
-   .. video:: /_static/are_jupyterhub_launch_setup.webm
-      :loop:
-      :autoplay:
-      :nocontrols:
-      :muted:
+   .. raw:html
+
+      <video loop autoplay nocontrols muted>
+         <source src="/_static/are_jupyterhub_launch_setup.webm" type="video/webm">
+      </video>
 
 
 Virtual Desktops with ARE
