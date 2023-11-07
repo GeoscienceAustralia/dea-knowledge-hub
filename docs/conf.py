@@ -42,6 +42,7 @@ extensions = [
     "sphinxcontrib.datatemplates",
     "sphinx_external_toc",
     "sphinx_sitemap",
+    "sphinxext.opengraph"
 ]
 
 myst_enable_extensions = ["colon_fence"]
@@ -55,6 +56,9 @@ if os.environ.get("ENABLE_REDIRECTS") == "Yes" or os.environ.get("PRODUCTION_MOD
     rediraffe_redirects = "redirects.txt"
 
 sitemap_url_scheme = "{link}"
+
+ogp_site_url = "https://docs.dea.ga.gov.au/"
+ogp_image = "./_static/dea-logo-inline.png"
 
 html_css_files = [
     'styles/styles.css'
