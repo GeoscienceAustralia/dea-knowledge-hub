@@ -51,20 +51,18 @@ Key products that are available on S3 include the following:
 +------------------------------------+--------------------------------------+----------------------------------------+
 | DEA Product Name                   | S3 Link                              | Web View                               |
 +====================================+======================================+========================================+
-| `Surface Reflectance (Landsat 5)`_ | :dea-s3:`baseline/ga_ls5t_ard_3/`    | :dea-data:`baseline/ga_ls5t_ard_3`     |
+| `Surface Reflectance (Landsat 5)`_ | `S3 baseline/ga_ls5t_ard_3`_         | `Web baseline/ga_ls5t_ard_3`_          |
 +------------------------------------+--------------------------------------+----------------------------------------+
-| `Surface Reflectance (Landsat 7)`_ | :dea-s3:`baseline/ga_ls7e_ard_3`     | :dea-data:`baseline/ga_ls7e_ard_3`     |
+| `Surface Reflectance (Landsat 7)`_ | `S3 baseline/ga_ls7e_ard_3`_         | `Web baseline/ga_ls7e_ard_3`_          |
 +------------------------------------+--------------------------------------+----------------------------------------+
-| `Surface Reflectance (Landsat 8)`_ | :dea-s3:`baseline/ga_ls8c_ard_3/`    | :dea-data:`baseline/ga_ls8c_ard_3/`    |
+| `Surface Reflectance (Landsat 8)`_ | `S3 baseline/ga_ls8c_ard_3`_         | `Web baseline/ga_ls8c_ard_3`_          |
 +------------------------------------+--------------------------------------+----------------------------------------+
-| `Water Observations`_              | :dea-s3:`derivative/ga_ls_wo_3/`     | :dea-data:`derivative/ga_ls_wo_3/`     |
+| `Water Observations`_              | `S3 derivative/ga_ls_wo_3`_          | `Web derivative/ga_ls_wo_3`_           |
 +------------------------------------+--------------------------------------+----------------------------------------+
-| `Fractional Cover`_                | :dea-s3:`derivative/ga_ls_fc_3/`     | :dea-data:`derivative/ga_ls_fc_3/`     |
+| `Fractional Cover`_                | `S3 derivative/ga_ls_fc_3`_          | `Web derivative/ga_ls_fc_3`_           |
 +------------------------------------+--------------------------------------+----------------------------------------+
-| `Coastlines`_                      | :dea-s3:`derivative/dea_coastlines/` | :dea-data:`derivative/dea_coastlines/` |
+| `Coastlines`_                      | `S3 derivative/dea_coastlines`_      | `Web derivative/dea_coastlines`_       |
 +------------------------------------+--------------------------------------+----------------------------------------+
-
-
 
 .. _`Surface Reflectance (Landsat 5)`: https://cmi.ga.gov.au/data-products/dea/358/dea-surface-reflectance-landsat-5-tm
 .. _`Surface Reflectance (Landsat 7)`: https://cmi.ga.gov.au/data-products/dea/475/dea-surface-reflectance-landsat-7-etm
@@ -72,6 +70,18 @@ Key products that are available on S3 include the following:
 .. _`Water Observations`: https://cmi.ga.gov.au/data-products/dea/613/dea-water-observations-landsat
 .. _`Fractional Cover`: https://cmi.ga.gov.au/data-products/dea/629/dea-fractional-cover-landsat
 .. _`Coastlines`: https://cmi.ga.gov.au/data-products/dea/581/dea-coastlines
+.. _`S3 baseline/ga_ls5t_ard_3`: s3://dea-public-data/baseline/ga_ls5t_ard_3
+.. _`S3 baseline/ga_ls7e_ard_3`: s3://dea-public-data/baseline/ga_ls7e_ard_3
+.. _`S3 baseline/ga_ls8c_ard_3`: s3://dea-public-data/baseline/ga_ls8c_ard_3
+.. _`S3 derivative/ga_ls_wo_3`: s3://dea-public-data/derivative/ga_ls_wo_3
+.. _`S3 derivative/ga_ls_fc_3`: s3://dea-public-data/derivative/ga_ls_fc_3
+.. _`S3 derivative/dea_coastlines`: s3://dea-public-data/derivative/dea_coastlines
+.. _`Web baseline/ga_ls5t_ard_3`: https://data.dea.ga.gov.au/?prefix=baseline/ga_ls5t_ard_3
+.. _`Web baseline/ga_ls7e_ard_3`: https://data.dea.ga.gov.au/?prefix=baseline/ga_ls7e_ard_3
+.. _`Web baseline/ga_ls8c_ard_3`: https://data.dea.ga.gov.au/?prefix=baseline/ga_ls8c_ard_3
+.. _`Web derivative/ga_ls_wo_3`: https://data.dea.ga.gov.au/?prefix=derivative/ga_ls_wo_3
+.. _`Web derivative/ga_ls_fc_3`: https://data.dea.ga.gov.au/?prefix=derivative/ga_ls_fc_3
+.. _`Web derivative/dea_coastlines`: https://data.dea.ga.gov.au/?prefix=derivative/dea_coastlines
 
 
 SNS Notifications
