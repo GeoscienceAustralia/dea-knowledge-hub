@@ -24,6 +24,7 @@ def exclude_section(environment_variable, exclude_pattern):
 exclude_section("ENABLE_KNOWLEDGE_HUB", "knowledge")
 exclude_section("ENABLE_DATA_PRODUCTS", "data")
 exclude_section("ENABLE_NOTEBOOKS", "notebooks")
+exclude_section("ENABLE_OLD_PRODUCT_VERSIONS", "data/old-version-product")
 
 html_title = "DEA Docs"
 html_baseurl = "https://docs.dea.ga.gov.au/"

@@ -138,6 +138,6 @@ entries:
       - file: notebooks/USAGE
         title: Usage
 
-  # - file: data/old-version-product/index
-  #   entries:
-  #     - glob: data/old-version-product/dea-coastlines-*/index
+  - file: data/old-version-product/index
+    entries:
+      - glob: data/old-version-product/dea-coastlines-*/index
