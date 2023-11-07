@@ -16,14 +16,6 @@ exclude_patterns = [
     "**/_*",
     "**/*.scss",
     "**/unpublished-product",
-
-    "**/Beginners_guide",
-    "**/DEA_products",
-    "**/How_to_guides",
-    "**/Interactive_apps",
-    "**/Real_world_examples",
-    "**/Supplementary_data",
-    "**/Tests",
 ]
 
 def exclude_section(environment_variable, exclude_pattern):
@@ -56,9 +48,13 @@ extensions = [
     "sphinx.ext.autodoc",
     "sphinx.ext.autosummary",
     "sphinx.ext.viewcode",
+    "sphinx.ext.mathjax",
 ]
 
-myst_enable_extensions = ["colon_fence"]
+myst_enable_extensions = [
+    "colon_fence",
+    "dollarmath"
+]
 myst_heading_anchors = 1
 
 nbsphinx_execute = "never"

@@ -57,7 +57,7 @@ web_services:
     image: null
 
 ecat:
-  - id: '146197'
+  - id: "146197"
 
 tags:
   - geoscience_australia_landsat_collection_3
@@ -67,3 +67,11 @@ tags:
   - surface_water
   - mapping
 
+# Settings
+
+enable_overview: true
+enable_access: true
+enable_details: true
+enable_quality: true
+enable_history: true
+enable_credits: true
