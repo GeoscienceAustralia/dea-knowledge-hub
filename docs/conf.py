@@ -17,15 +17,8 @@ exclude_patterns = [
     "**/unpublished-product",
 ]
 
-excludeNotebooks = (
-    "notebooks"
-    if os.environ.get("BUILD_NOTEBOOKS") == "No"
-    or os.environ.get("PRODUCTION_MODE") == "Yes"
-    else None
-)
-
-if excludeNotebooks is not None:
-    exclude_patterns.append(excludeNotebooks)
+if os.environ.get("BUILD_NOTEBOOKS") == "No" or os.environ.get("PRODUCTION_MODE") == "Yes":
+    exclude_patterns.append("notebooks")
 
 html_title = "DEA Docs"
 html_baseurl = "https://docs.dea.ga.gov.au/"
