@@ -1,4 +1,5 @@
 import os
+import sys
 import datetime
 
 project = 'DEA Docs'
@@ -15,6 +16,14 @@ exclude_patterns = [
     "**/_*",
     "**/*.scss",
     "**/unpublished-product",
+
+    "**/Beginners_guide",
+    "**/DEA_products",
+    "**/How_to_guides",
+    "**/Interactive_apps",
+    "**/Real_world_examples",
+    "**/Supplementary_data",
+    "**/Tests",
 ]
 
 def exclude_section(environment_variable, exclude_pattern):
@@ -43,7 +52,10 @@ extensions = [
     "sphinxcontrib.datatemplates",
     "sphinx_external_toc",
     "sphinx_sitemap",
-    "sphinxext.opengraph"
+    "sphinxext.opengraph",
+    "sphinx.ext.autodoc",
+    "sphinx.ext.autosummary",
+    "sphinx.ext.viewcode",
 ]
 
 myst_enable_extensions = ["colon_fence"]
@@ -60,6 +72,14 @@ sitemap_url_scheme = "{link}"
 
 ogp_site_url = "https://docs.dea.ga.gov.au/"
 ogp_image = "./_static/dea-logo-inline.png"
+
+sys.path.insert(0, os.path.abspath("./notebooks/Tools"))
+autosummary_generate = ["./notebooks/Tools/index.rst"]
+autodoc_default_options = {
+    "members": True,
+}
+autodoc_mock_imports = ["aiohttp", "boto3", "botocore", "branca", "ciso8601", "dask", "dask_gateway", "dask_ml", "datacube", "dill", "distutils", "fsspec", "fiona", "folium", "geopandas", "geopy", "hdstats", "ipyleaflet", "ipython", "ipywidgets", "joblib", "lxml", "matplotlib", "mpl_toolkits", "numexpr", "numpy", "odc", "osgeo", "otps", "OWSLib", "owslib", "packaging", "pandas", "pathos", "pyproj", "python_dateutil", "psycopg2", "pyTMD", "pytz", "rasterio", "rasterstats", "requests", "rios", "rsgislib", "scikit_learn", "sklearn", "scipy", "setuptools", "setuptools_scm", "shapely", "skimage", "tqdm", "traitlets", "xarray"]
+autosummary_mock_imports = autodoc_mock_imports
 
 html_css_files = [
     'styles/styles.css'

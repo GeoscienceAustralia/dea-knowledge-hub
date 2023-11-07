@@ -134,7 +134,7 @@ entries:
       - file: notebooks/Interactive_apps/README
       - file: notebooks/Real_world_examples/README
       - file: notebooks/Supplementary_data/README
-      - file: notebooks/Tools/README
+      - file: notebooks/Tools/index
       - file: notebooks/USAGE
         title: Usage
 
