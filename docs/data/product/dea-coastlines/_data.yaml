@@ -72,9 +72,9 @@ tags:
 
 # Settings
 
-hide_overview: false
-hide_access: false
-hide_details: false
-hide_quality: false
-hide_history: false
-hide_credits: false
+exclude_overview: false
+exclude_access: false
+exclude_details: false
+exclude_quality: false
+exclude_history: false
+exclude_credits: false
