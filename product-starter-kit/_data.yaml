@@ -28,40 +28,46 @@ tags: null # List
 
 # Access
 
-maps: null
+maps:
+  null
 
   # - link: https://example.com
   #   name: null
 
-explorers: null
+explorers:
+  null
 
   # - link: https://example.com
   #   name: null
 
-data: null
+data:
+  null
 
   # - link: https://example.com
   #   name: null
 
-code_examples: null
+code_examples:
+  null
 
   # - link: https://example.com
   #   name: null
 
-web_services: null
+web_services:
+  null
 
   # - link: https://example.com
   #   name: null
 
-ecat: null
+ecat:
+  null
 
   # - id: 000000
 
 # Settings
 
-hide_overview: false
-hide_access: false
-hide_details: false
-hide_quality: false
-hide_history: false
-hide_credits: false
+exclude_overview: false
+exclude_access: false
+exclude_details: false
+exclude_quality: false
+exclude_history: false
+exclude_credits: false

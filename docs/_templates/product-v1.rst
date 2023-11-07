@@ -97,7 +97,7 @@
 
 .. tab-set::
 
-    {% if not data.hide_overview %}
+    {% if not data.exclude_overview %}
     .. tab-item:: Overview
        :name: overview-tab
 
@@ -206,7 +206,7 @@
           :parser: myst_parser.sphinx_
     {% endif %}
 
-    {% if not data.hide_access %}
+    {% if not data.exclude_access %}
     .. tab-item:: Access
        :name: access-tab
 
@@ -297,7 +297,7 @@
           :parser: myst_parser.sphinx_
     {% endif %}
 
-    {% if not data.hide_details %}
+    {% if not data.exclude_details %}
     .. tab-item:: Details
        :name: details-tab
 
@@ -312,7 +312,7 @@
           :parser: myst_parser.sphinx_
     {% endif %}
 
-    {% if not data.hide_quality %}
+    {% if not data.exclude_quality %}
     .. tab-item:: Quality
        :name: quality-tab
 
@@ -327,7 +327,7 @@
           :parser: myst_parser.sphinx_
     {% endif %}
 
-    {% if not data.hide_history %}
+    {% if not data.exclude_history %}
     .. tab-item:: History
        :name: history-tab
 
@@ -363,7 +363,7 @@
        {% endif %}
     {% endif %}
 
-    {% if not data.hide_credits %}
+    {% if not data.exclude_credits %}
     .. tab-item:: Credits
        :name: credits-tab
 
