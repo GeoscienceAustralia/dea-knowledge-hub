@@ -17,10 +17,7 @@ All the other dependencies are installed automatically by Docker. It installs th
 git clone --depth 1 --branch dea-docs-v2 git@github.com:GeoscienceAustralia/dea-docs.git
 ```
 
-**Step 2.** Copy the `.env.example` file to a new file named `.env`. In this file, you can configure the following settings.
-
-* `BUILD_NOTEBOOKS` &mdash; `Yes` or `No`
-* `PRODUCTION_MODE` &mdash; `Yes` or `No/`
+**Step 2.** Copy the `.env.example` file to a new file named `.env`.
 
 **Step 3.** Build and run the Docker image.
 
