@@ -2,20 +2,24 @@ import os
 import sys
 import datetime
 
-project = 'DEA Docs'
-copyright = f'{datetime.date.today().year}, Geoscience Australia'
-author = 'Geoscience Australia'
-version = '0.1'
+project = "DEA Docs"
+copyright = f"{datetime.date.today().year}, Geoscience Australia"
+author = "Geoscience Australia"
+version = "0.1"
 
-html_static_path = ['_static', '_files']
-templates_path = ['_layout', '_templates']
-html_extra_path = ['robots.txt']
-source_suffix = ['.rst', '.md']
+html_static_path = ["_static", "_files"]
+templates_path = ["_layout", "_templates"]
+html_extra_path = ["robots.txt"]
+source_suffix = [".rst", ".md"]
 
 exclude_patterns = [
+    "**/.*",
     "**/_*",
     "**/*.scss",
     "**/unpublished-product",
+    "notebooks/Scientific_workflows",
+    "notebooks/DEA_notebooks_template.ipynb",
+    "notebooks/USAGE.rst",
 ]
 
 def exclude_section(environment_variable, exclude_pattern):
