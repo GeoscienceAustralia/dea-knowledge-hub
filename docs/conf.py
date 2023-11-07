@@ -50,6 +50,7 @@ extensions = [
     "sphinx.ext.viewcode",
     "sphinx.ext.intersphinx",
     "sphinx.ext.mathjax",
+    "sphinx.ext.napoleon",
 ]
 
 myst_enable_extensions = [
@@ -82,6 +83,9 @@ intersphinx_mapping = {
     "python": ("https://docs.python.org/3/", None),
     "odc": ("https://datacube-core.readthedocs.io/en/stable/", None),
 }
+
+napoleon_google_docstring = False
+napoleon_numpy_docstring = True
 
 html_css_files = [
     'styles/styles.css'
