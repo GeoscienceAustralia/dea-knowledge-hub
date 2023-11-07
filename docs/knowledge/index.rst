@@ -45,6 +45,19 @@ and list what you would like to see changed.
    setup/jupyter.rst
 
 .. toctree::
+   :caption: DEA Notebooks User Guide
+   :maxdepth: 1
+   :glob:
+   
+   notebooks/README.rst
+   notebooks/Beginners_guide/README.rst
+   notebooks/DEA_products/README.rst
+   notebooks/How_to_guides/README.rst
+   notebooks/Interactive_apps/README.rst
+   notebooks/Real_world_examples/README.rst
+   notebooks/Tools/index
+
+.. toctree::
    :caption: Reference
    :maxdepth: 1
    :glob:
