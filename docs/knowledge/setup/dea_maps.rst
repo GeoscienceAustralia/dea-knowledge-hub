@@ -17,13 +17,13 @@ To explore the data available on DEA Maps:
 
 1. Launch DEA Maps: https://maps.dea.ga.gov.au/. A pop-up window will appear:
 
-.. figure:: /_static/DEA_maps/dea_maps_1.jpg
+.. figure:: /_files/dea-maps/dea_maps_1.jpg
    :align: center
    :alt: Starting with DEA Maps
 
 2. Click ``Take the tour``. A series of pop-up tips will appear explaining how to use the main features of DEA Maps. Click ``Next`` to proceed to the next tip, then finally ``Finish`` to complete the tour.
 
-.. figure:: /_static/DEA_maps/dea_maps_2.jpg
+.. figure:: /_files/dea-maps/dea_maps_2.jpg
    :align: center
    :alt: Guide to DEA Maps
 
@@ -32,31 +32,31 @@ To explore the data available on DEA Maps:
 .. note::
    You can also zoom to a location by typing into the ``Search for locations`` box on the top-left, then clicking on your location in the drop-down menu. Try this with "Lake Menindee".
 
-.. figure:: /_static/DEA_maps/dea_maps_3.jpg
+.. figure:: /_files/dea-maps/dea_maps_3.jpg
    :align: center
    :alt: Menindee
 
 4. Click ``Explore map data`` on the top-left to start adding data to the map. This will bring up a view of the DEA data catalogue.
 
-.. figure:: /_static/DEA_maps/dea_maps_4.jpg
+.. figure:: /_files/dea-maps/dea_maps_4.jpg
    :align: center
    :alt: Data catalogue
 
 5. We can now add data to the map. In this example, we will load 10 m resolution satellite imagery from the Copernicus Sentinel-2 satellites. First, click on ``Satellite data`` to open this folder, then click on the ``DEA Surface Reflectance (Sentinel-2)`` product. This will show you a preview of the data we are about to load. When you are ready, click ``Add to the map``.
 
-.. figure:: /_static/DEA_maps/dea_maps_5.jpg
+.. figure:: /_files/dea-maps/dea_maps_5.jpg
    :align: center
    :alt: Adding data
 
 6. The ``DEA Surface Reflectance (Sentinel-2)`` product will now be added to the "workbench" on the left of the screen. At this point, satellite data may not display on the map - this may be because there were no Sentinel-2 images captured over this location on the select day. To filter our satellite data to all images captured at this location, click ``Filter by location``, then click on the map. You will see the filter applied in blue in the workbench on the left.
 
-.. figure:: /_static/DEA_maps/dea_maps_6.jpg
+.. figure:: /_files/dea-maps/dea_maps_6.jpg
    :align: center
    :alt: Adding data
 
 7. Sentinel-2 satellite data will now appear on the map. To view imagery for a different date, select a new time by clicking on the date in the workbench, or drag the time slider along the bottom of the map window.
 
-.. figure:: /_static/DEA_maps/dea_maps_7.jpg
+.. figure:: /_files/dea-maps/dea_maps_7.jpg
    :align: center
    :alt: Changing time
 
@@ -71,13 +71,13 @@ Data on DEA Maps often contains multiple layers for each product that can be vis
 
 1. Load a satellite dataset into your workbench and filter it to your location (e.g. follow the ``DEA Surface Reflectance (Sentinel-2)`` example above). Click the white box below ``Styles`` to bring up a list of available styles for the dataset.
 
-.. figure:: /_static/DEA_maps/dea_maps_styles_1.jpg
+.. figure:: /_files/dea-maps/dea_maps_styles_1.jpg
    :align: center
    :alt: Styles
 
 2. From this menu, click ``False colour - Green, SWIR, NIR``. This will display a false colour view of the satellite imagery that uses wavelengths of light that are invisible to the human eye (near and short-wave infrared) to highlight the presence of water (blue) and growing vegetation (bright green).
 
-.. figure:: /_static/DEA_maps/dea_maps_styles_2.jpg
+.. figure:: /_files/dea-maps/dea_maps_styles_2.jpg
    :align: center
    :alt: False colour
 
@@ -88,7 +88,7 @@ Data on DEA Maps often contains multiple layers for each product that can be vis
 * Algal blooms (``Normalised Difference Chlorophyll Index - Red Edge, Red``)
 * Burnt areas (``Normalised Burn Ratio - NIR, SWIR``)
 
-.. figure:: /_static/DEA_maps/dea_maps_styles_3.jpg
+.. figure:: /_files/dea-maps/dea_maps_styles_3.jpg
    :align: center
    :alt: Other styles
 
@@ -104,7 +104,7 @@ DEA Maps allows you to easily create print-friendly views of satellite data for 
 
 2. Click ``Copy`` to copy a customised share link to your clipboard. When opened, this link will contain an identical view of the map containing all the layers you have loaded into the map.
 
-.. figure:: /_static/DEA_maps/dea_maps_share_1.jpg
+.. figure:: /_files/dea-maps/dea_maps_share_1.jpg
    :align: center
    :alt: Share 1
 
@@ -112,7 +112,7 @@ DEA Maps allows you to easily create print-friendly views of satellite data for 
 
 1. After clicking ``Share / Print`` at the top-right of the map, click ``Print`` or ``Show Print View`` to bring up a print-friendly view of your map window.
 
-.. figure:: /_static/DEA_maps/dea_maps_share_2.jpg
+.. figure:: /_files/dea-maps/dea_maps_share_2.jpg
    :align: center
    :alt: Share 2
 
@@ -131,13 +131,13 @@ To export data directly from DEA Maps for use in GIS software:
 
 1. Load a satellite dataset into your workbench and filter it to your location (e.g. follow the ``DEA Surface Reflectance (Sentinel-2)`` example above). Click the three vertical dots on the dataset ("Show more actions"), then click ``Export``.
 
-.. figure:: /_static/DEA_maps/dea_maps_export_1.jpg
+.. figure:: /_files/dea-maps/dea_maps_export_1.jpg
    :align: center
    :alt: Export
 
 2. Follow the instructions in the pop-up by clicking twice on the map to draw a rectangle. When done, press ``Download extent``.
 
-.. figure:: /_static/DEA_maps/dea_maps_export_2.jpg
+.. figure:: /_files/dea-maps/dea_maps_export_2.jpg
    :align: center
    :alt: Export 2
 
@@ -151,25 +151,25 @@ It can be useful to compare different satellite datasets, or imagery from differ
 
 1. Load a satellite dataset into your workbench and filter it to your location (e.g. follow the ``DEA Surface Reflectance (Sentinel-2)`` example above). Click the three vertical dots on the dataset ("Show more actions"), then click ``Compare``.
 
-.. figure:: /_static/DEA_maps/dea_maps_compare_1.jpg
+.. figure:: /_files/dea-maps/dea_maps_compare_1.jpg
    :align: center
    :alt: Compare
 
 2. A screen splitter will appear at the centre of the map, and a new copy of our dataset will be added to the workbench. The workbench has also updated with orange labels to show that this new copy will be shown on the ``Left`` of the screen, and our original data shown on the ``Right``. 
 
-.. figure:: /_static/DEA_maps/dea_maps_compare_2.jpg
+.. figure:: /_files/dea-maps/dea_maps_compare_2.jpg
    :align: center
    :alt: Screen splitter
 
 3. Filter this new copy of our dataset to the same location (e.g. ``Filter by location`` then click on the map), then select a new date from the "Time" dropdown. The left-hand side of the map will update with Sentinel-2 imagery from this date. Using your mouse, you can now grab the screen splitter in the centre of the screen, and swipe from side to side to compare imagery from these two time periods side-by-side.
 
-.. figure:: /_static/DEA_maps/dea_maps_compare_3.jpg
+.. figure:: /_files/dea-maps/dea_maps_compare_3.jpg
    :align: center
    :alt: Screen splitter 2
 
 4. To deactive the "Compare" tool, click the orange "Compare" icon on the top right of the map.
 
-.. figure:: /_static/DEA_maps/dea_maps_compare_4.jpg
+.. figure:: /_files/dea-maps/dea_maps_compare_4.jpg
    :align: center
    :alt: Deactiveate screen splitter
 
@@ -180,13 +180,13 @@ The "Compare" tool above allowed us to visually compare different satellite data
 
 1. Load a satellite dataset into your workbench (e.g. follow the ``DEA Surface Reflectance (Sentinel-2)`` example above). Click the three vertical dots on the dataset ("Show more actions"), then click ``Difference``.
 
-.. figure:: /_static/DEA_maps/dea_maps_diff_1.jpg
+.. figure:: /_files/dea-maps/dea_maps_diff_1.jpg
    :align: center
    :alt: Difference
 
 2. The "Difference" tool will replace the workbench on the left of the map. This tool allows us to choose satellite images from two different dates, and analyse them to calculate changes across time. As a first step, tell the tool the location we want to analyse by clicking once in the middle of the map.
 
-.. figure:: /_static/DEA_maps/dea_maps_diff_2.jpg
+.. figure:: /_files/dea-maps/dea_maps_diff_2.jpg
    :align: center
    :alt: Difference 2
 
@@ -195,25 +195,25 @@ The "Compare" tool above allowed us to visually compare different satellite data
 .. note::
    If using the Lake Menindee example, try setting ``Date Comparison A`` to ``18/04/2021`` and ``Date Comparison B`` to ``18/05/2021`` for a example of a dry and wet landscape.
 
-.. figure:: /_static/DEA_maps/dea_maps_diff_3.jpg
+.. figure:: /_files/dea-maps/dea_maps_diff_3.jpg
    :align: center
    :alt: Difference 3
 
 4. We can now run the change detection computation. Click ``Choose a difference output`` on the "Difference" tool. This gives us several options that can be used to compare differences in specific landscape characteristics over time (e.g. water, vegetation, fire scars). For this example, select ``Modified Normalised Difference Water Index - Green, SWIR`` which is useful for comparing the distribution of water in the landscape. When ready, click ``Generate change detection``.
 
-.. figure:: /_static/DEA_maps/dea_maps_diff_4.jpg
+.. figure:: /_files/dea-maps/dea_maps_diff_4.jpg
    :align: center
    :alt: Difference 4
 
 5. A new layer will appear on the map. Locations that have grown wetter over time are shown in blue, while locations that have have become drier are shown in red. Scroll around the map to explore patterns of change. To close the "Difference" tool, click "Exit" at the top of the window. 
 
-.. figure:: /_static/DEA_maps/dea_maps_diff_5.jpg
+.. figure:: /_files/dea-maps/dea_maps_diff_5.jpg
    :align: center
    :alt: Difference 5
 
 6. Your workbench will reappear, with the difference output layer added as a new dataset on the map.
 
-.. figure:: /_static/DEA_maps/dea_maps_diff_6.jpg
+.. figure:: /_files/dea-maps/dea_maps_diff_6.jpg
    :align: center
    :alt: Difference 6
 
@@ -227,35 +227,35 @@ The Bureau of Meteorology provides current and historic water discharge data for
 
 2. Load watercourse discharge data (e.g. the Hydrologic Reference Stations dataset) to your workbench by clicking on ``Explore map data``. Scroll down and click ``Other`` > ``Water Regulations Data (BoM)`` > ``Hydrological Reference Stations`` > ``Water Discharge``. Then click ``Add to the map``.  
 
-.. figure:: /_static/DEA_maps/dea_maps_wdt_1.jpg
+.. figure:: /_files/dea-maps/dea_maps_wdt_1.jpg
    :align: center
    :alt: Watercourse Discharge Tool 1
    
 3. The Hydrological Reference Stations watercourse measuring locations located across the country are shown below. Zoom into the map and click on a station of interest. A pop up with the stations name, location and other details will appear. Click ``Show DEA Surface Reflectance (Sentinel-2) at this location``. Then click ``Expand`` and then close the pop up.
 
-.. figure:: /_static/DEA_maps/dea_maps_wdt_2.jpg
+.. figure:: /_files/dea-maps/dea_maps_wdt_2.jpg
    :align: center
    :alt: Watercourse Discharge Tool 2
 
-.. figure:: /_static/DEA_maps/dea_maps_wdt_3.jpg
+.. figure:: /_files/dea-maps/dea_maps_wdt_3.jpg
    :align: center
    :alt: Watercourse Discharge Tool 3
    
 4. A hydrograph of your chosen station will now be at the bottom of the screen. To link the Sentinel-2 data to the hydrograph, click on the ``Show available times`` chart symbol in the DEA Surface Reflectance (Sentinel-2) card on your workbench.
 
-.. figure:: /_static/DEA_maps/dea_maps_wdt_4.jpg
+.. figure:: /_files/dea-maps/dea_maps_wdt_4.jpg
    :align: center
    :alt: Watercourse Discharge Tool 4
    
 5. Sentinel-2 captures will now appear as dots on the hydrograph. Clicking on a dot will load imagery from that date onto the map. Hovering over a dot will show the date and time of capture and the average watercourse discharge rate. Note: Sentinel-2 data is only available for 2015 onwards. To clearly see the dots on the hydrograph, you may need to zoom in using your mouse wheel. 
 
-.. figure:: /_static/DEA_maps/dea_maps_wdt_5.jpg
+.. figure:: /_files/dea-maps/dea_maps_wdt_5.jpg
    :align: center
    :alt: Watercourse Discharge Tool 5
    
 6. You can change the style of the Sentinel-2 data by clicking on the ``Styles`` dropdown menu in the DEA Surface Reflectance (Sentinel-2) card on your workbench. The example below shows Modified Normalised Difference Water Index – Green, SWIR.
 
-.. figure:: /_static/DEA_maps/dea_maps_wdt_6.jpg
+.. figure:: /_files/dea-maps/dea_maps_wdt_6.jpg
    :align: center
    :alt: Watercourse Discharge Tool 6
 
@@ -264,12 +264,12 @@ For more assistance
 -------------------
 DEA Maps contains additional helpful guides for assisting with exploring our datasets. To access this help at any point, click the ``Help`` button on the bottom-right:
 
-.. figure:: /_static/DEA_maps/dea_maps_help_1.jpg
+.. figure:: /_files/dea-maps/dea_maps_help_1.jpg
    :align: center
    :alt: Help 1
 
 This will bring up a menu containing detailed guides to performing useful tasks with DEA Maps:
 
-.. figure:: /_static/DEA_maps/dea_maps_help_2.jpg
+.. figure:: /_files/dea-maps/dea_maps_help_2.jpg
    :align: center
    :alt: Help 2

@@ -41,6 +41,11 @@ language = "en"
 html_permalinks = False
 
 extensions = [
+    "sphinx.ext.autodoc",
+    "sphinx.ext.autosummary",
+    "sphinx.ext.viewcode",
+    "sphinx.ext.mathjax",
+    "sphinx.ext.napoleon",
     "myst_parser",
     "nbsphinx",
     "sphinx_design",
@@ -49,11 +54,6 @@ extensions = [
     "sphinx_external_toc",
     "sphinx_sitemap",
     "sphinxext.opengraph",
-    "sphinx.ext.autodoc",
-    "sphinx.ext.autosummary",
-    "sphinx.ext.viewcode",
-    "sphinx.ext.mathjax",
-    "sphinx.ext.napoleon",
 ]
 
 myst_enable_extensions = [
