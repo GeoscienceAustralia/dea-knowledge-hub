@@ -1,5 +1,5 @@
 
-.. image:: _static/dea-logo-inline.svg
+.. image:: /_files/logos/dea-logo-inline.svg
    :align: center
    :alt: Digital Earth Australia Logo
 
