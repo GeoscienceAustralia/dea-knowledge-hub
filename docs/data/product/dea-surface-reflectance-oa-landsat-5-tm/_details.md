@@ -73,7 +73,9 @@ Pixel-level information on satellite and solar geometries is useful if you wish 
 
 These images depict an area containing high topographic relief, terrain shadow, and high incident angles. Applications, such as water classification, can mis-classify dark regions as water due to the effect of high incident angles in regions of high topographic relief.
 
-![NBAR, terrain shadow, high incident angle, NBAR+ mask overlay, NBART](/_files/cmi/Surface%20Reflectance%20OA%203%20-%20figure%201.png)
+:::{image} /_files/cmi/Surface\ Reflectance\ OA\ 3\ -\ figure\ 1.png
+:alt: NBAR, terrain shadow, high incident angle, NBAR+ mask overlay, NBART
+:::
 
 *Figure 1. (A) Surface Reflectance (Landsat 5 TM NBAR) image; (B) terrain shadow mask; (C) high incident angle mask (>65); (D) NBAR+ mask overlay; (E) equivalent Surface Reflectance (Landsat 5 TM NBART) image.*
 
@@ -104,15 +106,21 @@ These images depict an area containing high topographic relief, terrain shadow, 
 * **Timedelta (seconds)**  
  The time from satellite apogee (the point of orbit at which the satellite is furthest from the Earth).
 
-![Zenith angles](/_files/cmi/Surface%20Reflectance%20OA%203%20-%20figure%202.png)
+:::{image} /_files/cmi/Surface\ Reflectance\ OA\ 3\ -\ figure\ 2.png
+:alt: Zenith angles
+:::
 
 *Figure 2. Zenith angles. Image modified from Support to Aviation Control Service (2011).*
 
-![Zenith and azimuth angles](/_files/cmi/Surface%20Reflectance%20OA%203%20-%20figure%203.png)
+:::{image} /_files/cmi/Surface\ Reflectance\ OA\ 3\ -\ figure\ 3.png
+:alt: Zenith and azimuth angles
+:::
 
 *Figure 3. Zenith and azimuth angles. θs = solar zenith; θν = satellite view; Φs = solar azimuth (green); Φν = satellite azimuth (blue); Φ = relative azimuth (red). Image modified from Hudson et al. (2006).*
 
-![Incident (i) and exiting (e) angles](/_files/cmi/Surface%20Reflectance%20OA%203%20-%20figure%204.png)
+:::{image} /_files/cmi/Surface\ Reflectance\ OA\ 3\ -\ figure\ 4.png
+:alt: Incident (i) and exiting (e) angles
+:::
 
 *Figure 4. Incident (i) and exiting (e) angles for a level and inclined surface. Image modified from Dymond and Shepherd (1999).*
 
@@ -144,7 +152,9 @@ The terrain-shaded pixels product can be utilised as a strict mask and exclude p
 * 0 = shaded
 * 1 = not shaded
 
-![Different types of terrain-shaded pixels](/_files/cmi/Surface%20Reflectance%20OA%203%20-%20figure%205.png)
+:::{image} /_files/cmi/Surface\ Reflectance\ OA\ 3\ -\ figure\ 5.png
+:alt: Different types of terrain-shaded pixels
+:::
 
 *Figure 5. Different types of terrain-shaded pixels. C = point of interest; D = point located along the direction of the sun; 90-θS = solar zenith; Z0 = elevation at location C; Zd = elevation at location D. Image sourced from Jupp et al. (2012).*
 
@@ -160,7 +170,9 @@ The following images represent the surface reflectance image and derived Fmask c
 * Cyan = snow
 * Dark blue = water
 
-![False colour composite and the resulting Fmask classification](/_files/cmi/Surface%20Reflectance%20OA%203%20-%20figure%206.png)
+:::{image} /_files/cmi/Surface\ Reflectance\ OA\ 3\ -\ figure\ 6.png
+:alt: False colour composite and the resulting Fmask classification
+:::
 
 *Figure 6. (A) False colour composite; (B) the resulting Fmask classification.*
 
