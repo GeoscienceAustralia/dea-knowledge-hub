@@ -27,9 +27,9 @@ Requirements: Java Runtime Environment (JRE) 8.0 or higher. See [Specchio Releas
 
 Documentation for the Specchio client: [Specchio website](https://specchio.ch/).
 
-Technical information on use of the Specchio application, such as connecting to the NSD and downloading data: [Technical usage guide](https://cmi.ga.gov.au/sites/default/files/2022-10/NSD_General_Guide.pdf).
+Technical information on use of the Specchio application, such as connecting to the NSD and downloading data: [Technical usage guide](/_files/cmi/NSD_General_Guide.pdf).
 
-Information for uploading data (write-access users only): [Write access guide](https://cmi.ga.gov.au/sites/default/files/2022-10/NSD_Write_Access_Guide.pdf).
+Information for uploading data (write-access users only): [Write access guide](/_files/cmi/NSD_Write_Access_Guide.pdf).
 
 ### Navigating the client
 
@@ -37,19 +37,19 @@ The NSD contains datasets or campaigns of data that can be viewed in two ways.
 
 1) View the NSD folder structure via the data browser:
 
-![data_browser](/sites/default/files/inline-images/data_browser.jpg)
+![data_browser](/_files/cmi/data_browser.jpg)
 
-![data_browser_2](/sites/default/files/inline-images/data_browser2.jpg)
+![data_browser_2](/_files/cmi/data_browser2.jpg)
 
 Expand folders to the desired level, then view (show report), plot spectra, and export data. You may also manually subset data from folders by selecting multiple individual files, shown above. The report applies to the selected spectra: either at the folder or individual file level. 
 
 2) Query the NSD for specific metadata parameters:
 
-![query_builder](/sites/default/files/inline-images/query_1.jpg)
+![query_builder](/_files/cmi/query_1.jpg)
 
 Select the metadata category you wish to filter by on the left-hand side. For example, to retrieve all entries for NSW, select the Location category on the left, then add "NSW" to the "State/Territory" field and hit Run Query on the right:
 
-![query_2](/sites/default/files/inline-images/query_2.jpg)
+![query_2](/_files/cmi/query_2.jpg)
 
 As in the Data Browser, spectra found from the Query Builder can be viewed and exported in the same way.
 
