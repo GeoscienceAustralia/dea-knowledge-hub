@@ -33,8 +33,8 @@ exclude_section("ENABLE_OLD_PRODUCT_VERSIONS", "data/old-version-product")
 
 html_title = "DEA Docs"
 html_baseurl = "https://docs.dea.ga.gov.au/"
-html_logo = "https://docs.dea.ga.gov.au/_images/dea-logo-inline.svg"
-html_favicon = "https://docs.dea.ga.gov.au/_static/dea-favicon.ico"
+html_logo = "_files/logos/dea-logo-inline.svg"
+html_favicon = "_static/favicons/dea-favicon.ico"
 html_theme = 'pydata_sphinx_theme'
 language = "en"
 
@@ -72,7 +72,7 @@ if os.environ.get("ENABLE_REDIRECTS") == "Yes" or os.environ.get("PRODUCTION_MOD
 sitemap_url_scheme = "{link}"
 
 ogp_site_url = "https://docs.dea.ga.gov.au/"
-ogp_image = "./_static/dea-logo-inline.png"
+ogp_image = "/_files/logos/dea-logo-inline.png"
 
 sys.path.insert(0, os.path.abspath("./notebooks/Tools"))
 autosummary_generate = ["./notebooks/Tools/index.rst"]
