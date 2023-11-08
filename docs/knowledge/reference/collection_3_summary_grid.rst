@@ -96,4 +96,4 @@ References
 -  `The Grid as implemented in ODC Statistician
    <https://github.com/opendatacube/odc-tools/blob/dff7b984464a4cc9d6bd9f6f444ef4a292c730d0/libs/dscache/odc/dscache/tools/tiling.py#L13-L41>`__
 
-.. |grid_image| image:: ./images/collection_3_grid.jpeg
+.. |grid_image| image:: /_files/reference/collection_3_grid.jpeg

@@ -111,10 +111,10 @@ References
    System <https://en.wikipedia.org/wiki/Military_Grid_Reference_System>`__
 -  `DEA Summary Product Grid (Collection 3) <./collection_3_summary_grid.rst>`__
 
-.. |ard_ls_image| image:: ./images/ARD_Landsat_Filename.svg
-.. |ard_s2_image| image:: ./images/ARD_S-2_Filename.svg
-.. |fc_ls_image| image:: ./images/Landsat_Fractional_Cover.svg
-.. |wo_s2_image| image:: ./images/S-2_Water_Observations.svg
-.. |summary_image| image:: ./images/Derivative_Summary_Product.svg
-.. |odc_ard_image| image:: ./images/ODC_Product_ID_LS_ARD.svg
-.. |odc_fc_image| image:: ./images/ODC_Product_ID_LS_FC.svg
+.. |ard_ls_image| image:: /_files/reference/ARD_Landsat_Filename.svg
+.. |ard_s2_image| image:: /_files/reference/ARD_S-2_Filename.svg
+.. |fc_ls_image| image:: /_files/reference/Landsat_Fractional_Cover.svg
+.. |wo_s2_image| image:: /_files/reference/S-2_Water_Observations.svg
+.. |summary_image| image:: /_files/reference/Derivative_Summary_Product.svg
+.. |odc_ard_image| image:: /_files/reference/ODC_Product_ID_LS_ARD.svg
+.. |odc_fc_image| image:: /_files/reference/ODC_Product_ID_LS_FC.svg

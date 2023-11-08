@@ -59,7 +59,7 @@ Dataset maturity flowchart
 
 |dataset_maturity_flowchart|
 
-.. |dataset_maturity_flowchart| image:: ./images/dataset_maturity_flowchart.drawio.svg
+.. |dataset_maturity_flowchart| image:: /_files/reference/dataset_maturity_flowchart.drawio.svg
 
 **Tip:** to view larger, right-click then select **open image in new tab**
 
