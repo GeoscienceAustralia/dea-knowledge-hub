@@ -2,7 +2,7 @@
 
 ## Use constraints
 
-Use of the NSD is subject to [NSD Terms of Service](https://cmi.ga.gov.au/sites/default/files/2022-10/NSD_Terms_of_Service.pdf). Please read the Terms before accessing the Service.
+Use of the NSD is subject to [NSD Terms of Service](/_files/cmi/NSD_Terms_of_Service.pdf). Please read the Terms before accessing the Service.
 
 ## Frequently asked questions
 
@@ -17,7 +17,7 @@ Use of the NSD is subject to [NSD Terms of Service](https://cmi.ga.gov.au/sites/
 
 4) Get started with the NSD: Select "Database" from the top left-hand corner of the client, then "Create a user account". See below: 
 
-![connection_tab](/sites/default/files/inline-images/connection.jpg)
+![connection_tab](/_files/cmi/connection.jpg)
 
 To access the service enter the following information:
 
@@ -37,21 +37,21 @@ See the Details tab above for further information on navigation through the Spec
 
 ### Known issues
 
-Click here to view [Known Issues](https://cmi.ga.gov.au/sites/default/files/2022-10/NSD_Known_Issues_List.pdf). If you are experiencing connectivity issues, please refer to Note 1 relating to the Java Runtime Environment. If you encounter a new issue please contact [NSDB\_Manager@ga.gov.au](mailto:NSDB_Manager@ga.gov.au) with details of the issue.
+Click here to view [Known Issues](/_files/cmi/NSD_Known_Issues_List.pdf). If you are experiencing connectivity issues, please refer to Note 1 relating to the Java Runtime Environment. If you encounter a new issue please contact [NSDB\_Manager@ga.gov.au](mailto:NSDB_Manager@ga.gov.au) with details of the issue.
 
 ### Contribute your data to the NSD
 
-If you have spectral data collected in Australia, and have relevant metadata and collection information you can contribute this data to be hosted on the NSD. Please familiarise yourself with the [Metadata Standard](https://cmi.ga.gov.au/sites/default/files/2022-10/NSD_Metadata_Standard.pdf), and follow the steps below to contribute:
+If you have spectral data collected in Australia, and have relevant metadata and collection information you can contribute this data to be hosted on the NSD. Please familiarise yourself with the [Metadata Standard](/_files/cmi/NSD_Metadata_Standard.pdf), and follow the steps below to contribute:
 
 1) Ensure you adhere to the Metadata Standard and that your dataset meets minimum requirements. Meeting the metadata standard can be as simple as providing GPS information for spatial data, or species images, description or the scientific name for end-member spectra. Spectra submitted without metadata are unsuitable and won't be accepted.
 
-2) Contact the NSD manager: [NSDB\_Manager@ga.gov.au](mailto:NSDB_Manager@ga.gov.au). In your email include the size of the dataset you wish to ingest and confirm that you meet the [Metadata Standard](https://cmi.ga.gov.au/sites/default/files/2022-10/NSD_Metadata_Standard.pdf), and have read the [Technical usage guide](https://cmi.ga.gov.au/sites/default/files/2022-10/NSD_General_Guide.pdf) & [Write access guide](https://cmi.ga.gov.au/sites/default/files/2022-10/NSD_Write_Access_Guide.pdf).
+2) Contact the NSD manager: [NSDB\_Manager@ga.gov.au](mailto:NSDB_Manager@ga.gov.au). In your email include the size of the dataset you wish to ingest and confirm that you meet the [Metadata Standard](/_files/cmi/NSD_Metadata_Standard.pdf), and have read the [Technical usage guide](/_files/cmi/NSD_General_Guide.pdf) & [Write access guide](/_files/cmi/NSD_Write_Access_Guide.pdf).
 
 The guides will help you to understand the process of uploading your data and ingest data most efficiently. If you have further queries please enquire via email.
 
 The public server will allow you to view & download data, not upload it. The NSD manager will provide instruction on how to access the upload server.
 
-#### Use of the NSD service is subject to [NSD Terms of Service](https://cmi.ga.gov.au/sites/default/files/2022-10/NSD_Terms_of_Service.pdf). Data contributed must meet the NSD [Metadata Standard](https://cmi.ga.gov.au/sites/default/files/2022-10/NSD_Metadata_Standard.pdf).
+#### Use of the NSD service is subject to [NSD Terms of Service](/_files/cmi/NSD_Terms_of_Service.pdf). Data contributed must meet the NSD [Metadata Standard](/_files/cmi/NSD_Metadata_Standard.pdf).
 
 ### Digital Object Identifier (DOI) Minting
 
