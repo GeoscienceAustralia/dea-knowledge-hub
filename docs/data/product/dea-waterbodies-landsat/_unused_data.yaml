@@ -4,15 +4,16 @@
 
 cmi_node: 693
 cmi_url: https://cmi.ga.gov.au/data-products/dea/693/dea-waterbodies-landsat
-published_date: '2022-01-27'
+published_date: "2022-01-27"
 author: C. K. @ ga.gov.au
 created: 2021-11-05T16:24:07+1100
 
-# Basic
+# Basics tab
 
 program: dea
 theme: Inland water
 catalogue: DEA Water Observations (WOfS)
+collection_slug: geoscience-australia-landsat-collection-3
 is_deprecated: null
 is_primary_record: null
 project_leader: V. N. @ ga.gov.au
@@ -23,7 +24,7 @@ related_items:
   - DEA Waterbodies (Landsat, DEPRECATED)
 anzsrc_research_code: null
 
-# Access
+# Access tab
 
 map_names:
   - DEA Maps
@@ -35,7 +36,7 @@ time_span_full:
   start: null
   end: null
 
-# Details
+# Details tab
 
 relevant_websites:
   - link: https://www.dea.ga.gov.au/products/dea-waterbodies/faq
@@ -43,7 +44,7 @@ relevant_websites:
   - link: https://www.dea.ga.gov.au/products/dea-waterbodies/user-guide
     name: DEA Waterbodies user guide
 
-# Processing
+# Processing tab
 
 data_sources:
   - DEA Water Observations (Landsat)
@@ -58,22 +59,22 @@ schema_spatial_extent:
   max_longitude: null
   min_latitude: null
   max_latitude: null
-  coordinate_reference_system: 'Australian Albers / GDA94 (EPSG: 3577)'
+  coordinate_reference_system: "Australian Albers / GDA94 (EPSG: 3577)"
   coordinate_reference_system_units: metre
   cell_size_x: 30
   cell_size_y: 30
   pixel_origin: null
   spatial_extent:
     geo_type: Polygon
-    lat: '-26.800000000000'
-    long: '133.500000000000'
-    left: '109.700000000000'
-    top: '-9.300000000000'
-    right: '157.300000000000'
-    bottom: '-44.300000000000'
+    lat: "-26.800000000000"
+    long: "133.500000000000"
+    left: "109.700000000000"
+    top: "-9.300000000000"
+    right: "157.300000000000"
+    bottom: "-44.300000000000"
     geohash: null
 
-# Media
+# Media tab
 
 media:
   - file: /2021-12/SingleWBCaseStudy.jpg
@@ -86,7 +87,7 @@ case_studies: null
 header_image_alt: waterbodies
 files: null
 
-# Credits
+# Credits tab
 
 owners:
   - Commonwealth of Australia (Geoscience Australia)
@@ -104,7 +105,7 @@ media_contacts:
   - Geoscience Australia - GA Media Hotline
 rights_statement: © Commonwealth of Australia (Geoscience Australia) 2022. [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/.).
 data_source_contacts:
-  - 'Geoscience Australia - Team Leader, Applications and Systems Support, NEMO '
+  - "Geoscience Australia - Team Leader, Applications and Systems Support, NEMO "
 approvers_checklist: null
 approvers_checklist_hprm_reference: D2022-3017
 pmp_hprm_reference: null

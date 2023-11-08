@@ -1,0 +1,66 @@
+# Overview
+
+title: DEA High and Low Tide Imagery (Landsat)
+long_title: "High Tide and Low Tide Composites 25m 2.0.0 "
+header_image: /_files/cmi/HLTCv2.png
+version: 2.0.0
+is_latest_version: true
+product_type: Derivative
+spatial_data_type: Raster
+time_span:
+  start: null
+  end: null
+update_frequency: As needed
+product_ids:
+  - high_tide_comp_20p
+  - low_tide_comp_20p
+
+parent_products:
+  name: null
+  link: null
+collection:
+  name: Geoscience Australia Landsat Collection 2 (DEPRECATED)
+  link: null
+dois: null
+nci:
+  name: null
+  code: null
+
+tags:
+  - geoscience_australia_landsat_collection_2_deprecated
+  - geomedian
+  - tidal_modelling
+  - nbart
+
+# Access
+
+maps:
+  - link: https://maps.dea.ga.gov.au
+    name: null
+
+explorers: null
+
+data:
+  - link: http://dapds00.nci.org.au/thredds/catalogs/fk4/hltc_2_0.html
+    name: NCI - THREDDS
+
+code_examples:
+  - link: https://docs.dea.ga.gov.au/notebooks/DEA_products/DEA_High_and_Low_Tide_Imagery.html
+    name: Jupyter notebook
+
+web_services:
+  - link: http://gsky.nci.org.au/ows/dea?service=WMS&amp;amp;version=1.3.0&amp;amp;request=GetCapabilities
+    name: GSKY WMS
+
+ecat:
+  - id: "113843"
+
+# Settings
+
+enable_overview: true
+enable_access: true
+enable_details: true
+enable_quality: true
+enable_history: true
+enable_credits: true
+

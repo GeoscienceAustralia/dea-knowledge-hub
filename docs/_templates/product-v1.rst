@@ -267,7 +267,7 @@
           {% if valid_ecat %}
           * - **{{ ecat_label }}**
             - {% for item in valid_ecat %}
-              * `ecat {{ item.id }} <https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/{{ item.id }}>`_
+              * `eCat {{ item.id }} <https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/{{ item.id }}>`_
               {% endfor %}
             -
           {% endif %}

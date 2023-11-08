@@ -1,0 +1,61 @@
+# Overview
+
+title: DEA Fractional Cover Percentiles (Landsat)
+long_title: Geoscience Australia Landsat Fractional Cover Percentiles Collection 3
+header_image: /_files/cmi/FractionalCover1_0.jpg
+version: 3.0.0
+is_latest_version: true
+product_type: Derivative
+spatial_data_type: Raster
+time_span:
+  start: null
+  end: null
+update_frequency: As needed
+product_ids:
+  - ga_ls_fc_pc_cyear_3
+
+parent_products:
+  name: null
+  link: null
+collection:
+  name: Geoscience Australia Landsat Collection 3
+  link: null
+dois: null
+nci:
+  name: null
+  code: null
+
+tags:
+  - geoscience_australia_landsat_collection_3
+  - green_vegetation
+  - non_green_vegetation
+  - bare_soil
+
+# Access
+
+maps:
+  - link: https://maps.dea.ga.gov.au/
+    name: null
+
+explorers: null
+
+data:
+  - link: https://data.dea.ga.gov.au/?prefix=derivative/ga_ls_fc_pc_cyear_3/
+    name: Digital Earth Australia - Public Data
+
+code_examples: null
+
+web_services: null
+
+ecat:
+  - id: "145501"
+
+# Settings
+
+enable_overview: true
+enable_access: true
+enable_details: true
+enable_quality: true
+enable_history: true
+enable_credits: true
+

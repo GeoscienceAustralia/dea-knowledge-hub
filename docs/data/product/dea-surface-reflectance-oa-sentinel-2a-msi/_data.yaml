@@ -1,0 +1,77 @@
+# Overview
+
+title: DEA Surface Reflectance OA (Sentinel-2A MSI)
+long_title: Geoscience Australia Sentinel-2A Observation Attributes Collection 3
+header_image: null
+version: 3.2.1
+is_latest_version: true
+product_type: Baseline
+spatial_data_type: Raster
+time_span:
+  start: null
+  end: null
+update_frequency: As needed
+product_ids:
+  - ga_s2am_ard_3
+
+parent_products:
+  name: null
+  link: null
+collection:
+  name: Geoscience Australia Sentinel-2 Collection 3
+  link: null
+dois:
+  - 10.26186/146568
+nci:
+  name: ga_s2am_ard_3
+  code: ka08
+
+tags:
+  - geoscience_australia_sentinel_2_collection_3
+  - analysis_ready_data
+  - satellite_images
+  - earth_observation
+  - observation_attributes
+
+# Access
+
+maps:
+  - link: https://maps.dea.ga.gov.au/
+    name: null
+
+explorers:
+  - link: https://explorer-aws.dea.ga.gov.au/products/ga_s2am_ard_3
+    name: DEA Explorer (AWS)
+  - link: https://explorer-nci.dea.ga.gov.au/products/ga_s2am_ard_3
+    name: " DEA Explorer (NCI)"
+  - link: https://explorer-aws.dea.ga.gov.au/stac
+    name: https://explorer-aws.dea.ga.gov.au/stac
+
+data:
+  - link: https://data.dea.ga.gov.au/?prefix=baseline/ga_s2am_ard_3/
+    name: DEA Public Data on AWS
+  - link: https://dapds00.nci.org.au/thredds/catalog/ka08/ga_s2am_ard_3/catalog.html
+    name: NCI THREDDS
+
+code_examples:
+  - link: https://docs.dea.ga.gov.au/notebooks/DEA_products/DEA_Sentinel2_Surface_Reflectance.html
+    name: DEA Notebooks
+  - link: https://app.sandbox.dea.ga.gov.au/
+    name: DEA Sandbox (product = ga_s2am_ard_3)
+
+web_services:
+  - link: https://ows.dea.ga.gov.au
+    name: DEA OGC Web Services (layer name = ga_s2am_ard_3)
+
+ecat:
+  - id: "146568"
+
+# Settings
+
+enable_overview: true
+enable_access: true
+enable_details: true
+enable_quality: true
+enable_history: true
+enable_credits: true
+

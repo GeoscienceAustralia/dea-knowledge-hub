@@ -2,27 +2,32 @@
 
 title: DEA Hotspots
 long_title: Digital Earth Australia Hotspots
-header_image: ./images/hotspots.jpg
+header_image: /_files/cmi/hotspots.jpg
 version: 1.0.0
-product_ids: null
-update_frequency: Daily
 is_latest_version: true
 product_type: Data service
 spatial_data_type: Vector
-collection:
-  name: null
-  link: null
-collection_slug: null
-dois: null
 time_span:
   start: 12 Mar 2014
   end: 31 Dec 2098
+update_frequency: Daily
+product_ids: null
+
 parent_products:
   name: null
   link: null
+collection:
+  name: null
+  link: null
+dois: null
 nci:
   name: null
   code: null
+
+tags:
+  - bushfires
+  - emergency_management
+  - satellite_imagery
 
 # Access
 
@@ -33,37 +38,25 @@ explorers: null
 data:
   - link: https://hotspots.dea.ga.gov.au/
     name: DEA Hotspots
-    image: null
   - link: https://hotspots.dea.ga.gov.au/login
     name: DEA Hotspots Secure Access
-    image: null
   - link: https://hotspots.dea.ga.gov.au/files
     name: DEA Hotspots Files site
-    image: null
 
 code_examples: null
 
 web_services:
   - link: https://hotspots.dea.ga.gov.au/geoserver/wms?service=wms&version=1.1.1&request=getcapabilities
     name: "DEA Hotspots Web Mapping Service "
-    image: null
   - link: https://hotspots.dea.ga.gov.au/geoserver/wfs?service=wfs&version=1.1.1&request=getcapabilities
     name: DEA Hotspots Web Feature Service
-    image: null
   - link: https://hotspots.dea.ga.gov.au/geoserver/wms/kml?layers=public:hotspots_three_days
     name: KML file access (last 3 days)
-    image: null
-  - link: https://hotspots.dea.ga.gov.au/products/recent-hotspots.json
+  - link: https://hotspots.dea.ga.gov.au/data/recent-hotspots.json
     name: GeoJSON file access (last 3 days)
-    image: null
 
 ecat:
   - id: "111881"
-
-tags:
-  - bushfires
-  - emergency_management
-  - satellite_imagery
 
 # Settings
 
@@ -73,3 +66,4 @@ enable_details: true
 enable_quality: true
 enable_history: true
 enable_credits: true
+

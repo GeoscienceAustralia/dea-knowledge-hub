@@ -1,0 +1,67 @@
+# Overview
+
+title: DEA Water Observations - Provisional (Sentinel-2 NRT)
+long_title: Geoscience Australia Sentinel-2 Near Real Time Water Observations Provisional Collection 3
+header_image: /_files/cmi/S2_WO_Provisional_Gulf_20230320_0.png
+version: 1.1.6
+is_latest_version: true
+product_type: Derivative
+spatial_data_type: Raster
+time_span:
+  start: null
+  end: null
+update_frequency: Daily
+product_ids:
+  - ga_s2_wo_provisional_3
+
+parent_products:
+  name: null
+  link: null
+collection:
+  name: Geoscience Australia Sentinel-2 Collection 3
+  link: null
+dois:
+  - 10.26186/146257
+nci:
+  name: null
+  code: null
+
+tags:
+  - geoscience_australia_sentinel_2_collection_3
+  - water_detection
+  - water
+  - sentinel
+  - sentinel_2
+
+# Access
+
+maps:
+  - link: https://maps.dea.ga.gov.au/
+    name: null
+
+explorers: null
+
+data:
+  - link: https://data.dea.ga.gov.au/?prefix=derivative/ga_s2_wo_provisional_3/
+    name: Digital Earth Australia - Public Data
+
+code_examples:
+  - link: https://docs.dea.ga.gov.au/notebooks/DEA_products/DEA_Water_Observations.html
+    name: Jupyter notebook
+
+web_services:
+  - link: https://ows.dea.ga.gov.au/
+    name: Digital Earth Australia OGC Web Services
+
+ecat:
+  - id: eCat record
+
+# Settings
+
+enable_overview: true
+enable_access: true
+enable_details: true
+enable_quality: true
+enable_history: true
+enable_credits: true
+

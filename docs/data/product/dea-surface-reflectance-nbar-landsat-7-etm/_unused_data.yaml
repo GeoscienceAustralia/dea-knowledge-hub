@@ -1,0 +1,118 @@
+# Unused data migrated from the CMI. May be outdated.
+
+# General
+
+cmi_node: 476
+cmi_url: https://cmi.ga.gov.au/data-products/dea/476/dea-surface-reflectance-nbar-landsat-7-etm
+published_date: "2019-11-26"
+author: J. S. @ ga.gov.au
+created: 2018-03-12T12:00:00+1100
+
+# Basics tab
+
+program: dea
+theme: Baseline satellite data
+catalogue: DEA Surface Reflectance
+collection_slug: geoscience-australia-landsat-collection-3
+is_deprecated: null
+is_primary_record: null
+project_leader: c...i @ ga.gov.au
+branch_head: c...i @ ga.gov.au
+related_items:
+  - DEA Surface Reflectance (Landsat 7 ETM+)
+  - DEA Surface Reflectance NBART (Landsat 7 ETM+)
+  - DEA Surface Reflectance OA (Landsat 7 ETM+)
+anzsrc_research_code: null
+
+# Access tab
+
+map_names: null
+ecat_url: http://pid.geoscience.gov.au/dataset/ga/132310
+doi_url: null
+open_data_cube_configuration:
+  - " https://github.com/GeoscienceAustralia/dea-config/tree/master/dev_3-0-0/products/ga-landsat-ard-3-0-0"
+security_classification: Unclassified
+time_span_full:
+  start: null
+  end: null
+
+# Details tab
+
+relevant_websites: null
+
+# Processing tab
+
+data_sources:
+  - USGS Collection 1 Landsat 7 Enhanced Thematic Mapper Plus
+  - SRTM DSM/DEM data
+  - Ephemeris Data
+  - Aerosol Optical Depth
+  - Precipitable Water for Entire Atmosphere
+  - MCD43A1 Collection 6
+  - Kuruzc 2005 TOA Solar Irradiance
+  - Ozone data
+major_algorithms: null
+schema_spatial_extent:
+  temporal_extent:
+    start: 1986-12-31T13:00:01+1100
+    end: null
+  min_longitude: null
+  max_longitude: null
+  min_latitude: null
+  max_latitude: null
+  coordinate_reference_system: Universal Transverse Mercator (variable)
+  coordinate_reference_system_units: metre
+  cell_size_x: 30
+  cell_size_y: 30
+  pixel_origin: Centre
+  spatial_extent:
+    geo_type: null
+    lat: null
+    long: null
+    left: null
+    top: null
+    right: null
+    bottom: null
+    geohash: null
+
+# Media tab
+
+media: null
+case_studies: null
+header_image_alt: null
+files: null
+
+# Credits tab
+
+owners:
+  - Commonwealth of Australia (Geoscience Australia)
+custodians:
+  - Commonwealth of Australia (Geoscience Australia)
+principal_contributors:
+  - F. L.
+  - D. J.
+  - J. S.
+  - L. W. W.
+  - P. D.
+  - A. V.
+  - I. A.
+  - J. H.
+  - S. O.
+  - M. T.
+subject_matter_experts:
+  - F. L.
+  - D. J.
+  - J. S.
+publishing_entities:
+  - Commonwealth of Australia (Geoscience Australia)
+metadata_contacts:
+  - Geoscience Australia - Team Leader, Product Management, Operations Section NEMO
+media_contacts:
+  - Geoscience Australia - GA Media Hotline
+rights_statement: © Commonwealth of Australia (Geoscience Australia) 2020. [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/.).
+data_source_contacts:
+  - "Geoscience Australia - Team Leader, Applications and Systems Support, NEMO "
+approvers_checklist: null
+approvers_checklist_hprm_reference: null
+pmp_hprm_reference: null
+

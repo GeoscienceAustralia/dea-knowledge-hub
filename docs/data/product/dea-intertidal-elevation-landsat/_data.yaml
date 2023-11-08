@@ -1,0 +1,67 @@
+# Overview
+
+title: DEA Intertidal Elevation (Landsat)
+long_title: "National Intertidal Digital Elevation Model 25m 1.0.0 "
+header_image: /_files/cmi/nidem 2 - crop 3_1.jpg
+version: 1.0.0
+is_latest_version: true
+product_type: Derivative
+spatial_data_type: Raster
+time_span:
+  start: null
+  end: null
+update_frequency: As needed
+product_ids:
+  - nidem
+
+parent_products:
+  name: null
+  link: null
+collection:
+  name: Geoscience Australia Landsat Collection 2 (DEPRECATED)
+  link: null
+dois: null
+nci:
+  name: null
+  code: null
+
+tags:
+  - geoscience_australia_landsat_collection_2_deprecated
+  - nidem
+  - beaches
+  - tidal_flats
+  - reefs
+  - nbart
+
+# Access
+
+maps:
+  - link: http://maps.dea.ga.gov.au/#share=s-SgkrzFPegdMGCH6V6zkgEWLJTn
+    name: null
+
+explorers: null
+
+data:
+  - link: http://pid.geoscience.gov.au/dataset/ga/123678
+    name: "Continental GeoTIFF mosaics (click \"NIDEM mosaics\" on top-right) "
+  - link: http://dapds00.nci.org.au/thredds/catalogs/fk4/nidem_1_0.html
+    name: THREDDS data access
+
+code_examples: null
+
+web_services:
+  - link: https://ows.services.dea.ga.gov.au
+    name: "WMS services (layer name: NIDEM)"
+
+ecat:
+  - id: "123678"
+
+# Settings
+
+enable_overview: true
+enable_access: true
+enable_details: true
+enable_quality: true
+enable_history: true
+enable_credits: true
+

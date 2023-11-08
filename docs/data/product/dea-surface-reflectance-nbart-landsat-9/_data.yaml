@@ -1,0 +1,72 @@
+# Overview
+
+title: DEA Surface Reflectance NBART (Landsat 9)
+long_title: Geoscience Australia Landsat 9 OLI-TIRS NBART Collection 3
+header_image: null
+version: 3.0.0
+is_latest_version: true
+product_type: Baseline
+spatial_data_type: Raster
+time_span:
+  start: null
+  end: null
+update_frequency: As needed
+product_ids:
+  - ga_ls9c_ard_3
+
+parent_products:
+  name: null
+  link: null
+collection:
+  name: Geoscience Australia Landsat Collection 3
+  link: null
+dois:
+  - 10.26186/148693
+nci:
+  name: null
+  code: null
+
+tags:
+  - geoscience_australia_landsat_collection_3
+  - analysis_ready_data
+  - satellite_images
+  - earth_observation
+  - landsat
+  - baseline_satellite_data
+
+# Access
+
+maps:
+  - link: https://maps.dea.ga.gov.au/
+    name: null
+
+explorers: null
+
+data:
+  - link: https://dapds00.nci.org.au/thredds/catalog/xu18/catalog.html
+    name: NCI - THREDDS
+  - link: https://data.dea.ga.gov.au/?prefix=baseline/ga_ls9c_ard_3/
+    name: Digital Earth Australia - Public Data
+
+code_examples:
+  - link: https://docs.dea.ga.gov.au/notebooks/DEA_products/DEA_Landsat_Surface_Reflectance.html
+    name: Jupyter notebook
+
+web_services:
+  - link: https://ows.dea.ga.gov.au/?service=WMS&version=1.3.0&request=GetCapabilities
+    name: Web Map Service (WMS)
+  - link: https://ows.dea.ga.gov.au/?service=WCS&request=GetCapabilities&version=2.0.0
+    name: Web Coverage Service (WCS)
+
+ecat:
+  - id: "148693"
+
+# Settings
+
+enable_overview: true
+enable_access: true
+enable_details: true
+enable_quality: true
+enable_history: true
+enable_credits: true
+
