@@ -1,7 +1,7 @@
 .. _explorer_guide:
 
-Digital Earth Australia Explorer
-========
+DEA Explorer
+============
 
 How do we know specifically **where** and **when** data is available? Before we start any analysis, we can answer this question by verifying existing data on the Digital Earth Australia (DEA) Metadata Explorer.
 The Metadata Explorer can be found at https://explorer.dea.ga.gov.au/.
@@ -27,6 +27,7 @@ Open https://explorer.dea.ga.gov.au/. This will display the Metadata Explorer us
    :align: center
    :alt: DEA Explorer interface
 
+
 The DEA Metadata Explorer has four main sections.
 
 1. **Product selection:** This shows the currently-selected product. Click the selected product name to open the products dropdown menu.
@@ -43,11 +44,13 @@ Select the Landsat 9 Analysis Ready product
    :align: center
    :alt: DEA Explorer product selection
 
+
 2. Click the **time** bar to open the dropdown menu. Select **2022**. This will show all Landsat 9 datasets for 2022.
 
 .. figure:: /_static/DEA_explorer/DEA_explorer_select_year.png
    :align: center
    :alt: DEA Explorer year selection
+
 
 3. Click the **all months** bar to open the dropdown menu. Select **August**. This will show all the Landsat 9 datasets for August 2022.
 
@@ -55,17 +58,20 @@ Select the Landsat 9 Analysis Ready product
    :align: center
    :alt: DEA Explorer month selection
 
+
 4. Click the **all days** bar to open the dropdown menu. Select **11th**. This will show all the Landsat 9 datasets for 11 August 2022.
 
 .. figure:: /_static/DEA_explorer/DEA_explorer_select_day.png
    :align: center
    :alt: DEA Explorer day selection
 
+
 5. The **map display** will now show all the Landsat 9 datasets for 11 August 2022 as blue shaded boxes. Use the **+** button on the map to zoom in, and click and drag to pan the map.
 
 .. figure:: /_static/DEA_explorer/DEA_explorer_available_data.png
    :align: center
    :alt: DEA Explorer available data
+
 
 We can see that there is only data available for some parts of Australia. Let's take a closer look at Adelaide.
 
@@ -77,6 +83,7 @@ Use the map's **+** button to zoom in on Adelaide.
 .. figure:: /_static/DEA_explorer/DEA_explorer_Adelaide.png
    :align: center
    :alt: DEA Explorer zoom in on Adelaide
+
 
 When we hover over Adelaide, we can see there there is one dataset for Adelaide for the 11 August 2022. Click on the dataset on the map.
 We can now see a preview of the data for that tile, as well as all the metadata associated with that dataset below the map viewer.
