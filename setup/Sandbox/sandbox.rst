@@ -98,9 +98,9 @@ Available Data
 --------------
 
 The available data for the DEA Sandbox can be viewed through the
-`DEA Sandbox Explorer`_ tool.
+`DEA Explorer`_ tool.
 
-.. _DEA Sandbox Explorer: https://explorer.sandbox.dea.ga.gov.au
+.. _DEA Explorer: explorer_guide.rst
 
 Where can I get help?
 ---------------------
