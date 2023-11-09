@@ -4,24 +4,24 @@ Digital Earth Australia Explorer
 ========
 
 How do we know specifically **where** and **when** data is available? Before we start any analysis, we can answer this question by verifying existing data on the Digital Earth Australia (DEA) Metadata Explorer.
-The Metadata Explorer can be found at https://explorer.prod.dea.ga.gov.au/.
+The Metadata Explorer can be found at https://explorer.dea.ga.gov.au/.
 
 Map or Explorer?
 ----------------
-The `DEA Metadata Explorer <https://explorer.prod.dea.ga.gov.au/>`_ and
+The `DEA Metadata Explorer <https://explorer.dea.ga.gov.au/>`_ and
 `Digital Earth Australia (DEA) Maps <https://maps.dea.ga.gov.au/>`_ look similar, but they are designed for different purposes.
 
 Use the `DEA Maps <https://maps.dea.ga.gov.au/>`_ if you:
 
 * Want to see what the product or dataset looks like and interact with the data in a map viewer display
 
-Use the `DEA Metadata Explorer <https://explorer.prod.dea.ga.gov.au/>`_ if you:
+Use the `DEA Metadata Explorer <https://explorer.dea.ga.gov.au/>`_ if you:
 
 * Want to know exactly where and when you can find data
 
 Open the DEA Metadata Explorer
 ------------------------------
-Open https://explorer.prod.dea.ga.gov.au/. This will display the Metadata Explorer user interface.
+Open https://explorer.dea.ga.gov.au/. This will display the Metadata Explorer user interface.
 
 .. figure:: /_static/DEA_explorer/DEA_explorer_interface_annotated.png
    :align: center
