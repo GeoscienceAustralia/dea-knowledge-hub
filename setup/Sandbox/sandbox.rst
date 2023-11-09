@@ -100,7 +100,7 @@ Available Data
 The available data for the DEA Sandbox can be viewed through the
 `DEA Explorer`_ tool.
 
-.. _DEA Explorer: explorer_guide.rst
+.. _DEA Explorer: ../explorer_guide.rst
 
 Where can I get help?
 ---------------------
