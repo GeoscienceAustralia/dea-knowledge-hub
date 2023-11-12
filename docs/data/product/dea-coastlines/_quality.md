@@ -14,7 +14,7 @@ An extensive validation against independent coastal monitoring datasets was cond
 * Victorian Coastal Monitoring Program (Pucino et al., 2021)
 * Western Australia Department of Transport (WA DoT) Coastline Movements (Department of Transport, 2009)
 
-![Validation sites](/sites/default/files/inline-images/Figure1_validation_temporal%20%281%29.png)
+![Validation sites](/_files/cmi/Figure1_validation_temporal%20%281%29.png)
 
 ###### Figure 4: The spatial and temporal distribution of the independent validation data that was compared against DEA Coastlines annual shorelines and rates of change.   
  
@@ -54,7 +54,7 @@ Significant transects only:
 
 > *For a more detailed discussion of rates of change validation results, please refer to [Bishop-Taylor et al. 2021](https://www.sciencedirect.com/science/article/pii/S0034425721004545).*
 
-![Validation results](/sites/default/files/inline-images/Figure4_subpixel%20%281%29.png)
+![Validation results](/_files/cmi/Figure4_subpixel%20%281%29.png)
 
 ###### Figure 5: DEA Coastlines annual shorelines compared against a) aerial photogrammetry-derived annual ~0 m AMSL shorelines from the Western Australian Department of Transport Coastline Movements dataset, and b) transect-based in-situ validation data for three example locations that demonstrate sub-pixel precision shoreline extraction: Narrabeen Beach, Tugun Beach, and West Beach. DEA Coastlines transect data in panel b represent the 0 m AMSL Median Annual Shoreline Position shoreline proxy, and have been corrected for consistent local inland biases to assess the ability to capture relative coastline dynamics through time.
 
@@ -91,7 +91,7 @@ Significant transects only:
 * To compare annual shorelines to validation datasets, multiple validation observations in a year were combined into a single median measurement of coastline position. In the case where only a single validation observation was taken for a year, this single observation may not be reflective of typical shoreline conditions across the entire year period. Because of this, validation results are expected to be more reliable for validation datasets with multiple observations per year.
 * The current validation approach was biased towards Australia's south-western, southern and south-eastern coastlines due to the availability of historical coastal monitoring data. This bias prevented us from including more complex intertidal environments in our validation, which is likely to have inflated the accuracy of our results due to issues outlined above.
 
-![Intertidal issues](/sites/default/files/inline-images/Figure10_intertidal%20%281%29.png)
+![Intertidal issues](/_files/cmi/Figure10_intertidal%20%281%29.png)
 
 ###### Figure 6: Potentially spurious shorelines in macrotidal coastal regions characterised by gently sloped tidal flat environments: a) Broad Sound and b) Shoalwater Bay, Queensland. Dashed shorelines indicate data that was flagged as affected by tidal modelling issues based on MNDWI standard deviation. In these locations, the TPXO 8 tidal model was unable to effectively sort satellite observations by tide heights, resulting in output shorelines that did not adequately suppress the influence of the tide.
 

@@ -41,11 +41,11 @@ By default, the map will show hotspots of coastal change at continental scale. R
 
 More detailed rates of change points will be displayed as you zoom in. To view a time series chart of how a coastal region or area of coastline has changed over time, click on any point (press "Expand" on the pop-up for more detail):
 
-![DEA Maps zoom example](/sites/default/files/inline-images/DEACoastLines_DEAMaps_1.gif)
+![DEA Maps zoom example](/_files/cmi/DEACoastLines_DEAMaps_1.gif)
 
 Zoom in further to view individual annual shorelines:
 
-![DEA Maps coastlines example](/sites/default/files/inline-images/DEACoastLines_DEAMaps_2.gif)
+![DEA Maps coastlines example](/_files/cmi/DEACoastLines_DEAMaps_2.gif)
 
 ***Note:** To view a DEA Coastlines layer that is not currently visible (e.g. rates of change points at full zoom), each layer can be added to the map individually from the `Sea, ocean and coast > DEA Coastlines > Supplementary data` directory.*
 

@@ -88,7 +88,7 @@ Annual shorelines include the following attribute fields:
 * *tide\_datum:* The tide datum of each annual shoreline (e.g. "0 m AMSL").
 * *id\_primary:* The name of the annual shoreline's Primary sediment compartment from the [Australian Coastal Sediment Compartments](https://ecat.ga.gov.au/geonetwork/srv/api/records/21a23d9a-00dd-ab19-e053-10a3070a2746) framework
 
-###### ![DEA CoastLines coastline layer](/sites/default/files/inline-images/deacl_coastlines.JPG)  
+###### ![DEA CoastLines coastline layer](/_files/cmi/deacl_coastlines.JPG)  
   
 Figure 1: Annual coastlines from DEA Coastlines visualised on the [interactive DEA Coastlines web map](https://maps.dea.ga.gov.au/#share=s-DEACoastlines&playStory=1)
 
@@ -96,7 +96,7 @@ Figure 1: Annual coastlines from DEA Coastlines visualised on the [interactive D
 
 A point dataset providing robust rates of coastal change for every 30 m along Australia’s non-rocky coastlines (Figure 2). The most recent annual shoreline is used as a baseline for measuring rates of change.
 
-###### ![DEA CoastLines rates of change statistics layer](/sites/default/files/inline-images/deacl_statistics_2.JPG)  
+###### ![DEA CoastLines rates of change statistics layer](/_files/cmi/deacl_statistics_2.JPG)  
   
 Figure 2: Rates of change points from DEA Coastlines visualised on the [interactive DEA Coastlines web map](https://maps.dea.ga.gov.au/#share=s-DEACoastlines&playStory=1)
 
@@ -130,7 +130,7 @@ Rates of change points contains the following attribute columns that can be acce
 
 Three points layers summarising coastal change within moving 1 km, 5 km and 10km windows along the coastline (Figure 3). These layers are useful for visualising regional or continental-scale patterns of coastal change. 
 
-###### ![DEA CoastLines summary layer](/sites/default/files/inline-images/deacl_summary.JPG)  
+###### ![DEA CoastLines summary layer](/_files/cmi/deacl_summary.JPG)  
   
 Figure 3: Coastal change hotspots from DEA Coastlines visualised on the [interactive DEA Coastlines web map](https://maps.dea.ga.gov.au/story/DEACoastlines)
 

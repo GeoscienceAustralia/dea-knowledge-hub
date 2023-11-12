@@ -19,6 +19,6 @@ To view and access the data interactively:
 
 5) Chose the Percentile (10th, 50th, 90th) from the drop down Styles menu
 
-![DEA Maps menu for choosing percentile](/sites/default/files/inline-images/Maps-percentiles%20dropdown%20menu.png)
+![DEA Maps menu for choosing percentile](/_files/cmi/Maps-percentiles dropdown menu.png)
 :::
 
