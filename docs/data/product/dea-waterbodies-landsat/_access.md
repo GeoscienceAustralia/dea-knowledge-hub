@@ -13,7 +13,7 @@ To explore DEA Waterbodies on the interactive DEA Maps platform, visit the link 
 
 and dismiss the overlay. DEA Waterbodies will already be loaded on the map.
 
-![DEA MAps with DEA Waterbodies loaded](/sites/default/files/inline-images/DEA_Maps_screenshot_DEAWaterbodies1.jpg)
+![DEA MAps with DEA Waterbodies loaded](/_files/cmi/DEA_Maps_screenshot_DEAWaterbodies1.jpg)
 
 To add DEA Waterbodies to DEA Maps manually:
 
@@ -27,6 +27,6 @@ To add DEA Waterbodies to DEA Maps manually:
 
 See [Waterbodies user guide](https://www.dea.ga.gov.au/products/dea-waterbodies/user-guide) to discover how to get the most out of the DEA Maps presentation of DEA Waterbodoes including how to explore time series, and how to download the data from a particular time series.
 
-![DEA Maps loaded with DEA Waterbodies and showing Feature Information](/sites/default/files/inline-images/DEA_Maps_screenshot_DEAWaterbodies_FeatureInformation1.jpg)
+![DEA Maps loaded with DEA Waterbodies and showing Feature Information](/_files/cmi/DEA_Maps_screenshot_DEAWaterbodies_FeatureInformation1.jpg)
 :::
 

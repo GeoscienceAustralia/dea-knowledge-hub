@@ -6,7 +6,7 @@ Wetlands provide a wide range of ecosystem services including improving water qu
 
 The Wetlands Insight Tool (QLD) summarises how the amount of water, green vegetation, dry vegetation and bare soil varies over time within each wetland. It provides the user with the ability to compare how the wetland is behaving now with how it has behaved in the past.  This allows users to identify how changes in water availability have affected the wetland. It achieves this by presenting a combined view of Water Observations from Space, Tasseled Cap Wetness and Fractional Cover measurements from the Landsat series of satellites, summarised as a stacked line plot to show how that wetland has changed over time. 
 
-![Wetlands Insight Tool stacked line plot for a seasonally inundated wetland](/sites/default/files/inline-images/72035_EDWARD_RIVER_2a_sml.jpg)
+![Wetlands Insight Tool stacked line plot for a seasonally inundated wetland](/_files/cmi/72035_EDWARD_RIVER_2a_sml.jpg)
 
 % ## Data description
 
@@ -25,7 +25,7 @@ Care should be used when interpreting Wetlands Insight Tool (QLD) results as inc
 
 ## Technical information
 
-![Wetlands Insight Tool flow chart. A flow chart that begins with a pixel, separates it on whether the pixel is classified by WOfS into water or not-water. The next step separates the pixel on whether the Tasseled Cap Wetness is greater than -350. If yes, the pixel is classified as wet. If no, the pixel percentage cover values are returned from Fractional Cover of Vegetation as bare soil, dry vegetation and green vegetation percentages.  ](/sites/default/files/inline-images/WITflowChartv2_950x615.PNG)
+![Wetlands Insight Tool flow chart. A flow chart that begins with a pixel, separates it on whether the pixel is classified by WOfS into water or not-water. The next step separates the pixel on whether the Tasseled Cap Wetness is greater than -350. If yes, the pixel is classified as wet. If no, the pixel percentage cover values are returned from Fractional Cover of Vegetation as bare soil, dry vegetation and green vegetation percentages.  ](/_files/cmi/WITflowChartv2_950x615.PNG)
 
 Every pixel within a wetland polygon is evaluated using this decision tree at every time step, and the results are tabulated to create the input data to the stacked line plot for that wetland.
 

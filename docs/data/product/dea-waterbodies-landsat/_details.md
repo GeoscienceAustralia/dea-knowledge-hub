@@ -34,7 +34,7 @@ The DEA Waterbodies product is comprised of two key components:
 
 DEA Waterbodies is a polygon-based view of DEA Water Observations (DEA WO), derived through the automatic processing of DEA WO to identify the outlines of persistent waterbodies across Australia (Figure 1). 
 
-![Flow diagram outlining the steps taken to produce DEA Waterbodies polygons](/sites/default/files/inline-images/V2Workflow.JPG)
+![Flow diagram outlining the steps taken to produce DEA Waterbodies polygons](/_files/cmi/V2Workflow.JPG)
 
 ##### *Figure 1: Flow diagram outlining the steps taken to produce DEA Waterbodies v2 polygons*
 
@@ -65,7 +65,7 @@ In v2, the size has been lowered slightly to 2,700m2, which equates to 3 Landsat
 
 This change has resulted in the inclusion of some smaller waterbodies that were not mapped in v1 (Figure 2). 
 
-![Comparison of the number of smaller waterbodies in v1 compared to v2. The second panel shows some waterbodies that have been included in v2 that were missed in v1.](/sites/default/files/inline-images/WaterbodySize_0.JPG)
+![Comparison of the number of smaller waterbodies in v1 compared to v2. The second panel shows some waterbodies that have been included in v2 that were missed in v1.](/_files/cmi/WaterbodySize_0.JPG)
 
 ##### *Figure 2: Comparison of the size distributions of DEA Waterbodies v1 and v2. a) Size distribution for polygons smaller than 1km2. b) Small waterbodies identified in v2 that were not included in v1.*
 
@@ -83,7 +83,7 @@ Our automated waterbody polygon detection produces subpar results for large, ver
 
 As an example, Kati Thanda is a particularly complex polygon when mapped using automated methods, resulting in 3,118 polygons ranging from 900 m2 to 4,609 km2. Kati Thanda and Lake Everard in v1 and v2 are shown in Figure 3. 
 
-![Large, complex salt lakes in v1 were swapped with polygons from the Surface Hydrology dataset in v2](/sites/default/files/inline-images/SaltLakesSwap.JPG)
+![Large, complex salt lakes in v1 were swapped with polygons from the Surface Hydrology dataset in v2](/_files/cmi/SaltLakesSwap.JPG)
 
 ##### *Figure 3: Complex polygons replaced for large salt lakes in South Australia. Original polygons are shown in red in the foreground. The polygons that replaced these are shown in the background in blue. a) Focus on the northern edge of Kati Thanda, SA, showing the complexity of the automatically detected polygons. b) Lake Everard, SA.*
 

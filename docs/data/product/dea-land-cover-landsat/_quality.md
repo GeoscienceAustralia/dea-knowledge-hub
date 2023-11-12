@@ -6,13 +6,13 @@ The product was validated using 6000 points spatially distributed over A
 
 Table 2 contains the overall accuracy for all classes. The term ‘support’ refers to the number of validation points used in the calculation of that accuracy value.  
 
-![Overall accuracy of DEA Land Cover is 80%. 2010 accuracy is 82%, 2015 accuracy is 78%.](/sites/default/files/inline-images/overall-accuracy_0.PNG)
+![Overall accuracy of DEA Land Cover is 80%. 2010 accuracy is 82%, 2015 accuracy is 78%.](/_files/cmi/overall-accuracy_0.PNG)
 
 Table 3 contains per-class accuracy information. “Precision” refers to the ability of a classification model to return only relevant instances. “Recall” refers to the ability to identify all relevant instances. The “F1 score” is a combination of precision and recall and an overall measure of accuracy. Classes such as artificial surfaces, natural aquatic vegetation and water had high accuracies. Classifying cultivated terrestrial vegetation and bare surfaces was challenging and accuracies were the lowest of the six classes presented here.  
 
-![Table showing accuracy per class, including precision, recall, F1 score and support values per class. ](/sites/default/files/inline-images/per-class%20accuracy.PNG)
+![Table showing accuracy per class, including precision, recall, F1 score and support values per class. ](/_files/cmi/per-class%20accuracy.PNG)
 
-![table showing the agreement between assessors.](/sites/default/files/inline-images/inter-assessor-agreement.PNG)
+![table showing the agreement between assessors.](/_files/cmi/inter-assessor-agreement.PNG)
 
 #### Limitations of the Implementation Method
 
@@ -83,9 +83,9 @@ An additional limitation of the Landsat series is the availability of data due t
 
 The result of the availability of the satellites is that the most consistent data availability occurs when two satellites are in operation (most of the 2003 to present period). The least data availability is in 2011 – 2012 when only Landsat 7 was available with data containing the SLC-Off striping issue. The overall data availability for the Landsat satellites is shown in Table 5. The datasets used in this analysis are shown in Table 6. 
 
-![table detailing availability of different Landsat satellites since 1986 and any known issues.](/sites/default/files/inline-images/eo-limitations-table.PNG)
+![table detailing availability of different Landsat satellites since 1986 and any known issues.](/_files/cmi/eo-limitations-table.PNG)
 
-![datasets within DEA used to provide essential descriptor information](/sites/default/files/inline-images/DEA-datasets-used.PNG)
+![datasets within DEA used to provide essential descriptor information](/_files/cmi/DEA-datasets-used.PNG)
 
 % ## Quality assurance
 

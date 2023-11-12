@@ -10,7 +10,7 @@ The 30 metre resolution of Landsat imposes an intrinsic limitation on the Wetlan
 
 The period of time between when Landsat 5 ceased operations (November 2011) and Landsat 8 data became routinely available (May 2013) is likely to be inaccurate.  There will be some wetlands, close the centre of Landsat paths where Landsat 7 continued to capture suitable (gap free) data, however it is safer, as a general rule, to consider this period as 'low data quality'.
 
-![Wetlands Insight Tool stacked line plot for a seasonally inundated wetland](/sites/default/files/inline-images/72035_EDWARD_RIVER_2a_sml_0.jpg)
+![Wetlands Insight Tool stacked line plot for a seasonally inundated wetland](/_files/cmi/72035_EDWARD_RIVER_2a_sml_0.jpg)
 
 ## Quality assurance
 

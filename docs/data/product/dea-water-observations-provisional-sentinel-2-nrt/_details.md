@@ -31,7 +31,7 @@ The Water Observations from Space (WOfS) Water detection algorithm is used to ge
 
 **Table 1:** The table below describes the meaning of each bit set per pixel. Where multiple factors impeding a clear observation are detected all the respective bits will be set. For example a value of 136 indicates water (128) AND terrain shadow (8) were observed for the pixel.
 
-![Bit assignment for DEA_WO_3.1.6](https://cmi.ga.gov.au/sites/default/files/inline-images/DEA_WO_3_BitFieldTable_resized.png)
+![Bit assignment for DEA_WO_3.1.6](https://cmi.ga.gov.au/_files/cmi/DEA_WO_3_BitFieldTable_resized.png)
 
 Full details of the original algorithms and features of DEA Water Observations can be found in the Water Observations from Space paper by Mueller et al. (2016). [https://doi.org/10.1016/j.rse.2015.11.003](https://doi.org/10.1016/j.rse.2015.11.003)
 

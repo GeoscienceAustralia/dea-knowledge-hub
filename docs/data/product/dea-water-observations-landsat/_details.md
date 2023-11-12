@@ -35,7 +35,7 @@ This version (3.1.6) has been further updated with changes to the way different 
 
 The table below describes the meaning of each bit set per pixel in each WOFL. Where multiple factors impeding a clear observation are detected all the respective bits will be set. For example a value of 136 indicates water (128) AND terrain shadow (8) were observed for the pixel.
 
-![Bit assignment for DEA_WO_3.1.6](/sites/default/files/inline-images/DEA_WO_3_BitFieldTable_resized.png)
+![Bit assignment for DEA_WO_3.1.6](/_files/cmi/DEA_WO_3_BitFieldTable_resized.png)
 
 Full details of the original algorithms and features of DEA Water Observations can be found in the Water Observations from Space paper by Mueller et al. (2015).
 
