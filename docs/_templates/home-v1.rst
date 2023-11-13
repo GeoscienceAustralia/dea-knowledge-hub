@@ -20,8 +20,8 @@ Here you will find metadata for Geoscience Australia's earth observation data pr
       Knowledge Hub
       ^^^^^^^^^^^^^
 
-      {% for program_link in data.program_links %}
-      `{{ program_link.name }} <{{ program_link.link }}>`_
+      {% for item in data.knowledge_hub %}
+      `{{ item.name }} <{{ item.link }}>`_
       {% endfor %}
 
       `Get support <{{ config.html_context.support_link }}>`_
@@ -31,8 +31,8 @@ Here you will find metadata for Geoscience Australia's earth observation data pr
       Data Products
       ^^^^^^^^^^^^^
 
-      {% for theme in data.themes %}
-      `{{ theme.name }} <{{ theme.link }}>`_
+      {% for item in data.data_products %}
+      `{{ item.name }} <{{ item.link }}>`_
       {% endfor %}
    
    .. grid-item-card::
@@ -40,8 +40,8 @@ Here you will find metadata for Geoscience Australia's earth observation data pr
       DEA Notebooks
       ^^^^^^^^^
 
-      {% for use_link in data.use_links %}
-      `{{ use_link.name }} <{{ use_link.link }}>`_
+      {% for item in data.dea_notebooks %}
+      `{{ item.name }} <{{ item.link }}>`_
       {% endfor %}
 
 .. rubric:: About Digital Earth Australia

@@ -1,6 +1,18 @@
 title: Home
 
-themes:
+knowledge_hub:
+  - name: View all
+    link: /knowledge/
+  - name: About DEA
+    link: /knowledge/about/intro/
+  - name: Getting started with DEA
+    link: /knowledge/setup/README/
+  - name: DEA naming conventions
+    link: /knowledge/reference/collection_3_naming/
+  - name: Frequently asked questions
+    link: /knowledge/about/faq/
+
+data_products:
   - name: Baseline satellite data
     link: /data/theme/baseline-satellite-data
   - name: Land and vegetation
@@ -12,16 +24,16 @@ themes:
   - name: Hazards
     link: /data/theme/hazards
 
-use_links:
-  - name: Get started with DEA
-    link: example.com
-  - name: View all notebooks
-    link: example.com
-  - name: Use the DEA Tools package
-    link: example.com
-  - name: Additional resources
-    link: example.com
-
-program_links:
-  - name: View our service catalogue
-    link: example.com
+dea_notebooks:
+  - name: Beginner’s guide
+    link: /notebooks/Beginners_guide/README/
+  - name: DEA products
+    link: /notebooks/DEA_products/README/
+  - name: How-to guides
+    link: /notebooks/How_to_guides/README/
+  - name: Interactive apps
+    link: /notebooks/Interactive_apps/README/
+  - name: Real-world examples
+    link: /notebooks/Real_world_examples/README/
+  - name: DEA Tools package
+    link: /notebooks/Tools/
