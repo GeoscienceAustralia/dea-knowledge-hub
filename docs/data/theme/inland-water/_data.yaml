@@ -7,7 +7,7 @@ pages:
     image: /_files/cmi/PlaceholderWIT.PNG
   - name: DEA Water Observations
     link: /data/category/dea-water-observations/
-    image: /_files/cmi/WOfS-Burketown-Normanton QLD.png
+    image: /_files/cmi/WOfS-Burketown-Normanton-QLD.png
   - name: DEA Waterbodies
     link: /data/product/dea-waterbodies-landsat/
     image: /_files/cmi/waterbodies.jpg

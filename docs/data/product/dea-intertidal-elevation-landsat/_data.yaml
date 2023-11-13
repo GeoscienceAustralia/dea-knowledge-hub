@@ -2,7 +2,7 @@
 
 title: DEA Intertidal Elevation (Landsat)
 long_title: "National Intertidal Digital Elevation Model 25m 1.0.0 "
-header_image: /_static/cmi/nidem 2 - crop 3_1.jpg
+header_image: /_static/cmi/nidem_2_-_crop_3_1.jpg
 version: 1.0.0
 is_latest_version: true
 product_type: Derivative
@@ -43,7 +43,7 @@ explorers: null
 
 data:
   - link: http://pid.geoscience.gov.au/dataset/ga/123678
-    name: "Continental GeoTIFF mosaics (click \"NIDEM mosaics\" on top-right) "
+    name: 'Continental GeoTIFF mosaics (click "NIDEM mosaics" on top-right) '
   - link: http://dapds00.nci.org.au/thredds/catalogs/fk4/nidem_1_0.html
     name: THREDDS data access
 
@@ -64,4 +64,3 @@ enable_details: true
 enable_quality: true
 enable_history: true
 enable_credits: true
-

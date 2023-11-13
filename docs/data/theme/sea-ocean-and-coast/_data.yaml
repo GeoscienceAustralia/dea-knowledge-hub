@@ -10,7 +10,7 @@ pages:
     image: /_files/cmi/HLTCv2.png
   - name: DEA Intertidal Elevation (NIDEM)
     link: /data/product/dea-intertidal-elevation-landsat
-    image: /_static/cmi/nidem 2 - crop 3_1.jpg
+    image: /_files/cmi/nidem_2_-_crop_3_1.jpg
   - name: DEA Intertidal Extents (ITEM)
     link: /data/product/dea-intertidal-extents-landsat
-    image: /_static/cmi/intertidal extents.png
+    image: /_files/cmi/intertidal_extents.png
