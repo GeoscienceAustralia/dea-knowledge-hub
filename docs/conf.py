@@ -73,7 +73,7 @@ if os.environ.get("ENABLE_REDIRECTS") == "Yes" or os.environ.get("PRODUCTION_MOD
     for file in glob.glob("_redirects/*.txt"):
         with open(file, "r") as redirects:
             for line in redirects:
-                if not line.startswith("#"):
+                if not line.startswith("# "):
                     from_file, to_file = re.match(r"\"?([^\"]*)\"?\s*\"?([^\"]*)\"?", line).groups()
                     redirects[from_file] = to_file
     rediraffe_redirects = redirects
