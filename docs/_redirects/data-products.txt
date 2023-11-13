@@ -1,3 +1,5 @@
+# Data product redirects
+
 node/818                                                                      data/product/dea-surface-reflectance-oa-landsat-9
 data-products/dea/818/dea-surface-reflectance-oa-landsat-9                    data/product/dea-surface-reflectance-oa-landsat-9
 data-products/dea/818/clone-of-dea-surface-reflectance-oa-landsat-8-oli-tirs  data/product/dea-surface-reflectance-oa-landsat-9

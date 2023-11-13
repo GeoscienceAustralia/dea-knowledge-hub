@@ -1,0 +1,28 @@
+# Knowledge Hub redirects
+
+/genindex  /
+/index     /
+
+/about/changelog     /knowledge/about/changelog
+/about/faq           /knowledge/about/faq
+/about/glossary      /knowledge/about/glossary
+/about/intro         /knowledge/about/intro
+/about/publications  /knowledge/about/publications
+
+/setup/AWS/data_and_metadata  /knowledge/setup/AWS/data_and_metadata
+/setup/dea_maps               /knowledge/setup/dea_maps
+/setup/explorer_guide         /knowledge/setup/explorer_guide
+/setup/gis/README             /knowledge/setup/gis/README
+/setup/gis/stac               /knowledge/setup/gis/stac
+/setup/gis/web_services       /knowledge/setup/gis/web_services
+/setup/jupyter                /knowledge/setup/jupyter
+/setup/NCI/account            /knowledge/setup/NCI/account
+/setup/NCI/advanced           /knowledge/setup/NCI/advanced
+/setup/NCI/basics             /knowledge/setup/NCI/basics
+/setup/NCI/README             /knowledge/setup/NCI/README
+/setup/README                 /knowledge/setup/README
+/setup/Sandbox/sandbox        /knowledge/setup/Sandbox/sandbox
+
+/reference/collection_3_naming        /knowledge/reference/collection_3_naming
+/reference/collection_3_summary_grid  /knowledge/reference/collection_3_summary_grid
+/reference/dataset_maturity_guide     /knowledge/reference/dataset_maturity_guide
