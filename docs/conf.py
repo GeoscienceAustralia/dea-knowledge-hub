@@ -1,5 +1,6 @@
 import os
 import sys
+import re
 import datetime
 
 project = "DEA Docs"
@@ -67,7 +68,14 @@ nbsphinx_execute = "never"
 external_toc_path = "table_of_contents.yaml"
 
 if os.environ.get("ENABLE_REDIRECTS") == "Yes" or os.environ.get("PRODUCTION_MODE") == "Yes":
-    rediraffe_redirects = "redirects.txt"
+    redirects = {}
+    with open("_redirects/data-products.txt", "r") as file:
+        for line in file:
+            if not line.startswith("#"):
+                from_file, to_file = re.match(r"\"?([^\"]*)\"?\s*\"?([^\"]*)\"?", line).groups()
+                redirects[from_file] = to_file
+    rediraffe_redirects = redirects
+    print(redirects)
 
 sitemap_url_scheme = "{link}"
 
