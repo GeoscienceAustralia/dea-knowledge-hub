@@ -1,5 +1,6 @@
 import os
 import sys
+import glob
 import re
 import datetime
 
@@ -69,11 +70,12 @@ external_toc_path = "table_of_contents.yaml"
 
 if os.environ.get("ENABLE_REDIRECTS") == "Yes" or os.environ.get("PRODUCTION_MODE") == "Yes":
     redirects = {}
-    with open("_redirects/data-products.txt", "r") as file:
-        for line in file:
-            if not line.startswith("#"):
-                from_file, to_file = re.match(r"\"?([^\"]*)\"?\s*\"?([^\"]*)\"?", line).groups()
-                redirects[from_file] = to_file
+    for file in glob.glob("_redirects/*.txt"):
+        with open(file, "r") as redirects:
+            for line in redirects:
+                if not line.startswith("#"):
+                    from_file, to_file = re.match(r"\"?([^\"]*)\"?\s*\"?([^\"]*)\"?", line).groups()
+                    redirects[from_file] = to_file
     rediraffe_redirects = redirects
 
 sitemap_url_scheme = "{link}"
