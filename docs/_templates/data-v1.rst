@@ -8,6 +8,7 @@
 
 .. grid:: 4
     :gutter: 3
+    :class-container: image-card-list
 
     {% for page in data.pages %}
     .. grid-item-card:: {{ page.name }}
