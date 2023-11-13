@@ -79,7 +79,7 @@
 
    .. raw:: html
 
-      <div class="hero-image" style="background-image: url('{{ data.header_image or "https://www.dea.ga.gov.au/_nuxt/image/3d7bbc.png" }}');"></div>
+      <div class="hero-image" style="background-image: url('{{ data.header_image or "/_files/pages/dea-hero.jpg" }}');"></div>
 
 {% if not is_latest_version %}
 .. container::

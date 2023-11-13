@@ -12,6 +12,6 @@
 
     {% for page in data.pages %}
     .. grid-item-card:: {{ page.name }}
-       :img-top: {{ page.image or "https://www.gifpng.com/300x200" }}
+       :img-top: {{ page.image or "/_files/pages/dea-hero.jpg" }}
        :link: {{ page.link }}
     {% endfor %}

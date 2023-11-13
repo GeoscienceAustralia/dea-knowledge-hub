@@ -3,19 +3,14 @@ title: Home
 themes:
   - name: Baseline satellite data
     link: /data/theme/baseline-satellite-data
-    image: null
   - name: Land and vegetation
     link: /data/theme/land-and-vegetation
-    image: null
   - name: Inland water
     link: /data/theme/inland-water
-    image: null
   - name: Sea, ocean, and coast
     link: /data/theme/sea-ocean-and-coast
-    image: null
   - name: Hazards
     link: /data/theme/hazards
-    image: null
 
 use_links:
   - name: Get started with DEA
