@@ -2,7 +2,7 @@
 
 title: DEA Coastlines
 long_title: Geoscience Australia Landsat Coastlines Collection 3
-header_image: /_files/cmi/thumbnail_vertical.png
+header_image: /_static/cmi/thumbnail_vertical.png
 version: 2.1.0
 is_latest_version: true
 product_type: Derivative
@@ -72,4 +72,3 @@ enable_details: true
 enable_quality: true
 enable_history: true
 enable_credits: true
-

@@ -2,7 +2,7 @@
 
 title: DEA Waterbodies (Landsat)
 long_title: Geoscience Australia Landsat Waterbodies Collection 3
-header_image: /_files/cmi/waterbodies.jpg
+header_image: /_static/cmi/waterbodies.jpg
 version: 2.0.0
 is_latest_version: true
 product_type: Derivative

@@ -2,7 +2,7 @@
 
 title: DEA Water Observations (Landsat)
 long_title: Geoscience Australia Landsat Water Observations Collection 3
-header_image: /_files/cmi/WOfS-Burketown-Normanton QLD.png
+header_image: /_static/cmi/WOfS-Burketown-Normanton QLD.png
 version: 3.1.6
 is_latest_version: true
 product_type: Derivative

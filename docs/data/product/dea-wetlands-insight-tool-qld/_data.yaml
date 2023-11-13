@@ -2,7 +2,7 @@
 
 title: DEA Wetlands Insight Tool (QLD)
 long_title: Wetlands Insight Tool Queensland Wetlands Polygons
-header_image: /_files/cmi/PlaceholderWIT.PNG
+header_image: /_static/cmi/PlaceholderWIT.PNG
 version: 1.0.0
 is_latest_version: true
 product_type: Data service

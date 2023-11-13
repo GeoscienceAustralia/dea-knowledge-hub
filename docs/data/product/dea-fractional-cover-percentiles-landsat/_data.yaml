@@ -2,7 +2,7 @@
 
 title: DEA Fractional Cover Percentiles (Landsat)
 long_title: Geoscience Australia Landsat Fractional Cover Percentiles Collection 3
-header_image: /_files/cmi/FractionalCover1_0.jpg
+header_image: /_static/cmi/FractionalCover1_0.jpg
 version: 3.0.0
 is_latest_version: true
 product_type: Derivative
