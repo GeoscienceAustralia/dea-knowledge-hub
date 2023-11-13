@@ -41,7 +41,7 @@ entries:
     subtrees:
       - caption: Baseline satellite data
         entries:
-          - file: data/theme/baseline-satellite-products/index
+          - file: data/theme/baseline-satellite-data/index
             title: All
 
           - file: data/product/product-starter-kit/index

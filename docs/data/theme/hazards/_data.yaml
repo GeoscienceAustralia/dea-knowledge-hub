@@ -4,4 +4,4 @@ description: Browse hazards data products.
 pages:
   - name: DEA Hotspots
     link: /data/product/dea-hotspots/
-    image: null
+    image: /_files/cmi/hotspots.jpg

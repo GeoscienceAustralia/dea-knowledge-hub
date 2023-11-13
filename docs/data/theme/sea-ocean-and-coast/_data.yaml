@@ -4,13 +4,13 @@ description: Browse sea, ocean, and coast data products.
 pages:
   - name: DEA Coastlines
     link: /data/product/dea-coastlines
-    image: null
+    image: /_files/cmi/thumbnail_vertical.png
   - name: DEA High and Low Tide Imagery
     link: /data/product/dea-high-and-low-tide-imagery-landsat
-    image: null
+    image: /_files/cmi/HLTCv2.png
   - name: DEA Intertidal Elevation (NIDEM)
     link: /data/product/dea-intertidal-elevation-landsat
-    image: null
+    image: /_static/cmi/nidem 2 - crop 3_1.jpg
   - name: DEA Intertidal Extents (ITEM)
     link: /data/product/dea-intertidal-extents-landsat
-    image: null
+    image: /_static/cmi/intertidal extents.png

@@ -4,10 +4,10 @@ description: Browse inland water data products.
 pages:
   - name: DEA Wetlands Insight Tool
     link: /data/category/dea-wetlands-insight-tool/
-    image: null
+    image: /_files/cmi/PlaceholderWIT.PNG
   - name: DEA Water Observations
     link: /data/category/dea-water-observations/
-    image: null
+    image: /_files/cmi/WOfS-Burketown-Normanton QLD.png
   - name: DEA Waterbodies
     link: /data/product/dea-waterbodies-landsat/
-    image: null
+    image: /_files/cmi/waterbodies.jpg
