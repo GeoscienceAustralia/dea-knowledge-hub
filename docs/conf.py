@@ -70,8 +70,8 @@ external_toc_path = "table_of_contents.yaml"
 
 if os.environ.get("ENABLE_REDIRECTS") == "Yes" or os.environ.get("PRODUCTION_MODE") == "Yes":
     redirects = {}
-    for file in glob.glob("_redirects/*.txt"):
-        with open(file, "r") as redirects:
+    for redirects_file in glob.glob("_redirects/*.txt"):
+        with open(redirects_file, "r") as redirects:
             for line in redirects:
                 if not line.startswith("# "):
                     from_file, to_file = re.match(r"\"?([^\"]*)\"?\s*\"?([^\"]*)\"?", line).groups()
