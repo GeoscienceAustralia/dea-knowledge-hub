@@ -9,7 +9,7 @@ def current_year():
 
 def optional_exclude_pattern(environment_variable, exclude_pattern):
     if os.environ.get(environment_variable) == "No" and not os.environ.get("PRODUCTION_MODE") == "Yes":
-        return exclude_pattern
+        return [exclude_pattern]
     else:
         return []
 

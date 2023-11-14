@@ -22,11 +22,11 @@ exclude_patterns = [
     "notebooks/Scientific_workflows",
     "notebooks/DEA_notebooks_template.ipynb",
     "notebooks/USAGE.rst",
-    # utilities.optional_exclude_pattern("ENABLE_KNOWLEDGE_HUB", "knowledge"),
-    # utilities.optional_exclude_pattern("ENABLE_DATA_PRODUCTS", "data"),
-    # utilities.optional_exclude_pattern("ENABLE_NOTEBOOKS", "notebooks"),
-    # utilities.optional_exclude_pattern("ENABLE_OLD_PRODUCT_VERSIONS", "data/old-version-product"),
 ]
+exclude_patterns += utilities.optional_exclude_pattern("ENABLE_KNOWLEDGE_HUB", "knowledge")
+exclude_patterns += utilities.optional_exclude_pattern("ENABLE_DATA_PRODUCTS", "data")
+exclude_patterns += utilities.optional_exclude_pattern("ENABLE_NOTEBOOKS", "notebooks")
+exclude_patterns += utilities.optional_exclude_pattern("ENABLE_OLD_PRODUCT_VERSIONS", "data/old-version-product")
 
 html_title = "DEA Docs"
 html_baseurl = "https://docs.dea.ga.gov.au/"
