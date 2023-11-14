@@ -2,6 +2,7 @@ import sys
 import os
 sys.path.insert(0, os.path.abspath('.'))
 import utilities
+import mock_imports
 
 project = "DEA Docs"
 copyright = f"{utilities.current_year()}, Geoscience Australia"
@@ -75,7 +76,7 @@ autosummary_generate = ["./notebooks/Tools/index.rst"]
 autodoc_default_options = {
     "members": True,
 }
-autodoc_mock_imports = ["aiohttp", "boto3", "botocore", "branca", "ciso8601", "dask", "dask_gateway", "dask_ml", "datacube", "dill", "distutils", "fsspec", "fiona", "folium", "geopandas", "geopy", "hdstats", "ipyleaflet", "ipython", "ipywidgets", "joblib", "lxml", "matplotlib", "mpl_toolkits", "numexpr", "numpy", "odc", "osgeo", "otps", "OWSLib", "owslib", "packaging", "pandas", "pathos", "pyproj", "python_dateutil", "psycopg2", "pyTMD", "pytz", "rasterio", "rasterstats", "requests", "rios", "rsgislib", "scikit_learn", "sklearn", "scipy", "setuptools", "setuptools_scm", "shapely", "skimage", "tqdm", "traitlets", "xarray"]
+autodoc_mock_imports = mock_imports.mock_imports()
 autosummary_mock_imports = autodoc_mock_imports
 
 napoleon_google_docstring = False
