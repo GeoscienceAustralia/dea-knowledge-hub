@@ -84,25 +84,25 @@
         }
     }
 
-    .title p,
-    .header a,
-    .header .quick-info,
-    .header .quick-info dd p,
-    .header .subtitle p {
-        color: white;
-    }
-
-    .title,
-    .header > * {
-        width: calc(100% - 271px);
-    }
-
-    @media only screen and (max-width: $breakpoint-md) {
-        .title,
-        .header > * {
-            width: 100%;
-        }
-    }
+    // .title p,
+    // .header a,
+    // .header .quick-info,
+    // .header .quick-info dd p,
+    // .header .subtitle p {
+    //     color: white;
+    // }
+    //
+    // .title,
+    // .header > * {
+    //     width: calc(100% - 271px);
+    // }
+    //
+    // @media only screen and (max-width: $breakpoint-md) {
+    //     .title,
+    //     .header > * {
+    //         width: 100%;
+    //     }
+    // }
 
     .table-of-contents {
         ol {

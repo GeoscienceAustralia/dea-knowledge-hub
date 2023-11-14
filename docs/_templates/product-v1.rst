@@ -45,17 +45,13 @@
 {{ tab_title }}
 ======================================================================================================================================================
 
-.. container:: header
+.. container:: showcase-panel product-header
 
-   .. container:: title
+   .. container::
 
       {{ page_title }}
 
-   .. container:: subtitle
-
       {{ data.long_title }}
-
-   .. container:: quick-info
 
       {% if not is_latest_version %}
       :Version: {{ data.version }} (`See latest version <{{ data.latest_version_link }}>`_)
@@ -77,7 +73,9 @@
       :{{ product_ids_label }}: {{ valid_product_ids | join(", ") }}
       {%- endif %}
 
-   .. image:: {{ data.header_image or "/_files/pages/dea-hero.jpg" }}
+   .. container::
+
+      .. image:: {{ data.header_image or "/_files/pages/dea-hero.jpg" }}
 
 {% if not is_latest_version %}
 .. container::
