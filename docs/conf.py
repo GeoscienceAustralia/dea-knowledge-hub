@@ -1,11 +1,9 @@
 import os
 import sys
-import glob
-import re
-import datetime
+import abc.utilities
 
 project = "DEA Docs"
-copyright = f"{datetime.date.today().year}, Geoscience Australia"
+copyright = f"{utilities.current_year()}, Geoscience Australia"
 author = "Geoscience Australia"
 version = "0.1"
 
@@ -22,16 +20,11 @@ exclude_patterns = [
     "notebooks/Scientific_workflows",
     "notebooks/DEA_notebooks_template.ipynb",
     "notebooks/USAGE.rst",
+    utilities.optional_exclude_pattern("ENABLE_KNOWLEDGE_HUB", "knowledge"),
+    utilities.optional_exclude_pattern("ENABLE_DATA_PRODUCTS", "data"),
+    utilities.optional_exclude_pattern("ENABLE_NOTEBOOKS", "notebooks"),
+    utilities.optional_exclude_pattern("ENABLE_OLD_PRODUCT_VERSIONS", "data/old-version-product"),
 ]
-
-def exclude_section(environment_variable, exclude_pattern):
-    if os.environ.get(environment_variable) == "No" and not os.environ.get("PRODUCTION_MODE") == "Yes":
-        exclude_patterns.append(exclude_pattern)
-
-exclude_section("ENABLE_KNOWLEDGE_HUB", "knowledge")
-exclude_section("ENABLE_DATA_PRODUCTS", "data")
-exclude_section("ENABLE_NOTEBOOKS", "notebooks")
-exclude_section("ENABLE_OLD_PRODUCT_VERSIONS", "data/old-version-product")
 
 html_title = "DEA Docs"
 html_baseurl = "https://docs.dea.ga.gov.au/"
@@ -69,13 +62,7 @@ nbsphinx_execute = "never"
 external_toc_path = "table_of_contents.yaml"
 
 if os.environ.get("ENABLE_REDIRECTS") == "Yes" or os.environ.get("PRODUCTION_MODE") == "Yes":
-    rediraffe_redirects = {}
-    for redirects_file in glob.glob("_redirects/*.txt"):
-        with open(redirects_file, "r") as redirects:
-            for line in redirects:
-                if not line.startswith("# "):
-                    from_file, to_file = re.match(r"\"?([^\"]*)\"?\s*\"?([^\"]*)\"?", line).groups()
-                    rediraffe_redirects[from_file] = to_file
+    rediraffe_redirects = utilities.source_redirects("_redirects/*.txt")
 
 sitemap_url_scheme = "{link}"
 
