@@ -15,9 +15,9 @@ def optional_exclude_pattern(environment_variable, exclude_pattern):
 
 def source_redirects(filepath):
     redirects = {}
-    for redirects_file in glob.glob(filepath):
-        with open(redirects_file, "r") as redirects:
-            for line in redirects:
+    for file in glob.glob(filepath):
+        with open(file, "r") as file_contents:
+            for line in file_contents:
                 if not line.startswith("# "):
                     from_file, to_file = re.match(r"\"?([^\"\s]*)\"?\s*\"?([^\"\s]*)\"?", line).groups()
                     redirects[from_file] = to_file
