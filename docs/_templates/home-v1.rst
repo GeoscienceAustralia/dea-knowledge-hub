@@ -7,12 +7,15 @@
 .. image:: /_files/pages/home-page-hero.png
    :alt: Digital Earth Australia logo
 
-.. rubric:: DEA Documentation and Metadata Hub
-   :class: rubric-1
+.. container:: showcase-panel
 
-Here you will find metadata for Geoscience Australia's earth observation data products, services, publications, help and learning, and other documentation.
+   .. container::
 
-.. container:: showcase-panel body
+      DEA Documentation and Metadata Hub
+
+      Here you will find metadata for Geoscience Australia's earth observation data products, services, publications, help and learning, and other documentation.
+
+.. container:: showcase-panel bg-gradient-primary reverse
 
    .. container::
 
@@ -26,7 +29,7 @@ Here you will find metadata for Geoscience Australia's earth observation data pr
 
       .. image:: /_files/pages/dea-hero.jpg
 
-.. container:: showcase-panel body bg-forest reverse
+.. container:: showcase-panel bg-gradient-forest
 
    .. container::
 
@@ -40,7 +43,7 @@ Here you will find metadata for Geoscience Australia's earth observation data pr
 
       .. image:: /_files/themes/sea-ocean-and-coast.*
 
-.. container:: showcase-panel body bg-space
+.. container:: showcase-panel bg-gradient-space reverse
 
    .. container::
 
@@ -54,7 +57,10 @@ Here you will find metadata for Geoscience Australia's earth observation data pr
 
       .. image:: /_files/cmi/Kakadu-Mary_TCW-percentiles-wide_1.jpg
 
-.. rubric:: About Digital Earth Australia
-   :class: rubric-2
+.. container:: showcase-panel bg-grey
 
-Digital Earth Australia (DEA) is an analysis platform for satellite imagery and other Earth observations. It is a program of Geoscience Australia. To see case studies, learning modules, developer portal, and more, `visit the DEA website <https://www.dea.ga.gov.au/>`_.
+   .. container::
+
+      About Digital Earth Australia
+
+      Digital Earth Australia (DEA) is an analysis platform for satellite imagery and other Earth observations. It is a program of Geoscience Australia. To see case studies, learning modules, developer portal, and more, `visit the DEA website <https://www.dea.ga.gov.au/>`_.

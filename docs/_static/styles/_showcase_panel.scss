@@ -1,20 +1,20 @@
 .showcase-panel {
     display: flex;
     flex-direction: row;
+    margin-bottom: 1.15rem;
 
-    background: linear-gradient(
-        1turn,
-        var(--pst-color-secondary),
-        var(--pst-color-primary)
-    );
-
-    p, dl, a, a:hover {
-        color: white;
+    a {
+        font-weight: bold;
     }
 
     & > div:nth-child(1) {
         flex: 1;
         padding: 2rem;
+
+        & > p:first-child {
+            font-size: var(--pst-font-size-h2);
+            font-weight: bold;
+        }
 
         & > *:last-child {
             margin-bottom: 0;
@@ -36,6 +36,7 @@
             object-fit: cover;
             width: 100%;
             height: 100%;
+            user-select: none;
         }
 
         @media only screen and (max-width: $breakpoint-md) {
@@ -47,46 +48,49 @@
         flex-direction: row-reverse;
     }
 
-    &.bg-stone {
+    &.bg-grey {
+        background-color: var(--sd-color-primary-bg);
+    }
+
+    &[class*="bg-gradient-"] {
+        p, dl, a, a:hover {
+            color: white;
+        }
+    }
+
+    &.bg-gradient-primary {
+        background: linear-gradient(1turn, var(--pst-color-secondary), var(--pst-color-primary));
+    }
+
+    &.bg-gradient-stone {
         background: linear-gradient(1turn, #606f74, #082e41);
     }
 
-    &.bg-space {
+    &.bg-gradient-space {
         background: linear-gradient(1turn, #783775, #082e41);
     }
 
-    &.bg-heat {
+    &.bg-gradient-heat {
         background: linear-gradient(1turn, #b43b3b, #082e41);
     }
 
-    &.bg-dust {
+    &.bg-gradient-dust {
         background: linear-gradient(1turn, #cb6c37, #082e41);
     }
 
-    &.bg-earth {
+    &.bg-gradient-earth {
         background: linear-gradient(1turn, #637c6b, #082e41);
     }
 
-    &.bg-forest {
+    &.bg-gradient-forest {
         background: linear-gradient(1turn, #0b5e4a, #082e41);
     }
 
     &.header {
+        margin-bottom: 0;
+
         & > div:nth-child(1) > p:first-child {
             font-size: var(--pst-font-size-h1);
-            font-weight: bold;
-        }
-    }
-
-    &.body {
-        margin-bottom: 1.15rem;
-
-        & > div:nth-child(1) > p:first-child {
-            font-size: var(--pst-font-size-h2);
-            font-weight: bold;
-        }
-
-        a {
             font-weight: bold;
         }
     }
