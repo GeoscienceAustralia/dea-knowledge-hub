@@ -2,7 +2,7 @@
 
 title: DEA Intertidal Elevation (Landsat)
 long_title: "National Intertidal Digital Elevation Model 25m 1.0.0 "
-header_image: /_static/cmi/nidem_2_-_crop_3_1.jpg
+header_image: /_files/cmi/nidem_2_-_crop_3_1.jpg
 version: 1.0.0
 is_latest_version: true
 product_type: Derivative

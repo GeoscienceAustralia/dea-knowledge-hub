@@ -2,7 +2,7 @@
 
 title: DEA Surface Reflectance (Sentinel-2B MSI)
 long_title: Geoscience Australia Sentinel-2B MSI Analysis Ready Data Collection 3
-header_image: /_static/cmi/surface_reflectance_2_NBARTa_1.png
+header_image: /_files/cmi/surface_reflectance_2_NBARTa_1.png
 version: 3.2.1
 is_latest_version: true
 product_type: Baseline

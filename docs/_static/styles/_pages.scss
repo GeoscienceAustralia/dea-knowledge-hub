@@ -53,57 +53,6 @@
         }
     }
 
-    .header {
-        position: relative;
-        background: linear-gradient(
-            1turn,
-            var(--pst-color-secondary),
-            var(--pst-color-primary)
-        );
-        padding: 2rem;
-
-        dl {
-            margin-bottom: 0;
-        }
-
-        .hero-image {
-            position: absolute;
-            top: 0;
-            right: 0;
-            height: 100%;
-            width: 271px;
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-
-            @media only screen and (max-width: $breakpoint-md) {
-                & {
-                    display: none;
-                }
-            }
-        }
-    }
-
-    // .title p,
-    // .header a,
-    // .header .quick-info,
-    // .header .quick-info dd p,
-    // .header .subtitle p {
-    //     color: white;
-    // }
-    //
-    // .title,
-    // .header > * {
-    //     width: calc(100% - 271px);
-    // }
-    //
-    // @media only screen and (max-width: $breakpoint-md) {
-    //     .title,
-    //     .header > * {
-    //         width: 100%;
-    //     }
-    // }
-
     .table-of-contents {
         ol {
             padding-left: 0;
