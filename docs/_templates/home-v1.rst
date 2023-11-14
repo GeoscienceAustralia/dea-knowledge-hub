@@ -45,25 +45,29 @@ Here you will find metadata for Geoscience Australia's earth observation data pr
       {% endfor %}
 
 
-.. container:: showcase-panel bg-forest
+.. container:: showcase-panel body bg-forest
 
    .. container::
 
       Knowledge Hub
 
-      `Learn more </knowledge/>`_
+      Learn how to use our products and services.
+
+      `Visit the Knowledge Hub </knowledge/>`_
 
    .. container::
 
       .. image:: /_files/pages/dea-hero.jpg
 
-.. container:: showcase-panel bg-space reverse
+.. container:: showcase-panel body bg-space reverse
 
    .. container::
 
       DEA Notebooks
 
-      View the Notebooks
+      Learn how to analyse our data using Jupyter notebooks.
+
+      `Visit the DEA Notebooks </notebooks/README/>`_
 
    .. container::
 
