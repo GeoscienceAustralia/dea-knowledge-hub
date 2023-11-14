@@ -1,7 +1,5 @@
 # Knowledge Hub redirects
 
-genindex  index
-
 about/changelog     knowledge/about/changelog
 about/faq           knowledge/about/faq
 about/glossary      knowledge/about/glossary

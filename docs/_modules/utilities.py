@@ -14,13 +14,14 @@ def optional_exclude_pattern(environment_variable, exclude_pattern):
         return []
 
 def source_redirects(file_paths_glob):
-    redirect_syntax = r"\"?([^\"\s]*)\"?\s*\"?([^\"\s]*)\"?"
     comment_syntax = r"# .*"
+    redirect_syntax = r"\"?([^\"\s]*)\"?\s*\"?([^\"\s]*)\"?"
     redirects = {}
     for file_path in glob.glob(file_paths_glob):
         with open(file_path, "r") as file:
             for line in file:
                 if not re.match(comment_syntax, line):
                     from_file, to_file = re.match(redirect_syntax, line).groups()
-                    redirects[from_file] = to_file
+                    if from_file and to_file:
+                        redirects[from_file] = to_file
     return redirects

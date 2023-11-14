@@ -44,6 +44,31 @@ Here you will find metadata for Geoscience Australia's earth observation data pr
       `{{ item.name }} <{{ item.link }}>`_
       {% endfor %}
 
+
+.. container:: showcase-panel bg-forest
+
+   .. container::
+
+      Knowledge Hub
+
+      `Learn more </knowledge/>`_
+
+   .. container::
+
+      .. image:: /_files/pages/dea-hero.jpg
+
+.. container:: showcase-panel bg-space reverse
+
+   .. container::
+
+      DEA Notebooks
+
+      View the Notebooks
+
+   .. container::
+
+      .. image:: /_files/pages/dea-hero.jpg
+
 .. rubric:: About Digital Earth Australia
    :class: rubric-2
 
