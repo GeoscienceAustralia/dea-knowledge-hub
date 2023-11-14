@@ -1,6 +1,7 @@
-import os
 import sys
-import abc.utilities
+import os
+sys.path.insert(0, os.path.abspath('.'))
+import utilities
 
 project = "DEA Docs"
 copyright = f"{utilities.current_year()}, Geoscience Australia"
