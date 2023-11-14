@@ -76,7 +76,7 @@ autosummary_generate = ["./notebooks/Tools/index.rst"]
 autodoc_default_options = {
     "members": True,
 }
-autodoc_mock_imports = mock_imports.mock_imports()
+autodoc_mock_imports = mock_imports.mock_imports
 autosummary_mock_imports = autodoc_mock_imports
 
 napoleon_google_docstring = False

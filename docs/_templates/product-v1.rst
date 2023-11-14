@@ -77,9 +77,7 @@
       :{{ product_ids_label }}: {{ valid_product_ids | join(", ") }}
       {%- endif %}
 
-   .. raw:: html
-
-      <div class="hero-image" style="background-image: url('{{ data.header_image or "/_files/pages/dea-hero.jpg" }}');"></div>
+   .. image:: {{ data.header_image or "/_files/pages/dea-hero.jpg" }}
 
 {% if not is_latest_version %}
 .. container::
