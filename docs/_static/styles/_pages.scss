@@ -20,21 +20,6 @@
             color: var(--pst-color-text-base);
         }
     }
-
-    .sd-card {
-        .sd-card-header {
-            font-weight: bold;
-        }
-
-        a {
-            font-weight: bold;
-            text-decoration: none;
-
-            &:hover {
-                text-decoration: underline;
-            }
-        }
-    }
 }
 
 // Data Product
