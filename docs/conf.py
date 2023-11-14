@@ -1,8 +1,9 @@
 import sys
 import os
 sys.path.insert(0, os.path.abspath('.'))
+sys.path.insert(0, os.path.abspath('./_modules'))
 import utilities
-import mock_imports
+from _modules import mock_imports
 
 project = "DEA Docs"
 copyright = f"{utilities.current_year()}, Geoscience Australia"
