@@ -4,7 +4,7 @@
 {{ data.title }}
 ======================================================================================================================================================
 
-.. container:: showcase-panel title-h2
+.. container:: showcase-panel bg-grey title-h1
 
    .. container::
 
@@ -34,7 +34,7 @@
 
       Find product metadata on our data products.
 
-      `Baseline satellite data </data/theme/baseline-satellite-data>`_, `Land and vegetation </data/theme/land-and-vegetation>`_, `Inland water </data/theme/inland-water>`_, `Sea, ocean, and coast </data/theme/sea-ocean-and-coast>`_, `Hazards </data/theme/hazards>`_
+      `View the data products </data/>`_
 
    .. container::
 
