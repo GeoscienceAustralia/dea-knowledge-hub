@@ -1,4 +1,14 @@
 .card-list {
+    & > .rubric {
+        font-size: var(--pst-font-size-h2);
+        font-weight: bold;
+    }
+
+    & > .rubric,
+    & > p {
+        text-align: center;
+    }
+
     &.bg-grey {
         background-color: #e6edef;
         padding-bottom: var(--sd-gutter-y);

@@ -1,13 +1,19 @@
-title: Home
+title: Welcome to the DEA Docs
+description: Here you'll find documentation for our products and services.
 
 data_products:
   - name: Baseline satellite data
     link: /data/theme/baseline-satellite-data
+    icon: globe
   - name: Land and vegetation
     link: /data/theme/land-and-vegetation
+    icon: mountains
   - name: Inland water
     link: /data/theme/inland-water
+    icon: water
   - name: Sea, ocean, and coast
     link: /data/theme/sea-ocean-and-coast
+    icon: water
   - name: Hazards
     link: /data/theme/hazards
+    icon: fire

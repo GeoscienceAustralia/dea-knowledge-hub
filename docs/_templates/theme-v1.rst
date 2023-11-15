@@ -6,12 +6,13 @@
 
 {{ data.description if data.description else "Browse data products." }}
 
-.. grid:: 4
-    :gutter: 3
-    :class-container: card-list images bg-grey
+.. container:: card-list images bg-grey
 
-    {% for page in data.pages %}
-    .. grid-item-card:: {{ page.name }}
-       :img-top: {{ page.image or "/_files/pages/dea-hero.jpg" }}
-       :link: {{ page.link }}
-    {% endfor %}
+   .. grid:: 4
+       :gutter: 3
+
+       {% for page in data.pages %}
+       .. grid-item-card:: {{ page.name }}
+          :img-top: {{ page.image or "/_files/pages/dea-hero.jpg" }}
+          :link: {{ page.link }}
+       {% endfor %}

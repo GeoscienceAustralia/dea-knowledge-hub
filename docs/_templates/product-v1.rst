@@ -29,7 +29,6 @@
 {% set has_access_data = valid_maps or valid_data or valid_explorer or valid_web_services or valid_ecat or valid_code_samples %}
 
 {% set pretty_version = "v" + data.version %}
-{% set tab_title = data.title if is_latest_version else pretty_version + ": " + data.title %}
 {% set page_title = data.title if is_latest_version else "Old version: " + data.title %}
 
 {% set product_ids_label = "Product IDs" if valid_product_ids | length > 1 else "Product ID" %}
@@ -42,14 +41,14 @@
 .. rst-class:: product-page
 
 ======================================================================================================================================================
-{{ tab_title }}
+{{ page_title }}
 ======================================================================================================================================================
 
-.. container:: showcase-panel title-h1 bg-gradient-primary
+.. container:: showcase-panel bg-gradient-primary
 
    .. container::
 
-      {{ page_title }}
+      .. rubric:: page_title
 
       {{ data.long_title }}
 
@@ -113,57 +112,58 @@
        For help accessing the data, see the 'Access' tab.
 
        {% if is_latest_version and has_access_data %}
-       .. grid:: 5
-          :gutter: 3
-          :class-container: card-list icons bg-grey
+       .. container:: card-list icons bg-grey
 
-          {% for item in valid_maps %}
-          .. grid-item-card:: :fas:`map-location-dot`
-             :link: {{ item.link }}
-             :link-alt: {{ map_label }}
+          .. grid:: 5
+             :gutter: 3
 
-             {{ item.name or map_default_name }}
-          {% endfor %}
+             {% for item in valid_maps %}
+             .. grid-item-card:: :fas:`map-location-dot`
+                :link: {{ item.link }}
+                :link-alt: {{ map_label }}
 
-          {% for item in valid_explorer %}
-          .. grid-item-card:: :fas:`magnifying-glass`
-             :link: {{ item.link }}
-             :link-alt: {{ explorer_label }}
+                {{ item.name or map_default_name }}
+             {% endfor %}
 
-             {{ item.name or explorer_default_name }}
-          {% endfor %}
+             {% for item in valid_explorer %}
+             .. grid-item-card:: :fas:`magnifying-glass`
+                :link: {{ item.link }}
+                :link-alt: {{ explorer_label }}
 
-          {% for item in valid_data %}
-          .. grid-item-card:: :fas:`database`
-             :link: {{ item.link }}
-             :link-alt: {{ data_label }}
+                {{ item.name or explorer_default_name }}
+             {% endfor %}
 
-             {{ item.name or data_default_name }}
-          {% endfor %}
+             {% for item in valid_data %}
+             .. grid-item-card:: :fas:`database`
+                :link: {{ item.link }}
+                :link-alt: {{ data_label }}
 
-          {% for item in valid_code_samples %}
-          .. grid-item-card:: :fas:`laptop-code`
-             :link: {{ item.link }}
-             :link-alt: {{ code_sample_label }}
+                {{ item.name or data_default_name }}
+             {% endfor %}
 
-             {{ item.name or code_sample_default_name }}
-          {% endfor %}
+             {% for item in valid_code_samples %}
+             .. grid-item-card:: :fas:`laptop-code`
+                :link: {{ item.link }}
+                :link-alt: {{ code_sample_label }}
 
-          {% for item in valid_web_services %}
-          .. grid-item-card:: :fas:`globe`
-             :link: {{ item.link }}
-             :link-alt: {{ web_service_label }}
+                {{ item.name or code_sample_default_name }}
+             {% endfor %}
 
-             {{ item.name or web_service_default_name }}
-          {% endfor %}
+             {% for item in valid_web_services %}
+             .. grid-item-card:: :fas:`globe`
+                :link: {{ item.link }}
+                :link-alt: {{ web_service_label }}
 
-          {% for item in valid_ecat %}
-          .. grid-item-card:: :fas:`newspaper`
-             :link: https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/{{ item.id }}
-             :link-alt: {{ ecat_label }}
+                {{ item.name or web_service_default_name }}
+             {% endfor %}
 
-             eCat {{ item.id }}
-          {% endfor %}
+             {% for item in valid_ecat %}
+             .. grid-item-card:: :fas:`newspaper`
+                :link: https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/{{ item.id }}
+                :link-alt: {{ ecat_label }}
+
+                eCat {{ item.id }}
+             {% endfor %}
        {%- endif %}
 
        .. rubric:: Key details
