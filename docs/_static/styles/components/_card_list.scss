@@ -10,6 +10,10 @@
     & > .rubric,
     & > p {
         text-align: center;
+
+        &:last-of-type {
+            margin-bottom: 2rem;
+        }
     }
 
     .sd-card {

@@ -7,6 +7,7 @@
 {{ data.description }}
 
 .. container:: showcase-panel bg-gradient-primary
+   :name: knowledge-hub
 
    .. container::
 
@@ -21,6 +22,7 @@
       .. image:: /_files/pages/dea-hero.jpg
 
 .. container:: card-list icons
+   :name: data-products
 
    .. rubric:: Data Products
 
@@ -37,6 +39,7 @@
       {% endfor %}
 
 .. container:: showcase-panel bg-gradient-forest reverse
+   :name: dea-notebooks
 
    .. container::
 
@@ -51,14 +54,15 @@
       .. image:: /_files/cmi/Kakadu-Mary_TCW-percentiles-wide_1.jpg
 
 .. container:: showcase-panel
+   :name: about-dea
 
    .. container::
 
       .. rubric:: About Digital Earth Australia
 
-      Digital Earth Australia (DEA) is an analysis platform for satellite imagery and other Earth observations. It is a program of Geoscience Australia. On the DEA website, you will find case studies, learning modules, developer portal, and more.
+      Digital Earth Australia (DEA) is an analysis platform for satellite imagery and other Earth observations. It is a program of Geoscience Australia.
 
-      `Visit the DEA website <https://www.dea.ga.gov.au/>`_.
+      To find case studies, learning modules, developer portal, and more, `visit the DEA website <https://www.dea.ga.gov.au/>`_.
 
    .. container::
 
