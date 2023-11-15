@@ -1,0 +1,45 @@
+.card-list {
+    &.bg-grey {
+        .sd-container-fluid {
+            background-color: #e6edef;
+            padding-bottom: var(--sd-gutter-y);
+        }
+    }
+
+    &.icons {
+        .svg-inline--fa {
+            font-size: 1.25rem;
+            margin-right: 0.25rem;
+        }
+
+        .sd-col {
+            margin-top: calc(var(--sd-gutter-y) * 0.5);
+        }
+
+        .sd-card {
+            text-align: center;
+            border-radius: 0;
+        }
+
+        .sd-card-body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+        }
+
+        .sd-card-title {
+            margin-bottom: 0;
+        }
+
+        .sd-card-text {
+            font-weight: 600;
+            line-height: 1.3;
+            font-size: 0.9rem;
+            margin-top: 10px;
+        }
+    }
+
+    &.images {}
+}

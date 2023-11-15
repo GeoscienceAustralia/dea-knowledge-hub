@@ -113,7 +113,7 @@
        For help accessing the data, see the 'Access' tab.
 
        {% if is_latest_version and has_access_data %}
-       .. container::
+       .. container:: card-list bg-grey
           :name: access-cards
 
           .. grid:: 5

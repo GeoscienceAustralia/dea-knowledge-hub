@@ -1,5 +1,6 @@
-@import "variables";
-@import "theme";
-@import "global";
+@import "global/variables";
+@import "global/theme";
+@import "global/global";
 @import "pages";
 @import "showcase_panel";
+@import "card_list";
