@@ -11,11 +11,6 @@
         flex: 1;
         padding: 2rem;
 
-        & > p:first-child {
-            font-size: var(--pst-font-size-h2);
-            font-weight: bold;
-        }
-
         & > *:last-child {
             margin-bottom: 0;
         }
@@ -86,11 +81,16 @@
         background: linear-gradient(1turn, #0b5e4a, #082e41);
     }
 
-    &.header {
-        margin-bottom: 0;
-
+    &.title-h1 {
         & > div:nth-child(1) > p:first-child {
             font-size: var(--pst-font-size-h1);
+            font-weight: bold;
+        }
+    }
+
+    &.title-h2 {
+        & > div:nth-child(1) > p:first-child {
+            font-size: var(--pst-font-size-h2);
             font-weight: bold;
         }
     }

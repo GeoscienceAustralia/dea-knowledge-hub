@@ -45,7 +45,7 @@
 {{ tab_title }}
 ======================================================================================================================================================
 
-.. container:: showcase-panel header bg-gradient-primary
+.. container:: showcase-panel title-h1 bg-gradient-primary
 
    .. container::
 

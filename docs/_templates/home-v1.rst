@@ -4,18 +4,15 @@
 {{ data.title }}
 ======================================================================================================================================================
 
-.. image:: /_files/pages/home-page-hero.png
-   :alt: Digital Earth Australia logo
-
-.. container:: showcase-panel
+.. container:: showcase-panel title-h2
 
    .. container::
 
-      DEA Documentation and Metadata Hub
+      Welcome to the DEA Docs
 
-      Here you will find metadata for Geoscience Australia's earth observation data products, services, publications, help and learning, and other documentation.
+      Here you'll find documentation for our products and services.
 
-.. container:: showcase-panel bg-gradient-primary reverse
+.. container:: showcase-panel bg-gradient-primary title-h2 reverse
 
    .. container::
 
@@ -29,7 +26,7 @@
 
       .. image:: /_files/pages/dea-hero.jpg
 
-.. container:: showcase-panel bg-gradient-forest
+.. container:: showcase-panel bg-gradient-forest title-h2
 
    .. container::
 
@@ -43,7 +40,7 @@
 
       .. image:: /_files/themes/sea-ocean-and-coast.*
 
-.. container:: showcase-panel bg-gradient-space reverse
+.. container:: showcase-panel bg-gradient-space title-h2 reverse
 
    .. container::
 
@@ -57,7 +54,7 @@
 
       .. image:: /_files/cmi/Kakadu-Mary_TCW-percentiles-wide_1.jpg
 
-.. container:: showcase-panel bg-grey
+.. container:: showcase-panel bg-grey title-h2
 
    .. container::
 

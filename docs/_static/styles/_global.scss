@@ -12,9 +12,21 @@
     display: none;
 }
 
-.bd-header .navbar-nav > .current > .nav-link {
-    border-bottom: none !important;
+.bd-header {
+    .navbar-nav > .current > .nav-link {
+        border-bottom: none !important;
+    }
+
+    .bd-header__inner {
+        max-width: 100%;
+    }
+
+    .navbar-brand img {
+        width: 323px;
+        height: 40px;
+    }
 }
+
 
 h1,
 h2,

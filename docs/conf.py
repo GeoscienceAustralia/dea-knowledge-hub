@@ -30,7 +30,7 @@ exclude_patterns += utilities.optional_exclude_pattern("ENABLE_OLD_PRODUCT_VERSI
 
 html_title = "DEA Docs"
 html_baseurl = "https://docs.dea.ga.gov.au/"
-html_logo = "_files/logos/dea-logo-inline.svg"
+html_logo = "_files/logos/ga-dea-combined-logo.svg"
 html_favicon = "_static/favicons/dea-favicon.ico"
 html_theme = 'pydata_sphinx_theme'
 language = "en"
