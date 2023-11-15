@@ -9,9 +9,25 @@
         text-align: center;
     }
 
+    .sd-card {
+        background-color: var(--sd-color-primary-bg);
+
+        &:hover {
+            background-color: #d6e2e5;
+        }
+    }
+
     &.bg-grey {
         background-color: #e6edef;
         padding-bottom: var(--sd-gutter-y);
+
+        .sd-card, .sd-card:hover {
+            background-color: white;
+
+            &:hover {
+                background-color: var(--sd-color-card-hover);
+            }
+        }
     }
 
     &.icons {

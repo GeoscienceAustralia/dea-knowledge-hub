@@ -52,8 +52,8 @@ h6 {
 }
 
 .rubric {
-    border-bottom: none;
-    margin-top: 0;
+    border-bottom: none !important;
+    margin-top: 0 !important;
 }
 
 .bd-sidebar .bd-links__title {
@@ -157,7 +157,6 @@ input[type="search"].form-control {
         background-color: white;
 
         &:hover {
-            background-color: var(--sd-color-card-hover);
             transform: none;
         }
 

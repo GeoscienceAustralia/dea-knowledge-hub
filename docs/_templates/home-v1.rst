@@ -6,7 +6,7 @@
 
 {{ data.description }}
 
-.. container:: showcase-panel bg-gradient-primary reverse
+.. container:: showcase-panel bg-gradient-primary
 
    .. container::
 
@@ -20,7 +20,7 @@
 
       .. image:: /_files/pages/dea-hero.jpg
 
-.. container:: card-list icons bg-grey
+.. container:: card-list icons
 
    .. rubric:: Data Products
 

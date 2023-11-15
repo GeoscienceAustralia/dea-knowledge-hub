@@ -7,7 +7,7 @@ data_products:
     icon: globe
   - name: Land and vegetation
     link: /data/theme/land-and-vegetation
-    icon: mountains
+    icon: mountain
   - name: Inland water
     link: /data/theme/inland-water
     icon: water

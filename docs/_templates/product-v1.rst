@@ -48,7 +48,7 @@
 
    .. container::
 
-      .. rubric:: page_title
+      .. rubric:: {{ data.page_title }}
 
       {{ data.long_title }}
 
