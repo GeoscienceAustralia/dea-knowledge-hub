@@ -113,59 +113,57 @@
        For help accessing the data, see the 'Access' tab.
 
        {% if is_latest_version and has_access_data %}
-       .. container:: card-list bg-grey
-          :name: access-cards
+       .. grid:: 5
+          :gutter: 3
+          :class-container: card-list icons bg-grey
 
-          .. grid:: 5
-             :gutter: 3
+          {% for item in valid_maps %}
+          .. grid-item-card:: :fas:`map-location-dot`
+             :link: {{ item.link }}
+             :link-alt: {{ map_label }}
 
-             {% for item in valid_maps %}
-             .. grid-item-card:: :fas:`map-location-dot`
-                :link: {{ item.link }}
-                :link-alt: {{ map_label }}
+             {{ item.name or map_default_name }}
+          {% endfor %}
 
-                {{ item.name or map_default_name }}
-             {% endfor %}
+          {% for item in valid_explorer %}
+          .. grid-item-card:: :fas:`magnifying-glass`
+             :link: {{ item.link }}
+             :link-alt: {{ explorer_label }}
 
-             {% for item in valid_explorer %}
-             .. grid-item-card:: :fas:`magnifying-glass`
-                :link: {{ item.link }}
-                :link-alt: {{ explorer_label }}
+             {{ item.name or explorer_default_name }}
+          {% endfor %}
 
-                {{ item.name or explorer_default_name }}
-             {% endfor %}
+          {% for item in valid_data %}
+          .. grid-item-card:: :fas:`database`
+             :link: {{ item.link }}
+             :link-alt: {{ data_label }}
 
-             {% for item in valid_data %}
-             .. grid-item-card:: :fas:`database`
-                :link: {{ item.link }}
-                :link-alt: {{ data_label }}
+             {{ item.name or data_default_name }}
+          {% endfor %}
 
-                {{ item.name or data_default_name }}
-             {% endfor %}
+          {% for item in valid_code_samples %}
+          .. grid-item-card:: :fas:`laptop-code`
+             :link: {{ item.link }}
+             :link-alt: {{ code_sample_label }}
 
-             {% for item in valid_code_samples %}
-             .. grid-item-card:: :fas:`laptop-code`
-                :link: {{ item.link }}
-                :link-alt: {{ code_sample_label }}
+             {{ item.name or code_sample_default_name }}
+          {% endfor %}
 
-                {{ item.name or code_sample_default_name }}
-             {% endfor %}
+          {% for item in valid_web_services %}
+          .. grid-item-card:: :fas:`globe`
+             :link: {{ item.link }}
+             :link-alt: {{ web_service_label }}
 
-             {% for item in valid_web_services %}
-             .. grid-item-card:: :fas:`globe`
-                :link: {{ item.link }}
-                :link-alt: {{ web_service_label }}
+             {{ item.name or web_service_default_name }}
+          {% endfor %}
 
-                {{ item.name or web_service_default_name }}
-             {% endfor %}
+          {% for item in valid_ecat %}
+          .. grid-item-card:: :fas:`newspaper`
+             :link: https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/{{ item.id }}
+             :link-alt: {{ ecat_label }}
 
-             {% for item in valid_ecat %}
-             .. grid-item-card:: :fas:`newspaper`
-                :link: https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/{{ item.id }}
-                :link-alt: {{ ecat_label }}
-
-                eCat {{ item.id }}
-             {% endfor %}
+             eCat {{ item.id }}
+          {% endfor %}
        {%- endif %}
 
        .. rubric:: Key details

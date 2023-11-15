@@ -1,9 +1,7 @@
 .card-list {
     &.bg-grey {
-        .sd-container-fluid {
-            background-color: #e6edef;
-            padding-bottom: var(--sd-gutter-y);
-        }
+        background-color: #e6edef;
+        padding-bottom: var(--sd-gutter-y);
     }
 
     &.icons {
@@ -41,5 +39,10 @@
         }
     }
 
-    &.images {}
+    &.images {
+        .sd-card img {
+            height: 167px;
+            object-fit: cover;
+        }
+    }
 }

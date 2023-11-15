@@ -8,7 +8,7 @@
 
 .. grid:: 4
     :gutter: 3
-    :class-container: image-card-list
+    :class-container: card-list images bg-grey
 
     {% for page in data.pages %}
     .. grid-item-card:: {{ page.name }}
