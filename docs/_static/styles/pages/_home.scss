@@ -1,0 +1,25 @@
+.home-page {
+    h1 {
+        display: none;
+    }
+
+    img:first-of-type {
+        margin-bottom: 1.15rem;
+    }
+
+    .rubric {
+        border-bottom: none;
+
+        &.rubric-1 {
+            color: var(--pst-color-primary);
+            font-size: var(--pst-font-size-h4);
+            color: var(--pst-color-text-base);
+        }
+
+        &.rubric-2 {
+            color: var(--pst-color-primary);
+            font-size: var(--pst-font-size-h6);
+            color: var(--pst-color-text-base);
+        }
+    }
+}
