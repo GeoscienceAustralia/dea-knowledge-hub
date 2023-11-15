@@ -50,7 +50,7 @@
 
       .. image:: /_files/cmi/Kakadu-Mary_TCW-percentiles-wide_1.jpg
 
-.. container:: showcase-panel bg-gradient-space
+.. container:: showcase-panel
 
    .. container::
 
