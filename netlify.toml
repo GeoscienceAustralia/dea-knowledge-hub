@@ -1,0 +1,23 @@
+[build]
+command = "make netlify-build"
+publish = "output"
+
+[context.production.environment]
+PRODUCTION_MODE = "Yes"
+
+[context.deploy-preview.environment]
+PRODUCTION_MODE = "No"
+
+[context.demo1.environment]
+PRODUCTION_MODE = "No"
+
+[context.demo2.environment]
+PRODUCTION_MODE = "No"
+
+[context.demo3.environment]
+PRODUCTION_MODE = "No"
+
+# [[redirects]]
+# from = ":path/index.html"
+# to = ":path/"
+# status = 200
