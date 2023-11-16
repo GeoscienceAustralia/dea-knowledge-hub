@@ -4,20 +4,20 @@ publish = "output"
 
 [context.production.environment]
 PRODUCTION_MODE = "Yes"
+ENABLE_OLD_PRODUCT_VERSIONS = "No"
 
 [context.deploy-preview.environment]
 PRODUCTION_MODE = "No"
+ENABLE_OLD_PRODUCT_VERSIONS = "No"
 
 [context.demo1.environment]
 PRODUCTION_MODE = "No"
+ENABLE_OLD_PRODUCT_VERSIONS = "No"
 
 [context.demo2.environment]
 PRODUCTION_MODE = "No"
+ENABLE_OLD_PRODUCT_VERSIONS = "No"
 
 [context.demo3.environment]
 PRODUCTION_MODE = "No"
-
-# [[redirects]]
-# from = ":path/index.html"
-# to = ":path/"
-# status = 200
+ENABLE_OLD_PRODUCT_VERSIONS = "No"

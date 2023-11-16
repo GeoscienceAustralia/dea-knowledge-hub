@@ -1,3 +1,0 @@
-User-agent: *
-
-Sitemap: https://docs.dea.ga.gov.au/sitemap.xml
