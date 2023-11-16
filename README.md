@@ -45,6 +45,17 @@ make.cmd
 
 **Step 5.** Edit the content in `/content` then reload the page to see your changes.
 
+### Demo build
+
+You will need to overwrite one of the demo branches (`demo1`, `demo2`, or `demo3`) with your feature branch.
+
+```
+git checkout feature-branch
+git merge -s ours demo1
+git checkout demo1
+git merge feature-branch
+```
+
 ## Notes
 
 * Filenames starting with an underscore won't become pages in the output, e.g. `_overview.md`
