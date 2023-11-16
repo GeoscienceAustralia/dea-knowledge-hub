@@ -1,6 +1,6 @@
 [submodule "dea-notebooks"]
 	path = docs/notebooks
-	url = git@github.com:GeoscienceAustralia/dea-notebooks.git
+	url = https://github.com/GeoscienceAustralia/dea-notebooks.git
 	branch = dea-docs-v2
 	shallow = true
 	ignore = untracked
