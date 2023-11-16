@@ -48,7 +48,7 @@
 
    .. container::
 
-      .. rubric:: {{ data.page_title }}
+      .. rubric:: {{ page_title }}
 
       {{ data.long_title }}
 
@@ -112,7 +112,7 @@
        For help accessing the data, see the 'Access' tab.
 
        {% if is_latest_version and has_access_data %}
-       .. container:: card-list icons bg-grey
+       .. container:: card-list icons
 
           .. grid:: 5
              :gutter: 3
