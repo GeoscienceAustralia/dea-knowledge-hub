@@ -54,6 +54,8 @@ git checkout feature-branch
 git merge -s ours demo1
 git checkout demo1
 git merge feature-branch
+git push origin demo1
+git checkout feature-branch
 ```
 
 ## Notes
