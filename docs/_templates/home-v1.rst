@@ -6,21 +6,6 @@
 
 {{ data.description }}
 
-.. container:: showcase-panel bg-gradient-primary
-   :name: knowledge-hub
-
-   .. container::
-
-      .. rubric:: Knowledge Hub
-
-      Learn how to use our products and services.
-
-      `Visit the Knowledge Hub </knowledge/>`_
-
-   .. container::
-
-      .. image:: /_files/pages/dea-hero.jpg
-
 .. container:: card-list icons
    :name: data-products
 
@@ -37,6 +22,21 @@
 
          {{ item.name }}
       {% endfor %}
+
+.. container:: showcase-panel bg-gradient-primary
+   :name: knowledge-hub
+
+   .. container::
+
+      .. rubric:: Knowledge Hub
+
+      Learn how to use our products and services.
+
+      `Visit the Knowledge Hub </knowledge/>`_
+
+   .. container::
+
+      .. image:: /_files/pages/dea-hero.jpg
 
 .. container:: showcase-panel bg-gradient-forest reverse
    :name: dea-notebooks
