@@ -11,6 +11,14 @@ All the other dependencies are installed automatically by Docker. It installs th
 
 ## How to build
 
+Types of builds:
+
+* **Local** -- uses Docker.
+* **Demo** -- uses Netlify.
+* **Production** -- uses S3, Cloudfront, and GitHub Actions.
+
+### Local build
+
 **Step 1.** Clone this git repository to your local computer then enter the folder.
 
 ```bash
