@@ -1,5 +1,5 @@
 [build]
-command = "make netlify-build"
+command = "./demo-build.sh"
 publish = "output"
 
 [context.production.environment]

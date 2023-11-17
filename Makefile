@@ -17,6 +17,3 @@ start:
 
 ssh:
 	docker exec -it dea-docs /bin/sh
-
-netlify-build:
-	./netlify-build.sh

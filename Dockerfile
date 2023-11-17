@@ -15,7 +15,7 @@ RUN pip install -r /setup/requirements.txt
 
 COPY docs /docs
 
-COPY docker-start.sh /setup
-CMD /bin/bash -c "/setup/docker-start.sh"
+COPY local-build.sh /setup
+CMD /bin/bash -c "/setup/local-build.sh"
 
 EXPOSE 8011
