@@ -14,9 +14,9 @@ This product is a single, cohesive Analysis Ready Data (ARD) package, which allo
 
 It contains three sub-products that provide corrections or attribution information:
 
-* [DEA Surface Reflectance NBAR (Landsat 5 TM)](/data/product/dea-surface-reflectance-nbar-landsat-5-tm)
-* [DEA Surface Reflectance NBART (Landsat 5 TM)](/data/product/dea-surface-reflectance-nbart-landsat-5-tm)
-* [DEA Surface Reflectance OA (Landsat 5 TM)](/data/product/dea-surface-reflectance-oa-landsat-5-tm)
+* [DEA Surface Reflectance NBAR (Landsat 5 TM)](product:dea-surface-reflectance-nbar-landsat-5-tm)
+* [DEA Surface Reflectance NBART (Landsat 5 TM)](product:dea-surface-reflectance-nbart-landsat-5-tm)
+* [DEA Surface Reflectance OA (Landsat 5 TM)](product:dea-surface-reflectance-oa-landsat-5-tm)
 
 The resolution is a 30 m grid based on the USGS Landsat Collection 1 archive.
 

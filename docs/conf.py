@@ -57,7 +57,12 @@ myst_enable_extensions = [
     "colon_fence",
     "dollarmath"
 ]
+
 myst_heading_anchors = 1
+
+myst_url_schemes = {
+    "product": "https://docs.dea.ga.gov.au//data/product/{{path}}#{{fragment}}",
+}
 
 nbsphinx_execute = "never"
 
