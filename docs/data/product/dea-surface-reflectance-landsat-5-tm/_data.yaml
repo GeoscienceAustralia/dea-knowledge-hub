@@ -10,7 +10,7 @@ spatial_data_type: Raster
 time_span:
   start: 16/08/1986
   end: 17/11/2011
-update_frequency: daily
+update_frequency: Daily
 product_ids:
   - ga_ls5t_ard_3
 
@@ -37,17 +37,17 @@ maps: null
 
 explorers:
   - link: https://explorer.dea.ga.gov.au/products/ga_ls5t_ard_3
-    name: AWS Explorer
+    name: Data explorer
 
 data:
   - link: https://dapds00.nci.org.au/thredds/catalog/xu18/catalog.html
-    name: NCI - THREDDS
+    name: Access the data on NCI
   - link: https://data.dea.ga.gov.au/?prefix=baseline/ga_ls5t_ard_3/
-    name: Digital Earth Australia - Public Data
+    name: Access the data on AWS
 
 code_examples:
   - link: https://docs.dea.ga.gov.au/notebooks/DEA_products/DEA_Landsat_Surface_Reflectance.html
-    name: Jupyter notebook
+    name: Code examples
 
 web_services: null
 
