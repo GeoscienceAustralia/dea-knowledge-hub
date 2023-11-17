@@ -2,7 +2,7 @@
 
 {% set valid_maps = data.maps | selectattr("link",  "!=", None) | list %}
 {% set valid_data = data.data | selectattr("link",  "!=", None) | list %}
-{% set valid_explorer = data.explorer | selectattr("link",  "!=", None) | list %}
+{% set valid_explorers = data.explorers | selectattr("link",  "!=", None) | list %}
 {% set valid_web_services = data.web_services | selectattr("link",  "!=", None) | list %}
 {% set valid_ecat = data.ecat | selectattr("link",  "!=", None) | list %}
 {% set valid_code_samples = data.code_examples | selectattr("link",  "!=", None) | list %}
@@ -26,7 +26,7 @@
 {% set web_service_default_name = "Web service" %}
 {% set code_sample_default_name = "Code sample" %}
 
-{% set has_access_data = valid_maps or valid_data or valid_explorer or valid_web_services or valid_ecat or valid_code_samples %}
+{% set has_access_data = valid_maps or valid_data or valid_explorers or valid_web_services or valid_ecat or valid_code_samples %}
 
 {% set pretty_version = "v" + data.version %}
 {% set page_title = data.title if is_latest_version else "Old version: " + data.title %}
@@ -125,7 +125,7 @@
                 {{ item.name or map_default_name }}
              {% endfor %}
 
-             {% for item in valid_explorer %}
+             {% for item in valid_explorers %}
              .. grid-item-card:: :fas:`magnifying-glass`
                 :link: {{ item.link }}
                 :link-alt: {{ explorer_label }}
@@ -226,9 +226,9 @@
             - Learn how to `use DEA Maps </setup/dea_maps.html>`_.
           {% endif %}
 
-          {% if valid_explorer %}
+          {% if valid_explorers %}
           * - **{{ explorer_label }}**
-            - {% for item in valid_explorer %}
+            - {% for item in valid_explorers %}
               * `{{ item.name or explorer_default_name }} <{{ item.link }}>`_
               {% endfor %}
             -
