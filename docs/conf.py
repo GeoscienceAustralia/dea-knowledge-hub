@@ -61,7 +61,11 @@ myst_enable_extensions = [
 myst_heading_anchors = 1
 
 myst_url_schemes = {
-    "product": "https://docs.dea.ga.gov.au//data/product/{{path}}#{{fragment}}",
+    "theme": "/data/theme/{{path}}#{{fragment}}",
+    "category": "/data/category/{{path}}#{{fragment}}",
+    "product": "/data/product/{{path}}#{{fragment}}",
+    "knowledge": "/knowledge/{{path}}#{{fragment}}",
+    "notebook": "/notebook/{{path}}#{{fragment}}",
 }
 
 nbsphinx_execute = "never"
