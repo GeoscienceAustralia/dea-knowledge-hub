@@ -14,9 +14,9 @@ This product is a single, cohesive Analysis Ready Data (ARD) package, which allo
 
 It contains three sub-products that provide corrections or attribution information:
 
-* [DEA Surface Reflectance NBAR (Landsat 5 TM)](https://cmi.ga.gov.au/data-products/dea/367/dea-surface-reflectance-nbar-landsat-5-tm)
-* [DEA Surface Reflectance NBART (Landsat 5 TM)](https://cmi.ga.gov.au/data-products/dea/477/dea-surface-reflectance-nbart-landsat-5-tm)
-* [DEA Surface Reflectance OA (Landsat 5 TM)](https://cmi.ga.gov.au/data-products/dea/369/dea-surface-reflectance-oa-landsat-5-tm)
+* [DEA Surface Reflectance NBAR (Landsat 5 TM)](/data/product/dea-surface-reflectance-nbar-landsat-5-tm)
+* [DEA Surface Reflectance NBART (Landsat 5 TM)](//data/product/dea-surface-reflectance-nbart-landsat-5-tm)
+* [DEA Surface Reflectance OA (Landsat 5 TM)](/data/product/dea-surface-reflectance-oa-landsat-5-tm)
 
 The resolution is a 30 m grid based on the USGS Landsat Collection 1 archive.
 
@@ -25,29 +25,25 @@ The resolution is a 30 m grid based on the USGS Landsat Collection 1 archive.
 ## Applications
 
 * The development of derivative products to monitor land, inland waterways and coastal features, such as:
-
-               -  urban growth  
-               -  coastal habitats  
-               -  mining activities  
-               -  agricultural activity (e.g. pastoral, irrigated cropping, rain-fed cropping)  
-               -  water extent
-
+  * urban growth  
+  * coastal habitats  
+  * mining activities  
+  * agricultural activity (e.g. pastoral, irrigated cropping, rain-fed cropping)  
+  * water extent
 * The development of refined information products, such as:
-
-               -  areal units of detected surface water  
-               -  areal units of deforestation  
-               -  yield predictions of agricultural parcels
-
+  * area/units of detected surface water  
+  * area/units of deforestation  
+  * yield predictions of agricultural parcels
 * Compliance surveys
 * Emergency management
 
 ## Technical information
 
-#### The Thematic Mapper (TM) sensor
+### The Thematic Mapper (TM) sensor
 
 The TM is an advanced, multispectral scanning, Earth resources sensor which is designed to categorise the Earth's surface. It is particularly useful for agricultural applications and identification of land use. 
 
-#### The Analysis Ready Data concept
+### The Analysis Ready Data concept
 
 The Analysis Ready Data (ARD) package allows you to get up and running with your analysis as quickly as possible with minimal data preparation and additional input. This makes it simpler for you to develop applications and for the database to execute queries.
 
@@ -55,17 +51,13 @@ The satellite data has been processed to a minimum set of requirements and organ
 
 The [technical report](https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/145101) containing the data summary for the Phase 1 DEA Surface Reflectance Validation is available.
 
-#### ARD sub-products
+### ARD sub-products
 
-*1) [DEA Surface Reflectance NBAR (Landsat 5 TM)](https://cmi.ga.gov.au/data-products/dea/367/dea-surface-reflectance-nbar-landsat-5-tm)*
-
+1. [DEA Surface Reflectance NBAR (Landsat 5 TM)](/data/product/dea-surface-reflectance-nbar-landsat-5-tm)
 This sub-product produces standardised optical surface reflectance data using robust physical models which correct for variations and inconsistencies in image radiance values. Corrections are performed using Nadir corrected Bi-directional reflectance distribution function Adjusted Reflectance (NBAR).
-
-*2) [DEA Surface Reflectance NBART (Landsat 5 TM)](https://cmi.ga.gov.au/data-products/dea/477/dea-surface-reflectance-nbart-landsat-5-tm)*
-
+2. [DEA Surface Reflectance NBART (Landsat 5 TM)](/data/product/dea-surface-reflectance-nbart-landsat-5-tm)
 This sub-product performs the same function as Surface Reflectance (Landsat 5 TM NBAR), but also applies terrain illumination correction.
-
-*3) [DEA Surface Reflectance OA (Landsat 5 TM)](https://cmi.ga.gov.au/data-products/dea/369/dea-surface-reflectance-oa-landsat-5-tm)*
+3. [DEA Surface Reflectance OA (Landsat 5 TM)](/data/product/dea-surface-reflectance-oa-landsat-5-tm)
 
 The NBAR and NBART sibling products depend upon the OA product to provide accurate and reliable contextual information about the Landsat data. This ‘data provenance’ provides a chain of information which allows the data to be replicated or utilised by derivative applications. It takes a number of different forms, including satellite, solar and surface geometry and classification attribution labels.
 
@@ -75,62 +67,39 @@ This product is derived from the USGS Landsat Collection 1 archive.
 
 * The Moderate Resolution Imaging Spectroradiometer (MODIS) MCD43A1 Version 6 Bidirectional Reflectance Distribution Function and Albedo (BRDF/Albedo) Model Parameters dataset was provided by the National Aeronautics and Space Administration (NASA). It was produced daily using 16 days of Terra and Aqua MODIS data at 500 m resolution.   
  See [USGS: MCD43A1](https://lpdaac.usgs.gov/products/mcd43a1v006/), [NASA: MODIS BRDF / Albedo Parameter](https://modis.gsfc.nasa.gov/data/dataprod/mod43.php), [Schaaf et al. (2002)](https://www.doi.org/10.1016/s0034-4257(02)00091-3)
-
 * The ozone data was provided by Environment Canada.   
  See [Environment Canada: Global Ozone Maps](https://exp-studies.tor.ec.gc.ca/e/ozone/Curr_allmap_g.htm)
-
 * The Aerosol Optical Thickness data was provided by the Commonwealth Scientific and Industrial Research Organisation (CSIRO).   
  See [Qin et al. (2015)](https://doi.org/10.1109/TGRS.2015.2433911)
-
 * The Precipitable Water for Entire Atmosphere data was provided by the National Oceanic and Atmospheric Administration (NOAA) / Earth System Research Laboratory (ESRL) / Physical Sciences Division (PSD).  
  See [Kalnay et al. (1996)](https://doi.org/10.1175/1520-0477(1996)077%3c0437:tnyrp%3e2.0.co;2)
-
 * The baseline Digital Surface Model (DSM) data produced from the Shuttle Radar Topography Mission (SRTM) was provided by the National Geospatial-Intelligence Agency (NGA).   
  See [NGA: SRTM](https://www.nga.mil/about/history.html), [NASA: SRTM](https://www2.jpl.nasa.gov/srtm/index.html)
-
 * Level 1 Collection 1 data was provided by the United States Geological Survey (USGS)'s Earth Resources Observation and Science (EROS) Center.  
  See [USGS: EROS](https://www.usgs.gov/centers/eros), [USGS: Landsat Collection 1](https://www.usgs.gov/land-resources/nli/landsat/landsat-collection-1?qt-science_support_page_related_con=1#qt-science_support_page_related_con)
 
 ## Processing steps
 
 1. Longitude and Latitude Calculation
-
-1. Satellite and Solar Geometry Calculation
-
-1. Aerosol Optical Thickness Retrieval
-
-1. BRDF Shape Function Retrieval
-
-1. Ozone Retrieval
-
-1. Elevation Retrieval and Smoothing
-
-1. Slope and Aspect Calculation
-
-1. Incidence and Azimuthal Incident Angles Calculation
-
-1. Exiting and Azimuthal Exiting Angles Calculation
-
-1. Relative Slope Calculation
-
-1. Terrain Occlusion Mask
-
-1. MODTRAN
-
-1. Atmospheric Correction Coefficients Calculation
-
-1. Bilinear Interpolation of Atmospheric Correction Coefficients
-
-1. Surface Reflectance Calculation (NBAR)
-
-1. Surface Reflectance Calculation (NBAR + Terrain Illumination Correction)
-
-1. Function of Mask (Fmask)
-
-1. Contiguous Spectral Data Mask Calculation
+2. Satellite and Solar Geometry Calculation
+3. Aerosol Optical Thickness Retrieval
+4. BRDF Shape Function Retrieval
+5. Ozone Retrieval
+6. Elevation Retrieval and Smoothing
+7. Slope and Aspect Calculation
+8. Incidence and Azimuthal Incident Angles Calculation
+9. Exiting and Azimuthal Exiting Angles Calculation
+10. Relative Slope Calculation
+11. Terrain Occlusion Mask
+12. MODTRAN
+13. Atmospheric Correction Coefficients Calculation
+14. Bilinear Interpolation of Atmospheric Correction Coefficients
+15. Surface Reflectance Calculation (NBAR)
+16. Surface Reflectance Calculation (NBAR + Terrain Illumination Correction)
+17. Function of Mask (Fmask)
+18. Contiguous Spectral Data Mask Calculation
 
 ## Software
-
 * [MODTRAN](http://modtran.spectral.com/)
 * [wagl](https://github.com/GeoscienceAustralia/wagl)
 * [eugl](https://github.com/OpenDataCubePipelines/eugl)

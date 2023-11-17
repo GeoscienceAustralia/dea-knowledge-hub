@@ -8,9 +8,9 @@ is_latest_version: true
 product_type: Baseline
 spatial_data_type: Raster
 time_span:
-  start: null
-  end: null
-update_frequency: As needed
+  start: 16/08/1986
+  end: 17/11/2011
+update_frequency: daily
 product_ids:
   - ga_ls5t_ard_3
 
@@ -35,7 +35,9 @@ tags:
 
 maps: null
 
-explorers: null
+explorers:
+  - link: https://explorer.dea.ga.gov.au/products/ga_ls5t_ard_3
+    name: AWS Explorer
 
 data:
   - link: https://dapds00.nci.org.au/thredds/catalog/xu18/catalog.html
