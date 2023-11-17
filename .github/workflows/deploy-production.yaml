@@ -2,14 +2,11 @@ name: Deploy to Production
 
 on:
   workflow_dispatch:
-  # Allow builds being triggered from the dea-notebooks repo
-  repository_dispatch:
+  repository_dispatch: # Allow builds being triggered from the dea-notebooks repo
     types: [republish-docs]
-  # Build on pushes to the master branch
   push:
     branches:
       - master
-  # Build on pull requests TO the master branch
   pull_request:
     branches:
       - master
@@ -37,7 +34,8 @@ jobs:
           sudo apt-get install pandoc
       - name: Build docs
         run: |
-          make html
+          mkdir -p ./output
+          sphinx-build -b dirhtml -j auto ./docs ./output
 
       - name: Configure AWS credentials via OIDC
         if: ${{ github.event_name != 'pull_request' }}
