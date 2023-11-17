@@ -15,7 +15,7 @@ RUN pip install -r /setup/requirements.txt
 
 COPY docs /docs
 
-COPY local-build.sh /setup
-CMD /bin/bash -c "/setup/local-build.sh"
+COPY build-local.sh /setup
+CMD /bin/bash -c "/setup/build-local.sh"
 
 EXPOSE 8011

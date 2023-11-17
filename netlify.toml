@@ -1,5 +1,5 @@
 [build]
-command = "./demo-build.sh"
+command = "./build-demo.sh"
 publish = "output"
 
 [context.production.environment]

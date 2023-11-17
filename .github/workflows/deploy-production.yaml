@@ -50,4 +50,4 @@ jobs:
         if: ${{ github.event_name != 'pull_request' }}
         env:
           DISTRIBUTION_ID: ${{ secrets.DISTRIBUTION_ID }}
-        run: ./production-build.sh
+        run: ./build-production.sh
