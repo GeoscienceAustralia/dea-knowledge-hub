@@ -61,9 +61,11 @@ myst_enable_extensions = [
 myst_heading_anchors = 1
 
 myst_url_schemes = {
+    "http": None,
+    "https": None,
+    "product": "/data/product/{{path}}#{{fragment}}",
     "theme": "/data/theme/{{path}}#{{fragment}}",
     "category": "/data/category/{{path}}#{{fragment}}",
-    "product": "/data/product/{{path}}#{{fragment}}",
     "knowledge": "/knowledge/{{path}}#{{fragment}}",
     "notebook": "/notebook/{{path}}#{{fragment}}",
 }
