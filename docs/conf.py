@@ -65,7 +65,6 @@ myst_url_schemes = {
     "https": None,
     "page": "{{path}}#{{fragment}}",
     "file": "/_files/{{path}}#{{fragment}}",
-    "image": "/_files/{{path}}#{{fragment}}",
     "product": "/data/product/{{path}}#{{fragment}}",
     "theme": "/data/theme/{{path}}#{{fragment}}",
     "category": "/data/category/{{path}}#{{fragment}}",
