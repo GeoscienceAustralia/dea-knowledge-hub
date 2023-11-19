@@ -1,0 +1,4 @@
+# Permalink redirects
+
+permalink/116268  data/product/dea-coastlines
+permalink/111881  data/product/dea-hotspots
