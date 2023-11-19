@@ -57,7 +57,21 @@ myst_enable_extensions = [
     "colon_fence",
     "dollarmath"
 ]
+
 myst_heading_anchors = 1
+
+myst_url_schemes = {
+    "http": None,
+    "https": None,
+    "page": "{{path}}#{{fragment}}",
+    "file": "/_files/{{path}}#{{fragment}}",
+    "search": "/search/?q={{path}}"
+    "product": "/data/product/{{path}}#{{fragment}}",
+    "theme": "/data/theme/{{path}}#{{fragment}}",
+    "category": "/data/category/{{path}}#{{fragment}}",
+    "knowledge": "/knowledge/{{path}}#{{fragment}}",
+    "notebook": "/notebook/{{path}}#{{fragment}}",
+}
 
 nbsphinx_execute = "never"
 
