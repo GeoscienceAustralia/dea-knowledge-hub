@@ -61,15 +61,6 @@ myst_enable_extensions = [
 myst_heading_anchors = 1
 
 myst_all_links_external = True
-myst_url_schemes = {
-    "permalink": "/permalink/{{path}}",
-    "search": "/search/?q={{path}}",
-    "product": "/data/product/{{path}}",
-    "theme": "/data/theme/{{path}}#{{fragment}}",
-    "category": "/data/category/{{path}}#{{fragment}}",
-    "knowledge": "/knowledge/{{path}}#{{fragment}}",
-    "notebook": "/notebook/{{path}}#{{fragment}}",
-}
 
 nbsphinx_execute = "never"
 
