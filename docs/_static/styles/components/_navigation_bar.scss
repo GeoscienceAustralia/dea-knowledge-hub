@@ -1,0 +1,22 @@
+nav.navbar {
+    .navbar-nav > .current > .nav-link {
+        border-bottom: none !important;
+    }
+
+    .bd-header__inner {
+        max-width: 100%;
+    }
+
+    .navbar-brand img {
+        width: 323px;
+        height: 40px;
+    }
+
+    input[type="search"].form-control {
+        border: none;
+    }
+
+    .search-button__kbd-shortcut {
+        display: none;
+    }
+}

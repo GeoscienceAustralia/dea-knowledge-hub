@@ -3,7 +3,10 @@
 @import "global/global";
 @import "pages/home";
 @import "pages/product";
-@import "pages/notebook";
+@import "components/navigation_bar";
+@import "components/navigation_sidebar";
+@import "components/skip_link";
+@import "components/article";
 @import "components/footer";
 @import "components/showcase_panel";
 @import "components/card_list";

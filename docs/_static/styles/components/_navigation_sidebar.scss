@@ -1,0 +1,14 @@
+nav.bd-docs-nav {
+    .bd-links__title {
+        display: none;
+    }
+
+    .active > a {
+        box-shadow: none;
+        font-weight: normal;
+    }
+
+    a.current.reference {
+        font-weight: bold;
+    }
+}
