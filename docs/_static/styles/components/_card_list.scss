@@ -69,21 +69,29 @@
         }
 
         .sd-card {
-            $image-height: 167px;
+            .image-container {
+                position: relative;
+                overflow: hidden;
+                height: 167px;
 
-            img {
-                height: $image-height;
-                object-fit: cover;
-                border-radius: 0;
-                transition: height 0.2s;
+                img {
+                    min-height: 100%;
+                    min-width: 100%;
+                    border-radius: 0;
+                    transition: transform 0.2s;
+                }
+            }
+
+            .rubric {
+                padding-top: 0.5rem;
             }
 
             &:hover {
-                // img {
-                //     height: calc($image-height + 12%);
-                // }
+                img {
+                    transform: scale(1.05);
+                }
 
-                .sd-card-title {
+                .rubric {
                     text-decoration: underline;
                 }
             }
