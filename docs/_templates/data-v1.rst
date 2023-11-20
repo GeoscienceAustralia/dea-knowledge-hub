@@ -6,14 +6,13 @@
 
 {{ data.description if data.description else "I'm interested in ..." }}
 
-.. container:: card-list icons
+.. container:: card-list images bg-grey
 
-   .. grid:: 5
-      :gutter: 3
+   .. grid:: 4
+       :gutter: 3
 
-      {% for item in data.themes %}
-      .. grid-item-card:: :fas:`{{ item.icon }}`
-         :link: {{ item.link }}
-
-         {{ item.name }}
-      {% endfor %}
+       {% for page in data.themes %}
+       .. grid-item-card:: {{ page.name }}
+          :img-top: {{ page.image or "/_files/pages/dea-hero.jpg" }}
+          :link: {{ page.link }}
+       {% endfor %}
