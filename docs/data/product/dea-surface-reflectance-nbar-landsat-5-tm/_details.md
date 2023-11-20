@@ -52,34 +52,37 @@ The advanced supercomputing facilities provided by the National Computational In
 
 *band01, band02, band03, band04, band05, band07*
 
-| Format | GeoTIFF |
-| Resolution | 30m |
-| Datatype | Int16 |
-| No data value | -999 |
-| Valid data range | [1,10000] |
-| Tiled with X and Y block sizes | 512x512 |
-| Compression | |Deflate, Level 6, Predictor 2 |
-| Pyramids | Levels: [8,16,32] |
-| | Compression: deflate  |
-| | Resampling: GDAL default (nearest)  |
-| | Overview X&Y block sizes: 512x512 |
-| Contrast stretch | None |
-| Output CRS | As specified by source dataset; source is UTM with WGS84 as the datum |
+|--------------------------------|-----------------------------------------------------------------------|
+| Format                         | GeoTIFF                                                               |
+| Resolution                     | 30m                                                                   |
+| Datatype                       | Int16                                                                 |
+| No data value                  | -999                                                                  |
+| Valid data range               | [1,10000]                                                             |
+| Tiled with X and Y block sizes | 512x512                                                               |
+| Compression                    | Deflate, Level 6, Predictor 2                                         |
+| Pyramids                       | Levels: [8,16,32]                                                     |
+|                                | Compression: deflate                                                  |
+|                                | Resampling: GDAL default (nearest)                                    |
+|                                | Overview X&Y block sizes: 512x512                                     |
+| Contrast stretch               | None                                                                  |
+| Output CRS                     | As specified by source dataset; source is UTM with WGS84 as the datum |
 
 *thumbnail*
-| Format | JPEG |
-| RGB combination | Red: band 3  |
-| | Green: band 2  |
-| | Blue: band 1 |
-| Resolution | X and Y directions each resampled to 10% of the original size |
-| Compression | JPEG, Quality 75 (GDAL default)  |
-| | PHOTOMETRIC colour model: YCBCR |
-| Contrast stretch | Linear  |
-| | Input minimum: 10  |
-| | Input maximum: 3500  |
-| | Output minimum: 0  |
-| | Output maximum: 255 |
-| Output CRS| Geographics (Latitude/Longitude) WGS84 |
+
+|------------------|---------------------------------------------------------------|
+| Format           | JPEG                                                          |
+| RGB combination  | Red: band 3                                                   |
+|                  | Green: band 2                                                 |
+|                  | Blue: band 1                                                  |
+| Resolution       | X and Y directions each resampled to 10% of the original size |
+| Compression      | JPEG, Quality 75 (GDAL default)                               |
+|                  | PHOTOMETRIC colour model: YCBCR                               |
+| Contrast stretch | Linear                                                        |
+|                  | Input minimum: 10                                             |
+|                  | Input maximum: 3500                                           |
+|                  | Output minimum: 0                                             |
+|                  | Output maximum: 255                                           |
+| Output CRS       | Geographics (Latitude/Longitude) WGS84                        |
 
 % ## Lineage
 
