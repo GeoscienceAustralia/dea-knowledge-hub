@@ -1,0 +1,33 @@
+.table-of-contents {
+    $font-size: 0.85rem;
+
+    ol {
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 0;
+        row-gap: 1rem;
+    }
+
+    li {
+        list-style: none;
+        padding-right: $font-size;
+    }
+
+    a {
+        font-size: $font-size;
+        background-color: #f3f4f6;
+        border: 1px solid #f3f4f6;
+        padding: 0.25rem 0.5rem;
+        border-radius: 0.25rem;
+        text-decoration: none;
+        color: var(--pst-color-text-base) !important;
+
+        &:hover {
+            border: 1px solid var(--pst-color-text-base);
+        }
+
+        &:visited {
+            color: var(--pst-color-primary);
+        }
+    }
+}
