@@ -223,7 +223,7 @@
             - {% for item in valid_maps %}
               * `{{ item.name or map_default_name }} <{{ item.link }}>`_
               {% endfor %}
-            - Learn how to `use DEA Maps </setup/dea_maps.html>`_.
+            - Learn how to `use DEA Maps </guides/setup/dea_maps>`_.
           {% endif %}
 
           {% if valid_explorers %}
@@ -239,7 +239,7 @@
             - {% for item in valid_data %}
               * `{{ item.name or data_default_name }} <{{ item.link }}>`_
               {% endfor %}
-            - Learn how to `access the data via AWS </about/faq.html#how-do-i-download-data-from-dea>`_.
+            - Learn how to `access the data via AWS </guides/about/faq#how-do-i-download-data-from-dea>`_.
           {% endif %}
 
           {% if valid_code_samples %}
@@ -247,7 +247,7 @@
             - {% for item in valid_code_samples %}
               * `{{ item.name or code_sample_default_name }} <{{ item.link }}>`_
               {% endfor %}
-            - Learn how to `connect to the DEA Sandbox </setup/Sandbox/sandbox.html>`_.
+            - Learn how to `connect to the DEA Sandbox </guides/setup/Sandbox/sandbox>`_.
           {% endif %}
 
           {% if valid_web_services %}
@@ -255,7 +255,7 @@
             - {% for item in valid_web_services %}
               * `{{ item.name or web_service_default_name }} <{{ item.link }}>`_
               {% endfor %}
-            - Learn how to `connect to DEA's web services </setup/gis/README.html>`_.
+            - Learn how to `connect to DEA's web services </guides/setup/gis/README>`_.
           {% endif %}
 
           {% if valid_ecat %}

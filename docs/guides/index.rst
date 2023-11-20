@@ -1,10 +1,4 @@
-
 .. image:: /_files/logos/dea-logo-inline.svg
-   :align: center
-   :alt: Digital Earth Australia Logo
-
-|
-|
 
 Digital Earth Australia User Guide
 ##################################
