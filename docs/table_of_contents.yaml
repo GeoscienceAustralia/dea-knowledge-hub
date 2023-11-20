@@ -1,41 +1,41 @@
 root: index
 entries:
-  - file: knowledge/index
-    title: Knowledge Hub
+  - file: guides/index
+    title: User Guides
     subtrees:
       - caption: Overview
         entries:
-          - file: knowledge/about/intro
+          - file: guides/about/intro
 
       - caption: Access
         entries:
-          - file: knowledge/setup/README
-          - file: knowledge/setup/dea_maps
-          - file: knowledge/setup/Sandbox/sandbox
-          - file: knowledge/setup/NCI/README
+          - file: guides/setup/README
+          - file: guides/setup/dea_maps
+          - file: guides/setup/Sandbox/sandbox
+          - file: guides/setup/NCI/README
             entries:
-              - file: knowledge/setup/NCI/account
-              - file: knowledge/setup/NCI/basics
-              - file: knowledge/setup/NCI/advanced
-          - file: knowledge/setup/AWS/data_and_metadata
-          - file: knowledge/setup/gis/README
+              - file: guides/setup/NCI/account
+              - file: guides/setup/NCI/basics
+              - file: guides/setup/NCI/advanced
+          - file: guides/setup/AWS/data_and_metadata
+          - file: guides/setup/gis/README
             entries:
-              - file: knowledge/setup/gis/web_services
-              - file: knowledge/setup/gis/stac
-          - file: knowledge/setup/jupyter
+              - file: guides/setup/gis/web_services
+              - file: guides/setup/gis/stac
+          - file: guides/setup/jupyter
 
       - caption: Reference
         entries:
-          - file: knowledge/reference/collection_3_naming
-          - file: knowledge/reference/collection_3_summary_grid
-          - file: knowledge/reference/dataset_maturity_guide
+          - file: guides/reference/collection_3_naming
+          - file: guides/reference/collection_3_summary_grid
+          - file: guides/reference/dataset_maturity_guide
 
       - caption: Appendix
         entries:
-          - file: knowledge/about/faq
-          - file: knowledge/about/changelog
-          - file: knowledge/about/publications
-          - file: knowledge/about/glossary
+          - file: guides/about/faq
+          - file: guides/about/changelog
+          - file: guides/about/publications
+          - file: guides/about/glossary
 
   - file: data/index
     subtrees:

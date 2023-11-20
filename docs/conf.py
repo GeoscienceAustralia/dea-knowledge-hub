@@ -4,7 +4,7 @@ sys.path.insert(0, os.path.abspath('.'))
 from _modules import utilities
 from _modules import mock_imports
 
-project = "DEA Docs"
+project = "DEA Knowledge Hub"
 copyright = f"{utilities.current_year()}, Geoscience Australia"
 author = "Geoscience Australia"
 version = "0.1"
@@ -23,12 +23,12 @@ exclude_patterns = [
     "notebooks/DEA_notebooks_template.ipynb",
     "notebooks/USAGE.rst",
 ]
-exclude_patterns += utilities.optional_exclude_pattern("ENABLE_KNOWLEDGE_HUB", "knowledge")
+exclude_patterns += utilities.optional_exclude_pattern("ENABLE_USER_GUIDES", "guides")
 exclude_patterns += utilities.optional_exclude_pattern("ENABLE_DATA_PRODUCTS", "data")
 exclude_patterns += utilities.optional_exclude_pattern("ENABLE_NOTEBOOKS", "notebooks")
 exclude_patterns += utilities.optional_exclude_pattern("ENABLE_OLD_PRODUCT_VERSIONS", "data/old-version-product")
 
-html_title = "DEA Docs"
+html_title = "DEA Knowledge Hub"
 html_baseurl = "https://docs.dea.ga.gov.au/"
 html_logo = "_files/logos/ga-dea-combined-logo.svg"
 html_favicon = "_static/favicons/dea-favicon.ico"

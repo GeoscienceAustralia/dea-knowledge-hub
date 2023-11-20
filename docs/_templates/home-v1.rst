@@ -24,15 +24,15 @@
       {% endfor %}
 
 .. container:: showcase-panel bg-gradient-primary
-   :name: knowledge-hub
+   :name: user-guides
 
    .. container::
 
-      .. rubric:: Knowledge Hub
+      .. rubric:: User Guides
 
       Learn how to use our products and services.
 
-      `Visit the Knowledge Hub </knowledge/>`_
+      `Visit the User Guides </guides/>`_
 
    .. container::
 
