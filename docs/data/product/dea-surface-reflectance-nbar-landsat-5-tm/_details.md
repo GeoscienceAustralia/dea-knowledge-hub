@@ -52,6 +52,7 @@ The advanced supercomputing facilities provided by the National Computational In
 
 *band01, band02, band03, band04, band05, band07*
 
+|                                |                                                                       |
 |--------------------------------|-----------------------------------------------------------------------|
 | Format                         | GeoTIFF                                                               |
 | Resolution                     | 30m                                                                   |
@@ -69,6 +70,7 @@ The advanced supercomputing facilities provided by the National Computational In
 
 *thumbnail*
 
+|                  |                                                               |
 |------------------|---------------------------------------------------------------|
 | Format           | JPEG                                                          |
 | RGB combination  | Red: band 3                                                   |
