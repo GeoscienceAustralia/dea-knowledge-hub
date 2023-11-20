@@ -6,7 +6,7 @@
 
 {{ data.description if data.description else "I'm interested in ..." }}
 
-.. container:: card-list images bg-grey
+.. container:: card-list images
 
    .. grid:: 4
        :gutter: 3
