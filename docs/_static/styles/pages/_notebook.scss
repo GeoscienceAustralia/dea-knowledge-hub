@@ -1,4 +1,22 @@
-.bd-article h1 img {
-    display: block;
-    margin-top: 1rem;
+.bd-article {
+    h1 img {
+        display: block;
+        margin-top: 1rem;
+    }
+
+    .nbinput, .nboutput {
+        font-weight: bold;
+    }
+
+    .nbinput pre {
+        color: #002c5a;
+    }
+
+    .nboutput pre {
+        color: #770000;
+    }
+
+    .xr-var-list .xr-preview {
+        color: #616161;
+    }
 }
