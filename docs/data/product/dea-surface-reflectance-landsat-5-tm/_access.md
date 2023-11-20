@@ -7,4 +7,3 @@
 %:::{dropdown} How do I access the data?
 
 %:::
-
