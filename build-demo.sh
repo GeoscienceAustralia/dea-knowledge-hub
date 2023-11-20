@@ -1,10 +1,10 @@
 #!/bin/bash
 
-apt-get install -y pandoc
+python -m pip install -r ./requirements.txt
 
 npm install -g sass
 
-pip install -r ./requirements.txt
+apt-get install -y pandoc
 
 mkdir -p ./output
 
