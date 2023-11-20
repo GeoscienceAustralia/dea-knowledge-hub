@@ -14,9 +14,9 @@ This product is a single, cohesive Analysis Ready Data (ARD) package, which allo
 
 It contains three sub-products that provide corrections or attribution information:
 
-* [DEA Surface Reflectance NBAR (Landsat 5 TM)](product:dea-surface-reflectance-nbar-landsat-5-tm)
-* [DEA Surface Reflectance NBART (Landsat 5 TM)](product:dea-surface-reflectance-nbart-landsat-5-tm)
-* [DEA Surface Reflectance OA (Landsat 5 TM)](product:dea-surface-reflectance-oa-landsat-5-tm)
+* [DEA Surface Reflectance NBAR (Landsat 5 TM)](/data/product/dea-surface-reflectance-nbar-landsat-5-tm)
+* [DEA Surface Reflectance NBART (Landsat 5 TM)](/data/product/dea-surface-reflectance-nbart-landsat-5-tm)
+* [DEA Surface Reflectance OA (Landsat 5 TM)](/data/product/dea-surface-reflectance-oa-landsat-5-tm)
 
 The resolution is a 30 m grid based on the USGS Landsat Collection 1 archive.
 
@@ -53,11 +53,11 @@ The [technical report](https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#
 
 ### ARD sub-products
 
-1. [DEA Surface Reflectance NBAR (Landsat 5 TM)](product:dea-surface-reflectance-nbar-landsat-5-tm)
+1. [DEA Surface Reflectance NBAR (Landsat 5 TM)](/data/product/dea-surface-reflectance-nbar-landsat-5-tm)
 This sub-product produces standardised optical surface reflectance data using robust physical models which correct for variations and inconsistencies in image radiance values. Corrections are performed using Nadir corrected Bi-directional reflectance distribution function Adjusted Reflectance (NBAR).
-2. [DEA Surface Reflectance NBART (Landsat 5 TM)](product:dea-surface-reflectance-nbart-landsat-5-tm)
+2. [DEA Surface Reflectance NBART (Landsat 5 TM)](/data/product/dea-surface-reflectance-nbart-landsat-5-tm)
 This sub-product performs the same function as Surface Reflectance (Landsat 5 TM NBAR), but also applies terrain illumination correction.
-3. [DEA Surface Reflectance OA (Landsat 5 TM)](product:dea-surface-reflectance-oa-landsat-5-tm)
+3. [DEA Surface Reflectance OA (Landsat 5 TM)](/data/product/dea-surface-reflectance-oa-landsat-5-tm)
 
 The NBAR and NBART sibling products depend upon the OA product to provide accurate and reliable contextual information about the Landsat data. This ‘data provenance’ provides a chain of information which allows the data to be replicated or utilised by derivative applications. It takes a number of different forms, including satellite, solar and surface geometry and classification attribution labels.
 
