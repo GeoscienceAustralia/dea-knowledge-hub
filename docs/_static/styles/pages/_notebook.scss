@@ -4,16 +4,12 @@
         margin-top: 1rem;
     }
 
-    .nbinput, .nboutput {
-        font-weight: bold;
+    .nbinput .prompt pre {
+        color: #0000FF !important;
     }
 
-    .nbinput pre {
-        color: #002c5a;
-    }
-
-    .nboutput pre {
-        color: #770000;
+    .nboutput .prompt pre {
+        color: #008000 !important;
     }
 
     .xr-var-list .xr-preview {
