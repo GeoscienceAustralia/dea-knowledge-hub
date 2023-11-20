@@ -7,36 +7,6 @@
         font-weight: bold;
     }
 
-    & > .rubric,
-    & > p {
-        text-align: center;
-
-        &:last-of-type {
-            margin-bottom: 2rem;
-        }
-    }
-
-    .sd-card {
-        background-color: var(--sd-color-primary-bg);
-
-        &:hover {
-            background-color: #d6e2e5;
-        }
-    }
-
-    &.bg-grey {
-        background-color: #e6edef;
-        padding-bottom: var(--sd-gutter-y);
-
-        .sd-card, .sd-card:hover {
-            background-color: white;
-
-            &:hover {
-                background-color: var(--sd-color-card-hover);
-            }
-        }
-    }
-
     &.icons {
         .svg-inline--fa {
             font-size: 1.25rem;
@@ -50,6 +20,11 @@
         .sd-card {
             text-align: center;
             border-radius: 0;
+            background-color: var(--sd-color-primary-bg);
+
+            &:hover {
+                background-color: #d6e2e5;
+            }
         }
 
         .sd-card-body {
@@ -70,12 +45,48 @@
             font-size: 0.9rem;
             margin-top: 10px;
         }
+
+        & > .rubric,
+        & > p {
+            text-align: center;
+
+            &:last-of-type {
+                margin-bottom: 2rem;
+            }
+        }
     }
 
     &.images {
-        .sd-card img {
-            height: 167px;
-            object-fit: cover;
+        .sd-container-fluid {
+            padding: 0;
+        }
+
+        .sd-card-body {
+            padding-left: 0;
+            padding-right: 0;
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+        }
+
+        .sd-card {
+            $image-height: 167px;
+
+            img {
+                height: $image-height;
+                object-fit: cover;
+                border-radius: 0;
+                transition: height 0.2s;
+            }
+
+            &:hover {
+                // img {
+                //     height: calc($image-height + 12%);
+                // }
+
+                .sd-card-title {
+                    text-decoration: underline;
+                }
+            }
         }
     }
 }

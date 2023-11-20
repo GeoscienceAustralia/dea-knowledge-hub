@@ -56,11 +56,10 @@ extensions = [
 
 myst_enable_extensions = [
     "colon_fence",
-    "dollarmath"
+    "dollarmath",
+    "attrs_inline"
 ]
-
 myst_heading_anchors = 1
-
 myst_all_links_external = True
 
 nbsphinx_execute = "never"
