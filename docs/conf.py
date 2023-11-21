@@ -23,11 +23,11 @@ exclude_patterns = [
     "notebooks/Scientific_workflows",
     "notebooks/DEA_notebooks_template.ipynb",
     "notebooks/USAGE.rst",
+    "data/old-version-product",
 ]
 exclude_patterns += utilities.optional_exclude_pattern("ENABLE_USER_GUIDES", "guides")
 exclude_patterns += utilities.optional_exclude_pattern("ENABLE_DATA_PRODUCTS", "data")
 exclude_patterns += utilities.optional_exclude_pattern("ENABLE_NOTEBOOKS", "notebooks")
-exclude_patterns += utilities.optional_exclude_pattern("ENABLE_OLD_PRODUCT_VERSIONS", "data/old-version-product")
 
 html_title = "DEA Knowledge Hub"
 html_baseurl = "https://docs.dea.ga.gov.au/"
@@ -66,7 +66,10 @@ nbsphinx_execute = "never"
 
 external_toc_path = "table_of_contents.yaml"
 
-if os.environ.get("ENABLE_REDIRECTS") == "Yes" or os.environ.get("BUILD_MODE") == "production":
+if (
+    os.environ.get("BUILD_MODE") in ["demo", "production"]
+    or os.environ.get("ENABLE_REDIRECTS") == "Yes"
+):
     rediraffe_redirects = utilities.source_redirects("_redirects/*.txt")
 
 sitemap_url_scheme = "{link}"

@@ -4,16 +4,12 @@ publish = "output"
 
 [context.deploy-preview.environment]
 BUILD_MODE = "demo"
-ENABLE_OLD_PRODUCT_VERSIONS = "No"
 
 [context.demo1.environment]
 BUILD_MODE = "demo"
-ENABLE_OLD_PRODUCT_VERSIONS = "No"
 
 [context.demo2.environment]
 BUILD_MODE = "demo"
-ENABLE_OLD_PRODUCT_VERSIONS = "No"
 
 [context.demo3.environment]
 BUILD_MODE = "demo"
-ENABLE_OLD_PRODUCT_VERSIONS = "No"

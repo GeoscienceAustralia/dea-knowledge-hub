@@ -8,7 +8,10 @@ def current_year():
     return datetime.date.today().year
 
 def optional_exclude_pattern(environment_variable, exclude_pattern):
-    if os.environ.get(environment_variable) == "No" and not os.environ.get("BUILD_MODE") == "production":
+    if (
+        os.environ.get(environment_variable) == "No"
+        and not os.environ.get("BUILD_MODE") in ["demo", "production"]
+    ):
         return [exclude_pattern]
     else:
         return []
