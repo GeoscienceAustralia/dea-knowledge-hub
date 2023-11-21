@@ -265,6 +265,8 @@
               {% endfor %}
             -
           {% endif %}
+       {% elif not is_latest_version %}
+       You may find data source links in the `latest version of the product <{{ data.latest_version_link }}>`_.
        {% else %}
        There are no data source links available at the present time.
        {% endif %}
@@ -281,10 +283,6 @@
           * - `{{ item.name or item.link }} <{{ item.link }}>`_
             - {{ item.description }}
           {% endfor %}
-       {% endif %}
-
-       {% if not is_latest_version %}
-       You can find the data source links in the `latest version of the product <{{ data.latest_version_link }}>`_.
        {% endif %}
 
        .. include:: _access.md
