@@ -36,6 +36,9 @@ jobs:
           cache: npm
 
       - name: Build site
+        env:
+          PRODUCTION_MODE: Yes
+          ENABLE_OLD_PRODUCT_VERSIONS: No
         run: ./build-production.sh
 
       - name: Configure AWS credentials via OIDC
