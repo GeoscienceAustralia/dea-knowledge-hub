@@ -104,6 +104,8 @@ html_theme_options = {
 }
 
 html_context = {
-    'google_analytics_ga4_tag': 'G-0000000000', # G-4B9D450HR4
-    'support_link': 'example-support.com'
+    "support_link": "example-support.com"
 }
+
+if os.environ.get("BUILD_MODE") == "production":
+    html_context["google_analytics_ga4_tag"] = "G-4B9D450HR4"
