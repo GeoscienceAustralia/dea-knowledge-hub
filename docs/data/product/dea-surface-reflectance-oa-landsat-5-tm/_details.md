@@ -182,7 +182,7 @@ Other uses of Fmask:
 
 ### Image format specifications
 
-*Fmask*
+#### Fmask
 
 |                                |                                                                                                                                  |
 |--------------------------------|----------------------------------------------------------------------------------------------------------------------------------|
@@ -197,7 +197,7 @@ Other uses of Fmask:
 | Contrast stretch               | None                                                                                                                             |
 | Output CRS                     | As specified by source dataset; source is UTM with WGS84 as the datum                                                            | 
 
-*nbar-contiguity, nbart-contiguity*
+#### nbar-contiguity, nbart-contiguity
 
 |                                |                                                                                                                                     |
 |--------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
@@ -212,7 +212,7 @@ Other uses of Fmask:
 | Contrast stretch               | None                                                                                                                                |
 | Output CRS                     | As specified by source dataset; source is UTM with WGS84 as the datum                                                               |
 
-*combined-terrain-shadow*
+#### combined-terrain-shadow
 
 |                                |                                                                           |
 |--------------------------------|---------------------------------------------------------------------------|
@@ -227,7 +227,7 @@ Other uses of Fmask:
 | Contrast stretch               | None                                                                      |
 | Output CRS                     | As specified by source dataset; source is UTM with WGS84 as the datum     |       
 
-*incident, exiting, azimuthal-incident, azimuthal-exiting, relative-azimuth, relative-slope, timedelta*
+ #### incident, exiting, azimuthal-incident, azimuthal-exiting, relative-azimuth, relative-slope, timedelta
 
 |                                |                                                                       |
 |--------------------------------|-----------------------------------------------------------------------|

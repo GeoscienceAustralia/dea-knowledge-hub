@@ -1,6 +1,6 @@
 ### Processing steps
 
-#### Longitude and Latitude Calculation
+<h3 id="lon-lat-calculation"> Longitude and Latitude Calculation </h3>
 For a given acquisition's spatial extent and pixel resolution, create full dimension arrays/images whose pixel/cell contents contain the longitude and latitude values based on the WGS84 datum.
 
 The values at each pixel represent either the longitude or latitude for the upper left-hand corner of the pixel.  The Coordinate Reference System (CRS) of the spatial extent isn't required to be in Geographics WGS84, nor do the units of the pixel resolution required to be in decimal degrees.
