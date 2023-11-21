@@ -11,6 +11,6 @@ mkdir -p ./output
 
 sass --style=compressed ./docs/_static/styles/index.scss ./docs/_static/styles/styles.css
 
-cp ./docs/_robots/robots-prod.txt ./docs/robots.txt
+cp ./docs/_robots/robots-production.txt ./docs/robots.txt
 
 sphinx-build -b dirhtml -j auto ./docs ./output
