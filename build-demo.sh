@@ -8,14 +8,14 @@ apt-get install -y pandoc
 
 mkdir -p ./output
 
-if [ "$PRODUCTION_MODE" == "Yes" ]
+if [ "$BUILD_MODE" == "demo" ]
 then
     sass --style=compressed ./docs/_static/styles/index.scss ./docs/_static/styles/styles.css
 else
     sass --style=expanded ./docs/_static/styles/index.scss ./docs/_static/styles/styles.css
 fi
 
-if [ "$PRODUCTION_MODE" == "Yes" ]
+if [ "$BUILD_MODE" == "demo" ]
 then
     cp ./docs/_robots/robots-prod.txt ./docs/robots.txt
 else

@@ -66,7 +66,7 @@ nbsphinx_execute = "never"
 
 external_toc_path = "table_of_contents.yaml"
 
-if os.environ.get("ENABLE_REDIRECTS") == "Yes" or os.environ.get("PRODUCTION_MODE") == "Yes":
+if os.environ.get("ENABLE_REDIRECTS") == "Yes" or os.environ.get("BUILD_MODE") == "production":
     rediraffe_redirects = utilities.source_redirects("_redirects/*.txt")
 
 sitemap_url_scheme = "{link}"

@@ -39,7 +39,7 @@ jobs:
 
       - name: Build site
         env:
-          PRODUCTION_MODE: Yes
+          BUILD_MODE: production
           ENABLE_OLD_PRODUCT_VERSIONS: No
         run: ./build-production.sh
 
