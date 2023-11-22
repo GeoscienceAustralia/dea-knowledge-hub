@@ -17,7 +17,6 @@ product_ids:
   - ga_ls_wo_fq_cyear_3
   - ga_ls_wo_fq_myear_3
   - ga_ls_wo_filtfq_myear_3
-  - ""
 
 parent_products:
   name: null

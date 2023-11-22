@@ -6,8 +6,7 @@ footer.bd-footer {
         var(--pst-color-primary)
     );
 
-    p,
-    a {
+    p, a, .footer-copyright {
         color: white;
     }
 
@@ -52,7 +51,13 @@ footer.bd-footer {
         text-align: left;
     }
 
-    .copyright {
+    .footer-copyright {
         margin-top: 1rem;
+    }
+
+    @media only screen and (max-width: $breakpoint-sm) {
+        #acknowledgement-of-country {
+            margin-top: 1rem;
+        }
     }
 }

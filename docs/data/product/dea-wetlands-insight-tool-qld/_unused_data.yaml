@@ -26,8 +26,7 @@ anzsrc_research_code: null
 
 # Access tab
 
-map_names:
-  - ""
+map_names: null
 ecat_url: http://pid.geoscience.gov.au/dataset/ga/144795
 doi_url: null
 open_data_cube_configuration: null
@@ -40,7 +39,6 @@ time_span_full:
 
 relevant_websites:
   - link: https://wetlandinfo.des.qld.gov.au/wetlands/
-    name: ""
 
 # Processing tab
 

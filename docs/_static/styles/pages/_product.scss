@@ -7,53 +7,11 @@
         font-size: var(--pst-font-size-h1);
     }
 
-    .table-of-contents {
-        ol {
-            padding-left: 0;
-        }
-
-        a {
-            font-size: 0.85rem;
-            background-color: #f3f4f6;
-            border: 1px solid #f3f4f6;
-            padding: 0.25rem 0.5rem;
-            border-radius: 0.25rem;
-            text-decoration: none;
-
-            &:hover {
-                border: 1px solid var(--pst-color-text-base);
-                color: var(--pst-color-text-base) !important;
-            }
-
-            &,
-            &:visited {
-                color: var(--pst-color-primary);
-            }
-        }
-
-        & > p,
-        & > div,
-        & ol,
-        & li {
-            display: inline;
-        }
-
-        & > p,
-        & li {
-            margin-right: 1rem;
-        }
-
-        .sd-badge {
-            font-size: 0.8rem !important;
-            padding: 0 !important;
-        }
-    }
-
     #additional-files-table {
         margin-bottom: 2.75rem;
     }
 
-    #access-the-data-cards + p {
+    #access-the-data + p {
         padding-bottom: 1.15rem;
     }
 }
