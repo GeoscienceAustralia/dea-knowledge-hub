@@ -29,6 +29,7 @@ entries:
           - file: guides/reference/collection_3_naming
           - file: guides/reference/collection_3_summary_grid
           - file: guides/reference/dataset_maturity_guide
+          - file: guides/reference/analysis_ready_data_corrections
 
       - caption: Appendix
         entries:

@@ -40,7 +40,7 @@ It delivers modelled surface reflectance from Landsat 5 TM data using physical r
 
 This product is created using a physics-based, coupled Bidirectional Reflectance Distribution Function (BRDF) and atmospheric correction model that can be applied to both flat and inclined surfaces (Li et al. 2012). The resulting surface reflectance values are comparable both within individual images and between images acquired at different times.
 
-For more information on the BRDF/Albedo Model Parameters product, see [MCD43A1 Collection 6](/node/375).
+For more information on the BRDF/Albedo Model Parameters product, see [NASA MODIS BRDF/Albedo parameter](https://modis.gsfc.nasa.gov/data/dataprod/mod43.php) and [MCD43A1 BRDF/Albedo Model Parameters Product](https://www.umb.edu/spectralmass/v006/mcd43a1-brdf-albedo-model-parameters-product/).
 
 ### Landsat archive
 
@@ -50,41 +50,31 @@ The advanced supercomputing facilities provided by the National Computational In
 
 ### Image format specifications
 
-*band01, band02, band03, band04, band05, band07*
+#### band01, band02, band03, band04, band05, band07
 
-|                                |                                                                       |
-|--------------------------------|-----------------------------------------------------------------------|
-| Format                         | GeoTIFF                                                               |
-| Resolution                     | 30m                                                                   |
-| Datatype                       | Int16                                                                 |
-| No data value                  | -999                                                                  |
-| Valid data range               | [1,10000]                                                             |
-| Tiled with X and Y block sizes | 512x512                                                               |
-| Compression                    | Deflate, Level 6, Predictor 2                                         |
-| Pyramids                       | Levels: [8,16,32]                                                     |
-|                                | Compression: deflate                                                  |
-|                                | Resampling: GDAL default (nearest)                                    |
-|                                | Overview X&Y block sizes: 512x512                                     |
-| Contrast stretch               | None                                                                  |
-| Output CRS                     | As specified by source dataset; source is UTM with WGS84 as the datum |
+|                                |                                                                                                                                   |
+|--------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
+| Format                         | GeoTIFF                                                                                                                           |
+| Resolution                     | 30m                                                                                                                               |
+| Datatype                       | Int16                                                                                                                             |
+| No data value                  | -999                                                                                                                              |
+| Valid data range               | [1,10000]                                                                                                                         |
+| Tiled with X and Y block sizes | 512x512                                                                                                                           |
+| Compression                    | Deflate, Level 6, Predictor 2                                                                                                     |
+| Pyramids                       | Levels: [8,16,32] <br /> Compression: deflate <br /> Resampling: GDAL default (nearest) <br /> Overview X&Y block sizes: 512x512  |
+| Contrast stretch               | None                                                                                                                              |
+| Output CRS                     | As specified by source dataset; source is UTM with WGS84 as the datum                                                             |
 
-*thumbnail*
+#### thumbnail
 
-|                  |                                                               |
-|------------------|---------------------------------------------------------------|
-| Format           | JPEG                                                          |
-| RGB combination  | Red: band 3                                                   |
-|                  | Green: band 2                                                 |
-|                  | Blue: band 1                                                  |
-| Resolution       | X and Y directions each resampled to 10% of the original size |
-| Compression      | JPEG, Quality 75 (GDAL default)                               |
-|                  | PHOTOMETRIC colour model: YCBCR                               |
-| Contrast stretch | Linear                                                        |
-|                  | Input minimum: 10                                             |
-|                  | Input maximum: 3500                                           |
-|                  | Output minimum: 0                                             |
-|                  | Output maximum: 255                                           |
-| Output CRS       | Geographics (Latitude/Longitude) WGS84                        |
+|                  |                                                                                                                 |
+|------------------|-----------------------------------------------------------------------------------------------------------------|
+| Format           | JPEG                                                                                                            |
+| RGB combination  | Red: band 3 <br /> Green: band 2 <br /> Blue: band 1                                                            |
+| Resolution       | X and Y directions each resampled to 10% of the original size                                                   |
+| Compression      | JPEG, Quality 75 (GDAL default) <br /> PHOTOMETRIC colour model: YCBCR                                          |
+| Contrast stretch | Linear <br /> Input minimum: 10 <br /> Input maximum: 3500 <br /> Output minimum: 0 <br /> Output maximum: 255  |
+| Output CRS       | Geographics (Latitude/Longitude) WGS84                                                                          |
 
 % ## Lineage
 
