@@ -50,7 +50,7 @@ The advanced supercomputing facilities provided by the National Computational In
 
 ### Image format specifications
 
-*band01, band02, band03, band04, band05, band07*
+#### band01, band02, band03, band04, band05, band07
 
 |                                |                                                                                                                                   |
 |--------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
@@ -65,7 +65,7 @@ The advanced supercomputing facilities provided by the National Computational In
 | Contrast stretch               | None                                                                                                                              |
 | Output CRS                     | As specified by source dataset; source is UTM with WGS84 as the datum                                                             |
 
-*thumbnail*
+#### thumbnail
 
 |                  |                                                                                                                 |
 |------------------|-----------------------------------------------------------------------------------------------------------------|
