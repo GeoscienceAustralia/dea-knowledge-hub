@@ -8,7 +8,7 @@
 
 .. container:: card-list images
 
-   .. grid:: 4
+   .. grid:: 2 2 3 4
        :gutter: 3
 
        {% for page in data.pages %}

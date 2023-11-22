@@ -80,7 +80,7 @@
 .. container::
    :name: notifications
 
-   .. ADMONITION:: This is an old version ({{ pretty_version }})
+   .. admonition:: This is an old version ({{ pretty_version }})
       :class: danger
    
       See the `latest version of the product <{{ data.latest_version_link }}>`_.
@@ -107,14 +107,15 @@
           :parser: myst_parser.sphinx_
 
        .. rubric:: Access the data
-          :name: access-the-data-cards
+          :name: access-the-data
 
        For help accessing the data, see the 'Access' tab.
 
        {% if is_latest_version and has_access_data %}
        .. container:: card-list icons
+          :name: access-the-data-cards
 
-          .. grid:: 5
+          .. grid:: 2 2 3 5
              :gutter: 3
 
              {% for item in valid_maps %}
@@ -212,7 +213,7 @@
              |nbsp|
 
        .. rubric:: Access the data
-          :name: access-the-data-table
+          :name: access-the-data-2
 
        {% if is_latest_version and has_access_data %}
        .. list-table::

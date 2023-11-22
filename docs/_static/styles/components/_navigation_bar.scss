@@ -1,3 +1,9 @@
+nav.navbar, .sidebar-header-items {
+    .search-button__kbd-shortcut {
+        display: none;
+    }
+}
+
 nav.navbar {
     .navbar-nav > .current > .nav-link {
         border-bottom: none !important;
@@ -15,8 +21,10 @@ nav.navbar {
     input[type="search"].form-control {
         border: none;
     }
+}
 
-    .search-button__kbd-shortcut {
-        display: none;
+.sidebar-header-items {
+    .bd-search {
+        margin-top: 20px;
     }
 }

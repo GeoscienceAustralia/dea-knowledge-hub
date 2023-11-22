@@ -10,3 +10,4 @@ sphinx-external-toc
 sphinx-sitemap
 sphinxext-opengraph
 ipywidgets
+sphinx-notfound-page

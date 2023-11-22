@@ -25,9 +25,9 @@ exclude_patterns = [
     "notebooks/USAGE.rst",
     "data/old-version-product",
 ]
-exclude_patterns += utilities.optional_exclude_pattern("ENABLE_USER_GUIDES", "guides")
-exclude_patterns += utilities.optional_exclude_pattern("ENABLE_DATA_PRODUCTS", "data")
-exclude_patterns += utilities.optional_exclude_pattern("ENABLE_NOTEBOOKS", "notebooks")
+exclude_patterns += utilities.optional_exclude_pattern("LOCAL_ENABLE_USER_GUIDES", "guides")
+exclude_patterns += utilities.optional_exclude_pattern("LOCAL_ENABLE_DATA_PRODUCTS", "data")
+exclude_patterns += utilities.optional_exclude_pattern("LOCAL_ENABLE_NOTEBOOKS", "notebooks")
 
 html_title = "DEA Knowledge Hub"
 html_baseurl = "https://docs.dea.ga.gov.au/"
@@ -52,6 +52,7 @@ extensions = [
     "sphinx_external_toc",
     "sphinx_sitemap",
     "sphinxext.opengraph",
+    "notfound.extension",
 ]
 
 myst_enable_extensions = [
@@ -68,7 +69,7 @@ external_toc_path = "table_of_contents.yaml"
 
 if (
     os.environ.get("BUILD_MODE") in ["demo", "production"]
-    or os.environ.get("ENABLE_REDIRECTS") == "Yes"
+    or os.environ.get("LOCAL_ENABLE_REDIRECTS") == "Yes"
 ):
     rediraffe_redirects = utilities.source_redirects("_redirects/*.txt")
 
@@ -87,6 +88,10 @@ autosummary_mock_imports = autodoc_mock_imports
 
 napoleon_google_docstring = False
 napoleon_numpy_docstring = True
+
+notfound_template = "404.html"
+notfound_pagename = "not-found"
+notfound_urls_prefix = ""
 
 html_css_files = [
     'styles/styles.css'
@@ -107,7 +112,7 @@ html_theme_options = {
 }
 
 html_context = {
-    "support_link": "example-support.com"
+    "default_mode": "light",
 }
 
 if os.environ.get("BUILD_MODE") == "production":
