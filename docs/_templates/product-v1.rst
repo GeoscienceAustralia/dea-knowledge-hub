@@ -80,7 +80,7 @@
 .. container::
    :name: notifications
 
-   .. ADMONITION:: This is an old version ({{ pretty_version }})
+   .. admonition:: This is an old version ({{ pretty_version }})
       :class: danger
    
       See the `latest version of the product <{{ data.latest_version_link }}>`_.
