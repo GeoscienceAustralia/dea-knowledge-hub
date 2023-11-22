@@ -1,13 +1,15 @@
-### Processing steps
+# Analysis Ready Data production
 
-<h4 id="lon-lat-calculation"> Longitude and Latitude Calculation </h4>
+## Processing steps
+
+<h3 id="lon-lat-calculation"> Longitude and Latitude Calculation </h3>
 For a given acquisition's spatial extent and pixel resolution, create full dimension arrays/images whose pixel/cell contents contain the longitude and latitude values based on the WGS84 datum.
 
 The values at each pixel represent either the longitude or latitude for the upper left-hand corner of the pixel.  The Coordinate Reference System (CRS) of the spatial extent isn't required to be in Geographics WGS84, nor do the units of the pixel resolution required to be in decimal degrees.
 
 The algorithm outputs spatial grids in the native CRS and pixel resolution, just the array/image contents at the pixel level contain either a longitude or latitude value.
 
-#### Satellite and Solar Geometry Calculation
+<h3 id="sat-sol-geom-calculation"> Satellite and Solar Geometry Calculation </h3>
 Accurate positional geometry of the sun and observer are required in order to standardise a surface reflectance measurement so that it is consistent across time and space.
 
 The process calculates at full acquisition resolution and spatial extent in native CRS, the following datasets:
@@ -21,7 +23,7 @@ The process calculates at full acquisition resolution and spatial extent in nati
 | Relative azimuth  | The relative azimuth between the sun and view directions      |
 | Time Delta        | The time in seconds from satellite apogee                     |
 
-#### Aerosol Optical Thickness Retrieval
+<h3 id="aero-opt-thick-retr"> Aerosol Optical Thickness Retrieval </h3>
 For a given acquisition, retrieve the aerosol optical thickness estimate for input into the radiative transfer evaluation.
 
 The supplied aerosol optical thickness data is a geospatially sparse point cloud and only exists for the years 2002 to 2008, supplemented by monthly composites.
@@ -30,7 +32,7 @@ Essentially the spatial extent of the acquisition in longitude and latitude for 
 
 If the year of acquisition falls within 2002-2008, then select the points that have a timestamp of within 0.5 days of the acquisition, and fall within the geospatial intersection area of interest.  If no data are found, fallback to a monthly aggregate for that year.  If this also fails, then fall back to an all-time monthly aggregate.  If this also fails then return a nominal value of 0.06.
 
-#### BRDF Shape Function Retrieval
+<h3 id="brdf-shp-fnc-retr"> BRDF Shape Function Retrieval </h3>
 Retrieve the BRDF shape function parameters for each supported spectral band within the acquisition.
 
 For each supported spectral band within an acquisition to be processed, retrieve the BRDF shape function parameters, Alpha-1 and Alpha-2.
@@ -43,19 +45,19 @@ The results are then transformed into the BRDF Shape function, labelled as Alpha
 
 * If the spectral band for the acquisition has a wavelength broad enough to cover multiple MODIS spectral bands, then averages are taken from all derived Alpha-1 and Alpha-2 parameters, before returning single pair of Alpha-1 and Alpha-2 BRDF shape function parameters.
 
-#### Ozone Retrieval
+<h3 id="o3-retr"> Ozone Retrieval </h3>
 Retrieval of ozone data for the acquisition of interest at a given (longitude, latitude) location for a given month.
 
 The ozone data consists of 12 global datasets, 1 for each month of the year.  The month that the acquisition was taken in, is used as a basis for selecting the appropriate month containing the relevant ozone data.
 
 As the source ozone data is of a very low resolution, the acquisition's central coordinate in longitude and latitude degrees, based on the WGS84 datum, is used as a sole point to retrieve an ozone value to be used as a value for the entire acquisition's spatial extent.
 
-#### Elevation Retrieval and Smoothing
+<h3 id="elev-retr-smth"> Elevation Retrieval and Smoothing </h3>
 For a given acquisition, retrieve the Digital Surface Model (DSM) that covers the full spatial extent with an additional buffer which by default is 8km.  The DSM is resampled to the required CRS and pixel resolution using Bi-Linear interpolation, then smoothed with a 3 by 3 Gaussian kernel to remove extraneous noise.
 
 The algorithm defaults to retrieving the elevation data with a buffer of 8km on all edges of an acquisition's spatial extents.
 
-#### Slope and Aspect Calculation
+<h3 id="slp-asp-calc"> Slope and Aspect Calculation </h3>
 For a given Digital Elevation Model (DSM) calculate at a pixel level the slope and aspect.
 
 The following steps dictate the method for determining slope and aspect.
@@ -66,24 +68,24 @@ The following steps dictate the method for determining slope and aspect.
 
 4. Both arrays are then converted to degrees.
 
-#### Incidence and Azimuthal Incident Angles Calculation
+<h3 id="inc-azm-ang-calc"> Incidence and Azimuthal Incident Angles Calculation </h3>
 For a given acquisition calculate the incident and azimuthal incident angles for the full spatial extent in the native Coordinate Reference System (CRS) and at the full/native pixel resolution.
 
 The incident (angle between a ray incident on a surface and the line perpendicular to the surface at the point of incidence) and azimuthal incident (azimuth angle for incident direction in the slope geometry) angles are calculated at a pixel level for the entire spatial extent and pixel resolution for a given acquisition.
 
 The two arrays/images are returned with the values expressed in degrees.
 
-#### Exiting and Azimuthal Exiting Angles Calculation
+<h3 id="ext-azm-ang-calc"> Exiting and Azimuthal Exiting Angles Calculation </h3>
 For a given acquisition calculate the exiting and azimuthal exiting angles for the full spatial extent in the native Coordinate Reference System (CRS) and at the full/native pixel resolution.
 
 The exiting (angle between a ray reflected on a surface and the line perpendicular to the surface at the point of emergence) and azimuthal exiting (azimuth angle for exiting direction in the slope geometry) angles are calculated at a pixel level for the entire spatial extent and pixel resolution for a given acquisition.
 
 The two arrays/images are returned with the values expressed in degrees.
 
-### Relative Slope Calculation
+<h3 id="rel-slp-calc"> Relative Slope Calculation </h3>
 Calculate the relative azimuth slope given the azimuthal incident and azimuthal exiting angles on a sloping surface.
 
-#### Terrain Occlusion Mask
+<h3 id="terr-occ-msk"> Terrain Occlusion Mask </h3>
 For a given elevation dataset, create a terrain occlusion mask.
 
 The terrain occlusion mask is a multi-step process that identifies pixel occlusion by the surrounding terrain (cast shadow) from two different viewing sources (solar and satellite/observer), as well as pixels that exhibit shadow unto itself (self shadow).
@@ -97,7 +99,7 @@ The pixel doesn't receive direct radiation as the surface faces away from the su
 The algorithm is based on:
 Giles, P.T.. (2001). Remote sensing and cast shadows in mountainous terrain. Photogrammetric Engineering and Remote Sensing. 67. 833-839.
 
-#### MODTRAN
+<h3 id="modtran"> MODTRAN </h3>
 MODerate resolution atmospheric TRANsmission is used for the prediction and analysis of optical measurements through the atmosphere.
 
 MODTRAN was developed and continues to be maintained through a longstanding collaboration between Spectral Sciences, Inc. (SSI) and the Air Force Research Laboratory (AFRL). The code is embedded in many operational and research sensor and data processing systems, particularly those involving the removal of atmospheric effects, commonly referred to as atmospheric correction, in remotely sensed multi- and hyperspectral imaging (MSI and HSI).
@@ -108,7 +110,7 @@ http://modtran.spectral.com/modtran_about
 
 http://modtran.spectral.com/
 
-#### Atmospheric Correction Coefficients Calculation
+<h3 id="atm-corr-coef-calc"> Atmospheric Correction Coefficients Calculation </h3>
 Using the modelled output of the radiative transfer, calculate the atmospheric correction coefficients.
 
 The atmospheric correction coefficients are required for computing Lambertian reflectance.  The coefficients are given as follows:
@@ -122,7 +124,7 @@ B = Path radiance
 Dir = Direct irradiance at the surface
 Dif = Diffuse irradiance at the surface
 
-#### Bilinear Interpolation of Atmospheric Correction Coefficients
+<h3 id="bil-int-atm-corr-coef"> Bilinear Interpolation of Atmospheric Correction Coefficients </h3>
 The atmospheric correction coefficients are interpolated across the entire spatial extents of the 2D image.
 
 Bilinear interpolation is the method used to interpolate across the entire image for each of the following atmospheric correction coefficients:
@@ -137,7 +139,7 @@ Dif = Diffuse irradiance at the surface
 
 Note: TV = Total transmittance in the view (observer) direction
 
-#### Surface Reflectance Calculation (NBAR)
+<h3 id="nbar"> Surface Reflectance Calculation (NBAR) </h3>
 Calculate a standardised optical surface reflectance using robust physical models to correct for variations in image radiance values due to atmospheric properties, sun and sensor geometry as well as the directional reflectance properties of the surface being observed.
 
 The process of producing standardised optical surface reflectance is known as Nadir corrected Bi-directional reflectance distribution function Adjusted Reflectance (NBAR).
@@ -146,7 +148,7 @@ This enables comparison of imagery acquired at different times, in different sea
 
 Algorithm details can be found here: https://doi.org/10.1109/JSTARS.2010.2042281
 
-#### Function of Mask (Fmask)
+<h3 id="fmask"> Function of Mask (Fmask) </h3>
 Function of Mask (Fmask), is a classification process that categorises pixels into mutually exclusive classes.  The classes are defined as an enumerator with values 0 -> 5.
 
 The Fmask algorithm works across Landsat's 4, 5, 7 and 8, as well as Sentinel-2 A & B.  The algorithms may differ per sensor, but the classification schema is standardised across all platform's/sensors.
@@ -167,5 +169,5 @@ A Python implementation of the algorithm written by Neil Flood, can be found her
 * http://www.pythonfmask.org/en/latest/
 * https://github.com/ubarsc/python-fmask
 
-#### Contiguous Spectral Data Mask Calculation
+<h3 id="cont-spec-data-mask-calc"> Contiguous Spectral Data Mask Calculation </h3>
 Given a 3D block/stack of imagery spectra, calculate a 2D mask indicating where pixels have valid data at each individual 2D image slice.  The resulting 2D mask will have 0 for non-contiguous spectra across the 3D domain, and 1 for contiguous spectra across the 3D domain.  The idea of this dataset is for users doing band math across the spectral domain, to mask out pixels that don't have valid data across each of the spectral bands.
