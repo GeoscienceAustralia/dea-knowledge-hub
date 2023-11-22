@@ -52,6 +52,7 @@ extensions = [
     "sphinx_external_toc",
     "sphinx_sitemap",
     "sphinxext.opengraph",
+    "notfound.extension",
 ]
 
 myst_enable_extensions = [
@@ -87,6 +88,10 @@ autosummary_mock_imports = autodoc_mock_imports
 
 napoleon_google_docstring = False
 napoleon_numpy_docstring = True
+
+notfound_template = "404.html"
+notfound_pagename = "page-not-found"
+notfound_urls_prefix = ""
 
 html_css_files = [
     'styles/styles.css'
