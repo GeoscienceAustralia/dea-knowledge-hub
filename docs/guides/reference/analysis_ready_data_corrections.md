@@ -106,9 +106,9 @@ MODTRAN was developed and continues to be maintained through a longstanding coll
 
 The MODTRAN software computes line-of-sight (LOS) atmospheric spectral transmittances and radiances over the ultraviolet through long wavelength infrared spectral regime (0 - 50,000 cm-1; > 0.2 μm). The radiation transport (RT) physics within MODTRAN provides accurate and fast methods for modelling stratified, horizontally homogeneous atmospheres. The core of the MODTRAN RT is an atmospheric "narrow band model" algorithm. The atmosphere is modelled via constituent vertical profiles, both molecular and particulate, defined either using built-in models or by user-specified radiosonde or climatology data. The band model provides resolution as fine as 0.2 cm-1 from its 0.1 cm-1 band model. MODTRAN solves the radiative transfer equation including the effects of molecular and particulate absorption/emission and scattering, surface reflections and emission, solar/lunar illumination, and spherical refraction.
 
-http://modtran.spectral.com/modtran_about
+[http://modtran.spectral.com/modtran_about](http://modtran.spectral.com/modtran_about)
 
-http://modtran.spectral.com/
+[http://modtran.spectral.com/](http://modtran.spectral.com/)
 
 <h3 id="atm-corr-coef-calc"> Atmospheric Correction Coefficients Calculation </h3>
 Using the modelled output of the radiative transfer, calculate the atmospheric correction coefficients.
@@ -146,7 +146,7 @@ The process of producing standardised optical surface reflectance is known as Na
 
 This enables comparison of imagery acquired at different times, in different seasons and in different geographic locations.
 
-Algorithm details can be found here: https://doi.org/10.1109/JSTARS.2010.2042281
+Algorithm details can be found here: [https://doi.org/10.1109/JSTARS.2010.2042281](https://doi.org/10.1109/JSTARS.2010.2042281)
 
 <h3 id="fmask"> Function of Mask (Fmask) </h3>
 Function of Mask (Fmask), is a classification process that categorises pixels into mutually exclusive classes.  The classes are defined as an enumerator with values 0 -> 5.
@@ -162,12 +162,12 @@ The classes/categories are:
 * Water -> 5
 
 Further details on the algorithm can be found here:
-* https://doi.org/10.1016/j.rse.2011.10.028
-* https://doi.org/10.1016/j.rse.2014.12.014
+* [https://doi.org/10.1016/j.rse.2011.10.028](https://doi.org/10.1016/j.rse.2011.10.028)
+* [https://doi.org/10.1016/j.rse.2014.12.014](https://doi.org/10.1016/j.rse.2014.12.014)
 
 A Python implementation of the algorithm written by Neil Flood, can be found here:
-* http://www.pythonfmask.org/en/latest/
-* https://github.com/ubarsc/python-fmask
+* [http://www.pythonfmask.org/en/latest/](http://www.pythonfmask.org/en/latest/)
+* [https://github.com/ubarsc/python-fmask](https://github.com/ubarsc/python-fmask)
 
 <h3 id="cont-spec-data-mask-calc"> Contiguous Spectral Data Mask Calculation </h3>
 Given a 3D block/stack of imagery spectra, calculate a 2D mask indicating where pixels have valid data at each individual 2D image slice.  The resulting 2D mask will have 0 for non-contiguous spectra across the 3D domain, and 1 for contiguous spectra across the 3D domain.  The idea of this dataset is for users doing band math across the spectral domain, to mask out pixels that don't have valid data across each of the spectral bands.
