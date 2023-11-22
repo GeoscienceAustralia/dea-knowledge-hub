@@ -4,9 +4,7 @@ Creative Commons CCBY 4.0
 
 % ## Use constraints
 
-## Frequently asked questions
-
-:::{dropdown} How do I access the data?
+:::{dropdown} How to access the data
 Information on how to access the Wetlands Insight Tool using the QLD Wetland*Maps* service can be found on this page:
 
 [https://wetlandinfo.des.qld.gov.au/wetlands/facts-maps/wetland-background/insight.html](https://wetlandinfo.des.qld.gov.au/wetlands/facts-maps/wetland-background/insight.html)
