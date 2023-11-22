@@ -115,7 +115,7 @@
        .. container:: card-list icons
           :name: access-the-data-cards
 
-          .. grid:: 5
+          .. grid:: 2 2 3 5
              :gutter: 3
 
              {% for item in valid_maps %}

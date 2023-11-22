@@ -13,7 +13,7 @@
 
    Find product metadata on our data products.
 
-   .. grid:: 5
+   .. grid:: 2 2 3 5
       :gutter: 3
 
       {% for item in data.data_product_themes %}
