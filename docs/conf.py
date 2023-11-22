@@ -111,7 +111,9 @@ html_theme_options = {
     "header_links_before_dropdown": 3,
 }
 
-html_context = {}
+html_context = {
+    "default_mode": "light",
+}
 
 if os.environ.get("BUILD_MODE") == "production":
     html_context["google_analytics_ga4_tag"] = "G-4B9D450HR4"
