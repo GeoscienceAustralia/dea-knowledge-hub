@@ -20,10 +20,8 @@ parent_products:
 collection:
   name: Geoscience Australia Sentinel-2 Collection 3
   link: null
-dois:
-  - 10.26186/146569
-ecat:
-  - "146569"
+doi: 10.26186/146569
+ecat: "146569"
 nci:
   name: null
   code: null

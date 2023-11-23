@@ -22,10 +22,8 @@ parent_products:
 collection:
   name: Geoscience Australia Landsat Collection 3
   link: null
-dois:
-  - 10.26186/146261
-ecat:
-  - "146261"
+doi: 10.26186/146261
+ecat: "146261"
 nci:
   name: null
   code: null

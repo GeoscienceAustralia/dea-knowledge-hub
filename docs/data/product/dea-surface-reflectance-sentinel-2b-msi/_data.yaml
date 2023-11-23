@@ -20,10 +20,8 @@ parent_products:
 collection:
   name: Geoscience Australia Sentinel-2 Collection 3
   link: null
-dois:
-  - 10.26186/146551
-ecat:
-  - "146551"
+doi: 10.26186/146551
+ecat: "146551"
 nci:
   name: ga_s2bm_ard_3
   code: ka08

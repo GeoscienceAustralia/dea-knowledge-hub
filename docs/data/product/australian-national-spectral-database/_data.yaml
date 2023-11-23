@@ -19,9 +19,8 @@ parent_products:
 collection:
   name: null
   link: null
-dois: null
-ecat:
-  - "145560"
+doi: null
+ecat: "145560"
 nci:
   name: null
   code: null

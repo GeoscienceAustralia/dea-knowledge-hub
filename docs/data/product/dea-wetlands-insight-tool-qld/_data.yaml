@@ -19,9 +19,8 @@ parent_products:
 collection:
   name: Geoscience Australia Landsat Collection 2 (DEPRECATED)
   link: null
-dois: null
-ecat:
-  - "144795"
+doi: null
+ecat: "144795"
 nci:
   name: null
   code: null

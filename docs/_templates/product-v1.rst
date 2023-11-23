@@ -9,8 +9,6 @@
 {% set valid_old_versions = data.old_versions | selectattr("slug",  "!=", None) | selectattr("version",  "!=", None) | selectattr("name",  "!=", None) | list %}
 {% set valid_product_types = [data.product_type, data.spatial_data_type] | select("!=", None) | list %}
 {% set valid_product_ids = data.product_ids | select("!=", None) | list %}
-{% set valid_ecat = data.ecat | select("!=", None) | list %}
-{% set valid_dois = data.dois | select("!=", None) | list %}
 {% set valid_tags = data.tags | select("!=", None) | list %}
 
 {% set map_label = "See it on a map" %}
@@ -32,8 +30,6 @@
 
 {% set product_ids_label = "Product IDs" if valid_product_ids | length > 1 else "Product ID" %}
 {% set product_types_label = "Product types" if valid_product_types | length > 1 else "Product type" %}
-{% set dois_label = "DOIs" if valid_dois | length > 1 else "DOI" %}
-{% set ecat_label = "Persistent IDs" if valid_dois | length > 1 else "Persistent ID" %}
 
 .. |nbsp| unicode:: 0xA0
    :trim:
@@ -176,13 +172,15 @@
           * - **Collection**
             - {{ data.collection.name }}
           {%- endif %}
-          {%- if valid_dois %}
-          * - **{{ dois_label }}**
-            - {% for item in valid_dois %}`{{ item }} <https://doi.org/{{ item }}>`_{% if not loop.last %}, {% endif %}{% endfor %}
-          {%- endif %}
-          {%- if valid_ecat %}
-          * - **{{ ecat_label }}**
-            - {% for item in valid_ecat %}`{{ item }} <https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/{{ item }}>`_{% if not loop.last %}, {% endif %}{% endfor %}
+          {%- if data.doi and data.ecat %}
+          * - **DOI**
+            - `{{ data.doi }} <https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/{{ data.ecat }}>`_
+          {% elif data.doi %}
+          * - **DOI**
+            - `{{ data.doi }} <https://doi.org/{{ data.doi }}>`_
+          {% elif data.ecat %}
+          * - **Persistent ID**
+            - `{{ data.ecat }} <https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/{{ data.ecat }}>`_
           {%- endif %}
           {%- if data.published %}
           * - **Last updated**
