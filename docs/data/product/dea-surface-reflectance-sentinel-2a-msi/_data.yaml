@@ -20,8 +20,8 @@ parent_products:
 collection:
   name: Geoscience Australia Sentinel-2 Collection 3
   link: null
-dois:
-  - 10.26186/146552
+doi: 10.26186/146552
+ecat: "146552"
 nci:
   name: ga_s2am_ard_3
   code: ka08
@@ -63,9 +63,6 @@ code_examples:
 web_services:
   - link: https://ows.dea.ga.gov.au
     name: DEA OGC Web Services (layer name = ga_s2am_ard_3)
-
-ecat:
-  - id: "146552"
 
 # Settings
 

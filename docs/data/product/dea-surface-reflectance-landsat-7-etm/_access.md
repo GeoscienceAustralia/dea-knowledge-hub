@@ -2,7 +2,7 @@
 
 % ## Use constraints
 
-%## Frequently asked questions
+% ### Frequently asked questions
 
 %:::{dropdown} How do I access the data?
 

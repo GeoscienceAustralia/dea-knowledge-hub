@@ -4,9 +4,7 @@
 
 DEA Land Cover is appropriate to use at the national scale where other more detailed information on land cover is not available. Where DEA land cover shows conflicting information to state or local datasets, those datasets should be considered authoritative.
 
-## Frequently asked questions
-
-:::{dropdown} How do I access the data?
+:::{dropdown} How to access the data
 #### Viewing on DEA Maps
 
 To view and access the DEA Land Cover interactively:

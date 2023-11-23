@@ -2,8 +2,6 @@
 
 % ## Use constraints
 
-% ## Frequently asked questions
+% :::{dropdown} How to access the data
+% :::
 
-%:::{dropdown} How do I access the data?
-
-%:::

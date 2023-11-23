@@ -19,7 +19,8 @@ parent_products:
 collection:
   name: null
   link: null
-dois: null
+doi: null
+ecat: "145560"
 nci:
   name: null
   code: null
@@ -45,9 +46,6 @@ data: null
 code_examples: null
 
 web_services: null
-
-ecat:
-  - id: "145560"
 
 # Settings
 

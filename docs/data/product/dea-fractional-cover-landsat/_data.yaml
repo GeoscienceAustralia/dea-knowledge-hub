@@ -20,7 +20,8 @@ parent_products:
 collection:
   name: Geoscience Australia Landsat Collection 3
   link: null
-dois: null
+doi: null
+ecat: "145498"
 nci:
   name: null
   code: null
@@ -52,9 +53,6 @@ code_examples:
 web_services:
   - link: https://ows.dea.ga.gov.au
     name: Digital Earth Australia OGC Web Services
-
-ecat:
-  - id: "145498"
 
 # Settings
 

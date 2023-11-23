@@ -20,8 +20,8 @@ parent_products:
 collection:
   name: null
   link: null
-dois:
-  - 10.26186/146090
+doi: 10.26186/146090
+ecat: "146090"
 nci:
   name: null
   code: null
@@ -48,9 +48,6 @@ code_examples:
 web_services:
   - link: https://ows.dea.ga.gov.au/
     name: Open Web Services
-
-ecat:
-  - id: "146090"
 
 # Settings
 

@@ -6,9 +6,7 @@
 
 The DEA WO (Sentinel-2) Provisional product has not been validated, and has unknown accuracy. It shows the general extent of surface water in the corresponding Sentinel-2 satellite image. These extents should not be used for safety of life decisions without confirming the information with other sources.
 
-## Frequently asked questions
-
-:::{dropdown} How do I access the data?
+:::{dropdown} How to access the data
 #### DEA Maps
 
 To view and access the data interactively:

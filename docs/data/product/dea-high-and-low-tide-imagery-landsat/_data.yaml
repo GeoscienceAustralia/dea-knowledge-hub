@@ -21,7 +21,8 @@ parent_products:
 collection:
   name: Geoscience Australia Landsat Collection 2 (DEPRECATED)
   link: null
-dois: null
+doi: null
+ecat: "113843"
 nci:
   name: null
   code: null
@@ -51,9 +52,6 @@ code_examples:
 web_services:
   - link: http://gsky.nci.org.au/ows/dea?service=WMS&amp;amp;version=1.3.0&amp;amp;request=GetCapabilities
     name: GSKY WMS
-
-ecat:
-  - id: "113843"
 
 # Settings
 

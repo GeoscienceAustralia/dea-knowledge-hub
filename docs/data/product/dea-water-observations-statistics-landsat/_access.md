@@ -4,9 +4,7 @@ WO-STATS is available under CC-BY 4.0. The code for DEA-WO and its derivatives i
 
 % ## Use constraints
 
-## Frequently asked questions
-
-:::{dropdown} How do I access the data?
+:::{dropdown} How to access the data
 #### DEA Maps
 
 To view and access the data interactively:

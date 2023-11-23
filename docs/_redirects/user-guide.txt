@@ -6,19 +6,20 @@ about/glossary      guides/about/glossary
 about/intro         guides/about/intro
 about/publications  guides/about/publications
 
-setup/AWS/data_and_metadata  guides/setup/AWS/data_and_metadata
-setup/dea_maps               guides/setup/dea_maps
-setup/explorer_guide         guides/setup/explorer_guide
-setup/gis/README             guides/setup/gis/README
-setup/gis/stac               guides/setup/gis/stac
-setup/gis/web_services       guides/setup/gis/web_services
-setup/jupyter                guides/setup/jupyter
-setup/NCI/account            guides/setup/NCI/account
-setup/NCI/advanced           guides/setup/NCI/advanced
-setup/NCI/basics             guides/setup/NCI/basics
-setup/NCI/README             guides/setup/NCI/README
-setup/README                 guides/setup/README
-setup/Sandbox/sandbox        guides/setup/Sandbox/sandbox
+setup/AWS/data_and_metadata                             guides/setup/AWS/data_and_metadata
+setup/dea_maps                                          guides/setup/dea_maps
+setup/explorer_guide                                    guides/setup/explorer_guide
+setup/gis/README                                        guides/setup/gis/README
+setup/gis/stac                                          guides/setup/gis/stac
+setup/gis/web_services                                  guides/setup/gis/web_services
+setup/jupyter                                           guides/setup/jupyter
+setup/NCI/account                                       guides/setup/NCI/account
+setup/NCI/advanced                                      guides/setup/NCI/advanced
+setup/NCI/basics                                        guides/setup/NCI/basics
+setup/NCI/README                                        guides/setup/NCI/README
+setup/README                                            guides/setup/README
+setup/Sandbox/sandbox                                   guides/setup/Sandbox/sandbox
+references-articles/analysis-ready-data-open-data-cube  guides/setup/ard-open-data-cube
 
 reference/collection_3_naming        guides/reference/collection_3_naming
 reference/collection_3_summary_grid  guides/reference/collection_3_summary_grid

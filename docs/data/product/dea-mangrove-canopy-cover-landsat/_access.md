@@ -2,5 +2,3 @@
 
 % ## Use constraints
 
-% ## Frequently asked questions
-

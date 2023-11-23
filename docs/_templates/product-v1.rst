@@ -4,19 +4,16 @@
 {% set valid_data = data.data | selectattr("link",  "!=", None) | list %}
 {% set valid_explorers = data.explorers | selectattr("link",  "!=", None) | list %}
 {% set valid_web_services = data.web_services | selectattr("link",  "!=", None) | list %}
-{% set valid_ecat = data.ecat | selectattr("link",  "!=", None) | list %}
 {% set valid_code_samples = data.code_examples | selectattr("link",  "!=", None) | list %}
 {% set valid_files = data.files | selectattr("link",  "!=", None) | list %}
 {% set valid_old_versions = data.old_versions | selectattr("slug",  "!=", None) | selectattr("version",  "!=", None) | selectattr("name",  "!=", None) | list %}
 {% set valid_product_types = [data.product_type, data.spatial_data_type] | select("!=", None) | list %}
 {% set valid_product_ids = data.product_ids | select("!=", None) | list %}
-{% set valid_dois = data.dois | select("!=", None) | list %}
 {% set valid_tags = data.tags | select("!=", None) | list %}
 
 {% set map_label = "See it on a map" %}
 {% set explorer_label = "Explore data samples" %}
 {% set data_label = "Get the data online" %}
-{% set ecat_label = "Product catalogue" %}
 {% set web_service_label = "Get via web service" %}
 {% set code_sample_label = "Code sample" %}
 
@@ -33,7 +30,6 @@
 
 {% set product_ids_label = "Product IDs" if valid_product_ids | length > 1 else "Product ID" %}
 {% set product_types_label = "Product types" if valid_product_types | length > 1 else "Product type" %}
-{% set dois_label = "DOIs" if valid_dois | length > 1 else "DOI" %}
 
 .. |nbsp| unicode:: 0xA0
    :trim:
@@ -157,14 +153,6 @@
 
                 {{ item.name or web_service_default_name }}
              {% endfor %}
-
-             {% for item in valid_ecat %}
-             .. grid-item-card:: :fas:`newspaper`
-                :link: https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/{{ item.id }}
-                :link-alt: {{ ecat_label }}
-
-                eCat {{ item.id }}
-             {% endfor %}
        {%- endif %}
 
        .. rubric:: Key details
@@ -184,9 +172,15 @@
           * - **Collection**
             - {{ data.collection.name }}
           {%- endif %}
-          {%- if valid_dois %}
-          * - **{{ dois_label }}**
-            - {{ valid_dois | join(", ") }}
+          {%- if data.doi and data.ecat %}
+          * - **DOI**
+            - `{{ data.doi }} <https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/{{ data.ecat }}>`_
+          {% elif data.doi %}
+          * - **DOI**
+            - `{{ data.doi }} <https://doi.org/{{ data.doi }}>`_
+          {% elif data.ecat %}
+          * - **Persistent ID**
+            - `{{ data.ecat }} <https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/{{ data.ecat }}>`_
           {%- endif %}
           {%- if data.published %}
           * - **Last updated**
@@ -257,14 +251,6 @@
               * `{{ item.name or web_service_default_name }} <{{ item.link }}>`_
               {% endfor %}
             - Learn how to `connect to DEA's web services </guides/setup/gis/README>`_.
-          {% endif %}
-
-          {% if valid_ecat %}
-          * - **{{ ecat_label }}**
-            - {% for item in valid_ecat %}
-              * `eCat {{ item.id }} <https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/{{ item.id }}>`_
-              {% endfor %}
-            -
           {% endif %}
        {% elif not is_latest_version %}
        You may find data source links in the `latest version of the product <{{ data.latest_version_link }}>`_.

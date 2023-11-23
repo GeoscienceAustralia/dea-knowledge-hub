@@ -20,8 +20,8 @@ parent_products:
 collection:
   name: Geoscience Australia Landsat Collection 3
   link: null
-dois:
-  - 10.26186/146197
+doi: 10.26186/146197
+ecat: "146197"
 nci:
   name: null
   code: null
@@ -57,9 +57,6 @@ code_examples:
 web_services:
   - link: https://geoserver.dea.ga.gov.au/geoserver/wms
     name: Web mapping service
-
-ecat:
-  - id: "146197"
 
 # Settings
 

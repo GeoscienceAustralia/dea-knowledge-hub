@@ -19,8 +19,8 @@ parent_products:
 collection:
   name: Geoscience Australia Landsat Collection 3
   link: null
-dois:
-  - 10.26186/116268
+doi: 10.26186/116268
+ecat: "116268"
 nci:
   name: null
   code: null
@@ -60,9 +60,6 @@ web_services:
     name: "WMS (layer name: dea:DEACoastlines)"
   - link: http://geoserver.dea.ga.gov.au/geoserver/wfs?service=WFS&version=1.1.0
     name: "WFS (layer names: dea:shorelines_annual, dea:rates_of_change)"
-
-ecat:
-  - id: "116268"
 
 # Settings
 

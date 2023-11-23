@@ -2,9 +2,7 @@
 
 % ## Use constraints
 
-## Frequently asked questions
-
-:::{dropdown} How do I access the data?
+:::{dropdown} How to access the data
 #### DEA Maps
 
 To view and access the data interactively:
