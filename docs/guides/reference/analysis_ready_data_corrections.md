@@ -148,6 +148,15 @@ This enables comparison of imagery acquired at different times, in different sea
 
 Algorithm details can be found here: [https://doi.org/10.1109/JSTARS.2010.2042281](https://doi.org/10.1109/JSTARS.2010.2042281)
 
+<h3 id="nbart"> Surface Reflectance Calculation (NBAR + Terrain Illumination Correction) </h3>
+Calculate a standardised optical surface reflectance using robust physical models to correct for variations in image radiance values due to atmospheric properties, sun and sensor geometry and accounts for the directional reflectance properties of the surface.  The process also accounts for the underlying surface topography via a process known as terrain illumination correction.
+
+The process of producing standardised optical surface reflectance is known as Nadir corrected Bi-directional reflectance distribution function Adjusted Reflectance (NBAR) coupled with a Terrain illumination correction.
+
+This enables comparison of imagery acquired at different times, in different seasons, in different geographic locations over varying surface topography.
+
+Algorithm details can be found here: [https://doi.org/10.1016/j.rse.2012.06.018](https://doi.org/10.1016/j.rse.2012.06.018)
+
 <h3 id="fmask"> Function of Mask (Fmask) </h3>
 Function of Mask (Fmask), is a classification process that categorises pixels into mutually exclusive classes.  The classes are defined as an enumerator with values 0 -> 5.
 
