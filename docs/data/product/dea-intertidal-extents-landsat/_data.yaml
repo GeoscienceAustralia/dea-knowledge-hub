@@ -59,6 +59,6 @@ enable_overview: true
 enable_access: true
 enable_details: true
 enable_quality: true
-enable_history: true
+enable_history: false
 enable_credits: true
 
