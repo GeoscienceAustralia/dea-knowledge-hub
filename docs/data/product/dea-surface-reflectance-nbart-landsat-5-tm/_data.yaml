@@ -21,6 +21,8 @@ collection:
   name: Geoscience Australia Landsat Collection 3
   link: null
 dois: null
+ecat:
+  - "130853"
 nci:
   name: null
   code: null
@@ -50,9 +52,6 @@ code_examples:
     name: Code examples
 
 web_services: null
-
-ecat:
-  - id: "130853"
 
 # Settings
 

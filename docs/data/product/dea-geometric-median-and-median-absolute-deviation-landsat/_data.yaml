@@ -24,6 +24,8 @@ collection:
   link: null
 dois:
   - 10.26186/146261
+ecat:
+  - "146261"
 nci:
   name: null
   code: null
@@ -63,9 +65,6 @@ code_examples: null
 web_services:
   - link: https://ows.dea.ga.gov.au/
     name: Digital Earth Australia OGC Web Services
-
-ecat:
-  - id: "146261"
 
 # Settings
 

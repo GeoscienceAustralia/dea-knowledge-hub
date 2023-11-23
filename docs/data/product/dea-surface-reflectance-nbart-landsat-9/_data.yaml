@@ -22,6 +22,8 @@ collection:
   link: null
 dois:
   - 10.26186/148693
+ecat:
+  - "148693"
 nci:
   name: null
   code: null
@@ -57,9 +59,6 @@ web_services:
     name: Web Map Service (WMS)
   - link: https://ows.dea.ga.gov.au/?service=WCS&request=GetCapabilities&version=2.0.0
     name: Web Coverage Service (WCS)
-
-ecat:
-  - id: "148693"
 
 # Settings
 

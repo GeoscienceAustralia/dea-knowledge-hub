@@ -21,6 +21,8 @@ collection:
   name: Geoscience Australia Landsat Collection 2 (DEPRECATED)
   link: null
 dois: null
+ecat:
+  - "123678"
 nci:
   name: null
   code: null
@@ -52,9 +54,6 @@ code_examples: null
 web_services:
   - link: https://ows.services.dea.ga.gov.au
     name: "WMS services (layer name: NIDEM)"
-
-ecat:
-  - id: "123678"
 
 # Settings
 

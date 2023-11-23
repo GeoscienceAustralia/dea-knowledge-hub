@@ -20,6 +20,8 @@ collection:
   name: null
   link: null
 dois: null
+ecat:
+  - "111881"
 nci:
   name: null
   code: null
@@ -54,9 +56,6 @@ web_services:
     name: KML (last 3 days)
   - link: https://hotspots.dea.ga.gov.au/data/recent-hotspots.json
     name: GeoJSON (last 3 days)
-
-ecat:
-  - id: "111881"
 
 # Settings
 

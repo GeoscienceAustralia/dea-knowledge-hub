@@ -46,7 +46,6 @@ entries:
           - file: data/theme/baseline-satellite-data/index
             title: All
 
-          - file: data/product/product-starter-kit/index
           - file: data/category/dea-surface-reflectance/index
             entries:
               - file: data/category/landsat-5-analysis-ready-data/index

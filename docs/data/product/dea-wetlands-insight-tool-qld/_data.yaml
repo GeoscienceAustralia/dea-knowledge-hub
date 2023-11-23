@@ -20,6 +20,8 @@ collection:
   name: Geoscience Australia Landsat Collection 2 (DEPRECATED)
   link: null
 dois: null
+ecat:
+  - "144795"
 nci:
   name: null
   code: null
@@ -45,9 +47,6 @@ data:
 code_examples: null
 
 web_services: null
-
-ecat:
-  - id: "144795"
 
 # Settings
 

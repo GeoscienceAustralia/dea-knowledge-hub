@@ -25,6 +25,8 @@ collection:
   name: Geoscience Australia Landsat Collection 3
   link: null
 dois: null
+ecat:
+  - "146091"
 nci:
   name: null
   code: null
@@ -59,9 +61,6 @@ code_examples: null
 web_services:
   - link: https://ows.dea.ga.gov.au/
     name: Open Web Services
-
-ecat:
-  - id: "146091"
 
 # Settings
 
