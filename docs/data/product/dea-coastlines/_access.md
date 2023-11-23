@@ -85,7 +85,7 @@ deacl_ratesofchange_gdf = deacl_ratesofchange_gdf.query("certainty == 'good'")
 :::{dropdown} How to load data from the Web Feature Service (WFS) using R
 DEA Coastlines data can be loaded directly into R using the DEA Coastlines Web Feature Service (WFS) and the `sf` package:
 
-```python
+```r
 library(magrittr)
 library(glue)
 library(sf)

@@ -23,7 +23,7 @@
 {% set web_service_default_name = "Web service" %}
 {% set code_sample_default_name = "Code sample" %}
 
-{% set has_access_data = valid_maps or valid_data or valid_explorers or valid_web_services or valid_ecat or valid_code_samples %}
+{% set has_access_data = valid_maps or valid_data or valid_explorers or valid_web_services or valid_code_samples %}
 
 {% set pretty_version = "v" + data.version %}
 {% set page_title = data.title if is_latest_version else "Old version: " + data.title %}
