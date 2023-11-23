@@ -2,7 +2,7 @@
 
 % ## Use constraints
 
-:::{dropdown} How to download the data
+:::{dropdown} How to access the data
 DEA Coastlines data for the entire Australian coastline is available to download in two formats:
 
 * OGC GeoPackage (recommended): suitable for QGIS; includes built-in symbology for easier interpretation
