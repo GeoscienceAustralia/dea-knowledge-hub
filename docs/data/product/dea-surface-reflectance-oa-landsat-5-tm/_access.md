@@ -9,4 +9,3 @@ This product is contained in the Open Data Cube instance managed by Digital Eart
 
 See [Analysis Ready Data: example queries](/resources/analysis-ready-data-example-queries)
 :::
-

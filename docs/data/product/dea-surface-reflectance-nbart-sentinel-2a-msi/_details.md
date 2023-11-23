@@ -41,7 +41,7 @@ It delivers modelled surface reflectance from Sentinel-2A MSI data using physica
 
 This product is created using a physics-based, coupled Bidirectional Reflectance Distribution Function (BRDF) and atmospheric correction model that can be applied to both flat and inclined surfaces (Li et al. 2012). The resulting surface reflectance values are comparable both within individual images and between images acquired at different times.
 
-For more information on the BRDF/Albedo Model Parameters product, see [MCD43A1 Collection 6](/node/375). 
+For more information on the BRDF/Albedo Model Parameters product, see [NASA MODIS BRDF/Albedo parameter](https://modis.gsfc.nasa.gov/data/dataprod/mod43.php) and [MCD43A1 BRDF/Albedo Model Parameters Product](https://www.umb.edu/spectralmass/v006/mcd43a1-brdf-albedo-model-parameters-product/).
 
 #### Sentinel-2 archive
 

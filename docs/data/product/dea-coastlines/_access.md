@@ -3,8 +3,6 @@
 % ## Use constraints
 
 :::{dropdown} How to access the data
-#### Data download
-
 DEA Coastlines data for the entire Australian coastline is available to download in two formats:
 
 * OGC GeoPackage (recommended): suitable for QGIS; includes built-in symbology for easier interpretation
@@ -21,9 +19,9 @@ To load OGC GeoPackage data in QGIS:
 1. Drag and drop the `coastlines_v2.1.0.gpkg` file into the main QGIS map window, or select it using `Layer > Add Layer > Add Vector Layer.`
 2. When prompted to `Select Vector Layers to Add`, select all layers and then `OK`.
 3. The DEA Coastlines layers will load with built-in symbology. By default, DEA Coastlines layers automatically transition based on the zoom level of the map. To deactivate this: right click on a layer in the QGIS Layers panel, click `Set Layer Scale Visibility`, and untick `Scale visibility.`
+:::
 
-**DEA Maps**
-
+:::{dropdown} How to explore DEA Maps
 To explore DEA Coastlines on the interactive DEA Maps platform, visit the link below:
 
 [https://maps.dea.ga.gov.au/story/DEACoastlines](https://maps.dea.ga.gov.au/#share=s-DEACoastlines&playStory=1)
@@ -45,16 +43,13 @@ Zoom in further to view individual annual shorelines:
 
 ![DEA Maps coastlines example](/_files/cmi/DEACoastLines_DEAMaps_2.gif)
 
-***Note:** To view a DEA Coastlines layer that is not currently visible (e.g. rates of change points at full zoom), each layer can be added to the map individually from the `Sea, ocean and coast > DEA Coastlines > Supplementary data` directory.*
+**Note:** To view a DEA Coastlines layer that is not currently visible (e.g. rates of change points at full zoom), each layer can be added to the map individually from the `Sea, ocean and coast > DEA Coastlines > Supplementary data` directory.
+:::
 
-####   
-Loading DEA Coastlines data from the Web Feature Service (WFS) using Python
-
+:::{dropdown} How to load data from the Web Feature Service (WFS) using Python
 DEA Coastlines data can be loaded directly in a Python script or Jupyter Notebook using the DEA Coastlines Web Feature Service (WFS) and `geopandas`:  
- 
 
-```
-
+```python
 import geopandas as gpd
 
 # Specify bounding box
@@ -85,14 +80,12 @@ deacl_ratesofchange_gdf.crs = 'EPSG:3577'
 # (i.e. no poor quality flags)
 deacl_ratesofchange_gdf = deacl_ratesofchange_gdf.query("certainty == 'good'")
 ```
+:::
 
-####   
-Loading DEA Coastlines data from the Web Feature Service (WFS) using R
+:::{dropdown} How to load data from the Web Feature Service (WFS) using R
+DEA Coastlines data can be loaded directly into R using the DEA Coastlines Web Feature Service (WFS) and the `sf` package:
 
-DEA Coastlines data can be loaded directly into R using the DEA Coastlines Web Feature Service (WFS) and the `sf` package:  
- 
-
-```
+```python
 library(magrittr)
 library(glue)
 library(sf)
