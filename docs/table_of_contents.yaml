@@ -23,6 +23,7 @@ entries:
               - file: guides/setup/gis/web_services
               - file: guides/setup/gis/stac
           - file: guides/setup/jupyter
+          - file: guides/setup/ard-open-data-cube
 
       - caption: Reference
         entries:
