@@ -7,7 +7,6 @@ BRDF correction is based on low resolution imagery from the Moderate Resolution 
 The algorithm assumes that BRDF effect for inclined surfaces is modelled by the surface slope and does not account for land cover orientation relative to gravity (as occurs for some broadleaf vegetation with vertical leaf orientation).
 
 The algorithm also depends on several auxiliary data sources:
-
 * Availability of relevant MODIS BRDF data
 * Availability of relevant aerosol data
 * Availability of relevant water vapour data

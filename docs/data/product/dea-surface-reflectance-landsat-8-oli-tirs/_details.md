@@ -8,17 +8,16 @@ We need to make accurate comparisons of imagery acquired at different times, sea
 
 ## What this product offers
 
-This product takes Landsat 8 imagery captured over the Australian continent and corrects for inconsistencies across land and coastal fringes. The result is accurate and standardised surface reflectance data, which is instrumental in identifying and quantifying environmental change.
+This product takes Landsat 8 imagery captured over the Australian continent and corrects for inconsistencies across land and coastal fringes. The result is accurate and standardised surface reflectance data, which is instrumental in identifying and quantifying environmental change.
 
 The imagery is captured using the Operational Land Imager (OLI) and Thermal Infra-Red Scanner (TIRS) sensors aboard Landsat 8.
 
 This product is a single, cohesive Analysis Ready Data (ARD) package, which allows you to analyse surface reflectance data as is, without the need to apply additional corrections.
 
 It contains three sub-products that provide corrections or attribution information:
-
-* [DEA Surface Reflectance NBAR (Landsat 8 OLI-TIRS)](https://cmi.ga.gov.au/data-products/dea/402/dea-surface-reflectance-nbar-landsat-8-oli-tirs)
-* [DEA Surface Reflectance NBART (Landsat 8 OLI-TIRS)](https://cmi.ga.gov.au/data-products/dea/400/dea-surface-reflectance-nbart-landsat-8-oli-tirs)
-* [DEA Surface Reflectance OA (Landsat 8 OLI-TIRS)](https://cmi.ga.gov.au/data-products/dea/404/dea-surface-reflectance-oa-landsat-8-oli-tirs)
+* [DEA Surface Reflectance NBAR (Landsat 8 OLI-TIRS)](/data/product/dea-surface-reflectance-nbar-landsat-8-oli-tirs)
+* [DEA Surface Reflectance NBART (Landsat 8 OLI-TIRS)](/data/product/dea-surface-reflectance-nbart-landsat-8-oli-tirs)
+* [DEA Surface Reflectance OA (Landsat 8 OLI-TIRS)](/data/product/dea-surface-reflectance-oa-landsat-8-oli-tirs)
 
 The resolution is a 30 m grid based on the USGS Landsat Collection 1 archive.
 
@@ -27,31 +26,27 @@ The resolution is a 30 m grid based on the USGS Landsat Collection 1 archive.
 ## Applications
 
 * The development of derivative products to monitor land, inland waterways and coastal features, such as:
-
-               -  urban growth  
-               -  coastal habitats  
-               -  mining activities  
-               -  agricultural activity (e.g. pastoral, irrigated cropping, rain-fed cropping)  
-               -  water extent
-
+  * urban growth  
+  * coastal habitats  
+  * mining activities  
+  * agricultural activity (e.g. pastoral, irrigated cropping, rain-fed cropping)  
+  * water extent
 * The development of refined information products, such as:
-
-               -  areal units of detected surface water  
-               -  areal units of deforestation  
-               -  yield predictions of agricultural parcels
-
+  * areal units of detected surface water  
+  * areal units of deforestation  
+  * yield predictions of agricultural parcels
 * Compliance surveys
 * Emergency management
 
 ## Technical information
 
-#### Operational Land Imager (OLI) and Thermal Infrared Sensor (TIRS)
+### Operational Land Imager (OLI) and Thermal Infrared Sensor (TIRS)
 
 OLI is a push-broom sensor with a four-mirror telescope and 12-bit quantisation. OLI collects data for visible, near infrared, and short wave infrared spectral bands as well as a panchromatic band.
 
 TIRS measures land surface temperature in two thermal bands with new technology that applies quantum physics to detect heat.
 
-#### The Analysis Ready Data concept
+### The Analysis Ready Data concept
 
 The Analysis Ready Data (ARD) package allows you to get up and running with your analysis as quickly as possible with minimal data preparation and additional input. This makes it simpler for you to develop applications and for the database to execute queries.
 
@@ -59,17 +54,16 @@ The satellite data has been processed to a minimum set of requirements and organ
 
 The [technical report](https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/145101) containing the data summary for the Phase 1 DEA Surface Reflectance Validation is available.
 
-#### ARD sub-products
-
-*1) [DEA Surface Reflectance NBAR (Landsat 8 OLI-TIRS)](https://cmi.ga.gov.au/data-products/dea/402/dea-surface-reflectance-nbar-landsat-8-oli-tirs)*
+### ARD sub-products
+1) [DEA Surface Reflectance NBAR (Landsat 8 OLI-TIRS)](/data/product/dea-surface-reflectance-nbar-landsat-8-oli-tirs)
 
 This sub-product produces standardised optical surface reflectance data using robust physical models which correct for variations and inconsistencies in image radiance values. Corrections are performed using Nadir corrected Bi-directional reflectance distribution function Adjusted Reflectance (NBAR).
 
-*2) [DEA Surface Reflectance NBART (Landsat 8 OLI-TIRS)](https://cmi.ga.gov.au/data-products/dea/400/dea-surface-reflectance-nbart-landsat-8-oli-tirs)*
+2) [DEA Surface Reflectance NBART (Landsat 8 OLI-TIRS)](/data/product/dea-surface-reflectance-nbart-landsat-8-oli-tirs)
 
 This sub-product performs the same function as Surface Reflectance (Landsat 8 OLI-TIRS NBAR), but also applies terrain illumination correction.
 
-*3) [DEA Surface Reflectance OA (Landsat 8 OLI-TIRS)](https://cmi.ga.gov.au/data-products/dea/404/dea-surface-reflectance-oa-landsat-8-oli-tirs)*
+3) [DEA Surface Reflectance OA (Landsat 8 OLI-TIRS)](/data/product/dea-surface-reflectance-oa-landsat-8-oli-tirs)
 
 The NBAR and NBART sibling products depend upon the OA product to provide accurate and reliable contextual information about the Landsat data. This ‘data provenance’ provides a chain of information which allows the data to be replicated or utilised by derivative applications. It takes a number of different forms, including satellite, solar and surface geometry and classification attribution labels.
 
@@ -97,41 +91,24 @@ This product is derived from the USGS Landsat Collection 1 archive.
 
 ## Processing steps
 
-1. Longitude and Latitude Calculation
-
-1. Satellite and Solar Geometry Calculation
-
-1. Aerosol Optical Thickness Retrieval
-
-1. BRDF Shape Function Retrieval
-
-1. Ozone Retrieval
-
-1. Elevation Retrieval and Smoothing
-
-1. Slope and Aspect Calculation
-
-1. Incidence and Azimuthal Incident Angles Calculation
-
-1. Exiting and Azimuthal Exiting Angles Calculation
-
-1. Relative Slope Calculation
-
-1. Terrain Occlusion Mask
-
-1. MODTRAN
-
-1. Atmospheric Correction Coefficients Calculation
-
-1. Bilinear Interpolation of Atmospheric Correction Coefficients
-
-1. Surface Reflectance Calculation (NBAR)
-
-1. Surface Reflectance Calculation (NBAR + Terrain Illumination Correction)
-
-1. Function of Mask (Fmask)
-
-1. Contiguous Spectral Data Mask Calculation
+1. [Longitude and Latitude Calculation](/guides/reference/analysis_ready_data_corrections#lon-lat-calculation)
+2. [Satellite and Solar Geometry Calculation](/guides/reference/analysis_ready_data_corrections#sat-sol-geom-calculation)
+3. [Aerosol Optical Thickness Retrieval](/guides/reference/analysis_ready_data_corrections#aero-opt-thick-retr)
+4. [BRDF Shape Function Retrieval](/guides/reference/analysis_ready_data_corrections#brdf-shp-fnc-retr)
+5. [Ozone Retrieval](/guides/reference/analysis_ready_data_corrections#o3-retr)
+6. [Elevation Retrieval and Smoothing](/guides/reference/analysis_ready_data_corrections#elev-retr-smth)
+7. [Slope and Aspect Calculation](/guides/reference/analysis_ready_data_corrections#slp-asp-calc)
+8. [Incidence and Azimuthal Incident Angles Calculation](/guides/reference/analysis_ready_data_corrections#inc-azm-ang-calc)
+9. [Exiting and Azimuthal Exiting Angles Calculation](/guides/reference/analysis_ready_data_corrections#ext-azm-ang-calc)
+10. [Relative Slope Calculation](/guides/reference/analysis_ready_data_corrections#rel-slp-calc)
+11. [Terrain Occlusion Mask](/guides/reference/analysis_ready_data_corrections#terr-occ-msk)
+12. [MODTRAN](/guides/reference/analysis_ready_data_corrections#modtran)
+13. [Atmospheric Correction Coefficients Calculation](/guides/reference/analysis_ready_data_corrections#atm-corr-coef-calc)
+14. [Bilinear Interpolation of Atmospheric Correction Coefficients](/guides/reference/analysis_ready_data_corrections#bil-int-atm-corr-coef)
+15. [Surface Reflectance Calculation (NBAR)](/guides/reference/analysis_ready_data_corrections#nbar)
+16. [Surface Reflectance Calculation (NBAR + Terrain Illumination Correction)](/guides/reference/analysis_ready_data_corrections#nbart)
+17. [Function of Mask (Fmask)](/guides/reference/analysis_ready_data_corrections#fmask)
+18. [Contiguous Spectral Data Mask Calculation](/guides/reference/analysis_ready_data_corrections#cont-spec-data-mask-calc)
 
 ## Software
 
