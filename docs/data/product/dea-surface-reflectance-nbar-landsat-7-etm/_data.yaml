@@ -8,9 +8,9 @@ is_latest_version: true
 product_type: Baseline
 spatial_data_type: Raster
 time_span:
-  start: null
-  end: null
-update_frequency: As needed
+  start: 28/05/1999
+  end: 06/04/2022
+update_frequency: Daily
 product_ids:
   - ga_ls7e_ard_3
 
@@ -35,17 +35,19 @@ tags:
 
 maps: null
 
-explorers: null
+explorers:
+  - link: https://explorer.dea.ga.gov.au/products/ga_ls7e_ard_3
+    name: Data explorer
 
 data:
   - link: https://dapds00.nci.org.au/thredds/catalog/xu18/catalog.html
-    name: NCI - THREDDS
+    name: Access the data in NCI
   - link: https://data.dea.ga.gov.au/?prefix=baseline/ga_ls7e_ard_3/
-    name: Digital Earth Australia - Public Data
+    name: Access the data on AWS
 
 code_examples:
   - link: https://docs.dea.ga.gov.au/notebooks/DEA_products/DEA_Landsat_Surface_Reflectance.html
-    name: Jupyter notebook
+    name: Code examples
 
 web_services: null
 
