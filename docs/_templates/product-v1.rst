@@ -16,7 +16,6 @@
 {% set map_label = "See it on a map" %}
 {% set explorer_label = "Explore data samples" %}
 {% set data_label = "Get the data online" %}
-{% set ecat_label = "Persistent ID" %}
 {% set web_service_label = "Get via web service" %}
 {% set code_sample_label = "Code sample" %}
 
@@ -34,6 +33,7 @@
 {% set product_ids_label = "Product IDs" if valid_product_ids | length > 1 else "Product ID" %}
 {% set product_types_label = "Product types" if valid_product_types | length > 1 else "Product type" %}
 {% set dois_label = "DOIs" if valid_dois | length > 1 else "DOI" %}
+{% set ecat_label = "Persistent IDs" if valid_dois | length > 1 else "Persistent ID" %}
 
 .. |nbsp| unicode:: 0xA0
    :trim:
@@ -178,11 +178,11 @@
           {%- endif %}
           {%- if valid_dois %}
           * - **{{ dois_label }}**
-            - {% for item in valid_ecat %}[{{ item }}](https://doi.org/{{ item }}){% if not loop.last %}, {% endif %}{% endfor %}
+            - {% for item in valid_dois %}`{{ item }} <https://doi.org/{{ item }}>`_{% if not loop.last %}, {% endif %}{% endfor %}
           {%- endif %}
           {%- if valid_ecat %}
           * - **{{ ecat_label }}**
-            - {% for item in valid_ecat %}[{{ item }}](https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/{{ item }}){% if not loop.last %}, {% endif %}{% endfor %}
+            - {% for item in valid_ecat %}`{{ item }} <https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/{{ item }}>`_{% if not loop.last %}, {% endif %}{% endfor %}
           {%- endif %}
           {%- if data.published %}
           * - **Last updated**
