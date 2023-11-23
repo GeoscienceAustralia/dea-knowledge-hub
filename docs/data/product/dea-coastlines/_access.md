@@ -2,9 +2,7 @@
 
 % ## Use constraints
 
-## Frequently asked questions
-
-:::{dropdown} How do I access the data?
+:::{dropdown} How to access the data
 #### Data download
 
 DEA Coastlines data for the entire Australian coastline is available to download in two formats:

@@ -4,9 +4,7 @@
 
 Use of the NSD is subject to [NSD Terms of Service](/_files/cmi/NSD_Terms_of_Service.pdf). Please read the Terms before accessing the Service.
 
-## Frequently asked questions
-
-:::{dropdown} How do I access the data?
+:::{dropdown} How to access the data
 ### How to access the National Spectral Database 
 
 1) Read the **Terms of Service** above. These terms outline your responsibilites and conditions of use.

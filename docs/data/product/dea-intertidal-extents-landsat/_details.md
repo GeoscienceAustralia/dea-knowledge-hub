@@ -38,69 +38,72 @@ Examples of regions in ITEM v2.0 where these significant improvements have been 
 * **Broad Sound, QLD.** Improved tidal modelling has resulted in a smoother intertidal extent map, and a greatly improved confidence layer value for the region.
 * Improvements in the coverage of the DEA archive has allowed many regions unresolved in ITEM v1.0 and showing as 'no data' to be modelled successfully in ITEM 2.0. For example, **Mornington Island, QLD, Eastern sections of Fraser Island, QLD** and pensinsulas in **Bowling Green Bay National Park near Townsville, QLD.**
 
-#### Datasets
+### Datasets
 
 The Intertidal Extents Model (ITEM v2.0) consists of three datasets derived from the Landsat NBAR data managed in Digital Earth Australia for the period 1986 to 2016
 
-**1) ITEM v2.0 TIDAL MODEL** 
+#### Dataset 1: ITEM v2.0 TIDAL MODEL
 
 The **ITEM****v2\_tidalmodel.shp** identifies the location and extents of the 306 polygons (Figure 1) used in the product, defined by the Continental Scale tidal modelling framework (see Processing Step: Create a continental scale tidal modelling framework). The shapefile also includes information on the lowest (LOT) and highest (HOT) observed tides for the cell, and hence the observed tidal range (HOT-LOT), based on tidal modelling for the time of acquisition of each of the corresponding Landsat observations in the cell polygon.
 
-##### **Attributes:**
+**Attributes:**
 
-**ID** - Unique Polygon Identifier 
+| | |
+| -- | -- |
+| **ID** | Unique Polygon Identifier |
+| **lon** | Polygon Centroid Longitude |
+| **lat** | Polygon Centroid Latitude |
+| **LOT** | Lowest Observed Tide – The lowest modelled tidal height based on the acquisition times of all observations in the polygon. Relative to Mean Sea Level (MSL) (m).  |
+| **HOT** | Highest Observed Tide – The highest modelled tidal height based on the acquisition times of all observations in the polygon. Relative to Mean Sea Level (MSL) (m).  |
+| **LMT** | Lowest Modelled Tide - The lowest modelled tidal height based on the OTPS model for the full period of the archive. Relative to Mean Sea Level (MSL) (m).  |
+| **HMT** | Highest Modelled Tide - The highest modelled tidal height based on the OTPS model for the full period of the archive. Relative to Mean Sea Level (MSL) (m).  |
 
-**lon** - Polygon Centroid Longitude
-
-**lat** - Polygon Centroid Latitude
-
-**LOT** - Lowest Observed Tide – The lowest modelled tidal height based on the acquisition times of all observations in the polygon. Relative to Mean Sea Level (MSL) (m). 
-
-**HOT** \- Highest Observed Tide – The highest modelled tidal height based on the acquisition times of all observations in the polygon. Relative to Mean Sea Level (MSL) (m). 
-
-**LMT** \- Lowest Modelled Tide - The lowest modelled tidal height based on the OTPS model for the full period of the archive. Relative to Mean Sea Level (MSL) (m). 
-
-**HMT** - Highest Modelled Tide - The highest modelled tidal height based on the OTPS model for the full period of the archive. Relative to Mean Sea Level (MSL) (m). 
-
-**2) THE RELATIVE EXTENTS MODEL v2.0**
+#### Dataset 2: THE RELATIVE EXTENTS MODEL v2.0
 
 The **Relative Extents Model *(item\_v2)*** utilises the tidal information attributed to each Landsat observation to indicate the spatial extent of intertidal substratum exposed at percentile intervals of the observed tidal range for the cell. The dataset consists of 306 raster files (NETCDF and Geotiff) corresponding to polygons of the continental scale tidal model.
 
-##### **Naming convention:**
+**Naming convention:**
 
-ITEM\_REL\_PolygonID\_CentroidLongitude\_CentroidLatitude
+```
+ITEM_REL_PolygonID_CentroidLongitude_CentroidLatitude
+```
 
-*e.g. ITEM\_REL\_95\_153.67\_-28.77.tif*
+E.g. `ITEM_REL_95_153.67_-28.77.tif`
 
-##### **Single Band Integer Raster:**
+**Single Band Integer Raster:**
 
-0 – Always water  
-1 – Exposed at lowest 0-10% of the observed tidal range  
-2 – Exposed at 10-20% of the observed tidal range  
-3 – Exposed at 20-30% of the observed tidal range  
-4 – Exposed at 30-40% of the observed tidal range  
-5 – Exposed at 40-50% of the observed tidal range  
-6 – Exposed at 50-60% of the observed tidal range  
-7 – Exposed at 60-70% of the observed tidal range  
-8 – Exposed at 70-80% of the observed tidal range  
-9 - Exposed at highest 80-100% of the observed tidal range (land)  
-\-6666 – No Data
+| | |
+| -- | -- |
+| 0 | Always water |
+| 1 | Exposed at lowest 0-10% of the observed tidal range |
+| 2 | Exposed at 10-20% of the observed tidal range |
+| 3 | Exposed at 20-30% of the observed tidal range |
+| 4 | Exposed at 30-40% of the observed tidal range |
+| 5 | Exposed at 40-50% of the observed tidal range |
+| 6 | Exposed at 50-60% of the observed tidal range |
+| 7 | Exposed at 60-70% of the observed tidal range |
+| 8 | Exposed at 70-80% of the observed tidal range |
+| 9 | Exposed at highest 80-100% of the observed tidal range (land) |
+| \-6666 | No Data |
 
-**3) THE CONFIDENCE LAYER v2.0**
+#### Dataset 3: THE CONFIDENCE LAYER v2.0
 
 The **Confidence Layer (item\_v2\_conf)** reflects the confidence level of the Relative Extents Model, based on the distribution of classification metrics (see Processing Step: Calculate NDWI for each Observation) within each of the percentile intervals of the tidal range. The layer should be used to filter region/pixels in the model where the derived spatial extents may be adversely affected by data and modelling errors. The dataset consists of 306 raster files (NETCDF and Geotiff) corresponding to polygons of the continental scale tidal model.
 
-##### **Naming Convention:**
+**Naming Convention:**
 
-ITEM\_STD\_PolygonID\_CentroidLongitude\_CentroidLatitude
+```
+ITEM_STD_PolygonID_CentroidLongitude_CentroidLatitude
+```
 
-*e.g. ITEM\_STD\_95\_153.67\_-28.77.tif*
+E.g. `ITEM_STD_95_153.67_-28.77.tif`
 
-##### **Single Band Integer Raster:**
+**Single Band Integer Raster:**
 
-\-6666 - No Data – Model is invalid. Indicates pixels where data quality and/or number of observations have resulted in no available observations in one or more of the percentile interval subsets.
-
-All other values – The pixel-based average of the NDWI standard deviations calculated independently for each percentile interval of the observed tidal range.
+| | |
+| -- | -- |
+| \-6666 | No Data – Model is invalid. Indicates pixels where data quality and/or number of observations have resulted in no available observations in one or more of the percentile interval subsets. |
+| All other values | The pixel-based average of the NDWI standard deviations calculated independently for each percentile interval of the observed tidal range. |
 
 ## Lineage
 
@@ -111,17 +114,11 @@ The product differs from previous methods used to map the intertidal zone which 
 ## Processing steps
 
 1. Create a continental scale tidal modelling framework
-
 1. Apply the Oregon State University tidal model to coastline cells/polygons
-
 1. Attribute coastal cells with a tidal height
-
 1. Sort time series of observations based on tidal height
-
 1. Mask tile observations for pixel quality
-
 1. Calculate NDWI for each observation
-
 1. Create binary NDWI layers and combine to create Relative Extents Model
 
 % ## Software

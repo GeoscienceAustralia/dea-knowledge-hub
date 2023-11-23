@@ -2,9 +2,7 @@
 
 % ## Use constraints
 
-## Frequently asked questions
-
-:::{dropdown} How do I access the data?
+:::{dropdown} How to access the data
 #### Dataset Naming Convention
 
 Collection 3 datasets follow a [naming convention](https://docs.dea.ga.gov.au/reference/collection_3_naming.html?highlight=convention) to enhance accessibility.

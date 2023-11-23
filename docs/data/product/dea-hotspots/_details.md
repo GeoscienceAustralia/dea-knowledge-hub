@@ -30,7 +30,7 @@ The system can be used by:
 
 ## Technical information
 
-#### Important notes about Hotspots
+### Important notes about Hotspots
 
 * Each Hotspot is represented by a spot on the map. The colour of the spot represents the time the Hotspot was last observed by a passing satellite (e.g. 0-2 hours). The colour does not indicate severity.
 * Hotspots are not an accurate measure for the size or location of the fire.  
@@ -40,7 +40,7 @@ The system can be used by:
 * Hotspots are potential bushfires, but could also indicate other phenomena, such as gas fires, heavy industry, furnaces and jet contrails.  
 * Some Hotspots may not be captured and produced if associated imagery is missing.
 
-#### How Hotspots are generated
+### How Hotspots are generated
 
 1) Satellites regularly orbit the Earth and capture images of its surface.    
 For a given location in Australia, an image is captured 4-7 times per day by one of the satellites.  
@@ -52,7 +52,7 @@ Thermal infrared sensors on-board the satellites can detect areas with unusually
 
 Typically, the entire procedure (from satellite imaging to Hotspot mapping) takes 20 mins. This means, at best, the data on DEA Hotspots is 20 mins old. It is not presented in real time.  
 
-#### Satellites and sensors
+### Satellites and sensors
 
 The Hotspot data is collected by different satellites, including the following:
 
