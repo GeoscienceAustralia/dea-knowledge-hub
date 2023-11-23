@@ -4,7 +4,7 @@
 
 % ## Frequently asked questions
 
-%:::{dropdown} How to access the data
+% :::{dropdown} How to access the data
 
-%:::
+% :::
 
