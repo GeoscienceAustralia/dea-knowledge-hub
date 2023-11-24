@@ -164,6 +164,6 @@ entries:
   - file: notebooks/README
     title: DEA Notebooks
 
-  - file: data/old-version-product/index
+  - file: data/old-version/index
     entries:
       - glob: data/old-version/*/index
