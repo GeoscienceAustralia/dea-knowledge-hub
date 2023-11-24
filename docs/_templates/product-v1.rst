@@ -26,7 +26,7 @@
 {% set has_access_data = valid_maps or valid_data or valid_explorers or valid_web_services or valid_code_samples %}
 
 {% set pretty_version = "v" + data.version %}
-{% set page_title = data.title if is_latest_version else "Old version: " + data.title %}
+{% set page_title = data.title if is_latest_version else data.version + ": " + data.title %}
 
 {% set product_ids_label = "Product IDs" if valid_product_ids | length > 1 else "Product ID" %}
 {% set product_types_label = "Product types" if valid_product_types | length > 1 else "Product type" %}
@@ -102,12 +102,12 @@
        .. include:: _overview_1.md
           :parser: myst_parser.sphinx_
 
+       {% if has_access_data %}
        .. rubric:: Access the data
           :name: access-the-data
 
        For help accessing the data, see the 'Access' tab.
 
-       {% if is_latest_version and has_access_data %}
        .. container:: card-list icons
           :name: access-the-data-cards
 
@@ -209,7 +209,7 @@
        .. rubric:: Access the data
           :name: access-the-data-2
 
-       {% if is_latest_version and has_access_data %}
+       {% if has_access_data %}
        .. list-table::
           :name: access-table
 
@@ -252,8 +252,6 @@
               {% endfor %}
             - Learn how to `connect to DEA's web services </guides/setup/gis/README>`_.
           {% endif %}
-       {% elif not is_latest_version %}
-       You may find data source links in the `latest version of the product <{{ data.latest_version_link }}>`_.
        {% else %}
        There are no data source links available at the present time.
        {% endif %}
@@ -330,7 +328,7 @@
        .. list-table::
 
           {% for item in valid_old_versions %}
-          * - `v{{ item.version }}: {{ item.name }} </data/old-versions/{{ item.slug }}>`_
+          * - `v{{ item.version }}: {{ item.title }} </data/old-versions/{{ item.slug }}>`_
             - {{ item.release_date or "" }}
           {% endfor %}
        {% else %}

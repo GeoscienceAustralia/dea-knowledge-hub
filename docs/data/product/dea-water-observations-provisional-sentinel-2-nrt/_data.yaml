@@ -5,6 +5,7 @@ long_title: Geoscience Australia Sentinel-2 Near Real Time Water Observations Pr
 header_image: /_files/cmi/S2_WO_Provisional_Gulf_20230320_0.png
 version: 1.1.6
 is_latest_version: true
+latest_version_link: null
 product_type: Derivative
 spatial_data_type: Raster
 time_span:

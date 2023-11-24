@@ -5,6 +5,7 @@ long_title: "High Tide and Low Tide Composites 25m 2.0.0 "
 header_image: /_files/cmi/HLTCv2.png
 version: 2.0.0
 is_latest_version: true
+latest_version_link: null
 product_type: Derivative
 spatial_data_type: Raster
 time_span:

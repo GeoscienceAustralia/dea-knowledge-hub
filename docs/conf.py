@@ -23,7 +23,6 @@ exclude_patterns = [
     "notebooks/Scientific_workflows",
     "notebooks/DEA_notebooks_template.ipynb",
     "notebooks/USAGE.rst",
-    "data/old-version-product",
 ]
 exclude_patterns += utilities.optional_exclude_pattern("LOCAL_ENABLE_USER_GUIDES", "guides")
 exclude_patterns += utilities.optional_exclude_pattern("LOCAL_ENABLE_DATA_PRODUCTS", "data")

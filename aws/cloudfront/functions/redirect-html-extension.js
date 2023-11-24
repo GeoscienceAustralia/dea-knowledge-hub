@@ -6,8 +6,8 @@ async function handler(event) {
 
     if (uri.match(htmlExtensionPattern)) {
         return {
-            statusCode: 302,
-            statusDescription: "Found",
+            statusCode: 301,
+            statusDescription: "Moved Permanently",
             headers: {
                 location: {
                     value: uri.replace(htmlExtensionPattern, "/")

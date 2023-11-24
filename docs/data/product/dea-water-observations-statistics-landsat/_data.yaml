@@ -5,6 +5,7 @@ long_title: Geoscience Australia Landsat Water Observation Statistics Collection
 header_image: null
 version: 3.1.6
 is_latest_version: true
+latest_version_link: null
 product_type: Derivative
 spatial_data_type: Raster
 time_span:

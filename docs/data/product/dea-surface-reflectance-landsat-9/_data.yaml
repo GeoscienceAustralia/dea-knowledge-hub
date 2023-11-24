@@ -5,6 +5,7 @@ long_title: Geoscience Australia Landsat 9 OLI-TIRS Analysis Ready Data Collecti
 header_image: /_files/cmi/surface_reflectance_2_NBARTa_1.png
 version: 3.0.0
 is_latest_version: true
+latest_version_link: null
 product_type: Baseline
 spatial_data_type: Raster
 time_span:

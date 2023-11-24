@@ -5,6 +5,7 @@ long_title: Geoscience Australia Landsat 9 OLI-TIRS NBART Collection 3
 header_image: null
 version: 3.0.0
 is_latest_version: true
+latest_version_link: null
 product_type: Baseline
 spatial_data_type: Raster
 time_span:
