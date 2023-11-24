@@ -1,15 +1,17 @@
 ## Acknowledgments
 
-The authors would like to thank the following organisations:
+This research was undertaken with the assistance of resources from the National Computational Infrastructure (NCI), which is supported by the Australian Government.
 
-* NASA
+Contains modified Copernicus Sentinel data 2015-present.
+
+The authors would like to thank the following organisations:
+* National Aeronautics and Space Administration (NASA)
 * Environment Canada
-* CSIRO
-* NOAA / ESRL / PSD
-* NGA
-* USGS/EROS Center
-* ESA
-* Spectral Sciences, Inc.
+* The Commonwealth Scientific and Industrial Research Organisation (CSIRO)
+* National Oceanic and Atmospheric Administration (NOAA) / Earth System Research Laboratories (ESRL) / Physical Sciences Laboratory (PSD)
+* The National Geospatial-Intelligence Agency (NGA)
+* The United States Geological Survey (USGS) / Earth Resources Observation and Science (EROS) Center
+* Spectral Sciences Inc.
 
 ## License and copyright
 

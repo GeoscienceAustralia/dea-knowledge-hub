@@ -9,9 +9,9 @@ latest_version_link: null
 product_type: Baseline
 spatial_data_type: Raster
 time_span:
-  start: null
-  end: null
-update_frequency: As needed
+  start: 30/06/2017
+  end: present
+update_frequency: Daily
 product_ids:
   - ga_s2bm_ard_3
 
@@ -41,28 +41,22 @@ maps:
     name: null
 
 explorers:
-  - link: https://explorer-aws.dea.ga.gov.au/products/ga_s2bm_ard_3
-    name: DEA Explorer (AWS)
-  - link: https://explorer-nci.dea.ga.gov.au/products/ga_s2bm_ard_3
-    name: " DEA Explorer (NCI)"
-  - link: https://explorer-aws.dea.ga.gov.au/stac
-    name: https://explorer-aws.dea.ga.gov.au/stac
+  - link: https://explorer.dea.ga.gov.au/products/ga_s2bm_ard_3
+    name: DEA Explorer
 
 data:
   - link: https://data.dea.ga.gov.au/?prefix=baseline/ga_s2bm_ard_3/
-    name: DEA Public Data on AWS
+    name: Access the data on AWS
   - link: https://dapds00.nci.org.au/thredds/catalog/ka08/ga_s2bm_ard_3/catalog.html
-    name: NCI THREDDS
+    name: Access the data on NCI
 
 code_examples:
   - link: https://docs.dea.ga.gov.au/notebooks/DEA_products/DEA_Sentinel2_Surface_Reflectance.html
-    name: Juputer Notebooks
-  - link: https://app.sandbox.dea.ga.gov.au/
-    name: DEA Sandbox (product = ga_s2bm_ard_3)
+    name: Code examples
 
 web_services:
   - link: https://ows.dea.ga.gov.au
-    name: DEA OGC Web Services (layer name = ga_s2bm_ard_3)
+    name: Web Services
 
 # Settings
 

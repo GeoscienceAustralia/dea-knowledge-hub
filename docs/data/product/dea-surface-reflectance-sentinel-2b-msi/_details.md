@@ -1,10 +1,10 @@
 ## Background
 
-The European Space Agency (*ESA*) has operated medium resolution satellites - Sentinel-2 series (Sentinel-2A and Sentinel-2B) since 2015. The spectral bands and spatial resolution of Sentinel-2 are similar to those of the Landsat series, but Sentinel-2 has a higher revisit frequency and spatial coverage. A combination of Sentinel-2 and Landsat data can provide good spatial and temporal coverage of the Earth's surface and provide useful information to monitor environmental resources over time, such as agricultural production and mining activities. However, the raw remotely sensed data received by these satellites in the solar spectral range do not directly characterise the underlying reflectance of surface objects. The data are modified by the atmosphere, variation of solar and sensor positions as well as surface anisotropic conditions. To make accurate comparisons of imagery acquired at different times, seasons and geographic locations, and detect the change of surface, it is necessary to remove/reduce these effects to ensure the data are consistent and can be compared over time.
+The European Space Agency (ESA) has operated medium resolution satellites - Sentinel-2 series (Sentinel-2A and Sentinel-2B) since 2015. The spectral bands and spatial resolution of Sentinel-2 are similar to those of the Landsat series, but Sentinel-2 has a higher revisit frequency and spatial coverage. A combination of Sentinel-2 and Landsat data can provide good spatial and temporal coverage of the Earth's surface and provide useful information to monitor environmental resources over time, such as agricultural production and mining activities. However, the raw remotely sensed data received by these satellites in the solar spectral range do not directly characterise the underlying reflectance of surface objects. The data are modified by the atmosphere, variation of solar and sensor positions as well as surface anisotropic conditions. To make accurate comparisons of imagery acquired at different times, seasons and geographic locations, and detect the change of surface, it is necessary to remove/reduce these effects to ensure the data are consistent and can be compared over time.
 
 ## What this product offers
 
-This product takes Sentinel-2B imagery captured over the Australian continent and corrects for inconsistencies across land and coastal fringes. The result is accurate and standardised surface reflectance data, which is instrumental in identifying and quantifying environmental change.
+This product takes Sentinel-2B imagery captured over the Australian continent and corrects for inconsistencies across land and coastal fringes. The result is accurate and standardised surface reflectance data, which is instrumental in identifying and quantifying environmental change.
 
 The imagery is captured using the Multispectral Instrument (MSI) sensor aboard Sentinel-2B.
 
@@ -12,70 +12,48 @@ This product is a single, cohesive Analysis Ready Data (ARD) package, which allo
 
 It contains two sub-products that provide corrections or attribution information:
 
-* [DEA Surface Reflectance NBART (Sentinel-2B MSI)](https://cmi.ga.gov.au/data-products/dea/824/dea-surface-reflectance-nbart-sentinel-2b-msi)
-* [DEA Surface Reflectance OA (Sentinel-2B MSI)](https://cmi.ga.gov.au/data-products/dea/823/dea-surface-reflectance-oa-sentinel-2b-msi)
+* [DEA Surface Reflectance NBART (Sentinel-2B MSI)](/data/product/dea-surface-reflectance-nbart-sentinel-2b-msi)
+* [DEA Surface Reflectance OA (Sentinel-2B MSI)](/data/product/dea-surface-reflectance-oa-sentinel-2b-msi)
 
 The resolution is a 10/20/60 m grid based on the ESA Level 1C archive.
+*Note: DEA produces NBAR as part of the Landsat ARD. This product is **not produced as part of the Sentinel-2 ARD**.*
 
 **This Collection 3 (C3) product** and has been created by reprocessing Collection 1 (C1) and making improvements to the processing pipeline and packaging.
-
-**Packaging updates include:**  
-
-\- Open Data Cube (ODC) eo3 metadata  
-\- metadata includes STAC fields to enable users to filter by fields such as tile ID or cloud cover percentage in applications such as ODC  
-\- additional STAC metadata file in JSON format  
-\- directory structure and file names that are consistent with Geoscience Australia’s Landsat C3 products.  
-
-**Additional updates include:**
-
-\- upgrading the spectral response function to result in a more accurate product. These new versions include minor updates, slight changes of the central wavelengths for band B02 of S2A and S2B, and band B01 of S2B, along with slight changes of the Full Width Half Maximum (FMWH) for most of the bands  
-\- correction of solar constant errors in the conversion between reflectance and radiance as well as in the atmospheric correction  
-\- an additional cloud mask layer (s2cloudless)  
-\- removal of NBAR layers  
-\- reduced spatial resolution of observation attribute layers to 20m resolution, with the contiguity layer being maintained at 10m  
-\- additional of GQA information to dataset metadata  
-\- removal of buffering from fmask layer  
-\- BRDF ancillary upgraded from MODIS BRDF C5 to MODIS BRDF C6  
-\- Upgrading from MODTRAN 5.2 to MODTRAN 6.
+See the history tab for more details.
 
 **The introduction of a maturity concept.**
 
 The Collection 3 product is comprised of data produced to varying degrees of maturity. The maturity of a dataset is dictated by the quality of the ancillary information, such as BRDF and atmospheric correction data, used to generate the product. The maturity levels are Near Real Time (NRT), Interim and Final. The maturity level is designated in the filename and in the metadata.
 
-\- Near Real Time (NRT) is a rapid ARD product produced < 48 hours after image capture.   
-\- Interim ARD – If there are extended delays (>18 days) in delivery of inputs to the ARD model, interim production is utilised until the issue is resolved.    
-\- Final ARD - As the higher quality ancillary datasets become available, a “Final” version of the Sentinel 2 ARD data is produced, which replaces the NRT or interim product.
+* Near Real Time (NRT) is a rapid ARD product produced < 48 hours after image capture.   
+* Interim ARD – If there are extended delays (>18 days) in delivery of inputs to the ARD model, interim production is utilised until the issue is resolved.    
+* Final ARD - As the higher quality ancillary datasets become available, a “Final” version of the Sentinel 2 ARD data is produced, which replaces the NRT or interim product.
 
 % ## Data description
 
 ## Applications
 
 This product can be used for:
-
 * The development of derivative products to monitor land, inland waterways and coastal features, such as:
-
-               -  urban growth  
-               -  coastal habitats  
-               -  mining activities  
-               -  agricultural activity (e.g. pastoral, irrigated cropping, rain-fed cropping)  
-               -  water extent.
-
+  * urban growth
+  * coastal habitats
+  * mining activities
+  * agricultural activity (e.g. pastoral, irrigated cropping, rain-fed cropping)
+  * water extent
 * The development of refined information products, such as:
-
-               -  areal units of detected surface water  
-               -  areal units of deforestation  
-               -  yield predictions of agricultural parcels.
-
-* Compliance surveys.
-* Emergency management.
+  * areal units of detected surface water
+  * areal units of deforestation
+  * yield predictions of agricultural parcels
+* Compliance surveys
+* Emergency management
 
 ## Technical information
 
-#### Multispectral Instrument (MSI)
+### Multispectral Instrument (MSI)
 
 MSI is a push-broom sensor with a Three-Mirror Anastigmat (TMA) telescope with a pupil diameter equivalent to 150 mm, isostatically mounted on the platform to minimise thermo-elastic distortions. Surface Reflectance values range between 0 and 10000. MSI collects data for visible, near infrared, and shortwave infrared spectral bands. 
 
-#### The Analysis Ready Data concept
+### The Analysis Ready Data concept
 
 The Analysis Ready Data (ARD) package allows you to get up and running with your analysis as quickly as possible with minimal data preparation and additional input. This makes it simpler for you to develop applications and for the database to execute queries.
 
@@ -85,11 +63,11 @@ The [technical report](https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#
 
 #### ARD sub-products
 
-*1) [DEA Surface Reflectance NBART (Sentinel-2B MSI)](https://cmi.ga.gov.au/data-products/dea/824/dea-surface-reflectance-nbart-sentinel-2b-msi)*
+1) [DEA Surface Reflectance NBART (Sentinel-2B MSI)](/data/product/dea-surface-reflectance-nbart-sentinel-2b-msi)
 
 The sub-product produces standardised optical surface reflectance data using robust physical models which correct for variations and inconsistencies in the image of top atmospheric reflectance values. Corrections are performed using Nadir corrected Bidirectional reflectance distribution function Adjusted Reflectance (NBAR) with an additional terrain illumination correction applied (NBART).
 
-*2) [DEA Surface Reflectance OA (Sentinel-2B MSI)](https://cmi.ga.gov.au/data-products/dea/823/dea-surface-reflectance-oa-sentinel-2b-msi)*
+2) [DEA Surface Reflectance OA (Sentinel-2B MSI)](/data/product/dea-surface-reflectance-oa-sentinel-2b-msi)
 
 The NBART product depends upon the Observation Attributes (OA) product to provide accurate and reliable contextual information about the Sentinel-2B data. This ‘data provenance’ provides a chain of information which allows the data to be replicated or utilised by derivative applications. The OA takes a number of different forms, including satellite, solar and surface geometry and classification attribution labels.
 
@@ -116,39 +94,23 @@ This product is derived from the ESA Sentinel-2B level 1C archive.
 
 ## Processing steps
 
-1. Longitude and Latitude Calculation
-
-1. Satellite and Solar Geometry Calculation
-
-1. Aerosol Optical Thickness Retrieval
-
-1. BRDF Shape Function Retrieval
-
-1. Ozone Retrieval
-
-1. Elevation Retrieval and Smoothing
-
-1. Slope and Aspect Calculation
-
-1. Incidence and Azimuthal Incident Angles Calculation
-
-1. Exiting and Azimuthal Exiting Angles Calculation
-
-1. Relative Slope Calculation
-
-1. Terrain Occlusion Mask
-
-1. MODTRAN
-
-1. Atmospheric Correction Coefficients Calculation
-
-1. Bilinear Interpolation of Atmospheric Correction Coefficients
-
-1. Surface Reflectance Calculation (NBAR + Terrain Illumination Correction)
-
-1. Function of Mask (Fmask)
-
-1. Contiguous Spectral Data Mask Calculation
+1. [Longitude and Latitude Calculation](/guides/reference/analysis_ready_data_corrections#lon-lat-calculation)
+2. [Satellite and Solar Geometry Calculation](/guides/reference/analysis_ready_data_corrections#sat-sol-geom-calculation)
+3. [Aerosol Optical Thickness Retrieval](/guides/reference/analysis_ready_data_corrections#aero-opt-thick-retr)
+4. [BRDF Shape Function Retrieval](/guides/reference/analysis_ready_data_corrections#brdf-shp-fnc-retr)
+5. [Ozone Retrieval](/guides/reference/analysis_ready_data_corrections#o3-retr)
+6. [Elevation Retrieval and Smoothing](/guides/reference/analysis_ready_data_corrections#elev-retr-smth)
+7. [Slope and Aspect Calculation](/guides/reference/analysis_ready_data_corrections#slp-asp-calc)
+8. [Incidence and Azimuthal Incident Angles Calculation](/guides/reference/analysis_ready_data_corrections#inc-azm-ang-calc)
+9. [Exiting and Azimuthal Exiting Angles Calculation](/guides/reference/analysis_ready_data_corrections#ext-azm-ang-calc)
+10. [Relative Slope Calculation](/guides/reference/analysis_ready_data_corrections#rel-slp-calc)
+11. [Terrain Occlusion Mask](/guides/reference/analysis_ready_data_corrections#terr-occ-msk)
+12. [MODTRAN](/guides/reference/analysis_ready_data_corrections#modtran)
+13. [Atmospheric Correction Coefficients Calculation](/guides/reference/analysis_ready_data_corrections#atm-corr-coef-calc)
+14. [Bilinear Interpolation of Atmospheric Correction Coefficients](/guides/reference/analysis_ready_data_corrections#bil-int-atm-corr-coef)
+15. [Surface Reflectance Calculation (NBAR + Terrain Illumination Correction)](/guides/reference/analysis_ready_data_corrections#nbart)
+16. [Function of Mask (Fmask)](/guides/reference/analysis_ready_data_corrections#fmask)
+17. [Contiguous Spectral Data Mask Calculation](/guides/reference/analysis_ready_data_corrections#cont-spec-data-mask-calc)
 
 ## Software
 

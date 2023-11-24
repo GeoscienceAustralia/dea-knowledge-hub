@@ -9,7 +9,6 @@ The algorithm assumes that BRDF effect for inclined surfaces is modelled by the 
 The accuracy of the terrain correction also depend on the quality, scale and spatial resolution of the DSM data used and the co-registration between the DSM and the satellite image (Li et al., 2013). At present, 30 m resolution SRTM DSM data were used for the correction.
 
 The algorithm depends on several auxiliary data sources:
-
 * Availability of relevant MODIS BRDF data
 * Availability of relevant aerosol data
 * Availability of relevant water vapour data
