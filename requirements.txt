@@ -1,13 +1,14 @@
 sphinx
 nbsphinx
 IPython
-pydata-sphinx-theme
 myst-parser
+ipywidgets
+matplotlib
+pydata-sphinx-theme
 sphinx_design
 sphinxext-rediraffe
 sphinxcontrib.datatemplates
 sphinx-external-toc
 sphinx-sitemap
 sphinxext-opengraph
-ipywidgets
 sphinx-notfound-page

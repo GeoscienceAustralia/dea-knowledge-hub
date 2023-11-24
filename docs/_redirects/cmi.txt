@@ -1,3 +1,8 @@
 # Content Management Interface (CMI) redirects
 
-about index
+node           index
+search/user    search
+search/node    search
+about          index
+resources      guides
+data-products  data
