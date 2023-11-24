@@ -131,6 +131,7 @@ entries:
 
           - file: data/category/dea-wetlands-insight-tool/index
             entries:
+              - file: data/product/dea-wetlands-insight-tool-ramsar-wetlands/index
               - file: data/product/dea-wetlands-insight-tool-qld/index
           - file: data/category/dea-water-observations/index
             entries:
@@ -165,4 +166,4 @@ entries:
 
   - file: data/old-version-product/index
     entries:
-      - glob: data/old-version-product/dea-coastlines-*/index
+      - glob: data/old-version-product/*/index

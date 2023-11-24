@@ -5,6 +5,7 @@ long_title: Geoscience Australia Landsat Fractional Cover Percentiles Collection
 header_image: /_files/cmi/FractionalCover1_0.jpg
 version: 3.0.0
 is_latest_version: true
+latest_version_link: null
 product_type: Derivative
 spatial_data_type: Raster
 time_span:

@@ -16,5 +16,5 @@ BUILD_MODE = "demo"
 
 [[redirects]]
 from = "/*"
-to = "/not-found?path=/:splat"
+to = "/404-not-found"
 status = 404

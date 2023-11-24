@@ -330,7 +330,7 @@
        .. list-table::
 
           {% for item in valid_old_versions %}
-          * - `v{{ item.version }}: {{ item.name }} </data/old-versions/{{ item.slug }}>`_
+          * - `v{{ item.version }} </data/old-versions/{{ item.slug }}>`_
             - {{ item.release_date or "" }}
           {% endfor %}
        {% else %}
