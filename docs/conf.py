@@ -90,7 +90,7 @@ napoleon_google_docstring = False
 napoleon_numpy_docstring = True
 
 notfound_template = "404.html"
-notfound_pagename = "not-found"
+notfound_pagename = "404-not-found"
 notfound_urls_prefix = ""
 
 html_css_files = [
