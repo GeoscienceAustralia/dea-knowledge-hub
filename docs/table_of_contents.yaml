@@ -166,4 +166,4 @@ entries:
 
   - file: data/old-version-product/index
     entries:
-      - glob: data/old-version-product/*/index
+      - glob: data/old-version/*/index

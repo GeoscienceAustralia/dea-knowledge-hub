@@ -26,7 +26,7 @@
 {% set has_access_data = valid_maps or valid_data or valid_explorers or valid_web_services or valid_code_samples %}
 
 {% set pretty_version = "v" + data.version %}
-{% set page_title = data.title if is_latest_version else "Old version: " + data.title %}
+{% set page_title = data.title if is_latest_version else f"{data.version}: {data.title}" %}
 
 {% set product_ids_label = "Product IDs" if valid_product_ids | length > 1 else "Product ID" %}
 {% set product_types_label = "Product types" if valid_product_types | length > 1 else "Product type" %}
