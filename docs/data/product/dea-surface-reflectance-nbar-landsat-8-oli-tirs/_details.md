@@ -50,7 +50,7 @@ The advanced supercomputing facilities provided by the National Computational In
 
 ### Image format specifications
 
-#### band01, band02, band03, band04, band05, band07
+#### band01, band02, band03, band04, band05, band06, band07
 
 |                                |                                                                                                                                   |
 |--------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|

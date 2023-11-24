@@ -8,31 +8,20 @@ We make accurate comparisons of imagery acquired at different times, seasons and
 
 ## What this product offers
 
-This product takes Landsat 9 imagery captured over the Australian continent and corrects for inconsistencies caused by atmospheric conditions, sun position, sensor view angle, surface slope and surface aspect. The result is accurate and standardised surface reflectance data, which is instrumental in identifying and quantifying environmental change.
+This product takes Landsat 9 imagery captured over the Australian continent and corrects for inconsistencies caused by atmospheric conditions, sun position, sensor view angle, surface slope and surface aspect. The result is accurate and standardised surface reflectance data, which is instrumental in identifying and quantifying environmental change.
 
 The imagery is captured using the Operational Land Imager (OLI) and Thermal Infra-Red Scanner (TIRS) sensors aboard Landsat 9. Only the OLI data is included in this product, while the TIRS data is used in processing, particularly in identification of clouds.
 
 This product is a single, cohesive Analysis Ready Data (ARD) package, which allows you to analyse surface reflectance data as is, without the need to apply additional corrections. 
 
 It contains three sub-products that provide corrections or attribution information:
-
-* [DEA Surface Reflectance NBAR (Landsat 9)](https://cmi.ga.gov.au/data-products/dea/819/dea-surface-reflectance-nbar-landsat-9-oli-tirs) \*
-* [DEA Surface Reflectance NBART (Landsat 9)](https://cmi.ga.gov.au/data-products/dea/817/dea-surface-reflectance-nbart-landsat-9-oli-tirs) \*\*
-* [DEA Surface Reflectance OA (Landsat 9)](https://cmi.ga.gov.au/data-products/dea/818/dea-surface-reflectance-oa-landsat-9-oli-tirs) \*\*\*
+* [DEA Surface Reflectance NBAR (Landsat 9)](/data/product/dea-surface-reflectance-nbar-landsat-9-oli-tirs) \*
+* [DEA Surface Reflectance NBART (Landsat 9)](/data/product/dea-surface-reflectance-nbart-landsat-9-oli-tirs) \*\*
+* [DEA Surface Reflectance OA (Landsat 9)](/data/product/dea-surface-reflectance-oa-landsat-9-oli-tirs) \*\*\*
 
 *Note: DEA produces NBAR as part of the Landsat ARD, this is available in the National Computing Infrastructure environment only. This product is not produced as part of the Sentinel-2 ARD.*
 
 The resolution is a 30 m grid based on the USGS Landsat Collection 2 archive, or 15 m for the panchromatic band. This data forms part of the DEA Collection 3 archive. 
-
-**The introduction of a maturity concept.**
-
-DEA Collection 3 products are comprised of data produced to varying degrees of maturity. The maturity of a dataset is dictated by the quality of the ancillary information, such as Bidirectional Reflectance Distribution Function (BRDF) and atmospheric data, used to generate the product. The maturity levels are Near Real Time (NRT), Interim and Final. The maturity level is designated in the filename and in the metadata.
-
-\- Near Real Time (NRT) is a rapid ARD product produced within 48 hours after image capture, using existing long term climatology data that is of slightly lower quality, allowing NRT data to be published quickly.   
-\- Interim ARD is produced if high quality ancillaries required for the final ARD model don’t become available within 23 days of image capture. Interim maturity data is produced as a *stand-in* until the full ancillaries are available to produce the final version. This is our fall-back until the issue is resolved.    
-\- Final ARD is DEA’s best quality ARD, produced using high quality ancillary datasets derived from observed data. These ancillary datasets are slower to produce but are observational datasets of the conditions at the time of image capture and so provide our most accurate dataset corrections. 
-
-You can read more about dataset maturity in this page: [DEA dataset maturity explained](https://docs.dea.ga.gov.au/reference/dataset_maturity_guide.html).
 
 \* Nadir corrected Bi-directional reflectance distribution function Adjusted Reflectance (NBAR)
 
@@ -40,36 +29,42 @@ You can read more about dataset maturity in this page: [DEA dataset maturity exp
 
 \*\*\* Observation Attributes (OA)
 
+**The introduction of a maturity concept.**
+
+DEA Collection 3 products are comprised of data produced to varying degrees of maturity. The maturity of a dataset is dictated by the quality of the ancillary information, such as Bidirectional Reflectance Distribution Function (BRDF) and atmospheric data, used to generate the product. The maturity levels are Near Real Time (NRT), Interim and Final. The maturity level is designated in the filename and in the metadata.
+
+* Near Real Time (NRT) is a rapid ARD product produced within 48 hours after image capture, using existing long term climatology data that is of slightly lower quality, allowing NRT data to be published quickly.   
+* Interim ARD is produced if high quality ancillaries required for the final ARD model don’t become available within 23 days of image capture. Interim maturity data is produced as a *stand-in* until the full ancillaries are available to produce the final version. This is our fall-back until the issue is resolved.    
+* Final ARD is DEA’s best quality ARD, produced using high quality ancillary datasets derived from observed data. These ancillary datasets are slower to produce but are observational datasets of the conditions at the time of image capture and so provide our most accurate dataset corrections. 
+
+You can read more about dataset maturity in this page: [DEA dataset maturity explained](/guides/reference/dataset_maturity_guide.html).
+
 % ## Data description
 
 ## Applications
 
 * The development of derivative products to monitor land, inland waterways and coastal features, such as:
-
-               -  urban growth  
-               -  coastal habitats  
-               -  mining activities  
-               -  agricultural activity (e.g. pastoral, irrigated cropping, rain-fed cropping)  
-               -  water extent.
-
+  * urban growth
+  * coastal habitats
+  * mining activities
+  * agricultural activity (e.g. pastoral, irrigated cropping, rain-fed cropping)
+  * water extent
 * The development of refined information products, such as:
-
-               -  areal units of detected surface water  
-               -  areal units of deforestation  
-               -  yield predictions of agricultural parcels.
-
+  * areal units of detected surface water
+  * areal units of deforestation
+  * yield predictions of agricultural parcels.
 * Compliance surveys
 * Emergency management
 
 ## Technical information
 
-#### Operational Land Imager (OLI) and Thermal Infrared Sensor (TIRS)
+### Operational Land Imager (OLI) and Thermal Infrared Sensor (TIRS)
 
 OLI is a push-broom sensor with a four-mirror telescope and 14-bit quantisation. OLI collects data for visible, near infrared, and short wave infrared spectral bands as well as a panchromatic band.
 
 TIRS measures land surface temperature in two thermal bands with new technology that applies quantum physics to detect heat.
 
-#### The Analysis Ready Data concept
+### The Analysis Ready Data concept
 
 The Analysis Ready Data (ARD) package allows you to get up and running with your analysis as quickly as possible with minimal data preparation and additional input. This makes it simpler for you to develop applications and for the database to execute queries.
 
@@ -77,17 +72,17 @@ The satellite data has been processed to a minimum set of requirements and organ
 
 The [technical report](https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/145101) containing the data summary for the Phase 1 DEA Surface Reflectance Validation is available.
 
-#### ARD sub-products
+### ARD sub-products
 
-*1) [DEA Surface Reflectance NBAR (Landsat 9 OLI-TIRS)](https://cmi.ga.gov.au/data-products/dea/819/dea-surface-reflectance-nbar-landsat-9-oli-tirs)*
+1) [DEA Surface Reflectance NBAR (Landsat 9 OLI-TIRS)](/data/product/dea-surface-reflectance-nbar-landsat-9-oli-tirs)
 
 This sub-product produces standardised optical surface reflectance data using robust physical models which correct for variations and inconsistencies in image radiance values. Corrections are performed using Nadir corrected Bi-directional reflectance distribution function Adjusted Reflectance (NBAR).
 
-*2) [DEA Surface Reflectance NBART (Landsat 9 OLI-TIRS)](https://cmi.ga.gov.au/data-products/dea/817/dea-surface-reflectance-nbart-landsat-9-oli-tirs)*
+2) [DEA Surface Reflectance NBART (Landsat 9 OLI-TIRS)](/data/product/dea-surface-reflectance-nbart-landsat-9-oli-tirs)
 
 This sub-product performs the same function as Surface Reflectance (Landsat 9 OLI-TIRS NBAR), but also applies terrain illumination correction.
 
-*3) [DEA Surface Reflectance OA (Landsat 9 OLI-TIRS)](https://cmi.ga.gov.au/data-products/dea/818/dea-surface-reflectance-oa-landsat-9-oli-tirs)*
+3) [DEA Surface Reflectance OA (Landsat 9 OLI-TIRS)](/data/product/dea-surface-reflectance-oa-landsat-9-oli-tirs)
 
 The NBAR and NBART sibling products depend upon the Observation Attributes (OA) product to provide accurate and reliable contextual information about the Landsat data. This ‘data provenance’ provides a chain of information which allows the data to be replicated or utilised by derivative applications. It takes a number of different forms, including satellite, solar and surface geometry and classification attribution labels.
 
@@ -115,41 +110,24 @@ This product is derived from the USGS Landsat Level 1 Collection 2 archive.
 
 ## Processing steps
 
-1. Longitude and Latitude Calculation
-
-1. Satellite and Solar Geometry Calculation
-
-1. Aerosol Optical Thickness Retrieval
-
-1. BRDF Shape Function Retrieval
-
-1. Ozone Retrieval
-
-1. Elevation Retrieval and Smoothing
-
-1. Slope and Aspect Calculation
-
-1. Incidence and Azimuthal Incident Angles Calculation
-
-1. Exiting and Azimuthal Exiting Angles Calculation
-
-1. Relative Slope Calculation
-
-1. Terrain Occlusion Mask
-
-1. MODTRAN
-
-1. Atmospheric Correction Coefficients Calculation
-
-1. Bilinear Interpolation of Atmospheric Correction Coefficients
-
-1. Surface Reflectance Calculation (NBAR)
-
-1. Surface Reflectance Calculation (NBAR + Terrain Illumination Correction)
-
-1. Function of Mask (Fmask)
-
-1. Contiguous Spectral Data Mask Calculation
+1. [Longitude and Latitude Calculation](/guides/reference/analysis_ready_data_corrections#lon-lat-calculation)
+2. [Satellite and Solar Geometry Calculation](/guides/reference/analysis_ready_data_corrections#sat-sol-geom-calculation)
+3. [Aerosol Optical Thickness Retrieval](/guides/reference/analysis_ready_data_corrections#aero-opt-thick-retr)
+4. [BRDF Shape Function Retrieval](/guides/reference/analysis_ready_data_corrections#brdf-shp-fnc-retr)
+5. [Ozone Retrieval](/guides/reference/analysis_ready_data_corrections#o3-retr)
+6. [Elevation Retrieval and Smoothing](/guides/reference/analysis_ready_data_corrections#elev-retr-smth)
+7. [Slope and Aspect Calculation](/guides/reference/analysis_ready_data_corrections#slp-asp-calc)
+8. [Incidence and Azimuthal Incident Angles Calculation](/guides/reference/analysis_ready_data_corrections#inc-azm-ang-calc)
+9. [Exiting and Azimuthal Exiting Angles Calculation](/guides/reference/analysis_ready_data_corrections#ext-azm-ang-calc)
+10. [Relative Slope Calculation](/guides/reference/analysis_ready_data_corrections#rel-slp-calc)
+11. [Terrain Occlusion Mask](/guides/reference/analysis_ready_data_corrections#terr-occ-msk)
+12. [MODTRAN](/guides/reference/analysis_ready_data_corrections#modtran)
+13. [Atmospheric Correction Coefficients Calculation](/guides/reference/analysis_ready_data_corrections#atm-corr-coef-calc)
+14. [Bilinear Interpolation of Atmospheric Correction Coefficients](/guides/reference/analysis_ready_data_corrections#bil-int-atm-corr-coef)
+15. [Surface Reflectance Calculation (NBAR)](/guides/reference/analysis_ready_data_corrections#nbar)
+16. [Surface Reflectance Calculation (NBAR + Terrain Illumination Correction)](/guides/reference/analysis_ready_data_corrections#nbart)
+17. [Function of Mask (Fmask)](/guides/reference/analysis_ready_data_corrections#fmask)
+18. [Contiguous Spectral Data Mask Calculation](/guides/reference/analysis_ready_data_corrections#cont-spec-data-mask-calc)
 
 ## Software
 
