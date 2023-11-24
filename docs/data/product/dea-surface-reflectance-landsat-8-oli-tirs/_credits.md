@@ -1,14 +1,17 @@
 ## Acknowledgments
 
-The authors would like to thank the following organisations:
+This research was undertaken with the assistance of resources from the National Computational Infrastructure (NCI), which is supported by the Australian Government.
 
-* NASA
+Landsat level 0 and level 1 data courtesy of the U.S. Geological Survey.
+
+The authors would like to thank the following organisations:
+* National Aeronautics and Space Administration (NASA)
 * Environment Canada
-* CSIRO
-* NOAA / ESRL / PSD
-* NGA
-* USGS / EROS Center
-* Spectral Sciences, Inc.
+* The Commonwealth Scientific and Industrial Research Organisation (CSIRO)
+* National Oceanic and Atmospheric Administration (NOAA) / Earth System Research Laboratories (ESRL) / Physical Sciences Laboratory (PSD)
+* The National Geospatial-Intelligence Agency (NGA)
+* The United States Geological Survey (USGS) / Earth Resources Observation and Science (EROS) Center
+* Spectral Sciences Inc.
 
 ## License and copyright
 

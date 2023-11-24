@@ -13,7 +13,6 @@ This product takes Landsat 7 Enhanced Thematic Mapper Plus (ETM+) imagery captur
 This product is a single, cohesive Analysis Ready Data (ARD) package, which allows you to analyse surface reflectance data as is, without the need to apply additional corrections.
 
 It contains three sub-products that provide corrections or attribution information:
-
 * [DEA Surface Reflectance NBAR (Landsat 7 ETM+)](/data/product/dea-surface-reflectance-nbar-landsat-7-etm)
 * [DEA Surface Reflectance NBART (Landsat 7 ETM+)](/data/product/dea-surface-reflectance-nbart-landsat-7-etm)
 * [DEA Surface Reflectance OA (Landsat 7 ETM+)](/data/product/dea-surface-reflectance-oa-landsat-7-etm)
@@ -58,7 +57,7 @@ This sub-product produces standardised optical surface reflectance data using ro
 
 2) [DEA Surface Reflectance NBART (Landsat 7 ETM+)](/data/product/dea-surface-reflectance-nbart-landsat-7-etm)
 
-This sub-product performs the same function as Surface Reflectance (Landsat 5 TM NBAR), but also applies terrain illumination correction.
+This sub-product performs the same function as Surface Reflectance (Landsat 7 ETM NBAR), but also applies terrain illumination correction.
 
 3) [DEA Surface Reflectance OA (Landsat 7 ETM+)](/data/product/dea-surface-reflectance-oa-landsat-7-etm)
 
