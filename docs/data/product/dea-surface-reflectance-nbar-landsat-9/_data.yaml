@@ -8,9 +8,9 @@ is_latest_version: true
 product_type: Baseline
 spatial_data_type: Raster
 time_span:
-  start: null
-  end: null
-update_frequency: As needed
+  start: 31/10/2021
+  end: present
+update_frequency: Daily
 product_ids:
   - ga_ls9c_ard_3
 
@@ -40,15 +40,19 @@ maps:
   - link: https://maps.dea.ga.gov.au/
     name: null
 
-explorers: null
+explorers:
+  - link: https://explorer.dea.ga.gov.au/products/ga_ls9c_ard_3
+    name: Data explorer
 
 data:
   - link: https://dapds00.nci.org.au/thredds/catalog/xu18/catalog.html
-    name: NCI - THREDDS
+    name: Access the data on NCI
+  - link: https://data.dea.ga.gov.au/?prefix=baseline/ga_ls9c_ard_3/
+    name: Access the data on AWS
 
 code_examples:
   - link: https://docs.dea.ga.gov.au/notebooks/DEA_products/DEA_Landsat_Surface_Reflectance.html
-    name: Jupyter notebook
+    name: Code examples
 
 web_services:
   - link: https://ows.dea.ga.gov.au/?service=WMS&version=1.3.0&request=GetCapabilities
