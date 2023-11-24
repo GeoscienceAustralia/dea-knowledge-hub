@@ -54,7 +54,7 @@ The advanced supercomputing facilities provided by the National Computational In
 
 ### Image format specifications
 
-#### band01, band02, band03, band04, band05, band07
+#### band01, band02, band03, band04, band05, band06, band07
 
 |                                |                                                                                                                                   |
 |--------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
@@ -68,6 +68,21 @@ The advanced supercomputing facilities provided by the National Computational In
 | Pyramids                       | Levels: [8,16,32] <br /> Compression: deflate <br /> Resampling: GDAL default (nearest) <br /> Overview X&Y block sizes: 512x512  |
 | Contrast stretch               | None                                                                                                                              |
 | Output CRS                     | As specified by source dataset; source is UTM with WGS84 as the datum                                                             |
+
+#### band08
+
+|                                |                                                                       |
+|--------------------------------|-----------------------------------------------------------------------|
+| Format                         | GeoTIFF                                                               |
+| Resolution                     | 15m                                                                   |
+| Datatype                       | Int16                                                                 |
+| No data value                  | -999                                                                  |
+| Valid data range               | [1,10000]                                                             |
+| Tiled with X and Y block sizes | 512x512                                                               |
+| Compression                    | Deflate, Level 6, Predictor 2                                         |
+| Pyramids                       | None                                                                  |
+| Contrast stretch               | None                                                                  |
+| Output CRS                     | As specified by source dataset; source is UTM with WGS84 as the datum |
 
 #### thumbnail
 

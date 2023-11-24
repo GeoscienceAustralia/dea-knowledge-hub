@@ -1,7 +1,10 @@
 ## Acknowledgments
 
-The authors would like to thank the following organisations:
+This research was undertaken with the assistance of resources from the National Computational Infrastructure (NCI), which is supported by the Australian Government.
 
+Landsat level 0 and level 1 data courtesy of the U.S. Geological Survey.
+
+The authors would like to thank the following organisations:
 * National Aeronautics and Space Administration (NASA)
 * Environment Canada
 * The Commonwealth Scientific and Industrial Research Organisation (CSIRO)

@@ -1,6 +1,6 @@
 ## Background
 
-*This is a sub-product of [**DEA Surface Reflectance (Landsat 9)**](https://cmi.ga.gov.au/data-products/dea/816/dea-surface-reflectance-landsat-9-oli-tirs). See the parent product for more information.*
+*This is a sub-product of [DEA Surface Reflectance (Landsat 9)](/data/product/dea-surface-reflectance-landsat-9-oli-tirs). See the parent product for more information.*
 
 Radiance data collected by Landsat 9 sensors can be affected by atmospheric conditions, sun position, sensor view angle, surface slope and surface aspect. These need to be reduced or removed to ensure the data is consistent and can be compared over time.
 
@@ -10,7 +10,7 @@ This product takes Landsat 9 imagery captured over the Australian continent and 
 
 The resolution is a 30 m grid based on the USGS Landsat Collection 2 archive, or a 15 m grid for the panchromatic band.
 
-This product does not apply terrain illumination correction. See the sibling product [DEA Surface Reflectance NBART (Landsat 9)](https://cmi.ga.gov.au/data-products/dea/817/dea-surface-reflectance-nbart-landsat-9-oli-tirs).
+This product does not apply terrain illumination correction. See the sibling product [DEA Surface Reflectance NBART (Landsat 9)](/data/product/dea-surface-reflectance-nbart-landsat-9-oli-tirs).
 
 % ## Data description
 
@@ -18,10 +18,9 @@ This product does not apply terrain illumination correction. See the sibling pro
 
 ## Technical information
 
-#### Radiance measurements
+### Radiance measurements
 
 Landsat’s Earth Observation (EO) sensors measure radiance (brightness of light), which is a composite of:
-
 * surface reflectance
 * atmospheric condition
 * interaction between surface land cover, solar radiation and sensor view angle
@@ -29,7 +28,7 @@ Landsat’s Earth Observation (EO) sensors measure radiance (brightness of light
 
 It has been traditionally assumed that Landsat imagery displays negligible variation in sun and sensor view angles. However, these can vary significantly both within and between scenes, especially in different seasons and geographic regions (Li et al. 2012).
 
-#### Surface reflectance correction models
+### Surface reflectance correction models
 
 This product represents standardised optical surface reflectance using robust physical models to correct for variations and inconsistencies in image radiance values.
 
@@ -39,7 +38,7 @@ This product is created using a physics-based, coupled Bidirectional Reflectance
 
 For more information on the BRDF/Albedo Model Parameters product, see [NASA MODIS BRDF/Albedo parameter](https://modis.gsfc.nasa.gov/data/dataprod/mod43.php) and [MCD43A1 BRDF/Albedo Model Parameters Product](https://www.umb.edu/spectralmass/v006/mcd43a1-brdf-albedo-model-parameters-product/).
 
-#### Landsat archive
+### Landsat archive
 
 To improve access to Australia’s archive of Landsat TM/ETM+/OLI data, several collaborative projects have been undertaken in conjunction with industry, government and academic partners. These projects have enabled implementation of a more integrated approach to image data correction that incorporates normalising models to account for atmospheric effects, BRDF and topographic shading (Li et al. 2012). The approach has been applied to Landsat TM/ETM+ and OLI imagery to create baseline surface reflectance products.
 
@@ -49,84 +48,59 @@ The advanced supercomputing facilities provided by the National Computational In
 
 The product contains 8 bands
 
-* Band 1 Visible (0.43 - 0.45 µm) 30-m
-* Band 2 Visible (0.450 - 0.51 µm) 30-m
-* Band 3 Visible (0.53 - 0.59 µm) 30-m
-* Band 4 Red (0.64 - 0.67 µm) 30-m
-* Band 5 Near-Infrared (0.85 - 0.88 µm) 30-m
-* Band 6 SWIR 1(1.57 - 1.65 µm) 30-m
-* Band 7 SWIR 2 (2.11 - 2.29 µm) 30-m
-* Band 8 Panchromatic (PAN) (0.50 - 0.68 µm) 15-m
+| Band number | Band name          | Wave length    | Resolution |
+|-------------|--------------------|----------------|------------|
+| Band 1      | Visible            | 0.43 - 0.45 µm | 30 m       |
+| Band 2      | Visible            | 0.45 - 0.51 µm | 30 m       |
+| Band 3      | Visible            | 0.53 - 0.59 µm | 30 m       |
+| Band 4      | Red                | 0.64 - 0.67 µm | 30 m       |
+| Band 5      | Near-Infrared      | 0.85 - 0.88 µm | 30 m       | 
+| Band 6      | SWIR 1             | 1.57 - 1.65 µm | 30 m       | 
+| Band 7      | SWIR 2             | 2.11 - 2.29 µm | 30 m       |
+| Band 8      | Panchromatic (PAN) | 0.50 - 0.68 µm | 15 m       |
 
-#### Image format specifications
+### Image format specifications
 
-##### ***band01, band02, band03, band04, band05, band06, band07***
+#### band01, band02, band03, band04, band05, band06, band07
 
-**Format** GeoTIFF
+|                                |                                                                                                                                   |
+|--------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
+| Format                         | GeoTIFF                                                                                                                           |
+| Resolution                     | 30m                                                                                                                               |
+| Datatype                       | Int16                                                                                                                             |
+| No data value                  | -999                                                                                                                              |
+| Valid data range               | [1,10000]                                                                                                                         |
+| Tiled with X and Y block sizes | 512x512                                                                                                                           |
+| Compression                    | Deflate, Level 6, Predictor 2                                                                                                     |
+| Pyramids                       | Levels: [8,16,32] <br /> Compression: deflate <br /> Resampling: GDAL default (nearest) <br /> Overview X&Y block sizes: 512x512  |
+| Contrast stretch               | None                                                                                                                              |
+| Output CRS                     | As specified by source dataset; source is UTM with WGS84 as the datum                                                             |
 
-**Resolution** 30m
+#### band08
 
-**Datatype** Int16
+|                                |                                                                       |
+|--------------------------------|-----------------------------------------------------------------------|
+| Format                         | GeoTIFF                                                               |
+| Resolution                     | 15m                                                                   |
+| Datatype                       | Int16                                                                 |
+| No data value                  | -999                                                                  |
+| Valid data range               | [1,10000]                                                             |
+| Tiled with X and Y block sizes | 512x512                                                               |
+| Compression                    | Deflate, Level 6, Predictor 2                                         |
+| Pyramids                       | None                                                                  |
+| Contrast stretch               | None                                                                  |
+| Output CRS                     | As specified by source dataset; source is UTM with WGS84 as the datum |
 
-**No data value** \-999
+#### thumbnail
 
-**Valid data range** \[1,10000\]
-
-**Tiled with X and Y block sizes** 512x512
-
-**Compression** Deflate, Level 6, Predictor 2
-
-**Pyramids** Levels: \[8,16,32\]  
-Compression: deflate  
-Resampling: GDAL default (nearest)  
-Overview X&Y block sizes: 512x512
-
-**Contrast stretch** None
-
-**Output CRS** As specified by source dataset; source is UTM with WGS84 as the datum
-
-##### ***band08***
-
-**Format** GeoTIFF
-
-**Resolution**15m
-
-**Datatype** Int16
-
-**No data value** \-999
-
-**Valid data range** \[1,10000\]
-
-**Tiled with X and Y block sizes** 512x512
-
-**Compression** Deflate, Level 6, Predictor 2
-
-**Pyramids** None
-
-**Contrast stretch** None
-
-**Output CRS** As specified by source dataset; source is UTM with WGS84 as the datum
-
-##### ***thumbnail***
-
-**Format** JPEG
-
-**RGB combination** Red: band 4  
-Green: band 3  
-Blue: band 2
-
-**Resolution** X and Y directions each resampled to 10% of the original size
-
-**Compression** JPEG, Quality 75 (GDAL default)  
-PHOTOMETRIC colour model: YCBCR
-
-**Contrast stretch** Linear  
-Input minimum: 10  
-Input maximum: 3500  
-Output minimum: 0  
-Output maximum: 255
-
-**Output CRS** Geographics (Latitude/Longitude) WGS84
+|                  |                                                                                                                |
+|------------------|----------------------------------------------------------------------------------------------------------------|
+| Format           | JPEG                                                                                                           |
+| RGB combination  | Red: band 4 <br /> Green: band 3 <br /> Blue: band 2                                                           |
+| Resolution       | X and Y directions each resampled to 10% of the original size                                                  |
+| Compression      | JPEG, Quality 75 (GDAL default) <br /> PHOTOMETRIC colour model: YCBCR                                         |
+| Contrast stretch | Linear <br /> Input minimum: 10 <br /> Input maximum: 3500 <br /> Output minimum: 0 <br /> Output maximum: 255 |
+| Output CRS       | Geographics (Latitude/Longitude) WGS84                                                                         |
 
 ## Lineage
 
@@ -151,28 +125,17 @@ This product is derived from the USGS Landsat Level 1 Collection 2 archive.
  See [USGS: EROS](https://www.usgs.gov/centers/eros), [USGS: Landsat Collection 2](https://www.usgs.gov/landsat-missions/landsat-collection-2?qt-science_support_page_related_con=1#qt-science_support_page_related_con)
 
 ## Processing steps
-
-1. Longitude and Latitude Calculation
-
-1. Satellite and Solar Geometry Calculation
-
-1. Aerosol Optical Thickness Retrieval
-
-1. BRDF Shape Function Retrieval
-
-1. Ozone Retrieval
-
-1. Incidence and Azimuthal Incident Angles Calculation
-
-1. Exiting and Azimuthal Exiting Angles Calculation
-
-1. MODTRAN
-
-1. Atmospheric Correction Coefficients Calculation
-
-1. Bilinear Interpolation of Atmospheric Correction Coefficients
-
-1. Surface Reflectance Calculation (NBAR)
+1. [Longitude and Latitude Calculation](/guides/reference/analysis_ready_data_corrections#lon-lat-calculation)
+2. [Satellite and Solar Geometry Calculation](/guides/reference/analysis_ready_data_corrections#sat-sol-geom-calculation)
+3. [Aerosol Optical Thickness Retrieval](/guides/reference/analysis_ready_data_corrections#aero-opt-thick-retr)
+4. [BRDF Shape Function Retrieval](/guides/reference/analysis_ready_data_corrections#brdf-shp-fnc-retr)
+5. [Ozone Retrieval](/guides/reference/analysis_ready_data_corrections#o3-retr)
+6. [Incidence and Azimuthal Incident Angles Calculation](/guides/reference/analysis_ready_data_corrections#inc-azm-ang-calc)
+7. [Exiting and Azimuthal Exiting Angles Calculation](/guides/reference/analysis_ready_data_corrections#ext-azm-ang-calc)
+8. [MODTRAN](/guides/reference/analysis_ready_data_corrections#modtran)
+9. [Atmospheric Correction Coefficients Calculation](/guides/reference/analysis_ready_data_corrections#atm-corr-coef-calc)
+10. [Bilinear Interpolation of Atmospheric Correction Coefficients](/guides/reference/analysis_ready_data_corrections#bil-int-atm-corr-coef)
+11. [Surface Reflectance Calculation (NBAR)](/guides/reference/analysis_ready_data_corrections#nbar)
 
 % ## Software
 
