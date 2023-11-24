@@ -180,3 +180,8 @@ A Python implementation of the algorithm written by Neil Flood, can be found her
 
 <h3 id="cont-spec-data-mask-calc"> Contiguous Spectral Data Mask Calculation </h3>
 Given a 3D block/stack of imagery spectra, calculate a 2D mask indicating where pixels have valid data at each individual 2D image slice.  The resulting 2D mask will have 0 for non-contiguous spectra across the 3D domain, and 1 for contiguous spectra across the 3D domain.  The idea of this dataset is for users doing band math across the spectral domain, to mask out pixels that don't have valid data across each of the spectral bands.
+
+<h3 id="sent-hub-cloud-detec"> Sentinel Hub's cloud detector for Sentinel-2 imagery </h3>
+The s2cloudless classification is based on a single-scene pixel-based cloud detector developed by Sentinel Hub's research team and is described in more detail in this blog.
+
+The s2cloudless algorithm was part of an international collaborative effort aimed at intercomparing cloud detection algorithms. The s2cloudless algorithm was validated together with 9 other algorithms on 4 different test datasets and in all cases found to be on the Pareto front. See the [paper](https://doi.org/10.1016/j.rse.2022.112990).
