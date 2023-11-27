@@ -98,8 +98,12 @@ html_css_files = [
 
 html_theme_options = {
     "navbar_start": ["navbar-logo"],
-    "navbar_center": ["navbar-nav"],
-    "navbar_end": ["search-field"],
+    "navbar_center": [
+        "navbar-logo",
+        "navbar-nav",
+        "search-field",
+    ],
+    "navbar_end": [],
     "navbar_persistent": [],
     "secondary_sidebar_items": [],
     "footer_start": ["footer"],

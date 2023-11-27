@@ -1,10 +1,8 @@
-nav.navbar, .sidebar-header-items {
+nav.navbar {
     .search-button__kbd-shortcut {
         display: none;
     }
-}
 
-nav.navbar {
     .navbar-nav > .current > .nav-link {
         border-bottom: none !important;
     }
@@ -21,10 +19,27 @@ nav.navbar {
     input[type="search"].form-control {
         border: none;
     }
-}
 
-.sidebar-header-items {
-    .bd-search {
-        margin-top: 20px;
+    .navbar-header-items__start {
+        @media only screen and (min-width: $breakpoint-lg) {
+            display: none;
+        }
+
+        .navbar-brand {
+            margin-left: 0.5rem;
+        }
+    }
+
+    .navbar-header-items__center {
+        justify-content: space-between;
+        width: 100%;
+
+        .navbar-item {
+            min-width: 323px;
+
+            form.bd-search {
+                margin-left: auto;
+            }
+        }
     }
 }
