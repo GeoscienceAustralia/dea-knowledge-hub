@@ -8,14 +8,14 @@ is_latest_version: true
 product_type: Derivative
 spatial_data_type: Vector
 time_span:
-  start: 31 Dec 1987
-  end: 31 Dec 2022
+  start: 1988
+  end: 2022
 update_frequency: Annually
 product_ids: null
 
 parent_products:
-  name: null
-  link: null
+  name: Landsat 5, 7, 8 and 9 NBAR and Observational Attributes
+  link: /data/category/dea-surface-reflectance/
 collection:
   name: Geoscience Australia Landsat Collection 3
   link: null
@@ -41,25 +41,25 @@ tags:
 
 maps:
   - link: https://maps.dea.ga.gov.au/story/DEACoastlines
-    name: null
+    name: See it on a map
 
 explorers: null
 
 data:
   - link: https://data.dea.ga.gov.au/?prefix=derivative/dea_coastlines/2-1-0/
-    name: Digital Earth Australia - Public Data download (Esri Shapefiles, OGC GeoPackage)
+    name: Access the data on AWS
 
 code_examples:
   - link: https://docs.dea.ga.gov.au/notebooks/DEA_products/DEA_Coastlines.html
-    name: Jupyter notebook
+    name: Code examples
   - link: https://github.com/GeoscienceAustralia/dea-coastlines
     name: Github repository
 
 web_services:
   - link: https://geoserver.dea.ga.gov.au/geoserver/wms
-    name: "WMS (layer name: dea:DEACoastlines)"
+    name: Web Map Service (WMS)
   - link: http://geoserver.dea.ga.gov.au/geoserver/wfs?service=WFS&version=1.1.0
-    name: "WFS (layer names: dea:shorelines_annual, dea:rates_of_change)"
+    name: Web Feature Service (WFS)
 
 # Settings
 
