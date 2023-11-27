@@ -7,15 +7,15 @@ version: 1.0.0
 is_latest_version: true
 latest_version_link: null
 product_type: Data service
-spatial_data_type: Raster
+spatial_data_type: Vector
 time_span:
-  start: 4 Dec 2020
-  end: 31 Dec 2022
+  start: 1987
+  end: 2021
 update_frequency: As needed
 product_ids: null
 
 parent_products:
-  name: null
+  name: DEA Water Observations (Collection 2), DEA Fractional Cover (Collection 2), and Landsat 5, 7 and 8 NBART and Observational Attributes (Collection 2)
   link: null
 collection:
   name: Geoscience Australia Landsat Collection 2 (DEPRECATED)
@@ -36,13 +36,13 @@ tags:
 
 maps:
   - link: https://wetlandinfo.des.qld.gov.au/wetlands/
-    name: null
+    name: See it on a map
 
 explorers: null
 
 data:
   - link: https://data.dea.ga.gov.au/?prefix=projects/Wetlands_Insight_Tool/QLD/
-    name: Digital Earth Australia - Public Data
+    name: Access the data on AWS
 
 code_examples: null
 
