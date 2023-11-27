@@ -8,7 +8,9 @@ RTK GPS data used in Moreton Bay, QLD was provided by Tim Danaher, NSW Office of
 
 Multibeam bathymetry data over the Kimberley reefs was provided by M. O'Leary at Curtin University, WA.
 
-We thank C. Burton, S. Chua, A. Haiblen, A. Lem, B. Moushall, B. Stepin and S. Wong for assisting with field validation. This research was undertaken with the assistance of resources from the National Computational Infrastructure High Performance Data (HPD) platform, which is supported by the Australian Government.
+We thank C. Burton, S. Chua, A. Haiblen, A. Lem, B. Moushall, B. Stepin and S. Wong for assisting with field validation. 
+
+This research was undertaken with the assistance of resources from the National Computational Infrastructure (NCI), which is supported by the Australian Government.
 
 ## License and copyright
 

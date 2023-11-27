@@ -27,31 +27,31 @@ The rise and fall of the ocean can be used to describe the three-dimensional sha
 
 NIDEM differs from previous methods used to model the elevation of the intertidal zone which have predominately focused on extracting waterlines from a limited selection of satellite images using manual digitisation and visual interpretation (e.g. Chen and Rau 1998; Zhao et al. 2008; Liu et al. 2013; Chen et al. 2016). This manual process introduces subjectivity, is impractical to apply at a continental-scale, and has inherent restrictions based on the availability of high quality image data at appropriate tidal stages. By developing an automated approach to generating satellite-derived elevation data based on a 30 year time series of observations managed within the Digital Earth Australia (DEA) platform, it was possible to produce the first continental-scale three-dimensional model of the intertidal zone.
 
-#### Features
+### Features
 
 The National Intertidal Digital Elevation Model (NIDEM) consists of four raster datasets (NIDEM, unfiltered NIDEM, NIDEM mask, NIDEM uncertainty) and two vector datasets (NIDEM waterline contours and ITEM v2.0 tidal modelling polygons). For convenience, the four raster datasets are provided both as individual geotiff/NetCDF files, and continental-scale geotiff mosaics.
 
-##### **NIDEM**
+#### NIDEM
 
 The NIDEM dataset provides elevation in metre units relative to modelled Mean Sea Level for each pixel of intertidal terrain across the Australian coastline. The DEMs have been cleaned by masking out non-intertidal pixels and pixels where tidal processes poorly explain patterns of inundation (see NIDEM mask below). This is the primary output product, and is expected to be the default product for most applications. The dataset consists of 306 raster files corresponding to the 306 ITEM v2.0 tidal modelling polygons, and a continental-scale mosaic.
 
-##### **Unfiltered NIDEM**
+#### Unfiltered NIDEM
 
 The unfiltered NIDEM dataset provides un-cleaned elevation in metre units relative to modelled Mean Sea Level for each pixel of intertidal terrain across the Australian coastline. Compared to the default NIDEM product, these layers have not been filtered to remove noise, modelling artefacts or invalid elevation values (see NIDEM mask below). This supports applying custom filtering methods to the raw NIDEM data. The dataset consists of 306 raster files corresponding to the 306 ITEM v2.0 tidal modelling polygons, and a continental-scale mosaic.
 
-##### **NIDEM mask**
+#### NIDEM mask
 
 The NIDEM mask dataset flags non-intertidal terrestrial pixels with elevations greater than 25 m, and sub-tidal pixels with depths greater than -25 m relative to Mean Sea Level. Pixels where tidal processes poorly explain patterns of inundation are also flagged by identifying any pixels with ITEM confidence NDWI standard deviation greater than 0.25. The NIDEM mask was used to filter and clean the NIDEM dataset to remove modelling artefacts and noise (e.g. intertidal pixels in deep water or high elevations) and invalid elevation estimates caused by coastal change or poor model performance. The dataset consists of 306 raster files corresponding to the 306 ITEM v2.0 tidal modelling polygons, and a continental-scale mosaic.
 
-##### **NIDEM uncertainty**
+#### NIDEM uncertainty
 
 The NIDEM uncertainty dataset provides a measure of the uncertainty (not to be confused with accuracy) of NIDEM elevations in metre units for each pixel. The range of Landsat observation tide heights used to compute median tide heights for each waterline contour can vary significantly between tidal modelling polygons. To quantify this range, the standard deviation of tide heights for all Landsat images used to produce each ITEM interval and subsequent waterline contour was calculated. These values were interpolated to return an estimate of uncertainty for each individual pixel in the NIDEM datasets: larger values indicate the waterline contour was based on a composite of images with a larger range of tide heights. The dataset consists of 306 raster files corresponding to the 306 ITEM v2.0 tidal modelling polygons, and a continental-scale mosaic.
 
-##### **NIDEM waterline contours**
+#### NIDEM waterline contours
 
 The NIDEM waterline contour dataset provides a vector representation of the boundary of every ten percent interval of the observed intertidal range. These contours were extracted along the boundary between each ITEM v2.0 tidal interval, and assigned the median and standard deviation (see NIDEM uncertainty above) of tide heights from the ensemble of corresponding Landsat observations. These datasets facilitate re-analysis by allowing alternative interpolation methods (e.g. kriging, splines) to be used to generate DEMs from median tide heights. The dataset consists of 306 shapefiles corresponding to the 306 ITEM v2.0 tidal modelling polygons.
 
-##### **ITEM v2.0 tidal modelling polygons**
+#### ITEM v2.0 tidal modelling polygons
 
 The ITEM v2.0 tidal model polygon dataset describes the multi-resolution tidal framework developed by Sagar et al. (2018). The framework uses partitioning methods to allow spatial variability in the tidal model to drive the size and locations of a Voronoi polygon mesh. The 306 resulting tidal modelling polygons are then used as analysis units for tidal modelling, with tide height predictions defined at the nodes of each Voronoi cell. To evaluate the representativeness of NIDEM data compared to the full tidal range, the spread of tidal heights coincident with the input Landsat imagery was compared against the full range of modelled tide heights present within each tidal modelling polygon. Three indices were calculated: spread (the proportion of the full modelled tidal range observed by Landsat), low tide offset (the proportion of the lowest tidal heights not observed by Landsat) and high tide offset (the proportion of the highest tidal heights not observed by Landsat). This evaluation of the observed tidal range at a particular location provides valuable information to users about the "fitness for purpose" of NIDEM at a given location for their specific application (see Bishop-Taylor et al. 2019).
 
@@ -62,12 +62,9 @@ The product differs from previous methods used to model the elevation of the int
 ## Processing steps
 
 1. Extract waterline contours along boundary of each ITEM tidal interval (i.e. each ten percent of the observed tidal range)
-
-1. Assign contours with median and standard deviation tide heights of Landsat observations for each tidal interval
-
-1. Generate continuous elevation data from median tide heights per contour using Triangulated Irregular Network interpolation
-
-1. Clean and filter DEMs to remove noise, modelling artefacts and invalid elevation estimates
+2. Assign contours with median and standard deviation tide heights of Landsat observations for each tidal interval
+3. Generate continuous elevation data from median tide heights per contour using Triangulated Irregular Network interpolation
+4. Clean and filter DEMs to remove noise, modelling artefacts and invalid elevation estimates
 
 % ## Software
 

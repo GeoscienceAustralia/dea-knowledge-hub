@@ -2,17 +2,12 @@
 
 % ## Use constraints
 
-:::{dropdown} How to access the data
-#### DEA Maps
+:::{dropdown} How to view the data in a web map
 
 To view and access the data interactively:
-
 1) Visit [DEA Maps](https://maps.dea.ga.gov.au).
-
-2) Click 'Add data'.
-
-3) Select 'Coastal' > 'Low tide satellite images' > 'Low tide Landsat satellite images'. Click 'Add to map'.
-
-4) Select 'Coastal' > 'High tide satellite images' > 'High tide Landsat satellite images'. Click 'Add to map'.
+2) Click `Explore map data`.
+3) Select `Sea, ocean and coast` > `DEA High and Low Tide Imagery (HLTC)` > `DEA Low Tide Imagery (Landsat)`. Click `Add to the map`, or the `+` symbol to add the data to the map.
+4) Select `Sea, ocean and coast` > `DEA High and Low Tide Imagery (HLTC)` > `DEA High Tide Imagery (Landsat)`. Click `Add to the map`, or the `+` symbol to add the data to the map.
 :::
 

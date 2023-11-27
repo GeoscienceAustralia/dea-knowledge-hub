@@ -25,7 +25,7 @@ The data has been captured on a 25m spatial scale.
 
 Inter-tidal zones are difficult regions to characterise due to the dynamic nature of the tide. They are highly changeable environments, subject to forcings from the land, sea and atmosphere and yet they form critical habitats for a wide range of organisms from birds to fish and sea grass. By harnessing the long archive of satellite imagery over Australia's coastal zones in the DEA and pairing the images with regional tidal modelling, the archive can be sorted by tide height rather than date, enabling the inter-tidal zone to be viewed at any stage of the tide regime.
 
-The High Low Tide Composites (HLTC\_25) product is composed of two mosaics, distinguished by tide height, representing a composite image of the synthetic geomedian surface reflectance from Landsats 5 TM, Landsat 7 ETM+ and Landsat 8 OLI NBAR data (Li et al., 2012; Roberts et al., 2017). These products have been produced using Digital Earth Australia (DEA). The two mosaics allow cloud free and noise reduced visualisation of the shallow water and inter-tidal coastal regions of Australia, as observed at high and low tide respectively (Sagar et al., 2018).
+The High Low Tide Composites (HLTC_25) product is composed of two mosaics, distinguished by tide height, representing a composite image of the synthetic geomedian surface reflectance from Landsats 5 TM, Landsat 7 ETM+ and Landsat 8 OLI NBAR data (Li et al., 2012; Roberts et al., 2017). These products have been produced using Digital Earth Australia (DEA). The two mosaics allow cloud free and noise reduced visualisation of the shallow water and inter-tidal coastal regions of Australia, as observed at high and low tide respectively (Sagar et al., 2018).
 
 The composites are generated utilising the geomedian approach of Roberts et al (2017) to ensure a valid surface reflectance spectra suitable for uses such as habitat mapping. The time range used for composite generation in each polygon of the mosaic is tailored to ensure dynamic coastal features are captured whilst still allowing a clean and cloud free composite to be generated. The concepts of the Observed Tidal Range (OTR), and Highest and Lowest Observed Tide (HOT, LOT) are discussed and described fully in Sagar et al. (2017) and the product description for the ITEM v 1.0 product (Geoscience Australia, 2016).
 
@@ -35,50 +35,38 @@ The time range used for composite generation in each of the 306 polygons of the 
 
 Observations are filtered to remove poor quality observations including cloud, cloud shadow and band saturation (of any band).
 
-#### Features
+### Features
 
 The High and Low Tide Composites product is a 6-band mosaic, consistent with Landsat, produced to allow visualisation of the shallow water and inter-tidal coastal regions as observed at high or low tide. It is continental (coastal) in coverage and includes geomedian surface reflectance, along with pixel and polygon level metadata for each of the 306 polygons contained in each of the HOT and LOT mosaics.
 
 The supporting polygon level metadata includes the following **attributes**:
 
-**ID** - polygon ID number
-
-**lon** \- polygon centroid longitude
-
-**lat** - polygon centroid latitude
-
-**date\_range** - range of input dates
-
-**modelLow** - lowest modelled tide height between the input dates
-
-**modelHigh** - highest modelled tide height between the input dates
-
-**MaximumObs** - maximum count of clear observations for any pixel in the polygon
-
-**LIT** - lowest input tide height to the composite image
-
-**HIT** - highest input tide height to the composite image
-
-**stages** - the count of each observed tide stage in the composite image. Where
-
-* **e** = ebbing tide
-* **f** = flowing tide
-* **ph** = peak high tide
-* **pl** \= peak low tide.
+|                |                                                                                                                                                                                                  |
+|----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **ID**         | polygon ID number                                                                                                                                                                                |
+| **lon**        | polygon centroid longitude                                                                                                                                                                       |
+| **lat**        | polygon centroid latitude                                                                                                                                                                        |
+| **date_range** | range of input dates                                                                                                                                                                             |
+| **modelLow**   | lowest modelled tide height between the input dates                                                                                                                                              |
+| **modelHigh**  | highest modelled tide height between the input dates                                                                                                                                             |
+| **MaximumObs** | maximum count of clear observations for any pixel in the polygon                                                                                                                                 |
+| **LIT**        | lowest input tide height to the composite image                                                                                                                                                  |
+| **HIT**        | highest input tide height to the composite image                                                                                                                                                 |
+| **stages**     | the count of each observed tide stage in the composite image. Where: <br />* **e** = ebbing tide <br /> * **f** = flowing tide <br /> * **ph** = peak high tide <br /> * **pl** \= peak low tide |
 
 The tide stages were calculated by comparison to the modeled tide data for 15 minutes either side of the observation to determine the ebb, flow or peak movement of the tide.
 
 The ***composites* file naming convention** is as follows:
 
-COMPOSITE\_\[HIGH or LOW\]\_\[polygon ID\]\_\[centroid longitude\]\_\[centroid latitude\]\_\[input date range\]\_PER\_20.\[nc or tif\]
+`COMPOSITE\_\[HIGH or LOW\]\_\[polygon ID\]\_\[centroid longitude\]\_\[centroid latitude\]\_\[input date range\]\_PER\_20.\[nc or tif\]`
 
-e.g. COMPOSITE\_HIGH\_297\_120.3\_-19.36\_20000101\_20170101\_PER\_20.nc
+e.g. `COMPOSITE\_HIGH\_297\_120.3\_-19.36\_20000101\_20170101\_PER\_20.nc`
 
 The ***maximum pixel count* naming convention** is as follows:
 
-COUNT\_\[HIGH or LOW\]\_\[polygon ID\]\_\[centroid longitude\]\_\[centroid latitude\]\_\[input date range\]\_PER\_20.\[nc or tif\]
+`COUNT\_\[HIGH or LOW\]\_\[polygon ID\]\_\[centroid longitude\]\_\[centroid latitude\]\_\[input date range\]\_PER\_20.\[nc or tif\]`
 
-e.g. COUNT\_HIGH\_297\_120.3\_-19.36\_20000101\_20170101\_PER\_20.nc
+e.g. `COUNT\_HIGH\_297\_120.3\_-19.36\_20000101\_20170101\_PER\_20.nc`
 
 ## Lineage
 
@@ -86,15 +74,42 @@ The product has been developed to provide a geomedian composite visualisation of
 
 ## Processing steps
 
-1. Create a continental scale tidal modelling framework
+### 1. Create a continental scale tidal modelling framework
 
-1. Generate HOT and LOT composite imagery
+Create a continental scale tidal modelling framework utilising continental scale tidal prediction software developed by Oregon State University (OTPS, Egbert and Erofeeva, 2002, 2010). OTPS tide heights were attributed to Landsat observations in the DEA at corresponding times and dates, per location
+
+The modelling process utilises continental scale tidal prediction software developed by Oregon State University (OTPS, Egbert and Erofeeva, 2002, 2010). OTPS tide heights were attributed to Landsat observations in the DEA at corresponding times and dates, per location.
+
+To account for geographic and seasonal variations in tidal regimes and ranges, twelve tidal height rasters of the study region at 1km resolution were created utilising the OTPS model, at a randomly selected monthly epoch across a full year. Utilising these raster layers, the tidal modelling spatial framework was constructed with the following steps:
+* Perform a multi-resolution segmentation using eCognition software, utilising all twelve tidal height inputs, to create a spatial representation of the multi-epoch tidal variation across the continent.
+* Extract the centroids of the object segments created in eCognition and generate a Voronoi Polygon tessellation of the region.
+* Perform a visual assessment and manual adjustment of the Voronoi polygon boundaries and nodes to ensure alignment with natural boundaries and coastal/island features.
+
+Through this process, the coastal zone is divided into Voronoi polygons that capture the tidal complexity of the Australian coast, with areas of complex tidal behaviour represented using smaller polygons. The nodes of the polygons can then be used for the tidal attribution process as described in Sagar et al., (2017). 
+
+### 2. Generate HOT and LOT composite imagery
+
+Generate HOT and LOT composite imagery: Landsat TM and OLI NBAR extracted for each tidal model polygon for 2010-17 range; pixel filtered; tagged and sorted by tidal height (OTPS); pixel based geomedian composites created from HT and LT composite subsets.
+
+The high and low tide composite generation comprises the following steps:
+* Landsat TM and OLI NBAR time-series observations archived in the DEA are extracted for each tidal model polygon for the 2010-17 time range..
+* Data is then filtered on a pixel basis to remove poor quality data including cloud, cloud shadow and band saturation.
+* Observations are tagged with a tidal height relative to Mean Sea Level (MSL) utilising the OTPS model, time of acquisition and location of the polygon model node.
+* Observations are sorted by tidal height to allow identify subsets acquired at high and low tide:
+  * the lower 20th percentile of the observed tidal range, which are used to calculate the low tide composite,  and,
+  * the upper 20th percentile of the observed tidal range which are used to calculate the high tide composite.
+* Pixel based geomedian composites are then created from the high and low tide composite subsets.
+* The composite is visually inspected to assess the quality (ie. remnant cloud noise, lack of data). If required, steps 1-5 are then repeated with an additional 5 years of archival data added to the process. Ultimately, highest observed tide (HOT) composites ranged from either 1995-17 or 2000-17 per polygon. Lowest observed tide (LOT) composites ranged from either 2000-17, 2005-17 or 2010-17 per polygon. 
+
+* Due the sun-synchronous nature of the various Landsat sensor observations; it is unlikely that the full physical extents of the tidal range in any cell will be observed. Hence, terminology has been adopted for the product to reflect the highest modelled tide observed in a given cell (HOT) and the lowest modelled tide observed (LOT). These measures are relative to Mean Sea Level, and have no consistent relationship to Lowest (LAT) and Highest Astronomical Tide (HAT).
 
 % ## Software
 
 ## References
 
 Egbert, G. D., & Erofeeva, S. Y. (2002). Efficient Inverse Modeling of Barotropic Ocean Tides. *Journal of Atmospheric and Oceanic Technology*, *19*(2), 183–204. [https://doi.org/10.1175/1520-0426(2002)019<0183:EIMOBO>2.0.CO;2](https://doi.org/10.1175/1520-0426(2002)019%3c0183:EIMOBO%3e2.0.CO;2)
+
+Egbert, G.D., Erofeeva, S.Y., 2010. The OSU TOPEX/Poseiden Global Inverse Solution TPXO [WWW Document]. TPXO8-Atlas Version 10. URL [http://volkov.oce.orst.edu/tides/global.html](http://volkov.oce.orst.edu/tides/global.html) (accessed 2.15.16).
 
 Li, F., Jupp, D. L. B., Thankappan, M., Lymburner, L., Mueller, N., Lewis, A., & Held, A. (2012). A physics-based atmospheric and BRDF correction for Landsat data over mountainous terrain. *Remote Sensing of Environment*, *124*, 756–770. [https://doi.org/10.1016/j.rse.2012.06.018](https://doi.org/10.1016/j.rse.2012.06.018)
 
