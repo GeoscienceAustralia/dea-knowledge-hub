@@ -41,30 +41,34 @@ The High and Low Tide Composites product is a 6-band mosaic, consistent with Lan
 
 The supporting polygon level metadata includes the following **attributes**:
 
-|                |                                                                                                                                                                                                  |
-|----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **ID**         | polygon ID number                                                                                                                                                                                |
-| **lon**        | polygon centroid longitude                                                                                                                                                                       |
-| **lat**        | polygon centroid latitude                                                                                                                                                                        |
-| **date_range** | range of input dates                                                                                                                                                                             |
-| **modelLow**   | lowest modelled tide height between the input dates                                                                                                                                              |
-| **modelHigh**  | highest modelled tide height between the input dates                                                                                                                                             |
-| **MaximumObs** | maximum count of clear observations for any pixel in the polygon                                                                                                                                 |
-| **LIT**        | lowest input tide height to the composite image                                                                                                                                                  |
-| **HIT**        | highest input tide height to the composite image                                                                                                                                                 |
-| **stages**     | the count of each observed tide stage in the composite image. Where: <br />* **e** = ebbing tide <br /> * **f** = flowing tide <br /> * **ph** = peak high tide <br /> * **pl** \= peak low tide |
+|                |                                                                                                                                                                                           |
+|----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **ID**         | polygon ID number                                                                                                                                                                         |
+| **lon**        | polygon centroid longitude                                                                                                                                                                |
+| **lat**        | polygon centroid latitude                                                                                                                                                                 |
+| **date_range** | range of input dates                                                                                                                                                                      |
+| **modelLow**   | lowest modelled tide height between the input dates                                                                                                                                       |
+| **modelHigh**  | highest modelled tide height between the input dates                                                                                                                                      |
+| **MaximumObs** | maximum count of clear observations for any pixel in the polygon                                                                                                                          |
+| **LIT**        | lowest input tide height to the composite image                                                                                                                                           |
+| **HIT**        | highest input tide height to the composite image                                                                                                                                          |
+| **stages**     | the count of each observed tide stage in the composite image. Where: <br /> **e** = ebbing tide <br /> **f** = flowing tide <br /> **ph** = peak high tide <br /> **pl** \= peak low tide |
 
 The tide stages were calculated by comparison to the modeled tide data for 15 minutes either side of the observation to determine the ebb, flow or peak movement of the tide.
 
 The ***composites* file naming convention** is as follows:
 
-`COMPOSITE\_\[HIGH or LOW\]\_\[polygon ID\]\_\[centroid longitude\]\_\[centroid latitude\]\_\[input date range\]\_PER\_20.\[nc or tif\]`
+```
+COMPOSITE\_\[HIGH or LOW\]\_\[polygon ID\]\_\[centroid longitude\]\_\[centroid latitude\]\_\[input date range\]\_PER\_20.\[nc or tif\]`
+```
 
 e.g. `COMPOSITE\_HIGH\_297\_120.3\_-19.36\_20000101\_20170101\_PER\_20.nc`
 
 The ***maximum pixel count* naming convention** is as follows:
 
-`COUNT\_\[HIGH or LOW\]\_\[polygon ID\]\_\[centroid longitude\]\_\[centroid latitude\]\_\[input date range\]\_PER\_20.\[nc or tif\]`
+```
+COUNT\_\[HIGH or LOW\]\_\[polygon ID\]\_\[centroid longitude\]\_\[centroid latitude\]\_\[input date range\]\_PER\_20.\[nc or tif\]`
+```
 
 e.g. `COUNT\_HIGH\_297\_120.3\_-19.36\_20000101\_20170101\_PER\_20.nc`
 
