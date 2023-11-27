@@ -1,6 +1,7 @@
 # Content Management Interface (CMI) redirects
 
 node                     index
+404                      404-not-found
 search/user              search
 search/node              search
 about                    index

@@ -33,6 +33,6 @@ references-articles/analysis-ready-data-example-queries  guides/setup/ard-open-d
 resources/analysis-ready-data-example-queries            guides/setup/ard-open-data-cube
 references-articles/open-data-cube-example               guides/setup/ard-open-data-cube
 references-articles/open-data-cube-example-queries       guides/setup/ard-open-data-cube
-resources/how-to-access-data-on-the-CMI                  guides/setup/how-to-access-data-on-the-CMI
-references-articles/understanding-the-data-product-page  guides/setup/how-to-access-data-on-the-CMI
-reference-articles/understanding-the-data-product-page   guides/setup/how-to-access-data-on-the-CMI
+# resources/how-to-access-data-on-the-CMI                  guides/setup/how-to-access-data-on-the-CMI
+# references-articles/understanding-the-data-product-page  guides/setup/how-to-access-data-on-the-CMI
+# reference-articles/understanding-the-data-product-page   guides/setup/how-to-access-data-on-the-CMI
