@@ -9,14 +9,6 @@ references-articles  guides
 
 data-products             data
 data-products/dea         data
-data-products/copernicus  data
-data-products/marine      data
-
-theme/baseline-satellite-data  data/theme/baseline-satellite-data
-theme/land-and-vegetation      data/theme/land-and-vegetation
-theme/inland-water             data/theme/inland-water
-theme/sea-ocean-and-coast      data/theme/sea-ocean-and-coast
-theme/hazards                  data/theme/hazards
 
 resources/glossary           guides/about/glossary
 resources/naming-convention  guides/reference/collection_3_naming
