@@ -3,7 +3,6 @@
 ### Annual shoreline accuracy and precision
 
 An extensive validation against independent coastal monitoring datasets was conducted to evaluate the positional accuracy and precision of DEA Coastlines annual shorelines, and the accuracy of our modelled long-term rates of coastal change (i.e. metres retreat or growth per year). In total, 57,662 independent measurements of coastline position were acquired across coastal Australia from the following data sources (Figure 4):
-
 * City of Gold Coast ETA Lines (Strauss et al., 2017)
 * Moruya and Pedro Beach survey (Short et al. 2014)
 * [Narrabeen-Collaroy Beach Survey Program](http://narrabeen.wrl.unsw.edu.au/) (Turner et al., 2016)
@@ -57,20 +56,20 @@ To evaluate our long-term rates of change, we identified 330 validation transect
 Figure 5: DEA Coastlines annual shorelines compared against a) aerial photogrammetry-derived annual ~0 m AMSL shorelines from the Western Australian Department of Transport Coastline Movements dataset, and b) transect-based in-situ validation data for three example locations that demonstrate sub-pixel precision shoreline extraction: Narrabeen Beach, Tugun Beach, and West Beach. DEA Coastlines transect data in panel b represent the 0 m AMSL Median Annual Shoreline Position shoreline proxy, and have been corrected for consistent local inland biases to assess the ability to capture relative coastline dynamics through time.
 :::
 
-### Caveats and limitations
+## Caveats and limitations
 
-#### Annual shorelines
+### Annual shorelines
 
 * Annual shorelines from DEA Coastlines summarise the median (i.e. "dominant") position of the shoreline throughout the entire year, corrected to a consistent tide height (0 m AMSL). Annual shorelines will therefore not reflect shorter-term coastal variability, for example changes in shoreline position between low and high tide, seasonal effects, or short-lived influences of individual storms. This means that these annual shorelines will show lower variability than the true range of coastal variability observed along the Australian coastline.
 
-#### Rates of change points
+### Rates of change points
 
 * Rates of change points do not assign a reason for change, and do not necessarily represent processes of coastal erosion or sea level rise. In locations undergoing rapid coastal development, the construction of new inlets or marinas may be represented as hotspots of coastline retreat, while the construction of ports or piers may be represented as hotspots of coastline growth. Rates of change points should therefore be evaluated with reference to the underlying annual coastlines and external data sources or imagery.
 * Rates of change points may be inaccurate or invalid within complex mouthbars, or other coastal environments undergoing rapid non-linear change through time. In these regions, it is advisable to visually assess the underlying annual shoreline data when interpreting rates of change to ensure these values are fit-for-purpose. Regions significantly affected by this issue include:
  * Cambridge Gulf, Western Australia
  * Joseph Bonaparte Gulf, Western Australia/Northern Territory
 
-#### Data quality issues
+### Data quality issues
 
 * Annual shorelines may be less accurate in regions with complex tidal dynamics or large tidal ranges, and low-lying intertidal flats where small tidal modelling errors can lead to large horizontal offsets in coastline positions (Figure 6). Annual shoreline accuracy in intertidal environments may also be reduced by the influence of wet muddy substrate or intertidal vegetation, which can make it difficult to extract a single unambiguous coastline (Bishop-Taylor et al. 2019a, 2019b, 2021). It is anticipated that future versions of this product will show improved results due to integrating more advanced methods for waterline detection in intertidal regions, and through improvements in tidal modelling methods. Regions significantly affected by intertidal issues include:
  * The Pilbara coast, Western Australia from Onslow to Pardoo
@@ -85,7 +84,7 @@ Figure 5: DEA Coastlines annual shorelines compared against a) aerial photogramm
 * Some areas of extremely dark and persistent shadows (e.g. steep coastal cliffs across southern Australia) may be inadvertently mapped as water, resulting in a landward offset from true shoreline positions. 
 * 1991 and 1992 shorelines are currently affected by aerosol-related issues caused by the 1991 Mount Pinatubo eruption. These shorelines should be interpreted with care, particularly across northern Australia. 
 
-#### Validation approach
+### Validation approach
 
 * To compare annual shorelines to validation datasets, multiple validation observations in a year were combined into a single median measurement of coastline position. In the case where only a single validation observation was taken for a year, this single observation may not be reflective of typical shoreline conditions across the entire year period. Because of this, validation results are expected to be more reliable for validation datasets with multiple observations per year.
 * The current validation approach was biased towards Australia's south-western, southern and south-eastern coastlines due to the availability of historical coastal monitoring data. This bias prevented us from including more complex intertidal environments in our validation, which is likely to have inflated the accuracy of our results due to issues outlined above.

@@ -1,4 +1,6 @@
-% ## Acknowledgments
+## Acknowledgments
+
+This research was undertaken with the assistance of resources from the National Computational Infrastructure (NCI), which is supported by the Australian Government.
 
 ## License and copyright
 

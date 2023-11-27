@@ -26,37 +26,31 @@ This information was collated using observations in the Landsat archive since 19
 
 The Intertidal Extents Model product is a national scale gridded dataset characterising the spatial extents of the exposed intertidal zone, at intervals of the observed tidal range (Sagar et al. 2017). The current version (2.0) utilises all Landsat observations (5, 7, and 8) for Australian coastal regions (excluding off-shore Territories) between 1986 and 2016 (inclusive).
 
-ITEM v2.0 has implemented an improved tidal modelling framework (see Sagar et al. 2018 and Processing Step: Create a continental scale tidal modelling framework) over that utilised in ITEM v1.0. The expanded Landsat archive within the Digital Earth Australia (DEA) has also enabled the model extent (Figure 1) to be increased to cover a number of offshore reefs, including the full Great Barrier Reef and southern sections of the Torres Strait Islands. 
-
-The DEA archive and new tidal modelling framework has improved the coverage and quality of the ITEM v2.0 relative extents model, particularly in regions where AGDC cell boundaries in ITEM v1.0 produced discontinuities or the imposed v1.0 cell structure resulted in poor quality tidal modelling (see Sagar et al. 2017).
-
-Examples of regions in ITEM v2.0 where these significant improvements have been noted include:
-
-* **Dampier Peninsula and King Sound, WA**. Improved modelling within King Sound has removed the discontinuities seen at cell boundaries in ITEM v1.0, and expanded the extent of intertidal region being mapped.
-* **Tiwi Islands, Coburg Pensinsula and Croker Island, NT**. Poor spatial representation of the regions tidal regimes in  ITEM v1.0 has been improved in v2.0 resulting in extensive onshore reefs and mudflats now being mapped. 
-* The full **Great Barrier Reef** has been mapped, detailing reef structures which expose at low tide. Algorithm amendments have reduced the false positive exposed surface detections resulting from glint and sun glitter.
-* **Broad Sound, QLD.** Improved tidal modelling has resulted in a smoother intertidal extent map, and a greatly improved confidence layer value for the region.
-* Improvements in the coverage of the DEA archive has allowed many regions unresolved in ITEM v1.0 and showing as 'no data' to be modelled successfully in ITEM 2.0. For example, **Mornington Island, QLD, Eastern sections of Fraser Island, QLD** and pensinsulas in **Bowling Green Bay National Park near Townsville, QLD.**
-
 ### Datasets
 
 The Intertidal Extents Model (ITEM v2.0) consists of three datasets derived from the Landsat NBAR data managed in Digital Earth Australia for the period 1986 to 2016
 
 #### Dataset 1: ITEM v2.0 TIDAL MODEL
 
-The **ITEM****v2\_tidalmodel.shp** identifies the location and extents of the 306 polygons (Figure 1) used in the product, defined by the Continental Scale tidal modelling framework (see Processing Step: Create a continental scale tidal modelling framework). The shapefile also includes information on the lowest (LOT) and highest (HOT) observed tides for the cell, and hence the observed tidal range (HOT-LOT), based on tidal modelling for the time of acquisition of each of the corresponding Landsat observations in the cell polygon.
+The `ITEMv2_tidalmodel.shp` identifies the location and extents of the 306 polygons (Figure 1) used in the product, defined by the Continental Scale tidal modelling framework (see Processing Step: Create a continental scale tidal modelling framework). The shapefile also includes information on the lowest (LOT) and highest (HOT) observed tides for the cell, and hence the observed tidal range (HOT-LOT), based on tidal modelling for the time of acquisition of each of the corresponding Landsat observations in the cell polygon.
 
 **Attributes:**
 
-| | |
-| -- | -- |
-| **ID** | Unique Polygon Identifier |
-| **lon** | Polygon Centroid Longitude |
-| **lat** | Polygon Centroid Latitude |
-| **LOT** | Lowest Observed Tide – The lowest modelled tidal height based on the acquisition times of all observations in the polygon. Relative to Mean Sea Level (MSL) (m).  |
-| **HOT** | Highest Observed Tide – The highest modelled tidal height based on the acquisition times of all observations in the polygon. Relative to Mean Sea Level (MSL) (m).  |
-| **LMT** | Lowest Modelled Tide - The lowest modelled tidal height based on the OTPS model for the full period of the archive. Relative to Mean Sea Level (MSL) (m).  |
-| **HMT** | Highest Modelled Tide - The highest modelled tidal height based on the OTPS model for the full period of the archive. Relative to Mean Sea Level (MSL) (m).  |
+|         |                                                                                                                                                                    |
+|---------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **ID**  | Unique Polygon Identifier                                                                                                                                          |
+| **lon** | Polygon Centroid Longitude                                                                                                                                         |
+| **lat** | Polygon Centroid Latitude                                                                                                                                          |
+| **LOT** | Lowest Observed Tide – The lowest modelled tidal height based on the acquisition times of all observations in the polygon. Relative to Mean Sea Level (MSL) (m).   |
+| **HOT** | Highest Observed Tide – The highest modelled tidal height based on the acquisition times of all observations in the polygon. Relative to Mean Sea Level (MSL) (m). |
+| **LMT** | Lowest Modelled Tide - The lowest modelled tidal height based on the OTPS model for the full period of the archive. Relative to Mean Sea Level (MSL) (m).          |
+| **HMT** | Highest Modelled Tide - The highest modelled tidal height based on the OTPS model for the full period of the archive. Relative to Mean Sea Level (MSL) (m).        |
+
+:::{figure} /_files/cmi/item_1.*
+:alt: ITEM v2 polygon extents
+
+Figure 1: Polygon extents for ITEM v2.
+:::
 
 #### Dataset 2: THE RELATIVE EXTENTS MODEL v2.0
 
@@ -72,19 +66,19 @@ E.g. `ITEM_REL_95_153.67_-28.77.tif`
 
 **Single Band Integer Raster:**
 
-| | |
-| -- | -- |
-| 0 | Always water |
-| 1 | Exposed at lowest 0-10% of the observed tidal range |
-| 2 | Exposed at 10-20% of the observed tidal range |
-| 3 | Exposed at 20-30% of the observed tidal range |
-| 4 | Exposed at 30-40% of the observed tidal range |
-| 5 | Exposed at 40-50% of the observed tidal range |
-| 6 | Exposed at 50-60% of the observed tidal range |
-| 7 | Exposed at 60-70% of the observed tidal range |
-| 8 | Exposed at 70-80% of the observed tidal range |
-| 9 | Exposed at highest 80-100% of the observed tidal range (land) |
-| \-6666 | No Data |
+|        |                                                               |
+|--------|---------------------------------------------------------------|
+| 0      | Always water                                                  |
+| 1      | Exposed at lowest 0-10% of the observed tidal range           |
+| 2      | Exposed at 10-20% of the observed tidal range                 |
+| 3      | Exposed at 20-30% of the observed tidal range                 |
+| 4      | Exposed at 30-40% of the observed tidal range                 |
+| 5      | Exposed at 40-50% of the observed tidal range                 |
+| 6      | Exposed at 50-60% of the observed tidal range                 |
+| 7      | Exposed at 60-70% of the observed tidal range                 |
+| 8      | Exposed at 70-80% of the observed tidal range                 |
+| 9      | Exposed at highest 80-100% of the observed tidal range (land) |
+| \-6666 | No Data                                                       |
 
 #### Dataset 3: THE CONFIDENCE LAYER v2.0
 
@@ -100,10 +94,10 @@ E.g. `ITEM_STD_95_153.67_-28.77.tif`
 
 **Single Band Integer Raster:**
 
-| | |
-| -- | -- |
-| \-6666 | No Data – Model is invalid. Indicates pixels where data quality and/or number of observations have resulted in no available observations in one or more of the percentile interval subsets. |
-| All other values | The pixel-based average of the NDWI standard deviations calculated independently for each percentile interval of the observed tidal range. |
+|                  |                                                                                                                                                                                             |
+|------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| \-6666           | No Data – Model is invalid. Indicates pixels where data quality and/or number of observations have resulted in no available observations in one or more of the percentile interval subsets. |
+| All other values | The pixel-based average of the NDWI standard deviations calculated independently for each percentile interval of the observed tidal range.                                                  |
 
 ## Lineage
 
@@ -113,17 +107,44 @@ The product differs from previous methods used to map the intertidal zone which 
 
 ## Processing steps
 
-1. Create a continental scale tidal modelling framework
-1. Apply the Oregon State University tidal model to coastline cells/polygons
-1. Attribute coastal cells with a tidal height
-1. Sort time series of observations based on tidal height
-1. Mask tile observations for pixel quality
-1. Calculate NDWI for each observation
-1. Create binary NDWI layers and combine to create Relative Extents Model
+### 1. Create a continental scale tidal modelling framework
+Create a continental scale tidal modelling framework utilising continental scale tidal prediction software developed by Oregon State University (OTPS, Egbert and Erofeeva, 2002, 2010). OTPS tide heights were attributed to Landsat observations in the DEA at corresponding times and dates, per location
+
+The modelling process utilises continental scale tidal prediction software developed by Oregon State University (OTPS, Egbert and Erofeeva, 2002, 2010). OTPS tide heights were attributed to Landsat observations in the DEA at corresponding times and dates, per location.
+
+To account for geographic and seasonal variations in tidal regimes and ranges, twelve tidal height rasters of the study region at 1km resolution were created utilising the OTPS model, at a randomly selected monthly epoch across a full year. Utilising these raster layers, the tidal modelling spatial framework was constructed with the following steps:
+
+* Perform a multi-resolution segmentation using eCognition software, utilising all twelve tidal height inputs, to create a spatial representation of the multi-epoch tidal variation across the continent.
+* Extract the centroids of the object segments created in eCognition and generate a Voronoi Polygon tessellation of the region.
+* Perform a visual assessment and manual adjustment of the Voronoi polygon boundaries and nodes to ensure alignment with natural boundaries and coastal/island features.
+
+Through this process, the coastal zone is divided into Voronoi polygons that capture the tidal complexity of the Australian coast, with areas of complex tidal behaviour represented using smaller polygons. The nodes of the polygons can then be used for the tidal attribution process as described in Sagar et al., (2017).
+
+### 2. Apply the Oregon State University tidal model to coastline cells/polygons
+The Oregon State University Tidal Prediction Software (OTPS) TPX08 Atlas Model is applied to each coastal cell, to model tidal heights (MSL) at the nominated cell centroid or node location.
+
+### 3. Attribute coastal cells with a tidal height
+All observations within the nominated cell/polygon and time period is attributed with a tidal height, relative to Mean Sea Level (MSL), corresponding to the time of observation acquisition and derived cell/polygon centroid or node.
+
+### 4. Sort time series of observations based on tidal height
+The time-series of observations for each cell/polygon is then sorted based on the modeled tidal height, and split into subsets representing percentile intervals of the observed tidal range (OTR) for that cell/polygon.
+
+### 5. Mask tile observations for pixel quality
+Each tile observation is masked for pixel quality based on the DEA PQA layer to exclude pixels flagged for cloud, band saturation and contiguity.
+
+### 6. Calculate NDWI for each observation
+The Normalised Difference Water Index (NDWI) (McFeeters, 1996) is calculated for each observation, and a pixel based median NDWI composite derived for each percentile interval of the cell’s OTR. The pixel-based standard deviation of NDWI values within each percentile interval is also recorded for use in the Confidence Layer.
+
+### 7. Create binary NDWI layers and combine to create Relative Extents Model
+Binary Land/Water layers are created from the NDWI composites for each tidal interval using a standard threshold. These are then combined to create the Relative Extents Model. For full methodology and process details see Sagar et al. 2017.
 
 % ## Software
 
 ## References
+
+Egbert, G.D., Erofeeva, S.Y., 2010. The OSU TOPEX/Poseiden Global Inverse Solution TPXO [WWW Document]. TPXO8-Atlas Version 10. URL http://volkov.oce.orst.edu/tides/global.html (accessed 2.15.16).
+
+Egbert, G.D., Erofeeva, S.Y., 2002. Efficient Inverse Modeling of Barotropic Ocean Tides. J. Atmospheric Ocean. Technol. 19, 183–204. [https://doi.org/10.1175/1520-0426(2002)019%3C0183:EIMOBO%3E2.0.CO;2](https://doi.org/10.1175/1520-0426(2002)019%3C0183:EIMOBO%3E2.0.CO;2)
 
 Sagar, S., Roberts, D., Bala, B., & Lymburner, L. (2017). Extracting the intertidal extent and topography of the Australian coastline from a 28 year time series of Landsat observations. *Remote Sensing of Environment*, *195*, 153–169. [https://doi.org/10.1016/j.rse.2017.04.009](https://doi.org/10.1016/j.rse.2017.04.009)
 

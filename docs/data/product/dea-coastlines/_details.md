@@ -24,7 +24,6 @@ The ability to map shoreline positions for each year provides valuable insights 
 ### DEA Coastlines dataset
 
 The DEA Coastlines product contains five layers:
-
 * Annual shorelines
 * Rates of change points
 * Coastal change hotspots (1 km)
@@ -132,20 +131,19 @@ Figure 3: Coastal change hotspots from DEA Coastlines visualised on the [interac
 
 ## Processing steps
 
-1. Load stack of all available Landsat 5, 7, 8 and 9 satellite imagery for a location 
-1. Convert satellite observations to a remote sensing water index (MNDWI) 
-1. For each satellite image, model ocean tides into a 5 x 5 km grid based on exact time of image acquisition 
-1. Interpolate tide heights into spatial extent of image stack 
-1. Mask out high and low tide pixels by removing all observations acquired outside of 50 percent of the observed tidal range centered over mean sea level 
-1. Combine tidally-masked data into annual median composites from 1988 to the present representing the coastline at approximately mean sea level 
-1. Apply morphological extraction algorithms to mask annual median composite rasters to a valid coastal region
-1. Extract waterline vectors using subpixel waterline extraction 
-1. Compute rates of coastal change at every 30 m along Australia's non-rocky coastlines using linear regression
+1. Load stack of all available Landsat 5, 7, 8 and 9 satellite imagery for a location using Digital Earth Australia's Open Data Cube instance and virtual products.
+2. Convert satellite observations to a remote sensing water index (MNDWI; Xu, 2006) 
+3. For each satellite image, model ocean tides into a 5 x 5 km grid based on exact time of image acquisition using the `pixel_tides` function from [`dea_tools`](https://github.com/GeoscienceAustralia/dea-notebooks/blob/develop/Tools/dea_tools/coastal.py)
+4. Interpolate tide heights into spatial extent of image stack. 
+5. Mask out high and low tide pixels by removing all observations acquired outside of 50 percent of the observed tidal range centered over mean sea level. 
+6. Combine tidally-masked data into annual median composites from 1988 to the present representing the coastline at approximately mean sea level. 
+7. Apply morphological extraction algorithms to mask annual median composite rasters to a valid coastal region.
+8. Extract waterline vectors using subpixel waterline extraction (Bishop et al., 2019). 
+9. Compute rates of coastal change at every 30 m along Australia's non-rocky coastlines (extracted using the [Geoscience Australia Smartline product](http://pid.geoscience.gov.au/dataset/ga/104160)), and compute linear regression rates of change and derived statistics.
 
 ## Software
 
 The following software was used to generate this product: 
-
 * [DEA Coastlines Github code](https://github.com/GeoscienceAustralia/dea-coastlines)
 * [OpenDataCube](https://github.com/opendatacube)
 * [FES2014 global tide model](https://www.aviso.altimetry.fr/en/data/products/auxiliary-products/global-tide-fes/description-fes2014.html)
@@ -184,3 +182,4 @@ TASMARC, 2021. TASMARC (The Tasmanian Shoreline Monitoring and Archiving Project
 
 Turner, I. L., Harley, M. D., Short, A. D., Simmons, J. A., Bracs, M. A., Phillips, M. S., & Splinter, K. D. (2016). A multi-decade dataset of monthly beach profile surveys and inshore wave forcing at Narrabeen, Australia. *Scientific data*, *3*(1), 1-13. Available: [http://narrabeen.wrl.unsw.edu.au/](http://narrabeen.wrl.unsw.edu.au/)
 
+Xu, H. (2006). Modification of normalised difference water index (NDWI) to enhance open water features in remotely sensed imagery. International journal of remote sensing, 27(14), 3025-3033.
