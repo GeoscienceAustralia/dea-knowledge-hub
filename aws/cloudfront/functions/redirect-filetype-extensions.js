@@ -2,15 +2,15 @@
 
 async function handler(event) {
     const uri = event.request.uri;
-    const filetypeExtensionPattern = /.(html|rst|md|ipynb)$/g;
+    const filetypeExtensionsPattern = /.(html|rst|md|ipynb|py)$/g;
 
-    if (uri.match(filetypeExtensionPattern)) {
+    if (uri.match(filetypeExtensionsPattern)) {
         return {
             statusCode: 301,
             statusDescription: "Moved Permanently",
             headers: {
                 location: {
-                    value: uri.replace(filetypeExtensionPattern, "/")
+                    value: uri.replace(filetypeExtensionsPattern, "/")
                 }
             }
         };
