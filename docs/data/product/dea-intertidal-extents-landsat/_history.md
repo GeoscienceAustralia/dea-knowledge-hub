@@ -12,7 +12,7 @@ Examples of regions in ITEM v2.0 where these significant improvements have been 
 * **Broad Sound, QLD.** Improved tidal modelling has resulted in a smoother intertidal extent map, and a greatly improved confidence layer value for the region.
 * Improvements in the coverage of the DEA archive has allowed many regions unresolved in ITEM v1.0 and showing as 'no data' to be modelled successfully in ITEM 2.0. For example, **Mornington Island, QLD, Eastern sections of Fraser Island, QLD** and pensinsulas in **Bowling Green Bay National Park near Townsville, QLD.**
 
-:::{figure} /_files/cmi/item_1.png
+:::{figure} /_files/cmi/item_1.*
 :alt: ITEM v2 polygon extents
 
 Figure 1: Polygon extents for ITEM v2.

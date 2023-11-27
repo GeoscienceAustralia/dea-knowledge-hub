@@ -46,7 +46,7 @@ The `ITEMv2_tidalmodel.shp` identifies the location and extents of the 306 polyg
 | **LMT** | Lowest Modelled Tide - The lowest modelled tidal height based on the OTPS model for the full period of the archive. Relative to Mean Sea Level (MSL) (m).          |
 | **HMT** | Highest Modelled Tide - The highest modelled tidal height based on the OTPS model for the full period of the archive. Relative to Mean Sea Level (MSL) (m).        |
 
-:::{figure} /_files/cmi/item_1.png
+:::{figure} /_files/cmi/item_1.*
 :alt: ITEM v2 polygon extents
 
 Figure 1: Polygon extents for ITEM v2.
