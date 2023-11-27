@@ -3,6 +3,9 @@ entries:
   - file: guides/index
     title: User Guides
     subtrees:
+      - file: guides/index
+        title: Introduction
+
       - caption: Overview
         entries:
           - file: guides/about/intro
