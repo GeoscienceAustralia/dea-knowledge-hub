@@ -41,11 +41,11 @@ maps: null
 
 explorers: null
 
-data: null
-
-code_examples:
+data:
   - link: https://app-public.specchio.sandbox.dea.ga.gov.au/
     name: User guide
+
+code_examples: null
 
 web_services: null
 

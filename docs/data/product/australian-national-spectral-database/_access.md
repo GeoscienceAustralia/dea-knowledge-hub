@@ -30,9 +30,11 @@ Access to and use of the GA National Spectral Database is subject to the followi
 We may terminate or suspend access to our Service immediately, without prior notice or liability, for any reason whatsoever, including without limitation if you breach the Terms. 
 
 **Data Ownership** 
+
 Data are hosted on behalf of original data providers. GA does not own original data provided by external parties, only data provided under the banner of GA such as ARD field validation data. For information on datasets provided by external parties please contact the data owner using the contact email address provided in metadata. 
 
 **CC BY 4.0 License** 
+
 Geoscience Australia data is licensed and shared under the Creative Commons Attribution 4.0 International license. 
 
 http://creativecommons.org/licenses/by/4.0/legalcode https://creativecommons.org/licenses/by/4.0/
@@ -42,6 +44,7 @@ http://creativecommons.org/licenses/by/4.0/legalcode https://creativecommons.org
 A digital object identifier (DOI) can be created for new datasets upon request for previously unpublished data. Data hosted on the NSD is shared under the CCBY 4.0 License and may be downloaded by users without notice. Users are notified of the data usage policy, but GA cannot guarantee that your work or data will be properly cited. Please contact the database manager for further information and guidance to create a new DOI. 
 
 **GA contact details** 
+
 For read/write access including uploading data and metadata, or for any other queries, please contact the database manager: 
 
 NSDB_manager@ga.gov.au 
