@@ -7,7 +7,7 @@ version: 3.3.0
 is_latest_version: true
 latest_version_link: null
 product_type: Data service
-spatial_data_type: Raster
+spatial_data_type: null
 time_span:
   start: null
   end: null
@@ -44,7 +44,9 @@ explorers: null
 
 data: null
 
-code_examples: null
+code_examples:
+  - link: https://app-public.specchio.sandbox.dea.ga.gov.au/
+    name: User guide
 
 web_services: null
 
