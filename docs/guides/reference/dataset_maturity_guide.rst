@@ -33,8 +33,8 @@ from observed data. These ancillary datasets are slower to produce but are obser
 datasets of the conditions at the time of image capture and so provide our most accurate dataset 
 corrections. DEA uses the following dynamic ancillary datasets to produce its **Final** ARD:
 
-  * Bidirectional reflectance distribution function (BRDF) data from the United States Geological Survey 
-  * Water Vapour from USA National Oceanographic and Atmospheric Administration
+* Bidirectional reflectance distribution function (BRDF) data from the United States Geological Survey 
+* Water Vapour from USA National Oceanographic and Atmospheric Administration
 
 Interim
 -------
@@ -96,14 +96,16 @@ How do I load only Near Real Time/Interim/Final data using the datacube?
 
 DEA data can be filtered to specific dataset maturity levels using `dataset_maturity` 
 metadata field. Valid options are “final”, “nrt” or “interim”; for example, 
-to load only “final” maturity Landsat 8 data::
+to load only “final” maturity Landsat 8 data
 
-  import datacube  
-  dc = datacube.Datacube()  
+.. code-block:: python
 
-  dc.load(product="ga_ls8c_ard_3", 
-          measurements=['nbart_red'], 
-          x=(150, 150.1), 
-          y=(-30, -30.1), 
-          time=('2022-01', '2022-02'), 
-          dataset_maturity="final") 
+  import datacube
+  dc = datacube.Datacube()
+
+  dc.load(product="ga_ls8c_ard_3",
+          measurements=['nbart_red'],
+          x=(150, 150.1),
+          y=(-30, -30.1),
+          time=('2022-01', '2022-02'),
+          dataset_maturity="final")

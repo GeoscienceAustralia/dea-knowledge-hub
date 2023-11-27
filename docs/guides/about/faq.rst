@@ -20,15 +20,19 @@ Use DEA's STAC metadata to find the data you are interested in using the `Downlo
 
 **3) You want to download specific files from DEA's Amazon S3 buckets**
 
-Download data directly from our `Amazon S3 buckets`_ using the AWS Command Line Interface (AWS CLI). For this you will need to know the path of the file you want to download on DEA's S3 buckets. For example, to download a single file::
+Download data directly from our `Amazon S3 buckets`_ using the AWS Command Line Interface (AWS CLI). For this you will need to know the path of the file you want to download on DEA's S3 buckets. For example, to download a single file
 
-    aws s3 cp s3://dea-public-data/derivative/ga_ls_wo_fq_cyear_3/1-6-0/x11/y21/1992--P1Y/ga_ls_wo_fq_cyear_3_x11y21_1992--P1Y_final_frequency.tif . --no-sign-request
+.. code-block:: bash
+
+   aws s3 cp s3://dea-public-data/derivative/ga_ls_wo_fq_cyear_3/1-6-0/x11/y21/1992--P1Y/ga_ls_wo_fq_cyear_3_x11y21_1992--P1Y_final_frequency.tif . --no-sign-request
 
 .. _Amazon S3 buckets:  ../setup/AWS/data_and_metadata.rst
 
-To download multiple files, for example each annual DEA Water Observations frequency layer for the tile ``x11/y21``::
+To download multiple files, for example each annual DEA Water Observations frequency layer for the tile ``x11/y21``
 
-    aws s3 cp s3://dea-public-data/derivative/ga_ls_wo_fq_cyear_3/1-6-0/x11/y21/ . --recursive --exclude "*" --include "*P1Y_final_frequency.tif" --no-sign-request
+.. code-block:: bash
+
+   aws s3 cp s3://dea-public-data/derivative/ga_ls_wo_fq_cyear_3/1-6-0/x11/y21/ . --recursive --exclude "*" --include "*P1Y_final_frequency.tif" --no-sign-request
 
 
 Why does Collection 3 ARD have a higher latency than Collection 2 ARD?

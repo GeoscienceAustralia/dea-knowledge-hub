@@ -1,5 +1,13 @@
 # Analysis Ready Data: Open Data Cube
 
+This article demonstrates how to query Open Data Cube.
+
+:::{contents} On this page
+:depth: 1
+:local:
+:backlinks: none
+:::
+
 ## Example 1 &ndash; Analysis Ready Data product
 
 The following Python code is an example Open Data Cube query to return the following properties:
