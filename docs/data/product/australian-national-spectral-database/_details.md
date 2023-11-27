@@ -47,10 +47,10 @@ Specchio is an open source application. The code base is available at the [Specc
 
 ## Contribute your data to the NSD
 
-If you have spectral data collected in Australia, and have relevant metadata and collection information you can contribute this data to be hosted on the NSD. Please familiarise yourself with the [Metadata Standard](/_files/cmi/NSD_Metadata_Standard.pdf), and follow the steps below to contribute:
+If you have spectral data collected in Australia, and have relevant metadata and collection information you can contribute this data to be hosted on the NSD. Please familiarise yourself with the [Metadata Standard](/_static/cmi/NSD_Metadata_Standard.pdf), and follow the steps below to contribute:
 
 1) Ensure you adhere to the Metadata Standard and that your dataset meets minimum requirements. Meeting the metadata standard can be as simple as providing GPS information for spatial data, or species images, description or the scientific name for end-member spectra. Spectra submitted without metadata are unsuitable and won't be accepted.
-2) Contact the NSD manager: [NSDB\_Manager@ga.gov.au](mailto:NSDB_Manager@ga.gov.au). In your email include the size of the dataset you wish to ingest and confirm that you meet the [Metadata Standard](/_files/cmi/NSD_Metadata_Standard.pdf), and have read the [Technical usage guide](/_files/cmi/NSD_General_Guide.pdf) & [Write access guide](/_files/cmi/NSD_Write_Access_Guide.pdf).
+2) Contact the NSD manager: [NSDB\_Manager@ga.gov.au](mailto:NSDB_Manager@ga.gov.au). In your email include the size of the dataset you wish to ingest and confirm that you meet the [Metadata Standard](/_static/cmi/NSD_Metadata_Standard.pdf), and have read the [Technical usage guide](/_static/cmi/NSD_General_Guide.pdf) & [Write access guide](/_static/cmi/NSD_Write_Access_Guide.pdf).
 
 The guides will help you to understand the process of uploading your data and ingest data most efficiently. If you have further queries please enquire via email.
 
