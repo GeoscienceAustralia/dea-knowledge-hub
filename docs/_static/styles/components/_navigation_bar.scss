@@ -20,6 +20,10 @@ nav.navbar {
         border: none;
     }
 
+    .navbar-header-items {
+        padding-right: 8px;
+    }
+
     .navbar-header-items__start {
         @media only screen and (min-width: $breakpoint-lg) {
             display: none;

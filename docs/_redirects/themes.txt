@@ -1,0 +1,11 @@
+# Data product theme redirects
+
+theme/baseline-satellite-data  data/theme/baseline-satellite-data
+theme/land-and-vegetation      data/theme/land-and-vegetation
+theme/inland-water             data/theme/inland-water
+theme/sea-ocean-and-coast      data/theme/sea-ocean-and-coast
+theme/hazards                  data/theme/hazards
+
+theme/land-and-coastline       data/theme/land-and-vegetation
+theme/sea-ocean-and-coastline  data/theme/sea-ocean-and-coast
+theme/inland-waterbodies       data/theme/inland-water

@@ -1,4 +1,7 @@
 root: index
+defaults:
+  titlesonly: True
+
 entries:
   - file: guides/index
     title: User Guides
@@ -23,7 +26,7 @@ entries:
               - file: guides/setup/gis/web_services
               - file: guides/setup/gis/stac
           - file: guides/setup/jupyter
-          - file: guides/setup/ard-open-data-cube
+          - file: guides/setup/analysis-ready-data-example-queries
 
       - caption: Reference
         entries:

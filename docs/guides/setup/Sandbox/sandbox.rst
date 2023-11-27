@@ -170,9 +170,9 @@ Your personal information provided at sign up is collected under the Privacy Act
 
 The information we collect may, for example, be used to:
 
-    - Send you information relating to the service (via email) which may include but is not limited to notification of any major changes to the DEA Sandbox or your account.
-    - Evaluate how the service is being used.
-    - Improve the service offerings.
+* Send you information relating to the service (via email) which may include but is not limited to notification of any major changes to the DEA Sandbox or your account.
+* Evaluate how the service is being used.
+* Improve the service offerings.
 
 For more information please see `Geoscience Australia's privacy policy`_.
 

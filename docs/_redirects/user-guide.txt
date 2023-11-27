@@ -19,8 +19,20 @@ setup/NCI/basics                                        guides/setup/NCI/basics
 setup/NCI/README                                        guides/setup/NCI/README
 setup/README                                            guides/setup/README
 setup/Sandbox/sandbox                                   guides/setup/Sandbox/sandbox
-references-articles/analysis-ready-data-open-data-cube  guides/setup/ard-open-data-cube
+references-articles/analysis-ready-data-open-data-cube  guides/setup/analysis-ready-data-example-queries
 
-reference/collection_3_naming        guides/reference/collection_3_naming
-reference/collection_3_summary_grid  guides/reference/collection_3_summary_grid
-reference/dataset_maturity_guide     guides/reference/dataset_maturity_guide
+resources/glossary                                       guides/about/glossary
+reference/collection_3_naming                            guides/reference/collection_3_naming
+resources/naming-convention                              guides/reference/collection_3_naming
+reference-articles/data-product-naming-convention        guides/reference/collection_3_naming
+resources/data-product-naming-convention                 guides/reference/collection_3_naming
+references-articles/open-data-cube-naming-conventions    guides/reference/collection_3_naming
+reference/collection_3_summary_grid                      guides/reference/collection_3_summary_grid
+reference/dataset_maturity_guide                         guides/reference/dataset_maturity_guide
+references-articles/analysis-ready-data-example-queries  guides/setup/analysis-ready-data-example-queries
+resources/analysis-ready-data-example-queries            guides/setup/analysis-ready-data-example-queries
+references-articles/open-data-cube-example               guides/setup/analysis-ready-data-example-queries
+references-articles/open-data-cube-example-queries       guides/setup/analysis-ready-data-example-queries
+# resources/how-to-access-data-on-the-CMI                  guides/setup/how-to-access-data-on-the-CMI
+# references-articles/understanding-the-data-product-page  guides/setup/how-to-access-data-on-the-CMI
+# reference-articles/understanding-the-data-product-page   guides/setup/how-to-access-data-on-the-CMI

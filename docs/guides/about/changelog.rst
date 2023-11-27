@@ -71,22 +71,21 @@ See :ref:`data_access` for more details.
 2018-02-28
 ==========
 
+* Rename module to `dea`. Most people should now run
 
- * Rename module to `dea`. Most people should now run::
+  .. code-block:: bash
 
-    module use /g/data/v10/public/modules
-    module load dea
+     module use /g/data/v10/public/modules
+     module load dea
 
- * Include JupyterLab_ as an alternative to Jupyter Notebooks. To use, from a shell run::
+* Include JupyterLab_ as an alternative to Jupyter Notebooks. To use, from a shell run
 
-      jupyter-lab
+  .. code-block:: bash
 
- * Include pre-release version 1.6 of Open Data Cube
+     jupyter-lab
 
- * Drop support for Python 2
+* Include pre-release version 1.6 of Open Data Cube
 
-
-
-
+* Drop support for Python 2
 
 .. _JupyterLab: https://blog.jupyter.org/jupyterlab-is-ready-for-users-5a6f039b8906
