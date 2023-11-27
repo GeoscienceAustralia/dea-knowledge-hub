@@ -10,7 +10,7 @@ The 30 metre resolution of Landsat imposes an intrinsic limitation on the Wetlan
 
 The period of time between when Landsat 5 ceased operations (November 2011) and Landsat 8 data became routinely available (May 2013) is likely to be inaccurate.  There will be some wetlands, close to the centre of Landsat paths where Landsat 7 continued to capture suitable (gap free) data, however it is safer, as a general rule, to consider this period as 'low data quality'. Other periods where less than four observations occur in a calendar year are also considered 'low data quality'. Regions of low data quality are hashed with a pale rectangular overlay in the Wetlands Insight Tool plots. 
 
-![Wetlands Insight Tool plot for Narran Lakes Nature Reserve, New South Wales, showing variations in open water, wet, green vegetation, dry vegetation and bare soil from 1987 to 2021](/sites/default/files/inline-images/Fig6_small968px_1.png)
+![Wetlands Insight Tool plot for Narran Lakes Nature Reserve, New South Wales, showing variations in open water, wet, green vegetation, dry vegetation and bare soil from 1987 to 2021](/_files/cmi/NarranLakesNatureReserveNSWWIT.png)
 
 ## Quality assurance
 
