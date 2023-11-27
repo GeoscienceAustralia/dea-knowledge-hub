@@ -15,66 +15,27 @@ Additionally, the NSD features the Aquatic Substrate Library, a dataset covering
 % ## Data description
 
 ## Applications
-
 * Comparison of reflectance measurements from satellite observations e.g. by Landsat 8 and Sentinel 2, to near-coincident ground reference measurements, to verify fitness for purpose of satellite derived data products.
 * Development and testing of models describing the relationships between directional spectral reflectance of target surfaces and their biophysical attributes.
 * Spectral feature matching for mineralogy applications.
 * Application of spectral data to plant physiology studies, geological sciences, soil sciences, limnology, oceanography and atmospheric chemistry, and other research.
 
-## Technical information
-
-Requirements: Java Runtime Environment (JRE) 8.0 or higher. See [Specchio Release Notes](https://github.com/SPECCHIODB/Guides/raw/master/SPECCHIO_ReleaseNotes.pdf) on supported JRE's. 
-
-Documentation for the Specchio client: [Specchio website](https://specchio.ch/).
-
-Technical information on use of the Specchio application, such as connecting to the NSD and downloading data: [Technical usage guide](/_files/cmi/NSD_General_Guide.pdf).
-
-Information for uploading data (write-access users only): [Write access guide](/_files/cmi/NSD_Write_Access_Guide.pdf).
-
-### Navigating the client
-
-The NSD contains datasets or campaigns of data that can be viewed in two ways.
-
-1) View the NSD folder structure via the data browser:
-
-![data_browser](/_files/cmi/data_browser.jpg)
-
-![data_browser_2](/_files/cmi/data_browser2.jpg)
-
-Expand folders to the desired level, then view (show report), plot spectra, and export data. You may also manually subset data from folders by selecting multiple individual files, shown above. The report applies to the selected spectra: either at the folder or individual file level. 
-
-2) Query the NSD for specific metadata parameters:
-
-![query_builder](/_files/cmi/query_1.jpg)
-
-Select the metadata category you wish to filter by on the left-hand side. For example, to retrieve all entries for NSW, select the Location category on the left, then add "NSW" to the "State/Territory" field and hit Run Query on the right:
-
-![query_2](/_files/cmi/query_2.jpg)
-
-As in the Data Browser, spectra found from the Query Builder can be viewed and exported in the same way.
-
-For a full guide on the use of the Specchio application, please see the [Specchio website](https://specchio.ch/).
-
 ## Lineage
 
-Datasets
+### Datasets
+* Geoscience Australia field data campaigns: From the ARD Cal/Val team, DEA, GA  
+* Aquatic Substrate Library: Compiled by Dr Arnold Dekker (SatDek)  
+* University of Wollongong Spectral Datasets: Provided by Dr Laurie Chisolm (UoW)
 
-\- Geoscience Australia field data campaigns: From the ARD Cal/Val team, DEA, GA  
-\- Aquatic Substrate Library: Compiled by Dr Arnold Dekker (SatDek)  
-\- University of Wollongong Spectral Datasets: Provided by Dr Laurie Chisolm (UoW)
+### Data types
+* Spectral data: raw digital numbers (DN), radiance and reflectance.   
+* From spectral range VIS-NIR, SWIR1 & SWIR2, wavelengths from 350nm - 2500nm collected with instruments in the field or lab setting.
 
-Data types
+### Data Collection
+* NSD spectral data has been collected by remote sensing scientists in Australia, both in field and lab environments
 
-\- Spectral data: raw digital numbers (DN), radiance and reflectance.   
-\- From spectral range VIS-NIR, SWIR1 & SWIR2, wavelengths from 350nm - 2500nm collected with instruments in the field or lab setting.
-
-Data Collection
-
-\- NSD spectral data has been collected by remote sensing scientists in Australia, both in field and lab environments
-
-Processing
-
-\- Where applicable, post-processing is indicated in the relevant metadata field
+### Processing
+* Where applicable, post-processing is indicated in the relevant metadata field
 
 % ## Processing steps
 
@@ -83,6 +44,25 @@ Processing
 Direct download links: [Specchio client zip file](https://github.com/EricHay/NSD_Guides/raw/main/specchio-client.zip) or [.jar installer package](https://github.com/EricHay/NSD_Guides/raw/main/specchio-installer.jar). For further download options see the Specchio website [Downloads page](https://specchio.ch/downloads/).
 
 Specchio is an open source application. The code base is available at the [Specchio GitHub repository](https://github.com/SPECCHIODB/SPECCHIO).
+
+## Contribute your data to the NSD
+
+If you have spectral data collected in Australia, and have relevant metadata and collection information you can contribute this data to be hosted on the NSD. Please familiarise yourself with the [Metadata Standard](/_files/cmi/NSD_Metadata_Standard.pdf), and follow the steps below to contribute:
+
+1) Ensure you adhere to the Metadata Standard and that your dataset meets minimum requirements. Meeting the metadata standard can be as simple as providing GPS information for spatial data, or species images, description or the scientific name for end-member spectra. Spectra submitted without metadata are unsuitable and won't be accepted.
+2) Contact the NSD manager: [NSDB\_Manager@ga.gov.au](mailto:NSDB_Manager@ga.gov.au). In your email include the size of the dataset you wish to ingest and confirm that you meet the [Metadata Standard](/_files/cmi/NSD_Metadata_Standard.pdf), and have read the [Technical usage guide](/_files/cmi/NSD_General_Guide.pdf) & [Write access guide](/_files/cmi/NSD_Write_Access_Guide.pdf).
+
+The guides will help you to understand the process of uploading your data and ingest data most efficiently. If you have further queries please enquire via email.
+
+The public server will allow you to view & download data, not upload it. The NSD manager will provide instruction on how to access the upload server.
+
+### Digital Object Identifier (DOI) Minting
+
+DOI minting is offered for new datasets that meet the metadata standard, and are new or existing datasets not previously published elsewhere. Your dataset will get a unique DOI that the database manager will append to your dataset metadata within the NSD. The DOI will be stored separately as a Geoscience Australia metadata record. The DOI record can also provide links to further publications from your dataset, and can easily be updated if needed, or further publications stem from your work. The aim of the DOI is to credit those involved in collecting the dataset, and to provide links to further science stemming from the work.
+
+For a DOI to be minted, sufficient metadata is required for the dataset including names of team members involved, location and timestamps of the study (GPS and UTC time associated with measurements), and links to any associated publications such as journal articles. These should be included as metadata for your dataset when ingesting new data. 
+
+Please contat the NSD manager if you would like to contribute or update data: [NSDB\_Manager@ga.gov.au](mailto:NSDB_Manager@ga.gov.au)
 
 ## References
 
