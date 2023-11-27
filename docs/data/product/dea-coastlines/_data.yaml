@@ -14,7 +14,7 @@ update_frequency: Annually
 product_ids: null
 
 parent_products:
-  name: Landsat 5, 7, 8 and 9 NBAR and Observational Attributes
+  name: Landsat 5, 7, 8 and 9 NBART and Observational Attributes
   link: /data/category/dea-surface-reflectance/
 collection:
   name: Geoscience Australia Landsat Collection 3

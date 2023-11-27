@@ -16,7 +16,7 @@ product_ids:
   - low_tide_comp_20p
 
 parent_products:
-  name: Landsat 5, 7 and 8 NBAR and Observational Attributes
+  name: Landsat 5, 7 and 8 NBAR and Observational Attributes (Collection 2)
   link: /data/category/dea-surface-reflectance/
 collection:
   name: Geoscience Australia Landsat Collection 2 (DEPRECATED)
@@ -48,7 +48,7 @@ data:
     name: Access the data on NCI
 
 code_examples:
-  - link: https://docs.dea.ga.gov.au/notebooks/DEA_products/DEA_High_and_Low_Tide_Imagery.html
+  - link: /notebooks/dea_products/DEA_High_and_Low_Tide_Imagery.html
     name: Code examples
 
 web_services: null

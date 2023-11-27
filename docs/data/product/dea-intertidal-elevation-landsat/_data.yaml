@@ -8,15 +8,14 @@ is_latest_version: true
 product_type: Derivative
 spatial_data_type: Raster
 time_span:
-  start: null
-  end: null
+  start: 1986
+  end: 2016
 update_frequency: As needed
-product_ids:
-  - nidem
+product_ids: null
 
 parent_products:
-  name: null
-  link: null
+  name: DEA Intertidal Extents (ITEM)
+  link: /data/product/dea-intertidal-extents-landsat/
 collection:
   name: Geoscience Australia Landsat Collection 2 (DEPRECATED)
   link: null
@@ -38,21 +37,23 @@ tags:
 
 maps:
   - link: http://maps.dea.ga.gov.au/#share=s-SgkrzFPegdMGCH6V6zkgEWLJTn
-    name: null
+    name: See it on a map
 
-explorers: null
+explorers:
+  - link: https://explorer.dea.ga.gov.au/products/nidem
+    name: Data explorer
 
 data:
   - link: http://pid.geoscience.gov.au/dataset/ga/123678
-    name: 'Continental GeoTIFF mosaics (click "NIDEM mosaics" on top-right) '
+    name: Download the "NIDEM mosaic"
   - link: http://dapds00.nci.org.au/thredds/catalogs/fk4/nidem_1_0.html
-    name: THREDDS data access
+    name: Access the Data on NCI
 
 code_examples: null
 
 web_services:
   - link: https://ows.services.dea.ga.gov.au
-    name: "WMS services (layer name: NIDEM)"
+    name: Web Services
 
 # Settings
 
