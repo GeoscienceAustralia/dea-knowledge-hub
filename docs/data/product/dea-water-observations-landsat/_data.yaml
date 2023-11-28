@@ -63,6 +63,8 @@ old_versions:
     slug: dea-water-observations-landsat-2.1.5
     release_date: null
 
+custom: null
+
 # Settings
 
 enable_overview: true

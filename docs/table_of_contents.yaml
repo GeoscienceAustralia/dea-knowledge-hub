@@ -164,7 +164,7 @@ entries:
 
           - file: data/product/dea-hotspots/index
 
-  - file: notebooks/README
+  - file: notebooks/README # The notebooks repository manages its own table of contents.
     title: DEA Notebooks
 
   - file: data/old-version/index
