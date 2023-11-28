@@ -195,10 +195,10 @@
           * - **Last updated**
             - {{ data.published }}
           {%- endif %}
-          {%- if valid_tags %}
-          * - **Tags**
-            - {{ valid_tags | join(", ") }}
-          {%- endif %}
+          .. {%- if valid_tags %}
+          .. * - **Tags**
+          ..   - {{ valid_tags | join(", ") }}
+          .. {%- endif %}
 
        .. include:: _overview_2.md
           :parser: myst_parser.sphinx_
