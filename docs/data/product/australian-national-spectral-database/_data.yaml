@@ -44,14 +44,18 @@ explorers: null
 
 data: null
 
-code_examples:
-  - link: https://app-public.specchio.sandbox.dea.ga.gov.au/
-    name: User guide
+code_examples: null
 
 web_services: null
 
 custom:
   - icon: database
+    link: https://app-public.specchio.sandbox.dea.ga.gov.au/
+    label: Get the data online
+    name: User guide
+    description: Learn how to `do something <https://www.google.com/>`_
+    class: yellow
+  - icon: ghost
     link: https://app-public.specchio.sandbox.dea.ga.gov.au/
     label: Get the data online
     name: User guide

@@ -5,7 +5,7 @@
 {% set valid_explorers = data.explorers | selectattr("link",  "!=", None) | list %}
 {% set valid_web_services = data.web_services | selectattr("link",  "!=", None) | list %}
 {% set valid_code_samples = data.code_examples | selectattr("link",  "!=", None) | list %}
-{% set valid_custom = data.custom | selectattr("icon",  "!=", None) | selectattr("link",  "!=", None) | list %}
+{% set valid_custom = data.custom | selectattr("icon",  "!=", None) | selectattr("link",  "!=", None) | selectattr("name",  "!=", None) | list %}
 {% set valid_files = data.files | selectattr("link",  "!=", None) | list %}
 {% set valid_old_versions = data.old_versions | selectattr("slug",  "!=", None) | selectattr("version",  "!=", None) | selectattr("name",  "!=", None) | list %}
 {% set valid_product_types = [data.product_type, data.spatial_data_type] | select("!=", None) | list %}
@@ -158,8 +158,8 @@
              {% for item in valid_custom %}
              .. grid-item-card:: :fas:`{{ item.icon }}`
                 :link: {{ item.link }}
-                :link-alt: {{ item.label or code_sample_label }}
-                :class: {{ item.class }}
+                :link-alt: {{ item.label or "" }}
+                :class-card: {{ item.class }}
 
                 {{ item.name }}
              {% endfor %}
@@ -196,10 +196,6 @@
           * - **Last updated**
             - {{ data.published }}
           {%- endif %}
-          .. {%- if valid_tags %}
-          .. * - **Tags**
-          ..   - {{ valid_tags | join(", ") }}
-          .. {%- endif %}
 
        .. include:: _overview_2.md
           :parser: myst_parser.sphinx_
@@ -264,9 +260,9 @@
           {% endif %}
 
           {% for item in valid_custom %}
-          * - {{ item.label or "" }}
+          * - **{{ item.label or "" }}**
             - * `{{ item.name }} <{{ item.link }}>`_
-            - {{ item.description }}
+            - {{ item.description or "" }}
           {% endfor %}
        {% else %}
        There are no data source links available at the present time.
