@@ -50,6 +50,18 @@ code_examples:
 
 web_services: null
 
+custom:
+  - icon: ghost
+    link: https://www.dea.ga.gov.au/
+    name: Custom name
+    label: Custom label
+    help: Learn more below.
+  - icon: mug-hot
+    link: https://www.ga.gov.au/
+    name: Custom name 2
+    label: Custom label 2
+    help: Learn more below 2.
+
 # Settings
 
 enable_overview: true

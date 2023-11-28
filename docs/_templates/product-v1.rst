@@ -5,6 +5,7 @@
 {% set valid_explorers = data.explorers | selectattr("link",  "!=", None) | list %}
 {% set valid_web_services = data.web_services | selectattr("link",  "!=", None) | list %}
 {% set valid_code_samples = data.code_examples | selectattr("link",  "!=", None) | list %}
+{% set valid_custom = data.custom | selectattr("link",  "!=", None) | selectattr("label",  "!=", None) | selectattr("name",  "!=", None) | list %}
 {% set valid_files = data.files | selectattr("link",  "!=", None) | list %}
 {% set valid_old_versions = data.old_versions | selectattr("slug",  "!=", None) | selectattr("version",  "!=", None) | selectattr("name",  "!=", None) | list %}
 {% set valid_product_types = [data.product_type, data.spatial_data_type] | select("!=", None) | list %}
@@ -23,7 +24,7 @@
 {% set web_service_default_name = "Web service" %}
 {% set code_sample_default_name = "Code sample" %}
 
-{% set has_access_data = valid_maps or valid_data or valid_explorers or valid_web_services or valid_code_samples %}
+{% set has_access_data = valid_maps or valid_data or valid_explorers or valid_web_services or valid_code_samples or valid_custom %}
 
 {% set pretty_version = "v" + data.version %}
 {% set page_title = data.title if is_latest_version else data.version + ": " + data.title %}
@@ -153,6 +154,14 @@
 
                 {{ item.name or web_service_default_name }}
              {% endfor %}
+
+             {% for item in valid_custom %}
+             .. grid-item-card:: :fas:`{{ item.icon }}`
+                :link: {{ item.link }}
+                :link-alt: {{ item.label }}
+
+                {{ item.name }}
+             {% endfor %}
        {%- endif %}
 
        .. rubric:: Key details
@@ -252,6 +261,12 @@
               {% endfor %}
             - Learn how to `connect to DEA's web services </guides/setup/gis/README>`_.
           {% endif %}
+
+          {% for item in valid_custom %}
+          * - **{{ item.label }}**
+            - * `{{ item.name }} <{{ item.link }}>`_
+            - {{ item.help }}
+          {% endfor %}
        {% else %}
        There are no data source links available at the present time.
        {% endif %}
@@ -328,7 +343,7 @@
        .. list-table::
 
           {% for item in valid_old_versions %}
-          * - `v{{ item.version }}: {{ item.title }} </data/old-versions/{{ item.slug }}>`_
+          * - `v{{ item.version }}: {{ item.title }} </data/old-version/{{ item.slug }}>`_
             - {{ item.release_date or "" }}
           {% endfor %}
        {% else %}

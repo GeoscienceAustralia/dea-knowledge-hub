@@ -2,7 +2,9 @@ article.bd-article {
     .nbinput {}
 
     .nboutput {
-        margin-left: 0;
-        margin-right: 0;
+        table {
+            margin-left: 0;
+            margin-right: 0;
+        }
     }
 }
