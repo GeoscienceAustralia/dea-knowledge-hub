@@ -13,7 +13,6 @@ The Wetlands Insight Tool (QLD) summarises how the amount of water, green vegeta
 ## Applications
 
 The product is designed to support QLD wetland managers, catchment managers and environmental waterholders in understanding whether or not wetlands are changing over time.  In instances where the wetlands are changing, the tool allows users to identify whether the changes are gradual, rapid, once-off or cyclical in nature.  For example the response of wetlands to the following drivers can be assessed:
-
 * Changes in river flow volumes
 * Changes in flood frequency
 * Long term shifts in rainfall
@@ -33,22 +32,19 @@ Every pixel within a wetland polygon is evaluated using this decision tree at ev
 
 The code base used to generate the QLD Wetlands Insight Tool results is available at [https://github.com/GeoscienceAustralia/wit\_tooling](https://github.com/GeoscienceAustralia/wit_tooling)
 
-* The polygon set defined in [https://wetlandinfo.des.qld.gov.au/wetlands/](https://wetlandinfo.des.qld.gov.au/wetlands/)
-* [DEA Water Observations (Landsat)](/data-products/dea/142/dea-water-observations-landsat)
-* [DEA Fractional Cover (Landsat](/data-products/dea/119/dea-fractional-cover-landsat))
-* [DEA Surface Reflectance NBART (Landsat)](https://cmi.ga.gov.au/data-products/dea/115/dea-surface-reflectance-nbart-landsat)
-
 % ## Processing steps
 
-## Software
-
-The Fractional cover (v2) algorithm is provided courtesy of the Joint Remote Sensing Research Program. The development of the algorithm was supported by field data collection by Austrtalian State and Territory agencies, TERN and the National Ground Cover Monitoring Program, coordinated by ABARES. The code base used to generate the QLD Wetlands Insight Tool results is available at [https://github.com/GeoscienceAustralia/wit\_tooling](https://github.com/GeoscienceAustralia/wit_tooling)
+%## Software
 
 ## References
 
-* Scarth, P., Röder, A., Schmidt, M., 2010. Tracking grazing pressure and climate interaction - the role of Landsat fractional cover in time series analysis. In: Proceedings of the 15th Australasian Remote Sensing and Photogrammetry Conference (ARSPC), 13-17 September, Alice Springs, Australia. Alice Springs, NT.
-* Guerschman, J.P., **Scarth**, P.F., McVicar, T.R., Renzullo, L.J., Malthus, T.J., Stewart, J.B., Rickards, J.E., & **Trevithick**, R. (2015). Assessing the effects of site heterogeneity and soil properties when unmixing photosynthetic vegetation, non-photosynthetic vegetation and bare soil fractions from Landsat and MODIS data. *Remote Sensing of Environment,* 161, 12-26, [https://doi.org/10.1016/j.rse.2015.01.021](https://doi.org/10.1016/j.rse.2015.01.021)
-* Muir, J., Schmidt, M., Tindall, D., Trevithick, R., Scarth, P., Stewart, J., 2011. Guidelines for Field measurement of fractional ground cover: a technical handbook supporting the Australian collaborative land use and management program. Tech. rep., Queensland Department of Environment and Resource Management for the Australian Bureau of Agricultural and Resource Economics and Sciences, Canberra.
-* Mueller, N., Lewis, A.  Roberts, D., Ring, S., Melrose, R., Sixsmith, J., Lymburner, L., McIntyre, A.,  Tan, P., Curnow, S. and  Ip, A.(2016) 'Water observations from space: Mapping surface water from 25 years of Landsat imagery across Australia', Remote Sensing of Environment, 174, 341-352, [https://doi.org/10.1016/j.rse.2015.11.003](https://doi.org/10.1016/j.rse.2015.11.003)
-* Crist, E.P. (1985) 'A TM Tasseled Cap equivalent transformation for reflectance factor data', Remote Sensing of Environment, 17(3), 301-306, [https://doi.org/10.1016/0034-4257(85)90102-6](https://doi.org/10.1016/0034-4257(85)90102-6)
+Scarth, P., Röder, A., Schmidt, M., 2010. Tracking grazing pressure and climate interaction - the role of Landsat fractional cover in time series analysis. In: Proceedings of the 15th Australasian Remote Sensing and Photogrammetry Conference (ARSPC), 13-17 September, Alice Springs, Australia. Alice Springs, NT.
+
+Guerschman, J.P., Scarth, P.F., McVicar, T.R., Renzullo, L.J., Malthus, T.J., Stewart, J.B., Rickards, J.E., & **Trevithick**, R. (2015). Assessing the effects of site heterogeneity and soil properties when unmixing photosynthetic vegetation, non-photosynthetic vegetation and bare soil fractions from Landsat and MODIS data. *Remote Sensing of Environment,* 161, 12-26, [https://doi.org/10.1016/j.rse.2015.01.021](https://doi.org/10.1016/j.rse.2015.01.021)
+
+Muir, J., Schmidt, M., Tindall, D., Trevithick, R., Scarth, P., Stewart, J., 2011. Guidelines for Field measurement of fractional ground cover: a technical handbook supporting the Australian collaborative land use and management program. Tech. rep., Queensland Department of Environment and Resource Management for the Australian Bureau of Agricultural and Resource Economics and Sciences, Canberra.
+
+Mueller, N., Lewis, A.  Roberts, D., Ring, S., Melrose, R., Sixsmith, J., Lymburner, L., McIntyre, A.,  Tan, P., Curnow, S. and  Ip, A.(2016) 'Water observations from space: Mapping surface water from 25 years of Landsat imagery across Australia', Remote Sensing of Environment, 174, 341-352, [https://doi.org/10.1016/j.rse.2015.11.003](https://doi.org/10.1016/j.rse.2015.11.003)
+
+Crist, E.P. (1985) 'A TM Tasseled Cap equivalent transformation for reflectance factor data', Remote Sensing of Environment, 17(3), 301-306, [https://doi.org/10.1016/0034-4257(85)90102-6](https://doi.org/10.1016/0034-4257(85)90102-6)
 

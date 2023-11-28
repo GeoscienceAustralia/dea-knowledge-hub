@@ -2,7 +2,7 @@
 
 For a full discussion of the accuracies and limitations of DEA Waterbodies, please refer to [Krause et al. 2021](https://doi.org/10.3390/rs13081437). 
 
-#### Inaccuracies inherited from DEA Water Observations (WO)
+### Inaccuracies inherited from DEA Water Observations (WO)
 
 Many of the inaccuracies and limitations of the waterbody analysis are inherited from WO, with this product a reanalysis and mapping product built off the WO datasets. WO has a number of known limitations, and these manifest as misclassified waterbodies within this analysis. WO uses the spectral signature of water to classify wet pixels, and is known to be suboptimal in locations where water and vegetation are mixed. This includes locations such as rivers with vegetated riparian zones and vegetated wetlands. The effect of this can be seen by the discontinuity of narrower river features identified within this analysis, and an under representation of water within vegetated wetlands, such as the Macquarie Marshes, NSW.
 

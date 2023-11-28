@@ -2,17 +2,15 @@
 
 % ## Use constraints
 
-:::{dropdown} How to access the data
-#### DEA Maps
+:::{dropdown} How to view the data in a web map
 
 To view and access the data interactively:
+1) Visit [DEA Maps](https://maps.dea.ga.gov.au).
 
-1) Visit [DEA Maps](https://maps.dea.ga.gov.au/).
+2) Click `Explore map data`.
 
-2) Click 'Explore map data'.
+3) Select `Inland water` > `DEA Water Observations` > `DEA Water Observations (Landsat)`. 
 
-3) Select 'Inland water' > 'DEA Water Observations'.
-
-4) Select which products you would like to display (Calendar Year, Multi Year, Seasonal) and click 'Add to the map'.
+4) Click `Add to the map`, or the `+` symbol to add the data to the map.
 :::
 

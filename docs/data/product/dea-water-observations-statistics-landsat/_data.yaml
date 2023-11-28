@@ -2,26 +2,25 @@
 
 title: DEA Water Observations Statistics (Landsat)
 long_title: Geoscience Australia Landsat Water Observation Statistics Collection 3
-header_image: null
+header_image: /_files/cmi/WOfS-Burketown-Normanton-QLD.png
 version: 3.1.6
 is_latest_version: true
 latest_version_link: null
 product_type: Derivative
 spatial_data_type: Raster
 time_span:
-  start: null
-  end: null
+  start: 1986
+  end: present
 update_frequency: Periodically
 product_ids:
   - ga_ls_wo_fq_apr_oct_3
   - ga_ls_wo_fq_nov_mar_3
   - ga_ls_wo_fq_cyear_3
   - ga_ls_wo_fq_myear_3
-  - ga_ls_wo_filtfq_myear_3
 
 parent_products:
-  name: null
-  link: null
+  name: DEA Water Observations (Landsat)
+  link: /data/product/dea-water-observations-landsat/
 collection:
   name: Geoscience Australia Landsat Collection 3
   link: null
@@ -40,27 +39,29 @@ tags:
 
 # Access
 
-maps:
-  - link: https://maps.dea.ga.gov.au
-    name: null
+maps: null
 
-explorers: null
+explorers:
+  - link: https://explorer.dea.ga.gov.au/products#inland-water-group
+    name: Data explorer
 
 data:
   - link: https://data.dea.ga.gov.au/?prefix=derivative/ga_ls_wo_fq_apr_oct_3/1-6-0/
-    name: Seasonal Water Summaries Apr-Oct periods since 1986
+    name: Apr-Oct summaries since 1986 - AWS access
   - link: https://data.dea.ga.gov.au/?prefix=derivative/ga_ls_wo_fq_nov_mar_3/1-6-0/
-    name: Seasonal Water Summaries Nov-Mar periods since 1986
+    name: Nov-Mar summaries since 1986 - AWS access
   - link: https://data.dea.ga.gov.au/?prefix=derivative/ga_ls_wo_fq_cyear_3/1-6-0/
-    name: Annual Water Summaries per Calendar Year since 1986
+    name: Annual calendar year summaries since 1986 - AWS access
   - link: https://data.dea.ga.gov.au/?prefix=derivative/ga_ls_wo_fq_myear_3/1-6-0/
-    name: All-time Water Summary (Unfiltered) 1986 to present
+    name: All-time summary 1986 to present - AWS access
 
-code_examples: null
+code_examples:
+  - link: /notebooks/dea_products/dea_water_observations/
+    name: Code examples
 
 web_services:
   - link: https://ows.dea.ga.gov.au/
-    name: Open Web Services
+    name: Web Services
 
 custom: null
 

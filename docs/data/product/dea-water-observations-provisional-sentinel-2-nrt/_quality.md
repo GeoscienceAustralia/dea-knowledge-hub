@@ -1,7 +1,5 @@
 ## Accuracy
 
-#### Accuracy
-
 This is a rapid, provisional, product. It has not been validated and is of unknown accuracy. The accuracy of the original Water Observations from Space (WOfS) algorithms was assessed using an independent set of 3.4 million validation points using Landsat imagery only. A similar validation has not yet been performed on this Sentinel-2 product, and the accuracy described below may serve as only a rough indicator. 
 
 Landsat WOfS validation points were identified based on visual interpretation of Landsat imagery within 20 test areas across Australia The points were identified in the same locations as the training data, but were selected from different years (i.e. imagery from one set of years was used to generate points to train the algorithm, and imagery from a separate set of years was used to generate the points that were used evaluate the accuracy of the algorithm).
@@ -12,7 +10,7 @@ Water can be incorrectly detected by the classification algorithm in areas where
 
 In addition to the limitations of the classification algorithm, the satellite observation frequency also introduces limitations to the product. The product is likely to be underestimating the extent of inundation for infrequent flood events because the 5 day revisit frequency (best case scenario notwithstanding the possibility of cloud obscuring the floodwaters) will potentially fail to observe the flood peak. This is an intrinsic limitation of the observation strategy. As a consequence of this limitation, the product is not suited to applications that require a. the identification of a ‘maximum extent of inundation’ line, or b. detailed information about the extent of infrequent flood events.
 
-#### Limitations
+## Limitations
 
 Observation of Earth by the satellites used for this service depends on clear skies. Furthermore, the satellites do not observe all places every day. Each of the Sentinel-2 satellites, which are the basis for this service, view a given 290 kilometre wide strip of Australia only once every 10 days. The observations show only what was visible on the day of the satellite pass. As a result, not all historical floods will have been observed by satellite.
 

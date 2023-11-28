@@ -9,15 +9,15 @@ latest_version_link: null
 product_type: Derivative
 spatial_data_type: Raster
 time_span:
-  start: null
-  end: null
+  start: 14/03/2023
+  end: present
 update_frequency: Daily
 product_ids:
   - ga_s2_wo_provisional_3
 
 parent_products:
-  name: null
-  link: null
+  name: Sentinel 2A and 2B NBART and Observational Attributes
+  link: /data/category/dea-surface-reflectance/
 collection:
   name: Geoscience Australia Sentinel-2 Collection 3
   link: null
@@ -36,23 +36,23 @@ tags:
 
 # Access
 
-maps:
-  - link: https://maps.dea.ga.gov.au/
-    name: null
+maps: null
 
-explorers: null
+explorers:
+  - link: https://explorer.dea.ga.gov.au/products/ga_s2_wo_provisional_3
+    name: Data explorer
 
 data:
   - link: https://data.dea.ga.gov.au/?prefix=derivative/ga_s2_wo_provisional_3/
-    name: Digital Earth Australia - Public Data
+    name: Access the data on AWS
 
 code_examples:
   - link: https://docs.dea.ga.gov.au/notebooks/DEA_products/DEA_Water_Observations.html
-    name: Jupyter notebook
+    name: Code examples
 
 web_services:
   - link: https://ows.dea.ga.gov.au/
-    name: Digital Earth Australia OGC Web Services
+    name: Web Services
 
 custom: null
 

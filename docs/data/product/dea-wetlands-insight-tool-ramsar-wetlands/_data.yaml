@@ -2,21 +2,20 @@
 
 title: " DEA Wetlands Insight Tool (Ramsar Wetlands)"
 long_title: Wetlands Insight Tool Ramsar Wetlands Polygons
-header_image: null
+header_image: /_files/cmi/NarranLakesNatureReserveNSWWIT.png
 version: 4.0.0
 is_latest_version: true
 latest_version_link: null
 product_type: Derivative
-spatial_data_type: Raster
+spatial_data_type: Vector
 time_span:
-  start: 1 Oct 2021
-  end: 1 Oct 2022
+  start: 1987
+  end: 2021
 update_frequency: As needed
-product_ids:
-  - ga_ls_wit_ramsar_class_myear_3_1986--P35Y
+product_ids: null
 
 parent_products:
-  name: null
+  name: DEA Water Observations (Collection 2), DEA Fractional Cover (Collection 2), and Landsat 5, 7 and 8 NBART and Observational Attributes (Collection 2)
   link: null
 collection:
   name: Geoscience Australia Landsat Collection 2 (DEPRECATED)
@@ -36,19 +35,19 @@ tags:
 
 maps:
   - link: https://maps.dea.ga.gov.au/#share=s-8C1ajm6k7py0B375G4tetZ2JC6s
-    name: null
+    name: See it on a map
 
 explorers: null
 
 data:
   - link: https://data.dea.ga.gov.au/?prefix=derivative/ga_ls_wit_ramsar_class_myear_3/1-0-0/1986--P35Y/
-    name: Digital Earth Australia - Public Data
+    name: Access the data on AWS
 
-code_examples: null
+code_examples:
+  - link: /notebooks/dea_products/dea_wetlands_insight_tool
+    name: Code examples
 
-web_services:
-  - link: https://maps.dea.ga.gov.au/#share=s-8C1ajm6k7py0B375G4tetZ2JC6s
-    name: DEA Wetlands Insight Tool (Ramsar Wetlands) on DEA Maps
+web_services: null
 
 custom: null
 

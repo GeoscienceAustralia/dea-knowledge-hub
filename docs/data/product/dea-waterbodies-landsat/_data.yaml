@@ -9,15 +9,14 @@ latest_version_link: null
 product_type: Derivative
 spatial_data_type: Vector
 time_span:
-  start: null
-  end: null
-update_frequency: Monthly
-product_ids:
-  - ga_ls_wb_3
+  start: 1986
+  end: present
+update_frequency: Daily
+product_ids: null
 
 parent_products:
-  name: null
-  link: null
+  name: DEA Water Observations (Landsat)
+  link: /data/product/dea-water-observations-landsat/
 collection:
   name: Geoscience Australia Landsat Collection 3
   link: null
@@ -39,25 +38,25 @@ tags:
 
 maps:
   - link: https://maps.dea.ga.gov.au/#share=s-4RjD9N7swBCZSkXRJJBxOLzVZyK
-    name: null
+    name: See it on a map
 
 explorers: null
 
 data:
   - link: http://pid.geoscience.gov.au/dataset/ga/146197
-    name: Download the shapefile via eCat
+    name: Download the shapefile
   - link: https://data.dea.ga.gov.au/?prefix=derivative/dea_waterbodies/2-0-0/
-    name: Digital Earth Australia - Public Data
+    name: Access the data on AWS
 
 code_examples:
-  - link: https://docs.dea.ga.gov.au/notebooks/DEA_products/DEA_Waterbodies.html
-    name: Jupyter notebook
+  - link: /notebooks/dea_products/dea_waterbodies/
+    name: Code examples
   - link: https://github.com/GeoscienceAustralia/dea-waterbodies
     name: Github repository
 
 web_services:
   - link: https://geoserver.dea.ga.gov.au/geoserver/wms
-    name: Web mapping service
+    name: Web Mapping Service (WMS)
 
 custom: null
 

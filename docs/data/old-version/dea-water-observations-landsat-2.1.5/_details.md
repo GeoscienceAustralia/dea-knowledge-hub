@@ -1,6 +1,6 @@
 ## Background
 
-This product has been deprecated and is superseded by this product: [DEA Water Observations (Landsat)](https://cmi.ga.gov.au/data-products/dea/613/dea-water-observations-landsat).
+This product has been deprecated and is superseded by this product: [DEA Water Observations (Landsat)](/data/product/dea-water-observations-landsat/).
 
 It is important to know where water is normally present in a landscape, where water is rarely observed, and where inundation has occasionally occurred.
 
@@ -34,79 +34,16 @@ A change in version 2.1.5 from earlier versions is that previously only one bit 
 
 The meaning of each bit in the WOFLs is given  in the table below.
 
-   
-
-Bit
-
-Flagging
-
-Decimal Value
-
-Description
-
-0
-
-no data
-
-1
-
-dec: 1 = pixel masked out due to NO\_DATA in NBAR source, 0 = valid data in NBAR
-
-1
-
-contiguity
-
-2
-
-dec: 2 = pixel masked out due to lack of data contiguity
-
-2
-
-sea
-
-4
-
-dec: 4 = pixel masked out due to being over sea
-
-3
-
-terrain shadow
-
-8
-
-dec: 8 = pixel masked out due to terrain shadow
-
-4
-
-high slope
-
-16
-
-dec: 16 = pixel masked out due to high slop
-
-5
-
-cloud shadow
-
-32
-
-dec: 32 = pixel masked out due to cloud shadow
-
-6
-
-cloud
-
-64
-
-dec: 64 = pixel masked out due to cloud
-
-7
-
-water observed
-
-128
-
-dec: 128 = water present
+| Bit | Flagging       | Decimal Value | Description                                                                     |
+|-----|----------------|---------------|---------------------------------------------------------------------------------|
+| 0   | no data        | 1             | dec: 1 = pixel masked out due to NO_DATA in NBAR source, 0 = valid data in NBAR |
+| 1   | contiguity     | 2             | dec: 2 = pixel masked out due to lack of data contiguity                        |
+| 2   | sea            | 4             | dec: 4 = pixel masked out due to being over sea                                 |
+| 3   | terrain shadow | 8             | dec: 8 = pixel masked out due to terrain shadow                                 |
+| 4   | high slope     | 16            | dec: 16 = pixel masked out due to high slop                                     |
+| 5   | cloud shadow   | 32            | dec: 32 = pixel masked out due to cloud shadow                                  |
+| 6   | cloud          | 64            | dec: 64 = pixel masked out due to cloud                                         |
+| 7   | water observed | 128           | dec: 128 = water present                                                        |
 
 For example a value of 136 indicates water (128) AND terrain shadow (8) were observed for the pixel.
 
@@ -135,7 +72,12 @@ The current version of WOfS has separated the individual time slices from the de
 
 ## Processing steps
 
-1. Water Observations from Space Detection Algorithm
+The water detection algorithm used to detect water from each observed pixel is based on a statistical regression tree analysis of a set of normalised difference indices and corrected band values. The regression is based on a set of water and non-water samples created by visual interpretation of 20 Landsat scenes from across Australia. The sample locations, indicated below, ensure that the logistic regression is based on the full geographic range of conditions experienced in Australia.
+
+The regression analysis determined a set of best indices and bands for the analysis and the associated thresholds in each component to derive a final classification tree, producing a water/non-water classification for pixel in the Data Cube. The final water classification for each pixel is modified by Pixel Quality (see associated PQ product information) and terrain.
+Once the water algorithm has completed its process, the water detection for a pixel through time is combined to produce a total number of water observations for each pixel. This is compared to a total number of clear observations for the same pixel, derived from the PQ analysis. The ratio is expressed as a percentage water recurrence.
+
+Confidence that a pixel depicted as having had water detected at some time is calculated by a Confidence Layer. The layer is computed by combining a set of confidence factors using a weighted sum approach, with the weightings derived by logistic regression.
 
 % ## Software
 

@@ -2,7 +2,7 @@
 
 The Queensland Government Department of Environment and Science wetlands team promotes and delivers wetlands tools and information, enabling the delivery of Geoscience Australia DEA Wetlands Tool (QLD) capabilities.
 
-The Joint Remote Sensing Research Program (JRSRP) developed the Fractional Cover algorithm that is used as one of the inputs into the Wetlands Insight Tool.
+The Fractional cover (v2) algorithm is provided courtesy of the Joint Remote Sensing Research Program. The development of the algorithm was supported by field data collection by Australian State and Territory agencies, TERN and the National Ground Cover Monitoring Program, coordinated by ABARES.
 
 ## License and copyright
 

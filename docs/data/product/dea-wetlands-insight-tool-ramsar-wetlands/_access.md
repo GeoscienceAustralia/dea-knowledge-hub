@@ -1,15 +1,14 @@
-## Access constraints
+%## Access constraints
 
-Creative Commons CCBY 4.0
+:::{dropdown} How to view the data in a web map
 
-The Ramsar Wetlands of Australia Dataset is available under a Creative Commons Attribution 3.0 Australia Licence  (Australian Government Department of Agriculture, Water and the Environment, 2019). We created individual wetland polygons from the multipart Ramsar polygons in the dataset using the QGIS Multipart to singleparts tool (QGIS Development Team, 2021). The identifying metadata for each wetland is listed in the csv file included in the data package.
+To view and access the data interactively:
+1) Visit [DEA Maps](https://maps.dea.ga.gov.au).
 
-## Use constraints
+2) Click `Explore map data`.
 
-Creative Commons CCBY 4.0
+3) Select `Inland water` > `DEA Wetlands Insight Tool` > `DEA Wetlands Insight Tool (Ramsar Wetlands) v4.0.0`. 
 
-The Ramsar Wetlands of Australia Dataset is available under a Creative Commons Attribution 3.0 Australia Licence  (Australian Government Department of Agriculture, Water and the Environment, 2019). We created individual wetland polygons from the multipart Ramsar polygons in the dataset using the QGIS Multipart to singleparts tool (QGIS Development Team, 2021). The identifying metadata for each wetland is listed in the csv file included in the data package.
-
-% :::{dropdown} How to access the data
-% :::
+5) Click `Add to the map`, or the `+` symbol to add the data to the map.
+:::
 
