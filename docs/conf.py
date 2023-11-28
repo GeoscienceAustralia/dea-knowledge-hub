@@ -116,6 +116,7 @@ html_theme_options = {
 
 html_context = {
     "default_mode": "light",
+    "meta_keywords": "DEA, Digital Earth Australia, GA, Geoscience Australia, Knowledge, Documentation, Content, Learn, Learning, Data Products, Metadata, User Guides, DEA Notebooks, Notebooks, Open Data Cube, Developer"
 }
 
 if os.environ.get("BUILD_MODE") == "production":
