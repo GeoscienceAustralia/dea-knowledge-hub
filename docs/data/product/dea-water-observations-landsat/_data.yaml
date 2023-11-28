@@ -48,7 +48,7 @@ data:
     name: Access the data on NCI
 
 code_examples:
-  - link: https://docs.dea.ga.gov.au/notebooks/DEA_products/DEA_Water_Observations.html
+  - link: /notebooks/dea_products/dea_water_observations/
     name: Code examples
 
 web_services:

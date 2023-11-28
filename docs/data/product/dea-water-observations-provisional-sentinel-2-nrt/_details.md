@@ -30,7 +30,16 @@ The Water Observations from Space (WOfS) Water detection algorithm is used to ge
 
 **Table 1:** The table below describes the meaning of each bit set per pixel. Where multiple factors impeding a clear observation are detected all the respective bits will be set. For example a value of 136 indicates water (128) AND terrain shadow (8) were observed for the pixel.
 
-![Bit assignment for DEA_WO_3.1.6](/_files/cmi/DEA_WO_3_BitFieldTable_resized.png)
+| Bit | Flagging        | Decimal Value | Description                                                              |
+|-----|-----------------|---------------|--------------------------------------------------------------------------|
+| 0   | no data         | 1             | Pixel masked out due to NO_DATA in NBART source, 0 = valid data in NBART |
+| 1   | contiguity      | 2             | Pixel masked out due to lack of data contiguity                          |
+| 2   | solar incidence | 4             | Pixel masked out due to solar incidence > 10 degrees                     |
+| 3   | terrain shadow  | 8             | Pixel masked out due to terrain shadow                                   |
+| 4   | high slope      | 16            | Pixel masked out due to high slope                                       |
+| 5   | cloud shadow    | 32            | Pixel masked out due to cloud shadow                                     |
+| 6   | cloud           | 64            | Pixel masked out due to cloud                                            |
+| 7   | water           | 128           | Water detected                                                           |
 
 Full details of the original algorithms and features of DEA Water Observations can be found in the Water Observations from Space paper by Mueller et al. (2016). [https://doi.org/10.1016/j.rse.2015.11.003](https://doi.org/10.1016/j.rse.2015.11.003)
 
@@ -51,7 +60,7 @@ The process of producing standardised optical surface reflectance is known as Na
 
 This enables comparison of imagery acquired at different times, in different seasons, in different geographic locations over varying surface topography.
 
-Algorithm details can be found here: https://doi.org/10.1016/j.rse.2012.06.018
+Algorithm details can be found here: [https://doi.org/10.1016/j.rse.2012.06.018](https://doi.org/10.1016/j.rse.2012.06.018)
 
 ### 2. Water Observations from Space Detection Algorithm
 The water detection algorithm used to detect water from each observed pixel is based on a statistical regression tree analysis of a set of normalised difference indices and corrected band values. The regression is based on a set of water and non-water samples created by visual interpretation of 20 Landsat scenes from across Australia. The sample locations, indicated below, ensure that the logistic regression is based on the full geographic range of conditions experienced in Australia.
