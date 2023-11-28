@@ -59,6 +59,8 @@ web_services:
   - link: https://geoserver.dea.ga.gov.au/geoserver/wms
     name: Web mapping service
 
+custom: null
+
 # Settings
 
 enable_overview: true

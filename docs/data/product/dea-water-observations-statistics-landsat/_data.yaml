@@ -62,6 +62,8 @@ web_services:
   - link: https://ows.dea.ga.gov.au/
     name: Open Web Services
 
+custom: null
+
 # Settings
 
 enable_overview: true

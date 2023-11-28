@@ -50,6 +50,8 @@ web_services:
   - link: https://maps.dea.ga.gov.au/#share=s-8C1ajm6k7py0B375G4tetZ2JC6s
     name: DEA Wetlands Insight Tool (Ramsar Wetlands) on DEA Maps
 
+custom: null
+
 # Settings
 
 enable_overview: true

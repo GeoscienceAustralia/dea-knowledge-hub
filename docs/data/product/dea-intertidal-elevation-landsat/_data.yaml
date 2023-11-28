@@ -55,6 +55,8 @@ web_services:
   - link: https://ows.services.dea.ga.gov.au
     name: "WMS services (layer name: NIDEM)"
 
+custom: null
+
 # Settings
 
 enable_overview: true
