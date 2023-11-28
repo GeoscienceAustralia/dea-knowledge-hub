@@ -55,6 +55,7 @@ custom:
     name: User guide
     description: Learn how to `do something <https://www.google.com/>`_
     class: yellow
+
   - icon: ghost
     link: https://app-public.specchio.sandbox.dea.ga.gov.au/
     label: Get the data online
