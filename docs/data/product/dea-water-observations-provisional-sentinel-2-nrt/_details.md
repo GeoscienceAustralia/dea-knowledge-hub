@@ -17,7 +17,6 @@ This is a rapid, provisional, product. It has not been validated and is of unkno
 ## Applications
 
 The Digital Earth Australia Near Real Time Water Observation product is provided as a provisional (not validated, with unknown accuracy) source of information on water in the landscape to help inform emergency management and decision makers on recent and evolving emergency situations. The product can be used to estimate the area of surface water present in the corresponding satellite scene, and can be used for several water monitoring applications. Uses of the individual Water Observations (WOs) includes:
-
 * flood extent
 * amount of water in water bodies, major rivers and the coastal zone.
 
@@ -31,7 +30,7 @@ The Water Observations from Space (WOfS) Water detection algorithm is used to ge
 
 **Table 1:** The table below describes the meaning of each bit set per pixel. Where multiple factors impeding a clear observation are detected all the respective bits will be set. For example a value of 136 indicates water (128) AND terrain shadow (8) were observed for the pixel.
 
-![Bit assignment for DEA_WO_3.1.6](https://cmi.ga.gov.au/_files/cmi/DEA_WO_3_BitFieldTable_resized.png)
+![Bit assignment for DEA_WO_3.1.6](/_files/cmi/DEA_WO_3_BitFieldTable_resized.png)
 
 Full details of the original algorithms and features of DEA Water Observations can be found in the Water Observations from Space paper by Mueller et al. (2016). [https://doi.org/10.1016/j.rse.2015.11.003](https://doi.org/10.1016/j.rse.2015.11.003)
 
@@ -45,9 +44,22 @@ Once the input data has been processed to ARD the Water Observations from Space 
 
 ## Processing steps
 
-1. Surface Reflectance Calculation (NBAR + Terrain Illumination Correction)
+### 1. Surface Reflectance Calculation (NBAR + Terrain Illumination Correction)
+Calculate a standardised optical surface reflectance using robust physical models to correct for variations in image radiance values due to atmospheric properties, sun and sensor geometry and accounts for the directional reflectance properties of the surface.  The process also accounts for the underlying surface topography via a process known as terrain illumination correction.
 
-1. Water Observations from Space Detection Algorithm
+The process of producing standardised optical surface reflectance is known as Nadir corrected Bi-directional reflectance distribution function Adjusted Reflectance (NBAR) coupled with a Terrain illumination correction.
+
+This enables comparison of imagery acquired at different times, in different seasons, in different geographic locations over varying surface topography.
+
+Algorithm details can be found here: https://doi.org/10.1016/j.rse.2012.06.018
+
+### 2. Water Observations from Space Detection Algorithm
+The water detection algorithm used to detect water from each observed pixel is based on a statistical regression tree analysis of a set of normalised difference indices and corrected band values. The regression is based on a set of water and non-water samples created by visual interpretation of 20 Landsat scenes from across Australia. The sample locations, indicated below, ensure that the logistic regression is based on the full geographic range of conditions experienced in Australia.
+
+The regression analysis determined a set of best indices and bands for the analysis and the associated thresholds in each component to derive a final classification tree, producing a water/non-water classification for pixel in the Data Cube. The final water classification for each pixel is modified by Pixel Quality (see associated PQ product information) and terrain.
+Once the water algorithm has completed its process, the water detection for a pixel through time is combined to produce a total number of water observations for each pixel. This is compared to a total number of clear observations for the same pixel, derived from the PQ analysis. The ratio is expressed as a percentage water recurrence.
+
+Confidence that a pixel depicted as having had water detected at some time is calculated by a Confidence Layer. The layer is computed by combining a set of confidence factors using a weighted sum approach, with the weightings derived by logistic regression.
 
 % ## Software
 

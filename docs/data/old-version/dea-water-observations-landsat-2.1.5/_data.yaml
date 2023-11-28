@@ -9,9 +9,9 @@ latest_version_link: /data/product/dea-water-observations-landsat/
 product_type: Derivative
 spatial_data_type: Raster
 time_span:
-  start: null
-  end: null
-update_frequency: As needed
+  start: 1986
+  end: 2017
+update_frequency: Deprecated
 product_ids: null
 
 parent_products:
