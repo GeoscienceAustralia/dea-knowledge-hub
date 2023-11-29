@@ -13,12 +13,12 @@
 {% set valid_tags = data.tags | select("!=", None) | list %}
 
 {% set map_label = "See it on a map" %}
-{% set explorer_label = "Explore data samples" %}
+{% set explorer_label = "Explore data availability" %}
 {% set data_label = "Get the data online" %}
 {% set web_service_label = "Get via web service" %}
 {% set code_sample_label = "Code sample" %}
 
-{% set map_default_name = "DEA Map" %}
+{% set map_default_name = "DEA Maps" %}
 {% set data_default_name = "DEA Data" %}
 {% set explorer_default_name = "Data Explorer" %}
 {% set web_service_default_name = "Web service" %}
@@ -201,91 +201,6 @@
           :parser: myst_parser.sphinx_
     {% endif %}
 
-    {% if data.enable_access %}
-    .. tab-item:: Access
-       :name: access-tab
-
-       .. container:: table-of-contents
-
-          .. container::
-             :name: access-table-of-contents
-
-             |nbsp|
-
-       .. rubric:: Access the data
-          :name: access-the-data-2
-
-       {% if has_access_data %}
-       .. list-table::
-          :name: access-table
-
-          {% if valid_maps %}
-          * - **{{ map_label }}**
-            - {% for item in valid_maps %}
-              * `{{ item.name or map_default_name }} <{{ item.link }}>`_
-              {% endfor %}
-            - Learn how to `use DEA Maps </guides/setup/dea_maps>`_.
-          {% endif %}
-
-          {% if valid_explorers %}
-          * - **{{ explorer_label }}**
-            - {% for item in valid_explorers %}
-              * `{{ item.name or explorer_default_name }} <{{ item.link }}>`_
-              {% endfor %}
-            -
-          {% endif %}
-
-          {% if valid_data %}
-          * - **{{ data_label }}**
-            - {% for item in valid_data %}
-              * `{{ item.name or data_default_name }} <{{ item.link }}>`_
-              {% endfor %}
-            - Learn how to `access the data via AWS </guides/about/faq#how-do-i-download-data-from-dea>`_.
-          {% endif %}
-
-          {% if valid_code_samples %}
-          * - **{{ code_sample_label }}**
-            - {% for item in valid_code_samples %}
-              * `{{ item.name or code_sample_default_name }} <{{ item.link }}>`_
-              {% endfor %}
-            - Learn how to `connect to the DEA Sandbox </guides/setup/Sandbox/sandbox>`_.
-          {% endif %}
-
-          {% if valid_web_services %}
-          * - **{{ web_service_label }}**
-            - {% for item in valid_web_services %}
-              * `{{ item.name or web_service_default_name }} <{{ item.link }}>`_
-              {% endfor %}
-            - Learn how to `connect to DEA's web services </guides/setup/gis/README>`_.
-          {% endif %}
-
-          {% for item in valid_custom %}
-          * - **{{ item.label or "" }}**
-            - * `{{ item.name }} <{{ item.link }}>`_
-            - {{ item.description or "" }}
-          {% endfor %}
-       {% else %}
-       There are no data source links available at the present time.
-       {% endif %}
-
-       {% if valid_files %}
-
-       .. rubric:: Additional files
-          :name: additional-files
-
-       .. list-table::
-          :name: additional-files-table
-
-          {% for item in valid_files %}
-          * - `{{ item.name or item.link }} <{{ item.link }}>`_
-            - {{ item.description }}
-          {% endfor %}
-       {% endif %}
-
-       .. include:: _access.md
-          :parser: myst_parser.sphinx_
-    {% endif %}
-
     {% if data.enable_details %}
     .. tab-item:: Details
        :name: details-tab
@@ -313,6 +228,91 @@
              |nbsp|
 
        .. include:: _quality.md
+          :parser: myst_parser.sphinx_
+    {% endif %}
+
+    {% if data.enable_access %}
+    .. tab-item:: Access
+       :name: access-tab
+
+       .. container:: table-of-contents
+
+          .. container::
+             :name: access-table-of-contents
+
+             |nbsp|
+
+       .. rubric:: Access the data
+          :name: access-the-data-2
+
+       {% if has_access_data %}
+       .. list-table::
+          :name: access-table
+
+          {% if valid_maps %}
+          * - **{{ map_label }}**
+            - {% for item in valid_maps %}
+              * `{{ item.name or map_default_name }} <{{ item.link }}>`_
+              {% endfor %}
+            - Learn how to `use DEA Maps </guides/setup/dea_maps>`_
+          {% endif %}
+
+          {% if valid_explorers %}
+          * - **{{ explorer_label }}**
+            - {% for item in valid_explorers %}
+              * `{{ item.name or explorer_default_name }} <{{ item.link }}>`_
+              {% endfor %}
+            - Learn how to `use the DEA Explorer </setup/explorer_guide/>`_
+          {% endif %}
+
+          {% if valid_data %}
+          * - **{{ data_label }}**
+            - {% for item in valid_data %}
+              * `{{ item.name or data_default_name }} <{{ item.link }}>`_
+              {% endfor %}
+            - Learn how to `access the data via AWS </guides/about/faq#how-do-i-download-data-from-dea>`_
+          {% endif %}
+
+          {% if valid_code_samples %}
+          * - **{{ code_sample_label }}**
+            - {% for item in valid_code_samples %}
+              * `{{ item.name or code_sample_default_name }} <{{ item.link }}>`_
+              {% endfor %}
+            - Learn how to `use the DEA Sandbox </guides/setup/Sandbox/sandbox>`_
+          {% endif %}
+
+          {% if valid_web_services %}
+          * - **{{ web_service_label }}**
+            - {% for item in valid_web_services %}
+              * `{{ item.name or web_service_default_name }} <{{ item.link }}>`_
+              {% endfor %}
+            - Learn how to `use DEA's web services </guides/setup/gis/README>`_
+          {% endif %}
+
+          {% for item in valid_custom %}
+          * - **{{ item.label or "" }}**
+            - * `{{ item.name }} <{{ item.link }}>`_
+            - {{ item.description or "" }}
+          {% endfor %}
+       {% else %}
+       There are no data source links available at the present time.
+       {% endif %}
+
+       {% if valid_files %}
+
+       .. rubric:: Additional files
+          :name: additional-files
+
+       .. list-table::
+          :name: additional-files-table
+
+          {% for item in valid_files %}
+          * - `{{ item.name or item.link }} <{{ item.link }}>`_
+            - {{ item.description }}
+          {% endfor %}
+       {% endif %}
+
+       .. include:: _access.md
           :parser: myst_parser.sphinx_
     {% endif %}
 

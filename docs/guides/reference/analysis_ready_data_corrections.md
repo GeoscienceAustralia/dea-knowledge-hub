@@ -14,14 +14,14 @@ Accurate positional geometry of the sun and observer are required in order to st
 
 The process calculates at full acquisition resolution and spatial extent in native CRS, the following datasets:
 
-|                   |                                                               |
-|-------------------|---------------------------------------------------------------|
-| Solar zenith      | The angle between the zenith and the centre of the Sun's disc | 
-| Solar azimuth     | The angle of the sun's position from true north               |
-| Satellite view    | The angle between the zenith and the satellite                |
-| Satellite azimuth | The angle of the satellite's position from true north         |
-| Relative azimuth  | The relative azimuth between the sun and view directions      |
-| Time Delta        | The time in seconds from satellite apogee                     |
+|                       |                                                               |
+|-----------------------|---------------------------------------------------------------|
+| **Solar zenith**      | The angle between the zenith and the centre of the Sun's disc | 
+| **Solar azimuth**     | The angle of the sun's position from true north               |
+| **Satellite view**    | The angle between the zenith and the satellite                |
+| **Satellite azimuth** | The angle of the satellite's position from true north         |
+| **Relative azimuth**  | The relative azimuth between the sun and view directions      |
+| **Time Delta**        | The time in seconds from satellite apogee                     |
 
 <h3 id="aero-opt-thick-retr"> Aerosol Optical Thickness Retrieval </h3>
 For a given acquisition, retrieve the aerosol optical thickness estimate for input into the radiative transfer evaluation.
@@ -40,10 +40,12 @@ For each supported spectral band within an acquisition to be processed, retrieve
 The spatial extent of the acquisition in native Coordinate Reference System (CRS) units is projected into the Sinusoidal CRS of the MCD43A1 data.  Once projected, the Isometric, Volumetric and Geometric albedo parameters are retrieved for the area of interest, for each of the acquisitions supported spectral bands, from the relevant spectral bands of the MCD43A1 data and aggregated.
 
 The results are then transformed into the BRDF Shape function, labelled as Alpha-1 and Alpha-2, by the following ratio's:
-* Alpha-1 = Volumetric / Isometric
-* Alpha-2 = Geometric / Isometric
 
-* If the spectral band for the acquisition has a wavelength broad enough to cover multiple MODIS spectral bands, then averages are taken from all derived Alpha-1 and Alpha-2 parameters, before returning single pair of Alpha-1 and Alpha-2 BRDF shape function parameters.
+> **Alpha-1** = $Volumetric / Isometric$
+>
+> **Alpha-2** = $Geometric / Isometric$
+
+If the spectral band for the acquisition has a wavelength broad enough to cover multiple MODIS spectral bands, then averages are taken from all derived Alpha-1 and Alpha-2 parameters, before returning single pair of Alpha-1 and Alpha-2 BRDF shape function parameters.
 
 <h3 id="o3-retr"> Ozone Retrieval </h3>
 Retrieval of ozone data for the acquisition of interest at a given (longitude, latitude) location for a given month.
@@ -62,7 +64,7 @@ For a given Digital Elevation Model (DSM) calculate at a pixel level the slope a
 
 The following steps dictate the method for determining slope and aspect.
 
-1. A sobel filter is used to determine the rate of change at a pixel level for both the horizontal and vertical directions (dz/dx & dz/dy)
+1. A sobel filter is used to determine the rate of change at a pixel level for both the horizontal and vertical directions ($d_z/d_x$ and $d_z/d_y$)
 2. Slope in radians = ATAN ( √ ([dz/dx]^2 + [dz/dy]^2) )
 3. Aspect in radians = atan2 ([dz/dy], -[dz/dx])
 
@@ -114,30 +116,46 @@ The MODTRAN software computes line-of-sight (LOS) atmospheric spectral transmitt
 Using the modelled output of the radiative transfer, calculate the atmospheric correction coefficients.
 
 The atmospheric correction coefficients are required for computing Lambertian reflectance.  The coefficients are given as follows:
-S = Atmospheric albedo
-TV = Total transmittance in the view (observer) direction
-TS = Total transmittance in the solar diection
-fV = Direct fraction in the view (observer) direction
-fS = Direct fraction in the solar direction
-A = (Dir + Dif) / Pi * TV
-B = Path radiance
-Dir = Direct irradiance at the surface
-Dif = Diffuse irradiance at the surface
+
+> **S** = Atmospheric albedo
+>
+> **TV** = Total transmittance in the view (observer) direction
+>
+> **TS** = Total transmittance in the solar diection
+>
+> **fV** = Direct fraction in the view (observer) direction
+>
+> **fS** = Direct fraction in the solar direction
+>
+> **A** = $(Dir + Dif) / Pi \times TV$
+>
+> **B** = Path radiance
+>
+> **Dir** = Direct irradiance at the surface
+>
+> **Dif** = Diffuse irradiance at the surface
+
 
 <h3 id="bil-int-atm-corr-coef"> Bilinear Interpolation of Atmospheric Correction Coefficients </h3>
 The atmospheric correction coefficients are interpolated across the entire spatial extents of the 2D image.
 
 Bilinear interpolation is the method used to interpolate across the entire image for each of the following atmospheric correction coefficients:
 
-S = Atmospheric albedo
-fV = Direct fraction in the view (observer) direction
-fS = Direct fraction in the solar direction
-A = (Dir + Dif) / Pi * TV
-B = Path radiance
-Dir = Direct irradiance at the surface
-Dif = Diffuse irradiance at the surface
+> **S** = Atmospheric albedo
+>
+> **fV** = Direct fraction in the view (observer) direction
+>
+> **fS** = Direct fraction in the solar direction
+>
+> **A** = $(Dir + Dif) / Pi \times TV$
+>
+> **B** = Path radiance
+>
+> **Dir** = Direct irradiance at the surface
+>
+> **Dif** = Diffuse irradiance at the surface
 
-Note: TV = Total transmittance in the view (observer) direction
+Note: **TV** = Total transmittance in the view (observer) direction
 
 <h3 id="nbar"> Surface Reflectance Calculation (NBAR) </h3>
 Calculate a standardised optical surface reflectance using robust physical models to correct for variations in image radiance values due to atmospheric properties, sun and sensor geometry as well as the directional reflectance properties of the surface being observed.
@@ -163,12 +181,18 @@ Function of Mask (Fmask), is a classification process that categorises pixels in
 The Fmask algorithm works across Landsat's 4, 5, 7 and 8, as well as Sentinel-2 A & B.  The algorithms may differ per sensor, but the classification schema is standardised across all platform's/sensors.
 
 The classes/categories are:
-* Unclassified -> 0
-* Clear -> 1
-* Cloud -> 2
-* Cloud Shadow -> 3
-* Snow -> 4
-* Water -> 5
+
+> **Unclassified** -> 0
+>
+> **Clear** -> 1
+>
+> **Cloud** -> 2
+>
+> **Cloud Shadow** -> 3
+>
+> **Snow** -> 4
+>
+> **Water** -> 5
 
 Further details on the algorithm can be found here:
 * [https://doi.org/10.1016/j.rse.2011.10.028](https://doi.org/10.1016/j.rse.2011.10.028)

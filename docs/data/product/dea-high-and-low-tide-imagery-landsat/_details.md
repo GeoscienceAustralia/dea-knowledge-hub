@@ -29,7 +29,7 @@ The High Low Tide Composites (HLTC_25) product is composed of two mosaics, disti
 
 The composites are generated utilising the geomedian approach of Roberts et al (2017) to ensure a valid surface reflectance spectra suitable for uses such as habitat mapping. The time range used for composite generation in each polygon of the mosaic is tailored to ensure dynamic coastal features are captured whilst still allowing a clean and cloud free composite to be generated. The concepts of the Observed Tidal Range (OTR), and Highest and Lowest Observed Tide (HOT, LOT) are discussed and described fully in Sagar et al. (2017) and the product description for the ITEM v 1.0 product (Geoscience Australia, 2016).
 
-Oregon State Tidal Prediction (OTPS) software (Egbert and Erofeeva, 2002, 2010) was used to generate tide heights, relative to mean sea level, for the Australian continental coastline, split into 306 distinct tidal regions. These time and date stamped tidal values were then attributed to all coastal tile observations for their time of acquisition, creating a range of observed tide heights for the Australian coastline. The two mosaics in HLTC\_25 are composited from the highest and lowest 20 % of observed tide in the ensemble and are termed HOT and LOT respectively. A geomedian composite for each Landsat band is calculated from the tiles in each ensemble subset to produce the respective HOT and LOT composites (Sagar et al., 2018). Note that Landsat 7 ETM+ observations are excluded after May 2003 due to a large number of data artefacts.
+Oregon State Tidal Prediction (OTPS) software (Egbert and Erofeeva, 2002, 2010) was used to generate tide heights, relative to mean sea level, for the Australian continental coastline, split into 306 distinct tidal regions. These time and date stamped tidal values were then attributed to all coastal tile observations for their time of acquisition, creating a range of observed tide heights for the Australian coastline. The two mosaics in HLTC_25 are composited from the highest and lowest 20 % of observed tide in the ensemble and are termed HOT and LOT respectively. A geomedian composite for each Landsat band is calculated from the tiles in each ensemble subset to produce the respective HOT and LOT composites (Sagar et al., 2018). Note that Landsat 7 ETM+ observations are excluded after May 2003 due to a large number of data artefacts.
 
 The time range used for composite generation in each of the 306 polygons of the mosaics is tailored to ensure dynamic coastal features are captured whilst still allowing a clean and cloud free composite to be generated. The maximum epoch for which the products are calculated is between 1995-2017, although this varies due to data resolution and observation quality. The product also includes a count of clear observations per pixel for both mosaics.
 
@@ -52,25 +52,25 @@ The supporting polygon level metadata includes the following **attributes**:
 | **MaximumObs** | maximum count of clear observations for any pixel in the polygon                                                                                                                          |
 | **LIT**        | lowest input tide height to the composite image                                                                                                                                           |
 | **HIT**        | highest input tide height to the composite image                                                                                                                                          |
-| **stages**     | the count of each observed tide stage in the composite image. Where: <br /> **e** = ebbing tide <br /> **f** = flowing tide <br /> **ph** = peak high tide <br /> **pl** \= peak low tide |
+| **stages**     | the count of each observed tide stage in the composite image. Where: <br /> **e** = ebbing tide <br /> **f** = flowing tide <br /> **ph** = peak high tide <br /> **pl** = peak low tide |
 
 The tide stages were calculated by comparison to the modeled tide data for 15 minutes either side of the observation to determine the ebb, flow or peak movement of the tide.
 
 The ***composites* file naming convention** is as follows:
 
 ```
-COMPOSITE\_\[HIGH or LOW\]\_\[polygon ID\]\_\[centroid longitude\]\_\[centroid latitude\]\_\[input date range\]\_PER\_20.\[nc or tif\]`
+COMPOSITE_[HIGH or LOW]_[polygon ID]_[centroid longitude]_[centroid latitude]_[input date range]_PER_20.[nc or tif]
 ```
 
-e.g. `COMPOSITE\_HIGH\_297\_120.3\_-19.36\_20000101\_20170101\_PER\_20.nc`
+e.g. `COMPOSITE_HIGH_297_120.3_-19.36_20000101_20170101_PER_20.nc`
 
 The ***maximum pixel count* naming convention** is as follows:
 
 ```
-COUNT\_\[HIGH or LOW\]\_\[polygon ID\]\_\[centroid longitude\]\_\[centroid latitude\]\_\[input date range\]\_PER\_20.\[nc or tif\]`
+COUNT_[HIGH or LOW]_[polygon ID]_[centroid longitude]_[centroid latitude]_[input date range]_PER_20.[nc or tif]
 ```
 
-e.g. `COUNT\_HIGH\_297\_120.3\_-19.36\_20000101\_20170101\_PER\_20.nc`
+e.g. `COUNT_HIGH_297_120.3_-19.36_20000101_20170101_PER_20.nc`
 
 ## Lineage
 
