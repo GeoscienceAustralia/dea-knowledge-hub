@@ -27,7 +27,6 @@ Open https://explorer.dea.ga.gov.au/. This will display the Metadata Explorer us
    :align: center
    :alt: DEA Explorer interface
 
-
 The DEA Metadata Explorer has four main sections.
 
 1. **Product selection:** This shows the currently-selected product. Click the selected product name to open the products dropdown menu.
