@@ -1,10 +1,9 @@
 ## Background
 
-***
-
-*This is a sub-product of [DEA Surface Reflectance 3 (Landsat 7 ETM+)](/data/product/dea-surface-reflectance-landsat-7-etm). See the parent product for more information.*
-
-***
+:::{admonition} This is a sub-product
+:class: note
+This is a sub-product of [DEA Surface Reflectance 3 (Landsat 7 ETM+)](/data/product/dea-surface-reflectance-landsat-7-etm). See the parent product for more information.
+:::
 
 The contextual information related to a dataset is just as valuable as the data itself. This information, also known as data provenance or data lineage, includes details such as the data’s origins, derivations, methodology and processes. It allows the data to be replicated and increases the reliability of derivative applications.
 

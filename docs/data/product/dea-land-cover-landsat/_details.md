@@ -345,7 +345,7 @@ Natural Surfaces (NS) are comprised primarily of unconsolidated (often per
 The Water class captures terrestrial and coastal open water such as dams, lakes, large rivers and the coastal and near-shore zone. 
 :::
 
-:::{dropdown} Level 4 Class Descriptions
+:::{dropdown} Level 4 Class Descriptions
 **Lifeform (NTV, NAV and CTV; 2 classes)** 
 
 Lifeform represents the dominant vegetation type of a primarily vegetated area, discriminating woody from non-woody (herbaceous) vegetation. The Woody Cover Fraction models woody as vegetation of at least 2m in height and at least 20 % canopy cover. Hence the dominant vegetation in areas designated as woody in this product is considered to be composed of shrubs and trees. However where woody vegetation is not dominant in an area, the cover will be essentially herbaceous or bare. Hence some areas containing sparse trees or shrubs will likely be represented as herbaceous.

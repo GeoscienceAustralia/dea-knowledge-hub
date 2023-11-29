@@ -1,10 +1,9 @@
 ## Background
 
-***
-
-*This is a sub-product of [DEA Surface Reflectance (Landsat 8 OLI-TIRS)](/data/product/dea-surface-reflectance-landsat-8-oli-tirs). See the parent product for more information.*
-
-***
+:::{admonition} This is a sub-product
+:class: note
+This is a sub-product of [DEA Surface Reflectance (Landsat 8 OLI-TIRS)](/data/product/dea-surface-reflectance-landsat-8-oli-tirs). See the parent product for more information.
+:::
 
 Radiance data collected by Landsat 8 OLI-TIRS sensors can be affected by atmospheric conditions, sun position, sensor view angle, surface slope and surface aspect.
 
