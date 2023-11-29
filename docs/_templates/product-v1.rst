@@ -278,7 +278,7 @@
             - {% for item in valid_code_samples %}
               * `{{ item.name or code_sample_default_name }} <{{ item.link }}>`_
               {% endfor %}
-            - Learn how to `connect to the DEA Sandbox </guides/setup/Sandbox/sandbox>`_
+            - Learn how to `use the DEA Sandbox </guides/setup/Sandbox/sandbox>`_
           {% endif %}
 
           {% if valid_web_services %}
@@ -286,7 +286,7 @@
             - {% for item in valid_web_services %}
               * `{{ item.name or web_service_default_name }} <{{ item.link }}>`_
               {% endfor %}
-            - Learn how to `connect to DEA's web services </guides/setup/gis/README>`_
+            - Learn how to `use DEA's web services </guides/setup/gis/README>`_
           {% endif %}
 
           {% for item in valid_custom %}
