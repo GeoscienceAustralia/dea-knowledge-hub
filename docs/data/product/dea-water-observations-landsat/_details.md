@@ -34,7 +34,16 @@ This version (3.1.6) has been further updated with changes to the way different 
 
 The table below describes the meaning of each bit set per pixel in each WOFL. Where multiple factors impeding a clear observation are detected all the respective bits will be set. For example a value of 136 indicates water (128) AND terrain shadow (8) were observed for the pixel.
 
-![Bit assignment for DEA_WO_3.1.6](/_files/cmi/DEA_WO_3_BitFieldTable_resized.png)
+| Bit | Flagging        | Decimal Value | Description                                                              |
+|-----|-----------------|---------------|--------------------------------------------------------------------------|
+| 0   | no data         | 1             | Pixel masked out due to NO_DATA in NBART source, 0 = valid data in NBART |
+| 1   | contiguity      | 2             | Pixel masked out due to lack of data contiguity                          |
+| 2   | solar incidence | 4             | Pixel masked out due to solar incidence > 10 degrees                     |
+| 3   | terrain shadow  | 8             | Pixel masked out due to terrain shadow                                   |
+| 4   | high slope      | 16            | Pixel masked out due to high slope                                       |
+| 5   | cloud shadow    | 32            | Pixel masked out due to cloud shadow                                     |
+| 6   | cloud           | 64            | Pixel masked out due to cloud                                            |
+| 7   | water           | 128           | Water detected                                                           |
 
 Full details of the original algorithms and features of DEA Water Observations can be found in the Water Observations from Space paper by Mueller et al. (2015).
 

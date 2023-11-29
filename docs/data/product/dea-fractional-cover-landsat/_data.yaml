@@ -9,15 +9,15 @@ latest_version_link: null
 product_type: Derivative
 spatial_data_type: Raster
 time_span:
-  start: 3 Mar 1978
-  end: 1 Aug 2030
-update_frequency: Weekly
+  start: 16/08/1986
+  end: present
+update_frequency: Daily
 product_ids:
   - ga_ls_fc_3
 
 parent_products:
-  name: null
-  link: null
+  name: Landsat 5, 7 and 8 NBART and Observational Attributes
+  link: /data/category/dea-surface-reflectance/
 collection:
   name: Geoscience Australia Landsat Collection 3
   link: null
@@ -35,25 +35,25 @@ tags:
 
 # Access
 
-maps:
-  - link: https://maps.dea.ga.gov.au/
-    name: null
+maps: null
 
-explorers: null
+explorers:
+  - link: https://explorer.dea.ga.gov.au/products/ga_ls_fc_3
+    name: Data explorer
 
 data:
   - link: https://dapds00.nci.org.au/thredds/catalog/jw04/ga_ls_fc_3/catalog.html
-    name: "NCI - THREDDS "
+    name: Access the data on NCI
   - link: https://data.dea.ga.gov.au/?prefix=derivative/ga_ls_fc_3/
-    name: Digital Earth Australia - Public Data
+    name: Access the data on AWS
 
 code_examples:
-  - link: https://docs.dea.ga.gov.au/notebooks/DEA_products/DEA_Fractional_Cover.html
+  - link: /notebooks/dea_products/dea_fractional_cover/
     name: Jupyter notebook
 
 web_services:
   - link: https://ows.dea.ga.gov.au
-    name: Digital Earth Australia OGC Web Services
+    name: Web Services
 
 custom: null
 

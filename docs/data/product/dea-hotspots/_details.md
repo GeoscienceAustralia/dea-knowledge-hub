@@ -6,23 +6,32 @@ It is important we are able to accurately map and monitor fires on a near real-t
 
 ## What this product offers
 
-Digital Earth Australia (DEA) Hotspots is an internet-based national bushfire monitoring and mapping system run by Geoscience Australia to provide timely information to emergency service managers across Australia about 'Hotspots' (areas of elevated thermal spectral response).
+Digital Earth Australia (DEA) Hotspots is a national bushfire monitoring system that provides timely information about hotspots to emergency service managers and critical infrastructure providers across Australia. Updated with new information every 10 minutes, the mapping system uses satellite sensors to detect areas producing high levels of infrared radiation (called Hotspots) to allow users to identify potential fire locations with a possible risk to communities and property.
 
-The mapping system allows you to identify the locations of fire which create a potential risk to communities and property.
+DEA Hotspots is not published in real time and should not be used for safety of life decisions.
 
-**Important: DEA Hotspots is not to be used for safety of life decisions.**
+There are two versions of the DEA Hotspots system:
+* DEA Hotspots public version: [https://hotspots.dea.ga.gov.au/](https://hotspots.dea.ga.gov.au/)
+  * Available for anyone to access and use
+* DEA Hotspots secure users’ version: [https://hotspots.dea.ga.gov.au/login](https://hotspots.dea.ga.gov.au/login)
+  * Available for emergency managers and associated organisations
+  * Provides priority access to the system during periods of high demand
+  * Includes additional sources of Hotspot information
+  * To apply for access, email earth.observation@ga.gov.au
 
 % ## Data description
 
 ## Applications
 
+Hotspots can indicate possible active fires in some circumstances. Taken as an ensemble, Hotspots provide an overview of thermal activity in Australia and capture the pattern of possible fires across the Australian continent over time.
+
 This application allows you to visualise, search and download current and historic Hotspot data for any location Australia-wide.
 
-You can also overlay satellite passes, Himawari-8 mosaics, topography, burnt areas, and other imagery sources such as Sentinel 2A & B Near Real-Time products, Landsat, Surface Reflectance and Barest Earth.
+You can also overlay satellite passes, topography, burnt areas, and other imagery sources such as Sentinel 2A & 2B Near Real-Time products.
 
 The system can be used by:
-
 * emergency services
+  * Emergency management agencies use Hotspots as one of many operational data feeds to inform their broad situational awareness of, and at times tactical response to, fires.
 * climate change researchers
 * the media
 * policy makers
@@ -31,40 +40,31 @@ The system can be used by:
 ## Technical information
 
 ### Important notes about Hotspots
+* Each Hotspot is represented by a spot on the map, derived from (a growing number of) satellite-born instruments that detect light in the thermal wavelengths. 
+* Hotspots can indicate possible active fires in some circumstances. Taken as an ensemble, Hotspots provide an overview of thermal activity in Australia and capture the pattern of possible fires across the Australian continent overtime.
+* Emergency management agencies use Hotspots as one of many operational data feeds to inform their broad situational awareness of, and at times tactical response to, fires.
+* DEA Hotspots should not be used for safety of life decisions. For local updates and alerts, please refer to your state emergency or fire service.
+* Hotspots are not presented in real-time and not designed to be used in isolation of other data sources. It is not accurate enough to be relied upon for time-critical detection and location of fires.
+* The colour of the spot represents the time the Hotspot was last observed by a passing satellite (e.g., 0-2 hours). The colour does not indicate severity.
+* The size of the Hotspots does not indicate the size of the fire. 
+  * If you zoom in on the map you will notice that the size of the Hotspot dot will change. 
+* The Hotspot location on any map (no matter how detailed) is only accurate to ± 375 m at best (VIIRS).
 
-* Each Hotspot is represented by a spot on the map. The colour of the spot represents the time the Hotspot was last observed by a passing satellite (e.g. 0-2 hours). The colour does not indicate severity.
-* Hotspots are not an accurate measure for the size or location of the fire.  
-* The information on DEA Hotspots is not presented in real-time.  
-* DEA Hotspots is not designed to be used in isolation of other data sources. It is not accurate enough to be relied upon for time-critical detection and location of fires.
-* The Hotspot location on any map (no matter how detailed) is only accurate to 1.5 km at best.  
-* Hotspots are potential bushfires, but could also indicate other phenomena, such as gas fires, heavy industry, furnaces and jet contrails.  
-* Some Hotspots may not be captured and produced if associated imagery is missing.
+### Hotspot data generation
 
-### How Hotspots are generated
+At best, hotspots information is 17 minutes old (this is how long it takes to download and process data into hotspots after each satellite pass).
+* The Himawari-9 satellite is a geostationary satellite, which covers Australia at all times, and provides updates every 10 minutes, however the information is not published in real time.
+* All other satellites pass over a given area up to 4 times a day, and each pass covers only a part of Australia, which means some fires are not detected because the satellite was not looking over that area at the appropriate time.  
 
-1) Satellites regularly orbit the Earth and capture images of its surface.    
-For a given location in Australia, an image is captured 4-7 times per day by one of the satellites.  
 Thermal infrared sensors on-board the satellites can detect areas with unusually high temperatures. We call these areas Hotspots.
-
-2) After each satellite pass, the images are transmitted to the Geoscience Australia ground station located in Alice Springs.  
-
-3) The thermal data is processed, and then added to the DEA Hotspots map.
-
-Typically, the entire procedure (from satellite imaging to Hotspot mapping) takes 20 mins. This means, at best, the data on DEA Hotspots is 20 mins old. It is not presented in real time.  
 
 ### Satellites and sensors
 
-The Hotspot data is collected by different satellites, including the following:
-
-**Satellite** **On-board thermal sensor**
-
-NASA Terra and AquaModerate Resolution Imaging Spectroradiometer (MODIS)
-
-NOAA Advanced Very High Resolution Radiometer (AVHRR)
-
-Suomi-NPP Visible Infrared Imaging Radiometer (VIIRS)
-
-Himawari-8 Advanced Himawari Imager (AHI)
+DEA Hotspot sources include the:
+* Moderate Resolution Imaging Spectroradiometer (MODIS) sensor on the National Aeronautics and Space Administration (NASA) Terra and Aqua polar orbiting satellites
+* Advanced Very High Resolution Radiometer (AVHRR) nighttime imagery from the National Oceanic and Atmospheric Administration (NOAA-19) polar orbiting satellite
+* Visible Infrared Imaging Radiometer Suite (VIIRS) on the Suomi National Polar orbiting Partnership (NPP) satellite and NOAA-20 polar orbiting satellite
+* Advanced Himawari Imager (AHI) sensor operated by the Japan Meteorological Agency (JMA) on the Himawari-9 geostationary satellite
 
 % ## Lineage
 
