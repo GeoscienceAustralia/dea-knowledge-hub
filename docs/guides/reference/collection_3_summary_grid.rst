@@ -90,9 +90,9 @@ References
 -  `Download the Grid in GeoJSON
    map <https://data.dea.ga.gov.au/derivative/ga_summary_grid_c3.geojson>`__
 -  `DEA Collection 3 Grid Specification in CMI
-   Specifications <https://cmi.ga.gov.au/node/701>`__
+   Specifications </node/701>`__
 -  `Grid Specification extent in CMI
-   Schema <https://cmi.ga.gov.au/raster-schema/dea-collection-3-grid-specification>`__
+   Schema </raster-schema/dea-collection-3-grid-specification>`__
 -  `The Grid as implemented in ODC Statistician
    <https://github.com/opendatacube/odc-tools/blob/dff7b984464a4cc9d6bd9f6f444ef4a292c730d0/libs/dscache/odc/dscache/tools/tiling.py#L13-L41>`__
 

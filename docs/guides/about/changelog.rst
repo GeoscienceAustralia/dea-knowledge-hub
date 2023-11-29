@@ -26,14 +26,14 @@ Technical DEA internals which have changed in the last week.
 Thanks to the `Geoscience Australia Landsat Collection Upgrade (video)
 <https://www.youtube.com/watch?v=BNEIG91lu44>`_, our data catalogue now
 includes Collection 3 data for `DEA Surface Reflectance
-<https://cmi.ga.gov.au/collection/geoscience-australia-landsat-collection-3>`_,
+</collection/geoscience-australia-landsat-collection-3>`_,
 also available through `OWS <https://ows.dea.ga.gov.au/>`_. Other Collection 3
 products will soon follow, including DEA Water Observations (WOfS), and DEA
 Fractional Cover.
  
 `DEA Notebooks <https://github.com/GeoscienceAustralia/dea-notebooks/tree/develop/DEA_datasets>`_ 
 and the `User Guide`_ have been updated with Collection 3 code examples to reflect the upgrade, 
-and our `Content Management Interface <https://cmi.ga.gov.au/>`_ and 
+and our `Content Management Interface </>`_ and 
 `DEA Maps platforms <https://maps.dea.ga.gov.au/>`_ are also being updated.
  
 Users of Collection 2 are encouraged to use Collection 3 data.

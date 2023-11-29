@@ -14,7 +14,7 @@ This product takes Landsat 8 OLI-TIRS imagery captured over the Australian conti
 
 The resolution is a 30 m grid based on the USGS Landsat Collection 1 archive.
 
-This product does not apply terrain illumination correction. See the sibling product [DEA Surface Reflectance NBART (Landsat 8 OLI-TIRS)](https://cmi.ga.gov.au/data-products/dea/400/dea-surface-reflectance-nbart-landsat-8-oli-tirs).
+This product does not apply terrain illumination correction. See the sibling product [DEA Surface Reflectance NBART (Landsat 8 OLI-TIRS)](/data-products/dea/400/dea-surface-reflectance-nbart-landsat-8-oli-tirs).
 
 % ## Data description
 

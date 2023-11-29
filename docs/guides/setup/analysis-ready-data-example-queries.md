@@ -33,19 +33,19 @@ data = dc.load(
 
 The Data Cube query produces the following images:
 
-![AB 3](https://cmi.ga.gov.au/sites/default/files/inline-images/figure%20AB%20new%203.JPG)
+![AB 3](/sites/default/files/inline-images/figure%20AB%20new%203.JPG)
 
 **Image A** is the false colour composite ['nbart_nir', 'nbart_red', 'nbart_green'] displayed as [Red, Green, Blue] from the **GA Landsat 5 TM NBART Collection 3 **product.
 
 **Image B** is the false colour composite ['nbart_nir', 'nbart_red', 'nbart_green'] displayed as [Red, Green, Blue] from the **GA Landsat 5 TM NBAR Collection 3 **product.
 
-![CD 2](https://cmi.ga.gov.au/sites/default/files/inline-images/figure%20CD%20new%202.JPG)
+![CD 2](/sites/default/files/inline-images/figure%20CD%20new%202.JPG)
 
 **Image C** is another **GA Landsat 5 TM NBART Collection 3** false colour composite, but uses a different combination of spectral bands ['nbart_swir_2', 'nbart_nir', 'nbart_blue'] displayed as [Red, Green, Blue].
 
 **Image D** is the relative slope dataset.
 
-![E 2](https://cmi.ga.gov.au/sites/default/files/inline-images/figure%20E%20new%202.JPG)
+![E 2](/sites/default/files/inline-images/figure%20E%20new%202.JPG)
 
 **Image E** is the Fmask classification result from the **GA Landsat 5 TM NBART Collection 3** product. The colours for the Fmask classification are displayed as:
 
@@ -55,7 +55,7 @@ The Data Cube query produces the following images:
 -   Cyan = snow
 -   Dark blue = water
 
-![FG 1](https://cmi.ga.gov.au/sites/default/files/inline-images/figure%20FG%20new_1.JPG)
+![FG 1](/sites/default/files/inline-images/figure%20FG%20new_1.JPG)
 
 **Images F and G** represent the **GA Landsat 5TM NBART Collection 3** false colour composite, with pre- and post-application of the contiguity mask, respectively.
 
@@ -86,7 +86,7 @@ data = dc.load(
 
 The Data Cube query produces the following image, which is the false colour composite ['nbar_nir', 'nbar_red', 'nbar_green'] displayed as [Red, Green, Blue].
 
-![nbar new](https://cmi.ga.gov.au/sites/default/files/inline-images/nbar%20new.JPG)
+![nbar new](/sites/default/files/inline-images/nbar%20new.JPG)
 
 ## Example 3 &ndash; NBART product
 
@@ -113,7 +113,7 @@ data = dc.load(
 
 The Data Cube query produces the following images:
 
-![nbart new](https://cmi.ga.gov.au/sites/default/files/inline-images/nbart%20new.JPG)
+![nbart new](/sites/default/files/inline-images/nbart%20new.JPG)
 
 **Image A** is the false colour composite ['nbart_nir', 'nbart_red', 'nbart_green'] displayed as [Red, Green, Blue].
 
@@ -190,7 +190,7 @@ The fields are defined as follows:
 
 ### Flow process for determining the label (nrt, interim or final)
 
-![logic max](https://cmi.ga.gov.au/sites/default/files/inline-images/nrt-interim-final-logic%20-%20resize%20-%20max.jpg)
+![logic max](/sites/default/files/inline-images/nrt-interim-final-logic%20-%20resize%20-%20max.jpg)
 
 ### Example files
 

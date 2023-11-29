@@ -3,7 +3,7 @@
 # General
 
 cmi_node: 639
-cmi_url: https://cmi.ga.gov.au/data-products/dea/639/dea-water-observations-provisional-sentinel-2-nrt
+cmi_url: /data-products/dea/639/dea-water-observations-provisional-sentinel-2-nrt
 published_date: "2023-04-06"
 author: J. M. @ ga.gov.au
 created: 2021-05-04T15:20:36+1000

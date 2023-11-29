@@ -3,7 +3,7 @@
 # General
 
 cmi_node: 399
-cmi_url: https://cmi.ga.gov.au/data-products/dea/399/dea-surface-reflectance-nbart-landsat-7-etm
+cmi_url: /data-products/dea/399/dea-surface-reflectance-nbart-landsat-7-etm
 published_date: "0019-02-26"
 author: J. S. @ ga.gov.au
 created: 2018-03-12T12:00:00+1100
