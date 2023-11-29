@@ -22,7 +22,7 @@ The DEA Sandbox is free to use. Visit https://app.sandbox.dea.ga.gov.au to sign 
 for a new account, or sign in if you have an existing account. A verification
 code will be sent to the email address you register with.
 
-.. image:: /_static/Sandbox/sandbox_signup.jpg
+.. image:: /_files/sandbox/sandbox_signup.jpg
    :align: center
    :alt: Sandbox register
 
@@ -41,7 +41,7 @@ left sidebar (containing a file browser and other useful features), and a menu
 bar along the top. The main work area is where Jupyter notebooks will be displayed
 once opened. By default, the Launcher is displayed, which allows you to create new files.
 
-.. image:: /_static/Sandbox/sandbox-jupyterlab-startup.png
+.. image:: /_files/sandbox/sandbox-jupyterlab-startup.png
    :align: center
    :alt: JupyterLab Start Up
 

@@ -23,7 +23,7 @@ Open the DEA Metadata Explorer
 ------------------------------
 Open https://explorer.dea.ga.gov.au/. This will display the Metadata Explorer user interface.
 
-.. figure:: /_static/DEA_explorer/DEA_explorer_interface_annotated.png
+.. image:: /_static/DEA_explorer/DEA_explorer_interface_annotated.png
    :align: center
    :alt: DEA Explorer interface
 
