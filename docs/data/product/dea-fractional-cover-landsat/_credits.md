@@ -1,4 +1,6 @@
-% ## Acknowledgments
+## Acknowledgments
+
+The Fractional cover algorithm was produced by the Joint Remote Sensing Research Program using data sourced from US Geological Survey.
 
 ## License and copyright
 

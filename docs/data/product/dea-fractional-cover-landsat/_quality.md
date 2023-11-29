@@ -2,7 +2,10 @@
 
 To provide an estimate of accuracy the FC algorithm results were compared with 1565 field sites that were not used to train the FC model.
 
-Based on the comparison with this independent field data the FC product has an overall Root Mean Squared Error (RMSE) of 11.9%. The error margins vary for the three different layers: green RMSE: 11.9%, non-green RMSE: 17.1% and bare RMSE: 14.6%.
+Based on the comparison with this independent field data the FC product has an overall Root Mean Squared Error (RMSE) of 11.9%. The error margins vary for the three different layers: 
+* green RMSE: 11.9%, 
+* non-green RMSE: 17.1%
+* bare RMSE: 14.6%
 
 The effect of soil moisture may impact the accuracy of the FC product, and the similarity between some bare soil endmembers and non-photosynthetic vegetation endmembers can lead to model instability.  Soil types/colours that were not included in the model training data may also be error prone. Pixels that show poor model stability are flagged in the model error band as a value of 2, and can be omitted from further analysis if necessary.
 
@@ -16,7 +19,7 @@ Whilst the same training data has been used to train both the JRSRP fractional c
 
 ## Quality assurance
 
-The following details are an extract from the information contained at: [http://data.auscover.org.au/xwiki/bin/view/Product+pages/Landsat+Seasonal+Fractional+Cover](http://data.auscover.org.au/xwiki/bin/view/Product+pages/Landsat+Seasonal+Fractional+Cover )
+The following details are an extract from the information contained at: [https://portal.tern.org.au/metadata/22026](https://portal.tern.org.au/metadata/22026)
 
 The bare soil, green vegetation and non-green vegetation endmembers are calculated using models linked to an intensive field sampling program that covers a wide range of Australian landscapes covering a wide variety of vegetation, soil and climate types were sampled to measure overstorey and ground cover following the procedure outlined in Muir et al (2011).
 
