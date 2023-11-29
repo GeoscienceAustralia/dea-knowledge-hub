@@ -409,7 +409,7 @@ Glossary
       NRT data is a less refined/calibrated dataset, which is available much sooner after satellite
       acquisition than standard :term:`ARD` data.
 
-      For more information, see `DEA dataset maturity. <https://docs.dea.ga.gov.au/reference/dataset_maturity_guide.html>`_
+      For more information, see `DEA dataset maturity. </reference/dataset_maturity_guide.html>`_
 
    Open Data Cube
    ODC
@@ -449,7 +449,7 @@ Glossary
       bands that measure a narrow range of light at lower resolution. On Landsat 7, 8, and 9, the
       panchromatic band can be used to "sharpen" 30 metre visible bands to higher 15 metre resolution.
 
-      For more information, see `Pansharpening Landsat. <https://docs.dea.ga.gov.au/notebooks/How_to_guides/Pansharpening.html>`_
+      For more information, see `Pansharpening Landsat. </notebooks/How_to_guides/Pansharpening.html>`_
 
    Pixel
       The minimum size area on the ground detectable by a remote sensing device. The size varies depending

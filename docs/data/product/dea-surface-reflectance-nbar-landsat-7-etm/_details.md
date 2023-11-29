@@ -1,10 +1,9 @@
 ## Background
 
-***
-
-*This is a sub-product of [DEA Surface Reflectance (Landsat 7 ETM+)](/data/product/dea-surface-reflectance-landsat-7-etm#details). See the parent product for more information.*
-
-***
+:::{admonition} This is a sub-product
+:class: note
+This is a sub-product of [DEA Surface Reflectance (Landsat 7 ETM+)](/data/product/dea-surface-reflectance-landsat-7-etm#details). See the parent product for more information.
+:::
 
 Radiance data collected by Landsat 7 Enhanced Thematic Mapper Plus (ETM+) sensors can be affected by atmospheric conditions, sun position, sensor view angle, surface slope and surface aspect. These need to be reduced or removed to ensure the data is consistent and can be compared over time.
 

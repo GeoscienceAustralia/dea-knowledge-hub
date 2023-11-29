@@ -3,7 +3,7 @@
 # General
 
 cmi_node: 686
-cmi_url: https://cmi.ga.gov.au/data-products/dea/686/dea-water-observations-statistics-landsat
+cmi_url: /data-products/dea/686/dea-water-observations-statistics-landsat
 published_date: "2021-10-08"
 author: N. M. @ ga.gov.au
 created: 2021-10-08T12:04:55+1100

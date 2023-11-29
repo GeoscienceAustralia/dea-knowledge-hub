@@ -3,7 +3,7 @@
 # General
 
 cmi_node: 824
-cmi_url: https://cmi.ga.gov.au/data-products/dea/824/dea-surface-reflectance-nbart-sentinel-2b-msi
+cmi_url: /data-products/dea/824/dea-surface-reflectance-nbart-sentinel-2b-msi
 published_date: "2022-03-16"
 author: A. O. @ gmail.com
 created: 2022-11-16T14:07:34+1100

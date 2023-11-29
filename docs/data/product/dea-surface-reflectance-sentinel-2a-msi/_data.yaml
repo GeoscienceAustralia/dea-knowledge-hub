@@ -52,7 +52,7 @@ data:
     name: Access the data on NCI
 
 code_examples:
-  - link: https://docs.dea.ga.gov.au/notebooks/DEA_products/DEA_Sentinel2_Surface_Reflectance.html
+  - link: /notebooks/DEA_products/DEA_Sentinel2_Surface_Reflectance.html
     name: Code examples
 
 web_services:

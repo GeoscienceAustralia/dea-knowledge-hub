@@ -3,7 +3,7 @@
 # General
 
 cmi_node: 823
-cmi_url: https://cmi.ga.gov.au/data-products/dea/823/dea-surface-reflectance-oa-sentinel-2b-msi
+cmi_url: /data-products/dea/823/dea-surface-reflectance-oa-sentinel-2b-msi
 published_date: "2022-03-16"
 author: A. O. @ gmail.com
 created: 2022-11-16T14:05:40+1100

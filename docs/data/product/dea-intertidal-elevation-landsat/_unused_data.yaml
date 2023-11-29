@@ -3,7 +3,7 @@
 # General
 
 cmi_node: 325
-cmi_url: https://cmi.ga.gov.au/data-products/dea/325/dea-intertidal-elevation-landsat
+cmi_url: /data-products/dea/325/dea-intertidal-elevation-landsat
 published_date: "2018-11-29"
 author: R. B. @ ga.gov.au
 created: 2018-03-12T12:00:00+1100

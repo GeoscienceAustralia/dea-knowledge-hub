@@ -1,6 +1,9 @@
 ## Background
 
-*This is a sub-product of [DEA Surface Reflectance (Sentinel-2A MSI)](/data/product/dea-surface-reflectance-sentinel-2a-msi). See the parent product for more information.*
+:::{admonition} This is a sub-product
+:class: note
+This is a sub-product of [DEA Surface Reflectance (Sentinel-2A MSI)](/data/product/dea-surface-reflectance-sentinel-2a-msi). See the parent product for more information.
+:::
 
 Reflectance data at top of atmosphere (TOA) collected by Sentinel-2A MSI sensors can be affected by atmospheric conditions, sun position, sensor view angle, surface slope and surface aspect.
 

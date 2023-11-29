@@ -9,21 +9,21 @@ DEA Land Cover provides annual land cover classifications for Australia using th
 DEA Land Cover divides the landscape into six base land cover types, which are then further detailed through the addition of environmental descriptors. The structure is as follows:
 
 * Cultivated Terrestrial Vegetation
- * percentage of cover
- * life form (herbaceous only)
+  * percentage of cover
+  * life form (herbaceous only)
 * Natural Terrestrial Vegetation
- * percentage of cover
- * life form (woody or herbaceous)
+  * percentage of cover
+  * life form (woody or herbaceous)
 * Natural Aquatic Vegetation
- * percentage of cover
- * life form (woody or herbaceous)
- * water seasonality
+  * percentage of cover
+  * life form (woody or herbaceous)
+  * water seasonality
 * Artificial Surfaces 
 * Natural Bare
- * percentage of bare cover
+  * percentage of bare cover
 * Aquatic
- * water persistence
- * intertidal area
+  * water persistence
+  * intertidal area
 
 % ## Data description
 
@@ -31,29 +31,17 @@ DEA Land Cover divides the landscape into six base land cover types, which
 
 Annual Land Cover information can be used in a number of ways to support the monitoring and management of environments in Australia. These include, but are not limited to, the following areas in environmental monitoring, primary industries and the interests and safety of the Australian community: 
 
-Environmental monitoring 
-
-* Ecosystem mapping 
- 
-* Carbon dynamics 
- 
-* Erosion management 
- 
-
-Agriculture Sector 
-
-* Monitoring crop responses to water availability 
- 
-* Understanding drought impact on vegetation 
- 
-
-Community interests 
-
-* Map urban expansion within Australia  
- 
-* Mapping impacts of natural disasters 
- 
-* Bushfire recovery
+* Environmental monitoring 
+  * Ecosystem mapping 
+  * Carbon dynamics 
+  * Erosion management 
+* Agriculture Sector 
+  * Monitoring crop responses to water availability 
+  * Understanding drought impact on vegetation 
+* Community interests 
+  * Map urban expansion within Australia
+  * Mapping impacts of natural disasters 
+  * Bushfire recovery
 
 ## Technical information
 
@@ -63,10 +51,9 @@ DEA Land Cover consists of eight datasets: The base (level 3) classification, se
 
 Detailed layer descriptions, including known issues, are provided in the following sections.
 
-**Datasets, values and definitions** 
+### Datasets, values and definitions
 
-#### **Level 3**  
-
+:::{dropdown} Level 3
 The base Level 3 land cover classification
 
     0: No data   
@@ -160,95 +147,175 @@ Describes the percentage of bare in naturally bare areas 
     12: Very sparsely vegetated (20 to 60 % bare) 
 
     15: Bare areas, unvegetated (> 60 % bare)
+:::
 
-#### **Level 4**
-
+:::{dropdown} Level 4
 All level 3 and level 4 classes for a given pixel are combined to give a single classification value
 
-0:      No data  
-1:      Cultivated Terrestrial Vegetated  
-3:      Cultivated Terrestrial Vegetated: Herbaceous  
-4:      Cultivated Terrestrial Vegetated: Closed (> 65 %)  
-5:      Cultivated Terrestrial Vegetated: Open (40 to 65 %)  
-6:      Cultivated Terrestrial Vegetated: Open (15 to 40 %)  
-7:      Cultivated Terrestrial Vegetated: Sparse (4 to 15 %)  
-8:      Cultivated Terrestrial Vegetated: Scattered (1 to 4 %)  
-14:      Cultivated Terrestrial Vegetated: Herbaceous Closed (> 65 %)  
-15:      Cultivated Terrestrial Vegetated: Herbaceous Open (40 to 65 %)  
-16:      Cultivated Terrestrial Vegetated: Herbaceous Open (15 to 40 %)  
-17:      Cultivated Terrestrial Vegetated: Herbaceous Sparse (4 to 15 %)  
-18:      Cultivated Terrestrial Vegetated: Herbaceous Scattered (1 to 4 %)  
-19:      Natural Terrestrial Vegetated  
-20:      Natural Terrestrial Vegetated: Woody  
-21:      Natural Terrestrial Vegetated: Herbaceous  
-22:      Natural Terrestrial Vegetated: Closed (> 65 %)  
-23:      Natural Terrestrial Vegetated: Open (40 to 65 %)  
-24:      Natural Terrestrial Vegetated: Open (15 to 40 %)  
-25:      Natural Terrestrial Vegetated: Sparse (4 to 15 %)  
-26:      Natural Terrestrial Vegetated: Scattered (1 to 4 %)  
-27:      Natural Terrestrial Vegetated: Woody Closed (> 65 %)  
-28:      Natural Terrestrial Vegetated: Woody Open (40 to 65 %)  
-29:      Natural Terrestrial Vegetated: Woody Open (15 to 40 %)  
-30:      Natural Terrestrial Vegetated: Woody Sparse (4 to 15 %)  
-31:      Natural Terrestrial Vegetated: Woody Scattered (1 to 4 %)  
-32:      Natural Terrestrial Vegetated: Herbaceous Closed (> 65 %)  
-33:      Natural Terrestrial Vegetated: Herbaceous Open (40 to 65 %)  
-34:      Natural Terrestrial Vegetated: Herbaceous Open (15 to 40 %)  
-35:      Natural Terrestrial Vegetated: Herbaceous Sparse (4 to 15 %)  
-36:      Natural Terrestrial Vegetated: Herbaceous Scattered (1 to 4 %)  
-55:      Natural Aquatic Vegetated  
-56:      Natural Aquatic Vegetated: Woody  
-57:      Natural Aquatic Vegetated: Herbaceous  
-58:      Natural Aquatic Vegetated: Closed (> 65 %)  
-59:      Natural Aquatic Vegetated: Open (40 to 65 %)  
-60:      Natural Aquatic Vegetated: Open (15 to 40 %)  
-61:      Natural Aquatic Vegetated: Sparse (4 to 15 %)  
-62:      Natural Aquatic Vegetated: Scattered (1 to 4 %)  
-63:      Natural Aquatic Vegetated: Woody Closed (> 65 %)  
-64:      Natural Aquatic Vegetated: Woody Closed (> 65 %) Water > 3 months (semi-) permanent  
-65:      Natural Aquatic Vegetated: Woody Closed (> 65 %) Water < 3 months (temporary or seasonal)  
-66:      Natural Aquatic Vegetated: Woody Open (40 to 65 %)  
-67:      Natural Aquatic Vegetated: Woody Open (40 to 65 %) Water > 3 months (semi-) permanent  
-68:      Natural Aquatic Vegetated: Woody Open (40 to 65 %) Water < 3 months (temporary or seasonal)  
-69:      Natural Aquatic Vegetated: Woody Open (15 to 40 %)  
-70:      Natural Aquatic Vegetated: Woody Open (15 to 40 %) Water > 3 months (semi-) permanent  
-71:      Natural Aquatic Vegetated: Woody Open (15 to 40 %) Water < 3 months (temporary or seasonal)  
-72:      Natural Aquatic Vegetated: Woody Sparse (4 to 15 %)  
-73:      Natural Aquatic Vegetated: Woody Sparse (4 to 15 %) Water > 3 months (semi-) permanent  
-74:      Natural Aquatic Vegetated: Woody Sparse (4 to 15 %) Water < 3 months (temporary or seasonal)  
-75:      Natural Aquatic Vegetated: Woody Scattered (1 to 4 %)  
-76:      Natural Aquatic Vegetated: Woody Scattered (1 to 4 %) Water > 3 months (semi-) permanent  
-77:      Natural Aquatic Vegetated: Woody Scattered (1 to 4 %) Water < 3 months (temporary or seasonal)  
-78:      Natural Aquatic Vegetated: Herbaceous Closed (> 65 %)  
-79:      Natural Aquatic Vegetated: Herbaceous Closed (> 65 %) Water > 3 months (semi-) permanent  
-80:      Natural Aquatic Vegetated: Herbaceous Closed (> 65 %) Water < 3 months (temporary or seasonal)  
-81:      Natural Aquatic Vegetated: Herbaceous Open (40 to 65 %)  
-82:      Natural Aquatic Vegetated: Herbaceous Open (40 to 65 %) Water > 3 months (semi-) permanent  
-83:      Natural Aquatic Vegetated: Herbaceous Open (40 to 65 %) Water < 3 months (temporary or seasonal)  
-84:      Natural Aquatic Vegetated: Herbaceous Open (15 to 40 %)  
-85:      Natural Aquatic Vegetated: Herbaceous Open (15 to 40 %) Water > 3 months (semi-) permanent  
-86:      Natural Aquatic Vegetated: Herbaceous Open (15 to 40 %) Water < 3 months (temporary or seasonal)  
-87:      Natural Aquatic Vegetated: Herbaceous Sparse (4 to 15 %)  
-88:      Natural Aquatic Vegetated: Herbaceous Sparse (4 to 15 %) Water > 3 months (semi-) permanent  
-89:      Natural Aquatic Vegetated: Herbaceous Sparse (4 to 15 %) Water < 3 months (temporary or seasonal)  
-90:      Natural Aquatic Vegetated: Herbaceous Scattered (1 to 4 %)  
-91:      Natural Aquatic Vegetated: Herbaceous Scattered (1 to 4 %) Water > 3 months (semi-) permanent  
-92:      Natural Aquatic Vegetated: Herbaceous Scattered (1 to 4 %) Water < 3 months (temporary or seasonal)  
-93:      Artificial Surface  
-94:      Natural Surface  
-95:      Natural Surface: Sparsely vegetated  
-96:      Natural Surface: Very sparsely vegetated  
-97:      Natural Surface: Bare areas, unvegetated  
-98:      Water  
-99:      Water: (Water)  
-100:      Water: (Water) Tidal area  
-101:      Water: (Water) Perennial (> 9 months)  
-102:      Water: (Water) Non-perennial (7 to 9 months)  
-103:      Water: (Water) Non-perennial (4 to 6 months)  
-104:      Water: (Water) Non-perennial (1 to 3 months)
+    0:      No data  
 
-#### **Level 3 Class descriptions** 
+    1:      Cultivated Terrestrial Vegetated  
 
+    3:      Cultivated Terrestrial Vegetated: Herbaceous  
+
+    4:      Cultivated Terrestrial Vegetated: Closed (> 65 %)  
+
+    5:      Cultivated Terrestrial Vegetated: Open (40 to 65 %)  
+
+    6:      Cultivated Terrestrial Vegetated: Open (15 to 40 %)  
+
+    7:      Cultivated Terrestrial Vegetated: Sparse (4 to 15 %)  
+
+    8:      Cultivated Terrestrial Vegetated: Scattered (1 to 4 %)  
+
+    14:      Cultivated Terrestrial Vegetated: Herbaceous Closed (> 65 %)  
+
+    15:      Cultivated Terrestrial Vegetated: Herbaceous Open (40 to 65 %)  
+
+    16:      Cultivated Terrestrial Vegetated: Herbaceous Open (15 to 40 %)  
+
+    17:      Cultivated Terrestrial Vegetated: Herbaceous Sparse (4 to 15 %)  
+
+    18:      Cultivated Terrestrial Vegetated: Herbaceous Scattered (1 to 4 %)  
+
+    19:      Natural Terrestrial Vegetated  
+
+    20:      Natural Terrestrial Vegetated: Woody  
+
+    21:      Natural Terrestrial Vegetated: Herbaceous  
+
+    22:      Natural Terrestrial Vegetated: Closed (> 65 %)  
+
+    23:      Natural Terrestrial Vegetated: Open (40 to 65 %)  
+
+    24:      Natural Terrestrial Vegetated: Open (15 to 40 %)  
+
+    25:      Natural Terrestrial Vegetated: Sparse (4 to 15 %)  
+
+    26:      Natural Terrestrial Vegetated: Scattered (1 to 4 %)  
+
+    27:      Natural Terrestrial Vegetated: Woody Closed (> 65 %)  
+
+    28:      Natural Terrestrial Vegetated: Woody Open (40 to 65 %)  
+
+    29:      Natural Terrestrial Vegetated: Woody Open (15 to 40 %)  
+
+    30:      Natural Terrestrial Vegetated: Woody Sparse (4 to 15 %)  
+
+    31:      Natural Terrestrial Vegetated: Woody Scattered (1 to 4 %)  
+
+    32:      Natural Terrestrial Vegetated: Herbaceous Closed (> 65 %)  
+
+    33:      Natural Terrestrial Vegetated: Herbaceous Open (40 to 65 %)  
+
+    34:      Natural Terrestrial Vegetated: Herbaceous Open (15 to 40 %)  
+
+    35:      Natural Terrestrial Vegetated: Herbaceous Sparse (4 to 15 %)  
+
+    36:      Natural Terrestrial Vegetated: Herbaceous Scattered (1 to 4 %)  
+
+    55:      Natural Aquatic Vegetated  
+
+    56:      Natural Aquatic Vegetated: Woody  
+
+    57:      Natural Aquatic Vegetated: Herbaceous  
+
+    58:      Natural Aquatic Vegetated: Closed (> 65 %)  
+
+    59:      Natural Aquatic Vegetated: Open (40 to 65 %)  
+
+    60:      Natural Aquatic Vegetated: Open (15 to 40 %)  
+
+    61:      Natural Aquatic Vegetated: Sparse (4 to 15 %)  
+
+    62:      Natural Aquatic Vegetated: Scattered (1 to 4 %)  
+
+    63:      Natural Aquatic Vegetated: Woody Closed (> 65 %)  
+
+    64:      Natural Aquatic Vegetated: Woody Closed (> 65 %) Water > 3 months (semi-) permanent  
+
+    65:      Natural Aquatic Vegetated: Woody Closed (> 65 %) Water < 3 months (temporary or seasonal)  
+
+    66:      Natural Aquatic Vegetated: Woody Open (40 to 65 %)  
+
+    67:      Natural Aquatic Vegetated: Woody Open (40 to 65 %) Water > 3 months (semi-) permanent  
+
+    68:      Natural Aquatic Vegetated: Woody Open (40 to 65 %) Water < 3 months (temporary or seasonal)  
+
+    69:      Natural Aquatic Vegetated: Woody Open (15 to 40 %)  
+
+    70:      Natural Aquatic Vegetated: Woody Open (15 to 40 %) Water > 3 months (semi-) permanent  
+
+    71:      Natural Aquatic Vegetated: Woody Open (15 to 40 %) Water < 3 months (temporary or seasonal)  
+
+    72:      Natural Aquatic Vegetated: Woody Sparse (4 to 15 %)  
+
+    73:      Natural Aquatic Vegetated: Woody Sparse (4 to 15 %) Water > 3 months (semi-) permanent  
+
+    74:      Natural Aquatic Vegetated: Woody Sparse (4 to 15 %) Water < 3 months (temporary or seasonal)  
+
+    75:      Natural Aquatic Vegetated: Woody Scattered (1 to 4 %)  
+
+    76:      Natural Aquatic Vegetated: Woody Scattered (1 to 4 %) Water > 3 months (semi-) permanent  
+
+    77:      Natural Aquatic Vegetated: Woody Scattered (1 to 4 %) Water < 3 months (temporary or seasonal)  
+
+    78:      Natural Aquatic Vegetated: Herbaceous Closed (> 65 %)  
+
+    79:      Natural Aquatic Vegetated: Herbaceous Closed (> 65 %) Water > 3 months (semi-) permanent  
+
+    80:      Natural Aquatic Vegetated: Herbaceous Closed (> 65 %) Water < 3 months (temporary or seasonal)  
+
+    81:      Natural Aquatic Vegetated: Herbaceous Open (40 to 65 %)  
+
+    82:      Natural Aquatic Vegetated: Herbaceous Open (40 to 65 %) Water > 3 months (semi-) permanent  
+
+    83:      Natural Aquatic Vegetated: Herbaceous Open (40 to 65 %) Water < 3 months (temporary or seasonal)  
+
+    84:      Natural Aquatic Vegetated: Herbaceous Open (15 to 40 %)  
+
+    85:      Natural Aquatic Vegetated: Herbaceous Open (15 to 40 %) Water > 3 months (semi-) permanent  
+
+    86:      Natural Aquatic Vegetated: Herbaceous Open (15 to 40 %) Water < 3 months (temporary or seasonal)  
+
+    87:      Natural Aquatic Vegetated: Herbaceous Sparse (4 to 15 %)  
+
+    88:      Natural Aquatic Vegetated: Herbaceous Sparse (4 to 15 %) Water > 3 months (semi-) permanent  
+
+    89:      Natural Aquatic Vegetated: Herbaceous Sparse (4 to 15 %) Water < 3 months (temporary or seasonal)  
+
+    90:      Natural Aquatic Vegetated: Herbaceous Scattered (1 to 4 %)  
+
+    91:      Natural Aquatic Vegetated: Herbaceous Scattered (1 to 4 %) Water > 3 months (semi-) permanent  
+
+    92:      Natural Aquatic Vegetated: Herbaceous Scattered (1 to 4 %) Water < 3 months (temporary or seasonal)  
+
+    93:      Artificial Surface  
+
+    94:      Natural Surface  
+
+    95:      Natural Surface: Sparsely vegetated  
+
+    96:      Natural Surface: Very sparsely vegetated  
+
+    97:      Natural Surface: Bare areas, unvegetated  
+
+    98:      Water  
+
+    99:      Water: (Water)  
+
+    100:      Water: (Water) Tidal area  
+
+    101:      Water: (Water) Perennial (> 9 months)  
+
+    102:      Water: (Water) Non-perennial (7 to 9 months)  
+
+    103:      Water: (Water) Non-perennial (4 to 6 months)  
+
+    104:      Water: (Water) Non-perennial (1 to 3 months)
+:::
+
+:::{dropdown} Level 3 Class descriptions
 **Cultivated Terrestrial Vegetation (CTV)** 
 
 Cultivated Terrestrial Vegetation (CTV) is associated with agricultural areas where active cultivation has been observed. In version 1.0 only herbaceous cultivation is shown and describes vegetation of strongly varying cover, ranging from bare (e.g. ploughed) areas to fully developed crops. Whilst the continental product describes land cover, interpretation is complicated as the same terminology is used to report on land use. 
@@ -276,9 +343,9 @@ Natural Surfaces (NS) are comprised primarily of unconsolidated (often per
 **Water**  
 
 The Water class captures terrestrial and coastal open water such as dams, lakes, large rivers and the coastal and near-shore zone. 
+:::
 
-#### **Level 4 Class Descriptions**  
-
+:::{dropdown} Level 4 Class Descriptions
 **Lifeform (NTV, NAV and CTV; 2 classes)** 
 
 Lifeform represents the dominant vegetation type of a primarily vegetated area, discriminating woody from non-woody (herbaceous) vegetation. The Woody Cover Fraction models woody as vegetation of at least 2m in height and at least 20 % canopy cover. Hence the dominant vegetation in areas designated as woody in this product is considered to be composed of shrubs and trees. However where woody vegetation is not dominant in an area, the cover will be essentially herbaceous or bare. Hence some areas containing sparse trees or shrubs will likely be represented as herbaceous.
@@ -306,6 +373,7 @@ Intertidal water refers to primarily non-vegetated aquatic areas with systematic
 **Bare Gradation (NS; 3 classes)**  
 
 The bare gradation describes the percentage of bare surface in areas which contain sporadic or little persistent green vegetation through the year. The percentage reflects that much of the remaining area is brown or dead vegetation and is characteristic of the more arid parts of Australia.
+:::
 
 ## Lineage
 

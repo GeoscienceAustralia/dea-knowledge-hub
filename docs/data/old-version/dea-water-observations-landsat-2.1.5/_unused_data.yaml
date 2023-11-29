@@ -3,7 +3,7 @@
 # General
 
 cmi_node: 142
-cmi_url: https://cmi.ga.gov.au/data-products/dea/142/dea-water-observations-landsat-deprecated
+cmi_url: /data-products/dea/142/dea-water-observations-landsat-deprecated
 published_date: "2018-09-16"
 author: N. M. @ ga.gov.au
 created: 2018-03-12T12:00:00+1100

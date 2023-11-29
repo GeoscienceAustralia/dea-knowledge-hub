@@ -23,6 +23,7 @@ exclude_patterns = [
     "notebooks/Scientific_workflows",
     "notebooks/DEA_notebooks_template.ipynb",
     "notebooks/USAGE.rst",
+    "notebooks/Supplementary_data/README.rst",
 ]
 exclude_patterns += utilities.optional_exclude_pattern("LOCAL_ENABLE_USER_GUIDES", "guides")
 exclude_patterns += utilities.optional_exclude_pattern("LOCAL_ENABLE_DATA_PRODUCTS", "data")
@@ -121,3 +122,7 @@ html_context = {
 
 if os.environ.get("BUILD_MODE") == "production":
     html_context["google_analytics_ga4_tag"] = "G-4B9D450HR4"
+
+suppress_warnings = [
+    "etoc.toctree"
+]

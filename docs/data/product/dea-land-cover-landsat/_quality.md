@@ -1,7 +1,5 @@
 ## Accuracy
 
-#### Accuracy
-
 The product was validated using 6000 points spatially distributed over Australia. These points were created using a stratified random sampling approach slightly adjusted for oversampling. This process was conducted for 2010 and 2015 creating 12000 samples in total. After removing points with No Data and spurious values the total number was 11750. The sample points were divided into clusters for visual assessment against the outputs from the classification and assessed individually from a pool of 10 people. To compare the individual biases of the individual assessors, an additional set of validation points were created that all assessors evaluated, the results are shown in Table 4. Where assessors could identify a predominant land cover (i.e. not ‘mixed’ pixels or ‘unsure’), all assessors agreed 75 % of the time.  
 
 Table 2 contains the overall accuracy for all classes. The term ‘support’ refers to the number of validation points used in the calculation of that accuracy value.  
@@ -14,12 +12,11 @@ Table 3 contains per-class accuracy information. “Precision” refers to
 
 ![table showing the agreement between assessors.](/_files/cmi/inter-assessor-agreement.PNG)
 
-#### Limitations of the Implementation Method
+### Limitations of the Implementation Method
 
 DEA Land Cover is created by combining multiple layers that each describe features in the landscape. In doing so the extents of each layer do not necessarily completely align, and some no-data points can cross between outputs. As a result, there are some level 4 classes that only report detail to level 3 as the details of cover fraction and water persistence do not have corresponding data in the respective datasets. This specifically relates the classes of Water, NS and NAV in areas near water bodies and the intertidal zone, however the number of affected pixels is small.  
 
-#### Level 3 Class Limitations
-
+:::{dropdown} Level 3 Class Limitations
 **Cultivated Terrestrial Vegetation (CTV)**  
 
 Managed plantations and some orchards and tree crops are not currently distinguishable from semi-natural or natural terrestrial vegetation and are not yet incorporated in the area of CTV.  Reference can be made to Australia’s National Plantation Inventory. In savanna regions (e.g. Queensland, Northern Territory and Western Australia), variable cycles associated with fires, inundation, drought and rainfall lead to greening or browning of natural vegetation that mirrors the seasonal or management-induced behavior of cultivated land. This leads to some areas of NTV, NS or NAV being misclassified as CTV. For example, the anomalous high levels of rainfall in 2010 led to vegetation growth patterns that were classified as cultivated vegetation, these false positives reduced the precision of the class in that year. Several natural vegetation types, particularly in the monsoonal north, are mapped as CTV due to burning, which can be associated with the indigenous management cycle. Saltmarsh and surface algae on mudflats can also be misclassified. Areas of bare soil exposed for long periods during the agricultural cycle or management activities, and sparse vegetation (when areas are not in use or fallow such as during drought periods) can be assigned as Natural Surfaces (NS).  This is particularly the case where areas have experienced low cover for prolonged periods within a year.  
@@ -43,9 +40,9 @@ Land used for agriculture may be associated with an NS class if ploughing or
 **Water**  
 
 Areas of artificial and natural water are not differentiated, although the extent of the former is mapped within the existing Bureau of Meteorology Geofabric product. Due to the 25 m pixel size, rivers and water courses that cover less than a pixel, or with highly vegetated riverbanks are not captured, resulting in a patch-like representation of narrower rivers.  Areas of dark, wet soil are often misclassified as water, including in cultivated areas and mud flats.
+:::
 
-#### Level 4 Class Limitations
-
+:::{dropdown} Level 4 Class Limitations
 **Lifeform**  
 
 The woody discrimination is implemented using the Woody Cover Fraction product (Liao et al, 2020), which models woody cover from inputs of LiDAR including ICESat/GLAS, L-band SAR, field observation and Landsat satellite data. Issues arise in this dataset in areas dominated by short, woody vegetation such as heathland, and swampy regions where underlying water can introduce errors. Areas of woody savannah are also underrepresented due to the influence of the herbaceous understory dominating the observation.
@@ -74,8 +71,9 @@ The intertidal areas carry the limitations of the ITEM product:  
 **Bare Gradation**  
 
 Bare gradation is produced from the fractional cover product. Unlike the Vegetation Cover class, Bare Gradation is calculated from the median bare fraction, rather than consecutive, monthly green and non-photosynthetic fractions. Hence the bare fraction can be as low as 20 %, however this does not imply that the remaining fraction is healthy vegetation. Rather the remaining fraction is a mix of brown, dead and green vegetation, with intermittent green periods through the year, reflective of arid area vegetation types.   
+:::
 
-#### Earth Observation Limitations
+### Earth Observation Limitations
 
 To generate the land cover classification for each calendar year, annual (January – December) statistics derived from Landsat-5, -7 and -8 observations are currently used, with each satellite sensor potentially observing the Australian landscape every 16 days. This brings an intrinsic limitation to land cover mapping as persistent cloud in some regions reduces the number of useable observations. This is particularly evident in Tasmania, and northern Australia during the monsoon period, where areas may not be observed for extended periods and parts or all of the intra-annual land cover cycle may be missed. These limitations can lead to misclassifications of land cover, particularly in dynamic environments. In a future release, a confidence layer will be included to help identify areas with poor observation frequency or other factors impacting the classification.  
 

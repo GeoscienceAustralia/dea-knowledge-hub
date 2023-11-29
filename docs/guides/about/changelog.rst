@@ -26,14 +26,14 @@ Technical DEA internals which have changed in the last week.
 Thanks to the `Geoscience Australia Landsat Collection Upgrade (video)
 <https://www.youtube.com/watch?v=BNEIG91lu44>`_, our data catalogue now
 includes Collection 3 data for `DEA Surface Reflectance
-<https://cmi.ga.gov.au/collection/geoscience-australia-landsat-collection-3>`_,
+</collection/geoscience-australia-landsat-collection-3>`_,
 also available through `OWS <https://ows.dea.ga.gov.au/>`_. Other Collection 3
 products will soon follow, including DEA Water Observations (WOfS), and DEA
 Fractional Cover.
  
 `DEA Notebooks <https://github.com/GeoscienceAustralia/dea-notebooks/tree/develop/DEA_datasets>`_ 
 and the `User Guide`_ have been updated with Collection 3 code examples to reflect the upgrade, 
-and our `Content Management Interface <https://cmi.ga.gov.au/>`_ and 
+and our `Content Management Interface </>`_ and 
 `DEA Maps platforms <https://maps.dea.ga.gov.au/>`_ are also being updated.
  
 Users of Collection 2 are encouraged to use Collection 3 data.
@@ -58,7 +58,7 @@ The `DEA Notebooks repository <https://github.com/GeoscienceAustralia/dea-notebo
 and the DEA user guide received a `major update <https://github.com/GeoscienceAustralia/dea-notebooks/releases/tag/notebooks_refresh>`_ which includes a simplified directory structure and set of improved and easier to use Jupyter notebooks.
 
 These updated notebooks include a new Beginner's Guide aimed at introducing users to DEA and the Open Data Cube. To view these
-new notebooks, navigate to the `Beginner's Guide <https://docs.dea.ga.gov.au/notebooks/Beginners_guide/README.html>`_ section of the User Guide.
+new notebooks, navigate to the `Beginner's Guide </notebooks/Beginners_guide/README.html>`_ section of the User Guide.
 
 2019-03-12
 ==========

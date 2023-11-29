@@ -1,10 +1,9 @@
 ## Background
 
-***
-
-*This is a sub-product of [**DEA Surface Reflectance (Landsat 5 TM)**](/data/product/dea-surface-reflectance-landsat-5-tm). See the parent product for more information.*
-
-***
+:::{admonition} This is a sub-product
+:class: note
+This is a sub-product of [**DEA Surface Reflectance (Landsat 5 TM)**](/data/product/dea-surface-reflectance-landsat-5-tm). See the parent product for more information.
+:::
 
 Radiance data collected by Landsat 5 Thematic Mapper (TM) sensors can be affected by atmospheric conditions, sun position, sensor view angle, surface slope and surface aspect. These need to be reduced or removed to ensure the data is consistent and can be compared over time.
 
