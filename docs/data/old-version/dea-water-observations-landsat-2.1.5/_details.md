@@ -1,6 +1,6 @@
 ## Background
 
-This product has been deprecated and is superseded by this product: [DEA Water Observations (Landsat)](/data/product/dea-water-observations-landsat/).
+**This product has been deprecated and is superseded by this product: [DEA Water Observations (Landsat)](/data/product/dea-water-observations-landsat/).**
 
 It is important to know where water is normally present in a landscape, where water is rarely observed, and where inundation has occasionally occurred.
 
