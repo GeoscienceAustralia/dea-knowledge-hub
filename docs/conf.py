@@ -56,8 +56,8 @@ extensions = [
 
 myst_enable_extensions = [
     "colon_fence",
+    "attrs_inline",
     "dollarmath",
-    "attrs_inline"
 ]
 myst_heading_anchors = 1
 myst_all_links_external = True
@@ -116,6 +116,7 @@ html_theme_options = {
 
 html_context = {
     "default_mode": "light",
+    "meta_keywords": "DEA, Digital Earth Australia, GA, Geoscience Australia, Knowledge, Documentation, Content, Learn, Learning, Data Products, Metadata, User Guides, DEA Notebooks, Notebooks, Open Data Cube, CMI, Content Management Interface, Developer, Python, Jupyter"
 }
 
 if os.environ.get("BUILD_MODE") == "production":
