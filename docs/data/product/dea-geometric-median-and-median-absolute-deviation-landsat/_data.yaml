@@ -2,15 +2,15 @@
 
 title: DEA Geometric Median and Median Absolute Deviation (Landsat)
 long_title: Geoscience Australia Landsat Geometric Median and Median Absolute Deviation Collection 3
-header_image: null
+header_image: /_files/cmi/Geomedian_Australia_2014.jpg
 version: 3.1.0
 is_latest_version: true
 latest_version_link: null
 product_type: Derivative
 spatial_data_type: Raster
 time_span:
-  start: null
-  end: null
+  start: 1986
+  end: 2022
 update_frequency: Annually
 product_ids:
   - ga_ls5t_nbart_gm_cyear_3
@@ -18,8 +18,8 @@ product_ids:
   - ga_ls8c_nbart_gm_cyear_3
 
 parent_products:
-  name: null
-  link: null
+  name: Landsat 5, 7 and 8 NBART and Observational Attributes
+  link: /data/category/dea-surface-reflectance/
 collection:
   name: Geoscience Australia Landsat Collection 3
   link: null
@@ -41,29 +41,27 @@ tags:
 
 maps:
   - link: https://maps.dea.ga.gov.au/#share=s-fzHT65z4jscx9U1Nfb1FoKlQ7uU
-    name: null
+    name: See it on a map
 
-explorers: null
+explorers:
+  - link: https://explorer.dea.ga.gov.au/products#baseline-satellite-data-group
+    name: Data explorer
 
 data:
-  - link: https://data.dea.ga.gov.au/?prefix=derivative/ga_ls5t_nbart_gm_cyear_3/
-    name: DEA Public Data - Annual Landsat 5 Geometric Median and Median Absolute Deviation observations
-  - link: https://data.dea.ga.gov.au/?prefix=derivative/ga_ls7e_nbart_gm_cyear_3/
-    name: DEA Public Data - Annual Landsat 7 Geometric Median and Median Absolute Deviation observations
-  - link: https://data.dea.ga.gov.au/?prefix=derivative/ga_ls8c_nbart_gm_cyear_3/
-    name: DEA Public Data - Annual Landsat 8 Geometric Median and Median Absolute Deviation observations
+  - link: https://data.dea.ga.gov.au/?prefix=derivative
+    name: Access the data on AWS
   - link: https://dapds00.nci.org.au/thredds/catalog/jw04/ga_ls5t_nbart_gm_cyear_3/catalog.html
-    name: THREDDS - Annual Landsat 5 Geometric Median and Median Absolute Deviation observations
+    name: Annual Landsat 5 observations on NCI
   - link: https://dapds00.nci.org.au/thredds/catalog/jw04/ga_ls7e_nbart_gm_cyear_3/catalog.html
-    name: "THREDDS - Annual Landsat 7 Geometric Median and Median Absolute Deviation observations "
+    name: Annual Landsat 7 observations on NCI
   - link: https://dapds00.nci.org.au/thredds/catalog/jw04/ga_ls8c_nbart_gm_cyear_3/catalog.html
-    name: THREDDS - Annual Landsat 8 Geometric Median and Median Absolute Deviation observations
+    name: Annual Landsat 8 observations on NCI
 
 code_examples: null
 
 web_services:
   - link: https://ows.dea.ga.gov.au/
-    name: Digital Earth Australia OGC Web Services
+    name: Web Services
 
 custom: null
 
