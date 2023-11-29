@@ -43,7 +43,7 @@ data:
     name: Digital Earth Australia - Public Data
 
 code_examples:
-  - link: https://docs.dea.ga.gov.au/notebooks/DEA_products/DEA_Land_Cover.html
+  - link: /notebooks/DEA_products/DEA_Land_Cover.html
     name: Jupyter notebook
 
 web_services:

@@ -51,7 +51,7 @@ data:
     name: Access the data on AWS
 
 code_examples:
-  - link: https://docs.dea.ga.gov.au/notebooks/DEA_products/DEA_Coastlines.html
+  - link: /notebooks/DEA_products/DEA_Coastlines.html
     name: Code examples
   - link: https://github.com/GeoscienceAustralia/dea-coastlines
     name: Github repository
