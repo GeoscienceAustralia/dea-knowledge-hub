@@ -24,7 +24,7 @@ anzsrc_research_code: ENVIRONMENTAL SCIENCES
 # Access tab
 
 map_names:
-  - DEA Maps
+  - DEA Map
 ecat_url: http://pid.geoscience.gov.au/dataset/ga/146257
 doi_url: https://dx.doi.org/10.26186/146257
 open_data_cube_configuration: null
