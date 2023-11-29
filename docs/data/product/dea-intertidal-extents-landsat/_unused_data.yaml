@@ -25,7 +25,7 @@ anzsrc_research_code: null
 # Access tab
 
 map_names:
-  - DEA Map
+  - DEA Maps
 ecat_url: http://pid.geoscience.gov.au/dataset/ga/113842
 doi_url: null
 open_data_cube_configuration: null

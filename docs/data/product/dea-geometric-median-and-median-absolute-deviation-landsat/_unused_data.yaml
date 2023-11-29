@@ -27,7 +27,7 @@ anzsrc_research_code: EARTH SCIENCES
 # Access tab
 
 map_names:
-  - DEA Map with Geometric Median and Median Absolute Deviation products loaded
+  - DEA Maps with Geometric Median and Median Absolute Deviation products loaded
 ecat_url: http://pid.geoscience.gov.au/dataset/ga/146261
 doi_url: https://dx.doi.org/10.26186/146261
 open_data_cube_configuration: null

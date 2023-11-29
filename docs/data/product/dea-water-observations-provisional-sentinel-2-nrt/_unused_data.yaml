@@ -26,7 +26,7 @@ anzsrc_research_code: null
 # Access tab
 
 map_names:
-  - DEA Map
+  - DEA Maps
 ecat_url: https://dx.doi.org/10.26186/146257
 doi_url: https://dx.doi.org/10.26186/146257
 open_data_cube_configuration:

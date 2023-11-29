@@ -18,7 +18,7 @@
 {% set web_service_label = "Get via web service" %}
 {% set code_sample_label = "Code sample" %}
 
-{% set map_default_name = "DEA Map" %}
+{% set map_default_name = "DEA Maps" %}
 {% set data_default_name = "DEA Data" %}
 {% set explorer_default_name = "Data Explorer" %}
 {% set web_service_default_name = "Web service" %}
