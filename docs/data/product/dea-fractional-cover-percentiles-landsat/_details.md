@@ -63,11 +63,11 @@ For the unmixing error (UE) band, the values are scaled between 0 and 127.  High
 
 The DEA Landsat Collection 3 Fractional Cover Percentiles Summary products share the following attributes: 
 
-##### Each product will share the following name: 
+Each product will share the following name: 
 
-Family name : DEA Fractional Cover Percentiles 
+* Family name : DEA Fractional Cover Percentiles 
 
-##### Each product will have the following bands: data type, nodata values, purpose
+Each product will have the following bands: data type, nodata values, purpose
 
 * **bs\_pc\_10** : uint8, nodata 255, bare soil 10th percentile 
 * **pv\_pc\_10** : uint8, nodata 255, photosynthetic veg 10th percentile 
@@ -80,16 +80,16 @@ Family name : DEA Fractional Cover Percentiles
 * **npv\_pc\_90** : uint8, nodata 255, non-photosynthetic veg, 90th percentile 
 * **qa :** uint8, nodata 255, Quality Assurance enumeration - see below for details 
 
-##### Each product’s datasets will: 
+Each product’s datasets will: 
 
 * be divided into tiles of 3200 x 3200 pixels, with a pixel size of 30m^2 
 * be presented in EPSG:3577 
 
-##### Percentiles 
+### Percentiles 
 
 10th, 50th and 90th Percentiles are calculated per Fractional Cover measurement - Bare Soil, Photosynthetic Vegetation, Non-Photosynthetic Vegetation. DEA Fractional Cover C3 and DEA Water Observations C3 are used as the input to these products. 
 
-##### Fractional Cover Masking 
+### Fractional Cover Masking 
 
 DEA Water Observations are used to identify clear pixels from DEA Fractional Cover to be included in percentile calculation. A Fractional Cover observation is included if: 
 
@@ -107,7 +107,7 @@ DEA Water Observations are used to identify clear pixels from DEA Fractional Cov
 * Please note, no land/sea masking is applied 
 * Observation dates for given percentiles are not captured 
 
-#### QA enumeration 
+### QA enumeration 
 
 To assist with the calculation of the Mangrove Canopy Cover product, each pixel has an additional enumeration associated with it: 
 
@@ -117,41 +117,36 @@ To assist with the calculation of the Mangrove Canopy Cover product, each pixel 
 
 This enumeration assists in quantifying uncertainty within the Mangrove Canopy Cover product (see Mangrove Canopy Cover definition). 
 
-#### Side car files 
+### Side car files 
 
 Collection 3 Fractional Cover Percentiles will be accompanied by the following metadata, presentation and quality assurance side car files: 
 
-* \*.odc-metadata.yaml : **EODatasets 3 compatible ODC dataset definition** 
-* \*.odc-proc-info.yaml : **Listing of python libraries and versions used by software to generate** 
-* \*.sha1 : **cryptographic hash of data to validate distributed data** 
-* \*.thumbnail.jpg : **quick look thumbnail of a scaled RGB rendering of R = bs\_pc\_50, G= pv\_pc\_50 and B = npv\_pc\_50** 
-* \*.stac-item.json : **STAC 1.0.0 STAC document** 
+* `*.odc-metadata.yaml` : **EODatasets 3 compatible ODC dataset definition** 
+* `*.odc-proc-info.yaml` : **Listing of python libraries and versions used by software to generate** 
+* `*.sha1` : **cryptographic hash of data to validate distributed data** 
+* `*.thumbnail.jpg` : **quick look thumbnail of a scaled RGB rendering of R = bs\_pc\_50, G= pv\_pc\_50 and B = npv\_pc\_50** 
+* `*.stac-item.json` : **STAC 1.0.0 STAC document** 
 
 Geoscience Australia Landsat Fractional Cover Percentile Calendar Year Collection 3 
 
-##### Temporal period 
+### Temporal period 
 
 Will be calculated from the 1st of January to the 31st of December (inclusive) for every available year of DEA Landsat Collection 3 Water Observations and DEA Landsat Collection 3 Fractional Cover observations. 
 
-##### Names 
+### Names 
 
 Geoscience Australia Landsat Fractional Cover Percentile Calendar Year Collection 3 will have the following names: 
 
-##### Full Product / Web service name 
+* **Full Product / Web service name**
+    * Geoscience Australia Landsat Fractional Cover Percentile Calendar Year Collection 3 
+* **ODC Product ID** 
+    * `ga_ls_fc_pc_cyear_3` 
+* **Short name** 
+    * Fractional Cover Percentiles Calendar Year (Landsat) 
 
-Geoscience Australia Landsat Fractional Cover Percentile Calendar Year Collection 3 
+It will have a directory structure of form: 
 
-##### ODC Product ID 
-
-ga\_ls\_fc\_pc\_cyear\_3 
-
-##### Short name 
-
-Fractional Cover Percentiles Calendar Year (Landsat) 
-
-##### It will have a directory structure of form: 
-
-/ga\_ls\_fc\_pc\_cyear\_3/3-0-0/x01/y02/2000--P1Y/ga\_ls\_fc\_pc\_cyear\_3\_x01y02\_2000--P1Y\_bs\_pc\_10.tif
+`/ga_ls_fc_pc_cyear_3/3-0-0/x01/y02/2000--P1Y/ga_ls_fc_pc_cyear_3_x01y02_2000--P1Y_bs_pc_10.tif`
 
 ## Lineage
 
