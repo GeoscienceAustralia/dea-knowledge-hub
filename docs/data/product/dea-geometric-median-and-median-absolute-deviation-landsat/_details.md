@@ -1,5 +1,9 @@
 ## Background
 
+Large-scale image composites are increasingly important for a variety of applications such as land cover mapping, change detection, and the generation of high-quality data to parameterise and validate bio-physical and geophysical models. A number of compositing methodologies are being used in remote sensing in general; however challenges such as maintaining the spectral relationship between bands, mitigating against boundary artifacts due to mosaicking scenes from different epochs, and ensuring spatial regularity across the mosaic image still exist.
+
+The creation of good composite images is a particularly important technology since the opening of the Landsat archive by the United States Geological Survey. The greater availability of satellite imagery has resulted in demand to provide large regional mosaics that are representative of conditions over specific time periods while also being free of clouds and other unwanted image noise. One approach is the stitching together of a number of clear images. Another is the creation of mosaics where pixels from different epochs are combined based on some algorithm from a time series of observations. This 'pixel composite' approach to mosaic generation provides a more consistent result compared with stitching clear images due to the improved color balance created by the combining of one-by-one pixel representative images. Another strength of pixel-based composites is their ability to be automated for application to very large data collections and time series such as national satellite data archives.
+
 When deriving information from satellite images it may be beneficial to see how an area usually looks over a given year rather than how it was viewed at a single point in time. Other useful interpretations include how dynamic or variable the Australian landscape is over any given year, especially to help with understanding how the landscape changes, or to discriminate parts of the landscape that stay the same throughout the year (like bare rock), from those areas that go through big changes in cover (such as cropping areas). 
 
 By understanding general conditions (which can be thought of as "average" for the year) and the different patterns of variation, we can characterise various types of land cover and land use, and detect changes of significance in the landscape.
@@ -17,7 +21,6 @@ This product provides statistical tools to exploit the time series of Earth obse
 The geomedian part of the product provides an "average" cloud-free image over the given year. The geomedian image is calculated with a multi-dimensional median, using all the spectral measurements from the satellite imagery at the same time in order to maintain the relationships among the measurements.
 
 The median absolute deviation part of the product uses three measures of variance, each of which provides a "second order" high dimensional statistical composite for the given year. The three variance measures show how much an area varies from the "average" in terms of "distance" based on factors such as brightness and spectra:
-
 * Euclidean distance (EMAD)
 * Cosine (spectral) distance (SMAD)
 * Bray Curtis dissimilarity (BCMAD)
@@ -29,7 +32,6 @@ Together, they provide information on variance in the landscape over the given y
 ## Applications
 
 The GeoMAD product is useful for:
-
 * Land cover mapping
 * Change detection and classification (such as for burn area mapping, crop mapping, urban area mapping)
 * General variance and change, so it can be used in machine learning for change detection
@@ -37,11 +39,7 @@ The GeoMAD product is useful for:
 
 ## Technical information
 
-**Geometric Median**
-
-Large-scale image composites are increasingly important for a variety of applications such as land cover mapping, change detection, and the generation of high-quality data to parameterise and validate bio-physical and geophysical models. A number of compositing methodologies are being used in remote sensing in general; however challenges such as maintaining the spectral relationship between bands, mitigating against boundary artifacts due to mosaicking scenes from different epochs, and ensuring spatial regularity across the mosaic image still exist.
-
-The creation of good composite images is a particularly important technology since the opening of the Landsat archive by the United States Geological Survey. The greater availability of satellite imagery has resulted in demand to provide large regional mosaics that are representative of conditions over specific time periods while also being free of clouds and other unwanted image noise. One approach is the stitching together of a number of clear images. Another is the creation of mosaics where pixels from different epochs are combined based on some algorithm from a time series of observations. This 'pixel composite' approach to mosaic generation provides a more consistent result compared with stitching clear images due to the improved color balance created by the combining of one-by-one pixel representative images. Another strength of pixel-based composites is their ability to be automated for application to very large data collections and time series such as national satellite data archives.
+### Geometric Median
 
 The surface reflectance geometric median (geomedian) provides an approach that leverages high-dimensional statistical theory to deliver a spectrally consistent, artefact-free pixel composite product.
 
@@ -58,25 +56,23 @@ Surface reflectance geometric median products are derived from the DEA Surface R
 The geomedian (Roberts et al 2017) is used in preference to the mean, as the mean can be adversely effected by extrema whereas the median is less sensitive to outliers. The geomedian is used in preference to the basic median, as it preserves the physical relationship between spectral measurements which the basic median does not. The geometric median is used in preference to the medoid (Flood 2013) where a low noise composite is required. Where the provenance of each pixel in a composite is required the medoid is the preferred method and the geomedian should not be used.
 
 The input data used to calculate the geomedian are filtered to remove poor quality observations including cloud, cloud shadow, band saturation (of any band) using the Pixel Quality Assessment (PQA) product. To account for satellite availability and status the statistics are calculated using the following satellites/sensors for the following periods of time:
-
-* 1988-1999 : Landsat 5
-* 2000-2003 : Landsat 7
+* 1988-1999 : Landsat 5 only
+* 2000-2003 : Landsat 7 only
 * 2004-2007 : Landsat 5 and Landsat 7 (as separate geomedian products)
-* 2008: Landsat 7
+* 2008: Landsat 7 only
 * 2009-2011: Landsat 5 and Landsat 7 (as separate geomedian products)
-* 2012 : Landsat 7
+* 2012 : Landsat 7 only
 * 2013 onward : Landsat 7 and Landsat 8 (as separate geomedian products)
 
 The primary uses of geomedian pixel composites are for baselines for change detection, and for broad regional image composites (such as national and continental mosaics).
 
-**Median Absolute Deviation**
+### Median Absolute Deviation
 
 The 'first order' statistics of a set of data include the mean and the median. Instead of the mean, for multi-dimensional datasets such as satellite imagery, the median provides a method to find general conditions for a time period while also maintaining the physical relationships between spectral measurements.
 
 A 'second order' statistic associated with a mean of a set of data is the standard deviation, providing a measure of data variance. The equivalent second order statistic associated with the median is the Median Absolute Deviation (MAD), which provides the associated variance measures for the median.
 
 The MAD is the median of absolute differences of the individual values in a set of data from their overall median. To calculate the MAD for a multi-dimensional dataset, such as the set of satellite images captured in a year, measures of "distance" from each multi-dimensional measurement (i.e. the set of spectral measurements for a pixel through time, being blue, green, red, near-infra-red, and short-wave-infra-red) to the mean are needed. However multi-dimensional distances can be calculated in different ways, providing different insights into the behaviour of pixels through time. The DEA GeoMAD product includes three MADs produced from different measures of distance as follows: 
-
 * Euclidean distance (EMAD) is more sensitive to changes in target brightness.
 * Cosine (spectral) distance (SMAD) is more sensitive to change in target spectral response.
 * Bray Curtis dissimilarity (BCMAD) is more sensitive to the distribution of the observation values through time.
@@ -97,11 +93,7 @@ For the purposes of the default Digital Earth Australia product, GeoMADs are com
 
 Note: the constituent pixels in the GeoMAD pixel composite mosaics are synthetic, meaning that the pixels have not been physically observed by the satellite. Rather they are the computed high-dimensional medians of a time series of pixels.
 
-## Processing steps
-
-1. Geometric Median
-
-1. Median Absolute Deviation
+%## Processing steps
 
 % ## Software
 

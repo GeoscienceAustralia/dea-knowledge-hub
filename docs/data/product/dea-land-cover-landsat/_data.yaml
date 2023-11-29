@@ -9,8 +9,8 @@ latest_version_link: null
 product_type: Derivative
 spatial_data_type: Raster
 time_span:
-  start: null
-  end: null
+  start: 1988
+  end: 2020
 update_frequency: Annually
 product_ids:
   - ga_ls_landcover_class_cyear_2
@@ -19,7 +19,7 @@ parent_products:
   name: null
   link: null
 collection:
-  name: null
+  name: Geoscience Australia Landsat Collection 2 (DEPRECATED)
   link: null
 doi: 10.26186/146090
 ecat: "146090"
@@ -34,21 +34,23 @@ tags:
 
 maps:
   - link: https://maps.dea.ga.gov.au/story/DEALandCover
-    name: null
+    name: See it on a map
 
-explorers: null
+explorers:
+  - link: https://explorer.dea.ga.gov.au/products/ga_ls_landcover_class_cyear_2
+    name: Data explorer
 
 data:
   - link: http://dea-public-data.s3-website-ap-southeast-2.amazonaws.com/?prefix=derivative/ga_ls_landcover_class_cyear_2/
-    name: Digital Earth Australia - Public Data
+    name: Access the data on AWS
 
 code_examples:
-  - link: /notebooks/DEA_products/DEA_Land_Cover.html
-    name: Jupyter notebook
+  - link: /notebooks/dea_products/dea_land_cover/
+    name: Code examples
 
 web_services:
   - link: https://ows.dea.ga.gov.au/
-    name: Open Web Services
+    name: Web Services
 
 custom: null
 
