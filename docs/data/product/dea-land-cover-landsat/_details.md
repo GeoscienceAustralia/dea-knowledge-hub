@@ -9,21 +9,21 @@ DEA Land Cover provides annual land cover classifications for Australia using th
 DEA Land Cover divides the landscape into six base land cover types, which are then further detailed through the addition of environmental descriptors. The structure is as follows:
 
 * Cultivated Terrestrial Vegetation
- * percentage of cover
- * life form (herbaceous only)
+  * percentage of cover
+  * life form (herbaceous only)
 * Natural Terrestrial Vegetation
- * percentage of cover
- * life form (woody or herbaceous)
+  * percentage of cover
+  * life form (woody or herbaceous)
 * Natural Aquatic Vegetation
- * percentage of cover
- * life form (woody or herbaceous)
- * water seasonality
+  * percentage of cover
+  * life form (woody or herbaceous)
+  * water seasonality
 * Artificial Surfaces 
 * Natural Bare
- * percentage of bare cover
+  * percentage of bare cover
 * Aquatic
- * water persistence
- * intertidal area
+  * water persistence
+  * intertidal area
 
 % ## Data description
 

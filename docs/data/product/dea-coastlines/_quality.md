@@ -66,20 +66,20 @@ Figure 5: DEA Coastlines annual shorelines compared against a) aerial photogramm
 
 * Rates of change points do not assign a reason for change, and do not necessarily represent processes of coastal erosion or sea level rise. In locations undergoing rapid coastal development, the construction of new inlets or marinas may be represented as hotspots of coastline retreat, while the construction of ports or piers may be represented as hotspots of coastline growth. Rates of change points should therefore be evaluated with reference to the underlying annual coastlines and external data sources or imagery.
 * Rates of change points may be inaccurate or invalid within complex mouthbars, or other coastal environments undergoing rapid non-linear change through time. In these regions, it is advisable to visually assess the underlying annual shoreline data when interpreting rates of change to ensure these values are fit-for-purpose. Regions significantly affected by this issue include:
- * Cambridge Gulf, Western Australia
- * Joseph Bonaparte Gulf, Western Australia/Northern Territory
+  * Cambridge Gulf, Western Australia
+  * Joseph Bonaparte Gulf, Western Australia/Northern Territory
 
 ### Data quality issues
 
 * Annual shorelines may be less accurate in regions with complex tidal dynamics or large tidal ranges, and low-lying intertidal flats where small tidal modelling errors can lead to large horizontal offsets in coastline positions (Figure 6). Annual shoreline accuracy in intertidal environments may also be reduced by the influence of wet muddy substrate or intertidal vegetation, which can make it difficult to extract a single unambiguous coastline (Bishop-Taylor et al. 2019a, 2019b, 2021). It is anticipated that future versions of this product will show improved results due to integrating more advanced methods for waterline detection in intertidal regions, and through improvements in tidal modelling methods. Regions significantly affected by intertidal issues include:
- * The Pilbara coast, Western Australia from Onslow to Pardoo
- * The Mackay region, Queensland from Proserpine to Broad Sound
- * The upper Spencer Gulf, South Australia from Port Broughton to Port Augusta
- * Western Port Bay, Victoria from Tooradin to Pioneer Bay
- * Hunter Island Group, Tasmania from Woolnorth to Perkins Island
- * Moreton Bay, Queensland from Sandstone Bay to Wellington Point
+  * The Pilbara coast, Western Australia from Onslow to Pardoo
+  * The Mackay region, Queensland from Proserpine to Broad Sound
+  * The upper Spencer Gulf, South Australia from Port Broughton to Port Augusta
+  * Western Port Bay, Victoria from Tooradin to Pioneer Bay
+  * Hunter Island Group, Tasmania from Woolnorth to Perkins Island
+  * Moreton Bay, Queensland from Sandstone Bay to Wellington Point
 * Annual shorelines may be noisier and more difficult to interpret in regions with low availability of satellite observations caused by persistent cloud cover. In these regions it can be difficult to obtain the minimum number of clear satellite observations required to generate clean, noise-free annual shorelines. Affected regions include:
- * South-western Tasmania from Macquarie Heads to Southport
+  * South-western Tasmania from Macquarie Heads to Southport
 * In some urban locations, the spectra of bright white buildings located near the coastline may be inadvertently confused with water, causing a land-ward offset from true shoreline positions. 
 * Some areas of extremely dark and persistent shadows (e.g. steep coastal cliffs across southern Australia) may be inadvertently mapped as water, resulting in a landward offset from true shoreline positions. 
 * 1991 and 1992 shorelines are currently affected by aerosol-related issues caused by the 1991 Mount Pinatubo eruption. These shorelines should be interpreted with care, particularly across northern Australia. 
