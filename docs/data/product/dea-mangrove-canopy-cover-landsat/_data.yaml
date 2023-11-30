@@ -9,15 +9,15 @@ latest_version_link: null
 product_type: Derivative
 spatial_data_type: Raster
 time_span:
-  start: null
-  end: null
+  start: 1987
+  end: 2022
 update_frequency: Annually
 product_ids:
   - ga_ls_mangrove_cover_cyear_3
 
 parent_products:
-  name: null
-  link: null
+  name: DEA Fractional Cover (Landsat) and DEA Tasseled Cap Percentiles (Landsat)
+  link: /data/product/dea-fractional-cover-percentiles-landsat/
 collection:
   name: Geoscience Australia Landsat Collection 3
   link: null
@@ -39,21 +39,25 @@ tags:
 
 maps:
   - link: https://maps.dea.ga.gov.au/#share=s-lkNZRIoEC2JixvX3a7RoCGR5czq
-    name: null
+    name: See it on a map
 
-explorers: null
+explorers:
+  - link: https://explorer.dea.ga.gov.au/products/ga_ls_mangrove_cover_cyear_3
+    name: Data explorer
 
 data:
-  - link: http://dea-public-data.s3-website-ap-southeast-2.amazonaws.com/?prefix=derivative/ga_ls_mangrove_cover_cyear_3/3-0-0/
-    name: "Digital Earth Australia - Public Data "
+  - link: https://data.dea.ga.gov.au/?prefix=derivative/ga_ls_mangrove_cover_cyear_3/3-0-0/
+    name: Access the data on AWS
   - link: https://dapds00.nci.org.au/thredds/catalog/jw04/ga_ls_mangrove_cover_cyear_3/3-0-0/catalog.html
-    name: NCI - THREDDS
+    name: Access the data on NCI
 
-code_examples: null
+code_examples:
+  - link: /notebooks/dea_products/dea_mangroves/
+    name: Code examples
 
 web_services:
   - link: https://ows.dea.ga.gov.au/
-    name: OWS
+    name: Web Services
 
 custom: null
 
