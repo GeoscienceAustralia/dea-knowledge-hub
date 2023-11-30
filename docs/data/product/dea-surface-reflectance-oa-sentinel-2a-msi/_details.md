@@ -256,7 +256,7 @@ Other uses of Fmask:
 | Contrast stretch               | None                                                                  |
 | Output CRS                     | As specified by source dataset; source is UTM with WGS84 as the datum |     
 
-#### ***incident-angle, exiting-angle, azimuthal-incident, azimuthal-exiting, relative-azimuth, relative-slope, timedelta
+#### incident-angle, exiting-angle, azimuthal-incident, azimuthal-exiting, relative-azimuth, relative-slope, timedelta
 
 |                                |                                                                       |
 |--------------------------------|-----------------------------------------------------------------------|

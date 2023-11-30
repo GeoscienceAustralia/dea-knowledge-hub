@@ -24,6 +24,7 @@ exclude_patterns = [
     "notebooks/DEA_notebooks_template.ipynb",
     "notebooks/USAGE.rst",
     "notebooks/Supplementary_data/README.rst",
+    "py-modindex/index.*",
 ]
 exclude_patterns += utilities.optional_exclude_pattern("LOCAL_ENABLE_USER_GUIDES", "guides")
 exclude_patterns += utilities.optional_exclude_pattern("LOCAL_ENABLE_DATA_PRODUCTS", "data")
