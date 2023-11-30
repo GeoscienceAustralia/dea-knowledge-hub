@@ -125,7 +125,7 @@ Exporting data
 --------------
 
 .. note::
-   This method is suitable for exporting small areas of DEA data at high resolution. To download large areas of data or multiple timesteps, please use the `DEA Sandbox <Sandbox/sandbox.rst>`_ or `NCI <NCI/README.rst>`_ analysis environments, or download directly from DEA's Amazon S3 bucket: http://dea-public-data-dev.s3-website-ap-southeast-2.amazonaws.com/
+   This method is suitable for exporting small areas of DEA data at high resolution. To download large areas of data or multiple timesteps, please use the `DEA Sandbox </guides/setup/Sandbox/sandbox/>`_ or `NCI </guides/setup/NCI/README/>`_ analysis environments, or download directly from DEA's Amazon S3 bucket: http://dea-public-data-dev.s3-website-ap-southeast-2.amazonaws.com/
    
 To export data directly from DEA Maps for use in GIS software:
 

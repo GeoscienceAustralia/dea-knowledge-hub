@@ -12,12 +12,9 @@ The primary software for DEA is the `Open Data Cube`_ (ODC), which can be easily
 Instances
 ---------
 
-There are two available pre-built instances: the `Digital Earth Australia Sandbox`_ and the `National Computational Infrastructure`_ (NCI).
+There are two available pre-built instances: the `Digital Earth Australia Sandbox </guides/setup/Sandbox/sandbox/>`_ and the `National Computational Infrastructure </guides/setup/NCI/README/>`_ (NCI).
 The Sandbox is suitable for all users, containing a representative sample of available data.
 The NCI contains all available data, but users must apply and be approved to gain an account.
-
-.. _Digital Earth Australia Sandbox: Sandbox/sandbox.rst
-.. _National Computational Infrastructure: NCI/README.rst
 
 Examples
 --------
@@ -27,12 +24,12 @@ Jupyter Notebooks contain code and explanations side-by-side so that you can und
 Our `Jupyter Notebooks`_ page provides a quick introduction to using Jupyter Notebooks.
 For a more detailed introduction, visit the `Jupyter Notebook Documentation`_.
 
-.. _Jupyter Notebooks: jupyter.rst
+.. _Jupyter Notebooks: /guides/setup/jupyter/
 .. _Jupyter Notebook Documentation: https://jupyter-notebook.readthedocs.io/en/stable/notebook.html
 
 The examples contained in each instance are the same as those covered in the `User Guide`_.
 
-.. _User Guide: ../notebooks/Beginners_guide/README.rst
+.. _User Guide: /notebooks/Beginners_guide/README/
 
 Getting help
 ------------

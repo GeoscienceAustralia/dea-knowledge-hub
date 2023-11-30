@@ -40,7 +40,7 @@ Users of Collection 2 are encouraged to use Collection 3 data.
 A staged decommissioning of Collection 2 is underway and will continue into 2022.
 Questions can be raised to dea@ga.gov.au.
 
-.. _User Guide: ../notebooks/Beginners_guide/README.rst
+.. _User Guide: /notebooks/Beginners_guide/README/
 
 
 2021-04-15
@@ -48,7 +48,7 @@ Questions can be raised to dea@ga.gov.au.
 
 Added a new guide to accessing DEA data via `Amazon Web Services`_.
 
-.. _Amazon Web Services: ../access/AWS/data_and_metadata.rst
+.. _Amazon Web Services: /guides/setup/AWS/data_and_metadata/
 
 
 2020-01-09

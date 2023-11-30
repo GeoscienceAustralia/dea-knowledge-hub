@@ -26,7 +26,7 @@ Download data directly from our `Amazon S3 buckets`_ using the AWS Command Line 
 
    aws s3 cp s3://dea-public-data/derivative/ga_ls_wo_fq_cyear_3/1-6-0/x11/y21/1992--P1Y/ga_ls_wo_fq_cyear_3_x11y21_1992--P1Y_final_frequency.tif . --no-sign-request
 
-.. _Amazon S3 buckets:  ../setup/AWS/data_and_metadata.rst
+.. _Amazon S3 buckets:  /guides/setup/AWS/data_and_metadata/
 
 To download multiple files, for example each annual DEA Water Observations frequency layer for the tile ``x11/y21``
 
