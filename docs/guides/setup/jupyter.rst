@@ -26,7 +26,7 @@ Working with notebooks
 
 For an in-depth guide on running and editing notebooks, see the `introduction to Jupyter notebooks`_ section of the Beginner's guide.
 
-.. _introduction to Jupyter notebooks: ../notebooks/Beginners_guide/01_Jupyter_notebooks.ipynb
+.. _introduction to Jupyter notebooks: /notebooks/Beginners_guide/01_Jupyter_notebooks/
 
 Closing a notebook
 ------------------

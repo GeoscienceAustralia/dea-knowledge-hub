@@ -16,7 +16,7 @@ Use :ref:`DEA Maps <dea_maps>` to directly export a small amount of data from th
 
 Use DEA's STAC metadata to find the data you are interested in using the `Downloading and streaming data using STAC metadata guide`_. 
 
-.. _Downloading and streaming data using STAC metadata guide:  ../notebooks/How_to_guides/Downloading_data_with_STAC.ipynb
+.. _Downloading and streaming data using STAC metadata guide:  /notebooks/How_to_guides/Downloading_data_with_STAC/
 
 **3) You want to download specific files from DEA's Amazon S3 buckets**
 
