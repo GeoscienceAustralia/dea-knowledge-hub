@@ -31,11 +31,13 @@ exclude_patterns += utilities.optional_exclude_pattern("LOCAL_ENABLE_DATA_PRODUC
 exclude_patterns += utilities.optional_exclude_pattern("LOCAL_ENABLE_NOTEBOOKS", "notebooks")
 
 html_title = "DEA Knowledge Hub"
-html_baseurl = "https://docs.dea.ga.gov.au/"
 html_logo = "_files/logos/ga-dea-combined-logo.svg"
 html_favicon = "_static/favicons/dea-favicon.ico"
 html_theme = 'pydata_sphinx_theme'
 language = "en"
+
+if os.environ.get("BUILD_MODE") == "production":
+    html_baseurl = "https://docs.dea.ga.gov.au/"
 
 html_permalinks = False
 

@@ -2,16 +2,7 @@
 command = "./build-demo.sh"
 publish = "output"
 
-[context.deploy-preview.environment]
-BUILD_MODE = "demo"
-
-[context.demo1.environment]
-BUILD_MODE = "demo"
-
-[context.demo2.environment]
-BUILD_MODE = "demo"
-
-[context.demo3.environment]
+[build.environment]
 BUILD_MODE = "demo"
 
 [[redirects]]
