@@ -138,4 +138,4 @@ For Surface Reflectance products, the following additional attributes are includ
 
 
 .. _website: https://data.dea.ga.gov.au
-.. _DEA Sandbox: ../Sandbox/sandbox.rst
+.. _DEA Sandbox: /guides/setup/Sandbox/sandbox/

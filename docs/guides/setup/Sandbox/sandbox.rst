@@ -87,11 +87,11 @@ have saved in your account. Please read the DEA Sandbox disclaimer below for mor
 
 .. _JupyterLab Documentation: https://jupyterlab.readthedocs.io/en/stable/user/interface.html
 .. _DEA Notebooks repository: https://github.com/GeoscienceAustralia/dea-notebooks/
-.. _Beginner's guide: ../../notebooks/Beginners_guide/README.rst
-.. _DEA products: ../../notebooks/DEA_products/README.rst
-.. _How-to guides: ../../notebooks/How_to_guides/README.rst
-.. _Interactive apps: ../../notebooks/Interactive_apps/README.rst
-.. _Real world examples: ../../notebooks/Real_world_examples/README.rst
+.. _Beginner's guide: /notebooks/Beginners_guide/README/
+.. _DEA products: /notebooks/DEA_products/README/
+.. _How-to guides: /notebooks/How_to_guides/README/
+.. _Interactive apps: /notebooks/Interactive_apps/README/
+.. _Real world examples: /notebooks/Real_world_examples/README/
 .. _see guide here: https://github.com/GeoscienceAustralia/dea-notebooks/wiki/Guide-to-using-DEA-Notebooks-with-git
 
 Available Data
