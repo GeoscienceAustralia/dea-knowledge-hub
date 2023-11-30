@@ -37,7 +37,7 @@ DEA Collection 3 products are comprised of data produced to varying degrees of m
 * Interim ARD is produced if high quality ancillaries required for the final ARD model don’t become available within 23 days of image capture. Interim maturity data is produced as a *stand-in* until the full ancillaries are available to produce the final version. This is our fall-back until the issue is resolved.    
 * Final ARD is DEA’s best quality ARD, produced using high quality ancillary datasets derived from observed data. These ancillary datasets are slower to produce but are observational datasets of the conditions at the time of image capture and so provide our most accurate dataset corrections. 
 
-You can read more about dataset maturity in this page: [DEA dataset maturity explained](/guides/reference/dataset_maturity_guide.html).
+You can read more about dataset maturity in this page: [DEA dataset maturity explained](/guides/reference/dataset_maturity_guide/).
 
 % ## Data description
 
