@@ -50,7 +50,7 @@ data:
     name: Access the data on NCI
 
 code_examples:
-  - link: /notebooks/DEA_products/DEA_Sentinel2_Surface_Reflectance.html
+  - link: /notebooks/DEA_products/DEA_Sentinel2_Surface_Reflectance/
     name: Code examples
 
 web_services:

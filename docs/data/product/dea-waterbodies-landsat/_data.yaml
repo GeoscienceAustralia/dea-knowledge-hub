@@ -49,7 +49,7 @@ data:
     name: Access the data on AWS
 
 code_examples:
-  - link: /notebooks/dea_products/dea_waterbodies/
+  - link: /notebooks/DEA_products/DEA_Waterbodies/
     name: Code examples
   - link: https://github.com/GeoscienceAustralia/dea-waterbodies
     name: Github repository

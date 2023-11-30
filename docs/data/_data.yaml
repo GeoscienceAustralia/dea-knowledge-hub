@@ -3,17 +3,17 @@ description: Find product metadata on our data products.
 
 themes:
   - name: Baseline satellite data
-    link: /data/theme/baseline-satellite-data
+    link: /data/theme/baseline-satellite-data/
     image: /_files/themes/baseline-satellite-data.*
   - name: Land and vegetation
-    link: /data/theme/land-and-vegetation
+    link: /data/theme/land-and-vegetation/
     image: /_files/themes/land-and-vegetation.*
   - name: Inland water
-    link: /data/theme/inland-water
+    link: /data/theme/inland-water/
     image: /_files/themes/inland-water.*
   - name: Sea, ocean, and coast
-    link: /data/theme/sea-ocean-and-coast
+    link: /data/theme/sea-ocean-and-coast/
     image: /_files/themes/sea-ocean-and-coast.*
   - name: Hazards
-    link: /data/theme/hazards
+    link: /data/theme/hazards/
     image: /_files/themes/hazards.*
