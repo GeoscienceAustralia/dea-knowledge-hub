@@ -8,7 +8,7 @@ Digital Earth Australia is an analysis platform for satellite imagery and other 
 
 For more information, see the [DEA Web Site](http://www.ga.gov.au/dea).
 
-Digital Earth Australia is currently in beta for users with accounts on the National Computational Infrastructure (NCI) or the Digital Earth Australia Sandbox (see the [Setup introduction](/guides/setup/readme/) page).
+Digital Earth Australia is currently in beta for users with accounts on the National Computational Infrastructure (NCI) or the Digital Earth Australia Sandbox (see the [Setup introduction](/guides/setup/README/) page).
 
 Data can be viewed on the interactive [Digital Earth Australia Maps](https://maps.dea.ga.gov.au/) platform, or accessed directly from [Amazon S3 Storage](https://data.dea.ga.gov.au).
 
