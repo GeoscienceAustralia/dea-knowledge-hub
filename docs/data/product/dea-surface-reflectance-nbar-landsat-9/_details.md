@@ -128,17 +128,17 @@ This product is derived from the USGS Landsat Level 1 Collection 2 archive.
  See [USGS: EROS](https://www.usgs.gov/centers/eros), [USGS: Landsat Collection 2](https://www.usgs.gov/landsat-missions/landsat-collection-2?qt-science_support_page_related_con=1#qt-science_support_page_related_con)
 
 ## Processing steps
-1. [Longitude and Latitude Calculation](/guides/reference/analysis_ready_data_corrections#lon-lat-calculation)
-2. [Satellite and Solar Geometry Calculation](/guides/reference/analysis_ready_data_corrections#sat-sol-geom-calculation)
-3. [Aerosol Optical Thickness Retrieval](/guides/reference/analysis_ready_data_corrections#aero-opt-thick-retr)
-4. [BRDF Shape Function Retrieval](/guides/reference/analysis_ready_data_corrections#brdf-shp-fnc-retr)
-5. [Ozone Retrieval](/guides/reference/analysis_ready_data_corrections#o3-retr)
-6. [Incidence and Azimuthal Incident Angles Calculation](/guides/reference/analysis_ready_data_corrections#inc-azm-ang-calc)
-7. [Exiting and Azimuthal Exiting Angles Calculation](/guides/reference/analysis_ready_data_corrections#ext-azm-ang-calc)
-8. [MODTRAN](/guides/reference/analysis_ready_data_corrections#modtran)
-9. [Atmospheric Correction Coefficients Calculation](/guides/reference/analysis_ready_data_corrections#atm-corr-coef-calc)
-10. [Bilinear Interpolation of Atmospheric Correction Coefficients](/guides/reference/analysis_ready_data_corrections#bil-int-atm-corr-coef)
-11. [Surface Reflectance Calculation (NBAR)](/guides/reference/analysis_ready_data_corrections#nbar)
+1. [Longitude and Latitude Calculation](/guides/reference/analysis_ready_data_corrections/#lon-lat-calculation)
+2. [Satellite and Solar Geometry Calculation](/guides/reference/analysis_ready_data_corrections/#sat-sol-geom-calculation)
+3. [Aerosol Optical Thickness Retrieval](/guides/reference/analysis_ready_data_corrections/#aero-opt-thick-retr)
+4. [BRDF Shape Function Retrieval](/guides/reference/analysis_ready_data_corrections/#brdf-shp-fnc-retr)
+5. [Ozone Retrieval](/guides/reference/analysis_ready_data_corrections/#o3-retr)
+6. [Incidence and Azimuthal Incident Angles Calculation](/guides/reference/analysis_ready_data_corrections/#inc-azm-ang-calc)
+7. [Exiting and Azimuthal Exiting Angles Calculation](/guides/reference/analysis_ready_data_corrections/#ext-azm-ang-calc)
+8. [MODTRAN](/guides/reference/analysis_ready_data_corrections/#modtran)
+9. [Atmospheric Correction Coefficients Calculation](/guides/reference/analysis_ready_data_corrections/#atm-corr-coef-calc)
+10. [Bilinear Interpolation of Atmospheric Correction Coefficients](/guides/reference/analysis_ready_data_corrections/#bil-int-atm-corr-coef)
+11. [Surface Reflectance Calculation (NBAR)](/guides/reference/analysis_ready_data_corrections/#nbar)
 
 % ## Software
 

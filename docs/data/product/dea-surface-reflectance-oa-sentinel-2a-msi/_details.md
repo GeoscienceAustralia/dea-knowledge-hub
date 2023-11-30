@@ -273,17 +273,17 @@ Other uses of Fmask:
 
 ## Processing steps
 
-1. [Longitude and Latitude Calculation](/guides/reference/analysis_ready_data_corrections#lon-lat-calculation)
-2. [Satellite and Solar Geometry Calculation](/guides/reference/analysis_ready_data_corrections#sat-sol-geom-calculation)
-3. [Elevation Retrieval and Smoothing](/guides/reference/analysis_ready_data_corrections#elev-retr-smth)
-4. [Slope and Aspect Calculation](/guides/reference/analysis_ready_data_corrections#slp-asp-calc)
-5. [Incidence and Azimuthal Incident Angles Calculation](/guides/reference/analysis_ready_data_corrections#inc-azm-ang-calc)
-6. [Exiting and Azimuthal Exiting Angles Calculation](/guides/reference/analysis_ready_data_corrections#ext-azm-ang-calc)
-7. [Relative Slope Calculation](/guides/reference/analysis_ready_data_corrections#rel-slp-calc)
-8. [Terrain Occlusion Mask](/guides/reference/analysis_ready_data_corrections#terr-occ-msk)
-9. [Function of Mask (Fmask)](/guides/reference/analysis_ready_data_corrections#fmask)
-10. [Contiguous Spectral Data Mask Calculation](/guides/reference/analysis_ready_data_corrections#cont-spec-data-mask-calc)
-11. [Sentinel Hub's cloud detector for Sentinel-2 imagery](/guides/reference/analysis_ready_data_corrections#sent-hub-cloud-detec)
+1. [Longitude and Latitude Calculation](/guides/reference/analysis_ready_data_corrections/#lon-lat-calculation)
+2. [Satellite and Solar Geometry Calculation](/guides/reference/analysis_ready_data_corrections/#sat-sol-geom-calculation)
+3. [Elevation Retrieval and Smoothing](/guides/reference/analysis_ready_data_corrections/#elev-retr-smth)
+4. [Slope and Aspect Calculation](/guides/reference/analysis_ready_data_corrections/#slp-asp-calc)
+5. [Incidence and Azimuthal Incident Angles Calculation](/guides/reference/analysis_ready_data_corrections/#inc-azm-ang-calc)
+6. [Exiting and Azimuthal Exiting Angles Calculation](/guides/reference/analysis_ready_data_corrections/#ext-azm-ang-calc)
+7. [Relative Slope Calculation](/guides/reference/analysis_ready_data_corrections/#rel-slp-calc)
+8. [Terrain Occlusion Mask](/guides/reference/analysis_ready_data_corrections/#terr-occ-msk)
+9. [Function of Mask (Fmask)](/guides/reference/analysis_ready_data_corrections/#fmask)
+10. [Contiguous Spectral Data Mask Calculation](/guides/reference/analysis_ready_data_corrections/#cont-spec-data-mask-calc)
+11. [Sentinel Hub's cloud detector for Sentinel-2 imagery](/guides/reference/analysis_ready_data_corrections/#sent-hub-cloud-detec)
 
 % ## Software
 

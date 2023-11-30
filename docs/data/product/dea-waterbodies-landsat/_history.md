@@ -4,7 +4,7 @@ This dataset is version 2 of DEA Waterbodies, and represents a reprocessing of D
 
 ### DEA Waterbodies v2
 
-The key difference between DEA Waterbodies v1 and v2 is the underlying satellite imagery used to derive the polygons, and to generate the accompanying csvs. DEA Waterbodies v1 was produced on the [DEA Water Observations from Space](/data-products/dea/142/dea-water-observations-landsat) product, which was derived from [DEA Surface Reflectance NBART (Landsat) collection 2](/data/old-version/dea-water-observations-landsat-2.1.5) data. This dataset had a resolution of 25m. 
+The key difference between DEA Waterbodies v1 and v2 is the underlying satellite imagery used to derive the polygons, and to generate the accompanying csvs. DEA Waterbodies v1 was produced on the [DEA Water Observations from Space](/data-products/dea/142/dea-water-observations-landsat) product, which was derived from [DEA Surface Reflectance NBART (Landsat) collection 2](/data/old-version/dea-water-observations-landsat-2.1.5/) data. This dataset had a resolution of 25m. 
 
 DEA Waterbodies v2 has been reprocessed on [DEA Water Observations](/data/product/dea-water-observations-landsat/), which has been run on collection 3 data, which has a pixel resolution of 30m. The reprocessing of DEA datasets to 30m resolution required that DEA Waterbodies polygon generation be re-run to re-map each waterbody using the new pixel resolution.
 
