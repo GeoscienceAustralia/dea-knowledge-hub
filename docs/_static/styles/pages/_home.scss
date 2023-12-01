@@ -19,6 +19,10 @@
         margin-bottom: 1.75rem;
     }
 
+    & > hr {
+        border-color: var(--pst-color-primary);
+    }
+
     #data-products, #about-dea {
         padding-top: 0.5rem;
         padding-bottom: 0.5rem;

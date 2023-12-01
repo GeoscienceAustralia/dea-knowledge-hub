@@ -8,6 +8,8 @@ Digital Earth Australia (DEA) is a program of Geoscience Australia, an agency of
 
 The DEA Knowledge Hub brings together information about DEA’s products and services to assist you to take advantage of Australia’s free and open satellite imagery archive. 
 
+----
+
 .. container:: card-list icons
    :name: data-products
 
