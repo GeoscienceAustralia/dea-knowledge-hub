@@ -64,12 +64,12 @@ Key products that are available on S3 include the following:
 | `Coastlines`_                      | `S3: derivative/dea_coastlines`_     | `Web: derivative/dea_coastlines`_      |
 +------------------------------------+--------------------------------------+----------------------------------------+
 
-.. _`Surface Reflectance (Landsat 5)`: /data-products/dea/358/dea-surface-reflectance-landsat-5-tm
-.. _`Surface Reflectance (Landsat 7)`: /data-products/dea/475/dea-surface-reflectance-landsat-7-etm
-.. _`Surface Reflectance (Landsat 8)`: /data-products/dea/365/dea-surface-reflectance-landsat-8-oli-tirs
-.. _`Water Observations`: /data-products/dea/613/dea-water-observations-landsat
-.. _`Fractional Cover`: /data-products/dea/629/dea-fractional-cover-landsat
-.. _`Coastlines`: /data-products/dea/581/dea-coastlines
+.. _`Surface Reflectance (Landsat 5)`: /data/product/dea-surface-reflectance-landsat-5-tm
+.. _`Surface Reflectance (Landsat 7)`: /data/product/dea-surface-reflectance-landsat-7-etm
+.. _`Surface Reflectance (Landsat 8)`: /data/product/dea-surface-reflectance-landsat-8-oli-tirs
+.. _`Water Observations`: /data/product/dea-water-observations-landsat
+.. _`Fractional Cover`: /data/product/dea-fractional-cover-landsat
+.. _`Coastlines`: /data/product/dea-coastlines
 .. _`S3: baseline/ga_ls5t_ard_3`: s3://dea-public-data/baseline/ga_ls5t_ard_3
 .. _`S3: baseline/ga_ls7e_ard_3`: s3://dea-public-data/baseline/ga_ls7e_ard_3
 .. _`S3: baseline/ga_ls8c_ard_3`: s3://dea-public-data/baseline/ga_ls8c_ard_3
