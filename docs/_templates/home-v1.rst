@@ -62,9 +62,9 @@ The DEA Knowledge Hub brings together information about DEA’s products and ser
 
       .. rubric:: About Digital Earth Australia
 
-      Digital Earth Australia (DEA) is an analysis platform for satellite imagery and other Earth observations. It is a program of Geoscience Australia.
+      It’s DEA’s mission to embed satellite imagery and data into decisions that support a sustainable Australian environment, a resilient society and a strong economy.
 
-      To find case studies, learning modules, developer portal, and more, `visit the DEA website <https://www.dea.ga.gov.au/>`_.
+      To find out more about the DEA program, our strategy and journey to get here, as well as program news feeds and to `subscribe to the DEA newsletter <https://www.dea.ga.gov.au/news/dea-newsletter-and-communications-archive>`__, `visit the DEA website <https://www.dea.ga.gov.au/>`__.
 
    .. container::
 
