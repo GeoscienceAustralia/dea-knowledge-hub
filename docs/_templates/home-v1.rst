@@ -13,7 +13,7 @@ The DEA Knowledge Hub brings together information about DEA’s products and ser
 
    .. rubric:: Data Products
 
-   Explore DEA’s data products, and learn more about how they were created, how to use and access them, their version history, quality and supporting information and publications.
+   Explore DEA’s data products, and learn more about how they were created, how to use and access them, their version history, quality, and supporting information and publications.
 
    .. grid:: 2 2 3 5
       :gutter: 3
@@ -47,7 +47,7 @@ The DEA Knowledge Hub brings together information about DEA’s products and ser
 
       .. rubric:: DEA Notebooks
 
-      Explore a repository of code examples showcasing DEA products, how-to-guides and common earth observation patterns and case studies using Jupyter Notebooks.
+      Explore a repository of code examples showcasing DEA products, how-to-guides and common earth observation workflows and case studies using Jupyter Notebooks.
 
       `Visit the DEA Notebooks </notebooks/README/>`_
 
