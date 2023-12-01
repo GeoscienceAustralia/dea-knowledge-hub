@@ -52,7 +52,7 @@ data:
     name: Access the data on AWS
 
 code_examples:
-  - link: /notebooks/DEA_products/DEA_Landsat_Surface_Reflectance.html
+  - link: /notebooks/DEA_products/DEA_Landsat_Surface_Reflectance/
     name: Code examples
 
 web_services:
