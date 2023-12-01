@@ -4,17 +4,18 @@
 
     h1 {
         font-size: 1.75rem;
+        margin-bottom: 1.15rem;
     }
 
-    h1, h1 + p {
+    h1, & > p {
         text-align: center;
     }
 
-    h1 + p {
-        padding-bottom: 0.5rem;
+    & > p {
+        margin-bottom: 0.75rem;
     }
 
-    h1 + p, .showcase-panel, .card-list {
+    & > p:last-of-type, .showcase-panel, .card-list {
         margin-bottom: 1.75rem;
     }
 
