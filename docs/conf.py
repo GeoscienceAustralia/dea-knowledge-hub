@@ -23,7 +23,9 @@ exclude_patterns = [
     "notebooks/Scientific_workflows",
     "notebooks/DEA_notebooks_template.ipynb",
     "notebooks/USAGE.rst",
-    "notebooks/Supplementary_data/README.rst",
+    "notebooks/Supplementary_data/*.md",
+    "notebooks/Supplementary_data/*.rst",
+    "notebooks/Supplementary_data/*.ipynb",
     "py-modindex/index.*",
 ]
 exclude_patterns += utilities.optional_exclude_pattern("LOCAL_ENABLE_USER_GUIDES", "guides")

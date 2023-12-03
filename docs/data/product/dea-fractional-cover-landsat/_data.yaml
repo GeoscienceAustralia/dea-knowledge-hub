@@ -48,7 +48,7 @@ data:
     name: Access the data on AWS
 
 code_examples:
-  - link: /notebooks/dea_products/dea_fractional_cover/
+  - link: /notebooks/DEA_products/DEA_Fractional_Cover/
     name: Jupyter notebook
 
 web_services:
