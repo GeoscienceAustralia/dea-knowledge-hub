@@ -1,11 +1,14 @@
 #!/bin/bash
+#
+
+set -eox pipefail
 
 python -m pip install --upgrade pip
 python -m pip install -r ./requirements.txt
 
 npm install -g sass
 
-apt-get install -y pandoc
+sudo apt-get install -y pandoc
 
 mkdir -p ./output
 
