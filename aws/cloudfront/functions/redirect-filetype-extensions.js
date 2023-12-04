@@ -2,7 +2,7 @@
 
 async function handler(event) {
     const uri = event.request.uri;
-    const filetypeExtensionsPattern = /.(html|rst|md|ipynb|py)$/g;
+    const filetypeExtensionsPattern = /\.(html|rst|md|ipynb|py)$/g;
 
     if (uri.match(filetypeExtensionsPattern)) {
         return {
