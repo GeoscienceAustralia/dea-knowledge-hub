@@ -11,7 +11,7 @@ async function handler(event) {
             statusDescription: "Moved Permanently",
             headers: {
                 location: {
-                    value: uri.replace(indexHtmlPattern, "/")
+                    value: uri.replace(indexHtmlPattern, "")
                 }
             }
         }
