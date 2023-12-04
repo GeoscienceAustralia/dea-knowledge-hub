@@ -3,46 +3,6 @@ defaults:
   titlesonly: True
 
 entries:
-  - file: guides/index
-    title: User Guides
-    subtrees:
-      - caption: Overview
-        entries:
-          - file: guides/about/intro
-
-      - caption: Access
-        entries:
-          - file: guides/setup/README
-          - file: guides/setup/dea_maps
-          - file: guides/setup/explorer_guide
-          - file: guides/setup/Sandbox/sandbox
-          - file: guides/setup/NCI/README
-            entries:
-              - file: guides/setup/NCI/account
-              - file: guides/setup/NCI/basics
-              - file: guides/setup/NCI/advanced
-          - file: guides/setup/AWS/data_and_metadata
-          - file: guides/setup/gis/README
-            entries:
-              - file: guides/setup/gis/web_services
-              - file: guides/setup/gis/stac
-          - file: guides/setup/jupyter
-          - file: guides/setup/analysis-ready-data-example-queries
-
-      - caption: Reference
-        entries:
-          - file: guides/reference/collection_3_naming
-          - file: guides/reference/collection_3_summary_grid
-          - file: guides/reference/dataset_maturity_guide
-          - file: guides/reference/analysis_ready_data_corrections
-
-      - caption: Appendix
-        entries:
-          - file: guides/about/faq
-          - file: guides/about/changelog
-          - file: guides/about/publications
-          - file: guides/about/glossary
-
   - file: data/index
     subtrees:
       - caption: Baseline satellite data
@@ -164,6 +124,46 @@ entries:
             title: All
 
           - file: data/product/dea-hotspots/index
+
+  - file: guides/index
+    title: User Guides
+    subtrees:
+      - caption: Overview
+        entries:
+          - file: guides/about/intro
+
+      - caption: Access
+        entries:
+          - file: guides/setup/README
+          - file: guides/setup/dea_maps
+          - file: guides/setup/explorer_guide
+          - file: guides/setup/Sandbox/sandbox
+          - file: guides/setup/NCI/README
+            entries:
+              - file: guides/setup/NCI/account
+              - file: guides/setup/NCI/basics
+              - file: guides/setup/NCI/advanced
+          - file: guides/setup/AWS/data_and_metadata
+          - file: guides/setup/gis/README
+            entries:
+              - file: guides/setup/gis/web_services
+              - file: guides/setup/gis/stac
+          - file: guides/setup/jupyter
+          - file: guides/setup/analysis-ready-data-example-queries
+
+      - caption: Reference
+        entries:
+          - file: guides/reference/collection_3_naming
+          - file: guides/reference/collection_3_summary_grid
+          - file: guides/reference/dataset_maturity_guide
+          - file: guides/reference/analysis_ready_data_corrections
+
+      - caption: Appendix
+        entries:
+          - file: guides/about/faq
+          - file: guides/about/changelog
+          - file: guides/about/publications
+          - file: guides/about/glossary
 
   - file: notebooks/README # The notebooks repository manages its own table of contents.
     title: DEA Notebooks
