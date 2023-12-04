@@ -1,0 +1,60 @@
+# Overview
+
+title: Australian Geographic Reference Image
+long_title: Australian Geographic Reference Image
+header_image: /_files/cmi/agri.jpg
+version: 1.0.0
+is_latest_version: true
+latest_version_link: null
+product_type: Baseline
+spatial_data_type: Raster
+time_span:
+  start: null
+  end: null
+update_frequency: As needed
+product_ids: null
+
+parent_products:
+  name: null
+  link: null
+collection:
+  name: null
+  link: null
+doi: null
+ecat: "72657"
+nci:
+  name: null
+  code: null
+
+tags:
+  - agri
+  - natural_mosaic
+  - utm_zone_mosaics
+
+# Access
+
+maps: null
+
+explorers: null
+
+data:
+  - link: http://dap.nci.org.au/thredds/remoteCatalogService?catalog=http://dapds00.nci.org.au/thredds/catalog/fk4/agri/catalog.xml
+    name: NCI - THREDDS
+
+code_examples: null
+
+web_services: null
+
+# History
+
+old_versions: null
+
+# Settings
+
+enable_overview: true
+enable_access: true
+enable_details: true
+enable_quality: true
+enable_history: true
+enable_credits: true
+
