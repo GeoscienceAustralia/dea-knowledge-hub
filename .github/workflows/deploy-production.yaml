@@ -5,7 +5,7 @@ on:
   repository_dispatch:
     types: [republish-docs] # Triggered from the dea-notebooks repo
   push:
-    branches: [master, dea-docs-v2]
+    branches: [master]
   pull_request:
     branches: [master]
 
