@@ -34,3 +34,10 @@ fc_25_2.0.0                                                   data/old-version/d
 data-products/dea/119/fc_25_2.0.0                             data/old-version/dea-fractional-cover-landsat-2.2.1
 data-products/dea/119/fractional-cover-2-landsat              data/old-version/dea-fractional-cover-landsat-2.2.1
 data-products/dea/119/dea-fractional-cover-landsat            data/old-version/dea-fractional-cover-landsat-2.2.1
+
+node/120                                                                  data/old-version/dea-fractional-cover-percentiles-landsat-2.2.1
+data-products/dea/120/dea-fractional-cover-percentiles-landsat-deprecated data/old-version/dea-fractional-cover-percentiles-landsat-2.2.1
+fc-percentile_25_2.0.0                                                    data/old-version/dea-fractional-cover-percentiles-landsat-2.2.1
+data-products/dea/120/fc-percentile_25_2.0.0                              data/old-version/dea-fractional-cover-percentiles-landsat-2.2.1
+data-products/dea/120/fractional-cover-percentiles-2-landsat              data/old-version/dea-fractional-cover-percentiles-landsat-2.2.1
+data-products/dea/120/dea-fractional-cover-percentiles-landsat            data/old-version/dea-fractional-cover-percentiles-landsat-2.2.1

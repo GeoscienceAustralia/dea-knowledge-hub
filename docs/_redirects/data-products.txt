@@ -249,24 +249,18 @@ data-products/dea/116/australian-geographic-reference-image data/product/austral
 agri_2.5_1.0.0                                              data/product/australian-geographic-reference-image
 data-products/dea/116/agri_2.5_1.0.0                        data/product/australian-geographic-reference-image
 
-node/120                                                                  data/product/dea-fractional-cover-percentiles-landsat-deprecated
-data-products/dea/120/dea-fractional-cover-percentiles-landsat-deprecated data/product/dea-fractional-cover-percentiles-landsat-deprecated
-fc-percentile_25_2.0.0                                                    data/product/dea-fractional-cover-percentiles-landsat-deprecated
-data-products/dea/120/fc-percentile_25_2.0.0                              data/product/dea-fractional-cover-percentiles-landsat-deprecated
-data-products/dea/120/fractional-cover-percentiles-2-landsat              data/product/dea-fractional-cover-percentiles-landsat-deprecated
-data-products/dea/120/dea-fractional-cover-percentiles-landsat            data/product/dea-fractional-cover-percentiles-landsat-deprecated
-
-node/131                                                                           data/product/geoscience-australia-land-cover-terra-modis-to-be-depricated
-data-products/dea/131/geoscience-australia-land-cover-terra-modis-to-be-depricated data/product/geoscience-australia-land-cover-terra-modis-to-be-depricated
-dlcd_250_2.1.0                                                                     data/product/geoscience-australia-land-cover-terra-modis-to-be-depricated
-data-products/dea/131/dynamic-land-cover-dataset                                   data/product/geoscience-australia-land-cover-terra-modis-to-be-depricated
-data-products/dea/131/land-cover-2-terra-aster                                     data/product/geoscience-australia-land-cover-terra-modis-to-be-depricated
-data-products/dea/131/dlcd_250_2.1.0                                               data/product/geoscience-australia-land-cover-terra-modis-to-be-depricated
-data-products/dea/131/dynamic-land-cover-2-terra-modis                             data/product/geoscience-australia-land-cover-terra-modis-to-be-depricated
-data-products/dea/131/land-cover-2-terra-modis                                     data/product/geoscience-australia-land-cover-terra-modis-to-be-depricated
-data-products/dea/131/dea-land-cover-terra-modis                                   data/product/geoscience-australia-land-cover-terra-modis-to-be-depricated
-data-products/dea/ga_ter_m_dlcd_ann                                                data/product/geoscience-australia-land-cover-terra-modis-to-be-depricated
-data-products/dea/131/geoscience-australia-land-cover-terra-modis                  data/product/geoscience-australia-land-cover-terra-modis-to-be-depricated
+node/131                                                                           data/product/ga-land-cover-terra-modis
+data-products/dea/131/geoscience-australia-land-cover-terra-modis-to-be-deprecated data/product/ga-land-cover-terra-modis
+data-products/dea/131/geoscience-australia-land-cover-terra-modis-to-be-depricated data/product/ga-land-cover-terra-modis
+dlcd_250_2.1.0                                                                     data/product/ga-land-cover-terra-modis
+data-products/dea/131/dynamic-land-cover-dataset                                   data/product/ga-land-cover-terra-modis
+data-products/dea/131/land-cover-2-terra-aster                                     data/product/ga-land-cover-terra-modis
+data-products/dea/131/dlcd_250_2.1.0                                               data/product/ga-land-cover-terra-modis
+data-products/dea/131/dynamic-land-cover-2-terra-modis                             data/product/ga-land-cover-terra-modis
+data-products/dea/131/land-cover-2-terra-modis                                     data/product/ga-land-cover-terra-modis
+data-products/dea/131/dea-land-cover-terra-modis                                   data/product/ga-land-cover-terra-modis
+data-products/dea/ga_ter_m_dlcd_ann                                                data/product/ga-land-cover-terra-modis
+data-products/dea/131/geoscience-australia-land-cover-terra-modis                  data/product/ga-land-cover-terra-modis
 
 node/137                                                         data/product/dea-pixel-quality-count-landsat-deprecated
 data-products/dea/137/dea-pixel-quality-count-landsat-deprecated data/product/dea-pixel-quality-count-landsat-deprecated

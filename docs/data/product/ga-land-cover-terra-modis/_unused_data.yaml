@@ -1,0 +1,113 @@
+# Unused data migrated from the CMI. May be outdated.
+
+# General
+
+cmi_node: 131
+cmi_url: https://cmi.ga.gov.au/data-products/dea/131/geoscience-australia-land-cover-terra-modis-to-be-depricated
+published_date: "2015-01-01"
+author: L. L. @ ga.gov.au
+created: 2018-03-12T12:00:00+1100
+
+# Basics tab
+
+program: dea
+theme: Land and vegetation
+catalogue: GA Land Cover
+collection_slug: null
+is_deprecated: null
+is_primary_record: null
+project_leader: T. K. @ ga.gov.au
+branch_head: c...i @ ga.gov.au
+related_items: null
+anzsrc_research_code: null
+
+# Access tab
+
+map_names:
+  - DEA Maps
+ecat_url: http://pid.geoscience.gov.au/dataset/ga/83868
+doi_url: null
+open_data_cube_configuration: null
+security_classification: Unclassified
+time_span_full:
+  start: 2017-05-09T00:51:30+1000
+  end: 2017-05-09T00:51:30+1000
+
+# Details tab
+
+relevant_websites:
+  - link: https://www.ga.gov.au/dea/products
+    name: Digital Earth Australia
+  - link: http://www.ga.gov.au/scientific-topics/earth-obs/accessing-satellite-imagery/landcover
+    name: National Land Cover Dataset
+
+# Processing tab
+
+data_sources:
+  - MOD13Q1 Enhanced Vegetation Index data
+  - SRTM DSM/DEM data
+  - MCD43A3 MODIS 500m Green Albedo
+  - Catchment Land Use Maps 2012
+  - South Australian Department of Environment and Natural Resources Natural Resource Database
+  - Interim Bioregionalisation of Australia
+  - Groundwater Dependent Ecosystem Atlas 2012
+major_algorithms:
+  - DLCD classification (Lymburner et al., 2011)
+schema_spatial_extent:
+  temporal_extent:
+    start: 2000-12-31T13:00:00+1100
+    end: 2014-12-31T13:00:00+1100
+  min_longitude: 110
+  max_longitude: 155
+  min_latitude: -45
+  max_latitude: -10
+  coordinate_reference_system: "WGS 84 (EPSG: 4326)"
+  coordinate_reference_system_units: decimal_degrees
+  cell_size_x: 0.002349
+  cell_size_y: 0.002349
+  pixel_origin: Top Left
+  spatial_extent:
+    geo_type: Polygon
+    lat: "-27.500000000000"
+    long: "132.500000000000"
+    left: "110.000000000000"
+    top: "-10.000000000000"
+    right: "155.000000000000"
+    bottom: "-45.000000000000"
+    geohash: null
+
+# Media tab
+
+media: null
+case_studies: null
+header_image_alt: dlcd map
+files:
+  - file: /2017-06/DLCD 2.1 Confusion Matrix.xlsx
+    description: ""
+
+# Credits tab
+
+owners:
+  - Commonwealth of Australia (Geoscience Australia)
+custodians:
+  - Commonwealth of Australia (Geoscience Australia)
+principal_contributors:
+  - A. M.
+  - P. T.
+  - L. L.
+subject_matter_experts:
+  - N. M.
+  - L. L.
+publishing_entities:
+  - Commonwealth of Australia (Geoscience Australia)
+metadata_contacts:
+  - Geoscience Australia - Team Leader, Product Management, Operations Section NEMO
+media_contacts:
+  - Geoscience Australia - GA Media Hotline
+rights_statement: © Commonwealth of Australia (Geoscience Australia) 2015. [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/.).
+data_source_contacts:
+  - "Geoscience Australia - Team Leader, Applications and Systems Support, NEMO "
+approvers_checklist: null
+approvers_checklist_hprm_reference: null
+pmp_hprm_reference: null
+

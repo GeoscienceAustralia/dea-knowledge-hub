@@ -84,6 +84,8 @@ entries:
                 title: DEA Fractional Cover
               - file: data/product/dea-fractional-cover-percentiles-landsat/index
                 title: DEA Fractional Cover Percentiles
+          - file: data/product/ga-land-cover-terra-modis
+            title: GA Land Cover (Terra MODIS)
           - file: data/product/dea-geometric-median-and-median-absolute-deviation-landsat/index
             title: DEA Geomedian and Mean Absolute Deviation (GeoMAD)
           - file: data/product/dea-mangrove-canopy-cover-landsat/index
