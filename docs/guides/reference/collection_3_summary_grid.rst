@@ -41,12 +41,12 @@ In developing this new grid, we had several goals:
    (:math:`10m^2`, :math:`20m^2` and :math:`60m^2`)
 
 -  have a naming convention that was non-negative, removing the need for
-   plus and minus symbols that can be problematic for some applications
+   plus and minus symbols that can be problematic for some software applications
 
 The tile size is defined as :math:`96km^2`. For Landsat, this will result
-in a raster size of :math:`3200*3200` pixels of :math:`30m^2`. For 
-Sentinel-2, this will result in a raster size of :math:`9600*9600` 
-pixels of :math:`10m^2`.
+in a raster size of :math:`3200 \times 3200 pixels` of :math:`30m^2`. For 
+Sentinel-2, this will result in a raster size of :math:`9600 \times 9600 pixels` 
+of :math:`10m^2`.
 
 For compatibility with file system and web access tools and protocols,
 the grid has been defined to be non-negative, with the x00,y00 cell
@@ -89,10 +89,6 @@ References
    map <https://maps.dea.ga.gov.au/#share=s-yUPQrYI0zfAYDldoQSqxzHjpeKx>`__
 -  `Download the Grid in GeoJSON
    map <https://data.dea.ga.gov.au/derivative/ga_summary_grid_c3.geojson>`__
--  `DEA Collection 3 Grid Specification in CMI
-   Specifications </node/701>`__
--  `Grid Specification extent in CMI
-   Schema </raster-schema/dea-collection-3-grid-specification>`__
 -  `The Grid as implemented in ODC Statistician
    <https://github.com/opendatacube/odc-tools/blob/dff7b984464a4cc9d6bd9f6f444ef4a292c730d0/libs/dscache/odc/dscache/tools/tiling.py#L13-L41>`__
 
