@@ -56,6 +56,10 @@ custom:
     description: null
     class: null
 
+# History
+
+old_versions: null
+
 # Settings
 
 enable_overview: true

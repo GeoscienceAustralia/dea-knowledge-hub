@@ -240,15 +240,181 @@ data-products/dea/639/dea-water-observations-sentinel-2-msi                     
 data-products/dea/639/dea-water-observations-sentinel-2-near-real-time-provisional  data/product/dea-water-observations-provisional-sentinel-2-nrt
 data-products/dea/639/dea-water-observations-provisional-sentinel-2-msi-nrt         data/product/dea-water-observations-provisional-sentinel-2-nrt
 
-node/142                                                        data/old-version/dea-water-observations-landsat-2.1.5
-data-products/dea/142/dea-water-observations-landsat-deprecated data/old-version/dea-water-observations-landsat-2.1.5
-wo_25_2.1.5                                                     data/old-version/dea-water-observations-landsat-2.1.5
-data-products/dea/142/wo_25_2.1.5                               data/old-version/dea-water-observations-landsat-2.1.5
-data-products/dea/142/water-observations-2-landsat              data/old-version/dea-water-observations-landsat-2.1.5
-data-products/dea/142/water-observations-from-space-2-landsat   data/old-version/dea-water-observations-landsat-2.1.5
-data-products/dea/142/dea-water-observations-landsat            data/old-version/dea-water-observations-landsat-2.1.5
-
 node/669                                                        data/product/dea-wetlands-insight-tool-ramsar-wetlands
 data-products/dea/669/dea-wetlands-insight-tool-ramsar-wetlands data/product/dea-wetlands-insight-tool-ramsar-wetlands
 data-products/dea/ga_ls_wit_ramsar_class_myear_3_1986--P35Y     data/product/dea-wetlands-insight-tool-ramsar-wetlands
+
+node/116                                                    data/product/australian-geographic-reference-image
+data-products/dea/116/australian-geographic-reference-image data/product/australian-geographic-reference-image
+agri_2.5_1.0.0                                              data/product/australian-geographic-reference-image
+data-products/dea/116/agri_2.5_1.0.0                        data/product/australian-geographic-reference-image
+
+node/131                                                                           data/product/ga-land-cover-terra-modis
+data-products/dea/131/geoscience-australia-land-cover-terra-modis-to-be-deprecated data/product/ga-land-cover-terra-modis
+data-products/dea/131/geoscience-australia-land-cover-terra-modis-to-be-depricated data/product/ga-land-cover-terra-modis
+dlcd_250_2.1.0                                                                     data/product/ga-land-cover-terra-modis
+data-products/dea/131/dynamic-land-cover-dataset                                   data/product/ga-land-cover-terra-modis
+data-products/dea/131/land-cover-2-terra-aster                                     data/product/ga-land-cover-terra-modis
+data-products/dea/131/dlcd_250_2.1.0                                               data/product/ga-land-cover-terra-modis
+data-products/dea/131/dynamic-land-cover-2-terra-modis                             data/product/ga-land-cover-terra-modis
+data-products/dea/131/land-cover-2-terra-modis                                     data/product/ga-land-cover-terra-modis
+data-products/dea/131/dea-land-cover-terra-modis                                   data/product/ga-land-cover-terra-modis
+data-products/dea/ga_ter_m_dlcd_ann                                                data/product/ga-land-cover-terra-modis
+data-products/dea/131/geoscience-australia-land-cover-terra-modis                  data/product/ga-land-cover-terra-modis
+
+node/137                                                         data/product/dea-pixel-quality-count-landsat-deprecated
+data-products/dea/137/dea-pixel-quality-count-landsat-deprecated data/product/dea-pixel-quality-count-landsat-deprecated
+pq-count_25_2.0.0                                                data/product/dea-pixel-quality-count-landsat-deprecated
+data-products/copernicus/137/pq-count_25_2.0.0                   data/product/dea-pixel-quality-count-landsat-deprecated
+data-products/dea/137/pixel-quality-count-2-landsat              data/product/dea-pixel-quality-count-landsat-deprecated
+data-products/dea/137/dea-pixel-quality-count-landsat            data/product/dea-pixel-quality-count-landsat-deprecated
+
+node/140                                                                   data/product/dea-surface-reflectance-geomedian-landsat-deprecated
+data-products/dea/140/dea-surface-reflectance-geomedian-landsat-deprecated data/product/dea-surface-reflectance-geomedian-landsat-deprecated
+sr_geomedian_25_2.0.0                                                      data/product/dea-surface-reflectance-geomedian-landsat-deprecated
+data-products/dea/140/sr_geomedian_25_2.0.0                                data/product/dea-surface-reflectance-geomedian-landsat-deprecated
+data-products/dea/140/surface-reflectance-geomedian-2-landsat              data/product/dea-surface-reflectance-geomedian-landsat-deprecated
+data-products/dea/140/dea-surface-reflectance-geomedian-landsat            data/product/dea-surface-reflectance-geomedian-landsat-deprecated
+
+node/143                                                                   data/product/dea-water-observations-statistics-landsat-deprecated
+data-products/dea/143/dea-water-observations-statistics-landsat-deprecated data/product/dea-water-observations-statistics-landsat-deprecated
+wo-stats_25_2.1.5                                                          data/product/dea-water-observations-statistics-landsat-deprecated
+data-products/dea/143/wo-stats_25_2.1.5                                    data/product/dea-water-observations-statistics-landsat-deprecated
+data-products/dea/143/water-observations-statistics-2-landsat              data/product/dea-water-observations-statistics-landsat-deprecated
+data-products/dea/143/water-observations-from-space-statistics-2-landsat   data/product/dea-water-observations-statistics-landsat-deprecated
+data-products/dea/143/dea-water-observations-statistics-landsat            data/product/dea-water-observations-statistics-landsat-deprecated
+
+node/189                                                                           data/product/dea-surface-reflectance-nbar-sentinel-2-msi-deprecated
+data-products/dea/189/dea-surface-reflectance-nbar-sentinel-2-msi-deprecated       data/product/dea-surface-reflectance-nbar-sentinel-2-msi-deprecated
+ga_s2_m_nbar_1                                                                     data/product/dea-surface-reflectance-nbar-sentinel-2-msi-deprecated
+data-products/dea/189/ga_s2_m_nbar_1                                               data/product/dea-surface-reflectance-nbar-sentinel-2-msi-deprecated
+data-products/dea/189/surface-reflectance-nbar-1-sentinel-2-msi                    data/product/dea-surface-reflectance-nbar-sentinel-2-msi-deprecated
+data-products/dea/189/dea-surface-reflectance-nbar-sentinel-2-msi                  data/product/dea-surface-reflectance-nbar-sentinel-2-msi-deprecated
+data-products/dea/189/dea-surface-reflectance-nbar-sentinel-2-msi-to-be-deprecated data/product/dea-surface-reflectance-nbar-sentinel-2-msi-deprecated
+
+node/190                                                                            data/product/dea-surface-reflectance-nbart-sentinel-2-msi-deprecated
+data-products/dea/190/dea-surface-reflectance-nbart-sentinel-2-msi-deprecated       data/product/dea-surface-reflectance-nbart-sentinel-2-msi-deprecated
+ga_s2_m_nbart_1                                                                     data/product/dea-surface-reflectance-nbart-sentinel-2-msi-deprecated
+data-products/dea/190/ga_s2_m_nbart_1                                               data/product/dea-surface-reflectance-nbart-sentinel-2-msi-deprecated
+data-products/dea/190/surface-reflectance-nbart-1-sentinel-2-msi                    data/product/dea-surface-reflectance-nbart-sentinel-2-msi-deprecated
+data-products/dea/190/dea-surface-reflectance-nbart-sentinel-2-msi                  data/product/dea-surface-reflectance-nbart-sentinel-2-msi-deprecated
+data-products/dea/190/dea-surface-reflectance-nbart-sentinel-2-msi-to-be-deprecated data/product/dea-surface-reflectance-nbart-sentinel-2-msi-deprecated
+
+node/191                                                           data/product/dea-mangrove-canopy-cover-landsat-deprecated
+data-products/dea/191/dea-mangrove-canopy-cover-landsat-deprecated data/product/dea-mangrove-canopy-cover-landsat-deprecated
+mangrove_25_1.0.0                                                  data/product/dea-mangrove-canopy-cover-landsat-deprecated
+data-products/dea/191/mangrove_25_1.0.0                            data/product/dea-mangrove-canopy-cover-landsat-deprecated
+data-products/dea/191/mangroves-canopy-cover-2-landsat             data/product/dea-mangrove-canopy-cover-landsat-deprecated
+data-products/dea/191/mangrove-canopy-cover-2-landsat              data/product/dea-mangrove-canopy-cover-landsat-deprecated
+data-products/dea/mangrove_extent_cover_albers                     data/product/dea-mangrove-canopy-cover-landsat-deprecated
+data-products/dea/191/dea-mangrove-canopy-cover-landsat            data/product/dea-mangrove-canopy-cover-landsat-deprecated
+
+node/211                                                                            data/product/dea-water-observations-filtered-statistics-landsat-deprecated
+data-products/dea/211/dea-water-observations-filtered-statistics-landsat-deprecated data/product/dea-water-observations-filtered-statistics-landsat-deprecated
+wo-filt-stats_25_2.1.5                                                              data/product/dea-water-observations-filtered-statistics-landsat-deprecated
+data-products/dea/211/wo-filt-stats_25_2.1.5                                        data/product/dea-water-observations-filtered-statistics-landsat-deprecated
+data-products/dea/211/water-observations-filtered-statistics-2-landsat              data/product/dea-water-observations-filtered-statistics-landsat-deprecated
+data-products/dea/211/water-observations-from-space-filtered-statistics-2-landsat   data/product/dea-water-observations-filtered-statistics-landsat-deprecated
+data-products/dea/211/dea-water-observations-filtered-statistics-landsat            data/product/dea-water-observations-filtered-statistics-landsat-deprecated
+data-products/dea/211/wofs_filtered_summary                                         data/product/dea-water-observations-filtered-statistics-landsat-deprecated
+
+node/337                                              data/product/dea-wetness-percentiles-landsat
+data-products/dea/337/dea-wetness-percentiles-landsat data/product/dea-wetness-percentiles-landsat
+tci_percentiles_25_2.0.0                              data/product/dea-wetness-percentiles-landsat
+data-products/dea/337/tci_percentiles_25_2.0.0        data/product/dea-wetness-percentiles-landsat
+data-products/dea/337/wetness-percentiles-2-landsat   data/product/dea-wetness-percentiles-landsat
+data-products/dea/ga_ls_tcw_percentiles_2             data/product/dea-wetness-percentiles-landsat
+
+node/346                                                                                   data/product/dea-surface-reflectance-median-absolute-deviation-landsat-deprecated
+data-products/dea/346/dea-surface-reflectance-median-absolute-deviation-landsat-deprecated data/product/dea-surface-reflectance-median-absolute-deviation-landsat-deprecated
+sr_tmad_25_2.1.0                                                                           data/product/dea-surface-reflectance-median-absolute-deviation-landsat-deprecated
+data-products/dea/346/sr_tmad_25_2.1.0                                                     data/product/dea-surface-reflectance-median-absolute-deviation-landsat-deprecated
+data-products/dea/346/surface-reflectance-absolute-deviation-2-landsat                     data/product/dea-surface-reflectance-median-absolute-deviation-landsat-deprecated
+data-products/dea/346/surface-reflectance-median-absolute-deviation-2-landsat              data/product/dea-surface-reflectance-median-absolute-deviation-landsat-deprecated
+data-products/dea/346/dea-surface-reflectance-median-absolute-deviation-landsat            data/product/dea-surface-reflectance-median-absolute-deviation-landsat-deprecated
+
+node/349                                                              data/product/dea-burnt-area-landsat-2010-and-2015-deprecated
+data-products/dea/349/dea-burnt-area-landsat-2010-and-2015-deprecated data/product/dea-burnt-area-landsat-2010-and-2015-deprecated
+bam_25_1.0                                                            data/product/dea-burnt-area-landsat-2010-and-2015-deprecated
+data-products/dea/349/bam_25_1.0                                      data/product/dea-burnt-area-landsat-2010-and-2015-deprecated
+data-products/dea/349/burned-area-2-landsat                           data/product/dea-burnt-area-landsat-2010-and-2015-deprecated
+data-products/dea/349/dea-burned-area-landsat                         data/product/dea-burnt-area-landsat-2010-and-2015-deprecated
+data-products/dea/349/dea-burned-area-landsat-deprecated              data/product/dea-burnt-area-landsat-2010-and-2015-deprecated
+
+node/432                                                             data/product/dea-cloud-and-cloud-shadow-mask-sentinel-2-msi
+data-products/dea/432/dea-cloud-and-cloud-shadow-mask-sentinel-2-msi data/product/dea-cloud-and-cloud-shadow-mask-sentinel-2-msi
+sentinel-2_cloud_and_cloud_shadow_mask                               data/product/dea-cloud-and-cloud-shadow-mask-sentinel-2-msi
+data-products/dea/432/sentinel-2-cloud-and-cloud-shadow-mask         data/product/dea-cloud-and-cloud-shadow-mask-sentinel-2-msi
+data-products/dea/432/cloud-and-cloud-shadow-mask-1-sentinel-2-msi   data/product/dea-cloud-and-cloud-shadow-mask-sentinel-2-msi
+
+node/456                          data/product/waterbodies
+data-products/dea/456/waterbodies data/product/waterbodies
+waterboards                       data/product/waterbodies
+data-product/456/waterboards      data/product/waterbodies
+data-products/dea/456/waterboards data/product/waterbodies
+
+node/602                                                  data/product/aquatic-surface-reflectance-landsat
+data-products/dea/602/aquatic-surface-reflectance-landsat data/product/aquatic-surface-reflectance-landsat
+data-products/dea/602/acquatic-surface-reflectance        data/product/aquatic-surface-reflectance-landsat
+data-products/dea/602/aquatic-surface-reflectance         data/product/aquatic-surface-reflectance-landsat
+
+node/622                                  data/product/daily-satpaths-beta
+data-products/dea/622/daily-satpaths-beta data/product/daily-satpaths-beta
+data-products/dea/622/daily-satpaths      data/product/daily-satpaths-beta
+
+node/638                                                      data/product/test-do-not-use-clone-of-dea-coastlines
+data-products/dea/638/test-do-not-use-clone-of-dea-coastlines data/product/test-do-not-use-clone-of-dea-coastlines
+
+node/641                                                  data/product/dea-collection-3-grid-specification
+data-products/dea/641/dea-collection-3-grid-specification data/product/dea-collection-3-grid-specification
+
+node/644                                                               data/product/test-do-not-use-clone-of-dea-waterbodies-landsat
+data-products/dea/644/test-do-not-use-clone-of-dea-waterbodies-landsat data/product/test-do-not-use-clone-of-dea-waterbodies-landsat
+
+node/670                                      data/product/satpaths-api-beta
+data-products/dea/670/satpaths-api-beta       data/product/satpaths-api-beta
+data-products/dea/670/daily-satpaths-api-beta data/product/satpaths-api-beta
+
+node/684                                                                                         data/product/dea-burnt-area-characteristic-layers-sentinel-2-near-real-time-provisional
+data-products/dea/684/dea-burnt-area-characteristic-layers-sentinel-2-near-real-time-provisional data/product/dea-burnt-area-characteristic-layers-sentinel-2-near-real-time-provisional
+data-products/dea/684/dea-burnt-area-characteristic-layers                                       data/product/dea-burnt-area-characteristic-layers-sentinel-2-near-real-time-provisional
+data-products/dea/684/dea-provisional-burnt-area-characteristic-layers-sentinel-2-near-real-time data/product/dea-burnt-area-characteristic-layers-sentinel-2-near-real-time-provisional
+data-products/dea/ga_s2_ba_provisional_3                                                         data/product/dea-burnt-area-characteristic-layers-sentinel-2-near-real-time-provisional
+
+node/685                                                                           data/product/dea-burnt-area-vectors-sentinel-2-near-real-time-provisional
+data-products/dea/685/dea-burnt-area-vectors-sentinel-2-near-real-time-provisional data/product/dea-burnt-area-vectors-sentinel-2-near-real-time-provisional
+
+node/695                                                     data/product/dea-wetlands-insight-tool-qld
+data-products/dea/695/dea-wetlands-insight-tool-qld          data/product/dea-wetlands-insight-tool-qld
+data-products/dea/695/clone-of-dea-wetlands-insight-tool-qld data/product/dea-wetlands-insight-tool-qld
+
+node/696                                                                 data/product/dea-wetlands-insight-tool-ramsar-wetlands
+data-products/dea/696/dea-wetlands-insight-tool-ramsar-wetlands          data/product/dea-wetlands-insight-tool-ramsar-wetlands
+data-products/dea/696/clone-of-dea-wetlands-insight-tool-ramsar-wetlands data/product/dea-wetlands-insight-tool-ramsar-wetlands
+
+node/699                                           data/product/draft-dea-land-cover-landsat
+data-products/dea/699/draft-dea-land-cover-landsat data/product/draft-dea-land-cover-landsat
+data-products/dea/699/dea-land-cover-landsat       data/product/draft-dea-land-cover-landsat
+
+node/702                                                   data/product/dea-tasseled-cap-percentiles-landsat
+data-products/dea/702/dea-tasseled-cap-percentiles-landsat data/product/dea-tasseled-cap-percentiles-landsat
+
+node/826                                               data/product/dea-land-cover-landsat-abs-draft
+data-products/dea/826/dea-land-cover-landsat-abs-draft data/product/dea-land-cover-landsat-abs-draft
+
+node/835                                      data/product/clone-of-dea-coastlines
+data-products/dea/835/clone-of-dea-coastlines data/product/clone-of-dea-coastlines
+
+node/836                                       data/product/leighs-test-data-product
+data-products/dea/836/leighs-test-data-product data/product/leighs-test-data-product
+
+node/840                                                              data/product/dea-intertidal-suite-draft-product-testing-only
+data-products/dea/840/dea-intertidal-suite-draft-product-testing-only data/product/dea-intertidal-suite-draft-product-testing-only
+data-products/dea/840/clone-of-dea-intertidal-elevation-landsat       data/product/dea-intertidal-suite-draft-product-testing-only
+
+node/841                                                    data/product/draft...-burncube-historic-burnt-area
+data-products/dea/841/draft...-burncube-historic-burnt-area data/product/draft...-burncube-historic-burnt-area
+
+node/842                                            data/product/draft-dea-waterbodies-landsat
+data-products/dea/842/draft-dea-waterbodies-landsat data/product/draft-dea-waterbodies-landsat
 

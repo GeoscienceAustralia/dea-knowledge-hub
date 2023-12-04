@@ -1,0 +1,62 @@
+# Overview
+
+title: DEA Fractional Cover Percentiles (Landsat, DEPRECATED)
+long_title: Fractional Cover 25m Percentiles 2.2.1 - This product is deprecated and the data no longer available
+header_image: /_files/cmi/FractionalCover1_0.jpg
+version: 2.2.1
+is_latest_version: null
+latest_version_link: null
+product_type: Derivative
+spatial_data_type: Raster
+time_span:
+  start: null
+  end: null
+update_frequency: As needed
+product_ids:
+  - fc_percentile_albers
+  - fc_percentile_albers_annual
+  - fc_percentile_albers_seasonal
+
+parent_products:
+  name: null
+  link: null
+collection:
+  name: Geoscience Australia Landsat Collection 2 (DEPRECATED)
+  link: null
+doi: null
+ecat: "120843"
+nci:
+  name: null
+  code: null
+
+tags:
+  - geoscience_australia_landsat_collection_2_deprecated
+  - green_vegetation
+  - non_green_vegetation
+  - bare_soil
+
+# Access
+
+maps: null
+
+explorers: null
+
+data: null
+
+code_examples: null
+
+web_services: null
+
+# History
+
+old_versions: null
+
+# Settings
+
+enable_overview: true
+enable_access: true
+enable_details: true
+enable_quality: true
+enable_history: true
+enable_credits: true
+

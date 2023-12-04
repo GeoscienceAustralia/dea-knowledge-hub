@@ -1,0 +1,100 @@
+# Unused data migrated from the CMI. May be outdated.
+
+# General
+
+cmi_node: 118
+cmi_url: https://cmi.ga.gov.au/data-products/dea/118/dea-pixel-quality-landsat-deprecated
+published_date: "2016-06-17"
+author: L. L. @ ga.gov.au
+created: 2017-05-05T13:28:25+1000
+
+# Basics tab
+
+program: dea
+theme: Baseline satellite data
+catalogue: DEA Surface Reflectance
+collection_slug: geoscience-australia-landsat-collection-2-deprecated
+is_deprecated: true
+is_primary_record: null
+project_leader: c...i @ ga.gov.au
+branch_head: c...i @ ga.gov.au
+related_items: null
+anzsrc_research_code: null
+
+# Access tab
+
+map_names: null
+ecat_url: http://pid.geoscience.gov.au/dataset/ga/102290
+doi_url: null
+open_data_cube_configuration: null
+security_classification: Unclassified
+time_span_full:
+  start: null
+  end: null
+
+# Details tab
+
+relevant_websites: null
+
+# Processing tab
+
+data_sources:
+  - Level 1 Satellite Imagery
+  - Systematic Terrain Correction Imagery
+  - DEA Surface Reflectance NBAR (Landsat, DEPRECATED)
+  - Ephemeris Data
+major_algorithms:
+  - ACCA (Irish et al. 2006)
+  - Fmask (Zhu and Woodcock 2012)
+  - Cloud Shadow (Sixsmith, 2012)
+schema_spatial_extent:
+  temporal_extent:
+    start: null
+    end: null
+  min_longitude: null
+  max_longitude: null
+  min_latitude: null
+  max_latitude: null
+  coordinate_reference_system: null
+  coordinate_reference_system_units: null
+  cell_size_x: null
+  cell_size_y: null
+  pixel_origin: null
+  spatial_extent:
+    geo_type: null
+    lat: null
+    long: null
+    left: null
+    top: null
+    right: null
+    bottom: null
+    geohash: null
+
+# Media tab
+
+media: null
+case_studies: null
+header_image_alt: pixel quality
+files: null
+
+# Credits tab
+
+owners:
+  - Commonwealth of Australia (Geoscience Australia)
+custodians:
+  - Commonwealth of Australia (Geoscience Australia)
+principal_contributors: null
+subject_matter_experts: null
+publishing_entities:
+  - Commonwealth of Australia (Geoscience Australia)
+metadata_contacts:
+  - Geoscience Australia - Team Leader, Product Management, Operations Section NEMO
+media_contacts:
+  - Geoscience Australia - GA Media Hotline
+rights_statement: © Commonwealth of Australia (Geoscience Australia) 2015. [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
+data_source_contacts:
+  - "Geoscience Australia - Team Leader, Applications and Systems Support, NEMO "
+approvers_checklist: null
+approvers_checklist_hprm_reference: null
+pmp_hprm_reference: null
+

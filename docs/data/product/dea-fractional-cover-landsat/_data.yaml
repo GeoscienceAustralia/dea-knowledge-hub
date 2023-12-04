@@ -57,6 +57,18 @@ web_services:
 
 custom: null
 
+# History
+
+old_versions: null
+
+# History
+
+old_versions:
+  - version: 2.2.1
+    title: DEA Fractional Cover (Landsat, DEPRECATED)
+    slug: dea-fractional-cover-landsat-2.2.1
+    release_date: null
+
 # Settings
 
 enable_overview: true

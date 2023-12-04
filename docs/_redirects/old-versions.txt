@@ -1,0 +1,43 @@
+node/111                                                              data/old-version/dea-surface-reflectance-nbar-landsat-2.0.0
+data-products/dea/111/dea-surface-reflectance-nbar-landsat-deprecated data/old-version/dea-surface-reflectance-nbar-landsat-2.0.0
+sr-n_25_2.0.0                                                         data/old-version/dea-surface-reflectance-nbar-landsat-2.0.0
+data-products/dea/111/sr-n_25_2.0.0                                   data/old-version/dea-surface-reflectance-nbar-landsat-2.0.0
+data-products/dea/111/surface-reflectance-nbar-2-landsat              data/old-version/dea-surface-reflectance-nbar-landsat-2.0.0
+data-products/dea/111/dea-surface-reflectance-nbar-landsat            data/old-version/dea-surface-reflectance-nbar-landsat-2.0.0
+
+node/115                                                               data/old-version/dea-surface-reflectance-nbart-landsat-2.0.0
+data-products/dea/115/dea-surface-reflectance-nbart-landsat-deprecated data/old-version/dea-surface-reflectance-nbart-landsat-2.0.0
+surface_reflectance_nbart_25m_2.0.0                                    data/old-version/dea-surface-reflectance-nbart-landsat-2.0.0
+data-products/dea/115/dea-hotspots                                     data/old-version/dea-surface-reflectance-nbart-landsat-2.0.0
+data-products/dea/115/surface-reflectance-nbart-25m-2.0.0              data/old-version/dea-surface-reflectance-nbart-landsat-2.0.0
+data-products/dea/115/surface-reflectance-nbart-2-landsat              data/old-version/dea-surface-reflectance-nbart-landsat-2.0.0
+data-products/dea/115/dea-surface-reflectance-nbart-landsat            data/old-version/dea-surface-reflectance-nbart-landsat-2.0.0
+
+node/142                                                        data/old-version/dea-water-observations-landsat-2.1.5
+data-products/dea/142/dea-water-observations-landsat-deprecated data/old-version/dea-water-observations-landsat-2.1.5
+wo_25_2.1.5                                                     data/old-version/dea-water-observations-landsat-2.1.5
+data-products/dea/142/wo_25_2.1.5                               data/old-version/dea-water-observations-landsat-2.1.5
+data-products/dea/142/water-observations-2-landsat              data/old-version/dea-water-observations-landsat-2.1.5
+data-products/dea/142/water-observations-from-space-2-landsat   data/old-version/dea-water-observations-landsat-2.1.5
+data-products/dea/142/dea-water-observations-landsat            data/old-version/dea-water-observations-landsat-2.1.5
+
+node/118                                                   data/old-version/dea-pixel-quality-landsat-2.0.0
+data-products/dea/118/dea-pixel-quality-landsat-deprecated data/old-version/dea-pixel-quality-landsat-2.0.0
+pq_25_2.0.0                                                data/old-version/dea-pixel-quality-landsat-2.0.0
+data-products/dea/118/pq_25_2.0.0                          data/old-version/dea-pixel-quality-landsat-2.0.0
+data-products/dea/118/pixel-quality-2-landsat              data/old-version/dea-pixel-quality-landsat-2.0.0
+data-products/dea/118/dea-pixel-quality-landsat            data/old-version/dea-pixel-quality-landsat-2.0.0
+
+node/119                                                      data/old-version/dea-fractional-cover-landsat-2.2.1
+data-products/dea/119/dea-fractional-cover-landsat-deprecated data/old-version/dea-fractional-cover-landsat-2.2.1
+fc_25_2.0.0                                                   data/old-version/dea-fractional-cover-landsat-2.2.1
+data-products/dea/119/fc_25_2.0.0                             data/old-version/dea-fractional-cover-landsat-2.2.1
+data-products/dea/119/fractional-cover-2-landsat              data/old-version/dea-fractional-cover-landsat-2.2.1
+data-products/dea/119/dea-fractional-cover-landsat            data/old-version/dea-fractional-cover-landsat-2.2.1
+
+node/120                                                                  data/old-version/dea-fractional-cover-percentiles-landsat-2.2.1
+data-products/dea/120/dea-fractional-cover-percentiles-landsat-deprecated data/old-version/dea-fractional-cover-percentiles-landsat-2.2.1
+fc-percentile_25_2.0.0                                                    data/old-version/dea-fractional-cover-percentiles-landsat-2.2.1
+data-products/dea/120/fc-percentile_25_2.0.0                              data/old-version/dea-fractional-cover-percentiles-landsat-2.2.1
+data-products/dea/120/fractional-cover-percentiles-2-landsat              data/old-version/dea-fractional-cover-percentiles-landsat-2.2.1
+data-products/dea/120/dea-fractional-cover-percentiles-landsat            data/old-version/dea-fractional-cover-percentiles-landsat-2.2.1
