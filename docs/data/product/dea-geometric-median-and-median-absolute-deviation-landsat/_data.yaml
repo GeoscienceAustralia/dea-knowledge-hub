@@ -65,6 +65,10 @@ web_services:
 
 custom: null
 
+# History
+
+old_versions: null
+
 # Settings
 
 enable_overview: true

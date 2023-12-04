@@ -55,6 +55,8 @@ web_services:
   - link: https://ows.dea.ga.gov.au
     name: Web Services
 
+custom: null
+
 # History
 
 old_versions:
@@ -62,8 +64,6 @@ old_versions:
     title: DEA Water Observations (Landsat, DEPRECATED)
     slug: dea-water-observations-landsat-2.1.5
     release_date: null
-
-custom: null
 
 # Settings
 
