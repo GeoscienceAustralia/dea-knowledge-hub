@@ -1,6 +1,9 @@
 ## Background
 
-This product has been deprecated and is superseded by this product:  [DEA Surface Reflectance (Landsat 5 TM)](https://cmi.ga.gov.au/data-products/dea/358/dea-surface-reflectance-landsat-5-tm)
+This product has been deprecated and is superseded by these products:  
+* [DEA Surface Reflectance NBAR (Landsat 5 TM)](/data/product/dea-surface-reflectance-nbar-landsat-5-tm/)
+* [DEA Surface Reflectance NBAR (Landsat 7 ETM+)](/data/product/dea-surface-reflectance-nbar-landsat-7-etm/)
+* [DEA Surface Reflectance NBAR (Landsat 8 OLI-TIRS)](/data/product/dea-surface-reflectance-nbar-landsat-8-oli-tirs/)
 
 The light reflected from the Earth’s surface (surface reflectance) is important for monitoring environmental resources – such as agricultural production and mining activities – over time.
 
@@ -21,7 +24,6 @@ The Surface Reflectance products are useful as a fundamental starting point for 
 This product eliminates pre-processing requirements for a wide range of land and coastal monitoring applications and renders more accurate results from analyses, particularly those utilising time series data.
 
 Such applications include various forms of change detection, including:
-
 * monitoring of urban growth, coastal habitats, mining activities, and agricultural production
 * compliance surveys
 * scientific research emergency management
@@ -40,11 +42,11 @@ This product does not include terrain illumination reflectance correction (see S
 
 ## Lineage
 
-#### Landsat archive
+### Landsat archive
 
 GA has acquired Landsat imagery over Australia since 1979, including TM, ETM+ and OLI imagery. While this data has been used extensively for numerous land and coastal mapping studies, its utility for accurate monitoring of environmental resources has been limited by the processing methods that have been traditionally used to correct for inherent geometric and radiometric distortions in EO imagery. To improve access to Australia’s archive of Landsat TM/ETM+/OLI data, several collaborative projects have been undertaken in conjunction with industry, government and academic partners. These projects have enabled implementation of a more integrated approach to image data correction that incorporates normalising models to account for atmospheric effects, BRDF and topographic shading (Li et al., 2012). The approach has been applied to Landsat TM/ETM+ and OLI imagery to create the SR products. The advanced supercomputing facilities provided by the National Computational Infrastructure (NCI) at the Australian National University (ANU) have been instrumental in handling the considerable data volumes and processing complexities involved with production of this product.
 
-#### Surface Reflectance correction models
+### Surface Reflectance correction models
 
 Image radiance values recorded by passive EO sensors are a composite of:  
 • surface reflectance;  
@@ -53,7 +55,7 @@ Image radiance values recorded by passive EO sensors are a composite of:
 • land surface orientation relative to the imaging sensor.  
 It has been traditionally assumed that Landsat imagery display negligible variation in sun and sensor view angles, however these can vary significantly both within and between scenes, especially in different seasons and geographic regions (Li et al., 2012). The SR product delivers modeled surface reflectance from Landsat TM/ETM+/OLI/ data using physical rather than empirical models. Accordingly, this product will ensure that reflective value differences between imagery acquired at different times by different sensors will be primarily due to on-ground changes in biophysical parameters rather than artifacts of the imaging environment.
 
-#### Integrated time series data
+### Integrated time series data
 
 Once consistent and comparable measures of surface reflectance have been retrieved from EO data, it is possible to quantify changes in Earth surface features through time.  
 Given the growing time series of EO imagery, this landmark facility will streamline the process of reliably monitoring long-term changes in land and water resources.
@@ -61,14 +63,15 @@ Given the growing time series of EO imagery, this landmark facility will streaml
 ## Processing steps
 
 1. Extract metadata from data sources
-
-1. Calculate sun and sensor angles per pixel (Vincenty, 1975; Edberg and Oliver, 2013)
-
-1. Determine values for six base atmospheric parameters across each image scene
-
-1. Derive normalised surface reflectance for sun angle of 45°
-
-1. Ortho-processing using DSM
+2. Calculate sun and sensor angles per pixel (Vincenty, 1975; Edberg and Oliver, 2013)
+3. Determine values for six base atmospheric parameters across each image scene
+  * Divide scene into quarters and select the nine unique points which form the corners of these quadrants
+  * Compute the six parameters across optical spectrum at each of the nine points using a Radiative Transfer Model (Modtran 5) and atmospheric state data
+  * Accumulate values for the six parameters at each of the nine points to correspond to Landsat bands using Landsat spectral response function
+  * Interpolate accumulated values for the six parameters across image scene using the bilinear method.
+4. Derive normalised surface reflectance for sun angle of 45°
+Use interpolated, accumulated values for the six base atmospheric parameters to compute the atmospheric and BRDF correction for each pixel and output the normalised surface reflectance for sun angle of 45°.
+5. Ortho-processing using DSM
 
 % ## Software
 

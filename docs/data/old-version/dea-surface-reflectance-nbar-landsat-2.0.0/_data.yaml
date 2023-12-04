@@ -5,13 +5,13 @@ long_title: Surface Reflectance NBAR 25m 2.0.0 - This product is deprecated and 
 header_image: null
 version: 2.0.0
 is_latest_version: null
-latest_version_link: null
+latest_version_link: /data/product/dea-surface-reflectance-nbar-landsat-8-oli-tirs/
 product_type: Baseline
 spatial_data_type: Raster
 time_span:
-  start: 5 May 2017
-  end: 5 May 2017
-update_frequency: As needed
+  start: null
+  end: null
+update_frequency: Deprecated
 product_ids: null
 
 parent_products:
