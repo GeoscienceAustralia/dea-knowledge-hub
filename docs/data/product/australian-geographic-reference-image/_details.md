@@ -13,7 +13,6 @@ The AGRI provides a consistent base image intended, at the time of production, t
 ## Applications
 
 The AGRI is a resource for both users and providers of satellite imagery covering Australia in:
-
 * Government agencies – Commonwealth, State and Local
 * Research institutions
 * Spatial Information Industry
@@ -43,23 +42,15 @@ The AGRI was made possible by new scientific and technical capabilities, interna
 
 The expertise and capability of the Australian spatial information industry was used in the design of GIS databases to manage the survey data and to conduct the many field surveys to remote areas of Australia. The expertise and capabilities of Geoscience Australia staff in both Earth observation and geodesy were also essential inputs to the project (Lewis et al, 2011).
 
-The AGRI mosaic and associated datasets are available to the public under the Creative Commons-Attribution licensing terms at cost of transfer from Geoscience Australia.
-
 ## Processing steps
 
-1. Identify cloud-free ALOS PRISM passes
-
-1. BARISTA
-
-1. Identify Ground Control Points
-
-1. Full pass/strip processing
-
-1. Ortho-processing using DSM
+See the product description and technical report for the detailed methodology [http://dx.doi.org/10.4225/25/5524BA4A047FE](http://dx.doi.org/10.4225/25/5524BA4A047FE).
 
 % ## Software
 
 ## References
+
+Lewis, A., Wang, L.-W., Coghlan, R. (2011). AGRI: The Australian Geographic Reference Image. Geoscience Australia Technical Report. [http://dx.doi.org/10.4225/25/5524BA4A047FE](http://dx.doi.org/10.4225/25/5524BA4A047FE)
 
 Ravanbakhsh, M., Wang, L.-W., Fraser, C. S., & Lewis, A. (2012). Generation of the Australian Geographic Reference Image through long-strip ALOS PRISM orientation. *ISPRS - International Archives of the Photogrammetry, Remote Sensing and Spatial Information Sciences*, *XXXIX-B1*, 225–229. [https://doi.org/10.5194/isprsarchives-XXXIX-B1-225-2012](https://doi.org/10.5194/isprsarchives-XXXIX-B1-225-2012)
 
