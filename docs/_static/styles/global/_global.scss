@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: auto !important;
+}
+
 ::selection {
     background: var(--pst-color-secondary);
     color: white;
