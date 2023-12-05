@@ -4,3 +4,8 @@ publish = "output"
 
 [build.environment]
 BUILD_MODE = "demo"
+
+[[redirects]]
+from = "/*"
+to = "/404-not-found/"
+status = 404
