@@ -4,9 +4,13 @@ sys.path.insert(0, os.path.abspath('.'))
 from _modules import utilities
 from _modules import mock_imports
 
-env_build_mode = os.environ.get("BUILD_MODE")
-env_git_branch = os.environ.get("BRANCH")
-env_local_enable_redirects = os.environ.get("LOCAL_ENABLE_REDIRECTS")
+environment = {
+    "build_mode": os.environ.get("BUILD_MODE"),
+    "git_branch": os.environ.get("BRANCH"),
+    "demo_name": os.environ.get("DEMO_NAME"),
+    "deploy_id": os.environ.get("DEPLOY_ID"),
+    "local_enable_redirects": os.environ.get("LOCAL_ENABLE_REDIRECTS"),
+}
 
 project = "DEA Knowledge Hub"
 copyright = f"{utilities.current_year()}, Geoscience Australia"
@@ -43,8 +47,8 @@ html_theme = 'pydata_sphinx_theme'
 html_baseurl = ""
 language = "en"
 
-if env_build_mode == "production": html_baseurl = "https://docs.dea.ga.gov.au/"
-elif env_build_mode == "demo": html_baseurl = f"https://{env_git_branch}--dea-docs.netlify.app/"
+if environment["build_mode"] == "production": html_baseurl = "https://docs.dea.ga.gov.au/"
+elif environment["build_mode"] == "demo": html_baseurl = f"https://{environment['git_branch']}--dea-docs.netlify.app/"
 
 html_permalinks = False
 
@@ -78,8 +82,8 @@ nbsphinx_execute = "never"
 external_toc_path = "table_of_contents.yaml"
 
 if (
-    env_build_mode in ["demo", "production"]
-    or env_local_enable_redirects == "Yes"
+    environment["build_mode"] in ["demo", "production"]
+    or environment["local_enable_redirects"] == "Yes"
 ): rediraffe_redirects = utilities.source_redirects("_redirects/*.txt")
 
 sitemap_url_scheme = "{link}"
@@ -129,10 +133,11 @@ html_theme_options = {
 
 html_context = {
     "default_mode": "light",
-    "meta_keywords": "DEA, Digital Earth Australia, GA, Geoscience Australia, Knowledge, Documentation, Content, Learn, Learning, Data Products, Metadata, User Guides, DEA Notebooks, Notebooks, Open Data Cube, CMI, Content Management Interface, Developer, Python, Jupyter"
+    "meta_keywords": "DEA, Digital Earth Australia, GA, Geoscience Australia, Knowledge, Documentation, Content, Learn, Learning, Data Products, Metadata, User Guides, DEA Notebooks, Notebooks, Open Data Cube, CMI, Content Management Interface, Developer, Python, Jupyter",
+    "environment": environment
 }
 
-if env_build_mode == "production": html_context["google_analytics_ga4_tag"] = "G-4B9D450HR4"
+if environment["build_mode"] == "production": html_context["google_analytics_ga4_tag"] = "G-4B9D450HR4"
 
 suppress_warnings = [
     "etoc.toctree"
