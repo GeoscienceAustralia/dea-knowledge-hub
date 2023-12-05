@@ -2,16 +2,16 @@
 
 title: DEA Surface Reflectance NBART (Landsat, DEPRECATED)
 long_title: Surface Reflectance NBAR+T 25m 2.0.0 - This product is deprecated and the data no longer available
-header_image: /_files/cmi/surface reflectance.png
+header_image: null
 version: 2.0.0
 is_latest_version: null
-latest_version_link: null
+latest_version_link: /data/product/dea-surface-reflectance-nbart-landsat-8-oli-tirs/
 product_type: Baseline
 spatial_data_type: Raster
 time_span:
-  start: 15 Aug 1986
-  end: 5 May 2017
-update_frequency: As needed
+  start: null
+  end: null
+update_frequency: Deprecated
 product_ids: null
 
 parent_products:
