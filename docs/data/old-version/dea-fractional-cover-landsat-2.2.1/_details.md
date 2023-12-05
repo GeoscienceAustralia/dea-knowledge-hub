@@ -1,6 +1,6 @@
 ## Background
 
-This product has been deprecated and is superseded by this product: [DEA Fractional Cover (Landsat)](https://cmi.ga.gov.au/data-products/dea/629/dea-fractional-cover-landsat)
+This product has been deprecated and is superseded by this product: [DEA Fractional Cover (Landsat)](/data/product/dea-fractional-cover-landsat/)
 
 Fractional cover data can be used to identify large scale patterns and trends and inform evidence based decision making and policy on topics including wind and water erosion risk, soil carbon dynamics, land management practices and rangeland condition.
 
@@ -9,7 +9,6 @@ This information is used by policy agencies, natural and agricultural land resou
 ## What this product offers
 
 Fractional Cover (FC), developed by the Joint Remote Sensing Research Program, is a measurement that splits the landscape into three parts, or fractions:
-
 * green (leaves, grass, and growing crops)
 * brown (branches, dry grass or hay, and dead leaf litter)
 * bare ground (soil or rock)
@@ -21,7 +20,6 @@ DEA uses Fractional Cover to characterise every 25 m square of Australia for any
 ## Applications
 
 Fractional cover provides valuable information for a range of environmental and agricultural applications, including:
-
 * soil erosion monitoring
 * land surface process modelling
 * land management practices (e.g. crop rotation, stubble management, rangeland management)
@@ -40,12 +38,9 @@ FC\_25 provides a 25m scale fractional cover representation of the proportions o
 
 For more information, see Scarth et al. (2010) and Schmidt et al. (2010).
 
-A summary of the algorithm developed by the Joint Remote Sensing Centre is available from the [AusCover website](http://www.auscover.org.au/purl/landsat-fractional-cover-jrsrp).
-
-#### Data layers
+### Data layers
 
 The product consists of four data layers:
-
 * The fractional cover of green vegetation (PV) 
 * The fractional cover of non-green vegetation (NPV)
 * The fractional cover of bare soil (BS)
@@ -73,7 +68,13 @@ FC\_25 was made possible by the collaborative framework established by the [Terr
 
 ## Processing steps
 
-1. Fractional Cover Processing
+Fractional Cover (FC) provides a representation of the proportions of living vegetation, dry and dying vegetation (including deciduous trees during autumn, dying grass, etc.), and bare soils across the Australian continent for any point in time in the Landsat archive since 1987. FC can potentially provide insight into areas of dry/dying vegetation and/or bare soil as well as allowing the mapping of living vegetation extent.
+
+Fractional cover data can be used to identify large scale patterns and trends and inform evidence based decision making and policy on topics including wind and water erosion risk, soil carbon dynamics, land management practices and rangeland condition. This information could enable policy agencies, natural and agricultural land resource managers, and scientists to monitor land conditions over large areas over long time frames.
+
+The Fractional Cover (FC) algorithm was developed by the Joint Remote Sensing Research Program and is described in described in Scarth et al. (2010). It has been implemented by Geoscience Australia for every observation from Landsat Thematic Mapper (Landsat 5), Enhanced Thematic Mapper (Landsat 7) and Operational Land Imager (Landsat 8) acquired since 1987. It is calculated from surface reflectance data.
+
+FC provides a fractional cover representation of the proportions of green or photosynthetic vegetation, non-photosynthetic vegetation, and bare surface cover across the Australian continent. The fractions are retrieved by inverting multiple linear regression estimates and using synthetic endmembers in a constrained non-negative least squares unmixing model.
 
 % ## Software
 

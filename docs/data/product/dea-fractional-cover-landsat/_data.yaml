@@ -59,10 +59,6 @@ custom: null
 
 # History
 
-old_versions: null
-
-# History
-
 old_versions:
   - version: 2.2.1
     title: DEA Fractional Cover (Landsat, DEPRECATED)
