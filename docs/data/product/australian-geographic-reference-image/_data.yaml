@@ -39,7 +39,7 @@ explorers: null
 
 data:
   - link: http://dap.nci.org.au/thredds/remoteCatalogService?catalog=http://dapds00.nci.org.au/thredds/catalog/fk4/agri/catalog.xml
-    name: NCI - THREDDS
+    name: Access the data on NCI
 
 code_examples: null
 

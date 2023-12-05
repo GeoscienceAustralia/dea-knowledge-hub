@@ -16,7 +16,7 @@ Whilst the same training data has been used to train both the JRSRP fractional c
 
 ## Quality assurance
 
-The following details are an extract from the information contained at: [http://data.auscover.org.au/xwiki/bin/view/Product+pages/Landsat+Seasonal+Fractional+Cover](http://data.auscover.org.au/xwiki/bin/view/Product+pages/Landsat+Seasonal+Fractional+Cover )
+The following details are an extract from the information contained at: [https://portal.tern.org.au/metadata/22026](https://portal.tern.org.au/metadata/22026)
 
 The bare soil, green vegetation and non-green vegetation endmembers are calculated using models linked to an intensive field sampling program that covers a wide range of Australian landscapes covering a wide variety of vegetation, soil and climate types were sampled to measure overstorey and ground cover following the procedure outlined in Muir et al (2011).
 

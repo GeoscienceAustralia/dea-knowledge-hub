@@ -49,10 +49,11 @@ GA has acquired Landsat imagery over Australia since 1979, including TM, ETM+ an
 ### Surface Reflectance correction models
 
 Image radiance values recorded by passive EO sensors are a composite of:  
-• surface reflectance;  
-• atmospheric condition;  
-• interaction between surface land cover, solar radiation and sensor view angle; and  
-• land surface orientation relative to the imaging sensor.  
+* surface reflectance;  
+* atmospheric condition;  
+* interaction between surface land cover, solar radiation and sensor view angle; and  
+* land surface orientation relative to the imaging sensor. 
+
 It has been traditionally assumed that Landsat imagery display negligible variation in sun and sensor view angles, however these can vary significantly both within and between scenes, especially in different seasons and geographic regions (Li et al., 2012). The SR product delivers modeled surface reflectance from Landsat TM/ETM+/OLI/ data using physical rather than empirical models. Accordingly, this product will ensure that reflective value differences between imagery acquired at different times by different sensors will be primarily due to on-ground changes in biophysical parameters rather than artifacts of the imaging environment.
 
 ### Integrated time series data
@@ -66,7 +67,7 @@ Given the growing time series of EO imagery, this landmark facility will streaml
 2. Calculate sun and sensor angles per pixel (Vincenty, 1975; Edberg and Oliver, 2013)
 3. Determine values for six base atmospheric parameters across each image scene
   * Divide scene into quarters and select the nine unique points which form the corners of these quadrants
-  * Compute the six parameters across optical spectrum at each of the nine points using a Radiative Transfer Model (Modtran 5) and atmospheric state data
+  * Compute the six parameters across optical spectrum at each of the nine points using a Radiative Transfer Model (Modtran5) and atmospheric state data
   * Accumulate values for the six parameters at each of the nine points to correspond to Landsat bands using Landsat spectral response function
   * Interpolate accumulated values for the six parameters across image scene using the bilinear method.
 4. Derive normalised surface reflectance for sun angle of 45°

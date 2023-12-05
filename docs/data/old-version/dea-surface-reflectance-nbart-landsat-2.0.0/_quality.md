@@ -24,8 +24,7 @@ Because each scene recorded in v2 AGDC will have a GQA assessment result, the mi
 
 Product generation process is fully automated and there are checks in place to ensure that each step results in output meeting relevant product specification criteria. For example, the production system performs geometry QA before generating the final version of the product. Failed processes are rerun according to set up routines to ensure completeness of data. A sample of final data is verified manually for conformance to product specification.
 
-At the end of the process, the system generates a companion dataset, the Pixel Quality assessment (PQ25). The PQ25 is a classification that represents an assessment of whether an image pixel represents an unobscured unsaturated observation of the Earth?s surface and whether the pixel is represented in each spectral band. In particular, whether a pixel contains:
-
+At the end of the process, the system generates a companion dataset, the Pixel Quality assessment (PQ25). The PQ25 is a classification that represents an assessment of whether an image pixel represents an unobscured unsaturated observation of the Earth's surface and whether the pixel is represented in each spectral band. In particular, whether a pixel contains:
 * Spectral Contiguity
 * Per band saturation assessment
 * Cloud detection

@@ -57,7 +57,11 @@ custom: null
 
 # History
 
-old_versions: null
+old_versions:
+  - version: 2.0.0
+    title: DEA Surface Reflectance NBART (Landsat, DEPRECATED)
+    slug: dea-surface-reflectance-nbart-landsat-2.0.0
+    release_date: null
 
 # Settings
 
