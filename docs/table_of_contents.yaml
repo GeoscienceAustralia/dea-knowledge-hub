@@ -174,7 +174,3 @@ entries:
   - file: data/old-version/index
     entries:
       - glob: data/old-version/*/index
-
-  - file: 404-not-found/index
-    options:
-      hidden: True

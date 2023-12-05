@@ -101,7 +101,7 @@ autosummary_mock_imports = autodoc_mock_imports
 napoleon_google_docstring = False
 napoleon_numpy_docstring = True
 
-notfound_template = "404.html"
+notfound_template = "404-not-found.html"
 notfound_pagename = "404-not-found"
 notfound_urls_prefix = ""
 
@@ -125,6 +125,9 @@ html_theme_options = {
     "search_bar_text": "Search ...",
     "show_prev_next": False,
     "header_links_before_dropdown": 3,
+    "logo": {
+        "link": "/"
+    }
 }
 
 html_context = {
