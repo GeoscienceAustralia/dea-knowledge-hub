@@ -4,6 +4,14 @@ sys.path.insert(0, os.path.abspath('.'))
 from _modules import utilities
 from _modules import mock_imports
 
+environment = {
+    "build_mode": os.environ.get("BUILD_MODE"),
+    "git_branch": os.environ.get("BRANCH"),
+    "demo_name": os.environ.get("DEMO_NAME"),
+    "deploy_id": os.environ.get("DEPLOY_ID"),
+    "local_enable_redirects": os.environ.get("LOCAL_ENABLE_REDIRECTS"),
+}
+
 project = "DEA Knowledge Hub"
 copyright = f"{utilities.current_year()}, Geoscience Australia"
 author = "Geoscience Australia"
@@ -36,10 +44,11 @@ html_title = "DEA Knowledge Hub"
 html_logo = "_files/logos/ga-dea-combined-logo.svg"
 html_favicon = "_static/favicons/dea-favicon.ico"
 html_theme = 'pydata_sphinx_theme'
+html_baseurl = ""
 language = "en"
 
-if os.environ.get("BUILD_MODE") == "production":
-    html_baseurl = "https://docs.dea.ga.gov.au/"
+if environment["build_mode"] == "production": html_baseurl = "https://docs.dea.ga.gov.au/"
+elif environment["build_mode"] == "demo": html_baseurl = f"https://{environment['git_branch']}--dea-docs.netlify.app/"
 
 html_permalinks = False
 
@@ -73,10 +82,9 @@ nbsphinx_execute = "never"
 external_toc_path = "table_of_contents.yaml"
 
 if (
-    os.environ.get("BUILD_MODE") in ["demo", "production"]
-    or os.environ.get("LOCAL_ENABLE_REDIRECTS") == "Yes"
-):
-    rediraffe_redirects = utilities.source_redirects("_redirects/*.txt")
+    environment["build_mode"] in ["demo", "production"]
+    or environment["local_enable_redirects"] == "Yes"
+): rediraffe_redirects = utilities.source_redirects("_redirects/*.txt")
 
 sitemap_url_scheme = "{link}"
 
@@ -94,7 +102,7 @@ autosummary_mock_imports = autodoc_mock_imports
 napoleon_google_docstring = False
 napoleon_numpy_docstring = True
 
-notfound_template = "404.html"
+notfound_template = "404-not-found.html"
 notfound_pagename = "404-not-found"
 notfound_urls_prefix = ""
 
@@ -118,15 +126,18 @@ html_theme_options = {
     "search_bar_text": "Search ...",
     "show_prev_next": False,
     "header_links_before_dropdown": 3,
+    "logo": {
+        "link": "/"
+    }
 }
 
 html_context = {
     "default_mode": "light",
-    "meta_keywords": "DEA, Digital Earth Australia, GA, Geoscience Australia, Knowledge, Documentation, Content, Learn, Learning, Data Products, Metadata, User Guides, DEA Notebooks, Notebooks, Open Data Cube, CMI, Content Management Interface, Developer, Python, Jupyter"
+    "meta_keywords": "DEA, Digital Earth Australia, GA, Geoscience Australia, Knowledge, Documentation, Content, Learn, Learning, Data Products, Metadata, User Guides, DEA Notebooks, Notebooks, Open Data Cube, CMI, Content Management Interface, Developer, Python, Jupyter",
+    "environment": environment
 }
 
-if os.environ.get("BUILD_MODE") == "production":
-    html_context["google_analytics_ga4_tag"] = "G-4B9D450HR4"
+if environment["build_mode"] == "production": html_context["google_analytics_ga4_tag"] = "G-4B9D450HR4"
 
 suppress_warnings = [
     "etoc.toctree"
