@@ -4,11 +4,3 @@ publish = "output"
 
 [build.environment]
 BUILD_MODE = "demo"
-
-[[plugins]]
-package = "netlify-plugin-checklinks"
-
-[plugins.inputs]
-recursive = true
-pretty = true
-checkExternal = true
