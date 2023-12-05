@@ -43,10 +43,8 @@ html_theme = 'pydata_sphinx_theme'
 html_baseurl = ""
 language = "en"
 
-if env_build_mode == "production":
-    html_baseurl = "https://docs.dea.ga.gov.au/"
-elif env_build_mode == "demo":
-    html_baseurl = f"https://{env_git_branch}--dea-docs.netlify.app/"
+if env_build_mode == "production": html_baseurl = "https://docs.dea.ga.gov.au/"
+elif env_build_mode == "demo": html_baseurl = f"https://{env_git_branch}--dea-docs.netlify.app/"
 
 html_permalinks = False
 
@@ -82,8 +80,7 @@ external_toc_path = "table_of_contents.yaml"
 if (
     env_build_mode in ["demo", "production"]
     or env_local_enable_redirects == "Yes"
-):
-    rediraffe_redirects = utilities.source_redirects("_redirects/*.txt")
+): rediraffe_redirects = utilities.source_redirects("_redirects/*.txt")
 
 sitemap_url_scheme = "{link}"
 
@@ -135,8 +132,7 @@ html_context = {
     "meta_keywords": "DEA, Digital Earth Australia, GA, Geoscience Australia, Knowledge, Documentation, Content, Learn, Learning, Data Products, Metadata, User Guides, DEA Notebooks, Notebooks, Open Data Cube, CMI, Content Management Interface, Developer, Python, Jupyter"
 }
 
-if env_build_mode == "production":
-    html_context["google_analytics_ga4_tag"] = "G-4B9D450HR4"
+if env_build_mode == "production": html_context["google_analytics_ga4_tag"] = "G-4B9D450HR4"
 
 suppress_warnings = [
     "etoc.toctree"
