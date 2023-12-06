@@ -1,6 +1,6 @@
 ## Background
 
-**This product has been deprecated and is superseded by this product: [DEA Water Observations (Landsat)](/data/product/dea-water-observations-landsat/).**
+This product has been deprecated and is superseded by this product: [DEA Water Observations (Landsat)](/data/product/dea-water-observations-landsat/).
 
 It is important to know where water is normally present in a landscape, where water is rarely observed, and where inundation has occasionally occurred.
 
@@ -32,18 +32,18 @@ Data is provided as Water Observation Feature Layers (WOFLs), in a 1 to 1 relati
 
 A change in version 2.1.5 from earlier versions is that previously only one bit could be set per pixel. Hence the value of a pixel in a WOFL could be X or Y or Z. Hence in previous versions the WOFL values could only be 0 or 1 or 2 or 4 or ... or 128. With version 2.1.5 the data type has been changed to a bit field, where multiple bits can be set simultaneously. Hence the value of a pixel in a WOFL can be X AND Y AND Z, etc, hence values can range from 0 to 255 in WO\_25\_2.1.5.
 
-The meaning of each bit in the WOFLs is given  in the table below.
+The meaning of each bit in the WOFLs is given in the table below.
 
-| Bit | Flagging       | Decimal Value | Description                                                                     |
-|-----|----------------|---------------|---------------------------------------------------------------------------------|
-| 0   | no data        | 1             | dec: 1 = pixel masked out due to NO_DATA in NBAR source, 0 = valid data in NBAR |
-| 1   | contiguity     | 2             | dec: 2 = pixel masked out due to lack of data contiguity                        |
-| 2   | sea            | 4             | dec: 4 = pixel masked out due to being over sea                                 |
-| 3   | terrain shadow | 8             | dec: 8 = pixel masked out due to terrain shadow                                 |
-| 4   | high slope     | 16            | dec: 16 = pixel masked out due to high slop                                     |
-| 5   | cloud shadow   | 32            | dec: 32 = pixel masked out due to cloud shadow                                  |
-| 6   | cloud          | 64            | dec: 64 = pixel masked out due to cloud                                         |
-| 7   | water observed | 128           | dec: 128 = water present                                                        |
+| Bit | Flagging       | Decimal Value | Description                                                            |
+|-----|----------------|---------------|------------------------------------------------------------------------|
+| 0   | no data        | 1             | Pixel masked out due to NO_DATA in NBAR source, 0 = valid data in NBAR |
+| 1   | contiguity     | 2             | Pixel masked out due to lack of data contiguity                        |
+| 2   | sea            | 4             | Pixel masked out due to being over sea                                 |
+| 3   | terrain shadow | 8             | Pixel masked out due to terrain shadow                                 |
+| 4   | high slope     | 16            | Pixel masked out due to high slop                                      |
+| 5   | cloud shadow   | 32            | Pixel masked out due to cloud shadow                                   |
+| 6   | cloud          | 64            | Pixel masked out due to cloud                                          |
+| 7   | water observed | 128           | Water present                                                          |
 
 For example a value of 136 indicates water (128) AND terrain shadow (8) were observed for the pixel.
 
