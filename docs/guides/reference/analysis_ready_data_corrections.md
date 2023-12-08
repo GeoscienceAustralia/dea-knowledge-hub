@@ -43,9 +43,9 @@ The spatial extent of the acquisition in native Coordinate Reference System (CRS
 
 The results are then transformed into the BRDF Shape function, labelled as Alpha-1 and Alpha-2, by the following ratio's:
 
-> **Alpha-1** = $Volumetric / Isometric$
+> **Alpha-1** = $\frac{Volumetric}{Isometric}$
 >
-> **Alpha-2** = $Geometric / Isometric$
+> **Alpha-2** = $\frac{Geometric}{Isometric}$
 
 If the spectral band for the acquisition has a wavelength broad enough to cover multiple MODIS spectral bands, then averages are taken from all derived Alpha-1 and Alpha-2 parameters, before returning single pair of Alpha-1 and Alpha-2 BRDF shape function parameters.
 
@@ -62,14 +62,15 @@ For a given acquisition, retrieve the Digital Surface Model (DSM) that covers th
 
 The algorithm defaults to retrieving the elevation data with a buffer of 8km on all edges of an acquisition's spatial extents.
 
+DSM and Digital Elevation Data are sourced from [USGS](https://www.usgs.gov/centers/eros/science/usgs-eros-archive-digital-elevation-shuttle-radar-topography-mission-srtm-1) and [Geoscience Australia](https://doi.org/10.26186/89644).
+
 <h3 id="slp-asp-calc"> Slope and Aspect Calculation </h3>
 For a given Digital Elevation Model (DSM) calculate at a pixel level the slope and aspect.
 
-The following steps dictate the method for determining slope and aspect.
-
+The following steps dictate the method for determining slope and aspect:
 1. A sobel filter is used to determine the rate of change at a pixel level for both the horizontal and vertical directions ($\frac{d_z}{d_x}$ and $\frac{d_z}{d_y}$)
-2. $Slope in radians = ATAN \sqrt{(\frac{dz}{dx})^2 + (\frac{dz}{dy})^2}$
-3. $Aspect in radians = atan2 (\frac{dz}{dy}, -\frac{dz}{dx})$
+2. Calculate the *Slope in radians =* $ATAN \sqrt{(\frac{dz}{dx})^2 + (\frac{dz}{dy})^2}$
+3. Calculate the *Aspect in radians =* $atan2 (\frac{dz}{dy}, -\frac{dz}{dx})$
 4. Both arrays are then converted to degrees.
 
 <h3 id="inc-azm-ang-calc"> Incidence and Azimuthal Incident Angles Calculation </h3>
@@ -101,6 +102,7 @@ A pixel is determined to be shaded if it is not viewable by:
 The pixel doesn't receive direct radiation as the surface faces away from the sun. 
 
 The algorithm is based on:
+
 Giles, P.T.. (2001). Remote sensing and cast shadows in mountainous terrain. Photogrammetric Engineering and Remote Sensing. 67. 833-839.
 
 <h3 id="modtran"> MODTRAN </h3>
@@ -113,6 +115,12 @@ The MODTRAN software computes line-of-sight (LOS) atmospheric spectral transmitt
 [http://modtran.spectral.com/modtran_about](http://modtran.spectral.com/modtran_about)
 
 [http://modtran.spectral.com/](http://modtran.spectral.com/)
+
+Data sources provided into MODTRAN include:
+* [Aerosol optical depth measurements](https://earthobservatory.nasa.gov/global-maps/MODAL2_M_AER_OD)
+* Precipitable water for the entire atmosphere daily and monthly averages from [NCEP/NCAR reanalysis models](https://psl.noaa.gov/data/gridded/data.ncep.reanalysis.html)
+* [Top of atmosphere solar irradiance](https://ui.adsabs.harvard.edu/abs/2005MSAIS...8..189K/abstract)
+* [Ozone data](https://exp-studies.tor.ec.gc.ca/e/ozone/Curr_allmap_g.htm)
 
 <h3 id="atm-corr-coef-calc"> Atmospheric Correction Coefficients Calculation </h3>
 Using the modelled output of the radiative transfer, calculate the atmospheric correction coefficients.
@@ -149,7 +157,7 @@ Bilinear interpolation is the method used to interpolate across the entire image
 >
 > **fS** = Direct fraction in the solar direction
 >
-> **A** = $(Dir + Dif) / Pi \times TV$
+> **A** = $\frac{(Dir + Dif)}{Pi \times TV}$
 >
 > **B** = Path radiance
 >
