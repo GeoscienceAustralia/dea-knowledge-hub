@@ -12,7 +12,7 @@ The algorithm outputs spatial grids in the native CRS and pixel resolution, just
 <h3 id="sat-sol-geom-calculation"> Satellite and Solar Geometry Calculation </h3>
 Accurate positional geometry of the sun and observer are required in order to standardise a surface reflectance measurement so that it is consistent across time and space.
 
-The process calculates at full acquisition resolution and spatial extent in native CRS, the following datasets:
+The process takes in [ephemeris data](https://www.usgs.gov/landsat-missions/download-definitive-ephemeris) that provides orbital locations for specific time intervals, to the calculate at full acquisition resolution and spatial extent in native CRS, the following datasets:
 
 |                       |                                                               |
 |-----------------------|---------------------------------------------------------------|
@@ -24,7 +24,8 @@ The process calculates at full acquisition resolution and spatial extent in nati
 | **Time Delta**        | The time in seconds from satellite apogee                     |
 
 <h3 id="aero-opt-thick-retr"> Aerosol Optical Thickness Retrieval </h3>
-For a given acquisition, retrieve the aerosol optical thickness estimate for input into the radiative transfer evaluation.
+
+For a given acquisition, retrieve the [aerosol optical thickness estimate](https://earthobservatory.nasa.gov/global-maps/MODAL2_M_AER_OD) for input into the radiative transfer evaluation.
 
 The supplied aerosol optical thickness data is a geospatially sparse point cloud and only exists for the years 2002 to 2008, supplemented by monthly composites.
 
@@ -33,11 +34,12 @@ Essentially the spatial extent of the acquisition in longitude and latitude for 
 If the year of acquisition falls within 2002-2008, then select the points that have a timestamp of within 0.5 days of the acquisition, and fall within the geospatial intersection area of interest.  If no data are found, fallback to a monthly aggregate for that year.  If this also fails, then fall back to an all-time monthly aggregate.  If this also fails then return a nominal value of 0.06.
 
 <h3 id="brdf-shp-fnc-retr"> BRDF Shape Function Retrieval </h3>
-Retrieve the BRDF shape function parameters for each supported spectral band within the acquisition.
+
+Retrieve the BRDF shape function parameters for each supported spectral band within the acquisition. [Find out more](https://modis.gsfc.nasa.gov/data/dataprod/mod43.php) about the MODIS BRDF function and Albedo parameter.
 
 For each supported spectral band within an acquisition to be processed, retrieve the BRDF shape function parameters, Alpha-1 and Alpha-2.
 
-The spatial extent of the acquisition in native Coordinate Reference System (CRS) units is projected into the Sinusoidal CRS of the MCD43A1 data.  Once projected, the Isometric, Volumetric and Geometric albedo parameters are retrieved for the area of interest, for each of the acquisitions supported spectral bands, from the relevant spectral bands of the MCD43A1 data and aggregated.
+The spatial extent of the acquisition in native Coordinate Reference System (CRS) units is projected into the Sinusoidal CRS of the [MCD43A1 data](https://lpdaac.usgs.gov/products/mcd43a1v006/). Once projected, the Isometric, Volumetric and Geometric albedo parameters are retrieved for the area of interest, for each of the acquisitions supported spectral bands, from the relevant spectral bands of the MCD43A1 data and aggregated.
 
 The results are then transformed into the BRDF Shape function, labelled as Alpha-1 and Alpha-2, by the following ratio's:
 
@@ -52,9 +54,10 @@ Retrieval of ozone data for the acquisition of interest at a given (longitude, l
 
 The ozone data consists of 12 global datasets, 1 for each month of the year.  The month that the acquisition was taken in, is used as a basis for selecting the appropriate month containing the relevant ozone data.
 
-As the source ozone data is of a very low resolution, the acquisition's central coordinate in longitude and latitude degrees, based on the WGS84 datum, is used as a sole point to retrieve an ozone value to be used as a value for the entire acquisition's spatial extent.
+As the [source ozone data](https://exp-studies.tor.ec.gc.ca/e/ozone/Curr_allmap_g.htm) is of a very low resolution, the acquisition's central coordinate in longitude and latitude degrees, based on the WGS84 datum, is used as a sole point to retrieve an ozone value to be used as a value for the entire acquisition's spatial extent.
 
 <h3 id="elev-retr-smth"> Elevation Retrieval and Smoothing </h3>
+
 For a given acquisition, retrieve the Digital Surface Model (DSM) that covers the full spatial extent with an additional buffer which by default is 8km.  The DSM is resampled to the required CRS and pixel resolution using Bi-Linear interpolation, then smoothed with a 3 by 3 Gaussian kernel to remove extraneous noise.
 
 The algorithm defaults to retrieving the elevation data with a buffer of 8km on all edges of an acquisition's spatial extents.
@@ -64,10 +67,9 @@ For a given Digital Elevation Model (DSM) calculate at a pixel level the slope a
 
 The following steps dictate the method for determining slope and aspect.
 
-1. A sobel filter is used to determine the rate of change at a pixel level for both the horizontal and vertical directions ($d_z/d_x$ and $d_z/d_y$)
-2. Slope in radians = ATAN ( √ ([dz/dx]^2 + [dz/dy]^2) )
-3. Aspect in radians = atan2 ([dz/dy], -[dz/dx])
-
+1. A sobel filter is used to determine the rate of change at a pixel level for both the horizontal and vertical directions ($\frac{d_z}{d_x}$ and $\frac{d_z}{d_y}$)
+2. $Slope in radians = ATAN \sqrt{(\frac{dz}{dx})^2 + (\frac{dz}{dy})^2}$
+3. $Aspect in radians = atan2 (\frac{dz}{dy}, -\frac{dz}{dx})$
 4. Both arrays are then converted to degrees.
 
 <h3 id="inc-azm-ang-calc"> Incidence and Azimuthal Incident Angles Calculation </h3>
@@ -127,7 +129,7 @@ The atmospheric correction coefficients are required for computing Lambertian re
 >
 > **fS** = Direct fraction in the solar direction
 >
-> **A** = $(Dir + Dif) / Pi \times TV$
+> **A** = $\frac{(Dir + Dif)}{Pi \times TV}$
 >
 > **B** = Path radiance
 >

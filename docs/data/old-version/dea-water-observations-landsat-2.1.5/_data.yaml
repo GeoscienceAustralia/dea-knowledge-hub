@@ -9,8 +9,8 @@ latest_version_link: /data/product/dea-water-observations-landsat/
 product_type: Derivative
 spatial_data_type: Raster
 time_span:
-  start: 1986
-  end: 2017
+  start: null
+  end: null
 update_frequency: Deprecated
 product_ids: null
 
@@ -32,7 +32,6 @@ tags:
   - floods
   - surface_water
   - wetlands
-  - w_of_s
 
 # Access
 
