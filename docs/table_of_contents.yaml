@@ -152,7 +152,6 @@ entries:
               - file: guides/setup/gis/web_services
               - file: guides/setup/gis/stac
           - file: guides/setup/jupyter
-          - file: guides/setup/analysis-ready-data-example-queries
 
       - caption: Reference
         entries:
@@ -160,6 +159,7 @@ entries:
           - file: guides/reference/collection_3_summary_grid
           - file: guides/reference/dataset_maturity_guide
           - file: guides/reference/analysis_ready_data_corrections
+          - file: guides/reference/analysis-ready-data-example-queries
 
       - caption: Appendix
         entries:

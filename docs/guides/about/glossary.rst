@@ -33,6 +33,8 @@ Glossary
    Aerosol optical depth
       Aerosol optical depth is a measure of the extinction of the solar beam by dust and haze.
 
+      For more information, see `NASA Earth Observatory. <https://earthobservatory.nasa.gov/global-maps/MODAL2_M_AER_OD>`_
+
    Albedo
       The fraction of light that a surface reflects. Albedo is measured on a scale of 0-1, with 1 indicating
       that all light has been reflected by the surface.
