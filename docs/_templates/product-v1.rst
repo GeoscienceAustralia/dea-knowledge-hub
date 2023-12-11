@@ -341,7 +341,6 @@
 
           {% for item in valid_old_versions %}
           * - `v{{ item.version }}: {{ item.title }} </data/old-version/{{ item.slug }}/>`_
-            - {{ item.release_date or "" }}
           {% endfor %}
        {% else %}
        No old versions available.

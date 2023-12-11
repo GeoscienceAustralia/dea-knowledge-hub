@@ -2,11 +2,11 @@
 
 &nbsp;
 
-# Digital Earth Australia User Guide
+# Digital Earth Australia User Guides
 
 Digital Earth Australia is an analysis platform for satellite imagery and other Earth observations.
 
-For more information, see the [DEA Web Site](http://www.ga.gov.au/dea).
+For more information, see the [DEA website](http://www.ga.gov.au/dea).
 
 Digital Earth Australia is currently in beta for users with accounts on the National Computational Infrastructure (NCI) or the Digital Earth Australia Sandbox (see the [Setup introduction](/guides/setup/README/) page).
 

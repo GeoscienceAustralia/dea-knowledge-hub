@@ -3,20 +3,38 @@
     margin-bottom: 4rem;
 
     h1 {
-        font-size: 1.75rem;
-        margin-bottom: 1.15rem;
+        font-size: 1.9rem;
+        margin-bottom: 1.25rem;
     }
 
-    h1, & > p {
+    h1, h1 + p {
         text-align: center;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    h1 + p {
+        margin-bottom: 3.5rem;
+
+        a {
+            white-space: nowrap;
+        }
     }
 
     & > p {
         margin-bottom: 0.75rem;
     }
 
-    & > p:last-of-type, .showcase-panel, .card-list {
+    .showcase-panel {
         margin-bottom: 1.75rem;
+    }
+
+    .card-list {
+        margin-bottom: 2.75rem;
+
+        .sd-mb-4, .sd-my-4 {
+            margin-bottom: 0 !important;
+        }
     }
 
     & > hr {
@@ -26,5 +44,9 @@
     #data-products, #about-dea {
         padding-top: 0.5rem;
         padding-bottom: 0.5rem;
+    }
+
+    h2, .rubric {
+        font-size: 1.35rem;
     }
 }
