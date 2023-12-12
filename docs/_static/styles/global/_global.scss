@@ -10,3 +10,7 @@ html {
 #searchbox {
     display: none;
 }
+
+dt:target, span.highlighted {
+    background-color: transparent;
+}
