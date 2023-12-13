@@ -18,7 +18,7 @@ To view and access the data interactively:
 
 :::{dropdown} How to load data with Python in the DEA Sandbox
 
-DEA Sandbox allows you to explore DEA’s Earth Observation datasets in a JupyterLab environment. To sign up for DEA Sandbox see the [user guide](/guides/setup/sandbox/sandbox/)
+DEA Sandbox allows you to explore DEA’s Earth Observation datasets in a JupyterLab environment. To sign up for DEA Sandbox see the [user guide](/guides/setup/Sandbox/sandbox/)
 
 Once you have access, click into the `DEA products` directory to find the `Introduction to DEA Land Cover` notebook on the Sandbox. This notebook will walk you through loading and visualising the DEA Land Cover data.
 :::
