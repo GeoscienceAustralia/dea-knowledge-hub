@@ -12,3 +12,9 @@ nav.bd-docs-nav {
         font-weight: bold;
     }
 }
+
+@media (min-width: 960px) {
+    .bd-sidebar-primary {
+        margin-right: 2rem;
+    }
+}
