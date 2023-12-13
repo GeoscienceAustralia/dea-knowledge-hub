@@ -1,8 +1,4 @@
 nav.navbar {
-    .search-button__kbd-shortcut {
-        display: none;
-    }
-
     .navbar-nav > .current > .nav-link {
         border-bottom: none !important;
     }
@@ -14,10 +10,6 @@ nav.navbar {
     .navbar-brand img {
         width: 323px;
         height: 40px;
-    }
-
-    input[type="search"].form-control {
-        border: none;
     }
 
     .navbar-header-items {
