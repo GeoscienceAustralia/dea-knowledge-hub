@@ -270,7 +270,7 @@
             - {% for item in valid_data %}
               * `{{ item.name or data_default_name }} <{{ item.link }}>`_
               {% endfor %}
-            - Learn how to `access the data via AWS </guides/about/faq/#how-do-i-download-data-from-dea>`_
+            - Learn how to `access the data via AWS </guides/about/faq/#download-dea-data>`_
           {% endif %}
 
           {% if valid_code_samples %}

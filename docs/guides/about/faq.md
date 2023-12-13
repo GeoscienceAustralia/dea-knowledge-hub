@@ -1,6 +1,7 @@
 # Frequently Asked Questions
 
 :::{dropdown} How do I download data from DEA?
+:name: download-dea-data
 
 There are several options for downloading data from DEA depending on your use case:
 
@@ -28,6 +29,7 @@ aws s3 cp s3://dea-public-data/derivative/ga_ls_wo_fq_cyear_3/1-6-0/x11/y21/ . -
 :::
 
 :::{dropdown} What data limitations does Landsat have?
+:name: landsat-data-limitations
 
 Earth observation satellites only view a small portion of the world at any one time. Typically the ones used by Digital Earth Australia (DEA) only observe a small strip, north-south across the landscape, and over several days the whole landscape is finally observed in full. For example the Landsat satellites take 16 days to create a full coverage, and then only if the surface of the earth is not obscured by clouds. Hence there can be difficulties in capturing imagery over persistently cloudy locations such as Tasmania and northern Australia during the monsoonal months, and areas may not be observed at all for extended periods. Where the satellite data is being analysed as a time series, these long periods can cause important changes to be missed entirely, or parts of a cyclic environment to be misinterpreted (such as vegetation phenology and cropping cycles).
 
