@@ -4,29 +4,31 @@ To contribute content to this site, please [follow the publication process](http
 
 ## Git workflow
 
-```mermaid
-%%{init: { 'gitGraph': {'showCommitLabel': false}} }%%
+![Git workflow diagram](https://mermaid.ink/svg/pako:eNqNkT9PAzEMxb9KZOl0SxmgW0aoxMIGYxY3cS8Rl-SUOlTVKd-d9C_t6RBsz88_20_yCDoaAglNM7rgWIpRtJ3j14SDbWvVbm3cvUTvHb_hmvrqbbDfUimiNI0KKlxo8fEsVRBCH-GDWicM2gpDX9TH4dizpD9j5jtvyu9jTg8n_evMxZuy110zKXx8nDAzmz2ljv4VYe7A098HbujlHePRhZ8E5wlYQK1ry9QfjYe2ArbkSYGs0tAGc88KVCgVxczxfR80SE6ZFpAHg0wrh11CfzLLN_hJsJw)
 
-gitGraph TB:
-  commit
-  branch develop
-  checkout develop
-  commit
-  branch your-branch
-  checkout develop
-  checkout your-branch
-  commit
-  commit
-  branch demo1
-  commit
-  checkout develop
-  merge your-branch
-  checkout develop
-  commit
-  branch demo2
-  commit
-  checkout develop
-  branch demo3
-  checkout main
-  merge develop
-```
+<!-- ```mermaid -->
+<!-- %%{init: { 'gitGraph': {'showCommitLabel': false}} }%% -->
+<!--  -->
+<!-- gitGraph TB: -->
+<!--   commit -->
+<!--   branch develop -->
+<!--   checkout develop -->
+<!--   commit -->
+<!--   branch your-branch -->
+<!--   checkout develop -->
+<!--   checkout your-branch -->
+<!--   commit -->
+<!--   commit -->
+<!--   branch demo1 -->
+<!--   commit -->
+<!--   checkout develop -->
+<!--   merge your-branch -->
+<!--   checkout develop -->
+<!--   commit -->
+<!--   branch demo2 -->
+<!--   commit -->
+<!--   checkout develop -->
+<!--   branch demo3 -->
+<!--   checkout main -->
+<!--   merge develop -->
+<!-- ``` -->
