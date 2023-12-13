@@ -4,18 +4,14 @@
 {{ data.title }}
 ======================================================================================================================================================
 
-Digital Earth Australia (DEA) is a program of Geoscience Australia, an entity of the Australian Government. We create free and open satellite data products for the benefit of Australia.
-
-The DEA Knowledge Hub brings together information about DEA’s products and services to assist you to take advantage of Australia’s free and open satellite imagery archive. 
-
-----
+The knowledge hub brings together information about Digital Earth Austalia's products and services, allowing you to utilise our free and open-source satellite imagery archive.
 
 .. container:: card-list icons
    :name: data-products
 
    .. rubric:: Data Products
 
-   Explore DEA’s data products, and learn more about how they were created, how to use and access them, their version history, quality, and supporting information and publications.
+   Browse our catalogue of data products to find supporting information and ways to access the data.
 
    .. grid:: 2 2 3 5
       :gutter: 3
@@ -34,7 +30,7 @@ The DEA Knowledge Hub brings together information about DEA’s products and ser
 
       .. rubric:: User Guides
 
-      Find step by step instructions on how to use DEA products and services, as well as important reference articles and DEA publications.
+      Find documentation, step-by-step instructions, and DEA publications on a variety of topics.
 
       `Visit the User Guides </guides/>`_
 
@@ -49,7 +45,7 @@ The DEA Knowledge Hub brings together information about DEA’s products and ser
 
       .. rubric:: DEA Notebooks
 
-      Explore a repository of code examples showcasing DEA products, how-to-guides and common earth observation workflows and case studies using Jupyter Notebooks.
+      Explore visual walkthroughs that show how to analyse our data using Python, including the use our DEA Tools package.
 
       `Visit the DEA Notebooks </notebooks/README/>`_
 
@@ -64,11 +60,13 @@ The DEA Knowledge Hub brings together information about DEA’s products and ser
 
       .. rubric:: About Digital Earth Australia
 
+      `Digital Earth Australia <https://www.dea.ga.gov.au/>`_ (DEA) is a program of `Geoscience Australia <https://www.ga.gov.au/>`_, an entity of the Australian Government.
+
       It is our mission is to embed satellite imagery and data into decisions that support a sustainable Australian environment, a resilient society, and a strong economy.
 
       `Visit the DEA website <https://www.dea.ga.gov.au/>`_
 
-      `Get our newsletter <https://www.dea.ga.gov.au/news/dea-newsletter-and-communications-archive>`_
+      `Follow our newsletter <https://www.dea.ga.gov.au/news/dea-newsletter-and-communications-archive>`_
 
    .. container::
 
