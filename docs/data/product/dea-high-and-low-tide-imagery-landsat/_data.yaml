@@ -49,7 +49,7 @@ data:
     name: Access the data on NCI
 
 code_examples:
-  - link: /notebooks/dea_products/DEA_High_and_Low_Tide_Imagery/
+  - link: /notebooks/DEA_products/DEA_High_and_Low_Tide_Imagery/
     name: Code examples
 
 web_services: null

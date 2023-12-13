@@ -56,7 +56,7 @@ data:
     name: All-time summary 1986 to present - AWS access
 
 code_examples:
-  - link: /notebooks/dea_products/dea_water_observations/
+  - link: /notebooks/DEA_products/DEA_Water_Observations/
     name: Code examples
 
 web_services:
