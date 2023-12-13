@@ -1,4 +1,4 @@
-# Data product theme redirects
+# CMI Theme redirects
 
 theme/baseline-satellite-data  data/theme/baseline-satellite-data
 theme/land-and-vegetation      data/theme/land-and-vegetation

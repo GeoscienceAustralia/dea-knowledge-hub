@@ -1,3 +1,5 @@
+# CMI old product version redirects
+
 node/111                                                              data/old-version/dea-surface-reflectance-nbar-landsat-2.0.0
 data-products/dea/111/dea-surface-reflectance-nbar-landsat-deprecated data/old-version/dea-surface-reflectance-nbar-landsat-2.0.0
 sr-n_25_2.0.0                                                         data/old-version/dea-surface-reflectance-nbar-landsat-2.0.0

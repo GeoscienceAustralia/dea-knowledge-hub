@@ -44,13 +44,13 @@ entries:
                     title: Landsat 8 Observational Attributes
               - file: data/category/landsat-9-analysis-ready-data/index
                 entries:
-                  - file: data/product/dea-surface-reflectance-landsat-9/index
+                  - file: data/product/dea-surface-reflectance-landsat-9-oli-tirs/index
                     title: Landsat 9 Surface Reflectance
-                  - file: data/product/dea-surface-reflectance-nbar-landsat-9/index
+                  - file: data/product/dea-surface-reflectance-nbar-landsat-9-oli-tirs/index
                     title: Landsat 9 Surface Reflectance NBAR
-                  - file: data/product/dea-surface-reflectance-nbart-landsat-9/index
+                  - file: data/product/dea-surface-reflectance-nbart-landsat-9-oli-tirs/index
                     title: Landsat 9 Surface Reflectance NBART
-                  - file: data/product/dea-surface-reflectance-oa-landsat-9/index
+                  - file: data/product/dea-surface-reflectance-oa-landsat-9-oli-tirs/index
                     title: Landsat 9 Observational Attributes
               - file: data/category/sentinel-2a-analysis-ready-data/index
                 entries:

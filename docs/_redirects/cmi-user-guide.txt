@@ -1,4 +1,4 @@
-# User Guide redirects
+# CMI User Guide redirects
 
 about/changelog     guides/about/changelog
 about/faq           guides/about/faq

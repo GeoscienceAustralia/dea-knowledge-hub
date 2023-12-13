@@ -1,4 +1,4 @@
-# Content Management Interface (CMI) redirects
+# CMI pages redirects
 
 node                     index
 404                      404-not-found
