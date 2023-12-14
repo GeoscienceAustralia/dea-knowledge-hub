@@ -41,3 +41,10 @@ fc-percentile_25_2.0.0                                                    data/o
 data-products/dea/120/fc-percentile_25_2.0.0                              data/old-version/dea-fractional-cover-percentiles-landsat-2.2.1
 data-products/dea/120/fractional-cover-percentiles-2-landsat              data/old-version/dea-fractional-cover-percentiles-landsat-2.2.1
 data-products/dea/120/dea-fractional-cover-percentiles-landsat            data/old-version/dea-fractional-cover-percentiles-landsat-2.2.1
+
+node/137                                                          data/old-version/dea-pixel-quality-count-landsat-2.0.0
+data-products/dea/137/dea-pixel-quality-count-landsat-deprecated  data/old-version/dea-pixel-quality-count-landsat-2.0.0
+pq-count_25_2.0.0                                                 data/old-version/dea-pixel-quality-count-landsat-2.0.0
+data-products/copernicus/137/pq-count_25_2.0.0                    data/old-version/dea-pixel-quality-count-landsat-2.0.0
+data-products/dea/137/pixel-quality-count-2-landsat               data/old-version/dea-pixel-quality-count-landsat-2.0.0
+data-products/dea/137/dea-pixel-quality-count-landsat             data/old-version/dea-pixel-quality-count-landsat-2.0.0

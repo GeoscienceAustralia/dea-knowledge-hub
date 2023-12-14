@@ -1,17 +1,17 @@
 # Overview
 
-title: DEA Pixel Quality (Landsat, DEPRECATED)
-long_title: Pixel Quality 25m 2.0.0 - This product is deprecated and the data no longer available
-header_image: null
+title: DEA Pixel Quality Count (Landsat, DEPRECATED)
+long_title: Pixel Quality Count 25m 2.0.0 - This product is deprecated and the data no longer available
+header_image: /_files/cmi/Observation_density.png
 version: 2.0.0
 is_latest_version: false
 latest_version_link: /data/product/dea-surface-reflectance-oa-landsat-8-oli-tirs/
 product_type: Baseline
 spatial_data_type: Raster
 time_span:
-  start: null
-  end: null
-update_frequency: Deprecated
+  start: 17 Oct 2017
+  end: 31 Dec 2098
+update_frequency: As needed
 product_ids: null
 
 parent_products:
@@ -52,7 +52,7 @@ old_versions: null
 enable_overview: true
 enable_access: true
 enable_details: true
-enable_quality: true
+enable_quality: false
 enable_history: true
 enable_credits: true
 
