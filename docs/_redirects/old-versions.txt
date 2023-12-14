@@ -49,9 +49,17 @@ data-products/copernicus/137/pq-count_25_2.0.0                    data/old-versi
 data-products/dea/137/pixel-quality-count-2-landsat               data/old-version/dea-pixel-quality-count-landsat-2.0.0
 data-products/dea/137/dea-pixel-quality-count-landsat             data/old-version/dea-pixel-quality-count-landsat-2.0.0
 
-node/140                                                                   data/product/dea-surface-reflectance-geomedian-landsat-2.0.0
-data-products/dea/140/dea-surface-reflectance-geomedian-landsat-deprecated data/product/dea-surface-reflectance-geomedian-landsat-2.0.0
-sr_geomedian_25_2.0.0                                                      data/product/dea-surface-reflectance-geomedian-landsat-2.0.0
-data-products/dea/140/sr_geomedian_25_2.0.0                                data/product/dea-surface-reflectance-geomedian-landsat-2.0.0
-data-products/dea/140/surface-reflectance-geomedian-2-landsat              data/product/dea-surface-reflectance-geomedian-landsat-2.0.0
-data-products/dea/140/dea-surface-reflectance-geomedian-landsat            data/product/dea-surface-reflectance-geomedian-landsat-2.0.0
+node/140                                                                   data/old-version/dea-surface-reflectance-geomedian-landsat-2.0.0
+data-products/dea/140/dea-surface-reflectance-geomedian-landsat-deprecated data/old-version/dea-surface-reflectance-geomedian-landsat-2.0.0
+sr_geomedian_25_2.0.0                                                      data/old-version/dea-surface-reflectance-geomedian-landsat-2.0.0
+data-products/dea/140/sr_geomedian_25_2.0.0                                data/old-version/dea-surface-reflectance-geomedian-landsat-2.0.0
+data-products/dea/140/surface-reflectance-geomedian-2-landsat              data/old-version/dea-surface-reflectance-geomedian-landsat-2.0.0
+data-products/dea/140/dea-surface-reflectance-geomedian-landsat            data/old-version/dea-surface-reflectance-geomedian-landsat-2.0.0
+
+node/143                                                                   data/old-version/dea-water-observations-statistics-landsat-2.1.5
+data-products/dea/143/dea-water-observations-statistics-landsat-deprecated data/old-version/dea-water-observations-statistics-landsat-2.1.5
+wo-stats_25_2.1.5                                                          data/old-version/dea-water-observations-statistics-landsat-2.1.5
+data-products/dea/143/wo-stats_25_2.1.5                                    data/old-version/dea-water-observations-statistics-landsat-2.1.5
+data-products/dea/143/water-observations-statistics-2-landsat              data/old-version/dea-water-observations-statistics-landsat-2.1.5
+data-products/dea/143/water-observations-from-space-statistics-2-landsat   data/old-version/dea-water-observations-statistics-landsat-2.1.5
+data-products/dea/143/dea-water-observations-statistics-landsat            data/old-version/dea-water-observations-statistics-landsat-2.1.5
