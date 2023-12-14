@@ -62,6 +62,10 @@ old_versions:
     title: DEA Pixel Quality (Landsat, DEPRECATED)
     slug: dea-pixel-quality-landsat-2.0.0
     release_date: null
+  - version: 2.0.0
+    title: DEA Pixel Quality Count (Landsat, DEPRECATED)
+    slug: dea-pixel-quality-count-landsat-2.0.0
+    release_date: null
 
 # Settings
 
