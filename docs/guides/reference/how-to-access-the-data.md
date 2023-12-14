@@ -1,44 +1,13 @@
-How to access data on the CMI
-=============================
+# How to access data on the CMI
 
-#### Our data products can be accessed through various web services, catalogues and mapping services. These are listed under 'Access' tab > 'Links to data' and 'Links to maps'.
+Our data products can be accessed through various web services, catalogues and mapping services.
 
-#### This is an overview of the data link types and what they can offer. 
+:::{contents} On this page
+:local:
+:backlinks: none
+:::
 
-> **On this page**
->
-> [Catalogues and web services](#catalogues-services)
->
-> -   [AWS S3 - (Digital Death Australia - Public Data)](#aws)
->
->
-> -   [DEA Access (coming soon)](#dea-access)
->
->
-> -   [Geoscience Australia eCat](#ecat)
->
->
-> -   [GSKY](#gsky)
->
->
-> -   [Open Data Cube](#open-data-cube)
->
->
-> -   [THREDDS - NCI - THREDDS](#thredds)
->
->
->
-> [Maps](#maps)
->
-> -   [AusSeabed Portal](#ausseabed)
->
->
-> -   [DEA Maps](#dea-maps)
-
-* * * * *
-
-Catalogues and web services
----------------------------
+## Catalogues and web services
 
 ### AWS S3
 
@@ -48,13 +17,11 @@ DEA hosts data on Amazon Web Service (AWS)'s Simple Storage Service (S3) to faci
 
 **How to use it**
 
-You can access the S3 bucket directly at `s3://dea-public-data` or browse files through a web interface at [Digital Earth Australia - Public Data](https://web.archive.org/web/20231024103204/https://data.dea.ga.gov.au/).
+You can access the S3 bucket directly at `s3://dea-public-data` or browse files through a web interface at [Digital Earth Australia - Public Data](https://data.dea.ga.gov.au/).
 
 **More information**
 
-[AWS S3 documentation](https://web.archive.org/web/20231024103204/https://docs.aws.amazon.com/s3/index.html)
-
-[Digital Earth Australia user guide](https://web.archive.org/web/20231024103204/https://docs.dea.ga.gov.au/)
+[AWS S3 documentation](https://docs.aws.amazon.com/s3/index.html)
 
 ### DEA Access (coming soon)
 
@@ -80,7 +47,7 @@ Every data product on the CMI links to its eCat record. Click on the link and it
 
 **More information**
 
-[eCat home page](https://web.archive.org/web/20231024103204/https://ecat.ga.gov.au/geonetwork/)
+[eCat home page](https://ecat.ga.gov.au/geonetwork/)
 
 ### GSKY
 
@@ -94,13 +61,13 @@ Furthermore, using GSKY's processing capability, that data can be analysed on th
 
 **How to use it**
 
-See [GSKY: Getting started.](https://web.archive.org/web/20231024103204/https://opus.nci.org.au/display/Help/Getting+Started)
+See [GSKY: Getting started.](https://opus.nci.org.au/display/Help/Getting+Started)
 
 **More information**
 
-[About GSKY](https://web.archive.org/web/20231024103204/https://nci.org.au/our-services/data-services#GSKY)
+[About GSKY](https://nci.org.au/our-services/data-services#GSKY)
 
-[GSKY User Guide](https://web.archive.org/web/20231024103204/https://opus.nci.org.au/display/Help/GSKY+User+Guide)
+[GSKY User Guide](https://opus.nci.org.au/display/Help/GSKY+User+Guide)
 
 ### Open Data Cube
 
@@ -112,13 +79,11 @@ At its core, ODC is a set of Python libraries and a PostgreSQL database that all
 
 **How to use it**
 
-See [Open Data Cube Sandbox introduction](https://web.archive.org/web/20231024103204/https://www.opendatacube.org/sandbox)
+See [Open Data Cube Sandbox introduction](https://www.opendatacube.org/sandbox)
 
 **More information**
 
-[Open Data Cube](https://web.archive.org/web/20231024103204/https://www.opendatacube.org/)
-
-[Digital Earth Australia user guide](https://web.archive.org/web/20231024103204/https://docs.dea.ga.gov.au/)
+[Open Data Cube](https://www.opendatacube.org/)
 
 ### THREDDS
 
@@ -134,7 +99,7 @@ The THREDDS server is programmatically accessible, which is how many advanced to
 
 If the data product features a THREDDS link, you can access the data in the following way:
 
-1) Open [DEA Explorer](https://web.archive.org/web/20231024103204/https://explorer.dea.ga.gov.au/). Select the product of interest from the menu at the top. This will give you a tile map. The data in THREDDS is indexed according to this tile map.
+1) Open [DEA Explorer](https://explorer.dea.ga.gov.au/). Select the product of interest from the menu at the top. This will give you a tile map. The data in THREDDS is indexed according to this tile map.
 
 2) Once you have located the tile that covers your region of interest, note the path and row numbers.
 
@@ -144,12 +109,9 @@ If the data product features a THREDDS link, you can access the data in the foll
 
 **More information**
 
-[About THREDDS](https://web.archive.org/web/20231024103204/https://nci.org.au/our-services/data-services)
+[About THREDDS](https://nci.org.au/our-services/data-services)
 
-* * * * *
-
-Maps
-----
+## Maps
 
 ### AusSeabed Marine Data Portal
 
@@ -161,11 +123,11 @@ This interface allows users to explore seafloor mapping products across Australi
 
 **How to use it**
 
-Visit the [AusSeabed Portal](https://web.archive.org/web/20231024103204/https://portal.ga.gov.au/persona/marine) and select 'About'.
+Visit the [AusSeabed Portal](https://portal.ga.gov.au/persona/marine) and select 'About'.
 
 **More information**
 
-[AusSeabed](https://web.archive.org/web/20231024103204/http://www.ausseabed.gov.au/)
+[AusSeabed](http://www.ausseabed.gov.au/)
 
 ### DEA Maps
 
@@ -181,7 +143,7 @@ DEA Maps aims to provide easy access to DEA's products to help users to make mor
 
 To launch DEA Map and display basic data:
 
--   Visit [DEA Maps](https://web.archive.org/web/20231024103204/https://maps.dea.ga.gov.au/).
+-   Visit [DEA Maps](https://maps.dea.ga.gov.au/).
 
 -   On the left-hand panel, click 'Add data' to launch the data catalogue.
 
@@ -194,8 +156,6 @@ To launch DEA Map and display basic data:
 
 **More information**
 
-[Example: Fractional Cover on DEA Maps](https://web.archive.org/web/20231024103204/https://maps.dea.ga.gov.au/#share=s-uCPjd1cM8bOxwNYFVeOeswPQmkd)
+[Example: Fractional Cover on DEA Maps](https://maps.dea.ga.gov.au/#share=s-uCPjd1cM8bOxwNYFVeOeswPQmkd)
 
-[DEA Maps - Help and FAQ](https://web.archive.org/web/20231024103204/https://maps.dea.ga.gov.au/help/help.html)
-
-[Digital Earth Australia user guide](https://web.archive.org/web/20231024103204/https://docs.dea.ga.gov.au/)
+[DEA Maps - Help and FAQ](https://maps.dea.ga.gov.au/help/help.html)

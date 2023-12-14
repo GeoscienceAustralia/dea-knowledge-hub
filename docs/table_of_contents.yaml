@@ -160,6 +160,7 @@ entries:
           - file: guides/reference/dataset_maturity_guide
           - file: guides/reference/analysis_ready_data_corrections
           - file: guides/reference/analysis-ready-data-example-queries
+          - file: guides/reference/how-to-access-the-data
 
       - caption: Appendix
         entries:
