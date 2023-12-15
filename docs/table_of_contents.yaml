@@ -90,6 +90,8 @@ entries:
             title: DEA Geomedian and Mean Absolute Deviation (GeoMAD)
           - file: data/product/dea-mangrove-canopy-cover-landsat/index
             title: DEA Mangroves
+          - file: data/product/dea-tasseled-cap-percentiles-landsat/index
+            title: DEA Tasseled Cap Percentiles
 
       - caption: Inland water
         entries:

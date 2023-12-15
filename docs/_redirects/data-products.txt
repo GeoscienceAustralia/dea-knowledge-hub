@@ -262,3 +262,5 @@ data-products/dea/131/dea-land-cover-terra-modis                                
 data-products/dea/ga_ter_m_dlcd_ann                                                data/product/ga-land-cover-terra-modis
 data-products/dea/131/geoscience-australia-land-cover-terra-modis                  data/product/ga-land-cover-terra-modis
 
+node/702                                                   data/product/dea-tasseled-cap-percentiles-landsat
+data-products/dea/702/dea-tasseled-cap-percentiles-landsat data/product/dea-tasseled-cap-percentiles-landsat
