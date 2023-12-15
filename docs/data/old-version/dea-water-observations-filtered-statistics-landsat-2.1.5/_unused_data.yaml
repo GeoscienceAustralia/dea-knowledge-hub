@@ -1,0 +1,124 @@
+# Unused data migrated from the CMI. May be outdated.
+
+# General
+
+cmi_node: 211
+cmi_url: https://cmi.ga.gov.au/data-products/dea/211/dea-water-observations-filtered-statistics-landsat-deprecated
+published_date: "2019-01-18"
+author: N. M. @ ga.gov.au
+created: 2018-03-12T12:00:00+1100
+
+# Basics tab
+
+program: dea
+theme: Inland water
+catalogue: DEA Water Observations
+collection_slug: geoscience-australia-landsat-collection-2-deprecated
+is_deprecated: true
+is_primary_record: null
+project_leader: T. K. @ ga.gov.au
+branch_head: c...i @ ga.gov.au
+related_items:
+  - DEA Water Observations (Landsat, DEPRECATED)
+  - DEA Water Observations Statistics (Landsat, DEPRECATED)
+anzsrc_research_code: null
+
+# Access tab
+
+map_names: null
+ecat_url: null
+doi_url: null
+open_data_cube_configuration: null
+security_classification: Unclassified
+time_span_full:
+  start: null
+  end: null
+
+# Details tab
+
+relevant_websites:
+  - link: http://www.ga.gov.au/scientific-topics/hazards/flood/wofs
+    name: Geoscience Australia Water Observations from Space
+
+# Processing tab
+
+data_sources:
+  - DEA Water Observations Statistics (Landsat, DEPRECATED)
+  - SRTM DSM/DEM data
+  - Multi-resolution Valley Bottom Flatness
+  - MODIS Open Water Likelihood
+  - ASGS Built-up Areas
+major_algorithms:
+  - Water Observations from Space Detection Algorithm
+schema_spatial_extent:
+  temporal_extent:
+    start: 1986-08-15T14:00:00+1000
+    end: 2017-07-31T13:59:59+1000
+  min_longitude: -1943830
+  max_longitude: 2170690
+  min_latitude: -1119030
+  max_latitude: -4856630
+  coordinate_reference_system: "Australian Albers / GDA94 (EPSG: 3577)"
+  coordinate_reference_system_units: metre
+  cell_size_x: 25
+  cell_size_y: 25
+  pixel_origin: Top Left
+  spatial_extent:
+    geo_type: Polygon
+    lat: "-34.714349000000"
+    long: "133.725681300000"
+    left: "93.771493500000"
+    top: "-8.483833800000"
+    right: "173.679869100000"
+    bottom: "-60.944864200000"
+    geohash: null
+
+# Media tab
+
+media:
+  - file: /2021-01/DEA_LandCover_v1-0_LCCS.png
+    caption: DEA Land Cover hierarchy as implemented in Version 1
+  - file: /2021-01/DEA_Land_Cover_1_0_0_Lvl4_2015.jpg
+    caption: DEA Land Cover Annual - 2015
+  - file: /2021-06/MAD_Australia.jpg
+    caption: Three-band MAD of Australia for 2014
+  - file: /2021-06/MAD_Cropping.jpg
+    caption: Three band MAD over a cropping region
+  - file: /2021-06/Geomedian_Australia.jpg
+    caption: 2014 geometric median of Australia in True Colour
+  - file: /2021-10/DEA_Land_Cover_1_0_0_Lvl4_2015.jpg
+    caption: DEA Land Cover Annual - 2015
+  - file: /2021-12/DEA_Land_Cover_1_0_0_Lvl4_2015.jpg
+    caption: DEA Land Cover Annual - 2015
+  - file: /2023-03/S2_WO_Provisional_Gulf_20230320.png
+    caption: Sentinel-2 Water Observation for flooding in the Gulf of Carpentaria, 2023.
+case_studies: null
+header_image_alt: water observations filtered stats banner
+files: null
+
+# Credits tab
+
+owners:
+  - Commonwealth of Australia (Geoscience Australia)
+custodians:
+  - Commonwealth of Australia (Geoscience Australia)
+principal_contributors:
+  - N. M.
+  - A. L.
+  - D. R.
+subject_matter_experts:
+  - N. M.
+publishing_entities:
+  - Commonwealth of Australia (Geoscience Australia)
+metadata_contacts:
+  - Geoscience Australia - Team Leader, Product Management, Operations Section NEMO
+media_contacts:
+  - Geoscience Australia - GA Media Hotline
+rights_statement: © Commonwealth of Australia (Geoscience Australia) 2015. [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/.).
+data_source_contacts:
+  - "Geoscience Australia - Team Leader, Applications and Systems Support, NEMO "
+approvers_checklist:
+  - WOfS_Approval _TK
+approvers_checklist_hprm_reference: null
+pmp_hprm_reference: D2014-70006
+

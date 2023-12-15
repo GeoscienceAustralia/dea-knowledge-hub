@@ -89,6 +89,15 @@ data-products/dea/191/mangrove-canopy-cover-2-landsat              data/old-vers
 data-products/dea/mangrove_extent_cover_albers                     data/old-version/dea-mangrove-canopy-cover-landsat-2.0.2
 data-products/dea/191/dea-mangrove-canopy-cover-landsat            data/old-version/dea-mangrove-canopy-cover-landsat-2.0.2
 
+node/211                                                                            data/old-version/dea-water-observations-filtered-statistics-landsat-2.1.5
+data-products/dea/211/dea-water-observations-filtered-statistics-landsat-deprecated data/old-version/dea-water-observations-filtered-statistics-landsat-2.1.5
+wo-filt-stats_25_2.1.5                                                              data/old-version/dea-water-observations-filtered-statistics-landsat-2.1.5
+data-products/dea/211/wo-filt-stats_25_2.1.5                                        data/old-version/dea-water-observations-filtered-statistics-landsat-2.1.5
+data-products/dea/211/water-observations-filtered-statistics-2-landsat              data/old-version/dea-water-observations-filtered-statistics-landsat-2.1.5
+data-products/dea/211/water-observations-from-space-filtered-statistics-2-landsat   data/old-version/dea-water-observations-filtered-statistics-landsat-2.1.5
+data-products/dea/211/dea-water-observations-filtered-statistics-landsat            data/old-version/dea-water-observations-filtered-statistics-landsat-2.1.5
+data-products/dea/211/wofs_filtered_summary                                         data/old-version/dea-water-observations-filtered-statistics-landsat-2.1.5
+
 node/456                          data/old-version/waterbodies-1.0.0
 data-products/dea/456/waterbodies data/old-version/waterbodies-1.0.0
 waterboards                       data/old-version/waterbodies-1.0.0
