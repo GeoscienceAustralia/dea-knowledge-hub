@@ -31,7 +31,7 @@ To determine annual national level changes in mangroves, changes in their canopy
 
 The potential area that mangroves occupied over this period was established as the union of mangrove maps generated for 1996, 2007-2010 and 2015/16 through the Japanese Aerospace Exploration Agency (JAXA) Global Mangrove Watch (GMW), and then refined using tasseled cap wetness dynamics and State and Territory mangrove mapping products. Within this area the 10th percentile of the green vegetation fraction of the ga\_ls\_fc\_pc\_cyear\_3 (pv\_pc\_10) was retrieved. The percentage Planimetric Canopy Cover (PCC%)](a planar unit, directly related to forest cover, representing the horizontal distribution of forest cover when determined from above, such as by LiDAR or spectral satellite) for each Landsat pixel was estimated using a relationship between pv\_pc\_10 and Light Detection And Ranging (LiDAR)-derived PCC% (< 1 m resolution and based on LiDAR acquisitions from all states supporting mangroves, excluding Victoria).
 
-%## Lineage
+% ## Lineage
 
 ## Processing steps
 

@@ -34,7 +34,7 @@ The code base used to generate the QLD Wetlands Insight Tool results is availabl
 
 % ## Processing steps
 
-%## Software
+% ## Software
 
 ## References
 
