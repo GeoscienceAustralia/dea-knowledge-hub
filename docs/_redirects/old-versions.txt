@@ -98,6 +98,13 @@ data-products/dea/211/water-observations-from-space-filtered-statistics-2-landsa
 data-products/dea/211/dea-water-observations-filtered-statistics-landsat            data/old-version/dea-water-observations-filtered-statistics-landsat-2.1.5
 data-products/dea/211/wofs_filtered_summary                                         data/old-version/dea-water-observations-filtered-statistics-landsat-2.1.5
 
+node/337                                              data/old-version/dea-wetness-percentiles-landsat-2.0.0
+data-products/dea/337/dea-wetness-percentiles-landsat data/old-version/dea-wetness-percentiles-landsat-2.0.0
+tci_percentiles_25_2.0.0                              data/old-version/dea-wetness-percentiles-landsat-2.0.0
+data-products/dea/337/tci_percentiles_25_2.0.0        data/old-version/dea-wetness-percentiles-landsat-2.0.0
+data-products/dea/337/wetness-percentiles-2-landsat   data/old-version/dea-wetness-percentiles-landsat-2.0.0
+data-products/dea/ga_ls_tcw_percentiles_2             data/old-version/dea-wetness-percentiles-landsat-2.0.0
+
 node/456                          data/old-version/waterbodies-1.0.0
 data-products/dea/456/waterbodies data/old-version/waterbodies-1.0.0
 waterboards                       data/old-version/waterbodies-1.0.0
