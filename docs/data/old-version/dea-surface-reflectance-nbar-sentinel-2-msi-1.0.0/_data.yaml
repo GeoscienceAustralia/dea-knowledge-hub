@@ -5,7 +5,7 @@ long_title: Sentinel-2 Multispectral Instrument - Nadir BRDF Adjusted Reflectanc
 header_image: null
 version: 1.0.0
 is_latest_version: false
-latest_version_link: null
+latest_version_link: /data/category/dea-surface-reflectance/
 product_type: Baseline
 spatial_data_type: Raster
 time_span:

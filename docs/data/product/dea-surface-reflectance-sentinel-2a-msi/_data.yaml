@@ -63,7 +63,10 @@ custom: null
 
 # History
 
-old_versions: null
+old_versions:
+  - version: 1.0.0
+    title: DEA Surface Reflectance NBAR (Sentinel-2 MSI) (DEPRECATED)
+    slug: dea-surface-reflectance-nbar-sentinel-2-msi-1.0.0
 
 # Settings
 
