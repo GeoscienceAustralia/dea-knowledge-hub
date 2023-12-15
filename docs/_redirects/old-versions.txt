@@ -121,6 +121,12 @@ data-products/dea/349/burned-area-2-landsat                           data/old-v
 data-products/dea/349/dea-burned-area-landsat                         data/old-version/dea-burnt-area-landsat-2010-and-2015-2.0.0
 data-products/dea/349/dea-burned-area-landsat-deprecated              data/old-version/dea-burnt-area-landsat-2010-and-2015-2.0.0
 
+node/432                                                             data/old-version/dea-cloud-and-cloud-shadow-mask-sentinel-2-msi-1.0.0
+data-products/dea/432/dea-cloud-and-cloud-shadow-mask-sentinel-2-msi data/old-version/dea-cloud-and-cloud-shadow-mask-sentinel-2-msi-1.0.0
+sentinel-2_cloud_and_cloud_shadow_mask                               data/old-version/dea-cloud-and-cloud-shadow-mask-sentinel-2-msi-1.0.0
+data-products/dea/432/sentinel-2-cloud-and-cloud-shadow-mask         data/old-version/dea-cloud-and-cloud-shadow-mask-sentinel-2-msi-1.0.0
+data-products/dea/432/cloud-and-cloud-shadow-mask-1-sentinel-2-msi   data/old-version/dea-cloud-and-cloud-shadow-mask-sentinel-2-msi-1.0.0
+
 node/456                          data/old-version/waterbodies-1.0.0
 data-products/dea/456/waterbodies data/old-version/waterbodies-1.0.0
 waterboards                       data/old-version/waterbodies-1.0.0
