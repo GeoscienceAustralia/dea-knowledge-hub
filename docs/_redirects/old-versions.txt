@@ -79,3 +79,9 @@ data-products/dea/190/ga_s2_m_nbart_1                                           
 data-products/dea/190/surface-reflectance-nbart-1-sentinel-2-msi                    data/old-version/dea-surface-reflectance-nbart-sentinel-2-msi-1.0.0
 data-products/dea/190/dea-surface-reflectance-nbart-sentinel-2-msi                  data/old-version/dea-surface-reflectance-nbart-sentinel-2-msi-1.0.0
 data-products/dea/190/dea-surface-reflectance-nbart-sentinel-2-msi-to-be-deprecated data/old-version/dea-surface-reflectance-nbart-sentinel-2-msi-1.0.0
+
+node/456                          data/old-version/waterbodies-1.0.0
+data-products/dea/456/waterbodies data/old-version/waterbodies-1.0.0
+waterboards                       data/old-version/waterbodies-1.0.0
+data-product/456/waterboards      data/old-version/waterbodies-1.0.0
+data-products/dea/456/waterboards data/old-version/waterbodies-1.0.0

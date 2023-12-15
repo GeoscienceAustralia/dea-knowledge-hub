@@ -62,7 +62,10 @@ custom: null
 
 # History
 
-old_versions: null
+old_versions:
+  - version: 1.0.0
+    title: DEA Waterbodies (Landsat, DEPRECATED)
+    slug: waterbodies-1.0.0
 
 # Settings
 
