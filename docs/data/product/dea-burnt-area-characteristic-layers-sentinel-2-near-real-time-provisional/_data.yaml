@@ -1,7 +1,7 @@
 # Overview
 
-title: "DEA Burnt Area Characteristic Layers Sentinel 2 Near Real-Time (Provisional) "
-long_title: "Geoscience Australia Burnt Area Characteristic Layers Sentinel 2 Near Real-Time (Provisional) "
+title: DEA Burnt Area Characteristic Layers Sentinel 2 Near Real-Time (Provisional)
+long_title: Geoscience Australia Burnt Area Characteristic Layers Sentinel 2 Near Real-Time (Provisional)
 header_image: null
 version: 1.0.0
 is_latest_version: true
@@ -50,7 +50,10 @@ web_services: null
 
 # History
 
-old_versions: null
+old_versions:
+  - version: 2.0.0
+    title: DEA Burnt Area (Landsat, 2010 and 2015, DEPRECATED)
+    slug: dea-burnt-area-landsat-2010-and-2015-2.0.0
 
 # Settings
 
