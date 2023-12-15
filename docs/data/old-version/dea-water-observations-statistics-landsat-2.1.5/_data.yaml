@@ -5,7 +5,7 @@ long_title: Water Observations from Space Statistics 25m 2.1.5 - This product is
 header_image: /_files/cmi/water_observations_1_banner_0.jpg
 version: 2.1.5
 is_latest_version: false
-latest_version_link: /data/product/dea-water-observations-landsat/
+latest_version_link: /data/product/dea-water-observations-statistics-landsat/
 product_type: Derivative
 spatial_data_type: Raster
 time_span:
