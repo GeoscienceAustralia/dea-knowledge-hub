@@ -1,4 +1,4 @@
-%## Access constraints
+## Access constraints
 
 :::{dropdown} How to access the data
 
@@ -13,3 +13,4 @@ To view and access the data interactively:
 4) Select which products you would like to display and click `Add to the map`.
 :::
 
+% ## Use constraints

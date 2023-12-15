@@ -1,4 +1,6 @@
-%## Access constraints
+% ## Access constraints
+
+% ## Use constraints
 
 :::{dropdown} How to access the data via QLD Government
 Information on how to access the Wetlands Insight Tool using the QLD Wetland*Maps* service can be found on this page:
