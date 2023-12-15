@@ -63,3 +63,11 @@ data-products/dea/143/wo-stats_25_2.1.5                                    data/
 data-products/dea/143/water-observations-statistics-2-landsat              data/old-version/dea-water-observations-statistics-landsat-2.1.5
 data-products/dea/143/water-observations-from-space-statistics-2-landsat   data/old-version/dea-water-observations-statistics-landsat-2.1.5
 data-products/dea/143/dea-water-observations-statistics-landsat            data/old-version/dea-water-observations-statistics-landsat-2.1.5
+
+node/189                                                                           data/product/dea-surface-reflectance-nbar-sentinel-2-msi-1.0.0
+data-products/dea/189/dea-surface-reflectance-nbar-sentinel-2-msi-deprecated       data/product/dea-surface-reflectance-nbar-sentinel-2-msi-1.0.0
+ga_s2_m_nbar_1                                                                     data/product/dea-surface-reflectance-nbar-sentinel-2-msi-1.0.0
+data-products/dea/189/ga_s2_m_nbar_1                                               data/product/dea-surface-reflectance-nbar-sentinel-2-msi-1.0.0
+data-products/dea/189/surface-reflectance-nbar-1-sentinel-2-msi                    data/product/dea-surface-reflectance-nbar-sentinel-2-msi-1.0.0
+data-products/dea/189/dea-surface-reflectance-nbar-sentinel-2-msi                  data/product/dea-surface-reflectance-nbar-sentinel-2-msi-1.0.0
+data-products/dea/189/dea-surface-reflectance-nbar-sentinel-2-msi-to-be-deprecated data/product/dea-surface-reflectance-nbar-sentinel-2-msi-1.0.0
