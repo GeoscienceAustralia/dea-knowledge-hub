@@ -105,6 +105,14 @@ data-products/dea/337/tci_percentiles_25_2.0.0        data/old-version/dea-wetne
 data-products/dea/337/wetness-percentiles-2-landsat   data/old-version/dea-wetness-percentiles-landsat-2.0.0
 data-products/dea/ga_ls_tcw_percentiles_2             data/old-version/dea-wetness-percentiles-landsat-2.0.0
 
+node/346                                                                                   data/old-version/dea-surface-reflectance-median-absolute-deviation-landsat-2.1.0
+data-products/dea/346/dea-surface-reflectance-median-absolute-deviation-landsat-deprecated data/old-version/dea-surface-reflectance-median-absolute-deviation-landsat-2.1.0
+sr_tmad_25_2.1.0                                                                           data/old-version/dea-surface-reflectance-median-absolute-deviation-landsat-2.1.0
+data-products/dea/346/sr_tmad_25_2.1.0                                                     data/old-version/dea-surface-reflectance-median-absolute-deviation-landsat-2.1.0
+data-products/dea/346/surface-reflectance-absolute-deviation-2-landsat                     data/old-version/dea-surface-reflectance-median-absolute-deviation-landsat-2.1.0
+data-products/dea/346/surface-reflectance-median-absolute-deviation-2-landsat              data/old-version/dea-surface-reflectance-median-absolute-deviation-landsat-2.1.0
+data-products/dea/346/dea-surface-reflectance-median-absolute-deviation-landsat            data/old-version/dea-surface-reflectance-median-absolute-deviation-landsat-2.1.0
+
 node/456                          data/old-version/waterbodies-1.0.0
 data-products/dea/456/waterbodies data/old-version/waterbodies-1.0.0
 waterboards                       data/old-version/waterbodies-1.0.0
