@@ -67,10 +67,7 @@ custom: null
 
 # History
 
-old_versions:
-  - version: 2.1.5
-    title: DEA Water Observations Statistics (Landsat, DEPRECATED)
-    slug: dea-water-observations-statistics-landsat-2.1.5
+old_versions: null
 
 # Settings
 
