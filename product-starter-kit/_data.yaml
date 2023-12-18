@@ -2,9 +2,10 @@
 
 title: Your title
 long_title: null
-header_image: ./images/thumbnail_vertical.png
+header_image: /_files/subfolder/image.png
 version: 0.0.0
 is_latest_version: true
+latest_version_link: null
 product_type: null
 spatial_data_type: null
 time_span:
@@ -19,49 +20,57 @@ parent_products:
 collection:
   name: null
   link: null
-collection_slug: null
-dois: null # List
+doi: null
+ecat: null
 nci:
   name: null
   code: null
+
 tags: null # List
 
 # Access
 
-maps:
-  null
+maps: null
 
   # - link: https://example.com
   #   name: null
 
-explorers:
-  null
+explorers: null
 
   # - link: https://example.com
   #   name: null
 
-data:
-  null
+data: null
 
   # - link: https://example.com
   #   name: null
 
-code_examples:
-  null
+code_examples: null
 
   # - link: https://example.com
   #   name: null
 
-web_services:
-  null
+web_services: null
 
   # - link: https://example.com
   #   name: null
 
-ecat:
-  null
+custom: null
 
-  # - id: 000000
+  # - icon: ghost
+  #   link: https://example.com
+  #   label: null
+  #   name: Lorem ipsum
+  #   description: null
+  #   class: null
+
+# History
+
+old_versions: null
+
+  # - version: 0.0.0
+  #   title: Lorem ipsum
+  #   slug: example-page
 
 # Settings
 
