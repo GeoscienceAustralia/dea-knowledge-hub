@@ -1,5 +1,7 @@
 ## Background
 
+This product is tagged [**"Provisional"**](https://docs.dea.ga.gov.au/guides/reference/dataset_maturity_guide/), indicating it has not yet been finalised for release and/or has not passed DEA's final quality checks. 
+
 The Tasseled Cap (Kauth-Thomas) transformation takes satellite imagery and shows the degree of greeness, wetness and brightness across the observed area. These indexes help users understand the combinations of vegetation, water and bare areas respectively. As such the Tasseled Cap is a useful input into environmental analyses, especially where there are mixtures of all three features in the landscape, such as in wetlands.
 
 ## What this product offers
@@ -14,15 +16,10 @@ Tasseled Cap percentiles are created by bringing together all individual satelli
 
 ## Applications
 
-This product provides valuable discrimination for characterising: 
-
+This product provides valuable discrimination for characterising: 
 * vegetated wetlands 
- 
-* salt flats 
- 
-
+* salt flats
 * salt lakes 
- 
 * coastal land cover classes
 
 ## Technical information
@@ -41,7 +38,7 @@ We used the Tasseled Cap transforms described in Crist et al. (1985).
 
 ## Lineage
 
-The lineage of this product is inherited from its sole input, the terrain corrected surface reflectance product Surface Reflectance NBART 3 (Landsat).
+The lineage of this product is inherited from its sole input, the terrain corrected surface reflectance product [Surface Reflectance NBART Collection 3 (Landsat)](https://docs.dea.ga.gov.au/data/category/dea-surface-reflectance/).
 
 % ## Processing steps
 

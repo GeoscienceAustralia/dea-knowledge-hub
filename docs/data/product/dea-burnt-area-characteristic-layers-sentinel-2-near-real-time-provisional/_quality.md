@@ -2,30 +2,20 @@
 
 There are a number of limitations when using this dataset to locate or map burnt area. There are limitations that apply to all Earth Observations with satellites and those specific to this product. 
 
-#### Limitations of Earth Observations 
+### Limitations of Earth Observations 
 
-Observation of the landscape by this service depends on having clear skies. Both cloud and smoke will obstruct the observation of the Earth’s surface. Furthermore, the satellites do not observe all places all of the time. The two Sentinel 2 satellites (A and B), which are the basis for this service, each view a given 320 kilometre wide strip of Australia only once every 10 days. This means there will be up to a five day gap between observations of any point on the Australian continent. The observations show only what was visible on the day of the satellite pass and at the time it is overhead.  
+Observation of the landscape by this service depends on having clear skies. Both cloud and smoke will obstruct the observation of the Earth’s surface. Furthermore, the satellites do not observe all places all of the time. The two Sentinel-2 satellites (A and B), which are the basis for this service, each view a given 320 kilometre wide strip of Australia only once every 10 days. This means there will be up to a five day gap between observations of any point on the Australian continent. The observations show only what was visible on the day of the satellite pass and at the time it is overhead.  
 
 Fires are fast moving and the situation on the ground can change rapidly. No decisions on life or property should be made based on this data. For local updates and alerts, please refer to your state emergency or fire service 
 
-#### Limitations specific to this dataset  
+### Limitations specific to this dataset  
 
-A number of changes in the landscape with similar characteristics to burn appear in this dataset. These include but are not limited to: 
-
+A number of changes in the landscape with similar characteristics to burn appear in this dataset. These include but are not limited to:
 * Forestry harvesting 
- 
-
 * Land clearing 
- 
-
 * Vegetation dieback  
- 
-
 * Extreme dry conditions during a drought 
- 
-
 * Increase in water body area 
- 
 
 A number of factors may contribute to a burnt area from an actual fire not being visible in this product. Potential situations in which a burnt area may appear to have very little or no change from the baseline state are as follows: 
 

@@ -12,7 +12,6 @@ entries:
 
           - file: data/category/dea-surface-reflectance/index
             entries:
-              # - file: data/product/aquatic-surface-reflectance-landsat/index
               - file: data/category/landsat-5-analysis-ready-data/index
                 entries:
                   - file: data/product/dea-surface-reflectance-landsat-5-tm/index

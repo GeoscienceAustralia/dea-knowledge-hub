@@ -1,4 +1,6 @@
-% ## Acknowledgments
+## Acknowledgments
+
+Contains modified Copernicus Sentinel data 2021-2023.
 
 ## License and copyright
 
