@@ -18,3 +18,12 @@ notebooks/Tools/dea_tools/temporal  _modules/dea_tools/temporal
 notebooks/Tools/dea_tools/validation  _modules/dea_tools/validation
 notebooks/Tools/dea_tools/waterbodies  _modules/dea_tools/waterbodies
 notebooks/Tools/dea_tools/wetlands  _modules/dea_tools/wetlands
+notebooks/Tools/dea_tools/app/animations  _modules/dea_tools/app/animations
+notebooks/Tools/dea_tools/app/changefilmstrips  _modules/dea_tools/app/changefilmstrips
+notebooks/Tools/dea_tools/app/crophealth  _modules/dea_tools/app/crophealth
+notebooks/Tools/dea_tools/app/deacoastlines  _modules/dea_tools/app/deacoastlines
+notebooks/Tools/dea_tools/app/imageexport  _modules/dea_tools/app/imageexport
+notebooks/Tools/dea_tools/app/__init__  _modules/dea_tools/app/__init__
+notebooks/Tools/dea_tools/app/miningrehab  _modules/dea_tools/app/miningrehab
+notebooks/Tools/dea_tools/app/widgetconstructors  _modules/dea_tools/app/widgetconstructors
+
