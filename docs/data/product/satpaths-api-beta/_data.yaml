@@ -1,0 +1,61 @@
+# Overview
+
+title: SatPaths API (beta)
+long_title: Geoscience Australia SatPaths API (beta)
+header_image: null
+version: 1.0.0-beta
+is_latest_version: true
+latest_version_link: null
+product_type: Data service
+spatial_data_type: Raster
+time_span:
+  start: 31 Aug 2021
+  end: 1 Sep 2025
+update_frequency: As needed
+product_ids: null
+
+parent_products:
+  name: null
+  link: null
+collection:
+  name: null
+  link: null
+doi: null
+ecat: null
+nci:
+  name: null
+  code: null
+
+tags:
+  - satellite
+  - earth_observation
+
+# Access
+
+maps: null
+
+explorers: null
+
+data:
+  - link: https://satpathsapi.nemo.ga.gov.au/
+    name: SatPaths API
+
+code_examples:
+  - link: https://satpathsapi.nemo.ga.gov.au/user-guide
+    name: Code examples
+
+web_services: null
+
+# History
+
+old_versions: null
+
+# Settings
+
+enable_overview: true
+enable_access: true
+enable_details: true
+enable_quality: true
+enable_history: true
+enable_credits: true
+

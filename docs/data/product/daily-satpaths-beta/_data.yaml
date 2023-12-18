@@ -1,0 +1,62 @@
+# Overview
+
+title: Daily SatPaths (beta)
+long_title: Geoscience Australia's predictive schedules for public good satellites over Australia
+header_image: /_files/cmi/SatPaths image.png
+version: 1.0.3-beta
+is_latest_version: true
+latest_version_link: null
+product_type: Data service
+spatial_data_type: Raster
+time_span:
+  start: 31 Jan 2021
+  end: 31 Jan 2025
+update_frequency: As needed
+product_ids: null
+
+parent_products:
+  name: null
+  link: null
+collection:
+  name: null
+  link: null
+doi: null
+ecat: null
+nci:
+  name: null
+  code: null
+
+tags:
+  - earth_observation
+  - satellite
+  - satellite_schedules
+
+# Access
+
+maps: null
+
+explorers: null
+
+data:
+  - link: https://satpaths.nemo.ga.gov.au/
+    name: Daily SatPaths
+
+code_examples: null
+
+web_services:
+  - link: https://satpathsapi.nemo.ga.gov.au/
+    name: SathPaths API
+
+# History
+
+old_versions: null
+
+# Settings
+
+enable_overview: true
+enable_access: true
+enable_details: true
+enable_quality: true
+enable_history: true
+enable_credits: true
+
