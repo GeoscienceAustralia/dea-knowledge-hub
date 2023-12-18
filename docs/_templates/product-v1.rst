@@ -89,7 +89,6 @@
 {% endif %}
 
 .. tab-set::
-   :class: product-tabs
 
     {% if data.enable_overview %}
     .. tab-item:: Overview

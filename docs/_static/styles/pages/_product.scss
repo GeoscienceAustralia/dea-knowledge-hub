@@ -8,8 +8,8 @@
         margin-bottom: 0;
     }
 
-    .product-tabs .sd-tab-content {
-        box-shadow: none;
+    & > .sd-tab-set > .sd-tab-content {
+        box-shadow: 0 -0.0625rem var(--sd-color-tabs-overline);
     }
 
     #additional-files-table {
