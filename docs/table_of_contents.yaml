@@ -81,16 +81,18 @@ entries:
           - file: data/theme/land-and-vegetation/index
             title: All
 
-          - file: data/product/dea-land-cover-landsat/index
-            title: DEA Land Cover
+          - file: data/category/dea-land-cover/index
+            entries:
+            - file: data/product/dea-land-cover-landsat/index
+              title: DEA Land Cover
+            - file: data/product/ga-land-cover-terra-modis/index
+              title: GA Land Cover (Terra MODIS)
           - file: data/category/dea-fractional-cover/index
             entries:
               - file: data/product/dea-fractional-cover-landsat/index
                 title: DEA Fractional Cover
               - file: data/product/dea-fractional-cover-percentiles-landsat/index
                 title: DEA Fractional Cover Percentiles
-          - file: data/product/ga-land-cover-terra-modis/index
-            title: GA Land Cover (Terra MODIS)
           - file: data/product/dea-geometric-median-and-median-absolute-deviation-landsat/index
             title: DEA Geomedian and Mean Absolute Deviation (GeoMAD)
           - file: data/product/dea-mangrove-canopy-cover-landsat/index
