@@ -4,8 +4,6 @@ title: DEA Tasseled Cap Percentiles (Landsat; Provisional)
 long_title: Geoscience Australia Tasseled Cap Percentiles Collection 3 (Provisional)
 header_image: /_files/cmi/TCWpercentiles.png
 version: 3.0.0
-is_latest_version: true
-latest_version_link: null
 product_type: Derivative
 spatial_data_type: Raster
 time_span:
@@ -15,6 +13,10 @@ update_frequency: Annually
 product_ids:
   - ga_ls_tc_pc_cyear_3
   - ga_ls_tc_pc_fyear_3
+
+is_latest_version: true
+latest_version_link: null
+is_provisional: true
 
 parent_products:
   name: Landsat 5, 7 and 8 NBART and Observational Attributes

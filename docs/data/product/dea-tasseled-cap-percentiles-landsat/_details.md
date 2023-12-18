@@ -1,7 +1,5 @@
 ## Background
 
-This product is tagged [**"Provisional"**](https://docs.dea.ga.gov.au/guides/reference/dataset_maturity_guide/), indicating it has not yet been finalised for release and/or has not passed DEA's final quality checks. 
-
 The Tasseled Cap (Kauth-Thomas) transformation takes satellite imagery and shows the degree of greeness, wetness and brightness across the observed area. These indexes help users understand the combinations of vegetation, water and bare areas respectively. As such the Tasseled Cap is a useful input into environmental analyses, especially where there are mixtures of all three features in the landscape, such as in wetlands.
 
 ## What this product offers
