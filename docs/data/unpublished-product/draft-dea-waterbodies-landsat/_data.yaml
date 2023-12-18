@@ -1,0 +1,74 @@
+# Overview
+
+title: DRAFT DEA Waterbodies (Landsat)
+long_title: Geoscience Australia Landsat Waterbodies Collection 3
+header_image: /_files/cmi/waterbodies.jpg
+version: 3.0.0
+is_latest_version: true
+latest_version_link: null
+product_type: Derivative
+spatial_data_type: Raster
+time_span:
+  start: null
+  end: null
+update_frequency: Monthly
+product_ids:
+  - ga_ls_wb_3
+
+parent_products:
+  name: null
+  link: null
+collection:
+  name: Geoscience Australia Landsat Collection 3
+  link: null
+doi: 10.26186/146197
+ecat: "146197"
+nci:
+  name: null
+  code: null
+
+tags:
+  - geoscience_australia_landsat_collection_3
+  - wetness
+  - surface_area
+  - water
+  - surface_water
+  - mapping
+
+# Access
+
+maps:
+  - link: https://maps.dea.ga.gov.au/#share=s-4RjD9N7swBCZSkXRJJBxOLzVZyK
+    name: null
+
+explorers: null
+
+data:
+  - link: http://pid.geoscience.gov.au/dataset/ga/146197
+    name: Download the shapefile via eCat
+  - link: https://data.dea.ga.gov.au/?prefix=derivative/dea_waterbodies/2-0-0/
+    name: Digital Earth Australia - Public Data
+
+code_examples:
+  - link: https://docs.dea.ga.gov.au/notebooks/DEA_products/DEA_Waterbodies.html
+    name: Jupyter notebook
+  - link: https://github.com/GeoscienceAustralia/dea-waterbodies
+    name: Github repository
+
+web_services:
+  - link: https://geoserver.dea.ga.gov.au/geoserver/wms
+    name: Web mapping service
+
+# History
+
+old_versions: null
+
+# Settings
+
+enable_overview: true
+enable_access: true
+enable_details: true
+enable_quality: true
+enable_history: true
+enable_credits: true
+
