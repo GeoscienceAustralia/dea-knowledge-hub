@@ -10,3 +10,5 @@ pages:
   - name: Australian National Spectral Database
     link: /data/product/australian-national-spectral-database/
     image: /_files/cmi/spectral_2.jpg
+  - name: Australian Geographic Reference Image
+    image: /_files/cmi/agri.jpg
