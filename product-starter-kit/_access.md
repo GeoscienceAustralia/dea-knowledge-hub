@@ -2,5 +2,5 @@
 
 % ## Use constraints
 
-% :::{dropdown} How do I access the data?
+% :::{dropdown} How to access the data
 % :::
