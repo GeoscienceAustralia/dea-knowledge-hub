@@ -3,7 +3,7 @@
 # General
 
 cmi_node: 630
-cmi_url: /data-products/dea/630/dea-fractional-cover-percentiles-landsat
+cmi_url: https://cmi.ga.gov.au/data-products/dea/630/dea-fractional-cover-percentiles-landsat
 published_date: "2021-12-03"
 author: B. D. @ ga.gov.au
 created: 2021-03-11T10:50:08+1100

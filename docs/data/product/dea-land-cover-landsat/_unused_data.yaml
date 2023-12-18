@@ -3,7 +3,7 @@
 # General
 
 cmi_node: 607
-cmi_url: /data-products/dea/607/dea-land-cover-landsat
+cmi_url: https://cmi.ga.gov.au/data-products/dea/607/dea-land-cover-landsat
 published_date: "2021-11-18"
 author: C. K. @ ga.gov.au
 created: 2020-11-30T19:36:43+1100

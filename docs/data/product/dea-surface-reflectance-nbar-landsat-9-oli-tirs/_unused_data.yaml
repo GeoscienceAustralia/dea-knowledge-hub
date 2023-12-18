@@ -3,7 +3,7 @@
 # General
 
 cmi_node: 819
-cmi_url: /data-products/dea/819/dea-surface-reflectance-nbar-landsat-9
+cmi_url: https://cmi.ga.gov.au/data-products/dea/819/dea-surface-reflectance-nbar-landsat-9
 published_date: "2023-08-16"
 author: A. N. @ ga.gov.au
 created: 2023-08-21T12:00:00+1000
