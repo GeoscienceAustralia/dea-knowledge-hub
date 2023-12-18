@@ -6,6 +6,7 @@ header_image: /_files/cmi/Observation_density.png
 version: 2.0.0
 is_latest_version: false
 latest_version_link: /data/product/dea-surface-reflectance-oa-landsat-8-oli-tirs/
+is_provisional: false
 product_type: Baseline
 spatial_data_type: Raster
 time_span:

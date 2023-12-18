@@ -6,6 +6,7 @@ header_image: /_files/cmi/water_observations_filtered_stats_1_0.jpg
 version: 2.1.5
 is_latest_version: false
 latest_version_link: /data/product/dea-water-observations-statistics-landsat/
+is_provisional: false
 product_type: Derivative
 spatial_data_type: Raster
 time_span:
