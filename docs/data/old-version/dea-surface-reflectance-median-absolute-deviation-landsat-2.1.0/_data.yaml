@@ -1,6 +1,6 @@
 # Overview
 
-title: DEA Surface Reflectance Median Absolute Deviation (Landsat, DEPRECATED)
+title: DEA Surface Reflectance Median Absolute Deviation (Landsat)
 long_title: "Surface Reflectance Euclidean, Spectral and Bray-Curtis Median Absolute Deviation 2.1.0 - This product is deprecated and the data no longer available "
 header_image: /_files/cmi/tripleMAD_banner.jpg
 version: 2.1.0

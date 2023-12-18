@@ -1,6 +1,6 @@
 # Overview
 
-title: DEA Surface Reflectance NBAR (Sentinel-2 MSI) (DEPRECATED)
+title: DEA Surface Reflectance NBAR (Sentinel-2 MSI)
 long_title: Sentinel-2 Multispectral Instrument - Nadir BRDF Adjusted Reflectance (DEPRECATED)
 header_image: null
 version: 1.0.0
