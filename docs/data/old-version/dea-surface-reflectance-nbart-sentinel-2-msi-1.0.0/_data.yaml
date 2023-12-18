@@ -1,0 +1,58 @@
+# Overview
+
+title: DEA Surface Reflectance NBART (Sentinel-2 MSI) (DEPRECATED)
+long_title: Sentinel-2 Multispectral Instrument - Nadir BRDF Adjusted Reflectance + Terrain Illumination Correction (DEPRECATED)
+header_image: null
+version: 1.0.0
+is_latest_version: false
+latest_version_link: /data/category/dea-surface-reflectance/
+product_type: Baseline
+spatial_data_type: Raster
+time_span:
+  start: null
+  end: null
+update_frequency: As needed
+product_ids: null
+
+parent_products:
+  name: null
+  link: null
+collection:
+  name: Geoscience Australia Sentinel-2 Collection 1
+  link: null
+doi: null
+ecat: "129684"
+nci:
+  name: null
+  code: null
+
+tags:
+  - geoscience_australia_sentinel_2_collection_1
+  - satellite_images
+  - earth_observation
+
+# Access
+
+maps: null
+
+explorers: null
+
+data: null
+
+code_examples: null
+
+web_services: null
+
+# History
+
+old_versions: null
+
+# Settings
+
+enable_overview: true
+enable_access: true
+enable_details: true
+enable_quality: true
+enable_history: true
+enable_credits: true
+

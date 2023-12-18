@@ -25,6 +25,7 @@
 {% set code_sample_default_name = "Code sample" %}
 
 {% set has_access_data = valid_maps or valid_data or valid_explorers or valid_web_services or valid_code_samples or valid_custom %}
+{% set has_key_details = (data.parent_products.name and data.parent_products.link) or (data.collection.name and data.collection.link) or data.collection.name or data.doi or data.ecat or data.published %}
 
 {% set pretty_version = "v" + data.version %}
 {% set page_title = data.title if is_latest_version else data.version + ": " + data.title %}
@@ -165,6 +166,7 @@
              {% endfor %}
        {%- endif %}
 
+       {% if has_key_details %}
        .. rubric:: Key details
           :name: key-details
 
@@ -196,6 +198,7 @@
           * - **Last updated**
             - {{ data.published }}
           {%- endif %}
+       {%- endif %}
 
        .. include:: _overview_2.md
           :parser: myst_parser.sphinx_

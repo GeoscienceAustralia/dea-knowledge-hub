@@ -262,3 +262,17 @@ data-products/dea/131/dea-land-cover-terra-modis                                
 data-products/dea/ga_ter_m_dlcd_ann                                                data/product/ga-land-cover-terra-modis
 data-products/dea/131/geoscience-australia-land-cover-terra-modis                  data/product/ga-land-cover-terra-modis
 
+# node/602                                                  data/product/aquatic-surface-reflectance-landsat
+# data-products/dea/602/aquatic-surface-reflectance-landsat data/product/aquatic-surface-reflectance-landsat
+# data-products/dea/602/acquatic-surface-reflectance        data/product/aquatic-surface-reflectance-landsat
+# data-products/dea/602/aquatic-surface-reflectance         data/product/aquatic-surface-reflectance-landsat
+
+node/684                                                                                         data/product/dea-burnt-area-characteristic-layers-sentinel-2-near-real-time-provisional
+data-products/dea/684/dea-burnt-area-characteristic-layers-sentinel-2-near-real-time-provisional data/product/dea-burnt-area-characteristic-layers-sentinel-2-near-real-time-provisional
+data-products/dea/684/dea-burnt-area-characteristic-layers                                       data/product/dea-burnt-area-characteristic-layers-sentinel-2-near-real-time-provisional
+data-products/dea/684/dea-provisional-burnt-area-characteristic-layers-sentinel-2-near-real-time data/product/dea-burnt-area-characteristic-layers-sentinel-2-near-real-time-provisional
+data-products/dea/ga_s2_ba_provisional_3                                                         data/product/dea-burnt-area-characteristic-layers-sentinel-2-near-real-time-provisional
+
+node/702                                                   data/product/dea-tasseled-cap-percentiles-landsat
+data-products/dea/702/dea-tasseled-cap-percentiles-landsat data/product/dea-tasseled-cap-percentiles-landsat
+

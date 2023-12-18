@@ -62,7 +62,13 @@ custom: null
 
 # History
 
-old_versions: null
+old_versions:
+  - version: 1.0.0
+    title: DEA Surface Reflectance NBART (Sentinel-2 MSI) (DEPRECATED)
+    slug: dea-surface-reflectance-nbart-sentinel-2-msi-1.0.0
+  - version: 1.0.0
+    title: DEA Cloud and Cloud Shadow Mask (Sentinel-2 MSI)
+    slug: dea-cloud-and-cloud-shadow-mask-sentinel-2-msi-1.0.0
 
 # Settings
 

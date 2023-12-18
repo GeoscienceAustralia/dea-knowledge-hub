@@ -93,7 +93,7 @@ For the purposes of the default Digital Earth Australia product, GeoMADs are com
 
 Note: the constituent pixels in the GeoMAD pixel composite mosaics are synthetic, meaning that the pixels have not been physically observed by the satellite. Rather they are the computed high-dimensional medians of a time series of pixels.
 
-%## Processing steps
+% ## Processing steps
 
 % ## Software
 

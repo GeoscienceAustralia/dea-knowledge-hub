@@ -1,0 +1,69 @@
+# Overview
+
+title: DEA Burnt Area Characteristic Layers Sentinel 2 Near Real-Time (Provisional)
+long_title: Geoscience Australia Burnt Area Characteristic Layers Sentinel 2 Near Real-Time (Provisional)
+header_image: null
+version: 1.0.0
+is_latest_version: true
+latest_version_link: null
+product_type: Derivative
+spatial_data_type: Raster
+time_span:
+  start: null
+  end: null
+update_frequency: Daily
+product_ids:
+  - ga_s2_ba_provisional_3
+
+parent_products:
+  name: null
+  link: null
+collection:
+  name: Geoscience Australia Sentinel-2 Collection 3
+  link: null
+doi: 10.26186/146449
+ecat: "146449"
+nci:
+  name: null
+  code: null
+
+tags:
+  - geoscience_australia_sentinel_2_collection_3
+  - fire
+  - bushfire
+
+# Access
+
+maps:
+  - link: https://maps.dea.ga.gov.au/#share=s-xPUOxByxELn3OVO65Kn7oMsFKZR
+    name: null
+
+explorers: null
+
+data:
+  - link: https://data.dea.ga.gov.au/?prefix=derivative/ga_s2_ba_provisional_3/1-6-0/
+    name: Digital Earth Australia - Public Data
+
+code_examples: null
+
+web_services: null
+
+# History
+
+old_versions:
+  - version: 1.0.0
+    title: DEA Burnt Area Vectors Sentinel-2 Near Real-Time (Provisional)
+    slug: dea-burnt-area-vectors-sentinel-2-near-real-time-provisional-1.0.0
+  - version: 2.0.0
+    title: DEA Burnt Area (Landsat, 2010 and 2015, DEPRECATED)
+    slug: dea-burnt-area-landsat-2010-and-2015-2.0.0
+
+# Settings
+
+enable_overview: true
+enable_access: true
+enable_details: true
+enable_quality: true
+enable_history: true
+enable_credits: true
+
