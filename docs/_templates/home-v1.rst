@@ -4,7 +4,7 @@
 {{ data.title }}
 ======================================================================================================================================================
 
-The knowledge hub brings together information about Digital Earth Austalia's products and services, allowing you to utilise our free and open-source satellite imagery archive.
+{{ data.description }}
 
 .. container:: card-list icons
    :name: data-products
