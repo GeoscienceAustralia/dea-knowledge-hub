@@ -1,29 +1,30 @@
 # dea_tools source redirects
 
-notebooks/Tools/dea_tools/bandindices  _modules/dea_tools/bandindices
-notebooks/Tools/dea_tools/bom  _modules/dea_tools/bom
+notebooks/Tools/dea_tools/bandindices     _modules/dea_tools/bandindices
+notebooks/Tools/dea_tools/bom             _modules/dea_tools/bom
 notebooks/Tools/dea_tools/classification  _modules/dea_tools/classification
-notebooks/Tools/dea_tools/climate  _modules/dea_tools/climate
-notebooks/Tools/dea_tools/coastal  _modules/dea_tools/coastal
-notebooks/Tools/dea_tools/dask  _modules/dea_tools/dask
-notebooks/Tools/dea_tools/datahandling  _modules/dea_tools/datahandling
-notebooks/Tools/dea_tools/__init__  _modules/dea_tools/__init__
-notebooks/Tools/dea_tools/landcover  _modules/dea_tools/landcover
-notebooks/Tools/dea_tools/__main__  _modules/dea_tools/__main__
-notebooks/Tools/dea_tools/maps  _modules/dea_tools/maps
-notebooks/Tools/dea_tools/plotting  _modules/dea_tools/plotting
-notebooks/Tools/dea_tools/pyfes_model  _modules/dea_tools/pyfes_model
-notebooks/Tools/dea_tools/spatial  _modules/dea_tools/spatial
-notebooks/Tools/dea_tools/temporal  _modules/dea_tools/temporal
-notebooks/Tools/dea_tools/validation  _modules/dea_tools/validation
-notebooks/Tools/dea_tools/waterbodies  _modules/dea_tools/waterbodies
-notebooks/Tools/dea_tools/wetlands  _modules/dea_tools/wetlands
-notebooks/Tools/dea_tools/app/animations  _modules/dea_tools/app/animations
-notebooks/Tools/dea_tools/app/changefilmstrips  _modules/dea_tools/app/changefilmstrips
-notebooks/Tools/dea_tools/app/crophealth  _modules/dea_tools/app/crophealth
-notebooks/Tools/dea_tools/app/deacoastlines  _modules/dea_tools/app/deacoastlines
-notebooks/Tools/dea_tools/app/imageexport  _modules/dea_tools/app/imageexport
-notebooks/Tools/dea_tools/app/__init__  _modules/dea_tools/app/__init__
-notebooks/Tools/dea_tools/app/miningrehab  _modules/dea_tools/app/miningrehab
+notebooks/Tools/dea_tools/climate         _modules/dea_tools/climate
+notebooks/Tools/dea_tools/coastal         _modules/dea_tools/coastal
+notebooks/Tools/dea_tools/dask            _modules/dea_tools/dask
+notebooks/Tools/dea_tools/datahandling    _modules/dea_tools/datahandling
+notebooks/Tools/dea_tools/__init__        _modules/dea_tools/__init__
+notebooks/Tools/dea_tools/landcover       _modules/dea_tools/landcover
+notebooks/Tools/dea_tools/__main__        _modules/dea_tools/__main__
+notebooks/Tools/dea_tools/maps            _modules/dea_tools/maps
+notebooks/Tools/dea_tools/plotting        _modules/dea_tools/plotting
+notebooks/Tools/dea_tools/pyfes_model     _modules/dea_tools/pyfes_model
+notebooks/Tools/dea_tools/spatial         _modules/dea_tools/spatial
+notebooks/Tools/dea_tools/temporal        _modules/dea_tools/temporal
+notebooks/Tools/dea_tools/validation      _modules/dea_tools/validation
+notebooks/Tools/dea_tools/waterbodies     _modules/dea_tools/waterbodies
+notebooks/Tools/dea_tools/wetlands        _modules/dea_tools/wetlands
+
+notebooks/Tools/dea_tools/app/animations          _modules/dea_tools/app/animations
+notebooks/Tools/dea_tools/app/changefilmstrips    _modules/dea_tools/app/changefilmstrips
+notebooks/Tools/dea_tools/app/crophealth          _modules/dea_tools/app/crophealth
+notebooks/Tools/dea_tools/app/deacoastlines       _modules/dea_tools/app/deacoastlines
+notebooks/Tools/dea_tools/app/imageexport         _modules/dea_tools/app/imageexport
+notebooks/Tools/dea_tools/app/__init__            _modules/dea_tools/app/__init__
+notebooks/Tools/dea_tools/app/miningrehab         _modules/dea_tools/app/miningrehab
 notebooks/Tools/dea_tools/app/widgetconstructors  _modules/dea_tools/app/widgetconstructors
 
