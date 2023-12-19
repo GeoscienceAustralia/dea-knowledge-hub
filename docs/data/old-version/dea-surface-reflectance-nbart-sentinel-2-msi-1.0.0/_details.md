@@ -1,5 +1,9 @@
 ## Background
 
+This product is deprecated and is superseded by these products: 
+* [DEA Surface Reflectance NBART (Sentinel-2A MSI)](/data/product/dea-surface-reflectance-nbart-sentinel-2a-msi/) 
+* [DEA Surface Reflectance NBART (Sentinel-2B MSI)](/data/product/dea-surface-reflectance-nbart-sentinel-2b-msi/).
+
 The light reflected from the Earth’s surface (surface reflectance) is important for monitoring environmental resources – such as agricultural production and mining activities – over time.
 
 We need to make accurate comparisons of imagery acquired at different times, seasons and geographic locations. However, inconsistencies can arise due to variations in atmospheric conditions, sun position, sensor view angle, surface slope and surface aspect. These need to be reduced or removed to ensure the data is consistent and can be compared over time.
@@ -19,7 +23,6 @@ These products also indicate where the imagery has been affected by cloud or clo
 This product eliminates pre-processing requirements for a wide range of land and coastal monitoring applications and renders more accurate results from analyses, particularly those utilising time series data.
 
 Such applications include various forms of change detection, including:
-
 * monitoring of urban growth, coastal habitats, mining activities, and agricultural production
 * compliance surveys
 * scientific research emergency management
@@ -39,12 +42,9 @@ No data values and pixels that were determined as not view-able in NBART product
 ## Processing steps
 
 1. Extract metadata from data sources
-
-1. Calculate sun and sensor angles per pixel (Vincenty, 1975; Edberg and Oliver, 2013)
-
-1. Determine values for six base atmospheric parameters across each image scene
-
-1. Derive normalised surface reflectance for sun angle of 45°
+2. Calculate sun and sensor angles per pixel (Vincenty, 1975; Edberg and Oliver, 2013)
+3. Determine values for six base atmospheric parameters across each image scene
+4. Derive normalised surface reflectance for sun angle of 45°
 
 % ## Software
 

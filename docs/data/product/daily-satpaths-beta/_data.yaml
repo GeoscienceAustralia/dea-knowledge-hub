@@ -1,6 +1,6 @@
 # Overview
 
-title: Daily SatPaths (beta)
+title: Daily SatPaths (Provisional)
 long_title: Geoscience Australia's predictive schedules for public good satellites over Australia
 header_image: /_files/cmi/SatPaths_image.png
 version: 1.0.3-beta
@@ -12,7 +12,7 @@ spatial_data_type: Raster
 time_span:
   start: 31 Jan 2021
   end: 31 Jan 2025
-update_frequency: As needed
+update_frequency: Daily
 next_update: null
 product_ids: null
 
@@ -22,7 +22,7 @@ parent_products:
 collection:
   name: null
   link: null
-doi: null
+doi: 10.26186/146512
 ecat: null
 nci:
   name: null
