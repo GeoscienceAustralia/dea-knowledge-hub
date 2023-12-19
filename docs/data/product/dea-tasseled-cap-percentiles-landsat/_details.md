@@ -1,6 +1,6 @@
 ## Background
 
-The Tasseled Cap (Kauth-Thomas) transformation takes satellite imagery and shows the degree of greeness, wetness and brightness across the observed area. These indexes help users understand the combinations of vegetation, water and bare areas respectively. As such the Tasseled Cap is a useful input into environmental analyses, especially where there are mixtures of all three features in the landscape, such as in wetlands.
+The Tasseled Cap (Kauth&ndash;Thomas) transformation takes satellite imagery and shows the degree of greeness, wetness and brightness across the observed area. These indexes help users understand the combinations of vegetation, water and bare areas respectively. As such the Tasseled Cap is a useful input into environmental analyses, especially where there are mixtures of all three features in the landscape, such as in wetlands.
 
 ## What this product offers
 
@@ -15,14 +15,15 @@ Tasseled Cap percentiles are created by bringing together all individual satelli
 ## Applications
 
 This product provides valuable discrimination for characterising: 
-* vegetated wetlands 
-* salt flats
-* salt lakes 
-* coastal land cover classes
+
+* Vegetated wetlands 
+* Salt flats
+* Salt lakes 
+* Coastal land cover classes
 
 ## Technical information
 
-The Tasseled Cap (Kauth-Thomas) transform translates the six spectral bands of Landsat into a three indexes describing greeness, wetness and brightness.  These indexes can be used to help understand complex ecosystems, such as wetlands or groundwater dependent ecosystems. The Tasseled Cap Percentiles capture how the greeness, wetness and brightness of the landscape behaves over time. 
+The Tasseled Cap (Kauth&ndash;Thomas) transform translates the six spectral bands of Landsat into a three indexes describing greeness, wetness and brightness.  These indexes can be used to help understand complex ecosystems, such as wetlands or groundwater dependent ecosystems. The Tasseled Cap Percentiles capture how the greeness, wetness and brightness of the landscape behaves over time. 
 
 The percentiles are well suited to characterising wetlands, salt flats/salt lakes and coastal ecosystems. However, care should be applied when analysing these indexes, as soil colour and fire scars can cause misleading results. In areas of high relief caused by cliffs or steep terrain, terrain shadows can cause false positives. 
 
