@@ -1,6 +1,7 @@
 ## Background
 
 This product has been deprecated, and has not been produced in DEA Sentinel Collection 3. See: 
+
 * [DEA Surface Reflectance (Sentinel-2A MSI)](/data/product/dea-surface-reflectance-sentinel-2a-msi/) 
 * [DEA Surface Reflectance (Sentinel-2B MSI)](/data/product/dea-surface-reflectance-sentinel-2b-msi/)
 
@@ -23,9 +24,10 @@ These products also indicate where the imagery has been affected by cloud or clo
 This product eliminates pre-processing requirements for a wide range of land and coastal monitoring applications and renders more accurate results from analyses, particularly those utilising time series data.
 
 Such applications include various forms of change detection, including:
-* monitoring of urban growth, coastal habitats, mining activities, and agricultural production
-* compliance surveys
-* scientific research emergency management
+
+* Monitoring of urban growth, coastal habitats, mining activities, and agricultural production
+* Compliance surveys
+* Scientific research emergency management
 
 ## Technical information
 
