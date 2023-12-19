@@ -4,7 +4,7 @@ title: DEA Cloud and Cloud Shadow Mask (Sentinel-2 MSI)
 long_title: Time Series Sentinel-2 Cloud and Cloud Shadow Mask
 header_image: null
 version: 1.0.0
-is_latest_version: false
+is_latest_version: true
 latest_version_link: /data/category/dea-surface-reflectance/
 is_provisional: false
 product_type: Derivative
