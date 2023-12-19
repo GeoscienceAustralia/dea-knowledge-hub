@@ -38,19 +38,21 @@ The Dynamic Land Cover Dataset uses a standard land cover classification to show
 
 The current release of the second version DLCDv2.1 (described in this document) presents land cover information for every 250m by 250m area of the country for each of the two year intervals listed in the table below. It consists of maps based on 2 years of MODIS EVI time-series data. The date ranges for each of the map series are:
 
-* January 2002 &ndash; December 2003
-* January 2003 &ndash; December 2004
-* January 2004 &ndash; December 2005
-* January 2005 &ndash; December 2006
-* January 2006 &ndash; December 2007
-* January 2007 &ndash; December 2008
-* January 2008 &ndash; December 2009
-* January 2009 &ndash; December 2010
-* January 2010 &ndash; December 2011
-* January 2011 &ndash; December 2012
-* January 2012 &ndash; December 2013
-* January 2013 &ndash; December 2014
-* January 2014 &ndash; December 2015
+:::{dropdown} Date ranges for each of the map series
+* Jan 2002&ndash;Dec 2003
+* Jan 2003&ndash;Dec 2004
+* Jan 2004&ndash;Dec 2005
+* Jan 2005&ndash;Dec 2006
+* Jan 2006&ndash;Dec 2007
+* Jan 2007&ndash;Dec 2008
+* Jan 2008&ndash;Dec 2009
+* Jan 2009&ndash;Dec 2010
+* Jan 2010&ndash;Dec 2011
+* Jan 2011&ndash;Dec 2012
+* Jan 2012&ndash;Dec 2013
+* Jan 2013&ndash;Dec 2014
+* Jan 2014&ndash;Dec 2015
+:::
 
 In conjunction with other data sources, the DLCD can be used to identify emerging patterns of land cover change and provide a spatial and historical context within which to interpret change.
 
