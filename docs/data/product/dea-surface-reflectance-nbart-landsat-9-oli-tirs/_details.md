@@ -1,6 +1,6 @@
 ## Background
 
-:::{admonition} This is a sub-product
+:::{admonition} Sub-product
 :class: note
 This is a sub-product of [DEA Surface Reflectance (Landsat 9)](/data/product/dea-surface-reflectance-landsat-9-oli-tirs). See the parent product for more information.
 :::

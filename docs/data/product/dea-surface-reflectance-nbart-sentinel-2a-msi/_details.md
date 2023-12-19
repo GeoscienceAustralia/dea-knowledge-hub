@@ -1,6 +1,6 @@
 ## Background
 
-:::{admonition} This is a sub-product
+:::{admonition} Sub-product
 :class: note
 This is a sub-product of [DEA Surface Reflectance (Sentinel-2A MSI)](/data/product/dea-surface-reflectance-sentinel-2a-msi). See the parent product for more information.
 :::
