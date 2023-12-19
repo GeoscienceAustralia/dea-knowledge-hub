@@ -1,7 +1,5 @@
 ## Background
 
-This product has been deprecated and is superseded by this product: [DEA Fractional Cover (Landsat)](/data/product/dea-fractional-cover-landsat/)
-
 Fractional cover data can be used to identify large scale patterns and trends and inform evidence based decision making and policy on topics including wind and water erosion risk, soil carbon dynamics, land management practices and rangeland condition.
 
 This information is used by policy agencies, natural and agricultural land resource managers, and scientists to monitor land conditions over large areas over long time frames.
@@ -9,9 +7,10 @@ This information is used by policy agencies, natural and agricultural land resou
 ## What this product offers
 
 Fractional Cover (FC), developed by the Joint Remote Sensing Research Program, is a measurement that splits the landscape into three parts, or fractions:
-* green (leaves, grass, and growing crops)
-* brown (branches, dry grass or hay, and dead leaf litter)
-* bare ground (soil or rock)
+
+* Green (leaves, grass, and growing crops)
+* Brown (branches, dry grass or hay, and dead leaf litter)
+* Bare ground (soil or rock)
 
 DEA uses Fractional Cover to characterise every 25 m square of Australia for any point in time from 1987 to today.
 
@@ -20,13 +19,14 @@ DEA uses Fractional Cover to characterise every 25 m square of Australia for any
 ## Applications
 
 Fractional cover provides valuable information for a range of environmental and agricultural applications, including:
-* soil erosion monitoring
-* land surface process modelling
-* land management practices (e.g. crop rotation, stubble management, rangeland management)
-* vegetation studies
-* fuel load estimation
-* ecosystem modelling
-* land cover mapping
+
+* Soil erosion monitoring
+* Land surface process modelling
+* Land management practices (e.g. crop rotation, stubble management, rangeland management)
+* Vegetation studies
+* Fuel load estimation
+* Ecosystem modelling
+* Land cover mapping
 
 ## Technical information
 
