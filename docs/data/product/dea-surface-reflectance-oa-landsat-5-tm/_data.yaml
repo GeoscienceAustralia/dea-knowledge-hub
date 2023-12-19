@@ -13,6 +13,7 @@ time_span:
   start: 16/08/1986
   end: 17/11/2011
 update_frequency: Daily
+next_update: null
 product_ids:
   - ga_ls5t_ard_3
 

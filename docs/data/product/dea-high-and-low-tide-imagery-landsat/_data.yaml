@@ -13,6 +13,7 @@ time_span:
   start: 1995
   end: 2017
 update_frequency: As needed
+next_update: null
 product_ids:
   - high_tide_comp_20p
   - low_tide_comp_20p

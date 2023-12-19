@@ -65,6 +65,9 @@
       :Ends at: {{ data.time_span.end }}
       {%- endif %}
       :Update frequency: {{ data.update_frequency }}
+      {%- if data.next_update %}
+      :Next update: {{ data.next_update }}
+      {%- endif %}
       {%- if valid_product_ids %}
       :{{ product_ids_label }}: {{ valid_product_ids | join(", ") }}
       {%- endif %}
@@ -88,13 +91,6 @@
       :class: note
 
       This is a `Provisional product </guides/reference/dataset_maturity_guide/>`_ meaning it has not been finalised for released and may not yet have passed our quality control.
-
-   {% endif %}
-   {% if data.is_concluded %}
-   .. admonition:: Concluded data
-      :class: tip
-
-      This product concluded on **{{ data.time_span.end }}** meaning that the data won't be updated past this date.
 
    {% endif %}
 

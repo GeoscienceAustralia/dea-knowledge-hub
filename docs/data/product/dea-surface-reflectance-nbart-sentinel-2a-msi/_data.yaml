@@ -13,6 +13,7 @@ time_span:
   start: 12/07/2015
   end: present
 update_frequency: Daily
+next_update: null
 product_ids:
   - ga_s2am_ard_3
 

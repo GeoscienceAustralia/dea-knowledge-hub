@@ -13,6 +13,7 @@ time_span:
   start: 31 Aug 2021
   end: 1 Sep 2025
 update_frequency: As needed
+next_update: null
 product_ids: null
 
 parent_products:

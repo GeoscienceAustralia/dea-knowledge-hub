@@ -13,6 +13,7 @@ time_span:
   start: 1987
   end: 2022
 update_frequency: Annually
+next_update: null
 product_ids:
   - ga_ls_mangrove_cover_cyear_3
 

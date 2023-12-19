@@ -13,6 +13,7 @@ time_span:
   start: 1986
   end: present
 update_frequency: Periodically
+next_update: null
 product_ids:
   - ga_ls_wo_fq_apr_oct_3
   - ga_ls_wo_fq_nov_mar_3

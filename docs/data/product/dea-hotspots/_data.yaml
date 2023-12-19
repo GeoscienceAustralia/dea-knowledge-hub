@@ -13,6 +13,7 @@ time_span:
   start: 27/08/2002
   end: present
 update_frequency: 10 minutes
+next_update: null
 product_ids: null
 
 parent_products:

@@ -13,6 +13,7 @@ time_span:
   start: null
   end: null
 update_frequency: Deprecated
+next_update: null
 product_ids:
   - ls5_fc_albers
   - ls7_fc_albers

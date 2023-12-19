@@ -13,6 +13,7 @@ time_span:
   start: 31/10/2021
   end: present
 update_frequency: Daily
+next_update: null
 product_ids:
   - ga_ls9c_ard_3
 
