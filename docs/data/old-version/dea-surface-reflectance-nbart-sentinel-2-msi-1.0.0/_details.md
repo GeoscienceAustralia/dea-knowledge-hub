@@ -1,8 +1,9 @@
 ## Background
 
 This product is deprecated and is superseded by these products: 
+
 * [DEA Surface Reflectance NBART (Sentinel-2A MSI)](/data/product/dea-surface-reflectance-nbart-sentinel-2a-msi/) 
-* [DEA Surface Reflectance NBART (Sentinel-2B MSI)](/data/product/dea-surface-reflectance-nbart-sentinel-2b-msi/).
+* [DEA Surface Reflectance NBART (Sentinel-2B MSI)](/data/product/dea-surface-reflectance-nbart-sentinel-2b-msi/)
 
 The light reflected from the Earth’s surface (surface reflectance) is important for monitoring environmental resources – such as agricultural production and mining activities – over time.
 
@@ -23,9 +24,10 @@ These products also indicate where the imagery has been affected by cloud or clo
 This product eliminates pre-processing requirements for a wide range of land and coastal monitoring applications and renders more accurate results from analyses, particularly those utilising time series data.
 
 Such applications include various forms of change detection, including:
-* monitoring of urban growth, coastal habitats, mining activities, and agricultural production
-* compliance surveys
-* scientific research emergency management
+
+* Monitoring of urban growth, coastal habitats, mining activities, and agricultural production
+* Compliance surveys
+* Scientific research emergency management
 
 ## Technical information
 
