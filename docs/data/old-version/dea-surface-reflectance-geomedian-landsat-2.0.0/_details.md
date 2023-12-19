@@ -1,7 +1,5 @@
 ## Background
 
-This product has been deprecated and is superseded by this product: [DEA Geometric Median and Median Absolute Deviation (Landsat)](https://cmi.ga.gov.au/data-products/dea/645/dea-geometric-median-and-median-absolute-deviation-landsat).
-
 When deriving information from satellite images it is often valuable to see how an area usually looks rather than how it was viewed at a single point in time.
 
 When working with single time point images, there can be intermittent changes which aren’t representative of a ‘normal’ state for that area. These changes can occur due to natural variations in the landscape (browning of grass in winter, floods), land management practices (harvesting, tilling) or lack of visibility (clouds, smoke).
@@ -41,13 +39,24 @@ The geomedian (Roberts et al 2017) is used in preference to the mean, as the mea
 
 The input data used to calculate the geomedian are filtered to remove poor quality observations including cloud, cloud shadow, band saturation (of any band) using the Pixel Quality Assessment (PQA) product. To account for satellite availability and status the statistics are calculated using the following satellites/sensors for the following periods of time:
 
-* 1988-1999 : Landsat 5
-* 2000-2003 : Landsat 7
-* 2004-2007 : Landsat 5 and Landsat 7 (as separate geomedian products)
-* 2008: Landsat 7
-* 2009-2011: Landsat 5 and Landsat 7 (as separate geomedian products)
-* 2012 : Landsat 7
-* 2013 onward : Landsat 7 and Landsat 8 (as separate geomedian products)
+:::{list-table}
+
+* - **1988&ndash;1999**
+  - Landsat 5
+* - **2000&ndash;2003**
+  - Landsat 7
+* - **2004&ndash;2007**
+  - Landsat 5 and Landsat 7 (as separate geomedian products)
+* - **2008**
+  - Landsat 7
+* - **2009&ndash;2011**
+  - Landsat 5 and Landsat 7 (as separate geomedian products)
+* - **2012**
+  - Landsat 7
+* - **2013 onward**
+  - Landsat 7 and Landsat 8 (as separate geomedian products)
+
+:::
 
 The geomedian is a synthetic value as opposed to an actual observation, and is the high dimensional median of all reflectance bands of the source dataset for each year. A pixel composite mosaic created by producing images of geomedian pixels provides a representation of the median condition of the the earth for the area of observation for the time period over which the median was computed.
 
