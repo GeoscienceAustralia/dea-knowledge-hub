@@ -1,6 +1,7 @@
 ## Background
 
-This product has been deprecated and is superseded by these products:  
+This product has been deprecated and is superseded by these products:
+
 * [DEA Surface Reflectance NBAR (Landsat 5 TM)](/data/product/dea-surface-reflectance-nbar-landsat-5-tm/)
 * [DEA Surface Reflectance NBAR (Landsat 7 ETM+)](/data/product/dea-surface-reflectance-nbar-landsat-7-etm/)
 * [DEA Surface Reflectance NBAR (Landsat 8 OLI-TIRS)](/data/product/dea-surface-reflectance-nbar-landsat-8-oli-tirs/)
@@ -24,9 +25,10 @@ The Surface Reflectance products are useful as a fundamental starting point for 
 This product eliminates pre-processing requirements for a wide range of land and coastal monitoring applications and renders more accurate results from analyses, particularly those utilising time series data.
 
 Such applications include various forms of change detection, including:
-* monitoring of urban growth, coastal habitats, mining activities, and agricultural production
-* compliance surveys
-* scientific research emergency management
+
+* Monitoring of urban growth, coastal habitats, mining activities, and agricultural production
+* Compliance surveys
+* Scientific research emergency management
 
 ## Technical information
 
@@ -64,15 +66,15 @@ Given the growing time series of EO imagery, this landmark facility will streaml
 ## Processing steps
 
 1. Extract metadata from data sources
-2. Calculate sun and sensor angles per pixel (Vincenty, 1975; Edberg and Oliver, 2013)
-3. Determine values for six base atmospheric parameters across each image scene
-  * Divide scene into quarters and select the nine unique points which form the corners of these quadrants
-  * Compute the six parameters across optical spectrum at each of the nine points using a Radiative Transfer Model (Modtran5) and atmospheric state data
-  * Accumulate values for the six parameters at each of the nine points to correspond to Landsat bands using Landsat spectral response function
-  * Interpolate accumulated values for the six parameters across image scene using the bilinear method.
-4. Derive normalised surface reflectance for sun angle of 45°
+1. Calculate sun and sensor angles per pixel (Vincenty, 1975; Edberg and Oliver, 2013)
+1. Determine values for six base atmospheric parameters across each image scene
+    * Divide scene into quarters and select the nine unique points which form the corners of these quadrants
+    * Compute the six parameters across optical spectrum at each of the nine points using a Radiative Transfer Model (Modtran5) and atmospheric state data
+    * Accumulate values for the six parameters at each of the nine points to correspond to Landsat bands using Landsat spectral response function
+    * Interpolate accumulated values for the six parameters across image scene using the bilinear method.
+1. Derive normalised surface reflectance for sun angle of 45°
 Use interpolated, accumulated values for the six base atmospheric parameters to compute the atmospheric and BRDF correction for each pixel and output the normalised surface reflectance for sun angle of 45°.
-5. Ortho-processing using DSM
+1. Ortho-processing using DSM
 
 % ## Software
 
