@@ -1,6 +1,6 @@
 ## Background
 
-Every day more than a dozen foreign-operated, public-good, non-commercial, medium to low resolution satellites fly over Australia and its territories. They cross the continent several times a day and their sensors capture images of the land and coastal waters.  
+Every day more than a dozen foreign-operated, public-good, non-commercial, medium to low resolution satellites fly over Australia and its territories. They cross the continent several times a day and their sensors capture images of the land and coastal waters.
 
 Satellite overpass schedules for each spacecraft are predictable and can be calculated with a degree of accuracy. The Daily SatPaths provides information on which satellite sensors have and will potentially acquire data over Australia during a given date and time interval. It is important to note that actual acquisition schedules may differ from those presented in Daily SatPaths due the operational limitations of the satellite.
 
@@ -18,9 +18,9 @@ The flight path schedules and sensor specific footprints can be downloaded in a 
 
 The information helps to answer three basic questions:
 
-* what satellites are flying over Australia on a particular day, where and at what time?
-* which satellite sensors will potentially acquire data over an area of specific interest?; and
-* which ground stations in the Australian National Ground Segment Technical Team [ANGSTT network](https://angstt.gov.au/) those satellites are visible from, hence which of those stations could potentially downlink the data?
+* What satellites are flying over Australia on a particular day, where and at what time?
+* Which satellite sensors will potentially acquire data over an area of specific interest?
+* Which ground stations in the Australian National Ground Segment Technical Team [ANGSTT network](https://angstt.gov.au/) those satellites are visible from, hence which of those stations could potentially downlink the data?
 
 ## Technical information
 
