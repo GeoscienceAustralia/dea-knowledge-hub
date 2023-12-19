@@ -9,7 +9,7 @@ This product takes Landsat 8 imagery captured over the Australian continent and 
 % ## Data description
 
 ## Applications
-* 
+
 * The development of derivative products to monitor inland waterways and coastal features, such as:
 * coastal habitats
 * water quality
