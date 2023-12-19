@@ -23,9 +23,9 @@ Ground Control Points from the AGRI have fed into satellite image processing sys
 
 Similarly, commercial satellite operators are understood to have used the AGRI to improve their product quality.
 
-Reference image &mdash; image to image rectification, image chip source, quality control layer
+Reference image &mdash; image to image rectification, image chip source, quality control layer.
 
-Basemap &mdash; feature revision and verification, reference layer
+Basemap &mdash; feature revision and verification, reference layer.
 
 ## Technical information
 
