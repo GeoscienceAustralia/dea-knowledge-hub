@@ -1,6 +1,7 @@
 ## Background
 
 This product has been deprecated and is superseded by these products:
+
 * [DEA Surface Reflectance OA (Landsat 5 TM)](/data/product/dea-surface-reflectance-oa-landsat-5-tm/)
 * [DEA Surface Reflectance OA (Landsat 7 ETM+)](/data/product/dea-surface-reflectance-oa-landsat-7-etm/)
 * [DEA Surface Reflectance OA (Landsat 8 OLI-TIRS)](/data/product/dea-surface-reflectance-oa-landsat-8-oli-tirs/)
@@ -15,12 +16,15 @@ This product is a count of how many times a pixel contains a clear observation o
 
 It is available for the following epochs:
 
-* **PQ-COUNT-SUMMARY**  
- Contains a count of all observations contained within the DEA (from 1987 to the most up to date imagery available)
-* **PQ-COUNT-ANNUAL-SUMMARY**  
- Contains a count of the number of observations acquired in each full calendar year (1st of January - 31st December) from 1987 to the most recent full calendar year
-* **PQ-COUNT-SEASONAL-SUMMARY**  
- Contains a count of the number of observations acquired within each calendar season (DJF, MAM, JJA, SON). This product is available for the most recent 8 seasons
+:::{list-table}
+
+* - **PQ-COUNT-SUMMARY**
+  - Contains a count of all observations contained within the DEA (from 1987 to the most up to date imagery available).
+* - **PQ-COUNT-ANNUAL-SUMMARY**
+  - Contains a count of the number of observations acquired in each full calendar year (1st of January - 31st December) from 1987 to the most recent full calendar year.
+* - **PQ-COUNT-SEASONAL-SUMMARY**
+  - Contains a count of the number of observations acquired within each calendar season (DJF, MAM, JJA, SON). This product is available for the most recent 8 seasons.
+:::
 
 % ## Data description
 
