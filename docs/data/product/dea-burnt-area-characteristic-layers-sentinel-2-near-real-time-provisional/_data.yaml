@@ -16,6 +16,7 @@ product_ids:
 is_latest_version: true
 latest_version_link: null
 is_provisional: true
+is_concluded: true
 
 parent_products:
   name: Sentinel 2A and 2B NBART and Observational Attributes
