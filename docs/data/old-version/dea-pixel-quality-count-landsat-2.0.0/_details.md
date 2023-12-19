@@ -1,5 +1,10 @@
 ## Background
 
+This product has been deprecated and is superseded by these products:
+* [DEA Surface Reflectance OA (Landsat 5 TM)](/data/product/dea-surface-reflectance-oa-landsat-5-tm/)
+* [DEA Surface Reflectance OA (Landsat 7 ETM+)](/data/product/dea-surface-reflectance-oa-landsat-7-etm/)
+* [DEA Surface Reflectance OA (Landsat 8 OLI-TIRS)](/data/product/dea-surface-reflectance-oa-landsat-8-oli-tirs/)
+
 We need to be able to exclude cloud and cloud shadow affected observations from analyses of optical Earth observation data.
 
 Historically this has been done via the user selecting 'cloud free' images as input for their analysis. However, manual selection of cloud free scenes is neither timely nor practical for large scale automated analysis at continental or 'whole of archive' scale. This necessitates the use of per pixel information about whether the observation is 'clear'; i.e. free of cloud, cloud shadow and sensor saturation, and contains information for all bands.
@@ -39,12 +44,11 @@ The observation density of the Landsat archive is impacted by a range of factors
 
 The number of 'clear' surface observations is further impacted by biophysical factors (cloud, cloud shadow). For users performing multi-temporal analysis such as time series analysis, best available pixel compositing or multi-temporal statistics, analyses are all constrained by the number of cloud free surface observations available for a particular epoch/location of interest.
 
-#### Features
+### Features
 
 This product is designed to inform users about the number of cloud/cloud shadow free observations of the Earth's surface that are available for their particular location/epoch of interest.
 
 This product shows the influence on observation density of the following:
-
 * the 'side lap' between adjacent paths of Landsat imagery, where the observation density in the 'side lap' is approximately double that for the middle of the path
 * the impact of regional cloud patterns - with lower observation densities occurring in the wet tropics and temperate zones
 * the impact of errors of omission and commission in the cloud/cloud shadow screening algorithms (where certain surface targets are erroneously flagged as clouds, or where clouds and shadows have not been flagged)
