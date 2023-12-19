@@ -1,7 +1,5 @@
 ## Background
 
-This product has been deprecated and is superseded by this product: [DEA Water Observations Statistics (Landsat)](https://cmi.ga.gov.au/data-products/dea/686/dea-water-observations-statistics-landsat)
-
 The Water Observations from Space Filtered Statistics (WO-FILT-STATS) is the 'cleaned' version of the WOfS Statistics product (WO-STATS).
 
 WO-STATS takes the full, ongoing archive of all Water Observation Feature Layers (WOFLs) and combines them into a single product summary showing how often surface water was observed by the Landsat satellites from 1986 to the present.
@@ -12,8 +10,8 @@ WO-FILT-STATS goes further, comparing WO\_STATS with other national surface wate
 
 WO-FILT-STATS consists of:
 
-* a **Confidence layer** that compares the WO-STATS water summary to other national water datasets.
-* a **Filtered Water Summary** which uses the Confidence to mask areas of the WO-STATS water summary where Confidence is low. The Filtered Water Summary provides the long term understanding of the recurrence of water in the landscape, with much of the noise due to misclassification filtered out. Even though confidence filtering is applied to the Filtered Water Summary, some cloud and shadow, and sensor noise does persist.
+* A **Confidence layer** that compares the WO-STATS water summary to other national water datasets.
+* A **Filtered Water Summary** which uses the Confidence to mask areas of the WO-STATS water summary where Confidence is low. The Filtered Water Summary provides the long term understanding of the recurrence of water in the landscape, with much of the noise due to misclassification filtered out. Even though confidence filtering is applied to the Filtered Water Summary, some cloud and shadow, and sensor noise does persist.
 
 % ## Data description
 
