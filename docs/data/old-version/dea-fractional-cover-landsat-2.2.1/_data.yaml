@@ -1,17 +1,19 @@
 # Overview
 
-title: DEA Fractional Cover (Landsat, DEPRECATED)
+title: DEA Fractional Cover (Landsat)
 long_title: Fractional Cover 25m 2.2.1 - This product is deprecated and the data no longer available
 header_image: /_files/cmi/FractionalCover1.jpg
 version: 2.2.1
 is_latest_version: false
 latest_version_link: /data/product/dea-fractional-cover-landsat/
+is_provisional: false
 product_type: Derivative
 spatial_data_type: Raster
 time_span:
   start: null
   end: null
 update_frequency: Deprecated
+next_update: null
 product_ids:
   - ls5_fc_albers
   - ls7_fc_albers

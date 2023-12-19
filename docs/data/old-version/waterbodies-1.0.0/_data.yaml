@@ -1,17 +1,19 @@
 # Overview
 
-title: DEA Waterbodies (Landsat, DEPRECATED)
+title: DEA Waterbodies (Landsat)
 long_title: Digital Earth Australia Waterbodies - This product is deprecated
 header_image: /_files/cmi/waterbodies.jpg
 version: 1.0.0
 is_latest_version: false
 latest_version_link: /data/product/dea-waterbodies-landsat/
+is_provisional: false
 product_type: Derivative
 spatial_data_type: Raster
 time_span:
   start: null
   end: null
 update_frequency: Monthly
+next_update: null
 product_ids: null
 
 parent_products:

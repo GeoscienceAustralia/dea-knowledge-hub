@@ -1,17 +1,19 @@
 # Overview
 
-title: DEA Surface Reflectance Geomedian (Landsat, DEPRECATED)
+title: DEA Surface Reflectance Geomedian (Landsat)
 long_title: Surface Reflectance 25m Geomedian 2.0.0 - This product is deprecated and the data no longer available
 header_image: /_files/cmi/geomedian_banner.jpg
 version: 2.0.0
 is_latest_version: false
 latest_version_link: /data/product/dea-geometric-median-and-median-absolute-deviation-landsat/
+is_provisional: false
 product_type: Derivative
 spatial_data_type: Raster
 time_span:
   start: null
   end: null
 update_frequency: Annually
+next_update: null
 product_ids: null
 
 parent_products:

@@ -6,12 +6,14 @@ header_image: null
 version: 1.0.0
 is_latest_version: false
 latest_version_link: /data/category/dea-surface-reflectance/
+is_provisional: false
 product_type: Derivative
 spatial_data_type: Raster
 time_span:
   start: null
   end: null
 update_frequency: As needed
+next_update: null
 product_ids: null
 
 parent_products:

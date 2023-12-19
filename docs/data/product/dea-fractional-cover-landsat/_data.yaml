@@ -12,6 +12,7 @@ time_span:
   start: 16/08/1986
   end: present
 update_frequency: Daily
+next_update: null
 product_ids:
   - ga_ls_fc_3
 

@@ -1,7 +1,5 @@
 ## Background
 
-This product is tagged [**"Provisional"**](https://docs.dea.ga.gov.au/guides/reference/dataset_maturity_guide/), indicating it has not yet been finalised for release and/or has not passed DEA's final quality checks. 
-
 This product is the latest available version of this product, however it is no longer being updated as of 29 August 2023.
 
 Bushfires pose a serious and increasing threat to Australia. The detection and mapping of burns has many applications to support management of areas impacted by fire. The identification of bushfire burn using Earth Observation is often manual, can come with a significant time delay, and only available at a relatively small scale. This product offers provisional and preliminary change detection using same day satellite data to automatically and rapidly identify burn characteristics. 

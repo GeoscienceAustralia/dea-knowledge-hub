@@ -6,12 +6,14 @@ header_image: /_files/cmi/thumbnail_vertical.png
 version: 2.1.0
 is_latest_version: true
 latest_version_link: null
+is_provisional: false
 product_type: Derivative
 spatial_data_type: Vector
 time_span:
   start: 1988
   end: 2022
 update_frequency: Annually
+next_update: null
 product_ids: null
 
 parent_products:

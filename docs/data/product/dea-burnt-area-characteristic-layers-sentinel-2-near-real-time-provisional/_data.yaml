@@ -1,17 +1,19 @@
 # Overview
 
-title: DEA Burnt Area Characteristic Layers Sentinel-2 Near Real-Time (Provisional)
-long_title: Geoscience Australia Burnt Area Characteristic Layers Sentinel-2 Near Real-Time (Provisional)
+title: DEA Burnt Area Characteristic Layers Sentinel-2 Near Real-Time
+long_title: Geoscience Australia Burnt Area Characteristic Layers Sentinel-2 Near Real-Time
 header_image: null
 version: 1.0.0
 is_latest_version: true
 latest_version_link: null
+is_provisional: true
 product_type: Derivative
 spatial_data_type: Raster
 time_span:
   start: 1/07/2021
   end: 29/08/2023
 update_frequency: Daily
+next_update: null
 product_ids:
   - ga_s2_ba_provisional_3
 

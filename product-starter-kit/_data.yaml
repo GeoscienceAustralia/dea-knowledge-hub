@@ -4,8 +4,6 @@ title: Your title
 long_title: null
 header_image: /_files/subfolder/image.png
 version: 0.0.0
-is_latest_version: true
-latest_version_link: null
 product_type: null
 spatial_data_type: null
 time_span:
@@ -13,6 +11,10 @@ time_span:
   end: null
 update_frequency: null
 product_ids: null # List
+
+is_latest_version: true
+latest_version_link: null
+is_provisional: false
 
 parent_products:
   name: null

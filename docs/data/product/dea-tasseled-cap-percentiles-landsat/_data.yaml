@@ -6,12 +6,14 @@ header_image: /_files/cmi/TCWpercentiles.png
 version: 3.0.0
 is_latest_version: true
 latest_version_link: null
+is_provisional: true
 product_type: Derivative
 spatial_data_type: Raster
 time_span:
   start: 1987
   end: 2022
 update_frequency: Annually
+next_update: null
 product_ids:
   - ga_ls_tc_pc_cyear_3
   - ga_ls_tc_pc_fyear_3
