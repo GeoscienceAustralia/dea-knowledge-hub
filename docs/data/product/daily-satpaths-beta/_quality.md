@@ -16,5 +16,3 @@ Flyover schedules are only indicative of potential acquisitions and will differ 
 
 Validation of calculated predictive schedules and ground footprints was based on sample of actual acquisition schedules published by Alice Springs, Murdoch and Hobart ground stations, and actual imagery acquired by Geoscience Australia for the purpose of generation of [DEA Hotspots](https://hotspots.dea.ga.gov.au/) .
 
-See Accuracy and Limitations section above for more limitations.
-

@@ -70,10 +70,8 @@ entries:
                     title: Sentinel-2B Observational Attributes
           - file: data/product/australian-national-spectral-database/index
           - file: data/product/australian-geographic-reference-image/index
-          - file: data/category/satpaths/index
-            entries:
-              - file: data/product/daily-satpaths-beta/index
-              - file: data/product/satpaths-api-beta/index
+          - file: data/product/daily-satpaths-beta/index
+
 
       - caption: Land and Vegetation
         entries:
