@@ -1,7 +1,5 @@
 ## Background
 
-This product is the latest available version of this product, however it is no longer being updated as of 29 August 2023.
-
 Bushfires pose a serious and increasing threat to Australia. The detection and mapping of burns has many applications to support management of areas impacted by fire. The identification of bushfire burn using Earth Observation is often manual, can come with a significant time delay, and only available at a relatively small scale. This product offers provisional and preliminary change detection using same day satellite data to automatically and rapidly identify burn characteristics. 
 
 Knowledge about the potential location and extent of fire helps to understand community and ecosystem impacts, enables directed relief and recovery support, and informs planning of mitigation burning for future fire seasons.
@@ -46,9 +44,17 @@ The baseline image used is the Sentinel-2 ‘Barest Earth’ dataset; a cloud fr
 
 Normalized Burn Ratio (NBR), first published in Wagtendonk et al. (2004), identifies areas that have the characteristics of burnt vegetation. NBR looks at the relationship between near infrared (NIR) and short wave infrared (SWIR) spectral response. Burnt vegetation strongly absorbs light in NIR but not in SWIR. High SWIR reflectance values with low NIR reflectance values are indicative of an area that has been burnt by fire(s), while the opposite trend is seen in healthy vegetation. 
 
-NBR is calculated as: $NBR = \frac{NIR – SWIR2}{NIR + SWIR2}$. 
+NBR is calculated as:
 
-The change (delta) in NBR is calculated as: $\DeltaNBR = baseline_NBR – NRT_NBR$  
+$$
+NBR = \frac{NIR – SWIR2}{NIR + SWIR2}
+$$
+
+The change (delta) in NBR is calculated as:
+
+$$
+\DeltaNBR = baseline_NBR – NRT_NBR
+$$
 
 The delta NBR layer displays values between -1 and +1, with positive value being more indicative that an area has been burnt, colour bar provided below.
 
@@ -58,9 +64,17 @@ The delta NBR layer displays values between -1 and +1, with positive value being
 
 The Bare Soil Index (BSI), first proposed in Rikimaru and Miyatake (2002), identifies soil or bare-land characteristics by combining blue, red, near infrared (NIR), and short wave infrared (SWIR) spectral bands. SWIR and red spectral bands can be used to identify basic soil mineralogy while blue and NIR spectral bands can help to detect vegetation. Fire generally increases the visibility of bare soil by reducing vegetation cover so burnt areas can be expected to have a high BSI signal. 
 
-The Bare Soil Index is calculated as: $BSI = \frac{(SWIR2 + RED) - (NIR + BLUE)}{(SWIR2 + RED) + (NIR + BLUE)}$. 
+The Bare Soil Index is calculated as:
 
-The change (delta) in BSI is calculated as: $\DeltaBSI = \frac{1}{baseline_BSI – NRT_BSI}$.
+$$
+BSI = \frac{(SWIR2 + RED) - (NIR + BLUE)}{(SWIR2 + RED) + (NIR + BLUE)}
+$$
+
+The change (delta) in BSI is calculated as:
+
+$$
+\DeltaBSI = \frac{1}{baseline_BSI – NRT_BSI}
+$$
 
 Delta BSI is multiplied by negative 1 in order to reverse the scaling so that it can be presented the same way as the other delta indexes, which all have positive values for areas that shows characteristics of being burnt. The $\Delta$BSI layer displays values between -1 and +1, with a positive value being more indicative that an area has increased exposure of bare soil. Colour bar provided, below.
 
@@ -70,9 +84,17 @@ Delta BSI is multiplied by negative 1 in order to reverse the scaling so that it
 
 Normalized Difference Vegetation Index (NDVI), first published in Rouse et al. (1974), is used to detect green photosynthetic vegetation characteristics by identifying the difference between red/visible and near infrared (NIR) spectral bands. Fires generally decrease the presence of green vegetation. 
 
-NDVI is calculated as: $NDVI =  \frac{NIR - RED}{NIR + RED}
+NDVI is calculated as:
 
-The change (delta) in NDVI is calculated as: $\DeltaNDVI = baseline_NDVI – NRT_NDVI$
+$$
+NDVI =  \frac{NIR - RED}{NIR + RED}
+$$
+
+The change (delta) in NDVI is calculated as:
+
+$$
+\DeltaNDVI = baseline_NDVI – NRT_NDVI
+$$
 
 The $\Delta$NDVI layer displays values between -1 and +1, with positive values being more indicative that green vegetation in an area has decreased, and therefore showing the characteristics of being burnt.
 
@@ -95,7 +117,7 @@ The following indexes are calculated from both the DEA Sentinel 2 Barest Earth a
 
 The change layers for each index are then calculated in the following way for each index:
 
-* Change(index) = Barest Earth(index) - Near Real-Time(index)
+* $Change(index) = Barest Earth(index) - Near Real-Time(index)$
 
 % ## Processing steps
 

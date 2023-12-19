@@ -10,10 +10,10 @@ is_provisional: true
 product_type: Derivative
 spatial_data_type: Raster
 time_span:
-  start: 1/07/2021
-  end: 29/08/2023
+  start: 1 Jul 2021
+  end: 29 Aug 2023
 update_frequency: Daily
-next_update: null
+next_update: No further updates planned
 product_ids:
   - ga_s2_ba_provisional_3
 
