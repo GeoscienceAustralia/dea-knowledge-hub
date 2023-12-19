@@ -1,6 +1,7 @@
 ## Accuracy
 
 The accuracy of the dataset has been assessed using over 30,000 field sites distributed across all states and territories of Australia. The data was provided by Federal, State and Territory Government agencies and collected over the period 2002 to 2012 including data contributed from these sources:
+
 * Australian Bureau of Agricultural and Resource Economics and Sciences (ABARES) Riverina Plains Data
 * Australian Agricultural and Grazing Industries Survey (AAGIS) 
 * Commonwealth Scientific and Industrial Research Organisation (CSIRO) Colleambally Data
