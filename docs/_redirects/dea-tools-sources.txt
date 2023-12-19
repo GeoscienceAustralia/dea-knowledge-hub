@@ -19,7 +19,6 @@ notebooks/Tools/dea_tools/app/changefilmstrips    _modules/dea_tools/app/changef
 notebooks/Tools/dea_tools/app/crophealth          _modules/dea_tools/app/crophealth
 notebooks/Tools/dea_tools/app/deacoastlines       _modules/dea_tools/app/deacoastlines
 notebooks/Tools/dea_tools/app/imageexport         _modules/dea_tools/app/imageexport
-notebooks/Tools/dea_tools/app/__init__            _modules/dea_tools/app/__init__
 notebooks/Tools/dea_tools/app/miningrehab         _modules/dea_tools/app/miningrehab
 notebooks/Tools/dea_tools/app/widgetconstructors  _modules/dea_tools/app/widgetconstructors
 
