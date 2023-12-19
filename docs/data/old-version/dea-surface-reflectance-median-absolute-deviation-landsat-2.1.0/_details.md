@@ -1,7 +1,5 @@
 ## Background
 
-This product has been deprecated and is superseded by this product: [DEA Geometric Median and Median Absolute Deviation (Landsat)](https://cmi.ga.gov.au/data-products/dea/645/dea-geometric-median-and-median-absolute-deviation-landsat).
-
 It is important to see how dynamic or variable the Australian landscape is over any given year, especially to help with understanding how the landscape changes, or to discriminate parts of the landscape that stay the same throughout the year (like forests) from those areas that go through big changes in cover (such as cropping areas).
 
 By understanding different patterns of variation, we can characterise various types of land cover and land use, and detect changes of significance in the landscape.
@@ -24,11 +22,9 @@ Together, they provide information on variance in the source data and are useful
 
 This product gives information about:
 
-* variance and change, so it can be used in machine learning for change detection
- 
-* land cover mapping
- 
-* environmental monitoring
+* Variance and change, so it can be used in machine learning for change detection
+* Land cover mapping
+* Environmental monitoring
 
 ## Technical information
 
