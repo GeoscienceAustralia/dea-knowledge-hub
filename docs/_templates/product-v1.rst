@@ -90,7 +90,7 @@
    .. admonition:: Provisional product
       :class: note
 
-      This is a `provisional product </guides/reference/dataset_maturity_guide/>`_ meaning it has not been finalised for released and may not yet have passed our quality control.
+      This is a `provisional product </guides/reference/dataset_maturity_guide/>`_, meaning it has not yet passed quality control and/or been finalised for release.
 
    {% endif %}
 
