@@ -20,9 +20,8 @@ A number of changes in the landscape with similar characteristics to burn appear
 
 A number of factors may contribute to a burnt area from an actual fire not being visible in this product. Potential situations in which a burnt area may appear to have very little or no change from the baseline state are as follows:
 
-A burn in shrubland or grassland that experience a seasonal or less frequent cycle of greening and drying out will not appear strongly in the dataset. This is due to the baseline image being quite dry. As a result this area will appear sparsely vegetated in the baseline and little change will be seen to occur.
-
-Burns with low severity that only burn the understory in forested areas will be difficult to identify. This is due to the remaining green canopy obscuring the signal of the burn. This is likely to affect the detection and mapping of cool season control burns.
+* A burn in shrubland or grassland that experience a seasonal or less frequent cycle of greening and drying out will not appear strongly in the dataset. This is due to the baseline image being quite dry. As a result this area will appear sparsely vegetated in the baseline and little change will be seen to occur.
+* Burns with low severity that only burn the understory in forested areas will be difficult to identify. This is due to the remaining green canopy obscuring the signal of the burn. This is likely to affect the detection and mapping of cool season control burns.
 
 ## Quality assurance
 

@@ -28,89 +28,66 @@ Hagolle et al proposed a multi-temporal method for cloud detection (MTCD), appli
 
 #### Input data
 
-Among 12 Sentinel-2A and Sentinel-2B spectral bands, 6 bands are selected for the time series cloud and cloud shadow detection algorithm. They are Blue, Green, Red, Near Infra-Red and two Short-Wave Infra-Red bands. The following table shows some of the properties of the  Sentinel-2 spectral data used in the TSmask algorithm.
+Among 12 Sentinel-2A and Sentinel-2B spectral bands, six bands are selected for the time series cloud and cloud shadow detection algorithm. They are Blue, Green, Red, Near Infra-Red and two Short-Wave Infra-Red bands. The following table shows some of the properties of the  Sentinel-2 spectral data used in the TSmask algorithm.
 
-**Sentinel 2 bands**
+:::{list-table}
+:header-rows: 1
 
-**DEA band name**
+* - Sentinel 2 bands
+  - DEA band name
+  - Central wavelength (nm)
+  - Resolution (m)
+  - Bandwidth (nm)
+* - Blue
+  - `nbart_blue`
+  - 496.6/492.1
+  - 10
+  - 98/98
+* - Green
+  - `nbart_green`
+  - 560.0/558.0
+  - 10
+  - 45/46
+* - Red
+  - `nbart_red`
+  - 664.5/665.0
+  - 10
+  - 38/39
+* - Narrow NIR
+  - `nbart_nir_2`
+  - 864.8/864.0
+  - 20
+  - 33/32
+* - SWIR
+  - `nbart_swir_2`
+  - 1613.7/1610.4
+  - 20
+  - 143/141
+* - SWIR
+  - `nbart_swir_3`
+  - 2202.4/2185.7
+  - 20
+  - 242/238
 
-**Central wavelength (nm)**
+:::
 
-**Resolution (m)**   
-
-**Bandwidth (nm)**
-
-Blue
-
-nbart\_blue
-
-496.6/492.1
-
-10
-
-98/98
-
-Green
-
-nbart\_green
-
-560.0/558.0
-
-10
-
-45/46
-
-Red
-
-nbart\_red
-
-664.5/665.0
-
-10
-
-38/39
-
-Narrow NIR
-
-nbart\_nir\_2
-
-864.8/864.0
-
-20
-
-33/32
-
-SWIR
-
-nbart\_swir\_2
-
-1613.7/1610.4
-
-20
-
-143/141
-
-SWIR
-
-nbart\_swir\_3
-
-2202.4/2185.7
-
-20
-
-242/238
 
 #### Output data
 
 This product classifies a Sentinel-2 pixel into one of four distinctive categories:
 
-0 = No observation
+:::{list-table}
 
-1 = Clear
+* - **0**
+  - No observation
+* - **1**
+  - Clear
+* - **2**
+  - Cloud
+* - **3**
+  - Cloud shadow
 
-2 = Cloud
-
-3 = Cloud shadow
+:::
 
 #### TSmask algorithm
 
@@ -134,41 +111,51 @@ When the time series cloud and cloud shadow detection procedure completed. The d
 
 In this step, pixels in the time series with BA>0.45 is labelled as cloud (with mask value = 3), while BA<=-0.0999 is labelled as invalid (with mask value = 1). The procedure is shown in Figure 1.
 
-![identify extreme data](/_files/dea-cloud-and-cloud-shadow-mask/cloud_1.png)
+:::{figure} /_files/dea-cloud-and-cloud-shadow-mask/cloud_1.png
+:alt: identify extreme data
 
-*Figure 1\. Identify extreme and invalid data.*
+Figure 1. Identify extreme and invalid data.
+:::
 
 **Step 2: Remove data labelled in the previous step from the time series**
 
 The updated time series is shown in Figure 2.
 
-![Updated time series with extreme and invalid pixels removed](/_files/dea-cloud-and-cloud-shadow-mask/cloud_2.png)
+:::{figure} /_files/dea-cloud-and-cloud-shadow-mask/cloud_2.png
+:alt: Updated time series with extreme and invalid pixels removed
 
-*Figure 2\. Updated time series with extreme and invalid pixels removed*
+Figure 2. Updated time series with extreme and invalid pixels removed
+:::
 
 **Step 3: Identify cloud and cloud shadow pixels**
 
 This is done by applying local time series noise filter on the whole time series, the time series with identified cloud and cloud shadow pixels is shown in Figure 3.
 
-![Time series with cloud and cloud shadow pixels identified](/_files/dea-cloud-and-cloud-shadow-mask/cloud_3.png)
+:::{figure} /_files/dea-cloud-and-cloud-shadow-mask/cloud_3.png
+:alt: Time series with cloud and cloud shadow pixels identified
 
-*Figure 3. Time series with cloud and cloud shadow pixels identified*
+Figure 3. Time series with cloud and cloud shadow pixels identified
+:::
 
 **Step 4: Repeat Step 3 by varying the length of the local time series noise filter.**
 
 In the current implementation, the local time series noise filter was applied 3 times with N=1,  2 times with N=2 and 1 time with N=3, where 3N is the length of the local time series noise filter. The filtered time series after Step 4 is shown in Figure 4.
 
-![Time series with cloud and cloud shadow pixels removed](/_files/dea-cloud-and-cloud-shadow-mask/cloud_4.png)
+:::{figure} /_files/dea-cloud-and-cloud-shadow-mask/cloud_4.png
+:alt: Time series with cloud and cloud shadow pixels removed
 
-*Figure 4. Time series with cloud and cloud shadow pixels removed*
+Figure 4. Time series with cloud and cloud shadow pixels removed
+:::
 
 **Step 5: Apply spectral and spatial filters**
 
 Detect ground objects which are wrongly classified as clouds and cloud shadows. Output the identified cloud and cloud shadow pixels as a cloud and cloud shadow mask, as shown in Figure 5.
 
-![The output of cloud and cloud shadow mask for the time series](/_files/dea-cloud-and-cloud-shadow-maskcloud_5.png)
+:::{figure} /_files/dea-cloud-and-cloud-shadow-mask/cloud_5.png
+:alt: The output of cloud and cloud shadow mask for the time series
 
-*Figure 5. The output of cloud and cloud shadow mask for the time series*
+Figure 5. The output of cloud and cloud shadow mask for the time series
+:::
 
 #### Data requirement for implementation
 

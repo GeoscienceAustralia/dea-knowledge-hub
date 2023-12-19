@@ -135,5 +135,5 @@ waterboards                       data/old-version/waterbodies-1.0.0
 data-product/456/waterboards      data/old-version/waterbodies-1.0.0
 data-products/dea/456/waterboards data/old-version/waterbodies-1.0.0
 
-node/685                                                                           data/old-version/dea-burnt-area-vectors-sentinel-2-near-real-time-provisional-1.0.0
-data-products/dea/685/dea-burnt-area-vectors-sentinel-2-near-real-time-provisional data/old-version/dea-burnt-area-vectors-sentinel-2-near-real-time-provisional-1.0.0
+node/685                                                                           data/old-version/dea-burnt-area-vectors-sentinel-2-near-real-time-1.0.0
+data-products/dea/685/dea-burnt-area-vectors-sentinel-2-near-real-time-provisional data/old-version/dea-burnt-area-vectors-sentinel-2-near-real-time-1.0.0
