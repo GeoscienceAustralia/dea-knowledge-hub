@@ -12,7 +12,7 @@ spatial_data_type: Raster
 time_span:
   start: null
   end: null
-update_frequency: Annually
+update_frequency: Deprecated
 next_update: null
 product_ids:
   - ga_ls_tcw_percentiles_2
@@ -43,9 +43,7 @@ maps: null
 
 explorers: null
 
-data:
-  - link: https://data.dea.ga.gov.au/?prefix=derivative/ga_ls_tcw_percentiles_2/
-    name: Digital Earth Australia - Public Data
+data: null
 
 code_examples: null
 
@@ -58,7 +56,7 @@ old_versions: null
 # Settings
 
 enable_overview: true
-enable_access: true
+enable_access: false
 enable_details: true
 enable_quality: true
 enable_history: true

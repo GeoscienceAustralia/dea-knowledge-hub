@@ -1,18 +1,18 @@
 # Overview
 
-title: DEA Burnt Area Vectors Sentinel-2 Near Real-Time (Provisional)
-long_title: DEA Burnt Area Vectors Sentinel-2 Near Real-Time (Provisional)
+title: DEA Burnt Area Vectors Sentinel-2 Near Real-Time
+long_title: DEA Burnt Area Vectors Sentinel-2 Near Real-Time
 header_image: null
 version: 1.0.0
 is_latest_version: false
-latest_version_link: /data/product/dea-burnt-area-characteristic-layers-sentinel-2-near-real-time-provisional/
-is_provisional: false
+latest_version_link: /data/product/dea-burnt-area-characteristic-layers-sentinel-2-near-real-time/
+is_provisional: true
 product_type: Derivative
-spatial_data_type: Raster
+spatial_data_type: Vector
 time_span:
   start: null
   end: null
-update_frequency: null
+update_frequency: Deprecated
 next_update: null
 product_ids: null
 

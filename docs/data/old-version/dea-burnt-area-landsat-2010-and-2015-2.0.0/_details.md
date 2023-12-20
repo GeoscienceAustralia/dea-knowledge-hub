@@ -1,7 +1,5 @@
 ## Background
 
-This product is deprecated and the data no longer available. There is an updated version of this product in development, due September 2023. This product was not published as the algorithm needs some updating.
-
 The Burned Area product provided information on the area of Australia burnt per calendar year using the Landsat satellites. This information was useful for understanding which areas burnt at which time of year and to what degree, and helps inform how often an area burnt and how long since last burn.
 
 ## What this product offers
@@ -22,7 +20,13 @@ The Burned Area product offers an annual understanding of all areas burnt across
 
 Burned area is mapped from Landsat surface reflectance time series. It implements a change detection algorithm developed jointly by ANU and GA.
 
-The maps are produced for calendar years. The layers available are: StartDate, detected start-date of severe and moderate burned area; Duration, duration of land cover change due to the bushfire; Severity, severity of land cover change due to the bushfire; Severe, binary mask for severe burnt area; Moderate, binary mask for moderate and severe burnt area; Corroborate, binary mask for corroborating evidence from hotspots data with 4km buffer; Cleaned, month of first detection, filtered by spatial and temporal coincidence with corroborate layer.
+The maps are produced for calendar years. The layers available are: 
+* StartDate, detected start-date of severe and moderate burned area
+* Duration, duration of land cover change due to the bushfire
+* Severity, severity of land cover change due to the bushfire
+* Severe, binary mask for severe burnt area; Moderate, binary mask for moderate and severe burnt area
+* Corroborate, binary mask for corroborating evidence from hotspots data with 4km buffer
+* Cleaned, month of first detection, filtered by spatial and temporal coincidence with corroborate layer
 
 ## Lineage
 

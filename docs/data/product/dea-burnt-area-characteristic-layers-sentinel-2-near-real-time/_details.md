@@ -50,10 +50,10 @@ $$
 NBR = \frac{NIR – SWIR2}{NIR + SWIR2}
 $$
 
-The change (delta) in NBR is calculated as:
+The change ($\Delta$) in NBR is calculated as:
 
 $$
-\DeltaNBR = baseline_NBR – NRT_NBR
+\Delta NBR = baseline\_NBR – NRT\_NBR
 $$
 
 The delta NBR layer displays values between -1 and +1, with positive value being more indicative that an area has been burnt, colour bar provided below.
@@ -70,10 +70,10 @@ $$
 BSI = \frac{(SWIR2 + RED) - (NIR + BLUE)}{(SWIR2 + RED) + (NIR + BLUE)}
 $$
 
-The change (delta) in BSI is calculated as:
+The change ($\Delta$) in BSI is calculated as:
 
 $$
-\DeltaBSI = \frac{1}{baseline_BSI – NRT_BSI}
+\Delta BSI = \frac{1}{baseline\_BSI – NRT\_BSI}
 $$
 
 Delta BSI is multiplied by negative 1 in order to reverse the scaling so that it can be presented the same way as the other delta indexes, which all have positive values for areas that shows characteristics of being burnt. The $\Delta$BSI layer displays values between -1 and +1, with a positive value being more indicative that an area has increased exposure of bare soil. Colour bar provided, below.
@@ -90,10 +90,10 @@ $$
 NDVI =  \frac{NIR - RED}{NIR + RED}
 $$
 
-The change (delta) in NDVI is calculated as:
+The change ($\Delta$) in NDVI is calculated as:
 
 $$
-\DeltaNDVI = baseline_NDVI – NRT_NDVI
+\Delta NDVI = baseline\_NDVI – NRT\_NDVI
 $$
 
 The $\Delta$NDVI layer displays values between -1 and +1, with positive values being more indicative that green vegetation in an area has decreased, and therefore showing the characteristics of being burnt.
@@ -117,7 +117,7 @@ The following indexes are calculated from both the DEA Sentinel 2 Barest Earth a
 
 The change layers for each index are then calculated in the following way for each index:
 
-* $Change(index) = Barest Earth(index) - Near Real-Time(index)$
+* $Change(index) = Barest Earth(index) - Near Real\-Time(index)$
 
 % ## Processing steps
 

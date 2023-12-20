@@ -1,7 +1,5 @@
 ## Background
 
-This product has been deprecated and is superseded by this product: [DEA Water Observations Statistics (Landsat)](https://cmi.ga.gov.au/data-products/dea/686/dea-water-observations-statistics-landsat).
-
 This is one of the Water Observations from Space suite of products, which gives summaries of how often surface water was observed by the Landsat satellites for various periods (per year, per season and for the period from 1986 to the present).
 
 WO-STATS is created from the WO\_25\_2.1.5 product and provides information on how many times the Landsat satellites were able to clearly see an area, how many times those observations were wet, and what that means for the percentage of time that water was observed in the landscape.

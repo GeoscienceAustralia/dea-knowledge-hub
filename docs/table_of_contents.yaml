@@ -110,7 +110,7 @@ entries:
             entries:
               - file: data/product/dea-water-observations-landsat/index
               - file: data/product/dea-water-observations-statistics-landsat/index
-              - file: data/product/dea-water-observations-provisional-sentinel-2-nrt/index
+              - file: data/product/dea-water-observations-sentinel-2-nrt/index
           - file: data/product/dea-waterbodies-landsat/index
             title: DEA Waterbodies
 
@@ -133,7 +133,7 @@ entries:
             title: All
 
           - file: data/product/dea-hotspots/index
-          - file: data/product/dea-burnt-area-characteristic-layers-sentinel-2-near-real-time-provisional/index
+          - file: data/product/dea-burnt-area-characteristic-layers-sentinel-2-near-real-time/index
             title: DEA Burnt Area Characteristic Layers (Provisional)
 
   - file: guides/index
