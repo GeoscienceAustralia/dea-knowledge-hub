@@ -1,21 +1,17 @@
 article.bd-article {
     padding-left: 0 !important;
 
-    h1, h2, h3, h4 {
+    h1, h2, h3, h4, h5, h6 {
         font-weight: bold;
+    }
+
+    h1 {
+        margin-bottom: 2rem;
     }
 
     h2 {
         border-bottom: 1px solid rgba(0, 0, 0, 0.1);
         padding-bottom: 1px;
-    }
-
-    h5 {
-        font-weight: normal;
-    }
-
-    h6 {
-        font-weight: italic;
     }
 
     .rubric {
