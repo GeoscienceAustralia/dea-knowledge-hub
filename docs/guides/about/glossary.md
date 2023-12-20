@@ -2,11 +2,11 @@
 
 (acquisition)=
 ## Acquisition
-An image captured by a satellite sensor. TESTING [agdc](#agdc)
+An image captured by a satellite sensor. TESTING [agdc](/guides/about/glossary/#agdc)
 
 (alos)=
 ## Advanced Land Observing Satellite (ALOS)
-A Japanese satellite launched in 2006. After five years of service, the satellite lost power and ceased communication with Earth, but remains in orbit. TESTING [API](#api)
+A Japanese satellite launched in 2006. After five years of service, the satellite lost power and ceased communication with Earth, but remains in orbit. TESTING [API](/guides/about/glossary/#api)
 
 (aster)=
 ## Advanced Spaceborne Thermal and Reflection radiometer (ASTER)
