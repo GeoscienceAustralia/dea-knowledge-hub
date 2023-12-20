@@ -1,5 +1,42 @@
 [id^="module"] {
-    .sig-prename {
-        font-weight: normal;
+    p.rubric {
+        font-size: 1.65rem !important;
+        margin-top: 2.75rem;
+        margin-bottom: 1.65rem;
+    }
+
+    .sig {
+        margin-top: 2rem;
+        border-top: 1px solid var(--bs-border-color, #dee2e6);
+        padding-top: 2rem;
+        margin-bottom: 1.15rem;
+
+        .property {}
+
+        .sig-prename {}
+
+        .sig-name {
+            color: #905;
+            margin-right: 0.5em;
+        }
+
+        .sig-param {}
+
+        &, .sig-name {
+            font-size: 1.2rem;
+        }
+
+        em {
+            font-style: normal;
+        }
+    }
+
+    dl dd {
+        margin-left: 0 !important;
+    }
+
+    dl dt.field-even, dl dt.field-odd {
+        background: none !important;
+        margin-bottom: 1.15rem !important;
     }
 }
