@@ -97,3 +97,9 @@ approvers_checklist: null
 approvers_checklist_hprm_reference: D2022-10590
 pmp_hprm_reference: D2022-10703
 
+data links:
+data:
+  - link: internal:/g/data/u46/users/ekb100/burn-mapping/BurnCube/2010geotiffs
+    name: 2010 BurnCube Geotiffs on NCI
+  - link: internal:/g/data/u46/users/ekb100/burn-mapping/BurnCube/2015geotiffs
+    name: 2015 BurnCube Geotiffs on NCI
