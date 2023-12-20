@@ -3,8 +3,12 @@
     margin-bottom: 4rem;
 
     h1 {
-        font-size: 1.9rem;
+        font-size: 2rem;
         margin-bottom: 1.25rem;
+    }
+
+    h2, .rubric {
+        font-size: 1.4rem !important;
     }
 
     h1, h1 + p {
@@ -44,9 +48,5 @@
     #data-products, #about-dea {
         padding-top: 0.5rem;
         padding-bottom: 0.5rem;
-    }
-
-    h2, .rubric {
-        font-size: 1.35rem;
     }
 }
