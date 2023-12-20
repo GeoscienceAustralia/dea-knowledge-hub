@@ -117,7 +117,9 @@ The following indexes are calculated from both the DEA Sentinel 2 Barest Earth a
 
 The change layers for each index are then calculated in the following way for each index:
 
-* $Change(index) = Barest Earth(index) - Near Real\-Time(index)$
+$$
+Change(index) = Barest Earth(index) - Near Real Time(index)
+$$
 
 % ## Processing steps
 
