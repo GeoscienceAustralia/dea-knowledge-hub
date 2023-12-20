@@ -19,7 +19,7 @@ is_primary_record: null
 project_leader: T. K. @ ga.gov.au
 branch_head: c...i @ ga.gov.au
 related_items:
-  - DEA Fractional Cover (Landsat, DEPRECATED)
+  - DEA Fractional Cover (Landsat)
 anzsrc_research_code: null
 
 # Access tab
@@ -40,7 +40,7 @@ relevant_websites: null
 # Processing tab
 
 data_sources:
-  - DEA Fractional Cover (Landsat, DEPRECATED)
+  - DEA Fractional Cover (Landsat)
 major_algorithms:
   - Fractional Cover Processing
 schema_spatial_extent:

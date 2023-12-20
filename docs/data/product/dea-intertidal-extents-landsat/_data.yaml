@@ -21,7 +21,7 @@ parent_products:
   name: Landsat 5, 7 and 8 NBAR and Observational Attributes (Collection 2)
   link: /data/category/dea-surface-reflectance/
 collection:
-  name: Geoscience Australia Landsat Collection 2 (DEPRECATED)
+  name: Geoscience Australia Landsat Collection 2
   link: null
 doi: null
 ecat: "113842"

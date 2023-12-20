@@ -43,7 +43,7 @@ relevant_websites:
 # Processing tab
 
 data_sources:
-  - DEA Pixel Quality (Landsat, DEPRECATED)
+  - DEA Pixel Quality (Landsat)
 major_algorithms:
   - OTPS TPX08 Atlas Tidal Model
   - Normalised Difference Water Index (NDWI)

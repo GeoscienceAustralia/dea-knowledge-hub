@@ -20,7 +20,7 @@ project_leader: S. C. @ ga.gov.au
 branch_head: M. W. @ ga.gov.au
 related_items:
   - DEA Fractional Cover (Landsat)
-  - DEA Fractional Cover (Landsat, DEPRECATED)
+  - DEA Fractional Cover (Landsat)
   - DEA Mangrove Canopy Cover (Landsat)
 anzsrc_research_code: EARTH SCIENCES
 
@@ -43,7 +43,7 @@ relevant_websites: null
 # Processing tab
 
 data_sources:
-  - DEA Fractional Cover (Landsat, DEPRECATED)
+  - DEA Fractional Cover (Landsat)
   - DEA Fractional Cover (Landsat)
   - DEA Fractional Cover Percentiles (Landsat)
 major_algorithms:

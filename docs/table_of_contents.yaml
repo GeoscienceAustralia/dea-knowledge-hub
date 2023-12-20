@@ -110,7 +110,7 @@ entries:
             entries:
               - file: data/product/dea-water-observations-landsat/index
               - file: data/product/dea-water-observations-statistics-landsat/index
-              - file: data/product/dea-water-observations-provisional-sentinel-2-nrt/index
+              - file: data/product/dea-water-observations-sentinel-2-nrt/index
           - file: data/product/dea-waterbodies-landsat/index
             title: DEA Waterbodies
 

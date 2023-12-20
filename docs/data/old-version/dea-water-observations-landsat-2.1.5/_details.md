@@ -1,7 +1,5 @@
 ## Background
 
-This product has been deprecated and is superseded by this product: [DEA Water Observations (Landsat)](/data/product/dea-water-observations-landsat/).
-
 It is important to know where water is normally present in a landscape, where water is rarely observed, and where inundation has occasionally occurred.
 
 These observations tell us where flooding has occurred in the past, and allows us to understand wetlands, water connectivity and surface-groundwater relationships. This can lead to more effective emergency management and risk assessment.

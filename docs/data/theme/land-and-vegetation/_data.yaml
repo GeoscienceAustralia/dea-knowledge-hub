@@ -14,3 +14,6 @@ pages:
   - name: DEA Mangroves
     link: /data/product/dea-mangrove-canopy-cover-landsat/
     image: /_files/cmi/DEA-mangroves.jpg
+  - name: DEA Tasseled Cap Percentiles
+    link: /data/product/dea-tasseled-cap-percentiles-landsat/
+    image: /_files/cmi/TCWpercentiles.png

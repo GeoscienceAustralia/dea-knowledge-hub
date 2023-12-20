@@ -21,7 +21,7 @@ parent_products:
   name: DEA Intertidal Extents (ITEM)
   link: /data/product/dea-intertidal-extents-landsat/
 collection:
-  name: Geoscience Australia Landsat Collection 2 (DEPRECATED)
+  name: Geoscience Australia Landsat Collection 2
   link: null
 doi: null
 ecat: "123678"

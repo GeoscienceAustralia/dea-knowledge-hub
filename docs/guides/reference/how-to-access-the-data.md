@@ -1,4 +1,4 @@
-# How to access data on the CMI
+# How to access data
 
 Our data products can be accessed through various web services, catalogues and mapping services.
 
@@ -23,14 +23,6 @@ You can access the S3 bucket directly at `s3://dea-public-data` or browse files 
 
 [AWS S3 documentation](https://docs.aws.amazon.com/s3/index.html)
 
-### DEA Access (coming soon)
-
-**What it is**
-
-DEA Access serves an online spatial catalogue of priority Geoscience Australia data collections that are hosted at the NCI. This is a complementary service to THREDDS, providing open WebMap access to DEA datasets.
-
-The DEA Access portal offers search and discovery tools to make it simple and easy to access the DEA collections that are hosted on the NCI file servers. Most importantly, this allows the user community to download DEA base data and derivative products for specialised processing and further analysis.
-
 ### Geoscience Australia eCat
 
 **What it is**
@@ -48,26 +40,6 @@ Every data product on the CMI links to its eCat record. Click on the link and it
 **More information**
 
 [eCat home page](https://ecat.ga.gov.au/geonetwork/)
-
-### GSKY
-
-**What it is**
-
-GSKY is an open web service that accesses and analyses the big geospatial data on NCI's cloud and high-performance computing systems, and then delivers it to a user device or website.
-
-For example, hundreds of time series and geospatially overlapping data can be seamlessly merged together, allowing researchers to focus on the information rather than dealing with data files.
-
-Furthermore, using GSKY's processing capability, that data can be analysed on the fly using user-provided algorithms to extract new information over both space and time.
-
-**How to use it**
-
-See [GSKY: Getting started.](https://opus.nci.org.au/display/Help/Getting+Started)
-
-**More information**
-
-[About GSKY](https://nci.org.au/our-services/data-services#GSKY)
-
-[GSKY User Guide](https://opus.nci.org.au/display/Help/GSKY+User+Guide)
 
 ### Open Data Cube
 
@@ -112,22 +84,6 @@ If the data product features a THREDDS link, you can access the data in the foll
 [About THREDDS](https://nci.org.au/our-services/data-services)
 
 ## Maps
-
-### AusSeabed Marine Data Portal
-
-**What it is**
-
-The AusSeaBed Portal provides access to publicly available acoustic datasets such as bathymetry, backscatter, side scan sonar data and other marine-related products. It also provides a suite of analytical assessment tools to maximise the value of the data.
-
-This interface allows users to explore seafloor mapping products across Australia's marine jurisdiction prior to downloading.
-
-**How to use it**
-
-Visit the [AusSeabed Portal](https://portal.ga.gov.au/persona/marine) and select 'About'.
-
-**More information**
-
-[AusSeabed](http://www.ausseabed.gov.au/)
 
 ### DEA Maps
 

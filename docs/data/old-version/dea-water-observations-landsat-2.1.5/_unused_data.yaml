@@ -19,8 +19,8 @@ is_primary_record: null
 project_leader: c...i @ ga.gov.au
 branch_head: c...i @ ga.gov.au
 related_items:
-  - DEA Water Observations Statistics (Landsat, DEPRECATED)
-  - DEA Water Observations Filtered Statistics (Landsat, DEPRECATED)
+  - DEA Water Observations Statistics (Landsat)
+  - DEA Water Observations Filtered Statistics (Landsat)
 anzsrc_research_code: null
 
 # Access tab
@@ -41,7 +41,7 @@ relevant_websites: null
 # Processing tab
 
 data_sources:
-  - DEA Surface Reflectance NBART (Landsat, DEPRECATED)
+  - DEA Surface Reflectance NBART (Landsat)
   - SRTM DSM/DEM data
 major_algorithms:
   - Water Observations from Space Detection Algorithm

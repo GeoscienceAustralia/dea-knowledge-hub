@@ -20,7 +20,7 @@ parent_products:
   name: DEA Water Observations (Collection 2), DEA Fractional Cover (Collection 2), and Landsat 5, 7 and 8 NBART and Observational Attributes (Collection 2)
   link: null
 collection:
-  name: Geoscience Australia Landsat Collection 2 (DEPRECATED)
+  name: Geoscience Australia Landsat Collection 2
   link: null
 doi: null
 ecat: "146165"
