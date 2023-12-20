@@ -63,7 +63,7 @@ custom: null
 
 old_versions:
   - version: 2.1.5
-    title: DEA Water Observations (Landsat, DEPRECATED)
+    title: DEA Water Observations (Landsat)
     slug: dea-water-observations-landsat-2.1.5
 
 # Settings

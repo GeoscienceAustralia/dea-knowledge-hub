@@ -39,7 +39,7 @@ relevant_websites: null
 # Processing tab
 
 data_sources:
-  - DEA Surface Reflectance NBART (Sentinel-2 MSI) (DEPRECATED)
+  - DEA Surface Reflectance NBART (Sentinel-2 MSI)
 major_algorithms: null
 schema_spatial_extent:
   temporal_extent:

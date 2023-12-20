@@ -50,7 +50,7 @@ data_sources:
   - Monthly Ozone Imagery
   - MODTRAN Seasons
   - USGS Ground Control Points (GCP)
-  - DEA Pixel Quality (Landsat, DEPRECATED)
+  - DEA Pixel Quality (Landsat)
 major_algorithms:
   - Geometric Median
 schema_spatial_extent:

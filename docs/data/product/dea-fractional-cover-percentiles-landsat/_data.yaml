@@ -57,7 +57,7 @@ custom: null
 
 old_versions:
   - version: 2.2.1
-    title: DEA Fractional Cover Percentiles (Landsat, DEPRECATED)
+    title: DEA Fractional Cover Percentiles (Landsat)
     slug: dea-fractional-cover-percentiles-landsat-2.2.1
 
 # Settings

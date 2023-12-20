@@ -67,7 +67,7 @@ custom: null
 
 old_versions:
   - version: 2.0.2
-    title: DEA Mangrove Canopy Cover (Landsat, DEPRECATED)
+    title: DEA Mangrove Canopy Cover (Landsat)
     slug: dea-mangrove-canopy-cover-landsat-2.0.2
 
 # Settings

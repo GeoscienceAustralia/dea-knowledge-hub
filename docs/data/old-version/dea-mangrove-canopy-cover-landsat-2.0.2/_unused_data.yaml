@@ -41,8 +41,8 @@ relevant_websites:
 # Processing tab
 
 data_sources:
-  - DEA Fractional Cover (Landsat, DEPRECATED)
-  - DEA Fractional Cover Percentiles (Landsat, DEPRECATED)
+  - DEA Fractional Cover (Landsat)
+  - DEA Fractional Cover Percentiles (Landsat)
 major_algorithms:
   - Fractional Cover Processing
 schema_spatial_extent:

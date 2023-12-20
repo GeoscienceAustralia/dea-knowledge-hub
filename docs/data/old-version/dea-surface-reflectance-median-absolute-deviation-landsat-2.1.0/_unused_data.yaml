@@ -39,9 +39,9 @@ relevant_websites: null
 # Processing tab
 
 data_sources:
-  - DEA Surface Reflectance NBART (Landsat, DEPRECATED)
-  - DEA Pixel Quality (Landsat, DEPRECATED)
-  - DEA Surface Reflectance Geomedian (Landsat, DEPRECATED)
+  - DEA Surface Reflectance NBART (Landsat)
+  - DEA Pixel Quality (Landsat)
+  - DEA Surface Reflectance Geomedian (Landsat)
 major_algorithms:
   - Median Absolute Deviation
   - Geometric Median

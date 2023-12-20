@@ -46,7 +46,7 @@ relevant_websites:
 
 data_sources:
   - DEA Water Observations (Landsat)
-  - DEA Water Observations Statistics (Landsat, DEPRECATED)
+  - DEA Water Observations Statistics (Landsat)
   - DEA Geometric Median and Median Absolute Deviation (Landsat)
   - DEA Fractional Cover (Landsat)
   - DEA Intertidal Extents (Landsat)

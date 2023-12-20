@@ -41,7 +41,7 @@ relevant_websites:
 # Processing tab
 
 data_sources:
-  - DEA Surface Reflectance NBART (Landsat, DEPRECATED)
+  - DEA Surface Reflectance NBART (Landsat)
 major_algorithms:
   - PERCENTILE CALCULATION
 schema_spatial_extent:

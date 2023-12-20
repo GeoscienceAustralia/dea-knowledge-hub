@@ -19,9 +19,9 @@ is_primary_record: null
 project_leader: L. L. @ ga.gov.au
 branch_head: M. W. @ ga.gov.au
 related_items:
-  - DEA Fractional Cover (Landsat, DEPRECATED)
+  - DEA Fractional Cover (Landsat)
   - DEA Wetness Percentiles (Landsat)
-  - DEA Water Observations (Landsat, DEPRECATED)
+  - DEA Water Observations (Landsat)
 anzsrc_research_code: null
 
 # Access tab
@@ -43,9 +43,9 @@ relevant_websites:
 # Processing tab
 
 data_sources:
-  - DEA Fractional Cover (Landsat, DEPRECATED)
-  - DEA Water Observations (Landsat, DEPRECATED)
-  - DEA Surface Reflectance NBART (Landsat, DEPRECATED)
+  - DEA Fractional Cover (Landsat)
+  - DEA Water Observations (Landsat)
+  - DEA Surface Reflectance NBART (Landsat)
 major_algorithms: null
 schema_spatial_extent:
   temporal_extent:

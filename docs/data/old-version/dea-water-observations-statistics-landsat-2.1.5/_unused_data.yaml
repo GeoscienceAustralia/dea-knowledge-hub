@@ -19,8 +19,8 @@ is_primary_record: null
 project_leader: T. K. @ ga.gov.au
 branch_head: A. L. @ ga.gov.au
 related_items:
-  - DEA Water Observations (Landsat, DEPRECATED)
-  - DEA Water Observations Filtered Statistics (Landsat, DEPRECATED)
+  - DEA Water Observations (Landsat)
+  - DEA Water Observations Filtered Statistics (Landsat)
 anzsrc_research_code: null
 
 # Access tab

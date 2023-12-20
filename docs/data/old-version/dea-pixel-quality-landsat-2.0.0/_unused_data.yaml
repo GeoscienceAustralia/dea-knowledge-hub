@@ -41,7 +41,7 @@ relevant_websites: null
 data_sources:
   - Level 1 Satellite Imagery
   - Systematic Terrain Correction Imagery
-  - DEA Surface Reflectance NBAR (Landsat, DEPRECATED)
+  - DEA Surface Reflectance NBAR (Landsat)
   - Ephemeris Data
 major_algorithms:
   - ACCA (Irish et al. 2006)

@@ -43,8 +43,8 @@ relevant_websites:
 # Processing tab
 
 data_sources:
-  - DEA Surface Reflectance NBAR (Landsat, DEPRECATED)
-  - DEA Surface Reflectance Geomedian (Landsat, DEPRECATED)
+  - DEA Surface Reflectance NBAR (Landsat)
+  - DEA Surface Reflectance Geomedian (Landsat)
 major_algorithms:
   - OTPS TPX08 Atlas Tidal Model
   - Geometric Median

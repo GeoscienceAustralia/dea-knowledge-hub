@@ -71,10 +71,10 @@ custom: null
 
 old_versions:
   - version: 2.1.0
-    title: DEA Surface Reflectance Median Absolute Deviation (Landsat, DEPRECATED)
+    title: DEA Surface Reflectance Median Absolute Deviation (Landsat)
     slug: dea-surface-reflectance-median-absolute-deviation-landsat-2.1.0
   - version: 2.0.0
-    title: DEA Surface Reflectance Geomedian (Landsat, DEPRECATED)
+    title: DEA Surface Reflectance Geomedian (Landsat)
     slug: dea-surface-reflectance-geomedian-landsat-2.0.0
 
 # Settings

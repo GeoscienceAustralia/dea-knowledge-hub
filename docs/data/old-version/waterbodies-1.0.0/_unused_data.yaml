@@ -41,7 +41,7 @@ relevant_websites:
 # Processing tab
 
 data_sources:
-  - DEA Water Observations (Landsat, DEPRECATED)
+  - DEA Water Observations (Landsat)
 major_algorithms:
   - Water Observations from Space Detection Algorithm
 schema_spatial_extent:

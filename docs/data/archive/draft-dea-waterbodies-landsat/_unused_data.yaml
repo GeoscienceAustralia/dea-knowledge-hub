@@ -20,8 +20,8 @@ project_leader: null
 branch_head: null
 related_items:
   - DEA Water Observations (Landsat)
-  - DEA Water Observations (Landsat, DEPRECATED)
-  - DEA Waterbodies (Landsat, DEPRECATED)
+  - DEA Water Observations (Landsat)
+  - DEA Waterbodies (Landsat)
   - DEA Waterbodies (Landsat)
 anzsrc_research_code: null
 
@@ -49,7 +49,7 @@ relevant_websites:
 
 data_sources:
   - DEA Water Observations (Landsat)
-  - DEA Waterbodies (Landsat, DEPRECATED)
+  - DEA Waterbodies (Landsat)
 major_algorithms:
   - Water Observations from Space Detection Algorithm
 schema_spatial_extent:

@@ -62,7 +62,7 @@ custom: null
 
 old_versions:
   - version: 2.2.1
-    title: DEA Fractional Cover (Landsat, DEPRECATED)
+    title: DEA Fractional Cover (Landsat)
     slug: dea-fractional-cover-landsat-2.2.1
 
 # Settings

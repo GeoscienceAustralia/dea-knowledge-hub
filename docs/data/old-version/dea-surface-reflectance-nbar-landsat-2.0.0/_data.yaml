@@ -20,7 +20,7 @@ parent_products:
   name: null
   link: null
 collection:
-  name: Geoscience Australia Landsat Collection 2 (DEPRECATED)
+  name: Geoscience Australia Landsat Collection 2
   link: null
 doi: null
 ecat: "102288"

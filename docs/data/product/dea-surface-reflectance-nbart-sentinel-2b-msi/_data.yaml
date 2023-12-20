@@ -65,7 +65,7 @@ custom: null
 
 old_versions:
   - version: 1.0.0
-    title: DEA Surface Reflectance NBART (Sentinel-2 MSI) (DEPRECATED)
+    title: DEA Surface Reflectance NBART (Sentinel-2 MSI)
     slug: dea-surface-reflectance-nbart-sentinel-2-msi-1.0.0
 
 # Settings

@@ -41,7 +41,7 @@ relevant_websites: null
 data_sources:
   - DEA Intertidal Extents (Landsat)
   - High-Resolution Depth Model (Northern Australia)
-  - DEA Surface Reflectance NBART (Landsat, DEPRECATED)
+  - DEA Surface Reflectance NBART (Landsat)
 major_algorithms:
   - OTPS TPX08 Atlas Tidal Model
   - Waterline contour extraction

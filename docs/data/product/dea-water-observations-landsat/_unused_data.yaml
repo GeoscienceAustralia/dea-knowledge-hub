@@ -43,7 +43,7 @@ data_sources:
   - Landsat 5 TM Level-2 Data Products - Surface Reflectance
   - Landsat 7 ETM+ Level-2 Data Products - Surface Reflectance
   - Landsat 8 OLI/TIRS Level-2 Data Products - Surface Reflectance
-  - DEA Pixel Quality (Landsat, DEPRECATED)
+  - DEA Pixel Quality (Landsat)
   - SRTM DSM/DEM data
 major_algorithms:
   - Water Observations from Space Detection Algorithm
