@@ -13,7 +13,7 @@ time_span:
   start: 2002
   end: 2015
 update_frequency: Biennially
-next_update: null
+next_update: No updates planned
 product_ids:
   - ga_ter_m_dlcd_ann
 

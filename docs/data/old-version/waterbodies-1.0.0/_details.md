@@ -1,7 +1,5 @@
 ## Background
 
-This product has been deprecated and is superseded by this product: [DEA Waterbodies (Landsat)](https://cmi.ga.gov.au/data-products/dea/693/dea-waterbodies-landsat)
-
 It is important to have up-to-date information about the extent and location of surface water in Australia. It provides us with a common understanding of this valuable and increasingly scarce resource.
 
 ## What this product offers

@@ -13,7 +13,7 @@ time_span:
   start: 1986
   end: 2016
 update_frequency: As needed
-next_update: null
+next_update: No updates planned - new version in development
 product_ids:
   - item_v2
 
