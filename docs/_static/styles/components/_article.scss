@@ -6,12 +6,30 @@ article.bd-article {
     }
 
     h1 {
+        font-size: 2rem;
         margin-bottom: 2rem;
     }
 
     h2 {
+        font-size: 1.4rem;
         border-bottom: 1px solid rgba(0, 0, 0, 0.1);
         padding-bottom: 1px;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    h4 {
+        font-size: 1rem;
+    }
+
+    h5 {
+        font-size: 90%;
+    }
+
+    h6 {
+        font-size: 80%;
     }
 
     .rubric {
