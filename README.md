@@ -35,11 +35,12 @@ You should do your work on the `develop` branch or, ideally, branch off into you
 <!--   merge develop -->
 <!-- ``` -->
 
-# Merging into demo branches
+# Overwriting demo branches
 
-Use the `theirs` option to automatically resolve merge conflicts in favour of your branch.
+Instead of merging into the demo branches, it's easier to overwrite them with the exact contents of your branch.
 
 ```bash
 git checkout demo1
-git merge -X theirs your-branch
+git reset --hard your-branch
+git push origin demo1 --force
 ```
