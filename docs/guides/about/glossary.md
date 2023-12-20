@@ -1,77 +1,58 @@
-.. _glossary:
+# Digital Earth Australia Glossary
 
-Glossary
-========
+(acquisition)=
+## Acquisition
+An image captured by a satellite sensor.
 
-.. glossary::
+(alos)=
+## Advanced Land Observing Satellite (ALOS)
+A Japanese satellite launched in 2006. After five years of service, the satellite lost power and ceased communication with Earth, but remains in orbit. TESTING [API](#api)
 
-   Acquisition
-      An image captured by a satellite sensor.
+(aster)=
+## Advanced Spaceborne Thermal and Reflection radiometer (ASTER)
+An imaging instrument onboard Terra, the flagship satellite of NASA's Earth Observing System (EOS) launched in December 1999. ASTER data is used to create detailed maps of land surface temperature, reflectance, and elevation.
 
-   Advanced Land Observing Satellite
-   ALOS
-      A Japanese satellite launched in 2006. After five years of service, the satellite
-      lost power and ceased communication with Earth, but remains in orbit.
+For more information, see [NASA: ASTER.](https://asterweb.jpl.nasa.gov/)
 
-   Advanced Spaceborne Thermal and Reflection radiometer
-   ASTER
-      An imaging instrument onboard Terra, the flagship satellite of NASA's Earth Observing
-      System (EOS) launched in December 1999. ASTER data is used to create detailed maps of
-      land surface temperature, reflectance, and elevation.
+(avhrr)=
+## Advanced Very-High Resolution Radiometer (AVHRR)
+A radiation-detection sensor that can be used for remotely determining cloud cover and the surface temperature. AVHRR instruments are carried by the National Oceanic and Atmospheric Administration (NOAA) family of polar orbiting platforms and European MetOp satellites.
 
-      For more information, see `NASA: ASTER. <https://asterweb.jpl.nasa.gov/>`_
+For more information, see [ESA: AVHRR.](https://earth.esa.int/eogateway/missions/noaa)
 
-   Advanced Very-High Resolution Radiometer
-   AVHRR
-      A radiation-detection sensor that can be used for remotely determining cloud cover
-      and the surface temperature. AVHRR instruments are carried by the National Oceanic and
-      Atmospheric Administration (NOAA) family of polar orbiting platforms and European MetOp
-      satellites.
+(aerosol-optical-depth)=
+## Aerosol optical depth
+Aerosol optical depth is a measure of the extinction of the solar beam by dust and haze.
 
-      For more information, see `ESA: AVHRR. <https://earth.esa.int/eogateway/missions/noaa>`_
+For more information, see [NASA Earth Observatory.](https://earthobservatory.nasa.gov/global-maps/MODAL2_M_AER_OD)
 
-   Aerosol optical depth
-      Aerosol optical depth is a measure of the extinction of the solar beam by dust and haze.
+(albedo)=
+## Albedo
+The fraction of light that a surface reflects. Albedo is measured on a scale of 0-1, with 1 indicating that all light has been reflected by the surface.
 
-      For more information, see `NASA Earth Observatory. <https://earthobservatory.nasa.gov/global-maps/MODAL2_M_AER_OD>`_
+(algorithm)= 
+## Algorithm
+In the context of remote sensing, algorithms generally specify how to determine higher-level data products from lower-level source data. For example, algorithms prescribe how atmospheric temperature and moisture profiles are determined from a set of radiation observations originally sensed by satellite sounding instruments.
 
-   Albedo
-      The fraction of light that a surface reflects. Albedo is measured on a scale of 0-1, with 1 indicating
-      that all light has been reflected by the surface.
+(aws)= 
+## Amazon Web Services (AWS)
+One of the two environments used for hosting Digital Earth Australia. Amazon Web Services is a commercial cloud computing provider. Used by Digital Earth Australia for our JupyterHub Sandbox and Web Mapping Services.
 
-   Algorithm
-      In the context of remote sensing, algorithms generally specify how to determine higher-level
-      data products from lower-level source data. For example, algorithms prescribe how atmospheric
-      temperature and moisture profiles are determined from a set of radiation observations originally
-      sensed by satellite sounding instruments.
+(ard)=
+## Analysis Ready Data (ARD)
+Satellite data that has been processed to a minimum set of requirements and organised into a form that allows immediate analysis and interoperability through time and with other datasets.
 
-   Amazon Web Services
-   AWS
-      One of the two environments used for hosting Digital Earth Australia.
-      Amazon Web Services is a commercial cloud computing provider. Used
-      by Digital Earth Australia for our JupyterHub Sandbox and Web Mapping
-      Services.
-
-   Analysis Ready Data
-   ARD
-      Satellite data that has been processed to a minimum set of requirements and organised into a form
-      that allows immediate analysis and interoperability through time and with other datasets.
-
-   Application Programming Interface
-   API
-      A software intermediary that allows two applications to talk to each other. The :term:`Open Data Cube`
-      API gives programmers full access to the capabilities of the Cube, allowing query and advanced data
-      retrieval.
+(api)= 
+## Application Programming Interface (API)
+A software intermediary that allows two applications to talk to each other. The [Open Data Cube](#ODC) API gives programmers full access to the capabilities of the Cube, allowing query and advanced data retrieval.
 
    Atmospheric correction
       The process of removing the effects of the atmosphere on the reflectance values of images taken by
       satellite or airborne sensors.
 
-   Australian Geoscience Data Cube
-   AGDC
-      A collaborative prototype project between Geoscience Australia, :term:`CSIRO` and :term:`NCI`, which aimed to
-      provide better public access to NASA’s extensive Landsat archive. The AGDC has since been superseded by
-      :term:`Digital Earth Australia`.
+(agdc)=
+## Australian Geoscience Data Cube (AGDC)
+A collaborative prototype project between Geoscience Australia, :term:`CSIRO` and :term:`NCI`, which aimed to  provide better public access to NASA’s extensive Landsat archive. The AGDC has since been superseded by :term:`Digital Earth Australia`.
 
    Australian Research Environment
    ARE
