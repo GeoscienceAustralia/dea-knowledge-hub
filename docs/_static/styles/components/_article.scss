@@ -2,26 +2,46 @@ article.bd-article {
     padding-left: 0 !important;
 
     h1, h2, h3, h4, h5, h6 {
-        color: var(--pst-color-primary);
         font-weight: bold;
     }
 
-    h3, h4, h5, h6 {
-        color: var(--pst-color-secondary);
+    h1, h2 {
+        margin-bottom: 1.65rem;
     }
 
-    h4, h5, h6 {
-        font-weight: bold;
+    h1 {
+        font-size: 2.15rem !important;
+
+        img {
+            display: block;
+            margin-top: 1rem;
+        }
+    }
+
+    h2 {
+        font-size: 1.65rem !important;
+        margin-bottom: 1.65rem;
+    }
+
+    h3 {
+        font-size: 1.2rem !important;
+    }
+
+    h4 {
+        font-size: 1rem !important;
+    }
+
+    h5 {
+        font-size: 90% !important;
+    }
+
+    h6 {
+        font-size: 80% !important;
     }
 
     .rubric {
         border-bottom: none !important;
         margin-top: 0 !important;
-    }
-
-    h1 img {
-        display: block;
-        margin-top: 1rem;
     }
 
     dl.field-list > dt {

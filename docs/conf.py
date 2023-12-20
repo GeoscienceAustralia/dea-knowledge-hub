@@ -74,7 +74,7 @@ myst_enable_extensions = [
     "attrs_inline",
     "dollarmath",
 ]
-myst_heading_anchors = 1
+myst_heading_anchors = 0
 myst_all_links_external = True
 
 nbsphinx_execute = "never"
