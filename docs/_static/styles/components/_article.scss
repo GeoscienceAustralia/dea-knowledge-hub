@@ -5,14 +5,22 @@ article.bd-article {
         font-weight: bold;
     }
 
+    h1, h2 {
+        margin-bottom: 1.65rem;
+    }
+
     h1 {
-        font-size: 2rem !important;
+        font-size: 2.15rem !important;
+
+        img {
+            display: block;
+            margin-top: 1rem;
+        }
     }
 
     h2 {
         font-size: 1.65rem !important;
-        border-bottom: 1px solid var(--bs-border-color, #dee2e6);
-        padding-bottom: 1px;
+        margin-bottom: 1.65rem;
     }
 
     h3 {
@@ -34,11 +42,6 @@ article.bd-article {
     .rubric {
         border-bottom: none !important;
         margin-top: 0 !important;
-    }
-
-    h1 img {
-        display: block;
-        margin-top: 1rem;
     }
 
     dl.field-list > dt {
