@@ -34,3 +34,12 @@ You should do your work on the `develop` branch or, ideally, branch off into you
 <!--   checkout main -->
 <!--   merge develop -->
 <!-- ``` -->
+
+# Merging into demo branches
+
+Use the `theirs` option to automatically resolve merge conflicts in favour of your branch.
+
+```bash
+git checkout demo1
+git merge -X theirs your-branch
+```
