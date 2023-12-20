@@ -6,30 +6,30 @@ article.bd-article {
     }
 
     h1 {
-        font-size: 2rem;
+        font-size: 2rem !important;
         margin-bottom: 2rem;
     }
 
     h2 {
-        font-size: 1.4rem;
+        font-size: 1.4rem !important;
         border-bottom: 1px solid var(--bs-border-color, #dee2e6);
         padding-bottom: 1px;
     }
 
     h3 {
-        font-size: 1.2rem;
+        font-size: 1.2rem !important;
     }
 
     h4 {
-        font-size: 1rem;
+        font-size: 1rem !important;
     }
 
     h5 {
-        font-size: 90%;
+        font-size: 90% !important;
     }
 
     h6 {
-        font-size: 80%;
+        font-size: 80% !important;
     }
 
     .rubric {
