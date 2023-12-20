@@ -1,11 +1,9 @@
 # Digital Earth Australia Glossary
 
-(acquisition)=
-## Acquisition
-An image captured by a satellite sensor.
+<h2 id="acquisition"> acquisition </h2>
+An image captured by a satellite sensor. TESTING [API](#ard)
 
-(alos)=
-## Advanced Land Observing Satellite (ALOS)
+<h2 id="alos"> Advanced Land Observing Satellite (ALOS) </h2>
 A Japanese satellite launched in 2006. After five years of service, the satellite lost power and ceased communication with Earth, but remains in orbit. TESTING [API](#api)
 
 (aster)=
@@ -38,12 +36,10 @@ In the context of remote sensing, algorithms generally specify how to determine 
 ## Amazon Web Services (AWS)
 One of the two environments used for hosting Digital Earth Australia. Amazon Web Services is a commercial cloud computing provider. Used by Digital Earth Australia for our JupyterHub Sandbox and Web Mapping Services.
 
-(ard)=
-## Analysis Ready Data (ARD)
+<h2 id="ard"> Analysis Ready Data (ARD) </h2>
 Satellite data that has been processed to a minimum set of requirements and organised into a form that allows immediate analysis and interoperability through time and with other datasets.
 
-(api)= 
-## Application Programming Interface (API)
+(api)=## Application Programming Interface (API)
 A software intermediary that allows two applications to talk to each other. The [Open Data Cube](#ODC) API gives programmers full access to the capabilities of the Cube, allowing query and advanced data retrieval.
 
    Atmospheric correction
