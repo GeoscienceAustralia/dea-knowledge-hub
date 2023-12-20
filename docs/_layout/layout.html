@@ -3,8 +3,7 @@
 {% block extrahead %}
 <meta name="keywords" content="{{ meta_keywords }}">
 
-<script type="text/javascript">document.documentElement.dataset.content_root = "/"</script>
-
+<script type="text/javascript" src="/_static/scripts/content-root.js"></script>
 <script type="text/javascript" src="/_static/scripts/external-links-behaviour.js"></script>
 
 <!-- Google tag (gtag.js) -->
@@ -17,3 +16,4 @@
     gtag('config', '{{ google_analytics_ga4_tag }}');
 </script>
 {% endblock %}
+
