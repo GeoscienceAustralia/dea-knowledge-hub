@@ -6,12 +6,14 @@ header_image: /_files/cmi/nidem_2_-_crop_3_1.jpg
 version: 1.0.0
 is_latest_version: true
 latest_version_link: null
+is_provisional: false
 product_type: Derivative
 spatial_data_type: Raster
 time_span:
   start: 1986
   end: 2016
 update_frequency: As needed
+next_update: No updates planned - new version in development
 product_ids:
   - nidem
 
@@ -19,7 +21,7 @@ parent_products:
   name: DEA Intertidal Extents (ITEM)
   link: /data/product/dea-intertidal-extents-landsat/
 collection:
-  name: Geoscience Australia Landsat Collection 2 (DEPRECATED)
+  name: Geoscience Australia Landsat Collection 2
   link: null
 doi: null
 ecat: "123678"

@@ -8,6 +8,10 @@
         margin-bottom: 0;
     }
 
+    & > .sd-tab-set > .sd-tab-content {
+        box-shadow: 0 -0.0625rem var(--sd-color-tabs-overline);
+    }
+
     #additional-files-table {
         margin-bottom: 2.75rem;
     }

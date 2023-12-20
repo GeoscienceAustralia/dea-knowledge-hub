@@ -13,7 +13,8 @@ The AGRI provides a consistent base image intended, at the time of production, t
 ## Applications
 
 The AGRI is a resource for both users and providers of satellite imagery covering Australia in:
-* Government agencies – Commonwealth, State and Local
+
+* Government agencies &mdash; Commonwealth, State and Local
 * Research institutions
 * Spatial Information Industry
 * International satellite operators
@@ -22,13 +23,14 @@ Ground Control Points from the AGRI have fed into satellite image processing sys
 
 Similarly, commercial satellite operators are understood to have used the AGRI to improve their product quality.
 
-Reference image – image to image rectification, image chip source, quality control layer  
-Basemap – feature revision and verification, reference layer
+Reference image &mdash; image to image rectification, image chip source, quality control layer.
+
+Basemap &mdash; feature revision and verification, reference layer.
 
 ## Technical information
 
-* National mosaic - 10m georeferenced image
-* UTM zone mosaics - 2.5m georeferenced images
+* National mosaic &mdash; 10m georeferenced image
+* UTM zone mosaics &mdash; 2.5m georeferenced images
 * Ground Control Point spatial database
 * Ground Control Point ancillary data (photographs, site sketches and image chips).
 
@@ -44,7 +46,7 @@ The expertise and capability of the Australian spatial information industry was 
 
 ## Processing steps
 
-See the product description and technical report for the detailed methodology [http://dx.doi.org/10.4225/25/5524BA4A047FE](http://dx.doi.org/10.4225/25/5524BA4A047FE).
+See the product description and technical report for the detailed methodology ([doi:10.4225/25/5524BA4A047FE](http://dx.doi.org/10.4225/25/5524BA4A047FE)).
 
 % ## Software
 

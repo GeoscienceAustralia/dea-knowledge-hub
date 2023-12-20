@@ -1,9 +1,9 @@
-# Unused data migrated from the CMI. May be outdated.
+# Unused data migrated from the CMI
 
 # General
 
 cmi_node: 400
-cmi_url: /data-products/dea/400/dea-surface-reflectance-nbart-landsat-8-oli-tirs
+cmi_url: https://cmi.ga.gov.au/data-products/dea/400/dea-surface-reflectance-nbart-landsat-8-oli-tirs
 published_date: "2019-11-26"
 author: J. S. @ ga.gov.au
 created: 2018-03-12T12:00:00+1100

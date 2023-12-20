@@ -1,9 +1,9 @@
-# Unused data migrated from the CMI. May be outdated.
+# Unused data migrated from the CMI
 
 # General
 
 cmi_node: 825
-cmi_url: /data-products/dea/825/dea-surface-reflectance-sentinel-2b-msi
+cmi_url: https://cmi.ga.gov.au/data-products/dea/825/dea-surface-reflectance-sentinel-2b-msi
 published_date: "2022-01-13"
 author: A. O. @ gmail.com
 created: 2022-11-16T14:08:28+1100

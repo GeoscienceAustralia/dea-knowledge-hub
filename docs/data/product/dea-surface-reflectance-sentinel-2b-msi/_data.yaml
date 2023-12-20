@@ -6,12 +6,14 @@ header_image: /_files/cmi/surface_reflectance_2_NBARTa_1.png
 version: 3.2.1
 is_latest_version: true
 latest_version_link: null
+is_provisional: false
 product_type: Baseline
 spatial_data_type: Raster
 time_span:
   start: 30/06/2017
   end: present
 update_frequency: Daily
+next_update: null
 product_ids:
   - ga_s2bm_ard_3
 
@@ -63,7 +65,10 @@ custom: null
 
 # History
 
-old_versions: null
+old_versions:
+  - version: 1.0.0
+    title: DEA Surface Reflectance NBAR (Sentinel-2 MSI)
+    slug: dea-surface-reflectance-nbar-sentinel-2-msi-1.0.0
 
 # Settings
 

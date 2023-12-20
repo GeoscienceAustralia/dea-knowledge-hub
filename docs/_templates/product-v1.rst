@@ -25,8 +25,8 @@
 {% set code_sample_default_name = "Code sample" %}
 
 {% set has_access_data = valid_maps or valid_data or valid_explorers or valid_web_services or valid_code_samples or valid_custom %}
+{% set has_key_details = (data.parent_products.name and data.parent_products.link) or (data.collection.name and data.collection.link) or data.collection.name or data.doi or data.ecat or data.published %}
 
-{% set pretty_version = "v" + data.version %}
 {% set page_title = data.title if is_latest_version else data.version + ": " + data.title %}
 
 {% set product_ids_label = "Product IDs" if valid_product_ids | length > 1 else "Product ID" %}
@@ -65,6 +65,9 @@
       :Ends at: {{ data.time_span.end }}
       {%- endif %}
       :Update frequency: {{ data.update_frequency }}
+      {%- if data.next_update %}
+      :Next update: {{ data.next_update }}
+      {%- endif %}
       {%- if valid_product_ids %}
       :{{ product_ids_label }}: {{ valid_product_ids | join(", ") }}
       {%- endif %}
@@ -73,16 +76,23 @@
 
       .. image:: {{ data.header_image or "/_files/pages/dea-hero.jpg" }}
 
-{% if not is_latest_version %}
 .. container::
    :name: notifications
 
-   .. admonition:: This is an old version ({{ pretty_version }})
+   {% if not is_latest_version %}
+   .. admonition:: Old version
       :class: danger
    
-      See the `latest version of the product <{{ data.latest_version_link }}>`_.
+      This is an old version of the product. See the `latest version <{{ data.latest_version_link }}>`_.
 
-{% endif %}
+   {% endif %}
+   {% if data.is_provisional %}
+   .. admonition:: Provisional product
+      :class: note
+
+      This is a `provisional product </guides/reference/dataset_maturity_guide/>`_, meaning it has not yet passed quality control and/or been finalised for release.
+
+   {% endif %}
 
 {% if not is_latest_version %}
 {% endif %}
@@ -165,6 +175,7 @@
              {% endfor %}
        {%- endif %}
 
+       {% if has_key_details %}
        .. rubric:: Key details
           :name: key-details
 
@@ -196,6 +207,7 @@
           * - **Last updated**
             - {{ data.published }}
           {%- endif %}
+       {%- endif %}
 
        .. include:: _overview_2.md
           :parser: myst_parser.sphinx_
@@ -368,6 +380,6 @@
 
 .. raw:: html
 
-   <script type="text/javascript" src="/_static/scripts/tocbot.min.js"></script>
-   <script type="text/javascript" src="/_static/scripts/tocbot-data-product.js" /></script>
+   <script type="text/javascript" src="/_static/scripts/vendors/tocbot.min.js"></script>
+   <script type="text/javascript" src="/_static/scripts/product-table-of-contents.js" /></script>
    <script type="text/javascript" src="/_static/scripts/access-cards-tooltips.js" /></script>

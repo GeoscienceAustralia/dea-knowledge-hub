@@ -6,12 +6,14 @@ header_image: /_files/cmi/HLTCv2.png
 version: 2.0.0
 is_latest_version: true
 latest_version_link: null
+is_provisional: false
 product_type: Derivative
 spatial_data_type: Raster
 time_span:
   start: 1995
   end: 2017
 update_frequency: As needed
+next_update: No updates planned
 product_ids:
   - high_tide_comp_20p
   - low_tide_comp_20p
@@ -20,7 +22,7 @@ parent_products:
   name: Landsat 5, 7 and 8 NBAR and Observational Attributes (Collection 2)
   link: /data/category/dea-surface-reflectance/
 collection:
-  name: Geoscience Australia Landsat Collection 2 (DEPRECATED)
+  name: Geoscience Australia Landsat Collection 2
   link: null
 doi: null
 ecat: "113843"

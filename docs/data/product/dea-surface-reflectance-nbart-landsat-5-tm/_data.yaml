@@ -6,12 +6,14 @@ header_image: null
 version: 3.0.0
 is_latest_version: true
 latest_version_link: null
+is_provisional: false
 product_type: Baseline
 spatial_data_type: Raster
 time_span:
   start: 16/08/1986
   end: 17/11/2011
 update_frequency: Daily
+next_update: null
 product_ids:
   - ga_ls5t_ard_3
 
@@ -59,7 +61,7 @@ custom: null
 
 old_versions:
   - version: 2.0.0
-    title: DEA Surface Reflectance NBART (Landsat, DEPRECATED)
+    title: DEA Surface Reflectance NBART (Landsat)
     slug: dea-surface-reflectance-nbart-landsat-2.0.0
 
 # Settings

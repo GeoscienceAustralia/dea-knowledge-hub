@@ -1,9 +1,9 @@
-# Unused data migrated from the CMI. May be outdated.
+# Unused data migrated from the CMI
 
 # General
 
 cmi_node: 581
-cmi_url: /data-products/dea/581/dea-coastlines
+cmi_url: https://cmi.ga.gov.au/data-products/dea/581/dea-coastlines
 published_date: "2023-08-15"
 author: R. B. @ ga.gov.au
 created: 2020-08-06T10:12:40+1000

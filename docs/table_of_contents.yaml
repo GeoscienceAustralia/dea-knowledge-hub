@@ -70,26 +70,32 @@ entries:
                     title: Sentinel-2B Observational Attributes
           - file: data/product/australian-national-spectral-database/index
           - file: data/product/australian-geographic-reference-image/index
+          - file: data/product/daily-satpaths-beta/index
+
 
       - caption: Land and Vegetation
         entries:
           - file: data/theme/land-and-vegetation/index
             title: All
 
-          - file: data/product/dea-land-cover-landsat/index
-            title: DEA Land Cover
+          - file: data/category/dea-land-cover/index
+            entries:
+            - file: data/product/dea-land-cover-landsat/index
+              title: DEA Land Cover
+            - file: data/product/ga-land-cover-terra-modis/index
+              title: GA Land Cover (Terra MODIS)
           - file: data/category/dea-fractional-cover/index
             entries:
               - file: data/product/dea-fractional-cover-landsat/index
                 title: DEA Fractional Cover
               - file: data/product/dea-fractional-cover-percentiles-landsat/index
                 title: DEA Fractional Cover Percentiles
-          - file: data/product/ga-land-cover-terra-modis/index
-            title: GA Land Cover (Terra MODIS)
           - file: data/product/dea-geometric-median-and-median-absolute-deviation-landsat/index
             title: DEA Geomedian and Mean Absolute Deviation (GeoMAD)
           - file: data/product/dea-mangrove-canopy-cover-landsat/index
             title: DEA Mangroves
+          - file: data/product/dea-tasseled-cap-percentiles-landsat/index
+            title: DEA Tasseled Cap Percentiles
 
       - caption: Inland water
         entries:
@@ -104,7 +110,7 @@ entries:
             entries:
               - file: data/product/dea-water-observations-landsat/index
               - file: data/product/dea-water-observations-statistics-landsat/index
-              - file: data/product/dea-water-observations-provisional-sentinel-2-nrt/index
+              - file: data/product/dea-water-observations-sentinel-2-nrt/index
           - file: data/product/dea-waterbodies-landsat/index
             title: DEA Waterbodies
 
@@ -127,6 +133,8 @@ entries:
             title: All
 
           - file: data/product/dea-hotspots/index
+          - file: data/product/dea-burnt-area-characteristic-layers-sentinel-2-near-real-time/index
+            title: DEA Burnt Area Characteristic Layers (Provisional)
 
   - file: guides/index
     title: User Guides

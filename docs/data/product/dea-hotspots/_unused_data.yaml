@@ -1,9 +1,9 @@
-# Unused data migrated from the CMI. May be outdated.
+# Unused data migrated from the CMI
 
 # General
 
 cmi_node: 167
-cmi_url: /data-products/dea/167/dea-hotspots
+cmi_url: https://cmi.ga.gov.au/data-products/dea/167/dea-hotspots
 published_date: "2001-01-01"
 author: M. A. @ ga.gov.au
 created: 2017-05-23T09:14:40+1000

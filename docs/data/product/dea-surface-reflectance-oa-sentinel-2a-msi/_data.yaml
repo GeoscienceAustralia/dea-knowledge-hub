@@ -6,12 +6,14 @@ header_image: null
 version: 3.2.1
 is_latest_version: true
 latest_version_link: null
+is_provisional: false
 product_type: Baseline
 spatial_data_type: Raster
 time_span:
   start: 12/07/2015
   end: present
 update_frequency: Daily
+next_update: null
 product_ids:
   - ga_s2am_ard_3
 
@@ -62,7 +64,13 @@ custom: null
 
 # History
 
-old_versions: null
+old_versions:
+  - version: 1.0.0
+    title: DEA Surface Reflectance NBART (Sentinel-2 MSI)
+    slug: dea-surface-reflectance-nbart-sentinel-2-msi-1.0.0
+  - version: 1.0.0
+    title: DEA Cloud and Cloud Shadow Mask (Sentinel-2 MSI)
+    slug: dea-cloud-and-cloud-shadow-mask-sentinel-2-msi-1.0.0
 
 # Settings
 

@@ -1,4 +1,4 @@
-# Unused data migrated from the CMI. May be outdated.
+# Unused data migrated from the CMI
 
 # General
 
@@ -19,7 +19,7 @@ is_primary_record: null
 project_leader: c...i @ ga.gov.au
 branch_head: c...i @ ga.gov.au
 related_items:
-  - DEA Fractional Cover Percentiles (Landsat, DEPRECATED)
+  - DEA Fractional Cover Percentiles (Landsat)
 anzsrc_research_code: null
 
 # Access tab
@@ -42,7 +42,7 @@ relevant_websites:
 # Processing tab
 
 data_sources:
-  - DEA Surface Reflectance NBART (Landsat, DEPRECATED)
+  - DEA Surface Reflectance NBART (Landsat)
 major_algorithms:
   - Fractional Cover Processing
 schema_spatial_extent:

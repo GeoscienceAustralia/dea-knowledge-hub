@@ -1,0 +1,62 @@
+# Overview
+
+title: DEA Water Observations Filtered Statistics (Landsat)
+long_title: Water Observations from Space Filtered Statistics 25m 2.1.5
+header_image: /_files/cmi/water_observations_filtered_stats_1_0.jpg
+version: 2.1.5
+is_latest_version: false
+latest_version_link: /data/product/dea-water-observations-statistics-landsat/
+is_provisional: false
+product_type: Derivative
+spatial_data_type: Raster
+time_span:
+  start: null
+  end: null
+update_frequency: Deprecated
+next_update: null
+product_ids: null
+
+parent_products:
+  name: null
+  link: null
+collection:
+  name: Geoscience Australia Landsat Collection 2
+  link: null
+doi: null
+ecat: null
+nci:
+  name: null
+  code: null
+
+tags:
+  - geoscience_australia_landsat_collection_2_deprecated
+  - water_detection
+  - floods
+  - surface_water
+  - wetlands
+
+# Access
+
+maps: null
+
+explorers: null
+
+data: null
+
+code_examples: null
+
+web_services: null
+
+# History
+
+old_versions: null
+
+# Settings
+
+enable_overview: true
+enable_access: false
+enable_details: true
+enable_quality: true
+enable_history: true
+enable_credits: true
+

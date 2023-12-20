@@ -1,9 +1,9 @@
-# Unused data migrated from the CMI. May be outdated.
+# Unused data migrated from the CMI
 
 # General
 
 cmi_node: 629
-cmi_url: /data-products/dea/629/dea-fractional-cover-landsat
+cmi_url: https://cmi.ga.gov.au/data-products/dea/629/dea-fractional-cover-landsat
 published_date: "2021-10-01"
 author: L. L. @ ga.gov.au
 created: 2021-03-11T10:30:46+1100
@@ -19,7 +19,7 @@ is_primary_record: null
 project_leader: S. C. @ ga.gov.au
 branch_head: M. W. @ ga.gov.au
 related_items:
-  - DEA Fractional Cover Percentiles (Landsat, DEPRECATED)
+  - DEA Fractional Cover Percentiles (Landsat)
   - DEA Fractional Cover Percentiles (Landsat)
 anzsrc_research_code: EARTH SCIENCES
 

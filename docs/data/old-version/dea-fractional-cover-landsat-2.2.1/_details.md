@@ -1,7 +1,5 @@
 ## Background
 
-This product has been deprecated and is superseded by this product: [DEA Fractional Cover (Landsat)](/data/product/dea-fractional-cover-landsat/)
-
 Fractional cover data can be used to identify large scale patterns and trends and inform evidence based decision making and policy on topics including wind and water erosion risk, soil carbon dynamics, land management practices and rangeland condition.
 
 This information is used by policy agencies, natural and agricultural land resource managers, and scientists to monitor land conditions over large areas over long time frames.
@@ -9,9 +7,9 @@ This information is used by policy agencies, natural and agricultural land resou
 ## What this product offers
 
 Fractional Cover (FC), developed by the Joint Remote Sensing Research Program, is a measurement that splits the landscape into three parts, or fractions:
-* green (leaves, grass, and growing crops)
-* brown (branches, dry grass or hay, and dead leaf litter)
-* bare ground (soil or rock)
+* Green (leaves, grass, and growing crops)
+* Brown (branches, dry grass or hay, and dead leaf litter)
+* Bare ground (soil or rock)
 
 DEA uses Fractional Cover to characterise every 25 m square of Australia for any point in time from 1987 to today.
 
@@ -20,13 +18,13 @@ DEA uses Fractional Cover to characterise every 25 m square of Australia for any
 ## Applications
 
 Fractional cover provides valuable information for a range of environmental and agricultural applications, including:
-* soil erosion monitoring
-* land surface process modelling
-* land management practices (e.g. crop rotation, stubble management, rangeland management)
-* vegetation studies
-* fuel load estimation
-* ecosystem modelling
-* land cover mapping
+* Soil erosion monitoring
+* Land surface process modelling
+* Land management practices (e.g. crop rotation, stubble management, rangeland management)
+* Vegetation studies
+* Fuel load estimation
+* Ecosystem modelling
+* Land cover mapping
 
 ## Technical information
 
@@ -34,7 +32,7 @@ Fractional Cover (FC) is one of two vegetation-related products currently offere
 
 The FC algorithm was developed by the Joint Remote Sensing Research Program and is described in described in Scarth et al. (2010). It has been implemented by Geoscience Australia for every observation from Landsat Thematic Mapper (Landsat 5), Enhanced Thematic Mapper (Landsat 7) and Operational Land Imager (Landsat 8) acquired since 1987. It is calculated from terrain corrected surface reflectance (SR-NT\_25\_2.0.0).
 
-FC\_25 provides a 25m scale fractional cover representation of the proportions of green vegetation, non-green vegetation, and bare surface cover across the Australian continent. The fractions are retrieved by inverting multiple linear regression estimates and using synthetic endmembers in a constrained non-negative least squares unmixing model.
+FC_25 provides a 25m scale fractional cover representation of the proportions of green vegetation, non-green vegetation, and bare surface cover across the Australian continent. The fractions are retrieved by inverting multiple linear regression estimates and using synthetic endmembers in a constrained non-negative least squares unmixing model.
 
 For more information, see Scarth et al. (2010) and Schmidt et al. (2010).
 
@@ -58,13 +56,13 @@ For the unmixing error (UE) band, the values are scaled between 0 and 127  High 
 
 Nationally consistent information about fractional cover dynamics is essential to addressing a range of natural resource challenges. These include land management practices, air quality, soil erosion, rangeland condition and soil carbon dynamics.
 
-FC\_25 provides a consistent classification which will be an important foundation for land cover mapping and monitoring across Australia. It is a resource for natural resource managers, land surface process modellers, carbon modellers, rangeland managers, ecosystem scientists and policy makers.
+FC_25 provides a consistent classification which will be an important foundation for land cover mapping and monitoring across Australia. It is a resource for natural resource managers, land surface process modellers, carbon modellers, rangeland managers, ecosystem scientists and policy makers.
 
 The fractional cover algorithm was developed by the Joint Remote Sensing Research Program (JRSRP) and is described in Scarth et al. (2010). While originally calibrated in Queensland, a large collaborative effort between The Department of Agriculture - ABARES and State and Territory governments to collect additional field data has enabled the calibration/validation to extend to the entire Australian continent.
 
 1390 field data sites were used to train the model, and a separate 1565 sites were used to evaluate the model accuracy.
 
-FC\_25 was made possible by the collaborative framework established by the [Terrestrial Ecosystem Research Network (TERN)](http://www.tern.org.au) through the [National Collaborative Research Infrastructure Strategy (NCRIS)](https://www.education.gov.au/national-collaborative-research-infrastructure-strategy-ncris) and collaborative effort between state and Commonwealth governments.
+FC_25 was made possible by the collaborative framework established by the [Terrestrial Ecosystem Research Network (TERN)](http://www.tern.org.au) through the [National Collaborative Research Infrastructure Strategy (NCRIS)](https://www.education.gov.au/national-collaborative-research-infrastructure-strategy-ncris) and collaborative effort between state and Commonwealth governments.
 
 ## Processing steps
 

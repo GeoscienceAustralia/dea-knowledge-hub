@@ -6,12 +6,14 @@ header_image: /_files/cmi/FractionalCover1_0.jpg
 version: 3.0.0
 is_latest_version: true
 latest_version_link: null
+is_provisional: false
 product_type: Derivative
 spatial_data_type: Raster
 time_span:
   start: 1987
   end: present
 update_frequency: Annually
+next_update: null
 product_ids:
   - ga_ls_fc_pc_cyear_3
 
@@ -55,7 +57,7 @@ custom: null
 
 old_versions:
   - version: 2.2.1
-    title: DEA Fractional Cover Percentiles (Landsat, DEPRECATED)
+    title: DEA Fractional Cover Percentiles (Landsat)
     slug: dea-fractional-cover-percentiles-landsat-2.2.1
 
 # Settings

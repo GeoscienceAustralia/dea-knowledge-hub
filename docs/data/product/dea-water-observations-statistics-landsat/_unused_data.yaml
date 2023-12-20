@@ -1,9 +1,9 @@
-# Unused data migrated from the CMI. May be outdated.
+# Unused data migrated from the CMI
 
 # General
 
 cmi_node: 686
-cmi_url: /data-products/dea/686/dea-water-observations-statistics-landsat
+cmi_url: https://cmi.ga.gov.au/data-products/dea/686/dea-water-observations-statistics-landsat
 published_date: "2021-10-08"
 author: N. M. @ ga.gov.au
 created: 2021-10-08T12:04:55+1100
@@ -22,10 +22,10 @@ related_items:
   - DEA Water Observations (Landsat)
   - DEA Waterbodies (Landsat)
   - " DEA Wetlands Insight Tool (Ramsar Wetlands)"
-  - DEA Water Observations (Landsat, DEPRECATED)
-  - DEA Waterbodies (Landsat, DEPRECATED)
-  - DEA Water Observations Statistics (Landsat, DEPRECATED)
-  - DEA Water Observations Filtered Statistics (Landsat, DEPRECATED)
+  - DEA Water Observations (Landsat)
+  - DEA Waterbodies (Landsat)
+  - DEA Water Observations Statistics (Landsat)
+  - DEA Water Observations Filtered Statistics (Landsat)
 anzsrc_research_code: null
 
 # Access tab

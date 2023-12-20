@@ -1,9 +1,9 @@
-# Unused data migrated from the CMI. May be outdated.
+# Unused data migrated from the CMI
 
 # General
 
 cmi_node: 645
-cmi_url: /data-products/dea/645/dea-geometric-median-and-median-absolute-deviation-landsat
+cmi_url: https://cmi.ga.gov.au/data-products/dea/645/dea-geometric-median-and-median-absolute-deviation-landsat
 published_date: "2021-12-20"
 author: N. M. @ ga.gov.au
 created: 2021-06-15T11:33:12+1000

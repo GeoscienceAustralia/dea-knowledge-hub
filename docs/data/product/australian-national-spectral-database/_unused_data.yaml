@@ -1,9 +1,9 @@
-# Unused data migrated from the CMI. May be outdated.
+# Unused data migrated from the CMI
 
 # General
 
 cmi_node: 643
-cmi_url: /data-products/dea/643/australian-national-spectral-database
+cmi_url: https://cmi.ga.gov.au/data-products/dea/643/australian-national-spectral-database
 published_date: "2021-09-21"
 author: L. F. @ ga.gov.au
 created: 2021-06-09T15:46:08+1000

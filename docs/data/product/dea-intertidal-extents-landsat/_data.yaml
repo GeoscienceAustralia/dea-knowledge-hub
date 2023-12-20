@@ -6,12 +6,14 @@ header_image: /_files/cmi/intertidal_extents.png
 version: 2.0.0
 is_latest_version: true
 latest_version_link: null
+is_provisional: false
 product_type: Derivative
 spatial_data_type: Raster
 time_span:
   start: 1986
   end: 2016
 update_frequency: As needed
+next_update: No updates planned - new version in development
 product_ids:
   - item_v2
 
@@ -19,7 +21,7 @@ parent_products:
   name: Landsat 5, 7 and 8 NBAR and Observational Attributes (Collection 2)
   link: /data/category/dea-surface-reflectance/
 collection:
-  name: Geoscience Australia Landsat Collection 2 (DEPRECATED)
+  name: Geoscience Australia Landsat Collection 2
   link: null
 doi: null
 ecat: "113842"

@@ -1,0 +1,98 @@
+# Unused data migrated from the CMI
+
+# General
+
+cmi_node: 622
+cmi_url: https://cmi.ga.gov.au/data-products/dea/622/daily-satpaths-beta
+published_date: "2022-04-20"
+author: A. D. @ ga.gov.au
+created: 2021-02-03T16:58:50+1100
+
+# Basics tab
+
+program: dea
+theme: Data services
+catalogue: null
+collection_slug: null
+is_deprecated: null
+is_primary_record: null
+project_leader: S. O. @ ga.gov.au
+branch_head: M. W. @ ga.gov.au
+related_items: null
+anzsrc_research_code: EARTH SCIENCES
+
+# Access tab
+
+map_names: null
+ecat_url: null
+doi_url: null
+open_data_cube_configuration: null
+security_classification: Unclassified
+time_span_full:
+  start: 2021-01-31T14:00:00+1100
+  end: 2025-01-31T14:00:00+1100
+
+# Details tab
+
+relevant_websites:
+  - link: http://angstt.gov.au/
+    name: The Australian National Ground Segment Technical Team
+  - link: https://satpaths.nemo.ga.gov.au/gatle.txt
+    name: Daily two-line element set (TLE) web service
+
+# Processing tab
+
+data_sources: null
+major_algorithms: null
+schema_spatial_extent:
+  temporal_extent:
+    start: 2021-01-31T14:00:00+1100
+    end: 2025-01-31T14:00:00+1100
+  min_longitude: null
+  max_longitude: null
+  min_latitude: null
+  max_latitude: null
+  coordinate_reference_system: null
+  coordinate_reference_system_units: null
+  cell_size_x: null
+  cell_size_y: null
+  pixel_origin: null
+  spatial_extent:
+    geo_type: Polygon
+    lat: "-26.000000000000"
+    long: "135.500000000000"
+    left: "111.000000000000"
+    top: "-8.000000000000"
+    right: "160.000000000000"
+    bottom: "-44.000000000000"
+    geohash: null
+
+# Media tab
+
+media: null
+case_studies: null
+header_image_alt: Representation of a satelite path over Australia
+files: null
+
+# Credits tab
+
+owners:
+  - Commonwealth of Australia (Geoscience Australia)
+custodians:
+  - Commonwealth of Australia (Geoscience Australia)
+principal_contributors: null
+subject_matter_experts:
+  - Geoscience Australia - Director, Operations, NEMO
+publishing_entities:
+  - Commonwealth of Australia (Geoscience Australia)
+metadata_contacts:
+  - Geoscience Australia - Team Leader, Product Management, Operations Section NEMO
+media_contacts:
+  - Geoscience Australia - GA Media Hotline
+rights_statement: © Commonwealth of Australia (Geoscience Australia) 2022. [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/.).
+data_source_contacts:
+  - "Geoscience Australia - Team Leader, Applications and Systems Support, NEMO "
+approvers_checklist: null
+approvers_checklist_hprm_reference: D2022-21110
+pmp_hprm_reference: D2022-21122
+

@@ -1,9 +1,9 @@
-# Unused data migrated from the CMI. May be outdated.
+# Unused data migrated from the CMI
 
 # General
 
 cmi_node: 607
-cmi_url: /data-products/dea/607/dea-land-cover-landsat
+cmi_url: https://cmi.ga.gov.au/data-products/dea/607/dea-land-cover-landsat
 published_date: "2021-11-18"
 author: C. K. @ ga.gov.au
 created: 2020-11-30T19:36:43+1100
@@ -19,14 +19,14 @@ is_primary_record: null
 project_leader: N. M. @ ga.gov.au
 branch_head: M. W. @ ga.gov.au
 related_items:
-  - DEA Water Observations (Landsat, DEPRECATED)
-  - DEA Water Observations Statistics (Landsat, DEPRECATED)
-  - DEA Water Observations Filtered Statistics (Landsat, DEPRECATED)
-  - DEA Surface Reflectance Geomedian (Landsat, DEPRECATED)
-  - DEA Surface Reflectance Median Absolute Deviation (Landsat, DEPRECATED)
-  - DEA Fractional Cover (Landsat, DEPRECATED)
-  - DEA Fractional Cover Percentiles (Landsat, DEPRECATED)
-  - DEA Mangrove Canopy Cover (Landsat, DEPRECATED)
+  - DEA Water Observations (Landsat)
+  - DEA Water Observations Statistics (Landsat)
+  - DEA Water Observations Filtered Statistics (Landsat)
+  - DEA Surface Reflectance Geomedian (Landsat)
+  - DEA Surface Reflectance Median Absolute Deviation (Landsat)
+  - DEA Fractional Cover (Landsat)
+  - DEA Fractional Cover Percentiles (Landsat)
+  - DEA Mangrove Canopy Cover (Landsat)
   - DEA Intertidal Extents (Landsat)
 anzsrc_research_code: EARTH SCIENCES
 
@@ -53,14 +53,14 @@ relevant_websites:
 # Processing tab
 
 data_sources:
-  - DEA Water Observations (Landsat, DEPRECATED)
-  - DEA Water Observations Statistics (Landsat, DEPRECATED)
-  - DEA Water Observations Filtered Statistics (Landsat, DEPRECATED)
-  - DEA Surface Reflectance Geomedian (Landsat, DEPRECATED)
-  - DEA Surface Reflectance Median Absolute Deviation (Landsat, DEPRECATED)
-  - DEA Fractional Cover (Landsat, DEPRECATED)
-  - DEA Fractional Cover Percentiles (Landsat, DEPRECATED)
-  - DEA Mangrove Canopy Cover (Landsat, DEPRECATED)
+  - DEA Water Observations (Landsat)
+  - DEA Water Observations Statistics (Landsat)
+  - DEA Water Observations Filtered Statistics (Landsat)
+  - DEA Surface Reflectance Geomedian (Landsat)
+  - DEA Surface Reflectance Median Absolute Deviation (Landsat)
+  - DEA Fractional Cover (Landsat)
+  - DEA Fractional Cover Percentiles (Landsat)
+  - DEA Mangrove Canopy Cover (Landsat)
   - DEA Intertidal Extents (Landsat)
 major_algorithms: null
 schema_spatial_extent:

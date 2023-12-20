@@ -6,8 +6,6 @@ on:
     types: [republish-docs] # Triggered from the dea-notebooks repo
   push:
     branches: [main]
-  pull_request:
-    branches: [main]
 
 permissions:
   id-token: write # For requesting the JWT used by OIDC Authentication

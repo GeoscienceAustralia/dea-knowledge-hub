@@ -1,6 +1,6 @@
 ## Background
 
-:::{admonition} This is a sub-product
+:::{admonition} Sub-product
 :class: note
 This is a sub-product of **[DEA Surface Reflectance (Landsat 5 TM)](/data/product/dea-surface-reflectance-landsat-5-tm)**. See the parent product for more information.
 :::

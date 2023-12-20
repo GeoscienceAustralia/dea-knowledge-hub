@@ -6,12 +6,14 @@ header_image: /_files/cmi/DEA_Land_Cover_1_0_0_Lvl4_2015.jpg
 version: 1.0.0
 is_latest_version: true
 latest_version_link: null
+is_provisional: false
 product_type: Derivative
 spatial_data_type: Raster
 time_span:
   start: 1988
   end: 2020
 update_frequency: Annually
+next_update: No updates planned - new version in development
 product_ids:
   - ga_ls_landcover_class_cyear_2
 
@@ -19,7 +21,7 @@ parent_products:
   name: null
   link: null
 collection:
-  name: Geoscience Australia Landsat Collection 2 (DEPRECATED)
+  name: Geoscience Australia Landsat Collection 2
   link: null
 doi: 10.26186/146090
 ecat: "146090"

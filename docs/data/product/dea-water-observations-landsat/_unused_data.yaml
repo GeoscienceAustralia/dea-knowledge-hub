@@ -1,9 +1,9 @@
-# Unused data migrated from the CMI. May be outdated.
+# Unused data migrated from the CMI
 
 # General
 
 cmi_node: 613
-cmi_url: /data-products/dea/613/dea-water-observations-landsat
+cmi_url: https://cmi.ga.gov.au/data-products/dea/613/dea-water-observations-landsat
 published_date: "2021-12-06"
 author: B. T. @ ga.gov.au
 created: 2021-01-13T14:20:28+1100
@@ -43,7 +43,7 @@ data_sources:
   - Landsat 5 TM Level-2 Data Products - Surface Reflectance
   - Landsat 7 ETM+ Level-2 Data Products - Surface Reflectance
   - Landsat 8 OLI/TIRS Level-2 Data Products - Surface Reflectance
-  - DEA Pixel Quality (Landsat, DEPRECATED)
+  - DEA Pixel Quality (Landsat)
   - SRTM DSM/DEM data
 major_algorithms:
   - Water Observations from Space Detection Algorithm

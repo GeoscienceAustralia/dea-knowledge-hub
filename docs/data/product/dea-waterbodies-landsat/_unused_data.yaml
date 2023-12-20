@@ -1,9 +1,9 @@
-# Unused data migrated from the CMI. May be outdated.
+# Unused data migrated from the CMI
 
 # General
 
 cmi_node: 693
-cmi_url: /data-products/dea/693/dea-waterbodies-landsat
+cmi_url: https://cmi.ga.gov.au/data-products/dea/693/dea-waterbodies-landsat
 published_date: "2022-01-27"
 author: C. K. @ ga.gov.au
 created: 2021-11-05T16:24:07+1100
@@ -20,8 +20,8 @@ project_leader: V. N. @ ga.gov.au
 branch_head: S. O. @ ga.gov.au
 related_items:
   - DEA Water Observations (Landsat)
-  - DEA Water Observations (Landsat, DEPRECATED)
-  - DEA Waterbodies (Landsat, DEPRECATED)
+  - DEA Water Observations (Landsat)
+  - DEA Waterbodies (Landsat)
 anzsrc_research_code: null
 
 # Access tab
@@ -48,7 +48,7 @@ relevant_websites:
 
 data_sources:
   - DEA Water Observations (Landsat)
-  - DEA Waterbodies (Landsat, DEPRECATED)
+  - DEA Waterbodies (Landsat)
 major_algorithms:
   - Water Observations from Space Detection Algorithm
 schema_spatial_extent:

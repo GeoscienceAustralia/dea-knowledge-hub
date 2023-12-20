@@ -1,0 +1,107 @@
+# Unused data migrated from the CMI
+
+# General
+
+cmi_node: 842
+cmi_url: https://cmi.ga.gov.au/data-products/dea/842/draft-dea-waterbodies-landsat
+published_date: "2022-01-27"
+author: B. D. @ ga.gov.au
+created: 2023-09-15T10:13:12+1000
+
+# Basics tab
+
+program: dea
+theme: Inland water
+catalogue: DEA Water Observations
+collection_slug: geoscience-australia-landsat-collection-3
+is_deprecated: null
+is_primary_record: null
+project_leader: null
+branch_head: null
+related_items:
+  - DEA Water Observations (Landsat)
+  - DEA Water Observations (Landsat)
+  - DEA Waterbodies (Landsat)
+  - DEA Waterbodies (Landsat)
+anzsrc_research_code: null
+
+# Access tab
+
+map_names:
+  - DEA Maps
+ecat_url: http://pid.geoscience.gov.au/dataset/ga/146197
+doi_url: https://dx.doi.org/10.26186/146197
+open_data_cube_configuration: null
+security_classification: Unclassified
+time_span_full:
+  start: null
+  end: null
+
+# Details tab
+
+relevant_websites:
+  - link: https://www.dea.ga.gov.au/products/dea-waterbodies/faq
+    name: DEA Waterbodies - FAQ
+  - link: https://www.dea.ga.gov.au/products/dea-waterbodies/user-guide
+    name: DEA Waterbodies user guide
+
+# Processing tab
+
+data_sources:
+  - DEA Water Observations (Landsat)
+  - DEA Waterbodies (Landsat)
+major_algorithms:
+  - Water Observations from Space Detection Algorithm
+schema_spatial_extent:
+  temporal_extent:
+    start: 1986-08-15T01:00:00+1000
+    end: null
+  min_longitude: null
+  max_longitude: null
+  min_latitude: null
+  max_latitude: null
+  coordinate_reference_system: "Australian Albers / GDA94 (EPSG: 3577)"
+  coordinate_reference_system_units: metre
+  cell_size_x: 30
+  cell_size_y: 30
+  pixel_origin: null
+  spatial_extent:
+    geo_type: Polygon
+    lat: "-26.800000000000"
+    long: "133.500000000000"
+    left: "109.700000000000"
+    top: "-9.300000000000"
+    right: "157.300000000000"
+    bottom: "-44.300000000000"
+    geohash: null
+
+# Media tab
+
+media: null
+case_studies: null
+header_image_alt: waterbodies
+files: null
+
+# Credits tab
+
+owners:
+  - Commonwealth of Australia (Geoscience Australia)
+custodians:
+  - Commonwealth of Australia (Geoscience Australia)
+principal_contributors:
+  - V. N.
+subject_matter_experts:
+  - V. N.
+publishing_entities:
+  - Commonwealth of Australia (Geoscience Australia)
+metadata_contacts:
+  - Geoscience Australia - Team Leader, Product Management, Operations Section NEMO
+media_contacts:
+  - Geoscience Australia - GA Media Hotline
+rights_statement: © Commonwealth of Australia (Geoscience Australia) 2022. [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/.).
+data_source_contacts:
+  - "Geoscience Australia - Team Leader, Applications and Systems Support, NEMO "
+approvers_checklist: null
+approvers_checklist_hprm_reference: D2022-3017
+pmp_hprm_reference: null
+

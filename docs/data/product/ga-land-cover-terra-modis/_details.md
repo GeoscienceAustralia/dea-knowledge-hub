@@ -25,30 +25,34 @@ The primary purpose of the DLCDv2.1 product is to provide the Australian governm
 The product has many secondary uses. For example climate and weather modellers will be able use DLCDv2 to input land cover parameters into climate and weather models. Ecologists, decision makers and carbon modellers will be able to use DLCDv2 to assess how vegetation responds to disturbance including severe fires, floods, cyclones and land clearing activities. The DLCDv2 can also be used as a contextual layer for products such as the Atlas of Living Australia.
 
 Information about land cover dynamics is essential to understanding and addressing a range of national challenges such as drought, salinity, water availability and ecosystem health. This product can be used as an input for a wide range of environmental modelling applications, including:
-* climate
-* wind and water erosion risk
-* evapotranspiration
-* carbon dynamics
-* land surface processes
+
+* Climate
+* Wind and water erosion risk
+* Evapotranspiration
+* Carbon dynamics
+* Land surface processes
 
 ## Technical information
 
 The Dynamic Land Cover Dataset uses a standard land cover classification to show the change in behaviour of land cover across Australia. The DLCD includes data for every 250m by 250m area on the ground, for the period 2002 to 2015. The DLDC provides a basis for reporting on change and trends in vegetation cover and extent. Information about land cover dynamics is essential to understanding and addressing a range of national challenges such as drought, salinity, water availability and ecosystem health.
 
 The current release of the second version DLCDv2.1 (described in this document) presents land cover information for every 250m by 250m area of the country for each of the two year intervals listed in the table below. It consists of maps based on 2 years of MODIS EVI time-series data. The date ranges for each of the map series are:
-* January 2002-December 2003
-* January 2003-December 2004
-* January 2004-December 2005
-* January 2005-December 2006
-* January 2006-December 2007
-* January 2007-December 2008
-* January 2008-December 2009
-* January 2009-December 2010
-* January 2010-December 2011
-* January 2011-December 2012
-* January 2012-December 2013
-* January 2013-December 2014
-* January 2014-December 2015
+
+:::{dropdown} Date ranges for each of the map series
+* Jan 2002&ndash;Dec 2003
+* Jan 2003&ndash;Dec 2004
+* Jan 2004&ndash;Dec 2005
+* Jan 2005&ndash;Dec 2006
+* Jan 2006&ndash;Dec 2007
+* Jan 2007&ndash;Dec 2008
+* Jan 2008&ndash;Dec 2009
+* Jan 2009&ndash;Dec 2010
+* Jan 2010&ndash;Dec 2011
+* Jan 2011&ndash;Dec 2012
+* Jan 2012&ndash;Dec 2013
+* Jan 2013&ndash;Dec 2014
+* Jan 2014&ndash;Dec 2015
+:::
 
 In conjunction with other data sources, the DLCD can be used to identify emerging patterns of land cover change and provide a spatial and historical context within which to interpret change.
 
@@ -97,22 +101,20 @@ The first version of the DLCD product suite (DLCDv1) was published in 2011 and w
 
 1. Generating Time Series for DLCD
 The MOD13Q1 data for each 16 day interval were concatenated into a data cube to enable retrieval of a time series of EVI values for an individual pixel.
-
 2. Time series noise removal
 The EVI data contain occasional spikes and dips that do not represent biophysical changes and are not captured by the data quality flags. These anomalous points were removed using the spike removal algorithm outlined in Lymburner et al. (2011).
-
 3. DLCD Time Series Analysis
 The MODIS EVI data cube is analysed to characterise the time series trends for each pixel. This process represents the time series in a form that allows it to be classified more easily. The initial characterisation of the time series data involves these steps:
-* Piece-wise Linear Segmentation 
-  * The time series segmentation algorithm approximates a time series using a series of piece-wise linear segments. Each segment is characteristic of a sequence of environmental behaviour that typifies the associated land cover class.
-* Sub-sequence Discretization 
-  * Each segment is then detailed by three values describing its starting value, slope and length to form a vector input to the classification process.
-* Sequence Labelling 
-  * The sequences are then clustered into groups of like behaviour, and each group then assigned a behaviour label. A time series is thus transformed from a large collection of varying values to a smaller set of behaviour types, joined as a kind of “DNA” string representing the pixel through time.
-* Markov modelling
-  * The DNA string provides an initial class which is then modelled as a dynamic Markov Chain to estimate the likelihood that a particular land cover class would occur after any other land cover class.
-* Bayesian classification
-  * The final class is then assigned using a Bayesian classifier.
+    * Piece-wise Linear Segmentation 
+        * The time series segmentation algorithm approximates a time series using a series of piece-wise linear segments. Each segment is characteristic of a sequence of environmental behaviour that typifies the associated land cover class.
+    * Sub-sequence Discretization 
+        * Each segment is then detailed by three values describing its starting value, slope and length to form a vector input to the classification process.
+    * Sequence Labelling 
+        * The sequences are then clustered into groups of like behaviour, and each group then assigned a behaviour label. A time series is thus transformed from a large collection of varying values to a smaller set of behaviour types, joined as a kind of “DNA” string representing the pixel through time.
+    * Markov modelling
+        * The DNA string provides an initial class which is then modelled as a dynamic Markov Chain to estimate the likelihood that a particular land cover class would occur after any other land cover class.
+    * Bayesian classification
+        * The final class is then assigned using a Bayesian classifier.
 
 % ## Software
 

@@ -1,6 +1,7 @@
 ## Background
 
-This product has been deprecated and is superseded by these products:  
+This product has been deprecated and is superseded by these products:
+
 * [DEA Surface Reflectance OA (Landsat 5 TM)](/data/product/dea-surface-reflectance-oa-landsat-5-tm/)
 * [DEA Surface Reflectance OA (Landsat 7 ETM+)](/data/product/dea-surface-reflectance-oa-landsat-7-etm/)
 * [DEA Surface Reflectance OA (Landsat 8 OLI-TIRS)](/data/product/dea-surface-reflectance-oa-landsat-8-oli-tirs/)
@@ -14,11 +15,12 @@ Historically this has been done via the user selecting 'cloud free' images as in
 This product facilitates interpretation and processing of Surface Reflectance NBAR/NBART, Fractional Cover and all derivative products.
 
 It provides an assessment of the quality of observations at a pixel level and includes information about:
-* spectral contiguity (lack of signal in any band)
-* saturation in any band
-* presence of cloud
-* presence of cloud shadow
-* land or sea
+
+* Spectral contiguity (lack of signal in any band)
+* Saturation in any band
+* Presence of cloud
+* Presence of cloud shadow
+* Land or sea
 
 % ## Data description
 
@@ -27,10 +29,11 @@ It provides an assessment of the quality of observations at a pixel level and in
 By removing the need for cloud screening and specific scene selection the PQ25 will significantly reduce pre-processing requirements for a wide range of land and coastal monitoring applications and render more accurate results from these analyses, particularly for those utilising time series data.
 
 Such applications include various forms of change detection, including the monitoring of:
-* urban growth
-* coastal habitats
-* mining activities
-* agricultural production
+
+* Urban growth
+* Coastal habitats
+* Mining activities
+* Agricultural production
 
 It can also be used in compliance surveys, scientific research and emergency management.
 

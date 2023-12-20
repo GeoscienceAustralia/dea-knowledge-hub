@@ -10,3 +10,9 @@ pages:
   - name: Australian National Spectral Database
     link: /data/product/australian-national-spectral-database/
     image: /_files/cmi/spectral_2.jpg
+  - name: Australian Geographic Reference Image
+    link: /data/product/australian-geographic-reference-image/
+    image: /_files/cmi/agri.jpg
+  - name: Daily SatPaths
+    link: /data/product/daily-satpaths-beta/
+    image: /_files/cmi/SatPaths_image.png

@@ -1,9 +1,9 @@
-# Unused data migrated from the CMI. May be outdated.
+# Unused data migrated from the CMI
 
 # General
 
 cmi_node: 174
-cmi_url: /data-products/dea/174/dea-intertidal-extents-landsat
+cmi_url: https://cmi.ga.gov.au/data-products/dea/174/dea-intertidal-extents-landsat
 published_date: "2017-11-02"
 author: S. S. @ ga.gov.au
 created: 2018-03-12T12:00:00+1100
@@ -43,7 +43,7 @@ relevant_websites:
 # Processing tab
 
 data_sources:
-  - DEA Pixel Quality (Landsat, DEPRECATED)
+  - DEA Pixel Quality (Landsat)
 major_algorithms:
   - OTPS TPX08 Atlas Tidal Model
   - Normalised Difference Water Index (NDWI)

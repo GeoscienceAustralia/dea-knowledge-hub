@@ -1,11 +1,10 @@
 ## Background
 
-This product has been deprecated and is superseded by this product: [DEA Fractional Cover Percentiles (Landsat)](/data/product/dea-fractional-cover-percentiles-landsat/)
-
 The Fractional Cover 2 (Landsat) product, developed by the Joint Remote Sensing Research Program, provides information about the the proportions of:
-* green vegetation
-* non-green vegetation (including deciduous trees during autumn and dry grass)
-* bare areas for every 25m x 25m ground footprint
+
+* Green vegetation
+* Non-green vegetation (including deciduous trees during autumn and dry grass)
+* Bare areas for every 25m x 25m ground footprint
 
 It provides insight into how areas of dry vegetation and/or bare soil and green vegetation are changing over time.
 
@@ -17,29 +16,27 @@ This product is designed to make it easier to analyse and interpret fractional c
 
 This product is available in the following forms:
 
-**FC-PERCENTILE-SUMMARY**
+:::{list-table}
 
-This contains a (10th, 50th and 90th percentile) of bare, green and non-green vegetation of all observations contained within the DEA (from 1987 to the most up to date imagery available).
-
-**FC-PERCENTILE-ANNUAL-SUMMARY**
-
-This contains a (10th, 50th and 90th percentile) of bare, green and non-green vegetation of observations acquired in each full calendar year (1st of January - 31st December) from 1987 to the most recent full calendar year.
-
-**FC-PERCENTILE-SEASONAL-SUMMARY**
-
-This contains a (10th, 50th and 90th percentile) of bare, green and non-green vegetation of observations acquired within each calendar season (DJF, MAM, JJA, SON).  This product is available for the most recent 8 seasons.
+* - **FC-PERCENTILE-SUMMARY**
+  - This contains a (10th, 50th and 90th percentile) of bare, green and non-green vegetation of all observations contained within the DEA (from 1987 to the most up to date imagery available).
+* - **FC-PERCENTILE-ANNUAL-SUMMARY**
+  - This contains a (10th, 50th and 90th percentile) of bare, green and non-green vegetation of observations acquired in each full calendar year (1st of January - 31st December) from 1987 to the most recent full calendar year.
+* - **FC-PERCENTILE-SEASONAL-SUMMARY**
+  - This contains a (10th, 50th and 90th percentile) of bare, green and non-green vegetation of observations acquired within each calendar season (DJF, MAM, JJA, SON).  This product is available for the most recent 8 seasons.
+:::
 
 % ## Data description
 
 ## Applications
 
 This product provides valuable information for a range of environmental and agricultural applications, including:
-* soil erosion monitoring
-* land surface process modelling
-* land management practices (e.g. crop rotation, stubble management, rangeland management)
-* vegetation studies
-* fuel load estimation
-* ecosystem modelling
+* Soil erosion monitoring
+* Land surface process modelling
+* Land management practices (e.g. crop rotation, stubble management, rangeland management)
+* Vegetation studies
+* Fuel load estimation
+* Ecosystem modelling
 
 ## Technical information
 
@@ -50,13 +47,25 @@ The percentile ranges for each compositing period can be used to identify the 'g
 The 10th and 90th percentile are used in preference to the minimum and maximum values because they are less prone to residual noise associated with undetected cloud/cloud shadow. The 50th percentile (median) are used in preference to the mean as the median is less prone to being skewed by extreme values. It is worth noting that some undetected cloud and cloud shadow artefacts may still be present in the 10th and 90th percentiles, especially in areas with frequent cloud cover such as the wet tropics and Tasmania.
 
 To account for satellite availability and status the statistics are calculated using the following satellites for the following periods of time:
-* 1987-1998 : Landsat 5
-* 1999 : Landsat 5 and Landsat 7
-* 2000-2002 : Landsat 7
-* 2003 : Landsat 5 and Landsat 7
-* 2004-2010 : Landsat 5
-* 2011-2012 : Landsat 7
-* 2013 onward : Landsat 8
+
+:::{list-table}
+
+* - **1987&ndash;1998**
+  - Landsat 5
+* - **1999**
+  - Landsat 5 and Landsat 7
+* - **2000&ndash;2002**
+  - Landsat 7
+* - **2003**
+  - Landsat 5 and Landsat 7
+* - **2004&ndash;2010**
+  - Landsat 5
+* - **2011&ndash;2012**
+  - Landsat 7
+* - **2013 onward**
+  - Landsat 8
+
+:::
 
 The values for this product are scaled as follows:  
 For the fractional cover bands (PV, NPV, BS)  

@@ -1,9 +1,9 @@
-# Unused data migrated from the CMI. May be outdated.
+# Unused data migrated from the CMI
 
 # General
 
 cmi_node: 325
-cmi_url: /data-products/dea/325/dea-intertidal-elevation-landsat
+cmi_url: https://cmi.ga.gov.au/data-products/dea/325/dea-intertidal-elevation-landsat
 published_date: "2018-11-29"
 author: R. B. @ ga.gov.au
 created: 2018-03-12T12:00:00+1100
@@ -44,7 +44,7 @@ relevant_websites:
 data_sources:
   - DEA Intertidal Extents (Landsat)
   - High-Resolution Depth Model (Northern Australia)
-  - DEA Surface Reflectance NBART (Landsat, DEPRECATED)
+  - DEA Surface Reflectance NBART (Landsat)
 major_algorithms:
   - OTPS TPX08 Atlas Tidal Model
   - Waterline contour extraction
