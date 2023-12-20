@@ -380,6 +380,6 @@
 
 .. raw:: html
 
-   <script type="text/javascript" src="/_static/scripts/tocbot.min.js"></script>
-   <script type="text/javascript" src="/_static/scripts/tocbot-data-product.js" /></script>
+   <script type="text/javascript" src="/_static/scripts/vendors/tocbot.min.js"></script>
+   <script type="text/javascript" src="/_static/scripts/product-table-of-contents.js" /></script>
    <script type="text/javascript" src="/_static/scripts/access-cards-tooltips.js" /></script>
