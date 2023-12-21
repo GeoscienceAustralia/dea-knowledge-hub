@@ -11,6 +11,10 @@ nav.bd-docs-nav {
     a.current.reference {
         font-weight: bold;
     }
+
+    .toctree-checkbox:checked + label {
+        transform: rotate(180deg);
+    }
 }
 
 @media (min-width: 960px) {
