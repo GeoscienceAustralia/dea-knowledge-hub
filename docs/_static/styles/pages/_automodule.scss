@@ -26,6 +26,10 @@
         margin-bottom: 1.15rem;
     }
 
+    dl dt.field-odd li em, dl dd.field-odd li em {
+        font-style: normal;
+    }
+
     .sig {
         margin-top: 3rem;
         margin-bottom: 1.15rem;
@@ -38,7 +42,7 @@
         }
 
         .sig-param .n .pre {
-            color: var(--pst-color-inline-code);
+            font-weight: bold;
         }
 
         .sig-name {
