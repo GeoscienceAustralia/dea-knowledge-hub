@@ -5,6 +5,27 @@
         margin-bottom: 1.65rem;
     }
 
+    dl dd {
+        margin-left: 0 !important;
+    }
+
+    dl dt.field-even, dl dt.field-odd {
+        background: none !important;
+        margin-bottom: 1.15rem !important;
+    }
+
+    dl.field-list > dd {
+        margin-bottom: 1.15rem;
+    }
+
+    ol > li:last-child {
+        margin-bottom: 1.15rem !important;
+    }
+
+    dl .classifier {
+        margin-bottom: 1.15rem;
+    }
+
     .sig {
         margin-top: 3rem;
         margin-bottom: 1.15rem;
@@ -34,12 +55,9 @@
         }
     }
 
-    dl dd {
-        margin-left: 0 !important;
-    }
-
-    dl dt.field-even, dl dt.field-odd {
-        background: none !important;
-        margin-bottom: 1.15rem !important;
+    .autosummary {
+        .reference .xref {
+            margin-right: 0.5rem;
+        }
     }
 }
