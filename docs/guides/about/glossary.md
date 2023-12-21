@@ -43,8 +43,8 @@ determined from a set of radiation observations originally sensed by satellite s
 
 {#aws}=
 ## Amazon Web Services (AWS)
-One of the two environments used for hosting Digital Earth Australia. Amazon Web Services is a commercial cloud 
-computing provider. Used by Digital Earth Australia for our JupyterHub Sandbox and Web Mapping Services.
+One of the two environments used for hosting [Digital Earth Australia](#dea). Amazon Web Services is a commercial cloud 
+computing provider. Used by Digital Earth Australia for our JupyterHub [Sandbox](#dea-sandbox) and Web Mapping Services.
 
 {#ard}
 ## Analysis Ready Data (ARD)
@@ -187,8 +187,8 @@ For more information, see [the GitHub repository](https://github.com/GeoscienceA
 {#dea-sandbox}
 ## DEA Sandbox
 The Digital Earth Australia Sandbox is a learning and analysis environment for getting started with DEA and the 
-[Open Data Cube](#odc). It includes sample data and 
-[Jupyter notebooks](#jupyter-nb) that demonstrate the capability of the [Open Data Cube](#odc).
+[Open Data Cube](#odc). It includes sample data and [Jupyter notebooks](#jupyter-nb) that demonstrate the capability 
+of the [Open Data Cube](#odc).
 
 For more information, see [the getting started wiki](https://github.com/GeoscienceAustralia/dea-notebooks/wiki).
 
@@ -214,15 +214,15 @@ version of the [Thematic Mapper](#tm).
 
 For more information, see [NASA Enhanced Thematic Mapper Plus](https://landsat.gsfc.nasa.gov/etm-plus/).
 
-   Ephemeris
-      A table of satellite orbital locations for specific time intervals. The ephemeris data helps
-      characterise the conditions under which remotely sensed data is collected and is commonly used to
-      correct the sensor data before analysis.
+{#ephemeris}
+## Ephemeris
+A table of satellite orbital locations for specific time intervals. The ephemeris data helps characterise the 
+conditions under which remotely sensed data is collected and is commonly used to correct the sensor data before analysis.
 
-   European Space Agency
-   ESA
-      The European Space Agency is a European intergovernmental collaboration focussed on the development of
-      Europe's space capability. The ESA is a partner of the :term:`Copernicus Programme`.
+{#esa}
+## European Space Agency (ESA)
+The European Space Agency is a European intergovernmental collaboration focussed on the development of Europe's space 
+capability. The ESA is a partner of the [Copernicus Programme](#copernicus-programme).
 
    Exiting angle (degrees)
       The angle between a ray reflected from a surface and the line perpendicular to the surface at the
