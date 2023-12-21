@@ -1,8 +1,10 @@
 main#main-content article.bd-article details.sd-dropdown {
+    $vertical-space: 1.5rem;
+
+    margin-top: 0 !important;
     margin-bottom: 0 !important;
-    padding-bottom: 1rem !important;
-    padding-top: 1.25rem !important;
-    padding-bottom: 1.25rem !important;
+    padding-top: $vertical-space !important;
+    padding-bottom: $vertical-space !important;
     border-top: 1px solid var(--pst-color-border) !important;
     border-bottom: 1px solid var(--pst-color-border) !important;
 
@@ -33,10 +35,18 @@ main#main-content article.bd-article details.sd-dropdown {
         .sd-summary-down, .sd-summary-up {
             top: 0 !important;
             right: 3px !important;
+
+            svg {
+                opacity: 1;
+                transform: scale(1.1);
+            }
         }
     }
 
     .sd-summary-content {
-        padding: 0 !important;
+        padding-top: $vertical-space !important;
+        padding-bottom: $vertical-space !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
     }
 }
