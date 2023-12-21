@@ -1,0 +1,42 @@
+main#main-content article.bd-article details.sd-dropdown {
+    margin-bottom: 0 !important;
+    padding-bottom: 1rem !important;
+    padding-top: 1.25rem !important;
+    padding-bottom: 1.25rem !important;
+    border-top: 1px solid var(--pst-color-border) !important;
+    border-bottom: 1px solid var(--pst-color-border) !important;
+
+    & + details.sd-dropdown {
+        border-top: none !important;
+    }
+
+    &, summary.sd-card-header, summary.sd-card-header+div.sd-summary-content {
+        box-shadow: none !important;
+        border-radius: 0 !important;
+        background-color: initial !important;
+        border-left: none !important;
+    }
+
+    .sd-summary-title {
+        padding: 0 !important;
+
+        svg {
+            font-weight: bold !important;
+        }
+
+        &:hover {
+            color: $highlight-color !important;
+        }
+    }
+
+    summary.sd-card-header {
+        .sd-summary-down, .sd-summary-up {
+            top: 0 !important;
+            right: 3px !important;
+        }
+    }
+
+    .sd-summary-content {
+        padding: 0 !important;
+    }
+}
