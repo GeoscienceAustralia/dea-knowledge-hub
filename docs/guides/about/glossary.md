@@ -1,21 +1,22 @@
 # Digital Earth Australia Glossary
 
-(acquisition)=
+{#acquisition}
 ## Acquisition
 An image captured by a satellite sensor.
-(alos)=
+
+{#alos}
 ## Advanced Land Observing Satellite (ALOS)
 A Japanese satellite launched in 2006. After five years of service, the satellite lost power and ceased communication 
 with Earth, but remains in orbit.
 
-(aster)=
+{#aster}
 ## Advanced Spaceborne Thermal and Reflection radiometer (ASTER)
 An imaging instrument onboard Terra, the flagship satellite of NASA's Earth Observing System (EOS) launched in December 
 1999. ASTER data is used to create detailed maps of land surface temperature, reflectance, and elevation.
 
 For more information, see [NASA: ASTER.](https://asterweb.jpl.nasa.gov/)
 
-(avhrr)=
+{#avhrr}
 ## Advanced Very-High Resolution Radiometer (AVHRR)
 A radiation-detection sensor that can be used for remotely determining cloud cover and the surface temperature. AVHRR 
 instruments are carried by the National Oceanic and Atmospheric Administration (NOAA) family of polar orbiting 
@@ -23,138 +24,138 @@ and European MetOp satellites.
 
 For more information, see [ESA: AVHRR.](https://earth.esa.int/eogateway/missions/noaa)
 
-(aerosol-optical-depth)=
+{#aerosol-optical-depth}
 ## Aerosol optical depth
 Aerosol optical depth is a measure of the extinction of the solar beam by dust and haze.
 
 For more information, see [NASA Earth Observatory.](https://earthobservatory.nasa.gov/global-maps/MODAL2_M_AER_OD)
 
-(albedo)=
+{#albedo}
 ## Albedo
 The fraction of light that a surface reflects. Albedo is measured on a scale of 0-1, with 1 indicating that all light 
 has been reflected by the surface.
 
-(algorithm)= 
+{#algorithm}=
 ## Algorithm
 In the context of remote sensing, algorithms generally specify how to determine higher-level data products from 
 lower-level source data. For example, algorithms prescribe how atmospheric temperature and moisture profiles are 
 determined from a set of radiation observations originally sensed by satellite sounding instruments.
 
-(aws)= 
+{#aws}=
 ## Amazon Web Services (AWS)
 One of the two environments used for hosting Digital Earth Australia. Amazon Web Services is a commercial cloud 
 computing provider. Used by Digital Earth Australia for our JupyterHub Sandbox and Web Mapping Services.
 
-(ard)=
+{#ard}
 ## Analysis Ready Data (ARD)
 Satellite data that has been processed to a minimum set of requirements and organised into a form that allows 
 immediate analysis and interoperability through time and with other datasets.
 
-(api)=
+{#api}
 ## Application Programming Interface (API)
 A software intermediary that allows two applications to talk to each other. The 
-[Open Data Cube](/guides/about/glossary/#odc) API gives programmers full access to the capabilities of the Cube, 
+[Open Data Cube](#odc) API gives programmers full access to the capabilities of the Cube, 
 allowing query and advanced data retrieval.
 
-(atm-corr)=
+{#atm-corr}
 ## Atmospheric correction
 The process of removing the effects of the atmosphere on the reflectance values of images taken by satellite or 
 airborne sensors.
 
-(agdc)=
+{#agdc}
 ## Australian Geoscience Data Cube (AGDC)
-A collaborative prototype project between Geoscience Australia, [CSIRO](/guides/about/glossary/#csiro) and 
-[NCI](/guides/about/glossary/#nci), which aimed to  provide better public access to NASA’s extensive Landsat archive. 
-The AGDC has since been superseded by [Digital Earth Australia](/guides/about/glossary/#dea).
+A collaborative prototype project between Geoscience Australia, [CSIRO](#csiro) and 
+[NCI](#nci), which aimed to  provide better public access to NASA’s extensive Landsat archive. 
+The AGDC has since been superseded by [Digital Earth Australia](#dea).
 
-(are)=
+{#are}
 ## Australian Research Environment (ARE)
-The ARE is an interface for using the data and software available on the [NCI](/guides/about/glossary/#nci). 
-It is a replacement for the old [VDI](/guides/about/glossary/#vdi) system.
+The ARE is an interface for using the data and software available on the [NCI](#nci). 
+It is a replacement for the old [VDI](#vdi) system.
 
 For more information, see [Australian Research Environment](https://are.nci.org.au/).
 
-(azimuth)=
+{#azimuth}
 ## Azimuth
 The angle of an object’s position from true north.
 
-(azimuth-exit)=
+{#azimuth-exit}
 ## Azimuthal exiting (degrees)
 The angle between true north and the exiting direction in the slope geometry.
 
-(azimuth-inc)=
+{#azimuth-inc}
 ## Azimuthal incident (degrees)
 The angle between true north and the incident direction in the slope geometry.
 
-(band)=
+{#band}
 ## Band
 A discrete wavelength interval or range observed by a remote sensing instrument.
 
-(barest-earth)=
+{#barest-earth}
 ## Barest Earth
 An estimate of the spectra of the barest state (i.e. least vegetation) observed from imagery of the Australian 
 continent collected by the Landsat 5, 7, and 8 satellites.
 
-(brdf)=
+{#brdf}
 ## Bidirectional Reflectance Distribution Function (BRDF)
 Bidirectional reflectance distribution function is a theoretical concept that describes the relationship between light 
 and an opaque surface. It uses a target's irradiance geometry and the remote sensing system’s relative angle to the 
 target.
 
-(brdf-albedo)=
+{#brdf-albedo}
 ## Bidirectional Reflectance Distribution Function (BRDF) / Albedo Parameter
 The Bidirectional Reflectance Distribution Function (BRDF)/Albedo parameters provide:
-* coefficients for mathematical functions that describe the BRDF of each pixel in the seven [MODIS](/guides/about/glossary/#modis) 'Land' bands (1- 7); and
-* [albedo](/guides/about/glossary/#albedo) measurements derived simultaneously from the BRDF for bands 1-7 as well as three broad bands (0.4-0.7, 0.7-3.0, and 0.4- 3.0 micrometers).
+* coefficients for mathematical functions that describe the BRDF of each pixel in the seven [MODIS](#modis) 'Land' bands (1- 7); and
+* [albedo](#albedo) measurements derived simultaneously from the BRDF for bands 1-7 as well as three broad bands (0.4-0.7, 0.7-3.0, and 0.4- 3.0 micrometers).
 
 For more information see: [NASA](https://modis.gsfc.nasa.gov/data/dataprod/mod43.php).
 
-(cog)=
+{#cog}
 ## Cloud Optimised GeoTIFF (COG)
 A data file format optimised for efficient workflows on the cloud and partial file access.
 
-(collection)=
+{#collection}
 ## Collection
-All products downstream of the rawest form of the main input data ([telemetry](/guides/about/glossary/#telemetry)), 
+All products downstream of the rawest form of the main input data ([telemetry](#telemetry)), 
 produced sequentially and processed with consistent algorithms/code/inputs/outputs.
 
-(c2)=
+{#c2}
 ## Collection 2 (C2)
-Digital Earth Australia's second [collection](/guides/about/glossary/#collection) of Landsat data. Now superseded by 
-[Collection 3](/guides/about/glossary/#c3). Note that there was no DEA Collection 2 of Sentinel 2 products.
+Digital Earth Australia's second [collection](#collection) of Landsat data. Now superseded by 
+[Collection 3](#c3). Note that there was no DEA Collection 2 of Sentinel 2 products.
 
-(c3)=
+{#c3}
 ## Collection 3 (C3)
-The third [collection](/guides/about/glossary/#collection) of Digital Earth Australia's Landsat or Sentinel 2 data, 
+The third [collection](#collection) of Digital Earth Australia's Landsat or Sentinel 2 data, 
 and the most up-to-date collection available.
 
-(collection-upgrade)=
+{#collection-upgrade}
 ## Collection upgrade
-The reproduction of the [collection](/guides/about/glossary/#collection), including all downstream products, with the 
-initial input being the rawest form ([telemetry](/guides/about/glossary/#telemetry)). Collections are updated when 
+The reproduction of the [collection](#collection), including all downstream products, with the 
+initial input being the rawest form ([telemetry](#telemetry)). Collections are updated when 
 there are fundamental changes and upgrades to the data suite that make it incompatible with the existing collection. 
 Therefore a collection upgrade is more akin to a movie franchise reboot than a re-release.
 
-(ceos-seo)=
+{#ceos-seo}
 ## Committee on Earth Observations, Systems Engineering Office (CEOS-SEO)
 Established in 1984, CEOS is the primary forum for the international coordination of space-based Earth observations. 
 The SEO performs historical coverage analyses using the data archives for the Landsat, Sentinel-1, and Sentinel-2 missions.
 
-(csiro)=
+{#csiro}
 ## Commonwealth Scientific and Industrial Research Organisation (CSIRO)
 An Australian federal government agency responsible for scientific research.
 
 For more information, see [CSIRO](https://www.csiro.au/).
 
-(cophub)=
+{#cophub}
 ## Copernicus Australasia Regional Data Hub
-Copernicus Australasia is a regional hub supporting the [Copernicus Program](/guides/about/glossary/#cop-prog). The 
+Copernicus Australasia is a regional hub supporting the [Copernicus Program](#cop-prog). The 
 Copernicus Australasia Regional Data Hub provides free and open access to data from Europe's Sentinel satellite
 missions for the following South-East Asia and South Pacific region.
 
 For more information, see [Copernicus Australasia](https://www.copernicus.gov.au/).
 
-(cop-prog)=
+{#cop-prog}
 ## Copernicus Programme
 The Copernicus Programme, established in 2014, is the European Union (EU)'s Earth observation programme coordinated and 
 managed by the European Commission in partnership with the European Space Agency (ESA), the EU Member States and EU 
@@ -162,54 +163,54 @@ Agencies.
 
 For more information, see [Copernicus Programme](https://www.copernicus.eu/en).
 
-(dataset)=
+{#dataset}
 ## Dataset
 A related set of files composed of separate elements that can be manipulated as a unit. It is an instantiation of a 
-[product](/guides/about/glossary/#product).
+[product](#product).
 
-(dea)=
+{#dea}
 ## Digital Earth Australia (DEA)
-A Program of [Geoscience Australia](/guides/about/glossary/#ga) that uses spatial data and images recorded by satellites 
+A Program of [Geoscience Australia](#ga) that uses spatial data and images recorded by satellites 
 orbiting our planet to detect physical changes across Australia. DEA prepares these vast volumes of Earth observation 
 data and makes it available to governments and industry for easy use. DEA is the Australian implementation of the 
-[Open Data Cube](/guides/about/glossary/#odc).
+[Open Data Cube](#odc).
 
 For more information, see [the DEA website](https://www.dea.ga.gov.au/).
 
-(dea-nb)=
+{#dea-nb}
 ## DEA Notebooks
-An open-source repository containing [Jupyter notebooks](/guides/about/glossary/#jupyter-nb), tools and workflows for 
-geospatial analysis with [Open Data Cube](/guides/about/glossary/#odc) and [xarray](/guides/about/glossary/#xarray).
+An open-source repository containing [Jupyter notebooks](#jupyter-nb), tools and workflows for 
+geospatial analysis with [Open Data Cube](#odc) and [xarray](#xarray).
 
 For more information, see [the GitHub repository](https://github.com/GeoscienceAustralia/dea-notebooks).
 
-(dea-sandbox)=
+{#dea-sandbox}
 ## DEA Sandbox
 The Digital Earth Australia Sandbox is a learning and analysis environment for getting started with DEA and the 
-[Open Data Cube](/guides/about/glossary/#odc). It includes sample data and 
-[Jupyter notebooks](/guides/about/glossary/#jupyter-nb) that demonstrate the capability of the [Open Data Cube](/guides/about/glossary/#odc).
+[Open Data Cube](#odc). It includes sample data and 
+[Jupyter notebooks](#jupyter-nb) that demonstrate the capability of the [Open Data Cube](#odc).
 
 For more information, see [the getting started wiki](https://github.com/GeoscienceAustralia/dea-notebooks/wiki).
 
-(deafrica)=
+{#deafrica}
 ## Digital Earth Africa (DE Africa)
 A sister project to Digital Earth Australia but for the African Continent.
 
 For more information, see [Digital Earth Africa](https://www.digitalearthafrica.org/).
 
-(dynamic-range)=
+{#dynamic-range}
 ## Dynamic range
 The range between the maximum and minimum amount of input radiant energy that an instrument can measure.
 
-(eo)=
+{#eo}
 ## Earth Observation (EO)
 The process of acquiring observations of the Earth's surface via remote sensing instruments. These can include 
 satellite-based observations, as well as drone or aerial images.
 
-(etmp)=
+{#etmp}
 ## Enhanced Thematic Mapper Plus (ETM+)
 The sensor aboard Landsat 7 that picks up solar radiation reflected by or emitted from the Earth. It is an enhanced 
-version of the [Thematic Mapper](/guides/about/glossary/#tm).
+version of the [Thematic Mapper](#tm).
 
 For more information, see [NASA Enhanced Thematic Mapper Plus](https://landsat.gsfc.nasa.gov/etm-plus/).
 
