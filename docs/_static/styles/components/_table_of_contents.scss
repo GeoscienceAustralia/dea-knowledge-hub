@@ -15,14 +15,13 @@
 
     a {
         font-size: $font-size;
-        background-color: $bg-color-grey;
         border: 1px solid $bg-color-grey;
         padding: 0.25rem 0.5rem;
         border-radius: 0.25rem;
         text-decoration: none;
 
         &:hover {
-            background-color: $hover-bg-color-grey;
+            background-color: $bg-color-grey;
         }
 
         &, &:visited {
