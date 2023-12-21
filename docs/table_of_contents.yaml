@@ -176,6 +176,7 @@ entries:
           - file: guides/about/changelog
           - file: guides/about/publications
           - file: guides/about/glossary
+            title: DEA Glossary
 
   - file: notebooks/README # The notebooks repository manages its own table of contents.
     title: DEA Notebooks
