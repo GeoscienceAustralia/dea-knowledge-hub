@@ -6,24 +6,27 @@
     }
 
     .sig {
-        margin-top: 2rem;
-        border-top: 1px solid var(--bs-border-color, #dee2e6);
-        padding-top: 2rem;
+        margin-top: 3rem;
         margin-bottom: 1.15rem;
+        padding-bottom: 1px;
+        border-bottom: 1px solid var(--bs-border-color, #dee2e6);
 
-        .property {}
+        .property .pre, .sig-prename, .sig-paren, .sig-param {
+            color: var(--pst-color-text-muted, #48566b);
+            font-weight: normal;
+        }
 
-        .sig-prename {}
+        .sig-param .n .pre {
+            color: var(--pst-color-inline-code);
+        }
 
         .sig-name {
-            color: #905;
+            font-size: 1.2rem;
             margin-right: 0.5em;
         }
 
-        .sig-param {}
-
-        &, .sig-name {
-            font-size: 1.2rem;
+        .sig-paren {
+            font-size: initial;
         }
 
         em {
