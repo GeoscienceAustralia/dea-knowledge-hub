@@ -554,7 +554,9 @@ through the satellite and the point being imaged on Earth.
 ## Satellite view or satellite zenith (degrees)
 The angle between the zenith and the satellite.
 
-![satellite view](/docs/_files/reference/satellite-view.png)
+```{image} /_files/reference/satellite-view.png
+:scale: 40
+```
 
 {#saturation}
 ## Saturation
