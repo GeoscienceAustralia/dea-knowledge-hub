@@ -44,11 +44,11 @@ html_title = "DEA Knowledge Hub"
 html_logo = "_files/logos/ga-dea-combined-logo.svg"
 html_favicon = "_static/favicons/dea-favicon.ico"
 html_theme = 'pydata_sphinx_theme'
-html_baseurl = ""
 language = "en"
 
 if environment["build_mode"] == "production": html_baseurl = "https://docs.dea.ga.gov.au/"
 elif environment["build_mode"] == "demo": html_baseurl = f"https://{environment['git_branch']}--dea-docs.netlify.app/"
+else: html_baseurl = ""
 
 html_permalinks = False
 
@@ -72,9 +72,10 @@ extensions = [
 myst_enable_extensions = [
     "colon_fence",
     "attrs_inline",
+    "attrs_block",
     "dollarmath",
 ]
-myst_heading_anchors = 0
+myst_heading_anchors = 6
 myst_all_links_external = True
 
 nbsphinx_execute = "never"
@@ -140,5 +141,5 @@ html_context = {
 if environment["build_mode"] == "production": html_context["google_analytics_ga4_tag"] = "G-4B9D450HR4"
 
 suppress_warnings = [
-    "etoc.toctree"
+    # "etoc.toctree"
 ]
