@@ -1,6 +1,6 @@
 html {
-    // --pst-font-family-heading: #{meta.inspect($heading-font-family)};
-    // --pst-font-family-base-system: #{meta.inspect($content-font-family)};
+    --pst-font-family-heading: #{$heading-font-family} !important;
+    --pst-font-family-base-system: #{$content-font-family} !important;
     --pst-color-primary: #{$text-color} !important;
     --pst-color-text-base: #{$text-color} !important;
     --pst-color-primary-highlight: #{$highlight-color} !important;
@@ -39,4 +39,8 @@ dt:target, span.highlighted {
     &:hover {
         background-color: $hover-highlight-color;
     }
+}
+
+.form-control:focus, .form-control:focus-visible {
+    outline: none;
 }
