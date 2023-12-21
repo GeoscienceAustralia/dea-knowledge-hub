@@ -554,10 +554,6 @@ through the satellite and the point being imaged on Earth.
 ## Satellite view or satellite zenith (degrees)
 The angle between the zenith and the satellite.
 
-```{image} /_files/reference/satellite-view.png
-:scale: 40
-```
-
 {#saturation}
 ## Saturation
 The intensity of a colour. A highly saturated colour is vivid and brilliant. To dull a colour and decrease its 
