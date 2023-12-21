@@ -15,18 +15,17 @@
 
     a {
         font-size: $font-size;
-        background-color: #f3f4f6;
-        border: 1px solid #f3f4f6;
+        background-color: $bg-color-grey;
+        border: 1px solid $bg-color-grey;
         padding: 0.25rem 0.5rem;
         border-radius: 0.25rem;
         text-decoration: none;
-        color: var(--pst-color-text-base) !important;
 
         &:hover {
-            border: 1px solid var(--pst-color-text-base);
+            background-color: $hover-bg-color-grey;
         }
 
-        &:visited {
+        &, &:visited {
             color: var(--pst-color-primary);
         }
     }

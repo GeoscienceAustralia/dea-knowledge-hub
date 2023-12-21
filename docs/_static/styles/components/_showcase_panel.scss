@@ -45,7 +45,7 @@
     }
 
     &.bg-grey {
-        background-color: var(--sd-color-primary-bg);
+        background-color: $bg-color-grey;
     }
 
     &[class*="bg-gradient-"] {

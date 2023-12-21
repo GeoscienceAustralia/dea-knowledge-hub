@@ -77,7 +77,7 @@ article.bd-article {
     }
 
     table tr:hover {
-        background-color: var(--sd-color-card-hover);
+        background-color: $hover-bg-color-white;
     }
 
     a.sd-bg-bdg-button-link-primary-outline {
