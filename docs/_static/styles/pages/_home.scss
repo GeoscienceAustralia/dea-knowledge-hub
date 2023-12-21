@@ -41,7 +41,7 @@ article.bd-article .home-page {
     }
 
     & > hr {
-        border-color: var(--pst-color-primary);
+        border-color: $text-color;
     }
 
     #data-products, #about-dea {

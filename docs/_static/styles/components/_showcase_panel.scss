@@ -55,7 +55,7 @@
     }
 
     &.bg-gradient-primary {
-        background: linear-gradient(1turn, var(--pst-color-secondary), var(--pst-color-primary));
+        background: linear-gradient(1turn, $highlight-color, $text-color);
     }
 
     &.bg-gradient-stone {

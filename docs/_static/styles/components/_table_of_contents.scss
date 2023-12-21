@@ -26,7 +26,7 @@
         }
 
         &, &:visited {
-            color: var(--pst-color-primary);
+            color: $text-color;
         }
     }
 }

@@ -2,8 +2,8 @@ footer.bd-footer {
     padding-top: 24px;
     background: linear-gradient(
         1turn,
-        var(--pst-color-secondary),
-        var(--pst-color-primary)
+        $highlight-color,
+        $text-color
     );
 
     p, a, .footer-copyright {

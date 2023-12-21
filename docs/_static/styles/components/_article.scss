@@ -43,6 +43,10 @@ article.bd-article {
         margin-top: 0 !important;
     }
 
+    a {
+        font-weight: bold;
+    }
+
     dl.field-list > dt {
         padding-left: 0;
     }
@@ -52,7 +56,9 @@ article.bd-article {
     }
 
     .sd-tab-set > label:hover {
-        border-top: none;
+        border-top: 2px solid rgba(0, 0, 0, 0) !important;
+        border-bottom: 2px solid $highlight-color !important;
+        color: $highlight-color !important;
     }
 
     .sd-card {
@@ -73,7 +79,7 @@ article.bd-article {
     }
 
     .sd-card-title {
-        color: var(--pst-color-primary);
+        color: $text-color;
     }
 
     table tr:hover {
