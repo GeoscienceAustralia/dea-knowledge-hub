@@ -20,10 +20,23 @@ html {
     color: white;
 }
 
+dt:target, span.highlighted {
+    background-color: transparent;
+}
+
 #searchbox {
     display: none;
 }
 
-dt:target, span.highlighted {
-    background-color: transparent;
+.skip-link {
+    background-color: white;
+    color: $text-color;
+}
+
+#pst-back-to-top {
+    background-color: $highlight-color;
+
+    &:hover {
+        background-color: $hover-highlight-color;
+    }
 }
