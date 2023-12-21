@@ -4,24 +4,11 @@ $breakpoint-lg: 992px;
 $breakpoint-xl: 1200px;
 $breakpoint-xxl: 1400px;
 
+$text-color: #082e41;
+$highlight-color: #00718b;
 $bg-color-grey: #e6edef;
 $hover-bg-color-white: #f2f2f2;
 $hover-bg-color-grey: #d6e2e5;
 
-html {
-    --pst-font-family-heading: "Nimbus Sans Novus", sans-serif;
-    --pst-font-family-base-system: "Source Sans Pro", Arial, sans-serif;
-
-    --pst-color-primary: #082e41 !important;
-    --pst-color-secondary: #00718b !important;
-    --pst-color-primary-highlight: #00708b !important;
-    --pst-color-secondary-highlight: #e6edef !important;
-    --pst-color-text-base: #082e41 !important;
-    --bs-link-color: #00718b !important;
-    --bs-link-hover-color: #00718b !important;
-    --pst-color-link: #00718b !important;
-    --pst-color-link-hover: #00718b !important;
-    --pst-color-accent: #773775 !important;
-    --sd-color-card-border-hover: var(--pst-color-border) !important;
-    --pst-color-inline-code: #082e41 !important;
-}
+$heading-font-family: "Nimbus Sans Novus", sans-serif;
+$content-font-family: "Source Sans Pro", Arial, sans-serif;

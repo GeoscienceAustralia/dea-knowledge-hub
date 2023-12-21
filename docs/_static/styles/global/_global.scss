@@ -1,9 +1,22 @@
 html {
+    --pst-font-family-heading: $heading-font-family;
+    --pst-font-family-base-system: $content-font-family;
+    --pst-color-primary: $text-color !important;
+    --pst-color-text-base: $text-color !important;
+    --pst-color-primary-highlight: $highlight-color !important;
+    --bs-link-color: $highlight-color !important;
+    --bs-link-hover-color: $highlight-color !important;
+    --pst-color-link: $highlight-color !important;
+    --pst-color-link-hover: $highlight-color !important;
+    --pst-color-inline-code: $text-color !important;
+}
+
+html {
     scroll-behavior: auto !important;
 }
 
 ::selection {
-    background: var(--pst-color-secondary);
+    background: $highlight-color;
     color: white;
 }
 
