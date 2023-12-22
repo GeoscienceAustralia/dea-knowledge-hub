@@ -48,9 +48,9 @@ main#main-content article.bd-article details.sd-dropdown {
     }
 
     .sd-summary-content {
-        padding-top: $vertical-space !important;
+        padding-top: 0 !important;
         padding-bottom: $vertical-space !important;
-        padding-left: 0 !important;
-        padding-right: 0 !important;
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
     }
 }
