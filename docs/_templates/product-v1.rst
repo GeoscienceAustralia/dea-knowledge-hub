@@ -363,6 +363,21 @@
        {% endif %}
     {% endif %}
 
+    {% if data.enable_faqs %}
+    .. tab-item:: FAQs
+       :name: faqs-tab
+
+       .. container:: table-of-contents
+
+          .. container::
+             :name: faqs-table-of-contents
+
+             |nbsp|
+
+       .. include:: _faqs.md
+          :parser: myst_parser.sphinx_
+    {% endif %}
+
     {% if data.enable_credits %}
     .. tab-item:: Credits
        :name: credits-tab
@@ -373,7 +388,7 @@
              :name: credits-table-of-contents
 
              |nbsp|
-    
+
        .. include:: _credits.md
           :parser: myst_parser.sphinx_
     {% endif %}
