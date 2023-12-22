@@ -16,17 +16,3 @@ Our OGC Web Service supporting WMS, WCS and some WPS functionality is <https://o
 
 If you notice an error in this documentation, things that could be explained more clearly, or things that are missing, please let us know by creating an Issue in the [dea-notebooks Github repository](https://github.com/GeoscienceAustralia/dea-notebooks/issues), and list what you would like to see changed.
 
-:::{contents} On this page
-:local:
-:backlinks: none
-:::
-
-## Test 1
-
-## Test 2
-
-## Test 3
-
-### Test 3.A
-
-### Test 3.B
