@@ -133,7 +133,7 @@ html_theme_options = {
     },
 }
 
-if environment["build_mode"] == "local":
+if environment["build_mode"] == "demo":
     html_theme_options["announcement"] = f"You are viewing <strong>{environment['demo_name']}</strong> on <a href=\"https://github.com/GeoscienceAustralia/dea-docs/tree/{environment['git_branch']}\">{environment['git_branch']}</a> branch. <a href=\"https://app.netlify.com/sites/dea-docs/deploys/{environment['deploy_id']}\">View the build log</a>. <a href=\"https://docs.dea.ga.gov.au/\" target=\"_self\">Go to the main website</a>."
 
 html_context = {
