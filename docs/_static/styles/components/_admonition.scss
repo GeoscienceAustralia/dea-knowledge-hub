@@ -19,7 +19,47 @@
         margin-top: 0;
     }
 
+    &.note {
+        background-color: var(--pst-color-info-bg);
+    }
+
+    &.important {
+        background-color: var(--pst-color-attention-bg);
+    }
+
+    &.hint {
+        background-color: var(--pst-color-success-bg);
+    }
+
+    &.hint {
+        background-color: var(--pst-color-success-bg);
+    }
+
+    &.seealso {
+        background-color: var(--pst-color-success-bg);
+    }
+
+    &.tip {
+        background-color: var(--pst-color-success-bg);
+    }
+
+    &.attention {
+        background-color: var(--pst-color-attention-bg);
+    }
+
+    &.caution {
+        background-color: var(--pst-color-warning-bg);
+    }
+
+    &.warning {
+        background-color: var(--pst-color-warning-bg);
+    }
+
     &.danger {
-        background: var(--pst-color-danger-bg);
+        background-color: var(--pst-color-danger-bg);
+    }
+
+    &.error {
+        background-color: var(--pst-color-danger-bg);
     }
 }
