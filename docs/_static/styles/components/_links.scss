@@ -1,0 +1,19 @@
+a {
+    .internal-link {}
+
+    .external-link {
+        &:after {
+            content: "\f0c1";
+            font-family: FontAwesome;
+            font-weight: normal;
+            font-style: normal;
+            display: inline-block;
+            text-decoration: none;
+            padding-left: 3px;
+        }
+    }
+
+    .anchor-link {
+        text-decoration-style: dashed;
+    }
+}
