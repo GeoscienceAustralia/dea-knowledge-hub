@@ -3,8 +3,6 @@ main#main-content article.bd-article details.sd-dropdown {
 
     margin-top: 3rem !important;
     margin-bottom: 0 !important;
-    padding-top: $vertical-space !important;
-    padding-bottom: $vertical-space !important;
     border-top: 1px solid var(--pst-color-border) !important;
     border-bottom: 1px solid var(--pst-color-border) !important;
 
@@ -25,7 +23,8 @@ main#main-content article.bd-article details.sd-dropdown {
     }
 
     .sd-summary-title {
-        padding: 0 !important;
+        padding-top: $vertical-space !important;
+        padding-bottom: $vertical-space !important;
 
         svg {
             font-weight: bold !important;
@@ -38,7 +37,7 @@ main#main-content article.bd-article details.sd-dropdown {
 
     summary.sd-card-header {
         .sd-summary-down, .sd-summary-up {
-            top: 0 !important;
+            top: 1.5rem !important;
             right: 3px !important;
 
             svg {
