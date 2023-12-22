@@ -1,5 +1,7 @@
 # Frequently Asked Questions
 
+Here you will find answers to frequently asked questions about DEA’s products and services.
+
 :::{dropdown} How do I download data from DEA?
 :name: download-dea-data
 
@@ -59,4 +61,3 @@ Table 1: Availability of the Landsat satellites for Earth observation and relate
 
 :::
 
- 
