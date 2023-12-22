@@ -1,0 +1,25 @@
+.admonition, div.admonition {
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    padding-top: 9px;
+    padding-left: 16px;
+    padding-bottom: 16px;
+    padding-right: 16px;
+
+    a {
+        color: $text-color;
+        font-weight: bold;
+
+        &:hover {
+            color: $text-color;
+        }
+    }
+
+    .admonition-title + p {
+        margin-top: 0;
+    }
+
+    &.danger {
+        background: var(--pst-color-danger-bg);
+    }
+}
