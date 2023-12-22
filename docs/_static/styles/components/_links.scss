@@ -1,7 +1,11 @@
 a {
-    .internal-link {}
+    &.anchor-link {
+        text-decoration-style: dashed;
+    }
 
-    .external-link {
+    &.internal-link {}
+
+    &.external-link {
         &:after {
             content: "\f0c1";
             font-family: FontAwesome;
@@ -10,10 +14,7 @@ a {
             display: inline-block;
             text-decoration: none;
             padding-left: 3px;
+            font-size: 80%;
         }
-    }
-
-    .anchor-link {
-        text-decoration-style: dashed;
     }
 }
