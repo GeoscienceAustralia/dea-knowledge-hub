@@ -1,0 +1,15 @@
+nav.contents {
+    background-color: initial !important;
+    box-shadow: none !important;
+    border: none !important;
+    padding: 0 !important;
+
+    .topic-title {
+        font-size: 1rem !important;
+    }
+
+    ul ul {
+        list-style: none !important;
+        padding-left: 1rem !important;
+    }
+}
