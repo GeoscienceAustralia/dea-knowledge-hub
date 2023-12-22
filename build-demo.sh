@@ -12,4 +12,4 @@ sass --style=compressed ./docs/_static/styles/index.scss ./docs/_static/styles/s
 
 cp ./docs/_robots/robots-demo.txt ./docs/robots.txt
 
-sphinx-build -b dirhtml -j auto ./docs ./output
+sphinx-build -b dirhtml ./docs ./output
