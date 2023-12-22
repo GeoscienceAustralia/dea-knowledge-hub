@@ -12,3 +12,4 @@ sphinx-external-toc
 sphinx-sitemap
 sphinxext-opengraph
 sphinx-notfound-page
+sphinx-copybutton

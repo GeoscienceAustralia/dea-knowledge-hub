@@ -67,6 +67,7 @@ extensions = [
     "sphinx_sitemap",
     "sphinxext.opengraph",
     "notfound.extension",
+    "sphinx_copybutton",
 ]
 
 myst_enable_extensions = [
