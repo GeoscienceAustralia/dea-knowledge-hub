@@ -108,7 +108,7 @@ notfound_template = "404-not-found.html"
 notfound_pagename = "404-not-found"
 notfound_urls_prefix = ""
 
-tippy_enable_doitips = False
+tippy_enable_doitips = True
 tippy_enable_wikitips = False
 
 html_css_files = [
