@@ -1,13 +1,24 @@
 .sidebar-header-items {
     .sidebar-header-items__title {
+        margin-bottom: 1.15rem;
+    }
+
+    .navbar-item:nth-of-type(1) { // Site logo
         display: none;
     }
 
-    .navbar-item:nth-of-type(1) {
-        display: none;
+    ul.bd-navbar-elements {
+        margin-bottom: 1.15rem;
+
+        li {
+            margin-bottom: 3px;
+
+            a {
+                font-weight: bold;
+                font-size: 1rem;
+            }
+        }
     }
 
-    .navbar-item:nth-of-type(3) {
-        margin-top: 20px;
-    }
+    .bd-search {}
 }
