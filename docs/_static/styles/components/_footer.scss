@@ -39,6 +39,10 @@ footer.bd-footer {
     .policy-links li {
         display: inline;
         margin-right: 2rem;
+
+        @media only screen and (max-width: $breakpoint-xl) {
+            line-height: 2rem;
+        }
     }
 
     .footer-items__start,
