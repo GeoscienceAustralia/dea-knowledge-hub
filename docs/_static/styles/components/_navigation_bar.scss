@@ -12,6 +12,18 @@ nav.navbar {
         height: 40px;
     }
 
+    @media only screen and (max-width: $breakpoint-sm) {
+        .navbar-brand.logo {
+            position: absolute;
+            padding-right: 1rem;
+
+            img {
+                width: auto;
+                height: auto;
+            }
+        }
+    }
+
     .navbar-header-items {
         padding-right: 8px;
     }
