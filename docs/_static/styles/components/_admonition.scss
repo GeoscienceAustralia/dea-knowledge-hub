@@ -19,16 +19,16 @@
         margin-top: 0;
     }
 
+    &, &.info {
+        background-color: var(--pst-color-info-bg);
+    }
+
     &.note {
         background-color: var(--pst-color-info-bg);
     }
 
     &.important {
         background-color: var(--pst-color-attention-bg);
-    }
-
-    &.hint {
-        background-color: var(--pst-color-success-bg);
     }
 
     &.hint {
