@@ -1,6 +1,5 @@
 .card-list {
-    padding-top: 1.15rem;
-    padding-bottom: 1.15rem;
+    padding-bottom: 1px;
 
     & > .rubric {
         font-size: 1.375rem;
@@ -11,10 +10,6 @@
         .svg-inline--fa {
             font-size: 1.25rem;
             margin-right: 0.25rem;
-        }
-
-        .sd-col {
-            margin-top: calc(var(--sd-gutter-y) * 0.5);
         }
 
         .sd-card {
