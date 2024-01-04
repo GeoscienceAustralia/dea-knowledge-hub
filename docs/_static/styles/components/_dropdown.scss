@@ -32,6 +32,10 @@ main#main-content article.bd-article details.sd-dropdown {
 
         &:hover {
             color: $highlight-color !important;
+
+            @media only screen and (max-width: $breakpoint-md) {
+                color: $text-color !important;
+            }
         }
     }
 
