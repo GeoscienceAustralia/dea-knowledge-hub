@@ -19,6 +19,10 @@ article.bd-article .home-page {
     h1 + p {
         margin-bottom: 3rem;
 
+        @media only screen and (max-width: $breakpoint-md) {
+            margin-bottom: 1.15rem;
+        }
+
         a {
             white-space: nowrap;
         }
@@ -30,10 +34,18 @@ article.bd-article .home-page {
 
     .showcase-panel {
         margin-bottom: 1.75rem;
+
+        @media only screen and (max-width: $breakpoint-md) {
+            margin-bottom: 1.5rem;
+        }
     }
 
     .card-list {
         margin-bottom: 2.75rem;
+
+        @media only screen and (max-width: $breakpoint-md) {
+            margin-bottom: 1.5rem;
+        }
 
         .sd-mb-4, .sd-my-4 {
             margin-bottom: 0 !important;
