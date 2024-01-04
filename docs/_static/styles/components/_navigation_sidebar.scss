@@ -64,6 +64,16 @@
                     }
                 }
             }
+
+            .bd-sidebar-primary {
+                li.has-children > .reference {
+                    padding-right: 38px;
+                }
+
+                label.toctree-toggle {
+                    margin-right: 8px;
+                }
+            }
         }
     }
 
