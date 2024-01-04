@@ -1,6 +1,6 @@
 .bd-sidebar {
     $breakpoint-sidebar: 960px;
-    $list-space: 8px;
+    $list-space-mobile: 8px;
 
     .sidebar-header-items { // Displays on mobile
         .sidebar-header-items__title {
@@ -15,7 +15,7 @@
             margin-bottom: 1.15rem;
 
             li {
-                margin-bottom: $list-space;
+                margin-bottom: $list-space-mobile;
 
                 a {
                     font-weight: bold;
@@ -57,10 +57,10 @@
 
             ul.bd-sidenav {
                 li {
-                    margin-bottom: $list-space;
+                    margin-bottom: $list-space-mobile;
 
                     ul {
-                        margin-top: $list-space;
+                        margin-top: $list-space-mobile;
                     }
                 }
             }
