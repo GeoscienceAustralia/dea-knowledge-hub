@@ -1,7 +1,4 @@
-const responseCode301 = {
-    statusCode: 301,
-    statusDescription: "Moved Permanently"
-};
+// This function handles redirect logic
 
 async function handler(event) {
     const request = event.request;
@@ -10,16 +7,22 @@ async function handler(event) {
     const indexHtmlPattern = /\/index\.html$/g;
     const filetypeExtensionsPattern = /\.(html|rst|md|ipynb|py)$/g;
 
-    // Redirect 'DEA Tools' source code URLs to the 'automodule' page generated from the source code.
+    const status301MovedPermanently = {
+        statusCode: 301,
+        statusDescription: "Moved Permanently"
+    };
+
+    // Redirect DEA Tools source code URLs to the relevant 'automodule' page generated from the source code.
+    // E.g. "../Tools/dea_tools/coastal.py" => "/notebooks/Tools/gen/dea_tools.coastal/"
 
     if (deaToolsSourceCodePattern.test(uri)) {
-        const toolName = uri.match(deaToolsSourceCodePattern);
-        const toolUri = `/notebooks/Tools/gen/dea_tools.${toolName}/`;
+        const deaToolsName = uri.match(deaToolsSourceCodePattern)[1];
+        const deaToolsUri = `/notebooks/Tools/gen/dea_tools.${deaToolsName}/`;
         return {
-            ...responseCode301,
+            ...status301MovedPermanently,
             headers: {
                 location: {
-                    value: toolUri
+                    value: deaToolsUri
                 }
             }
         };
@@ -29,7 +32,7 @@ async function handler(event) {
 
     if (indexHtmlPattern.test(uri)) {
         return {
-            ...responseCode301,
+            ...status301MovedPermanently,
             headers: {
                 location: {
                     value: uri.replace(indexHtmlPattern, "/")
@@ -42,7 +45,7 @@ async function handler(event) {
 
     if (filetypeExtensionsPattern.test(uri)) {
         return {
-            ...responseCode301,
+            ...status301MovedPermanently,
             headers: {
                 location: {
                     value: uri.replace(filetypeExtensionsPattern, "/")
