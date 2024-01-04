@@ -3,6 +3,7 @@ import os
 sys.path.insert(0, os.path.abspath('.'))
 from _modules import utilities
 from _modules import mock_imports
+from _modules import demo_banner
 
 environment = {
     "build_mode": os.environ.get("BUILD_MODE"),
@@ -133,8 +134,12 @@ html_theme_options = {
     },
 }
 
-if environment["build_mode"] == "demo":
-    html_theme_options["announcement"] = f"You are viewing <strong>{environment['demo_name']}</strong> on <a href=\"https://github.com/GeoscienceAustralia/dea-docs/tree/{environment['git_branch']}\">{environment['git_branch']}</a> branch. <a href=\"https://app.netlify.com/sites/dea-docs/deploys/{environment['deploy_id']}\">View the build log</a>. <a href=\"https://docs.dea.ga.gov.au/\" target=\"_self\">Go to the main website</a>."
+if True: # environment["build_mode"] == "demo":
+    html_theme_options["announcement"] = demo_banner.create(
+        environment['demo_name'],
+        environment['git_branch'],
+        environment['deploy_id']
+    )
 
 html_context = {
     "default_mode": "light",
