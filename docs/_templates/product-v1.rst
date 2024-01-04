@@ -340,6 +340,9 @@
              |nbsp|
 
        {% if not is_latest_version %}
+       .. rubric:: Other versions
+          :name: other-versions
+
        You can find the history in the `latest version of the product <{{ data.latest_version_link }}>`_.
        {% else %}
        .. rubric:: Old versions

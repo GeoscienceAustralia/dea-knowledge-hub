@@ -7,9 +7,23 @@ nav.navbar {
         max-width: 100%;
     }
 
-    .navbar-brand img {
-        width: 323px;
-        height: 40px;
+    .navbar-brand {
+        img {
+            width: 323px;
+            height: 40px;
+        }
+
+        @media only screen and (max-width: $breakpoint-sm) {
+            &.logo {
+                position: absolute;
+                padding-right: 1rem;
+
+                img {
+                    width: auto;
+                    height: auto;
+                }
+            }
+        }
     }
 
     .navbar-header-items {
@@ -35,6 +49,14 @@ nav.navbar {
 
             form.bd-search {
                 margin-left: auto;
+            }
+        }
+
+        @media only screen and (min-width: 960px) and (max-width: 1048px) {
+            .navbar-item {
+                &:nth-of-type(1), &:nth-of-type(3) {
+                    display: none;
+                }
             }
         }
     }

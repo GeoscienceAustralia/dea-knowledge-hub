@@ -4,18 +4,19 @@
 @import "pages/home";
 @import "pages/category";
 @import "pages/product";
+@import "pages/search";
 @import "pages/not_found";
 @import "pages/automodule";
 
 @import "components/navigation_bar";
 @import "components/navigation_sidebar";
-@import "components/mobile_navigation_sidebar";
 @import "components/article";
 @import "components/footer";
+@import "components/breadcrumbs";
 @import "components/showcase_panel";
 @import "components/card_list";
-@import "components/table_of_contents";
 @import "components/page_table_of_contents";
+@import "components/product_table_of_contents";
 @import "components/notebook";
 @import "components/search_bar";
 @import "components/dropdown";

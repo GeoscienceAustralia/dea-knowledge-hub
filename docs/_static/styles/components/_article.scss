@@ -1,5 +1,6 @@
-article.bd-article {
+main#main-content article.bd-article {
     padding-left: 0 !important;
+    padding-bottom: 4rem;
 
     h1, h2, h3, h4, h5, h6 {
         font-weight: bold;
@@ -42,10 +43,6 @@ article.bd-article {
         border-bottom: none !important;
         margin-top: 0 !important;
     }
-
-    // a {
-    //     font-weight: bold;
-    // }
 
     dl.field-list > dt {
         padding-left: 0;

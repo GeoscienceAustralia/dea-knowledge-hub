@@ -1,6 +1,10 @@
 .table-of-contents {
     $font-size: 0.85rem;
 
+    @media only screen and (max-width: $breakpoint-md) {
+        line-height: 2rem;
+    }
+
     ol {
         display: flex;
         flex-wrap: wrap;
@@ -11,6 +15,10 @@
     li {
         list-style: none;
         padding-right: $font-size;
+
+        @media only screen and (max-width: $breakpoint-md) {
+            padding-right: 1rem;
+        }
     }
 
     a {
@@ -20,6 +28,10 @@
         padding: 0.25rem 0.5rem;
         border-radius: 0.25rem;
         text-decoration: none;
+
+        @media only screen and (max-width: $breakpoint-md) {
+            font-size: 1rem;
+        }
 
         &:hover {
             background-color: $hover-bg-color-grey;

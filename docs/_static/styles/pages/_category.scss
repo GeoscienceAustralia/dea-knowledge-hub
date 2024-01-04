@@ -1,5 +1,26 @@
 article.bd-article .category-page {
+    $list-space-desktop: 0.25rem;
+    $list-space-mobile: 8px;
+
     & > div > ul {
         padding-top: 1.15rem;
+
+        li {
+            margin-bottom: $list-space-desktop;
+
+            ul {
+                margin-top: $list-space-desktop;
+            }
+        }
+
+        @media only screen and (max-width: $breakpoint-md) {
+            li {
+                margin-bottom: $list-space-mobile;
+
+                ul {
+                    margin-top: $list-space-mobile;
+                }
+            }
+        }
     }
 }

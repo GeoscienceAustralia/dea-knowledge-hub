@@ -1,9 +1,8 @@
 .card-list {
-    padding-top: 1.15rem;
-    padding-bottom: 1.15rem;
+    padding-bottom: 1px;
 
     & > .rubric {
-        font-size: var(--pst-font-size-h2);
+        font-size: 1.375rem;
         font-weight: bold;
     }
 
@@ -13,17 +12,13 @@
             margin-right: 0.25rem;
         }
 
-        .sd-col {
-            margin-top: calc(var(--sd-gutter-y) * 0.5);
-        }
-
         .sd-card {
             text-align: center;
             border-radius: 0;
-            background-color: $bg-color-grey;
+            background-color: $bg-color-grey !important;
 
             &:hover {
-                background-color: $hover-bg-color-grey;
+                background-color: $hover-bg-color-grey !important;
             }
         }
 
