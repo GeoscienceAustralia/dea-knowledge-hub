@@ -6,18 +6,20 @@ const responseCode301 = {
 async function handler(event) {
     const request = event.request;
     const uri = event.request.uri;
+    const deaToolsSourceCodePattern = /dea_tools\/(.*)\.py$/g;
     const indexHtmlPattern = /\/index\.html$/g;
-    const pythonExtensionPattern = /\.py$/g;
     const filetypeExtensionsPattern = /\.(html|rst|md|ipynb|py)$/g;
 
-    // Redirect URLs ending in ".py"
+    // Redirect 'DEA Tools' source code URLs to the 'automodule' page generated from the source code.
 
-    if (pythonExtensionPattern.text(uri)) {
+    if (deaToolsSourceCodePattern.test(uri)) {
+        const toolName = uri.match(deaToolsSourceCodePattern);
+        const toolUri = `/notebooks/Tools/gen/dea_tools.${toolName}/`;
         return {
             ...responseCode301,
             headers: {
                 location: {
-                    value: uri.replace(indexHtmlPattern, "/")
+                    value: toolUri
                 }
             }
         };
