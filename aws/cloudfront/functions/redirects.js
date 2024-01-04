@@ -16,13 +16,15 @@ async function handler(event) {
     // E.g. "../Tools/dea_tools/coastal.py" => "/notebooks/Tools/gen/dea_tools.coastal/"
 
     if (deaToolsSourceCodePattern.test(uri)) {
-        const deaToolsName = uri.match(deaToolsSourceCodePattern)[1];
-        const deaToolsUri = `/notebooks/Tools/gen/dea_tools.${deaToolsName}/`;
+        const sourceCodePath = uri.match(deaToolsSourceCodePattern)[1];
+        const automoduleName = sourceCodePath.replaceAll("/", ".");
+        const automoduleUri = `/notebooks/Tools/gen/dea_tools.${deaToolsName}/`;
+
         return {
             ...status301MovedPermanently,
             headers: {
                 location: {
-                    value: deaToolsUri
+                    value: automoduleUri
                 }
             }
         };
