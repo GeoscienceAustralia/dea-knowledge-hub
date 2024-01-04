@@ -9,7 +9,6 @@ environment = {
     "build_mode": os.environ.get("BUILD_MODE"),
     "git_branch": os.environ.get("BRANCH"),
     "demo_name": os.environ.get("DEMO_NAME"),
-    "deploy_id": os.environ.get("DEPLOY_ID"),
     "local_enable_redirects": os.environ.get("LOCAL_ENABLE_REDIRECTS"),
 }
 
@@ -134,11 +133,10 @@ html_theme_options = {
     },
 }
 
-if True: # environment["build_mode"] == "demo":
+if environment["build_mode"] == "demo":
     html_theme_options["announcement"] = demo_banner.create(
         environment['demo_name'],
-        environment['git_branch'],
-        environment['deploy_id']
+        environment['git_branch']
     )
 
 html_context = {
