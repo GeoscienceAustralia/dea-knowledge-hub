@@ -182,18 +182,110 @@ entries:
     subtrees:
       - caption: Getting started
         entries:
-          - file: Beginners_guide/README # Contains its own table of contents.
+          - file: notebooks/Beginners_guide/README
+            entries:
+              - file: notebooks/Beginners_guide/01_Jupyter_notebooks.ipynb
+              - file: notebooks/Beginners_guide/02_DEA.ipynb
+              - file: notebooks/Beginners_guide/03_Products_and_measurements.ipynb
+              - file: notebooks/Beginners_guide/04_Loading_data.ipynb
+              - file: notebooks/Beginners_guide/05_Plotting.ipynb
+              - file: notebooks/Beginners_guide/06_Basic_analysis.ipynb
+              - file: notebooks/Beginners_guide/07_Intro_to_numpy.ipynb
+              - file: notebooks/Beginners_guide/08_Intro_to_xarray.ipynb
+              - file: notebooks/Beginners_guide/09_Parallel_processing_with_Dask.ipynb
+              - file: notebooks/Beginners_guide/Guided_tutorial.ipynb
 
       - caption: Using the data products
         entries:
-          - file: DEA_products/README # Contains its own table of contents.
-          - file: How_to_guides/README # Contains its own table of contents.
-          - file: Real_world_examples/README # Contains its own table of contents.
+          - file: notebooks/DEA_products/README
+            entries:
+              - file: notebooks/DEA_products/DEA_Landsat_Surface_Reflectance.ipynb
+              - file: notebooks/DEA_products/DEA_Sentinel2_Surface_Reflectance.ipynb
+              - file: notebooks/DEA_products/DEA_Water_Observations.ipynb
+              - file: notebooks/DEA_products/DEA_Fractional_Cover.ipynb
+              - file: notebooks/DEA_products/DEA_Land_Cover.ipynb
+              - file: notebooks/DEA_products/DEA_High_and_Low_Tide_Imagery.ipynb
+              - file: notebooks/DEA_products/DEA_Coastlines.ipynb
+              - file: notebooks/DEA_products/DEA_Waterbodies.ipynb
+              - file: notebooks/DEA_products/DEA_Wetlands_Insight_Tool.ipynb
+              - file: notebooks/DEA_products/DEA_Mangroves.ipynb
+
+          - file: notebooks/How_to_guides/README
+            entries:
+            - file: notebooks/How_to_guides/Analyse_multiple_polygons.ipynb
+            - file: notebooks/How_to_guides/Animated_timeseries.ipynb
+            - file: notebooks/How_to_guides/ARD_overpass_predictor.ipynb
+            - file: notebooks/How_to_guides/Calculating_band_indices.ipynb
+            - file: notebooks/How_to_guides/Contour_extraction.ipynb
+            - file: notebooks/How_to_guides/Detecting_seasonality.ipynb
+            - file: notebooks/How_to_guides/Downloading_data_with_STAC.ipynb
+            - file: notebooks/How_to_guides/Exporting_GeoTIFFs.ipynb
+            - file: notebooks/How_to_guides/Exporting_NetCDFs.ipynb
+            - file: notebooks/How_to_guides/External_data_CSVs.ipynb
+            - file: notebooks/How_to_guides/External_data_ERA5_Climate.ipynb
+            - file: notebooks/How_to_guides/Generating_composites.ipynb
+            - file: notebooks/How_to_guides/Generating_geomedian_composites.ipynb
+            - file: notebooks/How_to_guides/Image_segmentation.ipynb
+            - file: notebooks/How_to_guides/Imagery_on_web_map.ipynb
+            - file: notebooks/How_to_guides/Land_cover_animated_plots.ipynb
+            - file: notebooks/How_to_guides/Land_cover_change_mapping.ipynb
+            - file: notebooks/How_to_guides/Land_cover_pixel_drill.ipynb
+            - file: notebooks/How_to_guides/Machine_learning_with_ODC.ipynb
+            - file: notebooks/How_to_guides/Masking_data.ipynb
+            - file: notebooks/How_to_guides/Opening_GeoTIFFs_NetCDFs.ipynb
+            - file: notebooks/How_to_guides/Pansharpening.ipynb
+            - file: notebooks/How_to_guides/Planetary_computer.ipynb
+            - file: notebooks/How_to_guides/Polygon_drill.ipynb
+            - file: notebooks/How_to_guides/Polygonise_pixel_edges.ipynb
+            - file: notebooks/How_to_guides/Principal_component_analysis.ipynb
+            - file: notebooks/How_to_guides/Rasterize_vectorize.ipynb
+            - file: notebooks/How_to_guides/Reprojecting_data.ipynb
+            - file: notebooks/How_to_guides/Sunglint_masking.ipynb
+            - file: notebooks/How_to_guides/Tidal_modelling.ipynb
+            - file: notebooks/How_to_guides/Using_load_ard.ipynb
+            - file: notebooks/How_to_guides/Virtual_products.ipynb
+            - file: notebooks/How_to_guides/Working_with_time.ipynb
+
+          - file: notebooks/Real_world_examples/README
+            entries:
+              - file: notebooks/Real_world_examples/Burnt_area_mapping.ipynb
+              - file: notebooks/Real_world_examples/Burnt_area_mapping_near_realtime.ipynb
+              - file: notebooks/Real_world_examples/Change_detection.ipynb
+              - file: notebooks/Real_world_examples/Chlorophyll_monitoring.ipynb
+              - file: notebooks/Real_world_examples/Coastal_erosion.ipynb
+              - file: notebooks/Real_world_examples/Estimate_climate_driver_influence_on_rainfall.ipynb
+              - file: notebooks/Real_world_examples/Intertidal_elevation.ipynb
+              - file: notebooks/Real_world_examples/Mapping_inundation_using_stream_gauges.ipynb
+              - file: notebooks/Real_world_examples/Radar_water_detection.ipynb
+              - file: notebooks/Real_world_examples/Seasonal_water_extents.ipynb
+              - file: notebooks/Real_world_examples/Shipping_lane_identification.ipynb
+              - file: notebooks/Real_world_examples/Surface_area_duration.ipynb
+              - file: notebooks/Real_world_examples/Turbidity_animated_timeseries.ipynb
+              - file: notebooks/Real_world_examples/Urban_change_detection.ipynb
+              - file: notebooks/Real_world_examples/Vegetation_phenology.ipynb
+              - file: notebooks/Real_world_examples/Water_quality_suspended_matter.ipynb
+              - file: notebooks/Real_world_examples/Wetness_stream_gauge_correlations.ipynb
+              - file: notebooks/Real_world_examples/Scalable_machine_learning/README.rst
+                entries:
+                  - file: notebooks/Real_world_examples/Scalable_machine_learning/0_README
+                  - file: notebooks/Real_world_examples/Scalable_machine_learning/1_Extract_training_data.ipynb
+                  - file: notebooks/Real_world_examples/Scalable_machine_learning/2_Inspect_training_data.ipynb
+                  - file: notebooks/Real_world_examples/Scalable_machine_learning/3_Evaluate_optimize_fit_classifier.ipynb
+                  - file: notebooks/Real_world_examples/Scalable_machine_learning/4_Classify_satellite_data.ipynb
+                  - file: notebooks/Real_world_examples/Scalable_machine_learning/5_Object-based_filtering.ipynb
 
       - caption: Resources
         entries:
-          - file: Interactive_apps/README # Contains its own table of contents.
-          - file: Tools/index # Contains its own table of contents.
+          - file: notebooks/Interactive_apps/README
+            entries:
+              - file: notebooks/Interactive_apps/Change_filmstrips.ipynb
+              - file: notebooks/Interactive_apps/Coastal_transects.ipynb
+              - file: notebooks/Interactive_apps/Crop_health.ipynb
+              - file: notebooks/Interactive_apps/Exporting_satellite_images.ipynb
+              - file: notebooks/Interactive_apps/Generating_satellite_animations.ipynb
+              - file: notebooks/Interactive_apps/Mining_rehabilitation.ipynb
+
+          - file: notebooks/Tools/index # Contains its own table of contents.
 
   - file: data/old-version/index
     entries:
