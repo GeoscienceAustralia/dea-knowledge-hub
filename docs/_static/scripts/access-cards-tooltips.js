@@ -1,3 +1,5 @@
+// For the Access cards (on product pages), set each card's title as its tooltip.
+
 document.addEventListener("DOMContentLoaded", function (event) {
     let cards = document.querySelectorAll(
         ".product-page #access-the-data-cards .sd-card"
