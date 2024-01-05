@@ -1,5 +1,6 @@
 import os
 import sys
+sys.path.append(os.path.abspath("./_ext"))
 sys.path.insert(0, os.path.abspath('.'))
 from _modules import utilities
 from _modules import mock_imports
@@ -114,7 +115,7 @@ tags_overview_title = "All tags"
 tags_output_dir = "tags"
 tags_extension = ["md", "rst"]
 tags_page_title = "Pages containing tag"
-# tags_page_header = "With this tag"
+tags_page_header = "With this tag"
 
 html_css_files = [
     'styles/styles.css'
