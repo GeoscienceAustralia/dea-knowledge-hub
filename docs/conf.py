@@ -70,6 +70,7 @@ extensions = [
     "notfound.extension",
     "sphinx_copybutton",
     "tags",
+    # "sphinx_tags",
 ]
 
 myst_enable_extensions = [
@@ -153,3 +154,4 @@ suppress_warnings = [
     # "etoc.toctree"
 ]
 
+tags_create_tags = True

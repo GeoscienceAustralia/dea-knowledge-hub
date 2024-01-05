@@ -13,3 +13,4 @@ sphinx-sitemap
 sphinxext-opengraph
 sphinx-notfound-page
 sphinx-copybutton
+sphinx-tags
