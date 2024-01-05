@@ -183,9 +183,13 @@ class Tag:
             content.append(f"({ref_label})=")
             content.append(f"# {tags_page_title}: {self.name}")
             content.append("")
-            for path in tag_page_paths:
-                content.append(f"[{path}](../{path})")
-                content.append("")
+            content.append("```{tableofcontents}")
+            content.append("```")
+            content.append("")
+
+            # for path in tag_page_paths:
+            #     content.append(f"[{path}](../{path})")
+            #     content.append("")
 
         else:
             filename = f"{self.file_basename}.rst"
@@ -195,9 +199,12 @@ class Tag:
             content.append(header)
             content.append("#" * textwidth(header))
             content.append("")
-            for path in tag_page_paths:
-                content.append(f"`{path} <../{path}>`_")
-                content.append("")
+            content.append(".. tableofcontents::")
+            content.append("")
+
+            # for path in tag_page_paths:
+            #     content.append(f"`{path} <../{path}>`_")
+            #     content.append("")
 
         content.append("")
         with open(
