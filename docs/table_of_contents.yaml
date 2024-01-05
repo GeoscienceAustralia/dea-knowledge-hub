@@ -196,7 +196,7 @@ entries:
 
   - file: tags/tagsindex
     entries:
-      - glob: tags/*
+      - glob: tags/*/index
 
   - file: data/old-version/index
     entries:

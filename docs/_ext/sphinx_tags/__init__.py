@@ -183,9 +183,11 @@ class Tag:
             content.append(f"({ref_label})=")
             content.append(f"# {self.name}")
             content.append("")
+            content.append("Pages with this tag.")
+            content.append("")
 
             for path in tag_page_paths:
-                formatted_path = "/" + re.sub(r'\.[a-zA-Z0-9]+$', "/", path)
+                formatted_path = "/" + re.sub(r'index\/$', "", re.sub(r'\.[a-zA-Z0-9]+$', "/", path))
                 content.append(f"[{formatted_path}]({formatted_path})")
                 content.append("")
 
@@ -197,9 +199,11 @@ class Tag:
             content.append(header)
             content.append("#" * textwidth(header))
             content.append("")
+            content.append("Pages with this tag.")
+            content.append("")
 
             for path in tag_page_paths:
-                formatted_path = "/" + re.sub(r'\.[a-zA-Z0-9]+$', "/", path)
+                formatted_path = "/" + re.sub(r'index\/$', "", re.sub(r'\.[a-zA-Z0-9]+$', "/", path))
                 content.append(f"`{formatted_path} <{formatted_path}>`_")
                 content.append("")
 
