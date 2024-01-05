@@ -185,7 +185,8 @@ class Tag:
             content.append("")
 
             for path in tag_page_paths:
-                content.append(f"{{doc}}`{path}`")
+                formatted_path = "/" + path
+                content.append(f"{{doc}}`/link-test/`")
                 content.append("")
 
         else:
@@ -198,7 +199,7 @@ class Tag:
             content.append("")
 
             for path in tag_page_paths:
-                content.append(f":doc:`{path}`")
+                content.append(f":doc:`/link-test/`")
                 content.append("")
 
         content.append("")
@@ -253,6 +254,7 @@ def tagpage(tags, outdir, title, extension, tags_index_head):
         content.append("")
         for tag in sorted(tags, key=lambda t: t.name):
             content.append(f"[{tag.name} ({len(tag.items)})](/tags/{tag.name})")
+            content.append("")
 
         # toctree for this page
         # content.append("```{toctree}")
