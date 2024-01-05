@@ -114,7 +114,7 @@ tags_create_tags = True
 tags_overview_title = "All tags"
 tags_output_dir = "tags"
 tags_extension = ["md", "rst"]
-tags_page_title = "Pages containing tag"
+tags_page_title = "Pages with the tag"
 tags_page_header = "With this tag"
 
 html_css_files = [

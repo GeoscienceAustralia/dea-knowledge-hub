@@ -180,14 +180,10 @@ class Tag:
             content.append(f"({ref_label})=")
             content.append(f"# {tags_page_title}: {self.name}")
             content.append("")
-            content.append("```{toctree}")
-            content.append("---")
-            content.append("maxdepth: 1")
-            content.append(f"caption: {tags_page_header}")
-            content.append("---")
             for path in tag_page_paths:
-                content.append(f"../{path}")
-            content.append("```")
+                content.append(f"[{path}](../{path})")
+                content.append("")
+
         else:
             filename = f"{self.file_basename}.rst"
             header = f"{tags_page_title}: {self.name}"
@@ -196,12 +192,9 @@ class Tag:
             content.append(header)
             content.append("#" * textwidth(header))
             content.append("")
-            content.append(".. toctree::")
-            content.append("    :maxdepth: 1")
-            content.append(f"    :caption: {tags_page_header}")
-            content.append("")
             for path in tag_page_paths:
-                content.append(f"    ../{path}")
+                content.append(f"`{path} <../{path}>`_")
+                content.append("")
 
         content.append("")
         with open(
@@ -253,15 +246,18 @@ def tagpage(tags, outdir, title, extension, tags_index_head):
         content.append("")
         content.append(f"# {title}")
         content.append("")
-        # toctree for this page
-        content.append("```{toctree}")
-        content.append("---")
-        content.append(f"caption: {tags_index_head}")
-        content.append("maxdepth: 1")
-        content.append("---")
         for tag in sorted(tags, key=lambda t: t.name):
-            content.append(f"{tag.name} ({len(tag.items)}) <{tag.file_basename}>")
-        content.append("```")
+            content.append(f"{tag.name} ({len(tag.items)}) ({tag.file_basename})")
+
+        # toctree for this page
+        # content.append("```{toctree}")
+        # content.append("---")
+        # content.append(f"caption: {tags_index_head}")
+        # content.append("maxdepth: 1")
+        # content.append("---")
+        # for tag in sorted(tags, key=lambda t: t.name):
+        #     content.append(f"{tag.name} ({len(tag.items)}) <{tag.file_basename}>")
+        # content.append("```")
         content.append("")
         filename = os.path.join(outdir, "tagsindex.md")
     else:
@@ -273,14 +269,14 @@ def tagpage(tags, outdir, title, extension, tags_index_head):
         content.append(title)
         content.append("#" * textwidth(title))
         content.append("")
-        # toctree for the page
-        content.append(".. toctree::")
-        content.append(f"    :caption: {tags_index_head}")
-        content.append("    :maxdepth: 1")
+        # # toctree for the page
+        # content.append(".. toctree::")
+        # content.append(f"    :caption: {tags_index_head}")
+        # content.append("    :maxdepth: 1")
         content.append("")
         for tag in sorted(tags, key=lambda t: t.name):
             content.append(
-                f"    {tag.name} ({len(tag.items)}) <{tag.file_basename}.rst>"
+                f"    {tag.name} ({len(tag.items)}) {tag.file_basename}.rst)"
             )
         content.append("")
         filename = os.path.join(outdir, "tagsindex.rst")
