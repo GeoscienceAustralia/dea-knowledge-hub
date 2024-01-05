@@ -51,7 +51,7 @@ class TagLinks(SphinxDirective):
 
         tag_dir = Path(self.env.app.srcdir) / self.env.app.config.tags_output_dir
         result = nodes.paragraph()
-        result["classes"] = ["tags"]
+        result["classes"] = ["tags-list"]
         result += nodes.inline(text=f"{self.env.app.config.tags_intro_text} ")
         count = 0
 
