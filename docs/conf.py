@@ -69,7 +69,7 @@ extensions = [
     "sphinxext.opengraph",
     "notfound.extension",
     "sphinx_copybutton",
-    "helloworld",
+    "tags",
 ]
 
 myst_enable_extensions = [

@@ -1,14 +1,13 @@
 from docutils import nodes
 from docutils.parsers.rst import Directive
 
-class HelloWorld(Directive):
-
+class Tags(Directive):
     def run(self):
-        paragraph_node = nodes.paragraph(text='Hello World!')
+        paragraph_node = nodes.paragraph(text='Tags ...')
         return [paragraph_node]
 
 def setup(app):
-    app.add_directive("helloworld", HelloWorld)
+    app.add_directive("tags", Tags)
 
     return {
         'version': '0.1',

@@ -2,4 +2,4 @@
 Test
 ====
 
-.. helloworld::
+.. tags::
