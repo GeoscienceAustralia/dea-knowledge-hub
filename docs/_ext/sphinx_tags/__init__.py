@@ -181,30 +181,25 @@ class Tag:
         if "md" in extension:
             filename = f"{self.file_basename}.md"
             content.append(f"({ref_label})=")
-            content.append(f"# {tags_page_title}: {self.name}")
-            content.append("")
-            content.append("```{tableofcontents}")
-            content.append("```")
+            content.append(f"# self.name")
             content.append("")
 
-            # for path in tag_page_paths:
-            #     content.append(f"[{path}](../{path})")
-            #     content.append("")
+            for path in tag_page_paths:
+                content.append(f"[{path}](../{path})")
+                content.append("")
 
         else:
             filename = f"{self.file_basename}.rst"
-            header = f"{tags_page_title}: {self.name}"
+            header = self.name
             content.append(f".. _{ref_label}:")
             content.append("")
             content.append(header)
             content.append("#" * textwidth(header))
             content.append("")
-            content.append(".. tableofcontents::")
-            content.append("")
 
-            # for path in tag_page_paths:
-            #     content.append(f"`{path} <../{path}>`_")
-            #     content.append("")
+            for path in tag_page_paths:
+                content.append(f"`{path} <../{path}>`_")
+                content.append("")
 
         content.append("")
         with open(
@@ -257,7 +252,7 @@ def tagpage(tags, outdir, title, extension, tags_index_head):
         content.append(f"# {title}")
         content.append("")
         for tag in sorted(tags, key=lambda t: t.name):
-            content.append(f"{tag.name} ({len(tag.items)}) ({tag.file_basename})")
+            content.append(f"[{tag.name} ({len(tag.items)})](/tags/{tag.name})")
 
         # toctree for this page
         # content.append("```{toctree}")
@@ -285,9 +280,7 @@ def tagpage(tags, outdir, title, extension, tags_index_head):
         # content.append("    :maxdepth: 1")
         content.append("")
         for tag in sorted(tags, key=lambda t: t.name):
-            content.append(
-                f"    {tag.name} ({len(tag.items)}) {tag.file_basename}.rst)"
-            )
+            content.append(f"`{tag.name} ({len(tag.items)}) </tags/{tag.name}>`_")
         content.append("")
         filename = os.path.join(outdir, "tagsindex.rst")
 

@@ -201,5 +201,4 @@ entries:
   - file: test
   - file: tags/tagsindex
     entries:
-      - file: tags/tag1
-      - file: tags/tag2
+      - glob: tags/*
