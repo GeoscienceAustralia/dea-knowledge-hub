@@ -185,8 +185,8 @@ class Tag:
             content.append("")
 
             for path in tag_page_paths:
-                formatted_path = "/" + path
-                content.append(f"{{doc}}`/link-test/`")
+                formatted_path = "/" + re.sub(r'\.[a-zA-Z0-9]+$', "/", path)
+                content.append(f"{{doc}}`{formatted_path}`")
                 content.append("")
 
         else:
@@ -199,7 +199,8 @@ class Tag:
             content.append("")
 
             for path in tag_page_paths:
-                content.append(f":doc:`/link-test/`")
+                formatted_path = "/" + re.sub(r'\.[a-zA-Z0-9]+$', "/", path)
+                content.append(f":doc:`{formatted_path}`")
                 content.append("")
 
         content.append("")
