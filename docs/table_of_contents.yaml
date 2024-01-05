@@ -3,6 +3,7 @@ defaults:
   titlesonly: True
 
 entries:
+  - file: test
   - file: data/index
     subtrees:
       - caption: Baseline satellite data

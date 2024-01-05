@@ -1,5 +1,6 @@
-import sys
 import os
+import sys
+sys.path.append(os.path.abspath("./_ext"))
 sys.path.insert(0, os.path.abspath('.'))
 from _modules import utilities
 from _modules import mock_imports
@@ -68,6 +69,7 @@ extensions = [
     "sphinxext.opengraph",
     "notfound.extension",
     "sphinx_copybutton",
+    "helloworld",
 ]
 
 myst_enable_extensions = [
