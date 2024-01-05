@@ -114,7 +114,7 @@ tags_create_tags = True
 tags_overview_title = "All tags"
 tags_output_dir = "tags"
 tags_extension = ["md", "rst"]
-tags_page_header = "With this tag"
+tags_page_header = "Here are the pages that use this tag."
 
 html_css_files = [
     'styles/styles.css'

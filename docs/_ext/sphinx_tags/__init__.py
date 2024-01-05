@@ -183,7 +183,7 @@ class Tag:
             content.append(f"({ref_label})=")
             content.append(f"# {self.name}")
             content.append("")
-            content.append("Pages with this tag.")
+            content.append(tags_page_header)
             content.append("")
 
             for path in tag_page_paths:
@@ -199,7 +199,7 @@ class Tag:
             content.append(header)
             content.append("#" * textwidth(header))
             content.append("")
-            content.append("Pages with this tag.")
+            content.append(tags_page_header)
             content.append("")
 
             for path in tag_page_paths:
