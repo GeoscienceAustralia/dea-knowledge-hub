@@ -181,11 +181,11 @@ class Tag:
         if "md" in extension:
             filename = f"{self.file_basename}.md"
             content.append(f"({ref_label})=")
-            content.append(f"# self.name")
+            content.append(f"# {self.name}")
             content.append("")
 
             for path in tag_page_paths:
-                content.append(f"[{path}](../{path})")
+                content.append(f"{{doc}}`{path}`")
                 content.append("")
 
         else:
@@ -198,7 +198,7 @@ class Tag:
             content.append("")
 
             for path in tag_page_paths:
-                content.append(f"`{path} <../{path}>`_")
+                content.append(f":doc:`{path}`")
                 content.append("")
 
         content.append("")
