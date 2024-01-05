@@ -274,4 +274,3 @@ This will bring up a menu containing detailed guides to performing useful tasks 
    :align: center
    :alt: Help 2
 
-.. tags:: dea-maps

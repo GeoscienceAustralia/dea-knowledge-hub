@@ -71,12 +71,15 @@ class TagLinks(SphinxDirective):
 
             file_basename = _normalize_tag(tag)
 
-            if self.env.app.config.tags_create_badges:
-                result += self._get_badge_node(tag, file_basename, relative_tag_dir)
-                tag_separator = " "
-            else:
-                result += self._get_plaintext_node(tag, file_basename, relative_tag_dir)
-                tag_separator = f"{self.separator} "
+            result += nodes.reference(refuri=f"/tags/{file_basename}", text=file_basename)
+            tag_separator = f"{self.separator} "
+
+            # if self.env.app.config.tags_create_badges:
+            #     result += self._get_badge_node(tag, file_basename, relative_tag_dir)
+            #     tag_separator = " "
+            # else:
+            #     result += self._get_plaintext_node(tag, file_basename, relative_tag_dir)
+
             if not count == len(tags):
                 result += nodes.inline(text=tag_separator)
 

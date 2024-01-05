@@ -3,7 +3,6 @@ defaults:
   titlesonly: True
 
 entries:
-  - file: test
   - file: data/index
     subtrees:
       - caption: Baseline satellite data
@@ -199,4 +198,5 @@ entries:
     entries:
       - glob: data/old-version/*/index
 
+  - file: test
   - file: tags/tagsindex
