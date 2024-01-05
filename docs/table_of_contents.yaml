@@ -72,7 +72,6 @@ entries:
           - file: data/product/australian-geographic-reference-image/index
           - file: data/product/daily-satpaths-beta/index
 
-
       - caption: Land and Vegetation
         entries:
           - file: data/theme/land-and-vegetation/index
