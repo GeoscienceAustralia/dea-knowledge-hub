@@ -70,7 +70,6 @@ extensions = [
     "notfound.extension",
     "sphinx_copybutton",
     "tags",
-    # "sphinx_tags",
 ]
 
 myst_enable_extensions = [

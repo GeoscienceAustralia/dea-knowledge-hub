@@ -2,4 +2,4 @@
 Test
 ====
 
-.. tags:: tag1, tag2
+.. tags::
