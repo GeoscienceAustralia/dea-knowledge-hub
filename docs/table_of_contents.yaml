@@ -198,7 +198,6 @@ entries:
     entries:
       - glob: data/old-version/*/index
 
-  - file: link-test
   - file: tags/tagsindex
     entries:
       - glob: tags/*
