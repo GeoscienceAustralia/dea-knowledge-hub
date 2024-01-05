@@ -194,10 +194,10 @@ entries:
           - file: notebooks/Interactive_apps/README # Contains its own table of contents.
           - file: notebooks/Tools/index # Contains its own table of contents.
 
-  - file: data/old-version/index
-    entries:
-      - glob: data/old-version/*/index
-
   - file: tags/tagsindex
     entries:
       - glob: tags/*
+
+  - file: data/old-version/index
+    entries:
+      - glob: data/old-version/*/index
