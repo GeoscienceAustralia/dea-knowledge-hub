@@ -198,3 +198,5 @@ entries:
   - file: data/old-version/index
     entries:
       - glob: data/old-version/*/index
+
+  - file: tags/tagsindex

@@ -273,3 +273,5 @@ This will bring up a menu containing detailed guides to performing useful tasks 
 .. figure:: /_files/dea-maps/dea_maps_help_2.jpg
    :align: center
    :alt: Help 2
+
+.. tags:: dea-maps

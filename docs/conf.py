@@ -1,6 +1,5 @@
 import os
 import sys
-sys.path.append(os.path.abspath("./_ext"))
 sys.path.insert(0, os.path.abspath('.'))
 from _modules import utilities
 from _modules import mock_imports
@@ -69,7 +68,7 @@ extensions = [
     "sphinxext.opengraph",
     "notfound.extension",
     "sphinx_copybutton",
-    "tags",
+    "sphinx_tags",
 ]
 
 myst_enable_extensions = [
@@ -109,6 +108,13 @@ napoleon_numpy_docstring = True
 notfound_template = "404-not-found.html"
 notfound_pagename = "404-not-found"
 notfound_urls_prefix = ""
+
+tags_create_tags = True
+tags_overview_title = "All tags"
+tags_output_dir = "tags"
+tags_extension = ["md", "rst"]
+tags_page_title = "Pages containing tag"
+# tags_page_header = "With this tag"
 
 html_css_files = [
     'styles/styles.css'
@@ -153,4 +159,3 @@ suppress_warnings = [
     # "etoc.toctree"
 ]
 
-tags_create_tags = True
