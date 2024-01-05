@@ -1,5 +1,5 @@
 """Sphinx extension to create tags for documentation pages.
-
+Adapted from <https://github.com/melissawm/sphinx-tags>
 """
 import os
 import re
