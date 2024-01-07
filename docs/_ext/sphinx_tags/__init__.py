@@ -272,7 +272,7 @@ def tagpage(tags, outdir, title, extension, tags_index_head):
         #     content.append(f"{tag.name} ({len(tag.items)}) <{tag.file_basename}>")
         # content.append("```")
         content.append("")
-        filename = os.path.join(outdir, "all-tags.md")
+        filename = os.path.join(outdir, "tags-list.md")
     else:
         content = []
         content.append(":orphan:")
@@ -290,7 +290,7 @@ def tagpage(tags, outdir, title, extension, tags_index_head):
         for tag in sorted(tags, key=lambda t: t.name):
             content.append(f"`{tag.name} ({len(tag.items)}) </tags/{tag.name}>`_")
         content.append("")
-        filename = os.path.join(outdir, "all-tags.rst")
+        filename = os.path.join(outdir, "tags-list.rst")
 
     with open(filename, "w", encoding="utf8") as f:
         f.write("\n".join(content))
