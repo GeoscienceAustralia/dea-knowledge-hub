@@ -243,7 +243,7 @@ def _normalize_tag(tag: str) -> str:
     return re.sub(r"[\s\W]+", "-", tag).lower().strip("-")
 
 
-def tagpage(tags, outdir, title, extension, tags_index_head):
+def tagpage(tags, outdir, title, extension, tags_index_header):
     """Creates Tag overview page.
 
     This page contains a list of all available tags.
@@ -258,6 +258,8 @@ def tagpage(tags, outdir, title, extension, tags_index_head):
         content.append("")
         content.append(f"# {title}")
         content.append("")
+        content.append(tags_index_header)
+        content.append("")
         for tag in sorted(tags, key=lambda t: t.name):
             content.append(f"[{tag.name} ({len(tag.items)})](/tags/{tag.name})")
             content.append("")
@@ -265,7 +267,7 @@ def tagpage(tags, outdir, title, extension, tags_index_head):
         # toctree for this page
         # content.append("```{toctree}")
         # content.append("---")
-        # content.append(f"caption: {tags_index_head}")
+        # content.append(f"caption: {tags_index_header}")
         # content.append("maxdepth: 1")
         # content.append("---")
         # for tag in sorted(tags, key=lambda t: t.name):
@@ -284,7 +286,7 @@ def tagpage(tags, outdir, title, extension, tags_index_head):
         content.append("")
         # # toctree for the page
         # content.append(".. toctree::")
-        # content.append(f"    :caption: {tags_index_head}")
+        # content.append(f"    :caption: {tags_index_header}")
         # content.append("    :maxdepth: 1")
         content.append("")
         for tag in sorted(tags, key=lambda t: t.name):
@@ -343,7 +345,7 @@ def update_tags(app):
             os.path.join(app.srcdir),
             app.config.tags_overview_title,
             app.config.tags_extension,
-            app.config.tags_index_head,
+            app.config.tags_index_header,
         )
         logger.info("Tags updated", color="white")
     else:
@@ -359,13 +361,13 @@ def setup(app):
     # These values will be updated after config-inited
 
     app.add_config_value("tags_create_tags", False, "html")
-    app.add_config_value("tags_output_dir", "_tags", "html")
+    app.add_config_value("tags_output_dir", "tags", "html") # Note: Don't change this setting from the default.
     app.add_config_value("tags_overview_title", "Tags overview", "html")
     app.add_config_value("tags_extension", ["rst"], "html")
     app.add_config_value("tags_intro_text", "Tags:", "html")
     app.add_config_value("tags_page_title", "My tags", "html")
     app.add_config_value("tags_page_header", "With this tag", "html")
-    app.add_config_value("tags_index_head", "Tags", "html")
+    app.add_config_value("tags_index_header", "Here is a list of all tags that are used on the site.", "html")
     app.add_config_value("tags_create_badges", False, "html")
     app.add_config_value("tags_badge_colors", {}, "html")
 

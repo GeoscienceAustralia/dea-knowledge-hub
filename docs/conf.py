@@ -112,9 +112,9 @@ notfound_urls_prefix = ""
 
 tags_create_tags = True
 tags_overview_title = "All tags"
-tags_output_dir = "tags"
+tags_page_header = "This tag is used on the following pages."
+tags_index_header = "Here is a list of all tags that are used on the site."
 tags_extension = ["md", "rst"]
-tags_page_header = "Here is a list of all tags that are used on the site."
 
 html_css_files = [
     'styles/styles.css'
