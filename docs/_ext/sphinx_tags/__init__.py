@@ -182,7 +182,7 @@ class Tag:
         if "md" in extension:
             filename = f"{self.file_basename}.md"
             content.append(f"({ref_label})=")
-            content.append(f"# {self.name}")
+            content.append(f"# {self.name} tag")
             content.append("")
             content.append(tags_page_header)
             content.append("")
