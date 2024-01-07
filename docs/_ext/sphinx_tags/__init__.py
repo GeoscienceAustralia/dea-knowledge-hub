@@ -272,7 +272,7 @@ def tagpage(tags, outdir, title, extension, tags_index_head):
         #     content.append(f"{tag.name} ({len(tag.items)}) <{tag.file_basename}>")
         # content.append("```")
         content.append("")
-        filename = os.path.join(outdir, "tagsindex.md")
+        filename = os.path.join(outdir, "all-tags.md")
     else:
         content = []
         content.append(":orphan:")
@@ -290,7 +290,7 @@ def tagpage(tags, outdir, title, extension, tags_index_head):
         for tag in sorted(tags, key=lambda t: t.name):
             content.append(f"`{tag.name} ({len(tag.items)}) </{self.env.app.config.tags_output_dir}/{tag.name}>`_")
         content.append("")
-        filename = os.path.join(outdir, "tagsindex.rst")
+        filename = os.path.join(outdir, "all-tags.rst")
 
     with open(filename, "w", encoding="utf8") as f:
         f.write("\n".join(content))
@@ -340,7 +340,7 @@ def update_tags(app):
         # Create tags overview page
         tagpage(
             tags,
-            os.path.join(app.srcdir, tags_output_dir),
+            os.path.join(app.srcdir),
             app.config.tags_overview_title,
             app.config.tags_extension,
             app.config.tags_index_head,
