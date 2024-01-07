@@ -11,6 +11,7 @@ environment = {
     "git_branch": os.environ.get("BRANCH"),
     "demo_name": os.environ.get("DEMO_NAME"),
     "local_enable_redirects": os.environ.get("LOCAL_ENABLE_REDIRECTS"),
+    "local_enable_tags": os.environ.get("LOCAL_ENABLE_TAGS"),
 }
 
 project = "DEA Knowledge Hub"
@@ -110,7 +111,10 @@ notfound_template = "404-not-found.html"
 notfound_pagename = "404-not-found"
 notfound_urls_prefix = ""
 
-tags_create_tags = True
+tags_create_tags = (
+    environment["build_mode"] in ["demo", "production"]
+    or environment["local_enable_tags"] == "Yes"
+)
 tags_overview_title = "All tags"
 tags_page_header = "This tag is used on the following pages."
 tags_index_header = "Here is a list of all tags that are used on the site."
