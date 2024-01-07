@@ -72,7 +72,7 @@ class TagLinks(SphinxDirective):
 
             file_basename = _normalize_tag(tag)
 
-            result += nodes.reference(refuri=f"/{self.env.app.config.tags_output_dir}/{file_basename}", text=file_basename)
+            result += nodes.reference(refuri=f"/tags/{file_basename}", text=file_basename)
             tag_separator = f"{self.separator} "
 
             # if self.env.app.config.tags_create_badges:
@@ -259,7 +259,7 @@ def tagpage(tags, outdir, title, extension, tags_index_head):
         content.append(f"# {title}")
         content.append("")
         for tag in sorted(tags, key=lambda t: t.name):
-            content.append(f"[{tag.name} ({len(tag.items)})](/{self.env.app.config.tags_output_dir}/{tag.name})")
+            content.append(f"[{tag.name} ({len(tag.items)})](/tags/{tag.name})")
             content.append("")
 
         # toctree for this page
@@ -288,7 +288,7 @@ def tagpage(tags, outdir, title, extension, tags_index_head):
         # content.append("    :maxdepth: 1")
         content.append("")
         for tag in sorted(tags, key=lambda t: t.name):
-            content.append(f"`{tag.name} ({len(tag.items)}) </{self.env.app.config.tags_output_dir}/{tag.name}>`_")
+            content.append(f"`{tag.name} ({len(tag.items)}) </tags/{tag.name}>`_")
         content.append("")
         filename = os.path.join(outdir, "all-tags.rst")
 
