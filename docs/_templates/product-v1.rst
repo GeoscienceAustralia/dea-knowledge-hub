@@ -207,10 +207,13 @@
           * - **Last updated**
             - {{ data.published }}
           {%- endif %}
-       {%- endif %}
+          {%- if valid_tags %}
+          * - **Tags**
+            - 
 
-       {%- if valid_tags %}
-       .. tags:: {{ valid_tags | join(", ") }}
+             .. tags:: {{ valid_tags | join(", ") }}
+                :hide_intro_text:
+          {%- endif %}
        {%- endif %}
 
        .. include:: _overview_2.md

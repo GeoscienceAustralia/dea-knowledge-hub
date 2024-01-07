@@ -9,6 +9,7 @@ from pathlib import Path
 from typing import List
 
 from docutils import nodes
+from docutils.parsers.rst import directives
 from sphinx.errors import ExtensionError
 from sphinx.util.docutils import SphinxDirective
 from sphinx.util.logging import getLogger
@@ -28,12 +29,16 @@ class TagLinks(SphinxDirective):
 
     """
 
-    # Sphinx directive class attributes
+    # Class attributes
     required_arguments = 0
     optional_arguments = 1  # Arbitrary, split on seperator
     final_argument_whitespace = True
     has_content = True
     final_argument_whitespace = True
+    option_spec = {
+        'hide_intro_text': directives.unchanged,
+    }
+
     # Custom attributes
     separator = ","
 
@@ -53,7 +58,10 @@ class TagLinks(SphinxDirective):
         tag_dir = Path(self.env.app.srcdir) / self.env.app.config.tags_output_dir
         result = nodes.paragraph()
         result["classes"] = ["tags-list"]
-        result += nodes.inline(text=f"{self.env.app.config.tags_intro_text} ")
+
+        if 'hide_intro_text' not in self.options:
+            result += nodes.inline(text=f"{self.env.app.config.tags_intro_text} ")
+
         count = 0
 
         current_doc_dir = Path(self.env.doc2path(self.env.docname)).parent
