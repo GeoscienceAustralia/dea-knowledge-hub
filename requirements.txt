@@ -1,6 +1,6 @@
 sphinx
 nbsphinx
-IPython
+ipython
 myst-parser
 ipywidgets
 matplotlib
