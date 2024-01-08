@@ -8,4 +8,4 @@ sass --style=compressed ./docs/_static/styles/index.scss ./docs/_static/styles/s
 
 cp ./docs/_robots/robots-production.txt ./docs/robots.txt
 
-sphinx-build --builder dirhtml --jobs auto --write-all ./docs ./output
+sphinx-build -b dirhtml -j auto -a ./docs ./output
