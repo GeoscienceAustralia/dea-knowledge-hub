@@ -190,9 +190,11 @@ class Tag:
         if "md" in extension:
             filename = f"{self.file_basename}.md"
             content.append(f"({ref_label})=")
-            content.append(f"# {self.name} tag")
+            content.append(f"# {self.name}")
             content.append("")
-            content.append(tags_page_header)
+            content.append(f"{tags_page_header} &lsquo;{self.name}&rsquo;.")
+            content.append("")
+            content.append("[&laquo; View all tags](/tags-list/)")
             content.append("")
 
             for path in tag_page_paths:
@@ -208,7 +210,9 @@ class Tag:
             content.append(header)
             content.append("#" * textwidth(header))
             content.append("")
-            content.append(tags_page_header)
+            content.append(f"{tags_page_header} &lsquo;{self.name}&rsquo;.")
+            content.append("")
+            content.append("`&laquo; View all tags </tags-list/>`_")
             content.append("")
 
             for path in tag_page_paths:
@@ -268,9 +272,14 @@ def tagpage(tags, outdir, title, extension, tags_index_header):
         content.append("")
         content.append(tags_index_header)
         content.append("")
-        for tag in sorted(tags, key=lambda t: t.name):
-            content.append(f"[{tag.name} ({len(tag.items)})](/tags/{tag.name})")
-            content.append("")
+        content.append("```{toctree}")
+        content.append(":glob:")
+        content.append("tags/*")
+        content.append("```")
+        content.append("")
+        # for tag in sorted(tags, key=lambda t: t.name):
+        #     content.append(f"[{tag.name} ({len(tag.items)})](/tags/{tag.name})")
+        #     content.append("")
 
         # toctree for this page
         # content.append("```{toctree}")
@@ -292,13 +301,19 @@ def tagpage(tags, outdir, title, extension, tags_index_header):
         content.append(title)
         content.append("#" * textwidth(title))
         content.append("")
+        content.append(".. toctree::")
+        content.append("   :glob:")
+        content.append("")
+        content.append("   tags/*")
+        content.append("")
+        content.append("")
         # # toctree for the page
         # content.append(".. toctree::")
         # content.append(f"    :caption: {tags_index_header}")
         # content.append("    :maxdepth: 1")
         content.append("")
-        for tag in sorted(tags, key=lambda t: t.name):
-            content.append(f"`{tag.name} ({len(tag.items)}) </tags/{tag.name}>`_")
+        # for tag in sorted(tags, key=lambda t: t.name):
+        #     content.append(f"`{tag.name} ({len(tag.items)}) </tags/{tag.name}>`_")
         content.append("")
         filename = os.path.join(outdir, "tags-list.rst")
 
