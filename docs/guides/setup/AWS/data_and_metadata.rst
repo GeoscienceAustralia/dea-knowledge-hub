@@ -5,11 +5,7 @@
 Amazon Web Services
 ===================
 
-Digital Earth Australia store our data products in Amazon Web Service's
-S3 Service, with free public access. In addition to data, there are a number of services
-including an interactive code environment using Jupyter, a metadata explorer
-and web services available. This page provides technical documentation for
-using the DEA data and services on AWS.
+Digital Earth Australia store our data products in Amazon Web Service's S3 Service, with free public access. In addition to data, there are a number of services including an interactive code environment using Jupyter, a metadata explorer and web services available. This page provides technical documentation for using the DEA data and services on AWS.
 
 .. contents:: In this guide
    :local:
@@ -28,14 +24,14 @@ Data and services listing
 S3 details
 ----------
 
-+-------------------------------+-------------------------------------------------------------------------------------------------------------+
-| Bucket                        | Purpose                                                                                                     |
-+===============================+=============================================================================================================+
-| ``dea-public-data``           | Stores all the public DEA Data (more than 1PB and 60M objects in August 2023)                               |
-+-------------------------------+-------------------------------------------------------------------------------------------------------------+
-| ``dea-public-data-inventory`` | A public `AWS S3 Inventory <https://docs.aws.amazon.com/AmazonS3/latest/userguide/storage-inventory.html>`_ |
-|                               | of DEA Public Data. Provides a faster and more efficient content listing than crawling the data bucket.     |
-+-------------------------------+-------------------------------------------------------------------------------------------------------------+
++------------------------------------+-------------------------------------------------------------------------------------------------------------+
+| Bucket                             | Purpose                                                                                                     |
++====================================+=============================================================================================================+
+| ``s3://dea-public-data``           | Stores all the public DEA Data (more than 1PB and 60M objects in August 2023)                               |
++------------------------------------+-------------------------------------------------------------------------------------------------------------+
+| ``s3://dea-public-data-inventory`` | A public `AWS S3 Inventory <https://docs.aws.amazon.com/AmazonS3/latest/userguide/storage-inventory.html>`_ |
+|                                    | of DEA Public Data. Provides a faster and more efficient content listing than crawling the data bucket.     |
++------------------------------------+-------------------------------------------------------------------------------------------------------------+
 
 
 .. note:
@@ -49,6 +45,8 @@ S3 details
     ``https://dea-public-data.s3-ap-southeast-2.amazonaws.com/baseline/ga_ls8c_ard_3/091/076/2019/07/31/ga_ls8c_nbart_3-1-0_091076_2019-07-31_final_thumbnail.jpg``.
 
 Both S3 buckets are in the Sydney AWS region ``ap-southeast-2``. Programmatic access requires the environment variable ``AWS_NO_SIGN_REQUEST=Yes``.
+
+Most of the data that is stored on S3 is Cloud Optimised GeoTIFFs, which can be accessed directly without downloading the files.
 
 Key products that are available on S3 include the following:
 
