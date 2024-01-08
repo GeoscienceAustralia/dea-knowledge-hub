@@ -6,6 +6,10 @@ DEA Explorer
 How do we know specifically **where** and **when** data is available? Before we start any analysis, we can answer this question by verifying existing data on the Digital Earth Australia (DEA) Metadata Explorer.
 The Metadata Explorer can be found at https://explorer.dea.ga.gov.au/.
 
+.. contents:: On this page
+   :local:
+   :backlinks: none
+
 Map or Explorer?
 ----------------
 The `DEA Metadata Explorer <https://explorer.dea.ga.gov.au/>`_ and

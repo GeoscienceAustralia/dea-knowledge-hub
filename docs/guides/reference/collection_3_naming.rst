@@ -1,6 +1,10 @@
 DEA Naming Conventions (Collection 3) 
 =====================================
 
+.. contents:: On this page
+   :local:
+   :backlinks: none
+
 Introduction
 ------------
 

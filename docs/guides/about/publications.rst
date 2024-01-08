@@ -4,6 +4,10 @@ DEA program publications
 
 Scientific articles, conference talks and other publications with Digital Earth Australia authors:
 
+.. contents:: On this page
+   :local:
+   :backlinks: none
+
 ****
 2023
 ****

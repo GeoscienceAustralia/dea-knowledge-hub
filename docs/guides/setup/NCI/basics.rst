@@ -5,6 +5,9 @@
 Basics - JupyterLab and Virtual Desktop
 =======================================
 
+.. contents:: On this page
+   :local:
+   :backlinks: none
 
 Australian Research Environment
 ===============================

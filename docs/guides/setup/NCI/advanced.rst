@@ -4,6 +4,9 @@
 Advanced Access - HPC and CLI
 =============================
 
+.. contents:: On this page
+   :local:
+   :backlinks: none
 
 High Performance Computing
 ==========================

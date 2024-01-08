@@ -3,6 +3,10 @@
 About DEA
 =========
 
+.. contents:: On this page
+   :local:
+   :backlinks: none
+
 Overview
 --------
 

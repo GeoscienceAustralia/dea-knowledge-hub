@@ -11,6 +11,10 @@ including an interactive code environment using Jupyter, a metadata explorer
 and web services available. This page provides technical documentation for
 using the DEA data and services on AWS.
 
+.. contents:: On this page
+   :local:
+   :backlinks: none
+
 Data and services listing
 -------------------------
 
