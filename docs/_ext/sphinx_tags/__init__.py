@@ -212,7 +212,7 @@ class Tag:
             content.append("")
             content.append(f"{tags_page_header} &lsquo;{self.name}&rsquo;.")
             content.append("")
-            content.append("`&laquo; View all tags </tags-list/>`_")
+            content.append('`<i class="fa-solid fa-angle-left"></i> View all tags </tags-list/>`_')
             content.append("")
 
             for path in tag_page_paths:
