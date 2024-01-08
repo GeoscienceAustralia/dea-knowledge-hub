@@ -25,7 +25,7 @@ institutional email address.
 .. _National Computational Infrastructure: https://www.nci.org.au/
 .. _NCI Account Sign Up: https://my.nci.org.au/mancini/signup/
 
-.. contents:: On this page
+.. contents:: In this guide
    :local:
    :backlinks: none
 

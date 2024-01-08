@@ -11,7 +11,7 @@ DEA produces data to three maturity levels:
 * **Interim**
 * **Final**
 
-.. contents:: On this page
+.. contents:: In this guide
    :local:
    :backlinks: none
 

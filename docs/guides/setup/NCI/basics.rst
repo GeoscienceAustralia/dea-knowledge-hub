@@ -5,7 +5,7 @@
 Basics - JupyterLab and Virtual Desktop
 =======================================
 
-.. contents:: On this page
+.. contents:: In this guide
    :local:
    :backlinks: none
 

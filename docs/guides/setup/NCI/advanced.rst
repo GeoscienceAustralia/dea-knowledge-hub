@@ -4,7 +4,7 @@
 Advanced Access - HPC and CLI
 =============================
 
-.. contents:: On this page
+.. contents:: In this guide
    :local:
    :backlinks: none
 

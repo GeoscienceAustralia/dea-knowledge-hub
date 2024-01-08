@@ -2,7 +2,7 @@
 
 Our data products can be accessed through various web services, catalogues and mapping services.
 
-:::{contents} On this page
+:::{contents} In this guide
 :local:
 :backlinks: none
 :::

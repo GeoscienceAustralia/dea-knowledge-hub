@@ -11,7 +11,7 @@ Jupyter Notebooks can be used on both the `DEA Sandbox </guides/setup/Sandbox/sa
 
 In addition to the documentation found in the following `DEA Notebooks User Guide </notebooks/README/>`_ section, please see the `dea-notebooks wiki on GitHub <https://github.com/GeoscienceAustralia/dea-notebooks/wiki>`_ for more details on interacting and developing code with Jupyter Notebooks.
 
-.. contents:: On this page
+.. contents:: In this guide
    :local:
    :backlinks: none
 

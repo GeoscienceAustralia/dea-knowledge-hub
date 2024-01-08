@@ -1,7 +1,7 @@
 DEA Summary Product Grid (Collection 3) 
 =======================================
 
-.. contents:: On this page
+.. contents:: In this guide
    :local:
    :backlinks: none
 
