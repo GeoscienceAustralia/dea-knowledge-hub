@@ -34,13 +34,3 @@ You should do your work on the `develop` branch or, ideally, branch off into you
 <!--   checkout main -->
 <!--   merge develop -->
 <!-- ``` -->
-
-# Overwriting demo branches
-
-Instead of merging into the demo branches, it's easier to overwrite them with the exact contents of your branch.
-
-```bash
-git checkout demo1
-git reset --hard your-branch
-git push origin demo1 --force
-```
