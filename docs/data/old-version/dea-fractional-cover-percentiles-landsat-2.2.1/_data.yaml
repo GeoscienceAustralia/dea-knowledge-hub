@@ -60,5 +60,6 @@ enable_access: false
 enable_details: true
 enable_quality: false
 enable_history: true
+enable_faqs: false
 enable_credits: true
 

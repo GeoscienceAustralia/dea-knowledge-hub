@@ -37,6 +37,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
         "details",
         "quality",
         "history",
+        "faqs",
         "credits"
     ];
 
