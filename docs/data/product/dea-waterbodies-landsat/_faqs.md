@@ -47,20 +47,20 @@ Within the DEA Waterbodies web service, there are two time series provided for e
 * 'Wet Pixel Count': the total number of pixels that have been classified as 'wet' for each time step. This value is useful if you need to calculate an area of wet pixels. Each pixel is 30 metres by 30 metres.
 :::
 
-## About the mapped waterbodies
+### About the mapped waterbodies
 
 :::{dropdown} What satellite imagery does DEA Waterbodies use?
 DEA Waterbodies is based on Landsat satellite data provided by the United States Geological Service. The Digital Earth Australia (DEA) program within Geoscience Australia corrects this data and makes it available publicly.
 
 The tool uses data from the Landsat 5 TM (1987--2011), Landsat 7 ETM+ (1999--present), and Landsat 8 OLI (2013--present) missions.
 
-To find out more about the Landsat missions, check out the [ USGS Landsat Missions webpages](https://www.usgs.gov/land-resources/nli/landsat/landsat-satellite-missions?qt-science_support_page_related_con=2#qt-science_support_page_related_con)
+To find out more about the Landsat missions, check out the [USGS Landsat Missions webpages](https://www.usgs.gov/land-resources/nli/landsat/landsat-satellite-missions?qt-science_support_page_related_con=2#qt-science_support_page_related_con)
 :::
 
 :::{dropdown} How do you classify water from satellite imagery?
 The water classifier that is used by DEA Waterbodies is the **DEA Water Observations** algorithm. It is a decision tree algorithm that classifies each pixel as 'wet', 'dry' or 'invalid'.
 
-For details on how the Water Observations from Space algorithm classifies water, [ see this paper](https://doi.org/10.1016/j.rse.2015.11.003)
+For details on how the Water Observations from Space algorithm classifies water, [see this paper](https://doi.org/10.1016/j.rse.2015.11.003)
 :::
 
 :::{dropdown} How big does a waterbody have to be to be included?
@@ -120,16 +120,16 @@ DEA Waterbodies are mapped using water classified pixels. If a pixel is predomin
 By design, we have excluded locations where water is seen only during extreme flood events. A wetness threshold of 10% was applied to the data, meaning that only waterbodies observed as wet at least 10% of the time between 1987 and 2020 have been included. This threshold was determined to be sensitive enough to capture the locations of persistent waterbodies, but not so sensitive as to pick up too many false positives like flood irrigation, flood events or soggy areas in the landscape.
 :::
 
-## Other information about DEA Waterbodies
+### Other information about DEA Waterbodies
 
 :::{dropdown} How do I download the data?
-Individual waterbody time series can be downloaded within [National Map](https://nationalmap.gov.au/) and [DEA Maps](http://maps.dea.ga.gov.au/). Instructions on how to download individual time series can be found in the User Guide.
+Individual waterbody time series can be downloaded within [National Map](https://nationalmap.gov.au/) and [DEA Maps](http://maps.dea.ga.gov.au/). Instructions on how to download individual time series can be found in the User Guide.
 
 The underlying polygon dataset containing the map of over 300,000 waterbodies across Australia can be downloaded from the 'Access' tab.
 :::
 
 :::{dropdown} Can I load DEA Waterbodies into my GIS software?
-DEA Waterbodies has been provided as a web mapping service. You can consume this service by connecting to the service endpoint (see the metadata provided with the layer in [National Map](https://nationalmap.gov.au/) or [DEA Maps](http://maps.dea.ga.gov.au/) for details). Please note that for now, this service will only allow you to access the underlying waterbody map, not the individual time series associated with each waterbody.
+DEA Waterbodies has been provided as a web mapping service. You can consume this service by connecting to the service endpoint (see the metadata provided with the layer in [National Map](https://nationalmap.gov.au/) or [DEA Maps](http://maps.dea.ga.gov.au/) for details). Please note that for now, this service will only allow you to access the underlying waterbody map, not the individual time series associated with each waterbody.
 :::
 
 :::{dropdown} How was DEA Waterbodies produced?
