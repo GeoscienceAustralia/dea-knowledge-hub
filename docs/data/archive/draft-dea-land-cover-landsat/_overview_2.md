@@ -1,5 +1,7 @@
 % ## Cite this product
 
+% > Your citation
+
 ## Publications
 
 Lucas R, Mueller N, Siggins A, Owers C, Clewley D, Bunting P, Kooymans C, Tissott B, Lewis B, Lymburner L, Metternicht G. Land Cover Mapping using Digital Earth Australia. *Data*. 2019; 4(4):143. [https://doi.org/10.3390/data4040143](https://doi.org/10.3390/data4040143)  
