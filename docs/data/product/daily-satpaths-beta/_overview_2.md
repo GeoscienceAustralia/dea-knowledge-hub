@@ -1,2 +1,4 @@
-% ## Publications
+% % ## Cite this product
+
+## Publications
 

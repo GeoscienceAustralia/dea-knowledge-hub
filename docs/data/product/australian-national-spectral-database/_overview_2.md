@@ -1,3 +1,5 @@
+% ## Cite this product
+
 ## Publications
 
 Hueni, A., Chisholm, L.A., Ong, C., Malthus, T.J., Wyatt, M., Trim, S.A., Schaepman, M.E., Thankappan, M. 2021. The SPECCHIO Spectral Information System, IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing, vol. 13, pp. 5789-5799, 2020, [doi: 10.1109/JSTARS.2020.3025117](https://doi.org/10.1109/JSTARS.2020.3025117).
