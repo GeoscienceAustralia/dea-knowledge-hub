@@ -3,5 +3,5 @@ REM make.bat
 
 docker build -t dea-docs .
 
-docker run -it --rm --name dea-docs --publish 4444:4444 --volume ".\docs\notebooks":"/docs/notebooks" --volume ".\output":"/output" --env-file .env dea-docs
+docker run -it --rm --name dea-docs --publish 8011:8011 --volume ".\docs\notebooks":"/docs/notebooks" --volume ".\output":"/output" --env-file .env dea-docs
 
