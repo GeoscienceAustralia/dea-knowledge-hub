@@ -400,4 +400,5 @@
 
    <script type="text/javascript" src="/_static/scripts/vendors/tocbot.min.js"></script>
    <script type="text/javascript" src="/_static/scripts/product-table-of-contents.js" /></script>
+   <script type="text/javascript" src="/_static/scripts/product-tab-deep-links.js" /></script>
    <script type="text/javascript" src="/_static/scripts/access-cards-tooltips.js" /></script>
