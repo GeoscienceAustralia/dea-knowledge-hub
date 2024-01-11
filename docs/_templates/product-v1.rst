@@ -117,7 +117,7 @@
        .. rubric:: Access the data
           :name: access-the-data
 
-       For help accessing the data, see the 'Access' tab.
+       For help accessing the data, see the `Access tab <./#access>`_.
 
        .. container:: card-list icons
           :name: access-the-data-cards
