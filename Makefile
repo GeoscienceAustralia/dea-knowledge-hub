@@ -1,3 +1,6 @@
+# This is the script for building the site locally on Mac or Linux. In the terminal, enter the command:
+# make
+
 run:
 	make build
 	make start
