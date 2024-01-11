@@ -9,4 +9,4 @@ cp /docs/_robots/robots-local.txt /docs/robots.txt
 sphinx-build -b dirhtml -j auto -a /docs /output
 
 cd /output
-python -m http.server 8011
+python -m http.server 8062
