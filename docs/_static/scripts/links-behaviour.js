@@ -3,8 +3,10 @@
 document.addEventListener("DOMContentLoaded", function (event) {
     for (var links = document.links, i = 0, a; (a = links[i]); i++) {
         var hrefAnchor = a.href.replace(location.href, "");
-        if (/^#/.test(hrefAnchor)) {
+        if (/^(?:#|\.\/#)/.test(hrefAnchor)) {
             a.classList.add("anchor-link");
+        } else if (/^(?:\?|\.\/\?)/.test(hrefAnchor)) {
+            a.classList.add("query-link");
         } else if (a.host === location.host) {
             a.classList.add("internal-link");
         } else if (a.host !== location.host) {
