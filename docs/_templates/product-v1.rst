@@ -101,7 +101,7 @@
 
     {% if data.enable_overview %}
     .. tab-item:: Overview
-       :name: overview-tab
+       :name: overview
 
        .. container:: table-of-contents
 
@@ -215,7 +215,7 @@
 
     {% if data.enable_details %}
     .. tab-item:: Details
-       :name: details-tab
+       :name: details
 
        .. container:: table-of-contents
 
@@ -230,7 +230,7 @@
 
     {% if data.enable_quality %}
     .. tab-item:: Quality
-       :name: quality-tab
+       :name: quality
 
        .. container:: table-of-contents
 
@@ -245,7 +245,7 @@
 
     {% if data.enable_access %}
     .. tab-item:: Access
-       :name: access-tab
+       :name: access
 
        .. container:: table-of-contents
 
@@ -330,7 +330,7 @@
 
     {% if data.enable_history %}
     .. tab-item:: History
-       :name: history-tab
+       :name: history
 
        .. container:: table-of-contents
 
@@ -368,7 +368,7 @@
 
     {% if data.enable_faqs %}
     .. tab-item:: FAQs
-       :name: faqs-tab
+       :name: faqs
 
        .. container:: table-of-contents
 
@@ -383,7 +383,7 @@
 
     {% if data.enable_credits %}
     .. tab-item:: Credits
-       :name: credits-tab
+       :name: credits
 
        .. container:: table-of-contents
 
