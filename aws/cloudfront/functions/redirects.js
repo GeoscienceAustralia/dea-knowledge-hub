@@ -21,40 +21,37 @@ async function handler(event) {
         const automoduleName = sourceCodePath.replaceAll("/", ".");
         const automoduleUri = `/notebooks/Tools/gen/dea_tools.${deaToolsName}/`;
 
-        return {
-            ...status301MovedPermanently,
+        return Object.assign(status301MovedPermanently, {
             headers: {
                 location: {
                     value: automoduleUri
                 }
             }
-        };
+        });
     }
 
     // Redirect URLs ending in "index.html" to end in "/" instead. E.g. /page/index.html => /page/
 
     if (indexHtmlPattern.test(uri)) {
-        return {
-            ...status301MovedPermanently,
+        return Object.assign(status301MovedPermanently, {
             headers: {
                 location: {
                     value: uri.replace(indexHtmlPattern, "/")
                 }
             }
-        };
+        });
     }
 
     // Redirect URLs ending in certain extensions (".html", ".rst", and others) to end in "/" instead. E.g. /example.html => /example/
 
     if (filetypeExtensionsPattern.test(uri)) {
-        return {
-            ...status301MovedPermanently,
+        return Object.assign(status301MovedPermanently, {
             headers: {
                 location: {
                     value: uri.replace(filetypeExtensionsPattern, "/")
                 }
             }
-        };
+        });
     }
 
     return request;
