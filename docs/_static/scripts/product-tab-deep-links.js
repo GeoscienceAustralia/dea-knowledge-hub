@@ -1,7 +1,7 @@
 // Enable linking to a specific tab on a product page by adding a parameter to the URL.
 // E.g. to open the Access tab, use ?tab=access
 
-document.addEventListener("DOMContentLoaded", function (event) {
+function handleTabDeepLinkHash () {
     const hash = window.location.hash;
     const parsedHash = hash.match(/#([^.]+).?([^.]*)/);
     const tab = parsedHash[1];
@@ -16,5 +16,13 @@ document.addEventListener("DOMContentLoaded", function (event) {
             window.location.hash = heading;
             window.location.hash = hash;
         }
+    }
+}
+
+document.addEventListener("DOMContentLoaded", handleTabDeepLinkHash);
+document.addEventListener("click", event => {
+    if (event.target.tagName === "A") {
+        handleTabDeepLinkHash();
+        // event.preventDefault();
     }
 });
