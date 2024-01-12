@@ -1,13 +1,13 @@
 sphinx
 nbsphinx
-IPython
+ipython==8.18.1
 myst-parser
 ipywidgets
 matplotlib
-pydata-sphinx-theme
+pydata-sphinx-theme==0.14.4
 sphinx_design
 sphinxext-rediraffe
-sphinxcontrib.datatemplates
+sphinxcontrib.datatemplates==0.10.2
 sphinx-external-toc
 sphinx-sitemap
 sphinxext-opengraph
