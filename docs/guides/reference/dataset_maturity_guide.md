@@ -88,7 +88,7 @@ DEA data can be filtered to specific dataset maturity levels using `dataset_matu
 metadata field. Valid options are 'final', 'nrt' or 'interim'; for example, 
 to load only 'final' maturity Landsat 8 data
 
-```
+```python
 import datacube
 dc = datacube.Datacube()
 
