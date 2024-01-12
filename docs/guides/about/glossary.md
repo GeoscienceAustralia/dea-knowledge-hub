@@ -51,9 +51,9 @@ determined from a set of radiation observations originally sensed by satellite s
 {#ancillary}
 ## Ancillary datasets
 
-Data which enhance processing and utilization of remote sensing instrument data. Ancillary datasets are used to assist
+Data which enhance processing and utilisation of remote sensing instrument data. Ancillary datasets are used to assist
 in the analysis and classification of e.g. [ARD](#ard) by providing supporting data on conditions at the time of 
-satellite data aquisition, such as aerosol and water vapour concentrations. 
+satellite data acquisition, such as aerosol and water vapour concentrations. 
 
 {#aws}
 ## Amazon Web Services (AWS)
@@ -166,7 +166,7 @@ and the most up-to-date collection available.
 The reproduction of the [collection](#collection), including all downstream products, with the 
 initial input being the rawest form ([telemetry](#telemetry)). Collections are updated when 
 there are fundamental changes and upgrades to the data suite that make it incompatible with the existing collection. 
-Therefore a collection upgrade is more akin to a movie franchise reboot than a re-release.
+Therefore, a collection upgrade is more akin to a movie franchise reboot than a re-release.
 
 {#ceos-seo}
 ## Committee on Earth Observations, Systems Engineering Office (CEOS-SEO)
@@ -318,7 +318,7 @@ For more information, see [Geoscience Australia](https://www.ga.gov.au/).
 ## Geomedian
 
 Geometric median is a robust high-dimensional statistic that maintains relationships between spectral bands, while 
-producing a multi-dimensional median over a timeseries of satellite images.
+producing a multidimensional median over a timeseries of satellite images.
 
 The Geometric Median provides information on the general conditions of a landscape over a timeseries.
 
@@ -586,7 +586,7 @@ definition which contains the product description and specification.
 ## Python
 
 The programming language used to develop the [Open Data Cube](#odc) and most of [Digital Earth Australia](#dea). 
-It is an easy to use language, which also provides simple access to high performance processing capabilities.
+It is an easy-to-use language, which also provides simple access to high performance processing capabilities.
 
 For more information, see [Python](https://www.python.org/).
 
@@ -782,7 +782,7 @@ For more information, see [NASA Thematic Mapper Plus](https://landsat.gsfc.nasa.
 {#thredds}
 ## Thematic Real-time Environmental Distributed Data Services (THREDDS)
 
-An National Computational Infrastructure ([NCI](#nci)) server, which is a high-performance and high-availability 
+A National Computational Infrastructure ([NCI](#nci)) server, which is a high-performance and high-availability 
 installation of Unidata's Thematic Real-time Environmental Distributed Data Services (THREDDS).
 
 THREDDS serves many of NCI’s open data collections at the file level, as well as some aggregations. It provides many 
@@ -868,13 +868,13 @@ For more information, see [NASA: World Reference System](https://landsat.gsfc.na
 {#xarray}
 ## xarray
 
-An open source project and [Python](#python) package for working with labelled multi-dimensional arrays such as those 
+An open source project and [Python](#python) package for working with labelled multidimensional arrays such as those 
 returned by the [Open Data Cube](#odc).
 
 {#yaml}
 ## Yet Another Markup Language (YAML)
 
-A human readable data storage format. It is used throughout [DEA](#dea) for metadata files, product definitions and 
+A human-readable data storage format. It is used throughout [DEA](#dea) for metadata files, product definitions and 
 other configuration files.
 
 {#zenith}
