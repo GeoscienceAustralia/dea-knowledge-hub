@@ -10,7 +10,7 @@ provides the best possible, most up-to-date information at any point in time.
 
 Dataset maturity metadata attributes are currently implemented across all Sentinel 2 and Landsat Collection 3 ARD products. 
 
-## How does "dataset maturity" work?
+## How does 'dataset maturity' work?
 
 DEA produces ARD data to three maturity levels: 
 * **Near Real-Time (NRT)**
@@ -85,8 +85,8 @@ for the same time step.
 ## How do I load only Near Real-Time/Interim/Final data using the datacube? 
 
 DEA data can be filtered to specific dataset maturity levels using `dataset_maturity` 
-metadata field. Valid options are “final”, “nrt” or “interim”; for example, 
-to load only “final” maturity Landsat 8 data
+metadata field. Valid options are 'final', 'nrt' or 'interim'; for example, 
+to load only 'final' maturity Landsat 8 data
 
 ```
 import datacube
@@ -108,6 +108,7 @@ have not yet been finalised for release. Products or services tagged as provisio
 of new products, could represent other stages of product development, or could not yet have passed 
 DEA's quality control standards for a product or service. 
 
-**Provisional products are available for use, but should be used with appropriate caution, due to their provisional nature.** 
+**Provisional products are available for use, but should be used with appropriate caution.** See the individual product 
+or service metadata pages for information on product limitations and use. 
 
 Once a product is formally released, it is renamed to remove the provisional tag.  
