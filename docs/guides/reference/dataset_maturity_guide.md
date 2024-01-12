@@ -49,8 +49,7 @@ If high quality ancillaries required for the **final** ARD model don’t become 
 ‘**interim**’ maturity data is produced as a *stand-in* until the full ancillaries are available to produce the ‘**final**’ version.
 This is our fall-back until the issue is resolved.
 
-**Interim**
-Interim production means that one or more ancillary datasets were not available at the time of production, and the dataset has 
+**Interim** production means that one or more ancillary datasets were not available at the time of production, and the dataset has 
 instead been corrected using a combination of **NRT** climatological ancillaries, and **final** observed 
 ancillaries. If there are no delays in the ancillary datasets, then **interim** maturity is skipped and 
 datasets move directly from **NRT** to **final**.
