@@ -48,6 +48,13 @@ In the context of remote sensing, algorithms generally specify how to determine 
 lower-level source data. For example, algorithms prescribe how atmospheric temperature and moisture profiles are 
 determined from a set of radiation observations originally sensed by satellite sounding instruments.
 
+{#ancillary}
+## Ancillary datasets
+
+Data which enhance processing and utilization of remote sensing instrument data. Ancillary datasets are used to assist
+in the analysis and classification of e.g. [ARD](#ard) by providing supporting data on conditions at the time of 
+satellite data aquisition, such as aerosol and water vapour concentrations. 
+
 {#aws}
 ## Amazon Web Services (AWS)
 
@@ -268,6 +275,14 @@ capability. The ESA is a partner of the [Copernicus Programme](#cop-prog).
 
 The angle between a ray reflected from a surface and the line perpendicular to the surface at the point of emergence.
 
+{#final}
+## Final
+
+A stage in DEA's dataset maturity lifecycle. DEA’s best quality [ARD](#ard), produced using high quality [ancillary](#ancillary) 
+datasets derived from observed data.
+
+For more information, see [DEA dataset maturity](/guides/reference/dataset_maturity_guide#final).
+
 {#fc}
 ## Fractional Cover (FC)
 
@@ -337,6 +352,15 @@ a typical desktop computer or workstation in order to solve large problems in sc
 ## Incident angle (degrees)
 
 The angle between a ray incident on a surface and the line perpendicular to the surface at the point of incidence.
+
+{#interim}
+## Interim
+
+A stage in DEA's dataset maturity lifecycle. Interim production means that one or more [ancillary](#ancillary) datasets were not 
+available at the time of production, and the dataset has instead been corrected using a combination of [NRT](#nrt) 
+climatological ancillaries, and [final](#final) observed ancillaries.
+
+For more information, see [DEA dataset maturity](/guides/reference/dataset_maturity_guide#interim).
 
 {#nidem}
 ## Intertidal Elevation
@@ -474,12 +498,12 @@ Radiation just beyond the visible light spectrum. In Landsat and Sentinel 2 Eart
 radiation between 0.7 - 0.9 micrometers.
 
 {#nrt}
-## Near-real time (NRT)
+## Near real-time (NRT)
 
-NRT data is a less refined/calibrated dataset, which is available much sooner after satellite acquisition than standard 
-[ARD](#ard) data.
+A stage in DEA's dataset maturity lifecycle. NRT data is a less refined/calibrated dataset, which is available much 
+sooner after satellite acquisition than standard [ARD](#ard) data.
 
-For more information, see [DEA dataset maturity](/guides/reference/dataset_maturity_guide/).
+For more information, see [DEA dataset maturity](/guides/reference/dataset_maturity_guide#nrt).
 
 {#odc}
 ## Open Data Cube (ODC)
