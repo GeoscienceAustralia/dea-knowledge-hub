@@ -184,7 +184,7 @@ class Tag:
         """
         # Get sorted file paths for tag pages, relative to /docs/_tags
         tag_page_paths = sorted([i.relpath(srcdir) for i in items])
-        ref_label = f"sphx_tag_{self.file_basename}"
+        ref_label = f"tag-page"
 
         content = []
         if "md" in extension:
@@ -194,12 +194,12 @@ class Tag:
             content.append("")
             content.append(f"{tags_page_header} &lsquo;{self.name}&rsquo;.")
             content.append("")
-            content.append("[&laquo; View all tags](/tags-list/)")
+            content.append('<i class="fa-solid fa-angle-left tag-page-list"></i> <a href="/tags-list/">View all tags</a>')
             content.append("")
 
             for path in tag_page_paths:
                 formatted_path = "/" + re.sub(r'index\/$', "", re.sub(r'\.[a-zA-Z0-9]+$', "", path))
-                content.append(f"{{doc}}`{formatted_path}`")
+                content.append(f"* {{doc}}`{formatted_path}`")
                 content.append("")
 
         else:
@@ -212,12 +212,14 @@ class Tag:
             content.append("")
             content.append(f"{tags_page_header} &lsquo;{self.name}&rsquo;.")
             content.append("")
-            content.append('`<i class="fa-solid fa-angle-left"></i> View all tags </tags-list/>`_')
+            content.append(".. raw:: html")
+            content.append("   ")
+            content.append('   <p><i class="fa-solid fa-angle-left tag-page-list"></i> <a href="/tags-list/">View all tags</a></p>')
             content.append("")
 
             for path in tag_page_paths:
                 formatted_path = "/" + re.sub(r'index\/$', "", re.sub(r'\.[a-zA-Z0-9]+$', "", path))
-                content.append(f":doc:`{formatted_path}`")
+                content.append(f"* :doc:`{formatted_path}`")
                 content.append("")
 
         content.append("")
@@ -266,7 +268,7 @@ def tagpage(tags, outdir, title, extension, tags_index_header):
 
     if "md" in extension:
         content = []
-        content.append("(tagoverview)=")
+        content.append("(tags-list-page)=")
         content.append("")
         content.append(f"# {title}")
         content.append("")
