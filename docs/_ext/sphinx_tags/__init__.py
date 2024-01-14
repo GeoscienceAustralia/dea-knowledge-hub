@@ -214,7 +214,7 @@ class Tag:
             content.append("")
             content.append(".. raw:: html")
             content.append("   ")
-            content.append('   <p><i class="fa-solid fa-angle-left tag-page-list"></i> <a href="/tags-list/">View all tags</a></p>')
+            content.append('   <p><i class="fa-solid fa-angle-left view-all-tags-link"></i> <a href="/tags-list/">View all tags</a></p>')
             content.append("")
 
             for path in tag_page_paths:
