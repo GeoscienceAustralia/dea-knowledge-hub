@@ -1,5 +1,6 @@
-import sys
 import os
+import sys
+sys.path.append(os.path.abspath("./_ext"))
 sys.path.insert(0, os.path.abspath('.'))
 from _modules import utilities
 from _modules import mock_imports
@@ -10,6 +11,7 @@ environment = {
     "git_branch": os.environ.get("BRANCH"),
     "demo_name": os.environ.get("DEMO_NAME"),
     "local_enable_redirects": os.environ.get("LOCAL_ENABLE_REDIRECTS"),
+    "local_enable_tags": os.environ.get("LOCAL_ENABLE_TAGS"),
 }
 
 project = "DEA Knowledge Hub"
@@ -68,6 +70,7 @@ extensions = [
     "sphinxext.opengraph",
     "notfound.extension",
     "sphinx_copybutton",
+    "sphinx_tags",
 ]
 
 myst_enable_extensions = [
@@ -107,6 +110,15 @@ napoleon_numpy_docstring = True
 notfound_template = "404-not-found.html"
 notfound_pagename = "404-not-found"
 notfound_urls_prefix = ""
+
+tags_create_tags = (
+    environment["build_mode"] == "production" # Not `in ["demo", "production"]` because Netlify only supports Python 3.8 and therefore, this extension is unreliable.
+    or environment["local_enable_tags"] == "Yes"
+)
+tags_overview_title = "All tags"
+tags_page_header = "The following pages are tagged with"
+tags_index_header = "Here is a list of all tags that are used on the site."
+tags_extension = ["md", "rst"]
 
 html_css_files = [
     'styles/styles.css'

@@ -94,3 +94,4 @@ We can now see a preview of the data for that tile, as well as all the metadata 
 .. image:: /_files/DEA_explorer/DEA_explorer_dataset_metadata.png
    :align: center
    :alt: DEA Explorer Adelaide dataset with metadata
+

@@ -209,6 +209,10 @@
           {%- endif %}
        {%- endif %}
 
+       {%- if valid_tags %}
+       .. tags:: {{ valid_tags | join(", ") }}
+       {%- endif %}
+
        .. include:: _overview_2.md
           :parser: myst_parser.sphinx_
     {% endif %}
