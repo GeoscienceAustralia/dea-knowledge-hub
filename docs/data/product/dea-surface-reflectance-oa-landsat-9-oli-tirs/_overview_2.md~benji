@@ -1,4 +1,4 @@
-% % ## Cite this product
+% ## Cite this product
 
 % > Your citation
 
