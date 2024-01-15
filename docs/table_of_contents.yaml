@@ -176,6 +176,7 @@ entries:
           - file: guides/about/changelog
           - file: guides/about/publications
           - file: guides/about/glossary
+            title: DEA Glossary
 
   - file: notebooks/README
     title: DEA Notebooks
