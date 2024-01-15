@@ -7,13 +7,13 @@ data_product_themes:
     icon: globe
   - name: Land and vegetation
     link: /data/theme/land-and-vegetation/
-    icon: mountain
+    icon: mountains
   - name: Inland water
     link: /data/theme/inland-water/
     icon: water
   - name: Sea, ocean, and coast
     link: /data/theme/sea-ocean-and-coast/
-    icon: fish
+    icon: wave
   - name: Hazards
     link: /data/theme/hazards/
-    icon: fire
+    icon: fa-fire-flame-curved
