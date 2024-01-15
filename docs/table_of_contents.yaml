@@ -91,7 +91,7 @@ entries:
               - file: data/product/dea-fractional-cover-percentiles-landsat/index
                 title: DEA Fractional Cover Percentiles
           - file: data/product/dea-geometric-median-and-median-absolute-deviation-landsat/index
-            title: DEA Geomedian and Mean Absolute Deviation (GeoMAD)
+            title: DEA Geomedian and Median Absolute Deviation (GeoMAD)
           - file: data/product/dea-mangrove-canopy-cover-landsat/index
             title: DEA Mangroves
           - file: data/product/dea-tasseled-cap-percentiles-landsat/index
