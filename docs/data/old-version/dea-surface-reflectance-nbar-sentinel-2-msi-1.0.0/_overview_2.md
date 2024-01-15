@@ -2,5 +2,5 @@
 
 % > Your citation
 
-## Publications
+% ## Publications
 
