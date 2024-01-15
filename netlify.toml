@@ -4,7 +4,6 @@ publish = "output"
 
 [build.environment]
 BUILD_MODE = "demo"
-LOCAL_ENABLE_TAGS = "No"
 
 [context.demo1.environment]
 DEMO_NAME = "Demo 1"
