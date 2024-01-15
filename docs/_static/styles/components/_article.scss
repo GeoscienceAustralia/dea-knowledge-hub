@@ -48,6 +48,11 @@ main#main-content article.bd-article {
         padding-left: 0;
     }
 
+    blockquote {
+        background: none;
+        color: $text-color;
+    }
+
     .sd-tab-content {
         padding-top: 24px;
     }
