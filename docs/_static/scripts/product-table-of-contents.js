@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     for (let i = 0; i < tabs.length; i++) {
         let tab = tabs[i];
         tocbot.init({
-            contentSelector: `.product-page #${tab}-tab + .sd-tab-content`,
+            contentSelector: `.product-page #${tab} + .sd-tab-content`,
             tocSelector: `.product-page #${tab}-table-of-contents`,
             headingSelector: "h2"
         });
