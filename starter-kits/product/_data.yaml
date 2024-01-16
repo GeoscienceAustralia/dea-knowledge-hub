@@ -35,35 +35,41 @@ tags: null # List
 maps: null
 
   # - link: https://example.com
-  #   name: null
+  #   name: See it on a map
 
 explorers: null
 
   # - link: https://example.com
-  #   name: null
+  #   name: Data explorer
 
 data: null
 
   # - link: https://example.com
-  #   name: null
+  #   name: Access the data on AWS
+  # - link: https://example.com
+  #   name: Access the data on NCI
 
 code_examples: null
 
   # - link: https://example.com
-  #   name: null
+  #   name: Code examples
+  # - link: https://example.com
+  #   name: Github repository
 
 web_services: null
 
   # - link: https://example.com
-  #   name: null
+  #   name: Web Map Service (WMS)
+  # - link: https://example.com
+  #   name: Web Feature Service (WFS)
 
 custom: null
 
-  # - icon: ghost
+  # - icon: globe
   #   link: https://example.com
-  #   label: null
-  #   name: Lorem ipsum
-  #   description: null
+  #   label: Get via API
+  #   name: Access the API
+  #   description: Learn how to `use the API <https://satpathapi.dea.ga.gov.au/user-guide>`_
   #   class: null
 
 # History
