@@ -1,24 +1,16 @@
 % ## Background
-% - optional
 
-% ## Product purpose
-% - required
+## Product purpose
 
 % ## Applications
-% - optional
 
-% ## Technical information
-% - required
+## Technical information
 
-% ## Lineage
-% - required
+## Lineage
 
 % ## Processing steps
-% - optional
 
 % ## Software
-% - optional
 
 % ## References
-% - optional
 
