@@ -7,6 +7,10 @@ This section focusses on getting started with Digital Earth Australia (DEA) thro
 These instances come with examples that teach you how to use DEA, as well as data and software you can use for your own work.
 The primary software for DEA is the `Open Data Cube`_ (ODC), which can be easily integrated with other Python packages.
 
+.. contents:: In this guide
+   :local:
+   :backlinks: none
+
 .. _Open Data Cube: https://www.opendatacube.org/
 
 Instances

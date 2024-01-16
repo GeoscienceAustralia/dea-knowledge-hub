@@ -1,2 +1,2 @@
 .. datatemplate:yaml:: _data.yaml
-   :template: old-versions-v1.rst
+   :template: category-v1.rst

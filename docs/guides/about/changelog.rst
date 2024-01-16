@@ -6,6 +6,10 @@
  Changelog
 ===========
 
+.. contents:: In this guide
+   :local:
+   :backlinks: none
+
 2023-08-11
 ==========
 

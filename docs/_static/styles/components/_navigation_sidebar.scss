@@ -1,20 +1,86 @@
-nav.bd-docs-nav {
-    .bd-links__title {
-        display: none;
+.bd-sidebar {
+    $breakpoint-sidebar: 960px;
+    $list-space-mobile: 8px;
+
+    .sidebar-header-items { // Displays on mobile
+        .sidebar-header-items__title {
+            display: none;
+        }
+
+        .navbar-item:first-of-type { // Site logo
+            display: none;
+        }
+
+        ul.bd-navbar-elements {
+            margin-bottom: 1.15rem;
+
+            li {
+                margin-bottom: $list-space-mobile;
+
+                a {
+                    font-weight: bold;
+                    font-size: 1.1rem;
+                    color: $text-color;
+                }
+            }
+        }
+
+        .bd-search {
+            margin-bottom: 1.15rem;
+        }
     }
 
-    .active > a {
-        box-shadow: none;
-        font-weight: normal;
+    nav.bd-docs-nav {
+        padding-right: 2px;
+
+        .bd-links__title {
+            display: none;
+        }
+
+        .active > a {
+            box-shadow: none;
+            font-weight: normal;
+        }
+
+        a.current.reference {
+            font-weight: bold;
+        }
+
+        .toctree-checkbox:checked + label {
+            transform: rotate(180deg);
+        }
+
+        @media only screen and (max-width: $breakpoint-sidebar) {
+            .caption {
+                margin-top: 1.25rem !important;
+            }
+
+            ul.bd-sidenav {
+                li {
+                    margin-bottom: $list-space-mobile;
+
+                    ul {
+                        margin-top: $list-space-mobile;
+                    }
+                }
+            }
+
+            .bd-sidebar-primary {
+                li.has-children > .reference {
+                    padding-right: 38px;
+                }
+
+                label.toctree-toggle {
+                    margin-right: 8px;
+                }
+            }
+        }
     }
 
-    a.current.reference {
-        font-weight: bold;
+    @media only screen and (min-width: $breakpoint-sidebar) {
+        .bd-sidebar-primary {
+            margin-right: 4rem;
+        }
     }
 }
 
-@media (min-width: 960px) {
-    .bd-sidebar-primary {
-        margin-right: 4rem;
-    }
-}

@@ -1,0 +1,40 @@
+.bd-content .bd-search-container {
+    h1 {
+        font-size: 2.15rem !important;
+        margin-top: 1.5rem;
+        margin-bottom: 1.65rem;
+        font-weight: bold;
+    }
+
+    form {
+        margin-bottom: 1.15rem;
+    }
+
+    #search-results {
+        h2 {
+            display: none;
+        }
+
+        .search-summary {}
+
+        ul.search {
+            li {
+                border-top: none;
+                padding: 0;
+                margin: 0;
+
+                a {
+                    display: block;
+                    font-size: 1.2rem;
+                    margin-top: 1.15rem;
+                    margin-bottom: 0.25rem;
+                }
+
+                .context {
+                    margin: 0;
+                    padding-bottom: 0.25rem;
+                }
+            }
+        }
+    }
+}

@@ -1,15 +1,17 @@
-import sys
 import os
+import sys
+sys.path.append(os.path.abspath("./_ext"))
 sys.path.insert(0, os.path.abspath('.'))
 from _modules import utilities
 from _modules import mock_imports
+from _modules import demo_banner
 
 environment = {
     "build_mode": os.environ.get("BUILD_MODE"),
     "git_branch": os.environ.get("BRANCH"),
     "demo_name": os.environ.get("DEMO_NAME"),
-    "deploy_id": os.environ.get("DEPLOY_ID"),
     "local_enable_redirects": os.environ.get("LOCAL_ENABLE_REDIRECTS"),
+    "local_enable_tags": os.environ.get("LOCAL_ENABLE_TAGS"),
 }
 
 project = "DEA Knowledge Hub"
@@ -67,6 +69,8 @@ extensions = [
     "sphinx_sitemap",
     "sphinxext.opengraph",
     "notfound.extension",
+    "sphinx_copybutton",
+    "sphinx_tags",
 ]
 
 myst_enable_extensions = [
@@ -107,6 +111,15 @@ notfound_template = "404-not-found.html"
 notfound_pagename = "404-not-found"
 notfound_urls_prefix = ""
 
+tags_create_tags = (
+    environment["build_mode"] == "production" # Not `in ["demo", "production"]` because Netlify only supports Python 3.8 and therefore, this extension is unreliable.
+    or environment["local_enable_tags"] == "Yes"
+)
+tags_overview_title = "All tags"
+tags_page_header = "The following pages are tagged with"
+tags_index_header = "Here is a list of all tags that are used on the site."
+tags_extension = ["md", "rst"]
+
 html_css_files = [
     'styles/styles.css'
 ]
@@ -129,8 +142,14 @@ html_theme_options = {
     "header_links_before_dropdown": 3,
     "logo": {
         "link": "/"
-    }
+    },
 }
+
+if environment["build_mode"] == "demo":
+    html_theme_options["announcement"] = demo_banner.create(
+        environment['demo_name'],
+        environment['git_branch']
+    )
 
 html_context = {
     "default_mode": "light",
@@ -143,3 +162,4 @@ if environment["build_mode"] == "production": html_context["google_analytics_ga4
 suppress_warnings = [
     # "etoc.toctree"
 ]
+

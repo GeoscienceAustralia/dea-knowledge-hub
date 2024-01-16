@@ -1,0 +1,60 @@
+main#main-content article.bd-article details.sd-dropdown {
+    $vertical-space: 1.5rem;
+
+    margin-top: 3rem !important;
+    margin-bottom: 0 !important;
+    border-top: 1px solid var(--pst-color-border) !important;
+    border-bottom: 1px solid var(--pst-color-border) !important;
+
+    &:last-of-type {
+        margin-bottom: 3rem !important;
+    }
+
+    & + details.sd-dropdown {
+        margin-top: 0 !important;
+        border-top: none !important;
+    }
+
+    &, summary.sd-card-header, summary.sd-card-header+div.sd-summary-content {
+        box-shadow: none !important;
+        border-radius: 0 !important;
+        background-color: initial !important;
+        border-left: none !important;
+    }
+
+    .sd-summary-title {
+        padding-top: $vertical-space !important;
+        padding-bottom: $vertical-space !important;
+
+        svg {
+            font-weight: bold !important;
+        }
+
+        &:hover {
+            color: $highlight-color !important;
+
+            @media only screen and (max-width: $breakpoint-md) {
+                color: $text-color !important;
+            }
+        }
+    }
+
+    summary.sd-card-header {
+        .sd-summary-down, .sd-summary-up {
+            top: 1.5rem !important;
+            right: 3px !important;
+
+            svg {
+                opacity: 1;
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    .sd-summary-content {
+        padding-top: 0 !important;
+        padding-bottom: $vertical-space !important;
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+}

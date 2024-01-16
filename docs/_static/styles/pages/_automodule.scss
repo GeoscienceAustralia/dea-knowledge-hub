@@ -1,5 +1,62 @@
 [id^="module"] {
-    .sig-prename {
-        font-weight: normal;
+    p.rubric {
+        font-size: 1.65rem !important;
+        margin-top: 2.75rem;
+        margin-bottom: 1.65rem;
+    }
+
+    ol > li:last-child {
+        margin-bottom: 1.15rem !important;
+    }
+
+    dl dd {
+        margin-left: 0 !important;
+    }
+
+    dl dt, dl dd {
+        background: none !important;
+        margin-bottom: 1.15rem !important;
+
+        li em {
+            font-style: normal;
+        }
+
+        .classifier {
+            margin-bottom: 1.15rem;
+        }
+    }
+
+    .sig {
+        margin-top: 3rem;
+        margin-bottom: 1.15rem;
+        padding-bottom: 1px;
+        border-bottom: 1px solid $table-border-color;
+
+        .property .pre, .sig-prename, .sig-paren, .sig-param, .sig-return {
+            font-weight: normal;
+        }
+
+        .sig-param .n .pre, .sig-return {
+            font-weight: bold;
+        }
+
+        .sig-name {
+            font-size: 1.2rem;
+            margin-right: 0.5em;
+        }
+
+        .sig-paren {
+            font-size: initial;
+        }
+
+        em {
+            font-style: normal;
+        }
+    }
+
+    .autosummary {
+        .reference .xref {
+            margin-right: 0.5rem;
+        }
     }
 }

@@ -1,0 +1,14 @@
+#processing-steps + ol, ol.processing-steps {
+    li {
+        padding: 0.5rem;
+        border-bottom: 1px solid $table-border-color;
+
+        &::marker {
+            font-weight: bold;
+        }
+
+        &:hover {
+            background-color: $hover-bg-color-white;
+        }
+    }
+}

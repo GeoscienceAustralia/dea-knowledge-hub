@@ -1,7 +1,7 @@
 <div class="container">
     <div class="row">
-        <div class="col-6 col-sm-3">
-            <p class="footer-heading"><strong>Related websites</strong></p>
+        <div class="col-12 col-sm-6 col-md-3">
+            <p class="footer-heading">Related websites</p>
             <ul>
                 <li><a href="https://www.dea.ga.gov.au/">Digital Earth Australia</a></li>
                 <li><a href="https://www.digitalearthafrica.org/">Digital Earth Africa</a></li>
@@ -9,8 +9,8 @@
                 <li><a href="https://www.opendatacube.org/">Open Data Cube</a></li>
             </ul>
         </div>
-        <div class="col-6 col-sm-3">
-            <p class="footer-heading"><strong>Get support</strong></p>
+        <div class="col-12 col-sm-6 col-md-3">
+            <p class="footer-heading">Get support</p>
             <ul>
                 <li><a href="/guides/about/glossary/">Glossary</a></li>
                 <li><a href="https://www.dea.ga.gov.au/contact">Contact us</a></li>
@@ -18,9 +18,9 @@
                 <li><a href="http://slack.opendatacube.org/">ODC Slack</a></li>
             </ul>
         </div>
-        <div class="col-12 col-sm-6">
+        <div class="col-12 col-md-6">
             <div id="acknowledgement-of-country">
-                <p class="footer-heading"><strong>Acknowledgement of country</strong></p>
+                <p class="footer-heading">Acknowledgement of country</p>
                 <p>Geoscience Australia acknowledges the traditional owners and custodians of Country throughout Australia and acknowledges their continuing connection to land, waters and community. We pay our respects to the people, the cultures and the elders past and present. Digital Earth Australia is a program of Geoscience Australia.</p>
             </div>
         </div>
@@ -49,13 +49,6 @@
                 {% trans copyright=copyright|e %}© Copyright {{ copyright }}.{% endtrans %}
                 {% endif %}
             </div>
-        </div>
-    </div>
-    {% endif %}
-    {% if environment.build_mode == "demo" %}
-    <div id="demo-banner" class="row">
-        <div class="col-12">
-            <p><i class="fa fa-brush"></i>You are viewing <strong>{{ environment.demo_name }}</strong>. <a href="https://app.netlify.com/sites/dea-docs/deploys/{{ environment.deploy_id }}">View the build log</a>.</p>
         </div>
     </div>
     {% endif %}

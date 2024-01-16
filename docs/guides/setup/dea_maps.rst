@@ -10,6 +10,10 @@ DEA Maps aims to provide easy access to DEA's products to help users to make mor
 .. _Geoscience Australia: http://www.ga.gov.au/
 .. _Data61 CSIRO: https://data61.csiro.au/
 
+.. contents:: On this page
+   :local:
+   :backlinks: none
+
 Getting started with DEA Maps
 -----------------------------
 
@@ -273,3 +277,4 @@ This will bring up a menu containing detailed guides to performing useful tasks 
 .. figure:: /_files/dea-maps/dea_maps_help_2.jpg
    :align: center
    :alt: Help 2
+

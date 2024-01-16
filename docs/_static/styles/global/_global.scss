@@ -1,16 +1,48 @@
 html {
+    --pst-font-family-heading: #{$heading-font-family} !important;
+    --pst-font-family-base-system: #{$content-font-family} !important;
+    --pst-color-primary: #{$text-color} !important;
+    --pst-color-text-base: #{$text-color} !important;
+    --pst-color-primary-highlight: #{$highlight-color} !important;
+    --bs-link-color: #{$highlight-color} !important;
+    --bs-link-hover-color: #{$highlight-color} !important;
+    --pst-color-link: #{$highlight-color} !important;
+    --pst-color-link-hover: #{$highlight-color} !important;
+    --pst-color-inline-code: #{$text-color} !important;
+    --pst-color-accent: black !important;
+}
+
+html {
     scroll-behavior: auto !important;
 }
 
 ::selection {
-    background: var(--pst-color-secondary);
+    background: $highlight-color;
     color: white;
+}
+
+dt:target, span.highlighted {
+    background-color: transparent;
 }
 
 #searchbox {
     display: none;
 }
 
-dt:target, span.highlighted {
-    background-color: transparent;
+.skip-link {
+    background-color: white;
+    color: $text-color;
 }
+
+#pst-back-to-top {
+    background-color: $highlight-color;
+
+    &:hover {
+        background-color: $hover-highlight-color;
+    }
+}
+
+.form-control:focus, .form-control:focus-visible {
+    outline: none;
+}
+

@@ -1,17 +1,42 @@
-article.bd-article {
+main#main-content article.bd-article {
     padding-left: 0 !important;
+    padding-bottom: 4rem;
 
     h1, h2, h3, h4, h5, h6 {
-        color: var(--pst-color-primary);
         font-weight: bold;
     }
 
-    h3, h4, h5, h6 {
-        color: var(--pst-color-secondary);
+    h1, h2 {
+        margin-bottom: 1.65rem;
     }
 
-    h4, h5, h6 {
-        font-weight: bold;
+    h1 {
+        font-size: 2.15rem !important;
+
+        img {
+            display: block;
+            margin-top: 1rem;
+        }
+    }
+
+    h2 {
+        font-size: 1.65rem !important;
+    }
+
+    h3 {
+        font-size: 1.2rem !important;
+    }
+
+    h4 {
+        font-size: 1rem !important;
+    }
+
+    h5 {
+        font-size: 90% !important;
+    }
+
+    h6 {
+        font-size: 80% !important;
     }
 
     .rubric {
@@ -19,13 +44,13 @@ article.bd-article {
         margin-top: 0 !important;
     }
 
-    h1 img {
-        display: block;
-        margin-top: 1rem;
-    }
-
     dl.field-list > dt {
         padding-left: 0;
+    }
+
+    blockquote {
+        background: none;
+        color: $text-color;
     }
 
     .sd-tab-content {
@@ -33,7 +58,9 @@ article.bd-article {
     }
 
     .sd-tab-set > label:hover {
-        border-top: none;
+        border-top: 2px solid rgba(0, 0, 0, 0) !important;
+        border-bottom: 2px solid $highlight-color !important;
+        color: $highlight-color !important;
     }
 
     .sd-card {
@@ -54,11 +81,11 @@ article.bd-article {
     }
 
     .sd-card-title {
-        color: var(--pst-color-primary);
+        color: $text-color;
     }
 
     table tr:hover {
-        background-color: var(--sd-color-card-hover);
+        background-color: $hover-bg-color-white;
     }
 
     a.sd-bg-bdg-button-link-primary-outline {

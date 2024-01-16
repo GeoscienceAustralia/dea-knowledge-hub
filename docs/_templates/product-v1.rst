@@ -101,7 +101,7 @@
 
     {% if data.enable_overview %}
     .. tab-item:: Overview
-       :name: overview-tab
+       :name: overview
 
        .. container:: table-of-contents
 
@@ -209,13 +209,17 @@
           {%- endif %}
        {%- endif %}
 
+       {%- if valid_tags %}
+       .. tags:: {{ valid_tags | join(", ") }}
+       {%- endif %}
+
        .. include:: _overview_2.md
           :parser: myst_parser.sphinx_
     {% endif %}
 
     {% if data.enable_details %}
     .. tab-item:: Details
-       :name: details-tab
+       :name: details
 
        .. container:: table-of-contents
 
@@ -230,7 +234,7 @@
 
     {% if data.enable_quality %}
     .. tab-item:: Quality
-       :name: quality-tab
+       :name: quality
 
        .. container:: table-of-contents
 
@@ -245,7 +249,7 @@
 
     {% if data.enable_access %}
     .. tab-item:: Access
-       :name: access-tab
+       :name: access
 
        .. container:: table-of-contents
 
@@ -330,7 +334,7 @@
 
     {% if data.enable_history %}
     .. tab-item:: History
-       :name: history-tab
+       :name: history
 
        .. container:: table-of-contents
 
@@ -340,6 +344,9 @@
              |nbsp|
 
        {% if not is_latest_version %}
+       .. rubric:: Other versions
+          :name: other-versions
+
        You can find the history in the `latest version of the product <{{ data.latest_version_link }}>`_.
        {% else %}
        .. rubric:: Old versions
@@ -352,7 +359,7 @@
        .. list-table::
 
           {% for item in valid_old_versions %}
-          * - `v{{ item.version }}: {{ item.title }} </data/old-version/{{ item.slug }}/>`_
+          * - `{{ item.version }}: {{ item.title }} </data/old-version/{{ item.slug }}/>`_
           {% endfor %}
        {% else %}
        No old versions available.
@@ -363,9 +370,24 @@
        {% endif %}
     {% endif %}
 
+    {% if data.enable_faqs %}
+    .. tab-item:: FAQs
+       :name: faqs
+
+       .. container:: table-of-contents
+
+          .. container::
+             :name: faqs-table-of-contents
+
+             |nbsp|
+
+       .. include:: _faqs.md
+          :parser: myst_parser.sphinx_
+    {% endif %}
+
     {% if data.enable_credits %}
     .. tab-item:: Credits
-       :name: credits-tab
+       :name: credits
 
        .. container:: table-of-contents
 
@@ -373,7 +395,7 @@
              :name: credits-table-of-contents
 
              |nbsp|
-    
+
        .. include:: _credits.md
           :parser: myst_parser.sphinx_
     {% endif %}
@@ -382,4 +404,5 @@
 
    <script type="text/javascript" src="/_static/scripts/vendors/tocbot.min.js"></script>
    <script type="text/javascript" src="/_static/scripts/product-table-of-contents.js" /></script>
+   <script type="text/javascript" src="/_static/scripts/product-tab-deep-links.js" /></script>
    <script type="text/javascript" src="/_static/scripts/access-cards-tooltips.js" /></script>

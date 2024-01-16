@@ -1,0 +1,13 @@
+a {
+    &.anchor-link, &.query-link {
+        text-decoration-style: dashed;
+
+        &:hover {
+            text-decoration-style: solid;
+        }
+    }
+
+    &.internal-link {}
+
+    &.external-link {}
+}

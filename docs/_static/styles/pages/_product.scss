@@ -4,8 +4,15 @@
     }
 
     .showcase-panel .rubric {
-        font-size: var(--pst-font-size-h1);
+        font-size: 1.65rem;
         margin-bottom: 0;
+    }
+
+    #notifications {
+        .admonition {
+            margin-top: 0;
+            margin-bottom: 1.15rem;
+        }
     }
 
     & > .sd-tab-set > .sd-tab-content {
