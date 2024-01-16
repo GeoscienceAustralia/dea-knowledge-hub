@@ -1,5 +1,10 @@
 # DEA Dataset Maturity
 
+:::{contents} In this guide
+:local:
+:backlinks: none
+:::
+
 In December 2022, DEA implemented **dataset maturity** levels to provide a more streamlined user 
 experience and access mechanism for DEA Analysis Ready Data ([ARD](/guides/about/glossary/#ard)) datasets. All ARD data for a single sensor is now 
 provided in a single product, streamlining the user experience and minimising the data handling required by users. 
