@@ -1,6 +1,6 @@
 % ## Cite this product
-
-% > Your citation
+% - required
 
 % ## Publications
+% - required
 

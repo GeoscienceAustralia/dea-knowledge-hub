@@ -1,4 +1,5 @@
 % ## Acknowledgments
+% - optional, but upstream data acknowledgments, where appropriate, are required
 
 ## License and copyright
 
