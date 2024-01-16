@@ -1,10 +1,10 @@
 a {
-    &.anchor-link {
+    &.anchor-link, &.query-link {
         text-decoration-style: dashed;
-    }
 
-    &.query-link {
-        text-decoration-style: dashed;
+        &:hover {
+            text-decoration-style: solid;
+        }
     }
 
     &.internal-link {}
