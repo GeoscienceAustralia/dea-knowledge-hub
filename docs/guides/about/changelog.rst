@@ -6,7 +6,7 @@
  Changelog
 ===========
 
-.. contents:: In this guide
+.. contents:: On this page
    :local:
    :backlinks: none
 
