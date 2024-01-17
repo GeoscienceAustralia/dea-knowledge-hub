@@ -1,6 +1,6 @@
 % ## Background
 
-## Product purpose
+## Purpose
 
 % ## Applications
 
