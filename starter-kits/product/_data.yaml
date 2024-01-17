@@ -10,7 +10,8 @@ time_span:
   start: null
   end: null
 update_frequency: null
-product_ids: null # List
+# product_ids:
+#   - product_id_1
 
 is_latest_version: true
 latest_version_link: null
@@ -28,7 +29,8 @@ nci:
   name: null
   code: null
 
-tags: null # List
+# tags:
+#   - geoscience_australia_landsat_collection_3
 
 # Access
 
