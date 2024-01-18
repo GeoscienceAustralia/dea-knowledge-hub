@@ -11,13 +11,13 @@ All DEA systems are working as expected. There are no outstanding incidents or e
 :::
 
 
-:::{admonition} DEA Sentinel-2 continguity fix - ongoing
+:::{admonition} DEA Sentinel-2 continguity fix: ongoing
 :class: note
 
 See [alert dated 2024-01-10](#20240110) for more details.
 :::
 
-{#20240110}
+(20240110=)
 ## 2024-01-10 **Sentinel-2 contiguity fix - Reprocessing commenced**
 
 Reprocessing to fix the Sentinel-2 contiguity issue has commenced with expected completion in early 2024. The issue 
