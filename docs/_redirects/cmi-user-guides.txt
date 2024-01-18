@@ -1,10 +1,11 @@
 # CMI User Guide redirects
 
-about/changelog     guides/about/changelog
+about/changelog     guides/techalerts_changelog
 about/faq           guides/about/faq
 about/glossary      guides/about/glossary
 about/intro         guides/about/intro
 about/publications  guides/about/publications
+guides/about/changelog guides/techalerts_changelog
 
 setup/AWS/data_and_metadata                             guides/setup/AWS/data_and_metadata
 setup/dea_maps                                          guides/setup/dea_maps
