@@ -17,8 +17,8 @@ All DEA systems are working as expected. There are no outstanding incidents or e
 See [alert dated 2024-01-10](#20240110) for more details.
 :::
 
-{#20240110}
-## 2024-01-10 **Sentinel-2 contiguity fix - Reprocessing commenced**
+(20240110)=
+## 2024-01-10 Sentinel-2 contiguity fix - Reprocessing commenced
 
 Reprocessing to fix the Sentinel-2 contiguity issue has commenced with expected completion in early 2024. The issue 
 was caused by anomalies in ESA Level 1 source data.
