@@ -14,11 +14,11 @@ All DEA systems are working as expected. There are no outstanding incidents or e
 :::{admonition} DEA Sentinel-2 continguity fix: ongoing
 :class: note
 
-See [alert dated 2024-01-10](#Jansentinelcont) for more details.
+See [alert dated 2024-01-10](#20240110) for more details.
 :::
 
-(Jansentinelcont)=
-## 2024-01-10 Sentinel-2 contiguity fix - Reprocessing commenced
+(20240110)=
+## *2024-01-10* Sentinel-2 contiguity fix - Reprocessing commenced
 
 Reprocessing to fix the Sentinel-2 contiguity issue has commenced with expected completion in early 2024. The issue 
 was caused by anomalies in ESA Level 1 source data.
@@ -33,7 +33,7 @@ Affected products:
 See [DEA Tech alert email](https://communication.ga.gov.au/link/id/zzzz659df9f7f306b556Pzzzz61de67bd94bfe861/page.html) for more information. 
 Click [here](https://communication.ga.gov.au/link/id/zzzz659de7f165049054Pzzzz61de67bd94bfe861/page.html) to subscribe to DEA Tech alert emails.
 
-## 2023-11 Release of version 0.3.0 of DEA Tools
+## 2023-11 **Release of version 0.3.0 of DEA Tools**
 
 Major update to the [DEA Tools Python package](https://docs.dea.ga.gov.au/notebooks/Tools/index.html), including new tools for:
 * [pansharpening Landsat data](https://docs.dea.ga.gov.au/notebooks/How_to_guides/Pansharpening.html)
