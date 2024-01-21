@@ -14,10 +14,10 @@ All DEA systems are working as expected. There are no outstanding incidents or e
 :::{admonition} DEA Sentinel-2 continguity fix: ongoing
 :class: note
 
-See [alert dated 2024-01-10](#Jan102024) for more details.
+See [alert dated 2024-01-10](#Jansentinelcont) for more details.
 :::
 
-(Jan102024)=
+(Jansentinelcont)=
 ## 2024-01-10 Sentinel-2 contiguity fix - Reprocessing commenced
 
 Reprocessing to fix the Sentinel-2 contiguity issue has commenced with expected completion in early 2024. The issue 
@@ -44,11 +44,18 @@ Major update to the [DEA Tools Python package](https://docs.dea.ga.gov.au/notebo
 
 ... in addition to 14 new and updated Jupyter notebooks. See [version 0.3.0 release notes](https://github.com/GeoscienceAustralia/dea-notebooks/releases/tag/0.3.0) for more detail.
 
+## 2023-08 New notebooks, features and documentation
+
+* Added a new [DEA Wetlands Insight Tool notebook](https://docs.dea.ga.gov.au/notebooks/DEA_products/DEA_Wetlands_Insight_Tool.html)
+* Notebooks for [loading data from Microsoft Planetary Computer](https://docs.dea.ga.gov.au/notebooks/How_to_guides/Planetary_computer.html)
+* Enhanced [DEA Tools Python Package API documentation](https://docs.dea.ga.gov.au/notebooks/Tools/index.html)
+* Improved interactive widget functionality for satellite image export and animations
+
 :::{dropdown} 2023-08-11 Small systems updates
 
 Technical DEA internals which have changed in the last week.
 * Some tweaks to DEA Sandbox DNS resolution last Friday.
-* The URL https://explorer.dea.ga.gov.au/ will be changed to show data in the DEA AWS data holdings instead of the NCI holdings.
+* The URL [https://explorer.dea.ga.gov.au/](https://explorer.dea.ga.gov.au/) will be changed to show data in the DEA AWS data holdings instead of the NCI holdings.
 * Some data gap filling of Landsat 8 ARD, Landsat 8 FC and Landsat 8 WO for 2023.
 * Reduced the delay between Sentinel 2 ARD data being produced (on the NCI), and being delivered to AWS. It was *up to 48 hours* and should now be *up to 24 hours*.
 :::
@@ -90,6 +97,7 @@ all the DEA data was public to NCI users without any further steps.
 :::
 
 :::{dropdown} 2018-02-28 Update to `dea` environment module
+* 
 * Rename module to `dea`. Most people should now run
 
 ```bash
