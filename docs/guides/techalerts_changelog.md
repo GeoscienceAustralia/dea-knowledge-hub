@@ -8,17 +8,18 @@
 :class: tip
 
 All DEA systems are working as expected. There are no outstanding incidents or errors to report.
+See the [DEA monitoring dashboard](https://monitoring.dea.ga.gov.au/). 
 :::
 
 
 :::{admonition} DEA Sentinel-2 continguity fix: ongoing
 :class: note
 
-See [alert dated 2024-01-10](#20240110) for more details.
+See [alert dated 2024-01-10](./#20240110) for more details.
 :::
 
 (20240110)=
-## *2024-01-10* **Sentinel-2 contiguity fix - Reprocessing commenced**
+## 2024-01-10 **Sentinel-2 contiguity fix - Reprocessing commenced**
 
 Reprocessing to fix the Sentinel-2 contiguity issue has commenced with expected completion in early 2024. The issue 
 was caused by anomalies in ESA Level 1 source data.
@@ -44,14 +45,14 @@ Major update to the [DEA Tools Python package](https://docs.dea.ga.gov.au/notebo
 
 ... in addition to 14 new and updated Jupyter notebooks. See [version 0.3.0 release notes](https://github.com/GeoscienceAustralia/dea-notebooks/releases/tag/0.3.0) for more detail.
 
-## 2023-08 New notebooks, features and documentation
+## 2023-08 **New notebooks, features and documentation**
 
 * Added a new [DEA Wetlands Insight Tool notebook](https://docs.dea.ga.gov.au/notebooks/DEA_products/DEA_Wetlands_Insight_Tool.html)
 * Notebooks for [loading data from Microsoft Planetary Computer](https://docs.dea.ga.gov.au/notebooks/How_to_guides/Planetary_computer.html)
 * Enhanced [DEA Tools Python Package API documentation](https://docs.dea.ga.gov.au/notebooks/Tools/index.html)
 * Improved interactive widget functionality for satellite image export and animations
 
-:::{dropdown} 2023-08-11 Small systems updates
+:::{dropdown} 2023-08-11 **Small systems updates**
 
 Technical DEA internals which have changed in the last week.
 * Some tweaks to DEA Sandbox DNS resolution last Friday.
@@ -60,7 +61,7 @@ Technical DEA internals which have changed in the last week.
 * Reduced the delay between Sentinel 2 ARD data being produced (on the NCI), and being delivered to AWS. It was *up to 48 hours* and should now be *up to 24 hours*.
 :::
 
-:::{dropdown} 2021-07-16 Collection 3 Landsat data now available
+:::{dropdown} 2021-07-16 **Collection 3 Landsat data now available**
 
 Thanks to the [Geoscience Australia Landsat Collection Upgrade (video)](https://www.youtube.com/watch?v=BNEIG91lu44), 
 our data catalogue now includes Collection 3 data for DEA Surface Reflectance, also available through [OWS](https://ows.dea.ga.gov.au/). 
@@ -75,12 +76,12 @@ A staged decommissioning of Collection 2 is underway and will continue into 2022
 Questions can be raised to dea@ga.gov.au.
 :::
 
-:::{dropdown} 2021-04-15 New user guide: accessing data via AWS
+:::{dropdown} 2021-04-15 **New user guide: accessing data via AWS**
 
 Added a new guide to accessing DEA data via [Amazon Web Services](/guides/setup/AWS/data_and_metadata/).
 :::
 
-:::{dropdown} 2020-01-09 DEA Notebooks updates
+:::{dropdown} 2020-01-09 **DEA Notebooks updates**
 
 The [DEA Notebooks repository](https://github.com/GeoscienceAustralia/dea-notebooks/) and the DEA user guide received a 
 [major update](https://github.com/GeoscienceAustralia/dea-notebooks/releases/tag/notebooks_refresh) which includes a 
@@ -90,13 +91,13 @@ These updated notebooks include a new Beginner's Guide aimed at introducing user
 new notebooks, navigate to the [Beginner's Guide](/notebooks/Beginners_guide/README/) section of the User Guide.
 :::
 
-:::{dropdown} 2019-03-12 Changes to NCI project codes
+:::{dropdown} 2019-03-12 **Changes to NCI project codes**
 
 Users are now required to join all projects containing data they wish to use. Before this change
 all the DEA data was public to NCI users without any further steps.
 :::
 
-:::{dropdown} 2018-02-28 Update to `dea` environment module
+:::{dropdown} 2018-02-28 **Update to `dea` environment module**
 * 
 * Rename module to `dea`. Most people should now run
 
