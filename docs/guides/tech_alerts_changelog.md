@@ -18,6 +18,10 @@ See the [DEA monitoring dashboard](https://monitoring.dea.ga.gov.au/).
 See [alert dated 2024-01-10](./#20240110) for more details.
 :::
 
+## 2024-01-24: Water Observations 2023 annual summary released.
+
+See [DEA Water Observations Statistics (Landsat)](https://docs.dea.ga.gov.au/data/product/dea-water-observations-statistics-landsat/?tab=history) for more information. 
+
 {#20240110}
 ## 2024-01-10: Sentinel-2 contiguity fix - Reprocessing commenced
 
