@@ -49,7 +49,7 @@ Major update to the [DEA Tools Python package](https://docs.dea.ga.gov.au/notebo
 
 * Added a new [DEA Wetlands Insight Tool notebook](https://docs.dea.ga.gov.au/notebooks/DEA_products/DEA_Wetlands_Insight_Tool.html)
 * Notebooks for [loading data from Microsoft Planetary Computer](https://docs.dea.ga.gov.au/notebooks/How_to_guides/Planetary_computer.html)
-* Enhanced [DEA Tools Python Package API documentation](https://docs.dea.ga.gov.au/notebooks/Tools/index.html)
+* Enhanced [DEA Tools Python Package API documentation](https://docs.dea.ga.gov.au/notebooks/Tools/)
 * Improved interactive widget functionality for satellite image export and animations
 
 :::{dropdown} 2023-08-11: Small systems updates
