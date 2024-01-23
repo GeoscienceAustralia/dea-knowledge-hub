@@ -1,14 +1,18 @@
 # Digital Earth Australia Tech Alerts and Changelog
 
 % If status = green, class = tip
+% All DEA systems are working as expected. There are no outstanding incidents or errors to report.
+% See the [DEA monitoring dashboard](https://monitoring.dea.ga.gov.au/). 
 % If status = yellow, class = caution
 % If status = red, class = danger
 
-:::{admonition} DEA system status: green
-:class: tip
+:::{admonition} DEA system status: yellow
+:class: caution
 
-All DEA systems are working as expected. There are no outstanding incidents or errors to report.
-See the [DEA monitoring dashboard](https://monitoring.dea.ga.gov.au/). 
+2024-01-24
+The [AWS Explorer](https://explorer.dea.ga.gov.au/) and [NCI Explorer](https://explorer.nci.dea.ga.gov.au/) 
+applications are currently experiencing intermittent outages. We are investigating this issue. 
+See the [DEA monitoring dashboard](https://monitoring.dea.ga.gov.au/) for the current status of these systems.
 :::
 
 
@@ -20,7 +24,7 @@ See [alert dated 2024-01-10](./#20240110) for more details.
 
 ## 2024-01-24: Water Observations 2023 annual summary released.
 
-See [DEA Water Observations Statistics (Landsat)](https://docs.dea.ga.gov.au/data/product/dea-water-observations-statistics-landsat/?tab=history) for more information. 
+See [DEA Water Observations Statistics (Landsat)](/data/product/dea-water-observations-statistics-landsat/?tab=history) for more information. 
 
 {#20240110}
 ## 2024-01-10: Sentinel-2 contiguity fix - Reprocessing commenced
