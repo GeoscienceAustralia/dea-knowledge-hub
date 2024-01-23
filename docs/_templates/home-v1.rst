@@ -62,7 +62,7 @@
 
       Find out about the latest changes to DEA's products and services, as well as planned and unplanned outages.
 
-      `Visit the tech alerts and changelog </guides/techalerts_changelog/>`_
+      `Visit the tech alerts and changelog </guides/tech_alerts_changelog/>`_
 
    .. container::
 

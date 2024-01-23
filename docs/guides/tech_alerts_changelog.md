@@ -12,13 +12,13 @@ See the [DEA monitoring dashboard](https://monitoring.dea.ga.gov.au/).
 :::
 
 
-:::{admonition} DEA Sentinel-2 continguity fix: ongoing
+:::{admonition} DEA Sentinel-2 contiguity fix: ongoing
 :class: note
 
 See [alert dated 2024-01-10](./#20240110) for more details.
 :::
 
-(20240110)=
+{#20240110}
 ## 2024-01-10: Sentinel-2 contiguity fix - Reprocessing commenced
 
 Reprocessing to fix the Sentinel-2 contiguity issue has commenced with expected completion in early 2024. The issue 
@@ -36,7 +36,7 @@ Click [here](https://communication.ga.gov.au/link/id/zzzz659de7f165049054Pzzzz61
 
 ## 2023-11: Release of version 0.3.0 of DEA Tools
 
-Major update to the [DEA Tools Python package](https://docs.dea.ga.gov.au/notebooks/Tools/index.html), including new tools for:
+Major update to the [DEA Tools Python package](https://docs.dea.ga.gov.au/notebooks/Tools/), including new tools for:
 * [pansharpening Landsat data](https://docs.dea.ga.gov.au/notebooks/How_to_guides/Pansharpening.html)
 * [tide modelling](https://docs.dea.ga.gov.au/notebooks/How_to_guides/Tidal_modelling.html)
 * [sunglint masking](https://docs.dea.ga.gov.au/notebooks/How_to_guides/Sunglint_masking.html)

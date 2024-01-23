@@ -197,7 +197,7 @@ entries:
 
   # - file: tags-list # Contains its own table of contents.
 
-  - file: guides/techalerts_changelog
+  - file: guides/tech_alerts_changelog
     title: DEA Tech alerts and changelog
   - file: data/old-version/index
     entries:
