@@ -173,7 +173,6 @@ entries:
       - caption: Appendix
         entries:
           - file: guides/about/faq
-          - file: guides/about/changelog
           - file: guides/about/publications
           - file: guides/about/glossary
             title: DEA Glossary
@@ -198,6 +197,8 @@ entries:
 
   # - file: tags-list # Contains its own table of contents.
 
+  - file: guides/tech_alerts_changelog
+    title: DEA Tech alerts and changelog
   - file: data/old-version/index
     entries:
       - glob: data/old-version/*/index
