@@ -19,5 +19,5 @@ Improved or more accurate sources for any of the above listed auxiliary dependen
 
 Results were compared with data gathered at two field sites, Lake Frome and Gwydir. The average RMSD was found to be 0.027 reflectance units.
 
-The technical report containing the data summary for the Phase 1 DEA Surface Reflectance Validation is available: [DEA Analysis Ready Data Phase 1 Validation Project : Data Summary](http://pid.geoscience.gov.au/dataset/ga/14510)
+The technical report containing the data summary for the Phase 1 DEA Surface Reflectance Validation is available: [DEA Analysis Ready Data Phase 1 Validation Project : Data Summary](http://pid.geoscience.gov.au/dataset/metadata/145101)
 
