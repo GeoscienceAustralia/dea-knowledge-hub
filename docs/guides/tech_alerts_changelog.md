@@ -9,10 +9,10 @@
 :::{admonition} DEA system status: yellow
 :class: caution
 
-2024-01-24: The [AWS Explorer](https://explorer.dea.ga.gov.au/) and [NCI Explorer](https://explorer.nci.dea.ga.gov.au/) 
-applications are currently experiencing intermittent outages. We are investigating this issue. 
+2024-01-24: The [NCI Explorer](https://explorer.nci.dea.ga.gov.au/) 
+application is currently experiencing intermittent outages. We are investigating this issue. 
 
-See the [DEA monitoring dashboard](https://monitoring.dea.ga.gov.au/) for the current status of these systems.
+See the [DEA monitoring dashboard](https://monitoring.dea.ga.gov.au/) for the current status of this system.
 :::
 
 
