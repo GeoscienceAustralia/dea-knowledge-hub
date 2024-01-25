@@ -13,7 +13,7 @@ ignore = "exit 0" # Never build
 
 [context.deploy-preview]
 
-DEPLOY_NAME = "Deploy Preview"
+DEPLOY_NAME = "Pull Request"
 
 [context.demo1.environment]
 

@@ -13,7 +13,7 @@ def banner():
 
     pull_request_banner = f'You are viewing <strong>{deploy_name}</strong>, not the official <a href="{knowledge_hub_url}">DEA Knowledge Hub</a>. View the <a href="{deploy_logs_url}?filter={git_branch}">deploy logs</a> or <a href="{github_url}/tree/{git_branch}">git branch</a>.'
 
-    demo_banner = f'You are viewing <strong>Pull Request #{review_id}</strong>, not the official <a href="{knowledge_hub_url}">DEA Knowledge Hub</a>. View the <a href="{deploy_logs_url}/{build_id}">latest deploy log</a> or the <a href="{github_url}/pull/{review_id}">pull request</a>.'
+    demo_banner = f'You are viewing <strong>{deploy_name} #{review_id}</strong>, not the official <a href="{knowledge_hub_url}">DEA Knowledge Hub</a>. View the <a href="{deploy_logs_url}/{build_id}">deploy log</a> or <a href="{github_url}/pull/{review_id}">pull request</a>.'
 
     if pull_request == "true":
         return pull_request_banner
