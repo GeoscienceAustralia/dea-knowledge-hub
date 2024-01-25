@@ -11,7 +11,7 @@ BUILD_MODE = "demo"
 
 ignore = "exit 0" # Never build
 
-[context.deploy-preview]
+[context.deploy-preview.environment]
 
 DEPLOY_NAME = "Pull Request"
 
