@@ -6,7 +6,7 @@ publish = "output"
 BUILD_MODE = "demo"
 
 [context.production]
-ignore = "exit 0"
+ignore = "exit 0" # Never build
 
 [context.deploy-preview]
 DEPLOY_NAME = "Deploy Preview"
