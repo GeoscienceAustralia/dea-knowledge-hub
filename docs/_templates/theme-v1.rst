@@ -4,7 +4,7 @@
 {{ data.title }}
 ======================================================================================================================================================
 
-{{ data.description if data.description else "Browse data products." }}
+{{ data.description if data.description else "I'm interested in ..." }}
 
 .. container:: card-list images
 
