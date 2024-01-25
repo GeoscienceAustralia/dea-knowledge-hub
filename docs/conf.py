@@ -9,7 +9,7 @@ from _modules import demo_banner
 environment = {
     "build_mode": os.environ.get("BUILD_MODE"),
     "git_branch": os.environ.get("BRANCH"),
-    "demo_name": os.environ.get("DEMO_NAME"),
+    "demo_name": os.environ.get("DEPLOY_NAME"),
     "local_enable_redirects": os.environ.get("LOCAL_ENABLE_REDIRECTS"),
     "local_enable_tags": os.environ.get("LOCAL_ENABLE_TAGS"),
 }

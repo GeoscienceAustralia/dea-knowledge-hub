@@ -8,14 +8,17 @@ BUILD_MODE = "demo"
 [context.production]
 ignore = "exit 0"
 
+[context.deploy-preview]
+DEPLOY_NAME = "Deploy Preview"
+
 [context.demo1.environment]
-DEMO_NAME = "Demo 1"
+DEPLOY_NAME = "Demo 1"
 
 [context.demo2.environment]
-DEMO_NAME = "Demo 2"
+DEPLOY_NAME = "Demo 2"
 
 [context.demo3.environment]
-DEMO_NAME = "Demo 3"
+DEPLOY_NAME = "Demo 3"
 
 [[redirects]]
 from = "/*"
