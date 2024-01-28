@@ -16,7 +16,7 @@
    .. grid:: 2 2 3 5
       :gutter: 3
 
-      {% for item in data.data_product_themes %}
+      {% for item in data.product_themes %}
       .. grid-item-card:: :fas:`{{ item.icon }}`
          :link: {{ item.link }}
 
