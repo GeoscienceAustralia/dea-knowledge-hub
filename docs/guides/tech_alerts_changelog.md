@@ -6,15 +6,12 @@
 % If status = yellow, class = caution
 % If status = red, class = danger
 
-:::{admonition} DEA system status: yellow
-:class: caution
+:::{admonition} DEA system status: green
+:class: tip
+All DEA systems are working as expected. There are no outstanding incidents or errors to report.
 
-2024-01-24: The [NCI Explorer](https://explorer.nci.dea.ga.gov.au/) 
-application is currently experiencing intermittent outages. We are investigating this issue. 
-
-See the [DEA monitoring dashboard](https://monitoring.dea.ga.gov.au/) for the current status of this system.
+See the [DEA monitoring dashboard](https://monitoring.dea.ga.gov.au/). 
 :::
-
 
 :::{admonition} DEA Sentinel-2 contiguity fix: ongoing
 :class: note
