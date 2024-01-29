@@ -28,6 +28,9 @@ ecat: "146090"
 nci:
   name: null
   code: null
+licence:
+  name: null
+  link: null
 
 tags:
   - land_cover_and_land_use

@@ -28,6 +28,9 @@ ecat: "146568"
 nci:
   name: ga_s2am_ard_3
   code: ka08
+licence:
+  name: null
+  link: null
 
 tags:
   - geoscience_australia_sentinel_2_collection_3

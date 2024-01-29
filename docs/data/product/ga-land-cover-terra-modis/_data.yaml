@@ -28,6 +28,9 @@ ecat: "83868"
 nci:
   name: null
   code: null
+licence:
+  name: null
+  link: null
 
 tags:
   - drought
