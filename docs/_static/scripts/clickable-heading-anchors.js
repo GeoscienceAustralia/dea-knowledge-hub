@@ -43,11 +43,13 @@ document.addEventListener("DOMContentLoaded", function (event) {
     // Product tabs click handling
 
     let tabs = document.querySelectorAll(".product-page .sd-tab-label");
-    let urlParams = new URLSearchParams(window.location.search);
+    let tabUrlParam = new URLSearchParams(window.location.search).get("tab");
+    let overviewTabId = tabs[0].id;
 
-    if(!urlParams.has("tab")) {
-        console.log("startup");
-        window.history.pushState("", "", `?tab=${tabs[0].id}${window.location.hash}`);
+    if(!tabUrlParam) {
+        window.history.pushState("", "", `?tab=${overviewTabId}${window.location.hash}`);
+    } else {
+        document.querySelector(`.sd-tab-set > #${tabUrlParam}`).click();
     }
 
     for (let i = 0; i < tabs.length; i++) {
@@ -56,7 +58,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
         if (id) {
             tab.addEventListener("click", function() {
-                console.log("click");
                 window.history.pushState("", "", `?tab=${id}`);
             });
         }
