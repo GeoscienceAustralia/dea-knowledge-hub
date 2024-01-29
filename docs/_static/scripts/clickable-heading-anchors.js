@@ -3,15 +3,14 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
     for (var i = 0; i < headings.length; i++) {
         const heading = headings[i];
+        const anchorId = heading.id;
 
-        heading.addEventListener("click", function() {
-            const anchorId = heading.id;
+        heading.classList.add("clickable-anchor");
 
-            if (anchorId) {
-                console.log(anchorId);
-                heading.classList.add("clickable-anchor");
-                window.location.hash = `#${anchorId}`
-            }
-        });
+        if (anchorId) {
+            heading.addEventListener("click", function() {
+                    window.location.hash = `#${anchorId}`
+            });
+        }
     }
 });
