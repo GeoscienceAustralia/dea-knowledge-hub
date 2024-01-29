@@ -43,6 +43,12 @@ document.addEventListener("DOMContentLoaded", function (event) {
     // Product tabs click handling
 
     let tabs = document.querySelectorAll(".product-page .sd-tab-label");
+    let urlParams = new URLSearchParams(window.location.search);
+
+    if(!urlParams.has("tab")) {
+        console.log("startup");
+        window.history.pushState("", "", `?tab=${tabs[0].id}${window.location.hash}`);
+    }
 
     for (let i = 0; i < tabs.length; i++) {
         let tab = tabs[i];
@@ -50,6 +56,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
         if (id) {
             tab.addEventListener("click", function() {
+                console.log("click");
                 window.history.pushState("", "", `?tab=${id}`);
             });
         }
