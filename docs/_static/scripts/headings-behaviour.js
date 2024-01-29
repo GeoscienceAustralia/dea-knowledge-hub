@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
         let anchorId = heading.id;
 
         if (anchorId) {
-            heading.dataset.anchorHeading = true
+            heading.classList.add("anchor-heading");
 
             heading.addEventListener("click", function() {
                 window.location.hash = `#${anchorId}`
