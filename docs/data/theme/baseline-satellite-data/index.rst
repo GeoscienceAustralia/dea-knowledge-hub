@@ -1,2 +1,2 @@
 .. datatemplate:yaml:: _data.yaml
-   :template: theme-v1.rst
+   :template: card-list-v1.rst
