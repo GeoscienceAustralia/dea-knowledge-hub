@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
         let heading = headings[i];
         let anchorId = heading.id;
 
-        heading.classList.add("clickable-anchor");
+        heading.dataset.anchorHeading = anchorId
 
         if (anchorId) {
             heading.addEventListener("click", function() {

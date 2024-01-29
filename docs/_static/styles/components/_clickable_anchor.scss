@@ -1,4 +1,4 @@
-.clickable-anchor {
+[data-anchor-heading] {
     &:hover {
         cursor: pointer;
         text-decoration: underline dashed;
