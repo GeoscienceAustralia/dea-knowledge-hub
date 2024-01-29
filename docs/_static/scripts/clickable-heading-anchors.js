@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
         rubric.parentNode.replaceChild(h2, rubric);
     }
 
-    // Make the headings clickable
+    // Headings click handling
 
     let headings = document.querySelectorAll("h2[id], h3[id], h4[id]");
 
@@ -36,6 +36,21 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
             heading.addEventListener("click", function() {
                 window.location.hash = `#${anchorId}`
+            });
+        }
+    }
+
+    // Product tabs click handling
+
+    let tabs = document.querySelectorAll(".product-page .sd-tab-label");
+
+    for (let i = 0; i < tabs.length; i++) {
+        let tab = tabs[i];
+        let id = tab.id;
+
+        if (id) {
+            tab.addEventListener("click", function() {
+                window.history.pushState("", "", `?tab=${id}`);
             });
         }
     }
