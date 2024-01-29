@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function (event) {
-    // Move the section IDs to the headings
+    // Move the anchor IDs from the section elements to the headings
 
     let sections = document.querySelectorAll("section[id]");
 
@@ -7,10 +7,10 @@ document.addEventListener("DOMContentLoaded", function (event) {
         let section = sections[i];
         let id = section.id;
         section.removeAttribute("id");
-        section.querySelector("* > h2, * > h3, * > h4").id = id;
+        section.querySelector("* > h2, * > h3").id = id;
     }
 
-    // Convert the 'rubrics' to H2 headings
+    // Convert the 'rubric' elements to H2 headings
 
     let rubrics = document.querySelectorAll("p.rubric");
 
@@ -23,7 +23,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
         rubric.parentNode.replaceChild(h2, rubric);
     }
 
-    // Headings click handling
+    // Clicking on a heading will add its anchor ID to the URL
+    // E.g. /example/#introduction
 
     let headings = document.querySelectorAll("h2[id], h3[id]");
 
@@ -40,7 +41,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
         }
     }
 
-    // Product tabs click handling
+    // Clicking on a product tab will add its ID to the URL
+    // E.g. /example/?tab=overview
 
     let tabs = document.querySelectorAll(".product-page .sd-tab-label");
     let tabUrlParam = new URLSearchParams(window.location.search).get("tab");
