@@ -207,6 +207,10 @@
           * - **Last updated**
             - {{ data.published }}
           {%- endif %}
+          {% if data.licence.name and data.licence.link %}
+          * - **Licence**
+            - `{{ data.licence.name }} <{{ data.licence.link }}>`_
+          {%- endif %}
        {%- endif %}
 
        .. {%- if valid_tags %}
