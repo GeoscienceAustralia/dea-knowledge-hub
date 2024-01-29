@@ -103,12 +103,9 @@
     .. tab-item:: Overview
        :name: overview
 
-       .. container:: table-of-contents
+       .. raw:: html
 
-          .. container::
-             :name: overview-table-of-contents
-
-             |nbsp|
+          <div class="tocbot-selector"></div>
 
        .. include:: _overview_1.md
           :parser: myst_parser.sphinx_
@@ -221,12 +218,9 @@
     .. tab-item:: Details
        :name: details
 
-       .. container:: table-of-contents
+       .. raw:: html
 
-          .. container::
-             :name: details-table-of-contents
-
-             |nbsp|
+          <div class="tocbot-selector"></div>
 
        .. include:: _details.md
           :parser: myst_parser.sphinx_
@@ -236,12 +230,9 @@
     .. tab-item:: Quality
        :name: quality
 
-       .. container:: table-of-contents
+       .. raw:: html
 
-          .. container::
-             :name: quality-table-of-contents
-
-             |nbsp|
+          <div class="tocbot-selector"></div>
 
        .. include:: _quality.md
           :parser: myst_parser.sphinx_
@@ -251,12 +242,9 @@
     .. tab-item:: Access
        :name: access
 
-       .. container:: table-of-contents
+       .. raw:: html
 
-          .. container::
-             :name: access-table-of-contents
-
-             |nbsp|
+          <div class="tocbot-selector"></div>
 
        .. rubric:: Access the data
           :name: access-the-data-2
@@ -336,12 +324,9 @@
     .. tab-item:: History
        :name: history
 
-       .. container:: table-of-contents
+       .. raw:: html
 
-          .. container::
-             :name: history-table-of-contents
-
-             |nbsp|
+          <div class="tocbot-selector"></div>
 
        {% if not is_latest_version %}
        .. rubric:: Other versions
@@ -374,12 +359,9 @@
     .. tab-item:: FAQs
        :name: faqs
 
-       .. container:: table-of-contents
+       .. raw:: html
 
-          .. container::
-             :name: faqs-table-of-contents
-
-             |nbsp|
+          <div class="tocbot-selector"></div>
 
        .. include:: _faqs.md
           :parser: myst_parser.sphinx_
@@ -389,12 +371,9 @@
     .. tab-item:: Credits
        :name: credits
 
-       .. container:: table-of-contents
+       .. raw:: html
 
-          .. container::
-             :name: credits-table-of-contents
-
-             |nbsp|
+          <div class="tocbot-selector"></div>
 
        .. include:: _credits.md
           :parser: myst_parser.sphinx_

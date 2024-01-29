@@ -25,15 +25,15 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
     // Make the headings clickable
 
-    let headings = document.querySelectorAll("h2[id], h3[id], h4[id]"); // section[id]
+    let headings = document.querySelectorAll("h2[id], h3[id], h4[id]");
 
     for (var i = 0; i < headings.length; i++) {
         let heading = headings[i];
         let anchorId = heading.id;
 
-        heading.dataset.anchorHeading = anchorId
-
         if (anchorId) {
+            heading.dataset.anchorHeading = true
+
             heading.addEventListener("click", function() {
                 window.location.hash = `#${anchorId}`
             });

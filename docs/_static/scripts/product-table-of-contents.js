@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
         tocbot.init({
             contentSelector: `.product-page #${id} + .sd-tab-content`,
-            tocSelector: `.product-page #${id}-table-of-contents`,
+            tocSelector: `.product-page #${id} + .sd-tab-content > .tocbot-selector`,
             headingSelector: "h2"
         });
     }
