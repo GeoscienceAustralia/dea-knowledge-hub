@@ -10,6 +10,20 @@ document.addEventListener("DOMContentLoaded", function (event) {
         section.querySelector("* > h2, * > h3").id = id;
     }
 
+    // Add anchor ID from the custom ID element above the heading
+
+    let headings2 = document.querySelectorAll("h2, h3");
+
+    for (var i = 0; i < headings2.length; i++) {
+        let heading = headings2[i];
+        let maybeCustomIdElement = heading.previousSibling;
+
+        if (maybeCustomIdElement && maybeCustomIdElement.tagName.toLowerCase() === "span" && maybeCustomIdElement.hasAttribute("id")) {
+            let customId = maybeCustomIdElement.id;
+            heading.id = customId;
+        }
+    }
+
     // Convert the 'rubric' elements to H2 headings
 
     let rubrics = document.querySelectorAll("p.rubric");
