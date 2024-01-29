@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
     // Headings click handling
 
-    let headings = document.querySelectorAll("h2[id], h3[id], h4[id]");
+    let headings = document.querySelectorAll("h2[id], h3[id]");
 
     for (var i = 0; i < headings.length; i++) {
         let heading = headings[i];
