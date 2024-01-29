@@ -27,6 +27,9 @@ ecat: "116268"
 nci:
   name: null
   code: null
+licence:
+  name: Creative Commons Attribution 4.0 International Licence
+  link: https://creativecommons.org/licenses/by/4.0/
 
 tags:
   - geoscience_australia_landsat_collection_3
