@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
         let section = sections[i];
         let id = section.id;
         section.removeAttribute("id");
-        section.querySelector("* > h2").id = id;
+        section.querySelector("* > h2, * > h3").id = id;
     }
 
     // Convert the 'rubric' elements to H2 headings
@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     // Clicking on a heading will add its anchor ID to the URL
     // E.g. /example/#introduction
 
-    let headings = document.querySelectorAll("h2[id]");
+    let headings = document.querySelectorAll("h2[id], h3[id]");
 
     for (var i = 0; i < headings.length; i++) {
         let heading = headings[i];
