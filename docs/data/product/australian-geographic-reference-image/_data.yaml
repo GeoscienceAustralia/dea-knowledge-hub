@@ -12,8 +12,8 @@ spatial_data_type: Raster
 time_span:
   start: null
   end: null
-update_frequency: As needed
-next_update: null
+update_frequency: null
+next_update: No updates planned
 product_ids: null
 
 parent_products:
