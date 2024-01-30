@@ -25,7 +25,6 @@ See [DEA Water Observations Statistics (Landsat)](/data/product/dea-water-observ
 and [DEA Fractional Cover Percentiles (Landsat)](/data/product/dea-fractional-cover-percentiles-landsat/) for more information. 
 
 (20240110)=
-
 ## 2024-01-10: Sentinel-2 contiguity fix - Reprocessing commenced
 
 Reprocessing to fix the Sentinel-2 contiguity issue has commenced with expected completion in early 2024. The issue 
