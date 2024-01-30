@@ -1,6 +1,4 @@
 .table-of-contents {
-    $font-size: 0.85rem;
-
     @media only screen and (max-width: $breakpoint-md) {
         line-height: 2rem;
     }
@@ -14,31 +12,14 @@
 
     li {
         list-style: none;
-        padding-right: $font-size;
-
-        @media only screen and (max-width: $breakpoint-md) {
-            padding-right: 1rem;
-        }
+        padding-right: 1rem;
     }
 
     a {
-        font-size: $font-size;
-        background-color: #f3f4f6;
-        border: 1px solid #f3f4f6;
-        padding: 0.25rem 0.5rem;
-        border-radius: 0.25rem;
-        text-decoration: none;
-
-        @media only screen and (max-width: $breakpoint-md) {
-            font-size: 1rem;
-        }
+        text-decoration-style: dashed;
 
         &:hover {
-            background-color: $hover-bg-color-grey;
-        }
-
-        &, &:visited {
-            color: $text-color;
+            text-decoration-style: solid;
         }
     }
 }
