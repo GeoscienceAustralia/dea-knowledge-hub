@@ -1,5 +1,39 @@
+// Sets behaviours for headings.
+// The rules in this script occur in a specific order and each will overwrite properties set in the previous one.
+
 document.addEventListener("DOMContentLoaded", function (event) {
-    // Add an anchor ID data attribute based on the heading's ID attribute
+    // Convert the 'rubric' headings to H2 headings
+
+    (function() {
+        let rubrics = document.querySelectorAll("p.rubric");
+
+        for (let i = 0; i < rubrics.length; i++) {
+            let rubric = rubrics[i];
+            let h2 = document.createElement("h2");
+            h2.id = rubric.id;
+            h2.class = rubric.class;
+            h2.innerHTML = rubric.innerHTML;
+            rubric.parentNode.replaceChild(h2, rubric);
+        }
+    })();
+
+    // Add a 'data-anchor-id' property based on the Section ID.
+
+    (function() {
+        let sections = document.querySelectorAll("section[id]");
+
+        for (let i = 0; i < sections.length; i++) {
+            let section = sections[i];
+            let id = section.id;
+            let maybeHeading = section.querySelector("* > h2, * > h3");
+
+            if (maybeHeading) {
+                maybeHeading.dataset.anchorId = id;
+            }
+        }
+    })();
+
+    // Add a 'data-anchor-id' property based on the heading's own ID.
 
     (function() {
         let headings = document.querySelectorAll("h2, h3");
@@ -14,19 +48,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
         }
     })();
 
-    // Move the anchor IDs from the section elements to the headings
-
-    (function() {
-        let sections = document.querySelectorAll("section[id]");
-
-        for (let i = 0; i < sections.length; i++) {
-            let section = sections[i];
-            let id = section.id;
-            section.querySelector("* > h2, * > h3").dataset.anchorId = id;
-        }
-    })();
-
-    // Add anchor ID from the custom ID element above the heading
+    // Add a 'data-anchor-id' from the custom ID element above the heading.
 
     (function() {
         let headings = document.querySelectorAll("h2, h3");
@@ -36,30 +58,12 @@ document.addEventListener("DOMContentLoaded", function (event) {
             let maybeCustomIdElement = heading.previousSibling;
 
             if (maybeCustomIdElement && maybeCustomIdElement.nodeName === "SPAN" && maybeCustomIdElement.hasAttribute("id")) {
-                let customId = maybeCustomIdElement.id;
-                heading.dataset.anchorId = customId;
+                heading.dataset.anchorId = maybeCustomIdElement.id;
             }
         }
     })();
 
-    // Convert the 'rubric' elements to H2 headings
-
-    (function() {
-        let rubrics = document.querySelectorAll("p.rubric");
-
-        for (let i = 0; i < rubrics.length; i++) {
-            let rubric = rubrics[i];
-            let h2 = document.createElement("h2");
-            h2.id = rubric.id;
-            h2.dataset.anchorId = rubric.id;
-            h2.class = rubric.class;
-            h2.innerHTML = rubric.innerHTML;
-            rubric.parentNode.replaceChild(h2, rubric);
-        }
-    })();
-
-    // Clicking on a heading will add its anchor ID to the URL
-    // E.g. /example/#introduction
+    // Clicking on a heading will add its anchor ID to the URL. E.g. /example/#introduction
 
     (function() {
         let headings = document.querySelectorAll("h2[data-anchor-id], h3[data-anchor-id]");
@@ -75,8 +79,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
         }
     })();
 
-    // Clicking on a product tab will add its ID to the URL
-    // E.g. /example/?tab=overview
+    // Clicking on a product tab will add its tab ID to the URL. E.g. /example/?tab=overview
 
     (function() {
         let tabs = document.querySelectorAll(".product-page .sd-tab-label");
@@ -91,11 +94,11 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
         for (let i = 0; i < tabs.length; i++) {
             let tab = tabs[i];
-            let id = tab.id;
+            let tabId = tab.id;
 
-            if (id) {
+            if (tabId) {
                 tab.addEventListener("click", function() {
-                    window.history.pushState("", "", `?tab=${id}`);
+                    window.history.pushState("", "", `?tab=${tabId}`);
                 });
             }
         }
