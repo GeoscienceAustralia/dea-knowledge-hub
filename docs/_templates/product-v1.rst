@@ -115,7 +115,7 @@
           :name: access-the-data
           :class: h2
 
-       For help accessing the data, see the 'Access' tab.
+       For help accessing the data, see the `Access tab <./?tab=access>`_.
 
        .. container:: card-list icons
           :name: access-the-data-cards
