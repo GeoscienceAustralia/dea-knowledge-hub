@@ -7,8 +7,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
     (function() {
         let h2Rubrics = document.querySelectorAll("p.rubric.h2");
 
-        for (let i = 0; i < rubrics.length; i++) {
-            let rubric = rubrics[i];
+        for (let i = 0; i < h2Rubrics.length; i++) {
+            let rubric = h2Rubrics[i];
             let h2 = document.createElement("h2");
             h2.id = rubric.id;
             h2.class = rubric.class;
