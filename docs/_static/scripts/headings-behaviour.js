@@ -1,4 +1,19 @@
 document.addEventListener("DOMContentLoaded", function (event) {
+    // Add an anchor ID data attribute based on the heading's ID attribute
+
+    (function() {
+        let headings = document.querySelectorAll("h2, h3");
+
+        for (var i = 0; i < headings.length; i++) {
+            let heading = headings[i];
+            let id = heading.id;
+
+            if (id) {
+                heading.dataset.anchorId = id;
+            }
+        }
+    })();
+
     // Move the anchor IDs from the section elements to the headings
 
     (function() {
@@ -7,8 +22,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
         for (let i = 0; i < sections.length; i++) {
             let section = sections[i];
             let id = section.id;
-            section.removeAttribute("id");
-            section.querySelector("* > h2, * > h3").id = id;
+            section.querySelector("* > h2, * > h3").dataset.anchorId = id;
         }
     })();
 
@@ -21,9 +35,9 @@ document.addEventListener("DOMContentLoaded", function (event) {
             let heading = headings[i];
             let maybeCustomIdElement = heading.previousSibling;
 
-            if (maybeCustomIdElement && maybeCustomIdElement.tagName.toLowerCase() === "span" && maybeCustomIdElement.hasAttribute("id")) {
+            if (maybeCustomIdElement && maybeCustomIdElement.nodeName === "SPAN" && maybeCustomIdElement.hasAttribute("id")) {
                 let customId = maybeCustomIdElement.id;
-                heading.id = customId;
+                heading.dataset.anchorId = customId;
             }
         }
     })();
@@ -37,6 +51,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
             let rubric = rubrics[i];
             let h2 = document.createElement("h2");
             h2.id = rubric.id;
+            h2.dataset.anchorId = rubric.id;
             h2.class = rubric.class;
             h2.innerHTML = rubric.innerHTML;
             rubric.parentNode.replaceChild(h2, rubric);
@@ -47,19 +62,16 @@ document.addEventListener("DOMContentLoaded", function (event) {
     // E.g. /example/#introduction
 
     (function() {
-        let headings = document.querySelectorAll("h2[id], h3[id]");
+        let headings = document.querySelectorAll("h2[data-anchor-id], h3[data-anchor-id]");
 
         for (var i = 0; i < headings.length; i++) {
             let heading = headings[i];
-            let anchorId = heading.id;
+            let anchorId = heading.dataset.anchorId;
 
-            if (anchorId) {
-                heading.classList.add("anchor-heading");
-
-                heading.addEventListener("click", function() {
-                    window.location.hash = `#${anchorId}`
-                });
-            }
+            heading.addEventListener("click", function() {
+                console.log(anchorId);
+                window.location.hash = `#${anchorId}`
+            });
         }
     })();
 
