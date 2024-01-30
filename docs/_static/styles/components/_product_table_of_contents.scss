@@ -1,4 +1,6 @@
-.table-of-contents {
+.tocbot-selector {
+    $font-size: 0.85rem;
+
     @media only screen and (max-width: $breakpoint-md) {
         line-height: 2rem;
     }
