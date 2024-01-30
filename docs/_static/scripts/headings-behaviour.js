@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
         }
     })();
 
-    // Add a 'data-anchor-id' property to headings based on the section ID.
+    // Add the section ID to the heading's 'data-anchor-id' property.
 
     (function() {
         let sections = document.querySelectorAll("section[id]");
@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
         }
     })();
 
-    // Add a 'data-anchor-id' property based on the heading's own ID.
+    // Add heading's own ID to the heading's 'data-anchor-id' property.
 
     (function() {
         let headings = document.querySelectorAll("h2, h3");
@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
         }
     })();
 
-    // Add a 'data-anchor-id' from the custom ID element above the heading.
+    // Add the custom ID element above the heading to the heading's 'data-anchor-id' property
 
     (function() {
         let headings = document.querySelectorAll("h2, h3");
@@ -58,7 +58,14 @@ document.addEventListener("DOMContentLoaded", function (event) {
             let maybeCustomIdElement = heading.previousSibling;
 
             if (maybeCustomIdElement && maybeCustomIdElement.nodeName === "SPAN" && maybeCustomIdElement.hasAttribute("id")) {
-                heading.dataset.anchorId = maybeCustomIdElement.id;
+                let conflictingIdPattern = /id\d+/g;
+                let customId = maybeCustomIdElement.id;
+
+                // Checks that the ID is not 'id1', 'id2', 'id3', or etc. These IDs occur due to a naming conflict between IDs.
+                // E.g. if a heading 'Introduction' has a '(introduction)=' custom ID above it, this naming conflict will occur.
+                if (!conflictingIdPattern.test(customId)) {
+                    heading.dataset.anchorId = customId;
+                }
             }
         }
     })();
