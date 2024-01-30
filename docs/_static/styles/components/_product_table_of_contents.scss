@@ -17,9 +17,11 @@
 
     a {
         text-decoration-style: dashed;
+        color: var(--pst-color-text-muted);
 
         &:hover {
             text-decoration-style: solid;
+            color: var(--pst-color-link);
         }
     }
 }
