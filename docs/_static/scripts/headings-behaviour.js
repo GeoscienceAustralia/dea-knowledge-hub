@@ -2,7 +2,7 @@
 // The sections of this script are in order of precedence. Each time a 'data-anchor-id' property is added to a heading, it will override any existing 'data-anchor-id' that was set previously.
 
 document.addEventListener("DOMContentLoaded", function (event) {
-    // Convert the 'rubric' headings to H2 headings
+    // Convert the 'rubric' headings to H2 headings.
 
     (function() {
         let rubrics = document.querySelectorAll("p.rubric");
@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
         }
     })();
 
-    // Add a 'data-anchor-id' property based on the Section ID.
+    // Add a 'data-anchor-id' property to headings based on the section ID.
 
     (function() {
         let sections = document.querySelectorAll("section[id]");
