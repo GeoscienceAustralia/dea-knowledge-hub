@@ -16,7 +16,7 @@ See the [DEA monitoring dashboard](https://monitoring.dea.ga.gov.au/).
 :::{admonition} DEA Sentinel-2 contiguity fix: ongoing
 :class: note
 
-See [alert dated 2024-01-10](./#20240110) for more details.
+See [alert dated 2024-01-10](#20240110) for more details.
 :::
 
 ## 2024-01-24: Water Observations and Fractional Cover Percentiles 2023 annual summaries released
@@ -24,7 +24,8 @@ See [alert dated 2024-01-10](./#20240110) for more details.
 See [DEA Water Observations Statistics (Landsat)](/data/product/dea-water-observations-statistics-landsat/?tab=history) 
 and [DEA Fractional Cover Percentiles (Landsat)](/data/product/dea-fractional-cover-percentiles-landsat/) for more information. 
 
-{#20240110}
+(20240110)=
+
 ## 2024-01-10: Sentinel-2 contiguity fix - Reprocessing commenced
 
 Reprocessing to fix the Sentinel-2 contiguity issue has commenced with expected completion in early 2024. The issue 
