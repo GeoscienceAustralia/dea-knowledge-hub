@@ -35,7 +35,8 @@ created by ESA Level 1 anomalies (“[Striping due to lost source packets](https
 is impacting approximately 0.5% of our Sentinel-2 Analysis Ready Data (S2 ARD) between 2015 and 2023. 
 
 Affected products: 
-* ARD Sentinel-2 products (ga_s2am_ard_3, ga_s2bm_ard_3)  
+
+* ARD Sentinel-2 products (ga_s2am_ard_3, ga_s2bm_ard_3)
 
 See [DEA Tech alert email](https://communication.ga.gov.au/link/id/zzzz659df9f7f306b556Pzzzz61de67bd94bfe861/page.html) for more information. 
 Click [here](https://communication.ga.gov.au/link/id/zzzz659de7f165049054Pzzzz61de67bd94bfe861/page.html) to subscribe to DEA Tech alert emails.
@@ -43,6 +44,7 @@ Click [here](https://communication.ga.gov.au/link/id/zzzz659de7f165049054Pzzzz61
 ## 2023-11: Release of version 0.3.0 of DEA Tools
 
 Major update to the [DEA Tools Python package](https://docs.dea.ga.gov.au/notebooks/Tools/), including new tools for:
+
 * [pansharpening Landsat data](https://docs.dea.ga.gov.au/notebooks/How_to_guides/Pansharpening.html)
 * [tide modelling](https://docs.dea.ga.gov.au/notebooks/How_to_guides/Tidal_modelling.html)
 * [sunglint masking](https://docs.dea.ga.gov.au/notebooks/How_to_guides/Sunglint_masking.html)
@@ -104,20 +106,19 @@ all the DEA data was public to NCI users without any further steps.
 :::
 
 :::{dropdown} 2018-02-28: Update to `dea` environment module
-* 
 * Rename module to `dea`. Most people should now run
 
 ```bash
-
-     module use /g/data/v10/public/modules
-     module load dea
+module use /g/data/v10/public/modules
+module load dea
 ```
+
 * Include [JupyterLab](https://blog.jupyter.org/jupyterlab-is-ready-for-users-5a6f039b8906) as an alternative to Jupyter Notebooks. To use, from a shell run
 
 ```bash
-
-     jupyter-lab
+jupyter-lab
 ```
+
 * Include pre-release version 1.6 of Open Data Cube
 * Drop support for Python 2
 :::
