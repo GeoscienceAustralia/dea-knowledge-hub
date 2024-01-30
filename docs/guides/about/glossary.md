@@ -52,14 +52,14 @@ determined from a set of radiation observations originally sensed by satellite s
 ## Ancillary datasets
 
 Data which enhance processing and utilisation of remote sensing instrument data. Ancillary datasets are used to assist
-in the analysis and classification of e.g. [ARD](#ard) by providing supporting data on conditions at the time of 
+in the analysis and classification of e.g. [ARD](./#ard) by providing supporting data on conditions at the time of 
 satellite data acquisition, such as aerosol and water vapour concentrations. 
 
 (aws)=
 ## Amazon Web Services (AWS)
 
-One of the two environments used for hosting [Digital Earth Australia](#dea). Amazon Web Services is a commercial cloud 
-computing provider. Used by Digital Earth Australia for our JupyterHub [Sandbox](#dea-sandbox) and Web Mapping Services.
+One of the two environments used for hosting [Digital Earth Australia](./#dea). Amazon Web Services is a commercial cloud 
+computing provider. Used by Digital Earth Australia for our JupyterHub [Sandbox](./#dea-sandbox) and Web Mapping Services.
 
 (ard)=
 ## Analysis Ready Data (ARD)
@@ -71,7 +71,7 @@ immediate analysis and interoperability through time and with other datasets.
 ## Application Programming Interface (API)
 
 A software intermediary that allows two applications to talk to each other. The 
-[Open Data Cube](#odc) API gives programmers full access to the capabilities of the Cube, 
+[Open Data Cube](./#odc) API gives programmers full access to the capabilities of the Cube, 
 allowing query and advanced data retrieval.
 
 (atm-corr)=
@@ -83,15 +83,15 @@ airborne sensors.
 (agdc)=
 ## Australian Geoscience Data Cube (AGDC)
 
-A collaborative prototype project between Geoscience Australia, [CSIRO](#csiro) and 
-[NCI](#nci), which aimed to  provide better public access to NASA’s extensive Landsat archive. 
-The AGDC has since been superseded by [Digital Earth Australia](#dea).
+A collaborative prototype project between Geoscience Australia, [CSIRO](./#csiro) and 
+[NCI](./#nci), which aimed to  provide better public access to NASA’s extensive Landsat archive. 
+The AGDC has since been superseded by [Digital Earth Australia](./#dea).
 
 (are)=
 ## Australian Research Environment (ARE)
 
-The ARE is an interface for using the data and software available on the [NCI](#nci). 
-It is a replacement for the old [VDI](#vdi) system.
+The ARE is an interface for using the data and software available on the [NCI](./#nci). 
+It is a replacement for the old [VDI](./#vdi) system.
 
 For more information, see [Australian Research Environment](https://are.nci.org.au/).
 
@@ -132,8 +132,8 @@ target.
 ## Bidirectional Reflectance Distribution Function (BRDF) / Albedo Parameter
 
 The Bidirectional Reflectance Distribution Function (BRDF)/Albedo parameters provide:
-* coefficients for mathematical functions that describe the BRDF of each pixel in the seven [MODIS](#modis) 'Land' bands (1- 7); and
-* [albedo](#albedo) measurements derived simultaneously from the BRDF for bands 1-7 as well as three broad bands (0.4-0.7, 0.7-3.0, and 0.4- 3.0 micrometers).
+* coefficients for mathematical functions that describe the BRDF of each pixel in the seven [MODIS](./#modis) 'Land' bands (1- 7); and
+* [albedo](./#albedo) measurements derived simultaneously from the BRDF for bands 1-7 as well as three broad bands (0.4-0.7, 0.7-3.0, and 0.4- 3.0 micrometers).
 
 For more information see: [NASA](https://modis.gsfc.nasa.gov/data/dataprod/mod43.php).
 
@@ -145,26 +145,26 @@ A data file format optimised for efficient workflows on the cloud and partial fi
 (collection)=
 ## Collection
 
-All products downstream of the rawest form of the main input data ([telemetry](#telemetry)), 
+All products downstream of the rawest form of the main input data ([telemetry](./#telemetry)), 
 produced sequentially and processed with consistent algorithms/code/inputs/outputs.
 
 (c2)=
 ## Collection 2 (C2)
 
-Digital Earth Australia's second [collection](#collection) of Landsat data. Now superseded by 
-[Collection 3](#c3). Note that there was no DEA Collection 2 of Sentinel 2 products.
+Digital Earth Australia's second [collection](./#collection) of Landsat data. Now superseded by 
+[Collection 3](./#c3). Note that there was no DEA Collection 2 of Sentinel 2 products.
 
 (c3)=
 ## Collection 3 (C3)
 
-The third [collection](#collection) of Digital Earth Australia's Landsat or Sentinel 2 data, 
+The third [collection](./#collection) of Digital Earth Australia's Landsat or Sentinel 2 data, 
 and the most up-to-date collection available.
 
 (collection-upgrade)=
 ## Collection upgrade
 
-The reproduction of the [collection](#collection), including all downstream products, with the 
-initial input being the rawest form ([telemetry](#telemetry)). Collections are updated when 
+The reproduction of the [collection](./#collection), including all downstream products, with the 
+initial input being the rawest form ([telemetry](./#telemetry)). Collections are updated when 
 there are fundamental changes and upgrades to the data suite that make it incompatible with the existing collection. 
 Therefore, a collection upgrade is more akin to a movie franchise reboot than a re-release.
 
@@ -184,7 +184,7 @@ For more information, see [CSIRO](https://www.csiro.au/).
 (cophub)=
 ## Copernicus Australasia Regional Data Hub
 
-Copernicus Australasia is a regional hub supporting the [Copernicus Program](#cop-prog). The 
+Copernicus Australasia is a regional hub supporting the [Copernicus Program](./#cop-prog). The 
 Copernicus Australasia Regional Data Hub provides free and open access to data from Europe's Sentinel satellite
 missions for the following South-East Asia and South Pacific region.
 
@@ -203,23 +203,23 @@ For more information, see [Copernicus Programme](https://www.copernicus.eu/en).
 ## Dataset
 
 A related set of files composed of separate elements that can be manipulated as a unit. It is an instantiation of a 
-[product](#product).
+[product](./#product).
 
 (dea)=
 ## Digital Earth Australia (DEA)
 
-A Program of [Geoscience Australia](#ga) that uses spatial data and images recorded by satellites 
+A Program of [Geoscience Australia](./#ga) that uses spatial data and images recorded by satellites 
 orbiting our planet to detect physical changes across Australia. DEA prepares these vast volumes of Earth observation 
 data and makes it available to governments and industry for easy use. DEA is the Australian implementation of the 
-[Open Data Cube](#odc).
+[Open Data Cube](./#odc).
 
 For more information, see [the DEA website](https://www.dea.ga.gov.au/).
 
 (dea-nb)=
 ## DEA Notebooks
 
-An open-source repository containing [Jupyter notebooks](#jupyter-nb), tools and workflows for 
-geospatial analysis with [Open Data Cube](#odc) and [xarray](#xarray).
+An open-source repository containing [Jupyter notebooks](./#jupyter-nb), tools and workflows for 
+geospatial analysis with [Open Data Cube](./#odc) and [xarray](./#xarray).
 
 For more information, see [the GitHub repository](https://github.com/GeoscienceAustralia/dea-notebooks).
 
@@ -227,8 +227,8 @@ For more information, see [the GitHub repository](https://github.com/GeoscienceA
 ## DEA Sandbox
 
 The Digital Earth Australia Sandbox is a learning and analysis environment for getting started with DEA and the 
-[Open Data Cube](#odc). It includes sample data and [Jupyter notebooks](#jupyter-nb) that demonstrate the capability 
-of the [Open Data Cube](#odc).
+[Open Data Cube](./#odc). It includes sample data and [Jupyter notebooks](./#jupyter-nb) that demonstrate the capability 
+of the [Open Data Cube](./#odc).
 
 For more information, see [the getting started wiki](https://github.com/GeoscienceAustralia/dea-notebooks/wiki).
 
@@ -254,7 +254,7 @@ satellite-based observations, as well as drone or aerial images.
 ## Enhanced Thematic Mapper Plus (ETM+)
 
 The sensor aboard Landsat 7 that picks up solar radiation reflected by or emitted from the Earth. It is an enhanced 
-version of the [Thematic Mapper](#tm).
+version of the [Thematic Mapper](./#tm).
 
 For more information, see [NASA Enhanced Thematic Mapper Plus](https://landsat.gsfc.nasa.gov/etm-plus/).
 
@@ -268,7 +268,7 @@ conditions under which remotely sensed data is collected and is commonly used to
 ## European Space Agency (ESA)
 
 The European Space Agency is a European intergovernmental collaboration focussed on the development of Europe's space 
-capability. The ESA is a partner of the [Copernicus Programme](#cop-prog).
+capability. The ESA is a partner of the [Copernicus Programme](./#cop-prog).
 
 (exiting-angle)=
 ## Exiting angle (degrees)
@@ -278,7 +278,7 @@ The angle between a ray reflected from a surface and the line perpendicular to t
 (final)=
 ## Final
 
-A stage in DEA's dataset maturity lifecycle. DEA’s best quality [ARD](#ard), produced using high quality [ancillary](#ancillary) 
+A stage in DEA's dataset maturity lifecycle. DEA’s best quality [ARD](./#ard), produced using high quality [ancillary](./#ancillary) 
 datasets derived from observed data.
 
 For more information, see [DEA dataset maturity](/guides/reference/dataset_maturity_guide#final).
@@ -310,7 +310,7 @@ measures of at-sensor radiance.
 
 Geoscience Australia is the national public-sector geoscience organisation. It is the government’s technical advisor 
 on all aspects of geoscience and is the custodian of geographic and geological data.
-[Digital Earth Australia](#dea) is a program of Geoscience Australia.
+[Digital Earth Australia](./#dea) is a program of Geoscience Australia.
 
 For more information, see [Geoscience Australia](https://www.ga.gov.au/).
 
@@ -356,9 +356,9 @@ The angle between a ray incident on a surface and the line perpendicular to the 
 (interim)=
 ## Interim
 
-A stage in DEA's dataset maturity lifecycle. Interim production means that one or more [ancillary](#ancillary) datasets were not 
-available at the time of production, and the dataset has instead been corrected using a combination of [NRT](#nrt) 
-climatological ancillaries, and [final](#final) observed ancillaries.
+A stage in DEA's dataset maturity lifecycle. Interim production means that one or more [ancillary](./#ancillary) datasets were not 
+available at the time of production, and the dataset has instead been corrected using a combination of [NRT](./#nrt) 
+climatological ancillaries, and [final](./#final) observed ancillaries.
 
 For more information, see [DEA dataset maturity](/guides/reference/dataset_maturity_guide#interim).
 
@@ -388,12 +388,12 @@ scientific notation etc.
 ## JupyterLab
 
 An interactive web-based user interface for editing and running Jupyter notebooks. JupyterLab is used as an analysis 
-environment on both the [DEA Sandbox](#dea-sandbox) and the NCI's [ARE](#are).
+environment on both the [DEA Sandbox](./#dea-sandbox) and the NCI's [ARE](./#are).
 
 (landsat)=
 ## Landsat
 
-A joint [NASA](#nasa)/[USGS](#usgs) program of medium resolution satellites that have been collecting publicly 
+A joint [NASA](./#nasa)/[USGS](./#usgs) program of medium resolution satellites that have been collecting publicly 
 available Earth observation data continuously since 1972.
 
 For more information, see [Landsat Science](https://landsat.gsfc.nasa.gov/).
@@ -446,16 +446,16 @@ For more information, see [Landsat: Multispectral Scanner](https://landsat.gsfc.
 ## Nadir
 
 The point of the celestial sphere that is vertically downward from the observer and directly opposite the 
-[zenith](#zenith).
+[zenith](./#zenith).
 
 (nbar)=
-## Nadir-corrected [BRDF](#brdf) Adjusted Reflectance (NBAR)
+## Nadir-corrected [BRDF](./#brdf) Adjusted Reflectance (NBAR)
 
 Surface reflectance data that has been corrected to remove the effects of topography and angular variation using 
 bidirectional reflectance modelling.
 
 (nbart)=
-## Nadir-corrected [BRDF](#brdf) Adjusted Reflectance with Terrain illumination correction (NBART)
+## Nadir-corrected [BRDF](./#brdf) Adjusted Reflectance with Terrain illumination correction (NBART)
 
 Surface reflectance data that has been corrected to remove the effects of topography and angular variation using 
 bidirectional reflectance modelling, as well as corrected for the effects of terrain shadow.
@@ -484,12 +484,12 @@ For more information, see [NOAA](https://www.noaa.gov/).
 (nbr)=
 ## Normalised Burn Ratio (NBR)
 
-Calculated from near-infrared ([NIR](#nir)) and short wave infrared ([SWIR](#swir)).
+Calculated from near-infrared ([NIR](./#nir)) and short wave infrared ([SWIR](./#swir)).
 
 (ndvi)= 
 ## Normalised Difference Vegetation Index (NDVI)
 
-Calculated from visible and near-infrared ([NIR](#nir)) light reflected by vegetation.
+Calculated from visible and near-infrared ([NIR](./#nir)) light reflected by vegetation.
 
 (nir)=
 ## Near Infrared (NIR)
@@ -501,7 +501,7 @@ radiation between 0.7 - 0.9 micrometers.
 ## Near real-time (NRT)
 
 A stage in DEA's dataset maturity lifecycle. NRT data is a less refined/calibrated dataset, which is available much 
-sooner after satellite acquisition than standard [ARD](#ard) data.
+sooner after satellite acquisition than standard [ARD](./#ard) data.
 
 For more information, see [DEA dataset maturity](/guides/reference/dataset_maturity_guide#nrt).
 
@@ -512,7 +512,7 @@ An open source geospatial data management and analysis software project. It is a
 value and use of satellite data by providing users with access to free and open data management technologies and 
 analysis platforms.
 
-At its core, ODC is a set of Python libraries and a [PostgreSQL](#postgresql) database that allows you to work with 
+At its core, ODC is a set of Python libraries and a [PostgreSQL](./#postgresql) database that allows you to work with 
 geospatial raster data.
 
 For more information, see [Open Data Cube](https://www.opendatacube.org).
@@ -521,8 +521,8 @@ For more information, see [Open Data Cube](https://www.opendatacube.org).
 ## Operational Land Imager (OLI)
 
 The Operational Land Imager is carried by the Landsat 8 satellite. It measures in the visible, near infrared 
-[NIR](#nir), and short wave infrared [SWIR](#swir) portions of the spectrum. Its images have 15-meter (49 ft.) 
-[panchromatic](#panchromatic) and 30-meter multi-spectral spatial resolutions along a 185 km(115 miles) wide swath.
+[NIR](./#nir), and short wave infrared [SWIR](./#swir) portions of the spectrum. Its images have 15-meter (49 ft.) 
+[panchromatic](./#panchromatic) and 30-meter multi-spectral spatial resolutions along a 185 km(115 miles) wide swath.
 
 For more information, see [Landsat 8](https://landsat.gsfc.nasa.gov/satellites/landsat-8/).
 
@@ -530,7 +530,7 @@ For more information, see [Landsat 8](https://landsat.gsfc.nasa.gov/satellites/l
 ## Operational Land Imager 2 (OLI2)
 
 The OLI-2 instrument is carried by the Landsat 9 satellite. It provides visible and near infrared / shortwave infrared 
-(VNIR/[SWIR](#swir)) imagery consistent with previous Landsat spectral, spatial, radiometric and geometric qualities.
+(VNIR/[SWIR](./#swir)) imagery consistent with previous Landsat spectral, spatial, radiometric and geometric qualities.
 
 The OLI-2 instrument includes an optical telescope, Focal Plane Array / Focal Plane Electronics, calibration hardware, 
 and instrument support electronics. OLI-2 provides data for nine spectral bands with a maximum ground sampling distance 
@@ -569,7 +569,7 @@ once during each orbit. The term describes the near-polar orbits of a spacecraft
 
 Also known as Postgres, it is an open source object-relational database management system with an emphasis on 
 extensibility and standards compliance. It is a high performance database engine used as both a relational and document 
-database by the [Open Data Cube](#odc).
+database by the [Open Data Cube](./#odc).
 
 (process)=
 ## Process
@@ -585,7 +585,7 @@ definition which contains the product description and specification.
 (python)=
 ## Python
 
-The programming language used to develop the [Open Data Cube](#odc) and most of [Digital Earth Australia](#dea). 
+The programming language used to develop the [Open Data Cube](./#odc) and most of [Digital Earth Australia](./#dea). 
 It is an easy-to-use language, which also provides simple access to high performance processing capabilities.
 
 For more information, see [Python](https://www.python.org/).
@@ -603,15 +603,15 @@ A device that detects and measures electromagnetic radiation.
 (radiometric)=
 ## Radiometric
 
-Relating to, using, or measured by a [radiometer](#radiometer). The measurement of radiation.
+Relating to, using, or measured by a [radiometer](./#radiometer). The measurement of radiation.
 
 (raster)=
 ## Raster data
 
-An abstraction of the real world where spatial data is expressed as a matrix of cells or [pixel](#pixel)s, with spatial 
+An abstraction of the real world where spatial data is expressed as a matrix of cells or [pixel](./#pixel)s, with spatial 
 position implicit in the ordering of the pixels. With the raster data model, spatial data is not continuous but divided 
 into discrete units. This makes raster data particularly suitable for certain types of spatial operations 
-(e.g. overlays or area calculations). Unlike [vector data](#vector), there are no implicit topological relationships.
+(e.g. overlays or area calculations). Unlike [vector data](./#vector), there are no implicit topological relationships.
 
 (raw-data)=
 ## Raw data
@@ -633,12 +633,12 @@ The measure of the proportion of light or other radiation striking a surface whi
 (relative-azimuth)=
 ## Relative azimuth (degrees)
 
-The relative [azimuth](#azimuth) angle between the sun and view directions.
+The relative [azimuth](./#azimuth) angle between the sun and view directions.
 
 (relative-slope)=
 ## Relative slope (degrees)
 
-The relative [azimuth](#azimuth) angle between the incident and exiting directions in the slope geometry.
+The relative [azimuth](./#azimuth) angle between the incident and exiting directions in the slope geometry.
 
 (remote-sensing)=
 ## Remote sensing
@@ -719,12 +719,12 @@ The solar irradiance is the output of light energy from the entire disk of the S
 (solar-zenith)=
 ## Solar zenith (degrees)
 
-The angle between the [zenith](#zenith) and the centre of the sun’s disc.
+The angle between the [zenith](./#zenith) and the centre of the sun’s disc.
 
 (solar-zenith-angle)=
 ## Solar Zenith Angle (SZA)
 
-The angle between the local [zenith](#zenith) (i.e. directly above the point on the ground) and the line of sight from 
+The angle between the local [zenith](./#zenith) (i.e. directly above the point on the ground) and the line of sight from 
 that point to the sun.
 
 (spatial-res)=
@@ -732,7 +732,7 @@ that point to the sun.
 
 The area on the ground that an imaging system, such as a satellite sensor, can distinguish.
 
-See also [resolution](#resolution).
+See also [resolution](./#resolution).
 
 (spectral-response)=
 ## Spectral response
@@ -782,7 +782,7 @@ For more information, see [NASA Thematic Mapper Plus](https://landsat.gsfc.nasa.
 (thredds)=
 ## Thematic Real-time Environmental Distributed Data Services (THREDDS)
 
-A National Computational Infrastructure ([NCI](#nci)) server, which is a high-performance and high-availability 
+A National Computational Infrastructure ([NCI](./#nci)) server, which is a high-performance and high-availability 
 installation of Unidata's Thematic Real-time Environmental Distributed Data Services (THREDDS).
 
 THREDDS serves many of NCI’s open data collections at the file level, as well as some aggregations. It provides many 
@@ -800,7 +800,7 @@ The time in seconds from satellite apogee (the point of orbit at which the satel
 ## United States Geological Survey (USGS)
 
 A scientific agency of the United States government. The scientists of the USGS study the landscape of the United 
-States, its natural resources, and the natural hazards that threaten it. The USGS and [NASA](#nasa) jointly run the 
+States, its natural resources, and the natural hazards that threaten it. The USGS and [NASA](./#nasa) jointly run the 
 Landsat program of earth observation satellites.
 
 For more information, see [USGS](https://www.usgs.gov/).
@@ -815,8 +815,8 @@ attribute information associated with them.
 (vdi)=
 ## Virtual Desktop Infrastructure (VDI)
 
-The Virtual Desktop Infrastructure was a service offered by the [NCI](#nci) that provided a linux desktop environment 
-for scientific computing. It has been replaced by [ARE](#are).
+The Virtual Desktop Infrastructure was a service offered by the [NCI](./#nci) that provided a linux desktop environment 
+for scientific computing. It has been replaced by [ARE](./#are).
 
 (viirs)=
 ## Visible Infrared Imaging Radiometer Suite (VIIRS)
@@ -830,7 +830,7 @@ For more information, see [Joint Polar Satellite System](https://www.nesdis.noaa
 (wofl)=
 ## Water Observation Feature Layer (WOFL)
 
-A [WO](#wo) observation for one point in time
+A [WO](./#wo) observation for one point in time
 
 (wo)=
 ## Water Observations (WO)
@@ -850,7 +850,7 @@ the lower the frequency.
 ## Web Map Service (WMS)
 
 A HTTP interface for requesting geo-registered map images that can be displayed in a browser application or 
-[GIS](#gis) software system.
+[GIS](./#gis) software system.
 
 (wfs)=
 ## Web Feature Service (WFS)
@@ -868,16 +868,16 @@ For more information, see [NASA: World Reference System](https://landsat.gsfc.na
 (xarray)=
 ## xarray
 
-An open source project and [Python](#python) package for working with labelled multidimensional arrays such as those 
-returned by the [Open Data Cube](#odc).
+An open source project and [Python](./#python) package for working with labelled multidimensional arrays such as those 
+returned by the [Open Data Cube](./#odc).
 
 (yaml)=
 ## Yet Another Markup Language (YAML)
 
-A human-readable data storage format. It is used throughout [DEA](#dea) for metadata files, product definitions and 
+A human-readable data storage format. It is used throughout [DEA](./#dea) for metadata files, product definitions and 
 other configuration files.
 
 (zenith)=
 ## Zenith
 
-The point on the celestial sphere directly above the observer, and directly opposite to [nadir](#nadir).
+The point on the celestial sphere directly above the observer, and directly opposite to [nadir](./#nadir).

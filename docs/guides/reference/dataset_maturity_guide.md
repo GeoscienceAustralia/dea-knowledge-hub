@@ -25,15 +25,9 @@ DEA produces ARD data to three maturity levels:
 (nrt)=
 ### Near Real-Time (NRT)
 
-**Near Real-Time (NRT)** is a rapid ARD product produced within 48 hours of image capture. NRT 
-data is corrected using existing long term climatology data, rather than observed conditions on the day of the 
-satellite capture (because these observational datasets, called [ancillaries](/guides/about/glossary/#ancillary), take a few weeks to be received by DEA). Due to the use of average
-condition data, rather than observational data to perform the corrections to produce ARD, NRT data can be published 
-quickly, however is considered to be of slightly lower quality than '**final**' ARD data.
+**Near Real-Time (NRT)** is a rapid ARD product produced within 48 hours of image capture. NRT data is corrected using existing long term climatology data, rather than observed conditions on the day of the satellite capture (because these observational datasets, called [ancillaries](/guides/about/glossary/#ancillary), take a few weeks to be received by DEA). Due to the use of average condition data, rather than observational data to perform the corrections to produce ARD, NRT data can be published quickly, however is considered to be of slightly lower quality than '**final**' ARD data.
 
-Over the next few weeks, higher quality ancillary datasets become available describing the specific 
-atmospheric conditions at the time and location the satellite image was captured. Using these 
-ancillaries, ‘**final**’ maturity ARD is produced. This replaces the '**NRT**' or '**interim**' product (see below).  
+Over the next few weeks, higher quality ancillary datasets become available describing the specific atmospheric conditions at the time and location the satellite image was captured. Using these ancillaries, ‘**final**’ maturity ARD is produced. This replaces the '**NRT**' or '**interim**' product (see below).
 
 (final)=
 ### Final
@@ -44,6 +38,7 @@ datasets of the conditions at the time of image capture and so provide our most 
 corrections. 
 
 DEA uses the following dynamic ancillary datasets to produce its **final** ARD:
+
 * Bidirectional reflectance distribution function ([BRDF](/guides/about/glossary/#brdf)) data from the United States Geological Survey 
 * Water Vapour from USA National Oceanographic and Atmospheric Administration
 
@@ -85,7 +80,7 @@ Previously, DEA produced two separate products:
 
 The user was then able to select which product they wanted to use according to their purpose. 
 It was more difficult to combine products as both NRT and the final ARD product contained data 
-for the same time step.  
+for the same time step.
 
 ## How do I load only Near Real-Time/Interim/Final data using the datacube? 
 
@@ -116,4 +111,4 @@ DEA's quality control standards for a product or service.
 **Provisional products are available for use, but should be used with appropriate caution.** See the individual product 
 or service metadata pages for information on product limitations and use. 
 
-Once a product is formally released, it is renamed to remove the provisional tag.  
+Once a product is formally released, it is renamed to remove the provisional tag.
