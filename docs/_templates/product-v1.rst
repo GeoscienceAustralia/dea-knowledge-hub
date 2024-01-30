@@ -113,6 +113,7 @@
        {% if has_access_data %}
        .. rubric:: Access the data
           :name: access-the-data
+          :class: h2
 
        For help accessing the data, see the 'Access' tab.
 
@@ -175,6 +176,7 @@
        {% if has_key_details %}
        .. rubric:: Key details
           :name: key-details
+          :class: h2
 
        .. list-table::
           :name: key-details-table
@@ -248,6 +250,7 @@
 
        .. rubric:: Access the data
           :name: access-the-data-2
+          :class: h2
 
        {% if has_access_data %}
        .. list-table::
@@ -306,6 +309,7 @@
 
        .. rubric:: Additional files
           :name: additional-files
+          :class: h2
 
        .. list-table::
           :name: additional-files-table
@@ -331,11 +335,13 @@
        {% if not is_latest_version %}
        .. rubric:: Other versions
           :name: other-versions
+          :class: h2
 
        You can find the history in the `latest version of the product <{{ data.latest_version_link }}>`_.
        {% else %}
        .. rubric:: Old versions
           :name: old-versions
+          :class: h2
 
        {% if valid_old_versions %}
 

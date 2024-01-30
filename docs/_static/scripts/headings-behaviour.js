@@ -2,10 +2,10 @@
 // The sections of this script are in order of precedence. Each time a 'data-anchor-id' property is added to a heading, it will override any existing 'data-anchor-id' that was set previously.
 
 document.addEventListener("DOMContentLoaded", function (event) {
-    // Convert the 'rubric' headings to H2 headings.
+    // Convert the '.rubric.h2' elements to H2 headings.
 
     (function() {
-        let rubrics = document.querySelectorAll("p.rubric");
+        let h2Rubrics = document.querySelectorAll("p.rubric.h2");
 
         for (let i = 0; i < rubrics.length; i++) {
             let rubric = rubrics[i];
