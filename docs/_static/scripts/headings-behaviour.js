@@ -1,5 +1,5 @@
-// Sets behaviours for headings.
-// The rules in this script occur in a specific order and each will overwrite properties set in the previous one.
+// Standardises the headings and their anchor IDs. Adds behaviour to headings and tabs that adds their IDs to the URL.
+// The sections of this script are in order of precedence. Each time a 'data-anchor-id' property is added to a heading, it will override any existing 'data-anchor-id' that was set previously.
 
 document.addEventListener("DOMContentLoaded", function (event) {
     // Convert the 'rubric' headings to H2 headings
