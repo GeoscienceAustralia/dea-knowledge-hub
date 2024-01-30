@@ -103,12 +103,9 @@
     .. tab-item:: Overview
        :name: overview
 
-       .. container:: table-of-contents
+       .. raw:: html
 
-          .. container::
-             :name: overview-table-of-contents
-
-             |nbsp|
+          <div class="tocbot-selector"></div>
 
        .. include:: _overview_1.md
           :parser: myst_parser.sphinx_
@@ -116,6 +113,7 @@
        {% if has_access_data %}
        .. rubric:: Access the data
           :name: access-the-data
+          :class: h2
 
        For help accessing the data, see the 'Access' tab.
 
@@ -178,6 +176,7 @@
        {% if has_key_details %}
        .. rubric:: Key details
           :name: key-details
+          :class: h2
 
        .. list-table::
           :name: key-details-table
@@ -221,12 +220,9 @@
     .. tab-item:: Details
        :name: details
 
-       .. container:: table-of-contents
+       .. raw:: html
 
-          .. container::
-             :name: details-table-of-contents
-
-             |nbsp|
+          <div class="tocbot-selector"></div>
 
        .. include:: _details.md
           :parser: myst_parser.sphinx_
@@ -236,12 +232,9 @@
     .. tab-item:: Quality
        :name: quality
 
-       .. container:: table-of-contents
+       .. raw:: html
 
-          .. container::
-             :name: quality-table-of-contents
-
-             |nbsp|
+          <div class="tocbot-selector"></div>
 
        .. include:: _quality.md
           :parser: myst_parser.sphinx_
@@ -251,15 +244,13 @@
     .. tab-item:: Access
        :name: access
 
-       .. container:: table-of-contents
+       .. raw:: html
 
-          .. container::
-             :name: access-table-of-contents
-
-             |nbsp|
+          <div class="tocbot-selector"></div>
 
        .. rubric:: Access the data
           :name: access-the-data-2
+          :class: h2
 
        {% if has_access_data %}
        .. list-table::
@@ -318,6 +309,7 @@
 
        .. rubric:: Additional files
           :name: additional-files
+          :class: h2
 
        .. list-table::
           :name: additional-files-table
@@ -336,21 +328,20 @@
     .. tab-item:: History
        :name: history
 
-       .. container:: table-of-contents
+       .. raw:: html
 
-          .. container::
-             :name: history-table-of-contents
-
-             |nbsp|
+          <div class="tocbot-selector"></div>
 
        {% if not is_latest_version %}
        .. rubric:: Other versions
           :name: other-versions
+          :class: h2
 
        You can find the history in the `latest version of the product <{{ data.latest_version_link }}>`_.
        {% else %}
        .. rubric:: Old versions
           :name: old-versions
+          :class: h2
 
        {% if valid_old_versions %}
 
@@ -374,12 +365,9 @@
     .. tab-item:: FAQs
        :name: faqs
 
-       .. container:: table-of-contents
+       .. raw:: html
 
-          .. container::
-             :name: faqs-table-of-contents
-
-             |nbsp|
+          <div class="tocbot-selector"></div>
 
        .. include:: _faqs.md
           :parser: myst_parser.sphinx_
@@ -389,12 +377,9 @@
     .. tab-item:: Credits
        :name: credits
 
-       .. container:: table-of-contents
+       .. raw:: html
 
-          .. container::
-             :name: credits-table-of-contents
-
-             |nbsp|
+          <div class="tocbot-selector"></div>
 
        .. include:: _credits.md
           :parser: myst_parser.sphinx_
@@ -404,5 +389,4 @@
 
    <script type="text/javascript" src="/_static/scripts/vendors/tocbot.min.js"></script>
    <script type="text/javascript" src="/_static/scripts/product-table-of-contents.js" /></script>
-   <script type="text/javascript" src="/_static/scripts/product-tab-deep-links.js" /></script>
    <script type="text/javascript" src="/_static/scripts/access-cards-tooltips.js" /></script>
