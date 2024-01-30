@@ -22,7 +22,7 @@ DEA produces ARD data to three maturity levels:
 * **Interim**
 * **Final**
 
-{#nrt}
+(nrt)=
 ### Near Real-Time (NRT)
 
 **Near Real-Time (NRT)** is a rapid ARD product produced within 48 hours of image capture. NRT 
@@ -35,7 +35,7 @@ Over the next few weeks, higher quality ancillary datasets become available desc
 atmospheric conditions at the time and location the satellite image was captured. Using these 
 ancillaries, ‘**final**’ maturity ARD is produced. This replaces the '**NRT**' or '**interim**' product (see below).  
 
-{#final}
+(final)=
 ### Final
 
 **Final** ARD is DEA’s best quality ARD, produced using high quality ancillary datasets derived 
@@ -47,7 +47,7 @@ DEA uses the following dynamic ancillary datasets to produce its **final** ARD:
 * Bidirectional reflectance distribution function ([BRDF](/guides/about/glossary/#brdf)) data from the United States Geological Survey 
 * Water Vapour from USA National Oceanographic and Atmospheric Administration
 
-{#interim}
+(interim)=
 ### Interim
 
 If high quality ancillaries required for the **final** ARD model don’t become available **within 23 days** of image capture,
@@ -105,7 +105,7 @@ dc.load(product="ga_ls8c_ard_3",
         dataset_maturity="final")
 ```
 
-{#provisional}
+(provisional)=
 ## What about provisional?
 
 The term **provisional** is used by DEA to denote products or services that have not yet passed quality control, and/or
