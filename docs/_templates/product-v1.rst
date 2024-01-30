@@ -105,8 +105,6 @@
 
        .. container:: table-of-contents
 
-          **Contents:**
-
           .. container::
              :name: overview-table-of-contents
 

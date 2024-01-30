@@ -3,14 +3,6 @@
         line-height: 2rem;
     }
 
-    * > p, * > div {
-        display: inline-block;
-    }
-
-    * > p {
-        padding-right: 1rem;
-    }
-
     ol {
         display: flex;
         flex-wrap: wrap;
