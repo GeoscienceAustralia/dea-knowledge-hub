@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
                 let conflictingIdPattern = /id\d+/g;
                 let customId = maybeCustomIdElement.id;
 
-                // Checks that the ID is not 'id1', 'id2', 'id3', or etc. These IDs occur due to a naming conflict between IDs.
+                // Checks that the ID is not 'id1', 'id2', 'id3', or etc. These IDs occur to prevent a naming conflict between IDs.
                 // E.g. if a heading 'Introduction' has a '(introduction)=' custom ID above it, this naming conflict will occur.
                 if (!conflictingIdPattern.test(customId)) {
                     heading.dataset.anchorId = customId;
