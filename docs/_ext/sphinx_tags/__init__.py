@@ -12,14 +12,12 @@ from docutils import nodes
 from docutils.parsers.rst import directives
 from sphinx.errors import ExtensionError
 from sphinx.util.docutils import SphinxDirective
-from sphinx.util.logging import getLogger
+from sphinx.util import logging
 from sphinx.util.rst import textwidth
 
 __version__ = "0.3.1"
 
-logger = getLogger("sphinx-tags")
-# logger.basicConfig(level = logger.DEBUG, format='%(message)')
-
+logger = logging.getLogger("sphinx-tags")
 
 class TagLinks(SphinxDirective):
     """Custom directive for adding tags to Sphinx-generated files.
@@ -226,7 +224,7 @@ class Tag:
         content.append("")
         output = "\n".join(content)
 
-        logger.info(f"Creating tag: {filename}", color="white")
+        logger.info(f"Creating tag: {filename}")
         with open(
             os.path.join(srcdir, tags_output_dir, filename), "w", encoding="utf8"
         ) as file:
@@ -323,6 +321,7 @@ def tagpage(tags, outdir, title, extension, tags_index_header):
         filename = os.path.join(outdir, "tags-list.rst")
         output = "\n".join(content)
 
+    logger.info(f"Creating tags list: {filename}")
     with open(filename, "w", encoding="utf8") as file:
         file.write(output) # Write tags-list.md or tags-list.rst
 

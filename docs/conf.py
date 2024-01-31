@@ -112,7 +112,7 @@ notfound_pagename = "404-not-found"
 notfound_urls_prefix = ""
 
 tags_create_tags = (
-    environment["build_mode"] == "production" # Not `in ["demo", "production"]` because Netlify only supports Python 3.8 and therefore, this extension is unreliable.
+    environment["build_mode"] in ["demo", "production"]
     or environment["local_enable_tags"] == "Yes"
 )
 tags_overview_title = "All tags"
