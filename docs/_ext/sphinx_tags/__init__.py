@@ -245,7 +245,7 @@ def tagpage(tags, srcdir, title, extension, tags_index_header):
     content.append("tags/*/index")
     content.append("```")
     content.append("")
-    filename = os.path.join(outdir, f"{tags_list_name}.md")
+    filename = os.path.join(srcdir, f"{tags_list_name}.md")
 
     with open(
         os.path.join(srcdir, filename), "w", encoding="utf8"
