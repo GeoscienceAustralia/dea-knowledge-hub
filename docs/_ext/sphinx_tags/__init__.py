@@ -17,8 +17,6 @@ from sphinx.util.rst import textwidth
 
 __version__ = "0.3.1"
 
-tags_list_name = "tags-list"
-
 logger = logging.getLogger("sphinx-tags")
 
 class TagLinks(SphinxDirective):
@@ -188,7 +186,7 @@ class Tag:
         content.append("")
         content.append(f"{tags_page_header} &lsquo;{self.name}&rsquo;.")
         content.append("")
-        content.append('<a href="/tags-list/"><i class="fa-solid fa-chevron-left tag-page-list"></i> View all tags</a>')
+        content.append('<a href="/tags/"><i class="fa-solid fa-chevron-left tag-page-list"></i> View all tags</a>')
         content.append("")
 
         for path in tag_page_paths:
@@ -232,7 +230,7 @@ def _normalize_tag(tag: str) -> str:
     return re.sub(r"[\s\W]+", "-", tag).lower().strip("-")
 
 
-def tagpage(tags, outdir, title, extension, tags_index_header):
+def tagpage(tags, srcdir, tags_output_dir, title, extension, tags_index_header):
     """Creates Tag overview page.
 
     This page contains a list of all available tags.
@@ -245,16 +243,14 @@ def tagpage(tags, outdir, title, extension, tags_index_header):
     content.append(f"# {title}")
     content.append("")
     content.append(tags_index_header)
-    # content.append("")
-    # content.append(":::{toctree}")
-    # content.append(":glob:")
-    # content.append("")
-    # content.append("tags/*/index")
-    # content.append(":::")
     content.append("")
-    filename = os.path.join(outdir, f"{tags_list_name}.md")
+    content.append(":::{tableofcontents}")
+    content.append(":::")
+    content.append("")
 
-    with open(filename, "w", encoding="utf8") as file:
+    with open(
+        os.path.join(srcdir, tags_output_dir, "index.md"), "w", encoding="utf8"
+    ) as file:
         file.write("\n".join(content))
 
 
@@ -307,12 +303,13 @@ def update_tags(app):
         # Create tags overview page
         tagpage(
             tags = tags,
-            outdir = os.path.join(app.srcdir),
+            srcdir = app.srcdir,
+            tags_output_dir = Path(app.config.tags_output_dir),
             title = app.config.tags_overview_title,
             extension = app.config.tags_extension,
             tags_index_header = app.config.tags_index_header,
         )
-        logger.info(f"Created tags index: {tags_list_name}")
+        logger.info(f"Created tags index")
     else:
         logger.info(
             "Tags were not created (tags_create_tags=False in conf.py)", color="white"
