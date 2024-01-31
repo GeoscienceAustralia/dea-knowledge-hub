@@ -18,6 +18,7 @@ from sphinx.util.rst import textwidth
 __version__ = "0.3.1"
 
 logger = getLogger("sphinx-tags")
+# logger.basicConfig(level = logger.DEBUG, format='%(message)')
 
 
 class TagLinks(SphinxDirective):
@@ -225,6 +226,7 @@ class Tag:
         content.append("")
         output = "\n".join(content)
 
+        logger.info(f"Creating tag: {filename}", color="white")
         with open(
             os.path.join(srcdir, tags_output_dir, filename), "w", encoding="utf8"
         ) as file:
@@ -360,7 +362,7 @@ def update_tags(app):
             tag.create_file(
                 items = [item for item in pages if tag.name in item.tags],
                 extension = app.config.tags_extension,
-                tags_output_dir,
+                tags_output_dir = tags_output_dir,
                 srcdir = app.srcdir,
                 tags_page_title = app.config.tags_page_title,
                 tags_page_header = app.config.tags_page_header,
@@ -368,7 +370,7 @@ def update_tags(app):
 
         # Create tags overview page
         tagpage(
-            tags,
+            tags = tags,
             outdir = os.path.join(app.srcdir),
             title = app.config.tags_overview_title,
             extension = app.config.tags_extension,
