@@ -1,4 +1,4 @@
-.. rst-class:: card-list-page
+.. rst-class:: data-page
 
 ======================================================================================================================================================
 {{ data.title }}
@@ -11,7 +11,7 @@
    .. grid:: 2 2 3 4
        :gutter: 3
 
-       {% for page in data.pages %}
+       {% for page in data.themes %}
        .. grid-item-card::
           :link: {{ page.link }}
 

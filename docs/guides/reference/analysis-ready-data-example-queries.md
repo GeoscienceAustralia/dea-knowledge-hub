@@ -2,7 +2,7 @@
 
 This article demonstrates how to query Open Data Cube.
 
-:::{contents} In this guide
+:::{contents} On this page
 :depth: 1
 :local:
 :backlinks: none

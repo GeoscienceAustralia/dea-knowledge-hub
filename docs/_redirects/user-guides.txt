@@ -1,3 +1,0 @@
-# User guide redirects
-
-guides/setup/gis/web_services  guides/setup/gis/README

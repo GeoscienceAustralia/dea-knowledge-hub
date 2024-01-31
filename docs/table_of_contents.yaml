@@ -90,7 +90,7 @@ entries:
               - file: data/product/dea-fractional-cover-percentiles-landsat/index
                 title: DEA Fractional Cover Percentiles
           - file: data/product/dea-geometric-median-and-median-absolute-deviation-landsat/index
-            title: DEA Geomedian and Median Absolute Deviation (GeoMAD)
+            title: DEA Geomedian and Mean Absolute Deviation (GeoMAD)
           - file: data/product/dea-mangrove-canopy-cover-landsat/index
             title: DEA Mangroves
           - file: data/product/dea-tasseled-cap-percentiles-landsat/index
@@ -156,8 +156,7 @@ entries:
           - file: guides/setup/AWS/data_and_metadata
           - file: guides/setup/gis/README
             entries:
-              - file: guides/setup/gis/web_map_service
-              - file: guides/setup/gis/web_coverage_service
+              - file: guides/setup/gis/web_services
               - file: guides/setup/gis/stac
           - file: guides/setup/jupyter
 
@@ -173,32 +172,32 @@ entries:
       - caption: Appendix
         entries:
           - file: guides/about/faq
+          - file: guides/about/changelog
           - file: guides/about/publications
           - file: guides/about/glossary
-            title: DEA Glossary
 
   - file: notebooks/README
     title: DEA Notebooks
-    # subtrees:
-    #   - caption: Getting started
-    #     entries:
-    #       - file: notebooks/Beginners_guide/README # Contains its own table of contents.
-    #
-    #   - caption: Using the data products
-    #     entries:
-    #       - file: notebooks/DEA_products/README # Contains its own table of contents.
-    #       - file: notebooks/How_to_guides/README # Contains its own table of contents.
-    #       - file: notebooks/Real_world_examples/README # Contains its own table of contents.
-    #
-    #   - caption: Resources
-    #     entries:
-    #       - file: notebooks/Interactive_apps/README # Contains its own table of contents.
-    #       - file: notebooks/Tools/index # Contains its own table of contents.
+    subtrees:
+      - caption: Getting started
+        entries:
+          - file: notebooks/Beginners_guide/README # Contains its own table of contents.
 
-  - file: tags-list # Contains its own table of contents.
+      - caption: Using the data products
+        entries:
+          - file: notebooks/DEA_products/README # Contains its own table of contents.
+          - file: notebooks/How_to_guides/README # Contains its own table of contents.
+          - file: notebooks/Real_world_examples/README # Contains its own table of contents.
 
-  - file: guides/tech_alerts_changelog
-    title: DEA Tech alerts and changelog
+      - caption: Resources
+        entries:
+          - file: notebooks/Interactive_apps/README # Contains its own table of contents.
+          - file: notebooks/Tools/index # Contains its own table of contents.
+
+  - file: tags-list
+    entries:
+      - glob: tags/*
+
   - file: data/old-version/index
     entries:
       - glob: data/old-version/*/index

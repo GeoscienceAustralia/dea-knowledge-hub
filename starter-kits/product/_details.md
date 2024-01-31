@@ -1,16 +1,19 @@
 % ## Background
 
-## Purpose
+% ## What this product offers
+
+% ## Data description
 
 % ## Applications
 
-## Technical information
+% ## Technical information
 
-## Lineage
+% ## Lineage
 
 % ## Processing steps
 
 % ## Software
 
-% ## References
+## References
 
+Your references here.

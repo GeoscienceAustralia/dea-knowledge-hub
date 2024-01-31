@@ -70,7 +70,7 @@ The Analysis Ready Data (ARD) package allows you to get up and running with your
 
 The satellite data has been processed to a minimum set of requirements and organised into a form that allows immediate analysis and interoperability through time and with other datasets. It has been adapted from CEOS Analysis Ready Data ([CARD4L](http://ceos.org/ard/)).
 
-The [technical report](https://pid.geoscience.gov.au/dataset/ga/145101) containing the data summary for the Phase 1 DEA Surface Reflectance Validation is available.
+The [technical report](https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/145101) containing the data summary for the Phase 1 DEA Surface Reflectance Validation is available.
 
 ### ARD sub-products
 

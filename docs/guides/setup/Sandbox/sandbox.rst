@@ -15,10 +15,6 @@ get started with DEA and the Open Data Cube.
 
 .. _Open Data Cube: https://www.dea.ga.gov.au/about/open-data-cube
 
-.. contents:: In this guide
-   :local:
-   :backlinks: none
-
 Register
 --------
 

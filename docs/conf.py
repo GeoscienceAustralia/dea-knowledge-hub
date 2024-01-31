@@ -4,11 +4,12 @@ sys.path.append(os.path.abspath("./_ext"))
 sys.path.insert(0, os.path.abspath('.'))
 from _modules import utilities
 from _modules import mock_imports
-from _modules import deploy_banner
+from _modules import demo_banner
 
 environment = {
     "build_mode": os.environ.get("BUILD_MODE"),
     "git_branch": os.environ.get("BRANCH"),
+    "demo_name": os.environ.get("DEMO_NAME"),
     "local_enable_redirects": os.environ.get("LOCAL_ENABLE_REDIRECTS"),
     "local_enable_tags": os.environ.get("LOCAL_ENABLE_TAGS"),
 }
@@ -139,14 +140,17 @@ html_theme_options = {
     "navigation_with_keys": False,
     "search_bar_text": "Search ...",
     "show_prev_next": False,
-    "header_links_before_dropdown": 3, # The number of header menu items to display before the rest are nested inside the 'More' dropdown.
+    "header_links_before_dropdown": 3,
     "logo": {
         "link": "/"
     },
 }
 
 if environment["build_mode"] == "demo":
-    html_theme_options["announcement"] = deploy_banner.banner()
+    html_theme_options["announcement"] = demo_banner.create(
+        environment['demo_name'],
+        environment['git_branch']
+    )
 
 html_context = {
     "default_mode": "light",

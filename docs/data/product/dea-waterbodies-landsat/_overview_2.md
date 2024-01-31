@@ -1,7 +1,3 @@
-% ## Cite this product
-
-% > Your citation
-
 ## Publications
 
 Krause, Claire E., Newey, Vanessa, Alger, Matthew J., Lymburner, Leo. 2021. Mapping and Monitoring the Multi-Decadal Dynamics of Australia’s Open Waterbodies Using Landsat. Remote Sens. 13, no. 8: 1437. [https://doi.org/10.3390/rs13081437](https://doi.org/10.3390/rs13081437)

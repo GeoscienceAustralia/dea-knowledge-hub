@@ -21,5 +21,5 @@ Results from the DEA Cal/Val workflow over 17 data takes from 9 field sites were
 
 The results for each collection were averaged and then compared. The comparison showed small changes in individual field sites, but overall there was no significant difference in the average results over all field sites to within 1% at most.
 
-The technical report containing the data summary for the Phase 1 DEA Surface Reflectance Validation is available: [DEA Analysis Ready Data Phase 1 Validation Project : Data Summary](http://pid.geoscience.gov.au/dataset/ga/145101)
+The technical report containing the data summary for the Phase 1 DEA Surface Reflectance Validation is available: [DEA Analysis Ready Data Phase 1 Validation Project : Data Summary](http://pid.geoscience.gov.au/dataset/ga/14510)
 

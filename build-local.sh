@@ -6,7 +6,7 @@ sass --style=expanded /docs/_static/styles/index.scss /docs/_static/styles/style
 
 cp /docs/_robots/robots-local.txt /docs/robots.txt
 
-sphinx-build -b dirhtml -j auto -a /docs /output
+sphinx-build -b dirhtml -j auto /docs /output
 
 cd /output
-python -m http.server 8062
+python -m http.server 8011

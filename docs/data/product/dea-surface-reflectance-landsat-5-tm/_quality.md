@@ -14,5 +14,5 @@ For detailed information on quality assurance, refer to the sub-products' pages:
 * [DEA Surface Reflectance NBART (Landsat 5 TM)](/data/product/dea-surface-reflectance-nbart-landsat-5-tm)
 * [DEA Surface Reflectance OA (Landsat 5 TM)](/data/product/dea-surface-reflectance-oa-landsat-5-tm)
 
-The technical report containing the data summary for the [Phase 1 DEA Surface Reflectance Validation](https://pid.geoscience.gov.au/dataset/ga/145101) is available.
+The technical report containing the data summary for the [Phase 1 DEA Surface Reflectance Validation](https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/145101) is available.
 

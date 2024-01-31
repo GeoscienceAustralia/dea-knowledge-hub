@@ -18,4 +18,4 @@ COPY docs /docs
 COPY build-local.sh /setup
 CMD /bin/bash -c "/setup/build-local.sh"
 
-EXPOSE 8062
+EXPOSE 8011

@@ -70,11 +70,18 @@ class TagLinks(SphinxDirective):
 
         for tag in tags:
             count += 1
-            # We want the link to be the path to the _tags folder, relative to this document's path where: - self.env.app.config.tags_output_dir > subfolder > current_doc_path
+            # We want the link to be the path to the _tags folder, relative to
+            # this document's path where
+            #
+            #  - self.env.app.config.tags_output_dir
+            # |
+            #  - subfolder
+            #   |
+            #    - current_doc_path
 
             file_basename = _normalize_tag(tag)
 
-            result += nodes.reference(refuri=f"/{tags_output_dir}/{file_basename}", text=file_basename)
+            result += nodes.reference(refuri=f"/tags/{file_basename}", text=file_basename)
             tag_separator = f"{self.separator} "
 
             if not count == len(tags):
@@ -225,7 +232,7 @@ def _normalize_tag(tag: str) -> str:
     return re.sub(r"[\s\W]+", "-", tag).lower().strip("-")
 
 
-def tagpage(tags, srcdir, title, extension, tags_index_header):
+def tagpage(tags, outdir, title, extension, tags_index_header):
     """Creates Tag overview page.
 
     This page contains a list of all available tags.
@@ -238,18 +245,16 @@ def tagpage(tags, srcdir, title, extension, tags_index_header):
     content.append(f"# {title}")
     content.append("")
     content.append(tags_index_header)
+    # content.append("")
+    # content.append(":::{toctree}")
+    # content.append(":glob:")
+    # content.append("")
+    # content.append("tags/*/index")
+    # content.append(":::")
     content.append("")
-    content.append("```{toctree}")
-    content.append(":glob:")
-    content.append("")
-    content.append("tags/*/index")
-    content.append("```")
-    content.append("")
-    filename = os.path.join(srcdir, f"{tags_list_name}.md")
+    filename = os.path.join(outdir, f"{tags_list_name}.md")
 
-    with open(
-        os.path.join(srcdir, filename), "w", encoding="utf8"
-    ) as file:
+    with open(filename, "w", encoding="utf8") as file:
         file.write("\n".join(content))
 
 
@@ -302,7 +307,7 @@ def update_tags(app):
         # Create tags overview page
         tagpage(
             tags = tags,
-            srcdir = app.srcdir,
+            outdir = os.path.join(app.srcdir),
             title = app.config.tags_overview_title,
             extension = app.config.tags_extension,
             tags_index_header = app.config.tags_index_header,

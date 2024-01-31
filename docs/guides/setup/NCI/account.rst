@@ -22,12 +22,10 @@ institutional email address.
    When signing up, you must join some :ref:`nci_data_access` projects 
    to access DEA data.
 
+
+
 .. _National Computational Infrastructure: https://www.nci.org.au/
 .. _NCI Account Sign Up: https://my.nci.org.au/mancini/signup/
-
-.. contents:: In this guide
-   :local:
-   :backlinks: none
 
 Commercial access
 =================

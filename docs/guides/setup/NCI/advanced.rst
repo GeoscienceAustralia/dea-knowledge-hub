@@ -1,12 +1,9 @@
 .. highlight:: console
 
-=======================================
-Advanced Access - HPC, CLI, and THREDDS
-=======================================
+=============================
+Advanced Access - HPC and CLI
+=============================
 
-.. contents:: In this guide
-   :local:
-   :backlinks: none
 
 High Performance Computing
 ==========================
@@ -94,19 +91,3 @@ You can then launch a Jupyter notebook by running
     If you have created a ``.datacube.conf`` file in your home folder from
     early Data Cube betas, you should rename or remove it to avoid it
     conflicting with the settings loaded by the module.
-
-THREDDS
-=======
-
-The THREDDS server is the National Computational Infrastructure (NCI)'s high-performance and high-availability installation of Unidata's Thematic Real-time Environmental Distributed Data Services (THREDDS).
-
-THREDDS serves many of NCI's open data collections at the file level, as well as some aggregations. It provides many different types of services to allow individual files to be selected, as well as more advanced services such as OpenDAP, NetCDF subsetting, OGC WCS and WMS.
-
-The THREDDS server is programmatically accessible, which is how many advanced tools and portals use the service.
-
-If the data product features a THREDDS link, you can access the data in the following way:
-
-#. Open `DEA Explorer <https://explorer.dea.ga.gov.au/>`_. Select the product of interest from the menu at the top. This will give you a tile map. The data in THREDDS is indexed according to this tile map.
-#. Once you have located the tile that covers your region of interest, note the path and row numbers.
-#. Open the THREDDS link for the data product.
-#. The folders follow the sequence: product > path > row > year > month > day. Open each folder corresponding to the product, tile and date of interest.

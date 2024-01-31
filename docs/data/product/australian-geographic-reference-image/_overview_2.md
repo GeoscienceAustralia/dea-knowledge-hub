@@ -1,7 +1,3 @@
-% ## Cite this product
-
-% > Your citation
-
 ## Publications
 
 Lewis, A., Wang, L.-W., Coghlan, R. (2011). AGRI: The Australian Geographic Reference Image. Geoscience Australia Technical Report. [http://dx.doi.org/10.4225/25/5524BA4A047FE](http://dx.doi.org/10.4225/25/5524BA4A047FE)
