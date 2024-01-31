@@ -101,14 +101,11 @@
 
     {% if data.enable_overview %}
     .. tab-item:: Overview
-       :name: overview-tab
+       :name: overview
 
-       .. container:: table-of-contents
+       .. raw:: html
 
-          .. container::
-             :name: overview-table-of-contents
-
-             |nbsp|
+          <div class="tocbot-selector"></div>
 
        .. include:: _overview_1.md
           :parser: myst_parser.sphinx_
@@ -116,8 +113,9 @@
        {% if has_access_data %}
        .. rubric:: Access the data
           :name: access-the-data
+          :class: h2
 
-       For help accessing the data, see the 'Access' tab.
+       For help accessing the data, see the `Access tab <./?tab=access>`_.
 
        .. container:: card-list icons
           :name: access-the-data-cards
@@ -178,6 +176,7 @@
        {% if has_key_details %}
        .. rubric:: Key details
           :name: key-details
+          :class: h2
 
        .. list-table::
           :name: key-details-table
@@ -209,9 +208,9 @@
           {%- endif %}
        {%- endif %}
 
-       {%- if valid_tags %}
-       .. tags:: {{ valid_tags | join(", ") }}
-       {%- endif %}
+       .. {%- if valid_tags %}
+       .. .. tags:: {{ valid_tags | join(", ") }}
+       .. {%- endif %}
 
        .. include:: _overview_2.md
           :parser: myst_parser.sphinx_
@@ -219,14 +218,11 @@
 
     {% if data.enable_details %}
     .. tab-item:: Details
-       :name: details-tab
+       :name: details
 
-       .. container:: table-of-contents
+       .. raw:: html
 
-          .. container::
-             :name: details-table-of-contents
-
-             |nbsp|
+          <div class="tocbot-selector"></div>
 
        .. include:: _details.md
           :parser: myst_parser.sphinx_
@@ -234,14 +230,11 @@
 
     {% if data.enable_quality %}
     .. tab-item:: Quality
-       :name: quality-tab
+       :name: quality
 
-       .. container:: table-of-contents
+       .. raw:: html
 
-          .. container::
-             :name: quality-table-of-contents
-
-             |nbsp|
+          <div class="tocbot-selector"></div>
 
        .. include:: _quality.md
           :parser: myst_parser.sphinx_
@@ -249,17 +242,15 @@
 
     {% if data.enable_access %}
     .. tab-item:: Access
-       :name: access-tab
+       :name: access
 
-       .. container:: table-of-contents
+       .. raw:: html
 
-          .. container::
-             :name: access-table-of-contents
-
-             |nbsp|
+          <div class="tocbot-selector"></div>
 
        .. rubric:: Access the data
           :name: access-the-data-2
+          :class: h2
 
        {% if has_access_data %}
        .. list-table::
@@ -318,6 +309,7 @@
 
        .. rubric:: Additional files
           :name: additional-files
+          :class: h2
 
        .. list-table::
           :name: additional-files-table
@@ -334,23 +326,22 @@
 
     {% if data.enable_history %}
     .. tab-item:: History
-       :name: history-tab
+       :name: history
 
-       .. container:: table-of-contents
+       .. raw:: html
 
-          .. container::
-             :name: history-table-of-contents
-
-             |nbsp|
+          <div class="tocbot-selector"></div>
 
        {% if not is_latest_version %}
        .. rubric:: Other versions
           :name: other-versions
+          :class: h2
 
        You can find the history in the `latest version of the product <{{ data.latest_version_link }}>`_.
        {% else %}
        .. rubric:: Old versions
           :name: old-versions
+          :class: h2
 
        {% if valid_old_versions %}
 
@@ -359,7 +350,7 @@
        .. list-table::
 
           {% for item in valid_old_versions %}
-          * - `v{{ item.version }}: {{ item.title }} </data/old-version/{{ item.slug }}/>`_
+          * - `{{ item.version }}: {{ item.title }} </data/old-version/{{ item.slug }}/>`_
           {% endfor %}
        {% else %}
        No old versions available.
@@ -370,17 +361,26 @@
        {% endif %}
     {% endif %}
 
+    {% if data.enable_faqs %}
+    .. tab-item:: FAQs
+       :name: faqs
+
+       .. raw:: html
+
+          <div class="tocbot-selector"></div>
+
+       .. include:: _faqs.md
+          :parser: myst_parser.sphinx_
+    {% endif %}
+
     {% if data.enable_credits %}
     .. tab-item:: Credits
-       :name: credits-tab
+       :name: credits
 
-       .. container:: table-of-contents
+       .. raw:: html
 
-          .. container::
-             :name: credits-table-of-contents
+          <div class="tocbot-selector"></div>
 
-             |nbsp|
-    
        .. include:: _credits.md
           :parser: myst_parser.sphinx_
     {% endif %}

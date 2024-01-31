@@ -11,6 +11,9 @@ DEA produces data to three maturity levels:
 * **Interim**
 * **Final**
 
+.. contents:: In this guide
+   :local:
+   :backlinks: none
 
 Near Real Time (NRT)
 --------------------

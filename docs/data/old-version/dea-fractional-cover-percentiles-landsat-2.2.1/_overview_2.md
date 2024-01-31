@@ -1,3 +1,7 @@
+% ## Cite this product
+
+% > Your citation
+
 ## Publications
 
 Scarth, P., Roder, A. and Schmidt, M. (2010). Tracking grazing pressure and climate interaction - the role of Landsat fractional cover in time series analysis. *Proceedings of the 15th Australasian Remote Sensing & Photogrammetry Conference.*

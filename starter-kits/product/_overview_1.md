@@ -1,3 +1,1 @@
 ## About
-
-Your content here.
