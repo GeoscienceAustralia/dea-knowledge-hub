@@ -84,12 +84,6 @@ class TagLinks(SphinxDirective):
             result += nodes.reference(refuri=f"/tags/{file_basename}", text=file_basename)
             tag_separator = f"{self.separator} "
 
-            # if self.env.app.config.tags_create_badges:
-            #     result += self._get_badge_node(tag, file_basename, relative_tag_dir)
-            #     tag_separator = " "
-            # else:
-            #     result += self._get_plaintext_node(tag, file_basename, relative_tag_dir)
-
             if not count == len(tags):
                 result += nodes.inline(text=tag_separator)
 
@@ -258,20 +252,6 @@ def tagpage(tags, outdir, title, extension, tags_index_header):
     content.append("tags/*/index")
     content.append(":::")
     content.append("")
-    # for tag in sorted(tags, key=lambda t: t.name):
-    #     content.append(f"[{tag.name} ({len(tag.items)})](/tags/{tag.name})")
-    #     content.append("")
-
-    # toctree for this page
-    # content.append("```{toctree}")
-    # content.append("---")
-    # content.append(f"caption: {tags_index_header}")
-    # content.append("maxdepth: 1")
-    # content.append("---")
-    # for tag in sorted(tags, key=lambda t: t.name):
-    #     content.append(f"{tag.name} ({len(tag.items)}) <{tag.file_basename}>")
-    # content.append("```")
-    content.append("")
     filename = os.path.join(outdir, f"{tags_list_name}.{extension}")
 
     with open(filename, "w", encoding="utf8") as file:
@@ -366,9 +346,6 @@ def setup(app):
     )
 
     # Update tags
-    # TODO: tags should be updated after sphinx-gallery is generated, and the
-    # gallery is also connected to builder-inited. Are there situations when
-    # this will not work?
     app.connect("builder-inited", update_tags)
     app.add_directive("tags", TagLinks)
 
