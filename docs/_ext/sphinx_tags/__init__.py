@@ -17,6 +17,8 @@ from sphinx.util.rst import textwidth
 
 __version__ = "0.3.1"
 
+tags_list_name = "tags-list"
+
 logger = logging.getLogger("sphinx-tags")
 
 class TagLinks(SphinxDirective):
@@ -241,7 +243,6 @@ def tagpage(tags, outdir, title, extension, tags_index_header):
 
     This page contains a list of all available tags.
     """
-    name = "tags-list"
     tags = list(tags.values())
 
     content = []
@@ -271,7 +272,7 @@ def tagpage(tags, outdir, title, extension, tags_index_header):
     #     content.append(f"{tag.name} ({len(tag.items)}) <{tag.file_basename}>")
     # content.append("```")
     content.append("")
-    filename = os.path.join(outdir, f"{name}.{extension}")
+    filename = os.path.join(outdir, f"{tags_list_name}.{extension}")
 
     with open(filename, "w", encoding="utf8") as file:
         file.write("\n".join(content))
@@ -331,6 +332,7 @@ def update_tags(app):
             extension = app.config.tags_extension,
             tags_index_header = app.config.tags_index_header,
         )
+        logger.info(f"Created tags index: {tags_list_name}")
     else:
         logger.info(
             "Tags were not created (tags_create_tags=False in conf.py)", color="white"
