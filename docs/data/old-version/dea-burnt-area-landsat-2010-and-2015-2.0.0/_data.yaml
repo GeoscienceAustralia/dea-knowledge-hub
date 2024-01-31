@@ -24,9 +24,7 @@ collection:
   link: null
 doi: null
 ecat: null
-nci:
-  name: null
-  code: null
+nci: null
 
 tags:
   - bushfire
