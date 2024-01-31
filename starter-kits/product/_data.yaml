@@ -10,7 +10,8 @@ time_span:
   start: null
   end: null
 update_frequency: null
-product_ids: null # List
+# product_ids:
+#   - product_id_1
 
 is_latest_version: true
 latest_version_link: null
@@ -28,51 +29,51 @@ nci:
   name: null
   code: null
 
-tags: null # List
+# tags:
+#   - geoscience_australia_landsat_collection_3
 
 # Access
 
-maps: null
+# maps:
+#   - link: https://example.com
+#     name: See it on a map
 
-  # - link: https://example.com
-  #   name: null
+# explorers:
+#   - link: https://example.com
+#     name: Data explorer
 
-explorers: null
+# data:
+#   - link: https://example.com
+#     name: Access the data on AWS
+#   - link: https://example.com
+#     name: Access the data on NCI
 
-  # - link: https://example.com
-  #   name: null
+# code_examples:
+#   - link: https://example.com
+#     name: Code examples
+#   - link: https://example.com
+#     name: Github repository
 
-data: null
+# web_services:
+#   - link: https://example.com
+#     name: Web Map Service (WMS)
+#   - link: https://example.com
+#     name: Web Feature Service (WFS)
 
-  # - link: https://example.com
-  #   name: null
-
-code_examples: null
-
-  # - link: https://example.com
-  #   name: null
-
-web_services: null
-
-  # - link: https://example.com
-  #   name: null
-
-custom: null
-
-  # - icon: ghost
-  #   link: https://example.com
-  #   label: null
-  #   name: Lorem ipsum
-  #   description: null
-  #   class: null
+# custom:
+#   - icon: globe
+#     link: https://example.com
+#     label: Get via API
+#     name: Access the API
+#     description: Learn how to `use the API <https://satpathapi.dea.ga.gov.au/user-guide>`_
+#     class: null
 
 # History
 
-old_versions: null
-
-  # - version: 0.0.0
-  #   title: Lorem ipsum
-  #   slug: example-page
+# old_versions:
+#   - version: 0.0.0
+#     title: Lorem ipsum
+#     slug: example-page
 
 # Settings
 
@@ -81,4 +82,5 @@ enable_access: true
 enable_details: true
 enable_quality: true
 enable_history: true
+enable_faqs: false
 enable_credits: true

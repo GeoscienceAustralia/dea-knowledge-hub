@@ -1,7 +1,7 @@
 title: Data Products
 description: Find metadata on our data products.
 
-themes:
+pages:
   - name: Baseline satellite data
     link: /data/theme/baseline-satellite-data/
     image: /_files/themes/baseline-satellite-data.*

@@ -1,21 +1,34 @@
 [build]
+
 command = "./build-demo.sh"
 publish = "output"
 
 [build.environment]
+
 BUILD_MODE = "demo"
-LOCAL_ENABLE_TAGS = "No"
+
+[context.production]
+
+ignore = "exit 0" # Never build
+
+[context.deploy-preview.environment]
+
+DEPLOY_NAME = "Pull Request"
 
 [context.demo1.environment]
-DEMO_NAME = "Demo 1"
+
+DEPLOY_NAME = "Demo 1"
 
 [context.demo2.environment]
-DEMO_NAME = "Demo 2"
+
+DEPLOY_NAME = "Demo 2"
 
 [context.demo3.environment]
-DEMO_NAME = "Demo 3"
+
+DEPLOY_NAME = "Demo 3"
 
 [[redirects]]
+
 from = "/*"
 to = "/404-not-found/"
 status = 404

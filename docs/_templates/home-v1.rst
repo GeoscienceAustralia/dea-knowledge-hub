@@ -16,7 +16,7 @@
    .. grid:: 2 2 3 5
       :gutter: 3
 
-      {% for item in data.data_product_themes %}
+      {% for item in data.product_themes %}
       .. grid-item-card:: :fas:`{{ item.icon }}`
          :link: {{ item.link }}
 
@@ -52,6 +52,21 @@
    .. container::
 
       .. image:: /_files/cmi/Kakadu-Mary_TCW-percentiles-wide_1.jpg
+
+.. container:: showcase-panel bg-gradient-stone
+   :name: changelog
+
+   .. container::
+
+      .. rubric:: DEA Tech alerts and changelog
+
+      Find out about the latest changes to DEA's products and services, as well as planned and unplanned outages.
+
+      `Visit the tech alerts and changelog </guides/tech_alerts_changelog/>`_
+
+   .. container::
+
+      .. image:: /_files/reference/Reporting_dashboard.png
 
 .. container:: showcase-panel
    :name: about-dea
