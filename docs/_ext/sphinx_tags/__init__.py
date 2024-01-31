@@ -222,13 +222,11 @@ class Tag:
                 content.append("")
 
         content.append("")
-        output = "\n".join(content)
 
-        logger.info(f"Creating tag: {filename}")
         with open(
             os.path.join(srcdir, tags_output_dir, filename), "w", encoding="utf8"
         ) as file:
-            file.write(output) # Write tag page
+            file.write("\n".join(content))
 
 
 class Entry:
@@ -264,7 +262,7 @@ def tagpage(tags, outdir, title, extension, tags_index_header):
 
     This page contains a list of all available tags.
     """
-
+    tagpage_name = "tags-list"
     tags = list(tags.values())
 
     if "md" in extension:
@@ -294,7 +292,7 @@ def tagpage(tags, outdir, title, extension, tags_index_header):
         #     content.append(f"{tag.name} ({len(tag.items)}) <{tag.file_basename}>")
         # content.append("```")
         content.append("")
-        filename = os.path.join(outdir, "tags-list.md")
+        filename = os.path.join(outdir, f"{tagpage_name}.{extension}")
     else:
         content = []
         content.append(":orphan:")
@@ -318,12 +316,10 @@ def tagpage(tags, outdir, title, extension, tags_index_header):
         # for tag in sorted(tags, key=lambda t: t.name):
         #     content.append(f"`{tag.name} ({len(tag.items)}) </tags/{tag.name}>`_")
         content.append("")
-        filename = os.path.join(outdir, "tags-list.rst")
-        output = "\n".join(content)
+        filename = os.path.join(outdir, f"{tagpage_name}.{extension}")
 
-    logger.info(f"Creating tags list: {filename}")
     with open(filename, "w", encoding="utf8") as file:
-        file.write(output) # Write tags-list.md or tags-list.rst
+        file.write("\n".join(content))
 
 
 def assign_entries(app):
@@ -357,6 +353,7 @@ def update_tags(app):
         # Create pages for each tag
         tags, pages = assign_entries(app)
 
+        tags_created_list = []
         for tag in tags.values():
             tag.create_file(
                 items = [item for item in pages if tag.name in item.tags],
@@ -366,6 +363,10 @@ def update_tags(app):
                 tags_page_title = app.config.tags_page_title,
                 tags_page_header = app.config.tags_page_header,
             )
+            tags_created_list.append(tag.file_basename)
+
+        tags_created_list_joined = ', '.join(tags_created_list)
+        logger.info(f"Created tags: {tags_created_list_joined}")
 
         # Create tags overview page
         tagpage(
@@ -375,7 +376,6 @@ def update_tags(app):
             extension = app.config.tags_extension,
             tags_index_header = app.config.tags_index_header,
         )
-        logger.info("Tags updated", color="white")
     else:
         logger.info(
             "Tags were not created (tags_create_tags=False in conf.py)", color="white"
