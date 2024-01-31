@@ -223,10 +223,12 @@ class Tag:
                 content.append("")
 
         content.append("")
+        output = "\n".join(content)
+
         with open(
             os.path.join(srcdir, tags_output_dir, filename), "w", encoding="utf8"
-        ) as f:
-            f.write("\n".join(content))
+        ) as file:
+            file.write(output) # Write tag page
 
 
 class Entry:
@@ -261,7 +263,6 @@ def tagpage(tags, outdir, title, extension, tags_index_header):
     """Creates Tag overview page.
 
     This page contains a list of all available tags.
-
     """
 
     tags = list(tags.values())
@@ -318,9 +319,10 @@ def tagpage(tags, outdir, title, extension, tags_index_header):
         #     content.append(f"`{tag.name} ({len(tag.items)}) </tags/{tag.name}>`_")
         content.append("")
         filename = os.path.join(outdir, "tags-list.rst")
+        output = "\n".join(content)
 
-    with open(filename, "w", encoding="utf8") as f:
-        f.write("\n".join(content))
+    with open(filename, "w", encoding="utf8") as file:
+        file.write(output) # Write tags-list.md or tags-list.rst
 
 
 def assign_entries(app):
@@ -356,21 +358,21 @@ def update_tags(app):
 
         for tag in tags.values():
             tag.create_file(
-                [item for item in pages if tag.name in item.tags],
-                app.config.tags_extension,
+                items = [item for item in pages if tag.name in item.tags],
+                extension = app.config.tags_extension,
                 tags_output_dir,
-                app.srcdir,
-                app.config.tags_page_title,
-                app.config.tags_page_header,
+                srcdir = app.srcdir,
+                tags_page_title = app.config.tags_page_title,
+                tags_page_header = app.config.tags_page_header,
             )
 
         # Create tags overview page
         tagpage(
             tags,
-            os.path.join(app.srcdir),
-            app.config.tags_overview_title,
-            app.config.tags_extension,
-            app.config.tags_index_header,
+            outdir = os.path.join(app.srcdir),
+            title = app.config.tags_overview_title,
+            extension = app.config.tags_extension,
+            tags_index_header = app.config.tags_index_header,
         )
         logger.info("Tags updated", color="white")
     else:
