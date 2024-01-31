@@ -186,40 +186,19 @@ class Tag:
         ref_label = f"tag-page"
 
         content = []
-        if "md" in extension:
-            filename = f"{self.file_basename}.md"
-            content.append(f"({ref_label})=")
-            content.append(f"# {self.name}")
-            content.append("")
-            content.append(f"{tags_page_header} &lsquo;{self.name}&rsquo;.")
-            content.append("")
-            content.append('<a href="/tags-list/"><i class="fa-solid fa-chevron-left tag-page-list"></i> View all tags</a>')
-            content.append("")
+        filename = f"{self.file_basename}.md"
+        content.append(f"({ref_label})=")
+        content.append(f"# {self.name}")
+        content.append("")
+        content.append(f"{tags_page_header} &lsquo;{self.name}&rsquo;.")
+        content.append("")
+        content.append('<a href="/tags-list/"><i class="fa-solid fa-chevron-left tag-page-list"></i> View all tags</a>')
+        content.append("")
 
-            for path in tag_page_paths:
-                formatted_path = "/" + re.sub(r'index\/$', "", re.sub(r'\.[a-zA-Z0-9]+$', "", path))
-                content.append(f"* {{doc}}`{formatted_path}`")
-                content.append("")
-
-        else:
-            filename = f"{self.file_basename}.rst"
-            header = self.name
-            content.append(f".. _{ref_label}:")
+        for path in tag_page_paths:
+            formatted_path = "/" + re.sub(r'index\/$', "", re.sub(r'\.[a-zA-Z0-9]+$', "", path))
+            content.append(f"* {{doc}}`{formatted_path}`")
             content.append("")
-            content.append(header)
-            content.append("#" * textwidth(header))
-            content.append("")
-            content.append(f"{tags_page_header} &lsquo;{self.name}&rsquo;.")
-            content.append("")
-            content.append(".. raw:: html")
-            content.append("   ")
-            content.append('   <p><a href="/tags-list/"><i class="fa-solid fa-angle-left view-all-tags-link"></i> View all tags</a></p>')
-            content.append("")
-
-            for path in tag_page_paths:
-                formatted_path = "/" + re.sub(r'index\/$', "", re.sub(r'\.[a-zA-Z0-9]+$', "", path))
-                content.append(f"* :doc:`{formatted_path}`")
-                content.append("")
 
         content.append("")
 
@@ -265,58 +244,34 @@ def tagpage(tags, outdir, title, extension, tags_index_header):
     name = "tags-list"
     tags = list(tags.values())
 
-    if "md" in extension:
-        content = []
-        content.append("(tags-list-page)=")
-        content.append("")
-        content.append(f"# {title}")
-        content.append("")
-        content.append(tags_index_header)
-        content.append("")
-        content.append("```{toctree}")
-        content.append(":glob:")
-        content.append("tags/*")
-        content.append("```")
-        content.append("")
-        # for tag in sorted(tags, key=lambda t: t.name):
-        #     content.append(f"[{tag.name} ({len(tag.items)})](/tags/{tag.name})")
-        #     content.append("")
+    content = []
+    content.append("(tags-list-page)=")
+    content.append("")
+    content.append(f"# {title}")
+    content.append("")
+    content.append(tags_index_header)
+    content.append("")
+    content.append(":::{toctree}")
+    content.append(":glob:")
+    content.append("")
+    content.append("tags/*/index")
+    content.append(":::")
+    content.append("")
+    # for tag in sorted(tags, key=lambda t: t.name):
+    #     content.append(f"[{tag.name} ({len(tag.items)})](/tags/{tag.name})")
+    #     content.append("")
 
-        # toctree for this page
-        # content.append("```{toctree}")
-        # content.append("---")
-        # content.append(f"caption: {tags_index_header}")
-        # content.append("maxdepth: 1")
-        # content.append("---")
-        # for tag in sorted(tags, key=lambda t: t.name):
-        #     content.append(f"{tag.name} ({len(tag.items)}) <{tag.file_basename}>")
-        # content.append("```")
-        content.append("")
-        filename = os.path.join(outdir, f"{name}.{extension}")
-    else:
-        content = []
-        content.append(":orphan:")
-        content.append("")
-        content.append(".. _tagoverview:")
-        content.append("")
-        content.append(title)
-        content.append("#" * textwidth(title))
-        content.append("")
-        content.append(".. toctree::")
-        content.append("   :glob:")
-        content.append("")
-        content.append("   tags/*")
-        content.append("")
-        content.append("")
-        # # toctree for the page
-        # content.append(".. toctree::")
-        # content.append(f"    :caption: {tags_index_header}")
-        # content.append("    :maxdepth: 1")
-        content.append("")
-        # for tag in sorted(tags, key=lambda t: t.name):
-        #     content.append(f"`{tag.name} ({len(tag.items)}) </tags/{tag.name}>`_")
-        content.append("")
-        filename = os.path.join(outdir, f"{name}.{extension}")
+    # toctree for this page
+    # content.append("```{toctree}")
+    # content.append("---")
+    # content.append(f"caption: {tags_index_header}")
+    # content.append("maxdepth: 1")
+    # content.append("---")
+    # for tag in sorted(tags, key=lambda t: t.name):
+    #     content.append(f"{tag.name} ({len(tag.items)}) <{tag.file_basename}>")
+    # content.append("```")
+    content.append("")
+    filename = os.path.join(outdir, f"{name}.{extension}")
 
     with open(filename, "w", encoding="utf8") as file:
         file.write("\n".join(content))
