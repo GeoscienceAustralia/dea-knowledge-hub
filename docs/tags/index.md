@@ -1,4 +1,0 @@
-# Tags
-
-:::{tableofcontents}
-:::
