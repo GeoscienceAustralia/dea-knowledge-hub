@@ -4,4 +4,4 @@
 
 Sentinel 2 contiguity reprocessed scenes.
 
-[Link to report]()
+[Link to report](/_files/something/text.txt)
