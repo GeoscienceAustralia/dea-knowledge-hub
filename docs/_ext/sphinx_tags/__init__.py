@@ -169,16 +169,13 @@ class Tag:
         """
         # Get sorted file paths for tag pages, relative to /docs/_tags
         tag_page_paths = sorted([i.relpath(srcdir) for i in items])
-        ref_label = f"tag-page"
 
         content = []
         filename = f"{self.file_basename}.md"
-        content.append(f"({ref_label})=")
+        content.append(f"(tags-page)=")
         content.append(f"# {self.name}")
         content.append("")
-        content.append(f"Here are all the pages are tagged with &lsquo;{self.name}&rsquo;.")
-        content.append("")
-        content.append('<a href="/tags/"><i class="fa-solid fa-chevron-left"></i> View all tags</a>')
+        content.append(f'<p class="tags-page--introduction">Here are all the pages tagged with &lsquo;{self.name}&rsquo;. Go back to <a href="/tags/">view all tags</a>.</p>')
         content.append("")
 
         for path in tag_page_paths:
