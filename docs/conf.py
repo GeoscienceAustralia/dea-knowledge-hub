@@ -115,10 +115,6 @@ tags_create_tags = (
     environment["build_mode"] in ["demo", "production"]
     or environment["local_enable_tags"] == "Yes"
 )
-tags_overview_title = "All tags"
-tags_page_header = "The following pages are tagged with"
-tags_index_header = "Here is a list of all tags that are used on the site."
-tags_extension = ["md", "rst"]
 
 html_css_files = [
     'styles/styles.css'
