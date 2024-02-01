@@ -50,7 +50,7 @@ Annual shorelines include the following attribute fields:
   - The name of the annual shoreline's Primary sediment compartment from the [Australian Coastal Sediment Compartments](https://ecat.ga.gov.au/geonetwork/srv/api/records/21a23d9a-00dd-ab19-e053-10a3070a2746) framework.
 :::
 
-To understand the `certainty` field, see the 'Quality' tab.
+To understand the `certainty` field, see the [Quality tab](./?tab=quality).
 
 :::{figure} /_files/cmi/deacl_coastlines.*
 :alt: DEA CoastLines coastline layer

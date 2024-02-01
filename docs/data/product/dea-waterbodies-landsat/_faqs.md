@@ -125,7 +125,7 @@ By design, we have excluded locations where water is seen only during extreme fl
 :::{dropdown} How do I download the data?
 Individual waterbody time series can be downloaded within [National Map](https://nationalmap.gov.au/) and [DEA Maps](http://maps.dea.ga.gov.au/). Instructions on how to download individual time series can be found in the User Guide.
 
-The underlying polygon dataset containing the map of over 300,000 waterbodies across Australia can be downloaded from the 'Access' tab.
+The underlying polygon dataset containing the map of over 300,000 waterbodies across Australia can be downloaded from the [Access tab](./?tab=access).
 :::
 
 :::{dropdown} Can I load DEA Waterbodies into my GIS software?
