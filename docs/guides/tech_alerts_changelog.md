@@ -19,6 +19,12 @@ See the [DEA monitoring dashboard](https://monitoring.dea.ga.gov.au/).
 See [alert dated 2024-01-10](./#20240110) for more details.
 :::
 
+## 2024-02-01: Sentinel v2.0.0 release
+
+See the [Sentinel 2A](/data/product/dea-surface-reflectance-nbart-sentinel-2a-msi/) and [Sentinel 2B](/data/product/dea-surface-reflectance-nbart-sentinel-2b-msi/) pages.
+
+This change updated the .........
+
 ## 2024-01-24: Water Observations and Fractional Cover Percentiles 2023 annual summaries released
 
 See [DEA Water Observations Statistics (Landsat)](/data/product/dea-water-observations-statistics-landsat/?tab=history) 
