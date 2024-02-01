@@ -178,7 +178,7 @@ class Tag:
         content.append("")
         content.append(f"{tags_page_header} &lsquo;{self.name}&rsquo;.")
         content.append("")
-        content.append('<a href="/tags/"><i class="fa-solid fa-chevron-left tag-page-list"></i> View all tags</a>')
+        content.append('<a href="/tags/"><i class="fa-solid fa-chevron-left"></i> View all tags</a>')
         content.append("")
 
         for path in tag_page_paths:
