@@ -25,9 +25,7 @@ collection:
   link: null
 doi: null
 ecat: "83868"
-nci:
-  name: null
-  code: null
+nci: null
 
 tags:
   - drought

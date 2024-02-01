@@ -28,9 +28,7 @@ collection:
   link: null
 doi: null
 ecat: "146091"
-nci:
-  name: null
-  code: null
+nci: null
 
 tags:
   - geoscience_australia_landsat_collection_3

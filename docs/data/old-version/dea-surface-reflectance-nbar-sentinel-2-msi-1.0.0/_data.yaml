@@ -24,9 +24,7 @@ collection:
   link: null
 doi: null
 ecat: "129677"
-nci:
-  name: null
-  code: null
+nci: null
 
 tags:
   - geoscience_australia_sentinel_2_collection_1

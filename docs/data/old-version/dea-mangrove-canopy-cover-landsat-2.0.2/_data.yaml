@@ -24,9 +24,7 @@ collection:
   link: null
 doi: null
 ecat: "135270"
-nci:
-  name: null
-  code: null
+nci: null
 
 tags:
   - geoscience_australia_landsat_collection_2_deprecated
