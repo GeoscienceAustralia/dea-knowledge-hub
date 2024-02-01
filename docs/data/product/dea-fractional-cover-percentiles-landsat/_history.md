@@ -4,4 +4,4 @@
 
 Product id: `ga_ls_fc_pc_cyear_3`
 
-To access the updated product, see the [Access tab.](./?tab=access)
+To access the updated product, see the [Access tab](./?tab=access).
