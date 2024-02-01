@@ -25,7 +25,6 @@ class TagLinks(SphinxDirective):
     Loosely based on https://stackoverflow.com/questions/18146107/how-to-add-blog-style-tags-in-restructuredtext-with-sphinx
 
     See also https://docutils.sourceforge.io/docs/howto/rst-directives.html
-
     """
 
     # Class attributes
@@ -68,14 +67,7 @@ class TagLinks(SphinxDirective):
 
         for tag in tags:
             count += 1
-            # We want the link to be the path to the _tags folder, relative to
-            # this document's path where
-            #
-            #  - self.env.app.config.tags_output_dir
-            # |
-            #  - subfolder
-            #   |
-            #    - current_doc_path
+            # We want the link to be the path to the _tags folder, relative to this document's path where - self.env.app.config.tags_output_dir > subfolder > current_doc_path
 
             file_basename = _normalize_tag(tag)
 
