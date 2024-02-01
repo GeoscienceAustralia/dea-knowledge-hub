@@ -236,8 +236,8 @@ def tagpage(tags, srcdir, tags_output_dir, title, extension, tags_index_header):
     content.append("")
     content.append("Here are all the tags used on the site.")
     content.append("")
-    content.append(":::{tableofcontents}")
-    content.append(":::")
+    content.append("```{tableofcontents}")
+    content.append("```")
     content.append("")
 
     with open(
