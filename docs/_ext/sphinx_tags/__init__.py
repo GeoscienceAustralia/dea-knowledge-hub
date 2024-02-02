@@ -175,7 +175,7 @@ class Tag:
         content.append(f"(tags-page)=")
         content.append(f"# {self.name}")
         content.append("")
-        content.append(f'<p class="tags-page--introduction">Here are all the pages tagged with &lsquo;{self.name}&rsquo;. Go back to <a href="/tags/">view all tags</a>.</p>')
+        content.append(f'<p class="tags-page--introduction">Here are all the pages tagged with &lsquo;{self.name}&rsquo;.')
         content.append("")
 
         for path in tag_page_paths:
@@ -233,8 +233,8 @@ def tagpage(tags, srcdir, tags_output_dir, title, extension, tags_index_header):
     content.append("")
     content.append("Here are all the tags used on the site.")
     content.append("")
-    content.append("```{tableofcontents}")
-    content.append("```")
+    content.append(":::{tableofcontents}")
+    content.append(":::")
     content.append("")
 
     with open(

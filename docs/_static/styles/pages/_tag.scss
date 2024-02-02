@@ -1,6 +1,6 @@
 #tags-page {}
 
-.tags-page--introduction {
+.tags-page--introduction + ul {
     & + ul {
         padding-top: 1.15rem;
         padding-left: 0;
