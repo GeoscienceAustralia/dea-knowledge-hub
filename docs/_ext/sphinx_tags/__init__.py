@@ -275,6 +275,7 @@ def update_tags(app):
         tags, pages = assign_entries(app)
 
         tags_created_list = []
+
         for tag in tags.values():
             tag.create_file(
                 items = [item for item in pages if tag.name in item.tags],
@@ -286,19 +287,23 @@ def update_tags(app):
             )
             tags_created_list.append(tag.file_basename)
 
-        tags_created_list_joined = ', '.join(tags_created_list)
-        logger.info(f"Created tags: {tags_created_list_joined}")
+        has_tags = len(tags_created_list) > 0
+
+        if has_tags:
+            tags_created_list_joined = ', '.join(tags_created_list)
+            logger.info(f"Created tags: {tags_created_list_joined}")
 
         # Create tags overview page
-        tagpage(
-            tags = tags,
-            srcdir = app.srcdir,
-            tags_output_dir = Path(app.config.tags_output_dir),
-            title = app.config.tags_overview_title,
-            extension = app.config.tags_extension,
-            tags_index_header = app.config.tags_index_header,
-        )
-        logger.info(f"Created tags index")
+        if has_tags:
+            tagpage(
+                tags = tags,
+                srcdir = app.srcdir,
+                tags_output_dir = Path(app.config.tags_output_dir),
+                title = app.config.tags_overview_title,
+                extension = app.config.tags_extension,
+                tags_index_header = app.config.tags_index_header,
+            )
+            logger.info(f"Created tags index")
     else:
         logger.info(
             "Tags were not created (tags_create_tags=False in conf.py)", color="white"
