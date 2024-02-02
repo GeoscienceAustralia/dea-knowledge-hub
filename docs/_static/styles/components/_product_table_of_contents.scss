@@ -4,12 +4,10 @@
     }
 
     a {
-        text-decoration-style: dashed;
         color: var(--pst-color-text-base);
         margin-right: 1rem;
 
         &:hover {
-            text-decoration-style: solid;
             color: var(--pst-color-link);
         }
     }
