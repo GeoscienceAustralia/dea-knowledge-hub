@@ -387,5 +387,4 @@
 
 .. raw:: html
 
-   <script type="text/javascript" src="/_static/scripts/product-tab-table-of-contents.js" /></script>
    <script type="text/javascript" src="/_static/scripts/access-cards-tooltips.js" /></script>

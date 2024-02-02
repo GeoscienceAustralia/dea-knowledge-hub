@@ -4,7 +4,7 @@
 document.addEventListener("DOMContentLoaded", function (event) {
     // Convert the '.rubric.h2' elements to H2 headings.
 
-    (function() {
+    (function () {
         let h2Rubrics = document.querySelectorAll("p.rubric.h2");
 
         for (let i = 0; i < h2Rubrics.length; i++) {
@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
     // Add the section ID to the heading's 'data-anchor-id' property.
 
-    (function() {
+    (function () {
         let sections = document.querySelectorAll("section[id]");
 
         for (let i = 0; i < sections.length; i++) {
@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
     // Add heading's own ID to the heading's 'data-anchor-id' property.
 
-    (function() {
+    (function () {
         let headings = document.querySelectorAll("h2, h3");
 
         for (var i = 0; i < headings.length; i++) {
@@ -50,14 +50,18 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
     // Add the custom ID element above the heading to the heading's 'data-anchor-id' property
 
-    (function() {
+    (function () {
         let headings = document.querySelectorAll("h2, h3");
 
         for (var i = 0; i < headings.length; i++) {
             let heading = headings[i];
             let maybeCustomIdElement = heading.previousSibling;
 
-            if (maybeCustomIdElement && maybeCustomIdElement.nodeName === "SPAN" && maybeCustomIdElement.hasAttribute("id")) {
+            if (
+                maybeCustomIdElement &&
+                maybeCustomIdElement.nodeName === "SPAN" &&
+                maybeCustomIdElement.hasAttribute("id")
+            ) {
                 let conflictingIdPattern = /id\d+/g;
                 let customId = maybeCustomIdElement.id;
 
@@ -72,29 +76,37 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
     // Clicking on a heading will add its anchor ID to the URL. E.g. /example/#introduction
 
-    (function() {
-        let headings = document.querySelectorAll("h2[data-anchor-id], h3[data-anchor-id]");
+    (function () {
+        let headings = document.querySelectorAll(
+            "h2[data-anchor-id], h3[data-anchor-id]"
+        );
 
         for (var i = 0; i < headings.length; i++) {
             let heading = headings[i];
             let anchorId = heading.dataset.anchorId;
 
-            heading.addEventListener("click", function() {
+            heading.addEventListener("click", function () {
                 console.log(anchorId);
-                window.location.hash = `#${anchorId}`
+                window.location.hash = `#${anchorId}`;
             });
         }
     })();
 
     // Clicking on a product tab will add its tab ID to the URL. E.g. /example/?tab=overview
 
-    (function() {
+    (function () {
         let tabs = document.querySelectorAll(".product-page .sd-tab-label");
-        let tabUrlParam = new URLSearchParams(window.location.search).get("tab");
+        let tabUrlParam = new URLSearchParams(window.location.search).get(
+            "tab"
+        );
         let overviewTabId = tabs[0].id;
 
-        if(!tabUrlParam) {
-            window.history.pushState("", "", `?tab=${overviewTabId}${window.location.hash}`);
+        if (!tabUrlParam) {
+            window.history.pushState(
+                "",
+                "",
+                `?tab=${overviewTabId}${window.location.hash}`
+            );
         } else {
             document.querySelector(`.sd-tab-set > #${tabUrlParam}`).click();
         }
@@ -104,11 +116,40 @@ document.addEventListener("DOMContentLoaded", function (event) {
             let tabId = tab.id;
 
             if (tabId) {
-                tab.addEventListener("click", function() {
+                tab.addEventListener("click", function () {
                     window.history.pushState("", "", `?tab=${tabId}`);
                 });
             }
         }
     })();
-});
 
+    // On the product pages, adds a table of contents within each tab.
+
+    (function () {
+        if (document.querySelector(".product-page")) {
+            let tabs = document.querySelectorAll(".product-page .sd-tab-label");
+
+            for (let i = 0; i < tabs.length; i++) {
+                let tab = tabs[i];
+                let tabId = tab.id;
+
+                let headings = document.querySelectorAll(
+                    `#${tabId} + .sd-tab-content h2[data-anchor-id]`
+                );
+                let toc = document.querySelector(
+                    `#${tabId} + .sd-tab-content .product-tab-table-of-contents`
+                );
+
+                for (let i = 0; i < headings.length; i++) {
+                    let heading = headings[i];
+                    let linkElement = document.createElement("a");
+                    linkElement.href = `#${heading.dataset.anchorId}`;
+                    linkElement.textContent =
+                        heading.textContent || heading.innerText;
+
+                    toc.appendChild(linkElement);
+                }
+            }
+        }
+    })();
+});
