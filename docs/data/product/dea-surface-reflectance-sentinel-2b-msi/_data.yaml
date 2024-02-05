@@ -25,9 +25,7 @@ collection:
   link: null
 doi: 10.26186/146551
 ecat: "146551"
-nci:
-  name: ga_s2bm_ard_3
-  code: ka08
+nci: ka08
 
 tags:
   - geoscience_australia_sentinel_2_collection_3

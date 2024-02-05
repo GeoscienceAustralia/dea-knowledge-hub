@@ -4,4 +4,4 @@
 
 Product id: `ga_ls_wo_fq_cyear_3`
 
-To access the updated product, see the [access tab.](/data/product/dea-water-observations-statistics-landsat/?tab=access)
+To access the updated product, see the [Access tab](./?tab=access).

@@ -9,7 +9,7 @@ The accuracy of DEA Coastlines is lower in complex and dynamic coastal environme
 
 Cloud cover can also reduce the accuracy of the product by reducing the availability of clear satellite imagery. The data can also be limited over remote islands or reefs due to a lack of historical satellite information.
 
-For detailed information about the accuracy and limitations of DEA Coastlines, refer to the 'Quality' tab.
+For detailed information about the accuracy and limitations of DEA Coastlines, refer to the [Quality tab](./?tab=quality).
 :::
 
 :::{dropdown} DEA Coastlines 2021 dataset incorporates Landsat 9 data and uses a new tidal model. How might this affect my pre-2020 modelling?
