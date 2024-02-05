@@ -95,30 +95,32 @@ document.addEventListener("DOMContentLoaded", function (event) {
     // Clicking on a product tab will add its tab ID to the URL. E.g. /example/?tab=overview
 
     (function () {
-        let tabs = document.querySelectorAll(".product-page .sd-tab-label");
-        let tabUrlParam = new URLSearchParams(window.location.search).get(
-            "tab"
-        );
-        let overviewTabId = tabs[0].id;
-
-        if (!tabUrlParam) {
-            window.history.pushState(
-                "",
-                "",
-                `?tab=${overviewTabId}${window.location.hash}`
+        if (document.querySelector(".product-page")) {
+            let tabs = document.querySelectorAll(".product-page .sd-tab-label");
+            let tabUrlParam = new URLSearchParams(window.location.search).get(
+                "tab"
             );
-        } else {
-            document.querySelector(`.sd-tab-set > #${tabUrlParam}`).click();
-        }
+            let overviewTabId = tabs[0].id;
 
-        for (let i = 0; i < tabs.length; i++) {
-            let tab = tabs[i];
-            let tabId = tab.id;
+            if (!tabUrlParam) {
+                window.history.pushState(
+                    "",
+                    "",
+                    `?tab=${overviewTabId}${window.location.hash}`
+                );
+            } else {
+                document.querySelector(`.sd-tab-set > #${tabUrlParam}`).click();
+            }
 
-            if (tabId) {
-                tab.addEventListener("click", function () {
-                    window.history.pushState("", "", `?tab=${tabId}`);
-                });
+            for (let i = 0; i < tabs.length; i++) {
+                let tab = tabs[i];
+                let tabId = tab.id;
+
+                if (tabId) {
+                    tab.addEventListener("click", function () {
+                        window.history.pushState("", "", `?tab=${tabId}`);
+                    });
+                }
             }
         }
     })();
@@ -160,7 +162,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
         for (let i = 0; i < links.length; i++) {
             let link = links[i];
             let url = new URL(link.href);
-            console.log(url);
             let isSameHost = url.host === location.host;
             let isSamePath = url.pathname === location.pathname;
             let hasAnchor = url.hash.length > 0;
