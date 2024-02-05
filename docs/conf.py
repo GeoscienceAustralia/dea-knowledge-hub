@@ -40,6 +40,7 @@ exclude_patterns = [
 exclude_patterns += utilities.optional_exclude_pattern("LOCAL_ENABLE_USER_GUIDES", "guides")
 exclude_patterns += utilities.optional_exclude_pattern("LOCAL_ENABLE_DATA_PRODUCTS", "data")
 exclude_patterns += utilities.optional_exclude_pattern("LOCAL_ENABLE_NOTEBOOKS", "notebooks")
+exclude_patterns += utilities.optional_exclude_pattern("LOCAL_ENABLE_TAGS", "tags")
 
 html_title = "DEA Knowledge Hub"
 html_logo = "_files/logos/ga-dea-combined-logo.svg"
@@ -111,13 +112,9 @@ notfound_pagename = "404-not-found"
 notfound_urls_prefix = ""
 
 tags_create_tags = (
-    environment["build_mode"] == "production" # Not `in ["demo", "production"]` because Netlify only supports Python 3.8 and therefore, this extension is unreliable.
+    environment["build_mode"] in ["demo", "production"]
     or environment["local_enable_tags"] == "Yes"
 )
-tags_overview_title = "All tags"
-tags_page_header = "The following pages are tagged with"
-tags_index_header = "Here is a list of all tags that are used on the site."
-tags_extension = ["md", "rst"]
 
 html_css_files = [
     'styles/styles.css'

@@ -195,7 +195,9 @@ entries:
     #       - file: notebooks/Interactive_apps/README # Contains its own table of contents.
     #       - file: notebooks/Tools/index # Contains its own table of contents.
 
-  # - file: tags-list # Contains its own table of contents.
+  - file: tags/index
+    entries:
+      - glob: tags/*
 
   - file: guides/tech_alerts_changelog
     title: DEA Tech alerts and changelog

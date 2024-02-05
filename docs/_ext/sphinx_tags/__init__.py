@@ -12,13 +12,12 @@ from docutils import nodes
 from docutils.parsers.rst import directives
 from sphinx.errors import ExtensionError
 from sphinx.util.docutils import SphinxDirective
-from sphinx.util.logging import getLogger
+from sphinx.util import logging
 from sphinx.util.rst import textwidth
 
 __version__ = "0.3.1"
 
-logger = getLogger("sphinx-tags")
-
+logger = logging.getLogger("sphinx-tags")
 
 class TagLinks(SphinxDirective):
     """Custom directive for adding tags to Sphinx-generated files.
@@ -26,7 +25,6 @@ class TagLinks(SphinxDirective):
     Loosely based on https://stackoverflow.com/questions/18146107/how-to-add-blog-style-tags-in-restructuredtext-with-sphinx
 
     See also https://docutils.sourceforge.io/docs/howto/rst-directives.html
-
     """
 
     # Class attributes
@@ -69,25 +67,12 @@ class TagLinks(SphinxDirective):
 
         for tag in tags:
             count += 1
-            # We want the link to be the path to the _tags folder, relative to
-            # this document's path where
-            #
-            #  - self.env.app.config.tags_output_dir
-            # |
-            #  - subfolder
-            #   |
-            #    - current_doc_path
+            # We want the link to be the path to the _tags folder, relative to this document's path where - self.env.app.config.tags_output_dir > subfolder > current_doc_path
 
             file_basename = _normalize_tag(tag)
 
             result += nodes.reference(refuri=f"/tags/{file_basename}", text=file_basename)
             tag_separator = f"{self.separator} "
-
-            # if self.env.app.config.tags_create_badges:
-            #     result += self._get_badge_node(tag, file_basename, relative_tag_dir)
-            #     tag_separator = " "
-            # else:
-            #     result += self._get_plaintext_node(tag, file_basename, relative_tag_dir)
 
             if not count == len(tags):
                 result += nodes.inline(text=tag_separator)
@@ -184,49 +169,26 @@ class Tag:
         """
         # Get sorted file paths for tag pages, relative to /docs/_tags
         tag_page_paths = sorted([i.relpath(srcdir) for i in items])
-        ref_label = f"tag-page"
 
         content = []
-        if "md" in extension:
-            filename = f"{self.file_basename}.md"
-            content.append(f"({ref_label})=")
-            content.append(f"# {self.name}")
-            content.append("")
-            content.append(f"{tags_page_header} &lsquo;{self.name}&rsquo;.")
-            content.append("")
-            content.append('<i class="fa-solid fa-angle-left tag-page-list"></i> <a href="/tags-list/">View all tags</a>')
-            content.append("")
+        filename = f"{self.file_basename}.md"
+        content.append(f"(tags-page)=")
+        content.append(f"# {self.name}")
+        content.append("")
+        content.append(f'<p class="tags-page--introduction">Here are all the pages tagged with &lsquo;{self.name}&rsquo;.')
+        content.append("")
 
-            for path in tag_page_paths:
-                formatted_path = "/" + re.sub(r'index\/$', "", re.sub(r'\.[a-zA-Z0-9]+$', "", path))
-                content.append(f"* {{doc}}`{formatted_path}`")
-                content.append("")
-
-        else:
-            filename = f"{self.file_basename}.rst"
-            header = self.name
-            content.append(f".. _{ref_label}:")
+        for path in tag_page_paths:
+            formatted_path = "/" + re.sub(r'index\/$', "", re.sub(r'\.[a-zA-Z0-9]+$', "", path))
+            content.append(f"* {{doc}}`{formatted_path}`")
             content.append("")
-            content.append(header)
-            content.append("#" * textwidth(header))
-            content.append("")
-            content.append(f"{tags_page_header} &lsquo;{self.name}&rsquo;.")
-            content.append("")
-            content.append(".. raw:: html")
-            content.append("   ")
-            content.append('   <p><i class="fa-solid fa-angle-left view-all-tags-link"></i> <a href="/tags-list/">View all tags</a></p>')
-            content.append("")
-
-            for path in tag_page_paths:
-                formatted_path = "/" + re.sub(r'index\/$', "", re.sub(r'\.[a-zA-Z0-9]+$', "", path))
-                content.append(f"* :doc:`{formatted_path}`")
-                content.append("")
 
         content.append("")
+
         with open(
             os.path.join(srcdir, tags_output_dir, filename), "w", encoding="utf8"
-        ) as f:
-            f.write("\n".join(content))
+        ) as file:
+            file.write("\n".join(content))
 
 
 class Entry:
@@ -257,70 +219,28 @@ def _normalize_tag(tag: str) -> str:
     return re.sub(r"[\s\W]+", "-", tag).lower().strip("-")
 
 
-def tagpage(tags, outdir, title, extension, tags_index_header):
+def tagpage(tags, srcdir, tags_output_dir, title, extension, tags_index_header):
     """Creates Tag overview page.
 
     This page contains a list of all available tags.
-
     """
-
     tags = list(tags.values())
 
-    if "md" in extension:
-        content = []
-        content.append("(tags-list-page)=")
-        content.append("")
-        content.append(f"# {title}")
-        content.append("")
-        content.append(tags_index_header)
-        content.append("")
-        content.append("```{toctree}")
-        content.append(":glob:")
-        content.append("tags/*")
-        content.append("```")
-        content.append("")
-        # for tag in sorted(tags, key=lambda t: t.name):
-        #     content.append(f"[{tag.name} ({len(tag.items)})](/tags/{tag.name})")
-        #     content.append("")
+    content = []
+    content.append("(tags-list-page)=")
+    content.append("")
+    content.append(f"# Tags")
+    content.append("")
+    content.append("Here are all the tags used on the site.")
+    content.append("")
+    content.append(":::{tableofcontents}")
+    content.append(":::")
+    content.append("")
 
-        # toctree for this page
-        # content.append("```{toctree}")
-        # content.append("---")
-        # content.append(f"caption: {tags_index_header}")
-        # content.append("maxdepth: 1")
-        # content.append("---")
-        # for tag in sorted(tags, key=lambda t: t.name):
-        #     content.append(f"{tag.name} ({len(tag.items)}) <{tag.file_basename}>")
-        # content.append("```")
-        content.append("")
-        filename = os.path.join(outdir, "tags-list.md")
-    else:
-        content = []
-        content.append(":orphan:")
-        content.append("")
-        content.append(".. _tagoverview:")
-        content.append("")
-        content.append(title)
-        content.append("#" * textwidth(title))
-        content.append("")
-        content.append(".. toctree::")
-        content.append("   :glob:")
-        content.append("")
-        content.append("   tags/*")
-        content.append("")
-        content.append("")
-        # # toctree for the page
-        # content.append(".. toctree::")
-        # content.append(f"    :caption: {tags_index_header}")
-        # content.append("    :maxdepth: 1")
-        content.append("")
-        # for tag in sorted(tags, key=lambda t: t.name):
-        #     content.append(f"`{tag.name} ({len(tag.items)}) </tags/{tag.name}>`_")
-        content.append("")
-        filename = os.path.join(outdir, "tags-list.rst")
-
-    with open(filename, "w", encoding="utf8") as f:
-        f.write("\n".join(content))
+    with open(
+        os.path.join(srcdir, tags_output_dir, "index.md"), "w", encoding="utf8"
+    ) as file:
+        file.write("\n".join(content))
 
 
 def assign_entries(app):
@@ -354,25 +274,36 @@ def update_tags(app):
         # Create pages for each tag
         tags, pages = assign_entries(app)
 
+        tags_created_list = []
+
         for tag in tags.values():
             tag.create_file(
-                [item for item in pages if tag.name in item.tags],
-                app.config.tags_extension,
-                tags_output_dir,
-                app.srcdir,
-                app.config.tags_page_title,
-                app.config.tags_page_header,
+                items = [item for item in pages if tag.name in item.tags],
+                extension = app.config.tags_extension,
+                tags_output_dir = tags_output_dir,
+                srcdir = app.srcdir,
+                tags_page_title = app.config.tags_page_title,
+                tags_page_header = app.config.tags_page_header,
             )
+            tags_created_list.append(tag.file_basename)
+
+        has_tags = len(tags_created_list) > 0
+
+        if has_tags:
+            tags_created_list_joined = ', '.join(tags_created_list)
+            logger.info(f"Created tags: {tags_created_list_joined}")
 
         # Create tags overview page
-        tagpage(
-            tags,
-            os.path.join(app.srcdir),
-            app.config.tags_overview_title,
-            app.config.tags_extension,
-            app.config.tags_index_header,
-        )
-        logger.info("Tags updated", color="white")
+        if has_tags:
+            tagpage(
+                tags = tags,
+                srcdir = app.srcdir,
+                tags_output_dir = Path(app.config.tags_output_dir),
+                title = app.config.tags_overview_title,
+                extension = app.config.tags_extension,
+                tags_index_header = app.config.tags_index_header,
+            )
+            logger.info(f"Created tags index")
     else:
         logger.info(
             "Tags were not created (tags_create_tags=False in conf.py)", color="white"
@@ -388,7 +319,7 @@ def setup(app):
     app.add_config_value("tags_create_tags", False, "html")
     app.add_config_value("tags_output_dir", "tags", "html") # Note: Don't change this setting from the default.
     app.add_config_value("tags_overview_title", "Tags overview", "html")
-    app.add_config_value("tags_extension", ["rst"], "html")
+    app.add_config_value("tags_extension", ["md", "rst"], "html")
     app.add_config_value("tags_intro_text", "Tags:", "html")
     app.add_config_value("tags_page_title", "My tags", "html")
     app.add_config_value("tags_page_header", "With this tag", "html")
@@ -406,9 +337,6 @@ def setup(app):
     )
 
     # Update tags
-    # TODO: tags should be updated after sphinx-gallery is generated, and the
-    # gallery is also connected to builder-inited. Are there situations when
-    # this will not work?
     app.connect("builder-inited", update_tags)
     app.add_directive("tags", TagLinks)
 
