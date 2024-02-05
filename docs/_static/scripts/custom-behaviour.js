@@ -153,22 +153,30 @@ document.addEventListener("DOMContentLoaded", function (event) {
         }
     })();
 
-    // Classifies each type of link (anchor, internal, external) with a CSS class and also makes external links open in a new tab by default.
+    // Classifies each type of link (query, anchor, internal, external) with a 'data-link-type' property and also makes external links open in a new tab by default.
 
     (function () {
-        for (var links = document.links, i = 0, a; (a = links[i]); i++) {
-            var hrefAnchor = a.href.replace(location.href, "");
-            if (/^(?:#|\.\/#)/.test(hrefAnchor)) {
-                a.classList.add("anchor-link");
-            } else if (/^(?:\?|\.\/\?)/.test(hrefAnchor)) {
-                a.classList.add("query-link");
-            } else if (a.host === location.host) {
-                a.classList.add("internal-link");
-            } else if (a.host !== location.host) {
-                a.classList.add("external-link");
-                if (!a.target) {
-                    a.target = "_blank";
-                    a.setAttribute("rel", "noopener noreferrer");
+        let links = document.links;
+        for (let i = 0; i < links.length; i++) {
+            let link = links[i];
+            let url = new URL(link.href);
+            console.log(url);
+            let isSameHost = url.host === location.host;
+            let isSamePath = url.pathname === location.pathname;
+            let hasAnchor = url.hash.length > 0;
+            let hasQuery = url.search.length > 0;
+
+            if (isSameHost && isSamePath && hasQuery) {
+                link.dataset.linkType = "query";
+            } else if (isSameHost && isSamePath && hasAnchor) {
+                link.dataset.linkType = "anchor";
+            } else if (isSameHost) {
+                link.dataset.linkType = "internal";
+            } else if (!isSameHost) {
+                link.dataset.linkType = "external";
+                if (!link.target) {
+                    link.target = "_blank";
+                    link.setAttribute("rel", "noopener noreferrer");
                 }
             }
         }
