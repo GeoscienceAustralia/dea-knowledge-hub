@@ -1,4 +1,4 @@
-// Standardises the headings and their anchor IDs. Adds behaviour to headings and tabs that adds their IDs to the URL.
+// Standardises the headings and their anchor IDs. Adds behaviour to headings and tabs that adds their IDs to the URL. Also, adds behaviour to links.
 // The sections of this script are in order of precedence. Each time a 'data-anchor-id' property is added to a heading, it will override any existing 'data-anchor-id' that was set previously.
 
 document.addEventListener("DOMContentLoaded", function (event) {
@@ -148,6 +148,27 @@ document.addEventListener("DOMContentLoaded", function (event) {
                         heading.textContent || heading.innerText;
 
                     toc.appendChild(linkElement);
+                }
+            }
+        }
+    })();
+
+    // Classifies each type of link (anchor, internal, external) with a CSS class and also makes external links open in a new tab by default.
+
+    (function () {
+        for (var links = document.links, i = 0, a; (a = links[i]); i++) {
+            var hrefAnchor = a.href.replace(location.href, "");
+            if (/^(?:#|\.\/#)/.test(hrefAnchor)) {
+                a.classList.add("anchor-link");
+            } else if (/^(?:\?|\.\/\?)/.test(hrefAnchor)) {
+                a.classList.add("query-link");
+            } else if (a.host === location.host) {
+                a.classList.add("internal-link");
+            } else if (a.host !== location.host) {
+                a.classList.add("external-link");
+                if (!a.target) {
+                    a.target = "_blank";
+                    a.setAttribute("rel", "noopener noreferrer");
                 }
             }
         }
