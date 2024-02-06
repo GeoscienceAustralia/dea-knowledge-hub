@@ -105,7 +105,7 @@
 
        .. raw:: html
 
-          <div class="tocbot-selector"></div>
+          <div class="product-tab-table-of-contents"></div>
 
        .. include:: _overview_1.md
           :parser: myst_parser.sphinx_
@@ -222,7 +222,7 @@
 
        .. raw:: html
 
-          <div class="tocbot-selector"></div>
+          <div class="product-tab-table-of-contents"></div>
 
        .. include:: _details.md
           :parser: myst_parser.sphinx_
@@ -234,7 +234,7 @@
 
        .. raw:: html
 
-          <div class="tocbot-selector"></div>
+          <div class="product-tab-table-of-contents"></div>
 
        .. include:: _quality.md
           :parser: myst_parser.sphinx_
@@ -246,7 +246,7 @@
 
        .. raw:: html
 
-          <div class="tocbot-selector"></div>
+          <div class="product-tab-table-of-contents"></div>
 
        .. rubric:: Access the data
           :name: access-the-data-2
@@ -330,7 +330,7 @@
 
        .. raw:: html
 
-          <div class="tocbot-selector"></div>
+          <div class="product-tab-table-of-contents"></div>
 
        {% if not is_latest_version %}
        .. rubric:: Other versions
@@ -367,7 +367,7 @@
 
        .. raw:: html
 
-          <div class="tocbot-selector"></div>
+          <div class="product-tab-table-of-contents"></div>
 
        .. include:: _faqs.md
           :parser: myst_parser.sphinx_
@@ -379,7 +379,7 @@
 
        .. raw:: html
 
-          <div class="tocbot-selector"></div>
+          <div class="product-tab-table-of-contents"></div>
 
        .. include:: _credits.md
           :parser: myst_parser.sphinx_
@@ -387,6 +387,4 @@
 
 .. raw:: html
 
-   <script type="text/javascript" src="/_static/scripts/vendors/tocbot.min.js"></script>
-   <script type="text/javascript" src="/_static/scripts/product-table-of-contents.js" /></script>
    <script type="text/javascript" src="/_static/scripts/access-cards-tooltips.js" /></script>

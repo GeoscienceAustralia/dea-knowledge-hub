@@ -1,28 +1,13 @@
-.tocbot-selector {
-    $font-size: 0.85rem;
-
+.product-tab-table-of-contents {
     @media only screen and (max-width: $breakpoint-md) {
         line-height: 2rem;
     }
 
-    ol {
-        display: flex;
-        flex-wrap: wrap;
-        padding-left: 0;
-        row-gap: 1rem;
-    }
-
-    li {
-        list-style: none;
-        padding-right: 1rem;
-    }
-
     a {
-        text-decoration-style: dashed;
         color: var(--pst-color-text-base);
+        margin-right: 1rem;
 
         &:hover {
-            text-decoration-style: solid;
             color: var(--pst-color-link);
         }
     }
