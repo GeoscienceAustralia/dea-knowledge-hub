@@ -39,7 +39,6 @@
         font-size: 1.65rem;
         font-weight: bold;
         margin: 0;
-        color: white;
         line-height: 1.65;
     }
 
@@ -47,12 +46,8 @@
         flex-direction: row-reverse;
     }
 
-    &.bg-grey {
-        background-color: $bg-color-grey;
-    }
-
     &[class*="bg-gradient-"] {
-        p, dl, a, a:hover {
+        p, dl, a, a:hover, .rubric {
             color: white;
         }
     }
