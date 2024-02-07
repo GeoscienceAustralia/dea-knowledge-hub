@@ -35,11 +35,11 @@
         }
     }
 
-    & > div > .rubric {
+    & .rubric {
         font-size: 1.65rem;
         font-weight: bold;
         margin: 0;
-        line-height: 1.65;
+        line-height: 1.4;
         margin-bottom: 1.15rem;
     }
 
@@ -50,6 +50,12 @@
     &[class*="bg-gradient-"] {
         p, dl, a, a:hover, .rubric {
             color: white;
+        }
+    }
+
+    &.product-header {
+        .rubric {
+            margin-bottom: 0.25rem;
         }
     }
 

@@ -41,7 +41,7 @@
 {{ page_title }}
 ======================================================================================================================================================
 
-.. container:: showcase-panel bg-gradient-primary
+.. container:: showcase-panel product-header bg-gradient-primary
 
    .. container::
 
