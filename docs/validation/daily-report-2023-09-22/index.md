@@ -1,6 +1,6 @@
 # 2023-09-22: Mullion, Landsat 8 overpass
 
-This report summarises the validation data collected on the date of 2023-09-22 by the Cal/Val team of Geoscience Australia.
+This validation summary reports the surface reflectance data collected on the date of 2023-09-22 by the Cal/Val team of Geoscience Australia.
 
 ## Measurement variables
 
@@ -9,7 +9,7 @@ These are measurements of the environmental conditions that were encountered on 
 :::{csv-table}
 :class: validation-report-summary-table
 
-"Instrument(s) used","ASD FR4 (18179/3"
+"Instrument(s) used","ASD FR4 (18179/3)"
 "Time of field site measurements (UTC)","2023-09-21 23:56:14 to 2023-09-22 00:28:20"
 "Time of overpass (UTC)","2023-09-21 23:50:46"
 "GPS quality","Good"
