@@ -68,6 +68,21 @@
 
       .. image:: /_files/reference/Reporting_dashboard.png
 
+.. container:: showcase-panel bg-gradient-space reverse
+   :name: dea-notebooks
+
+   .. container::
+
+      .. rubric:: Validation reports
+
+      See the Cal/Val validation reports on a daily and quarterly basis.
+
+      `Visit the Validation reports </validation/>`_
+
+   .. container::
+
+      .. image:: /_files/cmi/Kakadu-Mary_TCW-percentiles-wide_1.jpg
+
 .. container:: showcase-panel
    :name: about-dea
 
