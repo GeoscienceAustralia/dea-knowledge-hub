@@ -29,13 +29,13 @@ These are the surface reflectance statistics collected on this day. They are sta
 :class: validation-report-statistics-table
 
 "<a href='/guides/about/glossary/#band' taget='_blank'>Band</a>","Sat Mean","Sat rms","Field mean","Field rms"
-"<code>CA</code>","0.0372","0.00146","0.0363","0.00667"
-"<code>Blue</code>","0.043","0.00207","0.0429","0.00851"
-"<code>Green</code>","0.074","0.00241","0.0772","0.013"
-"<code>Red</code>","0.0654","0.00424","0.0685","0.0166"
-"<code>NIR</code>","0.373","0.0215","0.39","0.0582"
-"<code>SWIR1</code>","0.234","0.00781","0.251","0.0383"
-"<code>SWIR2</code>","0.118","0.00442","0.128","0.0238"
+"CA","0.0372","0.00146","0.0363","0.00667"
+"Blue","0.043","0.00207","0.0429","0.00851"
+"Green","0.074","0.00241","0.0772","0.013"
+"Red","0.0654","0.00424","0.0685","0.0166"
+"NIR","0.373","0.0215","0.39","0.0582"
+"SWIR1","0.234","0.00781","0.251","0.0383"
+"SWIR2","0.118","0.00442","0.128","0.0238"
 :::
 
 :::::{grid} 1 1 2 3
