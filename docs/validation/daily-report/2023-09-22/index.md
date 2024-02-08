@@ -33,9 +33,9 @@ These are the surface reflectance statistics collected on this day. They are sta
 "Blue","0.043","0.00207","0.0429","0.00851"
 "Green","0.074","0.00241","0.0772","0.013"
 "Red","0.0654","0.00424","0.0685","0.0166"
-"NIR","0.373","0.0215","0.39","0.0582"
-"SWIR1","0.234","0.00781","0.251","0.0383"
-"SWIR2","0.118","0.00442","0.128","0.0238"
+"<a href='/guides/about/glossary/#nir' target='_blank'>NIR</a>","0.373","0.0215","0.39","0.0582"
+"<a href='/guides/about/glossary/#swir' target='_blank'>SWIR1</a>","0.234","0.00781","0.251","0.0383"
+"<a href='/guides/about/glossary/#swir' target='_blank'>SWIR2</a>","0.118","0.00442","0.128","0.0238"
 :::
 
 :::::{grid} 1 1 2 3
