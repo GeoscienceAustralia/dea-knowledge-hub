@@ -1,0 +1,9 @@
+.calval {
+    &--summary-table {
+        tr td:first-child {
+          font-weight: bold;
+        }
+    }
+
+    &--statistics-table {}
+}
