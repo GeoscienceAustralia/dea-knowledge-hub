@@ -7,7 +7,7 @@ This report summarises the validation data collected on the date of 2023-09-22 b
 These are measurements of the environmental conditions that were encountered on the day the data was collected.
 
 :::{csv-table}
-:class: calval-summary-table
+:class: validation-report-summary-table
 
 "Instrument(s) used","ASD FR4 (18179/3"
 "Time of field site measurements (UTC)","2023-09-21 23:56:14 to 2023-09-22 00:28:20"
@@ -22,7 +22,7 @@ These are measurements of the environmental conditions that were encountered on 
 These are the surface reflectance statistics collected on this day. They are standardised into bands so that you can use them to validate our other datasets.
 
 :::{csv-table}
-:class: calval-statistics-table
+:class: validation-report-statistics-table
 
 "<a href='/guides/about/glossary/#band' taget='_blank'>Band</a>","Sat Mean","Sat rms","Field mean","Field rms"
 "<code>CA</code>","0.0372","0.00146","0.0363","0.00667"
@@ -34,7 +34,7 @@ These are the surface reflectance statistics collected on this day. They are sta
 "<code>SWIR2</code>","0.118","0.00442","0.128","0.0238"
 :::
 
-:::::{grid} 3 2 1
+:::::{grid} 1 1 2 3
 ::::{grid-item}
 :::{figure} ./surface-reflectance-tile.png
 

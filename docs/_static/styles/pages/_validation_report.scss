@@ -1,4 +1,4 @@
-.calval {
+.validation-report {
     &-summary-table {
         tr td:first-child {
           font-weight: bold;
@@ -6,6 +6,8 @@
     }
 
     &-statistics-table {
+        margin-bottom: 3rem;
+
         tbody tr:first-child {
           font-weight: bold;
         }
