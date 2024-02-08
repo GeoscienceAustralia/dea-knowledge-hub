@@ -38,7 +38,7 @@ These are the surface reflectance statistics collected on this day.
 
 Here are some figures.
 
-:::::{grid}
+:::::{grid} 3 2 1
 
 ::::{grid-item}
 :::{figure} ./surface-reflectance-tile.png

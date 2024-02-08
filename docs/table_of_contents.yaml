@@ -199,10 +199,15 @@ entries:
     subtrees:
       - caption: Quarterly reports
         entries:
-          - glob: validation/quarterly-report/*/index
+          - glob: validation/quarterly-report-*/index
       - caption: Daily reports
         entries:
-          - glob: validation/daily-report/*/index
+          - file: validation/daily-report/2024
+            entries:
+              - glob: validation/daily-report-2024-*/index
+          - file: validation/daily-report/2023
+            entries:
+              - glob: validation/daily-report-2023-*/index
 
   - file: tags/index
     entries:
