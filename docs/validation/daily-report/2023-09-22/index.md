@@ -28,7 +28,7 @@ These are the surface reflectance statistics collected on this day. They are sta
 :::{csv-table}
 :class: validation-report-statistics-table
 
-"<a href='/guides/about/glossary/#band' taget='_blank'>Band</a>","Sat Mean","Sat rms","Field mean","Field rms"
+"<a href='/guides/about/glossary/#band' target='_blank'>Band</a>","Sat Mean","Sat rms","Field mean","Field rms"
 "CA","0.0372","0.00146","0.0363","0.00667"
 "Blue","0.043","0.00207","0.0429","0.00851"
 "Green","0.074","0.00241","0.0772","0.013"
