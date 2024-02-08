@@ -1,3 +1,5 @@
+% Template: DailyValidationSummary 0.0.1
+
 # 2023-09-22: Mullion, Landsat 8 overpass
 
 This validation summary reports the surface reflectance data collected on the date of 2023-09-22 by the Cal/Val team of Geoscience Australia.
