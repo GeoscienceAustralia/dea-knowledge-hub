@@ -203,11 +203,12 @@ entries:
       - caption: Daily Reports
         entries:
           - glob: validation/daily-report-2024-*/index
+          - glob: validation/daily-report-2023-*/index
       - caption: More ...
         entries:
           - file: validation/older-daily-reports
             entries:
-              - glob: validation/daily-report-*/index
+              - glob: validation/daily-report-2022-*/index
 
   - file: tags/index
     entries:
