@@ -37,10 +37,11 @@ exclude_patterns = [
     "notebooks/Supplementary_data/*.ipynb",
     "py-modindex/index.*",
 ]
+exclude_patterns += utilities.optional_exclude_pattern("LOCAL_ENABLE_TAGS", "tags")
 exclude_patterns += utilities.optional_exclude_pattern("LOCAL_ENABLE_USER_GUIDES", "guides")
 exclude_patterns += utilities.optional_exclude_pattern("LOCAL_ENABLE_DATA_PRODUCTS", "data")
 exclude_patterns += utilities.optional_exclude_pattern("LOCAL_ENABLE_NOTEBOOKS", "notebooks")
-exclude_patterns += utilities.optional_exclude_pattern("LOCAL_ENABLE_TAGS", "tags")
+exclude_patterns += utilities.optional_exclude_pattern("LOCAL_ENABLE_VALIDATION_REPORTS", "validation")
 
 html_title = "DEA Knowledge Hub"
 html_logo = "_files/logos/ga-dea-combined-logo.svg"
