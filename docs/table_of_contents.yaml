@@ -197,17 +197,18 @@ entries:
 
   - file: validation/index
     subtrees:
-      - caption: Quarterly reports
+      - caption: Quarterly Reports
         entries:
           - glob: validation/quarterly-report-*/index
-      - caption: Daily reports
+      - caption: Daily Reports
         entries:
-          - file: validation/daily-report/2024
+          - glob: validation/daily-report-2024-*/index
+      - caption: Older Daily Reports
+        entries:
+          - file: validation/older-daily-reports
+            title: See all ...
             entries:
-              - glob: validation/daily-report-2024-*/index
-          - file: validation/daily-report/2023
-            entries:
-              - glob: validation/daily-report-2023-*/index
+              - glob: validation/daily-report-*/index
 
   - file: tags/index
     entries:

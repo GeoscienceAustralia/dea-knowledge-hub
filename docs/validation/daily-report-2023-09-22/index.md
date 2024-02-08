@@ -1,6 +1,6 @@
 # 2023-09-22: Mullion, Landsat 8 overpass
 
-Here is the validation summary for the date of 2023-09-22.
+This report is a summary of the validation data collected on the date of 2023-09-22.
 
 ## Summary statistics
 
