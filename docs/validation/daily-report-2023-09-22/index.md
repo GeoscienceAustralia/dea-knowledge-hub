@@ -4,7 +4,7 @@ This report summarises the validation data collected on the date of 2023-09-22 b
 
 ## Measurement variables
 
-These are measurements of the uncontrolled variables that were encountered on the day the data was collected.
+These are measurements of the environmental conditions that were encountered on the day the data was collected.
 
 :::{csv-table}
 :class: calval-summary-table
@@ -35,7 +35,6 @@ These are the surface reflectance statistics collected on this day. They are sta
 :::
 
 :::::{grid} 3 2 1
-
 ::::{grid-item}
 :::{figure} ./surface-reflectance-tile.png
 
