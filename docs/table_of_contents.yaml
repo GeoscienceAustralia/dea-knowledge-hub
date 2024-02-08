@@ -196,8 +196,17 @@ entries:
     #       - file: notebooks/Tools/index # Contains its own table of contents.
 
   - file: validation/index
-    entries:
-      - glob: validation/*/index
+    subtrees:
+      - caption: Quarterly reports
+        entries:
+          - file: validation/quarterly-reports/index
+            title: All
+          - glob: validation/quarterly-reports/*/index
+      - caption: Daily reports
+        entries:
+          - file: validation/daily-reports/index
+            title: All
+          - glob: validation/daily-reports/*/index
 
   - file: tags/index
     entries:
