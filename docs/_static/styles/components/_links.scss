@@ -13,3 +13,9 @@ a {
     &[data-link-type="external"] {}
 }
 
+img {
+    &[data-link-type="image"] {
+        cursor: pointer;
+    }
+}
+
