@@ -6,6 +6,8 @@ This validation summary reports the surface reflectance data collected on the da
 
 These are measurements of the environmental conditions that were encountered on the day the data was collected.
 
+<a class="validation-report-download-link" href="./measurement-variables-2023-09-22.csv" download>Download as CSV</a>
+
 :::{csv-table}
 :class: validation-report-summary-table
 
@@ -20,6 +22,8 @@ These are measurements of the environmental conditions that were encountered on 
 ## Surface reflectance statistics 
 
 These are the surface reflectance statistics collected on this day. They are standardised into bands so that you can use them to validate our other datasets.
+
+<a class="validation-report-download-link" href="./surface-reflectance-statistics-2023-09-22.csv" download>Download as CSV</a>
 
 :::{csv-table}
 :class: validation-report-statistics-table
