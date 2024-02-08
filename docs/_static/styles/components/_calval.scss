@@ -5,5 +5,9 @@
         }
     }
 
-    &-statistics-table {}
+    &-statistics-table {
+        tbody tr:first-child {
+          font-weight: bold;
+        }
+    }
 }

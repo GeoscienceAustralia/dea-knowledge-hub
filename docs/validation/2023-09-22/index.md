@@ -34,12 +34,29 @@ These are the surface reflectance statistics collected on this day.
 "SWIR2","0.118","0.00442","0.128","0.0238"
 :::
 
+## Figures
 
+Here are some figures.
 
+:::::{grid}
 
+::::{grid-item}
+:::{figure} ./surface-reflectance-tile.png
 
+A satellite imagery tile showing surface reflectance.
+:::
+::::
+::::{grid-item}
+:::{figure} ./band-chart.png
 
+A chart showing bands.
+:::
+::::
+::::{grid-item}
+:::{figure} ./surface-reflectance-chart.png
 
-image 1        image 2
+A chart showing surface reflectance.
+:::
+::::
+:::::
 
-image 3

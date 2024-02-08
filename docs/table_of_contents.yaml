@@ -197,7 +197,7 @@ entries:
 
   - file: validation/index
     entries:
-      - glob: validation/*
+      - glob: validation/*/index
 
   - file: tags/index
     entries:
