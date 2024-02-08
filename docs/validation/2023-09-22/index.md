@@ -14,7 +14,7 @@ These are the general statistics collected on the day.
 "Time of overpass (UTC)","2023-09-21 23:50:46"
 "GPS quality","Good"
 "Reference position","148.862602E, 35.123138S (WGS84)"
-"Matchup quality","Excellent"
+"<a href='/guides/about/glossary/#pq' target='_blank'>Matchup quality</a>","Excellent"
 :::
 
 ## Surface Reflectance statistics 
@@ -24,7 +24,7 @@ These are the surface reflectance statistics collected on this day.
 :::{csv-table}
 :class: calval-statistics-table
 
-"Band","Sat Mean","Sat rms","Field mean","Field rms"
+"<a href='/guides/about/glossary/#band' taget='_blank'>Band</a>","Sat Mean","Sat rms","Field mean","Field rms"
 "CA","0.0372","0.00146","0.0363","0.00667"
 "Blue","0.043","0.00207","0.0429","0.00851"
 "Green","0.074","0.00241","0.0772","0.013"
