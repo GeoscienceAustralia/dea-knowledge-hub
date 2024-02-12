@@ -175,10 +175,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
                 link.dataset.linkType = "internal";
             } else if (!isSameHost) {
                 link.dataset.linkType = "external";
-                if (!link.target) {
-                    link.target = "_blank";
-                    link.setAttribute("rel", "noopener noreferrer");
-                }
             }
         }
     })();
