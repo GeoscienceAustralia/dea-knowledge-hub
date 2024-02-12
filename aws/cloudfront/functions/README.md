@@ -1,4 +1,3 @@
+# CloudFront Redirects
 
-# Redirection function
-
-Execute the tests with `npx mocha`
+Run the tests with the command: `npx mocha`
