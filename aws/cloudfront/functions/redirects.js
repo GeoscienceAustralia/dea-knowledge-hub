@@ -17,9 +17,9 @@ async function handler(event) {
     // E.g. "../Tools/dea_tools/app/animations.py" => "/notebooks/Tools/gen/dea_tools.app.animations/"
 
     if (deaToolsSourceCodePattern.test(uri)) {
-        const sourceCodePath = uri.match(deaToolsSourceCodePattern)[1];
+        const sourceCodePath = uri.match(deaToolsSourceCodePattern)[0];
         const automoduleName = sourceCodePath.replaceAll("/", ".");
-        const automoduleUri = `/notebooks/Tools/gen/dea_tools.${deaToolsName}/`;
+        const automoduleUri = `/notebooks/Tools/gen/dea_tools.${automoduleName}/`;
 
         return Object.assign(status301MovedPermanently, {
             headers: {
