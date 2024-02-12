@@ -9,8 +9,8 @@ describe("handler()", () => {
         { uri: "/example.html", expected: "/example/" },
         { uri: "/foo/example.rst", expected: "/foo/example/" },
         {
-            uri: "/notebooks/Interactive_apps/Tools/dea_tools/app/crophealth.py",
-            expected: "/notebooks/Tools/gen/dea_tools.crophealth/"
+            uri: "/notebooks/Beginners_guide/Tools/dea_tools/plotting.py",
+            expected: "/notebooks/Tools/gen/dea_tools.plotting/"
         },
         {
             uri: "/notebooks/Interactive_apps/Tools/dea_tools/app/animations.py",
