@@ -27,18 +27,18 @@ easier to get started with :term:`ARE`.
 .. _Gadi: https://nci.org.au/our-systems/hpc-systems/
    
 Launching JupyterLab from ARE
-=============================
+-----------------------------
 
 To launch a JupyterLab session, follow the instructions in `Starting JupyterLab
 App (ARE User Guide) <https://opus.nci.org.au/display/Help/3.1+Starting+JupyterLab+App>`_ 
-page in the NCI Help. See below for the settings required to use DEA .
+page in the NCI Help. See below for the settings required to use DEA.
 
 .. note:: To run an ARE session you must be part of a project at
    NCI with compute capacity. DEA does not currently
    provide access to such a project.
 
 Access to DEA
--------------
+*************
 
 The first time you start a JupyterLab session, there are some settings required
 to access DEA.
@@ -66,20 +66,41 @@ Set :guilabel:`Modules` to ``dea``.
    </video>
 
 
-Virtual Desktops with ARE
-=========================
+.. dropdown:: Troubleshooting: fe_sendauth: no password supplied (missing ``.pgpass`` file)
 
+   When the `dea` module is first run, a Datacube database role and ``.pgpass`` password
+   file is automatically created for you in your home directory. If you used a previous
+   version of the NCI's Virtual Desktop software (e.g. VDI, OOD), you may need to copy
+   this original ``.pgpass`` file into your new ARE home directory. If you cannot locate
+   your ``.pgpass`` file, please contact earth.observation@ga.gov.au to request your DEA
+   database account be reset.
+
+
+Launching Virtual Desktops with ARE
+-----------------------------------
+
+To launch an interactive Virtual Desktop on ARE, follow the instructions in `Connecting to
+the VDI <https://opus.nci.org.au/display/Help/2.1.+Connecting+to+the+VDI>`_ page in the 
+NCI Help. Enter the same :guilabel:`Storage`,  :guilabel:`Module directories` and
+:guilabel:`Modules` settings described above.
 
 
 Setting up Digital Earth Australia
-----------------------------------
+==================================
 
-In the terminal window run the command::
+In a terminal window on either JupyterLab or the ARE Virtual Desktop, run the command::
 
    sh /g/data/v10/public/digitalearthau/install.sh
 
 This will download the latest version of the `Digital Earth Australia notebooks
 repository <https://github.com/GeoscienceAustralia/dea-notebooks/tree/stable>`_
 into your home directory (e.g. :file:`~/dea-notebooks`).
+
+.. note:: DEA Notebooks is a large repository that will take up a large proportion of
+   of available storage space in your home directory. We recommend cloning a new 
+   copy of the repository to a location on ``/g/data/`` when possible (following the
+   `DEA notebooks guide here
+   <https://github.com/GeoscienceAustralia/dea-notebooks/wiki/Edit-a-DEA-Notebook>`_).
+
 
 
