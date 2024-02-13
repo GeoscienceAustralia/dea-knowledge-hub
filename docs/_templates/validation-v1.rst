@@ -13,6 +13,6 @@
 `{{ page.label }} </tags/{{ page.tag }}/>`_
 {% endfor %}
 
-.. tableofcontents
+.. tableofcontents::
    :maxdepth: 1
 
