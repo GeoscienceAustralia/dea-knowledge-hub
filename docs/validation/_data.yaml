@@ -3,13 +3,16 @@ description: Here are the Cal/Val validation reports on a daily and quarterly ba
 
 tag_pages_title: View by type
 tag_pages:
-  - tag: validation
-    label: All tags
-  - tag: daily_validation
-    label: Daily validation
-  - tag: quarterly_validation
-    label: Quarterly validation
+  - label: All reports
+    tag: validation
+  - label: Daily reports
+    tag: daily_validation
+  - label: Quarterly reports
+    tag: quarterly_validation
+  - label: Yearly reports
+    tag: yearly_validation
+  - label: Mullion validation
+    tag: mullion_validation
+  - label: Landsat 8 validation
+    tag: landsat_8_validation
 
-
-
-# validation, daily_validation, 2023_validation, mullion_validation, landsat_8_validation

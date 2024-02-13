@@ -61,6 +61,6 @@ A chart showing surface reflectance.
 ::::
 :::::
 
-% :::{tags} validation, daily_validation, 2023_validation, mullion_validation, landsat_8_validation
+% :::{tags} validation, daily_validation, mullion_validation, landsat_8_validation
 % :::
 
