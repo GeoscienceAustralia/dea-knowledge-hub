@@ -5,6 +5,7 @@ sys.path.insert(0, os.path.abspath('.'))
 from _modules import utilities
 from _modules import mock_imports
 from _modules import deploy_banner
+from _modules import validation_reports
 
 environment = {
     "build_mode": os.environ.get("BUILD_MODE"),
@@ -37,6 +38,7 @@ exclude_patterns = [
     "notebooks/Supplementary_data/*.ipynb",
     "py-modindex/index.*",
 ]
+exclude_patterns += validation_reports.exclude_old_daily_reports(years = 2)
 exclude_patterns += utilities.optional_exclude_pattern("LOCAL_ENABLE_TAGS", "tags")
 exclude_patterns += utilities.optional_exclude_pattern("LOCAL_ENABLE_USER_GUIDES", "guides")
 exclude_patterns += utilities.optional_exclude_pattern("LOCAL_ENABLE_DATA_PRODUCTS", "data")
