@@ -23,24 +23,30 @@ It's also possible to use DEA on the NCI's Gadi_ :term:`HPC` Supercomputer,
 however unless you're experienced with :term:`SSH` and HPC systems, it's much
 easier to get started with :term:`ARE`.
 
-
 .. _Gadi: https://nci.org.au/our-systems/hpc-systems/
    
 Launching JupyterLab from ARE
 -----------------------------
 
-To launch a JupyterLab session, follow the instructions in `Starting JupyterLab
-App (ARE User Guide) <https://opus.nci.org.au/display/Help/3.1+Starting+JupyterLab+App>`_ 
-page in the NCI Help. See below for the settings required to use DEA.
-
 .. note:: To run an ARE session you must be part of a project at
    NCI with compute capacity. DEA does not currently
    provide access to such a project.
 
-Access to DEA
-*************
+To launch a JupyterLab session, follow the instructions in `Starting JupyterLab
+App (ARE User Guide) <https://opus.nci.org.au/display/Help/3.1+Starting+JupyterLab+App>`_ 
+page in the NCI Help. See below for the settings required to use DEA.
 
-The first time you start a JupyterLab session, there are some settings required
+Launching Virtual Desktops with ARE
+-----------------------------------
+
+To launch an interactive Virtual Desktop, follow the instructions in `Connecting to
+the VDI <https://opus.nci.org.au/display/Help/2.1.+Connecting+to+the+VDI>`_ page in the 
+NCI Help. See below for the settings required to use DEA.
+
+DEA access settings
+-------------------
+
+The first time you start a JupyterLab or Virtual Desktop session, there are some settings required
 to access DEA.
 
 **Storage**
@@ -66,7 +72,7 @@ Set :guilabel:`Modules` to ``dea``.
    </video>
 
 
-.. dropdown:: Troubleshooting: fe_sendauth: no password supplied (missing ``.pgpass`` file)
+.. dropdown:: Troubleshooting: fe_sendauth: no password supplied
 
    When the `dea` module is first run, a Datacube database role and ``.pgpass`` password
    file is automatically created for you in your home directory. If you used a previous
@@ -74,15 +80,6 @@ Set :guilabel:`Modules` to ``dea``.
    this original ``.pgpass`` file into your new ARE home directory. If you cannot locate
    your ``.pgpass`` file, please contact earth.observation@ga.gov.au to request your DEA
    database account be reset.
-
-
-Launching Virtual Desktops with ARE
------------------------------------
-
-To launch an interactive Virtual Desktop on ARE, follow the instructions in `Connecting to
-the VDI <https://opus.nci.org.au/display/Help/2.1.+Connecting+to+the+VDI>`_ page in the 
-NCI Help. Enter the same :guilabel:`Storage`,  :guilabel:`Module directories` and
-:guilabel:`Modules` settings described above.
 
 
 Setting up Digital Earth Australia
