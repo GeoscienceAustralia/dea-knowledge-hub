@@ -12,11 +12,11 @@ Basics - JupyterLab and Virtual Desktop
 Australian Research Environment
 ===============================
 
-The easiest access to Digital Earth Australia on the NCI is via the
+The easiest way to access Digital Earth Australia on the NCI is via the
 :term:`Australian Research Environment<ARE>`. ARE has full access to the
 NCI Gadi_ :term:`HPC` Supercomputer, allowing you to run analyses using
-DEA at scale through your web browser via either an interactive Virtual 
-Desktop environment or by executing code in JupyterLab Notebooks.
+DEA at scale through your web browser via either an interactive JupyterLab
+session, or a Virtual Desktop environment.
 
 For more information on ARE see the `NCI's
 ARE User Guide <https://opus.nci.org.au/display/Help/ARE+User+Guide>`_.
