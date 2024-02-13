@@ -6,13 +6,14 @@
 
 {{ data.description }}
 
+{% if data.tag_pages %}
 {{ data.tag_pages_title }}
 ======================================================================================================================================================
 
 {% for page in data.tag_pages %}
 `{{ page.label }} </tags/{{ page.tag }}/>`_
 {% endfor %}
+{% endif %}
 
 .. tableofcontents::
-   :maxdepth: 1
 
