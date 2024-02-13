@@ -2,10 +2,8 @@
 const { handler } = require("./redirects.js");
 var assert = require("assert");
 
-describe("AWS CloudFront Redirects", () => {
+describe("Test redirect occurs", () => {
     const tests = [
-        // Should redirect correctly
-
         { uri: "/index.html", expected: "/" },
         { uri: "/page/index.html", expected: "/page/" },
         { uri: "/category/page.html", expected: "/category/page/" },
@@ -21,10 +19,21 @@ describe("AWS CloudFront Redirects", () => {
         {
             uri: "/notebooks/Interactive_apps/Tools/dea_tools/app/animations.py",
             expected: "/notebooks/Tools/gen/dea_tools.app.animations/"
-        },
+        }
+    ];
 
-        // Should not redirect
+    tests.forEach(({ uri, expected }) => {
+        let input = { request: { uri: uri } };
+        it(`Correctly redirects ${uri} to ${expected}`, async () => {
+            const res = await handler(input);
 
+            assert.equal(res.headers.location.value, expected);
+        });
+    });
+});
+
+describe("Test redirect doesn't occur", () => {
+    const tests = [
         {
             uri: "/data/product/dea-coastlines/",
             expected: "/data/product/dea-coastlines/"
@@ -45,7 +54,7 @@ describe("AWS CloudFront Redirects", () => {
 
     tests.forEach(({ uri, expected }) => {
         let input = { request: { uri: uri } };
-        it(`Correctly redirects ${uri} to ${expected}`, async () => {
+        it(`Doesn't redirect ${uri}`, async () => {
             const res = await handler(input);
 
             assert.equal(res.headers.location.value, expected);
