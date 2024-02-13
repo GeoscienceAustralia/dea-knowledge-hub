@@ -30,14 +30,18 @@ Launching JupyterLab from ARE
    NCI with compute capacity. DEA does not currently
    provide access to such a project.
 
+ARE allows you to run code directly using Jupyter Notebooks via their JupyterLab interface.
+
 To launch a JupyterLab session, follow the instructions in `Starting JupyterLab
 App (ARE User Guide) <https://opus.nci.org.au/display/Help/3.1+Starting+JupyterLab+App>`_ 
 page in the NCI Help. See below for the settings required to use DEA.
 
 Launching Virtual Desktops with ARE
 -----------------------------------
+Another option for accessing the NCI via ARE is to launch an interactive Virtual Desktop. This
+allows you to run your analyses in a similar interactive interface to your personal computer.
 
-To launch an interactive Virtual Desktop, follow the instructions in `Connecting to
+To launch an Virtual Desktop, follow the instructions in `Connecting to
 the VDI <https://opus.nci.org.au/display/Help/2.1.+Connecting+to+the+VDI>`_ page in the 
 NCI Help. See below for the settings required to use DEA.
 
