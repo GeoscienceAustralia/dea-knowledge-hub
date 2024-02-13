@@ -2,7 +2,7 @@
 const { handler } = require("./redirects.js");
 var assert = require("assert");
 
-describe("handler()", () => {
+describe("AWS CloudFront Redirects", () => {
     const tests = [
         // Should redirect correctly
 
