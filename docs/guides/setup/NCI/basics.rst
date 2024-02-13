@@ -74,7 +74,7 @@ Set :guilabel:`Modules` to ``dea``.
 
 .. dropdown:: Troubleshooting: fe_sendauth: no password supplied
 
-   When the `dea` module is first run, a Datacube database role and ``.pgpass`` password
+   When the ``dea`` module is first run, a Datacube database role and ``.pgpass`` password
    file is automatically created for you in your home directory. If you used a previous
    version of the NCI's Virtual Desktop software (e.g. VDI, OOD), you may need to copy
    this original ``.pgpass`` file into your new ARE home directory. If you cannot locate
