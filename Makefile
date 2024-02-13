@@ -22,3 +22,6 @@ start:
 
 ssh:
 	docker exec -it dea-docs /bin/sh
+
+test-redirects:
+	npx mocha ./aws/cloudfront/functions/*.js

@@ -13,8 +13,8 @@ async function handler(event) {
     };
 
     // Redirect DEA Tools source code URLs to the relevant 'automodule' page generated from the source code.
-    // E.g. "../Tools/dea_tools/coastal.py" => "/notebooks/Tools/gen/dea_tools.coastal/"
-    // E.g. "../Tools/dea_tools/app/animations.py" => "/notebooks/Tools/gen/dea_tools.app.animations/"
+    // E.g. "/notebooks/Beginners_guide/Tools/dea_tools/plotting.py" => "/notebooks/Tools/gen/dea_tools.plotting/"
+    // E.g. "/notebooks/Interactive_apps/Tools/dea_tools/app/animations.py" => "/notebooks/Tools/gen/dea_tools.app.animations/"
 
     if (deaToolsSourceCodePattern.test(uri)) {
         const automoduleName = deaToolsSourceCodePattern
