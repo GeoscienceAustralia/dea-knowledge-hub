@@ -39,7 +39,7 @@ page in the NCI Help. See below for the settings required to use DEA.
 Launching Virtual Desktops with ARE
 -----------------------------------
 Another option for accessing the NCI via ARE is to launch an interactive Virtual Desktop. This
-allows you to run your analyses in a similar interactive interface to your personal computer.
+allows you to run your analyses using a similar interactive interface to your personal computer.
 
 To launch an Virtual Desktop, follow the instructions in `Connecting to
 the VDI <https://opus.nci.org.au/display/Help/2.1.+Connecting+to+the+VDI>`_ page in the 
