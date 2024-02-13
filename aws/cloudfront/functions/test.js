@@ -35,29 +35,26 @@ describe("Test redirect occurs", () => {
 describe("Test redirect doesn't occur", () => {
     const tests = [
         {
-            uri: "/data/product/dea-coastlines/",
-            expected: "/data/product/dea-coastlines/"
+            uri: "/data/product/dea-coastlines/"
         },
         {
-            uri: "/data/product/dea-coastlines/?tab=overview",
-            expected: "/data/product/dea-coastlines/?tab=overview"
+            uri: "/data/product/dea-coastlines/?tab=overview"
         },
         {
-            uri: "/notebooks/Tools/gen/dea_tools.plotting/",
-            expected: "/notebooks/Tools/gen/dea_tools.plotting/"
+            uri: "/notebooks/Tools/gen/dea_tools.plotting/"
         },
         {
-            uri: "/notebooks/Tools/gen/dea_tools.app.animations/",
-            expected: "/notebooks/Tools/gen/dea_tools.app.animations/"
+            uri: "/notebooks/Tools/gen/dea_tools.app.animations/"
         }
     ];
 
-    tests.forEach(({ uri, expected }) => {
+    tests.forEach(({ uri }) => {
         let input = { request: { uri: uri } };
+        let expected = { uri: uri };
         it(`Doesn't redirect ${uri}`, async () => {
             const res = await handler(input);
 
-            assert.equal(res.headers.location.value, expected);
+            assert.deepStrictEqual(res, expected);
         });
     });
 });
