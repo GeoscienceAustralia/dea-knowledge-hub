@@ -197,15 +197,18 @@ entries:
 
   - file: validation/index
     subtrees:
-      - caption: Yearly Reports
+      - caption: Daily Reports
         entries:
-          - glob: validation/yearly-report/*/index
+          - file: validation/daily-reports
+            title: All daily reports
+            entries:
+              - glob: validation/daily-report/*/index
       - caption: Quarterly Reports
         entries:
           - glob: validation/quarterly-report/*/index
-      - caption: Daily Reports
+      - caption: Yearly Reports
         entries:
-          - glob: validation/daily-report/*/index
+          - glob: validation/yearly-report/*/index
 
   - file: tags/index
     entries:
