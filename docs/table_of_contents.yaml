@@ -197,6 +197,9 @@ entries:
 
   - file: validation/index
     subtrees:
+      - caption: Yearly Reports
+        entries:
+          - glob: validation/yearly-report/*/index
       - caption: Quarterly Reports
         entries:
           - glob: validation/quarterly-report/*/index
