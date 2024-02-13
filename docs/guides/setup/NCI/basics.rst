@@ -82,14 +82,14 @@ Set :guilabel:`Modules` to ``dea``.
    </video>
 
 
-.. dropdown:: Troubleshooting: fe_sendauth: no password supplied
+.. dropdown:: Troubleshooting: 'fe_sendauth: no password supplied'
 
    When the ``dea`` module is first run, a Datacube database role and ``.pgpass`` password
    file is automatically created for you in your home directory. If you used a previous
    version of the NCI's Virtual Desktop software (e.g. VDI, OOD), you may need to copy
    this original ``.pgpass`` file into your new ARE home directory. If you cannot locate
-   your ``.pgpass`` file, please contact earth.observation@ga.gov.au to request your DEA
-   database account be reset.
+   your ``.pgpass`` file, please contact earth.observation@ga.gov.au to request for your
+   DEA database account to be reset.
 
 
 Setting up Digital Earth Australia
@@ -97,7 +97,7 @@ Setting up Digital Earth Australia
 
 You will need to install DEA the first time you launch a session.
 
-In a terminal window on either JupyterLab or the ARE Virtual Desktop, run the command::
+In a terminal window in either JupyterLab or the ARE Virtual Desktop, run the command::
 
    sh /g/data/v10/public/digitalearthau/install.sh
 
@@ -106,10 +106,9 @@ repository <https://github.com/GeoscienceAustralia/dea-notebooks/tree/stable>`_
 into your home directory (e.g. :file:`~/dea-notebooks`).
 
 .. note:: DEA Notebooks is a large repository that will take up a large proportion of
-   of available storage space in your home directory. We recommend cloning a new 
-   copy of the repository to a location on ``/g/data/`` when possible (following the
-   `DEA notebooks guide here
-   <https://github.com/GeoscienceAustralia/dea-notebooks/wiki/Edit-a-DEA-Notebook>`_).
+   of available storage space in your home directory. We recommend cloning a new copy 
+   of the repository to a location on ``/g/data/`` when possible. (Learn how to `clone
+   a DEA Notebook <https://github.com/GeoscienceAustralia/dea-notebooks/wiki/Edit-a-DEA-Notebook>`_.)
 
 
 
