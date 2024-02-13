@@ -13,15 +13,13 @@ Australian Research Environment
 ===============================
 
 The easiest access to Digital Earth Australia on the NCI is via the
-:term:`Australian Research Environment<ARE>`. Through your web browser you can
-access a Virtual Desktop environment or execute code in JupyterLab Notebooks.
+:term:`Australian Research Environment<ARE>`. ARE has full access to the
+NCI Gadi_ :term:`HPC` Supercomputer, allowing you to run analyses using
+DEA at scale through your web browser via either an interactive Virtual 
+Desktop environment or by executing code in JupyterLab Notebooks.
 
 For more information on ARE see the `NCI's
 ARE User Guide <https://opus.nci.org.au/display/Help/ARE+User+Guide>`_.
-
-It's also possible to use DEA on the NCI's Gadi_ :term:`HPC` Supercomputer,
-however unless you're experienced with :term:`SSH` and HPC systems, it's much
-easier to get started with :term:`ARE`.
 
 .. _Gadi: https://nci.org.au/our-systems/hpc-systems/
    
@@ -51,12 +49,20 @@ to access DEA.
 
 **Storage**
 
+To access data on the NCI's filesystem, you need to list all NCI projects containing data
+you wish to access. Most importantly, this includes the ``v10`` NCI project that contains
+files required to set up Datacube.
+
 Type `gdata/v10` into the :guilabel:`Storage` box, then use the dropdown to select other
 projects containing data you wish to access. See :ref:`nci_data_access`.
 
 .. figure:: /_files/nci/are_highlight_v10_storage_setting.png
 
 **DEA Environment**
+
+DEA provides a pre-packaged NCI environment containing all important Python packages required
+to run a Datacube analysis. To use this environment, we need to specify it when we launch a
+JupyterLab or Virtual Desktop session.
 
 Scroll down and expand :guilabel:`Advanced options...`.
 
@@ -84,6 +90,8 @@ Set :guilabel:`Modules` to ``dea``.
 
 Setting up Digital Earth Australia
 ==================================
+
+You will need to install DEA the first time you launch a session.
 
 In a terminal window on either JupyterLab or the ARE Virtual Desktop, run the command::
 
