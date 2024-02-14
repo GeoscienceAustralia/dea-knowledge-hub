@@ -1,9 +1,17 @@
 .validation-report {
-    &-table {
+    &-variables-table {
         tr td:first-child {
           font-weight: bold;
         }
+    }
 
+    &-results-table {
+        tbody tr:first-child {
+          font-weight: bold;
+        }
+    }
+
+    &-variables-table, &-results-table {
         & + ul {
             display: flex;
             justify-content: end;
@@ -16,3 +24,4 @@
         }
     }
 }
+

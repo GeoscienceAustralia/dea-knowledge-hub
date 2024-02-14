@@ -1,6 +1,6 @@
 # 2023-09-22: Mullion, Landsat 8 overpass
 
-A Daily Validation Summary Report of the surface reflectance data collected on the date of 22 September 2023 by Geoscience Australia.
+A Daily Validation Summary Report of the surface reflectance data collected on the date of 22 September 2023 by Geoscience&ndash;Australia.
 
 :::{contents} In this report
 :local:
@@ -12,7 +12,7 @@ A Daily Validation Summary Report of the surface reflectance data collected on t
 The variables and other environmental factors that were present on the day the data was collected.
 
 :::{csv-table}
-:class: validation-report-table
+:class: validation-report-variables-table
 
 "Instrument(s) used","ASD FR4 (18179/3)"
 "Time of field site measurements (UTC)","2023-09-21 23:56:14 to 2023-09-22 00:28:20"
@@ -25,12 +25,12 @@ The variables and other environmental factors that were present on the day the d
 * [Access the NSD database](#)
 * {download}`Download as CSV <./variables-2023-09-22.csv>`
 
-## Results 
+## Results
 
-The surface reflectance statistics collected on this day. They are grouped into bands which are standardised across our datasets so you can use these statistics to validate our other datasets.
+The surface reflectance statistics collected on this day are grouped into bands. This allows the data to be used to validate our other datasets which are also grouped into the same standardised bands.
 
 :::{csv-table}
-:class: validation-report-table
+:class: validation-report-results-table
 
 "<a href='/guides/about/glossary/#band' target='_blank'>Band</a>","Sat Mean","Sat rms","Field mean","Field rms"
 "CA","0.0372","0.00146","0.0363","0.00667"
@@ -46,6 +46,7 @@ The surface reflectance statistics collected on this day. They are grouped into 
 * {download}`Download as CSV <./results-2023-09-22.csv>`
 
 ## Figures
+
 Click each figure to view it at full size.
 
 :::::{grid} 1 1 2 3
