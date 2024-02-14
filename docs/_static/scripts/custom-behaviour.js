@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
             let caption = captions[i];
             let h2 = document.createElement("h2");
             h2.innerHTML = caption.children[0].innerHTML;
-            caption.parentNode.replaceChild(caption, h2);
+            caption.parentNode.replaceChild(h2, caption);
         }
     })();
 

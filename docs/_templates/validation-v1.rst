@@ -10,9 +10,13 @@
 {{ data.tag_pages_title }}
 ======================================================================================================================================================
 
-{% for page in data.tag_pages %}
-`{{ page.label }} </tags/{{ page.tag }}/>`_
-{% endfor %}
+<div class="toctree-wrapper">
+   <ul>
+   {% for page in data.tag_pages %}
+       <li class="toctree-l1"><a href="/tags/{{ page.tag }}/">{{ page.label }}</a></li>
+   {% endfor %}
+   </ul>
+   </div>
 {% endif %}
 
 .. tableofcontents::
