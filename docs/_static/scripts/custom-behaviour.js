@@ -17,6 +17,19 @@ document.addEventListener("DOMContentLoaded", function (event) {
         }
     })();
 
+    // Convert the toctree caption elements to H2 headings.
+
+    (function () {
+        let captions = document.querySelectorAll(".toctree-wrapper p.caption");
+
+        for (let i = 0; i < captions.length; i++) {
+            let caption = captions[i];
+            let h2 = document.createElement("h2");
+            h2.innerHTML = caption.children[0].innerHTML;
+            caption.parentNode.replaceChild(caption, h2);
+        }
+    })();
+
     // Add the section ID to the heading's 'data-anchor-id' property.
 
     (function () {
