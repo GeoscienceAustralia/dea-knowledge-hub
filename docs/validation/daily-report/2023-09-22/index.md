@@ -1,14 +1,10 @@
-% Template: DailyValidationSummary 0.0.1
-
 # 2023-09-22: Mullion, Landsat 8 overpass
 
-This daily validation summary reports the surface reflectance data collected on the date of 22 September 2023 by the Cal/Val team of Geoscience Australia.
+A Daily Validation Summary Report of the surface reflectance data collected on the date of 22 September 2023 by Geoscience Australia.
 
 ## Measurement variables
 
-These are measurements of the environmental conditions that were encountered on the day the data was collected.
-
-<a class="validation-report-download-link" href="./measurement-variables-2023-09-22.csv" download>Download as CSV</a> <a class="validation-report-download-link" href="#" download>Access the full NSD database</a>
+Here are the variables that may affect the data that was collected.
 
 :::{csv-table}
 :class: validation-report-summary-table
@@ -21,11 +17,15 @@ These are measurements of the environmental conditions that were encountered on 
 "<a href='/guides/about/glossary/#pq' target='_blank'>Matchup quality</a>","Excellent"
 :::
 
+<a class="validation-report-download-link" href="./measurement-variables-2023-09-22.csv" download>Download as CSV</a> <a class="validation-report-download-link" href="#" download>Access the full NSD database</a>
+
 ## Surface reflectance statistics 
 
-These are the surface reflectance statistics collected on this day. They are standardised into bands so that you can use them to validate our other datasets.
 
-<a class="validation-report-download-link" href="./surface-reflectance-statistics-2023-09-22.csv" download>Download as CSV</a> <a class="validation-report-download-link" href="#" download>Access the full NSD database</a>
+
+
+
+These are the surface reflectance statistics collected on this day. They are standardised into bands so that you can use them to validate our other datasets.
 
 :::{csv-table}
 :class: validation-report-statistics-table
@@ -39,6 +39,12 @@ These are the surface reflectance statistics collected on this day. They are sta
 "<a href='/guides/about/glossary/#swir' target='_blank'>SWIR1</a>","0.234","0.00781","0.251","0.0383"
 "<a href='/guides/about/glossary/#swir' target='_blank'>SWIR2</a>","0.118","0.00442","0.128","0.0238"
 :::
+
+<a class="validation-report-download-link" href="./surface-reflectance-statistics-2023-09-22.csv" download>Download as CSV</a> <a class="validation-report-download-link" href="#" download>Access the full NSD database</a>
+
+## View the figures
+
+Click each figure to view the full-size image.
 
 :::::{grid} 1 1 2 3
 ::::{grid-item}
