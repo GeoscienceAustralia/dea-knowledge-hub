@@ -1,6 +1,6 @@
 # 2023-09-22: Mullion, Landsat 8 overpass
 
-A Daily Validation Summary Report of the surface reflectance data collected on the date of 22 September 2023 by Geoscience&nbsp;Australia.
+A Daily Validation Summary Report of the surface reflectance data collected on the date of 22 September 2023 by Geoscience&nbsp;Australia. The full data can be found in the [NSD database](#).
 
 :::{contents} In this report
 :local:
@@ -22,12 +22,11 @@ The variables and other environmental factors that were present on the day the d
 "<a href='/guides/about/glossary/#pq' target='_blank'>Matchup quality</a>","Excellent"
 :::
 
-* [Access the NSD database](#)
 * {download}`Download as CSV <./Daily_Validation_Variables_2023_09_22.csv>`
 
 ## Results
 
-The surface reflectance statistics collected on this day are grouped into bands. This allows the data to be used to validate our other datasets which are also grouped into the same standardised bands.
+The surface reflectance statistics collected on this day are grouped into bands. This allows the data to be used to validate our other datasets which use the same standardised bands.
 
 :::{csv-table}
 :class: validation-report-results-table
@@ -42,7 +41,6 @@ The surface reflectance statistics collected on this day are grouped into bands.
 "<a href='/guides/about/glossary/#swir' target='_blank'>SWIR2</a>","0.118","0.00442","0.128","0.0238"
 :::
 
-* [Access the NSD database](#)
 * {download}`Download as CSV <./Daily_Validation_Results_2023_09_22.csv>`
 
 ## Figures
