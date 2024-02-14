@@ -1,6 +1,6 @@
 # 2023-09-22: Mullion, Landsat 8 overpass
 
-A Daily Validation Summary Report of the surface reflectance data collected on the date of 22 September 2023 by Geoscience&nbsp;Australia. The full data can be found in the [NSD database](#).
+A Daily Validation Summary Report of the surface reflectance data collected on the date of 22 September 2023 by Geoscience&nbsp;Australia. The full data can be found in the [NSD database](https://www.dea.ga.gov.au/products/national-spectral-database).
 
 :::{contents} In this report
 :local:
