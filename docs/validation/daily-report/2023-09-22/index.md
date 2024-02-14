@@ -2,9 +2,14 @@
 
 A Daily Validation Summary Report of the surface reflectance data collected on the date of 22 September 2023 by Geoscience Australia.
 
-## Measurement variables
+:::{contents} In this report
+:local:
+:backlinks: none
+:::
 
-Here are the variables that may affect the data that was collected.
+## Variables
+
+The variables and other environmental factors that were present on the day the data was collected.
 
 :::{csv-table}
 :class: validation-report-summary-table
@@ -17,15 +22,11 @@ Here are the variables that may affect the data that was collected.
 "<a href='/guides/about/glossary/#pq' target='_blank'>Matchup quality</a>","Excellent"
 :::
 
-<a class="validation-report-download-link" href="./measurement-variables-2023-09-22.csv" download>Download as CSV</a> <a class="validation-report-download-link" href="#" download>Access the full NSD database</a>
+<a class="validation-report-download-link" href="./measurement-variables-2023-09-22.csv" download>Download as CSV</a> <a class="validation-report-download-link" href="#" download>Access the NSD database</a>
 
-## Surface reflectance statistics 
+## Results 
 
-
-
-
-
-These are the surface reflectance statistics collected on this day. They are standardised into bands so that you can use them to validate our other datasets.
+The surface reflectance statistics collected on this day. They are grouped into bands which are standardised across our datasets so you can use these statistics to validate our other datasets.
 
 :::{csv-table}
 :class: validation-report-statistics-table
@@ -40,11 +41,10 @@ These are the surface reflectance statistics collected on this day. They are sta
 "<a href='/guides/about/glossary/#swir' target='_blank'>SWIR2</a>","0.118","0.00442","0.128","0.0238"
 :::
 
-<a class="validation-report-download-link" href="./surface-reflectance-statistics-2023-09-22.csv" download>Download as CSV</a> <a class="validation-report-download-link" href="#" download>Access the full NSD database</a>
+<a class="validation-report-download-link" href="./surface-reflectance-statistics-2023-09-22.csv" download>Download as CSV</a> <a class="validation-report-download-link" href="#" download>Access the NSD database</a>
 
-## View the figures
-
-Click each figure to view the full-size image.
+## Figures
+Click each figure to view it at full size.
 
 :::::{grid} 1 1 2 3
 ::::{grid-item}
