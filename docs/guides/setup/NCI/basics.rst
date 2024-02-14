@@ -30,7 +30,8 @@ Launching JupyterLab from ARE
    NCI with compute capacity. DEA does not currently
    provide access to such a project.
 
-ARE allows you to run code directly using Jupyter Notebooks via their JupyterLab interface.
+ARE allows you to run code directly using Jupyter Notebooks via a JupyterLab interface. This
+is the recommended and simplest way to interact with ARE.
 
 To launch a JupyterLab session, follow the instructions in `Starting JupyterLab
 App (ARE User Guide) <https://opus.nci.org.au/display/Help/3.1+Starting+JupyterLab+App>`_ 
@@ -106,9 +107,9 @@ repository <https://github.com/GeoscienceAustralia/dea-notebooks/tree/stable>`_
 into your home directory (e.g. :file:`~/dea-notebooks`).
 
 .. note:: DEA Notebooks is a large repository that will take up a large proportion of
-   of available storage space in your home directory. We recommend cloning a new copy 
+   available storage space in your home directory. We recommend cloning a new copy 
    of the repository to a location on ``/g/data/`` when possible. (Learn how to `clone
-   a DEA Notebook <https://github.com/GeoscienceAustralia/dea-notebooks/wiki/Edit-a-DEA-Notebook>`_.)
+   DEA Notebooks <https://github.com/GeoscienceAustralia/dea-notebooks/wiki/Edit-a-DEA-Notebook>`_.)
 
 
 
