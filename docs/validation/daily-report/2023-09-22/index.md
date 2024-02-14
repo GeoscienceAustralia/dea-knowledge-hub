@@ -40,30 +40,21 @@ These are the surface reflectance statistics collected on this day. They are sta
 "<a href='/guides/about/glossary/#swir' target='_blank'>SWIR2</a>","0.118","0.00442","0.128","0.0238"
 :::
 
-<div class="gallery">
-    <a href="https://source.unsplash.com/random/300×300" data-caption="Image caption">
-        <img src="https://source.unsplash.com/random/300×300" alt="First image">
-    </a>
-    <a href="https://source.unsplash.com/random/300×300">
-        <img src="https://source.unsplash.com/random/300×300" alt="Second image">
-    </a>
-</div>
-
 :::::{grid} 1 1 2 3
 ::::{grid-item}
-:::{figure} ./surface-reflectance-tile.png
+:::{thumbnail} ./surface-reflectance-tile.png
 
 A satellite imagery tile showing surface reflectance.
 :::
 ::::
 ::::{grid-item}
-:::{figure} ./band-chart.png
+:::{thumbnail} ./band-chart.png
 
 A chart showing bands.
 :::
 ::::
 ::::{grid-item}
-:::{figure} ./surface-reflectance-chart.png
+:::{thumbnail} ./surface-reflectance-chart.png
 
 A chart showing surface reflectance.
 :::
