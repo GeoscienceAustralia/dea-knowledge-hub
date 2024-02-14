@@ -75,7 +75,7 @@
 
       .. rubric:: Validation reports
 
-      See the Cal/Val validation reports on a daily and quarterly basis.
+      Assess the validity of our datasets against these validation reports.
 
       `Visit the Validation reports </validation/>`_
 
