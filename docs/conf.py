@@ -73,7 +73,6 @@ extensions = [
     "sphinxext.opengraph",
     "notfound.extension",
     "sphinx_copybutton",
-    "sphinxcontrib.images",
     # "sphinx_tags",
 ]
 

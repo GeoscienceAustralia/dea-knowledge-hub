@@ -42,19 +42,19 @@ These are the surface reflectance statistics collected on this day. They are sta
 
 :::::{grid} 1 1 2 3
 ::::{grid-item}
-:::{thumbnail} ./surface-reflectance-tile.png
+:::{figure} ./surface-reflectance-tile.png
 
 A satellite imagery tile showing surface reflectance.
 :::
 ::::
 ::::{grid-item}
-:::{thumbnail} ./band-chart.png
+:::{figure} ./band-chart.png
 
 A chart showing bands.
 :::
 ::::
 ::::{grid-item}
-:::{thumbnail} ./surface-reflectance-chart.png
+:::{figure} ./surface-reflectance-chart.png
 
 A chart showing surface reflectance.
 :::
