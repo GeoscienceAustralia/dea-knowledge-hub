@@ -12,7 +12,7 @@ A Daily Validation Summary Report of the surface reflectance data collected on t
 The variables and other environmental factors that were present on the day the data was collected.
 
 :::{csv-table}
-:class: validation-report-summary-table
+:class: validation-report-table
 
 "Instrument(s) used","ASD FR4 (18179/3)"
 "Time of field site measurements (UTC)","2023-09-21 23:56:14 to 2023-09-22 00:28:20"
@@ -22,14 +22,15 @@ The variables and other environmental factors that were present on the day the d
 "<a href='/guides/about/glossary/#pq' target='_blank'>Matchup quality</a>","Excellent"
 :::
 
-<a class="validation-report-download-link" href="./measurement-variables-2023-09-22.csv" download>Download as CSV</a> <a class="validation-report-download-link" href="#" download>Access the NSD database</a>
+* [Access the NSD database](#)
+* {download}`Download as CSV <./variables-2023-09-22.csv>`
 
 ## Results 
 
 The surface reflectance statistics collected on this day. They are grouped into bands which are standardised across our datasets so you can use these statistics to validate our other datasets.
 
 :::{csv-table}
-:class: validation-report-statistics-table
+:class: validation-report-table
 
 "<a href='/guides/about/glossary/#band' target='_blank'>Band</a>","Sat Mean","Sat rms","Field mean","Field rms"
 "CA","0.0372","0.00146","0.0363","0.00667"
@@ -41,7 +42,8 @@ The surface reflectance statistics collected on this day. They are grouped into 
 "<a href='/guides/about/glossary/#swir' target='_blank'>SWIR2</a>","0.118","0.00442","0.128","0.0238"
 :::
 
-<a class="validation-report-download-link" href="./surface-reflectance-statistics-2023-09-22.csv" download>Download as CSV</a> <a class="validation-report-download-link" href="#" download>Access the NSD database</a>
+* [Access the NSD database](#)
+* {download}`Download as CSV <./results-2023-09-22.csv>`
 
 ## Figures
 Click each figure to view it at full size.

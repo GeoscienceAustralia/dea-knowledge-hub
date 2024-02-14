@@ -1,20 +1,18 @@
 .validation-report {
-    &-summary-table {
+    &-table {
         tr td:first-child {
           font-weight: bold;
         }
-    }
 
-    &-statistics-table {
-        margin-bottom: 3rem;
+        & + ul {
+            display: flex;
+            justify-content: end;
+            list-style: none;
+            padding: 0;
 
-        tbody tr:first-child {
-          font-weight: bold;
+            li {
+                margin-right: 1rem;
+            }
         }
-    }
-
-    &-download-link {
-        float: right;
-        margin-bottom: 0.25rem;
     }
 }
