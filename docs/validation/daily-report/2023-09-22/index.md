@@ -23,7 +23,7 @@ The variables and other environmental factors that were present on the day the d
 :::
 
 * [Access the NSD database](#)
-* {download}`Download as CSV <./variables-2023-09-22.csv>`
+* {download}`Download as CSV <./Daily_Validation_Variables_2023_09_22.csv>`
 
 ## Results
 
@@ -43,7 +43,7 @@ The surface reflectance statistics collected on this day are grouped into bands.
 :::
 
 * [Access the NSD database](#)
-* {download}`Download as CSV <./results-2023-09-22.csv>`
+* {download}`Download as CSV <./Daily_Validation_Results_2023_09_22.csv>`
 
 ## Figures
 
