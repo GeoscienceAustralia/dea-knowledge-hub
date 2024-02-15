@@ -201,9 +201,11 @@ entries:
 
   - file: tech-alerts-changelog/index
     title: DEA Tech alerts and changelog
-    entries:
-      - 
-      - file: tech-alerts-changelog/old
+    subtrees:
+      - caption: Previous years
+        reversed: True
+        entries:
+          - glob: tech-alerts-changelog/*
   - file: data/old-version/index
     entries:
       - glob: data/old-version/*/index
