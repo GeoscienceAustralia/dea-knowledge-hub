@@ -202,6 +202,7 @@ entries:
   - file: tech-alerts-changelog/index
     title: DEA Tech alerts and changelog
     entries:
+      - 
       - file: tech-alerts-changelog/old
   - file: data/old-version/index
     entries:
