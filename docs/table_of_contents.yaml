@@ -179,21 +179,21 @@ entries:
 
   - file: notebooks/README
     title: DEA Notebooks
-    # subtrees:
-    #   - caption: Getting started
-    #     entries:
-    #       - file: notebooks/Beginners_guide/README # Contains its own table of contents.
-    #
-    #   - caption: Using the data products
-    #     entries:
-    #       - file: notebooks/DEA_products/README # Contains its own table of contents.
-    #       - file: notebooks/How_to_guides/README # Contains its own table of contents.
-    #       - file: notebooks/Real_world_examples/README # Contains its own table of contents.
-    #
-    #   - caption: Resources
-    #     entries:
-    #       - file: notebooks/Interactive_apps/README # Contains its own table of contents.
-    #       - file: notebooks/Tools/index # Contains its own table of contents.
+    subtrees:
+      - caption: Getting started
+        entries:
+          - file: notebooks/Beginners_guide/README # Contains its own table of contents.
+
+      - caption: Using the data products
+        entries:
+          - file: notebooks/DEA_products/README # Contains its own table of contents.
+          - file: notebooks/How_to_guides/README # Contains its own table of contents.
+          - file: notebooks/Real_world_examples/README # Contains its own table of contents.
+
+      - caption: Resources
+        entries:
+          - file: notebooks/Interactive_apps/README # Contains its own table of contents.
+          - file: notebooks/Tools/index # Contains its own table of contents.
 
   - file: tags/index
     entries:
