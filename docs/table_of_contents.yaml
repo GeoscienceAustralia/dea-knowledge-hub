@@ -199,8 +199,10 @@ entries:
     entries:
       - glob: tags/*
 
-  - file: guides/tech_alerts_changelog
+  - file: tech-alerts-changelog/index
     title: DEA Tech alerts and changelog
+    entries:
+      - file: tech-alerts-changelog/old
   - file: data/old-version/index
     entries:
       - glob: data/old-version/*/index
