@@ -184,7 +184,7 @@ entries:
         entries:
           - file: notebooks/Beginners_guide/README # Contains its own table of contents.
 
-      - caption: Explore topics
+      - caption: Explore the notebooks
         entries:
           - file: notebooks/DEA_products/README # Contains its own table of contents.
           - file: notebooks/How_to_guides/README # Contains its own table of contents.
