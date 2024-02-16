@@ -11,5 +11,5 @@
 
 .. rubric:: Older entries
 
-`View entries from previous years <./previous-years>`_
+View the `tech alerts and changelogs from previous years <./previous-years>`_
 
