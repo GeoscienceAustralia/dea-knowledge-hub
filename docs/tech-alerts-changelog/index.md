@@ -61,3 +61,4 @@ Major update to the [DEA Tools Python package](https://docs.dea.ga.gov.au/notebo
 * Enhanced [DEA Tools Python Package API documentation](https://docs.dea.ga.gov.au/notebooks/Tools/)
 * Improved interactive widget functionality for satellite image export and animations
 
+[View entries from previous years](./previous-years)
