@@ -10,6 +10,8 @@
    :parser: myst_parser.sphinx_
 
 .. rubric:: Older entries
+   :name: older-entries
+   :class: h2
 
-View the `tech alerts and changelogs from previous years <./previous-years>`_
+View the `tech alerts and changelogs from previous years <./previous-years>`_.
 

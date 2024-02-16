@@ -60,7 +60,7 @@
 
       .. rubric:: DEA Tech Alerts and Changelog
 
-      Find out about the latest updates to DEA's products and services, as well as planned and unplanned outages.
+      Find out about the latest updates to DEA's products and services, planned maintenance, and any outages that may occur.
 
       `Visit the DEA Tech Alerts and Changelog </tech-alerts-changelog/>`_
 
