@@ -1,5 +1,3 @@
-# Digital Earth Australia Tech Alerts and Changelog
-
 % If status = green, class = tip
 % All DEA systems are working as expected. There are no outstanding incidents or errors to report.
 % See the [DEA monitoring dashboard](https://monitoring.dea.ga.gov.au/). 
@@ -37,7 +35,7 @@ is impacting approximately 0.5% of our Sentinel-2 Analysis Ready Data (S2 ARD) b
 
 Affected products: 
 
-* ARD Sentinel-2 products (ga_s2am_ard_3, ga_s2bm_ard_3)  
+* ARD Sentinel-2 products (ga_s2am_ard_3, ga_s2bm_ard_3)
 
 See [DEA Tech alert email](https://communication.ga.gov.au/link/id/zzzz659df9f7f306b556Pzzzz61de67bd94bfe861/page.html) for more information. 
 Click [here](https://communication.ga.gov.au/link/id/zzzz659de7f165049054Pzzzz61de67bd94bfe861/page.html) to subscribe to DEA Tech alert emails.
@@ -61,4 +59,3 @@ Major update to the [DEA Tools Python package](https://docs.dea.ga.gov.au/notebo
 * Enhanced [DEA Tools Python Package API documentation](https://docs.dea.ga.gov.au/notebooks/Tools/)
 * Improved interactive widget functionality for satellite image export and animations
 
-[View entries from previous years](./previous-years)

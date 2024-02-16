@@ -205,6 +205,7 @@ entries:
       - caption: Older entries
         entries:
           - file: tech-alerts-changelog/previous-years/index
+            title: View previous years
             options:
               reversed: True
             entries:
