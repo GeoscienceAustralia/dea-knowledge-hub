@@ -202,7 +202,7 @@ entries:
   - file: tech-alerts-changelog/index
     title: DEA Tech alerts and changelog
     subtrees:
-      - caption: Previous years
+      - caption: Older entries
         reversed: True
         entries:
           - glob: tech-alerts-changelog/*
