@@ -200,7 +200,6 @@ entries:
       - glob: tags/*
 
   - file: tech-alerts-changelog/index
-    title: DEA Tech alerts and changelog
     subtrees:
       - caption: Older entries
         entries:
