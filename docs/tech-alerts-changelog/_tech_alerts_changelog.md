@@ -49,7 +49,7 @@ Major update to the [DEA Tools Python package](https://docs.dea.ga.gov.au/notebo
 * [interactive mapping](https://docs.dea.ga.gov.au/notebooks/Interactive_apps/README.html)
 * [spatial operations](https://docs.dea.ga.gov.au/notebooks/Tools/gen/dea_tools.spatial.html)
 
-... in addition to 14 new and updated Jupyter notebooks. See [version 0.3.0 release notes](https://github.com/GeoscienceAustralia/dea-notebooks/releases/tag/0.3.0) for more detail.
+In addition, this update includes 14 new and updated Jupyter notebooks. See [version 0.3.0 release notes](https://github.com/GeoscienceAustralia/dea-notebooks/releases/tag/0.3.0) for more detail.
 
 ## 2023-08: New notebooks, features and documentation
 
