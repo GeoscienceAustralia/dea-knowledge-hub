@@ -3,6 +3,9 @@ defaults:
   titlesonly: True
 
 entries:
+
+  # Data Products
+
   - file: data/index
     subtrees:
       - caption: Baseline satellite data
@@ -135,6 +138,8 @@ entries:
           - file: data/product/dea-burnt-area-characteristic-layers-sentinel-2-near-real-time/index
             title: DEA Burnt Area Characteristic Layers (Provisional)
 
+  # User Guides
+
   - file: guides/index
     title: User Guides
     subtrees:
@@ -177,6 +182,8 @@ entries:
           - file: guides/about/glossary
             title: DEA Glossary
 
+  # DEA Notebooks
+
   - file: notebooks/README
     title: DEA Notebooks
     subtrees:
@@ -195,9 +202,13 @@ entries:
         entries:
           - file: notebooks/Tools/index # Contains its own table of contents.
 
+  # Tags
+
   - file: tags/index
     entries:
       - glob: tags/*
+
+  # DEA Tech Alerts and Changelog
 
   - file: tech-alerts-changelog/index
     subtrees:
@@ -209,6 +220,8 @@ entries:
               reversed: True
             entries:
               - glob: tech-alerts-changelog/previous-years/*
+
+  # Old versions of products
 
   - file: data/old-version/index
     entries:
