@@ -17,6 +17,12 @@ See the [DEA monitoring dashboard](https://monitoring.dea.ga.gov.au/).
 See [alert dated 2024-01-10](./#sentinel-2-contiguity-fix-reprocessing-commenced) for more details.
 :::
 
+## 2024-02-15: Upcoming changes to DEA Geomedian, Median Absolute Deviation and other derivative products
+
+The Geoscience Australia [Landsat Geometric Median and Median Absolute Deviation](/data/product/dea-geometric-median-and-median-absolute-deviation-landsat) Collection 3 products v3.1.0 are undergoing a major upgrade which will be released shortly as v4.0.0.
+
+Find out the details [here](https://communication.ga.gov.au/link/id/zzzz65cd75b153a33890Pzzzz61de67bd94bfe861/page.html).
+
 ## 2024-01-24: Water Observations and Fractional Cover Percentiles 2023 annual summaries released
 
 See [DEA Water Observations Statistics (Landsat)](/data/product/dea-water-observations-statistics-landsat/?tab=history) 
