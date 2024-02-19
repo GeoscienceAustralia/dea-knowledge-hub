@@ -6,10 +6,9 @@
 
 :::{admonition} DEA system status: green
 :class: tip
-The [DEA Hotspots historical file - "all-data"](https://hotspots.dea.ga.gov.au/files/historic) is currently not being updated. 
-We are working on a resolution and the data will be backdated once a fix has been put in place.
+All DEA systems are working as expected. There are no outstanding incidents or errors to report.
 
-All other DEA systems are working as expected. See the [DEA monitoring dashboard](https://monitoring.dea.ga.gov.au/). 
+See the [DEA monitoring dashboard](https://monitoring.dea.ga.gov.au/).
 :::
 
 :::{admonition} DEA Sentinel-2 contiguity fix: ongoing
