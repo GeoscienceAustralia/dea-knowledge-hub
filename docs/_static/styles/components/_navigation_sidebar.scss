@@ -33,6 +33,10 @@
     nav.bd-docs-nav {
         padding-right: 2px;
 
+        &.bd-links li > a {
+            padding-left: 0;
+        }
+
         .bd-links__title {
             display: none;
         }
