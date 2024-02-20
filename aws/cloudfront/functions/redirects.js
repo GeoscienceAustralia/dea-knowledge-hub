@@ -9,8 +9,8 @@ async function handler(event) {
     const indexHtmlPattern = /\/index\.html$/g;
     const filetypeExtensionsPattern = /\.(html|rst|md|ipynb|py)$/g;
 
-    const docsHost = "docs";
-    const knowledgeHost = "knowledge";
+    const docsHost = "docs.dea.ga.gov.au";
+    const knowledgeHost = "knowledge.dea.ga.gov.au";
 
     const status301MovedPermanently = {
         statusCode: 301,

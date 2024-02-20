@@ -2,8 +2,25 @@
 const { handler } = require("./redirects.js");
 var assert = require("assert");
 
+function requestTemplate(uri) {
+    return {
+        request: {
+            uri: uri,
+            headers: {
+                host: {
+                    value: "docs.dea.ga.gov.au"
+                }
+            }
+        }
+    };
+}
+
 describe("Test redirect occurs", () => {
     const tests = [
+        {
+            uri: "https://docs.dea.ga.gov.au/",
+            expected: "https://knowledge.dea.ga.gov.au/"
+        },
         { uri: "/index.html", expected: "/" },
         { uri: "/page/index.html", expected: "/page/" },
         { uri: "/category/page.html", expected: "/category/page/" },
@@ -23,9 +40,8 @@ describe("Test redirect occurs", () => {
     ];
 
     tests.forEach(({ uri, expected }) => {
-        let input = { request: { uri: uri } };
         it(`Correctly redirects ${uri} to ${expected}`, async () => {
-            const res = await handler(input);
+            const res = await handler(requestTemplate(uri));
 
             assert.equal(res.headers.location.value, expected);
         });
@@ -49,10 +65,9 @@ describe("Test redirect doesn't occur", () => {
     ];
 
     tests.forEach(({ uri }) => {
-        let input = { request: { uri: uri } };
         let expected = { uri: uri };
         it(`Doesn't redirect ${uri}`, async () => {
-            const res = await handler(input);
+            const res = await handler(requestTemplate(uri));
 
             assert.deepStrictEqual(res, expected);
         });
