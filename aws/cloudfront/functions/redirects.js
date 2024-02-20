@@ -19,15 +19,15 @@ async function handler(event) {
 
     // Redirect subdomain from 'docs' to 'knowledge'. E.g. "docs.dea.ga.gov.au" => "knowledge.dea.ga.gov.au"
 
-    if (host === docsHost) {
-        return Object.assign(status301MovedPermanently, {
-            headers: {
-                location: {
-                    value: "https://" + knowledgeHost + uri
-                }
-            }
-        });
-    }
+    // if (host === docsHost) {
+    //     return Object.assign(status301MovedPermanently, {
+    //         headers: {
+    //             location: {
+    //                 value: "https://" + knowledgeHost + uri
+    //             }
+    //         }
+    //     });
+    // }
 
     // Redirect DEA Tools source code URLs to the relevant 'automodule' page generated from the source code.
     // E.g. "/notebooks/Beginners_guide/Tools/dea_tools/plotting.py" => "/notebooks/Tools/gen/dea_tools.plotting/"

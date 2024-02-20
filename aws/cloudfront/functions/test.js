@@ -2,6 +2,9 @@
 const { handler } = require("./redirects.js");
 var assert = require("assert");
 
+function 
+
+
 function requestTemplate(uri) {
     return {
         request: {
@@ -17,10 +20,7 @@ function requestTemplate(uri) {
 
 describe("Test redirect occurs", () => {
     const tests = [
-        {
-            uri: "https://docs.dea.ga.gov.au/",
-            expected: "https://knowledge.dea.ga.gov.au/"
-        },
+        { uri: "/", expected: "/" },
         { uri: "/index.html", expected: "/" },
         { uri: "/page/index.html", expected: "/page/" },
         { uri: "/category/page.html", expected: "/category/page/" },
