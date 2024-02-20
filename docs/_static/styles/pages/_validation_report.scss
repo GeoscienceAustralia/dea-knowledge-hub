@@ -21,22 +21,6 @@
             li {
                 margin-right: 1rem;
             }
-
-            a.download {
-                &:before {
-                    content: none;
-                }
-
-                code {
-                    background-color: initial;
-                    border: none;
-                    padding: 0;
-                    font-size: 1em;
-                    color: var(--pst-color-link);
-                    font-weight: normal;
-                    font-family: var(--pst-font-family-base-system);
-                }
-            }
         }
     }
 }
