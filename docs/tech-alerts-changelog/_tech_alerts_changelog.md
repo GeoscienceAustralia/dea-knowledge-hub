@@ -19,8 +19,8 @@ See [alert dated 2024-01-10](./#sentinel-2-contiguity-fix-reprocessing-commenced
 
 ## 2024-02-20: New external land use and bathymetry datasets added to DEA Sandbox
 
-Two exciting external datasets have been added to the DEA Sandbox: the [2020 ABARES Catchment Scale Land Use of Australia 50m](https://explorer.dea.ga.gov.au/products/abares_clum_2020/datasets/225c3043-6e3f-5cc4-95d0-fa64d79b7d38) 
-dataset, and the brand new [2023 Geoscience Australia AusBathyTopo 250m](https://explorer.dea.ga.gov.au/products/ga_ausbathytopo250m_2023/datasets/0b636500-ec81-5bb0-a81d-35c1aed00aaa)
+Two new external datasets have been added to the DEA Sandbox: the [2020 ABARES Catchment Scale Land Use of Australia 50m](https://explorer.dea.ga.gov.au/products/abares_clum_2020/datasets/225c3043-6e3f-5cc4-95d0-fa64d79b7d38) 
+dataset, and the recently released [2023 Geoscience Australia AusBathyTopo 250m](https://explorer.dea.ga.gov.au/products/ga_ausbathytopo250m_2023/datasets/0b636500-ec81-5bb0-a81d-35c1aed00aaa)
 high-resolution depth model for Australia. These datasets provide valuable insights into land use patterns and the physical
 shape of Australia's mainland, our coasts and deep ocean regions.
 
