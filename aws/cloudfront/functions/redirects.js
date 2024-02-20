@@ -74,4 +74,5 @@ async function handler(event) {
 
     return request;
 }
+
 module.exports = { handler };
