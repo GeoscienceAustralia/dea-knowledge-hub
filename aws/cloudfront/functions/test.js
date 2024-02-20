@@ -2,22 +2,23 @@
 const { handler } = require("./redirects.js");
 var assert = require("assert");
 
+const docsHost = "docs.dea.ga.gov.au";
+
 function requestTemplate(uri) {
     return {
         request: {
             uri: uri,
             headers: {
                 host: {
-                    value: "docs.dea.ga.gov.au"
+                    value: docsHost
                 }
             }
         }
     };
 }
 
-describe("Redirect tests", () => {
-    const correctlyRedirectsTests = [
-        { uri: "/", expected: "/" },
+describe("Redirect Tests", () => {
+    const redirectTests = [
         { uri: "/index.html", expected: "/" },
         { uri: "/page/index.html", expected: "/page/" },
         { uri: "/category/page.html", expected: "/category/page/" },
@@ -36,8 +37,8 @@ describe("Redirect tests", () => {
         }
     ];
 
-    correctlyRedirectsTests.forEach(({ uri, expected }) => {
-        it(`Correctly redirects ${uri} to ${expected}`, async () => {
+    redirectTests.forEach(({ uri, expected }) => {
+        it(`Redirects ${uri} to ${expected}`, async () => {
             const res = await handler(requestTemplate(uri));
 
             assert.equal(res.headers.location.value, expected);
@@ -45,26 +46,18 @@ describe("Redirect tests", () => {
     });
 
     const doesntRedirectTests = [
-        {
-            uri: "/data/product/dea-coastlines/"
-        },
-        {
-            uri: "/data/product/dea-coastlines/?tab=overview"
-        },
-        {
-            uri: "/notebooks/Tools/gen/dea_tools.plotting/"
-        },
-        {
-            uri: "/notebooks/Tools/gen/dea_tools.app.animations/"
-        }
+        "/data/product/dea-coastlines/",
+        "/data/product/dea-coastlines/?tab=overview",
+        "/notebooks/Tools/gen/dea_tools.plotting/",
+        "/notebooks/Tools/gen/dea_tools.app.animations/"
     ];
 
-    doesntRedirectTests.forEach(({ uri }) => {
-        let expected = { uri: uri };
+    doesntRedirectTests.forEach(uri => {
         it(`Doesn't redirect ${uri}`, async () => {
             const res = await handler(requestTemplate(uri));
 
-            assert.deepStrictEqual(res, expected);
+            assert.equal(res.headers.host.value, docsHost);
+            assert.equal(res.uri, uri);
         });
     });
 });
