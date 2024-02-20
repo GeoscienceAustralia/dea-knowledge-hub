@@ -25,7 +25,7 @@ DEA produces ARD data to three maturity levels:
 {#nrt}
 ### Near Real-Time (NRT)
 
-**Near Real-Time (NRT)** is a rapid ARD product produced within 48 hours (and often closer to 24 hours) of image capture. NRT 
+**Near Real-Time (NRT)** is a rapid ARD product produced within 48 hours of image capture. In most cases, it is produced in around 24 hours. NRT 
 data is corrected using existing long term climatology data, rather than observed conditions on the day of the 
 satellite capture (because these observational datasets, called [ancillaries](/guides/about/glossary/#ancillary), take a few weeks to be received by DEA). Due to the use of average
 condition data, rather than observational data to perform the corrections to produce ARD, NRT data can be published 
