@@ -17,6 +17,14 @@ See the [DEA monitoring dashboard](https://monitoring.dea.ga.gov.au/).
 See [alert dated 2024-01-10](./#sentinel-2-contiguity-fix-reprocessing-commenced) for more details.
 :::
 
+## 2024-02-20: DEA Notebooks update
+
+The main changes included in this update are as follows.
+
+* The DEA Tools `datahandling` module was updated along with the accompanying API documentation.
+* The DEA Sandbox now has a new start page which you will see when you start a new session. (It is the `DEA_Sandbox.ipynb` notebook file.)
+* The [pull request template](https://github.com/GeoscienceAustralia/dea-notebooks/blob/stable/.github/PULL_REQUEST_TEMPLATE.md) now recommends that you spellcheck your work using the DEA Sandbox's inbuilt spellchecker.
+
 ## 2024-02-20: New external land use and bathymetry datasets added to DEA Sandbox
 
 Two new external datasets have been added to the DEA Sandbox: the [2020 ABARES Catchment Scale Land Use of Australia 50m](https://explorer.dea.ga.gov.au/products/abares_clum_2020/datasets/225c3043-6e3f-5cc4-95d0-fa64d79b7d38) 
