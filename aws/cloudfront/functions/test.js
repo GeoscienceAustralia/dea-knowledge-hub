@@ -19,7 +19,7 @@ function requestTemplate(host, uri) {
 }
 
 describe("Redirect Tests", () => {
-    const redirectTests = [
+    const r1 = [
         { uri: "/index.html", expected: "/" },
         { uri: "/page/index.html", expected: "/page/" },
         { uri: "/category/page.html", expected: "/category/page/" },
@@ -38,23 +38,25 @@ describe("Redirect Tests", () => {
         }
     ];
 
-    redirectTests.forEach(({ uri, expected }) => {
-        it(`Redirects ${uri} to ${expected}`, async () => {
+    r1.forEach(({ uri, expected }, index) => {
+        const n = index + 1;
+        it(`R1.${n}. Redirects ${uri} to ${expected}`, async () => {
             const res = await handler(requestTemplate(knowledgeHost, uri));
 
             assert.equal(res.headers.location.value, expected);
         });
     });
 
-    const doesntRedirectTests = [
+    const r2 = [
         "/data/product/dea-coastlines/",
         "/data/product/dea-coastlines/?tab=overview",
         "/notebooks/Tools/gen/dea_tools.plotting/",
         "/notebooks/Tools/gen/dea_tools.app.animations/"
     ];
 
-    doesntRedirectTests.forEach(uri => {
-        it(`Doesn't redirect ${uri}`, async () => {
+    r2.forEach((uri, index) => {
+        const n = index + 1;
+        it(`R2.${n}. Doesn't redirect ${uri}`, async () => {
             const res = await handler(requestTemplate(knowledgeHost, uri));
 
             assert.ok(!res.hasOwnProperty("statusCode"));
@@ -62,16 +64,17 @@ describe("Redirect Tests", () => {
         });
     });
 
-    const subdomainRedirectTests = [
+    const r3 = [
         "/data/product/dea-coastlines/",
         "/data/product/dea-coastlines/?tab=overview"
     ];
 
-    subdomainRedirectTests.forEach(uri => {
+    r3.forEach((uri, index) => {
         const docsUri = "https://" + docsHost + uri;
         const knowledgeUri = "https://" + knowledgeHost + uri;
 
-        it(`Redirects subdomain from ${docsUri} to ${knowledgeUri}`, async () => {
+        const n = index + 1;
+        it(`R3.${n}. Redirects subdomain from ${docsUri} to ${knowledgeUri}`, async () => {
             const res = await handler(requestTemplate(docsHost, uri));
 
             assert.equal(res.headers.location.value, knowledgeUri);
