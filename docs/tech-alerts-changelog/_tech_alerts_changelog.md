@@ -23,7 +23,7 @@ The main changes included in this update are as follows.
 
 * The DEA Tools `datahandling` module was updated along with the accompanying API documentation.
 * The DEA Sandbox now has a new start page which you will see when you start a new session. (It is the `DEA_Sandbox.ipynb` notebook file.)
-* The [pull request template](https://github.com/GeoscienceAustralia/dea-notebooks/blob/stable/.github/PULL_REQUEST_TEMPLATE.md) now recommends that you spellcheck your work using the DEA Sandbox's inbuilt spellchecker.
+* The [pull request template](https://github.com/GeoscienceAustralia/dea-notebooks/blob/stable/.github/PULL_REQUEST_TEMPLATE.md) now recommends that you spellcheck your work using the DEA Sandbox's built-in spellchecker.
 
 ## 2024-02-20: New external land use and bathymetry datasets added to DEA Sandbox
 
