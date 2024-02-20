@@ -2,9 +2,6 @@
 const { handler } = require("./redirects.js");
 var assert = require("assert");
 
-function 
-
-
 function requestTemplate(uri) {
     return {
         request: {
@@ -18,8 +15,8 @@ function requestTemplate(uri) {
     };
 }
 
-describe("Test redirect occurs", () => {
-    const tests = [
+describe("Redirect tests", () => {
+    const correctlyRedirectsTests = [
         { uri: "/", expected: "/" },
         { uri: "/index.html", expected: "/" },
         { uri: "/page/index.html", expected: "/page/" },
@@ -39,17 +36,15 @@ describe("Test redirect occurs", () => {
         }
     ];
 
-    tests.forEach(({ uri, expected }) => {
+    correctlyRedirectsTests.forEach(({ uri, expected }) => {
         it(`Correctly redirects ${uri} to ${expected}`, async () => {
             const res = await handler(requestTemplate(uri));
 
             assert.equal(res.headers.location.value, expected);
         });
     });
-});
 
-describe("Test redirect doesn't occur", () => {
-    const tests = [
+    const doesntRedirectTests = [
         {
             uri: "/data/product/dea-coastlines/"
         },
@@ -64,7 +59,7 @@ describe("Test redirect doesn't occur", () => {
         }
     ];
 
-    tests.forEach(({ uri }) => {
+    doesntRedirectTests.forEach(({ uri }) => {
         let expected = { uri: uri };
         it(`Doesn't redirect ${uri}`, async () => {
             const res = await handler(requestTemplate(uri));
