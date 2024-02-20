@@ -3,14 +3,15 @@ const { handler } = require("./redirects.js");
 var assert = require("assert");
 
 const docsHost = "docs.dea.ga.gov.au";
+const knowledgeHost = "knowledge.dea.ga.gov.au";
 
-function requestTemplate(uri) {
+function requestTemplate(host, uri) {
     return {
         request: {
             uri: uri,
             headers: {
                 host: {
-                    value: docsHost
+                    value: host
                 }
             }
         }
@@ -39,7 +40,7 @@ describe("Redirect Tests", () => {
 
     redirectTests.forEach(({ uri, expected }) => {
         it(`Redirects ${uri} to ${expected}`, async () => {
-            const res = await handler(requestTemplate(uri));
+            const res = await handler(requestTemplate(knowledgeHost, uri));
 
             assert.equal(res.headers.location.value, expected);
         });
@@ -54,10 +55,26 @@ describe("Redirect Tests", () => {
 
     doesntRedirectTests.forEach(uri => {
         it(`Doesn't redirect ${uri}`, async () => {
-            const res = await handler(requestTemplate(uri));
+            const res = await handler(requestTemplate(knowledgeHost, uri));
 
             assert.ok(!res.hasOwnProperty("statusCode"));
             assert.ok(!res.hasOwnProperty("statusDescription"));
+        });
+    });
+
+    const subdomainRedirectTests = [
+        "/data/product/dea-coastlines/",
+        "/data/product/dea-coastlines/?tab=overview"
+    ];
+
+    subdomainRedirectTests.forEach(uri => {
+        const docsUri = "https://" + docsHost + uri;
+        const knowledgeUri = "https://" + knowledgeHost + uri;
+
+        it(`Redirects subdomain from ${docsUri} to ${knowledgeUri}`, async () => {
+            const res = await handler(requestTemplate(docsHost, uri));
+
+            assert.equal(res.headers.location.value, knowledgeUri);
         });
     });
 });
