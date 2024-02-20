@@ -26,6 +26,12 @@ shape of Australia's mainland, our coasts and deep ocean regions.
 
 These datasets can be loaded on the DEA Sandbox using the product names `abares_clum_2020` and `ga_ausbathytopo250m_2023`.
 
+## 2024-02-15: Upcoming changes to DEA Geomedian, Median Absolute Deviation and other derivative products
+
+The Geoscience Australia [Landsat Geometric Median and Median Absolute Deviation](/data/product/dea-geometric-median-and-median-absolute-deviation-landsat) Collection 3 products v3.1.0 are undergoing a major upgrade which will be released shortly as v4.0.0.
+
+Find out the details [here](https://communication.ga.gov.au/link/id/zzzz65cd75b153a33890Pzzzz61de67bd94bfe861/page.html).
+
 ## 2024-01-24: Water Observations and Fractional Cover Percentiles 2023 annual summaries released
 
 See [DEA Water Observations Statistics (Landsat)](/data/product/dea-water-observations-statistics-landsat/?tab=history) 
