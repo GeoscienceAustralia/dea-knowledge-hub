@@ -56,8 +56,8 @@ describe("Redirect Tests", () => {
         it(`Doesn't redirect ${uri}`, async () => {
             const res = await handler(requestTemplate(uri));
 
-            assert.equal(res.headers.host.value, docsHost);
-            assert.equal(res.uri, uri);
+            assert.ok(!res.hasOwnProperty("statusCode"));
+            assert.ok(!res.hasOwnProperty("statusDescription"));
         });
     });
 });
