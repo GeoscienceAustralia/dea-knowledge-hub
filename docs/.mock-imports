@@ -1,3 +1,6 @@
+# Mock Imports
+# All Python libraries used in the DEA Notebooks and DEA Tools must be added here; otherwise, pages that depend on the library may not display on the Knowledge Hub.
+
 aiohttp
 boto3
 botocore
@@ -53,3 +56,4 @@ skimage
 tqdm
 traitlets
 xarray
+
