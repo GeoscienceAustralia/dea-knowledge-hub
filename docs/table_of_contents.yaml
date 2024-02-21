@@ -227,6 +227,107 @@ entries:
 
   - file: data/old-version/index
     subtrees:
-      - caption: Old versions
+      - caption: A
         entries:
-          - glob: data/old-version/*/index
+          - glob: data/old-version/a*/index
+
+      - caption: B
+        entries:
+          - glob: data/old-version/b*/index
+
+      - caption: C
+        entries:
+          - glob: data/old-version/c*/index
+
+      - caption: D
+        entries:
+          - glob: data/old-version/d*/index
+
+      - caption: E
+        entries:
+          - glob: data/old-version/e*/index
+
+      - caption: F
+        entries:
+          - glob: data/old-version/f*/index
+
+      - caption: G
+        entries:
+          - glob: data/old-version/g*/index
+
+      - caption: H
+        entries:
+          - glob: data/old-version/h*/index
+
+      - caption: I
+        entries:
+          - glob: data/old-version/i*/index
+
+      - caption: J
+        entries:
+          - glob: data/old-version/j*/index
+
+      - caption: K
+        entries:
+          - glob: data/old-version/k*/index
+
+      - caption: L
+        entries:
+          - glob: data/old-version/l*/index
+
+      - caption: M
+        entries:
+          - glob: data/old-version/m*/index
+
+      - caption: N
+        entries:
+          - glob: data/old-version/n*/index
+
+      - caption: O
+        entries:
+          - glob: data/old-version/o*/index
+
+      - caption: P
+        entries:
+          - glob: data/old-version/p*/index
+
+      - caption: Q
+        entries:
+          - glob: data/old-version/q*/index
+
+      - caption: R
+        entries:
+          - glob: data/old-version/r*/index
+
+      - caption: S
+        entries:
+          - glob: data/old-version/s*/index
+
+      - caption: T
+        entries:
+          - glob: data/old-version/t*/index
+
+      - caption: U
+        entries:
+          - glob: data/old-version/u*/index
+
+      - caption: V
+        entries:
+          - glob: data/old-version/v*/index
+
+      - caption: W
+        entries:
+          - glob: data/old-version/w*/index
+
+      - caption: X
+        entries:
+          - glob: data/old-version/x*/index
+
+      - caption: Y
+        entries:
+          - glob: data/old-version/y*/index
+
+      - caption: Z
+        entries:
+          - glob: data/old-version/z*/index
+
