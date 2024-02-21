@@ -103,7 +103,7 @@ autodoc_default_options = {
     "members": True,
 }
 autodoc_mock_imports = mock_imports.mock_imports
-autosummary_mock_imports = autodoc_mock_imports
+autosummary_mock_imports = mock_imports.mock_imports
 
 napoleon_google_docstring = False
 napoleon_numpy_docstring = True
