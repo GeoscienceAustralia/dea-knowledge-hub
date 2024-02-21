@@ -205,8 +205,10 @@ entries:
   # Tags
 
   - file: tags/index
-    entries:
-      - glob: tags/*
+    subtrees:
+      - caption: Tags
+        entries:
+          - glob: tags/*
 
   # DEA Tech Alerts and Changelog
 
@@ -224,5 +226,7 @@ entries:
   # Old versions of products
 
   - file: data/old-version/index
-    entries:
-      - glob: data/old-version/*/index
+    subtrees:
+      - caption: Old versions
+        entries:
+          - glob: data/old-version/*/index
