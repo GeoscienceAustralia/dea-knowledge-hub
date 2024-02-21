@@ -19,7 +19,7 @@ See [alert dated 2024-01-10](./#sentinel-2-contiguity-fix-reprocessing-commenced
 
 ## 2024-02-20: DEA Notebooks update
 
-A minor update to the DEA Tools package that includes updates to tide modelling and parallel processing functions. It updates the `datahandling` module. For more detail, see the [dea-notebooks 0.3.1 release notes](https://github.com/GeoscienceAustralia/dea-notebooks/releases/tag/0.3.1).
+A minor update to the DEA Tools package that includes updates to tide modelling and parallel processing functions. It also adds a new `load_reproject` function to the `datahandling` module which allows reading and reprojecting external raster data. For more detail, see the [dea-notebooks 0.3.1 release notes](https://github.com/GeoscienceAustralia/dea-notebooks/releases/tag/0.3.1).
 
 ## 2024-02-20: New external land use and bathymetry datasets added to DEA Sandbox
 
