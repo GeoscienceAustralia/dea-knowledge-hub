@@ -42,6 +42,7 @@ mock_imports = [
     "rasterstats",
     "requests",
     "rios",
+    "rioxarray",
     "rsgislib",
     "scikit_learn",
     "sklearn",
