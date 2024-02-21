@@ -17,6 +17,10 @@ See the [DEA monitoring dashboard](https://monitoring.dea.ga.gov.au/).
 See [alert dated 2024-01-10](./#sentinel-2-contiguity-fix-reprocessing-commenced) for more details.
 :::
 
+## 2024-02-20: DEA Notebooks update
+
+A minor update to the DEA Tools package that includes updates to tide modelling and parallel processing functions. It also adds a new `load_reproject` function to the `datahandling` module which allows reading and reprojecting external raster data. For more detail, see the [dea-notebooks 0.3.1 release notes](https://github.com/GeoscienceAustralia/dea-notebooks/releases/tag/0.3.1).
+
 ## 2024-02-20: New external land use and bathymetry datasets added to DEA Sandbox
 
 Two new external datasets have been added to the DEA Sandbox: the [2020 ABARES Catchment Scale Land Use of Australia 50m](https://explorer.dea.ga.gov.au/products/abares_clum_2020/datasets/225c3043-6e3f-5cc4-95d0-fa64d79b7d38) 
