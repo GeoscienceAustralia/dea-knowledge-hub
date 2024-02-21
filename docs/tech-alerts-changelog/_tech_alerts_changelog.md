@@ -19,11 +19,7 @@ See [alert dated 2024-01-10](./#sentinel-2-contiguity-fix-reprocessing-commenced
 
 ## 2024-02-20: DEA Notebooks update
 
-The main changes included in this update are as follows.
-
-* The DEA Tools `datahandling` module was updated along with the accompanying API documentation.
-* The DEA Sandbox now has a new start page which you will see when you start a new session. (It is the `DEA_Sandbox.ipynb` notebook file.)
-* The [pull request template](https://github.com/GeoscienceAustralia/dea-notebooks/blob/stable/.github/PULL_REQUEST_TEMPLATE.md) now recommends that you spellcheck your work using the DEA Sandbox's built-in spellchecker.
+A minor update to the DEA Tools package that includes updates to tide modelling and parallel processing functions. It updates the `datahandling` module. For more detail, see the [dea-notebooks 0.3.1 release notes](https://github.com/GeoscienceAustralia/dea-notebooks/releases/tag/0.3.1).
 
 ## 2024-02-20: New external land use and bathymetry datasets added to DEA Sandbox
 
