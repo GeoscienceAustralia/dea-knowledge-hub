@@ -1,6 +1,6 @@
 import os
 
-mock_imports_file = ".mock-imports"
+mock_imports_file = ".mock_imports"
 comment_symbol = "#"
 
 mock_imports = []
