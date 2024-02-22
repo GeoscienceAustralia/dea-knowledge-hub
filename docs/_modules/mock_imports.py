@@ -6,6 +6,8 @@ comment_symbol = "#"
 mock_imports = []
 project_root = os.path.dirname(os.path.dirname(__file__))
 mock_imports_file_path = os.path.join(project_root, mock_imports_file)
+print(project_root)
+print(mock_imports_file_path)
 
 try:
     with open(mock_imports_file_path, 'r') as file:
