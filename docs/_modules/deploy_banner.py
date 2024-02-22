@@ -11,9 +11,9 @@ def banner():
     github_url = "https://github.com/GeoscienceAustralia/dea-docs"
     deploy_logs_url = "https://app.netlify.com/sites/dea-docs/deploys"
 
-    pull_request_banner = f'You are viewing <strong>{deploy_name} #{review_id}</strong>, not the official <a href="{knowledge_hub_url}">DEA Knowledge Hub</a>. View the <a href="{deploy_logs_url}/{deploy_id}">Deploy log</a> or the <a href="{github_url}/pull/{review_id}">Pull request</a>.'
+    pull_request_banner = f'You are viewing <strong>{deploy_name} #{review_id}</strong>, not the official <a href="{knowledge_hub_url}">DEA Knowledge Hub</a>. View the <a href="{deploy_logs_url}/{deploy_id}">Deploy log</a> or <a href="{github_url}/pull/{review_id}">Pull request</a>.'
 
-    demo_banner = f'You are viewing <strong>{deploy_name}</strong>, not the official <a href="{knowledge_hub_url}">DEA Knowledge Hub</a>. View the <a href="{deploy_logs_url}?filter={git_branch}">Deploy logs</a> or the <a href="{github_url}/tree/{git_branch}">Git branch</a>.'
+    demo_banner = f'You are viewing <strong>{deploy_name}</strong>, not the official <a href="{knowledge_hub_url}">DEA Knowledge Hub</a>. View the <a href="{deploy_logs_url}?filter={git_branch}">Deploy logs</a> or <a href="{github_url}/tree/{git_branch}">Git branch</a>.'
 
     if pull_request == "true":
         return pull_request_banner
