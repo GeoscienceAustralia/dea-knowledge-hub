@@ -16,7 +16,6 @@ environment = {
 project = "DEA Knowledge Hub"
 copyright = f"{utilities.current_year()}, Geoscience Australia"
 author = "Geoscience Australia"
-version = "0.1"
 
 html_static_path = ["_static", "_files"]
 templates_path = ["_layout", "_templates"]
