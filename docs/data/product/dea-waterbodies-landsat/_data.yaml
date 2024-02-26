@@ -22,8 +22,8 @@ parent_products:
 collection:
   name: Geoscience Australia Landsat Collection 3
   link: null
-doi: 10.26186/146197
-ecat: "146197"
+doi: 10.26186/148920
+ecat: "148920"
 nci: null
 
 tags:
@@ -43,9 +43,9 @@ maps:
 explorers: null
 
 data:
-  - link: http://pid.geoscience.gov.au/dataset/ga/146197
+  - link: https://pid.geoscience.gov.au/dataset/ga/148920
     name: Download the shapefile
-  - link: https://data.dea.ga.gov.au/?prefix=derivative/dea_waterbodies/2-0-0/
+  - link: https://data.dea.ga.gov.au/?prefix=derivative/dea_waterbodies/3-0-0/
     name: Access the data on AWS
 
 code_examples:
@@ -55,7 +55,7 @@ code_examples:
     name: Github repository
 
 web_services:
-  - link: https://geoserver.dea.ga.gov.au/geoserver/wms
+  - link: https://geoserver.dea.ga.gov.au/geoserver/web/?0
     name: Web Mapping Service (WMS)
 
 custom: null
@@ -63,6 +63,9 @@ custom: null
 # History
 
 old_versions:
+  - version: 2.0.0
+    title: DEA Waterbodies (Landsat)
+    slug: dea-waterbodies-landsat-2.0.0
   - version: 1.0.0
     title: DEA Waterbodies (Landsat)
     slug: waterbodies-1.0.0

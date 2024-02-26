@@ -6,7 +6,7 @@ Up-to-date information about the extent and location of surface water in Austral
 
 Digital Earth Australia Waterbodies uses Geoscience Australia’s archive of over 30 years of Landsat satellite imagery to identify where over 300,000 waterbodies are in the Australian landscape and tells us the wet surface area within those waterbodies.
 
-The tool uses a [water classification](/data/product/dea-water-observations-landsat/) for every available Landsat satellite image and maps the locations of waterbodies across Australia. It provides a time series of wet surface area for waterbodies that are present more than 10% of the time and are larger than 2,700m2 (3 Landsat pixels).
+The tool uses a [water classification](/data/product/dea-water-observations-landsat/) for every available Landsat satellite image and maps the locations of waterbodies across Australia. It provides a time series of wet surface area for waterbodies that are present more than 10% of the time between 1987 and 2020, and are larger than 2,700m2 (3 Landsat pixels).
 
 The tool indicates changes in the wet surface area of waterbodies. This can be used to identify when waterbodies are increasing or decreasing in wet surface area.
 
@@ -50,7 +50,7 @@ The code used in the development of this product is available on [GitHub](https:
 
 ## References
 
-Krause, Claire E., Newey, Vanessa, Alger, Matthew J., Lymburner, Leo. 2021. Mapping and Monitoring the Multi-Decadal Dynamics of Australia’s Open Waterbodies Using Landsat. Remote Sens. 13, no. 8: 1437. [https://doi.org/10.3390/rs13081437](https://doi.org/10.3390/rs13081437)
+Krause, C.E., Newey, V., Alger, M.J. and Lymburner, L., (2021). Mapping and monitoring the multi-decadal dynamics of Australia’s open waterbodies using Landsat. Remote Sensing, 13(8), p.1437. [https://doi.org/10.3390/rs13081437](https://doi.org/10.3390/rs13081437)
 
 Mueller, N., Lewis, A., Roberts, D., Ring, S., Melrose, R., Sixsmith, J., Lymburner, L., McIntyre, A., Tan, P., Curnow, S., & Ip, A. (2016). Water observations from space: Mapping surface water from 25 years of Landsat imagery across Australia. *Remote Sensing of Environment*, *174*, 341–352. [https://doi.org/10.1016/j.rse.2015.11.003](https://doi.org/10.1016/j.rse.2015.11.003)
 
