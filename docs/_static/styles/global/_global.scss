@@ -48,4 +48,8 @@ dt:target, span.highlighted {
 
 figure {
     text-align: left !important;
+
+    figcaption {
+        color: var(--pst-color-text-base) !important;
+    }
 }
