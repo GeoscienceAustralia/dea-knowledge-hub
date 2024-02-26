@@ -3,7 +3,7 @@ name: Deploy to Production
 on:
   workflow_dispatch:
   repository_dispatch:
-    types: [republish-docs] # Triggered from the dea-notebooks repo
+    types: [republish-docs] # Triggered by the dea-notebooks repo - https://github.com/GeoscienceAustralia/dea-notebooks/blob/develop/.github/workflows/trigger_docs.yaml
   push:
     branches: [main]
 

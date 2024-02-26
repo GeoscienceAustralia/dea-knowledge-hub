@@ -16,7 +16,6 @@ environment = {
 project = "DEA Knowledge Hub"
 copyright = f"{utilities.current_year()}, Geoscience Australia"
 author = "Geoscience Australia"
-version = "0.1"
 
 html_static_path = ["_static", "_files"]
 templates_path = ["_layout", "_templates"]
@@ -103,7 +102,7 @@ autodoc_default_options = {
     "members": True,
 }
 autodoc_mock_imports = mock_imports.mock_imports
-autosummary_mock_imports = autodoc_mock_imports
+autosummary_mock_imports = mock_imports.mock_imports
 
 napoleon_google_docstring = False
 napoleon_numpy_docstring = True
