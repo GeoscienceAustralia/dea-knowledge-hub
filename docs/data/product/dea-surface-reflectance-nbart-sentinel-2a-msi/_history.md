@@ -1,6 +1,6 @@
 ## Changelog
 
-### 2024-02-19: Reprocessing complete
+### 2024-02-26: Reprocessing complete
 
 Reprocessing for the [Sentinel-2 contiguity fix](https://communication.ga.gov.au/link/id/zzzz659df9f7f306b556Pzzzz61de67bd94bfe861/page.html) is complete. For a list of all scenes that were affected, download the CSV file below.
 
