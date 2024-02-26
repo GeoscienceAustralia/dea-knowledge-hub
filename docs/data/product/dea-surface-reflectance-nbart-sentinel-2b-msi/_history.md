@@ -6,6 +6,7 @@ Reprocessing for the [Sentinel-2 contiguity fix](https://communication.ga.gov.au
 
 :::{figure} /_files/reprocessing/s2b_preview.png
 :alt: The first rows of the CSV file that lists all scenes that were affected.
+:figwidth: 750
 
 A preview of the CSV file.
 :::
