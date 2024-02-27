@@ -17,6 +17,10 @@ See the [DEA monitoring dashboard](https://monitoring.dea.ga.gov.au/).
 See [alert dated 2024-01-10](./#sentinel-2-contiguity-fix-reprocessing-commenced) for more details.
 :::
 
+## 2024-02-26: Sentinel-2 contiguity fix reprocessing complete
+
+Learn more in the [Sentinel-2A Surface Reflectance NBART](https://docs.dea.ga.gov.au/data/product/dea-surface-reflectance-nbart-sentinel-2a-msi/?tab=history#changelog) and [Sentinel-2B Surface Reflectance NBART](https://docs.dea.ga.gov.au/data/product/dea-surface-reflectance-nbart-sentinel-2b-msi/?tab=history#changelog) changelogs.
+
 ## 2024-02-20: DEA Notebooks update
 
 A minor update to the DEA Tools package that includes updates to tide modelling and parallel processing functions. It also adds a new `load_reproject` function to the `datahandling` module which allows reading and reprojecting external raster data. For more detail, see the [dea-notebooks 0.3.1 release notes](https://github.com/GeoscienceAustralia/dea-notebooks/releases/tag/0.3.1).
