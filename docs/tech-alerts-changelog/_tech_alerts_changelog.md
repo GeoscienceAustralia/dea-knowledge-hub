@@ -4,17 +4,19 @@
 % If status = yellow, class = caution
 % If status = red, class = danger
 
-:::{admonition} DEA system status: green
-:class: tip
-All DEA systems are working as expected. There are no outstanding incidents or errors to report.
+:::{admonition} DEA system status: yellow
+:class: caution
+2024-02-28
 
-See the [DEA monitoring dashboard](https://monitoring.dea.ga.gov.au/).
+The DEA web services are currently experiencing intermittent performance issues. We are currently investigating the cause of the issue.
+
+See the [DEA monitoring dashboard](https://monitoring.dea.ga.gov.au/) to check the current status of DEA's services.
 :::
 
-:::{admonition} DEA Sentinel-2 contiguity fix: ongoing
+:::{admonition} DEA Sentinel-2 contiguity fix: complete
 :class: note
 
-See [alert dated 2024-01-10](./#sentinel-2-contiguity-fix-reprocessing-commenced) for more details.
+See alert dated 2024-02-26 for more details.
 :::
 
 ## 2024-02-26: Sentinel-2 contiguity fix reprocessing complete
