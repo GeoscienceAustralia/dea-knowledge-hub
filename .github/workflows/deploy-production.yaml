@@ -24,8 +24,8 @@ jobs:
         with:
           submodules: true
 
-      # - name: Pull latest from submodules
-      #   run: git submodule update --recursive --remote
+      - name: Pull latest from submodules
+        run: git pull --recurse-submodules
 
       - name: Install Python ${{ matrix.python-version }}
         uses: actions/setup-python@v4
