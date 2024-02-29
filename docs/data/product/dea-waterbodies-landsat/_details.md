@@ -17,7 +17,7 @@ The tool indicates changes in the wet surface area of waterbodies. This can be u
 * Understand local through to national-scale surface water dynamics over time and geography
 * Provide supporting information to better manage water across Australia
 * Gain insights into the severity and spatial distribution of drought
-* Identify potential water sources for aerial firefighting during bushfires
+* Identify potential water sources for aerial firefighting
 * Get deeper insight into [DEA Water Observations](/data/product/dea-water-observations-landsat/) data
 
 ## Technical information
@@ -26,6 +26,10 @@ The DEA Waterbodies product is comprised of two key components:
 * a polygon dataset of automatically mapped waterbody outlines, and
 * a csv time series for each polygon capturing the surface area of water within each polygon at every available, clear Landsat observation. 
 
+## Data Specification Table
+
+The DEA Waterbodies v3.0 shapefile and csv contain the following data, as specified in these tables:
+
 ### Producing DEA Waterbodies
 
 DEA Waterbodies is a polygon-based view of DEA Water Observations (DEA WO), derived through the automatic processing of DEA WO to identify the outlines of persistent waterbodies across Australia (Figure 1). 
@@ -33,16 +37,16 @@ DEA Waterbodies is a polygon-based view of DEA Water Observations (DEA WO), deri
 :::{figure} /_files/cmi/V2Workflow.JPG
 :alt: DEA Waterbodies workflow
 
-Figure 1: Flow diagram outlining the steps taken to produce DEA Waterbodies v2 polygons
+Figure 1: Flow diagram outlining the steps taken to produce DEA Waterbodies polygons
 :::
 
-For a detailed discussion of the methods used to produce DEA Waterbodies v1, refer to [Krause et al. 2021](https://doi.org/10.3390/rs13081437). 
+For a detailed discussion of the methods used to produce DEA Waterbodies v1, refer to [Krause et al. 2021](https://doi.org/10.3390/rs13081437). For the differences between DEA Waterbodies v1, v2 and v3.0, refer to the [Changelog](./?tab=history#changelog). DEA Waterbodies v3.0 uses the same polygon/vector outlines as DEA Waterbodies v2, with additional metadata.
 
 ## Lineage
 
 This product builds upon [DEA Water Observations](/data/product/dea-water-observations-landsat/).
 
-The code used in the development of this product is available on [GitHub](https://github.com/GeoscienceAustralia/dea-waterbodies).
+The code used in the development of this product is available on [GitHub](https://github.com/GeoscienceAustralia/dea-conflux).
 
 % ## Processing steps
 

@@ -37,7 +37,7 @@ tags:
 # Access
 
 maps:
-  - link: https://maps.dea.ga.gov.au/#share=s-4RjD9N7swBCZSkXRJJBxOLzVZyK
+  - link: https://maps.dea.ga.gov.au/#share=s-4FfNgHDF4mEwru7HrUmSzn2ECHm
     name: See it on a map
 
 explorers: null
@@ -51,7 +51,7 @@ data:
 code_examples:
   - link: /notebooks/DEA_products/DEA_Waterbodies/
     name: Code examples
-  - link: https://github.com/GeoscienceAustralia/dea-waterbodies
+  - link: https://github.com/GeoscienceAustralia/dea-conflux
     name: Github repository
 
 web_services:

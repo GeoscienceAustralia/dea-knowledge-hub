@@ -18,7 +18,7 @@ To add DEA Waterbodies to DEA Maps manually:
 
 2) Click `Explore map data`.
 
-3) Select `Inland water` > `DEA Waterbodies` > `DEA Waterbodies (version 2)`. 
+3) Select `Inland water` > `DEA Waterbodies` > `DEA Waterbodies (version 3.0)`. 
 
 4) Click `Add to the map`, or the `+` symbol to add the data to the map.
 :::
@@ -34,7 +34,7 @@ See [Waterbodies user guide](https://www.dea.ga.gov.au/products/dea-waterbodies/
 
 :::{dropdown} What about if I have more questions?
 
-Check out the [DEA Waterbodies Frequently Asked Questions](https://www.dea.ga.gov.au/products/dea-waterbodies/faq) guide to see if your questions are answered there. 
+Check out the [DEA Waterbodies Frequently Asked Questions](./?tab=faqs) guide to see if your questions are answered there. 
 
 If you need more help, contact earth.observation@ga.gov.au. 
 

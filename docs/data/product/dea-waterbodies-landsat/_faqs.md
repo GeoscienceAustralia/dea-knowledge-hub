@@ -9,7 +9,7 @@ The tool detects the wet surface area of a waterbody. The wet surface area does 
 :::
 
 :::{dropdown} What does ‘100%’ wet surface area refer to?
-The outline of each waterbody corresponds to the maximum observed wet surface area of the waterbody between 1987 and 2020. In the time series, this maximum area is considered as 100% wet surface area. The 100% wet surface area does not correlate to the volume of water in a storage. For example a waterbody can be observed as wet with just a shallow covering of water.
+The outline of each waterbody corresponds to the maximum observed wet surface area of the waterbody between 1987 and 2020. In the time series, this maximum area is considered as 100% wet surface area. The 100% wet surface area does not correlate to the volume of water in a storage. For example a waterbody can be observed as wet with just a shallow covering of water. The maximum observed wet area is available as ‘area_m2’ in the data.
 :::
 
 :::{dropdown} Do the time series provide information on the source of water observed?
@@ -17,9 +17,9 @@ No. This tool does not differentiate between water sources.
 :::
 
 :::{dropdown} How often are the DEA Waterbodies time series updated?
-The DEA Waterbodies time series are updated at least monthly. An individual time series may not be updated as frequently if it was cloudy on the days the satellite was overhead.
+The DEA Waterbodies time series are updated as soon as data from the satellites are available. An individual time series could be updated fortnightly or less frequently if it was cloudy on the days the satellite was overhead.  
 
-Landsat satellites do not observe all of Australia at the same time. The dates of satellite observations are dependent on the date that the satellite observed that waterbody. Landsat satellites take 16 days to collect data across all of Australia, with different locations being collected on different days within that 16 days.
+Landsat satellites do not observe all of Australia at the same time. The dates of satellite observations are dependent on the date that the satellite observed that waterbody. Landsat satellites take 16 days to collect data across all of Australia, with different locations being collected on different days within that 16 days. Landsat data is available approximately two weeks from the satellite overpass for the Water Observations feature layers used to process Waterbodies. Waterbodies scenes are processed as Water Observations feature layer scenes become available in the DEA datacube. It takes approximately ten minutes to process Waterbodies per scene, once the data is available.
 :::
 
 :::{dropdown} Why are some time series shorter than others?
@@ -28,6 +28,8 @@ All useable observations for each waterbody have been included in the individual
 If less than 90% of the total waterbody is observed on any one day, due to cloud cover or missing data, then that observation is marked as a missing value within the csv file.
 
 Cloud cover leading to invalid data can be a particular problem in coastal regions, northern Australia during summer, and in Tasmania.
+
+Some larger salt lakes in Australia have very few records currently available. For larger Waterbodies, which may cross multiple swath boundaries or suffer from misclassifications (salt lakes can be misclassified as cloud due to their brightness) this can be problematic. 
 :::
 
 :::{dropdown} How does DEA Waterbodies deal with clouds?
@@ -37,14 +39,14 @@ Cloud cover leading to invalid data can be a particular problem in coastal regio
 :::
 
 :::{dropdown} Why are the time series irregularly spaced in time?
-Landsat satellites do not observe all of Australia at the same time. The dates of satellite observations are dependent on the date that the satellite observed that waterbody. Landsat satellites take 16 days to collect data across all of Australia, with different locations being collected on different days within that 16 days. This means that the date stamps of each time series are not common across all waterbodies.
+Landsat satellites do not observe all of Australia at the same time. The dates of satellite observations are dependent on the date that the satellite observed that waterbody. Landsat satellites take 16 days to collect data across all of Australia, with different locations being collected on different days within that 16 days. This means that the date stamps of each time series are not common across all waterbodies. DEA Waterbodies contains data from all available Landsat satellites.
 :::
 
 :::{dropdown} What are the two different time series provided for each waterbody?
 Within the DEA Waterbodies web service, there are two time series provided for each waterbody, which can be seen in the legend panel on the left hand side once a waterbody has been selected, and the time series expanded:
 
-* 'Percentage of total surface area observed as wet': the percentage of the total surface area of the waterbody that has been classified as 'wet' for each time step. (Note: this is not a volume)
-* 'Wet Pixel Count': the total number of pixels that have been classified as 'wet' for each time step. This value is useful if you need to calculate an area of wet pixels. Each pixel is 30 metres by 30 metres.
+* Pc Wet: 'Percentage of total surface area observed as wet'. The percentage of the total surface area of the waterbody that has been classified as 'wet' for each time step. (Note: this is not a volume)
+* Px Wet:'Wet Pixel Count'. The total number of pixels that have been classified as 'wet' for each time step. This value is useful if you need to calculate an area of wet pixels. Each pixel is 30 metres by 30 metres.
 :::
 
 ### About the mapped waterbodies
@@ -80,14 +82,13 @@ DEA Waterbodies is derived completely from satellite data, which means that the 
 :::{dropdown} There is a waterbody missing from your map. Why?
 There are a few reasons why a waterbody might be missing:
 
-It might be too small: DEA Waterbodies only maps waterbodies larger than 2,700m<sup>2</sup> (3 whole Landsat pixels).
-
+* It might be too small: DEA Waterbodies only maps waterbodies larger than 2,700m<sup>2</sup> (3 whole Landsat pixels).
 * It might not have been wet enough: DEA Waterbodies only maps waterbodies that have been observed as wet at least 10% of the time between 1987 and 2020. If a waterbody fills very infrequently, it may not meet this threshold.
 * The waterbody might have too much vegetation surrounding it: the **DEA Water Observations** classifier that determines where water is observed does not work well where water is combined with vegetation. If there is vegetation obscuring the water (like a tree leaning across a river or a wetland), the classifier will not see this as water and the waterbody may not be mapped.
 * The water in the waterbody does not look like water: very sediment-filled water, particularly in northern Australia, is often misclassified as land.
 * It might be new: newly constructed waterbodies will not be included in this product as they will not have been observed as wet at least 10% of the time between 1987 and 2020. Waterbodies that have been constructed or modified after 2016 may not be captured within this tool. Future updates of this product should capture newer waterbodies.
 
-If there is a waterbody missing from DEA Waterbodies that you would like to report, please contact us at <a href="mailto:dea@ga.gov.au">dea@ga.gov.au</a>
+If there is a waterbody missing from DEA Waterbodies that you would like to report, please contact us at <a href="Earth.Observation@ga.gov.au">dea@ga.gov.au</a>
 
 Reports of missing waterbodies may assist us during quality checking of future product releases.
 :::
@@ -97,7 +98,7 @@ The **DEA Water Observations** classifier that determines where water is observe
 
 Additionally, the Landsat satellite data on which this dataset is based has a pixel resolution of 30 metres by 30 metres. A pixel will only be classified as water where the pixel is almost entirely made up of water. For example, where rivers narrow or contain large sandbanks the pixel will incorporate these other signatures, and not be classified as water.
 
-Both of these factors mean that rivers are not seen as continuous features throughout DEA Waterbodies.
+Both of these factors mean that rivers are not seen as continuous features throughout DEA Waterbodies. Some rivers have also been split into shorter sections for ease of analysis.
 :::
 
 ::::{dropdown} Why are some of the waterbody polygons patchy?
@@ -123,25 +124,33 @@ By design, we have excluded locations where water is seen only during extreme fl
 ### Other information about DEA Waterbodies
 
 :::{dropdown} How do I download the data?
-Individual waterbody time series can be downloaded within [National Map](https://nationalmap.gov.au/) and [DEA Maps](http://maps.dea.ga.gov.au/). Instructions on how to download individual time series can be found in the User Guide.
+Individual waterbody time series can be downloaded within [National Map](https://nationalmap.gov.au/) and [DEA Maps](http://maps.dea.ga.gov.au/). Instructions on how to download individual time series can be found in the [User Guide](https://www.dea.ga.gov.au/products/dea-waterbodies/user-guide).
 
 The underlying polygon dataset containing the map of over 300,000 waterbodies across Australia can be downloaded from the [Access tab](./?tab=access).
 :::
 
 :::{dropdown} Can I load DEA Waterbodies into my GIS software?
-DEA Waterbodies has been provided as a web mapping service. You can consume this service by connecting to the service endpoint (see the metadata provided with the layer in [National Map](https://nationalmap.gov.au/) or [DEA Maps](http://maps.dea.ga.gov.au/) for details). Please note that for now, this service will only allow you to access the underlying waterbody map, not the individual time series associated with each waterbody.
+DEA Waterbodies has been provided as a [web mapping service](https://geoserver.dea.ga.gov.au/geoserver/dea/wms) (WMS). You can consume this service by connecting to the service endpoint (see the metadata provided with the layer in [National Map](https://nationalmap.gov.au/) or [DEA Maps](http://maps.dea.ga.gov.au/) for details). Data available through this service can be viewed on the data specification table.
 :::
 
 :::{dropdown} How was DEA Waterbodies produced?
-The code used to produce DEA Waterbodies has been uploaded to Geoscience Australia's [Github page](https://github.com/GeoscienceAustralia/dea-waterbodies). There is also a [peer reviewed journal article](https://doi.org/10.3390/rs13081437) that explains in detail the methods used to produce DEA Waterbodies.
+The code used to produce DEA Waterbodies polygons has been uploaded to a [Github repository](https://github.com/GeoscienceAustralia/dea-waterbodies). The code that is used to generate DEA Waterbodies time series is also [available](https://github.com/GeoscienceAustralia/dea-conflux). There is a [peer reviewed journal article](https://doi.org/10.3390/rs13081437) that explains in detail the methods used to produce DEA Waterbodies.
 :::
 
 :::{dropdown} How do I cite DEA Waterbodies?
-Krause, Claire E.; Newey, Vanessa; Alger, Matthew J.; Lymburner, Leo. 2021. "Mapping and Monitoring the Multi-Decadal Dynamics of Australia's Open Waterbodies Using Landsat" Remote Sens. 13, no. 8: 1437. [https://doi.org/10.3390/rs13081437](https://doi.org/10.3390/rs13081437)
+DEA Waterbodies is published by Geoscience  Australia under the  Creative Commons Attribution 4.0 International Licence. You can attribute the data and derivative works using the following two citations: 
+
+Dataset citation: 
+Dunn, B., Krause, C., Newey, V., Lymburner, L., Alger, M.J., Adams, C., Yuan, F., Ma, S., Barzinpour, A., Ayers, D., McKenna, C., Schenk, L. 2024. Digital Earth Australia Waterbodies v3.0. Geoscience Australia, Canberra. [https://dx.doi.org/10.26186/148920](https://dx.doi.org/10.26186/148920) 
+
+Research paper citation: 
+Krause, C.E., Newey, V., Alger, M.J. and Lymburner, L., (2021). Mapping and monitoring the multi-decadal dynamics of Australia’s open waterbodies using Landsat. Remote Sensing, 13(8), p.1437. [https://doi.org/10.3390/rs13081437](https://doi.org/10.3390/rs13081437) 
 :::
 
 :::{dropdown} Who did you collaborate with to produce DEA Waterbodies?
-DEA Waterbodies was the result of a collaboration between Geoscience Australia, the NSW Department of Planning, Industry and Environment, and the Murray Darling Basin Authority to determine the potential of satellite imagery to provide useful insights about water in the landscape.
+DEA Waterbodies version 1 was the result of a collaboration between Geoscience Australia, the NSW Department of Planning, Industry and Environment, and the Murray Darling Basin Authority to determine the potential of satellite imagery to provide useful insights about water in the landscape. 
+
+The update from version 2 to version 3.0 of the DEA Waterbodies product and service was created through a collaboration between Geoscience Australia, the National Aerial Firefighting Centre, Natural Hazards Research Australia, and FrontierSI to make the product more useful in hazard applications. 
 :::
 
 :::{dropdown} How do I get more information or provide feedback on DEA Waterbodies?
