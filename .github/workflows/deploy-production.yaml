@@ -26,6 +26,7 @@ jobs:
 
       - name: Pull latest from submodules
         run: git submodule foreach git pull origin stable
+        # This doesn't update the submodule to the latest commit on the origin; therefore, you should manually do this on a semi-regular basis.
 
       - name: Install Python ${{ matrix.python-version }}
         uses: actions/setup-python@v4
