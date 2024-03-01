@@ -1,20 +1,20 @@
 # Overview
 
-title: Your title
-long_title: null
-header_image: /_files/subfolder/image.png
-version: 0.0.0
-product_type: null
-spatial_data_type: null
+title: Product title
+# long_title: The long product title 
+# header_image: /_files/subfolder/image.png
+version: 1.0.0
+product_type: Derivative
+spatial_data_type: Vector
 time_span:
   start: null
   end: null
 update_frequency: null
 # product_ids:
-#   - product_id_1
+#   - id_1
 
 is_latest_version: true
-latest_version_link: null
+# latest_version_link: /data/product/example-product/
 is_provisional: false
 
 parent_products:
