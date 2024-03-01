@@ -5,6 +5,8 @@ var assert = require("assert");
 const docsHost = "docs.dea.ga.gov.au";
 const knowledgeHost = "knowledge.dea.ga.gov.au";
 
+// Create a minimum event object matching the structure that AWS CloudFront uses.
+// The real thing contains many more fields, this is just what we use.
 function requestTemplate(host, uri) {
     return {
         request: {
@@ -69,6 +71,8 @@ describe("Don't Redirect Tests", () => {
 
 describe("Domain redirection tests", () => {
     const r3 = [
+        "/",
+        "/index.html",
         "/data/product/dea-coastlines/",
         "/data/product/dea-coastlines/?tab=overview"
     ];
