@@ -46,7 +46,9 @@ describe("Redirect Tests", () => {
             assert.equal(res.headers.location.value, expected);
         });
     });
+});
 
+describe("Don't Redirect Tests", () => {
     const r2 = [
         "/data/product/dea-coastlines/",
         "/data/product/dea-coastlines/?tab=overview",
@@ -63,7 +65,9 @@ describe("Redirect Tests", () => {
             assert.ok(!res.hasOwnProperty("statusDescription"));
         });
     });
+});
 
+describe("Domain redirection tests", () => {
     const r3 = [
         "/data/product/dea-coastlines/",
         "/data/product/dea-coastlines/?tab=overview"
@@ -74,7 +78,7 @@ describe("Redirect Tests", () => {
         const knowledgeUri = "https://" + knowledgeHost + uri;
 
         const n = index + 1;
-        it(`R3.${n}. Redirects subdomain from ${docsUri} to ${knowledgeUri}`, async () => {
+        it(`R3.${n}. Redirects from ${docsUri} to ${knowledgeUri}`, async () => {
             const res = await handler(requestTemplate(docsHost, uri));
 
             assert.equal(res.headers.location.value, knowledgeUri);
