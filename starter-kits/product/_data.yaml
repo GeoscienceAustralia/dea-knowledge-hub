@@ -1,4 +1,4 @@
-# Learn more about these fields:
+# See the documentation for each of these metadata fields:
 # https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/product_metadata_fields.html
 
 # Overview
@@ -72,9 +72,9 @@ is_provisional: false
 # History
 
 # old_versions:
-#   - version: 0.0.0
-#     title: Lorem ipsum
-#     slug: example-page
+#   - version: 1.0.0
+#     title: Example product
+#     slug: example-product-1.0.0
 
 # Settings
 
