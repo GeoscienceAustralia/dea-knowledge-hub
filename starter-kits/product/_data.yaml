@@ -1,8 +1,8 @@
 # Overview
 
-title: Product title
-# long_title: The long product title 
-# header_image: /_files/subfolder/image.png
+title: Example product
+# long_title: Long example product title
+# header_image: /_files/example/image.png
 version: 1.0.0
 product_type: Derivative
 spatial_data_type: Vector
@@ -17,14 +17,14 @@ is_latest_version: true
 # latest_version_link: /data/product/example-product/
 is_provisional: false
 
-parent_products:
-  name: null
-  link: null
-collection:
-  name: null
-  link: null
-doi: null
-ecat: null
+# parent_products:
+#   name: Example parent product
+#   link: /data/product/example-parent-product/
+# collection:
+#   name: Geoscience Australia Landsat Collection 3
+#   link: null
+# doi: 10.00000/000000
+# ecat: 100000
 nci:
   name: null
   code: null
