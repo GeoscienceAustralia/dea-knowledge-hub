@@ -1,3 +1,6 @@
+# Learn more about these fields:
+# https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/product_metadata_fields.html
+
 # Overview
 
 title: Example product
@@ -7,11 +10,11 @@ version: 1.0.0
 product_type: Derivative
 spatial_data_type: Vector
 time_span:
-  start: null
+  start: 1 Jan 2020
   end: null
-update_frequency: null
+update_frequency: Yearly
 # product_ids:
-#   - id_1
+#   - example_1
 
 is_latest_version: true
 # latest_version_link: /data/product/example-product/
@@ -28,7 +31,7 @@ is_provisional: false
 # nci: a000
 
 # tags:
-#   - geoscience_australia_landsat_collection_3
+#   - example_tag
 
 # Access
 
