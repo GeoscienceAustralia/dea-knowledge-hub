@@ -25,9 +25,7 @@ is_provisional: false
 #   link: null
 # doi: 10.00000/000000
 # ecat: 100000
-nci:
-  name: null
-  code: null
+# nci: a000
 
 # tags:
 #   - geoscience_australia_landsat_collection_3
