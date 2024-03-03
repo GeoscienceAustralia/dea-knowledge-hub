@@ -1,3 +1,7 @@
+// AWS CloudFront redirects
+// Learn how to test and deploy these redirects:
+// https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/aws_redirects.html
+
 // This function handles redirect logic
 
 async function handler(event) {
