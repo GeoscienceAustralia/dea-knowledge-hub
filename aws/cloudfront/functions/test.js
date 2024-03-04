@@ -2,7 +2,7 @@
 const { handler } = require("./redirects.js");
 var assert = require("assert");
 
-const docsHost = "docs.dea.ga.gov.au";
+const docsHost = "knowledge.dea.ga.gov.au";
 const knowledgeHost = "knowledge.dea.ga.gov.au";
 
 // Create a minimum event object matching the structure that AWS CloudFront uses.

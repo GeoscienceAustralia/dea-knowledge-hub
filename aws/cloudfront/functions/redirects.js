@@ -13,7 +13,7 @@ async function handler(event) {
     const indexHtmlPattern = /\/index\.html$/g;
     const filetypeExtensionsPattern = /\.(html|rst|md|ipynb|py)$/g;
 
-    const docsHost = "docs.dea.ga.gov.au";
+    const docsHost = "knowledge.dea.ga.gov.au";
     const knowledgeHost = "knowledge.dea.ga.gov.au";
 
     const status301MovedPermanently = {
@@ -21,7 +21,7 @@ async function handler(event) {
         statusDescription: "Moved Permanently"
     };
 
-    // Redirect subdomain from 'docs' to 'knowledge'. E.g. "docs.dea.ga.gov.au" => "knowledge.dea.ga.gov.au"
+    // Redirect subdomain from 'docs' to 'knowledge'. E.g. "knowledge.dea.ga.gov.au" => "knowledge.dea.ga.gov.au"
 
     if (host === docsHost) {
         return Object.assign(status301MovedPermanently, {

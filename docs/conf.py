@@ -48,7 +48,7 @@ html_favicon = "_static/favicons/dea-favicon.ico"
 html_theme = 'pydata_sphinx_theme'
 language = "en"
 
-if environment["build_mode"] == "production": html_baseurl = "https://docs.dea.ga.gov.au/"
+if environment["build_mode"] == "production": html_baseurl = "https://knowledge.dea.ga.gov.au/"
 elif environment["build_mode"] == "demo": html_baseurl = f"https://{environment['git_branch']}--dea-docs.netlify.app/"
 else: html_baseurl = ""
 
@@ -93,7 +93,7 @@ if (
 
 sitemap_url_scheme = "{link}"
 
-ogp_site_url = "https://docs.dea.ga.gov.au/"
+ogp_site_url = "https://knowledge.dea.ga.gov.au/"
 ogp_image = "/_files/logos/dea-logo-inline.png"
 
 sys.path.insert(0, os.path.abspath("./notebooks/Tools"))
