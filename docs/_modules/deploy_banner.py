@@ -7,7 +7,7 @@ def banner():
     review_id = os.environ.get("REVIEW_ID")
     deploy_id = os.environ.get("DEPLOY_ID")
 
-    knowledge_hub_url = "https://docs.dea.ga.gov.au/"
+    knowledge_hub_url = "https://knowledge.dea.ga.gov.au/"
     github_url = "https://github.com/GeoscienceAustralia/dea-docs"
     deploy_logs_url = "https://app.netlify.com/sites/dea-docs/deploys"
 
