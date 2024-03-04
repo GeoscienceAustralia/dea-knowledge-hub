@@ -8,7 +8,7 @@ DEA Waterbodies version 3.0 key improvements include:
 
 * New supporting data has been added to DEA Maps and web services for the most recent relevant observation.  
 
-* Supporting data will include: 
+* Supporting data include: 
 
     * the last date any water was observed;  
 
@@ -34,7 +34,7 @@ DEA Waterbodies version 2 will be decommissioned in coming months after a period
 
 DEA Waterbodies polygons are named using a geohash as the unique identifier for each polygon. A geohash is a representation of the lat/lon coordinates of the centre of each polygon, mapped into a shorter character string. Each polygon’s geohash can be converted back to a lat/lon pair to make it easy to locate a waterbody from its geohash alone. 
 
-DEA Waterbodies version 3.0 polygon names remain almost the same as DEA Waterbodies version 2, however, the version number at the end of the geohash has been updated. For example, in v2, Kati Thanda was `r4ctum36x_v2`. In v3.0 Kati Thanda is `r4ctum36x_v3`.  
+DEA Waterbodies version 3.0 polygon names remain the same as DEA Waterbodies version 2 with the version number at the end of the geohash updated. For example, in v2, Kati Thanda was `r4ctum36x_v2`. In v3.0 Kati Thanda is `r4ctum36x_v3`.  
 
 ### Changes from DEA Waterbodies v1 to [DEA Waterbodies v2](\data\old-version\dea-waterbodies-landsat-2.0.0)
 
@@ -89,4 +89,4 @@ DEA Waterbodies polygons are named using a [geohash](https://en.wikipedia.org/wi
 
 Polygon names/geohashes are not maintained between v1 and v2 of DEA Waterbodies. As in v1, v2 waterbody polygons are named according to the centroid of each polygon, which may have moved between versions. Note that characters at the end of a geohash string represent increasing precision in the accompanying lat/lon coordinate pair, so while the geohash is not directly maintained between versions, it is likely that they will be similar, with only the last few characters varying due to slight differences in the polygon centroids.
 
-In order to prevent polygon identifiers being mixed up between versions, we have introduced explicit version numbers to each unique ID. This has also been applied retrospectively to v1 so that all DEA Watebody polygons are now named with a geohash and a version number. For example, in v1, Kati Thanda was originally `r4ctk0hzm`. In v1.1, the long-term release of v1, Kati Thanda was `r4ctk0hzm_v1`. In v2 Kati Thanda is `r4ctum36x_v2`.
+In order to prevent polygon identifiers being mixed up between versions, we have introduced explicit version numbers to each unique ID. This has also been applied retrospectively to v1 so that all DEA Waterbodies polygons are now named with a geohash and a version number. For example, in v1, Kati Thanda was originally `r4ctk0hzm`. In v1.1, the long-term release of v1, Kati Thanda was `r4ctk0hzm_v1`. In v2 Kati Thanda is `r4ctum36x_v2`.

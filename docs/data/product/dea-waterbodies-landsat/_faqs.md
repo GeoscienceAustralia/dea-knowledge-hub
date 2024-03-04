@@ -46,7 +46,7 @@ Landsat satellites do not observe all of Australia at the same time. The dates o
 Within the DEA Waterbodies web service, there are two time series provided for each waterbody, which can be seen in the legend panel on the left hand side once a waterbody has been selected, and the time series expanded:
 
 * Pc Wet: 'Percentage of total surface area observed as wet'. The percentage of the total surface area of the waterbody that has been classified as 'wet' for each time step. (Note: this is not a volume)
-* Px Wet:'Wet Pixel Count'. The total number of pixels that have been classified as 'wet' for each time step. This value is useful if you need to calculate an area of wet pixels. Each pixel is 30 metres by 30 metres.
+* Px Wet: 'Wet Pixel Count'. The total number of pixels that have been classified as 'wet' for each time step. This value is useful if you need to calculate an area of wet pixels. Each pixel is 30 metres by 30 metres.
 :::
 
 ### About the mapped waterbodies
