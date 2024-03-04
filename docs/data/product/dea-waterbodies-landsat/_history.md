@@ -1,31 +1,67 @@
 ## Changelog
 
-This dataset is version 2 of DEA Waterbodies, and represents a reprocessing of DEA Waterbodies version 1 on [DEA Collection 3 Water Observations](/data/product/dea-water-observations-landsat/), as well as a few incremental improvements.
+Version 3.0 of DEA Waterbodies uses the same underlying polygon set as DEA Waterbodies version 2. Improvements include additional supporting data for the most recent observation available through web mapping services (WMS) and DEA Maps, more metadata availability, and pipeline improvements.   
 
-### DEA Waterbodies v2
+The update from version 2 to version 3.0 of the DEA Waterbodies product and service was created through a collaboration between Geoscience Australia, the National Aerial Firefighting Centre, Natural Hazards Research Australia, and FrontierSI to make the product more useful in hazard applications. 
+
+DEA Waterbodies version 3.0 key improvements include: 
+
+* New supporting data has been added to DEA Maps and web services for the most recent relevant observation.  
+
+* Supporting data will include: 
+
+    * the last date any water was observed;  
+
+    * the most recent date that the satellite passed over the waterbody;  
+
+    * the date attributes were updated; 
+
+    * the date that polygons of waterbody boundaries were created; and  
+
+    * the dataset metadata link.
+
+* Specifications of supporting data are [available](./?tab=details#data-specification-table). 
+
+* Data will be uploaded as soon as it is received and processed. There is an approximate two-week latency in processing to an Analysis Ready Data (ARD) standard.   
+
+* There have been additions to the shape file specification to support data delivery. Data specification tables have been [added](./?tab=details#data-specification-table). 
+
+* Our pipeline has been upgraded to a more reliable production environment, increasing DEA Waterbodies reliability.  
+
+DEA Waterbodies version 2 will be decommissioned in coming months after a period of DEA Waterbodies 3.0 testing. Users will be notified before decommissioning the older version. 
+
+#### Polygon names
+
+DEA Waterbodies polygons are named using a geohash as the unique identifier for each polygon. A geohash is a representation of the lat/lon coordinates of the centre of each polygon, mapped into a shorter character string. Each polygon’s geohash can be converted back to a lat/lon pair to make it easy to locate a waterbody from its geohash alone. 
+
+DEA Waterbodies version 3.0 polygon names remain almost the same as DEA Waterbodies version 2, however, the version number at the end of the geohash has been updated. For example, in v2, Kati Thanda was `r4ctum36x_v2`. In v3.0 Kati Thanda is `r4ctum36x_v3`.  
+
+### Changes from DEA Waterbodies v1 to [DEA Waterbodies v2](\data\old-version\dea-waterbodies-landsat-2.0.0)
+
+Version 2 of DEA Waterbodies represents a reprocessing of DEA Waterbodies version 1 on DEA Collection 3 Water Observations, as well as a few incremental improvements. 
 
 The key difference between DEA Waterbodies v1 and v2 is the underlying satellite imagery used to derive the polygons, and to generate the accompanying csvs. DEA Waterbodies v1 was produced on the [DEA Water Observations from Space](/data/product/dea-water-observations-landsat) product, which was derived from [DEA Surface Reflectance NBART (Landsat) collection 2](/data/old-version/dea-water-observations-landsat-2.1.5/) data. This dataset had a resolution of 25m. 
 
-DEA Waterbodies v2 has been reprocessed on [DEA Water Observations](/data/product/dea-water-observations-landsat/), which has been run on collection 3 data, which has a pixel resolution of 30m. The reprocessing of DEA datasets to 30m resolution required that DEA Waterbodies polygon generation be re-run to re-map each waterbody using the new pixel resolution.
+DEA Waterbodies v2 has been reprocessed on [DEA Water Observations](/data/product/dea-water-observations-landsat/), which has been run on collection 3 data, which has a pixel resolution of 30 m. The reprocessing of DEA datasets to 30 m resolution required that DEA Waterbodies polygon generation be re-run to re-map each waterbody using the new pixel resolution.
 
 DEA Waterbodies v2 differs from v1 in a few additional key areas: 
-* v2 polygons have a minimum size of 2,700 m2, while v1 polygons have a minimum size of 3,125 m2 ;
+* v2 polygons have a minimum size of 2,700 m<sup>2</sup>, while v1 polygons have a minimum size of 3,125 m<sup>2</sup> 
 * There are new waterbodies in v2 not present in v1;
 * There are old waterbodies in v1 that are not present in v2, mainly including very small or rarely full polygons; and
 * There are waterbodies in both datasets for which the outlines have changed between v1 and v2.
 
 ### Change in minimum polygon size
 
-A change in the underlying pixel size necessitated a re-evaluation of the minimum polygon size. In v1, the minimum polygon size was 3,125m2, equating to 5 Landsat collection 2 pixels. 
+A change in the underlying pixel size necessitated a re-evaluation of the minimum polygon size. In v1, the minimum polygon size was 3,125 m<sup>2</sup>, equating to 5 Landsat collection 2 pixels. 
 
-In v2, the size has been lowered slightly to 2,700m2, which equates to 3 Landsat collection 3 pixels. 
+In v2, the size has been lowered slightly to 2,700 m<sup>2</sup>, which equates to 3 Landsat collection 3 pixels. 
 
 This change has resulted in the inclusion of some smaller waterbodies that were not mapped in v1 (Figure 1). 
 
 :::{figure} /_files/cmi/WaterbodySize_0.JPG
 :alt: Waterbodies size distribution
 
-Figure 1: Comparison of the size distributions of DEA Waterbodies v1 and v2. a) Size distribution for polygons smaller than 1km2. b) Small waterbodies identified in v2 that were not included in v1.
+Figure 1: Comparison of the size distributions of DEA Waterbodies v1 and v2. a) Size distribution for polygons smaller than 1 km<sup>2</sup>. b) Small waterbodies identified in v2 that were not included in v1.
 :::
 
 ### Waterbody polygons manually curated in v2
@@ -39,7 +75,7 @@ Our automated waterbody polygon detection produces subpar results for large, ver
 * Lake Blanche 
 * Lake Everard 
 
-As an example, Kati Thanda is a particularly complex polygon when mapped using automated methods, resulting in 3,118 polygons ranging from 900 m2 to 4,609 km2. Kati Thanda and Lake Everard in v1 and v2 are shown in Figure 2. 
+As an example, Kati Thanda is a particularly complex polygon when mapped using automated methods, resulting in 3,118 polygons ranging from 900 m<sup>2</sup> to 4,609 km<sup>2</sup>. Kati Thanda and Lake Everard in v1 and v2 are shown in Figure 2. 
 
 :::{figure} /_files/cmi/SaltLakesSwap.JPG
 :alt: Complex polygons swapped for mapped polygons

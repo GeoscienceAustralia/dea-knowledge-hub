@@ -9,7 +9,7 @@ The tool detects the wet surface area of a waterbody. The wet surface area does 
 :::
 
 :::{dropdown} What does ‘100%’ wet surface area refer to?
-The outline of each waterbody corresponds to the maximum observed wet surface area of the waterbody between 1987 and 2020. In the time series, this maximum area is considered as 100% wet surface area. The 100% wet surface area does not correlate to the volume of water in a storage. For example a waterbody can be observed as wet with just a shallow covering of water. The maximum observed wet area is available as ‘area_m2’ in the data.
+The outline of each waterbody corresponds to the maximum observed wet surface area of the waterbody between 1987 and 2020. In the time series, this maximum area is considered as 100% wet surface area. The 100% wet surface area does not correlate to the volume of water in a storage. For example a waterbody can be observed as wet with just a shallow covering of water. The maximum observed wet area is available as ‘area_m2’ in the [data](./?tab=details#data-specification-table).
 :::
 
 :::{dropdown} Do the time series provide information on the source of water observed?
@@ -70,13 +70,21 @@ DEA Waterbodies only maps waterbodies larger than 2,700 m<sup>2</sup> (3 whole L
 :::
 
 :::{dropdown} What does the outline of individual waterbodies represent?
-The outline of each waterbody corresponds to the maximum observed wet surface area of the waterbody between 1987 and 2020. DEA Waterbodies is derived completely from satellite data, which means that the outline of each waterbody is based entirely on the extent of water mapped by satellite observations.
+The outline of each waterbody corresponds to the maximum observed wet surface area of the waterbody between 1987 and 2020 except for two cases. Long, thin waterbodies were separated into multiple polygons as described in Krause et al. (2021), and the following waterbodies were replaced by the extents from the [Surface Hydrology Polygons (Regional)](https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/83134) dataset: 
 
-It may not directly match up with the edges of a waterbody, as the edges themselves are not inundated, and so will not be captured within the wet extent. The waterbodies also may not match up with the previously mapped extent of any waterbody found in other map products.
+* Kati Thanda-Lake Eyre (North) 
+* Kati Thanda-Lake Eyre (South) 
+* Lake Torrens 
+* Lake Frome / Munda 
+* Lake Gairdner 
+* Lake Blanche 
+* Lake Everard 
+
+Waterbody outlines may not directly match up with the edges of a waterbody, as the edges themselves are not inundated, and so will not be captured within the wet extent. The waterbodies also may not match up with the previously mapped extent of any waterbody found in other map products. 
 :::
 
-:::{dropdown} Why do the waterbodies look pixelated?
-DEA Waterbodies is derived completely from satellite data, which means that the outline of each waterbody is based entirely on the extent of water mapped by satellite observations. The pixelated outlines show which satellite pixels have been included inside each waterbody. We chose not to smooth the outlines of the waterbodies to make it clear that this mapping has been done using satellite data, and to make it clear which pixels have been included in each waterbodies’ time series.
+:::{dropdown} Why do some waterbodies look pixelated?
+The pixelated outlines show which satellite pixels have been included inside each waterbody. We chose not to smooth the outlines of the waterbodies to make it clear that this mapping has been done using satellite data, and to make it clear which pixels have been included in each waterbodies’ time series.
 :::
 
 :::{dropdown} There is a waterbody missing from your map. Why?
@@ -102,14 +110,14 @@ Both of these factors mean that rivers are not seen as continuous features throu
 :::
 
 ::::{dropdown} Why are some of the waterbody polygons patchy?
-Some of the waterbody polygons contain holes, or are quite irregularly shaped. This is caused by the DEA Water Observations classifier not seeing these ‘missing bits’ as water frequently enough, and so they are excluded. This is particularly evident in the very large waterbodies in central Australia, like Kati Thanda–Lake Eyre, where the inflow points to the north of the lake are infrequently inundated when compared to the southern end of the lake, where water pools in the landscape.
+Some of the waterbody polygons contain holes, or are quite irregularly shaped. This is caused by the DEA Water Observations classifier not seeing these ‘missing bits’ as water frequently enough, and so they are excluded.
 
-Additionally the **DEA Water Observations** classifier that determines where water is observed does not work well where water is combined with vegetation. If there is vegetation obscuring the water (like a tree leaning across a river or a wetland), the classifier will not see this as water and the resulting mapped waterbody may be patchy.
+The **DEA Water Observations** classifier that determines where water is observed does not work well where water is combined with vegetation. If there is vegetation obscuring the water (like a tree leaning across a river or a wetland), the classifier will not see this as water and the resulting mapped waterbody may be patchy. For example, water under mangroves. 
 
 :::{figure} /_files/dea-waterbodies/dea-waterbodies-kati-thanda-lake-eyre.png
 :alt: Screenshot of DEA Waterbodies website showing marked line boundaries of blue water shape
 
-Kati Thanda–Lake Eyre as mapped within DEA Waterbodies
+Mangroves at the mouth of Fitzroy River near Rockhampton as mapped within DEA Waterbodies
 :::
 ::::
 
@@ -130,7 +138,7 @@ The underlying polygon dataset containing the map of over 300,000 waterbodies ac
 :::
 
 :::{dropdown} Can I load DEA Waterbodies into my GIS software?
-DEA Waterbodies has been provided as a [web mapping service](https://geoserver.dea.ga.gov.au/geoserver/dea/wms) (WMS). You can consume this service by connecting to the service endpoint (see the metadata provided with the layer in [National Map](https://nationalmap.gov.au/) or [DEA Maps](http://maps.dea.ga.gov.au/) for details). Data available through this service can be viewed on the data specification table.
+DEA Waterbodies has been provided as a [web mapping service](https://geoserver.dea.ga.gov.au/geoserver/dea/wms) (WMS). You can consume this service by connecting to the service endpoint (see the metadata provided with the layer in [National Map](https://nationalmap.gov.au/) or [DEA Maps](http://maps.dea.ga.gov.au/) for details). Data available through this service can be viewed on the data specification [table]((./?tab=details#data-specification-table)).
 :::
 
 :::{dropdown} How was DEA Waterbodies produced?
