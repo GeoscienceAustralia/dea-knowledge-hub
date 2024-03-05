@@ -20,38 +20,38 @@ If you notice an error in this documentation, things that could be explained mor
 
 flowchart LR
 
-%% Data
+subgraph DataSources["Data Source(s)"]
+    L5Data["`Landsat 5 (TM)`"]
+    L7Data["`Landsat 7 (ETM+)`"]
+    L8Data["`Landsat 8 (OLI-TIRS)`"]
+    L9Data["`Landsat 9 (OLI-TIRS)`"]
+end
 
-L5Data["Landsat 5 (TM)"]
-L7Data["Landsat 7 (ETM+)"]
-L8Data["Landsat 8 (OLI-TIRS)"]
-L9Data["Landsat 9 (OLI-TIRS)"]
+subgraph InputProducts["Input Product(s)"]
+  L5SurfaceReflectance["`Landsat 5 Surface Reflectance`"]
+  L7SurfaceReflectance["`Landsat 7 Surface Reflectance`"]
+  L8SurfaceReflectance["`Landsat 8 Surface Reflectance`"]
+  L9SurfaceReflectance["`Landsat 9 Surface Reflectance`"]
+end
 
-%% Input Products
+subgraph ProcessingMethods["Processing Method(s)"]
+  Processing1["`GeoMAD algorithms with morphological cloud operations on fmask (opening and dilation)`"]
+end
 
-L5SurfaceReflectance[Landsat 5 Surface Reflectance]
-L7SurfaceReflectance[Landsat 7 Surface Reflectance]
-L8SurfaceReflectance[Landsat 8 Surface Reflectance]
-L9SurfaceReflectance[Landsat 9 Surface Reflectance]
+subgraph Outputs["Output(s)"]
+  GeomadLandsat5["`DEA GeoMAD Landsat 5`"]
+  GeomadLandsat7["`DEA GeoMAD Landsat 7`"]
+  GeomadLandsat8And9["`DEA GeoMAD Landsat 8 and 9`"]
+end
 
-%% Processing
+L5Data --> L5SurfaceReflectance --> ProcessingMethods
+L7Data --> L7SurfaceReflectance --> ProcessingMethods
+L8Data --> L8SurfaceReflectance --> ProcessingMethods
+L9Data --> L9SurfaceReflectance --> ProcessingMethods
 
-Processing["Geometric Median and Median Absolute Deviation<br />algorithms with morphological cloud operations<br />on fmask (opening and dilation)"]
+Processing1
 
-%% Output
-
-GeomadLandsat5[DEA Geomedian and Median Absolute Deviation Landsat 5]
-GeomadLandsat7[DEA Geomedian and Median Absolute Deviation Landsat 7]
-GeomadLandsat8And9[DEA Geomedian and Median Absolute Deviation Landsat 8 and 9]
-
-%% Flows
-
-L5Data --> L5SurfaceReflectance --> Processing
-L7Data --> L7SurfaceReflectance --> Processing
-L8Data --> L8SurfaceReflectance --> Processing
-L9Data --> L9SurfaceReflectance --> Processing
-
-Processing --> GeomadLandsat5
-Processing --> GeomadLandsat7
-Processing --> GeomadLandsat8And9
+ProcessingMethods --> GeomadLandsat5
+ProcessingMethods --> GeomadLandsat7
+ProcessingMethods --> GeomadLandsat8And9
 :::
