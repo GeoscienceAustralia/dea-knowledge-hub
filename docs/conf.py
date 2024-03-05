@@ -60,8 +60,8 @@ extensions = [
     "sphinx.ext.viewcode",
     "sphinx.ext.mathjax",
     "sphinx.ext.napoleon",
-    "sphinxcontrib.mermaid",
     "myst_parser",
+    "sphinxcontrib.mermaid", # Must be before 'nbsphinx' because it loads the require.js which was disabled with 'nbsphinx_requirejs_path' to fix a conflict between these two plugins.
     "nbsphinx",
     "sphinx_design",
     "sphinxext.rediraffe",
@@ -83,6 +83,7 @@ myst_enable_extensions = [
 myst_heading_anchors = 6
 myst_all_links_external = True
 
+nbsphinx_requirejs_path = ""
 nbsphinx_execute = "never"
 
 external_toc_path = "table_of_contents.yaml"
@@ -117,7 +118,6 @@ tags_create_tags = (
     or environment["local_enable_tags"] == "Yes"
 )
 
-mermaid_output_format = "png"
 # sphinxmermaid_mermaid_init = {
 #   'theme': 'base',
 #   'themeVariables': {
