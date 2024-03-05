@@ -17,7 +17,7 @@ Our OGC Web Service supporting WMS, WCS and some WPS functionality is <https://o
 If you notice an error in this documentation, things that could be explained more clearly, or things that are missing, please let us know by creating an Issue in the [dea-notebooks Github repository](https://github.com/GeoscienceAustralia/dea-notebooks/issues), and list what you would like to see changed.
 
 :::{mermaid}
-:caption: 'GeoMAD' stands for Geometric Median and Median Absolute Deviation. 'Landsat 5 Surface Reflectance' includes NBAR, NBART, and Observational Attributes products.
+:caption: Test of caption.
 
 flowchart LR
 
@@ -57,3 +57,5 @@ ProcessingMethods --> GeomadLandsat5
 ProcessingMethods --> GeomadLandsat7
 ProcessingMethods --> GeomadLandsat8And9
 :::
+
+'GeoMAD' stands for Geometric Median and Median Absolute Deviation. 'Landsat 5 Surface Reflectance' includes NBAR, NBART, and Observational Attributes products.
