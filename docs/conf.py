@@ -60,6 +60,7 @@ extensions = [
     "sphinx.ext.viewcode",
     "sphinx.ext.mathjax",
     "sphinx.ext.napoleon",
+    "sphinxcontrib.mermaid",
     "myst_parser",
     "nbsphinx",
     "sphinx_design",
@@ -115,6 +116,19 @@ tags_create_tags = (
     environment["build_mode"] in ["demo", "production"]
     or environment["local_enable_tags"] == "Yes"
 )
+
+mermaid_output_format = "png"
+# sphinxmermaid_mermaid_init = {
+#   'theme': 'base',
+#   'themeVariables': {
+#     'primaryColor': '#BB2528',
+#     'primaryTextColor': '#fff',
+#     'primaryBorderColor': '#7C0000',
+#     'lineColor': '#F8B229',
+#     'secondaryColor': '#006100',
+#     'tertiaryColor': '#fff'
+#   }
+# }
 
 html_css_files = [
     'styles/styles.css'
