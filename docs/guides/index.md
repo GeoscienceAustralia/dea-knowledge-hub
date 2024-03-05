@@ -20,5 +20,38 @@ If you notice an error in this documentation, things that could be explained mor
 
 flowchart LR
 
-A -- text --> B -- text2 --> C
+%% Data
+
+L5Data["Landsat 5 (TM)"]
+L7Data["Landsat 7 (ETM+)"]
+L8Data["Landsat 8 (OLI-TIRS)"]
+L9Data["Landsat 9 (OLI-TIRS)"]
+
+%% Input Products
+
+L5SurfaceReflectance[Landsat 5 Surface Reflectance]
+L7SurfaceReflectance[Landsat 7 Surface Reflectance]
+L8SurfaceReflectance[Landsat 8 Surface Reflectance]
+L9SurfaceReflectance[Landsat 9 Surface Reflectance]
+
+%% Processing
+
+Processing["Geometric Median and Median Absolute Deviation<br />algorithms with morphological cloud operations<br />on fmask (opening and dilation)"]
+
+%% Output
+
+GeomadLandsat5[DEA Geomedian and Median Absolute Deviation Landsat 5]
+GeomadLandsat7[DEA Geomedian and Median Absolute Deviation Landsat 7]
+GeomadLandsat8And9[DEA Geomedian and Median Absolute Deviation Landsat 8 and 9]
+
+%% Flows
+
+L5Data --> L5SurfaceReflectance --> Processing
+L7Data --> L7SurfaceReflectance --> Processing
+L8Data --> L8SurfaceReflectance --> Processing
+L9Data --> L9SurfaceReflectance --> Processing
+
+Processing --> GeomadLandsat5
+Processing --> GeomadLandsat7
+Processing --> GeomadLandsat8And9
 :::
