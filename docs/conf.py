@@ -118,7 +118,6 @@ tags_create_tags = (
     or environment["local_enable_tags"] == "Yes"
 )
 
-mermaid_d3_zoom = True
 mermaid_init_js = """
 mermaid.initialize({
     startOnLoad: true,
