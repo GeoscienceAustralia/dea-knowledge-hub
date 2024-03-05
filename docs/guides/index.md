@@ -29,21 +29,21 @@ subgraph DataSources["Data Source(s)"]
 end
 
 subgraph InputProducts["Input Product(s)"]
-  L5SurfaceReflectance["`Landsat 5 Surface Reflectance`"]
-  L7SurfaceReflectance["`Landsat 7 Surface Reflectance`"]
-  L8SurfaceReflectance["`Landsat 8 Surface Reflectance`"]
-  L9SurfaceReflectance["`Landsat 9 Surface Reflectance`"]
+    L5SurfaceReflectance["`Landsat 5 Surface Reflectance`"]
+    L7SurfaceReflectance["`Landsat 7 Surface Reflectance`"]
+    L8SurfaceReflectance["`Landsat 8 Surface Reflectance`"]
+    L9SurfaceReflectance["`Landsat 9 Surface Reflectance`"]
 end
 
 subgraph ProcessingMethods["Processing Method(s)"]
-  direction TB
-  Processing1["`GeoMAD algorithms with morphological cloud operations on fmask (opening and dilation)`"]
+    direction TB
+    Processing1["`GeoMAD algorithms with morphological cloud operations on fmask (opening and dilation)`"]
 end
 
 subgraph Outputs["Output(s)"]
-  GeomadLandsat5["`DEA GeoMAD Landsat 5`"]
-  GeomadLandsat7["`DEA GeoMAD Landsat 7`"]
-  GeomadLandsat8And9["`DEA GeoMAD Landsat 8 and 9`"]
+    GeomadLandsat5["`DEA GeoMAD Landsat 5`"]
+    GeomadLandsat7["`DEA GeoMAD Landsat 7`"]
+    GeomadLandsat8And9["`DEA GeoMAD Landsat 8 and 9`"]
 end
 
 L5Data --> L5SurfaceReflectance --> ProcessingMethods
