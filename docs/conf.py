@@ -118,17 +118,16 @@ tags_create_tags = (
     or environment["local_enable_tags"] == "Yes"
 )
 
-# sphinxmermaid_mermaid_init = {
-#   'theme': 'base',
-#   'themeVariables': {
-#     'primaryColor': '#BB2528',
-#     'primaryTextColor': '#fff',
-#     'primaryBorderColor': '#7C0000',
-#     'lineColor': '#F8B229',
-#     'secondaryColor': '#006100',
-#     'tertiaryColor': '#fff'
-#   }
-# }
+mermaid_d3_zoom = True
+mermaid_init_js = """
+mermaid.initialize({
+    startOnLoad: true,
+    theme: 'default'
+});
+"""
+
+sphinxmermaid_mermaid_init = {
+}
 
 html_css_files = [
     'styles/styles.css'
