@@ -26,7 +26,7 @@ The DEA Waterbodies product is comprised of two key components:
 * a polygon dataset of automatically mapped waterbody outlines, and
 * a csv time series for each polygon capturing the surface area of water within each polygon at every available, clear Landsat observation. 
 
-### Data Specification Table
+### Data Specification Tables
 
 The DEA Waterbodies v3.0 Shapefile and CSV contain the following data, as specified in these tables.
 
@@ -35,7 +35,8 @@ The DEA Waterbodies v3.0 Shapefile and CSV contain the following data, as specif
 
 ```
 
-#### Data specification table for DEA Waterbodies 3.0 shapefile
+#### Data specification table for DEA Waterbodies 3.0 Shapefile
+
 |Field name |Description |Update Frequency |Data Availability*** |Status^ |Type |
 |:----|:----|:----|:----|:----|:----|
 |uid |A unique identifier determined from waterbody location and data version |Once per version |Shapefile, DEA Maps, WMS, csv |Existing |String |
@@ -50,7 +51,7 @@ The DEA Waterbodies v3.0 Shapefile and CSV contain the following data, as specif
 |timeseries |The Amazon S3 location of the wet percentage time series for this waterbody. The timeseries data is stored in a CSV file with the following columns: </br></br> (DateTime UTC) – date of observation </br></br> pc_wet (Float) – percentage of the waterbody recorded as wet (0-100) </br></br> px_wet (Integer) – number of 30m Landsat pixels recorded as wet  |Value is static, but the csv contents are updated as scene input data becomes available* |Shapefile, DEA Maps, WMS |Existing |String |
 
 
-#### Data specification table for DEA Waterbodies 3.0 timeseries csv
+#### Data specification table for DEA Waterbodies 3.0 Timeseries CSV
 
 |Field name |Description |Update Frequency |Data Availability |Status |Type |
 |:----|:----|:----|:----|:----|:----|
