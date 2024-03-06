@@ -3,7 +3,7 @@
 :::{admonition} New version in development
 :class: note
 
-There are no updates planned for this product because a new version is in development.
+No updates are planned for this product because a new version is in development.
 :::
 
 Intertidal zones are those which are exposed to the air at low tide and underwater at high tide. These include sandy beaches, tidal flats, rocky shores and reefs. 

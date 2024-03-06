@@ -3,7 +3,7 @@
 :::{admonition} New version in development
 :class: note
 
-There are no updates planned for this product because a new version is in development.
+No updates are planned for this product because a new version is in development.
 :::
 
 Intertidal environments support important ecological habitats (e.g. sandy beaches and shores, tidal flats and rocky shores and reefs), and provide many valuable benefits such as storm surge protection, carbon storage and natural resources for recreational and commercial use.
