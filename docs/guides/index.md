@@ -58,17 +58,18 @@ ProcessingMethods --> GeomadLandsat7
 ProcessingMethods --> GeomadLandsat8And9
 :::
 
-
-
 :::{mermaid}
-:caption: This is a test caption.
+:caption: The three geomedian products from Landsat with italic names are spaced out temporally. ga_ls8cls9c_gm_cyear_3 product combines images from both Landsat 8 and Landsat 9 when they are available. Only Landsat 7 geomedian is available between 2000 and 2002. 
 
 gantt
-    dateFormat YYYY-MM-DD
-    section Section
-        A task          :a1, 2014-01-01, 30d
-        Another task    :after a1, 20d
-    section Another
-        Task in Another :2014-01-12, 12d
-        another task    :24d
+
+dateFormat YYYY
+axisFormat %Y
+todayMarker off
+
+section ~
+    Landsat 5 (1986–2011) : 1986, 2011
+    Landsat 7 (1999–2021) : 1999, 2021
+    Landsat 8 (2013–2024) : 2013, 2024
+    Landsat 9 (2022–2024) : 2022, 2024
 :::
