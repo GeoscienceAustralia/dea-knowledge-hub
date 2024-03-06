@@ -138,7 +138,7 @@ The underlying polygon dataset containing the map of over 300,000 waterbodies ac
 :::
 
 :::{dropdown} Can I load DEA Waterbodies into my GIS software?
-DEA Waterbodies has been provided as a [web mapping service](https://geoserver.dea.ga.gov.au/geoserver/dea/wms) (WMS). You can consume this service by connecting to the service endpoint (see the metadata provided with the layer in [National Map](https://nationalmap.gov.au/) or [DEA Maps](http://maps.dea.ga.gov.au/) for details). Data available through this service can be viewed on the data specification [table]((./?tab=details#data-specification-table)).
+DEA Waterbodies has been provided as a [web mapping service](https://geoserver.dea.ga.gov.au/geoserver/dea/wms) (WMS). You can consume this service by connecting to the service endpoint (see the metadata provided with the layer in [National Map](https://nationalmap.gov.au/) or [DEA Maps](http://maps.dea.ga.gov.au/) for details). Data available through this service can be viewed on the data specification [tables]((./?tab=details#data-specification-tables)).
 :::
 
 :::{dropdown} How was DEA Waterbodies produced?
