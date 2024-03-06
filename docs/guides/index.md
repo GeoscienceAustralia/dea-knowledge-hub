@@ -16,6 +16,8 @@ Our OGC Web Service supporting WMS, WCS and some WPS functionality is <https://o
 
 If you notice an error in this documentation, things that could be explained more clearly, or things that are missing, please let us know by creating an Issue in the [dea-notebooks Github repository](https://github.com/GeoscienceAustralia/dea-notebooks/issues), and list what you would like to see changed.
 
+## Test diagrams
+
 :::{mermaid}
 :caption: GeoMAD stands for Geometric Median and Median Absolute Deviation. Landsat 5 Surface Reflectance includes NBAR, NBART, and Observational Attributes products.
 
@@ -71,5 +73,5 @@ section ~
     Landsat 5 (1986–2011) : 1986, 2011
     Landsat 7 (1999–2021) : 1999, 2021
     Landsat 8 (2013–2024) : 2013, 2024
-    Landsat 9 (2022–2024) : 2022, 2024
+    Landsat 9 (2022–Today) : 2022, 2024
 :::
