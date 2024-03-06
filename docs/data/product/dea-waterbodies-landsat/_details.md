@@ -28,7 +28,12 @@ The DEA Waterbodies product is comprised of two key components:
 
 ### Data Specification Table
 
-The DEA Waterbodies v3.0 shapefile and csv contain the following data, as specified in these tables:
+The DEA Waterbodies v3.0 Shapefile and CSV contain the following data, as specified in these tables.
+
+```{eval-rst}
+:download:`Download the Data Specification Tables as a PDF </_files/dea-waterbodies/DEA_Waterbodies_v3.0_Data_Spec_Table.pdf>`
+
+```
 
 #### Data specification table for DEA Waterbodies 3.0 shapefile
 |Field name |Description |Update Frequency |Data Availability*** |Status^ |Type |
