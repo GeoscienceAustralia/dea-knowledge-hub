@@ -1,5 +1,11 @@
 ## Background
 
+:::{admonition} New version in development
+:class: note
+
+There are no updates planned for this product because a new version is in development.
+:::
+
 Land cover is the observed physical cover on the Earth's surface including trees, shrubs, grasses, soils, exposed rocks, water bodies, plantations, crops and built structures. A consistent, Australia-wide land cover product helps understanding of how the different parts of the environment change and inter-relate. Earth observation data recorded over a period of time firstly allows the observation of the state of land cover at a specific time and secondly the way that land cover changes by comparison between times.
 
 ## What this product offers
