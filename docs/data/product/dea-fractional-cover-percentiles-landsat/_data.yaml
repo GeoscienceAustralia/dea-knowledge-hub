@@ -12,7 +12,7 @@ spatial_data_type: Raster
 time_span:
   start: 1987
   end: present
-update_frequency: Annually
+update_frequency: Yearly
 next_update: null
 product_ids:
   - ga_ls_fc_pc_cyear_3

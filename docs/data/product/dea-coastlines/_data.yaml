@@ -12,7 +12,7 @@ spatial_data_type: Vector
 time_span:
   start: 1988
   end: 2022
-update_frequency: Annually
+update_frequency: Yearly
 next_update: null
 product_ids: null
 
