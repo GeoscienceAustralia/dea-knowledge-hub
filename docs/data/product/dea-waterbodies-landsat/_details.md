@@ -2,11 +2,11 @@
 
 DEA Waterbodies provides up-to-date information about the extent and location of surface water in Australia to enable us to understand of this valuable and increasingly scarce resource.
 
-It uses Geoscience Australia’s archive of over 30 years of Landsat satellite imagery to identify the locations of over 300,000 waterbodies on the Australian landscape and it estimates the wet surface area of these waterbodies.
+It uses Geoscience Australia’s archive of over 30 years of Landsat satellite imagery to identify the locations of over 300,000 water bodies on the Australian landscape and it estimates the wet surface area of these water bodies.
 
-The tool applies a [water classification scheme](/data/product/dea-water-observations-landsat/) to each available Landsat satellite image and maps the locations of waterbodies across Australia. It provides a time series of wet surface areas for all waterbodies that are present for over 10% of the time between 1987 and 2020, and are larger than 2,700 m<sup>2</sup> (the size of three Landsat pixels).
+The tool applies a [water classification scheme](/data/product/dea-water-observations-landsat/) to each available Landsat satellite image and maps the locations of water bodies across Australia. It provides a time series of wet surface areas for all water bodies that are present for over 10% of the time between 1987 and 2020, and are larger than 2,700 m<sup>2</sup> (the size of three Landsat pixels).
 
-The tool allows you to see changes in the wet surface area of waterbodies over time. This can be used to identify when waterbodies are increasing or decreasing in wet surface area.
+The tool allows you to see changes in the wet surface area of water bodies over time. This can be used to identify when water bodies are increasing or decreasing in wet surface area.
 
 % ## Data description
 
@@ -21,7 +21,7 @@ The tool allows you to see changes in the wet surface area of waterbodies over t
 ## Technical information
 
 The DEA Waterbodies product is comprised of two key components:
-* a polygon dataset of automatically mapped waterbody outlines, and
+* a polygon dataset of automatically mapped water body outlines, and
 * a csv time series for each polygon capturing the surface area of water within each polygon at every available, clear Landsat observation. 
 
 ### Data Specification Tables
@@ -37,16 +37,16 @@ The DEA Waterbodies v3.0 Shapefile and CSV contain the following data, as specif
 
 |Field name |Description |Update Frequency |Data Availability*** |Status^ |Type |
 |:----|:----|:----|:----|:----|:----|
-|uid |A unique identifier determined from waterbody location and data version |Once per version |Shapefile, DEA Maps, WMS, csv |Existing |String |
-|perimetr_m |Perimeter of the defined waterbody (m) |Once per version |Shapefile, DEA Maps, WMS |Existing |Real |
-|area_m2 |Area of the defined waterbody (m2) |Once per version |Shapefile, DEA Maps, WMS |Existing |Real |
-|dt_wetobs |The last date any water was observed. This is subject to the satellite having clear visibility of the waterbody. The satellite must view 80% of a waterbody to have a valid wet observation recorded.   |As scene input data is available* |DEA Maps, WMS |New |DateTime (UTC) |
-|wet_sa_m2 |The total estimated wet surface area calculated from the last clear satellite observation of the waterbody. Calculated as the wet percentage (pc_wet, see timeseries) multiplied by the waterbody area (area_m2) divided by 100.** Any area estimates should be compared to additional data for verification. |As scene input data is available* |DEA Maps, WMS |New |Real |
-|dt_satpass |The most recent date that the satellite passed over the waterbody. |As scene input data is available* |DEA Maps, WMS |New |DateTime (UTC) |
+|uid |A unique identifier determined from water body location and data version |Once per version |Shapefile, DEA Maps, WMS, csv |Existing |String |
+|perimetr_m |Perimeter of the defined water body (m) |Once per version |Shapefile, DEA Maps, WMS |Existing |Real |
+|area_m2 |Area of the defined water body (m2) |Once per version |Shapefile, DEA Maps, WMS |Existing |Real |
+|dt_wetobs |The last date any water was observed. This is subject to the satellite having clear visibility of the water body. The satellite must view 80% of a water body to have a valid wet observation recorded.   |As scene input data is available* |DEA Maps, WMS |New |DateTime (UTC) |
+|wet_sa_m2 |The total estimated wet surface area calculated from the last clear satellite observation of the water body. Calculated as the wet percentage (pc_wet, see timeseries) multiplied by the water body area (area_m2) divided by 100.** Any area estimates should be compared to additional data for verification. |As scene input data is available* |DEA Maps, WMS |New |Real |
+|dt_satpass |The most recent date that the satellite passed over the water body. |As scene input data is available* |DEA Maps, WMS |New |DateTime (UTC) |
 |dt_updated |The date that the dt_wetobs, wet_sa_m2 and dt_satpass attributes were last updated. |As scene input data is available* |DEA Maps, WMS |New |DateTime (UTC) |
 |dt_created |The date the polygons were created |Once per version |Shapefile, DEA Maps, WMS |New |DateTime (UTC) |
 |meta_url |The metadata url for this dataset |Once per version |Shapefile, DEA Maps, WMS |New |String |
-|timeseries |The Amazon S3 location of the wet percentage time series for this waterbody. The timeseries data is stored in a CSV file with the following columns: </br></br> (DateTime UTC) – date of observation </br></br> pc_wet (Float) – percentage of the waterbody recorded as wet (0-100) </br></br> px_wet (Integer) – number of 30m Landsat pixels recorded as wet  |Value is static, but the csv contents are updated as scene input data becomes available* |Shapefile, DEA Maps, WMS |Existing |String |
+|timeseries |The Amazon S3 location of the wet percentage time series for this water body. The timeseries data is stored in a CSV file with the following columns: </br></br> (DateTime UTC) – date of observation </br></br> pc_wet (Float) – percentage of the water body recorded as wet (0-100) </br></br> px_wet (Integer) – number of 30m Landsat pixels recorded as wet  |Value is static, but the csv contents are updated as scene input data becomes available* |Shapefile, DEA Maps, WMS |Existing |String |
 
 
 #### Data specification table for DEA Waterbodies 3.0 Timeseries CSV
@@ -54,12 +54,12 @@ The DEA Waterbodies v3.0 Shapefile and CSV contain the following data, as specif
 |Field name |Description |Update Frequency |Data Availability |Status |Type |
 |:----|:----|:----|:----|:----|:----|
 |date |date of observation (UTC) |Value is static, but the csv contents are updated as scene input data becomes available* |DEA Maps, csv |Existing |DateTime (UTC) |
-|pc_wet |percentage of the waterbody recorded as wet (0-100) |Value is static, but the csv contents are updated as scene input data becomes available* |DEA Maps, csv |Existing |Float |
+|pc_wet |percentage of the water body recorded as wet (0-100) |Value is static, but the csv contents are updated as scene input data becomes available* |DEA Maps, csv |Existing |Float |
 |px_wet |number of 30m Landsat pixels recorded as wet |Value is static, but the csv contents are updated as scene input data becomes available* |DEA Maps, csv |Existing |Integer |
 
-</p><p><small>* Scene data is available approximately two weeks from the satellite overpass for the Water Observations feature layers used to process Waterbodies. Waterbodies scenes are processed as Water Observations feature layer scenes become available in the DEA datacube. It takes approximately ten minutes to process Waterbodies per scene.  One Landsat scene measures approximately 190 x 180 km https://www.nasa.gov/wp-content/uploads/2015/04/landsat_9_fast_facts.pdf  
+</p><p><small>* Scene data is available approximately two weeks from the satellite overpass for the Water Observations feature layers used to process water bodies. Water bodies scenes are processed as Water Observations feature layer scenes become available in the DEA datacube. It takes approximately ten minutes to process Waterbodies per scene.  One Landsat scene measures approximately 190 x 180 km https://www.nasa.gov/wp-content/uploads/2015/04/landsat_9_fast_facts.pdf  
 
-** Larger waterbodies are easier to detect and smaller or narrower waterbodies are harder to detect. Area estimates should be compared to additional data for verification. 
+** Larger water bodies are easier to detect and smaller or narrower water bodies are harder to detect. Area estimates should be compared to additional data for verification. 
 
 *** Data fields empty in shapefile (dt_wetobs, wet_sa_m2, dt_satpass, dt_updated) are available for the latest relevant observations only via DEA Maps and WMS 
 
@@ -67,7 +67,7 @@ The DEA Waterbodies v3.0 Shapefile and CSV contain the following data, as specif
 
 ### Producing DEA Waterbodies
 
-DEA Waterbodies is a polygon-based view of DEA Water Observations (DEA WO), derived through the automatic processing of DEA WO to identify the outlines of persistent waterbodies across Australia (Figure 1). 
+DEA Waterbodies is a polygon-based view of DEA Water Observations (DEA WO), derived through the automatic processing of DEA WO to identify the outlines of persistent water bodies across Australia (Figure 1). 
 
 :::{figure} /_files/cmi/V2Workflow.JPG
 :alt: DEA Waterbodies workflow
