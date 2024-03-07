@@ -133,7 +133,7 @@ DEA Waterbodies has been provided as a web mapping service. You can consume this
 :::
 
 :::{dropdown} How was DEA Waterbodies produced?
-The code used to produce DEA Waterbodies has been uploaded to Geoscience Australia's [Github page](https://github.com/GeoscienceAustralia/dea-waterbodies). There is also a [peer reviewed journal article](https://doi.org/10.3390/rs13081437) that explains in detail the methods used to produce DEA Waterbodies.
+The code used to produce DEA Waterbodies has been uploaded to Geoscience Australia's [GitHub page](https://github.com/GeoscienceAustralia/dea-waterbodies). There is also a [peer reviewed journal article](https://doi.org/10.3390/rs13081437) that explains in detail the methods used to produce DEA Waterbodies.
 :::
 
 :::{dropdown} How do I cite DEA Waterbodies?

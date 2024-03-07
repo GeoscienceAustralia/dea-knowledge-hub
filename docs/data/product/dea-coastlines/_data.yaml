@@ -54,7 +54,7 @@ code_examples:
   - link: /notebooks/DEA_products/DEA_Coastlines/
     name: Code examples
   - link: https://github.com/GeoscienceAustralia/dea-coastlines
-    name: Github repository
+    name: GitHub repository
 
 web_services:
   - link: https://geoserver.dea.ga.gov.au/geoserver/wms
