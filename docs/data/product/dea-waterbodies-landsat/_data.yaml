@@ -52,7 +52,7 @@ code_examples:
   - link: /notebooks/DEA_products/DEA_Waterbodies/
     name: Code examples
   - link: https://github.com/GeoscienceAustralia/dea-conflux
-    name: Github repository
+    name: GitHub repository
 
 web_services:
   - link: https://geoserver.dea.ga.gov.au/geoserver/web/?0
