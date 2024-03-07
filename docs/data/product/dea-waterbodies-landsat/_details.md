@@ -1,14 +1,12 @@
 ## Background
 
-Up-to-date information about the extent and location of surface water in Australia provides us with a common understanding of this valuable and increasingly scarce resource.
+DEA Waterbodies provides up-to-date information about the extent and location of surface water in Australia to enable us to understand of this valuable and increasingly scarce resource.
 
-## What this product offers
+It uses Geoscience Australia’s archive of over 30 years of Landsat satellite imagery to identify the locations of over 300,000 waterbodies on the Australian landscape and it estimates the wet surface area of these waterbodies.
 
-Digital Earth Australia Waterbodies uses Geoscience Australia’s archive of over 30 years of Landsat satellite imagery to identify where over 300,000 waterbodies are in the Australian landscape and tells us the wet surface area within those waterbodies.
+The tool applies a [water classification scheme](/data/product/dea-water-observations-landsat/) to each available Landsat satellite image and maps the locations of waterbodies across Australia. It provides a time series of wet surface areas for all waterbodies that are present for over 10% of the time between 1987 and 2020, and are larger than 2,700 m<sup>2</sup> (the size of three Landsat pixels).
 
-The tool uses a [water classification](/data/product/dea-water-observations-landsat/) for every available Landsat satellite image and maps the locations of waterbodies across Australia. It provides a time series of wet surface area for waterbodies that are present more than 10% of the time between 1987 and 2020, and are larger than 2,700 m<sup>2</sup> (3 Landsat pixels).
-
-The tool indicates changes in the wet surface area of waterbodies. This can be used to identify when waterbodies are increasing or decreasing in wet surface area.
+The tool allows you to see changes in the wet surface area of waterbodies over time. This can be used to identify when waterbodies are increasing or decreasing in wet surface area.
 
 % ## Data description
 
