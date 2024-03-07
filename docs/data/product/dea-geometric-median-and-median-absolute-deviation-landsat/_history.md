@@ -1,6 +1,8 @@
-% ## Changelog
+## Changelog
 
-Version 4.0.0.
+<span id="v4.0.0"></span>
+
+### Version 4.0.0
 
 An enhancement to cloud masking has reduced cloud and shadow noise. Cloud masks have been cleaned using a 3-pixel morphological opening on clouds and a 6-pixel dilation on cloud and shadows. Unlike previous versions which did not use cloud buffering. Note that some areas of very high surface reflectance (e.g. sand dunes, ocean glint) may exhibit higher levels of noise or data gaps, but this has limited impact.
 
