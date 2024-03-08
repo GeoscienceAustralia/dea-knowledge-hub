@@ -23,9 +23,9 @@ The GeoMAD product is useful for the following.
 
 ### Median Composites
 
-Median composites are an algorithm for removing cloud and shadow noise from images by setting the value of each pixel of an image to the median value for that band. The median of each band is independent of the other bands for any given$
+Median composites are an algorithm for removing cloud and shadow noise from images by setting the value of each pixel of an image to the median value for that band. The median of each band is independent of the other bands for any given.
 
-The benefit of using the median composite algorithm is that it is very fast to compute. The problem, however, is that pixels hold information for multiple bands and medians lose this information. Therefore, a geomedian algorithm is used$
+The benefit of using the median composite algorithm is that it is very fast to compute. The problem, however, is that pixels hold information for multiple bands and medians lose this information. Therefore, a geomedian algorithm is used.
 
 ![Median compositing algorithm diagram](/_files/cmi/geomedian-alg-composite_techspecs.png)
 
@@ -39,7 +39,7 @@ The surface reflectance geomedian uses high-dimensional statistical theory to de
 
 The geomedian is a pixel-composite mosaic of a time series of earth observations. Essentially, the value of a pixel in a geomedian image is the statistical median of all observations for that pixel for a period of time. For example, the 2016 Landsat 8 geomedian image over an area will be the median of all Landsat 8 pixels recorded for that area in 2016. 
 
-An annual geometric median is a high-dimensional median calculated from the reflectance values recorded over a one-year period. The years available are each full calendar year since 1988. The annual geomedians of surface reflectance measurements are calculated per calendar year.
+An annual geometric median is a high-dimensional median calculated from the reflectance values recorded over a one-year period. The years available are each full calendar year since 1986. The annual geomedians of surface reflectance measurements are calculated per calendar year.
 
 ![Geomedian algorithm diagram](/_files/cmi/geomedian-composite_techspecs.png)
 
@@ -139,7 +139,7 @@ In two dimensions, cosine distance can be graphically compared to Euclidean dist
 
 *Relative relationships between Euclidean and cosine distances.*
 
-In a general sense, cosine distance is related to the angle between the two points, while Euclidean distance is related to the straight-line distance between the two points 'd'. Like Euclidean distance, points are more similar when the cosine distance between them is small. The value of the cosine distance is smaller when thr angle is small (i.e. close to 0) or when its close to 180 degrees.
+In a general sense, cosine distance is related to the angle between the two points, while Euclidean distance is related to the straight-line distance between the two points 'd'. Like Euclidean distance, points are more similar when the cosine distance between them is small. The value of the cosine distance is smaller when the angle is small (i.e. close to 0) or when its close to 180 degrees.
 
 Notice we could have a small cosine distance but a large Euclidean distance; for example, if the angle between the vectors is small, but one is much longer than the other. This is an important property of cosine distance (and thus SMAD) - unlike Euclidean distance, cosine distance is not skewed by the magnitude of the measurements.
 
