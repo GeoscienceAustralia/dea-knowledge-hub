@@ -13,7 +13,7 @@ time_span:
   start: 1 Jul 2021
   end: 29 Aug 2023
 update_frequency: Daily
-next_update: No further updates planned
+next_update: No updates planned
 product_ids:
   - ga_s2_ba_provisional_3
 
