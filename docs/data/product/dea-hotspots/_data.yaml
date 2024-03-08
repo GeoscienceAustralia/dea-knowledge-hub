@@ -12,7 +12,7 @@ spatial_data_type: Vector
 time_span:
   start: 27/08/2002
   end: present
-update_frequency: 10 minutes
+update_frequency: Every 10 minutes
 next_update: null
 product_ids: null
 

@@ -1,36 +1,37 @@
+# See the documentation for each of these metadata fields:
+# https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/product_metadata_fields.html
+
 # Overview
 
-title: Your title
-long_title: null
-header_image: /_files/subfolder/image.png
-version: 0.0.0
-product_type: null
-spatial_data_type: null
+title: Example product
+# long_title: Long example product title
+# header_image: /_files/example/image.png
+version: 1.0.0
+product_type: Derivative
+spatial_data_type: Vector
 time_span:
-  start: null
+  start: 1 Jan 2020
   end: null
-update_frequency: null
+update_frequency: Yearly
 # product_ids:
-#   - product_id_1
+#   - example_1
 
 is_latest_version: true
-latest_version_link: null
+# latest_version_link: /data/product/example-product/
 is_provisional: false
 
-parent_products:
-  name: null
-  link: null
-collection:
-  name: null
-  link: null
-doi: null
-ecat: null
-nci:
-  name: null
-  code: null
+# parent_products:
+#   name: Example parent product
+#   link: /data/product/example-parent-product/
+# collection:
+#   name: Geoscience Australia Landsat Collection 3
+#   link: null
+# doi: 10.00000/000000
+# ecat: 100000
+# nci: a000
 
 # tags:
-#   - geoscience_australia_landsat_collection_3
+#   - example_tag
 
 # Access
 
@@ -71,9 +72,9 @@ nci:
 # History
 
 # old_versions:
-#   - version: 0.0.0
-#     title: Lorem ipsum
-#     slug: example-page
+#   - version: 1.0.0
+#     title: Example product
+#     slug: example-product-1.0.0
 
 # Settings
 
@@ -84,3 +85,4 @@ enable_quality: true
 enable_history: true
 enable_faqs: false
 enable_credits: true
+

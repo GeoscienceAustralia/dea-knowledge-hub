@@ -1,0 +1,3 @@
+# Tech Alerts and Changelog redirects
+
+guides/tech_alerts_changelog  tech-alerts-changelog

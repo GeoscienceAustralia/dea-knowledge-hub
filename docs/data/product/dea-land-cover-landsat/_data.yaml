@@ -12,8 +12,8 @@ spatial_data_type: Raster
 time_span:
   start: 1988
   end: 2020
-update_frequency: Annually
-next_update: No updates planned - new version in development
+update_frequency: Yearly
+next_update: No updates planned
 product_ids:
   - ga_ls_landcover_class_cyear_2
 

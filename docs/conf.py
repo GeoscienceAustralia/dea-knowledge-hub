@@ -16,7 +16,6 @@ environment = {
 project = "DEA Knowledge Hub"
 copyright = f"{utilities.current_year()}, Geoscience Australia"
 author = "Geoscience Australia"
-version = "0.1"
 
 html_static_path = ["_static", "_files"]
 templates_path = ["_layout", "_templates"]
@@ -41,6 +40,7 @@ exclude_patterns += utilities.optional_exclude_pattern("LOCAL_ENABLE_USER_GUIDES
 exclude_patterns += utilities.optional_exclude_pattern("LOCAL_ENABLE_DATA_PRODUCTS", "data")
 exclude_patterns += utilities.optional_exclude_pattern("LOCAL_ENABLE_NOTEBOOKS", "notebooks")
 exclude_patterns += utilities.optional_exclude_pattern("LOCAL_ENABLE_TAGS", "tags")
+exclude_patterns += utilities.optional_exclude_pattern("LOCAL_ENABLE_TECH_ALERTS_CHANGELOG", "tech-alerts-changelog")
 
 html_title = "DEA Knowledge Hub"
 html_logo = "_files/logos/ga-dea-combined-logo.svg"
@@ -48,7 +48,7 @@ html_favicon = "_static/favicons/dea-favicon.ico"
 html_theme = 'pydata_sphinx_theme'
 language = "en"
 
-if environment["build_mode"] == "production": html_baseurl = "https://docs.dea.ga.gov.au/"
+if environment["build_mode"] == "production": html_baseurl = "https://knowledge.dea.ga.gov.au/"
 elif environment["build_mode"] == "demo": html_baseurl = f"https://{environment['git_branch']}--dea-docs.netlify.app/"
 else: html_baseurl = ""
 
@@ -93,7 +93,7 @@ if (
 
 sitemap_url_scheme = "{link}"
 
-ogp_site_url = "https://docs.dea.ga.gov.au/"
+ogp_site_url = "https://knowledge.dea.ga.gov.au/"
 ogp_image = "/_files/logos/dea-logo-inline.png"
 
 sys.path.insert(0, os.path.abspath("./notebooks/Tools"))
@@ -102,7 +102,7 @@ autodoc_default_options = {
     "members": True,
 }
 autodoc_mock_imports = mock_imports.mock_imports
-autosummary_mock_imports = autodoc_mock_imports
+autosummary_mock_imports = mock_imports.mock_imports
 
 napoleon_google_docstring = False
 napoleon_numpy_docstring = True

@@ -42,7 +42,7 @@ relevant_websites:
   - link: https://maps.dea.ga.gov.au/story/DEACoastlines
     name: Interactive DEA Coastlines product on DEA Maps
   - link: https://github.com/GeoscienceAustralia/dea-coastlines
-    name: DEA Coastlines Github code repository
+    name: DEA Coastlines GitHub code repository
 
 # Processing tab
 
