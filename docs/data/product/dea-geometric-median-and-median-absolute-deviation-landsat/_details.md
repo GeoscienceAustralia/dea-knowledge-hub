@@ -79,6 +79,8 @@ Each MAD provides information on different land cover change features which are 
 
 The mathematical derivation of the three MADs can be found in Roberts et al. (2018).
 
+:::{dropdown} Further Technical Details
+
 #### Euclidean MAD (EMAD)
 
 The most logical place to start thinking about any of the MADs is the Euclidean MAD (EMAD). This is because EMAD comes from Euclidean distance, and Euclidean distance can be explained with a physical analogy: it is how we measure straight-line distances between points. In our three-dimensional world, it may look like this:
@@ -203,6 +205,8 @@ $$
 $$
 
 BCMAD takes on values from 0 - 1.
+
+:::
 
 ## Lineage
 

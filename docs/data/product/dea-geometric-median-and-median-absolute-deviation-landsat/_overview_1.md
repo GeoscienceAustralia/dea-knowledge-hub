@@ -1,3 +1,9 @@
+:::{admonition} This version includes breaking changes
+:class: note
+
+All tile grid references have been changed to refer to a new origin point. Learn more in the [Version 4.0.0 changelog](./?tab=history#v4.0.0).
+:::
+
 ## About
 
 The DEA Geometric Median and Median Absolute Deviation products use statistical analyses to provide information on variance in the landscape over the given year. They provide insight into the “average” conditions observed over Australia in a given year, as well as the amount of variability experienced around that average. These products are useful for monitoring change detection, such as from cropping, urban expansion or burnt area mapping. 
@@ -13,9 +19,3 @@ Large-scale image composites are increasingly important for a variety of applica
 The creation of good composite images is especially important due to the opening of the United States Geological Survey’s Landsat archive. The greater availability of satellite imagery has resulted in demand to provide large regional mosaics that are representative of conditions over specific time periods while also being free of clouds and other unwanted visual noise. One approach is to ‘stitch together’ multiple selected high-quality images. Another is to create mosaics in which pixels from a time series of observations are combined (using an algorithm). This ‘pixel composite’ approach to mosaic generation provides more consistent results than with stitching high-quality images due to the improved colour balance created by combining one-by-one pixel-representative images. Another strength of pixel-based composites is their ability to be automated, hence enabling their use in large data collections and time series datasets. 
 
 The DEA GeoMAD product can be used for seeing how an area of land usually looks rather than only viewing it at a single point in time. Hence you can assess the land cover and land use on a general basis rather than at a specific year. It can also be used to assess how much an area changes over time. You will notice areas like bare rock that are very stable versus those like cropping areas that change dramatically.
-
-:::{admonition} This version includes breaking changes
-:class: note
-
-All tile grid references have been changed to refer to a new origin point. Learn more in the [Version 4.0.0 changelog](./?tab=history#v4.0.0).
-:::
