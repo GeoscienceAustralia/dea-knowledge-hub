@@ -63,22 +63,3 @@ Affected products:
 See [DEA Tech alert email](https://communication.ga.gov.au/link/id/zzzz659df9f7f306b556Pzzzz61de67bd94bfe861/page.html) for more information. 
 Click [here](https://communication.ga.gov.au/link/id/zzzz659de7f165049054Pzzzz61de67bd94bfe861/page.html) to subscribe to DEA Tech alert emails.
 
-## 2023-11: Release of version 0.3.0 of DEA Tools
-
-Major update to the [DEA Tools Python package](https://knowledge.dea.ga.gov.au/notebooks/Tools/), including new tools for:
-
-* [pansharpening Landsat data](https://knowledge.dea.ga.gov.au/notebooks/How_to_guides/Pansharpening.html)
-* [tide modelling](https://knowledge.dea.ga.gov.au/notebooks/How_to_guides/Tidal_modelling.html)
-* [sunglint masking](https://knowledge.dea.ga.gov.au/notebooks/How_to_guides/Sunglint_masking.html)
-* [interactive mapping](https://knowledge.dea.ga.gov.au/notebooks/Interactive_apps/README.html)
-* [spatial operations](https://knowledge.dea.ga.gov.au/notebooks/Tools/gen/dea_tools.spatial.html)
-
-In addition, this update includes 14 new and updated Jupyter notebooks. See [version 0.3.0 release notes](https://github.com/GeoscienceAustralia/dea-notebooks/releases/tag/0.3.0) for more detail.
-
-## 2023-08: New notebooks, features and documentation
-
-* Added a new [DEA Wetlands Insight Tool notebook](https://knowledge.dea.ga.gov.au/notebooks/DEA_products/DEA_Wetlands_Insight_Tool.html)
-* Notebooks for [loading data from Microsoft Planetary Computer](https://knowledge.dea.ga.gov.au/notebooks/How_to_guides/Planetary_computer.html)
-* Enhanced [DEA Tools Python Package API documentation](https://knowledge.dea.ga.gov.au/notebooks/Tools/)
-* Improved interactive widget functionality for satellite image export and animations
-

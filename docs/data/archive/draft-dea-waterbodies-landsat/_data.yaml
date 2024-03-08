@@ -51,7 +51,7 @@ code_examples:
   - link: https://knowledge.dea.ga.gov.au/notebooks/DEA_products/DEA_Waterbodies.html
     name: Jupyter notebook
   - link: https://github.com/GeoscienceAustralia/dea-waterbodies
-    name: Github repository
+    name: GitHub repository
 
 web_services:
   - link: https://geoserver.dea.ga.gov.au/geoserver/wms
