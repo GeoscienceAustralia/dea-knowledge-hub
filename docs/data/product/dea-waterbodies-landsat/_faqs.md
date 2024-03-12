@@ -152,7 +152,7 @@ Dataset citation:
 Dunn, B., Krause, C., Newey, V., Lymburner, L., Alger, M.J., Adams, C., Yuan, F., Ma, S., Barzinpour, A., Ayers, D., McKenna, C., Schenk, L. 2024. Digital Earth Australia Waterbodies v3.0. Geoscience Australia, Canberra. [https://dx.doi.org/10.26186/148920](https://dx.doi.org/10.26186/148920) 
 
 Research paper citation: 
-Krause, C.E., Newey, V., Alger, M.J. and Lymburner, L., (2021). Mapping and monitoring the multi-decadal dynamics of Australia’s open waterbodies using Landsat. Remote Sensing, 13(8), p.1437. [https://doi.org/10.3390/rs13081437](https://doi.org/10.3390/rs13081437) 
+Krause, C.E., Newey, V., Alger, M.J. and Lymburner, L., (2021). Mapping and Monitoring the Multi-Decadal Dynamics of Australia’s Open Waterbodies using Landsat. *Remote Sensing*, *13*, 1437. [https://doi.org/10.3390/rs13081437](https://doi.org/10.3390/rs13081437) 
 :::
 
 :::{dropdown} Who did you collaborate with to produce DEA Waterbodies?

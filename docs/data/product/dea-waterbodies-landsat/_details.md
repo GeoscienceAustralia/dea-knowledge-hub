@@ -1,12 +1,10 @@
 ## Background
 
-Up-to-date information about the extent and location of surface water in Australia provides us with a common understanding of this valuable and increasingly scarce resource.
+DEA Waterbodies provides up-to-date information about the extent and location of surface water in Australia to enable us to understand this valuable and increasingly scarce resource.
 
-## What this product offers
+The product uses Geoscience Australia’s archive of over 30 years of Landsat satellite imagery to identify the locations of over 300,000 waterbodies in the Australian landscape and also estimates the wet surface area within these waterbodies.
 
-Digital Earth Australia Waterbodies uses Geoscience Australia’s archive of over 30 years of Landsat satellite imagery to identify where over 300,000 waterbodies are in the Australian landscape and tells us the wet surface area within those waterbodies.
-
-The tool uses a [water classification](/data/product/dea-water-observations-landsat/) for every available Landsat satellite image and maps the locations of waterbodies across Australia. It provides a time series of wet surface area for waterbodies that are present more than 10% of the time between 1987 and 2020, and are larger than 2,700 m<sup>2</sup> (3 Landsat pixels).
+DEA Waterbodies applies a [water classification](/data/product/dea-water-observations-landsat/) to each available Landsat satellite image and maps the locations of waterbodies across Australia. It provides a time series of wet surface area for all waterbodies that are present more than 10% of the time between 1987 and 2020, and are larger than 2,700 m<sup>2</sup> (the size of 3 Landsat pixels).
 
 The tool indicates changes in the wet surface area of waterbodies. This can be used to identify when waterbodies are increasing or decreasing in wet surface area.
 
@@ -14,7 +12,7 @@ The tool indicates changes in the wet surface area of waterbodies. This can be u
 
 ## Applications
 
-* Understand local through to national-scale surface water dynamics over time and geography
+* Understand surface water dynamics over time on a local or national scale.
 * Provide supporting information to better manage water across Australia
 * Gain insights into the severity and spatial distribution of drought
 * Identify potential water sources for aerial firefighting
@@ -23,12 +21,14 @@ The tool indicates changes in the wet surface area of waterbodies. This can be u
 ## Technical information
 
 The DEA Waterbodies product is comprised of two key components:
-* a polygon dataset of automatically mapped waterbody outlines, and
-* a csv time series for each polygon capturing the surface area of water within each polygon at every available, clear Landsat observation. 
+* **Mapped waterbody outlines** — a polygon dataset of the programmatically generated waterbody outlines.
+* **Surface area timeseries** — a CSV timeseries for each polygon of its surface area over time within the mapped polygon (for every available, clear Landsat observation).
+
+The code used in the development of this product is available on [GitHub](https://github.com/GeoscienceAustralia/dea-conflux).
 
 ### Data Specification Tables
 
-The DEA Waterbodies v3.0 Shapefile and CSV contain the following data, as specified in these tables.
+The DEA Waterbodies v3.0 shapefile and CSV contain the following data.
 
 ```{eval-rst}
 :download:`Download the Data Specification Tables as a PDF </_files/dea-waterbodies/DEA_Waterbodies_v3.0_Data_Spec_Table.pdf>`
@@ -67,23 +67,23 @@ The DEA Waterbodies v3.0 Shapefile and CSV contain the following data, as specif
 
 ^Data fields introduced in v3.0 are ‘New’ </small></p>
 
-### Producing DEA Waterbodies
+## Lineage
 
-DEA Waterbodies is a polygon-based view of DEA Water Observations (DEA WO), derived through the automatic processing of DEA WO to identify the outlines of persistent waterbodies across Australia (Figure 1). 
+This product is based on [DEA Water Observations](/data/product/dea-water-observations-landsat/) which it extends with reanalysis and mapping..
+
+## Producing DEA Waterbodies polygons
+
+DEA Waterbodies is a polygon-based view of DEA Water Observations (DEA WO), derived through the automatic processing of DEA WO to identify the outlines of persistent waterbodies across Australia. 
 
 :::{figure} /_files/cmi/V2Workflow.JPG
 :alt: DEA Waterbodies workflow
 
-Figure 1: Flow diagram outlining the steps taken to produce DEA Waterbodies polygons
+Flow diagram outlining the steps taken to produce DEA Waterbodies polygons
 :::
 
 For a detailed discussion of the methods used to produce DEA Waterbodies v1, refer to [Krause et al. 2021](https://doi.org/10.3390/rs13081437). For the differences between DEA Waterbodies v1, v2 and v3.0, refer to the [Changelog](./?tab=history#changelog). DEA Waterbodies v3.0 uses the same polygon/vector outlines as DEA Waterbodies v2, with additional metadata.
 
-## Lineage
 
-This product builds upon [DEA Water Observations](/data/product/dea-water-observations-landsat/).
-
-The code used in the development of this product is available on [GitHub](https://github.com/GeoscienceAustralia/dea-conflux).
 
 % ## Processing steps
 
@@ -91,7 +91,7 @@ The code used in the development of this product is available on [GitHub](https:
 
 ## References
 
-Krause, C.E., Newey, V., Alger, M.J. and Lymburner, L., (2021). Mapping and monitoring the multi-decadal dynamics of Australia’s open waterbodies using Landsat. Remote Sensing, 13(8), p.1437. [https://doi.org/10.3390/rs13081437](https://doi.org/10.3390/rs13081437)
+Krause, C.E., Newey, V., Alger, M.J. and Lymburner, L., (2021). Mapping and Monitoring the Multi-Decadal Dynamics of Australia’s Open Waterbodies using Landsat. *Remote Sensing*, *13*, 1437. [https://doi.org/10.3390/rs13081437](https://doi.org/10.3390/rs13081437)
 
-Mueller, N., Lewis, A., Roberts, D., Ring, S., Melrose, R., Sixsmith, J., Lymburner, L., McIntyre, A., Tan, P., Curnow, S., & Ip, A. (2016). Water observations from space: Mapping surface water from 25 years of Landsat imagery across Australia. *Remote Sensing of Environment*, *174*, 341–352. [https://doi.org/10.1016/j.rse.2015.11.003](https://doi.org/10.1016/j.rse.2015.11.003)
+Mueller, N., Lewis, A., Roberts, D., Ring, S., Melrose, R., Sixsmith, J., Lymburner, L., McIntyre, A., Tan, P., Curnow, S., and Ip, A. (2016). Water observations from space: Mapping surface water from 25 years of Landsat imagery across Australia. *Remote Sensing of Environment*, *174*, 341–352. [https://doi.org/10.1016/j.rse.2015.11.003](https://doi.org/10.1016/j.rse.2015.11.003)
 

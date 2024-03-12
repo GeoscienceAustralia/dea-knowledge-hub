@@ -1,24 +1,28 @@
 ## Changelog
 
+### Version 3.0.0
+
 Version 3.0 of DEA Waterbodies uses the same underlying polygon set as DEA Waterbodies version 2. Improvements include additional supporting data for the most recent observation available through web mapping services (WMS) and DEA Maps, more metadata availability, and pipeline improvements.   
 
 The update from version 2 to version 3.0 of the DEA Waterbodies product and service was created through a collaboration between Geoscience Australia, the National Aerial Firefighting Centre, Natural Hazards Research Australia, and FrontierSI to make the product more useful in hazard applications. 
+
+#### Key differences
 
 DEA Waterbodies version 3.0 key improvements include: 
 
 * New supporting data has been added to DEA Maps and web services for the most recent relevant observation.  
 
-* Supporting data include: 
+* This supporting data includes: 
 
-    * the last date any water was observed;  
+    * The last date any water was observed;  
 
-    * the most recent date that the satellite passed over the waterbody;  
+    * The most recent date that the satellite passed over the waterbody;  
 
-    * the date attributes were updated; 
+    * The date attributes were updated; 
 
-    * the date that polygons of waterbody boundaries were created; and  
+    * The date that polygons of waterbody boundaries were created; and  
 
-    * the dataset metadata link.
+    * The dataset metadata link.
 
 * Specifications of supporting data are [available](./?tab=details#data-specification-tables). 
 
