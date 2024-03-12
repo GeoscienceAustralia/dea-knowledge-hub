@@ -1,3 +1,19 @@
+## Background
+
+The DEA Geometric Median and Median Absolute Deviation products use statistical analyses to provide information on variance in the landscape over the given year. They provide insight into the “average” conditions observed over Australia in a given year, as well as the amount of variability experienced around that average. These products are useful for monitoring change detection, such as from cropping, urban expansion or burnt area mapping. 
+
+Satellite imagery allows us to observe the Earth with significant accuracy and detail. However, missing data — such as gaps caused by cloud cover — can make it difficult to create a complete image. In order to produce a single, complete view of a certain area, satellite data must be consolidated by stacking measurements from different points in time to create a composite image. 
+
+The Digital Earth Australia GeoMAD (Geomedian and Median Absolute Deviations) data product is a cloud-free composite of satellite data compiled for over annual period during each calendar year. 
+
+The GeoMAD product uses statistical analyses to provide information on variance in the landscape over the given year. It provides insight into the 'average' conditions observed over Australia in a given year, as well as the amount of variability experienced around the average. This product is useful for monitoring change detection, such as from cropping, urban expansion, or burnt-area mapping. 
+
+Large-scale image composites are increasingly important for a variety of applications such as land cover mapping, change detection, and the generation of high-quality data to parameterise and validate bio-physical and geophysical models. A number of compositing methodologies are being used in remote sensing in general; however, challenges still exist. These challenges include  mitigating against boundary artifacts due to mosaicking scenes from different epochs ensuring spatial regularity across the mosaic image and maintaining the spectral relationship between bands. 
+
+The creation of good composite images is especially important due to the opening of the United States Geological Survey’s Landsat archive. The greater availability of satellite imagery has resulted in demand to provide large regional mosaics that are representative of conditions over specific time periods while also being free of clouds and other unwanted visual noise. One approach is to ‘stitch together’ multiple selected high-quality images. Another is to create mosaics in which pixels from a time series of observations are combined (using an algorithm). This ‘pixel composite’ approach to mosaic generation provides more consistent results than with stitching high-quality images due to the improved colour balance created by combining one-by-one pixel-representative images. Another strength of pixel-based composites is their ability to be automated, hence enabling their use in large data collections and time series datasets. 
+
+The DEA GeoMAD product can be used for seeing how an area of land usually looks rather than only viewing it at a single point in time. Hence you can assess the land cover and land use on a general basis rather than at a specific year. It can also be used to assess how much an area changes over time. You will notice areas like bare rock that are very stable versus those like cropping areas that change dramatically.
+
 ## What this product offers
 
 This product provides statistical tools that utilise DEA’s time series Earth observation data to provide annual images of general conditions and how much an area changes in a given year. 
