@@ -45,10 +45,12 @@ jobs:
 
       - name: Comment on PR
         uses: peter-evans/create-or-update-comment@v4
+        env:
+          PREVIEW_SUBDOMAIN: pr-${{github.event.pull_request.number}}-preview
         with:
           issue-number: ${{github.event.pull_request.number}}
           body: |
             Access the preview site at this link.
 
-            [pr-${{github.event.pull_request.number}}-preview.knowledge.dea.ga.gov.au](https://pr-${{github.event.pull_request.number}}-preview.knowledge.dea.ga.gov.au/)
+            [$PREVIEW_SUBDOMAIN.knowledge.dea.ga.gov.au](https://$PREVIEW_SUBDOMAIN.knowledge.dea.ga.gov.au/)
 
