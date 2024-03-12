@@ -42,7 +42,7 @@ jobs:
         env:
           BUILD_MODE: demo
           DEPLOY_NAME: Pull Request
-        run: ./build-demo.sh
+        run: ./build-pr-preview.sh
 
       - name: Deploy site
         uses: jakejarvis/s3-sync-action@master
