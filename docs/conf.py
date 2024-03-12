@@ -118,6 +118,8 @@ tags_create_tags = (
     or environment["local_enable_tags"] == "Yes"
 )
 
+mermaid_output_format = "png"
+mermaid_params = ["--puppeteerConfigFile", "/docs/puppeteer-config.json"]
 mermaid_init_js = """
 mermaid.initialize({
     startOnLoad: true,

@@ -1,10 +1,13 @@
-FROM python:3.11
+FROM python:3.11-alpine
 
-RUN apt-get update
-RUN apt-get install -y git
-RUN apt-get install -y bash
-RUN apt-get install -y pandoc
-RUN apt-get install -y sass
+RUN apk update
+RUN apk add git
+RUN apk add bash
+RUN apk add pandoc
+RUN apk add nodejs npm
+
+RUN npm install -g sass
+RUN npm install -g @mermaid-js/mermaid-cli
 
 RUN mkdir -p /setup
 RUN mkdir -p /docs
