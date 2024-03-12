@@ -243,7 +243,7 @@ BCMAD takes on values from 0 - 1.
 ## Lineage
 
 :::{mermaid}
-:caption: GeoMAD stands for Geometric Median and Median Absolute Deviation. Landsat 5 Surface Reflectance includes NBAR, NBART, and Observational Attributes products.
+:caption: GeoMAD stands for Geometric Median and Median Absolute Deviation. Landsat 5, 7, 8, and 9 Surface Reflectance includes NBART, and Observational Attributes products.
 
 flowchart LR
 
