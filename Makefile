@@ -25,3 +25,6 @@ ssh:
 
 test-redirects:
 	npx mocha ./aws/cloudfront/functions/*.js
+
+clean:
+	rm -rf ./output
