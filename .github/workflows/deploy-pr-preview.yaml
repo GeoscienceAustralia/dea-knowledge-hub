@@ -44,6 +44,16 @@ jobs:
           DEPLOY_NAME: Pull Request
         run: ./build-pr-preview.sh
 
+      - name: "Comment on PR: Preview is building"
+        id: comment-preview-building
+        uses: peter-evans/create-or-update-comment@v4
+        with:
+          issue-number: ${{github.event.pull_request.number}}
+          body: |
+            ## Preview is building ...
+            
+            **Deploy log:** [${{ github.run_id }}](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})
+
       - name: Deploy site
         uses: jakejarvis/s3-sync-action@master
         with:
@@ -56,14 +66,16 @@ jobs:
           SOURCE_DIR: 'output'
           DEST_DIR: $PR_PREVIEW_SUBDOMAIN
 
-      - name: Comment on PR
+      - name: "Comment on PR: Preview is ready"
+        id: comment-preview-ready
         uses: peter-evans/create-or-update-comment@v4
         env:
           PREVIEW_SUBDOMAIN: pr-${{github.event.pull_request.number}}-preview
         with:
           issue-number: ${{github.event.pull_request.number}}
+          comment-id: ${{ steps.comment-preview-building.outputs.comment-id }}
           body: |
-            ## Preview
+            ## Preview is ready
             
             **Preview site:** [$PR_PREVIEW_SUBDOMAIN.knowledge.dea.ga.gov.au](https://$PR_PREVIEW_SUBDOMAIN.knowledge.dea.ga.gov.au/)
 
