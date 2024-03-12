@@ -68,7 +68,7 @@ jobs:
           SOURCE_DIR: 'output'
           DEST_DIR: $PR_PREVIEW_SUBDOMAIN
 
-      - name: "Comment on PR: Preview is ready"
+      - name: "Update Comment on PR: Preview is ready"
         id: comment-preview-ready
         uses: peter-evans/create-or-update-comment@v4
         with:
