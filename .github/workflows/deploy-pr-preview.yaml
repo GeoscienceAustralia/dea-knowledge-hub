@@ -8,6 +8,9 @@ on:
       - opened
       - reopened
 
+env:
+  PR_PREVIEW_SUBDOMAIN: pr-${{github.event.pull_request.number}}-preview
+
 jobs:
   publish:
     runs-on: ubuntu-latest
@@ -42,6 +45,16 @@ jobs:
         run: ./build-production.sh
 
       - name: Deploy site
+        uses: jakejarvis/s3-sync-action@master
+        with:
+          args: --acl public-read --follow-symlinks --delete
+        env:
+          AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_REGION: 'ap-southeast-2'
+          SOURCE_DIR: 'output'
+          DEST_DIR: $PR_PREVIEW_SUBDOMAIN
 
       - name: Comment on PR
         uses: peter-evans/create-or-update-comment@v4
@@ -52,5 +65,5 @@ jobs:
           body: |
             Access the preview site at this link.
 
-            [$PREVIEW_SUBDOMAIN.knowledge.dea.ga.gov.au](https://$PREVIEW_SUBDOMAIN.knowledge.dea.ga.gov.au/)
+            [$PR_PREVIEW_SUBDOMAIN.knowledge.dea.ga.gov.au](https://$PR_PREVIEW_SUBDOMAIN.knowledge.dea.ga.gov.au/)
 
