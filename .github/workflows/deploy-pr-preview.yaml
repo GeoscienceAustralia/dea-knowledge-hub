@@ -71,8 +71,6 @@ jobs:
       - name: "Comment on PR: Preview is ready"
         id: comment-preview-ready
         uses: peter-evans/create-or-update-comment@v4
-        env:
-          PREVIEW_SUBDOMAIN: pr-${{github.event.pull_request.number}}-preview
         with:
           issue-number: ${{github.event.pull_request.number}}
           comment-id: ${{ steps.comment-preview-building.outputs.comment-id }}
