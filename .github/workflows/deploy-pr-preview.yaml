@@ -1,4 +1,4 @@
-name: Deploy to Demo
+name: Deploy to PR Preview
 
 on:
   pull_request:
@@ -37,21 +37,9 @@ jobs:
 
       - name: Build site
         env:
-          BUILD_MODE: production
+          BUILD_MODE: demo
+          DEPLOY_NAME: Pull Request
         run: ./build-production.sh
 
-      - name: Configure AWS credentials via OIDC
-        # if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
-        # uses: aws-actions/configure-aws-credentials@v2
-        # with:
-        #   role-to-assume: arn:aws:iam::538673716275:role/github-actions-dea-docs
-        #   aws-region: ap-southeast-2
-
       - name: Deploy site
-        # if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
-        # env:
-        #   DISTRIBUTION_ID: ${{ secrets.DISTRIBUTION_ID }}
-        # run: ./deploy-production.sh
 
-# DEPLOY_NAME = "Pull Request"
-# BUILD_MODE = "demo"
