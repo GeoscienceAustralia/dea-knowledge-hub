@@ -51,8 +51,10 @@ jobs:
           issue-number: ${{github.event.pull_request.number}}
           body: |
             ## Preview is building ...
-            
-            **Deploy log:** [${{ github.run_id }}](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})
+
+            | <!-- --> | <!-- --> |
+            | --- | --- |
+            | **Deploy log:** | [${{ github.run_id }}](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}) |
 
       - name: Deploy site
         uses: jakejarvis/s3-sync-action@master
@@ -76,8 +78,9 @@ jobs:
           comment-id: ${{ steps.comment-preview-building.outputs.comment-id }}
           body: |
             ## Preview is ready
+
+            | <!-- --> | <!-- --> |
+            | --- | --- |
+            | **Preview site:** | [$PR_PREVIEW_SUBDOMAIN.knowledge.dea.ga.gov.au](https://$PR_PREVIEW_SUBDOMAIN.knowledge.dea.ga.gov.au/) |
+            | **Deploy log:** | [${{ github.run_id }}](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}) |
             
-            **Preview site:** [$PR_PREVIEW_SUBDOMAIN.knowledge.dea.ga.gov.au](https://$PR_PREVIEW_SUBDOMAIN.knowledge.dea.ga.gov.au/)
-
-            **Deploy log:** [${{ github.run_id }}](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})
-
