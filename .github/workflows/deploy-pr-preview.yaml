@@ -63,7 +63,9 @@ jobs:
         with:
           issue-number: ${{github.event.pull_request.number}}
           body: |
-            Access the preview site at this link.
+            ## View the preview
+            
+            **Preview site:** [$PR_PREVIEW_SUBDOMAIN.knowledge.dea.ga.gov.au](https://$PR_PREVIEW_SUBDOMAIN.knowledge.dea.ga.gov.au/)
 
-            [$PR_PREVIEW_SUBDOMAIN.knowledge.dea.ga.gov.au](https://$PR_PREVIEW_SUBDOMAIN.knowledge.dea.ga.gov.au/)
+            **Deploy log:** [${{ github.run_id }}](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})
 
