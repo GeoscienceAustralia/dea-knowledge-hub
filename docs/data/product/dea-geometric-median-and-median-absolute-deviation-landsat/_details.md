@@ -284,6 +284,13 @@ ProcessingMethods --> GeomadLandsat7
 ProcessingMethods --> GeomadLandsat8And9
 :::
 
+<pre class="mermaid">
+    graph LR
+    A --- B
+    B-->C[fa:fa-ban forbidden]
+    B-->D(fa:fa-spinner);
+</pre>
+
 The GeoMAD is derived from Landsat surface reflectance data. The data are masked for clouds and shadows to increase clarity. 
 
 The three MAD layers of the GeoMAD are calculated by computing the multidimensional distance between each observation in a time series of multispectral (or higher dimensionality such as hyperspectral) satellite imagery versus the multidimensional median of the time series. The median used for this calculation is the geometric median corresponding to the time series. 
