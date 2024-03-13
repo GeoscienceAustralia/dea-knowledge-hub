@@ -11,6 +11,7 @@ environment = {
     "git_branch": os.environ.get("BRANCH"),
     "local_enable_redirects": os.environ.get("LOCAL_ENABLE_REDIRECTS"),
     "local_enable_tags": os.environ.get("LOCAL_ENABLE_TAGS"),
+    "pr_preview_subdomain": os.environ.get("PR_PREVIEW_SUBDOMAIN"),
 }
 
 project = "DEA Knowledge Hub"
@@ -50,6 +51,7 @@ language = "en"
 
 if environment["build_mode"] == "production": html_baseurl = "https://knowledge.dea.ga.gov.au/"
 elif environment["build_mode"] == "demo": html_baseurl = f"https://{environment['git_branch']}--dea-docs.netlify.app/"
+elif environment["build_mode"] == "pr-preview": html_baseurl = f"https://{environment['pr_preview_subdomain']}.khpreview.dea.ga.gov.au/"
 else: html_baseurl = ""
 
 html_permalinks = False
