@@ -64,7 +64,6 @@ jobs:
             | **Deploy log:** | [View the log]($DEPLOY_LOG_URL) |
 
       - name: Deploy site
-        if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
         env:
           DISTRIBUTION_ID: ${{ secrets.DISTRIBUTION_ID }}
           DEST_DIR: $PR_PREVIEW_SUBDOMAIN
