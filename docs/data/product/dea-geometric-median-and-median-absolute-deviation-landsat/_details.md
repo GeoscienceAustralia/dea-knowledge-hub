@@ -154,7 +154,7 @@ The maximum possible value for EMAD depends on the value ranges for each of the 
 
 EMAD is useful for showing albedo shifts in satellite spectra.
 
-(This content was sourced from [Digital Earth Africa: GeoMAD cloud-free composites](https://docs.digitalearthafrica.org/en/latest/data_specs/GeoMAD_specs.html).)
+(Source: [Digital Earth Africa &mdash; GeoMAD cloud-free composites](https://docs.digitalearthafrica.org/en/latest/data_specs/GeoMAD_specs.html))
 ::::
 
 ::::{dropdown} Spectral MAD (SMAD)
@@ -202,7 +202,7 @@ As with the other distances and dissimilarities used in the MADs, this results i
 
 In applications of Earth observation data, SMAD is useful for showing areas of land cover change. One reason is that SMAD is less affected by cloud; unlike EMAD, it is invariant to albedo changes, such as that caused by the diffusion of solar radiation. SMAD can also be used to track water bodies, as water has high variation in reflectance.
 
-(This content was sourced from [Digital Earth Africa: GeoMAD cloud-free composites](https://docs.digitalearthafrica.org/en/latest/data_specs/GeoMAD_specs.html).)
+(Source: [Digital Earth Africa &mdash; GeoMAD cloud-free composites](https://docs.digitalearthafrica.org/en/latest/data_specs/GeoMAD_specs.html))
 ::::
 
 ::::{dropdown} Bray-Curtis MAD (BCMAD)
@@ -237,7 +237,7 @@ $$
 
 BCMAD takes on values from 0 - 1.
 
-(This content was sourced from [Digital Earth Africa: GeoMAD cloud-free composites](https://docs.digitalearthafrica.org/en/latest/data_specs/GeoMAD_specs.html).)
+(Source: [Digital Earth Africa &mdash; GeoMAD cloud-free composites](https://docs.digitalearthafrica.org/en/latest/data_specs/GeoMAD_specs.html))
 ::::
 
 ## Lineage
