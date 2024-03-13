@@ -97,12 +97,9 @@ Each MAD provides information on different land cover change features which are 
 
 The mathematical derivation of the three MADs can be found in Roberts et al. (2018).
 
-:::{dropdown} Further Technical Details
+### More ...
 
-(This content was sourced from the [GeoMAD cloud-free composites](https://docs.digitalearthafrica.org/en/latest/data_specs/GeoMAD_specs.html) page of Digital Earth Africa.)
-
-#### Euclidean MAD (EMAD)
-
+:::{dropdown} Euclidean MAD (EMAD)
 The most logical place to start thinking about any of the MADs is the Euclidean MAD (EMAD). This is because EMAD comes from Euclidean distance, and Euclidean distance can be explained with a physical analogy: it is how we measure straight-line distances between points. In our three-dimensional world, it may look like this:
 
 ![Euclidean distance in three dimensions](/_files/geomedian/cartesian_euclidean.JPG)
@@ -149,8 +146,10 @@ The maximum possible value for EMAD depends on the value ranges for each of the 
 
 EMAD is useful for showing albedo shifts in satellite spectra.
 
-#### Spectral MAD (SMAD)
+(This content was sourced from [Digital Earth Africa: GeoMAD cloud-free composites](https://docs.digitalearthafrica.org/en/latest/data_specs/GeoMAD_specs.html).)
+:::
 
+:::{dropdown} Spectral MAD (SMAD)
 The spectral MAD (SMAD) is based on the median absolute deviations in the cosine distance between the geomedian and individual measurements.
 
 In two dimensions, cosine distance can be graphically compared to Euclidean distance by the following figure:
@@ -193,8 +192,10 @@ As with the other distances and dissimilarities used in the MADs, this results i
 
 In applications of Earth observation data, SMAD is useful for showing areas of land cover change. One reason is that SMAD is less affected by cloud; unlike EMAD, it is invariant to albedo changes, such as that caused by the diffusion of solar radiation. SMAD can also be used to track water bodies, as water has high variation in reflectance.
 
-#### Bray-Curtis MAD (BCMAD)
+(This content was sourced from [Digital Earth Africa: GeoMAD cloud-free composites](https://docs.digitalearthafrica.org/en/latest/data_specs/GeoMAD_specs.html).)
+:::
 
+:::{dropdown} Bray-Curtis MAD (BCMAD)
 The Bray-Curtis MAD (BCMAD) is calculated from the Bray-Curtis dissimilarity. The Bray-Curtis dissimilarity emphasises differences in each band between the measurement and the geomedian.
 
 For a single band of satellite data, the Bray-Curtis dissimilarity looks remarkably like a normalised band index. For example, if we only had red band data, it might look something like this:
@@ -226,6 +227,7 @@ $$
 
 BCMAD takes on values from 0 - 1.
 
+(This content was sourced from [Digital Earth Africa: GeoMAD cloud-free composites](https://docs.digitalearthafrica.org/en/latest/data_specs/GeoMAD_specs.html).)
 :::
 
 ## Lineage
