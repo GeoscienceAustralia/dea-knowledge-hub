@@ -25,6 +25,28 @@ jobs:
         node-version: [18.x]
 
     steps:
+      - name: Find Comment
+        uses: peter-evans/find-comment@v3
+        id: fc
+        with:
+          issue-number: ${{ github.event.pull_request.number }}
+          comment-author: 'github-actions[bot]'
+          body-includes: PR Preview
+
+      - name: "Comment on PR: Preview is building"
+        id: comment-preview-building
+        uses: peter-evans/create-or-update-comment@v4
+        with:
+          issue-number: ${{github.event.pull_request.number}}
+          comment-id: ${{ steps.fc.outputs.comment-id }}
+          edit-mode: replace
+          body: |
+            ## ⏳ PR Preview is building...
+
+            | <!-- --> | <!-- --> |
+            | --- | --- |
+            | **Deploy log:** | [View the log](${{ env.DEPLOY_LOG_URL }}) |
+
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
@@ -35,16 +57,17 @@ jobs:
           # This doesn't update the submodule to the latest commit on the origin; therefore, you should manually do this on a semi-regular basis.
 
       - name: Install Python ${{ matrix.python-version }}
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: ${{ matrix.python-version }}
+          cache: 'pip'  # Cache the deps we install with pip
 
       - name: Install requirements
         run: ./install-dependencies.sh
 
       - name: Build site
         env:
-          BUILD_MODE: demo
+          BUILD_MODE: pr-preview
           DEPLOY_NAME: Pull Request
         run: ./build-pr-preview.sh
 
@@ -54,29 +77,7 @@ jobs:
           role-to-assume: arn:aws:iam::538673716275:role/github-actions-dea-knowledge-hub-prs
           aws-region: ap-southeast-2
 
-      - name: Find Comment
-        uses: peter-evans/find-comment@v3
-        id: fc
-        with:
-          issue-number: ${{ github.event.pull_request.number }}
-          comment-author: 'github-actions[bot]'
-          body-includes: KH Preview
-
-      - name: "Comment on PR: Preview is building"
-        id: comment-preview-building
-        uses: peter-evans/create-or-update-comment@v4
-        with:
-          issue-number: ${{github.event.pull_request.number}}
-          comment-id: ${{ steps.fc.outputs.comment-id }}
-          edit-mode: replace
-          body: |
-            ## KH Preview is uploading ...
-
-            | <!-- --> | <!-- --> |
-            | --- | --- |
-            | **Deploy log:** | [View the log](${{ env.DEPLOY_LOG_URL }}) |
-
-      - name: Deploy site
+      - name: Deploy preview site
         run: |
           aws s3 sync --delete output "$PR_PREVIEW_BUCKET/$PR_PREVIEW_SUBDOMAIN"
 
@@ -88,7 +89,7 @@ jobs:
           comment-id: ${{ steps.fc.outputs.comment-id }}
           edit-mode: replace
           body: |
-            ## KH Preview is ready
+            ## ✅ PH Preview is ready
 
             | <!-- --> | <!-- --> |
             | --- | --- |
