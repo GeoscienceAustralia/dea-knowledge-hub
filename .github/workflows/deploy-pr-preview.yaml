@@ -12,6 +12,8 @@ env:
 
 permissions:
   id-token: write # For requesting the JWT used by OIDC Authentication
+  issues: write
+  pull-requests: write
 
 jobs:
   publish:
@@ -47,18 +49,28 @@ jobs:
         run: ./build-pr-preview.sh
 
       - name: Configure AWS credentials via OIDC
-        uses: aws-actions/configure-aws-credentials@v2
+        uses: aws-actions/configure-aws-credentials@v4
         with:
           role-to-assume: arn:aws:iam::538673716275:role/github-actions-dea-knowledge-hub-prs
           aws-region: ap-southeast-2
+
+      - name: Find Comment
+        uses: peter-evans/find-comment@v3
+        id: fc
+        with:
+          issue-number: ${{ github.event.pull_request.number }}
+          comment-author: 'github-actions[bot]'
+          body-includes: KH Preview
 
       - name: "Comment on PR: Preview is building"
         id: comment-preview-building
         uses: peter-evans/create-or-update-comment@v4
         with:
           issue-number: ${{github.event.pull_request.number}}
+          comment-id: ${{ steps.fc.outputs.comment-id }}
+          edit-mode: replace
           body: |
-            ## Preview is building ...
+            ## KH Preview is uploading ...
 
             | <!-- --> | <!-- --> |
             | --- | --- |
@@ -73,9 +85,10 @@ jobs:
         uses: peter-evans/create-or-update-comment@v4
         with:
           issue-number: ${{github.event.pull_request.number}}
-          comment-id: ${{ steps.comment-preview-building.outputs.comment-id }}
+          comment-id: ${{ steps.fc.outputs.comment-id }}
+          edit-mode: replace
           body: |
-            ## Preview is ready
+            ## KH Preview is ready
 
             | <!-- --> | <!-- --> |
             | --- | --- |
