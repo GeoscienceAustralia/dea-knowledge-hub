@@ -64,16 +64,11 @@ jobs:
             | **Deploy log:** | [View the log]($DEPLOY_LOG_URL) |
 
       - name: Deploy site
-        uses: jakejarvis/s3-sync-action@master
-        with:
-          args: --acl public-read --follow-symlinks --delete
+        if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
         env:
-          AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
-          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          AWS_REGION: 'ap-southeast-2'
-          SOURCE_DIR: 'output'
+          DISTRIBUTION_ID: ${{ secrets.DISTRIBUTION_ID }}
           DEST_DIR: $PR_PREVIEW_SUBDOMAIN
+        run: ./deploy-production.sh
 
       - name: "Update Comment on PR: Preview is ready"
         id: comment-preview-ready
