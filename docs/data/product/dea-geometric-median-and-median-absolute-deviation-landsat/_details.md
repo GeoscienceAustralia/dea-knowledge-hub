@@ -43,9 +43,11 @@ Median composites are an algorithm for removing cloud and shadow noise from imag
 
 The benefit of using the median composite algorithm is that it is very fast to compute. The problem, however, is that pixels hold information for multiple bands and medians lose this information. Therefore, a geomedian algorithm is used.
 
-![Median compositing algorithm diagram](/_files/geomedian/geomedian-alg-composite_techspecs.png)
+:::{figure} /_files/geomedian/geomedian-alg-composite_techspecs.png
+:alt: Median compositing algorithm diagram
 
-*A median considers data from each band independently. This can be seen in Step 2 of the median compositing algorithm.*
+A median considers data from each band independently. This can be seen in Step 2 of the median compositing algorithm.
+:::
 
 ### Geometric Median
 
@@ -57,9 +59,11 @@ The geomedian is a pixel-composite mosaic of a time series of earth observations
 
 An annual geometric median is a high-dimensional median calculated from the reflectance values recorded over a one-year period. The years available are each full calendar year since 1986. The annual geomedians of surface reflectance measurements are calculated per calendar year.
 
-![Geomedian algorithm diagram](/_files/geomedian/geomedian-composite_techspecs.png)
+:::{figure} /_files/geomedian/geomedian-composite_techspecs.png
+:alt: Geomedian algorithm diagram
 
-*Each band adds a dimension to the geomedian calculation. For a three-band dataset, such as the RGB dataset shown in this figure, each point can be represented on a three-dimensional scatter plot. The geomedian is the minimised ‘sum of distances’ between all of these points.*
+Each band adds a dimension to the geomedian calculation. For a three-band dataset, such as the RGB dataset shown in this figure, each point can be represented on a three-dimensional scatter plot. The geomedian is the minimised ‘sum of distances’ between all of these points.
+:::
 
 Multispectral satellite imagery (such as that provided by Landsat and Sentinel-2) consists of multiple measurements per pixel — one for each spectral band. In order to create a meaningful median, a median pixel must take all concurrent spectral measurements into account simultaneously as a multi-dimensional set (rather than each measurement independently as with a simple median). The geomedian is a high-dimensional statistic which calculates a multi-dimensional median from all the spectral measurements of the satellite imagery at the same time and maintains the relationships between the measurements. This provides a median of the physical conditions measured by the earth observations used to create it. It provides a good representation of a typical pixel observation devoid of outliers and has reduced spatial noise.
 
@@ -73,11 +77,11 @@ The geomedian (Roberts et al. 2017) is used rather than the mean because the mea
 
 The input data used to calculate the geomedian are filtered to remove poor quality observations. The filter only accepts observations with a geometric quality assessment (GQA) of less than 1 and it applies a 3-pixel opening operation on clouds and a 6-pixel dilation operation on both cloud and shadows for pixels masked by the fmask algorithm. To account for satellite availability and status, the statistics are calculated using the following.
 
-![Landsat geomedian time coverage diagram](/_files/geomedian/landsat_geomedian_prodcust_time_coverage.png)
+:::{figure} /_files/geomedian/landsat_geomedian_prodcust_time_coverage.png
+:alt: Landsat geomedian time coverage diagram
 
-*The three geomedian products from Landsat with italic names are spaced out temporally. ga_ls8cls9c_gm_cyear_3 product combines images from both Landsat 8 and Landsat 9 when they are available. Only Landsat 7 geomedian is available between 2000 and 2002.*
-
-<!-- The three geomedian products from Landsat with italic names are spaced out temporally. ga_ls8cls9c_gm_cyear_3 product combines images from both Landsat 8 and Landsat 9 when they are available. Only Landsat 7 geomedian is available between 2000 and 2002. -->
+The three geomedian products from Landsat with italic names are spaced out temporally. ga_ls8cls9c_gm_cyear_3 product combines images from both Landsat 8 and Landsat 9 when they are available. Only Landsat 7 geomedian is available between 2000 and 2002.
+:::
 
 The primary uses of geomedian pixel composites are for change detection within baselines and for broad regional image composites (such as national and continental mosaics).
 
@@ -99,20 +103,24 @@ The mathematical derivation of the three MADs can be found in Roberts et al. (20
 
 ### More ...
 
-:::{dropdown} Euclidean MAD (EMAD)
+::::{dropdown} Euclidean MAD (EMAD)
 The most logical place to start thinking about any of the MADs is the Euclidean MAD (EMAD). This is because EMAD comes from Euclidean distance, and Euclidean distance can be explained with a physical analogy: it is how we measure straight-line distances between points. In our three-dimensional world, it may look like this:
 
-![Euclidean distance in three dimensions](/_files/geomedian/cartesian_euclidean.JPG)
+:::{figure} /_files/geomedian/cartesian_euclidean.JPG
+:alt: Euclidean distance in three dimensions
 
-*Euclidean distance in three dimensions*
+Euclidean distance in three dimensions
+:::
 
 In the case of satellite data, we are measuring the Euclidean distance between a pixel’s geomedian value and a single multispectral measurement. The number of dimensions is equal to the number of bands in the data. In the illustration below, 'm' is the geomedian value and 'x' the measured value. In real data, there will be multiple measurements over a time period, so 't' is the timestep number, otherwise noted in equations as superscript '(t)'.
 
 For example, if we had three bands of data (red, green and blue), and three timesteps of data, then we can calculate the Euclidean distances as follows:
 
-![Euclidean distance in three dimensions over three timesteps.](/_files/geomedian/bands_euclidean.JPG)
+:::{figure} /_files/geomedian/bands_euclidean.JPG
+:alt: Euclidean distance in three dimensions over three timesteps.
 
-*Euclidean distance in three dimensions over three timesteps.*
+Euclidean distance in three dimensions over three timesteps.
+:::
 
 Each timestep gives a separate Euclidean distance result. Then EMAD is the median of all those distances.
 
@@ -147,16 +155,18 @@ The maximum possible value for EMAD depends on the value ranges for each of the 
 EMAD is useful for showing albedo shifts in satellite spectra.
 
 (This content was sourced from [Digital Earth Africa: GeoMAD cloud-free composites](https://docs.digitalearthafrica.org/en/latest/data_specs/GeoMAD_specs.html).)
-:::
+::::
 
-:::{dropdown} Spectral MAD (SMAD)
+::::{dropdown} Spectral MAD (SMAD)
 The spectral MAD (SMAD) is based on the median absolute deviations in the cosine distance between the geomedian and individual measurements.
 
 In two dimensions, cosine distance can be graphically compared to Euclidean distance by the following figure:
 
-![Relative relationships between Euclidean and cosine distances.](/_files/geomedian/cosine_distance.JPG)
+:::{figure} /_files/geomedian/cosine_distance.JPG
+:alt: Relative relationships between Euclidean and cosine distances.
 
-*Relative relationships between Euclidean and cosine distances.*
+Relative relationships between Euclidean and cosine distances.
+:::
 
 In a general sense, cosine distance is related to the angle between the two points, while Euclidean distance is related to the straight-line distance between the two points 'd'. Like Euclidean distance, points are more similar when the cosine distance between them is small. The value of the cosine distance is smaller when the angle is small (i.e. close to 0) or when its close to 180 degrees.
 
@@ -193,9 +203,9 @@ As with the other distances and dissimilarities used in the MADs, this results i
 In applications of Earth observation data, SMAD is useful for showing areas of land cover change. One reason is that SMAD is less affected by cloud; unlike EMAD, it is invariant to albedo changes, such as that caused by the diffusion of solar radiation. SMAD can also be used to track water bodies, as water has high variation in reflectance.
 
 (This content was sourced from [Digital Earth Africa: GeoMAD cloud-free composites](https://docs.digitalearthafrica.org/en/latest/data_specs/GeoMAD_specs.html).)
-:::
+::::
 
-:::{dropdown} Bray-Curtis MAD (BCMAD)
+::::{dropdown} Bray-Curtis MAD (BCMAD)
 The Bray-Curtis MAD (BCMAD) is calculated from the Bray-Curtis dissimilarity. The Bray-Curtis dissimilarity emphasises differences in each band between the measurement and the geomedian.
 
 For a single band of satellite data, the Bray-Curtis dissimilarity looks remarkably like a normalised band index. For example, if we only had red band data, it might look something like this:
@@ -228,7 +238,7 @@ $$
 BCMAD takes on values from 0 - 1.
 
 (This content was sourced from [Digital Earth Africa: GeoMAD cloud-free composites](https://docs.digitalearthafrica.org/en/latest/data_specs/GeoMAD_specs.html).)
-:::
+::::
 
 ## Lineage
 
