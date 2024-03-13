@@ -45,6 +45,13 @@ jobs:
           DEPLOY_NAME: Pull Request
         run: ./build-pr-preview.sh
 
+      - name: Configure AWS credentials via OIDC
+        if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+        uses: aws-actions/configure-aws-credentials@v2
+        with:
+          role-to-assume: arn:aws:iam::538673716275:role/github-actions-dea-docs
+          aws-region: ap-southeast-2
+
       - name: "Comment on PR: Preview is building"
         id: comment-preview-building
         uses: peter-evans/create-or-update-comment@v4
