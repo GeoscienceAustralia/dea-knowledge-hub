@@ -61,7 +61,6 @@ extensions = [
     "sphinx.ext.mathjax",
     "sphinx.ext.napoleon",
     "myst_parser",
-    "sphinxcontrib.mermaid", # Must be before 'nbsphinx' because it loads the require.js which was disabled with 'nbsphinx_requirejs_path' to fix a conflict between these two plugins.
     "nbsphinx",
     "sphinx_design",
     "sphinxext.rediraffe",
@@ -117,16 +116,6 @@ tags_create_tags = (
     environment["build_mode"] in ["demo", "production"]
     or environment["local_enable_tags"] == "Yes"
 )
-
-mermaid_init_js = """
-mermaid.initialize({
-    startOnLoad: true,
-    theme: 'default'
-});
-"""
-
-sphinxmermaid_mermaid_init = {
-}
 
 html_css_files = [
     'styles/styles.css'
