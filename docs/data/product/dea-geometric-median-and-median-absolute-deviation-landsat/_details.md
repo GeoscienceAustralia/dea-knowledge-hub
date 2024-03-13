@@ -99,7 +99,7 @@ The mathematical derivation of the three MADs can be found in Roberts et al. (20
 
 :::{dropdown} Further Technical Details
 
-(This content was sourced from the GeoMAD cloud-free composites page of Digital Earth Africa.)
+(This content was sourced from the [GeoMAD cloud-free composites](https://docs.digitalearthafrica.org/en/latest/data_specs/GeoMAD_specs.html) page of Digital Earth Africa.)
 
 #### Euclidean MAD (EMAD)
 
