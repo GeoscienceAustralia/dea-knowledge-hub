@@ -74,7 +74,7 @@ jobs:
 
             | <!-- --> | <!-- --> |
             | --- | --- |
-            | **Deploy log:** | [View the log]($DEPLOY_LOG_URL) |
+            | **Deploy log:** | [View the log](${{ env.DEPLOY_LOG_URL }}) |
 
       - name: Deploy site
         run: |
@@ -92,6 +92,6 @@ jobs:
 
             | <!-- --> | <!-- --> |
             | --- | --- |
-            | **Preview site:** | [$PR_PREVIEW_SUBDOMAIN.khpreview.dea.ga.gov.au](https://$PR_PREVIEW_SUBDOMAIN.khpreview.dea.ga.gov.au/) |
-            | **Deploy log:** | [View the log]($DEPLOY_LOG_URL) |
+            | **Preview site:** | [${{ PR_PREVIEW_SUBDOMAIN }}.khpreview.dea.ga.gov.au](https://${{ env.PR_PREVIEW_SUBDOMAIN }}.khpreview.dea.ga.gov.au/) |
+            | **Deploy log:** | [View the log](${{ env.DEPLOY_LOG_URL }}) |
             
