@@ -4,9 +4,6 @@ on:
   pull_request:
     branches:
       - main
-    types:
-      - opened
-      - reopened
 
 env:
   PR_PREVIEW_SUBDOMAIN: pr-${{github.event.pull_request.number}}-preview
