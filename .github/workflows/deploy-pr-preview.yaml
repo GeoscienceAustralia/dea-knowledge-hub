@@ -68,7 +68,7 @@ jobs:
         env:
           DISTRIBUTION_ID: ${{ secrets.DISTRIBUTION_ID }}
           DEST_DIR: $PR_PREVIEW_SUBDOMAIN
-        run: ./deploy-production.sh
+        run: ./deploy-pr-preview.sh
 
       - name: "Update Comment on PR: Preview is ready"
         id: comment-preview-ready
