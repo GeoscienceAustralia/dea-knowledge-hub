@@ -43,7 +43,7 @@ Median composites are an algorithm for removing cloud and shadow noise from imag
 
 The benefit of using the median composite algorithm is that it is very fast to compute. The problem, however, is that pixels hold information for multiple bands and medians lose this information. Therefore, a geomedian algorithm is used.
 
-![Median compositing algorithm diagram](/_files/geomediangeomedian-alg-composite_techspecs.png)
+![Median compositing algorithm diagram](/_files/geomedian/geomedian-alg-composite_techspecs.png)
 
 *A median considers data from each band independently. This can be seen in Step 2 of the median compositing algorithm.*
 
@@ -57,7 +57,7 @@ The geomedian is a pixel-composite mosaic of a time series of earth observations
 
 An annual geometric median is a high-dimensional median calculated from the reflectance values recorded over a one-year period. The years available are each full calendar year since 1986. The annual geomedians of surface reflectance measurements are calculated per calendar year.
 
-![Geomedian algorithm diagram](/_files/geomediangeomedian-composite_techspecs.png)
+![Geomedian algorithm diagram](/_files/geomedian/geomedian-composite_techspecs.png)
 
 *Each band adds a dimension to the geomedian calculation. For a three-band dataset, such as the RGB dataset shown in this figure, each point can be represented on a three-dimensional scatter plot. The geomedian is the minimised ‘sum of distances’ between all of these points.*
 
@@ -73,7 +73,7 @@ The geomedian (Roberts et al. 2017) is used rather than the mean because the mea
 
 The input data used to calculate the geomedian are filtered to remove poor quality observations. The filter only accepts observations with a geometric quality assessment (GQA) of less than 1 and it applies a 3-pixel opening operation on clouds and a 6-pixel dilation operation on both cloud and shadows for pixels masked by the fmask algorithm. To account for satellite availability and status, the statistics are calculated using the following.
 
-![Landsat geomedian time coverage diagram](/_files/geomedianlandsat_geomedian_prodcust_time_coverage.png)
+![Landsat geomedian time coverage diagram](/_files/geomedian/landsat_geomedian_prodcust_time_coverage.png)
 
 *The three geomedian products from Landsat with italic names are spaced out temporally. ga_ls8cls9c_gm_cyear_3 product combines images from both Landsat 8 and Landsat 9 when they are available. Only Landsat 7 geomedian is available between 2000 and 2002.*
 
@@ -103,7 +103,7 @@ The mathematical derivation of the three MADs can be found in Roberts et al. (20
 
 The most logical place to start thinking about any of the MADs is the Euclidean MAD (EMAD). This is because EMAD comes from Euclidean distance, and Euclidean distance can be explained with a physical analogy: it is how we measure straight-line distances between points. In our three-dimensional world, it may look like this:
 
-![Euclidean distance in three dimensions](/_files/geomediancartesian_euclidean.JPG)
+![Euclidean distance in three dimensions](/_files/geomedian/cartesian_euclidean.JPG)
 
 *Euclidean distance in three dimensions*
 
@@ -111,7 +111,7 @@ In the case of satellite data, we are measuring the Euclidean distance between a
 
 For example, if we had three bands of data (red, green and blue), and three timesteps of data, then we can calculate the Euclidean distances as follows:
 
-![Euclidean distance in three dimensions over three timesteps.](/_files/geomedianbands_euclidean.JPG)
+![Euclidean distance in three dimensions over three timesteps.](/_files/geomedian/bands_euclidean.JPG)
 
 *Euclidean distance in three dimensions over three timesteps.*
 
@@ -153,7 +153,7 @@ The spectral MAD (SMAD) is based on the median absolute deviations in the cosine
 
 In two dimensions, cosine distance can be graphically compared to Euclidean distance by the following figure:
 
-![Relative relationships between Euclidean and cosine distances.](/_files/geomediancosine_distance.JPG)
+![Relative relationships between Euclidean and cosine distances.](/_files/geomedian/cosine_distance.JPG)
 
 *Relative relationships between Euclidean and cosine distances.*
 
