@@ -89,7 +89,7 @@ jobs:
           comment-id: ${{ steps.fc.outputs.comment-id }}
           edit-mode: replace
           body: |
-            ## ✅ PH Preview is ready
+            ## ✅ PR Preview is ready
 
             | <!-- --> | <!-- --> |
             | --- | --- |

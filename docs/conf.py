@@ -157,4 +157,3 @@ if environment["build_mode"] == "production": html_context["google_analytics_ga4
 suppress_warnings = [
     # "etoc.toctree"
 ]
-
