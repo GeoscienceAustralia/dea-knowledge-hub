@@ -2,39 +2,51 @@
 
 % ## Use constraints
 
-:::{dropdown} How to view the data in a web map
+:::{dropdown} How to view the map
 
-To explore DEA Waterbodies on the interactive DEA Maps platform, visit the link below:
+DEA Waterbodies can be viewed on the DEA Maps tool, making it easy to explore and interact with the data. To get started, open DEA Waterbodies on the [DEA Maps](https://maps.dea.ga.gov.au/#share=s-4RjD9N7swBCZSkXRJJBxOLzVZyK)
 
-[https://maps.dea.ga.gov.au/#share=s-4RjD9N7swBCZSkXRJJBxOLzVZyK](https://maps.dea.ga.gov.au/#share=s-4RjD9N7swBCZSkXRJJBxOLzVZyK)
+Or, you can manually add the DEA Waterbodies layer to DEA Maps:
 
-and dismiss the overlay. DEA Waterbodies will already be loaded on the map.
-
-![DEA Maps with DEA Waterbodies loaded](/_files/dea-waterbodies/DEA_Waterbodies_v3.0_overview.jpg)
-
-To add DEA Waterbodies to DEA Maps manually:
-
-1) Visit [DEA Maps](https://maps.dea.ga.gov.au).
+1) Open [DEA Maps](https://maps.dea.ga.gov.au).
 
 2) Click `Explore map data`.
 
 3) Select `Inland water` > `DEA Waterbodies` > `DEA Waterbodies (version 3.0)`. 
 
 4) Click `Add to the map`, or the `+` symbol to add the data to the map.
+
+5) You will now see the waterbodies overlaid on the map.
+
+![DEA Maps with DEA Waterbodies loaded](/_files/dea-waterbodies/DEA_Waterbodies_v3.0_overview.jpg)
+
 :::
 
-:::{dropdown} Is there a DEA Waterbodies User Guide?
+:::{dropdown} How to view more information about a waterbody?
 
-Yes!
+On the map, you can click any identified waterbody to view more information about it.
+1)	Click a waterbody and a pop-up window will appear. This contains important information about the waterbody and a preview of its ‘Pc Wet’ time series.
+2)	In the pop-up, click the **Expand** button. A more detailed time series chart will open below (and, the waterbody will be added to the left sidebar).
+3)	The time series chart is composed of dots representing valid observations in the data set, and straight lines are drawn between these dots.
+4)	There are two time series available for each waterbody, and you can choose to view either or both. In the left sidebar, enable or disable the checkboxes for Pc Wet and Px Wet:
+    * **Pc Wet** — The ‘percentage of total surface area observed as wet’. This is the percentage of the total surface area of the waterbody that has been classified as ‘wet’ for each time step. (Note that this is not a volume.)
+	* **Px Wet** — The ‘Wet Pixel Count’. This is the total number of pixels that have been classified as ‘wet’ for each time step. This value is useful if you need to calculate an area of wet pixels, since each pixel is 30 m × 30 m.
 
-See [Waterbodies user guide](https://www.dea.ga.gov.au/products/dea-waterbodies/user-guide) to discover how to get the most out of the DEA Maps presentation of DEA Waterbodies including how to explore time series, and how to download the data from a particular time series.
+![DEA Maps loaded with DEA Waterbodies and showing Feature Information](/_files/dea-waterbodies/DEA_Waterbodies_v3.0_user-guide.PNG)
 
-![DEA Maps loaded with DEA Waterbodies and showing Feature Information](/_files/dea-waterbodies/DEA_Waterbodies_v3.0_Kati_Thanda.jpg)
 :::
 
-:::{dropdown} What about if I have more questions?
+:::{dropdown} How to compare two waterbodies?
+1)	Click a waterbody on the map then in its pop-up click **Expand** to add it to the time series chart.
+2)	Follow the same steps to add another waterbody to the time series chart.
+3)	It’s possible to compare even more waterbodies on this chart!
 
-Check out the [DEA Waterbodies Frequently Asked Questions](./?tab=faqs) guide to see if your questions are answered there. 
+![DEA Maps loaded with DEA Waterbodies and comparing two waterbodies](/_files/dea-waterbodies/DEA_Waterbodies_v3.0_user-guide-compare.PNG)
+:::
+
+:::{dropdown} Do you have any more questions?
+
+See the [Frequently Asked Questions](./?tab=faqs). 
 
 If you need more help, contact earth.observation@ga.gov.au. 
 
