@@ -92,6 +92,6 @@ jobs:
 
             | <!-- --> | <!-- --> |
             | --- | --- |
-            | **Preview site:** | [${{ PR_PREVIEW_SUBDOMAIN }}.khpreview.dea.ga.gov.au](https://${{ env.PR_PREVIEW_SUBDOMAIN }}.khpreview.dea.ga.gov.au/) |
+            | **Preview site:** | [${{ env.PR_PREVIEW_SUBDOMAIN }}.khpreview.dea.ga.gov.au](https://${{ env.PR_PREVIEW_SUBDOMAIN }}.khpreview.dea.ga.gov.au/) |
             | **Deploy log:** | [View the log](${{ env.DEPLOY_LOG_URL }}) |
             
