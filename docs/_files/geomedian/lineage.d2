@@ -1,0 +1,39 @@
+direction: right
+
+DataSources: Data Source(s) {
+  direction: down
+  L5Data: Landsat 5 (TM)
+  L7Data: Landsat 7 (ETM+)
+  L8Data: Landsat 8 (OLI-TIRS)
+  L9Data: Landsat 9 (OLI-TIRS)
+}
+
+InputProducts: Input Product(s) {
+  direction: down
+  L5SurfaceReflectance: Landsat 5 Surface Reflectance
+  L7SurfaceReflectance: Landsat 7 Surface Reflectance
+  L8SurfaceReflectance: Landsat 8 Surface Reflectance
+  L9SurfaceReflectance: Landsat 9 Surface Reflectance
+}
+
+ProcessingMethods: Processing Method(s) {
+  direction: down
+  Processing1: GeoMAD algorithms with morphological cloud operations on fmask (opening and dilation)
+}
+
+Outputs: Output(s) {
+  direction: down
+  GeomadLandsat5: DEA GeoMAD Landsat 5
+  GeomadLandsat7: DEA GeoMAD Landsat 7
+  GeomadLandsat8And9: DEA GeoMAD Landsat 8 and 9
+}
+
+DataSources.L5Data -> InputProducts.L7SurfaceReflectance -> ProcessingMethods
+DataSources.L7Data -> InputProducts.L7SurfaceReflectance -> ProcessingMethods
+DataSources.L8Data -> InputProducts.L8SurfaceReflectance -> ProcessingMethods
+DataSources.L9Data -> InputProducts.L9SurfaceReflectance -> ProcessingMethods
+
+ProcessingMethods -> Outputs.GeomadLandsat5
+ProcessingMethods -> Outputs.GeomadLandsat7
+ProcessingMethods -> Outputs.GeomadLandsat8And9
+
