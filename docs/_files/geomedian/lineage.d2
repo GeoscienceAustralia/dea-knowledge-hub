@@ -18,7 +18,7 @@ InputProducts: Input Product(s) {
 
 ProcessingMethods: Processing Method(s) {
   direction: down
-  Processing1: GeoMAD algorithms with morphological cloud operations on fmask (opening and dilation)
+  Processing1: GeoMAD algorithms with\nmorphological cloud\noperations on fmask\n(opening and dilation)
 }
 
 Outputs: Output(s) {
@@ -32,8 +32,6 @@ DataSources.L5Data -> InputProducts.L7SurfaceReflectance -> ProcessingMethods
 DataSources.L7Data -> InputProducts.L7SurfaceReflectance -> ProcessingMethods
 DataSources.L8Data -> InputProducts.L8SurfaceReflectance -> ProcessingMethods
 DataSources.L9Data -> InputProducts.L9SurfaceReflectance -> ProcessingMethods
-
-ProcessingMethods.Processing1
 
 ProcessingMethods -> Outputs.GeomadLandsat5
 ProcessingMethods -> Outputs.GeomadLandsat7
