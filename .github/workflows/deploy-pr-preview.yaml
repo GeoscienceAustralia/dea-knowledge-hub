@@ -13,6 +13,9 @@ env:
   DEPLOY_LOG_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
   PR_PREVIEW_BUCKET: s3://khpreview.dea.ga.gov.au
 
+permissions:
+  id-token: write # For requesting the JWT used by OIDC Authentication
+
 jobs:
   publish:
     runs-on: ubuntu-latest
