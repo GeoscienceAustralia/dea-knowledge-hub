@@ -43,9 +43,12 @@ jobs:
           body: |
             ## :hourglass: PR Preview is building...
 
-            | <!-- --> | <!-- --> |
-            | --- | --- |
-            | **Deploy log:** | [View the log](${{ env.DEPLOY_LOG_URL }}) |
+            <table>
+                <tr>
+                    <td><strong>Deploy log:</strong></td>
+                    <td><a href="${{ env.DEPLOY_LOG_URL }}">View the log</a></td>
+                </tr>
+            </table>
 
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -91,8 +94,14 @@ jobs:
           body: |
             ## :heavy_check_mark: PR Preview is ready
 
-            | <!-- --> | <!-- --> |
-            | --- | --- |
-            | **Preview site:** | [${{ env.PR_PREVIEW_SUBDOMAIN }}.khpreview.dea.ga.gov.au](https://${{ env.PR_PREVIEW_SUBDOMAIN }}.khpreview.dea.ga.gov.au/) |
-            | **Deploy log:** | [View the log](${{ env.DEPLOY_LOG_URL }}) |
+            <table>
+                <tr>
+                    <td><strong>Preview site:</strong></td>
+                    <td><a href="https://${{ env.PR_PREVIEW_SUBDOMAIN }}.khpreview.dea.ga.gov.au/">${{ env.PR_PREVIEW_SUBDOMAIN }}.khpreview.dea.ga.gov.au</a></td>
+                </tr>
+                <tr>
+                    <td><strong>Deploy log:</strong></td>
+                    <td><a href="${{ env.DEPLOY_LOG_URL }}">View the log</a></td>
+                </tr>
+            </table>
             
