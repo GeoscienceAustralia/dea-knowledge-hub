@@ -1,6 +1,7 @@
 flowchart LR
 
 subgraph DataSources["Data Source(s)"]
+    direction TB
     L5Data["`Landsat 5 (TM)`"]
     L7Data["`Landsat 7 (ETM+)`"]
     L8Data["`Landsat 8 (OLI-TIRS)`"]
@@ -8,6 +9,7 @@ subgraph DataSources["Data Source(s)"]
 end
 
 subgraph InputProducts["Input Product(s)"]
+    direction TB
     L5SurfaceReflectance["`Landsat 5 Surface Reflectance`"]
     L7SurfaceReflectance["`Landsat 7 Surface Reflectance`"]
     L8SurfaceReflectance["`Landsat 8 Surface Reflectance`"]
@@ -20,6 +22,7 @@ subgraph ProcessingMethods["Processing Method(s)"]
 end
 
 subgraph Outputs["Output(s)"]
+    direction TB
     GeomadLandsat5["`DEA GeoMAD Landsat 5`"]
     GeomadLandsat7["`DEA GeoMAD Landsat 7`"]
     GeomadLandsat8And9["`DEA GeoMAD Landsat 8 and 9`"]
