@@ -5,7 +5,7 @@ long_title: Geoscience Australia Landsat Geometric Median and Median Absolute De
 header_image: /_files/cmi/Geomedian_Australia_2014.jpg
 version: 4.0.0
 is_latest_version: true
-latest_version_link: null
+latest_version_link: /data/product/dea-geometric-median-and-median-absolute-deviation-landsat/
 is_provisional: false
 product_type: Derivative
 spatial_data_type: Raster
@@ -69,8 +69,8 @@ custom: null
 
 old_versions:
   - version: 3.1.0
-    title: DEA Surface Reflectance Median Absolute Deviation (Landsat)
-    slug: dea-surface-reflectance-median-absolute-deviation-landsat-3.1.0
+    title: DEA Geometric Median and Median Absolute Deviation (Landsat)
+    slug: dea-geometric-median-and-median-absolute-deviation-landsat-3.1.0
   - version: 2.1.0
     title: DEA Surface Reflectance Median Absolute Deviation (Landsat)
     slug: dea-surface-reflectance-median-absolute-deviation-landsat-2.1.0
