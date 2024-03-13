@@ -77,11 +77,7 @@ The input data used to calculate the geomedian are filtered to remove poor quali
 
 *The three geomedian products from Landsat with italic names are spaced out temporally. ga_ls8cls9c_gm_cyear_3 product combines images from both Landsat 8 and Landsat 9 when they are available. Only Landsat 7 geomedian is available between 2000 and 2002.*
 
-:::{figure} /_files/geomedian/landsat-timeline.svg
-:alt: Timeline of Landsat input data.
-
-The three geomedian products from Landsat with italic names are spaced out temporally. ga_ls8cls9c_gm_cyear_3 product combines images from both Landsat 8 and Landsat 9 when they are available. Only Landsat 7 geomedian is available between 2000 and 2002.
-:::
+<!-- The three geomedian products from Landsat with italic names are spaced out temporally. ga_ls8cls9c_gm_cyear_3 product combines images from both Landsat 8 and Landsat 9 when they are available. Only Landsat 7 geomedian is available between 2000 and 2002. -->
 
 The primary uses of geomedian pixel composites are for change detection within baselines and for broad regional image composites (such as national and continental mosaics).
 
