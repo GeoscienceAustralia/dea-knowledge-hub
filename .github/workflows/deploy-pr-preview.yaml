@@ -26,7 +26,7 @@ jobs:
         node-version: [18.x]
 
     steps:
-      - name: Find Comment on PR
+      - name: Find Comment
         uses: peter-evans/find-comment@v3
         id: fc
         with:
@@ -34,7 +34,7 @@ jobs:
           comment-author: 'github-actions[bot]'
           body-includes: PR Preview
 
-      - name: "Comment on PR: Preview is building"
+      - name: "Comment: PR Preview #${{github.event.pull_request.number}} is building"
         id: comment-preview-building
         uses: peter-evans/create-or-update-comment@v4
         with:
@@ -42,7 +42,7 @@ jobs:
           comment-id: ${{ steps.fc.outputs.comment-id }}
           edit-mode: replace
           body: |
-            ## :speech_balloon: PR Preview is building ...
+            ## :speech_balloon: PR Preview #${{github.event.pull_request.number}} is building ...
 
             <table>
                 <tr>
@@ -84,7 +84,7 @@ jobs:
         run: |
           aws s3 sync --delete output "$PR_PREVIEW_BUCKET/$PR_PREVIEW_SUBDOMAIN"
 
-      - name: "Update Comment on PR: Preview is ready"
+      - name: "Update Comment: PR Preview #${{github.event.pull_request.number}} is ready"
         id: comment-preview-ready
         uses: peter-evans/create-or-update-comment@v4
         with:
@@ -92,7 +92,7 @@ jobs:
           comment-id: ${{ steps.fc.outputs.comment-id }}
           edit-mode: replace
           body: |
-            ## :white_check_mark: PR Preview is ready
+            ## :white_check_mark: PR Preview #${{github.event.pull_request.number}} is ready
 
             <table>
                 <tr>
