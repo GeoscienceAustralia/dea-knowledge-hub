@@ -77,7 +77,7 @@ The geomedian (Roberts et al. 2017) is used rather than the mean because the mea
 
 The input data used to calculate the geomedian are filtered to remove poor quality observations. The filter only accepts observations with a geometric quality assessment (GQA) of less than 1 and it applies a 3-pixel opening operation on clouds and a 6-pixel dilation operation on both cloud and shadows for pixels masked by the fmask algorithm. To account for satellite availability and status, the statistics are calculated using the following.
 
-:::{figure} /_files/geomedian/landsat_geomedian_prodcust_time_coverage.png
+:::{figure} /_files/landsat/landsat-timeline-2024.jpg
 :alt: Landsat geomedian time coverage diagram
 
 The three geomedian products from Landsat with italic names are spaced out temporally. ga_ls8cls9c_gm_cyear_3 product combines images from both Landsat 8 and Landsat 9 when they are available. Only Landsat 7 geomedian is available between 2000 and 2002.
