@@ -33,7 +33,7 @@ If less than 90% of the total waterbody is observed on any one day, due to cloud
 
 Cloud cover leading to invalid data can be a particular problem in coastal regions, northern Australia during summer, and in Tasmania.
 
-Some larger salt lakes in Australia have very few records currently available. For larger Waterbodies, which may cross multiple swath boundaries or suffer from misclassifications (salt lakes can be misclassified as cloud due to their brightness) this can be problematic. 
+Some larger salt lakes in Australia have very few records currently available. For larger waterbodies, which may cross multiple swath boundaries or suffer from misclassifications (salt lakes can be misclassified as cloud due to their brightness) this can be problematic. 
 :::
 
 :::{dropdown} How does DEA Waterbodies deal with clouds?
@@ -47,7 +47,7 @@ Landsat satellites do not observe all of Australia at the same time. The dates o
 :::
 
 :::{dropdown} What are the two different time series provided for each waterbody?
-Within the DEA Waterbodies web service, there are two time series provided for each waterbody, which can be seen in the legend panel on the left hand side once a waterbody has been selected, and the time series expanded:
+Within the DEA Waterbodies web service, there are two time series provided for each waterbody, which can be seen in the legend panel on the left side once a waterbody has been selected, and the time series expanded:
 
 * Pc Wet — The 'Percentage of total surface area observed as wet'. This is the percentage of the total surface area of the waterbody that has been classified as 'wet' for each time step. (Note: this is not a volume)
 * Px Wet — The 'Wet Pixel Count'. This is the total number of pixels that have been classified as 'wet' for each time step. This value is useful if you need to calculate an area of wet pixels. Each pixel is 30 m by 30 m.
@@ -58,9 +58,9 @@ Within the DEA Waterbodies web service, there are two time series provided for e
 :::{dropdown} What satellite imagery does DEA Waterbodies use?
 DEA Waterbodies is based on Landsat satellite data provided by the United States Geological Service. The Digital Earth Australia (DEA) program within Geoscience Australia corrects this data and makes it available publicly.
 
-The tool uses data from the Landsat 5 TM (1987--2011), Landsat 7 ETM+ (1999--present), and Landsat 8 OLI (2013--present) missions.
+The tool uses data from the Landsat 5 TM (1987--2011), Landsat 7 ETM+ (1999--present), Landsat 8 OLI (2013--present), and Landsat 9 OLI-2 (2021--present) missions.
 
-To find out more about the Landsat missions, see the [USGS Landsat Missions webpages](https://www.usgs.gov/land-resources/nli/landsat/landsat-satellite-missions?qt-science_support_page_related_con=2#qt-science_support_page_related_con)
+To find out more about the Landsat missions, see the [USGS Landsat Missions webpages](https://www.usgs.gov/land-resources/nli/landsat/landsat-satellite-missions?qt-science_support_page_related_con=2#qt-science_support_page_related_con).
 :::
 
 :::{dropdown} How do you classify water from satellite imagery?
@@ -74,7 +74,7 @@ DEA Waterbodies only maps waterbodies larger than 2,700 m<sup>2</sup> (the size 
 :::
 
 :::{dropdown} What does the outline of individual waterbodies represent?
-The outline of each waterbody corresponds to the maximum observed wet surface area of the waterbody between 1987 and 2020 except for two cases. Long, thin waterbodies were separated into multiple polygons as described in Krause et al. (2021), and the following waterbodies were replaced by the extents from the [Surface Hydrology Polygons (Regional)](https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/83134) dataset: 
+The outline of each waterbody corresponds to the maximum observed wet surface area of the waterbody between 1987 and 2020, except for two cases. Long, thin waterbodies were separated into multiple polygons as described in Krause et al. 2021, and the following waterbodies were replaced by the extents from the [Surface Hydrology Polygons (Regional)](https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/83134) dataset: 
 
 * Kati Thanda-Lake Eyre (North) 
 * Kati Thanda-Lake Eyre (South) 
@@ -95,7 +95,7 @@ The pixelated outlines show which satellite pixels have been included inside eac
 There are a few reasons why a waterbody might be missing:
 
 * It may be too small: DEA Waterbodies only maps waterbodies larger than 2,700m<sup>2</sup> (3 whole Landsat pixels).
-* It might not have been wet enough: DEA Waterbodies only maps waterbodies that have been observed as wet at least 10% of the time between 1987 and 2020. If a waterbody fills very infrequently, it may not meet this threshold.
+* It may not have been wet enough: DEA Waterbodies only maps waterbodies that have been observed as wet at least 10% of the time between 1987 and 2020. If a waterbody fills very infrequently, it may not meet this threshold.
 * The waterbody may have too much vegetation surrounding it: the **DEA Water Observations** classifier that determines where water is observed does not work well where water is combined with vegetation. If there is vegetation obscuring the water (like a tree leaning across a river or a wetland), the classifier will not see this as water and the waterbody may not be mapped.
 * The water in the waterbody does not look like water: very sediment-filled water, particularly in northern Australia, is often misclassified as land.
 * It may be new: newly constructed waterbodies will not be included in this product as they will not have been observed as wet at least 10% of the time between 1987 and 2020. Waterbodies that have been constructed or modified after 2016 may not be captured within this tool. Future updates of this product should capture newer waterbodies.
@@ -108,7 +108,7 @@ Reports of missing waterbodies may assist us during quality checking of future p
 :::{dropdown} Why are there whole/parts of rivers missing?
 The **DEA Water Observations** classifier that determines where water is observed does not work well where water is combined with vegetation. If there is vegetation obscuring the water (like a tree leaning across a river), the classifier will not see this as water, and the waterbody will be cut short, even though the river continues along underneath the vegetation.
 
-Additionally, the Landsat satellite data on which this dataset is based has a pixel resolution of 30 m by 30 m. A pixel will only be classified as water where the pixel is almost entirely made up of water. For example, where rivers narrow or contain large sandbanks the pixel will incorporate these other signatures, and not be classified as water.
+Additionally, the Landsat satellite data on which this dataset is based has a pixel resolution of 30 m x 30 m. A pixel will only be classified as water where the pixel is almost entirely made up of water. For example, where rivers narrow or contain large sandbanks the pixel will incorporate these other signatures, and not be classified as water.
 
 Both of these factors mean that rivers are not seen as continuous features throughout DEA Waterbodies. Some rivers have also been split into shorter sections for ease of analysis.
 :::
@@ -119,14 +119,14 @@ Some of the waterbody polygons contain holes or are quite irregularly shaped. Th
 The **DEA Water Observations** classifier that determines where water is observed does not work well where water is combined with vegetation. If there is vegetation obscuring the water (like a tree leaning across a river or a wetland), the classifier will not see this as water and the resulting mapped waterbody may be patchy. For example, water under mangroves. 
 
 :::{figure} /_files/dea-waterbodies/DEA_Waterbodies_v3.0_mangroves_faq.jpg
-:alt: Screenshot of DEA Waterbodies website showing marked line boundaries of blue water shape
+:alt: Screenshot of DEA Waterbodies showing marked line boundaries of blue water shape
 
-Mangroves at the mouth of Fitzroy River near Rockhampton as mapped within DEA. Waterbodies
+Mangroves at the mouth of Fitzroy River near Rockhampton as mapped within DEA Waterbodies.
 :::
 ::::
 
 :::{dropdown} Why are some waterbodies fused together instead of being separate?
-DEA Waterbodies are mapped using water classified pixels. If a pixel is predominantly water, it will be mapped as water. Small levees or roads between adjacent waterbodies will not necessarily separate the mapped waterbodies if they are not large enough to influence the total make up of their pixel. This means that some separate waterbodies are mapped as a single waterbody within DEA Waterbodies.
+DEA Waterbodies are mapped using water-classified pixels. If a pixel is predominantly water, it will be mapped as water. Small levees or roads between adjacent waterbodies will not necessarily separate the mapped waterbodies if they are not large enough to influence the total make up of their pixel. This means that some separate waterbodies are mapped as a single waterbody within DEA Waterbodies.
 :::
 
 :::{dropdown} Does DEA Waterbodies show flooded areas?
@@ -136,13 +136,13 @@ By design, we have excluded locations where water is seen only during extreme fl
 ### Other information about DEA Waterbodies
 
 :::{dropdown} How do I download the data?
-Individual waterbody time series can be downloaded within the [National Map](https://nationalmap.gov.au/) and [DEA Maps](http://maps.dea.ga.gov.au/) platforms. Instructions on how to download individual time series can be found in the [User Guide](https://www.dea.ga.gov.au/products/dea-waterbodies/user-guide).
+Individual waterbody time series can be downloaded within the [National Map](https://nationalmap.gov.au/) and [DEA Maps](http://maps.dea.ga.gov.au/) platforms. 
 
 The underlying polygon dataset containing the map of over 300,000 waterbodies across Australia can be downloaded from the [Access tab](./?tab=access).
 :::
 
 :::{dropdown} Can I load DEA Waterbodies into my GIS software?
-DEA Waterbodies has been provided as a [web mapping service](https://geoserver.dea.ga.gov.au/geoserver/dea/wms) (WMS). You can load this service into your GIS software by connecting to the service endpoint (see the metadata provided with the layer in [National Map](https://nationalmap.gov.au/) or [DEA Maps](http://maps.dea.ga.gov.au/) for details). Data available through this service can be viewed on the data specification [tables]((./?tab=details#data-specification-tables)).
+DEA Waterbodies has been provided as a [web mapping service](https://geoserver.dea.ga.gov.au/geoserver/dea/wms) (WMS). You can load this service into your GIS software by connecting to the service endpoint (see the metadata provided with the layer in [National Map](https://nationalmap.gov.au/) or [DEA Maps](http://maps.dea.ga.gov.au/) for details). Data available through this service can be viewed on the [data specification]((./?tab=details#data-specification-tables)) tables.
 :::
 
 :::{dropdown} How was DEA Waterbodies produced?
@@ -150,7 +150,7 @@ The code used to produce DEA Waterbodies polygons has been uploaded to a [GitHub
 :::
 
 :::{dropdown} How do I cite DEA Waterbodies?
-DEA Waterbodies is published by Geoscience  Australia under the  Creative Commons Attribution 4.0 International Licence. You can attribute the data and derivative works using the following two citations: 
+DEA Waterbodies is published by Geoscience  Australia under the Creative Commons Attribution 4.0 International Licence. You can attribute the data and derivative works using the following two citations: 
 
 Dataset citation: 
 Dunn, B., Krause, C., Newey, V., Lymburner, L., Alger, M.J., Adams, C., Yuan, F., Ma, S., Barzinpour, A., Ayers, D., McKenna, C., Schenk, L. 2024. Digital Earth Australia Waterbodies v3.0. Geoscience Australia, Canberra. [https://dx.doi.org/10.26186/148920](https://dx.doi.org/10.26186/148920) 

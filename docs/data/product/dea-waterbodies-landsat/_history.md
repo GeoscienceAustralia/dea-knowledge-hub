@@ -18,7 +18,7 @@ DEA Waterbodies version 3.0 key improvements include:
 
     * The most recent date that the satellite passed over the waterbody.
 
-    * The date attributes were updated.
+    * The date when attributes were updated.
 
     * The date that polygons of waterbody boundaries were created.  
 
@@ -53,14 +53,14 @@ DEA Waterbodies v2 has been reprocessed on [DEA Water Observations](/data/produc
 DEA Waterbodies v2 differs from v1 in a few additional key areas: 
 * v2 polygons have a minimum size of 2,700 m<sup>2</sup>, while v1 polygons have a minimum size of 3,125 m<sup>2</sup>. 
 * There are new waterbodies in v2 not present in v1.
-* There are old waterbodies in v1 that are not present in v2, mainly including very small or rarely full polygons.
+* There are old waterbodies in v1 that are not present in v2, mainly including very small or rarely full polygons which no longer exceed the 10% presence threshold.
 * There are waterbodies in both datasets for which the outlines have changed between v1 and v2.
 
 ### Change in minimum polygon size
 
-A change in the underlying pixel size necessitated a re-evaluation of the minimum polygon size. In v1, the minimum polygon size was 3,125 m<sup>2</sup>, equating to 5 Landsat collection 2 pixels. 
+A change in the underlying pixel size necessitated a re-evaluation of the minimum polygon size. In v1, the minimum polygon size was 3,125 m<sup>2</sup>, equating to 5 x Landsat collection 2 pixels. 
 
-In v2, the size has been lowered slightly to 2,700 m<sup>2</sup>, which equates to 3 Landsat collection 3 pixels. 
+In v2, the size has been lowered slightly to 2,700 m<sup>2</sup>, which equates to 3 x Landsat collection 3 pixels. 
 
 This change has resulted in the inclusion of some smaller waterbodies that were not mapped in v1. 
 

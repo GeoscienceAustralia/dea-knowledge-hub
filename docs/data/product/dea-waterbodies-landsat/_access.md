@@ -4,7 +4,7 @@
 
 :::{dropdown} How to view the map
 
-DEA Waterbodies can be viewed on the DEA Maps tool, making it easy to explore and interact with the data. To get started, open DEA Waterbodies on the [DEA Maps](https://maps.dea.ga.gov.au/#share=s-4RjD9N7swBCZSkXRJJBxOLzVZyK)
+DEA Waterbodies can be viewed on the DEA Maps tool, making it easy to explore and interact with the data. To get started, open DEA Waterbodies on [DEA Maps](https://maps.dea.ga.gov.au/#share=s-4RjD9N7swBCZSkXRJJBxOLzVZyK)
 
 Or, you can manually add the DEA Waterbodies layer to DEA Maps:
 

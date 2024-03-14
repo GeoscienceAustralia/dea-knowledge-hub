@@ -6,17 +6,17 @@ The product uses Geoscience Australia’s archive of over 30 years of Landsat sa
 
 DEA Waterbodies applies a [water classification](/data/product/dea-water-observations-landsat/) to each available Landsat satellite image and maps the locations of waterbodies across Australia. It provides a time series of wet surface area for all waterbodies that are present more than 10% of the time between 1987 and 2020, and are larger than 2,700 m<sup>2</sup> (the size of 3 Landsat pixels).
 
-The tool indicates changes in the wet surface area of waterbodies. This can be used to identify when waterbodies are increasing or decreasing in wet surface area.
+The tool indicates changes in the wet surface area of waterbodies over time. This can be used to identify when waterbodies are increasing or decreasing in wet surface area.
 
 % ## Data description
 
 ## Applications
 
 * Understand surface water dynamics over time on a local or national scale.
-* Provide supporting information to better manage water across Australia
-* Gain insights into the severity and spatial distribution of drought
-* Identify potential water sources for aerial firefighting
-* Get deeper insight into [DEA Water Observations](/data/product/dea-water-observations-landsat/) data
+* Provide supporting information to facilitate better water management across Australia.
+* Gain insights into the severity and spatial distribution of drought.
+* Identify potential water sources for aerial firefighting.
+* Get deeper insight into [DEA Water Observations](/data/product/dea-water-observations-landsat/) data.
 
 ## Technical information
 
@@ -65,11 +65,11 @@ The DEA Waterbodies v3.0 shapefile and CSV contain the following data.
 
 *** Data fields empty in shapefile (dt_wetobs, wet_sa_m2, dt_satpass, dt_updated) are available for the latest relevant observations only via DEA Maps and WMS 
 
-^Data fields introduced in v3.0 are ‘New’ </small></p>
+^ Data fields introduced in v3.0 are ‘New’ </small></p>
 
 ## Lineage
 
-This product is based on [DEA Water Observations](/data/product/dea-water-observations-landsat/) which it extends with reanalysis and mapping..
+This product is based on [DEA Water Observations](/data/product/dea-water-observations-landsat/) which it extends with reanalysis and mapping.
 
 ## Producing DEA Waterbodies polygons
 
@@ -78,7 +78,7 @@ DEA Waterbodies is a polygon-based view of DEA Water Observations (DEA WO), deri
 :::{figure} /_files/cmi/V2Workflow.JPG
 :alt: DEA Waterbodies workflow
 
-Flow diagram outlining the steps taken to produce DEA Waterbodies polygons
+Flow diagram outlining the steps taken to produce DEA Waterbodies polygons.
 :::
 
 For a detailed discussion of the methods used to produce DEA Waterbodies v1, refer to [Krause et al. 2021](https://doi.org/10.3390/rs13081437). For the differences between DEA Waterbodies v1, v2 and v3.0, refer to the [Changelog](./?tab=history#changelog). DEA Waterbodies v3.0 uses the same polygon/vector outlines as DEA Waterbodies v2, with additional metadata.
