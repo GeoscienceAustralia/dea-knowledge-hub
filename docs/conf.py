@@ -4,7 +4,7 @@ sys.path.append(os.path.abspath("./_ext"))
 sys.path.insert(0, os.path.abspath('.'))
 from _modules import utilities
 from _modules import mock_imports
-from _modules import deploy_banner
+from _modules import pr_preview
 
 environment = {
     "build_mode": os.environ.get("BUILD_MODE"),
@@ -143,7 +143,7 @@ html_theme_options = {
 }
 
 if environment["build_mode"] == "pr-preview":
-    html_theme_options["announcement"] = deploy_banner.banner()
+    html_theme_options["announcement"] = pr_preview.banner()
 
 html_context = {
     "default_mode": "light",
