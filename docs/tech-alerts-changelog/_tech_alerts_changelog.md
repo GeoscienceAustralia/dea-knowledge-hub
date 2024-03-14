@@ -6,9 +6,8 @@
 
 :::{admonition} DEA system status: yellow
 :class: caution
-2024-02-28
 
-The DEA web services are currently experiencing intermittent performance issues. We are currently investigating the cause of the issue.
+2024-03-14: We have implemented changes to improve the intermittent performance issues being experienced on DEA web services. We are continuing to work to fix this issue.
 
 See the [DEA monitoring dashboard](https://monitoring.dea.ga.gov.au/) to check the current status of DEA's services.
 :::
