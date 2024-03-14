@@ -41,7 +41,7 @@ jobs:
           comment-id: ${{ steps.fc.outputs.comment-id }}
           edit-mode: replace
           body: |
-            ## :hourglass: PR Preview is building ...
+            ## :speech_balloon: PR Preview is building ...
 
             <table>
                 <tr>
@@ -92,7 +92,7 @@ jobs:
           comment-id: ${{ steps.fc.outputs.comment-id }}
           edit-mode: replace
           body: |
-            ## :heavy_check_mark: PR Preview is ready
+            ## :white_check_mark: PR Preview is ready
 
             <table>
                 <tr>
