@@ -90,7 +90,7 @@ jobs:
           comment-id: ${{ steps.find-comment.outputs.comment-id }}
           edit-mode: replace
           body: |
-            ## :star2: PR Preview <span>#</span>${{github.event.pull_request.number}} is ready
+            ## :star2: PR Preview <span>#</span>${{github.event.pull_request.number}} is ready!
 
             <table>
                 <tr>
