@@ -2,7 +2,8 @@
 % https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/tech_alerts_changelog.html
 
 :::{admonition} DEA system status:
-:class: caution  % Change this to either: tip / caution / danger
+:class: caution
+% Change the 'class' to either: tip / caution / danger
 
 2024-03-14: We have implemented changes to improve the intermittent performance issues being experienced on DEA web services. We are continuing to work to fix this issue.
 
