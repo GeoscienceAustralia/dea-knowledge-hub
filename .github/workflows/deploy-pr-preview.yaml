@@ -34,15 +34,15 @@ jobs:
           comment-author: 'github-actions[bot]'
           body-includes: PR Preview
 
-      - name: "Comment: PR Preview #${{github.event.pull_request.number}} is building"
-        id: comment-preview-building
+      - name: "Comment: PR Preview #${{github.event.pull_request.number}} is deploying"
+        id: comment-preview-deploying
         uses: peter-evans/create-or-update-comment@v4
         with:
           issue-number: ${{github.event.pull_request.number}}
           comment-id: ${{ steps.fc.outputs.comment-id }}
           edit-mode: replace
           body: |
-            ## :speech_balloon: PR Preview <span>#</span>${{github.event.pull_request.number}} is building ...
+            ## :speech_balloon: PR Preview <span>#</span>${{github.event.pull_request.number}} is deploying ...
 
             <table>
                 <tr>
