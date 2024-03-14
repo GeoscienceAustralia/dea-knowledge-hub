@@ -42,7 +42,7 @@ jobs:
           comment-id: ${{ steps.fc.outputs.comment-id }}
           edit-mode: replace
           body: |
-            ## :speech_balloon: PR Preview #${{github.event.pull_request.number}} is building ...
+            ## :speech_balloon: PR Preview <span>#</span>${{github.event.pull_request.number}} is building ...
 
             <table>
                 <tr>
@@ -92,7 +92,7 @@ jobs:
           comment-id: ${{ steps.fc.outputs.comment-id }}
           edit-mode: replace
           body: |
-            ## :white_check_mark: PR Preview #${{github.event.pull_request.number}} is ready
+            ## :white_check_mark: PR Preview <span>#</span>${{github.event.pull_request.number}} is ready
 
             <table>
                 <tr>
