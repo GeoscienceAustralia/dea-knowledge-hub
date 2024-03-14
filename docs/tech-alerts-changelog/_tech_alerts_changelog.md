@@ -1,3 +1,6 @@
+% See the DEA Tech Alerts and Changelog documentation:
+% https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/tech_alerts_changelog.html
+
 :::{admonition} DEA system status:
 :class: caution  % Change this to either: tip / caution / danger
 
