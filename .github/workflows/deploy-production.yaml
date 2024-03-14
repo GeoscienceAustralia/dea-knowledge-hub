@@ -34,7 +34,7 @@ jobs:
         with:
           python-version: ${{ matrix.python-version }}
 
-      - name: Install requirements
+      - name: Install dependencies
         run: ./install-dependencies.sh
 
       - name: Build site

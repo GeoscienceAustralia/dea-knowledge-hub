@@ -26,7 +26,7 @@ jobs:
         node-version: [18.x]
 
     steps:
-      - name: Find Comment
+      - name: Find Comment on PR
         uses: peter-evans/find-comment@v3
         id: fc
         with:
@@ -66,7 +66,7 @@ jobs:
           python-version: ${{ matrix.python-version }}
           cache: 'pip'  # Use pip to cache the installed dependencies
 
-      - name: Install requirements
+      - name: Install dependencies
         run: ./install-dependencies.sh
 
       - name: Build site
