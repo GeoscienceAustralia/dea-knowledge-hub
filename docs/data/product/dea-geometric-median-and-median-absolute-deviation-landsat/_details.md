@@ -12,6 +12,8 @@ The creation of good composite images is especially important due to the opening
 
 The DEA GeoMAD product can be used for seeing how an area of land usually looks rather than only viewing it at a single point in time. Hence you can assess the land cover and land use on a general basis rather than at a specific year. It can also be used to assess how much an area changes over time. You will notice areas like bare rock that are very stable versus those like cropping areas that change dramatically.
 
+This product combines the Geometric Median and the Median Absolute Deviation algorithms in a single package. The Geometric Median output provides information on the general conditions of the landscape for a given year. Meanwhile the Median Absolute Deviation output provides information on how the landscape is changing in the same year. 
+
 ## What this product offers
 
 This product provides statistical tools that utilise DEA’s time series Earth observation data to provide annual images of general conditions and how much an area changes in a given year. 
