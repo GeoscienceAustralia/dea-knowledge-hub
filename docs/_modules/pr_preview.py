@@ -1,7 +1,7 @@
 import os
 
 def banner():
-    pull_request_number = os.environ.get("PULL_REQUEST_NUMBER")
+    pull_request_number = os.environ.get("PR_PREVIEW_PULL_REQUEST_NUMBER")
     deploy_log_url = os.environ.get("PR_PREVIEW_DEPLOY_LOG_URL")
 
     knowledge_hub_url = "https://knowledge.dea.ga.gov.au/"
