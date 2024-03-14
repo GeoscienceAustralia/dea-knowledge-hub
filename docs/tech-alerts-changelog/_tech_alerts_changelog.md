@@ -1,13 +1,9 @@
-% If status = green, class = tip
-% All DEA systems are working as expected. There are no outstanding incidents or errors to report.
-% See the [DEA monitoring dashboard](https://monitoring.dea.ga.gov.au/). 
-% If status = yellow, class = caution
-% If status = red, class = danger
-
-:::{admonition} DEA system status: yellow
-:class: caution
+:::{admonition} DEA system status:
+:class: caution % Change this to either: tip / caution / danger
 
 2024-03-14: We have implemented changes to improve the intermittent performance issues being experienced on DEA web services. We are continuing to work to fix this issue.
+
+% All DEA systems are working as expected. There are no outstanding incidents or errors to report.
 
 See the [DEA monitoring dashboard](https://monitoring.dea.ga.gov.au/) to check the current status of DEA's services.
 :::
