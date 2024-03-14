@@ -34,14 +34,14 @@ jobs:
           comment-author: 'github-actions[bot]'
           body-includes: PR Preview
 
-      - name: "Comment: PR Preview #${{github.event.pull_request.number}} is deploying"
+      - name: "Comment: PR Preview is deploying"
         uses: peter-evans/create-or-update-comment@v4
         with:
           issue-number: ${{github.event.pull_request.number}}
           comment-id: ${{ steps.find-comment.outputs.comment-id }}
           edit-mode: replace
           body: |
-            ## :hourglass: PR Preview <span>#</span>${{github.event.pull_request.number}} is deploying ...
+            ## :hourglass: PR Preview is deploying ...
 
             <table>
                 <tr>
@@ -83,14 +83,14 @@ jobs:
         run: |
           aws s3 sync --delete output "$PR_PREVIEW_BUCKET/$PR_PREVIEW_SUBDOMAIN"
 
-      - name: "Update Comment: PR Preview #${{github.event.pull_request.number}} is ready"
+      - name: "Update Comment: PR Preview is ready"
         uses: peter-evans/create-or-update-comment@v4
         with:
           issue-number: ${{github.event.pull_request.number}}
           comment-id: ${{ steps.find-comment.outputs.comment-id }}
           edit-mode: replace
           body: |
-            ## :star2: PR Preview <span>#</span>${{github.event.pull_request.number}} is ready!
+            ## :star2: PR Preview is ready!
 
             <table>
                 <tr>
