@@ -41,7 +41,7 @@ jobs:
           comment-id: ${{ steps.find-comment.outputs.comment-id }}
           edit-mode: replace
           body: |
-            ## :speech_balloon: PR Preview <span>#</span>${{github.event.pull_request.number}} is deploying ...
+            ## :hourglass: PR Preview <span>#</span>${{github.event.pull_request.number}} is deploying ...
 
             <table>
                 <tr>
@@ -90,7 +90,7 @@ jobs:
           comment-id: ${{ steps.find-comment.outputs.comment-id }}
           edit-mode: replace
           body: |
-            ## :white_check_mark: PR Preview <span>#</span>${{github.event.pull_request.number}} is ready
+            ## :star2: PR Preview <span>#</span>${{github.event.pull_request.number}} is ready
 
             <table>
                 <tr>
