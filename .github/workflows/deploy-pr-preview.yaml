@@ -7,7 +7,7 @@ on:
 
 env:
   PR_PREVIEW_SUBDOMAIN: pr-${{github.event.pull_request.number}}-preview
-  DEPLOY_LOG_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+  PR_PREVIEW_DEPLOY_LOG_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
   PR_PREVIEW_BUCKET: s3://khpreview.dea.ga.gov.au
 
 permissions:
@@ -46,7 +46,7 @@ jobs:
             <table>
                 <tr>
                     <td><strong>Deploy log:</strong></td>
-                    <td><a href="${{ env.DEPLOY_LOG_URL }}">View the log</a></td>
+                    <td><a href="${{ env.PR_PREVIEW_DEPLOY_LOG_URL }}">View the log</a></td>
                 </tr>
             </table>
 
@@ -71,7 +71,7 @@ jobs:
       - name: Build site
         env:
           BUILD_MODE: pr-preview
-          DEPLOY_NAME: Pull Request
+          PULL_REQUEST_NUMBER: ${{github.event.pull_request.number}}
         run: ./build-pr-preview.sh
 
       - name: Configure AWS credentials via OIDC
@@ -101,7 +101,7 @@ jobs:
                 </tr>
                 <tr>
                     <td><strong>Deploy log:</strong></td>
-                    <td><a href="${{ env.DEPLOY_LOG_URL }}">View the log</a></td>
+                    <td><a href="${{ env.PR_PREVIEW_DEPLOY_LOG_URL }}">View the log</a></td>
                 </tr>
             </table>
             
