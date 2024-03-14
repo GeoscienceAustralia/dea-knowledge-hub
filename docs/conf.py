@@ -50,7 +50,6 @@ html_theme = 'pydata_sphinx_theme'
 language = "en"
 
 if environment["build_mode"] == "production": html_baseurl = "https://knowledge.dea.ga.gov.au/"
-elif environment["build_mode"] == "demo": html_baseurl = f"https://{environment['git_branch']}--dea-docs.netlify.app/"
 elif environment["build_mode"] == "pr-preview": html_baseurl = f"https://{environment['pr_preview_subdomain']}.khpreview.dea.ga.gov.au/"
 else: html_baseurl = ""
 
@@ -89,7 +88,7 @@ nbsphinx_execute = "never"
 external_toc_path = "table_of_contents.yaml"
 
 if (
-    environment["build_mode"] in ["demo", "production"]
+    environment["build_mode"] in ["pr-preview", "production"]
     or environment["local_enable_redirects"] == "Yes"
 ): rediraffe_redirects = utilities.source_redirects("_redirects/*.txt")
 
@@ -114,7 +113,7 @@ notfound_pagename = "404-not-found"
 notfound_urls_prefix = ""
 
 tags_create_tags = (
-    environment["build_mode"] in ["demo", "production"]
+    environment["build_mode"] in ["pr-preview", "production"]
     or environment["local_enable_tags"] == "Yes"
 )
 
@@ -143,7 +142,7 @@ html_theme_options = {
     },
 }
 
-if environment["build_mode"] == "demo":
+if environment["build_mode"] == "pr-preview":
     html_theme_options["announcement"] = deploy_banner.banner()
 
 html_context = {
