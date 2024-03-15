@@ -95,24 +95,29 @@ The geomedian (Roberts et al. 2017) is used rather than the mean because the mea
 
 ### Input Data
 
-The input data used to calculate the geomedian are filtered to remove poor quality observations. The filter only accepts observations with a geometric quality assessment (GQA) of less than 1 and it applies a 3-pixel opening operation on clouds and a 6-pixel dilation operation on both cloud and shadows for pixels masked by the fmask algorithm. To account for satellite availability and status, the statistics are calculated using the following.
+The input data used to calculate the geomedian are filtered to remove poor quality observations. The filter only accepts observations with a geometric quality assessment (GQA) of less than 1 and it applies a 3-pixel opening operation on clouds and a 6-pixel dilation operation on both cloud and shadows for pixels masked by the fmask algorithm.
+
+The statistics are calculated over time periods based on the availability of the satellites and sensors.
+
+* **ga_ls5t_gm_cyear_3** &mdash; Uses Landsat 5 data.
+* **ga_ls7e_gm_cyear_3** &mdash; Uses Landsat 7 data.
+* **ga_ls8cls9c_gm_cyear_3** &mdash; Uses Landsat 8 and 9 data.
+
+Note that only Landsat 7 geomedian data is available between 2000 and 2002 because the Landsat 5 satellite was unavailable.
 
 :::{figure} /_files/landsat/landsat-timeline-2024.jpg
 :alt: Landsat geomedian time coverage diagram
 
-The three geomedian products from Landsat with italic names are spaced out temporally. ga_ls8cls9c_gm_cyear_3 product combines images from both Landsat 8 and Landsat 9 when they are available. Only Landsat 7 geomedian is available between 2000 and 2002.
+Timeline of Landsat satellite and sensor availability.
 :::
 
-::::{dropdown} Landsat timeline
+::::{dropdown} Timeline of Landsat availability.
 As shown in the figure above, the Landsat satellites have data available for the following time periods.
 
 :::{list-table}
-:header-rows: 1
 
-* - Satellite or sensor
-  - Time period
 * - **Landsat 5**
-  - 1986&ndash;2000 and 2002$ndash;2010
+  - 1986&ndash;2000 and 2002&ndash;2010
 * - **Landsat 7**
   - 2000&ndash;2021
 * - **Landsat 8**
