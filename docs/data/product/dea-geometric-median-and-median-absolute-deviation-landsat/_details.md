@@ -49,6 +49,15 @@ The benefit of using the median composite algorithm is that it is very fast to c
 A median considers data from each band independently. This can be seen in Step 2 of the median compositing algorithm.
 :::
 
+:::{dropdown} Median Compositing Algorithm
+As shown in the figure above, this algorithm is calculated as follows.
+
+1. A median composite is applied individually to every given pixel stack
+1. Spectral values like red, green, or blue are projected onto separate components. A median value is calculated on each component.
+1. The medians calculated on each component are combined to form a single point in spectral space. This point may not be like previously observed pixels.
+1. The generated pixel is added to the final composite product.
+:::
+
 ### Geometric Median
 
 Geomedian (or geometric median) composites are multi-band generalisations of median composites. A geomedian composite finds the median values of the bands for each pixel when considered together (as opposed to median composites which find a pixel’s median value for each band individually).
@@ -63,6 +72,15 @@ An annual geometric median is a high-dimensional median calculated from the refl
 :alt: Geomedian algorithm diagram
 
 Each band adds a dimension to the geomedian calculation. For a three-band dataset, such as the RGB dataset shown in this figure, each point can be represented on a three-dimensional scatter plot. The geomedian is the minimised ‘sum of distances’ between all of these points.
+:::
+
+:::{dropdown} Geometric Median Compositing Algorithm
+As shown in the figure above, this algorithm is calculated as follows.
+
+1. A geometric median composite is applied individually to every pixel stack.
+1. Pixels are represented as vectors distributed in a high-dimensional space. Each value (like red, green, blue, or nil) has a component in this space.
+1. By calculating a point that minimises the distance between it and all other points (pixels), this creates a representative pixel of all observations in the pixel stack.
+1. The generated pixel is added to the final composite product.
 :::
 
 Multispectral satellite imagery (such as that provided by Landsat and Sentinel-2) consists of multiple measurements per pixel — one for each spectral band. In order to create a meaningful median, a median pixel must take all concurrent spectral measurements into account simultaneously as a multi-dimensional set (rather than each measurement independently as with a simple median). The geomedian is a high-dimensional statistic which calculates a multi-dimensional median from all the spectral measurements of the satellite imagery at the same time and maintains the relationships between the measurements. This provides a median of the physical conditions measured by the earth observations used to create it. It provides a good representation of a typical pixel observation devoid of outliers and has reduced spatial noise.
