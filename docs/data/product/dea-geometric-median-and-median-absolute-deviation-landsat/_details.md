@@ -113,7 +113,7 @@ The primary uses of geomedian pixel composites are for change detection within b
 Timeline of Landsat satellite and sensor availability.
 :::
 
-::::{dropdown} Timeline of Landsat availability.
+::::{dropdown} Timeline of Landsat availability
 As shown in the figure above, the Landsat satellites have data available for the following time periods.
 
 :::{list-table}
@@ -289,7 +289,7 @@ BCMAD takes on values from 0 to 1.
 :::{figure} /_files/geomedian/lineage.svg
 :alt: Lineage diagram.
 
-GeoMAD stands for Geometric Median and Median Absolute Deviation. Landsat 5, 7, 8, and 9 Surface Reflectance includes NBART, and Observational Attributes products.
+Landsat 5, 7, 8, and 9 Surface Reflectance includes NBART and Observational Attributes products. GeoMAD stands for Geometric Median and Median Absolute Deviation.
 :::
 
 The GeoMAD is derived from Landsat surface reflectance data. The data are masked for clouds and shadows to increase clarity. 
