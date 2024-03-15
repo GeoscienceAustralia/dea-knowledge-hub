@@ -260,7 +260,7 @@ $$
 \end{align*}
 $$
 
-It can be generalised to a multispectral dataset with 'p' bands:
+It can be generalised to a multispectral dataset with $p$ bands:
 
 $$
 \begin{align*}
@@ -271,7 +271,7 @@ $$
 
 The Bray-Curtis dissimilarity will be maximised at a value of 1 when the measurements in each band are completely different. Conversely, the value of the dissimilarity will be small where each band observation is similar to the geomedian of that band.
 
-As with the other MADs, the BCMAD is found by taking the median of all the Bray-Curtis dissimilarities from 'N' timesteps. For GeoMAD, 'p=10'.
+As with the other MADs, the BCMAD is found by taking the median of all the Bray-Curtis dissimilarities from $N$ timesteps. For GeoMAD, $p=10$.
 
 $$
 \begin{align*}
@@ -279,7 +279,7 @@ $$
 \end{align*}
 $$
 
-BCMAD takes on values from 0 - 1.
+BCMAD takes on values from 0 to 1.
 
 (Source: [Digital Earth Africa &mdash; GeoMAD cloud-free composites](https://docs.digitalearthafrica.org/en/latest/data_specs/GeoMAD_specs.html))
 ::::
