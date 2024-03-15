@@ -87,7 +87,7 @@ As shown in the figure above, this algorithm is calculated as follows.
 
 Multispectral satellite imagery (such as that provided by Landsat and Sentinel-2) consists of multiple measurements per pixel — one for each spectral band. In order to create a meaningful median, a median pixel must take all concurrent spectral measurements into account simultaneously as a multi-dimensional set (rather than each measurement independently as with a simple median). The geomedian is a high-dimensional statistic which calculates a multi-dimensional median from all the spectral measurements of the satellite imagery at the same time and maintains the relationships between the measurements. This provides a median of the physical conditions measured by the earth observations used to create it. It provides a good representation of a typical pixel observation devoid of outliers and has reduced spatial noise.
 
-The annual geomedian provides an annual surface reflectance composite for any area of interest within the area covered by the DEA’s Open Data Cube, up to the entire spatial extent available. It provides a cloud-free overview of the middle surface reflectance value for each year. It is equivariant, meaning that the linear algorithm applied to a geomedian image is equal to a geomedian applied to a set of images on which the same linear algorithm was applied. Therefore, it can be used in further analyses such as Tasseled Cap, Principal Components Analysis, and Normalised Difference Indices. It is useful in analyses requiring baseline conditions such as change detection.
+The annual geomedian provides an annual surface reflectance composite for any area of interest within the area covered by the DEA’s [Open Data Cube](https://www.dea.ga.gov.au/about/open-data-cube), up to the entire spatial extent available. It provides a cloud-free overview of the middle surface reflectance value for each year. It is equivariant, meaning that the linear algorithm applied to a geomedian image is equal to a geomedian applied to a set of images on which the same linear algorithm was applied. Therefore, it can be used in further analyses such as Tasseled Cap, Principal Components Analysis, and Normalised Difference Indices. It is useful in analyses requiring baseline conditions such as change detection.
 
 Surface reflectance geometric median products are derived from the DEA Surface Reflectance (SR) products and provide a representation of the 'average' of surface reflectance over the time period 'average'. This is a synthetic representation of a time series rather than an actual observed pixel. 
 
@@ -102,6 +102,25 @@ The input data used to calculate the geomedian are filtered to remove poor quali
 
 The three geomedian products from Landsat with italic names are spaced out temporally. ga_ls8cls9c_gm_cyear_3 product combines images from both Landsat 8 and Landsat 9 when they are available. Only Landsat 7 geomedian is available between 2000 and 2002.
 :::
+
+::::{dropdown} Landsat timeline
+As shown in the figure above, the Landsat satellites have data available for the following time periods.
+
+:::{list-table}
+:header-rows: 1
+
+* - Satellite or sensor
+  - Time period
+* - **Landsat 5**
+  - 1986&ndash;2000 and 2002$ndash;2010
+* - **Landsat 7**
+  - 2000&ndash;2021
+* - **Landsat 8**
+  - 2013 onwards
+* - **Landsat 9**
+  - 2022 onwards
+:::
+::::
 
 The primary uses of geomedian pixel composites are for change detection within baselines and for broad regional image composites (such as national and continental mosaics).
 
