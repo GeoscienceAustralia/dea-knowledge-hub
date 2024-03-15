@@ -137,9 +137,9 @@ A ‘second order’ statistic associated with a mean of a dataset is the standa
 
 The MAD is the median of absolute differences of the individual values in a set of data from their overall median. To calculate the MAD for a multi-dimensional dataset — such as the set of satellite images captured in a year — measures of ‘distance’ from each multi-dimensional measurement to the mean are needed. (These are the set of spectral measurements for a pixel through time:  blue, green, red, near-infra-red, and short-wave-infra-red.) However, multi-dimensional distances can be calculated in different ways, providing different insights into the behaviour of pixels through time. The DEA GeoMAD product includes three MADs produced from different measures of distance.
 
-* Euclidean distance (EMAD) — this is more sensitive to changes in target brightness.
-* Cosine (spectral) distance (SMAD) —  this is more sensitive to change in target spectral response.
-* Bray Curtis dissimilarity (BCMAD) —  this is more sensitive to the distribution of the observation values through time.
+* **Euclidean distance (EMAD)** — this is more sensitive to changes in target brightness.
+* **Cosine (spectral) distance (SMAD)** —  this is more sensitive to change in target spectral response.
+* **Bray Curtis dissimilarity (BCMAD)** —  this is more sensitive to the distribution of the observation values through time.
 
 Each MAD provides information on different land cover change features which are useful for classification. 
 
