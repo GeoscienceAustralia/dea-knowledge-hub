@@ -153,7 +153,7 @@ The most logical place to start thinking about any of the MADs is the Euclidean 
 :::{figure} /_files/geomedian/cartesian_euclidean.JPG
 :alt: Euclidean distance in three dimensions
 
-Euclidean distance in three dimensions
+Euclidean distance in three dimensions.
 :::
 
 In the case of satellite data, we are measuring the Euclidean distance between a pixel’s geomedian value and a single multispectral measurement. The number of dimensions is equal to the number of bands in the data. In the illustration below, $m$ is the geomedian value and $x$ the measured value. In real data, there will be multiple measurements over a time period, so $t$ is the timestep number, otherwise noted in equations as superscript ($t$).
@@ -186,7 +186,7 @@ $$
 \end{align*}
 $$
 
-In GeoMAD, the MADs are calculated from the same ten bands used in the geomedian, therefore $p=10$. The result of $||x(t) - m||Rp$ is a positive scalar, so $\text{EMAD}_\text{GeoMAD}$ is a positive scalar number. As in the geomedian, $N$ is dependent on the number of satellite flyovers particular to that pixel.
+In GeoMAD, the MADs are calculated from the same ten bands used in the geomedian, therefore $p=10$. The result of $\lVert \mathbf{x}^{(t)} - \mathbf{m} \rVert_{\mathbb{R}^p}$ is a positive scalar, so $\text{EMAD}_\text{GeoMAD}$ is a positive scalar number. As in the geomedian, $N$ is dependent on the number of satellite flyovers particular to that pixel.
 
 $$
 \begin{align*}
@@ -224,7 +224,7 @@ $$
 \end{align*}
 $$
 
-For more than two dimensions, we can generalise the cosine distance formula for a single pixel. For a multispectral measurement of $p$ bands at timestep $t$, $\\mathbf{x}^{(t)}$, and the geomedian at the same point $\\mathbf{m}$, the cosine distance is:
+For more than two dimensions, we can generalise the cosine distance formula for a single pixel. For a multispectral measurement of $p$ bands at timestep $t$, $\mathbf{x}^{(t)}$, and the geomedian at the same point $\mathbf{m}$, the cosine distance is:
 
 $$
 \begin{align*}\small
@@ -300,7 +300,7 @@ The GeoMAD is calculated over annual time periods on Earth observations from a s
 
 For the purposes of the default DEA product, GeoMADs are computed per calendar year and per sensor (Landsat 5, Landsat 7, Landsat 8, and Landsat 9) from terrain-illumination-corrected surface reflectance data (Analysis Ready Data). They each use the annual geometric media of their own dataset. 
 
-Note: The constituent pixels in the GeoMAD pixel composite mosaics are synthetic. This means that the pixels have not been physically observed by the satellite; rather, they are the computed high-dimensional medians of a time series of pixels. 
+Note that the constituent pixels in the GeoMAD pixel composite mosaics are synthetic. This means that the pixels have not been physically observed by the satellite; rather, they are the computed high-dimensional medians of a time series of pixels. 
 
 ## References
 
