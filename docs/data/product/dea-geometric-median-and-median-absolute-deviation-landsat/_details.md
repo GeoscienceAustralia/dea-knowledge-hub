@@ -14,6 +14,8 @@ The DEA GeoMAD product can be used for seeing how an area of land usually looks 
 
 This product combines the Geometric Median and the Median Absolute Deviation algorithms in a single package. The Geometric Median output provides information on the general conditions of the landscape for a given year. Meanwhile the Median Absolute Deviation output provides information on how the landscape is changing in the same year. 
 
+![A Geomedian image of Australia, cropped.](/_files/geomedian/Geomedian_Australia_2014_cropped.jpg)
+
 ## What this product offers
 
 This product provides statistical tools that utilise DEA’s time series Earth observation data to provide annual images of general conditions and how much an area changes in a given year. 
