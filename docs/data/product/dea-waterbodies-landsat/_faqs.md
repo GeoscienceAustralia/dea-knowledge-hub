@@ -56,7 +56,7 @@ Within the DEA Waterbodies web service, there are two time series provided for e
 ### About the mapped waterbodies
 
 :::{dropdown} What satellite imagery does DEA Waterbodies use?
-DEA Waterbodies is based on Landsat satellite data provided by the United States Geological Service. The Digital Earth Australia (DEA) program within Geoscience Australia corrects this data and makes it available publicly.
+DEA Waterbodies is based on Landsat satellite data provided by the United States Geological Survey. The Digital Earth Australia (DEA) program within Geoscience Australia calibrates this data and makes it available publicly.
 
 The tool uses data from the Landsat 5 TM (1987--2011), Landsat 7 ETM+ (1999--present), Landsat 8 OLI (2013--present), and Landsat 9 OLI-2 (2021--present) missions.
 
@@ -146,7 +146,7 @@ DEA Waterbodies has been provided as a [web mapping service](https://geoserver.d
 :::
 
 :::{dropdown} How was DEA Waterbodies produced?
-The code used to produce DEA Waterbodies polygons has been uploaded to a [GitHub repository](https://github.com/GeoscienceAustralia/dea-waterbodies). The code that is used to generate DEA Waterbodies time series is also available on [GitHub](https://github.com/GeoscienceAustralia/dea-conflux). There is a [peer-reviewed journal article](https://doi.org/10.3390/rs13081437) that explains in detail the methods used to produce DEA Waterbodies.
+The code used to produce DEA Waterbodies polygons is available [here](https://github.com/GeoscienceAustralia/dea-waterbodies). DEA Waterbodies time series generation code is also available on [GitHub](https://github.com/GeoscienceAustralia/dea-conflux). There is a [peer-reviewed journal article](https://doi.org/10.3390/rs13081437) that explains in detail the methods used to produce DEA Waterbodies.
 :::
 
 :::{dropdown} How do I cite DEA Waterbodies?

@@ -26,7 +26,7 @@ DEA Waterbodies version 3.0 key improvements include:
 
 * Specifications of supporting data are now [available](./?tab=details#data-specification-tables). 
 
-* Data will be uploaded as soon as it is received and processed. There is an approximate two-week latency in processing to an Analysis Ready Data (ARD) standard.   
+* Data will be uploaded as soon as it is received and processed. There is an approximate two-week latency in processing to an Analysis Ready Data (ARD) standard, from which the water information is produced.  
 
 * There have been additions to the shape file specification to support data delivery. Data specification tables have been [added](./?tab=details#data-specification-tables). 
 
@@ -86,7 +86,7 @@ As an example, Kati Thanda is a particularly complex polygon when mapped using a
 :::{figure} /_files/cmi/SaltLakesSwap.JPG
 :alt: Complex polygons swapped for mapped polygons
 
-Complex polygons replaced for large salt lakes in South Australia. Original polygons are shown in red in the foreground. The polygons that replaced these are shown in the background in blue. a) Focus on the northern edge of Kati Thanda, SA, showing the complexity of the automatically detected polygons. b) Lake Everard, SA.
+Complex polygons replaced for large salt lakes in South Australia. Original polygons are shown in red. Blue areas show where polygons were infilled by replacement with the Surface Hydrology Polygons (Regional). a) Focus on the northern edge of Kati Thanda, SA, showing the complexity of the automatically detected polygons. b) Lake Everard, SA.
 :::
 
 #### Polygon names
