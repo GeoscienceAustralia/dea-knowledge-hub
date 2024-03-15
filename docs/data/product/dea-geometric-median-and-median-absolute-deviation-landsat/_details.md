@@ -156,7 +156,7 @@ The most logical place to start thinking about any of the MADs is the Euclidean 
 Euclidean distance in three dimensions
 :::
 
-In the case of satellite data, we are measuring the Euclidean distance between a pixel’s geomedian value and a single multispectral measurement. The number of dimensions is equal to the number of bands in the data. In the illustration below, 'm' is the geomedian value and 'x' the measured value. In real data, there will be multiple measurements over a time period, so 't' is the timestep number, otherwise noted in equations as superscript '(t)'.
+In the case of satellite data, we are measuring the Euclidean distance between a pixel’s geomedian value and a single multispectral measurement. The number of dimensions is equal to the number of bands in the data. In the illustration below, $m$ is the geomedian value and $x$ the measured value. In real data, there will be multiple measurements over a time period, so $t$ is the timestep number, otherwise noted in equations as superscript ($t$).
 
 For example, if we had three bands of data (red, green and blue), and three timesteps of data, then we can calculate the Euclidean distances as follows:
 
@@ -168,7 +168,7 @@ Euclidean distance in three dimensions over three timesteps.
 
 Each timestep gives a separate Euclidean distance result. Then EMAD is the median of all those distances.
 
-In most real life conditions, there will be more than three timesteps and more than three bands. A general expression of Euclidean distance for '(p)' bands is given as:
+In most real life conditions, there will be more than three timesteps and more than three bands. A general expression of Euclidean distance for $p$ bands is given as:
 
 $$
 \begin{align*}
@@ -178,7 +178,7 @@ $$
 \end{align*}
 $$
 
-Then EMAD for 'N' timesteps is given by Roberts et al, 2018, as the median of the Euclidean distances from all the timesteps.
+Then EMAD for $N$ timesteps is given by Roberts et al, 2018, as the median of the Euclidean distances from all the timesteps.
 
 $$
 \begin{align*}
@@ -186,7 +186,7 @@ $$
 \end{align*}
 $$
 
-In GeoMAD, the MADs are calculated from the same ten bands used in the geomedian, therefore 'p=10'. The result of '||x(t) - m||Rp' is a positive scalar, so 'EMAD' is a positive scalar number. As in the geomedian, 'N' is dependent on the number of satellite flyovers particular to that pixel.
+In GeoMAD, the MADs are calculated from the same ten bands used in the geomedian, therefore $p=10$. The result of $||x(t) - m||Rp$ is a positive scalar, so $\text{EMAD}_\text{GeoMAD}$ is a positive scalar number. As in the geomedian, $N$ is dependent on the number of satellite flyovers particular to that pixel.
 
 $$
 \begin{align*}
@@ -194,7 +194,7 @@ $$
 \end{align*}
 $$
 
-The maximum possible value for EMAD depends on the value ranges for each of the bands in the dataset. In the case of GeoMAD, which uses at maximum annual timescales of ten bands of Sentinel-2 data, valid EMAD values range from 0 - 31623.
+The maximum possible value for EMAD depends on the value ranges for each of the bands in the dataset. In the case of GeoMAD, which uses at maximum annual timescales of ten bands of Sentinel-2 data, valid EMAD values range from 0 to 31623.
 
 EMAD is useful for showing albedo shifts in satellite spectra.
 
