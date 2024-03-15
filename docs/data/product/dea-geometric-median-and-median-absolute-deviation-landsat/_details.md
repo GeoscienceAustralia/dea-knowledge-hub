@@ -33,7 +33,7 @@ The GeoMAD product is useful for the following.
 * Land cover mapping.
 * Change detection and classification (such as for burn-area mapping, crop mapping, and urban area mapping). 
 * General variance and change, so it can be used in machine learning for change detection. 
-* Environmental monitoring
+* Environmental monitoring.
 
 ## Technical information
 
@@ -43,7 +43,7 @@ Median composites are an algorithm for removing cloud and shadow noise from imag
 
 The benefit of using the median composite algorithm is that it is very fast to compute. The problem, however, is that pixels hold information for multiple bands and medians lose this information. Therefore, a geomedian algorithm is used.
 
-:::{figure} /_files/geomedian/geomedian-alg-composite_techspecs.png
+:::{figure} /_files/geomedian/geomedian-alg-composite_techspecs.jpg
 :alt: Median compositing algorithm diagram
 
 A median considers data from each band independently. This can be seen in Step 2 of the median compositing algorithm.
@@ -59,7 +59,7 @@ The geomedian is a pixel-composite mosaic of a time series of earth observations
 
 An annual geometric median is a high-dimensional median calculated from the reflectance values recorded over a one-year period. The years available are each full calendar year since 1986. The annual geomedians of surface reflectance measurements are calculated per calendar year.
 
-:::{figure} /_files/geomedian/geomedian-composite_techspecs.png
+:::{figure} /_files/geomedian/geomedian-composite_techspecs.jpg
 :alt: Geomedian algorithm diagram
 
 Each band adds a dimension to the geomedian calculation. For a three-band dataset, such as the RGB dataset shown in this figure, each point can be represented on a three-dimensional scatter plot. The geomedian is the minimised ‘sum of distances’ between all of these points.
