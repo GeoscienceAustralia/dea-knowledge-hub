@@ -212,7 +212,7 @@ In two dimensions, cosine distance can be graphically compared to Euclidean dist
 Relative relationships between Euclidean and cosine distances.
 :::
 
-In a general sense, cosine distance is related to the angle between the two points, while Euclidean distance is related to the straight-line distance between the two points 'd'. Like Euclidean distance, points are more similar when the cosine distance between them is small. The value of the cosine distance is smaller when the angle is small (i.e. close to 0) or when its close to 180 degrees.
+In a general sense, cosine distance is related to the angle between the two points $\theta$, while Euclidean distance is related to the straight-line distance between the two points $d$. Like Euclidean distance, points are more similar when the cosine distance between them is small. The value of the cosine distance is smaller when $\theta$ is small (i.e. close to 0) or when $\theta$ is close to 180 degrees.
 
 Notice we could have a small cosine distance but a large Euclidean distance; for example, if the angle between the vectors is small, but one is much longer than the other. This is an important property of cosine distance (and thus SMAD) - unlike Euclidean distance, cosine distance is not skewed by the magnitude of the measurements.
 
@@ -224,7 +224,7 @@ $$
 \end{align*}
 $$
 
-For more than two dimensions, we can generalise the cosine distance formula for a single pixel. For a multispectral measurement of 'p' bands at timestep 't', 'x(t)', and the geomedian at the same point 'm', the cosine distance is:
+For more than two dimensions, we can generalise the cosine distance formula for a single pixel. For a multispectral measurement of $p$ bands at timestep $t$, $\\mathbf{x}^{(t)}$, and the geomedian at the same point $\\mathbf{m}$, the cosine distance is:
 
 $$
 \begin{align*}\small
@@ -234,7 +234,7 @@ $$
 \end{align*}
 $$
 
-Then for 'N' timesteps, SMAD is the median of the cosine distances.
+Then for $N$ timesteps, SMAD is the median of the cosine distances.
 
 $$
 \begin{align*}
@@ -242,7 +242,7 @@ $$
 \end{align*}
 $$
 
-As with the other distances and dissimilarities used in the MADs, this results in a positive scalar value, thus SMAD is a positive scalar. Valid values for SMAD fall between 0 – 1.
+As with the other distances and dissimilarities used in the MADs, this results in a positive scalar value, thus SMAD is a positive scalar. Valid values for SMAD fall between 0 and 1.
 
 In applications of Earth observation data, SMAD is useful for showing areas of land cover change. One reason is that SMAD is less affected by cloud; unlike EMAD, it is invariant to albedo changes, such as that caused by the diffusion of solar radiation. SMAD can also be used to track water bodies, as water has high variation in reflectance.
 
