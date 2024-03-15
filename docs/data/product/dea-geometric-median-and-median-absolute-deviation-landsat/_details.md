@@ -105,6 +105,8 @@ The statistics are calculated over time periods based on the availability of the
 
 Note that only Landsat 7 geomedian data is available between 2000 and 2002 because the Landsat 5 satellite was unavailable.
 
+The primary uses of geomedian pixel composites are for change detection within baselines and for broad regional image composites (such as national and continental mosaics).
+
 :::{figure} /_files/landsat/landsat-timeline-2024.jpg
 :alt: Landsat geomedian time coverage diagram
 
@@ -126,8 +128,6 @@ As shown in the figure above, the Landsat satellites have data available for the
   - 2022 onwards
 :::
 ::::
-
-The primary uses of geomedian pixel composites are for change detection within baselines and for broad regional image composites (such as national and continental mosaics).
 
 ### Median Absolute Deviation
 
