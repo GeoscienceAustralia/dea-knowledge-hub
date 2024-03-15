@@ -11,3 +11,5 @@ The south-west origin point of the DEA Summary Product Grid has been shifted 20 
 A single combined product for Landsat 8 and 9 is provided. This has better performance than the standalone Landsat 8 product due to an increased number of available observations. A standalone Landsat 8 product will no longer be provided from calendar year 2022 and onwards.
 
 Band measurement names were updated for consistency with DEA's ARD products by adding the 'nbart' prefix (e.g. ‘red’ band has become ‘nbart_red’).
+
+<img src="/_static/geomedian/Geomedian_2020_Tasmania_v4_0_vs_v3_1.gif" alt="A comparison of the Geomedian Tasmania: v4.0 vs v3.1." style="max-width: 600px;">
