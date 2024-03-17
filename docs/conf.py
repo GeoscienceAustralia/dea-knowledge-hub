@@ -4,13 +4,14 @@ sys.path.append(os.path.abspath("./_ext"))
 sys.path.insert(0, os.path.abspath('.'))
 from _modules import utilities
 from _modules import mock_imports
-from _modules import deploy_banner
+from _modules import pr_preview
 
 environment = {
     "build_mode": os.environ.get("BUILD_MODE"),
     "git_branch": os.environ.get("BRANCH"),
     "local_enable_redirects": os.environ.get("LOCAL_ENABLE_REDIRECTS"),
     "local_enable_tags": os.environ.get("LOCAL_ENABLE_TAGS"),
+    "pr_preview_subdomain": os.environ.get("PR_PREVIEW_SUBDOMAIN"),
 }
 
 project = "DEA Knowledge Hub"
@@ -49,7 +50,7 @@ html_theme = 'pydata_sphinx_theme'
 language = "en"
 
 if environment["build_mode"] == "production": html_baseurl = "https://knowledge.dea.ga.gov.au/"
-elif environment["build_mode"] == "demo": html_baseurl = f"https://{environment['git_branch']}--dea-docs.netlify.app/"
+elif environment["build_mode"] == "pr-preview": html_baseurl = f"https://{environment['pr_preview_subdomain']}.khpreview.dea.ga.gov.au/"
 else: html_baseurl = ""
 
 html_permalinks = False
@@ -87,7 +88,7 @@ nbsphinx_execute = "never"
 external_toc_path = "table_of_contents.yaml"
 
 if (
-    environment["build_mode"] in ["demo", "production"]
+    environment["build_mode"] in ["pr-preview", "production"]
     or environment["local_enable_redirects"] == "Yes"
 ): rediraffe_redirects = utilities.source_redirects("_redirects/*.txt")
 
@@ -112,7 +113,7 @@ notfound_pagename = "404-not-found"
 notfound_urls_prefix = ""
 
 tags_create_tags = (
-    environment["build_mode"] in ["demo", "production"]
+    environment["build_mode"] in ["pr-preview", "production"]
     or environment["local_enable_tags"] == "Yes"
 )
 
@@ -141,8 +142,8 @@ html_theme_options = {
     },
 }
 
-if environment["build_mode"] == "demo":
-    html_theme_options["announcement"] = deploy_banner.banner()
+if environment["build_mode"] == "pr-preview":
+    html_theme_options["announcement"] = pr_preview.banner()
 
 html_context = {
     "default_mode": "light",
@@ -155,4 +156,3 @@ if environment["build_mode"] == "production": html_context["google_analytics_ga4
 suppress_warnings = [
     # "etoc.toctree"
 ]
-
