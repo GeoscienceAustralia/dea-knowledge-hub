@@ -17,7 +17,7 @@ permissions:
   pull-requests: write
 
 jobs:
-  publish:
+  pr-preview:
     runs-on: ubuntu-latest
 
     strategy:
