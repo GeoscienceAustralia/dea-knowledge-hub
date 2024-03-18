@@ -43,8 +43,8 @@ The DEA Waterbodies v3.0 shapefile and CSV contain the following data.
 * - Field name
   - Description
   - Update frequency
-  - Data availability***
-  - Status^
+  - Data availability\*\*\*
+  - Status\^
   - Type
 
 * - `uid`
@@ -131,34 +131,34 @@ The DEA Waterbodies v3.0 shapefile and CSV contain the following data.
   - Type
 
 * - `date`
-  - date of observation (UTC)
+  - Date of observation (UTC)
   - Value is static, but the CSV contents are updated as scene input data becomes available*
   - DEA Maps, CSV
   - Existing
   - DateTime (UTC)
 
 * - `pc_wet`
-  - percentage of the waterbody recorded as wet (0&ndash;100)
+  - Percentage of the waterbody recorded as wet (0&ndash;100)
   - Value is static, but the CSV contents are updated as scene input data becomes available*
   - DEA Maps, CSV
   - Existing
   - Float
 
 * -  `px_wet`
-  - number of 30m Landsat pixels recorded as wet
+  - Number of 30m Landsat pixels recorded as wet
   - Value is static, but the CSV contents are updated as scene input data becomes available*
   - DEA Maps, CSV
   - Existing
   - Integer
 :::
 
-</p><p><small>* Scene data is available approximately two weeks from the satellite overpass for the Water Observations feature layers used to process Waterbodies. Waterbodies scenes are processed as Water Observations feature layer scenes become available in the DEA datacube. It takes approximately ten minutes to process Waterbodies per scene.  One Landsat scene measures approximately 190 x 180 km https://www.nasa.gov/wp-content/uploads/2015/04/landsat_9_fast_facts.pdf
+\* Scene data is available approximately two weeks from the satellite overpass for the Water Observations feature layers used to process Waterbodies. Waterbodies scenes are processed as Water Observations feature layer scenes become available in the DEA datacube. It takes approximately 10 minutes to process Waterbodies per scene.  One Landsat scene measures approximately 190 x 180 km. <https://www.nasa.gov/wp-content/uploads/2015/04/landsat_9_fast_facts.pdf>
 
-** Larger waterbodies are easier to detect and smaller or narrower waterbodies are harder to detect. Area estimates should be compared to additional data for verification. 
+\*\* Larger waterbodies are easier to detect and smaller or narrower waterbodies are harder to detect. Area estimates should be compared to additional data for verification. 
 
-*** Data fields empty in shapefile (dt_wetobs, wet_sa_m2, dt_satpass, dt_updated) are available for the latest relevant observations only via DEA Maps and WMS 
+\*\*\* Data fields empty in shapefile (`dt_wetobs`, `wet_sa_m2`, `dt_satpass`, `dt_updated`) are available for the latest relevant observations only via DEA Maps and WMS 
 
-^ Data fields introduced in v3.0 are ‘New’ </small></p>
+\^ Data fields introduced in v3.0 are ‘New’
 
 ## Lineage
 
