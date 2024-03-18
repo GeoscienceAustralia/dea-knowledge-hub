@@ -34,13 +34,13 @@ On the map, you can click any identified waterbody to view more information abou
 :::
 
 :::{dropdown} How to compare two waterbodies
-1) Click a waterbody on the map, then in its pop-up click **Expand** to add it to the time series chart.
 
-2) Follow the same steps to add another waterbody to the time series chart.
-
-3) It’s possible to compare even more waterbodies on this chart!
+1. Click a waterbody on the map, then in its pop-up click **Expand** to add it to the time series chart.
+1. Follow the same steps to add another waterbody to the time series chart.
+1. It’s possible to compare even more waterbodies on this chart!
 
 ![DEA Maps loaded with DEA Waterbodies and comparing two waterbodies](/_files/dea-waterbodies/DEA_Waterbodies_v3.0_user-guide-compare.PNG)
+
 :::
 
 :::{dropdown} Do you have any more questions?
