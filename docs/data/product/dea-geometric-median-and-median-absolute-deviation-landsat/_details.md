@@ -241,7 +241,7 @@ Relative relationships between Euclidean and cosine distances.
 
 In a general sense, cosine distance is related to the angle between the two points $\theta$, while Euclidean distance is related to the straight-line distance between the two points $d$. Like Euclidean distance, points are more similar when the cosine distance between them is small. The value of the cosine distance is smaller when $\theta$ is small (i.e. close to 0) or when $\theta$ is close to 180 degrees.
 
-Notice we could have a small cosine distance but a large Euclidean distance; for example, if the angle between the vectors is small, but one is much longer than the other. This is an important property of cosine distance (and thus SMAD) - unlike Euclidean distance, cosine distance is not skewed by the magnitude of the measurements.
+Notice we could have a small cosine distance but a large Euclidean distance; for example, if the angle between the vectors is small, but one is much longer than the other. This is an important property of cosine distance (and thus SMAD) &mdash; unlike Euclidean distance, cosine distance is not skewed by the magnitude of the measurements.
 
 Cosine distance is defined more formally as:
 
