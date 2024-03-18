@@ -18,25 +18,25 @@ This product combines the Geometric Median and the Median Absolute Deviation alg
 :::{grid-item}
 <figure>
     <img src="/_static/geomedian/Geomedian_1988_2023_Canberra_ACT.gif" alt="Geomedian 1988-2023 Canberra, ACT" style="max-width: 600px;">
-    <figcaption>Canberra, ACT 1988&mdash;2023</figcaption>
+    <figcaption>Canberra, ACT 1988&ndash;2023</figcaption>
 </figure>
 :::
 :::{grid-item}
 <figure>
     <img src="/_static/geomedian/Geomedian_1988_2023_Lake_Argyle_WA.gif" alt="Geomedian 1988-2023 Lake Argyle, WA" style="max-width: 600px;">
-    <figcaption>Lake Argyle, WA 1988&mdash;2023</figcaption>
+    <figcaption>Lake Argyle, WA 1988&ndash;2023</figcaption>
 </figure>
 :::
 :::{grid-item}
 <figure>
     <img src="/_static/geomedian/Geomedian_1988_2023_Shepparton_Vic.gif" alt="Geomedian 1988-2023 Shepparton, VIC" style="max-width: 600px;">
-    <figcaption>Shepparton, VIC 1988&mdash;2023</figcaption>
+    <figcaption>Shepparton, VIC 1988&ndash;2023</figcaption>
 </figure>
 :::
 :::{grid-item}
 <figure>
     <img src="/_static/geomedian/Geomedian_1988_2023_Lake_Dalrymple_Qld.gif" alt="Geomedian 1988-2023 Lake Dalrymple, Qld.zip" style="max-width: 600px;">
-    <figcaption>Lake Dalrymple, Qld 1988&mdash;2023</figcaption>
+    <figcaption>Lake Dalrymple, Qld 1988&ndash;2023</figcaption>
 </figure>
 :::
 ::::
