@@ -4,7 +4,7 @@
 
 :::{dropdown} How to view the map
 
-DEA Waterbodies can be viewed on the DEA Maps tool, making it easy to explore and interact with the data. To get started, open DEA Waterbodies on [DEA Maps](https://maps.dea.ga.gov.au/#share=s-4RjD9N7swBCZSkXRJJBxOLzVZyK).
+DEA Waterbodies can be viewed on the DEA Maps tool, making it easy to explore and interact with the data. To get started, open DEA Waterbodies on [DEA Maps](https://maps.dea.ga.gov.au/#share=s-gMICb0o03KwPHyXV52ivMtedIrd).
 
 Or, you can manually add the DEA Waterbodies layer to DEA Maps:
 
@@ -28,7 +28,7 @@ On the map, you can click any identified waterbody to view more information abou
 
 1) Click a waterbody and a pop-up window will appear. This contains important information about the waterbody and a preview of its ‘Pc Wet’ time series.
 
-2) In the pop-up, click the **Expand** button. A more detailed time series chart will open below (and, the waterbody will be added to the left sidebar).
+2) In the pop-up, click the `Expand` button. A more detailed time series chart will open below (and, the waterbody will be added to the left sidebar).
 
 3) The time series chart is composed of dots representing valid observations in the data set, and straight lines are drawn between these dots.
 
@@ -41,7 +41,7 @@ On the map, you can click any identified waterbody to view more information abou
 :::
 
 :::{dropdown} How to compare two waterbodies
-1) Click a waterbody on the map then in its pop-up click **Expand** to add it to the time series chart.
+1) Click a waterbody on the map, then in its pop-up click **Expand** to add it to the time series chart.
 
 2) Follow the same steps to add another waterbody to the time series chart.
 
@@ -54,7 +54,7 @@ On the map, you can click any identified waterbody to view more information abou
 
 See the [Frequently Asked Questions](./?tab=faqs). 
 
-If you need more help, contact earth.observation@ga.gov.au. 
+If you need more help, contact <a href="mailto:Earth.Observation@ga.gov.au">Earth.Observation@ga.gov.au</a>. 
 
 :::
 
