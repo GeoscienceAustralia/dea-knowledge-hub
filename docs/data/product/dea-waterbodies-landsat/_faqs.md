@@ -13,7 +13,7 @@ The tool detects the wet surface area of a waterbody. The wet surface area does 
 :::
 
 :::{dropdown} What does ‘100%’ wet surface area refer to?
-The outline of each waterbody corresponds to the maximum observed wet surface area of the waterbody between 1987 and 2020. In the time series, this maximum area is considered as 100% wet surface area. The 100% wet surface area does not correlate to the volume of water in a storage. For example, a waterbody can be observed as wet with just a shallow covering of water. The maximum observed wet area is available as ‘area_m2’ in the [data](./?tab=details#data-specification-table).
+The outline of each waterbody corresponds to the maximum observed wet surface area of the waterbody between 1987 and 2020. In the time series, this maximum area is considered as 100% wet surface area. The 100% wet surface area does not correlate to the volume of water in a storage. For example, a waterbody can be observed as wet with just a shallow covering of water. The maximum observed wet area is available as ‘area_m2’ in the [data](./?tab=details#data-specification-tables).
 :::
 
 :::{dropdown} Do the time series provide information on the source of water observed?
@@ -142,7 +142,7 @@ The underlying polygon dataset containing the map of over 300,000 waterbodies ac
 :::
 
 :::{dropdown} Can I load DEA Waterbodies into my GIS software?
-DEA Waterbodies has been provided as a [web mapping service](https://geoserver.dea.ga.gov.au/geoserver/dea/wms) (WMS). You can load this service into your GIS software by connecting to the service endpoint (see the metadata provided with the layer in [National Map](https://nationalmap.gov.au/) or [DEA Maps](http://maps.dea.ga.gov.au/) for details). Data available through this service can be viewed on the [data specification]((./?tab=details#data-specification-tables)) tables.
+DEA Waterbodies has been provided as a [web mapping service](https://geoserver.dea.ga.gov.au/geoserver/dea/wms) (WMS). You can load this service into your GIS software by connecting to the service endpoint (see the metadata provided with the layer in [National Map](https://nationalmap.gov.au/) or [DEA Maps](http://maps.dea.ga.gov.au/) for details). Data available through this service can be viewed on the [data specification](./?tab=details#data-specification-tables) tables.
 :::
 
 :::{dropdown} How was DEA Waterbodies produced?
@@ -150,12 +150,14 @@ The code used to produce DEA Waterbodies polygons is available [here](https://gi
 :::
 
 :::{dropdown} How do I cite DEA Waterbodies?
-DEA Waterbodies is published by Geoscience  Australia under the Creative Commons Attribution 4.0 International Licence. You can attribute the data and derivative works using the following two citations: 
+DEA Waterbodies is published by Geoscience  Australia under the [Creative Commons Attribution 4.0 International Licence](https://creativecommons.org/licenses/by/4.0/). You can attribute the data and derivative works using the following two citations: 
 
 Dataset citation: 
+
 Dunn, B., Krause, C., Newey, V., Lymburner, L., Alger, M.J., Adams, C., Yuan, F., Ma, S., Barzinpour, A., Ayers, D., McKenna, C., Schenk, L. 2024. Digital Earth Australia Waterbodies v3.0. Geoscience Australia, Canberra. [https://dx.doi.org/10.26186/148920](https://dx.doi.org/10.26186/148920) 
 
 Research paper citation: 
+
 Krause, C.E., Newey, V., Alger, M.J. and Lymburner, L., (2021). Mapping and Monitoring the Multi-Decadal Dynamics of Australia’s Open Waterbodies using Landsat. *Remote Sensing*, *13*, 1437. [https://doi.org/10.3390/rs13081437](https://doi.org/10.3390/rs13081437) 
 :::
 

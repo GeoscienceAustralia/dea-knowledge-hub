@@ -26,9 +26,9 @@ DEA Waterbodies version 3.0 key improvements include:
 
 * Specifications of supporting data are now [available](./?tab=details#data-specification-tables). 
 
-* Data will be uploaded as soon as it is received and processed. There is an approximate two-week latency in processing to an Analysis Ready Data (ARD) standard, from which the water information is produced.  
+* Data will be uploaded as soon as it is received and processed. There is an approximate two-week latency in processing of the satellite imagery to an Analysis Ready Data (ARD) standard, from which the water information is then produced.  
 
-* There have been additions to the shape file specification to support data delivery. Data specification tables have been [added](./?tab=details#data-specification-tables). 
+* There have been additions to the shapefile specification to support data delivery. Data specification tables have been [added](./?tab=details#data-specification-tables). 
 
 * Our pipeline has been upgraded to a more reliable production environment.  
 
