@@ -6,13 +6,13 @@ run:
 	make start
 
 build:
-	docker build -t dea-docs .
+	docker build -t dea-knowledge-hub .
 
 rebuild:
-	docker build --no-cache -t dea-docs .
+	docker build --no-cache -t dea-knowledge-hub .
 
 start:
-	docker run -it --rm --name dea-docs --publish 8062:8062 --volume ./docs/notebooks:/docs/notebooks --volume ./output:/output --env-file .env dea-docs \
+	docker run -it --rm --name dea-knowledge-hub --publish 8062:8062 --volume ./docs/notebooks:/docs/notebooks --volume ./output:/output --env-file .env dea-knowledge-hub \
 	| grep --invert-match --regexp "WARNING.*Document headings start at" \
 	| grep --invert-match --regexp "WARNING.*duplicate label" \
 	| grep --invert-match --regexp "^copying images..." \
@@ -21,7 +21,10 @@ start:
 	| grep --invert-match --regexp ".*GET /_images.*"
 
 ssh:
-	docker exec -it dea-docs /bin/sh
+	docker exec -it dea-knowledge-hub /bin/sh
 
 test-redirects:
 	npx mocha ./aws/cloudfront/functions/*.js
+
+clean:
+	rm -rf ./output

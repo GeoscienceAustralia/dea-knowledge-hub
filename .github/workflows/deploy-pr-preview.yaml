@@ -1,0 +1,105 @@
+name: Deploy to PR Preview
+
+on:
+  pull_request:
+    branches:
+      - main
+
+env:
+  PR_PREVIEW_PULL_REQUEST_NUMBER: ${{github.event.pull_request.number}}
+  PR_PREVIEW_SUBDOMAIN: pr-${{github.event.pull_request.number}}-preview
+  PR_PREVIEW_DEPLOY_LOG_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+  PR_PREVIEW_BUCKET: s3://khpreview.dea.ga.gov.au
+
+permissions:
+  id-token: write # For requesting the JWT used by OIDC Authentication
+  issues: write
+  pull-requests: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        python-version: ["3.11"]
+        node-version: [18.x]
+
+    steps:
+      - name: Find Comment
+        uses: peter-evans/find-comment@v3
+        id: find-comment
+        with:
+          issue-number: ${{ github.event.pull_request.number }}
+          comment-author: 'github-actions[bot]'
+          body-includes: PR Preview
+
+      - name: "Comment: PR Preview is deploying"
+        uses: peter-evans/create-or-update-comment@v4
+        with:
+          issue-number: ${{github.event.pull_request.number}}
+          comment-id: ${{ steps.find-comment.outputs.comment-id }}
+          edit-mode: replace
+          body: |
+            ## :hourglass: PR Preview is deploying ...
+
+            <table>
+                <tr>
+                    <td><strong>Deploy log:</strong></td>
+                    <td><a href="${{ env.PR_PREVIEW_DEPLOY_LOG_URL }}">View the log</a></td>
+                </tr>
+            </table>
+
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          submodules: true
+
+      - name: Pull latest from submodules
+        run: git submodule foreach git pull origin stable
+          # This doesn't update the submodule to the latest commit on the origin; therefore, you should manually do this on a semi-regular basis.
+
+      - name: Install Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: 'pip'  # Use pip to cache the installed dependencies
+
+      - name: Install dependencies
+        run: ./install-dependencies.sh
+
+      - name: Build site
+        env:
+          BUILD_MODE: pr-preview
+        run: ./build-pr-preview.sh
+
+      - name: Configure AWS credentials via OIDC
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: arn:aws:iam::538673716275:role/github-actions-dea-knowledge-hub-prs
+          aws-region: ap-southeast-2
+
+      - name: Deploy preview site
+        run: |
+          aws s3 sync --delete output "$PR_PREVIEW_BUCKET/$PR_PREVIEW_SUBDOMAIN"
+
+      - name: "Update Comment: PR Preview is ready"
+        uses: peter-evans/create-or-update-comment@v4
+        with:
+          issue-number: ${{github.event.pull_request.number}}
+          comment-id: ${{ steps.find-comment.outputs.comment-id }}
+          edit-mode: replace
+          body: |
+            ## :star2: PR Preview is ready!
+
+            <table>
+                <tr>
+                    <td><strong>Preview site:</strong></td>
+                    <td><a href="https://${{ env.PR_PREVIEW_SUBDOMAIN }}.khpreview.dea.ga.gov.au/">${{ env.PR_PREVIEW_SUBDOMAIN }}.khpreview.dea.ga.gov.au</a></td>
+                </tr>
+                <tr>
+                    <td><strong>Deploy log:</strong></td>
+                    <td><a href="${{ env.PR_PREVIEW_DEPLOY_LOG_URL }}">View the log</a></td>
+                </tr>
+            </table>
+            
