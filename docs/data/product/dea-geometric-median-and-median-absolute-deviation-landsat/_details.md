@@ -116,9 +116,9 @@ Multispectral satellite imagery (such as that provided by Landsat and Sentinel-2
 
 The annual geomedian provides an annual surface reflectance composite for any area of interest within the area covered by the DEA’s [Open Data Cube](https://www.dea.ga.gov.au/about/open-data-cube), up to the entire spatial extent available. It provides a cloud-free overview of the middle surface reflectance value for each year. It is equivariant, meaning that the linear algorithm applied to a geomedian image is equal to a geomedian applied to a set of images on which the same linear algorithm was applied. Therefore, it can be used in further analyses such as Tasseled Cap, Principal Components Analysis, and Normalised Difference Indices. It is useful in analyses requiring baseline conditions such as change detection.
 
-Surface reflectance geometric median products are derived from the DEA Surface Reflectance (SR) products and provide a representation of the 'average' of surface reflectance over the time period 'average'. This is a synthetic representation of a time series rather than an actual observed pixel. 
+Surface reflectance geometric median products are derived from the DEA Surface Reflectance (SR) products and provide a representation of the 'average' of surface reflectance over the time period. This is a synthetic representation of a time series rather than an actual observed pixel. 
 
-The geomedian (Roberts et al. 2017) is used rather than the mean because the mean can be easily distorted by extrema whereas the median is less sensitive to outliers. The geomedian is used rather than the basic median because it preserves the physical relationship between spectral measurements which the basic median does not. The geometric median is used rather than the medoid (Flood 2013) because a low noise composite cannot be provided. Note that where the provenance of each pixel in a composite is required, the medoid is the preferred method and the geomedian should not be used.
+The geomedian (Roberts et al. 2017) is used rather than the mean because the mean can be easily distorted by extrema whereas the median is less sensitive to outliers. The geomedian is used rather than the basic median because it preserves the physical relationship between spectral measurements. The geometric median is used rather than the medoid (Flood 2013) because a low noise composite cannot be provided. Note that where the provenance of each pixel in a composite is required, the medoid is the preferred method and the geomedian should not be used.
 
 ### Input Data
 
@@ -183,9 +183,9 @@ The most logical place to start thinking about any of the MADs is the Euclidean 
 Euclidean distance in three dimensions.
 :::
 
-In the case of satellite data, we are measuring the Euclidean distance between a pixel’s geomedian value and a single multispectral measurement. The number of dimensions is equal to the number of bands in the data. In the illustration below, $m$ is the geomedian value and $x$ the measured value. In real data, there will be multiple measurements over a time period, so $t$ is the timestep number, otherwise noted in equations as superscript ($t$).
+In the case of satellite data, we are measuring the Euclidean distance between a pixel’s geomedian value and a single multispectral measurement. The number of dimensions is equal to the number of bands in the data. In the illustration below, $m$ is the geomedian value and $\\mathbf{x}$ the measured value. In real data, there will be multiple measurements over a time period, so $t$ is the timestep number, otherwise noted in equations as superscript ($t$).
 
-For example, if we had three bands of data (red, green and blue), and three timesteps of data, then we can calculate the Euclidean distances as follows:
+For example, if we had three bands of data (red, green, and blue), and three timesteps of data, then we can calculate the Euclidean distances as follows:
 
 :::{figure} /_files/geomedian/bands_euclidean.JPG
 :alt: Euclidean distance in three dimensions over three timesteps.
@@ -205,7 +205,7 @@ $$
 \end{align*}
 $$
 
-Then EMAD for $N$ timesteps is given by Roberts et al, 2018, as the median of the Euclidean distances from all the timesteps.
+Then EMAD for $N$ timesteps is given by [Roberts et al, 2018](https://ieeexplore.ieee.org/abstract/document/8518312), as the median of the Euclidean distances from all the timesteps.
 
 $$
 \begin{align*}
