@@ -8,9 +8,3 @@ The DEA Geometric Median and Median Absolute Deviation products use statistical 
 All tile grid references have been changed to refer to a new origin point. Learn more in the [Version 4.0.0 changelog](./?tab=history#v4.0.0).
 :::
 
-:::{admonition} New version in development
-:class: note
-
-A new version of this product is being developed. Subscribe to the [DEA newsletter](https://www.dea.ga.gov.au/news/dea-newsletter-and-communications-archive) to be notified of product releases.
-:::
-
