@@ -2,7 +2,7 @@
 
 Satellite imagery allows us to observe the Earth with significant accuracy and detail. However, missing data — such as gaps caused by cloud cover — can make it difficult to create a complete image. In order to produce a single, complete view of a certain area, satellite data must be consolidated by stacking measurements from different points in time to create a composite image. 
 
-The Digital Earth Australia GeoMAD (Geomedian and Median Absolute Deviations) data product is a cloud-free composite of satellite data compiled for over annual period during each calendar year. 
+The Digital Earth Australia GeoMAD (Geomedian and Median Absolute Deviations) data product is a cloud-free composite of satellite data compiled over an annual period during each calendar year. 
 
 The GeoMAD product uses statistical analyses to provide information on variance in the landscape over the given year. It provides insight into the 'average' conditions observed over Australia in a given year, as well as the amount of variability experienced around the average. This product is useful for monitoring change detection, such as from cropping, urban expansion, or burnt-area mapping. 
 
