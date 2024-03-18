@@ -22,12 +22,12 @@ jobs:
   pr-preview:
     runs-on: ubuntu-latest
     if: |
-      !contains(github.event.head_commit.message, $PR_PREVIEW_SKIP_COMMAND_1) &&
-      !contains(github.event.head_commit.message, $PR_PREVIEW_SKIP_COMMAND_2) &&
-      !contains(github.event.pull_request.title, $PR_PREVIEW_SKIP_COMMAND_1) &&
-      !contains(github.event.pull_request.title, $PR_PREVIEW_SKIP_COMMAND_2) &&
-      !contains(github.event.pull_request.body, $PR_PREVIEW_SKIP_COMMAND_1) &&
-      !contains(github.event.pull_request.body, $PR_PREVIEW_SKIP_COMMAND_2)
+      !contains(github.event.head_commit.message, env.PR_PREVIEW_SKIP_COMMAND_1) &&
+      !contains(github.event.head_commit.message, env.PR_PREVIEW_SKIP_COMMAND_2) &&
+      !contains(github.event.pull_request.title, env.PR_PREVIEW_SKIP_COMMAND_1) &&
+      !contains(github.event.pull_request.title, env.PR_PREVIEW_SKIP_COMMAND_2) &&
+      !contains(github.event.pull_request.body, env.PR_PREVIEW_SKIP_COMMAND_1) &&
+      !contains(github.event.pull_request.body, env.PR_PREVIEW_SKIP_COMMAND_2)
 
     strategy:
       matrix:
