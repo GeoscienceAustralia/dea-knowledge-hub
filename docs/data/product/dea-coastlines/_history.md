@@ -27,4 +27,4 @@ In March 2023, the DEA Coastlines product [was updated to version 2.0.0](https:/
 
 ### Previous updates
 
-For a full summary of changes made in previous versions, [refer to Github](https://github.com/GeoscienceAustralia/dea-coastlines/releases/tag/v1.1.0). 
+For a full summary of changes made in previous versions, [refer to GitHub](https://github.com/GeoscienceAustralia/dea-coastlines/releases/tag/v1.1.0). 

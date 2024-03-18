@@ -4,18 +4,27 @@
 % If status = yellow, class = caution
 % If status = red, class = danger
 
-:::{admonition} DEA system status: green
-:class: tip
-All DEA systems are working as expected. There are no outstanding incidents or errors to report.
+:::{admonition} DEA system status: yellow
+:class: caution
 
-See the [DEA monitoring dashboard](https://monitoring.dea.ga.gov.au/).
+2024-03-14: We have implemented changes to improve the intermittent performance issues being experienced on DEA web services. We are continuing to work to fix this issue.
+
+See the [DEA monitoring dashboard](https://monitoring.dea.ga.gov.au/) to check the current status of DEA's services.
 :::
 
-:::{admonition} DEA Sentinel-2 contiguity fix: ongoing
+:::{admonition} DEA Sentinel-2 contiguity fix: complete
 :class: note
 
-See [alert dated 2024-01-10](./#sentinel-2-contiguity-fix-reprocessing-commenced) for more details.
+See alert dated 2024-02-26 for more details.
 :::
+
+## 2024-02-26: Sentinel-2 contiguity fix reprocessing complete
+
+Learn more in the [Sentinel-2A Surface Reflectance NBART](https://knowledge.dea.ga.gov.au/data/product/dea-surface-reflectance-nbart-sentinel-2a-msi/?tab=history#changelog) and [Sentinel-2B Surface Reflectance NBART](https://knowledge.dea.ga.gov.au/data/product/dea-surface-reflectance-nbart-sentinel-2b-msi/?tab=history#changelog) changelogs.
+
+## 2024-02-20: DEA Notebooks update
+
+A minor update to the DEA Tools package that includes updates to tide modelling and parallel processing functions. It also adds a new `load_reproject` function to the `datahandling` module which allows reading and reprojecting external raster data. For more detail, see the [dea-notebooks 0.3.1 release notes](https://github.com/GeoscienceAustralia/dea-notebooks/releases/tag/0.3.1).
 
 ## 2024-02-20: New external land use and bathymetry datasets added to DEA Sandbox
 
@@ -52,23 +61,4 @@ Affected products:
 
 See [DEA Tech alert email](https://communication.ga.gov.au/link/id/zzzz659df9f7f306b556Pzzzz61de67bd94bfe861/page.html) for more information. 
 Click [here](https://communication.ga.gov.au/link/id/zzzz659de7f165049054Pzzzz61de67bd94bfe861/page.html) to subscribe to DEA Tech alert emails.
-
-## 2023-11: Release of version 0.3.0 of DEA Tools
-
-Major update to the [DEA Tools Python package](https://docs.dea.ga.gov.au/notebooks/Tools/), including new tools for:
-
-* [pansharpening Landsat data](https://docs.dea.ga.gov.au/notebooks/How_to_guides/Pansharpening.html)
-* [tide modelling](https://docs.dea.ga.gov.au/notebooks/How_to_guides/Tidal_modelling.html)
-* [sunglint masking](https://docs.dea.ga.gov.au/notebooks/How_to_guides/Sunglint_masking.html)
-* [interactive mapping](https://docs.dea.ga.gov.au/notebooks/Interactive_apps/README.html)
-* [spatial operations](https://docs.dea.ga.gov.au/notebooks/Tools/gen/dea_tools.spatial.html)
-
-In addition, this update includes 14 new and updated Jupyter notebooks. See [version 0.3.0 release notes](https://github.com/GeoscienceAustralia/dea-notebooks/releases/tag/0.3.0) for more detail.
-
-## 2023-08: New notebooks, features and documentation
-
-* Added a new [DEA Wetlands Insight Tool notebook](https://docs.dea.ga.gov.au/notebooks/DEA_products/DEA_Wetlands_Insight_Tool.html)
-* Notebooks for [loading data from Microsoft Planetary Computer](https://docs.dea.ga.gov.au/notebooks/How_to_guides/Planetary_computer.html)
-* Enhanced [DEA Tools Python Package API documentation](https://docs.dea.ga.gov.au/notebooks/Tools/)
-* Improved interactive widget functionality for satellite image export and animations
 

@@ -10,7 +10,7 @@ RUN mkdir -p /setup
 RUN mkdir -p /docs
 RUN mkdir -p /output
 
-COPY requirements.txt /setup
+COPY docs/requirements.txt /setup
 RUN pip install -r /setup/requirements.txt
 
 COPY docs /docs
