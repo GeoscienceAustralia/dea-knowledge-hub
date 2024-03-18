@@ -144,7 +144,7 @@ Figure 3: Coastal change hotspots from DEA Coastlines visualised on the [interac
 ## Software
 
 The following software was used to generate this product: 
-* [DEA Coastlines Github code](https://github.com/GeoscienceAustralia/dea-coastlines)
+* [DEA Coastlines GitHub code](https://github.com/GeoscienceAustralia/dea-coastlines)
 * [OpenDataCube](https://github.com/opendatacube)
 * [FES2014 global tide model](https://www.aviso.altimetry.fr/en/data/products/auxiliary-products/global-tide-fes/description-fes2014.html)
 

@@ -1,3 +1,6 @@
+# See the Product metadata fields documentation:
+# https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/product_metadata_fields.html
+
 # Overview
 
 title: DEA Mangrove Canopy Cover (Landsat)
@@ -12,7 +15,7 @@ spatial_data_type: Raster
 time_span:
   start: 1987
   end: 2022
-update_frequency: Annually
+update_frequency: Yearly
 next_update: null
 product_ids:
   - ga_ls_mangrove_cover_cyear_3

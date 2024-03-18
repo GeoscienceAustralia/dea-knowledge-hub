@@ -37,7 +37,7 @@ We used the Tasseled Cap transforms described in Crist et al. (1985).
 
 ## Lineage
 
-The lineage of this product is inherited from its sole input, the terrain corrected surface reflectance product [Surface Reflectance NBART Collection 3 (Landsat)](https://docs.dea.ga.gov.au/data/category/dea-surface-reflectance/).
+The lineage of this product is inherited from its sole input, the terrain corrected surface reflectance product [Surface Reflectance NBART Collection 3 (Landsat)](https://knowledge.dea.ga.gov.au/data/category/dea-surface-reflectance/).
 
 % ## Processing steps
 

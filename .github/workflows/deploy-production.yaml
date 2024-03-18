@@ -3,7 +3,7 @@ name: Deploy to Production
 on:
   workflow_dispatch:
   repository_dispatch:
-    types: [republish-docs] # Triggered from the dea-notebooks repo
+    types: [republish-docs] # Triggered by the dea-notebooks repo - https://github.com/GeoscienceAustralia/dea-notebooks/blob/develop/.github/workflows/trigger_docs.yaml
   push:
     branches: [main]
 
@@ -12,25 +12,30 @@ permissions:
 
 jobs:
   publish:
-    name: Publish
     runs-on: ubuntu-latest
+
     strategy:
       matrix:
         python-version: ["3.11"]
         node-version: [18.x]
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
           submodules: true
 
+      - name: Pull latest from submodules
+        run: git submodule foreach git pull origin stable
+          # This doesn't update the submodule to the latest commit on the origin; therefore, you should manually do this on a semi-regular basis.
+
       - name: Install Python ${{ matrix.python-version }}
         uses: actions/setup-python@v4
         with:
           python-version: ${{ matrix.python-version }}
 
-      - name: Install requirements
-        run: ./install-production.sh
+      - name: Install dependencies
+        run: ./install-dependencies.sh
 
       - name: Build site
         env:
@@ -41,7 +46,7 @@ jobs:
         if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
         uses: aws-actions/configure-aws-credentials@v2
         with:
-          role-to-assume: arn:aws:iam::538673716275:role/github-actions-dea-docs
+          role-to-assume: arn:aws:iam::538673716275:role/github-actions-dea-knowledge-hub
           aws-region: ap-southeast-2
 
       - name: Deploy site

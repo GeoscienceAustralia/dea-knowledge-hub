@@ -4,19 +4,19 @@ sys.path.append(os.path.abspath("./_ext"))
 sys.path.insert(0, os.path.abspath('.'))
 from _modules import utilities
 from _modules import mock_imports
-from _modules import deploy_banner
+from _modules import pr_preview
 
 environment = {
     "build_mode": os.environ.get("BUILD_MODE"),
     "git_branch": os.environ.get("BRANCH"),
     "local_enable_redirects": os.environ.get("LOCAL_ENABLE_REDIRECTS"),
     "local_enable_tags": os.environ.get("LOCAL_ENABLE_TAGS"),
+    "pr_preview_subdomain": os.environ.get("PR_PREVIEW_SUBDOMAIN"),
 }
 
 project = "DEA Knowledge Hub"
 copyright = f"{utilities.current_year()}, Geoscience Australia"
 author = "Geoscience Australia"
-version = "0.1"
 
 html_static_path = ["_static", "_files"]
 templates_path = ["_layout", "_templates"]
@@ -49,8 +49,8 @@ html_favicon = "_static/favicons/dea-favicon.ico"
 html_theme = 'pydata_sphinx_theme'
 language = "en"
 
-if environment["build_mode"] == "production": html_baseurl = "https://docs.dea.ga.gov.au/"
-elif environment["build_mode"] == "demo": html_baseurl = f"https://{environment['git_branch']}--dea-docs.netlify.app/"
+if environment["build_mode"] == "production": html_baseurl = "https://knowledge.dea.ga.gov.au/"
+elif environment["build_mode"] == "pr-preview": html_baseurl = f"https://{environment['pr_preview_subdomain']}.khpreview.dea.ga.gov.au/"
 else: html_baseurl = ""
 
 html_permalinks = False
@@ -88,13 +88,13 @@ nbsphinx_execute = "never"
 external_toc_path = "table_of_contents.yaml"
 
 if (
-    environment["build_mode"] in ["demo", "production"]
+    environment["build_mode"] in ["pr-preview", "production"]
     or environment["local_enable_redirects"] == "Yes"
 ): rediraffe_redirects = utilities.source_redirects("_redirects/*.txt")
 
 sitemap_url_scheme = "{link}"
 
-ogp_site_url = "https://docs.dea.ga.gov.au/"
+ogp_site_url = "https://knowledge.dea.ga.gov.au/"
 ogp_image = "/_files/logos/dea-logo-inline.png"
 
 sys.path.insert(0, os.path.abspath("./notebooks/Tools"))
@@ -103,7 +103,7 @@ autodoc_default_options = {
     "members": True,
 }
 autodoc_mock_imports = mock_imports.mock_imports
-autosummary_mock_imports = autodoc_mock_imports
+autosummary_mock_imports = mock_imports.mock_imports
 
 napoleon_google_docstring = False
 napoleon_numpy_docstring = True
@@ -113,7 +113,7 @@ notfound_pagename = "404-not-found"
 notfound_urls_prefix = ""
 
 tags_create_tags = (
-    environment["build_mode"] in ["demo", "production"]
+    environment["build_mode"] in ["pr-preview", "production"]
     or environment["local_enable_tags"] == "Yes"
 )
 
@@ -142,8 +142,8 @@ html_theme_options = {
     },
 }
 
-if environment["build_mode"] == "demo":
-    html_theme_options["announcement"] = deploy_banner.banner()
+if environment["build_mode"] == "pr-preview":
+    html_theme_options["announcement"] = pr_preview.banner()
 
 html_context = {
     "default_mode": "light",
@@ -156,4 +156,3 @@ if environment["build_mode"] == "production": html_context["google_analytics_ga4
 suppress_warnings = [
     # "etoc.toctree"
 ]
-
