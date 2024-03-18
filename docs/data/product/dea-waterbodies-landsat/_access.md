@@ -33,8 +33,8 @@ On the map, you can click any identified waterbody to view more information abou
 3) The time series chart is composed of dots representing valid observations in the data set, and straight lines are drawn between these dots.
 
 4) There are two time series available for each waterbody, and you can choose to view either or both. In the left sidebar, enable or disable the checkboxes for Pc Wet and Px Wet:
-    * **Pc Wet** — The ‘percentage of total surface area observed as wet’. This is the percentage of the total surface area of the waterbody that has been classified as ‘wet’ for each time step. (Note that this is not a volume.)
-	* **Px Wet** — The ‘Wet Pixel Count’. This is the total number of pixels that have been classified as ‘wet’ for each time step. This value is useful if you need to calculate an area of wet pixels, since each pixel is 30 m × 30 m.
+    * **Pc Wet** — The ‘percentage of total surface area observed as wet’. This is the percentage of the total surface area of the waterbody that has been classified as ‘wet’ for each time step. (Note that this is not a volume).
+    * **Px Wet** — The ‘Wet Pixel Count’. This is the total number of pixels that have been classified as ‘wet’ for each time step. This value is useful if you need to calculate an area of wet pixels, since each pixel is 30 m × 30 m.
 
 ![DEA Maps loaded with DEA Waterbodies and showing Feature Information](/_files/dea-waterbodies/DEA_Waterbodies_v3.0_user-guide.PNG)
 
