@@ -16,7 +16,7 @@ The automatic cloud-masking algorithm used in this analysis can misclassify brig
 
 Some larger salt lakes in Australia have very few records currently available due to this issue. If less than 90% of the total waterbody is observed on any one day, due to cloud cover or missing data, then that observation is marked as a missing value. For larger bodies, which may cross multiple swath boundaries or suffer from misclassifications, this can be problematic. 
 
-For a full discussion of the limitations and accuracy of WO, see [Mueller et al. (2016)](https://doi.org/10.1016/j.rse.2015.11.003).
+For a full discussion of the limitations and accuracy of WO, see [Mueller et al. 2016](https://doi.org/10.1016/j.rse.2015.11.003).
 
 % ## Quality assurance
 

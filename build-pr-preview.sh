@@ -1,10 +1,6 @@
 #!/bin/bash
 
-python -m pip install -r ./requirements.txt
-
-npm install -g sass
-
-apt-get install -y pandoc
+set -eox pipefail
 
 mkdir -p ./output
 

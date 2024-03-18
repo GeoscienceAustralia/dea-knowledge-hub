@@ -20,7 +20,7 @@ To view and access the DEA Land Cover interactively:
 
 #### Loading with Python in DEA Sandbox
 
-DEA Sandbox allows you to explore DEA’s Earth Observation datasets in a JupyterLab environment. To sign up for DEA Sandbox see the [user guide](https://docs.dea.ga.gov.au/setup/Sandbox/sandbox.html)
+DEA Sandbox allows you to explore DEA’s Earth Observation datasets in a JupyterLab environment. To sign up for DEA Sandbox see the [user guide](https://knowledge.dea.ga.gov.au/setup/Sandbox/sandbox.html)
 
 Once you have access, the **DEA\_Land\_Cover** notebook is in the **DEA\_datasets** directory on the Sandbox. This notebook will walk you through loading and visualising the DEA Land Cover data.
 

@@ -3,4 +3,4 @@
 	url = https://github.com/GeoscienceAustralia/dea-notebooks.git
 	branch = stable
 	shallow = true
-	ignore = untracked
+	ignore = dirty
