@@ -47,7 +47,7 @@ On the map, you can click any identified waterbody to view more information abou
 
 See the [Frequently Asked Questions](./?tab=faqs). 
 
-If you need more help, contact <a href="mailto:Earth.Observation@ga.gov.au">Earth.Observation@ga.gov.au</a>. 
+If you need more help, contact <a href="mailto:Earth.Observation@ga.gov.au">earth.observation@ga.gov.au</a>. 
 
 :::
 
