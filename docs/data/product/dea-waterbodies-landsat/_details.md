@@ -24,7 +24,7 @@ The DEA Waterbodies product is comprised of two key components:
 * **Mapped waterbody outlines** — a polygon dataset of the programmatically generated waterbody outlines.
 * **Surface area timeseries** — a CSV timeseries for each polygon of its surface area over time within the mapped polygon (for every available, clear Landsat observation).
 
-The code used in the development of this product is available on [GitHub](https://github.com/GeoscienceAustralia/dea-conflux).
+The code used in the development of this product is available on the [dea-conflux GitHub repository](https://github.com/GeoscienceAustralia/dea-conflux).
 
 ### Data Specification Tables
 
@@ -37,19 +37,86 @@ The DEA Waterbodies v3.0 shapefile and CSV contain the following data.
 
 #### Data specification table for DEA Waterbodies 3.0 Shapefile
 
-|Field name |Description |Update Frequency |Data Availability*** |Status^ |Type |
-|:----|:----|:----|:----|:----|:----|
-|uid |A unique identifier determined from waterbody location and data version |Once per version |Shapefile, DEA Maps, WMS, csv |Existing |String |
-|perimetr_m |Perimeter of the defined waterbody (m) |Once per version |Shapefile, DEA Maps, WMS |Existing |Real |
-|area_m2 |Area of the defined waterbody (m2) |Once per version |Shapefile, DEA Maps, WMS |Existing |Real |
-|dt_wetobs |The last date any water was observed. This is subject to the satellite having clear visibility of the waterbody. The satellite must view 80% of a waterbody to have a valid wet observation recorded.   |As scene input data is available* |DEA Maps, WMS |New |DateTime (UTC) |
-|wet_sa_m2 |The total estimated wet surface area calculated from the last clear satellite observation of the waterbody. Calculated as the wet percentage (pc_wet, see timeseries) multiplied by the waterbody area (area_m2) divided by 100.** Any area estimates should be compared to additional data for verification. |As scene input data is available* |DEA Maps, WMS |New |Real |
-|dt_satpass |The most recent date that the satellite passed over the waterbody. |As scene input data is available* |DEA Maps, WMS |New |DateTime (UTC) |
-|dt_updated |The date that the dt_wetobs, wet_sa_m2 and dt_satpass attributes were last updated. |As scene input data is available* |DEA Maps, WMS |New |DateTime (UTC) |
-|dt_created |The date the polygons were created |Once per version |Shapefile, DEA Maps, WMS |New |DateTime (UTC) |
-|meta_url |The metadata url for this dataset |Once per version |Shapefile, DEA Maps, WMS |New |String |
-|timeseries |The Amazon S3 location of the wet percentage time series for this waterbody. The timeseries data is stored in a CSV file with the following columns: </br></br> (DateTime UTC) – date of observation </br></br> pc_wet (Float) – percentage of the waterbody recorded as wet (0-100) </br></br> px_wet (Integer) – number of 30m Landsat pixels recorded as wet  |Value is static, but the csv contents are updated as scene input data becomes available* |Shapefile, DEA Maps, WMS |Existing |String |
+:::{list-table}
+:header-rows: 1
 
+* - Field name
+  - Description
+  - Update frequency
+  - Data availability***
+  - Status^
+  - Type
+
+* - `uid`
+  - A unique identifier determined from waterbody location and data version
+  - Once per version
+  - Shapefile, DEA Maps, WMS, CSV
+  - Existing
+  - String
+
+* - `perimetr_m`
+  - Perimeter of the defined waterbody (m)
+  - Once per version
+  - Shapefile, DEA Maps, WMS
+  - Existing
+  - Real
+
+* - `area_m2`
+  - Area of the defined waterbody (m<sup>2</sup>)
+  - Once per version
+  - Shapefile, DEA Maps, WMS
+  - Existing
+  - Real
+
+* - `dt_wetobs`
+  - The last date any water was observed. This is subject to the satellite having clear visibility of the waterbody. The satellite must view 80% of a waterbody to have a valid wet observation recorded.
+  - As scene input data is available*
+  - DEA Maps, WMS
+  - New
+  - DateTime (UTC)
+
+* - `wet_sa_m2`
+  - The total estimated wet surface area calculated from the last clear satellite observation of the waterbody. Calculated as the wet percentage (`pc_wet`, see timeseries) multiplied by the waterbody area (`area_m2`) divided by 100.** Any area estimates should be compared to additional data for verification.
+  - As scene input data is available*
+  - DEA Maps, WMS
+  - New
+  - Real
+
+* - `dt_satpass`
+  - The most recent date that the satellite passed over the waterbody.
+  - As scene input data is available*
+  - DEA Maps, WMS
+  - New
+  - DateTime (UTC)
+
+* - `dt_updated`
+  - The date that the `dt_wetobs`, `wet_sa_m2` and `dt_satpass` attributes were last updated.
+  - As scene input data is available*
+  - DEA Maps, WMS
+  - New
+  - DateTime (UTC)
+
+* - `dt_created`
+  - The date the polygons were created
+  - Once per version
+  - Shapefile, DEA Maps, WMS
+  - New
+  - DateTime (UTC)
+
+* - `meta_url`
+  - The metadata URL for this dataset
+  - Once per version
+  - Shapefile, DEA Maps, WMS
+  - New
+  - String
+
+* - `timeseries`
+  - The Amazon S3 location of the wet percentage time series for this waterbody. The timeseries data is stored in a CSV file with the following columns: </br></br> (DateTime UTC) – date of observation </br></br> pc_wet (Float) – percentage of the waterbody recorded as wet (0-100) </br></br> px_wet (Integer) – number of 30m Landsat pixels recorded as wet
+  - Value is static, but the CSV contents are updated as scene input data becomes available*
+  - Shapefile, DEA Maps, WMS
+  - Existing
+  - String
+:::
 
 #### Data specification table for DEA Waterbodies 3.0 Timeseries CSV
 
