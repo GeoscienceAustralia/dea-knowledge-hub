@@ -48,21 +48,21 @@ The DEA Waterbodies v3.0 shapefile and CSV contain the following data.
   - Type
 
 * - `uid`
-  - A unique identifier determined from waterbody location and data version
+  - A unique identifier determined from waterbody location and data version.
   - Once per version
   - Shapefile, DEA Maps, WMS, CSV
   - Existing
   - String
 
 * - `perimetr_m`
-  - Perimeter of the defined waterbody (m)
+  - Perimeter of the defined waterbody (m).
   - Once per version
   - Shapefile, DEA Maps, WMS
   - Existing
   - Real
 
 * - `area_m2`
-  - Area of the defined waterbody (m<sup>2</sup>)
+  - Area of the defined waterbody (m<sup>2</sup>).
   - Once per version
   - Shapefile, DEA Maps, WMS
   - Existing
@@ -70,21 +70,21 @@ The DEA Waterbodies v3.0 shapefile and CSV contain the following data.
 
 * - `dt_wetobs`
   - The last date any water was observed. This is subject to the satellite having clear visibility of the waterbody. The satellite must view 80% of a waterbody to have a valid wet observation recorded.
-  - As scene input data is available*
+  - As scene input data is available\*
   - DEA Maps, WMS
   - New
   - DateTime (UTC)
 
 * - `wet_sa_m2`
-  - The total estimated wet surface area calculated from the last clear satellite observation of the waterbody. Calculated as the wet percentage (`pc_wet`, see timeseries) multiplied by the waterbody area (`area_m2`) divided by 100.** Any area estimates should be compared to additional data for verification.
-  - As scene input data is available*
+  - The total estimated wet surface area calculated from the last clear satellite observation of the waterbody. Calculated as the wet percentage (`pc_wet`, see timeseries) multiplied by the waterbody area (`area_m2`) divided by 100.\*\* Any area estimates should be compared to additional data for verification.
+  - As scene input data is available\*
   - DEA Maps, WMS
   - New
   - Real
 
 * - `dt_satpass`
   - The most recent date that the satellite passed over the waterbody.
-  - As scene input data is available*
+  - As scene input data is available\*
   - DEA Maps, WMS
   - New
   - DateTime (UTC)
@@ -97,21 +97,21 @@ The DEA Waterbodies v3.0 shapefile and CSV contain the following data.
   - DateTime (UTC)
 
 * - `dt_created`
-  - The date the polygons were created
+  - The date the polygons were created.
   - Once per version
   - Shapefile, DEA Maps, WMS
   - New
   - DateTime (UTC)
 
 * - `meta_url`
-  - The metadata URL for this dataset
+  - The metadata URL for this dataset.
   - Once per version
   - Shapefile, DEA Maps, WMS
   - New
   - String
 
 * - `timeseries`
-  - The Amazon S3 location of the wet percentage time series for this waterbody. The timeseries data is stored in a CSV file with the following columns: </br></br> (DateTime UTC) &mdash; The date of observation </br></br> `pc_wet` (Float) – The percentage of the waterbody recorded as wet (0&ndash;100) </br></br> `px_wet` (Integer) &mdash; The number of 30m Landsat pixels recorded as wet
+  - The Amazon S3 location of the wet percentage time series for this waterbody. The timeseries data is stored in a CSV file with the following columns: </br></br> (DateTime UTC) &mdash; The date of observation </br></br> `pc_wet` (Float) – The percentage of the waterbody recorded as wet (0&ndash;100) </br></br> `px_wet` (Integer) &mdash; The number of 30m Landsat pixels recorded as wet.
   - Value is static, but the CSV contents are updated as scene input data becomes available*
   - Shapefile, DEA Maps, WMS
   - Existing
@@ -132,33 +132,35 @@ The DEA Waterbodies v3.0 shapefile and CSV contain the following data.
 
 * - `date`
   - Date of observation (UTC)
-  - Value is static, but the CSV contents are updated as scene input data becomes available*
+  - Value is static, but the CSV contents are updated as scene input data becomes available.\*
   - DEA Maps, CSV
   - Existing
   - DateTime (UTC)
 
 * - `pc_wet`
   - Percentage of the waterbody recorded as wet (0&ndash;100)
-  - Value is static, but the CSV contents are updated as scene input data becomes available*
+  - Value is static, but the CSV contents are updated as scene input data becomes available.\*
   - DEA Maps, CSV
   - Existing
   - Float
 
 * -  `px_wet`
   - Number of 30m Landsat pixels recorded as wet
-  - Value is static, but the CSV contents are updated as scene input data becomes available*
+  - Value is static, but the CSV contents are updated as scene input data becomes available.\*
   - DEA Maps, CSV
   - Existing
   - Integer
 :::
 
-\* Scene data is available approximately two weeks from the satellite overpass for the Water Observations feature layers used to process Waterbodies. Waterbodies scenes are processed as Water Observations feature layer scenes become available in the DEA datacube. It takes approximately 10 minutes to process Waterbodies per scene.  One Landsat scene measures approximately 190 x 180 km. <https://www.nasa.gov/wp-content/uploads/2015/04/landsat_9_fast_facts.pdf>
+#### Notes
 
-\*\* Larger waterbodies are easier to detect and smaller or narrower waterbodies are harder to detect. Area estimates should be compared to additional data for verification. 
+\* Scene data is available approximately two weeks from the satellite overpass for the Water Observations feature layers used to process Waterbodies. Waterbodies scenes are processed as Water Observations feature layer scenes become available in the DEA datacube. It takes approximately 10 minutes to process Waterbodies per scene.  One Landsat scene measures approximately 190 x 180 km. Source: [Landsat 9 Fast Facts, NASA](https://www.nasa.gov/wp-content/uploads/2015/04/landsat_9_fast_facts.pdf).
 
-\*\*\* Data fields empty in shapefile (`dt_wetobs`, `wet_sa_m2`, `dt_satpass`, `dt_updated`) are available for the latest relevant observations only via DEA Maps and WMS 
+\*\* Larger waterbodies are easier to detect and smaller or narrower waterbodies are harder to detect. Area estimates should be compared to additional data for verification.
 
-\^ Data fields introduced in v3.0 are ‘New’
+\*\*\* Data fields empty in shapefile (`dt_wetobs`, `wet_sa_m2`, `dt_satpass`, `dt_updated`) are available for the latest relevant observations only via DEA Maps and WMS.
+
+\^ Data fields introduced in v3.0.0 are ‘New’.
 
 ## Lineage
 
