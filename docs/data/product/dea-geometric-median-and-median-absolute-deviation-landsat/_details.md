@@ -100,7 +100,7 @@ An **annual geometric median** is a high-dimensional median calculated from the 
 :::{figure} /_files/geomedian/geomedian-composite_techspecs.jpg
 :alt: Geomedian algorithm diagram
 
-Each band adds a dimension to the geomedian calculation. For a three-band dataset, such as the RGB dataset shown in this figure, each point can be represented on a three-dimensional scatter plot. The geomedian is the minimised ‘sum of distances’ between all of these points. (Source: [Digital Earth Africa &mdash; Introduction to the Digital Earth Africa Sandbox](https://learn.digitalearthafrica.org/courses/course-v1:digitalearthafrica+DEA101+2021/))
+Each band adds a dimension to the geomedian calculation. For a three-band dataset &mdash; such as the RGB dataset shown in this figure &mdash; each point can be represented on a three-dimensional scatter plot. The geomedian is the minimised ‘sum of distances’ between all of these points. (Source: [Digital Earth Africa &mdash; Introduction to the Digital Earth Africa Sandbox](https://learn.digitalearthafrica.org/courses/course-v1:digitalearthafrica+DEA101+2021/))
 :::
 
 :::{dropdown} Geometric Median Compositing Algorithm
