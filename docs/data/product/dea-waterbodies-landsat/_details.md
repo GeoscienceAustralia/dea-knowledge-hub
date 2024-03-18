@@ -111,7 +111,7 @@ The DEA Waterbodies v3.0 shapefile and CSV contain the following data.
   - String
 
 * - `timeseries`
-  - The Amazon S3 location of the wet percentage time series for this waterbody. The timeseries data is stored in a CSV file with the following columns: </br></br> (DateTime UTC) – date of observation </br></br> pc_wet (Float) – percentage of the waterbody recorded as wet (0-100) </br></br> px_wet (Integer) – number of 30m Landsat pixels recorded as wet
+  - The Amazon S3 location of the wet percentage time series for this waterbody. The timeseries data is stored in a CSV file with the following columns: </br></br> (DateTime UTC) &mdash; The date of observation </br></br> `pc_wet` (Float) – The percentage of the waterbody recorded as wet (0&ndash;100) </br></br> `px_wet` (Integer) &mdash; The number of 30m Landsat pixels recorded as wet
   - Value is static, but the CSV contents are updated as scene input data becomes available*
   - Shapefile, DEA Maps, WMS
   - Existing
@@ -120,13 +120,39 @@ The DEA Waterbodies v3.0 shapefile and CSV contain the following data.
 
 #### Data specification table for DEA Waterbodies 3.0 Timeseries CSV
 
-|Field name |Description |Update Frequency |Data Availability |Status |Type |
-|:----|:----|:----|:----|:----|:----|
-|date |date of observation (UTC) |Value is static, but the csv contents are updated as scene input data becomes available* |DEA Maps, csv |Existing |DateTime (UTC) |
-|pc_wet |percentage of the waterbody recorded as wet (0-100) |Value is static, but the csv contents are updated as scene input data becomes available* |DEA Maps, csv |Existing |Float |
-|px_wet |number of 30m Landsat pixels recorded as wet |Value is static, but the csv contents are updated as scene input data becomes available* |DEA Maps, csv |Existing |Integer |
+:::{list-table}
+:header-rows: 1
 
-</p><p><small>* Scene data is available approximately two weeks from the satellite overpass for the Water Observations feature layers used to process Waterbodies. Waterbodies scenes are processed as Water Observations feature layer scenes become available in the DEA datacube. It takes approximately ten minutes to process Waterbodies per scene.  One Landsat scene measures approximately 190 x 180 km https://www.nasa.gov/wp-content/uploads/2015/04/landsat_9_fast_facts.pdf  
+* - Field name
+  - Description
+  - Update frequency
+  - Data availability
+  - Status
+  - Type
+
+* - `date`
+  - date of observation (UTC)
+  - Value is static, but the CSV contents are updated as scene input data becomes available*
+  - DEA Maps, CSV
+  - Existing
+  - DateTime (UTC)
+
+* - `pc_wet`
+  - percentage of the waterbody recorded as wet (0&ndash;100)
+  - Value is static, but the CSV contents are updated as scene input data becomes available*
+  - DEA Maps, CSV
+  - Existing
+  - Float
+
+* -  `px_wet`
+  - number of 30m Landsat pixels recorded as wet
+  - Value is static, but the CSV contents are updated as scene input data becomes available*
+  - DEA Maps, CSV
+  - Existing
+  - Integer
+:::
+
+</p><p><small>* Scene data is available approximately two weeks from the satellite overpass for the Water Observations feature layers used to process Waterbodies. Waterbodies scenes are processed as Water Observations feature layer scenes become available in the DEA datacube. It takes approximately ten minutes to process Waterbodies per scene.  One Landsat scene measures approximately 190 x 180 km https://www.nasa.gov/wp-content/uploads/2015/04/landsat_9_fast_facts.pdf
 
 ** Larger waterbodies are easier to detect and smaller or narrower waterbodies are harder to detect. Area estimates should be compared to additional data for verification. 
 
