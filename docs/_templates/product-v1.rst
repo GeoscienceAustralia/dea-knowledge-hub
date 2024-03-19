@@ -81,7 +81,7 @@
 
    {% if not is_latest_version %}
    .. admonition:: Old version
-      :class: danger
+      :class: note
    
       This is an old version of the product. See the `latest version <{{ data.latest_version_link }}>`_.
 
