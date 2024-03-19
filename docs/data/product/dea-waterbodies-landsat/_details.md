@@ -111,7 +111,7 @@ The DEA Waterbodies v3.0 shapefile and CSV contain the following data.
   - String
 
 * - `timeseries`
-  - The Amazon S3 location of the wet percentage time series for this waterbody. The timeseries data is stored in a CSV file with the following columns: </br></br> (DateTime UTC) &mdash; The date of observation </br></br> `pc_wet` (Float) – The percentage of the waterbody recorded as wet (0&ndash;100) </br></br> `px_wet` (Integer) &mdash; The number of 30m Landsat pixels recorded as wet.
+  - The Amazon S3 location of the wet percentage time series for this waterbody. The timeseries data is stored in a CSV file with the following columns:<br />(DateTime UTC) &mdash; The date of observation <br />`pc_wet` (Float) – The percentage of the waterbody recorded as wet (0&ndash;100)<br />`px_wet` (Integer) &mdash; The number of 30m Landsat pixels recorded as wet.
   - Value is static, but the CSV contents are updated as scene input data becomes available*
   - Shapefile, DEA Maps, WMS
   - Existing
