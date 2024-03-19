@@ -164,9 +164,11 @@ The DEA Waterbodies v3.0 shapefile and CSV contain the following data.
 
 % ## Lineage
 
-## Processing steps
+## Lineage 
 
 This product is based on [DEA Water Observations](/data/product/dea-water-observations-landsat/) (WO) which it extends with reanalysis and mapping.
+
+### Producing DEA Waterbodies polygons
 
 DEA Waterbodies is a polygon-based view of WO, derived through the automatic processing of WO to identify the outlines of persistent waterbodies across Australia. 
 
