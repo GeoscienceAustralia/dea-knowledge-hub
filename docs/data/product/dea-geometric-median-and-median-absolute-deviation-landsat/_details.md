@@ -107,7 +107,7 @@ Each band adds a dimension to the geomedian calculation. For a three-band datase
 As shown in the figure above, this algorithm is calculated as follows.
 
 1. A geometric median composite is applied individually to every pixel stack.
-1. Pixels are represented as vectors distributed in a high-dimensional space. Each value (like red, green, blue, or nil) has a component in this space.
+1. Pixels are represented as vectors distributed in a high-dimensional space. Each value (like red, green, blue, or NIR) has a component in this space. (NIR means Near-Infra Red.)
 1. By calculating a point that minimises the distance between it and all other points (pixels), this creates a representative pixel of all observations in the pixel stack.
 1. The generated pixel is added to the final composite product.
 :::
