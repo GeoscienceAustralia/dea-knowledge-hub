@@ -1,7 +1,7 @@
 ## Frequently asked questions
 
 Here you will find answers to the most frequently asked questions about this product.
-If you need more help, please contact <a href="mailto:Earth.Observation@ga.gov.au">Earth.Observation@ga.gov.au</a>.
+If you need more help, please contact <a href="mailto:earth.observation@ga.gov.au">earth.observation@ga.gov.au</a>.
 
 
 ### About the waterbody graphs
@@ -100,7 +100,7 @@ There are a few reasons why a waterbody might be missing:
 * The water in the waterbody does not look like water: very sediment-filled water, particularly in northern Australia, is often misclassified as land.
 * It may be new: newly constructed waterbodies will not be included in this product as they will not have been observed as wet at least 10% of the time between 1987 and 2020. Waterbodies that have been constructed or modified after 2016 may not be captured within this tool. Future updates of this product should capture newer waterbodies.
 
-If there is a waterbody missing from DEA Waterbodies that you would like to report, please contact us at <a href="Earth.Observation@ga.gov.au">dea@ga.gov.au</a>
+If there is a waterbody missing from DEA Waterbodies that you would like to report, please contact us at <a href="earth.observation@ga.gov.au">dea@ga.gov.au</a>
 
 Reports of missing waterbodies may assist us during quality checking of future product releases.
 :::
@@ -168,6 +168,6 @@ The update from version 2 to version 3.0 of the DEA Waterbodies product and serv
 :::
 
 :::{dropdown} How do I get more information or provide feedback on DEA Waterbodies?
-Contact us at <a href="mailto:Earth.Observation@ga.gov.au">Earth.Observation@ga.gov.au</a>
+Contact us at <a href="mailto:earth.observation@ga.gov.au">earth.observation@ga.gov.au</a>
 :::
 
