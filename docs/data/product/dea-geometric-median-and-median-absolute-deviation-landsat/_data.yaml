@@ -14,7 +14,7 @@ product_type: Derivative
 spatial_data_type: Raster
 time_span:
   start: 1986
-  end: 2023
+  end: Present
 update_frequency: Annually
 next_update: 2025
 product_ids:
