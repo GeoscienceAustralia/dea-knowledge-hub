@@ -14,7 +14,7 @@ product_type: Derivative
 spatial_data_type: Raster
 time_span:
   start: 1986
-  end: present
+  end: Present
 update_frequency: Periodically
 next_update: null
 product_ids:
