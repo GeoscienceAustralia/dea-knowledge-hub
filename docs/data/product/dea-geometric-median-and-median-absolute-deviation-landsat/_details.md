@@ -112,7 +112,7 @@ As shown in the figure above, this algorithm is calculated as follows.
 
 Multispectral satellite imagery (such as that provided by Landsat and Sentinel-2) consists of multiple measurements per pixel — one for each spectral band. In order to create a meaningful median, a median pixel must take all concurrent spectral measurements into account simultaneously as a multi-dimensional set (rather than each measurement independently as with a simple median). The geomedian is a high-dimensional statistic which calculates a multi-dimensional median from all the spectral measurements of the satellite imagery at the same time and maintains the relationships between the measurements. This provides a median of the physical conditions measured by the earth observations used to create it. It provides a good representation of a typical pixel observation devoid of outliers and has reduced spatial noise.
 
-The annual geomedian provides an annual surface reflectance composite for any area of interest within the area covered by the DEA’s [Open Data Cube](https://www.dea.ga.gov.au/about/open-data-cube), up to the entire spatial extent available. It provides a cloud-free overview of the middle surface reflectance value for each year. It is equivariant, meaning that the linear algorithm applied to a geomedian image is equal to a geomedian applied to a set of images on which the same linear algorithm was applied. Therefore, it can be used in further analyses such as Tasseled Cap, Principal Components Analysis, and Normalised Difference Indices. It is useful in analyses requiring baseline conditions such as change detection.
+The annual geomedian provides an annual surface reflectance composite for any area of interest within the area covered by the DEA’s [Open Data Cube](https://www.dea.ga.gov.au/about/open-data-cube), up to the entire spatial extent available. It provides a cloud-free overview of the middle surface reflectance value for each year. It is equivariant, meaning that a linear algorithm applied to a geomedian image is equal to a geomedian applied to a set of images on which the same linear algorithm was applied. Therefore, it can be used in further analyses such as Tasseled Cap, Principal Components Analysis, and Normalised Difference Indices. It is useful in analyses requiring baseline conditions such as change detection.
 
 Surface reflectance geometric median products are derived from the DEA Surface Reflectance (SR) products and provide a representation of the 'average' of surface reflectance over the time period. This is a synthetic representation of a time series rather than an actual observed pixel. 
 
@@ -160,13 +160,13 @@ The ‘first order’ statistics of a dataset include the mean and the median. A
 
 A ‘second order’ statistic associated with a mean of a dataset is the standard deviation which provides a measure of data variance. The equivalent second order statistic associated with the median is the Median Absolute Deviation (MAD), which provides the associated variance measures for the median. 
 
-The MAD is the median of absolute differences of the individual values in a set of data from their overall median. To calculate the MAD for a multi-dimensional dataset — such as the set of satellite images captured in a year — measures of ‘distance’ from each multi-dimensional measurement to the mean are needed. (These are the set of spectral measurements for a pixel through time:  blue, green, red, near-infra-red, and short-wave-infra-red.) However, multi-dimensional distances can be calculated in different ways, providing different insights into the behaviour of pixels through time. The DEA GeoMAD product includes three MADs produced from different measures of distance.
+The MAD is the median of absolute differences of the individual values in a set of data from their overall median. To calculate the MAD for a multi-dimensional dataset — such as the set of satellite images captured in a year — measures of ‘distance’ from each multi-dimensional measurement to the median are needed. (These are the set of spectral measurements for a pixel through time:  blue, green, red, near-infra-red, and short-wave-infra-red.) However, multi-dimensional distances can be calculated in different ways, providing different insights into the behaviour of pixels through time. The DEA GeoMAD product includes three MADs produced from different measures of distance.
 
 * **Euclidean distance (EMAD)** — this is more sensitive to changes in target brightness.
-* **Cosine (spectral) distance (SMAD)** —  this is more sensitive to change in target spectral response.
+* **Cosine (spectral) distance (SMAD)** —  this is more sensitive to changes in target spectral response.
 * **Bray Curtis dissimilarity (BCMAD)** —  this is more sensitive to the distribution of the observation values through time.
 
-Each MAD provides information on different land cover change features which are useful for classification. 
+Each MAD provides information on different land cover change features; this is useful for classification. 
 
 The mathematical derivation of the three MADs can be found in Roberts et al. (2018).
 
@@ -323,7 +323,7 @@ The three MAD layers of the GeoMAD are calculated by computing the multidimensio
 
 The GeoMAD is calculated over annual time periods on Earth observations from a single sensor by default (such as the annual time series of Landsat 8 observations); however, it is applicable to multi-sensor time series of any length that computing resources can support. 
 
-For the purposes of the default DEA product, GeoMADs are computed per calendar year and per sensor (Landsat 5, Landsat 7, Landsat 8, and Landsat 9) from terrain-illumination-corrected surface reflectance data (Analysis Ready Data). They each use the annual geometric media of their own dataset. 
+For the purposes of the default DEA product, GeoMADs are computed per calendar year and per sensor (Landsat 5, Landsat 7, Landsat 8, and Landsat 9) from terrain-illumination-corrected surface reflectance data (Analysis Ready Data).
 
 Note that the constituent pixels in the GeoMAD pixel composite mosaics are synthetic. This means that the pixels have not been physically observed by the satellite; rather, they are the computed high-dimensional medians of a time series of pixels. 
 
