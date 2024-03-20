@@ -64,14 +64,14 @@ The GeoMAD product is useful for the following.
 
 ### Median Composites
 
-Median composites are an algorithm for removing cloud and shadow noise from images by setting the value of each pixel of an image to the median value for that band. The median of each band is independent of the other bands for any given pixel.
+Median composites are a method for creating large image mosaics using an algorithm that helps remove cloud and shadow noise by setting the value of each pixel of the composite to its consistent median values for each band. In this simple median method, the median of each band is independent of the other bands for any given pixel.
 
-The benefit of using the median composite algorithm is that it is very fast to compute. The problem, however, is that pixels hold information for multiple bands and medians lose this information. Therefore, a geomedian algorithm is used instead, since it can handle multi-dimensional data. 
+The benefit of using the median composite algorithm is that it is very fast to compute. The problem, however, is that satellite imagery pixels hold information for multiple bands and simple medians lose the relationships in this information, creating unnatural results. Therefore, a geometric median algorithm is used instead, since it can handle multi-dimensional data and maintain the relationships between bands for each pixel.
 
 :::{figure} /_files/geomedian/geomedian-alg-composite_techspecs.jpg
 :alt: Median compositing algorithm diagram
 
-A median considers data from each band independently. This can be seen in Step 2 of the median compositing algorithm. (Source: [Digital Earth Africa &mdash; Introduction to the Digital Earth Africa Sandbox](https://learn.digitalearthafrica.org/courses/course-v1:digitalearthafrica+DEA101+2021/))
+A simple median considers data from each band independently. This can be seen in Step 2 of the median compositing algorithm. (Source: [Digital Earth Africa &mdash; Introduction to the Digital Earth Africa Sandbox](https://learn.digitalearthafrica.org/courses/course-v1:digitalearthafrica+DEA101+2021/))
 :::
 
 :::{dropdown} Median Compositing Algorithm
@@ -85,15 +85,15 @@ As shown in the figure above, this algorithm is calculated as follows.
 
 ### Geometric Median
 
-Geomedian (or geometric median) composites are multi-band generalisations of median composites. A geomedian composite finds the median values of the bands for each pixel when considered together (as opposed to median composites which find a pixel’s median value for each band individually).
+Geomedian (or geometric median) composites are multi-band generalisations of median composites. A geomedian composite finds the median values of the bands for each pixel when considered together (as opposed to simple median composites which find a pixel’s median value for each band individually).
 
 Geomedians are an appropriate choice of algorithm because they represent multiple bands of data. 
 
-The **surface reflectance geomedian** uses high-dimensional statistical theory to deliver a spectrally consistent and artefact-free pixel composite product. 
+The **surface reflectance geomedian** uses high-dimensional statistical theory to deliver a spectrally consistent and reasonably artefact-free pixel composite product. 
 
 The geomedian is a pixel-composite mosaic of a time series of earth observations. Essentially, the value of a pixel in a geomedian image is the statistical median of all observations for that pixel for a period of time. For example, the 2016 Landsat 8 geomedian image over an area will be the median of all Landsat 8 pixels recorded for that area in 2016. 
 
-An **annual geometric median** is a high-dimensional median calculated from the reflectance values recorded over a one-year period. The years available are each full calendar year since 1986. The annual geomedians of surface reflectance measurements are calculated per calendar year.
+An **annual geometric median** is a high-dimensional median calculated from the reflectance values recorded over a one-year period. The annual geomedians are available for each full calendar year since 1986.
 
 :::{figure} /_files/geomedian/geomedian-composite_techspecs.jpg
 :alt: Geomedian algorithm diagram
