@@ -2,15 +2,13 @@
 
 Satellite imagery allows us to observe the Earth with significant accuracy and detail. However, missing data — such as gaps caused by cloud cover — can make it difficult to create a complete image. In order to produce a single, complete view of a certain area, satellite data must be consolidated by stacking measurements from different points in time to create a composite image. 
 
-The Digital Earth Australia GeoMAD (Geomedian and Median Absolute Deviations) data product is a cloud-free composite of satellite data compiled over an annual period during each calendar year. 
-
-The GeoMAD product uses statistical analyses to provide information on variance in the landscape over the given year. It provides insight into the 'average' conditions observed over Australia in a given year, as well as the amount of variability experienced around the average. This product is useful for monitoring change detection, such as from cropping, urban expansion, or burnt-area mapping. 
+The Digital Earth Australia GeoMAD (Geometric Median and Median Absolute Deviation) data product is a cloud-free composite of satellite data compiled annually for each calendar year. 
 
 Large-scale image composites are increasingly important for a variety of applications such as land cover mapping, change detection, and the generation of high-quality data to parameterise and validate bio-physical and geophysical models. A number of compositing methodologies are being used in remote sensing in general; however, challenges still exist. These challenges include  mitigating against boundary artifacts due to mosaicking scenes from different epochs ensuring spatial regularity across the mosaic image and maintaining the spectral relationship between bands. 
 
 The creation of good composite images is especially important due to the opening of the [Landsat archive of the United States Geological Survey](https://www.usgs.gov/landsat-missions/landsat-collections). The greater availability of satellite imagery has resulted in demand to provide large regional mosaics that are representative of conditions over specific time periods while also being free of clouds and other unwanted visual noise. One approach is to ‘stitch together’ multiple selected high-quality images. Another is to create mosaics in which pixels from a time series of observations are combined (using an algorithm). This ‘pixel composite’ approach to mosaic generation provides more consistent results than with stitching high-quality images due to the improved colour balance created by combining one-by-one pixel-representative images. Another strength of pixel-based composites is their ability to be automated, hence enabling their use in large data collections and time series datasets. 
 
-The DEA GeoMAD product can be used for seeing how an area of land usually looks rather than only viewing it at a single point in time. Hence you can assess the land cover and land use on a general basis rather than at a specific year. It can also be used to assess how much an area changes over time. You will notice areas like bare rock that are very stable versus those like cropping areas that change dramatically.
+The DEA GeoMAD product can be used for seeing how an area of land usually looks rather than only viewing it at a single point in time. Hence you can assess the land cover and land use on a general basis rather than at a specific point in time. It can also be used to assess how much an area changes over time. It highlights areas like bare rock that are very stable in contrast to cropping areas that change dramatically.
 
 This product combines the Geometric Median and the Median Absolute Deviation algorithms in a single package. The Geometric Median output provides information on the general conditions of the landscape for a given year. Meanwhile the Median Absolute Deviation output provides information on how the landscape is changing in the same year. 
 
@@ -43,9 +41,9 @@ This product combines the Geometric Median and the Median Absolute Deviation alg
 
 ## What this product offers
 
-This product provides statistical tools that utilise DEA’s time series Earth observation data to provide annual images of general conditions and how much an area changes in a given year. 
+This product provides statistical tools that utilise DEA’s Earth observation data to provide annual images of general conditions and how much an area changes in a given year. 
 
-The geomedian part of the product provides an 'average' cloud-free image over the given year. The geomedian image is calculated with a multi-dimensional median, using all the spectral measurements from the satellite imagery at the same time in order to maintain the relationships between the measurements. 
+The geometric median part of the product provides an 'average' cloud-free image over the given year. The geometric median image is calculated with a multi-dimensional median, using all the spectral measurements from the satellite imagery at the same time in order to maintain the relationships between the measurements. 
 
 The median absolute deviation part of the product uses three measures of variance, each of which provides a 'second order' high dimensional statistical composite for the given year. The three variance measures show how much an area varies from the 'average' in terms of 'distance' based on factors such as brightness and spectra. The three variance measures are: 
 
