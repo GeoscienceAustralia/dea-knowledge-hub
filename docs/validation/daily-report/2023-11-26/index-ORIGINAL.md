@@ -1,6 +1,5 @@
-# 2023-11-26: Mullion, Landsat 8 overpass
 
-A Daily Validation Summary Report of the surface reflectance data collected on the date of 26 November 2023 by Geoscience&nbsp;Australia. The full data can be found in the [NSD database](https://www.dea.ga.gov.au/products/national-spectral-database).
+A Daily Validation Summary Report of the surface reflectance data collected on the date of 22 September 2023 by Geoscience&nbsp;Australia. The full data can be found in the [NSD database](https://www.dea.ga.gov.au/products/national-spectral-database).
 
 :::{contents} In this report
 :local:
@@ -10,12 +9,6 @@ A Daily Validation Summary Report of the surface reflectance data collected on t
 ## Variables
 
 The variables and other environmental factors that were present on the day the data was collected.
-
-```{eval-rst}
-.. container:: validation-report-download
-
-   :download:`Download as CSV <./Daily_Validation_Variables_2023-11-26.csv>`
-```
 
 :::{csv-table}
 :class: validation-report-variables-table
@@ -32,12 +25,6 @@ The variables and other environmental factors that were present on the day the d
 
 The surface reflectance statistics collected on this day are grouped into bands. This allows the data to be used to validate our other datasets which use the same standardised bands.
 
-```{eval-rst}
-.. container:: validation-report-download
-
-   :download:`Download as CSV <./Daily_Validation_Results_2023-11-26.csv>`
-```
-
 :::{csv-table}
 :class: validation-report-results-table
 
@@ -51,6 +38,8 @@ The surface reflectance statistics collected on this day are grouped into bands.
 "<a href='/guides/about/glossary/#swir' target='_blank'>SWIR2</a>","0.303","0.0075","0.318","0.0651"
 :::
 
+* {download}`Download as CSV <./Daily_Validation_Results_2023-11-26.csv>`
+
 ## Figures
 
 Click each figure to view it at full size.
@@ -59,23 +48,22 @@ Click each figure to view it at full size.
 ::::{grid-item}
 :::{figure} ./RGB_2023-11-26.png
 
-A sample of the satellite imagery captured on this day.
+A satellite imagery tile showing surface reflectance.
 :::
 ::::
 ::::{grid-item}
 :::{figure} ./DayComparison_2023-11-26.png
 
-The surface reflectance of Landsat 8 versus field data for each of the bands on this day. Band 1 is 0.005, Band 3 is 0.15, Band 5 is 0.29, and Band 7 is 0.36.
+A chart showing bands.
 :::
 ::::
 ::::{grid-item}
 :::{figure} ./OverallComparison_2023-11-26.png
 
-Satellite Surface Reflectance versus Field Site Surface Reflectance on this day. The R<sup>2</sup> coefficient is 0.989, the slope is 1.012, the intercept is -0.001, and the standard error is 0.009.
+A chart showing surface reflectance.
 :::
 ::::
 :::::
 
 % :::{tags} validation, daily_validation, mullion_validation, landsat_8_validation
 % :::
-
