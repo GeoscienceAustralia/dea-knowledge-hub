@@ -11,12 +11,6 @@ A Daily Validation Summary Report of the surface reflectance data collected on t
 
 The variables and other environmental factors that were present on the day the data was collected.
 
-```{eval-rst}
-.. container:: validation-report-download
-
-   :download:`Download as CSV <./Daily_Validation_Variables_2023-11-26.csv>`
-```
-
 :::{csv-table}
 :class: validation-report-variables-table
 
