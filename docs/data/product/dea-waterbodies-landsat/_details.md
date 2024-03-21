@@ -24,7 +24,7 @@ The DEA Waterbodies product is comprised of two key components:
 * **Mapped waterbody outlines** — a polygon dataset of the programmatically generated waterbody outlines.
 * **Surface area timeseries** — a CSV timeseries for each polygon of its surface area over time within the mapped polygon (for every available, clear Landsat observation).
 
-The code used in the development of this product is available on the [dea-conflux GitHub repository](https://github.com/GeoscienceAustralia/dea-conflux).
+The code used in the development of this product is available on [GitHub](https://github.com/GeoscienceAustralia/dea-conflux).
 
 ### Data Specification Tables
 
@@ -154,23 +154,23 @@ The DEA Waterbodies v3.0 shapefile and CSV contain the following data.
 
 #### Notes
 
-\* Scene data is available approximately two weeks from the satellite overpass for the Water Observations feature layers used to process Waterbodies. Waterbodies scenes are processed as Water Observations feature layer scenes become available in the DEA datacube. It takes approximately 10 minutes to process Waterbodies per scene.  One Landsat scene measures approximately 190 x 180 km. Source: [Landsat 9 Fast Facts, NASA](https://www.nasa.gov/wp-content/uploads/2015/04/landsat_9_fast_facts.pdf).
+\* Scene data is available approximately two weeks from the satellite overpass for the Water Observations feature layers used to process Waterbodies. Waterbodies scenes are processed as Water Observations feature layer scenes become available in the DEA datacube. It takes approximately 10 minutes to process Waterbodies per scene.  One Landsat scene measures approximately 190 x 180 km. <https://www.nasa.gov/wp-content/uploads/2015/04/landsat_9_fast_facts.pdf>
 
 \*\* Larger waterbodies are easier to detect and smaller or narrower waterbodies are harder to detect. Area estimates should be compared to additional data for verification.
 
 \*\*\* Data fields empty in shapefile (`dt_wetobs`, `wet_sa_m2`, `dt_satpass`, `dt_updated`) are available for the latest relevant observations only via DEA Maps and WMS.
 
-\^ Data fields introduced in v3.0.0 are ‘New’.
+\^ Data fields introduced in v3.0 are ‘New’.
 
 % ## Lineage
 
 ## Lineage 
 
-This product is based on [DEA Water Observations](/data/product/dea-water-observations-landsat/) (WO) which it extends with reanalysis and mapping.
+This product is based on [DEA Water Observations](/data/product/dea-water-observations-landsat/) which it extends with reanalysis and mapping.
 
 ### Producing DEA Waterbodies polygons
 
-DEA Waterbodies is a polygon-based view of WO, derived through the automatic processing of WO to identify the outlines of persistent waterbodies across Australia. 
+DEA Waterbodies is a polygon-based view of DEA Water Observations (DEA WO), derived through the automatic processing of DEA WO to identify the outlines of persistent waterbodies across Australia. 
 
 :::{figure} /_files/cmi/V2Workflow.JPG
 :alt: DEA Waterbodies workflow
@@ -178,7 +178,7 @@ DEA Waterbodies is a polygon-based view of WO, derived through the automatic pro
 Flow diagram outlining the steps taken to produce DEA Waterbodies polygons.
 :::
 
-For a detailed discussion of the methods used to produce DEA Waterbodies v1.0.0, refer to [Krause et al. 2021](https://doi.org/10.3390/rs13081437). For the differences between DEA Waterbodies v1.0.0, v2.0.0, and v3.0.0, refer to the [Changelog](./?tab=history#changelog). DEA Waterbodies v3.0.0 uses the same polygon/vector outlines as DEA Waterbodies v2.0.0 with additional metadata.
+For a detailed discussion of the methods used to produce DEA Waterbodies v1, refer to [Krause et al. 2021](https://doi.org/10.3390/rs13081437). For the differences between DEA Waterbodies v1, v2 and v3.0, refer to the [Changelog](./?tab=history#changelog). DEA Waterbodies v3.0 uses the same polygon/vector outlines as DEA Waterbodies v2, with additional metadata.
 
 % ## Software
 
