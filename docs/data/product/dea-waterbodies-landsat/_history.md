@@ -2,13 +2,13 @@
 
 ### Version 3.0.0
 
-Version 3.0.0 of DEA Waterbodies uses the same underlying polygon set as DEA Waterbodies 2.0.0. Improvements include additional supporting data for the most recent observations available through web mapping services (WMS) and DEA Maps, more metadata availability, and pipeline improvements.
+Version 3.0 of DEA Waterbodies uses the same underlying polygon set as DEA Waterbodies version 2. Improvements include additional supporting data for the most recent observations available through web mapping services (WMS) and DEA Maps, more metadata availability, and pipeline improvements.
 
-The update from v2.0.0 to v3.0.0 of the DEA Waterbodies product and service was created through a collaboration between Geoscience Australia, the National Aerial Firefighting Centre, Natural Hazards Research Australia, and FrontierSI to make the product more useful in hazard applications. 
+The update from version 2 to version 3.0 of the DEA Waterbodies product and service was created through a collaboration between Geoscience Australia, the National Aerial Firefighting Centre, Natural Hazards Research Australia, and FrontierSI to make the product more useful in hazard applications. 
 
 #### Key differences
 
-DEA Waterbodies version 3.0.0 key improvements include: 
+DEA Waterbodies version 3.0 key improvements include: 
 
 * New supporting data has been added to DEA Maps and web services for the most recent relevant observation.
 * This supporting data includes: 
@@ -30,7 +30,7 @@ DEA Waterbodies version 2 will be decommissioned in coming months after a period
 
 DEA Waterbodies version 3.0 polygon names remain the same as DEA Waterbodies version 2 with the version number at the end of the geohash updated. For example, in v2, Kati Thanda was `r4ctum36x_v2`. In v3.0 Kati Thanda is `r4ctum36x_v3`.
 
-### Version 2.0.0
+### [Version 2.0.0](\data\old-version\dea-waterbodies-landsat-2.0.0)
 
 Version 2 of DEA Waterbodies represents a reprocessing of DEA Waterbodies version 1 on [DEA Collection 3 Water Observations](/data/product/dea-water-observations-landsat), as well as a few incremental improvements. 
 
