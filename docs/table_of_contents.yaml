@@ -202,7 +202,7 @@ entries:
         entries:
           - file: notebooks/Tools/index # Contains its own table of contents.
 
-  # Tags
+  # Validation
 
   - file: validation/index
     subtrees:
@@ -218,6 +218,8 @@ entries:
       - caption: Yearly Reports
         entries:
           - glob: validation/yearly-report/*/index
+
+  # Tags
 
   - file: tags/index
     subtrees:
