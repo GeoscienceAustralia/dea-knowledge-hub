@@ -7,7 +7,7 @@
 
 2024-03-21: We have recieved notice from NASA that Direct Broadcast satellite downloads from the Terra satellite are currently unavailable. 
 
-This means that Terra-derived DEA Hotspots are unavailable until further notice.
+This means that Terra-derived [DEA Hotspots](https://hotspots.dea.ga.gov.au/) are unavailable until further notice.
 
 % All DEA systems are working as expected. There are no outstanding incidents or errors to report.
 
