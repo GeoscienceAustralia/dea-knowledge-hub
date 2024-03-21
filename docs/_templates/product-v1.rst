@@ -337,7 +337,7 @@
           :name: other-versions
           :class: h2
 
-       You can find the history in the `latest version of the product <{{ data.latest_version_link }}>`_.
+       You can find the history in the `latest version of the product <{{ data.latest_version_link }}?tab=history>`_.
        {% else %}
        .. rubric:: Old versions
           :name: old-versions

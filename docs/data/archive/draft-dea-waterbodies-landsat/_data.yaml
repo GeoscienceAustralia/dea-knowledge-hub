@@ -1,3 +1,6 @@
+# See the Product metadata fields documentation:
+# https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/product_metadata_fields.html
+
 # Overview
 
 title: DRAFT DEA Waterbodies (Landsat)
@@ -48,10 +51,10 @@ data:
     name: Digital Earth Australia - Public Data
 
 code_examples:
-  - link: https://docs.dea.ga.gov.au/notebooks/DEA_products/DEA_Waterbodies.html
+  - link: https://knowledge.dea.ga.gov.au/notebooks/DEA_products/DEA_Waterbodies.html
     name: Jupyter notebook
   - link: https://github.com/GeoscienceAustralia/dea-waterbodies
-    name: Github repository
+    name: GitHub repository
 
 web_services:
   - link: https://geoserver.dea.ga.gov.au/geoserver/wms

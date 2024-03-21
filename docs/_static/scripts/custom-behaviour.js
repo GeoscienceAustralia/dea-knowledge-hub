@@ -25,6 +25,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
         for (let i = 0; i < captions.length; i++) {
             let caption = captions[i];
             let h2 = document.createElement("h2");
+            h2.id = `table-of-contents-${i + 1}`;
             h2.innerHTML = caption.children[0].innerHTML;
             caption.parentNode.replaceChild(h2, caption);
         }
@@ -188,10 +189,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
                 link.dataset.linkType = "internal";
             } else if (!isSameHost) {
                 link.dataset.linkType = "external";
-                if (!link.target) {
-                    link.target = "_blank";
-                    link.setAttribute("rel", "noopener noreferrer");
-                }
             }
         }
     })();
