@@ -11,11 +11,11 @@ A Daily Validation Summary Report of the surface reflectance data collected on t
 
 The variables and other environmental factors that were present on the day the data was collected.
 
-:::{eval-rst}
+```{eval-rst}
 .. container:: validation-report-download
 
    :download:`Download as CSV <./Daily_Validation_Variables_2023_09_22.csv>`
-:::
+```
 
 :::{csv-table}
 :class: validation-report-variables-table
@@ -32,11 +32,11 @@ The variables and other environmental factors that were present on the day the d
 
 The surface reflectance statistics collected on this day are grouped into bands. This allows the data to be used to validate our other datasets which use the same standardised bands.
 
-:::{eval-rst}
+```{eval-rst}
 .. container:: validation-report-download
 
    :download:`Download as CSV <./Daily_Validation_Variables_2023_09_22.csv>`
-:::
+```
 
 :::{csv-table}
 :class: validation-report-results-table
