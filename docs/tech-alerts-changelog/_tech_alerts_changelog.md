@@ -5,18 +5,20 @@
 :class: caution
 % Change the 'class' to either: tip / caution / danger
 
-2024-03-14: We have implemented changes to improve the intermittent performance issues being experienced on DEA web services. We are continuing to work to fix this issue.
+2024-03-21: We have recieved notice from NASA that Direct Broadcast satellite downloads from the Terra satellite are currently unavailable. 
+
+This means that Terra-derived DEA Hotspots are unavailable until further notice.
 
 % All DEA systems are working as expected. There are no outstanding incidents or errors to report.
 
 See the [DEA monitoring dashboard](https://monitoring.dea.ga.gov.au/) to check the current status of DEA's services.
 :::
 
-:::{admonition} DEA Sentinel-2 contiguity fix: complete
-:class: note
+## 2024-03-21: DEA OWS services restored
 
-See alert dated 2024-02-26 for more details.
-:::
+Outages affecting DEA Open Web Services (OWS) have been resolved. Work will be continuing over the coming months to further improve performance and reliability of these services. 
+
+See the [DEA monitoring dashboard](https://monitoring.dea.ga.gov.au/) to check the current status of DEA's services.
 
 ## 2024-02-26: Sentinel-2 contiguity fix reprocessing complete
 
