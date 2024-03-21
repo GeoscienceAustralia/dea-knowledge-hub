@@ -11,6 +11,12 @@ A Daily Validation Summary Report of the surface reflectance data collected on t
 
 The variables and other environmental factors that were present on the day the data was collected.
 
+:::{eval-rst}
+.. container:: validation-report-download
+
+   :download:`Download as CSV <./Daily_Validation_Variables_2023_09_22.csv>`
+:::
+
 :::{csv-table}
 :class: validation-report-variables-table
 
@@ -22,11 +28,15 @@ The variables and other environmental factors that were present on the day the d
 "<a href='/guides/about/glossary/#pq' target='_blank'>Matchup quality</a>","Excellent"
 :::
 
-* {download}`Download as CSV <./Daily_Validation_Variables_2023_09_22.csv>`
-
 ## Results
 
 The surface reflectance statistics collected on this day are grouped into bands. This allows the data to be used to validate our other datasets which use the same standardised bands.
+
+:::{eval-rst}
+.. container:: validation-report-download
+
+   :download:`Download as CSV <./Daily_Validation_Variables_2023_09_22.csv>`
+:::
 
 :::{csv-table}
 :class: validation-report-results-table
@@ -40,8 +50,6 @@ The surface reflectance statistics collected on this day are grouped into bands.
 "<a href='/guides/about/glossary/#swir' target='_blank'>SWIR1</a>","0.234","0.00781","0.251","0.0383"
 "<a href='/guides/about/glossary/#swir' target='_blank'>SWIR2</a>","0.118","0.00442","0.128","0.0238"
 :::
-
-* {download}`Download as CSV <./Daily_Validation_Results_2023_09_22.csv>`
 
 ## Figures
 
