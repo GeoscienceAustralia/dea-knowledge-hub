@@ -12,9 +12,9 @@
 See the [DEA monitoring dashboard](https://monitoring.dea.ga.gov.au/) to check the current status of DEA's services.
 :::
 
-## 2024-03-25: DEA Waterbodies (Landsat) version 3.0.0 released
+## 2024-03-25: DEA Waterbodies version 3.0.0 released
 
-Improvements include additional supporting data for the most recent observations available through web mapping services (WMS) and DEA Maps, more metadata availability, and pipeline improvements. See [DEA Waterbodies (Landsat)](/data/product/dea-waterbodies-landsat/?tab=history) for more information.
+Improvements include additional supporting data for the most recent observations available through web mapping services (WMS) and DEA Maps, more metadata availability, and pipeline improvements. [Learn more](/data/product/dea-waterbodies-landsat/?tab=history)
 
 ## 2024-03-21: DEA OWS services restored
 
