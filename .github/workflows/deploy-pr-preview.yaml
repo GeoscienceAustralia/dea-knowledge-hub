@@ -10,6 +10,7 @@ env:
   PR_PREVIEW_SUBDOMAIN: pr-${{github.event.pull_request.number}}-preview
   PR_PREVIEW_DEPLOY_LOG_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
   PR_PREVIEW_BUCKET: s3://khpreview.dea.ga.gov.au
+  PR_PREVIEW_KH_DOCUMENTATION: https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/index.html
 
 permissions:
   id-token: write # For requesting the JWT used by OIDC Authentication
@@ -35,7 +36,7 @@ jobs:
     steps:
       - name: Find Comment
         uses: peter-evans/find-comment@v3
-        id: find-comment
+        id: fc
         with:
           issue-number: ${{ github.event.pull_request.number }}
           comment-author: 'github-actions[bot]'
@@ -45,7 +46,7 @@ jobs:
         uses: peter-evans/create-or-update-comment@v4
         with:
           issue-number: ${{github.event.pull_request.number}}
-          comment-id: ${{ steps.find-comment.outputs.comment-id }}
+          comment-id: ${{ steps.fc.outputs.comment-id }}
           edit-mode: replace
           body: |
             ## :hourglass: PR Preview is deploying ...
@@ -54,6 +55,10 @@ jobs:
                 <tr>
                     <td><strong>Deploy log:</strong></td>
                     <td><a href="${{ env.PR_PREVIEW_DEPLOY_LOG_URL }}">View the log</a></td>
+                </tr>
+                <tr>
+                    <td><strong>Learn more:</strong></td>
+                    <td><a href="${{ env.PR_PREVIEW_KH_DOCUMENTATION }}">Read the documentation</a></td>
                 </tr>
             </table>
 
@@ -94,7 +99,7 @@ jobs:
         uses: peter-evans/create-or-update-comment@v4
         with:
           issue-number: ${{github.event.pull_request.number}}
-          comment-id: ${{ steps.find-comment.outputs.comment-id }}
+          comment-id: ${{ steps.fc.outputs.comment-id }}
           edit-mode: replace
           body: |
             ## :star2: PR Preview is ready!
@@ -107,6 +112,10 @@ jobs:
                 <tr>
                     <td><strong>Deploy log:</strong></td>
                     <td><a href="${{ env.PR_PREVIEW_DEPLOY_LOG_URL }}">View the log</a></td>
+                </tr>
+                <tr>
+                    <td><strong>Learn more:</strong></td>
+                    <td><a href="${{ env.PR_PREVIEW_KH_DOCUMENTATION }}">Read the documentation</a></td>
                 </tr>
             </table>
             

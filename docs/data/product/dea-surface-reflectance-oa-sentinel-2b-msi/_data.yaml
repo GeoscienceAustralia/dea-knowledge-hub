@@ -14,7 +14,7 @@ product_type: Baseline
 spatial_data_type: Raster
 time_span:
   start: 30/06/2017
-  end: present
+  end: Present
 update_frequency: Daily
 next_update: null
 product_ids:
