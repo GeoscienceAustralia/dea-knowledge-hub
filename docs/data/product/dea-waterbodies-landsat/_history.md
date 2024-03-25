@@ -30,7 +30,7 @@ DEA Waterbodies version 2 will be decommissioned in coming months after a period
 
 DEA Waterbodies version 3.0 polygon names remain the same as DEA Waterbodies version 2 with the version number at the end of the geohash updated. For example, in v2, Kati Thanda was `r4ctum36x_v2`. In v3.0 Kati Thanda is `r4ctum36x_v3`.
 
-### [Version 2.0.0](\data\old-version\dea-waterbodies-landsat-2.0.0)
+### [Version 2.0.0](/data/old-version/dea-waterbodies-landsat-2.0.0/)
 
 Version 2 of DEA Waterbodies represents a reprocessing of DEA Waterbodies version 1 on [DEA Collection 3 Water Observations](/data/product/dea-water-observations-landsat), as well as a few incremental improvements. 
 
