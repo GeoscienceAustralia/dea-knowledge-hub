@@ -1,0 +1,26 @@
+#citation-table {
+    #data-citation, #paper-citation {
+        .highlight {
+            background-color: transparent;
+            margin: 0;
+        }
+
+        pre {
+            background-color: transparent;
+            border: none;
+            font-family: $content-font-family;
+            padding: 0;
+            padding-right: 1rem;
+            white-space: pre-wrap;
+            white-space: -moz-pre-wrap;
+            white-space: -pre-wrap;
+            white-space: -o-pre-wrap;
+            word-wrap: break-word;
+        }
+    }
+
+    tr td:first-of-type {
+        min-width: 150px;
+    }
+}
+
