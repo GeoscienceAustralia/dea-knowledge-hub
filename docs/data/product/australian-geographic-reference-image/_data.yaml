@@ -27,9 +27,6 @@ ecat: "72657"
 nci:
   name: null
   code: null
-licence:
-  name: null
-  link: null
 
 tags:
   - agri

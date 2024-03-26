@@ -27,9 +27,6 @@ ecat: "145560"
 nci:
   name: null
   code: null
-licence:
-  name: null
-  link: null
 
 tags:
   - australian_remote_sensing

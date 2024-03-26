@@ -28,9 +28,6 @@ ecat: "113842"
 nci:
   name: null
   code: null
-licence:
-  name: null
-  link: null
 
 tags:
   - geoscience_australia_landsat_collection_2_deprecated

@@ -30,9 +30,6 @@ ecat: "102285"
 nci:
   name: Fractional Cover (FC25)
   code: rs0
-licence:
-  name: null
-  link: null
 
 tags:
   - geoscience_australia_landsat_collection_2_deprecated
