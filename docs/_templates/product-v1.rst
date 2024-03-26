@@ -214,6 +214,28 @@
           {%- endif %}
        {%- endif %}
 
+       .. rubric:: Cite this product
+          :name: citations
+          :class: h2
+
+       {% if data.citation %}
+       .. list-table::
+          :name: citation-table
+
+          {% if data.citation.data_citation %}
+          * - **Data citation:**
+            - .. code-block:: text
+
+                 {{ data.citation.data_citation }}
+          {%- endif %}
+          {% if data.citation.paper_citation %}
+          * - **Paper citation:**
+            - .. code-block:: text
+
+                 {{ data.citation.paper_citation }}
+          {%- endif %}
+       {%- endif %}
+
        .. {%- if valid_tags %}
        .. .. tags:: {{ valid_tags | join(", ") }}
        .. {%- endif %}
