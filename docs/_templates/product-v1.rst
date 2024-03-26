@@ -225,12 +225,14 @@
           {% if data.citation.data_citation %}
           * - **Data citation:**
             - .. code-block:: text
+                 :name: data-citation
 
                  {{ data.citation.data_citation }}
           {%- endif %}
           {% if data.citation.paper_citation %}
           * - **Paper citation:**
             - .. code-block:: text
+                 :name: paper-citation
 
                  {{ data.citation.paper_citation }}
           {%- endif %}
