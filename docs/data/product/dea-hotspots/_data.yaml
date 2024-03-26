@@ -1,3 +1,6 @@
+# See the Product metadata fields documentation:
+# https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/product_metadata_fields.html
+
 # Overview
 
 title: DEA Hotspots
@@ -11,8 +14,8 @@ product_type: Data service
 spatial_data_type: Vector
 time_span:
   start: 27/08/2002
-  end: present
-update_frequency: 10 minutes
+  end: Present
+update_frequency: Every 10 minutes
 next_update: null
 product_ids: null
 
@@ -24,9 +27,7 @@ collection:
   link: null
 doi: null
 ecat: "111881"
-nci:
-  name: null
-  code: null
+nci: null
 
 tags:
   - bushfires

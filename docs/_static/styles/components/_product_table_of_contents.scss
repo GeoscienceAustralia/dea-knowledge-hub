@@ -1,44 +1,15 @@
-.table-of-contents {
-    $font-size: 0.85rem;
-
+.product-tab-table-of-contents {
     @media only screen and (max-width: $breakpoint-md) {
         line-height: 2rem;
     }
 
-    ol {
-        display: flex;
-        flex-wrap: wrap;
-        padding-left: 0;
-        row-gap: 1rem;
-    }
-
-    li {
-        list-style: none;
-        padding-right: $font-size;
-
-        @media only screen and (max-width: $breakpoint-md) {
-            padding-right: 1rem;
-        }
-    }
-
     a {
-        font-size: $font-size;
-        background-color: #f3f4f6;
-        border: 1px solid #f3f4f6;
-        padding: 0.25rem 0.5rem;
-        border-radius: 0.25rem;
-        text-decoration: none;
-
-        @media only screen and (max-width: $breakpoint-md) {
-            font-size: 1rem;
-        }
+        color: var(--pst-color-text-base);
+        margin-right: 1rem;
 
         &:hover {
-            background-color: $hover-bg-color-grey;
-        }
-
-        &, &:visited {
-            color: $text-color;
+            color: var(--pst-color-link);
         }
     }
 }
+

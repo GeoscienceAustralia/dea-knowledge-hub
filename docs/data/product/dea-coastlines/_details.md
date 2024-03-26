@@ -50,7 +50,7 @@ Annual shorelines include the following attribute fields:
   - The name of the annual shoreline's Primary sediment compartment from the [Australian Coastal Sediment Compartments](https://ecat.ga.gov.au/geonetwork/srv/api/records/21a23d9a-00dd-ab19-e053-10a3070a2746) framework.
 :::
 
-To understand the `certainty` field, see the 'Quality' tab.
+To understand the `certainty` field, see the [Quality tab](./?tab=quality).
 
 :::{figure} /_files/cmi/deacl_coastlines.*
 :alt: DEA CoastLines coastline layer
@@ -144,7 +144,7 @@ Figure 3: Coastal change hotspots from DEA Coastlines visualised on the [interac
 ## Software
 
 The following software was used to generate this product: 
-* [DEA Coastlines Github code](https://github.com/GeoscienceAustralia/dea-coastlines)
+* [DEA Coastlines GitHub code](https://github.com/GeoscienceAustralia/dea-coastlines)
 * [OpenDataCube](https://github.com/opendatacube)
 * [FES2014 global tide model](https://www.aviso.altimetry.fr/en/data/products/auxiliary-products/global-tide-fes/description-fes2014.html)
 

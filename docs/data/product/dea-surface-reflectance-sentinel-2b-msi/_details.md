@@ -19,7 +19,7 @@ The resolution is a 10/20/60 m grid based on the ESA Level 1C archive.
 *Note: DEA produces NBAR as part of the Landsat ARD. This product is **not produced as part of the Sentinel-2 ARD**.*
 
 **This Collection 3 (C3) product** and has been created by reprocessing Collection 1 (C1) and making improvements to the processing pipeline and packaging.
-See the history tab for more details.
+See the [History tab](./?tab=history) for more details.
 
 **The introduction of a maturity concept.**
 

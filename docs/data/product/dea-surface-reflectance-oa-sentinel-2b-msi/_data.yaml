@@ -1,3 +1,6 @@
+# See the Product metadata fields documentation:
+# https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/product_metadata_fields.html
+
 # Overview
 
 title: DEA Surface Reflectance OA (Sentinel-2B MSI)
@@ -11,7 +14,7 @@ product_type: Baseline
 spatial_data_type: Raster
 time_span:
   start: 30/06/2017
-  end: present
+  end: Present
 update_frequency: Daily
 next_update: null
 product_ids:
@@ -25,9 +28,7 @@ collection:
   link: null
 doi: 10.26186/146570
 ecat: "146570"
-nci:
-  name: ga_s2bm_ard_3
-  code: ka08
+nci: ka08
 
 tags:
   - geoscience_australia_sentinel_2_collection_3

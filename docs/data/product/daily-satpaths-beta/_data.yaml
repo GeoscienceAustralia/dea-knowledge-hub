@@ -1,3 +1,6 @@
+# See the Product metadata fields documentation:
+# https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/product_metadata_fields.html
+
 # Overview
 
 title: Daily SatPaths
@@ -24,9 +27,7 @@ collection:
   link: null
 doi: 10.26186/146512
 ecat: null
-nci:
-  name: null
-  code: null
+nci: null
 
 tags:
   - earth_observation

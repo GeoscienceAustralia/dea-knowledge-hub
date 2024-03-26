@@ -1,3 +1,6 @@
+# See the Product metadata fields documentation:
+# https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/product_metadata_fields.html
+
 # Overview
 
 title: DEA Intertidal Extents (Landsat)
@@ -13,7 +16,7 @@ time_span:
   start: 1986
   end: 2016
 update_frequency: As needed
-next_update: No updates planned - new version in development
+next_update: No updates planned
 product_ids:
   - item_v2
 
@@ -25,9 +28,7 @@ collection:
   link: null
 doi: null
 ecat: "113842"
-nci:
-  name: null
-  code: null
+nci: null
 
 tags:
   - geoscience_australia_landsat_collection_2_deprecated

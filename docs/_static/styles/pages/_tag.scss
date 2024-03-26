@@ -1,7 +1,10 @@
-#tag-page {}
+#tags-page {}
 
-.view-all-tags-link + ul {
-    padding: 0;
-    list-style: none;
-    margin-bottom: 0.25rem;
+.tags-page--introduction {
+    & + ul {
+        padding-top: 1.15rem;
+        padding-left: 0;
+        list-style: none;
+        margin-bottom: 0.25rem;
+    }
 }

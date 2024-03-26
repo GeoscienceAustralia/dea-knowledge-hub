@@ -1,3 +1,6 @@
+# See the Product metadata fields documentation:
+# https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/product_metadata_fields.html
+
 # Overview
 
 title: DEA Fractional Cover (Landsat)
@@ -27,9 +30,7 @@ collection:
   link: null
 doi: null
 ecat: "102285"
-nci:
-  name: Fractional Cover (FC25)
-  code: rs0
+nci: rs0 # Fractional Cover (FC25)
 
 tags:
   - geoscience_australia_landsat_collection_2_deprecated

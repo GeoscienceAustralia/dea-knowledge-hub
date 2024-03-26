@@ -1,3 +1,6 @@
+# See the Product metadata fields documentation:
+# https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/product_metadata_fields.html
+
 # Overview
 
 title: Australian National Spectral Database
@@ -24,9 +27,7 @@ collection:
   link: null
 doi: null
 ecat: "145560"
-nci:
-  name: null
-  code: null
+nci: null
 
 tags:
   - australian_remote_sensing

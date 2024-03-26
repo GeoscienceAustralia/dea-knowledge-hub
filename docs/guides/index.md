@@ -14,5 +14,5 @@ Data can be viewed on the interactive [Digital Earth Australia Maps](https://map
 
 Our OGC Web Service supporting WMS, WCS and some WPS functionality is <https://ows.services.dea.ga.gov.au/>.
 
-If you notice an error in this documentation, things that could be explained more clearly, or things that are missing, please let us know by creating an Issue in the [dea-notebooks Github repository](https://github.com/GeoscienceAustralia/dea-notebooks/issues), and list what you would like to see changed.
+If you notice an error in this documentation, things that could be explained more clearly, or things that are missing, please let us know by creating an Issue in the [dea-notebooks GitHub repository](https://github.com/GeoscienceAustralia/dea-notebooks/issues), and list what you would like to see changed.
 

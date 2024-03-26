@@ -1,3 +1,6 @@
+# See the Product metadata fields documentation:
+# https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/product_metadata_fields.html
+
 # Overview
 
 title: DEA Fractional Cover Percentiles (Landsat)
@@ -27,9 +30,7 @@ collection:
   link: null
 doi: null
 ecat: "120843"
-nci:
-  name: null
-  code: null
+nci: null
 
 tags:
   - geoscience_australia_landsat_collection_2_deprecated

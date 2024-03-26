@@ -1,3 +1,6 @@
+# See the Product metadata fields documentation:
+# https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/product_metadata_fields.html
+
 # Overview
 
 title: DEA Fractional Cover (Landsat)
@@ -10,7 +13,7 @@ product_type: Derivative
 spatial_data_type: Raster
 time_span:
   start: 16/08/1986
-  end: present
+  end: Present
 update_frequency: Daily
 next_update: null
 product_ids:
@@ -24,9 +27,7 @@ collection:
   link: null
 doi: null
 ecat: "145498"
-nci:
-  name: null
-  code: null
+nci: null
 
 tags:
   - geoscience_australia_landsat_collection_3

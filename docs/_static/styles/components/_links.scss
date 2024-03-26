@@ -1,5 +1,6 @@
 a {
-    &.anchor-link, &.query-link {
+
+    &[data-link-type="query"], &[data-link-type="anchor"], .dashed {
         text-decoration-style: dashed;
 
         &:hover {
@@ -7,7 +8,24 @@ a {
         }
     }
 
-    &.internal-link {}
+    &[data-link-type="internal"] {}
 
-    &.external-link {}
+    &[data-link-type="external"] {}
+
+    &.download {
+        &:before {
+            content: none !important;
+        }
+
+        code {
+            background-color: initial;
+            border: none;
+            padding: 0;
+            font-size: 1em;
+            color: var(--pst-color-link);
+            font-weight: normal;
+            font-family: var(--pst-font-family-base-system);
+        }
+    }
 }
+

@@ -1,3 +1,6 @@
+# See the Product metadata fields documentation:
+# https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/product_metadata_fields.html
+
 # Overview
 
 title: DEA Burnt Area Characteristic Layers Sentinel-2 Near Real-Time
@@ -13,7 +16,7 @@ time_span:
   start: 1 Jul 2021
   end: 29 Aug 2023
 update_frequency: Daily
-next_update: No further updates planned
+next_update: No updates planned
 product_ids:
   - ga_s2_ba_provisional_3
 
@@ -25,9 +28,7 @@ collection:
   link: null
 doi: 10.26186/146449
 ecat: "146449"
-nci:
-  name: null
-  code: null
+nci: null
 
 tags:
   - geoscience_australia_sentinel_2_collection_3

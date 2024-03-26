@@ -1,3 +1,6 @@
+# See the Product metadata fields documentation:
+# https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/product_metadata_fields.html
+
 # Overview
 
 title: Geoscience Australia Land Cover (Terra MODIS)
@@ -12,7 +15,7 @@ spatial_data_type: Raster
 time_span:
   start: 2002
   end: 2015
-update_frequency: Biennially
+update_frequency: Every 2 years
 next_update: No updates planned
 product_ids:
   - ga_ter_m_dlcd_ann
@@ -25,9 +28,7 @@ collection:
   link: null
 doi: null
 ecat: "83868"
-nci:
-  name: null
-  code: null
+nci: null
 
 tags:
   - drought

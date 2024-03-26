@@ -1,3 +1,6 @@
+# See the Product metadata fields documentation:
+# https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/product_metadata_fields.html
+
 # Overview
 
 title: DEA Surface Reflectance NBART (Landsat 9)
@@ -11,7 +14,7 @@ product_type: Baseline
 spatial_data_type: Raster
 time_span:
   start: 31/10/2021
-  end: present
+  end: Present
 update_frequency: Daily
 next_update: null
 product_ids:
@@ -25,9 +28,7 @@ collection:
   link: null
 doi: 10.26186/148693
 ecat: "148693"
-nci:
-  name: null
-  code: null
+nci: null
 
 tags:
   - geoscience_australia_landsat_collection_3
