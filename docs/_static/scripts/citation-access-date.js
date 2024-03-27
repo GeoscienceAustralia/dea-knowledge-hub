@@ -1,4 +1,5 @@
-// Append the access date to the citations on product pages
+// Append the access date to the citations on the product pages. The access date is always today's date.
+// E.g. [Accessed 1 January 2024]
 
 document.addEventListener("DOMContentLoaded", function (event) {
     function appendAccessDate(citation) {
