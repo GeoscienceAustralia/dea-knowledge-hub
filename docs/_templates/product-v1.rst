@@ -214,11 +214,12 @@
           {%- endif %}
        {%- endif %}
 
+       {% if data.citation %}
+       {% if data.citation.data_citation or data.citation.paper_citation %}
        .. rubric:: Cite this product
           :name: citations
           :class: h2
 
-       {% if data.citation %}
        .. list-table::
           :name: citation-table
 
@@ -236,6 +237,7 @@
 
                  {{ data.citation.paper_citation }}
           {%- endif %}
+       {%- endif %}
        {%- endif %}
 
        .. {%- if valid_tags %}
