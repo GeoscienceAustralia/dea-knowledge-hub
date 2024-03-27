@@ -215,7 +215,7 @@
        {%- endif %}
 
        {% if data.citations %}
-       {% if data.citations.data.citations or data.citations.paper_citation %}
+       {% if data.citations.data_citation or data.citations.paper_citation %}
        .. rubric:: Cite this product
           :name: citations
           :class: h2
@@ -225,12 +225,12 @@
        .. list-table::
           :name: citation-table
 
-          {% if data.citations.data.citations %}
+          {% if data.citations.data_citation %}
           * - **data.citations**
             - .. code-block:: text
                  :name: data.citations
 
-                 {{ data.citations.data.citations }}
+                 {{ data.citations.data_citation }}
           {%- endif %}
           {% if data.citations.paper_citation %}
           * - **Paper citation**
