@@ -1,7 +1,10 @@
 #citation-table {
     #data-citation, #paper-citation {
-        background-color: transparent;
         margin: 0 !important;
+
+        .highlight {
+            background-color: transparent;
+        }
 
         pre {
             background-color: transparent;
@@ -10,7 +13,7 @@
             font-size: 1em;
             padding-top: 0;
             padding-left: 0;
-            padding-bottom: 0.15rem;
+            padding-bottom: 0.2rem;
             padding-right: 2rem;
             white-space: pre-wrap;
             white-space: -moz-pre-wrap;
