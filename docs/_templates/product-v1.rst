@@ -226,7 +226,7 @@
           :name: citation-table
 
           {% if data.citations.data_citation %}
-          * - **data.citations**
+          * - **Data citation**
             - .. code-block:: text
                  :name: data-citation
 
