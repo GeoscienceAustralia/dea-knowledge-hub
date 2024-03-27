@@ -25,13 +25,17 @@ document.addEventListener("DOMContentLoaded", function (event) {
         return `${citationTrimmed} [Accessed ${day} ${month} ${year}]`;
     }
 
-    const dataCitation = document
-        .getElementById("data-citation")
-        .querySelector("pre");
-    const paperCitation = document
-        .getElementById("paper-citation")
-        .querySelector("pre");
+    try {
+        const dataCitation = document
+            .getElementById("data-citation")
+            .querySelector("pre");
+        dataCitation.textContent = appendAccessDate(dataCitation.textContent);
+    } catch (e) {}
 
-    dataCitation.textContent = appendAccessDate(dataCitation.textContent);
-    paperCitation.textContent = appendAccessDate(paperCitation.textContent);
+    try {
+        const paperCitation = document
+            .getElementById("paper-citation")
+            .querySelector("pre");
+        paperCitation.textContent = appendAccessDate(paperCitation.textContent);
+    } catch (e) {}
 });
