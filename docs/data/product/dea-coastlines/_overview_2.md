@@ -1,7 +1,5 @@
 ## Cite this product
 
-These citations are provided in the Harvard style.
-
 **Data citation**
 
 ```text
