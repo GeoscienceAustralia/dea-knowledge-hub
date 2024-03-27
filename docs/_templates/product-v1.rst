@@ -220,6 +220,8 @@
           :name: citations
           :class: h2
 
+       These citations are provided in the Harvard style.
+
        .. list-table::
           :name: citation-table
 
