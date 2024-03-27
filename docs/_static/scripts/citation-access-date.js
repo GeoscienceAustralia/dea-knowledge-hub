@@ -1,17 +1,14 @@
 // Append the access date to the citations on product pages
 
 document.addEventListener("DOMContentLoaded", function (event) {
-    function removeNewlineAtEnd(str) {
-        return str.replace(/\n$/, "");
+    function appendAccessDate(citation) {
+        const citationTrimmed = citation.replace(/\n$/, "");
+        const today = new Date();
+        const day = today.getDate();
+        const month = today.toLocaleString("default", { month: "long" });
+        const year = today.getFullYear();
+        return `${citationTrimmed} [Accessed ${day} ${month} ${year}]`;
     }
-
-    const accessedDate = (() => {
-        const date = new Date();
-        const year = date.getFullYear();
-        const month = date.getMonth() + 1;
-        const day = date.getDate();
-        return ` [Accessed ${year}-${month}-${day}]`;
-    })();
 
     const dataCitation = document
         .getElementById("data-citation")
@@ -20,8 +17,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
         .getElementById("paper-citation")
         .querySelector("pre");
 
-    dataCitation.textContent =
-        removeNewlineAtEnd(dataCitation.textContent) + accessedDate;
-    paperCitation.textContent =
-        removeNewlineAtEnd(paperCitation.textContent) + accessedDate;
+    dataCitation.textContent = appendAccessDate(dataCitation.textContent)
+    paperCitation.textContent = appendAccessDate(paperCitation.textContent)
 });
