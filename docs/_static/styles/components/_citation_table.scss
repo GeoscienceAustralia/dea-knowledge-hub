@@ -2,7 +2,7 @@
     #data-citation, #paper-citation {
         .highlight {
             background-color: transparent;
-            margin: 0;
+            margin: 0 !important;
         }
 
         pre {
@@ -10,8 +10,10 @@
             border: none;
             font-family: $content-font-family;
             font-size: 1em;
-            padding: 0;
-            padding-right: 1rem;
+            padding-top: 0;
+            padding-left: 0;
+            padding-bottom: 0.1rem;
+            padding-right: 2rem;
             white-space: pre-wrap;
             white-space: -moz-pre-wrap;
             white-space: -pre-wrap;
