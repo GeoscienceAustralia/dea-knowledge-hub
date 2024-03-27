@@ -228,7 +228,7 @@
           {% if data.citations.data_citation %}
           * - **data.citations**
             - .. code-block:: text
-                 :name: data.citations
+                 :name: data-citation
 
                  {{ data.citations.data_citation }}
           {%- endif %}
