@@ -220,7 +220,12 @@
           :name: citations
           :class: h2
 
+       {% if data.citations.data_citation and data.citations.paper_citation %}
        These citations are provided in the Harvard style.
+       {% else %}
+       This citation is provided in the Harvard style.
+       {% endif %}
+
 
        .. list-table::
           :name: citation-table
