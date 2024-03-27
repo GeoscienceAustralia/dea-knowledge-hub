@@ -2,10 +2,24 @@
 
 document.addEventListener("DOMContentLoaded", function (event) {
     function appendAccessDate(citation) {
+        const months = [
+            "January",
+            "February",
+            "March",
+            "April",
+            "May",
+            "June",
+            "July",
+            "August",
+            "September",
+            "October",
+            "November",
+            "December"
+        ];
         const citationTrimmed = citation.replace(/\n$/, "");
         const today = new Date();
         const day = today.getDate();
-        const month = today.toLocaleString("default", { month: "long" });
+        const month = months[today.getMonth()];
         const year = today.getFullYear();
         return `${citationTrimmed} [Accessed ${day} ${month} ${year}]`;
     }
@@ -17,6 +31,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
         .getElementById("paper-citation")
         .querySelector("pre");
 
-    dataCitation.textContent = appendAccessDate(dataCitation.textContent)
-    paperCitation.textContent = appendAccessDate(paperCitation.textContent)
+    dataCitation.textContent = appendAccessDate(dataCitation.textContent);
+    paperCitation.textContent = appendAccessDate(paperCitation.textContent);
 });
