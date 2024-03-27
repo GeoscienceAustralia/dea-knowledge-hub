@@ -214,8 +214,8 @@
           {%- endif %}
        {%- endif %}
 
-       {% if data.citation %}
-       {% if data.citation.data_citation or data.citation.paper_citation %}
+       {% if data.citations %}
+       {% if data.citations.data.citations or data.citations.paper_citation %}
        .. rubric:: Cite this product
           :name: citations
           :class: h2
@@ -225,19 +225,19 @@
        .. list-table::
           :name: citation-table
 
-          {% if data.citation.data_citation %}
-          * - **Data citation**
+          {% if data.citations.data.citations %}
+          * - **data.citations**
             - .. code-block:: text
-                 :name: data-citation
+                 :name: data.citations
 
-                 {{ data.citation.data_citation }}
+                 {{ data.citations.data.citations }}
           {%- endif %}
-          {% if data.citation.paper_citation %}
+          {% if data.citations.paper_citation %}
           * - **Paper citation**
             - .. code-block:: text
                  :name: paper-citation
 
-                 {{ data.citation.paper_citation }}
+                 {{ data.citations.paper_citation }}
           {%- endif %}
        {%- endif %}
        {%- endif %}
