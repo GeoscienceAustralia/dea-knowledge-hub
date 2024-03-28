@@ -14,7 +14,11 @@ See the [DEA monitoring dashboard](https://monitoring.dea.ga.gov.au/) to check t
 
 ## 2024-03-28: DEA Sandbox outage
 
-The [DEA Sandbox](https://app.sandbox.dea.ga.gov.au/) is currently experiencing an outage. We are currently investigating the outage and will work to fix it as soon as possible. Please check this page again soon for the latest updates.
+There is currently an unplanned outage on the [Digital Earth Australia Sandbox](https://app.sandbox.dea.ga.gov.au/). DEA is investigating the cause of the problem and is working on implementing a solution. It is currently unknown how long the outage will last.
+
+You will be unable to log in or access your DEA Sandbox account while the incident is ongoing. You may also notice reduced performance on other DEA systems during this outage.
+
+You can monitor the status of DEA’s systems on the [DEA monitoring dashboard](https://monitoring.dea.ga.gov.au/). If you would like to contact DEA, please email [earth.observation@ga.gov.au](mailto:earth.observation@ga.gov.au)
 
 ## 2024-03-25: DEA Waterbodies version 3.0.0 released
 
