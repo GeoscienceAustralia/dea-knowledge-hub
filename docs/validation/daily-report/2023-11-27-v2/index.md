@@ -1,6 +1,8 @@
 # 2023-11-27: Mullion, Landsat 8 overpass
 
-A Daily Validation Summary Report of the surface reflectance data collected on the date of 2023-11-27 by Geoscience&nbsp;Australia. The full data can be found in the [NSD database](https://www.dea.ga.gov.au/products/national-spectral-database).
+A Daily Validation Summary Report of the surface reflectance data collected on
+the date of 2023-11-27 by Geoscience&nbsp;Australia. The full data collection is
+contained in the [NSD database](https://www.dea.ga.gov.au/products/national-spectral-database).
 
 :::{contents} In this report
 :local:
@@ -9,7 +11,8 @@ A Daily Validation Summary Report of the surface reflectance data collected on t
 
 ## Variables
 
-The variables and other environmental factors that were present on the day the data were collected.
+The variables and other environmental factors that were present on the day the
+data were collected.
 
 :::{csv-table}
 :class: validation-report-variables-table
@@ -24,7 +27,9 @@ The variables and other environmental factors that were present on the day the d
 
 ## Results
 
-The surface reflectance statistics collected on this day are grouped into bands. This allows the data to be used to validate our other datasets which use the same standardised bands.
+The surface reflectance statistics collected on this day are grouped into bands.
+This allows the data to be used to validate our other datasets which use the
+same standardised bands.
 
 ```{eval-rst}
 .. container:: validation-report-download
@@ -57,14 +62,19 @@ Click each figure to view it at full size.
 ::::{grid-item}
 :::{figure} ./RGB-2023-11-27.png
 
-A satellite imagery tile of true colour (RGB) surface reflectance. It covers an area of approximately 2 km × 2 km. The white box indicates the size and location of the field site.
+A satellite imagery tile of true colour (RGB) surface reflectance. It covers an
+area of approximately 2 km × 2 km. The white box indicates the size and location
+of the field site.
 :::
 ::::
 ::::{grid-item}
 :::{figure} ./DayComparison-2023-11-27.png
 
-A band-by-band plot of surface reflectance for satellite and field data. Satellite uncertainty error bars for each band are the standard deviation of pixel values 
-over and surrounding the field site. Field uncertainty error bars are the standard deviation of values after averaging all spectra within the same satellite pixels. 
+A band-by-band plot of surface reflectance for satellite and field data.
+Satellite uncertainty error bars for each band are the standard deviation of
+pixel values over and surrounding the field site. Field uncertainty error bars
+are the standard deviation of values after averaging all spectra within the same
+satellite pixels. 
 
 :::
 ::::
