@@ -29,6 +29,13 @@ collection:
 doi: 10.26186/146090
 ecat: "146090"
 nci: null
+license:
+  name: Creative Commons Attribution 4.0 International Licence
+  link: https://creativecommons.org/licenses/by/4.0/
+
+citations:
+  data_citation: null
+  paper_citation: null
 
 tags:
   - land_cover_and_land_use

@@ -28,6 +28,13 @@ collection:
 doi: null
 ecat: null
 nci: null
+license:
+  name: Creative Commons Attribution 4.0 International Licence
+  link: https://creativecommons.org/licenses/by/4.0/
+
+citations:
+  data_citation: null
+  paper_citation: null
 
 tags:
   - geoscience_australia_landsat_collection_2_deprecated
