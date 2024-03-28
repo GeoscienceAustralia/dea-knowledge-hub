@@ -6,18 +6,6 @@
 
 {{ data.description }}
 
-{% if data.tag_pages %}
-{{ data.tag_pages_title }}
-======================================================================================================================================================
-
-<div class="toctree-wrapper">
-   <ul>
-   {% for page in data.tag_pages %}
-       <li class="toctree-l1"><a href="/tags/{{ page.tag }}/">{{ page.label }}</a></li>
-   {% endfor %}
-   </ul>
-   </div>
-{% endif %}
-
 .. tableofcontents::
+   :titlesonly:
 
