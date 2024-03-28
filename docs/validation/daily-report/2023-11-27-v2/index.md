@@ -1,3 +1,4 @@
+# 2023-11-27: Mullion, Landsat 8 overpass
 
 A Daily Validation Summary Report of the surface reflectance data collected on the date of 2023-11-27 by Geoscience&nbsp;Australia. The full data can be found in the [NSD database](https://www.dea.ga.gov.au/products/national-spectral-database).
 
@@ -56,7 +57,7 @@ Click each figure to view it at full size.
 ::::{grid-item}
 :::{figure} ./RGB-2023-11-27.png
 
-A satellite imagery tile showing true colour (RGB) surface reflectance. The image is approximately 2km on a side, with the white box showing the location and the size of the field site.
+A satellite imagery tile showing true colour (RGB) surface reflectance. It covers approximately 2 km × 2 km in area. The white box indicates the size and location of the field site.
 :::
 ::::
 ::::{grid-item}
@@ -73,7 +74,7 @@ over and surrounding the field site. Field uncertainty error bars are the standa
 Satellite Surface Reflectance versus Field Site Surface Reflectance on this day are shown in coloured symbols, as per the insetted legend.
 Black dots represent the values from all previous field site measurements prior to 2023-11-27. The solid line represents the one-to-one line
 of equality between field and satellite measurements. Parameters for the line of best fit through all shown points are given in the lower right.
-Note that the line of best fit is NOT shown here.
+Note that the line of best fit is not shown here.
 :::
 ::::
 :::::
