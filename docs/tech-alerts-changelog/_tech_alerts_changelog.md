@@ -12,6 +12,10 @@
 See the [DEA monitoring dashboard](https://monitoring.dea.ga.gov.au/) to check the current status of DEA's services.
 :::
 
+## 2024-03-28: DEA Sandbox outage
+
+The [DEA Sandbox](https://app.sandbox.dea.ga.gov.au/) is currently experiencing an outage. We are currently investigating the outage and will work to fix it as soon as possible. Please check this page again soon for the latest updates.
+
 ## 2024-03-25: DEA Waterbodies version 3.0.0 released
 
 Improvements include additional supporting data for the most recent observations made available through web mapping services (WMS) and DEA Maps, more metadata, Landsat 9 data, and pipeline upgrades. Version 3.0.0 of DEA Waterbodies uses the same underlying polygon set as DEA Waterbodies version 2.0.0. [Learn more](/data/product/dea-waterbodies-landsat/?tab=history)
