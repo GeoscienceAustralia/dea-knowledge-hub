@@ -7,7 +7,7 @@
 
 2024-03-28: DEA Sandbox outage
 
-DEA is currently working on a solution to this issue. See more information below.
+DEA is currently working on a solution to this issue. See below for more information.
 
 2024-03-21: We have received notice from NASA that Direct Broadcast satellite downloads from the Terra satellite are currently unavailable. This means that Terra-derived [DEA Hotspots](https://hotspots.dea.ga.gov.au/) are unavailable until further notice.
 
