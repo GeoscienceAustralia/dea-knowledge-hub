@@ -2,12 +2,12 @@
 % https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/tech_alerts_changelog.html
 
 :::{admonition} DEA System Status
-:class: danger
+:class: caution
 % Change the 'class' to either: tip / caution / danger
 
 2024-03-28: DEA Sandbox outage
 
-DEA is currently working on a solution to this issue. See below for more information.
+DEA has implemented a solution as we continue to investigate the cause of the problem. See below for more information.
 
 2024-03-21: We have received notice from NASA that Direct Broadcast satellite downloads from the Terra satellite are currently unavailable. This means that Terra-derived [DEA Hotspots](https://hotspots.dea.ga.gov.au/) are unavailable until further notice.
 
@@ -18,9 +18,13 @@ See the [DEA monitoring dashboard](https://monitoring.dea.ga.gov.au/) to check t
 
 ## 2024-03-28: DEA Sandbox outage
 
-There is currently an unplanned outage on the [Digital Earth Australia Sandbox](https://app.sandbox.dea.ga.gov.au/). DEA is investigating the cause of the problem and is working on implementing a solution. It is currently unknown how long the outage will last.
+Users may have encountered an unplanned outage on the [Digital Earth Australia Sandbox](https://app.sandbox.dea.ga.gov.au/).
 
-You will be unable to log in or access your DEA Sandbox account while the incident is ongoing. You may also notice reduced performance on other DEA systems during this outage.
+DEA has implemented a solution as we continue to investigate the cause of the problem.
+
+DEA Sandbox users are warned to expect intermittent issues over the next 12 hours.
+
+Users may be unable to login to or access their DEA Sandbox account while the incident is being investigaged. Users may also notice reduced performance on other DEA systems during this outage.
 
 You can monitor the status of DEA’s systems on the [DEA monitoring dashboard](https://monitoring.dea.ga.gov.au/). If you would like to contact DEA, please email [earth.observation@ga.gov.au](mailto:earth.observation@ga.gov.au)
 
