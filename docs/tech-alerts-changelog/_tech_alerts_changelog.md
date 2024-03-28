@@ -2,8 +2,12 @@
 % https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/tech_alerts_changelog.html
 
 :::{admonition} DEA System Status
-:class: caution
+:class: danger
 % Change the 'class' to either: tip / caution / danger
+
+2024-03-28: DEA Sandbox outage
+
+DEA is currently working on a solution to this issue. See more information below.
 
 2024-03-21: We have received notice from NASA that Direct Broadcast satellite downloads from the Terra satellite are currently unavailable. This means that Terra-derived [DEA Hotspots](https://hotspots.dea.ga.gov.au/) are unavailable until further notice.
 
