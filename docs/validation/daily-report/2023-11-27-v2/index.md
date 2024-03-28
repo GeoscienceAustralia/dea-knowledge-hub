@@ -28,8 +28,8 @@ data were collected.
 ## Results
 
 The surface reflectance statistics collected on this day are grouped into bands.
-This allows the data to be used to validate our other datasets which use the
-same standardised bands.
+This allows the data to be used to validate Geoscience Australia's other datasets
+which use the same standardised bands.
 
 ```{eval-rst}
 .. container:: validation-report-download
@@ -56,14 +56,14 @@ same standardised bands.
 
 ## Figures
 
-Click each figure to view it at full size.
+Click an image to view it at full size.
 
 :::::{grid} 1 1 2 3
 ::::{grid-item}
 :::{figure} ./RGB-2023-11-27.png
 
 A satellite imagery tile of true colour (RGB) surface reflectance. It covers an
-area of approximately 2 km × 2 km. The white box indicates the size and location
+area of approximately 2&nbsp;km × 2&nbsp;km. The white box indicates the size and location
 of the field site.
 :::
 ::::
