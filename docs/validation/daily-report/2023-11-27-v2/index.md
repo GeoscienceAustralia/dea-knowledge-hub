@@ -63,7 +63,7 @@ Click an image to view it at full size.
 :::{figure} ./RGB-2023-11-27.png
 
 A satellite imagery tile of true colour (RGB) surface reflectance. It covers an
-area of approximately 2&nbsp;km × 2&nbsp;km. The white box indicates the size and location
+area of approximately 2&nbsp;km &times; 2&nbsp;km. The white box indicates the size and location
 of the field site.
 :::
 ::::
