@@ -6,6 +6,4 @@
 
 {{ data.description }}
 
-.. tableofcontents::
-   :titlesonly:
-
+Start by browsing the latest daily report, quarterly report, or yearly report.

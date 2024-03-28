@@ -210,12 +210,18 @@ entries:
         entries:
           - file: validation/daily-reports
             title: All daily reports
+            options:
+              reversed: True
             entries:
               - glob: validation/daily-report/*/index
       - caption: Quarterly Reports
+        options:
+          reversed: True
         entries:
           - glob: validation/quarterly-report/*/index
       - caption: Yearly Reports
+        options:
+          reversed: True
         entries:
           - glob: validation/yearly-report/*/index
 
