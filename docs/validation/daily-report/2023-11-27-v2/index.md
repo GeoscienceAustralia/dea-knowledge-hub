@@ -19,7 +19,7 @@ The variables and other environmental factors that were present on the day the d
 "Time of overpass (UTC)", 2023-11-27 00:45:46
 "GPS quality","Good"
 "Reference position","142.1036962E, 31.8135401S (WGS84)"
-"<a href='/guides/about/glossary/#pq' target='_blank'>Matchup quality</a>","Good"
+"Matchup quality","Good"
 :::
 
 ## Results
@@ -35,7 +35,7 @@ The surface reflectance statistics collected on this day are grouped into bands.
 :::{csv-table}
 :class: validation-report-results-table
 
-"<a href='/guides/about/glossary/#band' target='_blank'>Band</a>","Sat Mean","Sat rms","Field mean","Field rms"
+"Band","Sat Mean","Sat rms","Field mean","Field rms"
 "CA","0.0546","0.000435","0.0488","0.003"
 "Blue","0.0659","0.00141","0.0638","0.00402"
 "Green","0.102","0.00452","0.104","0.0104"
@@ -63,7 +63,7 @@ A satellite imagery tile showing true colour (RGB) surface reflectance. It cover
 ::::{grid-item}
 :::{figure} ./DayComparison-2023-11-27.png
 
-A band-by-band plot of surface reflectance for satellite (blue) and field (red) data. Satellite uncertainty error bars for each band are the standard deviation of pixel values 
+A band-by-band plot of surface reflectance for satellite and field data. Satellite uncertainty error bars for each band are the standard deviation of pixel values 
 over and surrounding the field site. Field uncertainty error bars are the standard deviation of values after averaging all spectra within the same satellite pixels. 
 
 :::
