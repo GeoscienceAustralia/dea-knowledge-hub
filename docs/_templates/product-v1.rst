@@ -57,12 +57,14 @@
       {%- if valid_product_types %}
       :{{ product_types_label }}: {{ valid_product_types | join(", ") }}
       {%- endif %}
+      {%- if data.time_span %}
       {%- if data.time_span.start and data.time_span.end %}
       :Time span: {{ data.time_span.start }} – {{ data.time_span.end }}
       {%- elif data.time_span.start  %}
       :Starts at: {{ data.time_span.start }}
       {%- elif data.time_span.end  %}
       :Ends at: {{ data.time_span.end }}
+      {%- endif %}
       {%- endif %}
       :Update frequency: {{ data.update_frequency }}
       {%- if data.next_update %}
@@ -181,16 +183,20 @@
        .. list-table::
           :name: key-details-table
 
+          {% if data.parent_products %}
           {% if data.parent_products.name and data.parent_products.link %}
           * - **Parent product(s)**
             - `{{ data.parent_products.name }} <{{ data.parent_products.link }}>`_
           {%- endif %}
+          {%- endif %}
+          {%- if data.collection %}
           {%- if data.collection.name and data.collection.link %}
           * - **Collection**
             - `{{ data.collection.name }} <{{ data.collection.link }}>`_
           {%- elif data.collection.name %}
           * - **Collection**
             - {{ data.collection.name }}
+          {%- endif %}
           {%- endif %}
           {%- if data.doi and data.ecat %}
           * - **DOI**
