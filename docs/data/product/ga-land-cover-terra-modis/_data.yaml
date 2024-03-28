@@ -29,6 +29,13 @@ collection:
 doi: null
 ecat: "83868"
 nci: null
+licence:
+  name: Creative Commons Attribution 4.0 International Licence
+  link: https://creativecommons.org/licenses/by/4.0/
+
+citations:
+  data_citation: null
+  paper_citation: null
 
 tags:
   - drought
