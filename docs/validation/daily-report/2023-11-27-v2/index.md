@@ -71,10 +71,10 @@ over and surrounding the field site. Field uncertainty error bars are the standa
 ::::{grid-item}
 :::{figure} ./OverallComparison-2023-11-27.png
 
-Satellite Surface Reflectance versus Field Site Surface Reflectance on this day are shown in coloured symbols, as per the insetted legend.
-Black dots represent the values from all previous field site measurements prior to 2023-11-27. The solid line represents the one-to-one line
-of equality between field and satellite measurements. Parameters for the line of best fit through all shown points are given in the lower right.
-Note that the line of best fit is not shown here.
+Satellite Surface Reflectance versus Field Site Surface Reflectance on this day are shown.
+The solid line is the one-to-one line of equality between field and satellite measurements.
+The black dots are the values from all previous field site measurements prior to this date. 
+The line of best fit is not shown, but its parameters are given in the bottom-right corner.
 :::
 ::::
 :::::
