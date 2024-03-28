@@ -24,7 +24,7 @@ DEA has implemented a solution as we continue to investigate the cause of the pr
 
 DEA Sandbox users are warned to expect intermittent issues over the next 12 hours.
 
-Users may be unable to login to or access their DEA Sandbox account while the incident is being investigaged. Users may also notice reduced performance on other DEA systems during this outage.
+Users may be unable to log in to or access their DEA Sandbox account while the incident is being investigated. Users may also notice reduced performance on other DEA systems during this outage.
 
 You can monitor the status of DEA’s systems on the [DEA monitoring dashboard](https://monitoring.dea.ga.gov.au/). If you would like to contact DEA, please email [earth.observation@ga.gov.au](mailto:earth.observation@ga.gov.au)
 
