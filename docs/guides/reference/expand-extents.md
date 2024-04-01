@@ -1,3 +1,13 @@
+#### Background
+
+DEA produces surface reflectance products from Landsat and Sentinel-2 satellite observations which cover the continent and some near-shore islands of Australia. This data is used to produce derivative products such as DEA Coastlines, Water Observations, and Fractional Cover.  
+
+We are extending our baseline satellite data to include Christmas Island, Cocos (Keeling) Islands, Coral Sea Islands, Heard and McDonald Islands, Norfolk Island and Islands in the Torres Strait. Additionally, we are processing imagery over shallow Ocean to support bathymetry and oceanography science.  
+
+The new data was requested by and will support Indigenous Communities in the Torres Straits in addition to Government agencies who seek to report on Ocean Ecosystem Accounts and manage the full extent of our Marine Parks. 
+
+The update is in support of DEA's expansion of the Summary Product Grid to shift the origin point to the southwest of the current position. The expanded Area of Interest will support several DEA product releases and version updates throughout 2024.
+
 #### Expanded Locations:  
 
 Heard Island and MacDonald Islands (134-097, 135-097, 136-097, 43FDA, 43FDB, 43FCB, 43FCA) 
