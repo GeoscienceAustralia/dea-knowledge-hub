@@ -8,36 +8,65 @@ We are extending our baseline satellite data to include Christmas Island, Cocos 
 
 The new data was requested by and will support Indigenous Communities in the Torres Straits in addition to Government agencies who seek to report on Ocean Ecosystem Accounts and manage the full extent of our Marine Parks. 
 
-The update is in support of DEA's expansion of the Summary Product Grid to shift the origin point to the southwest of the current position. The expanded Area of Interest will support several DEA product releases and version updates throughout 2024.
+The update is in support of DEA's expansion of the Summary Product Grid to shift the origin point to the south-west of the current position. The expanded Area of Interest will support several DEA product releases and version updates throughout 2024.
 
 ## Expanded Locations
 
-Heard Island and MacDonald Islands (134-097, 135-097, 136-097, 43FDA, 43FDB, 43FCB, 43FCA) 
-Lord Howe Island (084-082, 085-082, 59JKJ, 58JGP, 59JKH, 58JGN) 
-MacQuarie Island (080-098, 079-098, 079-099, 57FWU, 57FWV, 57FVV, 57FWA, 57FVA, 57FVU) 
-Norfolk Island (079-080, 080-080, 57JWF, 57JVF, 57HVE, 57HWE) 
-Chirstmas Island (122-067, 123-067, 48LWP, 48LXP) 
-Cocos (Keeling) Island (128-068, 128-069, 47LKG, 47LKH, 46LHN, 46LHM) 
-Talbot Islands, Dauan Island, Saibai Island and Boigu Island (099-066) 
-Daru, Western Province Papua New Guinea and Northern Warrior Reefs (098-066, 54LZR)
-Elizabeth Reef (085-081, 57JVG, 57JWG) 
-Middleton Reef (085-080, 57JVH, 57JWH) 
-Frederick Reef, Queensland (088-075, 56KQB, 57KTS, 56KQA) 
-Coral Sea – Scenes with Ocean depth less than 200m (089-072, 088-074, 088-076, 54LZL, 55KEA, 55KFV, 55KGA, 55KGV, 55KHA, 55KHT, 55KHU, 55LBF, 55LBJ, 55LBK, 55LCJ, 55LDC, 55LDE, 56KKC, 55KKD, 56KKF, 56KLC, 56KMV, 56KNU, 56KQA, 56KQB, 56KQF, 56KQG, 56KQV, 56KRB, 56KRF, 56KRG, 57KTA, 57KTB, 57KTS, 57KTS) 
-Gulf of Carpentaria (101-069, 53LRC, 54LTH) 
-Arafura Sea (102-067, 104-067, 106-067, 107-068, 107-069, 52LEM, 52LEN, 52LFP, 52LHP, 53LLJ, 53LPJ, 53LQH, 53LQJ) 
-Timor Sea (51LVD, 51LWD, 51LWF, 51LXE, 51LXF, 51LYF, 51LZF, 52LBL, 52LCL, 52LDK) 
-Indian Ocean (116-075, 49HGB, 49HGC, 49JFL, 49KGS, 49KHT, 50HKG, 50HKH, 50HKJ, 50HMF, 50HNF, 50JKL, 50KKC) 
-Great Australian Bight (52HBI, 52HEK, 52HFK, 53HKD, 53HLC, 53HNA) 
-Augusta, Western Australia (113-084) 
-Tasman Sea (089-088, 089-091, 090-091, 55GFM) 
-Bass Strait (54HXB) 
+:::{list-table}
+:header-rows: 1
+
+* - Area
+  - Tiles
+* - Heard Island and MacDonald Islands
+  - 134-097, 135-097, 136-097, 43FDA, 43FDB, 43FCB, 43FCA 
+* - Lord Howe Island
+  - 084-082, 085-082, 59JKJ, 58JGP, 59JKH, 58JGN 
+* - MacQuarie Island
+  - 080-098, 079-098, 079-099, 57FWU, 57FWV, 57FVV, 57FWA, 57FVA, 57FVU 
+* - Norfolk Island
+  - 079-080, 080-080, 57JWF, 57JVF, 57HVE, 57HWE 
+* - Chirstmas Island
+  - 122-067, 123-067, 48LWP, 48LXP 
+* - Cocos (Keeling) Island
+  - 128-068, 128-069, 47LKG, 47LKH, 46LHN, 46LHM 
+* - Talbot Islands, Dauan Island, Saibai Island and Boigu Island
+  - 099-066 
+* - Daru, Western Province Papua New Guinea and Northern Warrior Reefs
+  - 098-066, 54LZR
+* - Elizabeth Reef
+  - 085-081, 57JVG, 57JWG 
+* - Middleton Reef
+  - 085-080, 57JVH, 57JWH 
+* - Frederick Reef, Queensland
+  - 088-075, 56KQB, 57KTS, 56KQA 
+* - Coral Sea – Scenes with Ocean depth less than 200m
+  - 089-072, 088-074, 088-076, 54LZL, 55KEA, 55KFV, 55KGA, 55KGV, 55KHA, 55KHT, 55KHU, 55LBF, 55LBJ, 55LBK, 55LCJ, 55LDC, 55LDE, 56KKC, 55KKD, 56KKF, 56KLC, 56KMV, 56KNU, 56KQA, 56KQB, 56KQF, 56KQG, 56KQV, 56KRB, 56KRF, 56KRG, 57KTA, 57KTB, 57KTS, 57KTS 
+* - Gulf of Carpentaria
+  - 101-069, 53LRC, 54LTH 
+* - Arafura Sea
+  - 102-067, 104-067, 106-067, 107-068, 107-069, 52LEM, 52LEN, 52LFP, 52LHP, 53LLJ, 53LPJ, 53LQH, 53LQJ 
+* - Timor Sea
+  - 51LVD, 51LWD, 51LWF, 51LXE, 51LXF, 51LYF, 51LZF, 52LBL, 52LCL, 52LDK 
+* - Indian Ocean
+  - 116-075, 49HGB, 49HGC, 49JFL, 49KGS, 49KHT, 50HKG, 50HKH, 50HKJ, 50HMF, 50HNF, 50JKL, 50KKC 
+* - Great Australian Bight
+  - 52HBI, 52HEK, 52HFK, 53HKD, 53HLC, 53HNA 
+* - Augusta, Western Australia
+  - 113-084 
+* - Tasman Sea
+  - 089-088, 089-091, 090-091, 55GFM 
+* - Bass Strait
+  - 54HXB 
+
+:::
 
 ## Quality and Metadata 
 
-The quality of ancillary inputs used in ARD generation in offshore locations is limited in comparison to the higher quality ancillary inputs used on continental Australia. Quality information for ancillary inputs is found in the proc-info (processing information) yaml metadata file within the dataset. The tier list is USER, FALLBACK and DEFINITIVE with the latter being the highest level of quality. Unfortunately, this information is not available to users via the datacube, so we have added an additional metadata tag final_ancillaries = 'nonstandard' to delineate data delivered in this update.
+The quality of ancillary inputs used in ARD generation in offshore locations is limited in comparison to the higher quality ancillary inputs used on continental Australia. Quality information for ancillary inputs is found in the proc-info (processing information) YAML metadata file within the dataset. The tier list is USER, FALLBACK, and DEFINITIVE, with the latter being the highest level of quality. Unfortunately, this information is not available to users via the datacube, so we have added an additional metadata tag to delineate data delivered in this update: `final_ancillaries = 'nonstandard'`
 
-    dc.find_datasets(product="ga_ls8c_ard_3", limit=10, final_ancillaries="nonstandard") 
+```python
+dc.find_datasets(product="ga_ls8c_ard_3", limit=10, final_ancillaries="nonstandard")
+```
 
 ## Geometric quality assessment issues 
 
