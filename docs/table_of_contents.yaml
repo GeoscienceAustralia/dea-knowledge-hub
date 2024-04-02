@@ -208,7 +208,7 @@ entries:
     subtrees:
       - caption: Daily Reports
         entries:
-          - file: validation/daily-reports
+          - file: validation/daily-report/index
             title: All daily reports
             options:
               reversed: True
@@ -218,12 +218,22 @@ entries:
         options:
           reversed: True
         entries:
-          - glob: validation/quarterly-report/*/index
+          - file: validation/quarterly-report/index
+            title: All quarterly reports
+            options:
+              reversed: True
+            entries:
+              - glob: validation/quarterly-report/*/index
       - caption: Yearly Reports
         options:
           reversed: True
         entries:
-          - glob: validation/yearly-report/*/index
+          - file: validation/yearly-report/index
+            title: All yearly reports
+            options:
+              reversed: True
+            entries:
+              - glob: validation/yearly-report/*/index
 
   # Tags
 
