@@ -15,7 +15,7 @@ The update is in support of DEA's expansion of the Summary Product Grid to shift
 :::{list-table}
 :header-rows: 1
 
-* - Area
+* - Locality
   - Tiles
 * - Heard Island and MacDonald Islands
   - 134-097, 135-097, 136-097, 43FDA, 43FDB, 43FCB, 43FCA 
@@ -62,7 +62,7 @@ The update is in support of DEA's expansion of the Summary Product Grid to shift
 
 ## Quality and metadata 
 
-The quality of ancillary inputs used in ARD generation in offshore locations is limited in comparison to the higher quality ancillary inputs used on continental Australia. Quality information for ancillary inputs is found in the proc-info (processing information) YAML metadata file within the dataset. The tier list is USER, FALLBACK, and DEFINITIVE, with the latter being the highest level of quality. Unfortunately, this information is not available to users via the datacube, so we have added an additional metadata tag to delineate data delivered in this update: `final_ancillaries = 'nonstandard'`
+The quality of ancillary inputs used in ARD generation in offshore locations is limited in comparison to the higher quality ancillary inputs used on continental Australia. Quality information for ancillary inputs is found in the proc-info (processing information) YAML metadata file within the dataset. The tier list is USER, FALLBACK, and DEFINITIVE, with the latter being the highest level of quality. Unfortunately, this information is not available to users via the datacube, so we have added an additional metadata tag to delineate data delivered in this update: `final_ancillaries = "nonstandard"`
 
 ```python
 dc.find_datasets(product="ga_ls8c_ard_3", limit=10, final_ancillaries="nonstandard")
