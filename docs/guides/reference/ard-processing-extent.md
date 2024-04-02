@@ -15,8 +15,8 @@ Here is the new full list of locations that are supported.
 :::{list-table}
 :header-rows: 1
 
-* - Locality
-  - Tiles
+* - Region
+  - Scenes / Tiles
 * - Heard Island and MacDonald Islands
   - 134-097, 135-097, 136-097, 43FDA, 43FDB, 43FCB, 43FCA 
 * - Lord Howe Island
