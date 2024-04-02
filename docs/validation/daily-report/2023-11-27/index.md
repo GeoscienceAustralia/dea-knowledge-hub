@@ -2,7 +2,7 @@
 
 A Daily Validation Summary Report of the surface reflectance data collected on
 the date of 2023-11-27 by Geoscience&nbsp;Australia. The full collection of data is
-contained in the [NSD database](https://www.dea.ga.gov.au/products/national-spectral-database).
+contained in the [National Spectral Database](https://www.dea.ga.gov.au/products/national-spectral-database).
 
 :::{contents} In this report
 :local:
