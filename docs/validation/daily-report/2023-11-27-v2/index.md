@@ -1,7 +1,7 @@
 # 2023-11-27: Mullion, Landsat 8 overpass
 
 A Daily Validation Summary Report of the surface reflectance data collected on
-the date of 2023-11-27 by Geoscience&nbsp;Australia. The full data collection is
+the date of 2023-11-27 by Geoscience&nbsp;Australia. The full collection of data is
 contained in the [NSD database](https://www.dea.ga.gov.au/products/national-spectral-database).
 
 :::{contents} In this report
@@ -11,8 +11,8 @@ contained in the [NSD database](https://www.dea.ga.gov.au/products/national-spec
 
 ## Variables
 
-The variables and other environmental factors that were present on the day the
-data were collected.
+These variables and environmental factors were present on the day the data were
+collected.
 
 :::{csv-table}
 :class: validation-report-variables-table
