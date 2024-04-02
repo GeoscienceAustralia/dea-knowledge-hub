@@ -2,9 +2,9 @@
 
 ## Background
 
-DEA produces surface reflectance products from Landsat and Sentinel-2 satellite observations which cover the continent and some near-shore islands of Australia. This data is used to produce derivative products such as DEA Coastlines, Water Observations, and Fractional Cover.  
+DEA produces surface reflectance products from Landsat and Sentinel-2 satellite observations which cover the continent and some near-shore islands of Australia. This data is used to produce derivative products such as DEA Coastlines, Water Observations, and Fractional Cover.
 
-We are extending our baseline satellite data to include Christmas Island, Cocos (Keeling) Islands, Coral Sea Islands, Heard and McDonald Islands, Norfolk Island and Islands in the Torres Strait. Additionally, we are processing imagery over shallow Ocean to support bathymetry and oceanography science.  
+We are extending our baseline satellite data to include Christmas Island, Cocos (Keeling) Islands, Coral Sea Islands, Heard and McDonald Islands, Norfolk Island and Islands in the Torres Strait. Additionally, we are processing imagery over shallow Ocean to support bathymetry and oceanography science.
 
 The new data was requested by and will support Indigenous Communities in the Torres Straits in addition to Government agencies who seek to report on Ocean Ecosystem Accounts and manage the full extent of our Marine Parks. 
 
@@ -19,7 +19,7 @@ Norfolk Island (079-080, 080-080, 57JWF, 57JVF, 57HVE, 57HWE)
 Chirstmas Island (122-067, 123-067, 48LWP, 48LXP) 
 Cocos (Keeling) Island (128-068, 128-069, 47LKG, 47LKH, 46LHN, 46LHM) 
 Talbot Islands, Dauan Island, Saibai Island and Boigu Island (099-066) 
-Daru, Western Province Papua New Guinea and Northern Warrior Reefs (098-066, 54LZR)  
+Daru, Western Province Papua New Guinea and Northern Warrior Reefs (098-066, 54LZR)
 Elizabeth Reef (085-081, 57JVG, 57JWG) 
 Middleton Reef (085-080, 57JVH, 57JWH) 
 Frederick Reef, Queensland (088-075, 56KQB, 57KTS, 56KQA) 
@@ -35,29 +35,29 @@ Bass Strait (54HXB)
 
 ## Quality and Metadata 
 
-The quality of ancillary inputs used in ARD generation in offshore locations is limited in comparison to the higher quality ancillary inputs used on continental Australia. Quality information for ancillary inputs is found in the proc-info (processing information) yaml metadata file within the dataset. The tier list is USER, FALLBACK and DEFINITIVE with the latter being the highest level of quality. Unfortunately, this information is not available to users via the datacube, so we have added an additional metadata tag final_ancillaries = 'nonstandard' to delineate data delivered in this update.  
+The quality of ancillary inputs used in ARD generation in offshore locations is limited in comparison to the higher quality ancillary inputs used on continental Australia. Quality information for ancillary inputs is found in the proc-info (processing information) yaml metadata file within the dataset. The tier list is USER, FALLBACK and DEFINITIVE with the latter being the highest level of quality. Unfortunately, this information is not available to users via the datacube, so we have added an additional metadata tag final_ancillaries = 'nonstandard' to delineate data delivered in this update.
 
     dc.find_datasets(product="ga_ls8c_ard_3", limit=10, final_ancillaries="nonstandard") 
 
 ## Geometric quality assessment issues 
 
-ARD is a Surface Reflectance product which is derived from USGS or ESA level 1 products. The level 1 product is geometrically corrected such that the product is “ortho-rectified” which results in enabling acquisitions from different dates to be spatially overlayed for assessment through time. The ARD product provides a comprehensive quality assurance of geometric correction known as GQA, which is found in the dataset and processing information metadata.  
+ARD is a Surface Reflectance product which is derived from USGS or ESA level 1 products. The level 1 product is geometrically corrected such that the product is “ortho-rectified” which results in enabling acquisitions from different dates to be spatially overlayed for assessment through time. The ARD product provides a comprehensive quality assurance of geometric correction known as GQA, which is found in the dataset and processing information metadata.
 
-This update features the addition of Landsat scenes and Sentinel 2 tiles over islands and reefs. Some of these Islands, such as Christmas Island or Islands South of Papua New Guinea, are at extreme high or low latitudes and are affected by persistent cloud. This presents challenges when corelating the reference image against source images, to provide statistical geometric comparison results.  
+This update features the addition of Landsat scenes and Sentinel 2 tiles over islands and reefs. Some of these Islands, such as Christmas Island or Islands South of Papua New Guinea, are at extreme high or low latitudes and are affected by persistent cloud. This presents challenges when corelating the reference image against source images, to provide statistical geometric comparison results.
 
 ## BRDF quality issues 
 
-BRDF is a solar illumination correction which adjusts reflectance intensity in differing amounts in differing directions. The light that comes from the Sun, reflects off the Earth and is received by the sensor is adjusted based on viewing/solar angle geometries of MODIS data.   
+BRDF is a solar illumination correction which adjusts reflectance intensity in differing amounts in differing directions. The light that comes from the Sun, reflects off the Earth and is received by the sensor is adjusted based on viewing/solar angle geometries of MODIS data.
 
-Sometimes over offshore locations we have found BRDF values to be unphysical. We have implemented a BRDF solution over the offshore locations, which screens out unphysical BRDF values and excludes them from the solar illumination correction.  
+Sometimes over offshore locations we have found BRDF values to be unphysical. We have implemented a BRDF solution over the offshore locations, which screens out unphysical BRDF values and excludes them from the solar illumination correction.
 
 ## Water vapor 
 
-No ancillary source  dataset difference between mainland and offshore locations.  
+No ancillary source  dataset difference between mainland and offshore locations.
 
 ## Aerosol 
 
-A constant value of 0.06 Aerosol Optical Depth (AOD) is used as ancillary input as we do not have aerosol data for these extended locations. The constant value is based on the assumption that the average AOD data in Australian continental is around the 0.05, but islands are surrounded by the sea and impacted by the particle of salt water, so setting AOD as 0.06 is reasonable.  
+A constant value of 0.06 Aerosol Optical Depth (AOD) is used as ancillary input as we do not have aerosol data for these extended locations. The constant value is based on the assumption that the average AOD data in Australian continental is around the 0.05, but islands are surrounded by the sea and impacted by the particle of salt water, so setting AOD as 0.06 is reasonable.
 
 ## Ozone  
 
