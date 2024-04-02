@@ -2,8 +2,6 @@
 
 Satellite imagery allows us to observe the Earth with significant accuracy and detail. However, missing data — such as gaps caused by cloud cover — can make it difficult to create a complete image. In order to produce a single, complete view of a certain area, satellite data must be consolidated by stacking measurements from different points in time to create a composite image. 
 
-The Digital Earth Australia GeoMAD (Geometric Median and Median Absolute Deviation) data product is a cloud-free composite of satellite data compiled annually for each calendar year. 
-
 Large-scale image composites are increasingly important for a variety of applications such as land cover mapping, change detection, and the generation of high-quality data to parameterise and validate bio-physical and geophysical models. A number of compositing methodologies are being used in remote sensing in general; however, challenges still exist. These challenges include  mitigating against boundary artifacts due to mosaicking scenes from different epochs ensuring spatial regularity across the mosaic image and maintaining the spectral relationship between bands. 
 
 The creation of good composite images is especially important due to the opening of the [Landsat archive of the United States Geological Survey](https://www.usgs.gov/landsat-missions/landsat-collections). The greater availability of satellite imagery has resulted in demand to provide large regional mosaics that are representative of conditions over specific time periods while also being free of clouds and other unwanted visual noise. One approach is to ‘stitch together’ multiple selected high-quality images. Another is to create mosaics in which pixels from a time series of observations are combined (using an algorithm). This ‘pixel composite’ approach to mosaic generation provides more consistent results than with stitching high-quality images due to the improved colour balance created by combining one-by-one pixel-representative images. Another strength of pixel-based composites is their ability to be automated, hence enabling their use in large data collections and time series datasets. 
@@ -85,9 +83,9 @@ As shown in the figure above, this algorithm is calculated as follows.
 
 ### Geometric Median
 
-Geomedian (or geometric median) composites are multi-band generalisations of median composites. A geomedian composite finds the median values of the bands for each pixel when considered together (as opposed to simple median composites which find a pixel’s median value for each band individually).
+Geometric Median composites are multi-band generalisations of median composites. A geometric median composite finds the median values of the bands for each pixel when considered together (as opposed to simple median composites which find a pixel’s median value for each band individually).
 
-Geomedians are an appropriate choice of algorithm because they represent multiple bands of data. 
+Geometric Medians are an appropriate choice of algorithm because they represent multiple bands of data. 
 
 The **surface reflectance geomedian** uses high-dimensional statistical theory to deliver a spectrally consistent and reasonably artefact-free pixel composite product. 
 
@@ -160,7 +158,7 @@ The ‘first order’ statistics of a dataset include the mean and the median. A
 
 A ‘second order’ statistic associated with a mean of a dataset is the standard deviation which provides a measure of data variance. The equivalent second order statistic associated with the median is the Median Absolute Deviation (MAD), which provides the associated variance measures for the median. 
 
-The MAD is the median of absolute differences of the individual values in a set of data from their overall median. To calculate the MAD for a multi-dimensional dataset — such as the set of satellite images captured in a year — measures of ‘distance’ from each multi-dimensional measurement to the median are needed (these are the set of spectral measurements for a pixel through time:  blue, green, red, near-infra-red, and short-wave-infra-red). However, multi-dimensional distances can be calculated in different ways, providing different insights into the behaviour of pixels through time. The DEA GeoMAD product includes three MADs produced from different measures of distance.
+The MAD is the median of absolute differences of the individual values in a set of data from their overall median. To calculate the MAD for a multi-dimensional dataset — such as the set of satellite images captured in a year — measures of ‘distance’ from each multi-dimensional measurement to the median are needed. These are the set of spectral measurements for a pixel through time:  blue, green, red, near-infra-red, and short-wave-infra-red. However, multi-dimensional distances can be calculated in different ways, providing different insights into the behaviour of pixels through time. The DEA GeoMAD product includes three MADs produced from different measures of distance.
 
 * **Euclidean distance (EMAD)** — this is more sensitive to changes in target brightness.
 * **Cosine (spectral) distance (SMAD)** —  this is more sensitive to changes in target spectral response.
