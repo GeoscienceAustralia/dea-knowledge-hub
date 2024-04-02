@@ -76,7 +76,7 @@ This update features the addition of Landsat scenes and Sentinel 2 tiles over is
 
 ## BRDF quality issues 
 
-BRDF is a solar illumination correction which adjusts reflectance intensity in differing amounts in differing directions. The light that comes from the Sun, reflects off the Earth and is received by the sensor is adjusted based on viewing/solar angle geometries of MODIS data.
+[BRDF](/guides/about/glossary/#brdf) is a solar illumination correction which adjusts reflectance intensity in differing amounts in differing directions. The light that comes from the Sun, reflects off the Earth and is received by the sensor is adjusted based on viewing/solar angle geometries of MODIS data.
 
 Sometimes over offshore locations we have found BRDF values to be unphysical. We have implemented a BRDF solution over the offshore locations, which screens out unphysical BRDF values and excludes them from the solar illumination correction.
 
