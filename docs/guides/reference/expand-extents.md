@@ -70,9 +70,9 @@ dc.find_datasets(product="ga_ls8c_ard_3", limit=10, final_ancillaries="nonstanda
 
 ## Geometric quality assessment issues 
 
-ARD is a Surface Reflectance product which is derived from USGS or ESA level 1 products. The level 1 product is geometrically corrected such that the product is “ortho-rectified” which results in enabling acquisitions from different dates to be spatially overlayed for assessment through time. The ARD product provides a comprehensive quality assurance of geometric correction known as GQA, which is found in the dataset and processing information metadata.
+ARD is a Surface Reflectance product which is derived from USGS or ESA level 1 products. The level 1 product is geometrically corrected such that the product is 'ortho-rectified' which results in enabling acquisitions from different dates to be spatially overlaid for assessment through time. The ARD product provides a comprehensive quality assurance of geometric correction known as GQA, which is found in the dataset and processing information metadata.
 
-This update features the addition of Landsat scenes and Sentinel 2 tiles over islands and reefs. Some of these Islands, such as Christmas Island or Islands South of Papua New Guinea, are at extreme high or low latitudes and are affected by persistent cloud. This presents challenges when corelating the reference image against source images, to provide statistical geometric comparison results.
+This update features the addition of Landsat scenes and Sentinel 2 tiles over islands and reefs. Some of these Islands, such as Christmas Island or Islands South of Papua New Guinea, are at extreme high or low latitudes and are affected by persistent cloud. This presents challenges when correlating the reference image against source images, to provide statistical geometric comparison results.
 
 ## BRDF quality issues 
 
@@ -82,7 +82,7 @@ Sometimes over offshore locations we have found BRDF values to be unphysical. We
 
 ## Water vapor 
 
-No ancillary source  dataset difference between mainland and offshore locations.
+No ancillary source dataset difference between mainland and offshore locations.
 
 ## Aerosol 
 
