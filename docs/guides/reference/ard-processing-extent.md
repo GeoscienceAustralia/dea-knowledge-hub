@@ -1,4 +1,4 @@
-# Expand Extents
+# DEA ARD processing extent
 
 ## Background
 
