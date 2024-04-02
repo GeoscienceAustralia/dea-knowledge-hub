@@ -10,7 +10,7 @@ The new data was requested by and will support Indigenous Communities in the Tor
 
 The update is in support of DEA's expansion of the Summary Product Grid to shift the origin point to the southwest of the current position. The expanded Area of Interest will support several DEA product releases and version updates throughout 2024.
 
-## Expanded Locations:
+## Expanded Locations
 
 Heard Island and MacDonald Islands (134-097, 135-097, 136-097, 43FDA, 43FDB, 43FCB, 43FCA) 
 Lord Howe Island (084-082, 085-082, 59JKJ, 58JGP, 59JKH, 58JGN) 
