@@ -10,7 +10,7 @@ The new data was requested by and will support Indigenous Communities in the Tor
 
 The update is in support of DEA's expansion of the Summary Product Grid to shift the origin point to the south-west of the current position. The expanded Area of Interest will support several DEA product releases and version updates throughout 2024.
 
-## Expanded Locations
+## Expanded locations
 
 :::{list-table}
 :header-rows: 1
@@ -60,7 +60,7 @@ The update is in support of DEA's expansion of the Summary Product Grid to shift
 
 :::
 
-## Quality and Metadata 
+## Quality and metadata 
 
 The quality of ancillary inputs used in ARD generation in offshore locations is limited in comparison to the higher quality ancillary inputs used on continental Australia. Quality information for ancillary inputs is found in the proc-info (processing information) YAML metadata file within the dataset. The tier list is USER, FALLBACK, and DEFINITIVE, with the latter being the highest level of quality. Unfortunately, this information is not available to users via the datacube, so we have added an additional metadata tag to delineate data delivered in this update: `final_ancillaries = 'nonstandard'`
 
