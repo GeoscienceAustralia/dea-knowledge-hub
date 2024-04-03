@@ -59,6 +59,19 @@ Figure 3 – DEA Intertidal Elevation validation heatmaps comparing performance 
 
     * Torres Strait Islands, Queensland 
 
+* Areas of highly turbid water can be incorrectly mapped as intertidal terrain, particularly if temporal patterns of turbidity correlate with tidal dynamics. Areas affected by turbidity include:  
+
+    * King Sound, Western Australia
+
+    * Cambridge Gulf, Western Australia  
+
+    * Joseph Bonaparte Gulf, Northern Territory  
+
+    * Daly River, Northern Territory  
+    
+    * Broad Sound, Queensland  
+
+
 ## Quality Assurance  
 
 Code used to generate DEA Intertidal is run against automated integration tests to ensure that product quality is maintained as updates and improvements are made. These tests verify that the entire product generation workflow is performing as expected, and track changes in product accuracy over time: https://github.com/GeoscienceAustralia/dea-intertidal/tree/main/tests 
