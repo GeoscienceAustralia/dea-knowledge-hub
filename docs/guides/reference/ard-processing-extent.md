@@ -86,7 +86,8 @@ No ancillary source dataset difference between mainland and offshore locations.
 
 ## Aerosol 
 
-A constant value of 0.06 Aerosol Optical Depth (AOD) is used as ancillary input as we do not have aerosol data for these extended locations. The constant value is based on the assumption that the average AOD data in Australian continental is around the 0.05, but islands are surrounded by the sea and impacted by the particle of salt water, so setting AOD as 0.06 is reasonable.
+A constant value of 0.06 Aerosol Optical Depth (AOD) is used as ancillary input as we do not have aerosol data for these extended locations. This constant value is based on the assumption that the average AOD data in Australian continental is around the 0.05, but islands are surrounded by the sea and impacted by salt water particles, so setting AOD as 0.06 is reasonable.
+
 
 ## Ozone  
 
