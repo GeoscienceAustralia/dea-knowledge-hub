@@ -1,2 +1,2 @@
 .. datatemplate:yaml:: _data.yaml
-   :template: validation-v1.rst
+   :template: card-list-v1.rst
