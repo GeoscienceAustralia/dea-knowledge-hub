@@ -25,7 +25,7 @@ To add DEA Coastlines to DEA Maps manually:
 
 View the product layer required by selecting the layer from the `Styles` dropdown menu, and use the `Time` selector to view the annual time-series of each product layer.
 
-Note that the colour ramp for the `Elevation` and `Elevation Uncertainty` product layers is scaled dynamically from `low` to `high` to account from the wide variation of tidal ranges and elevations found across Australia, and provide the best contrast on the DEA Maps platform. 
+Note that the colour ramp for the `Elevation` and `Elevation Uncertainty` product layers is scaled dynamically from `low` to `high` to account for the wide variation of tidal ranges and elevations found across Australia, and provide the best contrast on the DEA Maps platform. 
 
 To query an absolute value for any of the product layers, click on a location to see a plain text summary of all the DEA Intertidal product suite data values at that pixel location.
 :::

@@ -46,7 +46,7 @@ NIDEM was the first 3D model of Australia’s intertidal zone - the area of coas
 
 The DEA Intertidal product suite contains 3 core product layers, 7 tidal attribute (ta) layers, and 2 quality assessment (qa) layers, all provided as continental 10 m resolution GeoTIFFs for the Australian coastal and intertidal region.  
 
-All datasets are produced annually from a 3-year composite of input data from the combined Sentinel-2 and Landsat 7, 8, and 9 DEA Collection 3 surface reflectance products. The product time series commences from 2017, with datasets labelled by the middle year of data. For example, the 2017 layer combines data from 2016, 2017, and 2018. Updates to the product suite are scheduled annually. 
+All datasets are produced annually from a 3-year composite of input data from the combined Sentinel-2 and Landsat 7, 8, and 9 DEA Collection 3 surface reflectance products. The product time series commences from 2016, with datasets labelled by the middle year of data. For example, the 2017 layer combines data from 2016, 2017, and 2018. Updates to the product suite are scheduled annually. 
 
 ### File Naming Convention 
 
