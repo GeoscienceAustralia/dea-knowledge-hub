@@ -1,6 +1,6 @@
 # Daily reports
 
-Here are all the daily validation reports of the past two years.
+Here are all the daily validation reports to date.
 
 :::{tableofcontents}
 :titlesonly:

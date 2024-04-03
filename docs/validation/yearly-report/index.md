@@ -1,6 +1,6 @@
 # Yearly reports
 
-Here are all the yearly validation reports of the past two years.
+Here are all the yearly validation reports to date.
 
 :::{tableofcontents}
 :titlesonly:
