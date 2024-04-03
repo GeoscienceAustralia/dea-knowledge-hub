@@ -40,7 +40,7 @@ NIDEM was the first 3D model of Australia’s intertidal zone - the area of coas
 
 
 
-## Technical information
+## Technical Information
 
 ### DEA Intertidal features
 

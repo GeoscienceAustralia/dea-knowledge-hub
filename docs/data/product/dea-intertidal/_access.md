@@ -3,24 +3,19 @@
 % ## Use constraints
 
 :::{dropdown} How to access the data
-DEA Coastlines data for the entire Australian coastline is available to download in two formats:
-* OGC GeoPackage (recommended): suitable for QGIS; includes built-in symbology for easier interpretation
-* Esri Shapefiles: suitable for ArcMap and QGIS
 
-To download DEA Coastlines data:
-1. Click the [Link to data](https://data.dea.ga.gov.au/?prefix=derivative/dea_coastlines/2-1-0/) link above
-2. Click on either the OGC GeoPackage (`coastlines_v2.1.0.gpkg`) or Esri Shapefiles (`coastlines_v2.1.0.shp.zip`) to download the data to your computer.
-3. If you downloaded the Esri Shapefiles data, unzip the zip file by right clicking on the downloaded file and selecting `Extract all`.
+To download DEA Intertidal data:
+1. Click the [Link to data](https://data.dea.ga.gov.au/?prefix=derivative/ga_s2ls_intertidal_cyear_3/) link above
+2. Click on the GRID file to download to your computer. This file can be used in a GIS package to identify the product tiles that you require for a given location. Alternatively, you can access this file via DEA maps (LINK) to identify required tiles. 
+3. Navigate to the required tile folder, first using the tile x reference (e.g. `x079`) and then the tile y reference (e.g. `y123`). Then select your year of interest.
+4. Click on the required product layer to download. See [Technical Information](./?tab=details#technical-information) for details on file naming and product layer details.  
 
-To load OGC GeoPackage data in QGIS:
-1. Drag and drop the `coastlines_v2.1.0.gpkg` file into the main QGIS map window, or select it using `Layer > Add Layer > Add Vector Layer.`
-2. When prompted to `Select Vector Layers to Add`, select all layers and then `OK`.
-3. The DEA Coastlines layers will load with built-in symbology. By default, DEA Coastlines layers automatically transition based on the zoom level of the map. To deactivate this: right click on a layer in the QGIS Layers panel, click `Set Layer Scale Visibility`, and untick `Scale visibility.`
+
 :::
 
 :::{dropdown} How to explore DEA Maps
-To explore DEA Coastlines on the interactive DEA Maps platform, visit the link below:
-[https://maps.dea.ga.gov.au/story/DEACoastlines](https://maps.dea.ga.gov.au/#share=s-DEACoastlines&playStory=1)
+To explore DEA Intertidal on the interactive DEA Maps platform, visit the link below:
+[https://maps.dea.ga.gov.au/story/DEAIntertidal](https://maps.dea.ga.gov.au/#share=s-DEAIntertidal&playStory=1)
 
 To add DEA Coastlines to DEA Maps manually:
 1. Open [DEA Maps](https://maps.dea.ga.gov.au/).
