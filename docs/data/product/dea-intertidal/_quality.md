@@ -35,29 +35,29 @@ Figure 3 – DEA Intertidal Elevation validation heatmaps comparing performance 
 
 ## Caveats / Limitations  
 
-Model performance improved with increasing tide range, being lowest in microtidal coastlines and highest in mesotidal and macrotidal coastlines. Due to the limited spatial extent of the intertidal zone in microtidal environments and the dominance of non-tidal water level influences (e.g. storm surge and ocean waves in high energy wave dominated environments), DEA Intertidal should be used with caution in microtidal environments. 
+* Model performance improved with increasing tide range, being lowest in microtidal coastlines and highest in mesotidal and macrotidal coastlines. Due to the limited spatial extent of the intertidal zone in microtidal environments and the dominance of non-tidal water level influences (e.g. storm surge and ocean waves in high energy wave dominated environments), DEA Intertidal should be used with caution in microtidal environments. 
 
-DEA Intertidal relies on accurate tide modelling for reliable results. Although the Ensemble Tidal Modelling approach used in this product attempts to obtain the best local tide modelling data for any given location, areas of poor quality tide modelling still remain. This is particularly the case in areas of complex and unpredictable tide dynamics, such as embayments and estuaries where global ocean tide modelling results may produce highly inaccurate outputs. In these environments, modelled elevations and exposure should be used with caution and evaluated with reference to modelled elevation uncertainty data. Examples of areas affected by poor quality tide modelling inputs include: 
+* DEA Intertidal relies on accurate tide modelling for reliable results. Although the Ensemble Tidal Modelling approach used in this product attempts to obtain the best local tide modelling data for any given location, areas of poor quality tide modelling still remain. This is particularly the case in areas of complex and unpredictable tide dynamics, such as embayments and estuaries where global ocean tide modelling results may produce highly inaccurate outputs. In these environments, modelled elevations and exposure should be used with caution and evaluated with reference to modelled elevation uncertainty data. Examples of areas affected by poor quality tide modelling inputs include: 
 
-* Western Port, Victoria 
+    * Western Port, Victoria 
 
-* Corner Inlet, Victoria 
+    *   Corner Inlet, Victoria 
 
-* Broad Sound and Shoalwater Bay, Queensland 
+    * Broad Sound and Shoalwater Bay, Queensland 
 
-* Van Diemen Gulf, Northern Territory 
+    * Van Diemen Gulf, Northern Territory 
 
-* Torres Strait Islands, Queensland  
+    * Torres Strait Islands, Queensland  
 
-Due to biases in the tidal coverage of satellite sensors like Landsat and Sentinel-2, DEA Intertidal outputs are unlikely to cover the full extent of the intertidal zone from Lowest to Highest Astronomical tide (e.g. Figure 2). These tidal biases can be evaluated using the product’s Tidal Attribute Layers which highlight regions where DEA Intertidal will underestimate the lower, upper or full extent of the intertidal zone. 
+* Due to biases in the tidal coverage of satellite sensors like Landsat and Sentinel-2, DEA Intertidal outputs are unlikely to cover the full extent of the intertidal zone from Lowest to Highest Astronomical tide (e.g. Figure 2). These tidal biases can be evaluated using the product’s Tidal Attribute Layers which highlight regions where DEA Intertidal will underestimate the lower, upper or full extent of the intertidal zone. 
 
-Areas of false positive intertidal data over water exist in areas with low satellite coverage and high levels of environmental or sensor noise. Areas affected include: 
+* Areas of false positive intertidal data over water exist in areas with low satellite coverage and high levels of environmental or sensor noise. Areas affected include: 
 
-* Recherche Archipelago, Western Australia 
+    * Recherche Archipelago, Western Australia 
 
-* South-eastern Eyre Peninsula, South Australia 
+    * South-eastern Eyre Peninsula, South Australia 
 
-* Torres Strait Islands, Queensland 
+    * Torres Strait Islands, Queensland 
 
 ## Quality Assurance  
 

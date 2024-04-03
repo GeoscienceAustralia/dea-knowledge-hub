@@ -25,15 +25,15 @@ parent_products:
 collection:
   name: Geoscience Australia Landsat Collection 3; Geoscience Australia Sentinel-2 Collection 3  
   link: null
-doi: 
-ecat: 
+doi: 10.26186/149403
+ecat: "149403"
 nci: null
 licence:
   name: Creative Commons Attribution 4.0 International Licence
   link: https://creativecommons.org/licenses/by/4.0/
 
 citations:
-  data_citation: 
+  data_citation: Bishop-Taylor, R., Phillips, C., Newey, V., Sagar, S.(2024). Digital Earth Australia Intertidal. Geoscience Australia, Canberra. https://dx.doi.org/10.26186/149403
   paper_citation: in prep
 
 tags:
@@ -56,7 +56,7 @@ maps:
 explorers: null
 
 data:
-  - link: https://data.dea.ga.gov.au/?prefix=derivative/ga_s2ls_intertidal_cyear_3/  
+  - link: https://data.dea.ga.gov.au/?prefix=derivative/ga_s2ls_intertidal_cyear_3/
     name: Access the data on AWS
 
 code_examples:
@@ -68,8 +68,7 @@ code_examples:
 web_services:
   - link: https://geoserver.dea.ga.gov.au/geoserver/wms
     name: Web Map Service (WMS)
-  - link: http://geoserver.dea.ga.gov.au/geoserver/wfs?service=WFS&version=1.1.0
-    name: Web Feature Service (WFS)
+
 
 custom: null
 

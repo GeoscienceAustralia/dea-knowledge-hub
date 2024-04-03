@@ -22,7 +22,7 @@ The DEA Intertidal Suite provides annual continental-scale elevation and exposur
 
 ## What this product offers
 
-The DEA Intertidal product suite is the next generation of intertidal products developed in DEA. It improves on the DEA Intertidal Elevation Model (also known as the National Intertidal Digital Elevation Model or NIDEM)  (Bishop-Taylor et al., 2019) and adds several new features and products to help users better understand the intertidal environment.  
+The DEA Intertidal product suite is the next generation of intertidal products developed in DEA. It improves on the DEA Intertidal Elevation Model (also known as the [National Intertidal Digital Elevation Model](https://knowledge.dea.ga.gov.au/data/product/dea-intertidal-elevation-landsat/) or NIDEM)  (Bishop-Taylor et al., 2019) and adds several new features and products to help users better understand the intertidal environment.  
 
 NIDEM was the first 3D model of Australia’s intertidal zone - the area of coastline exposed and flooded by ocean tides. The DEA Intertidal suite fundamentally changes and improves the way in which the intertidal zone is modelled compared to the original NIDEM elevation model: 
 
@@ -52,11 +52,11 @@ All datasets are produced annually from a 3-year composite of input data from th
 
 File names use the format:
 
-{product_name}_{x tile code}{y tile code}_{year--frequency}_{dataset maturity}_{layer_name}.tif 
+`{product_name}_{x tile code}{y tile code}_{year--frequency}_{dataset maturity}_{layer_name}.tif`
 
 For example: 
 
- ga_s2ls_intertidal_cyear_3_x082y139_2022--P1Y_final_elevation.tif 
+ `ga_s2ls_intertidal_cyear_3_x082y139_2022--P1Y_final_elevation.tif`
 
 ### Core Product Layers 
 
@@ -221,20 +221,19 @@ The Ensemble Tidal Modelling approach was implemented to account for the varying
 The tidal models listed below were implemented within the DEA environment using the pyTMD (https://github.com/tsutterley/pyTMD) and DEA Tools (https://github.com/GeoscienceAustralia/dea-notebooks) Python packages: 
 
  
+* FES2014 (Lydard et al., 2021) 
 
-FES2014 (Lydard et al., 2021) 
+* FES2012 (Carrère et al., 2012) 
 
-FES2012 (Carrère et al., 2012) 
+* TPXO8-atlas-v1 (Egbert & Erofeeva, 2002) 
 
-TPXO8-atlas-v1 (Egbert & Erofeeva, 2002) 
+* TPXO9-atlas-v5  (Egbert & Erofeeva, 2002) 
 
-TPXO9-atlas-v5  (Egbert & Erofeeva, 2002) 
+* EOT20 (Hart-Davis et al., 2021) 
 
-EOT20 (Hart-Davis et al., 2021) 
+* HAMTIDE11 (Taguchi et al., 2014) 
 
-HAMTIDE11 (Taguchi et al., 2014) 
-
-GOT4.10 (Ray, 2013) 
+* GOT4.10 (Ray, 2013) 
 
 The ensemble process utilises ancillary data (in this case, the correlation of the NDWI values to each individual tidal model output) to weight and selects the top 3 tidal models for a given location. A single ensemble tidal output from these 3 optimal models is then generated for use in all downstream product workflows.   
 
@@ -265,23 +264,19 @@ This shift to a more dynamic product suite is achieved through a pixel-based alg
 
 * Intertidal elevation uncertainty modelled based on how cleanly modelled elevation divides satellite observations into dry and wet. 
 
-* Intertidal extents classes calculated based on Intertidal elevation and NDWI inundation frequency and tide correlation, with additional masking to remove urban false positives using the [ABARES Catchment Scale Land Use of Australia product](https://explorer.dea.ga.gov.au/products/abares_clum_2020) (ABARES, 2021). 
-
 * Intertidal exposure calculated by comparing Intertidal elevation against high frequency modelled tides. 
 
 * Tidal metrics calculated by comparing satellite-observed tides against high frequency modelled tides. 
 
 ## Code repositories 
 
-DEA Intertidal Github (https://github.com/GeoscienceAustralia/dea-intertidal) - codebase for DEA Intertidal product generation workflows 
+[DEA Intertidal Github](https://github.com/GeoscienceAustralia/dea-intertidal) - codebase for DEA Intertidal product generation workflows 
 
-DEA Tools Github (https://github.com/GeoscienceAustralia/dea-notebooks) - parallelised tide modelling and data manipulation tools 
+[DEA Tools Github](https://github.com/GeoscienceAustralia/dea-notebooks) - parallelised tide modelling and data manipulation tools 
 
-PyTMD Github (https://github.com/tsutterley/pyTMD) - Python-based tidal prediction software 
+[PyTMD Github](https://github.com/tsutterley/pyTMD) - Python-based tidal prediction software 
 
 ## References
-
-ABARES 2021, Catchment Scale Land Use of Australia – Update December 2020, Australian Bureau of Agricultural and Resource Economics and Sciences, Canberra, February, CC BY 4.0. 
 
 Beaman, R. 2023. AusBathyTopo 250m (Australia) 2023 Grid - A High-resolution Depth Model for Australia (20230004C). Geoscience Australia, Canberra. 
 
