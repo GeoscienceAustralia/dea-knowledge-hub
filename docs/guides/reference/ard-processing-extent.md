@@ -5,7 +5,8 @@ DEA produces surface reflectance products from Landsat and Sentinel-2 satellite 
 We are extending our baseline satellite data coverage to include Christmas Island, Cocos (Keeling) Islands, Coral Sea Islands, Heard and McDonald Islands, Norfolk Island, and islands in the Torres Strait. Additionally, we are processing imagery over shallow ocean areas to support bathymetry and oceanographic science.
 
 
-The new data was requested by and will support Indigenous Communities in the Torres Straits in addition to Government agencies who seek to report on Ocean Ecosystem Accounts and manage the full extent of our Marine Parks. 
+The new data was requested by and will support Indigenous communities in the Torres Strait, in addition to Government agencies who seek to report on Ocean Ecosystem Accounts and manage the full extent of our Marine Parks.
+
 
 The update will support the expansion of [DEA's Summary Product Grid](https://knowledge.dea.ga.gov.au/guides/reference/collection_3_summary_grid/), including a shift in the origin point to the south-west of its current position. The expanded Area of Interest will support several DEA product releases and version updates throughout 2024.
 
