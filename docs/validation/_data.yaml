@@ -2,6 +2,6 @@ title: Validation reports
 description: These reports provide statistical summaries that you can compare to our datasets to assess their validity. Start by browsing the latest daily report, quarterly report, or yearly report.
 
 pages:
-  - name: Daily reports
+  - name: Daily Reports
     link: ./daily-report
     image: /_files/validation/daily-report.png

@@ -214,26 +214,26 @@ entries:
               reversed: True
             entries:
               - glob: validation/daily-report/*/index
-      - caption: Quarterly Reports
-        options:
-          reversed: True
-        entries:
-          - file: validation/quarterly-report/index
-            title: All quarterly reports
-            options:
-              reversed: True
-            entries:
-              - glob: validation/quarterly-report/*/index
-      - caption: Yearly Reports
-        options:
-          reversed: True
-        entries:
-          - file: validation/yearly-report/index
-            title: All yearly reports
-            options:
-              reversed: True
-            entries:
-              - glob: validation/yearly-report/*/index
+      # - caption: Quarterly Reports
+      #   options:
+      #     reversed: True
+      #   entries:
+      #     - file: validation/quarterly-report/index
+      #       title: All quarterly reports
+      #       options:
+      #         reversed: True
+      #       entries:
+      #         - glob: validation/quarterly-report/*/index
+      # - caption: Yearly Reports
+      #   options:
+      #     reversed: True
+      #   entries:
+      #     - file: validation/yearly-report/index
+      #       title: All yearly reports
+      #       options:
+      #         reversed: True
+      #       entries:
+      #         - glob: validation/yearly-report/*/index
 
   # Tags
 
