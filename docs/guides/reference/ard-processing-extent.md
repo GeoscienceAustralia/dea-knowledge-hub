@@ -6,7 +6,7 @@ We are extending our baseline satellite data to include Christmas Island, Cocos 
 
 The new data was requested by and will support Indigenous Communities in the Torres Straits in addition to Government agencies who seek to report on Ocean Ecosystem Accounts and manage the full extent of our Marine Parks. 
 
-The update is in support of DEA's expansion of the Summary Product Grid to shift the origin point to the south-west of the current position. The expanded Area of Interest will support several DEA product releases and version updates throughout 2024.
+The update will support the expansion of [DEA's Summary Product Grid](https://knowledge.dea.ga.gov.au/guides/reference/collection_3_summary_grid/), including a shift in the origin point to the south-west of its current position. The expanded Area of Interest will support several DEA product releases and version updates throughout 2024.
 
 ## List of locations
 
