@@ -62,7 +62,8 @@ Here is the new full list of locations that are supported.
 
 ## Quality and metadata 
 
-The quality of ancillary inputs used in ARD generation in offshore locations is limited in comparison to the higher quality ancillary inputs used on continental Australia. Quality information for ancillary inputs is found in the proc-info (processing information) YAML metadata file within the dataset. The tier list is USER, FALLBACK, and DEFINITIVE, with the latter being the highest level of quality. Unfortunately, this information is not available to users via the datacube, so we have added an additional metadata tag to delineate data delivered in this update: `final_ancillaries = "nonstandard"`
+The quality of ancillary inputs used in ARD generation in offshore locations is limited in comparison to the higher quality ancillary inputs used on continental Australia. Quality information for ancillary inputs is found in the `proc-info` (processing information) YAML metadata file within the dataset. The tier list is `USER`, `FALLBACK`, and `DEFINITIVE`, with the latter being the highest level of quality. Unfortunately, this information is not available to users via the datacube, so we have added an additional metadata tag to delineate data delivered in this update: `final_ancillaries = "nonstandard"`
+
 
 ```python
 dc.find_datasets(product="ga_ls8c_ard_3", limit=10, final_ancillaries="nonstandard")
