@@ -313,23 +313,23 @@ This shift to a more dynamic product suite is achieved through a pixel-based alg
 
 ## Processing Steps
 
-* Satellite data from Sentinel-2A and -2B, Landsat 7, 8, and 9 are loaded. 
+1. Satellite data from Sentinel-2A and -2B, Landsat 7, 8, and 9 are loaded. 
 
-* Satellite data cloud masked and converted to NDWI. 
+1. Satellite data cloud masked and converted to NDWI. 
 
-* Tides modelled for every satellite pixel using [Ensemble Tidal Modelling](#ensemble-tidal-modelling). 
+1. Tides modelled for every satellite pixel using [Ensemble Tidal Modelling](#ensemble-tidal-modelling). 
 
-* Satellite data filtered to probable intertidal pixels using NDWI inundation frequency and tide correlation and masked to remove deep ocean water using bathymetry from [GA Australian 250m Bathymetry and Topography Grid](https://explorer.dea.ga.gov.au/products/ga_ausbathytopo250m_2023) (Beaman, 2023). 
+1. Satellite data filtered to probable intertidal pixels using NDWI inundation frequency and tide correlation and masked to remove deep ocean water using bathymetry from [GA Australian 250m Bathymetry and Topography Grid](https://explorer.dea.ga.gov.au/products/ga_ausbathytopo250m_2023) (Beaman, 2023). 
 
-* Pixel-based rolling median applied from low to high tide. 
+1. Pixel-based rolling median applied from low to high tide. 
 
-* Intertidal elevation modelled based on tide height at which a rolling median transitions from dry to wet. 
+1. Intertidal elevation modelled based on tide height at which a rolling median transitions from dry to wet. 
 
-* Intertidal elevation uncertainty modelled based on how cleanly modelled elevation divides satellite observations into dry and wet. 
+1. Intertidal elevation uncertainty modelled based on how cleanly modelled elevation divides satellite observations into dry and wet. 
 
-* Intertidal exposure calculated by comparing Intertidal elevation against high frequency modelled tides. 
+1. Intertidal exposure calculated by comparing Intertidal elevation against high frequency modelled tides. 
 
-* Tidal metrics calculated by comparing satellite-observed tides against high frequency modelled tides. 
+1. Tidal metrics calculated by comparing satellite-observed tides against high frequency modelled tides. 
 
 ## References
 
