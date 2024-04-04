@@ -6,7 +6,11 @@ Intertidal zones are being increasingly faced with threats including coastal ero
 
 The intertidal zone also forms a critical habitat and foraging ground for migratory shore birds and other species. An improved characterisation of the exposure patterns of these dynamic environments is important to support conservation efforts and to gain a better understanding of migratory species pathways.
 
+<<<<<<< HEAD
+The DEA Intertidal product suite provides annual continental-scale elevation and exposure product layers for Australia’s intertidal zone, mapped at a 10 m resolution, from DEA’s archive of open-source Landsat and Sentinel-2 satellite data. These intertidal products enable users to better monitor and understand some of the most dynamic regions of Australia’s coastlines.
+=======
 The DEA Intertidal Suite provides annual continental-scale elevation and exposure product layers for Australia’s intertidal zone, mapped at a 10 m resolution, from DEA’s archive of open-source Landsat and Sentinel-2 satellite data. These intertidal products enable users to better monitor and understand some of the most dynamic regions of Australia’s coastlines.
+>>>>>>> 442d4f1aec14fe102daa852d90ef946ac27a2aa3
 
 ## Applications
 
@@ -301,9 +305,9 @@ The ensemble process utilises ancillary data (in this case, the correlation of t
 
 :::{figure} /_files/dea-intertidal/ensembletides.*
 :alt: Ensemble tide validation Figure
-
-Figure 2 &mdash; Global Tide Models validated at Australian Sea Level Monitoring Tide Gauges 
 :::
+
+Figure 2 &mdash; Global tide models validated at Australian Baseline Sea Level Monitoring Project (ABSLMP) and Global Extreme Sea Level Analysis (GESLA) tide gauges
 
 ## Lineage
 
