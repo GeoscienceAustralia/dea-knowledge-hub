@@ -103,7 +103,7 @@ The following map represents the density of USGS Level 1 L1TP scenes over the ex
 :::{figure} /_files/ard-expanded-processing-extent/LS5_7_8_9_L1TP_Density_and_Coverage.png
 :alt: A map of Australia and surrounding areas annotated with rectangles representing density and coverage.
 
-LS 5/7/8/9 L1TP Density and Coverage
+Landsat 5, 7, 8, and 9 L1TP Density and Coverage
 :::
 
 ## BRDF quality issues 
