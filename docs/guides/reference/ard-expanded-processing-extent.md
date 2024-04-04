@@ -1,4 +1,4 @@
-# DEA ARD processing extent
+# DEA ARD expanded processing extent
 
 DEA produces surface reflectance products from Landsat and Sentinel-2 satellite observations which cover the continent and some near-shore islands of Australia. This data is used to produce derivative products such as DEA Coastlines, Water Observations, and Fractional Cover. 
 
