@@ -28,7 +28,7 @@ Table 1 &mdash; DEA Intertidal Elevation validation statistics comparing perform
 
 Figure 3 &mdash; DEA Intertidal Elevation validation heatmaps comparing performance across microtidal, mesotidal and macrotidal coastlines. 
 
-## Caveats / Limitations
+### Caveats and limitations
 
 * Model performance improved with increasing tide range, being lowest in microtidal coastlines and highest in mesotidal and macrotidal coastlines. Due to the limited spatial extent of the intertidal zone in microtidal environments and the dominance of non-tidal water level influences (e.g. storm surge and ocean waves in high energy wave dominated environments), DEA Intertidal should be used with caution in microtidal environments. 
 
