@@ -64,11 +64,8 @@ ga_s2ls_intertidal_cyear_3_x082y139_2022--P1Y_final_elevation.tif
 
 #### DEA Intertidal Elevation
 
-DEA Intertidal Elevation provides elevation in metre units relative to modelled Mean Sea Level for each pixel of the satellite-observed exposed intertidal zone across the Australian coastline. The elevation model is generated from DEA Landsat and Sentinel-2 surface reflectance data from each 3-year composite period, utilising a pixel-based approach based on Ensemble Tidal Modelling. For every pixel, the time series of surface reflectance data is converted to the Normalised Difference Water Index (NDWI) and each observation tagged with the tidal height modelled at the time of acquisition by the satellite. A rolling median is applied from low to high tide to reduce noise (such as white water, sunglint, and non-tidal water level variability), then analysed to identify the tide height at which the pixel transitions from dry to wet. This tide height represents the elevation of the pixel. 
-
-Layer attributes:
-
 :::{list-table}
+:class: small
 
 * - **Name**
   - `elevation`
@@ -80,68 +77,95 @@ Layer attributes:
   - `NaN`
 :::
 
+DEA Intertidal Elevation provides elevation in metre units relative to modelled Mean Sea Level for each pixel of the satellite-observed exposed intertidal zone across the Australian coastline. The elevation model is generated from DEA Landsat and Sentinel-2 surface reflectance data from each 3-year composite period, utilising a pixel-based approach based on Ensemble Tidal Modelling. For every pixel, the time series of surface reflectance data is converted to the Normalised Difference Water Index (NDWI) and each observation tagged with the tidal height modelled at the time of acquisition by the satellite. A rolling median is applied from low to high tide to reduce noise (such as white water, sunglint, and non-tidal water level variability), then analysed to identify the tide height at which the pixel transitions from dry to wet. This tide height represents the elevation of the pixel. 
+
 #### DEA Intertidal Elevation Uncertainty
+
+:::{list-table}
+:class: small
+
+* - **Name**
+  - `elevation_uncertainty`
+* - **Data type**
+  - `float32`
+* - **Units**
+  - `metres`
+* - **'No data' value**
+  - `NaN`
+:::
 
 DEA Intertidal Elevation Uncertainty provides a measure of the quality of each modelled elevation value in metre units. Uncertainty is calculated by assessing how cleanly the modelled elevation separates satellite observations into dry and wet observations. This is achieved by identifying satellite observations that were misclassified by the modelled elevation (for instance, pixels that were observed as wet at tide heights lower than the modelled elevation, or alternately, observed as dry at higher tide heights). The spread of tide heights from these misclassified observations is summarised using a robust Median Absolute Deviation (MAD) statistic, and reported as `0.5 * MAD` to represent one-sided uncertainty bounds (i.e. ± uncertainty on either side of the pixel's elevation). Common causes of high elevation uncertainty can be poor tidal model performance, rapidly changing intertidal morphology, or noisy underlying satellite data.  
 
-`name` elevation_uncertainty  
-
-`datatype` float32  
-
-`units` metres  
-
-`nodata` NaN  
-
 #### DEA Intertidal Exposure
 
+:::{list-table}
+:class: small
+
+* - **Name**
+  - `exposure`
+* - **Data type**
+  - `uint8`
+* - **Units**
+  - `percent`
+* - **'No data' value**
+  - `255`
+:::
+
 DEA Intertidal Exposure models the relative amount of time that any intertidal pixel is exposed from water coverage. Exposure is calculated by comparing the pixel elevation back against a high temporal resolution model of tide heights for that location, based on the Ensemble Tidal Modelling approach. The Exposure dataset reflects the percentage of time any given pixel of known elevation is exposed from tidal inundation. This is calculated as the fraction of exposed observations relative to the total number of observations generated in the high temporal resolution tidal model for the 3-year product epoch.   
-
-`name` exposure  
-
-`datatype` uint8  
-
-`units` percent  
-
-`nodata` 255  
 
 ### Tidal Attribute Layers (ta)
 
 #### DEA Intertidal tidal spread
 
+:::{list-table}
+:class: small
+
+* - **Name**
+  - `ta_spread`
+* - **Data type**
+  - `uint8`
+* - **Units**
+  - `percent`
+* - **'No data' value**
+  - `255`
+:::
+
 The tidal spread dataset provides the percentage of the full astronomical tidal range observed by the time series of satellite observations at each pixel (see Figure 1a). DEA Intertidal Spread takes the concept of satellite tide bias, introduced in Bishop-Taylor et al (2019), and applies it at a pixel scale to demonstrate the fraction of the full tide range that was sensor observed during the analysis epoch at that location. In this work, the astronomical tide range is defined as that modelled by the ensemble tide modelling approach. 
-
-`name` ta_spread  
-
-`datatype` uint8  
-
-`units` percent  
-
-`nodata` 255  
 
 #### DEA Intertidal low tide offset
 
+:::{list-table}
+:class: small
+
+* - **Name**
+  - `ta_offset_low`
+* - **Data type**
+  - `uint8`
+* - **Units**
+  - `percent`
+* - **'No data' value**
+  - `255`
+:::
+
 The low tide offset dataset quantifies the proportion of the lowest tides not observed at any time during the analysis epoch by satellites at each pixel (as a percentage of the astronomical tide range). It is calculated by measuring the offset between the lowest astronomical tide (LAT) and the lowest satellite-observed tide (LOT; see Figure 1b). A high value indicates that DEA Intertidal datasets may not map the lowest regions of the intertidal zone.  
 
-`name` ta_offset_low  
-
-`datatype` uint8  
-
-`units` percent  
-
-`nodata` 255  
- 
 #### DEA Intertidal high tide offset
+
+:::{list-table}
+:class: small
+
+* - **Name**
+  - `ta_offset_high`
+* - **Data type**
+  - `uint8`
+* - **Units**
+  - `percent`
+* - **'No data' value**
+  - `255`
+:::
 
 The high tide offset dataset quantifies the proportion of the highest tides not observed at any time during the analysis epoch by satellites at each pixel (as a percentage of the astronomical tide range). It is calculated by measuring the offset between the highest astronomical tide (HAT) and the highest satellite-observed tide (HOT; see Figure 1c). A high value indicates that DEA Intertidal datasets may not map the highest regions of the intertidal zone.  
 
-`name` ta_offset_high  
-
-`datatype` uint8  
-
-`units` percent  
-
-`nodata` 255  
- 
 :::{figure} /_files/dea-intertidal/tidalattributes.*
 :alt: Tidal Attributes Description Figure
 
@@ -149,78 +173,107 @@ Figure 1 – Illustration of the concept of observed tide heights (dots correspo
 
 #### DEA Intertidal lowest observed tide
 
+:::{list-table}
+:class: small
+
+* - **Name**
+  - `ta_lot`
+* - **Data type**
+  - `float32`
+* - **Units**
+  - `metres above MSL`
+* - **'No data' value**
+  - `NaN`
+:::
+
 The lowest observed tide dataset maps the lowest satellite-observed tide (LOT) of the satellite time series at each pixel during the analysis epoch, based on the Ensemble Tidal Modelling.  
 
-`name` ta_lot  
-
-`datatype` float32  
-
-`units` metres above MSL 
-
-`nodata` NaN 
-
- 
 #### DEA Intertidal highest observed tide
+
+:::{list-table}
+:class: small
+
+* - **Name**
+  - `ta_hot`
+* - **Data type**
+  - `float32`
+* - **Units**
+  - `metres above MSL`
+* - **'No data' value**
+  - `NaN`
+:::
 
 The highest observed tide dataset maps the highest satellite-observed tide (HOT) of the satellite time-series at each pixel during the analysis epoch, based on the Ensemble Tidal Modelling.  
 
-`name` ta_hot  
-
-`datatype` float32  
-
-`units` metres above MSL 
-
-`nodata` NaN 
-
 #### DEA Intertidal lowest astronomical tide
+
+:::{list-table}
+:class: small
+
+* - **Name**
+  - `ta_lat`
+* - **Data type**
+  - `float32`
+* - **Units**
+  - `metres above MSL`
+* - **'No data' value**
+  - `NaN`
+:::
 
 The lowest astronomical tide dataset maps the lowest astronomical tide (LAT) for each pixel, as modelled by the Ensemble Tidal Model for the analysis epoch. Note that the LAT modelled for each individual analysis epoch may differ from the LAT modelled across ‘all time’ for any given location.
 
-`name` ta_lat  
-
-`datatype` float32  
-
-`units` metres above MSL 
-
-`nodata` NaN 
-
 #### DEA Intertidal highest astronomical tide
 
+:::{list-table}
+:class: small
+
+* - **Name**
+  - `ta_hat`
+* - **Data type**
+  - `float32`
+* - **Units**
+  - `metres above MSL`
+* - **'No data' value**
+  - `NaN`
+:::
+
 The highest astronomical tide dataset maps the highest astronomical tide (HAT) for each pixel, as modelled by the Ensemble Tidal Model for the analysis epoch.Note that the HAT modelled for each individual analysis epoch may differ from the HAT modelled across ‘all time’ for any given location. 
-
-`name` ta_hat  
-
-`datatype` float32  
-
-`units` metres above MSL 
-
-`nodata` NaN  
 
 ### Quality Assessment Layers (qa) 
 
 ##### DEA Intertidal NDWI frequency
 
+:::{list-table}
+:class: small
+
+* - **Name**
+  - `qa_ndwi_freq`
+* - **Data type**
+  - `uint8`
+* - **Units**
+  - `percent`
+* - **'No data' value**
+  - `255`
+:::
+
 This quality assessment band provides the inundation frequency of each pixel across the analysis epoch, as measured by NDWI. High values indicate that a pixel was observed as being inundated regularly in satellite observations. 
-
-`name` qa_ndwi_freq  
-
-`datatype` uint8  
-
-`units` percent  
-
-`nodata` 255 
 
 #### DEA Intertidal NDWI correlation
 
+:::{list-table}
+:class: small
+
+* - **Name**
+  - `qa_ndwi_corr`
+* - **Data type**
+  - `float32`
+* - **Units**
+  - `correlation`
+* - **'No data' value**
+  - `NaN`
+:::
+
 This quality assessment dataset provides pixel-level Pearson correlations between NDWI satellite observations and tide heights from the Ensemble Tidal Model over the analysis epoch. High values indicate that patterns of inundation were positively correlated with tide, indicating that the pixel was likely to be tidally influenced. 
-
-`name` qa_ndwi_corr  
-
-`datatype` float32  
-
-`units` correlation  
-
-`nodata` NaN 
 
 ### Ensemble Tidal Modelling
 
