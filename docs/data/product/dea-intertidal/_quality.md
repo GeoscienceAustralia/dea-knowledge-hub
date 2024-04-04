@@ -12,8 +12,6 @@ To create a consistent basis for comparison against DEA Intertidal outputs, data
 
  To evaluate the accuracy of DEA Intertidal Elevation, we calculated RMSE, MAE, correlation, bias, and R-squared statistics by comparing modelled DEA Intertidal Elevation outputs with validation data from the relevant year (e.g. 2021 DEA Intertidal Elevation data was compared against 2021 validation data). To provide insights into product performance across different coastal environments, this analysis was conducted separately on microtidal (tide range &lt; 2 m), mesotidal (2&ndash;4 m) and macrotidal (&gt; 4 m) coastlines (Table 1, Figure 3). 
 
-:::{table} Table 1 &mdash; DEA Intertidal Elevation validation statistics comparing performance across microtidal, mesotidal and macrotidal coastlines. 
-
 |             | Microtidal | Mesotidal | Macrotidal |
 |-------------|------------|-----------|------------|
 | Correlation | 0.6        | 0.86      | **0.96**   |
@@ -22,7 +20,10 @@ To create a consistent basis for comparison against DEA Intertidal outputs, data
 | MAE (m)     | 0.21       | 0.21      | **0.20**   |
 | Bias (m)    | 0.14       | 0.16      | **0.12**   |
 | Slope       | 0.44       | 0.80      | **1.03**   |
-:::
+
+<figure>
+    <figcaption>Table 1 &mdash; DEA Intertidal Elevation validation statistics comparing performance across microtidal, mesotidal and macrotidal coastlines.</figcaption>
+</figure>
 
 :::{figure} /_files/dea-intertidal/tiderangevalidation.*
 :alt: Validation at different tidal ranges
