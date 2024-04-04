@@ -12,7 +12,7 @@ The DEA Intertidal Suite provides annual continental-scale elevation and exposur
 
 * Integration with existing topographic and bathymetric data to seamlessly map the elevation of the coastal zone. 
 
-* Providing baseline elevation data for predicting the impact of coastal hazards such as storm surges, tsunami inundation, or future sea-level rise. 
+* Providing baseline elevation data to assist coastal hazard impact assessment from extreme weather and inundation events. 
 
 * Investigating coastal erosion and sediment transport processes. 
 
