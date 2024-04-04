@@ -351,8 +351,3 @@ Ray, R. D. (2013). Precise comparisons of bottom-pressure and altimetric ocean t
 
 Taguchi, E., Stammer, D., and Zahel, W. (2014), Inferring deep ocean tidal energy dissipation from the global high-resolution data-assimilative HAMTIDE model, *J. Geophys. Res. Oceans*, 119, 4573– 4592. 
 
-
-
-
-
-
