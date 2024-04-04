@@ -6,7 +6,7 @@ Intertidal zones are being increasingly faced with threats including coastal ero
 
 The intertidal zone also forms a critical habitat and foraging ground for migratory shore birds and other species. An improved characterisation of the exposure patterns of these dynamic environments is important to support conservation efforts and to gain a better understanding of migratory species pathways.
 
-The DEA Intertidal product suite provides annual continental-scale elevation and exposure product layers for Australia’s exposed intertidal zone, mapped at a 10 m resolution, from DEA’s archive of open-source Landsat and Sentinel-2 satellite data. The exposed intertidal zone consists of coastal  regions periodically innudated by tidal flows, not including areas obscured by vegetation cover such as mangroves. These intertidal products enable users to better monitor and understand some of the most dynamic regions of Australia’s coastlines.
+The DEA Intertidal product suite provides annual continental-scale elevation and exposure product layers for Australia’s exposed intertidal zone, mapped at a 10 m resolution, from DEA’s archive of open-source Landsat and Sentinel-2 satellite data. The exposed intertidal zone consists of coastal  regions periodically innundated by tidal flows, not including areas obscured by vegetation cover such as mangroves. These intertidal products enable users to better monitor and understand some of the most dynamic regions of Australia’s coastlines.
 
 ## Applications
 
