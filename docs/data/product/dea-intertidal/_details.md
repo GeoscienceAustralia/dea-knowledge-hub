@@ -94,7 +94,7 @@ DEA Intertidal Elevation provides elevation in metre units relative to modelled 
   - `NaN`
 :::
 
-DEA Intertidal Elevation Uncertainty provides a measure of the quality of each modelled elevation value in metre units. Uncertainty is calculated by assessing how cleanly the modelled elevation separates satellite observations into dry and wet observations. This is achieved by identifying satellite observations that were misclassified by the modelled elevation (for instance, pixels that were observed as wet at tide heights lower than the modelled elevation, or alternately, observed as dry at higher tide heights). The spread of tide heights from these misclassified observations is summarised using a robust Median Absolute Deviation (MAD) statistic, and reported as `0.5 * MAD` to represent one-sided uncertainty bounds (i.e. ± uncertainty on either side of the pixel's elevation). Common causes of high elevation uncertainty can be poor tidal model performance, rapidly changing intertidal morphology, or noisy underlying satellite data.  
+DEA Intertidal Elevation Uncertainty provides a measure of the quality of each modelled elevation value in metre units. Uncertainty is calculated by assessing how cleanly the modelled elevation separates satellite observations into dry and wet observations. This is achieved by identifying satellite observations that were misclassified by the modelled elevation (for instance, pixels that were observed as wet at tide heights lower than the modelled elevation, or alternately, observed as dry at higher tide heights). The spread of tide heights from these misclassified observations is summarised using a robust Median Absolute Deviation (MAD) statistic, and reported as $0.5 \times MAD$ to represent one-sided uncertainty bounds (i.e. ± uncertainty on either side of the pixel's elevation). Common causes of high elevation uncertainty can be poor tidal model performance, rapidly changing intertidal morphology, or noisy underlying satellite data.  
 
 #### DEA Intertidal Exposure
 
@@ -279,7 +279,7 @@ This quality assessment dataset provides pixel-level Pearson correlations betwee
 
 The Ensemble Tidal Modelling approach was implemented to account for the varying performance and biases of 7 commonly used global tidal models when applied to the various regions and tidal regimes of continental Australia (Figure 2).
 
-The tidal models listed below were implemented within the DEA environment using the pyTMD (https://github.com/tsutterley/pyTMD) and DEA Tools (https://github.com/GeoscienceAustralia/dea-notebooks) Python packages: 
+The tidal models listed below were implemented within the DEA environment using the [pyTMD](https://github.com/tsutterley/pyTMD) and [DEA Tools](https://github.com/GeoscienceAustralia/dea-notebooks) Python packages: 
 
  
 * FES2014 (Lydard et al., 2021) 
@@ -309,7 +309,7 @@ This shift to a more dynamic product suite is achieved through a pixel-based alg
 
 * Satellite data cloud masked and converted to NDWI. 
 
-* Tides modelled for every satellite pixel using [Ensemble Tidal Modelling](./?tab=details#ensemble-tidal-modelling). 
+* Tides modelled for every satellite pixel using [Ensemble Tidal Modelling](#ensemble-tidal-modelling). 
 
 * Satellite data filtered to probable intertidal pixels using NDWI inundation frequency and tide correlation and masked to remove deep ocean water using bathymetry from [GA Australian 250m Bathymetry and Topography Grid](https://explorer.dea.ga.gov.au/products/ga_ausbathytopo250m_2023) (Beaman, 2023). 
 
@@ -325,11 +325,9 @@ This shift to a more dynamic product suite is achieved through a pixel-based alg
 
 ## Code repositories
 
-[DEA Intertidal Github](https://github.com/GeoscienceAustralia/dea-intertidal) - codebase for DEA Intertidal product generation workflows 
-
-[DEA Tools Github](https://github.com/GeoscienceAustralia/dea-notebooks) - parallelised tide modelling and data manipulation tools 
-
-[PyTMD Github](https://github.com/tsutterley/pyTMD) - Python-based tidal prediction software 
+* [DEA Intertidal Github](https://github.com/GeoscienceAustralia/dea-intertidal) &mdash; A codebase for DEA Intertidal product generation workflows 
+* [DEA Tools Github](https://github.com/GeoscienceAustralia/dea-notebooks) &mdash; Parallelised tide modelling and data manipulation tools 
+* [PyTMD Github](https://github.com/tsutterley/pyTMD) &mdash; Python-based tidal prediction software 
 
 ## References
 
