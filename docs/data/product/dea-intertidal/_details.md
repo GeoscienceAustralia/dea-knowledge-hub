@@ -20,7 +20,15 @@ The DEA Intertidal Suite provides annual continental-scale elevation and exposur
 
 * Characterise the spatio-temporal exposure patterns of the intertidal zone to support migratory species studies and applications. 
 
-## What this product offers
+## Technical Information
+
+### DEA Intertidal features
+
+The DEA Intertidal product suite contains 3 core product layers, 7 tidal attribute (ta) layers, and 2 quality assessment (qa) layers, all provided as continental 10 m resolution GeoTIFFs for the Australian coastal and intertidal region.
+
+All datasets are produced annually from a 3-year composite of input data from the combined Sentinel-2 and Landsat 7, 8, and 9 DEA Collection 3 surface reflectance products. The product time series commences from 2016, with datasets labelled by the middle year of data. For example, the 2017 layer combines data from 2016, 2017, and 2018. Updates to the product suite are scheduled annually. 
+
+### What this product offers
 
 The DEA Intertidal product suite is the next generation of intertidal products developed in DEA. It improves on the DEA Intertidal Elevation Model (also known as the [National Intertidal Digital Elevation Model](/data/product/dea-intertidal-elevation-landsat/) or NIDEM)  (Bishop-Taylor et al., 2019) and adds several new features and products to help users better understand the intertidal environment.
 
@@ -38,14 +46,6 @@ NIDEM was the first 3D model of Australia’s intertidal zone &mdash; the area o
 
 * The implementation of an ensemble tidal modelling approach, acknowledging the wide range of global and regional tide models available and their varying performance across different regions of Australia. See [Ensemble Tidal Modelling](./?tab=details#ensemble-tidal-modelling).
 
-## Technical Information
-
-### DEA Intertidal features
-
-The DEA Intertidal product suite contains 3 core product layers, 7 tidal attribute (ta) layers, and 2 quality assessment (qa) layers, all provided as continental 10 m resolution GeoTIFFs for the Australian coastal and intertidal region.
-
-All datasets are produced annually from a 3-year composite of input data from the combined Sentinel-2 and Landsat 7, 8, and 9 DEA Collection 3 surface reflectance products. The product time series commences from 2016, with datasets labelled by the middle year of data. For example, the 2017 layer combines data from 2016, 2017, and 2018. Updates to the product suite are scheduled annually. 
-
 ### File Naming Convention 
 
 File names use the format:
@@ -59,6 +59,12 @@ For example:
 ```text
 ga_s2ls_intertidal_cyear_3_x082y139_2022--P1Y_final_elevation.tif
 ```
+
+### Code repositories
+
+* [DEA Intertidal Github](https://github.com/GeoscienceAustralia/dea-intertidal) &mdash; A codebase for DEA Intertidal product generation workflows 
+* [DEA Tools Github](https://github.com/GeoscienceAustralia/dea-notebooks) &mdash; Parallelised tide modelling and data manipulation tools 
+* [PyTMD Github](https://github.com/tsutterley/pyTMD) &mdash; Python-based tidal prediction software 
 
 ### Core Product Layers 
 
@@ -322,12 +328,6 @@ This shift to a more dynamic product suite is achieved through a pixel-based alg
 * Intertidal exposure calculated by comparing Intertidal elevation against high frequency modelled tides. 
 
 * Tidal metrics calculated by comparing satellite-observed tides against high frequency modelled tides. 
-
-## Code repositories
-
-* [DEA Intertidal Github](https://github.com/GeoscienceAustralia/dea-intertidal) &mdash; A codebase for DEA Intertidal product generation workflows 
-* [DEA Tools Github](https://github.com/GeoscienceAustralia/dea-notebooks) &mdash; Parallelised tide modelling and data manipulation tools 
-* [PyTMD Github](https://github.com/tsutterley/pyTMD) &mdash; Python-based tidal prediction software 
 
 ## References
 
