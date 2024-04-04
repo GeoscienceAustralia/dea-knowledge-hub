@@ -66,13 +66,19 @@ ga_s2ls_intertidal_cyear_3_x082y139_2022--P1Y_final_elevation.tif
 
 DEA Intertidal Elevation provides elevation in metre units relative to modelled Mean Sea Level for each pixel of the satellite-observed exposed intertidal zone across the Australian coastline. The elevation model is generated from DEA Landsat and Sentinel-2 surface reflectance data from each 3-year composite period, utilising a pixel-based approach based on Ensemble Tidal Modelling. For every pixel, the time series of surface reflectance data is converted to the Normalised Difference Water Index (NDWI) and each observation tagged with the tidal height modelled at the time of acquisition by the satellite. A rolling median is applied from low to high tide to reduce noise (such as white water, sunglint, and non-tidal water level variability), then analysed to identify the tide height at which the pixel transitions from dry to wet. This tide height represents the elevation of the pixel. 
 
-`name` elevation  
+Layer attributes:
 
-`datatype` float32  
+:::{list-table}
 
-`units` metres above MSL  
-
-`nodata` NaN  
+* - **Name**
+  - `elevation`
+* - **Data type**
+  - `float32`
+* - **Units**
+  - `metres above MSL`
+* - **'No data' value**
+  - `NaN`
+:::
 
 #### DEA Intertidal Elevation Uncertainty
 
@@ -270,7 +276,7 @@ This shift to a more dynamic product suite is achieved through a pixel-based alg
 
 * Tidal metrics calculated by comparing satellite-observed tides against high frequency modelled tides. 
 
-## Code repositories 
+## Code repositories
 
 [DEA Intertidal Github](https://github.com/GeoscienceAustralia/dea-intertidal) - codebase for DEA Intertidal product generation workflows 
 
@@ -282,7 +288,7 @@ This shift to a more dynamic product suite is achieved through a pixel-based alg
 
 Beaman, R. 2023. AusBathyTopo 250m (Australia) 2023 Grid - A High-resolution Depth Model for Australia (20230004C). Geoscience Australia, Canberra. 
 
-Bishop-Taylor, R., Sagar, S., Lymburner, L., Beaman, R.J., 2019. Between the tides: Modelling the elevation of Australia’s exposed intertidal zone at continental scale. *Estuarine, Coastal and Shelf Science* 23, 115–128.  
+Bishop-Taylor, R., Sagar, S., Lymburner, L., Beaman, R.J., 2019. Between the tides: Modelling the elevation of Australia’s exposed intertidal zone at continental scale. *Estuarine, Coastal and Shelf Science* 23, 115–128.
 
 Carrère L., F. Lyard, M. Cancet, A. Guillot, L. Roblou, 2012. FES2012: A new global tidal model taking advantage of nearly 20 years of altimetry, *Proceedings of meeting "20 Years of Altimetry"*, Venice 2012 
 
@@ -292,7 +298,7 @@ Hart-Davis, M.G., Piccioni, G., Dettmering, D., Schwatke, C., Passaro, M., Seitz
 
 Lyard, F.H., Allain, D.J., Cancet, M., Carrère, L., Picot, N., 2021. FES2014 global ocean tide atlas: design and performance. *Ocean Science* 17, 615–649. 
 
-Sagar, S., Roberts, D., Bala, B., Lymburner, L., 2017. Extracting the intertidal extent and topography of the Australian coastline from a 28 year time series of Landsat observations. *Remote Sensing of Environment* 195, 153–169.  
+Sagar, S., Roberts, D., Bala, B., Lymburner, L., 2017. Extracting the intertidal extent and topography of the Australian coastline from a 28 year time series of Landsat observations. *Remote Sensing of Environment* 195, 153–169.
 
 Ray, R. D. (2013). Precise comparisons of bottom-pressure and altimetric ocean tides. *Journal of Geophysical Research: Oceans*, 118(9), 4570–4584. 
 
