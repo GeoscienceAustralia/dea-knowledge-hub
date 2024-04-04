@@ -2,7 +2,7 @@
 
 DEA produces surface reflectance products from Landsat and Sentinel-2 satellite observations which cover the continent and some near-shore islands of Australia. This data is used to produce derivative products such as DEA Coastlines, Water Observations, and Fractional Cover. 
 
-We are extending our baseline satellite data coverage to include Christmas Island, Cocos (Keeling) Islands, Coral Sea Islands, Heard and McDonald Islands, Norfolk Island, and islands in the Torres Strait. Additionally, we are processing imagery over shallow ocean areas to support bathymetry and oceanographic science.
+We are extending our baseline satellite data coverage to include Christmas Island, Cocos (Keeling) Islands, Coral Sea Islands, the Heard and McDonald Islands, Norfolk Island, and islands in the Torres Strait. Additionally, we are processing imagery over shallow ocean areas to support bathymetry and oceanographic science.
 
 The new data was requested by and will support Indigenous communities in the Torres Strait, in addition to Government agencies who seek to report on Ocean Ecosystem Accounts and manage the full extent of our Marine Parks.
 
@@ -17,18 +17,18 @@ The standard ancillaries used to generate surface reflectance products over the 
 
 ## Additional locations
 
-These maps represent all the additional locations that were added.
+These maps show all the additional locations that were added.
 
 :::{figure} /_files/ard-expanded-processing-extent/extent_ls.png
 :alt: A map of Australia and surrounding areas annotated with rectangles to indicate the locations of additional Landsat scenes.
 
-The locations of the additional Landsat scenes.
+The locations of the additional Landsat Tiles.
 :::
 
 :::{figure} /_files/ard-expanded-processing-extent/extent_s2.png
 :alt: A map of Australia and surrounding areas annotated with rectangles to indicate the locations of additional Sentinel-2 scenes.
 
-The locations of the additional Sentinel-2 scenes.
+The locations of the additional Sentinel-2 Scenes.
 :::
 
 ## Full list of locations
@@ -39,7 +39,7 @@ This table contains the full list of locations, including the additional locatio
 :header-rows: 1
 
 * - Region
-  - Scenes / Tiles
+  - Scenes &amp; Tiles
 * - Heard Island and MacDonald Islands
   - 134-097, 135-097, 136-097, 43FDA, 43FDB, 43FCB, 43FCA 
 * - Lord Howe Island
@@ -52,9 +52,9 @@ This table contains the full list of locations, including the additional locatio
   - 122-067, 123-067, 48LWP, 48LXP 
 * - Cocos (Keeling) Island
   - 128-068, 128-069, 47LKG, 47LKH, 46LHN, 46LHM 
-* - Talbot Islands, Dauan Island, Saibai Island and Boigu Island
+* - Talbot Islands, Dauan Island, Saibai Island, and Boigu Island
   - 099-066 
-* - Daru, Western Province Papua New Guinea and Northern Warrior Reefs
+* - Daru, Western Province Papua New Guinea, and Northern Warrior Reefs
   - 098-066, 54LZR
 * - Elizabeth Reef
   - 085-081, 57JVG, 57JWG 
@@ -62,7 +62,7 @@ This table contains the full list of locations, including the additional locatio
   - 085-080, 57JVH, 57JWH 
 * - Frederick Reef, Queensland
   - 088-075, 56KQB, 57KTS, 56KQA 
-* - Coral Sea – Scenes with Ocean depth less than 200m
+* - Coral Sea (scenes with Ocean depth less than 200 m)
   - 089-072, 088-074, 088-076, 54LZL, 55KEA, 55KFV, 55KGA, 55KGV, 55KHA, 55KHT, 55KHU, 55LBF, 55LBJ, 55LBK, 55LCJ, 55LDC, 55LDE, 56KKC, 55KKD, 56KKF, 56KLC, 56KMV, 56KNU, 56KQA, 56KQB, 56KQF, 56KQG, 56KQV, 56KRB, 56KRF, 56KRG, 57KTA, 57KTB, 57KTS, 57KTS 
 * - Gulf of Carpentaria
   - 101-069, 53LRC, 54LTH 
