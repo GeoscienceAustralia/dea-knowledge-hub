@@ -6,7 +6,7 @@ Intertidal zones are being increasingly faced with threats including coastal ero
 
 The intertidal zone also forms a critical habitat and foraging ground for migratory shore birds and other species. An improved characterisation of the exposure patterns of these dynamic environments is important to support conservation efforts and to gain a better understanding of migratory species pathways.
 
-The DEA Intertidal product suite provides annual continental-scale elevation and exposure product layers for Australia’s intertidal zone, mapped at a 10 m resolution, from DEA’s archive of open-source Landsat and Sentinel-2 satellite data. These intertidal products enable users to better monitor and understand some of the most dynamic regions of Australia’s coastlines.
+The DEA Intertidal product suite provides annual continental-scale elevation and exposure product layers for Australia’s exposed intertidal zone, mapped at a 10 m resolution, from DEA’s archive of open-source Landsat and Sentinel-2 satellite data. The exposed intertidal zone consists of coastal  regions periodically innudated by tidal flows, not including areas obscured by vegetation cover such as mangroves. These intertidal products enable users to better monitor and understand some of the most dynamic regions of Australia’s coastlines.
 
 ## Applications
 
@@ -32,7 +32,7 @@ All datasets are produced annually from a 3-year composite of input data from th
 
 The DEA Intertidal product suite is the next generation of intertidal products developed in DEA. It improves on the DEA Intertidal Elevation Model (also known as the [National Intertidal Digital Elevation Model](/data/product/dea-intertidal-elevation-landsat/) or NIDEM)  (Bishop-Taylor et al., 2019) and adds several new features and products to help users better understand the intertidal environment.
 
-NIDEM was the first 3D model of Australia’s intertidal zone &mdash; the area of coastline exposed and flooded by ocean tides. The DEA Intertidal suite fundamentally changes and improves the way in which the intertidal zone is modelled compared to the original NIDEM elevation model: 
+NIDEM was the first 3D model of Australia’s intertidal zone &mdash; the area of coastline exposed and flooded by ocean tides. The DEA Intertidal suite fundamentally changes and improves the way in which the exposed intertidal zone is modelled compared to the original NIDEM elevation model: 
 
 * The addition of Sentinel-2 data improves the spatial resolution of the model to 10 m, compared to the 25m of the original NIDEM.
 
