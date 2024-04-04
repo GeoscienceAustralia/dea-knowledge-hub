@@ -100,7 +100,7 @@ DEA Intertidal Elevation provides elevation in metre units relative to modelled 
   - `NaN`
 :::
 
-DEA Intertidal Elevation Uncertainty provides a measure of the quality of each modelled elevation value in metre units. Uncertainty is calculated by assessing how cleanly the modelled elevation separates satellite observations into dry and wet observations. This is achieved by identifying satellite observations that were misclassified by the modelled elevation (for instance, pixels that were observed as wet at tide heights lower than the modelled elevation, or alternately, observed as dry at higher tide heights). The spread of tide heights from these misclassified observations is summarised using a robust Median Absolute Deviation (MAD) statistic, and reported as $0.5 \times MAD$ to represent one-sided uncertainty bounds (i.e. ± uncertainty on either side of the pixel's elevation). Common causes of high elevation uncertainty can be poor tidal model performance, rapidly changing intertidal morphology, or noisy underlying satellite data.  
+DEA Intertidal Elevation Uncertainty provides a measure of the quality of each modelled elevation value in metre units. Uncertainty is calculated by assessing how cleanly the modelled elevation separates satellite observations into dry and wet observations. This is achieved by identifying satellite observations that were misclassified by the modelled elevation (for instance, pixels that were observed as wet at tide heights lower than the modelled elevation, or alternately, observed as dry at higher tide heights). The spread of tide heights from these misclassified observations is summarised using a robust Median Absolute Deviation (MAD) statistic, and reported as $0.5 \times MAD$ to represent one-sided uncertainty bounds (i.e. ± uncertainty on either side of the pixel's elevation). Common causes of high elevation uncertainty can be poor tidal model performance, rapidly changing intertidal morphology, or noisy underlying satellite data.
 
 #### DEA Intertidal Exposure
 
@@ -153,7 +153,7 @@ The tidal spread dataset provides the percentage of the full astronomical tidal 
   - `255`
 :::
 
-The low tide offset dataset quantifies the proportion of the lowest tides not observed at any time during the analysis epoch by satellites at each pixel (as a percentage of the astronomical tide range). It is calculated by measuring the offset between the lowest astronomical tide (LAT) and the lowest satellite-observed tide (LOT; see Figure 1b). A high value indicates that DEA Intertidal datasets may not map the lowest regions of the intertidal zone.  
+The low tide offset dataset quantifies the proportion of the lowest tides not observed at any time during the analysis epoch by satellites at each pixel (as a percentage of the astronomical tide range). It is calculated by measuring the offset between the lowest astronomical tide (LAT) and the lowest satellite-observed tide (LOT; see Figure 1b). A high value indicates that DEA Intertidal datasets may not map the lowest regions of the intertidal zone.
 
 #### DEA Intertidal high tide offset
 
@@ -170,12 +170,12 @@ The low tide offset dataset quantifies the proportion of the lowest tides not 
   - `255`
 :::
 
-The high tide offset dataset quantifies the proportion of the highest tides not observed at any time during the analysis epoch by satellites at each pixel (as a percentage of the astronomical tide range). It is calculated by measuring the offset between the highest astronomical tide (HAT) and the highest satellite-observed tide (HOT; see Figure 1c). A high value indicates that DEA Intertidal datasets may not map the highest regions of the intertidal zone.  
+The high tide offset dataset quantifies the proportion of the highest tides not observed at any time during the analysis epoch by satellites at each pixel (as a percentage of the astronomical tide range). It is calculated by measuring the offset between the highest astronomical tide (HAT) and the highest satellite-observed tide (HOT; see Figure 1c). A high value indicates that DEA Intertidal datasets may not map the highest regions of the intertidal zone.
 
 :::{figure} /_files/dea-intertidal/tidalattributes.*
 :alt: Tidal Attributes Description Figure
 
-Figure 1 – Illustration of the concept of observed tide heights (dots corresponding to satellite acquisition time) compared to the full modelled tidal range (blue lines). Descriptions of Spread (a), Lowtide offset (b), and Hightide offset (c) are detailed in the text.  
+Figure 1 – Illustration of the concept of observed tide heights (dots corresponding to satellite acquisition time) compared to the full modelled tidal range (blue lines). Descriptions of Spread (a), Lowtide offset (b), and Hightide offset (c) are detailed in the text.
 :::
 
 #### DEA Intertidal lowest observed tide
@@ -193,7 +193,7 @@ Figure 1 – Illustration of the concept of observed tide heights (dots correspo
   - `NaN`
 :::
 
-The lowest observed tide dataset maps the lowest satellite-observed tide (LOT) of the satellite time series at each pixel during the analysis epoch, based on the Ensemble Tidal Modelling.  
+The lowest observed tide dataset maps the lowest satellite-observed tide (LOT) of the satellite time series at each pixel during the analysis epoch, based on the Ensemble Tidal Modelling.
 
 #### DEA Intertidal highest observed tide
 
@@ -210,7 +210,7 @@ The lowest observed tide dataset maps the lowest satellite-observed tide (LOT) o
   - `NaN`
 :::
 
-The highest observed tide dataset maps the highest satellite-observed tide (HOT) of the satellite time-series at each pixel during the analysis epoch, based on the Ensemble Tidal Modelling.  
+The highest observed tide dataset maps the highest satellite-observed tide (HOT) of the satellite time-series at each pixel during the analysis epoch, based on the Ensemble Tidal Modelling.
 
 #### DEA Intertidal lowest astronomical tide
 
