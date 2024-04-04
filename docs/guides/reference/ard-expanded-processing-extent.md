@@ -10,6 +10,10 @@ The update will support the expansion of [DEA's Summary Product Grid](https://kn
 
 The standard ancillaries used to generate surface reflectance products over the mainland are of higher quality than those over extended offshore areas. For a detailed description of the difference, please see the sections below. 
 
+## Additional locations
+
+These maps represent all the additional locations that were added.
+
 :::{figure} /_files/ard-expanded-processing-extent/extent_ls.png
 :alt: A map of Australia and surrounding areas annotated with rectangles to indicate the locations of additional Landsat scenes.
 
@@ -22,9 +26,9 @@ The locations of the additional Landsat scenes.
 The locations of the additional Sentinel-2 scenes.
 :::
 
-## List of locations
+## Full list of locations
 
-Here is the new full list of locations that are supported.
+This table contains the full list of locations, including the additional locations that were added.
 
 :::{list-table}
 :header-rows: 1
