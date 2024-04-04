@@ -283,17 +283,11 @@ The tidal models listed below were implemented within the DEA environment using 
 
  
 * FES2014 (Lydard et al., 2021) 
-
 * FES2012 (Carrère et al., 2012) 
-
 * TPXO8-atlas-v1 (Egbert & Erofeeva, 2002) 
-
 * TPXO9-atlas-v5  (Egbert & Erofeeva, 2002) 
-
 * EOT20 (Hart-Davis et al., 2021) 
-
 * HAMTIDE11 (Taguchi et al., 2014) 
-
 * GOT4.10 (Ray, 2013) 
 
 The ensemble process utilises ancillary data (in this case, the correlation of the NDWI values to each individual tidal model output) to weight and selects the top 3 tidal models for a given location. A single ensemble tidal output from these 3 optimal models is then generated for use in all downstream product workflows.   
