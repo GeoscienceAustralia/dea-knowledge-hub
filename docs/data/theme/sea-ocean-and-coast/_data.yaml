@@ -9,7 +9,7 @@ pages:
     link: /data/product/dea-high-and-low-tide-imagery-landsat
     image: /_files/cmi/HLTCv2.png
   - name: DEA Intertidal
-    link: /data/product/dea-intertidal/index
+    link: /data/product/dea-intertidal
     image: /_files/dea-intertidal/DEAIntertidal_prettypic_Elevation_ShoalPointQLD.png
   - name: DEA Intertidal Elevation (NIDEM)
     link: /data/product/dea-intertidal-elevation-landsat
