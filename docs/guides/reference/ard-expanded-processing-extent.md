@@ -108,19 +108,18 @@ Landsat 5, 7, 8, and 9 L1TP Density and Coverage
 
 ## BRDF quality issues 
 
-[BRDF](/guides/about/glossary/#brdf) is a solar illumination correction that adjusts reflectance intensity in differing amounts in differing directions. The light that comes from the Sun, reflects off the Earth and is received by the sensor is adjusted based on viewing/solar angle geometries of MODIS data.
+[BRDF](/guides/about/glossary/#brdf) is a solar illumination correction that adjusts reflectance intensity in differing amounts in differing directions. The light that comes from the Sun reflects off the Earth and is received by the sensor is adjusted based on the viewing or solar angle geometries of MODIS data.
 
-Sometimes over offshore locations we have found BRDF values to be unphysical. We have implemented a BRDF solution over the offshore locations, which masks out data from solar illumination correction where Fvol/Fiso or Fgeo/Fiso > 1. This ensures that we do not violate the theoretical definition of these parameters, meaning the values are realistic.
+Sometimes over offshore locations, we have found BRDF values to be unphysical. We have implemented a BRDF solution over the offshore locations, which masks out data from solar illumination correction where $\frac{Fvol}{Fisor} > 1$ or $\frac{Fgeo}{Fiso} > 1$. This ensures that we do not violate the theoretical definition of these parameters, meaning the values are realistic.
 
 ## Water vapor 
 
-No ancillary source dataset difference between mainland and offshore locations.
+There is no ancillary source dataset difference between mainland and offshore locations.
 
 ## Aerosol 
 
-A constant value of 0.06 Aerosol Optical Depth (AOD) is used as ancillary input as we do not have aerosol data for these extended locations. This constant value is based on the assumption that the average AOD data in Australian continental is around the 0.05, but islands are surrounded by the sea and impacted by salt water particles, so setting AOD as 0.06 is reasonable.
+A constant value of 0.06 Aerosol Optical Depth (AOD) is used as ancillary input as we do not have aerosol data for these extended locations. This constant value is based on the assumption that the average AOD data in Australian continental is around 0.05, but since islands are surrounded by the sea and impacted by salt water particles, it assumes the slightly higher value of 0.06.
 
+## Ozone
 
-## Ozone  
-
-The Ozone constant value for ancillary input is set to 0.275 ATM-CM. Typically in the extended offshore locations, Ozone is around 0.25 to 0.3. Ozone does not impact radiometric values in bands (wavelengths) by a significant amount. 
+The Ozone constant value for ancillary input is set to 0.275 ATM-CM. In the extended offshore locations, Ozone is typically around 0.25 to 0.3. Ozone does not impact radiometric values in bands (wavelengths) by a significant amount. 
