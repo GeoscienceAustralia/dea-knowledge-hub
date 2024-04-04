@@ -176,6 +176,7 @@ The high tide offset dataset quantifies the proportion of the highest tides no
 :alt: Tidal Attributes Description Figure
 
 Figure 1 – Illustration of the concept of observed tide heights (dots corresponding to satellite acquisition time) compared to the full modelled tidal range (blue lines). Descriptions of Spread (a), Lowtide offset (b), and Hightide offset (c) are detailed in the text.  
+:::
 
 #### DEA Intertidal lowest observed tide
 
@@ -302,6 +303,7 @@ The ensemble process utilises ancillary data (in this case, the correlation of t
 :alt: Ensemble tide validation Figure
 
 Figure 2 – Global Tide Models validated at Australian Sea Level Monitoring Tide Gauges 
+:::
 
 ## Lineage
 
