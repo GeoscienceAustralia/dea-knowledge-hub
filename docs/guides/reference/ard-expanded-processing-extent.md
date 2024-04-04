@@ -42,7 +42,7 @@ Here is the new full list of locations that are supported.
   - 080-098, 079-098, 079-099, 57FWU, 57FWV, 57FVV, 57FWA, 57FVA, 57FVU 
 * - Norfolk Island
   - 079-080, 080-080, 57JWF, 57JVF, 57HVE, 57HWE 
-* - Chirstmas Island
+* - Christmas Island
   - 122-067, 123-067, 48LWP, 48LXP 
 * - Cocos (Keeling) Island
   - 128-068, 128-069, 47LKG, 47LKH, 46LHN, 46LHM 
