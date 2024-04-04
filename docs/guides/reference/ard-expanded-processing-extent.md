@@ -10,6 +10,11 @@ The update will support the expansion of [DEA's Summary Product Grid](https://kn
 
 The standard ancillaries used to generate surface reflectance products over the mainland are of higher quality than those over extended offshore areas. For a detailed description of the difference, please see the sections below. 
 
+:::{contents} On this page
+:local:
+:backlinks: none
+:::
+
 ## Additional locations
 
 These maps represent all the additional locations that were added.
