@@ -22,13 +22,13 @@ These maps show all the additional locations that were added.
 :::{figure} /_files/ard-expanded-processing-extent/extent_ls.png
 :alt: A map of Australia and surrounding areas annotated with rectangles to indicate the locations of additional Landsat scenes.
 
-The locations of the additional Landsat Tiles.
+The locations of the additional Landsat scenes.
 :::
 
 :::{figure} /_files/ard-expanded-processing-extent/extent_s2.png
 :alt: A map of Australia and surrounding areas annotated with rectangles to indicate the locations of additional Sentinel-2 scenes.
 
-The locations of the additional Sentinel-2 Scenes.
+The locations of the additional Sentinel-2 tiles.
 :::
 
 ## Full list of locations
@@ -94,11 +94,11 @@ dc.find_datasets(product="ga_ls8c_ard_3", limit=10, final_ancillaries="nonstanda
 
 ## Geometric quality assessment issues 
 
-[ARD](/guides/about/glossary/#ard) is a Surface Reflectance product which is derived from USGS or ESA Level 1 products. The Level 1 product is geometrically corrected such that the product is 'ortho-rectified' which results in enabling acquisitions from different dates to be spatially overlaid for assessment through time. The ARD product provides a comprehensive quality assurance of geometric correction known as GQA, which is found in the dataset and processing information metadata.
+[ARD](/guides/about/glossary/#ard) is a Surface Reflectance product that is derived from USGS or ESA Level 1 products. The Level 1 product is geometrically corrected such that the product is 'ortho-rectified' which results in enabling acquisitions from different dates to be spatially overlaid for assessment through time. The ARD product provides a comprehensive quality assurance of geometric correction known as GQA, which is found in the dataset and processing information metadata.
 
-This update features the addition of Landsat scenes and Sentinel 2 tiles over islands and reefs. Some of these islands, such as Christmas Island or islands south of Papua New Guinea, are at extreme high or low latitudes and are affected by persistent cloud. This presents challenges when correlating the reference image against source images to provide statistical geometric comparisons.
+This update features the addition of Landsat scenes and Sentinel 2 tiles over islands and reefs. Some of these islands, such as Christmas Island or islands south of Papua New Guinea, are at extremely high or low latitudes and are affected by persistent cloud. This presents challenges when correlating the reference image against source images to provide statistical geometric comparisons.
 
-The following map represents the density of USGS Level 1 L1TP scenes over the extended area. These scenes are used as input for ARD generation and represent a higher geometric accuracy as ground control points and a digital elevation model is incorporated into ortho-processing. Locations with L1TP level 1 inputs are scenes which contain islands or land features which can be used as control. Locations entirely over shallow Ocean which have been added for bathymetric purposes have low geometric accuracy.
+The following map represents the density of USGS Level 1 L1TP scenes over the extended area. These scenes are used as input for ARD generation and represent a higher geometric accuracy as ground control points and a digital elevation model is incorporated into ortho-processing. Locations with L1TP Level 1 inputs are scenes that contain islands or land features that can be used as a control. Locations entirely over shallow Ocean that have been added for bathymetric purposes have low geometric accuracy.
 
 :::{figure} /_files/ard-expanded-processing-extent/LS5_7_8_9_L1TP_Density_and_Coverage.png
 :alt: A map of Australia and surrounding areas annotated with rectangles representing density and coverage.
@@ -108,7 +108,7 @@ LS 5/7/8/9 L1TP Density and Coverage
 
 ## BRDF quality issues 
 
-[BRDF](/guides/about/glossary/#brdf) is a solar illumination correction which adjusts reflectance intensity in differing amounts in differing directions. The light that comes from the Sun, reflects off the Earth and is received by the sensor is adjusted based on viewing/solar angle geometries of MODIS data.
+[BRDF](/guides/about/glossary/#brdf) is a solar illumination correction that adjusts reflectance intensity in differing amounts in differing directions. The light that comes from the Sun, reflects off the Earth and is received by the sensor is adjusted based on viewing/solar angle geometries of MODIS data.
 
 Sometimes over offshore locations we have found BRDF values to be unphysical. We have implemented a BRDF solution over the offshore locations, which masks out data from solar illumination correction where Fvol/Fiso or Fgeo/Fiso > 1. This ensures that we do not violate the theoretical definition of these parameters, meaning the values are realistic.
 
