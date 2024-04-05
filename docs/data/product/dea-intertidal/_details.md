@@ -134,7 +134,7 @@ DEA Intertidal Exposure (Figure 3) models the percentage of time that any intert
 :::{figure} /_files/dea-intertidal/DEAIntertidal_layer_exposure.*
 :alt: DEA Intertidal Exposure layer
 
-Figure 2 &mdash; DEA Intertidal Exposure, with rarely exposed pixels shown in light colours.
+Figure 2 &mdash; DEA Intertidal Exposure, with low exposure values (i.e. rarely exposed pixels) shown in dark colours.
 :::
 
 ### Tidal Attribute Layers (ta)
