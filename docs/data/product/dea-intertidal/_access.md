@@ -21,7 +21,7 @@ To add DEA Coastlines to DEA Maps manually:
 
 1. Open [DEA Maps](https://maps.dea.ga.gov.au/).
 1. Select **Explore map data** on the top-left.
-1. Select **Sea, ocean and coast** &gt; **DEA Intertidal** &gt; **DEA Intertidal**
+1. Select **Sea, ocean and coast** &gt; **DEA Intertidal** &gt; **DEA Intertidal (Sentinel-2, Landsat)**
 1. Click the **Add to the map** button on top-right.
 
 View the product layer required by selecting the layer from the **Styles** dropdown menu, and use the **Time** selector to view the annual time-series of each product layer.
