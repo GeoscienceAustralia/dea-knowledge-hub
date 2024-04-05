@@ -6,7 +6,7 @@
 
 To download DEA Intertidal data:
 
-1. Click the [Link to data](https://data.dea.ga.gov.au/?prefix=derivative/ga_s2ls_intertidal_cyear_3/) link above
+1. Click the [Access the data on AWS](https://data.dea.ga.gov.au/?prefix=derivative/ga_s2ls_intertidal_cyear_3/) link above.
 1. Click on the [ga_summary_grid_c3_32km_coastal.geojson](https://data.dea.ga.gov.au/?prefix=derivative/ga_s2ls_intertidal_cyear_3/ga_summary_grid_c3_32km_coastal.geojson) file to download to your computer. This file can be used in a GIS package to identify the product tiles that you require for a given location. Alternatively, you can access this file via DEA Maps to identify required tiles (**Sea, ocean and coast** &gt; **DEA Intertidal** &gt; **DEA Intertidal 32 km tile grid**). 
 1. Navigate to the required tile folder, first using the tile 'x' reference (e.g. `x079`) and then the tile 'y' reference (e.g. `y123`). Then select your year of interest.
 1. Click on the required product layer to download. See [Technical Information](./?tab=details#technical-information) for details on file naming and product layer details.
