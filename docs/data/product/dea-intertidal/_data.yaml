@@ -60,13 +60,13 @@ data:
     name: Access the data on AWS
 
 code_examples:
-  - link: /notebooks/DEA_products/DEA_Intertidal/
+  - link: /notebooks/DEA_products/Introduction_to_DEA_Intertidal.ipynb
     name: Code examples
   - link: https://github.com/GeoscienceAustralia/dea-intertidal
     name: GitHub repository
 
 web_services:
-  - link: https://geoserver.dea.ga.gov.au/geoserver/wms
+  - link: https://ows.dea.ga.gov.au/wms
     name: Web Map Service (WMS)
 
 
