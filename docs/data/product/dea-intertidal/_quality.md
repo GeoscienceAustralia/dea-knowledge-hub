@@ -63,4 +63,5 @@ Figure 6 &mdash; DEA Intertidal Elevation validation heatmaps comparing performa
 
 ## Quality Assurance
 
-Code used to generate DEA Intertidal is run against automated integration tests to ensure that product quality is maintained as updates and improvements are made. These tests verify that the entire product generation workflow is performing as expected, and track changes in product accuracy over time: https://github.com/GeoscienceAustralia/dea-intertidal/tree/main/tests 
+Code used to generate DEA Intertidal is [run against automated integration tests](https://github.com/GeoscienceAustralia/dea-intertidal/tree/main/tests 
+) to ensure that product quality is maintained as updates and improvements are made. These tests verify that the entire product generation workflow is performing as expected, and track changes in product accuracy over time.
