@@ -188,7 +188,7 @@ The low tide offset dataset quantifies the proportion of the lowest tides not 
   - `255`
 :::
 
-The high tide offset dataset quantifies the proportion of the highest tides not observed at any time during the analysis epoch by satellites at each pixel (as a percentage of the astronomical tide range). It is calculated by measuring the offset between the highest astronomical tide (HAT) and the highest satellite-observed tide (HOT; see Figure 3c). A high value indicates that DEA Intertidal datasets may not map the highest regions of the intertidal zone.
+The high tide offset dataset quantifies the proportion of the highest tides not observed at any time during the analysis epoch by satellites at each pixel (as a percentage of the astronomical tide range). It is calculated by measuring the offset between the highest astronomical tide (HAT) and the highest satellite-observed tide (HOT; see Figure 4c). A high value indicates that DEA Intertidal datasets may not map the highest regions of the intertidal zone.
 
 :::{figure} /_files/dea-intertidal/tidalattributes.*
 :alt: Tidal Attributes Description Figure
