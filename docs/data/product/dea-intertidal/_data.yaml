@@ -74,7 +74,10 @@ custom: null
 
 # History
 
-old_versions: null
+old_versions:
+  - version: 1.0.0
+    title: DEA Intertidal Elevation (Landsat)
+    slug: dea-intertidal-elevation-landsat-1.0.0
 
 # Settings
 
@@ -82,6 +85,6 @@ enable_overview: true
 enable_access: true
 enable_details: true
 enable_quality: true
-enable_history: false
+enable_history: true
 enable_faqs: false
 enable_credits: true

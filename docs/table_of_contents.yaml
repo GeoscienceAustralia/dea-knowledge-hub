@@ -125,8 +125,6 @@ entries:
           - file: data/product/dea-high-and-low-tide-imagery-landsat/index
             title: DEA High and Low Tide Imagery
           - file: data/product/dea-intertidal/index
-          - file: data/product/dea-intertidal-elevation-landsat/index
-            title: DEA Intertidal Elevation (NIDEM)
           - file: data/product/dea-intertidal-extents-landsat/index
             title: DEA Intertidal Extents (ITEM)
 
