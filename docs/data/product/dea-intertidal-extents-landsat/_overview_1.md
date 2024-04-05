@@ -7,6 +7,6 @@ The dataset provides information on the lowest (LOT) and highest (HOT) observed 
 :::{admonition} New version in development
 :class: note
 
-A new version of this product is being developed. Subscribe to the [DEA newsletter](https://www.dea.ga.gov.au/news/dea-newsletter-and-communications-archive) to be notified of product releases.
+A new version of this product is being developed as part of the [DEA Intertidal](/data/product/dea-intertidal/) product suite. Subscribe to the [DEA newsletter](https://www.dea.ga.gov.au/news/dea-newsletter-and-communications-archive) to be notified of product releases.
 :::
 
