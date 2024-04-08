@@ -57,12 +57,14 @@
       {%- if valid_product_types %}
       :{{ product_types_label }}: {{ valid_product_types | join(", ") }}
       {%- endif %}
+      {%- if data.time_span %}
       {%- if data.time_span.start and data.time_span.end %}
       :Time span: {{ data.time_span.start }} – {{ data.time_span.end }}
       {%- elif data.time_span.start  %}
       :Starts at: {{ data.time_span.start }}
       {%- elif data.time_span.end  %}
       :Ends at: {{ data.time_span.end }}
+      {%- endif %}
       {%- endif %}
       :Update frequency: {{ data.update_frequency }}
       {%- if data.next_update %}
@@ -81,7 +83,7 @@
 
    {% if not is_latest_version %}
    .. admonition:: Old version
-      :class: danger
+      :class: note
    
       This is an old version of the product. See the `latest version <{{ data.latest_version_link }}>`_.
 
@@ -181,16 +183,20 @@
        .. list-table::
           :name: key-details-table
 
+          {% if data.parent_products %}
           {% if data.parent_products.name and data.parent_products.link %}
           * - **Parent product(s)**
             - `{{ data.parent_products.name }} <{{ data.parent_products.link }}>`_
           {%- endif %}
+          {%- endif %}
+          {%- if data.collection %}
           {%- if data.collection.name and data.collection.link %}
           * - **Collection**
             - `{{ data.collection.name }} <{{ data.collection.link }}>`_
           {%- elif data.collection.name %}
           * - **Collection**
             - {{ data.collection.name }}
+          {%- endif %}
           {%- endif %}
           {%- if data.doi and data.ecat %}
           * - **DOI**
@@ -206,6 +212,38 @@
           * - **Last updated**
             - {{ data.published }}
           {%- endif %}
+          {% if data.licence %}
+          {% if data.licence.name and data.licence.link %}
+          * - **Licence**
+            - `{{ data.licence.name }} <{{ data.licence.link }}>`_
+          {%- endif %}
+          {%- endif %}
+       {%- endif %}
+
+       {% if data.citations %}
+       {% if data.citations.data_citation or data.citations.paper_citation %}
+       .. rubric:: Cite this product
+          :name: citations
+          :class: h2
+
+       .. list-table::
+          :name: citation-table
+
+          {% if data.citations.data_citation %}
+          * - **Data citation**
+            - .. code-block:: text
+                 :name: data-citation
+
+                 {{ data.citations.data_citation }}
+          {%- endif %}
+          {% if data.citations.paper_citation %}
+          * - **Paper citation**
+            - .. code-block:: text
+                 :name: paper-citation
+
+                 {{ data.citations.paper_citation }}
+          {%- endif %}
+       {%- endif %}
        {%- endif %}
 
        .. {%- if valid_tags %}
@@ -388,3 +426,4 @@
 .. raw:: html
 
    <script type="text/javascript" src="/_static/scripts/access-cards-tooltips.js" /></script>
+   <script type="text/javascript" src="/_static/scripts/citation-access-date.js" /></script>

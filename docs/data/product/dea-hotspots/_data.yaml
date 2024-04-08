@@ -14,7 +14,7 @@ product_type: Data service
 spatial_data_type: Vector
 time_span:
   start: 27/08/2002
-  end: present
+  end: Present
 update_frequency: Every 10 minutes
 next_update: null
 product_ids: null
@@ -28,6 +28,13 @@ collection:
 doi: null
 ecat: "111881"
 nci: null
+licence:
+  name: Creative Commons Attribution 4.0 International Licence
+  link: https://creativecommons.org/licenses/by/4.0/
+
+citations:
+  data_citation: null
+  paper_citation: null
 
 tags:
   - bushfires

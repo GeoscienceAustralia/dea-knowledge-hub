@@ -1,22 +1,42 @@
-% If status = green, class = tip
-% All DEA systems are working as expected. There are no outstanding incidents or errors to report.
-% See the [DEA monitoring dashboard](https://monitoring.dea.ga.gov.au/). 
-% If status = yellow, class = caution
-% If status = red, class = danger
+% See the DEA Tech Alerts and Changelog documentation:
+% https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/tech_alerts_changelog.html
 
-:::{admonition} DEA system status: yellow
+:::{admonition} DEA System Status
 :class: caution
+% Change the 'class' to either: tip / caution / danger
 
-2024-03-14: We have implemented changes to improve the intermittent performance issues being experienced on DEA web services. We are continuing to work to fix this issue.
+2024-04-02: We have received notice from NASA that Direct Broadcast satellite downloads from the Terra satellite have been provisionally restored. We are working on restoring the data feed to [DEA Hotspots](https://hotspots.dea.ga.gov.au/); however, Terra-derived DEA Hotspots are still currently unavailable.
+
+% All DEA systems are working as expected. There are no outstanding incidents or errors to report.
 
 See the [DEA monitoring dashboard](https://monitoring.dea.ga.gov.au/) to check the current status of DEA's services.
 :::
 
-:::{admonition} DEA Sentinel-2 contiguity fix: complete
-:class: note
+## 2024-03-28: DEA Sandbox outage (Resolved)
 
-See alert dated 2024-02-26 for more details.
-:::
+Users may have encountered an unplanned outage on the [Digital Earth Australia Sandbox](https://app.sandbox.dea.ga.gov.au/).
+
+DEA has implemented a solution as we continue to investigate the cause of the problem.
+
+DEA Sandbox users are warned to expect intermittent issues over the next 12 hours.
+
+Users may be unable to log in to or access their DEA Sandbox account while the incident is being investigated. Users may also notice reduced performance on other DEA systems during this outage.
+
+You can monitor the status of DEA’s systems on the [DEA monitoring dashboard](https://monitoring.dea.ga.gov.au/). If you would like to contact DEA, please email [earth.observation@ga.gov.au](mailto:earth.observation@ga.gov.au)
+
+## 2024-03-25: DEA Waterbodies version 3.0.0 released
+
+Improvements include additional supporting data for the most recent observations made available through web mapping services (WMS) and DEA Maps, more metadata, Landsat 9 data, and pipeline upgrades. Version 3.0.0 of DEA Waterbodies uses the same underlying polygon set as DEA Waterbodies version 2.0.0. [Learn more](/data/product/dea-waterbodies-landsat/?tab=history)
+
+## 2024-03-21: Terra-derived DEA Hotspots are unavailable
+
+We have received notice from NASA that Direct Broadcast satellite downloads from the Terra satellite are currently unavailable. This means that Terra-derived [DEA Hotspots](https://hotspots.dea.ga.gov.au/) are unavailable until further notice.
+
+## 2024-03-21: DEA OWS services restored
+
+Outages affecting DEA Open Web Services (OWS) have been resolved. Work will be continuing over the coming months to further improve performance and reliability of these services. 
+
+See the [DEA monitoring dashboard](https://monitoring.dea.ga.gov.au/) to check the current status of DEA's services.
 
 ## 2024-02-26: Sentinel-2 contiguity fix reprocessing complete
 

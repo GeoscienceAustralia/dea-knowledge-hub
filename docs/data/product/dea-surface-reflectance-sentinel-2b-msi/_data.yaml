@@ -14,7 +14,7 @@ product_type: Baseline
 spatial_data_type: Raster
 time_span:
   start: 30/06/2017
-  end: present
+  end: Present
 update_frequency: Daily
 next_update: null
 product_ids:
@@ -29,6 +29,13 @@ collection:
 doi: 10.26186/146551
 ecat: "146551"
 nci: ka08
+licence:
+  name: Creative Commons Attribution 4.0 International Licence
+  link: https://creativecommons.org/licenses/by/4.0/
+
+citations:
+  data_citation: null
+  paper_citation: null
 
 tags:
   - geoscience_australia_sentinel_2_collection_3

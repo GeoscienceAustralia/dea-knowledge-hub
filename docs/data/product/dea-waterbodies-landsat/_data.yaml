@@ -5,8 +5,8 @@
 
 title: DEA Waterbodies (Landsat)
 long_title: Geoscience Australia Landsat Waterbodies Collection 3
-header_image: /_files/cmi/waterbodies.jpg
-version: 2.0.0
+header_image: /_files/dea-waterbodies/DEA_Waterbodies_v3.0_header_image.jpg
+version: 3.0.0
 is_latest_version: true
 latest_version_link: null
 is_provisional: false
@@ -14,7 +14,7 @@ product_type: Derivative
 spatial_data_type: Vector
 time_span:
   start: 1986
-  end: present
+  end: Present
 update_frequency: Daily
 next_update: null
 product_ids: null
@@ -25,9 +25,16 @@ parent_products:
 collection:
   name: Geoscience Australia Landsat Collection 3
   link: null
-doi: 10.26186/146197
-ecat: "146197"
+doi: 10.26186/148920
+ecat: "148920"
 nci: null
+licence:
+  name: Creative Commons Attribution 4.0 International Licence
+  link: https://creativecommons.org/licenses/by/4.0/
+
+citations:
+  data_citation: null
+  paper_citation: null
 
 tags:
   - geoscience_australia_landsat_collection_3
@@ -40,25 +47,25 @@ tags:
 # Access
 
 maps:
-  - link: https://maps.dea.ga.gov.au/#share=s-4RjD9N7swBCZSkXRJJBxOLzVZyK
+  - link: https://maps.dea.ga.gov.au/#share=s-4FfNgHDF4mEwru7HrUmSzn2ECHm
     name: See it on a map
 
 explorers: null
 
 data:
-  - link: http://pid.geoscience.gov.au/dataset/ga/146197
+  - link: https://pid.geoscience.gov.au/dataset/ga/148920
     name: Download the shapefile
-  - link: https://data.dea.ga.gov.au/?prefix=derivative/dea_waterbodies/2-0-0/
+  - link: https://data.dea.ga.gov.au/?prefix=derivative/dea_waterbodies/3-0-0/
     name: Access the data on AWS
 
 code_examples:
   - link: /notebooks/DEA_products/DEA_Waterbodies/
     name: Code examples
-  - link: https://github.com/GeoscienceAustralia/dea-waterbodies
+  - link: https://github.com/GeoscienceAustralia/dea-conflux
     name: GitHub repository
 
 web_services:
-  - link: https://geoserver.dea.ga.gov.au/geoserver/wms
+  - link: https://geoserver.dea.ga.gov.au/geoserver/web/?0
     name: Web Mapping Service (WMS)
 
 custom: null
@@ -66,6 +73,9 @@ custom: null
 # History
 
 old_versions:
+  - version: 2.0.0
+    title: DEA Waterbodies (Landsat)
+    slug: dea-waterbodies-landsat-2.0.0
   - version: 1.0.0
     title: DEA Waterbodies (Landsat)
     slug: waterbodies-1.0.0
