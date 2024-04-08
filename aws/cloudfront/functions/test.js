@@ -4,8 +4,7 @@ var assert = require("assert");
 const docsHost = "docs.dea.ga.gov.au";
 const knowledgeHost = "knowledge.dea.ga.gov.au";
 
-// Create a minimum event object matching the structure that AWS CloudFront uses.
-// The real thing contains many more fields, this is just what we use.
+// This matches the structure of an AWS CloudFront event, albeit with less fields.
 
 function cloudfrontRequestTemplate(host, uri) {
     return {
