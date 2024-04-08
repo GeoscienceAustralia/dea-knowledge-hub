@@ -6,7 +6,8 @@ const knowledgeHost = "knowledge.dea.ga.gov.au";
 
 // Create a minimum event object matching the structure that AWS CloudFront uses.
 // The real thing contains many more fields, this is just what we use.
-function requestTemplate(host, uri) {
+
+function cloudfrontRequestTemplate(host, uri) {
     return {
         request: {
             uri: uri,
@@ -41,7 +42,9 @@ describe("Redirect Tests", () => {
 
     tests.forEach(({ uri, expected }) => {
         it(`Redirects ${uri} to ${expected}`, async () => {
-            const res = await handler(requestTemplate(knowledgeHost, uri));
+            const res = await handler(
+                cloudfrontRequestTemplate(knowledgeHost, uri)
+            );
 
             assert.equal(res.headers.location.value, expected);
         });
@@ -58,7 +61,9 @@ describe("Doesn't Redirect Tests", () => {
 
     tests.forEach(uri => {
         it(`Doesn't redirect ${uri}`, async () => {
-            const res = await handler(requestTemplate(knowledgeHost, uri));
+            const res = await handler(
+                cloudfrontRequestTemplate(knowledgeHost, uri)
+            );
 
             assert.ok(!res.hasOwnProperty("statusCode"));
             assert.ok(!res.hasOwnProperty("statusDescription"));
@@ -79,7 +84,7 @@ describe("Domain redirection tests", () => {
         const knowledgeUri = "https://" + knowledgeHost + uri;
 
         it(`Redirects from ${docsUri} to ${knowledgeUri}`, async () => {
-            const res = await handler(requestTemplate(docsHost, uri));
+            const res = await handler(cloudfrontRequestTemplate(docsHost, uri));
 
             assert.equal(res.headers.location.value, knowledgeUri);
         });
