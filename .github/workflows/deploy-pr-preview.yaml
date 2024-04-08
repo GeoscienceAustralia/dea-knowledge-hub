@@ -29,21 +29,22 @@ jobs:
     steps:
       - name: Find Comment
         uses: peter-evans/find-comment@v3
-        id: fc
+        id: find-comment
         with:
           issue-number: ${{ github.event.pull_request.number }}
-          body-includes: PR Preview
+          body-includes: "#pr-preview-comment"
 
       - name: "Comment: PR Preview is deploying"
         uses: peter-evans/create-or-update-comment@v4
+        id: pr-preview-deploying
         with:
           issue-number: ${{github.event.pull_request.number}}
-          comment-id: ${{ steps.fc.outputs.comment-id }}
+          comment-id: ${{ steps.find-comment.outputs.comment-id }}
           edit-mode: replace
           body: |
             ## :hourglass: PR Preview is deploying ...
 
-            <table>
+            <table> <!-- #pr-preview-comment -->
                 <tr>
                     <td><strong>Deploy log:</strong></td>
                     <td><a href="${{ env.PR_PREVIEW_DEPLOY_LOG_URL }}">View the log</a></td>
@@ -87,16 +88,16 @@ jobs:
         run: |
           aws s3 sync --delete output "$PR_PREVIEW_BUCKET/$PR_PREVIEW_SUBDOMAIN"
 
-      - name: "Update Comment: PR Preview is ready"
+      - name: "Comment: PR Preview is ready"
         uses: peter-evans/create-or-update-comment@v4
         with:
           issue-number: ${{github.event.pull_request.number}}
-          comment-id: ${{ steps.fc.outputs.comment-id }}
+          comment-id: ${{ steps.pr-preview-deploying.outputs.comment-id }}
           edit-mode: replace
           body: |
             ## :star2: PR Preview is ready!
 
-            <table>
+            <table> <!-- #pr-preview-comment -->
                 <tr>
                     <td><strong>Preview site:</strong></td>
                     <td><a href="https://${{ env.PR_PREVIEW_SUBDOMAIN }}.khpreview.dea.ga.gov.au/">${{ env.PR_PREVIEW_SUBDOMAIN }}.khpreview.dea.ga.gov.au</a></td>
