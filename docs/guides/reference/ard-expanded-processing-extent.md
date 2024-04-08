@@ -109,7 +109,7 @@ Landsat 5, 7, 8, and 9 L1TP Density and Coverage
 
 ## Elevation model
 
-Surface reflectance data processed over the Australian mainland uses an SRTM elevation model with an effective spatial resolution of 45 metres. The offshore territories have been processed using the Copernicus DEM which has an effective resolution of 20 metres. Copernicus DEM has been selected due to unavailability of SRTM over these locations. The higher resolution results in terrain correction errors introduced by noisy gradients in low relief areas. 
+Surface reflectance data processed over the Australian mainland uses an SRTM elevation model with an effective spatial resolution of 45 metres. The offshore territories have been processed using the Copernicus DEM which has an effective resolution of 20 metres. The higher resolution results in false terrain correction in low relief areas caused by noisy gradients.
 
 ## BRDF quality issues 
 
