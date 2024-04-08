@@ -8,7 +8,7 @@ The new data was requested by and will support Indigenous communities in the Tor
 
 The update will support the expansion of [DEA's Summary Product Grid](https://knowledge.dea.ga.gov.au/guides/reference/collection_3_summary_grid/), including a shift in the origin point to the south-west of its current position. The expanded Area of Interest will support several DEA product releases and version updates throughout 2024.
 
-The standard ancillaries and inputs used to generate surface reflectance products over the offshore territories differ in quality in comparison to those over the Australian mainland. For a detailed description of the difference, please see the sections below. 
+The standard ancillaries and level 1 inputs used to generate surface reflectance products over the offshore territories differ in quality in comparison to those over the Australian mainland. For a detailed description of the difference, please see the sections below. 
 
 :::{contents} On this page
 :local:
