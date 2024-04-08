@@ -1,4 +1,3 @@
-// utils.test.js
 const { handler } = require("./redirects.js");
 var assert = require("assert");
 
