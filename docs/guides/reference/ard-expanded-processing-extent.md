@@ -86,14 +86,14 @@ This table contains the full list of locations, including the additional locatio
 
 ## Quality and metadata 
 
-The quality of ancillary inputs used in ARD generation in offshore locations is limited in comparison to the higher quality ancillary inputs used on continental Australia. Quality information for ancillary inputs is found in the `proc-info` (processing information) YAML metadata file within the dataset. The tier list is `USER`, `FALLBACK`, and `DEFINITIVE`, with the latter being the highest level of quality. Unfortunately, this information is not available to users via the datacube, so we have added an additional metadata tag to delineate data delivered in this update: `final_ancillaries = "nonstandard"`
+The quality of ancillary inputs used in ARD generation in offshore locations is limited in comparison to inputs used on continental Australia. Quality information for ancillary inputs is found in the `proc-info` (processing information) YAML metadata file within the dataset. The tier list is `USER`, `FALLBACK`, and `DEFINITIVE`, with the latter being the highest level of quality. Unfortunately, this information is not available to users via the datacube, so we have added an additional metadata tag to delineate data delivered in this update: `final_ancillaries = "nonstandard"`
 
 
 ```python
 dc.find_datasets(product="ga_ls8c_ard_3", limit=10, final_ancillaries="nonstandard")
 ```
 
-## Geometric quality assessment issues 
+## Geometric quality issues 
 
 [ARD](/guides/about/glossary/#ard) is a Surface Reflectance product that is derived from USGS or ESA Level 1 products. The Level 1 product is geometrically corrected such that the product is 'ortho-rectified' which results in enabling acquisitions from different dates to be spatially overlaid for assessment through time. The ARD product provides a comprehensive quality assurance of geometric correction known as GQA, which is found in the dataset and processing information metadata.
 
@@ -113,7 +113,7 @@ Surface reflectance data processed over the Australian mainland uses an SRTM ele
 
 The higher resolution results in false terrain correction in low relief areas. Features such as clusters of trees, large stand alone trees, tall buildings or rocks can cause terrain correction artefacts, including false shadow masks. 
 
-## BRDF quality issues 
+## BRDF quality issue and solution 
 
 [BRDF](/guides/about/glossary/#brdf) is a solar illumination correction that adjusts reflectance intensity in differing amounts in differing directions. The light that comes from the Sun reflects off the Earth and is received by the sensor is adjusted based on the viewing or solar angle geometries of MODIS data.
 
