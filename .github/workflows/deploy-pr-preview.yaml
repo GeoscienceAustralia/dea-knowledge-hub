@@ -32,10 +32,11 @@ jobs:
         id: fc
         with:
           issue-number: ${{ github.event.pull_request.number }}
-          body-includes: PR Preview
+          body-includes: pr-preview-deploying
 
       - name: "Comment: PR Preview is deploying"
         uses: peter-evans/create-or-update-comment@v4
+        id: pr-preview-deploying
         with:
           issue-number: ${{github.event.pull_request.number}}
           comment-id: ${{ steps.fc.outputs.comment-id }}
@@ -43,7 +44,7 @@ jobs:
           body: |
             ## :hourglass: PR Preview is deploying ...
 
-            <table>
+            <table> <!-- ID: pr-preview-deploying -->
                 <tr>
                     <td><strong>Deploy log:</strong></td>
                     <td><a href="${{ env.PR_PREVIEW_DEPLOY_LOG_URL }}">View the log</a></td>
@@ -91,7 +92,7 @@ jobs:
         uses: peter-evans/create-or-update-comment@v4
         with:
           issue-number: ${{github.event.pull_request.number}}
-          comment-id: ${{ steps.fc.outputs.comment-id }}
+          comment-id: ${{ steps.pr-preview-deploying.outputs.comment-id }}
           edit-mode: replace
           body: |
             ## :star2: PR Preview is ready!
