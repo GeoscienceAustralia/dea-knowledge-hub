@@ -62,7 +62,7 @@ This table contains the full list of locations, including the additional locatio
   - 085-080, 57JVH, 57JWH 
 * - Frederick Reef, Queensland
   - 088-075, 56KQB, 57KTS, 56KQA 
-* - Coral Sea (scenes with Ocean depth less than 200 m)
+* - Coral Sea
   - 089-072, 088-074, 088-076, 54LZL, 55KEA, 55KFV, 55KGA, 55KGV, 55KHA, 55KHT, 55KHU, 55LBF, 55LBJ, 55LBK, 55LCJ, 55LDC, 55LDE, 56KKC, 55KKD, 56KKF, 56KLC, 56KMV, 56KNU, 56KQA, 56KQB, 56KQF, 56KQG, 56KQV, 56KRB, 56KRF, 56KRG, 57KTA, 57KTB, 57KTS, 57KTS 
 * - Gulf of Carpentaria
   - 101-069, 53LRC, 54LTH 
