@@ -8,7 +8,7 @@ The new data was requested by and will support Indigenous communities in the Tor
 
 The update will support the expansion of [DEA's Summary Product Grid](https://knowledge.dea.ga.gov.au/guides/reference/collection_3_summary_grid/), including a shift in the origin point to the south-west of its current position. The expanded Area of Interest will support several DEA product releases and version updates throughout 2024.
 
-The standard ancillaries and level 1 inputs used to generate surface reflectance products over the offshore territories differ in quality in comparison to those over the Australian mainland. For a detailed description of the difference, please see the sections below. 
+Surface reflectance products over Australian offshore territories differ in quality in comparison to those over the Australian mainland, due to ancillaries and level 1 inputs. For a detailed description of the difference, please see the sections below. 
 
 :::{contents} On this page
 :local:
@@ -86,7 +86,7 @@ This table contains the full list of locations, including the additional locatio
 
 ## Quality and metadata 
 
-The quality of ancillary inputs used in ARD generation in offshore locations is differs in comparison to inputs used on continental Australia. Quality information for ancillary inputs is found in the `proc-info` (processing information) YAML metadata file within the dataset. The tier list is `USER`, `FALLBACK`, and `DEFINITIVE`, with the latter being the highest level of quality. Unfortunately, this information is not available to users via the datacube, so we have added an additional metadata tag to delineate data delivered in this update: `final_ancillaries = "nonstandard"`
+The quality of ancillary and level 1 inputs used in ARD generation in offshore locations differs in comparison to inputs used on continental Australia. Quality information for ancillary inputs is found in the `proc-info` (processing information) YAML metadata file within the dataset. The tier list is `USER`, `FALLBACK`, and `DEFINITIVE`, with the latter being the highest level of quality. Unfortunately, this information is not available to users via the datacube, so we have added an additional metadata tag to delineate data delivered in this update: `final_ancillaries = "nonstandard"`
 
 
 ```python
@@ -97,9 +97,9 @@ dc.find_datasets(product="ga_ls8c_ard_3", limit=10, final_ancillaries="nonstanda
 
 [ARD](/guides/about/glossary/#ard) is a Surface Reflectance product that is derived from USGS or ESA Level 1 products. The Level 1 product is geometrically corrected such that the product is 'ortho-rectified' which results in enabling acquisitions from different dates to be spatially overlaid for assessment through time. The ARD product provides a comprehensive quality assurance of geometric correction known as GQA, which is found in the dataset and processing information metadata.
 
-This update features the addition of Landsat scenes and Sentinel 2 tiles over islands and reefs. Some of these islands, such as Christmas Island or islands south of Papua New Guinea, are at extremely high or low latitudes and are affected by persistent cloud. This presents challenges when correlating the reference image against source images to provide statistical geometric comparisons.
+This update features the addition of Landsat scenes and Sentinel 2 tiles over islands and reefs. Some of these islands, such as Christmas Island or islands south of Papua New Guinea, are at extremely high or low latitudes and are affected by persistent cloud. This presents challenges when correlating the reference image against source images to ortho-rectify or provide statistical geometric comparisons.
 
-The following map represents the density of USGS Level 1 L1TP scenes over the extended area. These scenes are used as input for ARD generation and represent a higher geometric accuracy as ground control points and a digital elevation model is incorporated into ortho-processing. Locations with L1TP Level 1 inputs are scenes that contain islands or land features that can be used as a control. Locations entirely over shallow Ocean that have been added for bathymetric purposes have low geometric accuracy.
+The following map represents the density of USGS Level 1 L1TP scenes over the extended area. These scenes are used as input for Landsat ARD generation and represent higher geometric accuracy as ground control points and a digital elevation model is incorporated into ortho-processing. Locations with L1TP Level 1 inputs are scenes that contain islands, land or reef features that can be used as a control. Locations entirely over shallow Ocean have been added for bathymetric purposes and have low geometric accuracy.
 
 :::{figure} /_files/ard-expanded-processing-extent/LS5_7_8_9_L1TP_Density_and_Coverage.png
 :alt: A map of Australia and surrounding areas annotated with rectangles representing density and coverage.
