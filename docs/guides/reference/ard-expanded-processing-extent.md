@@ -2,13 +2,13 @@
 
 DEA produces surface reflectance products from Landsat and Sentinel-2 satellite observations which cover the continent and some near-shore islands of Australia. This data is used to produce derivative products such as DEA Coastlines, Water Observations, and Fractional Cover. 
 
-We are extending our baseline satellite data coverage to include Christmas Island, Cocos (Keeling) Islands, Coral Sea Islands, Heard Island and McDonald Islands, Norfolk Island, and islands in the Torres Strait. Additionally, we are processing imagery over shallow ocean areas to support bathymetry and oceanographic science.
+We are extending our baseline satellite data coverage to include Christmas Island, Cocos (Keeling) Islands, Coral Sea Islands, the Heard Island and McDonald Islands, Norfolk Island, and islands in the Torres Strait. Additionally, we are processing imagery over shallow ocean areas to support bathymetry and oceanographic science.
 
 The new data was requested by and will support Indigenous communities in the Torres Strait, in addition to Government agencies who seek to report on Ocean Ecosystem Accounts and manage the full extent of our Marine Parks.
 
 The update will support the expansion of [DEA's Summary Product Grid](https://knowledge.dea.ga.gov.au/guides/reference/collection_3_summary_grid/), including a shift in the origin point to the south-west of its current position. The expanded Area of Interest will support several DEA product releases and version updates throughout 2024.
 
-The standard ancillaries used to generate surface reflectance products over the mainland are of higher quality than those over extended offshore areas. For a detailed description of the difference, please see the sections below. 
+The standard ancillaries used to generate surface reflectance products over the offshore territories differ in quality in comparison to those over the Australian mainland. For a detailed description of the difference, please see the sections below. 
 
 :::{contents} On this page
 :local:
@@ -106,6 +106,10 @@ The following map represents the density of USGS Level 1 L1TP scenes over the ex
 
 Landsat 5, 7, 8, and 9 L1TP Density and Coverage
 :::
+
+## Elevation model
+
+Surface reflectance data processed over the Australian mainland uses an SRTM elevation model with an effective spatial resolution of 45 metres. The offshore territories have been processed using the Copernicus DEM which has an effective resolution of 20 metres. Copernicus DEM has been selected due to unavailability of SRTM over these locations. The higher resolution results in terrain correction errors introduced by noisy gradients in low relief areas. 
 
 ## BRDF quality issues 
 
