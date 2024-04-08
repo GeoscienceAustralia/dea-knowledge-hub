@@ -29,7 +29,7 @@ jobs:
     steps:
       - name: Find Comment
         uses: peter-evans/find-comment@v3
-        id: fc
+        id: find-comment
         with:
           issue-number: ${{ github.event.pull_request.number }}
           body-includes: pr-preview-deploying
@@ -39,7 +39,7 @@ jobs:
         id: pr-preview-deploying
         with:
           issue-number: ${{github.event.pull_request.number}}
-          comment-id: ${{ steps.fc.outputs.comment-id }}
+          comment-id: ${{ steps.find-comment.outputs.comment-id }}
           edit-mode: replace
           body: |
             ## :hourglass: PR Preview is deploying ...
