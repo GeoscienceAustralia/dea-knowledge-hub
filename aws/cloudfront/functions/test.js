@@ -70,7 +70,7 @@ describe("Doesn't Redirect Tests", () => {
     });
 });
 
-describe("Domain redirection tests", () => {
+describe("Domain Redirect Tests", () => {
     const tests = [
         "/",
         "/index.html",
