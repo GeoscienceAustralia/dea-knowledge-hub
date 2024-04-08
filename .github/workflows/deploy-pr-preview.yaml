@@ -32,7 +32,7 @@ jobs:
         id: find-comment
         with:
           issue-number: ${{ github.event.pull_request.number }}
-          body-includes: pr-preview-deploying
+          body-includes: "#pr-preview-comment"
 
       - name: "Comment: PR Preview is deploying"
         uses: peter-evans/create-or-update-comment@v4
@@ -44,7 +44,7 @@ jobs:
           body: |
             ## :hourglass: PR Preview is deploying ...
 
-            <table> <!-- ID: pr-preview-deploying -->
+            <table> <!-- Tag: #pr-preview-comment -->
                 <tr>
                     <td><strong>Deploy log:</strong></td>
                     <td><a href="${{ env.PR_PREVIEW_DEPLOY_LOG_URL }}">View the log</a></td>
@@ -97,7 +97,7 @@ jobs:
           body: |
             ## :star2: PR Preview is ready!
 
-            <table>
+            <table> <!-- Tag: #pr-preview-comment -->
                 <tr>
                     <td><strong>Preview site:</strong></td>
                     <td><a href="https://${{ env.PR_PREVIEW_SUBDOMAIN }}.khpreview.dea.ga.gov.au/">${{ env.PR_PREVIEW_SUBDOMAIN }}.khpreview.dea.ga.gov.au</a></td>
