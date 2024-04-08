@@ -44,7 +44,7 @@ jobs:
           body: |
             ## :hourglass: PR Preview is deploying ...
 
-            <table> <!-- Tag: #pr-preview-comment -->
+            <table> <!-- #pr-preview-comment -->
                 <tr>
                     <td><strong>Deploy log:</strong></td>
                     <td><a href="${{ env.PR_PREVIEW_DEPLOY_LOG_URL }}">View the log</a></td>
@@ -97,7 +97,7 @@ jobs:
           body: |
             ## :star2: PR Preview is ready!
 
-            <table> <!-- Tag: #pr-preview-comment -->
+            <table> <!-- #pr-preview-comment -->
                 <tr>
                     <td><strong>Preview site:</strong></td>
                     <td><a href="https://${{ env.PR_PREVIEW_SUBDOMAIN }}.khpreview.dea.ga.gov.au/">${{ env.PR_PREVIEW_SUBDOMAIN }}.khpreview.dea.ga.gov.au</a></td>
