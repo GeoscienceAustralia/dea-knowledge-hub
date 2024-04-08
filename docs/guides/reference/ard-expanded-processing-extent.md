@@ -17,15 +17,15 @@ Surface reflectance products over Australian offshore territories differ in qual
 
 ## Additional locations
 
-These maps show all the additional locations that were added.
+The following maps show all the additional Seintel 2 and Landsat scenes that were added.
 
-:::{figure} /_files/ard-expanded-processing-extent/extent_ls.png
+:::{figure} /_files/ard-expanded-processing-extent/LS_EXTENT_FINAL.PNG
 :alt: A map of Australia and surrounding areas annotated with rectangles to indicate the locations of additional Landsat scenes.
 
 The locations of the additional Landsat scenes.
 :::
 
-:::{figure} /_files/ard-expanded-processing-extent/extent_s2.png
+:::{figure} /_files/ard-expanded-processing-extent/S2_EXTENT_FINAL.PNG
 :alt: A map of Australia and surrounding areas annotated with rectangles to indicate the locations of additional Sentinel-2 scenes.
 
 The locations of the additional Sentinel-2 tiles.
