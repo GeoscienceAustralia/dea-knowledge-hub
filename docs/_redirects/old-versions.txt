@@ -1,0 +1,3 @@
+# Old product version redirects
+
+data/product/dea-intertidal-elevation-landsat  data/old-version/dea-intertidal-elevation-landsat-1.0.0
