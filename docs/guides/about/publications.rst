@@ -9,6 +9,12 @@ Scientific articles, conference talks and other publications with Digital Earth 
    :backlinks: none
 
 ****
+2024
+****
+
+Byrne, G. et al. (03 2024) ‘Validating Digital Earth Australia NBART for the Landsat 9 Underfly of Landsat 8’, Remote Sensing, 16, p. 1233. doi: 10.3390/rs16071233.
+
+****
 2023
 ****
 
