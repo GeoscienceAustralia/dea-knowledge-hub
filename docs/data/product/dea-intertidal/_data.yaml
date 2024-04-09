@@ -68,7 +68,7 @@ code_examples:
     name: GitHub repository
 
 web_services:
-  - link: https://ows.dea.ga.gov.au/wms
+  - link: https://ows.dea.ga.gov.au/
     name: Web Map Service (WMS)
 
 
