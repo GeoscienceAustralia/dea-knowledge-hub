@@ -1,4 +1,5 @@
-# 2023-11-27: Transect NSW Site 1, Sentinel 2b overpass
+
+# 2023-11-27: Transect NSW Site 1, Sentinel-2B overpass
 
 A Daily Validation Summary Report of the surface reflectance data collected on the date of 2023-11-27 by Geoscience&nbsp;Australia. 
 The full collection of data is contained in the [National Spectral Database](https://www.dea.ga.gov.au/products/national-spectral-database).
