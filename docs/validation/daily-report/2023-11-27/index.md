@@ -1,4 +1,3 @@
-
 # 2023-11-27: Transect NSW Site 1, Sentinel 2b overpass
 
 A Daily Validation Summary Report of the surface reflectance data collected on the date of 2023-11-27 by Geoscience&nbsp;Australia. 
