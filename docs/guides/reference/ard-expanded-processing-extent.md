@@ -51,7 +51,6 @@ This table contains the full list of locations, including the additional locatio
 * - Christmas Island
   - 122-067, 123-067, 48LWP, 48LXP 
 * - Cocos (Keeling) Islands
-
   - 128-068, 128-069, 47LKG, 47LKH, 46LHN, 46LHM 
 * - Talbot Islands, Dauan Island, Saibai Island, and Boigu Island
   - 099-066 
