@@ -1,0 +1,92 @@
+# See the Product metadata fields documentation:
+# https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/product_metadata_fields.html
+
+# Overview
+
+title: DEA Intertidal
+long_title: Geoscience Australia Sentinel-2 Landsat Intertidal Calendar Year Collection 3  
+header_image: /_files/dea-intertidal/DEAIntertidal_prettypic_Elevation_ShoalPointQLD_XS_Size.png
+version: 1.0.0
+is_latest_version: true
+latest_version_link: null
+is_provisional: false
+product_type: Derivative
+spatial_data_type: Raster
+time_span:
+  start: 2016
+  end: 2022
+update_frequency: Yearly
+next_update: null
+product_ids: null
+
+parent_products:
+  name: Sentinel-2A and -2B and Landsat 7, 8, and 9 NBART and Observational Attributes 
+  link: /data/category/dea-surface-reflectance/
+collection:
+  name: Geoscience Australia Landsat Collection 3; Geoscience Australia Sentinel-2 Collection 3  
+  link: null
+doi: 10.26186/149403
+ecat: "149403"
+nci: null
+licence:
+  name: Creative Commons Attribution 4.0 International Licence
+  link: https://creativecommons.org/licenses/by/4.0/
+
+citations:
+  data_citation: Bishop-Taylor, R., Phillips, C., Newey, V., Sagar, S.(2024). Digital Earth Australia Intertidal. Geoscience Australia, Canberra. https://dx.doi.org/10.26186/149403
+  paper_citation: null
+
+tags:
+  - geoscience_australia_landsat_collection_3
+  - geoscience_australia_sentinel_2_collection_3
+  - marine_and_coastal
+  - coast
+  - digital_elevation_model
+  - intertidal
+  - coastal_change
+  - intertidal_exposure
+
+
+# Access
+
+maps:
+  - link: https://maps.dea.ga.gov.au/story/DEAIntertidal
+    name: See it on a map
+
+explorers:
+  - link: https://explorer.dea.ga.gov.au/products/ga_s2ls_intertidal_cyear_3
+    name: Data explorer
+
+data:
+  - link: https://data.dea.ga.gov.au/?prefix=derivative/ga_s2ls_intertidal_cyear_3/
+    name: Access the data on AWS
+
+code_examples:
+  - link: /notebooks/DEA_products/DEA_Intertidal/
+    name: Code examples
+  - link: https://github.com/GeoscienceAustralia/dea-intertidal
+    name: GitHub repository
+
+web_services:
+  - link: https://ows.dea.ga.gov.au/
+    name: Web Map Service (WMS)
+
+
+custom: null
+
+# History
+
+old_versions:
+  - version: 1.0.0
+    title: DEA Intertidal Elevation (Landsat)
+    slug: dea-intertidal-elevation-landsat-1.0.0
+
+# Settings
+
+enable_overview: true
+enable_access: true
+enable_details: true
+enable_quality: true
+enable_history: true
+enable_faqs: false
+enable_credits: true

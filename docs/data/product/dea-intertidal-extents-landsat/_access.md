@@ -10,7 +10,7 @@ To view and access the data interactively:
 
 2) Click `Explore map data`.
 
-3) Select `Sea, ocean and coast` > `DEA Intertidal (ITEM, NIDEM)` > `DEA Intertidal Extents (Landsat)`. 
+3) Select `Sea, ocean and coast` > `Other` > `DEA Intertidal Extents (Landsat)`. 
 
 5) Click `Add to the map`, or the `+` symbol to add the data to the map.
 :::
