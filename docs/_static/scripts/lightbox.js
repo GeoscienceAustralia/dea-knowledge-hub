@@ -13,20 +13,14 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
     let mklbItems = [];
 
-    let mklbImages = document.querySelectorAll("img." + lightboxClass);
-    let mklbFigures = document.querySelectorAll(
-        "figure." + lightboxClass + " > img"
+    let images = document.querySelectorAll("article.bd-article img");
+    let excludedImages = document.querySelectorAll(
+        "article.bd-article figure.no-gallery, article.bd-article figure img.no-gallery"
     );
+    console.log(images);
+    console.log(excludedImages);
 
-    for (var i = 0; i < mklbImages.length; i++) {
-        mklbItems.push(mklbImages[i]);
-    }
-
-    for (var i = 0; i < mklbFigures.length; i++) {
-        mklbItems.push(mklbFigures[i]);
-    }
-
-    console.log(mklbImages, mklbFigures, mklbItems);
+    mklbItems = images;
 
     let lightboxContainer;
     let auto = 0;
