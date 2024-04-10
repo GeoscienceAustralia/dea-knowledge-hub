@@ -18,7 +18,7 @@ The DEA Intertidal product suite maps the changing elevation, exposure and tidal
 
 This new product suite expands upon the [DEA Intertidal Elevation (Landsat)](https://knowledge.dea.ga.gov.au/data/old-version/dea-intertidal-elevation-landsat-1.0.0/) product which has now been deprecated.
 
-Learn more about [DEA Intertidal](https://knowledge.dea.ga.gov.au/data/product/dea-intertidal/).
+See [DEA Intertidal](https://knowledge.dea.ga.gov.au/data/product/dea-intertidal/) for more information.
 
 ## 2024-03-28: DEA Sandbox outage (Resolved)
 
