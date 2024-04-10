@@ -1,12 +1,5 @@
 // Adapted from MK Lightbox - https://github.com/marcuskirschen/mk-lightbox
 
-img {
-    max-width: 100%;
-    max-height: 100%;
-    width: auto;
-    height: auto;
-}
-
 #mkLightboxContainer {
     position: fixed;
     left: 0;
@@ -75,9 +68,8 @@ section.imageContainer {
     height: 42.1875vw; /* 75*9/16 */
 }
 
-.mklbItem:hover {
+img.gallery, figure.gallery {
     cursor: pointer;
-    font-style: italic;
 }
 
 #closeIconContainer {
