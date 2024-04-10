@@ -1,3 +1,5 @@
+// Adapted from MK Lightbox - https://github.com/marcuskirschen/mk-lightbox
+
 img {
     max-width: 100%;
     max-height: 100%;
@@ -15,7 +17,7 @@ img {
     width: 100vw;
     overflow: hidden;
     box-sizing: border-box;
-    z-index: 9;
+    z-index: 9999;
     display: flex;
     align-items: center;
     justify-content: center;
