@@ -16,7 +16,7 @@ These maps represent all the additional locations that were added.
 
 :::{figure} /_files/ard-expanded-processing-extent/extent_ls.png
 :alt: A map of Australia and surrounding areas annotated with rectangles to indicate the locations of additional Landsat scenes.
-:figclass: gallery
+:figclass: no-gallery
 
 The locations of the additional Landsat scenes.
 :::

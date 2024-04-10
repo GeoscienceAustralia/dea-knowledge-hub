@@ -11,17 +11,9 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
     let lightboxClass = "gallery";
 
-    let mklbItems = [];
-
-    let images = document.querySelectorAll("article.bd-article img");
-    let excludedImages = document.querySelectorAll(
-        "article.bd-article figure.no-gallery, article.bd-article figure img.no-gallery"
+    let mklbItems = document.querySelectorAll(
+        "article.bd-article *:not(figure) > img:not(.no-gallery), article.bd-article figure:not(.no-gallery) img"
     );
-    console.log(images);
-    console.log(excludedImages);
-
-    mklbItems = images;
-
     let lightboxContainer;
     let auto = 0;
     let interval;

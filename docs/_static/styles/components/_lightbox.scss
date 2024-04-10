@@ -68,7 +68,8 @@ section.imageContainer {
     height: 42.1875vw; /* 75*9/16 */
 }
 
-img.gallery, figure.gallery {
+article.bd-article *:not(figure) > img:not(.no-gallery),
+article.bd-article figure:not(.no-gallery) img {
     cursor: pointer;
 }
 
