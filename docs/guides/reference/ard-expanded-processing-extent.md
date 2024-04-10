@@ -15,25 +15,21 @@ Surface reflectance products over Australian offshore territories differ in qual
 :backlinks: none
 :::
 
-## Additional locations
+## Full list of locations
 
-The following maps show all the additional Seintel 2 and Landsat scenes that were added.
+The full list of locations, including the additional locations, is shown in the following maps and table.
 
 :::{figure} /_files/ard-expanded-processing-extent/extent_ls.png
 :alt: A map of Australia and surrounding areas annotated with rectangles to indicate the locations of additional Landsat scenes.
 
-The locations of the additional Landsat scenes.
+The locations of the Landsat scenes.
 :::
 
 :::{figure} /_files/ard-expanded-processing-extent/extent_s2.png
 :alt: A map of Australia and surrounding areas annotated with rectangles to indicate the locations of additional Sentinel-2 scenes.
 
-The locations of the additional Sentinel-2 tiles.
+The locations of the Sentinel-2 tiles.
 :::
-
-## Full list of locations
-
-This table contains the full list of locations, including the additional locations that were added.
 
 :::{list-table}
 :header-rows: 1
@@ -83,7 +79,7 @@ This table contains the full list of locations, including the additional locatio
 
 :::
 
-## Quality and metadata 
+## Query and metadata 
 
 The quality of ancillary and level 1 inputs used in ARD generation in offshore locations differs in comparison to inputs used on continental Australia. Quality information for ancillary inputs is found in the `proc-info` (processing information) YAML metadata file within the dataset. The tier list is `USER`, `FALLBACK`, and `DEFINITIVE`, with the latter being the highest level of quality. Unfortunately, this information is not available to users via the datacube, so we have added an additional metadata tag to delineate data delivered in this update: `final_ancillaries = "nonstandard"`
 
@@ -112,7 +108,7 @@ Surface reflectance data processed over the Australian mainland uses an SRTM ele
 
 The higher resolution results in false terrain correction in low relief areas. Features such as clusters of trees, large stand alone trees, tall buildings or rocks can cause terrain correction artefacts, including false shadow masks. 
 
-## BRDF quality issue and solution 
+## Bidirectional reflectance distribution function (BRDF)
 
 [BRDF](/guides/about/glossary/#brdf) is a solar illumination correction that adjusts reflectance intensity in differing amounts in differing directions. The light that comes from the Sun reflects off the Earth and is received by the sensor is adjusted based on the viewing or solar angle geometries of MODIS data.
 
