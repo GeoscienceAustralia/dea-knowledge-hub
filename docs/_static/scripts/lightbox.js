@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
         overlay.id = "overlay";
         lightboxContainer.appendChild(overlay);
 
-        if ("gallery" in mklbItem.dataset) {
+        if (true) {
             _mklbAddGallery(mklbItem);
         } else if ("videoSrc" in mklbItem.dataset) {
             lightboxContainer.appendChild(_mklbAddVideo(mklbItem));
@@ -108,10 +108,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
         mklbInner.id = "mklbInner";
 
         for (let i = 0; i < mklbItems.length; i++) {
-            if (
-                "gallery" in mklbItems[i].dataset &&
-                mklbItems[i].dataset.gallery === currentItem.dataset.gallery
-            ) {
+            if (true) {
                 gallery.push(mklbItems[i]);
 
                 if ("auto" in mklbItems[i].dataset) {
