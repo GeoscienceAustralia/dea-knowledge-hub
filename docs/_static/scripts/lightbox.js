@@ -14,9 +14,22 @@ document.addEventListener("DOMContentLoaded", function (event) {
     let mklbItems = document.querySelectorAll(
         "article.bd-article *:not(figure) > img:not(.no-gallery), article.bd-article figure:not(.no-gallery) img"
     );
+
     let lightboxContainer;
     let auto = 0;
     let interval;
+
+    for (let i = mklbItems.length - 1; i >= 0; i--) {
+        // Exclude DEA logo images since these are often at the start of articles
+        if (
+            mklbItems[i].src.indexOf("dea_logo") !== -1 ||
+            mklbItems[i].src.indexOf("dea-logo") !== -1
+        ) {
+            // mklbItems.splice(i, 1);
+        }
+    }
+
+    console.log(mklbItems);
 
     for (let i = 0; i < mklbItems.length; i++) {
         let mklbItem = mklbItems[i];
