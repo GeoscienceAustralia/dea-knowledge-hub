@@ -14,11 +14,11 @@ See the [DEA monitoring dashboard](https://monitoring.dea.ga.gov.au/) to check t
 
 ## 2024-04-10: DEA Intertidal 1.0.0 released
 
-The DEA Intertidal product suite maps the changing elevation, exposure and tidal characteristics of Australia’s exposed intertidal zone, the complex zone that defines the interface between land and sea.
+The [DEA Intertidal](/data/product/dea-intertidal/) product suite maps the changing elevation, exposure and tidal characteristics of Australia’s exposed intertidal zone, the complex zone that defines the interface between land and sea.
 
-This new product suite expands upon the [DEA Intertidal Elevation (Landsat)](https://knowledge.dea.ga.gov.au/data/old-version/dea-intertidal-elevation-landsat-1.0.0/) product which has now been deprecated.
+This new product suite expands upon the [DEA Intertidal Elevation (Landsat)](/data/old-version/dea-intertidal-elevation-landsat-1.0.0/) product which has now been deprecated.
 
-See [DEA Intertidal](https://knowledge.dea.ga.gov.au/data/product/dea-intertidal/) for more information.
+See [DEA Intertidal](/data/product/dea-intertidal/) for more information.
 
 ## 2024-03-28: DEA Sandbox outage (Resolved)
 
