@@ -140,6 +140,12 @@ document.addEventListener("DOMContentLoaded", function (event) {
         lightboxContainer.appendChild(prevContainer);
         prevContainer.addEventListener("click", () => _mklbSlide(true));
 
+        window.addEventListener("keydown", function (event) {
+            if (event.key === "ArrowLeft" || event.keyCode === 37) {
+                _mklbSlide(true);
+            }
+        });
+
         let next = document.createElement("div");
         next.id = "next";
         next.setAttribute("data-next", index <= gallery.length ? index + 1 : 1);
@@ -151,6 +157,13 @@ document.addEventListener("DOMContentLoaded", function (event) {
         nextContainer.addEventListener("click", function () {
             _mklbSlide(false);
             _mklbStopAutoGallery();
+        });
+
+        window.addEventListener("keydown", function (event) {
+            if (event.key === "ArrowRight" || event.keyCode === 39) {
+                _mklbSlide(false);
+                _mklbStopAutoGallery();
+            }
         });
 
         if (auto > 0) {
