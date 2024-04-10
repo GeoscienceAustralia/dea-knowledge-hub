@@ -1,6 +1,4 @@
-/**
- * MK Lightbox
- */
+// Adapted from MK Lightbox - https://github.com/marcuskirschen/mk-lightbox
 
 document.addEventListener("DOMContentLoaded", function (event) {
     const svgIcons = {
