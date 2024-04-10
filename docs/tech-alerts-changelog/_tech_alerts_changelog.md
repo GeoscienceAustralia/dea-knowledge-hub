@@ -12,6 +12,12 @@
 See the [DEA monitoring dashboard](https://monitoring.dea.ga.gov.au/) to check the current status of DEA's services.
 :::
 
+## 2024-04-10: Six of Australia’s offshore territories now covered by Digital Earth Australia baseline satellite data
+
+In support of Indigenous Communities in the Torres Strait, in addition to government agencies reporting on Ocean Ecosystem Accounts and Marine Parks management, DEA is making baseline satellite data available for six offshore territories.
+
+Learn more about [DEA ARD expanded processing extent](https://pr-175-preview.khpreview.dea.ga.gov.au/guides/reference/ard-expanded-processing-extent/)
+
 ## 2024-03-28: DEA Sandbox outage (Resolved)
 
 Users may have encountered an unplanned outage on the [Digital Earth Australia Sandbox](https://app.sandbox.dea.ga.gov.au/).
