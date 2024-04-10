@@ -30,8 +30,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
         }
     }
 
-    console.log(mklbItems);
-
     for (let i = 0; i < mklbItems.length; i++) {
         let mklbItem = mklbItems[i];
         mklbItem.addEventListener("click", () => _mklbOpen(mklbItem));
@@ -45,14 +43,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
         overlay.id = "overlay";
         lightboxContainer.appendChild(overlay);
 
-        if (true) {
+        if (mklbItems.length > 1) {
             _mklbAddGallery(mklbItem);
-        } else if ("videoSrc" in mklbItem.dataset) {
-            lightboxContainer.appendChild(_mklbAddVideo(mklbItem));
-        } else if ("youtubeId" in mklbItem.dataset) {
-            lightboxContainer.appendChild(_mklbAddYoutubeVideo(mklbItem));
-        } else if ("vimeoId" in mklbItem.dataset) {
-            lightboxContainer.appendChild(_mklbAddVimeoVideo(mklbItem));
         } else {
             lightboxContainer.appendChild(_mklbAddImage(mklbItem));
         }
@@ -79,39 +71,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
         image.id = "mklbImage";
         image.src = "src" in item.dataset ? item.dataset.src : item.src;
         return image;
-    }
-
-    function _mklbAddVideo(item) {
-        let video = document.createElement("video");
-        video.setAttribute("autoplay", true);
-        video.setAttribute("controls", true);
-        let source = document.createElement("source");
-        source.src = item.dataset.videoSrc;
-        source.type = "video/mp4";
-        video.appendChild(source);
-        return video;
-    }
-
-    function _mklbAddYoutubeVideo(item) {
-        let iframe = document.createElement("iframe");
-        iframe.id = "yt-video";
-        iframe.setAttribute("frameborder", "0");
-        iframe.setAttribute("allow", "autoplay; encrypted-media");
-        iframe.setAttribute("allowfullscreen", "");
-        iframe.src =
-            "https://www.youtube-nocookie.com/embed/" + item.dataset.youtubeId;
-        return iframe;
-    }
-
-    function _mklbAddVimeoVideo(item) {
-        let iframe = document.createElement("iframe");
-        iframe.id = "yt-video";
-        iframe.setAttribute("frameborder", "0");
-        iframe.setAttribute("allowfullscreen", "");
-        iframe.setAttribute("allow", "autoplay; fullscreen");
-        iframe.src =
-            "https://player.vimeo.com/video/" + item.dataset.vimeoId + "?dnt=1";
-        return iframe;
     }
 
     function _mklbAddGallery(currentItem) {
