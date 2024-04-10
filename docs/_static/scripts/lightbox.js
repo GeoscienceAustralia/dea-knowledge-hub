@@ -55,6 +55,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
         let closeIconContainer = document.createElement("div");
         closeIconContainer.id = "closeIconContainer";
+        closeIconContainer.title = "Close";
         closeIconContainer.innerHTML = svgIcons.close;
         lightboxContainer.appendChild(closeIconContainer);
         closeIconContainer.addEventListener("click", _closeLightbox);
