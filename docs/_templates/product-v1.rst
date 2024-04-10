@@ -77,6 +77,7 @@
    .. container::
 
       .. image:: {{ data.header_image or "/_files/pages/dea-hero.jpg" }}
+         :class: no-gallery
 
 .. container::
    :name: notifications
