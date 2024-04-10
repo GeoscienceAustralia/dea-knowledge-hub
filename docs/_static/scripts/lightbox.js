@@ -11,21 +11,22 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
     let lightboxClass = "gallery";
 
-    let mklbItems = document.querySelectorAll(
+    let allItems = document.querySelectorAll(
         "article.bd-article *:not(figure) > img:not(.no-gallery), article.bd-article figure:not(.no-gallery) img"
     );
+    let mklbItems = [];
 
     let lightboxContainer;
     let auto = 0;
     let interval;
 
-    for (let i = mklbItems.length - 1; i >= 0; i--) {
+    for (let i = allItems.length - 1; i >= 0; i--) {
         // Exclude DEA logo images since these are often at the start of articles
         if (
-            mklbItems[i].src.indexOf("dea_logo") !== -1 ||
-            mklbItems[i].src.indexOf("dea-logo") !== -1
+            !(allItems[i].src.indexOf("dea_logo") !== -1) &&
+            !(allItems[i].src.indexOf("dea-logo") !== -1)
         ) {
-            // mklbItems.splice(i, 1);
+            mklbItems.push(allItems[i]);
         }
     }
 
