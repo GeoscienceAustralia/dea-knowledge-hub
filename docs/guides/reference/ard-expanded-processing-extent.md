@@ -14,11 +14,6 @@ The standard ancillaries used to generate surface reflectance products over the 
 
 These maps represent all the additional locations that were added.
 
-:::{image} /_files/ard-expanded-processing-extent/extent_ls.png
-:alt: A map of Australia and surrounding areas annotated with rectangles to indicate the locations of additional Landsat scenes.
-:class: gallery
-:::
-
 :::{figure} /_files/ard-expanded-processing-extent/extent_ls.png
 :alt: A map of Australia and surrounding areas annotated with rectangles to indicate the locations of additional Landsat scenes.
 :figclass: gallery
