@@ -10,6 +10,14 @@ All DEA systems are working as expected. There are no outstanding incidents or e
 See the [DEA monitoring dashboard](https://monitoring.dea.ga.gov.au/) to check the current status of DEA's services.
 :::
 
+## 2024-04-10: DEA Intertidal 1.0.0 released
+
+The [DEA Intertidal](/data/product/dea-intertidal/) product suite maps the changing elevation, exposure and tidal characteristics of Australia’s exposed intertidal zone, the complex zone that defines the interface between land and sea.
+
+This new product suite expands upon the [DEA Intertidal Elevation (Landsat)](/data/old-version/dea-intertidal-elevation-landsat-1.0.0/) product which has now been deprecated.
+
+See [DEA Intertidal](/data/product/dea-intertidal/) for more information.
+
 ## 2024-04-03: Terra-derived DEA Hotspots have been restored
 
 Direct Broadcast satellite downloads from the Terra satellite have been restored and have been successfully processed into [DEA Hotspots](/data/product/dea-hotspots/).
