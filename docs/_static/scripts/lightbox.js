@@ -47,6 +47,12 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
         document.body.appendChild(lightboxContainer);
         overlay.addEventListener("click", _closeLightbox);
+
+        window.addEventListener("keydown", function (event) {
+            if (event.key === "Escape" || event.keyCode === 27) {
+                _closeLightbox();
+            }
+        });
     }
 
     function _mklbAddImage(item) {
