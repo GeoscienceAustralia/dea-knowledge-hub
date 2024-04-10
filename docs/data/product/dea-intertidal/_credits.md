@@ -13,6 +13,7 @@ The authors would like to sincerely thank the following individuals and organisa
 * Kathy Murray &mdash; WA Department of Biodiversity, Conservation and Attractions 
 * Hannah Power &mdash; University of Newcastle 
 * Mitch Lyons &mdash; University of New South Wales 
+* Nick Murray &mdash; James Cook University
 * Airborne Research Australia 
 * Northern Territory Government 
 
