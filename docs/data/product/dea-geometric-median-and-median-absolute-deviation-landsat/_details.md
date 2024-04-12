@@ -2,11 +2,11 @@
 
 Satellite imagery allows us to observe the Earth with significant accuracy and detail. However, missing data — such as gaps caused by cloud cover — can make it difficult to create a complete image. In order to produce a single, complete view of a certain area, satellite data must be consolidated by stacking measurements from different points in time to create a composite image. 
 
-Large-scale image composites are increasingly important for a variety of applications such as land cover mapping, change detection, and the generation of high-quality data to parameterise and validate bio-physical and geophysical models. A number of compositing methodologies are being used in remote sensing in general; however, challenges still exist. These challenges include  mitigating against boundary artifacts due to mosaicking scenes from different epochs ensuring spatial regularity across the mosaic image and maintaining the spectral relationship between bands. 
+Large-scale image composites are increasingly important for a variety of applications such as land cover mapping, change detection, and the generation of high-quality data to parameterise and validate bio-physical and geophysical models. A number of compositing methodologies are being used in remote sensing in general, however challenges still exist. These challenges include  mitigating against boundary artifacts due to mosaicking scenes from different epochs ensuring spatial regularity across the mosaic image and maintaining the spectral relationship between bands. 
 
 The creation of good composite images is especially important due to the opening of the [Landsat archive of the United States Geological Survey](https://www.usgs.gov/landsat-missions/landsat-collections). The greater availability of satellite imagery has resulted in demand to provide large regional mosaics that are representative of conditions over specific time periods while also being free of clouds and other unwanted visual noise. One approach is to ‘stitch together’ multiple selected high-quality images. Another is to create mosaics in which pixels from a time series of observations are combined (using an algorithm). This ‘pixel composite’ approach to mosaic generation provides more consistent results than with stitching high-quality images due to the improved colour balance created by combining one-by-one pixel-representative images. Another strength of pixel-based composites is their ability to be automated, hence enabling their use in large data collections and time series datasets. 
 
-The DEA GeoMAD product can be used for seeing how an area of land usually looks rather than only viewing it at a single point in time. Hence you can assess the land cover and land use on a general basis rather than at a specific point in time. It can also be used to assess how much an area changes over time. It highlights areas like bare rock that are very stable in contrast to cropping areas that change dramatically.
+The DEA GeoMAD product can be used for seeing how an area of land usually looks rather than only viewing it at a single point in time. Hence you can assess the land cover and land use on a general basis rather than at a specific date. It can also be used to assess how much an area changes over time. It highlights areas like bare rock that are very stable in contrast to cropping areas that change dramatically.
 
 This product combines the Geometric Median and the Median Absolute Deviation algorithms in a single package. The Geometric Median output provides information on the general conditions of the landscape for a given year. Meanwhile the Median Absolute Deviation output provides information on how the landscape is changing in the same year. 
 
@@ -51,15 +51,11 @@ This product provides statistical tools that utilise DEA’s Earth observation d
 
 The geometric median part of the product provides an 'average' cloud-free image over the given year. The geometric median image is calculated with a multi-dimensional median, using all the spectral measurements from the satellite imagery at the same time in order to maintain the relationships between the measurements. 
 
-The median absolute deviation part of the product uses three measures of variance, each of which provides a 'second order' high dimensional statistical composite for the given year. The three variance measures show how much an area varies from the 'average' in terms of 'distance' based on factors such as brightness and spectra. The three variance measures are: 
+The median absolute deviation part of the product uses three measures of variance, each of which provides a 'second order' high dimensional statistical composite for the given year. The three variance measures show how much an area varies from the 'average' in terms of 'distance' based on factors such as brightness and spectra. The three variance measures are: Euclidean distance (EMAD), Cosine (spectral) distance (SMAD), Bray Curtis dissimilarity (BCMAD). 
 
-* Euclidean distance (EMAD) 
-* Cosine (spectral) distance (SMAD) 
-* Bray Curtis dissimilarity (BCMAD) 
+They provide information on variance in the landscape over the given year and are useful for change detection applications. 
 
-Together, they provide information on variance in the landscape over the given year and are useful for change detection applications. 
-
-The GeoMAD product is useful for the following.
+The GeoMAD product is useful for the following:
 
 * Land cover mapping.
 * Change detection and classification (such as for burn-area mapping, crop mapping, and urban area mapping). 
@@ -150,9 +146,9 @@ As shown in the figure above, the Landsat satellites have data available for the
 :::{list-table}
 
 * - **Landsat 5**
-  - 1986&ndash;2000 and 2002&ndash;2010
+  - 1986&ndash;1999 and 2003&ndash;2011
 * - **Landsat 7**
-  - 2000&ndash;2021
+  - 1999&ndash;2021
 * - **Landsat 8**
   - 2013 onwards
 * - **Landsat 9**
@@ -225,7 +221,7 @@ $$
 \end{align*}
 $$
 
-The maximum possible value for EMAD depends on the value ranges for each of the bands in the dataset. In the case of GeoMAD, which uses at maximum annual timescales of ten bands of Sentinel-2 data, valid EMAD values range from 0 to 31623.
+The maximum possible value for EMAD depends on the value ranges for each of the bands in the dataset. In the case of GeoMAD, which uses at maximum annual timescales of six bands of Landsat data, valid EMAD values range from 0 to 10000.
 
 EMAD is useful for showing albedo shifts in satellite spectra.
 
@@ -323,13 +319,13 @@ BCMAD takes on values from 0 to 1.
 Landsat 5, 7, 8, and 9 Surface Reflectance includes NBART and Observational Attributes products. GeoMAD stands for Geometric Median and Median Absolute Deviation.
 :::
 
-The GeoMAD is derived from Landsat surface reflectance data. The data are masked for clouds and shadows to increase clarity. 
+The GeoMAD is derived from Landsat surface reflectance data. The data are masked for clouds and shadows to increase clarity and ensure the best data is used in the median calculation. 
 
 The three MAD layers of the GeoMAD are calculated by computing the multidimensional distance between each observation in a time series of multispectral (or higher dimensionality such as hyperspectral) satellite imagery versus the multidimensional median of the time series. The median used for this calculation is the geometric median corresponding to the time series. 
 
-The GeoMAD is calculated over annual time periods on Earth observations from a single sensor by default (such as the annual time series of Landsat 8 observations); however, it is applicable to multi-sensor time series of any length that computing resources can support. 
+The GeoMAD is calculated over annual time periods on Earth observations from a single sensor by default (such as the annual time series of Landsat 8 observations); however it is applicable to multi-sensor time series of any length that computing resources can support. 
 
-For the purposes of the default DEA product, GeoMADs are computed per calendar year and per sensor (Landsat 5, Landsat 7, Landsat 8, and Landsat 9) from terrain-illumination-corrected surface reflectance data (Analysis Ready Data).
+For the purposes of the default DEA product, GeoMADs are computed per calendar year per sensor for Landsat 5, Landsat 7, and Landsat 8 until 2022. GeoMADs are computed from combined sensors Landsat 8 and Landsat 9 from 2023 onwards. GeoMADs are computed using terrain-illumination-corrected surface reflectance data (Analysis Ready Data).
 
 Note that the constituent pixels in the GeoMAD pixel composite mosaics are synthetic. This means that the pixels have not been physically observed by the satellite; rather, they are the computed high-dimensional medians of a time series of pixels. 
 
