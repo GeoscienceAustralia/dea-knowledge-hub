@@ -1,7 +1,7 @@
 
-# 2023-11-27: Transect NSW Site 1, Sentinel-2B overpass
+# 2023-11-26: Transect South Australia Site 1, Landsat 8 overpass
 
-A Daily Validation Summary Report of the surface reflectance data collected on the date of 2023-11-27 by Geoscience&nbsp;Australia. 
+A Daily Validation Summary Report of the surface reflectance data collected on the date of 2023-11-26 by Geoscience&nbsp;Australia. 
 The full collection of data is contained in the [National Spectral Database](https://www.dea.ga.gov.au/products/national-spectral-database).
 Satellite data can be found on [DEA maps](https://maps.dea.ga.gov.au/).
 
@@ -18,11 +18,11 @@ These variables and environmental factors were present on the day the data were 
 :class: validation-report-variables-table
 
 "Instrument(s) used","ASD FR4 (18179/3)"
-"Time of field site measurements (UTC)","2023-11-26 22:37:46 to 2023-11-26 23:37:06"
-"Time of overpass (UTC)", 2023-11-27 00:45:46
+"Time of field site measurements (UTC)","2023-11-26 00:05:36 to 2023-11-26 00:53:24"
+"Time of overpass (UTC)", 2023-11-26 00:33:00
 "GPS quality","Good"
-"Reference position","142.1036962E, 31.8135401S (WGS84)"
-"Matchup quality","Good"
+"Reference position","140.64201522E, 32.17492712S (WGS84)"
+"Matchup quality","Excellent"
 :::
 
 ## Results
@@ -33,24 +33,20 @@ This allows the data to be used to validate Geoscience Australia's other dataset
 ```{eval-rst}
 .. container:: validation-report-download
 
-   :download:`Download as CSV <./DailyValidationResults-2023-11-27.csv>`
+   :download:`Download as CSV <./DailyValidationResults-2023-11-26.csv>`
 ```
 
 :::{csv-table}
 :class: validation-report-results-table
 
 "Band","Sat Mean","Sat rms","Field mean","Field rms"
-"CA","0.0546","0.000435","0.0488","0.003"
-"blue","0.0659","0.00141","0.0638","0.00402"
-"green","0.102","0.00452","0.104","0.0104"
-"red","0.185","0.0141","0.188","0.0284"
-"RE1","0.208","0.0142","0.209","0.0312"
-"RE2","0.224","0.015","0.225","0.0331"
-"RE3","0.234","0.015","0.237","0.0333"
-"NIR1","0.244","0.0151","0.246","0.0313"
-"NIR2","0.25","0.0125","0.251","0.03"
-"SWIR2","0.387","0.011","0.395","0.0375"
-"SWIR3","0.307","0.0117","0.322","0.039"
+"CA","0.0557","0.000895","0.0508","0.00527"
+"blue","0.0681","0.00127","0.0646","0.00751"
+"green","0.118","0.00385","0.119","0.0244"
+"red","0.21","0.00766","0.21","0.0569"
+"NIR","0.281","0.00876","0.279","0.0584"
+"SWIR1","0.371","0.00847","0.378","0.0606"
+"SWIR2","0.303","0.0075","0.318","0.0651"
 :::
 
 ## Figures
@@ -59,7 +55,7 @@ Click an image to view it at full size.
 
 :::::{grid} 1 1 2 3
 ::::{grid-item}
-:::{figure} ./RGB-2023-11-27.png
+:::{figure} ./RGB-2023-11-26.png
 
 A satellite imagery tile of true colour (RGB) surface reflectance. 
 It covers an area of approximately 2&nbsp;km &times; 2&nbsp;km. 
@@ -68,7 +64,7 @@ of the field site.
 :::
 ::::
 ::::{grid-item}
-:::{figure} ./DayComparison-2023-11-27.png
+:::{figure} ./DayComparison-2023-11-26.png
 
 A band-by-band plot of surface reflectance for satellite and field data. 
 Satellite uncertainty error bars for each band are the standard deviation
@@ -79,7 +75,7 @@ averaging all spectra within the same satellite pixels.
 :::
 ::::
 ::::{grid-item}
-:::{figure} ./OverallComparison-2023-11-27.png
+:::{figure} ./OverallComparison-2023-11-26.png
 
 A plot of Satellite Surface Reflectance versus Field Site Surface Reflectance on this day.
 The solid line represents the one-to-one equality between field and satellite measurements.
