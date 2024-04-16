@@ -140,6 +140,8 @@ The primary uses of geometric median pixel composites are for change detection w
 Timeline of Landsat satellite and sensor availability.
 :::
 
+% Diagram source file: https://geoscienceau.sharepoint.com/:p:/r/sites/DEA/_layouts/15/Doc.aspx?sourcedoc=%7BA4E5C929-51C3-4F88-B618-6F620E4578D0%7D&file=Landsat%20timeline.pptx&action=edit&mobileredirect=true
+
 ::::{dropdown} Timeline of Landsat availability
 As shown in the figure above, the Landsat satellites have data available for the following time periods.
 
