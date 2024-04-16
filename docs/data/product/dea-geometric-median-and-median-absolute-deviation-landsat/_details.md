@@ -134,7 +134,7 @@ Note that only Landsat 7 geometric median data is available between 2000 and 200
 
 The primary uses of geometric median pixel composites are for change detection within baselines and for broad regional image composites (such as national and continental mosaics).
 
-:::{figure} /_files/landsat/landsat-timeline-2024.jpg
+:::{figure} /_files/landsat/landsat-timeline-2024.png
 :alt: Landsat geometric median time coverage diagram
 
 Timeline of Landsat satellite and sensor availability.
