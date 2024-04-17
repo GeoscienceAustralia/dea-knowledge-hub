@@ -16,3 +16,6 @@ Our OGC Web Service supporting WMS, WCS and some WPS functionality is <https://o
 
 If you notice an error in this documentation, things that could be explained more clearly, or things that are missing, please let us know by creating an Issue in the [dea-notebooks GitHub repository](https://github.com/GeoscienceAustralia/dea-notebooks/issues), and list what you would like to see changed.
 
+<img src="/_static/ard-expanded-processing-extent/extent_ls.png" alt="" data-gallery="extents-gallery">
+<img src="/_static/ard-expanded-processing-extent/extent_s2.png" alt="" data-gallery="extents-gallery">
+<img src="/_static/ard-expanded-processing-extent/LS5_7_8_9_L1TP_Density_and_Coverage.png" alt="" data-gallery="extents-gallery">

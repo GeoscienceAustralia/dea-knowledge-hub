@@ -37,6 +37,7 @@
    .. container::
 
       .. image:: /_files/pages/dea-hero.jpg
+         :class: no-gallery
 
 .. container:: showcase-panel bg-gradient-forest reverse
    :name: dea-notebooks
@@ -52,6 +53,7 @@
    .. container::
 
       .. image:: /_files/cmi/Kakadu-Mary_TCW-percentiles-wide_1.jpg
+         :class: no-gallery
 
 .. container:: showcase-panel bg-gradient-stone
    :name: changelog
@@ -67,6 +69,7 @@
    .. container::
 
       .. image:: /_files/reference/Reporting_dashboard.png
+         :class: no-gallery
 
 .. container:: showcase-panel bg-gradient-space reverse
    :name: dea-notebooks
@@ -101,3 +104,4 @@
    .. container::
 
       .. image:: /_files/themes/sea-ocean-and-coast.* 
+         :class: no-gallery

@@ -29,6 +29,13 @@ collection:
 doi: 10.26186/146449
 ecat: "146449"
 nci: null
+licence:
+  name: Creative Commons Attribution 4.0 International Licence
+  link: https://creativecommons.org/licenses/by/4.0/
+
+citations:
+  data_citation: null
+  paper_citation: null
 
 tags:
   - geoscience_australia_sentinel_2_collection_3

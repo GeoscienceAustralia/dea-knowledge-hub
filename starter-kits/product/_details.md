@@ -1,8 +1,6 @@
 % ## Background
 
-## Purpose
-
-% ## Applications
+## Applications
 
 ## Technical information
 
