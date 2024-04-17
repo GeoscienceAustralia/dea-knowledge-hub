@@ -18,4 +18,3 @@ If you notice an error in this documentation, things that could be explained mor
 
 <iframe src="https://mgmt.sandbox.dea.ga.gov.au/d-solo/3S1XpzZSk/currency-latest?orgId=1&from=1705374413481&to=1713150413481&panelId=2" width="450" height="200" frameborder="0"></iframe>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/woKXYlqngCQ?si=NCSEIYsMwZVpBp_K" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
