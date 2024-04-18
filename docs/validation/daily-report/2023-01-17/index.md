@@ -28,7 +28,7 @@ These variables and environmental factors were present on the day the data were 
 ## Results
 
 The surface reflectance statistics collected on this day are grouped into bands. 
-This allows the data to be used to validate Geoscience Australia's other datasets which use the same standardised bands.
+This allows the data to be used to validate Geoscience Australia's other datasets that use the same standardised bands.
 
 ```{eval-rst}
 .. container:: validation-report-download
