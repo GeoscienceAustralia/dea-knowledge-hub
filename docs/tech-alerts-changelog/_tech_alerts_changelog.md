@@ -10,6 +10,12 @@ All DEA systems are working as expected. There are no outstanding incidents or e
 See the [DEA monitoring dashboard](https://monitoring.dea.ga.gov.au/) to check the current status of DEA's services.
 :::
 
+## 2024-04-18: New Validation reports section
+
+The Knowledge Hub contains a new [Validation reports](/validation/) section. This is where you will find reports of Geoscience Australia’s validation data, published periodically. This data can be used to validate Geoscience Australia’s other datasets.
+
+See the latest Daily Validation Summary Report: [2023-11-27: Transect NSW Site 1, Sentinel-2B overpass](/validation/daily-report/2023-11-27/)
+
 ## 2024-04-10: DEA Intertidal 1.0.0 released
 
 The [DEA Intertidal](/data/product/dea-intertidal/) product suite maps the changing elevation, exposure and tidal characteristics of Australia’s exposed intertidal zone, the complex zone that defines the interface between land and sea.
@@ -47,12 +53,6 @@ We have received notice from NASA that Direct Broadcast satellite downloads from
 Outages affecting DEA Open Web Services (OWS) have been resolved. Work will be continuing over the coming months to further improve performance and reliability of these services. 
 
 See the [DEA monitoring dashboard](https://monitoring.dea.ga.gov.au/) to check the current status of DEA's services.
-
-## 2024-04-10: Validation reports now being published
-
-The Knowledge Hub contains a new [Validation reports](/validation/) section. This is where you will find reports of Geoscience Australia’s validation data, published periodically. This data can be used to validate Geoscience Australia’s other datasets.
-
-See the first Daily Validation Summary Report: [2023-11-27: Transect NSW Site 1, Sentinel-2B overpass](/validation/daily-report/2023-11-27/)
 
 ## 2024-02-26: Sentinel-2 contiguity fix reprocessing complete
 
