@@ -10,7 +10,7 @@ All DEA systems are working as expected. There are no outstanding incidents or e
 See the [DEA monitoring dashboard](https://monitoring.dea.ga.gov.au/) to check the current status of DEA's services.
 :::
 
-## 2024-04-18: Validation reports now being published
+## 2024-04-18: New Validation reports section
 
 The Knowledge Hub contains a new [Validation reports](/validation/) section. This is where you will find reports of Geoscience Australia’s validation data, published periodically. This data can be used to validate Geoscience Australia’s other datasets.
 
