@@ -78,7 +78,7 @@
 
       .. rubric:: Validation reports
 
-      Assess the validity of our datasets against these validation reports.
+      How well does DEA's satellite-derived Analysis Ready Data compare with field-derived surface reflectance data? This comparison is provided by these reports.
 
       `Visit the Validation reports </validation/>`_
 
