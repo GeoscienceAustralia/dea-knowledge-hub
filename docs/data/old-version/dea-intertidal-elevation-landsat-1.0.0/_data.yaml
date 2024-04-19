@@ -34,8 +34,8 @@ licence:
   link: https://creativecommons.org/licenses/by/4.0/
 
 citations:
-  data_citation: Bishop-Taylor, R., Sagar, S., Lymburner, L. 2018. National Intertidal Digital Elevation Model 25m 1.0.0. Geoscience Australia, Canberra. http://dx.doi.org/10.26186/5c4fc06a79f76
-  paper_citation: Bishop-Taylor, R., Sagar, S., Lymburner, L., Beaman, R.L., 2019. Between the tides: modelling the elevation of Australia's exposed intertidal zone at continental scale. Estuarine, Coastal and Shelf Science. https://doi.org/10.1016/j.ecss.2019.03.006
+  data_citation: "Bishop-Taylor, R., Sagar, S., Lymburner, L. 2018. National Intertidal Digital Elevation Model 25m 1.0.0. Geoscience Australia, Canberra. http://dx.doi.org/10.26186/5c4fc06a79f76"
+  paper_citation: "Bishop-Taylor, R., Sagar, S., Lymburner, L., Beaman, R.L., 2019. Between the tides: modelling the elevation of Australia's exposed intertidal zone at continental scale. Estuarine, Coastal and Shelf Science. https://doi.org/10.1016/j.ecss.2019.03.006"
 
 tags:
   - geoscience_australia_landsat_collection_2_deprecated
