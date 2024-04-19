@@ -56,10 +56,10 @@ explorers:
     name: Data explorer
 
 data:
-  - link: http://pid.geoscience.gov.au/dataset/ga/123678
-    name: Download the "NIDEM mosaic"
+  - link: https://data.dea.ga.gov.au/?prefix=nidem/
+    name: Access the data on AWS
   - link: http://dapds00.nci.org.au/thredds/catalogs/fk4/nidem_1_0.html
-    name: Access the Data on NCI
+    name: Access the data on NCI
 
 code_examples: null
 
