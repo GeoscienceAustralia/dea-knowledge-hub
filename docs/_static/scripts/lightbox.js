@@ -54,10 +54,18 @@ document.addEventListener("DOMContentLoaded", function (event) {
         closeIconContainer.title = "Close";
         closeIconContainer.innerHTML = svgIcons.close;
         lightboxContainer.appendChild(closeIconContainer);
-        closeIconContainer.addEventListener("click", _closeLightbox);
 
         document.body.appendChild(lightboxContainer);
-        overlay.addEventListener("click", _closeLightbox);
+
+        closeIconContainer.addEventListener("click", _closeLightbox);
+
+        const imageContainers = document.querySelectorAll(
+            "#mkLightboxContainer .imageContainer"
+        );
+
+        for (let i = 0; i < imageContainers.length; i++) {
+            imageContainers[i].addEventListener("click", _closeLightbox);
+        }
 
         window.addEventListener("keydown", function (event) {
             if (event.key === "Escape" || event.keyCode === 27) {
