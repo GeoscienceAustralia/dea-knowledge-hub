@@ -58,7 +58,9 @@ data:
 
 code_examples: null
 
-web_services: null
+web_services:
+  - link: https://ows.dea.ga.gov.au/
+    name: Web Map Service (WMS)
 
 custom: null
 
