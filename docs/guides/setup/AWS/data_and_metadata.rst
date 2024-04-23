@@ -145,6 +145,5 @@ For Surface Reflectance products, the following additional attributes are includ
 Download data via S3
 --------------------
 
-Follow the guide on our `FAQ </guides/about/faq/>`_ to learn how to download data from AWS S3.
-
+To learn how to download data from AWS S3, see the `Frequently Asked Questions </guides/about/faq/>`_ page.
 
