@@ -10,6 +10,14 @@ All DEA systems are working as expected. There are no outstanding incidents or e
 See the [DEA monitoring dashboard](https://monitoring.dea.ga.gov.au/) to check the current status of DEA's services.
 :::
 
+## 2024-04-23: It's now easier to cite DEA products
+
+A new "cite this product" heading has been added to each of DEA's product metadata pages to make it
+easier to cite DEA's data products. A citation has been provided for the data itself, and where relevant
+a second citation to the published methods paper has also been provided. 
+
+Check out this feature on DEA's new [DEA Waterbodies page](/data/product/dea-waterbodies-landsat/?tab=overview#citations). 
+
 ## 2024-04-18: New Validation reports section
 
 The Knowledge Hub contains a new [Validation reports](/validation/) section. This is where you will find reports of Geoscience Australia’s validation data, published periodically. This data can be used to validate Geoscience Australia’s other datasets.
