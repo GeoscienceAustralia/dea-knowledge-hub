@@ -15,7 +15,7 @@ spatial_data_type: Raster
 time_span:
   start: null
   end: null
-update_frequency: Monthly
+update_frequency: null # Monthly
 next_update: null
 product_ids: null
 
