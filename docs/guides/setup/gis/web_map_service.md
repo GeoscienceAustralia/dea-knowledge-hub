@@ -29,6 +29,7 @@ Although this tutorial focuses on QGIS, the same process can be used to connect 
 5. A dialogue will open, as shown below: Provide the following details, these can be found at the URL [https://ows.dea.ga.gov.au/](https://ows.dea.ga.gov.au/).
 
 `Name: DEA Services`
+
 `URL:  https://ows.dea.ga.gov.au/?service=WMS&version=1.3.0&request=GetCapabilities`
 
 ![QGIS - Create New Connection](/_files/web-services/ows_tutorial_3.png)

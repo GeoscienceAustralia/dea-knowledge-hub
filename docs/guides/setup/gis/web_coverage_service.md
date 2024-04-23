@@ -22,6 +22,7 @@ This tutorial shows how to create a Web Coverage Service connection using QGIS.
 5. A dialogue will open, as shown below: Provide the following details, these can be found at the URL [https://ows.dea.ga.gov.au/](https://ows.dea.ga.gov.au/).
 
 `Name: DEA Services`
+
 `URL:  https://ows.dea.ga.gov.au/?service=WMS&version=1.3.0&request=GetCapabilities`
 
 ![QGIS - WCS Connection](/_files/web-services/ows_tutorial_6.png)
