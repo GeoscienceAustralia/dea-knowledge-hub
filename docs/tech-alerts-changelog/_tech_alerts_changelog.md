@@ -14,9 +14,8 @@ See the [DEA monitoring dashboard](https://monitoring.dea.ga.gov.au/) to check t
 
 A new 'Cite this product' section has been added to each product page to make it
 easier to cite the product in your academic paper, article, or presentation.
-
-A citation may been provided for the data itself, and where relevant,
-to the published methods paper. 
+A citation may been provided for the data itself, and where relevant, to the
+published methods paper. 
 
 See this feature on the [DEA Waterbodies product page](/data/product/dea-waterbodies-landsat/?tab=overview#citations). 
 
