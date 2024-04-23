@@ -5,8 +5,7 @@
 Amazon Web Services
 ===================
 
-DEA hosts data on Amazon Web Service (AWS)'s Simple Storage Service (S3) to facilitate direct data access. Most of the data that is stored on S3 is Cloud Optimised GeoTIFFs, which can be accessed directly without downloading the files. In addition to data, there are a number of services including an interactive code environment using Jupyter, a metadata explorer and web services available.
-This page provides technical documentation for using the DEA data and services on AWS.
+DEA hosts data on the Simple Storage Service (S3) of Amazon Web Services (AWS) to facilitate direct data access. Most of the data that is stored on S3 is in the form of Cloud Optimised GeoTIFFs, which can be accessed directly without downloading the files. In addition to data, there are several services available, including an interactive code environment using Jupyter, a metadata explorer, and web services. This page provides technical documentation for using the DEA data and services on AWS.
 
 .. contents:: In this guide
    :local:
