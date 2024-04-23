@@ -1,14 +1,14 @@
 # Analysis Ready Data: Open Data Cube
 
-The [Open Data Cube (ODC)](/guides/about/glossary/#odc) is an open source solution for accessing, managing, and analyzing large quantities of 
-Geographic Information System (GIS) data - namely Earth observation data. It is a global initiative to increase the 
+The [Open Data Cube (ODC)](/guides/about/glossary/#odc) is an open-source solution for accessing, managing, and analysing large quantities of 
+Geographic Information System (GIS) data &mdash; namely Earth observation data. It is a global initiative to increase the 
 value and use of satellite data by providing users with access to free and open data management technologies and 
 analysis platforms.
 
 At its core, ODC is a set of Python libraries and a [PostgreSQL](/guides/about/glossary/#postgresql) database that allows you to work with geospatial raster 
-data.  
+data.
 
-This article demonstrates how to query the DEA Open Data Cube.
+This article will show you how to query the DEA Open Data Cube.
 
 :::{contents} In this guide
 :depth: 1
