@@ -12,11 +12,13 @@ See the [DEA monitoring dashboard](https://monitoring.dea.ga.gov.au/) to check t
 
 ## 2024-04-23: It's now easier to cite DEA products
 
-A new "cite this product" heading has been added to each of DEA's product metadata pages to make it
-easier to cite DEA's data products. A citation has been provided for the data itself, and where relevant
-a second citation to the published methods paper has also been provided. 
+A new 'Cite this product' section has been added to each product page to make it
+easier to cite the product in your academic paper, article, or presentation.
 
-Check out this feature on DEA's new [DEA Waterbodies page](/data/product/dea-waterbodies-landsat/?tab=overview#citations). 
+A citation may been provided for the data itself, and where relevant,
+to the published methods paper. 
+
+See this feature on the [DEA Waterbodies product page](/data/product/dea-waterbodies-landsat/?tab=overview#citations). 
 
 ## 2024-04-18: New Validation reports section
 
