@@ -37,7 +37,7 @@ licence:
   link: https://creativecommons.org/licenses/by/4.0/
 
 citations:
-  data_citation: null
+  data_citation: "Mueller, N. 2022. Geoscience Australia Landsat Water Observation Statistics Collection 3. Geoscience Australia, Canberra. https://dx.doi.org/10.26186/146091"
   paper_citation: null
 
 tags:

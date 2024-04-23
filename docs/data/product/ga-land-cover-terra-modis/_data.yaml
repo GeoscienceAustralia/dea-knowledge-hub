@@ -34,7 +34,7 @@ licence:
   link: https://creativecommons.org/licenses/by/4.0/
 
 citations:
-  data_citation: null
+  data_citation: "Lymburner, L., Tan, P., McIntyre, A., Thankappan, M., Sixsmith, J. 2015. Dynamic Land Cover Dataset Version 2.1. Geoscience Australia, Canberra. https://pid.geoscience.gov.au/dataset/ga/83868"
   paper_citation: null
 
 tags:
