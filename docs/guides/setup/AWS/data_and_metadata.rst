@@ -138,6 +138,13 @@ For Surface Reflectance products, the following additional attributes are includ
 | ``gqa_iterative_mean_xy`` | a measure of the scenes geometric accuracy in pixels |
 +---------------------------+------------------------------------------------------+
 
-
 .. _website: https://data.dea.ga.gov.au
 .. _DEA Sandbox: /guides/setup/Sandbox/sandbox/
+
+
+Download data via S3
+--------------------
+
+Follow the guide on our `FAQ </guides/about/faq/>`_ to learn how to download data from AWS S3.
+
+
