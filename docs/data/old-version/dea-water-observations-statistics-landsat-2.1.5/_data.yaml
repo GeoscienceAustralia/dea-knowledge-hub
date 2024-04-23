@@ -15,7 +15,7 @@ spatial_data_type: Raster
 time_span:
   start: null
   end: null
-update_frequency: Periodically
+update_frequency: null # Periodically
 next_update: null
 product_ids:
   - wofs_summary
