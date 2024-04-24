@@ -18,6 +18,7 @@
           .. container:: image-container
 
              .. image:: {{ page.image or "/_files/pages/dea-hero.jpg" }}
+                :class: no-gallery
 
           .. rubric:: {{ page.name }}
        {% endfor %}

@@ -124,8 +124,7 @@ entries:
           - file: data/product/dea-coastlines/index
           - file: data/product/dea-high-and-low-tide-imagery-landsat/index
             title: DEA High and Low Tide Imagery
-          - file: data/product/dea-intertidal-elevation-landsat/index
-            title: DEA Intertidal Elevation (NIDEM)
+          - file: data/product/dea-intertidal/index
           - file: data/product/dea-intertidal-extents-landsat/index
             title: DEA Intertidal Extents (ITEM)
 
@@ -202,6 +201,39 @@ entries:
       - caption: Reference
         entries:
           - file: notebooks/Tools/index # Contains its own table of contents.
+
+  # Validation
+
+  - file: validation/index
+    subtrees:
+      - caption: Daily Reports
+        entries:
+          - file: validation/daily-report/index
+            title: All daily reports
+            options:
+              reversed: True
+            entries:
+              - glob: validation/daily-report/*/index
+      # - caption: Quarterly Reports
+      #   options:
+      #     reversed: True
+      #   entries:
+      #     - file: validation/quarterly-report/index
+      #       title: All quarterly reports
+      #       options:
+      #         reversed: True
+      #       entries:
+      #         - glob: validation/quarterly-report/*/index
+      # - caption: Yearly Reports
+      #   options:
+      #     reversed: True
+      #   entries:
+      #     - file: validation/yearly-report/index
+      #       title: All yearly reports
+      #       options:
+      #         reversed: True
+      #       entries:
+      #         - glob: validation/yearly-report/*/index
 
   # Tags
 

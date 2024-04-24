@@ -33,7 +33,7 @@ licence:
   link: https://creativecommons.org/licenses/by/4.0/
 
 citations:
-  data_citation: null
+  data_citation: "Geoscience Australia, 2021. Australian National Spectral Database. Geoscience Australia, Canberra. https://pid.geoscience.gov.au/dataset/ga/145560"
   paper_citation: null
 
 tags:

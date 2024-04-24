@@ -34,7 +34,7 @@ licence:
   link: https://creativecommons.org/licenses/by/4.0/
 
 citations:
-  data_citation: null
+  data_citation: "Alam, I., Chopra, A., Gray, D., Hooke, J., Li, F., Ly, L., Mettes, J., Miller, J., Norton, A., OHehir, A. 2023. Geoscience Australia Landsat 9 OLI TIRS Analysis Ready Data Collection 3. Geoscience Australia, Canberra. https://dx.doi.org/10.26186/148693"
   paper_citation: null
 
 tags:

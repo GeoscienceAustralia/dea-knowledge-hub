@@ -2,21 +2,46 @@
 % https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/tech_alerts_changelog.html
 
 :::{admonition} DEA System Status
-:class: caution
+:class: tip
 % Change the 'class' to either: tip / caution / danger
 
-2024-04-02: We have received notice from NASA that Direct Broadcast satellite downloads from the Terra satellite have been provisionally restored. We are working on restoring the data feed to [DEA Hotspots](https://hotspots.dea.ga.gov.au/); however, Terra-derived DEA Hotspots are still currently unavailable.
-
-% All DEA systems are working as expected. There are no outstanding incidents or errors to report.
+All DEA systems are working as expected. There are no outstanding incidents or errors to report.
 
 See the [DEA monitoring dashboard](https://monitoring.dea.ga.gov.au/) to check the current status of DEA's services.
 :::
+
+## 2024-04-23: It's now easier to cite DEA products
+
+A new 'Cite this product' section has been added to each product page to make it
+easier to cite the product in your academic paper, article, or presentation.
+A citation may been provided for the data itself, and where relevant, to the
+published methods paper. 
+
+See this feature on the [DEA Waterbodies product page](/data/product/dea-waterbodies-landsat/?tab=overview#citations). 
+
+## 2024-04-18: New Validation reports section
+
+The Knowledge Hub contains a new [Validation reports](/validation/) section. This is where you will find reports of Geoscience Australia’s validation data, published periodically. This data can be used to validate Geoscience Australia’s other datasets.
+
+See the latest Daily Validation Summary Report: [2023-11-27: Transect NSW Site 1, Sentinel-2B overpass](/validation/daily-report/2023-11-27/)
 
 ## 2024-04-10: Six of Australia’s offshore territories now covered by Digital Earth Australia baseline satellite data
 
 In support of Indigenous Communities in the Torres Strait, in addition to government agencies reporting on Ocean Ecosystem Accounts and Marine Parks management, DEA is making baseline satellite data available for six offshore territories.
 
 Learn more about the [DEA ARD expanded processing extent](https://pr-175-preview.khpreview.dea.ga.gov.au/guides/reference/ard-expanded-processing-extent/).
+
+## 2024-04-10: DEA Intertidal 1.0.0 released
+
+The [DEA Intertidal](/data/product/dea-intertidal/) product suite maps the changing elevation, exposure and tidal characteristics of Australia’s exposed intertidal zone, the complex zone that defines the interface between land and sea.
+
+This new product suite expands upon the [DEA Intertidal Elevation (Landsat)](/data/old-version/dea-intertidal-elevation-landsat-1.0.0/) product which has now been deprecated.
+
+See [DEA Intertidal](/data/product/dea-intertidal/) for more information.
+
+## 2024-04-03: Terra-derived DEA Hotspots have been restored
+
+Direct Broadcast satellite downloads from the Terra satellite have been restored and have been successfully processed into [DEA Hotspots](/data/product/dea-hotspots/).
 
 ## 2024-03-28: DEA Sandbox outage (Resolved)
 
@@ -34,7 +59,7 @@ You can monitor the status of DEA’s systems on the [DEA monitoring dashboard](
 
 Improvements include additional supporting data for the most recent observations made available through web mapping services (WMS) and DEA Maps, more metadata, Landsat 9 data, and pipeline upgrades. Version 3.0.0 of DEA Waterbodies uses the same underlying polygon set as DEA Waterbodies version 2.0.0. [Learn more](/data/product/dea-waterbodies-landsat/?tab=history)
 
-## 2024-03-21: Terra-derived DEA Hotspots are unavailable
+## 2024-03-21: Terra-derived DEA Hotspots are unavailable (Resolved)
 
 We have received notice from NASA that Direct Broadcast satellite downloads from the Terra satellite are currently unavailable. This means that Terra-derived [DEA Hotspots](https://hotspots.dea.ga.gov.au/) are unavailable until further notice.
 
