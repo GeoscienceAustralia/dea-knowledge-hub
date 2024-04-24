@@ -25,11 +25,11 @@ The Knowledge Hub contains a new [Validation reports](/validation/) section. Thi
 
 See the latest Daily Validation Summary Report: [2023-11-27: Transect NSW Site 1, Sentinel-2B overpass](/validation/daily-report/2023-11-27/)
 
-## 2024-04-10: Six of Australia’s offshore territories now covered by Digital Earth Australia baseline satellite data
+## 2024-04-24: Six of Australia’s offshore territories now covered by Digital Earth Australia baseline satellite data
 
-In support of Indigenous Communities in the Torres Strait, in addition to government agencies reporting on Ocean Ecosystem Accounts and Marine Parks management, DEA is making baseline satellite data available for six offshore territories.
+In support of Indigenous Communities in the Torres Strait, in addition to government agencies reporting on Ocean Ecosystem Accounts and Marine Parks management, DEA is making baseline satellite data available for six offshore territories and islands in the Torres Strait.
 
-Learn more about the [DEA ARD expanded processing extent](https://pr-175-preview.khpreview.dea.ga.gov.au/guides/reference/ard-expanded-processing-extent/).
+Learn more about the [DEA ARD expanded processing extent](/guides/reference/ard-expanded-processing-extent/).
 
 ## 2024-04-10: DEA Intertidal 1.0.0 released
 
