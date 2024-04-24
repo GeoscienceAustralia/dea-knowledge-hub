@@ -5,7 +5,7 @@
 Amazon Web Services
 ===================
 
-Digital Earth Australia store our data products in Amazon Web Service's S3 Service, with free public access. In addition to data, there are a number of services including an interactive code environment using Jupyter, a metadata explorer and web services available. This page provides technical documentation for using the DEA data and services on AWS.
+DEA hosts data on the Simple Storage Service (S3) of Amazon Web Services (AWS) to facilitate direct data access. Most of the data that is stored on S3 is in the form of Cloud Optimised GeoTIFFs, which can be accessed directly without downloading the files. In addition to data, there are several services available, including an interactive code environment using Jupyter, a metadata explorer, and web services. This page provides technical documentation for using the DEA data and services on AWS.
 
 .. contents:: In this guide
    :local:
@@ -138,6 +138,12 @@ For Surface Reflectance products, the following additional attributes are includ
 | ``gqa_iterative_mean_xy`` | a measure of the scenes geometric accuracy in pixels |
 +---------------------------+------------------------------------------------------+
 
-
 .. _website: https://data.dea.ga.gov.au
 .. _DEA Sandbox: /guides/setup/Sandbox/sandbox/
+
+
+Download data via S3
+--------------------
+
+To learn how to download data from AWS S3, see the `Frequently Asked Questions </guides/about/faq/>`_ page.
+
