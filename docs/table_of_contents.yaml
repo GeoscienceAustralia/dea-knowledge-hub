@@ -246,6 +246,7 @@ entries:
   # DEA Tech Alerts and Changelog
 
   - file: tech-alerts-changelog/index
+    title: Tech Alerts & Changelog
     subtrees:
       - caption: Older entries
         entries:
