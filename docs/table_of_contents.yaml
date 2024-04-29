@@ -249,14 +249,6 @@ entries:
       #       entries:
       #         - glob: validation/yearly-report/*/index
 
-  # Tags
-
-  - file: tags/index
-    subtrees:
-      - caption: Tags
-        entries:
-          - glob: tags/*
-
   # Old versions of products
 
   - file: data/old-version/index
@@ -369,3 +361,10 @@ entries:
           - glob: data/old-version/d*/index # This was moved here from the 'D' section because it was disrupting the 'dea-' patterns. If regex is supported in the future, we can make it work properly in the 'D' section.
           - glob: data/old-version/*/index
 
+  # Tags
+
+  - file: tags/index
+    subtrees:
+      - caption: Tags
+        entries:
+          - glob: tags/*
