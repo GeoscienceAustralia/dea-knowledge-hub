@@ -1,6 +1,6 @@
 .. datatemplate:yaml:: _data.yaml
    :template: card-list-v1.rst
 
-.. raw:: html
+.. include:: _currency.md
+   :parser: myst_parser.sphinx_
 
-   <iframe src="https://mgmt.sandbox.dea.ga.gov.au/public-dashboards/d22241dbfca54b1fa9f73938ef26e645" width="928" height="800" frameborder="0"></iframe>
