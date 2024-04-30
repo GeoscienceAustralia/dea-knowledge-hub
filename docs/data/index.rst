@@ -3,4 +3,4 @@
 
 .. raw:: html
 
-   <iframe src="https://mgmt.sandbox.dea.ga.gov.au/public-dashboards/d22241dbfca54b1fa9f73938ef26e645" width="800" height="600" frameborder="0"></iframe>
+   <iframe src="https://mgmt.sandbox.dea.ga.gov.au/public-dashboards/d22241dbfca54b1fa9f73938ef26e645" width="928" height="800" frameborder="0"></iframe>
