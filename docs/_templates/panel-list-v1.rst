@@ -15,7 +15,11 @@
 
       {{ panel.description }}
 
+      {% if panel.custom_link_text %}
+      `{{ panel.custom_link_text }} <{{ panel.link }}>`_
+      {% else %}
       `View the {{ panel.name }} <{{ panel.link }}>`_
+      {% endif %}
 
    .. container::
 
