@@ -1,8 +1,10 @@
 title: Operational reports
 description: We provide transparent reports on various aspects of our operations to facilitate auditors and regulators and also to be used for our internal benchmarks.
 
-pages:
+panels:
   - name: DEA Published Product Timeliness and Currency Report
     link: https://mgmt.sandbox.dea.ga.gov.au/public-dashboards/d22241dbfca54b1fa9f73938ef26e645?orgId=1
+    description: Lorem ipsum
     image: /_files/statistics/DEA_Published_Product_Timeliness_and_Currency_Report.jpg
+    custom_link_text: null
 
