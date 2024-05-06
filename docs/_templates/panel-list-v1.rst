@@ -15,7 +15,7 @@
 
       {{ panel.description }}
 
-      `{{ custom_link_text or f"View the {panel.name}" }} <{{ panel.link }}>`_
+      `View the {{ panel.name }} <{{ panel.link }}>`_
 
    .. container::
 
