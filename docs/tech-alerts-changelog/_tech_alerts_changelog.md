@@ -2,13 +2,19 @@
 % https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/tech_alerts_changelog.html
 
 :::{admonition} DEA System Status
-:class: tip
+:class: caution
 % Change the 'class' to either: tip / caution / danger
 
-All DEA systems are working as expected. There are no outstanding incidents or errors to report.
+Performance issues with DEA Explorer and STAC API. See below.
+
+% All DEA systems are working as expected. There are no outstanding incidents or errors to report.
 
 See the [DEA monitoring dashboard](https://monitoring.dea.ga.gov.au/) to check the current status of DEA's services.
 :::
+
+## 2024-05-06: Performance issues with DEA Explorer and STAC API
+
+You may notice slow load times or outages with the [DEA Explorer](https://explorer.dea.ga.gov.au/) and [DEA Explorer STAC API](https://explorer.dea.ga.gov.au/stac/). We apologise for any inconvenience that this may cause and we are working to solve this issue.
 
 ## 2024-05-01: Six of Australia’s offshore territories now covered by Digital Earth Australia baseline satellite data
 
