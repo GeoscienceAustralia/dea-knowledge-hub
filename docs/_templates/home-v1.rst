@@ -11,7 +11,7 @@
 
    .. rubric:: Data Products
 
-   Browse our catalogue of data products to find supporting information and ways to access the data. Visit the `Data Products </data/>`.
+   Browse our catalogue of data products to find supporting information and ways to access the data. Visit the `Data Products </data/>`_.
 
    .. grid:: 2 2 3 5
       :gutter: 3
