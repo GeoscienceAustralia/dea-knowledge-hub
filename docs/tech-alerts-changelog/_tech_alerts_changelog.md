@@ -2,13 +2,40 @@
 % https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/tech_alerts_changelog.html
 
 :::{admonition} DEA System Status
-:class: tip
+:class: caution
 % Change the 'class' to either: tip / caution / danger
 
-All DEA systems are working as expected. There are no outstanding incidents or errors to report.
+Performance issues with DEA Explorer and STAC API. See below.
+
+% All DEA systems are working as expected. There are no outstanding incidents or errors to report.
 
 See the [DEA monitoring dashboard](https://monitoring.dea.ga.gov.au/) to check the current status of DEA's services.
 :::
+
+## 2024-05-06: Performance issues with DEA Explorer and STAC API
+
+You may notice slow load times or outages with the [DEA Explorer](https://explorer.dea.ga.gov.au/) and [DEA Explorer STAC API](https://explorer.dea.ga.gov.au/stac/). We apologise for any inconvenience that this may cause and we are working to solve this issue.
+
+## 2024-05-01: Six of Australia’s offshore territories now covered by Digital Earth Australia baseline satellite data
+
+In support of Indigenous Communities in the Torres Strait, in addition to government agencies reporting on Ocean Ecosystem Accounts and Marine Parks management, DEA is making baseline satellite data available for 6 offshore territories and islands in the Torres Strait.
+
+Learn more about the [DEA ARD expanded processing extent](/guides/reference/ard-expanded-processing-extent/).
+
+## 2024-04-23: It's now easier to cite DEA products
+
+A new 'Cite this product' section has been added to each product page to make it
+easier to cite the product in your academic paper, article, or presentation.
+A citation may been provided for the data itself, and where relevant, to the
+published methods paper. 
+
+See this feature on the [DEA Waterbodies product page](/data/product/dea-waterbodies-landsat/?tab=overview#citations). 
+
+## 2024-04-18: New Validation reports section
+
+The Knowledge Hub contains a new [Validation reports](/validation/) section. This is where you will find reports of Geoscience Australia’s validation data, published periodically. This data can be used to validate Geoscience Australia’s other datasets.
+
+See the latest Daily Validation Summary Report: [2023-11-27: Transect NSW Site 1, Sentinel-2B overpass](/validation/daily-report/2023-11-27/)
 
 ## 2024-04-10: DEA Intertidal 1.0.0 released
 

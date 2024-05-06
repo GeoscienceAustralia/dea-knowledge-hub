@@ -25,7 +25,7 @@ parent_products:
 collection:
   name: null
   link: null
-doi: null
+doi: 10.4225/25/5524BA4A047FE
 ecat: "72657"
 nci: null
 licence:
@@ -33,7 +33,7 @@ licence:
   link: https://creativecommons.org/licenses/by/4.0/
 
 citations:
-  data_citation: null
+  data_citation: "Geoscience Australia, 2011. AGRI: The Australian Geographic Reference Image. Geoscience Australia, Canberra. http://dx.doi.org/10.4225/25/5524BA4A047FE"
   paper_citation: null
 
 tags:

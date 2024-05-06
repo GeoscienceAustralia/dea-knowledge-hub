@@ -1,4 +1,4 @@
-<!-- Enter 'x' into the checkbox to confirm (if applicable). -->
+<!-- Confirm each item by changing '[ ]' to '[x]' (if applicable). -->
 
 * [ ] I have spellchecked my content using Microsoft Word, Grammarly, or otherwise.
 * [ ] If required, update the [DEA Tech Alerts and Changelog](TechAlertsChangelog) and the [DEA Sandbox Updates banner](SandboxUpdatesBanner).
