@@ -43,7 +43,7 @@ exclude_patterns += utilities.optional_exclude_pattern("LOCAL_ENABLE_DATA_PRODUC
 exclude_patterns += utilities.optional_exclude_pattern("LOCAL_ENABLE_OLD_VERSIONS", "data/old-version")
 exclude_patterns += utilities.optional_exclude_pattern("LOCAL_ENABLE_NOTEBOOKS", "notebooks")
 exclude_patterns += utilities.optional_exclude_pattern("LOCAL_ENABLE_VALIDATION_REPORTS", "validation")
-exclude_patterns += utilities.optional_exclude_pattern("LOCAL_ENABLE_STATISTICS_REPORTS", "statistics")
+exclude_patterns += utilities.optional_exclude_pattern("LOCAL_ENABLE_OPERATIONAL_REPORTS", "operational-reports")
 exclude_patterns += utilities.optional_exclude_pattern("LOCAL_ENABLE_TAGS", "tags")
 exclude_patterns += utilities.optional_exclude_pattern("LOCAL_ENABLE_TECH_ALERTS_CHANGELOG", "tech-alerts-changelog")
 

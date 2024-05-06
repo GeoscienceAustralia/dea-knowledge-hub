@@ -235,9 +235,9 @@ entries:
       #       entries:
       #         - glob: validation/yearly-report/*/index
 
-  # Statistics
+  # Operational reports
 
-  - file: statistics/index
+  - file: operational-reports/index
 
   # Tags
 
