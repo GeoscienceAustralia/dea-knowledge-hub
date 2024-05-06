@@ -1,9 +1,12 @@
 .panel-list-page {
     .showcase-panel {
+        padding-bottom: 1.15rem;
+        padding-top: 1.15rem;
+
         & > div:first-child {
             padding-top: 0;
-            padding-right: 0;
             padding-bottom: 0;
+            padding-right: 0;
         }
 
         .rubric {
