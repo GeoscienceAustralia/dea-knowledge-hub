@@ -15,8 +15,8 @@ Data and services listing
 -------------------------
 
 * `Browse the public S3 bucket <https://data.dea.ga.gov.au/>`_ via the web.
-* `DEA Explorer <https://explorer.sandbox.dea.ga.gov.au/>`_ allows browsing geographic extent through time of every dataset we have available.
-* The `DEA Explorer STAC endpoint <https://explorer.sandbox.dea.ga.gov.au/stac/>`_ provides an API for listing and searching DEA Datasets.
+* `DEA Explorer <https://explorer.dea.ga.gov.au/>`_ allows browsing geographic extent through time of every dataset we have available.
+* The `DEA Explorer STAC endpoint <https://explorer.dea.ga.gov.au/stac/>`_ provides an API for listing and searching DEA Datasets.
 * Open Geospatial Consortium Web Services are available through our `Open Web Service <https://ows.dea.ga.gov.au/>`_ and provide access to visualisations and data exports via WMS, WMTS and WCS.
 * Execute custom Python code within the `DEA JupyterHub Sandbox <https://app.sandbox.dea.ga.gov.au/>`_ (see `DEA Sandbox`_ for more details).
 

@@ -32,7 +32,7 @@ DEA Land Cover data can be downloaded from DEA’s public data holdings through 
 
 From [here](https://data.dea.ga.gov.au/?prefix=derivative/ga_ls_landcover_class_cyear_2/1-0-0/), simply navigate to the year and tile\* of interest and directly download the GeoTIFF file for the layer you’re after.
 
-*\*To find x and y tile values for an area, see the Explorer [here](https://explorer.sandbox.dea.ga.gov.au/products/ga_ls_landcover_class_cyear_2).*
+*\*To find x and y tile values for an area, see the Explorer [here](https://explorer.dea.ga.gov.au/products/ga_ls_landcover_class_cyear_2).*
 
 ***Bulk download using AWS CLI (for technical users):***
 
