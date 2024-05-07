@@ -36,6 +36,7 @@ licence:
 citations:
   data_citation: "Geoscience Australia, 2022. DEA Water Observations. Geoscience Australia, Canberra. https://dx.doi.org/10.26186/146257"
   paper_citation: "Mueller, N., Lewis, A., Roberts, D., Ring, S., Melrose, R., Sixsmith, J., Lymburner, L., McIntyre, A., Tan, P., Curnow, S., & Ip, A., 2016. Water observations from space: Mapping surface water from 25 years of Landsat imagery across Australia. Remote Sensing of Environment, 174, 341–352. https://doi.org/10.1016/j.rse.2015.11.003"
+custom_citations: null
 
 tags:
   - geoscience_australia_landsat_collection_3

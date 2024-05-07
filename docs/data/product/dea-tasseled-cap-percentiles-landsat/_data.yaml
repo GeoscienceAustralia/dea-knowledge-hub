@@ -37,6 +37,7 @@ licence:
 citations:
   data_citation: "Geoscience Australia, 2023. DEA Tasseled Cap Percentiles (Landsat, Provisional). Geoscience Australia, Canberra."
   paper_citation: null
+custom_citations: null
 
 tags:
   - geoscience_australia_landsat_collection_3
