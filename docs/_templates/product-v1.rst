@@ -234,6 +234,7 @@
           * - **Data citation**
             - .. code-block:: text
                  :name: data-citation
+                 :class: citation
 
                  {{ data.citations.data_citation }}
           {%- endif %}
@@ -241,9 +242,17 @@
           * - **Paper citation**
             - .. code-block:: text
                  :name: paper-citation
+                 :class: citation
 
                  {{ data.citations.paper_citation }}
           {%- endif %}
+          {% for citation in data.custom_citations %}
+          * - **{{ citation.name }}**
+            - .. code-block:: text
+                 :class: citation
+
+                 {{ citation.citation }}
+          {% endfor %}
        {%- endif %}
        {%- endif %}
 
