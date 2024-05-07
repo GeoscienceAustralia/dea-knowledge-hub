@@ -10,6 +10,7 @@
 {% set valid_old_versions = data.old_versions | selectattr("slug",  "!=", None) | selectattr("version",  "!=", None) | selectattr("name",  "!=", None) | list %}
 {% set valid_product_types = [data.product_type, data.spatial_data_type] | select("!=", None) | list %}
 {% set valid_product_ids = data.product_ids | select("!=", None) | list %}
+{% set valid_custom_citations = data.custom_citations | select("!=", None) | list %}
 {% set valid_tags = data.tags | select("!=", None) | list %}
 
 {% set map_label = "See it on a map" %}
@@ -246,7 +247,7 @@
 
                  {{ data.citations.paper_citation }}
           {%- endif %}
-          {% for citation in data.custom_citations %}
+          {% for citation in valid_custom_citations %}
           * - **{{ citation.name }}**
             - .. code-block:: text
                  :class: citation
