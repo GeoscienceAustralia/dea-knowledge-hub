@@ -25,10 +25,9 @@ document.addEventListener("DOMContentLoaded", function (event) {
         return `${citationTrimmed} [Accessed ${day} ${month} ${year}]`;
     }
 
-    const citations = [
-        document.getElementById("data-citation"),
-        document.getElementById("paper-citation")
-    ];
+    const citations = document.getElementsByClassName(
+        "citation-table-citation"
+    );
 
     for (let i = 0; i < citations.length; i++) {
         const citation = citations[i];

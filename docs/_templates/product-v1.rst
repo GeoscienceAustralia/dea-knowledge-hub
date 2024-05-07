@@ -234,23 +234,21 @@
           {% if data.citations.data_citation %}
           * - **Data citation**
             - .. code-block:: text
-                 :name: data-citation
-                 :class: citation
+                 :class: citation-table-citation
 
                  {{ data.citations.data_citation }}
           {%- endif %}
           {% if data.citations.paper_citation %}
           * - **Paper citation**
             - .. code-block:: text
-                 :name: paper-citation
-                 :class: citation
+                 :class: citation-table-citation
 
                  {{ data.citations.paper_citation }}
           {%- endif %}
           {% for citation in valid_custom_citations %}
           * - **{{ citation.name }}**
             - .. code-block:: text
-                 :class: citation
+                 :class: citation-table-citation
 
                  {{ citation.citation }}
           {% endfor %}
