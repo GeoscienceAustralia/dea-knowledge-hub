@@ -36,6 +36,7 @@ licence:
 citations:
   data_citation: "Lymburner, L., Tan, P., McIntyre, A., Thankappan, M., Sixsmith, J. 2015. Dynamic Land Cover Dataset Version 2.1. Geoscience Australia, Canberra. https://pid.geoscience.gov.au/dataset/ga/83868"
   paper_citation: null
+custom_citations: null
 
 tags:
   - drought

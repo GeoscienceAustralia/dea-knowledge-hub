@@ -35,6 +35,7 @@ licence:
 citations:
   data_citation: "Lymburner, L., 2021. Geoscience Australia Landsat Fractional Cover Collection 3. Geoscience Australia, Canberra. https://pid.geoscience.gov.au/dataset/ga/145498"
   paper_citation: "Scarth, P., Roder, A., Schmidt, M., 2010. Tracking grazing pressure and climate interaction - the role of Landsat fractional cover in time series analysis. Proceedings of the 15th Australasian Remote Sensing & Photogrammetry Conference. http://dx.doi.org/10.6084/M9.FIGSHARE.94250"
+custom_citations: null
 
 tags:
   - geoscience_australia_landsat_collection_3

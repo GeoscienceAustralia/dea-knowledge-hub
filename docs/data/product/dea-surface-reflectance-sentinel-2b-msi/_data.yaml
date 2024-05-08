@@ -36,6 +36,7 @@ licence:
 citations:
   data_citation: "Geoscience Australia, 2022. Geoscience Australia Sentinel-2B MSI Analysis Ready Data Collection 3 - DEA Surface Reflectance (Sentinel-2B MSI). Geoscience Australia, Canberra. https://dx.doi.org/10.26186/146551"
   paper_citation: null
+custom_citations: null
 
 tags:
   - geoscience_australia_sentinel_2_collection_3

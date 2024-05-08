@@ -35,6 +35,7 @@ licence:
 citations:
   data_citation: "Geoscience Australia, 2021. Wetlands Insight Tool Queensland Wetlands Polygons. Geoscience Australia, Canberra. https://pid.geoscience.gov.au/dataset/ga/144795"
   paper_citation: "Dunn, B., Ai, E., Alger, M.J., Fanson, B., Fickas, K.C., Krause, C.E., Lymburner, L., Nanson, R., Papas, P., Ronan, M., Thomas, R.F., 2023. Wetlands Insight Tool: Characterising the Surface Water and Vegetation Cover Dynamics of Individual Wetlands Using Multidecadal Landsat Satellite Data. Wetlands 43, 37. https://doi.org/10.1007/s13157-023-01682-7"
+custom_citations: null
 
 tags:
   - geoscience_australia_landsat_collection_2_deprecated

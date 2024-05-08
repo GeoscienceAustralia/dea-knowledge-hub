@@ -35,6 +35,7 @@ licence:
 citations:
   data_citation: "Geoscience Australia, 2022. Geoscience Australia's predictive schedules for public good satellites over Australia. Geoscience Australia, Canberra. https://dx.doi.org/10.26186/146512"
   paper_citation: null
+custom_citations: null
 
 tags:
   - earth_observation
