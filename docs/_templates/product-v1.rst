@@ -234,7 +234,7 @@
           {% if data.citations.data_citation %}
           * - **Data citation**
             - .. code-block:: text
-                 :class: citation-table-citation
+                 :class: citation-table-citation citation-access-date
 
                  {{ data.citations.data_citation }}
           {%- endif %}
