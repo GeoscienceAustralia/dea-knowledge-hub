@@ -1,5 +1,5 @@
 
-# 2023-11-27: Transect NSW Site 1, Sentinel-2B overpass
+# 2023-11-27: Transect NSW Site 1, Landsat 9 and Sentinel-2B dual overpass
 
 A Daily Validation Summary Report of the surface reflectance data collected on the date of 2023-11-27 by Geoscience&nbsp;Australia. 
 The full collection of data is contained in the [National Spectral Database](https://www.dea.ga.gov.au/products/national-spectral-database).
@@ -19,16 +19,16 @@ These variables and environmental factors were present on the day the data were 
 
 "Instrument(s) used","ASD FR4 (18179/3)"
 "Time of field site measurements (UTC)","2023-11-26 22:37:46 to 2023-11-26 23:37:06"
-"Time of overpass (UTC)", 2023-11-27 00:45:46
+"Time of overpass (UTC)", 2023-11-27 00:26:53 for Landsat9, 2023-12-07 00:45:52 for Sentinel2b
 "GPS quality","Good"
 "Reference position","142.1036962E, 31.8135401S (WGS84)"
-"Matchup quality","Good"
+"Matchup quality","Good for Landsat9, Good for Sentinel2b"
 :::
 
 ## Results
 
 The surface reflectance statistics collected on this day are grouped into bands. 
-This allows the data to be used to validate Geoscience Australia's other datasets which use the same standardised bands.
+This allows the data to be used to validate Geoscience Australia's other datasets that use the same standardised bands.
 
 ```{eval-rst}
 .. container:: validation-report-download
@@ -39,18 +39,29 @@ This allows the data to be used to validate Geoscience Australia's other dataset
 :::{csv-table}
 :class: validation-report-results-table
 
+Landsat9
 "Band","Sat Mean","Sat rms","Field mean","Field rms"
-"CA","0.0546","0.000435","0.0488","0.003"
-"blue","0.0659","0.00141","0.0638","0.00402"
-"green","0.102","0.00452","0.104","0.0104"
-"red","0.185","0.0141","0.188","0.0284"
-"RE1","0.208","0.0142","0.209","0.0312"
-"RE2","0.224","0.015","0.225","0.0331"
-"RE3","0.234","0.015","0.237","0.0333"
-"NIR1","0.244","0.0151","0.246","0.0313"
-"NIR2","0.25","0.0125","0.251","0.03"
-"SWIR2","0.387","0.011","0.395","0.0375"
-"SWIR3","0.307","0.0117","0.322","0.039"
+"CA","0.072","0.01","0.048","0.003"
+"blue","0.082","0.009","0.06","0.004"
+"green","0.122","0.007","0.105","0.011"
+"red","0.197","0.011","0.18","0.028"
+"NIR","0.27","0.011","0.248","0.03"
+"SWIR1","0.407","0.011","0.389","0.038"
+"SWIR2","0.321","0.012","0.314","0.039"
+
+Sentinel2b
+"Band","Sat Mean","Sat rms","Field mean","Field rms"
+"CA","0.055","0.0","0.049","0.003"
+"blue","0.066","0.001","0.064","0.004"
+"green","0.102","0.005","0.104","0.01"
+"red","0.185","0.014","0.188","0.028"
+"RE1","0.208","0.014","0.209","0.031"
+"RE2","0.224","0.015","0.225","0.033"
+"RE3","0.234","0.015","0.237","0.033"
+"NIR1","0.244","0.015","0.246","0.031"
+"NIR2","0.25","0.012","0.251","0.03"
+"SWIR2","0.387","0.011","0.395","0.038"
+"SWIR3","0.307","0.012","0.322","0.039"
 :::
 
 ## Figures
