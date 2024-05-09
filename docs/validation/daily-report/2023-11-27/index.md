@@ -36,10 +36,9 @@ This allows the data to be used to validate Geoscience Australia's other dataset
    :download:`Download as CSV <./DailyValidationResults-2023-11-27.csv>`
 ```
 
-:::{csv-table}
+:::{csv-table} Results of Field data vs. Landsat 9 Satellite
 :class: validation-report-results-table
 
-Landsat9
 "Band","Sat Mean","Sat rms","Field mean","Field rms"
 "CA","0.072","0.01","0.048","0.003"
 "blue","0.082","0.009","0.06","0.004"
@@ -48,8 +47,11 @@ Landsat9
 "NIR","0.27","0.011","0.248","0.03"
 "SWIR1","0.407","0.011","0.389","0.038"
 "SWIR2","0.321","0.012","0.314","0.039"
+:::
 
-Sentinel2b
+:::{csv-table} Results of Field data vs. Sentinel-2B Satellite
+:class: validation-report-results-table
+
 "Band","Sat Mean","Sat rms","Field mean","Field rms"
 "CA","0.055","0.0","0.049","0.003"
 "blue","0.066","0.001","0.064","0.004"
