@@ -3,5 +3,5 @@ description: These reports provide statistical summaries that you can compare to
 
 pages:
   - name: Daily Reports
-    link: ./daily-report
+    link: ./daily-report/
     image: /_files/validation/daily-report.png
