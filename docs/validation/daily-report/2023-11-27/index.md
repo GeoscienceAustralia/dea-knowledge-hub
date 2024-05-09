@@ -19,10 +19,10 @@ These variables and environmental factors were present on the day the data were 
 
 "Instrument(s) used","ASD FR4 (18179/3)"
 "Time of field site measurements (UTC)","2023-11-26 22:37:46 to 2023-11-26 23:37:06"
-"Time of overpass (UTC)", 2023-11-27 00:26:53 for Landsat9, 2023-12-07 00:45:52 for Sentinel2b
+"Time of overpass (UTC)", "Landsat 9: 2023-11-27 00:26:53 | Sentinel-2B: 2023-12-07 00:45:52"
 "GPS quality","Good"
 "Reference position","142.1036962E, 31.8135401S (WGS84)"
-"Matchup quality","Good for Landsat9, Good for Sentinel2b"
+"Matchup quality","Landsat 9: Good | Sentinel-2B: Good"
 :::
 
 ## Results
