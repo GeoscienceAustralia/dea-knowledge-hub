@@ -36,7 +36,7 @@ This allows the data to be used to validate Geoscience Australia's other dataset
    :download:`Download as CSV <./DailyValidationResults-2023-11-27.csv>`
 ```
 
-:::{csv-table} Results of Field data vs. Landsat 9 Satellite
+:::{csv-table} Results of Field data versus Landsat 9 Satellite
 :class: validation-report-results-table
 
 "Band","Sat Mean","Sat rms","Field mean","Field rms"
@@ -49,7 +49,13 @@ This allows the data to be used to validate Geoscience Australia's other dataset
 "SWIR2","0.321","0.012","0.314","0.039"
 :::
 
-:::{csv-table} Results of Field data vs. Sentinel-2B Satellite
+```{eval-rst}
+.. container:: validation-report-download
+
+   :download:`Download as CSV <./DailyValidationResults-2023-11-27.csv>`
+```
+
+:::{csv-table} Results of Field data versus Sentinel-2B Satellite
 :class: validation-report-results-table
 
 "Band","Sat Mean","Sat rms","Field mean","Field rms"
@@ -74,16 +80,16 @@ Click an image to view it at full size.
 ::::{grid-item}
 :::{figure} ./RGB-2023-11-27.png
 
-A satellite imagery tile of true colour (RGB) surface reflectance. 
-It covers an area of approximately 2&nbsp;km &times; 2&nbsp;km. 
-The white box indicates the size and location
+Satellite imagery tiles of true colour (RGB) surface reflectance. 
+They each cover an area of approximately 2&nbsp;km &times; 2&nbsp;km. 
+The white box in each indicates the size and location
 of the field site.
 :::
 ::::
 ::::{grid-item}
 :::{figure} ./DayComparison-2023-11-27.png
 
-A band-by-band plot of surface reflectance for satellite and field data. 
+Band-by-band plots of surface reflectance for field data versus each satellite. 
 Satellite uncertainty error bars for each band are the standard deviation
 of pixel values over and surrounding the field site. 
 Field uncertainty error bars are the standard deviation of values after 
@@ -94,10 +100,11 @@ averaging all spectra within the same satellite pixels.
 ::::{grid-item}
 :::{figure} ./OverallComparison-2023-11-27.png
 
-A plot of Satellite Surface Reflectance versus Field Site Surface Reflectance on this day.
-The solid line represents the one-to-one equality between field and satellite measurements.
-The black dots are the values from all field site measurements prior to this date. 
-The line of best fit is not shown, but its parameters are given in the bottom-right corner.
+Plots of Satellite Surface Reflectance for each satellite versus Field Site
+Surface Reflectance on this day. The solid line represents the one-to-one
+equality between field and satellite measurements. The black dots are the
+values from all field site measurements prior to this date. The line of best
+fit is not shown, but its parameters are given in the bottom-right corner.
 
 :::
 ::::
