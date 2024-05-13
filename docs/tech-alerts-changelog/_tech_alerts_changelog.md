@@ -6,7 +6,7 @@
 % Change the 'class' to either: tip / caution / danger
 
 * Performance issues with DEA Explorer and STAC API. See below.
-* Terra-derived DEA Hotspots are unavailable See below.
+* Terra-derived DEA Hotspots are unavailable. See below.
 
 % All DEA systems are working as expected. There are no outstanding incidents or errors to report.
 
@@ -17,7 +17,7 @@ See the [DEA monitoring dashboard](https://monitoring.dea.ga.gov.au/) to check t
 
 Direct Broadcast satellite downloads from the Terra satellite have again become unavailable. This means that Terra-derived [DEA Hotspots](https://hotspots.dea.ga.gov.au/) are unavailable until further notice.
 
-This is due to the TERRA MODIS satellite experiencing power problems. It continues to collect data but its direct broadcast has stopped.
+This is due to the TERRA MODIS satellite experiencing power problems. The satellite continues to collect data but its direct broadcast has stopped.
 
 ## 2024-05-06: Performance issues with DEA Explorer and STAC API
 
