@@ -1,14 +1,15 @@
 % See the DEA Tech Alerts and Changelog documentation:
 % https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/tech_alerts_changelog.html
 
+% How to update the 'DEA System Status':
+% Change the 'class' to either: tip / caution / danger
+% Default content: All DEA systems are working as expected. There are no outstanding incidents or errors to report.
+
 :::{admonition} DEA System Status
 :class: caution
-% Change the 'class' to either: tip / caution / danger
 
 * Performance issues with DEA Explorer and STAC API. See below.
 * Terra-derived DEA Hotspots are unavailable. See below.
-
-% All DEA systems are working as expected. There are no outstanding incidents or errors to report.
 :::
 
 ## 2024-05-13: Terra-derived DEA Hotspots are unavailable
