@@ -9,8 +9,6 @@
 * Terra-derived DEA Hotspots are unavailable. See below.
 
 % All DEA systems are working as expected. There are no outstanding incidents or errors to report.
-
-See the [DEA monitoring dashboard](https://monitoring.dea.ga.gov.au/) to check the current status of DEA's services.
 :::
 
 ## 2024-05-13: Terra-derived DEA Hotspots are unavailable
