@@ -202,6 +202,20 @@ entries:
         entries:
           - file: notebooks/Tools/index # Contains its own table of contents.
 
+  # DEA Tech Alerts and Changelog
+
+  - file: tech-alerts-changelog/index
+    title: Alerts & Changelog
+    subtrees:
+      - caption: Older entries
+        entries:
+          - file: tech-alerts-changelog/previous-years/index
+            title: View previous years
+            options:
+              reversed: True
+            entries:
+              - glob: tech-alerts-changelog/previous-years/*
+
   # Validation
 
   - file: validation/index
@@ -234,27 +248,6 @@ entries:
       #         reversed: True
       #       entries:
       #         - glob: validation/yearly-report/*/index
-
-  # Tags
-
-  - file: tags/index
-    subtrees:
-      - caption: Tags
-        entries:
-          - glob: tags/*
-
-  # DEA Tech Alerts and Changelog
-
-  - file: tech-alerts-changelog/index
-    subtrees:
-      - caption: Older entries
-        entries:
-          - file: tech-alerts-changelog/previous-years/index
-            title: View previous years
-            options:
-              reversed: True
-            entries:
-              - glob: tech-alerts-changelog/previous-years/*
 
   # Old versions of products
 
@@ -368,3 +361,10 @@ entries:
           - glob: data/old-version/d*/index # This was moved here from the 'D' section because it was disrupting the 'dea-' patterns. If regex is supported in the future, we can make it work properly in the 'D' section.
           - glob: data/old-version/*/index
 
+  # Tags
+
+  - file: tags/index
+    subtrees:
+      - caption: Tags
+        entries:
+          - glob: tags/*
