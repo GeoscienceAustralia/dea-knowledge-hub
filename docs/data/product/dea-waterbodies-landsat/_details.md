@@ -22,20 +22,20 @@ The tool indicates changes in the wet surface area of waterbodies over time. Thi
 
 The DEA Waterbodies product is comprised of two key components:
 * **Mapped waterbody outlines** — a polygon dataset of the programmatically generated waterbody outlines.
-* **Surface area timeseries** — a CSV timeseries for each polygon of its surface area over time within the mapped polygon (for every available, clear Landsat observation).
+* **Surface area time series** — a CSV time series for each polygon of its surface area over time within the mapped polygon (for every available, clear Landsat observation).
 
 The code used in the development of this product is available on [GitHub](https://github.com/GeoscienceAustralia/dea-conflux).
 
 ### Data Specification Tables
 
-The DEA Waterbodies v3.0 shapefile and CSV contain the following data.
+The DEA Waterbodies v3.0.0 shapefile and CSV contain the following data.
 
 ```{eval-rst}
 :download:`Download the Data Specification Tables as a PDF </_files/dea-waterbodies/DEA_Waterbodies_v3.0_Data_Spec_Table.pdf>`
 
 ```
 
-#### Data specification table for DEA Waterbodies 3.0 Shapefile
+#### Data specification table for DEA Waterbodies 3.0.0 Shapefile
 
 :::{list-table}
 :header-rows: 1
@@ -118,7 +118,7 @@ The DEA Waterbodies v3.0 shapefile and CSV contain the following data.
   - String
 :::
 
-#### Data specification table for DEA Waterbodies 3.0 Timeseries CSV
+#### Data specification table for DEA Waterbodies 3.0.0 Timeseries CSV
 
 :::{list-table}
 :header-rows: 1
@@ -160,7 +160,7 @@ The DEA Waterbodies v3.0 shapefile and CSV contain the following data.
 
 \*\*\* Data fields empty in shapefile (`dt_wetobs`, `wet_sa_m2`, `dt_satpass`, `dt_updated`) are available for the latest relevant observations only via DEA Maps and WMS.
 
-\^ Data fields introduced in v3.0 are ‘New’.
+\^ Data fields introduced in v3.0.0 are ‘New’.
 
 % ## Lineage
 
@@ -178,7 +178,7 @@ DEA Waterbodies is a polygon-based view of DEA Water Observations (DEA WO), deri
 Flow diagram outlining the steps taken to produce DEA Waterbodies polygons.
 :::
 
-For a detailed discussion of the methods used to produce DEA Waterbodies v1, refer to [Krause et al. 2021](https://doi.org/10.3390/rs13081437). For the differences between DEA Waterbodies v1, v2 and v3.0, refer to the [Changelog](./?tab=history#changelog). DEA Waterbodies v3.0 uses the same polygon/vector outlines as DEA Waterbodies v2, with additional metadata.
+For a detailed discussion of the methods used to produce DEA Waterbodies v1, refer to [Krause et al. 2021](https://doi.org/10.3390/rs13081437). For the differences between DEA Waterbodies v1, v2 and v3.0.0, refer to the [Changelog](./?tab=history#changelog). DEA Waterbodies v3.0.0 uses the same polygon/vector outlines as DEA Waterbodies v2, with additional metadata.
 
 % ## Software
 

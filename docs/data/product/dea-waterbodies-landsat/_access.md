@@ -10,7 +10,7 @@ Or, you can manually add the DEA Waterbodies layer to DEA Maps:
 
 1. Open [DEA Maps](https://maps.dea.ga.gov.au).
 1. Click **Explore map data**.
-1. Select **Inland water** > **DEA Waterbodies** > **DEA Waterbodies (version 3.0)**. 
+1. Select **Inland water** > **DEA Waterbodies** > **DEA Waterbodies (version 3.0.0)**. 
 1. Click **Add to the map**, or the **+** symbol to add the data to the map.
 1. You will now see the waterbodies overlaid on the map.
 
