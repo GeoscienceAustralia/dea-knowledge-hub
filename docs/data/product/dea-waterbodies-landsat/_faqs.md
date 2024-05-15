@@ -164,7 +164,7 @@ Krause, C.E., Newey, V., Alger, M.J. and Lymburner, L., (2021). Mapping and Moni
 :::{dropdown} Who did you collaborate with to produce DEA Waterbodies?
 DEA Waterbodies version 1 was the result of a collaboration between Geoscience Australia, the NSW Department of Planning, Industry and Environment, and the Murray Darling Basin Authority to determine the potential of satellite imagery to provide useful insights about water in the landscape. 
 
-The update from version 2 to version 3.0 of the DEA Waterbodies product and service was created through a collaboration between Geoscience Australia, the National Aerial Firefighting Centre, Natural Hazards Research Australia, and FrontierSI to make the product more useful in hazard applications. 
+The update from version 2 to version 3.0.0 of the DEA Waterbodies product and service was created through a collaboration between Geoscience Australia, the National Aerial Firefighting Centre, Natural Hazards Research Australia, and FrontierSI to make the product more useful in hazard applications. 
 :::
 
 :::{dropdown} How do I get more information or provide feedback on DEA Waterbodies?
