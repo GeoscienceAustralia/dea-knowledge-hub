@@ -17,17 +17,18 @@
     }
 
     & > div:nth-child(2) {
-        width: 271px;
+        width: 300px;
         overflow: hidden;
         position: relative;
 
         & > img {
             position: absolute;
             height: 100%;
-            min-width: 100%;
+            min-width: 61.8%; // The golden ratio: 100 / 1.618 = 0.618
             width: auto;
             object-fit: cover;
             user-select: none;
+            right: 0;
         }
 
         @media only screen and (max-width: $breakpoint-md) {
