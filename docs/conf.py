@@ -19,7 +19,7 @@ copyright = f"{utilities.current_year()}, Geoscience Australia"
 author = "Geoscience Australia"
 
 html_static_path = ["_static", "_files"]
-templates_path = ["_layout", "_templates"]
+templates_path = ["_layouts", "_templates"]
 html_extra_path = ["robots.txt"]
 source_suffix = [".rst", ".md"]
 
