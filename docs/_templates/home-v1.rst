@@ -99,7 +99,7 @@
 
       `Visit the DEA website <https://www.dea.ga.gov.au/>`_
 
-      `Follow our newsletter <https://www.dea.ga.gov.au/news/dea-newsletter-and-communications-archive>`_
+      `Subscribe to our newsletter <https://www.dea.ga.gov.au/news/dea-newsletter-and-communications-archive>`_
 
    .. container::
 
