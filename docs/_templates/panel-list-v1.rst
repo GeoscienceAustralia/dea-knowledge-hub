@@ -18,11 +18,12 @@
       {% if panel.custom_link_text %}
       `{{ panel.custom_link_text }} <{{ panel.link }}>`_
       {% else %}
-      `View the {{ panel.name }} <{{ panel.link }}>`_
+      `View the report: {{ panel.name }} <{{ panel.link }}>`_
       {% endif %}
 
    .. container::
 
-      .. image:: {{ panel.image }}
+      .. image:: {{ panel.image or "/_files/pages/dea-hero.jpg" }}
          :class: no-gallery
+         :target: {{ panel.link }}
 {% endfor %}
