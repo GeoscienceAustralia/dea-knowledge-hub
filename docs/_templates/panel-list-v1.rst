@@ -18,7 +18,7 @@
       {% if panel.custom_link_text %}
       `{{ panel.custom_link_text }} <{{ panel.link }}>`_
       {% else %}
-      `View the report: {{ panel.name }} <{{ panel.link }}>`_
+      `View the {{ panel.name }} <{{ panel.link }}>`_
       {% endif %}
 
    .. container::
