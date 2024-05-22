@@ -1,4 +1,4 @@
-.. rst-class:: panel-list-page
+.. rst-class:: report-list-page
 
 ======================================================================================================================================================
 {{ data.title }}
@@ -18,7 +18,7 @@
       {% if panel.custom_link_text %}
       `{{ panel.custom_link_text }} <{{ panel.link }}>`_
       {% else %}
-      `View the {{ panel.name }} <{{ panel.link }}>`_
+      `View the report <{{ panel.link }}>`_
       {% endif %}
 
    .. container::
