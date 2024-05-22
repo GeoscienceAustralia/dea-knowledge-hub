@@ -6,24 +6,24 @@
 
 {{ data.description if data.description else "I'm interested in ..." }}
 
-{% for panel in data.panels %}
+{% for report in data.reports %}
 .. container:: showcase-panel reverse
 
    .. container::
 
-      .. rubric:: {{ panel.name }}
+      .. rubric:: {{ report.name }}
 
-      {{ panel.description }}
+      {{ report.description }}
 
-      {% if panel.custom_link_text %}
-      `{{ panel.custom_link_text }} <{{ panel.link }}>`_
+      {% if report.custom_link_text %}
+      `{{ report.custom_link_text }} <{{ report.link }}>`_
       {% else %}
-      `View the report <{{ panel.link }}>`_
+      `View the report <{{ report.link }}>`_
       {% endif %}
 
    .. container::
 
-      .. image:: {{ panel.image or "/_files/pages/dea-hero.jpg" }}
+      .. image:: {{ report.image or "/_files/pages/dea-hero.jpg" }}
          :class: no-gallery
-         :target: {{ panel.link }}
+         :target: {{ report.link }}
 {% endfor %}

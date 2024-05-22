@@ -1,7 +1,7 @@
 title: Operational reports
-description: We provide transparent reports on various aspects of our operations to facilitate auditors and regulators and also to be used for our internal benchmarks.
+description: We provide transparent reports to allow stakeholders to assess the performance and attributes of our products.
 
-panels:
+reports:
   - name: DEA Published Product Timeliness and Currency Report
     link: https://mgmt.sandbox.dea.ga.gov.au/public-dashboards/d22241dbfca54b1fa9f73938ef26e645?orgId=1
     description: This report allows stakeholders to assess the timeliness and currency of all published DEA (Digital Earth Australia, Geoscience Australia) products and services.
