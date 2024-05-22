@@ -36,6 +36,7 @@ licence:
 citations:
   data_citation: "Fuqin, Li., Jupp, D.L.B., Sixsmith, J., Wang, L., Dorj, P., Vincent, A., Alam, I., Hooke, J., Oliver, S., Thankappan, M. 2019. GA Landsat 7 ETM+ Analysis Ready Data Collection 3. Geoscience Australia, Canberra. https://pid.geoscience.gov.au/dataset/ga/132310"
   paper_citation: null
+custom_citations: null
 
 tags:
   - geoscience_australia_landsat_collection_3

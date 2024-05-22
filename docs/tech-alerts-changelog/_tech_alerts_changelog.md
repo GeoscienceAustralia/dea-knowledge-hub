@@ -1,16 +1,22 @@
 % See the DEA Tech Alerts and Changelog documentation:
 % https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/tech_alerts_changelog.html
 
-:::{admonition} DEA System Status
-:class: caution
+% How to update the 'System status of DEA':
 % Change the 'class' to either: tip / caution / danger
+% Default content: All DEA systems are working as expected. There are no outstanding incidents or errors to report.
 
-Performance issues with DEA Explorer and STAC API. See below.
+:::{admonition} System status of DEA
+:class: caution
 
-% All DEA systems are working as expected. There are no outstanding incidents or errors to report.
-
-See the [DEA monitoring dashboard](https://monitoring.dea.ga.gov.au/) to check the current status of DEA's services.
+* Performance issues with DEA Explorer and STAC API. See below.
+* Terra-derived DEA Hotspots are unavailable. See below.
 :::
+
+## 2024-05-13: Terra-derived DEA Hotspots are unavailable
+
+Direct Broadcast satellite downloads from the Terra satellite have again become unavailable. This means that Terra-derived [DEA Hotspots](https://hotspots.dea.ga.gov.au/) are unavailable until further notice.
+
+This is due to the TERRA MODIS satellite experiencing power problems. The satellite continues to collect data but its direct broadcast has stopped.
 
 ## 2024-05-06: Performance issues with DEA Explorer and STAC API
 

@@ -1,5 +1,5 @@
 #citation-table {
-    #data-citation, #paper-citation {
+    .citation-table-citation {
         margin: 0 !important;
 
         .highlight {
@@ -19,6 +19,8 @@
             white-space: -pre-wrap;
             white-space: -o-pre-wrap;
             word-wrap: break-word;
+            padding-top: 4px;
+            padding-bottom: 4px;
         }
     }
 

@@ -36,6 +36,7 @@ licence:
 citations:
   data_citation: "Lymburner, L., Lucas, R., Scarth, P., Alam, I., Phillips, C., Ticehurst, C., Held, A., Bunting, P. 2021. Geoscience Australia Mangrove Canopy Cover Collection 3. Geoscience Australia, Canberra. https://pid.geoscience.gov.au/dataset/ga/145497"
   paper_citation: "Lymburner, L., Bunting, P., Lucas, R., Scarth, P., Alam, I., Phillips, C., Ticehurst, C. and Held, A., 2020. Mapping the multi-decadal mangrove dynamics of the Australian coastline. Remote Sensing of Environment, 238, p.111185. https://doi.org/10.1016/j.rse.2019.05.004"
+custom_citations: null
 
 tags:
   - geoscience_australia_landsat_collection_3

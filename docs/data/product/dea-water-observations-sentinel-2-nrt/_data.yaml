@@ -36,6 +36,7 @@ licence:
 citations:
   data_citation: "Geoscience Australia, 2022. DEA Water Observations (Sentinel-2 NRT; Provisional). Geoscience Australia, Canberra. https://dx.doi.org/10.26186/146257"
   paper_citation: null
+custom_citations: null
 
 tags:
   - geoscience_australia_sentinel_2_collection_3

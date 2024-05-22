@@ -38,6 +38,11 @@ licence:
 citations:
   data_citation: "Geoscience Australia, 2022. DEA Geometric Median and Median Absolute Deviation (Landsat). Geoscience Australia, Canberra. https://dx.doi.org/10.26186/146261"
   paper_citation: null
+custom_citations:
+  - name: Geometric Median paper citation
+    citation: "Roberts, D., Mueller, N., Mcintyre, A., 2017. High-dimensional pixel composites from earth observation time series. IEEE Transactions on Geoscience and Remote Sensing, 55(11), 6254–6264. https://doi.org/10.1109/TGRS.2017.2723896"
+  - name: Median Absolute Deviation paper citation
+    citation: "Roberts, D., Dunn, B., Mueller, N., 2018. Open data cube products using high-dimensional statistics of time series. IGARSS 2018 - 2018 IEEE International Geoscience and Remote Sensing Symposium, 8647–8650. https://doi.org/10.1109/IGARSS.2018.8518312"
 
 tags:
   - geoscience_australia_landsat_collection_3

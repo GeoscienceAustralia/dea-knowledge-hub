@@ -19,7 +19,7 @@ copyright = f"{utilities.current_year()}, Geoscience Australia"
 author = "Geoscience Australia"
 
 html_static_path = ["_static", "_files"]
-templates_path = ["_layout", "_templates"]
+templates_path = ["_layouts", "_templates"]
 html_extra_path = ["robots.txt"]
 source_suffix = [".rst", ".md"]
 
@@ -140,7 +140,7 @@ html_theme_options = {
     "navigation_with_keys": False,
     "search_bar_text": "Search ...",
     "show_prev_next": False,
-    "header_links_before_dropdown": 3, # The number of header menu items to display before the rest are nested inside the 'More' dropdown.
+    "header_links_before_dropdown": 4, # The number of header menu items to display before the rest are nested inside the 'More' dropdown.
     "logo": {
         "link": "/"
     },

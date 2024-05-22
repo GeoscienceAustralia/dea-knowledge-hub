@@ -2,37 +2,38 @@
 
 ### Version 3.0.0
 
-Version 3.0 of DEA Waterbodies uses the same underlying polygon set as DEA Waterbodies version 2. Improvements include additional supporting data for the most recent observations available through web mapping services (WMS) and DEA Maps, more metadata availability, and pipeline improvements.
+DEA Waterbodies 3.0.0 uses the same underlying polygon set as v2.0.0 but contains several improvements. Improvements include additional supporting data for the most recent observations available through web mapping services (WMS) and DEA Maps, more metadata availability, and pipeline improvements.
 
-The update from version 2 to version 3.0 of the DEA Waterbodies product and service was created through a collaboration between Geoscience Australia, the National Aerial Firefighting Centre, Natural Hazards Research Australia, and FrontierSI to make the product more useful in hazard applications. 
+The update from version 2.0.0 to version 3.0.0 of the DEA Waterbodies product and service was created through a collaboration between Geoscience Australia, the National Aerial Firefighting Centre, Natural Hazards Research Australia, and FrontierSI to make the product more useful in hazard applications. 
 
-#### Key differences
+#### Additional supporting data
 
-DEA Waterbodies version 3.0 key improvements include: 
+New supporting data has been added to DEA Maps and web services for the most recent relevant observation. This data includes the following. 
 
-* New supporting data has been added to DEA Maps and web services for the most recent relevant observation.
-* This supporting data includes: 
-    * The last date any water was observed.
-    * The most recent date that the satellite passed over the waterbody.
-    * The date when attributes were updated.
-    * The date that polygons of waterbody boundaries were created.
-    * The dataset metadata link.
-* Specifications of supporting data are now [available](./?tab=details#data-specification-tables). 
-* Data will be uploaded as soon as it is received and processed. There is an approximate two-week latency in processing of the satellite imagery to an Analysis Ready Data (ARD) standard, from which the water information is then produced.
+* The last date any water was observed. 
+* The most recent date that the satellite passed over the waterbody. 
+* The date when attributes were updated. 
+* The date that polygons of waterbody boundaries were created.
+* The dataset metadata link.  
+
+Specifications of supporting data are now [available](./?tab=details#data-specification-tables). Data will be uploaded as soon as it is received and processed. There is an approximate 2-week latency in processing of the satellite imagery to an Analysis Ready Data (ARD) standard, from which the water information is then produced. 
+
+#### Polygon named with 'v3'
+
+DEA Waterbodies 3.0.0 polygon names are the same as those in v2.0.0 but the version number at the end of the name has changed from ‘v2’ to ‘v3’. For instance, Kati Thanda-Lake Eyre has been renamed from `r4ctum36x_v2`to `r4ctum36x_v3`.
+
+#### Other changes
+
 * There have been additions to the shapefile specification to support data delivery. Data specification tables have been [added](./?tab=details#data-specification-tables). 
-* Our pipeline has been upgraded to a more reliable production environment.
+* Our production pipeline has been upgraded for enhanced reliability. 
 
-#### Version 2 decommissioning
+#### Decommissioning the previous version
 
-DEA Waterbodies version 2 will be decommissioned in coming months after a period of DEA Waterbodies version 3.0 testing. Users will be notified before we decommission version 2.
-
-#### Polygon names
-
-DEA Waterbodies version 3.0 polygon names remain the same as DEA Waterbodies version 2 with the version number at the end of the geohash updated. For example, in v2, Kati Thanda was `r4ctum36x_v2`. In v3.0 Kati Thanda is `r4ctum36x_v3`.
+DEA Waterbodies 2.0.0 will be decommissioned in the coming months after thoroughly testing the new version. Users will be notified before we decommission v2.0.0.
 
 ### [Version 2.0.0](/data/old-version/dea-waterbodies-landsat-2.0.0/)
 
-Version 2 of DEA Waterbodies represents a reprocessing of DEA Waterbodies version 1 on [DEA Collection 3 Water Observations](/data/product/dea-water-observations-landsat), as well as a few incremental improvements. 
+DEA Waterbodies 2.0.0 represents a reprocessing of DEA Waterbodies version 1 on [DEA Collection 3 Water Observations](/data/product/dea-water-observations-landsat), as well as a few incremental improvements. 
 
 #### Key differences
 
@@ -73,12 +74,12 @@ Our automated waterbody polygon detection produces subpar results for large, ver
 * Lake Blanche 
 * Lake Everard 
 
-As an example, Kati Thanda is a particularly complex polygon when mapped using automated methods, resulting in 3,118 polygons ranging from 900 m<sup>2</sup> to 4,609 km<sup>2</sup>. Kati Thanda and Lake Everard in v1 and v2 are shown below. 
+As an example, Kati Thanda-Lake Eyre is a particularly complex polygon when mapped using automated methods, resulting in 3,118 polygons ranging from 900 m<sup>2</sup> to 4,609 km<sup>2</sup>. Kati Thanda-Lake Eyre and Lake Everard in v1 and v2 are shown below. 
 
 :::{figure} /_files/cmi/SaltLakesSwap.JPG
 :alt: Complex polygons swapped for mapped polygons
 
-Complex polygons replaced for large salt lakes in South Australia. Original polygons are shown in red. Blue areas show where polygons were infilled by replacement with the Surface Hydrology Polygons (Regional). a) Focus on the northern edge of Kati Thanda, SA, showing the complexity of the automatically detected polygons. b) Lake Everard, SA.
+Complex polygons replaced for large salt lakes in South Australia. Original polygons are shown in red. Blue areas show where polygons were infilled by replacement with the Surface Hydrology Polygons (Regional). a) Focus on the northern edge of Kati Thanda-Lake Eyre, SA, showing the complexity of the automatically detected polygons. b) Lake Everard, SA.
 :::
 
 #### Polygon names
@@ -87,4 +88,4 @@ DEA Waterbodies polygons are named using a [geohash](https://en.wikipedia.org/wi
 
 Polygon names (geohashes) are not maintained between v1 and v2 of DEA Waterbodies. As in v1, v2 waterbody polygons are named according to the centroid of each polygon, which may have moved between versions. Note that characters at the end of a geohash string represent increasing precision in the accompanying latitude/longitude coordinate pair, so while the geohash is not directly maintained between versions, it is likely that they will be similar, with only the last few characters varying due to slight differences in the polygon centroids.
 
-In order to prevent polygon identifiers being mixed up between versions, we have introduced explicit version numbers to each unique ID. This has also been applied retrospectively to v1 so that all DEA Waterbodies polygons are now named with a geohash and a version number. For example, in v1, Kati Thanda was originally `r4ctk0hzm`. In v1.1, the long-term release of v1, Kati Thanda was `r4ctk0hzm_v1`. In v2 Kati Thanda is `r4ctum36x_v2`.
+In order to prevent polygon identifiers being mixed up between versions, we have introduced explicit version numbers to each unique ID. This has also been applied retrospectively to v1 so that all DEA Waterbodies polygons are now named with a geohash and a version number. For example, in v1, Kati Thanda-Lake Eyre was originally `r4ctk0hzm`. In v1.1, the long-term release of v1, Kati Thanda-Lake Eyre was `r4ctk0hzm_v1`. In v2 Kati Thanda-Lake Eyre is `r4ctum36x_v2`. 
