@@ -43,3 +43,5 @@ DEA is powered by `Open Data Cube <http://opendatacube.org/>`_ (ODC), an open-so
 
 On GitHub, you will find the `ODC source code <https://github.com/opendatacube/datacube-core>`_.
 
+The ODC source code can be found in the `datacube-core repository on GitHub <https://github.com/opendatacube/datacube-core>`_.
+
