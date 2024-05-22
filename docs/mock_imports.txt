@@ -47,6 +47,7 @@ rios
 rioxarray
 rsgislib
 scikit_learn
+seaborn
 sklearn
 scipy
 setuptools
