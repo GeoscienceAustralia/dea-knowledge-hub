@@ -41,7 +41,5 @@ Technology
 
 DEA is powered by `Open Data Cube <http://opendatacube.org/>`_ (ODC), an open-source library for the management, analysis, and processing of Geographic Information System (GIS) data — namely Earth Observation satellite data. It is a global initiative to increase the value and use of satellite data by providing users with access to free data management technologies and analysis platforms. At its core, ODC is a set of Python libraries and a PostgreSQL database that facilitate working with geospatial raster data.
 
-On GitHub, you will find the `ODC source code <https://github.com/opendatacube/datacube-core>`_.
-
 The ODC source code can be found in the `datacube-core repository on GitHub <https://github.com/opendatacube/datacube-core>`_.
 
