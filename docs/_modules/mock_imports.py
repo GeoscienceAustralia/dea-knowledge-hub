@@ -1,6 +1,6 @@
 import os
 
-mock_imports_file = "notebooks/Tools/mock_imports.txt"
+mock_imports_file = "notebooks/mock_imports.txt"
 comment_symbol = "#"
 
 mock_imports = []
