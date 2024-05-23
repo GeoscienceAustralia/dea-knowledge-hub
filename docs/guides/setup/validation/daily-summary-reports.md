@@ -19,7 +19,7 @@ This guide will help you understand each of the sections of this report and the 
 
 The title of the report contains some key details for you to note. Here’s an example:
 
-```
+```text
 2023-07-25: Mullion, Sentinel-2A overpass
 ```
 
@@ -44,7 +44,7 @@ These are the variables and environmental factors that were present on the day t
 * **Matchup quality** &mdash; A status that represents how closely how the bands match between the field measurements and satellite measurements. The possible statuses are: 
     * `Excellent` &mdash; All bands match within the error bars. 
     * `Good` &mdash; Most bands match within the error bars. 
-    * `Mediocre` &mdash; Few (≤ 50%) bands match within the error bars. 
+    * `Mediocre` &mdash; Few ($\leq$ 50%) bands match within the error bars. 
     * `Poor` &mdash; No bands match within the error bars. 
 
 ## Results
@@ -61,14 +61,14 @@ These are the surface reflectance statistics collected on this day, grouped into
 
 The figures provided in this report are as follows. 
 
-* **Figure 1** &mdash; A 2 km &times; 2 km box surrounding the field site in true-colour RGB. The approximate location for the field site is indicated by a square in the image. The figure gives an overall view of the surroundings of the field site, including the land cover and whether any of the data may be affected by cloud or cloud shadow. Coordinates are listed in the Australian Albers system. 
+* **Figure 1** &mdash; A 2 km $\times$ 2 km box surrounding the field site in true-colour RGB. The approximate location for the field site is indicated by a square in the image. The figure gives an overall view of the surroundings of the field site, including the land cover and whether any of the data may be affected by cloud or cloud shadow. Coordinates are listed in the Australian Albers system. 
 
-    ![Figure 1 of the Daily validation summary report](/_images/validation/Daily_Summary_Report_Figure_1_RGB-2023-07-25.png)
+    ![Figure 1 of the Daily validation summary report](/_files/validation/Daily_Summary_Report_Figure_1_RGB-2023-07-25.png)
 
 * **Figure 2** &mdash; The summary comparison of surface reflectance for each satellite band. The bands are provided in the same order as in the results table: CA, blue, green, etc. Vertical error bars are shown for the satellite data and field data and these correspond to the Sat rms and Field rms statistics in the results table. 
 
-    ![Figure 2 of the Daily validation summary report](/_images/validation/Daily_Summary_Report_Figure_2_DayComparison-2023-07-25.png)
+    ![Figure 2 of the Daily validation summary report](/_files/validation/Daily_Summary_Report_Figure_2_DayComparison-2023-07-25.png)
 
-* **Field 3** &mdash; A comparison between the current data (coloured symbols) versus all previous data for the satellite platform (black dots). The diagonal line represents the 1:1 correspondence between the field data and satellite data. Ideally, all data should cluster around this line. The line of best fit is not displayed, but its statistics are included in the bottom-right of the figure. The line of best fit is calculated from the current plus all previous data for this satellite. A $R^2$ coefficient close to 1 means a very high degree of correlation between field and satellite data. A slope close to 1 and intercept close to 0 together indicate that overall, the satellite and field data match up closely. 
+* **Field 3** &mdash; A comparison between the current data (coloured symbols) versus all previous data for the satellite platform (black dots). The diagonal line represents the one-to-one correspondence between the field data and satellite data. Ideally, all data should cluster around this line. The line of best fit is not displayed, but its statistics are included in the bottom-right of the figure. The line of best fit is calculated from the current plus all previous data for this satellite. A $R^2$ coefficient close to $1$ means a very high degree of correlation between field and satellite data. A slope close to $1$ and intercept close to $0$ together indicate that overall, the satellite and field data match up closely. 
 
-    ![Figure 3 of the Daily validation summary report](/_images/validation/Daily_Summary_Report_Figure_3_OverallComparison-2023-07-25.png)
+    ![Figure 3 of the Daily validation summary report](/_files/validation/Daily_Summary_Report_Figure_3_OverallComparison-2023-07-25.png)
