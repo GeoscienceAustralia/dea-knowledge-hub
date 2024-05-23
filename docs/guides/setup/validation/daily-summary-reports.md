@@ -65,19 +65,19 @@ The figures provided in this report are as follows.
 
     :::{figure} /_files/validation/Daily_Summary_Report_Figure_1_RGB-2023-07-25.png
     :alt: Figure 1 of the Daily validation summary report
-    :width: 300px;
+    :figwidth: 300px
     :::
 
 * **Figure 2** &mdash; The summary comparison of surface reflectance for each satellite band. The bands are provided in the same order as in the results table: CA, blue, green, etc. Vertical error bars are shown for the satellite data and field data and these correspond to the Sat rms and Field rms statistics in the results table. 
 
     :::{figure} /_files/validation/Daily_Summary_Report_Figure_2_DayComparison-2023-07-25.png
     :alt: Figure 2 of the Daily validation summary report
-    :width: 300px;
+    :figwidth: 300px
     :::
 
 * **Field 3** &mdash; A comparison between the current data (coloured symbols) versus all previous data for the satellite platform (black dots). The diagonal line represents the one-to-one correspondence between the field data and satellite data. Ideally, all data should cluster around this line. The line of best fit is not displayed, but its statistics are included in the bottom-right of the figure. The line of best fit is calculated from the current plus all previous data for this satellite. A $R^2$ coefficient close to $1$ means a very high degree of correlation between field and satellite data. A slope close to $1$ and intercept close to $0$ together indicate that overall, the satellite and field data match up closely. 
 
     :::{figure} /_files/validation/Daily_Summary_Report_Figure_3_OverallComparison-2023-07-25.png
     :alt: Figure 3 of the Daily validation summary report
-    :width: 300px;
+    :figwidth: 300px
     :::
