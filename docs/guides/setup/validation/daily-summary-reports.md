@@ -1,6 +1,6 @@
 # Daily validation summary reports
 
-The [Daily Validation Summary Reports](https://knowledge.dea.ga.gov.au/validation/daily-report/) provide a comparison of DEA’s satellite-derived Analysis Ready Data (ARD) with field-derived surface reflectance data, as a way to validate the ARD. 
+The [Daily Validation Summary Reports](/validation/daily-report/) provide a comparison of DEA’s satellite-derived Analysis Ready Data (ARD) with field-derived surface reflectance data, as a way to validate the ARD. 
 
 :::{contents} In this guide
 :local:
@@ -11,7 +11,7 @@ The [Daily Validation Summary Reports](https://knowledge.dea.ga.gov.au/validatio
 
 A Daily Validation Summary Report gives a summary of the results from a single comparison of ground-based (or occasionally drone-based) data with satellite-based overpass data. The Landsat 8/9 and Sentinel-2A/-2B satellite data is used. DEA's Surface reflectance products (i.e. NBAR/NBART) are used for these comparisons. This comparison of field vs satellite data can be evaluated alongside the Daily Validation Summary Reports of previous days. 
 
-Here’s one example of a Daily Validation Summary Report: [2023-11-27](https://knowledge.dea.ga.gov.au/validation/daily-report/2023-11-27/). 
+Here’s one example of a Daily Validation Summary Report: [2023-11-27](/validation/daily-report/2023-11-27/). 
 
 This guide will help you understand each of the sections of this report and the data it contains. 
 
@@ -63,12 +63,21 @@ The figures provided in this report are as follows.
 
 * **Figure 1** &mdash; A 2 km $\times$ 2 km box surrounding the field site in true-colour RGB. The approximate location for the field site is indicated by a square in the image. The figure gives an overall view of the surroundings of the field site, including the land cover and whether any of the data may be affected by cloud or cloud shadow. Coordinates are listed in the Australian Albers system. 
 
-    ![Figure 1 of the Daily validation summary report](/_files/validation/Daily_Summary_Report_Figure_1_RGB-2023-07-25.png)
+    :::{figure} /_files/validation/Daily_Summary_Report_Figure_1_RGB-2023-07-25.png
+    :alt: Figure 1 of the Daily validation summary report
+    :width: 300px;
+    :::
 
 * **Figure 2** &mdash; The summary comparison of surface reflectance for each satellite band. The bands are provided in the same order as in the results table: CA, blue, green, etc. Vertical error bars are shown for the satellite data and field data and these correspond to the Sat rms and Field rms statistics in the results table. 
 
-    ![Figure 2 of the Daily validation summary report](/_files/validation/Daily_Summary_Report_Figure_2_DayComparison-2023-07-25.png)
+    :::{figure} /_files/validation/Daily_Summary_Report_Figure_2_DayComparison-2023-07-25.png
+    :alt: Figure 2 of the Daily validation summary report
+    :width: 300px;
+    :::
 
 * **Field 3** &mdash; A comparison between the current data (coloured symbols) versus all previous data for the satellite platform (black dots). The diagonal line represents the one-to-one correspondence between the field data and satellite data. Ideally, all data should cluster around this line. The line of best fit is not displayed, but its statistics are included in the bottom-right of the figure. The line of best fit is calculated from the current plus all previous data for this satellite. A $R^2$ coefficient close to $1$ means a very high degree of correlation between field and satellite data. A slope close to $1$ and intercept close to $0$ together indicate that overall, the satellite and field data match up closely. 
 
-    ![Figure 3 of the Daily validation summary report](/_files/validation/Daily_Summary_Report_Figure_3_OverallComparison-2023-07-25.png)
+    :::{figure} /_files/validation/Daily_Summary_Report_Figure_3_OverallComparison-2023-07-25.png
+    :alt: Figure 3 of the Daily validation summary report
+    :width: 300px;
+    :::
