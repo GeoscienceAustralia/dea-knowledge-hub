@@ -1,4 +1,4 @@
-# Daily validation summary reports
+# Daily Validation Summary Reports
 
 The [Daily Validation Summary Reports](/validation/daily-report/) provide a comparison of DEA’s satellite-derived Analysis Ready Data (ARD) with field-derived surface reflectance data, as a way to validate the ARD. 
 
