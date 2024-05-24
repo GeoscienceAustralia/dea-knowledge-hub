@@ -14,7 +14,15 @@
 
 ## 2024-05-24: Misclassification issue with Sentinel-2 `s2cloudless`cloud masking from 2022
 
-An issue causing widespread misclassification of clouds in DEA's Sentinel-2 `s2cloudless` cloud mask data generated since January 2022 has been identified. Users should avoid using `s2cloudless` cloud mask data from 2022 onwards while this issue is being investigated. 
+An issue causing widespread misclassification of clouds in DEA's Sentinel-2 `s2cloudless` cloud mask data generated since January 2022 has been identified. 
+
+Users should avoid using `s2cloudless` cloud mask data from 2022 onwards while this issue is being investigated. 
+
+## 2024-05-13: Terra-derived DEA Hotspots are unavailable
+
+Direct Broadcast satellite downloads from the Terra satellite have again become unavailable. This means that Terra-derived [DEA Hotspots](https://hotspots.dea.ga.gov.au/) are unavailable until further notice.
+
+This is due to the TERRA MODIS satellite experiencing power problems. The satellite continues to collect data but its direct broadcast has stopped.
 
 ## 2024-05-06: Performance issues with DEA Explorer and STAC API
 
