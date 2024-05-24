@@ -8,15 +8,16 @@
 :::{admonition} System status of DEA
 :class: caution
 
-* Performance issues with DEA Explorer and STAC API. See below.
+* Misclassification issue with Sentinel-2 's2cloudless' cloud masking from 2022. See below.
 * Terra-derived DEA Hotspots are unavailable. See below.
+* Performance issues with DEA Explorer and STAC API. See below.
 :::
 
-## 2024-05-24: Misclassification issue with Sentinel-2 `s2cloudless` cloud masking from 2022
+## 2024-05-24: Misclassification issue with Sentinel-2 's2cloudless' cloud masking from 2022
 
-An issue causing widespread misclassification of clouds in DEA's Sentinel-2 `s2cloudless` cloud mask data generated since January 2022 has been identified. 
+An issue has been identified that is causing widespread misclassification of clouds in DEA's Sentinel-2 `s2cloudless` cloud mask data generated since January 2022. 
 
-Users should avoid using `s2cloudless` cloud mask data from 2022 onwards while this issue is being investigated. 
+We recommend that you avoid using `s2cloudless` cloud mask data from 2022 onwards until this issue is investigated. 
 
 ## 2024-05-13: Terra-derived DEA Hotspots are unavailable
 
