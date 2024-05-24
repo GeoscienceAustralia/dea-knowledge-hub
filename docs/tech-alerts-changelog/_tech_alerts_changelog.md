@@ -12,7 +12,7 @@
 * Terra-derived DEA Hotspots are unavailable. See below.
 :::
 
-## 2024-05-24: Misclassification issue with Sentinel-2 `s2cloudless`cloud masking from 2022
+## 2024-05-24: Misclassification issue with Sentinel-2 `s2cloudless` cloud masking from 2022
 
 An issue causing widespread misclassification of clouds in DEA's Sentinel-2 `s2cloudless` cloud mask data generated since January 2022 has been identified. 
 
