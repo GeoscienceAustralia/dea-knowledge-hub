@@ -8,9 +8,11 @@
 :::{admonition} Upcoming change: Shift in grid origin point
 :class: note
 
-In an upcoming change, the origin point of this product grid be shifted 18 tiles west and 15 tiles south. Therefore, all tile grid references will change. For instance, a tile reference of `x10y10` will change to `x28y25`.
+In an upcoming change, the south-west origin point of this product grid be shifted 18 tiles west and 15 tiles south. Therefore, all tile grid references will change. For instance, a tile reference of `x10y10` will change to `x28y25`.
 
-Note that the geographic coordinates of the origin point (`x0y0`) will change. The current coordinates are $-5472000.0, -2688000.0$ and the new coordinates will be $-6912000.0, -4416000.0$.
+Note that the geographic coordinates of the origin point (`x0y0`) will change. The current coordinates are `-5472000.0, -2688000.0` and the new coordinates will be `-6912000.0, -4416000.0`.
+
+All of our 'summary derivative products' will be affected by this change, including [DEA Geometric Median and Median Absolute Deviation (GeoMAD)](/data/product/dea-geometric-median-and-median-absolute-deviation-landsat/), [DEA Water Observations Statistics (Landsat)](/data/product/dea-water-observations-statistics-landsat/), [DEA Fractional Cover Percentiles](/data/product/dea-fractional-cover-percentiles-landsat/), [DEA Mangroves](/data/product/dea-mangrove-canopy-cover-landsat/), and [DEA Land Cover](/data/product/dea-land-cover-landsat/) (later).
 :::
 
 ## Introduction
