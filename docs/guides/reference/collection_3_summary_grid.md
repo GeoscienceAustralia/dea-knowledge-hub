@@ -8,7 +8,7 @@
 :::{admonition} Upcoming change: Shift in grid origin point
 :class: note
 
-In an upcoming change, the south-west origin point of this product grid be shifted 18 tiles west and 15 tiles south. Therefore, all tile grid references will change. For instance, a tile reference of `x10y10` will change to `x28y25`.
+In an upcoming change, the south-west origin point of this product grid will be shifted 18 tiles west and 15 tiles south. Therefore, all tile grid references will change. For instance, a tile reference of `x10y10` will change to `x28y25`.
 
 Note that the geographic coordinates of the origin point (`x0y0`) will change. The current coordinates are `-5472000.0, -2688000.0` and the new coordinates will be `-6912000.0, -4416000.0`.
 
@@ -89,8 +89,6 @@ Collection 3 grid to the old Albers Collection 2 grid.
 
 ## References
 
-[View the Grid in an online map](https://maps.dea.ga.gov.au/#share=s-yUPQrYI0zfAYDldoQSqxzHjpeKx)
-
-[Download the Grid in GeoJSON map](https://data.dea.ga.gov.au/derivative/ga_summary_grid_c3.geojson)
-
-[The Grid as implemented in ODC Statistician](https://github.com/opendatacube/odc-tools/blob/dff7b984464a4cc9d6bd9f6f444ef4a292c730d0/libs/dscache/odc/dscache/tools/tiling.py#L13-L41)
+* [View the Grid in an online map](https://maps.dea.ga.gov.au/#share=s-yUPQrYI0zfAYDldoQSqxzHjpeKx)
+* [Download the Grid in GeoJSON map](https://data.dea.ga.gov.au/derivative/ga_summary_grid_c3.geojson)
+* [The Grid as implemented in ODC Statistician](https://github.com/opendatacube/odc-tools/blob/dff7b984464a4cc9d6bd9f6f444ef4a292c730d0/libs/dscache/odc/dscache/tools/tiling.py#L13-L41)
