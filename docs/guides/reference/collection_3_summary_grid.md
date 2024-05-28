@@ -12,9 +12,9 @@ To accommodate an expanded area of coverage of Australia's external territories,
 
 Also note that the geographic coordinates of the origin point (`x0y0`) will change. The current coordinates are `-5472000.0, -2688000.0` and the new coordinates will be `-6912000.0, -4416000.0`.
 
-As a preview, you can view a [provisional version of the expanded DEA Summary Product Grid](https://maps.dea.ga.gov.au/#share=s-avXJqwjUtf55qGUmweYY5KYoVnI) on DEA Maps.
+For a preview, see the [provisional version of the expanded DEA Summary Product Grid](https://maps.dea.ga.gov.au/#share=s-avXJqwjUtf55qGUmweYY5KYoVnI) on DEA Maps.
 
-All new versions of our 'summary derivative products' will be affected by this change, including [DEA Geometric Median and Median Absolute Deviation (GeoMAD)](/data/product/dea-geometric-median-and-median-absolute-deviation-landsat/), [DEA Water Observations Statistics (Landsat)](/data/product/dea-water-observations-statistics-landsat/), [DEA Fractional Cover Percentiles](/data/product/dea-fractional-cover-percentiles-landsat/), [DEA Mangroves](/data/product/dea-mangrove-canopy-cover-landsat/), and [DEA Land Cover](/data/product/dea-land-cover-landsat/). (Existing versions of the products will not be changed.)
+All new versions of our 'summary derivative products' will be affected by this change (but existing versions of the products will not be changed). These products include [DEA Geometric Median and Median Absolute Deviation (GeoMAD)](/data/product/dea-geometric-median-and-median-absolute-deviation-landsat/), [DEA Water Observations Statistics (Landsat)](/data/product/dea-water-observations-statistics-landsat/), [DEA Fractional Cover Percentiles](/data/product/dea-fractional-cover-percentiles-landsat/), [DEA Mangroves](/data/product/dea-mangrove-canopy-cover-landsat/), and [DEA Land Cover](/data/product/dea-land-cover-landsat/).
 :::
 
 ## Introduction
