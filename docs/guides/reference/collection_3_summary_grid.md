@@ -5,6 +5,14 @@
 :backlinks: none
 :::
 
+:::{admonition} Upcoming change: Shift in grid origin point
+:class: note
+
+In an upcoming change, the origin point of this product grid be shifted 18 tiles west and 15 tiles south. Therefore, all tile grid references will change. For instance, a tile reference of `x10y10` will change to `x28y25`.
+
+Note that the geographic coordinates of the origin point (`x0y0`) will change. The current coordinates are $-5472000.0, -2688000.0$ and the new coordinates will be $-6912000.0, -4416000.0$.
+:::
+
 ## Introduction
 
 Digital Earth Australia (DEA) maintains and distributes collections of
