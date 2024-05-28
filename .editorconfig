@@ -1,8 +1,10 @@
 root = true
 
-[{ *.rst, *.md, *.yml, *.yaml }]
+[*]
 charset = utf-8
 end_of_line = lf
+
+[{ *.rst, *.md, *.yml, *.yaml }]
 insert_final_newline = true
 trim_trailing_whitespace = true
 indent_style = space
