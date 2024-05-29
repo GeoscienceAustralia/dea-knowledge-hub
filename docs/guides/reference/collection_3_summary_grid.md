@@ -8,13 +8,13 @@
 :::{admonition} Upcoming change: Shift in grid origin point
 :class: note
 
-To accommodate an expanded area of coverage of Australia's external territories, the product grid will soon be shifted. The south-west origin point of the grid will be shifted 18 tiles west and 15 tiles south. Therefore, all tile grid references will change. For instance, a tile reference of `x10y10` will change to `x28y25`.
+To accommodate an expanded area of coverage of Australia's external territories, the product grid will soon be shifted. The south-west origin point of the grid will be shifted from `-5472000.0, -2688000.0` to `-6912000.0, -4416000.0` (EPSG:3577).
 
-Also note that the geographic coordinates of the origin point (`x0y0`) will change. The current coordinates are `-5472000.0, -2688000.0` and the new coordinates will be `-6912000.0, -4416000.0`.
+Therefore, all tile grid references will shift 18 tiles west and 15 tiles south. For instance, a tile reference of `x10y10` will change to `x28y25`.
 
 For a preview, see the [provisional version of the expanded DEA Summary Product Grid](https://maps.dea.ga.gov.au/#share=s-avXJqwjUtf55qGUmweYY5KYoVnI) on DEA Maps.
 
-All new versions of our 'summary derivative products' will be affected by this change (but existing versions of the products will not be changed). These products include [DEA Geometric Median and Median Absolute Deviation (GeoMAD)](/data/product/dea-geometric-median-and-median-absolute-deviation-landsat/), [DEA Water Observations Statistics (Landsat)](/data/product/dea-water-observations-statistics-landsat/), [DEA Fractional Cover Percentiles](/data/product/dea-fractional-cover-percentiles-landsat/), [DEA Mangroves](/data/product/dea-mangrove-canopy-cover-landsat/), and [DEA Land Cover](/data/product/dea-land-cover-landsat/).
+All new versions of our 'summary derivative products' will be affected by this change (but existing versions of the products will not be changed). These products are [DEA Geometric Median and Median Absolute Deviation (GeoMAD)](/data/product/dea-geometric-median-and-median-absolute-deviation-landsat/), [DEA Water Observations Statistics (Landsat)](/data/product/dea-water-observations-statistics-landsat/), [DEA Fractional Cover Percentiles](/data/product/dea-fractional-cover-percentiles-landsat/), [DEA Mangroves](/data/product/dea-mangrove-canopy-cover-landsat/), and [DEA Land Cover](/data/product/dea-land-cover-landsat/).
 :::
 
 ## Introduction
