@@ -13,7 +13,7 @@
 * Performance issues with DEA Explorer and STAC API. See below.
 :::
 
-## Upcoming change: Shift in grid origin point
+## Upcoming change: Shift in origin point of DEA Summary Product Grid
 
 To accommodate an expanded area of coverage of Australia's external territories, the [DEA Summary Product Grid](/guides/reference/collection_3_summary_grid/) will soon be shifted. The south-west origin point of the grid will be shifted from `-5472000.0, -2688000.0` to `-6912000.0, -4416000.0` (EPSG:3577).
 
