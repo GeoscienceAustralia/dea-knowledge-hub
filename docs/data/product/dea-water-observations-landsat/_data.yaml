@@ -55,7 +55,7 @@ explorers:
 data:
   - link: https://data.dea.ga.gov.au/?prefix=derivative/ga_ls_wo_3/
     name: Access the data on AWS
-  - link: https://dapds00.nci.org.au/thredds/catalog/jw04/ga_ls_wo_3/catalog.html
+  - link: https://thredds.nci.org.au/thredds/catalog/jw04/ga_ls_wo_3/catalog.html
     name: Access the data on NCI
 
 code_examples:
