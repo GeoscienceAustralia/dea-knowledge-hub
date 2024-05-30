@@ -15,7 +15,7 @@ spatial_data_type: Raster
 time_span:
   start: 1986
   end: Present
-update_frequency: Periodically
+update_frequency: Yearly
 next_update: null
 product_ids:
   - ga_ls_wo_fq_apr_oct_3
