@@ -52,7 +52,7 @@ maps: null
 explorers: null
 
 data:
-  - link: http://dapds00.nci.org.au/thredds/catalog/fk4/dlcd/2.1/catalog.html
+  - link: https://thredds.nci.org.au/thredds/catalog/fk4/dlcd/2.1/catalog.html
     name: Access the data on NCI
   - link: https://pid.geoscience.gov.au/dataset/ga/83868
     name: Download a zipped .tif
