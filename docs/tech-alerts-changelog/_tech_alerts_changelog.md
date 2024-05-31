@@ -25,6 +25,12 @@ All new versions of our 'summary derivative products' will be affected by this c
 
 Learn more about the [DEA Summary Product Grid](/guides/reference/collection_3_summary_grid/).
 
+## 2024-05-30: NCI THREDDS data access links updated to point to the new THREDDS server
+
+NCI has released an upgrade to the THREDDS Data Service and will [decommission the existing THREDDS server after 30th June 2024](https://opus.nci.org.au/display/NDP/THREDDS+Upgrade).
+
+To prepare for this change, all THREDDS data access links in the Knowledge Hub have been updated to point to the new THREDDS server: all `https://dapds00.nci.org.au/thredds/...` links have been changed to `https://thredds.nci.org.au/thredds/...`.
+
 ## 2024-05-24: Misclassification issue with Sentinel-2 's2cloudless' cloud masking from 2022
 
 An issue has been identified that is causing widespread misclassification of clouds in DEA's Sentinel-2 `s2cloudless` cloud mask data generated since January 2022. 

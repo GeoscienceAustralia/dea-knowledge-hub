@@ -65,11 +65,11 @@ explorers:
 data:
   - link: https://data.dea.ga.gov.au/?prefix=derivative
     name: Access the data on AWS
-  - link: https://dapds00.nci.org.au/thredds/catalog/jw04/ga_ls5t_nbart_gm_cyear_3/catalog.html
+  - link: https://thredds.nci.org.au/thredds/catalog/jw04/ga_ls5t_nbart_gm_cyear_3/catalog.html
     name: Annual Landsat 5 observations on NCI
-  - link: https://dapds00.nci.org.au/thredds/catalog/jw04/ga_ls7e_nbart_gm_cyear_3/catalog.html
+  - link: https://thredds.nci.org.au/thredds/catalog/jw04/ga_ls7e_nbart_gm_cyear_3/catalog.html
     name: Annual Landsat 7 observations on NCI
-  - link: https://dapds00.nci.org.au/thredds/catalog/jw04/ga_ls8c_nbart_gm_cyear_3/catalog.html
+  - link: https://thredds.nci.org.au/thredds/catalog/jw04/ga_ls8c_nbart_gm_cyear_3/catalog.html
     name: Annual Landsat 8 observations on NCI
 
 code_examples: null
