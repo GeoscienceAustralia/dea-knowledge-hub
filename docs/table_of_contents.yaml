@@ -167,6 +167,7 @@ entries:
           - file: guides/setup/operational-reports/index
             entries:
               - file: guides/setup/operational-reports/timeliness-currency-report
+                title: Product Timeliness and Currency
 
       - caption: Reference
         entries:
