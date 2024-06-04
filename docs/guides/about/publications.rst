@@ -36,11 +36,11 @@ Li, F., Jupp, D.L.B., Markham, B.L., Lau, I.C., Ong, C., Byrne, G., Thankappan, 
 
 Broomhall, M., Byrne, G., Hay, E., Thankappan, M. and Walsh, A., 2022, July. Validating Landsat and Sentinel-2 Analysis Ready Data with Uav-Mounted Spectrometers. IGARSS 2022-2022 IEEE International Geoscience and Remote Sensing Symposium (pp. 7775-7778). IEEE.
 
-Christopher J. Owers, Richard M. Lucas, Daniel Clewley, Belle Tissott, Sean M. T. Chua, Gabrielle Hunt, Norman Mueller, Carole Planque, Suvarna M. Punalekar, Pete Bunting, Peter Tan, Graciela Metternicht, “Operational continental-scale land cover mapping of Australia using the Open Data Cube”, ISPRS Journal of Photogrammetry and Remote Sensing, In Review. 
-
 Lucas, R.M., German, S., Metternicht, G., Schmidt, R.K., Owers, C.J., Prober, S.M., Richards, A.E., Tetreault‐Campbell, S., Williams, K.J., Mueller, N. and Tissott, B., 2022. A globally relevant change taxonomy and evidence‐based change framework for land monitoring. Global Change Biology, 28(21), pp.6293-6317. 
 
-Nanson, R., Bishop-Taylor, R., Sagar, S., Lymburner, L., 2022. Geomorphic insights into Australia's coastal change using a national dataset derived from the multi-decadal Landsat archive. Estuarine, Coastal and Shelf Science, 265, p.107712. https://doi.org/10.1016/j.ecss.2021.107712 
+Nanson, R., Bishop-Taylor, R., Sagar, S., Lymburner, L., 2022. Geomorphic insights into Australia's coastal change using a national dataset derived from the multi-decadal Landsat archive. Estuarine, Coastal and Shelf Science, 265, p.107712. https://doi.org/10.1016/j.ecss.2021.107712
+
+Owers, C.J., Lucas, R.M., Clewley, D., Tissott, B., Chua, S.M., Hunt, G., Mueller, N., Planque, C., Punalekar, S.M., Bunting, P. and Tan, P., 2022. Operational continental-scale land cover mapping of Australia using the Open Data Cube. International Journal of Digital Earth, 15(1), pp.1715-1737.
 
 Sudmanns, M., Augustin, H., Killough, B., Giuliani, G., Tiede, D., Leith, A., Yuan, F., Lewis, A., 2022. Think global, cube local: an Earth Observation Data Cube’s contribution to the Digital Earth vision. 1–29. https://doi.org/10.1080/20964471.2022.2099236
 
