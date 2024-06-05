@@ -66,6 +66,8 @@ $100 - (\frac{d}{365.25} \times 100)$
 
 Where $d$ is the number of days overdue this financial year.
 
+So if the product has been overdue for 5 days throughout the entire financial year so far, the Timeliness will be 98.63%
+
 ## How Currency is calculated
 
 In the **Products** table, it is calculated automatically by our system based on the age of the latest 'scene' in the product. Internal staff can learn the [technical details of DEA Currency][CurrencyInternalDoc].
