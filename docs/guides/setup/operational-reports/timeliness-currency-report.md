@@ -4,6 +4,22 @@ This report tracks the Timeliness and Currency of DEA's published products. **Ti
 
 [View the DEA Published Product Timeliness and Currency Report](https://mgmt.sandbox.dea.ga.gov.au/public-dashboards/d22241dbfca54b1fa9f73938ef26e645?orgId=1)
 
+:::{admonition} The data isn't loading
+:class: note
+
+If the report data doesn't load, please refresh the page and then you should see the data. This seems to be a Grafana bug. If you encounter this bug, you may see the error: "Public dashboard panel not found" or the text: "No data".
+:::
+
+:::{contents} In this guide
+:depth: 1
+:local:
+:backlinks: none
+:::
+
+## View the reports
+
+The primary report is the [DEA Published Product Timeliness and Currency Report](https://mgmt.sandbox.dea.ga.gov.au/public-dashboards/d22241dbfca54b1fa9f73938ef26e645?orgId=1). Internal staff can also view a secondary report containing the history of this data over several years and quarters: [DEA Published Product Timeliness and Currency Report - History](https://mgmt.sandbox.dea.ga.gov.au/d/c1674b20-8c8a-4d90-aef2-02796275cf2b/4e57919d-fc9d-59d7-9bd1-aa61d41bcb92?orgId=1).
+
 ## Audience and purpose
 
 The report is designed to be used by both external and internal stakeholders. External auditors may use it to check that our product data is being published on time. Internally, we may use it to define targets that we aim to achieve each financial year. We also use it to gain valuable insights, such as to assess which products are being published reliably versus which products have had difficulties.
@@ -18,7 +34,9 @@ Only products that meet the following criteria are included in this report. This
 
 Therefore, if you can't find a certain product in the report, it is likely that it doesn't meet one of those criteria.
 
+## How Timeliness is calculated
 
+Timeliness is a value that ranges from 0% (never on time) to 100% (always on time). It is calculated from the number of days that the product was overdue.
 
 
 
@@ -28,4 +46,16 @@ $100 - (\frac{d}{365.25} \times 100)$
 
 Where $d$ is Days overdue this financial year
 
-Why isn't a product in this table? It must be an inactive product.
+## How Currency is calculated
+
+In the **Products** table, 
+
+In the **Additional products** table, 
+
+
+
+Internal staff can see this https://docs.dev.dea.ga.gov.au/internal_services/reporting-systems/etls/currency.html#sqs-currency
+
+
+
+
