@@ -7,3 +7,5 @@ This report tracks how often the data for each of our published products is publ
 $100 - (\frac{d}{365.25} \times 100)$
 
 Where $d$ is Days overdue this financial year
+
+Why isn't a product in this table? It must be an inactive product.
