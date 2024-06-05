@@ -53,7 +53,7 @@ explorers:
     name: Data explorer
 
 data:
-  - link: https://dapds00.nci.org.au/thredds/catalog/xu18/catalog.html
+  - link: https://thredds.nci.org.au/thredds/catalog/xu18/catalog.html
     name: Access the data in NCI
   - link: https://data.dea.ga.gov.au/?prefix=baseline/ga_ls7e_ard_3/
     name: Access the data on AWS

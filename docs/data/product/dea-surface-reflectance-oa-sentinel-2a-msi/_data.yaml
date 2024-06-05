@@ -58,7 +58,7 @@ explorers:
 data:
   - link: https://data.dea.ga.gov.au/?prefix=baseline/ga_s2am_ard_3/
     name: Access the data on AWS
-  - link: https://dapds00.nci.org.au/thredds/catalog/ka08/ga_s2am_ard_3/catalog.html
+  - link: https://thredds.nci.org.au/thredds/catalog/ka08/ga_s2am_ard_3/catalog.html
     name: Access the data on NCI
 
 code_examples:

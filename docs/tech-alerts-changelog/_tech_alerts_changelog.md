@@ -8,9 +8,34 @@
 :::{admonition} System status of DEA
 :class: caution
 
-* Performance issues with DEA Explorer and STAC API. See below.
+* Misclassification issue with Sentinel-2 's2cloudless' cloud masking from 2022. See below.
 * Terra-derived DEA Hotspots are unavailable. See below.
+* Performance issues with DEA Explorer and STAC API. See below.
 :::
+
+## Upcoming change: Shift in origin point of DEA Summary Product Grid
+
+To accommodate an expanded area of coverage of Australia's external territories, the [DEA Summary Product Grid](/guides/reference/collection_3_summary_grid/) will soon be shifted. The south-west origin point of the grid will be shifted from `-5472000.0, -2688000.0` to `-6912000.0, -4416000.0` (EPSG:3577).
+
+Therefore, all tile grid references will shift 18 tiles west and 15 tiles south. For instance, a tile reference of `x10y10` will change to `x28y25`.
+
+For a preview, see the [provisional version of the expanded DEA Summary Product Grid](https://maps.dea.ga.gov.au/#share=s-avXJqwjUtf55qGUmweYY5KYoVnI) on DEA Maps.
+
+All new versions of our 'summary derivative products' will be affected by this change (but existing versions of the products will not be changed). These products are [DEA Geometric Median and Median Absolute Deviation (GeoMAD)](/data/product/dea-geometric-median-and-median-absolute-deviation-landsat/), [DEA Water Observations Statistics (Landsat)](/data/product/dea-water-observations-statistics-landsat/), [DEA Fractional Cover Percentiles](/data/product/dea-fractional-cover-percentiles-landsat/), [DEA Mangroves](/data/product/dea-mangrove-canopy-cover-landsat/), and [DEA Land Cover](/data/product/dea-land-cover-landsat/).
+
+Learn more about the [DEA Summary Product Grid](/guides/reference/collection_3_summary_grid/).
+
+## 2024-05-30: NCI THREDDS data access links updated to point to the new THREDDS server
+
+NCI has released an upgrade to the THREDDS Data Service and will [decommission the existing THREDDS server after 30th June 2024](https://opus.nci.org.au/display/NDP/THREDDS+Upgrade).
+
+To prepare for this change, all THREDDS data access links in the Knowledge Hub have been updated to point to the new THREDDS server: all `https://dapds00.nci.org.au/thredds/...` links have been changed to `https://thredds.nci.org.au/thredds/...`.
+
+## 2024-05-24: Misclassification issue with Sentinel-2 's2cloudless' cloud masking from 2022
+
+An issue has been identified that is causing widespread misclassification of clouds in DEA's Sentinel-2 `s2cloudless` cloud mask data generated since January 2022. 
+
+We recommend that you avoid using `s2cloudless` cloud mask data from 2022 onwards until this issue is investigated. 
 
 ## 2024-05-13: Terra-derived DEA Hotspots are unavailable
 

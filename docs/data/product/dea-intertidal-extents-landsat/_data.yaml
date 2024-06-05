@@ -54,7 +54,7 @@ explorers:
     name: Data explorer
 
 data:
-  - link: http://dapds00.nci.org.au/thredds/catalogs/fk4/item_2_0.html
+  - link: https://thredds.nci.org.au/thredds/catalog/catalogs/fk4/item_2_0.html
     name: Access the data on NCI
 
 code_examples: null
