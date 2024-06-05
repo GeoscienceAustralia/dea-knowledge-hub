@@ -24,17 +24,21 @@ The primary report is the [DEA Published Product Timeliness and Currency Report]
 
 The report is designed to be used by both external and internal stakeholders. External auditors may use it to check that our product data is being published on time. Internally, we may use it to define targets that we aim to achieve each financial year. We also use it to gain valuable insights, such as to assess which products are being published reliably versus which products have had difficulties.
 
+## Financial year
+
+This report is based on the Financial Year rather than the Calendar Year. The Financial Year ('fin. year') is from 1 July to 30 June. The report also uses Financial Quarters. These are Q1 (1 Jul &ndash; 30 Sep), Q2 (1 Oct &ndash; 31 Dec), Q3 (1 Jan &ndash; 31 Mar), and Q4 (1 Apr &ndash; 30 Jun).
+
 ## Fields of the report
 
 In the [Timeliness and Currency report][TimelinessReport], the following fields contain useful information.
 
-* **Update frequency** &mdash; the 
-* **Last updated** &mdash; the 
-* **Is current?** &mdash; the 
-* **Timeliness this fin. year** &mdash; the 
-* **Timeliness previous fin. year** &mdash; the 
-* **Timeliness this fin. quarter** &mdash; the 
-* **Timeliness previous fin. quarter** &mdash; the 
+* **Update frequency** &mdash; How often the product data is expected to be published.
+* **Last updated** &mdash; The date of the last time that the product data was published.
+* **Is current?** &mdash; Whether the product currently has the expected data. (This represents 'Currency'.)
+* **Timeliness this fin. year** &mdash; The Timeliness of the product during this financial year, to date. Note that the average of these values for all products in the report is displayed at the top of the report.
+* **Timeliness previous fin. year** &mdash; The Timeliness of the product during the previous financial year.
+* **Timeliness this fin. quarter** &mdash; The Timeliness of the product during this financial quarter, to date.
+* **Timeliness previous fin. quarter** &mdash; The Timeliness of the product during the previous financial quarter.
 
 ## Which products are included?
 
@@ -52,7 +56,7 @@ This report includes two tables: **Products** and **Additional products**. The P
 
 ## How Timeliness is calculated
 
-Timeliness is a value that ranges from 0% (never on time) to 100% (always on time).
+Timeliness is a value that ranges from 0% (meaning 'never on time') to 100% (meaning 'always on time').
 
 In the **Products** table, it is calculated by ...................... TODO
 
