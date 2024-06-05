@@ -4,7 +4,7 @@ description: We provide transparent reports to allow stakeholders to assess the 
 reports:
   - name: DEA Published Product Timeliness and Currency Report
     link: https://mgmt.sandbox.dea.ga.gov.au/public-dashboards/d22241dbfca54b1fa9f73938ef26e645?orgId=1
-    description: This report tracks how often the data for each of our products is published on time (Timeliness) and whether they currently have the expected data (Currency).
+    description: This report tracks the Timeliness and Currency of DEA's published products. Timeliness measures how often a product's data is published on time and Currency indicates whether the product currently has the expected data.
     image: /_files/statistics/DEA_Published_Product_Timeliness_and_Currency_Report.jpg
     custom_link_text: null
 
