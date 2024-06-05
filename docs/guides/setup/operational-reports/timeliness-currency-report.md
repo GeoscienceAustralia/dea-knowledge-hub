@@ -34,28 +34,25 @@ Only products that meet the following criteria are included in this report. This
 
 Therefore, if you can't find a certain product in the report, it is likely that it doesn't meet one of those criteria.
 
+## The Products and Additional products tables
+
+This report includes two tables: **Products** and **Additional products**. The Products table is for products that are tracked automatically by our system and this table contains the most comprehensive data. The Additional products table is for products that we track manually and this table contains only the essential data.
+
 ## How Timeliness is calculated
 
-Timeliness is a value that ranges from 0% (never on time) to 100% (always on time). It is calculated from the number of days that the product was overdue.
+Timeliness is a value that ranges from 0% (never on time) to 100% (always on time).
 
+In the **Products** table, it is calculated by ...
 
-
-
+In the **Additional products** table, it is calculated from the number of days that the product has been overdue throughout the entire financial year. It uses the following formula.
 
 $100 - (\frac{d}{365.25} \times 100)$
 
-Where $d$ is Days overdue this financial year
+Where $d$ is the number of days overdue this financial year.
 
 ## How Currency is calculated
 
-In the **Products** table, 
+In the **Products** table, it is calculated automatically by our system based on the age of the latest 'scene' in the product. Internal staff can learn the [technical details of DEA Currency](https://docs.dev.dea.ga.gov.au/internal_services/reporting-systems/etls/currency.html#sqs-currency).
 
-In the **Additional products** table, 
-
-
-
-Internal staff can see this https://docs.dev.dea.ga.gov.au/internal_services/reporting-systems/etls/currency.html#sqs-currency
-
-
-
+In the **Additional products** table, ...
 
