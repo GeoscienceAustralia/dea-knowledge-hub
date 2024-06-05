@@ -4,10 +4,10 @@ This report tracks the Timeliness and Currency of DEA's published products. **Ti
 
 View the [DEA Published Product Timeliness and Currency Report][TimelinessReport].
 
-:::{admonition} If the data doesn't load ...
+:::{admonition} Bug: The report data doesn't load when opened via link
 :class: note
 
-If the report data doesn't load, please refresh the page and then you should see the data. This seems to be a Grafana bug. If you encounter this bug, you may see the error "Public dashboard panel not found" or the text "No data".
+There seems to be a Grafana bug that can cause the data not to load when you open the report via a link from another report. Please refresh the page, then the data should load normally. If you encounter this bug, you may see the "Public dashboard panel not found" error or the "No data" text.
 :::
 
 :::{contents} In this guide
@@ -70,7 +70,7 @@ So if the product has been overdue for 5 days throughout the entire financial ye
 
 ## How Currency is calculated
 
-In the **Products** table, it is calculated automatically by our system based on the age of the latest 'scene' in the product. Internal staff can learn the [technical details of DEA Currency][CurrencyInternalDoc].
+In the **Products** table, it is calculated automatically by our system based on the date that the data was last published. Internal staff can learn the [technical details of DEA Currency][CurrencyInternalDoc].
 
 The 'Is current' data is not available in the **Additional products** table.
 
