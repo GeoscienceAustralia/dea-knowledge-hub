@@ -2,12 +2,12 @@
 
 This report tracks the Timeliness and Currency of DEA's published products. **Timeliness** measures how often a product's data is published on time (where 100% means 'always on time'). **Currency** indicates whether the product currently has the expected data. In this guide, you will learn how to understand and analyse this report.
 
-[View the DEA Published Product Timeliness and Currency Report][TimelinessReport]
+View the [DEA Published Product Timeliness and Currency Report][TimelinessReport].
 
-:::{admonition} The data isn't loading
+:::{admonition} If the data doesn't load ...
 :class: note
 
-If the report data doesn't load, please refresh the page and then you should see the data. This seems to be a Grafana bug. If you encounter this bug, you may see the error: "Public dashboard panel not found" or the text: "No data".
+If the report data doesn't load, please refresh the page and then you should see the data. This seems to be a Grafana bug. If you encounter this bug, you may see the error "Public dashboard panel not found" or the text "No data".
 :::
 
 :::{contents} In this guide
