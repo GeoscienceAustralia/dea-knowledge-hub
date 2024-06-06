@@ -53,22 +53,14 @@ The report contains two tables: **Products** and **Additional products**. The Pr
 
 In the **Products** table, Timeliness is calculated by an algorithm that works as follows.
 
-1. Calculate the age of the latest published data by finding the difference between the latest scene's acquisition date and the calendar time.
-1. If the age is within the threshold of a specified business rule, then the timeliness is 100% for this day. If not, then it is 0%.
-1. The Timeliness of multiple days are averaged across a financial year and across a financial quarter.
+1. Find the age of the latest published data (in hours). This is calculated from the difference between the latest scene's acquisition date and the calendar time.
+    $$
+    age = acquisition\_date - calendar\_time
+    $$
+1. Each product has a 'business rule' that defines the maximum threshold for this age. For instance, a product may have a business rule of '&lt;= 16 days'. This means that if the age is more than 16 days, then the data is overdue. We run this check every day and if the age is within the threshold, we assign 100% Timeliness for that day; whereas, if the age is above the threshold, we assign 0% for that day.
+1. The Timeliness values of a span of multiple days are averaged to find the Timeliness for a the financial year and the Timeliness for a financial quarter.
 
-
-
-
-
-
-
-
-
-
-
-
-In the **Additional products** table, Timeliness is calculated from the number of days that the product has been overdue throughout the entire financial year. It uses the following formula.
+In the **Additional products** table, Timeliness is calculated based on the number of days that the product has been overdue throughout the entire financial year. Our staff manually record the number of days  that it has been overdue. It uses the following algorithm.
 
 $$
 100 - (\frac{d}{365.25} \times 100)
@@ -76,11 +68,11 @@ $$
 
 Where $d$ is the number of days overdue this financial year.
 
-So if the product has been overdue for 5 days throughout the entire financial year so far, the Timeliness will be 98.63%.
+For example, if the product has been overdue for 5 days, the Timeliness will be 98.63%.
 
 ## Algorithm for Currency
 
-In the **Products** table, the 'Is current' data is calculated automatically by our system based on the date that the data was last published. Internal staff can learn the [technical details of how DEA Currency is calculated][CurrencyInternalDoc].
+In the **Products** table, the ' data is calculated automatically by our system based on the date that the data was last published. Internal staff can learn the [technical details of how DEA Currency is calculated][CurrencyInternalDoc].
 
 The 'Is current' data is not available in the **Additional products** table due to technical limitations.
 
