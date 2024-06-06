@@ -1,13 +1,13 @@
 # DEA Published Product Timeliness and Currency Report
 
-This report tracks the Timeliness and Currency of DEA's published products. **Timeliness** measures how often a product's data is published on time (where 100% means 'always on time'). **Currency** indicates whether the product currently has the expected data. In this guide, you will learn how to understand and analyse this report.
+This report tracks the Timeliness and Currency of DEA's published products. In this guide, you will learn how to understand and analyse this report.
 
-View the [DEA Published Product Timeliness and Currency Report][TimelinessReport].
+View the [DEA Published Product Timeliness and Currency Report][TimelinessReport]. Internal staff can also view the history of this data over several years and quarters: [DEA Published Product Timeliness and Currency Report - History][HistoryReport].
 
 :::{admonition} Bug: The report data doesn't load when opened via link
 :class: note
 
-There seems to be a Grafana bug that can cause the data not to load when you open the report via a link from another report. Please refresh the page, then the data should load normally. If you encounter this bug, you may see the "Public dashboard panel not found" error or the "No data" text.
+When you open a report by clicking a link from another report, the data may fail to load due to a Grafana bug. To load the data, you will need to refresh the page. If you encounter this bug, you may see the "Public dashboard panel not found" error or the "No data" text.
 :::
 
 :::{contents} In this guide
@@ -16,13 +16,16 @@ There seems to be a Grafana bug that can cause the data not to load when you ope
 :backlinks: none
 :::
 
-## View the reports
-
-The primary report is the [DEA Published Product Timeliness and Currency Report][TimelinessReport]. Internal staff can also view a secondary report containing the history of this data over several years and quarters: [DEA Published Product Timeliness and Currency Report - History][HistoryReport].
-
 ## Audience and purpose
 
 The report is designed to be used by both external and internal stakeholders. External auditors may use it to check that our product data is being published on time. Internally, we may use it to define targets that we aim to achieve each financial year. We also use it to gain valuable insights, such as to assess which products are being published reliably versus which products have had difficulties.
+
+## Key terms
+
+The key terms used in this report are defined as follows.
+
+* **Timeliness** &mdash; This measures how often a product's data is published on time (where 100% means 'always on time').
+* **Currency** &mdash; indicates whether the product currently has the expected data.
 
 ## Financial year
 
@@ -66,7 +69,7 @@ $100 - (\frac{d}{365.25} \times 100)$
 
 Where $d$ is the number of days overdue this financial year.
 
-So if the product has been overdue for 5 days throughout the entire financial year so far, the Timeliness will be 98.63%
+So if the product has been overdue for 5 days throughout the entire financial year so far, the Timeliness will be 98.63%.
 
 ## How Currency is calculated
 
