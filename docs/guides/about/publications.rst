@@ -14,6 +14,10 @@ Scientific articles, conference talks and other publications with Digital Earth 
 
 Byrne, G., Broomhall, M., Walsh, A., Thankappan, M., Hay, E., Li, F., McAtee, B., Garcia, R., Anstee, J., Kerrisk, G., Drayson, N., Barnetson, J., Samford, I., Denham, R., 2024. Validating Digital Earth Australia NBART for the Landsat 9 Underfly of Landsat 8. Remote Sensing, 16, p. 1233. http://dx.doi.org/10.3390/rs16071233
 
+Lymburner, L., Ticehurst, C., Adame, M. F., Sengupta, A., Kavehei, E. 2024. Seeing the floods through the trees: Using adaptive shortwave infrared thresholds to map inundation under wooded wetlands. Hydrological Processes. 38(6). e15174. https://doi.org/10.1002/hyp.15174
+
+Lu, S., Jones, E., Zhao, L., Sun, Y., Qin, K., Liu, J., Li, J., Abeysekara, P., Mueller, N., Oliver, S., O'Hehir, J., Peters, S. 2024. Onboard AI for Fire Smoke Detection Using Hyperspectral Imagery: An Emulation for the Upcoming Kanyini Hyperscout-2 Mission. IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing, 17, p. 9629-9640. https://doi.org/10.1109/JSTARS.2024.3394574
+
 Mann, J., Maddox, E., Shrestha, M., Irwin, J., Czapla-Myers, J., Gerace, A., Rehman, E., Raqueno, N., Coburn, C., Byrne, G. and Broomhall, M., 2024. Landsat 8 and 9 Underfly International Surface Reflectance Validation Collaboration. Remote Sensing, 16(9), p. 1492. https://www.mdpi.com/2072-4292/16/9/1492
 
 Thankappan, M., Christopherson, J., Cantrell, S., Ryan, R., Pagnutti, M., Bright, C., Naughton, D., Ruslander, K., Wang, L.W., Hudson, D. and Shaw, J., 2024. Concept of a Satellite Cross-Calibration Radiometer for In-Orbit Calibration of Commercial Optical Satellites. Remote Sensing, 16(8), p.1333. https://www.mdpi.com/2072-4292/16/8/1333
