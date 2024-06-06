@@ -54,17 +54,15 @@ The report contains two tables: **Products** and **Additional products**. The Pr
 In the **Products** table, Timeliness is calculated by an algorithm that works as follows.
 
 1. Find the age of the latest published data (in hours). This is calculated from the difference between the latest scene's acquisition date and the calendar time.
-    $$
-    age = acquisition\_date - calendar\_time
-    $$
-1. Each product has a 'business rule' that defines the maximum threshold for this age that we calculated. For instance, a product may have a business rule of '&lt;= 16 days'. This means that if the age is more than 16 days, then the data is overdue. We run this check every day and if the age is within the threshold, we assign 100% Timeliness for that day; whereas, if the age is above the threshold, we assign 0% for that day.
+
+    $age = acquisition\_date - calendar\_time$
+
+1. Each product has a 'business rule' that defines the maximum threshold for this age that we calculated. For instance, a product may have a business rule of $\leq 16\ days$. This means that if the age is more than 16 days, then the data is overdue. We run this check every day and if the age is within the threshold, we assign 100% Timeliness for that day; whereas, if the age is above the threshold, we assign 0% for that day.
 1. The Timeliness values of a span of multiple days are averaged to find the Timeliness for each financial year and the Timeliness for each financial quarter.
 
 In the **Additional products** table, Timeliness is calculated based on the number of days that the product has been overdue throughout the entire financial year. Our staff manually record the number of days  that it has been overdue. It uses the following algorithm.
 
-$$
-100 - (\frac{d}{365.25} \times 100)
-$$
+$100 - (\frac{d}{365.25} \times 100)$
 
 Where $d$ is the number of days overdue this financial year.
 
