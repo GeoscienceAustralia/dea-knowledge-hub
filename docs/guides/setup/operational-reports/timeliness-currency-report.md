@@ -70,7 +70,7 @@ For example, if the product has been overdue for 5 days, the Timeliness will be 
 
 ## Algorithm for Currency
 
-In the **Products** table, the ' data is calculated automatically by our system based on the date that the data was last published. Internal staff can learn the [technical details of how DEA Currency is calculated][CurrencyInternalDoc].
+In the **Products** table, the ' data is calculated automatically by our system based on the date that the data was last published. Internal staff can learn the [technical details of how DEA Currency is calculated][CurrencyInternalDoc]. In summary, the Currency is calculated using either of multiple methods &mdash; it either uses the Open Data Cube (ODC) data, an SQS queue subscribed to certain events, or is calculated from another statistic called Completeness.
 
 The 'Is current' data is not available in the **Additional products** table due to technical limitations.
 
@@ -82,4 +82,4 @@ The History report is password-protected and can only be accessed by some Geosci
 
 [TimelinessReport]: https://mgmt.sandbox.dea.ga.gov.au/public-dashboards/d22241dbfca54b1fa9f73938ef26e645?orgId=1
 [HistoryReport]: https://mgmt.sandbox.dea.ga.gov.au/d/c1674b20-8c8a-4d90-aef2-02796275cf2b/4e57919d-fc9d-59d7-9bd1-aa61d41bcb92?orgId=1
-[CurrencyInternalDoc]: https://docs.dev.dea.ga.gov.au/internal_services/reporting-systems/etls/currency.html#sqs-currency
+[CurrencyInternalDoc]: https://docs.dev.dea.ga.gov.au/internal_services/reporting-systems/etls/currency.html
