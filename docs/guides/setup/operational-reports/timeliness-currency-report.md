@@ -1,8 +1,6 @@
 # DEA Published Product Timeliness and Currency Report
 
-This report tracks the Timeliness and Currency of DEA's published products. In this guide, you will learn how to understand and analyse this report.
-
-View the [DEA Published Product Timeliness and Currency Report][TimelinessReport]. Internal staff can also view the history of this data over several years and quarters: [DEA Published Product Timeliness and Currency Report - History][HistoryReport].
+In this guide, you will learn how to understand and analyse the [DEA Published Product Timeliness and Currency Report][TimelinessReport]. You will also learn about the report containing the historical data (however this report is only available to internal stakeholders): [DEA Published Product Timeliness and Currency Report - History][HistoryReport].
 
 :::{admonition} Bug: The report data doesn't load when opened via link
 :class: note
@@ -18,18 +16,18 @@ When you open a report by clicking a link from another report, the data may fail
 
 ## Audience and purpose
 
-The report is designed to be used by both external and internal stakeholders. External auditors may use it to check that our product data is being published on time. Internally, we may use it to define targets that we aim to achieve each financial year. We also use it to gain valuable insights, such as to assess which products are being published reliably versus which products have had difficulties.
+The [Timeliness and Currency Report][TimelinessReport] is designed to be used by both external and internal stakeholders. External auditors can use it to check that our product data is being published on time. Internally, we may use it to define targets that we aim to achieve each financial year. We can also use it to gain insight on which products are being published reliably versus which products have encountered difficulties.
 
 ## Key terms
 
 The key terms used in this report are defined as follows.
 
-* **Timeliness** &mdash; This measures how often a product's data is published on time (where 100% means 'always on time').
-* **Currency** &mdash; indicates whether the product currently has the expected data.
+* **Timeliness** &mdash; A measure of how often a product's data is published on time. It is a value that ranges from 0% (meaning 'never on time') to 100% (meaning 'always on time').
+* **Currency** &mdash; A measure of whether the product currently has the expected data. This is indicated by the 'Is current' metric which can be either 'Yes' or 'No'.
 
 ## Financial year
 
-This report is based on the Financial Year rather than the Calendar Year. The Financial Year ('fin. year') is from 1 July to 30 June. The report also uses Financial Quarters. These are Q1 (1 Jul &ndash; 30 Sep), Q2 (1 Oct &ndash; 31 Dec), Q3 (1 Jan &ndash; 31 Mar), and Q4 (1 Apr &ndash; 30 Jun).
+This report is based on the Financial Year ('fin. year') which starts in 1 July and ends in 30 June. (It doesn't use the Calendar Year which is from 1 Jan to 31 Dec.) Furthermore, the report uses Financial Quarters &mdash; these are Q1 (1 Jul &ndash; 30 Sep), Q2 (1 Oct &ndash; 31 Dec), Q3 (1 Jan &ndash; 31 Mar), and Q4 (1 Apr &ndash; 30 Jun).
 
 ## Fields of the report
 
@@ -59,11 +57,13 @@ This report includes two tables: **Products** and **Additional products**. The P
 
 ## How Timeliness is calculated
 
-Timeliness is a value that ranges from 0% (meaning 'never on time') to 100% (meaning 'always on time').
+In the **Products** table, Timeliness is calculated by an algorithm that works as follows.
 
-In the **Products** table, it is calculated by ...................... TODO
+1. Calculate the age of the latest published data by finding the difference between the latest scene's acquisition date and the calendar time.
+1. If the age is within the threshold of a specified business rule, then the timeliness is 100% for this day. If not, then it is 0%.
+1. The Timeliness of multiple days are averaged across a financial year and across a financial quarter.
 
-In the **Additional products** table, it is calculated from the number of days that the product has been overdue throughout the entire financial year. It uses the following formula.
+In the **Additional products** table, Timeliness is calculated from the number of days that the product has been overdue throughout the entire financial year. It uses the following formula.
 
 $100 - (\frac{d}{365.25} \times 100)$
 
@@ -73,7 +73,7 @@ So if the product has been overdue for 5 days throughout the entire financial ye
 
 ## How Currency is calculated
 
-In the **Products** table, it is calculated automatically by our system based on the date that the data was last published. Internal staff can learn the [technical details of DEA Currency][CurrencyInternalDoc].
+In the **Products** table, the 'Is current' data is calculated automatically by our system based on the date that the data was last published. Internal staff can learn the [technical details of DEA Currency][CurrencyInternalDoc].
 
 The 'Is current' data is not available in the **Additional products** table.
 
