@@ -2,12 +2,6 @@
 
 In this guide, you will learn how to understand and analyse the [DEA Published Product Timeliness and Currency Report][TimelinessReport]. You will also learn about the report containing the historical data (however this report is only available to internal stakeholders): [DEA Published Product Timeliness and Currency Report - History][HistoryReport].
 
-:::{admonition} Bug: The report data doesn't load when opened via link
-:class: note
-
-When you open a report by clicking a link from another report, the data may fail to load due to a Grafana bug. To load the data, you will need to refresh the page. If you encounter this bug, you may see the "Public dashboard panel not found" error or the "No data" text.
-:::
-
 :::{contents} In this guide
 :depth: 1
 :local:
