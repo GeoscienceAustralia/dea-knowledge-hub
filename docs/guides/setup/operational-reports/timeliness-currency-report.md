@@ -57,8 +57,8 @@ In the **Products** table, Timeliness is calculated by an algorithm that works a
     $$
     age = acquisition\_date - calendar\_time
     $$
-1. Each product has a 'business rule' that defines the maximum threshold for this age. For instance, a product may have a business rule of '&lt;= 16 days'. This means that if the age is more than 16 days, then the data is overdue. We run this check every day and if the age is within the threshold, we assign 100% Timeliness for that day; whereas, if the age is above the threshold, we assign 0% for that day.
-1. The Timeliness values of a span of multiple days are averaged to find the Timeliness for a the financial year and the Timeliness for a financial quarter.
+1. Each product has a 'business rule' that defines the maximum threshold for this age that we calculated. For instance, a product may have a business rule of '&lt;= 16 days'. This means that if the age is more than 16 days, then the data is overdue. We run this check every day and if the age is within the threshold, we assign 100% Timeliness for that day; whereas, if the age is above the threshold, we assign 0% for that day.
+1. The Timeliness values of a span of multiple days are averaged to find the Timeliness for each financial year and the Timeliness for each financial quarter.
 
 In the **Additional products** table, Timeliness is calculated based on the number of days that the product has been overdue throughout the entire financial year. Our staff manually record the number of days  that it has been overdue. It uses the following algorithm.
 
@@ -75,6 +75,12 @@ For example, if the product has been overdue for 5 days, the Timeliness will be 
 In the **Products** table, the ' data is calculated automatically by our system based on the date that the data was last published. Internal staff can learn the [technical details of how DEA Currency is calculated][CurrencyInternalDoc].
 
 The 'Is current' data is not available in the **Additional products** table due to technical limitations.
+
+## History report
+
+The [DEA Published Product Timeliness and Currency Report - History][TimelinessReport] report provides a history of the data from the Timeliness and Currency report since 1 July 2024 (which is the time when we began tracking this data). This report uses the same data as the Timeliness and Currency report but it includes the entire history of data. However, note that it doesn't include the data from the Additional products table of this report, due to technical limitations.
+
+The History report is password-protected and can only be accessed by some Geoscience Australia internal stakeholders.
 
 [TimelinessReport]: https://mgmt.sandbox.dea.ga.gov.au/public-dashboards/d22241dbfca54b1fa9f73938ef26e645?orgId=1
 [HistoryReport]: https://mgmt.sandbox.dea.ga.gov.au/d/c1674b20-8c8a-4d90-aef2-02796275cf2b/4e57919d-fc9d-59d7-9bd1-aa61d41bcb92?orgId=1
