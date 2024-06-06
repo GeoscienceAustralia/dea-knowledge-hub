@@ -25,31 +25,31 @@ The key terms used in this report are defined as follows.
 
 ## Fields of the report
 
-In the [Timeliness and Currency report][TimelinessReport], the following fields contain useful information.
+Here are explanations of the fields used in this report.
 
 * **Update frequency** &mdash; How often the product data is expected to be published.
 * **Last updated** &mdash; The date of the last time that the product data was published.
-* **Is current?** &mdash; Whether the product currently has the expected data. (This represents 'Currency'.)
-* **Timeliness this fin. year** &mdash; The Timeliness of the product during this financial year, to date. Note that the average of these values for all products in the report is displayed at the top of the report.
+* **Is current?** &mdash; Whether the product currently has the expected data. (This is based on the 'Currency'.)
+* **Timeliness this fin. year** &mdash; The Timeliness of the product during this financial year, up to the current date. This metric is listed for each product and also the average across all the products is displayed at the top of the report.
 * **Timeliness previous fin. year** &mdash; The Timeliness of the product during the previous financial year.
-* **Timeliness this fin. quarter** &mdash; The Timeliness of the product during this financial quarter, to date.
+* **Timeliness this fin. quarter** &mdash; The Timeliness of the product during this financial quarter, up to the current date.
 * **Timeliness previous fin. quarter** &mdash; The Timeliness of the product during the previous financial quarter.
 
 ## Which products are included?
 
-Only products that meet the following criteria are included in this report. This is so that the Timeliness and Currency statistics are meaningful for all the products in this report.
+You will notice that not all products are included in this report. This is because the Timeliness and Currency statistics can only be meaningfully applied to certain products. Only products that meet the following criteria are included in the report.
 
-* **Published product** &mdash; Not a 'provisional product'.
-* **Latest version** &mdash; Not an old version.
-* **Regularly updated** &mdash; Not a product with 'No updates planned'.
+* It is a **published product** &mdash; Not a 'provisional product'.
+* It is the **latest version** &mdash; Not an old version of the product.
+* It is **regularly updated** &mdash; Not a product with 'No updates planned'.
 
-Therefore, if you can't find a certain product in the report, it is likely that it doesn't meet one of those criteria.
+Hence, if you cannot find a certain product in this report, it is likely because it doesn't meet those criteria.
 
-## The Products and Additional products tables
+## Products vs Additional products
 
-This report includes two tables: **Products** and **Additional products**. The Products table is for products that are tracked automatically by our system and this table contains the most comprehensive data. The Additional products table is for products that we track manually and this table contains only the essential data.
+The report contains two tables: **Products** and **Additional products**. The Products table contains most products and is comprehensive and up to date. Alternately, the Additional products table is for products that cannot be tracked automatically by our system due to technical limitations. Therefore, this table contains only basic data and it may be slightly delayed. This is because the Additional products table is manually updated by our staff.
 
-## How Timeliness is calculated
+## Algorithm for Timeliness
 
 In the **Products** table, Timeliness is calculated by an algorithm that works as follows.
 
@@ -57,19 +57,32 @@ In the **Products** table, Timeliness is calculated by an algorithm that works a
 1. If the age is within the threshold of a specified business rule, then the timeliness is 100% for this day. If not, then it is 0%.
 1. The Timeliness of multiple days are averaged across a financial year and across a financial quarter.
 
+
+
+
+
+
+
+
+
+
+
+
 In the **Additional products** table, Timeliness is calculated from the number of days that the product has been overdue throughout the entire financial year. It uses the following formula.
 
-$100 - (\frac{d}{365.25} \times 100)$
+$$
+100 - (\frac{d}{365.25} \times 100)
+$$
 
 Where $d$ is the number of days overdue this financial year.
 
 So if the product has been overdue for 5 days throughout the entire financial year so far, the Timeliness will be 98.63%.
 
-## How Currency is calculated
+## Algorithm for Currency
 
-In the **Products** table, the 'Is current' data is calculated automatically by our system based on the date that the data was last published. Internal staff can learn the [technical details of DEA Currency][CurrencyInternalDoc].
+In the **Products** table, the 'Is current' data is calculated automatically by our system based on the date that the data was last published. Internal staff can learn the [technical details of how DEA Currency is calculated][CurrencyInternalDoc].
 
-The 'Is current' data is not available in the **Additional products** table.
+The 'Is current' data is not available in the **Additional products** table due to technical limitations.
 
 [TimelinessReport]: https://mgmt.sandbox.dea.ga.gov.au/public-dashboards/d22241dbfca54b1fa9f73938ef26e645?orgId=1
 [HistoryReport]: https://mgmt.sandbox.dea.ga.gov.au/d/c1674b20-8c8a-4d90-aef2-02796275cf2b/4e57919d-fc9d-59d7-9bd1-aa61d41bcb92?orgId=1
