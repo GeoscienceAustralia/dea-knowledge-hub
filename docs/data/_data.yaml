@@ -19,4 +19,4 @@ pages:
     image: /_files/themes/hazards.*
   - name: External datasets
     link: /data/theme/external/
-    image: /_files/themes/baseline-satellite-data.*
+    image: /_files/themes/external.*
