@@ -26,7 +26,7 @@
 {% set code_sample_default_name = "Code sample" %}
 
 {% set has_access_data = valid_maps or valid_data or valid_explorers or valid_web_services or valid_code_samples or valid_custom %}
-{% set has_key_details = (data.license.name and data.license.link) or data.doi %}
+{% set has_key_details = (data.licence.name and data.licence.link) or data.doi %}
 
 {% set page_title = data.title if is_latest_version else data.version + ": " + data.title %}
 
