@@ -17,7 +17,8 @@ time_span:
   end: 2023
 update_frequency: null
 next_update: null
-product_ids: ga_ausbathytopo250m_2023
+product_ids:
+  - ga_ausbathytopo250m_2023
 
 doi: 10.26186/148758
 ecat: "148758"
