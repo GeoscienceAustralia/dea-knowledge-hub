@@ -123,8 +123,8 @@
           .. grid:: 2 2 3 5
              :gutter: 3
 
-             {%- if data.dataset_website %}
-             {%- if data.dataset_website.link %}
+             {% if data.dataset_website %}
+             {% if data.dataset_website.link %}
              .. grid-item-card:: :fas:`arrow-up-right-from-square`
                 :link: {{ data.dataset_website.link }}
                 :link-alt: The website of the external dataset.
