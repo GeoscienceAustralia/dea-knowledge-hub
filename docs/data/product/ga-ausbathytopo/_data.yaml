@@ -38,6 +38,9 @@ tags:
 
 # Access
 
+dataset_website:
+  link: https://example.com/
+
 maps: null
 
 explorers:

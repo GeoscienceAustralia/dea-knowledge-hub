@@ -88,6 +88,12 @@
    
       This dataset is developed by an external party, and is not a DEA product.
 
+      {%- if data.dataset_website %}
+      {%- if data.dataset_website.link %}
+      `View the external dataset website <{{ data.dataset_website.link }}>`_
+      {%- endif %}
+      {%- endif %}
+
 {% if not is_latest_version %}
 {% endif %}
 
@@ -116,6 +122,17 @@
 
           .. grid:: 2 2 3 5
              :gutter: 3
+
+             {%- if data.dataset_website %}
+             {%- if data.dataset_website.link %}
+             `View the external dataset website <{{ data.dataset_website.link }}>`_
+             .. grid-item-card:: :fas:`arrow-up-right-from-square`
+                :link: {{ data.dataset_website.link }}
+                :link-alt: The website of the external dataset.
+
+                View the external dataset website
+             {%- endif %}
+             {%- endif %}
 
              {% for item in valid_maps %}
              .. grid-item-card:: :fas:`map-location-dot`
