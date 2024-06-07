@@ -2,6 +2,6 @@ title: External data
 description: Supporting datasets provided to assist with analysis of DEA data.
 
 pages:
-  - name: GA AusBathyTopo Grid
+  - name: GA AusBathyTopo 250m Grid
     link: /data/product/ga-ausbathytopo/
     image: /_files/external-datasets/ga_ausbathytopo250m_2023.thumbnail.jpg
