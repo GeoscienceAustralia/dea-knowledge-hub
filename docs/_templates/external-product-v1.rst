@@ -26,7 +26,7 @@
 {% set code_sample_default_name = "Code sample" %}
 
 {% set has_access_data = valid_maps or valid_data or valid_explorers or valid_web_services or valid_code_samples or valid_custom %}
-{% set has_key_details = (data.licence.name and data.licence.link) or data.doi %}
+{% set has_key_details = (data.licence.name and data.licence.link) or data.doi or data.ecat %}
 
 {% set page_title = data.title if is_latest_version else data.version + ": " + data.title %}
 
@@ -191,9 +191,15 @@
        .. list-table::
           :name: key-details-table
 
-          {% if data.doi %}
+          {%- if data.doi and data.ecat %}
+          * - **DOI**
+            - `{{ data.doi }} <https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/{{ data.ecat }}>`_
+          {% elif data.doi %}
           * - **DOI**
             - `{{ data.doi }} <https://doi.org/{{ data.doi }}>`_
+          {% elif data.ecat %}
+          * - **Persistent ID**
+            - `{{ data.ecat }} <https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/{{ data.ecat }}>`_
           {%- endif %}
           {% if data.licence %}
           {% if data.licence.name and data.licence.link %}
