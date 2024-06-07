@@ -69,4 +69,4 @@ old_versions: null
 
 enable_overview: true
 enable_access: true
-enable_credits: true
+enable_details: true

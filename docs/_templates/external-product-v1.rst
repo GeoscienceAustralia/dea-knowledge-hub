@@ -125,7 +125,6 @@
 
              {%- if data.dataset_website %}
              {%- if data.dataset_website.link %}
-             `View the external dataset website <{{ data.dataset_website.link }}>`_
              .. grid-item-card:: :fas:`arrow-up-right-from-square`
                 :link: {{ data.dataset_website.link }}
                 :link-alt: The website of the external dataset.
@@ -244,10 +243,19 @@
        .. .. tags:: {{ valid_tags | join(", ") }}
        .. {%- endif %}
 
-       .. include:: _overview_2.md
-          :parser: myst_parser.sphinx_
     {% endif %}
 
+    {% if data.enable_details %}
+    .. tab-item:: Details
+       :name: details
+
+       .. raw:: html
+
+          <div class="product-tab-table-of-contents"></div>
+
+       .. include:: _details.md
+          :parser: myst_parser.sphinx_
+    {% endif %}
 
     {% if data.enable_access %}
     .. tab-item:: Access
