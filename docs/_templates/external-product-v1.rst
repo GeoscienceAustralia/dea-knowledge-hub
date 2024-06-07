@@ -88,11 +88,11 @@
    
       This dataset is developed by an external party, and is not a DEA product.
 
-      {%- if data.dataset_website %}
-      {%- if data.dataset_website.link %}
+      {% if data.dataset_website %}
+      {% if data.dataset_website.link %}
       `{{ data.dataset_website.custom_name or "View the external dataset website" }} <{{ data.dataset_website.link }}>`_
-      {%- endif %}
-      {%- endif %}
+      {% endif %}
+      {% endif %}
 
 {% if not is_latest_version %}
 {% endif %}
@@ -123,16 +123,16 @@
           .. grid:: 2 2 3 5
              :gutter: 3
 
-             {%- if data.dataset_website %}
-             {%- if data.dataset_website.link %}
+             {% if data.dataset_website %}
+             {% if data.dataset_website.link %}
              `View the external dataset website <{{ data.dataset_website.link }}>`_
              .. grid-item-card:: :fas:`arrow-up-right-from-square`
                 :link: {{ data.dataset_website.link }}
                 :link-alt: The website of the external dataset.
 
                 {{ data.dataset_website.custom_name or "View the external dataset website" }}
-             {%- endif %}
-             {%- endif %}
+             {% endif %}
+             {% endif %}
 
              {% for item in valid_maps %}
              .. grid-item-card:: :fas:`map-location-dot`
@@ -192,10 +192,7 @@
        .. list-table::
           :name: key-details-table
 
-          {%- if data.doi and data.ecat %}
-          * - **DOI**
-            - `{{ data.doi }} <https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/{{ data.ecat }}>`_
-          {% elif data.doi %}
+          {% if data.doi %}
           * - **DOI**
             - `{{ data.doi }} <https://doi.org/{{ data.doi }}>`_
           {%- endif %}
@@ -203,8 +200,8 @@
           {% if data.licence.name and data.licence.link %}
           * - **Licence**
             - `{{ data.licence.name }} <{{ data.licence.link }}>`_
-          {%- endif %}
-          {%- endif %}
+          {% endif %}
+          {% endif %}
        {%- endif %}
 
        {% if data.citations %}
