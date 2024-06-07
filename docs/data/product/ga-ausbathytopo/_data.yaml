@@ -40,6 +40,7 @@ tags:
 
 dataset_website:
   link: https://example.com/
+  custom_name: null
 
 maps: null
 

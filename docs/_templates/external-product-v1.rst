@@ -90,7 +90,7 @@
 
       {%- if data.dataset_website %}
       {%- if data.dataset_website.link %}
-      `View the external dataset website <{{ data.dataset_website.link }}>`_
+      `{{ data.dataset_website.custom_name or "View the external dataset website" }} <{{ data.dataset_website.link }}>`_
       {%- endif %}
       {%- endif %}
 
@@ -130,7 +130,7 @@
                 :link: {{ data.dataset_website.link }}
                 :link-alt: The website of the external dataset.
 
-                View the external dataset website
+                {{ data.dataset_website.custom_name or "View the external dataset website" }}
              {%- endif %}
              {%- endif %}
 
