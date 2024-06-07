@@ -2,6 +2,6 @@ title: External data
 description: Supporting datasets provided to assist with analysis of DEA data.
 
 pages:
-  - name: DEA Hotspots
-    link: /data/product/dea-hotspots/
-    image: /_files/cmi/hotspots.jpg
+  - name: GA AusBathyTopo Grid
+    link: /data/product/ga-ausbathytopo/
+    image: /_files/external-datasets/ga_ausbathytopo250m_2023.thumbnail.jpg
