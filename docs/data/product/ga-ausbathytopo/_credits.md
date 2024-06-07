@@ -1,23 +1,17 @@
 ## Acknowledgments
 
-The authors would like to sincerely thank the following organisations and individuals for providing validation data and valuable feedback on preliminary versions of this product: 
-* Centre for Integrative Ecology, Deakin University 
-* Griffith Centre for Coastal Management, Griffith University 
-* Water Research Laboratory, University of New South Wales
-* Victorian Coastal Monitoring Program
-* TASMARC Project, Antarctic Climate &amp; Ecosystems Cooperative Research Centre 
-* City of Gold Coast, Queensland 
-* Sunshine Coast Council, Queensland 
-* Western Australia Department of Transport
-* South Australia Department of Environment and Water
-* Queensland Department of Environment and Science
-* NSW Department of Planning, Industry and Environment
-* Andrew Short, University of Sydney
-* Colin Woodroffe, University of Wollongong
+We acknowledge the use of the CSIRO Marine National Facility (https://ror.org/01mae9353 ) in undertaking this research. The datasets used were collected by the Marine National Facility on 43 voyages.
 
-This research was undertaken with the assistance of resources from the National Computational Infrastructure (NCI), which is supported by the Australian Government.
+AUSTRALIAN HYDROGRAPHIC OFFICE NOTICE: Not to be used for navigation. This aus250 DEM product incorporates source bathymetry data reproduced under licence by permission of the Australian Hydrographic Office © Commonwealth of Australia 2009-2023.
 
-Tidal modelling is provided by the FES2014 global tidal model, implemented using the pyTMD Python package. FES2014 was produced by NOVELTIS, LEGOS, CLS Space Oceanography Division and CNES. It is distributed by AVISO, with support from CNES ([http://www.aviso.altimetry.fr/](http://www.aviso.altimetry.fr/)).
+GEOSCIENCE AUSTRALIA NOTICE: This aus250 DEM product incorporates data which are © Commonwealth of Australia (Geoscience Australia). The Commonwealth gives no warranty regarding the data's accuracy, completeness, currency or suitability for any particular purpose.
+
+CSIRO ACKNOWLEDGEMENT: We acknowledge the use of the CSIRO Marine National Facility (https://ror.org/01mae9353 ) in undertaking this research. The datasets used were collected by the Marine National Facility on the following 43 voyages:
+• Bioview;
+• IN2015_C01; IN2015_T01; IN2015_T02; IN2016_E02; IN2016_T02; IN2016_T02; IN2016_V06; IN2016_V06; IN2017_C01; IN2017_T01; IN2017_T01; IN2017_V03; IN2017_V03; IN2018_T01; IN2018_V03; IN2018_V04; IN2019_E01; IN2019_E01; IN2019_T02; IN2019_T02; IN2019_V04; IN2019_V04; IN2019_V05; IN2021_T01; IN2021_T01; IN2022_T01; IN2022_T01;
+• SS032010; SS052007; SS052012; SS062008; SS2007_T04; SS2007_T06; SS2008_T02; SS2008_V09; SS2009_T02; SS2012_T01; SS2012_V01; SS2013_T04
+• SST062012;
+• TM2012_V01; TM2014_V01
 
 ## License and copyright
 
