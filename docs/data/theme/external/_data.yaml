@@ -1,0 +1,7 @@
+title: External data
+description: Supporting datasets provided to assist with analysis of DEA data.
+
+pages:
+  - name: DEA Hotspots
+    link: /data/product/dea-hotspots/
+    image: /_files/cmi/hotspots.jpg
