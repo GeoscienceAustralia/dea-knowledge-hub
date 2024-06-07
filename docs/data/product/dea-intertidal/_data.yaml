@@ -17,7 +17,8 @@ time_span:
   end: 2022
 update_frequency: Yearly
 next_update: null
-product_ids: null
+product_ids:
+  - ga_s2ls_intertidal_cyear_3
 
 parent_products:
   name: Sentinel-2A and -2B and Landsat 7, 8, and 9 NBART and Observational Attributes 
