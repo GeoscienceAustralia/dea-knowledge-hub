@@ -316,18 +316,6 @@
           :parser: myst_parser.sphinx_
     {% endif %}
 
-    {% if data.enable_credits %}
-    .. tab-item:: Credits
-       :name: credits
-
-       .. raw:: html
-
-          <div class="product-tab-table-of-contents"></div>
-
-       .. include:: _credits.md
-          :parser: myst_parser.sphinx_
-    {% endif %}
-
 .. raw:: html
 
    <script type="text/javascript" src="/_static/scripts/access-cards-tooltips.js" /></script>
