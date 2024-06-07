@@ -85,7 +85,7 @@
    .. admonition:: External product
       :class: note
    
-      This data product is provided by an external party (it's not provided by DEA).
+      This dataset is developed by an external party, and is not a DEA product.
 
 {% if not is_latest_version %}
 {% endif %}
