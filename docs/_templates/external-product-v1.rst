@@ -125,7 +125,6 @@
 
              {% if data.dataset_website %}
              {% if data.dataset_website.link %}
-             `View the external dataset website <{{ data.dataset_website.link }}>`_
              .. grid-item-card:: :fas:`arrow-up-right-from-square`
                 :link: {{ data.dataset_website.link }}
                 :link-alt: The website of the external dataset.
