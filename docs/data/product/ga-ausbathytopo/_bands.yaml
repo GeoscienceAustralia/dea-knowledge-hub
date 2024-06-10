@@ -19,11 +19,11 @@ products:
       type: int16
       description: Lorem ipsum dolor sit amet.
 
-  - name: nbart_blue
-    aliases: [nbart_band02, blue]
-    resolution: 30 m
-    crs: Multiple (local UTM)
-    nodata: -999
-    type: int16
-    description: Lorem ipsum dolor sit amet.
+    - name: nbart_blue
+      aliases: [nbart_band02, blue]
+      resolution: 30 m
+      crs: Multiple (local UTM)
+      nodata: -999
+      type: int16
+      description: Lorem ipsum dolor sit amet.
 
