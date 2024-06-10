@@ -1,0 +1,29 @@
+products:
+  - name: ga_ausbathytopo250m_2023
+    bands:
+    - name: height_depth
+      aliases: []
+      resolution: 0.0025 degrees
+      crs: "EPSG:4326"
+      nodata: -32767
+      type: float32
+      description: "Height/depth relative to Mean Sea Level"
+
+  - name: ga_ls8c_ard_3
+    bands:
+    - name: nbart_coastal_aerosol
+      aliases: [nbart_band01, coastal_aerosol]
+      resolution: 30 m
+      crs: Multiple (local UTM)
+      nodata: -999
+      type: int16
+      description: Lorem ipsum dolor sit amet.
+
+  - name: nbart_blue
+    aliases: [nbart_band02, blue]
+    resolution: 30 m
+    crs: Multiple (local UTM)
+    nodata: -999
+    type: int16
+    description: Lorem ipsum dolor sit amet.
+
