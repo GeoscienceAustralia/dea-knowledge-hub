@@ -195,22 +195,16 @@
        .. list-table::
           :name: key-details-table
 
-          {%- if data.doi and data.ecat %}
+          {% if data.doi and data.ecat %}
           * - **DOI**
             - `{{ data.doi }} <https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/{{ data.ecat }}>`_
-          {% elif data.doi %}
+          {%- elif data.doi %}
           * - **DOI**
             - `{{ data.doi }} <https://doi.org/{{ data.doi }}>`_
-          {% elif data.ecat %}
+          {%- elif data.ecat %}
           * - **Persistent ID**
             - `{{ data.ecat }} <https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/{{ data.ecat }}>`_
           {%- endif %}
-          {% if data.licence %}
-          {% if data.licence.name and data.licence.link %}
-          * - **Licence**
-            - `{{ data.licence.name }} <{{ data.licence.link }}>`_
-          {% endif %}
-          {% endif %}
        {%- endif %}
 
        {% if data.citations %}
