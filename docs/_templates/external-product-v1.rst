@@ -259,7 +259,7 @@
 
           <div class="product-tab-table-of-contents"></div>
 
-       {% for product in band.products %}
+       {% for product in bands.products %}
        .. list-table::
           :header-rows: 1
 
