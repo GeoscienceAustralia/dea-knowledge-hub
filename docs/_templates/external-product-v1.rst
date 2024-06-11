@@ -1,3 +1,4 @@
+{% set data = load('_data.yaml') %}
 {% set bands = load('_bands.yaml') %}
 
 {% set is_latest_version = data.is_latest_version %}

@@ -1,2 +1,2 @@
-.. datatemplate:yaml:: _data.yaml
+.. datatemplate:nodata::
    :template: external-product-v1.rst
