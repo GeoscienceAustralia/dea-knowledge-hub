@@ -27,3 +27,163 @@ products:
       type: int16
       description: Lorem ipsum dolor sit amet.
 
+    - name: nbart_green 
+      aliases: [nbart_band03, green] 
+      resolution: 30 m 
+      crs: Multiple (local UTM) 
+      nodata: -999 
+      type: int16 
+      description: null
+ 
+    - name: nbart_red 
+      aliases: [nbart_band04, red] 
+      resolution: 30 m 
+      crs: Multiple (local UTM) 
+      nodata: -999 
+      type: int16 
+      description: null
+
+    - name: nbart_nir 
+      aliases: [nbart_band05, nir, nbart_common_nir] 
+      resolution: 30 m 
+      crs: Multiple (local UTM) 
+      nodata: -999 
+      type: int16 
+      description: null
+
+    - name: nbart_swir_1 
+      aliases: [nbart_band06, swir_1, nbart_common_swir_1, sw...]
+      resolution: 30 m 
+      crs: Multiple (local UTM) 
+      nodata: -999 
+      type: int16 
+      description: null
+
+    - name: nbart_swir_2 
+      aliases: [nbart_band07, swir_2, nbart_common_swir_2, sw...]
+      resolution: 30 m 
+      crs: Multiple (local UTM) 
+      nodata: -999 
+      type: int16 
+      description: null
+
+    - name: nbart_panchromatic 
+      aliases: [nbart_band08, panchromatic] 
+      resolution: 15 m 
+      crs: Multiple (local UTM) 
+      nodata: -999 
+      type: int16 
+      description: null
+
+    - name: oa_fmask
+      aliases: [fmask] 
+      resolution: 30 m 
+      crs: Multiple (local UTM) 
+      nodata: 0 
+      type: uint8 
+      des: null
+
+    - name: oa_nbart_contiguity 
+      aliases: [nbart_contiguity] 
+      resolution: null 
+      crs: Multiple (local UTM) 
+      nodata: 255 
+      type: uint8 
+      description: null
+
+    - name: oa_azimuthal_exiting 
+      aliases: [azimuthal_exiting] 
+      resolution: null 
+      crs: Multiple (local UTM) 
+      nodata: NaN 
+      type: float32 
+      description: null
+
+    - name: oa_azimuthal_incident 
+      aliases: [azimuthal_incident] 
+      resolution: null 
+      crs: Multiple (local UTM) 
+      nodata: NaN 
+      type: float32 
+      description: null
+
+    - name: oa_combined_terrain_shadow 
+      aliases: [combined_terrain_shadow] 
+      resolution: null 
+      crs: Multiple (local UTM) 
+      nodata: 255 
+      type: uint8 
+      description: null
+
+    - name: oa_exiting_angle 
+      aliases: [exiting_angle] 
+      resolution: null 
+      crs: Multiple (local UTM) 
+      nodata: NaN 
+      type: float32 
+      description: null
+
+    - name: oa_incident_angle 
+      aliases: [incident_angle] 
+      resolution: null 
+      crs: Multiple (local UTM) 
+      nodata: NaN 
+      type: float32 
+      description: null
+
+    - name: oa_relative_azimuth 
+      aliases: [relative_azimuth] 
+      resolution: null 
+      crs: Multiple (local UTM) 
+      nodata: NaN 
+      type: float32 
+      description: null
+
+    - name: oa_relative_slope 
+      aliases: [relative_slope] 
+      resolution: null 
+      crs: Multiple (local UTM) 
+      nodata: NaN 
+      type: float32 
+      description: null
+
+    - name: oa_satellite_azimuth 
+      aliases: [satellite_azimuth] 
+      resolution: null 
+      crs: Multiple (local UTM) 
+      nodata: NaN 
+      type: float32 
+      description: null
+
+    - name: oa_satellite_view 
+      aliases: [satellite_view] 
+      resolution: null 
+      crs: Multiple (local UTM) 
+      nodata: NaN 
+      type: float32 
+      description: null
+
+    - name: oa_solar_azimuth 
+      aliases: [solar_azimuth] 
+      resolution: null 
+      crs: Multiple (local UTM) 
+      nodata: NaN 
+      type: float32 
+      description: null
+
+    - name: oa_solar_zenith 
+      aliases: [solar_zenith] 
+      resolution: null 
+      crs: Multiple (local UTM) 
+      nodata: NaN 
+      type: float32 
+      description: null
+
+    - name: oa_time_delta 
+      aliases: [time_delta] 
+      resolution: null 
+      crs: Multiple (local UTM) 
+      nodata: NaN 
+      type: float32 
+      description: null
+

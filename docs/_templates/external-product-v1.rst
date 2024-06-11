@@ -259,7 +259,14 @@
 
           <div class="product-tab-table-of-contents"></div>
 
+       .. rubric:: Band specifications
+          :name: bands
+          :class: h2
+
        {% for product in bands.products %}
+       .. rubric:: {{ product.name }}
+          :class: h3
+
        .. list-table::
           :header-rows: 1
 
@@ -268,7 +275,7 @@
             - Resolution
             - CRS
             - Nodata
-            - Data type
+            - Type
             - Description
           {% for band in product.bands %}
           * - {{ band.name }}
