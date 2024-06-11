@@ -1,3 +1,5 @@
+{% set bands = load('_bands.yaml') %}
+
 {% set is_latest_version = data.is_latest_version %}
 
 {% set valid_maps = data.maps | selectattr("link",  "!=", None) | list %}
@@ -255,6 +257,8 @@
        .. raw:: html
 
           <div class="product-tab-table-of-contents"></div>
+
+       {{ bands }}
 
        .. include:: _details.md
           :parser: myst_parser.sphinx_
