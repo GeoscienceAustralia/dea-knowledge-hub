@@ -264,7 +264,7 @@
           :name: bands
           :class: h2
 
-       Lorem ipsum dolor sit amet.
+       These are the specifications of the bands used in this product.
 
        {% for product in valid_product_bands %}
        .. dropdown:: {{ product.name }}
