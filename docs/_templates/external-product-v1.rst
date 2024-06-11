@@ -15,6 +15,7 @@
 {% set valid_product_ids = data.product_ids | select("!=", None) | list %}
 {% set valid_custom_citations = data.custom_citations | select("!=", None) | list %}
 {% set valid_tags = data.tags | select("!=", None) | list %}
+{% set valid_product_bands = bands.products | selectattr("name",  "!=", None) | selectattr("bands",  "!=", None) | list %}
 
 {% set map_label = "See it on a map" %}
 {% set explorer_label = "Explore data availability" %}
@@ -262,6 +263,10 @@
        .. rubric:: Band specifications
           :name: bands
           :class: h2
+
+       Lorem ipsum dolor sit amet.
+
+       {{ valid_product_bands }}
 
        {% for product in bands.products %}
        .. dropdown:: {{ product.name }}
