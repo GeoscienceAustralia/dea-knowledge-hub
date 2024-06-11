@@ -259,7 +259,27 @@
 
           <div class="product-tab-table-of-contents"></div>
 
-       {{ bands }}
+       {% for product in band.products %}
+       .. list-table::
+          :header-rows: 1
+
+          * - Band name
+            - Aliases
+            - Resolution
+            - CRS
+            - Nodata
+            - Data type
+            - Description
+          {% for band in product.bands %}
+          * - {{ band.name }}
+            - {{ band.aliases|join(', ') }}
+            - {{ band.resolution }}
+            - {{ band.crs }}
+            - {{ band.nodata }}
+            - {{ band.type }}
+            - {{ band.description }}
+          {% endfor %}
+       {% endfor %}
 
        .. include:: _details.md
           :parser: myst_parser.sphinx_
