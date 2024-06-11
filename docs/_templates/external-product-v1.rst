@@ -264,28 +264,27 @@
           :class: h2
 
        {% for product in bands.products %}
-       .. rubric:: {{ product.name }}
-          :class: h3
+       .. dropdown:: {{ product.name }}
 
-       .. list-table::
-          :header-rows: 1
+          .. list-table::
+             :header-rows: 1
 
-          * - Band name
-            - Aliases
-            - Resolution
-            - CRS
-            - Nodata
-            - Type
-            - Description
-          {% for band in product.bands %}
-          * - {{ band.name }}
-            - {{ band.aliases|join(', ') }}
-            - {{ band.resolution }}
-            - {{ band.crs }}
-            - {{ band.nodata }}
-            - {{ band.type }}
-            - {{ band.description }}
-          {% endfor %}
+             * - Band name
+               - Aliases
+               - Resolution
+               - CRS
+               - Nodata
+               - Type
+               - Description
+             {% for band in product.bands %}
+             * - {{ band.name }}
+               - {{ band.aliases|join(', ') }}
+               - {{ band.resolution }}
+               - {{ band.crs }}
+               - {{ band.nodata }}
+               - {{ band.type }}
+               - {{ band.description }}
+             {% endfor %}
        {% endfor %}
 
        .. include:: _details.md
