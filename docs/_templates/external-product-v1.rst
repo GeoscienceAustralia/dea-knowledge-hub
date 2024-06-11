@@ -266,10 +266,10 @@
 
        Lorem ipsum dolor sit amet.
 
-       {{ valid_product_bands }}
-
-       {% for product in bands.products %}
+       {% for product in valid_product_bands %}
        .. dropdown:: {{ product.name }}
+
+          {% set valid_bands = product.bands | selectattr("name",  "!=", None) | list %}
 
           .. list-table::
              :header-rows: 1
@@ -281,7 +281,7 @@
                - Nodata
                - Type
                - Description
-             {% for band in product.bands %}
+             {% for band in valid_bands %}
              * - {{ band.name }}
                - {{ band.aliases|join(', ') }}
                - {{ band.resolution }}
