@@ -208,25 +208,12 @@
           * - **Persistent ID**
             - `{{ Data.ecat }} <https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/{{ Data.ecat }}>`_
           {%- endif %}
-
-       .. list-table::
-
-          {% if Data.doi and Data.ecat %}
-          * - **DOI**
-            - `{{ Data.doi }} <https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/{{ Data.ecat }}>`_
-          {%- elif Data.doi %}
-          * - **DOI**
-            - `{{ Data.doi }} <https://doi.org/{{ Data.doi }}>`_
-          {%- elif Data.ecat %}
-          * - **Persistent ID**
-            - `{{ Data.ecat }} <https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/{{ Data.ecat }}>`_
+          {%- if Data.licence %}
+          {%- if Data.licence.name and Data.licence.link %}
+          * - **Licence**
+            - `{{ Data.licence.name }} <{{ Data.licence.link }}>`_
           {%- endif %}
-          .. {%- if Data.licence %}
-          .. {%- if Data.licence.name and Data.licence.link %}
-          .. * - **Licence**
-          ..   - `{{ Data.licence.name }} <{{ Data.licence.link }}>`_
-          .. {%- endif %}
-          .. {%- endif %}
+          {%- endif %}
        {%- endif %}
 
        {% if Data.citations %}
