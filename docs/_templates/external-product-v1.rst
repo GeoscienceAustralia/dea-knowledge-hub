@@ -190,6 +190,14 @@
              {% endfor %}
        {%- endif %}
 
+       {{ Data.doi }}
+
+       .. list-table::
+          :name: key-details-table
+
+          * - **DOI**
+            - `{{ Data.doi }} <https://doi.org/{{ Data.doi }}>`_
+       
        {% if has_key_details %}
        .. rubric:: Key details
           :name: key-details
