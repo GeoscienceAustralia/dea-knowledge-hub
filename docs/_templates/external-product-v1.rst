@@ -204,6 +204,9 @@
           {%- elif Data.doi %}
           * - **DOI**
             - `{{ Data.doi }} <https://doi.org/{{ Data.doi }}>`_
+          {%- elif Data.ecat %}
+          * - **Persistent ID**
+            - `{{ Data.ecat }} <https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/{{ Data.ecat }}>`_
           {%- endif %}
 
        .. list-table::
