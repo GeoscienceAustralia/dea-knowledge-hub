@@ -190,14 +190,6 @@
              {% endfor %}
        {%- endif %}
 
-       {{ Data.doi }}
-
-       .. list-table::
-          :name: key-details-table
-
-          * - **DOI**
-            - `{{ Data.doi }} <https://doi.org/{{ Data.doi }}>`_
-       
        {% if has_key_details %}
        .. rubric:: Key details
           :name: key-details
@@ -205,6 +197,13 @@
 
        .. list-table::
           :name: key-details-table
+
+          {% if Data.doi and Data.ecat %}
+          * - **DOI**
+            - `{{ Data.doi }} <https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/{{ Data.ecat }}>`_
+          {%- endif %}
+
+       .. list-table::
 
           {% if Data.doi and Data.ecat %}
           * - **DOI**
