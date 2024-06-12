@@ -1,21 +1,21 @@
-{% set data = load('_data.yaml') %}
-{% set bands = load('_bands.yaml') %}
+{% set Data = load('_data.yaml') %}
+{% set Bands = load('_bands.yaml') %}
 
-{% set is_latest_version = data.is_latest_version %}
+{% set is_latest_version = Data.is_latest_version %}
 
-{% set valid_maps = data.maps | selectattr("link",  "!=", None) | list %}
-{% set valid_data = data.data | selectattr("link",  "!=", None) | list %}
-{% set valid_explorers = data.explorers | selectattr("link",  "!=", None) | list %}
-{% set valid_web_services = data.web_services | selectattr("link",  "!=", None) | list %}
-{% set valid_code_samples = data.code_examples | selectattr("link",  "!=", None) | list %}
-{% set valid_custom = data.custom | selectattr("icon",  "!=", None) | selectattr("link",  "!=", None) | selectattr("name",  "!=", None) | list %}
-{% set valid_files = data.files | selectattr("link",  "!=", None) | list %}
-{% set valid_old_versions = data.old_versions | selectattr("slug",  "!=", None) | selectattr("version",  "!=", None) | selectattr("name",  "!=", None) | list %}
-{% set valid_product_types = [data.product_type, data.spatial_data_type] | select("!=", None) | list %}
-{% set valid_product_ids = data.product_ids | select("!=", None) | list %}
-{% set valid_custom_citations = data.custom_citations | select("!=", None) | list %}
-{% set valid_tags = data.tags | select("!=", None) | list %}
-{% set valid_product_bands = bands.products | selectattr("name",  "!=", None) | selectattr("bands",  "!=", None) | list %}
+{% set valid_maps = Data.maps | selectattr("link",  "!=", None) | list %}
+{% set valid_data = Data.data | selectattr("link",  "!=", None) | list %}
+{% set valid_explorers = Data.explorers | selectattr("link",  "!=", None) | list %}
+{% set valid_web_services = Data.web_services | selectattr("link",  "!=", None) | list %}
+{% set valid_code_samples = Data.code_examples | selectattr("link",  "!=", None) | list %}
+{% set valid_custom = Data.custom | selectattr("icon",  "!=", None) | selectattr("link",  "!=", None) | selectattr("name",  "!=", None) | list %}
+{% set valid_files = Data.files | selectattr("link",  "!=", None) | list %}
+{% set valid_old_versions = Data.old_versions | selectattr("slug",  "!=", None) | selectattr("version",  "!=", None) | selectattr("name",  "!=", None) | list %}
+{% set valid_product_types = [Data.product_type, Data.spatial_data_type] | select("!=", None) | list %}
+{% set valid_product_ids = Data.product_ids | select("!=", None) | list %}
+{% set valid_custom_citations = Data.custom_citations | select("!=", None) | list %}
+{% set valid_tags = Data.tags | select("!=", None) | list %}
+{% set valid_product_bands = Bands.products | selectattr("name",  "!=", None) | selectattr("bands",  "!=", None) | list %}
 
 {% set map_label = "See it on a map" %}
 {% set explorer_label = "Explore data availability" %}
@@ -30,9 +30,9 @@
 {% set code_sample_default_name = "Code sample" %}
 
 {% set has_access_data = valid_maps or valid_data or valid_explorers or valid_web_services or valid_code_samples or valid_custom %}
-{% set has_key_details = (data.licence.name and data.licence.link) or data.doi or data.ecat %}
+{% set has_key_details = (Data.licence.name and Data.licence.link) or Data.doi or Data.ecat %}
 
-{% set page_title = data.title if is_latest_version else data.version + ": " + data.title %}
+{% set page_title = Data.title if is_latest_version else Data.version + ": " + Data.title %}
 
 {% set product_ids_label = "Product IDs" if valid_product_ids | length > 1 else "Product ID" %}
 {% set product_types_label = "Product types" if valid_product_types | length > 1 else "Product type" %}
@@ -55,28 +55,28 @@
 
       .. rubric:: {{ page_title }}
 
-      {{ data.long_title }}
+      {{ Data.long_title }}
 
       {% if not is_latest_version %}
-      :Version: {{ data.version }} (`See latest version <{{ data.latest_version_link }}>`_)
+      :Version: {{ Data.version }} (`See latest version <{{ Data.latest_version_link }}>`_)
       {%- else %}
-      :Version: {{ data.version }} (Latest)
+      :Version: {{ Data.version }} (Latest)
       {%- endif %}
       {%- if valid_product_types %}
       :{{ product_types_label }}: {{ valid_product_types | join(", ") }}
       {%- endif %}
-      {%- if data.time_span %}
-      {%- if data.time_span.start and data.time_span.end %}
-      :Time span: {{ data.time_span.start }} – {{ data.time_span.end }}
-      {%- elif data.time_span.start  %}
-      :Starts at: {{ data.time_span.start }}
-      {%- elif data.time_span.end  %}
-      :Ends at: {{ data.time_span.end }}
+      {%- if Data.time_span %}
+      {%- if Data.time_span.start and Data.time_span.end %}
+      :Time span: {{ Data.time_span.start }} – {{ Data.time_span.end }}
+      {%- elif Data.time_span.start  %}
+      :Starts at: {{ Data.time_span.start }}
+      {%- elif Data.time_span.end  %}
+      :Ends at: {{ Data.time_span.end }}
       {%- endif %}
       {%- endif %}
-      :Update frequency: {{ data.update_frequency }}
-      {%- if data.next_update %}
-      :Next update: {{ data.next_update }}
+      :Update frequency: {{ Data.update_frequency }}
+      {%- if Data.next_update %}
+      :Next update: {{ Data.next_update }}
       {%- endif %}
       {%- if valid_product_ids %}
       :{{ product_ids_label }}: {{ valid_product_ids | join(", ") }}
@@ -84,7 +84,7 @@
 
    .. container::
 
-      .. image:: {{ data.header_image or "/_files/pages/dea-hero.jpg" }}
+      .. image:: {{ Data.header_image or "/_files/pages/dea-hero.jpg" }}
          :class: no-gallery
 
 .. container::
@@ -95,9 +95,9 @@
    
       This dataset is developed by an external party, and is not a DEA product.
 
-      {% if data.dataset_website %}
-      {% if data.dataset_website.link %}
-      `{{ data.dataset_website.custom_name or "View the external dataset website" }} <{{ data.dataset_website.link }}>`_
+      {% if Data.dataset_website %}
+      {% if Data.dataset_website.link %}
+      `{{ Data.dataset_website.custom_name or "View the external dataset website" }} <{{ Data.dataset_website.link }}>`_
       {% endif %}
       {% endif %}
 
@@ -106,7 +106,7 @@
 
 .. tab-set::
 
-    {% if data.enable_overview %}
+    {% if Data.enable_overview %}
     .. tab-item:: Overview
        :name: overview
 
@@ -130,13 +130,13 @@
           .. grid:: 2 2 3 5
              :gutter: 3
 
-             {% if data.dataset_website %}
-             {% if data.dataset_website.link %}
+             {% if Data.dataset_website %}
+             {% if Data.dataset_website.link %}
              .. grid-item-card:: :fas:`arrow-up-right-from-square`
-                :link: {{ data.dataset_website.link }}
+                :link: {{ Data.dataset_website.link }}
                 :link-alt: The website of the external dataset.
 
-                {{ data.dataset_website.custom_name or "View the external dataset website" }}
+                {{ Data.dataset_website.custom_name or "View the external dataset website" }}
              {% endif %}
              {% endif %}
 
@@ -195,33 +195,29 @@
           :name: key-details
           :class: h2
 
-       {{ data.doi }}
-
-       {{ data.ecat }}
-
        .. list-table::
           :name: key-details-table
 
-          {% if data.doi and data.ecat %}
+          {% if Data.doi and Data.ecat %}
           * - **DOI**
-            - `{{ data.doi }} <https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/{{ data.ecat }}>`_
-          {%- elif data.doi %}
+            - `{{ Data.doi }} <https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/{{ Data.ecat }}>`_
+          {%- elif Data.doi %}
           * - **DOI**
-            - `{{ data.doi }} <https://doi.org/{{ data.doi }}>`_
-          {%- elif data.ecat %}
+            - `{{ Data.doi }} <https://doi.org/{{ Data.doi }}>`_
+          {%- elif Data.ecat %}
           * - **Persistent ID**
-            - `{{ data.ecat }} <https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/{{ data.ecat }}>`_
+            - `{{ Data.ecat }} <https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/{{ Data.ecat }}>`_
           {%- endif %}
-          .. {%- if data.licence %}
-          .. {%- if data.licence.name and data.licence.link %}
+          .. {%- if Data.licence %}
+          .. {%- if Data.licence.name and Data.licence.link %}
           .. * - **Licence**
-          ..   - `{{ data.licence.name }} <{{ data.licence.link }}>`_
+          ..   - `{{ Data.licence.name }} <{{ Data.licence.link }}>`_
           .. {%- endif %}
           .. {%- endif %}
        {%- endif %}
 
-       {% if data.citations %}
-       {% if data.citations.data_citation or data.citations.paper_citation %}
+       {% if Data.citations %}
+       {% if Data.citations.data_citation or Data.citations.paper_citation %}
        .. rubric:: Cite this product
           :name: citations
           :class: h2
@@ -229,19 +225,19 @@
        .. list-table::
           :name: citation-table
 
-          {% if data.citations.data_citation %}
+          {% if Data.citations.data_citation %}
           * - **Data citation**
             - .. code-block:: text
                  :class: citation-table-citation citation-access-date
 
-                 {{ data.citations.data_citation }}
+                 {{ Data.citations.data_citation }}
           {%- endif %}
-          {% if data.citations.paper_citation %}
+          {% if Data.citations.paper_citation %}
           * - **Paper citation**
             - .. code-block:: text
                  :class: citation-table-citation
 
-                 {{ data.citations.paper_citation }}
+                 {{ Data.citations.paper_citation }}
           {%- endif %}
           {% for citation in valid_custom_citations %}
           * - **{{ citation.name }}**
@@ -259,7 +255,7 @@
 
     {% endif %}
 
-    {% if data.enable_details %}
+    {% if Data.enable_details %}
     .. tab-item:: Details
        :name: details
 
@@ -303,7 +299,7 @@
           :parser: myst_parser.sphinx_
     {% endif %}
 
-    {% if data.enable_access %}
+    {% if Data.enable_access %}
     .. tab-item:: Access
        :name: access
 
