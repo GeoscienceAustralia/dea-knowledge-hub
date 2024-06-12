@@ -30,7 +30,7 @@ To download DEA Intertidal data:
 :::
 
 :::{dropdown} How to download data via ELVIS
-To order and download DEA Intertidal Elevation and Elevation Uncertainty data using the ELVIS platform, visit the link below:
+To order and download DEA Intertidal Elevation and Elevation Uncertainty data using the **ELVIS (Elevation Information System)** platform, visit the link below:
 [https://elevation.fsdf.org.au/](https://elevation.fsdf.org.au/)
 
 1. Zoom into your coastal area of interest on the ELVIS map.
