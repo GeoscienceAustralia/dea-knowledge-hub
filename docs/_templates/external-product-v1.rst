@@ -37,8 +37,8 @@
 {% set product_ids_label = "Product IDs" if valid_product_ids | length > 1 else "Product ID" %}
 {% set product_types_label = "Product types" if valid_product_types | length > 1 else "Product type" %}
 
-{% set none = "None" %}
-{% set not_available = "N/A" %}
+{% set none_text = "None" %}
+{% set not_available_text = "N/A" %}
 
 .. |nbsp| unicode:: 0xA0
    :trim:
@@ -286,12 +286,12 @@
                - Description
              {% for band in valid_bands %}
              * - {{ band.name }}
-               - {{ band.aliases|join(', ') if band.aliases else none }}
-               - {{ band.resolution or not_available }}
-               - {{ band.crs or not_available }}
+               - {{ band.aliases|join(', ') if band.aliases else none_text }}
+               - {{ band.resolution or not_available_text }}
+               - {{ band.crs or not_available_text }}
                - {{ band.nodata }}
-               - {{ band.type or not_available }}
-               - {{ band.description or none }}
+               - {{ band.type or not_available_text }}
+               - {{ band.description or none_text }}
              {% endfor %}
        {% endfor %}
 
