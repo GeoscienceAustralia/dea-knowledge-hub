@@ -88,7 +88,7 @@
    :name: notifications
 
    .. admonition:: External product
-      :class: note
+      :class: note external-product
    
       This dataset is developed by an external party, and is not a DEA product.
 
