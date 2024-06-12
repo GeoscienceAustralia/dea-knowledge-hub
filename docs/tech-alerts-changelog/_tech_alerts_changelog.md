@@ -27,9 +27,9 @@ Learn more about the [DEA Summary Product Grid](/guides/reference/collection_3_s
 
 ## 2024-06-12: DEA Intertidal data now available on ELVIS
 
-[DEA Intertidal](/data/product/dea-intertidal/) elevation and uncertainty data can now be ordered and downloaded easily on the ELVIS platform.
+[DEA Intertidal](/data/product/dea-intertidal/) elevation and uncertainty data can now be ordered and downloaded from the ELVIS platform.
 
-Visit the [DEA Intertidal Access tab](/data/product/dea-intertidal/?tab=access) for detailed instructions on ordering DEA Intertidal data from ELVIS.
+For instructions on how to access this data from ELVIS, visit the [DEA Intertidal page (Access tab)](/data/product/dea-intertidal/?tab=access).
 
 ## 2024-05-30: NCI THREDDS data access links updated to point to the new THREDDS server
 

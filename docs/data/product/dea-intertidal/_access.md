@@ -29,16 +29,17 @@ To download DEA Intertidal data:
 1. Click on the required product layer to download. See [Technical Information](./?tab=details#technical-information) for details on file naming and product layer details.
 :::
 
-:::{dropdown} How to download data via ELVIS
-To order and download DEA Intertidal Elevation and Elevation Uncertainty data using the **ELVIS (Elevation Information System)** platform, visit the link below:
-[https://elevation.fsdf.org.au/](https://elevation.fsdf.org.au/)
+:::{dropdown} How to download data from ELVIS
 
-1. Zoom into your coastal area of interest on the ELVIS map.
-1. Click **Order data** on the top-right.
-1. Select your desired selection method, and click **Draw**.
+To download the data from the ELVIS (Elevation Information System) platform, follow these steps.
+
+1. Open the [ELVIS platform](https://elevation.fsdf.org.au/).
+1. Zoom in to the coastal area of interest on the ELVIS map.
+1. Click **Order data** on the top-right of the page.
+1. Select your desired selection method, then click **Draw**.
 1. Select your area of interest on the map, then click **Search**.
-1. Locate the **10 Metre Intertidal DEM** results in the right-hand **Search Results** menu, and select the years of data you wish to order.
-1. Enter your industry and email address below, then click **Order dataset**.
+1. In the **Search Results** menu (on the right side), locate the **10 Metre Intertidal DEM** results and select the years of data you wish to order.
+1. Enter your industry and email address, then click **Order dataset**.
 1. Your data will be emailed to you as a zipped folder containing DEA Intertidal Elevation and Elevation Uncertainty GeoTIFF rasters.
 
 :::{figure} /_files/dea-intertidal/DEAIntertidal_ELVIS_access.*
