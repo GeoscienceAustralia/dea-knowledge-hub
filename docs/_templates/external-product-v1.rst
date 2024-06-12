@@ -201,6 +201,9 @@
           {% if Data.doi and Data.ecat %}
           * - **DOI**
             - `{{ Data.doi }} <https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/{{ Data.ecat }}>`_
+          {%- elif Data.doi %}
+          * - **DOI**
+            - `{{ Data.doi }} <https://doi.org/{{ Data.doi }}>`_
           {%- endif %}
 
        .. list-table::
