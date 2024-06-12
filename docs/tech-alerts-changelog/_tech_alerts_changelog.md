@@ -25,6 +25,12 @@ All new versions of our 'summary derivative products' will be affected by this c
 
 Learn more about the [DEA Summary Product Grid](/guides/reference/collection_3_summary_grid/).
 
+## 2024-06-12: DEA Intertidal data now available on ELVIS
+
+[DEA Intertidal](/data/product/dea-intertidal/) elevation and uncertainty data can now be ordered and downloaded easily on the ELVIS platform.
+
+Visit the [DEA Intertidal Access tab](/data/product/dea-intertidal/?tab=access) for detailed instructions on ordering DEA Intertidal data from ELVIS.
+
 ## 2024-05-30: NCI THREDDS data access links updated to point to the new THREDDS server
 
 NCI has released an upgrade to the THREDDS Data Service and will [decommission the existing THREDDS server after 30th June 2024](https://opus.nci.org.au/display/NDP/THREDDS+Upgrade).
