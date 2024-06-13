@@ -8,20 +8,20 @@ In this guide, you will learn how to understand and analyse the [DEA Published P
 :backlinks: none
 :::
 
-## Audience and purpose
-
-The [Timeliness and Currency Report][TimelinessReport] is designed to be used by both external and internal stakeholders. External auditors can use it to check that our product data is being published on time. Internally, we may use it to define targets that we aim to achieve each financial year. We can also use it to gain insight on which products are being published reliably versus which products have encountered difficulties.
-
-## Financial year
-
-This report is based on the Financial Year ('fin. year') which starts in 1 July and ends in 30 June. (It doesn't use the Calendar Year which is from 1 Jan to 31 Dec.) Furthermore, the report uses Financial Quarters &mdash; these are Q1 (1 Jul &ndash; 30 Sep), Q2 (1 Oct &ndash; 31 Dec), Q3 (1 Jan &ndash; 31 Mar), and Q4 (1 Apr &ndash; 30 Jun).
-
 ## Key terms
 
 The key terms used in this report are defined as follows.
 
 * **Timeliness** &mdash; A measure of how often a product's data is published on time. It is a value that ranges from 0% (meaning 'never on time') to 100% (meaning 'always on time').
 * **Currency** &mdash; A measure of whether the product currently has the expected data. This is indicated by the 'Is current' metric which can be either 'Yes' or 'No'.
+
+## Audience and purpose
+
+The [Timeliness and Currency Report][TimelinessReport] is designed to be used by both external and internal stakeholders. External auditors can use it to check that our product data is being published on time. Internally, we may use it to define targets that we aim to achieve each financial year. We can also use it to gain insight on which products are being published reliably versus which products have encountered difficulties.
+
+## Reporting cycle
+
+The reporting cycle is the Financial Year ('fin. year') which starts in 1 July and ends in 30 June. Furthermore, the report uses Financial Quarters &mdash; these are Q1 (1 Jul &ndash; 30 Sep), Q2 (1 Oct &ndash; 31 Dec), Q3 (1 Jan &ndash; 31 Mar), and Q4 (1 Apr &ndash; 30 Jun).
 
 ## Fields of the report
 
