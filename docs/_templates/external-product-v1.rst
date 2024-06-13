@@ -267,7 +267,7 @@
           :name: bands
           :class: h2
 
-       These are the specifications of the bands included in this product. Bands from this product can be inspected and loaded using `datacube` on the `DEA Sandbox <https://knowledge.dea.ga.gov.au/guides/setup/Sandbox/sandbox/>`_ or `NCI <https://knowledge.dea.ga.gov.au/guides/setup/NCI/basics/>`_, or accessed externally using the `DEA Explorer STAC API <https://knowledge.dea.ga.gov.au/guides/setup/gis/stac/>`_.
+       A band represents an individual data layer in the product. The bands are standardised across all datasets of the product so that these datasets can be compared with each other and analysed using the same tools. Bands from this product can be inspected and loaded using `datacube` on the `DEA Sandbox <https://knowledge.dea.ga.gov.au/guides/setup/Sandbox/sandbox/>`_ or `NCI <https://knowledge.dea.ga.gov.au/guides/setup/NCI/basics/>`_, or can be accessed externally using the `DEA Explorer STAC API <https://knowledge.dea.ga.gov.au/guides/setup/gis/stac/>`_.
 
        {% for product in valid_product_bands %}
        .. dropdown:: {{ product.name }}
