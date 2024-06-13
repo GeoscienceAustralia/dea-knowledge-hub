@@ -2,6 +2,9 @@ title: External data
 description: Supporting datasets provided to assist with analysis of DEA data.
 
 pages:
-  - name: GA AusBathyTopo 250m Grid
+  - name: GA AusBathyTopo 250m
     link: /data/product/ga-ausbathytopo/
     image: /_files/external-datasets/ga_ausbathytopo250m_2023.thumbnail.jpg
+  - name: ABARES CLUM 2020
+    link: /data/product/abares-clum-2020/
+    image: /_files/external-datasets/abares_clum_2020.thumbnail.jpg

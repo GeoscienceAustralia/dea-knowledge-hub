@@ -1,0 +1,73 @@
+# See the Product metadata fields documentation:
+# https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/product_metadata_fields.html
+
+# Overview
+
+title: ABARES CLUM 2020
+long_title: ABARES Catchment Scale Land Use of Australia - Update December 2020
+header_image: /_files/external-datasets/abares_clum_2020.thumbnail.jpg
+version: 2020
+is_latest_version: true
+latest_version_link: null
+is_provisional: false
+product_type: null
+spatial_data_type: Raster
+time_span:
+  start: 2020
+  end: 2020
+update_frequency: null
+next_update: null
+product_ids:
+  - abares_clum_2020
+
+doi: 10.25814/aqjw-rq15
+ecat: null
+nci: null
+licence:
+  name: Creative Commons Attribution 4.0 International Licence
+  link: https://creativecommons.org/licenses/by/4.0/
+
+citations:
+  data_citation: "ABARES 2021, Catchment Scale Land Use of Australia - Update December 2020, Australian Bureau of Agricultural and Resource Economics and Sciences, Canberra, February, CC BY 4.0, DOI: 10.25814/aqjw-rq15"
+  paper_citation: null
+custom_citations: null
+
+tags:
+  - land use
+  - abares
+  - alum
+
+# Access
+
+dataset_website:
+  link: https://www.agriculture.gov.au/abares/aclump/catchment-scale-land-use-of-australia-update-december-2020
+  custom_name: null
+
+maps: null
+
+explorers:
+  - link: https://explorer.dea.ga.gov.au/products/abares_clum_2020
+    name: Data Explorer
+
+data:
+  - link: https://data.dea.ga.gov.au/?prefix=projects/abares_clum_2020/
+    name: Access the data on AWS
+  - link: https://www.agriculture.gov.au/abares/aclump/catchment-scale-land-use-of-australia-update-december-2020
+    name: ABARES Land Use and Management
+
+
+code_examples: null
+
+web_services: null
+
+custom: null
+
+# History
+
+old_versions: null
+
+# Settings
+
+enable_overview: true
+enable_access: true
+enable_details: true

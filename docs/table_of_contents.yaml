@@ -143,7 +143,10 @@ entries:
             title: All
 
           - file: data/product/ga-ausbathytopo/index
-            title: GA AusBathyTopo 250m Grid
+            title: GA AusBathyTopo 250m
+
+          - file: data/product/abares-clum-2020/index
+            title: ABARES CLUM 2020
 
 
   # User Guides
