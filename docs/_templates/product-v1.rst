@@ -69,7 +69,7 @@
       {%- endif %}
       :Update frequency: {{ data.update_frequency }}
       {%- if data.next_update %}
-      :Next update: {{ data.next_update }}
+      :Next update due: {{ data.next_update }}
       {%- endif %}
       {%- if valid_product_ids %}
       :{{ product_ids_label }}: {{ valid_product_ids | join(", ") }}
