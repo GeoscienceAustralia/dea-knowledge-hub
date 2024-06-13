@@ -34,7 +34,7 @@ To download DEA Intertidal data:
 To download the data from the ELVIS (Elevation Information System) platform, follow these steps.
 
 1. Open the [ELVIS platform](https://elevation.fsdf.org.au/).
-1. Zoom in to the coastal area of interest on the ELVIS map.
+1. Zoom in to your coastal area of interest on the ELVIS map.
 1. Click **Order data** on the top-right of the page.
 1. Select your desired selection method, then click **Draw**.
 1. Select your area of interest on the map, then click **Search**.
