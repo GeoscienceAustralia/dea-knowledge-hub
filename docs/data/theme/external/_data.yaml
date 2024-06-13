@@ -8,3 +8,6 @@ pages:
   - name: ABARES CLUM 2020
     link: /data/product/abares-clum-2020/
     image: /_files/external-datasets/abares_clum_2020.thumbnail.jpg
+  - name: SRTM 1 second DEM
+    link: /data/product/ga-srtm/
+    image: /_files/external-datasets/ga_srtm_thumbnail.jpg

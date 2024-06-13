@@ -148,6 +148,8 @@ entries:
           - file: data/product/abares-clum-2020/index
             title: ABARES CLUM 2020
 
+          - file: data/product/ga-srtm/index
+            title: SRTM 1 second DEM
 
   # User Guides
 
