@@ -1,4 +1,4 @@
-# DEA Published Product Timeliness and Currency Report
+# DEA Published Product Currency Report
 
 In this guide, you will learn how to understand and analyse the [DEA Published Product Timeliness and Currency Report][TimelinessReport]. You will also learn about the report containing the historical data (however this report is only available to internal stakeholders): [DEA Published Product Timeliness and Currency Report - History][HistoryReport].
 
