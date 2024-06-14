@@ -1,6 +1,9 @@
 # DEA Published Product Currency Report
 
-In this guide, you will learn how to understand and analyse the [DEA Published Product Timeliness and Currency Report][TimelinessReport]. You will also learn about the report containing the historical data (however this report is only available to internal stakeholders): [DEA Published Product Timeliness and Currency Report - History][HistoryReport].
+
+The [DEA Published Product Currency Report][CurrencyReport] tracks the percentage of DEA published data products that are current. Note that products that don't periodically publish new data and provisional products are excluded from this report.
+
+(Internal staff can view the full history of data in the [Currency History report][HistoryReport] which will also be explained in this guide. Internal staff can also [contribute to the Currency logbook][CurrencyLogbook].)
 
 :::{contents} In this guide
 :depth: 1
@@ -8,16 +11,15 @@ In this guide, you will learn how to understand and analyse the [DEA Published P
 :backlinks: none
 :::
 
-## Key terms
+## Definition of Currency
 
-The key terms used in this report are defined as follows.
+Currency is a reporting metric used by DEA that is defined as "the percentage of DEA published data products that are current". It measures how often a product's data is published on time within the financial year (1 July to 30 June) or financial quarter. It is a percentage value where 100% means 'always on time' and 0% means 'never on time'. Currency is tracked for individual products and these are aggregated into an average value for DEA as a whole.
 
-* **Timeliness** &mdash; A measure of how often a product's data is published on time. It is a value that ranges from 0% (meaning 'never on time') to 100% (meaning 'always on time').
-* **Currency** &mdash; A measure of whether the product currently has the expected data. This is indicated by the 'Is current' metric which can be either 'Yes' or 'No'.
+We also measure whether a product 'is current'. This indicates whether the product currently has the expected data, or if there is currently a delay in publishing. This value is either 'Yes' or 'No'.
 
 ## Audience and purpose
 
-The [Timeliness and Currency Report][TimelinessReport] is designed to be used by both external and internal stakeholders. External auditors can use it to check that our product data is being published on time. Internally, we may use it to define targets that we aim to achieve each financial year. We can also use it to gain insight on which products are being published reliably versus which products have encountered difficulties.
+The [Currency Report][CurrencyReport] is provided for both external and internal stakeholders. External auditors can use it to check that our product data is being published on time. Internally, we may use it to define targets that we aim to achieve each financial year. We can also use it to gain insight on which products are being published reliably versus which products have encountered difficulties.
 
 ## Reporting cycle
 
@@ -76,10 +78,10 @@ The 'Is current' data is not available in the **Additional products** table due 
 
 ## History report
 
-The [DEA Published Product Timeliness and Currency Report - History][TimelinessReport] report provides a history of the data from the Timeliness and Currency report since 1 July 2024 (which is the time when we began tracking this data). This report uses the same data as the Timeliness and Currency report but it includes the entire history of data. However, note that it doesn't include the data from the Additional products table of this report, due to technical limitations.
+The [DEA Published Product Timeliness and Currency Report - History][CurrencyReport] report provides a history of the data from the Timeliness and Currency report since 1 July 2024 (which is the time when we began tracking this data). This report uses the same data as the Timeliness and Currency report but it includes the entire history of data. However, note that it doesn't include the data from the Additional products table of this report, due to technical limitations.
 
 The History report is password-protected and can only be accessed by some Geoscience Australia internal stakeholders.
 
-[TimelinessReport]: https://mgmt.sandbox.dea.ga.gov.au/public-dashboards/d22241dbfca54b1fa9f73938ef26e645?orgId=1
+[CurrencyReport]: https://mgmt.sandbox.dea.ga.gov.au/public-dashboards/d22241dbfca54b1fa9f73938ef26e645?orgId=1
 [HistoryReport]: https://mgmt.sandbox.dea.ga.gov.au/d/c1674b20-8c8a-4d90-aef2-02796275cf2b/4e57919d-fc9d-59d7-9bd1-aa61d41bcb92?orgId=1
 [CurrencyInternalDoc]: https://docs.dev.dea.ga.gov.au/internal_services/reporting-systems/etls/currency.html
