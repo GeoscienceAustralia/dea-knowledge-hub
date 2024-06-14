@@ -8,7 +8,6 @@
 :::{admonition} System status of DEA
 :class: caution
 
-* DEA Sandbox unplanned outage. See below.
 * Misclassification issue with Sentinel-2 's2cloudless' cloud masking from 2022. See below.
 * Terra-derived DEA Hotspots are unavailable. See below.
 * Performance issues with DEA Explorer and STAC API. See below.
@@ -26,7 +25,11 @@ All new versions of our 'summary derivative products' will be affected by this c
 
 Learn more about the [DEA Summary Product Grid](/guides/reference/collection_3_summary_grid/).
 
-## 2024-06-14: DEA Sandbox unplanned outage
+## 2024-06-14: DEA Sandbox service has been restored
+
+The unplanned outage that affected the DEA Sandbox today has been resolved. The DEA Sandbox is now back online.
+
+## 2024-06-14: DEA Sandbox unplanned outage (Resolved)
 
 The DEA Sandbox is currently experiencing an unplanned outage. We are investigating the issue and hope to have the service back up and running soon. We will post an update when the service is restored.
 
