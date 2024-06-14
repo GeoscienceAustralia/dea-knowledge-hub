@@ -52,16 +52,13 @@ The report contains two tables: **Products** and **Yearly products**. The Produc
 
 ## Calculating Currency for Daily products
 
-
-
-
-
-In the **Products** table, the ' data is calculated automatically by our system based on the date that the data was last published. Internal staff can learn the [technical details of how DEA Currency is calculated][CurrencyInternalDoc]. In summary, the Currency is calculated using either of multiple methods &mdash; it either uses the Open Data Cube (ODC) data, an SQS queue subscribed to certain events, or is calculated from another statistic called Completeness.
-
-The 'Is current' data is not available in the **Additional products** table due to technical limitations.
-
+The Currency values for Daily products are automatically tracked by our system based on the date that the data was last published. Internal staff can learn the [technical details of how DEA Currency is tracked][CurrencyInternalDoc]. In summary, the Currency is tracked using either of the following methods: it can use the Open Data Cube (ODC) data, an SQS queue subscribed to certain events, or is calculated from another statistic called Completeness.
 
 ## Calculating Currency for Yearly products
+
+
+
+
 
 
 NOTE yearly products are published yearly not on strict date.
