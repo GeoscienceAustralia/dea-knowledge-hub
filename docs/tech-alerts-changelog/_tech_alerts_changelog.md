@@ -8,6 +8,7 @@
 :::{admonition} System status of DEA
 :class: caution
 
+* DEA Sandbox unplanned outage. See below.
 * Misclassification issue with Sentinel-2 's2cloudless' cloud masking from 2022. See below.
 * Terra-derived DEA Hotspots are unavailable. See below.
 * Performance issues with DEA Explorer and STAC API. See below.
@@ -24,6 +25,10 @@ For a preview, see the [provisional version of the expanded DEA Summary Product 
 All new versions of our 'summary derivative products' will be affected by this change (but existing versions of the products will not be changed). These products are [DEA Geometric Median and Median Absolute Deviation (GeoMAD)](/data/product/dea-geometric-median-and-median-absolute-deviation-landsat/), [DEA Water Observations Statistics (Landsat)](/data/product/dea-water-observations-statistics-landsat/), [DEA Fractional Cover Percentiles](/data/product/dea-fractional-cover-percentiles-landsat/), [DEA Mangroves](/data/product/dea-mangrove-canopy-cover-landsat/), and [DEA Land Cover](/data/product/dea-land-cover-landsat/).
 
 Learn more about the [DEA Summary Product Grid](/guides/reference/collection_3_summary_grid/).
+
+## 2024-06-14: DEA Sandbox unplanned outage
+
+The DEA Sandbox is currently experiencing an unplanned outage. We are investigating the issue and hope to have the service back up and running soon. We will post an update when the service is restored.
 
 ## 2024-06-12: DEA Intertidal data now available on ELVIS
 
