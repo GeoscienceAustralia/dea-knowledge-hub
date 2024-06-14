@@ -5,20 +5,20 @@ products:
       aliases: []
       resolution: 0.00027 degrees
       crs: "EPSG:4326"
-      nodata: -340282346638528859811704183484516925440
+      nodata: "See below :sup:`1`"
       type: float32
       description: "Digital Elevation Model (DEM)"
     - name: dem_s
       aliases: []
       resolution: 0.00027 degrees
       crs: "EPSG:4326"
-      nodata: -340282346638528859811704183484516925440
+      nodata: "See below :sup:`1`"
       type: float32
       description: "Smoothed Digital Elevation Model (DEM-S)"
     - name: dem_h
       aliases: []
       resolution: 0.00027 degrees
       crs: "EPSG:4326"
-      nodata: -340282346638528859811704183484516925440
+      nodata: "See below :sup:`1`"
       type: float32
       description: "Hydrologically Enforced Digital Elevation Model (DEM-H)"
