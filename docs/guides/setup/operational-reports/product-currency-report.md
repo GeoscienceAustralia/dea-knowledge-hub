@@ -19,25 +19,31 @@ We also measure whether a product 'is current'. This indicates whether the produ
 
 ## Audience and purpose
 
-The [Currency Report][CurrencyReport] is provided for both external and internal stakeholders. External auditors can use it to check that our product data is being published on time. Internally, we may use it to define targets that we aim to achieve each financial year. We can also use it to gain insight on which products are being published reliably versus which products have encountered difficulties.
+The [Currency Report][CurrencyReport] is provided for both external and internal stakeholders. External auditors can use it to verify that DEA is meeting their performance targets. Internally, we may use it to gain insight on which products have high performance versus which products have encountered difficulties.
 
-## Reporting cycle
+## Financial year reporting cycle
 
-The reporting cycle is the Financial Year ('fin. year') which starts in 1 July and ends in 30 June. Furthermore, the report uses Financial Quarters &mdash; these are Q1 (1 Jul &ndash; 30 Sep), Q2 (1 Oct &ndash; 31 Dec), Q3 (1 Jan &ndash; 31 Mar), and Q4 (1 Apr &ndash; 30 Jun).
+The reporting cycle is the Financial Year ('fin. year') which starts in 1 July and ends in 30 June each year. Furthermore, the report uses Financial Quarters &mdash; these are Q1 (1 Jul &ndash; 30 Sep), Q2 (1 Oct &ndash; 31 Dec), Q3 (1 Jan &ndash; 31 Mar), and Q4 (1 Apr &ndash; 30 Jun).
 
 ## Fields of the report
 
 Here are explanations of the fields used in this report.
 
-* **Update frequency** &mdash; How often the product data is expected to be published.
+* **Update frequency** &mdash; How often the product data is published.
 * **Last updated** &mdash; The date of the last time that the product data was published.
-* **Is current?** &mdash; Whether the product currently has the expected data. (This is based on the 'Currency'.)
-* **Timeliness this fin. year** &mdash; The Timeliness of the product during this financial year, up to the current date. This metric is listed for each product and also the average across all the products is displayed at the top of the report.
-* **Timeliness previous fin. year** &mdash; The Timeliness of the product during the previous financial year.
-* **Timeliness this fin. quarter** &mdash; The Timeliness of the product during this financial quarter, up to the current date.
-* **Timeliness previous fin. quarter** &mdash; The Timeliness of the product during the previous financial quarter.
+* **Is current?** &mdash; Whether the product currently has the expected data (versus, whether it is currently delayed).
+* **Currency this fin. year** &mdash; The Currency of the product during this financial year, up to the current date. The aggregate of this statistic across all products is included at the top of the report.
+* **Currency previous fin. year** &mdash; The Currency of the product during the previous financial year.
+* **Currency this fin. quarter** &mdash; The Currency of the product during this financial quarter, up to the current date.
+* **Currency previous fin. quarter** &mdash; The Currency of the product during the previous financial quarter.
 
 ## Which products are included?
+
+
+
+
+
+
 
 You will notice that not all products are included in this report. This is because the Timeliness and Currency statistics can only be meaningfully applied to certain products. Only products that meet the following criteria are included in the report.
 
@@ -50,6 +56,10 @@ Hence, if you cannot find a certain product in this report, it is likely because
 ## Products vs Additional products
 
 The report contains two tables: **Products** and **Additional products**. The Products table contains most products and is comprehensive and up to date. Alternately, the Additional products table is for products that cannot be tracked automatically by our system due to technical limitations. Therefore, this table contains only basic data and it may be slightly delayed. This is because the Additional products table is manually updated by our staff.
+
+
+
+NOTE yearly products are published yearly not on strict date.
 
 ## Algorithm for Timeliness
 
