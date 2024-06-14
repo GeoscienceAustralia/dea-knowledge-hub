@@ -37,29 +37,39 @@ Here are explanations of the fields used in this report.
 * **Currency this fin. quarter** &mdash; The Currency of the product during this financial quarter, up to the current date.
 * **Currency previous fin. quarter** &mdash; The Currency of the product during the previous financial quarter.
 
-## Which products are included?
+## Which products are not included?
+
+Currency can only be meaningfully tracked for certain types of products and that is why not all products are included in this report. If you cannot find a product in this report, it is due to one of the following reasons.
+
+* It is a **provisional product** &mdash; Provisional products have not yet passed quality control and/or been finalised for release.
+* It is **not the latest version** of the product &mdash; Only the latest version of the product contains the latest processing algorithm and latest features.
+* It is **not updated periodically** &mdash; Only products that are updated on a periodic basis (e.g. Daily or Yearly) are included in this report.
+* It does **not have any updates planned** &mdash; Products for which we don't plan to publish any more data are not included in this report.
+
+## Products vs Yearly products
+
+The report contains two tables: **Products** and **Yearly products**. The Products table contains the Daily products and other products that can be tracked automatically by our system. Alternately, the Yearly products table contains the Yearly products and any other products that cannot be tracked manually by our system. The Yearly products table is partially automatic, but requires some manual data entry from our staff.
+
+## Calculating Currency for Daily products
 
 
 
 
 
+In the **Products** table, the ' data is calculated automatically by our system based on the date that the data was last published. Internal staff can learn the [technical details of how DEA Currency is calculated][CurrencyInternalDoc]. In summary, the Currency is calculated using either of multiple methods &mdash; it either uses the Open Data Cube (ODC) data, an SQS queue subscribed to certain events, or is calculated from another statistic called Completeness.
+
+The 'Is current' data is not available in the **Additional products** table due to technical limitations.
 
 
-You will notice that not all products are included in this report. This is because the Timeliness and Currency statistics can only be meaningfully applied to certain products. Only products that meet the following criteria are included in the report.
-
-* It is a **published product** &mdash; Not a 'provisional product'.
-* It is the **latest version** &mdash; Not an old version of the product.
-* It is **regularly updated** &mdash; Not a product with 'No updates planned'.
-
-Hence, if you cannot find a certain product in this report, it is likely because it doesn't meet those criteria.
-
-## Products vs Additional products
-
-The report contains two tables: **Products** and **Additional products**. The Products table contains most products and is comprehensive and up to date. Alternately, the Additional products table is for products that cannot be tracked automatically by our system due to technical limitations. Therefore, this table contains only basic data and it may be slightly delayed. This is because the Additional products table is manually updated by our staff.
-
+## Calculating Currency for Yearly products
 
 
 NOTE yearly products are published yearly not on strict date.
+
+
+
+
+
 
 ## Algorithm for Timeliness
 
@@ -80,17 +90,9 @@ Where $d$ is the number of days overdue this financial year.
 
 For example, if the product has been overdue for 5 days, the Timeliness will be 98.63%.
 
-## Algorithm for Currency
-
-In the **Products** table, the ' data is calculated automatically by our system based on the date that the data was last published. Internal staff can learn the [technical details of how DEA Currency is calculated][CurrencyInternalDoc]. In summary, the Currency is calculated using either of multiple methods &mdash; it either uses the Open Data Cube (ODC) data, an SQS queue subscribed to certain events, or is calculated from another statistic called Completeness.
-
-The 'Is current' data is not available in the **Additional products** table due to technical limitations.
-
 ## History report
 
-The [DEA Published Product Timeliness and Currency Report - History][CurrencyReport] report provides a history of the data from the Timeliness and Currency report since 1 July 2024 (which is the time when we began tracking this data). This report uses the same data as the Timeliness and Currency report but it includes the entire history of data. However, note that it doesn't include the data from the Additional products table of this report, due to technical limitations.
-
-The History report is password-protected and can only be accessed by some Geoscience Australia internal stakeholders.
+The [DEA Published Product Currency Report - History][CurrencyReport] report provides a history of the data from the Currency report since 1 July 2024 (which is the time when we began tracking this statistic). It is password-protected and can only be accessed by some Geoscience Australia internal stakeholders. This report uses the same data as the Currency report but it includes the history of previous years. However, note that it doesn't include the data from the Yearly products table of this report, due to technical limitations. The Yearly products historical data is stored in a 'log table' in the database.
 
 [CurrencyReport]: https://mgmt.sandbox.dea.ga.gov.au/public-dashboards/d22241dbfca54b1fa9f73938ef26e645?orgId=1
 [HistoryReport]: https://mgmt.sandbox.dea.ga.gov.au/d/c1674b20-8c8a-4d90-aef2-02796275cf2b/4e57919d-fc9d-59d7-9bd1-aa61d41bcb92?orgId=1
