@@ -271,7 +271,7 @@
        .. list-table::
           :header-rows: 1
 
-          * - Name
+          * - 
             - Aliases
             - Resolution
             - CRS
@@ -279,7 +279,7 @@
             - Type
             - Description
           {% for band in valid_bands %}
-          * - {{ band.name }}
+          * - **{{ band.name }}**
             - {{ band.aliases|join(', ') if band.aliases else none_text }}
             - {{ band.resolution or not_available_text }}
             - {{ band.crs or not_available_text }}
