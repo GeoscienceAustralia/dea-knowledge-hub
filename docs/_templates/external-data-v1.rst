@@ -89,7 +89,7 @@
       This dataset is developed by an external party, and is not a DEA product.
 
       {% if valid_external_data %}
-      `{{ valid_external_data.custom_name or external_data_label }} <{{ valid_external_data.link }}>`_
+      `{{ valid_external_data.custom_label or external_data_label }} <{{ valid_external_data.link }}>`_
       {% endif %}
 
 .. tab-set::
@@ -121,9 +121,9 @@
              {% if valid_external_data %}
              .. grid-item-card:: :fas:`person-walking-arrow-right`
                 :link: {{ valid_external_data.link }}
-                :link-alt: {{ external_data_label }}
+                :link-alt: {{ external_data_default_name }}
 
-                {{ valid_external_data.custom_name or external_data_default_name }}
+                {{ valid_external_data.custom_label or external_data_label }}
              {% endif %}
 
              {% for item in valid_maps %}
@@ -310,7 +310,7 @@
           {% if valid_external_data %}
           * - **{{ external_data_label }}**
             - 
-              * `{{ valid_external_data.custom_name or external_data_default_name }} <{{ valid_external_data.link }}>`_
+              * `{{ valid_external_data.custom_label or external_data_default_name }} <{{ valid_external_data.link }}>`_
             - 
           {% endif %}
 
