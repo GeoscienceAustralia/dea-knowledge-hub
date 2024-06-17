@@ -46,6 +46,11 @@ Currency can only be meaningfully tracked for certain types of products and that
 * It is **not updated periodically** &mdash; Only products that are updated on a periodic basis (e.g. Daily or Yearly) are included in this report.
 * It does **not have any updates planned** &mdash; Products for which we don't plan to publish any more data are not included in this report.
 
+For example, the [DEA Wetlands Insight Tool][WetlandsInsight] products are only published 'as needed' &mdash; they are not updated on a periodical basis and therefore they aren't included in this report. And, the [DEA Land Cover (Landsat)][LandCover] tool has 'no updates planned', so it is also excluded from the report.
+
+[WetlandsInsight]: https://knowledge.dea.ga.gov.au/data/category/dea-wetlands-insight-tool/
+[LandCover]: https://knowledge.dea.ga.gov.au/data/product/dea-land-cover-landsat/
+
 ## Products vs Yearly products
 
 The report contains two tables: **Products** and **Yearly products**. The Products table contains the Daily products and other products that can be tracked automatically by our system. Alternately, the Yearly products table contains the Yearly products and any other products that cannot be tracked manually by our system. The Yearly products table is partially automatic, but requires some manual data entry from our staff.
