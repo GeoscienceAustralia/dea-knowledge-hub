@@ -22,3 +22,6 @@ products:
       nodata: "See below :sup:`1`"
       type: float32
       description: "Hydrologically Enforced Digital Elevation Model (DEM-H)"
+
+# TODO add this to the table somehow:
+# {sup}`1` The 'Nodata' value is `-340282346638528859811704183484516925440`

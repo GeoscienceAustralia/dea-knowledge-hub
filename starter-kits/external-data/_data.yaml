@@ -76,5 +76,5 @@ licence:
 # Settings
 
 enable_overview: true
-enable_details: true
+enable_specifications: true
 enable_access: true

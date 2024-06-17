@@ -1,5 +1,5 @@
 {% set Data = load('_data.yaml') %}
-{% set Bands = load('_bands.yaml') %}
+{% set Specifications = load('_specifications.yaml') %}
 
 {% set valid_maps = Data.maps | selectattr("link",  "!=", None) | list %}
 {% set valid_data = Data.data | selectattr("link",  "!=", None) | list %}
@@ -13,9 +13,9 @@
 {% set valid_product_ids = Data.product_ids | select("!=", None) | list %}
 {% set valid_custom_citations = Data.custom_citations | select("!=", None) | list %}
 {% set valid_tags = Data.tags | select("!=", None) | list %}
-{% set valid_product_bands = Bands.products | selectattr("name",  "!=", None) | selectattr("bands",  "!=", None) | list %}
+{% set valid_product_bands = Specifications.products | selectattr("name",  "!=", None) | selectattr("bands",  "!=", None) | list %}
 
-{% set external_data_label = "View the external dataset website" %}
+{% set external_data_label = "Visit the external dataset website" %}
 {% set map_label = "See it on a map" %}
 {% set explorer_label = "Explore data availability" %}
 {% set data_label = "Get the data online" %}
@@ -241,9 +241,9 @@
 
     {% endif %}
 
-    {% if Data.enable_details %}
-    .. tab-item:: Details
-       :name: details
+    {% if Data.enable_specifications %}
+    .. tab-item:: Specifications
+       :name: specifications
 
        .. raw:: html
 
@@ -261,7 +261,9 @@
        .. _stac_api: https://knowledge.dea.ga.gov.au/guides/setup/gis/stac/
 
        {% for product in valid_product_bands %}
-       .. dropdown:: Bands in {{ product.name }}
+       .. rubric:: Bands in {{ product.name }}
+          :name: {{ product.name }}-bands
+          :class: h3
 
           {% set valid_bands = product.bands | selectattr("name",  "!=", None) | list %}
 
@@ -286,9 +288,6 @@
              {% endfor %}
        {% endfor %}
        {% endif %}
-
-       .. include:: _details.md
-          :parser: myst_parser.sphinx_
     {% endif %}
 
     {% if Data.enable_access %}
