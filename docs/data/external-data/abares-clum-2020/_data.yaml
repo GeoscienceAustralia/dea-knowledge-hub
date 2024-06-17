@@ -6,10 +6,6 @@
 title: ABARES CLUM 2020
 long_title: ABARES Catchment Scale Land Use of Australia - Update December 2020
 header_image: /_files/external-datasets/abares_clum_2020.thumbnail.jpg
-version: 2020
-is_latest_version: true
-latest_version_link: null
-is_provisional: false
 product_type: null
 spatial_data_type: Raster
 time_span:
@@ -61,12 +57,8 @@ web_services: null
 
 custom: null
 
-# History
-
-old_versions: null
-
 # Settings
 
 enable_overview: true
-enable_access: true
 enable_details: true
+enable_access: true
