@@ -139,7 +139,7 @@ entries:
 
       - caption: External datasets
         entries:
-          - file: data/theme/external/index
+          - file: data/theme/external-data/index
             title: All
 
           - file: data/external-data/ga-ausbathytopo/index
