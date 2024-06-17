@@ -1,1 +1,14 @@
-% If needed, you can add Details content here. Please use level-2 headings e.g. '## Background'
+% ## Background
+
+% ## Applications
+
+% ## Technical information
+
+% ## Lineage
+
+% ## Processing steps
+
+% ## Software
+
+% ## References
+
