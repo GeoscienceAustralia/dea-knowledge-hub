@@ -288,7 +288,7 @@
             - {{ band.description or none_text }}
           {% endfor %}
 
-       {{ valid_product_bands_table.footnotes }}
+       {{ valid_product_bands_table.footnotes if valid_product_bands_table.footnotes }}
        {% endif %}
        {% endfor %}
        {% endif %}
