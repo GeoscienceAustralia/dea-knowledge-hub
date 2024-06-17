@@ -53,7 +53,7 @@
 
       {{ Data.long_title }}
 
-      {%- if valid_product_types %}
+      {% if valid_product_types %}
       :{{ product_types_label }}: {{ valid_product_types | join(", ") }}
       {%- endif %}
       {%- if Data.time_span %}
@@ -258,7 +258,7 @@
        A band represents an individual data layer in the product. The bands are standardised across all datasets of the product so that these datasets can be compared with each other and analysed using the same tools. Bands from this product can be inspected and loaded using `datacube` on the `DEA Sandbox <https://knowledge.dea.ga.gov.au/guides/setup/Sandbox/sandbox/>`_ or `NCI <https://knowledge.dea.ga.gov.au/guides/setup/NCI/basics/>`_, or can be accessed externally using the `DEA Explorer STAC API <https://knowledge.dea.ga.gov.au/guides/setup/gis/stac/>`_.
 
        {% for product in valid_product_bands %}
-       .. dropdown:: {{ product.name }}
+       .. dropdown:: Bands in {{ product.name }}
 
           {% set valid_bands = product.bands | selectattr("name",  "!=", None) | list %}
 
