@@ -50,47 +50,36 @@ Currency can only be meaningfully tracked for certain types of products and that
 
 The report contains two tables: **Products** and **Yearly products**. The Products table contains the Daily products and other products that can be tracked automatically by our system. Alternately, the Yearly products table contains the Yearly products and any other products that cannot be tracked manually by our system. The Yearly products table is partially automatic, but requires some manual data entry from our staff.
 
-## Calculating Currency for Daily products
+One thing to note about Yearly products is that we may schedule to publish them on a different date each year. Hence, if a yearly product was published on 1 August last year, you can't assume that it will be published on 1 August this year.
 
-The Currency values for Daily products are automatically tracked by our system based on the date that the data was last published. Internal staff can learn the [technical details of how DEA Currency is tracked][CurrencyInternalDoc]. In summary, the Currency is tracked using either of the following methods: it can use the Open Data Cube (ODC) data, an SQS queue subscribed to certain events, or is calculated from another statistic called Completeness.
+## How Currency is calculated
 
-## Calculating Currency for Yearly products
+Currency is calculated by finding out the age of the latest 'scene' of a product. To find out this age and calculate the Currency for each product, we use one of three methods: ODC Currency method, SQS Currency method, and Currency from Completeness method. Internal staff can learn the [technical details of these Currency methods][CurrencyInternalDoc].
 
+The Currency values go through a few more calculations before they are added to the **Products** table in this report.
 
-
-
-
-
-NOTE yearly products are published yearly not on strict date.
-
-
-
-
-
-
-## Algorithm for Timeliness
-
-In the **Products** table, Timeliness is calculated by an algorithm that works as follows.
-
-1. Find the age of the latest published data (in hours). This is calculated from the difference between the latest scene's acquisition date and the calendar time.
+1. Start with the Currency age value calculated from the latest 'scene' of the product. Remember that this is calculated from the difference between the latest scene's acquisition date and the calendar time.
 
     $age = acquisition\_date - calendar\_time$
 
-1. Each product has a 'business rule' that defines the maximum threshold for this age that we calculated. For instance, a product may have a business rule of $\leq 16\ days$. This means that if the age is more than 16 days, then the data is overdue. We run this check every day and if the age is within the threshold, we assign 100% Timeliness for that day; whereas, if the age is above the threshold, we assign 0% for that day.
-1. The Timeliness values of a span of multiple days are averaged to find the Timeliness for each financial year and the Timeliness for each financial quarter.
+1. Check the 'business rule' for the product. This rule defines the maximum threshold for this age value that we calculated. For instance, a product may have a business rule of $\leq 16\ days$. This means that if the age is more than 16 days, then the data is overdue. We run this check every day and if the age is within the threshold, we assign 100% Currency for that day; whereas, if the age is above the threshold, we assign 0% Currency for that day.
+1. The Currency values of a span of multiple days are averaged to find the Currency for each financial year and the Currency for each financial quarter.
 
-In the **Additional products** table, Timeliness is calculated based on the number of days that the product has been overdue throughout the entire financial year. Our staff manually record the number of days  that it has been overdue. It uses the following algorithm.
+Alternately, in the **Yearly products** table, the Currency is calculated differently. The products in this table are those that can't use any of the automatic Currency methods that rely on finding the latest scene. For technical reasons, these products must instead be tracked manually.
 
-$100 - (\frac{d}{365.25} \times 100)$
+1. Our staff manually enter the number of days that the product has been overdue. <!-- TODO update this section when the way we calculate these is changed -->
+1. The Currency is calculated using the formula:
+    $100 - (\frac{d}{365.25} \times 100)$
 
-Where $d$ is the number of days overdue this financial year.
+    Where $d$ is the number of days overdue this financial year.
 
-For example, if the product has been overdue for 5 days, the Timeliness will be 98.63%.
+    For example, if the product has been overdue for 5 days, the Yearly Currency will be 98.63%.
 
 ## History report
 
-The [DEA Published Product Currency Report - History][CurrencyReport] report provides a history of the data from the Currency report since 1 July 2024 (which is the time when we began tracking this statistic). It is password-protected and can only be accessed by some Geoscience Australia internal stakeholders. This report uses the same data as the Currency report but it includes the history of previous years. However, note that it doesn't include the data from the Yearly products table of this report, due to technical limitations. The Yearly products historical data is stored in a 'log table' in the database.
+The [Currency History report][CurrencyReport] report provides a history of the data from the Currency report since the beginning of when we started tracking this statistic: 1 July 2024. It can only be accessed by internal stakeholders. This report uses the same data as the Currency report but it includes the history of previous years. However, note that it doesn't include the data from the Yearly products table of this report, due to technical limitations. The Yearly products historical data is stored in a 'log table' in the database.
 
 [CurrencyReport]: https://mgmt.sandbox.dea.ga.gov.au/public-dashboards/d22241dbfca54b1fa9f73938ef26e645?orgId=1
 [HistoryReport]: https://mgmt.sandbox.dea.ga.gov.au/d/c1674b20-8c8a-4d90-aef2-02796275cf2b/4e57919d-fc9d-59d7-9bd1-aa61d41bcb92?orgId=1
 [CurrencyInternalDoc]: https://docs.dev.dea.ga.gov.au/internal_services/reporting-systems/etls/currency.html
+[CurrencyLogbook]: https://docs.dev.dea.ga.gov.au/internal_services/reporting-systems/etls/currency_logbook.html#currency-report-logbook
