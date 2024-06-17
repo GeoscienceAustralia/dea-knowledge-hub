@@ -15,7 +15,7 @@
 {% set valid_tags = Data.tags | select("!=", None) | list %}
 {% set valid_product_bands = Bands.products | selectattr("name",  "!=", None) | selectattr("bands",  "!=", None) | list %}
 
-{% set external_data_page_label = "The website of the external dataset." %}
+{% set external_data_label = "The website of the external dataset." %}
 {% set map_label = "See it on a map" %}
 {% set explorer_label = "Explore data availability" %}
 {% set data_label = "Get the data online" %}
@@ -121,7 +121,7 @@
              {% if valid_external_data %}
              .. grid-item-card:: :fas:`person-walking-arrow-right`
                 :link: {{ valid_external_data.link }}
-                :link-alt: {{ external_data_page_label }}
+                :link-alt: {{ external_data_label }}
 
                 {{ valid_external_data.custom_name or external_data_default_name }}
              {% endif %}
@@ -300,6 +300,13 @@
        {% if has_access_data %}
        .. list-table::
           :name: access-table
+
+          {% if valid_external_data %}
+          * - **{{ external_data_label }}**
+            - 
+              * `{{ valid_external_data.custom_name or external_data_default_name }} <{{ valid_external_data.link }}>`_
+            - 
+          {% endif %}
 
           {% if valid_maps %}
           * - **{{ map_label }}**
