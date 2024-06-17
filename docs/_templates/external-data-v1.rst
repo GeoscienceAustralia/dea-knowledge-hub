@@ -3,7 +3,7 @@
 
 {% set valid_maps = Data.maps | selectattr("link",  "!=", None) | list %}
 {% set valid_data = Data.data | selectattr("link",  "!=", None) | list %}
-{% set valid_external_data = Data.external_data_page | selectattr("link",  "!=", None) | list %}
+{% set valid_external_data = Data.external_data_page if Data.external_data_page and Data.external_data_page.link %}
 {% set valid_explorers = Data.explorers | selectattr("link",  "!=", None) | list %}
 {% set valid_web_services = Data.web_services | selectattr("link",  "!=", None) | list %}
 {% set valid_code_samples = Data.code_examples | selectattr("link",  "!=", None) | list %}
