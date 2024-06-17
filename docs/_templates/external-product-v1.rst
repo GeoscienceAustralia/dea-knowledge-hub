@@ -132,7 +132,7 @@
 
              {% if Data.dataset_website %}
              {% if Data.dataset_website.link %}
-             .. grid-item-card:: :fas:`arrow-up-right-from-square`
+             .. grid-item-card:: :fas:`person-walking-arrow-right`
                 :link: {{ Data.dataset_website.link }}
                 :link-alt: The website of the external dataset.
 
