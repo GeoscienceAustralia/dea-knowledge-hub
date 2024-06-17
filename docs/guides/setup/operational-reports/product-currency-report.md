@@ -15,7 +15,7 @@ The [DEA Published Product Currency Report][CurrencyReport] tracks the percentag
 
 Currency is a reporting metric that we define as follows.
 
-> **Currency:** When data products have been published through Digital Earth Australia in line with the stated update frequency (e.g. daily or yearly) on or before the scheduled publish date (as recorded on the Digital Earth Australia Knowledge Hub).
+> **Currency:** A measure of how consistently Digital Earth Australia's data products have been published through Digital Earth Australia in line with the stated update frequency (e.g. daily or yearly) on or before the scheduled publish date (as recorded on the Digital Earth Australia Knowledge Hub).
 
 Essentially, Currency is a measure of the percentage of DEA published data products that are published on time, according to their scheduled publish date. It ranges from 100% meaning 'always on time' to 0% meaning 'never on time'.
 
