@@ -1,6 +1,9 @@
+# Bands
+
 bands:
   products:
     - name: abares_clum_2020
+      footnotes: null
       bands:
       - name: alum_class
         aliases: []
