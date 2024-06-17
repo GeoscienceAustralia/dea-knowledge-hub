@@ -17,6 +17,6 @@ pages:
   - name: Hazards
     link: /data/theme/hazards/
     image: /_files/themes/hazards.*
-  - name: External datasets
-    link: /data/theme/external/
-    image: /_files/themes/external.*
+  - name: External data
+    link: /data/theme/external-data/
+    image: /_files/themes/external-data.*

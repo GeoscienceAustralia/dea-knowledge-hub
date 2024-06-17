@@ -1,6 +1,6 @@
 bands:
-  product_tables:
-    - product_name: abares_clum_2020
+  products:
+    - name: abares_clum_2020
       bands:
       - name: alum_class
         aliases: []

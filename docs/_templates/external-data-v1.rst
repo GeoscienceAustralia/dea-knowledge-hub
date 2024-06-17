@@ -13,7 +13,7 @@
 {% set valid_product_ids = Data.product_ids | select("!=", None) | list %}
 {% set valid_custom_citations = Data.custom_citations | select("!=", None) | list %}
 {% set valid_tags = Data.tags | select("!=", None) | list %}
-{% set valid_product_bands = Specifications.bands if Specifications.bands and Specifications.bands.product_tables %}
+{% set valid_product_bands = Specifications.bands if Specifications.bands and Specifications.bands.products %}
 
 {% set external_data_label = "Go to the external dataset page" %}
 {% set map_label = "See it on a map" %}
@@ -260,33 +260,33 @@
        .. _nci: https://knowledge.dea.ga.gov.au/guides/setup/NCI/basics/
        .. _stac_api: https://knowledge.dea.ga.gov.au/guides/setup/gis/stac/
 
-       {% for product_table in valid_product_bands.product_tables %}
-       {% set valid_product_table = product_table if product_table.product_name and product_table.bands %}
-       {% if valid_product_table %}
-       {% set valid_bands = valid_product_table.bands | selectattr("name",  "!=", None) | list %}
-       .. rubric:: Bands in {{ valid_product_table.name }}
-          :name: {{ valid_product_table.name }}-bands
+       {% for product_bands_table in valid_product_bands.products %}
+       {% set valid_product_bands_table = product_bands_table if product_bands_table.name and product_bands_table.bands %}
+       {% if valid_product_bands_table %}
+       {% set valid_bands = valid_product_bands_table.bands | selectattr("name",  "!=", None) | list %}
+       .. rubric:: Bands in {{ valid_product_bands_table.name }}
+          :name: {{ valid_product_bands_table.name }}-bands
           :class: h3
 
-          .. list-table::
-             :header-rows: 1
+       .. list-table::
+          :header-rows: 1
 
-             * - Name
-               - Aliases
-               - Resolution
-               - CRS
-               - Nodata
-               - Type
-               - Description
-             {% for band in valid_bands %}
-             * - {{ band.name }}
-               - {{ band.aliases|join(', ') if band.aliases else none_text }}
-               - {{ band.resolution or not_available_text }}
-               - {{ band.crs or not_available_text }}
-               - {{ band.nodata }}
-               - {{ band.type or not_available_text }}
-               - {{ band.description or none_text }}
-             {% endfor %}
+          * - Name
+            - Aliases
+            - Resolution
+            - CRS
+            - Nodata
+            - Type
+            - Description
+          {% for band in valid_bands %}
+          * - {{ band.name }}
+            - {{ band.aliases|join(', ') if band.aliases else none_text }}
+            - {{ band.resolution or not_available_text }}
+            - {{ band.crs or not_available_text }}
+            - {{ band.nodata }}
+            - {{ band.type or not_available_text }}
+            - {{ band.description or none_text }}
+          {% endfor %}
        {% endif %}
        {% endfor %}
        {% endif %}
