@@ -38,7 +38,7 @@ tags:
 
 # Access
 
-external_dataset_website:
+external_data_page:
   link: https://pid.geoscience.gov.au/dataset/ga/72759
   custom_name: null
 
@@ -51,7 +51,6 @@ explorers:
 data:
   - link: https://data.dea.ga.gov.au/?prefix=projects/elevation/ga_srtm_dem1sv1_0/
     name: Access the data on AWS
-
 
 code_examples: null
 
