@@ -3,24 +3,26 @@
 
 {% set valid_maps = Data.maps | selectattr("link",  "!=", None) | list %}
 {% set valid_data = Data.data | selectattr("link",  "!=", None) | list %}
+{% set valid_external_data = Data.external_data_page | selectattr("link",  "!=", None) | list %}
 {% set valid_explorers = Data.explorers | selectattr("link",  "!=", None) | list %}
 {% set valid_web_services = Data.web_services | selectattr("link",  "!=", None) | list %}
 {% set valid_code_samples = Data.code_examples | selectattr("link",  "!=", None) | list %}
 {% set valid_custom = Data.custom | selectattr("icon",  "!=", None) | selectattr("link",  "!=", None) | selectattr("name",  "!=", None) | list %}
 {% set valid_files = Data.files | selectattr("link",  "!=", None) | list %}
-{% set valid_old_versions = Data.old_versions | selectattr("slug",  "!=", None) | selectattr("version",  "!=", None) | selectattr("name",  "!=", None) | list %}
 {% set valid_product_types = [Data.product_type, Data.spatial_data_type] | select("!=", None) | list %}
 {% set valid_product_ids = Data.product_ids | select("!=", None) | list %}
 {% set valid_custom_citations = Data.custom_citations | select("!=", None) | list %}
 {% set valid_tags = Data.tags | select("!=", None) | list %}
 {% set valid_product_bands = Bands.products | selectattr("name",  "!=", None) | selectattr("bands",  "!=", None) | list %}
 
+{% set external_data_page_label = "The website of the external dataset." %}
 {% set map_label = "See it on a map" %}
 {% set explorer_label = "Explore data availability" %}
 {% set data_label = "Get the data online" %}
 {% set web_service_label = "Get via web service" %}
 {% set code_sample_label = "Code sample" %}
 
+{% set external_data_default_name = "View the external dataset website" %}
 {% set map_default_name = "DEA Maps" %}
 {% set data_default_name = "DEA Data" %}
 {% set explorer_default_name = "Data Explorer" %}
@@ -86,10 +88,8 @@
    
       This dataset is developed by an external party, and is not a DEA product.
 
-      {% if Data.external_data_page %}
-      {% if Data.external_data_page.link %}
-      `{{ Data.external_data_page.custom_name or "View the external dataset website" }} <{{ Data.external_data_page.link }}>`_
-      {% endif %}
+      {% if valid_external_data %}
+      `{{ valid_external_data.custom_name or external_data_default_name }} <{{ valid_external_data.link }}>`_
       {% endif %}
 
 .. tab-set::
@@ -118,14 +118,12 @@
           .. grid:: 2 2 3 5
              :gutter: 3
 
-             {% if Data.external_data_page %}
-             {% if Data.external_data_page.link %}
+             {% if valid_external_data %}
              .. grid-item-card:: :fas:`person-walking-arrow-right`
-                :link: {{ Data.external_data_page.link }}
-                :link-alt: The website of the external dataset.
+                :link: {{ valid_external_data.link }}
+                :link-alt: {{ external_data_page_label }}
 
-                {{ Data.external_data_page.custom_name or "View the external dataset website" }}
-             {% endif %}
+                {{ valid_external_data.custom_name or external_data_default_name }}
              {% endif %}
 
              {% for item in valid_maps %}
