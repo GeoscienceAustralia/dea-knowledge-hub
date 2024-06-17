@@ -4,7 +4,7 @@ description: We provide transparent reports to allow stakeholders to assess the 
 reports:
   - name: DEA Published Product Currency Report
     link: https://mgmt.sandbox.dea.ga.gov.au/public-dashboards/d22241dbfca54b1fa9f73938ef26e645?orgId=1
-    description: This report tracks the percentage of DEA published data products that are current. The 'Currency' of a product is measured by often its data was published on time within the financial year or financial quarter. It is a percentage value where 100% means 'always on time'.
+    description: Currency indicates when data products have been published through DEA in line with the stated update frequency on or before the scheduled publish date.
     image: /_files/statistics/DEA_Published_Product_Timeliness_and_Currency_Report.jpg
     custom_link_text: View the DEA Published Product Currency Report
 
