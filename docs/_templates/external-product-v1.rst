@@ -15,14 +15,14 @@
 {% set valid_tags = Data.tags | select("!=", None) | list %}
 {% set valid_product_bands = Bands.products | selectattr("name",  "!=", None) | selectattr("bands",  "!=", None) | list %}
 
-{% set external_data_label = "The website of the external dataset." %}
+{% set external_data_label = "View the external dataset website" %}
 {% set map_label = "See it on a map" %}
 {% set explorer_label = "Explore data availability" %}
 {% set data_label = "Get the data online" %}
 {% set web_service_label = "Get via web service" %}
 {% set code_sample_label = "Code sample" %}
 
-{% set external_data_default_name = "View the external dataset website" %}
+{% set external_data_default_name = "External dataset page" %}
 {% set map_default_name = "DEA Maps" %}
 {% set data_default_name = "DEA Data" %}
 {% set explorer_default_name = "Data Explorer" %}
@@ -83,13 +83,13 @@
 .. container::
    :name: notifications
 
-   .. admonition:: External product
-      :class: note external-product
+   .. admonition:: External dataset
+      :class: note external-data
    
       This dataset is developed by an external party, and is not a DEA product.
 
       {% if valid_external_data %}
-      `{{ valid_external_data.custom_name or external_data_default_name }} <{{ valid_external_data.link }}>`_
+      `{{ valid_external_data.custom_name or external_data_label }} <{{ valid_external_data.link }}>`_
       {% endif %}
 
 .. tab-set::
