@@ -1,8 +1,6 @@
 {% set Data = load('_data.yaml') %}
 {% set Bands = load('_bands.yaml') %}
 
-{% set is_latest_version = Data.is_latest_version %}
-
 {% set valid_maps = Data.maps | selectattr("link",  "!=", None) | list %}
 {% set valid_data = Data.data | selectattr("link",  "!=", None) | list %}
 {% set valid_explorers = Data.explorers | selectattr("link",  "!=", None) | list %}
@@ -32,8 +30,6 @@
 {% set has_access_data = valid_maps or valid_data or valid_explorers or valid_web_services or valid_code_samples or valid_custom %}
 {% set has_key_details = (Data.licence.name and Data.licence.link) or Data.doi or Data.ecat %}
 
-{% set page_title = Data.title if is_latest_version else Data.version + ": " + Data.title %}
-
 {% set product_ids_label = "Product IDs" if valid_product_ids | length > 1 else "Product ID" %}
 {% set product_types_label = "Product types" if valid_product_types | length > 1 else "Product type" %}
 
@@ -46,22 +42,17 @@
 .. rst-class:: product-page
 
 ======================================================================================================================================================
-{{ page_title }}
+{{ Data.title }}
 ======================================================================================================================================================
 
 .. container:: showcase-panel product-header bg-gradient-primary
 
    .. container::
 
-      .. rubric:: {{ page_title }}
+      .. rubric:: {{ Data.title }}
 
       {{ Data.long_title }}
 
-      {% if not is_latest_version %}
-      :Version: {{ Data.version }} (`See latest version <{{ Data.latest_version_link }}>`_)
-      {%- else %}
-      :Version: {{ Data.version }} (Latest)
-      {%- endif %}
       {%- if valid_product_types %}
       :{{ product_types_label }}: {{ valid_product_types | join(", ") }}
       {%- endif %}
@@ -100,9 +91,6 @@
       `{{ Data.dataset_website.custom_name or "View the external dataset website" }} <{{ Data.dataset_website.link }}>`_
       {% endif %}
       {% endif %}
-
-{% if not is_latest_version %}
-{% endif %}
 
 .. tab-set::
 
@@ -208,12 +196,12 @@
           * - **Persistent ID**
             - `{{ Data.ecat }} <https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/{{ Data.ecat }}>`_
           {%- endif %}
-          {%- if Data.licence %}
-          {%- if Data.licence.name and Data.licence.link %}
-          * - **Licence**
-            - `{{ Data.licence.name }} <{{ Data.licence.link }}>`_
-          {%- endif %}
-          {%- endif %}
+          .. {%- if Data.licence %}
+          .. {%- if Data.licence.name and Data.licence.link %}
+          .. * - **Licence**
+          ..   - `{{ Data.licence.name }} <{{ Data.licence.link }}>`_
+          .. {%- endif %}
+          .. {%- endif %}
        {%- endif %}
 
        {% if Data.citations %}
