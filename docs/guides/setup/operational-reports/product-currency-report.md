@@ -13,9 +13,15 @@ The [DEA Published Product Currency Report][CurrencyReport] tracks the percentag
 
 ## Definition of Currency
 
-Currency is a reporting metric used by DEA that is defined as "the percentage of DEA published data products that are current". It measures how often a product's data is published on time within the financial year (1 July to 30 June) or financial quarter. It is a percentage value where 100% means 'always on time' and 0% means 'never on time'. Currency is tracked for individual products and these are aggregated into an average value for DEA as a whole.
+Currency is a reporting metric that we define as follows.
 
-We also measure whether a product 'is current'. This indicates whether the product currently has the expected data, or if there is currently a delay in publishing. This value is either 'Yes' or 'No'.
+> **Currency:** When data products have been published through Digital Earth Australia in line with the stated update frequency (e.g. daily or yearly) on or before the scheduled publish date (as recorded on the Digital Earth Australia Knowledge Hub).
+
+Essentially, Currency is a measure of the percentage of DEA published data products that are published on time, according to their scheduled publish date. It ranges from 100% meaning 'always on time' to 0% meaning 'never on time'.
+
+Currency is measured on a daily basis (Daily Currency), and these daily values are aggregated into a quarterly and yearly basis (Quarterly Currency and Yearly Currency). Furthermore, Currency can be measured for a single product or it can be aggregated across all products.
+
+We also measure whether a product 'is current'. This refers to whether the product's data is currently up-to-date according to its publishing schedule, or whether a delay is being experienced. The value of 'is current' is either 'Yes' or 'No'.
 
 ## Audience and purpose
 
@@ -31,7 +37,7 @@ Here are explanations of the fields used in this report.
 
 * **Update frequency** &mdash; How often the product data is published.
 * **Last updated** &mdash; The date of the last time that the product data was published.
-* **Is current?** &mdash; Whether the product currently has the expected data (versus, whether it is currently delayed).
+* **Is current?** &mdash; Whether the product currently has the expected data (versus, whether it is currently delayed). For example, if data was scheduled to be published on 1 Jan, but it is now 1 Feb and the data hasn't been published, then this value will be 'No'. When the data is eventually published, this value will change to 'Yes'.
 * **Currency this fin. year** &mdash; The Currency of the product during this financial year, up to the current date. The aggregate of this statistic across all products is included at the top of the report.
 * **Currency previous fin. year** &mdash; The Currency of the product during the previous financial year.
 * **Currency this fin. quarter** &mdash; The Currency of the product during this financial quarter, up to the current date.
