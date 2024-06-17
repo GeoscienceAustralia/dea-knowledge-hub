@@ -13,9 +13,9 @@
 {% set valid_product_ids = Data.product_ids | select("!=", None) | list %}
 {% set valid_custom_citations = Data.custom_citations | select("!=", None) | list %}
 {% set valid_tags = Data.tags | select("!=", None) | list %}
-{% set valid_product_bands = Specifications.products | selectattr("name",  "!=", None) | selectattr("bands",  "!=", None) | list %}
+{% set valid_product_bands = Specifications.bands if Specifications.bands and Specifications.bands.product_tables %}
 
-{% set external_data_label = "Visit the external dataset website" %}
+{% set external_data_label = "Go to the external dataset page" %}
 {% set map_label = "See it on a map" %}
 {% set explorer_label = "Explore data availability" %}
 {% set data_label = "Get the data online" %}
@@ -250,7 +250,7 @@
           <div class="product-tab-table-of-contents"></div>
 
        {% if valid_product_bands %}
-       .. rubric:: Band specifications
+       .. rubric:: Bands
           :name: bands
           :class: h2
 
@@ -260,12 +260,13 @@
        .. _nci: https://knowledge.dea.ga.gov.au/guides/setup/NCI/basics/
        .. _stac_api: https://knowledge.dea.ga.gov.au/guides/setup/gis/stac/
 
-       {% for product in valid_product_bands %}
-       .. rubric:: Bands in {{ product.name }}
-          :name: {{ product.name }}-bands
+       {% for product_table in valid_product_bands.product_tables %}
+       {% set valid_product_table = product_table if product_table.product_name and product_table.bands %}
+       {% if valid_product_table %}
+       {% set valid_bands = valid_product_table.bands | selectattr("name",  "!=", None) | list %}
+       .. rubric:: Bands in {{ valid_product_table.name }}
+          :name: {{ valid_product_table.name }}-bands
           :class: h3
-
-          {% set valid_bands = product.bands | selectattr("name",  "!=", None) | list %}
 
           .. list-table::
              :header-rows: 1
@@ -286,6 +287,7 @@
                - {{ band.type or not_available_text }}
                - {{ band.description or none_text }}
              {% endfor %}
+       {% endif %}
        {% endfor %}
        {% endif %}
     {% endif %}
