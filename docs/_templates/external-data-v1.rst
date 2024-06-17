@@ -249,11 +249,12 @@
 
           <div class="product-tab-table-of-contents"></div>
 
+       {% if valid_product_bands %}
        .. rubric:: Band specifications
           :name: bands
           :class: h2
 
-       A band represents an individual data layer in the product. The bands are standardised across all datasets of the product so that these datasets can be compared with each other and analysed using the same tools. Bands from this product can be inspected and loaded using `datacube` on the `DEA Sandbox <https://knowledge.dea.ga.gov.au/guides/setup/Sandbox/sandbox/>`_ or `NCI <https://knowledge.dea.ga.gov.au/guides/setup/NCI/basics/>`_, or can be accessed externally using the `DEA Explorer STAC API <https://knowledge.dea.ga.gov.au/guides/setup/gis/stac/>`_.
+       Bands are the distinct layers of data within a product. These bands are standardised across all datasets of the product so that the datasets can be compared and analysed easily. Bands can be analysed either by using the 'datacube' package on the `DEA Sandbox <https://knowledge.dea.ga.gov.au/guides/setup/Sandbox/sandbox/>`_ or `NCI <https://knowledge.dea.ga.gov.au/guides/setup/NCI/basics/>`_ or by using the `DEA Explorer STAC API <https://knowledge.dea.ga.gov.au/guides/setup/gis/stac/>`_.
 
        {% for product in valid_product_bands %}
        .. dropdown:: Bands in {{ product.name }}
@@ -263,7 +264,7 @@
           .. list-table::
              :header-rows: 1
 
-             * - Band name
+             * - Name
                - Aliases
                - Resolution
                - CRS
@@ -280,6 +281,7 @@
                - {{ band.description or none_text }}
              {% endfor %}
        {% endfor %}
+       {% endif %}
 
        .. include:: _details.md
           :parser: myst_parser.sphinx_
