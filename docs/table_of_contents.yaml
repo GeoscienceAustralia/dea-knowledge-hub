@@ -142,10 +142,10 @@ entries:
           - file: data/theme/external/index
             title: All
 
-          - file: data/product/ga-ausbathytopo/index
+          - file: data/external-data/ga-ausbathytopo/index
             title: GA AusBathyTopo 250m
-          - file: data/product/abares-clum-2020/index
-          - file: data/product/ga-srtm/index
+          - file: data/external-data/abares-clum-2020/index
+          - file: data/external-data/ga-srtm/index
 
   # User Guides
 

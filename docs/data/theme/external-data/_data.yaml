@@ -3,11 +3,11 @@ description: Supporting datasets provided to assist with analysis of DEA data.
 
 pages:
   - name: GA AusBathyTopo 250m
-    link: /data/product/ga-ausbathytopo/
+    link: /data/external-data/ga-ausbathytopo/
     image: /_files/external-datasets/ga_ausbathytopo250m_2023.thumbnail.jpg
   - name: ABARES CLUM 2020
-    link: /data/product/abares-clum-2020/
+    link: /data/external-data/abares-clum-2020/
     image: /_files/external-datasets/abares_clum_2020.thumbnail.jpg
   - name: SRTM 1 second DEM
-    link: /data/product/ga-srtm/
+    link: /data/external-data/ga-srtm/
     image: /_files/external-datasets/ga_srtm_thumbnail.jpg
