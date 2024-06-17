@@ -39,7 +39,7 @@ tags:
 
 # Access
 
-dataset_website:
+external_dataset_website:
   link: https://www.agriculture.gov.au/abares/aclump/catchment-scale-land-use-of-australia-update-december-2020
   custom_name: null
 

@@ -86,9 +86,9 @@
    
       This dataset is developed by an external party, and is not a DEA product.
 
-      {% if Data.dataset_website %}
-      {% if Data.dataset_website.link %}
-      `{{ Data.dataset_website.custom_name or "View the external dataset website" }} <{{ Data.dataset_website.link }}>`_
+      {% if Data.external_dataset_website %}
+      {% if Data.external_dataset_website.link %}
+      `{{ Data.external_dataset_website.custom_name or "View the external dataset website" }} <{{ Data.external_dataset_website.link }}>`_
       {% endif %}
       {% endif %}
 
@@ -118,13 +118,13 @@
           .. grid:: 2 2 3 5
              :gutter: 3
 
-             {% if Data.dataset_website %}
-             {% if Data.dataset_website.link %}
+             {% if Data.external_dataset_website %}
+             {% if Data.external_dataset_website.link %}
              .. grid-item-card:: :fas:`person-walking-arrow-right`
-                :link: {{ Data.dataset_website.link }}
+                :link: {{ Data.external_dataset_website.link }}
                 :link-alt: The website of the external dataset.
 
-                {{ Data.dataset_website.custom_name or "View the external dataset website" }}
+                {{ Data.external_dataset_website.custom_name or "View the external dataset website" }}
              {% endif %}
              {% endif %}
 

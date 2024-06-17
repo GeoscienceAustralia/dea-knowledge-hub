@@ -38,7 +38,7 @@ tags:
 
 # Access
 
-dataset_website:
+external_dataset_website:
   link: https://pid.geoscience.gov.au/dataset/ga/72759
   custom_name: null
 
