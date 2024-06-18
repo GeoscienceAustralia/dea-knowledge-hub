@@ -41,7 +41,7 @@ The result of the availability of the satellites is that the most consistent dat
 
 Landsat 9 was launched on September 27, 2021, joining Landsats 7 and 8 in orbit, providing optical imagery to the DEA program.
 
-On the 6th April, 2022, Landsat 7 reached the [end of its nominal science mission](https://www.usgs.gov/landsat-missions/news/landsat-7-nominal-science-mission-ending). It was put into a lower Earth orbit that removed it from a repeating ground track, meaning acqusitions are no longer aligned to the World Reference System. Despite the fact that Landsat 7 continues to collect data in the [Landsat 7 Extended Science Mission](https://www.usgs.gov/landsat-missions/landsat-7-extended-science-mission), DEA does not process this data as part of its data collection, and ceased data production at the end of Landsat 7's nominal science mission in April 2022.
+On 6 April 2022, Landsat 7 reached the [end of its nominal science mission](https://www.usgs.gov/landsat-missions/news/landsat-7-nominal-science-mission-ending). It was put into a lower Earth orbit that removed it from a repeating ground track, meaning acquisitions are no longer aligned to the World Reference System. Even though Landsat 7 continues to collect data in the [Landsat 7 Extended Science Mission](https://www.usgs.gov/landsat-missions/landsat-7-extended-science-mission), DEA does not process this data as part of its data collection and ceased data production at the end of Landsat 7's nominal science mission in April 2022.
 
 The overall data availability for the Landsat satellites is shown in Table 1.
 
@@ -58,6 +58,31 @@ The overall data availability for the Landsat satellites is shown in Table 1.
 | *Early 2022 - present* | *Landsat 7 ETM+*                          | *Moved into lower Earth orbit. Now in Extended Science Mission. Data NOT used by DEA*                              |
 
 Table 1: Availability of the Landsat satellites for Earth observation and related issues for product generation
+
+:::
+
+:::{dropdown} Why doesn't DEA make Landsat thermal bands available to users?
+:name: landsat-no-thermal
+
+Landsat satellite sensors not only collect data in the short-wave spectrum but also collect data into the thermal
+infrared bands. The USGS makes this data available in the form of a surface temperature and emissivity product:
+[Landsat Collection 2 Surface Temperature](https://www.usgs.gov/landsat-missions/landsat-collection-2-surface-temperature).
+It provides this separately to the surface reflectance products.
+
+This USGS Surface Temperature product is a global product that uses global datasets to perform
+corrections on the data that are collected by the satellite sensors. The land surface temperature outputs are very
+sensitive to the atmospheric profile data that is used to perform the correction. For the global analysis, the
+[NASA Modern Era Retrospective-Analysis for Research and Applications (MERRA)](https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/)
+atmospheric data is used to provide values for height, air temperature, and humidity. While this dataset works
+well for a global correction, studies over Australia have shown that the correction can be improved
+when higher resolution datasets are considered ([Li et al, 2015](https://mssanz.org.au/modsim2015/L11/li.pdf)).
+
+DEA’s ARD product provides high-quality data corrections for Australian conditions. At present, we do not produce a
+custom land surface temperature dataset for Australia, and so we have not included the thermal bands in our ARD package.
+
+If you would like to use USGS Landsat thermal data directly, we provide a
+[Jupyter notebook](/notebooks/How_to_guides/Planetary_computer/#Load-time-series-satellite-data-from-Microsoft-Planetary-Computer)
+that shows you how to [combine DEA ARD data with USGS thermal data](/notebooks/How_to_guides/Planetary_computer/#Load-time-series-satellite-data-from-Microsoft-Planetary-Computer).
 
 :::
 
