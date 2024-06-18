@@ -16,7 +16,7 @@ time_span:
   start: 1995
   end: 2017
 data_updates:
-  frequency: Updated as needed
+  frequency: AS_NEEDED
   activity: No further updates
 resolution: 30 m
 product_ids:

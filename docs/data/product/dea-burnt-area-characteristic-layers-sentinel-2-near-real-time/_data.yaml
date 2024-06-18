@@ -16,7 +16,7 @@ time_span:
   start: 1 Jul 2021
   end: 29 Aug 2023
 data_updates:
-  frequency: Daily
+  frequency: DAILY
   activity: No further updates
 resolution: 30 m
 product_ids:

@@ -16,7 +16,7 @@ time_span:
   start: 16/08/1986
   end: 17/11/2011
 data_updates:
-  frequency: Daily
+  frequency: DAILY
   activity: Ongoing updates
 resolution: 30 m
 product_ids:

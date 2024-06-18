@@ -16,7 +16,7 @@ time_span:
   start: 12/07/2015
   end: Present
 data_updates:
-  frequency: Daily
+  frequency: DAILY
   activity: Ongoing updates
 resolution: 30 m
 product_ids:

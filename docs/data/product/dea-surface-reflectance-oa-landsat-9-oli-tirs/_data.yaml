@@ -16,7 +16,7 @@ time_span:
   start: 31/10/2021
   end: Present
 data_updates:
-  frequency: Daily
+  frequency: DAILY
   activity: Ongoing updates
 resolution: 30 m
 product_ids:

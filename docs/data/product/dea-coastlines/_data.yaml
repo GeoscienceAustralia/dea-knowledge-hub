@@ -16,7 +16,7 @@ time_span:
   start: 1988
   end: 2022
 data_updates:
-  frequency: Yearly
+  frequency: YEARLY
   activity: Ongoing updates
 resolution: 30 m
 product_ids: null
