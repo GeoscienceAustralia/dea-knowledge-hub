@@ -77,7 +77,7 @@ atmospheric data is used to provide values for height, air temperature and humid
 well for a global correction, over Australia, studies over Australia have shown that the correction can be improved 
 when higher resolution datasets are considered ([Li et al, 2015](https://mssanz.org.au/modsim2015/L11/li.pdf)).  
 
-DEA’s ARD product provides high-quality data corrections for Australian conditions. At present, we are not producing a 
+DEA’s ARD product provides high-quality data corrections for Australian conditions. At present, we do not produce a 
 custom land surface temperature dataset for Australia, and so have not included the thermal bands in our ARD package. 
 
 If you do decide you’d like to make use of Landsat’s thermal data from the USGS directly, we have a 
