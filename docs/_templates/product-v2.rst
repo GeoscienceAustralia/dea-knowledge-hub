@@ -34,7 +34,7 @@
 {% set product_types_label = "Product types" if valid_product_types | length > 1 else "Product type" %}
 
 {% set data_updates_frequency_terms = {
-   "AS_NEEDED": "Updated as needed",
+   "AS_NEEDED": "As needed",
    "DAILY": "Daily",
    "YEARLY": "Yearly",
    "2_YEARS": "Every 2 years",
