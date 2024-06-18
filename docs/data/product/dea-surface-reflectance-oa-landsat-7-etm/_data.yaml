@@ -17,7 +17,7 @@ time_span:
   end: 06/04/2022
 data_updates:
   frequency: DAILY
-  activity: Ongoing updates
+  activity: ONGOING
 resolution: 30 m
 product_ids:
   - ga_ls7e_ard_3

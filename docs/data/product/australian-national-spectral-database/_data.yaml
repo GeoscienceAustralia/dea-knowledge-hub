@@ -17,7 +17,7 @@ time_span:
   end: null
 data_updates:
   frequency: AS_NEEDED
-  activity: Ongoing updates
+  activity: ONGOING
 resolution: 30 m
 product_ids: null
 

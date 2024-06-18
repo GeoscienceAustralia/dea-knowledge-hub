@@ -17,7 +17,7 @@ time_span:
   end: 2016
 data_updates:
   frequency: AS_NEEDED
-  activity: No further updates
+  activity: NONE
 resolution: 30 m
 product_ids:
   - item_v2

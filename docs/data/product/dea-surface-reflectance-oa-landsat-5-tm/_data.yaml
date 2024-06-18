@@ -17,7 +17,7 @@ time_span:
   end: 17/11/2011
 data_updates:
   frequency: DAILY
-  activity: Ongoing updates
+  activity: ONGOING
 resolution: 30 m
 product_ids:
   - ga_ls5t_ard_3

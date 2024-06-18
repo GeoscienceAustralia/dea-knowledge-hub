@@ -17,7 +17,7 @@ time_span:
   end: 29 Aug 2023
 data_updates:
   frequency: DAILY
-  activity: No further updates
+  activity: NONE
 resolution: 30 m
 product_ids:
   - ga_s2_ba_provisional_3

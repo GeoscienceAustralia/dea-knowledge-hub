@@ -17,7 +17,7 @@ time_span:
   end: Present
 data_updates:
   frequency: 10_MIN
-  activity: Ongoing updates
+  activity: ONGOING
 resolution: 30 m
 product_ids: null
 

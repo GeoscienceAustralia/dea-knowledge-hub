@@ -38,7 +38,13 @@
    "DAILY": "Daily",
    "YEARLY": "Yearly",
    "2_YEARS": "Every 2 years",
-   "10_MIN": "Every 10 minutes"
+   "10_MIN": "Every 10 minutes",
+} %}
+
+{% set data_updates_activity_terms = {
+   "ONGOING": "Ongoing updates",
+   "NO_UPDATES": "No further updates",
+   "DECOMMISSIONED": "Decommissioned and no further updates",
 } %}
 
 .. |nbsp| unicode:: 0xA0

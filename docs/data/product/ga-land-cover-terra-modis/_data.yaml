@@ -17,7 +17,7 @@ time_span:
   end: 2015
 data_updates:
   frequency: 2_YEARS
-  activity: No further updates
+  activity: NONE
 resolution: 30 m
 product_ids:
   - ga_ter_m_dlcd_ann

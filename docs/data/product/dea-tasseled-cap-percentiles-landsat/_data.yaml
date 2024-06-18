@@ -17,7 +17,7 @@ time_span:
   end: 2022
 data_updates:
   frequency: YEARLY
-  activity: Ongoing updates
+  activity: ONGOING
 resolution: 30 m
 product_ids:
   - ga_ls_tc_pc_cyear_3

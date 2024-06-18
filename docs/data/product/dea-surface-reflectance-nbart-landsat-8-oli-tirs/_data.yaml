@@ -17,7 +17,7 @@ time_span:
   end: Present
 data_updates:
   frequency: DAILY
-  activity: Ongoing updates
+  activity: ONGOING
 resolution: 30 m
 product_ids:
   - ga_ls8c_ard_3
