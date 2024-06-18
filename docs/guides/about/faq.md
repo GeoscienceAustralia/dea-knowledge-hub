@@ -61,3 +61,28 @@ Table 1: Availability of the Landsat satellites for Earth observation and relate
 
 :::
 
+:::{dropdown} Why doesn't DEA make Landsat thermal bands available to users?
+:name: landsat-no-thermal
+
+Landsat satellites not only collect data in the short-wave spectrum, but also collect data through to the thermal 
+infrared bands. The USGS makes this data available in the form of a 
+[surface temperature and emissivity product](https://www.usgs.gov/landsat-missions/landsat-collection-2-surface-temperature), 
+which it provides separately to the surface reflectance products that DEA ingest to produce our [Analysis Ready Data (ARD) products](/data/category/dea-surface-reflectance/).
+
+The land surface temperature product that USGS produce is a global product, which uses global datasets to perform 
+corrections on the data that are collected by the satellite sensors. The land surface temperature outputs are very 
+sensitive to the atmospheric profile data that is used to perform the correction. For the global analysis, the 
+[NASA Modern Era Retrospective-Analysis for Research and Applications (MERRA)](https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/) 
+atmospheric data is used to provide values for height, air temperature and humidity. While this dataset works 
+well for a global correction, over Australia, studies over Australia have shown that the correction can be improved 
+when higher resolution datasets are considered ([Li et al, 2015](https://mssanz.org.au/modsim2015/L11/li.pdf)).  
+
+DEA’s ARD product provides high-quality data corrections for Australian conditions. At present, we are not producing a 
+custom land surface temperature dataset for Australia, and so have not included the thermal bands in our ARD package. 
+
+If you do decide you’d like to make use of Landsat’s thermal data from the USGS directly, we have a 
+[Jupyter notebook](/notebooks/How_to_guides/Planetary_computer/#Load-time-series-satellite-data-from-Microsoft-Planetary-Computer) 
+that shows you how to [combine DEA ARD data with USGS thermal data](/notebooks/How_to_guides/Planetary_computer/#Load-time-series-satellite-data-from-Microsoft-Planetary-Computer).
+
+:::
+
