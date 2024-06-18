@@ -64,7 +64,7 @@
       {%- elif data.time_span.start  %}
       :Time span: From {{ data.time_span.start }}
       {%- elif data.time_span.end  %}
-      :Ends at: Until {{ data.time_span.end }}
+      :Time span: Until {{ data.time_span.end }}
       {%- endif %}
       {%- endif %}
       :Update frequency: {{ data.update_frequency }}
