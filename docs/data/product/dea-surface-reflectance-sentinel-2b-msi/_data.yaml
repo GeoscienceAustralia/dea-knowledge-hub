@@ -18,7 +18,7 @@ time_span:
 data_updates:
   frequency: DAILY
   activity: ONGOING
-resolution: 10 m
+resolution: 10-60 m
 product_ids:
   - ga_s2bm_ard_3
 
