@@ -62,9 +62,9 @@
       {%- if data.time_span.start and data.time_span.end %}
       :Time span: {{ data.time_span.start }} – {{ data.time_span.end }}
       {%- elif data.time_span.start  %}
-      :Starts at: {{ data.time_span.start }}
+      :Time span: Starts at {{ data.time_span.start }}
       {%- elif data.time_span.end  %}
-      :Ends at: {{ data.time_span.end }}
+      :Time span: Ends at {{ data.time_span.end }}
       {%- endif %}
       {%- endif %}
       :Update frequency: {{ data.update_frequency }}
