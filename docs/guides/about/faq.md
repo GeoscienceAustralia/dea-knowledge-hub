@@ -67,7 +67,7 @@ Table 1: Availability of the Landsat satellites for Earth observation and relate
 Landsat satellites not only collect data in the short-wave spectrum, but also collect data through to the thermal 
 infrared bands. The USGS makes this data available in the form of a 
 [surface temperature and emissivity product](https://www.usgs.gov/landsat-missions/landsat-collection-2-surface-temperature), 
-which it provides separately to the surface reflectance products that DEA ingest to produce our [Analysis Ready Data (ARD) products](/data/category/dea-surface-reflectance/).
+which it provides separately to the surface reflectance products.
 
 The land surface temperature product that USGS produce is a global product, which uses global datasets to perform 
 corrections on the data that are collected by the satellite sensors. The land surface temperature outputs are very 
