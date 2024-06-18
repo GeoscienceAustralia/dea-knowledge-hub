@@ -25,6 +25,20 @@ All new versions of our 'summary derivative products' will be affected by this c
 
 Learn more about the [DEA Summary Product Grid](/guides/reference/collection_3_summary_grid/).
 
+## 2024-06-14: DEA Sandbox service has been restored
+
+The unplanned outage that affected the [DEA Sandbox](https://app.sandbox.dea.ga.gov.au/) today has been resolved. The DEA Sandbox is now back online.
+
+## 2024-06-14: DEA Sandbox unplanned outage (Resolved)
+
+The [DEA Sandbox](https://app.sandbox.dea.ga.gov.au/) is currently experiencing an unplanned outage. We are investigating the issue and hope to have the service back up and running soon. We will post an update when the service is restored.
+
+## 2024-06-12: DEA Intertidal data now available on ELVIS
+
+[DEA Intertidal](/data/product/dea-intertidal/) elevation and uncertainty data can now be ordered and downloaded from the ELVIS platform.
+
+For instructions on how to access this data from ELVIS, visit the [DEA Intertidal page (Access tab)](/data/product/dea-intertidal/?tab=access).
+
 ## 2024-05-30: NCI THREDDS data access links updated to point to the new THREDDS server
 
 NCI has released an upgrade to the THREDDS Data Service and will [decommission the existing THREDDS server after 30th June 2024](https://opus.nci.org.au/display/NDP/THREDDS+Upgrade).
