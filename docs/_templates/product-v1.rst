@@ -51,9 +51,9 @@
       {{ data.long_title }}
 
       {% if not is_latest_version %}
-      :Version: {{ data.version }} (`See latest version <{{ data.latest_version_link }}>`_)
+      :Version: {{ data.version }} (`See latest product version <{{ data.latest_version_link }}>`_)
       {%- else %}
-      :Version: {{ data.version }} (Latest)
+      :Version: {{ data.version }} (Latest product version)
       {%- endif %}
       {%- if valid_product_types %}
       :{{ product_types_label }}: {{ valid_product_types | join(", ") }}
