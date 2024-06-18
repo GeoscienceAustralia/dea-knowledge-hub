@@ -15,9 +15,10 @@ spatial_data_type: Raster
 time_span:
   start: 2002
   end: 2015
-update_frequency: Every 2 years
+data_updates:
+  frequency: Every 2 years
+  activity: No further updates
 resolution: 30 m
-next_update: No updates planned
 product_ids:
   - ga_ter_m_dlcd_ann
 

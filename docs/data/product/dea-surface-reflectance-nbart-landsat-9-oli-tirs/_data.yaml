@@ -15,9 +15,10 @@ spatial_data_type: Raster
 time_span:
   start: 31/10/2021
   end: Present
-update_frequency: Daily
+data_updates:
+  frequency: Daily
+  activity: Ongoing updates
 resolution: 30 m
-next_update: null
 product_ids:
   - ga_ls9c_ard_3
 

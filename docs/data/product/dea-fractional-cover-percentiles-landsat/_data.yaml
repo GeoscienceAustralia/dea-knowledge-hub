@@ -15,7 +15,9 @@ spatial_data_type: Raster
 time_span:
   start: 1987
   end: Present
-update_frequency: Yearly
+data_updates:
+  frequency: Yearly
+  activity: Ongoing updates
 resolution: 30 m
 next_update: null
 product_ids:

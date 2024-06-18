@@ -15,9 +15,10 @@ spatial_data_type: Vector
 time_span:
   start: 1987
   end: 2021
-update_frequency: As needed
+data_updates:
+  frequency: Updated as needed
+  activity: Ongoing updates
 resolution: 30 m
-next_update: null
 product_ids: null
 
 parent_products:

@@ -15,9 +15,10 @@ spatial_data_type: Raster
 time_span:
   start: 1987
   end: 2022
-update_frequency: Yearly
+data_updates:
+  frequency: Daily
+  activity: Ongoing updates
 resolution: 30 m
-next_update: null
 product_ids:
   - ga_ls_mangrove_cover_cyear_3
 
