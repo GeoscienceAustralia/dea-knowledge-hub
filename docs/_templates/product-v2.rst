@@ -228,15 +228,15 @@
           * - **Last updated**
             - {{ data.published }}
           {%- endif %}
-          {% if data.licence %}
-          {% if data.licence.name and data.licence.link %}
+          {%- if data.licence %}
+          {%- if data.licence.name and data.licence.link %}
           * - **Licence**
             - `{{ data.licence.name }} <{{ data.licence.link }}>`_
           {%- endif %}
           {%- endif %}
           {% if data.spatial_data_type != "Vector" and data.data_updates.frequency != data_updates_frequency_terms.AS_NEEDED and data.data_updates.activity == data_updates_activity_terms.ONGOING %}
           * - **Currency**
-            - This product may be tracked in the `DEA Published Product Currency Report <https://mgmt.sandbox.dea.ga.gov.au/public-dashboards/d22241dbfca54b1fa9f73938ef26e645?orgId=1>`_ (if applicable).
+            - This product may be included in the `DEA Published Product Currency Report <https://mgmt.sandbox.dea.ga.gov.au/public-dashboards/d22241dbfca54b1fa9f73938ef26e645?orgId=1>`_ (if applicable).
           {%- endif %}
        {%- endif %}
 
