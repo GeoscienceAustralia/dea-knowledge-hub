@@ -15,9 +15,10 @@ spatial_data_type: Raster
 time_span:
   start: 1988
   end: 2020
-update_frequency: Yearly
+data_updates:
+  frequency: Yearly
+  activity: No further updates
 resolution: 30 m
-next_update: No updates planned
 product_ids:
   - ga_ls_landcover_class_cyear_2
 

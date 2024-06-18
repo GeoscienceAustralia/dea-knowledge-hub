@@ -67,10 +67,7 @@
       :Time span: Ends at {{ data.time_span.end }}
       {%- endif %}
       {%- endif %}
-      :Update frequency: {{ data.update_frequency }}
-      {%- if data.next_update %}
-      :Next update: {{ data.next_update }}
-      {%- endif %}
+      :Data updates: {{ data.data_updates.frequency }}, {{ data.data_updates.activity }}
       :Resolution: {{ data.resolution }}
       {%- if valid_product_ids %}
       :{{ product_ids_label }}: {{ valid_product_ids | join(", ") }}
