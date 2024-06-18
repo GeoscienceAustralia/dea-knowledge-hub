@@ -81,7 +81,7 @@
       :Time span: Ends at {{ data.time_span.end }}
       {%- endif %}
       {%- endif %}
-      :Data updates: {{  data_updates_frequency_terms.get(data.data_updates.frequency, data.data_updates.frequency) }}, {{ data.data_updates.activity }}
+      :Data updates: {{  data_updates_frequency_terms.get(data.data_updates.frequency, data.data_updates.frequency) }}, {{ data_updates_activity_terms.get(data.data_updates.activity, data.data_updates.activity) }}
       :Resolution: {{ data.resolution }}
       {%- if valid_product_ids %}
       :{{ product_ids_label }}: {{ valid_product_ids | join(", ") }}
