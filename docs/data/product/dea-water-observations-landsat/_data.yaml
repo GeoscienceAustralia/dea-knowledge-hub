@@ -16,6 +16,7 @@ time_span:
   start: 16/08/1986
   end: Present
 update_frequency: Daily
+resolution: 30 m
 next_update: null
 product_ids:
   - ga_ls_wo_3

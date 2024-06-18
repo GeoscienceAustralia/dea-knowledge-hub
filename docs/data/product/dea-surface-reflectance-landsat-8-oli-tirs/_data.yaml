@@ -16,6 +16,7 @@ time_span:
   start: 19/03/2013
   end: Present
 update_frequency: Daily
+resolution: 30 m
 next_update: null
 product_ids:
   - ga_ls8c_ard_3

@@ -16,6 +16,7 @@ time_span:
   start: 1988
   end: 2020
 update_frequency: Yearly
+resolution: 30 m
 next_update: No updates planned
 product_ids:
   - ga_ls_landcover_class_cyear_2

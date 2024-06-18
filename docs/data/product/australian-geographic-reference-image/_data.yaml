@@ -16,6 +16,7 @@ time_span:
   start: null
   end: null
 update_frequency: null
+resolution: 30 m
 next_update: No updates planned
 product_ids: null
 

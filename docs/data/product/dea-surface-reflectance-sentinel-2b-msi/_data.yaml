@@ -16,6 +16,7 @@ time_span:
   start: 30/06/2017
   end: Present
 update_frequency: Daily
+resolution: 30 m
 next_update: null
 product_ids:
   - ga_s2bm_ard_3

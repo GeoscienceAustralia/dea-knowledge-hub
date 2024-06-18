@@ -16,6 +16,7 @@ time_span:
   start: 14/03/2023
   end: Present
 update_frequency: Daily
+resolution: 30 m
 next_update: null
 product_ids:
   - ga_s2_wo_provisional_3

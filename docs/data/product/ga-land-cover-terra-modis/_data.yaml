@@ -16,6 +16,7 @@ time_span:
   start: 2002
   end: 2015
 update_frequency: Every 2 years
+resolution: 30 m
 next_update: No updates planned
 product_ids:
   - ga_ter_m_dlcd_ann

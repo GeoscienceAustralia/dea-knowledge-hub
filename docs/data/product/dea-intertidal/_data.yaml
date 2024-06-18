@@ -16,6 +16,7 @@ time_span:
   start: 2016
   end: 2022
 update_frequency: Yearly
+resolution: 30 m
 next_update: null
 product_ids:
   - ga_s2ls_intertidal_cyear_3
