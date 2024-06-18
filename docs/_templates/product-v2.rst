@@ -234,6 +234,10 @@
             - `{{ data.licence.name }} <{{ data.licence.link }}>`_
           {%- endif %}
           {%- endif %}
+          {% if data.spatial_data_type != "Vector" and data.data_updates.frequency != data_updates_frequency_terms.AS_NEEDED and data.data_updates.activity == data_updates_activity_terms.ONGOING %}
+          * - **Currency**
+            - This product may be tracked in the `DEA Published Product Currency Report <https://mgmt.sandbox.dea.ga.gov.au/public-dashboards/d22241dbfca54b1fa9f73938ef26e645?orgId=1>`_ (if applicable).
+          {%- endif %}
        {%- endif %}
 
        {% if data.citations %}
