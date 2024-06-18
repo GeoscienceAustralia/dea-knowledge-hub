@@ -18,7 +18,7 @@ time_span:
 data_updates:
   frequency: YEARLY
   activity: ONGOING
-resolution: 30 m
+resolution: 10 m
 product_ids:
   - ga_s2ls_intertidal_cyear_3
 

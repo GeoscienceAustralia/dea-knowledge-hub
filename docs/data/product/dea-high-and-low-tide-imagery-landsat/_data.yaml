@@ -18,7 +18,7 @@ time_span:
 data_updates:
   frequency: AS_NEEDED
   activity: NO_UPDATES
-resolution: 30 m
+resolution: 25 m
 product_ids:
   - high_tide_comp_20p
   - low_tide_comp_20p

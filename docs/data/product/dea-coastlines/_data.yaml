@@ -18,7 +18,7 @@ time_span:
 data_updates:
   frequency: YEARLY
   activity: ONGOING
-resolution: 30 m
+resolution: TODO
 product_ids: null
 
 parent_products:

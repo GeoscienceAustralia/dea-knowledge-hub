@@ -18,7 +18,7 @@ time_span:
 data_updates:
   frequency: 2_YEARS
   activity: NO_UPDATES
-resolution: 30 m
+resolution: TODO
 product_ids:
   - ga_ter_m_dlcd_ann
 

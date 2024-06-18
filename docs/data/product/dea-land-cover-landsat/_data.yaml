@@ -18,7 +18,7 @@ time_span:
 data_updates:
   frequency: YEARLY
   activity: NO_UPDATES
-resolution: 30 m
+resolution: 25 m
 product_ids:
   - ga_ls_landcover_class_cyear_2
 
