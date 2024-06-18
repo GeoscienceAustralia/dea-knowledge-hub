@@ -16,7 +16,7 @@ time_span:
   start: 1988
   end: 2020
 data_updates:
-  frequency: Yearly
+  frequency: YEARLY
   activity: No further updates
 resolution: 30 m
 product_ids:
