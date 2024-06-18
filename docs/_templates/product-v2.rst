@@ -71,6 +71,7 @@
       {%- if data.next_update %}
       :Next update: {{ data.next_update }}
       {%- endif %}
+      :Resolution: {{ data.resolution }}
       {%- if valid_product_ids %}
       :{{ product_ids_label }}: {{ valid_product_ids | join(", ") }}
       {%- endif %}
