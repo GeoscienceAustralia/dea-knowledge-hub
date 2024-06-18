@@ -17,7 +17,7 @@ time_span:
   end: 2017
 data_updates:
   frequency: AS_NEEDED
-  activity: NONE
+  activity: NO_UPDATES
 resolution: 30 m
 product_ids:
   - high_tide_comp_20p

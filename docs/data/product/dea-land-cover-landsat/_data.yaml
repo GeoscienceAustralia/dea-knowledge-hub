@@ -17,7 +17,7 @@ time_span:
   end: 2020
 data_updates:
   frequency: YEARLY
-  activity: NONE
+  activity: NO_UPDATES
 resolution: 30 m
 product_ids:
   - ga_ls_landcover_class_cyear_2
