@@ -64,7 +64,7 @@ Table 1: Availability of the Landsat satellites for Earth observation and relate
 :::{dropdown} Why doesn't DEA make Landsat thermal bands available to users?
 :name: landsat-no-thermal
 
-Landsat satellites not only collect data in the short-wave spectrum, but also collect data through to the thermal 
+Landsat satellite sensors not only collect data in the short-wave spectrum, but also collect data through to the thermal 
 infrared bands. The USGS makes this data available in the form of a 
 [surface temperature and emissivity product](https://www.usgs.gov/landsat-missions/landsat-collection-2-surface-temperature), 
 which it provides separately to the surface reflectance products.
