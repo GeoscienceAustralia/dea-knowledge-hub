@@ -11,8 +11,11 @@ product_type: Derivative
 spatial_data_type: Vector
 time_span:
   start: 1 Jan 2020
-  end: null
-update_frequency: Yearly
+  end: Present
+data_updates:
+  frequency: DAILY
+  activity: ONGOING
+# resolution: 30 m
 # product_ids:
 #   - example_1
 
