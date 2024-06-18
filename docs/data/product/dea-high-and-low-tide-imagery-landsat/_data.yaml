@@ -17,9 +17,8 @@ time_span:
   end: 2017
 data_updates:
   frequency: Updated as needed
-  activity: Ongoing updates
+  activity: No further updates
 resolution: 30 m
-next_update: No updates planned
 product_ids:
   - high_tide_comp_20p
   - low_tide_comp_20p

@@ -19,7 +19,6 @@ data_updates:
   frequency: Daily
   activity: Ongoing updates
 resolution: 30 m
-next_update: null
 product_ids:
   - ga_s2am_ard_3
 

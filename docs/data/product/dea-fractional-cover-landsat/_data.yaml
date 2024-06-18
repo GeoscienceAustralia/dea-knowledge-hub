@@ -18,7 +18,6 @@ data_updates:
   frequency: Daily
   activity: Ongoing updates
 resolution: 30 m
-next_update: null
 product_ids:
   - ga_ls_fc_3
 
