@@ -16,7 +16,7 @@ time_span:
   start: 2002
   end: 2015
 data_updates:
-  frequency: Every 2 years
+  frequency: 2_YEARS
   activity: No further updates
 resolution: 30 m
 product_ids:

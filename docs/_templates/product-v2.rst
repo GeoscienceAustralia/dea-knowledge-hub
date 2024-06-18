@@ -36,7 +36,9 @@
 {% set data_updates_frequency_terms = {
    "AS_NEEDED": "Updated as needed",
    "DAILY": "Daily",
-   "YEARLY": "Yearly"
+   "YEARLY": "Yearly",
+   "2_YEARS": "Every 2 years",
+   "10_MIN": "Every 10 minutes"
 } %}
 
 .. |nbsp| unicode:: 0xA0
