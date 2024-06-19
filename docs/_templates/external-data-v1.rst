@@ -254,7 +254,7 @@
           :name: bands
           :class: h2
 
-       Bands are the distinct layers of data within a product. These bands are standardised across all datasets of the product so that the datasets can be compared and analysed easily. Bands can be analysed either by using the 'datacube' package on the `DEA Sandbox <dea_sandbox_>`_ or `NCI <nci_>`_ or by using the `DEA Explorer STAC API <stac_api_>`_.
+       Bands are the distinct layers of data within a product which can be loaded using the 'datacube' environment (`DEA Sandbox <dea_sandbox_>`_ or `NCI <nci_>`_) or `STAC API <stac_api_>`_.
 
        .. _dea_sandbox: https://knowledge.dea.ga.gov.au/guides/setup/Sandbox/sandbox/
        .. _nci: https://knowledge.dea.ga.gov.au/guides/setup/NCI/basics/
