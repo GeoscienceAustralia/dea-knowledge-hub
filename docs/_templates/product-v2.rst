@@ -61,9 +61,10 @@
 
       .. rubric:: {{ page_title }}
 
-      {{ data.full_technical_name or "A product provided by Digital Earth Australia" }}
-
-      {% if is_latest_version %}
+      {% if data.full_technical_name %}
+      :Full technical name: {{ data.full_technical_name }}
+      {%- endif %}
+      {%- if is_latest_version %}
       :Version: {{ data.version }}
       {%- else %}
       :Version: {{ data.version }} (`See latest product version <{{ data.latest_version_link }}>`_)
