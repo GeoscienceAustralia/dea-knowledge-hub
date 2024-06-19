@@ -28,7 +28,7 @@
 {% set has_access_data = valid_maps or valid_data or valid_explorers or valid_web_services or valid_code_samples or valid_custom %}
 {% set has_key_details = (data.parent_products.name and data.parent_products.link) or (data.collection.name and data.collection.link) or data.collection.name or data.doi or data.ecat or data.published %}
 
-{% set page_title = data.title if is_latest_version else data.version + ": " + data.title %}
+{% set page_title = data.short_name if is_latest_version else data.version + ": " + data.short_name %}
 
 {% set product_ids_label = "Product IDs" if valid_product_ids | length > 1 else "Product ID" %}
 
@@ -61,7 +61,7 @@
 
       .. rubric:: {{ page_title }}
 
-      {{ data.long_title or "A product provided by Digital Earth Australia" }}
+      {{ data.full_technical_name or "A product provided by Digital Earth Australia" }}
 
       {% if is_latest_version %}
       :Version: {{ data.version }}

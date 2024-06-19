@@ -3,8 +3,8 @@
 
 # Overview
 
-title: DEA Tasseled Cap Percentiles (Landsat)
-long_title: Geoscience Australia Tasseled Cap Percentiles Collection 3
+short_name: DEA Tasseled Cap Percentiles (Landsat)
+full_technical_name: Geoscience Australia Tasseled Cap Percentiles Collection 3
 header_image: /_files/cmi/TCWpercentiles.png
 version: 3.0.0
 is_latest_version: true

@@ -3,8 +3,8 @@
 
 # Overview
 
-title: DEA Surface Reflectance NBART (Landsat 7 ETM+)
-long_title: Geoscience Australia Landsat 7 ETM+ NBART Collection 3
+short_name: DEA Surface Reflectance NBART (Landsat 7 ETM+)
+full_technical_name: Geoscience Australia Landsat 7 ETM+ NBART Collection 3
 header_image: null
 version: 3.0.0
 is_latest_version: true
