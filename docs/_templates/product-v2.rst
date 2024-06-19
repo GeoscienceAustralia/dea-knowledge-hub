@@ -8,11 +8,13 @@
    "web_service": "Web service",
 } %}
 
-{% set map_label = "See it on a map" %}
-{% set explorer_label = "Explore data availability" %}
-{% set data_label = "Get the data online" %}
-{% set web_service_label = "Get via web service" %}
-{% set code_sample_label = "Code sample" %}
+{% set access_labels = {
+   "map": "See it on a map",
+   "explorer": "Explore data availability",
+   "data": "Get the data online",
+   "code_sample": "Code sample",
+   "web_service": "Get via web service",
+} %}
 
 {% set data_updates_frequency_terms = {
    "AS_NEEDED": "As needed",
@@ -143,7 +145,7 @@
              {% for item in valid_maps %}
              .. grid-item-card:: :fas:`map-location-dot`
                 :link: {{ item.link }}
-                :link-alt: {{ map_label }}
+                :link-alt: {{ access_labels.map }}
 
                 {{ item.name or access_names.map }}
              {% endfor %}
@@ -151,7 +153,7 @@
              {% for item in valid_explorers %}
              .. grid-item-card:: :fas:`magnifying-glass`
                 :link: {{ item.link }}
-                :link-alt: {{ explorer_label }}
+                :link-alt: {{ access_labels.explorer }}
 
                 {{ item.name or access_names.explorer }}
              {% endfor %}
@@ -159,7 +161,7 @@
              {% for item in valid_data %}
              .. grid-item-card:: :fas:`database`
                 :link: {{ item.link }}
-                :link-alt: {{ data_label }}
+                :link-alt: {{ access_labels.data }}
 
                 {{ item.name or access_names.data }}
              {% endfor %}
@@ -167,7 +169,7 @@
              {% for item in valid_code_samples %}
              .. grid-item-card:: :fas:`laptop-code`
                 :link: {{ item.link }}
-                :link-alt: {{ code_sample_label }}
+                :link-alt: {{ access_labels.code_sample }}
 
                 {{ item.name or access_names.code_sample }}
              {% endfor %}
@@ -175,7 +177,7 @@
              {% for item in valid_web_services %}
              .. grid-item-card:: :fas:`globe`
                 :link: {{ item.link }}
-                :link-alt: {{ web_service_label }}
+                :link-alt: {{ access_labels.web_service }}
 
                 {{ item.name or access_names.web_service }}
              {% endfor %}
@@ -321,7 +323,7 @@
           :name: access-table
 
           {% if valid_maps %}
-          * - **{{ map_label }}**
+          * - **{{ access_labels.map }}**
             - {% for item in valid_maps %}
               * `{{ item.name or access_names.map }} <{{ item.link }}>`_
               {% endfor %}
@@ -329,7 +331,7 @@
           {% endif %}
 
           {% if valid_explorers %}
-          * - **{{ explorer_label }}**
+          * - **{{ access_labels.explorer }}**
             - {% for item in valid_explorers %}
               * `{{ item.name or access_names.explorer }} <{{ item.link }}>`_
               {% endfor %}
@@ -337,7 +339,7 @@
           {% endif %}
 
           {% if valid_data %}
-          * - **{{ data_label }}**
+          * - **{{ access_labels.data }}**
             - {% for item in valid_data %}
               * `{{ item.name or access_names.data }} <{{ item.link }}>`_
               {% endfor %}
@@ -345,7 +347,7 @@
           {% endif %}
 
           {% if valid_code_samples %}
-          * - **{{ code_sample_label }}**
+          * - **{{ access_labels.code_sample }}**
             - {% for item in valid_code_samples %}
               * `{{ item.name or access_names.code_sample }} <{{ item.link }}>`_
               {% endfor %}
@@ -353,7 +355,7 @@
           {% endif %}
 
           {% if valid_web_services %}
-          * - **{{ web_service_label }}**
+          * - **{{ access_labels.web_service }}**
             - {% for item in valid_web_services %}
               * `{{ item.name or access_names.web_service }} <{{ item.link }}>`_
               {% endfor %}
