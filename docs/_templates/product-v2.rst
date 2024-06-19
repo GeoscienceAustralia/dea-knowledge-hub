@@ -31,7 +31,6 @@
 {% set page_title = data.title if is_latest_version else data.version + ": " + data.title %}
 
 {% set product_ids_label = "Product IDs" if valid_product_ids | length > 1 else "Product ID" %}
-{% set product_types_label = "Product types" if valid_product_types | length > 1 else "Product type" %}
 
 {% set data_updates_frequency_terms = {
    "AS_NEEDED": "As needed",
@@ -64,13 +63,13 @@
 
       {{ data.long_title }}
 
-      {% if not is_latest_version %}
-      :Version: {{ data.version }} (`See latest product version <{{ data.latest_version_link }}>`_)
+      {% if is_latest_version %}
+      :Version: {{ data.version }}
       {%- else %}
-      :Version: {{ data.version }} (Latest product version)
+      :Version: {{ data.version }} (`See latest product version <{{ data.latest_version_link }}>`_)
       {%- endif %}
       {%- if valid_product_types %}
-      :{{ product_types_label }}: {{ valid_product_types | join(", ") }}
+      :Type: {{ valid_product_types | join(", ") }}
       {%- endif %}
       {%- if data.time_span %}
       {%- if data.time_span.start and data.time_span.end %}
