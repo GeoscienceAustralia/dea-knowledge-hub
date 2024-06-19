@@ -1,10 +1,12 @@
 {% set Data = load('_data.yaml') %}
 
-{% set map_default_name = "DEA Maps" %}
-{% set data_default_name = "DEA Data" %}
-{% set explorer_default_name = "Data Explorer" %}
-{% set web_service_default_name = "Web service" %}
-{% set code_sample_default_name = "Code sample" %}
+{% set access_names = {
+   "map": "DEA Maps",
+   "explorer": "Data Explorer",
+   "data": "DEA Data",
+   "code_sample": "Code sample",
+   "web_service": "Web service",
+} %}
 
 {% set map_label = "See it on a map" %}
 {% set explorer_label = "Explore data availability" %}
@@ -143,7 +145,7 @@
                 :link: {{ item.link }}
                 :link-alt: {{ map_label }}
 
-                {{ item.name or map_default_name }}
+                {{ item.name or access_names.map }}
              {% endfor %}
 
              {% for item in valid_explorers %}
@@ -151,7 +153,7 @@
                 :link: {{ item.link }}
                 :link-alt: {{ explorer_label }}
 
-                {{ item.name or explorer_default_name }}
+                {{ item.name or access_names.explorer }}
              {% endfor %}
 
              {% for item in valid_data %}
@@ -159,7 +161,7 @@
                 :link: {{ item.link }}
                 :link-alt: {{ data_label }}
 
-                {{ item.name or data_default_name }}
+                {{ item.name or access_names.data }}
              {% endfor %}
 
              {% for item in valid_code_samples %}
@@ -167,7 +169,7 @@
                 :link: {{ item.link }}
                 :link-alt: {{ code_sample_label }}
 
-                {{ item.name or code_sample_default_name }}
+                {{ item.name or access_names.code_sample }}
              {% endfor %}
 
              {% for item in valid_web_services %}
@@ -175,7 +177,7 @@
                 :link: {{ item.link }}
                 :link-alt: {{ web_service_label }}
 
-                {{ item.name or web_service_default_name }}
+                {{ item.name or access_names.web_service }}
              {% endfor %}
 
              {% for item in valid_custom %}
@@ -321,7 +323,7 @@
           {% if valid_maps %}
           * - **{{ map_label }}**
             - {% for item in valid_maps %}
-              * `{{ item.name or map_default_name }} <{{ item.link }}>`_
+              * `{{ item.name or access_names.map }} <{{ item.link }}>`_
               {% endfor %}
             - Learn how to `use DEA Maps </guides/setup/dea_maps/>`_
           {% endif %}
@@ -329,7 +331,7 @@
           {% if valid_explorers %}
           * - **{{ explorer_label }}**
             - {% for item in valid_explorers %}
-              * `{{ item.name or explorer_default_name }} <{{ item.link }}>`_
+              * `{{ item.name or access_names.explorer }} <{{ item.link }}>`_
               {% endfor %}
             - Learn how to `use the DEA Explorer </setup/explorer_guide/>`_
           {% endif %}
@@ -337,7 +339,7 @@
           {% if valid_data %}
           * - **{{ data_label }}**
             - {% for item in valid_data %}
-              * `{{ item.name or data_default_name }} <{{ item.link }}>`_
+              * `{{ item.name or access_names.data }} <{{ item.link }}>`_
               {% endfor %}
             - Learn how to `access the data via AWS </guides/about/faq/#download-dea-data>`_
           {% endif %}
@@ -345,7 +347,7 @@
           {% if valid_code_samples %}
           * - **{{ code_sample_label }}**
             - {% for item in valid_code_samples %}
-              * `{{ item.name or code_sample_default_name }} <{{ item.link }}>`_
+              * `{{ item.name or access_names.code_sample }} <{{ item.link }}>`_
               {% endfor %}
             - Learn how to `use the DEA Sandbox </guides/setup/Sandbox/sandbox/>`_
           {% endif %}
@@ -353,7 +355,7 @@
           {% if valid_web_services %}
           * - **{{ web_service_label }}**
             - {% for item in valid_web_services %}
-              * `{{ item.name or web_service_default_name }} <{{ item.link }}>`_
+              * `{{ item.name or access_names.web_service }} <{{ item.link }}>`_
               {% endfor %}
             - Learn how to `use DEA's web services </guides/setup/gis/README/>`_
           {% endif %}
