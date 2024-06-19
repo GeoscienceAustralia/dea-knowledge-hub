@@ -254,7 +254,7 @@
           :name: bands
           :class: h2
 
-       Bands are the distinct layers of data within a product which can be loaded using the 'datacube' environment (`DEA Sandbox <dea_sandbox_>`_ or `NCI <nci_>`_) or `STAC API <stac_api_>`_.
+       Bands are the distinct layers of data within a product that can be loaded using the 'datacube' environment (`DEA Sandbox <dea_sandbox_>`_ or `NCI <nci_>`_) or the `STAC API <stac_api_>`_.
 
        .. _dea_sandbox: https://knowledge.dea.ga.gov.au/guides/setup/Sandbox/sandbox/
        .. _nci: https://knowledge.dea.ga.gov.au/guides/setup/NCI/basics/
