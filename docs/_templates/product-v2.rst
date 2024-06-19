@@ -12,7 +12,7 @@
    "map": "See it on a map",
    "explorer": "Explore data availability",
    "data": "Get the data online",
-   "code_sample": "Code sample",
+   "code_sample": "View a code sample",
    "web_service": "Get via web service",
 } %}
 
