@@ -75,6 +75,17 @@ web_services:
   - link: http://geoserver.dea.ga.gov.au/geoserver/wfs?service=WFS&version=1.1.0
     name: Web Feature Service (WFS)
 
+files:
+  - link: https://example.com/
+    name: File 1
+    description: Example file 1
+  - link: https://example.com/
+    name: File 2
+    description: Example file 2
+  - link: https://example.com/
+    name: null
+    description: null
+
 custom: null
 
 # History

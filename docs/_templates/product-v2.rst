@@ -377,7 +377,7 @@
 
           {% for item in valid_files %}
           * - `{{ item.name or item.link }} <{{ item.link }}>`_
-            - {{ item.description }}
+            - {{ item.description if item.description }}
           {% endfor %}
        {% endif %}
 
