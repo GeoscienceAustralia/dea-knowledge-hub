@@ -3,8 +3,8 @@
 
 # Overview
 
-short_name: DEA Mangrove Canopy Cover (Landsat)
-full_technical_name: Geoscience Australia Mangrove Canopy Cover Collection 3
+title: DEA Mangrove Canopy Cover (Landsat)
+long_title: Geoscience Australia Mangrove Canopy Cover Collection 3
 header_image: /_files/cmi/DEA-mangroves.jpg
 version: 3.0.0
 is_latest_version: true

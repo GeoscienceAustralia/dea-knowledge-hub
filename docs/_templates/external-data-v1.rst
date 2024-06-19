@@ -51,9 +51,9 @@
 
    .. container::
 
-      .. rubric:: {{ Data.short_name }}
+      .. rubric:: {{ Data.title }}
 
-      Full technical name: {{ Data.full_technical_name }}
+      {{ Data.long_title }}
 
       {% if valid_product_types %}
       :{{ product_types_label }}: {{ valid_product_types | join(", ") }}

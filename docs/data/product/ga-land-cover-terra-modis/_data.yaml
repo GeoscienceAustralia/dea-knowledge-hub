@@ -3,8 +3,8 @@
 
 # Overview
 
-short_name: Geoscience Australia Land Cover (Terra MODIS)
-full_technical_name: "Dynamic Land Cover Dataset 250m 2.1.0 "
+title: Geoscience Australia Land Cover (Terra MODIS)
+long_title: "Dynamic Land Cover Dataset 250m 2.1.0 "
 header_image: /_files/cmi/dlcd.png
 version: 2.1.0
 is_latest_version: true

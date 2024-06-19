@@ -3,8 +3,8 @@
 
 # Overview
 
-short_name: " DEA Wetlands Insight Tool (Ramsar Wetlands)"
-full_technical_name: Wetlands Insight Tool Ramsar Wetlands Polygons
+title: " DEA Wetlands Insight Tool (Ramsar Wetlands)"
+long_title: Wetlands Insight Tool Ramsar Wetlands Polygons
 header_image: /_files/cmi/WITthumb.png
 version: 4.0.0
 is_latest_version: true

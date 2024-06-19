@@ -3,8 +3,8 @@
 
 # Overview
 
-short_name: DEA Hotspots
-full_technical_name: Digital Earth Australia Hotspots
+title: DEA Hotspots
+long_title: Digital Earth Australia Hotspots
 header_image: /_files/cmi/hotspots.jpg
 version: 1.0.0
 is_latest_version: true

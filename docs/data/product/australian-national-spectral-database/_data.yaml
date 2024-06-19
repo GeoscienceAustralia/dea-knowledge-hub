@@ -3,8 +3,8 @@
 
 # Overview
 
-short_name: Australian National Spectral Database
-full_technical_name: Australian National Spectral Database
+title: Australian National Spectral Database
+long_title: Australian National Spectral Database
 header_image: /_files/cmi/spectral_2.jpg
 version: 3.3.0
 is_latest_version: true
