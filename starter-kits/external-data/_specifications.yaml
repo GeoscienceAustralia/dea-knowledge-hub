@@ -1,15 +1,13 @@
 # Bands
 
-# bands:
-#   products:
-#     - name: example_product_id_1
-#       footnotes: null
-#       bands:
-#       - name: example_band_name
-#         aliases: [example_alias_1, example_alias_2]
-#         resolution: 30 m
-#         crs: Multiple (local UTM) 
-#         nodata: -999
-#         type: int16 
-#         description: A description of the band.
+bands:
+  footnotes: null
+  bands_table:
+  - name: example_band_name
+    aliases: [example_alias_1, example_alias_2]
+    resolution: 30 m
+    crs: Multiple (local UTM) 
+    nodata: -999
+    type: int16 
+    description: A description of the band.
 

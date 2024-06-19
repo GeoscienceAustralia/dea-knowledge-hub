@@ -13,7 +13,7 @@
 {% set valid_product_ids = Data.product_ids | select("!=", None) | list %}
 {% set valid_custom_citations = Data.custom_citations | select("!=", None) | list %}
 {% set valid_tags = Data.tags | select("!=", None) | list %}
-{% set valid_product_bands = Specifications.bands if Specifications.bands and Specifications.bands.products %}
+{% set valid_bands = Specifications.bands.bands_table | selectattr("name",  "!=", None) | list %}
 
 {% set external_data_label = "Go to the external dataset page" %}
 {% set map_label = "See it on a map" %}
@@ -249,7 +249,7 @@
 
           <div class="product-tab-table-of-contents"></div>
 
-       {% if valid_product_bands %}
+       {% if valid_bands %}
        .. rubric:: Bands
           :name: bands
           :class: h2
@@ -259,14 +259,6 @@
        .. _dea_sandbox: https://knowledge.dea.ga.gov.au/guides/setup/Sandbox/sandbox/
        .. _nci: https://knowledge.dea.ga.gov.au/guides/setup/NCI/basics/
        .. _stac_api: https://knowledge.dea.ga.gov.au/guides/setup/gis/stac/
-
-       {% for product_bands_table in valid_product_bands.products %}
-       {% set valid_product_bands_table = product_bands_table if product_bands_table.name and product_bands_table.bands %}
-       {% if valid_product_bands_table %}
-       {% set valid_bands = valid_product_bands_table.bands | selectattr("name",  "!=", None) | list %}
-       .. rubric:: Bands in {{ valid_product_bands_table.name }}
-          :name: {{ valid_product_bands_table.name }}-bands
-          :class: h3
 
        .. list-table::
           :header-rows: 1
@@ -288,9 +280,7 @@
             - {{ band.description or none_text }}
           {% endfor %}
 
-       {{ valid_product_bands_table.footnotes if valid_product_bands_table.footnotes }}
-       {% endif %}
-       {% endfor %}
+       {{ Specifications.bands.footnotes if Specifications.bands.footnotes }}
        {% endif %}
     {% endif %}
 
