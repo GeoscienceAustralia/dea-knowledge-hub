@@ -61,7 +61,7 @@
 
       .. rubric:: {{ page_title }}
 
-      {{ data.long_title }}
+      {{ data.long_title or "A product provided by Digital Earth Australia" }}
 
       {% if is_latest_version %}
       :Version: {{ data.version }}
