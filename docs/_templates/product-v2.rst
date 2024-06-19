@@ -32,7 +32,6 @@
 {% set valid_web_services = data.web_services | selectattr("link",  "!=", None) | list %}
 {% set valid_code_samples = data.code_examples | selectattr("link",  "!=", None) | list %}
 {% set valid_custom = data.custom | selectattr("icon",  "!=", None) | selectattr("link",  "!=", None) | selectattr("name",  "!=", None) | list %}
-{% set valid_files = data.files | selectattr("link",  "!=", None) | list %}
 {% set valid_old_versions = data.old_versions | selectattr("slug",  "!=", None) | selectattr("version",  "!=", None) | selectattr("name",  "!=", None) | list %}
 {% set valid_product_types = [data.product_type, data.spatial_data_type] | select("!=", None) | list %}
 {% set valid_product_ids = data.product_ids | select("!=", None) | list %}
@@ -364,21 +363,6 @@
           {% endfor %}
        {% else %}
        There are no data source links available at the present time.
-       {% endif %}
-
-       {% if valid_files %}
-
-       .. rubric:: Additional files
-          :name: additional-files
-          :class: h2
-
-       .. list-table::
-          :name: additional-files-table
-
-          {% for item in valid_files %}
-          * - `{{ item.name or item.link }} <{{ item.link }}>`_
-            - {{ item.description if item.description }}
-          {% endfor %}
        {% endif %}
 
        .. include:: _access.md
