@@ -61,13 +61,13 @@
 
       .. rubric:: {{ page_title }}
 
-      {% if data.full_technical_name %}
-      :Full name: {{ data.full_technical_name }}
-      {%- endif %}
-      {%- if is_latest_version %}
+      {% if is_latest_version %}
       :Version: {{ data.version }}
       {%- else %}
       :Version: {{ data.version }} (`See latest product version <{{ data.latest_version_link }}>`_)
+      {%- endif %}
+      {%- if data.full_technical_name %}
+      :Full name: {{ data.full_technical_name }}
       {%- endif %}
       {%- if valid_product_ids %}
       :{{ product_ids_label }}: {{ valid_product_ids | join(", ") }}
