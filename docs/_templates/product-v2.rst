@@ -67,11 +67,6 @@
       {%- if valid_product_ids %}
       :{{ product_ids_label }}: {{ valid_product_ids | join(", ") }}
       {%- endif %}
-      {%- if is_latest_version %}
-      :Version: {{ data.version }}
-      {%- else %}
-      :Version: {{ data.version }} (`See latest product version <{{ data.latest_version_link }}>`_)
-      {%- endif %}
       {%- if valid_product_types %}
       :Type: {{ valid_product_types | join(", ") }}
       {%- endif %}
@@ -87,6 +82,11 @@
       :Data updates: {{  data_updates_frequency_terms.get(data.data_updates.frequency, data.data_updates.frequency) }}, {{ data_updates_activity_terms.get(data.data_updates.activity, data.data_updates.activity) }}
       {%- if data.resolution %}
       :Resolution: {{ data.resolution }}
+      {%- endif %}
+      {%- if is_latest_version %}
+      :Version: {{ data.version }}
+      {%- else %}
+      :Version: {{ data.version }} (`See latest product version <{{ data.latest_version_link }}>`_)
       {%- endif %}
 
    .. container::
