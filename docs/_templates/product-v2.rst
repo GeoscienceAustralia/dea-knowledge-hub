@@ -20,7 +20,7 @@
 
 {% set data_updates_activity_terms = {
    "ONGOING": "Ongoing updates",
-   "NO_UPDATES": "No further updates",
+   "NO_UPDATES": "Finished and no further updates",
    "DECOMMISSIONED": "Decommissioned and no further updates",
 } %}
 
@@ -44,9 +44,6 @@
 
 {% set page_title = data.short_name if is_latest_version else data.version + ": " + data.short_name %}
 {% set product_ids_label = "Product IDs" if valid_product_ids | length > 1 else "Product ID" %}
-
-.. |nbsp| unicode:: 0xA0
-   :trim:
 
 .. rst-class:: product-page
 
