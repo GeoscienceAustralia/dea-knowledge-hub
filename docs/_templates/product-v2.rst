@@ -1,3 +1,29 @@
+{% set map_default_name = "DEA Maps" %}
+{% set data_default_name = "DEA Data" %}
+{% set explorer_default_name = "Data Explorer" %}
+{% set web_service_default_name = "Web service" %}
+{% set code_sample_default_name = "Code sample" %}
+
+{% set map_label = "See it on a map" %}
+{% set explorer_label = "Explore data availability" %}
+{% set data_label = "Get the data online" %}
+{% set web_service_label = "Get via web service" %}
+{% set code_sample_label = "Code sample" %}
+
+{% set data_updates_frequency_terms = {
+   "AS_NEEDED": "As needed",
+   "DAILY": "Daily",
+   "YEARLY": "Yearly",
+   "2_YEARS": "Every 2 years",
+   "10_MIN": "Every 10 minutes",
+} %}
+
+{% set data_updates_activity_terms = {
+   "ONGOING": "Ongoing updates",
+   "NO_UPDATES": "No further updates",
+   "DECOMMISSIONED": "Decommissioned and no further updates",
+} %}
+
 {% set is_latest_version = data.is_latest_version %}
 
 {% set valid_maps = data.maps | selectattr("link",  "!=", None) | list %}
@@ -13,38 +39,11 @@
 {% set valid_custom_citations = data.custom_citations | select("!=", None) | list %}
 {% set valid_tags = data.tags | select("!=", None) | list %}
 
-{% set map_label = "See it on a map" %}
-{% set explorer_label = "Explore data availability" %}
-{% set data_label = "Get the data online" %}
-{% set web_service_label = "Get via web service" %}
-{% set code_sample_label = "Code sample" %}
-
-{% set map_default_name = "DEA Maps" %}
-{% set data_default_name = "DEA Data" %}
-{% set explorer_default_name = "Data Explorer" %}
-{% set web_service_default_name = "Web service" %}
-{% set code_sample_default_name = "Code sample" %}
-
 {% set has_access_data = valid_maps or valid_data or valid_explorers or valid_web_services or valid_code_samples or valid_custom %}
 {% set has_key_details = (data.parent_products.name and data.parent_products.link) or (data.collection.name and data.collection.link) or data.collection.name or data.doi or data.ecat or data.published %}
 
 {% set page_title = data.short_name if is_latest_version else data.version + ": " + data.short_name %}
-
 {% set product_ids_label = "Product IDs" if valid_product_ids | length > 1 else "Product ID" %}
-
-{% set data_updates_frequency_terms = {
-   "AS_NEEDED": "As needed",
-   "DAILY": "Daily",
-   "YEARLY": "Yearly",
-   "2_YEARS": "Every 2 years",
-   "10_MIN": "Every 10 minutes",
-} %}
-
-{% set data_updates_activity_terms = {
-   "ONGOING": "Ongoing updates",
-   "NO_UPDATES": "No further updates",
-   "DECOMMISSIONED": "Decommissioned and no further updates",
-} %}
 
 .. |nbsp| unicode:: 0xA0
    :trim:
