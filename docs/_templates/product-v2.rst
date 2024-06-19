@@ -62,7 +62,7 @@
       .. rubric:: {{ page_title }}
 
       {% if data.full_technical_name %}
-      :Full technical name: {{ data.full_technical_name }}
+      :Full name: {{ data.full_technical_name }}
       {%- endif %}
       {%- if is_latest_version %}
       :Version: {{ data.version }}
