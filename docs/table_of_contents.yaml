@@ -137,7 +137,7 @@ entries:
           - file: data/product/dea-burnt-area-characteristic-layers-sentinel-2-near-real-time/index
             title: DEA Burnt Area Characteristic Layers (Provisional)
 
-      - caption: External datasets
+      - caption: External data
         entries:
           - file: data/theme/external-data/index
             title: All
