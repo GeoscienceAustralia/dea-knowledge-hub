@@ -3,8 +3,8 @@
 
 # Overview
 
-title: Example product
-# long_title: Long example product title
+short_name: Example product
+# full_technical_name: Long example product title
 # header_image: /_files/example/image.png
 version: 1.0.0
 product_type: Derivative
