@@ -47,8 +47,6 @@ explorers:
 data:
   - link: https://data.dea.ga.gov.au/?prefix=projects/ga_ausbathytopo250m_2023/
     name: Access the data on AWS
-  - link: https://portal.ga.gov.au/metadata/elevation-and-depth/bathymetry-compilations/australian-bathymetry-and-topography-250m-2023-new-/13fd7f3c-7d54-4719-8aea-c69d00055742
-    name: AusSeabed Marine Data Portal
 
 code_examples: null
 
