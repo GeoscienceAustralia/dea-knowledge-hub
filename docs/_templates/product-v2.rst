@@ -71,6 +71,9 @@
       {%- if valid_product_types %}
       :Type: {{ valid_product_types | join(", ") }}
       {%- endif %}
+      {%- if data.resolution %}
+      :Resolution: {{ data.resolution }}
+      {%- endif %}
       {%- if data.time_span %}
       {%- if data.time_span.start and data.time_span.end %}
       :Time span: {{ data.time_span.start }} – {{ data.time_span.end }}
@@ -81,9 +84,6 @@
       {%- endif %}
       {%- endif %}
       :Data updates: {{  data_updates_frequency_terms.get(data.data_updates.frequency, data.data_updates.frequency) }}, {{ data_updates_activity_terms.get(data.data_updates.activity, data.data_updates.activity) }}
-      {%- if data.resolution %}
-      :Resolution: {{ data.resolution }}
-      {%- endif %}
 
    .. container::
 
