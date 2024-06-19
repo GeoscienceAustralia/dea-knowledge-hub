@@ -48,8 +48,6 @@ explorers:
 data:
   - link: https://data.dea.ga.gov.au/?prefix=projects/abares_clum_2020/
     name: Access the data on AWS
-  - link: https://www.agriculture.gov.au/abares/aclump/catchment-scale-land-use-of-australia-update-december-2020
-    name: ABARES Land Use and Management
 
 code_examples: null
 
