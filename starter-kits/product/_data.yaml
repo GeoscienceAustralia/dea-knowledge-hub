@@ -4,20 +4,20 @@
 # Overview
 
 short_name: Example product
-# full_technical_name: Long example product title
-# header_image: /_files/example/image.png
 version: 1.0.0
+# full_technical_name: Long example product title
+# product_ids:
+#   - example_1
 product_type: Derivative
 spatial_data_type: Vector
+# resolution: 30 m
 time_span:
   start: 1 Jan 2020
   end: Present
 data_updates:
   frequency: DAILY
   activity: ONGOING
-# resolution: 30 m
-# product_ids:
-#   - example_1
+# header_image: /_files/example/image.png
 
 is_latest_version: true
 # latest_version_link: /data/product/example-product/
