@@ -10,8 +10,9 @@ version: 3.2.1
 is_latest_version: true
 latest_version_link: null
 is_provisional: false
-product_type: Baseline
-spatial_data_type: Raster
+type:
+  product_type: Baseline
+  spatial_data_type: Raster
 time_span:
   start: 30/06/2017
   end: Present
