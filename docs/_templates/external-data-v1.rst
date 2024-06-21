@@ -304,7 +304,7 @@
           * - **{{ external_data_label }}**
             - 
               * `{{ valid_external_data.custom_label or external_data_default_name }} <{{ valid_external_data.link }}>`_
-            - The external page should contain information about how to access the data.
+            - Learn how to access the data from the external provider.
           {% endif %}
 
           {% if valid_maps %}
