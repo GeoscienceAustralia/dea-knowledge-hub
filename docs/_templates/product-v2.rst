@@ -63,7 +63,9 @@
 
       .. rubric:: {{ page_title }}
 
-      {% if is_latest_version %}
+      {% if is_latest_version and Data.enable_history %}
+      :Version: {{ Data.version }} (`See history <./?tab=history>`_)
+      {%- elif is_latest_version %}
       :Version: {{ Data.version }}
       {%- else %}
       :Version: {{ Data.version }} (`See latest product version <{{ Data.latest_version_link }}>`_)
