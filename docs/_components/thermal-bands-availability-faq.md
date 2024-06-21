@@ -17,8 +17,7 @@ when higher resolution datasets are considered ([Li et al, 2015](https://mssanz.
 DEA’s ARD product provides high-quality data corrections for Australian conditions. At present, we do not produce a
 custom land surface temperature dataset for Australia, and so we have not included the thermal bands in our ARD package.
 
-If you would like to use USGS Landsat thermal data directly, we provide a
-[Jupyter notebook](/notebooks/How_to_guides/Planetary_computer/#Load-time-series-satellite-data-from-Microsoft-Planetary-Computer)
-that shows you how to [combine DEA ARD data with USGS thermal data](/notebooks/How_to_guides/Planetary_computer/#Load-time-series-satellite-data-from-Microsoft-Planetary-Computer).
+If you would like to use USGS Landsat thermal data directly, we provide a Jupyter notebook that shows you
+[how to combine DEA ARD data with USGS thermal data](/notebooks/How_to_guides/Planetary_computer/#Load-time-series-satellite-data-from-Microsoft-Planetary-Computer).
 :::
 
