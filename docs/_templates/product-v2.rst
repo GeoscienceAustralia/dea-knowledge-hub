@@ -28,9 +28,8 @@
 
 {% set data_updates_activity_terms = {
    "ONGOING": "Ongoing updates",
-   "NO_UPDATES": "Finished (no further updates)",
-   "DECOMMISSIONED": "Decommissioned (no further updates)",
-   "PAUSED": "Paused (updates are temporarily paused)",
+   "NO_UPDATES": "No further updates",
+   "PAUSED": "Updates are currently paused",
 } %}
 
 {% set is_latest_version = Data.is_latest_version %}
