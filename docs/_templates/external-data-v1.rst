@@ -67,10 +67,6 @@
       :Ends at: {{ Data.time_span.end }}
       {%- endif %}
       {%- endif %}
-      :Update frequency: {{ Data.update_frequency }}
-      {%- if Data.next_update %}
-      :Next update: {{ Data.next_update }}
-      {%- endif %}
       {%- if valid_product_ids %}
       :{{ product_ids_label }}: {{ valid_product_ids | join(", ") }}
       {%- endif %}
