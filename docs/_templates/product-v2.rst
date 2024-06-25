@@ -80,11 +80,11 @@
       {%- endif %}
       {%- if Data.time_span %}
       {%- if Data.time_span.start and Data.time_span.end %}
-      :Time span: {{ Data.time_span.start }} – {{ Data.time_span.end }}
+      :Data time span: {{ Data.time_span.start }} – {{ Data.time_span.end }}
       {%- elif Data.time_span.start  %}
-      :Time span: Starts at {{ Data.time_span.start }}
+      :Data time span: Starts at {{ Data.time_span.start }}
       {%- elif Data.time_span.end  %}
-      :Time span: Ends at {{ Data.time_span.end }}
+      :Data time span: Ends at {{ Data.time_span.end }}
       {%- endif %}
       {%- endif %}
       {% if Data.data_updates.frequency == "NO_UPDATES" %}
