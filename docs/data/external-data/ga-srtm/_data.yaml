@@ -36,7 +36,8 @@ tags:
 
 external_data_page:
   link: https://pid.geoscience.gov.au/dataset/ga/72759
-  custom_label: "See an example of how to use this data in the DEA Notebook: `Extracting contour lines </notebooks/How_to_guides/Contour_extraction/>`_"
+  custom_label: null
+  custom_description: "See an example of how to use this data in the DEA Notebook: `Extracting contour lines </notebooks/How_to_guides/Contour_extraction/>`_"
 
 maps: null
 

@@ -38,6 +38,7 @@ licence:
 # external_data_page:
 #   link: https://example.com
 #   custom_label: null
+#   custom_description: null
 
 # maps:
 #   - link: https://example.com
