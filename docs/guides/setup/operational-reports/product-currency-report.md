@@ -87,10 +87,15 @@ For products in **Table B**, the following calculations are made. This is a part
 1. An automated script runs every day to calculate the Currency of the products in this table based on their **Latest release** date and **Next update due** dates. Internal staff can learn about the [technical details of this script and other details of Table B][CurrencyInternalDoc].
 1. The Currency value is then calculated as follows.
     * If the product is overdue ($\text{Days overdue} > 0$), then the formula is used:
+
         $\text{Currency} = 100 - (\frac{\text{Days overdue}}{365.25} \times 100)$
+
         This formula calculates the number of days overdue as a percentage of the entire year (365.25). Therefore, if the product is 5 days overdue, the Currency will be 98.63%.
+
         Note that the Currency is always a value between 0 and 100. It cannot be a negative value.
+
     * Otherwise, if the product is not overdue ($\text{Days overdue} = 0$), the Currency will be 100.
+1. Each financial year, a few manual steps are required. Please see the [internal documentation][CurrencyInternalDoc].
 
 ## History report
 
