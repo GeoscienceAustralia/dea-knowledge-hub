@@ -82,11 +82,13 @@ For products in **Table A**, the following calculations are made. This is an aut
 1. Check the 'business rule' for the product. This rule defines the maximum threshold for this age value that we calculated. For instance, a product may have a business rule of $\leq 16\ days$. This means that if the age is more than 16 days, then the data is overdue. We run this check every day and if the age is within the threshold, we assign 100% Currency for that day; whereas, if the age is above the threshold, we assign 0% Currency for that day.
 1. The Currency values over a span of multiple days are averaged to find the Currency for each financial year and the Currency for each financial quarter.
 
+<span id="table-b"></span>
+
 ### Table B calculations
 
 For products in **Table B**, the following calculations are made. This is a partially automatic and partially manual process.
 
-1. An automated script runs every day to calculate the Currency of the products in this table based on their **Latest release** date and **Next update due** dates. Internal staff can learn about the [technical details of this script and other details of Table B][CurrencyInternalDoc].
+1. An automated script runs every day to calculate the Currency of the products in this table based on their **Latest release** date and **Next update due** dates. Internal staff can learn about the [technical details of this script and other details of Table B][CurrencyInternalDocTableB].
 1. The Currency value is then calculated as follows.
     * If the product is overdue ($\text{Days overdue} > 0$), then the formula is used:
 
@@ -97,7 +99,7 @@ For products in **Table B**, the following calculations are made. This is a part
         Note that the Currency is always a value between 0% and 100%. It cannot be a negative value.
 
     * Otherwise, if the product is not overdue ($\text{Days overdue} = 0$), then the Currency will be 100%.
-1. Each financial year, a few manual steps are required. Internal staff will need to [complete the manual steps][CurrencyInternalDoc].
+1. Each financial year, a few manual steps are required. Internal staff will need to [complete the manual steps][CurrencyInternalDocManualSteps].
 
 ## History report
 
@@ -108,4 +110,6 @@ Note that it doesn't include the data from 'Products (Table B)' of this report d
 [CurrencyReport]: https://mgmt.sandbox.dea.ga.gov.au/public-dashboards/d22241dbfca54b1fa9f73938ef26e645?orgId=1
 [HistoryReport]: https://mgmt.sandbox.dea.ga.gov.au/d/c1674b20-8c8a-4d90-aef2-02796275cf2b/4e57919d-fc9d-59d7-9bd1-aa61d41bcb92?orgId=1
 [CurrencyInternalDoc]: https://docs.dev.dea.ga.gov.au/internal_services/reporting-systems/etls/currency.html
+[CurrencyInternalDocTableB]: https://docs.dev.dea.ga.gov.au/internal_services/reporting-systems/etls/currency.html#table-b
+[CurrencyInternalDocManualSteps]: https://docs.dev.dea.ga.gov.au/internal_services/reporting-systems/etls/currency.html#manual-steps
 [CurrencyLogbook]: https://docs.dev.dea.ga.gov.au/internal_services/reporting-systems/etls/currency_logbook.html#currency-report-logbook
