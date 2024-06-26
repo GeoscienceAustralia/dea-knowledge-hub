@@ -5,6 +5,12 @@ The [DEA Published Product Currency Report][CurrencyReport] tracks the percentag
 
 (Internal staff can view the full history of data in the [Currency History report][HistoryReport] which will also be explained in this guide. Internal staff can also [contribute to the Currency logbook][CurrencyLogbook].)
 
+:::{admonition} Start exploring
+:class: note
+
+Open the [DEA Published Product Currency Report][CurrencyReport]
+:::
+
 :::{contents} In this guide
 :depth: 1
 :local:
