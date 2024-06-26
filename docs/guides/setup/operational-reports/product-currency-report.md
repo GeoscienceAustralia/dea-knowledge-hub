@@ -57,17 +57,17 @@ For example, the [DEA Wetlands Insight Tool][WetlandsInsight] products are only 
 [WetlandsInsight]: https://knowledge.dea.ga.gov.au/data/category/dea-wetlands-insight-tool/
 [LandCover]: https://knowledge.dea.ga.gov.au/data/product/dea-land-cover-landsat/
 
-## Products vs Yearly products
+## Table A vs Table B
 
-The report contains two tables: **Products** and **Yearly products**. The Products table contains the Daily products and other products that can be tracked automatically by our system. Alternately, the Yearly products table contains the Yearly products and any other products that cannot be tracked manually by our system. The Yearly products table is partially automatic, but requires some manual data entry from our staff.
+The report contains two tables: **Products (Table A)** and **Products (Table B)**. Table A contains the Daily products and other products that can be tracked automatically by our system. Alternately, Table B contains the Yearly products and any other products that cannot be tracked manually by our system. Table B is partially automatic &mdash; it requires some manual data entry from our staff.
 
-One thing to note about Yearly products is that we may schedule to publish them on a different date each year. Hence, if a yearly product was published on 1 August last year, you can't assume that it will be published on 1 August this year.
+One thing to note about Yearly products is that we may schedule to publish them on a different date each year. Hence, if a yearly product was published on 1 August last year, you cannot assume that it will be published on 1 August this year.
 
 ## How Currency is calculated
 
 Currency is calculated by finding out the age of the latest 'scene' of a product. To find out this age and calculate the Currency for each product, we use one of three methods: ODC Currency method, SQS Currency method, and Currency from Completeness method. Internal staff can learn the [technical details of these Currency methods][CurrencyInternalDoc].
 
-The Currency values go through a few more calculations before they are added to the **Products** table in this report.
+The Currency values go through a few more calculations before they are added to **Products (Table A)** in this report.
 
 1. Start with the Currency age value calculated from the latest 'scene' of the product. Remember that this is calculated from the difference between the latest scene's acquisition date and the calendar time.
 
