@@ -3,7 +3,7 @@
 
 The [DEA Published Product Currency Report][CurrencyReport] tracks the percentage of DEA published data products that are current. Note that products that don't periodically publish new data and provisional products are excluded from this report.
 
-(Internal staff can view the full history of data in the [Currency History report][HistoryReport] which will also be explained in this guide. Internal staff can also [contribute to the Currency logbook][CurrencyLogbook].)
+(Internal staff can view the full history of data in the [Currency History Report][HistoryReport] which will also be explained in this guide. Internal staff can also [contribute to the Currency logbook][CurrencyLogbook].)
 
 :::{admonition} Get started
 :class: note
@@ -65,7 +65,7 @@ For example, the [DEA Wetlands Insight Tool][WetlandsInsight] products are only 
 
 ## Table A vs Table B
 
-The report contains two tables: **Products (Table A)** and **Products (Table B)**. Table A contains the Daily products and any other products that can be tracked automatically by our system. In contrast, Table B contains the Yearly products and any other products that cannot be tracked automatically by our system. Table B is partially automatic but requires some manual data entry from our staff. (Nevertheless, Table B displays data that is up-to-date to the present day.)
+The report contains two tables: **Products (Table A)** and **Products (Table B)**. Table A contains the Daily products and any other products that can be tracked automatically by our system. In contrast, Table B contains the Yearly products and any other products that cannot be tracked automatically by our system. Table B is partially automatic but requires a small amount of data entry from our staff once per year.
 
 One thing to note about Yearly products is that we may schedule to publish them on a different date each year. Hence, if a yearly product was published on 1 August last year, you cannot assume that it will be published on 1 August this year.
 
@@ -77,11 +77,8 @@ The way that Currency is calculated differs between Table A and Table B.
 
 For products in **Table A**, the following calculations are made. This is an automatic process.
 
-1. Find out the age of the latest 'scene' of a product. To find out this age and calculate the Currency for each product, we use one of three methods: ODC Currency method, SQS Currency method, and Currency from Completeness method. Internal staff can learn the [technical details of these Currency methods][CurrencyInternalDoc].
-1. Start with the Currency age value calculated from the latest 'scene' of the product. Remember that this is calculated from the difference between the latest scene's acquisition date and the calendar time.
-
-    $\text{Age} = \text{Acquisition date} - \text{Calendar time}$
-
+1. Find out the age of the latest 'scene' of a product. To find out this age, we use one of multiple methods. Internal staff can learn the [technical details of these Currency methods][CurrencyInternalDoc]. The latest scene is compared to the current calendar date to find the age.
+    $\text{Age} = \text{Acquisition date} - \text{Calendar date}$
 1. Check the 'business rule' for the product. This rule defines the maximum threshold for this age value that we calculated. For instance, a product may have a business rule of $\leq 16\ days$. This means that if the age is more than 16 days, then the data is overdue. We run this check every day and if the age is within the threshold, we assign 100% Currency for that day; whereas, if the age is above the threshold, we assign 0% Currency for that day.
 1. The Currency values of a span of multiple days are averaged to find the Currency for each financial year and the Currency for each financial quarter.
 
@@ -95,16 +92,18 @@ For products in **Table B**, the following calculations are made. This is a part
 
         $\text{Currency} = 100 - (\frac{\text{Days overdue}}{365.25} \times 100)$
 
-        This formula calculates the number of days overdue as a percentage of the entire year (365.25). Therefore, if the product is 5 days overdue, the Currency will be 98.63%.
+        This formula calculates the number of days overdue as a percentage of the entire year (365.25 days). Therefore, if the product is 5 days overdue, the Currency will be 98.63%.
 
-        Note that the Currency is always a value between 0 and 100. It cannot be a negative value.
+        Note that the Currency is always a value between 0% and 100%. It cannot be a negative value.
 
-    * Otherwise, if the product is not overdue ($\text{Days overdue} = 0$), then the Currency will be 100.
+    * Otherwise, if the product is not overdue ($\text{Days overdue} = 0$), then the Currency will be 100%.
 1. Each financial year, a few manual steps are required. Internal staff will need to [complete the manual steps][CurrencyInternalDoc].
 
 ## History report
 
-The [Currency History report][CurrencyReport] report provides a history of the data from the Currency report since the beginning of when we started tracking this statistic: 1 July 2024. It can only be accessed by internal stakeholders. This report uses the same data as the Currency report but it includes the history of previous years. However, note that it doesn't include the data from 'Products (Table B)' of this report due to technical limitations. Instead, the historical data of 'Products (Table B)' is stored in a log table in the database.
+The [Currency History Report][CurrencyReport] report provides a history of the data from the Currency report since the beginning of when we started tracking this statistic: 1 July 2024. It can only be accessed by internal stakeholders. This report uses the same data as the Currency report but it includes the history of previous years.
+
+Note that it doesn't include the data from 'Products (Table B)' of this report due to technical limitations. Instead, the historical data of 'Products (Table B)' is stored in a log table in the database.
 
 [CurrencyReport]: https://mgmt.sandbox.dea.ga.gov.au/public-dashboards/d22241dbfca54b1fa9f73938ef26e645?orgId=1
 [HistoryReport]: https://mgmt.sandbox.dea.ga.gov.au/d/c1674b20-8c8a-4d90-aef2-02796275cf2b/4e57919d-fc9d-59d7-9bd1-aa61d41bcb92?orgId=1
