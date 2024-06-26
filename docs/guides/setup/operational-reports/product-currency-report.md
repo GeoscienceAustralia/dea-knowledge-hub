@@ -75,7 +75,7 @@ For products in **Table A**, the following calculations are made. This is an aut
 
 1. Start with the Currency age value calculated from the latest 'scene' of the product. Remember that this is calculated from the difference between the latest scene's acquisition date and the calendar time.
 
-    $age = acquisition\_date - calendar\_time$
+    $\text{Age} = \text{Acquisition date} - \text{Calendar time}$
 
 1. Check the 'business rule' for the product. This rule defines the maximum threshold for this age value that we calculated. For instance, a product may have a business rule of $\leq 16\ days$. This means that if the age is more than 16 days, then the data is overdue. We run this check every day and if the age is within the threshold, we assign 100% Currency for that day; whereas, if the age is above the threshold, we assign 0% Currency for that day.
 1. The Currency values of a span of multiple days are averaged to find the Currency for each financial year and the Currency for each financial quarter.
@@ -84,17 +84,17 @@ For products in **Table A**, the following calculations are made. This is an aut
 
 For products in **Table B**, the following calculations are made. This is a partially automatic and partially manual process.
 
-1. Our staff manually enter the number of days that the product has been overdue. <!-- TODO update this section when the way we calculate these is changed -->
-1. The Currency is calculated using the formula:
-    $100 - (\frac{d}{365.25} \times 100)$
-
-    Where $d$ is the number of days overdue this financial year.
-
-    For example, if the product has been overdue for 5 days, the Yearly Currency will be 98.63%.
+1. An automated script runs every day to calculate the Currency of the products in this table based on their **Latest release** date and **Next update due** dates. Internal staff can learn about the [technical details of this script and other details of Table B][CurrencyInternalDoc].
+1. The Currency value is then calculated as follows.
+    * If the product is overdue ($\text{Days overdue} > 0$), then the formula is used:
+        $\text{Currency} = 100 - (\frac{\text{Days overdue}}{365.25} \times 100)$
+        This formula calculates the number of days overdue as a percentage of the entire year (365.25). Therefore, if the product is 5 days overdue, the Currency will be 98.63%.
+        Note that the Currency is always a value between 0 and 100. It cannot be a negative value.
+    * Otherwise, if the product is not overdue ($\text{Days overdue} = 0$), the Currency will be 100.
 
 ## History report
 
-The [Currency History report][CurrencyReport] report provides a history of the data from the Currency report since the beginning of when we started tracking this statistic: 1 July 2024. It can only be accessed by internal stakeholders. This report uses the same data as the Currency report but it includes the history of previous years. However, note that it doesn't include the data from the Yearly products table of this report, due to technical limitations. The Yearly products historical data is stored in a 'log table' in the database.
+The [Currency History report][CurrencyReport] report provides a history of the data from the Currency report since the beginning of when we started tracking this statistic: 1 July 2024. It can only be accessed by internal stakeholders. This report uses the same data as the Currency report but it includes the history of previous years. However, note that it doesn't include the data from 'Products (Table B)' of this report due to technical limitations. Instead, the historical data of 'Products (Table B)' is stored in a log table in the database.
 
 [CurrencyReport]: https://mgmt.sandbox.dea.ga.gov.au/public-dashboards/d22241dbfca54b1fa9f73938ef26e645?orgId=1
 [HistoryReport]: https://mgmt.sandbox.dea.ga.gov.au/d/c1674b20-8c8a-4d90-aef2-02796275cf2b/4e57919d-fc9d-59d7-9bd1-aa61d41bcb92?orgId=1
