@@ -71,7 +71,7 @@ One thing to note about Yearly products is that we may schedule to publish them 
 
 ## How Currency is calculated
 
-A few more calculations are done before the Currency values are added to the report. These calculations differ between Table A and Table B.
+The way that Currency is calculated differs between Table A and Table B.
 
 ### Table A calculations
 
