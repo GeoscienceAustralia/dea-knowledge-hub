@@ -1,4 +1,4 @@
-:::{dropdown} What is the Currency of our data products (are they published on time)?
+:::{dropdown} What is the Currency of our data products and are they on time?
 
 Currency is a measure of how consistently DEA's data products have been published through DEA in line with the stated update frequency on or before the scheduled publish date. See the [DEA Published Product Currency Report][CurrencyReport].
 :::
