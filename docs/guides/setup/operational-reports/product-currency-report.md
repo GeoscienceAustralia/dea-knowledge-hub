@@ -5,7 +5,7 @@ The [DEA Published Product Currency Report][CurrencyReport] tracks the percentag
 
 (Internal staff can view the full history of data in the [Currency History report][HistoryReport] which will also be explained in this guide. Internal staff can also [contribute to the Currency logbook][CurrencyLogbook].)
 
-:::{admonition} Start exploring
+:::{admonition} Get started
 :class: note
 
 Open the [DEA Published Product Currency Report][CurrencyReport]
@@ -23,19 +23,19 @@ Currency is a reporting metric that we define as follows.
 
 > **Currency:** A measure of how consistently Digital Earth Australia's data products have been published through Digital Earth Australia in line with the stated update frequency (e.g. daily or yearly) on or before the scheduled publish date (as recorded on the Digital Earth Australia Knowledge Hub).
 
-Essentially, Currency is a measure of the percentage of DEA published data products that are published on time, according to their scheduled publish date. It ranges from 100% meaning 'always on time' to 0% meaning 'never on time'.
+Essentially, Currency measures how often DEA's data products publish their data on time, according to their scheduled publish dates. It ranges from 100% meaning 'always on time' to 0% meaning 'never on time'.
 
-Currency is measured on a daily basis (Daily Currency), and these daily values are aggregated into a quarterly and yearly basis (Quarterly Currency and Yearly Currency). Furthermore, Currency can be measured for a single product or it can be aggregated across all products.
+Currency can be measured on a daily, quarterly, and yearly basis (Daily Currency, Quarterly Currency, and Yearly Currency). Furthermore, Currency can be measured for a single product or it can be aggregated across all products.
 
 We also measure whether a product 'is current'. This refers to whether the product's data is currently up-to-date according to its publishing schedule, or whether a delay is being experienced. The value of 'is current' is either 'Yes' or 'No'.
 
 ## Audience and purpose
 
-The [Currency Report][CurrencyReport] is provided for both external and internal stakeholders. External auditors can use it to verify that DEA is meeting their performance targets. Internally, we may use it to gain insight on which products have high performance versus which products have encountered difficulties.
+The [Currency Report][CurrencyReport] is provided for the public and also for internal stakeholders. External auditors can use it to verify that DEA is meeting their performance targets. Internally, we use it for our annual reporting practices.
 
 ## Financial year reporting cycle
 
-The reporting cycle is the Financial Year (FY) which starts in 1 July and ends in 30 June each year. Furthermore, the report uses Financial Quarters &mdash; these are Q1 (1 Jul &ndash; 30 Sep), Q2 (1 Oct &ndash; 31 Dec), Q3 (1 Jan &ndash; 31 Mar), and Q4 (1 Apr &ndash; 30 Jun).
+This report is based on the Financial Year (FY) which starts in 1 July and ends in 30 June each year. Furthermore, the report uses Financial Quarters &mdash; these are Q1 (1 Jul &ndash; 30 Sep), Q2 (1 Oct &ndash; 31 Dec), Q3 (1 Jan &ndash; 31 Mar), and Q4 (1 Apr &ndash; 30 Jun).
 
 ## Fields of the report
 
@@ -65,13 +65,11 @@ For example, the [DEA Wetlands Insight Tool][WetlandsInsight] products are only 
 
 ## Table A vs Table B
 
-The report contains two tables: **Products (Table A)** and **Products (Table B)**. Table A contains the Daily products and other products that can be tracked automatically by our system. Alternately, Table B contains the Yearly products and any other products that cannot be tracked manually by our system. Table B is partially automatic &mdash; it requires some manual data entry from our staff.
+The report contains two tables: **Products (Table A)** and **Products (Table B)**. Table A contains the Daily products and any other products that can be tracked automatically by our system. In contrast, Table B contains the Yearly products and any other products that cannot be tracked automatically by our system. Table B is partially automatic but requires some manual data entry from our staff. (Nevertheless, Table B displays data that is up-to-date to the present day.)
 
 One thing to note about Yearly products is that we may schedule to publish them on a different date each year. Hence, if a yearly product was published on 1 August last year, you cannot assume that it will be published on 1 August this year.
 
 ## How Currency is calculated
-
-Currency is calculated by finding out the age of the latest 'scene' of a product. To find out this age and calculate the Currency for each product, we use one of three methods: ODC Currency method, SQS Currency method, and Currency from Completeness method. Internal staff can learn the [technical details of these Currency methods][CurrencyInternalDoc].
 
 A few more calculations are done before the Currency values are added to the report. These calculations differ between Table A and Table B.
 
@@ -79,6 +77,7 @@ A few more calculations are done before the Currency values are added to the rep
 
 For products in **Table A**, the following calculations are made. This is an automatic process.
 
+1. Find out the age of the latest 'scene' of a product. To find out this age and calculate the Currency for each product, we use one of three methods: ODC Currency method, SQS Currency method, and Currency from Completeness method. Internal staff can learn the [technical details of these Currency methods][CurrencyInternalDoc].
 1. Start with the Currency age value calculated from the latest 'scene' of the product. Remember that this is calculated from the difference between the latest scene's acquisition date and the calendar time.
 
     $\text{Age} = \text{Acquisition date} - \text{Calendar time}$
