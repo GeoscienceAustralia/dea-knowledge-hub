@@ -67,7 +67,11 @@ One thing to note about Yearly products is that we may schedule to publish them 
 
 Currency is calculated by finding out the age of the latest 'scene' of a product. To find out this age and calculate the Currency for each product, we use one of three methods: ODC Currency method, SQS Currency method, and Currency from Completeness method. Internal staff can learn the [technical details of these Currency methods][CurrencyInternalDoc].
 
-The Currency values go through a few more calculations before they are added to **Products (Table A)** in this report.
+A few more calculations are done before the Currency values are added to the report. These calculations differ between Table A and Table B.
+
+### Table A calculations
+
+For products in **Table A**, the following calculations are made. This is an automatic process.
 
 1. Start with the Currency age value calculated from the latest 'scene' of the product. Remember that this is calculated from the difference between the latest scene's acquisition date and the calendar time.
 
@@ -76,7 +80,9 @@ The Currency values go through a few more calculations before they are added to 
 1. Check the 'business rule' for the product. This rule defines the maximum threshold for this age value that we calculated. For instance, a product may have a business rule of $\leq 16\ days$. This means that if the age is more than 16 days, then the data is overdue. We run this check every day and if the age is within the threshold, we assign 100% Currency for that day; whereas, if the age is above the threshold, we assign 0% Currency for that day.
 1. The Currency values of a span of multiple days are averaged to find the Currency for each financial year and the Currency for each financial quarter.
 
-Alternately, in the **Yearly products** table, the Currency is calculated differently. The products in this table are those that can't use any of the automatic Currency methods that rely on finding the latest scene. For technical reasons, these products must instead be tracked manually.
+### Table B calculations
+
+For products in **Table B**, the following calculations are made. This is a partially automatic and partially manual process.
 
 1. Our staff manually enter the number of days that the product has been overdue. <!-- TODO update this section when the way we calculate these is changed -->
 1. The Currency is calculated using the formula:
