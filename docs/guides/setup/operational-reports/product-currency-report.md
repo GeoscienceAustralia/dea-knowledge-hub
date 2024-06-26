@@ -94,8 +94,8 @@ For products in **Table B**, the following calculations are made. This is a part
 
         Note that the Currency is always a value between 0 and 100. It cannot be a negative value.
 
-    * Otherwise, if the product is not overdue ($\text{Days overdue} = 0$), the Currency will be 100.
-1. Each financial year, a few manual steps are required. Please see the [internal documentation][CurrencyInternalDoc].
+    * Otherwise, if the product is not overdue ($\text{Days overdue} = 0$), then the Currency will be 100.
+1. Each financial year, a few manual steps are required. Internal staff will need to [complete the manual steps][CurrencyInternalDoc].
 
 ## History report
 
