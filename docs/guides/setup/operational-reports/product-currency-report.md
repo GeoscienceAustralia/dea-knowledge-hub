@@ -58,7 +58,7 @@ Currency can only be meaningfully tracked for certain types of products and that
 * It is **not updated periodically** &mdash; Only products that are updated on a periodic basis (e.g. Daily or Yearly) are included in this report.
 * It does **not have any updates planned** &mdash; Products for which we don't plan to publish any more data are not included in this report.
 
-For example, the [DEA Wetlands Insight Tool][WetlandsInsight] products are only published 'as needed' &mdash; they are not updated on a periodical basis and therefore they aren't included in this report. And, the [DEA Land Cover (Landsat)][LandCover] tool has 'no updates planned', so it is also excluded from the report.
+For example, the [DEA Wetlands Insight Tool][WetlandsInsight] products are only published 'as needed' &mdash; they are not updated on a periodic basis and therefore they aren't included in this report. And, the [DEA Land Cover (Landsat)][LandCover] tool has 'no updates planned', so it is also excluded from the report.
 
 [WetlandsInsight]: https://knowledge.dea.ga.gov.au/data/category/dea-wetlands-insight-tool/
 [LandCover]: https://knowledge.dea.ga.gov.au/data/product/dea-land-cover-landsat/
@@ -80,7 +80,7 @@ For products in **Table A**, the following calculations are made. This is an aut
 1. Find out the age of the latest 'scene' of a product. To find out this age, we use one of multiple methods. Internal staff can learn the [technical details of these Currency methods][CurrencyInternalDoc]. The latest scene is compared to the current calendar date to find the age.
     $\text{Age} = \text{Acquisition date} - \text{Calendar date}$
 1. Check the 'business rule' for the product. This rule defines the maximum threshold for this age value that we calculated. For instance, a product may have a business rule of $\leq 16\ days$. This means that if the age is more than 16 days, then the data is overdue. We run this check every day and if the age is within the threshold, we assign 100% Currency for that day; whereas, if the age is above the threshold, we assign 0% Currency for that day.
-1. The Currency values of a span of multiple days are averaged to find the Currency for each financial year and the Currency for each financial quarter.
+1. The Currency values over a span of multiple days are averaged to find the Currency for each financial year and the Currency for each financial quarter.
 
 ### Table B calculations
 
