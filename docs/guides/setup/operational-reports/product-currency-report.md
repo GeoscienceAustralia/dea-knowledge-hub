@@ -29,7 +29,7 @@ The [Currency Report][CurrencyReport] is provided for both external and internal
 
 ## Financial year reporting cycle
 
-The reporting cycle is the Financial Year ('fin. year') which starts in 1 July and ends in 30 June each year. Furthermore, the report uses Financial Quarters &mdash; these are Q1 (1 Jul &ndash; 30 Sep), Q2 (1 Oct &ndash; 31 Dec), Q3 (1 Jan &ndash; 31 Mar), and Q4 (1 Apr &ndash; 30 Jun).
+The reporting cycle is the Financial Year (FY) which starts in 1 July and ends in 30 June each year. Furthermore, the report uses Financial Quarters &mdash; these are Q1 (1 Jul &ndash; 30 Sep), Q2 (1 Oct &ndash; 31 Dec), Q3 (1 Jan &ndash; 31 Mar), and Q4 (1 Apr &ndash; 30 Jun).
 
 ## Fields of the report
 
@@ -38,10 +38,10 @@ Here are explanations of the fields used in this report.
 * **Update frequency** &mdash; How often the product data is published.
 * **Last updated** &mdash; The date of the last time that the product data was published.
 * **Is current?** &mdash; Whether the product currently has the expected data (versus, whether it is currently delayed). For example, if data was scheduled to be published on 1 Jan, but it is now 1 Feb and the data hasn't been published, then this value will be 'No'. When the data is eventually published, this value will change to 'Yes'.
-* **Currency this fin. year** &mdash; The Currency of the product during this financial year, up to the current date. The aggregate of this statistic across all products is included at the top of the report.
-* **Currency previous fin. year** &mdash; The Currency of the product during the previous financial year.
-* **Currency this fin. quarter** &mdash; The Currency of the product during this financial quarter, up to the current date.
-* **Currency previous fin. quarter** &mdash; The Currency of the product during the previous financial quarter.
+* **Currency this FY** &mdash; The Currency of the product during this financial year, up to the current date. The aggregate of this statistic across all products is included at the top of the report.
+* **Currency previous FY** &mdash; The Currency of the product during the previous financial year.
+* **Currency this quarter** &mdash; The Currency of the product during this financial quarter, up to the current date.
+* **Currency previous quarter** &mdash; The Currency of the product during the previous financial quarter.
 
 ## Which products are not included?
 
