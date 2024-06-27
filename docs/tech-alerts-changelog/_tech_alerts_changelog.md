@@ -29,15 +29,11 @@ Learn more about the [DEA Summary Product Grid](/guides/reference/collection_3_s
 
 We have released a report that tracks the Currency of our data products and if they are on time. Currency is a measure of how consistently DEA’s data products have been published through DEA in line with the stated update frequency on or before the scheduled publish date. External auditors can use this report to verify that DEA is meeting its performance targets, and internally, we use it for our annual reporting practices.
 
-View the [DEA Published Product Currency Report][CurrencyReport].
+View the [DEA Published Product Currency Report](https://mgmt.sandbox.dea.ga.gov.au/public-dashboards/d22241dbfca54b1fa9f73938ef26e645?orgId=1).
 
-Learn more about how to [understand and analyse this report][CurrencyReportGuide].
+Learn more about how to [understand and analyse this report](/guides/setup/operational-reports/product-currency-report/).
 
-Internal staff can also [view the full history of data][HistoryReport].
-
-[CurrencyReport]: https://mgmt.sandbox.dea.ga.gov.au/public-dashboards/d22241dbfca54b1fa9f73938ef26e645?orgId=1
-[HistoryReport]: https://mgmt.sandbox.dea.ga.gov.au/d/c1674b20-8c8a-4d90-aef2-02796275cf2b/4e57919d-fc9d-59d7-9bd1-aa61d41bcb92?orgId=1
-[CurrencyReportGuide]: /guides/setup/operational-reports/product-currency-report/
+Internal staff can also [view the full history of data](https://mgmt.sandbox.dea.ga.gov.au/d/c1674b20-8c8a-4d90-aef2-02796275cf2b/4e57919d-fc9d-59d7-9bd1-aa61d41bcb92?orgId=1).
 
 ## 2024-06-14: DEA Sandbox service has been restored
 
