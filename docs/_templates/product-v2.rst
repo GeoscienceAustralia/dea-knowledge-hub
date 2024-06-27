@@ -88,9 +88,9 @@
       {%- endif %}
       {%- endif %}
       {% if Data.data_updates.frequency == "NO_UPDATES" %}
-      :Data updates: {{ data_updates_activity_terms.NO_UPDATES }} (previously '{{ data_updates_frequency_terms.get(Data.data_updates.frequency, Data.data_updates.frequency) }}')
+      :Data published: {{ data_updates_activity_terms.NO_UPDATES }} (previously '{{ data_updates_frequency_terms.get(Data.data_updates.frequency, Data.data_updates.frequency) }}')
       {%- else %}
-      :Data updates: {{ data_updates_frequency_terms.get(Data.data_updates.frequency, Data.data_updates.frequency) }}, {{ data_updates_activity_terms.get(Data.data_updates.activity, Data.data_updates.activity) }}
+      :Data published: {{ data_updates_frequency_terms.get(Data.data_updates.frequency, Data.data_updates.frequency) }}, {{ data_updates_activity_terms.get(Data.data_updates.activity, Data.data_updates.activity) }}
       {%- endif %}
 
    .. container::
