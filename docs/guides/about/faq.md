@@ -41,7 +41,7 @@ The result of the availability of the satellites is that the most consistent dat
 
 Landsat 9 was launched on September 27, 2021, joining Landsats 7 and 8 in orbit, providing optical imagery to the DEA program.
 
-On the 6th April, 2022, Landsat 7 reached the [end of its nominal science mission](https://www.usgs.gov/landsat-missions/news/landsat-7-nominal-science-mission-ending). It was put into a lower Earth orbit that removed it from a repeating ground track, meaning acqusitions are no longer aligned to the World Reference System. Despite the fact that Landsat 7 continues to collect data in the [Landsat 7 Extended Science Mission](https://www.usgs.gov/landsat-missions/landsat-7-extended-science-mission), DEA does not process this data as part of its data collection, and ceased data production at the end of Landsat 7's nominal science mission in April 2022.
+On 6 April 2022, Landsat 7 reached the [end of its nominal science mission](https://www.usgs.gov/landsat-missions/news/landsat-7-nominal-science-mission-ending). It was put into a lower Earth orbit that removed it from a repeating ground track, meaning acquisitions are no longer aligned to the World Reference System. Even though Landsat 7 continues to collect data in the [Landsat 7 Extended Science Mission](https://www.usgs.gov/landsat-missions/landsat-7-extended-science-mission), DEA does not process this data as part of its data collection and ceased data production at the end of Landsat 7's nominal science mission in April 2022.
 
 The overall data availability for the Landsat satellites is shown in Table 1.
 
@@ -61,3 +61,5 @@ Table 1: Availability of the Landsat satellites for Earth observation and relate
 
 :::
 
+:::{include} ../../_components/thermal-bands-availability-faq.md
+:::

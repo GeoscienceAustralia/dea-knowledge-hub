@@ -86,7 +86,8 @@
 
    .. container::
 
-      .. image:: /_files/cmi/Kakadu-Mary_TCW-percentiles-wide_1.jpg
+      .. image:: /_files/validation/validation-drone-thumbnail.jpg
+         :class: no-gallery
 
 .. container:: showcase-panel
    :name: about-dea
