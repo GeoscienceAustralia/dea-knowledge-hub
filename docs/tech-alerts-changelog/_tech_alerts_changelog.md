@@ -10,7 +10,6 @@
 
 * Misclassification issue with Sentinel-2 's2cloudless' cloud masking from 2022. See below.
 * Terra-derived DEA Hotspots are unavailable. See below.
-* Performance issues with DEA Explorer and STAC API. See below.
 :::
 
 ## Upcoming change: Shift in origin point of DEA Summary Product Grid
@@ -24,6 +23,10 @@ For a preview, see the [provisional version of the expanded DEA Summary Product 
 All new versions of our 'summary derivative products' will be affected by this change (but existing versions of the products will not be changed). These products are [DEA Geometric Median and Median Absolute Deviation (GeoMAD)](/data/product/dea-geometric-median-and-median-absolute-deviation-landsat/), [DEA Water Observations Statistics (Landsat)](/data/product/dea-water-observations-statistics-landsat/), [DEA Fractional Cover Percentiles](/data/product/dea-fractional-cover-percentiles-landsat/), [DEA Mangroves](/data/product/dea-mangrove-canopy-cover-landsat/), and [DEA Land Cover](/data/product/dea-land-cover-landsat/).
 
 Learn more about the [DEA Summary Product Grid](/guides/reference/collection_3_summary_grid/).
+
+## 2024-06-24: Performance issues with DEA Explorer and STAC API (Resolved)
+
+The recent performance issues with the [DEA Explorer](https://explorer.dea.ga.gov.au/) and [DEA Explorer STAC API](https://explorer.dea.ga.gov.au/stac/) have now been resolved. The performance and stability of these services have now returned to normal. We hope you continue to enjoy using these services.
 
 ## 2024-06-14: DEA Sandbox service has been restored
 
