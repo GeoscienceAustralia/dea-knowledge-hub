@@ -25,6 +25,20 @@ All new versions of our 'summary derivative products' will be affected by this c
 
 Learn more about the [DEA Summary Product Grid](/guides/reference/collection_3_summary_grid/).
 
+## 2024-06-28: DEA Published Product Currency Report released
+
+We have released a report that tracks the Currency of our data products and if they are on time. Currency is a measure of how consistently DEA’s data products have been published through DEA in line with the stated update frequency on or before the scheduled publish date. External auditors can use this report to verify that DEA is meeting its performance targets, and internally, we use it for our annual reporting practices.
+
+View the [DEA Published Product Currency Report][CurrencyReport].
+
+Learn more about how to [understand and analyse this report][CurrencyReportGuide].
+
+Internal staff can also [view the full history of data][HistoryReport].
+
+[CurrencyReport]: https://mgmt.sandbox.dea.ga.gov.au/public-dashboards/d22241dbfca54b1fa9f73938ef26e645?orgId=1
+[HistoryReport]: https://mgmt.sandbox.dea.ga.gov.au/d/c1674b20-8c8a-4d90-aef2-02796275cf2b/4e57919d-fc9d-59d7-9bd1-aa61d41bcb92?orgId=1
+[CurrencyReportGuide]: /guides/setup/operational-reports/product-currency-report/
+
 ## 2024-05-30: NCI THREDDS data access links updated to point to the new THREDDS server
 
 NCI has released an upgrade to the THREDDS Data Service and will [decommission the existing THREDDS server after 30th June 2024](https://opus.nci.org.au/display/NDP/THREDDS+Upgrade).

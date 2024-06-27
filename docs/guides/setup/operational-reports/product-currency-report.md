@@ -31,7 +31,7 @@ We also measure whether a product 'is current'. This refers to whether the produ
 
 ## Audience and purpose
 
-The [Currency Report][CurrencyReport] is provided for the public and also for internal stakeholders. External auditors can use it to verify that DEA is meeting their performance targets. Internally, we use it for our annual reporting practices.
+The [Currency Report][CurrencyReport] is provided for the public and also for internal stakeholders. External auditors can use it to verify that DEA is meeting its performance targets. Internally, we use it for our annual reporting practices.
 
 ## Financial year reporting cycle
 
