@@ -26,7 +26,7 @@ parent_products:
 collection:
   name: Geoscience Australia Landsat Collection 2
   link: null
-doi: null
+doi: 10.4225/25/5a602cc9eb358
 ecat: "113842"
 nci: null
 licence:
@@ -34,8 +34,9 @@ licence:
   link: https://creativecommons.org/licenses/by/4.0/
 
 citations:
-  data_citation: null
-  paper_citation: null
+  data_citation: "Sagar, S., Roberts, D., Bala, B., Lymburner, L., 2017. Intertidal Extents Model 25m v. 2.0.0. Geoscience Australia, Canberra. http://dx.doi.org/10.4225/25/5a602cc9eb358"
+  paper_citation: "Sagar, S., Roberts, D., Bala, B., Lymburner, L., 2017. Extracting the intertidal extent and topography of the Australian coastline from a 28 year time series of Landsat observations. Remote Sensing of Environment 195, 153-169. https://doi.org/10.1016/j.rse.2017.04.009"
+custom_citations: null
 
 tags:
   - geoscience_australia_landsat_collection_2_deprecated
@@ -53,12 +54,14 @@ explorers:
     name: Data explorer
 
 data:
-  - link: http://dapds00.nci.org.au/thredds/catalogs/fk4/item_2_0.html
+  - link: https://thredds.nci.org.au/thredds/catalog/catalogs/fk4/item_2_0.html
     name: Access the data on NCI
 
 code_examples: null
 
-web_services: null
+web_services:
+  - link: https://ows.dea.ga.gov.au/
+    name: Web Map Service (WMS)
 
 custom: null
 

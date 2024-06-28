@@ -1,13 +1,12 @@
-// utils.test.js
 const { handler } = require("./redirects.js");
 var assert = require("assert");
 
 const docsHost = "docs.dea.ga.gov.au";
 const knowledgeHost = "knowledge.dea.ga.gov.au";
 
-// Create a minimum event object matching the structure that AWS CloudFront uses.
-// The real thing contains many more fields, this is just what we use.
-function requestTemplate(host, uri) {
+// This matches the structure of an AWS CloudFront event, albeit with less fields.
+
+function cloudfrontRequestTemplate(host, uri) {
     return {
         request: {
             uri: uri,
@@ -21,7 +20,7 @@ function requestTemplate(host, uri) {
 }
 
 describe("Redirect Tests", () => {
-    const r1 = [
+    const tests = [
         { uri: "/index.html", expected: "/" },
         { uri: "/page/index.html", expected: "/page/" },
         { uri: "/category/page.html", expected: "/category/page/" },
@@ -40,28 +39,30 @@ describe("Redirect Tests", () => {
         }
     ];
 
-    r1.forEach(({ uri, expected }, index) => {
-        const n = index + 1;
-        it(`R1.${n}. Redirects ${uri} to ${expected}`, async () => {
-            const res = await handler(requestTemplate(knowledgeHost, uri));
+    tests.forEach(({ uri, expected }) => {
+        it(`Redirects ${uri} to ${expected}`, async () => {
+            const res = await handler(
+                cloudfrontRequestTemplate(knowledgeHost, uri)
+            );
 
             assert.equal(res.headers.location.value, expected);
         });
     });
 });
 
-describe("Don't Redirect Tests", () => {
-    const r2 = [
+describe("Doesn't Redirect Tests", () => {
+    const tests = [
         "/data/product/dea-coastlines/",
         "/data/product/dea-coastlines/?tab=overview",
         "/notebooks/Tools/gen/dea_tools.plotting/",
         "/notebooks/Tools/gen/dea_tools.app.animations/"
     ];
 
-    r2.forEach((uri, index) => {
-        const n = index + 1;
-        it(`R2.${n}. Doesn't redirect ${uri}`, async () => {
-            const res = await handler(requestTemplate(knowledgeHost, uri));
+    tests.forEach(uri => {
+        it(`Doesn't redirect ${uri}`, async () => {
+            const res = await handler(
+                cloudfrontRequestTemplate(knowledgeHost, uri)
+            );
 
             assert.ok(!res.hasOwnProperty("statusCode"));
             assert.ok(!res.hasOwnProperty("statusDescription"));
@@ -69,21 +70,20 @@ describe("Don't Redirect Tests", () => {
     });
 });
 
-describe("Domain redirection tests", () => {
-    const r3 = [
+describe("Domain Redirect Tests", () => {
+    const tests = [
         "/",
         "/index.html",
         "/data/product/dea-coastlines/",
         "/data/product/dea-coastlines/?tab=overview"
     ];
 
-    r3.forEach((uri, index) => {
+    tests.forEach(uri => {
         const docsUri = "https://" + docsHost + uri;
         const knowledgeUri = "https://" + knowledgeHost + uri;
 
-        const n = index + 1;
-        it(`R3.${n}. Redirects from ${docsUri} to ${knowledgeUri}`, async () => {
-            const res = await handler(requestTemplate(docsHost, uri));
+        it(`Redirects from ${docsUri} to ${knowledgeUri}`, async () => {
+            const res = await handler(cloudfrontRequestTemplate(docsHost, uri));
 
             assert.equal(res.headers.location.value, knowledgeUri);
         });

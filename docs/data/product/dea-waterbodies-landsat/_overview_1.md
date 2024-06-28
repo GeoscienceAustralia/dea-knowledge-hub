@@ -2,7 +2,7 @@
 
 Locate over 300,000 waterbodies across Australia and look back at their changes over three decades with Digital Earth Australia (DEA) Waterbodies. Monitor critical lakes and dams, including hard-to-reach waterbodies in remote areas and on large properties.
 
-:::{admonition} Note
+:::{admonition} Note:
 :class: note
 
 The update from version 2 to version 3.0 of the DEA Waterbodies product and service was created through a collaboration between Geoscience Australia, the National Aerial Firefighting Centre, Natural Hazards Research Australia, and FrontierSI to make the product more useful in hazard applications. 

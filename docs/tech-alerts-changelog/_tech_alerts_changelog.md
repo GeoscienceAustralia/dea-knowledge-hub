@@ -1,16 +1,101 @@
 % See the DEA Tech Alerts and Changelog documentation:
 % https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/tech_alerts_changelog.html
 
-:::{admonition} DEA System Status
-:class: caution
+% How to update the 'System status of DEA':
 % Change the 'class' to either: tip / caution / danger
+% Default content: All DEA systems are working as expected. There are no outstanding incidents or errors to report.
 
-2024-04-02: We have received notice from NASA that Direct Broadcast satellite downloads from the Terra satellite have been provisionally restored. We are working on restoring the data feed to [DEA Hotspots](https://hotspots.dea.ga.gov.au/); however, Terra-derived DEA Hotspots are still currently unavailable.
+:::{admonition} System status of DEA
+:class: caution
 
-% All DEA systems are working as expected. There are no outstanding incidents or errors to report.
-
-See the [DEA monitoring dashboard](https://monitoring.dea.ga.gov.au/) to check the current status of DEA's services.
+* Misclassification issue with Sentinel-2 's2cloudless' cloud masking from 2022. See below.
+* Terra-derived DEA Hotspots are unavailable. See below.
 :::
+
+## Upcoming change: Shift in origin point of DEA Summary Product Grid
+
+To accommodate an expanded area of coverage of Australia's external territories, the [DEA Summary Product Grid](/guides/reference/collection_3_summary_grid/) will soon be shifted. The south-west origin point of the grid will be shifted from `-5472000.0, -2688000.0` to `-6912000.0, -4416000.0` (EPSG:3577).
+
+Therefore, all tile grid references will shift 18 tiles west and 15 tiles south. For instance, a tile reference of `x10y10` will change to `x28y25`.
+
+For a preview, see the [provisional version of the expanded DEA Summary Product Grid](https://maps.dea.ga.gov.au/#share=s-avXJqwjUtf55qGUmweYY5KYoVnI) on DEA Maps.
+
+All new versions of our 'summary derivative products' will be affected by this change (but existing versions of the products will not be changed). These products are [DEA Geometric Median and Median Absolute Deviation (GeoMAD)](/data/product/dea-geometric-median-and-median-absolute-deviation-landsat/), [DEA Water Observations Statistics (Landsat)](/data/product/dea-water-observations-statistics-landsat/), [DEA Fractional Cover Percentiles](/data/product/dea-fractional-cover-percentiles-landsat/), [DEA Mangroves](/data/product/dea-mangrove-canopy-cover-landsat/), and [DEA Land Cover](/data/product/dea-land-cover-landsat/).
+
+Learn more about the [DEA Summary Product Grid](/guides/reference/collection_3_summary_grid/).
+
+## 2024-06-24: Performance issues with DEA Explorer and STAC API (Resolved)
+
+The recent performance issues with the [DEA Explorer](https://explorer.dea.ga.gov.au/) and [DEA Explorer STAC API](https://explorer.dea.ga.gov.au/stac/) have now been resolved. You will notice that the performance and stability of these services has returned to normal. We hope you continue to enjoy using these services.
+
+## 2024-06-14: DEA Sandbox service has been restored
+
+The unplanned outage that affected the [DEA Sandbox](https://app.sandbox.dea.ga.gov.au/) today has been resolved. The DEA Sandbox is now back online.
+
+## 2024-06-14: DEA Sandbox unplanned outage (Resolved)
+
+The [DEA Sandbox](https://app.sandbox.dea.ga.gov.au/) is currently experiencing an unplanned outage. We are investigating the issue and hope to have the service back up and running soon. We will post an update when the service is restored.
+
+## 2024-06-12: DEA Intertidal data now available on ELVIS
+
+[DEA Intertidal](/data/product/dea-intertidal/) elevation and uncertainty data can now be ordered and downloaded from the ELVIS platform.
+
+For instructions on how to access this data from ELVIS, visit the [DEA Intertidal page (Access tab)](/data/product/dea-intertidal/?tab=access).
+
+## 2024-05-30: NCI THREDDS data access links updated to point to the new THREDDS server
+
+NCI has released an upgrade to the THREDDS Data Service and will [decommission the existing THREDDS server after 30th June 2024](https://opus.nci.org.au/display/NDP/THREDDS+Upgrade).
+
+To prepare for this change, all THREDDS data access links in the Knowledge Hub have been updated to point to the new THREDDS server: all `https://dapds00.nci.org.au/thredds/...` links have been changed to `https://thredds.nci.org.au/thredds/...`.
+
+## 2024-05-24: Misclassification issue with Sentinel-2 's2cloudless' cloud masking from 2022
+
+An issue has been identified that is causing widespread misclassification of clouds in DEA's Sentinel-2 `s2cloudless` cloud mask data generated since January 2022. 
+
+We recommend that you avoid using `s2cloudless` cloud mask data from 2022 onwards until this issue is investigated. 
+
+## 2024-05-13: Terra-derived DEA Hotspots are unavailable
+
+Direct Broadcast satellite downloads from the Terra satellite have again become unavailable. This means that Terra-derived [DEA Hotspots](https://hotspots.dea.ga.gov.au/) are unavailable until further notice.
+
+This is due to the TERRA MODIS satellite experiencing power problems. The satellite continues to collect data but its direct broadcast has stopped.
+
+## 2024-05-06: Performance issues with DEA Explorer and STAC API
+
+You may notice slow load times or outages with the [DEA Explorer](https://explorer.dea.ga.gov.au/) and [DEA Explorer STAC API](https://explorer.dea.ga.gov.au/stac/). We apologise for any inconvenience that this may cause and we are working to solve this issue.
+
+## 2024-05-01: Six of Australia’s offshore territories now covered by Digital Earth Australia baseline satellite data
+
+In support of Indigenous Communities in the Torres Strait, in addition to government agencies reporting on Ocean Ecosystem Accounts and Marine Parks management, DEA is making baseline satellite data available for 6 offshore territories and islands in the Torres Strait.
+
+Learn more about the [DEA ARD expanded processing extent](/guides/reference/ard-expanded-processing-extent/).
+
+## 2024-04-23: It's now easier to cite DEA products
+
+A new 'Cite this product' section has been added to each product page to make it
+easier to cite the product in your academic paper, article, or presentation.
+A citation may been provided for the data itself, and where relevant, to the
+published methods paper. 
+
+See this feature on the [DEA Waterbodies product page](/data/product/dea-waterbodies-landsat/?tab=overview#citations). 
+
+## 2024-04-18: New Validation reports section
+
+The Knowledge Hub contains a new [Validation reports](/validation/) section. This is where you will find reports of Geoscience Australia’s validation data, published periodically. This data can be used to validate Geoscience Australia’s other datasets.
+
+See the latest Daily Validation Summary Report: [2023-11-27: Transect NSW Site 1, Sentinel-2B overpass](/validation/daily-report/2023-11-27/)
+
+## 2024-04-10: DEA Intertidal 1.0.0 released
+
+The [DEA Intertidal](/data/product/dea-intertidal/) product suite maps the changing elevation, exposure and tidal characteristics of Australia’s exposed intertidal zone, the complex zone that defines the interface between land and sea.
+
+This new product suite expands upon the [DEA Intertidal Elevation (Landsat)](/data/old-version/dea-intertidal-elevation-landsat-1.0.0/) product which has now been deprecated.
+
+See [DEA Intertidal](/data/product/dea-intertidal/) for more information.
+
+## 2024-04-03: Terra-derived DEA Hotspots have been restored
+
+Direct Broadcast satellite downloads from the Terra satellite have been restored and have been successfully processed into [DEA Hotspots](/data/product/dea-hotspots/).
 
 ## 2024-03-28: DEA Sandbox outage (Resolved)
 
@@ -28,7 +113,7 @@ You can monitor the status of DEA’s systems on the [DEA monitoring dashboard](
 
 Improvements include additional supporting data for the most recent observations made available through web mapping services (WMS) and DEA Maps, more metadata, Landsat 9 data, and pipeline upgrades. Version 3.0.0 of DEA Waterbodies uses the same underlying polygon set as DEA Waterbodies version 2.0.0. [Learn more](/data/product/dea-waterbodies-landsat/?tab=history)
 
-## 2024-03-21: Terra-derived DEA Hotspots are unavailable
+## 2024-03-21: Terra-derived DEA Hotspots are unavailable (Resolved)
 
 We have received notice from NASA that Direct Broadcast satellite downloads from the Terra satellite are currently unavailable. This means that Terra-derived [DEA Hotspots](https://hotspots.dea.ga.gov.au/) are unavailable until further notice.
 

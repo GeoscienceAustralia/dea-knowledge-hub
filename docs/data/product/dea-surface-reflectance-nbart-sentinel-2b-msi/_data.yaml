@@ -34,8 +34,9 @@ licence:
   link: https://creativecommons.org/licenses/by/4.0/
 
 citations:
-  data_citation: null
+  data_citation: "Geoscience Australia, 2022. Geoscience Australia Sentinel-2B MSI NBART Collection 3 - DEA Surface Reflectance NBART (Sentinel-2B MSI). Geoscience Australia, Canberra. https://dx.doi.org/10.26186/146569"
   paper_citation: null
+custom_citations: null
 
 tags:
   - geoscience_australia_sentinel_2_collection_3
@@ -56,7 +57,7 @@ explorers:
 data:
   - link: https://data.dea.ga.gov.au/?prefix=baseline/ga_s2bm_ard_3/
     name: Access the data on AWS
-  - link: https://dapds00.nci.org.au/thredds/catalog/ka08/ga_s2bm_ard_3/catalog.html
+  - link: https://thredds.nci.org.au/thredds/catalog/ka08/ga_s2bm_ard_3/catalog.html
     name: Access the data on NCI
 
 code_examples:

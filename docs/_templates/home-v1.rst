@@ -37,6 +37,7 @@
    .. container::
 
       .. image:: /_files/pages/dea-hero.jpg
+         :class: no-gallery
 
 .. container:: showcase-panel bg-gradient-forest reverse
    :name: dea-notebooks
@@ -52,6 +53,7 @@
    .. container::
 
       .. image:: /_files/cmi/Kakadu-Mary_TCW-percentiles-wide_1.jpg
+         :class: no-gallery
 
 .. container:: showcase-panel bg-gradient-stone
    :name: changelog
@@ -67,6 +69,23 @@
    .. container::
 
       .. image:: /_files/reference/Reporting_dashboard.png
+         :class: no-gallery
+
+.. container:: showcase-panel bg-gradient-space reverse
+   :name: dea-notebooks
+
+   .. container::
+
+      .. rubric:: Validation reports
+
+      How well does DEA's satellite-derived Analysis Ready Data compare with field-derived surface reflectance data? These reports provide this comparison.
+
+      `Visit the Validation reports </validation/>`_
+
+   .. container::
+
+      .. image:: /_files/validation/validation-drone-thumbnail.jpg
+         :class: no-gallery
 
 .. container:: showcase-panel
    :name: about-dea
@@ -81,8 +100,9 @@
 
       `Visit the DEA website <https://www.dea.ga.gov.au/>`_
 
-      `Follow our newsletter <https://www.dea.ga.gov.au/news/dea-newsletter-and-communications-archive>`_
+      `Subscribe to our newsletter <https://www.dea.ga.gov.au/news/dea-newsletter-and-communications-archive>`_
 
    .. container::
 
       .. image:: /_files/themes/sea-ocean-and-coast.* 
+         :class: no-gallery

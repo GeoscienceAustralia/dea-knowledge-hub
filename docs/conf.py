@@ -19,7 +19,7 @@ copyright = f"{utilities.current_year()}, Geoscience Australia"
 author = "Geoscience Australia"
 
 html_static_path = ["_static", "_files"]
-templates_path = ["_layout", "_templates"]
+templates_path = ["_layouts", "_templates"]
 html_extra_path = ["robots.txt"]
 source_suffix = [".rst", ".md"]
 
@@ -37,10 +37,12 @@ exclude_patterns = [
     "notebooks/Supplementary_data/*.ipynb",
     "py-modindex/index.*",
 ]
+exclude_patterns += utilities.optional_exclude_pattern("LOCAL_ENABLE_TAGS", "tags")
 exclude_patterns += utilities.optional_exclude_pattern("LOCAL_ENABLE_USER_GUIDES", "guides")
 exclude_patterns += utilities.optional_exclude_pattern("LOCAL_ENABLE_DATA_PRODUCTS", "data")
 exclude_patterns += utilities.optional_exclude_pattern("LOCAL_ENABLE_OLD_VERSIONS", "data/old-version")
 exclude_patterns += utilities.optional_exclude_pattern("LOCAL_ENABLE_NOTEBOOKS", "notebooks")
+exclude_patterns += utilities.optional_exclude_pattern("LOCAL_ENABLE_VALIDATION_REPORTS", "validation")
 exclude_patterns += utilities.optional_exclude_pattern("LOCAL_ENABLE_TAGS", "tags")
 exclude_patterns += utilities.optional_exclude_pattern("LOCAL_ENABLE_TECH_ALERTS_CHANGELOG", "tech-alerts-changelog")
 
@@ -138,7 +140,7 @@ html_theme_options = {
     "navigation_with_keys": False,
     "search_bar_text": "Search ...",
     "show_prev_next": False,
-    "header_links_before_dropdown": 3, # The number of header menu items to display before the rest are nested inside the 'More' dropdown.
+    "header_links_before_dropdown": 4, # The number of header menu items to display before the rest are nested inside the 'More' dropdown.
     "logo": {
         "link": "/"
     },
