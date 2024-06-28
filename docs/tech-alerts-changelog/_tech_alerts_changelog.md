@@ -10,7 +10,6 @@
 
 * Misclassification issue with Sentinel-2 's2cloudless' cloud masking from 2022. See below.
 * Terra-derived DEA Hotspots are unavailable. See below.
-* Performance issues with DEA Explorer and STAC API. See below.
 :::
 
 ## Upcoming change: Shift in origin point of DEA Summary Product Grid
@@ -34,6 +33,10 @@ View the [DEA Published Product Currency Report](https://mgmt.sandbox.dea.ga.gov
 Learn more about how to [understand and analyse this report](/guides/setup/operational-reports/product-currency-report/).
 
 Internal staff can also [view the full history of data](https://mgmt.sandbox.dea.ga.gov.au/d/c1674b20-8c8a-4d90-aef2-02796275cf2b/4e57919d-fc9d-59d7-9bd1-aa61d41bcb92?orgId=1).
+
+## 2024-06-24: Performance issues with DEA Explorer and STAC API (Resolved)
+
+The recent performance issues with the [DEA Explorer](https://explorer.dea.ga.gov.au/) and [DEA Explorer STAC API](https://explorer.dea.ga.gov.au/stac/) have now been resolved. You will notice that the performance and stability of these services has returned to normal. We hope you continue to enjoy using these services.
 
 ## 2024-06-14: DEA Sandbox service has been restored
 
