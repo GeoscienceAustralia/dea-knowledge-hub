@@ -64,9 +64,9 @@
       .. rubric:: {{ page_title }}
 
       {% if is_latest_version %}
-      :Version: {{ Data.version }}
+      :Product version: {{ Data.version }}
       {%- else %}
-      :Version: {{ Data.version }} (`See latest product version <{{ Data.latest_version_link }}>`_)
+      :Product version: {{ Data.version }} (`See latest product version <{{ Data.latest_version_link }}>`_)
       {%- endif %}
       {%- if Data.full_technical_name %}
       :Full name: {{ Data.full_technical_name }}
