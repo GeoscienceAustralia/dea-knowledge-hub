@@ -50,7 +50,7 @@ tags:
 # Access
 
 maps:
-  - link: https://maps.dea.ga.gov.au/#share=s-fzHT65z4jscx9U1Nfb1FoKlQ7uU
+  - link: https://maps.dea.ga.gov.au/story/DEAGeoMAD
     name: See it on a map
 
 explorers:
@@ -60,11 +60,11 @@ explorers:
 data:
   - link: https://data.dea.ga.gov.au/?prefix=derivative
     name: Access the data on AWS
-  - link: https://dapds00.nci.org.au/thredds/catalog/jw04/ga_ls5t_gm_cyear_3/catalog.html
+  - link: https://thredds.nci.org.au/thredds/catalog/jw04/ga_ls5t_gm_cyear_3/catalog.html
     name: Annual Landsat 5 observations on NCI
-  - link: https://dapds00.nci.org.au/thredds/catalog/jw04/ga_ls7e_gm_cyear_3/catalog.html
+  - link: https://thredds.nci.org.au/thredds/catalog/jw04/ga_ls7e_gm_cyear_3/catalog.html
     name: Annual Landsat 7 observations on NCI
-  - link: https://dapds00.nci.org.au/thredds/catalog/jw04/ga_ls8cls9c_gm_cyear_3/catalog.html
+  - link: https://thredds.nci.org.au/thredds/catalog/jw04/ga_ls8cls9c_gm_cyear_3/catalog.html
     name: Annual Landsat 8 and 9 observations on NCI
 
 code_examples: null
