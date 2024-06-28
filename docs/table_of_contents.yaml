@@ -167,6 +167,10 @@ entries:
           - file: guides/setup/validation/index
             entries:
               - file: guides/setup/validation/daily-summary-reports
+          - file: guides/setup/operational-reports/index
+            entries:
+              - file: guides/setup/operational-reports/product-currency-report
+                title: Product Currency Report
 
       - caption: Reference
         entries:
@@ -251,6 +255,10 @@ entries:
       #         reversed: True
       #       entries:
       #         - glob: validation/yearly-report/*/index
+
+  # Operational reports
+
+  - file: operational-reports/index
 
   # Old versions of products
 
