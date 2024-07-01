@@ -3,5 +3,5 @@ description: How well does DEA's satellite-derived Analysis Ready Data compare w
 
 cards:
   - name: Daily reports
-    link: ./daily-report
+    link: ./daily-report/
     image: /_files/validation/daily-report.png
