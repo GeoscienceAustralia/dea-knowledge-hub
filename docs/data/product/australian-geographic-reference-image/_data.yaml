@@ -16,7 +16,7 @@ type:
 time_span:
   start: null
   end: null
-data_updates:
+data_published:
   frequency: AS_NEEDED
   activity: NO_UPDATES
 resolution: 2.5-10 m

@@ -16,7 +16,7 @@ type:
 time_span:
   start: 1986
   end: 2022
-data_updates:
+data_published:
   frequency: YEARLY
   activity: PAUSED # ONGOING
 resolution: 30 m

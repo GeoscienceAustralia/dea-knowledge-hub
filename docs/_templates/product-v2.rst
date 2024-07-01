@@ -16,7 +16,7 @@
    "web_service": "Get via web service",
 } %}
 
-{% set data_updates_frequency_terms = {
+{% set data_published_frequency_terms = {
    "AS_NEEDED": "As needed",
    "DAILY": "Daily",
    "WEEKLY": "Weekly",
@@ -26,7 +26,7 @@
    "10_MIN": "Every 10 minutes",
 } %}
 
-{% set data_updates_activity_terms = {
+{% set data_published_activity_terms = {
    "ONGOING": "Ongoing data publishing",
    "NO_UPDATES": "No further data to be published",
    "PAUSED": "Data publishing is currently paused",
@@ -87,10 +87,10 @@
       :Data time span: Ends at {{ Data.time_span.end }}
       {%- endif %}
       {%- endif %}
-      {% if Data.data_updates.frequency == "NO_UPDATES" %}
-      :Data published: {{ data_updates_activity_terms.NO_UPDATES }} (previously '{{ data_updates_frequency_terms.get(Data.data_updates.frequency, Data.data_updates.frequency) }}')
+      {% if Data.data_published.frequency == "NO_UPDATES" %}
+      :Data published: {{ data_published_activity_terms.NO_UPDATES }} (previously '{{ data_published_frequency_terms.get(Data.data_published.frequency, Data.data_published.frequency) }}')
       {%- else %}
-      :Data published: {{ data_updates_frequency_terms.get(Data.data_updates.frequency, Data.data_updates.frequency) }}, {{ data_updates_activity_terms.get(Data.data_updates.activity, Data.data_updates.activity) }}
+      :Data published: {{ data_published_frequency_terms.get(Data.data_published.frequency, Data.data_published.frequency) }}, {{ data_published_activity_terms.get(Data.data_published.activity, Data.data_published.activity) }}
       {%- endif %}
 
    .. container::
@@ -238,7 +238,7 @@
             - `{{ Data.licence.name }} <{{ Data.licence.link }}>`_
           {%- endif %}
           {%- endif %}
-          {% if Data.spatial_data_type != "Vector" and Data.data_updates.frequency != data_updates_frequency_terms.AS_NEEDED and Data.data_updates.activity == data_updates_activity_terms.ONGOING %}
+          {% if Data.spatial_data_type != "Vector" and Data.data_published.frequency != data_published_frequency_terms.AS_NEEDED and Data.data_published.activity == data_published_activity_terms.ONGOING %}
           * - **Currency**
             - This product may be included in the `DEA Published Product Currency Report <https://mgmt.sandbox.dea.ga.gov.au/public-dashboards/d22241dbfca54b1fa9f73938ef26e645?orgId=1>`_ (if applicable).
           {%- endif %}

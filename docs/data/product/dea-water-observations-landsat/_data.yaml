@@ -16,7 +16,7 @@ type:
 time_span:
   start: 16/08/1986
   end: Present
-data_updates:
+data_published:
   frequency: DAILY
   activity: ONGOING
 resolution: 30 m

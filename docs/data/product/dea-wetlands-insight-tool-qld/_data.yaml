@@ -16,7 +16,7 @@ type:
 time_span:
   start: 1987
   end: 2021
-data_updates:
+data_published:
   frequency: AS_NEEDED
   activity: ONGOING
 resolution: null

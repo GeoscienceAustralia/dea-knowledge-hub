@@ -16,7 +16,7 @@ type:
 time_span:
   start: 19/03/2013
   end: Present
-data_updates:
+data_published:
   frequency: DAILY
   activity: ONGOING
 resolution: 15-30 m

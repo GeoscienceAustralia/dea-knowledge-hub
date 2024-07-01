@@ -16,7 +16,7 @@ type:
 time_span:
   start: 1986
   end: 2016
-data_updates:
+data_published:
   frequency: AS_NEEDED
   activity: NO_UPDATES
 resolution: 25 m

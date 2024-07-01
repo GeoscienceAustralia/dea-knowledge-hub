@@ -16,7 +16,7 @@ type:
 time_span:
   start: 28/05/1999
   end: 06/04/2022
-data_updates:
+data_published:
   frequency: DAILY
   activity: NO_UPDATES
 resolution: 15-30 m

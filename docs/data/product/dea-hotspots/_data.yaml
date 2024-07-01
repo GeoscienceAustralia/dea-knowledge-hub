@@ -16,7 +16,7 @@ type:
 time_span:
   start: 27/08/2002
   end: Present
-data_updates:
+data_published:
   frequency: 10_MIN
   activity: ONGOING
 resolution: null
