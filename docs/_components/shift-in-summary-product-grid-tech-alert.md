@@ -13,4 +13,3 @@ This change will be applied to the new versions of the following products, when 
 * [DEA Mangroves](/data/product/dea-mangrove-canopy-cover-landsat/)
 * [DEA Land Cover](/data/product/dea-land-cover-landsat/).
 
-Learn more about the [DEA Summary Product Grid](/guides/reference/collection_3_summary_grid/).

@@ -17,6 +17,8 @@
 :::{include} ../_components/shift-in-summary-product-grid-tech-alert.md
 :::
 
+Learn more about the [DEA Summary Product Grid](/guides/reference/collection_3_summary_grid/).
+
 ## 2024-06-24: Performance issues with DEA Explorer and STAC API (Resolved)
 
 The recent performance issues with the [DEA Explorer](https://explorer.dea.ga.gov.au/) and [DEA Explorer STAC API](https://explorer.dea.ga.gov.au/stac/) have now been resolved. You will notice that the performance and stability of these services has returned to normal. We hope you continue to enjoy using these services.
