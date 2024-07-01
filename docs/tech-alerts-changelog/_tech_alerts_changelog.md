@@ -27,7 +27,7 @@ Learn more about the [DEA Summary Product Grid](/guides/reference/collection_3_s
 
 ## 2024-07-01: External data products now featured on the Knowledge Hub
 
-External data products are not produced by DEA; they are produced by external providers such as a different program of Geoscience Australia or a different organisation entirely. These external data products may assist with the analysis of DEA data. DEA even provides services relating to some of these external products. Therefore, we have begun to include some external products on our Knowledge Hub so that you can easily find and access this data. So far, we have added three external data products to the Knowledge Hub. But watch this space, as there are more to come!
+External data products are produced by external providers such as a different program of Geoscience Australia or a different organisation entirely. These external data products may assist with the analysis of DEA data. DEA even provides services relating to some of these external products. Therefore, we have begun to include some external products on our Knowledge Hub so that you can easily find and access this data. So far, we have added three external data products to the Knowledge Hub. But watch this space, as there are more to come!
 
 View the [External data products in the Knowledge Hub](/data/theme/external-data/).
 
