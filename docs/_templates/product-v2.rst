@@ -28,7 +28,7 @@
 
 {% set data_published_activity_terms = {
    "ONGOING": "Ongoing data publishing",
-   "NO_UPDATES": "No further data to be published",
+   "NO_UPDATES": "No further data publishing",
    "PAUSED": "Data publishing is currently paused",
 } %}
 
