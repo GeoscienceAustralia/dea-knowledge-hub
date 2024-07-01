@@ -1,7 +1,7 @@
 title: External data
 description: External data products are not produced by DEA; they are produced by external providers such as a different program of Geoscience Australia or a different organisation entirely. These external data products may assist with the analysis of DEA data.
 
-pages:
+cards:
   - name: GA AusBathyTopo 250m
     link: /data/external-data/ga-ausbathytopo/
     image: /_files/external-data/ga_ausbathytopo250m_2023.thumbnail.jpg
