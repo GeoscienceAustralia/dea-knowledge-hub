@@ -24,6 +24,10 @@ All new versions of our 'summary derivative products' will be affected by this c
 
 Learn more about the [DEA Summary Product Grid](/guides/reference/collection_3_summary_grid/).
 
+## 2024-07-01: DEA Sandbox new user signups restored
+
+An issue was preventing new users from signing up to the [DEA Sandbox](https://app.sandbox.dea.ga.gov.au/) for the past 5 days. We have now fixed the issue and you should now be able to sign up for the DEA Sandbox.
+
 ## 2024-06-28: DEA Published Product Currency Report released
 
 We have released a report that tracks the Currency of our data products and if they are on time. Currency is a measure of how consistently DEA’s data products have been published through DEA in line with the stated update frequency on or before the scheduled publish date. External auditors can use this report to verify that DEA is meeting its performance targets, and internally, we use it for our annual reporting practices.
