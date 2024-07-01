@@ -263,8 +263,8 @@
             - Aliases
             - Resolution
             - CRS
-            - Units
             - Nodata
+            - Units
             - Type
             - Description
           {% for band in valid_bands %}
@@ -272,8 +272,8 @@
             - {{ band.aliases|join(', ') if band.aliases else none_text }}
             - {{ band.resolution or not_available_text }}
             - {{ band.crs or not_available_text }}
-            - {{ band.units or none_text }}
             - {{ band.nodata }}
+            - {{ band.units or none_text }}
             - {{ band.type or not_available_text }}
             - {{ band.description or none_text }}
           {% endfor %}

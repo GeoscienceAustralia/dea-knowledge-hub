@@ -7,8 +7,8 @@ bands:
       aliases: []
       resolution: 0.0025 degrees
       crs: "EPSG:4326"
-      units: Metres
       nodata: -32767
+      units: Metres
       type: float32
       description: "Height/depth relative to Mean Sea Level."
 

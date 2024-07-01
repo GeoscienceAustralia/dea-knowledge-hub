@@ -8,6 +8,7 @@ bands:
     resolution: 30 m
     crs: Multiple (local UTM) 
     nodata: -999
+    units: null
     type: int16 
     description: A description of the band.
 

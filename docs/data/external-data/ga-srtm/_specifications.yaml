@@ -7,8 +7,8 @@ bands:
   - name: dem
     aliases: []
     resolution: 0.00027 degrees
-    nodata: "See below :sup:`1`"
     crs: "EPSG:4326"
+    nodata: "See below :sup:`1`"
     units: Metres
     type: float32
     description: "Digital Elevation Model (DEM)"
@@ -16,16 +16,16 @@ bands:
     aliases: []
     resolution: 0.00027 degrees
     crs: "EPSG:4326"
-    units: Metres
     nodata: "See below :sup:`1`"
+    units: Metres
     type: float32
     description: "Smoothed Digital Elevation Model (DEM-S)"
   - name: dem_h
     aliases: []
     resolution: 0.00027 degrees
     crs: "EPSG:4326"
-    units: Metres
     nodata: "See below :sup:`1`"
+    units: Metres
     type: float32
     description: "Hydrologically Enforced Digital Elevation Model (DEM-H)"
 
