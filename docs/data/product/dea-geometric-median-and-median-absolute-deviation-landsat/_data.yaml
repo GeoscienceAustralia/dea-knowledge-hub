@@ -18,7 +18,7 @@ time_span:
   end: 2022
 data_updates:
   frequency: YEARLY
-  activity: ONGOING
+  activity: PAUSED # ONGOING
 resolution: 30 m
 product_ids:
   - ga_ls5t_nbart_gm_cyear_3

@@ -18,7 +18,7 @@ time_span:
   end: Present
 data_updates:
   frequency: YEARLY
-  activity: ONGOING
+  activity: PAUSED # ONGOING
 resolution: 30 m
 product_ids:
   - ga_ls_wo_fq_apr_oct_3
