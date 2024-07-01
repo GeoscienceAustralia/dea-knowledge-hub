@@ -5,8 +5,12 @@
 :backlinks: none
 :::
 
-:::{include} ../_components/shift-in-summary-product-grid-tech-alert.md
+::::{admonition} In progress: Shift in origin point of DEA Summary Product Grid
+:class: note
+
+:::{include} ../../_components/shift-in-summary-product-grid-tech-alert.md
 :::
+::::
 
 ## Introduction
 

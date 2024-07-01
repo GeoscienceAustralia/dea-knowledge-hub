@@ -12,6 +12,8 @@
 * Terra-derived DEA Hotspots are unavailable. See below.
 :::
 
+## In progress: Shift in origin point of DEA Summary Product Grid
+
 :::{include} ../_components/shift-in-summary-product-grid-tech-alert.md
 :::
 
