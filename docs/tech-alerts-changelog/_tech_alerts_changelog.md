@@ -25,6 +25,10 @@ All new versions of our 'summary derivative products' will be affected by this c
 
 Learn more about the [DEA Summary Product Grid](/guides/reference/collection_3_summary_grid/).
 
+## 2024-07-01: External data now showcased on the Knowledge Hub
+
+
+
 ## 2024-05-30: NCI THREDDS data access links updated to point to the new THREDDS server
 
 NCI has released an upgrade to the THREDDS Data Service and will [decommission the existing THREDDS server after 30th June 2024](https://opus.nci.org.au/display/NDP/THREDDS+Upgrade).
