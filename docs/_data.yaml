@@ -19,4 +19,4 @@ product_themes:
     icon: fire
   - name: External data
     link: /data/theme/external-data/
-    icon: person-walking-arrow-right
+    icon: cube
