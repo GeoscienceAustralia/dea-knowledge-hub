@@ -27,9 +27,9 @@
 } %}
 
 {% set data_updates_activity_terms = {
-   "ONGOING": "Ongoing updates",
-   "NO_UPDATES": "No further updates",
-   "PAUSED": "Updates are currently paused",
+   "ONGOING": "Ongoing data publishing",
+   "NO_UPDATES": "No further data to be published",
+   "PAUSED": "Data publishing is currently paused",
 } %}
 
 {% set is_latest_version = Data.is_latest_version %}
