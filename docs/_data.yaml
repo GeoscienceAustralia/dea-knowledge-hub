@@ -17,3 +17,6 @@ product_themes:
   - name: Hazards
     link: /data/theme/hazards/
     icon: fire
+  - name: External data
+    link: /data/theme/external-data/
+    icon: person-walking-arrow-right
