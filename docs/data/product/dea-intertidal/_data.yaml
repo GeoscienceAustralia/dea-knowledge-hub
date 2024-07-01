@@ -17,7 +17,8 @@ time_span:
   end: 2022
 update_frequency: Yearly
 next_update: null
-product_ids: null
+product_ids:
+  - ga_s2ls_intertidal_cyear_3
 
 parent_products:
   name: Sentinel-2A and -2B and Landsat 7, 8, and 9 NBART and Observational Attributes 
@@ -61,6 +62,8 @@ explorers:
 data:
   - link: https://data.dea.ga.gov.au/?prefix=derivative/ga_s2ls_intertidal_cyear_3/
     name: Access the data on AWS
+  - link: https://elevation.fsdf.org.au/
+    name: Download the data from ELVIS
 
 code_examples:
   - link: /notebooks/DEA_products/DEA_Intertidal/

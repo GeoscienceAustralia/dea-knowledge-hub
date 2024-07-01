@@ -1,5 +1,5 @@
-% ## Frequently asked questions
+## Frequently asked questions
 
-% :::{dropdown} What is the question?
-% :::
+:::{include} ../../../_components/thermal-bands-availability-faq.md
+:::
 

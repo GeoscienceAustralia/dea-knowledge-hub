@@ -11,14 +11,14 @@
    .. grid:: 2 2 3 4
        :gutter: 3
 
-       {% for page in data.pages %}
+       {% for card in data.cards %}
        .. grid-item-card::
-          :link: {{ page.link }}
+          :link: {{ card.link }}
 
           .. container:: image-container
 
-             .. image:: {{ page.image or "/_files/pages/dea-hero.jpg" }}
+             .. image:: {{ card.image or "/_files/pages/dea-hero.jpg" }}
                 :class: no-gallery
 
-          .. rubric:: {{ page.name }}
+          .. rubric:: {{ card.name }}
        {% endfor %}

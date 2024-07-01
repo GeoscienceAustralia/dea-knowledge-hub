@@ -10,7 +10,6 @@
 
 * Misclassification issue with Sentinel-2 's2cloudless' cloud masking from 2022. See below.
 * Terra-derived DEA Hotspots are unavailable. See below.
-* Performance issues with DEA Explorer and STAC API. See below.
 :::
 
 ## Upcoming change: Shift in origin point of DEA Summary Product Grid
@@ -30,6 +29,34 @@ Learn more about the [DEA Summary Product Grid](/guides/reference/collection_3_s
 External data products are produced by external providers such as a different program of Geoscience Australia or a different organisation entirely. These external data products may assist with the analysis of DEA data. DEA even provides services relating to some of these external products. Therefore, we have begun to include some external products on our Knowledge Hub so that you can easily find and access this data. So far, we have added three external data products to the Knowledge Hub. But watch this space, as there are more to come!
 
 View the [External data products in the Knowledge Hub](/data/theme/external-data/).
+
+## 2024-06-28: DEA Published Product Currency Report released
+
+We have released a report that tracks the Currency of our data products and if they are on time. Currency is a measure of how consistently DEA’s data products have been published through DEA in line with the stated update frequency on or before the scheduled publish date. External auditors can use this report to verify that DEA is meeting its performance targets, and internally, we use it for our annual reporting practices.
+
+View the [DEA Published Product Currency Report](https://mgmt.sandbox.dea.ga.gov.au/public-dashboards/d22241dbfca54b1fa9f73938ef26e645?orgId=1).
+
+Learn more about how to [understand and analyse this report](/guides/setup/operational-reports/product-currency-report/).
+
+Internal staff can also [view the full history of data](https://mgmt.sandbox.dea.ga.gov.au/d/c1674b20-8c8a-4d90-aef2-02796275cf2b/4e57919d-fc9d-59d7-9bd1-aa61d41bcb92?orgId=1).
+
+## 2024-06-24: Performance issues with DEA Explorer and STAC API (Resolved)
+
+The recent performance issues with the [DEA Explorer](https://explorer.dea.ga.gov.au/) and [DEA Explorer STAC API](https://explorer.dea.ga.gov.au/stac/) have now been resolved. You will notice that the performance and stability of these services has returned to normal. We hope you continue to enjoy using these services.
+
+## 2024-06-14: DEA Sandbox service has been restored
+
+The unplanned outage that affected the [DEA Sandbox](https://app.sandbox.dea.ga.gov.au/) today has been resolved. The DEA Sandbox is now back online.
+
+## 2024-06-14: DEA Sandbox unplanned outage (Resolved)
+
+The [DEA Sandbox](https://app.sandbox.dea.ga.gov.au/) is currently experiencing an unplanned outage. We are investigating the issue and hope to have the service back up and running soon. We will post an update when the service is restored.
+
+## 2024-06-12: DEA Intertidal data now available on ELVIS
+
+[DEA Intertidal](/data/product/dea-intertidal/) elevation and uncertainty data can now be ordered and downloaded from the ELVIS platform.
+
+For instructions on how to access this data from ELVIS, visit the [DEA Intertidal page (Access tab)](/data/product/dea-intertidal/?tab=access).
 
 ## 2024-05-30: NCI THREDDS data access links updated to point to the new THREDDS server
 

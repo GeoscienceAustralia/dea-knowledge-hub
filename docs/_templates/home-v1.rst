@@ -11,7 +11,9 @@
 
    .. rubric:: Data Products
 
-   Browse our catalogue of data products to find supporting information and ways to access the data.
+   .. raw:: html
+
+      <p>Browse our catalogue of data products to find supporting information and ways to access the data.<br />Visit the <a href="/data/">Data Products</a>.</p>
 
    .. grid:: 2 2 3 6
       :gutter: 3
@@ -84,7 +86,8 @@
 
    .. container::
 
-      .. image:: /_files/cmi/Kakadu-Mary_TCW-percentiles-wide_1.jpg
+      .. image:: /_files/validation/validation-drone-thumbnail.jpg
+         :class: no-gallery
 
 .. container:: showcase-panel
    :name: about-dea
