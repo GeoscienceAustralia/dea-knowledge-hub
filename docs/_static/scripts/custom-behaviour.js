@@ -106,7 +106,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
         }
     })();
 
-    // Clicking on a product tab will add its tab ID to the URL. E.g. /example/?tab=overview
+    // Clicking on a product tab will add its tab ID to the URL. E.g. /example/?tab=details
 
     (function () {
         if (document.querySelector(".product-page")) {
@@ -124,10 +124,12 @@ document.addEventListener("DOMContentLoaded", function (event) {
                 let tabId = tab.id;
 
                 if (tabId === "overview") {
+                    // Don't add the 'tab' parameter for the Overview tab
                     tab.addEventListener("click", function () {
                         let url = new URL(window.location.href);
                         let params = url.searchParams;
                         params.delete("tab");
+                        // This conditional is needed to prevent a '?' at the end of the URL in the case where there are no URL parameters
                         if (params.size === 0) {
                             window.history.pushState({}, "", url.pathname);
                         } else {
@@ -139,6 +141,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
                         }
                     });
                 } else if (tabId) {
+                    // Add the 'tab' parameter for any other tab
                     tab.addEventListener("click", function () {
                         window.history.pushState("", "", `?tab=${tabId}`);
                     });
