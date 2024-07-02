@@ -137,6 +137,16 @@ entries:
           - file: data/product/dea-burnt-area-characteristic-layers-sentinel-2-near-real-time/index
             title: DEA Burnt Area Characteristic Layers (Provisional)
 
+      - caption: External data
+        entries:
+          - file: data/theme/external-data/index
+            title: All
+
+          - file: data/external-data/ga-ausbathytopo/index
+            title: GA AusBathyTopo 250m
+          - file: data/external-data/abares-clum-2020/index
+          - file: data/external-data/ga-srtm/index
+
   # User Guides
 
   - file: guides/index
