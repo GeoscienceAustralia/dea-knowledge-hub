@@ -2,7 +2,7 @@
 
 bands:
   footnotes: >
-    :sup:`1` The 'Nodata' value is ``-340282346638528859811704183484516925440``
+    :sup:`1` The 'Nodata' value is ``-340282346638528859811704183484516925440``, however ocean pixels in ``dem`` and `dem_s` are also assigned values of ``0``.
   bands_table:
   - name: dem
     aliases: []
