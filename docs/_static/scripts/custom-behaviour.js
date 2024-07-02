@@ -114,15 +114,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
             let tabUrlParam = new URLSearchParams(window.location.search).get(
                 "tab"
             );
-            let overviewTabId = tabs[0].id;
 
-            if (!tabUrlParam) {
-                window.history.pushState(
-                    "",
-                    "",
-                    `?tab=${overviewTabId}${window.location.hash}`
-                );
-            } else {
+            if (tabUrlParam) {
                 document.querySelector(`.sd-tab-set > #${tabUrlParam}`).click();
             }
 
@@ -130,7 +123,22 @@ document.addEventListener("DOMContentLoaded", function (event) {
                 let tab = tabs[i];
                 let tabId = tab.id;
 
-                if (tabId) {
+                if (tabId === "overview") {
+                    tab.addEventListener("click", function () {
+                        let url = new URL(window.location.href);
+                        let params = url.searchParams;
+                        params.delete("tab");
+                        if (params.size === 0) {
+                            window.history.pushState({}, "", url.pathname);
+                        } else {
+                            window.history.pushState(
+                                {},
+                                "",
+                                `${url.pathname}?${params.toString()}`
+                            );
+                        }
+                    });
+                } else if (tabId) {
                     tab.addEventListener("click", function () {
                         window.history.pushState("", "", `?tab=${tabId}`);
                     });
