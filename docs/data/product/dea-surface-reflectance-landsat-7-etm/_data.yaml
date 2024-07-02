@@ -3,20 +3,23 @@
 
 # Overview
 
-title: DEA Surface Reflectance (Landsat 7 ETM+)
-long_title: Geoscience Australia Landsat 7 ETM+ Analysis Ready Data Collection 3
+short_name: DEA Surface Reflectance (Landsat 7 ETM+)
+full_technical_name: Geoscience Australia Landsat 7 ETM+ Analysis Ready Data Collection 3
 header_image: /_files/cmi/surface_reflectance_2_NBARTa_0.png
 version: 3.0.0
 is_latest_version: true
 latest_version_link: null
 is_provisional: false
-product_type: Baseline
-spatial_data_type: Raster
+type:
+  product_type: Baseline
+  spatial_data_type: Raster
 time_span:
   start: 28/05/1999
   end: 06/04/2022
-update_frequency: Daily
-next_update: null
+data_published:
+  frequency: DAILY
+  activity: NO_UPDATES
+resolution: 15-30 m
 product_ids:
   - ga_ls7e_ard_3
 

@@ -3,20 +3,23 @@
 
 # Overview
 
-title: Daily SatPaths
-long_title: Daily Satellite Paths predictor
+short_name: Daily SatPaths
+full_technical_name: Daily Satellite Paths predictor
 header_image: /_files/cmi/SatPaths_image.png
 version: 1.0.3-beta
 is_latest_version: true
 latest_version_link: null
 is_provisional: true
-product_type: Data service
-spatial_data_type: null
+type:
+  product_type: Data service
+  spatial_data_type: null
 time_span:
   start: null
   end: null
-update_frequency: Daily
-next_update: null
+data_published:
+  frequency: DAILY
+  activity: ONGOING
+resolution: null
 product_ids: null
 
 parent_products:

@@ -3,20 +3,23 @@
 
 # Overview
 
-title: DEA Mangrove Canopy Cover (Landsat)
-long_title: Geoscience Australia Mangrove Canopy Cover Collection 3
+short_name: DEA Mangrove Canopy Cover (Landsat)
+full_technical_name: Geoscience Australia Mangrove Canopy Cover Collection 3
 header_image: /_files/cmi/DEA-mangroves.jpg
 version: 3.0.0
 is_latest_version: true
 latest_version_link: null
 is_provisional: false
-product_type: Derivative
-spatial_data_type: Raster
+type:
+  product_type: Derivative
+  spatial_data_type: Raster
 time_span:
   start: 1987
   end: 2022
-update_frequency: Yearly
-next_update: null
+data_published:
+  frequency: YEARLY
+  activity: ONGOING
+resolution: 30 m
 product_ids:
   - ga_ls_mangrove_cover_cyear_3
 

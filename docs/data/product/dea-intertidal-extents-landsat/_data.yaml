@@ -3,20 +3,23 @@
 
 # Overview
 
-title: DEA Intertidal Extents (Landsat)
-long_title: Intertidal Extents Model 25m
+short_name: DEA Intertidal Extents (Landsat)
+full_technical_name: Intertidal Extents Model 25m
 header_image: /_files/cmi/intertidal_extents.png
 version: 2.0.0
 is_latest_version: true
 latest_version_link: null
 is_provisional: false
-product_type: Derivative
-spatial_data_type: Raster
+type:
+  product_type: Derivative
+  spatial_data_type: Raster
 time_span:
   start: 1986
   end: 2016
-update_frequency: As needed
-next_update: No updates planned
+data_published:
+  frequency: AS_NEEDED
+  activity: NO_UPDATES
+resolution: 25 m
 product_ids:
   - item_v2
 
