@@ -115,9 +115,35 @@ document.addEventListener("DOMContentLoaded", function (event) {
                 "tab"
             );
 
-            if (tabUrlParam) {
+            function addTabQueryParameter() {
+                window.history.pushState("", "", `?tab=${tabId}`);
+            }
+
+            function removeTabOverviewQueryParameter() {
+                let url = new URL(window.location.href);
+                let params = url.searchParams;
+                params.delete("tab");
+                // This conditional is needed to prevent a '?' at the end of the URL in the case where there are no URL parameters
+                if (params.size === 0) {
+                    window.history.pushState({}, "", url.pathname);
+                } else {
+                    window.history.pushState(
+                        {},
+                        "",
+                        `${url.pathname}?${params.toString()}`
+                    );
+                }
+            }
+
+            // Handle opening a URL with a 'tab' parameter
+
+            if (tabUrlParam === "overview") {
+                removeTabOverviewQueryParameter();
+            } else if (tabUrlParam) {
                 document.querySelector(`.sd-tab-set > #${tabUrlParam}`).click();
             }
+
+            // Handle clicking on a tab
 
             for (let i = 0; i < tabs.length; i++) {
                 let tab = tabs[i];
@@ -126,24 +152,12 @@ document.addEventListener("DOMContentLoaded", function (event) {
                 if (tabId === "overview") {
                     // Don't add the 'tab' parameter for the Overview tab
                     tab.addEventListener("click", function () {
-                        let url = new URL(window.location.href);
-                        let params = url.searchParams;
-                        params.delete("tab");
-                        // This conditional is needed to prevent a '?' at the end of the URL in the case where there are no URL parameters
-                        if (params.size === 0) {
-                            window.history.pushState({}, "", url.pathname);
-                        } else {
-                            window.history.pushState(
-                                {},
-                                "",
-                                `${url.pathname}?${params.toString()}`
-                            );
-                        }
+                        removeTabOverviewQueryParameter();
                     });
                 } else if (tabId) {
                     // Add the 'tab' parameter for any other tab
                     tab.addEventListener("click", function () {
-                        window.history.pushState("", "", `?tab=${tabId}`);
+                        addTabQueryParameter();
                     });
                 }
             }
