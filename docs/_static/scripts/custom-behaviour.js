@@ -115,7 +115,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
                 "tab"
             );
 
-            function addTabQueryParameter() {
+            function addTabQueryParameter(tabId) {
                 window.history.pushState("", "", `?tab=${tabId}`);
             }
 
@@ -157,7 +157,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
                 } else if (tabId) {
                     // Add the 'tab' parameter for any other tab
                     tab.addEventListener("click", function () {
-                        addTabQueryParameter();
+                        addTabQueryParameter(tabId);
                     });
                 }
             }
