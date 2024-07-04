@@ -37,8 +37,7 @@
 {% set none_text = "None" %}
 {% set not_available_text = "N/A" %}
 
-.. |nbsp| unicode:: 0xA0
-   :trim:
+.. |emdash| unicode:: 0x94
 
 .. rst-class:: product-page
 
@@ -171,29 +170,28 @@
        .. dropdown:: How to access the data
 
           {% if valid_external_data %}
-          * {{ valid_external_data.custom_description or "Learn more about the data from the external provider." }}
+          * **{{ valid_external_data.custom_label or external_data_label }}** |emdash| {{ valid_external_data.custom_description or "Learn more about the data from the external provider." }}
           {%- endif %}
-          {%- if valid_maps %}
-          * Learn how to `use DEA Maps </guides/setup/dea_maps/>`_
-          {%- endif %}
-          {%- if valid_explorers %}
-          * Learn how to `use the DEA Explorer </setup/explorer_guide/>`_
-          {%- endif %}
-          {%- if valid_data %}
-          * Learn how to `access the data via AWS </guides/about/faq/#download-dea-data>`_
-          {%- endif %}
-          {%- if valid_code_samples %}
-          * Learn how to `use the DEA Sandbox </guides/setup/Sandbox/sandbox/>`_
-          {%- endif %}
-          {%- if valid_web_services %}
-          * Learn how to `use DEA's web services </guides/setup/gis/README/>`_
-          {%- endif %}
+          {%- for item in valid_maps %}
+          * **{{ item.name or map_default_name }}** |emdash| Learn how to `use DEA Maps </guides/setup/dea_maps/>`_
+          {%- endfor %}
+          {%- for item in valid_explorers %}
+          * **{{ item.name or explorer_default_name }}** |emdash| Learn how to `use the DEA Explorer </setup/explorer_guide/>`_
+          {%- endfor %}
+          {%- for item in valid_data %}
+          * **{{ item.name or data_default_name }}** |emdash| Learn how to `access the data via AWS </guides/about/faq/#download-dea-data>`_
+          {%- endfor %}
+          {%- for item in valid_code_samples %}
+          * **{{ item.name or code_sample_default_name }}** |emdash| Learn how to `use the DEA Sandbox </guides/setup/Sandbox/sandbox/>`_
+          {%- endfor %}
+          {%- for item in valid_web_services %}
+          * **{{ item.name or code_sample_default_name }}** |emdash| Learn how to `use DEA's web services </guides/setup/gis/README/>`_
+          {%- endfor %}
           {%- for item in valid_custom %}
           {%- if item.description %}
-          * {{ item.description }}
+          * **{{ item.name }}** |emdash| {{ item.description }}
           {%- endif %}
           {%- endfor %}
-
        {%- endif %}
 
        .. include:: _additional.md
