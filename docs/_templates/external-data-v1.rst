@@ -105,8 +105,6 @@
           :name: access-the-data
           :class: h2
 
-       For help accessing the data, see the `Access tab <./?tab=access>`_.
-
        .. container:: card-list icons
           :name: access-the-data-cards
 
@@ -169,6 +167,36 @@
 
                 {{ item.name }}
              {% endfor %}
+
+       .. dropdown:: How to access the data
+
+          {% if valid_external_data %}
+          * {{ valid_external_data.custom_description or "Learn more about the data from the external provider." }}
+          {%- endif %}
+          {%- if valid_maps %}
+          * Learn how to `use DEA Maps </guides/setup/dea_maps/>`_
+          {%- endif %}
+          {%- if valid_explorers %}
+          * Learn how to `use the DEA Explorer </setup/explorer_guide/>`_
+          {%- endif %}
+          {%- if valid_data %}
+          * Learn how to `access the data via AWS </guides/about/faq/#download-dea-data>`_
+          {%- endif %}
+          {%- if valid_code_samples %}
+          * Learn how to `use the DEA Sandbox </guides/setup/Sandbox/sandbox/>`_
+          {%- endif %}
+          {%- if valid_web_services %}
+          * Learn how to `use DEA's web services </guides/setup/gis/README/>`_
+          {%- endif %}
+          {%- for item in valid_custom %}
+          {%- if item.description %}
+          * {{ item.description }}
+          {%- endif %}
+          {%- endfor %}
+
+       .. include:: _access.md
+          :parser: myst_parser.sphinx_
+
        {%- endif %}
 
        {% if has_key_details %}
@@ -279,82 +307,6 @@
 
        {{ Specifications.bands.footnotes if Specifications.bands.footnotes }}
        {% endif %}
-    {% endif %}
-
-    {% if Data.enable_access %}
-    .. tab-item:: Access
-       :name: access
-
-       .. raw:: html
-
-          <div class="product-tab-table-of-contents"></div>
-
-       .. rubric:: Access the data
-          :name: access-the-data-2
-          :class: h2
-
-       {% if has_access_data %}
-       .. list-table::
-          :name: access-table
-
-          {% if valid_external_data %}
-          * - **{{ external_data_label }}**
-            - 
-              * `{{ valid_external_data.custom_label or external_data_default_name }} <{{ valid_external_data.link }}>`_
-            - {{ valid_external_data.custom_description or "Learn more about the data from the external provider." }}
-          {% endif %}
-
-          {% if valid_maps %}
-          * - **{{ map_label }}**
-            - {% for item in valid_maps %}
-              * `{{ item.name or map_default_name }} <{{ item.link }}>`_
-              {% endfor %}
-            - Learn how to `use DEA Maps </guides/setup/dea_maps/>`_
-          {% endif %}
-
-          {% if valid_explorers %}
-          * - **{{ explorer_label }}**
-            - {% for item in valid_explorers %}
-              * `{{ item.name or explorer_default_name }} <{{ item.link }}>`_
-              {% endfor %}
-            - Learn how to `use the DEA Explorer </setup/explorer_guide/>`_
-          {% endif %}
-
-          {% if valid_data %}
-          * - **{{ data_label }}**
-            - {% for item in valid_data %}
-              * `{{ item.name or data_default_name }} <{{ item.link }}>`_
-              {% endfor %}
-            - Learn how to `access the data via AWS </guides/about/faq/#download-dea-data>`_
-          {% endif %}
-
-          {% if valid_code_samples %}
-          * - **{{ code_sample_label }}**
-            - {% for item in valid_code_samples %}
-              * `{{ item.name or code_sample_default_name }} <{{ item.link }}>`_
-              {% endfor %}
-            - Learn how to `use the DEA Sandbox </guides/setup/Sandbox/sandbox/>`_
-          {% endif %}
-
-          {% if valid_web_services %}
-          * - **{{ web_service_label }}**
-            - {% for item in valid_web_services %}
-              * `{{ item.name or web_service_default_name }} <{{ item.link }}>`_
-              {% endfor %}
-            - Learn how to `use DEA's web services </guides/setup/gis/README/>`_
-          {% endif %}
-
-          {% for item in valid_custom %}
-          * - **{{ item.label or "" }}**
-            - * `{{ item.name }} <{{ item.link }}>`_
-            - {{ item.description or "" }}
-          {% endfor %}
-       {% else %}
-       There are no data source links available at the present time.
-       {% endif %}
-
-       .. include:: _access.md
-          :parser: myst_parser.sphinx_
     {% endif %}
 
 .. raw:: html
