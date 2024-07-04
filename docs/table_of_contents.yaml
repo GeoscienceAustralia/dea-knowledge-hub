@@ -235,7 +235,7 @@ entries:
               reversed: True
             entries:
               - glob: validation/daily-report/*/index
-      - caption: Reference
+      - caption: User guides
         entries:
           - file: validation/user-guides
       # - caption: Quarterly Reports
