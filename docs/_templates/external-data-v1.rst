@@ -194,10 +194,10 @@
           {%- endif %}
           {%- endfor %}
 
-       .. include:: _access.md
-          :parser: myst_parser.sphinx_
-
        {%- endif %}
+
+       .. include:: _additional.md
+          :parser: myst_parser.sphinx_
 
        {% if has_key_details %}
        .. rubric:: Key details
