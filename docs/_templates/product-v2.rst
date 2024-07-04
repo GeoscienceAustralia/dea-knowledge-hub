@@ -51,6 +51,9 @@
 {% set page_title = Data.short_name if is_latest_version else Data.version + ": " + Data.short_name %}
 {% set product_ids_label = "Product IDs" if valid_product_ids | length > 1 else "Product ID" %}
 
+.. role:: raw-html(raw)
+   :format: html
+
 .. rst-class:: product-page
 
 ======================================================================================================================================================
@@ -80,7 +83,7 @@
       {%- endif %}
       {%- if Data.time_span %}
       {%- if Data.time_span.start and Data.time_span.end %}
-      :Data time span: {{ Data.time_span.start }} – {{ Data.time_span.end }}
+      :Data time span: {{ Data.time_span.start }} :raw-html:`&ndash;` {{ Data.time_span.end }}
       {%- elif Data.time_span.start  %}
       :Data time span: Starts at {{ Data.time_span.start }}
       {%- elif Data.time_span.end  %}
