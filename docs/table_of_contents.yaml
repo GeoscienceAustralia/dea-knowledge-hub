@@ -227,14 +227,17 @@ entries:
 
   - file: validation/index
     subtrees:
-      - caption: Daily Reports
+      - caption: Daily
         entries:
           - file: validation/daily-report/index
-            title: All daily reports
+            title: Daily reports
             options:
               reversed: True
             entries:
               - glob: validation/daily-report/*/index
+      - caption: Learn more
+        entries:
+          - file: validation/user-guides
       # - caption: Quarterly Reports
       #   options:
       #     reversed: True
