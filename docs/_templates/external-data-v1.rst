@@ -354,21 +354,6 @@
        There are no data source links available at the present time.
        {% endif %}
 
-       {% if valid_files %}
-
-       .. rubric:: Additional files
-          :name: additional-files
-          :class: h2
-
-       .. list-table::
-          :name: additional-files-table
-
-          {% for item in valid_files %}
-          * - `{{ item.name or item.link }} <{{ item.link }}>`_
-            - {{ item.description }}
-          {% endfor %}
-       {% endif %}
-
        .. include:: _access.md
           :parser: myst_parser.sphinx_
     {% endif %}
