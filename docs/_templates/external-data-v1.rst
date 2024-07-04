@@ -8,7 +8,6 @@
 {% set valid_web_services = Data.web_services | selectattr("link",  "!=", None) | list %}
 {% set valid_code_samples = Data.code_examples | selectattr("link",  "!=", None) | list %}
 {% set valid_custom = Data.custom | selectattr("icon",  "!=", None) | selectattr("link",  "!=", None) | selectattr("name",  "!=", None) | list %}
-{% set valid_files = Data.files | selectattr("link",  "!=", None) | list %}
 {% set valid_product_types = [Data.product_type, Data.spatial_data_type] | select("!=", None) | list %}
 {% set valid_product_ids = Data.product_ids | select("!=", None) | list %}
 {% set valid_custom_citations = Data.custom_citations | select("!=", None) | list %}
