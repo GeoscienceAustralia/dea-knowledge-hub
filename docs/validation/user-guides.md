@@ -1,6 +1,6 @@
-# User guides
+# Learn how to analyse the reports
 
-Learn how to understand and analyse these Validation Reports.
+The user guides will show you how to interpret the variables, results, and figures in these Validation Reports.
 
 [Visit the user guides](/guides/setup/validation/)
 
