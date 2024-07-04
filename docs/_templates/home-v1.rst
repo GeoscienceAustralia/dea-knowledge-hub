@@ -12,8 +12,8 @@
    .. rubric:: Data Products
 
    .. raw:: html
+   <p>Browse our <a href="/data/">catalogue of data products</a> to find supporting information and ways to access the data.</p>
 
-      <p>Browse our catalogue of data products to find supporting information and ways to access the data.<br />Visit the <a href="/data/">Data Products</a>.</p>
 
    .. grid:: 2 2 3 5
       :gutter: 3
