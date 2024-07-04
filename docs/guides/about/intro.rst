@@ -5,6 +5,11 @@ About DEA
 
 Digital Earth Australia (DEA) is a program of Geoscience Australia, an agency of the Australian Government. We create free and open satellite data products for the benefit of Australia.
 
+.. admonition:: See our website
+   :class: note
+
+   Visit the `DEA website <https://www.dea.ga.gov.au/>`_
+
 .. contents:: In this guide
    :local:
    :backlinks: none
