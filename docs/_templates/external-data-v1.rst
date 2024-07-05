@@ -59,7 +59,7 @@
       {%- endif %}
       {%- if Data.time_span %}
       {%- if Data.time_span.start and Data.time_span.end %}
-      :Time span: {{ Data.time_span.start }} – {{ Data.time_span.end }}
+      :Time span: {{ Data.time_span.start }} :raw-html:`&mdash;` {{ Data.time_span.end }}
       {%- elif Data.time_span.start  %}
       :Starts at: {{ Data.time_span.start }}
       {%- elif Data.time_span.end  %}
