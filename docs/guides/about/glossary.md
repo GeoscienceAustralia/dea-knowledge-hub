@@ -583,7 +583,8 @@ The generation of some form of output as the result of a set of actions, which m
 ## Product
 
 A categorical term applied to describe the output from a process. Typically, a product has an associated product 
-definition which contains the product description and specification.
+definition which contains the product description and specification. An example of a product is
+[DEA Water Observations (Landsat)](/data/product/dea-water-observations-landsat/)
 
 {#python}
 ## Python
