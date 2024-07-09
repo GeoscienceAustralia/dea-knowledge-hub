@@ -11,3 +11,6 @@ cards:
   - name: SRTM 1 second DEM
     link: /data/external-data/ga-srtm/
     image: /_files/external-data/ga_srtm_thumbnail.jpg
+  - name: Multi-scale Topographic Position
+    link: /data/external-data/ga-mtpi/
+    image: /_files/external-data/ga_mtpi_thumbnail.jpg
