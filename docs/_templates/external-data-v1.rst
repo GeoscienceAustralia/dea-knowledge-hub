@@ -82,7 +82,7 @@
    .. admonition:: External data
       :class: note external-data
    
-      This data product is produced by an external party, and is not a DEA product. DEA provides this data without modifications except where needed to make it compatible with our systems.
+      This data product is produced by an external party and is not a DEA product. DEA provides this data without modifications except where needed to make it compatible with our systems.
 
       {% if valid_external_data %}
       {% if valid_external_data.custom_label %}

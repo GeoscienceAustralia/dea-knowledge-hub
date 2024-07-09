@@ -1,5 +1,5 @@
 title: External data
-description: This external data is provided because it may assist with the analysis of DEA data. These data products are produced by external parties, and are not DEA products. DEA provides this data without modifications except where needed to make it compatible with our systems.
+description: This external data is provided because it may assist with the analysis of DEA data. These data products are produced by external parties and are not DEA products. DEA provides this data without modifications except where needed to make it compatible with our systems.
 
 cards:
   - name: GA AusBathyTopo 250m
