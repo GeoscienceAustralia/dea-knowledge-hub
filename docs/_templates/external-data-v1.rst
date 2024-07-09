@@ -82,10 +82,14 @@
    .. admonition:: External data
       :class: note external-data
    
-      This data product is produced by an external party ({{ Data.external_party }}), and is not a DEA product. DEA provides this data without modifications except where needed to make it compatible with our systems.
+      This data product is produced by an external party, and is not a DEA product. DEA provides this data without modifications except where needed to make it compatible with our systems.
 
       {% if valid_external_data %}
-      `{{ valid_external_data.custom_label or external_data_label }} <{{ valid_external_data.link }}>`_
+      {% if valid_external_data.custom_label %}
+      `{{ valid_external_data.custom_label }} <{{ valid_external_data.link }}>`_
+      {% else %}
+      `{{ external_data_label }} ({{ Data.external_party }}) <{{ valid_external_data.link }}>`_
+      {% endif %}
       {% endif %}
 
 .. tab-set::
