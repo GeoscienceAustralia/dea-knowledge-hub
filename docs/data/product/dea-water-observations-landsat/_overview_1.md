@@ -5,6 +5,6 @@ Digital Earth Australia (DEA) Water Observations uses an algorithm to classify e
 :::{admonition} New version in development
 :class: note
 
-A new version of this product is being developed. Subscribe to the [DEA newsletter](https://www.dea.ga.gov.au/news/dea-newsletter-and-communications-archive) to be notified of product releases.
+A new version of this product is being developed. Subscribe to the [DEA newsletter](https://communication.ga.gov.au/dea-news-subscribe) to be notified of product releases.
 :::
 
