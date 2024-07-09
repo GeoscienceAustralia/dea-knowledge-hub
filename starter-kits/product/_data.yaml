@@ -3,18 +3,21 @@
 
 # Overview
 
-title: Example product
-# long_title: Long example product title
-# header_image: /_files/example/image.png
+short_name: Example product
 version: 1.0.0
-product_type: Derivative
-spatial_data_type: Vector
-time_span:
-  start: 1 Jan 2020
-  end: null
-update_frequency: Yearly
+# full_technical_name: Long example product title
 # product_ids:
 #   - example_1
+product_type: Derivative
+spatial_data_type: Vector
+# resolution: 30 m
+time_span:
+  start: 1 Jan 2020
+  end: Present
+data_updates:
+  frequency: DAILY
+  activity: ONGOING
+# header_image: /_files/example/image.png
 
 is_latest_version: true
 # latest_version_link: /data/product/example-product/

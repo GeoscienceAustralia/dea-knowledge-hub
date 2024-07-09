@@ -3,20 +3,23 @@
 
 # Overview
 
-title: Geoscience Australia Land Cover (Terra MODIS)
-long_title: "Dynamic Land Cover Dataset 250m 2.1.0 "
+short_name: Geoscience Australia Land Cover (Terra MODIS)
+full_technical_name: "Dynamic Land Cover Dataset 250m 2.1.0 "
 header_image: /_files/cmi/dlcd.png
 version: 2.1.0
 is_latest_version: true
 latest_version_link: null
 is_provisional: false
-product_type: Derivative
-spatial_data_type: Raster
+type:
+  product_type: Derivative
+  spatial_data_type: Raster
 time_span:
   start: 2002
   end: 2015
-update_frequency: Every 2 years
-next_update: No updates planned
+data_published:
+  frequency: 2_YEARS
+  activity: NO_UPDATES
+resolution: 250 m
 product_ids:
   - ga_ter_m_dlcd_ann
 

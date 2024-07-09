@@ -3,20 +3,23 @@
 
 # Overview
 
-title: DEA High and Low Tide Imagery (Landsat)
-long_title: "High Tide and Low Tide Composites 25m 2.0.0 "
+short_name: DEA High and Low Tide Imagery (Landsat)
+full_technical_name: "High Tide and Low Tide Composites 25m 2.0.0 "
 header_image: /_files/cmi/HLTCv2.png
 version: 2.0.0
 is_latest_version: true
 latest_version_link: null
 is_provisional: false
-product_type: Derivative
-spatial_data_type: Raster
+type:
+  product_type: Derivative
+  spatial_data_type: Raster
 time_span:
   start: 1995
   end: 2017
-update_frequency: As needed
-next_update: No updates planned
+data_published:
+  frequency: AS_NEEDED
+  activity: NO_UPDATES
+resolution: 25 m
 product_ids:
   - high_tide_comp_20p
   - low_tide_comp_20p
