@@ -356,6 +356,11 @@ a typical desktop computer or workstation in order to solve large problems in sc
 
 The angle between a ray incident on a surface and the line perpendicular to the surface at the point of incidence.
 
+{#ingesting}
+## Ingesting
+
+The process of taking USGS data in angular coordinates and reprojecting it to [tiles](#tile) in linear coordinates as well as processing to produce products available in Datacube in netCDF format.
+
 {#interim}
 ## Interim
 
@@ -381,7 +386,13 @@ extent of the Australian intertidal zone at regular intervals of the observed ti
 
 For more information, see [DEA Intertidal Extents](https://www.dea.ga.gov.au/products/dea-intertidal-extents).
 
-{#jupyter-nb}      
+{#indexing}
+## Indexing
+
+The process of making data available (with a file location or URI) with associated metadata in a format
+that is accepted by the Datacube.
+
+{#jupyter-nb}
 ## Jupyter notebooks
 
 A computational "notebook" that allows code to be run and presented alongside explanatory documentation, figures, 
