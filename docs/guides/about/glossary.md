@@ -687,9 +687,6 @@ saturation, add small amounts of its complement, making it closer to grey.
 Each [swath](#swath) is divided into a series of scenes to enable the data to be handled and catalogued more easily.
 Therefore, a scene is a defined portion of the continuous strips of data collected by satellites.
 
-Landsat scenes are arranged into a worldwide grid called the Worldwide Reference System which uses 'path' and 'row' numbers
-to identify the location of each scene.
-
 {#ssh}
 ## Secure Shell (SSH)
 
@@ -869,12 +866,11 @@ A HTTP interface for requesting geo-registered map images that can be displayed 
 An interface for querying, modifying and exchanging features or values in a database and retrieving features for use.
 
 {#wrs}
-## World Reference System
+## Worldwide Reference System
 
-A global indexing scheme designed for the Landsat Program. It is based on nominal scene centres defined by path and 
-row coordinates.
-
-For more information, see [NASA: World Reference System](https://landsat.gsfc.nasa.gov/about/the-worldwide-reference-system/).
+Landsat scenes are arranged into a worldwide grid called the World Reference System (WRS) which uses 'path' and 'row'
+numbers to identify the location of each scene. It is a global indexing scheme based on nominal scene centres.
+Learn more about the [Worldwide Reference System from NASA](https://landsat.gsfc.nasa.gov/about/the-worldwide-reference-system/).
 
 {#xarray}
 ## xarray
