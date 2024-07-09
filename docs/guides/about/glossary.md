@@ -683,8 +683,11 @@ saturation, add small amounts of its complement, making it closer to grey.
 {#scene}
 ## Scene
 
-A defined portion of the continuous strips of data collected by satellites. Satellite data is broken up into scenes 
-for ease in handling and cataloguing.
+Each [swath](#swath) is divided into a series of scenes to enable the data to be handled and catalogued more easily.
+Therefore, a scene is a defined portion of the continuous strips of data collected by satellites.
+
+Landsat scenes are arranged into a worldwide grid called the Worldwide Reference System which uses 'path' and 'row' numbers
+to identify the location of each scene.
 
 {#ssh}
 ## Secure Shell (SSH)
@@ -761,7 +764,7 @@ cases (directional, conical, and hemispherical cases).
 {#swath}
 ## Swath
 
-As a satellite moves around the Earth, it observes a long strip of the Earth's surface called a swath. For Landsat satellites, the swath is recorded on the day side of the Earth, running in the North-to-South direction, and is typically 185 km wide. Each swath is divided into a series of [scenes](#scene).
+As a satellite moves around the Earth, it observes a long strip of the Earth's surface called a swath. Each swath is divided into a series of [scenes](#scene).
 
 {#sar}
 ## Synthetic Aperture Radar (SAR)
