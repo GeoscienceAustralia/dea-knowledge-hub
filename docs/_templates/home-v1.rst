@@ -15,7 +15,7 @@
 
       <p>Browse our <a href="/data/">catalogue of data products</a> to find supporting information and ways to access the data.</p>
 
-   .. grid:: 2 2 3 5
+   .. grid:: 2 2 3 6
       :gutter: 3
 
       {% for item in data.product_themes %}

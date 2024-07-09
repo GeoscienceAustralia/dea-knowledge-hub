@@ -17,3 +17,6 @@ cards:
   - name: Hazards
     link: /data/theme/hazards/
     image: /_files/themes/hazards.*
+  - name: External data
+    link: /data/theme/external-data/
+    image: /_files/themes/external-data.*

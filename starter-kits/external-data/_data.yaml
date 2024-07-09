@@ -6,27 +6,15 @@
 title: Example product
 # long_title: Long example product title
 # header_image: /_files/example/image.png
-version: 1.0.0
 product_type: Derivative
 spatial_data_type: Vector
 time_span:
   start: 1 Jan 2020
   end: null
-update_frequency: Yearly
-next_update: null
 # product_ids:
 #   - example_1
+external_party: Example Organisation
 
-is_latest_version: true
-# latest_version_link: /data/product/example-product/
-is_provisional: false
-
-# parent_products:
-#   name: Example parent product
-#   link: /data/product/example-parent-product/
-# collection:
-#   name: Geoscience Australia Landsat Collection 3
-#   link: null
 # doi: 10.00000/000000
 # ecat: 100000
 # nci: a000
@@ -45,6 +33,11 @@ licence:
 #   - example_tag
 
 # Access
+
+# external_data_page:
+#   link: https://example.com
+#   custom_label: null
+#   custom_description: null
 
 # maps:
 #   - link: https://example.com
@@ -80,20 +73,8 @@ licence:
 #     description: Learn how to `use the API <https://satpathapi.dea.ga.gov.au/user-guide>`_
 #     class: null
 
-# History
-
-# old_versions:
-#   - version: 1.0.0
-#     title: Example product
-#     slug: example-product-1.0.0
-
 # Settings
 
 enable_overview: true
+enable_specifications: true
 enable_access: true
-enable_details: true
-enable_quality: true
-enable_history: true
-enable_faqs: false
-enable_credits: true
-
