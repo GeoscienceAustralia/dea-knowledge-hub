@@ -1,6 +1,6 @@
 # Digital Earth Australia Glossary
 
-This glossary provides definitions for the terms we use at DEA, including technical terms and program-specific terms.
+This glossary provides definitions for the terms we use at DEA, including technical terms and program-specific terms. (They are in alphabetical order.)
 
 {#acquisition}
 ## Acquisition
@@ -757,6 +757,11 @@ An orbit in which a satellite is always in the same position with respect to the
 
 The fraction of incoming solar radiation that is reflected from Earth's surface for specific incident or viewing 
 cases (directional, conical, and hemispherical cases).
+
+{#swath}
+## Swath
+
+As a satellite moves around the Earth, it observes a long strip of the Earth's surface called a swath. For Landsat satellites, the swath is recorded on the day side of the Earth, running in the North-to-South direction, and is typically 185 km wide. Each swath is divided into a series of [scenes](#scene).
 
 {#sar}
 ## Synthetic Aperture Radar (SAR)
