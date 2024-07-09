@@ -11,10 +11,9 @@ spatial_data_type: Raster
 time_span:
   start: 2014
   end: 2014
-update_frequency: null
-next_update: null
 product_ids:
   - ga_srtm_dem1sv1_0
+external_provider: Geoscience Australia
 
 doi: null
 ecat: "72759"

@@ -69,6 +69,7 @@
       {%- if valid_product_ids %}
       :{{ product_ids_label }}: {{ valid_product_ids | join(", ") }}
       {%- endif %}
+      :Provided by: {{ Data.external_provider }}
 
    .. container::
 
@@ -81,7 +82,7 @@
    .. admonition:: External data
       :class: note external-data
    
-      This data product is developed by an external party, and is not a DEA product.
+      This data product is developed by an external party ({{ Data.external_provider }}), and is not a DEA product. The data hasn't been altered except to make it compatible with DEA's systems.
 
       {% if valid_external_data %}
       `{{ valid_external_data.custom_label or external_data_label }} <{{ valid_external_data.link }}>`_

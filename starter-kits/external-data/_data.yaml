@@ -11,10 +11,9 @@ spatial_data_type: Vector
 time_span:
   start: 1 Jan 2020
   end: null
-update_frequency: Yearly
-next_update: null
 # product_ids:
 #   - example_1
+external_provider: Example Organisation
 
 # doi: 10.00000/000000
 # ecat: 100000

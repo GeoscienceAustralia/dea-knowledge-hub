@@ -11,10 +11,9 @@ spatial_data_type: Raster
 time_span:
   start: 2023
   end: 2023
-update_frequency: null
-next_update: null
 product_ids:
   - ga_ausbathytopo250m_2023
+external_provider: Geoscience Australia
 
 doi: 10.26186/148758
 ecat: "148758"

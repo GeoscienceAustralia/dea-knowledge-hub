@@ -11,10 +11,9 @@ spatial_data_type: Raster
 time_span:
   start: 2020
   end: 2020
-update_frequency: null
-next_update: null
 product_ids:
   - abares_clum_2020
+external_provider: Australian Bureau of Agricultural and Resource Economics and Sciences
 
 doi: 10.25814/aqjw-rq15
 ecat: null
