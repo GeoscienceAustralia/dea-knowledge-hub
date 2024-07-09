@@ -799,6 +799,12 @@ NetCDF subsetting, OGC WCS and WMS.
 
 For more information, see [NCI: Data ](https://nci.org.au/our-services/data-services).
 
+{#tile}
+## Tile
+
+[Scenes](#scene) are resampled onto a grid that is fixed to the Earth's coordinates, measured in units of kilometers aligned with the North Pole.
+This resampled grid is made of 100 &times; 100 km regions called tiles.
+
 {#timedelta}
 ## Timedelta (seconds)
 
