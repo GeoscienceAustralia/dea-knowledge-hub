@@ -115,7 +115,8 @@ The angle between true north and the incident direction in the slope geometry.
 {#band}
 ## Band
 
-A discrete wavelength interval or range observed by a remote sensing instrument.
+Each remote sensing instrument (i.e. a satellite) can observe the Earth at multiple
+wavelengths. A single, discrete wavelength interval or range is referred to as a band.
 
 {#barest-earth}
 ## Barest Earth
