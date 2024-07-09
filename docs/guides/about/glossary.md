@@ -1,5 +1,7 @@
 # Digital Earth Australia Glossary
 
+This glossary provides definitions for the terms we use at DEA, including technical terms and program-specific terms.
+
 {#acquisition}
 ## Acquisition
 
