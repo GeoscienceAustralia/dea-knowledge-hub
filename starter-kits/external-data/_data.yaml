@@ -13,7 +13,7 @@ time_span:
   end: null
 # product_ids:
 #   - example_1
-external_provider: Example Organisation
+external_party: Example Organisation
 
 # doi: 10.00000/000000
 # ecat: 100000

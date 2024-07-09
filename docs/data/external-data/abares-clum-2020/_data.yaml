@@ -13,7 +13,7 @@ time_span:
   end: 2020
 product_ids:
   - abares_clum_2020
-external_provider: Australian Bureau of Agricultural and Resource Economics and Sciences
+external_party: Australian Bureau of Agricultural and Resource Economics and Sciences
 
 doi: 10.25814/aqjw-rq15
 ecat: null

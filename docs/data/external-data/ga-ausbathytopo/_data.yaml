@@ -13,7 +13,7 @@ time_span:
   end: 2023
 product_ids:
   - ga_ausbathytopo250m_2023
-external_provider: Geoscience Australia
+external_party: Geoscience Australia
 
 doi: 10.26186/148758
 ecat: "148758"

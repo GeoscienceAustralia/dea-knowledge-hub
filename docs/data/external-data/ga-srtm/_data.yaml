@@ -13,7 +13,7 @@ time_span:
   end: 2014
 product_ids:
   - ga_srtm_dem1sv1_0
-external_provider: Geoscience Australia
+external_party: Geoscience Australia
 
 doi: null
 ecat: "72759"
