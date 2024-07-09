@@ -760,6 +760,11 @@ The ratio of the relative amplitude of the response of a detector and the freque
 An optical instrument that splits the light received from an object into its component wavelengths by means of a 
 diffraction grating, and then measures the amplitudes of the individual wavelengths.
 
+{#stacking}
+## Stacking
+
+A process that combines all data for a [tile](#tile) across an entire year into a single file. 
+
 {#sun-sync-orbit}
 ## Sun-synchronous orbit
 
