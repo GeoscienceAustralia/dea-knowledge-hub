@@ -356,11 +356,6 @@ a typical desktop computer or workstation in order to solve large problems in sc
 
 The angle between a ray incident on a surface and the line perpendicular to the surface at the point of incidence.
 
-{#ingesting}
-## Ingesting
-
-The process of taking USGS data in angular coordinates and reprojecting it to [tiles](#tile) in linear coordinates as well as processing to produce products available in Datacube in netCDF format.
-
 {#interim}
 ## Interim
 
