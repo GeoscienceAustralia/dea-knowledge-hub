@@ -696,7 +696,7 @@ saturation, add small amounts of its complement, making it closer to grey.
 {#scene}
 ## Scene
 
-Each [swath](#swath) is divided into a series of scenes to enable the data to be handled and catalogued more easily.
+Each satellite data [swath](#swath) is divided into a series of scenes to enable the data to be handled and catalogued more easily.
 Therefore, a scene is a defined portion of the continuous strips of data collected by satellites.
 
 {#ssh}
