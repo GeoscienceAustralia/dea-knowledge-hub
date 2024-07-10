@@ -815,8 +815,11 @@ For more information, see [NCI: Data ](https://nci.org.au/our-services/data-serv
 {#tile}
 ## Tile
 
-[Scenes](#scene) are resampled onto a grid that is fixed to the Earth's coordinates, measured in units of kilometers aligned with the North Pole.
-This resampled grid is made of 100 &times; 100 km regions called tiles.
+Tiles are a way of dividing data products into smaller pieces to enable the data to be handled and analysed more easily. 
+Each tile represents a specific geographic area and multiple tiles can be combined into a grid to cover larger regions.
+For instance, the [DEA GeoMAD][GeoMad] product is provided using 96 &times; 96 km grid tiles, characteristic of DEA Summary Products.
+
+[GeoMad]: https://knowledge.dea.ga.gov.au/data/product/dea-geometric-median-and-median-absolute-deviation-landsat/
 
 {#timedelta}
 ## Timedelta (seconds)
