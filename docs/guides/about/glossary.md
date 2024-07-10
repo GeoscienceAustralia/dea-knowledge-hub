@@ -691,8 +691,9 @@ saturation, add small amounts of its complement, making it closer to grey.
 {#scene}
 ## Scene
 
-Each satellite data [swath](#swath) is divided into a series of scenes to enable the data to be handled and catalogued more easily.
-Therefore, a scene is a defined portion of the continuous strips of data collected by satellites.
+Each satellite data [swath](#swath) can be divided into a series of scenes to enable the data to be handled and catalogued more easily.
+A scene is a defined portion of the continuous strips of data collected by satellites.
+Scenes are primarily used for LANDSAT satellite data.
 
 {#ssh}
 ## Secure Shell (SSH)
