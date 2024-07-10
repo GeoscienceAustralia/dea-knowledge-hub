@@ -1,7 +1,7 @@
 title: Land and Vegetation
 description: See how the land surface and vegetation of Australia have changed over time.
 
-pages:
+cards:
   - name: DEA Land Cover
     link: /data/product/dea-land-cover-landsat/
     image: /_files/cmi/DEA_Land_Cover_1_0_0_Lvl4_2015.jpg

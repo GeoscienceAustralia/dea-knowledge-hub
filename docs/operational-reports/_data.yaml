@@ -1,0 +1,10 @@
+title: Operational reports
+description: We provide transparent reports to allow stakeholders to assess the performance and quality of our products.
+
+reports:
+  - name: DEA Published Product Currency Report
+    link: https://mgmt.sandbox.dea.ga.gov.au/public-dashboards/d22241dbfca54b1fa9f73938ef26e645?orgId=1
+    description: Currency is a measure of how consistently DEA's data products have been published through DEA in line with the stated update frequency on or before the scheduled publish date. This report tracks the Currency of our data products and if they are on time.
+    image: /_files/operational-reports/DEA_Published_Product_Currency_Report.png
+    custom_link_text: View the DEA Published Product Currency Report
+
