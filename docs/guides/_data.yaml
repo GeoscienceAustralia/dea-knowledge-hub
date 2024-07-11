@@ -6,5 +6,11 @@ cards:
     link: /guides/overview/
     image: /_files/themes/baseline-satellite-data.*
   - name: Access
-    link: /guides/setup/
+    link: /guides/access/
+    image: /_files/themes/baseline-satellite-data.*
+  - name: Reference
+    link: /guides/reference/
+    image: /_files/themes/baseline-satellite-data.*
+  - name: Appendix
+    link: /guides/appendix/
     image: /_files/themes/baseline-satellite-data.*

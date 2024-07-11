@@ -154,12 +154,16 @@ entries:
     subtrees:
       - caption: Overview
         entries:
+          - file: guides/overview/index
+            title: All
+
           - file: guides/about/intro
 
       - caption: Access
         entries:
-          - file: guides/setup/index
+          - file: guides/access/index
             title: All
+
           - file: guides/setup/README
           - file: guides/setup/dea_maps
           - file: guides/setup/explorer_guide
@@ -179,6 +183,9 @@ entries:
 
       - caption: Reference
         entries:
+          - file: guides/reference/index
+            title: All
+
           - file: guides/reference/collection_3_naming
           - file: guides/reference/collection_3_summary_grid
           - file: guides/reference/dataset_maturity_guide
@@ -196,6 +203,9 @@ entries:
 
       - caption: Appendix
         entries:
+          - file: guides/appendix/index
+            title: All
+
           - file: guides/about/faq
           - file: guides/about/publications
           - file: guides/about/glossary
