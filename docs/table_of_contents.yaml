@@ -201,7 +201,7 @@ entries:
 
   # DEA Notebooks
 
-  - file: notebooks-temp/index
+  - file: notebooks/index
     title: DEA Notebooks
     subtrees:
       - caption: Getting started
