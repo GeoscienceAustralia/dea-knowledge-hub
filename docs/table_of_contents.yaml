@@ -158,6 +158,8 @@ entries:
 
       - caption: Access
         entries:
+          - file: guides/setup/index
+            title: All
           - file: guides/setup/README
           - file: guides/setup/dea_maps
           - file: guides/setup/explorer_guide
