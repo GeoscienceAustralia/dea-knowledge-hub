@@ -213,15 +213,13 @@ entries:
 
   # DEA Notebooks
 
-  # - file: dea-notebooks/index
-  #   title: DEA Notebooks
-  - file: notebooks/README
-    title: Readme
+  - file: dea-notebooks/index
+    title: DEA Notebooks
     subtrees:
       - caption: Getting started
         entries:
-          # - file: notebooks/README
-          #   title: Readme
+          - file: notebooks/README
+            title: Readme
           - file: notebooks/Beginners_guide/README # Contains its own table of contents.
 
       - caption: Explore the notebooks
