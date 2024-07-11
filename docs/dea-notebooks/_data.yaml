@@ -2,6 +2,9 @@ title: DEA Notebooks
 description: The Jupyter Notebooks and Python tools in this repository are for analysing DEA’s satellite data products. The notebooks are designed to demonstrate how to use the DEA data and tools to conduct a broad range of geospatial analyses. These notebooks can be viewed directly in the Knowledge Hub, or can be run interactively in the `DEA Sandbox </guides/setup/Sandbox/sandbox/>`_ or the `NCI </guides/setup/NCI/README/>`_. Get started with the `DEA Notebooks Readme </notebooks/README/>`_.
 
 cards:
+  - name: Readme
+    link: /notebooks/README/
+    image: /_files/default/dea-earth-thumbnail.jpg
   - name: Beginner’s guide
     link: /notebooks/Beginners_guide/README/
     image: /_files/dea-notebooks-home-page/beginners-guide.jpg
