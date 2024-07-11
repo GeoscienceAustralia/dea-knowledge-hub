@@ -6,7 +6,7 @@ This is where you will find useful guides and information for Digital Earth Aust
 
 .. container:: card-list descriptions
 
-   .. grid:: 2 2 3 4
+   .. grid:: 2 2 2 3
       :gutter: 3
 
       .. grid-item-card::

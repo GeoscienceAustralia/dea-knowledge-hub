@@ -66,6 +66,10 @@
         }
 
         .sd-card {
+            .rubric {
+                padding-top: 0.5rem;
+            }
+
             .image-container {
                 position: relative;
                 overflow: hidden;
@@ -87,10 +91,6 @@
 
     &.images {
         .sd-card {
-            .rubric {
-                padding-top: 0.5rem;
-            }
-
             &:hover {
                 img {
                     transform: scale(1.05);
@@ -103,5 +103,11 @@
         }
     }
 
-    &.descriptions {}
+    &.descriptions {
+        .sd-card {
+            .rubric {
+                margin-bottom: 0.5rem;
+            }
+        }
+    }
 }
