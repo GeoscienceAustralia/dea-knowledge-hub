@@ -4,20 +4,20 @@ description: The Jupyter Notebooks and Python tools in this repository are for a
 cards:
   - name: Beginner’s guide
     link: /notebooks/Beginners_guide/README/
-    image: /_files/dea-notebooks-home/beginners-guide.jpg
+    image: /_files/dea-notebooks-home-page/beginners-guide.jpg
   - name: DEA products
     link: /notebooks/DEA_products/README/
-    image: /_files/dea-notebooks-home/dea-products.jpg
+    image: /_files/dea-notebooks-home-page/dea-products.jpg
   - name: How-to guides
     link: /notebooks/How_to_guides/README/
-    image: /_files/dea-notebooks-home/how-to-guides.jpg
+    image: /_files/dea-notebooks-home-page/how-to-guides.jpg
   - name: Interactive apps
     link: /notebooks/Interactive_apps/README/
-    image: /_files/dea-notebooks-home/interactive-apps.jpg
+    image: /_files/dea-notebooks-home-page/interactive-apps.jpg
   - name: Real-world examples
     link: /notebooks/Real_world_examples/README/
-    image: /_files/dea-notebooks-home/real-world-examples.jpg
+    image: /_files/dea-notebooks-home-page/real-world-examples.jpg
   - name: DEA Tools Package
     link: /notebooks/Tools/
-    image: /_files/dea-notebooks-home/dea-tools-package.png
+    image: /_files/dea-notebooks-home-page/dea-tools-package.png
 

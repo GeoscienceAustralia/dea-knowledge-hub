@@ -13,7 +13,7 @@ This is where you will find useful guides and information for Digital Earth Aust
 
          .. container:: image-container
 
-            .. image:: /_files/themes/baseline-satellite-data.*
+            .. image:: /_files/user-guides-home-page/overview.jpg
                :class: no-gallery
 
          .. rubric:: Overview
@@ -24,7 +24,7 @@ This is where you will find useful guides and information for Digital Earth Aust
 
          .. container:: image-container
 
-            .. image:: /_files/themes/baseline-satellite-data.*
+            .. image:: /_files/user-guides-home-page/access.jpg
                :class: no-gallery
 
          .. rubric:: Access
@@ -35,7 +35,7 @@ This is where you will find useful guides and information for Digital Earth Aust
 
          .. container:: image-container
 
-            .. image:: /_files/themes/baseline-satellite-data.*
+            .. image:: /_files/user-guides-home-page/reference.jpg
                :class: no-gallery
 
          .. rubric:: Reference
@@ -46,7 +46,7 @@ This is where you will find useful guides and information for Digital Earth Aust
 
          .. container:: image-container
 
-            .. image:: /_files/themes/baseline-satellite-data.*
+            .. image:: /_files/default/dea-earth-thumbnail.jpg
                :class: no-gallery
 
          .. rubric:: Appendix
