@@ -1,8 +1,8 @@
 # Notebooks redirects
 
-notebooks                      notebooks/README
-notebooks/Beginners_guide      notebooks/Beginners_guide/README
-notebooks/DEA_products         notebooks/DEA_products/README
-notebooks/How_to_guides        notebooks/How_to_guides/README
-notebooks/Interactive_apps     notebooks/Interactive_apps/README
-notebooks/Real_world_examples  notebooks/Real_world_examples/README
+# notebooks                      dea-notebooks
+# notebooks/Beginners_guide      notebooks/Beginners_guide/README
+# notebooks/DEA_products         notebooks/DEA_products/README
+# notebooks/How_to_guides        notebooks/How_to_guides/README
+# notebooks/Interactive_apps     notebooks/Interactive_apps/README
+# notebooks/Real_world_examples  notebooks/Real_world_examples/README
