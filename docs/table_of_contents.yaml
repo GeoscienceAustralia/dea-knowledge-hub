@@ -203,7 +203,7 @@ entries:
 
   # DEA Notebooks
 
-  - file: notebooks/index
+  - file: dea-notebooks/index
     title: DEA Notebooks
     subtrees:
       - caption: Getting started
