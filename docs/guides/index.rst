@@ -4,7 +4,7 @@ DEA User Guides
 
 This is where you will find useful guides and information for Digital Earth Australia's data products, tools, and more.
 
-.. container:: card-list images
+.. container:: card-list descriptions
 
    .. grid:: 2 2 3 4
       :gutter: 3

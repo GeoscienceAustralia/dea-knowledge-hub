@@ -53,7 +53,7 @@
         }
     }
 
-    &.images {
+    &.images, &.descriptions {
         .sd-container-fluid {
             padding: 0;
         }
@@ -82,7 +82,11 @@
                     transition: transform 0.2s;
                 }
             }
+        }
+    }
 
+    &.images {
+        .sd-card {
             .rubric {
                 padding-top: 0.5rem;
             }
@@ -98,4 +102,6 @@
             }
         }
     }
+
+    &.descriptions {}
 }
