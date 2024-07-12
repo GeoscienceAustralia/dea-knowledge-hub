@@ -18,7 +18,7 @@ This is where you will find useful guides and information about DEA's data produ
 
          .. rubric:: Overview
 
-         Learn `about DEA </guides/about/intro/>`_ and what we do.
+         Start by `learning about DEA </guides/about/intro/>`_: who we are and what we do.
 
       .. grid-item-card::
 
@@ -40,7 +40,7 @@ This is where you will find useful guides and information about DEA's data produ
 
          .. rubric:: Reference
 
-         Here you will find important reference guides like the `DEA Naming Conventions </guides/reference/collection_3_naming/>`_ and `DEA Summary Product Grid </guides/reference/collection_3_summary_grid/>`_.
+         Here you will find reference guides like the `DEA Naming Conventions </guides/reference/collection_3_naming/>`_ and `DEA Summary Product Grid </guides/reference/collection_3_summary_grid/>`_.
 
       .. grid-item-card::
 
@@ -51,5 +51,5 @@ This is where you will find useful guides and information about DEA's data produ
 
          .. rubric:: Appendix
 
-         The `Frequently asked questions </guides/about/faq/>`_ may answer your queries and the `Glossary </guides/about/glossary/>`_ can explain the meaning of terms.
+         The `Frequently asked questions </guides/about/faq/>`_ and the `Glossary </guides/about/glossary/>`_ can be helpful places to find answers.
 
