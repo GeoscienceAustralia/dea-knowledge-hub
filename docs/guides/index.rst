@@ -2,7 +2,7 @@
 DEA User Guides
 ======================================================================================================================================================
 
-This is where you will find useful guides and information for Digital Earth Australia's data products, tools, and more.
+This is where you will find useful guides and information about DEA's data products and tools.
 
 .. container:: card-list descriptions
 
