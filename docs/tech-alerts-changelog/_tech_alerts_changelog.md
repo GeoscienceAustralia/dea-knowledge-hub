@@ -8,7 +8,6 @@
 :::{admonition} System status of DEA
 :class: caution
 
-* DEA Sandbox outage. See below.
 * Misclassification issue with Sentinel-2 's2cloudless' cloud masking from 2022. See below.
 * Terra-derived DEA Hotspots are unavailable. See below.
 :::
@@ -24,10 +23,6 @@ For a preview, see the [provisional version of the expanded DEA Summary Product 
 All new versions of our 'summary derivative products' will be affected by this change (but existing versions of the products will not be changed). These products are [DEA Geometric Median and Median Absolute Deviation (GeoMAD)](/data/product/dea-geometric-median-and-median-absolute-deviation-landsat/), [DEA Water Observations Statistics (Landsat)](/data/product/dea-water-observations-statistics-landsat/), [DEA Fractional Cover Percentiles](/data/product/dea-fractional-cover-percentiles-landsat/), [DEA Mangroves](/data/product/dea-mangrove-canopy-cover-landsat/), and [DEA Land Cover](/data/product/dea-land-cover-landsat/).
 
 Learn more about the [DEA Summary Product Grid](/guides/reference/collection_3_summary_grid/).
-
-## 2024-07-12: DEA Sandbox outage
-
-The DEA Sandbox is currently experiencing an outage that may cause users to be unable to log in. We are working to resolve this issue.
 
 ## 2024-07-01: External data products now featured on the Knowledge Hub
 
