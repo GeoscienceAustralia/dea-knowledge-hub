@@ -65,7 +65,7 @@ custom: null
 # History
 
 old_versions:
-- version: 3.0.0
+  - version: 3.0.0
     title: DEA Fractional Cover Percentiles (Landsat)
     slug: dea-fractional-cover-percentiles-landsat-3.0.0
   - version: 2.2.1
