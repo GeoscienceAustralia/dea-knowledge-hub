@@ -7,20 +7,20 @@ cards:
     image: /_files/default/dea-earth-thumbnail.*
   - name: Beginner’s guide
     link: /notebooks/Beginners_guide/README/
-    image: /_files/dea-notebooks-home-page/beginners-guide.*
+    image: /_files/dea-notebooks-start-page/beginners-guide.*
   - name: DEA products
     link: /notebooks/DEA_products/README/
-    image: /_files/dea-notebooks-home-page/dea-products.*
+    image: /_files/dea-notebooks-start-page/dea-products.*
   - name: How-to guides
     link: /notebooks/How_to_guides/README/
-    image: /_files/dea-notebooks-home-page/how-to-guides.*
+    image: /_files/dea-notebooks-start-page/how-to-guides.*
   - name: Interactive apps
     link: /notebooks/Interactive_apps/README/
-    image: /_files/dea-notebooks-home-page/interactive-apps.*
+    image: /_files/dea-notebooks-start-page/interactive-apps.*
   - name: Real-world examples
     link: /notebooks/Real_world_examples/README/
-    image: /_files/dea-notebooks-home-page/real-world-examples.*
+    image: /_files/dea-notebooks-start-page/real-world-examples.*
   - name: DEA Tools Package
     link: /notebooks/Tools/
-    image: /_files/dea-notebooks-home-page/dea-tools-package.*
+    image: /_files/dea-notebooks-start-page/dea-tools-package.*
 
