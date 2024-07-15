@@ -384,8 +384,8 @@ For more information, see [DEA Intertidal Extents](https://www.dea.ga.gov.au/pro
 {#indexing}
 ## Indexing
 
-The process of making data available (with a file location or URI) with associated metadata in a format
-that is accepted by the Datacube.
+The process of registering a dataset with associated metadata (in a folder or at a URI) to an Open Data Cube
+instance so that it is searchable and accessible through the datacube API.
 
 {#jupyter-nb}
 ## Jupyter notebooks
@@ -759,7 +759,7 @@ diffraction grating, and then measures the amplitudes of the individual waveleng
 {#stacking}
 ## Stacking
 
-A process that combines all data for a [tile](#tile) across an entire year into a single file. 
+A process that combines all data for a [tile](#tile) across a specific time range into a single file. 
 
 {#sun-sync-orbit}
 ## Sun-synchronous orbit
