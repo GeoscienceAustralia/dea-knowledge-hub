@@ -6,7 +6,7 @@ It is important to understand the canopy density of mangroves in Australia so th
 
 ## What this product offers
 
-This product provides valuable information about the extent and canopy density of mangroves for each year between 1987 and 2021 for the entire Australian coastline. 
+This product provides valuable information about the extent and canopy density of mangroves for each year between 1987 and 2021 for the entire Australian coastline.
 
 The canopy cover classes are:
 * 20-50% (pale green)
@@ -45,7 +45,7 @@ The product development methodology is outlined in the following steps:
 
 4) Apply PCC% thresholds to map mangrove forest extent (based on a pre-determined 20 PCC% threshold) and differentiate structural categories, namely, woodland (20-50 %), open forest (50-80 %), and closed forest (> 80 %).
 
-5) Quantify the change in the relative extent of mangrove forest and canopy cover types over the period 1987 to 2021 at a national scale and establish relevance at regional (e.g., State/Territory) and local levels.
+5) Quantify the change in the relative extent of mangrove forest and canopy cover types over the period 1987 to 2023 at a national scale and establish relevance at regional (e.g., State/Territory) and local levels.
 
 % ## Software
 

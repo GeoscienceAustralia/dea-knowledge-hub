@@ -50,19 +50,19 @@ To account for satellite availability and status the statistics are calculated u
 * 2011-2012 : Landsat 7 only
 * 2013 onward : Landsat 8 only
 
-The values for this product are scaled as follows:  
-* For the fractional cover bands (PV, NPV, BS)  
+The values for this product are scaled as follows:
+* For the fractional cover bands (PV, NPV, BS)
 * 0-100 = fractional cover values that range between 0 and 100%
 
 Due to model uncertainties and the limitations of the training data, some areas may show cover values in excess of 100%. These areas can either be excluded or treated as equivalent to 100%
 
-For the unmixing error (UE) band, the values are scaled between 0 and 127.  High unmixing error values represent areas of high model uncertainty (areas of water, cloud, cloud shadow or soil types/colours that were not included in the model training data). 
+For the unmixing error (UE) band, the values are scaled between 0 and 127.  High unmixing error values represent areas of high model uncertainty (areas of water, cloud, cloud shadow or soil types/colours that were not included in the model training data).
 
-The DEA Landsat Collection 3 Fractional Cover Percentiles Summary products share the following attributes: 
+The DEA Landsat Collection 3 Fractional Cover Percentiles Summary products share the following attributes:
 
-### Each product will share the following name: 
+### Each product will share the following name:
 
-**Family name** : DEA Fractional Cover Percentiles 
+**Family name** : DEA Fractional Cover Percentiles
 
 | bands       | data type | nodata values | purpose                                               |
 |-------------|-----------|---------------|-------------------------------------------------------|
@@ -77,39 +77,39 @@ The DEA Landsat Collection 3 Fractional Cover Percentiles Summary products share
 | `npv_pc_90` | uint8     | nodata 255    | non-photosynthetic veg - 90th percentile              |
 | `qa`        | uint8     | nodata 255    | Quality Assurance enumeration - see below for details |
 
-### Each product’s datasets will: 
+### Each product’s datasets will:
 
-* be divided into tiles of 3200 x 3200 pixels, with a pixel size of 30m^2 
-* be presented in EPSG:3577 
+* be divided into tiles of 3200 x 3200 pixels, with a pixel size of 30m^2
+* be presented in EPSG:3577
 
-### Percentiles 
+### Percentiles
 
-10th, 50th and 90th Percentiles are calculated per Fractional Cover measurement - Bare Soil, Photosynthetic Vegetation, Non-Photosynthetic Vegetation. DEA Fractional Cover C3 and DEA Water Observations C3 are used as the input to these products. 
+10th, 50th and 90th Percentiles are calculated per Fractional Cover measurement - Bare Soil, Photosynthetic Vegetation, Non-Photosynthetic Vegetation. DEA Fractional Cover C3 and DEA Water Observations C3 are used as the input to these products.
 
-### Fractional Cover Masking 
+### Fractional Cover Masking
 
-DEA Water Observations are used to identify clear pixels from DEA Fractional Cover to be included in percentile calculation. A Fractional Cover observation is included if: 
-* It has corresponding DEA Water Observation information. If an observation within DEA Fractional Cover has no corresponding Water Observation, it is discarded. This can happen for ARD scenes that do not meet the GQA threshold for Water Observation generation. 
-* The DEA Water Observation has the following characteristics: 
-  * It is contiguous 
-  * It is not saturated 
-  * It is not cloud 
-  * It is not cloud shadow 
-  * It is not terrain shadow 
-  * It is not low solar angle 
-  * It can be high slope 
-  * It is not wet 
-  * There are at least 3 clear and dry observations for the time period. 
-* Please note, no land/sea masking is applied 
-* Observation dates for given percentiles are not captured 
+DEA Water Observations are used to identify clear pixels from DEA Fractional Cover to be included in percentile calculation. A Fractional Cover observation is included if:
+* It has corresponding DEA Water Observation information. If an observation within DEA Fractional Cover has no corresponding Water Observation, it is discarded. This can happen for ARD scenes that do not meet the GQA threshold for Water Observation generation.
+* The DEA Water Observation has the following characteristics:
+  * It is contiguous
+  * It is not saturated
+  * It is not cloud
+  * It is not cloud shadow
+  * It is not terrain shadow
+  * It is not low solar angle
+  * It can be high slope
+  * It is not wet
+  * There are at least 3 clear and dry observations for the time period.
+* Please note, no land/sea masking is applied
+* Observation dates for given percentiles are not captured
 
-### Temporal period 
+### Temporal period
 
-Will be calculated from the 1st of January to the 31st of December (inclusive) for every available year of DEA Landsat Collection 3 Water Observations and DEA Landsat Collection 3 Fractional Cover observations. 
+Will be calculated from the 1st of January to the 31st of December (inclusive) for every available year of DEA Landsat Collection 3 Water Observations and DEA Landsat Collection 3 Fractional Cover observations.
 
-### It will have a directory structure of form: 
+### It will have a directory structure of form:
 
-`/ga_ls_fc_pc_cyear_3/3-0-0/x01/y02/2000--P1Y/ga_ls_fc_pc_cyear_3_x01y02_2000--P1Y_bs_pc_10.tif`
+`/ga_ls_fc_pc_cyear_3/4-0-0/x25/y41/1999--P1Y/ga_ls_fc_pc_cyear_3_x25y41_1999--P1Y_final_bs_pc_10.tif`
 
 ## Lineage
 
@@ -127,7 +127,7 @@ Fractional cover data can be used to identify large scale patterns and trends an
 
 The Fractional Cover (FC) algorithm was developed by the Joint Remote Sensing Research Program and is described in described in Scarth et al. (2010). It has been implemented by Geoscience Australia for every observation from Landsat Thematic Mapper (Landsat 5), Enhanced Thematic Mapper (Landsat 7) and Operational Land Imager (Landsat 8) acquired since 1987. It is calculated from surface reflectance data.
 
-FC provides a fractional cover representation of the proportions of green or photosynthetic vegetation, non-photosynthetic vegetation, and bare surface cover across the Australian continent. The fractions are retrieved by inverting multiple linear regression estimates and using synthetic endmembers in a constrained non-negative least squares unmixing model. For further information please see Scarth et al., 2010 and Schmidt et al., 2010. 
+FC provides a fractional cover representation of the proportions of green or photosynthetic vegetation, non-photosynthetic vegetation, and bare surface cover across the Australian continent. The fractions are retrieved by inverting multiple linear regression estimates and using synthetic endmembers in a constrained non-negative least squares unmixing model. For further information please see Scarth et al., 2010 and Schmidt et al., 2010.
 
 % ## Software
 
@@ -135,7 +135,7 @@ FC provides a fractional cover representation of the proportions of green or pho
 
 Flood, N. (2014). Continuity of reflectance data between Landsat-7 ETM+ and Landsat-8 OLI, for both top-of-atmosphere and surface reflectance: A study in the Australian landscape. *Remote Sensing*, *6*(9), 7952–7970. [https://doi.org/10.3390/rs6097952](https://doi.org/10.3390/rs6097952)
 
-Muir, J., Schmidt, M., Tindall, D., Trevithick, R., Scarth, P. and Stewart, J.B. (2011). Guidelines for field measurement of fractional ground cover: a technical handbook supporting the Australian Collaborative Land Use and Management Program. *Queensland* *Department of Environment and Resource Management for the Australian Bureau of* *Agricultural and Resource Economics and Sciences*. 
+Muir, J., Schmidt, M., Tindall, D., Trevithick, R., Scarth, P. and Stewart, J.B. (2011). Guidelines for field measurement of fractional ground cover: a technical handbook supporting the Australian Collaborative Land Use and Management Program. *Queensland* *Department of Environment and Resource Management for the Australian Bureau of* *Agricultural and Resource Economics and Sciences*.
 
 Scarth, P., Roder, A. and Schmidt, M. (2010). Tracking grazing pressure and climate interaction - the role of Landsat fractional cover in time series analysis. *Proceedings of the 15th Australasian Remote Sensing & Photogrammetry Conference.*
 

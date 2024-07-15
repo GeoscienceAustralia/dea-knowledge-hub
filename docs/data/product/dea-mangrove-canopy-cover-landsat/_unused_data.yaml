@@ -47,6 +47,7 @@ data_sources:
   - DEA Surface Reflectance (Landsat 5 TM)
   - DEA Surface Reflectance (Landsat 7 ETM+)
   - DEA Surface Reflectance (Landsat 8 OLI-TIRS)
+  - DEA Surface Reflectance (Landsat 9 OLI2-TIRS2, from 2022)
   - DEA Fractional Cover (Landsat)
   - DEA Fractional Cover Percentiles (Landsat)
 major_algorithms:

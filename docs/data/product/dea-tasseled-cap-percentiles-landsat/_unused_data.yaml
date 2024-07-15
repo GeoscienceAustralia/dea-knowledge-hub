@@ -46,6 +46,7 @@ data_sources:
   - DEA Surface Reflectance NBART (Landsat 5 TM)
   - DEA Surface Reflectance NBART (Landsat 7 ETM+)
   - DEA Surface Reflectance NBART (Landsat 8 OLI-TIRS)
+  - DEA Surface Reflectance NBART (Landsat 9 OLI2-TIRS2)
 major_algorithms:
   - PERCENTILE CALCULATION
 schema_spatial_extent:

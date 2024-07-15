@@ -6,7 +6,7 @@
 title: DEA Tasseled Cap Percentiles (Landsat)
 long_title: Geoscience Australia Tasseled Cap Percentiles Collection 3
 header_image: /_files/cmi/TCWpercentiles.png
-version: 1.0.0
+version: 2.0.0
 is_latest_version: true
 latest_version_link: null
 is_provisional: true
@@ -14,15 +14,14 @@ product_type: Derivative
 spatial_data_type: Raster
 time_span:
   start: 1987
-  end: 2022
+  end: 2023
 update_frequency: Yearly
 next_update: null
 product_ids:
   - ga_ls_tc_pc_cyear_3
-  - ga_ls_tc_pc_fyear_3
 
 parent_products:
-  name: Landsat 5, 7 and 8 NBART and Observational Attributes
+  name: Landsat 5, 7, 8 and 9 NBART and Observational Attributes
   link: /data/category/dea-surface-reflectance/
 collection:
   name: Geoscience Australia Landsat Collection 3
@@ -58,8 +57,6 @@ explorers:
 data:
   - link: https://data.dea.ga.gov.au/?prefix=derivative/ga_ls_tc_pc_cyear_3/
     name: DEA Tasseled Cap Calendar Year Percentiles
-  - link: https://data.dea.ga.gov.au/?prefix=derivative/ga_ls_tc_pc_fyear_3/
-    name: DEA Tasseled Cap Financial Year Percentiles
 
 code_examples: null
 
@@ -70,9 +67,9 @@ web_services:
 # History
 
 old_versions:
-  - version: 2.0.0
+  - version: 1.0.0
     title: DEA Wetness Percentiles (Landsat)
-    slug: dea-wetness-percentiles-landsat-2.0.0
+    slug: dea-wetness-percentiles-landsat-1.0.0
 
 # Settings
 
