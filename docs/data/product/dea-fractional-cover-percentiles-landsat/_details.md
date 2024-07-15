@@ -15,6 +15,8 @@ It is important to be able to analyse and interpret fractional cover. For exampl
 
 This product is designed to make it easier to analyse and interpret fractional cover. It uses the Fractional Cover (Landsat) product and calculates the statistical summaries (10th, 50th and 90th percentile) of fractional cover per epoch (annual).
 
+This product includes cloud and shadow buffering with a size of 6 and includes Landsat-5, Landsat-7, Landsat-8, and Landsat-9 (from 2022 onwards).
+
 This product is available in the following form:
 
 % ## Data description
