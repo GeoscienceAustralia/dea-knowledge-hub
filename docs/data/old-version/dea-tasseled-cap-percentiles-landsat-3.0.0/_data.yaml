@@ -1,0 +1,86 @@
+# See the Product metadata fields documentation:
+# https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/product_metadata_fields.html
+
+# Overview
+
+title: DEA Tasseled Cap Percentiles (Landsat)
+long_title: Geoscience Australia Tasseled Cap Percentiles Collection 3
+header_image: /_files/cmi/TCWpercentiles.png
+version: 3.0.0
+is_latest_version: true
+latest_version_link: null
+is_provisional: true
+product_type: Derivative
+spatial_data_type: Raster
+time_span:
+  start: 1987
+  end: 2022
+update_frequency: Yearly
+next_update: null
+product_ids:
+  - ga_ls_tc_pc_cyear_3
+  - ga_ls_tc_pc_fyear_3
+
+parent_products:
+  name: Landsat 5, 7 and 8 NBART and Observational Attributes
+  link: /data/category/dea-surface-reflectance/
+collection:
+  name: Geoscience Australia Landsat Collection 3
+  link: null
+doi: null
+ecat: null
+nci: null
+licence:
+  name: Creative Commons Attribution 4.0 International Licence
+  link: https://creativecommons.org/licenses/by/4.0/
+
+citations:
+  data_citation: "Geoscience Australia, 2023. DEA Tasseled Cap Percentiles (Landsat, Provisional). Geoscience Australia, Canberra."
+  paper_citation: null
+custom_citations: null
+
+tags:
+  - geoscience_australia_landsat_collection_3
+  - tasseled_cap
+  - wetlands
+  - groundwater
+  - salt_flats
+  - statistics
+
+# Access
+
+maps: null
+
+explorers:
+  - link: https://explorer.dea.ga.gov.au/products/ga_ls_tc_pc_cyear_3
+    name: Data explorer
+
+data:
+  - link: https://data.dea.ga.gov.au/?prefix=derivative/ga_ls_tc_pc_cyear_3/
+    name: DEA Tasseled Cap Calendar Year Percentiles
+  - link: https://data.dea.ga.gov.au/?prefix=derivative/ga_ls_tc_pc_fyear_3/
+    name: DEA Tasseled Cap Financial Year Percentiles
+
+code_examples: null
+
+web_services:
+  - link: https://ows.dea.ga.gov.au/
+    name: Web Services
+
+# History
+
+old_versions:
+  - version: 2.0.0
+    title: DEA Wetness Percentiles (Landsat)
+    slug: dea-wetness-percentiles-landsat-2.0.0
+
+# Settings
+
+enable_overview: true
+enable_access: true
+enable_details: true
+enable_quality: true
+enable_history: true
+enable_faqs: false
+enable_credits: true
+

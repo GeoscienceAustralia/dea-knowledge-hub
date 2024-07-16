@@ -1,2 +1,2 @@
 .. datatemplate:yaml:: _data.yaml
-   :template: card-list-v1.rst
+   :template: card-clickable-list-v1.rst

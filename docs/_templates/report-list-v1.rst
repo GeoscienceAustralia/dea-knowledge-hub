@@ -23,7 +23,7 @@
 
    .. container::
 
-      .. image:: {{ report.image or "/_files/pages/dea-hero.jpg" }}
+      .. image:: {{ report.image or "/_files/default/dea-earth-thumbnail.jpg" }}
          :class: no-gallery
          :target: {{ report.link }}
 {% endfor %}

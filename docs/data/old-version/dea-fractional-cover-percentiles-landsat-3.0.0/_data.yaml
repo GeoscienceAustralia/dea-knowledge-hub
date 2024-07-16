@@ -1,0 +1,81 @@
+# See the Product metadata fields documentation:
+# https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/product_metadata_fields.html
+
+# Overview
+
+title: DEA Fractional Cover Percentiles (Landsat)
+long_title: Geoscience Australia Landsat Fractional Cover Percentiles Collection 3
+header_image: /_files/cmi/FractionalCover1_0.jpg
+version: 3.0.0
+is_latest_version: true
+latest_version_link: null
+is_provisional: false
+product_type: Derivative
+spatial_data_type: Raster
+time_span:
+  start: 1987
+  end: Present
+update_frequency: Yearly
+next_update: null
+product_ids:
+  - ga_ls_fc_pc_cyear_3
+
+parent_products:
+  name: DEA Fractional Cover (Landsat)
+  link: /data/product/dea-fractional-cover-landsat/
+collection:
+  name: Geoscience Australia Landsat Collection 3
+  link: null
+doi: null
+ecat: "145501"
+nci: null
+licence:
+  name: Creative Commons Attribution 4.0 International Licence
+  link: https://creativecommons.org/licenses/by/4.0/
+
+citations:
+  data_citation: "Lymburner, L., 2021. Geoscience Australia Landsat Fractional Cover Percentiles Collection 3. Geoscience Australia, Canberra. https://pid.geoscience.gov.au/dataset/ga/145501"
+  paper_citation: "Scarth, P., Roder, A., Schmidt, M., 2010. Tracking grazing pressure and climate interaction - the role of Landsat fractional cover in time series analysis. Proceedings of the 15th Australasian Remote Sensing & Photogrammetry Conference. http://dx.doi.org/10.6084/M9.FIGSHARE.94250"
+custom_citations: null
+
+tags:
+  - geoscience_australia_landsat_collection_3
+  - green_vegetation
+  - non_green_vegetation
+  - bare_soil
+
+# Access
+
+maps: null
+
+explorers: null
+
+data:
+  - link: https://data.dea.ga.gov.au/?prefix=derivative/ga_ls_fc_pc_cyear_3/
+    name: Digital Earth Australia - Public Data
+
+code_examples:
+  - link: https://explorer.dea.ga.gov.au/products/ga_ls_tc_pc_cyear_3
+    name: Data explorer
+
+web_services: null
+
+custom: null
+
+# History
+
+old_versions:
+  - version: 2.2.1
+    title: DEA Fractional Cover Percentiles (Landsat)
+    slug: dea-fractional-cover-percentiles-landsat-2.2.1
+
+# Settings
+
+enable_overview: true
+enable_access: true
+enable_details: true
+enable_quality: true
+enable_history: true
+enable_faqs: false
+enable_credits: true
+
