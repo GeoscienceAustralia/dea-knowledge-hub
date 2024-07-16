@@ -14,7 +14,7 @@ This product includes cloud and shadow buffering with a size of 6 and includes L
 
 Tasseled Cap percentiles are created by bringing together all individual satellite images for a year and generating the corresponding Tasseled Cap for each, before computing the 10th, 50th and 90th percentiles of their respective data ranges. The percentiles are chosen to represent minimum, middle and maximum (or general) conditions for each index per year, for every 30m x 30m pixel across Australia.
 
-This product includes cloud and shadow buffering with a size of 6 and includes Landsat-5, Landsat-7, Landsat-8, and Landsat-9 (from 2022 onwards).
+This product includes cloud and shadow buffering with a size of 6 pixels and includes Landsat-5, Landsat-7, Landsat-8, and Landsat-9 (from 2022 onwards).
 
 ## Applications
 
