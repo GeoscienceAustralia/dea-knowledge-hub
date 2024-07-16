@@ -7,8 +7,8 @@ title: DEA Mangrove Canopy Cover (Landsat)
 long_title: Geoscience Australia Mangrove Canopy Cover Collection 3
 header_image: /_files/cmi/DEA-mangroves.jpg
 version: 3.0.0
-is_latest_version: true
-latest_version_link: null
+is_latest_version: false
+latest_version_link: /data/product/dea-mangrove-canopy-cover-landsat/
 is_provisional: false
 product_type: Derivative
 spatial_data_type: Raster

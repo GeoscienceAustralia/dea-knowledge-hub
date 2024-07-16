@@ -7,8 +7,8 @@ title: DEA Fractional Cover (Landsat)
 long_title: Geoscience Australia Landsat Fractional Cover Collection 3
 header_image: /_files/cmi/FractionalCover1.jpg
 version: 2.3.1
-is_latest_version: true
-latest_version_link: null
+is_latest_version: false
+latest_version_link: /data/product/dea-fractional-cover-landsat/
 product_type: Derivative
 spatial_data_type: Raster
 time_span:
