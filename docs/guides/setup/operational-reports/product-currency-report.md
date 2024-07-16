@@ -103,9 +103,7 @@ For products in **Table B**, the following calculations are made. This is a part
 
 ## History report
 
-The [Currency History Report][CurrencyReport] report provides a history of the data from the Currency report since the beginning of when we started tracking this statistic: 1 July 2024. It can only be accessed by internal stakeholders. This report uses the same data as the Currency report but it includes the history of previous years.
-
-Note that it doesn't include the data from 'Products (Table B)' of this report due to technical limitations. Instead, the historical data of 'Products (Table B)' is stored in a log table in the database.
+The [Currency History Report][CurrencyReport] provides a history of the Currency Report for each financial year since we began tracking this performance measure. It can only be accessed by internal stakeholders. Note that it doesn't include the data from 'Products (Table B)' of this report due to technical limitations. Instead, the historical data of 'Products (Table B)' is stored in a log table in the database.
 
 [CurrencyReport]: https://mgmt.sandbox.dea.ga.gov.au/public-dashboards/d22241dbfca54b1fa9f73938ef26e645?orgId=1
 [HistoryReport]: https://mgmt.sandbox.dea.ga.gov.au/d/c1674b20-8c8a-4d90-aef2-02796275cf2b/4e57919d-fc9d-59d7-9bd1-aa61d41bcb92?orgId=1
