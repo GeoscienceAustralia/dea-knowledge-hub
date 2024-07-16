@@ -38,7 +38,7 @@
 
    .. container::
 
-      .. image:: /_files/pages/dea-hero.jpg
+      .. image:: /_files/default/dea-earth-thumbnail.jpg
          :class: no-gallery
 
 .. container:: showcase-panel bg-gradient-forest reverse
