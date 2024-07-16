@@ -8,13 +8,11 @@ This product offers three percentiles (10th, 50th and 90th) per Tasseled Cap ind
 
 It is useful in broad environmental analyses where it is desirable to understand a mixed landscape including vegetation, water and bare areas, and as such is useful for wetlands analyses.
 
-This product includes cloud and shadow buffering with a size of 6 and includes Landsat-5, Landsat-7, Landsat-8, and Landsat-9 (from 2022 onwards).
+It includes cloud and shadow buffering with a size of 6 pixels. This buffering is applied to Landsat 5, Landsat 7, Landsat 8, and Landsat 9 data from 2022 onwards.
 
 ## Data description
 
 Tasseled Cap percentiles are created by bringing together all individual satellite images for a year and generating the corresponding Tasseled Cap for each, before computing the 10th, 50th and 90th percentiles of their respective data ranges. The percentiles are chosen to represent minimum, middle and maximum (or general) conditions for each index per year, for every 30m x 30m pixel across Australia.
-
-This product includes cloud and shadow buffering with a size of 6 and includes Landsat-5, Landsat-7, Landsat-8, and Landsat-9 (from 2022 onwards).
 
 ## Applications
 
