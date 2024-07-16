@@ -53,6 +53,7 @@ To account for satellite availability and status the statistics are calculated u
 * 2013 onward : Landsat 8 only
 
 The values for this product are scaled as follows:
+
 * For the fractional cover bands (PV, NPV, BS)
 * 0-100 = fractional cover values that range between 0 and 100%
 

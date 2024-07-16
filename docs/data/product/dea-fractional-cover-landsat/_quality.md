@@ -3,6 +3,7 @@
 To provide an estimate of accuracy the FC algorithm results were compared with 1565 field sites that were not used to train the FC model.
 
 Based on the comparison with this independent field data the FC product has an overall Root Mean Squared Error (RMSE) of 11.9%. The error margins vary for the three different layers:
+
 * green RMSE: 11.9%,
 * non-green RMSE: 17.1%
 * bare RMSE: 14.6%
