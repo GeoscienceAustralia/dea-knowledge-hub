@@ -146,7 +146,7 @@ entries:
             title: GA AusBathyTopo 250m
           - file: data/external-data/abares-clum-2020/index
           - file: data/external-data/ga-srtm/index
-          - file: data/external-data/ga-mtpi/index
+          - file: data/external-data/ga-multi-scale-topographic-position/index
 
   # User Guides
 
