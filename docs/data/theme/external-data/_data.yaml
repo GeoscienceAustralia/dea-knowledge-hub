@@ -12,5 +12,5 @@ cards:
     link: /data/external-data/ga-srtm/
     image: /_files/external-data/ga_srtm_thumbnail.jpg
   - name: Multi-scale Topographic Position
-    link: /data/external-data/ga-mtpi/
+    link: /data/external-data/ga-multi-scale-topographic-position/
     image: /_files/external-data/ga_mtpi_thumbnail.jpg
