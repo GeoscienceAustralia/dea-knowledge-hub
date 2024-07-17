@@ -4,7 +4,7 @@ The Tasseled Cap (Kauth&ndash;Thomas) transformation takes satellite imagery and
 
 ## What this product offers
 
-This product offers three percentiles (10th, 50th and 90th) per Tasseled Cap index (greeness, wetness and brightness) per year, from 1987 to the present.
+This product offers three percentiles per Tasseled Cap index per year. The percentiles are 10th, 50th, and 90th; the Tasseled Cap indexes are 'greeness', 'wetness', and 'brightness'; and the years are 1987 to 2023.
 
 It is useful in broad environmental analyses where it is desirable to understand a mixed landscape including vegetation, water and bare areas, and as such is useful for wetlands analyses.
 
