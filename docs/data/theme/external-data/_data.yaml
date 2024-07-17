@@ -3,11 +3,11 @@ description: This external data is provided because it may assist with the analy
 
 cards:
   - name: GA AusBathyTopo 250m
-    link: /data/external-data/ga-ausbathytopo/
+    link: /data/external-data/ga-ausbathytopo-250m/
     image: /_files/external-data/ga_ausbathytopo250m_2023.thumbnail.jpg
   - name: ABARES CLUM 2020
     link: /data/external-data/abares-clum-2020/
     image: /_files/external-data/abares_clum_2020.thumbnail.jpg
   - name: SRTM 1 second DEM
-    link: /data/external-data/ga-srtm/
+    link: /data/external-data/ga-srtm-1-second-dem/
     image: /_files/external-data/ga_srtm_thumbnail.jpg
