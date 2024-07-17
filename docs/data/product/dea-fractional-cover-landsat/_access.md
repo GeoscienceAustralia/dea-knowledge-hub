@@ -2,7 +2,7 @@
 
 % ## Use constraints
 
-:::{dropdown} Which folder contains the Landsat 5/7 versus Landsat 8/9 data on NCI and AWS?
+:::{dropdown} Which folder contains the Landsat 5/7 and Landsat 8/9 data on NCI and AWS?
 
 The data for Landsat 5 and Landsat 7 is in the `2-5-0` folder whereas the data for Landsat 8 and Landsat 9 is in the `2-5-1` folder on both NCI and AWS. This is because these two sets of data are produced using different versions of the product.
 :::
