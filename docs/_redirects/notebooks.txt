@@ -1,6 +1,6 @@
 # Notebooks redirects
 
-notebooks                      notebooks/README
+notebooks                      dea-notebooks
 notebooks/Beginners_guide      notebooks/Beginners_guide/README
 notebooks/DEA_products         notebooks/DEA_products/README
 notebooks/How_to_guides        notebooks/How_to_guides/README

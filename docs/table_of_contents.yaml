@@ -142,11 +142,12 @@ entries:
           - file: data/theme/external-data/index
             title: All
 
-          - file: data/external-data/ga-ausbathytopo/index
-            title: GA AusBathyTopo 250m
           - file: data/external-data/abares-clum-2020/index
           - file: data/external-data/abares-clum-2023/index
-          - file: data/external-data/ga-srtm/index
+          - file: data/external-data/ga-ausbathytopo-250m/index
+            title: GA AusBathyTopo 250m
+          - file: data/external-data/ga-srtm-1-second-dem/index
+          - file: data/external-data/ga-multi-scale-topographic-position/index
 
   # User Guides
 
@@ -202,11 +203,13 @@ entries:
 
   # DEA Notebooks
 
-  - file: notebooks/README
+  - file: dea-notebooks/index
     title: DEA Notebooks
     subtrees:
       - caption: Getting started
         entries:
+          - file: notebooks/README
+            title: Readme
           - file: notebooks/Beginners_guide/README # Contains its own table of contents.
 
       - caption: Explore the notebooks
