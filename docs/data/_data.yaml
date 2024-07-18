@@ -1,7 +1,7 @@
 title: Data Products
 description: Find metadata on our data products.
 
-pages:
+cards:
   - name: Baseline satellite data
     link: /data/theme/baseline-satellite-data/
     image: /_files/themes/baseline-satellite-data.*
@@ -17,3 +17,6 @@ pages:
   - name: Hazards
     link: /data/theme/hazards/
     image: /_files/themes/hazards.*
+  - name: External data
+    link: /data/theme/external-data/
+    image: /_files/themes/external-data.*

@@ -1,0 +1,31 @@
+# Bands
+
+bands:
+  footnotes: >
+    :sup:`1` The 'Nodata' value is ``-340282346638528859811704183484516925440``; however, ocean pixels in ``dem`` and ``dem_s`` are instead assigned a value of ``0``.
+  bands_table:
+  - name: dem
+    aliases: []
+    resolution: 0.00027 degrees
+    crs: "EPSG:4326"
+    nodata: "See below :sup:`1`"
+    units: Metres
+    type: float32
+    description: "Digital Elevation Model (DEM)"
+  - name: dem_s
+    aliases: []
+    resolution: 0.00027 degrees
+    crs: "EPSG:4326"
+    nodata: "See below :sup:`1`"
+    units: Metres
+    type: float32
+    description: "Smoothed Digital Elevation Model (DEM-S)"
+  - name: dem_h
+    aliases: []
+    resolution: 0.00027 degrees
+    crs: "EPSG:4326"
+    nodata: "See below :sup:`1`"
+    units: Metres
+    type: float32
+    description: "Hydrologically Enforced Digital Elevation Model (DEM-H)"
+

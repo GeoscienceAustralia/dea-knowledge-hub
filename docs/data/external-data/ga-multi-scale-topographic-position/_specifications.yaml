@@ -1,0 +1,30 @@
+# Bands
+
+bands:
+  footnotes: null
+  bands_table:
+  - name: local
+    aliases: []
+    resolution: 0.000833 degrees
+    crs: "EPSG:4326"
+    nodata: 0
+    units: null
+    type: int16
+    description: "Local spatial scale (0.2-8.1 km)"
+  - name: intermediate
+    aliases: []
+    resolution: 0.000833 degrees
+    crs: "EPSG:4326"
+    nodata: 0
+    units: null
+    type: int16
+    description: "Intermediate spatial scale (8.2-65.2 km)"
+  - name: regional
+    aliases: []
+    resolution: 0.000833 degrees
+    crs: "EPSG:4326"
+    nodata: 0
+    units: null
+    type: int16
+    description: "Regional spatial scale (65.6-147.6 km)"
+

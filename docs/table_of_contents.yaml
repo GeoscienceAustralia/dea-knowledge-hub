@@ -137,6 +137,18 @@ entries:
           - file: data/product/dea-burnt-area-characteristic-layers-sentinel-2-near-real-time/index
             title: DEA Burnt Area Characteristic Layers (Provisional)
 
+      - caption: External data
+        entries:
+          - file: data/theme/external-data/index
+            title: All
+
+          - file: data/external-data/abares-clum-2020/index
+          - file: data/external-data/abares-clum-2023/index
+          - file: data/external-data/ga-ausbathytopo-250m/index
+            title: GA AusBathyTopo 250m
+          - file: data/external-data/ga-srtm-1-second-dem/index
+          - file: data/external-data/ga-multi-scale-topographic-position/index
+
   # User Guides
 
   - file: guides/index
@@ -164,9 +176,6 @@ entries:
               - file: guides/setup/gis/web_coverage_service
               - file: guides/setup/gis/stac
           - file: guides/setup/jupyter
-          - file: guides/setup/validation/index
-            entries:
-              - file: guides/setup/validation/daily-summary-reports
 
       - caption: Reference
         entries:
@@ -177,6 +186,13 @@ entries:
           - file: guides/reference/analysis-ready-data-example-queries
           - file: guides/reference/ard-expanded-processing-extent
           # - file: guides/reference/how-to-access-the-data
+          - file: guides/setup/validation/index
+            entries:
+              - file: guides/setup/validation/daily-summary-reports
+          - file: guides/setup/operational-reports/index
+            entries:
+              - file: guides/setup/operational-reports/product-currency-report
+                title: Product Currency Report
 
       - caption: Appendix
         entries:
@@ -187,11 +203,13 @@ entries:
 
   # DEA Notebooks
 
-  - file: notebooks/README
+  - file: dea-notebooks/index
     title: DEA Notebooks
     subtrees:
       - caption: Getting started
         entries:
+          - file: notebooks/README
+            title: Readme
           - file: notebooks/Beginners_guide/README # Contains its own table of contents.
 
       - caption: Explore the notebooks
@@ -223,14 +241,17 @@ entries:
 
   - file: validation/index
     subtrees:
-      - caption: Daily Reports
+      - caption: Daily
         entries:
           - file: validation/daily-report/index
-            title: All daily reports
+            title: Daily reports
             options:
               reversed: True
             entries:
               - glob: validation/daily-report/*/index
+      - caption: User guides
+        entries:
+          - file: validation/user-guides
       # - caption: Quarterly Reports
       #   options:
       #     reversed: True
@@ -251,6 +272,10 @@ entries:
       #         reversed: True
       #       entries:
       #         - glob: validation/yearly-report/*/index
+
+  # Operational reports
+
+  - file: operational-reports/index
 
   # Old versions of products
 

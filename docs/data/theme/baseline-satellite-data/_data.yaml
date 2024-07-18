@@ -1,7 +1,7 @@
 title: Baseline satellite data
 description: Browse through DEA's foundational data products, including satellite data and services that support DEA Surface Reflectance data production.
 
-pages:
+cards:
   - name: DEA Surface Reflectance
     link: /data/category/dea-surface-reflectance/
     image: /_files/cmi/surface_reflectance_2_NBARTa.png

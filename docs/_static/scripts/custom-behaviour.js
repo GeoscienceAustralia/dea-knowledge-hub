@@ -106,7 +106,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
         }
     })();
 
-    // Clicking on a product tab will add its tab ID to the URL. E.g. /example/?tab=overview
+    // Clicking on a product tab will add its tab ID to the URL. E.g. /example/?tab=details
 
     (function () {
         if (document.querySelector(".product-page")) {
@@ -114,25 +114,50 @@ document.addEventListener("DOMContentLoaded", function (event) {
             let tabUrlParam = new URLSearchParams(window.location.search).get(
                 "tab"
             );
-            let overviewTabId = tabs[0].id;
 
-            if (!tabUrlParam) {
-                window.history.pushState(
-                    "",
-                    "",
-                    `?tab=${overviewTabId}${window.location.hash}`
-                );
-            } else {
+            function addTabQueryParameter(tabId) {
+                window.history.pushState("", "", `?tab=${tabId}`);
+            }
+
+            function removeTabOverviewQueryParameter() {
+                let url = new URL(window.location.href);
+                let params = url.searchParams;
+                params.delete("tab");
+                // This conditional is needed to prevent a '?' at the end of the URL in the case where there are no URL parameters
+                if (params.size === 0) {
+                    window.history.pushState({}, "", url.pathname);
+                } else {
+                    window.history.pushState(
+                        {},
+                        "",
+                        `${url.pathname}?${params.toString()}`
+                    );
+                }
+            }
+
+            // Handle opening a URL with a 'tab' parameter
+
+            if (tabUrlParam === "overview") {
+                removeTabOverviewQueryParameter();
+            } else if (tabUrlParam) {
                 document.querySelector(`.sd-tab-set > #${tabUrlParam}`).click();
             }
+
+            // Handle clicking on a tab
 
             for (let i = 0; i < tabs.length; i++) {
                 let tab = tabs[i];
                 let tabId = tab.id;
 
-                if (tabId) {
+                if (tabId === "overview") {
+                    // Don't add the 'tab' parameter for the Overview tab
                     tab.addEventListener("click", function () {
-                        window.history.pushState("", "", `?tab=${tabId}`);
+                        removeTabOverviewQueryParameter();
+                    });
+                } else if (tabId) {
+                    // Add the 'tab' parameter for any other tab
+                    tab.addEventListener("click", function () {
+                        addTabQueryParameter(tabId);
                     });
                 }
             }

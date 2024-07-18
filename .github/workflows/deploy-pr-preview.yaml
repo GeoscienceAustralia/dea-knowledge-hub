@@ -7,6 +7,7 @@ on:
 
 env:
   PR_PREVIEW_PULL_REQUEST_NUMBER: ${{github.event.pull_request.number}}
+  PR_PREVIEW_BRANCH_NAME: ${{ github.head_ref || github.ref_name }} 
   PR_PREVIEW_SUBDOMAIN: pr-${{github.event.pull_request.number}}-preview
   PR_PREVIEW_DEPLOY_LOG_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
   PR_PREVIEW_BUCKET: s3://khpreview.dea.ga.gov.au
@@ -47,7 +48,7 @@ jobs:
             <table> <!-- #pr-preview-comment -->
                 <tr>
                     <td><strong>Deploy log:</strong></td>
-                    <td><a href="${{ env.PR_PREVIEW_DEPLOY_LOG_URL }}">View the log</a></td>
+                    <td><a href="${{ env.PR_PREVIEW_DEPLOY_LOG_URL }}">View the deploy log</a></td>
                 </tr>
                 <tr>
                     <td><strong>Learn more:</strong></td>
@@ -104,7 +105,7 @@ jobs:
                 </tr>
                 <tr>
                     <td><strong>Deploy log:</strong></td>
-                    <td><a href="${{ env.PR_PREVIEW_DEPLOY_LOG_URL }}">View the log</a></td>
+                    <td><a href="${{ env.PR_PREVIEW_DEPLOY_LOG_URL }}">View the deploy log</a></td>
                 </tr>
                 <tr>
                     <td><strong>Learn more:</strong></td>

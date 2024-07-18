@@ -11,9 +11,11 @@
 
    .. rubric:: Data Products
 
-   Browse our catalogue of data products to find supporting information and ways to access the data.
+   .. raw:: html
 
-   .. grid:: 2 2 3 5
+      <p>Browse our <a href="/data/">catalogue of data products</a> to find supporting information and ways to access the data.</p>
+
+   .. grid:: 2 2 3 6
       :gutter: 3
 
       {% for item in data.product_themes %}
@@ -36,7 +38,7 @@
 
    .. container::
 
-      .. image:: /_files/pages/dea-hero.jpg
+      .. image:: /_files/default/dea-earth-thumbnail.jpg
          :class: no-gallery
 
 .. container:: showcase-panel bg-gradient-forest reverse
@@ -100,7 +102,7 @@
 
       `Visit the DEA website <https://www.dea.ga.gov.au/>`_
 
-      `Subscribe to our newsletter <https://www.dea.ga.gov.au/news/dea-newsletter-and-communications-archive>`_
+      `Subscribe to our newsletter <https://communication.ga.gov.au/dea-news-subscribe>`_
 
    .. container::
 
