@@ -146,6 +146,7 @@ entries:
           - file: data/external-data/ga-ausbathytopo-250m/index
             title: GA AusBathyTopo 250m
           - file: data/external-data/ga-srtm-1-second-dem/index
+          - file: data/external-data/ga-multi-scale-topographic-position/index
 
   # User Guides
 
