@@ -48,7 +48,7 @@ jobs:
             <table> <!-- #pr-preview-comment -->
                 <tr>
                     <td><strong>Deploy log:</strong></td>
-                    <td><a href="${{ env.PR_PREVIEW_DEPLOY_LOG_URL }}">View the log</a></td>
+                    <td><a href="${{ env.PR_PREVIEW_DEPLOY_LOG_URL }}">View the deploy log</a></td>
                 </tr>
                 <tr>
                     <td><strong>Learn more:</strong></td>
@@ -105,7 +105,7 @@ jobs:
                 </tr>
                 <tr>
                     <td><strong>Deploy log:</strong></td>
-                    <td><a href="${{ env.PR_PREVIEW_DEPLOY_LOG_URL }}">View the log</a></td>
+                    <td><a href="${{ env.PR_PREVIEW_DEPLOY_LOG_URL }}">View the deploy log</a></td>
                 </tr>
                 <tr>
                     <td><strong>Learn more:</strong></td>

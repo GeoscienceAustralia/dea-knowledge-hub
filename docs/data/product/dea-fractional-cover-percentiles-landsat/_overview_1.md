@@ -5,6 +5,6 @@ This product is designed to make it easier to analyse and interpret fractional c
 :::{admonition} New version in development
 :class: note
 
-A new version of this product is being developed. Subscribe to the [DEA newsletter](https://www.dea.ga.gov.au/news/dea-newsletter-and-communications-archive) to be notified of product releases.
+A new version of this product is being developed. Subscribe to the [DEA newsletter](https://communication.ga.gov.au/dea-news-subscribe) to be notified of product releases.
 :::
 

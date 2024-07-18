@@ -103,7 +103,9 @@ For products in **Table B**, the following calculations are made. This is a part
 
 ## History report
 
-The [Currency History Report][CurrencyReport] report provides a history of the data from the Currency report since the beginning of when we started tracking this statistic: 1 July 2024. It can only be accessed by internal stakeholders. This report uses the same data as the Currency report but it includes the history of previous years.
+The [Currency History Report][CurrencyReport] provides a history of the Currency Report for each financial year since we began tracking this performance measure. It can only be accessed by internal stakeholders.
+
+We began reporting on Currency on 1 July 2024, but the historical data goes back to late 2021 when we first started tracking this measure.
 
 Note that it doesn't include the data from 'Products (Table B)' of this report due to technical limitations. Instead, the historical data of 'Products (Table B)' is stored in a log table in the database.
 
