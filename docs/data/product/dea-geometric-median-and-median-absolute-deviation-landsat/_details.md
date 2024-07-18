@@ -95,7 +95,7 @@ The **surface reflectance geometric median** uses high-dimensional statistical t
 
 The geometric median is a pixel-composite mosaic of a time series of earth observations. Essentially, the value of a pixel in a geometric median image is the statistical median of all observations for that pixel for a period of time. For example, the 2016 Landsat 8 geometric median image over an area will be the median of all Landsat 8 pixels recorded for that area in 2016. 
 
-An **annual geometric median** is a high-dimensional median calculated from the reflectance values recorded over a one-year period. The annual geometric median are available for each full calendar year since 1986.
+An **annual geometric median** is a high-dimensional median calculated from the reflectance values recorded over a one-year period. The annual geometric median is available for each full calendar year since 1986.
 
 :::{figure} /_files/geomedian/geomedian-composite_techspecs.jpg
 :alt: geometric median algorithm diagram
@@ -215,7 +215,7 @@ $$
 \end{align*}
 $$
 
-In GeoMAD, the MADs are calculated from the same ten bands used in the geometric median, therefore $p=10$. The result of $\lVert \mathbf{x}^{(t)} - \mathbf{m} \rVert_{\mathbb{R}^p}$ is a positive scalar, so $\text{EMAD}_\text{GeoMAD}$ is a positive scalar number. As in the geometric median, $N$ is dependent on the number of satellite flyovers particular to that pixel.
+In GeoMAD, the MADs are calculated from the same six bands used in the geometric median, therefore $p=6$. The result of $\lVert \mathbf{x}^{(t)} - \mathbf{m} \rVert_{\mathbb{R}^p}$ is a positive scalar, so $\text{EMAD}_\text{GeoMAD}$ is a positive scalar number. As in the geometric median, $N$ is dependent on the number of satellite flyovers particular to that pixel.
 
 $$
 \begin{align*}
