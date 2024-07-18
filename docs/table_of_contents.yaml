@@ -143,6 +143,7 @@ entries:
             title: All
 
           - file: data/external-data/abares-clum-2020/index
+          - file: data/external-data/abares-clum-2023/index
           - file: data/external-data/ga-ausbathytopo-250m/index
             title: GA AusBathyTopo 250m
           - file: data/external-data/ga-srtm-1-second-dem/index

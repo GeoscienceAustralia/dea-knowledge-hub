@@ -5,6 +5,9 @@ cards:
   - name: ABARES CLUM 2020
     link: /data/external-data/abares-clum-2020/
     image: /_files/external-data/abares_clum_2020.thumbnail.jpg
+  - name: ABARES CLUM 2023
+    link: /data/external-data/abares-clum-2023/
+    image: /_files/external-data/abares_clum_2023.thumbnail.jpg
   - name: GA AusBathyTopo 250m
     link: /data/external-data/ga-ausbathytopo-250m/
     image: /_files/external-data/ga_ausbathytopo250m_2023.thumbnail.jpg
