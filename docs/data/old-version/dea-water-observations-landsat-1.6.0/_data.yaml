@@ -4,9 +4,9 @@
 # Overview
 
 title: DEA Water Observations (Landsat)
-long_title: Water Observations from Space 25m 2.1.5
+long_title: Water Observations from Space 25m 1.6.0
 header_image: /_files/cmi/WOfS-Burketown-Normanton-QLD.png
-version: 2.1.5
+version: 1.6.0
 is_latest_version: false
 latest_version_link: /data/product/dea-water-observations-landsat/
 is_provisional: false
