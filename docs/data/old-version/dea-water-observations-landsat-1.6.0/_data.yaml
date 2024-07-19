@@ -4,7 +4,7 @@
 # Overview
 
 title: DEA Water Observations (Landsat)
-long_title: Water Observations from Space 25m 1.6.0
+long_title: Water Observations from Space 1.6.0
 header_image: /_files/cmi/WOfS-Burketown-Normanton-QLD.png
 version: 1.6.0
 is_latest_version: false
@@ -23,7 +23,7 @@ parent_products:
   name: null
   link: null
 collection:
-  name: Geoscience Australia Landsat Collection 2
+  name: Geoscience Australia Landsat Collection 3
   link: null
 doi: null
 ecat: "121054"
@@ -37,7 +37,7 @@ citations:
   paper_citation: null
 
 tags:
-  - geoscience_australia_landsat_collection_2_deprecated
+  - geoscience_australia_landsat_collection_3
   - water_detection
   - floods
   - surface_water
