@@ -49,7 +49,9 @@ tags:
 
 # Access
 
-maps: null
+maps:
+  - link: https://maps.dea.ga.gov.au/#share=s-f7ilamOyZY8OO1xcHLdgGfgOu4T
+    name: null
 
 explorers:
   - link: https://explorer.dea.ga.gov.au/products/ga_ls_tc_pc_cyear_3
