@@ -47,7 +47,9 @@ tags:
 
 # Access
 
-maps: null
+maps:
+  - link: https://maps.dea.ga.gov.au/#share=s-9X5TTNcKnKM92b1Dc3ATC4KJHgl
+    name: null
 
 explorers:
   - link: https://explorer.dea.ga.gov.au/products/item_v2
