@@ -53,7 +53,7 @@
         }
     }
 
-    &.images {
+    &.images, &.descriptions {
         .sd-container-fluid {
             padding: 0;
         }
@@ -66,6 +66,10 @@
         }
 
         .sd-card {
+            .rubric {
+                padding-top: 0.5rem;
+            }
+
             .image-container {
                 position: relative;
                 overflow: hidden;
@@ -82,11 +86,11 @@
                     transition: transform 0.2s;
                 }
             }
+        }
+    }
 
-            .rubric {
-                padding-top: 0.5rem;
-            }
-
+    &.images {
+        .sd-card {
             &:hover {
                 img {
                     transform: scale(1.05);
@@ -95,6 +99,14 @@
                 .rubric {
                     text-decoration: underline;
                 }
+            }
+        }
+    }
+
+    &.descriptions {
+        .sd-card {
+            .rubric {
+                margin-bottom: 0.25rem;
             }
         }
     }

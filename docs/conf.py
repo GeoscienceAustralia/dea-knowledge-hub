@@ -42,6 +42,7 @@ exclude_patterns += utilities.optional_exclude_pattern("LOCAL_ENABLE_USER_GUIDES
 exclude_patterns += utilities.optional_exclude_pattern("LOCAL_ENABLE_DATA_PRODUCTS", "data")
 exclude_patterns += utilities.optional_exclude_pattern("LOCAL_ENABLE_OLD_VERSIONS", "data/old-version")
 exclude_patterns += utilities.optional_exclude_pattern("LOCAL_ENABLE_NOTEBOOKS", "notebooks")
+exclude_patterns += utilities.optional_exclude_pattern("LOCAL_ENABLE_NOTEBOOKS", "dea-notebooks")
 exclude_patterns += utilities.optional_exclude_pattern("LOCAL_ENABLE_VALIDATION_REPORTS", "validation")
 exclude_patterns += utilities.optional_exclude_pattern("LOCAL_ENABLE_OPERATIONAL_REPORTS", "operational-reports")
 exclude_patterns += utilities.optional_exclude_pattern("LOCAL_ENABLE_TAGS", "tags")

@@ -15,7 +15,7 @@ It is important to be able to analyse and interpret fractional cover. For exampl
 
 This product is designed to make it easier to analyse and interpret fractional cover. It uses the Fractional Cover (Landsat) product and calculates the statistical summaries (10th, 50th and 90th percentile) of fractional cover per epoch (annual).
 
-This product includes cloud and shadow buffering with a size of 6 pixels and includes Landsat-5, Landsat-7, Landsat-8, and Landsat-9 (from 2022 onwards).
+It includes cloud and shadow buffering with a size of 6 pixels. This buffering is applied to Landsat 5, Landsat 7, Landsat 8, and Landsat 9 data from 2022 onwards.
 
 This product is available in the following form:
 
@@ -54,6 +54,7 @@ To account for satellite availability and status the statistics are calculated u
 * 2022 onwards: Landsat 9 only
 
 The values for this product are scaled as follows:
+
 * For the fractional cover bands (PV, NPV, BS)
 * 0-100 = fractional cover values that range between 0 and 100%
 

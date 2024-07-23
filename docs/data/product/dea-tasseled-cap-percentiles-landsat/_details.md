@@ -1,20 +1,20 @@
 ## Background
 
-The Tasseled Cap (Kauth&ndash;Thomas) transformation takes satellite imagery and shows the degree of greeness, wetness and brightness across the observed area. These indexes help users understand the combinations of vegetation, water and bare areas respectively. As such the Tasseled Cap is a useful input into environmental analyses, especially where there are mixtures of all three features in the landscape, such as in wetlands.
+The Tasseled Cap (Kauth&ndash;Thomas) transformation takes satellite imagery and shows the degree of greenness, wetness and brightness across the observed area. These indexes help users understand the combinations of vegetation, water and bare areas respectively. As such the Tasseled Cap is a useful input into environmental analyses, especially where there are mixtures of all three features in the landscape, such as in wetlands.
 
 ## What this product offers
 
-This product offers three percentiles (10th, 50th and 90th) per Tasseled Cap index (greeness, wetness and brightness) per year, from 1987 to the present.
+This product offers three percentiles per Tasseled Cap index per year. The percentiles are 10th, 50th, and 90th; the Tasseled Cap indexes are 'greenness', 'wetness', and 'brightness'; and the years are 1987 to 2023.
 
 It is useful in broad environmental analyses where it is desirable to understand a mixed landscape including vegetation, water and bare areas, and as such is useful for wetlands analyses.
 
-This product includes cloud and shadow buffering with a size of 6 and includes Landsat-5, Landsat-7, Landsat-8, and Landsat-9 (from 2022 onwards).
+It includes cloud and shadow buffering with a size of 6 pixels. This buffering is applied to Landsat 5, Landsat 7, Landsat 8, and Landsat 9 data from 2022 onwards.
 
 ## Data description
 
 Tasseled Cap percentiles are created by bringing together all individual satellite images for a year and generating the corresponding Tasseled Cap for each, before computing the 10th, 50th and 90th percentiles of their respective data ranges. The percentiles are chosen to represent minimum, middle and maximum (or general) conditions for each index per year, for every 30m x 30m pixel across Australia.
 
-This product includes cloud and shadow buffering with a size of 6 pixels and includes Landsat-5, Landsat-7, Landsat-8, and Landsat-9 (from 2022 onwards).
+It includes cloud and shadow buffering with a size of 6 pixels and includes Landsat 5, Landsat 7, Landsat 8, and Landsat 9 (from 2022 onwards).
 
 ## Applications
 
@@ -27,7 +27,7 @@ This product provides valuable discrimination for characterising:
 
 ## Technical information
 
-The Tasseled Cap (Kauth&ndash;Thomas) transform translates the six spectral bands of Landsat into a three indexes describing greeness, wetness and brightness.  These indexes can be used to help understand complex ecosystems, such as wetlands or groundwater dependent ecosystems. The Tasseled Cap Percentiles capture how the greeness, wetness and brightness of the landscape behaves over time. 
+The Tasseled Cap (Kauth&ndash;Thomas) transform translates the six spectral bands of Landsat into a three indexes describing greenness, wetness and brightness.  These indexes can be used to help understand complex ecosystems, such as wetlands or groundwater dependent ecosystems. The Tasseled Cap Percentiles capture how the greenness, wetness and brightness of the landscape behaves over time. 
 
 The percentiles are well suited to characterising wetlands, salt flats/salt lakes and coastal ecosystems. However, care should be applied when analysing these indexes, as soil colour and fire scars can cause misleading results. In areas of high relief caused by cliffs or steep terrain, terrain shadows can cause false positives.
 

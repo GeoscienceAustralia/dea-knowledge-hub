@@ -9,7 +9,7 @@ header_image: /_files/cmi/TCWpercentiles.png
 version: 2.0.0
 is_latest_version: true
 latest_version_link: null
-is_provisional: true
+is_provisional: false
 product_type: Derivative
 spatial_data_type: Raster
 time_span:
@@ -68,8 +68,11 @@ web_services:
 
 old_versions:
   - version: 1.0.0
+    title: DEA Tasseled Cap Percentiles (Landsat)
+    slug: dea-tasseled-cap-percentiles-landsat-1.0.0
+  - version: 2.0.0
     title: DEA Wetness Percentiles (Landsat)
-    slug: dea-wetness-percentiles-landsat-1.0.0
+    slug: dea-wetness-percentiles-landsat-2.0.0
 
 # Settings
 
