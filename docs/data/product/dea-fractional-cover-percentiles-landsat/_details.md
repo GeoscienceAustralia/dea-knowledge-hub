@@ -50,7 +50,8 @@ To account for satellite availability and status the statistics are calculated u
 * 2003 : Landsat 5 and Landsat 7
 * 2004-2010 : Landsat 5 only
 * 2011-2012 : Landsat 7 only
-* 2013 onward : Landsat 8 only
+* 2013-2021 : Landsat 8 only
+* 2022 onwards: Landsat 9 only
 
 The values for this product are scaled as follows:
 * For the fractional cover bands (PV, NPV, BS)

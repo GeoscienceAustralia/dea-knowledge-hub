@@ -12,7 +12,7 @@ latest_version_link: null
 product_type: Derivative
 spatial_data_type: Raster
 time_span:
-  start: 16/08/1986
+  start: 1986-08-16
   end: Present
 update_frequency: Daily
 next_update: null
