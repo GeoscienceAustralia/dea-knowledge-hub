@@ -13,7 +13,7 @@ is_provisional: false
 product_type: Data service
 spatial_data_type: Vector
 time_span:
-  start: 27/08/2002
+  start: 27 Aug 2002
   end: Present
 update_frequency: Every 10 minutes
 next_update: null
