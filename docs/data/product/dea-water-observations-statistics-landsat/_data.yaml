@@ -62,7 +62,7 @@ maps:
 
 explorers:
   - link: https://explorer.dea.ga.gov.au/products#inland-water-group
-    name: Data explorer
+    name: null
 
 data:
   - link: https://data.dea.ga.gov.au/?prefix=derivative/ga_ls_wo_fq_apr_oct_3/1-6-0/

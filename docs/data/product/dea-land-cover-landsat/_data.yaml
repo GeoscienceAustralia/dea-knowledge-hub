@@ -49,7 +49,7 @@ maps:
 
 explorers:
   - link: https://explorer.dea.ga.gov.au/products/ga_ls_landcover_class_cyear_2
-    name: Data explorer
+    name: null
 
 data:
   - link: http://dea-public-data.s3-website-ap-southeast-2.amazonaws.com/?prefix=derivative/ga_ls_landcover_class_cyear_2/

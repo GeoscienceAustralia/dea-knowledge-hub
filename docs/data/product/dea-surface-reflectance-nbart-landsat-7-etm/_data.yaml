@@ -50,7 +50,7 @@ maps: null
 
 explorers:
   - link: https://explorer.dea.ga.gov.au/products/ga_ls7e_ard_3
-    name: Data explorer
+    name: null
 
 data:
   - link: https://thredds.nci.org.au/thredds/catalog/xu18/catalog.html

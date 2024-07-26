@@ -53,7 +53,7 @@ maps:
 
 explorers:
   - link: https://explorer.dea.ga.gov.au/products/item_v2
-    name: Data explorer
+    name: null
 
 data:
   - link: https://thredds.nci.org.au/thredds/catalog/catalogs/fk4/item_2_0.html
