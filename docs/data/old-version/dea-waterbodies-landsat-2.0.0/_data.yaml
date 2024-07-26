@@ -45,7 +45,7 @@ tags:
 
 maps:
   - link: https://maps.dea.ga.gov.au/#share=s-4RjD9N7swBCZSkXRJJBxOLzVZyK
-    name: null
+    name: See it on a map
 
 explorers: null
 
@@ -57,7 +57,7 @@ data:
 
 code_examples:
   - link: /notebooks/DEA_products/DEA_Waterbodies/
-    name: null
+    name: Code examples
   - link: https://github.com/GeoscienceAustralia/dea-waterbodies
     name: Github repository
 
