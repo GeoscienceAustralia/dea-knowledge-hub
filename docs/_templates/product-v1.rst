@@ -23,7 +23,7 @@
 {% set data_default_name = "Explore data availability" %}
 {% set explorer_default_name = "Get the data online" %}
 {% set web_service_default_name = "Get via web service" %}
-{% set code_sample_default_name = "Code examples" %}
+{% set code_sample_default_name = "View code examples" %}
 
 {% set has_access_data = valid_maps or valid_data or valid_explorers or valid_web_services or valid_code_samples or valid_custom %}
 {% set has_key_details = (data.parent_products.name and data.parent_products.link) or (data.collection.name and data.collection.link) or data.collection.name or data.doi or data.ecat or data.published %}
