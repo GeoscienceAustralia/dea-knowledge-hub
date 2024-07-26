@@ -48,7 +48,7 @@ jobs:
             <table> <!-- #pr-preview-comment -->
                 <tr>
                     <td><strong>Preview site:</strong></td>
-                    <td>Not deployed yet (<a href="https://${{ env.PR_PREVIEW_SUBDOMAIN }}.khpreview.dea.ga.gov.au/">PR Preview ${{github.event.pull_request.number}}</a>)</td>
+                    <td>Not deployed yet (<a href="https://${{ env.PR_PREVIEW_SUBDOMAIN }}.khpreview.dea.ga.gov.au/" style="color: DarkOrange;">PR Preview ${{github.event.pull_request.number}}</a>)</td>
                 </tr>
                 <tr>
                     <td><strong>Deploy log:</strong></td>
