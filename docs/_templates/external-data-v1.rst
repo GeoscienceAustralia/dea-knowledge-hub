@@ -15,18 +15,18 @@
 {% set valid_bands = Specifications.bands.bands_table | selectattr("name",  "!=", None) | list %}
 
 {% set external_data_label = "Go to the external data page" %}
-{% set map_label = "See it on a map" %}
-{% set explorer_label = "Explore data availability" %}
-{% set data_label = "Get the data online" %}
-{% set web_service_label = "Get via web service" %}
-{% set code_sample_label = "Code sample" %}
+{% set map_label = "DEA Maps" %}
+{% set explorer_label = "DEA Explorer" %}
+{% set data_label = "Data repositories" %}
+{% set web_service_label = "Web services" %}
+{% set code_sample_label = "Code examples" %}
 
 {% set external_data_default_name = "External data page" %}
-{% set map_default_name = "DEA Maps" %}
-{% set data_default_name = "DEA Data" %}
-{% set explorer_default_name = "Data Explorer" %}
-{% set web_service_default_name = "Web service" %}
-{% set code_sample_default_name = "Code sample" %}
+{% set map_default_name = "See it on a map" %}
+{% set data_default_name = "Explore data availability" %}
+{% set explorer_default_name = "Get the data online" %}
+{% set web_service_default_name = "Get via web service" %}
+{% set code_sample_default_name = "View code examples" %}
 
 {% set has_access_data = valid_external_data or valid_maps or valid_data or valid_explorers or valid_web_services or valid_code_samples or valid_custom %}
 {% set has_key_details = (Data.licence.name and Data.licence.link) or Data.doi or Data.ecat %}

@@ -44,7 +44,7 @@ maps: null
 
 explorers:
   - link: https://explorer.dea.ga.gov.au/products/multi_scale_topographic_position
-    name: Data Explorer
+    name: null
 
 data:
   - link: https://data.dea.ga.gov.au/?prefix=multi-scale-topographic-position/
