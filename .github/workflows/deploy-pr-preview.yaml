@@ -47,7 +47,7 @@ jobs:
 
             <table> <!-- #pr-preview-comment -->
                 <tr>
-                    <td><strong>Preview site:</strong></td>
+                    <td><strong>View the preview:</strong></td>
                     <td><a href="https://${{ env.PR_PREVIEW_SUBDOMAIN }}.khpreview.dea.ga.gov.au/">:hourglass: Not deployed yet</a></td>
                 </tr>
             </table>
@@ -98,7 +98,7 @@ jobs:
 
             <table> <!-- #pr-preview-comment -->
                 <tr>
-                    <td><strong>Preview site:</strong></td>
+                    <td><strong>View the preview:</strong></td>
                     <td><a href="https://${{ env.PR_PREVIEW_SUBDOMAIN }}.khpreview.dea.ga.gov.au/">:globe_with_meridians: PR Preview ${{github.event.pull_request.number}}</a></td>
                 </tr>
             </table>
