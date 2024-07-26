@@ -64,7 +64,7 @@ data:
 
 code_examples:
   - link: /notebooks/DEA_products/DEA_Mangroves/
-    name: Code examples
+    name: null
 
 web_services:
   - link: https://ows.dea.ga.gov.au/

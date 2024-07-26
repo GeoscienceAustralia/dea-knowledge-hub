@@ -76,7 +76,7 @@ data:
 
 code_examples:
   - link: /notebooks/DEA_products/DEA_Water_Observations/
-    name: Code examples
+    name: null
 
 web_services:
   - link: https://ows.dea.ga.gov.au/

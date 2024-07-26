@@ -17,13 +17,13 @@
 {% set explorer_label = "DEA Data" %}
 {% set data_label = "Data Explorer" %}
 {% set web_service_label = "Web services" %}
-{% set code_sample_label = "Code samples" %}
+{% set code_sample_label = "Code examples" %}
 
 {% set map_default_name = "See it on a map" %}
 {% set data_default_name = "Explore data availability" %}
 {% set explorer_default_name = "Get the data online" %}
 {% set web_service_default_name = "Get via web service" %}
-{% set code_sample_default_name = "Code sample" %}
+{% set code_sample_default_name = "Code examples" %}
 
 {% set has_access_data = valid_maps or valid_data or valid_explorers or valid_web_services or valid_code_samples or valid_custom %}
 {% set has_key_details = (data.parent_products.name and data.parent_products.link) or (data.collection.name and data.collection.link) or data.collection.name or data.doi or data.ecat or data.published %}

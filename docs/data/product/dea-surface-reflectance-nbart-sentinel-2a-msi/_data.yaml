@@ -62,7 +62,7 @@ data:
 
 code_examples:
   - link: /notebooks/DEA_products/DEA_Sentinel2_Surface_Reflectance/
-    name: Code examples
+    name: null
 
 web_services:
   - link: https://ows.dea.ga.gov.au
