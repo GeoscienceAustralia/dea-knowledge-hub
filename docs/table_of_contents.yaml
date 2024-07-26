@@ -169,12 +169,12 @@ entries:
               - file: guides/setup/NCI/account
               - file: guides/setup/NCI/basics
               - file: guides/setup/NCI/advanced
+          - file: guides/setup/gis/stac
           - file: guides/setup/AWS/data_and_metadata
           - file: guides/setup/gis/README
             entries:
               - file: guides/setup/gis/web_map_service
               - file: guides/setup/gis/web_coverage_service
-              - file: guides/setup/gis/stac
           - file: guides/setup/jupyter
 
       - caption: Reference
