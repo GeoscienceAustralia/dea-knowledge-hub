@@ -57,7 +57,7 @@ maps:
 
 explorers:
   - link: https://explorer.dea.ga.gov.au/products/ga_s2ls_intertidal_cyear_3
-    name: Data explorer
+    name: null
 
 data:
   - link: https://data.dea.ga.gov.au/?prefix=derivative/ga_s2ls_intertidal_cyear_3/

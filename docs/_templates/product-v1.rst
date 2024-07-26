@@ -14,8 +14,8 @@
 {% set valid_tags = data.tags | select("!=", None) | list %}
 
 {% set map_label = "DEA Maps" %}
-{% set explorer_label = "DEA Data" %}
-{% set data_label = "Data Explorer" %}
+{% set explorer_label = "DEA Explorer" %}
+{% set data_label = "Data repositories" %}
 {% set web_service_label = "Web services" %}
 {% set code_sample_label = "Code examples" %}
 
