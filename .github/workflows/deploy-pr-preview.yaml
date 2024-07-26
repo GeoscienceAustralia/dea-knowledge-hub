@@ -43,12 +43,12 @@ jobs:
           comment-id: ${{ steps.find-comment.outputs.comment-id }}
           edit-mode: replace
           body: |
-            ## :hourglass: PR Preview is deploying ...
+            ## PR Preview is deploying ...
 
             <table> <!-- #pr-preview-comment -->
                 <tr>
                     <td><strong>Preview site:</strong></td>
-                    <td>Not deployed yet (<a href="https://${{ env.PR_PREVIEW_SUBDOMAIN }}.khpreview.dea.ga.gov.au/" style="color: DarkOrange;">PR Preview ${{github.event.pull_request.number}}</a>)</td>
+                    <td><a href="https://${{ env.PR_PREVIEW_SUBDOMAIN }}.khpreview.dea.ga.gov.au/">:hourglass: Not deployed yet</a></td>
                 </tr>
             </table>
 
@@ -94,12 +94,12 @@ jobs:
           comment-id: ${{ steps.pr-preview-deploying.outputs.comment-id }}
           edit-mode: replace
           body: |
-            ## :star2: PR Preview is ready!
+            ## PR Preview is ready!
 
             <table> <!-- #pr-preview-comment -->
                 <tr>
                     <td><strong>Preview site:</strong></td>
-                    <td><a href="https://${{ env.PR_PREVIEW_SUBDOMAIN }}.khpreview.dea.ga.gov.au/">PR Preview ${{github.event.pull_request.number}}</a></td>
+                    <td><a href="https://${{ env.PR_PREVIEW_SUBDOMAIN }}.khpreview.dea.ga.gov.au/">:globe_with_meridians: PR Preview ${{github.event.pull_request.number}}</a></td>
                 </tr>
             </table>
 
