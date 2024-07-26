@@ -58,7 +58,7 @@ custom:
   - icon: map-location-dot
     link: https://satpath.dea.ga.gov.au/
     label: Get via web interface
-    name: See it on a map
+    name: null
     description: null
     class: null
 

@@ -53,7 +53,7 @@ tags:
 
 maps:
   - link: https://maps.dea.ga.gov.au/story/DEAIntertidal
-    name: See it on a map
+    name: null
 
 explorers:
   - link: https://explorer.dea.ga.gov.au/products/ga_s2ls_intertidal_cyear_3

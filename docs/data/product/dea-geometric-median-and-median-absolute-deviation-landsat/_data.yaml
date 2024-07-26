@@ -56,7 +56,7 @@ tags:
 
 maps:
   - link: https://maps.dea.ga.gov.au/#share=s-fzHT65z4jscx9U1Nfb1FoKlQ7uU
-    name: See it on a map
+    name: null
 
 explorers:
   - link: https://explorer.dea.ga.gov.au/products#baseline-satellite-data-group

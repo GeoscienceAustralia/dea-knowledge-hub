@@ -50,7 +50,7 @@ tags:
 
 maps:
   - link: https://maps.dea.ga.gov.au/#share=s-lkNZRIoEC2JixvX3a7RoCGR5czq
-    name: See it on a map
+    name: null
 
 explorers:
   - link: https://explorer.dea.ga.gov.au/products/ga_ls_mangrove_cover_cyear_3

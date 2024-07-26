@@ -45,7 +45,7 @@ tags:
 
 maps:
   - link: https://maps.dea.ga.gov.au/story/DEALandCover
-    name: See it on a map
+    name: null
 
 explorers:
   - link: https://explorer.dea.ga.gov.au/products/ga_ls_landcover_class_cyear_2

@@ -13,16 +13,16 @@
 {% set valid_custom_citations = data.custom_citations | select("!=", None) | list %}
 {% set valid_tags = data.tags | select("!=", None) | list %}
 
-{% set map_label = "See it on a map" %}
-{% set explorer_label = "Explore data availability" %}
-{% set data_label = "Get the data online" %}
-{% set web_service_label = "Get via web service" %}
-{% set code_sample_label = "Code sample" %}
+{% set map_label = "DEA Maps" %}
+{% set explorer_label = "DEA Data" %}
+{% set data_label = "Data Explorer" %}
+{% set web_service_label = "Web services" %}
+{% set code_sample_label = "Code samples" %}
 
-{% set map_default_name = "DEA Maps" %}
-{% set data_default_name = "DEA Data" %}
-{% set explorer_default_name = "Data Explorer" %}
-{% set web_service_default_name = "Web service" %}
+{% set map_default_name = "See it on a map" %}
+{% set data_default_name = "Explore data availability" %}
+{% set explorer_default_name = "Get the data online" %}
+{% set web_service_default_name = "Get via web service" %}
 {% set code_sample_default_name = "Code sample" %}
 
 {% set has_access_data = valid_maps or valid_data or valid_explorers or valid_web_services or valid_code_samples or valid_custom %}
