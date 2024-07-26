@@ -43,7 +43,7 @@ jobs:
           comment-id: ${{ steps.find-comment.outputs.comment-id }}
           edit-mode: replace
           body: |
-            ## PR Preview is deploying ...
+            ## Preview is deploying ...
 
             <table> <!-- #pr-preview-comment -->
                 <tr>
@@ -94,7 +94,7 @@ jobs:
           comment-id: ${{ steps.pr-preview-deploying.outputs.comment-id }}
           edit-mode: replace
           body: |
-            ## PR Preview is ready!
+            ## Preview is ready!
 
             <table> <!-- #pr-preview-comment -->
                 <tr>
