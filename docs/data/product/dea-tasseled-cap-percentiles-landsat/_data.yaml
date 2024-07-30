@@ -48,7 +48,9 @@ tags:
 
 # Access
 
-maps: null
+maps:
+  - link: https://maps.dea.ga.gov.au/#share=s-hnDwAfLNqJEIuwGzufL9yI5DS0w
+    name: See it on a map
 
 explorers:
   - link: https://explorer.dea.ga.gov.au/products/ga_ls_tc_pc_cyear_3
@@ -56,7 +58,9 @@ explorers:
 
 data:
   - link: https://data.dea.ga.gov.au/?prefix=derivative/ga_ls_tc_pc_cyear_3/
-    name: DEA Tasseled Cap Calendar Year Percentiles
+    name: DEA Tasseled Cap Calendar Year Percentiles - AWS
+  - link: https://thredds.nci.org.au/thredds/catalog/jw04/ga_ls_tc_pc_cyear_3/2-0-0/catalog.html
+    name:  DEA Tasseled Cap Calendar Year Percentiles - NCI
 
 code_examples: null
 

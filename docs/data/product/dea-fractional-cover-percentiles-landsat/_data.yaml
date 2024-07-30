@@ -46,13 +46,19 @@ tags:
 
 # Access
 
-maps: null
+maps:
+  - link: https://maps.dea.ga.gov.au/#share=s-dsn0y5piVd34kvlDoOEEi1oSEWk
+    name: See it on a map
 
-explorers: null
+explorers:
+  - link: https://explorer.dea.ga.gov.au/products/ga_ls_fc_pc_cyear_3
+    name: Data explorer
 
 data:
-  - link: https://data.dea.ga.gov.au/?prefix=derivative/ga_ls_fc_pc_cyear_3/
-    name: Digital Earth Australia - Public Data
+  - link: https://data.dea.ga.gov.au/?prefix=derivative/ga_ls_fc_pc_cyear_3/4-0-0/
+    name: Digital Earth Australia - Public Data on AWS
+  - link: https://thredds.nci.org.au/thredds/catalog/jw04/ga_ls_fc_pc_cyear_3/4-0-0/catalog.html
+    name: Digital Earth Australia - Public Data on NCI
 
 code_examples:
   - link: https://explorer.dea.ga.gov.au/products/ga_ls_fc_pc_cyear_3
