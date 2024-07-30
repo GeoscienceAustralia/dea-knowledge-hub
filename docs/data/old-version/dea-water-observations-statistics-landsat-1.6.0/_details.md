@@ -35,11 +35,11 @@ In addition, a confidence-filtered Multi-Year Summary is under development, whic
 
 ## Lineage
 
-This product is created from the WO water classification (Water Observations (Landsat)). Every pixel location is analysed statistically to derive the count of clear observations, the count of clear-wet observations and then to calculate the percentage of clear observations that were also wet. This provides a 'normalised' water frequency product for all of Australia.
+This product is created from the WOfS water classification (Water Observations 2 (Landsat)). Every pixel location is analysed statistically to derive the count of clear observations, the count of clear-wet observations and then to calculate the percentage of clear observations that were also wet. This provides a 'normalised' water frequency product for all of Australia.
 
 Each product within the WO-STATS set is derived from the available Landsat observations within the respective period: calendar years; Apr-Oct each year; Nov-Mar each year; all-of-time (first available Landsat observation in the DEA archive to the most recent).
 
-To create the confidence layer required for the filtered product, a logistic regression is created between the un-filtered product and information about terrain, built-up areas, and coarse national water observations. In this way the confidence reflects the likelihood that the observed water is scientifically feasible at every pixel.
+To create the confidence layer required for the Filtered product, a logistic regression is created between the un-filtered product and information about terrain, built-up areas, and coarse national water observations. In this way the confidence reflects the likelihood that the observed water is scientifically feasible at every pixel.
 
 ## Processing steps
 
