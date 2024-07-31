@@ -25,9 +25,9 @@ All new versions of our 'summary derivative products' will be affected by this c
 
 Learn more about the [DEA Summary Product Grid](/guides/reference/collection_3_summary_grid/).
 
-## 2024-07-30: Outage of Hotspots S-NPP VIIRS data
+## 2024-07-25: Outage of Hotspots S-NPP VIIRS data
 
-The Suomi-NPP Spacecraft experienced a data outage that caused all its science data to be unavailable until further notice. Therefore, Suomi-NPP VIIRS Hotspots cannot be published until this satellite's problem is resolved. Nevertheless, the other Hotspots sub-products are unaffected by this outage.
+This issue concerns [DEA Hotspots](https://knowledge.dea.ga.gov.au/data/product/dea-hotspots/). The Suomi-NPP Spacecraft experienced a data outage that caused all its science data to be unavailable until further notice. Therefore, Suomi-NPP VIIRS Hotspots cannot be published until this satellite's problem is resolved. Nevertheless, the other DEA Hotspots sub-products are unaffected by this outage.
 
 ## 2024-07-01: External data products now featured on the Knowledge Hub
 
