@@ -185,7 +185,7 @@ The most logical place to start thinking about any of the MADs is the Euclidean 
 Euclidean distance in three dimensions.
 :::
 
-In the case of satellite data, we are measuring the Euclidean distance between a pixel’s geometric median value and a single multispectral measurement. The number of dimensions is equal to the number of bands in the data. In the illustration below, $m$ is the geometric median value and $\\mathbf{x}$ the measured value. In real data, there will be multiple measurements over a time period, so $t$ is the timestep number, otherwise noted in equations as superscript ($t$).
+In the case of satellite data, we are measuring the Euclidean distance between a pixel’s geometric median value and a single multispectral measurement. The number of dimensions is equal to the number of bands in the data. In the illustration below, $m$ is the geometric median value and $\mathbf{x}$ the measured value. In real data, there will be multiple measurements over a time period, so $t$ is the timestep number, otherwise noted in equations as superscript ($t$).
 
 For example, if we had three bands of data (red, green, and blue), and three timesteps of data, then we can calculate the Euclidean distances as follows:
 
