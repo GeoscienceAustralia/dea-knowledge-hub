@@ -10,7 +10,6 @@
 
 * Misclassification issue with Sentinel-2 's2cloudless' cloud masking from 2022. See below.
 * Terra-derived DEA Hotspots are unavailable. See below.
-* Outage of Hotspots S-NPP VIIRS data. See below.
 :::
 
 ## Upcoming change: Shift in origin point of DEA Summary Product Grid
@@ -25,7 +24,11 @@ All new versions of our 'summary derivative products' will be affected by this c
 
 Learn more about the [DEA Summary Product Grid](/guides/reference/collection_3_summary_grid/).
 
-## 2024-07-25: Outage of Hotspots S-NPP VIIRS data
+## 2024-08-01: Resolved outage of Hotspots S-NPP VIIRS data
+
+The Suomi-NPP VIIRS Hotspots sub-product has resumed publishing data because the satellite's issue has been resolved.
+
+## 2024-07-25: Outage of Hotspots S-NPP VIIRS data (Resolved)
 
 This issue concerns [DEA Hotspots](https://knowledge.dea.ga.gov.au/data/product/dea-hotspots/). The Suomi-NPP satellite has experienced a data outage that has resulted in data unavailability until further notice. Therefore, Suomi-NPP VIIRS Hotspots cannot be published until this issue is resolved. Other DEA Hotspots sub-products are unaffected by this outage.
 
