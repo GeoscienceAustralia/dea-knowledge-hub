@@ -65,6 +65,14 @@ data:
     name: Annual calendar year summaries since 1986 - AWS access
   - link: https://data.dea.ga.gov.au/?prefix=derivative/ga_ls_wo_fq_myear_3/2-0-0/
     name: All-time summary 1986 to present - AWS access
+  - link: https://thredds.nci.org.au/thredds/catalog/jw04/ga_ls_wo_fq_apr_oct_3/catalog.html
+    name: Apr-Oct summaries since 1986 - NCI access
+  - link: https://thredds.nci.org.au/thredds/catalog/jw04/ga_ls_wo_fq_nov_mar_3/catalog.html
+    name: Nov-Mar summaries since 1986 - NCI access
+  - link: https://thredds.nci.org.au/thredds/catalog/jw04/ga_ls_wo_fq_cyear_3/catalog.html
+    name: Annual calendar year summaries since 1986 - NCI access
+  - link: https://thredds.nci.org.au/thredds/catalog/jw04/ga_ls_wo_fq_myear_3/catalog.html
+    name: All-time summary 1986 to present - NCI access
 
 code_examples:
   - link: /notebooks/DEA_products/DEA_Water_Observations/
