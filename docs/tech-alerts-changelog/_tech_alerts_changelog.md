@@ -23,10 +23,10 @@ Learn more about the [DEA Summary Product Grid](/guides/reference/collection_3_s
 
 The newly released version 4.0.0 of [DEA Geometric Median and Median Absolute Deviation](/data/product/dea-geometric-median-and-median-absolute-deviation-landsat/) contains new features and changes such as the following.
 
-* **Breaking change:** Shift in grid origin point
-* Enhanced cloud masking to reduce noise
-* Combined Landsat 8 and 9 product
-* Prefixed band measurement names
+* **Breaking change:** Shift in grid origin point.
+* Enhanced cloud masking to reduce noise.
+* Combined Landsat 8 and 9 product.
+* Prefixed band measurement names.
 
 See the [Version 4.0.0 Changelog](/data/product/dea-geometric-median-and-median-absolute-deviation-landsat/?tab=history) for more information.
 
