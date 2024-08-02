@@ -3,7 +3,7 @@
 {% set access_names = {
    "map": "DEA Maps",
    "explorer": "Data Explorer",
-   "data": "DEA Data",
+   "data": "Data sources",
    "code_sample": "Code sample",
    "web_service": "Web service",
 } %}
