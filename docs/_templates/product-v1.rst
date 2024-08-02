@@ -20,8 +20,8 @@
 {% set code_sample_label = "Code examples" %}
 
 {% set map_default_name = "See it on a map" %}
-{% set data_default_name = "Explore data availability" %}
-{% set explorer_default_name = "Get the data online" %}
+{% set explorer_default_name = "Explore data availability" %}
+{% set data_default_name = "Get the data online" %}
 {% set web_service_default_name = "Get via web service" %}
 {% set code_sample_default_name = "View code examples" %}
 
