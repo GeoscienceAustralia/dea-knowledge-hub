@@ -15,7 +15,7 @@ spatial_data_type: Raster
 time_span:
   start: 1986
   end: Present
-update_frequency: Annually
+update_frequency: Yearly
 next_update: 2025
 product_ids:
   - ga_ls5t_gm_cyear_3
