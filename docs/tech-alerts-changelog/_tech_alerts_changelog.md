@@ -19,6 +19,17 @@
 
 Learn more about the [DEA Summary Product Grid](/guides/reference/collection_3_summary_grid/).
 
+## 2024-08-04: Version 4.0.0 of DEA Geometric Median and Median Absolute Deviation released
+
+The newly released version 4.0.0 of [DEA Geometric Median and Median Absolute Deviation](https://knowledge.dea.ga.gov.au/data/product/dea-geometric-median-and-median-absolute-deviation-landsat/) contains new features and changes such as the following.
+
+* **Breaking change:** Shift in grid origin point
+* Enhanced cloud masking to reduce noise
+* Combined Landsat 8 and 9 product
+* Prefixed band measurement names
+
+See the [Version 4.0.0 Changelog](https://knowledge.dea.ga.gov.au/data/product/dea-geometric-median-and-median-absolute-deviation-landsat/?tab=history) for more information.
+
 ## 2024-07-01: External data products now featured on the Knowledge Hub
 
 External data products are produced by external providers such as a different program of Geoscience Australia or a different organisation entirely. These external data products may assist with the analysis of DEA data. DEA even provides services relating to some of these external products. Therefore, we have begun to include some external products on our Knowledge Hub so that you can easily find and access this data. So far, we have added three external data products to the Knowledge Hub. But watch this space, as there are more to come!
