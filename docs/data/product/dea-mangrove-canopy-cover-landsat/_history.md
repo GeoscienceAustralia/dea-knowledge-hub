@@ -1,4 +1,4 @@
-% ## Changelog
+## Changelog
 
 ### Version  4.0.0
 

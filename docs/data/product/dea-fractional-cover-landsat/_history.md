@@ -1,4 +1,4 @@
-% ## Changelog
+## Changelog
 
 ### Version: 2.5.0 and 2.5.1
 
