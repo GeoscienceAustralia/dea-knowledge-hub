@@ -70,6 +70,14 @@ Learn more about how to [understand and analyse this report](/guides/setup/opera
 
 Internal staff can also [view the full history of data](https://mgmt.sandbox.dea.ga.gov.au/d/c1674b20-8c8a-4d90-aef2-02796275cf2b/4e57919d-fc9d-59d7-9bd1-aa61d41bcb92?orgId=1).
 
+## 2024-08-01: Resolved outage of Hotspots S-NPP VIIRS data
+
+The Suomi-NPP VIIRS Hotspots sub-product has resumed publishing data because the satellite's issue has been resolved.
+
+## 2024-07-25: Outage of Hotspots S-NPP VIIRS data (Resolved)
+
+This issue concerns [DEA Hotspots](https://knowledge.dea.ga.gov.au/data/product/dea-hotspots/). The Suomi-NPP satellite has experienced a data outage that has resulted in data unavailability until further notice. Therefore, Suomi-NPP VIIRS Hotspots cannot be published until this issue is resolved. Other DEA Hotspots sub-products are unaffected by this outage.
+
 ## 2024-07-01: External data products now featured on the Knowledge Hub
 
 External data products are produced by external providers such as a different program of Geoscience Australia or a different organisation entirely. These external data products may assist with the analysis of DEA data. DEA even provides services relating to some of these external products. Therefore, we have begun to include some external products on our Knowledge Hub so that you can easily find and access this data. So far, we have added three external data products to the Knowledge Hub. But watch this space, as there are more to come!
