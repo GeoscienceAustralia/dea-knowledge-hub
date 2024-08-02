@@ -19,7 +19,7 @@
 
 Learn more about the [DEA Summary Product Grid](/guides/reference/collection_3_summary_grid/).
 
-## 2024-08-04: Version 4.0.0 of DEA Geometric Median and Median Absolute Deviation released
+## 2024-08-02: Version 4.0.0 of DEA Geometric Median and Median Absolute Deviation released
 
 The newly released version 4.0.0 of [DEA Geometric Median and Median Absolute Deviation](/data/product/dea-geometric-median-and-median-absolute-deviation-landsat/) contains new features and changes such as the following.
 
