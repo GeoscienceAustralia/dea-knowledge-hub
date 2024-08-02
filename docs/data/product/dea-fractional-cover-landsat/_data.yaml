@@ -59,7 +59,7 @@ data:
 
 code_examples:
   - link: /notebooks/DEA_products/DEA_Fractional_Cover/
-    name: Jupyter notebook
+    name: Code examples
 
 web_services:
   - link: https://ows.dea.ga.gov.au
