@@ -15,7 +15,7 @@
 
 {% set map_label = "DEA Maps" %}
 {% set explorer_label = "DEA Explorer" %}
-{% set data_label = "Data repositories" %}
+{% set data_label = "Data sources" %}
 {% set web_service_label = "Web services" %}
 {% set code_sample_label = "Code examples" %}
 
