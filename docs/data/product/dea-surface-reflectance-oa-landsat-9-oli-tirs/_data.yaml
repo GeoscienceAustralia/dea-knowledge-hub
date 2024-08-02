@@ -13,7 +13,7 @@ is_provisional: false
 product_type: Baseline
 spatial_data_type: Raster
 time_span:
-  start: 31/10/2021
+  start: 31 Oct 2021
   end: Present
 update_frequency: Daily
 next_update: null

@@ -101,6 +101,10 @@ For products in **Table B**, the following calculations are made. This is a part
     * Otherwise, if the product is not overdue ($\text{Days overdue} = 0$), then the Currency will be 100%.
 1. Each financial year, a few manual steps are required. Internal staff will need to [complete the manual steps][CurrencyInternalDocManualSteps].
 
+### Total Currency
+
+At the top of the report is the total **Currency this financial year (FY)**. This is calculated as an average of the **Currency this FY** values of all the products in Table A and Table B. All products are weighted equally in this average.
+
 ## History report
 
 The [Currency History Report][CurrencyReport] provides a history of the Currency Report for each financial year since we began tracking this performance measure. It can only be accessed by internal stakeholders.

@@ -13,7 +13,7 @@ is_provisional: false
 product_type: Derivative
 spatial_data_type: Raster
 time_span:
-  start: 16/08/1986
+  start: 16 Aug 1986
   end: Present
 update_frequency: Daily
 next_update: null
