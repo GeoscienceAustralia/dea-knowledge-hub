@@ -327,7 +327,7 @@ The three MAD layers of the GeoMAD are calculated by computing the multidimensio
 
 The GeoMAD is calculated over annual time periods on Earth observations from a single sensor by default (such as the annual time series of Landsat 8 observations); however it is applicable to multi-sensor time series of any length that computing resources can support. 
 
-For the purposes of the default DEA product, GeoMADs are computed per calendar year per sensor for Landsat 5, Landsat 7, and Landsat 8 until 2022. GeoMADs are computed from combined sensors Landsat 8 and Landsat 9 from 2023 onwards. GeoMADs are computed using terrain-illumination-corrected surface reflectance data (Analysis Ready Data).
+For the purposes of the default DEA product, GeoMADs are computed per calendar year per sensor for Landsat 5, Landsat 7, and Landsat 8 until 2021. GeoMADs are computed from combined sensors Landsat 8 and Landsat 9 from 2022 onwards. GeoMADs are computed using terrain-illumination-corrected surface reflectance data (Analysis Ready Data).
 
 Note that the constituent pixels in the GeoMAD pixel composite mosaics are synthetic. This means that the pixels have not been physically observed by the satellite; rather, they are the computed high-dimensional medians of a time series of pixels. 
 
