@@ -57,6 +57,8 @@ explorers:
     name: Confidence data explorer
 
 data:
+  - link: https://data.dea.ga.gov.au/?prefix=item_v2/v2.0.1/
+    name: Access the data on AWS
   - link: https://thredds.nci.org.au/thredds/catalog/catalogs/fk4/item_2_0.html
     name: Access the data on NCI
 
