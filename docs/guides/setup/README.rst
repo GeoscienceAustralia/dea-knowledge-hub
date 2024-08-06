@@ -41,7 +41,7 @@ Getting help
 You can ask questions (and view previously asked questions) on the `Open Data Cube Stack Exchange`_ page.
 When asking a question, tag it with ``open-data-cube``.
 
-You can also `join our Slack community`_ for help setting up or using Digital Earth Australia.
+You can also join our `Open Data Cube Discord Chat`_ for help setting up or using Digital Earth Australia.
 
 .. _Open Data Cube Stack Exchange: https://gis.stackexchange.com/questions/tagged/open-data-cube
-.. _join our Slack community: http://slack.opendatacube.org/
+.. _Open Data Cube Discord Chat: https://discord.com/invite/4hhBQVas5U
