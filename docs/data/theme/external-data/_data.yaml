@@ -1,5 +1,5 @@
 title: External data
-description: This external data is provided because it may assist with the analysis of DEA data. These data products are produced by external parties and are not DEA products. DEA provides this data without modifications except where needed to make it compatible with our systems.
+description: DEA data is often combined with data from external sources when performing analysis or validation. These external data products are not produced by DEA, but we support them in various ways. In cases where DEA provides external data, we do so without modifications, except those needed for compatibility with our systems.
 
 cards:
   - name: ABARES CLUM 2020
