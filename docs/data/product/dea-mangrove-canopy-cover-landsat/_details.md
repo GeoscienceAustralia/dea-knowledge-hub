@@ -6,7 +6,7 @@ It is important to understand the canopy density of mangroves in Australia so th
 
 ## What this product offers
 
-This product provides valuable information about the extent and canopy density of mangroves for each year between 1987 and 2021 for the entire Australian coastline.
+This product provides valuable information about the extent and canopy density of mangroves for each year from 1987 for the entire Australian coastline.
 
 The canopy cover classes are:
 * 20-50% (pale green)
