@@ -10,6 +10,7 @@
 
 * Misclassification issue with Sentinel-2 's2cloudless' cloud masking from 2022. See below.
 * Terra-derived DEA Hotspots are unavailable. See below.
+* NCI Explorer may experience instability. See below.
 :::
 
 ## In progress: Shift in origin point of DEA Summary Product Grid
