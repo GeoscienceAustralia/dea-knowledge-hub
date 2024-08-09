@@ -49,7 +49,7 @@ tags:
 
 maps:
   - link: https://maps.dea.ga.gov.au/story/DEAWaterbodies
-    name: See it on a map
+    name: null
 
 explorers: null
 
@@ -61,7 +61,7 @@ data:
 
 code_examples:
   - link: /notebooks/DEA_products/DEA_Waterbodies/
-    name: Code examples
+    name: null
   - link: https://github.com/GeoscienceAustralia/dea-conflux
     name: GitHub repository
 

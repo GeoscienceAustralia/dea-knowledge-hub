@@ -49,11 +49,13 @@ tags:
 
 # Access
 
-maps: null
+maps:
+  - link: https://maps.dea.ga.gov.au/#share=s-kpW2fu5nyh8hnS1M0OPsZ5lHlLi
+    name: null
 
 explorers:
   - link: https://explorer.dea.ga.gov.au/products/ga_ls_tc_pc_cyear_3
-    name: Data explorer
+    name: null
 
 data:
   - link: https://data.dea.ga.gov.au/?prefix=derivative/ga_ls_tc_pc_cyear_3/
@@ -65,7 +67,7 @@ code_examples: null
 
 web_services:
   - link: https://ows.dea.ga.gov.au/
-    name: Web Services
+    name: null
 
 # History
 

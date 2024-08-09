@@ -56,11 +56,11 @@ tags:
 
 maps:
   - link: https://maps.dea.ga.gov.au/story/DEAGeoMAD
-    name: See it on a map
+    name: null
 
 explorers:
   - link: https://explorer.dea.ga.gov.au/products#baseline-satellite-data-group
-    name: Data explorer
+    name: null
 
 data:
   - link: https://data.dea.ga.gov.au/?prefix=derivative
@@ -78,7 +78,7 @@ code_examples:
 
 web_services:
   - link: https://ows.dea.ga.gov.au/
-    name: Web Services
+    name: null
 
 custom: null
 

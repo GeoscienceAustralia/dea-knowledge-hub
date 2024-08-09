@@ -45,11 +45,13 @@ tags:
 
 # Access
 
-maps: null
+maps:
+  - link: https://maps.dea.ga.gov.au/#share=s-r7JEUiLzrVzwZIYcis6hVlMpDdT
+    name: null
 
 explorers:
   - link: https://explorer.dea.ga.gov.au/products/ga_ls_fc_3
-    name: Data explorer
+    name: null
 
 data:
   - link: https://thredds.nci.org.au/thredds/catalog/jw04/ga_ls_fc_3/catalog.html
@@ -63,7 +65,7 @@ code_examples:
 
 web_services:
   - link: https://ows.dea.ga.gov.au
-    name: Web Services
+    name: null
 
 custom: null
 

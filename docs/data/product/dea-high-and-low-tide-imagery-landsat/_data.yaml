@@ -47,7 +47,9 @@ tags:
 
 # Access
 
-maps: null
+maps:
+  - link: https://maps.dea.ga.gov.au/#share=s-7YeWZKqWkF0Ctv5Av8RkHSWeNzQ
+    name: null
 
 explorers:
   - link: https://explorer.dea.ga.gov.au/products/high_tide_comp_20p
@@ -61,7 +63,7 @@ data:
 
 code_examples:
   - link: /notebooks/DEA_products/DEA_High_and_Low_Tide_Imagery/
-    name: Code examples
+    name: null
 
 web_services:
   - link: https://ows.dea.ga.gov.au/

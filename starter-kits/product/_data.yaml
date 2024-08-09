@@ -48,7 +48,7 @@ licence:
 
 # maps:
 #   - link: https://example.com
-#     name: See it on a map
+#     name: null
 
 # explorers:
 #   - link: https://example.com
@@ -62,7 +62,7 @@ licence:
 
 # code_examples:
 #   - link: https://example.com
-#     name: Code examples
+#     name: null
 #   - link: https://example.com
 #     name: Github repository
 

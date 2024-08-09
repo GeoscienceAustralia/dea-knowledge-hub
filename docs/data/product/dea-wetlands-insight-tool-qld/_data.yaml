@@ -46,8 +46,8 @@ tags:
 # Access
 
 maps:
-  - link: https://wetlandinfo.des.qld.gov.au/wetlands/
-    name: See it on a map
+  - link: https://wetlandinfo.des.qld.gov.au/wetlandmaps/
+    name: null
 
 explorers: null
 

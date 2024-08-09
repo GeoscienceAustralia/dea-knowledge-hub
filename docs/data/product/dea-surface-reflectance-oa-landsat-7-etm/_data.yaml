@@ -46,11 +46,13 @@ tags:
 
 # Access
 
-maps: null
+maps:
+  - link: https://maps.dea.ga.gov.au/#share=s-eo2yPzDYVPLTJ1WHbFQM1Vu6M8v
+    name: null
 
 explorers:
   - link: https://explorer.dea.ga.gov.au/products/ga_ls7e_ard_3
-    name: Data explorer
+    name: null
 
 data:
   - link: https://thredds.nci.org.au/thredds/catalog/xu18/catalog.html
@@ -60,7 +62,7 @@ data:
 
 code_examples:
   - link: /notebooks/DEA_products/DEA_Landsat_Surface_Reflectance/
-    name: Code examples
+    name: null
 
 web_services: null
 

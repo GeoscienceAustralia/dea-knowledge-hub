@@ -43,7 +43,7 @@ maps: null
 
 explorers:
   - link: https://explorer.dea.ga.gov.au/products/abares_clum_2020
-    name: Data Explorer
+    name: null
 
 data:
   - link: https://data.dea.ga.gov.au/?prefix=projects/abares_clum_2020/
