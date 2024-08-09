@@ -60,9 +60,9 @@ code_examples: null
 web_services: null
 
 custom:
-  - icon: download
+  - icon: database
     link: https://app-public.specchio.sandbox.dea.ga.gov.au/
-    label: Downloads
+    label: Access
     name: Client installation and user guides
     description: null
     class: null
