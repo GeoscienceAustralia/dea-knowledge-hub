@@ -77,7 +77,7 @@ Use `MyNCI <https://my.nci.org.au/>`_ to view and manage your project membership
    * - fk4_
      - Legacy Geoscience Australia Landsat Derivatives (Collection 2), e.g. NIDEM, ITEM, HLTC
 
-.. _xu18: https://my.nci.org.au/mancini/project/v10     
+.. _v10: https://my.nci.org.au/mancini/project/v10     
 .. _xu18: https://my.nci.org.au/mancini/project/xu18
 .. _ka08: https://my.nci.org.au/mancini/project/ka08
 .. _jw04: https://my.nci.org.au/mancini/project/jw04
