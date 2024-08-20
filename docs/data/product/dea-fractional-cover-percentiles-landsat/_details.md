@@ -17,8 +17,6 @@ This product is designed to make it easier to analyse and interpret fractional c
 
 It includes cloud and shadow buffering with a size of 6 pixels. This buffering is applied to Landsat 5, Landsat 7, Landsat 8, and Landsat 9 data from 2022 onwards.
 
-This product is available in the following form:
-
 % ## Data description
 
 ## Applications
