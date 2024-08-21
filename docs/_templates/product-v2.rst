@@ -43,6 +43,7 @@
 {% set valid_custom = Data.custom | selectattr("icon",  "!=", None) | selectattr("link",  "!=", None) | selectattr("name",  "!=", None) | list %}
 {% set valid_old_versions = Data.old_versions | selectattr("slug",  "!=", None) | selectattr("version",  "!=", None) | selectattr("name",  "!=", None) | list %}
 {% set valid_product_ids = Data.product_ids | select("!=", None) | list %}
+{% set valid_types = [Data.type.product_type, Data.type.spatial_data_type] | select("!=", None) | list %}
 {% set valid_custom_citations = Data.custom_citations | select("!=", None) | list %}
 {% set valid_tags = Data.tags | select("!=", None) | list %}
 
@@ -78,7 +79,7 @@
       {%- if valid_product_ids %}
       :{{ product_ids_label }}: {{ valid_product_ids | join(", ") }}
       {%- endif %}
-      :Type: {{ Data.type.product_type }}, {{ Data.type.spatial_data_type }}
+      :Type: {{ valid_types }}
       {%- if Data.resolution %}
       :Resolution: {{ Data.resolution }}
       {%- endif %}
