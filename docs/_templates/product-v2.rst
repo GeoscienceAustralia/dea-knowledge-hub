@@ -17,13 +17,13 @@
 } %}
 
 {% set data_update_frequency_cadence_terms = {
-   "AS_NEEDED": "As needed (update frequency)",
-   "DAILY": "Daily update frequency",
-   "WEEKLY": "Weekly update frequency",
-   "MONTHLY": "Monthly update frequency",
-   "YEARLY": "Yearly update frequency",
-   "2_YEARS": "Every 2 years (update frequency)",
-   "10_MIN": "Every 10 minutes (update frequency)",
+   "AS_NEEDED": "'As needed'",
+   "DAILY": "Daily",
+   "WEEKLY": "Weekly",
+   "MONTHLY": "Monthly",
+   "YEARLY": "Yearly",
+   "2_YEARS": "'Every 2 years'",
+   "10_MIN": "'Every 10 minutes'",
 } %}
 
 {% set data_update_frequency_activity_terms = {
@@ -83,8 +83,14 @@
       {%- if Data.resolution %}
       :Resolution: {{ Data.resolution }}
       {%- endif %}
-      :Data coverage: {{ Data.data_coverage_period_start }} :raw-html:`&ndash;` {{ Data.data_coverage_period_end }} coverage period
-      :Data updates: | {{ data_update_frequency_cadence_terms.get(Data.data_update_frequency_cadence, Data.data_update_frequency_cadence) }} with {{ data_update_frequency_activity_terms.get(Data.data_update_frequency_activity, Data.data_update_frequency_activity) }}
+      {%- if Data.data_coverage_period_start and Data.data_coverage_period_end %}
+      :Data coverage: {{ Data.data_coverage_period_start }} :raw-html:`&ndash;` {{ Data.data_coverage_period_end }} is the data coverage period
+      {%- elif Data.data_coverage_period_start  %}
+      :Data coverage: {{ Data.data_coverage_period_start }} is the start of the data coverage period
+      {%- elif Data.data_coverage_period_end  %}
+      :Data coverage: {{ Data.data_coverage_period_end }} is the end of the data coverage period
+      {%- endif %}
+      :Data updates: | {{ data_update_frequency_cadence_terms.get(Data.data_update_frequency_cadence, Data.data_update_frequency_cadence) }} update frequency; {{ data_update_frequency_activity_terms.get(Data.data_update_frequency_activity, Data.data_update_frequency_activity) }}
                      {{ "| See `currency and last updated date <currency_report_>`_" if Data.is_currency_reported }}
 
       .. _currency_report: https://mgmt.sandbox.dea.ga.gov.au/public-dashboards/d22241dbfca54b1fa9f73938ef26e645?orgId=1
