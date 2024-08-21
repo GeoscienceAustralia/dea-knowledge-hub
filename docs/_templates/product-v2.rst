@@ -72,7 +72,7 @@
       :Full name: {{ Data.full_technical_name }}
       {%- endif %}
       {%- if is_latest_version and valid_old_versions | length > 0 %}
-      :Product version: {{ Data.product_version }} (See `version history <./?tab=history>`_)
+      :Product version: `{{ Data.product_version }} <./?tab=history>`_
       {%- elif is_latest_version %}
       :Product version: {{ Data.product_version }}
       {%- else %}
