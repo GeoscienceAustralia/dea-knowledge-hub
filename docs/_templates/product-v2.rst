@@ -16,7 +16,7 @@
    "web_service": "Get via web service",
 } %}
 
-{% set data_published_frequency_terms = {
+{% set data_update_frequency_cadence_terms = {
    "AS_NEEDED": "As needed",
    "DAILY": "Daily",
    "WEEKLY": "Weekly",
@@ -26,7 +26,7 @@
    "10_MIN": "Every 10 minutes",
 } %}
 
-{% set data_published_activity_terms = {
+{% set data_update_frequency_activity_terms = {
    "ONGOING": "Ongoing data updates",
    "NO_UPDATES": "No further data updates",
    "DEVELOPMENT": "Awaiting product version release",
@@ -91,9 +91,9 @@
       :Data coverage period: Until {{ Data.data_coverage_period_end }}
       {%- endif %}
       {% if Data.data_update_frequency_activity == "NO_UPDATES" %}
-      :Data update frequency: {{ data_published_activity_terms.NO_UPDATES }} (previously '{{ data_published_frequency_terms.get(Data.data_update_frequency_cadence, Data.data_update_frequency_cadence) }}')
+      :Data update frequency: {{ data_update_frequency_activity_terms.NO_UPDATES }} (previously '{{ data_update_frequency_cadence_terms.get(Data.data_update_frequency_cadence, Data.data_update_frequency_cadence) }}')
       {%- else %}
-      :Data update frequency: {{ data_published_frequency_terms.get(Data.data_update_frequency_cadence, Data.data_update_frequency_cadence) }}, {{ data_published_activity_terms.get(Data.data_update_frequency_activity, Data.data_update_frequency_activity) }}{{ ", See `publishing dates <https://mgmt.sandbox.dea.ga.gov.au/public-dashboards/d22241dbfca54b1fa9f73938ef26e645?orgId=1>`_" if Data.is_currency_reported }}
+      :Data update frequency: {{ data_update_frequency_cadence_terms.get(Data.data_update_frequency_cadence, Data.data_update_frequency_cadence) }}, {{ data_update_frequency_activity_terms.get(Data.data_update_frequency_activity, Data.data_update_frequency_activity) }}{{ ", See `publishing dates <https://mgmt.sandbox.dea.ga.gov.au/public-dashboards/d22241dbfca54b1fa9f73938ef26e645?orgId=1>`_" if Data.is_currency_reported }}
       {%- endif %}
 
    .. container::
@@ -241,7 +241,7 @@
             - `{{ Data.licence.name }} <{{ Data.licence.link }}>`_
           {%- endif %}
           {%- endif %}
-          {% if Data.spatial_data_type != "Vector" and Data.data_update_frequency_cadence != data_published_frequency_terms.AS_NEEDED and Data.data_update_frequency_activity == data_published_activity_terms.ONGOING %}
+          {% if Data.spatial_data_type != "Vector" and Data.data_update_frequency_cadence != data_update_frequency_cadence_terms.AS_NEEDED and Data.data_update_frequency_activity == data_update_frequency_activity_terms.ONGOING %}
           * - **Currency**
             - This product may be included in the `DEA Published Product Currency Report <https://mgmt.sandbox.dea.ga.gov.au/public-dashboards/d22241dbfca54b1fa9f73938ef26e645?orgId=1>`_ (if applicable).
           {%- endif %}
