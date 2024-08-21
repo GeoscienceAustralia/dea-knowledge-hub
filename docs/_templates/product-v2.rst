@@ -85,7 +85,7 @@
       {%- endif %}
       :Data coverage: {{ Data.data_coverage_period_start }} :raw-html:`&ndash;` {{ Data.data_coverage_period_end }} coverage period
       :Data updates: | {{ data_update_frequency_cadence_terms.get(Data.data_update_frequency_cadence, Data.data_update_frequency_cadence) }} with {{ data_update_frequency_activity_terms.get(Data.data_update_frequency_activity, Data.data_update_frequency_activity) }}
-                     | See `currency and last updated date <currency_report_>`_.
+                     {{ "| See `currency and last updated date <currency_report_>`_" if Data.is_currency_reported }}
 
       .. _currency_report: https://mgmt.sandbox.dea.ga.gov.au/public-dashboards/d22241dbfca54b1fa9f73938ef26e645?orgId=1
 
