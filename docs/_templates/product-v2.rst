@@ -413,6 +413,8 @@
 
        {% if valid_old_versions | length > 0 %}
 
+       View previous releases of this data product.
+
        .. list-table::
 
           * - {{ Data.product_version }}: Current version
