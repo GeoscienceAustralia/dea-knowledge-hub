@@ -11,7 +11,7 @@ is_latest_version: true
 latest_version_link: null
 is_provisional: false
 type:
-  product_type: Derivative
+  lineage_type: Derivative
   spatial_data_type: Raster
 time_span:
   start: 1988

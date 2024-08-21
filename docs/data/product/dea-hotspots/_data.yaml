@@ -11,7 +11,7 @@ is_latest_version: true
 latest_version_link: null
 is_provisional: false
 type:
-  product_type: Data service
+  lineage_type: Data service
   spatial_data_type: Vector
 time_span:
   start: 27/08/2002

@@ -43,7 +43,7 @@
 {% set valid_custom = Data.custom | selectattr("icon",  "!=", None) | selectattr("link",  "!=", None) | selectattr("name",  "!=", None) | list %}
 {% set valid_old_versions = Data.old_versions | selectattr("slug",  "!=", None) | selectattr("version",  "!=", None) | selectattr("name",  "!=", None) | list %}
 {% set valid_product_ids = Data.product_ids | select("!=", None) | list %}
-{% set valid_product_types = [Data.type.product_type, Data.type.spatial_data_type] | select("!=", None) | list %}
+{% set valid_product_types = [Data.type.lineage_type, Data.type.spatial_data_type] | select("!=", None) | list %}
 {% set valid_custom_citations = Data.custom_citations | select("!=", None) | list %}
 {% set valid_tags = Data.tags | select("!=", None) | list %}
 
