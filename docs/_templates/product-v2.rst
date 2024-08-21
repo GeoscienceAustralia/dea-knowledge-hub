@@ -86,9 +86,9 @@
       {%- if Data.data_coverage_period_start and Data.data_coverage_period_end %}
       :Data coverage period: {{ Data.data_coverage_period_start }} :raw-html:`&ndash;` {{ Data.data_coverage_period_end }}
       {%- elif Data.data_coverage_period_start  %}
-      :Data coverage period: Starts at {{ Data.data_coverage_period_start }}
+      :Data coverage period: From {{ Data.data_coverage_period_start }}
       {%- elif Data.data_coverage_period_end  %}
-      :Data coverage period: Ends at {{ Data.data_coverage_period_end }}
+      :Data coverage period: Until {{ Data.data_coverage_period_end }}
       {%- endif %}
       {% if Data.data_published.frequency == "NO_UPDATES" %}
       :Data update frequency: {{ data_published_activity_terms.NO_UPDATES }} (previously '{{ data_published_frequency_terms.get(Data.data_published.frequency, Data.data_published.frequency) }}'){{ ", See `publishing dates <https://mgmt.sandbox.dea.ga.gov.au/public-dashboards/d22241dbfca54b1fa9f73938ef26e645?orgId=1>`_" if Data.is_currency_reported }}
