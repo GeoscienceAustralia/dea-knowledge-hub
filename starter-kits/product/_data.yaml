@@ -3,25 +3,28 @@
 
 # Overview
 
-short_name: Example product
-version: 1.0.0
+official_name: Example product
 # full_technical_name: Long example product title
-# product_ids:
-#   - example_1
-product_type: Derivative
-spatial_data_type: Vector
-# resolution: 30 m
-time_span:
-  start: 1 Jan 2020
-  end: Present
-data_updates:
-  frequency: DAILY
-  activity: ONGOING
 # header_image: /_files/example/image.png
 
+product_version: 1.0.0
 is_latest_version: true
 # latest_version_link: /data/product/example-product/
 is_provisional: false
+
+lineage_type: Derivative
+spatial_data_type: Vector
+
+data_coverage_period_start: 1 Jan 2020
+data_coverage_period_end: Present
+
+data_update_frequency_cadence: DAILY
+data_update_frequency_activity: ONGOING
+is_currency_reported: false
+
+# resolution: 30 m
+# product_ids:
+#   - example_1
 
 # parent_products:
 #   name: Example parent product
