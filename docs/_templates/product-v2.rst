@@ -95,7 +95,11 @@
                      {%- else %}
                      | {{ data_update_frequency_activity_terms.get(Data.data_update_frequency_activity, Data.data_update_frequency_activity) }}. (Update frequency was {{ data_update_frequency_cadence_terms.get(Data.data_update_frequency_cadence, Data.data_update_frequency_cadence) }}.)
                      {%- endif %}
+                     {%- if Data.is_currency_reported and Data.data_update_frequency_cadence == "YEARLY" %}
+                     {{ "| See `currency, latest update date, and next update due date <currency_report_>`_" }}.
+                     {%- elif Data.is_currency_reported %}
                      {{ "| See `currency and last updated date <currency_report_>`_" if Data.is_currency_reported }}.
+                     {%- endif %}
 
       .. _currency_report: https://mgmt.sandbox.dea.ga.gov.au/public-dashboards/d22241dbfca54b1fa9f73938ef26e645?orgId=1
 
