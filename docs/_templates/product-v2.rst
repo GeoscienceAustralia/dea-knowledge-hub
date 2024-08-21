@@ -30,7 +30,7 @@
    "ONGOING": "Ongoing data publishing",
    "NO_UPDATES": "No further data publishing",
    "DEVELOPMENT": "Awaiting development release",
-   "PAUSED": "Data publishing is currently paused",
+   "PAUSED": "Data update frequency is currently paused",
 } %}
 
 {% set is_latest_version = Data.is_latest_version %}
@@ -43,7 +43,7 @@
 {% set valid_custom = Data.custom | selectattr("icon",  "!=", None) | selectattr("link",  "!=", None) | selectattr("name",  "!=", None) | list %}
 {% set valid_old_versions = Data.old_versions | selectattr("slug",  "!=", None) | selectattr("version",  "!=", None) | selectattr("name",  "!=", None) | list %}
 {% set valid_product_ids = Data.product_ids | select("!=", None) | list %}
-{% set valid_types = [Data.type.product_type, Data.type.spatial_data_type] | select("!=", None) | list %}
+{% set valid_product_types = [Data.type.product_type, Data.type.spatial_data_type] | select("!=", None) | list %}
 {% set valid_custom_citations = Data.custom_citations | select("!=", None) | list %}
 {% set valid_tags = Data.tags | select("!=", None) | list %}
 
@@ -79,23 +79,23 @@
       {%- if valid_product_ids %}
       :{{ product_ids_label }}: {{ valid_product_ids | join(", ") }}
       {%- endif %}
-      :Type: {{ valid_types | join(", ") }}
+      :Product type: {{ valid_product_types | join(", ") }}
       {%- if Data.resolution %}
       :Resolution: {{ Data.resolution }}
       {%- endif %}
       {%- if Data.time_span %}
       {%- if Data.time_span.start and Data.time_span.end %}
-      :Data time span: {{ Data.time_span.start }} :raw-html:`&ndash;` {{ Data.time_span.end }}
+      :Data coverage period: {{ Data.time_span.start }} :raw-html:`&ndash;` {{ Data.time_span.end }}
       {%- elif Data.time_span.start  %}
-      :Data time span: Starts at {{ Data.time_span.start }}
+      :Data coverage period: Starts at {{ Data.time_span.start }}
       {%- elif Data.time_span.end  %}
-      :Data time span: Ends at {{ Data.time_span.end }}
+      :Data coverage period: Ends at {{ Data.time_span.end }}
       {%- endif %}
       {%- endif %}
       {% if Data.data_published.frequency == "NO_UPDATES" %}
-      :Data publishing: {{ data_published_activity_terms.NO_UPDATES }} (previously '{{ data_published_frequency_terms.get(Data.data_published.frequency, Data.data_published.frequency) }}'){{ ", See `publishing dates <https://mgmt.sandbox.dea.ga.gov.au/public-dashboards/d22241dbfca54b1fa9f73938ef26e645?orgId=1>`_" if Data.is_currency_reported }}
+      :Data update frequency: {{ data_published_activity_terms.NO_UPDATES }} (previously '{{ data_published_frequency_terms.get(Data.data_published.frequency, Data.data_published.frequency) }}'){{ ", See `publishing dates <https://mgmt.sandbox.dea.ga.gov.au/public-dashboards/d22241dbfca54b1fa9f73938ef26e645?orgId=1>`_" if Data.is_currency_reported }}
       {%- else %}
-      :Data publishing: {{ data_published_frequency_terms.get(Data.data_published.frequency, Data.data_published.frequency) }}, {{ data_published_activity_terms.get(Data.data_published.activity, Data.data_published.activity) }}{{ ", See `publishing dates <https://mgmt.sandbox.dea.ga.gov.au/public-dashboards/d22241dbfca54b1fa9f73938ef26e645?orgId=1>`_" if Data.is_currency_reported }}
+      :Data update frequency: {{ data_published_frequency_terms.get(Data.data_published.frequency, Data.data_published.frequency) }}, {{ data_published_activity_terms.get(Data.data_published.activity, Data.data_published.activity) }}{{ ", See `publishing dates <https://mgmt.sandbox.dea.ga.gov.au/public-dashboards/d22241dbfca54b1fa9f73938ef26e645?orgId=1>`_" if Data.is_currency_reported }}
       {%- endif %}
 
    .. container::
