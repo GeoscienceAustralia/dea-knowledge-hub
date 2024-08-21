@@ -90,8 +90,8 @@
       {%- elif Data.data_coverage_period_end  %}
       :Data coverage period: Until {{ Data.data_coverage_period_end }}
       {%- endif %}
-      {% if Data.data_update_frequency_cadence == "NO_UPDATES" %}
-      :Data update frequency: {{ data_published_activity_terms.NO_UPDATES }} (previously '{{ data_published_frequency_terms.get(Data.data_update_frequency_cadence, Data.data_update_frequency_cadence) }}'){{ ", See `publishing dates <https://mgmt.sandbox.dea.ga.gov.au/public-dashboards/d22241dbfca54b1fa9f73938ef26e645?orgId=1>`_" if Data.is_currency_reported }}
+      {% if Data.data_update_frequency_activity == "NO_UPDATES" %}
+      :Data update frequency: {{ data_published_activity_terms.NO_UPDATES }} (previously '{{ data_published_frequency_terms.get(Data.data_update_frequency_cadence, Data.data_update_frequency_cadence) }}')
       {%- else %}
       :Data update frequency: {{ data_published_frequency_terms.get(Data.data_update_frequency_cadence, Data.data_update_frequency_cadence) }}, {{ data_published_activity_terms.get(Data.data_update_frequency_activity, Data.data_update_frequency_activity) }}{{ ", See `publishing dates <https://mgmt.sandbox.dea.ga.gov.au/public-dashboards/d22241dbfca54b1fa9f73938ef26e645?orgId=1>`_" if Data.is_currency_reported }}
       {%- endif %}

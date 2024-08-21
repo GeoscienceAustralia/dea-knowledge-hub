@@ -20,6 +20,7 @@ data_coverage_period_end: 2022
 
 data_update_frequency_cadence: YEARLY
 data_update_frequency_activity: ONGOING
+is_currency_reported: false
 
 resolution: 10 m
 product_ids:

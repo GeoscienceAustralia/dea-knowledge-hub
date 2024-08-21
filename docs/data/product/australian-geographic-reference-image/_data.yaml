@@ -20,6 +20,7 @@ data_coverage_period_end: null
 
 data_update_frequency_cadence: AS_NEEDED
 data_update_frequency_activity: NO_UPDATES
+is_currency_reported: false
 
 resolution: 2.5-10 m
 product_ids: null

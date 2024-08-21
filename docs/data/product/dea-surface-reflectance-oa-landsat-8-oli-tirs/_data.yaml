@@ -20,6 +20,7 @@ data_coverage_period_end: Present
 
 data_update_frequency_cadence: DAILY
 data_update_frequency_activity: ONGOING
+is_currency_reported: false
 
 resolution: 15-30 m
 product_ids:

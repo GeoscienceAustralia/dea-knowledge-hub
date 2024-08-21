@@ -20,6 +20,7 @@ data_coverage_period_end: 2017
 
 data_update_frequency_cadence: AS_NEEDED
 data_update_frequency_activity: NO_UPDATES
+is_currency_reported: false
 
 resolution: 25 m
 product_ids:

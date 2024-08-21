@@ -20,6 +20,7 @@ data_coverage_period_end: 2015
 
 data_update_frequency_cadence: 2_YEARS
 data_update_frequency_activity: NO_UPDATES
+is_currency_reported: false
 
 resolution: 250 m
 product_ids:
