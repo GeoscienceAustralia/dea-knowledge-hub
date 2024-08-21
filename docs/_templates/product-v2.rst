@@ -93,7 +93,7 @@
       {% if Data.data_update_frequency_activity == "NO_UPDATES" %}
       :Data update frequency: {{ data_update_frequency_activity_terms.NO_UPDATES }} (previously '{{ data_update_frequency_cadence_terms.get(Data.data_update_frequency_cadence, Data.data_update_frequency_cadence) }}')
       {%- else %}
-      :Data update frequency: {{ data_update_frequency_cadence_terms.get(Data.data_update_frequency_cadence, Data.data_update_frequency_cadence) }}, {{ data_update_frequency_activity_terms.get(Data.data_update_frequency_activity, Data.data_update_frequency_activity) }}{{ ", See `dates and currency <currency_report>`_" if Data.is_currency_reported }}
+      :Data update frequency: {{ data_update_frequency_cadence_terms.get(Data.data_update_frequency_cadence, Data.data_update_frequency_cadence) }}, {{ data_update_frequency_activity_terms.get(Data.data_update_frequency_activity, Data.data_update_frequency_activity) }}{{ ", See `dates and currency <currency_report_>`_" if Data.is_currency_reported }}
       {%- endif %}
 
       .. _currency_report: https://mgmt.sandbox.dea.ga.gov.au/public-dashboards/d22241dbfca54b1fa9f73938ef26e645?orgId=1
