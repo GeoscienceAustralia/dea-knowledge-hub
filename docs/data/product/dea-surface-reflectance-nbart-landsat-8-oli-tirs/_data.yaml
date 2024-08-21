@@ -6,17 +6,21 @@
 official_name: DEA Surface Reflectance NBART (Landsat 8 OLI-TIRS)
 full_technical_name: Geoscience Australia Landsat 8 OLI-TIRS NBART Collection 3
 header_image: null
+
 product_version: 3.0.0
 is_latest_version: true
 latest_version_link: null
 is_provisional: false
+
 lineage_type: Baseline
 spatial_data_type: Raster
+
 data_coverage_period_start: 19/03/2013
 data_coverage_period_end: Present
 
 data_update_frequency_cadence: DAILY
 data_update_frequency_activity: ONGOING
+
 resolution: 15-30 m
 product_ids:
   - ga_ls8c_ard_3

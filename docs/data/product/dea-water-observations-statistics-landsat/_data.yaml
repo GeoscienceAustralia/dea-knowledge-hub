@@ -6,17 +6,21 @@
 official_name: DEA Water Observations Statistics (Landsat)
 full_technical_name: Geoscience Australia Landsat Water Observation Statistics Collection 3
 header_image: /_files/cmi/WOfS-Burketown-Normanton-QLD.png
+
 product_version: 3.1.6
 is_latest_version: true
 latest_version_link: null
 is_provisional: false
+
 lineage_type: Derivative
 spatial_data_type: Raster
+
 data_coverage_period_start: 1986
 data_coverage_period_end: Present
 
 data_update_frequency_cadence: YEARLY
 data_update_frequency_activity: ONGOING
+
 resolution: 30 m
 product_ids:
   - ga_ls_wo_fq_apr_oct_3

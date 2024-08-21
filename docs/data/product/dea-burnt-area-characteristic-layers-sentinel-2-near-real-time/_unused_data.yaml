@@ -31,6 +31,7 @@ doi_url: https://dx.doi.org/10.26186/146449
 open_data_cube_configuration: null
 security_classification: Unclassified
 time_span_full:
+
 data_coverage_period_start: null
 data_coverage_period_end: null
 

@@ -6,17 +6,21 @@
 official_name: DEA Hotspots
 full_technical_name: Digital Earth Australia Hotspots
 header_image: /_files/cmi/hotspots.jpg
+
 product_version: 1.0.0
 is_latest_version: true
 latest_version_link: null
 is_provisional: false
+
 lineage_type: Data service
 spatial_data_type: Vector
+
 data_coverage_period_start: 27/08/2002
 data_coverage_period_end: Present
 
 data_update_frequency_cadence: 10_MIN
 data_update_frequency_activity: ONGOING
+
 resolution: null
 product_ids: null
 

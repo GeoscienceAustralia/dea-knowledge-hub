@@ -6,18 +6,22 @@
 official_name: DEA Coastlines
 full_technical_name: Geoscience Australia Landsat Coastlines Collection 3
 header_image: /_files/cmi/thumbnail_vertical.png
+
 product_version: 2.1.0
 is_latest_version: true
 latest_version_link: null
 is_provisional: false
+
 lineage_type: Derivative
 spatial_data_type: Vector
+
 data_coverage_period_start: 1988
 data_coverage_period_end: 2022
 
 data_update_frequency_cadence: YEARLY
 data_update_frequency_activity: ONGOING
 is_currency_reported: true
+
 resolution: null
 product_ids: null
 

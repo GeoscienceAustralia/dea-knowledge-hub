@@ -6,17 +6,21 @@
 official_name: " DEA Wetlands Insight Tool (Ramsar Wetlands)"
 full_technical_name: Wetlands Insight Tool Ramsar Wetlands Polygons
 header_image: /_files/cmi/WITthumb.png
+
 product_version: 4.0.0
 is_latest_version: true
 latest_version_link: null
 is_provisional: false
+
 lineage_type: Derivative
 spatial_data_type: Vector
+
 data_coverage_period_start: 1987
 data_coverage_period_end: 2021
 
 data_update_frequency_cadence: AS_NEEDED
 data_update_frequency_activity: ONGOING
+
 resolution: null
 product_ids: null
 

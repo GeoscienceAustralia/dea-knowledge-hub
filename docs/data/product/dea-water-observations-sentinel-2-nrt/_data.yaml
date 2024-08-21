@@ -6,17 +6,21 @@
 official_name: DEA Water Observations (Sentinel-2 NRT)
 full_technical_name: Geoscience Australia Sentinel-2 Near Real Time Water Observations Collection 3
 header_image: /_files/cmi/S2_WO_Provisional_Gulf_20230320_0.png
+
 product_version: 1.1.6
 is_latest_version: true
 latest_version_link: null
 is_provisional: true
+
 lineage_type: Derivative
 spatial_data_type: Raster
+
 data_coverage_period_start: 14/03/2023
 data_coverage_period_end: Present
 
 data_update_frequency_cadence: DAILY
 data_update_frequency_activity: ONGOING
+
 resolution: 10 m
 product_ids:
   - ga_s2_wo_provisional_3

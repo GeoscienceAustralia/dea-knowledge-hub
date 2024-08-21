@@ -33,6 +33,7 @@ doi_url: null
 open_data_cube_configuration: null
 security_classification: Unclassified
 time_span_full:
+
 data_coverage_period_start: null
 data_coverage_period_end: null
 

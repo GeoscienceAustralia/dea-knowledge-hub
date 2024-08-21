@@ -32,6 +32,7 @@ doi_url: null
 open_data_cube_configuration: null
 security_classification: Unclassified
 time_span_full:
+
 data_coverage_period_start: 2020-12-04T04:42:15+1100
 data_coverage_period_end: 2022-12-31T04:42:39+1100
 

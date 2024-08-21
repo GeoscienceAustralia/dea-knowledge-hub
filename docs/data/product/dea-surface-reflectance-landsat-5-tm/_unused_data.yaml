@@ -33,6 +33,7 @@ open_data_cube_configuration:
   - https://github.com/GeoscienceAustralia/digitalearthau/tree/develop/digitalearthau/config/eo3
 security_classification: Unclassified
 time_span_full:
+
 data_coverage_period_start: null
 data_coverage_period_end: null
 
