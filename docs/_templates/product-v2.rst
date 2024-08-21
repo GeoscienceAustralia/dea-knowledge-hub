@@ -17,13 +17,13 @@
 } %}
 
 {% set data_update_frequency_cadence_terms = {
-   "AS_NEEDED": "As needed",
-   "DAILY": "Daily",
-   "WEEKLY": "Weekly",
-   "MONTHLY": "Monthly",
-   "YEARLY": "Yearly",
-   "2_YEARS": "Every 2 years",
-   "10_MIN": "Every 10 minutes",
+   "AS_NEEDED": "As needed (update frequency)",
+   "DAILY": "Daily update frequency",
+   "WEEKLY": "Weekly update frequency",
+   "MONTHLY": "Monthly update frequency",
+   "YEARLY": "Yearly update frequency",
+   "2_YEARS": "Every 2 years (update frequency)",
+   "10_MIN": "Every 10 minutes (update frequency)",
 } %}
 
 {% set data_update_frequency_activity_terms = {
@@ -83,9 +83,9 @@
       {%- if Data.resolution %}
       :Resolution: {{ Data.resolution }}
       {%- endif %}
-      :Data: | Data coverage period is {{ Data.data_coverage_period_start }} :raw-html:`&ndash;` {{ Data.data_coverage_period_end }}.
-             | Data update frequency is {{ data_update_frequency_cadence_terms.get(Data.data_update_frequency_cadence, Data.data_update_frequency_cadence) }} with {{ data_update_frequency_activity_terms.get(Data.data_update_frequency_activity, Data.data_update_frequency_activity) }}.
-             | See `currency and last updated date <currency_report_>`_.
+      :Data coverage: {{ Data.data_coverage_period_start }} :raw-html:`&ndash;` {{ Data.data_coverage_period_end }} coverage period
+      :Data updates: | {{ data_update_frequency_cadence_terms.get(Data.data_update_frequency_cadence, Data.data_update_frequency_cadence) }} with {{ data_update_frequency_activity_terms.get(Data.data_update_frequency_activity, Data.data_update_frequency_activity) }}
+                     | See `currency and last updated date <currency_report_>`_.
 
       .. _currency_report: https://mgmt.sandbox.dea.ga.gov.au/public-dashboards/d22241dbfca54b1fa9f73938ef26e645?orgId=1
 
