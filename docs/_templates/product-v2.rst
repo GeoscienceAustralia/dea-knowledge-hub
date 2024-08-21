@@ -71,7 +71,9 @@
       {% if Data.full_technical_name %}
       :Full name: {{ Data.full_technical_name }}
       {%- endif %}
-      {%- if is_latest_version %}
+      {%- if is_latest_version and valid_old_versions | length > 0 %}
+      :Product version: {{ Data.product_version }} (See `version history <./?tab=history>`_)
+      {%- elif is_latest_version %}
       :Product version: {{ Data.product_version }}
       {%- else %}
       :Product version: {{ Data.product_version }} (`See latest product version <{{ Data.latest_version_link }}>`_)
@@ -98,9 +100,9 @@
                      | {{ data_update_frequency_activity_terms.get(Data.data_update_frequency_activity, Data.data_update_frequency_activity) }}, (Update frequency was {{ data_update_frequency_cadence_terms.get(Data.data_update_frequency_cadence, Data.data_update_frequency_cadence) }})
                      {%- endif %}
                      {%- if Data.is_currency_reported and Data.data_update_frequency_cadence == "YEARLY" %}
-                     {{ "| See `currency and date of latest, next updates <currency_report_>`_" }}
+                     {{ "| See `currency, latest update date, and next update date <currency_report_>`_" }}
                      {%- elif Data.is_currency_reported %}
-                     {{ "| See `currency and date of latest update <currency_report_>`_" }}
+                     {{ "| See `currency and latest update date <currency_report_>`_" }}
                      {%- endif %}
 
       .. _currency_report: https://mgmt.sandbox.dea.ga.gov.au/public-dashboards/d22241dbfca54b1fa9f73938ef26e645?orgId=1
@@ -399,27 +401,26 @@
           <div class="product-tab-table-of-contents"></div>
 
        {% if not is_latest_version %}
-       .. rubric:: Other versions
-          :name: other-versions
+       .. rubric:: Version history
+          :name: version-history
           :class: h2
 
-       You can find the history in the `latest version of the product <{{ Data.latest_version_link }}?tab=history>`_.
+       You can find the version history in the `latest version of the product <{{ Data.latest_version_link }}?tab=history>`_.
        {% else %}
-       .. rubric:: Old versions
-          :name: old-versions
+       .. rubric:: Version history
+          :name: version-history
           :class: h2
 
-       {% if valid_old_versions %}
-
-       View previous versions of this data product.
+       {% if valid_old_versions | length > 0 %}
 
        .. list-table::
 
+          * - {{ Data.product_version }}: Current version
           {% for item in valid_old_versions %}
           * - `{{ item.version }}: {{ item.title }} </data/old-version/{{ item.slug }}/>`_
           {% endfor %}
        {% else %}
-       No old versions available.
+       No previous versions are available.
        {% endif %}
 
        .. include:: _history.md

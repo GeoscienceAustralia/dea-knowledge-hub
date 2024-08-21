@@ -17,7 +17,7 @@ spatial_data_type: Vector
 
 data_coverage_period_start: 1988
 data_coverage_period_end: 2022
-data_coverage_period_custom: null
+data_coverage_period_custom: This is a test.
 
 data_update_frequency_cadence: YEARLY
 data_update_frequency_activity: ONGOING
