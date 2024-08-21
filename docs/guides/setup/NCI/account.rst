@@ -51,7 +51,7 @@ commercial entities contact the  `DEA Helpdesk`_ to help determine requirements.
 Data Access
 ===========
 
-DEA Data is stored on several "GData filesystems" on the NCI. To access the data you 
+DEA Data is stored on several "g/data" filesystems on the NCI. To access the data you 
 need to request access to one or more of the **Projects** listed below.
 
 Use `MyNCI <https://my.nci.org.au/>`_ to view and manage your project memberships.
@@ -61,9 +61,6 @@ Use `MyNCI <https://my.nci.org.au/>`_ to view and manage your project membership
 
    * - Project
      - Contents
-
-   * - v10_
-     - Provides access to DEA NCI module and ancillary data
 
    * - xu18_
      - Geoscience Australia Landsat Analysis Ready Data (Collection 3)
@@ -77,7 +74,6 @@ Use `MyNCI <https://my.nci.org.au/>`_ to view and manage your project membership
    * - fk4_
      - Legacy Geoscience Australia Landsat Derivatives (Collection 2), e.g. NIDEM, ITEM, HLTC
 
-.. _v10: https://my.nci.org.au/mancini/project/v10     
 .. _xu18: https://my.nci.org.au/mancini/project/xu18
 .. _ka08: https://my.nci.org.au/mancini/project/ka08
 .. _jw04: https://my.nci.org.au/mancini/project/jw04
