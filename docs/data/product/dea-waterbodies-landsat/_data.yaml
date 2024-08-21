@@ -20,7 +20,7 @@ data_coverage_period_end: Present
 
 data_update_frequency_cadence: DAILY
 data_update_frequency_activity: ONGOING
-is_currency_reported: false
+is_currency_reported: true
 
 resolution: null
 product_ids: null
