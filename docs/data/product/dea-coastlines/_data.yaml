@@ -19,6 +19,7 @@ time_span:
 data_published:
   frequency: YEARLY
   activity: ONGOING
+is_currency_reported: true
 resolution: null
 product_ids: null
 

@@ -79,7 +79,7 @@
       {%- if valid_product_ids %}
       :{{ product_ids_label }}: {{ valid_product_ids | join(", ") }}
       {%- endif %}
-      :Type: {{ valid_types }}
+      :Type: {{ valid_types | join(", ") }}
       {%- if Data.resolution %}
       :Resolution: {{ Data.resolution }}
       {%- endif %}
@@ -93,9 +93,9 @@
       {%- endif %}
       {%- endif %}
       {% if Data.data_published.frequency == "NO_UPDATES" %}
-      :Data publishing: {{ data_published_activity_terms.NO_UPDATES }} (previously '{{ data_published_frequency_terms.get(Data.data_published.frequency, Data.data_published.frequency) }}')
+      :Data publishing: {{ data_published_activity_terms.NO_UPDATES }} (previously '{{ data_published_frequency_terms.get(Data.data_published.frequency, Data.data_published.frequency) }}'){{ ", See `publishing dates <https://mgmt.sandbox.dea.ga.gov.au/public-dashboards/d22241dbfca54b1fa9f73938ef26e645?orgId=1>`_" if Data.is_currency_reported }}
       {%- else %}
-      :Data publishing: {{ data_published_frequency_terms.get(Data.data_published.frequency, Data.data_published.frequency) }}, {{ data_published_activity_terms.get(Data.data_published.activity, Data.data_published.activity) }}
+      :Data publishing: {{ data_published_frequency_terms.get(Data.data_published.frequency, Data.data_published.frequency) }}, {{ data_published_activity_terms.get(Data.data_published.activity, Data.data_published.activity) }}{{ ", See `publishing dates <https://mgmt.sandbox.dea.ga.gov.au/public-dashboards/d22241dbfca54b1fa9f73938ef26e645?orgId=1>`_" if Data.is_currency_reported }}
       {%- endif %}
 
    .. container::
