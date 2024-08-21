@@ -90,12 +90,12 @@
       {%- elif Data.data_coverage_period_end  %}
       :Data coverage: {{ Data.data_coverage_period_end }} is the end of the data coverage period
       {%- endif %}
-      :Data updates: {%- if data_update_frequency_activity_terms == "ONGOING" %}
-                     | {{ data_update_frequency_cadence_terms.get(Data.data_update_frequency_cadence, Data.data_update_frequency_cadence) }} update frequency, {{ data_update_frequency_activity_terms.ONGOING }}
+      :Data updates: {%- if Data.data_update_frequency_activity == "ONGOING" %}
+                     | {{ data_update_frequency_cadence_terms.get(Data.data_update_frequency_cadence, Data.data_update_frequency_cadence) }} update frequency, {{ data_update_frequency_activity_terms.ONGOING }}.
                      {%- else %}
-                     | {{ data_update_frequency_activity_terms.get(Data.data_update_frequency_activity, Data.data_update_frequency_activity) }}. (Data update frequency was {{ data_update_frequency_cadence_terms.get(Data.data_update_frequency_cadence, Data.data_update_frequency_cadence) }})
+                     | {{ data_update_frequency_activity_terms.get(Data.data_update_frequency_activity, Data.data_update_frequency_activity) }}. (Update frequency was {{ data_update_frequency_cadence_terms.get(Data.data_update_frequency_cadence, Data.data_update_frequency_cadence) }}.)
                      {%- endif %}
-                     {{ "| See `currency and last updated date <currency_report_>`_" if Data.is_currency_reported }}
+                     {{ "| See `currency and last updated date <currency_report_>`_" if Data.is_currency_reported }}.
 
       .. _currency_report: https://mgmt.sandbox.dea.ga.gov.au/public-dashboards/d22241dbfca54b1fa9f73938ef26e645?orgId=1
 
