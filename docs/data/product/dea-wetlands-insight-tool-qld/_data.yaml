@@ -6,7 +6,7 @@
 short_name: DEA Wetlands Insight Tool (QLD)
 full_technical_name: Wetlands Insight Tool Queensland Wetlands Polygons
 header_image: /_files/cmi/WITthumb.png
-version: 1.0.0
+product_version: 1.0.0
 is_latest_version: true
 latest_version_link: null
 is_provisional: false

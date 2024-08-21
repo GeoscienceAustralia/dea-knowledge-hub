@@ -50,7 +50,7 @@
 {% set has_access_data = valid_maps or valid_data or valid_explorers or valid_web_services or valid_code_samples or valid_custom %}
 {% set has_key_details = (Data.parent_products.name and Data.parent_products.link) or (Data.collection.name and Data.collection.link) or Data.collection.name or Data.doi or Data.ecat or Data.published %}
 
-{% set page_title = Data.short_name if is_latest_version else Data.version + ": " + Data.short_name %}
+{% set page_title = Data.short_name if is_latest_version else Data.product_version + ": " + Data.short_name %}
 {% set product_ids_label = "Product IDs" if valid_product_ids | length > 1 else "Product ID" %}
 
 .. role:: raw-html(raw)
@@ -72,9 +72,9 @@
       :Full name: {{ Data.full_technical_name }}
       {%- endif %}
       {%- if is_latest_version %}
-      :Product version: {{ Data.version }}
+      :Product version: {{ Data.product_version }}
       {%- else %}
-      :Product version: {{ Data.version }} (`See latest product version <{{ Data.latest_version_link }}>`_)
+      :Product version: {{ Data.product_version }} (`See latest product version <{{ Data.latest_version_link }}>`_)
       {%- endif %}
       {%- if valid_product_ids %}
       :{{ product_ids_label }}: {{ valid_product_ids | join(", ") }}

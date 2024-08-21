@@ -6,7 +6,7 @@
 short_name: DEA Waterbodies (Landsat)
 full_technical_name: Geoscience Australia Landsat Waterbodies Collection 3
 header_image: /_files/dea-waterbodies/DEA_Waterbodies_v3.0_header_image.jpg
-version: 3.0.0
+product_version: 3.0.0
 is_latest_version: true
 latest_version_link: null
 is_provisional: false

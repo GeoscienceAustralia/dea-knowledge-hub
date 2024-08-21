@@ -6,7 +6,7 @@
 short_name: DEA Surface Reflectance (Landsat 8 OLI-TIRS)
 full_technical_name: Geoscience Australia Landsat 8 OLI-TIRS Analysis Ready Data Collection 3
 header_image: /_files/cmi/surface_reflectance_2_NBARTa_1.png
-version: 3.0.0
+product_version: 3.0.0
 is_latest_version: true
 latest_version_link: null
 is_provisional: false
