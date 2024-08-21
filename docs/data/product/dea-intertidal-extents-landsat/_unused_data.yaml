@@ -31,8 +31,8 @@ doi_url: null
 open_data_cube_configuration: null
 security_classification: Unclassified
 time_span_full:
-  start: null
-  end: null
+data_coverage_period_start: null
+data_coverage_period_end: null
 
 # Details tab
 
@@ -49,8 +49,8 @@ major_algorithms:
   - Normalised Difference Water Index (NDWI)
 schema_spatial_extent:
   temporal_extent:
-    start: 1986-08-15T14:00:00+1000
-    end: 2017-07-31T13:59:59+1000
+  data_coverage_period_start: 1986-08-15T14:00:00+1000
+  data_coverage_period_end: 2017-07-31T13:59:59+1000
   min_longitude: -1943830
   max_longitude: 2170690
   min_latitude: -1119030

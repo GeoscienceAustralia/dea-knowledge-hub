@@ -33,8 +33,8 @@ open_data_cube_configuration:
   - https://explorer.sandbox.dea.ga.gov.au/products/ga_s2bm_ard_3#definition-doc
 security_classification: Unclassified
 time_span_full:
-  start: null
-  end: null
+data_coverage_period_start: null
+data_coverage_period_end: null
 
 # Details tab
 
@@ -54,8 +54,8 @@ data_sources:
 major_algorithms: null
 schema_spatial_extent:
   temporal_extent:
-    start: 1975-01-21T22:52:09+1100
-    end: 2049-01-21T13:00:00+1100
+  data_coverage_period_start: 1975-01-21T22:52:09+1100
+  data_coverage_period_end: 2049-01-21T13:00:00+1100
   min_longitude: 112
   max_longitude: 154
   min_latitude: -44

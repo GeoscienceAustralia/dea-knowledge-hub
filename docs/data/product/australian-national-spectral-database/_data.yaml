@@ -10,12 +10,10 @@ version: 3.3.0
 is_latest_version: true
 latest_version_link: null
 is_provisional: false
-type:
-  lineage_type: Data service
-  spatial_data_type: null
-time_span:
-  start: null
-  end: null
+lineage_type: Data service
+spatial_data_type: null
+data_coverage_period_start: null
+data_coverage_period_end: null
 data_published:
   frequency: AS_NEEDED
   activity: ONGOING

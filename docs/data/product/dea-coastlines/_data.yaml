@@ -10,12 +10,10 @@ version: 2.1.0
 is_latest_version: true
 latest_version_link: null
 is_provisional: false
-type:
-  lineage_type: Derivative
-  spatial_data_type: Vector
-time_span:
-  start: 1988
-  end: 2022
+lineage_type: Derivative
+spatial_data_type: Vector
+data_coverage_period_start: 1988
+data_coverage_period_end: 2022
 data_published:
   frequency: YEARLY
   activity: ONGOING

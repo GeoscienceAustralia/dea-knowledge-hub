@@ -34,8 +34,8 @@ open_data_cube_configuration:
   - https://github.com/GeoscienceAustralia/dea-config/tree/master/dev_3-0-0/products/ga-landsat-ard-3-0-0
 security_classification: Unclassified
 time_span_full:
-  start: null
-  end: null
+data_coverage_period_start: null
+data_coverage_period_end: null
 
 # Details tab
 
@@ -55,8 +55,8 @@ data_sources:
 major_algorithms: null
 schema_spatial_extent:
   temporal_extent:
-    start: 2021-10-30T13:00:00+1100
-    end: null
+  data_coverage_period_start: 2021-10-30T13:00:00+1100
+  data_coverage_period_end: null
   min_longitude: null
   max_longitude: null
   min_latitude: null

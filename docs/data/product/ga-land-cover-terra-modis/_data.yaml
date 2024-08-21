@@ -10,12 +10,10 @@ version: 2.1.0
 is_latest_version: true
 latest_version_link: null
 is_provisional: false
-type:
-  lineage_type: Derivative
-  spatial_data_type: Raster
-time_span:
-  start: 2002
-  end: 2015
+lineage_type: Derivative
+spatial_data_type: Raster
+data_coverage_period_start: 2002
+data_coverage_period_end: 2015
 data_published:
   frequency: 2_YEARS
   activity: NO_UPDATES
