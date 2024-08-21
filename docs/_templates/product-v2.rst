@@ -79,7 +79,7 @@
       {%- if valid_product_ids %}
       :{{ product_ids_label }}: {{ valid_product_ids | join(", ") }}
       {%- endif %}
-      :Product type: {{ valid_product_types | join(", ") }}
+      :Type: {{ valid_product_types | join(", ") }}
       {%- if Data.resolution %}
       :Resolution: {{ Data.resolution }}
       {%- endif %}
