@@ -3,7 +3,7 @@
 
 # Overview
 
-short_name: DEA Fractional Cover Percentiles (Landsat)
+official_name: DEA Fractional Cover Percentiles (Landsat)
 full_technical_name: Geoscience Australia Landsat Fractional Cover Percentiles Collection 3
 header_image: /_files/cmi/FractionalCover1_0.jpg
 product_version: 3.0.0

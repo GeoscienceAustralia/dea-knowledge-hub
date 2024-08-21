@@ -3,7 +3,7 @@
 
 # Overview
 
-short_name: DEA Surface Reflectance NBAR (Landsat 9)
+official_name: DEA Surface Reflectance NBAR (Landsat 9)
 full_technical_name: Geoscience Australia Landsat 9 OLI-TIRS NBAR Collection 3
 header_image: null
 product_version: 3.0.0

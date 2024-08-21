@@ -3,7 +3,7 @@
 
 # Overview
 
-short_name: DEA Surface Reflectance NBAR (Landsat 8 OLI-TIRS)
+official_name: DEA Surface Reflectance NBAR (Landsat 8 OLI-TIRS)
 full_technical_name: Geoscience Australia Landsat 8 OLI-TIRS NBAR Collection 3
 header_image: null
 product_version: 3.0.0
