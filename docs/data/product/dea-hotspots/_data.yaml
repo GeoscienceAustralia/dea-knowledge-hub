@@ -17,6 +17,7 @@ spatial_data_type: Vector
 
 data_coverage_period_start: 27 Aug 2002
 data_coverage_period_end: Present
+data_coverage_period_custom: null
 
 data_update_frequency_cadence: 10_MIN
 data_update_frequency_activity: ONGOING

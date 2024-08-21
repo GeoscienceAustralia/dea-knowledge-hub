@@ -83,7 +83,9 @@
       {%- if Data.resolution %}
       :Resolution: {{ Data.resolution }}
       {%- endif %}
-      {%- if Data.data_coverage_period_start and Data.data_coverage_period_end %}
+      {%- if Data.data_coverage_period_custom %}
+      :Data coverage: {{ Data.data_coverage_period_custom }}
+      {%- elif Data.data_coverage_period_start and Data.data_coverage_period_end %}
       :Data coverage: {{ Data.data_coverage_period_start }} :raw-html:`&ndash;` {{ Data.data_coverage_period_end }} is the period covered
       {%- elif Data.data_coverage_period_start  %}
       :Data coverage: {{ Data.data_coverage_period_start }} is the start of the data coverage period

@@ -17,6 +17,7 @@ spatial_data_type: Raster
 
 data_coverage_period_start: 1987
 data_coverage_period_end: 2023
+data_coverage_period_custom: null
 
 data_update_frequency_cadence: YEARLY
 data_update_frequency_activity: ONGOING
