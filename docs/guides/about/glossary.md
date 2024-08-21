@@ -1,5 +1,7 @@
 # Digital Earth Australia Glossary
 
+This glossary provides definitions for the terms we use at DEA, including technical terms and program-specific terms. (They are in alphabetical order.)
+
 {#acquisition}
 ## Acquisition
 
@@ -113,7 +115,8 @@ The angle between true north and the incident direction in the slope geometry.
 {#band}
 ## Band
 
-A discrete wavelength interval or range observed by a remote sensing instrument.
+Each remote sensing instrument (i.e. a satellite) can observe the Earth at multiple
+wavelengths. A single, discrete wavelength interval or range is referred to as a band.
 
 {#barest-earth}
 ## Barest Earth
@@ -378,7 +381,13 @@ extent of the Australian intertidal zone at regular intervals of the observed ti
 
 For more information, see [DEA Intertidal Extents](https://www.dea.ga.gov.au/products/dea-intertidal-extents).
 
-{#jupyter-nb}      
+{#indexing}
+## Indexing
+
+The process of registering a dataset with associated metadata (in a folder or at a URI) to an Open Data Cube
+instance so that it is searchable and accessible through the datacube API.
+
+{#jupyter-nb}
 ## Jupyter notebooks
 
 A computational "notebook" that allows code to be run and presented alongside explanatory documentation, figures, 
@@ -580,7 +589,8 @@ The generation of some form of output as the result of a set of actions, which m
 ## Product
 
 A categorical term applied to describe the output from a process. Typically, a product has an associated product 
-definition which contains the product description and specification.
+definition which contains the product description and specification. An example of a product is
+[DEA Water Observations (Landsat)](/data/product/dea-water-observations-landsat/)
 
 {#python}
 ## Python
@@ -681,8 +691,9 @@ saturation, add small amounts of its complement, making it closer to grey.
 {#scene}
 ## Scene
 
-A defined portion of the continuous strips of data collected by satellites. Satellite data is broken up into scenes 
-for ease in handling and cataloguing.
+Each satellite data [swath](#swath) can be divided into a series of scenes to enable the data to be handled and catalogued more easily.
+A scene is a defined portion of the continuous strips of data collected by satellites.
+Scenes are primarily used for LANDSAT satellite data.
 
 {#ssh}
 ## Secure Shell (SSH)
@@ -745,6 +756,11 @@ The ratio of the relative amplitude of the response of a detector and the freque
 An optical instrument that splits the light received from an object into its component wavelengths by means of a 
 diffraction grating, and then measures the amplitudes of the individual wavelengths.
 
+{#stacking}
+## Stacking
+
+A process that combines all data for a [tile](#tile) across a specific time range into a single file. 
+
 {#sun-sync-orbit}
 ## Sun-synchronous orbit
 
@@ -755,6 +771,11 @@ An orbit in which a satellite is always in the same position with respect to the
 
 The fraction of incoming solar radiation that is reflected from Earth's surface for specific incident or viewing 
 cases (directional, conical, and hemispherical cases).
+
+{#swath}
+## Swath
+
+As a satellite moves around the Earth, it observes a long strip of the Earth's surface called a swath. Each swath is divided into a series of [scenes](#scene).
 
 {#sar}
 ## Synthetic Aperture Radar (SAR)
@@ -790,6 +811,15 @@ different types of services to allow individual files to be selected, as well as
 NetCDF subsetting, OGC WCS and WMS.
 
 For more information, see [NCI: Data ](https://nci.org.au/our-services/data-services).
+
+{#tile}
+## Tile
+
+Tiles are a way of dividing data products into smaller pieces to enable the data to be handled and analysed more easily. 
+Each tile represents a specific geographic area and multiple tiles can be combined into a grid to cover larger regions.
+For instance, the [DEA GeoMAD][GeoMad] product is provided using 96 &times; 96 km grid tiles, characteristic of DEA Summary Products.
+
+[GeoMad]: https://knowledge.dea.ga.gov.au/data/product/dea-geometric-median-and-median-absolute-deviation-landsat/
 
 {#timedelta}
 ## Timedelta (seconds)
@@ -858,12 +888,11 @@ A HTTP interface for requesting geo-registered map images that can be displayed 
 An interface for querying, modifying and exchanging features or values in a database and retrieving features for use.
 
 {#wrs}
-## World Reference System
+## Worldwide Reference System
 
-A global indexing scheme designed for the Landsat Program. It is based on nominal scene centres defined by path and 
-row coordinates.
-
-For more information, see [NASA: World Reference System](https://landsat.gsfc.nasa.gov/about/the-worldwide-reference-system/).
+Landsat scenes are arranged into a worldwide grid called the World Reference System (WRS) which uses 'path' and 'row'
+numbers to identify the location of each scene. It is a global indexing scheme based on nominal scene centres.
+Learn more about the [Worldwide Reference System from NASA](https://landsat.gsfc.nasa.gov/about/the-worldwide-reference-system/).
 
 {#xarray}
 ## xarray

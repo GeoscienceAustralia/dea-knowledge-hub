@@ -8,7 +8,7 @@ Digital Earth Australia (DEA) Maps is a website for interactive map-based access
 .. admonition:: Start exploring
    :class: note
 
-   Open the `DEA Maps online platform <https://maps.dea.ga.gov.au/>`_.
+   Open the `DEA Maps online platform <https://maps.dea.ga.gov.au/>`_
 
 .. _Geoscience Australia: http://www.ga.gov.au/
 .. _Data61 CSIRO: https://data61.csiro.au/
@@ -132,7 +132,7 @@ Exporting data
 --------------
 
 .. note::
-   This method is suitable for exporting small areas of DEA data at high resolution. To download large areas of data or multiple timesteps, please use the `DEA Sandbox </guides/setup/Sandbox/sandbox/>`_ or `NCI </guides/setup/NCI/README/>`_ analysis environments, or download directly from DEA's Amazon S3 bucket: http://dea-public-data-dev.s3-website-ap-southeast-2.amazonaws.com/
+   This method is suitable for exporting small areas of DEA data at high resolution. To download large areas of data or multiple timesteps, please use the `DEA Sandbox </guides/setup/Sandbox/sandbox/>`_ or `NCI </guides/setup/NCI/README/>`_ analysis environments, or download directly from DEA's Amazon S3 bucket: https://data.dea.ga.gov.au/
    
 To export data directly from DEA Maps for use in GIS software:
 

@@ -14,7 +14,7 @@ latest_version_link: null
 lineage_type: Derivative
 spatial_data_type: Raster
 
-data_coverage_period_start: 16/08/1986
+data_coverage_period_start: 16 Aug 1986
 data_coverage_period_end: Present
 
 data_update_frequency_cadence: DAILY
@@ -65,7 +65,7 @@ data:
 
 code_examples:
   - link: /notebooks/DEA_products/DEA_Fractional_Cover/
-    name: Jupyter notebook
+    name: Code examples
 
 web_services:
   - link: https://ows.dea.ga.gov.au

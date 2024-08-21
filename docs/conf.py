@@ -42,7 +42,9 @@ exclude_patterns += utilities.optional_exclude_pattern("LOCAL_ENABLE_USER_GUIDES
 exclude_patterns += utilities.optional_exclude_pattern("LOCAL_ENABLE_DATA_PRODUCTS", "data")
 exclude_patterns += utilities.optional_exclude_pattern("LOCAL_ENABLE_OLD_VERSIONS", "data/old-version")
 exclude_patterns += utilities.optional_exclude_pattern("LOCAL_ENABLE_NOTEBOOKS", "notebooks")
+exclude_patterns += utilities.optional_exclude_pattern("LOCAL_ENABLE_NOTEBOOKS", "dea-notebooks")
 exclude_patterns += utilities.optional_exclude_pattern("LOCAL_ENABLE_VALIDATION_REPORTS", "validation")
+exclude_patterns += utilities.optional_exclude_pattern("LOCAL_ENABLE_OPERATIONAL_REPORTS", "operational-reports")
 exclude_patterns += utilities.optional_exclude_pattern("LOCAL_ENABLE_TAGS", "tags")
 exclude_patterns += utilities.optional_exclude_pattern("LOCAL_ENABLE_TECH_ALERTS_CHANGELOG", "tech-alerts-changelog")
 
@@ -86,6 +88,7 @@ myst_enable_extensions = [
 myst_heading_anchors = 6
 myst_all_links_external = True
 
+nbsphinx_requirejs_path = ""
 nbsphinx_execute = "never"
 
 external_toc_path = "table_of_contents.yaml"

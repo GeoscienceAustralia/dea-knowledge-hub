@@ -17,6 +17,10 @@ Computational Infrastructure`_ (NCI).
 Use the `NCI Account Sign Up`_ page with your government or academic
 institutional email address.
 
+.. admonition:: Sign up
+   :class: note
+
+   Visit the `NCI Account Sign Up`_ page.
 
 .. important::
    When signing up, you must join some :ref:`nci_data_access` projects 

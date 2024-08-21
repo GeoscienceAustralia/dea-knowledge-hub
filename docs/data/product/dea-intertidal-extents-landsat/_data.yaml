@@ -25,6 +25,7 @@ is_currency_reported: false
 resolution: 25 m
 product_ids:
   - item_v2
+  - item_v2_conf
 
 parent_products:
   name: Landsat 5, 7 and 8 NBAR and Observational Attributes (Collection 2)
@@ -58,8 +59,12 @@ maps: null
 explorers:
   - link: https://explorer.dea.ga.gov.au/products/item_v2
     name: Data explorer
+  - link: https://explorer.dea.ga.gov.au/products/item_v2_conf
+    name: Confidence data explorer
 
 data:
+  - link: https://data.dea.ga.gov.au/?prefix=item_v2/v2.0.1/
+    name: Access the data on AWS
   - link: https://thredds.nci.org.au/thredds/catalog/catalogs/fk4/item_2_0.html
     name: Access the data on NCI
 

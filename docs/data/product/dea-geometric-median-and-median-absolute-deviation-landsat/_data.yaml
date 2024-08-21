@@ -6,17 +6,16 @@
 official_name: DEA Geometric Median and Median Absolute Deviation (Landsat)
 full_technical_name: Geoscience Australia Landsat Geometric Median and Median Absolute Deviation Collection 3
 header_image: /_files/cmi/Geomedian_Australia_2014.jpg
-
-product_version: 3.1.0
+product_version: 4.0.0
 is_latest_version: true
-latest_version_link: null
+latest_version_link: /data/product/dea-geometric-median-and-median-absolute-deviation-landsat/
 is_provisional: false
 
 lineage_type: Derivative
 spatial_data_type: Raster
 
 data_coverage_period_start: 1986
-data_coverage_period_end: 2022
+data_coverage_period_end: Present
 
 data_update_frequency_cadence: YEARLY
 data_update_frequency_activity: ONGOING
@@ -24,18 +23,18 @@ is_currency_reported: true
 
 resolution: 30 m
 product_ids:
-  - ga_ls5t_nbart_gm_cyear_3
-  - ga_ls7e_nbart_gm_cyear_3
-  - ga_ls8c_nbart_gm_cyear_3
+  - ga_ls5t_gm_cyear_3
+  - ga_ls7e_gm_cyear_3
+  - ga_ls8cls9c_gm_cyear_3
 
 parent_products:
-  name: Landsat 5, 7 and 8 NBART and Observational Attributes
+  name: Landsat 5, 7, 8, and 9 NBART and Observational Attributes
   link: /data/category/dea-surface-reflectance/
 collection:
   name: Geoscience Australia Landsat Collection 3
   link: null
 doi: 10.26186/146261
-ecat: "146261"
+ecat: "149305"
 nci: null
 licence:
   name: Creative Commons Attribution 4.0 International Licence
@@ -45,9 +44,9 @@ citations:
   data_citation: "Geoscience Australia, 2022. DEA Geometric Median and Median Absolute Deviation (Landsat). Geoscience Australia, Canberra. https://dx.doi.org/10.26186/146261"
   paper_citation: null
 custom_citations:
-  - name: Geometric Median paper citation
+  - name: "Paper citation: Geometric Median"
     citation: "Roberts, D., Mueller, N., Mcintyre, A., 2017. High-dimensional pixel composites from earth observation time series. IEEE Transactions on Geoscience and Remote Sensing, 55(11), 6254–6264. https://doi.org/10.1109/TGRS.2017.2723896"
-  - name: Median Absolute Deviation paper citation
+  - name: "Paper citation: Median Absolute Deviation"
     citation: "Roberts, D., Dunn, B., Mueller, N., 2018. Open data cube products using high-dimensional statistics of time series. IGARSS 2018 - 2018 IEEE International Geoscience and Remote Sensing Symposium, 8647–8650. https://doi.org/10.1109/IGARSS.2018.8518312"
 
 tags:
@@ -61,7 +60,7 @@ tags:
 # Access
 
 maps:
-  - link: https://maps.dea.ga.gov.au/#share=s-fzHT65z4jscx9U1Nfb1FoKlQ7uU
+  - link: https://maps.dea.ga.gov.au/story/DEAGeoMAD
     name: See it on a map
 
 explorers:
@@ -71,14 +70,16 @@ explorers:
 data:
   - link: https://data.dea.ga.gov.au/?prefix=derivative
     name: Access the data on AWS
-  - link: https://thredds.nci.org.au/thredds/catalog/jw04/ga_ls5t_nbart_gm_cyear_3/catalog.html
+  - link: https://thredds.nci.org.au/thredds/catalog/jw04/ga_ls5t_gm_cyear_3/catalog.html
     name: Annual Landsat 5 observations on NCI
-  - link: https://thredds.nci.org.au/thredds/catalog/jw04/ga_ls7e_nbart_gm_cyear_3/catalog.html
+  - link: https://thredds.nci.org.au/thredds/catalog/jw04/ga_ls7e_gm_cyear_3/catalog.html
     name: Annual Landsat 7 observations on NCI
-  - link: https://thredds.nci.org.au/thredds/catalog/jw04/ga_ls8c_nbart_gm_cyear_3/catalog.html
-    name: Annual Landsat 8 observations on NCI
+  - link: https://thredds.nci.org.au/thredds/catalog/jw04/ga_ls8cls9c_gm_cyear_3/catalog.html
+    name: Annual Landsat 8 and 9 observations on NCI
 
-code_examples: null
+code_examples:
+  - link: /notebooks/DEA_products/DEA_GeoMAD/
+    name: Code examples
 
 web_services:
   - link: https://ows.dea.ga.gov.au/
@@ -89,6 +90,9 @@ custom: null
 # History
 
 old_versions:
+  - version: 3.1.0
+    title: DEA Geometric Median and Median Absolute Deviation (Landsat)
+    slug: dea-geometric-median-and-median-absolute-deviation-landsat-3.1.0
   - version: 2.1.0
     title: DEA Surface Reflectance Median Absolute Deviation (Landsat)
     slug: dea-surface-reflectance-median-absolute-deviation-landsat-2.1.0
