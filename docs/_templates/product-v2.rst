@@ -83,18 +83,9 @@
       {%- if Data.resolution %}
       :Resolution: {{ Data.resolution }}
       {%- endif %}
-      {%- if Data.data_coverage_period_start and Data.data_coverage_period_end %}
-      :Data coverage period: {{ Data.data_coverage_period_start }} :raw-html:`&ndash;` {{ Data.data_coverage_period_end }}
-      {%- elif Data.data_coverage_period_start  %}
-      :Data coverage period: From {{ Data.data_coverage_period_start }}
-      {%- elif Data.data_coverage_period_end  %}
-      :Data coverage period: Until {{ Data.data_coverage_period_end }}
-      {%- endif %}
-      {% if Data.data_update_frequency_activity == "NO_UPDATES" %}
-      :Data update frequency: {{ data_update_frequency_activity_terms.NO_UPDATES }} (previously '{{ data_update_frequency_cadence_terms.get(Data.data_update_frequency_cadence, Data.data_update_frequency_cadence) }}')
-      {%- else %}
-      :Data update frequency: {{ data_update_frequency_cadence_terms.get(Data.data_update_frequency_cadence, Data.data_update_frequency_cadence) }}, {{ data_update_frequency_activity_terms.get(Data.data_update_frequency_activity, Data.data_update_frequency_activity) }}{{ ", See `dates and currency <currency_report_>`_" if Data.is_currency_reported }}
-      {%- endif %}
+      :Data: | Data coverage period is {{ Data.data_coverage_period_start }} :raw-html:`&ndash;` {{ Data.data_coverage_period_end }}.
+             | Data update frequency is {{ data_update_frequency_cadence_terms.get(Data.data_update_frequency_cadence, Data.data_update_frequency_cadence) }} with {{ data_update_frequency_activity_terms.get(Data.data_update_frequency_activity, Data.data_update_frequency_activity) }}.
+             | See `currency and last updated date <currency_report_>`_.
 
       .. _currency_report: https://mgmt.sandbox.dea.ga.gov.au/public-dashboards/d22241dbfca54b1fa9f73938ef26e645?orgId=1
 
