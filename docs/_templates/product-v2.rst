@@ -27,10 +27,10 @@
 } %}
 
 {% set data_published_activity_terms = {
-   "ONGOING": "Ongoing data publishing",
-   "NO_UPDATES": "No further data publishing",
-   "DEVELOPMENT": "Awaiting development release",
-   "PAUSED": "Data update frequency is currently paused",
+   "ONGOING": "Ongoing data updates",
+   "NO_UPDATES": "No further data updates",
+   "DEVELOPMENT": "Awaiting product version release",
+   "PAUSED": "Data updates are currently paused",
 } %}
 
 {% set is_latest_version = Data.is_latest_version %}
