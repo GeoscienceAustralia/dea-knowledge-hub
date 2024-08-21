@@ -29,6 +29,7 @@
 {% set data_published_activity_terms = {
    "ONGOING": "Ongoing data publishing",
    "NO_UPDATES": "No further data publishing",
+   "DEVELOPMENT": "Awaiting development release",
    "PAUSED": "Data publishing is currently paused",
 } %}
 
@@ -91,9 +92,9 @@
       {%- endif %}
       {%- endif %}
       {% if Data.data_published.frequency == "NO_UPDATES" %}
-      :Data published: {{ data_published_activity_terms.NO_UPDATES }} (previously '{{ data_published_frequency_terms.get(Data.data_published.frequency, Data.data_published.frequency) }}')
+      :Data publishing: {{ data_published_activity_terms.NO_UPDATES }} (previously '{{ data_published_frequency_terms.get(Data.data_published.frequency, Data.data_published.frequency) }}')
       {%- else %}
-      :Data published: {{ data_published_frequency_terms.get(Data.data_published.frequency, Data.data_published.frequency) }}, {{ data_published_activity_terms.get(Data.data_published.activity, Data.data_published.activity) }}
+      :Data publishing: {{ data_published_frequency_terms.get(Data.data_published.frequency, Data.data_published.frequency) }}, {{ data_published_activity_terms.get(Data.data_published.activity, Data.data_published.activity) }}
       {%- endif %}
 
    .. container::
