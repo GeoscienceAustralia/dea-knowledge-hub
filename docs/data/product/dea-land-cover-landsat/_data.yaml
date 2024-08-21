@@ -14,9 +14,9 @@ lineage_type: Derivative
 spatial_data_type: Raster
 data_coverage_period_start: 1988
 data_coverage_period_end: 2020
-data_published:
-  frequency: YEARLY
-  activity: NO_UPDATES
+
+data_update_frequency_cadence: YEARLY
+data_update_frequency_activity: NO_UPDATES
 resolution: 25 m
 product_ids:
   - ga_ls_landcover_class_cyear_2

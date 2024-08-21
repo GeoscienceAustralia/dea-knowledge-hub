@@ -14,9 +14,9 @@ lineage_type: Data service
 spatial_data_type: Vector
 data_coverage_period_start: 27/08/2002
 data_coverage_period_end: Present
-data_published:
-  frequency: 10_MIN
-  activity: ONGOING
+
+data_update_frequency_cadence: 10_MIN
+data_update_frequency_activity: ONGOING
 resolution: null
 product_ids: null
 

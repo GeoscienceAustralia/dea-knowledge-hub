@@ -14,9 +14,9 @@ lineage_type: Baseline
 spatial_data_type: Raster
 data_coverage_period_start: 30/06/2017
 data_coverage_period_end: Present
-data_published:
-  frequency: DAILY
-  activity: ONGOING
+
+data_update_frequency_cadence: DAILY
+data_update_frequency_activity: ONGOING
 resolution: 10-60 m
 product_ids:
   - ga_s2bm_ard_3

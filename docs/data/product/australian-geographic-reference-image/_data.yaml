@@ -14,9 +14,9 @@ lineage_type: Baseline
 spatial_data_type: Raster
 data_coverage_period_start: null
 data_coverage_period_end: null
-data_published:
-  frequency: AS_NEEDED
-  activity: NO_UPDATES
+
+data_update_frequency_cadence: AS_NEEDED
+data_update_frequency_activity: NO_UPDATES
 resolution: 2.5-10 m
 product_ids: null
 

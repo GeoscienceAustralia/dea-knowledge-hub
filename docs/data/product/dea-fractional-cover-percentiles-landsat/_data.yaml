@@ -14,9 +14,9 @@ lineage_type: Derivative
 spatial_data_type: Raster
 data_coverage_period_start: 1987
 data_coverage_period_end: 2023
-data_published:
-  frequency: YEARLY
-  activity: ONGOING
+
+data_update_frequency_cadence: YEARLY
+data_update_frequency_activity: ONGOING
 resolution: 30 m
 product_ids:
   - ga_ls_fc_pc_cyear_3
