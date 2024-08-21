@@ -84,7 +84,7 @@
       :Resolution: {{ Data.resolution }}
       {%- endif %}
       {%- if Data.data_coverage_period_start and Data.data_coverage_period_end %}
-      :Data coverage: {{ Data.data_coverage_period_start }} :raw-html:`&ndash;` {{ Data.data_coverage_period_end }} is the data coverage period
+      :Data coverage: {{ Data.data_coverage_period_start }} :raw-html:`&ndash;` {{ Data.data_coverage_period_end }} is the period covered
       {%- elif Data.data_coverage_period_start  %}
       :Data coverage: {{ Data.data_coverage_period_start }} is the start of the data coverage period
       {%- elif Data.data_coverage_period_end  %}
@@ -98,7 +98,7 @@
                      {%- if Data.is_currency_reported and Data.data_update_frequency_cadence == "YEARLY" %}
                      {{ "| See `currency, latest update date, and next update due date <currency_report_>`_" }}.
                      {%- elif Data.is_currency_reported %}
-                     {{ "| See `currency and last updated date <currency_report_>`_" if Data.is_currency_reported }}.
+                     {{ "| See `currency and latest update date <currency_report_>`_" }}.
                      {%- endif %}
 
       .. _currency_report: https://mgmt.sandbox.dea.ga.gov.au/public-dashboards/d22241dbfca54b1fa9f73938ef26e645?orgId=1
