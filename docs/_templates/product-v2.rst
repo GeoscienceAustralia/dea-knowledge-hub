@@ -52,7 +52,7 @@
 
 {% set page_title = Data.official_name if is_latest_version else "{}: {}".format(Data.product_version, Data.official_name) %}
 {% set product_ids_label = "Product IDs" if valid_product_ids | length > 1 else "Product ID" %}
-{% set currency_report_url = "https://mgmt.sandbox.dea.ga.gov.au/public-dashboards/d22241dbfca54b1fa9f73938ef26e645?orgId=1#:~:text={}".format(Data.official_name) %}
+{% set currency_report_url = "https://mgmt.sandbox.dea.ga.gov.au/public-dashboards/d22241dbfca54b1fa9f73938ef26e645?orgId=1#:~:text={}".format(Data.official_name | urlencode) %}
 
 .. role:: raw-html(raw)
    :format: html
