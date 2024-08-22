@@ -84,6 +84,7 @@ old_versions: null
 # Settings
 
 enable_overview: true
+enable_specifications: false
 enable_access: true
 enable_details: true
 enable_quality: true
