@@ -3,18 +3,17 @@
 
 # Bands
 
-bands_table: null
+# bands_table:
+#   - name: example_band_name
+#     aliases: [example_alias_1, example_alias_2]
+#     resolution: 30 m
+#     crs: Multiple (local UTM) 
+#     nodata: -999
+#     units: null
+#     type: int16
+#     description: A description of the band.
 
-  # - name: example_band_name
-  #   aliases: [example_alias_1, example_alias_2]
-  #   resolution: 30 m
-  #   crs: Multiple (local UTM) 
-  #   nodata: -999
-  #   units: null
-  #   type: int16
-  #   description: A description of the band.
-
-bands_footnotes: null
+# bands_footnotes: A footnote underneath the table.
 
 # Settings
 

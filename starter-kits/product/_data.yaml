@@ -17,7 +17,7 @@ spatial_data_type: Vector
 
 data_coverage_period_start: 1 Jan 2020
 data_coverage_period_end: Present
-# data_coverage_period_custom: null
+# data_coverage_period_custom: 1986 – 1999 and 2003 – 2011
 
 data_update_frequency_cadence: DAILY
 data_update_frequency_activity: ONGOING
@@ -84,7 +84,7 @@ licence:
 #     label: Get via API
 #     name: Access the API
 #     description: Learn how to `use the API <https://satpathapi.dea.ga.gov.au/user-guide>`_
-#     class: null
+#     class: highlighted
 
 # History
 
