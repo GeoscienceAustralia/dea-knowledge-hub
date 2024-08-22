@@ -168,7 +168,7 @@ See the latest Daily Validation Summary Report: [2023-11-27: Transect NSW Site 1
 
 The [DEA Intertidal](/data/product/dea-intertidal/) product suite maps the changing elevation, exposure and tidal characteristics of Australia’s exposed intertidal zone, the complex zone that defines the interface between land and sea.
 
-This new product suite expands upon the [DEA Intertidal Elevation (Landsat)](/data/old-version/dea-intertidal-elevation-landsat-1.0.0/) product which has now been deprecated.
+This new product suite expands upon the [DEA Intertidal Elevation (Landsat)](/data/version-history/dea-intertidal-elevation-landsat-1.0.0/) product which has now been deprecated.
 
 See [DEA Intertidal](/data/product/dea-intertidal/) for more information.
 

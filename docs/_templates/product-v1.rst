@@ -397,7 +397,7 @@
        .. list-table::
 
           {% for item in valid_old_versions %}
-          * - `{{ item.version }}: {{ item.title }} </data/old-version/{{ item.slug }}/>`_
+          * - `{{ item.version }}: {{ item.title }} </data/version-history/{{ item.slug }}/>`_
           {% endfor %}
        {% else %}
        No old versions available.

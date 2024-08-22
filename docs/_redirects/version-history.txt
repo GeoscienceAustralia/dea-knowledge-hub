@@ -1,0 +1,26 @@
+# Old product version redirects
+
+data/product/dea-intertidal-elevation-landsat  data/version-history/dea-intertidal-elevation-landsat-1.0.0
+
+data/old-version                                                                   data/version-history
+data/old-version/dea-burnt-area-landsat-2010-and-2015-2.0.0                        data/version-history/dea-burnt-area-landsat-2010-and-2015-2.0.0
+data/old-version/dea-burnt-area-vectors-sentinel-2-near-real-time-1.0.0            data/version-history/dea-burnt-area-vectors-sentinel-2-near-real-time-1.0.0
+data/old-version/dea-fractional-cover-landsat-2.2.1                                data/version-history/dea-fractional-cover-landsat-2.2.1
+data/old-version/dea-fractional-cover-percentiles-landsat-2.2.1                    data/version-history/dea-fractional-cover-percentiles-landsat-2.2.1
+data/old-version/dea-geometric-median-and-median-absolute-deviation-landsat-3.1.0  data/version-history/dea-geometric-median-and-median-absolute-deviation-landsat-3.1.0
+data/old-version/dea-intertidal-elevation-landsat-1.0.0                            data/version-history/dea-intertidal-elevation-landsat-1.0.0
+data/old-version/dea-mangrove-canopy-cover-landsat-2.0.2                           data/version-history/dea-mangrove-canopy-cover-landsat-2.0.2
+data/old-version/dea-pixel-quality-count-landsat-2.0.0                             data/version-history/dea-pixel-quality-count-landsat-2.0.0
+data/old-version/dea-pixel-quality-landsat-2.0.0                                   data/version-history/dea-pixel-quality-landsat-2.0.0
+data/old-version/dea-surface-reflectance-geomedian-landsat-2.0.0                   data/version-history/dea-surface-reflectance-geomedian-landsat-2.0.0
+data/old-version/dea-surface-reflectance-median-absolute-deviation-landsat-2.1.0   data/version-history/dea-surface-reflectance-median-absolute-deviation-landsat-2.1.0
+data/old-version/dea-surface-reflectance-nbar-landsat-2.0.0                        data/version-history/dea-surface-reflectance-nbar-landsat-2.0.0
+data/old-version/dea-surface-reflectance-nbar-sentinel-2-msi-1.0.0                 data/version-history/dea-surface-reflectance-nbar-sentinel-2-msi-1.0.0
+data/old-version/dea-surface-reflectance-nbart-landsat-2.0.0                       data/version-history/dea-surface-reflectance-nbart-landsat-2.0.0
+data/old-version/dea-surface-reflectance-nbart-sentinel-2-msi-1.0.0                data/version-history/dea-surface-reflectance-nbart-sentinel-2-msi-1.0.0
+data/old-version/dea-waterbodies-landsat-2.0.0                                     data/version-history/dea-waterbodies-landsat-2.0.0
+data/old-version/dea-water-observations-filtered-statistics-landsat-2.1.5          data/version-history/dea-water-observations-filtered-statistics-landsat-2.1.5
+data/old-version/dea-water-observations-landsat-2.1.5                              data/version-history/dea-water-observations-landsat-2.1.5
+data/old-version/dea-water-observations-statistics-landsat-2.1.5                   data/version-history/dea-water-observations-statistics-landsat-2.1.5
+data/old-version/dea-wetness-percentiles-landsat-2.0.0                             data/version-history/dea-wetness-percentiles-landsat-2.0.0
+data/old-version/waterbodies-1.0.0                                                 data/version-history/waterbodies-1.0.0
