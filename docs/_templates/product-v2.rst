@@ -52,6 +52,7 @@
 
 {% set page_title = Data.official_name if is_latest_version else Data.product_version + ": " + Data.official_name %}
 {% set product_ids_label = "Product IDs" if valid_product_ids | length > 1 else "Product ID" %}
+{% set currency_report_url = f"https://mgmt.sandbox.dea.ga.gov.au/public-dashboards/d22241dbfca54b1fa9f73938ef26e645?orgId=1#:~:text={Data.official_name}" %}
 
 .. role:: raw-html(raw)
    :format: html
@@ -100,12 +101,10 @@
                      | {{ data_update_frequency_activity_terms.get(Data.data_update_frequency_activity, Data.data_update_frequency_activity) }}. (Update frequency was {{ data_update_frequency_cadence_terms.get(Data.data_update_frequency_cadence, Data.data_update_frequency_cadence) }}.)
                      {%- endif %}
                      {%- if Data.is_currency_reported and Data.data_update_frequency_cadence == "YEARLY" %}
-                     {{ "| See `currency, latest update date, and next update date <currency_report_>`_" }}
+                     {{ "| See `currency, latest update date, and next update date <{{ currency_report_url }}>`_" }}
                      {%- elif Data.is_currency_reported %}
-                     {{ "| See `currency and latest update date <currency_report_>`_" }}
+                     {{ "| See `currency and latest update date <{{ currency_report_url }}>`_" }}
                      {%- endif %}
-
-      .. _currency_report: https://mgmt.sandbox.dea.ga.gov.au/public-dashboards/d22241dbfca54b1fa9f73938ef26e645?orgId=1
 
    .. container::
 
