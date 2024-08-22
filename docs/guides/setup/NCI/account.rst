@@ -69,7 +69,7 @@ Use `MyNCI <https://my.nci.org.au/>`_ to view and manage your project membership
      - Geoscience Australia Sentinel-2 Analysis Ready Data (Collection 3)
      
    * - jw04_
-     - Geoscience Australia Landsat Derivatives (Collection 3), e.g. WO, FC, GeoMAD, Intertidal
+     - Geoscience Australia Landsat Derivatives (Collection 3), e.g. DEA Water Observations, DEA Fractional Cover, DEA GeoMAD, DEA Intertidal
 
    * - fk4_
      - Legacy Geoscience Australia Landsat Derivatives (Collection 2), e.g. NIDEM, ITEM, HLTC
