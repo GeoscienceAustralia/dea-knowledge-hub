@@ -329,7 +329,7 @@
           :parser: myst_parser.sphinx_
     {% endif %}
 
-    {% if Data.enable_specifications %}
+    {% if Specifications.enable_specifications %}
     .. tab-item:: Specifications
        :name: specifications
 

@@ -15,3 +15,7 @@ bands_table: null
   #   description: A description of the band.
 
 bands_footnotes: null
+
+# Settings
+
+enable_specifications: false

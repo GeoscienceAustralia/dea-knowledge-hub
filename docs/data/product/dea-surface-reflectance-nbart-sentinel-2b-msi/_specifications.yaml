@@ -6,3 +6,7 @@
 bands_table: null
 
 bands_footnotes: null
+
+# Settings
+
+enable_specifications: false
