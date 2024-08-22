@@ -20,6 +20,10 @@
 
 Learn more about the [DEA Summary Product Grid](/guides/reference/collection_3_summary_grid/).
 
+## 2024-08-16: Hotspots MODIS SRSS missing data (Fixed)
+
+On 21 Aug, we detected that the DEA Hotspots MODIS SRSS sub-product was missing `*hotspots.txt` and `*metadata.txt` files for its daily data folders since 16 Aug. This was caused by a software bug. After detecting the issue, we fixed the bug on the same day and uploaded all the missing data files.
+
 ## 2024-08-08: NCI Explorer may experience instability
 
 The [NCI Explorer](https://explorer.nci.dea.ga.gov.au/) has experienced some intermittent outages recently. We are currently investigating the cause of the issue. If the NCI Explorer fails to load, please try again later.
