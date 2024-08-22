@@ -277,7 +277,7 @@ entries:
 
   - file: operational-reports/index
 
-  # Old versions of products
+  # Version history of products
 
   - file: data/version-history/index
     subtrees:
