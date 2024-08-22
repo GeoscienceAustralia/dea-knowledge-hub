@@ -13,7 +13,7 @@
 #     type: int16
 #     description: A description of the band.
 
-# bands_footnotes: A footnote underneath the table.
+# bands_footnote: A footnote underneath the table.
 
 # Settings
 

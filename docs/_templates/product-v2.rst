@@ -370,7 +370,7 @@
             - {{ band.description or no_data_terms.none }}
           {% endfor %}
 
-       {{ Specifications.bands_footnotes if Specifications.bands_footnotes }}
+       {{ Specifications.bands_footnote if Specifications.bands_footnote }}
        {% endif %}
     {% endif %}
 
