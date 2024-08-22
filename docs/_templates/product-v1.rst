@@ -380,14 +380,14 @@
           <div class="product-tab-table-of-contents"></div>
 
        {% if not is_latest_version %}
-       .. rubric:: Other versions
-          :name: other-versions
+       .. rubric:: Version history
+          :name: version-history
           :class: h2
 
-       You can find the history in the `latest version of the product <{{ data.latest_version_link }}?tab=history>`_.
+       You can find the version history in the `latest version of the product <{{ data.latest_version_link }}?tab=history>`_.
        {% else %}
-       .. rubric:: Old versions
-          :name: old-versions
+       .. rubric:: Version history
+          :name: version-history
           :class: h2
 
        {% if valid_old_versions %}
@@ -400,7 +400,7 @@
           * - `{{ item.version }}: {{ item.title }} </data/version-history/{{ item.slug }}/>`_
           {% endfor %}
        {% else %}
-       No old versions available.
+       No previous versions available.
        {% endif %}
 
        .. include:: _history.md
