@@ -101,9 +101,9 @@
                      | {{ data_update_frequency_activity_terms.get(Data.data_update_frequency_activity, Data.data_update_frequency_activity) }}. (Update frequency was {{ data_update_frequency_cadence_terms.get(Data.data_update_frequency_cadence, Data.data_update_frequency_cadence) }}.)
                      {%- endif %}
                      {%- if Data.is_currency_reported and Data.data_update_frequency_cadence == "YEARLY" %}
-                     {{ "| See `currency, latest update date, and next update date <{{ currency_report_url }}>`_" }}
+                     {{ f"| See `currency, latest update date, and next update date <{currency_report_url}>`_" }}
                      {%- elif Data.is_currency_reported %}
-                     {{ "| See `currency and latest update date <{{ currency_report_url }}>`_" }}
+                     {{ f"| See `currency and latest update date <{currency_report_url}>`_" }}
                      {%- endif %}
 
    .. container::
