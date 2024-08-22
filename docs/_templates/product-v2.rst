@@ -1,4 +1,5 @@
 {% set Data = load('_data.yaml') %}
+{% set Specifications = load('_specifications.yaml') %}
 
 {% set access_names = {
    "map": "DEA Maps",
@@ -33,6 +34,11 @@
    "PAUSED": "Data updates are currently paused",
 } %}
 
+{% set no_data_terms = {
+   "none": "None",
+   "not_available": "n/a",
+} %}
+
 {% set is_latest_version = Data.is_latest_version %}
 
 {% set valid_maps = Data.maps | selectattr("link",  "!=", None) | list %}
@@ -46,6 +52,7 @@
 {% set valid_product_types = [Data.lineage_type, Data.spatial_data_type] | select("!=", None) | list %}
 {% set valid_custom_citations = Data.custom_citations | select("!=", None) | list %}
 {% set valid_tags = Data.tags | select("!=", None) | list %}
+{% set valid_bands_table = Specifications.bands_table | selectattr("name",  "!=", None) | list %}
 
 {% set has_access_data = valid_maps or valid_data or valid_explorers or valid_web_services or valid_code_samples or valid_custom %}
 {% set has_key_details = (Data.parent_products.name and Data.parent_products.link) or (Data.collection.name and Data.collection.link) or Data.collection.name or Data.doi or Data.ecat or Data.published %}
@@ -320,6 +327,51 @@
 
        .. include:: _quality.md
           :parser: myst_parser.sphinx_
+    {% endif %}
+
+    {% if Data.enable_specifications %}
+    .. tab-item:: Specifications
+       :name: specifications
+
+       .. raw:: html
+
+          <div class="product-tab-table-of-contents"></div>
+
+       {% if valid_bands_table %}
+       .. rubric:: Bands
+          :name: bands
+          :class: h2
+
+       Bands are distinct layers of data within a product that can be loaded using the Open Data Cube (on the `DEA Sandbox <dea_sandbox_>`_ or `NCI <nci_>`_) or DEA's `STAC API <stac_api_>`_.
+
+       .. _dea_sandbox: https://knowledge.dea.ga.gov.au/guides/setup/Sandbox/sandbox/
+       .. _nci: https://knowledge.dea.ga.gov.au/guides/setup/NCI/basics/
+       .. _stac_api: https://knowledge.dea.ga.gov.au/guides/setup/gis/stac/
+
+       .. list-table::
+          :header-rows: 1
+
+          * - 
+            - Aliases
+            - Resolution
+            - CRS
+            - Nodata
+            - Units
+            - Type
+            - Description
+          {% for band in valid_bands_table %}
+          * - **{{ band.name }}**
+            - {{ band.aliases|join(', ') if band.aliases else no_data_terms.none }}
+            - {{ band.resolution or no_data_terms.not_available }}
+            - {{ band.crs or no_data_terms.not_available }}
+            - {{ band.nodata }}
+            - {{ band.units or no_data_terms.none }}
+            - {{ band.type or no_data_terms.not_available }}
+            - {{ band.description or no_data_terms.none }}
+          {% endfor %}
+
+       {{ Specifications.bands_footnotes if Specifications.bands_footnotes }}
+       {% endif %}
     {% endif %}
 
     {% if Data.enable_access %}
