@@ -62,6 +62,8 @@
 {% set currency_report_url = "https://mgmt.sandbox.dea.ga.gov.au/public-dashboards/d22241dbfca54b1fa9f73938ef26e645?orgId=1#:~:text={}".format(Data.official_name | urlencode) %}
 {% set data_update_frequency_cadence = data_update_frequency_cadence_terms.get(Data.data_update_frequency_cadence, Data.data_update_frequency_cadence) %}
 {% set data_update_frequency_activity = data_update_frequency_activity_terms.get(Data.data_update_frequency_activity, Data.data_update_frequency_activity) %}
+{% set is_frequency_ongoing = data_update_frequency_activity == data_update_frequency_activity_terms.ONGOING %}
+{% set is_cadence_multiple_words = data_update_frequency_cadence.split(" ") | length > 1 %}
 
 .. role:: raw-html(raw)
    :format: html
@@ -108,9 +110,11 @@
       {%- elif Data.data_coverage_period_end  %}
       :Data coverage: {{ Data.data_coverage_period_end }} (the end of the time period covered)
       {%- endif %}
-      :Data updates: {%- if data_update_frequency_activity == data_update_frequency_activity_terms.ONGOING %}
+      :Data updates: {%- if is_frequency_ongoing and is_cadence_multiple_words %} {# If the cadence term is multiple words long, surround it in quotation marks. E.g. 'As needed'. #}
+                     | '{{ data_update_frequency_cadence }}' update frequency, {{ data_update_frequency_activity }}
+                     {%- elif is_frequency_ongoing %}
                      | {{ data_update_frequency_cadence }} update frequency, {{ data_update_frequency_activity }}
-                     {%- elif data_update_frequency_cadence.split(' ') | length > 1 %} {# If the cadence term uses multiple words, surround it in quotation marks. E.g. 'As needed'. #}
+                     {%- elif is_cadence_multiple_words %} {# Otherwise, if the frequency is not 'Ongoing'. #}
                      | {{ data_update_frequency_activity }} (Previously: '{{ data_update_frequency_cadence }}' update frequency)
                      {%- else %}
                      | {{ data_update_frequency_activity }} (Previously: {{ data_update_frequency_cadence }} update frequency)
