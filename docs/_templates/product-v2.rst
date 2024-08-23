@@ -105,8 +105,8 @@
       {%- elif Data.data_coverage_period_end  %}
       :Data coverage: {{ Data.data_coverage_period_end }} (the end of the time period covered)
       {%- endif %}
-      :Data updates: {%- if Data.data_update_frequency_activity == "ONGOING" %}
-                     | {{ data_update_frequency_cadence }} update frequency, {{ data_update_frequency_activity_terms.ONGOING }}
+      :Data updates: {%- if data_update_frequency_activity == data_update_frequency_activity_terms.ONGOING %}
+                     | {{ data_update_frequency_cadence }} update frequency, {{ data_update_frequency_activity }}
                      {%- else %}
                      | {{ data_update_frequency_activity }}. (Previously, {{ data_update_frequency_cadence }} update frequency.)
                      {%- endif %}
