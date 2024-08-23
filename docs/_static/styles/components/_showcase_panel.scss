@@ -7,6 +7,11 @@
         font-weight: bold;
     }
 
+    dl dd p {
+        line-height: 1.15rem;
+        margin-bottom: 0.35rem;
+    }
+
     & > div:nth-child(1) {
         flex: 1;
         padding: 2rem;
@@ -47,15 +52,15 @@
         flex-direction: row-reverse;
     }
 
-    &[class*="bg-gradient-"] {
-        p, dl, a, a:hover, .rubric {
-            color: white;
-        }
-    }
-
     &.product-header {
         .rubric {
             margin-bottom: 1.15rem;
+        }
+    }
+
+    &[class*="bg-gradient-"] {
+        p, dl, a, a:hover, .rubric {
+            color: white;
         }
     }
 
