@@ -9,9 +9,9 @@ bands_table:
   resolution: 10 m
   crs: EPSG:3577
   nodata: NaN
-  units: Metres above MSL
+  units: Metres
   type: float32
-  description: Placeholder
+  description: Elevation relative to modelled Mean Sea Level for each pixel of the satellite-observed exposed intertidal zone
 - name: elevation_uncertainty
   aliases:
   - uncertainty
@@ -20,7 +20,7 @@ bands_table:
   nodata: NaN
   units: Metres
   type: float32
-  description: Placeholder
+  description: A measure of the vertical uncertainty of each modelled elevation value
 - name: exposure
   aliases: []
   resolution: 10 m
@@ -28,61 +28,7 @@ bands_table:
   nodata: 255
   units: Percent
   type: uint8
-  description: Placeholder
-- name: ta_hat
-  aliases:
-  - hat
-  resolution: 10 m
-  crs: EPSG:3577
-  nodata: NaN
-  units: Metres above MSL
-  type: float32
-  description: Placeholder
-- name: ta_hot
-  aliases:
-  - hot
-  resolution: 10 m
-  crs: EPSG:3577
-  nodata: NaN
-  units: Metres above MSL
-  type: float32
-  description: Placeholder
-- name: ta_lot
-  aliases:
-  - lot
-  resolution: 10 m
-  crs: EPSG:3577
-  nodata: NaN
-  units: Metres above MSL
-  type: float32
-  description: Placeholder
-- name: ta_lat
-  aliases:
-  - lat
-  resolution: 10 m
-  crs: EPSG:3577
-  nodata: NaN
-  units: Metres above MSL
-  type: float32
-  description: Placeholder
-- name: ta_offset_high
-  aliases:
-  - offset_high
-  resolution: 10 m
-  crs: EPSG:3577
-  nodata: 255
-  units: Percent
-  type: uint8
-  description: Placeholder
-- name: ta_offset_low
-  aliases:
-  - offset_low
-  resolution: 10 m
-  crs: EPSG:3577
-  nodata: 255
-  units: Percent
-  type: uint8
-  description: Placeholder
+  description: Percentage of time that any intertidal pixel of known elevation is exposed from tidal inundation
 - name: ta_spread
   aliases:
   - spread
@@ -91,16 +37,61 @@ bands_table:
   nodata: 255
   units: Percent
   type: uint8
-  description: Placeholder
-- name: qa_ndwi_corr
+  description: Percentage of the full astronomical tidal range observed by the time series of satellite observations at each pixel
+- name: ta_offset_low
   aliases:
-  - ndwi_corr
+  - offset_low
+  resolution: 10 m
+  crs: EPSG:3577
+  nodata: 255
+  units: Percent
+  type: uint8
+  description: Proportion of the lowest tides not observed at any time during the analysis epoch by satellites at each pixel (as a percentage of the astronomical tide range)
+- name: ta_offset_high
+  aliases:
+  - offset_high
+  resolution: 10 m
+  crs: EPSG:3577
+  nodata: 255
+  units: Percent
+  type: uint8
+  description: Proportion of the highest tides not observed at any time during the analysis epoch by satellites at each pixel (as a percentage of the astronomical tide range)
+- name: ta_lat
+  aliases:
+  - lat
   resolution: 10 m
   crs: EPSG:3577
   nodata: NaN
-  units: Correlation
+  units: Metres
   type: float32
-  description: Placeholder
+  description: Lowest astronomical tide (HAT) for each pixel
+- name: ta_hat
+  aliases:
+  - hat
+  resolution: 10 m
+  crs: EPSG:3577
+  nodata: NaN
+  units: Metres
+  type: float32
+  description: Highest astronomical tide (HAT) for each pixel
+- name: ta_lot
+  aliases:
+  - lot
+  resolution: 10 m
+  crs: EPSG:3577
+  nodata: NaN
+  units: Metres
+  type: float32
+  description: Lowest satellite-observed tide (HOT) for each pixel
+- name: ta_hot
+  aliases:
+  - hot
+  resolution: 10 m
+  crs: EPSG:3577
+  nodata: NaN
+  units: Metres
+  type: float32
+  description: Highest satellite-observed tide (HOT) for each pixel
 - name: qa_ndwi_freq
   aliases:
   - ndwi_freq
@@ -109,7 +100,16 @@ bands_table:
   nodata: 255
   units: Percent
   type: uint8
-  description: Placeholder
+  description: Inundation frequency of each pixel
+- name: qa_ndwi_corr
+  aliases:
+  - ndwi_corr
+  resolution: 10 m
+  crs: EPSG:3577
+  nodata: NaN
+  units: Correlation
+  type: float32
+  description: Pearson correlations between NDWI satellite observations and tide heights
 
 # bands_footnote: A footnote underneath the table.
 
