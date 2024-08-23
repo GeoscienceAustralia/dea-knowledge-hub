@@ -3,18 +3,116 @@
 
 # Bands
 
-# bands_table:
-#   - name: example_band_name
-#     aliases: [example_alias_1, example_alias_2]
-#     resolution: 30 m
-#     crs: Multiple (local UTM) 
-#     nodata: -999
-#     units: null
-#     type: int16
-#     description: A description of the band.
+bands_table:
+- name: elevation
+  aliases: []
+  resolution: 10 m
+  crs: EPSG:3577
+  nodata: NaN
+  units: Metres above MSL
+  type: float32
+  description: Placeholder
+- name: elevation_uncertainty
+  aliases:
+  - uncertainty
+  resolution: 10 m
+  crs: EPSG:3577
+  nodata: NaN
+  units: Metres
+  type: float32
+  description: Placeholder
+- name: exposure
+  aliases: []
+  resolution: 10 m
+  crs: EPSG:3577
+  nodata: 255
+  units: Percent
+  type: uint8
+  description: Placeholder
+- name: ta_hat
+  aliases:
+  - hat
+  resolution: 10 m
+  crs: EPSG:3577
+  nodata: NaN
+  units: Metres above MSL
+  type: float32
+  description: Placeholder
+- name: ta_hot
+  aliases:
+  - hot
+  resolution: 10 m
+  crs: EPSG:3577
+  nodata: NaN
+  units: Metres above MSL
+  type: float32
+  description: Placeholder
+- name: ta_lot
+  aliases:
+  - lot
+  resolution: 10 m
+  crs: EPSG:3577
+  nodata: NaN
+  units: Metres above MSL
+  type: float32
+  description: Placeholder
+- name: ta_lat
+  aliases:
+  - lat
+  resolution: 10 m
+  crs: EPSG:3577
+  nodata: NaN
+  units: Metres above MSL
+  type: float32
+  description: Placeholder
+- name: ta_offset_high
+  aliases:
+  - offset_high
+  resolution: 10 m
+  crs: EPSG:3577
+  nodata: 255
+  units: Percent
+  type: uint8
+  description: Placeholder
+- name: ta_offset_low
+  aliases:
+  - offset_low
+  resolution: 10 m
+  crs: EPSG:3577
+  nodata: 255
+  units: Percent
+  type: uint8
+  description: Placeholder
+- name: ta_spread
+  aliases:
+  - spread
+  resolution: 10 m
+  crs: EPSG:3577
+  nodata: 255
+  units: Percent
+  type: uint8
+  description: Placeholder
+- name: qa_ndwi_corr
+  aliases:
+  - ndwi_corr
+  resolution: 10 m
+  crs: EPSG:3577
+  nodata: NaN
+  units: Correlation
+  type: float32
+  description: Placeholder
+- name: qa_ndwi_freq
+  aliases:
+  - ndwi_freq
+  resolution: 10 m
+  crs: EPSG:3577
+  nodata: 255
+  units: Percent
+  type: uint8
+  description: Placeholder
 
 # bands_footnote: A footnote underneath the table.
 
 # Settings
 
-enable_specifications: false
+enable_specifications: true
