@@ -96,11 +96,11 @@
       {%- if Data.data_coverage_period_custom %}
       :Data coverage: {{ Data.data_coverage_period_custom }}
       {%- elif Data.data_coverage_period_start and Data.data_coverage_period_end %}
-      :Data coverage: {{ Data.data_coverage_period_start }} :raw-html:`&ndash;` {{ Data.data_coverage_period_end }} is the period covered
+      :Data coverage: {{ Data.data_coverage_period_start }} :raw-html:`&ndash;` {{ Data.data_coverage_period_end }} (the time period covered)
       {%- elif Data.data_coverage_period_start  %}
-      :Data coverage: {{ Data.data_coverage_period_start }} is the start of the data coverage period
+      :Data coverage: {{ Data.data_coverage_period_start }} (the start of the time period covered)
       {%- elif Data.data_coverage_period_end  %}
-      :Data coverage: {{ Data.data_coverage_period_end }} is the end of the data coverage period
+      :Data coverage: {{ Data.data_coverage_period_end }} (the end of the time period covered)
       {%- endif %}
       :Data updates: {%- if Data.data_update_frequency_activity == "ONGOING" %}
                      | {{ data_update_frequency_cadence_terms.get(Data.data_update_frequency_cadence, Data.data_update_frequency_cadence) }} update frequency, {{ data_update_frequency_activity_terms.ONGOING }}
