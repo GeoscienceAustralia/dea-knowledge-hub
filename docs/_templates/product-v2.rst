@@ -58,6 +58,7 @@
 
 {% set page_title = Data.official_name if is_latest_version else "{}: {}".format(Data.product_version, Data.official_name) %}
 {% set product_ids_label = "Product IDs" if valid_product_ids | length > 1 else "Product ID" %}
+{% set product_ids_comma_separated = valid_product_ids | join(", ") %}
 {% set currency_report_url = "https://mgmt.sandbox.dea.ga.gov.au/public-dashboards/d22241dbfca54b1fa9f73938ef26e645?orgId=1#:~:text={}".format(Data.official_name | urlencode) %}
 {% set data_update_frequency_cadence = data_update_frequency_cadence_terms.get(Data.data_update_frequency_cadence, Data.data_update_frequency_cadence) %}
 {% set data_update_frequency_activity = data_update_frequency_activity_terms.get(Data.data_update_frequency_activity, Data.data_update_frequency_activity) %}
@@ -80,18 +81,22 @@
       {% if Data.full_technical_name %}
       :Full name: {{ Data.full_technical_name }}
       {%- endif %}
-      {%- if is_latest_version and valid_old_versions | length > 0 %}
+      {%- if is_latest_version and valid_old_versions | length > 0 and enable_history %} {# If at least one old product version exists. #}
       :Product version: `{{ Data.product_version }} <./?tab=history>`_
       {%- elif is_latest_version %}
       :Product version: {{ Data.product_version }}
       {%- else %}
       :Product version: {{ Data.product_version }} (`See latest product version <{{ Data.latest_version_link }}>`_)
       {%- endif %}
-      {%- if valid_product_ids %}
-      :{{ product_ids_label }}: {{ valid_product_ids | join(", ") }}
+      {%- if valid_product_ids and enable_access %}
+      :{{ product_ids_label }}: `{{ product_ids_comma_separated }} <./?tab=access>`_
+      {%- elif valid_product_ids %}
+      :{{ product_ids_label }}: {{ product_ids_comma_separated }}
       {%- endif %}
       :Type: {{ valid_product_types | join(", ") }}
-      {%- if Data.resolution %}
+      {%- if Data.resolution and enable_specifications %}
+      :Resolution: `{{ Data.resolution }} <./?tab=specifications>`_
+      {%- elif Data.resolution %}
       :Resolution: {{ Data.resolution }}
       {%- endif %}
       {%- if Data.data_coverage_period_custom %}
