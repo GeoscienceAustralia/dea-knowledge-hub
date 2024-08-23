@@ -18,13 +18,13 @@
 } %}
 
 {% set data_update_frequency_cadence_terms = {
-   "AS_NEEDED": "'As needed'",
+   "AS_NEEDED": "As needed",
    "DAILY": "Daily",
    "WEEKLY": "Weekly",
    "MONTHLY": "Monthly",
    "YEARLY": "Yearly",
-   "2_YEARS": "'Every 2 years'",
-   "10_MIN": "'Every 10 minutes'",
+   "2_YEARS": "Every 2 years",
+   "10_MIN": "Every 10 minutes",
 } %}
 
 {% set data_update_frequency_activity_terms = {
@@ -107,6 +107,8 @@
       {%- endif %}
       :Data updates: {%- if data_update_frequency_activity == data_update_frequency_activity_terms.ONGOING %}
                      | {{ data_update_frequency_cadence }} update frequency, {{ data_update_frequency_activity }}
+                     {%- elif data_update_frequency_cadence.split(' ') | length > 1 %} {# If the cadence term uses multiple words, surround it in quotation marks. E.g. 'As needed'. #}
+                     | {{ data_update_frequency_activity }} (Previously: '{{ data_update_frequency_cadence }}' update frequency)
                      {%- else %}
                      | {{ data_update_frequency_activity }} (Previously: {{ data_update_frequency_cadence }} update frequency)
                      {%- endif %}
