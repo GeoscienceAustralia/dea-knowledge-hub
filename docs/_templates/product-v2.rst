@@ -108,7 +108,7 @@
       :Data updates: {%- if data_update_frequency_activity == data_update_frequency_activity_terms.ONGOING %}
                      | {{ data_update_frequency_cadence }} update frequency, {{ data_update_frequency_activity }}
                      {%- else %}
-                     | {{ data_update_frequency_activity }}. (Previously, {{ data_update_frequency_cadence }} update frequency.)
+                     | {{ data_update_frequency_activity }} (Previously: {{ data_update_frequency_cadence }} update frequency)
                      {%- endif %}
                      {%- if Data.is_currency_reported and Data.data_update_frequency_cadence == "YEARLY" %}
                      {{ "| See `currency, latest update date, and next update date <{}>`_".format(currency_report_url) }}
