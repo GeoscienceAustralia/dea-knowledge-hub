@@ -36,8 +36,6 @@
 
 {% set no_data_terms = {
    "dash": "\-",
-   "none": "None",
-   "not_available": "N/A",
 } %}
 
 {% set is_latest_version = Data.is_latest_version %}
@@ -367,12 +365,12 @@
           {% for band in valid_bands_table %}
           * - **{{ band.name }}**
             - {{ band.aliases|join(', ') if band.aliases else no_data_terms.dash }}
-            - {{ band.resolution or no_data_terms.not_available }}
-            - {{ band.crs or no_data_terms.not_available }}
+            - {{ band.resolution or no_data_terms.dash }}
+            - {{ band.crs or no_data_terms.dash }}
             - {{ band.nodata }}
-            - {{ band.units or no_data_terms.none }}
-            - {{ band.type or no_data_terms.not_available }}
-            - {{ band.description or no_data_terms.none }}
+            - {{ band.units or no_data_terms.dash }}
+            - {{ band.type or no_data_terms.dash }}
+            - {{ band.description or no_data_terms.dash }}
           {% endfor %}
 
        {{ Specifications.bands_footnote if Specifications.bands_footnote }}
