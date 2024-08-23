@@ -1,5 +1,7 @@
-{% set Data = load('_data.yaml') %}
-{% set Specifications = load('_specifications.yaml') %}
+{% set page = {
+   "data": load('_data.yaml'),
+   "specifications": load('_specifications.yaml'),
+} %}
 
 {% set access_names = {
    "map": "DEA Maps",
@@ -38,28 +40,28 @@
    "dash": "\-",
 } %}
 
-{% set valid_maps = Data.maps | selectattr("link",  "!=", None) | list %}
-{% set valid_data = Data.data | selectattr("link",  "!=", None) | list %}
-{% set valid_explorers = Data.explorers | selectattr("link",  "!=", None) | list %}
-{% set valid_web_services = Data.web_services | selectattr("link",  "!=", None) | list %}
-{% set valid_code_samples = Data.code_examples | selectattr("link",  "!=", None) | list %}
-{% set valid_custom = Data.custom | selectattr("icon",  "!=", None) | selectattr("link",  "!=", None) | selectattr("name",  "!=", None) | list %}
-{% set valid_old_versions = Data.old_versions | selectattr("slug",  "!=", None) | selectattr("version",  "!=", None) | selectattr("name",  "!=", None) | list %}
-{% set valid_product_ids = Data.product_ids | select("!=", None) | list %}
-{% set valid_product_types = [Data.lineage_type, Data.spatial_data_type] | select("!=", None) | list %}
-{% set valid_custom_citations = Data.custom_citations | select("!=", None) | list %}
-{% set valid_tags = Data.tags | select("!=", None) | list %}
-{% set valid_bands_table = Specifications.bands_table | selectattr("name",  "!=", None) | list %}
+{% set valid_maps = page.data.maps | selectattr("link",  "!=", None) | list %}
+{% set valid_data = page.data.data | selectattr("link",  "!=", None) | list %}
+{% set valid_explorers = page.data.explorers | selectattr("link",  "!=", None) | list %}
+{% set valid_web_services = page.data.web_services | selectattr("link",  "!=", None) | list %}
+{% set valid_code_samples = page.data.code_examples | selectattr("link",  "!=", None) | list %}
+{% set valid_custom = page.data.custom | selectattr("icon",  "!=", None) | selectattr("link",  "!=", None) | selectattr("name",  "!=", None) | list %}
+{% set valid_old_versions = page.data.old_versions | selectattr("slug",  "!=", None) | selectattr("version",  "!=", None) | selectattr("name",  "!=", None) | list %}
+{% set valid_product_ids = page.data.product_ids | select("!=", None) | list %}
+{% set valid_product_types = [page.data.lineage_type, page.data.spatial_data_type] | select("!=", None) | list %}
+{% set valid_custom_citations = page.data.custom_citations | select("!=", None) | list %}
+{% set valid_tags = page.data.tags | select("!=", None) | list %}
+{% set valid_bands_table = page.specifications.bands_table | selectattr("name",  "!=", None) | list %}
 
 {% set has_access_data = valid_maps or valid_data or valid_explorers or valid_web_services or valid_code_samples or valid_custom %}
-{% set has_key_details = (Data.parent_products.name and Data.parent_products.link) or (Data.collection.name and Data.collection.link) or Data.collection.name or Data.doi or Data.ecat or Data.published %}
+{% set has_key_details = (page.data.parent_products.name and page.data.parent_products.link) or (page.data.collection.name and page.data.collection.link) or page.data.collection.name or page.data.doi or page.data.ecat or page.data.published %}
 
-{% set page_title = Data.official_name if Data.is_latest_version else "{}: {}".format(Data.product_version, Data.official_name) %}
+{% set page_title = page.data.official_name if page.data.is_latest_version else "{}: {}".format(page.data.product_version, page.data.official_name) %}
 {% set product_ids_label = "Product IDs" if valid_product_ids | length > 1 else "Product ID" %}
 {% set product_ids_comma_separated = valid_product_ids | join(", ") %}
-{% set currency_report_url = "https://mgmt.sandbox.dea.ga.gov.au/public-dashboards/d22241dbfca54b1fa9f73938ef26e645?orgId=1#:~:text={}".format(Data.official_name | urlencode) %}
-{% set data_update_frequency_cadence = data_update_frequency_cadence_terms.get(Data.data_update_frequency_cadence, Data.data_update_frequency_cadence) %}
-{% set data_update_frequency_activity = data_update_frequency_activity_terms.get(Data.data_update_frequency_activity, Data.data_update_frequency_activity) %}
+{% set currency_report_url = "https://mgmt.sandbox.dea.ga.gov.au/public-dashboards/d22241dbfca54b1fa9f73938ef26e645?orgId=1#:~:text={}".format(page.data.official_name | urlencode) %}
+{% set data_update_frequency_cadence = data_update_frequency_cadence_terms.get(page.data.data_update_frequency_cadence, page.data.data_update_frequency_cadence) %}
+{% set data_update_frequency_activity = data_update_frequency_activity_terms.get(page.data.data_update_frequency_activity, page.data.data_update_frequency_activity) %}
 {% set is_frequency_ongoing = data_update_frequency_activity == data_update_frequency_activity_terms.ONGOING %}
 {% set is_cadence_multiple_words = data_update_frequency_cadence.split(" ") | length > 1 %}
 
@@ -78,35 +80,35 @@
 
       .. rubric:: {{ page_title }}
 
-      {% if Data.full_technical_name %}
-      :Full name: {{ Data.full_technical_name }}
+      {% if page.data.full_technical_name %}
+      :Full name: {{ page.data.full_technical_name }}
       {%- endif %}
-      {%- if Data.is_latest_version and valid_old_versions | length > 0 and Data.enable_history %} {# If at least one old product version exists. #}
-      :Product version: `{{ Data.product_version }} <./?tab=history>`_
-      {%- elif Data.is_latest_version %}
-      :Product version: {{ Data.product_version }}
+      {%- if page.data.is_latest_version and valid_old_versions | length > 0 and page.data.enable_history %} {# If at least one old product version exists. #}
+      :Product version: `{{ page.data.product_version }} <./?tab=history>`_
+      {%- elif page.data.is_latest_version %}
+      :Product version: {{ page.data.product_version }}
       {%- else %}
-      :Product version: {{ Data.product_version }} (`See latest product version <{{ Data.latest_version_link }}>`_)
+      :Product version: {{ page.data.product_version }} (`See latest product version <{{ page.data.latest_version_link }}>`_)
       {%- endif %}
-      {%- if valid_product_ids and Data.enable_access %}
+      {%- if valid_product_ids and page.data.enable_access %}
       :{{ product_ids_label }}: `{{ product_ids_comma_separated }} <./?tab=access>`_
       {%- elif valid_product_ids %}
       :{{ product_ids_label }}: {{ product_ids_comma_separated }}
       {%- endif %}
       :Type: {{ valid_product_types | join(", ") }}
-      {%- if Data.resolution and Data.enable_specifications %}
-      :Resolution: `{{ Data.resolution }} <./?tab=specifications>`_
-      {%- elif Data.resolution %}
-      :Resolution: {{ Data.resolution }}
+      {%- if page.data.resolution and page.data.enable_specifications %}
+      :Resolution: `{{ page.data.resolution }} <./?tab=specifications>`_
+      {%- elif page.data.resolution %}
+      :Resolution: {{ page.data.resolution }}
       {%- endif %}
-      {%- if Data.data_coverage_period_custom %}
-      :Data coverage: {{ Data.data_coverage_period_custom }}
-      {%- elif Data.data_coverage_period_start and Data.data_coverage_period_end %}
-      :Data coverage: {{ Data.data_coverage_period_start }} :raw-html:`&ndash;` {{ Data.data_coverage_period_end }} (the time period covered)
-      {%- elif Data.data_coverage_period_start  %}
-      :Data coverage: {{ Data.data_coverage_period_start }} (the start of the time period covered)
-      {%- elif Data.data_coverage_period_end  %}
-      :Data coverage: {{ Data.data_coverage_period_end }} (the end of the time period covered)
+      {%- if page.data.data_coverage_period_custom %}
+      :Data coverage: {{ page.data.data_coverage_period_custom }}
+      {%- elif page.data.data_coverage_period_start and page.data.data_coverage_period_end %}
+      :Data coverage: {{ page.data.data_coverage_period_start }} :raw-html:`&ndash;` {{ page.data.data_coverage_period_end }} (the time period covered)
+      {%- elif page.data.data_coverage_period_start  %}
+      :Data coverage: {{ page.data.data_coverage_period_start }} (the start of the time period covered)
+      {%- elif page.data.data_coverage_period_end  %}
+      :Data coverage: {{ page.data.data_coverage_period_end }} (the end of the time period covered)
       {%- endif %}
       :Data updates: {%- if is_frequency_ongoing and is_cadence_multiple_words %} {# If the cadence term is multiple words long, surround it in quotation marks. E.g. 'As needed'. #}
                      | '{{ data_update_frequency_cadence }}' update frequency, {{ data_update_frequency_activity }}
@@ -117,28 +119,28 @@
                      {%- else %}
                      | {{ data_update_frequency_activity }} (Previously: {{ data_update_frequency_cadence }} update frequency)
                      {%- endif %}
-                     {%- if Data.is_currency_reported and Data.data_update_frequency_cadence == "YEARLY" %}
+                     {%- if page.data.is_currency_reported and page.data.data_update_frequency_cadence == "YEARLY" %}
                      {{ "| See `currency, latest update date, and next update date <{}>`_".format(currency_report_url) }}
-                     {%- elif Data.is_currency_reported %}
+                     {%- elif page.data.is_currency_reported %}
                      {{ "| See `currency and latest update date <{}>`_".format(currency_report_url) }}
                      {%- endif %}
 
    .. container::
 
-      .. image:: {{ Data.header_image or "/_files/default/dea-earth-thumbnail.jpg" }}
+      .. image:: {{ page.data.header_image or "/_files/default/dea-earth-thumbnail.jpg" }}
          :class: no-gallery
 
 .. container::
    :name: notifications
 
-   {% if not Data.is_latest_version %}
+   {% if not page.data.is_latest_version %}
    .. admonition:: Old version
       :class: note
    
-      This is an old version of the product. See the `latest version <{{ Data.latest_version_link }}>`_.
+      This is an old version of the product. See the `latest version <{{ page.data.latest_version_link }}>`_.
 
    {% endif %}
-   {% if Data.is_provisional %}
+   {% if page.data.is_provisional %}
    .. admonition:: Provisional product
       :class: note
 
@@ -146,12 +148,12 @@
 
    {% endif %}
 
-{% if not Data.is_latest_version %}
+{% if not page.data.is_latest_version %}
 {% endif %}
 
 .. tab-set::
 
-    {% if Data.enable_overview %}
+    {% if page.data.enable_overview %}
     .. tab-item:: Overview
        :name: overview
 
@@ -233,49 +235,49 @@
        .. list-table::
           :name: key-details-table
 
-          {% if Data.parent_products %}
-          {% if Data.parent_products.name and Data.parent_products.link %}
+          {% if page.data.parent_products %}
+          {% if page.data.parent_products.name and page.data.parent_products.link %}
           * - **Parent product(s)**
-            - `{{ Data.parent_products.name }} <{{ Data.parent_products.link }}>`_
+            - `{{ page.data.parent_products.name }} <{{ page.data.parent_products.link }}>`_
           {%- endif %}
           {%- endif %}
-          {%- if Data.collection %}
-          {%- if Data.collection.name and Data.collection.link %}
+          {%- if page.data.collection %}
+          {%- if page.data.collection.name and page.data.collection.link %}
           * - **Collection**
-            - `{{ Data.collection.name }} <{{ Data.collection.link }}>`_
-          {%- elif Data.collection.name %}
+            - `{{ page.data.collection.name }} <{{ page.data.collection.link }}>`_
+          {%- elif page.data.collection.name %}
           * - **Collection**
-            - {{ Data.collection.name }}
+            - {{ page.data.collection.name }}
           {%- endif %}
           {%- endif %}
-          {%- if Data.doi and Data.ecat %}
+          {%- if page.data.doi and page.data.ecat %}
           * - **DOI**
-            - `{{ Data.doi }} <https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/{{ Data.ecat }}>`_
-          {% elif Data.doi %}
+            - `{{ page.data.doi }} <https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/{{ page.data.ecat }}>`_
+          {% elif page.data.doi %}
           * - **DOI**
-            - `{{ Data.doi }} <https://doi.org/{{ Data.doi }}>`_
-          {% elif Data.ecat %}
+            - `{{ page.data.doi }} <https://doi.org/{{ page.data.doi }}>`_
+          {% elif page.data.ecat %}
           * - **Persistent ID**
-            - `{{ Data.ecat }} <https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/{{ Data.ecat }}>`_
+            - `{{ page.data.ecat }} <https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/{{ page.data.ecat }}>`_
           {%- endif %}
-          {%- if Data.published %}
+          {%- if page.data.published %}
           * - **Last updated**
-            - {{ Data.published }}
+            - {{ page.data.published }}
           {%- endif %}
-          {%- if Data.licence %}
-          {%- if Data.licence.name and Data.licence.link %}
+          {%- if page.data.licence %}
+          {%- if page.data.licence.name and page.data.licence.link %}
           * - **Licence**
-            - `{{ Data.licence.name }} <{{ Data.licence.link }}>`_
+            - `{{ page.data.licence.name }} <{{ page.data.licence.link }}>`_
           {%- endif %}
           {%- endif %}
-          {% if Data.spatial_data_type != "Vector" and Data.data_update_frequency_cadence != data_update_frequency_cadence_terms.AS_NEEDED and Data.data_update_frequency_activity == data_update_frequency_activity_terms.ONGOING %}
+          {% if page.data.spatial_data_type != "Vector" and page.data.data_update_frequency_cadence != data_update_frequency_cadence_terms.AS_NEEDED and page.data.data_update_frequency_activity == data_update_frequency_activity_terms.ONGOING %}
           * - **Currency**
             - This product may be included in the `DEA Published Product Currency Report <https://mgmt.sandbox.dea.ga.gov.au/public-dashboards/d22241dbfca54b1fa9f73938ef26e645?orgId=1>`_ (if applicable).
           {%- endif %}
        {%- endif %}
 
-       {% if Data.citations %}
-       {% if Data.citations.data_citation or Data.citations.paper_citation %}
+       {% if page.data.citations %}
+       {% if page.data.citations.data_citation or page.data.citations.paper_citation %}
        .. rubric:: Cite this product
           :name: citations
           :class: h2
@@ -283,19 +285,19 @@
        .. list-table::
           :name: citation-table
 
-          {% if Data.citations.data_citation %}
+          {% if page.data.citations.data_citation %}
           * - **Data citation**
             - .. code-block:: text
                  :class: citation-table-citation citation-access-date
 
-                 {{ Data.citations.data_citation }}
+                 {{ page.data.citations.data_citation }}
           {%- endif %}
-          {% if Data.citations.paper_citation %}
+          {% if page.data.citations.paper_citation %}
           * - **Paper citation**
             - .. code-block:: text
                  :class: citation-table-citation
 
-                 {{ Data.citations.paper_citation }}
+                 {{ page.data.citations.paper_citation }}
           {%- endif %}
           {% for citation in valid_custom_citations %}
           * - **{{ citation.name }}**
@@ -315,7 +317,7 @@
           :parser: myst_parser.sphinx_
     {% endif %}
 
-    {% if Data.enable_details %}
+    {% if page.data.enable_details %}
     .. tab-item:: Details
        :name: details
 
@@ -327,7 +329,7 @@
           :parser: myst_parser.sphinx_
     {% endif %}
 
-    {% if Data.enable_quality %}
+    {% if page.data.enable_quality %}
     .. tab-item:: Quality
        :name: quality
 
@@ -339,7 +341,7 @@
           :parser: myst_parser.sphinx_
     {% endif %}
 
-    {% if Specifications.enable_specifications %}
+    {% if page.specifications.enable_specifications %}
     .. tab-item:: Specifications
        :name: specifications
 
@@ -380,11 +382,11 @@
             - {{ band.description or no_data_terms.dash }}
           {% endfor %}
 
-       {{ Specifications.bands_footnote if Specifications.bands_footnote }}
+       {{ page.specifications.bands_footnote if page.specifications.bands_footnote }}
        {% endif %}
     {% endif %}
 
-    {% if Data.enable_access %}
+    {% if page.data.enable_access %}
     .. tab-item:: Access
        :name: access
 
@@ -453,7 +455,7 @@
           :parser: myst_parser.sphinx_
     {% endif %}
 
-    {% if Data.enable_history %}
+    {% if page.data.enable_history %}
     .. tab-item:: History
        :name: history
 
@@ -461,12 +463,12 @@
 
           <div class="product-tab-table-of-contents"></div>
 
-       {% if not Data.is_latest_version %}
+       {% if not page.data.is_latest_version %}
        .. rubric:: Version history
           :name: version-history
           :class: h2
 
-       You can find the version history in the `latest version of the product <{{ Data.latest_version_link }}?tab=history>`_.
+       You can find the version history in the `latest version of the product <{{ page.data.latest_version_link }}?tab=history>`_.
        {% else %}
        .. rubric:: Version history
           :name: version-history
@@ -478,7 +480,7 @@
 
        .. list-table::
 
-          * - {{ Data.product_version }}: Current version
+          * - {{ page.data.product_version }}: Current version
           {% for item in valid_old_versions %}
           * - `{{ item.version }}: {{ item.title }} </data/version-history/{{ item.slug }}/>`_
           {% endfor %}
@@ -491,7 +493,7 @@
        {% endif %}
     {% endif %}
 
-    {% if Data.enable_faqs %}
+    {% if page.data.enable_faqs %}
     .. tab-item:: FAQs
        :name: faqs
 
@@ -503,7 +505,7 @@
           :parser: myst_parser.sphinx_
     {% endif %}
 
-    {% if Data.enable_credits %}
+    {% if page.data.enable_credits %}
     .. tab-item:: Credits
        :name: credits
 
