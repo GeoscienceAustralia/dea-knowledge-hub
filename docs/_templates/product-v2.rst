@@ -96,7 +96,7 @@
       :{{ product_ids_label }}: {{ product_ids_comma_separated }}
       {%- endif %}
       :Type: {{ valid_product_types | join(", ") }}
-      {%- if page.data.resolution and page.data.enable_specifications %}
+      {%- if page.data.resolution and page.specifications.enable_specifications %}
       :Resolution: `{{ page.data.resolution }} <./?tab=specifications>`_
       {%- elif page.data.resolution %}
       :Resolution: {{ page.data.resolution }}
