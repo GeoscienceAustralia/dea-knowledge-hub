@@ -1,11 +1,11 @@
-{# Data loaded from source files. #}
+{# Data loaded from source files #}
 
 {% set page = {
    "data": load('_data.yaml'),
    "specifications": load('_specifications.yaml'),
 } %}
 
-{# Terms and static strings. #}
+{# Terms and static strings #}
 
 {% set access_names = {
    "map": "DEA Maps",
@@ -44,15 +44,15 @@
    "dash": "\-",
 } %}
 
-{# Cleaned lists of data. #}
+{# Access links #}
 
-{% set clean_list = {
+{% set access_links = {
    "maps": page.data.maps | selectattr("link",  "!=", None) | list,
    "data": page.data.data | selectattr("link",  "!=", None) | list,
+   "explorers": page.data.explorers | selectattr("link",  "!=", None) | list,
+   "web_services": page.data.web_services | selectattr("link",  "!=", None) | list,
 } %}
 
-{% set valid_explorers = page.data.explorers | selectattr("link",  "!=", None) | list %}
-{% set valid_web_services = page.data.web_services | selectattr("link",  "!=", None) | list %}
 {% set valid_code_samples = page.data.code_examples | selectattr("link",  "!=", None) | list %}
 {% set valid_custom = page.data.custom | selectattr("icon",  "!=", None) | selectattr("link",  "!=", None) | selectattr("name",  "!=", None) | list %}
 {% set valid_old_versions = page.data.old_versions | selectattr("slug",  "!=", None) | selectattr("version",  "!=", None) | selectattr("name",  "!=", None) | list %}
@@ -62,7 +62,7 @@
 {% set valid_tags = page.data.tags | select("!=", None) | list %}
 {% set valid_bands_table = page.specifications.bands_table | selectattr("name",  "!=", None) | list %}
 
-{% set has_access_data = clean_list.maps or clean_list.data or valid_explorers or valid_web_services or valid_code_samples or valid_custom %}
+{% set has_access_data = access_links.maps or access_links.data or access_links.explorers or access_links.web_services or valid_code_samples or valid_custom %}
 {% set has_key_details = (page.data.parent_products.name and page.data.parent_products.link) or (page.data.collection.name and page.data.collection.link) or page.data.collection.name or page.data.doi or page.data.ecat or page.data.published %}
 
 {% set page_title = page.data.official_name if page.data.is_latest_version else "{}: {}".format(page.data.product_version, page.data.official_name) %}
@@ -186,7 +186,7 @@
           .. grid:: 2 2 3 5
              :gutter: 3
 
-             {% for item in clean_list.maps %}
+             {% for item in access_links.maps %}
              .. grid-item-card:: :fas:`map-location-dot`
                 :link: {{ item.link }}
                 :link-alt: {{ access_labels.map }}
@@ -194,7 +194,7 @@
                 {{ item.name or access_names.map }}
              {% endfor %}
 
-             {% for item in valid_explorers %}
+             {% for item in access_links.explorers %}
              .. grid-item-card:: :fas:`magnifying-glass`
                 :link: {{ item.link }}
                 :link-alt: {{ access_labels.explorer }}
@@ -202,7 +202,7 @@
                 {{ item.name or access_names.explorer }}
              {% endfor %}
 
-             {% for item in clean_list.data %}
+             {% for item in access_links.data %}
              .. grid-item-card:: :fas:`database`
                 :link: {{ item.link }}
                 :link-alt: {{ access_labels.data }}
@@ -218,7 +218,7 @@
                 {{ item.name or access_names.code_sample }}
              {% endfor %}
 
-             {% for item in valid_web_services %}
+             {% for item in access_links.web_services %}
              .. grid-item-card:: :fas:`globe`
                 :link: {{ item.link }}
                 :link-alt: {{ access_labels.web_service }}
@@ -411,25 +411,25 @@
        .. list-table::
           :name: access-table
 
-          {% if clean_list.maps %}
+          {% if access_links.maps %}
           * - **{{ access_labels.map }}**
-            - {% for item in clean_list.maps %}
+            - {% for item in access_links.maps %}
               * `{{ item.name or access_names.map }} <{{ item.link }}>`_
               {% endfor %}
             - Learn how to `use DEA Maps </guides/setup/dea_maps/>`_
           {% endif %}
 
-          {% if valid_explorers %}
+          {% if access_links.explorers %}
           * - **{{ access_labels.explorer }}**
-            - {% for item in valid_explorers %}
+            - {% for item in access_links.explorers %}
               * `{{ item.name or access_names.explorer }} <{{ item.link }}>`_
               {% endfor %}
             - Learn how to `use the DEA Explorer </setup/explorer_guide/>`_
           {% endif %}
 
-          {% if clean_list.data %}
+          {% if access_links.data %}
           * - **{{ access_labels.data }}**
-            - {% for item in clean_list.data %}
+            - {% for item in access_links.data %}
               * `{{ item.name or access_names.data }} <{{ item.link }}>`_
               {% endfor %}
             - Learn how to `access the data via AWS </guides/about/faq/#download-dea-data>`_
@@ -443,9 +443,9 @@
             - Learn how to `use the DEA Sandbox </guides/setup/Sandbox/sandbox/>`_
           {% endif %}
 
-          {% if valid_web_services %}
+          {% if access_links.web_services %}
           * - **{{ access_labels.web_service }}**
-            - {% for item in valid_web_services %}
+            - {% for item in access_links.web_services %}
               * `{{ item.name or access_names.web_service }} <{{ item.link }}>`_
               {% endfor %}
             - Learn how to `use DEA's web services </guides/setup/gis/README/>`_
