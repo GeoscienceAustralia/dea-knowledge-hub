@@ -105,7 +105,7 @@
       :Data updates: {%- if Data.data_update_frequency_activity == "ONGOING" %}
                      | {{ data_update_frequency_cadence_terms.get(Data.data_update_frequency_cadence, Data.data_update_frequency_cadence) }} update frequency, {{ data_update_frequency_activity_terms.ONGOING }}
                      {%- else %}
-                     | {{ data_update_frequency_activity_terms.get(Data.data_update_frequency_activity, Data.data_update_frequency_activity) }}. (Update frequency was {{ data_update_frequency_cadence_terms.get(Data.data_update_frequency_cadence, Data.data_update_frequency_cadence) }}.)
+                     | {{ data_update_frequency_activity_terms.get(Data.data_update_frequency_activity, Data.data_update_frequency_activity) }}. (Previously, {{ data_update_frequency_cadence_terms.get(Data.data_update_frequency_cadence, Data.data_update_frequency_cadence) }} update frequency.)
                      {%- endif %}
                      {%- if Data.is_currency_reported and Data.data_update_frequency_cadence == "YEARLY" %}
                      {{ "| See `currency, latest update date, and next update date <{}>`_".format(currency_report_url) }}
