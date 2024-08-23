@@ -35,8 +35,9 @@
 } %}
 
 {% set no_data_terms = {
+   "dash": "-",
    "none": "None",
-   "not_available": "n/a",
+   "not_available": "N/A",
 } %}
 
 {% set is_latest_version = Data.is_latest_version %}
@@ -361,7 +362,7 @@
             - Description
           {% for band in valid_bands_table %}
           * - **{{ band.name }}**
-            - {{ band.aliases|join(', ') if band.aliases else no_data_terms.none }}
+            - {{ band.aliases|join(', ') if band.aliases else no_data_terms.dash }}
             - {{ band.resolution or no_data_terms.not_available }}
             - {{ band.crs or no_data_terms.not_available }}
             - {{ band.nodata }}
