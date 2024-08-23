@@ -38,8 +38,6 @@
    "dash": "\-",
 } %}
 
-{% set is_latest_version = Data.is_latest_version %}
-
 {% set valid_maps = Data.maps | selectattr("link",  "!=", None) | list %}
 {% set valid_data = Data.data | selectattr("link",  "!=", None) | list %}
 {% set valid_explorers = Data.explorers | selectattr("link",  "!=", None) | list %}
@@ -56,7 +54,7 @@
 {% set has_access_data = valid_maps or valid_data or valid_explorers or valid_web_services or valid_code_samples or valid_custom %}
 {% set has_key_details = (Data.parent_products.name and Data.parent_products.link) or (Data.collection.name and Data.collection.link) or Data.collection.name or Data.doi or Data.ecat or Data.published %}
 
-{% set page_title = Data.official_name if is_latest_version else "{}: {}".format(Data.product_version, Data.official_name) %}
+{% set page_title = Data.official_name if Data.is_latest_version else "{}: {}".format(Data.product_version, Data.official_name) %}
 {% set product_ids_label = "Product IDs" if valid_product_ids | length > 1 else "Product ID" %}
 {% set product_ids_comma_separated = valid_product_ids | join(", ") %}
 {% set currency_report_url = "https://mgmt.sandbox.dea.ga.gov.au/public-dashboards/d22241dbfca54b1fa9f73938ef26e645?orgId=1#:~:text={}".format(Data.official_name | urlencode) %}
@@ -83,20 +81,20 @@
       {% if Data.full_technical_name %}
       :Full name: {{ Data.full_technical_name }}
       {%- endif %}
-      {%- if is_latest_version and valid_old_versions | length > 0 and enable_history %} {# If at least one old product version exists. #}
+      {%- if Data.is_latest_version and valid_old_versions | length > 0 and Data.enable_history %} {# If at least one old product version exists. #}
       :Product version: `{{ Data.product_version }} <./?tab=history>`_
-      {%- elif is_latest_version %}
+      {%- elif Data.is_latest_version %}
       :Product version: {{ Data.product_version }}
       {%- else %}
       :Product version: {{ Data.product_version }} (`See latest product version <{{ Data.latest_version_link }}>`_)
       {%- endif %}
-      {%- if valid_product_ids and enable_access %}
+      {%- if valid_product_ids and Data.enable_access %}
       :{{ product_ids_label }}: `{{ product_ids_comma_separated }} <./?tab=access>`_
       {%- elif valid_product_ids %}
       :{{ product_ids_label }}: {{ product_ids_comma_separated }}
       {%- endif %}
       :Type: {{ valid_product_types | join(", ") }}
-      {%- if Data.resolution and enable_specifications %}
+      {%- if Data.resolution and Data.enable_specifications %}
       :Resolution: `{{ Data.resolution }} <./?tab=specifications>`_
       {%- elif Data.resolution %}
       :Resolution: {{ Data.resolution }}
@@ -133,7 +131,7 @@
 .. container::
    :name: notifications
 
-   {% if not is_latest_version %}
+   {% if not Data.is_latest_version %}
    .. admonition:: Old version
       :class: note
    
@@ -148,7 +146,7 @@
 
    {% endif %}
 
-{% if not is_latest_version %}
+{% if not Data.is_latest_version %}
 {% endif %}
 
 .. tab-set::
@@ -463,7 +461,7 @@
 
           <div class="product-tab-table-of-contents"></div>
 
-       {% if not is_latest_version %}
+       {% if not Data.is_latest_version %}
        .. rubric:: Version history
           :name: version-history
           :class: h2
