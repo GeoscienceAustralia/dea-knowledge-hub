@@ -1,7 +1,11 @@
+{# Data loaded from source files. #}
+
 {% set page = {
    "data": load('_data.yaml'),
    "specifications": load('_specifications.yaml'),
 } %}
+
+{# Terms and static strings. #}
 
 {% set access_names = {
    "map": "DEA Maps",
@@ -40,8 +44,13 @@
    "dash": "\-",
 } %}
 
-{% set valid_maps = page.data.maps | selectattr("link",  "!=", None) | list %}
-{% set valid_data = page.data.data | selectattr("link",  "!=", None) | list %}
+{# Cleaned lists of data. #}
+
+{% set clean_list = {
+   "maps": page.data.maps | selectattr("link",  "!=", None) | list,
+   "data": page.data.data | selectattr("link",  "!=", None) | list,
+} %}
+
 {% set valid_explorers = page.data.explorers | selectattr("link",  "!=", None) | list %}
 {% set valid_web_services = page.data.web_services | selectattr("link",  "!=", None) | list %}
 {% set valid_code_samples = page.data.code_examples | selectattr("link",  "!=", None) | list %}
@@ -53,7 +62,7 @@
 {% set valid_tags = page.data.tags | select("!=", None) | list %}
 {% set valid_bands_table = page.specifications.bands_table | selectattr("name",  "!=", None) | list %}
 
-{% set has_access_data = valid_maps or valid_data or valid_explorers or valid_web_services or valid_code_samples or valid_custom %}
+{% set has_access_data = clean_list.maps or clean_list.data or valid_explorers or valid_web_services or valid_code_samples or valid_custom %}
 {% set has_key_details = (page.data.parent_products.name and page.data.parent_products.link) or (page.data.collection.name and page.data.collection.link) or page.data.collection.name or page.data.doi or page.data.ecat or page.data.published %}
 
 {% set page_title = page.data.official_name if page.data.is_latest_version else "{}: {}".format(page.data.product_version, page.data.official_name) %}
@@ -177,7 +186,7 @@
           .. grid:: 2 2 3 5
              :gutter: 3
 
-             {% for item in valid_maps %}
+             {% for item in clean_list.maps %}
              .. grid-item-card:: :fas:`map-location-dot`
                 :link: {{ item.link }}
                 :link-alt: {{ access_labels.map }}
@@ -193,7 +202,7 @@
                 {{ item.name or access_names.explorer }}
              {% endfor %}
 
-             {% for item in valid_data %}
+             {% for item in clean_list.data %}
              .. grid-item-card:: :fas:`database`
                 :link: {{ item.link }}
                 :link-alt: {{ access_labels.data }}
@@ -402,9 +411,9 @@
        .. list-table::
           :name: access-table
 
-          {% if valid_maps %}
+          {% if clean_list.maps %}
           * - **{{ access_labels.map }}**
-            - {% for item in valid_maps %}
+            - {% for item in clean_list.maps %}
               * `{{ item.name or access_names.map }} <{{ item.link }}>`_
               {% endfor %}
             - Learn how to `use DEA Maps </guides/setup/dea_maps/>`_
@@ -418,9 +427,9 @@
             - Learn how to `use the DEA Explorer </setup/explorer_guide/>`_
           {% endif %}
 
-          {% if valid_data %}
+          {% if clean_list.data %}
           * - **{{ access_labels.data }}**
-            - {% for item in valid_data %}
+            - {% for item in clean_list.data %}
               * `{{ item.name or access_names.data }} <{{ item.link }}>`_
               {% endfor %}
             - Learn how to `access the data via AWS </guides/about/faq/#download-dea-data>`_
