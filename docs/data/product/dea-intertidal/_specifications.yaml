@@ -28,7 +28,7 @@ bands_table:
   nodata: 255
   units: Percent
   type: uint8
-  description: Percentage of time that any intertidal pixel of known elevation is exposed from tidal inundation
+  description: Percentage of time that any intertidal pixel of known elevation was exposed from tidal inundation during the analysis epoch
 - name: ta_spread
   aliases:
   - spread
@@ -37,7 +37,7 @@ bands_table:
   nodata: 255
   units: Percent
   type: uint8
-  description: Percentage of the full astronomical tidal range observed by the time series of satellite observations at each pixel
+  description: Percentage of the astronomical tidal range observed by satellites at any time during the analysis epoch
 - name: ta_offset_low
   aliases:
   - offset_low
@@ -46,7 +46,7 @@ bands_table:
   nodata: 255
   units: Percent
   type: uint8
-  description: Proportion of the lowest tides not observed at any time during the analysis epoch by satellites at each pixel (as a percentage of the astronomical tide range)
+  description: Proportion of the lowest tides not observed by satellites (as a percentage of astronomical tide range) at any time during the analysis epoch
 - name: ta_offset_high
   aliases:
   - offset_high
@@ -55,7 +55,7 @@ bands_table:
   nodata: 255
   units: Percent
   type: uint8
-  description: Proportion of the highest tides not observed at any time during the analysis epoch by satellites at each pixel (as a percentage of the astronomical tide range)
+  description: Proportion of the highest tides not observed by satellites (as a percentage of astronomical tide range) at any time during the analysis epoch
 - name: ta_lat
   aliases:
   - lat
@@ -64,7 +64,7 @@ bands_table:
   nodata: NaN
   units: Metres
   type: float32
-  description: Lowest astronomical tide (HAT) for each pixel
+  description: Lowest astronomical tide (HAT) during the analysis epoch
 - name: ta_hat
   aliases:
   - hat
@@ -73,7 +73,7 @@ bands_table:
   nodata: NaN
   units: Metres
   type: float32
-  description: Highest astronomical tide (HAT) for each pixel
+  description: Highest astronomical tide (HAT) during the analysis epoch
 - name: ta_lot
   aliases:
   - lot
@@ -82,7 +82,7 @@ bands_table:
   nodata: NaN
   units: Metres
   type: float32
-  description: Lowest satellite-observed tide (HOT) for each pixel
+  description: Lowest satellite-observed tide (HOT) during the analysis epoch
 - name: ta_hot
   aliases:
   - hot
@@ -91,7 +91,7 @@ bands_table:
   nodata: NaN
   units: Metres
   type: float32
-  description: Highest satellite-observed tide (HOT) for each pixel
+  description: Highest satellite-observed tide (HOT) during the analysis epoch
 - name: qa_ndwi_freq
   aliases:
   - ndwi_freq
@@ -100,7 +100,7 @@ bands_table:
   nodata: 255
   units: Percent
   type: uint8
-  description: Inundation frequency of each pixel
+  description: Inundation frequency of each pixel during the analysis epoch
 - name: qa_ndwi_corr
   aliases:
   - ndwi_corr
@@ -109,7 +109,7 @@ bands_table:
   nodata: NaN
   units: Correlation
   type: float32
-  description: Pearson correlations between NDWI satellite observations and tide heights
+  description: Pearson correlations between NDWI satellite observations and tide heights during the analysis epoch
 
 # bands_footnote: A footnote underneath the table.
 
