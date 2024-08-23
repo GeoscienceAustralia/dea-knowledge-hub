@@ -35,7 +35,7 @@
 } %}
 
 {% set no_data_terms = {
-   "dash": "-",
+   "dash": "\-",
    "none": "None",
    "not_available": "N/A",
 } %}
@@ -61,6 +61,8 @@
 {% set page_title = Data.official_name if is_latest_version else "{}: {}".format(Data.product_version, Data.official_name) %}
 {% set product_ids_label = "Product IDs" if valid_product_ids | length > 1 else "Product ID" %}
 {% set currency_report_url = "https://mgmt.sandbox.dea.ga.gov.au/public-dashboards/d22241dbfca54b1fa9f73938ef26e645?orgId=1#:~:text={}".format(Data.official_name | urlencode) %}
+{% set data_update_frequency_cadence = data_update_frequency_cadence_terms.get(Data.data_update_frequency_cadence, Data.data_update_frequency_cadence) %}
+{% set data_update_frequency_activity = data_update_frequency_activity_terms.get(Data.data_update_frequency_activity, Data.data_update_frequency_activity) %}
 
 .. role:: raw-html(raw)
    :format: html
@@ -104,9 +106,9 @@
       :Data coverage: {{ Data.data_coverage_period_end }} (the end of the time period covered)
       {%- endif %}
       :Data updates: {%- if Data.data_update_frequency_activity == "ONGOING" %}
-                     | {{ data_update_frequency_cadence_terms.get(Data.data_update_frequency_cadence, Data.data_update_frequency_cadence) }} update frequency, {{ data_update_frequency_activity_terms.ONGOING }}
+                     | {{ data_update_frequency_cadence }} update frequency, {{ data_update_frequency_activity_terms.ONGOING }}
                      {%- else %}
-                     | {{ data_update_frequency_activity_terms.get(Data.data_update_frequency_activity, Data.data_update_frequency_activity) }}. (Previously, {{ data_update_frequency_cadence_terms.get(Data.data_update_frequency_cadence, Data.data_update_frequency_cadence) }} update frequency.)
+                     | {{ data_update_frequency_activity }}. (Previously, {{ data_update_frequency_cadence }} update frequency.)
                      {%- endif %}
                      {%- if Data.is_currency_reported and Data.data_update_frequency_cadence == "YEARLY" %}
                      {{ "| See `currency, latest update date, and next update date <{}>`_".format(currency_report_url) }}
