@@ -115,7 +115,7 @@
 
    .. container::
 
-      .. image:: {{ Data.header_image or "/_files/pages/dea-hero.jpg" }}
+      .. image:: {{ Data.header_image or "/_files/default/dea-earth-thumbnail.jpg" }}
          :class: no-gallery
 
 .. container::
