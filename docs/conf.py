@@ -10,7 +10,6 @@ environment = {
     "build_mode": os.environ.get("BUILD_MODE"),
     "git_branch": os.environ.get("BRANCH"),
     "local_enable_redirects": os.environ.get("LOCAL_ENABLE_REDIRECTS"),
-    "local_enable_tags": os.environ.get("LOCAL_ENABLE_TAGS"),
     "pr_preview_subdomain": os.environ.get("PR_PREVIEW_SUBDOMAIN"),
     "enable_tags": os.environ.get("LOCAL_ENABLE_TAGS"),
 }
@@ -46,7 +45,6 @@ exclude_patterns += utilities.optional_exclude_pattern("LOCAL_ENABLE_NOTEBOOKS",
 exclude_patterns += utilities.optional_exclude_pattern("LOCAL_ENABLE_NOTEBOOKS", "dea-notebooks")
 exclude_patterns += utilities.optional_exclude_pattern("LOCAL_ENABLE_VALIDATION_REPORTS", "validation")
 exclude_patterns += utilities.optional_exclude_pattern("LOCAL_ENABLE_OPERATIONAL_REPORTS", "operational-reports")
-exclude_patterns += utilities.optional_exclude_pattern("LOCAL_ENABLE_TAGS", "tags")
 exclude_patterns += utilities.optional_exclude_pattern("LOCAL_ENABLE_TECH_ALERTS_CHANGELOG", "tech-alerts-changelog")
 
 html_title = "DEA Knowledge Hub"
