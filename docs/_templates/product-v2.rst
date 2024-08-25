@@ -44,35 +44,55 @@
    "dash": "\-",
 } %}
 
-{# Lists #}
+{# Computed variables: Lists #}
 
-{% set lists = {
-   "maps": page.data.maps | selectattr("link",  "!=", None) | list,
-   "data": page.data.data | selectattr("link",  "!=", None) | list,
-   "explorers": page.data.explorers | selectattr("link",  "!=", None) | list,
-   "web_services": page.data.web_services | selectattr("link",  "!=", None) | list,
-   "code_samples": page.data.code_examples | selectattr("link",  "!=", None) | list,
-   "custom": page.data.custom | selectattr("icon",  "!=", None) | selectattr("link",  "!=", None) | selectattr("name",  "!=", None) | list,
-   "old_versions": page.data.old_versions | selectattr("slug",  "!=", None) | selectattr("version",  "!=", None) | selectattr("name",  "!=", None) | list,
-   "product_ids": page.data.product_ids | select("!=", None) | list,
-} %}
+{% set maps_list = page.data.maps | selectattr("link",  "!=", None) | list %}
 
-{% set valid_product_types = [page.data.lineage_type, page.data.spatial_data_type] | select("!=", None) | list %}
-{% set links.custom_citations = page.data.custom_citations | select("!=", None) | list %}
-{% set valid_tags = page.data.tags | select("!=", None) | list %}
-{% set valid_bands_table = page.specifications.bands_table | selectattr("name",  "!=", None) | list %}
+{% set data_list = page.data.data | selectattr("link",  "!=", None) | list %}
 
-{% set has_access_data = links.maps or links.data or links.explorers or links.web_services or links.code_samples or links.custom %}
-{% set has_key_details = (page.data.parent_products.name and page.data.parent_products.link) or (page.data.collection.name and page.data.collection.link) or page.data.collection.name or page.data.doi or page.data.ecat or page.data.published %}
+{% set explorers_list = page.data.explorers | selectattr("link",  "!=", None) | list %}
+
+{% set web_services_list = page.data.web_services | selectattr("link",  "!=", None) | list %}
+
+{% set code_samples_list = page.data.code_examples | selectattr("link",  "!=", None) | list %}
+
+{% set custom_list = page.data.custom | selectattr("icon",  "!=", None) | selectattr("link",  "!=", None) | selectattr("name",  "!=", None) | list %}
+
+{% set old_list_versions = page.data.old_versions | selectattr("slug",  "!=", None) | selectattr("version",  "!=", None) | selectattr("name",  "!=", None) | list %}
+
+{% set product_list_ids = page.data.product_ids | select("!=", None) | list %}
+
+{% set product_list_types = [page.data.lineage_type, page.data.spatial_data_type] | select("!=", None) | list %}
+
+{% set custom_list_citations = page.data.custom_citations | select("!=", None) | list %}
+
+{% set tags_list = page.data.tags | select("!=", None) | list %}
+
+{% set bands_list_table = page.specifications.bands_table | selectattr("name",  "!=", None) | list %}
+
+{# Computed variables: Other values #}
 
 {% set page_title = page.data.official_name if page.data.is_latest_version else "{}: {}".format(page.data.product_version, page.data.official_name) %}
-{% set product_ids_label = "Product IDs" if lists.product_ids | length > 1 else "Product ID" %}
-{% set product_ids_comma_separated = lists.product_ids | join(", ") %}
+
+{% set product_ids_label = "Product IDs" if valid_product_ids | length > 1 else "Product ID" %}
+
+{% set product_ids_comma_separated = valid_product_ids | join(", ") %}
+
 {% set currency_report_url = "https://mgmt.sandbox.dea.ga.gov.au/public-dashboards/d22241dbfca54b1fa9f73938ef26e645?orgId=1#:~:text={}".format(page.data.official_name | urlencode) %}
+
 {% set data_update_frequency_cadence = data_update_frequency_cadence_terms.get(page.data.data_update_frequency_cadence, page.data.data_update_frequency_cadence) %}
+
 {% set data_update_frequency_activity = data_update_frequency_activity_terms.get(page.data.data_update_frequency_activity, page.data.data_update_frequency_activity) %}
+
 {% set is_frequency_ongoing = data_update_frequency_activity == data_update_frequency_activity_terms.ONGOING %}
+
+{% set has_access_data = maps_list or data_list or explorers_list or web_services_list or code_samples_list or custom_list %}
+
+{% set has_key_details = (page.data.parent_products.name and page.data.parent_products.link) or (page.data.collection.name and page.data.collection.link) or page.data.collection.name or page.data.doi or page.data.ecat or page.data.published %}
+
 {% set is_cadence_multiple_words = data_update_frequency_cadence.split(" ") | length > 1 %}
+
+{# Template #}
 
 .. role:: raw-html(raw)
    :format: html
@@ -92,16 +112,16 @@
       {% if page.data.full_technical_name %}
       :Full name: {{ page.data.full_technical_name }}
       {%- endif %}
-      {%- if page.data.is_latest_version and lists.old_versions | length > 0 and page.data.enable_history %} {# If at least one old product version exists. #}
+      {%- if page.data.is_latest_version and valid_old_versions | length > 0 and page.data.enable_history %} {# If at least one old product version exists. #}
       :Product version: `{{ page.data.product_version }} <./?tab=history>`_
       {%- elif page.data.is_latest_version %}
       :Product version: {{ page.data.product_version }}
       {%- else %}
       :Product version: {{ page.data.product_version }} (`See latest product version <{{ page.data.latest_version_link }}>`_)
       {%- endif %}
-      {%- if lists.product_ids and page.data.enable_access %}
+      {%- if valid_product_ids and page.data.enable_access %}
       :{{ product_ids_label }}: `{{ product_ids_comma_separated }} <./?tab=access>`_
-      {%- elif lists.product_ids %}
+      {%- elif valid_product_ids %}
       :{{ product_ids_label }}: {{ product_ids_comma_separated }}
       {%- endif %}
       :Type: {{ valid_product_types | join(", ") }}
@@ -186,7 +206,7 @@
           .. grid:: 2 2 3 5
              :gutter: 3
 
-             {% for item in links.maps %}
+             {% for item in maps_list %}
              .. grid-item-card:: :fas:`map-location-dot`
                 :link: {{ item.link }}
                 :link-alt: {{ access_labels.map }}
@@ -194,7 +214,7 @@
                 {{ item.name or access_names.map }}
              {% endfor %}
 
-             {% for item in links.explorers %}
+             {% for item in explorers_list %}
              .. grid-item-card:: :fas:`magnifying-glass`
                 :link: {{ item.link }}
                 :link-alt: {{ access_labels.explorer }}
@@ -202,7 +222,7 @@
                 {{ item.name or access_names.explorer }}
              {% endfor %}
 
-             {% for item in links.data %}
+             {% for item in data_list %}
              .. grid-item-card:: :fas:`database`
                 :link: {{ item.link }}
                 :link-alt: {{ access_labels.data }}
@@ -210,7 +230,7 @@
                 {{ item.name or access_names.data }}
              {% endfor %}
 
-             {% for item in links.code_samples %}
+             {% for item in code_samples_list %}
              .. grid-item-card:: :fas:`laptop-code`
                 :link: {{ item.link }}
                 :link-alt: {{ access_labels.code_sample }}
@@ -218,7 +238,7 @@
                 {{ item.name or access_names.code_sample }}
              {% endfor %}
 
-             {% for item in links.web_services %}
+             {% for item in web_services_list %}
              .. grid-item-card:: :fas:`globe`
                 :link: {{ item.link }}
                 :link-alt: {{ access_labels.web_service }}
@@ -226,7 +246,7 @@
                 {{ item.name or access_names.web_service }}
              {% endfor %}
 
-             {% for item in links.custom %}
+             {% for item in custom_list %}
              .. grid-item-card:: :fas:`{{ item.icon }}`
                 :link: {{ item.link }}
                 :link-alt: {{ item.label or "" }}
@@ -308,7 +328,7 @@
 
                  {{ page.data.citations.paper_citation }}
           {%- endif %}
-          {% for citation in links.custom_citations %}
+          {% for citation in custom_list_citations %}
           * - **{{ citation.name }}**
             - .. code-block:: text
                  :class: citation-table-citation
@@ -411,47 +431,47 @@
        .. list-table::
           :name: access-table
 
-          {% if links.maps %}
+          {% if maps_list %}
           * - **{{ access_labels.map }}**
-            - {% for item in links.maps %}
+            - {% for item in maps_list %}
               * `{{ item.name or access_names.map }} <{{ item.link }}>`_
               {% endfor %}
             - Learn how to `use DEA Maps </guides/setup/dea_maps/>`_
           {% endif %}
 
-          {% if links.explorers %}
+          {% if explorers_list %}
           * - **{{ access_labels.explorer }}**
-            - {% for item in links.explorers %}
+            - {% for item in explorers_list %}
               * `{{ item.name or access_names.explorer }} <{{ item.link }}>`_
               {% endfor %}
             - Learn how to `use the DEA Explorer </setup/explorer_guide/>`_
           {% endif %}
 
-          {% if links.data %}
+          {% if data_list %}
           * - **{{ access_labels.data }}**
-            - {% for item in links.data %}
+            - {% for item in data_list %}
               * `{{ item.name or access_names.data }} <{{ item.link }}>`_
               {% endfor %}
             - Learn how to `access the data via AWS </guides/about/faq/#download-dea-data>`_
           {% endif %}
 
-          {% if links.code_samples %}
+          {% if code_samples_list %}
           * - **{{ access_labels.code_sample }}**
-            - {% for item in links.code_samples %}
+            - {% for item in code_samples_list %}
               * `{{ item.name or access_names.code_sample }} <{{ item.link }}>`_
               {% endfor %}
             - Learn how to `use the DEA Sandbox </guides/setup/Sandbox/sandbox/>`_
           {% endif %}
 
-          {% if links.web_services %}
+          {% if web_services_list %}
           * - **{{ access_labels.web_service }}**
-            - {% for item in links.web_services %}
+            - {% for item in web_services_list %}
               * `{{ item.name or access_names.web_service }} <{{ item.link }}>`_
               {% endfor %}
             - Learn how to `use DEA's web services </guides/setup/gis/README/>`_
           {% endif %}
 
-          {% for item in links.custom %}
+          {% for item in custom_list %}
           * - **{{ item.label or "" }}**
             - * `{{ item.name }} <{{ item.link }}>`_
             - {{ item.description or "" }}
@@ -483,14 +503,14 @@
           :name: version-history
           :class: h2
 
-       {% if lists.old_versions | length > 0 %}
+       {% if valid_old_versions | length > 0 %}
 
        View previous releases of this data product.
 
        .. list-table::
 
           * - {{ page.data.product_version }}: Current version
-          {% for item in lists.old_versions %}
+          {% for item in valid_old_versions %}
           * - `{{ item.version }}: {{ item.title }} </data/version-history/{{ item.slug }}/>`_
           {% endfor %}
        {% else %}
