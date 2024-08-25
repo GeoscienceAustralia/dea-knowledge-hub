@@ -12,6 +12,7 @@ environment = {
     "local_enable_redirects": os.environ.get("LOCAL_ENABLE_REDIRECTS"),
     "local_enable_tags": os.environ.get("LOCAL_ENABLE_TAGS"),
     "pr_preview_subdomain": os.environ.get("PR_PREVIEW_SUBDOMAIN"),
+    "enable_tags": os.environ.get("LOCAL_ENABLE_TAGS"),
 }
 
 project = "DEA Knowledge Hub"
