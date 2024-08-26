@@ -6,13 +6,11 @@ from _modules import utilities
 from _modules import mock_imports
 from _modules import pr_preview
 
-environment = {
-    "build_mode": os.environ.get("BUILD_MODE"),
-    "git_branch": os.environ.get("BRANCH"),
-    "local_enable_tags": os.environ.get("LOCAL_ENABLE_TAGS"),
-    "local_enable_redirects": os.environ.get("LOCAL_ENABLE_REDIRECTS"),
-    "pr_preview_subdomain": os.environ.get("PR_PREVIEW_SUBDOMAIN"),
-}
+build_mode = os.environ.get("BUILD_MODE")
+git_branch = os.environ.get("BRANCH")
+enable_tags = os.environ.get("LOCAL_ENABLE_TAGS").lower() == "yes"
+enable_redirects = os.environ.get("LOCAL_ENABLE_REDIRECTS").lower() == "yes"
+pr_preview_subdomain = os.environ.get("PR_PREVIEW_SUBDOMAIN")
 
 project = "DEA Knowledge Hub"
 copyright = f"{utilities.current_year()}, Geoscience Australia"
@@ -22,6 +20,9 @@ html_static_path = ["_static", "_files"]
 templates_path = ["_layouts", "_templates"]
 html_extra_path = ["robots.txt"]
 source_suffix = [".rst", ".md"]
+
+is_production = build_mode == "production"
+is_pr_preview = build_mode == "pr-preview"
 
 exclude_patterns = [
     "**/.*",
@@ -53,8 +54,8 @@ html_favicon = "_static/favicons/dea-favicon.ico"
 html_theme = 'pydata_sphinx_theme'
 language = "en"
 
-if environment["build_mode"] == "production": html_baseurl = "https://knowledge.dea.ga.gov.au/"
-elif environment["build_mode"] == "pr-preview": html_baseurl = f"https://{environment['pr_preview_subdomain']}.khpreview.dea.ga.gov.au/"
+if is_production: html_baseurl = "https://knowledge.dea.ga.gov.au/"
+elif is_pr_preview: html_baseurl = f"https://{pr_preview_subdomain}.khpreview.dea.ga.gov.au/"
 else: html_baseurl = ""
 
 html_permalinks = False
@@ -93,8 +94,7 @@ nbsphinx_execute = "never"
 external_toc_path = "table_of_contents.yaml"
 
 if (
-    environment["build_mode"] in ["pr-preview", "production"]
-    or environment["local_enable_redirects"] == "Yes"
+    is_production or is_pr_preview or enable_redirects
 ): rediraffe_redirects = utilities.source_redirects("_redirects/*.txt")
 
 sitemap_url_scheme = "{link}"
@@ -117,10 +117,7 @@ notfound_template = "404-not-found.html"
 notfound_pagename = "404-not-found"
 notfound_urls_prefix = ""
 
-tags_create_tags = (
-    environment["build_mode"] in ["pr-preview", "production"]
-    or environment["local_enable_tags"] == "Yes"
-)
+tags_create_tags = (is_production or is_pr_preview or enable_tags)
 
 html_css_files = [
     'styles/styles.css'
@@ -147,16 +144,16 @@ html_theme_options = {
     },
 }
 
-if environment["build_mode"] == "pr-preview":
+if is_pr_preview:
     html_theme_options["announcement"] = pr_preview.banner()
 
 html_context = {
     "default_mode": "light",
     "meta_keywords": "DEA, Digital Earth Australia, GA, Geoscience Australia, Knowledge, Documentation, Content, Learn, Learning, Data Products, Metadata, User Guides, DEA Notebooks, Notebooks, Open Data Cube, CMI, Content Management Interface, Developer, Python, Jupyter",
-    "enable_tags": environment["local_enable_tags"] == "Yes",
+    "enable_tags": enable_tags,
 }
 
-if environment["build_mode"] == "production": html_context["google_analytics_ga4_tag"] = "G-4B9D450HR4"
+if is_production: html_context["google_analytics_ga4_tag"] = "G-4B9D450HR4"
 
 suppress_warnings = [
     # "etoc.toctree"
