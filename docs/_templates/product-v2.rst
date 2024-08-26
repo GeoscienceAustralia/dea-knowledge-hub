@@ -159,7 +159,7 @@
       .. image:: {{ page.data.header_image or "/_files/default/dea-earth-thumbnail.jpg" }}
          :class: no-gallery
 
-{# Notifications and alerts section #}
+{# Notifications section #}
 
 .. container::
    :name: notifications
