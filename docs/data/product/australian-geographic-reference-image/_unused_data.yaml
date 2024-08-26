@@ -33,8 +33,8 @@ open_data_cube_configuration: null
 security_classification: Unclassified
 time_span_full:
 
-data_coverage_period_start: null
-data_coverage_period_end: null
+time_span_start: null
+time_span_end: null
 
 # Details tab
 
@@ -51,8 +51,8 @@ major_algorithms:
   - Full pass/strip processing
 schema_spatial_extent:
   temporal_extent:
-  data_coverage_period_start: null
-  data_coverage_period_end: null
+  time_span_start: null
+  time_span_end: null
   min_longitude: null
   max_longitude: null
   min_latitude: null

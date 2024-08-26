@@ -42,8 +42,8 @@ open_data_cube_configuration: null
 security_classification: Unclassified
 time_span_full:
 
-data_coverage_period_start: null
-data_coverage_period_end: null
+time_span_start: null
+time_span_end: null
 
 # Details tab
 
@@ -68,8 +68,8 @@ data_sources:
 major_algorithms: null
 schema_spatial_extent:
   temporal_extent:
-  data_coverage_period_start: 1986-08-15T14:00:00+1000
-  data_coverage_period_end: 2017-07-31T13:59:59+1000
+  time_span_start: 1986-08-15T14:00:00+1000
+  time_span_end: 2017-07-31T13:59:59+1000
   min_longitude: -1943830
   max_longitude: 2170690
   min_latitude: -1119030

@@ -35,8 +35,8 @@ open_data_cube_configuration: null
 security_classification: Unclassified
 time_span_full:
 
-data_coverage_period_start: 2020-12-04T04:42:15+1100
-data_coverage_period_end: 2022-12-31T04:42:39+1100
+time_span_start: 2020-12-04T04:42:15+1100
+time_span_end: 2022-12-31T04:42:39+1100
 
 # Details tab
 
@@ -52,8 +52,8 @@ data_sources:
 major_algorithms: null
 schema_spatial_extent:
   temporal_extent:
-  data_coverage_period_start: 1987-01-01T00:44:40+1100
-  data_coverage_period_end: 2019-12-31T00:44:40+1100
+  time_span_start: 1987-01-01T00:44:40+1100
+  time_span_end: 2019-12-31T00:44:40+1100
   min_longitude: null
   max_longitude: null
   min_latitude: null

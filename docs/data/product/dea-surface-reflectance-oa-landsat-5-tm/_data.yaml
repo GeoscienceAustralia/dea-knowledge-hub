@@ -15,9 +15,9 @@ is_provisional: false
 lineage_type: Baseline
 spatial_data_type: Raster
 
-data_coverage_period_start: 16 Aug 1986
-data_coverage_period_end: 17 Nov 2011
-data_coverage_period_custom: null
+time_span_start: 16 Aug 1986
+time_span_end: 17 Nov 2011
+time_span_custom: null
 
 data_update_frequency_cadence: DAILY
 data_update_frequency_activity: NO_UPDATES
