@@ -69,10 +69,10 @@ Use `MyNCI <https://my.nci.org.au/>`_ to view and manage your project membership
      - Geoscience Australia Sentinel-2 Analysis Ready Data (Collection 3)
      
    * - jw04_
-     - Geoscience Australia Landsat Derivatives (Collection 3), e.g. DEA Water Observations, DEA Fractional Cover, DEA GeoMAD, DEA Intertidal
+     - Geoscience Australia Landsat Derivatives (Collection 3), e.g. `Water Observations </data/product/dea-water-observations-landsat/>`_, `Fractional Cover </data/product/dea-fractional-cover-landsat/>`_, `GeoMAD </data/product/dea-geometric-median-and-median-absolute-deviation-landsat/>`_, `Mangroves </data/product/dea-mangrove-canopy-cover-landsat/>`_, and `Intertidal </data/product/dea-intertidal/>`_.
 
    * - fk4_
-     - Legacy Geoscience Australia Landsat Derivatives (Collection 2), e.g. NIDEM, ITEM, HLTC
+     - Legacy Geoscience Australia Landsat Derivatives (Collection 2), e.g. `Intertidal Elevation (NIDEM) </data/old-version/dea-intertidal-elevation-landsat-1.0.0/>`_, `Intertidal Extents (ITEM) </data/product/dea-intertidal-extents-landsat/>`_, and `High and Low Tide Imagery (HLTC) </data/product/dea-high-and-low-tide-imagery-landsat/>`_.
 
 .. _xu18: https://my.nci.org.au/mancini/project/xu18
 .. _ka08: https://my.nci.org.au/mancini/project/ka08
