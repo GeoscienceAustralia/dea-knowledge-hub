@@ -133,7 +133,7 @@
       {%- if page.data.time_span_custom %}
       :Time span: {{ page.data.time_span_custom }}
       {%- elif page.data.time_span_start and page.data.time_span_end %}
-      :Time span: {{ page.data.time_span_start }} :raw-html:`&ndash;` {{ page.data.time_span_end }} (The data covers these dates)
+      :Time span: {{ page.data.time_span_start }} :raw-html:`&ndash;` {{ page.data.time_span_end }} (The data spans these dates)
       {%- elif page.data.time_span_start  %}
       :Time span: {{ page.data.time_span_start }} (The data starts at this date)
       {%- elif page.data.time_span_end  %}
