@@ -1,5 +1,5 @@
-# This script can be used to generate the 'Bands table' metadata that is displayed in the Specifications tab of product pages. Data is fetched from the Datacube and then is outputted in the correct YAML format which can be copy-pasted into the product's '_specifications.yaml' file.
-# Note: This script is designed to be run in the DEA Sandbox environment. The resulting YAML output will require additional manual editing, e.g. replacing "placeholder" text with correct band descriptions.
+# This script can be used to generate the 'Bands table' metadata that is displayed in the Specifications tab of product pages. Data is fetched from the Datacube and then is outputted in the correct YAML format which can be copy-pasted into the product's '_specifications.yaml' file. The resulting YAML output will require additional manual editing, e.g. replacing "placeholder" text with correct band descriptions.
+# Note: This script is designed to be run in the DEA Sandbox environment.
 
 import sys
 import ruamel.yaml
