@@ -52,8 +52,8 @@ major_algorithms:
   - Normalised Difference Water Index (NDWI)
 schema_spatial_extent:
   temporal_extent:
-    time_span_start: 1986-08-15T14:00:00+1000
-    time_span_end: 2017-07-31T13:59:59+1000
+  time_span_start: 1986-08-15T14:00:00+1000
+  time_span_end: 2017-07-31T13:59:59+1000
   min_longitude: -1943830
   max_longitude: 2170690
   min_latitude: -1119030

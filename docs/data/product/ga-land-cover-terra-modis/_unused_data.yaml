@@ -58,8 +58,8 @@ major_algorithms:
   - DLCD classification (Lymburner et al., 2011)
 schema_spatial_extent:
   temporal_extent:
-    time_span_start: 2000-12-31T13:00:00+1100
-    time_span_end: 2014-12-31T13:00:00+1100
+  time_span_start: 2000-12-31T13:00:00+1100
+  time_span_end: 2014-12-31T13:00:00+1100
   min_longitude: 110
   max_longitude: 155
   min_latitude: -45

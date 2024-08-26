@@ -66,8 +66,8 @@ major_algorithms:
   - Rates of change and linear regression statistics
 schema_spatial_extent:
   temporal_extent:
-    time_span_start: 1987-12-31T13:00:00+1100
-    time_span_end: 2022-12-31T00:59:59+1100
+  time_span_start: 1987-12-31T13:00:00+1100
+  time_span_end: 2022-12-31T00:59:59+1100
   min_longitude: -4846590
   max_longitude: -1887450
   min_latitude: -1015650
