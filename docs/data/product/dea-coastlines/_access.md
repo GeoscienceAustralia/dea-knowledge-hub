@@ -52,28 +52,34 @@ ymax, xmin = -33.65, 115.28
 ymin, xmax = -33.66, 115.30
 
 # Set up WFS requests for annual shorelines & rates of change points
-deacl_annualshorelines_wfs = f'https://geoserver.dea.ga.gov.au/geoserver/wfs?' \
-                       f'service=WFS&version=1.1.0&request=GetFeature' \
-                       f'&typeName=dea:shorelines_annual&maxFeatures=1000' \
-                       f'&bbox={ymin},{xmin},{ymax},{xmax},' \
-                       f'urn:ogc:def:crs:EPSG:4326'
-deacl_ratesofchange_wfs = f'https://geoserver.dea.ga.gov.au/geoserver/wfs?' \
-                       f'service=WFS&version=1.1.0&request=GetFeature' \
-                       f'&typeName=dea:rates_of_change&maxFeatures=1000' \
-                       f'&bbox={ymin},{xmin},{ymax},{xmax},' \
-                       f'urn:ogc:def:crs:EPSG:4326'
+deacl_annualshorelines_wfs = (
+    f"https://nonprod.geoserver.dea.ga.gov.au/geoserver/dea/wfs?"
+    f"service=WFS&version=1.1.0&request=GetFeature"
+    f"&typeName=dea:shorelines_annual&maxFeatures=1000"
+    f"&bbox={ymin},{xmin},{ymax},{xmax},"
+    f"urn:ogc:def:crs:EPSG:4326"
+)
+deacl_ratesofchange_wfs = (
+    f"https://nonprod.geoserver.dea.ga.gov.au/geoserver/dea/wfs?"
+    f"service=WFS&version=1.1.0&request=GetFeature"
+    f"&typeName=dea:rates_of_change&maxFeatures=1000"
+    f"&bbox={ymin},{xmin},{ymax},{xmax},"
+    f"urn:ogc:def:crs:EPSG:4326"
+)
 
 # Load DEA Coastlines data from WFS using geopandas
 deacl_annualshorelines_gdf = gpd.read_file(deacl_annualshorelines_wfs)
 deacl_ratesofchange_gdf = gpd.read_file(deacl_ratesofchange_wfs)
 
 # Ensure CRSs are set correctly
-deacl_annualshorelines_gdf.crs = 'EPSG:3577'
-deacl_ratesofchange_gdf.crs = 'EPSG:3577'
+deacl_annualshorelines_gdf.crs = "EPSG:3577"
+deacl_ratesofchange_gdf.crs = "EPSG:3577"
 
-# Optional: Keep only rates of change points with "good" certainty 
-# (i.e. no poor quality flags)
-deacl_ratesofchange_gdf = deacl_ratesofchange_gdf.query("certainty == 'good'")
+# Optional: Keep only statistically significant (p <= 0.01) rates of change points
+# with "good" certainty (i.e. no poor quality flags)
+deacl_ratesofchange_gdf = deacl_ratesofchange_gdf.query(
+    "(sig_time <= 0.01) & (certainty == 'good')"
+)
 ```
 :::
 
@@ -81,9 +87,9 @@ deacl_ratesofchange_gdf = deacl_ratesofchange_gdf.query("certainty == 'good'")
 DEA Coastlines data can be loaded directly into R using the DEA Coastlines Web Feature Service (WFS) and the `sf` package:
 
 ```r
-library(magrittr)
 library(glue)
 library(sf)
+library(dplyr)
 
 # Specify bounding box
 xmin = 115.28
@@ -91,19 +97,24 @@ xmax = 115.30
 ymin = -33.66
 ymax = -33.65
 
-# Read in DEA Coastlines annual shoreline data, using `glue` to insert our bounding 
-# box into the string, and `sf` to  load the spatial data from the Web Feature Service 
+# Read in DEA Coastlines annual shoreline data, using `glue` to insert our bounding
+# box into the string, and `sf` to  load the spatial data from the Web Feature Service
 # and set the Coordinate Reference System to Australian Albers (EPSG:3577)
-deacl_annualshorelines = "https://geoserver.dea.ga.gov.au/geoserver/wfs?service=WFS&version=1.1.0&request=GetFeature&typeName=dea:shorelines_annual&maxFeatures=1000&bbox={ymin},{xmin},{ymax},{xmax},urn:ogc:def:crs:EPSG:4326" %>% 
+deacl_annualshorelines = "https://geoserver.dea.ga.gov.au/geoserver/wfs?service=WFS&version=1.1.0&request=GetFeature&typeName=dea:shorelines_annual&maxFeatures=1000&bbox={ymin},{xmin},{ymax},{xmax},urn:ogc:def:crs:EPSG:4326" %>%
   glue::glue() %>%
-  sf::read_sf() %>% 
+  sf::read_sf() %>%
   sf::st_set_crs(3577)
 
 # Read in DEA Coastlines rates of change points
-deacl_ratesofchange = "https://geoserver.dea.ga.gov.au/geoserver/wfs?service=WFS&version=1.1.0&request=GetFeature&typeName=dea:rates_of_change&maxFeatures=1000&bbox={ymin},{xmin},{ymax},{xmax},urn:ogc:def:crs:EPSG:4326" %>% 
+deacl_ratesofchange = "https://geoserver.dea.ga.gov.au/geoserver/wfs?service=WFS&version=1.1.0&request=GetFeature&typeName=dea:rates_of_change&maxFeatures=1000&bbox={ymin},{xmin},{ymax},{xmax},urn:ogc:def:crs:EPSG:4326" %>%
   glue::glue() %>%
-  sf::read_sf() %>% 
+  sf::read_sf() %>%
   sf::st_set_crs(3577)
+
+# Optional: Keep only statistically significant (p <= 0.01) rates of change points 
+# with "good" certainty (i.e. no poor quality flags)
+deacl_ratesofchange = deacl_ratesofchange %>% 
+  filter((sig_time <= 0.01) & (certainty == "good"))
 ```
 :::
 
