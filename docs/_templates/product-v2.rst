@@ -103,6 +103,8 @@
 {{ page_title }}
 ======================================================================================================================================================
 
+{# Header panel #}
+
 .. container:: showcase-panel product-header bg-gradient-primary
 
    .. container::
@@ -159,6 +161,8 @@
       .. image:: {{ page.data.header_image or "/_files/default/dea-earth-thumbnail.jpg" }}
          :class: no-gallery
 
+{# Callouts and alerts section #}
+
 .. container::
    :name: notifications
 
@@ -177,10 +181,9 @@
 
    {% endif %}
 
-{% if not page.data.is_latest_version %}
-{% endif %}
-
 .. tab-set::
+
+    {# Overview tab #}
 
     {% if page.data.enable_overview %}
     .. tab-item:: Overview
@@ -346,6 +349,8 @@
           :parser: myst_parser.sphinx_
     {% endif %}
 
+    {# Details tab #}
+
     {% if page.data.enable_details %}
     .. tab-item:: Details
        :name: details
@@ -358,6 +363,8 @@
           :parser: myst_parser.sphinx_
     {% endif %}
 
+    {# Quality tab #}
+
     {% if page.data.enable_quality %}
     .. tab-item:: Quality
        :name: quality
@@ -369,6 +376,8 @@
        .. include:: _quality.md
           :parser: myst_parser.sphinx_
     {% endif %}
+
+    {# Specifications tab #}
 
     {% if page.specifications.enable_specifications %}
     .. tab-item:: Specifications
@@ -414,6 +423,8 @@
        {{ page.specifications.bands_footnote if page.specifications.bands_footnote }}
        {% endif %}
     {% endif %}
+
+    {# Access tab #}
 
     {% if page.data.enable_access %}
     .. tab-item:: Access
@@ -484,6 +495,8 @@
           :parser: myst_parser.sphinx_
     {% endif %}
 
+    {# History tab #}
+
     {% if page.data.enable_history %}
     .. tab-item:: History
        :name: history
@@ -522,6 +535,8 @@
        {% endif %}
     {% endif %}
 
+    {# FAQs tab #}
+
     {% if page.data.enable_faqs %}
     .. tab-item:: FAQs
        :name: faqs
@@ -533,6 +548,8 @@
        .. include:: _faqs.md
           :parser: myst_parser.sphinx_
     {% endif %}
+
+    {# Credits tab #}
 
     {% if page.data.enable_credits %}
     .. tab-item:: Credits
