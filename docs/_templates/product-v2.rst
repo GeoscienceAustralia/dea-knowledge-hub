@@ -44,7 +44,7 @@
    "dash": "\-",
 } %}
 
-{# Computed variables: Lists #}
+{# Computed variables #}
 
 {% set maps_list = page.data.maps | selectattr("link",  "!=", None) | list %}
 
@@ -58,25 +58,23 @@
 
 {% set custom_list = page.data.custom | selectattr("icon",  "!=", None) | selectattr("link",  "!=", None) | selectattr("name",  "!=", None) | list %}
 
-{% set old_list_versions = page.data.old_versions | selectattr("slug",  "!=", None) | selectattr("version",  "!=", None) | selectattr("name",  "!=", None) | list %}
+{% set old_versions_list = page.data.old_versions | selectattr("slug",  "!=", None) | selectattr("version",  "!=", None) | selectattr("name",  "!=", None) | list %}
 
-{% set product_list_ids = page.data.product_ids | select("!=", None) | list %}
+{% set product_ids_list = page.data.product_ids | select("!=", None) | list %}
 
-{% set product_list_types = [page.data.lineage_type, page.data.spatial_data_type] | select("!=", None) | list %}
+{% set product_types_list = [page.data.lineage_type, page.data.spatial_data_type] | select("!=", None) | list %}
 
-{% set custom_list_citations = page.data.custom_citations | select("!=", None) | list %}
+{% set custom_citations_list = page.data.custom_citations | select("!=", None) | list %}
 
 {% set tags_list = page.data.tags | select("!=", None) | list %}
 
 {% set bands_list_table = page.specifications.bands_table | selectattr("name",  "!=", None) | list %}
 
-{# Computed variables: Other values #}
-
 {% set page_title = page.data.official_name if page.data.is_latest_version else "{}: {}".format(page.data.product_version, page.data.official_name) %}
 
-{% set product_ids_label = "Product IDs" if valid_product_ids | length > 1 else "Product ID" %}
+{% set product_ids_label = "Product IDs" if product_ids_list | length > 1 else "Product ID" %}
 
-{% set product_ids_comma_separated = valid_product_ids | join(", ") %}
+{% set product_ids_comma_separated = product_ids_list | join(", ") %}
 
 {% set currency_report_url = "https://mgmt.sandbox.dea.ga.gov.au/public-dashboards/d22241dbfca54b1fa9f73938ef26e645?orgId=1#:~:text={}".format(page.data.official_name | urlencode) %}
 
@@ -121,9 +119,9 @@
       {%- else %}
       :Product version: {{ page.data.product_version }} (`See latest product version <{{ page.data.latest_version_link }}>`_)
       {%- endif %}
-      {%- if valid_product_ids and page.data.enable_access %}
+      {%- if product_ids_list and page.data.enable_access %}
       :{{ product_ids_label }}: `{{ product_ids_comma_separated }} <./?tab=access>`_
-      {%- elif valid_product_ids %}
+      {%- elif product_ids_list %}
       :{{ product_ids_label }}: {{ product_ids_comma_separated }}
       {%- endif %}
       :Type: {{ valid_product_types | join(", ") }}
@@ -161,7 +159,7 @@
       .. image:: {{ page.data.header_image or "/_files/default/dea-earth-thumbnail.jpg" }}
          :class: no-gallery
 
-{# Callouts and alerts section #}
+{# Alerts and notifications section #}
 
 .. container::
    :name: notifications
