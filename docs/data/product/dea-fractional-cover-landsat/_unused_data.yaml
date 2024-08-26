@@ -34,9 +34,8 @@ doi_url: null
 open_data_cube_configuration: null
 security_classification: Unclassified
 time_span_full:
-
-time_span_start: 1978-03-03T13:00:01+1100
-time_span_end: 2030-08-01T02:59:00+1000
+  start: 1978-03-03T13:00:01+1100
+  end: 2030-08-01T02:59:00+1000
 
 # Details tab
 

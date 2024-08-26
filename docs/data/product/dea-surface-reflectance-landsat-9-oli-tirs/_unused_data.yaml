@@ -35,9 +35,8 @@ doi_url: https://dx.doi.org/10.26186/148693
 open_data_cube_configuration: null
 security_classification: Unclassified
 time_span_full:
-
-time_span_start: null
-time_span_end: null
+  start: null
+  end: null
 
 # Details tab
 

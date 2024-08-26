@@ -34,9 +34,8 @@ doi_url: null
 open_data_cube_configuration: null
 security_classification: Unclassified
 time_span_full:
-
-time_span_start: 2020-12-04T04:42:15+1100
-time_span_end: 2022-12-31T04:42:39+1100
+  start: 2020-12-04T04:42:15+1100
+  end: 2022-12-31T04:42:39+1100
 
 # Details tab
 

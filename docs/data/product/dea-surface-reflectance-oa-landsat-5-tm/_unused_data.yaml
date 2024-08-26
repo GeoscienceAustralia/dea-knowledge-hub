@@ -34,9 +34,8 @@ open_data_cube_configuration:
   - " https://github.com/GeoscienceAustralia/dea-config/tree/master/dev_3-0-0/products/ga-landsat-ard-3-0-0"
 security_classification: Unclassified
 time_span_full:
-
-time_span_start: null
-time_span_end: null
+  start: null
+  end: null
 
 # Details tab
 

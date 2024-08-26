@@ -35,9 +35,8 @@ doi_url: https://doi.org/10.26186/116268
 open_data_cube_configuration: null
 security_classification: Unclassified
 time_span_full:
-
-time_span_start: 1987-12-31T13:00:00+1100
-time_span_end: 2022-12-31T12:59:59+1100
+  start: 1987-12-31T13:00:00+1100
+  end: 2022-12-31T12:59:59+1100
 
 # Details tab
 

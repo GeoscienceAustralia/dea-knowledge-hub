@@ -32,9 +32,8 @@ doi_url: null
 open_data_cube_configuration: null
 security_classification: Unclassified
 time_span_full:
-
-time_span_start: 2017-05-09T00:51:30+1000
-time_span_end: 2017-05-09T00:51:30+1000
+  start: 2017-05-09T00:51:30+1000
+  end: 2017-05-09T00:51:30+1000
 
 # Details tab
 

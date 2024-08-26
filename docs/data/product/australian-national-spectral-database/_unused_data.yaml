@@ -31,9 +31,8 @@ doi_url: null
 open_data_cube_configuration: null
 security_classification: Unclassified
 time_span_full:
-
-time_span_start: null
-time_span_end: null
+  start: null
+  end: null
 
 # Details tab
 
