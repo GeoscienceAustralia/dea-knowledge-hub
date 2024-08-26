@@ -58,8 +58,8 @@ data_sources:
 major_algorithms: null
 schema_spatial_extent:
   temporal_extent:
-    start: 2021-10-30T13:00:00+1100
-    end: null
+    time_span_start: 2021-10-30T13:00:00+1100
+    time_span_end: null
   min_longitude: null
   max_longitude: null
   min_latitude: null
