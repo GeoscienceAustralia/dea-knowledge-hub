@@ -8,8 +8,8 @@ from _modules import pr_preview
 
 build_mode = os.environ.get("BUILD_MODE")
 git_branch = os.environ.get("BRANCH")
-enable_tags = os.environ.get("LOCAL_ENABLE_TAGS").lower() == "yes"
-enable_redirects = os.environ.get("LOCAL_ENABLE_REDIRECTS").lower() == "yes"
+enable_tags = os.environ.get("LOCAL_ENABLE_TAGS") == "Yes"
+enable_redirects = os.environ.get("LOCAL_ENABLE_REDIRECTS") == "Yes"
 pr_preview_subdomain = os.environ.get("PR_PREVIEW_SUBDOMAIN")
 
 project = "DEA Knowledge Hub"
