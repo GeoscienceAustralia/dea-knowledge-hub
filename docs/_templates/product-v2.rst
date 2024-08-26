@@ -112,7 +112,7 @@
       {% if page.data.full_technical_name %}
       :Full name: {{ page.data.full_technical_name }}
       {%- endif %}
-      {%- if page.data.is_latest_version and valid_old_versions | length > 0 and page.data.enable_history %} {# If at least one old product version exists. #}
+      {%- if page.data.is_latest_version and old_versions_list | length > 0 and page.data.enable_history %} {# If at least one old product version exists. #}
       :Product version: `{{ page.data.product_version }} <./?tab=history>`_
       {%- elif page.data.is_latest_version %}
       :Product version: {{ page.data.product_version }}
@@ -124,7 +124,7 @@
       {%- elif product_ids_list %}
       :{{ product_ids_label }}: {{ product_ids_comma_separated }}
       {%- endif %}
-      :Type: {{ valid_product_types | join(", ") }}
+      :Type: {{ product_types_list | join(", ") }}
       {%- if page.data.resolution and page.specifications.enable_specifications %}
       :Resolution: `{{ page.data.resolution }} <./?tab=specifications>`_
       {%- elif page.data.resolution %}
@@ -339,8 +339,8 @@
        {%- endif %}
        {%- endif %}
 
-       {%- if valid_tags and environment.local_enable_tags %}
-       .. tags:: {{ valid_tags | join(", ") }}
+       {%- if tags_list and environment.local_enable_tags %}
+       .. tags:: {{ tags_list | join(", ") }}
        {%- endif %}
 
        .. include:: _overview_2.md
@@ -385,7 +385,7 @@
 
           <div class="product-tab-table-of-contents"></div>
 
-       {% if valid_bands_table %}
+       {% if bands_table_list %}
        .. rubric:: Bands
           :name: bands
           :class: h2
@@ -407,7 +407,7 @@
             - Units
             - Type
             - Description
-          {% for band in valid_bands_table %}
+          {% for band in bands_table_list %}
           * - **{{ band.name }}**
             - {{ band.aliases|join(', ') if band.aliases else no_data_terms.dash }}
             - {{ band.resolution or no_data_terms.dash }}
@@ -514,14 +514,14 @@
           :name: version-history
           :class: h2
 
-       {% if valid_old_versions | length > 0 %}
+       {% if old_versions_list | length > 0 %}
 
        View previous releases of this data product.
 
        .. list-table::
 
           * - {{ page.data.product_version }}: Current version
-          {% for item in valid_old_versions %}
+          {% for item in old_versions_list %}
           * - `{{ item.version }}: {{ item.title }} </data/version-history/{{ item.slug }}/>`_
           {% endfor %}
        {% else %}
