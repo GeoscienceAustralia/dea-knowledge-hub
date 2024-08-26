@@ -51,8 +51,8 @@ data_sources:
 major_algorithms: null
 schema_spatial_extent:
   temporal_extent:
-  time_span_start: 1987-01-01T00:44:40+1100
-  time_span_end: 2019-12-31T00:44:40+1100
+    start: 1987-01-01T00:44:40+1100
+    end: 2019-12-31T00:44:40+1100
   min_longitude: null
   max_longitude: null
   min_latitude: null

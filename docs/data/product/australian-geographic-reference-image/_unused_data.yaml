@@ -50,8 +50,8 @@ major_algorithms:
   - Full pass/strip processing
 schema_spatial_extent:
   temporal_extent:
-  time_span_start: null
-  time_span_end: null
+    start: null
+    end: null
   min_longitude: null
   max_longitude: null
   min_latitude: null

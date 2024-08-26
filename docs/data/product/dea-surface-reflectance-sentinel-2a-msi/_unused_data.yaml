@@ -63,8 +63,8 @@ data_sources:
 major_algorithms: null
 schema_spatial_extent:
   temporal_extent:
-  time_span_start: 1975-01-21T22:52:09+1100
-  time_span_end: 2049-01-21T13:00:00+1100
+    start: 1975-01-21T22:52:09+1100
+    end: 2049-01-21T13:00:00+1100
   min_longitude: 112
   max_longitude: 154
   min_latitude: -44
