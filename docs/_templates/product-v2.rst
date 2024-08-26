@@ -131,13 +131,13 @@
       :Resolution: {{ page.data.resolution }}
       {%- endif %}
       {%- if page.data.data_coverage_period_custom %}
-      :Data coverage: {{ page.data.data_coverage_period_custom }}
+      :Time span: {{ page.data.data_coverage_period_custom }}
       {%- elif page.data.data_coverage_period_start and page.data.data_coverage_period_end %}
-      :Data coverage: {{ page.data.data_coverage_period_start }} :raw-html:`&ndash;` {{ page.data.data_coverage_period_end }} (the time period covered)
+      :Time span: {{ page.data.data_coverage_period_start }} :raw-html:`&ndash;` {{ page.data.data_coverage_period_end }} (The data covers these dates)
       {%- elif page.data.data_coverage_period_start  %}
-      :Data coverage: {{ page.data.data_coverage_period_start }} (the start of the time period covered)
+      :Time span: {{ page.data.data_coverage_period_start }} (The data starts at this date)
       {%- elif page.data.data_coverage_period_end  %}
-      :Data coverage: {{ page.data.data_coverage_period_end }} (the end of the time period covered)
+      :Time span: {{ page.data.data_coverage_period_end }} (The data ends at this date)
       {%- endif %}
       :Data updates: {%- if is_frequency_ongoing and is_cadence_multiple_words %} {# If the cadence term is multiple words long, surround it in quotation marks. E.g. 'As needed'. #}
                      | '{{ data_update_frequency_cadence }}' update frequency, {{ data_update_frequency_activity }}
