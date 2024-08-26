@@ -339,7 +339,7 @@
        {%- endif %}
        {%- endif %}
 
-       {%- if tags_list and environment.local_enable_tags %}
+       {%- if tags_list and enable_tags %}
        .. tags:: {{ tags_list | join(", ") }}
        {%- endif %}
 
