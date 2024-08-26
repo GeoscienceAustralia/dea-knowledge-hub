@@ -8,12 +8,12 @@ DEA Coastlines data for the entire Australian coastline is available to download
 * Esri Shapefiles: suitable for ArcMap and QGIS
 
 To download DEA Coastlines data:
-1. Click the [Link to data](https://data.dea.ga.gov.au/?prefix=derivative/dea_coastlines/2-1-0/) link above
-2. Click on either the OGC GeoPackage (`coastlines_v2.1.0.gpkg`) or Esri Shapefiles (`coastlines_v2.1.0.shp.zip`) to download the data to your computer.
+1. Click the [Link to data](https://data.dea.ga.gov.au/?prefix=derivative/dea_coastlines/) link above
+2. Click on either the OGC GeoPackage (`coastlines_*.gpkg`) or Esri Shapefiles (`coastlines_*.shp.zip`) to download the data to your computer.
 3. If you downloaded the Esri Shapefiles data, unzip the zip file by right clicking on the downloaded file and selecting `Extract all`.
 
 To load OGC GeoPackage data in QGIS:
-1. Drag and drop the `coastlines_v2.1.0.gpkg` file into the main QGIS map window, or select it using `Layer > Add Layer > Add Vector Layer.`
+1. Drag and drop the `coastlines_*.gpkg` file into the main QGIS map window, or select it using `Layer > Add Layer > Add Vector Layer.`
 2. When prompted to `Select Vector Layers to Add`, select all layers and then `OK`.
 3. The DEA Coastlines layers will load with built-in symbology. By default, DEA Coastlines layers automatically transition based on the zoom level of the map. To deactivate this: right click on a layer in the QGIS Layers panel, click `Set Layer Scale Visibility`, and untick `Scale visibility.`
 :::
