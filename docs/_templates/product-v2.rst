@@ -341,7 +341,7 @@
        {%- endif %}
        {%- endif %}
 
-       {%- if valid_tags and environment.enable_tags %}
+       {%- if valid_tags and environment.local_enable_tags %}
        .. tags:: {{ valid_tags | join(", ") }}
        {%- endif %}
 

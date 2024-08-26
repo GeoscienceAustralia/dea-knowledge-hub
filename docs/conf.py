@@ -9,9 +9,9 @@ from _modules import pr_preview
 environment = {
     "build_mode": os.environ.get("BUILD_MODE"),
     "git_branch": os.environ.get("BRANCH"),
+    "local_enable_tags": os.environ.get("LOCAL_ENABLE_TAGS"),
     "local_enable_redirects": os.environ.get("LOCAL_ENABLE_REDIRECTS"),
     "pr_preview_subdomain": os.environ.get("PR_PREVIEW_SUBDOMAIN"),
-    "enable_tags": os.environ.get("LOCAL_ENABLE_TAGS"),
 }
 
 project = "DEA Knowledge Hub"
