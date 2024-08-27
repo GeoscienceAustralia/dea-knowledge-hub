@@ -6,7 +6,7 @@
 title: DEA Coastlines
 long_title: Geoscience Australia Landsat Coastlines Collection 3
 header_image: /_files/cmi/thumbnail_vertical.png
-version: 2.1.0
+version: 2.2.0
 is_latest_version: true
 latest_version_link: null
 is_provisional: false
@@ -14,7 +14,7 @@ product_type: Derivative
 spatial_data_type: Vector
 time_span:
   start: 1988
-  end: 2022
+  end: 2023
 update_frequency: Yearly
 next_update: null
 product_ids: null
@@ -58,7 +58,7 @@ maps:
 explorers: null
 
 data:
-  - link: https://data.dea.ga.gov.au/?prefix=derivative/dea_coastlines/2-1-0/
+  - link: https://data.dea.ga.gov.au/?prefix=derivative/dea_coastlines/
     name: Access the data on AWS
 
 code_examples:
