@@ -34,7 +34,7 @@ doi_url: https://dx.doi.org/10.26186/146257
 open_data_cube_configuration:
   - https://github.com/GeoscienceAustralia/dea-config/blob/master/products/inland_water/s2_wo/ga_s2_nrt_c3_wo.odc-product.yaml
 security_classification: Unclassified
-time_span_full:
+data_time_span_full:
   start: null
   end: null
 

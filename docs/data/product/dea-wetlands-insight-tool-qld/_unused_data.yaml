@@ -33,7 +33,7 @@ ecat_url: http://pid.geoscience.gov.au/dataset/ga/144795
 doi_url: null
 open_data_cube_configuration: null
 security_classification: Unclassified
-time_span_full:
+data_time_span_full:
   start: 2020-12-04T04:42:15+1100
   end: 2022-12-31T04:42:39+1100
 

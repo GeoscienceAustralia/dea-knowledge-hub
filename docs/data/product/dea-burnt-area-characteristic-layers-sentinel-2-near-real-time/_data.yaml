@@ -15,9 +15,9 @@ is_provisional: true
 lineage_type: Derivative
 spatial_data_type: Raster
 
-time_span_start: 1 Jul 2021
-time_span_end: 29 Aug 2023
-time_span_custom: null
+data_time_span_start: 1 Jul 2021
+data_time_span_end: 29 Aug 2023
+data_time_span_custom: null
 
 data_update_frequency_cadence: DAILY
 data_update_frequency_activity: NO_UPDATES

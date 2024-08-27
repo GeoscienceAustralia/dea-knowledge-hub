@@ -30,7 +30,7 @@ ecat_url: http://pid.geoscience.gov.au/dataset/ga/102291
 doi_url: null
 open_data_cube_configuration: null
 security_classification: Unclassified
-time_span_full:
+data_time_span_full:
   start: 1986-08-15T23:45:00+1000
   end: 2017-05-05T01:44:34+1000
 

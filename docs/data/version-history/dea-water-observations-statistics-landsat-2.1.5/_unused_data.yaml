@@ -32,7 +32,7 @@ ecat_url: http://pid.geoscience.gov.au/dataset/ga/121074
 doi_url: null
 open_data_cube_configuration: null
 security_classification: Unclassified
-time_span_full:
+data_time_span_full:
   start: null
   end: null
 
