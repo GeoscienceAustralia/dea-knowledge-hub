@@ -34,10 +34,10 @@
 } %}
 
 {% set data_update_frequency_activity_terms = {
-   "ONGOING": "Ongoing data updates",
-   "NO_UPDATES": "No further data updates",
-   "DEVELOPMENT": "Awaiting product version release",
-   "PAUSED": "Data updates are currently paused",
+   "ONGOING": "Ongoing",
+   "NO_UPDATES": "No further updates",
+   "DEVELOPMENT": "Awaiting development",
+   "PAUSED": "Currently paused",
 } %}
 
 {% set no_data_terms = {
@@ -83,6 +83,8 @@
 {% set data_update_frequency_activity = data_update_frequency_activity_terms.get(page.data.data_update_frequency_activity, page.data.data_update_frequency_activity) %}
 
 {% set is_frequency_ongoing = data_update_frequency_activity == data_update_frequency_activity_terms.ONGOING %}
+
+{% set is_cadence_yearly = data_update_frequency_cadence == data_update_frequency_cadence_terms.YEARLY %}
 
 {% set has_access_data = maps_list or data_list or explorers_list or web_services_list or code_samples_list or custom_list %}
 
@@ -142,7 +144,7 @@
                      {%- else %}
                      | {{ data_update_frequency_activity }} (Previously: {{ data_update_frequency_cadence }})
                      {%- endif %}
-                     {%- if page.data.is_currency_reported and page.data.data_update_frequency_cadence == "YEARLY" %}
+                     {%- if page.data.is_currency_reported and is_cadence_yearly %}
                      {{ "| See `currency, latest update date, and next update date <{}>`_".format(currency_report_url) }}
                      {%- elif page.data.is_currency_reported %}
                      {{ "| See `currency and latest update date <{}>`_".format(currency_report_url) }}
