@@ -1,6 +1,6 @@
 ## About
 
-Tracking changes in the canopy density of mangroves, Digital Earth Australia (DEA) Mangrove Canopy Cover reveals how these extraordinary trees may be responding to sea level rise, severe tropical cyclones, drought, climatic cycles, changing temperatures and large storm events.
+Tracking changes in the canopy density of mangroves, Digital Earth Australia (DEA) Mangroves reveals how these extraordinary trees may be responding to sea level rise, severe tropical cyclones, drought, climatic cycles, changing temperatures and large storm events.
 
 :::{admonition} This version includes breaking changes
 :class: note
