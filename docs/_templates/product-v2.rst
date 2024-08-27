@@ -24,13 +24,13 @@
 } %}
 
 {% set data_update_frequency_cadence_terms = {
-   "AS_NEEDED": "As needed",
-   "DAILY": "Daily",
-   "WEEKLY": "Weekly",
-   "MONTHLY": "Monthly",
-   "YEARLY": "Yearly",
-   "2_YEARS": "Every 2 years",
-   "10_MIN": "Every 10 minutes",
+   "AS_NEEDED": "'As needed' frequency",
+   "DAILY": "Daily frequency",
+   "WEEKLY": "Weekly frequency",
+   "MONTHLY": "Monthly frequency",
+   "YEARLY": "Yearly frequency",
+   "2_YEARS": "'Every 2 years' frequency",
+   "10_MIN": "'Every 10 minutes' frequency",
 } %}
 
 {% set data_update_frequency_activity_terms = {
@@ -88,8 +88,6 @@
 
 {% set has_key_details = (page.data.parent_products.name and page.data.parent_products.link) or (page.data.collection.name and page.data.collection.link) or page.data.collection.name or page.data.doi or page.data.ecat or page.data.published %}
 
-{% set is_cadence_multiple_words = data_update_frequency_cadence.split(" ") | length > 1 %}
-
 {# Template #}
 
 .. role:: raw-html(raw)
@@ -139,14 +137,10 @@
       {%- elif page.data.time_span_end  %}
       :Time span: {{ page.data.time_span_end }} (The data ends at this date)
       {%- endif %}
-      :Data updates: {%- if is_frequency_ongoing and is_cadence_multiple_words %} {# If the cadence term is multiple words long, surround it in quotation marks. E.g. 'As needed'. #}
-                     | '{{ data_update_frequency_cadence }}' update frequency, {{ data_update_frequency_activity }}
-                     {%- elif is_frequency_ongoing %}
-                     | {{ data_update_frequency_cadence }} update frequency, {{ data_update_frequency_activity }}
-                     {%- elif is_cadence_multiple_words %} {# Otherwise, if the frequency is not 'Ongoing'. #}
-                     | {{ data_update_frequency_activity }} (Previously: '{{ data_update_frequency_cadence }}' update frequency)
+      :Data updates: {%- if is_frequency_ongoing %}
+                     | {{ data_update_frequency_cadence }}, {{ data_update_frequency_activity }}
                      {%- else %}
-                     | {{ data_update_frequency_activity }} (Previously: {{ data_update_frequency_cadence }} update frequency)
+                     | {{ data_update_frequency_activity }} (Previously: {{ data_update_frequency_cadence }})
                      {%- endif %}
                      {%- if page.data.is_currency_reported and page.data.data_update_frequency_cadence == "YEARLY" %}
                      {{ "| See `currency, latest update date, and next update date <{}>`_".format(currency_report_url) }}
