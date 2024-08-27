@@ -145,9 +145,9 @@
                      | {{ data_update_frequency_activity }} (Previously: {{ data_update_frequency_cadence }})
                      {%- endif %}
                      {%- if page.data.is_currency_reported and is_cadence_yearly %}
-                     {{ "| See `currency, latest update date, and next update date <{}>`_".format(currency_report_url) }}
+                     {{ "| See `latest and next update dates and currency <{}>`_".format(currency_report_url) }}
                      {%- elif page.data.is_currency_reported %}
-                     {{ "| See `currency and latest update date <{}>`_".format(currency_report_url) }}
+                     {{ "| See `latest update date and currency <{}>`_".format(currency_report_url) }}
                      {%- endif %}
 
    .. container::
