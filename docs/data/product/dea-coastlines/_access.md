@@ -8,12 +8,12 @@ DEA Coastlines data for the entire Australian coastline is available to download
 * Esri Shapefiles: suitable for ArcMap and QGIS
 
 To download DEA Coastlines data:
-1. Click the [Link to data](https://data.dea.ga.gov.au/?prefix=derivative/dea_coastlines/2-1-0/) link above
-2. Click on either the OGC GeoPackage (`coastlines_v2.1.0.gpkg`) or Esri Shapefiles (`coastlines_v2.1.0.shp.zip`) to download the data to your computer.
+1. Click the [Link to data](https://data.dea.ga.gov.au/?prefix=derivative/dea_coastlines/) link above
+2. Click on either the OGC GeoPackage (`coastlines_*.gpkg`) or Esri Shapefiles (`coastlines_*.shp.zip`) to download the data to your computer.
 3. If you downloaded the Esri Shapefiles data, unzip the zip file by right clicking on the downloaded file and selecting `Extract all`.
 
 To load OGC GeoPackage data in QGIS:
-1. Drag and drop the `coastlines_v2.1.0.gpkg` file into the main QGIS map window, or select it using `Layer > Add Layer > Add Vector Layer.`
+1. Drag and drop the `coastlines_*.gpkg` file into the main QGIS map window, or select it using `Layer > Add Layer > Add Vector Layer.`
 2. When prompted to `Select Vector Layers to Add`, select all layers and then `OK`.
 3. The DEA Coastlines layers will load with built-in symbology. By default, DEA Coastlines layers automatically transition based on the zoom level of the map. To deactivate this: right click on a layer in the QGIS Layers panel, click `Set Layer Scale Visibility`, and untick `Scale visibility.`
 :::
@@ -52,28 +52,34 @@ ymax, xmin = -33.65, 115.28
 ymin, xmax = -33.66, 115.30
 
 # Set up WFS requests for annual shorelines & rates of change points
-deacl_annualshorelines_wfs = f'https://geoserver.dea.ga.gov.au/geoserver/wfs?' \
-                       f'service=WFS&version=1.1.0&request=GetFeature' \
-                       f'&typeName=dea:shorelines_annual&maxFeatures=1000' \
-                       f'&bbox={ymin},{xmin},{ymax},{xmax},' \
-                       f'urn:ogc:def:crs:EPSG:4326'
-deacl_ratesofchange_wfs = f'https://geoserver.dea.ga.gov.au/geoserver/wfs?' \
-                       f'service=WFS&version=1.1.0&request=GetFeature' \
-                       f'&typeName=dea:rates_of_change&maxFeatures=1000' \
-                       f'&bbox={ymin},{xmin},{ymax},{xmax},' \
-                       f'urn:ogc:def:crs:EPSG:4326'
+deacl_annualshorelines_wfs = (
+    f"https://nonprod.geoserver.dea.ga.gov.au/geoserver/dea/wfs?"
+    f"service=WFS&version=1.1.0&request=GetFeature"
+    f"&typeName=dea:shorelines_annual&maxFeatures=1000"
+    f"&bbox={ymin},{xmin},{ymax},{xmax},"
+    f"urn:ogc:def:crs:EPSG:4326"
+)
+deacl_ratesofchange_wfs = (
+    f"https://nonprod.geoserver.dea.ga.gov.au/geoserver/dea/wfs?"
+    f"service=WFS&version=1.1.0&request=GetFeature"
+    f"&typeName=dea:rates_of_change&maxFeatures=1000"
+    f"&bbox={ymin},{xmin},{ymax},{xmax},"
+    f"urn:ogc:def:crs:EPSG:4326"
+)
 
 # Load DEA Coastlines data from WFS using geopandas
 deacl_annualshorelines_gdf = gpd.read_file(deacl_annualshorelines_wfs)
 deacl_ratesofchange_gdf = gpd.read_file(deacl_ratesofchange_wfs)
 
 # Ensure CRSs are set correctly
-deacl_annualshorelines_gdf.crs = 'EPSG:3577'
-deacl_ratesofchange_gdf.crs = 'EPSG:3577'
+deacl_annualshorelines_gdf.crs = "EPSG:3577"
+deacl_ratesofchange_gdf.crs = "EPSG:3577"
 
-# Optional: Keep only rates of change points with "good" certainty 
-# (i.e. no poor quality flags)
-deacl_ratesofchange_gdf = deacl_ratesofchange_gdf.query("certainty == 'good'")
+# Optional: Keep only statistically significant (p <= 0.01) rates of change points
+# with "good" certainty (i.e. no poor quality flags)
+deacl_ratesofchange_gdf = deacl_ratesofchange_gdf.query(
+    "(sig_time <= 0.01) & (certainty == 'good')"
+)
 ```
 :::
 
@@ -81,9 +87,9 @@ deacl_ratesofchange_gdf = deacl_ratesofchange_gdf.query("certainty == 'good'")
 DEA Coastlines data can be loaded directly into R using the DEA Coastlines Web Feature Service (WFS) and the `sf` package:
 
 ```r
-library(magrittr)
 library(glue)
 library(sf)
+library(dplyr)
 
 # Specify bounding box
 xmin = 115.28
@@ -91,19 +97,24 @@ xmax = 115.30
 ymin = -33.66
 ymax = -33.65
 
-# Read in DEA Coastlines annual shoreline data, using `glue` to insert our bounding 
-# box into the string, and `sf` to  load the spatial data from the Web Feature Service 
+# Read in DEA Coastlines annual shoreline data, using `glue` to insert our bounding
+# box into the string, and `sf` to  load the spatial data from the Web Feature Service
 # and set the Coordinate Reference System to Australian Albers (EPSG:3577)
-deacl_annualshorelines = "https://geoserver.dea.ga.gov.au/geoserver/wfs?service=WFS&version=1.1.0&request=GetFeature&typeName=dea:shorelines_annual&maxFeatures=1000&bbox={ymin},{xmin},{ymax},{xmax},urn:ogc:def:crs:EPSG:4326" %>% 
+deacl_annualshorelines = "https://geoserver.dea.ga.gov.au/geoserver/wfs?service=WFS&version=1.1.0&request=GetFeature&typeName=dea:shorelines_annual&maxFeatures=1000&bbox={ymin},{xmin},{ymax},{xmax},urn:ogc:def:crs:EPSG:4326" %>%
   glue::glue() %>%
-  sf::read_sf() %>% 
+  sf::read_sf() %>%
   sf::st_set_crs(3577)
 
 # Read in DEA Coastlines rates of change points
-deacl_ratesofchange = "https://geoserver.dea.ga.gov.au/geoserver/wfs?service=WFS&version=1.1.0&request=GetFeature&typeName=dea:rates_of_change&maxFeatures=1000&bbox={ymin},{xmin},{ymax},{xmax},urn:ogc:def:crs:EPSG:4326" %>% 
+deacl_ratesofchange = "https://geoserver.dea.ga.gov.au/geoserver/wfs?service=WFS&version=1.1.0&request=GetFeature&typeName=dea:rates_of_change&maxFeatures=1000&bbox={ymin},{xmin},{ymax},{xmax},urn:ogc:def:crs:EPSG:4326" %>%
   glue::glue() %>%
-  sf::read_sf() %>% 
+  sf::read_sf() %>%
   sf::st_set_crs(3577)
+
+# Optional: Keep only statistically significant (p <= 0.01) rates of change points 
+# with "good" certainty (i.e. no poor quality flags)
+deacl_ratesofchange = deacl_ratesofchange %>% 
+  filter((sig_time <= 0.01) & (certainty == "good"))
 ```
 :::
 

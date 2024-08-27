@@ -55,7 +55,7 @@ To understand the `certainty` field, see the [Quality tab](./?tab=quality).
 :::{figure} /_files/cmi/deacl_coastlines.*
 :alt: DEA CoastLines coastline layer
 
-Figure 1: Annual coastlines from DEA Coastlines visualised on the [interactive DEA Coastlines web map](https://maps.dea.ga.gov.au/#share=s-DEACoastlines&playStory=1)
+Figure 1: Annual coastlines from DEA Coastlines visualised on the [interactive DEA Coastlines web map](https://maps.dea.ga.gov.au/story/DEACoastlines)
 :::
 
 ### Rates of change points
@@ -65,10 +65,10 @@ A point dataset providing robust rates of coastal change for every 30 m along Au
 :::{figure} /_files/cmi/deacl_statistics_2.*
 :alt: DEA CoastLines rates of change statistics layer
 
-Figure 2: Rates of change points from DEA Coastlines visualised on the [interactive DEA Coastlines web map](https://maps.dea.ga.gov.au/#share=s-DEACoastlines&playStory=1)
+Figure 2: Rates of change points from DEA Coastlines visualised on the [interactive DEA Coastlines web map](https://maps.dea.ga.gov.au/story/DEACoastlines)
 :::
 
-On the [interactive DEA Coastlines web map](https://maps.dea.ga.gov.au/#share=s-DEACoastlines&playStory=1), points are shown for locations with statistically significant rates of change (p-value &lt;= 0.01; see `sig_time` below) and good quality data (certainty = "good"; see `certainty` below) only. Each point shows annual rates of change (in metres per year; see `rate_time` below), and an estimate of uncertainty in brackets (95% confidence interval; see `se_time`). For example, there is a 95% chance that a point with a label **\-10.0 m (±1.0 m)** is retreating at a rate of between -9.0 and -11.0 metres per year.
+On the [interactive DEA Coastlines web map](https://maps.dea.ga.gov.au/story/DEACoastlines), points are shown for locations with statistically significant rates of change (p-value &lt;= 0.01; see `sig_time` below) and good quality data (certainty = "good"; see `certainty` below) only. Each point shows annual rates of change (in metres per year; see `rate_time` below), and an estimate of uncertainty in brackets (95% confidence interval; see `se_time`). For example, there is a 95% chance that a point with a label **\-10.0 m (±1.0 m)** is retreating at a rate of between -9.0 and -11.0 metres per year.
 
 Rates of change points contains the following attribute columns that can be accessed by clicking on labelled points in the web map:
 
@@ -145,7 +145,8 @@ Figure 3: Coastal change hotspots from DEA Coastlines visualised on the [interac
 
 The following software was used to generate this product: 
 * [DEA Coastlines GitHub code](https://github.com/GeoscienceAustralia/dea-coastlines)
-* [OpenDataCube](https://github.com/opendatacube)
+* [Open Data Cube](https://github.com/opendatacube)
+* [pyTMD Python-based tidal prediction software](https://github.com/tsutterley/pyTMD)
 * [FES2014 global tide model](https://www.aviso.altimetry.fr/en/data/products/auxiliary-products/global-tide-fes/description-fes2014.html)
 
 ## References
