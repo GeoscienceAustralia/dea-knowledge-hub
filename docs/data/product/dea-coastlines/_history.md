@@ -1,10 +1,15 @@
 ## Changelog
 
+### 2023 DEA Coastlines update
+
+In August 2024, the DEA Coastlines product [was updated to version 2.2.0](https://github.com/GeoscienceAustralia/dea-coastlines/releases/tag/2.2.0). This update adds additional interim annual shoreline data for 2023. The 2023 shoreline is subject to change, and will be updated to a final version in the following DEA Coastlines update (March 2025). 
+
+**Improvements and additions:** 
+* This update adds new functionality to easily switch between annual shorelines and rates of change on DEA Maps using a "Style" selector. 
+
 ### 2022 DEA Coastlines update
 
-In August 2023, the DEA Coastlines product was updated to version 2.1.0.
-
-This update consists of the addition of annual shoreline data for 2022. The 2022 shoreline is interim data that is subject to change, and will be updated to a final version in the following 2023 DEA Coastlines update (in July 2024).
+In August 2023, the DEA Coastlines product [was updated to version 2.1.0](https://github.com/GeoscienceAustralia/dea-coastlines/releases/tag/2.1.0). This update consists of the addition of interim annual shoreline data for 2022. The 2022 shoreline is interim data that is subject to change, and will be updated to a final version in the following 2023 DEA Coastlines update (in August 2024).
 
 ### 2021 DEA Coastlines update
 
