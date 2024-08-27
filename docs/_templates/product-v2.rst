@@ -131,13 +131,13 @@
       :Resolution: {{ page.data.resolution }}
       {%- endif %}
       {%- if page.data.time_span_custom %}
-      :Time span: {{ page.data.time_span_custom }}
+      :Data time span: {{ page.data.time_span_custom }}
       {%- elif page.data.time_span_start and page.data.time_span_end %}
-      :Time span: {{ page.data.time_span_start }} :raw-html:`&ndash;` {{ page.data.time_span_end }} (The data spans these dates)
+      :Data time span: {{ page.data.time_span_start }} :raw-html:`&ndash;` {{ page.data.time_span_end }}
       {%- elif page.data.time_span_start  %}
-      :Time span: {{ page.data.time_span_start }} (The data starts at this date)
+      :Data time span: Starts at {{ page.data.time_span_start }}
       {%- elif page.data.time_span_end  %}
-      :Time span: {{ page.data.time_span_end }} (The data ends at this date)
+      :Data time span: Ends at {{ page.data.time_span_end }}
       {%- endif %}
       :Data updates: {%- if is_frequency_ongoing %}
                      | {{ data_update_frequency_cadence }}, {{ data_update_frequency_activity }}
