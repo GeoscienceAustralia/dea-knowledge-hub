@@ -15,8 +15,8 @@ is_provisional: false
 lineage_type: Derivative
 spatial_data_type: Vector
 
-data_time_span_start: 1 Jan 2020
-data_time_span_end: Present
+time_span_start: 1 Jan 2020
+time_span_end: Present
 # time_span_custom: 1986 – 1999 and 2003 – 2011
 
 data_update_frequency_cadence: DAILY

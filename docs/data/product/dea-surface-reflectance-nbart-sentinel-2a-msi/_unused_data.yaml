@@ -34,7 +34,7 @@ doi_url: https://dx.doi.org/10.26186/146571
 open_data_cube_configuration:
   - https://explorer.sandbox.dea.ga.gov.au/products/ga_s2am_ard_3#definition-doc
 security_classification: Unclassified
-data_time_span_full:
+time_span_full:
   start: null
   end: null
 

@@ -31,7 +31,7 @@ ecat_url: http://pid.geoscience.gov.au/dataset/ga/72657
 doi_url: null
 open_data_cube_configuration: null
 security_classification: Unclassified
-data_time_span_full:
+time_span_full:
   start: null
   end: null
 

@@ -15,9 +15,9 @@ is_provisional: false
 lineage_type: Baseline
 spatial_data_type: Raster
 
-data_time_span_start: 28 May 1999
-data_time_span_end: 6 Apr 2022
-data_time_span_custom: null
+time_span_start: 28 May 1999
+time_span_end: 6 Apr 2022
+time_span_custom: null
 
 data_update_frequency_cadence: DAILY
 data_update_frequency_activity: NO_UPDATES

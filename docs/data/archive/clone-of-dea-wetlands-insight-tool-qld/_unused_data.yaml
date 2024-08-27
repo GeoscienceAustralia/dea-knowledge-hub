@@ -34,7 +34,7 @@ ecat_url: null
 doi_url: null
 open_data_cube_configuration: null
 security_classification: Unclassified
-data_time_span_full:
+time_span_full:
   start: 2020-12-04T04:42:15+1100
   end: 2022-12-31T04:42:39+1100
 

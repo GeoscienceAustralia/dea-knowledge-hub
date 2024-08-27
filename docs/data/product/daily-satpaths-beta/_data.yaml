@@ -15,9 +15,9 @@ is_provisional: true
 lineage_type: Data service
 spatial_data_type: null
 
-data_time_span_start: null
-data_time_span_end: null
-data_time_span_custom: null
+time_span_start: null
+time_span_end: null
+time_span_custom: null
 
 data_update_frequency_cadence: DAILY
 data_update_frequency_activity: ONGOING

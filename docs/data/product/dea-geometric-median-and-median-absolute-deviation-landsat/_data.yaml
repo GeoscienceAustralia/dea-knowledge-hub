@@ -14,9 +14,9 @@ is_provisional: false
 lineage_type: Derivative
 spatial_data_type: Raster
 
-data_time_span_start: 1986
-data_time_span_end: Present
-data_time_span_custom: null
+time_span_start: 1986
+time_span_end: Present
+time_span_custom: null
 
 data_update_frequency_cadence: YEARLY
 data_update_frequency_activity: ONGOING
