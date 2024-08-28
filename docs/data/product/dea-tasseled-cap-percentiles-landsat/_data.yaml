@@ -71,12 +71,12 @@ web_services:
 # History
 
 old_versions:
-  - version: 1.0.0
-    title: DEA Tasseled Cap Percentiles (Landsat)
-    slug: dea-tasseled-cap-percentiles-landsat-1.0.0
   - version: 2.0.0
     title: DEA Wetness Percentiles (Landsat)
     slug: dea-wetness-percentiles-landsat-2.0.0
+  - version: 1.0.0
+    title: DEA Tasseled Cap Percentiles (Landsat)
+    slug: dea-tasseled-cap-percentiles-landsat-1.0.0
 
 # Settings
 
