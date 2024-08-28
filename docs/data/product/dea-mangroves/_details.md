@@ -31,7 +31,7 @@ The sequence of mangrove maps makes it possible to see how the canopy cover of m
 
 To determine annual national level changes in mangroves, changes in their canopy cover type were quantified using dense time-series (nominally every 16 days cloud permitting) of 30 m spatial resolution Landsat sensor data available within Digital Earth Australia (DEA).
 
-The potential area that mangroves occupied over this period was established as the union of mangrove maps generated for 1996, 2007-2010 and 2015/16 through the Japanese Aerospace Exploration Agency (JAXA) Global Mangrove Watch (GMW), and then refined using tasseled cap wetness dynamics and State and Territory mangrove mapping products. Within this area the 10th percentile of the green vegetation fraction of the ga\_ls\_fc\_pc\_cyear\_3 (pv\_pc\_10) was retrieved. The percentage Planimetric Canopy Cover (PCC%)](a planar unit, directly related to forest cover, representing the horizontal distribution of forest cover when determined from above, such as by LiDAR or spectral satellite) for each Landsat pixel was estimated using a relationship between pv\_pc\_10 and Light Detection And Ranging (LiDAR)-derived PCC% (< 1 m resolution and based on LiDAR acquisitions from all states supporting mangroves, excluding Victoria).
+The potential area that mangroves occupied over this period was established as the union of mangrove maps generated for 1996, 2007-2010 and 2015/16 through the Japanese Aerospace Exploration Agency (JAXA) Global Mangrove Watch (GMW), and then refined using tasseled cap wetness dynamics and State and Territory mangrove mapping products. Within this area the 10th percentile of the green vegetation fraction of the ga\_ls\_fc\_pc\_cyear\_3 (pv\_pc\_10) was retrieved. The percentage Planimetric Canopy Cover (PCC%) &mdash; a planar unit, directly related to forest cover, representing the horizontal distribution of forest cover when determined from above, such as by LiDAR or spectral satellite &mdash; for each Landsat pixel was estimated using a relationship between pv\_pc\_10 and Light Detection And Ranging (LiDAR)-derived PCC% (< 1 m resolution and based on LiDAR acquisitions from all states supporting mangroves, excluding Victoria).
 
 % ## Lineage
 
@@ -39,15 +39,13 @@ The potential area that mangroves occupied over this period was established as t
 
 The product development methodology is outlined in the following steps:
 
-1) Calculate the green fractional cover (`pv_pc`) from all available cloud-free Landsat pixels for each year of observation and compare these over an annual time series to identify areas where green cover persists throughout the year.
+<span id="processing-steps"></span>
 
-2) Establish a relationship between the 10th percentile of green fraction (`pv_pc_10`) observed within a year and Planimetric Canopy Cover percentage (PCC%) derived from < 1 m spatial resolution canopy masks derived from LIght Detection And Ranging (LiDAR) with this representing a unit that relates directly to forest cover.
-
-3) Constrain the PCC% estimates to areas known to contain mangroves, with reference to the Japanese Aerospace Exploration Agency’s (JAXA) Kyoto and Carbon (K&C) Initiative Global Mangrove Watch (GMW) thematic layers for 1996, 2007-10 and 2015/16 with additional areas identified using tasseled cap wetness and State and Territory mangrove mapping products.
-
-4) Apply PCC% thresholds to map mangrove forest extent (based on a pre-determined 20 PCC% threshold) and differentiate structural categories, namely, woodland (20-50 %), open forest (50-80 %), and closed forest (> 80 %).
-
-5) Quantify the change in the relative extent of mangrove forest and canopy cover types over the period 1987 to 2023 at a national scale and establish relevance at regional (e.g., State/Territory) and local levels.
+1. Calculate the green fractional cover (`pv_pc`) from all available cloud-free Landsat pixels for each year of observation and compare these over an annual time series to identify areas where green cover persists throughout the year.
+1. Establish a relationship between the 10th percentile of green fraction (`pv_pc_10`) observed within a year and Planimetric Canopy Cover percentage (PCC%) derived from < 1 m spatial resolution canopy masks derived from LIght Detection And Ranging (LiDAR) with this representing a unit that relates directly to forest cover.
+1. Constrain the PCC% estimates to areas known to contain mangroves, with reference to the Japanese Aerospace Exploration Agency’s (JAXA) Kyoto and Carbon (K&C) Initiative Global Mangrove Watch (GMW) thematic layers for 1996, 2007-10 and 2015/16 with additional areas identified using tasseled cap wetness and State and Territory mangrove mapping products.
+1. Apply PCC% thresholds to map mangrove forest extent (based on a pre-determined 20 PCC% threshold) and differentiate structural categories, namely, woodland (20-50 %), open forest (50-80 %), and closed forest (> 80 %).
+1. Quantify the change in the relative extent of mangrove forest and canopy cover types over the period 1987 to 2023 at a national scale and establish relevance at regional (e.g., State/Territory) and local levels.
 
 % ## Software
 
