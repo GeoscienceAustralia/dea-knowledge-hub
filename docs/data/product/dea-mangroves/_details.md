@@ -39,7 +39,7 @@ The potential area that mangroves occupied over this period was established as t
 
 The product development methodology is outlined in the following steps:
 
-<span class="processing-steps"></span>
+<div class="processing-steps"></div>
 
 1. Calculate the green fractional cover (`pv_pc`) from all available cloud-free Landsat pixels for each year of observation and compare these over an annual time series to identify areas where green cover persists throughout the year.
 1. Establish a relationship between the 10th percentile of green fraction (`pv_pc_10`) observed within a year and Planimetric Canopy Cover percentage (PCC%) derived from < 1 m spatial resolution canopy masks derived from LIght Detection And Ranging (LiDAR) with this representing a unit that relates directly to forest cover.

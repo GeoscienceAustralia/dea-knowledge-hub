@@ -47,7 +47,7 @@ Calculation of clear count, wet count and water summary (percentage of clear obs
 
 For each WO pixel through time:
 
-<span class="processing-steps"></span>
+<div class="processing-steps"></div>
 
 1. count the number of clear observations (ie observations not masked by pixel quality for cloud, shadows or sensor issues) to produce clear count dataset;
 1. count the number of clear observations that are wet to produce wet count dataset;
