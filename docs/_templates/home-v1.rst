@@ -50,7 +50,7 @@
 
       Explore visual walkthroughs that show how to analyse our data using Python, including the use our DEA Tools package.
 
-      `Visit the DEA Notebooks </notebooks/README/>`_
+      `Visit the DEA Notebooks </dea-notebooks/>`_
 
    .. container::
 

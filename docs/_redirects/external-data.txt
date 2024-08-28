@@ -1,0 +1,4 @@
+# External Data redirects
+
+data/external-data/ga-ausbathytopo  data/external-data/ga-ausbathytopo-250m
+data/external-data/ga-srtm          data/external-data/ga-srtm-1-second-dem

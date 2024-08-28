@@ -13,8 +13,8 @@ is_provisional: false
 product_type: Baseline
 spatial_data_type: Raster
 time_span:
-  start: 28/05/1999
-  end: 06/04/2022
+  start: 28 May 1999
+  end: 6 Apr 2022
 update_frequency: Daily
 next_update: null
 product_ids:

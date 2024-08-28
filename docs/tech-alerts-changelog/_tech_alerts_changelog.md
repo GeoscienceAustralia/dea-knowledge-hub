@@ -10,19 +10,82 @@
 
 * Misclassification issue with Sentinel-2 's2cloudless' cloud masking from 2022. See below.
 * Terra-derived DEA Hotspots are unavailable. See below.
+* NCI Explorer may experience instability. See below.
 :::
 
-## Upcoming change: Shift in origin point of DEA Summary Product Grid
+## In progress: Shift in origin point of DEA Summary Product Grid
 
-To accommodate an expanded area of coverage of Australia's external territories, the [DEA Summary Product Grid](/guides/reference/collection_3_summary_grid/) will soon be shifted. The south-west origin point of the grid will be shifted from `-5472000.0, -2688000.0` to `-6912000.0, -4416000.0` (EPSG:3577).
-
-Therefore, all tile grid references will shift 18 tiles west and 15 tiles south. For instance, a tile reference of `x10y10` will change to `x28y25`.
-
-For a preview, see the [provisional version of the expanded DEA Summary Product Grid](https://maps.dea.ga.gov.au/#share=s-avXJqwjUtf55qGUmweYY5KYoVnI) on DEA Maps.
-
-All new versions of our 'summary derivative products' will be affected by this change (but existing versions of the products will not be changed). These products are [DEA Geometric Median and Median Absolute Deviation (GeoMAD)](/data/product/dea-geometric-median-and-median-absolute-deviation-landsat/), [DEA Water Observations Statistics (Landsat)](/data/product/dea-water-observations-statistics-landsat/), [DEA Fractional Cover Percentiles](/data/product/dea-fractional-cover-percentiles-landsat/), [DEA Mangroves](/data/product/dea-mangrove-canopy-cover-landsat/), and [DEA Land Cover](/data/product/dea-land-cover-landsat/).
+:::{include} ../_components/shift-in-summary-product-grid-tech-alert.md
+:::
 
 Learn more about the [DEA Summary Product Grid](/guides/reference/collection_3_summary_grid/).
+
+## 2024-08-16: Hotspots MODIS SRSS missing data (Fixed)
+
+On 21 Aug, we detected that the DEA Hotspots MODIS SRSS sub-product was missing `*hotspots.txt` and `*metadata.txt` files in its daily data folders since 16 Aug. This was caused by a software bug. After detecting the issue, we fixed the bug on the same day and uploaded all the missing data files.
+
+## 2024-08-08: NCI Explorer may experience instability
+
+The [NCI Explorer](https://explorer.nci.dea.ga.gov.au/) has experienced some intermittent outages recently. We are currently investigating the cause of the issue. If the NCI Explorer fails to load, please try again later.
+
+## 2024-08-02: Version 4.0.0 of DEA Geometric Median and Median Absolute Deviation released
+
+The newly released version 4.0.0 of [DEA Geometric Median and Median Absolute Deviation](/data/product/dea-geometric-median-and-median-absolute-deviation-landsat/) contains new features and changes such as the following.
+
+* **Breaking change:** Shift in grid origin point.
+* Enhanced cloud masking to reduce noise.
+* Combined Landsat 8 and 9 product.
+* Prefixed band measurement names.
+
+See the [Version 4.0.0 Changelog](/data/product/dea-geometric-median-and-median-absolute-deviation-landsat/?tab=history) for more information.
+
+## 2024-07-01: External data products now featured on the Knowledge Hub
+
+External data products are produced by external providers such as a different program of Geoscience Australia or a different organisation entirely. These external data products may assist with the analysis of DEA data. DEA even provides services relating to some of these external products. Therefore, we have begun to include some external products on our Knowledge Hub so that you can easily find and access this data. So far, we have added three external data products to the Knowledge Hub. But watch this space, as there are more to come!
+
+View the [External data products in the Knowledge Hub](/data/theme/external-data/).
+
+## 2024-07-01: DEA Sandbox new user signups restored
+
+An issue was preventing new users from signing up to the [DEA Sandbox](https://app.sandbox.dea.ga.gov.au/) for the past 5 days. We have now fixed the issue and you should now be able to sign up for the DEA Sandbox.
+
+## 2024-06-28: DEA Published Product Currency Report released
+
+We have released a report that tracks the Currency of our data products and if they are on time. Currency is a measure of how consistently DEA’s data products have been published through DEA in line with the stated update frequency on or before the scheduled publish date. External auditors can use this report to verify that DEA is meeting its performance targets, and internally, we use it for our annual reporting practices.
+
+View the [DEA Published Product Currency Report](https://mgmt.sandbox.dea.ga.gov.au/public-dashboards/d22241dbfca54b1fa9f73938ef26e645?orgId=1).
+
+Learn more about how to [understand and analyse this report](/guides/setup/operational-reports/product-currency-report/).
+
+Internal staff can also [view the full history of data](https://mgmt.sandbox.dea.ga.gov.au/d/c1674b20-8c8a-4d90-aef2-02796275cf2b/4e57919d-fc9d-59d7-9bd1-aa61d41bcb92?orgId=1).
+
+## 2024-07-01: External data products now featured on the Knowledge Hub
+
+External data products are produced by external providers such as a different program of Geoscience Australia or a different organisation entirely. These external data products may assist with the analysis of DEA data. DEA even provides services relating to some of these external products. Therefore, we have begun to include some external products on our Knowledge Hub so that you can easily find and access this data. So far, we have added three external data products to the Knowledge Hub. But watch this space, as there are more to come!
+
+View the [External data products in the Knowledge Hub](/data/theme/external-data/).
+
+## 2024-07-01: DEA Sandbox new user signups restored
+
+An issue was preventing new users from signing up to the [DEA Sandbox](https://app.sandbox.dea.ga.gov.au/) for the past 5 days. We have now fixed the issue and you should now be able to sign up for the DEA Sandbox.
+
+## 2024-06-28: DEA Published Product Currency Report released
+
+We have released a report that tracks the Currency of our data products and if they are on time. Currency is a measure of how consistently DEA’s data products have been published through DEA in line with the stated update frequency on or before the scheduled publish date. External auditors can use this report to verify that DEA is meeting its performance targets, and internally, we use it for our annual reporting practices.
+
+View the [DEA Published Product Currency Report](https://mgmt.sandbox.dea.ga.gov.au/public-dashboards/d22241dbfca54b1fa9f73938ef26e645?orgId=1).
+
+Learn more about how to [understand and analyse this report](/guides/setup/operational-reports/product-currency-report/).
+
+Internal staff can also [view the full history of data](https://mgmt.sandbox.dea.ga.gov.au/d/c1674b20-8c8a-4d90-aef2-02796275cf2b/4e57919d-fc9d-59d7-9bd1-aa61d41bcb92?orgId=1).
+
+## 2024-08-01: Resolved outage of Hotspots S-NPP VIIRS data
+
+The Suomi-NPP VIIRS Hotspots sub-product has resumed publishing data because the satellite's issue has been resolved.
+
+## 2024-07-25: Outage of Hotspots S-NPP VIIRS data (Resolved)
+
+This issue concerns [DEA Hotspots](https://knowledge.dea.ga.gov.au/data/product/dea-hotspots/). The Suomi-NPP satellite has experienced a data outage that has resulted in data unavailability until further notice. Therefore, Suomi-NPP VIIRS Hotspots cannot be published until this issue is resolved. Other DEA Hotspots sub-products are unaffected by this outage.
 
 ## 2024-07-01: External data products now featured on the Knowledge Hub
 

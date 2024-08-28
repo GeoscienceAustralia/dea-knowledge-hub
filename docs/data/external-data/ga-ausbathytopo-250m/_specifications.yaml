@@ -1,0 +1,14 @@
+# Bands
+
+bands:
+  footnotes: null
+  bands_table:
+    - name: height_depth
+      aliases: []
+      resolution: 0.0025 degrees
+      crs: "EPSG:4326"
+      nodata: -32767
+      units: Metres
+      type: float32
+      description: "Height/depth relative to Mean Sea Level."
+

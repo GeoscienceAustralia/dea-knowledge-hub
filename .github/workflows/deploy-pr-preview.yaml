@@ -43,18 +43,16 @@ jobs:
           comment-id: ${{ steps.find-comment.outputs.comment-id }}
           edit-mode: replace
           body: |
-            ## :hourglass: PR Preview is deploying ...
+            ## Preview is deploying ...
 
             <table> <!-- #pr-preview-comment -->
                 <tr>
-                    <td><strong>Deploy log:</strong></td>
-                    <td><a href="${{ env.PR_PREVIEW_DEPLOY_LOG_URL }}">View the deploy log</a></td>
-                </tr>
-                <tr>
-                    <td><strong>Learn more:</strong></td>
-                    <td><a href="${{ env.PR_PREVIEW_KH_DOCUMENTATION }}">Read the documentation</a></td>
+                    <td><strong>View the preview:</strong></td>
+                    <td><a href="https://${{ env.PR_PREVIEW_SUBDOMAIN }}.khpreview.dea.ga.gov.au/">:hourglass: Not deployed yet</a></td>
                 </tr>
             </table>
+
+            You can also <a href="${{ env.PR_PREVIEW_DEPLOY_LOG_URL }}">view the deploy log</a> or <a href="${{ env.PR_PREVIEW_KH_DOCUMENTATION }}">read the documentation</a>.
 
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -96,21 +94,14 @@ jobs:
           comment-id: ${{ steps.pr-preview-deploying.outputs.comment-id }}
           edit-mode: replace
           body: |
-            ## :star2: PR Preview is ready!
+            ## Preview is ready!
 
             <table> <!-- #pr-preview-comment -->
                 <tr>
-                    <td><strong>Preview site:</strong></td>
-                    <td><a href="https://${{ env.PR_PREVIEW_SUBDOMAIN }}.khpreview.dea.ga.gov.au/">${{ env.PR_PREVIEW_SUBDOMAIN }}.khpreview.dea.ga.gov.au</a></td>
-                </tr>
-                <tr>
-                    <td><strong>Deploy log:</strong></td>
-                    <td><a href="${{ env.PR_PREVIEW_DEPLOY_LOG_URL }}">View the deploy log</a></td>
-                </tr>
-                <tr>
-                    <td><strong>Learn more:</strong></td>
-                    <td><a href="${{ env.PR_PREVIEW_KH_DOCUMENTATION }}">Read the documentation</a></td>
+                    <td><strong>View the preview:</strong></td>
+                    <td><a href="https://${{ env.PR_PREVIEW_SUBDOMAIN }}.khpreview.dea.ga.gov.au/">:globe_with_meridians: PR Preview ${{github.event.pull_request.number}}</a></td>
                 </tr>
             </table>
-            
+
+            You can also <a href="${{ env.PR_PREVIEW_DEPLOY_LOG_URL }}">view the deploy log</a> or <a href="${{ env.PR_PREVIEW_KH_DOCUMENTATION }}">read the documentation</a>.
 
