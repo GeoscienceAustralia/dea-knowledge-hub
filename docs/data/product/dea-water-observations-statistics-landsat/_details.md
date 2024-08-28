@@ -46,9 +46,12 @@ To create the confidence layer required for the filtered product, a logistic reg
 Calculation of clear count, wet count and water summary (percentage of clear observations that are wet).
 
 For each WO pixel through time:
+
+<span class="processing-steps"></span>
+
 1. count the number of clear observations (ie observations not masked by pixel quality for cloud, shadows or sensor issues) to produce clear count dataset;
-2. count the number of clear observations that are wet to produce wet count dataset;
-3. create the ratio of wet to clear from the wet and clear count datasets and produce as a percentage dataset.
+1. count the number of clear observations that are wet to produce wet count dataset;
+1. create the ratio of wet to clear from the wet and clear count datasets and produce as a percentage dataset.
 
 % ## Software
 
