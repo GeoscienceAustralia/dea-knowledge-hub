@@ -27,7 +27,7 @@ collection:
   name: Geoscience Australia Landsat Collection 3
   link: null
 doi: null
-ecat: null
+ecat: "149765"
 nci: null
 licence:
   name: Creative Commons Attribution 4.0 International Licence
