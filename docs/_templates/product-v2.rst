@@ -276,10 +276,7 @@
             - {{ page.data.collection.name }}
           {%- endif %}
           {%- endif %}
-          {%- if page.data.doi and page.data.ecat %}
-          * - **DOI**
-            - `{{ page.data.doi }} <https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/{{ page.data.ecat }}>`_
-          {% elif page.data.doi %}
+          {% if page.data.doi %}
           * - **DOI**
             - `{{ page.data.doi }} <https://doi.org/{{ page.data.doi }}>`_
           {% elif page.data.ecat %}
