@@ -110,8 +110,9 @@
       .. rubric:: {{ page_title }}
 
       {% if page.data.full_technical_name %}
-      :Full name: {{ page.data.full_technical_name }}
+      {{ page.data.full_technical_name }}
       {%- endif %}
+
       {%- if page.data.is_latest_version and old_versions_list | length > 0 and page.data.enable_history %} {# If at least one old version exists. #}
       :Version: `{{ page.data.product_version }} <./?tab=history>`_
       {%- elif page.data.is_latest_version %}
