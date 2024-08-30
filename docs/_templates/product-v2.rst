@@ -112,12 +112,12 @@
       {% if page.data.full_technical_name %}
       :Full name: {{ page.data.full_technical_name }}
       {%- endif %}
-      {%- if page.data.is_latest_version and old_versions_list | length > 0 and page.data.enable_history %} {# If at least one old product version exists. #}
-      :Product version: `{{ page.data.product_version }} <./?tab=history>`_
+      {%- if page.data.is_latest_version and old_versions_list | length > 0 and page.data.enable_history %} {# If at least one old version exists. #}
+      :Version: `{{ page.data.product_version }} <./?tab=history>`_
       {%- elif page.data.is_latest_version %}
-      :Product version: {{ page.data.product_version }}
+      :Version: {{ page.data.product_version }}
       {%- else %}
-      :Product version: {{ page.data.product_version }} (`See latest product version <{{ page.data.latest_version_link }}>`_)
+      :Version: {{ page.data.product_version }} (`See latest version <{{ page.data.latest_version_link }}>`_)
       {%- endif %}
       {%- if product_ids_list and page.data.enable_access %}
       :{{ product_ids_label }}: `{{ product_ids_comma_separated }} <./?tab=access>`_
@@ -509,7 +509,9 @@
 
        {% if old_versions_list | length > 0 %}
 
-       View previous releases of this data product.
+       View previous releases of this product. Versions are numbered using the `Semantic Versioning <semver_>`_ scheme (MAJOR.MINOR.PATCH).
+
+       .. _semver: https://semver.org/
 
        .. list-table::
 
