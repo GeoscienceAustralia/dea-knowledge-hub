@@ -72,7 +72,9 @@ data:
   - link: https://thredds.nci.org.au/thredds/catalog/jw04/ga_ls8cls9c_gm_cyear_3/catalog.html
     name: Annual Landsat 8 and 9 observations on NCI
 
-code_examples: null
+code_examples:
+  - link: /notebooks/DEA_products/DEA_GeoMAD/
+    name: Code examples
 
 web_services:
   - link: https://ows.dea.ga.gov.au/
