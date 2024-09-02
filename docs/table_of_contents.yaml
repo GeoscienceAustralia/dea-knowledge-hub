@@ -206,14 +206,14 @@ entries:
 
   - file: validation/index
     subtrees:
-      - caption: Daily Reports
+      - caption: Site Reports
         entries:
-          - file: validation/daily-report/index
-            title: All daily reports
+          - file: validation/site-report/index
+            title: All site reports
             options:
               reversed: True
             entries:
-              - glob: validation/daily-report/*/index
+              - glob: validation/site-report/*/index
       # - caption: Quarterly Reports
       #   options:
       #     reversed: True
