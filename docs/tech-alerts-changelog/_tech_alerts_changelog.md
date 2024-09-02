@@ -8,6 +8,7 @@
 :::{admonition} System status of DEA
 :class: caution
 
+* DEA ARD expanded processing extent is paused since May 2024. See below.
 * Misclassification issue with Sentinel-2 's2cloudless' cloud masking from 2022. See below.
 * Terra-derived DEA Hotspots are unavailable. See below.
 * NCI Explorer may experience instability. See below.
