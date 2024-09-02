@@ -23,7 +23,7 @@ Learn more about the [DEA Summary Product Grid](/guides/reference/collection_3_s
 
 ## 2024-09-02: DEA ARD expanded processing extent is paused since May 2024
 
-This year, we [expanded the processing extents](https://knowledge.dea.ga.gov.au/guides/reference/ard-expanded-processing-extent/) for our [Surface Reflectance products](https://knowledge.dea.ga.gov.au/data/category/dea-surface-reflectance/) and for derivative products.
+This year, we [expanded the processing extents](https://knowledge.dea.ga.gov.au/guides/reference/ard-expanded-processing-extent/) for our [Surface Reflectance products](https://knowledge.dea.ga.gov.au/data/category/dea-surface-reflectance/) and derivative products.
 
 Unfortunately, due to unanticipated issues with an external network connection, we have needed to pause the back-processing of this expanded extent data since May 2024. You may have noticed this issue if you have attempted to access ARD from the Heard Island and McDonald Islands, for instance, and you found that there are no images more recent than May 2024.
 
