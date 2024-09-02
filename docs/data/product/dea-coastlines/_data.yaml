@@ -6,7 +6,7 @@
 title: DEA Coastlines
 long_title: Geoscience Australia Landsat Coastlines Collection 3
 header_image: /_files/cmi/thumbnail_vertical.png
-version: 2.1.0
+version: 2.2.0
 is_latest_version: true
 latest_version_link: null
 is_provisional: false
@@ -14,7 +14,7 @@ product_type: Derivative
 spatial_data_type: Vector
 time_span:
   start: 1988
-  end: 2022
+  end: 2023
 update_frequency: Yearly
 next_update: null
 product_ids: null
@@ -33,8 +33,9 @@ licence:
   link: https://creativecommons.org/licenses/by/4.0/
 
 citations:
-  data_citation: Bishop-Taylor, R., Nanson, R., Sagar, S., Lymburner, L. (2021). Digital Earth Australia Coastlines. Geoscience Australia, Canberra. https://doi.org/10.26186/116268
-  paper_citation: Bishop-Taylor, R., Nanson, R., Sagar, S., Lymburner, L. (2021). Mapping Australia's dynamic coastline at mean sea level using three decades of Landsat imagery. Remote Sensing of Environment, 267, 112734. https://doi.org/10.1016/j.rse.2021.112734
+  data_citation: "Bishop-Taylor, R., Nanson, R., Sagar, S., Lymburner, L. (2021). Digital Earth Australia Coastlines. Geoscience Australia, Canberra. https://doi.org/10.26186/116268"
+  paper_citation: "Bishop-Taylor, R., Nanson, R., Sagar, S., Lymburner, L. (2021). Mapping Australia's dynamic coastline at mean sea level using three decades of Landsat imagery. Remote Sensing of Environment, 267, 112734. https://doi.org/10.1016/j.rse.2021.112734"
+custom_citations: null
 
 tags:
   - geoscience_australia_landsat_collection_3
@@ -57,7 +58,7 @@ maps:
 explorers: null
 
 data:
-  - link: https://data.dea.ga.gov.au/?prefix=derivative/dea_coastlines/2-1-0/
+  - link: https://data.dea.ga.gov.au/?prefix=derivative/dea_coastlines/
     name: Access the data on AWS
 
 code_examples:

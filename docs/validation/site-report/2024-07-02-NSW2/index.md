@@ -5,6 +5,8 @@ A Site Validation Summary Report of the surface reflectance data collected on th
 The full collection of data is contained in the [National Spectral Database](https://www.dea.ga.gov.au/products/national-spectral-database).
 Satellite data can be found on [DEA maps](https://maps.dea.ga.gov.au/).
 
+Learn how to [interpret the variables, results, and figures in this Daily report](/guides/setup/validation/daily-summary-reports/).
+
 :::{contents} In this report
 :local:
 :backlinks: none

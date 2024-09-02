@@ -1,7 +1,7 @@
 title: Baseline satellite data
-description: Browse baseline satellite data products.
+description: Browse through DEA's foundational data products, including satellite data and services that support DEA Surface Reflectance data production.
 
-pages:
+cards:
   - name: DEA Surface Reflectance
     link: /data/category/dea-surface-reflectance/
     image: /_files/cmi/surface_reflectance_2_NBARTa.png
@@ -14,3 +14,6 @@ pages:
   - name: Daily SatPaths
     link: /data/product/daily-satpaths-beta/
     image: /_files/cmi/SatPaths_image.png
+  - name: DEA Geometric Median and Mean Absolute Deviation (GeoMAD)
+    link: /data/product/dea-geometric-median-and-median-absolute-deviation-landsat/
+    image: /_files/cmi/Geomedian_Australia_2014.jpg

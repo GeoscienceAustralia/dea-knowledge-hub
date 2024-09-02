@@ -1,7 +1,7 @@
 title: Sea, Ocean, and Coast
-description: Browse sea, ocean, and coast data products.
+description: Explore Australia's marine and coastal environments, including dynamic coastlines and the intertidal zone.
 
-pages:
+cards:
   - name: DEA Coastlines
     link: /data/product/dea-coastlines
     image: /_files/cmi/thumbnail_vertical.png

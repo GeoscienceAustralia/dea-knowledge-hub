@@ -1,16 +1,13 @@
 title: Land and Vegetation
-description: Browse land and vegetation data products.
+description: See how the land surface and vegetation of Australia have changed over time.
 
-pages:
+cards:
   - name: DEA Land Cover
     link: /data/product/dea-land-cover-landsat/
     image: /_files/cmi/DEA_Land_Cover_1_0_0_Lvl4_2015.jpg
   - name: DEA Fractional Cover
     link: /data/category/dea-fractional-cover/
     image: /_files/cmi/FractionalCover1.jpg
-  - name: DEA Geomedian and Mean Absolute Deviation (GeoMAD)
-    link: /data/product/dea-geometric-median-and-median-absolute-deviation-landsat/
-    image: null
   - name: DEA Mangroves
     link: /data/product/dea-mangrove-canopy-cover-landsat/
     image: /_files/cmi/DEA-mangroves.jpg

@@ -14,15 +14,23 @@ Scientific articles, conference talks and other publications with Digital Earth 
 
 Byrne, G., Broomhall, M., Walsh, A., Thankappan, M., Hay, E., Li, F., McAtee, B., Garcia, R., Anstee, J., Kerrisk, G., Drayson, N., Barnetson, J., Samford, I., Denham, R., 2024. Validating Digital Earth Australia NBART for the Landsat 9 Underfly of Landsat 8. Remote Sensing, 16, p. 1233. http://dx.doi.org/10.3390/rs16071233
 
+Lymburner, L., Ticehurst, C., Adame, M. F., Sengupta, A., Kavehei, E. 2024. Seeing the floods through the trees: Using adaptive shortwave infrared thresholds to map inundation under wooded wetlands. Hydrological Processes. 38(6). e15174. https://doi.org/10.1002/hyp.15174
+
+Lu, S., Jones, E., Zhao, L., Sun, Y., Qin, K., Liu, J., Li, J., Abeysekara, P., Mueller, N., Oliver, S., O'Hehir, J., Peters, S. 2024. Onboard AI for Fire Smoke Detection Using Hyperspectral Imagery: An Emulation for the Upcoming Kanyini Hyperscout-2 Mission. IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing, 17, p. 9629-9640. https://doi.org/10.1109/JSTARS.2024.3394574
+
+Mann, J., Maddox, E., Shrestha, M., Irwin, J., Czapla-Myers, J., Gerace, A., Rehman, E., Raqueno, N., Coburn, C., Byrne, G. and Broomhall, M., 2024. Landsat 8 and 9 Underfly International Surface Reflectance Validation Collaboration. Remote Sensing, 16(9), p. 1492. https://www.mdpi.com/2072-4292/16/9/1492
+
+Thankappan, M., Christopherson, J., Cantrell, S., Ryan, R., Pagnutti, M., Bright, C., Naughton, D., Ruslander, K., Wang, L.W., Hudson, D. and Shaw, J., 2024. Concept of a Satellite Cross-Calibration Radiometer for In-Orbit Calibration of Commercial Optical Satellites. Remote Sensing, 16(8), p.1333. https://www.mdpi.com/2072-4292/16/8/1333
+
 ****
 2023
 ****
 
 Bishop-Taylor, R., Phillips, C., Sagar, S., Newey, V., 2023. Time and Tide: A new pixel-based method for mapping dynamic intertidal topography. Coast to Coast 2023 Conference, 30th Oct - 3rd November 2023, Newcastle, NSW. 
 
-Phillips, C., Bishop-Taylor, R., Sagar, S., Newey, V., 2023. Mapping and investigating exposure on Australia coastline using open-source satellite data. Coast to Coast 2023 Conference, 30th Oct - 3rd November 2023, Newcastle, NSW. 
-
 Dunn, B., Ai, E., Alger, M.J., Fanson, B., Fickas, K.C., Krause, C.E., Lymburner, L., Nanson, R., Papas, P., Ronan, M., Thomas, R.F., 2023. Wetlands Insight Tool: Characterising the Surface Water and Vegetation Cover Dynamics of Individual Wetlands Using Multidecadal Landsat Satellite Data. Wetlands 43, 37. https://doi.org/10.1007/s13157-023-01682-7
+
+Phillips, C., Bishop-Taylor, R., Sagar, S., Newey, V., 2023. Mapping and investigating exposure on Australia coastline using open-source satellite data. Coast to Coast 2023 Conference, 30th Oct - 3rd November 2023, Newcastle, NSW. 
 
 Li, F., Jupp, D.L.B., Markham, B.L., Lau, I.C., Ong, C., Byrne, G., Thankappan, M., Oliver, S., Malthus, T., Fearns, P. 2023. Choice of Solar Spectral Irradiance Model for Current and Future Remote Sensing Satellite Missions. Remote Sens 15, 3391. https://doi.org/10.3390/rs15133391
 
@@ -30,15 +38,17 @@ Li, F., Jupp, D.L.B., Markham, B.L., Lau, I.C., Ong, C., Byrne, G., Thankappan, 
 2022
 ****
 
-Christopher J. Owers, Richard M. Lucas, Daniel Clewley, Belle Tissott, Sean M. T. Chua, Gabrielle Hunt, Norman Mueller, Carole Planque, Suvarna M. Punalekar, Pete Bunting, Peter Tan, Graciela Metternicht, “Operational continental-scale land cover mapping of Australia using the Open Data Cube”, ISPRS Journal of Photogrammetry and Remote Sensing, In Review. 
+Broomhall, M., Byrne, G., Hay, E., Thankappan, M. and Walsh, A., 2022, July. Validating Landsat and Sentinel-2 Analysis Ready Data with Uav-Mounted Spectrometers. IGARSS 2022-2022 IEEE International Geoscience and Remote Sensing Symposium (pp. 7775-7778). IEEE.
 
-Richard M. Lucas, Sophia German, Graciela Metternicht, Rebecca K. Schmidt, Chris Owers, Suzanne M. Prober, Anna Richards, Sally Tetreault-Campbell, Kristen J. Williams, Norman Mueller, Belle Tissott, Sean Chua, Alison Cowood, Terry Hills, Dayani Gunawardana, Alexis McIntyre, Sebastien Chognard, Clive Hurford, Carole Planque, Suvarna Punalekar, Daniel Clewley, Ruth Sonnenschein, Nicholas Murray, Ioannis Manakos, Palma Blonda, Kate Owers, Stephen Roxburgh, Heather Kay, Peter Bunting, and Claire Horton, “A Globally Relevant Change Taxonomy and Evidence-based Change Framework for Land Monitoring”, Global Change Biology, In Press.  
+Lucas, R.M., German, S., Metternicht, G., Schmidt, R.K., Owers, C.J., Prober, S.M., Richards, A.E., Tetreault‐Campbell, S., Williams, K.J., Mueller, N. and Tissott, B., 2022. A globally relevant change taxonomy and evidence‐based change framework for land monitoring. Global Change Biology, 28(21), pp.6293-6317. 
 
-Walsh, A.J., Byrne, G., Broomhall, M., 2022, A Case Study of Measurement Uncertainty in Field Spectroscopy, IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing, (early access) https://doi.org/10.1109/JSTARS.2022.3195120
+Nanson, R., Bishop-Taylor, R., Sagar, S., Lymburner, L., 2022. Geomorphic insights into Australia's coastal change using a national dataset derived from the multi-decadal Landsat archive. Estuarine, Coastal and Shelf Science, 265, p.107712. https://doi.org/10.1016/j.ecss.2021.107712
 
-Nanson, R., Bishop-Taylor, R., Sagar, S., Lymburner, L., 2022. Geomorphic insights into Australia's coastal change using a national dataset derived from the multi-decadal Landsat archive. Estuarine, Coastal and Shelf Science, 265, p.107712. https://doi.org/10.1016/j.ecss.2021.107712 
+Owers, C.J., Lucas, R.M., Clewley, D., Tissott, B., Chua, S.M., Hunt, G., Mueller, N., Planque, C., Punalekar, S.M., Bunting, P. and Tan, P., 2022. Operational continental-scale land cover mapping of Australia using the Open Data Cube. International Journal of Digital Earth, 15(1), pp.1715-1737.
 
 Sudmanns, M., Augustin, H., Killough, B., Giuliani, G., Tiede, D., Leith, A., Yuan, F., Lewis, A., 2022. Think global, cube local: an Earth Observation Data Cube’s contribution to the Digital Earth vision. 1–29. https://doi.org/10.1080/20964471.2022.2099236
+
+Walsh, A.J., Byrne, G., Broomhall, M., 2022, A Case Study of Measurement Uncertainty in Field Spectroscopy, IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing, (early access) https://doi.org/10.1109/JSTARS.2022.3195120
 
 Wang L.-W., Garthwaite M., Du Z., Deane A., McCubbine J., Wheeler M., O’Hehir A., Davies B., 2022. InSAR Analysis Ready Data.  Accepted paper to be published in Institute of Electrical and Electronics Engineers (IEEE) XPlore and presented at 2022 IEEE International Geoscience and Remote Sensing Symposium IGARSS 
 
@@ -53,6 +63,8 @@ Earth Observation: Data, Processing and Applications, https://www.eoa.org.au/ear
 ****
 
 Bishop-Taylor, R., Nanson, R., Sagar, S., Lymburner, L., 2021. Mapping Australia's dynamic coastline at mean sea level using three decades of Landsat imagery. Remote Sensing of Environment, 267, 112734. https://doi.org/10.1016/j.rse.2021.112734  
+
+Forghani, A., Reddy, S., Thankappan, M. and Cechet, B., 2021. Validation of MODIS and AVHRR Fire Detections in Australia. International Journal of Geoinformatics, 17(3).
 
 Krause, C., Dunn, B., Bishop-Taylor, R., Adams, C., Burton, C., Alger, M., Chua, S., Phillips, C., Newey, V., Kouzoubov, K., Leith, A., Ayers, D., Hicks, A., DEA Notebooks contributors 2021. Digital Earth Australia notebooks and tools repository. Geoscience Australia, Canberra. https://doi.org/10.26186/145234 
 
@@ -69,8 +81,6 @@ Nolde, M., Mueller, N., Strunz, G., Fichtner, F., Plank, S., and Riedlinger, T.:
 Owers, C.J., Lucas, R.M., Clewley, D., Planque, C., Punalekar, S., Tissott, B., Chua, S.M., Bunting, P., Mueller, N. and Metternicht, G., 2021. Living Earth: Implementing national standardised land cover classification systems for Earth Observation in support of sustainable development. Big Earth Data, 5(3), pp.368-390. https://doi.org/10.1080/20964471.2021.1948179  
 
 Yuan, F., Lewis, A., Leith, A., Dhar, T., Gavin, D., 2021. Analysis Ready Data for Africa, in: 2021 IEEE International Geoscience and Remote Sensing Symposium IGARSS. Presented at the 2021 IEEE International Geoscience and Remote Sensing Symposium IGARSS, pp. 1789–1791. https://doi.org/10.1109/IGARSS47720.2021.9554019 
-
- 
 
 ****
 2020

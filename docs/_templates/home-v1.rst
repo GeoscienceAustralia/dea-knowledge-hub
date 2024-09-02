@@ -11,9 +11,11 @@
 
    .. rubric:: Data Products
 
-   Browse our catalogue of data products to find supporting information and ways to access the data.
+   .. raw:: html
 
-   .. grid:: 2 2 3 5
+      <p>Browse our <a href="/data/">catalogue of data products</a> to find supporting information and ways to access the data.</p>
+
+   .. grid:: 2 2 3 6
       :gutter: 3
 
       {% for item in data.product_themes %}
@@ -36,7 +38,7 @@
 
    .. container::
 
-      .. image:: /_files/pages/dea-hero.jpg
+      .. image:: /_files/default/dea-earth-thumbnail.jpg
          :class: no-gallery
 
 .. container:: showcase-panel bg-gradient-forest reverse
@@ -48,7 +50,7 @@
 
       Explore visual walkthroughs that show how to analyse our data using Python, including the use our DEA Tools package.
 
-      `Visit the DEA Notebooks </notebooks/README/>`_
+      `Visit the DEA Notebooks </dea-notebooks/>`_
 
    .. container::
 
@@ -78,13 +80,14 @@
 
       .. rubric:: Validation reports
 
-      Assess the validity of our datasets against these validation reports.
+      How well does DEA's satellite-derived Analysis Ready Data compare with field-derived surface reflectance data? These reports provide this comparison.
 
       `Visit the Validation reports </validation/>`_
 
    .. container::
 
-      .. image:: /_files/cmi/Kakadu-Mary_TCW-percentiles-wide_1.jpg
+      .. image:: /_files/validation/validation-drone-thumbnail.jpg
+         :class: no-gallery
 
 .. container:: showcase-panel
    :name: about-dea
@@ -99,7 +102,7 @@
 
       `Visit the DEA website <https://www.dea.ga.gov.au/>`_
 
-      `Follow our newsletter <https://www.dea.ga.gov.au/news/dea-newsletter-and-communications-archive>`_
+      `Subscribe to our newsletter <https://communication.ga.gov.au/dea-news-subscribe>`_
 
    .. container::
 

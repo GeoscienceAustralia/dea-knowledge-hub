@@ -10,6 +10,7 @@
 {% set valid_old_versions = data.old_versions | selectattr("slug",  "!=", None) | selectattr("version",  "!=", None) | selectattr("name",  "!=", None) | list %}
 {% set valid_product_types = [data.product_type, data.spatial_data_type] | select("!=", None) | list %}
 {% set valid_product_ids = data.product_ids | select("!=", None) | list %}
+{% set valid_custom_citations = data.custom_citations | select("!=", None) | list %}
 {% set valid_tags = data.tags | select("!=", None) | list %}
 
 {% set map_label = "See it on a map" %}
@@ -68,7 +69,7 @@
       {%- endif %}
       :Update frequency: {{ data.update_frequency }}
       {%- if data.next_update %}
-      :Next update: {{ data.next_update }}
+      :Next update due: {{ data.next_update }}
       {%- endif %}
       {%- if valid_product_ids %}
       :{{ product_ids_label }}: {{ valid_product_ids | join(", ") }}
@@ -76,7 +77,7 @@
 
    .. container::
 
-      .. image:: {{ data.header_image or "/_files/pages/dea-hero.jpg" }}
+      .. image:: {{ data.header_image or "/_files/default/dea-earth-thumbnail.jpg" }}
          :class: no-gallery
 
 .. container::
@@ -233,17 +234,24 @@
           {% if data.citations.data_citation %}
           * - **Data citation**
             - .. code-block:: text
-                 :name: data-citation
+                 :class: citation-table-citation citation-access-date
 
                  {{ data.citations.data_citation }}
           {%- endif %}
           {% if data.citations.paper_citation %}
           * - **Paper citation**
             - .. code-block:: text
-                 :name: paper-citation
+                 :class: citation-table-citation
 
                  {{ data.citations.paper_citation }}
           {%- endif %}
+          {% for citation in valid_custom_citations %}
+          * - **{{ citation.name }}**
+            - .. code-block:: text
+                 :class: citation-table-citation
+
+                 {{ citation.citation }}
+          {% endfor %}
        {%- endif %}
        {%- endif %}
 

@@ -13,6 +13,11 @@ cores with 16GB of RAM, 10GB of storage, and regularly used Python packages
 pre-installed. The Sandbox also includes Jupyter notebook user guides to help you
 get started with DEA and the Open Data Cube.
 
+.. admonition:: Get started
+   :class: note
+
+   Open the `DEA Sandbox <https://app.sandbox.dea.ga.gov.au>`_
+
 .. _Open Data Cube: https://www.dea.ga.gov.au/about/open-data-cube
 
 .. contents:: In this guide
@@ -112,10 +117,10 @@ Where can I get help?
 You can ask questions (and view previously asked questions) on the `Open Data Cube Stack Exchange`_ page.
 When asking a question, tag it with `open-data-cube`.
 
-You can also `join our Slack community`_ for help setting up or using Digital Earth Australia.
+You can also join our `Open Data Cube Discord chat`_ for help setting up or using Digital Earth Australia.
 
 .. _Open Data Cube Stack Exchange: https://gis.stackexchange.com/questions/tagged/open-data-cube
-.. _join our Slack community: http://slack.opendatacube.org/
+.. _Open Data Cube Discord chat: https://discord.com/invite/4hhBQVas5U
 
 DEA Sandbox disclaimer
 ----------------------

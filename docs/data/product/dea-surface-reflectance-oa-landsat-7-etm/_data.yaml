@@ -13,8 +13,8 @@ is_provisional: false
 product_type: Baseline
 spatial_data_type: Raster
 time_span:
-  start: 28/05/1999
-  end: 06/04/2022
+  start: 28 May 1999
+  end: 6 Apr 2022
 update_frequency: Daily
 next_update: null
 product_ids:
@@ -34,8 +34,9 @@ licence:
   link: https://creativecommons.org/licenses/by/4.0/
 
 citations:
-  data_citation: null
+  data_citation: "Fuqin, Li., Jupp, D.L.B., Sixsmith, J., Wang, L., Dorj, P., Vincent, A., Alam, I., Hooke, J., Oliver, S., Thankappan, M. 2019. GA Landsat 7 ETM+ Analysis Ready Data Collection 3. Geoscience Australia, Canberra. https://pid.geoscience.gov.au/dataset/ga/132310"
   paper_citation: null
+custom_citations: null
 
 tags:
   - geoscience_australia_landsat_collection_3
@@ -52,7 +53,7 @@ explorers:
     name: Data explorer
 
 data:
-  - link: https://dapds00.nci.org.au/thredds/catalog/xu18/catalog.html
+  - link: https://thredds.nci.org.au/thredds/catalog/xu18/catalog.html
     name: Access the data on NCI
   - link: https://data.dea.ga.gov.au/?prefix=baseline/ga_ls7e_ard_3/
     name: Access the data on AWS

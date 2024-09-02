@@ -12,7 +12,7 @@ latest_version_link: null
 product_type: Derivative
 spatial_data_type: Raster
 time_span:
-  start: 16/08/1986
+  start: 16 Aug 1986
   end: Present
 update_frequency: Daily
 next_update: null
@@ -33,8 +33,9 @@ licence:
   link: https://creativecommons.org/licenses/by/4.0/
 
 citations:
-  data_citation: null
-  paper_citation: null
+  data_citation: "Lymburner, L., 2021. Geoscience Australia Landsat Fractional Cover Collection 3. Geoscience Australia, Canberra. https://pid.geoscience.gov.au/dataset/ga/145498"
+  paper_citation: "Scarth, P., Roder, A., Schmidt, M., 2010. Tracking grazing pressure and climate interaction - the role of Landsat fractional cover in time series analysis. Proceedings of the 15th Australasian Remote Sensing & Photogrammetry Conference. http://dx.doi.org/10.6084/M9.FIGSHARE.94250"
+custom_citations: null
 
 tags:
   - geoscience_australia_landsat_collection_3
@@ -51,14 +52,14 @@ explorers:
     name: Data explorer
 
 data:
-  - link: https://dapds00.nci.org.au/thredds/catalog/jw04/ga_ls_fc_3/catalog.html
+  - link: https://thredds.nci.org.au/thredds/catalog/jw04/ga_ls_fc_3/catalog.html
     name: Access the data on NCI
   - link: https://data.dea.ga.gov.au/?prefix=derivative/ga_ls_fc_3/
     name: Access the data on AWS
 
 code_examples:
   - link: /notebooks/DEA_products/DEA_Fractional_Cover/
-    name: Jupyter notebook
+    name: Code examples
 
 web_services:
   - link: https://ows.dea.ga.gov.au

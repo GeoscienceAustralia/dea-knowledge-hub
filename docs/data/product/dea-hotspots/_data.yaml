@@ -13,7 +13,7 @@ is_provisional: false
 product_type: Data service
 spatial_data_type: Vector
 time_span:
-  start: 27/08/2002
+  start: 27 Aug 2002
   end: Present
 update_frequency: Every 10 minutes
 next_update: null
@@ -33,8 +33,9 @@ licence:
   link: https://creativecommons.org/licenses/by/4.0/
 
 citations:
-  data_citation: null
+  data_citation: "Geoscience Australia, 2020. Digital Earth Australia Hotspots dataset. Geoscience Australia, Canberra. https://pid.geoscience.gov.au/dataset/ga/111881"
   paper_citation: null
+custom_citations: null
 
 tags:
   - bushfires

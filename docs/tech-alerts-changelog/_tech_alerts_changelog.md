@@ -1,14 +1,172 @@
 % See the DEA Tech Alerts and Changelog documentation:
 % https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/tech_alerts_changelog.html
 
-:::{admonition} DEA System Status
-:class: tip
+% How to update the 'System status of DEA':
 % Change the 'class' to either: tip / caution / danger
+% Default content: All DEA systems are working as expected. There are no outstanding incidents or errors to report.
 
-All DEA systems are working as expected. There are no outstanding incidents or errors to report.
+:::{admonition} System status of DEA
+:class: caution
 
-See the [DEA monitoring dashboard](https://monitoring.dea.ga.gov.au/) to check the current status of DEA's services.
+* Misclassification issue with Sentinel-2 's2cloudless' cloud masking from 2022. See below.
+* Terra-derived DEA Hotspots are unavailable. See below.
+* NCI Explorer may experience instability. See below.
 :::
+
+## In progress: Shift in origin point of DEA Summary Product Grid
+
+:::{include} ../_components/shift-in-summary-product-grid-tech-alert.md
+:::
+
+Learn more about the [DEA Summary Product Grid](/guides/reference/collection_3_summary_grid/).
+
+## 2024-08-16: Hotspots MODIS SRSS missing data (Fixed)
+
+On 21 Aug, we detected that the DEA Hotspots MODIS SRSS sub-product was missing `*hotspots.txt` and `*metadata.txt` files in its daily data folders since 16 Aug. This was caused by a software bug. After detecting the issue, we fixed the bug on the same day and uploaded all the missing data files.
+
+## 2024-08-08: NCI Explorer may experience instability
+
+The [NCI Explorer](https://explorer.nci.dea.ga.gov.au/) has experienced some intermittent outages recently. We are currently investigating the cause of the issue. If the NCI Explorer fails to load, please try again later.
+
+## 2024-08-02: Version 4.0.0 of DEA Geometric Median and Median Absolute Deviation released
+
+The newly released version 4.0.0 of [DEA Geometric Median and Median Absolute Deviation](/data/product/dea-geometric-median-and-median-absolute-deviation-landsat/) contains new features and changes such as the following.
+
+* **Breaking change:** Shift in grid origin point.
+* Enhanced cloud masking to reduce noise.
+* Combined Landsat 8 and 9 product.
+* Prefixed band measurement names.
+
+See the [Version 4.0.0 Changelog](/data/product/dea-geometric-median-and-median-absolute-deviation-landsat/?tab=history) for more information.
+
+## 2024-07-01: External data products now featured on the Knowledge Hub
+
+External data products are produced by external providers such as a different program of Geoscience Australia or a different organisation entirely. These external data products may assist with the analysis of DEA data. DEA even provides services relating to some of these external products. Therefore, we have begun to include some external products on our Knowledge Hub so that you can easily find and access this data. So far, we have added three external data products to the Knowledge Hub. But watch this space, as there are more to come!
+
+View the [External data products in the Knowledge Hub](/data/theme/external-data/).
+
+## 2024-07-01: DEA Sandbox new user signups restored
+
+An issue was preventing new users from signing up to the [DEA Sandbox](https://app.sandbox.dea.ga.gov.au/) for the past 5 days. We have now fixed the issue and you should now be able to sign up for the DEA Sandbox.
+
+## 2024-06-28: DEA Published Product Currency Report released
+
+We have released a report that tracks the Currency of our data products and if they are on time. Currency is a measure of how consistently DEA’s data products have been published through DEA in line with the stated update frequency on or before the scheduled publish date. External auditors can use this report to verify that DEA is meeting its performance targets, and internally, we use it for our annual reporting practices.
+
+View the [DEA Published Product Currency Report](https://mgmt.sandbox.dea.ga.gov.au/public-dashboards/d22241dbfca54b1fa9f73938ef26e645?orgId=1).
+
+Learn more about how to [understand and analyse this report](/guides/setup/operational-reports/product-currency-report/).
+
+Internal staff can also [view the full history of data](https://mgmt.sandbox.dea.ga.gov.au/d/c1674b20-8c8a-4d90-aef2-02796275cf2b/4e57919d-fc9d-59d7-9bd1-aa61d41bcb92?orgId=1).
+
+## 2024-07-01: External data products now featured on the Knowledge Hub
+
+External data products are produced by external providers such as a different program of Geoscience Australia or a different organisation entirely. These external data products may assist with the analysis of DEA data. DEA even provides services relating to some of these external products. Therefore, we have begun to include some external products on our Knowledge Hub so that you can easily find and access this data. So far, we have added three external data products to the Knowledge Hub. But watch this space, as there are more to come!
+
+View the [External data products in the Knowledge Hub](/data/theme/external-data/).
+
+## 2024-07-01: DEA Sandbox new user signups restored
+
+An issue was preventing new users from signing up to the [DEA Sandbox](https://app.sandbox.dea.ga.gov.au/) for the past 5 days. We have now fixed the issue and you should now be able to sign up for the DEA Sandbox.
+
+## 2024-06-28: DEA Published Product Currency Report released
+
+We have released a report that tracks the Currency of our data products and if they are on time. Currency is a measure of how consistently DEA’s data products have been published through DEA in line with the stated update frequency on or before the scheduled publish date. External auditors can use this report to verify that DEA is meeting its performance targets, and internally, we use it for our annual reporting practices.
+
+View the [DEA Published Product Currency Report](https://mgmt.sandbox.dea.ga.gov.au/public-dashboards/d22241dbfca54b1fa9f73938ef26e645?orgId=1).
+
+Learn more about how to [understand and analyse this report](/guides/setup/operational-reports/product-currency-report/).
+
+Internal staff can also [view the full history of data](https://mgmt.sandbox.dea.ga.gov.au/d/c1674b20-8c8a-4d90-aef2-02796275cf2b/4e57919d-fc9d-59d7-9bd1-aa61d41bcb92?orgId=1).
+
+## 2024-08-01: Resolved outage of Hotspots S-NPP VIIRS data
+
+The Suomi-NPP VIIRS Hotspots sub-product has resumed publishing data because the satellite's issue has been resolved.
+
+## 2024-07-25: Outage of Hotspots S-NPP VIIRS data (Resolved)
+
+This issue concerns [DEA Hotspots](https://knowledge.dea.ga.gov.au/data/product/dea-hotspots/). The Suomi-NPP satellite has experienced a data outage that has resulted in data unavailability until further notice. Therefore, Suomi-NPP VIIRS Hotspots cannot be published until this issue is resolved. Other DEA Hotspots sub-products are unaffected by this outage.
+
+## 2024-07-01: External data products now featured on the Knowledge Hub
+
+External data products are produced by external providers such as a different program of Geoscience Australia or a different organisation entirely. These external data products may assist with the analysis of DEA data. DEA even provides services relating to some of these external products. Therefore, we have begun to include some external products on our Knowledge Hub so that you can easily find and access this data. So far, we have added three external data products to the Knowledge Hub. But watch this space, as there are more to come!
+
+View the [External data products in the Knowledge Hub](/data/theme/external-data/).
+
+## 2024-07-01: DEA Sandbox new user signups restored
+
+An issue was preventing new users from signing up to the [DEA Sandbox](https://app.sandbox.dea.ga.gov.au/) for the past 5 days. We have now fixed the issue and you should now be able to sign up for the DEA Sandbox.
+
+## 2024-06-28: DEA Published Product Currency Report released
+
+We have released a report that tracks the Currency of our data products and if they are on time. Currency is a measure of how consistently DEA’s data products have been published through DEA in line with the stated update frequency on or before the scheduled publish date. External auditors can use this report to verify that DEA is meeting its performance targets, and internally, we use it for our annual reporting practices.
+
+View the [DEA Published Product Currency Report](https://mgmt.sandbox.dea.ga.gov.au/public-dashboards/d22241dbfca54b1fa9f73938ef26e645?orgId=1).
+
+Learn more about how to [understand and analyse this report](/guides/setup/operational-reports/product-currency-report/).
+
+Internal staff can also [view the full history of data](https://mgmt.sandbox.dea.ga.gov.au/d/c1674b20-8c8a-4d90-aef2-02796275cf2b/4e57919d-fc9d-59d7-9bd1-aa61d41bcb92?orgId=1).
+
+## 2024-06-24: Performance issues with DEA Explorer and STAC API (Resolved)
+
+The recent performance issues with the [DEA Explorer](https://explorer.dea.ga.gov.au/) and [DEA Explorer STAC API](https://explorer.dea.ga.gov.au/stac/) have now been resolved. You will notice that the performance and stability of these services has returned to normal. We hope you continue to enjoy using these services.
+
+## 2024-06-14: DEA Sandbox service has been restored
+
+The unplanned outage that affected the [DEA Sandbox](https://app.sandbox.dea.ga.gov.au/) today has been resolved. The DEA Sandbox is now back online.
+
+## 2024-06-14: DEA Sandbox unplanned outage (Resolved)
+
+The [DEA Sandbox](https://app.sandbox.dea.ga.gov.au/) is currently experiencing an unplanned outage. We are investigating the issue and hope to have the service back up and running soon. We will post an update when the service is restored.
+
+## 2024-06-12: DEA Intertidal data now available on ELVIS
+
+[DEA Intertidal](/data/product/dea-intertidal/) elevation and uncertainty data can now be ordered and downloaded from the ELVIS platform.
+
+For instructions on how to access this data from ELVIS, visit the [DEA Intertidal page (Access tab)](/data/product/dea-intertidal/?tab=access).
+
+## 2024-05-30: NCI THREDDS data access links updated to point to the new THREDDS server
+
+NCI has released an upgrade to the THREDDS Data Service and will [decommission the existing THREDDS server after 30th June 2024](https://opus.nci.org.au/display/NDP/THREDDS+Upgrade).
+
+To prepare for this change, all THREDDS data access links in the Knowledge Hub have been updated to point to the new THREDDS server: all `https://dapds00.nci.org.au/thredds/...` links have been changed to `https://thredds.nci.org.au/thredds/...`.
+
+## 2024-05-24: Misclassification issue with Sentinel-2 's2cloudless' cloud masking from 2022
+
+An issue has been identified that is causing widespread misclassification of clouds in DEA's Sentinel-2 `s2cloudless` cloud mask data generated since January 2022. 
+
+We recommend that you avoid using `s2cloudless` cloud mask data from 2022 onwards until this issue is investigated. 
+
+## 2024-05-13: Terra-derived DEA Hotspots are unavailable
+
+Direct Broadcast satellite downloads from the Terra satellite have again become unavailable. This means that Terra-derived [DEA Hotspots](https://hotspots.dea.ga.gov.au/) are unavailable until further notice.
+
+This is due to the TERRA MODIS satellite experiencing power problems. The satellite continues to collect data but its direct broadcast has stopped.
+
+## 2024-05-06: Performance issues with DEA Explorer and STAC API
+
+You may notice slow load times or outages with the [DEA Explorer](https://explorer.dea.ga.gov.au/) and [DEA Explorer STAC API](https://explorer.dea.ga.gov.au/stac/). We apologise for any inconvenience that this may cause and we are working to solve this issue.
+
+## 2024-05-01: Six of Australia’s offshore territories now covered by Digital Earth Australia baseline satellite data
+
+In support of Indigenous Communities in the Torres Strait, in addition to government agencies reporting on Ocean Ecosystem Accounts and Marine Parks management, DEA is making baseline satellite data available for 6 offshore territories and islands in the Torres Strait.
+
+Learn more about the [DEA ARD expanded processing extent](/guides/reference/ard-expanded-processing-extent/).
+
+## 2024-04-23: It's now easier to cite DEA products
+
+A new 'Cite this product' section has been added to each product page to make it
+easier to cite the product in your academic paper, article, or presentation.
+A citation may been provided for the data itself, and where relevant, to the
+published methods paper. 
+
+See this feature on the [DEA Waterbodies product page](/data/product/dea-waterbodies-landsat/?tab=overview#citations). 
+
+## 2024-04-18: New Validation reports section
+
+The Knowledge Hub contains a new [Validation reports](/validation/) section. This is where you will find reports of Geoscience Australia’s validation data, published periodically. This data can be used to validate Geoscience Australia’s other datasets.
+
+See the latest Daily Validation Summary Report: [2023-11-27: Transect NSW Site 1, Sentinel-2B overpass](/validation/daily-report/2023-11-27/)
 
 ## 2024-04-10: DEA Intertidal 1.0.0 released
 
@@ -47,12 +205,6 @@ We have received notice from NASA that Direct Broadcast satellite downloads from
 Outages affecting DEA Open Web Services (OWS) have been resolved. Work will be continuing over the coming months to further improve performance and reliability of these services. 
 
 See the [DEA monitoring dashboard](https://monitoring.dea.ga.gov.au/) to check the current status of DEA's services.
-
-## 2024-04-10: Validation reports now being published
-
-The Knowledge Hub contains a new [Validation reports](/validation/) section. This is where you will find reports of Geoscience Australia’s validation data, published periodically. This data can be used to validate Geoscience Australia’s other datasets.
-
-See the first Daily Validation Summary Report: [2023-11-27: Transect NSW Site 1, Sentinel-2B overpass](/validation/daily-report/2023-11-27/)
 
 ## 2024-02-26: Sentinel-2 contiguity fix reprocessing complete
 

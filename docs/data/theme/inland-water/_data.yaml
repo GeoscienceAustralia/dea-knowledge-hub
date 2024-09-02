@@ -1,7 +1,7 @@
 title: Inland water
-description: Browse inland water data products.
+description: Analyse inland water across Australia, including changes in water extent, frequency, and variability.
 
-pages:
+cards:
   - name: DEA Wetlands Insight Tool
     link: /data/category/dea-wetlands-insight-tool/
     image: /_files/cmi/PlaceholderWIT.PNG

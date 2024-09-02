@@ -3,7 +3,7 @@ name: Deploy to Production
 on:
   workflow_dispatch:
   repository_dispatch:
-    types: [republish-docs] # Triggered by the dea-notebooks repo - https://github.com/GeoscienceAustralia/dea-notebooks/blob/develop/.github/workflows/trigger_docs.yaml
+    types: [publish-notebooks-to-knowledge-hub] # Triggered by the dea-notebooks repository: https://github.com/GeoscienceAustralia/dea-notebooks/blob/develop/.github/workflows/trigger_docs.yaml
   push:
     branches: [main]
 
@@ -27,7 +27,6 @@ jobs:
 
       - name: Pull latest from submodules
         run: git submodule foreach git pull origin stable
-          # This doesn't update the submodule to the latest commit on the origin; therefore, you should manually do this on a semi-regular basis.
 
       - name: Install Python ${{ matrix.python-version }}
         uses: actions/setup-python@v4

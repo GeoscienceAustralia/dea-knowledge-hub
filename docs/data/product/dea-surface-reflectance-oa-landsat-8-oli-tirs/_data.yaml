@@ -13,7 +13,7 @@ is_provisional: false
 product_type: Baseline
 spatial_data_type: Raster
 time_span:
-  start: 19/03/2013
+  start: 19 Mar 2013
   end: Present
 update_frequency: Daily
 next_update: null
@@ -34,8 +34,9 @@ licence:
   link: https://creativecommons.org/licenses/by/4.0/
 
 citations:
-  data_citation: null
+  data_citation: "Fuqin, Li., Jupp, D.L.B., Sixsmith, J., Wang, L., Dorj, P., Vincent, A., Alam, I., Hooke, J., Oliver, S., Thankappan, M. 2019. GA Landsat 8 OLI/TIRS Analysis Ready Data Collection 3. Geoscience Australia, Canberra. https://pid.geoscience.gov.au/dataset/ga/132317"
   paper_citation: null
+custom_citations: null
 
 tags:
   - geoscience_australia_landsat_collection_3
@@ -52,7 +53,7 @@ explorers:
     name: Data explorer
 
 data:
-  - link: https://dapds00.nci.org.au/thredds/catalog/xu18/catalog.html
+  - link: https://thredds.nci.org.au/thredds/catalog/xu18/catalog.html
     name: Access the data on NCI
   - link: https://data.dea.ga.gov.au/?prefix=baseline/ga_ls8c_ard_3/
     name: Access the data on AWS

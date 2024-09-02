@@ -13,7 +13,7 @@ is_provisional: false
 product_type: Baseline
 spatial_data_type: Raster
 time_span:
-  start: 31/10/2021
+  start: 31 Oct 2021
   end: Present
 update_frequency: Daily
 next_update: null
@@ -34,8 +34,9 @@ licence:
   link: https://creativecommons.org/licenses/by/4.0/
 
 citations:
-  data_citation: null
+  data_citation: "Alam, I., Chopra, A., Gray, D., Hooke, J., Li, F., Ly, L., Mettes, J., Miller, J., Norton, A., OHehir, A. 2023. Geoscience Australia Landsat 9 OLI TIRS Analysis Ready Data Collection 3. Geoscience Australia, Canberra. https://dx.doi.org/10.26186/148693"
   paper_citation: null
+custom_citations: null
 
 tags:
   - geoscience_australia_landsat_collection_3
@@ -56,7 +57,7 @@ explorers:
     name: Data explorer
 
 data:
-  - link: https://dapds00.nci.org.au/thredds/catalog/xu18/catalog.html
+  - link: https://thredds.nci.org.au/thredds/catalog/xu18/catalog.html
     name: Access the data on NCI
   - link: https://data.dea.ga.gov.au/?prefix=baseline/ga_ls9c_ard_3/
     name: Access the data on AWS

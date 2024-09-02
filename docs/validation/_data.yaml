@@ -1,7 +1,10 @@
 title: Validation reports
-description: These reports provide statistical summaries that you can compare to our datasets to assess their validity.
+description: How well does DEA's satellite-derived Analysis Ready Data compare with field-derived surface reflectance data? These reports provide this comparison.
 
-pages:
+cards:
   - name: Site Reports
     link: ./site-report/
-    image: /_files/validation/site-report.png
+    image: /_files/validation/validation-drone-thumbnail.jpg
+  - name: User guides
+    link: /guides/setup/validation/
+    image: /_files/validation/user-guides-thumbnail-2.jpg
