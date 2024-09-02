@@ -8,7 +8,7 @@
 :::{admonition} System status of DEA
 :class: caution
 
-* DEA ARD expanded processing extent is paused since May 2024. See below. % 
+* DEA ARD expanded processing extent is paused since May 2024. See below. <!-- NOTE Remember to remove the banner on the page: https://pr-302-preview.khpreview.dea.ga.gov.au/guides/reference/ard-expanded-processing-extent/ -->
 * Misclassification issue with Sentinel-2 's2cloudless' cloud masking from 2022. See below.
 * Terra-derived DEA Hotspots are unavailable. See below.
 * NCI Explorer may experience instability. See below.
@@ -23,7 +23,7 @@ Learn more about the [DEA Summary Product Grid](/guides/reference/collection_3_s
 
 <div id="2024-09-02-expanded-extent-paused"></div>
 
-## 2024-09-02: Expanded extents data processing is currently paused, with data available to May 2024
+## 2024-09-02: Expanded extents data processing is currently paused, with data available to May 2024 <!-- NOTE Remember to remove the banner on the page: https://pr-302-preview.khpreview.dea.ga.gov.au/guides/reference/ard-expanded-processing-extent/ -->
 
 This year, we [expanded the processing extents](/guides/reference/ard-expanded-processing-extent/) for our [Surface Reflectance products](/data/category/dea-surface-reflectance/) and derivative products.
 
