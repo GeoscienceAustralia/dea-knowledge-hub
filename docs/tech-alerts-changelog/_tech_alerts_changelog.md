@@ -21,7 +21,7 @@
 
 Learn more about the [DEA Summary Product Grid](/guides/reference/collection_3_summary_grid/).
 
-<div id="2024-09-02-expanded-extent-paused"></div>
+<span id="2024-09-02-expanded-extent-paused"></span>
 
 ## 2024-09-02: Expanded extents data processing is currently paused, with data available to May 2024 <!-- NOTE Remember to remove the banner on the page: https://pr-302-preview.khpreview.dea.ga.gov.au/guides/reference/ard-expanded-processing-extent/ -->
 
