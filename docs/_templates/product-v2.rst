@@ -124,9 +124,7 @@
       :{{ product_ids_label }}: {{ product_ids_comma_separated }}
       {%- endif %}
       :Type: {{ product_types_list | join(", ") }}
-      {%- if page.data.resolution and page.specifications.enable_specifications %}
-      :Resolution: `{{ page.data.resolution }} <./?tab=specifications>`_
-      {%- elif page.data.resolution %}
+      {%- if page.data.resolution %}
       :Resolution: {{ page.data.resolution }}
       {%- endif %}
       {%- if page.data.time_span_custom %}
