@@ -1,6 +1,6 @@
 # DEA ARD expanded processing extent
 
-:::{admonition} DEA ARD expanded processing extent is paused since May 2024
+:::{admonition} Expanded extents data processing is currently paused, with data available to May 2024
 :class: note
 
 To learn more, [see the tech alert](/tech-alerts-changelog/#2024-09-02-expanded-extent-paused).
