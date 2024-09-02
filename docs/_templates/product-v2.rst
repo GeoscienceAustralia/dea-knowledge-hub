@@ -134,7 +134,7 @@
       {%- if page.data.time_span_custom %}
       :Data time span: {{ page.data.time_span_custom }}
       {%- elif page.data.time_span_start and page.data.time_span_end %}
-      :Data time span: {{ page.data.time_span_start }} :raw-html:`&ndash;` {{ page.data.time_span_end }}
+      :Data time span: {{ page.data.time_span_start }} to {{ page.data.time_span_end }}
       {%- elif page.data.time_span_start  %}
       :Data time span: Starts at {{ page.data.time_span_start }}
       {%- elif page.data.time_span_end  %}
