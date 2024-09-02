@@ -111,7 +111,7 @@
 
       {% if page.data.full_technical_name %}
       {{ page.data.full_technical_name }}
-      {%- endif %}
+      {% endif %}
 
       {%- if page.data.is_latest_version and old_versions_list | length > 0 and page.data.enable_history %} {# If at least one old version exists. #}
       :Version: `{{ page.data.product_version }} <./?tab=history>`_
@@ -120,9 +120,7 @@
       {%- else %}
       :Version: {{ page.data.product_version }} (`See latest version <{{ page.data.latest_version_link }}>`_)
       {%- endif %}
-      {%- if product_ids_list and page.data.enable_access %}
-      :{{ product_ids_label }}: `{{ product_ids_comma_separated }} <./?tab=access>`_
-      {%- elif product_ids_list %}
+      {%- if product_ids_list %}
       :{{ product_ids_label }}: {{ product_ids_comma_separated }}
       {%- endif %}
       :Type: {{ product_types_list | join(", ") }}
