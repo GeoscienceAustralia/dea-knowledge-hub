@@ -241,7 +241,7 @@ entries:
 
   - file: validation/index
     subtrees:
-      - caption: Site Reports
+      - caption: Site
         entries:
           - file: validation/site-report/index
             title: Site reports
