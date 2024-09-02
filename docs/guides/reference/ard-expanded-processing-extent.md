@@ -1,5 +1,11 @@
 # DEA ARD expanded processing extent
 
+:::{admonition} DEA ARD expanded processing extent is paused since May 2024
+:class: note
+
+To learn more, [see the tech alert](/tech-alerts-changelog/#2024-09-02-expanded-extent-paused).
+:::
+
 DEA produces surface reflectance products from Landsat and Sentinel-2 satellite observations which cover the continent and some near-shore islands of Australia. This data is used to produce derivative products such as DEA Coastlines, Water Observations, and Fractional Cover. 
 
 We are extending our baseline satellite data coverage to include Christmas Island, Cocos (Keeling) Islands, Coral Sea Islands, Heard Island and McDonald Islands, Norfolk Island, and islands in the Torres Strait. Additionally, we are processing imagery over shallow ocean areas to support bathymetry and oceanographic science.

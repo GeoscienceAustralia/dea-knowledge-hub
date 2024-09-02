@@ -20,6 +20,14 @@
 
 Learn more about the [DEA Summary Product Grid](/guides/reference/collection_3_summary_grid/).
 
+<div id="2024-09-02-expanded-extent-paused"></div>
+
+## 2024-09-02: DEA ARD expanded processing extent is paused since May 2024
+
+This year, we [expanded the processing extents](https://knowledge.dea.ga.gov.au/guides/reference/ard-expanded-processing-extent/) for our [Surface Reflectance products](https://knowledge.dea.ga.gov.au/data/category/dea-surface-reflectance/) and for derivative products.
+
+Unfortunately, due to unanticipated issues with an external network connection, we have needed to pause the back-processing of this expanded extent data since May 2024. You may have noticed this issue if you have attempted to access ARD from the Heard Island and McDonald Islands, for instance, and you found that there are no images more recent than May 2024.
+
 ## 2024-08-16: Hotspots MODIS SRSS missing data (Fixed)
 
 On 21 Aug, we detected that the DEA Hotspots MODIS SRSS sub-product was missing `*hotspots.txt` and `*metadata.txt` files in its daily data folders since 16 Aug. This was caused by a software bug. After detecting the issue, we fixed the bug on the same day and uploaded all the missing data files.
