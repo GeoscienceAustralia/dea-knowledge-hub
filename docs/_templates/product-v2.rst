@@ -62,7 +62,7 @@
 
 {% set product_ids_list = page.data.product_ids | select("!=", None) | list %}
 
-{% set product_types_list = [page.data.lineage_type, page.data.spatial_data_type] | select("!=", None) | list %}
+{% set specifications_summary_list = [page.data.lineage_type, page.data.spatial_data_type, page.data.resolution] | select("!=", None) | list %}
 
 {% set custom_citations_list = page.data.custom_citations | select("!=", None) | list %}
 
@@ -114,7 +114,7 @@
       {% endif %}
 
       {%- if page.data.is_latest_version and old_versions_list | length > 0 and page.data.enable_history %} {# If at least one old version exists. #}
-      :Version: `{{ page.data.product_version }} <./?tab=history>`_
+      :Version: {{ page.data.product_version }} `Learn more <./?tab=history>`_
       {%- elif page.data.is_latest_version %}
       :Version: {{ page.data.product_version }}
       {%- else %}
@@ -123,31 +123,21 @@
       {%- if product_ids_list %}
       :{{ product_ids_label }}: {{ product_ids_comma_separated }}
       {%- endif %}
-      :Type: {{ product_types_list | join(", ") }}
-      {%- if page.data.resolution and page.specifications.enable_specifications %}
-      :Resolution: `{{ page.data.resolution }} <./?tab=specifications>`_
-      {%- elif page.data.resolution %}
-      :Resolution: {{ page.data.resolution }}
-      {%- endif %}
+      :Specifications: {{ specifications_summary_list | join(", ") }} `Learn more <./?tab=specifications>`_
       {%- if page.data.time_span_custom %}
-      :Data time span: {{ page.data.time_span_custom }}
+      :Temporal extent: {{ page.data.time_span_custom }} `Learn more <./?tab=specifications>`_
       {%- elif page.data.time_span_start and page.data.time_span_end %}
-      :Data time span: {{ page.data.time_span_start }} to {{ page.data.time_span_end }}
+      :Temporal extent: {{ page.data.time_span_start }} to {{ page.data.time_span_end }} `Learn more <./?tab=specifications>`_
       {%- elif page.data.time_span_start  %}
-      :Data time span: Starts at {{ page.data.time_span_start }}
+      :Temporal extent: Starts at {{ page.data.time_span_start }} `Learn more <./?tab=specifications>`_
       {%- elif page.data.time_span_end  %}
-      :Data time span: Ends at {{ page.data.time_span_end }}
+      :Temporal extent: Ends at {{ page.data.time_span_end }} `Learn more <./?tab=specifications>`_
       {%- endif %}
-      :Data updates: {%- if is_frequency_ongoing %}
-                     | {{ data_update_frequency_cadence }}, {{ data_update_frequency_activity }}
-                     {%- else %}
-                     | {{ data_update_frequency_activity }} (Previously: {{ data_update_frequency_cadence }})
-                     {%- endif %}
-                     {%- if page.data.is_currency_reported and is_cadence_yearly %}
-                     {{ "| See `latest and next update dates and currency <{}>`_".format(currency_report_url) }}
-                     {%- elif page.data.is_currency_reported %}
-                     {{ "| See `latest update date and currency <{}>`_".format(currency_report_url) }}
-                     {%- endif %}
+      {%- if is_frequency_ongoing %}
+      :Data updates: {{ data_update_frequency_cadence }}, {{ data_update_frequency_activity }}
+      {%- else %}
+      :Data updates: {{ data_update_frequency_activity }} (Previously: {{ data_update_frequency_cadence }})
+      {%- endif %}
 
    .. container::
 
