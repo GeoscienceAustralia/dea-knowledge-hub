@@ -28,7 +28,9 @@ The surface reflectance statistics collected on this day are grouped into bands.
 This allows the data to be used to validate Geoscience Australia's other datasets that use the same standardised bands.
 
 ```{eval-rst}
-:download:`Download the results as CSV <./SiteValidationResults-2024-07-05-NSW6.csv>`
+.. container::
+
+   :download:`Download results as CSV <./SiteValidationResults-2024-07-06-NSW6.csv>`
 ```
 
 :::{csv-table} Results of Field data versus Landsat 8 Satellite
