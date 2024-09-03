@@ -26,7 +26,10 @@ These variables and environmental factors were present on the day the data were 
 
 The surface reflectance statistics collected on this day are grouped into bands.
 This allows the data to be used to validate Geoscience Australia's other datasets that use the same standardised bands.
-(:download:`Download the results as CSV <./SiteValidationResults-2024-07-06-NSW6.csv>`)
+
+```{eval-rst}
+:download:`Download the results as CSV <./SiteValidationResults-2024-07-05-NSW6.csv>`
+```
 
 :::{csv-table} Results of Field data versus Landsat 8 Satellite
 :class: validation-report-results-table
