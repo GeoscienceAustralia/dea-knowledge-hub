@@ -1,6 +1,8 @@
 # 2024-07-06-NSW6: Transect NSW Site 6, Landsat 8 overpass
 
-This is a report of the field data collected on 6&nbsp;July&nbsp;2024 at the location of Transect NSW Site 6 to validate the satellite data of the Landsat 8 overpass. The field data was collected by the Digital&nbsp;Earth&nbsp;Australia (DEA) program of Geoscience&nbsp;Australia and can be used to validate DEA's data products. The full collection of DEA validation data is available in the [National Spectral Database](https://www.dea.ga.gov.au/products/national-spectral-database).
+A Site Validation Summary Report of the surface reflectance data collected on the date of 2024-07-06-NSW6 by Geoscience&nbsp;Australia.
+The full collection of data is contained in the [National Spectral Database](https://www.dea.ga.gov.au/products/national-spectral-database).
+Satellite data can be found on [DEA maps](https://maps.dea.ga.gov.au/).
 
 :::{contents} In this report
 :local:
@@ -28,9 +30,9 @@ The surface reflectance statistics collected on this day are grouped into bands.
 This allows the data to be used to validate Geoscience Australia's other datasets that use the same standardised bands.
 
 ```{eval-rst}
-.. container::
+.. container:: validation-report-download
 
-   :download:`Download results as CSV <./SiteValidationResults-2024-07-06-NSW6.csv>`
+   :download:`Download as CSV <./SiteValidationResults-2024-07-06-NSW6.csv>`
 ```
 
 :::{csv-table} Results of Field data versus Landsat 8 Satellite
@@ -48,7 +50,7 @@ This allows the data to be used to validate Geoscience Australia's other dataset
 
 ## Figures
 
-The following figures provide visual representations of the data. (Click a figure to view it at full size.)
+Click an image to view it at full size.
 
 :::::{grid} 1 1 2 3
 ::::{grid-item}
