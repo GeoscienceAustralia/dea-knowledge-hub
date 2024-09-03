@@ -1,6 +1,6 @@
 # 2024-07-06-NSW6: Transect NSW Site 6, Landsat 8 overpass
 
-This is a report of the field data collected on 4&nbsp;July&nbsp;2024 at the 'Transect NSW Site 4' location to validate the Landsat 9 and Sentinel-2B dual overpass. The data was collected by the Digital&nbsp;Earth&nbsp;Australia (DEA) program of Geoscience&nbsp;Australia and can be used to validate DEA's data products. The full collection of DEA validation data is available in the [National Spectral Database](https://www.dea.ga.gov.au/products/national-spectral-database).
+This is a report of the field data collected on 6&nbsp;July&nbsp;2024 at the 'Transect NSW Site 6' location to validate the Landsat 8 overpass. The data was collected by the Digital&nbsp;Earth&nbsp;Australia (DEA) program of Geoscience&nbsp;Australia and can be used to validate DEA's data products. The full collection of DEA validation data is available in the [National Spectral Database](https://www.dea.ga.gov.au/products/national-spectral-database).
 
 :::{contents} In this report
 :local:
