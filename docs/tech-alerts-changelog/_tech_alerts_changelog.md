@@ -8,6 +8,7 @@
 :::{admonition} System status of DEA
 :class: caution
 
+* DEA ARD expanded processing extent is paused since May 2024. See below. <!-- NOTE Remember to remove the banner on the page: https://pr-302-preview.khpreview.dea.ga.gov.au/guides/reference/ard-expanded-processing-extent/ -->
 * Misclassification issue with Sentinel-2 's2cloudless' cloud masking from 2022. See below.
 * Terra-derived DEA Hotspots are unavailable. See below.
 * NCI Explorer may experience instability. See below.
@@ -19,6 +20,14 @@
 :::
 
 Learn more about the [DEA Summary Product Grid](/guides/reference/collection_3_summary_grid/).
+
+<span id="2024-09-02-expanded-extent-paused"></span>
+
+## 2024-09-02: Expanded extents data processing is currently paused, with data available to May 2024 <!-- NOTE Remember to remove the banner on the page: https://pr-302-preview.khpreview.dea.ga.gov.au/guides/reference/ard-expanded-processing-extent/ -->
+
+This year, we [expanded the processing extents](/guides/reference/ard-expanded-processing-extent/) for our [Surface Reflectance products](/data/category/dea-surface-reflectance/) and derivative products.
+
+Unfortunately, due to unanticipated issues with an external network connection, we have needed to pause the back-processing of this expanded extent data since May 2024. You may have noticed this issue, for example, if you attempted to access ARD from the Heard Island and McDonald Islands and found that there are no images more recent than May 2024.
 
 ## 2024-08-16: Hotspots MODIS SRSS missing data (Fixed)
 
