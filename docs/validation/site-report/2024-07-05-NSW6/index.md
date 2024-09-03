@@ -48,12 +48,6 @@ This allows the data to be used to validate Geoscience Australia's other dataset
 "SWIR2","0.073","0.018","0.098","0.05"
 :::
 
-```{eval-rst}
-.. container:: validation-report-download
-
-   :download:`Download as CSV <./SiteValidationResults-2024-07-05-NSW6.csv>`
-```
-
 :::{csv-table} Results of Field data versus Sentinel-2B Satellite
 :class: validation-report-results-table
 
