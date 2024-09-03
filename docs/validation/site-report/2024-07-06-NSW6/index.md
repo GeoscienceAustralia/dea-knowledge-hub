@@ -43,7 +43,7 @@ This allows the data to be used to validate Geoscience Australia's other dataset
 
 ## Figures
 
-The following figures provide visual representations of the results. (Click a figure to view it at full size.)
+The following figures provide visual representations of the data. (Click a figure to view it at full size.)
 
 :::::{grid} 1 1 2 3
 ::::{grid-item}
