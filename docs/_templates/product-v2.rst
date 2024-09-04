@@ -341,7 +341,7 @@ This is a test.
        .. list-table::
           :name: specifications-table
 
-          {%- if page.data.is_latest_version and old_versions_list | length > 0 and page.data.enable_history %} {# If at least one old version exists. #}
+          {% if page.data.is_latest_version and old_versions_list | length > 0 and page.data.enable_history %} {# If at least one old version exists. #}
           * - **Version**
             - {{ page.data.product_version }}
             - See the `version history <./?tab=history>`_
