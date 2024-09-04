@@ -158,7 +158,7 @@
 
    .. container::
 
-      .. rubric:: {{ page_title }}
+      .. rubric:: {{ page_title }} {{ jinja_version }}
 
       {% if page.data.full_technical_name %}
       {{ page.data.full_technical_name }}
