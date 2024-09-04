@@ -68,7 +68,7 @@
 
 {% set tags_list = page.data.tags | select("!=", None) | list %}
 
-{% set bands_list_table = page.specifications.bands_table | selectattr("name",  "!=", None) | list %}
+{% set bands_table_list = page.specifications.bands_table | selectattr("name",  "!=", None) | list %}
 
 {% set page_title = page.data.official_name if page.data.is_latest_version else "{}: {}".format(page.data.product_version, page.data.official_name) %}
 
