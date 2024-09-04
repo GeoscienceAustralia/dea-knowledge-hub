@@ -256,10 +256,10 @@
        .. list-table::
           :name: key-details-table
 
-          {%- if page.data.is_currency_reported and is_cadence_yearly %}
+          {% if page.data.is_currency_reported and is_cadence_yearly %}
           * - **Currency**
             - See `currency and latest and next update dates <{{ currency_report_url }}>`_
-          {%- elif page.data.is_currency_reported %}
+          {% elif page.data.is_currency_reported %}
           * - **Currency**
             - See `currency and latest update date <{{ currency_report_url }}>`_
           {%- endif %}
@@ -267,10 +267,10 @@
           * - **{{ product_ids_label }}**
             - {{ product_ids_comma_separated }}
           {%- endif %}
-          {% if page.data.doi %}
+          {%- if page.data.doi %}
           * - **DOI**
             - `{{ page.data.doi }} <https://doi.org/{{ page.data.doi }}>`_
-          {% elif page.data.ecat %}
+          {%- elif page.data.ecat %}
           * - **Persistent ID**
             - `{{ page.data.ecat }} <https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/{{ page.data.ecat }}>`_
           {%- endif %}
@@ -278,8 +278,8 @@
           * - **Last updated**
             - {{ page.data.published }}
           {%- endif %}
-          {% if page.data.parent_products %}
-          {% if page.data.parent_products.name and page.data.parent_products.link %}
+          {%- if page.data.parent_products %}
+          {%- if page.data.parent_products.name and page.data.parent_products.link %}
           * - **Parent product(s)**
             - `{{ page.data.parent_products.name }} <{{ page.data.parent_products.link }}>`_
           {%- endif %}
@@ -389,8 +389,6 @@
 
           * - **TODO**
             - TODO
-
-
 
        {% if bands_table_list %}
        .. rubric:: Bands
