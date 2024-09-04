@@ -441,11 +441,17 @@
           {%- if page.data.is_currency_reported and is_cadence_yearly %}
           * - **Currency**
             - `Currency Report <{{ currency_report_url }}>`_
-            - The report also contains the latest and next update date.
+            - See the report
+          * - **Latest and next update dates**
+            - `Currency Report <{{ currency_report_url }}>`_
+            - See the report
           {% elif page.data.is_currency_reported %}
           * - **Currency**
             - `Currency Report <{{ currency_report_url }}>`_
-            - The report also contains the latest update date.
+            - See the report
+          * - **Latest update date**
+            - `Currency Report <{{ currency_report_url }}>`_
+            - See the report
           {%- endif %}
           {%- if product_ids_list %}
           * - **{{ product_ids_label }}**
