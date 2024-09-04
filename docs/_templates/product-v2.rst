@@ -247,6 +247,10 @@
           :name: key-specifications
           :class: h2
 
+       {% if page.data.enable_specifications %}
+       For more specifications, see the `Specifications tab <./?tab=specifications>`_.
+       {% endif %}
+
        .. list-table::
           :name: key-specifications-table
 
