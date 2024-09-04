@@ -90,12 +90,6 @@
 
 {% set has_key_specifications = (page.data.parent_products.name and page.data.parent_products.link) or (page.data.collection.name and page.data.collection.link) or page.data.collection.name or page.data.doi or page.data.ecat or page.data.published %}
 
-{# Template blocks #}
-
-{%- macro key_specifications_table_2() %}
-This is a test.
-{% endmacro -%}
-
 {# Template #}
 
 .. role:: raw-html(raw)
@@ -398,41 +392,50 @@ This is a test.
             - The activity status of data updates.
           {%- if page.data.is_currency_reported and is_cadence_yearly %}
           * - **Currency**
+            - 
             - See `currency and latest and next update dates <{{ currency_report_url }}>`_
           {% elif page.data.is_currency_reported %}
           * - **Currency**
+            - 
             - See `currency and latest update date <{{ currency_report_url }}>`_
           {%- endif %}
           {%- if product_ids_list %}
           * - **{{ product_ids_label }}**
             - {{ product_ids_comma_separated }}
+            -
           {%- endif %}
           {%- if page.data.doi %}
           * - **DOI**
             - `{{ page.data.doi }} <https://doi.org/{{ page.data.doi }}>`_
+            -
           {%- elif page.data.ecat %}
           * - **Persistent ID**
             - `{{ page.data.ecat }} <https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/{{ page.data.ecat }}>`_
+            -
           {%- endif %}
           {%- if page.data.parent_products %}
           {%- if page.data.parent_products.name and page.data.parent_products.link %}
           * - **Parent product(s)**
             - `{{ page.data.parent_products.name }} <{{ page.data.parent_products.link }}>`_
+            -
           {%- endif %}
           {%- endif %}
           {%- if page.data.collection %}
           {%- if page.data.collection.name and page.data.collection.link %}
           * - **Collection**
             - `{{ page.data.collection.name }} <{{ page.data.collection.link }}>`_
+            -
           {%- elif page.data.collection.name %}
           * - **Collection**
             - {{ page.data.collection.name }}
+            -
           {%- endif %}
           {%- endif %}
           {%- if page.data.licence %}
           {%- if page.data.licence.name and page.data.licence.link %}
           * - **Licence**
             - `{{ page.data.licence.name }} <{{ page.data.licence.link }}>`_
+            -
           {%- endif %}
           {%- endif %}
 
