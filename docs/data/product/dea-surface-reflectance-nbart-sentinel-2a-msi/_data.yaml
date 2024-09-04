@@ -12,7 +12,7 @@ is_latest_version: true
 latest_version_link: null
 is_provisional: false
 
-lineage_type: Baseline
+lineage_type: BASELINE
 spatial_data_type: Raster
 
 time_span_start: 12 Jul 2015

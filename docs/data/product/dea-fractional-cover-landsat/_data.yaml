@@ -11,7 +11,7 @@ product_version: 2.3.1
 is_latest_version: true
 latest_version_link: null
 
-lineage_type: Derivative
+lineage_type: DERIVATIVE
 spatial_data_type: Raster
 
 time_span_start: 16 Aug 1986

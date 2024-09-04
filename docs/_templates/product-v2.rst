@@ -23,6 +23,11 @@
    "web_service": "Get via web service",
 } %}
 
+{% set lineage_type_terms = {
+   "BASELINE": "Baseline",
+   "DERIVATIVE": "Derivative",
+} %}
+
 {% set data_update_frequency_cadence_terms = {
    "AS_NEEDED": "'As needed' frequency",
    "DAILY": "Daily frequency",
@@ -77,6 +82,8 @@
 {% set product_ids_comma_separated = product_ids_list | join(", ") %}
 
 {% set currency_report_url = "https://mgmt.sandbox.dea.ga.gov.au/public-dashboards/d22241dbfca54b1fa9f73938ef26e645?orgId=1#:~:text={}".format(page.data.official_name | urlencode) %}
+
+{% set lineage_type = lineage_type_terms.get(page.data.lineage_type, page.data.lineage_type) %}
 
 {% set data_update_frequency_cadence = data_update_frequency_cadence_terms.get(page.data.data_update_frequency_cadence, page.data.data_update_frequency_cadence) %}
 
@@ -398,9 +405,19 @@
             - {{ page.data.product_version }}
             - This is an old version of the product. See the `latest version <{{ page.data.latest_version_link }}>`_.
           {%- endif %}
+          {% if lineage_type == lineage_type_terms.DERIVATIVE %}
           * - **Lineage type**
-            - {{ page.data.lineage_type }}
+            - {{ lineage_type }}
+            - Derivative products are derived from other products.
+          {%- elif lineage_type == lineage_type_terms.BASELINE %}
+          * - **Lineage type**
+            - {{ lineage_type }}
+            - Baseline products are produced directly from satellite data.
+          {%- else %}
+          * - **Lineage type**
+            - {{ lineage_type }}
             -
+          {%- endif %}
           * - **Spatial type**
             - {{ page.data.spatial_data_type }}
             -
@@ -441,17 +458,17 @@
           {%- if page.data.is_currency_reported and is_cadence_yearly %}
           * - **Currency**
             - `Currency Report <{{ currency_report_url }}>`_
-            - See the report
+            - See the report.
           * - **Latest and next update dates**
             - `Currency Report <{{ currency_report_url }}>`_
-            - See the report
+            - See the report.
           {% elif page.data.is_currency_reported %}
           * - **Currency**
             - `Currency Report <{{ currency_report_url }}>`_
-            - See the report
+            - See the report.
           * - **Latest update date**
             - `Currency Report <{{ currency_report_url }}>`_
-            - See the report
+            - See the report.
           {%- endif %}
 
        .. rubric:: Classification
