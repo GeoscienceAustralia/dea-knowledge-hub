@@ -414,10 +414,6 @@ This is a test.
           * - **Persistent ID**
             - `{{ page.data.ecat }} <https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/{{ page.data.ecat }}>`_
           {%- endif %}
-          {%- if page.data.published %}
-          * - **Last updated**
-            - {{ page.data.published }}
-          {%- endif %}
           {%- if page.data.parent_products %}
           {%- if page.data.parent_products.name and page.data.parent_products.link %}
           * - **Parent product(s)**
