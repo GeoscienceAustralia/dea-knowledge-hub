@@ -392,12 +392,12 @@
             - The activity status of data updates.
           {%- if page.data.is_currency_reported and is_cadence_yearly %}
           * - **Currency**
-            - 
-            - See `currency and latest and next update dates <{{ currency_report_url }}>`_
+            - `Currency Report <{{ currency_report_url }}>`_
+            - In the report, you will find the currency and latest and next update dates.
           {% elif page.data.is_currency_reported %}
           * - **Currency**
-            - 
-            - See `currency and latest update date <{{ currency_report_url }}>`_
+            - `Currency Report <{{ currency_report_url }}>`_
+            - In the report, you will find the currency and latest update date.
           {%- endif %}
           {%- if product_ids_list %}
           * - **{{ product_ids_label }}**
