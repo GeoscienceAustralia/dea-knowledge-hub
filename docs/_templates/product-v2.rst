@@ -178,6 +178,182 @@
    {% endif %}
 {% endset %}
 
+{% set overview_tab_component %}
+{% if page.data.enable_overview %}
+.. tab-item:: Overview
+   :name: overview
+
+   .. raw:: html
+
+      <div class="product-tab-table-of-contents"></div>
+
+   .. include:: _overview_1.md
+      :parser: myst_parser.sphinx_
+
+   {% if has_access_data %}
+   .. rubric:: Access the data
+      :name: access-the-data
+      :class: h2
+
+   {% if page.data.enable_access %}
+   For help accessing the data, see the `Access tab <./?tab=access>`_.
+   {% endif %}
+
+   .. container:: card-list icons
+      :name: access-the-data-cards
+
+      .. grid:: 2 2 3 5
+         :gutter: 3
+
+         {% for item in maps_list %}
+         .. grid-item-card:: :fas:`map-location-dot`
+            :link: {{ item.link }}
+            :link-alt: {{ access_labels.map }}
+
+            {{ item.name or access_names.map }}
+         {% endfor %}
+
+         {% for item in explorers_list %}
+         .. grid-item-card:: :fas:`magnifying-glass`
+            :link: {{ item.link }}
+            :link-alt: {{ access_labels.explorer }}
+
+            {{ item.name or access_names.explorer }}
+         {% endfor %}
+
+         {% for item in data_list %}
+         .. grid-item-card:: :fas:`database`
+            :link: {{ item.link }}
+            :link-alt: {{ access_labels.data }}
+
+            {{ item.name or access_names.data }}
+         {% endfor %}
+
+         {% for item in code_samples_list %}
+         .. grid-item-card:: :fas:`laptop-code`
+            :link: {{ item.link }}
+            :link-alt: {{ access_labels.code_sample }}
+
+            {{ item.name or access_names.code_sample }}
+         {% endfor %}
+
+         {% for item in web_services_list %}
+         .. grid-item-card:: :fas:`globe`
+            :link: {{ item.link }}
+            :link-alt: {{ access_labels.web_service }}
+
+            {{ item.name or access_names.web_service }}
+         {% endfor %}
+
+         {% for item in custom_list %}
+         .. grid-item-card:: :fas:`{{ item.icon }}`
+            :link: {{ item.link }}
+            :link-alt: {{ item.label or "" }}
+            :class-card: {{ item.class }}
+
+            {{ item.name }}
+         {% endfor %}
+   {%- endif %}
+
+   {% if has_key_specifications %}
+   .. rubric:: Key specifications
+      :name: key-specifications
+      :class: h2
+
+   {% if page.specifications.enable_specifications %}
+   For more specifications, see the `Specifications tab <./?tab=specifications>`_.
+   {% endif %}
+
+   .. list-table::
+      :name: key-specifications-table
+
+      {% if page.data.is_currency_reported and is_cadence_yearly %}
+      * - **Currency**
+        - See `currency and latest and next update dates <{{ currency_report_url }}>`_.
+      {% elif page.data.is_currency_reported %}
+      * - **Currency**
+        - See `currency and latest update date <{{ currency_report_url }}>`_.
+      {%- endif %}
+      {%- if product_ids_list %}
+      * - **{{ product_ids_label }}**
+        - {{ product_ids_comma_separated }}
+      {%- endif %}
+      {%- if page.data.doi %}
+      * - **DOI**
+        - `{{ page.data.doi }} <https://doi.org/{{ page.data.doi }}>`_
+      {%- elif page.data.ecat %}
+      * - **Persistent ID**
+        - `{{ page.data.ecat }} <https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/{{ page.data.ecat }}>`_
+      {%- endif %}
+      {%- if page.data.published %}
+      * - **Last updated**
+        - {{ page.data.published }}
+      {%- endif %}
+      {%- if page.data.parent_products %}
+      {%- if page.data.parent_products.name and page.data.parent_products.link %}
+      * - **Parent product(s)**
+        - `{{ page.data.parent_products.name }} <{{ page.data.parent_products.link }}>`_
+      {%- endif %}
+      {%- endif %}
+      {%- if page.data.collection %}
+      {%- if page.data.collection.name and page.data.collection.link %}
+      * - **Collection**
+        - `{{ page.data.collection.name }} <{{ page.data.collection.link }}>`_
+      {%- elif page.data.collection.name %}
+      * - **Collection**
+        - {{ page.data.collection.name }}
+      {%- endif %}
+      {%- endif %}
+      {%- if page.data.licence %}
+      {%- if page.data.licence.name and page.data.licence.link %}
+      * - **Licence**
+        - `{{ page.data.licence.name }} <{{ page.data.licence.link }}>`_
+      {%- endif %}
+      {%- endif %}
+   {%- endif %}
+
+   {% if page.data.citations %}
+   {% if page.data.citations.data_citation or page.data.citations.paper_citation %}
+   .. rubric:: Cite this product
+      :name: citations
+      :class: h2
+
+   .. list-table::
+      :name: citation-table
+
+      {% if page.data.citations.data_citation %}
+      * - **Data citation**
+        - .. code-block:: text
+             :class: citation-table-citation citation-access-date
+
+             {{ page.data.citations.data_citation }}
+      {%- endif %}
+      {% if page.data.citations.paper_citation %}
+      * - **Paper citation**
+        - .. code-block:: text
+             :class: citation-table-citation
+
+             {{ page.data.citations.paper_citation }}
+      {%- endif %}
+      {% for citation in custom_list_citations %}
+      * - **{{ citation.name }}**
+        - .. code-block:: text
+             :class: citation-table-citation
+
+             {{ citation.citation }}
+      {% endfor %}
+   {%- endif %}
+   {%- endif %}
+
+   {%- if tags_list and enable_tags %}
+   .. tags:: {{ tags_list | join(", ") }}
+   {%- endif %}
+
+   .. include:: _overview_2.md
+      :parser: myst_parser.sphinx_
+{% endif %}
+{% endset %}
+
 {% set details_tab_component %}
 {% if page.data.enable_details %}
 .. tab-item:: Details
@@ -202,181 +378,7 @@
 
 .. tab-set::
 
-   {# Overview tab #}
-
-   {% if page.data.enable_overview %}
-   .. tab-item:: Overview
-      :name: overview
-
-      .. raw:: html
-
-         <div class="product-tab-table-of-contents"></div>
-
-      .. include:: _overview_1.md
-         :parser: myst_parser.sphinx_
-
-      {% if has_access_data %}
-      .. rubric:: Access the data
-         :name: access-the-data
-         :class: h2
-
-      {% if page.data.enable_access %}
-      For help accessing the data, see the `Access tab <./?tab=access>`_.
-      {% endif %}
-
-      .. container:: card-list icons
-         :name: access-the-data-cards
-
-         .. grid:: 2 2 3 5
-            :gutter: 3
-
-            {% for item in maps_list %}
-            .. grid-item-card:: :fas:`map-location-dot`
-               :link: {{ item.link }}
-               :link-alt: {{ access_labels.map }}
-
-               {{ item.name or access_names.map }}
-            {% endfor %}
-
-            {% for item in explorers_list %}
-            .. grid-item-card:: :fas:`magnifying-glass`
-               :link: {{ item.link }}
-               :link-alt: {{ access_labels.explorer }}
-
-               {{ item.name or access_names.explorer }}
-            {% endfor %}
-
-            {% for item in data_list %}
-            .. grid-item-card:: :fas:`database`
-               :link: {{ item.link }}
-               :link-alt: {{ access_labels.data }}
-
-               {{ item.name or access_names.data }}
-            {% endfor %}
-
-            {% for item in code_samples_list %}
-            .. grid-item-card:: :fas:`laptop-code`
-               :link: {{ item.link }}
-               :link-alt: {{ access_labels.code_sample }}
-
-               {{ item.name or access_names.code_sample }}
-            {% endfor %}
-
-            {% for item in web_services_list %}
-            .. grid-item-card:: :fas:`globe`
-               :link: {{ item.link }}
-               :link-alt: {{ access_labels.web_service }}
-
-               {{ item.name or access_names.web_service }}
-            {% endfor %}
-
-            {% for item in custom_list %}
-            .. grid-item-card:: :fas:`{{ item.icon }}`
-               :link: {{ item.link }}
-               :link-alt: {{ item.label or "" }}
-               :class-card: {{ item.class }}
-
-               {{ item.name }}
-            {% endfor %}
-      {%- endif %}
-
-      {% if has_key_specifications %}
-      .. rubric:: Key specifications
-         :name: key-specifications
-         :class: h2
-
-      {% if page.specifications.enable_specifications %}
-      For more specifications, see the `Specifications tab <./?tab=specifications>`_.
-      {% endif %}
-
-      .. list-table::
-         :name: key-specifications-table
-
-         {% if page.data.is_currency_reported and is_cadence_yearly %}
-         * - **Currency**
-           - See `currency and latest and next update dates <{{ currency_report_url }}>`_.
-         {% elif page.data.is_currency_reported %}
-         * - **Currency**
-           - See `currency and latest update date <{{ currency_report_url }}>`_.
-         {%- endif %}
-         {%- if product_ids_list %}
-         * - **{{ product_ids_label }}**
-           - {{ product_ids_comma_separated }}
-         {%- endif %}
-         {%- if page.data.doi %}
-         * - **DOI**
-           - `{{ page.data.doi }} <https://doi.org/{{ page.data.doi }}>`_
-         {%- elif page.data.ecat %}
-         * - **Persistent ID**
-           - `{{ page.data.ecat }} <https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/{{ page.data.ecat }}>`_
-         {%- endif %}
-         {%- if page.data.published %}
-         * - **Last updated**
-           - {{ page.data.published }}
-         {%- endif %}
-         {%- if page.data.parent_products %}
-         {%- if page.data.parent_products.name and page.data.parent_products.link %}
-         * - **Parent product(s)**
-           - `{{ page.data.parent_products.name }} <{{ page.data.parent_products.link }}>`_
-         {%- endif %}
-         {%- endif %}
-         {%- if page.data.collection %}
-         {%- if page.data.collection.name and page.data.collection.link %}
-         * - **Collection**
-           - `{{ page.data.collection.name }} <{{ page.data.collection.link }}>`_
-         {%- elif page.data.collection.name %}
-         * - **Collection**
-           - {{ page.data.collection.name }}
-         {%- endif %}
-         {%- endif %}
-         {%- if page.data.licence %}
-         {%- if page.data.licence.name and page.data.licence.link %}
-         * - **Licence**
-           - `{{ page.data.licence.name }} <{{ page.data.licence.link }}>`_
-         {%- endif %}
-         {%- endif %}
-      {%- endif %}
-
-      {% if page.data.citations %}
-      {% if page.data.citations.data_citation or page.data.citations.paper_citation %}
-      .. rubric:: Cite this product
-         :name: citations
-         :class: h2
-
-      .. list-table::
-         :name: citation-table
-
-         {% if page.data.citations.data_citation %}
-         * - **Data citation**
-           - .. code-block:: text
-                :class: citation-table-citation citation-access-date
-
-                {{ page.data.citations.data_citation }}
-         {%- endif %}
-         {% if page.data.citations.paper_citation %}
-         * - **Paper citation**
-           - .. code-block:: text
-                :class: citation-table-citation
-
-                {{ page.data.citations.paper_citation }}
-         {%- endif %}
-         {% for citation in custom_list_citations %}
-         * - **{{ citation.name }}**
-           - .. code-block:: text
-                :class: citation-table-citation
-
-                {{ citation.citation }}
-         {% endfor %}
-      {%- endif %}
-      {%- endif %}
-
-      {%- if tags_list and enable_tags %}
-      .. tags:: {{ tags_list | join(", ") }}
-      {%- endif %}
-
-      .. include:: _overview_2.md
-         :parser: myst_parser.sphinx_
-   {% endif %}
+   {{ overview_tab_component | indent(3, True) }}
 
    {{ details_tab_component | indent(3, True) }}
 
