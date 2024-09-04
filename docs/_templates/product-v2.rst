@@ -495,9 +495,13 @@
        .. list-table::
           :name: classification-table
 
-          {% if page.data.full_technical_name %}
+          * - **Official name**
+            - {{ page.data.official_name }}
+            -
+          {%- if page.data.full_technical_name %}
           * - **Technical name**
             - {{ page.data.full_technical_name }}
+            -
           {%- endif %}
           {%- if product_ids_list %}
           * - **{{ product_ids_label }}**
