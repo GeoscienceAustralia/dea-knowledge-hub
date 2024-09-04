@@ -368,6 +368,20 @@
 {% endif %}
 {% endset %}
 
+{% set quality_tab_component %}
+{% if page.data.enable_quality %}
+.. tab-item:: Quality
+   :name: quality
+
+   .. raw:: html
+
+      <div class="product-tab-table-of-contents"></div>
+
+   .. include:: _quality.md
+      :parser: myst_parser.sphinx_
+{% endif %}
+{% endset %}
+
 {# Template #}
 
 {{ rst_head_component }}
@@ -382,19 +396,7 @@
 
    {{ details_tab_component | indent(3, True) }}
 
-   {# Quality tab #}
-
-   {% if page.data.enable_quality %}
-   .. tab-item:: Quality
-      :name: quality
-
-      .. raw:: html
-
-         <div class="product-tab-table-of-contents"></div>
-
-      .. include:: _quality.md
-         :parser: myst_parser.sphinx_
-   {% endif %}
+   {{ quality_tab_component | indent(3, True) }}
 
    {# Specifications tab #}
 
