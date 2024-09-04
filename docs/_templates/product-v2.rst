@@ -256,10 +256,10 @@
 
           {% if page.data.is_currency_reported and is_cadence_yearly %}
           * - **Currency**
-            - See `currency and latest and next update dates <{{ currency_report_url }}>`_
+            - See `currency and latest and next update dates <{{ currency_report_url }}>`_.
           {% elif page.data.is_currency_reported %}
           * - **Currency**
-            - See `currency and latest update date <{{ currency_report_url }}>`_
+            - See `currency and latest update date <{{ currency_report_url }}>`_.
           {%- endif %}
           {%- if product_ids_list %}
           * - **{{ product_ids_label }}**
@@ -378,14 +378,19 @@
 
           <div class="product-tab-table-of-contents"></div>
 
-       .. rubric:: Specifications
-          :name: specifications
+       .. rubric:: Attributes
+          :name: attributes
           :class: h2
 
        .. list-table::
-          :name: specifications-table
+          :name: attributes-table
 
-          {% if page.data.is_latest_version and old_versions_list | length > 0 and page.data.enable_history %} {# If at least one old version exists. #}
+          {% if product_ids_list %}
+          * - **{{ product_ids_label }}**
+            - {{ product_ids_comma_separated }}
+            -
+          {%- endif %}
+          {%- if page.data.is_latest_version and old_versions_list | length > 0 and page.data.enable_history %} {# If at least one old version exists. #}
           * - **Version**
             - {{ page.data.product_version }}
             - The version number of the product. See the `version history <./?tab=history>`_.
@@ -453,12 +458,15 @@
             - `Currency Report <{{ currency_report_url }}>`_
             - See the report
           {%- endif %}
-          {%- if product_ids_list %}
-          * - **{{ product_ids_label }}**
-            - {{ product_ids_comma_separated }}
-            -
-          {%- endif %}
-          {%- if page.data.doi %}
+
+       .. rubric:: Classification
+          :name: classification
+          :class: h2
+
+       .. list-table::
+          :name: classification-table
+
+          {% if page.data.doi %}
           * - **DOI**
             - `{{ page.data.doi }} <https://doi.org/{{ page.data.doi }}>`_
             -
@@ -467,15 +475,7 @@
             - `{{ page.data.ecat }} <https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/{{ page.data.ecat }}>`_
             -
           {%- endif %}
-
-       .. rubric:: Specifications 2
-          :name: specifications-2
-          :class: h2
-
-       .. list-table::
-          :name: specifications-table-2
-
-          {% if page.data.parent_products %}
+          {%- if page.data.parent_products %}
           {%- if page.data.parent_products.name and page.data.parent_products.link %}
           * - **Parent product(s)**
             - `{{ page.data.parent_products.name }} <{{ page.data.parent_products.link }}>`_
