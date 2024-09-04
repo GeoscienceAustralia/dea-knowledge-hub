@@ -494,7 +494,11 @@
           {%- endif %}
           {%- endif %}
           {%- if page.data.licence %}
-          {%- if page.data.licence.name and page.data.licence.link %}
+          {%- if page.data.licence.name and page.data.licence.link and page.data.enable_credits %}
+          * - **Licence**
+            - `{{ page.data.licence.name }} <{{ page.data.licence.link }}>`_
+            - Also, see the `copyright <./?tab=credits>`_.
+          {%- elif page.data.licence.name and page.data.licence.link %}
           * - **Licence**
             - `{{ page.data.licence.name }} <{{ page.data.licence.link }}>`_
             -
