@@ -120,21 +120,18 @@
       {%- else %}
       :Version: {{ page.data.product_version }} (`See latest version <{{ page.data.latest_version_link }}>`_)
       {%- endif %}
-      {%- if product_ids_list %}
-      :{{ product_ids_label }}: {{ product_ids_comma_separated }}
-      {%- endif %}
       :Type: {{ product_types_list | join(", ") }}
       {%- if page.data.resolution %}
       :Resolution: {{ page.data.resolution }}
       {%- endif %}
       {%- if page.data.time_span_custom %}
-      :Temporal extent: {{ page.data.time_span_custom }}
+      :Data from: {{ page.data.time_span_custom }}
       {%- elif page.data.time_span_start and page.data.time_span_end %}
-      :Temporal extent: {{ page.data.time_span_start }} to {{ page.data.time_span_end }}
+      :Data from: {{ page.data.time_span_start }} to {{ page.data.time_span_end }}
       {%- elif page.data.time_span_start  %}
-      :Temporal extent: Starts at {{ page.data.time_span_start }}
+      :Data since: {{ page.data.time_span_start }}
       {%- elif page.data.time_span_end  %}
-      :Temporal extent: Ends at {{ page.data.time_span_end }}
+      :Data until: Ends at {{ page.data.time_span_end }}
       {%- endif %}
       {%- if is_frequency_ongoing %}
       :Data updates: {{ data_update_frequency_cadence }}, {{ data_update_frequency_activity }}
@@ -253,6 +250,21 @@
        .. list-table::
           :name: key-details-table
 
+          {%- if product_ids_list %}
+          * - **{{ product_ids_label }}**
+            - {{ product_ids_comma_separated }}
+          {%- endif %}
+          {% if page.data.doi %}
+          * - **DOI**
+            - `{{ page.data.doi }} <https://doi.org/{{ page.data.doi }}>`_
+          {% elif page.data.ecat %}
+          * - **Persistent ID**
+            - `{{ page.data.ecat }} <https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/{{ page.data.ecat }}>`_
+          {%- endif %}
+          {%- if page.data.published %}
+          * - **Last updated**
+            - {{ page.data.published }}
+          {%- endif %}
           {% if page.data.parent_products %}
           {% if page.data.parent_products.name and page.data.parent_products.link %}
           * - **Parent product(s)**
@@ -267,17 +279,6 @@
           * - **Collection**
             - {{ page.data.collection.name }}
           {%- endif %}
-          {%- endif %}
-          {% if page.data.doi %}
-          * - **DOI**
-            - `{{ page.data.doi }} <https://doi.org/{{ page.data.doi }}>`_
-          {% elif page.data.ecat %}
-          * - **Persistent ID**
-            - `{{ page.data.ecat }} <https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/{{ page.data.ecat }}>`_
-          {%- endif %}
-          {%- if page.data.published %}
-          * - **Last updated**
-            - {{ page.data.published }}
           {%- endif %}
           {%- if page.data.licence %}
           {%- if page.data.licence.name and page.data.licence.link %}
