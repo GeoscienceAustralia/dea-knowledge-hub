@@ -119,9 +119,7 @@ This is a test.
       {{ page.data.full_technical_name }}
       {% endif %}
 
-      {%- if page.data.is_latest_version and old_versions_list | length > 0 and page.data.enable_history %} {# If at least one old version exists. #}
-      :Version: {{ page.data.product_version }}
-      {%- elif page.data.is_latest_version %}
+      {% if page.data.is_latest_version %}
       :Version: {{ page.data.product_version }}
       {%- else %}
       :Version: {{ page.data.product_version }} (`See latest version <{{ page.data.latest_version_link }}>`_)
@@ -137,7 +135,7 @@ This is a test.
       {%- elif page.data.time_span_start  %}
       :Data since: {{ page.data.time_span_start }}
       {%- elif page.data.time_span_end  %}
-      :Data until: Ends at {{ page.data.time_span_end }}
+      :Data until: {{ page.data.time_span_end }}
       {%- endif %}
       {%- if is_frequency_ongoing %}
       :Data updates: {{ data_update_frequency_cadence }}, {{ data_update_frequency_activity }}
@@ -345,48 +343,60 @@ This is a test.
        .. list-table::
           :name: specifications-table
 
-          {% if page.data.is_currency_reported and is_cadence_yearly %}
-          * - **Currency**
-            - See `currency and latest and next update dates <{{ currency_report_url }}>`_
-          {% elif page.data.is_currency_reported %}
-          * - **Currency**
-            - See `currency and latest update date <{{ currency_report_url }}>`_
+          {%- if page.data.is_latest_version and old_versions_list | length > 0 and page.data.enable_history %} {# If at least one old version exists. #}
+          * - **Version**
+            - {{ page.data.product_version }}
+            - See the `version history <./?tab=history>`_
+          {%- elif page.data.is_latest_version %}
+          * - **Version**
+            - {{ page.data.product_version }}
+            -
+          {%- else %}
+          * - **Version**
+            - {{ page.data.product_version }}
+            - See the `latest version <{{ page.data.latest_version_link }}>`_
           {%- endif %}
-          {%- if product_ids_list %}
-          * - **{{ product_ids_label }}**
-            - {{ product_ids_comma_separated }}
+          * - **Lineage type**
+            - {{ lineage_type }}
+            -
+          * - **Spatial type**
+            - {{ spatial_data_type }}
+            -
+          {%- if page.data.resolution %}
+          * - **Resolution**
+            - {{ page.data.resolution }}
+            -
           {%- endif %}
-          {%- if page.data.doi %}
-          * - **DOI**
-            - `{{ page.data.doi }} <https://doi.org/{{ page.data.doi }}>`_
-          {%- elif page.data.ecat %}
-          * - **Persistent ID**
-            - `{{ page.data.ecat }} <https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/{{ page.data.ecat }}>`_
+          {%- if page.data.time_span_custom %}
+          * - **Temporal extent**
+            - {{ page.data.time_span_custom }}
+            -
+          {%- elif page.data.time_span_start and page.data.time_span_end %}
+          * - **Temporal extent**
+            - {{ page.data.time_span_start }} to {{ page.data.time_span_end }}
+            -
+          {%- elif page.data.time_span_start  %}
+          * - **Temporal extent**
+            - Since {{ page.data.time_span_start }}
+            -
+          {%- elif page.data.time_span_end  %}
+          * - **Temporal extent**
+            - Until {{ page.data.time_span_end }}
+            -
           {%- endif %}
-          {%- if page.data.published %}
-          * - **Last updated**
-            - {{ page.data.published }}
+          {%- if is_frequency_ongoing %}
+          * - **Update cadence**
+            - {{ data_update_frequency_cadence }}
+            - The frequency of data updates.
+          {%- else %}
+          * - **Update cadence**
+            - Previously: {{ data_update_frequency_cadence }}
+            - When data updates were active, this was their frequency.
           {%- endif %}
-          {%- if page.data.parent_products %}
-          {%- if page.data.parent_products.name and page.data.parent_products.link %}
-          * - **Parent product(s)**
-            - `{{ page.data.parent_products.name }} <{{ page.data.parent_products.link }}>`_
-          {%- endif %}
-          {%- endif %}
-          {%- if page.data.collection %}
-          {%- if page.data.collection.name and page.data.collection.link %}
-          * - **Collection**
-            - `{{ page.data.collection.name }} <{{ page.data.collection.link }}>`_
-          {%- elif page.data.collection.name %}
-          * - **Collection**
-            - {{ page.data.collection.name }}
-          {%- endif %}
-          {%- endif %}
-          {%- if page.data.licence %}
-          {%- if page.data.licence.name and page.data.licence.link %}
-          * - **Licence**
-            - `{{ page.data.licence.name }} <{{ page.data.licence.link }}>`_
-          {%- endif %}
+          * - **Update activity**
+            - {{ data_update_frequency_activity }}
+            - The activity status of data updates.
+          {%- else %}
           {%- endif %}
 
        {% if bands_table_list %}
