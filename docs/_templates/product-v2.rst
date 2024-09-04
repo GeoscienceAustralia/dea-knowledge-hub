@@ -184,7 +184,9 @@
           :name: access-the-data
           :class: h2
 
+       {% if page.data.enable_access %}
        For help accessing the data, see the `Access tab <./?tab=access>`_.
+       {% endif %}
 
        .. container:: card-list icons
           :name: access-the-data-cards
@@ -246,6 +248,10 @@
        .. rubric:: Key details
           :name: key-details
           :class: h2
+
+       {% if page.data.enable_specifications %}
+       For more information, see the `Specifications tab <./?tab=access>`_.
+       {% endif %}
 
        .. list-table::
           :name: key-details-table
@@ -373,6 +379,18 @@
        .. raw:: html
 
           <div class="product-tab-table-of-contents"></div>
+
+       .. rubric:: Key specifications
+          :name: key-specifications
+          :class: h2
+
+       .. list-table::
+          :name: key-specifications-table
+
+          * - **TODO**
+            - TODO
+
+
 
        {% if bands_table_list %}
        .. rubric:: Bands
