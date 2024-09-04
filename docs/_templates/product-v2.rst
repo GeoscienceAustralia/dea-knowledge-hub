@@ -178,6 +178,20 @@
    {% endif %}
 {% endset %}
 
+{% set details_tab_component %}
+{% if page.data.enable_details %}
+.. tab-item:: Details
+   :name: details
+
+   .. raw:: html
+
+      <div class="product-tab-table-of-contents"></div>
+
+   .. include:: _details.md
+      :parser: myst_parser.sphinx_
+{% endif %}
+{% endset %}
+
 {# Template #}
 
 {{ rst_head_component }}
@@ -364,19 +378,7 @@
          :parser: myst_parser.sphinx_
    {% endif %}
 
-   {# Details tab #}
-
-   {% if page.data.enable_details %}
-   .. tab-item:: Details
-      :name: details
-
-      .. raw:: html
-
-         <div class="product-tab-table-of-contents"></div>
-
-      .. include:: _details.md
-         :parser: myst_parser.sphinx_
-   {% endif %}
+   {{ details_tab_component | indent(3, True) }}
 
    {# Quality tab #}
 
