@@ -261,7 +261,7 @@
           :name: key-specifications
           :class: h2
 
-       {% if page.data.enable_specifications %}
+       {% if page.specifications.enable_specifications %}
        For more specifications, see the `Specifications tab <./?tab=specifications>`_.
        {% endif %}
 
@@ -531,7 +531,7 @@
           {%- if page.data.licence.name and page.data.licence.link and page.data.enable_credits %}
           * - **Licence**
             - `{{ page.data.licence.name }} <{{ page.data.licence.link }}>`_
-            - See the `Credits <./?tab=credits>`_.
+            - See the `Credits tab <./?tab=credits>`_.
           {%- elif page.data.licence.name and page.data.licence.link %}
           * - **Licence**
             - `{{ page.data.licence.name }} <{{ page.data.licence.link }}>`_
