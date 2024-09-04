@@ -411,6 +411,14 @@
             - `{{ page.data.ecat }} <https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/{{ page.data.ecat }}>`_
             -
           {%- endif %}
+
+       .. rubric:: Specifications 2
+          :name: specifications-2
+          :class: h2
+
+       .. list-table::
+          :name: specifications-table-2
+
           {%- if page.data.parent_products %}
           {%- if page.data.parent_products.name and page.data.parent_products.link %}
           * - **Parent product(s)**
