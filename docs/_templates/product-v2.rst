@@ -104,7 +104,7 @@
 
 {% set has_key_specifications = (page.data.parent_products.name and page.data.parent_products.link) or (page.data.collection.name and page.data.collection.link) or page.data.collection.name or page.data.doi or page.data.ecat or page.data.published %}
 
-{# Template components #}
+{# Restructured Text head component #}
 
 {% set rst_head_component %}
 .. role:: raw-html(raw)
@@ -116,6 +116,8 @@
 {{ page_title }}
 ======================================================================================================================================================
 {% endset %}
+
+{# Header panel component #}
 
 {% set header_panel_component %}
 .. container:: showcase-panel product-header bg-gradient-primary
@@ -158,6 +160,8 @@
          :class: no-gallery
 {% endset %}
 
+{# Notification section component #}
+
 {% set notifications_section_component %}
 .. container::
    :name: notifications
@@ -177,6 +181,8 @@
 
    {% endif %}
 {% endset %}
+
+{# Overview tab component #}
 
 {% set overview_tab_component %}
 {% if page.data.enable_overview %}
@@ -354,6 +360,8 @@
 {% endif %}
 {% endset %}
 
+{# Details tab component #}
+
 {% set details_tab_component %}
 {% if page.data.enable_details %}
 .. tab-item:: Details
@@ -367,6 +375,8 @@
       :parser: myst_parser.sphinx_
 {% endif %}
 {% endset %}
+
+{# Quality tab component #}
 
 {% set quality_tab_component %}
 {% if page.data.enable_quality %}
