@@ -252,6 +252,7 @@ entries:
       - caption: User guides
         entries:
           - file: validation/user-guides
+            title: Visit the user guides
       # - caption: Quarterly Reports
       #   options:
       #     reversed: True
