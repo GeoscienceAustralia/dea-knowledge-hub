@@ -441,24 +441,24 @@
           {%- if page.data.resolution %}
           * - **Resolution**
             - {{ page.data.resolution }}
-            -
+            - The size of the small area that the data can represent.
           {%- endif %}
           {%- if page.data.time_span_custom %}
           * - **Temporal extent**
             - {{ page.data.time_span_custom }}
-            -
+            - The time span for which data is available.
           {%- elif page.data.time_span_start and page.data.time_span_end %}
           * - **Temporal extent**
             - {{ page.data.time_span_start }} to {{ page.data.time_span_end }}
-            -
+            - The time span for which data is available.
           {%- elif page.data.time_span_start  %}
           * - **Temporal extent**
             - Since {{ page.data.time_span_start }}
-            -
+            - The time span for which data is available.
           {%- elif page.data.time_span_end  %}
           * - **Temporal extent**
             - Until {{ page.data.time_span_end }}
-            -
+            - The time span for which data is available.
           {%- endif %}
           {%- if is_frequency_ongoing %}
           * - **Update cadence**
