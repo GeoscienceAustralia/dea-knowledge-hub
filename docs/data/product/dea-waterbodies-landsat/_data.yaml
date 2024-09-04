@@ -13,7 +13,7 @@ latest_version_link: null
 is_provisional: false
 
 lineage_type: DERIVATIVE
-spatial_data_type: Vector
+spatial_data_type: VECTOR
 
 time_span_start: 1986
 time_span_end: Present

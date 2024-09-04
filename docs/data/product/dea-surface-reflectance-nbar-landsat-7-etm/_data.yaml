@@ -13,7 +13,7 @@ latest_version_link: null
 is_provisional: false
 
 lineage_type: BASELINE
-spatial_data_type: Raster
+spatial_data_type: RASTER
 
 time_span_start: 28 May 1999
 time_span_end: 6 Apr 2022

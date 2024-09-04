@@ -13,7 +13,7 @@ latest_version_link: null
 is_provisional: false
 
 lineage_type: Data service
-spatial_data_type: Vector
+spatial_data_type: VECTOR
 
 time_span_start: 1987
 time_span_end: 2021

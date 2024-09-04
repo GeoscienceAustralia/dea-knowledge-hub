@@ -13,7 +13,7 @@ latest_version_link: null
 is_provisional: false
 
 lineage_type: DERIVATIVE
-spatial_data_type: Raster
+spatial_data_type: RASTER
 
 time_span_start: 1988
 time_span_end: 2020

@@ -13,7 +13,7 @@ latest_version_link: null
 is_provisional: true
 
 lineage_type: DERIVATIVE
-spatial_data_type: Raster
+spatial_data_type: RASTER
 
 time_span_start: 14 Mar 2023
 time_span_end: Present

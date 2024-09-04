@@ -12,7 +12,7 @@ latest_version_link: /data/product/dea-geometric-median-and-median-absolute-devi
 is_provisional: false
 
 lineage_type: DERIVATIVE
-spatial_data_type: Raster
+spatial_data_type: RASTER
 
 time_span_start: 1986
 time_span_end: Present

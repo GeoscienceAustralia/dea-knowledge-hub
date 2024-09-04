@@ -28,6 +28,11 @@
    "DERIVATIVE": "Derivative",
 } %}
 
+{% set spatial_data_type_terms = {
+   "RASTER": "Raster",
+   "VECTOR": "Vector",
+} %}
+
 {% set data_update_frequency_cadence_terms = {
    "AS_NEEDED": "'As needed' frequency",
    "DAILY": "Daily frequency",
@@ -67,8 +72,6 @@
 
 {% set product_ids_list = page.data.product_ids | select("!=", None) | list %}
 
-{% set product_types_list = [page.data.lineage_type, page.data.spatial_data_type] | select("!=", None) | list %}
-
 {% set custom_citations_list = page.data.custom_citations | select("!=", None) | list %}
 
 {% set tags_list = page.data.tags | select("!=", None) | list %}
@@ -84,6 +87,10 @@
 {% set currency_report_url = "https://mgmt.sandbox.dea.ga.gov.au/public-dashboards/d22241dbfca54b1fa9f73938ef26e645?orgId=1#:~:text={}".format(page.data.official_name | urlencode) %}
 
 {% set lineage_type = lineage_type_terms.get(page.data.lineage_type, page.data.lineage_type) %}
+
+{% set spatial_data_type = spatial_data_type_terms.get(page.data.spatial_data_type, page.data.spatial_data_type) %}
+
+{% set product_types_list = [lineage_type, spatial_data_type] | select("!=", None) | list %}
 
 {% set data_update_frequency_cadence = data_update_frequency_cadence_terms.get(page.data.data_update_frequency_cadence, page.data.data_update_frequency_cadence) %}
 
@@ -418,9 +425,19 @@
             - {{ lineage_type }}
             -
           {%- endif %}
+          {% if spatial_data_type == spatial_data_type_terms.RASTER %}
           * - **Spatial type**
-            - {{ page.data.spatial_data_type }}
+            - {{ spatial_data_type }}
+            - Raster data consists of a grid of pixels.
+          {%- elif spatial_data_type == spatial_data_type_terms.VECTOR %}
+          * - **Spatial type**
+            - {{ spatial_data_type }}
+            - Vector data consists of mathematical polygons.
+          {%- else %}
+          * - **Spatial type**
+            - {{ spatial_data_type }}
             -
+          {%- endif %}
           {%- if page.data.resolution %}
           * - **Resolution**
             - {{ page.data.resolution }}
