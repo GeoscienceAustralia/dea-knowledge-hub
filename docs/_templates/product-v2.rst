@@ -250,6 +250,13 @@
        .. list-table::
           :name: key-details-table
 
+          {%- if page.data.is_currency_reported and is_cadence_yearly %}
+          * - **Currency**
+            - See `currency and latest and next update dates <{{ currency_report_url }}>`_
+          {%- elif page.data.is_currency_reported %}
+          * - **Currency**
+            - See `currency and latest update date <{{ currency_report_url }}>`_
+          {%- endif %}
           {%- if product_ids_list %}
           * - **{{ product_ids_label }}**
             - {{ product_ids_comma_separated }}
@@ -285,10 +292,6 @@
           * - **Licence**
             - `{{ page.data.licence.name }} <{{ page.data.licence.link }}>`_
           {%- endif %}
-          {%- endif %}
-          {% if page.data.spatial_data_type != "Vector" and page.data.data_update_frequency_cadence != data_update_frequency_cadence_terms.AS_NEEDED and page.data.data_update_frequency_activity == data_update_frequency_activity_terms.ONGOING %}
-          * - **Currency**
-            - This product may be included in the `DEA Published Product Currency Report <https://mgmt.sandbox.dea.ga.gov.au/public-dashboards/d22241dbfca54b1fa9f73938ef26e645?orgId=1>`_ (if applicable).
           {%- endif %}
        {%- endif %}
 
