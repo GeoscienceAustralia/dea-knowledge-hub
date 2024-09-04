@@ -106,39 +106,7 @@
 
 {# Template components #}
 
-{% set notifications_section_component %}
-.. container::
-   :name: notifications
-
-   {% if not page.data.is_latest_version %}
-   .. admonition:: Old version
-      :class: note
-   
-      This is an old version of the product. See the `latest version <{{ page.data.latest_version_link }}>`_.
-
-   {% endif %}
-   {% if page.data.is_provisional %}
-   .. admonition:: Provisional product
-      :class: note
-
-      This is a `provisional product </guides/reference/dataset_maturity_guide/>`_, meaning it has not yet passed quality control and/or been finalised for release.
-
-   {% endif %}
-{% endset %}
-
-{# Template #}
-
-.. role:: raw-html(raw)
-   :format: html
-
-.. rst-class:: product-page
-
-======================================================================================================================================================
-{{ page_title }}
-======================================================================================================================================================
-
-{# Header panel #}
-
+{% set header_panel_component %}
 .. container:: showcase-panel product-header bg-gradient-primary
 
    .. container::
@@ -177,8 +145,40 @@
 
       .. image:: {{ page.data.header_image or "/_files/default/dea-earth-thumbnail.jpg" }}
          :class: no-gallery
+{% endset %}
 
-{# Notifications section #}
+{% set notifications_section_component %}
+.. container::
+   :name: notifications
+
+   {% if not page.data.is_latest_version %}
+   .. admonition:: Old version
+      :class: note
+   
+      This is an old version of the product. See the `latest version <{{ page.data.latest_version_link }}>`_.
+
+   {% endif %}
+   {% if page.data.is_provisional %}
+   .. admonition:: Provisional product
+      :class: note
+
+      This is a `provisional product </guides/reference/dataset_maturity_guide/>`_, meaning it has not yet passed quality control and/or been finalised for release.
+
+   {% endif %}
+{% endset %}
+
+{# Template #}
+
+.. role:: raw-html(raw)
+   :format: html
+
+.. rst-class:: product-page
+
+======================================================================================================================================================
+{{ page_title }}
+======================================================================================================================================================
+
+{{ header_panel_component }}
 
 {{ notifications_section_component }}
 
