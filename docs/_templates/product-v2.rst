@@ -106,7 +106,7 @@
 
 {# Restructured Text head component #}
 
-{% set rst_head_component %}
+{% set rst_start_component %}
 .. role:: raw-html(raw)
    :format: html
 
@@ -115,6 +115,15 @@
 ======================================================================================================================================================
 {{ page_title }}
 ======================================================================================================================================================
+{% endset %}
+
+{# HTML end scripts component #}
+
+{% set html_end_scripts_component %}
+.. raw:: html
+
+   <script type="text/javascript" src="/_static/scripts/access-cards-tooltips.js" /></script>
+   <script type="text/javascript" src="/_static/scripts/citation-access-date.js" /></script>
 {% endset %}
 
 {# Header panel component #}
@@ -394,7 +403,7 @@
 
 {# Template #}
 
-{{ rst_head_component }}
+{{ rst_start_component }}
 
 {{ header_panel_component }}
 
@@ -751,8 +760,4 @@
          :parser: myst_parser.sphinx_
    {% endif %}
 
-.. raw:: html
-
-   <script type="text/javascript" src="/_static/scripts/access-cards-tooltips.js" /></script>
-   <script type="text/javascript" src="/_static/scripts/citation-access-date.js" /></script>
-
+{{ html_end_scripts_component }}
