@@ -465,7 +465,7 @@
        .. list-table::
           :name: specifications-table-2
 
-          {%- if page.data.parent_products %}
+          {% if page.data.parent_products %}
           {%- if page.data.parent_products.name and page.data.parent_products.link %}
           * - **Parent product(s)**
             - `{{ page.data.parent_products.name }} <{{ page.data.parent_products.link }}>`_
