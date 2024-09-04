@@ -360,7 +360,7 @@
             -
           {%- endif %}
           * - **Spatial extent**
-            - Australia and expanded extents
+            - Australia and expanded areas
           {%- if page.data.time_span_custom %}
           * - **Temporal extent**
             - {{ page.data.time_span_custom }}
