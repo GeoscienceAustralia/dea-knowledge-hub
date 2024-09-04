@@ -391,11 +391,11 @@
           {%- if page.data.is_currency_reported and is_cadence_yearly %}
           * - **Currency**
             - `Currency Report <{{ currency_report_url }}>`_
-            - In the report, you will find the currency and latest and next update dates.
+            - The report also contains the latest and next update date.
           {% elif page.data.is_currency_reported %}
           * - **Currency**
             - `Currency Report <{{ currency_report_url }}>`_
-            - In the report, you will find the currency and latest update date.
+            - The report also contains the latest update date.
           {%- endif %}
           {%- if product_ids_list %}
           * - **{{ product_ids_label }}**
