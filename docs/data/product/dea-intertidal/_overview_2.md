@@ -1,5 +1,3 @@
-TESTING
-
 ## Publications
 
 Bishop-Taylor, R., Sagar, S., Lymburner, L., Beaman, R.L., 2019. Between the tides: modelling the elevation of Australia's exposed intertidal zone at continental scale. *Estuarine, Coastal and Shelf Science*. Available: [https://doi.org/10.1016/j.ecss.2019.03.006](https://doi.org/10.1016/j.ecss.2019.03.006) 

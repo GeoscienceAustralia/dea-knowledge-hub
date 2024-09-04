@@ -253,8 +253,6 @@ This is a test.
           :name: key-specifications
           :class: h2
 
-       {{ key_specifications_table_2() }}
-
        {%- endif %}
 
        {% if page.data.citations %}
