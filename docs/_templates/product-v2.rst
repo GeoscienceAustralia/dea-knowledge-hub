@@ -92,9 +92,9 @@
 
 {# Template blocks #}
 
-{% set key_specifications_table %}
+{% macro key_specifications_table_2() %}
 This is a test.
-{% endset %}
+{% endmacro %}
 
 {# Template #}
 
@@ -255,9 +255,7 @@ This is a test.
           :name: key-specifications
           :class: h2
 
-       {% if page.data.enable_specifications %}
-       For more specifications, see the `Specifications tab <./?tab=specifications>`_.
-       {% endif %}
+       {{ key_specifications_table_2() }}
 
        {%- endif %}
 
