@@ -344,27 +344,29 @@ This is a test.
           {% if page.data.is_latest_version and old_versions_list | length > 0 and page.data.enable_history %} {# If at least one old version exists. #}
           * - **Version**
             - {{ page.data.product_version }}
-            - See the `version history <./?tab=history>`_
+            - The version number of the product. See the `version history <./?tab=history>`_.
           {%- elif page.data.is_latest_version %}
           * - **Version**
             - {{ page.data.product_version }}
-            -
+            - The version number of the product.
           {%- else %}
           * - **Version**
             - {{ page.data.product_version }}
-            - See the `latest version <{{ page.data.latest_version_link }}>`_
+            - This is an old version of the product. See the `latest version <{{ page.data.latest_version_link }}>`_.
           {%- endif %}
           * - **Lineage type**
-            - {{ lineage_type }}
+            - {{ page.data.lineage_type }}
             -
           * - **Spatial type**
-            - {{ spatial_data_type }}
+            - {{ page.data.spatial_data_type }}
             -
           {%- if page.data.resolution %}
           * - **Resolution**
             - {{ page.data.resolution }}
             -
           {%- endif %}
+          * - **Spatial extent**
+            - Australia and expanded extents
           {%- if page.data.time_span_custom %}
           * - **Temporal extent**
             - {{ page.data.time_span_custom }}
@@ -455,7 +457,7 @@ This is a test.
             - {% for item in maps_list %}
               * `{{ item.name or access_names.map }} <{{ item.link }}>`_
               {% endfor %}
-            - Learn how to `use DEA Maps </guides/setup/dea_maps/>`_
+            - Learn how to `use DEA Maps </guides/setup/dea_maps/>`_.
           {% endif %}
 
           {% if explorers_list %}
@@ -463,7 +465,7 @@ This is a test.
             - {% for item in explorers_list %}
               * `{{ item.name or access_names.explorer }} <{{ item.link }}>`_
               {% endfor %}
-            - Learn how to `use the DEA Explorer </setup/explorer_guide/>`_
+            - Learn how to `use the DEA Explorer </setup/explorer_guide/>`_.
           {% endif %}
 
           {% if data_list %}
@@ -471,7 +473,7 @@ This is a test.
             - {% for item in data_list %}
               * `{{ item.name or access_names.data }} <{{ item.link }}>`_
               {% endfor %}
-            - Learn how to `access the data via AWS </guides/about/faq/#download-dea-data>`_
+            - Learn how to `access the data via AWS </guides/about/faq/#download-dea-data>`_.
           {% endif %}
 
           {% if code_samples_list %}
@@ -479,7 +481,7 @@ This is a test.
             - {% for item in code_samples_list %}
               * `{{ item.name or access_names.code_sample }} <{{ item.link }}>`_
               {% endfor %}
-            - Learn how to `use the DEA Sandbox </guides/setup/Sandbox/sandbox/>`_
+            - Learn how to `use the DEA Sandbox </guides/setup/Sandbox/sandbox/>`_.
           {% endif %}
 
           {% if web_services_list %}
@@ -487,7 +489,7 @@ This is a test.
             - {% for item in web_services_list %}
               * `{{ item.name or access_names.web_service }} <{{ item.link }}>`_
               {% endfor %}
-            - Learn how to `use DEA's web services </guides/setup/gis/README/>`_
+            - Learn how to `use DEA's web services </guides/setup/gis/README/>`_.
           {% endif %}
 
           {% for item in custom_list %}
