@@ -92,9 +92,9 @@
 
 {# Template blocks #}
 
-{% macro key_specifications_table_2() %}
+{%- macro key_specifications_table_2() %}
 This is a test.
-{% endmacro %}
+{% endmacro -%}
 
 {# Template #}
 
@@ -253,6 +253,8 @@ This is a test.
           :name: key-specifications
           :class: h2
 
+       {{ key_specifications_table_2() }}
+
        {%- endif %}
 
        {% if page.data.citations %}
@@ -394,8 +396,6 @@ This is a test.
           * - **Update activity**
             - {{ data_update_frequency_activity }}
             - The activity status of data updates.
-          {%- else %}
-          {%- endif %}
 
        {% if bands_table_list %}
        .. rubric:: Bands
