@@ -178,178 +178,16 @@
    {% endif %}
 {% endset %}
 
-{% set notifications_section_component %}
-{% if page.data.enable_overview %}
-.. tab-item:: Overview
-   :name: overview
+{% set details_tab_component %}
+{% if page.data.enable_details %}
+.. tab-item:: Details
+   :name: details
 
    .. raw:: html
 
       <div class="product-tab-table-of-contents"></div>
 
-   .. include:: _overview_1.md
-      :parser: myst_parser.sphinx_
-
-   {% if has_access_data %}
-   .. rubric:: Access the data
-      :name: access-the-data
-      :class: h2
-
-   {% if page.data.enable_access %}
-   For help accessing the data, see the `Access tab <./?tab=access>`_.
-   {% endif %}
-
-   .. container:: card-list icons
-      :name: access-the-data-cards
-
-      .. grid:: 2 2 3 5
-         :gutter: 3
-
-         {% for item in maps_list %}
-         .. grid-item-card:: :fas:`map-location-dot`
-            :link: {{ item.link }}
-            :link-alt: {{ access_labels.map }}
-
-            {{ item.name or access_names.map }}
-         {% endfor %}
-
-         {% for item in explorers_list %}
-         .. grid-item-card:: :fas:`magnifying-glass`
-            :link: {{ item.link }}
-            :link-alt: {{ access_labels.explorer }}
-
-            {{ item.name or access_names.explorer }}
-         {% endfor %}
-
-         {% for item in data_list %}
-         .. grid-item-card:: :fas:`database`
-            :link: {{ item.link }}
-            :link-alt: {{ access_labels.data }}
-
-            {{ item.name or access_names.data }}
-         {% endfor %}
-
-         {% for item in code_samples_list %}
-         .. grid-item-card:: :fas:`laptop-code`
-            :link: {{ item.link }}
-            :link-alt: {{ access_labels.code_sample }}
-
-            {{ item.name or access_names.code_sample }}
-         {% endfor %}
-
-         {% for item in web_services_list %}
-         .. grid-item-card:: :fas:`globe`
-            :link: {{ item.link }}
-            :link-alt: {{ access_labels.web_service }}
-
-            {{ item.name or access_names.web_service }}
-         {% endfor %}
-
-         {% for item in custom_list %}
-         .. grid-item-card:: :fas:`{{ item.icon }}`
-            :link: {{ item.link }}
-            :link-alt: {{ item.label or "" }}
-            :class-card: {{ item.class }}
-
-            {{ item.name }}
-         {% endfor %}
-   {%- endif %}
-
-   {% if has_key_specifications %}
-   .. rubric:: Key specifications
-      :name: key-specifications
-      :class: h2
-
-   {% if page.specifications.enable_specifications %}
-   For more specifications, see the `Specifications tab <./?tab=specifications>`_.
-   {% endif %}
-
-   .. list-table::
-      :name: key-specifications-table
-
-      {% if page.data.is_currency_reported and is_cadence_yearly %}
-      * - **Currency**
-        - See `currency and latest and next update dates <{{ currency_report_url }}>`_.
-      {% elif page.data.is_currency_reported %}
-      * - **Currency**
-        - See `currency and latest update date <{{ currency_report_url }}>`_.
-      {%- endif %}
-      {%- if product_ids_list %}
-      * - **{{ product_ids_label }}**
-        - {{ product_ids_comma_separated }}
-      {%- endif %}
-      {%- if page.data.doi %}
-      * - **DOI**
-        - `{{ page.data.doi }} <https://doi.org/{{ page.data.doi }}>`_
-      {%- elif page.data.ecat %}
-      * - **Persistent ID**
-        - `{{ page.data.ecat }} <https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/{{ page.data.ecat }}>`_
-      {%- endif %}
-      {%- if page.data.published %}
-      * - **Last updated**
-        - {{ page.data.published }}
-      {%- endif %}
-      {%- if page.data.parent_products %}
-      {%- if page.data.parent_products.name and page.data.parent_products.link %}
-      * - **Parent product(s)**
-        - `{{ page.data.parent_products.name }} <{{ page.data.parent_products.link }}>`_
-      {%- endif %}
-      {%- endif %}
-      {%- if page.data.collection %}
-      {%- if page.data.collection.name and page.data.collection.link %}
-      * - **Collection**
-        - `{{ page.data.collection.name }} <{{ page.data.collection.link }}>`_
-      {%- elif page.data.collection.name %}
-      * - **Collection**
-        - {{ page.data.collection.name }}
-      {%- endif %}
-      {%- endif %}
-      {%- if page.data.licence %}
-      {%- if page.data.licence.name and page.data.licence.link %}
-      * - **Licence**
-        - `{{ page.data.licence.name }} <{{ page.data.licence.link }}>`_
-      {%- endif %}
-      {%- endif %}
-   {%- endif %}
-
-   {% if page.data.citations %}
-   {% if page.data.citations.data_citation or page.data.citations.paper_citation %}
-   .. rubric:: Cite this product
-      :name: citations
-      :class: h2
-
-   .. list-table::
-      :name: citation-table
-
-      {% if page.data.citations.data_citation %}
-      * - **Data citation**
-        - .. code-block:: text
-             :class: citation-table-citation citation-access-date
-
-             {{ page.data.citations.data_citation }}
-      {%- endif %}
-      {% if page.data.citations.paper_citation %}
-      * - **Paper citation**
-        - .. code-block:: text
-             :class: citation-table-citation
-
-             {{ page.data.citations.paper_citation }}
-      {%- endif %}
-      {% for citation in custom_list_citations %}
-      * - **{{ citation.name }}**
-        - .. code-block:: text
-             :class: citation-table-citation
-
-             {{ citation.citation }}
-      {% endfor %}
-   {%- endif %}
-   {%- endif %}
-
-   {%- if tags_list and enable_tags %}
-   .. tags:: {{ tags_list | join(", ") }}
-   {%- endif %}
-
-   .. include:: _overview_2.md
+   .. include:: _details.md
       :parser: myst_parser.sphinx_
 {% endif %}
 {% endset %}
@@ -364,378 +202,540 @@
 
 .. tab-set::
 
-    {{ overview_tab_component }}
+   {% if page.data.enable_overview %}
+   .. tab-item:: Overview
+      :name: overview
 
-    {# Details tab #}
+      .. raw:: html
 
-    {% if page.data.enable_details %}
-    .. tab-item:: Details
-       :name: details
+         <div class="product-tab-table-of-contents"></div>
 
-       .. raw:: html
+      .. include:: _overview_1.md
+         :parser: myst_parser.sphinx_
 
-          <div class="product-tab-table-of-contents"></div>
+      {% if has_access_data %}
+      .. rubric:: Access the data
+         :name: access-the-data
+         :class: h2
 
-       .. include:: _details.md
-          :parser: myst_parser.sphinx_
-    {% endif %}
+      {% if page.data.enable_access %}
+      For help accessing the data, see the `Access tab <./?tab=access>`_.
+      {% endif %}
 
-    {# Quality tab #}
+      .. container:: card-list icons
+         :name: access-the-data-cards
 
-    {% if page.data.enable_quality %}
-    .. tab-item:: Quality
-       :name: quality
+         .. grid:: 2 2 3 5
+            :gutter: 3
 
-       .. raw:: html
+            {% for item in maps_list %}
+            .. grid-item-card:: :fas:`map-location-dot`
+               :link: {{ item.link }}
+               :link-alt: {{ access_labels.map }}
 
-          <div class="product-tab-table-of-contents"></div>
+               {{ item.name or access_names.map }}
+            {% endfor %}
 
-       .. include:: _quality.md
-          :parser: myst_parser.sphinx_
-    {% endif %}
+            {% for item in explorers_list %}
+            .. grid-item-card:: :fas:`magnifying-glass`
+               :link: {{ item.link }}
+               :link-alt: {{ access_labels.explorer }}
 
-    {# Specifications tab #}
+               {{ item.name or access_names.explorer }}
+            {% endfor %}
 
-    {% if page.specifications.enable_specifications %}
-    .. tab-item:: Specifications
-       :name: specifications
+            {% for item in data_list %}
+            .. grid-item-card:: :fas:`database`
+               :link: {{ item.link }}
+               :link-alt: {{ access_labels.data }}
 
-       .. raw:: html
+               {{ item.name or access_names.data }}
+            {% endfor %}
 
-          <div class="product-tab-table-of-contents"></div>
+            {% for item in code_samples_list %}
+            .. grid-item-card:: :fas:`laptop-code`
+               :link: {{ item.link }}
+               :link-alt: {{ access_labels.code_sample }}
 
-       .. rubric:: Attributes
-          :name: attributes
-          :class: h2
+               {{ item.name or access_names.code_sample }}
+            {% endfor %}
 
-       .. list-table::
-          :name: attributes-table
+            {% for item in web_services_list %}
+            .. grid-item-card:: :fas:`globe`
+               :link: {{ item.link }}
+               :link-alt: {{ access_labels.web_service }}
 
-          {% if page.data.is_latest_version and old_versions_list | length > 0 and page.data.enable_history %} {# If at least one old version exists. #}
-          * - **Version**
-            - {{ page.data.product_version }}
-            - The version number of the product. See the `version history <./?tab=history>`_.
-          {%- elif page.data.is_latest_version %}
-          * - **Version**
-            - {{ page.data.product_version }}
-            - The version number of the product.
-          {%- else %}
-          * - **Version**
-            - {{ page.data.product_version }}
-            - This is an old version of the product. See the `latest version <{{ page.data.latest_version_link }}>`_.
-          {%- endif %}
-          {% if lineage_type == lineage_type_terms.DERIVATIVE %}
-          * - **Lineage type**
-            - {{ lineage_type }}
-            - Derivative products are derived from other products.
-          {%- elif lineage_type == lineage_type_terms.BASELINE %}
-          * - **Lineage type**
-            - {{ lineage_type }}
-            - Baseline products are produced directly from satellite data.
-          {%- else %}
-          * - **Lineage type**
-            - {{ lineage_type }}
-            -
-          {%- endif %}
-          {% if spatial_data_type == spatial_data_type_terms.RASTER %}
-          * - **Spatial type**
-            - {{ spatial_data_type }}
-            - Raster data consists of a grid of pixels.
-          {%- elif spatial_data_type == spatial_data_type_terms.VECTOR %}
-          * - **Spatial type**
-            - {{ spatial_data_type }}
-            - Vector data consists of mathematical polygons.
-          {%- else %}
-          * - **Spatial type**
-            - {{ spatial_data_type }}
-            -
-          {%- endif %}
-          {%- if page.data.resolution %}
-          * - **Resolution**
-            - {{ page.data.resolution }}
-            - The size of the small area that the data can represent.
-          {%- endif %}
-          {%- if page.data.time_span_custom %}
-          * - **Temporal extent**
-            - {{ page.data.time_span_custom }}
-            - The time span for which data is available.
-          {%- elif page.data.time_span_start and page.data.time_span_end %}
-          * - **Temporal extent**
-            - {{ page.data.time_span_start }} to {{ page.data.time_span_end }}
-            - The time span for which data is available.
-          {%- elif page.data.time_span_start  %}
-          * - **Temporal extent**
-            - Since {{ page.data.time_span_start }}
-            - The time span for which data is available.
-          {%- elif page.data.time_span_end  %}
-          * - **Temporal extent**
-            - Until {{ page.data.time_span_end }}
-            - The time span for which data is available.
-          {%- endif %}
-          {%- if is_frequency_ongoing %}
-          * - **Update cadence**
-            - {{ data_update_frequency_cadence }}
-            - The frequency of data updates.
-          {%- else %}
-          * - **Update cadence**
-            - Previously: {{ data_update_frequency_cadence }}
-            - When data updates were active, this was their frequency.
-          {%- endif %}
-          * - **Update activity**
-            - {{ data_update_frequency_activity }}
-            - The activity status of data updates.
-          {%- if page.data.is_currency_reported and is_cadence_yearly %}
-          * - **Currency**
-            - `Currency Report <{{ currency_report_url }}>`_
-            - See the report.
-          * - **Latest and next update dates**
-            - `Currency Report <{{ currency_report_url }}>`_
-            - See the report.
-          {% elif page.data.is_currency_reported %}
-          * - **Currency**
-            - `Currency Report <{{ currency_report_url }}>`_
-            - See the report.
-          * - **Latest update date**
-            - `Currency Report <{{ currency_report_url }}>`_
-            - See the report.
-          {%- endif %}
+               {{ item.name or access_names.web_service }}
+            {% endfor %}
 
-       .. rubric:: Classification
-          :name: classification
-          :class: h2
+            {% for item in custom_list %}
+            .. grid-item-card:: :fas:`{{ item.icon }}`
+               :link: {{ item.link }}
+               :link-alt: {{ item.label or "" }}
+               :class-card: {{ item.class }}
 
-       .. list-table::
-          :name: classification-table
+               {{ item.name }}
+            {% endfor %}
+      {%- endif %}
 
-          * - **Official name**
-            - {{ page.data.official_name }}
-            -
-          {%- if page.data.full_technical_name %}
-          * - **Technical name**
-            - {{ page.data.full_technical_name }}
-            -
-          {%- endif %}
-          {%- if product_ids_list %}
-          * - **{{ product_ids_label }}**
-            - {{ product_ids_comma_separated }}
-            -
-          {%- endif %}
-          {%- if page.data.doi %}
-          * - **DOI**
-            - `{{ page.data.doi }} <https://doi.org/{{ page.data.doi }}>`_
-            -
-          {%- elif page.data.ecat %}
-          * - **Persistent ID**
-            - `{{ page.data.ecat }} <https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/{{ page.data.ecat }}>`_
-            -
-          {%- endif %}
-          {%- if page.data.parent_products %}
-          {%- if page.data.parent_products.name and page.data.parent_products.link %}
-          * - **Parent product(s)**
-            - `{{ page.data.parent_products.name }} <{{ page.data.parent_products.link }}>`_
-            -
-          {%- endif %}
-          {%- endif %}
-          {%- if page.data.collection %}
-          {%- if page.data.collection.name and page.data.collection.link %}
-          * - **Collection**
-            - `{{ page.data.collection.name }} <{{ page.data.collection.link }}>`_
-            -
-          {%- elif page.data.collection.name %}
-          * - **Collection**
-            - {{ page.data.collection.name }}
-            -
-          {%- endif %}
-          {%- endif %}
-          {%- if page.data.licence %}
-          {%- if page.data.licence.name and page.data.licence.link and page.data.enable_credits %}
-          * - **Licence**
-            - `{{ page.data.licence.name }} <{{ page.data.licence.link }}>`_
-            - See the `Credits tab <./?tab=credits>`_.
-          {%- elif page.data.licence.name and page.data.licence.link %}
-          * - **Licence**
-            - `{{ page.data.licence.name }} <{{ page.data.licence.link }}>`_
-            -
-          {%- endif %}
-          {%- endif %}
+      {% if has_key_specifications %}
+      .. rubric:: Key specifications
+         :name: key-specifications
+         :class: h2
 
-       {% if bands_table_list %}
-       .. rubric:: Bands
-          :name: bands
-          :class: h2
+      {% if page.specifications.enable_specifications %}
+      For more specifications, see the `Specifications tab <./?tab=specifications>`_.
+      {% endif %}
 
-       Bands are distinct layers of data within a product that can be loaded using the Open Data Cube (on the `DEA Sandbox <dea_sandbox_>`_ or `NCI <nci_>`_) or DEA's `STAC API <stac_api_>`_.
+      .. list-table::
+         :name: key-specifications-table
 
-       .. _dea_sandbox: https://knowledge.dea.ga.gov.au/guides/setup/Sandbox/sandbox/
-       .. _nci: https://knowledge.dea.ga.gov.au/guides/setup/NCI/basics/
-       .. _stac_api: https://knowledge.dea.ga.gov.au/guides/setup/gis/stac/
+         {% if page.data.is_currency_reported and is_cadence_yearly %}
+         * - **Currency**
+           - See `currency and latest and next update dates <{{ currency_report_url }}>`_.
+         {% elif page.data.is_currency_reported %}
+         * - **Currency**
+           - See `currency and latest update date <{{ currency_report_url }}>`_.
+         {%- endif %}
+         {%- if product_ids_list %}
+         * - **{{ product_ids_label }}**
+           - {{ product_ids_comma_separated }}
+         {%- endif %}
+         {%- if page.data.doi %}
+         * - **DOI**
+           - `{{ page.data.doi }} <https://doi.org/{{ page.data.doi }}>`_
+         {%- elif page.data.ecat %}
+         * - **Persistent ID**
+           - `{{ page.data.ecat }} <https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/{{ page.data.ecat }}>`_
+         {%- endif %}
+         {%- if page.data.published %}
+         * - **Last updated**
+           - {{ page.data.published }}
+         {%- endif %}
+         {%- if page.data.parent_products %}
+         {%- if page.data.parent_products.name and page.data.parent_products.link %}
+         * - **Parent product(s)**
+           - `{{ page.data.parent_products.name }} <{{ page.data.parent_products.link }}>`_
+         {%- endif %}
+         {%- endif %}
+         {%- if page.data.collection %}
+         {%- if page.data.collection.name and page.data.collection.link %}
+         * - **Collection**
+           - `{{ page.data.collection.name }} <{{ page.data.collection.link }}>`_
+         {%- elif page.data.collection.name %}
+         * - **Collection**
+           - {{ page.data.collection.name }}
+         {%- endif %}
+         {%- endif %}
+         {%- if page.data.licence %}
+         {%- if page.data.licence.name and page.data.licence.link %}
+         * - **Licence**
+           - `{{ page.data.licence.name }} <{{ page.data.licence.link }}>`_
+         {%- endif %}
+         {%- endif %}
+      {%- endif %}
 
-       .. list-table::
-          :header-rows: 1
+      {% if page.data.citations %}
+      {% if page.data.citations.data_citation or page.data.citations.paper_citation %}
+      .. rubric:: Cite this product
+         :name: citations
+         :class: h2
 
-          * - 
-            - Aliases
-            - Resolution
-            - CRS
-            - Nodata
-            - Units
-            - Type
-            - Description
-          {% for band in bands_table_list %}
-          * - **{{ band.name }}**
-            - {{ band.aliases|join(', ') if band.aliases else no_data_terms.dash }}
-            - {{ band.resolution or no_data_terms.dash }}
-            - {{ band.crs or no_data_terms.dash }}
-            - {{ band.nodata }}
-            - {{ band.units or no_data_terms.dash }}
-            - {{ band.type or no_data_terms.dash }}
-            - {{ band.description or no_data_terms.dash }}
-          {% endfor %}
+      .. list-table::
+         :name: citation-table
 
-       {{ page.specifications.bands_footnote if page.specifications.bands_footnote }}
-       {% endif %}
-    {% endif %}
+         {% if page.data.citations.data_citation %}
+         * - **Data citation**
+           - .. code-block:: text
+                :class: citation-table-citation citation-access-date
 
-    {# Access tab #}
+                {{ page.data.citations.data_citation }}
+         {%- endif %}
+         {% if page.data.citations.paper_citation %}
+         * - **Paper citation**
+           - .. code-block:: text
+                :class: citation-table-citation
 
-    {% if page.data.enable_access %}
-    .. tab-item:: Access
-       :name: access
+                {{ page.data.citations.paper_citation }}
+         {%- endif %}
+         {% for citation in custom_list_citations %}
+         * - **{{ citation.name }}**
+           - .. code-block:: text
+                :class: citation-table-citation
 
-       .. raw:: html
+                {{ citation.citation }}
+         {% endfor %}
+      {%- endif %}
+      {%- endif %}
 
-          <div class="product-tab-table-of-contents"></div>
+      {%- if tags_list and enable_tags %}
+      .. tags:: {{ tags_list | join(", ") }}
+      {%- endif %}
 
-       .. rubric:: Access the data
-          :name: access-the-data-2
-          :class: h2
+      .. include:: _overview_2.md
+         :parser: myst_parser.sphinx_
+   {% endif %}
 
-       {% if has_access_data %}
-       .. list-table::
-          :name: access-table
+   {# Details tab #}
 
-          {% if maps_list %}
-          * - **{{ access_labels.map }}**
-            - {% for item in maps_list %}
-              * `{{ item.name or access_names.map }} <{{ item.link }}>`_
-              {% endfor %}
-            - Learn how to `use DEA Maps </guides/setup/dea_maps/>`_.
-          {% endif %}
+   {{ details_tab_component | indent(3, True) }}
 
-          {% if explorers_list %}
-          * - **{{ access_labels.explorer }}**
-            - {% for item in explorers_list %}
-              * `{{ item.name or access_names.explorer }} <{{ item.link }}>`_
-              {% endfor %}
-            - Learn how to `use the DEA Explorer </setup/explorer_guide/>`_.
-          {% endif %}
+   {# Quality tab #}
 
-          {% if data_list %}
-          * - **{{ access_labels.data }}**
-            - {% for item in data_list %}
-              * `{{ item.name or access_names.data }} <{{ item.link }}>`_
-              {% endfor %}
-            - Learn how to `access the data via AWS </guides/about/faq/#download-dea-data>`_.
-          {% endif %}
+   {% if page.data.enable_quality %}
+   .. tab-item:: Quality
+      :name: quality
 
-          {% if code_samples_list %}
-          * - **{{ access_labels.code_sample }}**
-            - {% for item in code_samples_list %}
-              * `{{ item.name or access_names.code_sample }} <{{ item.link }}>`_
-              {% endfor %}
-            - Learn how to `use the DEA Sandbox </guides/setup/Sandbox/sandbox/>`_.
-          {% endif %}
+      .. raw:: html
 
-          {% if web_services_list %}
-          * - **{{ access_labels.web_service }}**
-            - {% for item in web_services_list %}
-              * `{{ item.name or access_names.web_service }} <{{ item.link }}>`_
-              {% endfor %}
-            - Learn how to `use DEA's web services </guides/setup/gis/README/>`_.
-          {% endif %}
+         <div class="product-tab-table-of-contents"></div>
 
-          {% for item in custom_list %}
-          * - **{{ item.label or "" }}**
-            - * `{{ item.name }} <{{ item.link }}>`_
-            - {{ item.description or "" }}
-          {% endfor %}
-       {% else %}
-       There are no data source links available at the present time.
-       {% endif %}
+      .. include:: _quality.md
+         :parser: myst_parser.sphinx_
+   {% endif %}
 
-       .. include:: _access.md
-          :parser: myst_parser.sphinx_
-    {% endif %}
+   {# Specifications tab #}
 
-    {# History tab #}
+   {% if page.specifications.enable_specifications %}
+   .. tab-item:: Specifications
+      :name: specifications
 
-    {% if page.data.enable_history %}
-    .. tab-item:: History
-       :name: history
+      .. raw:: html
 
-       .. raw:: html
+         <div class="product-tab-table-of-contents"></div>
 
-          <div class="product-tab-table-of-contents"></div>
+      .. rubric:: Attributes
+         :name: attributes
+         :class: h2
 
-       {% if not page.data.is_latest_version %}
-       .. rubric:: Version history
-          :name: version-history
-          :class: h2
+      .. list-table::
+         :name: attributes-table
 
-       You can find the version history in the `latest version of the product <{{ page.data.latest_version_link }}?tab=history>`_.
-       {% else %}
-       .. rubric:: Version history
-          :name: version-history
-          :class: h2
+         {% if page.data.is_latest_version and old_versions_list | length > 0 and page.data.enable_history %} {# If at least one old version exists. #}
+         * - **Version**
+           - {{ page.data.product_version }}
+           - The version number of the product. See the `version history <./?tab=history>`_.
+         {%- elif page.data.is_latest_version %}
+         * - **Version**
+           - {{ page.data.product_version }}
+           - The version number of the product.
+         {%- else %}
+         * - **Version**
+           - {{ page.data.product_version }}
+           - This is an old version of the product. See the `latest version <{{ page.data.latest_version_link }}>`_.
+         {%- endif %}
+         {% if lineage_type == lineage_type_terms.DERIVATIVE %}
+         * - **Lineage type**
+           - {{ lineage_type }}
+           - Derivative products are derived from other products.
+         {%- elif lineage_type == lineage_type_terms.BASELINE %}
+         * - **Lineage type**
+           - {{ lineage_type }}
+           - Baseline products are produced directly from satellite data.
+         {%- else %}
+         * - **Lineage type**
+           - {{ lineage_type }}
+           -
+         {%- endif %}
+         {% if spatial_data_type == spatial_data_type_terms.RASTER %}
+         * - **Spatial type**
+           - {{ spatial_data_type }}
+           - Raster data consists of a grid of pixels.
+         {%- elif spatial_data_type == spatial_data_type_terms.VECTOR %}
+         * - **Spatial type**
+           - {{ spatial_data_type }}
+           - Vector data consists of mathematical polygons.
+         {%- else %}
+         * - **Spatial type**
+           - {{ spatial_data_type }}
+           -
+         {%- endif %}
+         {%- if page.data.resolution %}
+         * - **Resolution**
+           - {{ page.data.resolution }}
+           - The size of the small area that the data can represent.
+         {%- endif %}
+         {%- if page.data.time_span_custom %}
+         * - **Temporal extent**
+           - {{ page.data.time_span_custom }}
+           - The time span for which data is available.
+         {%- elif page.data.time_span_start and page.data.time_span_end %}
+         * - **Temporal extent**
+           - {{ page.data.time_span_start }} to {{ page.data.time_span_end }}
+           - The time span for which data is available.
+         {%- elif page.data.time_span_start  %}
+         * - **Temporal extent**
+           - Since {{ page.data.time_span_start }}
+           - The time span for which data is available.
+         {%- elif page.data.time_span_end  %}
+         * - **Temporal extent**
+           - Until {{ page.data.time_span_end }}
+           - The time span for which data is available.
+         {%- endif %}
+         {%- if is_frequency_ongoing %}
+         * - **Update cadence**
+           - {{ data_update_frequency_cadence }}
+           - The frequency of data updates.
+         {%- else %}
+         * - **Update cadence**
+           - Previously: {{ data_update_frequency_cadence }}
+           - When data updates were active, this was their frequency.
+         {%- endif %}
+         * - **Update activity**
+           - {{ data_update_frequency_activity }}
+           - The activity status of data updates.
+         {%- if page.data.is_currency_reported and is_cadence_yearly %}
+         * - **Currency**
+           - `Currency Report <{{ currency_report_url }}>`_
+           - See the report.
+         * - **Latest and next update dates**
+           - `Currency Report <{{ currency_report_url }}>`_
+           - See the report.
+         {% elif page.data.is_currency_reported %}
+         * - **Currency**
+           - `Currency Report <{{ currency_report_url }}>`_
+           - See the report.
+         * - **Latest update date**
+           - `Currency Report <{{ currency_report_url }}>`_
+           - See the report.
+         {%- endif %}
 
-       {% if old_versions_list | length > 0 %}
+      .. rubric:: Classification
+         :name: classification
+         :class: h2
 
-       View previous releases of this product. Versions are numbered using the `Semantic Versioning <semver_>`_ scheme (MAJOR.MINOR.PATCH).
+      .. list-table::
+         :name: classification-table
 
-       .. _semver: https://semver.org/
+         * - **Official name**
+           - {{ page.data.official_name }}
+           -
+         {%- if page.data.full_technical_name %}
+         * - **Technical name**
+           - {{ page.data.full_technical_name }}
+           -
+         {%- endif %}
+         {%- if product_ids_list %}
+         * - **{{ product_ids_label }}**
+           - {{ product_ids_comma_separated }}
+           -
+         {%- endif %}
+         {%- if page.data.doi %}
+         * - **DOI**
+           - `{{ page.data.doi }} <https://doi.org/{{ page.data.doi }}>`_
+           -
+         {%- elif page.data.ecat %}
+         * - **Persistent ID**
+           - `{{ page.data.ecat }} <https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/{{ page.data.ecat }}>`_
+           -
+         {%- endif %}
+         {%- if page.data.parent_products %}
+         {%- if page.data.parent_products.name and page.data.parent_products.link %}
+         * - **Parent product(s)**
+           - `{{ page.data.parent_products.name }} <{{ page.data.parent_products.link }}>`_
+           -
+         {%- endif %}
+         {%- endif %}
+         {%- if page.data.collection %}
+         {%- if page.data.collection.name and page.data.collection.link %}
+         * - **Collection**
+           - `{{ page.data.collection.name }} <{{ page.data.collection.link }}>`_
+           -
+         {%- elif page.data.collection.name %}
+         * - **Collection**
+           - {{ page.data.collection.name }}
+           -
+         {%- endif %}
+         {%- endif %}
+         {%- if page.data.licence %}
+         {%- if page.data.licence.name and page.data.licence.link and page.data.enable_credits %}
+         * - **Licence**
+           - `{{ page.data.licence.name }} <{{ page.data.licence.link }}>`_
+           - See the `Credits tab <./?tab=credits>`_.
+         {%- elif page.data.licence.name and page.data.licence.link %}
+         * - **Licence**
+           - `{{ page.data.licence.name }} <{{ page.data.licence.link }}>`_
+           -
+         {%- endif %}
+         {%- endif %}
 
-       .. list-table::
+      {% if bands_table_list %}
+      .. rubric:: Bands
+         :name: bands
+         :class: h2
 
-          * - {{ page.data.product_version }}: Current version
-          {% for item in old_versions_list %}
-          * - `{{ item.version }}: {{ item.title }} </data/version-history/{{ item.slug }}/>`_
-          {% endfor %}
-       {% else %}
-       No previous versions are available.
-       {% endif %}
+      Bands are distinct layers of data within a product that can be loaded using the Open Data Cube (on the `DEA Sandbox <dea_sandbox_>`_ or `NCI <nci_>`_) or DEA's `STAC API <stac_api_>`_.
 
-       .. include:: _history.md
-          :parser: myst_parser.sphinx_
-       {% endif %}
-    {% endif %}
+      .. _dea_sandbox: https://knowledge.dea.ga.gov.au/guides/setup/Sandbox/sandbox/
+      .. _nci: https://knowledge.dea.ga.gov.au/guides/setup/NCI/basics/
+      .. _stac_api: https://knowledge.dea.ga.gov.au/guides/setup/gis/stac/
 
-    {# FAQs tab #}
+      .. list-table::
+         :header-rows: 1
 
-    {% if page.data.enable_faqs %}
-    .. tab-item:: FAQs
-       :name: faqs
+         * - 
+           - Aliases
+           - Resolution
+           - CRS
+           - Nodata
+           - Units
+           - Type
+           - Description
+         {% for band in bands_table_list %}
+         * - **{{ band.name }}**
+           - {{ band.aliases|join(', ') if band.aliases else no_data_terms.dash }}
+           - {{ band.resolution or no_data_terms.dash }}
+           - {{ band.crs or no_data_terms.dash }}
+           - {{ band.nodata }}
+           - {{ band.units or no_data_terms.dash }}
+           - {{ band.type or no_data_terms.dash }}
+           - {{ band.description or no_data_terms.dash }}
+         {% endfor %}
 
-       .. raw:: html
+      {{ page.specifications.bands_footnote if page.specifications.bands_footnote }}
+      {% endif %}
+   {% endif %}
 
-          <div class="product-tab-table-of-contents"></div>
+   {# Access tab #}
 
-       .. include:: _faqs.md
-          :parser: myst_parser.sphinx_
-    {% endif %}
+   {% if page.data.enable_access %}
+   .. tab-item:: Access
+      :name: access
 
-    {# Credits tab #}
+      .. raw:: html
 
-    {% if page.data.enable_credits %}
-    .. tab-item:: Credits
-       :name: credits
+         <div class="product-tab-table-of-contents"></div>
 
-       .. raw:: html
+      .. rubric:: Access the data
+         :name: access-the-data-2
+         :class: h2
 
-          <div class="product-tab-table-of-contents"></div>
+      {% if has_access_data %}
+      .. list-table::
+         :name: access-table
 
-       .. include:: _credits.md
-          :parser: myst_parser.sphinx_
-    {% endif %}
+         {% if maps_list %}
+         * - **{{ access_labels.map }}**
+           - {% for item in maps_list %}
+             * `{{ item.name or access_names.map }} <{{ item.link }}>`_
+             {% endfor %}
+           - Learn how to `use DEA Maps </guides/setup/dea_maps/>`_.
+         {% endif %}
+
+         {% if explorers_list %}
+         * - **{{ access_labels.explorer }}**
+           - {% for item in explorers_list %}
+             * `{{ item.name or access_names.explorer }} <{{ item.link }}>`_
+             {% endfor %}
+           - Learn how to `use the DEA Explorer </setup/explorer_guide/>`_.
+         {% endif %}
+
+         {% if data_list %}
+         * - **{{ access_labels.data }}**
+           - {% for item in data_list %}
+             * `{{ item.name or access_names.data }} <{{ item.link }}>`_
+             {% endfor %}
+           - Learn how to `access the data via AWS </guides/about/faq/#download-dea-data>`_.
+         {% endif %}
+
+         {% if code_samples_list %}
+         * - **{{ access_labels.code_sample }}**
+           - {% for item in code_samples_list %}
+             * `{{ item.name or access_names.code_sample }} <{{ item.link }}>`_
+             {% endfor %}
+           - Learn how to `use the DEA Sandbox </guides/setup/Sandbox/sandbox/>`_.
+         {% endif %}
+
+         {% if web_services_list %}
+         * - **{{ access_labels.web_service }}**
+           - {% for item in web_services_list %}
+             * `{{ item.name or access_names.web_service }} <{{ item.link }}>`_
+             {% endfor %}
+           - Learn how to `use DEA's web services </guides/setup/gis/README/>`_.
+         {% endif %}
+
+         {% for item in custom_list %}
+         * - **{{ item.label or "" }}**
+           - * `{{ item.name }} <{{ item.link }}>`_
+           - {{ item.description or "" }}
+         {% endfor %}
+      {% else %}
+      There are no data source links available at the present time.
+      {% endif %}
+
+      .. include:: _access.md
+         :parser: myst_parser.sphinx_
+   {% endif %}
+
+   {# History tab #}
+
+   {% if page.data.enable_history %}
+   .. tab-item:: History
+      :name: history
+
+      .. raw:: html
+
+         <div class="product-tab-table-of-contents"></div>
+
+      {% if not page.data.is_latest_version %}
+      .. rubric:: Version history
+         :name: version-history
+         :class: h2
+
+      You can find the version history in the `latest version of the product <{{ page.data.latest_version_link }}?tab=history>`_.
+      {% else %}
+      .. rubric:: Version history
+         :name: version-history
+         :class: h2
+
+      {% if old_versions_list | length > 0 %}
+
+      View previous releases of this product. Versions are numbered using the `Semantic Versioning <semver_>`_ scheme (MAJOR.MINOR.PATCH).
+
+      .. _semver: https://semver.org/
+
+      .. list-table::
+
+         * - {{ page.data.product_version }}: Current version
+         {% for item in old_versions_list %}
+         * - `{{ item.version }}: {{ item.title }} </data/version-history/{{ item.slug }}/>`_
+         {% endfor %}
+      {% else %}
+      No previous versions are available.
+      {% endif %}
+
+      .. include:: _history.md
+         :parser: myst_parser.sphinx_
+      {% endif %}
+   {% endif %}
+
+   {# FAQs tab #}
+
+   {% if page.data.enable_faqs %}
+   .. tab-item:: FAQs
+      :name: faqs
+
+      .. raw:: html
+
+         <div class="product-tab-table-of-contents"></div>
+
+      .. include:: _faqs.md
+         :parser: myst_parser.sphinx_
+   {% endif %}
+
+   {# Credits tab #}
+
+   {% if page.data.enable_credits %}
+   .. tab-item:: Credits
+      :name: credits
+
+      .. raw:: html
+
+         <div class="product-tab-table-of-contents"></div>
+
+      .. include:: _credits.md
+         :parser: myst_parser.sphinx_
+   {% endif %}
 
 .. raw:: html
 
