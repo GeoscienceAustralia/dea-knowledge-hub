@@ -385,12 +385,7 @@
        .. list-table::
           :name: attributes-table
 
-          {% if product_ids_list %}
-          * - **{{ product_ids_label }}**
-            - {{ product_ids_comma_separated }}
-            -
-          {%- endif %}
-          {%- if page.data.is_latest_version and old_versions_list | length > 0 and page.data.enable_history %} {# If at least one old version exists. #}
+          {% if page.data.is_latest_version and old_versions_list | length > 0 and page.data.enable_history %} {# If at least one old version exists. #}
           * - **Version**
             - {{ page.data.product_version }}
             - The version number of the product. See the `version history <./?tab=history>`_.
@@ -466,7 +461,12 @@
        .. list-table::
           :name: classification-table
 
-          {% if page.data.doi %}
+          {% if product_ids_list %}
+          * - **{{ product_ids_label }}**
+            - {{ product_ids_comma_separated }}
+            -
+          {%- endif %}
+          {%- if page.data.doi %}
           * - **DOI**
             - `{{ page.data.doi }} <https://doi.org/{{ page.data.doi }}>`_
             -
