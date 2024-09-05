@@ -102,7 +102,7 @@
 
 {% set has_access_data = maps_list or data_list or explorers_list or web_services_list or code_samples_list or custom_list %}
 
-{% set has_key_specifications = (page.data.parent_products.name and page.data.parent_products.link) or (page.data.collection.name and page.data.collection.link) or page.data.collection.name or page.data.doi or page.data.ecat or page.data.published %}
+{% set has_key_specifications = (page.data.parent_products.name and page.data.parent_products.link) or (page.data.collection.name and page.data.collection.link) or page.data.collection.name or page.data.doi or page.data.ecat_id or page.data.published %}
 
 {# Restructured Text head component #}
 
@@ -296,9 +296,9 @@
       {%- if page.data.doi %}
       * - **DOI**
         - `{{ page.data.doi }} <https://doi.org/{{ page.data.doi }}>`_
-      {%- elif page.data.ecat %}
+      {%- elif page.data.ecat_id %}
       * - **Persistent ID**
-        - `{{ page.data.ecat }} <https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/{{ page.data.ecat }}>`_
+        - `{{ page.data.ecat_id }} <https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/{{ page.data.ecat_id }}>`_
       {%- endif %}
       {%- if page.data.published %}
       * - **Last updated**
@@ -529,9 +529,9 @@
            - `{{ page.data.doi }} <https://doi.org/{{ page.data.doi }}>`_
            -
          {%- endif %}
-         {%- if page.data.ecat %}
+         {%- if page.data.ecat_id %}
          * - **Persistent ID**
-           - `{{ page.data.ecat }} <https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/{{ page.data.ecat }}>`_
+           - `{{ page.data.ecat_id }} <https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/{{ page.data.ecat_id }}>`_
            - eCat ID (internal use)
          {%- endif %}
          {%- if page.data.parent_products %}

@@ -33,7 +33,7 @@ collection:
   name: Geoscience Australia Landsat Collection 3
   link: null
 doi: 10.26186/116268
-ecat: "116268"
+ecat_id: "116268"
 licence:
   name: Creative Commons Attribution 4.0 International Licence
   link: https://creativecommons.org/licenses/by/4.0/

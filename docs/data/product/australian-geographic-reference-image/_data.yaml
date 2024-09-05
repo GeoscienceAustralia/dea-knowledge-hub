@@ -33,7 +33,7 @@ collection:
   name: null
   link: null
 doi: 10.4225/25/5524BA4A047FE
-ecat: "72657"
+ecat_id: "72657"
 licence:
   name: Creative Commons Attribution 4.0 International Licence
   link: https://creativecommons.org/licenses/by/4.0/

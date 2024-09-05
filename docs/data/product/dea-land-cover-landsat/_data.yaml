@@ -34,7 +34,7 @@ collection:
   name: Geoscience Australia Landsat Collection 2
   link: null
 doi: 10.26186/146090
-ecat: "146090"
+ecat_id: "146090"
 licence:
   name: Creative Commons Attribution 4.0 International Licence
   link: https://creativecommons.org/licenses/by/4.0/

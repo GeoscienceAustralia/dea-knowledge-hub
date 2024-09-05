@@ -34,7 +34,7 @@ collection:
   name: Geoscience Australia Sentinel-2 Collection 3
   link: null
 doi: 10.26186/146449
-ecat: "146449"
+ecat_id: "146449"
 licence:
   name: Creative Commons Attribution 4.0 International Licence
   link: https://creativecommons.org/licenses/by/4.0/
