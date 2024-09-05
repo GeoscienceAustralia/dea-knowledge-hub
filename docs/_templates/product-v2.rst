@@ -559,7 +559,7 @@
          {%- if page.data.licence.name and page.data.licence.link and page.data.enable_credits %}
          * - **Licence**
            - `{{ page.data.licence.name }} <{{ page.data.licence.link }}>`_
-           - See the `Credits tab <./?tab=credits>`_.
+           - See `Credits <./?tab=credits>`_.
          {%- elif page.data.licence.name and page.data.licence.link %}
          * - **Licence**
            - `{{ page.data.licence.name }} <{{ page.data.licence.link }}>`_
