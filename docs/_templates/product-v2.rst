@@ -678,6 +678,50 @@
 {% endif %}
 {% endset %}
 
+{# History tab component #}
+
+{% set history_tab_component %}
+{% if page.data.enable_history %}
+.. tab-item:: History
+   :name: history
+
+   .. raw:: html
+
+      <div class="product-tab-table-of-contents"></div>
+
+   {% if not page.data.is_latest_version %}
+   .. rubric:: Version history
+      :name: version-history
+      :class: h2
+
+   You can find the version history in the `latest version of the product <{{ page.data.latest_version_link }}?tab=history>`_.
+   {% else %}
+   .. rubric:: Version history
+      :name: version-history
+      :class: h2
+
+   {% if old_versions_list | length > 0 %}
+
+   View previous releases of this product. Versions are numbered using the `Semantic Versioning <semver_>`_ scheme (MAJOR.MINOR.PATCH).
+
+   .. _semver: https://semver.org/
+
+   .. list-table::
+
+      * - {{ page.data.product_version }}: Current version
+      {% for item in old_versions_list %}
+      * - `{{ item.version }}: {{ item.title }} </data/version-history/{{ item.slug }}/>`_
+      {% endfor %}
+   {% else %}
+   No previous versions are available.
+   {% endif %}
+
+   .. include:: _history.md
+      :parser: myst_parser.sphinx_
+   {% endif %}
+{% endif %}
+{% endset %}
+
 {# Constructing the template #}
 
 {{ rst_start_component }}
@@ -698,47 +742,7 @@
 
    {{ access_tab_component | indent(3, True) }}
 
-   {# History tab #}
-
-   {% if page.data.enable_history %}
-   .. tab-item:: History
-      :name: history
-
-      .. raw:: html
-
-         <div class="product-tab-table-of-contents"></div>
-
-      {% if not page.data.is_latest_version %}
-      .. rubric:: Version history
-         :name: version-history
-         :class: h2
-
-      You can find the version history in the `latest version of the product <{{ page.data.latest_version_link }}?tab=history>`_.
-      {% else %}
-      .. rubric:: Version history
-         :name: version-history
-         :class: h2
-
-      {% if old_versions_list | length > 0 %}
-
-      View previous releases of this product. Versions are numbered using the `Semantic Versioning <semver_>`_ scheme (MAJOR.MINOR.PATCH).
-
-      .. _semver: https://semver.org/
-
-      .. list-table::
-
-         * - {{ page.data.product_version }}: Current version
-         {% for item in old_versions_list %}
-         * - `{{ item.version }}: {{ item.title }} </data/version-history/{{ item.slug }}/>`_
-         {% endfor %}
-      {% else %}
-      No previous versions are available.
-      {% endif %}
-
-      .. include:: _history.md
-         :parser: myst_parser.sphinx_
-      {% endif %}
-   {% endif %}
+   {{ history_tab_component | indent(3, True) }}
 
    {# FAQs tab #}
 
