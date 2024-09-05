@@ -479,13 +479,13 @@
            - The time span for which data is available.
          {%- endif %}
          {%- if is_frequency_ongoing %}
-         * - **Update cadence**
+         * - **Update frequency**
            - {{ data_update_frequency_cadence }}
-           - The frequency of data updates.
+           - The expected frequency of data updates.
          {%- else %}
-         * - **Update cadence**
+         * - **Update frequency**
            - Previously: {{ data_update_frequency_cadence }}
-           - When data updates were active, this was their frequency.
+           - When data updates were active, this was their expected frequency.
          {%- endif %}
          * - **Update activity**
            - {{ data_update_frequency_activity }}
