@@ -722,6 +722,22 @@
 {% endif %}
 {% endset %}
 
+{# FAQs tab component #}
+
+{% set faqs_tab_component %}
+{% if page.data.enable_faqs %}
+.. tab-item:: FAQs
+   :name: faqs
+
+   .. raw:: html
+
+      <div class="product-tab-table-of-contents"></div>
+
+   .. include:: _faqs.md
+      :parser: myst_parser.sphinx_
+{% endif %}
+{% endset %}
+
 {# Constructing the template #}
 
 {{ rst_start_component }}
@@ -744,19 +760,7 @@
 
    {{ history_tab_component | indent(3, True) }}
 
-   {# FAQs tab #}
-
-   {% if page.data.enable_faqs %}
-   .. tab-item:: FAQs
-      :name: faqs
-
-      .. raw:: html
-
-         <div class="product-tab-table-of-contents"></div>
-
-      .. include:: _faqs.md
-         :parser: myst_parser.sphinx_
-   {% endif %}
+   {{ faqs_tab_component | indent(3, True) }}
 
    {# Credits tab #}
 
