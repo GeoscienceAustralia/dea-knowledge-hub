@@ -551,7 +551,7 @@
            -
          {%- endif %}
          {%- endif %}
-         {%- if tags_list and enable_tags %}
+         {%- if tags_list %}
          * - **Tags**
            - {{ tags_list | join(", ") }}
            -
@@ -587,7 +587,7 @@
         - Aliases
         - Resolution
         - CRS
-        - Nodata
+        - 'No data'
         - Units
         - Type
         - Description
