@@ -605,6 +605,79 @@
 {% endif %}
 {% endset %}
 
+{# Access tab component #}
+
+{% set access_tab_component %}
+{% if page.data.enable_access %}
+.. tab-item:: Access
+   :name: access
+
+   .. raw:: html
+
+      <div class="product-tab-table-of-contents"></div>
+
+   .. rubric:: Access the data
+      :name: access-the-data-2
+      :class: h2
+
+   {% if has_access_data %}
+   .. list-table::
+      :name: access-table
+
+      {% if maps_list %}
+      * - **{{ access_labels.map }}**
+        - {% for item in maps_list %}
+          * `{{ item.name or access_names.map }} <{{ item.link }}>`_
+          {% endfor %}
+        - Learn how to `use DEA Maps </guides/setup/dea_maps/>`_.
+      {% endif %}
+
+      {% if explorers_list %}
+      * - **{{ access_labels.explorer }}**
+        - {% for item in explorers_list %}
+          * `{{ item.name or access_names.explorer }} <{{ item.link }}>`_
+          {% endfor %}
+        - Learn how to `use the DEA Explorer </setup/explorer_guide/>`_.
+      {% endif %}
+
+      {% if data_list %}
+      * - **{{ access_labels.data }}**
+        - {% for item in data_list %}
+          * `{{ item.name or access_names.data }} <{{ item.link }}>`_
+          {% endfor %}
+        - Learn how to `access the data via AWS </guides/about/faq/#download-dea-data>`_.
+      {% endif %}
+
+      {% if code_samples_list %}
+      * - **{{ access_labels.code_sample }}**
+        - {% for item in code_samples_list %}
+          * `{{ item.name or access_names.code_sample }} <{{ item.link }}>`_
+          {% endfor %}
+        - Learn how to `use the DEA Sandbox </guides/setup/Sandbox/sandbox/>`_.
+      {% endif %}
+
+      {% if web_services_list %}
+      * - **{{ access_labels.web_service }}**
+        - {% for item in web_services_list %}
+          * `{{ item.name or access_names.web_service }} <{{ item.link }}>`_
+          {% endfor %}
+        - Learn how to `use DEA's web services </guides/setup/gis/README/>`_.
+      {% endif %}
+
+      {% for item in custom_list %}
+      * - **{{ item.label or "" }}**
+        - * `{{ item.name }} <{{ item.link }}>`_
+        - {{ item.description or "" }}
+      {% endfor %}
+   {% else %}
+   There are no data source links available at the present time.
+   {% endif %}
+
+   .. include:: _access.md
+      :parser: myst_parser.sphinx_
+{% endif %}
+{% endset %}
+
 {# Constructing the template #}
 
 {{ rst_start_component }}
@@ -623,76 +696,7 @@
 
    {{ specifications_tab_component | indent(3, True) }}
 
-   {# Access tab #}
-
-   {% if page.data.enable_access %}
-   .. tab-item:: Access
-      :name: access
-
-      .. raw:: html
-
-         <div class="product-tab-table-of-contents"></div>
-
-      .. rubric:: Access the data
-         :name: access-the-data-2
-         :class: h2
-
-      {% if has_access_data %}
-      .. list-table::
-         :name: access-table
-
-         {% if maps_list %}
-         * - **{{ access_labels.map }}**
-           - {% for item in maps_list %}
-             * `{{ item.name or access_names.map }} <{{ item.link }}>`_
-             {% endfor %}
-           - Learn how to `use DEA Maps </guides/setup/dea_maps/>`_.
-         {% endif %}
-
-         {% if explorers_list %}
-         * - **{{ access_labels.explorer }}**
-           - {% for item in explorers_list %}
-             * `{{ item.name or access_names.explorer }} <{{ item.link }}>`_
-             {% endfor %}
-           - Learn how to `use the DEA Explorer </setup/explorer_guide/>`_.
-         {% endif %}
-
-         {% if data_list %}
-         * - **{{ access_labels.data }}**
-           - {% for item in data_list %}
-             * `{{ item.name or access_names.data }} <{{ item.link }}>`_
-             {% endfor %}
-           - Learn how to `access the data via AWS </guides/about/faq/#download-dea-data>`_.
-         {% endif %}
-
-         {% if code_samples_list %}
-         * - **{{ access_labels.code_sample }}**
-           - {% for item in code_samples_list %}
-             * `{{ item.name or access_names.code_sample }} <{{ item.link }}>`_
-             {% endfor %}
-           - Learn how to `use the DEA Sandbox </guides/setup/Sandbox/sandbox/>`_.
-         {% endif %}
-
-         {% if web_services_list %}
-         * - **{{ access_labels.web_service }}**
-           - {% for item in web_services_list %}
-             * `{{ item.name or access_names.web_service }} <{{ item.link }}>`_
-             {% endfor %}
-           - Learn how to `use DEA's web services </guides/setup/gis/README/>`_.
-         {% endif %}
-
-         {% for item in custom_list %}
-         * - **{{ item.label or "" }}**
-           - * `{{ item.name }} <{{ item.link }}>`_
-           - {{ item.description or "" }}
-         {% endfor %}
-      {% else %}
-      There are no data source links available at the present time.
-      {% endif %}
-
-      .. include:: _access.md
-         :parser: myst_parser.sphinx_
-   {% endif %}
+   {{ access_tab_component | indent(3, True) }}
 
    {# History tab #}
 
