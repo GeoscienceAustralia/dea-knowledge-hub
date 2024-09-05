@@ -360,10 +360,6 @@
    {%- endif %}
    {%- endif %}
 
-   {%- if tags_list and enable_tags %}
-   .. tags:: {{ tags_list | join(", ") }}
-   {%- endif %}
-
    .. include:: _overview_2.md
       :parser: myst_parser.sphinx_
 {% endif %}
@@ -554,6 +550,11 @@
            - {{ page.data.collection.name }}
            -
          {%- endif %}
+         {%- endif %}
+         {%- if tags_list and enable_tags %}
+         * - **Tags**
+           - {{ tags_list | join(", ") }}
+           -
          {%- endif %}
          {%- if page.data.licence %}
          {%- if page.data.licence.name and page.data.licence.link and page.data.enable_credits %}
