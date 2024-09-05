@@ -522,7 +522,7 @@
          {%- if product_ids_list %}
          * - **{{ product_ids_label }}**
            - {{ product_ids_comma_separated }}
-           - Used in `ODC <https://www.opendatacube.org/>`_
+           - Used in `ODC <https://www.opendatacube.org/>`_.
          {%- endif %}
          {%- if page.data.doi %}
          * - **DOI**
@@ -532,7 +532,7 @@
          {%- if page.data.ecat_id %}
          * - **Persistent ID**
            - `{{ page.data.ecat_id }} <https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/{{ page.data.ecat_id }}>`_
-           - eCat ID (internal use)
+           - eCat ID (internal use).
          {%- endif %}
          {%- if page.data.parent_products %}
          {%- if page.data.parent_products.name and page.data.parent_products.link %}
