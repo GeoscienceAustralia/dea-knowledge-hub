@@ -86,6 +86,7 @@ old_versions: null
 enable_overview: true
 enable_details: true
 enable_quality: true
+enable_specifications: true
 enable_access: true
 enable_history: false
 enable_faqs: false

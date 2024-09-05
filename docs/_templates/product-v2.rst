@@ -2,7 +2,7 @@
 
 {% set page = {
    "data": load('_data.yaml'),
-   "specifications": load('_specifications.yaml'),
+   "figures": load('_figures.yaml'),
 } %}
 
 {# Terms and static strings #}
@@ -76,7 +76,7 @@
 
 {% set tags_list = page.data.tags | select("!=", None) | list %}
 
-{% set bands_table_list = page.specifications.bands_table | selectattr("name",  "!=", None) | list %}
+{% set bands_table_list = page.figures.bands_table | selectattr("name",  "!=", None) | list %}
 
 {% set page_title = page.data.official_name if page.data.is_latest_version else "{}: {}".format(page.data.product_version, page.data.official_name) %}
 
@@ -275,7 +275,7 @@
       :name: key-specifications
       :class: h2
 
-   {% if page.specifications.enable_specifications %}
+   {% if page.data.enable_specifications %}
    For more specifications, see the `Specifications tab <./?tab=specifications>`_.
    {% endif %}
 
@@ -404,7 +404,7 @@
 {# Specifications tab component #}
 
 {% set specifications_tab_component %}
-{% if page.specifications.enable_specifications %}
+{% if page.data.enable_specifications %}
 .. tab-item:: Specifications
    :name: specifications
 
@@ -600,7 +600,7 @@
         - {{ band.description or no_data_terms.dash }}
       {% endfor %}
 
-   {{ page.specifications.bands_footnote if page.specifications.bands_footnote }}
+   {{ page.figures.bands_footnote if page.figures.bands_footnote }}
    {% endif %}
 {% endif %}
 {% endset %}
