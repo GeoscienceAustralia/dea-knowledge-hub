@@ -554,7 +554,7 @@
          {%- endif %}
          {%- if tags_list %}
          * - **Tags**
-           - {{ tags_list | join(", ") }}
+           - {% for tag in tags_list %}`{{tag}} </search/?q={{tag}}>`_{% if not loop.last %}, {% endif %}{% endfor %}
            -
          {%- endif %}
          {%- if page.data.licence %}
