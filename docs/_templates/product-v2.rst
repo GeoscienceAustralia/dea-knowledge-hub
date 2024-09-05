@@ -412,10 +412,10 @@
       :name: specifications-tables
       :class: h2
 
-   .. dropdown:: Attributes
+   .. dropdown:: General
 
       .. list-table::
-         :name: attributes-table
+         :name: general-specifications-table
 
          {% if page.data.is_latest_version and old_versions_list | length > 0 and page.data.enable_history %} {# If at least one old version exists. #}
          * - **Version**
@@ -509,7 +509,7 @@
    .. dropdown:: Classification
 
       .. list-table::
-         :name: classification-table
+         :name: classification-specifications-table
 
          * - **Official name**
            - {{ page.data.official_name }}
@@ -581,6 +581,7 @@
 
    .. list-table::
       :header-rows: 1
+      :name: bands-specifications-table
 
       * - 
         - Aliases
