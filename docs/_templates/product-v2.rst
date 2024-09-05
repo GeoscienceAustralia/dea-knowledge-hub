@@ -148,14 +148,14 @@
       {%- if page.data.resolution %}
       :Resolution: {{ page.data.resolution }}
       {%- endif %}
-      {%- if page.data.time_span_custom %}
-      :Data from: {{ page.data.time_span_custom }}
-      {%- elif page.data.time_span_start and page.data.time_span_end %}
-      :Data from: {{ page.data.time_span_start }} to {{ page.data.time_span_end }}
-      {%- elif page.data.time_span_start  %}
-      :Data since: {{ page.data.time_span_start }}
-      {%- elif page.data.time_span_end  %}
-      :Data until: {{ page.data.time_span_end }}
+      {%- if page.data.temporal_extent_custom %}
+      :Data from: {{ page.data.temporal_extent_custom }}
+      {%- elif page.data.temporal_extent_start and page.data.temporal_extent_end %}
+      :Data from: {{ page.data.temporal_extent_start }} to {{ page.data.temporal_extent_end }}
+      {%- elif page.data.temporal_extent_start  %}
+      :Data since: {{ page.data.temporal_extent_start }}
+      {%- elif page.data.temporal_extent_end  %}
+      :Data until: {{ page.data.temporal_extent_end }}
       {%- endif %}
       {%- if is_frequency_ongoing %}
       :Data updates: {{ data_update_frequency }}, {{ data_update_activity }}
@@ -461,21 +461,21 @@
            - {{ page.data.resolution }}
            - The size of the small area that the data can represent.
          {%- endif %}
-         {%- if page.data.time_span_custom %}
+         {%- if page.data.temporal_extent_custom %}
          * - **Temporal extent**
-           - {{ page.data.time_span_custom }}
+           - {{ page.data.temporal_extent_custom }}
            - The time span for which data is available.
-         {%- elif page.data.time_span_start and page.data.time_span_end %}
+         {%- elif page.data.temporal_extent_start and page.data.temporal_extent_end %}
          * - **Temporal extent**
-           - {{ page.data.time_span_start }} to {{ page.data.time_span_end }}
+           - {{ page.data.temporal_extent_start }} to {{ page.data.temporal_extent_end }}
            - The time span for which data is available.
-         {%- elif page.data.time_span_start  %}
+         {%- elif page.data.temporal_extent_start  %}
          * - **Temporal extent**
-           - Since {{ page.data.time_span_start }}
+           - Since {{ page.data.temporal_extent_start }}
            - The time span for which data is available.
-         {%- elif page.data.time_span_end  %}
+         {%- elif page.data.temporal_extent_end  %}
          * - **Temporal extent**
-           - Until {{ page.data.time_span_end }}
+           - Until {{ page.data.temporal_extent_end }}
            - The time span for which data is available.
          {%- endif %}
          {%- if is_frequency_ongoing %}

@@ -15,9 +15,9 @@ is_provisional: false
 lineage_type: DERIVATIVE
 spatial_data_type: RASTER
 
-time_span_start: 2002
-time_span_end: 2015
-time_span_custom: null
+temporal_extent_start: 2002
+temporal_extent_end: 2015
+temporal_extent_custom: null
 
 data_update_frequency: 2_YEARS
 data_update_activity: NO_UPDATES
