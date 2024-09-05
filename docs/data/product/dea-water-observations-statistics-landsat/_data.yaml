@@ -38,7 +38,7 @@ collection:
   link: null
 doi: null
 ecat: "146091"
-nci: null
+nci_code: null
 licence:
   name: Creative Commons Attribution 4.0 International Licence
   link: https://creativecommons.org/licenses/by/4.0/
