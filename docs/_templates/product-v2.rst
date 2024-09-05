@@ -106,9 +106,9 @@
 
 {# Tags list component #}
 
-{% set tags_list_component %}
+{% set tags_list_component -%}
 {% for tag in tags_list %}`{{tag}} </search/?q={{tag}}>`_{% if not loop.last %}, {% endif %}{% endfor %}
-{% endset %}
+{%- endset %}
 
 {# Restructured Text head component #}
 
