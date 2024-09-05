@@ -532,7 +532,7 @@
          {%- if page.data.ecat %}
          * - **Persistent ID**
            - `{{ page.data.ecat }} <https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/{{ page.data.ecat }}>`_
-           - Geoscience Australia Ecat ID
+           - eCat ID (internal use)
          {%- endif %}
          {%- if page.data.parent_products %}
          {%- if page.data.parent_products.name and page.data.parent_products.link %}
