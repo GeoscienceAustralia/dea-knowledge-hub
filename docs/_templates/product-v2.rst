@@ -104,6 +104,12 @@
 
 {% set has_key_specifications = (page.data.parent_products.name and page.data.parent_products.link) or (page.data.collection.name and page.data.collection.link) or page.data.collection.name or page.data.doi or page.data.ecat_id or page.data.published %}
 
+{# Tags list component #}
+
+{% set tags_list_component %}
+{% for tag in tags_list %}`{{tag}} </search/?q={{tag}}>`_{% if not loop.last %}, {% endif %}{% endfor %}
+{% endset %}
+
 {# Restructured Text head component #}
 
 {% set rst_start_component %}
@@ -318,6 +324,10 @@
       * - **Collection**
         - {{ page.data.collection.name }}
       {%- endif %}
+      {%- endif %}
+      {%- if tags_list %}
+      * - **Tags**
+        - {{ tags_list_component }}
       {%- endif %}
       {%- if page.data.licence %}
       {%- if page.data.licence.name and page.data.licence.link %}
@@ -554,7 +564,7 @@
          {%- endif %}
          {%- if tags_list %}
          * - **Tags**
-           - {% for tag in tags_list %}`{{tag}} </search/?q={{tag}}>`_{% if not loop.last %}, {% endif %}{% endfor %}
+           - {{ tags_list_component }}
            -
          {%- endif %}
          {%- if page.data.licence %}
