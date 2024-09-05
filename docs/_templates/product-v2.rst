@@ -522,7 +522,7 @@
          {%- if product_ids_list %}
          * - **{{ product_ids_label }}**
            - {{ product_ids_comma_separated }}
-           -
+           - Used by `Open Data Cube <https://www.opendatacube.org/>`_
          {%- endif %}
          {%- if page.data.doi %}
          * - **DOI**
