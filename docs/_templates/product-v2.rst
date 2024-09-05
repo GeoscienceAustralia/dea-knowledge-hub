@@ -738,6 +738,22 @@
 {% endif %}
 {% endset %}
 
+{# Credits tab component #}
+
+{% set credits_tab_component %}
+{% if page.data.enable_credits %}
+.. tab-item:: Credits
+   :name: credits
+
+   .. raw:: html
+
+      <div class="product-tab-table-of-contents"></div>
+
+   .. include:: _credits.md
+      :parser: myst_parser.sphinx_
+{% endif %}
+{% endset %}
+
 {# Constructing the template #}
 
 {{ rst_start_component }}
@@ -762,18 +778,6 @@
 
    {{ faqs_tab_component | indent(3, True) }}
 
-   {# Credits tab #}
-
-   {% if page.data.enable_credits %}
-   .. tab-item:: Credits
-      :name: credits
-
-      .. raw:: html
-
-         <div class="product-tab-table-of-contents"></div>
-
-      .. include:: _credits.md
-         :parser: myst_parser.sphinx_
-   {% endif %}
+   {{ credits_tab_component | indent(3, True) }}
 
 {{ html_end_scripts_component }}
