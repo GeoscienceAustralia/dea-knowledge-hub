@@ -57,7 +57,7 @@ explorers:
     name: Data explorer
 
 data:
-  - link: https://thredds.nci.org.au/thredds/catalog/xu18/catalog.html
+  - link: https://thredds.nci.org.au/thredds/catalog/xu18/ga_ls9c_ard_3/catalog.html
     name: Access the data on NCI
 
 code_examples:
