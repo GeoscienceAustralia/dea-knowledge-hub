@@ -19,8 +19,8 @@ time_span_start: 27 Aug 2002
 time_span_end: Present
 time_span_custom: null
 
-data_update_frequency_cadence: 10_MIN
-data_update_frequency_activity: ONGOING
+data_update_frequency: 10_MIN
+data_update_activity: ONGOING
 is_currency_reported: true
 
 resolution: null

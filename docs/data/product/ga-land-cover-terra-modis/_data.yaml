@@ -19,8 +19,8 @@ time_span_start: 2002
 time_span_end: 2015
 time_span_custom: null
 
-data_update_frequency_cadence: 2_YEARS
-data_update_frequency_activity: NO_UPDATES
+data_update_frequency: 2_YEARS
+data_update_activity: NO_UPDATES
 is_currency_reported: false
 
 resolution: 250 m

@@ -19,8 +19,8 @@ time_span_start: 12 Jul 2015
 time_span_end: Present
 time_span_custom: null
 
-data_update_frequency_cadence: DAILY
-data_update_frequency_activity: ONGOING
+data_update_frequency: DAILY
+data_update_activity: ONGOING
 is_currency_reported: true
 
 resolution: 10-60 m

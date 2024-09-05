@@ -33,7 +33,7 @@
    "VECTOR": "Vector",
 } %}
 
-{% set data_update_frequency_cadence_terms = {
+{% set data_update_frequency_terms = {
    "AS_NEEDED": "'As needed' frequency",
    "DAILY": "Daily frequency",
    "WEEKLY": "Weekly frequency",
@@ -43,7 +43,7 @@
    "10_MIN": "'Every 10 minutes' frequency",
 } %}
 
-{% set data_update_frequency_activity_terms = {
+{% set data_update_activity_terms = {
    "ONGOING": "Ongoing",
    "NO_UPDATES": "No further updates",
    "DEVELOPMENT": "Awaiting development",
@@ -92,13 +92,13 @@
 
 {% set product_types_list = [lineage_type, spatial_data_type] | select("!=", None) | list %}
 
-{% set data_update_frequency_cadence = data_update_frequency_cadence_terms.get(page.data.data_update_frequency_cadence, page.data.data_update_frequency_cadence) %}
+{% set data_update_frequency = data_update_frequency_terms.get(page.data.data_update_frequency, page.data.data_update_frequency) %}
 
-{% set data_update_frequency_activity = data_update_frequency_activity_terms.get(page.data.data_update_frequency_activity, page.data.data_update_frequency_activity) %}
+{% set data_update_activity = data_update_activity_terms.get(page.data.data_update_activity, page.data.data_update_activity) %}
 
-{% set is_frequency_ongoing = data_update_frequency_activity == data_update_frequency_activity_terms.ONGOING %}
+{% set is_frequency_ongoing = data_update_activity == data_update_activity_terms.ONGOING %}
 
-{% set is_cadence_yearly = data_update_frequency_cadence == data_update_frequency_cadence_terms.YEARLY %}
+{% set is_cadence_yearly = data_update_frequency == data_update_frequency_terms.YEARLY %}
 
 {% set has_access_data = maps_list or data_list or explorers_list or web_services_list or code_samples_list or custom_list %}
 
@@ -158,9 +158,9 @@
       :Data until: {{ page.data.time_span_end }}
       {%- endif %}
       {%- if is_frequency_ongoing %}
-      :Data updates: {{ data_update_frequency_cadence }}, {{ data_update_frequency_activity }}
+      :Data updates: {{ data_update_frequency }}, {{ data_update_activity }}
       {%- else %}
-      :Data updates: {{ data_update_frequency_activity }} (Previously: {{ data_update_frequency_cadence }})
+      :Data updates: {{ data_update_activity }} (Previously: {{ data_update_frequency }})
       {%- endif %}
 
    .. container::
@@ -480,15 +480,15 @@
          {%- endif %}
          {%- if is_frequency_ongoing %}
          * - **Update frequency**
-           - {{ data_update_frequency_cadence }}
+           - {{ data_update_frequency }}
            - The expected frequency of data updates.
          {%- else %}
          * - **Update frequency**
-           - Previously: {{ data_update_frequency_cadence }}
+           - Previously: {{ data_update_frequency }}
            - When data updates were active, this was their expected frequency.
          {%- endif %}
          * - **Update activity**
-           - {{ data_update_frequency_activity }}
+           - {{ data_update_activity }}
            - The activity status of data updates.
          {%- if page.data.is_currency_reported and is_cadence_yearly %}
          * - **Currency**

@@ -19,8 +19,8 @@ time_span_start: 1987
 time_span_end: 2022
 time_span_custom: null
 
-data_update_frequency_cadence: YEARLY
-data_update_frequency_activity: ONGOING
+data_update_frequency: YEARLY
+data_update_activity: ONGOING
 is_currency_reported: true
 
 resolution: 30 m

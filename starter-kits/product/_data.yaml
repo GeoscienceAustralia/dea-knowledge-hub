@@ -19,8 +19,8 @@ time_span_start: 1 Jan 2020
 time_span_end: Present
 # time_span_custom: 1986 – 1999 and 2003 – 2011
 
-data_update_frequency_cadence: DAILY
-data_update_frequency_activity: ONGOING
+data_update_frequency: DAILY
+data_update_activity: ONGOING
 is_currency_reported: false
 
 # resolution: 30 m

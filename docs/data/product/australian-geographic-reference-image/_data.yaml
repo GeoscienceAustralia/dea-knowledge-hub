@@ -19,8 +19,8 @@ time_span_start: null
 time_span_end: null
 time_span_custom: null
 
-data_update_frequency_cadence: AS_NEEDED
-data_update_frequency_activity: NO_UPDATES
+data_update_frequency: AS_NEEDED
+data_update_activity: NO_UPDATES
 is_currency_reported: false
 
 resolution: 2.5-10 m
