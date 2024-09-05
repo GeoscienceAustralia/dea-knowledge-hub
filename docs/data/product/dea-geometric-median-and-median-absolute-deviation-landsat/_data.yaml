@@ -6,7 +6,7 @@
 official_name: DEA Geometric Median and Median Absolute Deviation (Landsat)
 full_technical_name: Geoscience Australia Landsat Geometric Median and Median Absolute Deviation Collection 3
 header_image: /_files/cmi/Geomedian_Australia_2014.jpg
-product_version: 4.0.0
+version_number: 4.0.0
 is_latest_version: true
 latest_version_link: /data/product/dea-geometric-median-and-median-absolute-deviation-landsat/
 is_provisional: false

@@ -78,7 +78,7 @@
 
 {% set bands_table_list = page.figures.bands_table | selectattr("name",  "!=", None) | list %}
 
-{% set page_title = page.data.official_name if page.data.is_latest_version else "{}: {}".format(page.data.product_version, page.data.official_name) %}
+{% set page_title = page.data.official_name if page.data.is_latest_version else "{}: {}".format(page.data.version_number, page.data.official_name) %}
 
 {% set product_ids_label = "Product IDs" if product_ids_list | length > 1 else "Product ID" %}
 
@@ -140,9 +140,9 @@
       {% endif %}
 
       {% if page.data.is_latest_version %}
-      :Version: {{ page.data.product_version }}
+      :Version: {{ page.data.version_number }}
       {%- else %}
-      :Version: {{ page.data.product_version }} (`See latest version <{{ page.data.latest_version_link }}>`_)
+      :Version: {{ page.data.version_number }} (`See latest version <{{ page.data.latest_version_link }}>`_)
       {%- endif %}
       :Type: {{ product_types_list | join(", ") }}
       {%- if page.data.resolution %}
@@ -419,15 +419,15 @@
 
          {% if page.data.is_latest_version and old_versions_list | length > 0 and page.data.enable_history %} {# If at least one old version exists. #}
          * - **Version**
-           - {{ page.data.product_version }}
+           - {{ page.data.version_number }}
            - The version number of the product. See the `version history <./?tab=history>`_.
          {%- elif page.data.is_latest_version %}
          * - **Version**
-           - {{ page.data.product_version }}
+           - {{ page.data.version_number }}
            - The version number of the product.
          {%- else %}
          * - **Version**
-           - {{ page.data.product_version }}
+           - {{ page.data.version_number }}
            - This is an old version of the product. See the `latest version <{{ page.data.latest_version_link }}>`_.
          {%- endif %}
          {% if lineage_type == lineage_type_terms.DERIVATIVE %}
@@ -711,7 +711,7 @@
 
    .. list-table::
 
-      * - {{ page.data.product_version }}: Current version
+      * - {{ page.data.version_number }}: Current version
       {% for item in old_versions_list %}
       * - `{{ item.version }}: {{ item.title }} </data/version-history/{{ item.slug }}/>`_
       {% endfor %}

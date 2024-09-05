@@ -7,7 +7,7 @@ official_name: DEA Surface Reflectance NBART (Sentinel-2B MSI)
 full_technical_name: Geoscience Australia Sentinel-2B MSI NBART Collection 3
 header_image: /_files/cmi/surface_reflectance_2_NBARTa_1.png
 
-product_version: 3.2.1
+version_number: 3.2.1
 is_latest_version: true
 latest_version_link: null
 is_provisional: false

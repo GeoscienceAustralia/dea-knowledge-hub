@@ -7,7 +7,7 @@ official_name: " DEA Wetlands Insight Tool (Ramsar Wetlands)"
 full_technical_name: Wetlands Insight Tool Ramsar Wetlands Polygons
 header_image: /_files/cmi/WITthumb.png
 
-product_version: 4.0.0
+version_number: 4.0.0
 is_latest_version: true
 latest_version_link: null
 is_provisional: false
