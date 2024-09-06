@@ -55,7 +55,7 @@ explorers:
 data:
   - link: https://data.dea.ga.gov.au/?prefix=baseline/ga_ls5t_ard_3/
     name: Access the data on AWS
-  - link: https://thredds.nci.org.au/thredds/catalog/xu18/catalog.html
+  - link: https://thredds.nci.org.au/thredds/catalog/xu18/ga_ls5t_ard_3/catalog.html
     name: Access the data on NCI
 
 code_examples:
