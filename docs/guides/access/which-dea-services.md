@@ -22,17 +22,6 @@ This is a decision matrix where along the top are listed DEA Services and down t
    </thead>
     <tbody>
         <tr>
-            <td><strong>Difficulty level</strong></td>
-            <td>Beginner</td>
-            <td>Beginner</td>
-            <td>Intermediate</td>
-            <td>Intermediate</td>
-            <td>Intermediate</td>
-            <td>Beginner</td>
-            <td>Advanced</td>
-            <td>Intermediate</td>
-        </tr>
-        <tr>
             <td><strong>Understand the data</strong></td>
             <td class="high"><a href="/">Browse the DEA Knowledge Hub</a></td>
             <td class="medium">Partial</td>
@@ -86,6 +75,17 @@ This is a decision matrix where along the top are listed DEA Services and down t
             <td class="low">No</td>
             <td class="low">No</td>
             <td class="low">No</td>
+        </tr>
+        <tr>
+            <td><strong>Difficulty level</strong></td>
+            <td>Beginner</td>
+            <td>Beginner</td>
+            <td>Intermediate</td>
+            <td>Intermediate</td>
+            <td>Intermediate</td>
+            <td>Beginner</td>
+            <td>Advanced</td>
+            <td>Intermediate</td>
         </tr>
    </tbody>
 </table>
