@@ -2,7 +2,7 @@
 
 Digital Earth Australia (DEA) provides several services and there can be multiple ways to access our data and information. Sometimes, you may be wondering which service to use. Therefore, we've created this matrix to help you decide.
 
-## Which services to use?
+## Decision matrix
 
 This is a decision matrix where along the top are listed DEA Services and down the side are listed things you may want to do.
 
@@ -23,58 +23,58 @@ This is a decision matrix where along the top are listed DEA Services and down t
     <tbody>
         <tr>
             <td><strong>Understand the data</strong></td>
-            <td class="yes"><a href="https://knowledge.dea.ga.gov.au/">Yes</a></td>
-            <td class="medium"><a href="https://maps.dea.ga.gov.au/">Somewhat</a></td>
-            <td class="medium"><a href="https://knowledge.dea.ga.gov.au/guides/setup/gis/web_map_service/">Somewhat</a></td>
-            <td class="medium"><a href="https://knowledge.dea.ga.gov.au/guides/setup/Sandbox/sandbox/">Somewhat</a></td>
-            <td class="medium"><a href="https://knowledge.dea.ga.gov.au/guides/setup/gis/web_coverage_service/">Somewhat</a></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td class="yes"><a href="/">Yes</a></td>
+            <td class="medium"><a href="/guides/setup/dea_maps/">Somewhat</a></td>
+            <td class="medium"><a href="/guides/setup/gis/web_map_service/">Somewhat</a></td>
+            <td class="medium"><a href="/guides/setup/Sandbox/sandbox/">Somewhat</a></td>
+            <td class="medium"><a href="/guides/setup/gis/web_coverage_service/">Somewhat</a></td>
+            <td class="medium"><a href="/guides/setup/explorer_guide/">Somewhat</a></td>
+            <td class="medium"><a href="/guides/setup/gis/stac/">Somewhat</a></td>
+            <td class="medium"><a href="/guides/setup/AWS/data_and_metadata/">Somewhat</a></td>
         </tr>
         <tr>
             <td><strong>View large data volumes</strong></td>
             <td>-</td>
-            <td class="medium"><a href="https://maps.dea.ga.gov.au/">Yes</a></td>
-            <td class="high"><a href="https://knowledge.dea.ga.gov.au/guides/setup/gis/web_map_service/">Yes</a></td>
-            <td class="medium"><a href="https://knowledge.dea.ga.gov.au/guides/setup/Sandbox/sandbox/">Somewhat</a></td>
-            <td class="medium"><a href="https://knowledge.dea.ga.gov.au/guides/setup/gis/web_coverage_service/">Somewhat</a></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td class="medium"><a href="/guides/setup/dea_maps/">Yes</a></td>
+            <td class="high"><a href="/guides/setup/gis/web_map_service/">Yes</a></td>
+            <td class="medium"><a href="/guides/setup/Sandbox/sandbox/">Somewhat</a></td>
+            <td class="medium"><a href="/guides/setup/gis/web_coverage_service/">Somewhat</a></td>
+            <td>-</td>
+            <td class="high"><a href="/guides/setup/gis/stac/">Yes</a></td>
+            <td>-</td>
         </tr>
         <tr>
             <td><strong>Download data</strong></td>
             <td>-</td>
-            <td class="medium"><a href="https://maps.dea.ga.gov.au/">Somewhat</a></td>
+            <td class="medium"><a href="/guides/setup/dea_maps/">Somewhat</a></td>
             <td>-</td>
-            <td class="medium"><a href="https://knowledge.dea.ga.gov.au/guides/setup/Sandbox/sandbox/">Somewhat</a></td>
-            <td class="high"><a href="https://knowledge.dea.ga.gov.au/guides/setup/gis/web_coverage_service/">Yes</a></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td class="medium"><a href="/guides/setup/Sandbox/sandbox/">Somewhat</a></td>
+            <td class="high"><a href="/guides/setup/gis/web_coverage_service/">Yes</a></td>
+            <td class="high"><a href="/guides/setup/explorer_guide/">Yes</a></td>
+            <td class="high"><a href="/guides/setup/gis/stac/">Yes</a></td>
+            <td class="high"><a href="/guides/setup/AWS/data_and_metadata/">Yes</a></td>
         </tr>
         <tr>
             <td><strong>Analyse data</strong></td>
             <td>-</td>
             <td>-</td>
             <td>-</td>
-            <td class="high"><a href="https://knowledge.dea.ga.gov.au/guides/setup/Sandbox/sandbox/">Yes</a></td>
-            <td class="high"><a href="https://knowledge.dea.ga.gov.au/guides/setup/gis/web_coverage_service/">Yes</a></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td class="high"><a href="/guides/setup/Sandbox/sandbox/">Yes</a></td>
+            <td class="high"><a href="/guides/setup/gis/web_coverage_service/">Yes</a></td>
+            <td>-</td>
+            <td class="medium"><a href="/guides/setup/gis/stac/">Somewhat</a></td>
+            <td>-</td>
         </tr>
         <tr>
             <td><strong>Explore data availability</strong></td>
             <td>-</td>
-            <td class="medium"><a href="https://maps.dea.ga.gov.au/">Somewhat</a></td>
+            <td class="medium"><a href="/guides/setup/dea_maps/">Somewhat</a></td>
             <td>-</td>
-            <td class="medium"><a href="https://knowledge.dea.ga.gov.au/guides/setup/Sandbox/sandbox/">Somewhat</a></td>
+            <td class="medium"><a href="/guides/setup/Sandbox/sandbox/">Somewhat</a></td>
             <td>-</td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td class="high"><a href="/guides/setup/explorer_guide/">Yes</a></td>
+            <td class="high"><a href="/guides/setup/gis/stac/">Yes</a></td>
+            <td>-</td>
         </tr>
    </tbody>
 </table>
