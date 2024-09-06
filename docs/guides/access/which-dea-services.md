@@ -6,7 +6,7 @@ Digital Earth Australia (DEA) provides several services and there can be multipl
 
 This is a decision matrix where along the top are listed DEA Services and down the side are listed things you may want to do.
 
-<table>
+<table class="services-decision-matrix">
     <thead>
         <tr>
             <td></td>
@@ -23,7 +23,7 @@ This is a decision matrix where along the top are listed DEA Services and down t
     <tbody>
         <tr>
             <td><strong>Understand the data</strong></td>
-            <td><strong>Yes</strong>, view <a href="https://knowledge.dea.ga.gov.au/">product descriptions</a></td>
+            <td class="yes"><strong>Yes</strong>, view <a href="https://knowledge.dea.ga.gov.au/">product descriptions</a></td>
             <td></td>
             <td></td>
             <td></td>

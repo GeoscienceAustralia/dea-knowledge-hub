@@ -1,0 +1,11 @@
+table.services-decision-matrix {
+    td, th {
+        &.yes {
+            background-color: green;
+        }
+
+        &.somewhat {}
+
+        &.no {}
+    }
+}
