@@ -4,4 +4,99 @@ Digital Earth Australia (DEA) provides several services and there can be multipl
 
 ## Which services to use?
 
+This is a decision matrix where along the top are listed DEA Services and down the side are listed things you may want to do.
 
+<table>
+    <thead>
+        <tr>
+            <td></td>
+            <td><strong>DEA Knowledge Hub</strong></td>
+            <td><strong>DEA Maps</strong></td>
+            <td><strong>DEA WMS</strong></td>
+            <td><strong>DEA Sandbox</strong></td>
+            <td><strong>DEA WCS</strong></td>
+            <td><strong>DEA Explorer</strong></td>
+            <td><strong>STAC</strong></td>
+            <td><strong>AWS</strong></td>
+        </tr>
+   </thead>
+    <tbody>
+        <tr>
+            <td><strong>Purpose</strong></td>
+            <td>Data descriptions</td>
+            <td>Data viewer</td>
+            <td>Data viewer</td>
+            <td>Data analysis</td>
+            <td>Data analysis <br></td>
+            <td>Data explorer</td>
+            <td>Data explorer and analysis</td>
+            <td>Data storage</td>
+        </tr>
+        <tr>
+            <td><strong>Understand the data</strong></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><strong>View large data volumes</strong></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><strong>Download data</strong></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><strong>Analyse data</strong></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><strong>Explore data availability</strong></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><strong>Barrier to entry</strong></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+   </tbody>
+</table>
