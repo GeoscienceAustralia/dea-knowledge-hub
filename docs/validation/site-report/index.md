@@ -1,6 +1,6 @@
-# Daily reports
+# Site reports
 
-Here are all the daily validation reports to date.
+Here are all the site validation reports to date.
 
 :::{tableofcontents}
 :titlesonly:
