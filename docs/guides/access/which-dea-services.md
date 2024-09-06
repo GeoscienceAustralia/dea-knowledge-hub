@@ -23,7 +23,7 @@ This is a decision matrix where along the top are listed DEA Services and down t
     <tbody>
         <tr>
             <td><strong>Understand the data</strong></td>
-            <td></td>
+            <td><strong>Yes</strong>, view <a href="https://knowledge.dea.ga.gov.au/">product descriptions</a></td>
             <td></td>
             <td></td>
             <td></td>
@@ -34,7 +34,7 @@ This is a decision matrix where along the top are listed DEA Services and down t
         </tr>
         <tr>
             <td><strong>View large data volumes</strong></td>
-            <td></td>
+            <td>-</td>
             <td></td>
             <td></td>
             <td></td>
@@ -45,7 +45,7 @@ This is a decision matrix where along the top are listed DEA Services and down t
         </tr>
         <tr>
             <td><strong>Download data</strong></td>
-            <td></td>
+            <td>-</td>
             <td></td>
             <td></td>
             <td></td>
@@ -56,7 +56,7 @@ This is a decision matrix where along the top are listed DEA Services and down t
         </tr>
         <tr>
             <td><strong>Analyse data</strong></td>
-            <td></td>
+            <td>-</td>
             <td></td>
             <td></td>
             <td></td>
@@ -67,7 +67,7 @@ This is a decision matrix where along the top are listed DEA Services and down t
         </tr>
         <tr>
             <td><strong>Explore data availability</strong></td>
-            <td></td>
+            <td>-</td>
             <td></td>
             <td></td>
             <td></td>
@@ -78,7 +78,7 @@ This is a decision matrix where along the top are listed DEA Services and down t
         </tr>
         <tr>
             <td><strong>Barrier to entry</strong></td>
-            <td></td>
+            <td>-</td>
             <td></td>
             <td></td>
             <td></td>
