@@ -6,10 +6,12 @@ table.colour-coded-table {
 
     th, td {
         &.high {
-            background-color: green;
+            background-color: #b7e1cd;
         }
 
-        &.medium {}
+        &.medium {
+            background-color: #fce8b2;
+        }
 
         &.low {}
     }
