@@ -23,11 +23,11 @@ This is a decision matrix where along the top are listed DEA Services and down t
     <tbody>
         <tr>
             <td><strong>Understand the data</strong></td>
-            <td class="yes"><strong>Yes</strong>, view <a href="https://knowledge.dea.ga.gov.au/">product descriptions</a></td>
+            <td class="yes"><a href="https://knowledge.dea.ga.gov.au/">Yes</a></td>
             <td class="medium"><a href="https://maps.dea.ga.gov.au/">Somewhat</a></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td class="medium"><a href="https://knowledge.dea.ga.gov.au/guides/setup/gis/web_map_service/">Somewhat</a></td>
+            <td class="medium"><a href="https://knowledge.dea.ga.gov.au/guides/setup/Sandbox/sandbox/">Somewhat</a></td>
+            <td class="medium"><a href="https://knowledge.dea.ga.gov.au/guides/setup/gis/web_coverage_service/">Somewhat</a></td>
             <td></td>
             <td></td>
             <td></td>
@@ -35,10 +35,10 @@ This is a decision matrix where along the top are listed DEA Services and down t
         <tr>
             <td><strong>View large data volumes</strong></td>
             <td>-</td>
-            <td class="medium"><strong>Yes</strong>, a good <a href="https://maps.dea.ga.gov.au/">data viewer</a></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td class="medium"><a href="https://maps.dea.ga.gov.au/">Yes</a></td>
+            <td class="high"><a href="https://knowledge.dea.ga.gov.au/guides/setup/gis/web_map_service/">Yes</a></td>
+            <td class="medium"><a href="https://knowledge.dea.ga.gov.au/guides/setup/Sandbox/sandbox/">Somewhat</a></td>
+            <td class="medium"><a href="https://knowledge.dea.ga.gov.au/guides/setup/gis/web_coverage_service/">Somewhat</a></td>
             <td></td>
             <td></td>
             <td></td>
@@ -47,9 +47,9 @@ This is a decision matrix where along the top are listed DEA Services and down t
             <td><strong>Download data</strong></td>
             <td>-</td>
             <td class="medium"><a href="https://maps.dea.ga.gov.au/">Somewhat</a></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>-</td>
+            <td class="medium"><a href="https://knowledge.dea.ga.gov.au/guides/setup/Sandbox/sandbox/">Somewhat</a></td>
+            <td class="high"><a href="https://knowledge.dea.ga.gov.au/guides/setup/gis/web_coverage_service/">Yes</a></td>
             <td></td>
             <td></td>
             <td></td>
@@ -58,9 +58,9 @@ This is a decision matrix where along the top are listed DEA Services and down t
             <td><strong>Analyse data</strong></td>
             <td>-</td>
             <td>-</td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>-</td>
+            <td class="high"><a href="https://knowledge.dea.ga.gov.au/guides/setup/Sandbox/sandbox/">Yes</a></td>
+            <td class="high"><a href="https://knowledge.dea.ga.gov.au/guides/setup/gis/web_coverage_service/">Yes</a></td>
             <td></td>
             <td></td>
             <td></td>
@@ -69,9 +69,9 @@ This is a decision matrix where along the top are listed DEA Services and down t
             <td><strong>Explore data availability</strong></td>
             <td>-</td>
             <td class="medium"><a href="https://maps.dea.ga.gov.au/">Somewhat</a></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>-</td>
+            <td class="medium"><a href="https://knowledge.dea.ga.gov.au/guides/setup/Sandbox/sandbox/">Somewhat</a></td>
+            <td>-</td>
             <td></td>
             <td></td>
             <td></td>
