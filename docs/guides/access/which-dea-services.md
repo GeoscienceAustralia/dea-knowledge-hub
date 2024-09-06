@@ -22,17 +22,6 @@ This is a decision matrix where along the top are listed DEA Services and down t
    </thead>
     <tbody>
         <tr>
-            <td><strong>Purpose</strong></td>
-            <td>Data descriptions</td>
-            <td>Data viewer</td>
-            <td>Data viewer</td>
-            <td>Data analysis</td>
-            <td>Data analysis <br></td>
-            <td>Data explorer</td>
-            <td>Data explorer and analysis</td>
-            <td>Data storage</td>
-        </tr>
-        <tr>
             <td><strong>Understand the data</strong></td>
             <td></td>
             <td></td>
