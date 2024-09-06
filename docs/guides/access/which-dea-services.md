@@ -76,16 +76,5 @@ This is a decision matrix where along the top are listed DEA Services and down t
             <td></td>
             <td></td>
         </tr>
-        <tr>
-            <td><strong>Barrier to entry</strong></td>
-            <td>-</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
    </tbody>
 </table>
