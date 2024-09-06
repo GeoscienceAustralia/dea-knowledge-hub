@@ -6,7 +6,7 @@ Digital Earth Australia (DEA) provides several services and there can be multipl
 
 This is a decision matrix where along the top are listed DEA Services and down the side are listed things you may want to do.
 
-<table class="services-decision-matrix">
+<table class="colour-coded-table">
     <thead>
         <tr>
             <td></td>
@@ -23,32 +23,32 @@ This is a decision matrix where along the top are listed DEA Services and down t
     <tbody>
         <tr>
             <td><strong>Understand the data</strong></td>
-            <td class="yes"><a href="/">Yes</a></td>
-            <td class="medium"><a href="/guides/setup/dea_maps/">Somewhat</a></td>
-            <td class="medium"><a href="/guides/setup/gis/web_map_service/">Somewhat</a></td>
-            <td class="medium"><a href="/guides/setup/Sandbox/sandbox/">Somewhat</a></td>
-            <td class="medium"><a href="/guides/setup/gis/web_coverage_service/">Somewhat</a></td>
-            <td class="medium"><a href="/guides/setup/explorer_guide/">Somewhat</a></td>
-            <td class="medium"><a href="/guides/setup/gis/stac/">Somewhat</a></td>
-            <td class="medium"><a href="/guides/setup/AWS/data_and_metadata/">Somewhat</a></td>
+            <td class="high"><a href="/">Yes</a></td>
+            <td class="medium">Somewhat</td>
+            <td class="medium">Somewhat</td>
+            <td class="medium">Somewhat</td>
+            <td class="medium">Somewhat</td>
+            <td class="medium">Somewhat</td>
+            <td class="medium">Somewhat</td>
+            <td class="medium">Somewhat</td>
         </tr>
         <tr>
             <td><strong>View large data volumes</strong></td>
-            <td class="low">-</td>
+            <td class="low">No</td>
             <td class="medium"><a href="/guides/setup/dea_maps/">Yes</a></td>
             <td class="high"><a href="/guides/setup/gis/web_map_service/">Yes</a></td>
-            <td class="medium"><a href="/guides/setup/Sandbox/sandbox/">Somewhat</a></td>
-            <td class="medium"><a href="/guides/setup/gis/web_coverage_service/">Somewhat</a></td>
-            <td class="low">-</td>
+            <td class="medium">Somewhat</td>
+            <td class="medium">Somewhat</td>
+            <td class="low">No</td>
             <td class="high"><a href="/guides/setup/gis/stac/">Yes</a></td>
-            <td class="low">-</td>
+            <td class="low">No</td>
         </tr>
         <tr>
             <td><strong>Download data</strong></td>
-            <td class="low">-</td>
-            <td class="medium"><a href="/guides/setup/dea_maps/">Somewhat</a></td>
-            <td class="low">-</td>
-            <td class="medium"><a href="/guides/setup/Sandbox/sandbox/">Somewhat</a></td>
+            <td class="low">No</td>
+            <td class="medium">Somewhat</td>
+            <td class="low">No</td>
+            <td class="medium">Somewhat</td>
             <td class="high"><a href="/guides/setup/gis/web_coverage_service/">Yes</a></td>
             <td class="high"><a href="/guides/setup/explorer_guide/">Yes</a></td>
             <td class="high"><a href="/guides/setup/gis/stac/">Yes</a></td>
@@ -56,25 +56,25 @@ This is a decision matrix where along the top are listed DEA Services and down t
         </tr>
         <tr>
             <td><strong>Analyse data</strong></td>
-            <td class="low">-</td>
-            <td class="low">-</td>
-            <td class="low">-</td>
+            <td class="low">No</td>
+            <td class="low">No</td>
+            <td class="low">No</td>
             <td class="high"><a href="/guides/setup/Sandbox/sandbox/">Yes</a></td>
             <td class="high"><a href="/guides/setup/gis/web_coverage_service/">Yes</a></td>
-            <td class="low">-</td>
-            <td class="medium"><a href="/guides/setup/gis/stac/">Somewhat</a></td>
-            <td class="low">-</td>
+            <td class="low">No</td>
+            <td class="medium">Somewhat</td>
+            <td class="low">No</td>
         </tr>
         <tr>
             <td><strong>Explore data availability</strong></td>
-            <td class="low">-</td>
-            <td class="medium"><a href="/guides/setup/dea_maps/">Somewhat</a></td>
-            <td class="low">-</td>
-            <td class="medium"><a href="/guides/setup/Sandbox/sandbox/">Somewhat</a></td>
-            <td class="low">-</td>
+            <td class="low">No</td>
+            <td class="medium">Somewhat</td>
+            <td class="low">No</td>
+            <td class="medium">Somewhat</td>
+            <td class="low">No</td>
             <td class="high"><a href="/guides/setup/explorer_guide/">Yes</a></td>
             <td class="high"><a href="/guides/setup/gis/stac/">Yes</a></td>
-            <td class="low">-</td>
+            <td class="low">No</td>
         </tr>
    </tbody>
 </table>
