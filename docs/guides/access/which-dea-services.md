@@ -22,6 +22,17 @@ This is a decision matrix where along the top are listed DEA Services and down t
    </thead>
     <tbody>
         <tr>
+            <td><strong>Technical difficulty</strong></td>
+            <td>Low</td>
+            <td>Low</td>
+            <td>Medium</td>
+            <td>Medium</td>
+            <td>Medium</td>
+            <td>Low</td>
+            <td>High</td>
+            <td>Medium</td>
+        </tr>
+        <tr>
             <td><strong>Understand the data</strong></td>
             <td class="high"><a href="/">Browse the DEA Knowledge Hub</a></td>
             <td class="medium">Somewhat</td>
