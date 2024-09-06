@@ -5,6 +5,8 @@ table.colour-coded-table {
     }
 
     th, td {
+        padding: 4px 8px;
+
         &.high {
             background-color: #b7e1cd;
         }
