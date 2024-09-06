@@ -1,6 +1,7 @@
 # 2024-07-03-NSW3: Transect NSW Site 3, Landsat 9 and Sentinel-2A dual overpass
 
-A Site Validation Summary Report of the surface reflectance data collected on the date of 2024-07-03-NSW3 by Geoscience&nbsp;Australia.
+This is a report of the field data collected on the 3rd of July, 2024 at the location of Transect NSW Site 3
+to validate the satellite data of the Landsat 9 and Sentinel-2A dual overpass.
 The full collection of data is contained in the [National Spectral Database](https://www.dea.ga.gov.au/products/national-spectral-database).
 Satellite data can be found on [DEA maps](https://maps.dea.ga.gov.au/).
 
@@ -32,9 +33,9 @@ The surface reflectance statistics collected on this day are grouped into bands.
 This allows the data to be used to validate Geoscience Australia's other datasets that use the same standardised bands.
 
 ```{eval-rst}
-.. container:: validation-report-download
+.. container:: 
 
-   :download:`Download as CSV <./SiteValidationResults-2024-07-03-NSW3.csv>`
+   :download:`Download results as CSV <./SiteValidationResults-2024-07-03-NSW3.csv>`
 ```
 
 :::{csv-table} Results of Field data versus Landsat 9 Satellite
@@ -49,12 +50,6 @@ This allows the data to be used to validate Geoscience Australia's other dataset
 "SWIR1","0.291","0.027","0.269","0.054"
 "SWIR2","0.213","0.031","0.19","0.064"
 :::
-
-```{eval-rst}
-.. container:: validation-report-download
-
-   :download:`Download as CSV <./SiteValidationResults-2024-07-03-NSW3.csv>`
-```
 
 :::{csv-table} Results of Field data versus Sentinel-2A Satellite
 :class: validation-report-results-table
@@ -75,7 +70,7 @@ This allows the data to be used to validate Geoscience Australia's other dataset
 
 ## Figures
 
-Click an image to view it at full size.
+The following figures provide visual representations of the data. (Click a figure to view it at full size.)
 
 :::::{grid} 1 1 2 3
 ::::{grid-item}
@@ -112,4 +107,4 @@ The line of best fit is not shown, but its parameters are given in the bottom-ri
 
 % :::{tags} validation, site_validation, mullion_validation, landsat_8_validation
 % :::
-
+    

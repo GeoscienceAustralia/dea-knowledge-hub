@@ -1,4 +1,4 @@
-Platform,Band,Sat mean,Sat rms,Field mean,Field rms
+Platform,BAND,satmean,satstd,fieldmean,fieldstd
 L8,CA,0.055,0.003,0.068,0.007
 L8,blue,0.067,0.004,0.077,0.008
 L8,green,0.092,0.004,0.103,0.008
