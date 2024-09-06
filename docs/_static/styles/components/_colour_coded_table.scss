@@ -1,0 +1,11 @@
+table.colour-coded-table {
+    td, th {
+        &.high {
+            background-color: green;
+        }
+
+        &.medium {}
+
+        &.low {}
+    }
+}
