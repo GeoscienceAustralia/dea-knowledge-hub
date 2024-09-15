@@ -23,7 +23,7 @@ Learn more about the [DEA Summary Product Grid](/guides/reference/collection_3_s
 
 ## 13 Sep 2024: Outage affecting multiple web services
 
-Multiple web services are experiencing an outage: DEA Explorer (Prod), DEA Explorer (Sandbox), DEA WCS (PROD - EKS), DEA WMS (PROD - EKS), and DEA WMTS (PROD - EKS). We are currently working on resolving the issue. See the [real-time status](https://status.dea.ga.gov.au/) of these services.
+Multiple web services are experiencing an outage: DEA Explorer (Prod), DEA WCS (PROD - EKS), DEA WMS (PROD - EKS), and DEA WMTS (PROD - EKS). We are currently working on resolving the issue. See the [real-time status](https://status.dea.ga.gov.au/) of these services.
 
 <span id="2024-09-02-expanded-extent-paused"></span>
 
