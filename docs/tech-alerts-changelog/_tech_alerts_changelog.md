@@ -21,6 +21,10 @@
 
 Learn more about the [DEA Summary Product Grid](/guides/reference/collection_3_summary_grid/).
 
+## 13 Sep 2024: Outage affecting multiple web services
+
+Multiple web services are experiencing an outage: DEA Explorer (Prod), DEA Explorer (Sandbox), DEA WCS (PROD - EKS), DEA WMS (PROD - EKS), and DEA WMTS (PROD - EKS). We are currently working on resolving the issue. See the [real-time status](https://status.dea.ga.gov.au/) of these services.
+
 <span id="2024-09-02-expanded-extent-paused"></span>
 
 ## 2 Sep 2024: Expanded extents data processing is currently paused, with data available to May 2024 <!-- NOTE Remember to remove the banner on the page: https://pr-302-preview.khpreview.dea.ga.gov.au/guides/reference/ard-expanded-processing-extent/ -->
