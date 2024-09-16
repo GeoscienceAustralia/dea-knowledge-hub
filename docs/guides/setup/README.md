@@ -83,14 +83,14 @@ DEA provides multiple services which enable you to access our data and resources
         </tr>
         <tr>
             <td><strong>Difficulty level</strong></td>
-            <td>Beginner</td>
-            <td>Beginner</td>
-            <td>Intermediate</td>
-            <td>Intermediate</td>
-            <td>Intermediate</td>
-            <td>Beginner</td>
-            <td>Advanced</td>
-            <td>Intermediate</td>
+            <td class="blank">Beginner</td>
+            <td class="blank">Beginner</td>
+            <td class="blank">Intermediate</td>
+            <td class="blank">Intermediate</td>
+            <td class="blank">Intermediate</td>
+            <td class="blank">Beginner</td>
+            <td class="blank">Advanced</td>
+            <td class="blank">Intermediate</td>
         </tr>
    </tbody>
 </table>

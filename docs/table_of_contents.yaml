@@ -156,12 +156,11 @@ entries:
     subtrees:
       - caption: Overview
         entries:
+          - file: guides/setup/README
           - file: guides/about/intro
 
       - caption: Access
         entries:
-          - file: guides/setup/README
-          - file: guides/access/which-dea-services
           - file: guides/setup/dea_maps
           - file: guides/setup/explorer_guide
           - file: guides/setup/Sandbox/sandbox

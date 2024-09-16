@@ -16,14 +16,20 @@ table.colour-coded-table {
         }
 
         &.high {
-            background-color: #b7e1cd;
+            background-color: #baffc9;
         }
 
         &.medium {
-            background-color: #fce8b2;
+            background-color: #ffffba;
         }
 
-        &.low {}
+        &.low {
+            background-color: #ffb3ba;
+        }
+
+        &.blank {
+            background-color: #bae1ff;
+        }
     }
 }
 
