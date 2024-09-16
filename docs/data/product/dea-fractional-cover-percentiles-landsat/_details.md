@@ -84,10 +84,6 @@ The DEA Landsat Collection 3 Fractional Cover Percentiles Summary products share
 * be divided into tiles of 3200 x 3200 pixels, with a pixel size of 30m^2
 * be presented in EPSG:3577
 
-### Percentiles
-
-10th, 50th and 90th Percentiles are calculated per Fractional Cover measurement - Bare Soil, Photosynthetic Vegetation, Non-Photosynthetic Vegetation. DEA Fractional Cover C3 and DEA Water Observations C3 are used as the input to these products.
-
 ### Fractional Cover Masking
 
 DEA Water Observations are used to identify clear pixels from DEA Fractional Cover to be included in percentile calculation. A Fractional Cover observation is included if:
@@ -115,11 +111,7 @@ Will be calculated from the 1st of January to the 31st of December (inclusive) f
 
 ## Lineage
 
-Nationally consistent information about fractional cover (FC) dynamics is essential to addressing a range of natural resource challenges. These include land management practices, air quality, soil erosion, rangeland condition and soil carbon dynamics.
-
-The fractional cover algorithm was developed by the Joint Remote Sensing Research Program (JRSRP) and is described in Scarth et al. (2010). While originally calibrated in Queensland, a large collaborative effort between The Department of Agriculture - ABARES and State and Territory governments to collect additional calibration data has enabled the calibration to extend to the entire Australian continent.
-
-FC was made possible by new scientific and technical capabilities, the collaborative framework established by the Terrestrial Ecosystem Research Network (TERN) through the National Collaborative Research Infrastructure Strategy (NCRIS), and collaborative effort between state and Commonwealth governments.
+10th, 50th and 90th percentiles are calculated per Fractional Cover measurement - Bare Soil, Photosynthetic Vegetation, Non-Photosynthetic Vegetation. DEA Fractional Cover C3 and DEA Water Observations C3 are used as the input to these products.
 
 ## Processing steps
 
