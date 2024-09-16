@@ -29,7 +29,7 @@ This product provides valuable discrimination for characterising:
 
 The Tasseled Cap (Kauth&ndash;Thomas) transform translates the six spectral bands of Landsat into a three indexes describing greenness, wetness and brightness.  These indexes can be used to help understand complex ecosystems, such as wetlands or groundwater dependent ecosystems. The Tasseled Cap Percentiles capture how the greenness, wetness and brightness of the landscape behaves over time. 
 
-The percentiles are well suited to characterising wetlands, salt flats/salt lakes and coastal ecosystems. However, care should be applied when analysing these indexes, as soil colour and fire scars can cause misleading results. In areas of high relief caused by cliffs or steep terrain, terrain shadows can cause false positives.
+The percentiles are well suited to characterising wetlands, salt flats/salt lakes and coastal ecosystems. However, care should be applied when analysing these indexes, as soil colour and fire scars can cause misleading results. In areas of high relief caused by cliffs or steep terrain, terrain shadows can cause erroneous results.
 
 The 10th, 50th and 90th percentiles of the Tasseled Cap are intended to capture the extreme (10th and 90th percentile) values and long-term average (50th percentile) values of each index.  Percentiles are used in preference to minimum, maximum and mean, as the min/max/mean statistical measures are more sensitive to undetected cloud/cloud shadow, and can be misleading for non-normally distributed data.
 
