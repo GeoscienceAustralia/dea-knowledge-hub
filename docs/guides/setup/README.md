@@ -118,7 +118,7 @@ The main software used for DEA data can easily be installed, especially if you a
 
 ## Getting help
 
-You can ask questions (and view previously asked questions) on the [Open Data Cube Stack Exchange](https://gis.stackexchange.com/questions/tagged/open-data-cube) page. When asking a question, please tag it with `open-data-cube`.
+To ask a question, and to view answers to previous questions, visit the [Open Data Cube Stack Exchange](https://gis.stackexchange.com/questions/tagged/open-data-cube). When asking a question, please use the `open-data-cube` tag.
 
-You can also join our [Open Data Cube Discord chat](https://discord.com/invite/4hhBQVas5U) for help setting up or using Digital Earth Australia.
+You can also use the [Open Data Cube Discord chat](https://discord.com/invite/4hhBQVas5U).
 

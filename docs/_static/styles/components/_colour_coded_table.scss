@@ -11,7 +11,7 @@ table.colour-coded-table {
     th, td {
         padding: 4px 8px;
 
-        &, &:hover {
+        a, a:hover {
             color: var(--pst-color-text-base, #082e41) !important;
         }
 
