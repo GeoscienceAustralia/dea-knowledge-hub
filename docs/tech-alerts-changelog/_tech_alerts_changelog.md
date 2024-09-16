@@ -21,7 +21,7 @@
 
 Learn more about the [DEA Summary Product Grid](/guides/reference/collection_3_summary_grid/).
 
-## 13 Sep 2024: Outage affecting multiple web services
+## 13 Sep 2024: Outage affecting multiple web services (Resolved)
 
 Multiple web services are experiencing an outage: DEA Explorer (Prod), DEA WCS (PROD - EKS), DEA WMS (PROD - EKS), and DEA WMTS (PROD - EKS). We are currently working on resolving the issue. See the [real-time status](https://status.dea.ga.gov.au/) of these services.
 
@@ -33,7 +33,7 @@ This year, we [expanded the processing extents](/guides/reference/ard-expanded-p
 
 Unfortunately, due to unanticipated issues with an external network connection, we have needed to pause the back-processing of this expanded extent data since May 2024. You may have noticed this issue, for example, if you attempted to access ARD from the Heard Island and McDonald Islands and found that there are no images more recent than May 2024.
 
-## 16 Aug 2024: Hotspots MODIS SRSS missing data (Fixed)
+## 16 Aug 2024: Hotspots MODIS SRSS missing data (Resolved)
 
 On 21 Aug, we detected that the DEA Hotspots MODIS SRSS sub-product was missing `*hotspots.txt` and `*metadata.txt` files in its daily data folders since 16 Aug. This was caused by a software bug. After detecting the issue, we fixed the bug on the same day and uploaded all the missing data files.
 
