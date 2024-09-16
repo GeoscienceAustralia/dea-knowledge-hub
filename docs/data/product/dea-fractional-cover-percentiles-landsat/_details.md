@@ -4,12 +4,15 @@ The Fractional Cover (Landsat) product, developed by the Joint Remote Sensing Re
 * green vegetation
 * non-green vegetation (including deciduous trees during autumn and dry grass)
 * bare areas
+for every 30m x 30m ground footprint. It provides insight into how areas of dry vegetation and/or bare soil and green vegetation are changing over time.
 
-for every 30m x 30m ground footprint.
+Fractional Cover Percentiles (Landsat) estimate the 10th, 50th, and 90th percentiles independently for the green vegetation, non-green vegetation, and bare soil fractions observed in each calendar year.
 
-It provides insight into how areas of dry vegetation and/or bare soil and green vegetation are changing over time.
+Percentiles provide an indicator of where an observation sits, relative to the rest of the observations for the pixel. For example, the 90th percentile is the value below which 90% of the observations fall. Because the percentiles are estimated independently for the three cover types, the 10th percentiles represent the low end of the measurements for the three covers, which may have been observed at different times of a year. Similarly, the 90th percentiles represent the high end of the measurements for the three covers, which may have occurred at different times.
 
-It is important to be able to analyse and interpret fractional cover. For example, the 90th percentile of bare soil for a particular year will identify areas that have experienced a high portion of bare soil during that year.
+The 10th, 50th, and 90th percentiles represent low, median and high values in a distribution that are robust against outliers. These values can be used separately or combined to understand the land cover dynamics. For example, the three percentiles for the green cover fraction can serve as proxies for the minimum, typical and maximum green cover for a given year. Difference between the 10th and 90th percentiles provides an estimate of the magnitude of change within a year. A large range of values may be observed in the agricultural land for all cover types while high green cover and a small difference between 10th and 90th percentiles are expected for forest cover.
+
+A representative view of the landscape in a year can be obtained by combining the 50th percentiles, or the median values, for the three cover types.
 
 ## What this product offers
 
