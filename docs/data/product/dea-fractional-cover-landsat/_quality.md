@@ -8,7 +8,7 @@ Based on the comparison with this independent field data the FC product has an o
 * non-green RMSE: 17.1%
 * bare RMSE: 14.6%
 
-The effect of soil moisture may impact the accuracy of the FC product, and the similarity between some bare soil endmembers and non-photosynthetic vegetation endmembers can lead to model instability.  Soil types/colours that were not included in the model training data may also be error prone. Pixels that show poor model stability are flagged in the model error band as a value of 2, and can be omitted from further analysis if necessary.
+The effect of soil moisture may impact the accuracy of the FC product, and the similarity between some bare soil endmembers and non-photosynthetic vegetation endmembers can lead to model instability.  Soil types/colours that were not included in the model training data may introduce additional errors. Pixels that show poor model stability are flagged in the model error band as a value of 2, and can be omitted from further analysis if necessary.
 
 FC products have no water masking applied, so erroneous values for green vegetation over the water may appear. These should be ignored and can be masked out by applying the Water Observations (WO) layer.
 
