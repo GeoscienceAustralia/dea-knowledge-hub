@@ -1,6 +1,6 @@
 # Getting started
 
-To access DEA data and resources, use one of our DEA Services. Or, to use DEA Products, you can get started quickly by using pre-built instances and examples.
+To access DEA data and resources, use one of our DEA Services. Or, to use DEA Products, you can get started quickly by using pre-built instances and examples and installing some software tools.
 
 :::{contents} In this guide
 :local:
@@ -95,23 +95,30 @@ DEA provides multiple services which enable you to access our data and resources
    </tbody>
 </table>
 
-## Instances
+## Pre-built instances
 
-There are two available pre-built instances: the [Digital Earth Australia Sandbox](/guides/setup/Sandbox/sandbox/) and the [National Computational Infrastructure](/guides/setup/NCI/README/) (NCI). The Sandbox is suitable for all users, containing a representative sample of available data. The NCI contains all available data, but users must apply and be approved to gain an account.
+You can access either of the two pre-built instances:
+
+* [Digital Earth Australia Sandbox](/guides/setup/Sandbox/sandbox/) &mdash; Suitable for all users, containing a representative sample of available data.
+* [National Computational Infrastructure (NCI)](/guides/setup/NCI/README/) &mdash; Contains all available data, but users must apply for approval to be granted an account.
 
 ## Examples
 
-The examples are provided as Jupyter Notebooks, which can be run in either instance. Jupyter Notebooks contain code and explanations side-by-side so that you can understand the steps involved in an analysis. Our [Jupyter Notebooks](/guides/setup/jupyter/) page provides a quick introduction to using Jupyter Notebooks. For a more detailed introduction, visit the [Jupyter Notebook Documentation](https://jupyter-notebook.readthedocs.io/en/stable/notebook.html).
+Examples of using code to work with DEA data are provided as interactive Jupyter Notebooks. These can be run in either instance: DEA Sandbox or NCI. 
 
-The examples contained in each instance are the same as those covered in the [User Guide](/notebooks/Beginners_guide/README/).
+* [Learn how to use Jupyter Notebooks](/guides/setup/jupyter/)
+* [View the DEA Notebooks](/dea-notebooks/)
 
-## Software
+## Installing software
 
-The primary software for DEA is the [Open Data Cube](https://www.opendatacube.org/) (ODC), which can be easily integrated with other Python packages.
+The main software used for DEA data can easily be installed, especially if you are familiar with Python.
+
+* [Open Data Cube (ODC)](https://www.opendatacube.org/)
+* [DEA Tools](/notebooks/Tools/)
 
 ## Getting help
 
-You can ask questions (and view previously asked questions) on the [Open Data Cube Stack Exchange](https://gis.stackexchange.com/questions/tagged/open-data-cube) page. When asking a question, tag it with `open-data-cube`.
+You can ask questions (and view previously asked questions) on the [Open Data Cube Stack Exchange](https://gis.stackexchange.com/questions/tagged/open-data-cube) page. When asking a question, please tag it with `open-data-cube`.
 
 You can also join our [Open Data Cube Discord chat](https://discord.com/invite/4hhBQVas5U) for help setting up or using Digital Earth Australia.
 
