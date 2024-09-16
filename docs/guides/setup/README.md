@@ -9,9 +9,7 @@ This section focusses on getting started with Digital Earth Australia (DEA) thro
 
 ## Which DEA Services to use?
 
-Digital Earth Australia (DEA) provides several services and there can be multiple ways to access our data and information. Sometimes, you may be wondering which service to use. Therefore, we've created this matrix to help you decide.
-
-Here is a decision matrix where along the top are listed DEA Services and down the side are listed things you may want to do.
+DEA provides several services and there can be multiple ways to access them. That's why we have created this matrix to help you decide.
 
 <table class="colour-coded-table">
     <thead>
