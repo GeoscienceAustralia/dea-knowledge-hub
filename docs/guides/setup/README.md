@@ -1,6 +1,6 @@
 # Getting started
 
-This section focusses on getting started with Digital Earth Australia (DEA) through pre-built instances. These instances come with examples that teach you how to use DEA, as well as data and software you can use for your own work. The primary software for DEA is the [Open Data Cube](https://www.opendatacube.org/) (ODC), which can be easily integrated with other Python packages.
+To access DEA data and resources, use one of our DEA Services. Or, to use DEA Products, you can get started quickly by using pre-built instances and examples.
 
 :::{contents} In this guide
 :local:
@@ -9,7 +9,7 @@ This section focusses on getting started with Digital Earth Australia (DEA) thro
 
 ## Which DEA Services to use?
 
-DEA provides several services and there can be multiple ways to access them. That's why we have created this matrix to help you decide.
+DEA provides multiple services which enable you to access our data and resources. We have created this matrix to help you decide which service to use.
 
 <table class="colour-coded-table">
     <thead>
@@ -28,7 +28,7 @@ DEA provides several services and there can be multiple ways to access them. Tha
     <tbody>
         <tr>
             <td><strong>Understand the data</strong></td>
-            <td class="high"><a href="/">Browse the DEA Knowledge Hub</a></td>
+            <td class="high"><a href="/">Browse the Knowledge Hub</a></td>
             <td class="medium">Partial</td>
             <td class="medium">Partial</td>
             <td class="medium">Partial</td>
@@ -45,7 +45,7 @@ DEA provides several services and there can be multiple ways to access them. Tha
             <td class="medium">Partial</td>
             <td class="high"><a href="/guides/setup/gis/stac/">View data using STAC</a></td>
             <td class="low">No</td>
-            <td class="high"><a href="/guides/setup/gis/web_map_service/">View data on the WMS</a></td>
+            <td class="high"><a href="/guides/setup/gis/web_map_service/">View on the WMS</a></td>
             <td class="medium">Partial</td>
         </tr>
         <tr>
@@ -68,7 +68,7 @@ DEA provides several services and there can be multiple ways to access them. Tha
             <td class="medium">Partial</td>
             <td class="low">No</td>
             <td class="low">No</td>
-            <td class="high"><a href="/guides/setup/gis/web_coverage_service/">Analyse using the WCS</a></td>
+            <td class="high"><a href="/guides/setup/gis/web_coverage_service/">Analyse using WCS</a></td>
         </tr>
         <tr>
             <td><strong>Explore data availability</strong></td>
@@ -76,7 +76,7 @@ DEA provides several services and there can be multiple ways to access them. Tha
             <td class="medium">Partial</td>
             <td class="high"><a href="/guides/setup/explorer_guide/">Explore availability in the Explorer</a></td>
             <td class="medium">Partial</td>
-            <td class="high"><a href="/guides/setup/gis/stac/">Query availability using STAC</a></td>
+            <td class="high"><a href="/guides/setup/gis/stac/">Query data availability</a></td>
             <td class="low">No</td>
             <td class="low">No</td>
             <td class="low">No</td>
@@ -104,6 +104,10 @@ There are two available pre-built instances: the [Digital Earth Australia Sandbo
 The examples are provided as Jupyter Notebooks, which can be run in either instance. Jupyter Notebooks contain code and explanations side-by-side so that you can understand the steps involved in an analysis. Our [Jupyter Notebooks](/guides/setup/jupyter/) page provides a quick introduction to using Jupyter Notebooks. For a more detailed introduction, visit the [Jupyter Notebook Documentation](https://jupyter-notebook.readthedocs.io/en/stable/notebook.html).
 
 The examples contained in each instance are the same as those covered in the [User Guide](/notebooks/Beginners_guide/README/).
+
+## Software
+
+The primary software for DEA is the [Open Data Cube](https://www.opendatacube.org/) (ODC), which can be easily integrated with other Python packages.
 
 ## Getting help
 
