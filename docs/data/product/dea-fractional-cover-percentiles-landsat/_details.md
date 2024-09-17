@@ -96,7 +96,7 @@ For insufficient observations, these are pixels that have been masked out of the
 DEA Water Observations are used to identify clear pixels from DEA Fractional Cover to be included in percentile calculation. A Fractional Cover observation is included if:
 * It has corresponding DEA Water Observation information. If an observation within DEA Fractional Cover has no corresponding Water Observation, it is discarded. This can happen for ARD scenes that have a geometric quality assessment of greater than absolute one (e.g. gqa > |1|).
 * The DEA Water Observation has the following characteristics:
-  * It is contiguous
+  * It is contiguous (data for all bands is present and valid)
   * It is not saturated
   * It is not cloud
   * It is not cloud shadow
