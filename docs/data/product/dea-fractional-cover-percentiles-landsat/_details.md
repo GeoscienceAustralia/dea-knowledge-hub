@@ -18,7 +18,7 @@ A representative view of the landscape in a year can be obtained by combining th
 
 This product is designed to make it easier to analyse and interpret fractional cover. It uses the Fractional Cover (Landsat) product and calculates the statistical summaries (10th, 50th and 90th percentile) of fractional cover per epoch (annual).
 
-It includes cloud and shadow buffering with a size of 6 pixels. This buffering is applied to Landsat 5, Landsat 7, Landsat 8, and Landsat 9 data from 2022 onwards.
+It includes cloud and cloud shadow buffering with a size of 6 pixels. This buffering is applied to Landsat 5, Landsat 7, Landsat 8, and Landsat 9 data.
 
 % ## Data description
 
@@ -61,11 +61,7 @@ The values for this product are as follows:
 
 Due to model uncertainties and the limitations of the training data, some areas may show cover values in excess of 100%. These areas can either be excluded or treated as equivalent to 100%
 
-For the unmixing error (UE) band, the values are scaled between 0 and 127.  High unmixing error values represent areas of high model uncertainty (areas of water, cloud, cloud shadow or soil types/colours that were not included in the model training data).
-
 The DEA Landsat Collection 3 Fractional Cover Percentiles Summary products share the following attributes:
-
-### Each product will share the following name:
 
 **Family name** : DEA Fractional Cover Percentiles
 
@@ -82,6 +78,14 @@ The DEA Landsat Collection 3 Fractional Cover Percentiles Summary products share
 | `npv_pc_90` | uint8     | nodata 255    | non-photosynthetic veg - 90th percentile              |
 | `qa`        | uint8     | nodata 255    | Quality Assurance enumeration - see below for details |
 
+### Quality Assurance:
+This layer provides a breakdown of each FCP pixel between,
+* sufficient observations
+* insufficient observations dry
+* insufficient observations wet
+
+For insufficient observations, these are pixels that have been masked out of the percentiles results e.g. NODATA, and provides an explanation as to why they have been masked out.
+
 ### Each product’s datasets will:
 
 * be divided into tiles of 3200 x 3200 pixels, with a pixel size of 30m^2
@@ -90,7 +94,7 @@ The DEA Landsat Collection 3 Fractional Cover Percentiles Summary products share
 ### Fractional Cover Masking
 
 DEA Water Observations are used to identify clear pixels from DEA Fractional Cover to be included in percentile calculation. A Fractional Cover observation is included if:
-* It has corresponding DEA Water Observation information. If an observation within DEA Fractional Cover has no corresponding Water Observation, it is discarded. This can happen for ARD scenes that do not meet the GQA threshold for Water Observation generation.
+* It has corresponding DEA Water Observation information. If an observation within DEA Fractional Cover has no corresponding Water Observation, it is discarded. This can happen for ARD scenes that have a geometric quality assessment of greater than absolute one (e.g. gqa > |1|).
 * The DEA Water Observation has the following characteristics:
   * It is contiguous
   * It is not saturated
@@ -118,13 +122,12 @@ Will be calculated from the 1st of January to the 31st of December (inclusive) f
 
 ## Processing steps
 
-Fractional Cover (FC) provides a representation of the proportions of living vegetation, dry and dying vegetation (including deciduous trees during autumn, dying grass, etc.), and bare soils across the Australian continent for any point in time in the Landsat archive since 1987. FC can potentially provide insight into areas of dry/dying vegetation and/or bare soil as well as allowing the mapping of living vegetation extent.
+The Fractional Cover Percentile odc-statistician plugin can be found in [Fractional Cover Percentiles Code Repository](https://github.com/opendatacube/odc-stats/blob/develop/odc/stats/plugins/fc_percentiles.py).
 
-Fractional cover data can be used to identify large scale patterns and trends and inform evidence based decision making and policy on topics including wind and water erosion risk, soil carbon dynamics, land management practices and rangeland condition. This information could enable policy agencies, natural and agricultural land resource managers, and scientists to monitor land conditions over large areas over long time frames.
-
-The Fractional Cover (FC) algorithm was developed by the Joint Remote Sensing Research Program and is described in described in Scarth et al. (2010). It has been implemented by Geoscience Australia for every observation from Landsat Thematic Mapper (Landsat 5), Enhanced Thematic Mapper (Landsat 7) and Operational Land Imager (Landsat 8) acquired since 1987. It is calculated from surface reflectance data.
-
-FC provides a fractional cover representation of the proportions of green or photosynthetic vegetation, non-photosynthetic vegetation, and bare surface cover across the Australian continent. The fractions are retrieved by inverting multiple linear regression estimates and using synthetic endmembers in a constrained non-negative least squares unmixing model. For further information please see Scarth et al., 2010 and Schmidt et al., 2010.
+The processing steps are:
+1. Fractional Cover and Water Observations Daily scenes are loaded for the calender year
+2. Pixels for each time step are masked out that are not clear and dry or are wet, and a cloud and cloud shadow dilation of 6 pixels is applied 
+4. Fractional cover percentiles are calculated - noting results are not filtered by an unmixing error threshold
 
 % ## Software
 
