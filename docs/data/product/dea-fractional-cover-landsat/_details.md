@@ -56,7 +56,7 @@ The bare soil, green vegetation and non-green vegetation end members used for fr
 
 For the unmixing error (UE) band, the values are scaled between 0 and 127. High unmixing error values represent areas of high model uncertainty (areas of water, cloud, cloud shadow or soil types/colours that were not included in the model training data).
 
-For Landsat 8 and 9 fractional cover processing, coefficients are applied as specified below to reduce differences between sensors, which are based on the assessment performed in the publication [Continuity of Reflectance Data between Landsat-7 ETM+ and Landsat-8 OLI, for Both Top-of-Atmosphere and Surface Reflectance: A Study in the Australian Landscape](https://www.mdpi.com/2072-4292/6/9/7952):
+Landsat 8 and 9 OLI has different relative spectral response curves to the Landsat 5 TM and Landsat 7 ETM+ sensors. To account for this a spectral band adjustment factor is applied to the Landsat 8 and 9 data to make it more similar to reflectance as measured by Landsat 7. [Continuity of Reflectance Data between Landsat-7 ETM+ and Landsat-8 OLI, for Both Top-of-Atmosphere and Surface Reflectance: A Study in the Australian Landscape](https://www.mdpi.com/2072-4292/6/9/7952):
 * "blue": [4.1, 0.97470],
 * "green": [28.9, 0.99779],
 * "red": [27.4, 1.00446],
