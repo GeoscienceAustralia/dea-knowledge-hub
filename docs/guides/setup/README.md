@@ -9,7 +9,7 @@ To access DEA data and resources, use one of our DEA Services. Or, to use DEA Pr
 
 ## Which DEA Services to use?
 
-DEA provides multiple services which enable you to access our data and resources. We have created this matrix to help you decide which service to use. (The table may scroll left-to-right.)
+DEA provides multiple services which enable you to access our data and resources. We have created this matrix to help you decide which service to use. (The table may scroll to the right.)
 
 <table class="colour-coded-table scroll-horizontally">
     <thead>
