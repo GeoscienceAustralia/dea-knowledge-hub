@@ -1,4 +1,5 @@
-% ## Accuracy
+## Accuracy
+Refer to [DEA Fractional Cover](/data/product/dea-fractional-cover-landsat/) for more information on the accuracy assessment of the daily scenes.
 
 ## Quality assurance
 
