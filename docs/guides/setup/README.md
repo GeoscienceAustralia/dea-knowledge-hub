@@ -9,9 +9,9 @@ To access DEA data and resources, use one of our DEA Services. Or, to use DEA Pr
 
 ## Which DEA Services to use?
 
-DEA provides multiple services which enable you to access our data and resources. We have created this matrix to help you decide which service to use.
+DEA provides multiple services which enable you to access our data and resources. We have created this matrix to help you decide which service to use. (The table may scroll left-to-right.)
 
-<table class="colour-coded-table">
+<table class="colour-coded-table scroll-horizontally">
     <thead>
         <tr>
             <td></td>
@@ -19,6 +19,7 @@ DEA provides multiple services which enable you to access our data and resources
             <td><strong>DEA Maps</strong></td>
             <td><strong>DEA Explorer</strong></td>
             <td><strong>DEA Sandbox</strong></td>
+            <td><strong>NCI</strong></td>
             <td><strong>STAC</strong></td>
             <td><strong>AWS</strong></td>
             <td><strong>DEA WMS</strong></td>
@@ -28,7 +29,8 @@ DEA provides multiple services which enable you to access our data and resources
     <tbody>
         <tr>
             <td><strong>Understand the data</strong></td>
-            <td class="high"><a href="/">Browse the Knowledge Hub</a></td>
+            <td class="high"><a href="/data/">Browse the Data Products</a></td>
+            <td class="medium">Partial</td>
             <td class="medium">Partial</td>
             <td class="medium">Partial</td>
             <td class="medium">Partial</td>
@@ -43,6 +45,7 @@ DEA provides multiple services which enable you to access our data and resources
             <td class="high"><a href="/guides/setup/dea_maps/">View data on a map</a></td>
             <td class="low">No</td>
             <td class="medium">Partial</td>
+            <td class="medium">Partial</td>
             <td class="high"><a href="/guides/setup/gis/stac/">View data using STAC</a></td>
             <td class="low">No</td>
             <td class="high"><a href="/guides/setup/gis/web_map_service/">View on the WMS</a></td>
@@ -53,6 +56,7 @@ DEA provides multiple services which enable you to access our data and resources
             <td class="low">No</td>
             <td class="medium">Partial</td>
             <td class="high"><a href="/guides/setup/explorer_guide/">Download via Explorer</a></td>
+            <td class="medium">Partial</td>
             <td class="medium">Partial</td>
             <td class="high"><a href="/guides/setup/gis/stac/">Download via STAC</a></td>
             <td class="high"><a href="/guides/setup/AWS/data_and_metadata/">Download via AWS</a></td>
@@ -65,6 +69,7 @@ DEA provides multiple services which enable you to access our data and resources
             <td class="low">No</td>
             <td class="low">No</td>
             <td class="high"><a href="/guides/setup/Sandbox/sandbox/">Analyse in the Sandbox</a></td>
+            <td class="high"><a href="/guides/setup/NCI/README/">Analyse in the NCI</a></td>
             <td class="medium">Partial</td>
             <td class="low">No</td>
             <td class="low">No</td>
@@ -76,6 +81,7 @@ DEA provides multiple services which enable you to access our data and resources
             <td class="medium">Partial</td>
             <td class="high"><a href="/guides/setup/explorer_guide/">Explore availability in the Explorer</a></td>
             <td class="medium">Partial</td>
+            <td class="medium">Partial</td>
             <td class="high"><a href="/guides/setup/gis/stac/">Query data availability</a></td>
             <td class="low">No</td>
             <td class="low">No</td>
@@ -85,6 +91,7 @@ DEA provides multiple services which enable you to access our data and resources
             <td><strong>Difficulty level</strong></td>
             <td class="blank">Beginner</td>
             <td class="blank">Beginner</td>
+            <td class="blank">Intermediate</td>
             <td class="blank">Intermediate</td>
             <td class="blank">Intermediate</td>
             <td class="blank">Intermediate</td>
