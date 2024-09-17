@@ -32,17 +32,13 @@ Fractional Cover (FC) provides information about the the proportions of green ve
 
 The FC algorithm was developed by the Joint Remote Sensing Research Program (JRSRP) and is described in Scarth et al. (2010). It has been implemented by Geoscience Australia for every observation from Landsat Thematic Mapper (Landsat 5), Enhanced Thematic Mapper (Landsat 7) and Operational Land Imager (Landsat 8 and 9) acquired since 1986. It is calculated from terrain corrected surface reflectance (DEA Surface Reflectance).
 
-FC provides a 30m scale fractional cover representation of the proportions of green vegetation, non-green vegetation, and bare surface cover across the Australian continent. The fractions are retrieved by inverting multiple linear regression estimates and using synthetic endmembers in a constrained non-negative least squares unmixing model.
-
-For more information, see Scarth et al. (2010) and Schmidt et al. (2010), and a brief description of the FC algorithm on the [TERN website](https://portal.tern.org.au/metadata/22026).
-
 ### Data layers
 
 The product consists of four data layers:
-* The fractional cover of green vegetation (PV) 
-* The fractional cover of non-green vegetation (NPV)
-* The fractional cover of bare soil (BS)
-* The fractional cover unmixing error (UE)
+* The fractional cover of green vegetation (PV): Fraction of green cover including green groundcover and green leaf material over all strata, within the Landsat pixel, as percentages
+* The fractional cover of non-green vegetation (NPV): Fraction of non green cover including litter, dead leaf and branches over all strata, within the Landsat pixel, as percentages
+* The fractional cover of bare soil (BS): Fraction of bare ground including rock, bare and disturbed soil, within the Landsat pixel as percentages
+* The fractional cover unmixing error (UE): Eclidean Norm of the Residual Vector
 
 The values for this product are scaled as follows:  
 * For the fractional cover bands (PV, NPV, BS)  
@@ -50,23 +46,29 @@ The values for this product are scaled as follows:
 
 Due to model uncertainties and the limitations of the training data, some areas may show cover values in excess of 100%.  These areas can either be excluded or treated as equivalent to 100%
 
-For the unmixing error (UE) band, the values are scaled between 0 and 127. High unmixing error values represent areas of high model uncertainty (areas of water, cloud, cloud shadow or soil types/colours that were not included in the model training data).
-
 ### Processing steps
 
-Fractional Cover (FC) provides a representation of the proportions of living vegetation, dry and dying vegetation (including deciduous trees during autumn, dying grass, etc.), and bare soils across the Australian continent for any point in time in the Landsat archive since 1987. FC can potentially provide insight into areas of dry/dying vegetation and/or bare soil as well as allowing the mapping of living vegetation extent.
+Fractional cover is processed using the Landsat Surface Reflectance archive, and requires green, red, nir, swir1 and swir2 bands. [Fractional Cover Code Repository]([https://github.com/GeoscienceAustralia/fc/blob/93f66062df0c5110b49d4ae444d726a90619c9fd/fc/endmembers.py#L51](https://github.com/GeoscienceAustralia/fc/tree/master)) 
+ 
+The fractions are retrieved by inverting multiple linear regression estimates and using synthetic endmembers in a constrained non-negative least squares unmixing model. For more information, see Scarth et al. (2010) and Schmidt et al. (2010), and a brief description of the FC algorithm on the [TERN website](https://portal.tern.org.au/metadata/22026).
 
-Fractional cover data can be used to identify large scale patterns and trends and inform evidence based decision making and policy on topics including wind and water erosion risk, soil carbon dynamics, land management practices and rangeland condition. This information could enable policy agencies, natural and agricultural land resource managers, and scientists to monitor land conditions over large areas over long time frames.
+The bare soil, green vegetation and non-green vegetation end members used for fractional cover can be found here, and was last updated on the 9th of June 2017:  [End members](https://github.com/GeoscienceAustralia/fc/blob/93f66062df0c5110b49d4ae444d726a90619c9fd/fc/endmembers.py#L51)
 
-The Fractional Cover (FC) algorithm was developed by the Joint Remote Sensing Research Program and is described in described in Scarth et al. (2010). It has been implemented by Geoscience Australia for every observation from Landsat Thematic Mapper (Landsat 5), Enhanced Thematic Mapper (Landsat 7) and Operational Land Imager (Landsat 8) acquired since 1987. It is calculated from surface reflectance data.
+For the unmixing error (UE) band, the values are scaled between 0 and 127. High unmixing error values represent areas of high model uncertainty (areas of water, cloud, cloud shadow or soil types/colours that were not included in the model training data).
 
-FC provides a fractional cover representation of the proportions of green or photosynthetic vegetation, non-photosynthetic vegetation, and bare surface cover across the Australian continent. The fractions are retrieved by inverting multiple linear regression estimates and using synthetic endmembers in a constrained non-negative least squares unmixing model. For further information please see Scarth et al., 2010 and Schmidt et al., 2010. 
+For Landsat 8, coefficients are applied as specified below:
+* "blue": [4.1, 0.97470],
+* "green": [28.9, 0.99779],
+* "red": [27.4, 1.00446],
+* "nir": [0.4, 0.98906],
+* "swir1": [25.6, 0.99467],
+* "swir2": [-32.7, 1.02551],
 
 % ## Software
 
 ## Lineage
 
-The fractional cover algorithm was developed by the Joint Remote Sensing Research Program (JRSRP) and is described in Scarth et al. (2010). While originally calibrated in Queensland, a large collaborative effort between The Department of Agriculture - ABARES and State and Territory governments to collect additional field data has enabled the calibration/validation to extend to the entire Australian continent.
+While originally calibrated in Queensland, a large collaborative effort between The Department of Agriculture - ABARES and State and Territory governments to collect additional field data has enabled the calibration/validation to extend to the entire Australian continent.
 
 1390 field data sites were used to train the model, and a separate 1565 sites were used to evaluate the model accuracy.
 
