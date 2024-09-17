@@ -102,7 +102,7 @@ DEA provides multiple services which enable you to access our data and resources
    </tbody>
 </table>
 
-## Pre-built instances
+## Instances
 
 You can access either of the two pre-built instances:
 
