@@ -48,7 +48,7 @@ Due to model uncertainties and the limitations of the training data, some areas 
 
 ### Processing steps
 
-Fractional cover is processed using the Landsat Surface Reflectance archive, and requires green, red, nir, swir1 and swir2 bands. [Fractional Cover Code Repository]([https://github.com/GeoscienceAustralia/fc/blob/93f66062df0c5110b49d4ae444d726a90619c9fd/fc/endmembers.py#L51](https://github.com/GeoscienceAustralia/fc/tree/master)) 
+Fractional cover is processed using the Landsat Surface Reflectance archive, and requires green, red, nir, swir1 and swir2 bands. [Fractional Cover Code Repository](https://github.com/GeoscienceAustralia/fc/tree/master) 
  
 The fractions are retrieved by inverting multiple linear regression estimates and using synthetic endmembers in a constrained non-negative least squares unmixing model. For more information, see Scarth et al. (2010) and Schmidt et al. (2010), and a brief description of the FC algorithm on the [TERN website](https://portal.tern.org.au/metadata/22026).
 
@@ -56,7 +56,7 @@ The bare soil, green vegetation and non-green vegetation end members used for fr
 
 For the unmixing error (UE) band, the values are scaled between 0 and 127. High unmixing error values represent areas of high model uncertainty (areas of water, cloud, cloud shadow or soil types/colours that were not included in the model training data).
 
-For Landsat 8, coefficients are applied as specified below:
+For Landsat 8 and 9 fractional cover processing, coefficients are applied as specified below to reduce differences between sensors, which are based on the assessment performed in the publication [Continuity of Reflectance Data between Landsat-7 ETM+ and Landsat-8 OLI, for Both Top-of-Atmosphere and Surface Reflectance: A Study in the Australian Landscape](https://www.mdpi.com/2072-4292/6/9/7952):
 * "blue": [4.1, 0.97470],
 * "green": [28.9, 0.99779],
 * "red": [27.4, 1.00446],
