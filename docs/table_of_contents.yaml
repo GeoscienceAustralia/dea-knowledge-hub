@@ -195,11 +195,11 @@ entries:
 
       - caption: Appendix
         entries:
-          - file: guides/about/intro
           - file: guides/about/faq
           - file: guides/about/publications
           - file: guides/about/glossary
             title: DEA Glossary
+          - file: guides/about/intro
 
   # DEA Notebooks
 
