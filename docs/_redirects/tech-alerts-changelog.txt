@@ -1,5 +1,5 @@
 # Tech Alerts and Changelog redirects
 
-# The Tech Alerts and Changelog was moved out of the User Guides section into its own section of the site
+# The Tech Alerts and Changelog was moved out of the User Guides section into its own section of the site.
 
 guides/tech_alerts_changelog  tech-alerts-changelog
