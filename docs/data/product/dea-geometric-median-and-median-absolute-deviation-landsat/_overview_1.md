@@ -11,6 +11,6 @@ All tile grid references have been changed to refer to a new origin point. Learn
 :::{admonition} Bug identified
 :class: note
 
-A bug related to multithreading in numexpr has been identified which may cause 400x400 pixel data block to be misplaced in a tile. For the full GeoMAD archive, it is possible that there are around 8-12 tiles with incorrect data (misplaced blocks). It is unknown at this stage which tiles are effected. We are investigating the bug and will provide more information soon.
+A bug related to multithreading in numexpr has been identified which may cause a 400x400 pixel data block to be misplaced in a tile. For the full GeoMAD archive, it is possible that there are around 8-12 tiles with incorrect data (misplaced blocks). It is unknown at this stage which tiles are effected. We are investigating the bug and will provide more information soon.
 :::
 
