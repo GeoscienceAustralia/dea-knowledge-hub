@@ -15,9 +15,9 @@ is_provisional: true
 lineage_type: DERIVATIVE
 spatial_data_type: RASTER
 
-temporal_extent_start: 1 Jul 2021
-temporal_extent_end: 29 Aug 2023
-temporal_extent_custom: null
+temporal_coverage_start: 1 Jul 2021
+temporal_coverage_end: 29 Aug 2023
+temporal_coverage_custom: null
 
 data_update_frequency: DAILY
 data_update_activity: NO_UPDATES

@@ -154,14 +154,14 @@
       {%- if page.data.resolution %}
       :Resolution: {{ page.data.resolution }}
       {%- endif %}
-      {%- if page.data.temporal_extent_custom %}
-      :Coverage: {{ page.data.temporal_extent_custom }}
-      {%- elif page.data.temporal_extent_start and page.data.temporal_extent_end %}
-      :Coverage: {{ page.data.temporal_extent_start }} to {{ page.data.temporal_extent_end }}
-      {%- elif page.data.temporal_extent_start  %}
-      :Data since: {{ page.data.temporal_extent_start }}
-      {%- elif page.data.temporal_extent_end  %}
-      :Data until: {{ page.data.temporal_extent_end }}
+      {%- if page.data.temporal_coverage_custom %}
+      :Coverage: {{ page.data.temporal_coverage_custom }}
+      {%- elif page.data.temporal_coverage_start and page.data.temporal_coverage_end %}
+      :Coverage: {{ page.data.temporal_coverage_start }} to {{ page.data.temporal_coverage_end }}
+      {%- elif page.data.temporal_coverage_start  %}
+      :Data since: {{ page.data.temporal_coverage_start }}
+      {%- elif page.data.temporal_coverage_end  %}
+      :Data until: {{ page.data.temporal_coverage_end }}
       {%- endif %}
       {%- if is_frequency_ongoing %}
       :Data updates: {{ data_update_frequency }}, {{ data_update_activity }}
@@ -471,21 +471,21 @@
            - {{ page.data.resolution }}
            - The size of the small area that the data can represent.
          {%- endif %}
-         {%- if page.data.temporal_extent_custom %}
+         {%- if page.data.temporal_coverage_custom %}
          * - **Temporal coverage**
-           - {{ page.data.temporal_extent_custom }}
+           - {{ page.data.temporal_coverage_custom }}
            - The time span for which data is available.
-         {%- elif page.data.temporal_extent_start and page.data.temporal_extent_end %}
+         {%- elif page.data.temporal_coverage_start and page.data.temporal_coverage_end %}
          * - **Temporal coverage**
-           - {{ page.data.temporal_extent_start }} to {{ page.data.temporal_extent_end }}
+           - {{ page.data.temporal_coverage_start }} to {{ page.data.temporal_coverage_end }}
            - The time span for which data is available.
-         {%- elif page.data.temporal_extent_start  %}
+         {%- elif page.data.temporal_coverage_start  %}
          * - **Temporal coverage**
-           - Since {{ page.data.temporal_extent_start }}
+           - Since {{ page.data.temporal_coverage_start }}
            - The time span for which data is available.
-         {%- elif page.data.temporal_extent_end  %}
+         {%- elif page.data.temporal_coverage_end  %}
          * - **Temporal coverage**
-           - Until {{ page.data.temporal_extent_end }}
+           - Until {{ page.data.temporal_coverage_end }}
            - The time span for which data is available.
          {%- endif %}
          {%- if is_frequency_ongoing %}
