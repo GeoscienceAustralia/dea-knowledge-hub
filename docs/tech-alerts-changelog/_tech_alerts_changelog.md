@@ -14,6 +14,10 @@
 * NCI Explorer may experience instability. See below.
 :::
 
+## In progress: GeoMAD Processing Bug
+
+A bug in our processing code related to multithreading using numexpr (a fast numerical expression evaluator for Numpy) has been identified which may cause a 400x400 pixel data block to be misplaced within a tile. For the full GeoMAD archive, it is possible that there are around 8-12 tiles with incorrect data (misplaced blocks). It is unknown at this stage which tiles are affected. We are investigating the bug and will provide more information in late 2024 to early 2025.
+
 ## In progress: Shift in origin point of DEA Summary Product Grid
 
 :::{include} ../_components/shift-in-summary-product-grid-tech-alert.md
