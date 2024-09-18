@@ -1,6 +1,6 @@
 # DEA Docs User Guide redirects
 
-# Redirects from old DEA Docs pages to the new Knowledge Hub.
+# Redirects from locations on the old DEA Docs site to the new Knowledge Hub.
 
 about/changelog         guides/tech_alerts_changelog
 about/faq               guides/about/faq

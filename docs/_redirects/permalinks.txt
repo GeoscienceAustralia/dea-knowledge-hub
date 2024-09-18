@@ -1,4 +1,6 @@
 # Permalink redirects
 
+# A permalink is a link that is not likely to change. It should be based on a constant value, such as a product's eCat number or DOI
+
 # permalink/116268  data/product/dea-coastlines
 # permalink/111881  data/product/dea-hotspots

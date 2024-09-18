@@ -1,3 +1,5 @@
 # User guide redirects
 
+# User guides whose URL has been changed
+
 guides/setup/gis/web_services  guides/setup/gis/README

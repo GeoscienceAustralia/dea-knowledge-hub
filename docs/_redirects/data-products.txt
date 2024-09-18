@@ -1,6 +1,6 @@
 # Data Product redirects
 
-# Changed these URL slugs to be consistent with other similar products
+# Pages have been moved to a new URL
 
 data/product/dea-surface-reflectance-oa-landsat-9     data/product/dea-surface-reflectance-oa-landsat-9-oli-tirs
 data/product/dea-surface-reflectance-landsat-9        data/product/dea-surface-reflectance-landsat-9-oli-tirs

@@ -1,6 +1,6 @@
 # CMI Data Product redirects
 
-# Redirects from the old CMI product page URLs to the new Knowledge Hub website. Each product page had multiple URL aliases which are also redirected.
+# Redirects from product pages on the old CMI site to the new Knowledge Hub. Each product page had multiple URL aliases which are also redirected.
 
 node/818                                                                      data/product/dea-surface-reflectance-oa-landsat-9-oli-tirs
 data-products/dea/818/dea-surface-reflectance-oa-landsat-9                    data/product/dea-surface-reflectance-oa-landsat-9-oli-tirs
