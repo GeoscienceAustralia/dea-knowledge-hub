@@ -1,5 +1,7 @@
 # CMI Theme redirects
 
+# Redirects from the themes on the old CMI site to the new Knowledge Hub.
+
 theme/baseline-satellite-data  data/theme/baseline-satellite-data
 theme/land-and-vegetation      data/theme/land-and-vegetation
 theme/inland-water             data/theme/inland-water

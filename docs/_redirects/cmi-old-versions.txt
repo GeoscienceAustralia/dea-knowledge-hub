@@ -1,5 +1,7 @@
 # CMI old product version redirects
 
+# Redirects from the old CMI product page URLs to the new Knowledge Hub website. Each product page had multiple URL aliases which are also redirected. These are product pages for old versions; i.e. they are not the latest product versions.
+
 node/111                                                              data/old-version/dea-surface-reflectance-nbar-landsat-2.0.0
 data-products/dea/111/dea-surface-reflectance-nbar-landsat-deprecated data/old-version/dea-surface-reflectance-nbar-landsat-2.0.0
 sr-n_25_2.0.0                                                         data/old-version/dea-surface-reflectance-nbar-landsat-2.0.0

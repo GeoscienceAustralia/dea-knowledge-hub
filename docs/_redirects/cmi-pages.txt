@@ -1,5 +1,7 @@
 # CMI pages redirects
 
+# Redirects from miscellaneous pages on the old CMI site to the new Knowledge Hub.
+
 node                     index
 404                      404-not-found
 search/user              search

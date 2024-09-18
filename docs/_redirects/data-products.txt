@@ -1,5 +1,7 @@
 # Data Product redirects
 
+# Changed these URL slugs to be consistent with other similar products
+
 data/product/dea-surface-reflectance-oa-landsat-9     data/product/dea-surface-reflectance-oa-landsat-9-oli-tirs
 data/product/dea-surface-reflectance-landsat-9        data/product/dea-surface-reflectance-landsat-9-oli-tirs
 data/product/dea-surface-reflectance-nbart-landsat-9  data/product/dea-surface-reflectance-nbart-landsat-9-oli-tirs
