@@ -155,9 +155,9 @@
       :Resolution: {{ page.data.resolution }}
       {%- endif %}
       {%- if page.data.temporal_extent_custom %}
-      :Data from: {{ page.data.temporal_extent_custom }}
+      :Coverage: {{ page.data.temporal_extent_custom }}
       {%- elif page.data.temporal_extent_start and page.data.temporal_extent_end %}
-      :Data from: {{ page.data.temporal_extent_start }} to {{ page.data.temporal_extent_end }}
+      :Coverage: {{ page.data.temporal_extent_start }} to {{ page.data.temporal_extent_end }}
       {%- elif page.data.temporal_extent_start  %}
       :Data since: {{ page.data.temporal_extent_start }}
       {%- elif page.data.temporal_extent_end  %}
@@ -467,35 +467,35 @@
            -
          {%- endif %}
          {%- if page.data.resolution %}
-         * - **Resolution**
+         * - **Spatial resolution**
            - {{ page.data.resolution }}
            - The size of the small area that the data can represent.
          {%- endif %}
          {%- if page.data.temporal_extent_custom %}
-         * - **Temporal extent**
+         * - **Temporal coverage**
            - {{ page.data.temporal_extent_custom }}
            - The time span for which data is available.
          {%- elif page.data.temporal_extent_start and page.data.temporal_extent_end %}
-         * - **Temporal extent**
+         * - **Temporal coverage**
            - {{ page.data.temporal_extent_start }} to {{ page.data.temporal_extent_end }}
            - The time span for which data is available.
          {%- elif page.data.temporal_extent_start  %}
-         * - **Temporal extent**
+         * - **Temporal coverage**
            - Since {{ page.data.temporal_extent_start }}
            - The time span for which data is available.
          {%- elif page.data.temporal_extent_end  %}
-         * - **Temporal extent**
+         * - **Temporal coverage**
            - Until {{ page.data.temporal_extent_end }}
            - The time span for which data is available.
          {%- endif %}
          {%- if is_frequency_ongoing %}
          * - **Update frequency**
            - {{ data_update_frequency }}
-           - The expected frequency of data updates.
+           - The expected frequency of data updates. Also called 'Temporal resolution'.
          {%- else %}
          * - **Update frequency**
            - Previously: {{ data_update_frequency }}
-           - When data updates were active, this was their expected frequency.
+           - When data updates were active, this was their expected frequency. Also called 'Temporal resolution'.
          {%- endif %}
          * - **Update activity**
            - {{ data_update_activity }}
