@@ -14,21 +14,25 @@ table.colour-coded-table {
         a, a:hover {
             color: var(--pst-color-text-base, #082e41) !important;
         }
+    }
 
-        &.high {
-            background-color: #d2ffdb;
-        }
+    &.traffic-light-theme {
+        th, td {
+            &.high {
+                background-color: #d2ffdb;
+            }
 
-        &.medium {
-            background-color: #ffffc8;
-        }
+            &.medium {
+                background-color: #ffffc8;
+            }
 
-        &.low {
-            background-color: #ffe3e6;
-        }
+            &.low {
+                background-color: #ffe3e6;
+            }
 
-        &.blank {
-            background-color: #e1f1fd;
+            &.blank {
+                background-color: #e1f1fd;
+            }
         }
     }
 }

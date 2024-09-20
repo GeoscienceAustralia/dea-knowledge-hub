@@ -11,7 +11,7 @@ To access DEA data and resources, use one of our DEA Services. Or, to use DEA Pr
 
 DEA provides multiple services which enable you to access our data and resources. We have created this matrix to help you decide which service to use. (The matrix may scroll to the right.)
 
-<table class="colour-coded-table scroll-horizontally">
+<table class="colour-coded-table traffic-light-theme scroll-horizontally">
     <thead>
         <tr>
             <td></td>
