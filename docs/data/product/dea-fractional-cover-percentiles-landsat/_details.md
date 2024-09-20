@@ -125,9 +125,12 @@ Will be calculated from the 1st of January to the 31st of December (inclusive) f
 The Fractional Cover Percentile odc-statistician plugin can be found in [Fractional Cover Percentiles Code Repository](https://github.com/opendatacube/odc-stats/blob/develop/odc/stats/plugins/fc_percentiles.py).
 
 The processing steps are:
+
+<div id="processing-steps"></div>
+
 1. Fractional Cover and Water Observations Daily scenes are loaded for the calender year
-2. Pixels for each time step are masked out that are not clear and dry or are wet, and a cloud and cloud shadow dilation of 6 pixels is applied 
-4. Fractional cover percentiles are calculated - noting results are not filtered by an unmixing error threshold
+1. Pixels for each time step are masked out that are not clear and dry or are wet, and a cloud and cloud shadow dilation of 6 pixels is applied 
+1. Fractional cover percentiles are calculated - noting results are not filtered by an unmixing error threshold
 
 % ## Software
 
