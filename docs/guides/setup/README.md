@@ -91,12 +91,12 @@ DEA provides multiple services which enable you to access our data and resources
             <td><strong>Difficulty level</strong></td>
             <td class="blank">Beginner</td>
             <td class="blank">Beginner</td>
-            <td class="blank">Intermediate</td>
-            <td class="blank">Intermediate</td>
-            <td class="blank">Intermediate</td>
-            <td class="blank">Intermediate</td>
             <td class="blank">Beginner</td>
+            <td class="blank">Intermediate</td>
+            <td class="blank">Intermediate</td>
             <td class="blank">Advanced</td>
+            <td class="blank">Intermediate</td>
+            <td class="blank">Intermediate</td>
             <td class="blank">Intermediate</td>
         </tr>
    </tbody>
