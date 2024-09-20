@@ -29,7 +29,7 @@ DEA provides multiple services which enable you to access our data and resources
     <tbody>
         <tr>
             <td><strong>Understand the data</strong></td>
-            <td class="high"><a href="/data/">Browse the Data Products</a></td>
+            <td class="high"><a href="/data/">Browse product knowledge</a></td>
             <td class="medium">Partial</td>
             <td class="medium">Partial</td>
             <td class="medium">Partial</td>
