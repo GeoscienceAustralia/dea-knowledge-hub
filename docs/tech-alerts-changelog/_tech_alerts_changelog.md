@@ -24,8 +24,8 @@ Learn more about the [DEA Summary Product Grid](/guides/reference/collection_3_s
 
 ## 26 Sep 2024: 's2cloudless' ARD reprocessing underway
 
-We have begun reprocessing the older Sentinel-2 ARD data that was [impacted by a bug](#may-2024-misclassification-issue-with-sentinel-2-s2cloudless-cloud-masking-from-2022) in the s2cloudless 
-cloud masking layer.
+We have begun reprocessing the older Sentinel-2 ARD data that was impacted by a bug in the s2cloudless 
+cloud masking layer. The bug is '[24 May 2024: Misclassification issue with Sentinel-2 ‘s2cloudless’ cloud masking from 2022](#may-2024-misclassification-issue-with-sentinel-2-s2cloudless-cloud-masking-from-2022)'.
 
 The addition of an offset factor in ESA's Sentinel-2 L1C Processing Baseline 4.0.0 [on January 25
 2022](https://sentiwiki.copernicus.eu/web/s2-processing) led to the generation of incorrect `s2cloudless` cloud
