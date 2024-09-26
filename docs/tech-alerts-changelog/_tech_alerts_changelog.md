@@ -21,6 +21,23 @@
 
 Learn more about the [DEA Summary Product Grid](/guides/reference/collection_3_summary_grid/).
 
+
+## 26 Sep 2024: `s2cloudless` ARD reprocessing underway
+
+We have begun reprocessing the older Sentinel-2 ARD data that was [impacted by a bug](#may-2024-misclassification-issue-with-sentinel-2-s2cloudless-cloud-masking-from-2022) in the s2cloudless 
+cloud masking layer.
+
+The addition of an offset factor in ESA's Sentinel-2 L1C Processing Baseline 4.0.0 [on January 25
+2022](https://sentiwiki.copernicus.eu/web/s2-processing) led to the generation of incorrect `s2cloudless` cloud
+classifications in our systems. This resulted in an over classification of cloud, particularly over bare and
+agricultural regions
+
+Sentinel-2 `s2cloudless` data from January 25 2022 to June 7 2024 is affected, and we expect to replace these datasets
+over the next several months.
+
+In the meantime, we advise the users to avoid using `s2cloudless` for cloud masking on data between these two dates, 
+and consider using the `Fmask` cloud mask as a temporary alternative during this period.
+
 ## 13 Sep 2024: Outage affecting multiple web services (Resolved)
 
 Multiple web services are experiencing an outage: DEA Explorer (Prod), DEA WCS (PROD - EKS), DEA WMS (PROD - EKS), and DEA WMTS (PROD - EKS). We are currently working on resolving the issue. See the [real-time status](https://status.dea.ga.gov.au/) of these services.
@@ -222,4 +239,3 @@ Affected products:
 
 See [DEA Tech alert email](https://communication.ga.gov.au/link/id/zzzz659df9f7f306b556Pzzzz61de67bd94bfe861/page.html) for more information. 
 Click [here](https://communication.ga.gov.au/link/id/zzzz659de7f165049054Pzzzz61de67bd94bfe861/page.html) to subscribe to DEA Tech alert emails.
-
