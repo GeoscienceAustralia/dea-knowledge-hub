@@ -12,6 +12,7 @@
 * Misclassification issue with Sentinel-2 's2cloudless' cloud masking from 2022. See below.
 * Terra-derived DEA Hotspots are unavailable. See below.
 * NCI Explorer may experience instability. See below.
+* GeoMAD processing bug. See below.
 :::
 
 ## In progress: Shift in origin point of DEA Summary Product Grid
@@ -20,7 +21,6 @@
 :::
 
 Learn more about the [DEA Summary Product Grid](/guides/reference/collection_3_summary_grid/).
-
 
 ## 26 Sep 2024: 's2cloudless' ARD reprocessing underway
 
@@ -37,6 +37,10 @@ over the next several months.
 
 In the meantime, we advise the users to avoid using `s2cloudless` for cloud masking on data between these two dates, 
 and consider using the `Fmask` cloud mask as a temporary alternative during this period.
+
+## 19 Sep 2024: GeoMAD processing bug
+
+In the [DEA Geometric Median and Median Absolute Deviation (Landsat)](/data/product/dea-geometric-median-and-median-absolute-deviation-landsat/) product, a bug in the processing code related to multithreading using numexpr (a fast numerical expression evaluator for Numpy) has been identified which may cause a 400x400 pixel data block to be misplaced within a tile. For the full GeoMAD archive, it is possible that there are around 8-12 tiles with incorrect data (misplaced blocks). It is unknown at this stage which tiles are affected. We are investigating the bug and will provide more information in late 2024 to early 2025.
 
 ## 13 Sep 2024: Outage affecting multiple web services (Resolved)
 
