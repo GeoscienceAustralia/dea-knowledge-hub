@@ -1,9 +1,10 @@
 # 2024-07-03-NSW3: Transect NSW Site 3, Landsat 9 and Sentinel-2A dual overpass
 
-This is a report of the field data collected on the 3rd of July, 2024 at the location of Transect NSW Site 3
+This is a report of the field data collected on 3 July 2024 at the location of Transect NSW Site 3
 to validate the satellite data of the Landsat 9 and Sentinel-2A dual overpass.
-The full collection of data is contained in the [National Spectral Database](https://www.dea.ga.gov.au/products/national-spectral-database).
-Satellite data can be found on [DEA maps](https://maps.dea.ga.gov.au/).
+The full collection of data is contained in the [National Spectral Database]
+(https://www.ga.gov.au/scientific-topics/dea/dea-data-and-products/national-spectral-database).
+Satellite data can be found on [DEA maps](https://maps.dea.ga.gov.au/#share=s-i2o7JwB5gvXOQefhMmTLJaA14b0).
 
 :::{contents} In this report
 :local:
