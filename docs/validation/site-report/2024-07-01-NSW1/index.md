@@ -1,6 +1,6 @@
-# 2024-07-05-NSW6: Transect NSW Site 6, Landsat 9 and Sentinel-2B dual overpass
+# 2024-07-01-NSW1: Transect NSW Site 4, Landsat 9 and Sentinel-2B dual overpass
 
-This is a report of the field data collected on 5 July 2024 at the location of Transect NSW Site 6
+This is a report of the field data collected on 1 July 2024 at the location of Transect NSW Site 4
 to validate the satellite data of the Landsat 9 and Sentinel-2B dual overpass.
 The full collection of data is contained in the [National Spectral Database]
 (https://www.ga.gov.au/scientific-topics/dea/dea-data-and-products/national-spectral-database).
@@ -18,14 +18,14 @@ These variables and environmental factors were present on the day the data were 
 :::{csv-table}
 :class: validation-report-variables-table
 
-"Instrument(s) used","SR-3500_20680T1"
-"Time of field site measurements (UTC)","2024-07-04 23:41:39 to 2024-07-05 00:38:22"
-"Time of Landsat 9 overpass (UTC)", 2024-07-04 23:54:33
-"Time of Sentinel-2B overpass (UTC)", 2024-07-15 00:15:28
+"Instrument(s) used","ASD FR4 (18179/3)"
+"Time of field site measurements (UTC)","2024-07-01 01:16:53 to 2024-07-01 01:44:53"
+"Time of Landsat 9 overpass (UTC)", 2024-07-01 00:19:34
+"Time of Sentinel-2B overpass (UTC)", 2024-07-14 00:45:57
 "GPS quality","Good"
-"Reference position","150.02628167E, 30.78772667S (WGS84)"
-"Matchup quality for Landsat 9","Good"
-"Matchup quality for Sentinel-2B","Excellent"
+"Reference position","142.10367762E, 31.81348317S (WGS84)"
+"Matchup quality for Landsat 9","Poor"
+"Matchup quality for Sentinel-2B","Poor"
 :::
 
 ## Results
@@ -36,37 +36,37 @@ This allows the data to be used to validate Geoscience Australia's other dataset
 ```{eval-rst}
 .. container:: 
 
-   :download:`Download results as CSV <./SiteValidationResults-2024-07-05-NSW6.csv>`
+   :download:`Download results as CSV <./SiteValidationResults-2024-07-01-NSW1.csv>`
 ```
 
 :::{csv-table} Results of Field data versus Landsat 9 Satellite
 :class: validation-report-results-table
 
 "Band","Sat Mean","Sat rms","Field mean","Field rms"
-"CA","0.019","0.004","0.033","0.007"
-"blue","0.022","0.004","0.037","0.009"
-"green","0.046","0.01","0.068","0.016"
-"red","0.039","0.01","0.054","0.025"
-"NIR","0.304","0.137","0.42","0.191"
-"SWIR1","0.14","0.021","0.189","0.053"
-"SWIR2","0.073","0.018","0.098","0.05"
+"CA","0.148","0.013","0.056","0.011"
+"blue","0.153","0.014","0.068","0.014"
+"green","0.175","0.013","0.126","0.029"
+"red","0.22","0.014","0.214","0.057"
+"NIR","0.265","0.015","0.286","0.069"
+"SWIR1","0.344","0.014","0.449","0.106"
+"SWIR2","0.282","0.012","0.379","0.102"
 :::
 
 :::{csv-table} Results of Field data versus Sentinel-2B Satellite
 :class: validation-report-results-table
 
 "Band","Sat Mean","Sat rms","Field mean","Field rms"
-"CA","0.036","0.004","0.029","0.007"
-"blue","0.036","0.005","0.035","0.008"
-"green","0.057","0.01","0.064","0.016"
-"red","0.044","0.014","0.048","0.024"
-"RE1","0.09","0.014","0.107","0.027"
-"RE2","0.295","0.138","0.337","0.158"
-"RE3","0.339","0.164","0.393","0.189"
-"NIR1","0.348","0.169","0.403","0.188"
-"NIR2","0.362","0.165","0.409","0.186"
-"SWIR2","0.152","0.02","0.183","0.051"
-"SWIR3","0.076","0.021","0.093","0.047"
+"CA","0.07","0.008","0.052","0.01"
+"blue","0.064","0.009","0.067","0.014"
+"green","0.079","0.011","0.116","0.026"
+"red","0.112","0.016","0.207","0.055"
+"RE1","0.127","0.017","0.233","0.061"
+"RE2","0.142","0.017","0.255","0.066"
+"RE3","0.145","0.017","0.266","0.068"
+"NIR1","0.144","0.019","0.273","0.067"
+"NIR2","0.149","0.018","0.276","0.066"
+"SWIR2","0.203","0.024","0.435","0.103"
+"SWIR3","0.158","0.022","0.364","0.097"
 :::
 
 ## Figures
@@ -75,7 +75,7 @@ The following figures provide visual representations of the data. (Click a figur
 
 :::::{grid} 1 1 2 3
 ::::{grid-item}
-:::{figure} ./RGB-2024-07-05-NSW6.png
+:::{figure} ./RGB-2024-07-01-NSW1.png
 
 Satellite imagery tiles of true colour (RGB) surface reflectance.
 They each cover an area of approximately 2&nbsp;km &times; 2&nbsp;km.
@@ -84,7 +84,7 @@ of the field site.
 :::
 ::::
 ::::{grid-item}
-:::{figure} ./SiteComparison-2024-07-05-NSW6.png
+:::{figure} ./SiteComparison-2024-07-01-NSW1.png
 
 Band-by-band plots of surface reflectance for field data versus each satellite.
 Satellite uncertainty error bars for each band are the standard deviation
@@ -95,7 +95,7 @@ averaging all spectra within the same satellite pixels.
 :::
 ::::
 ::::{grid-item}
-:::{figure} ./OverallComparison-2024-07-05-NSW6.png
+:::{figure} ./OverallComparison-2024-07-01-NSW1.png
 
 Plots of Satellite Surface Reflectance for each satellite versus Field Site Surface Reflectance on this day.
 The solid line represents the one-to-one equality between field and satellite measurements.
