@@ -1,9 +1,10 @@
 # 2023-11-26-SA1: Transect South Australia Site 1, Landsat 8 overpass
 
-This is a report of the field data collected on the 26th of November, 2023 at the location of Transect South Australia Site 1
+This is a report of the field data collected on 26 November 2023 at the location of Transect South Australia Site 1
 to validate the satellite data of the Landsat 8 overpass.
-The full collection of data is contained in the [National Spectral Database](https://www.dea.ga.gov.au/products/national-spectral-database).
-Satellite data can be found on [DEA maps](https://maps.dea.ga.gov.au/).
+The full collection of data is contained in the 
+[National Spectral Database](https://www.ga.gov.au/scientific-topics/dea/dea-data-and-products/national-spectral-database).
+Satellite data can be found on [DEA maps](https://maps.dea.ga.gov.au/#share=s-i2o7JwB5gvXOQefhMmTLJaA14b0).
 
 :::{contents} In this report
 :local:
