@@ -556,14 +556,14 @@
         - Currency is a measure based on data publishing and update frequency.
       * - **Latest and next update dates**
         - See the `Currency Report <{{ currency_report_url }}>`_
-        - See 'Table B' of the report.
+        - See Table B of the report.
       {% elif page.data.is_currency_reported %}
       * - **Currency**
         - `Currency Report <{{ currency_report_url }}>`_
         - Currency is a measure based on data publishing and update frequency.
       * - **Latest update date**
         - `Currency Report <{{ currency_report_url }}>`_
-        - See 'Table A' of the report.
+        - See Table A of the report.
       {%- endif %}
       {%- if page.data.doi %}
       * - **DOI**
