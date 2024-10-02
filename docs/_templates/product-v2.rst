@@ -418,170 +418,9 @@
 
       <div class="product-tab-table-of-contents"></div>
 
-   .. rubric:: Specifications
-      :name: specifications-tables
-      :class: h2
-
-   .. dropdown:: General
-
-      .. list-table::
-         :name: general-specifications-table
-
-         {% if page.data.is_latest_version and old_versions_list | length > 0 and page.data.enable_history %} {# If at least one old version exists. #}
-         * - **Version**
-           - {{ page.data.version_number }}
-           - The version number of the product. See the `version history <./?tab=history>`_.
-         {%- elif page.data.is_latest_version %}
-         * - **Version**
-           - {{ page.data.version_number }}
-           - The version number of the product.
-         {%- else %}
-         * - **Version**
-           - {{ page.data.version_number }}
-           - This is an old version of the product. See the `latest version <{{ page.data.latest_version_link }}>`_.
-         {%- endif %}
-         {% if lineage_type == lineage_type_terms.DERIVATIVE %}
-         * - **Lineage type**
-           - {{ lineage_type }}
-           - Derivative products are derived from other products.
-         {%- elif lineage_type == lineage_type_terms.BASELINE %}
-         * - **Lineage type**
-           - {{ lineage_type }}
-           - Baseline products are produced directly from satellite data.
-         {%- else %}
-         * - **Lineage type**
-           - {{ lineage_type }}
-           -
-         {%- endif %}
-         {% if spatial_data_type == spatial_data_type_terms.RASTER %}
-         * - **Spatial type**
-           - {{ spatial_data_type }}
-           - Raster data consists of a grid of pixels.
-         {%- elif spatial_data_type == spatial_data_type_terms.VECTOR %}
-         * - **Spatial type**
-           - {{ spatial_data_type }}
-           - Vector data consists of mathematical polygons.
-         {%- else %}
-         * - **Spatial type**
-           - {{ spatial_data_type }}
-           -
-         {%- endif %}
-         {%- if page.data.resolution %}
-         * - **Spatial resolution**
-           - {{ page.data.resolution }}
-           - The size of the small area that the data can represent.
-         {%- endif %}
-         {%- if page.data.temporal_coverage_custom %}
-         * - **Temporal coverage**
-           - {{ page.data.temporal_coverage_custom }}
-           - The time span for which data is available.
-         {%- elif page.data.temporal_coverage_start and page.data.temporal_coverage_end %}
-         * - **Temporal coverage**
-           - {{ page.data.temporal_coverage_start }} to {{ page.data.temporal_coverage_end }}
-           - The time span for which data is available.
-         {%- elif page.data.temporal_coverage_start  %}
-         * - **Temporal coverage**
-           - Since {{ page.data.temporal_coverage_start }}
-           - The time span for which data is available.
-         {%- elif page.data.temporal_coverage_end  %}
-         * - **Temporal coverage**
-           - Until {{ page.data.temporal_coverage_end }}
-           - The time span for which data is available.
-         {%- endif %}
-         {%- if is_frequency_ongoing %}
-         * - **Update frequency**
-           - {{ data_update_frequency }}
-           - The expected frequency of data updates. Also called 'Temporal resolution'.
-         {%- else %}
-         * - **Update frequency**
-           - Previously: {{ data_update_frequency }}
-           - When data updates were active, this was their expected frequency. Also called 'Temporal resolution'.
-         {%- endif %}
-         * - **Update activity**
-           - {{ data_update_activity }}
-           - The activity status of data updates.
-         {%- if page.data.is_currency_reported and is_cadence_yearly %}
-         * - **Currency**
-           - `Currency Report <{{ currency_report_url }}>`_
-           - See the report.
-         * - **Latest and next update dates**
-           - `Currency Report <{{ currency_report_url }}>`_
-           - See the report.
-         {% elif page.data.is_currency_reported %}
-         * - **Currency**
-           - `Currency Report <{{ currency_report_url }}>`_
-           - See the report.
-         * - **Latest update date**
-           - `Currency Report <{{ currency_report_url }}>`_
-           - See the report.
-         {%- endif %}
-
-   .. dropdown:: Classification
-
-      .. list-table::
-         :name: classification-specifications-table
-
-         * - **Official name**
-           - {{ page.data.official_name }}
-           -
-         {%- if page.data.full_technical_name %}
-         * - **Technical name**
-           - {{ page.data.full_technical_name }}
-           -
-         {%- endif %}
-         {%- if product_ids_list %}
-         * - **{{ product_ids_label }}**
-           - {{ product_ids_comma_separated }}
-           - Used in `ODC <https://www.opendatacube.org/>`_.
-         {%- endif %}
-         {%- if page.data.doi %}
-         * - **DOI**
-           - `{{ page.data.doi }} <https://doi.org/{{ page.data.doi }}>`_
-           -
-         {%- endif %}
-         {%- if page.data.ecat_id %}
-         * - **Persistent ID**
-           - `{{ page.data.ecat_id }} <https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/{{ page.data.ecat_id }}>`_
-           - eCat ID (internal use).
-         {%- endif %}
-         {%- if page.data.parent_products %}
-         {%- if page.data.parent_products.name and page.data.parent_products.link %}
-         * - **Parent product(s)**
-           - `{{ page.data.parent_products.name }} <{{ page.data.parent_products.link }}>`_
-           -
-         {%- endif %}
-         {%- endif %}
-         {%- if page.data.collection %}
-         {%- if page.data.collection.name and page.data.collection.link %}
-         * - **Collection**
-           - `{{ page.data.collection.name }} <{{ page.data.collection.link }}>`_
-           -
-         {%- elif page.data.collection.name %}
-         * - **Collection**
-           - {{ page.data.collection.name }}
-           -
-         {%- endif %}
-         {%- endif %}
-         {%- if tags_list %}
-         * - **Tags**
-           - {{ tags_list_component }}
-           -
-         {%- endif %}
-         {%- if page.data.licence %}
-         {%- if page.data.licence.name and page.data.licence.link and page.data.enable_credits %}
-         * - **Licence**
-           - `{{ page.data.licence.name }} <{{ page.data.licence.link }}>`_
-           - See `Credits <./?tab=credits>`_.
-         {%- elif page.data.licence.name and page.data.licence.link %}
-         * - **Licence**
-           - `{{ page.data.licence.name }} <{{ page.data.licence.link }}>`_
-           -
-         {%- endif %}
-         {%- endif %}
-
    {% if bands_table_list %}
    .. rubric:: Bands
-      :name: bands
+      :name: bands-specifications
       :class: h2
 
    Bands are distinct layers of data within a product that can be loaded using the Open Data Cube (on the `DEA Sandbox <dea_sandbox_>`_ or `NCI <nci_>`_) or DEA's `STAC API <stac_api_>`_.
@@ -615,6 +454,160 @@
 
    {{ page.figures.bands_footnote if page.figures.bands_footnote }}
    {% endif %}
+
+   .. rubric:: Other specifications
+      :name: other-specifications
+      :class: h2
+
+   .. list-table::
+      :name: other-specifications-table
+
+      * - **Official name**
+        - {{ page.data.official_name }}
+        -
+      {% if page.data.full_technical_name %}
+      * - **Technical name**
+        - {{ page.data.full_technical_name }}
+        -
+      {%- endif %}
+      {%- if page.data.is_latest_version and old_versions_list | length > 0 and page.data.enable_history %} {# If at least one old version exists. #}
+      * - **Version**
+        - {{ page.data.version_number }}
+        - The version number of the product. See the `version history <./?tab=history>`_.
+      {%- elif page.data.is_latest_version %}
+      * - **Version**
+        - {{ page.data.version_number }}
+        - The version number of the product.
+      {%- else %}
+      * - **Version**
+        - {{ page.data.version_number }}
+        - This is an old version of the product. See the `latest version <{{ page.data.latest_version_link }}>`_.
+      {%- endif %}
+      {%- if product_ids_list %}
+      * - **{{ product_ids_label }}**
+        - {{ product_ids_comma_separated }}
+        - Used in `ODC <https://www.opendatacube.org/>`_.
+      {%- endif %}
+      {% if lineage_type == lineage_type_terms.DERIVATIVE %}
+      * - **Lineage type**
+        - {{ lineage_type }}
+        - Derivative products are derived from other products.
+      {%- elif lineage_type == lineage_type_terms.BASELINE %}
+      * - **Lineage type**
+        - {{ lineage_type }}
+        - Baseline products are produced directly from satellite data.
+      {%- else %}
+      * - **Lineage type**
+        - {{ lineage_type }}
+        -
+      {%- endif %}
+      {% if spatial_data_type == spatial_data_type_terms.RASTER %}
+      * - **Spatial type**
+        - {{ spatial_data_type }}
+        - Raster data consists of a grid of pixels.
+      {%- elif spatial_data_type == spatial_data_type_terms.VECTOR %}
+      * - **Spatial type**
+        - {{ spatial_data_type }}
+        - Vector data consists of mathematical polygons.
+      {%- else %}
+      * - **Spatial type**
+        - {{ spatial_data_type }}
+        -
+      {%- endif %}
+      {%- if page.data.resolution %}
+      * - **Spatial resolution**
+        - {{ page.data.resolution }}
+        - The size of the small area that the data can represent.
+      {%- endif %}
+      {%- if page.data.temporal_coverage_custom %}
+      * - **Temporal coverage**
+        - {{ page.data.temporal_coverage_custom }}
+        - The time span for which data is available.
+      {%- elif page.data.temporal_coverage_start and page.data.temporal_coverage_end %}
+      * - **Temporal coverage**
+        - {{ page.data.temporal_coverage_start }} to {{ page.data.temporal_coverage_end }}
+        - The time span for which data is available.
+      {%- elif page.data.temporal_coverage_start  %}
+      * - **Temporal coverage**
+        - Since {{ page.data.temporal_coverage_start }}
+        - The time span for which data is available.
+      {%- elif page.data.temporal_coverage_end  %}
+      * - **Temporal coverage**
+        - Until {{ page.data.temporal_coverage_end }}
+        - The time span for which data is available.
+      {%- endif %}
+      {%- if is_frequency_ongoing %}
+      * - **Update frequency**
+        - {{ data_update_frequency }}
+        - The expected frequency of data updates. Also called 'Temporal resolution'.
+      {%- else %}
+      * - **Update frequency**
+        - Previously: {{ data_update_frequency }}
+        - When data updates were active, this was their expected frequency. Also called 'Temporal resolution'.
+      {%- endif %}
+      * - **Update activity**
+        - {{ data_update_activity }}
+        - The activity status of data updates.
+      {%- if page.data.is_currency_reported and is_cadence_yearly %}
+      * - **Currency**
+        - `Currency Report <{{ currency_report_url }}>`_
+        - See the report.
+      * - **Latest and next update dates**
+        - `Currency Report <{{ currency_report_url }}>`_
+        - See the report.
+      {% elif page.data.is_currency_reported %}
+      * - **Currency**
+        - `Currency Report <{{ currency_report_url }}>`_
+        - See the report.
+      * - **Latest update date**
+        - `Currency Report <{{ currency_report_url }}>`_
+        - See the report.
+      {%- endif %}
+      {%- if page.data.doi %}
+      * - **DOI**
+        - `{{ page.data.doi }} <https://doi.org/{{ page.data.doi }}>`_
+        -
+      {%- endif %}
+      {%- if page.data.ecat_id %}
+      * - **Persistent ID**
+        - `{{ page.data.ecat_id }} <https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/{{ page.data.ecat_id }}>`_
+        - eCat ID (internal use).
+      {%- endif %}
+      {%- if page.data.parent_products %}
+      {%- if page.data.parent_products.name and page.data.parent_products.link %}
+      * - **Parent product(s)**
+        - `{{ page.data.parent_products.name }} <{{ page.data.parent_products.link }}>`_
+        -
+      {%- endif %}
+      {%- endif %}
+      {%- if page.data.collection %}
+      {%- if page.data.collection.name and page.data.collection.link %}
+      * - **Collection**
+        - `{{ page.data.collection.name }} <{{ page.data.collection.link }}>`_
+        -
+      {%- elif page.data.collection.name %}
+      * - **Collection**
+        - {{ page.data.collection.name }}
+        -
+      {%- endif %}
+      {%- endif %}
+      {%- if tags_list %}
+      * - **Tags**
+        - {{ tags_list_component }}
+        -
+      {%- endif %}
+      {%- if page.data.licence %}
+      {%- if page.data.licence.name and page.data.licence.link and page.data.enable_credits %}
+      * - **Licence**
+        - `{{ page.data.licence.name }} <{{ page.data.licence.link }}>`_
+        - See `Credits <./?tab=credits>`_.
+      {%- elif page.data.licence.name and page.data.licence.link %}
+      * - **Licence**
+        - `{{ page.data.licence.name }} <{{ page.data.licence.link }}>`_
+        -
+      {%- endif %}
+      {%- endif %}
+
 {% endif %}
 {% endset %}
 
