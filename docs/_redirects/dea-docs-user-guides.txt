@@ -1,0 +1,41 @@
+# DEA Docs User Guide redirects
+
+# Redirects from locations on the old DEA Docs site to the new Knowledge Hub.
+
+about/changelog         guides/tech_alerts_changelog
+about/faq               guides/about/faq
+about/glossary          guides/about/glossary
+about/intro             guides/about/intro
+about/publications      guides/about/publications
+guides/about/changelog  tech-alerts-changelog
+
+setup/AWS/data_and_metadata                             guides/setup/AWS/data_and_metadata
+setup/dea_maps                                          guides/setup/dea_maps
+setup/explorer_guide                                    guides/setup/explorer_guide
+setup/gis/README                                        guides/setup/gis/README
+setup/gis/stac                                          guides/setup/gis/stac
+setup/gis/web_services                                  guides/setup/gis/web_services
+setup/jupyter                                           guides/setup/jupyter
+setup/NCI/account                                       guides/setup/NCI/account
+setup/NCI/advanced                                      guides/setup/NCI/advanced
+setup/NCI/basics                                        guides/setup/NCI/basics
+setup/NCI/README                                        guides/setup/NCI/README
+setup/README                                            guides/setup/README
+setup/Sandbox/sandbox                                   guides/setup/Sandbox/sandbox
+references-articles/analysis-ready-data-open-data-cube  guides/reference/analysis-ready-data-example-queries
+
+resources/glossary                                       guides/about/glossary
+reference/collection_3_naming                            guides/reference/collection_3_naming
+resources/naming-convention                              guides/reference/collection_3_naming
+reference-articles/data-product-naming-convention        guides/reference/collection_3_naming
+resources/data-product-naming-convention                 guides/reference/collection_3_naming
+references-articles/open-data-cube-naming-conventions    guides/reference/collection_3_naming
+reference/collection_3_summary_grid                      guides/reference/collection_3_summary_grid
+reference/dataset_maturity_guide                         guides/reference/dataset_maturity_guide
+references-articles/analysis-ready-data-example-queries  guides/reference/analysis-ready-data-example-queries
+resources/analysis-ready-data-example-queries            guides/reference/analysis-ready-data-example-queries
+references-articles/open-data-cube-example               guides/reference/analysis-ready-data-example-queries
+references-articles/open-data-cube-example-queries       guides/reference/analysis-ready-data-example-queries
+# resources/how-to-access-data-on-the-CMI                  guides/setup/how-to-access-data-on-the-CMI
+# references-articles/understanding-the-data-product-page  guides/setup/how-to-access-data-on-the-CMI
+# reference-articles/understanding-the-data-product-page   guides/setup/how-to-access-data-on-the-CMI

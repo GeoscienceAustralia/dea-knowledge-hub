@@ -11,6 +11,11 @@ Jupyter Notebooks can be used on both the `DEA Sandbox </guides/setup/Sandbox/sa
 
 In addition to the documentation found in the following `DEA Notebooks User Guide </notebooks/README/>`_ section, please see the `dea-notebooks wiki on GitHub <https://github.com/GeoscienceAustralia/dea-notebooks/wiki>`_ for more details on interacting and developing code with Jupyter Notebooks.
 
+.. admonition:: DEA Notebooks
+   :class: note
+
+   View the `DEA Notebooks </dea-notebooks/>`_
+
 .. contents:: In this guide
    :local:
    :backlinks: none
@@ -42,4 +47,4 @@ Shutting down the Jupyter Notebook App
 
 Closing the browser (or the tab) will not close the Jupyter Notebook App. To completely shut it down you need to close the associated terminal.
 
-For more information about Jupyter Notebooks, see http://jupyter.org/.
+For more information about Jupyter Notebooks, see http://jupyter.org/

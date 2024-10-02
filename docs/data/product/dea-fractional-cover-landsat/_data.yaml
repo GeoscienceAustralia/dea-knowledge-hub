@@ -58,10 +58,10 @@ explorers:
     name: null
 
 data:
-  - link: https://thredds.nci.org.au/thredds/catalog/jw04/ga_ls_fc_3/catalog.html
-    name: Access the data on NCI
   - link: https://data.dea.ga.gov.au/?prefix=derivative/ga_ls_fc_3/
     name: Access the data on AWS
+  - link: https://thredds.nci.org.au/thredds/catalog/jw04/ga_ls_fc_3/catalog.html
+    name: Access the data on NCI
 
 code_examples:
   - link: /notebooks/DEA_products/DEA_Fractional_Cover/

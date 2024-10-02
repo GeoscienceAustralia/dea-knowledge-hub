@@ -6,14 +6,15 @@
     }
 
     &-results-table {
+        margin-bottom: 2rem;
+
         tbody tr:first-child {
           font-weight: bold;
         }
-    }
 
-    &-download {
-        float: right;
-        margin-left: 1rem;
+        caption {
+            padding-top: 0;
+        }
     }
 }
 

@@ -1,5 +1,7 @@
 # Old product version redirects
 
+# These products have been superseded by newer versions.
+
 data/product/dea-intertidal-elevation-landsat  data/version-history/dea-intertidal-elevation-landsat-1.0.0
 
 data/old-version                                                                   data/version-history
