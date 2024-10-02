@@ -50,7 +50,15 @@ tags:
 
 # Access
 
-maps: null
+maps:
+  - link: https://maps.dea.ga.gov.au/#share=s-yIyPPjQlWxVBLg10WJBQd8KrMgt
+    name: Apr-Oct summaries on DEA Maps
+  - link: https://maps.dea.ga.gov.au/#share=s-vT2uXq2ZYxfuKzHZTYM7Xc9kXY0
+    name: Nov-Mar summaries on DEA Maps
+  - link: https://maps.dea.ga.gov.au/#share=s-5fLlPp0Fk11iLTxUpCQPxTkVAH3
+    name: Annual calendar year summaries on DEA Maps
+  - link: https://maps.dea.ga.gov.au/#share=s-x0R0IFIqxSFDJ54LK6sFDEfjh6i
+    name: All-time summary on DEA Maps
 
 explorers:
   - link: https://explorer.dea.ga.gov.au/products#inland-water-group
