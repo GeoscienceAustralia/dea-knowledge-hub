@@ -486,7 +486,7 @@
       {%- if product_ids_list %}
       * - **{{ product_ids_label }}**
         - {{ product_ids_comma_separated }}
-        - Used in `ODC <https://www.opendatacube.org/>`_.
+        - Used in the `Open Data Cube <https://www.opendatacube.org/>`_.
       {%- endif %}
       {% if lineage_type == lineage_type_terms.DERIVATIVE %}
       * - **Lineage type**
@@ -571,7 +571,7 @@
       {%- if page.data.ecat_id %}
       * - **Persistent ID**
         - `{{ page.data.ecat_id }} <https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/{{ page.data.ecat_id }}>`_
-        - eCat ID (internal use).
+        - The eCat ID (for internal use).
       {%- endif %}
       {%- if page.data.parent_products %}
       {%- if page.data.parent_products.name and page.data.parent_products.link %}
@@ -600,7 +600,7 @@
       {%- if page.data.licence.name and page.data.licence.link and page.data.enable_credits %}
       * - **Licence**
         - `{{ page.data.licence.name }} <{{ page.data.licence.link }}>`_
-        - See `Credits <./?tab=credits>`_.
+        - See the `Credits tab <./?tab=credits>`_.
       {%- elif page.data.licence.name and page.data.licence.link %}
       * - **Licence**
         - `{{ page.data.licence.name }} <{{ page.data.licence.link }}>`_
