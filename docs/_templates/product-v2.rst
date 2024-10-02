@@ -459,18 +459,18 @@
       :name: attributes-specifications
       :class: h2
 
-   These are attributes of the product.
+   The product has the following attributes of metadata.
 
    .. list-table::
       :name: attributes-specifications-table
 
       * - **Official name**
         - {{ page.data.official_name }}
-        -
+        - Used in most contexts.
       {% if page.data.full_technical_name %}
       * - **Technical name**
         - {{ page.data.full_technical_name }}
-        -
+        - Used in some technical contexts.
       {%- endif %}
       {%- if page.data.is_latest_version and old_versions_list | length > 0 and page.data.enable_history %} {# If at least one old version exists. #}
       * - **Version**
@@ -501,7 +501,7 @@
       {%- else %}
       * - **Lineage type**
         - {{ lineage_type }}
-        -
+        - Our standard lineage types are 'Baseline' and 'Derivative'.
       {%- endif %}
       {% if spatial_data_type == spatial_data_type_terms.RASTER %}
       * - **Spatial type**
@@ -514,7 +514,7 @@
       {%- else %}
       * - **Spatial type**
         - {{ spatial_data_type }}
-        -
+        - The most common spatial types are raster and vector.
       {%- endif %}
       {%- if page.data.resolution %}
       * - **Spatial resolution**
@@ -552,23 +552,23 @@
         - The activity status of data updates.
       {%- if page.data.is_currency_reported and is_cadence_yearly %}
       * - **Currency**
-        - `Currency Report <{{ currency_report_url }}>`_
-        - See the report.
+        - See the `Currency Report <{{ currency_report_url }}>`_
+        - Currency is a measure based on data publishing and update frequency.
       * - **Latest and next update dates**
-        - `Currency Report <{{ currency_report_url }}>`_
-        - See the report.
+        - See the `Currency Report <{{ currency_report_url }}>`_
+        - See 'Table B' in the report.
       {% elif page.data.is_currency_reported %}
       * - **Currency**
         - `Currency Report <{{ currency_report_url }}>`_
-        - See the report.
+        - Currency is a measure based on data publishing and update frequency.
       * - **Latest update date**
         - `Currency Report <{{ currency_report_url }}>`_
-        - See the report.
+        - See 'Table A' in the report.
       {%- endif %}
       {%- if page.data.doi %}
       * - **DOI**
         - `{{ page.data.doi }} <https://doi.org/{{ page.data.doi }}>`_
-        -
+        - The Digital Object Identifier.
       {%- endif %}
       {%- if page.data.ecat_id %}
       * - **Persistent ID**
@@ -591,7 +591,7 @@
       :name: categorisation-specifications
       :class: h2
 
-   This is how the product is categorised.
+   The product is categorised with the following metadata.
 
    .. list-table::
       :name: categorisation-specifications-table
