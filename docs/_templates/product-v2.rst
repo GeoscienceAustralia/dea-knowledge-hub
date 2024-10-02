@@ -310,6 +310,12 @@
       * - **Last updated**
         - {{ page.data.published }}
       {%- endif %}
+      {%- if page.data.licence %}
+      {%- if page.data.licence.name and page.data.licence.link %}
+      * - **Licence**
+        - `{{ page.data.licence.name }} <{{ page.data.licence.link }}>`_
+      {%- endif %}
+      {%- endif %}
       {%- if page.data.parent_products %}
       {%- if page.data.parent_products.name and page.data.parent_products.link %}
       * - **Parent product(s)**
@@ -328,12 +334,6 @@
       {%- if tags_list %}
       * - **Tags**
         - {{ tags_list_component }}
-      {%- endif %}
-      {%- if page.data.licence %}
-      {%- if page.data.licence.name and page.data.licence.link %}
-      * - **Licence**
-        - `{{ page.data.licence.name }} <{{ page.data.licence.link }}>`_
-      {%- endif %}
       {%- endif %}
    {%- endif %}
 
@@ -573,29 +573,6 @@
         - `{{ page.data.ecat_id }} <https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/{{ page.data.ecat_id }}>`_
         - The eCat ID (for internal use).
       {%- endif %}
-      {%- if page.data.parent_products %}
-      {%- if page.data.parent_products.name and page.data.parent_products.link %}
-      * - **Parent product(s)**
-        - `{{ page.data.parent_products.name }} <{{ page.data.parent_products.link }}>`_
-        -
-      {%- endif %}
-      {%- endif %}
-      {%- if page.data.collection %}
-      {%- if page.data.collection.name and page.data.collection.link %}
-      * - **Collection**
-        - `{{ page.data.collection.name }} <{{ page.data.collection.link }}>`_
-        -
-      {%- elif page.data.collection.name %}
-      * - **Collection**
-        - {{ page.data.collection.name }}
-        -
-      {%- endif %}
-      {%- endif %}
-      {%- if tags_list %}
-      * - **Tags**
-        - {{ tags_list_component }}
-        -
-      {%- endif %}
       {%- if page.data.licence %}
       {%- if page.data.licence.name and page.data.licence.link and page.data.enable_credits %}
       * - **Licence**
@@ -606,6 +583,33 @@
         - `{{ page.data.licence.name }} <{{ page.data.licence.link }}>`_
         -
       {%- endif %}
+      {%- endif %}
+
+   .. rubric:: Classification
+      :name: classification-specifications
+      :class: h2
+
+   .. list-table::
+      :name: classification-specifications-table
+
+      {%- if page.data.parent_products %}
+      {%- if page.data.parent_products.name and page.data.parent_products.link %}
+      * - **Parent product(s)**
+        - `{{ page.data.parent_products.name }} <{{ page.data.parent_products.link }}>`_
+      {%- endif %}
+      {%- endif %}
+      {%- if page.data.collection %}
+      {%- if page.data.collection.name and page.data.collection.link %}
+      * - **Collection**
+        - `{{ page.data.collection.name }} <{{ page.data.collection.link }}>`_
+      {%- elif page.data.collection.name %}
+      * - **Collection**
+        - {{ page.data.collection.name }}
+      {%- endif %}
+      {%- endif %}
+      {%- if tags_list %}
+      * - **Tags**
+        - {{ tags_list_component }}
       {%- endif %}
 
 {% endif %}
