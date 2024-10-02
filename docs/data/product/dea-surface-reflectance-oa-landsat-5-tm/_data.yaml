@@ -52,7 +52,9 @@ tags:
 
 # Access
 
-maps: null
+maps:
+  - link: https://maps.dea.ga.gov.au/#share=s-17NAuY4sv71TbyCDIu4JErGWU1S
+    name: See it on a map
 
 explorers:
   - link: https://explorer.dea.ga.gov.au/products/ga_ls5t_ard_3

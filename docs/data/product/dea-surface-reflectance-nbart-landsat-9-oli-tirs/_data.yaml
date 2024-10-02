@@ -55,8 +55,8 @@ tags:
 # Access
 
 maps:
-  - link: https://maps.dea.ga.gov.au/
-    name: null
+  - link: https://maps.dea.ga.gov.au/#share=s-czCPOd989jf0H8ssWTc4BvnBkBg
+    name: See it on a map
 
 explorers:
   - link: https://explorer.dea.ga.gov.au/products/ga_ls9c_ard_3
