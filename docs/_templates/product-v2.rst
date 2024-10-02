@@ -459,6 +459,8 @@
       :name: attributes-specifications
       :class: h2
 
+   These are attributes of the product.
+
    .. list-table::
       :name: attributes-specifications-table
 
@@ -588,6 +590,8 @@
    .. rubric:: Categorisation
       :name: categorisation-specifications
       :class: h2
+
+   This is how the product is categorised.
 
    .. list-table::
       :name: categorisation-specifications-table
