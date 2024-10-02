@@ -8,7 +8,6 @@ from _modules import pr_preview
 
 build_mode = os.environ.get("BUILD_MODE")
 git_branch = os.environ.get("BRANCH")
-enable_tags = os.environ.get("LOCAL_ENABLE_TAGS") == "Yes"
 enable_redirects = os.environ.get("LOCAL_ENABLE_REDIRECTS") == "Yes"
 pr_preview_subdomain = os.environ.get("PR_PREVIEW_SUBDOMAIN")
 
@@ -38,7 +37,6 @@ exclude_patterns = [
     "notebooks/Supplementary_data/*.ipynb",
     "py-modindex/index.*",
 ]
-exclude_patterns += utilities.optional_exclude_pattern("LOCAL_ENABLE_TAGS", "tags")
 exclude_patterns += utilities.optional_exclude_pattern("LOCAL_ENABLE_USER_GUIDES", "guides")
 exclude_patterns += utilities.optional_exclude_pattern("LOCAL_ENABLE_DATA_PRODUCTS", "data")
 exclude_patterns += utilities.optional_exclude_pattern("LOCAL_ENABLE_VERSION_HISTORY", "data/version-history")
@@ -76,7 +74,6 @@ extensions = [
     "sphinxext.opengraph",
     "notfound.extension",
     "sphinx_copybutton",
-    # "sphinx_tags",
 ]
 
 myst_enable_extensions = [
@@ -116,8 +113,6 @@ napoleon_numpy_docstring = True
 notfound_template = "404-not-found.html"
 notfound_pagename = "404-not-found"
 notfound_urls_prefix = ""
-
-tags_create_tags = (is_production or is_pr_preview or enable_tags)
 
 html_css_files = [
     'styles/styles.css'
