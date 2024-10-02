@@ -459,18 +459,18 @@
       :name: attributes-specifications
       :class: h2
 
-   The product has the following attributes of metadata.
+   These metadata describe attributes of the product.
 
    .. list-table::
       :name: attributes-specifications-table
 
       * - **Official name**
         - {{ page.data.official_name }}
-        - Used in most contexts.
+        - The name used in most contexts.
       {% if page.data.full_technical_name %}
       * - **Technical name**
         - {{ page.data.full_technical_name }}
-        - Used in some technical contexts.
+        - The name used in some technical contexts.
       {%- endif %}
       {%- if page.data.is_latest_version and old_versions_list | length > 0 and page.data.enable_history %} {# If at least one old version exists. #}
       * - **Version**
@@ -591,7 +591,7 @@
       :name: categorisation-specifications
       :class: h2
 
-   The product is categorised with the following metadata.
+   These metadata categorise the product so that it can be found alongside related products.
 
    .. list-table::
       :name: categorisation-specifications-table
