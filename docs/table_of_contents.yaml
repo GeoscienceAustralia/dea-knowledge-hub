@@ -156,11 +156,10 @@ entries:
     subtrees:
       - caption: Overview
         entries:
-          - file: guides/about/intro
+          - file: guides/setup/README
 
       - caption: Access
         entries:
-          - file: guides/setup/README
           - file: guides/setup/dea_maps
           - file: guides/setup/explorer_guide
           - file: guides/setup/Sandbox/sandbox
@@ -200,6 +199,7 @@ entries:
           - file: guides/about/publications
           - file: guides/about/glossary
             title: DEA Glossary
+          - file: guides/about/intro
 
   # DEA Notebooks
 
@@ -241,17 +241,18 @@ entries:
 
   - file: validation/index
     subtrees:
-      - caption: Daily
+      - caption: Site
         entries:
-          - file: validation/daily-report/index
-            title: Daily reports
+          - file: validation/site-report/index
+            title: Site reports
             options:
               reversed: True
             entries:
-              - glob: validation/daily-report/*/index
+              - glob: validation/site-report/*/index
       - caption: User guides
         entries:
           - file: validation/user-guides
+            title: Visit the user guides
       # - caption: Quarterly Reports
       #   options:
       #     reversed: True

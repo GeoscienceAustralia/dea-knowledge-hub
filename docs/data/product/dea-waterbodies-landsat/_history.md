@@ -31,9 +31,9 @@ DEA Waterbodies 3.0.0 polygon names are the same as those in v2.0.0 but the vers
 
 DEA Waterbodies 2.0.0 will be decommissioned in the coming months after thoroughly testing the new version. Users will be notified before we decommission v2.0.0.
 
-### [Version 2.0.0](/data/old-version/dea-waterbodies-landsat-2.0.0/)
+### Version 2.0.0
 
-DEA Waterbodies 2.0.0 represents a reprocessing of DEA Waterbodies version 1 on [DEA Collection 3 Water Observations](/data/product/dea-water-observations-landsat), as well as a few incremental improvements. 
+[DEA Waterbodies 2.0.0](/data/old-version/dea-waterbodies-landsat-2.0.0/) represents a reprocessing of DEA Waterbodies version 1 on [DEA Collection 3 Water Observations](/data/product/dea-water-observations-landsat), as well as a few incremental improvements. 
 
 #### Key differences
 

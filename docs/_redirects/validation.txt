@@ -1,0 +1,13 @@
+# Validation redirects
+
+# The term 'Daily report' was changed to 'Site report' and therefore the location was added to the URL slug.
+
+validation/daily-report             validation/site-report
+validation/daily-report/2023-11-27  validation/site-report/2023-11-27-NSW1
+validation/daily-report/2023-11-26  validation/site-report/2023-11-26-SA1
+validation/daily-report/2023-09-22  validation/site-report/2023-09-22-MUL
+validation/daily-report/2023-07-25  validation/site-report/2023-07-25-MUL
+validation/daily-report/2023-05-09  validation/site-report/2023-05-09-MUL
+validation/daily-report/2023-04-22  validation/site-report/2023-04-22-MUL
+validation/daily-report/2023-01-17  validation/site-report/2023-01-17-MUL
+

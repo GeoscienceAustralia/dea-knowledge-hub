@@ -4,10 +4,10 @@ description: This is where you will find useful guides and information about DEA
 cards:
   - name: Overview
     image: /_files/user-guides-start-page/overview.*
-    description: "Digital Earth Australia creates free and open satellite data products for the benefit of Australia. `Learn about DEA </guides/about/intro/>`_."
+    description: "Digital Earth Australia creates free and open satellite data products for the benefit of Australia. `Get started with DEA </guides/setup/README/>`_."
   - name: Access
     image: /_files/user-guides-start-page/access.*
-    description: "Learn how to `get started with DEA </guides/setup/README/>`_ and access the `DEA Maps </guides/setup/dea_maps/>`_, `DEA Explorer </guides/setup/explorer_guide/>`_, and `DEA Sandbox </guides/setup/Sandbox/sandbox/>`_ platforms."
+    description: "Learn how to access the `DEA Maps </guides/setup/dea_maps/>`_, `DEA Explorer </guides/setup/explorer_guide/>`_, `DEA Sandbox </guides/setup/Sandbox/sandbox/>`_, `NCI </guides/setup/NCI/README/>`_, `STAC </guides/setup/gis/stac/>`_, and more."
   - name: Reference
     image: /_files/user-guides-start-page/reference.*
     description: "Here you will find reference guides like the `DEA Naming Conventions </guides/reference/collection_3_naming/>`_ and `DEA Summary Product Grid </guides/reference/collection_3_summary_grid/>`_."
