@@ -47,7 +47,9 @@ tags:
 
 # Access
 
-maps: null
+maps:
+  - link: https://maps.dea.ga.gov.au/#share=s-7YeWZKqWkF0Ctv5Av8RkHSWeNzQ
+    name: See it on a map
 
 explorers:
   - link: https://explorer.dea.ga.gov.au/products/high_tide_comp_20p
