@@ -49,7 +49,7 @@ tags:
 
 maps: null
   # - link: https://maps.dea.ga.gov.au/#share=s-oO5CFFpKC3Rn1aPCZFYeg97SheY
-  #   name: null
+  #   name: See it on a map
 
 explorers:
   - link: https://explorer.dea.ga.gov.au/products/ga_s2_wo_provisional_3
