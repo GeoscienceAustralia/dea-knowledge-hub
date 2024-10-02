@@ -60,7 +60,7 @@ maps:
 
 explorers:
   - link: https://explorer.dea.ga.gov.au/products/ga_ls9c_ard_3
-    name: Data explorer
+    name: null
 
 data:
   - link: https://thredds.nci.org.au/thredds/catalog/xu18/catalog.html
@@ -70,7 +70,7 @@ data:
 
 code_examples:
   - link: /notebooks/DEA_products/DEA_Landsat_Surface_Reflectance/
-    name: Code examples
+    name: null
 
 web_services:
   - link: https://ows.dea.ga.gov.au/?service=WMS&version=1.3.0&request=GetCapabilities

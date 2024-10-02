@@ -59,7 +59,7 @@ tags:
 
 maps:
   - link: https://maps.dea.ga.gov.au/story/DEACoastlines
-    name: See it on a map
+    name: null
 
 explorers: null
 
@@ -69,7 +69,7 @@ data:
 
 code_examples:
   - link: /notebooks/DEA_products/DEA_Coastlines/
-    name: Code examples
+    name: null
   - link: https://github.com/GeoscienceAustralia/dea-coastlines
     name: GitHub repository
 

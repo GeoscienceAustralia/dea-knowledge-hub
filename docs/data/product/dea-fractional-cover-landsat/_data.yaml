@@ -55,7 +55,7 @@ maps: null
 
 explorers:
   - link: https://explorer.dea.ga.gov.au/products/ga_ls_fc_3
-    name: Data explorer
+    name: null
 
 data:
   - link: https://thredds.nci.org.au/thredds/catalog/jw04/ga_ls_fc_3/catalog.html
@@ -65,11 +65,11 @@ data:
 
 code_examples:
   - link: /notebooks/DEA_products/DEA_Fractional_Cover/
-    name: Code examples
+    name: null
 
 web_services:
   - link: https://ows.dea.ga.gov.au
-    name: Web Services
+    name: null
 
 custom: null
 

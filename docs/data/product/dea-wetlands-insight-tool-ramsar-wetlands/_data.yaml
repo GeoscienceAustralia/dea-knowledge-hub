@@ -52,7 +52,7 @@ tags:
 
 maps:
   - link: https://maps.dea.ga.gov.au/#share=s-8C1ajm6k7py0B375G4tetZ2JC6s
-    name: See it on a map
+    name: null
 
 explorers: null
 
@@ -62,7 +62,7 @@ data:
 
 code_examples:
   - link: /notebooks/DEA_products/DEA_Wetlands_Insight_Tool/
-    name: Code examples
+    name: null
 
 web_services: null
 

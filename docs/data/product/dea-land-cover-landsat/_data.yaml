@@ -51,11 +51,11 @@ tags:
 
 maps:
   - link: https://maps.dea.ga.gov.au/story/DEALandCover
-    name: See it on a map
+    name: null
 
 explorers:
   - link: https://explorer.dea.ga.gov.au/products/ga_ls_landcover_class_cyear_2
-    name: Data explorer
+    name: null
 
 data:
   - link: http://dea-public-data.s3-website-ap-southeast-2.amazonaws.com/?prefix=derivative/ga_ls_landcover_class_cyear_2/
@@ -63,11 +63,11 @@ data:
 
 code_examples:
   - link: /notebooks/DEA_products/DEA_Land_Cover/
-    name: Code examples
+    name: null
 
 web_services:
   - link: https://ows.dea.ga.gov.au/
-    name: Web Services
+    name: null
 
 custom: null
 

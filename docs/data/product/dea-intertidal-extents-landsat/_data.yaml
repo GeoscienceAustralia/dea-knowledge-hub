@@ -58,7 +58,7 @@ maps: null
 
 explorers:
   - link: https://explorer.dea.ga.gov.au/products/item_v2
-    name: Data explorer
+    name: null
   - link: https://explorer.dea.ga.gov.au/products/item_v2_conf
     name: Confidence data explorer
 

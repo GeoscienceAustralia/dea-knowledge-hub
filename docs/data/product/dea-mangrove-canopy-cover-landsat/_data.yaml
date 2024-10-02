@@ -56,11 +56,11 @@ tags:
 
 maps:
   - link: https://maps.dea.ga.gov.au/#share=s-lkNZRIoEC2JixvX3a7RoCGR5czq
-    name: See it on a map
+    name: null
 
 explorers:
   - link: https://explorer.dea.ga.gov.au/products/ga_ls_mangrove_cover_cyear_3
-    name: Data explorer
+    name: null
 
 data:
   - link: https://data.dea.ga.gov.au/?prefix=derivative/ga_ls_mangrove_cover_cyear_3/3-0-0/
@@ -70,7 +70,7 @@ data:
 
 code_examples:
   - link: /notebooks/DEA_products/DEA_Mangroves/
-    name: Code examples
+    name: null
 
 web_services:
   - link: https://ows.dea.ga.gov.au/
