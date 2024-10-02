@@ -9,18 +9,18 @@
 
 {% set access_labels = {
    "map": "DEA Maps",
-   "explorer": "Data Explorer",
+   "explorer": "DEA Explorer",
    "data": "Data sources",
-   "code_sample": "Code sample",
-   "web_service": "Web service",
+   "web_service": "Web services",
+   "code_sample": "Code examples",
 } %}
 
 {% set access_names = {
    "map": "See it on a map",
    "explorer": "Explore data availability",
    "data": "Get the data online",
-   "code_sample": "View a code sample",
    "web_service": "Get via web service",
+   "code_sample": "View code examples",
 } %}
 
 {% set lineage_type_terms = {
