@@ -46,7 +46,7 @@ tags:
 # Access
 
 maps:
-  - link: https://maps.dea.ga.gov.au/#share=s-3qGgGRwBIgCnqDnPtOsN6T4UX5H # Alternative: https://maps.dea.ga.gov.au/#share=s-r7JEUiLzrVzwZIYcis6hVlMpDdT
+  - link: https://maps.dea.ga.gov.au/#share=s-3qGgGRwBIgCnqDnPtOsN6T4UX5H # TODO review: https://maps.dea.ga.gov.au/#share=s-r7JEUiLzrVzwZIYcis6hVlMpDdT
     name: See it on a map
 
 explorers:
