@@ -455,12 +455,12 @@
    {{ page.figures.bands_footnote if page.figures.bands_footnote }}
    {% endif %}
 
-   .. rubric:: Other specifications
-      :name: other-specifications
+   .. rubric:: Attributes
+      :name: attributes-specifications
       :class: h2
 
    .. list-table::
-      :name: other-specifications-table
+      :name: attributes-specifications-table
 
       * - **Official name**
         - {{ page.data.official_name }}
