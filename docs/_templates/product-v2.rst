@@ -7,7 +7,7 @@
 
 {# Terms and static strings #}
 
-{% set access_names = {
+{% set access_labels = {
    "map": "DEA Maps",
    "explorer": "Data Explorer",
    "data": "Data sources",
@@ -15,7 +15,7 @@
    "web_service": "Web service",
 } %}
 
-{% set access_labels = {
+{% set access_names = {
    "map": "See it on a map",
    "explorer": "Explore data availability",
    "data": "Get the data online",

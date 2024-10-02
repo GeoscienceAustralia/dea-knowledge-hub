@@ -81,7 +81,7 @@ licence:
 # custom:
 #   - icon: globe
 #     link: https://example.com
-#     label: Get via API
+#     label: API
 #     name: Access the API
 #     description: Learn how to `use the API <https://satpathapi.dea.ga.gov.au/user-guide>`_
 #     class: highlighted
