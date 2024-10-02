@@ -2,7 +2,7 @@
 
 {% set page = {
    "data": load('_data.yaml'),
-   "figures": load('_figures.yaml'),
+   "tables": load('_tables.yaml'),
 } %}
 
 {# Terms and static strings #}
@@ -76,7 +76,7 @@
 
 {% set tags_list = page.data.tags | select("!=", None) | list %}
 
-{% set bands_table_list = page.figures.bands_table | selectattr("name",  "!=", None) | list %}
+{% set bands_table_list = page.tables.bands_table | selectattr("name",  "!=", None) | list %}
 
 {% set page_title = page.data.official_name if page.data.is_latest_version else "{}: {}".format(page.data.version_number, page.data.official_name) %}
 
@@ -452,7 +452,7 @@
         - {{ band.description or no_data_terms.dash }}
       {% endfor %}
 
-   {{ page.figures.bands_footnote if page.figures.bands_footnote }}
+   {{ page.tables.bands_footnote if page.tables.bands_footnote }}
    {% endif %}
 
    .. rubric:: Attributes
@@ -585,14 +585,14 @@
       {%- endif %}
       {%- endif %}
 
-   .. rubric:: Classification
-      :name: classification-specifications
+   .. rubric:: Categorisation
+      :name: categorisation-specifications
       :class: h2
 
    .. list-table::
-      :name: classification-specifications-table
+      :name: categorisation-specifications-table
 
-      {%- if page.data.parent_products %}
+      {% if page.data.parent_products %}
       {%- if page.data.parent_products.name and page.data.parent_products.link %}
       * - **Parent product(s)**
         - `{{ page.data.parent_products.name }} <{{ page.data.parent_products.link }}>`_
