@@ -31,7 +31,7 @@ parent_products:
   name: Sentinel-2A and -2B and Landsat 7, 8, and 9 NBART and Observational Attributes 
   link: /data/category/dea-surface-reflectance/
 collection:
-  name: Geoscience Australia Landsat Collection 3; Geoscience Australia Sentinel-2 Collection 3  
+  name: "`Geoscience Australia Landsat Collection 3 </search/?q=Geoscience+Australia+Landsat+Collection+3>`_, `Geoscience Australia Sentinel-2 Collection 3 </search/?q=Geoscience+Australia+Sentinel-2+Collection+3>`_"
   link: null
 doi: 10.26186/149403
 ecat_id: "149403"
