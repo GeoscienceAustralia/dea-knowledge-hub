@@ -451,14 +451,14 @@
    {{ page.tables.bands_footnote if page.tables.bands_footnote }}
    {% endif %}
 
-   .. rubric:: Attributes
-      :name: attributes-specifications
+   .. rubric:: Product information
+      :name: product-information-specifications
       :class: h2
 
-   These metadata describe attributes of the product.
+   These metadata provide general information about the product.
 
    .. list-table::
-      :name: attributes-specifications-table
+      :name: product-information-specifications-table
 
       * - **Official name**
         - {{ page.data.official_name }}
@@ -582,14 +582,14 @@
       {%- endif %}
       {%- endif %}
 
-   .. rubric:: Categorisation
-      :name: categorisation-specifications
+   .. rubric:: Product categorisation
+      :name: product-categorisation-specifications
       :class: h2
 
    These metadata categorise the product so that it can be found alongside related products.
 
    .. list-table::
-      :name: categorisation-specifications-table
+      :name: product-categorisation-specifications-table
 
       {% if page.data.parent_products %}
       {%- if page.data.parent_products.name and page.data.parent_products.link %}
