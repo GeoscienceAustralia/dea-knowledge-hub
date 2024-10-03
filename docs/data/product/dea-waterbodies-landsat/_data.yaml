@@ -31,7 +31,7 @@ parent_products:
   link: /data/product/dea-water-observations-landsat/
 collection:
   name: Geoscience Australia Landsat Collection 3
-  link: null
+  link: /search/?q=Geoscience+Australia+Landsat+Collection+3
 doi: 10.26186/148920
 ecat_id: "148920"
 licence:

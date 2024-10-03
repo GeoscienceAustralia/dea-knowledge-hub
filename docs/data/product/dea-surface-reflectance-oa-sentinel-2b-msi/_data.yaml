@@ -32,7 +32,7 @@ parent_products:
   link: null
 collection:
   name: Geoscience Australia Sentinel-2 Collection 3
-  link: null
+  link: /search/?q=Geoscience+Australia+Sentinel-2+Collection+3
 doi: 10.26186/146570
 ecat_id: "146570"
 nci_code: ka08
