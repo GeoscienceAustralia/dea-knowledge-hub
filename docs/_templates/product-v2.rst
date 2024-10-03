@@ -166,7 +166,7 @@
       {%- if is_frequency_ongoing %}
       :Data updates: {{ data_update_frequency }}, {{ data_update_activity }}
       {%- else %}
-      :Data updates: {{ data_update_activity }} (Previously: {{ data_update_frequency }})
+      :Data updates: {{ data_update_activity }}, Previously: {{ data_update_frequency }}
       {%- endif %}
 
    .. container::
@@ -541,7 +541,7 @@
       {%- else %}
       * - **Update frequency**
         - Previously: {{ data_update_frequency }}
-        - When data updates were active, this was their expected frequency. Also called 'Temporal resolution'.
+        - Previously, when data updates were active, this was their expected frequency. Also called 'Temporal resolution'.
       {%- endif %}
       * - **Update activity**
         - {{ data_update_activity }}
