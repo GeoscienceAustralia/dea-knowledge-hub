@@ -161,9 +161,9 @@
       {%- elif page.data.temporal_coverage_start and page.data.temporal_coverage_end %}
       :Coverage: {{ page.data.temporal_coverage_start }} to {{ page.data.temporal_coverage_end }}
       {%- elif page.data.temporal_coverage_start  %}
-      :Data since: {{ page.data.temporal_coverage_start }}
+      :Coverage start: {{ page.data.temporal_coverage_start }}
       {%- elif page.data.temporal_coverage_end  %}
-      :Data until: {{ page.data.temporal_coverage_end }}
+      :Coverage end: {{ page.data.temporal_coverage_end }}
       {%- endif %}
       {%- if is_frequency_ongoing and is_frequency_multiple_words %}
       :Data updates: '{{ data_update_frequency }}' frequency, {{ data_update_activity }}
