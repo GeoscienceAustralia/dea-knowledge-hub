@@ -34,13 +34,13 @@
 } %}
 
 {% set data_update_frequency_terms = {
-   "AS_NEEDED": "'As needed'",
+   "AS_NEEDED": "As needed",
    "DAILY": "Daily",
    "WEEKLY": "Weekly",
    "MONTHLY": "Monthly",
    "YEARLY": "Yearly",
-   "2_YEARS": "'Every 2 years'",
-   "10_MIN": "'Every 10 minutes'",
+   "2_YEARS": "Every 2 years",
+   "10_MIN": "Every 10 minutes",
 } %}
 
 {% set data_update_activity_terms = {
@@ -99,6 +99,8 @@
 {% set is_frequency_ongoing = data_update_activity == data_update_activity_terms.ONGOING %}
 
 {% set is_cadence_yearly = data_update_frequency == data_update_frequency_terms.YEARLY %}
+
+{% set is_frequency_multiple_words = data_update_frequency.split(" ") | length > 1 %}
 
 {% set has_access_data = maps_list or data_list or explorers_list or web_services_list or code_samples_list or custom_list %}
 
@@ -163,8 +165,12 @@
       {%- elif page.data.temporal_coverage_end  %}
       :Data until: {{ page.data.temporal_coverage_end }}
       {%- endif %}
-      {%- if is_frequency_ongoing %}
+      {%- if is_frequency_ongoing and is_frequency_multiple_words %}
+      :Data updates: '{{ data_update_frequency }}' frequency, {{ data_update_activity }}
+      {%- elif is_frequency_ongoing  %}
       :Data updates: {{ data_update_frequency }} frequency, {{ data_update_activity }}
+      {%- elif is_frequency_multiple_words  %}
+      :Data updates: {{ data_update_activity }}, Previously: '{{ data_update_frequency }}' frequency
       {%- else %}
       :Data updates: {{ data_update_activity }}, Previously: {{ data_update_frequency }} frequency
       {%- endif %}
