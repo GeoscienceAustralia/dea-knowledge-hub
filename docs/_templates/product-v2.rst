@@ -301,10 +301,10 @@
       {%- endif %}
       {% if page.data.is_currency_reported and is_cadence_yearly %}
       * - **Currency**
-        - `See currency and the latest and next update dates <{{ currency_report_url }}>`_.
+        - `See currency and the latest and next update dates <{{ currency_report_url }}>`_
       {% elif page.data.is_currency_reported %}
       * - **Currency**
-        - `See currency and the latest update date <{{ currency_report_url }}>`_.
+        - `See currency and the latest update date <{{ currency_report_url }}>`_
       {%- endif %}
       {%- if page.data.parent_products %}
       {%- if page.data.parent_products.name and page.data.parent_products.link %}
