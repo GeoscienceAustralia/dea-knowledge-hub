@@ -550,17 +550,16 @@
       * - **Update activity**
         - {{ data_update_activity }}
         - The activity status of data updates.
-      {%- if page.data.is_currency_reported and is_cadence_yearly %}
+      {%- if page.data.is_currency_reported %}
       * - **Currency**
         - See the `Currency Report <{{ currency_report_url }}>`_
         - Currency is a measure based on data publishing and update frequency.
+      {%- endif %}
+      {%- if page.data.is_currency_reported and is_cadence_yearly %}
       * - **Latest and next update dates**
         - See the `Currency Report <{{ currency_report_url }}>`_
         - See Table B of the report.
       {% elif page.data.is_currency_reported %}
-      * - **Currency**
-        - `Currency Report <{{ currency_report_url }}>`_
-        - Currency is a measure based on data publishing and update frequency.
       * - **Latest update date**
         - `Currency Report <{{ currency_report_url }}>`_
         - See Table A of the report.
