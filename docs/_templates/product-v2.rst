@@ -34,13 +34,13 @@
 } %}
 
 {% set data_update_frequency_terms = {
-   "AS_NEEDED": "'As needed' frequency",
-   "DAILY": "Daily frequency",
-   "WEEKLY": "Weekly frequency",
-   "MONTHLY": "Monthly frequency",
-   "YEARLY": "Yearly frequency",
-   "2_YEARS": "'Every 2 years' frequency",
-   "10_MIN": "'Every 10 minutes' frequency",
+   "AS_NEEDED": "'As needed'",
+   "DAILY": "Daily",
+   "WEEKLY": "Weekly",
+   "MONTHLY": "Monthly",
+   "YEARLY": "Yearly",
+   "2_YEARS": "'Every 2 years'",
+   "10_MIN": "'Every 10 minutes'",
 } %}
 
 {% set data_update_activity_terms = {
@@ -164,9 +164,9 @@
       :Data until: {{ page.data.temporal_coverage_end }}
       {%- endif %}
       {%- if is_frequency_ongoing %}
-      :Data updates: {{ data_update_frequency }}, {{ data_update_activity }}
+      :Data updates: {{ data_update_frequency }} frequency, {{ data_update_activity }}
       {%- else %}
-      :Data updates: {{ data_update_activity }}, Previously: {{ data_update_frequency }}
+      :Data updates: {{ data_update_activity }}, Previously: {{ data_update_frequency }} frequency
       {%- endif %}
 
    .. container::
@@ -540,7 +540,7 @@
         - The expected frequency of data updates. Also called 'Temporal resolution'.
       {%- else %}
       * - **Update frequency**
-        - Previously: {{ data_update_frequency }}
+        - {{ data_update_frequency }} (Inactive)
         - Previously, when data updates were active, this was their expected frequency. Also called 'Temporal resolution'.
       {%- endif %}
       * - **Update activity**
