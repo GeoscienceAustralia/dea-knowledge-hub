@@ -7,9 +7,10 @@
         font-weight: bold;
     }
 
-    dl dd p {
-        line-height: 1.15rem;
-        margin-bottom: 0.35rem;
+    dl dd, dl dt {
+        p {
+            display: inline;
+        }
     }
 
     & > div:nth-child(1) {
