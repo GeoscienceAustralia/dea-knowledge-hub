@@ -26,7 +26,7 @@ parent_products:
   link: /data/category/dea-surface-reflectance/
 collection:
   name: Geoscience Australia Landsat Collection 2
-  link: null
+  link: /search/?q=Geoscience+Australia+Landsat+Collection+2
 doi: 10.4225/25/5a615705d20f7
 ecat: "113843"
 nci: null
