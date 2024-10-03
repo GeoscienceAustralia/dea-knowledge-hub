@@ -22,6 +22,12 @@
 
 Learn more about the [DEA Summary Product Grid](/guides/reference/collection_3_summary_grid/).
 
+## 3 Oct 2024: DEA Landsat Derivative Product Upgrade Downtime (9 October to 11 October)
+
+Digital Earth Australia (DEA) is releasing Landsat derivative product upgrades for [DEA Water Observations Statistics](/data/product/dea-water-observations-statistics-landsat/), [DEA Fractional Cover Percentiles](/data/product/dea-fractional-cover-percentiles-landsat/), [DEA Tasseled Cap Percentiles](/data/product/dea-tasseled-cap-percentiles-landsat/) (provisional product) and [DEA Mangrove Canopy Cover](/data/product/dea-mangrove-canopy-cover-landsat/).
+
+The upgrades are set to take place between the 9&ndash;11 of October 2024. Users should expect all existing services for these products will be unavailable from 9am 9 October until 9am 11 October (AEDT). We recommend not using the above four products during this time. A DEA Tech Alert will be sent out when upgrades are completed. 
+
 ## 26 Sep 2024: 's2cloudless' ARD reprocessing underway
 
 We have begun reprocessing the older Sentinel-2 ARD data that was impacted by a bug in the s2cloudless 
