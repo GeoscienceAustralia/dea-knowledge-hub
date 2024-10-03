@@ -5,7 +5,13 @@
    "tables": load('_tables.yaml'),
 } %}
 
-{# Terms and static strings #}
+{# Constant values #}
+
+{% set max_page_title_length = 200 %}
+
+{% set no_data_terms = {
+   "dash": "\-",
+} %}
 
 {% set access_labels = {
    "map": "DEA Maps",
@@ -48,10 +54,6 @@
    "NO_UPDATES": "No further updates",
    "DEVELOPMENT": "Awaiting development",
    "PAUSED": "Currently paused",
-} %}
-
-{% set no_data_terms = {
-   "dash": "\-",
 } %}
 
 {# Computed variables #}
@@ -120,9 +122,9 @@
 
 .. rst-class:: product-page
 
-{{ "=" * 200 }}
-{{ page_title }}
-{{ "=" * 200 }}
+{{ "=" * max_page_title_length }}
+{{ page_title | truncate(max_page_title_length) }}
+{{ "=" * max_page_title_length }}
 {% endset %}
 
 {# HTML end scripts component #}
