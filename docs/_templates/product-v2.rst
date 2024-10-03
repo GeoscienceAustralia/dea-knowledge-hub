@@ -471,7 +471,7 @@
       {%- if page.data.is_latest_version and old_versions_list | length > 0 and page.data.enable_history %} {# If at least one old version exists. #}
       * - **Version**
         - {{ page.data.version_number }}
-        - The version number of the product. See the `version history <./?tab=history>`_.
+        - The version number of the product. See the `History tab <./?tab=history>`_.
       {%- elif page.data.is_latest_version %}
       * - **Version**
         - {{ page.data.version_number }}
