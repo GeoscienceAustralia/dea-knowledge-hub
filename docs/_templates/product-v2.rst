@@ -463,7 +463,7 @@
       :name: product-information-specifications
       :class: h2
 
-   These metadata provide general information about the product.
+   This metadata provides general information about the product.
 
    .. list-table::
       :name: product-information-specifications-table
@@ -594,7 +594,7 @@
       :name: product-categorisation-specifications
       :class: h2
 
-   These metadata categorise the product so that it can be found alongside related products.
+   This metadata categorises the product so that it can be found alongside related products.
 
    .. list-table::
       :name: product-categorisation-specifications-table
