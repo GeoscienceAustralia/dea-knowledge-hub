@@ -56,7 +56,7 @@
    "PAUSED": "Currently paused",
 } %}
 
-{# Computed variables #}
+{# Computed values #}
 
 {% set maps_list = page.data.maps | selectattr("link",  "!=", None) | list %}
 
