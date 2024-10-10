@@ -21,8 +21,8 @@ product_ids:
   - ga_ls_mangrove_cover_cyear_3
 
 parent_products:
-  name: DEA Fractional Cover (Landsat) and DEA Tasseled Cap Percentiles (Landsat)
-  link: /data/product/dea-fractional-cover-percentiles-landsat/
+  name: "`DEA Fractional Cover (Landsat) </data/product/dea-fractional-cover-landsat/>`_ and `DEA Tasseled Cap Percentiles (Landsat) </data/product/dea-tasseled-cap-percentiles-landsat/>`_"
+  link: null
 collection:
   name: Geoscience Australia Landsat Collection 3
   link: null
