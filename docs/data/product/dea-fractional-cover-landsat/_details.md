@@ -7,9 +7,10 @@ This information is used by policy agencies, natural and agricultural land resou
 ## What this product offers
 
 Fractional Cover (FC), developed by the Joint Remote Sensing Research Program, is a measurement that splits the landscape into three parts, or fractions:
-* green (leaves, grass, and growing crops)
-* brown (branches, dry grass or hay, and dead leaf litter)
-* bare ground (soil or rock)
+
+* Green (leaves, grass, and growing crops)
+* Brown (branches, dry grass or hay, and dead leaf litter)
+* Bare ground (soil or rock)
 
 Digital Earth Australia (DEA) uses Fractional Cover to characterise every 30 m square of Australia for any point in time from 1986 to today.
 

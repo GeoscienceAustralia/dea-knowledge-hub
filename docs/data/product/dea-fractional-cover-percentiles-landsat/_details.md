@@ -1,10 +1,10 @@
 ## Background
 
 The Fractional Cover (Landsat) product, developed by the Joint Remote Sensing Research Program, provides information about the the proportions of:
-* green vegetation
-* non-green vegetation (including deciduous trees during autumn and dry grass)
-* bare areas
-for every 30m x 30m ground footprint. It provides insight into how areas of dry vegetation and/or bare soil and green vegetation are changing over time.
+
+* Green vegetation
+* Non-green vegetation (including deciduous trees during autumn and dry grass)
+* Bare areas for every 30m x 30m ground footprint. It provides insight into how areas of dry vegetation and/or bare soil and green vegetation are changing over time.
 
 Fractional Cover Percentiles (Landsat) estimate the 10th, 50th, and 90th percentiles independently for the green vegetation, non-green vegetation, and bare soil fractions observed in each calendar year.
 
