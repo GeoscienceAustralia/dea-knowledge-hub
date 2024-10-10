@@ -3,26 +3,20 @@
 
 # Overview
 
-official_name: DEA Mangrove Canopy Cover (Landsat)
-full_technical_name: Geoscience Australia Mangrove Canopy Cover Collection 3
+title: DEA Mangrove Canopy Cover (Landsat)
+long_title: Geoscience Australia Mangrove Canopy Cover Collection 3
 header_image: /_files/cmi/DEA-mangroves.jpg
 version: 3.0.0
 is_latest_version: false
 latest_version_link: /data/product/dea-mangrove-canopy-cover-landsat/
 is_provisional: false
-
-lineage_type: DERIVATIVE
-spatial_data_type: RASTER
-
-temporal_coverage_start: 1987
-temporal_coverage_end: 2022
-temporal_coverage_custom: null
-
-data_update_frequency: YEARLY
-data_update_activity: ONGOING
-is_currency_reported: true
-
-resolution: 30 m
+product_type: Derivative
+spatial_data_type: Raster
+time_span:
+  start: 1987
+  end: 2022
+update_frequency: Yearly
+next_update: null
 product_ids:
   - ga_ls_mangrove_cover_cyear_3
 
@@ -31,9 +25,10 @@ parent_products:
   link: /data/product/dea-fractional-cover-percentiles-landsat/
 collection:
   name: Geoscience Australia Landsat Collection 3
-  link: /search/?q=Geoscience+Australia+Landsat+Collection+3
+  link: null
 doi: null
-ecat_id: "145497"
+ecat: "145497"
+nci: null
 licence:
   name: Creative Commons Attribution 4.0 International Licence
   link: https://creativecommons.org/licenses/by/4.0/
@@ -55,11 +50,11 @@ tags:
 
 maps:
   - link: https://maps.dea.ga.gov.au/#share=s-1WoTW0dJY5MKU58ovTgOcZEYc48
-    name: null
+    name: See it on a map
 
 explorers:
   - link: https://explorer.dea.ga.gov.au/products/ga_ls_mangrove_cover_cyear_3
-    name: null
+    name: Data explorer
 
 data:
   - link: https://data.dea.ga.gov.au/?prefix=derivative/ga_ls_mangrove_cover_cyear_3/3-0-0/
@@ -69,7 +64,7 @@ data:
 
 code_examples:
   - link: /notebooks/DEA_products/DEA_Mangroves/
-    name: null
+    name: Code examples
 
 web_services:
   - link: https://ows.dea.ga.gov.au/
@@ -87,10 +82,9 @@ old_versions:
 # Settings
 
 enable_overview: true
+enable_access: true
 enable_details: true
 enable_quality: true
-enable_specifications: true
-enable_access: true
 enable_history: true
 enable_faqs: false
 enable_credits: true
