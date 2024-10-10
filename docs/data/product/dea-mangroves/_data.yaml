@@ -3,10 +3,10 @@
 
 # Overview
 
-title: DEA Mangrove Canopy Cover (Landsat)
+title: DEA Mangroves (Landsat)
 long_title: Geoscience Australia Mangrove Canopy Cover Collection 3
 header_image: /_files/cmi/DEA-mangroves.jpg
-version: 3.0.0
+version: 4.0.0
 is_latest_version: true
 latest_version_link: null
 is_provisional: false
@@ -14,7 +14,7 @@ product_type: Derivative
 spatial_data_type: Raster
 time_span:
   start: 1987
-  end: 2022
+  end: 2023
 update_frequency: Yearly
 next_update: null
 product_ids:
@@ -49,7 +49,7 @@ tags:
 # Access
 
 maps:
-  - link: https://maps.dea.ga.gov.au/#share=s-1WoTW0dJY5MKU58ovTgOcZEYc48
+  - link: https://maps.dea.ga.gov.au/#share=s-riBc1GkNNMcUQoRWviu1Sst88or # TODO review: https://maps.dea.ga.gov.au/#share=s-1WoTW0dJY5MKU58ovTgOcZEYc48
     name: See it on a map
 
 explorers:
@@ -57,9 +57,9 @@ explorers:
     name: Data explorer
 
 data:
-  - link: https://data.dea.ga.gov.au/?prefix=derivative/ga_ls_mangrove_cover_cyear_3/3-0-0/
+  - link: https://data.dea.ga.gov.au/?prefix=derivative/ga_ls_mangrove_cover_cyear_3/4-0-0/
     name: Access the data on AWS
-  - link: https://thredds.nci.org.au/thredds/catalog/jw04/ga_ls_mangrove_cover_cyear_3/3-0-0/catalog.html
+  - link: https://thredds.nci.org.au/thredds/catalog/jw04/ga_ls_mangrove_cover_cyear_3/4-0-0/catalog.html
     name: Access the data on NCI
 
 code_examples:
@@ -75,6 +75,9 @@ custom: null
 # History
 
 old_versions:
+  - version: 3.0.0
+    title: DEA Mangrove Canopy Cover (Landsat)
+    slug: dea-mangrove-canopy-cover-landsat-3.0.0
   - version: 2.0.2
     title: DEA Mangrove Canopy Cover (Landsat)
     slug: dea-mangrove-canopy-cover-landsat-2.0.2

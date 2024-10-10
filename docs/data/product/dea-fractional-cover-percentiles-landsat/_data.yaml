@@ -6,7 +6,7 @@
 title: DEA Fractional Cover Percentiles (Landsat)
 long_title: Geoscience Australia Landsat Fractional Cover Percentiles Collection 3
 header_image: /_files/cmi/FractionalCover1_0.jpg
-version: 3.0.0
+version: 4.0.0
 is_latest_version: true
 latest_version_link: null
 is_provisional: false
@@ -46,18 +46,22 @@ tags:
 
 # Access
 
-maps: null
-  # - link: https://maps.dea.ga.gov.au/#share=s-uTFeDOnmZpXV2Ub7kRC50Q0v4vj
-  #   name: See it on a map
+maps:
+  - link: https://maps.dea.ga.gov.au/#share=s-dsn0y5piVd34kvlDoOEEi1oSEWk # TODO review: https://maps.dea.ga.gov.au/#share=s-uTFeDOnmZpXV2Ub7kRC50Q0v4vj
+    name: See it on a map
 
-explorers: null
+explorers:
+  - link: https://explorer.dea.ga.gov.au/products/ga_ls_fc_pc_cyear_3
+    name: Data explorer
 
 data:
-  - link: https://data.dea.ga.gov.au/?prefix=derivative/ga_ls_fc_pc_cyear_3/
-    name: Digital Earth Australia - Public Data
+  - link: https://data.dea.ga.gov.au/?prefix=derivative/ga_ls_fc_pc_cyear_3/4-0-0/
+    name: Digital Earth Australia - Public Data on AWS
+  - link: https://thredds.nci.org.au/thredds/catalog/jw04/ga_ls_fc_pc_cyear_3/4-0-0/catalog.html
+    name: Digital Earth Australia - Public Data on NCI
 
 code_examples:
-  - link: https://explorer.dea.ga.gov.au/products/ga_ls_tc_pc_cyear_3
+  - link: https://explorer.dea.ga.gov.au/products/ga_ls_fc_pc_cyear_3
     name: Data explorer
 
 web_services: null
@@ -67,6 +71,9 @@ custom: null
 # History
 
 old_versions:
+  - version: 3.0.0
+    title: DEA Fractional Cover Percentiles (Landsat)
+    slug: dea-fractional-cover-percentiles-landsat-3.0.0
   - version: 2.2.1
     title: DEA Fractional Cover Percentiles (Landsat)
     slug: dea-fractional-cover-percentiles-landsat-2.2.1

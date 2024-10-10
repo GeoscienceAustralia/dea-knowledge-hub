@@ -6,7 +6,7 @@
 title: DEA Water Observations Statistics (Landsat)
 long_title: Geoscience Australia Landsat Water Observation Statistics Collection 3
 header_image: /_files/cmi/WOfS-Burketown-Normanton-QLD.png
-version: 3.1.6
+version: 2.0.0
 is_latest_version: true
 latest_version_link: null
 is_provisional: false
@@ -29,7 +29,7 @@ parent_products:
 collection:
   name: Geoscience Australia Landsat Collection 3
   link: null
-doi: null
+doi: 10.26186/146091
 ecat: "146091"
 nci: null
 licence:
@@ -51,6 +51,7 @@ tags:
 # Access
 
 maps: null
+  # TODO review:
   # - link: https://maps.dea.ga.gov.au/#share=s-yIyPPjQlWxVBLg10WJBQd8KrMgt
   #   name: Apr-Oct summaries on DEA Maps
   # - link: https://maps.dea.ga.gov.au/#share=s-vT2uXq2ZYxfuKzHZTYM7Xc9kXY0
@@ -65,14 +66,22 @@ explorers:
     name: Data explorer
 
 data:
-  - link: https://data.dea.ga.gov.au/?prefix=derivative/ga_ls_wo_fq_apr_oct_3/1-6-0/
+  - link: https://data.dea.ga.gov.au/?prefix=derivative/ga_ls_wo_fq_apr_oct_3/2-0-0/
     name: Apr-Oct summaries since 1986 - AWS access
-  - link: https://data.dea.ga.gov.au/?prefix=derivative/ga_ls_wo_fq_nov_mar_3/1-6-0/
+  - link: https://data.dea.ga.gov.au/?prefix=derivative/ga_ls_wo_fq_nov_mar_3/2-0-0/
     name: Nov-Mar summaries since 1986 - AWS access
-  - link: https://data.dea.ga.gov.au/?prefix=derivative/ga_ls_wo_fq_cyear_3/1-6-0/
+  - link: https://data.dea.ga.gov.au/?prefix=derivative/ga_ls_wo_fq_cyear_3/2-0-0/
     name: Annual calendar year summaries since 1986 - AWS access
-  - link: https://data.dea.ga.gov.au/?prefix=derivative/ga_ls_wo_fq_myear_3/1-6-0/
+  - link: https://data.dea.ga.gov.au/?prefix=derivative/ga_ls_wo_fq_myear_3/2-0-0/
     name: All-time summary 1986 to present - AWS access
+  - link: https://thredds.nci.org.au/thredds/catalog/jw04/ga_ls_wo_fq_apr_oct_3/catalog.html
+    name: Apr-Oct summaries since 1986 - NCI access
+  - link: https://thredds.nci.org.au/thredds/catalog/jw04/ga_ls_wo_fq_nov_mar_3/catalog.html
+    name: Nov-Mar summaries since 1986 - NCI access
+  - link: https://thredds.nci.org.au/thredds/catalog/jw04/ga_ls_wo_fq_cyear_3/catalog.html
+    name: Annual calendar year summaries since 1986 - NCI access
+  - link: https://thredds.nci.org.au/thredds/catalog/jw04/ga_ls_wo_fq_myear_3/catalog.html
+    name: All-time summary 1986 to present - NCI access
 
 code_examples:
   - link: /notebooks/DEA_products/DEA_Water_Observations/
@@ -87,12 +96,9 @@ custom: null
 # History
 
 old_versions:
-  - version: 2.1.5
+  - version: 1.6.0
     title: DEA Water Observations Statistics (Landsat)
-    slug: dea-water-observations-statistics-landsat-2.1.5
-  - version: 2.1.5
-    title: DEA Water Observations Filtered Statistics (Landsat)
-    slug: dea-water-observations-filtered-statistics-landsat-2.1.5
+    slug: dea-water-observations-statistics-landsat-1.6.0
 
 # Settings
 

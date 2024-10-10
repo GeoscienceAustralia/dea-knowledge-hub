@@ -6,29 +6,28 @@
 title: DEA Tasseled Cap Percentiles (Landsat)
 long_title: Geoscience Australia Tasseled Cap Percentiles Collection 3
 header_image: /_files/cmi/TCWpercentiles.png
-version: 3.0.0
+version: 2.0.0
 is_latest_version: true
 latest_version_link: null
-is_provisional: true
+is_provisional: false
 product_type: Derivative
 spatial_data_type: Raster
 time_span:
   start: 1987
-  end: 2022
+  end: 2023
 update_frequency: Yearly
 next_update: null
 product_ids:
   - ga_ls_tc_pc_cyear_3
-  - ga_ls_tc_pc_fyear_3
 
 parent_products:
-  name: Landsat 5, 7 and 8 NBART and Observational Attributes
+  name: Landsat 5, 7, 8 and 9 NBART and Observational Attributes
   link: /data/category/dea-surface-reflectance/
 collection:
   name: Geoscience Australia Landsat Collection 3
   link: null
 doi: null
-ecat: null
+ecat: "149765"
 nci: null
 licence:
   name: Creative Commons Attribution 4.0 International Licence
@@ -49,9 +48,9 @@ tags:
 
 # Access
 
-maps: null
-  # - link: https://maps.dea.ga.gov.au/#share=s-kpW2fu5nyh8hnS1M0OPsZ5lHlLi
-  #   name: See it on a map
+maps:
+  - link: https://maps.dea.ga.gov.au/#share=s-hnDwAfLNqJEIuwGzufL9yI5DS0w # TODO review: https://maps.dea.ga.gov.au/#share=s-kpW2fu5nyh8hnS1M0OPsZ5lHlLi
+    name: See it on a map
 
 explorers:
   - link: https://explorer.dea.ga.gov.au/products/ga_ls_tc_pc_cyear_3
@@ -59,9 +58,9 @@ explorers:
 
 data:
   - link: https://data.dea.ga.gov.au/?prefix=derivative/ga_ls_tc_pc_cyear_3/
-    name: DEA Tasseled Cap Calendar Year Percentiles
-  - link: https://data.dea.ga.gov.au/?prefix=derivative/ga_ls_tc_pc_fyear_3/
-    name: DEA Tasseled Cap Financial Year Percentiles
+    name: DEA Tasseled Cap Calendar Year Percentiles - AWS
+  - link: https://thredds.nci.org.au/thredds/catalog/jw04/ga_ls_tc_pc_cyear_3/2-0-0/catalog.html
+    name:  DEA Tasseled Cap Calendar Year Percentiles - NCI
 
 code_examples: null
 
@@ -75,6 +74,9 @@ old_versions:
   - version: 2.0.0
     title: DEA Wetness Percentiles (Landsat)
     slug: dea-wetness-percentiles-landsat-2.0.0
+  - version: 1.0.0
+    title: DEA Tasseled Cap Percentiles (Landsat)
+    slug: dea-tasseled-cap-percentiles-landsat-1.0.0
 
 # Settings
 

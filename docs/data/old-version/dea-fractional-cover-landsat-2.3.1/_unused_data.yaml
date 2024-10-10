@@ -1,0 +1,100 @@
+# Unused data migrated from the CMI
+
+# General
+
+cmi_node: 629
+cmi_url: https://cmi.ga.gov.au/data-products/dea/629/dea-fractional-cover-landsat
+published_date: "2021-10-01"
+author: L. L. @ ga.gov.au
+created: 2021-03-11T10:30:46+1100
+
+# Basics tab
+
+program: dea
+theme: Land and vegetation
+catalogue: DEA Fractional Cover
+collection_slug: geoscience-australia-landsat-collection-3
+is_deprecated: null
+is_primary_record: null
+project_leader: S. C. @ ga.gov.au
+branch_head: M. W. @ ga.gov.au
+related_items:
+  - DEA Fractional Cover Percentiles (Landsat)
+  - DEA Fractional Cover Percentiles (Landsat)
+anzsrc_research_code: EARTH SCIENCES
+
+# Access tab
+
+map_names:
+  - DEA Maps
+ecat_url: http://pid.geoscience.gov.au/dataset/ga/145498
+doi_url: null
+open_data_cube_configuration: null
+security_classification: Unclassified
+time_span_full:
+  start: 1978-03-03T13:00:01+1100
+  end: 2030-08-01T02:59:00+1000
+
+# Details tab
+
+relevant_websites:
+  - link: http://www.auscover.org.au/purl/landsat-fractional-cover-jrsrp
+    name: AusCover
+
+# Processing tab
+
+data_sources:
+  - DEA Surface Reflectance (Landsat 7 ETM+)
+major_algorithms:
+  - Fractional Cover Processing
+schema_spatial_extent:
+  temporal_extent:
+    start: null
+    end: null
+  min_longitude: null
+  max_longitude: null
+  min_latitude: null
+  max_latitude: null
+  coordinate_reference_system: null
+  coordinate_reference_system_units: null
+  cell_size_x: null
+  cell_size_y: null
+  pixel_origin: null
+  spatial_extent:
+    geo_type: null
+    lat: null
+    long: null
+    left: null
+    top: null
+    right: null
+    bottom: null
+    geohash: null
+
+# Media tab
+
+media: null
+case_studies: null
+header_image_alt: fractional cover image
+files: null
+
+# Credits tab
+
+owners:
+  - Commonwealth of Australia (Geoscience Australia)
+custodians:
+  - Commonwealth of Australia (Geoscience Australia)
+principal_contributors: null
+subject_matter_experts:
+  - L. L.
+publishing_entities:
+  - Commonwealth of Australia (Geoscience Australia)
+metadata_contacts:
+  - Geoscience Australia - Team Leader, Product Management, Operations Section NEMO
+media_contacts: null
+rights_statement: © Commonwealth of Australia (Geoscience Australia) 2021. [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/.).
+data_source_contacts:
+  - "Geoscience Australia - Team Leader, Applications and Systems Support, NEMO "
+approvers_checklist: null
+approvers_checklist_hprm_reference: D2021-43744
+pmp_hprm_reference: D2021-76006
+

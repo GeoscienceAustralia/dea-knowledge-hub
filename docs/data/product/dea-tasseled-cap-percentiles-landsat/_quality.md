@@ -1,6 +1,6 @@
 ## Accuracy
 
-As an 'index' this does not have any 'accuracy' as distinct from the 'accuracy' of the input surface reflectance. 
+As an index, this product does not possess any inherent accuracy separate from the accuracy of the input surface reflectance data.
 
 In terms of limitations, caution should be used, especially with the Tasseled Cap wetness index results in areas where residual terrain shadow, or dark soils can cause high 'wetness' index values. 
 

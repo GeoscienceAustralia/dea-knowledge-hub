@@ -1,10 +1,11 @@
-% ## Accuracy
+## Accuracy
+Refer to [DEA Fractional Cover](/data/product/dea-fractional-cover-landsat/) for more information on the accuracy assessment of the daily scenes.
 
 ## Quality assurance
 
 ### QA enumeration 
 
-To assist with the downstream calculation of the [DEA Mangrove Canopy Cover](/data/product/dea-mangrove-canopy-cover-landsat/) product, each pixel has an additional enumeration associated with it: 
+To assist with the downstream calculation of the [DEA Mangroves](/data/product/dea-mangrove-canopy-cover-landsat/) product, each pixel has an additional enumeration associated with it: 
 
 :::{list-table}
 
@@ -16,7 +17,7 @@ To assist with the downstream calculation of the [DEA Mangrove Canopy Cover](/da
   - There are sufficient observations to compute percentiles (3 or more clear and dry observations). Defined in ODC configuration as: sufficient observations 
 :::
 
-This enumeration assists in quantifying uncertainty within the [DEA Mangrove Canopy Cover](/data/product/dea-mangrove-canopy-cover-landsat/) (see Mangrove Canopy Cover definition). 
+This enumeration assists in quantifying uncertainty within the [DEA Mangroves](/data/product/dea-mangrove-canopy-cover-landsat/) (see Mangrove Canopy Cover definition). 
 
 ### Side car files 
 

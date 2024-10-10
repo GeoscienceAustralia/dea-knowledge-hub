@@ -6,7 +6,7 @@
 title: DEA Fractional Cover (Landsat)
 long_title: Geoscience Australia Landsat Fractional Cover Collection 3
 header_image: /_files/cmi/FractionalCover1.jpg
-version: 2.3.1
+version: "Landsat 5/7: 2.5.0, Landsat 8/9: 2.5.1"
 is_latest_version: true
 latest_version_link: null
 product_type: Derivative
@@ -20,7 +20,7 @@ product_ids:
   - ga_ls_fc_3
 
 parent_products:
-  name: Landsat 5, 7 and 8 NBART and Observational Attributes
+  name: Landsat 5, 7, 8, and 9 NBART and Observational Attributes
   link: /data/category/dea-surface-reflectance/
 collection:
   name: Geoscience Australia Landsat Collection 3
@@ -45,9 +45,9 @@ tags:
 
 # Access
 
-maps: null
-  # - link: https://maps.dea.ga.gov.au/#share=s-r7JEUiLzrVzwZIYcis6hVlMpDdT
-  #   name: See it on a map
+maps:
+  - link: https://maps.dea.ga.gov.au/#share=s-3qGgGRwBIgCnqDnPtOsN6T4UX5H # TODO review: https://maps.dea.ga.gov.au/#share=s-r7JEUiLzrVzwZIYcis6hVlMpDdT
+    name: See it on a map
 
 explorers:
   - link: https://explorer.dea.ga.gov.au/products/ga_ls_fc_3
@@ -72,6 +72,9 @@ custom: null
 # History
 
 old_versions:
+  - version: 2.3.1
+    title: DEA Fractional Cover (Landsat)
+    slug: dea-fractional-cover-landsat-2.3.1
   - version: 2.2.1
     title: DEA Fractional Cover (Landsat)
     slug: dea-fractional-cover-landsat-2.2.1

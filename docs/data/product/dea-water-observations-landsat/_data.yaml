@@ -6,7 +6,7 @@
 title: DEA Water Observations (Landsat)
 long_title: Geoscience Australia Landsat Water Observations Collection 3
 header_image: /_files/cmi/WOfS-Burketown-Normanton-QLD.png
-version: 3.1.6
+version: 2.0.0
 is_latest_version: true
 latest_version_link: null
 is_provisional: false
@@ -21,7 +21,7 @@ product_ids:
   - ga_ls_wo_3
 
 parent_products:
-  name: Landsat 5, 7 and 8 NBART and Observational Attributes
+  name: Landsat 5, 7, 8 and 9 NBART and Observational Attributes
   link: /data/category/dea-surface-reflectance/
 collection:
   name: Geoscience Australia Landsat Collection 3
@@ -47,6 +47,7 @@ tags:
 # Access
 
 maps: null
+  # TODO review:
   # - link: https://maps.dea.ga.gov.au/#share=s-fVc2VkHndVr0xOVakjP0lzXdJsT
   #   name: See it on a map
 
@@ -55,7 +56,7 @@ explorers:
     name: Data explorer
 
 data:
-  - link: https://data.dea.ga.gov.au/?prefix=derivative/ga_ls_wo_3/
+  - link: https://data.dea.ga.gov.au/?prefix=derivative/ga_ls_wo_3/2-0-0
     name: Access the data on AWS
   - link: https://thredds.nci.org.au/thredds/catalog/jw04/ga_ls_wo_3/catalog.html
     name: Access the data on NCI
@@ -73,9 +74,9 @@ custom: null
 # History
 
 old_versions:
-  - version: 2.1.5
+  - version: 1.6.0
     title: DEA Water Observations (Landsat)
-    slug: dea-water-observations-landsat-2.1.5
+    slug: dea-water-observations-landsat-1.6.0
 
 # Settings
 
