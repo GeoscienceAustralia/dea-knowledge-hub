@@ -1,0 +1,89 @@
+# See the Product metadata fields documentation:
+# https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/product_metadata_fields.html
+
+# Overview
+
+title: DEA Water Observations Statistics (Landsat)
+long_title: Geoscience Australia Landsat Water Observation Statistics Collection 3
+header_image: /_files/cmi/WOfS-Burketown-Normanton-QLD.png
+version: 1.6.0
+is_latest_version: false
+latest_version_link: /data/product/dea-water-observations-statistics-landsat/
+is_provisional: false
+product_type: Derivative
+spatial_data_type: Raster
+time_span:
+  start: 1986
+  end: Present
+update_frequency: Deprecated
+next_update: null
+product_ids:
+  - ga_ls_wo_fq_apr_oct_3
+  - ga_ls_wo_fq_nov_mar_3
+  - ga_ls_wo_fq_cyear_3
+  - ga_ls_wo_fq_myear_3
+
+parent_products:
+  name: DEA Water Observations (Landsat)
+  link: /data/product/dea-water-observations-landsat/
+collection:
+  name: Geoscience Australia Landsat Collection 3
+  link: null
+doi: null
+ecat: "146091"
+nci: null
+licence:
+  name: Creative Commons Attribution 4.0 International Licence
+  link: https://creativecommons.org/licenses/by/4.0/
+
+citations:
+  data_citation: "Mueller, N. 2022. Geoscience Australia Landsat Water Observation Statistics Collection 3. Geoscience Australia, Canberra. https://dx.doi.org/10.26186/146091"
+  paper_citation: null
+custom_citations: null
+
+tags:
+  - geoscience_australia_landsat_collection_3
+  - surface_water
+  - water_detection
+  - floods
+  - wetlands
+
+# Access
+
+maps: null
+
+explorers:
+  - link: https://explorer.dea.ga.gov.au/products#inland-water-group
+    name: Data explorer
+
+data:
+  - link: https://data.dea.ga.gov.au/?prefix=derivative/ga_ls_wo_fq_apr_oct_3/1-6-0/
+    name: Apr-Oct summaries since 1986 - AWS access
+  - link: https://data.dea.ga.gov.au/?prefix=derivative/ga_ls_wo_fq_nov_mar_3/1-6-0/
+    name: Nov-Mar summaries since 1986 - AWS access
+  - link: https://data.dea.ga.gov.au/?prefix=derivative/ga_ls_wo_fq_cyear_3/1-6-0/
+    name: Annual calendar year summaries since 1986 - AWS access
+  - link: https://data.dea.ga.gov.au/?prefix=derivative/ga_ls_wo_fq_myear_3/1-6-0/
+    name: All-time summary 1986 to present - AWS access
+
+code_examples:
+  - link: /notebooks/DEA_products/DEA_Water_Observations/
+    name: Code examples
+
+web_services:
+  - link: https://ows.dea.ga.gov.au/
+    name: Web Services
+
+custom: null
+
+
+# Settings
+
+enable_overview: true
+enable_access: true
+enable_details: true
+enable_quality: true
+enable_history: true
+enable_faqs: false
+enable_credits: true
+

@@ -1,4 +1,4 @@
-[data-anchor-id="processing-steps"] + ol, #processing-steps + ol, ol.processing-steps {
+[data-anchor-id="processing-steps"] + ol, #processing-steps + ol, ol.processing-steps, .processing-steps + ol {
     li {
         padding: 0.5rem;
         border-bottom: 1px solid $table-border-color;

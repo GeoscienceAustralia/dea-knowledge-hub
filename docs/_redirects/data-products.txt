@@ -6,6 +6,7 @@ data/product/dea-surface-reflectance-oa-landsat-9     data/product/dea-surface-r
 data/product/dea-surface-reflectance-landsat-9        data/product/dea-surface-reflectance-landsat-9-oli-tirs
 data/product/dea-surface-reflectance-nbart-landsat-9  data/product/dea-surface-reflectance-nbart-landsat-9-oli-tirs
 data/product/dea-surface-reflectance-nbar-landsat-9   data/product/dea-surface-reflectance-nbar-landsat-9-oli-tirs
+data/product/dea-mangrove-canopy-cover-landsat        data/product/dea-mangroves
 
 # An old URL found on DEA Maps
 
