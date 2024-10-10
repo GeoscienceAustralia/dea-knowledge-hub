@@ -80,7 +80,7 @@
 
 {% set bands_table_list = page.tables.bands_table | selectattr("name",  "!=", None) | list %}
 
-{% set page_title = page.data.official_name if page.data.is_latest_version else "{}: {}".format(page.data.version_number, page.data.official_name) %}
+{% set page_title = page.data.official_name if page.data.is_latest_version else "{} v{}".format(page.data.official_name, page.data.version_number) %}
 
 {% set product_ids_label = "Product IDs" if product_ids_list | length > 1 else "Product ID" %}
 
@@ -725,9 +725,11 @@
 
    .. list-table::
 
-      * - {{ page.data.version_number }}: Current version
+      * - v{{ page.data.version_number }}
+        - Current version
       {% for item in old_versions_list %}
-      * - `{{ item.version }}: {{ item.title }} </data/version-history/{{ item.slug }}/>`_
+      * - v`{{ item.version }}
+        - {{ item.title }} </data/version-history/{{ item.slug }}/>`_
       {% endfor %}
    {% else %}
    No previous versions are available.
