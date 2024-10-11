@@ -80,7 +80,7 @@
 
 {% set bands_table_list = page.tables.bands_table | selectattr("name",  "!=", None) | list %}
 
-{% set page_title = page.data.official_name if page.data.is_latest_version else "v{}: {}".format(page.data.version_number, page.data.official_name) %}
+{% set page_title = page.data.official_name if page.data.is_latest_version else "v{}. {}".format(page.data.version_number, page.data.official_name) %}
 
 {% set display_title = page.data.official_name if page.data.is_latest_version else "{} v{}".format(page.data.official_name, page.data.version_number) %}
 
