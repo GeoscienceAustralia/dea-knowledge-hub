@@ -728,8 +728,8 @@
       * - v{{ page.data.version_number }}
         - Current version
       {% for item in old_versions_list %}
-      * - v`{{ item.version }}
-        - {{ item.title }} </data/version-history/{{ item.slug }}/>`_
+      * - v{{ item.version }}
+        - `{{ item.title }} </data/version-history/{{ item.slug }}/>`_
       {% endfor %}
    {% else %}
    No previous versions are available.
