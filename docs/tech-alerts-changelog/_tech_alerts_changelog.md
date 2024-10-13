@@ -28,10 +28,10 @@ On 16 October, DEA will be upgrading the DEA Sandbox environment to include new 
 Several new packages have also been added, including `gcfs` (for accessing data on Google Cloud), `xarray-spatial` (for performing spatial analysis with `xarray`), and `pyspark` (unified analytics engine for large-scale data processing).
  
 Most significantly, this will include an [upgrade to JupyterLab 4.0](https://blog.jupyter.org/jupyterlab-4-0-is-here-388d05e03442), which will update the main Sandbox user interface.
-Users may encounter caching issues when logging into the Sandbox for the first time after this upgrade; please perform a [Empty cache and hard reload](https://help.codehs.com/en/articles/4951972-how-to-clear-your-browser-cache-and-hard-refresh) of your Sandbox tab if problems occur.
-Please note that some existing Sandbox functionality (code snippet tool, resource monitor graphs) are not currently supported by JupyterLab 4.0, and will be restored as soon as they are available.
- 
-For a full list of Python package versions available in the new Sandbox environment, see: https://github.com/GeoscienceAustralia/dea-sandbox/pull/291#issuecomment-2264328806
+Users may encounter caching issues when logging in to the Sandbox for the first time after this upgrade; please [empty cache and hard reload](https://help.codehs.com/en/articles/4951972-how-to-clear-your-browser-cache-and-hard-refresh) your Sandbox's browser tab if problems occur.
+Please note that some existing Sandbox functionality (code snippet tool and resource monitor graphs) are not currently supported by JupyterLab 4.0 and will be restored as soon as they are available.
+
+See the [full list of Python package versions](https://github.com/GeoscienceAustralia/dea-sandbox/pull/291#issuecomment-2264328806) available in the new Sandbox environment.
 
 ## 3 Oct 2024: DEA Landsat Derivative Product Upgrade Downtime (9 October to 11 October)
 
