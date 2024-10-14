@@ -17,7 +17,5 @@ This documentation site contains the following features.
 
 Internal staff: [View the internal documentation](https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/index.html)
 
-```text
-Keywords: DEA Docs, dea-docs, Content Management Interface, CMI
-```
+Keywords: `DEA Docs, dea-docs, Content Management Interface, CMI`
 
