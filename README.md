@@ -11,7 +11,7 @@ This documentation site contains the following features.
 * Jupyter Notebooks rendering
 * Docstrings rendering
 * Data-driven templates
-* UL redirects
+* URL redirects
 * SASS styling (CSS preprocessing)
 * Image lightbox and link behaviour scripts
 
