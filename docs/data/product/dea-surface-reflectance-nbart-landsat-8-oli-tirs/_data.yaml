@@ -42,9 +42,8 @@ ecat_id: "132317"
 licence_name: Creative Commons Attribution 4.0 International Licence
 license_link: https://creativecommons.org/licenses/by/4.0/
 
-citations:
-  data_citation: "Fuqin, Li., Jupp, D.L.B., Sixsmith, J., Wang, L., Dorj, P., Vincent, A., Alam, I., Hooke, J., Oliver, S., Thankappan, M. 2019. GA Landsat 8 OLI/TIRS Analysis Ready Data Collection 3. Geoscience Australia, Canberra. https://pid.geoscience.gov.au/dataset/ga/132317"
-  paper_citation: null
+citation_data: "Fuqin, Li., Jupp, D.L.B., Sixsmith, J., Wang, L., Dorj, P., Vincent, A., Alam, I., Hooke, J., Oliver, S., Thankappan, M. 2019. GA Landsat 8 OLI/TIRS Analysis Ready Data Collection 3. Geoscience Australia, Canberra. https://pid.geoscience.gov.au/dataset/ga/132317"
+citation_paper: null
 custom_citations: null
 
 tags:

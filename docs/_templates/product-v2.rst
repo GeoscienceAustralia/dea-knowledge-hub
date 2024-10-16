@@ -353,8 +353,7 @@
         - {{ page.data.licence_name }}
       {%- endif %}
 
-   {% if page.data.citations %}
-   {% if page.data.citations.data_citation or page.data.citations.paper_citation %}
+   {% if page.data.citation_data or page.data.citation_paper %}
    .. rubric:: Cite this product
       :name: citations
       :class: h2
@@ -362,14 +361,14 @@
    .. list-table::
       :name: citation-table
 
-      {% if page.data.citations.data_citation %}
+      {% if page.data.citation_data %}
       * - **Data citation**
         - .. code-block:: text
              :class: citation-table-citation citation-access-date
 
              {{ page.data.citations.data_citation }}
       {%- endif %}
-      {% if page.data.citations.paper_citation %}
+      {% if page.data.citation_paper %}
       * - **Paper citation**
         - .. code-block:: text
              :class: citation-table-citation
@@ -383,7 +382,6 @@
 
              {{ citation.citation }}
       {% endfor %}
-   {%- endif %}
    {%- endif %}
 
    .. include:: _overview_2.md

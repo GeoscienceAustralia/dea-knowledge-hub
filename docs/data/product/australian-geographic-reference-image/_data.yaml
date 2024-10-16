@@ -41,9 +41,8 @@ ecat_id: "72657"
 licence_name: Creative Commons Attribution 4.0 International Licence
 license_link: https://creativecommons.org/licenses/by/4.0/
 
-citations:
-  data_citation: "Geoscience Australia, 2011. AGRI: The Australian Geographic Reference Image. Geoscience Australia, Canberra. http://dx.doi.org/10.4225/25/5524BA4A047FE"
-  paper_citation: null
+citation_data: "Geoscience Australia, 2011. AGRI: The Australian Geographic Reference Image. Geoscience Australia, Canberra. http://dx.doi.org/10.4225/25/5524BA4A047FE"
+citation_paper: null
 custom_citations: null
 
 tags:

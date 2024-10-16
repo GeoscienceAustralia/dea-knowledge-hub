@@ -44,9 +44,8 @@ ecat_id: "149403"
 licence_name: Creative Commons Attribution 4.0 International Licence
 license_link: https://creativecommons.org/licenses/by/4.0/
 
-citations:
-  data_citation: "Bishop-Taylor, R., Phillips, C., Newey, V., Sagar, S.(2024). Digital Earth Australia Intertidal. Geoscience Australia, Canberra. https://dx.doi.org/10.26186/149403"
-  paper_citation: null
+citation_data: "Bishop-Taylor, R., Phillips, C., Newey, V., Sagar, S.(2024). Digital Earth Australia Intertidal. Geoscience Australia, Canberra. https://dx.doi.org/10.26186/149403"
+citation_paper: null
 custom_citations: null
 
 tags:

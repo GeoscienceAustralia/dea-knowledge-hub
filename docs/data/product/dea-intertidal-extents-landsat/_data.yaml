@@ -43,9 +43,8 @@ ecat_id: "113842"
 licence_name: Creative Commons Attribution 4.0 International Licence
 license_link: https://creativecommons.org/licenses/by/4.0/
 
-citations:
-  data_citation: "Sagar, S., Roberts, D., Bala, B., Lymburner, L., 2017. Intertidal Extents Model 25m v. 2.0.0. Geoscience Australia, Canberra. http://dx.doi.org/10.4225/25/5a602cc9eb358"
-  paper_citation: "Sagar, S., Roberts, D., Bala, B., Lymburner, L., 2017. Extracting the intertidal extent and topography of the Australian coastline from a 28 year time series of Landsat observations. Remote Sensing of Environment 195, 153-169. https://doi.org/10.1016/j.rse.2017.04.009"
+citation_data: "Sagar, S., Roberts, D., Bala, B., Lymburner, L., 2017. Intertidal Extents Model 25m v. 2.0.0. Geoscience Australia, Canberra. http://dx.doi.org/10.4225/25/5a602cc9eb358"
+citation_paper: "Sagar, S., Roberts, D., Bala, B., Lymburner, L., 2017. Extracting the intertidal extent and topography of the Australian coastline from a 28 year time series of Landsat observations. Remote Sensing of Environment 195, 153-169. https://doi.org/10.1016/j.rse.2017.04.009"
 custom_citations: null
 
 tags:

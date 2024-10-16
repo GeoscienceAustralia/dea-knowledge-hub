@@ -41,9 +41,8 @@ ecat_id: "146165"
 licence_name: Creative Commons Attribution 4.0 International Licence
 license_link: https://creativecommons.org/licenses/by/4.0/
 
-citations:
-  data_citation: "Geoscience Australia, 2021. Wetlands Insight Tool Ramsar Wetlands Polygons. Geoscience Australia, Canberra. https://pid.geoscience.gov.au/dataset/ga/146165"
-  paper_citation: "Dunn, B., Ai, E., Alger, M.J., Fanson, B., Fickas, K.C., Krause, C.E., Lymburner, L., Nanson, R., Papas, P., Ronan, M., Thomas, R.F., 2023. Wetlands Insight Tool: Characterising the Surface Water and Vegetation Cover Dynamics of Individual Wetlands Using Multidecadal Landsat Satellite Data. Wetlands 43, 37. https://doi.org/10.1007/s13157-023-01682-7"
+citation_data: "Geoscience Australia, 2021. Wetlands Insight Tool Ramsar Wetlands Polygons. Geoscience Australia, Canberra. https://pid.geoscience.gov.au/dataset/ga/146165"
+citation_paper: "Dunn, B., Ai, E., Alger, M.J., Fanson, B., Fickas, K.C., Krause, C.E., Lymburner, L., Nanson, R., Papas, P., Ronan, M., Thomas, R.F., 2023. Wetlands Insight Tool: Characterising the Surface Water and Vegetation Cover Dynamics of Individual Wetlands Using Multidecadal Landsat Satellite Data. Wetlands 43, 37. https://doi.org/10.1007/s13157-023-01682-7"
 custom_citations: null
 
 tags:

@@ -43,9 +43,8 @@ ecat_id: "113843"
 licence_name: Creative Commons Attribution 4.0 International Licence
 license_link: https://creativecommons.org/licenses/by/4.0/
 
-citations:
-  data_citation: "Sagar, S., Phillips, C., Bala, B., Roberts, D., Lymburner, L., 2017. High tide and low tide composites 25m v. 2.0.0. Geoscience Australia, Canberra. http://dx.doi.org/10.4225/25/5a615705d20f7"
-  paper_citation: "Sagar, S., Phillips, C., Bala, B., Roberts, D., Lymburner, L., 2018. Generating continental scale pixel-based surface reflectance composites in coastal regions with the use of a multi-resolution tidal model. Remote Sensing. 10, 480. https://doi.org/10.3390/rs10030480"
+citation_data: "Sagar, S., Phillips, C., Bala, B., Roberts, D., Lymburner, L., 2017. High tide and low tide composites 25m v. 2.0.0. Geoscience Australia, Canberra. http://dx.doi.org/10.4225/25/5a615705d20f7"
+citation_paper: "Sagar, S., Phillips, C., Bala, B., Roberts, D., Lymburner, L., 2018. Generating continental scale pixel-based surface reflectance composites in coastal regions with the use of a multi-resolution tidal model. Remote Sensing. 10, 480. https://doi.org/10.3390/rs10030480"
 custom_citations: null
 
 tags:
