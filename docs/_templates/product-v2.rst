@@ -480,9 +480,9 @@
 
       {% if product_ids_list %}
       * - **{{ product_ids_label }}**
-        - {% for product_id in product_ids_list %}
+        - {%- for product_id in product_ids_list %}
           | {{ product_id }}
-          {% endfor %}
+          {%- endfor %}
         - Used to `load data from the Open Data Cube </notebooks/Beginners_guide/04_Loading_data/>`_.
       {%- endif %}
       * - **Official name**
