@@ -535,7 +535,7 @@
       {%- if page.data.resolution %}
       * - **Spatial resolution**
         - {{ page.data.resolution }}
-        - The size of the small area that the data can represent.
+        - The size of the pixels in the raster.
       {%- endif %}
       {%- if page.data.temporal_coverage_custom %}
       * - **Temporal coverage**
