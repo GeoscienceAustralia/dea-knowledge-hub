@@ -119,13 +119,13 @@
 {# Parent products component #}
 
 {% set parent_products_list_component -%}
-{% for parent_product in parent_products_list %}{% if parent_product.link %}`{{ parent_product.name }} <{{ parent_product.link }}>`_{% endif %}{% if not loop.last %}, {% endif %}{% endfor %}
+{% for parent_product in parent_products_list %}{% if parent_product.link %}`{{ parent_product.name }} <{{ parent_product.link }}>`_{% else %}{{ parent_product.name }}{% endif %}{% if not loop.last %}, {% endif %}{% endfor %}
 {%- endset %}
 
 {# Collections component #}
 
 {% set collections_list_component -%}
-{% for collection in collections_list %}{% if collection.link %}`{{ collection.name }} <{{ collection.link }}>`_{% endif %}{% if not loop.last %}, {% endif %}{% endfor %}
+{% for collection in collections_list %}{% if collection.link %}`{{ collection.name }} <{{ collection.link }}>`_{% else %}{{ collection.name }}{% endif %}{% if not loop.last %}, {% endif %}{% endfor %}
 {%- endset %}
 
 {# Tags list component #}
@@ -610,7 +610,6 @@
         - {{ parent_products_list_component }}
       * - **{{ collections_label }}**
         - {{ collections_list_component }}
-      {%- endif %}
       {%- if tags_list %}
       * - **Tags**
         - {{ tags_list_component }}
