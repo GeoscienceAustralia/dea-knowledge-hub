@@ -601,6 +601,8 @@
    .. list-table::
       :name: product-categorisation-specifications-table
 
+      * - **{{ parent_products_label }}**
+        - {% for parent_product in parent_products_list %}`{{ parent_product.name }} <{{ parent_product.link }}>`_{% if not loop.last %}, {% endif %}{% endfor %}
       {%- if page.data.collection %}
       {%- if page.data.collection.name and page.data.collection.link %}
       * - **Collection**
