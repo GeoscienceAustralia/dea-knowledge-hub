@@ -190,6 +190,9 @@
           {% if data.parent_products.name and data.parent_products.link %}
           * - **Parent product(s)**
             - `{{ data.parent_products.name }} <{{ data.parent_products.link }}>`_
+          {%- elif data.parent_products.name %}
+          * - **Parent product(s)**
+            - {{ data.parent_products.name }}
           {%- endif %}
           {%- endif %}
           {%- if data.collection %}

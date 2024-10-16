@@ -63,3 +63,9 @@ Table 1: Availability of the Landsat satellites for Earth observation and relate
 
 :::{include} ../../_components/thermal-bands-availability-faq.md
 :::
+
+:::{dropdown} Is there an easy way to learn the basics of Earth Observation and DEA data?
+:name: easy-way-learn-dea
+
+If you like podcasts, you can listen to the [13 October 2024 episode of Fuzzy Logic](https://www.2xxfm.org.au/shows/fuzzy-logic/) to hear some of our scientists discuss Earth Observation and the kinds of data that DEA uses. You may want to share this podcast with friends and family who are interested!
+:::
