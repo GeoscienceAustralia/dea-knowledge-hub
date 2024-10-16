@@ -114,6 +114,12 @@
 
 {% set has_key_specifications = (page.data.collection.name and page.data.collection.link) or page.data.collection.name or page.data.doi or page.data.ecat_id %}
 
+{# Parent products component #}
+
+{% set parent_products_list_component -%}
+{% for parent_product in parent_products_list %}`{{ parent_product.name }} <{{ parent_product.link }}>`_{% if not loop.last %}, {% endif %}{% endfor %}
+{%- endset %}
+
 {# Tags list component #}
 
 {% set tags_list_component -%}
@@ -321,7 +327,7 @@
         - `See currency and the latest update date <{{ currency_report_url }}>`_
       {%- endif %}
       * - **{{ parent_products_label }}**
-        - {% for parent_product in parent_products_list %}`{{ parent_product.name }} <{{ parent_product.link }}>`_{% if not loop.last %}, {% endif %}{% endfor %}
+        - {{ parent_products_list_component }}
       {%- if page.data.collection %}
       {%- if page.data.collection.name and page.data.collection.link %}
       * - **Collection**
@@ -602,7 +608,7 @@
       :name: product-categorisation-specifications-table
 
       * - **{{ parent_products_label }}**
-        - {% for parent_product in parent_products_list %}`{{ parent_product.name }} <{{ parent_product.link }}>`_{% if not loop.last %}, {% endif %}{% endfor %}
+        - {{ parent_products_list_component }}
       {%- if page.data.collection %}
       {%- if page.data.collection.name and page.data.collection.link %}
       * - **Collection**
