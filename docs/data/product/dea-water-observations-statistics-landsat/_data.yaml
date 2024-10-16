@@ -33,9 +33,10 @@ parent_products:
   - name: DEA Water Observations (Landsat)
     link: /data/product/dea-water-observations-landsat/
 
-collection:
-  name: Geoscience Australia Landsat Collection 3
-  link: /search/?q=Geoscience+Australia+Landsat+Collection+3
+collections:
+  - name: Geoscience Australia Landsat Collection 3
+    link: /search/?q=Geoscience+Australia+Landsat+Collection+3
+
 doi: 10.26186/146091
 ecat_id: "146091"
 licence:

@@ -33,9 +33,10 @@ parent_products:
   - name: DEA Tasseled Cap Percentiles (Landsat)
     link: /data/product/dea-tasseled-cap-percentiles-landsat/
 
-collection:
-  name: Geoscience Australia Landsat Collection 3
-  link: /search/?q=Geoscience+Australia+Landsat+Collection+3
+collections:
+  - name: Geoscience Australia Landsat Collection 3
+    link: /search/?q=Geoscience+Australia+Landsat+Collection+3
+
 doi: null
 ecat_id: "145497"
 licence:

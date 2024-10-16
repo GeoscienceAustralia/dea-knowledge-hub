@@ -31,9 +31,10 @@ parent_products:
   - name: null
     link: null
 
-collection:
-  name: Geoscience Australia Landsat Collection 3
-  link: /search/?q=Geoscience+Australia+Landsat+Collection+3
+collections:
+  - name: Geoscience Australia Landsat Collection 3
+    link: /search/?q=Geoscience+Australia+Landsat+Collection+3
+
 doi: null
 ecat_id: "132310"
 licence:

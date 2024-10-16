@@ -30,9 +30,10 @@ parent_products:
   - name: null
     link: null
 
-collection:
-  name: null
-  link: null
+collections:
+  - name: null
+    link: null
+
 doi: 10.4225/25/5524BA4A047FE
 ecat_id: "72657"
 licence:

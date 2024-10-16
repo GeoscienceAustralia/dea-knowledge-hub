@@ -30,9 +30,10 @@ parent_products:
   - name: Landsat 5, 7, 8 and 9 NBART and Observational Attributes
     link: /data/category/dea-surface-reflectance/
 
-collection:
-  name: Geoscience Australia Landsat Collection 3
-  link: /search/?q=Geoscience+Australia+Landsat+Collection+3
+collections:
+  - name: Geoscience Australia Landsat Collection 3
+    link: /search/?q=Geoscience+Australia+Landsat+Collection+3
+
 doi: null
 ecat_id: "149765"
 licence:
