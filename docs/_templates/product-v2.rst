@@ -165,6 +165,8 @@
 
       {% if product_ids_list %}
       {{ product_ids_list | join(", ") }}
+      {%- elif page.data.full_technical_name %}
+      {{ page.data.full_technical_name }}
       {%- endif %}
 
       {% if page.data.is_latest_version %}
