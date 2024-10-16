@@ -590,13 +590,9 @@
         - `{{ page.data.ecat_id }} <https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/{{ page.data.ecat_id }}>`_
         - The eCat ID (for internal use).
       {%- endif %}
-      {%- if page.data.licence_name and page.data.licence_link %}
+      {%- if page.data.licence_name %}
       * - **Licence**
-        - `{{ page.data.licence_name }} <{{ page.data.licence_link }}>`_
-        - {% if page.data.enable_credits %}See the `Credits tab <./?tab=credits>`_.{% endif %}
-      {% elif page.data.licence_name %}
-      * - **Licence**
-        - {{ page.data.licence_name }}
+        - {% if page.data.licence_link %}`{{ page.data.licence_name }} <{{ page.data.licence_link }}>`_{% else %}{{ page.data.licence_name }}{% endif %}
         - {% if page.data.enable_credits %}See the `Credits tab <./?tab=credits>`_.{% endif %}
       {%- endif %}
 
