@@ -366,14 +366,14 @@
         - .. code-block:: text
              :class: citation-table-citation citation-access-date
 
-             {{ page.data.citations.data_citation }}
+             {{ page.data.data_citation }}
       {%- endif %}
       {% if page.data.citation_paper %}
       * - **Paper citation**
         - .. code-block:: text
              :class: citation-table-citation
 
-             {{ page.data.citations.paper_citation }}
+             {{ page.data.paper_citation }}
       {%- endif %}
       {% for citation in citations_custom_list %}
       * - **{{ citation.name }}**
