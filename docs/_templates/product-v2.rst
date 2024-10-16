@@ -678,7 +678,7 @@
         - Learn how to `use DEA's web services </guides/setup/gis/README/>`_.
       {% endif %}
 
-      {% for item in custom_list %}
+      {% for item in custom_access_links_list %}
       * - **{{ item.label or "" }}**
         - * `{{ item.name }} <{{ item.link }}>`_
         - {{ item.description or "" }}
