@@ -333,10 +333,14 @@
       * - **Currency**
         - `See currency and the latest update date <{{ currency_report_url }}>`_
       {%- endif %}
+      {%- if parent_products_list %}
       * - **{{ parent_products_label }}**
         - {{ parent_products_list_component }}
+      {%- endif %}
+      {%- if collections_list %}
       * - **{{ collections_label }}**
         - {{ collections_list_component }}
+      {%- endif %}
       {%- if tags_list %}
       * - **Tags**
         - {{ tags_list_component }}
@@ -606,10 +610,14 @@
    .. list-table::
       :name: product-categorisation-specifications-table
 
+      {% if parent_products_list %}
       * - **{{ parent_products_label }}**
         - {{ parent_products_list_component }}
+      {%- endif %}
+      {%- if collections_list %}
       * - **{{ collections_label }}**
         - {{ collections_list_component }}
+      {%- endif %}
       {%- if tags_list %}
       * - **Tags**
         - {{ tags_list_component }}
