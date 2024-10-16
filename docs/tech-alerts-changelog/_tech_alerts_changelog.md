@@ -22,6 +22,10 @@
 
 Learn more about the [DEA Summary Product Grid](/guides/reference/collection_3_summary_grid/).
 
+## 17 Oct 2024: NCI Explorer outage
+
+NCI Explorer has experienced an outage since yesterday. You may encounter issues when attempting to use this service. We are currently investigating the issue.
+
 ## 16 Oct 2024: Upcoming DEA Sandbox environment upgrade
 
 On 16 October, DEA will be upgrading the DEA Sandbox environment to include new Python packages and software.
