@@ -94,8 +94,6 @@
 
 {% set collections_label = "Collections" if collections_list | length > 1 else "Collection" %}
 
-{% set product_ids_comma_separated = product_ids_list | join(", ") %}
-
 {% set currency_report_url = "https://mgmt.sandbox.dea.ga.gov.au/public-dashboards/d22241dbfca54b1fa9f73938ef26e645?orgId=1#:~:text={}".format(page.data.official_name | urlencode) %}
 
 {% set lineage_type = lineage_type_terms.get(page.data.lineage_type, page.data.lineage_type) %}
@@ -165,9 +163,9 @@
 
       .. rubric:: {{ display_title }}
 
-      {% if page.data.full_technical_name %}
-      {{ page.data.full_technical_name }}
-      {% endif %}
+      {% if product_ids_list %}
+      {{ product_ids_list | join(", ") }}
+      {%- endif %}
 
       {% if page.data.is_latest_version %}
       :Version: {{ page.data.version_number }}
@@ -315,9 +313,9 @@
    .. list-table::
       :name: key-specifications-table
 
-      {% if product_ids_list %}
-      * - **{{ product_ids_label }}**
-        - {{ product_ids_comma_separated }}
+      {% if page.data.full_technical_name %}
+      * - **Technical name**
+        - {{ page.data.full_technical_name }}
       {%- endif %}
       {%- if page.data.doi %}
       * - **DOI**
@@ -478,6 +476,11 @@
    .. list-table::
       :name: product-information-specifications-table
 
+      {% if product_ids_list %}
+      * - **{{ product_ids_label }}**
+        - {{ product_ids_list | join("\n\n") }}
+        - Used to `load data from the Open Data Cube </notebooks/Beginners_guide/04_Loading_data/>`_.
+      {%- endif %}
       * - **Official name**
         - {{ page.data.official_name }}
         - The name used in most contexts.
@@ -498,11 +501,6 @@
       * - **Version**
         - {{ page.data.version_number }}
         - This is an old version of the product. See the `latest version <{{ page.data.latest_version_link }}>`_.
-      {%- endif %}
-      {%- if product_ids_list %}
-      * - **{{ product_ids_label }}**
-        - {{ product_ids_comma_separated }}
-        - Used in the `Open Data Cube <https://www.opendatacube.org/>`_.
       {%- endif %}
       {% if lineage_type == lineage_type_terms.DERIVATIVE %}
       * - **Lineage type**
