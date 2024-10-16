@@ -44,7 +44,8 @@ license_link: https://creativecommons.org/licenses/by/4.0/
 
 citation_data: "Tissott, B., Mueller, N., 2022. DEA Land Cover 25m. Geoscience Australia, Canberra. https://dx.doi.org/10.26186/146090"
 citation_paper: "Lucas, R., Mueller, N., Siggins, A., Owers, C., Clewley, D., Bunting, P., Kooymans, C., Tissott, B., Lewis, B., Lymburner, L., Metternicht, G., 2019. Land Cover Mapping using Digital Earth Australia. Data. 4(4):143. https://doi.org/10.3390/data4040143"
-custom_citations: null
+
+citations_custom: null
 
 tags:
   - land_cover_and_land_use

@@ -45,7 +45,8 @@ license_link: https://creativecommons.org/licenses/by/4.0/
 
 citation_data: "Geoscience Australia, 2022. Geoscience Australia Sentinel-2B Observation Attributes Collection 3 - DEA Surface Reflectance OA (Sentinel-2B MSI). Geoscience Australia, Canberra. https://dx.doi.org/10.26186/146570"
 citation_paper: null
-custom_citations: null
+
+citations_custom: null
 
 tags:
   - geoscience_australia_sentinel_2_collection_3

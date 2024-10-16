@@ -43,7 +43,8 @@ license_link: https://creativecommons.org/licenses/by/4.0/
 
 citation_data: "Geoscience Australia, 2020. Digital Earth Australia Hotspots dataset. Geoscience Australia, Canberra. https://pid.geoscience.gov.au/dataset/ga/111881"
 citation_paper: null
-custom_citations: null
+
+citations_custom: null
 
 tags:
   - bushfires

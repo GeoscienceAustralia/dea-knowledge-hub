@@ -43,7 +43,8 @@ license_link: https://creativecommons.org/licenses/by/4.0/
 
 citation_data: "Geoscience Australia, 2021. Australian National Spectral Database. Geoscience Australia, Canberra. https://pid.geoscience.gov.au/dataset/ga/145560"
 citation_paper: null
-custom_citations: null
+
+citations_custom: null
 
 tags:
   - australian_remote_sensing

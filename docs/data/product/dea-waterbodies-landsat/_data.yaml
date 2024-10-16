@@ -43,7 +43,8 @@ license_link: https://creativecommons.org/licenses/by/4.0/
 
 citation_data: "Dunn, B., Krause, C., Newey, V., Lymburner, L., Alger, M.J., Adams, C., Yuan, F., Ma, S., Barzinpour, A., Ayers, D., McKenna, C., Schenk, L. 2024. Digital Earth Australia Waterbodies v3.0. Geoscience Australia, Canberra. https://dx.doi.org/10.26186/148920"
 citation_paper: "Krause, C.E., Newey, V., Alger, M.J. and Lymburner, L., 2021. Mapping and Monitoring the Multi-Decadal Dynamics of Australia’s Open Waterbodies using Landsat. Remote Sensing, 13, 1437. https://doi.org/10.3390/rs13081437"
-custom_citations: null
+
+citations_custom: null
 
 tags:
   - geoscience_australia_landsat_collection_3

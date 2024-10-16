@@ -46,7 +46,8 @@ license_link: https://creativecommons.org/licenses/by/4.0/
 
 citation_data: "Bishop-Taylor, R., Phillips, C., Newey, V., Sagar, S.(2024). Digital Earth Australia Intertidal. Geoscience Australia, Canberra. https://dx.doi.org/10.26186/149403"
 citation_paper: null
-custom_citations: null
+
+citations_custom: null
 
 tags:
   - geoscience_australia_landsat_collection_3

@@ -74,7 +74,7 @@
 
 {% set product_ids_list = page.data.product_ids | select("!=", None) | list %}
 
-{% set custom_citations_list = page.data.custom_citations | select("!=", None) | list %}
+{% set citations_custom_list = page.data.citations_custom | select("!=", None) | list %}
 
 {% set tags_list = page.data.tags | select("!=", None) | list %}
 
@@ -375,7 +375,7 @@
 
              {{ page.data.citations.paper_citation }}
       {%- endif %}
-      {% for citation in custom_list_citations %}
+      {% for citation in citations_custom_list %}
       * - **{{ citation.name }}**
         - .. code-block:: text
              :class: citation-table-citation

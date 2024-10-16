@@ -43,7 +43,8 @@ license_link: https://creativecommons.org/licenses/by/4.0/
 
 citation_data: "Geoscience Australia, 2011. AGRI: The Australian Geographic Reference Image. Geoscience Australia, Canberra. http://dx.doi.org/10.4225/25/5524BA4A047FE"
 citation_paper: null
-custom_citations: null
+
+citations_custom: null
 
 tags:
   - agri
