@@ -116,8 +116,6 @@
 
 {% set has_access_data = maps_list or data_list or explorers_list or web_services_list or code_samples_list or custom_list %}
 
-{% set has_key_specifications = (page.data.collection.name and page.data.collection.link) or page.data.collection.name or page.data.doi or page.data.ecat_id %}
-
 {# Parent products component #}
 
 {% set parent_products_list_component -%}
@@ -306,7 +304,6 @@
          {% endfor %}
    {%- endif %}
 
-   {% if has_key_specifications %}
    .. rubric:: Key specifications
       :name: key-specifications
       :class: h2
@@ -350,7 +347,6 @@
         - `{{ page.data.licence.name }} <{{ page.data.licence.link }}>`_
       {%- endif %}
       {%- endif %}
-   {%- endif %}
 
    {% if page.data.citations %}
    {% if page.data.citations.data_citation or page.data.citations.paper_citation %}
