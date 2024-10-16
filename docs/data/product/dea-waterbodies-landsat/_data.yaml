@@ -37,9 +37,9 @@ collections:
 
 doi: 10.26186/148920
 ecat_id: "148920"
-licence:
-  name: Creative Commons Attribution 4.0 International Licence
-  link: https://creativecommons.org/licenses/by/4.0/
+
+licence_name: Creative Commons Attribution 4.0 International Licence
+license_link: https://creativecommons.org/licenses/by/4.0/
 
 citations:
   data_citation: "Dunn, B., Krause, C., Newey, V., Lymburner, L., Alger, M.J., Adams, C., Yuan, F., Ma, S., Barzinpour, A., Ayers, D., McKenna, C., Schenk, L. 2024. Digital Earth Australia Waterbodies v3.0. Geoscience Australia, Canberra. https://dx.doi.org/10.26186/148920"

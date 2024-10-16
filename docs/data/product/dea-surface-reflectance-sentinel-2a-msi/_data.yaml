@@ -39,9 +39,9 @@ collections:
 doi: 10.26186/146552
 ecat_id: "146552"
 nci_code: ka08
-licence:
-  name: Creative Commons Attribution 4.0 International Licence
-  link: https://creativecommons.org/licenses/by/4.0/
+
+licence_name: Creative Commons Attribution 4.0 International Licence
+license_link: https://creativecommons.org/licenses/by/4.0/
 
 citations:
   data_citation: "Geoscience Australia, 2022. Geoscience Australia Sentinel-2A MSI Analysis Ready Data Collection 3 - DEA Surface Reflectance (Sentinel-2A MSI). Geoscience Australia, Canberra. https://dx.doi.org/10.26186/146552"

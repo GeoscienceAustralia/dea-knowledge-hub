@@ -38,9 +38,9 @@ collections:
 
 doi: 10.26186/146090
 ecat_id: "146090"
-licence:
-  name: Creative Commons Attribution 4.0 International Licence
-  link: https://creativecommons.org/licenses/by/4.0/
+
+licence_name: Creative Commons Attribution 4.0 International Licence
+license_link: https://creativecommons.org/licenses/by/4.0/
 
 citations:
   data_citation: "Tissott, B., Mueller, N., 2022. DEA Land Cover 25m. Geoscience Australia, Canberra. https://dx.doi.org/10.26186/146090"

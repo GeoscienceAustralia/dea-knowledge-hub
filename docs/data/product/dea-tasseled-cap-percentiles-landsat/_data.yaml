@@ -37,9 +37,9 @@ collections:
 
 doi: null
 ecat_id: "149765"
-licence:
-  name: Creative Commons Attribution 4.0 International Licence
-  link: https://creativecommons.org/licenses/by/4.0/
+
+licence_name: Creative Commons Attribution 4.0 International Licence
+license_link: https://creativecommons.org/licenses/by/4.0/
 
 citations:
   data_citation: "Geoscience Australia, 2023. DEA Tasseled Cap Percentiles (Landsat, Provisional). Geoscience Australia, Canberra."

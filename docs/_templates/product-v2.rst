@@ -345,11 +345,12 @@
       * - **Tags**
         - {{ tags_list_component }}
       {%- endif %}
-      {%- if page.data.licence %}
-      {%- if page.data.licence.name and page.data.licence.link %}
+      {%- if page.data.licence_name and page.data.licence_link %}
       * - **Licence**
-        - `{{ page.data.licence.name }} <{{ page.data.licence.link }}>`_
-      {%- endif %}
+        - `{{ page.data.licence_name }} <{{ page.data.licence_link }}>`_
+      {% elif page.data.licence_name %}
+      * - **Licence**
+        - {{ page.data.licence_name }}
       {%- endif %}
 
    {% if page.data.citations %}
@@ -589,16 +590,14 @@
         - `{{ page.data.ecat_id }} <https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/{{ page.data.ecat_id }}>`_
         - The eCat ID (for internal use).
       {%- endif %}
-      {%- if page.data.licence %}
-      {%- if page.data.licence.name and page.data.licence.link and page.data.enable_credits %}
+      {%- if page.data.licence_name and page.data.licence_link %}
       * - **Licence**
-        - `{{ page.data.licence.name }} <{{ page.data.licence.link }}>`_
-        - See the `Credits tab <./?tab=credits>`_.
-      {%- elif page.data.licence.name and page.data.licence.link %}
+        - `{{ page.data.licence_name }} <{{ page.data.licence_link }}>`_
+        - {% if page.data.enable_credits %}See the `Credits tab <./?tab=credits>`_.{% endif %}
+      {% elif page.data.licence_name %}
       * - **Licence**
-        - `{{ page.data.licence.name }} <{{ page.data.licence.link }}>`_
-        -
-      {%- endif %}
+        - {{ page.data.licence_name }}
+        - {% if page.data.enable_credits %}See the `Credits tab <./?tab=credits>`_.{% endif %}
       {%- endif %}
 
    .. rubric:: Product categorisation

@@ -40,9 +40,9 @@ collections:
 
 doi: null
 ecat_id: "145497"
-licence:
-  name: Creative Commons Attribution 4.0 International Licence
-  link: https://creativecommons.org/licenses/by/4.0/
+
+licence_name: Creative Commons Attribution 4.0 International Licence
+license_link: https://creativecommons.org/licenses/by/4.0/
 
 citations:
   data_citation: "Lymburner, L., Lucas, R., Scarth, P., Alam, I., Phillips, C., Ticehurst, C., Held, A., Bunting, P. 2021. Geoscience Australia Mangrove Canopy Cover Collection 3. Geoscience Australia, Canberra. https://pid.geoscience.gov.au/dataset/ga/145497"
