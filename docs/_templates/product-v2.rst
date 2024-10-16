@@ -80,6 +80,8 @@
 
 {% set parent_products_list = page.data.parent_products | selectattr("name", "!=", None) | list %}
 
+{% set collections_list = page.data.collections | selectattr("name", "!=", None) | list %}
+
 {% set bands_table_list = page.tables.bands_table | selectattr("name", "!=", None) | list %}
 
 {% set page_title = page.data.official_name if page.data.is_latest_version else "v{}. {}".format(page.data.version_number, page.data.official_name) %}
@@ -89,6 +91,8 @@
 {% set product_ids_label = "Product IDs" if product_ids_list | length > 1 else "Product ID" %}
 
 {% set parent_products_label = "Parent products" if parent_products_list | length > 1 else "Parent product" %}
+
+{% set collections_label = "Collections" if collections_list | length > 1 else "Collection" %}
 
 {% set product_ids_comma_separated = product_ids_list | join(", ") %}
 
@@ -118,6 +122,12 @@
 
 {% set parent_products_list_component -%}
 {% for parent_product in parent_products_list %}`{{ parent_product.name }} <{{ parent_product.link }}>`_{% if not loop.last %}, {% endif %}{% endfor %}
+{%- endset %}
+
+{# Collections component #}
+
+{% set collections_list_component -%}
+{% for collection in collections_list %}`{{ collection.name }} <{{ collection.link }}>`_{% if not loop.last %}, {% endif %}{% endfor %}
 {%- endset %}
 
 {# Tags list component #}
@@ -328,15 +338,8 @@
       {%- endif %}
       * - **{{ parent_products_label }}**
         - {{ parent_products_list_component }}
-      {%- if page.data.collection %}
-      {%- if page.data.collection.name and page.data.collection.link %}
-      * - **Collection**
-        - `{{ page.data.collection.name }} <{{ page.data.collection.link }}>`_
-      {%- elif page.data.collection.name %}
-      * - **Collection**
-        - {{ page.data.collection.name }}
-      {%- endif %}
-      {%- endif %}
+      * - **{{ collections_label }}**
+        - {{ collections_list_component }}
       {%- if tags_list %}
       * - **Tags**
         - {{ tags_list_component }}
@@ -609,14 +612,8 @@
 
       * - **{{ parent_products_label }}**
         - {{ parent_products_list_component }}
-      {%- if page.data.collection %}
-      {%- if page.data.collection.name and page.data.collection.link %}
-      * - **Collection**
-        - `{{ page.data.collection.name }} <{{ page.data.collection.link }}>`_
-      {%- elif page.data.collection.name %}
-      * - **Collection**
-        - {{ page.data.collection.name }}
-      {%- endif %}
+      * - **{{ collections_label }}**
+        - {{ collections_list_component }}
       {%- endif %}
       {%- if tags_list %}
       * - **Tags**
