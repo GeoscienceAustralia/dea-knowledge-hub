@@ -28,8 +28,9 @@ product_ids:
   - ga_ter_m_dlcd_ann
 
 parent_products:
-  name: null
-  link: null
+  - name: null
+    link: null
+
 collection:
   name: null
   link: null

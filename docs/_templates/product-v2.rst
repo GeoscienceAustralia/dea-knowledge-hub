@@ -58,19 +58,19 @@
 
 {# Computed values #}
 
-{% set maps_list = page.data.maps | selectattr("link",  "!=", None) | list %}
+{% set maps_list = page.data.maps | selectattr("link", "!=", None) | list %}
 
-{% set data_list = page.data.data | selectattr("link",  "!=", None) | list %}
+{% set data_list = page.data.data | selectattr("link", "!=", None) | list %}
 
-{% set explorers_list = page.data.explorers | selectattr("link",  "!=", None) | list %}
+{% set explorers_list = page.data.explorers | selectattr("link", "!=", None) | list %}
 
-{% set web_services_list = page.data.web_services | selectattr("link",  "!=", None) | list %}
+{% set web_services_list = page.data.web_services | selectattr("link", "!=", None) | list %}
 
-{% set code_samples_list = page.data.code_examples | selectattr("link",  "!=", None) | list %}
+{% set code_samples_list = page.data.code_examples | selectattr("link", "!=", None) | list %}
 
-{% set custom_list = page.data.custom | selectattr("icon",  "!=", None) | selectattr("link",  "!=", None) | selectattr("name",  "!=", None) | list %}
+{% set custom_list = page.data.custom | selectattr("icon", "!=", None) | selectattr("link", "!=", None) | selectattr("name", "!=", None) | list %}
 
-{% set old_versions_list = page.data.old_versions | selectattr("slug",  "!=", None) | selectattr("version",  "!=", None) | selectattr("name",  "!=", None) | list %}
+{% set old_versions_list = page.data.old_versions | selectattr("slug", "!=", None) | selectattr("version", "!=", None) | selectattr("name", "!=", None) | list %}
 
 {% set product_ids_list = page.data.product_ids | select("!=", None) | list %}
 
@@ -78,13 +78,17 @@
 
 {% set tags_list = page.data.tags | select("!=", None) | list %}
 
-{% set bands_table_list = page.tables.bands_table | selectattr("name",  "!=", None) | list %}
+{% set parent_products_list = page.data.parent_products | selectattr("name", "!=", None) | list %}
+
+{% set bands_table_list = page.tables.bands_table | selectattr("name", "!=", None) | list %}
 
 {% set page_title = page.data.official_name if page.data.is_latest_version else "v{}. {}".format(page.data.version_number, page.data.official_name) %}
 
 {% set display_title = page.data.official_name if page.data.is_latest_version else "{} v{}".format(page.data.official_name, page.data.version_number) %}
 
 {% set product_ids_label = "Product IDs" if product_ids_list | length > 1 else "Product ID" %}
+
+{% set parent_products_label = "Parent products" if parent_products_list | length > 1 else "Parent product" %}
 
 {% set product_ids_comma_separated = product_ids_list | join(", ") %}
 
@@ -108,7 +112,7 @@
 
 {% set has_access_data = maps_list or data_list or explorers_list or web_services_list or code_samples_list or custom_list %}
 
-{% set has_key_specifications = (page.data.parent_products.name and page.data.parent_products.link) or (page.data.collection.name and page.data.collection.link) or page.data.collection.name or page.data.doi or page.data.ecat_id %}
+{% set has_key_specifications = (page.data.collection.name and page.data.collection.link) or page.data.collection.name or page.data.doi or page.data.ecat_id %}
 
 {# Tags list component #}
 
@@ -316,12 +320,8 @@
       * - **Currency**
         - `See currency and the latest update date <{{ currency_report_url }}>`_
       {%- endif %}
-      {%- if page.data.parent_products %}
-      {%- if page.data.parent_products.name and page.data.parent_products.link %}
-      * - **Parent product(s)**
-        - `{{ page.data.parent_products.name }} <{{ page.data.parent_products.link }}>`_
-      {%- endif %}
-      {%- endif %}
+      * - **{{ parent_products_label }}**
+        - {% for parent_product in parent_products_list %}`{{ parent_product.name }} <{{ parent_product.link }}>`_{% if not loop.last %}, {% endif %}{% endfor %}
       {%- if page.data.collection %}
       {%- if page.data.collection.name and page.data.collection.link %}
       * - **Collection**
@@ -601,12 +601,6 @@
    .. list-table::
       :name: product-categorisation-specifications-table
 
-      {% if page.data.parent_products %}
-      {%- if page.data.parent_products.name and page.data.parent_products.link %}
-      * - **Parent product(s)**
-        - `{{ page.data.parent_products.name }} <{{ page.data.parent_products.link }}>`_
-      {%- endif %}
-      {%- endif %}
       {%- if page.data.collection %}
       {%- if page.data.collection.name and page.data.collection.link %}
       * - **Collection**

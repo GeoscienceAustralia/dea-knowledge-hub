@@ -30,8 +30,9 @@ product_ids:
   - ga_ls_wo_fq_myear_3
 
 parent_products:
-  name: DEA Water Observations (Landsat)
-  link: /data/product/dea-water-observations-landsat/
+  - name: DEA Water Observations (Landsat)
+    link: /data/product/dea-water-observations-landsat/
+
 collection:
   name: Geoscience Australia Landsat Collection 3
   link: /search/?q=Geoscience+Australia+Landsat+Collection+3

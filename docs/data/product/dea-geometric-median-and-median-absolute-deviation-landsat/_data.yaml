@@ -29,8 +29,9 @@ product_ids:
   - ga_ls8cls9c_gm_cyear_3
 
 parent_products:
-  name: Landsat 5, 7, 8, and 9 NBART and Observational Attributes
-  link: /data/category/dea-surface-reflectance/
+  - name: Landsat 5, 7, 8, and 9 NBART and Observational Attributes
+    link: /data/category/dea-surface-reflectance/
+
 collection:
   name: Geoscience Australia Landsat Collection 3
   link: /search/?q=Geoscience+Australia+Landsat+Collection+3

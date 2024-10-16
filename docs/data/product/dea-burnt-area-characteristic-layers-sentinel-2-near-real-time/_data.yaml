@@ -28,8 +28,9 @@ product_ids:
   - ga_s2_ba_provisional_3
 
 parent_products:
-  name: Sentinel 2A and 2B NBART and Observational Attributes
-  link: /data/category/dea-surface-reflectance/
+  - name: Sentinel 2A and 2B NBART and Observational Attributes
+    link: /data/category/dea-surface-reflectance/
+
 collection:
   name: Geoscience Australia Sentinel-2 Collection 3
   link: /search/?q=Geoscience+Australia+Sentinel-2+Collection+3

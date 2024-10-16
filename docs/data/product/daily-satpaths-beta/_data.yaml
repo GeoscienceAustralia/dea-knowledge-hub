@@ -27,8 +27,9 @@ resolution: null
 product_ids: null
 
 parent_products:
-  name: null
-  link: null
+  - name: null
+    link: null
+
 collection:
   name: null
   link: null

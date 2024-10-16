@@ -28,8 +28,9 @@ product_ids:
   - ga_ls_landcover_class_cyear_2
 
 parent_products:
-  name: null
-  link: null
+  - name: null
+    link: null
+
 collection:
   name: Geoscience Australia Landsat Collection 2
   link: /search/?q=Geoscience+Australia+Landsat+Collection+3

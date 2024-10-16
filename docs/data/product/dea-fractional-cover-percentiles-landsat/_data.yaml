@@ -27,8 +27,9 @@ product_ids:
   - ga_ls_fc_pc_cyear_3
 
 parent_products:
-  name: DEA Fractional Cover (Landsat)
-  link: /data/product/dea-fractional-cover-landsat/
+  - name: DEA Fractional Cover (Landsat)
+    link: /data/product/dea-fractional-cover-landsat/
+
 collection:
   name: Geoscience Australia Landsat Collection 3
   link: /search/?q=Geoscience+Australia+Landsat+Collection+3
