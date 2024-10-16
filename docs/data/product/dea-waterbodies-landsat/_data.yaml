@@ -15,6 +15,7 @@ is_provisional: false
 lineage_type: DERIVATIVE
 spatial_data_type: VECTOR
 
+spatial_coverage: null
 temporal_coverage_start: 1986
 temporal_coverage_end: Present
 temporal_coverage_custom: null

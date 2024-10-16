@@ -15,6 +15,7 @@ is_provisional: false
 lineage_type: Data service
 spatial_data_type: VECTOR
 
+spatial_coverage: null
 temporal_coverage_start: 1987
 temporal_coverage_end: 2021
 temporal_coverage_custom: null

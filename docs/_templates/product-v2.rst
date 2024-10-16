@@ -533,6 +533,11 @@
         - {{ page.data.resolution }}
         - The size of the pixels in the raster.
       {%- endif %}
+      {%- if page.data.spatial_coverage %}
+      * - **Spatial coverage**
+        - {{ page.data.spatial_coverage }}
+        - The spatial area for which data is available.
+      {%- endif %}
       {%- if page.data.temporal_coverage_custom %}
       * - **Temporal coverage**
         - {{ page.data.temporal_coverage_custom }}

@@ -15,6 +15,7 @@ is_provisional: false
 lineage_type: BASELINE
 spatial_data_type: RASTER
 
+spatial_coverage: null
 temporal_coverage_start: null
 temporal_coverage_end: null
 temporal_coverage_custom: null
