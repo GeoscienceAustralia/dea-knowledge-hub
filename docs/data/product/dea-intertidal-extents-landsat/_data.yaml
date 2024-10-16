@@ -24,6 +24,7 @@ data_update_activity: NO_UPDATES
 is_currency_reported: false
 
 resolution: 25 m
+
 product_ids:
   - item_v2
   - item_v2_conf

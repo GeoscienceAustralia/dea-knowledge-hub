@@ -24,6 +24,7 @@ data_update_activity: NO_UPDATES
 is_currency_reported: false
 
 resolution: 25 m
+
 product_ids:
   - high_tide_comp_20p
   - low_tide_comp_20p

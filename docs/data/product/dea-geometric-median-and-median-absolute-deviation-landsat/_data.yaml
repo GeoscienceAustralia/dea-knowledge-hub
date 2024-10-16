@@ -23,6 +23,7 @@ data_update_activity: ONGOING
 is_currency_reported: true
 
 resolution: 30 m
+
 product_ids:
   - ga_ls5t_gm_cyear_3
   - ga_ls7e_gm_cyear_3

@@ -24,6 +24,7 @@ data_update_activity: ONGOING
 is_currency_reported: true
 
 resolution: 30 m
+
 product_ids:
   - ga_ls_mangrove_cover_cyear_3
 

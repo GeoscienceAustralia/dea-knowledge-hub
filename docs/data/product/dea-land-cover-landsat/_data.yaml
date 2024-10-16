@@ -24,6 +24,7 @@ data_update_activity: NO_UPDATES
 is_currency_reported: true
 
 resolution: 25 m
+
 product_ids:
   - ga_ls_landcover_class_cyear_2
 

@@ -24,6 +24,7 @@ data_update_activity: NO_UPDATES
 is_currency_reported: false
 
 resolution: 250 m
+
 product_ids:
   - ga_ter_m_dlcd_ann
 
