@@ -62,7 +62,7 @@ code_examples: null
 
 web_services: null
 
-custom:
+access_links_custom:
   - icon: map-location-dot
     link: https://satpath.dea.ga.gov.au/
     label: Get via web interface

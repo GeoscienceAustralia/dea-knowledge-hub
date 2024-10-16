@@ -80,7 +80,7 @@ web_services:
   - link: https://ows.dea.ga.gov.au/?service=WCS&request=GetCapabilities&version=2.0.0
     name: Web Coverage Service (WCS)
 
-custom: null
+access_links_custom: null
 
 # History
 

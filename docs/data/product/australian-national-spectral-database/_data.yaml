@@ -67,7 +67,7 @@ code_examples: null
 
 web_services: null
 
-custom:
+access_links_custom:
   - icon: database
     link: https://app-public.specchio.sandbox.dea.ga.gov.au/
     label: Access

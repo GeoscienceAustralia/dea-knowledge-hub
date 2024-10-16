@@ -78,7 +78,7 @@ web_services:
   - link: https://ows.dea.ga.gov.au
     name: null
 
-custom: null
+access_links_custom: null
 
 # History
 

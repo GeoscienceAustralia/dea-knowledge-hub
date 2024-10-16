@@ -77,7 +77,7 @@ web_services:
   - link: https://geoserver.dea.ga.gov.au/geoserver/web/?0
     name: Web Mapping Service (WMS)
 
-custom: null
+access_links_custom: null
 
 # History
 

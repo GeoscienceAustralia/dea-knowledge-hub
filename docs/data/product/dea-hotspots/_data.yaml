@@ -76,7 +76,7 @@ web_services:
   - link: https://hotspots.dea.ga.gov.au/data/recent-hotspots.json
     name: GeoJSON (last 3 days)
 
-custom: null
+access_links_custom: null
 
 # History
 

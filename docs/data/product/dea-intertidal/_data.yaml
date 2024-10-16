@@ -88,7 +88,7 @@ web_services:
     name: Web Map Service (WMS)
 
 
-custom: null
+access_links_custom: null
 
 # History
 

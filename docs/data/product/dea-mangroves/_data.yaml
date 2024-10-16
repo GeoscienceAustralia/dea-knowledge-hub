@@ -80,7 +80,7 @@ web_services:
   - link: https://ows.dea.ga.gov.au/
     name: Web Map Service (WMS)
 
-custom: null
+access_links_custom: null
 
 # History
 

@@ -68,7 +68,7 @@
 
 {% set code_samples_list = page.data.code_examples | selectattr("link", "!=", None) | list %}
 
-{% set custom_list = page.data.custom | selectattr("icon", "!=", None) | selectattr("link", "!=", None) | selectattr("name", "!=", None) | list %}
+{% set custom_access_links_list = page.data.custom_access_links | selectattr("icon", "!=", None) | selectattr("link", "!=", None) | selectattr("name", "!=", None) | list %}
 
 {% set old_versions_list = page.data.old_versions | selectattr("slug", "!=", None) | selectattr("version", "!=", None) | selectattr("name", "!=", None) | list %}
 
@@ -114,7 +114,7 @@
 
 {% set is_frequency_multiple_words = data_update_frequency.split(" ") | length > 1 %}
 
-{% set has_access_data = maps_list or data_list or explorers_list or web_services_list or code_samples_list or custom_list %}
+{% set has_access_data = maps_list or data_list or explorers_list or web_services_list or code_samples_list or custom_access_links_list %}
 
 {# Parent products component #}
 
@@ -294,7 +294,7 @@
             {{ item.name or access_names.web_service }}
          {% endfor %}
 
-         {% for item in custom_list %}
+         {% for item in custom_access_links_list %}
          .. grid-item-card:: :fas:`{{ item.icon }}`
             :link: {{ item.link }}
             :link-alt: {{ item.label or "" }}
