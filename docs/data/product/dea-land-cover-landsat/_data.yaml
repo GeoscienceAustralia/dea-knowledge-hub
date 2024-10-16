@@ -21,7 +21,7 @@ temporal_coverage_custom: null
 
 data_update_frequency: YEARLY
 data_update_activity: NO_UPDATES
-is_currency_reported: false
+is_currency_reported: true
 
 resolution: 25 m
 product_ids:
