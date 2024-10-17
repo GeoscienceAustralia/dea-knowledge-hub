@@ -22,6 +22,16 @@
 
 Learn more about the [DEA Summary Product Grid](/guides/reference/collection_3_summary_grid/).
 
+## 17 Oct 2024: DEA Sandbox has been upgraded
+
+**Note:** Users may encounter caching issues when logging in to the Sandbox for the first time after this upgrade; please **[empty cache and hard reload](https://help.codehs.com/en/articles/4951972-how-to-clear-your-browser-cache-and-hard-refresh)** your Sandbox's browser tab if problems occur.
+
+The DEA Sandbox environment has been successfully upgraded to include new Python packages and software.
+Several new packages have also been added, including `gcfs` (for accessing data on Google Cloud), `xarray-spatial` (for performing spatial analysis with `xarray`), and `pyspark` (unified analytics engine for large-scale data processing).
+ 
+Most significantly, this included an [upgrade to JupyterLab 4.0](https://blog.jupyter.org/jupyterlab-4-0-is-here-388d05e03442), which updated the main Sandbox user interface.
+Please note that some existing Sandbox functionality (code snippet tool and resource monitor graphs) are not currently supported by JupyterLab 4.0 and will be restored as soon as they are available.
+
 ## 17 Oct 2024: NCI Explorer outage
 
 NCI Explorer has experienced an outage since yesterday. You may encounter issues when attempting to use this service. We are currently investigating the issue.
