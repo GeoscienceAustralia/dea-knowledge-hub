@@ -167,6 +167,8 @@
       {{ product_ids_list | join(", ") }}
       {%- elif spatial_data_type == spatial_data_type_terms.VECTOR %}
       Vector product
+      {%- else %}
+      Data product
       {%- endif %}
 
       {% if page.data.is_latest_version %}
