@@ -801,7 +801,7 @@
 {% endif %}
 {% endset %}
 
-{# Constructing the template #}
+{# Assembling the page #}
 
 {{ rst_start_component }}
 
