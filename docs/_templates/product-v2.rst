@@ -114,6 +114,12 @@
 
 {% set has_access_data = maps_list or data_list or explorers_list or web_services_list or code_samples_list or access_links_custom_list %}
 
+{# Product IDs component #}
+
+{% set product_ids_component -%}
+{% for product_id in product_ids_list %}`{{product_id}} <./?tab=specifications>`_{% if not loop.last %}, {% endif %}{%- endfor %}
+{%- endset %}
+
 {# Parent products component #}
 
 {% set parent_products_list_component -%}
@@ -164,11 +170,11 @@
       .. rubric:: {{ display_title }}
 
       {% if product_ids_list %}
-      {{ product_ids_list | join(", ") }}
+      {{ product_ids_component }}
       {%- elif spatial_data_type == spatial_data_type_terms.VECTOR %}
-      Vector product
+      `Vector product <./?tab=specifications>`_
       {%- else %}
-      Data product
+      `Data product <./?tab=specifications>`_
       {%- endif %}
 
       {% if page.data.is_latest_version %}
