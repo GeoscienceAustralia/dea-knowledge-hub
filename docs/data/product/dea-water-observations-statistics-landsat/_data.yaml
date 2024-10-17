@@ -104,7 +104,7 @@ access_links_custom: null
 
 # History
 
-old_versions:
+previous_versions:
   - version: 1.6.0
     title: DEA Water Observations Statistics (Landsat)
     slug: dea-water-observations-statistics-landsat-1.6.0

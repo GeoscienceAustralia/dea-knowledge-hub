@@ -93,7 +93,7 @@ access_links_custom: null
 
 # History
 
-old_versions:
+previous_versions:
   - version: 3.1.0
     title: DEA Geometric Median and Median Absolute Deviation (Landsat)
     slug: dea-geometric-median-and-median-absolute-deviation-landsat-3.1.0

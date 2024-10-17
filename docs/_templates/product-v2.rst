@@ -70,7 +70,7 @@
 
 {% set access_links_custom_list = page.data.access_links_custom | selectattr("icon", "!=", None) | selectattr("link", "!=", None) | selectattr("name", "!=", None) | list %}
 
-{% set old_versions_list = page.data.old_versions | selectattr("slug", "!=", None) | selectattr("version", "!=", None) | selectattr("name", "!=", None) | list %}
+{% set previous_versions_list = page.data.previous_versions | selectattr("slug", "!=", None) | selectattr("version", "!=", None) | selectattr("name", "!=", None) | list %}
 
 {% set product_ids_list = page.data.product_ids | select("!=", None) | list %}
 
@@ -505,7 +505,7 @@
         - {{ page.data.full_technical_name }}
         - The name used in some technical contexts.
       {%- endif %}
-      {%- if page.data.is_latest_version and old_versions_list | length > 0 and page.data.enable_history %} {# If at least one old version exists. #}
+      {%- if page.data.is_latest_version and previous_versions_list | length > 0 and page.data.enable_history %} {# If at least one old version exists. #}
       * - **Version**
         - {{ page.data.version_number }}
         - The version number of the product. See the `History tab <./?tab=history>`_.
@@ -733,7 +733,7 @@
       :name: version-history
       :class: h2
 
-   {% if old_versions_list | length > 0 %}
+   {% if previous_versions_list | length > 0 %}
 
    View previous releases of this product. Versions are numbered using the `Semantic Versioning <semver_>`_ scheme (MAJOR.MINOR.PATCH).
 
@@ -743,7 +743,7 @@
 
       * - v{{ page.data.version_number }}
         - Current version
-      {% for item in old_versions_list %}
+      {% for item in previous_versions_list %}
       * - v{{ item.version }}
         - `{{ item.title }} </data/version-history/{{ item.slug }}/>`_
       {% endfor %}

@@ -80,7 +80,7 @@ access_links_custom: null
 
 # History
 
-old_versions:
+previous_versions:
   - version: 2.0.0
     title: DEA Pixel Quality (Landsat)
     slug: dea-pixel-quality-landsat-2.0.0

@@ -80,7 +80,7 @@ access_links_custom: null
 
 # History
 
-old_versions:
+previous_versions:
   - version: 2.3.1
     title: DEA Fractional Cover (Landsat)
     slug: dea-fractional-cover-landsat-2.3.1

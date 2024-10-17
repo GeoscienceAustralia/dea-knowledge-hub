@@ -71,7 +71,7 @@ access_links_web_services: null
 
 # History
 
-old_versions:
+previous_versions:
   - version: 2.0.0
     title: DEA Burnt Area (Landsat, 2010 and 2015)
     slug: dea-burnt-area-landsat-2010-and-2015-2.0.0

@@ -94,7 +94,7 @@ access_links_custom: null
 
 # History
 
-old_versions:
+previous_versions:
   - version: 1.0.0
     title: DEA Intertidal Elevation (Landsat)
     slug: dea-intertidal-elevation-landsat-1.0.0
