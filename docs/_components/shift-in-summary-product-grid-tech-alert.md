@@ -2,6 +2,6 @@ To accommodate an expanded area of coverage of Australia's external territories,
 
 All new versions of our 'summary derivative products' will be affected by this change (but existing versions of the products will not be changed).
 
-This change has already been applied to the latest versions of the following products: [v4.0.0 of DEA Geometric Median and Median Absolute Deviation (GeoMAD)](/data/product/dea-geometric-median-and-median-absolute-deviation-landsat/),[DEA Water Observations Statistics (Landsat)](/data/product/dea-water-observations-statistics-landsat/), [DEA Fractional Cover Percentiles](/data/product/dea-fractional-cover-percentiles-landsat/), [DEA Tasseled Cap Percentiles](/data/product/dea-tasseled-cap-percentiles-landsat/) and [DEA Mangroves](/data/product/dea-mangrove-canopy-cover-landsat/).
+This change has already been applied to the latest versions of the following products: [DEA Geometric Median and Median Absolute Deviation (Landsat)](/data/product/dea-geometric-median-and-median-absolute-deviation-landsat/), [DEA Water Observations Statistics (Landsat)](/data/product/dea-water-observations-statistics-landsat/), [DEA Fractional Cover Percentiles (Landsat)](/data/product/dea-fractional-cover-percentiles-landsat/), [DEA Tasseled Cap Percentiles (Landsat)](/data/product/dea-tasseled-cap-percentiles-landsat/) and [DEA Mangroves (Landsat)](/data/product/dea-mangroves/).
 
-This change will be applied to the new versions of the following product, when released: [DEA Land Cover](/data/product/dea-land-cover-landsat/)
+This change will be applied to the new versions of the following product, when released: [DEA Land Cover (Landsat)](/data/product/dea-land-cover-landsat/)
