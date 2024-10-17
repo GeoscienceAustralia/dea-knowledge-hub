@@ -114,18 +114,6 @@
 
 {% set has_access_data = maps_list or data_list or explorers_list or web_services_list or code_samples_list or access_links_custom_list %}
 
-{# Product IDs with links component #}
-
-{% set product_ids_with_links_component -%}
-{% for product_id in product_ids_list %}`{{product_id}} <./?tab=specifications#product-information>`_{% if not loop.last %} :raw-html:`&middot;` {% endif %}{%- endfor %}
-{%- endset %}
-
-{# Product IDs without links component #}
-
-{% set product_ids_without_links_component -%}
-{% for product_id in product_ids_list %}{{product_id}}{% if not loop.last %} :raw-html:`&middot;` {% endif %}{%- endfor %}
-{%- endset %}
-
 {# Parent products component #}
 
 {% set parent_products_list_component -%}
@@ -176,9 +164,9 @@
       .. rubric:: {{ display_title }}
 
       {% if product_ids_list and page.data.enable_specifications %}
-      {{ product_ids_with_links_component }}
+      `{{ product_types_list | join(" :raw-html:`&middot;` ") }} <./?tab=specifications#product-information>`_
       {%- elif product_ids_list %}
-      {{ product_ids_without_links_component }}
+      {{ product_types_list | join(" :raw-html:`&middot;` ") }}
       {%- elif spatial_data_type == spatial_data_type_terms.VECTOR and page.data.enable_specifications %}
       `Vector product <./?tab=specifications#product-information>`_
       {%- elif spatial_data_type == spatial_data_type_terms.VECTOR %}
