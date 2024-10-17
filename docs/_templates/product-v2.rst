@@ -117,7 +117,7 @@
 {# Product IDs component #}
 
 {% set product_ids_component -%}
-{% for product_id in product_ids_list %}`{{product_id}} <./?tab=specifications>`_{% if not loop.last %}, {% endif %}{%- endfor %}
+{% for product_id in product_ids_list %}`{{product_id}} <./?tab=specifications#product-information>`_{% if not loop.last %}, {% endif %}{%- endfor %}
 {%- endset %}
 
 {# Parent products component #}
@@ -172,9 +172,9 @@
       {% if product_ids_list %}
       {{ product_ids_component }}
       {%- elif spatial_data_type == spatial_data_type_terms.VECTOR %}
-      `Vector product <./?tab=specifications>`_
+      `Vector product <./?tab=specifications#product-information>`_
       {%- else %}
-      `Data product <./?tab=specifications>`_
+      `Data product <./?tab=specifications#product-information>`_
       {%- endif %}
 
       {% if page.data.is_latest_version %}
@@ -442,7 +442,7 @@
 
    {% if bands_table_list %}
    .. rubric:: Bands
-      :name: bands-specifications
+      :name: bands
       :class: h2
 
    Bands are distinct layers of data within a product that can be loaded using the Open Data Cube (on the `DEA Sandbox <dea_sandbox_>`_ or `NCI <nci_>`_) or DEA's `STAC API <stac_api_>`_.
@@ -453,7 +453,7 @@
 
    .. list-table::
       :header-rows: 1
-      :name: bands-specifications-table
+      :name: bands-table
 
       * - 
         - Aliases
@@ -478,13 +478,13 @@
    {% endif %}
 
    .. rubric:: Product information
-      :name: product-information-specifications
+      :name: product-information
       :class: h2
 
    This metadata provides general information about the product.
 
    .. list-table::
-      :name: product-information-specifications-table
+      :name: product-information-table
 
       {% if product_ids_list %}
       * - **{{ product_ids_label }}**
@@ -610,13 +610,13 @@
       {%- endif %}
 
    .. rubric:: Product categorisation
-      :name: product-categorisation-specifications
+      :name: product-categorisation
       :class: h2
 
    This metadata categorises the product so that it can be found alongside related products.
 
    .. list-table::
-      :name: product-categorisation-specifications-table
+      :name: product-categorisation-table
 
       {% if parent_products_list %}
       * - **{{ parent_products_label }}**
