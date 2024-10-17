@@ -7,6 +7,7 @@
         font-weight: bold;
 
         &[data-link-type="query"] {
+            font-weight: normal;
             text-decoration: none;
 
             &:hover {
