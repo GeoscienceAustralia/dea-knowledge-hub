@@ -164,9 +164,9 @@
       .. rubric:: {{ display_title }}
 
       {% if product_ids_list and page.data.enable_specifications %}
-      `{{ product_types_list | join(" :raw-html:`&middot;` ") }} <./?tab=specifications#product-information>`_
+      `{{ product_ids_list | join(", ") }} <./?tab=specifications#product-information>`_
       {%- elif product_ids_list %}
-      {{ product_types_list | join(" :raw-html:`&middot;` ") }}
+      {{ product_ids_list | join(", ") }}
       {%- elif spatial_data_type == spatial_data_type_terms.VECTOR and page.data.enable_specifications %}
       `Vector product <./?tab=specifications#product-information>`_
       {%- elif spatial_data_type == spatial_data_type_terms.VECTOR %}
