@@ -114,10 +114,16 @@
 
 {% set has_access_data = maps_list or data_list or explorers_list or web_services_list or code_samples_list or access_links_custom_list %}
 
-{# Product IDs component #}
+{# Product IDs with links component #}
 
-{% set product_ids_component -%}
+{% set product_ids_with_links_component -%}
 {% for product_id in product_ids_list %}`{{product_id}} <./?tab=specifications#product-information>`_{% if not loop.last %} :raw-html:`&middot;` {% endif %}{%- endfor %}
+{%- endset %}
+
+{# Product IDs without links component #}
+
+{% set product_ids_without_links_component -%}
+{% for product_id in product_ids_list %}{{product_id}}{% if not loop.last %} :raw-html:`&middot;` {% endif %}{%- endfor %}
 {%- endset %}
 
 {# Parent products component #}
@@ -169,16 +175,26 @@
 
       .. rubric:: {{ display_title }}
 
-      {% if product_ids_list %}
-      {{ product_ids_component }}
-      {%- elif spatial_data_type == spatial_data_type_terms.VECTOR %}
+      {% if product_ids_list and page.data.enable_specifications %}
+      {{ product_ids_with_links_component }}
+      {%- elif product_ids_list %}
+      {{ product_ids_without_links_component }}
+      {%- elif spatial_data_type == spatial_data_type_terms.VECTOR and page.data.enable_specifications %}
       `Vector product <./?tab=specifications#product-information>`_
-      {%- else %}
+      {%- elif spatial_data_type == spatial_data_type_terms.VECTOR %}
+      Vector product
+      {%- elif page.data.enable_specifications %}
       `Data product <./?tab=specifications#product-information>`_
+      {%- else %}
+      Data product
       {%- endif %}
 
-      {% if page.data.is_latest_version %}
+      {% if page.data.is_latest_version and page.data.enable_history %}
+      :Version: `{{ page.data.version_number }} <./?tab=history>`_
+      {%- elif page.data.is_latest_version %}
       :Version: {{ page.data.version_number }}
+      {%- elif page.data.enable_history %}
+      :Version: `{{ page.data.version_number }} <./?tab=history>`_ (`See latest version <{{ page.data.latest_version_link }}>`_)
       {%- else %}
       :Version: {{ page.data.version_number }} (`See latest version <{{ page.data.latest_version_link }}>`_)
       {%- endif %}
