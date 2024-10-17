@@ -59,7 +59,7 @@ tags:
 
 # Access
 
-maps: null
+access_links_maps: null
   # TODO review:
   # - link: https://maps.dea.ga.gov.au/#share=s-yIyPPjQlWxVBLg10WJBQd8KrMgt
   #   name: Apr-Oct summaries on DEA Maps
@@ -70,11 +70,11 @@ maps: null
   # - link: https://maps.dea.ga.gov.au/#share=s-x0R0IFIqxSFDJ54LK6sFDEfjh6i
   #   name: All-time summary on DEA Maps
 
-explorers:
+access_links_explorers:
   - link: https://explorer.dea.ga.gov.au/products#inland-water-group
     name: null
 
-data:
+access_links_data:
   - link: https://data.dea.ga.gov.au/?prefix=derivative/ga_ls_wo_fq_apr_oct_3/2-0-0/
     name: Apr-Oct summaries since 1986 - AWS access
   - link: https://data.dea.ga.gov.au/?prefix=derivative/ga_ls_wo_fq_nov_mar_3/2-0-0/
@@ -92,11 +92,11 @@ data:
   - link: https://thredds.nci.org.au/thredds/catalog/jw04/ga_ls_wo_fq_myear_3/catalog.html
     name: All-time summary 1986 to present - NCI access
 
-code_examples:
+access_links_code_examples:
   - link: /notebooks/DEA_products/DEA_Water_Observations/
     name: null
 
-web_services:
+access_links_web_services:
   - link: https://ows.dea.ga.gov.au/
     name: null
 

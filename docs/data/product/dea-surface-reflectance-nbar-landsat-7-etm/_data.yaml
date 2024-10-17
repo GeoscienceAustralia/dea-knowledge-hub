@@ -56,25 +56,25 @@ tags:
 
 # Access
 
-maps:
+access_links_maps:
   - link: https://maps.dea.ga.gov.au/#share=s-eo2yPzDYVPLTJ1WHbFQM1Vu6M8v
     name: See it on a map
 
-explorers:
+access_links_explorers:
   - link: https://explorer.dea.ga.gov.au/products/ga_ls7e_ard_3
     name: null
 
-data:
+access_links_data:
   - link: https://data.dea.ga.gov.au/?prefix=baseline/ga_ls7e_ard_3/
     name: Access the data on AWS
   - link: https://thredds.nci.org.au/thredds/catalog/xu18/ga_ls7e_ard_3/catalog.html
     name: Access the data in NCI
 
-code_examples:
+access_links_code_examples:
   - link: /notebooks/DEA_products/DEA_Landsat_Surface_Reflectance/
     name: null
 
-web_services: null
+access_links_web_services: null
 
 access_links_custom: null
 

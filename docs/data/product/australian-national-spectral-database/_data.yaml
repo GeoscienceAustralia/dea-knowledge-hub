@@ -59,15 +59,15 @@ tags:
 
 # Access
 
-maps: null
+access_links_maps: null
 
-explorers: null
+access_links_explorers: null
 
-data: null
+access_links_data: null
 
-code_examples: null
+access_links_code_examples: null
 
-web_services: null
+access_links_web_services: null
 
 access_links_custom:
   - icon: database

@@ -60,25 +60,25 @@ tags:
 
 # Access
 
-maps:
+access_links_maps:
   - link: https://maps.dea.ga.gov.au/#share=s-riBc1GkNNMcUQoRWviu1Sst88or # TODO review: https://maps.dea.ga.gov.au/#share=s-1WoTW0dJY5MKU58ovTgOcZEYc48
     name: null
 
-explorers:
+access_links_explorers:
   - link: https://explorer.dea.ga.gov.au/products/ga_ls_mangrove_cover_cyear_3
     name: null
 
-data:
+access_links_data:
   - link: https://data.dea.ga.gov.au/?prefix=derivative/ga_ls_mangrove_cover_cyear_3/4-0-0/
     name: Access the data on AWS
   - link: https://thredds.nci.org.au/thredds/catalog/jw04/ga_ls_mangrove_cover_cyear_3/4-0-0/catalog.html
     name: Access the data on NCI
 
-code_examples:
+access_links_code_examples:
   - link: /notebooks/DEA_products/DEA_Mangroves/
     name: null
 
-web_services:
+access_links_web_services:
   - link: https://ows.dea.ga.gov.au/
     name: Web Map Service (WMS)
 

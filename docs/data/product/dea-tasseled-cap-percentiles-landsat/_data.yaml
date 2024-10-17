@@ -57,23 +57,23 @@ tags:
 
 # Access
 
-maps:
+access_links_maps:
   - link: https://maps.dea.ga.gov.au/#share=s-hnDwAfLNqJEIuwGzufL9yI5DS0w # TODO review: https://maps.dea.ga.gov.au/#share=s-kpW2fu5nyh8hnS1M0OPsZ5lHlLi
     name: See it on a map
 
-explorers:
+access_links_explorers:
   - link: https://explorer.dea.ga.gov.au/products/ga_ls_tc_pc_cyear_3
     name: null
 
-data:
+access_links_data:
   - link: https://data.dea.ga.gov.au/?prefix=derivative/ga_ls_tc_pc_cyear_3/
     name: DEA Tasseled Cap Calendar Year Percentiles - AWS
   - link: https://thredds.nci.org.au/thredds/catalog/jw04/ga_ls_tc_pc_cyear_3/2-0-0/catalog.html
     name:  DEA Tasseled Cap Calendar Year Percentiles - NCI
 
-code_examples: null
+access_links_code_examples: null
 
-web_services:
+access_links_web_services:
   - link: https://ows.dea.ga.gov.au/
     name: null
 

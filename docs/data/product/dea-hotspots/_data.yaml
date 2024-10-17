@@ -54,21 +54,21 @@ tags:
 
 # Access
 
-maps:
+access_links_maps:
   - link: https://hotspots.dea.ga.gov.au/
     name: null
 
-explorers: null
+access_links_explorers: null
 
-data:
+access_links_data:
   - link: https://hotspots.dea.ga.gov.au/login
     name: DEA Hotspots Secure Access
   - link: https://hotspots.dea.ga.gov.au/files
     name: Access the data on AWS
 
-code_examples: null
+access_links_code_examples: null
 
-web_services:
+access_links_web_services:
   - link: https://hotspots.dea.ga.gov.au/geoserver/wms?service=wms&version=1.1.1&request=getcapabilities
     name: Web Mapping Service (WMS)
   - link: https://hotspots.dea.ga.gov.au/geoserver/wfs?service=wfs&version=1.1.1&request=getcapabilities

@@ -55,25 +55,25 @@ tags:
 
 # Access
 
-maps:
+access_links_maps:
   - link: https://maps.dea.ga.gov.au/#share=s-dsn0y5piVd34kvlDoOEEi1oSEWk # TODO review: https://maps.dea.ga.gov.au/#share=s-uTFeDOnmZpXV2Ub7kRC50Q0v4vj
     name: See it on a map
 
-explorers:
+access_links_explorers:
   - link: https://explorer.dea.ga.gov.au/products/ga_ls_fc_pc_cyear_3
     name: Data explorer
 
-data:
+access_links_data:
   - link: https://data.dea.ga.gov.au/?prefix=derivative/ga_ls_fc_pc_cyear_3/4-0-0/
     name: Digital Earth Australia - Public Data on AWS
   - link: https://thredds.nci.org.au/thredds/catalog/jw04/ga_ls_fc_pc_cyear_3/4-0-0/catalog.html
     name: Digital Earth Australia - Public Data on NCI
 
-code_examples:
+access_links_code_examples:
   - link: https://explorer.dea.ga.gov.au/products/ga_ls_fc_pc_cyear_3
     name: null
 
-web_services: null
+access_links_web_services: null
 
 access_links_custom: null
 

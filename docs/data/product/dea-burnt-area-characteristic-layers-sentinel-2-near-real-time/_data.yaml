@@ -55,19 +55,19 @@ tags:
 
 # Access
 
-maps: null
+access_links_maps: null
 
-explorers:
+access_links_explorers:
   - link: https://explorer.dea.ga.gov.au/products/ga_s2_ba_provisional_3
     name: null
 
-data:
+access_links_data:
   - link: https://data.dea.ga.gov.au/?prefix=derivative/ga_s2_ba_provisional_3/1-6-0/
     name: Access the data on AWS
 
-code_examples: null
+access_links_code_examples: null
 
-web_services: null
+access_links_web_services: null
 
 # History
 

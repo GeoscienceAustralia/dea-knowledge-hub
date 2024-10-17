@@ -61,23 +61,23 @@ tags:
 
 # Access
 
-maps:
+access_links_maps:
   - link: https://maps.dea.ga.gov.au/story/DEACoastlines
     name: null
 
-explorers: null
+access_links_explorers: null
 
-data:
+access_links_data:
   - link: https://data.dea.ga.gov.au/?prefix=derivative/dea_coastlines/
     name: Access the data on AWS
 
-code_examples:
+access_links_code_examples:
   - link: /notebooks/DEA_products/DEA_Coastlines/
     name: null
   - link: https://github.com/GeoscienceAustralia/dea-coastlines
     name: GitHub repository
 
-web_services:
+access_links_web_services:
   - link: https://geoserver.dea.ga.gov.au/geoserver/wms
     name: Web Map Service (WMS)
   - link: http://geoserver.dea.ga.gov.au/geoserver/wfs?service=WFS&version=1.1.0

@@ -58,25 +58,25 @@ tags:
 
 # Access
 
-maps:
+access_links_maps:
   - link: https://maps.dea.ga.gov.au/#share=s-czCPOd989jf0H8ssWTc4BvnBkBg
     name: See it on a map
 
-explorers:
+access_links_explorers:
   - link: https://explorer.dea.ga.gov.au/products/ga_ls9c_ard_3
     name: null
 
-data:
+access_links_data:
   - link: https://data.dea.ga.gov.au/?prefix=baseline/ga_ls9c_ard_3/
     name: Access the data on AWS
   - link: https://thredds.nci.org.au/thredds/catalog/xu18/ga_ls9c_ard_3/catalog.html
     name: Access the data on NCI
 
-code_examples:
+access_links_code_examples:
   - link: /notebooks/DEA_products/DEA_Landsat_Surface_Reflectance/
     name: null
 
-web_services:
+access_links_web_services:
   - link: https://ows.dea.ga.gov.au/?service=WMS&version=1.3.0&request=GetCapabilities
     name: Web Map Service (WMS)
   - link: https://ows.dea.ga.gov.au/?service=WCS&request=GetCapabilities&version=2.0.0

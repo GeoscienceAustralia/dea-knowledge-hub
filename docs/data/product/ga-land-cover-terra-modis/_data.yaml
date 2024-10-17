@@ -57,19 +57,19 @@ tags:
 
 # Access
 
-maps: null
+access_links_maps: null
 
-explorers: null
+access_links_explorers: null
 
-data:
+access_links_data:
   - link: https://thredds.nci.org.au/thredds/catalog/fk4/dlcd/catalog.html
     name: Access the data on NCI
   - link: https://pid.geoscience.gov.au/dataset/ga/83868
     name: Download a zipped .tif
 
-code_examples: null
+access_links_code_examples: null
 
-web_services:
+access_links_web_services:
   - link: http://gaservices.ga.gov.au/site_1/services/Land_Cover_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS
     name: Web Map Service (WMS)
 

@@ -63,15 +63,15 @@ tags:
 
 # Access
 
-maps:
+access_links_maps:
   - link: https://maps.dea.ga.gov.au/story/DEAGeoMAD
     name: null
 
-explorers:
+access_links_explorers:
   - link: https://explorer.dea.ga.gov.au/products#baseline-satellite-data-group
     name: null
 
-data:
+access_links_data:
   - link: https://data.dea.ga.gov.au/?prefix=derivative
     name: Access the data on AWS
   - link: https://thredds.nci.org.au/thredds/catalog/jw04/ga_ls5t_gm_cyear_3/catalog.html
@@ -81,11 +81,11 @@ data:
   - link: https://thredds.nci.org.au/thredds/catalog/jw04/ga_ls8cls9c_gm_cyear_3/catalog.html
     name: Annual Landsat 8 and 9 observations on NCI
 
-code_examples:
+access_links_code_examples:
   - link: /notebooks/DEA_products/DEA_GeoMAD/
     name: null
 
-web_services:
+access_links_web_services:
   - link: https://ows.dea.ga.gov.au/
     name: null
 

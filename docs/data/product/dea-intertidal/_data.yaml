@@ -63,15 +63,15 @@ tags:
 
 # Access
 
-maps:
+access_links_maps:
   - link: https://maps.dea.ga.gov.au/story/DEAIntertidal
     name: null
 
-explorers:
+access_links_explorers:
   - link: https://explorer.dea.ga.gov.au/products/ga_s2ls_intertidal_cyear_3
     name: null
 
-data:
+access_links_data:
   - link: https://data.dea.ga.gov.au/?prefix=derivative/ga_s2ls_intertidal_cyear_3/
     name: Access the data on AWS
   - link: https://elevation.fsdf.org.au/
@@ -79,13 +79,13 @@ data:
   - link: https://thredds.nci.org.au/thredds/catalog/jw04/ga_s2ls_intertidal_cyear_3/catalog.html
     name: Access the data on NCI
 
-code_examples:
+access_links_code_examples:
   - link: /notebooks/DEA_products/DEA_Intertidal/
     name: null
   - link: https://github.com/GeoscienceAustralia/dea-intertidal
     name: GitHub repository
 
-web_services:
+access_links_web_services:
   - link: https://ows.dea.ga.gov.au/
     name: Web Map Service (WMS)
 

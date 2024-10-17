@@ -55,19 +55,19 @@ tags:
 
 # Access
 
-maps:
+access_links_maps:
   - link: https://wetlandinfo.des.qld.gov.au/wetlands/
     name: null
 
-explorers: null
+access_links_explorers: null
 
-data:
+access_links_data:
   - link: https://data.dea.ga.gov.au/?prefix=projects/Wetlands_Insight_Tool/QLD/
     name: Access the data on AWS
 
-code_examples: null
+access_links_code_examples: null
 
-web_services: null
+access_links_web_services: null
 
 access_links_custom: null
 

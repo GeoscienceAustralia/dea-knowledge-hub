@@ -57,25 +57,25 @@ tags:
 
 # Access
 
-maps:
+access_links_maps:
   - link: https://maps.dea.ga.gov.au/story/DEAWaterbodies
     name: null
 
-explorers: null
+access_links_explorers: null
 
-data:
+access_links_data:
   - link: https://pid.geoscience.gov.au/dataset/ga/148920
     name: Download the shapefile
   - link: https://data.dea.ga.gov.au/?prefix=derivative/dea_waterbodies/3-0-0/
     name: Access the data on AWS
 
-code_examples:
+access_links_code_examples:
   - link: /notebooks/DEA_products/DEA_Waterbodies/
     name: null
   - link: https://github.com/GeoscienceAustralia/dea-conflux
     name: GitHub repository
 
-web_services:
+access_links_web_services:
   - link: https://geoserver.dea.ga.gov.au/geoserver/web/?0
     name: Web Mapping Service (WMS)
 

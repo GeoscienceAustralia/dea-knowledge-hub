@@ -58,25 +58,25 @@ tags:
 
 # Access
 
-maps:
+access_links_maps:
   - link: https://maps.dea.ga.gov.au/#share=s-1I12IwkLvoIRxnJkzeiGTAJ3qEL
     name: See it on a map
 
-explorers:
+access_links_explorers:
   - link: https://explorer.dea.ga.gov.au/products/item_v2
     name: null
   - link: https://explorer.dea.ga.gov.au/products/item_v2_conf
     name: Confidence data explorer
 
-data:
+access_links_data:
   - link: https://data.dea.ga.gov.au/?prefix=item_v2/v2.0.1/
     name: Access the data on AWS
   - link: https://thredds.nci.org.au/thredds/catalog/catalogs/fk4/item_2_0.html
     name: Access the data on NCI
 
-code_examples: null
+access_links_code_examples: null
 
-web_services:
+access_links_web_services:
   - link: https://ows.dea.ga.gov.au/
     name: Web Map Service (WMS)
 
