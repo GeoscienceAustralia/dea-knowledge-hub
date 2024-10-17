@@ -117,7 +117,7 @@
 {# Product IDs component #}
 
 {% set product_ids_component -%}
-{% for product_id in product_ids_list %}`{{product_id}} <./?tab=specifications#product-information>`_{% if not loop.last %}, {% endif %}{%- endfor %}
+{% for product_id in product_ids_list %}`{{product_id}} <./?tab=specifications#product-information>`_{% if not loop.last %} :raw-html:`&middot;` {% endif %}{%- endfor %}
 {%- endset %}
 
 {# Parent products component #}
