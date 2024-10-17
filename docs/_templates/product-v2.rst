@@ -355,7 +355,7 @@
         - {{ page.data.licence_name }}
       {%- endif %}
 
-   {% if page.data.citation_data or page.data.citation_paper %}
+   {% if page.data.citation_data or page.data.citation_paper or page.data.citations_custom %}
    .. rubric:: Cite this product
       :name: citations
       :class: h2
@@ -368,14 +368,14 @@
         - .. code-block:: text
              :class: citation-table-citation citation-access-date
 
-             {{ page.data.data_citation }}
+             {{ page.data.citation_data }}
       {%- endif %}
       {% if page.data.citation_paper %}
       * - **Paper citation**
         - .. code-block:: text
              :class: citation-table-citation
 
-             {{ page.data.paper_citation }}
+             {{ page.data.citation_paper }}
       {%- endif %}
       {% for citation in citations_custom_list %}
       * - **{{ citation.name }}**
