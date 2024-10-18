@@ -35,7 +35,7 @@ DEA product names include the following components:
   "Water Observations" or nbart for "Nadir corrected Bi-directional reflectance
   distribution function Adjusted Reflectance with Terrian illumination 
   correction" (NBAR-T).
-- version - version of product
+- version - The version number of product. (See the `Versioning <#versioning>`_ section below.)
 - WRS-2 code - 6 digit number defining the WRS-2 path and row (see link 
   below for more details) that the dataset covers
 - MGRS grid tile - 5 letters and numbers defining the MGRS grid (see link
@@ -105,6 +105,12 @@ Landsat ARD ODC Product
 Landsat Fractional Cover ODC Product
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 |odc_fc_image|
+
+
+Versioning
+----------
+
+Products use the 'Semantic Versioning' format: Major.Minor.Patch. E.g. ``2.1.0``. The 'Major' number is incremented when there are incompatible changes (non-backward-compatible changes); the 'minor' number is incremented when there are backward-compatible changes; and, the 'Patch' number is incremented for backward-compatible bug fixes.
 
 References
 ----------
