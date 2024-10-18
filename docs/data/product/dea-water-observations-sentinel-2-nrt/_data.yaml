@@ -3,7 +3,7 @@
 
 # Specifications
 
-official_name: DEA Water Observations (Sentinel-2 NRT)
+short_name: DEA Water Observations (Sentinel-2 NRT)
 full_technical_name: Geoscience Australia Sentinel-2 Near Real Time Water Observations Collection 3
 header_image: /_files/cmi/S2_WO_Provisional_Gulf_20230320_0.png
 

@@ -3,7 +3,7 @@
 
 # Specifications
 
-official_name: DEA Surface Reflectance OA (Landsat 9)
+short_name: DEA Surface Reflectance OA (Landsat 9)
 full_technical_name: Geoscience Australia Landsat 9 OLI-TIRS Observation Attributes Collection 3
 header_image: /_files/cmi/surface_reflectance_2_NBARTa_1.png
 

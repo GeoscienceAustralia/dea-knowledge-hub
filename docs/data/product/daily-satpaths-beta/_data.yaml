@@ -3,7 +3,7 @@
 
 # Specifications
 
-official_name: Daily SatPaths
+short_name: Daily SatPaths
 full_technical_name: Daily Satellite Paths predictor
 header_image: /_files/cmi/SatPaths_image.png
 

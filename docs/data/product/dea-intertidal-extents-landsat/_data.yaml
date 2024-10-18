@@ -3,7 +3,7 @@
 
 # Specifications
 
-official_name: DEA Intertidal Extents (Landsat)
+short_name: DEA Intertidal Extents (Landsat)
 full_technical_name: Intertidal Extents Model 25m
 header_image: /_files/cmi/intertidal_extents.png
 

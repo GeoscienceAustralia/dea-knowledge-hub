@@ -3,7 +3,7 @@
 
 # Specifications
 
-official_name: DEA Surface Reflectance OA (Sentinel-2B MSI)
+short_name: DEA Surface Reflectance OA (Sentinel-2B MSI)
 full_technical_name: Geoscience Australia Sentinel-2B Observation Attributes Collection 3
 header_image: /_files/cmi/surface_reflectance_2_NBARTa_1.png
 

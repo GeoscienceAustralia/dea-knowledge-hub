@@ -3,7 +3,7 @@
 
 # Specifications
 
-official_name: DEA Land Cover (Landsat)
+short_name: DEA Land Cover (Landsat)
 full_technical_name: "Geoscience Australia Landsat Land Cover 25m "
 header_image: /_files/cmi/DEA_Land_Cover_1_0_0_Lvl4_2015.jpg
 

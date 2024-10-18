@@ -3,7 +3,7 @@
 
 # Specifications
 
-official_name: DEA Water Observations Statistics (Landsat)
+short_name: DEA Water Observations Statistics (Landsat)
 full_technical_name: Geoscience Australia Landsat Water Observation Statistics Collection 3
 header_image: /_files/cmi/WOfS-Burketown-Normanton-QLD.png
 version_number: 2.0.0

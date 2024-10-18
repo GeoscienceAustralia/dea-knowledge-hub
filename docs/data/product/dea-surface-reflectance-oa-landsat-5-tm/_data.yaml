@@ -3,7 +3,7 @@
 
 # Specifications
 
-official_name: DEA Surface Reflectance OA (Landsat 5 TM)
+short_name: DEA Surface Reflectance OA (Landsat 5 TM)
 full_technical_name: Geoscience Australia Landsat 5 TM Observation Attributes Collection 3
 header_image: /_files/cmi/surface_reflectance_2_NBARTa.png
 
