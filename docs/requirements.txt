@@ -10,7 +10,6 @@ sphinxext-rediraffe<=0.2.7
 sphinxcontrib.datatemplates<=0.10.2
 sphinx-external-toc<=1.0.1
 sphinx-sitemap<=2.5.1
-sphinxext-opengraph<=0.9.1
 sphinx-notfound-page<=1.0.0
 sphinx-copybutton<=0.5.2
 

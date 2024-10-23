@@ -73,7 +73,6 @@ extensions = [
     "sphinxcontrib.datatemplates",
     "sphinx_external_toc",
     "sphinx_sitemap",
-    "sphinxext.opengraph",
     "notfound.extension",
     "sphinx_copybutton",
     # "sphinx_tags",
