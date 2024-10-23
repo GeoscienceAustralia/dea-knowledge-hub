@@ -757,7 +757,7 @@
 
    {% if previous_versions_list | length > 0 %}
 
-   View previous releases of this product. Versions are numbered using the `Semantic Versioning <semver_>`_ scheme (MAJOR.MINOR.PATCH).
+   View previous releases of this product. Versions are numbered using the `Semantic Versioning <semver_>`_ scheme (Major.Minor.Patch).
 
    .. _semver: https://semver.org/
 
