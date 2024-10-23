@@ -521,11 +521,11 @@
       {%- endif %}
       * - **Short name**
         - {{ page.data.short_name }}
-        - The name that is most commonly used to refer to the product.
+        - The name that is commonly used to refer to the product.
       {% if page.data.full_technical_name %}
       * - **Technical name**
         - {{ page.data.full_technical_name }}
-        - The full name of the product that is used in some technical contexts.
+        - The full technical name that refers to the product and its specific provider, sensors, and collection.
       {%- endif %}
       {%- if page.data.is_latest_version and previous_versions_list | length > 0 and page.data.enable_history %} {# If at least one old version exists. #}
       * - **Version**
