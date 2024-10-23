@@ -423,18 +423,18 @@
 {% endif %}
 {% endset %}
 
-{# Details tab component #}
+{# Description tab component #}
 
-{% set details_tab_component %}
-{% if page.data.enable_details %}
-.. tab-item:: Details
-   :name: details
+{% set description_tab_component %}
+{% if page.data.enable_description %}
+.. tab-item:: Description
+   :name: description
 
    .. raw:: html
 
       <div class="product-tab-table-of-contents"></div>
 
-   .. include:: _details.md
+   .. include:: _description.md
       :parser: myst_parser.sphinx_
 {% endif %}
 {% endset %}
@@ -823,7 +823,7 @@
 
    {{ overview_tab_component | indent(3, True) }}
 
-   {{ details_tab_component | indent(3, True) }}
+   {{ description_tab_component | indent(3, True) }}
 
    {{ quality_tab_component | indent(3, True) }}
 
