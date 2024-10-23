@@ -16,7 +16,7 @@ New supporting data has been added to DEA Maps and web services for the most rec
 * The date that polygons of waterbody boundaries were created.
 * The dataset metadata link.  
 
-Specifications of supporting data are now [available](./?tab=details#data-specification-tables). Data will be uploaded as soon as it is received and processed. There is an approximate 2-week latency in processing of the satellite imagery to an Analysis Ready Data (ARD) standard, from which the water information is then produced. 
+Specifications of supporting data are now [available](./?tab=description#data-specification-tables). Data will be uploaded as soon as it is received and processed. There is an approximate 2-week latency in processing of the satellite imagery to an Analysis Ready Data (ARD) standard, from which the water information is then produced. 
 
 #### Polygon named with 'v3'
 
@@ -24,7 +24,7 @@ DEA Waterbodies 3.0.0 polygon names are the same as those in v2.0.0 but the vers
 
 #### Other changes
 
-* There have been additions to the shapefile specification to support data delivery. Data specification tables have been [added](./?tab=details#data-specification-tables). 
+* There have been additions to the shapefile specification to support data delivery. Data specification tables have been [added](./?tab=description#data-specification-tables). 
 * Our production pipeline has been upgraded for enhanced reliability. 
 
 #### Decommissioning the previous version
