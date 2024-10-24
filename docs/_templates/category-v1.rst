@@ -1,6 +1,6 @@
 {% if data.description %}
 .. meta::
-   :description: {{ data.description }}
+   :description: {{ data.description|striptags|e }}
 {%- endif %}
 
 .. rst-class:: category-page

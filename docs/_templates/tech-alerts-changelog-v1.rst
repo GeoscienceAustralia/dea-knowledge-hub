@@ -1,3 +1,8 @@
+{% if data.description %}
+.. meta::
+   :description: {{ data.description|striptags|e }}
+{%- endif %}
+
 .. rst-class:: tech-alerts-changelog-page
 
 ======================================================================================================================================================
