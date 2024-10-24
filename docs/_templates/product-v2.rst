@@ -187,7 +187,6 @@
       :Version: {{ page.data.version_number }} (`See latest version <{{ page.data.latest_version_link }}>`_)
       {%- endif %}
       :Type: {{ product_types_list | join(", ") }}
-      {%- endif %}
       {%- if page.data.resolution %}
       :Resolution: {{ page.data.resolution }}
       {%- endif %}
