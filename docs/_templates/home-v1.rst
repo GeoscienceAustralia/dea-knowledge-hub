@@ -1,5 +1,7 @@
+{% if data.description %}
 .. meta::
    :description: {{ data.description }}
+{%- endif %}
 
 .. rst-class:: home-page
 
