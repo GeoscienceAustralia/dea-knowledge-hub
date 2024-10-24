@@ -184,6 +184,11 @@ An Australian federal government agency responsible for scientific research.
 
 For more information, see [CSIRO](https://www.csiro.au/).
 
+{#crs}
+## Coordinate reference system (CRS)
+
+A mathematical method of assigning coordinates to locations on the Earth's surface. There are several different CRSs in usage.
+
 {#cophub}
 ## Copernicus Australasia Regional Data Hub
 
