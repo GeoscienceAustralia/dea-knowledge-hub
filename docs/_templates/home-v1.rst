@@ -1,5 +1,6 @@
+.. title:: {{ html_title }}
+
 .. meta::
-   :title: {{ html_title }}
    :description: {{ data.description }}
 
 .. rst-class:: home-page
