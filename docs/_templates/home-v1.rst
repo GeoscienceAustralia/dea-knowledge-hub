@@ -1,3 +1,5 @@
+.. title:: {{ html_title }}
+
 .. meta::
    :description: {{ data.description }}
 

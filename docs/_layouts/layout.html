@@ -1,9 +1,7 @@
 {% extends '!layout.html' %}
 
 {%- block htmltitle %}
-{%- if pagename == "index" %} {# Home page #}
-<title>{{ docstitle|e }}</title>
-{%- elif docstitle and not embedded %}
+{%- if docstitle and not embedded and pagename != "index" %}
 <title>{{ title|striptags|e }} - {{ docstitle|e }}</title>
 {%- else %}
 <title>{{ title|striptags|e }}</title>
