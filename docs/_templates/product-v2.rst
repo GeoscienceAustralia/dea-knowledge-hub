@@ -186,47 +186,26 @@
       {%- else %}
       :Version: {{ page.data.version_number }} (`See latest version <{{ page.data.latest_version_link }}>`_)
       {%- endif %}
-      {%- if page.data.enable_specifications %}
-      :Type: `{{ product_types_list | join(", ") }} <./?tab=specifications>`_
-      {%- else %}
       :Type: {{ product_types_list | join(", ") }}
       {%- endif %}
-      {%- if page.data.resolution and page.data.enable_specifications %}
-      :Resolution: `{{ page.data.resolution }} <./?tab=specifications>`_
-      {%- elif page.data.resolution %}
+      {%- if page.data.resolution %}
       :Resolution: {{ page.data.resolution }}
       {%- endif %}
-      {%- if page.data.temporal_coverage_custom and page.data.enable_specifications %}
-      :Coverage: `{{ page.data.temporal_coverage_custom }} <./?tab=specifications>`_
-      {%- elif page.data.temporal_coverage_custom %}
+      {%- if page.data.temporal_coverage_custom %}
       :Coverage: {{ page.data.temporal_coverage_custom }}
-      {%- elif page.data.temporal_coverage_start and page.data.temporal_coverage_end and page.data.enable_specifications %}
-      :Coverage: `{{ page.data.temporal_coverage_start }} to {{ page.data.temporal_coverage_end }} <./?tab=specifications>`_
       {%- elif page.data.temporal_coverage_start and page.data.temporal_coverage_end %}
       :Coverage: {{ page.data.temporal_coverage_start }} to {{ page.data.temporal_coverage_end }}
-      {%- elif page.data.temporal_coverage_start and page.data.enable_specifications %}
-      :Coverage start: `{{ page.data.temporal_coverage_start }} <./?tab=specifications>`_
       {%- elif page.data.temporal_coverage_start %}
       :Coverage start: {{ page.data.temporal_coverage_start }}
-      {%- elif page.data.temporal_coverage_end and page.data.enable_specifications %}
-      :Coverage end: `{{ page.data.temporal_coverage_end }} <./?tab=specifications>`_
       {%- elif page.data.temporal_coverage_end %}
       :Coverage end: {{ page.data.temporal_coverage_end }}
       {%- endif %}
-      {%- if is_frequency_ongoing and is_frequency_multiple_words and page.data.enable_specifications %}
-      :Data updates: `'{{ data_update_frequency }}' frequency, {{ data_update_activity }} <./?tab=specifications>`_
-      {%- elif is_frequency_ongoing and is_frequency_multiple_words %}
+      {%- if is_frequency_ongoing and is_frequency_multiple_words %}
       :Data updates: '{{ data_update_frequency }}' frequency, {{ data_update_activity }}
-      {%- elif is_frequency_ongoing and page.data.enable_specifications %}
-      :Data updates: `{{ data_update_frequency }} frequency, {{ data_update_activity }} <./?tab=specifications>`_
       {%- elif is_frequency_ongoing %}
       :Data updates: {{ data_update_frequency }} frequency, {{ data_update_activity }}
-      {%- elif is_frequency_multiple_words and page.data.enable_specifications %}
-      :Data updates: `{{ data_update_activity }} (Previously, '{{ data_update_frequency }}' frequency) <./?tab=specifications>`_
       {%- elif is_frequency_multiple_words %}
       :Data updates: {{ data_update_activity }} (Previously, '{{ data_update_frequency }}' frequency)
-      {%- elif page.data.enable_specifications %}
-      :Data updates: `{{ data_update_activity }} (Previously, {{ data_update_frequency }} frequency) <./?tab=specifications>`_
       {%- else %}
       :Data updates: {{ data_update_activity }} (Previously, {{ data_update_frequency }} frequency)
       {%- endif %}
