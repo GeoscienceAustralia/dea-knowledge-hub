@@ -1,6 +1,6 @@
 {% if data.description %}
 .. meta::
-   :description: {{ data.description|striptags|e }}
+   :description: {{ data.description }}
 {%- endif %}
 
 .. rst-class:: home-page
