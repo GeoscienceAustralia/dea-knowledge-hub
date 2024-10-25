@@ -78,7 +78,11 @@ old_versions:
     title: DEA Tasseled Cap Percentiles (Landsat)
     slug: dea-tasseled-cap-percentiles-landsat-1.0.0
 
-# Settings
+# SEO
+
+meta_description: null
+
+#Settings
 
 enable_overview: true
 enable_access: true

@@ -75,7 +75,11 @@ old_versions:
     title: DEA Surface Reflectance NBAR (Landsat)
     slug: dea-surface-reflectance-nbar-landsat-2.0.0
 
-# Settings
+# SEO
+
+meta_description: null
+
+#Settings
 
 enable_overview: true
 enable_access: true

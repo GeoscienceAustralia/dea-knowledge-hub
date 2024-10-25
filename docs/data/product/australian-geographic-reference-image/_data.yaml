@@ -60,7 +60,11 @@ web_services: null
 
 old_versions: null
 
-# Settings
+# SEO
+
+meta_description: null
+
+#Settings
 
 enable_overview: true
 enable_access: true

@@ -82,7 +82,11 @@ old_versions:
     title: DEA Mangrove Canopy Cover (Landsat)
     slug: dea-mangrove-canopy-cover-landsat-2.0.2
 
-# Settings
+# SEO
+
+meta_description: null
+
+#Settings
 
 enable_overview: true
 enable_access: true
