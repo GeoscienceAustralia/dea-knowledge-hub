@@ -5,11 +5,11 @@
 
 .. rst-class:: home-page
 
-.. title:: DEA Knowledge Hub
-
 .. raw:: html
 
    <h1>DEA Knowledge Hub Test</h1>
+
+{{ data.title }}
 
 {{ data.description }}
 
