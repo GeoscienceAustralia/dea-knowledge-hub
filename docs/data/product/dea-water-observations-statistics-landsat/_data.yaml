@@ -104,7 +104,7 @@ old_versions:
 
 meta_description: null
 
-#Settings
+# Settings
 
 enable_overview: true
 enable_access: true
