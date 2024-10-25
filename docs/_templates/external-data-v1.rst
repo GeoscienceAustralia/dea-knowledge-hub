@@ -37,6 +37,11 @@
 {% set none_text = "None" %}
 {% set not_available_text = "N/A" %}
 
+{% if data.meta_description %}
+.. meta::
+   :description: {{ data.meta_description }}
+{%- endif %}
+
 .. role:: raw-html(raw)
    :format: html
 
