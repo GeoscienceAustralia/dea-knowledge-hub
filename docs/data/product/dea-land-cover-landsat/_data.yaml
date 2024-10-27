@@ -4,9 +4,9 @@
 # Overview
 
 title: DEA Land Cover (Landsat)
-long_title: "Geoscience Australia Landsat Land Cover 25m "
+long_title: "Geoscience Australia Landsat Land Cover 30m "
 header_image: /_files/cmi/DEA_Land_Cover_1_0_0_Lvl4_2015.jpg
-version: 1.0.0
+version: 2.0.0
 is_latest_version: true
 latest_version_link: null
 is_provisional: false
@@ -14,15 +14,15 @@ product_type: Derivative
 spatial_data_type: Raster
 time_span:
   start: 1988
-  end: 2020
+  end: Present
 update_frequency: Yearly
-next_update: No updates planned
+next_update: 2025
 product_ids:
-  - ga_ls_landcover_class_cyear_2
+  - ga_ls_landcover_class_cyear_3
 
 parent_products:
-  name: null
-  link: null
+  name: Landsat 5, 7, 8, and 9 NBART and Observational Attributes
+  link: /data/category/dea-surface-reflectance/
 collection:
   name: Geoscience Australia Landsat Collection 2
   link: null
@@ -48,11 +48,11 @@ maps:
     name: See it on a map
 
 explorers:
-  - link: https://explorer.dea.ga.gov.au/products/ga_ls_landcover_class_cyear_2
+  - link: https://explorer.dea.ga.gov.au/products/ga_ls_landcover_class_cyear_3
     name: Data explorer
 
 data:
-  - link: http://dea-public-data.s3-website-ap-southeast-2.amazonaws.com/?prefix=derivative/ga_ls_landcover_class_cyear_2/
+  - link: http://dea-public-data.s3-website-ap-southeast-2.amazonaws.com/?prefix=derivative/ga_ls_landcover_class_cyear_3/
     name: Access the data on AWS
 
 code_examples:
