@@ -455,7 +455,7 @@
       :name: bands
       :class: h2
 
-   Bands are distinct layers of data within a product that can be loaded using the Open Data Cube (on the `DEA Sandbox <dea_sandbox_>`_ or `NCI <nci_>`_) or DEA's `STAC API <stac_api_>`_.{{ " The Coordinate Reference System (CRS) is {}".format(coordinate_reference_system_term) if page.data.coordinate_reference_system }}
+   Bands are distinct layers of data within a product that can be loaded using the Open Data Cube (on the `DEA Sandbox <dea_sandbox_>`_ or `NCI <nci_>`_) or DEA's `STAC API <stac_api_>`_.{{ " The Coordinate Reference System (CRS) is {}".format(coordinate_reference_system_term) if coordinate_reference_system_term }}
 
    .. _dea_sandbox: https://knowledge.dea.ga.gov.au/guides/setup/Sandbox/sandbox/
    .. _nci: https://knowledge.dea.ga.gov.au/guides/setup/NCI/basics/
@@ -548,7 +548,7 @@
         - {{ spatial_data_type }}
         - The most common spatial types are raster and vector.
       {%- endif %}
-      {%- if page.data.coordinate_reference_system %}
+      {%- if coordinate_reference_system_term %}
       * - **CRS**
         - {{ coordinate_reference_system_term }}
         - The Coordinate Reference System.
