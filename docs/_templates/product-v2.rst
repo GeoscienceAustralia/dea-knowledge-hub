@@ -56,7 +56,7 @@
    "PAUSED": "Currently paused",
 } %}
 
-{% set coordinate_reference_systems = {
+{% set coordinate_reference_system_terms = {
    "EPSG:3577": "Australian Albers (EPSG:3577)",
 } %}
 
@@ -109,6 +109,8 @@
 {% set data_update_frequency = data_update_frequency_terms.get(page.data.data_update_frequency, page.data.data_update_frequency) %}
 
 {% set data_update_activity = data_update_activity_terms.get(page.data.data_update_activity, page.data.data_update_activity) %}
+
+{% set coordinate_reference_system_term = coordinate_reference_system_terms.get(page.data.coordinate_reference_system, page.data.coordinate_reference_system) %}
 
 {% set is_frequency_ongoing = data_update_activity == data_update_activity_terms.ONGOING %}
 
@@ -453,7 +455,7 @@
       :name: bands
       :class: h2
 
-   Bands are distinct layers of data within a product that can be loaded using the Open Data Cube (on the `DEA Sandbox <dea_sandbox_>`_ or `NCI <nci_>`_) or DEA's `STAC API <stac_api_>`_.{{ " The Coordinate Reference System (CRS) is {}".format(page.data.coordinate_reference_system) if page.data.coordinate_reference_system }}
+   Bands are distinct layers of data within a product that can be loaded using the Open Data Cube (on the `DEA Sandbox <dea_sandbox_>`_ or `NCI <nci_>`_) or DEA's `STAC API <stac_api_>`_.{{ " The Coordinate Reference System (CRS) is {}".format(coordinate_reference_system_term) if page.data.coordinate_reference_system }}
 
    .. _dea_sandbox: https://knowledge.dea.ga.gov.au/guides/setup/Sandbox/sandbox/
    .. _nci: https://knowledge.dea.ga.gov.au/guides/setup/NCI/basics/
@@ -546,13 +548,9 @@
         - {{ spatial_data_type }}
         - The most common spatial types are raster and vector.
       {%- endif %}
-      {%- if page.data.coordinate_reference_system == "EPSG:3577" %}
+      {%- if page.data.coordinate_reference_system %}
       * - **CRS**
-        - {{ coordinate_reference_systems.get(page.data.coordinate_reference_system) }}
-        - The Coordinate Reference System.
-      {%- elif page.data.coordinate_reference_system %}
-      * - **CRS**
-        - {{ page.data.coordinate_reference_system }}
+        - {{ coordinate_reference_system_term }}
         - The Coordinate Reference System.
       {%- endif %}
       {%- if page.data.resolution %}
