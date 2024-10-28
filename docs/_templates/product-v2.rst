@@ -56,6 +56,10 @@
    "PAUSED": "Currently paused",
 } %}
 
+{% set coordinate_reference_systems = {
+   "EPSG:3577": "Australian Albers (EPSG:3577)",
+} %}
+
 {# Computed values #}
 
 {% set access_links_maps_list = page.data.access_links_maps | selectattr("link", "!=", None) | list %}
@@ -449,7 +453,7 @@
       :name: bands
       :class: h2
 
-   Bands are distinct layers of data within a product that can be loaded using the Open Data Cube (on the `DEA Sandbox <dea_sandbox_>`_ or `NCI <nci_>`_) or DEA's `STAC API <stac_api_>`_.
+   Bands are distinct layers of data within a product that can be loaded using the Open Data Cube (on the `DEA Sandbox <dea_sandbox_>`_ or `NCI <nci_>`_) or DEA's `STAC API <stac_api_>`_.{{ " The Coordinate Reference System (CRS) is {}".format(page.data.coordinate_reference_system) if page.data.coordinate_reference_system }}
 
    .. _dea_sandbox: https://knowledge.dea.ga.gov.au/guides/setup/Sandbox/sandbox/
    .. _nci: https://knowledge.dea.ga.gov.au/guides/setup/NCI/basics/
@@ -541,6 +545,15 @@
       * - **Spatial type**
         - {{ spatial_data_type }}
         - The most common spatial types are raster and vector.
+      {%- endif %}
+      {%- if page.data.coordinate_reference_system == "EPSG:3577" %}
+      * - **CRS**
+        - {{ coordinate_reference_systems.get(page.data.coordinate_reference_system) }}
+        - The Coordinate Reference System.
+      {%- elif page.data.coordinate_reference_system %}
+      * - **CRS**
+        - {{ page.data.coordinate_reference_system }}
+        - The Coordinate Reference System.
       {%- endif %}
       {%- if page.data.resolution %}
       * - **Spatial resolution**
