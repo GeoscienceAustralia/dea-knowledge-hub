@@ -25,6 +25,7 @@ data_update_activity: NO_UPDATES
 is_currency_reported: false
 
 resolution: 25 m
+coordinate_reference_system: null
 
 product_ids:
   - item_v2

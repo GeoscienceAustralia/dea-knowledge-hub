@@ -9,7 +9,6 @@ bands_table:
   - name: elevation
     aliases: []
     resolution: 10 m
-    crs: EPSG:3577
     nodata: NaN
     units: Metres
     type: float32
@@ -18,7 +17,6 @@ bands_table:
     aliases:
     - uncertainty
     resolution: 10 m
-    crs: EPSG:3577
     nodata: NaN
     units: Metres
     type: float32
@@ -26,7 +24,6 @@ bands_table:
   - name: exposure
     aliases: []
     resolution: 10 m
-    crs: EPSG:3577
     nodata: 255
     units: Percent
     type: uint8
@@ -35,7 +32,6 @@ bands_table:
     aliases:
     - spread
     resolution: 10 m
-    crs: EPSG:3577
     nodata: 255
     units: Percent
     type: uint8
@@ -44,7 +40,6 @@ bands_table:
     aliases:
     - offset_low
     resolution: 10 m
-    crs: EPSG:3577
     nodata: 255
     units: Percent
     type: uint8
@@ -53,7 +48,6 @@ bands_table:
     aliases:
     - offset_high
     resolution: 10 m
-    crs: EPSG:3577
     nodata: 255
     units: Percent
     type: uint8
@@ -62,7 +56,6 @@ bands_table:
     aliases:
     - lat
     resolution: 10 m
-    crs: EPSG:3577
     nodata: NaN
     units: Metres
     type: float32
@@ -71,7 +64,6 @@ bands_table:
     aliases:
     - hat
     resolution: 10 m
-    crs: EPSG:3577
     nodata: NaN
     units: Metres
     type: float32
@@ -80,7 +72,6 @@ bands_table:
     aliases:
     - lot
     resolution: 10 m
-    crs: EPSG:3577
     nodata: NaN
     units: Metres
     type: float32
@@ -89,7 +80,6 @@ bands_table:
     aliases:
     - hot
     resolution: 10 m
-    crs: EPSG:3577
     nodata: NaN
     units: Metres
     type: float32
@@ -98,7 +88,6 @@ bands_table:
     aliases:
     - ndwi_freq
     resolution: 10 m
-    crs: EPSG:3577
     nodata: 255
     units: Percent
     type: uint8
@@ -107,7 +96,6 @@ bands_table:
     aliases:
     - ndwi_corr
     resolution: 10 m
-    crs: EPSG:3577
     nodata: NaN
     units: Correlation
     type: float32

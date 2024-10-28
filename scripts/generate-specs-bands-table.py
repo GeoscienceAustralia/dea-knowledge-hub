@@ -14,17 +14,16 @@ products_df = dc.list_measurements()
 # Product and product-level values
 product_name = "ga_s2ls_intertidal_cyear_3"
 resolution = "10 m"
-crs = "EPSG:3577"
 description = "placeholder"
 
 # Select specific product and prepare data
 product_df = (
     products_df.loc[product_name]
     .drop(["flags_definition"], axis=1)
-    .assign(resolution=resolution, crs=crs, description=description)
+    .assign(resolution=resolution, description=description)
     .rename({"dtype": "type"}, axis=1)
     .reset_index(drop=True)
-)[["name", "aliases", "resolution", "crs", "nodata", "units", "type", "description"]]
+)[["name", "aliases", "resolution", "nodata", "units", "type", "description"]]
 
 # Customise column formats/nodata
 product_df["nodata"] = product_df["nodata"].fillna("NaN")

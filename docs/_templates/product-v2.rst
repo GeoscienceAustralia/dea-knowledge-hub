@@ -462,7 +462,6 @@
       * - 
         - Aliases
         - Resolution
-        - CRS
         - 'No data'
         - Units
         - Type
@@ -471,8 +470,7 @@
       * - **{{ band.name }}**
         - {{ band.aliases|join(', ') if band.aliases else no_data_terms.dash }}
         - {{ band.resolution or no_data_terms.dash }}
-        - {{ band.crs or no_data_terms.dash }}
-        - {{ band.nodata }}
+        - {{ band.nodata or "" }}
         - {{ band.units or no_data_terms.dash }}
         - {{ band.type or no_data_terms.dash }}
         - {{ band.description or no_data_terms.dash }}

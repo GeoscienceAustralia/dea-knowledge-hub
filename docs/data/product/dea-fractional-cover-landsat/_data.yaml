@@ -23,6 +23,7 @@ data_update_activity: ONGOING
 is_currency_reported: true
 
 resolution: 30 m
+coordinate_reference_system: null
 
 product_ids:
   - ga_ls_fc_3
