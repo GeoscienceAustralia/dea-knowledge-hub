@@ -1,5 +1,9 @@
 ## Accuracy
 
+A validation assessment has been undertaken for both the collection 2 and 3 versions of Land Cover. The below section outlines the accuracy of both versions to assist users in understanding the differences between the two versions.
+
+### Collection 2 Validation
+
 The product was validated using 6000 points spatially distributed over Australia. These points were created using a stratified random sampling approach slightly adjusted for oversampling. This process was conducted for 2010 and 2015 creating 12000 samples in total. After removing points with No Data and spurious values the total number was 11750. The sample points were divided into clusters for visual assessment against the outputs from the classification and assessed individually from a pool of 10 people. To compare the individual biases of the individual assessors, an additional set of validation points were created that all assessors evaluated, the results are shown in Table 4. Where assessors could identify a predominant land cover (i.e. not ‘mixed’ pixels or ‘unsure’), all assessors agreed 75 % of the time. 
 
 Table 2 contains the overall accuracy for all classes. The term ‘support’ refers to the number of validation points used in the calculation of that accuracy value. 
@@ -11,6 +15,13 @@ Table 3 contains per-class accuracy information. “Precision” refers to the a
 ![Table showing accuracy per class, including precision, recall, F1 score and support values per class. ](/_files/cmi/per-class-accuracy.PNG)
 
 ![table showing the agreement between assessors.](/_files/cmi/inter-assessor-agreement.PNG)
+
+### Collection 3 Validation
+
+The Collection 2 validation points were reused for the Collection 3 validation. However, additional point attributes - Köppen Climate Zone and state/territory - were added to facilitate segment analysis.
+
+
+
 
 ### Limitations of the Implementation Method
 
