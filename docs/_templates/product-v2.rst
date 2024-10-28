@@ -551,7 +551,7 @@
       {%- if coordinate_reference_system_term %}
       * - **CRS**
         - {{ coordinate_reference_system_term }}
-        - The Coordinate Reference System.
+        - A Coordinate Reference System is a mathematical method of assigning coordinates to locations on the Earth's surface.
       {%- endif %}
       {%- if page.data.resolution %}
       * - **Spatial resolution**
