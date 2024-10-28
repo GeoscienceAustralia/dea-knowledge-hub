@@ -172,7 +172,7 @@
       {%- elif spatial_data_type == spatial_data_type_terms.VECTOR %}
       Vector product
       {%- elif page.data.enable_specifications %}
-      `Data product <./?tab=specifications#product-information>`_
+      `Data product <./?tab=specifications>`_
       {%- else %}
       Data product
       {%- endif %}
