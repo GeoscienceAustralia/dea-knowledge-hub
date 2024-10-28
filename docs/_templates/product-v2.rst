@@ -549,9 +549,9 @@
         - The most common spatial types are raster and vector.
       {%- endif %}
       {%- if coordinate_reference_system_term %}
-      * - **CRS**
+      * - **Coordinate Reference System (CRS)**
         - {{ coordinate_reference_system_term }}
-        - A Coordinate Reference System is a mathematical method of assigning coordinates to locations on the Earth's surface.
+        - The mathematical method of assigning coordinates to locations on the Earth's surface.
       {%- endif %}
       {%- if page.data.resolution %}
       * - **Spatial resolution**
