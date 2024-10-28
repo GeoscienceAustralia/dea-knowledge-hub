@@ -455,7 +455,7 @@
       :name: bands
       :class: h2
 
-   Bands are distinct layers of data within a product that can be loaded using the Open Data Cube (on the `DEA Sandbox <dea_sandbox_>`_ or `NCI <nci_>`_) or DEA's `STAC API <stac_api_>`_.{{ "Note that the Coordinate Reference System (CRS) of these bands is {}.".format(coordinate_reference_system_term) if coordinate_reference_system_term }}
+   Bands are distinct layers of data within a product that can be loaded using the Open Data Cube (on the `DEA Sandbox <dea_sandbox_>`_ or `NCI <nci_>`_) or DEA's `STAC API <stac_api_>`_.{{ " Note that the Coordinate Reference System (CRS) of these bands is {}.".format(coordinate_reference_system_term) if coordinate_reference_system_term }}
 
    .. _dea_sandbox: https://knowledge.dea.ga.gov.au/guides/setup/Sandbox/sandbox/
    .. _nci: https://knowledge.dea.ga.gov.au/guides/setup/NCI/basics/
