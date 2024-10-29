@@ -57,7 +57,7 @@
 } %}
 
 {% set coordinate_reference_system_terms = {
-   "EPSG:3577": "Australian Albers (EPSG:3577)",
+   "EPSG:3577": "GDA94 / Australian Albers (EPSG:3577)",
 } %}
 
 {# Computed values #}
