@@ -18,9 +18,9 @@ Table 3 contains per-class accuracy information. “Precision” refers to the a
 
 ### Collection 3 Validation
 
-Validation against three datasets were undertaken: validation points resused from collection 2, with the addition of point attributes from Köppen Climate Zone and state/territory, added to facilitate segment analysis. The Blue Glance global datasset of indepenedent 'ground truth' data, and the Land Cover Collection 2 data to understand the extent of change between the versions.
+Validation against three data sources was undertaken: validation points reused from collection 2, with the addition of point attributes from Köppen Climate Zone and state/territory, added to facilitate segment analysis. The Blue Glance global dataset of indepenedent 'ground truth' data, and the Land Cover Collection 2 data to understand the extent of change between the versions.
 
-With the addition of validation points, the Collection 2 validation was run again with the following results:
+With the addition of validation points, the Collection 2 validation was run again with the following C2 vs C3 comparison results:
 
 **Validation Points 2010**
 
@@ -42,6 +42,10 @@ With the addition of validation points, the Collection 2 validation was run agai
 
 ![C3 2015 Matrix](/_files/land_cover/c3_l3-12.png)
 
+- C3 shows slight degradation compared to C2 on the Validation points, with Cultivated Veg and Natural Veg contributing the most to this difference. The Artificial Sfc class has too few points to be considered statistically significant.
+- C3 demonstrates greater consistency and more reasonable classification across all time periods and classes.
+- Both C3 and C2 show average degradation in 2010 compared to 2015, a trend that is propagated from Level 1 and ML results.
+
 **GLANCE 2010**
 
 ![C2 2010 GLANCE C2](/_files/land_cover/c3_l3-19.png)
@@ -54,10 +58,8 @@ With the addition of validation points, the Collection 2 validation was run agai
 
 ![C3 2015 GLANCE C3](/_files/land_cover/c3_l3-18.png)
 
-**Interpretation**:
-
 - As expected from the ``Level 1`` and ML validation results, C3 performs more consistently across both the ``Validation points`` and ``GLANCE datasets`` over all time periods compared to C2.
-- The ``Macro-Average`` should be interpreted as "unbiased" due to the highly skewed nature of the ``Validation points``. Since the validity of the ``Validation points`` is questionable, the classification metrics should be understood in relative termsâ€”showing the difference between C2 and C3, rather than the absolute performance of each.
+- The ``Macro-Average`` should be interpreted as "unbiased" due to the highly skewed nature of the ``Validation points``. Since the validity of the ``Validation points`` is questionable, the classification metrics should be understood in relative terms showing the difference between C2 and C3, rather than the absolute performance of each.
 - The error propagation from the ``Level 1``, Urban, and Cultivated results is within expected limits.
 
 #### Collection 3 Validation of Intermediate Products
@@ -66,7 +68,6 @@ With the addition of validation points, the Collection 2 validation was run agai
 
 C3 shows significant improvement in both performance and consistency compared to C2.
 
-Interpretation:
 - Note that the performance metrics are calculated based on the ``GLANCE datasets`` rather than the ``Validation points``, as the data size of ``Artificial Sfc`` in the ``Validation points`` is too small to be statistically significant. Additionally, the C2 ``Artificial Sfc`` class captures far fewer points than C3 in the ``Validation points`` due to the lack of contiguity in the pixel-based approach. Therefore, the credibility of validation results against ``Validation points`` is questionable.
 - C3 shows degradation in 2010 compared to 2015. This is expected, as 2010 has lower-quality inputs from ``LS7`` and ``LS5``, while 2015 has higher-quality inputs from ``LS8`` and ``LS7``.
 - C3 underestimates the ``Artificial area`` in both 2010 and 2015, which is due to the training data having a significantly larger proportion of ``Non-artificial`` data. Even though great care was taken to augment the data, the results remain biased because the training datasets are limited, and we cannot afford to remove any data to achieve balance.
@@ -76,7 +77,6 @@ Interpretation:
 
 C3 demonstrates consistency across different time periods and datasets. The Cultivated model has an inherent seasonal bias due to the methodology, but C3 shows greater resistance to this bias compared to C2. C3 exhibits a bias towards the ``Cultivated Veg`` class based on results from the ``Validation points``. However, C3 shows significantly better performance and more reasonable classification when evaluated against the ``GLANCE datasets``. The credibility of the ``Validation points`` is questionable due to the imbalance between ``Cultivated Veg`` and ``Natural Veg``.
 
-Interpretation:
 - A significant reduction in ``Precision`` for the ``Cultivated Veg`` class in both C2 and C3 is observed in 2010 compared to 2015, primarily due to data quality issues.
 - While C3 shows worse performance than C2 on the ``Validation points``, it demonstrates much more reasonable classification on the ``GLANCE datasets``, where the ``Agriculture`` class should be intuitively understood as ``Cultivated Veg`` rather than ``Natural Veg``. Similarly, for the ``Grassland`` class, based on the understanding of the Cultivated model, it is more likely to be classified as ``Cultivated Veg`` rather than ``Natural Veg``.
 - C2 exhibits a greater bias towards ``Natural Veg`` in the wetter/greener year of 2010 compared to the drier/barren year of 2015, on both the ``Validation points`` and ``GLANCE datasets``. In contrast, C3 shows only a marginal bias towards less green vegetation (e.g., ``Agriculture``) but demonstrates strong resistance to bias in "more greenness" (e.g., ``Grassland``). This is partially due to the FC ``PV`` pivot in C3, but primarily attributed to the feature engineering involved in the redevelopment.
@@ -91,15 +91,6 @@ Interpretation:
 - C3 demonstrates more consistent performance across both ``Validation points`` and ``GLANCE datasets``.
 - The overall difference between C3 and C2 is ``5%``. The ``Bare Sfc`` class exhibits the largest difference (``10%``).
 - The discrepancy between C3 and C2 is within an acceptable range (``[-10%, 10%]``), considering the changes in the input ARD products.
-
-**Level 3**
-
-- C3 shows slight degradation compared to C2 on the Validation points, with Cultivated Veg and Natural Veg contributing the most to this difference. The Artificial Sfc class has too few points to be considered statistically significant.
-- C3 demonstrates greater consistency and more reasonable classification across all time periods and classes.
-- Both C3 and C2 show average degradation in 2010 compared to 2015, a trend that is propagated from Level 1 and ML results.
-- As expected from the Level 1 and ML validation results, C3 performs more consistently across both the Validation points and GLANCE datasets over all time periods compared to C2.
-- The Macro-Average should be interpreted as “unbiased” due to the highly skewed nature of the Validation points. Since the validity of the Validation points is questionable, the classification metrics should be understood in relative terms—showing the difference between C2 and C3, rather than the absolute performance of each.
-- The error propagation from the Level 1, Urban, and Cultivated results is within expected limits.
 
 ### Limitations of the Implementation Method
 
