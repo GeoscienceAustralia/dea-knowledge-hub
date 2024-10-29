@@ -2,9 +2,8 @@
 
 Digital Earth Australia (DEA) Land Cover translates over 30 years of satellite imagery into evidence of how Australia's land, vegetation and waterbodies have changed over time.
 
-:::{admonition} New version in development
+:::{admonition} This version includes breaking changes
 :class: note
 
-A new version of this product is being developed. Subscribe to the [DEA newsletter](https://communication.ga.gov.au/dea-news-subscribe) to be notified of product releases.
+All tile grid references have been changed to refer to a new origin point. Learn more in the [Version 2.0.0 changelog](./?tab=history#v2.0.0).
 :::
-
