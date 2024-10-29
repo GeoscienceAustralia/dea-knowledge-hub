@@ -316,7 +316,7 @@ All level 3 and level 4 classes for a given pixel are combined to give a single 
 :::{dropdown} Level 3 Class descriptions
 **Cultivated Terrestrial Vegetation (CTV)**
 
-Cultivated Terrestrial Vegetation (CTV) is associated with agricultural areas where active cultivation has been observed. In version 1.0 only herbaceous cultivation is shown and describes vegetation of strongly varying cover, ranging from bare (e.g. ploughed) areas to fully developed crops. Whilst the continental product describes land cover, interpretation is complicated as the same terminology is used to report on land use.
+Cultivated Terrestrial Vegetation (CTV) is associated with agricultural areas where active cultivation has been observed. In version 2.0 only herbaceous cultivation is shown and describes vegetation of strongly varying cover, ranging from bare (e.g. ploughed) areas to fully developed crops. Whilst the continental product describes land cover, interpretation is complicated as the same terminology is used to report on land use.
 
 The definition of cultivated, and the difference to natural or semi-natural land covers, can be contentious particularly as much of the Australian landscape is used for agricultural food production. This includes areas of natural terrestrial vegetation (NTV) and natural aquatic vegetation (NAV) that are grazed by stock and which can be regarded as either semi-natural or cultivated.
 
@@ -332,7 +332,7 @@ Natural Aquatic Vegetation (NAV) is associated primarily with wetlands that are 
 
 **Artificial Surfaces (AS)** 
 
-Artificial Surfaces (AS) are areas of non-vegetated land cover created by human activities and are primarily represented by impervious surfaces (e.g. urban and industrial buildings, roads and railways). These can be more readily identified when the area is larger than the spatial resolution (25 m) provided by the sensor. Open cut extraction sites are often included in AS. However, there is considerable misclassification of NS as AS in areas where vegetated cover is very low and very consistent through the year. 
+Artificial Surfaces (AS) are areas of non-vegetated land cover created by human activities and are primarily represented by impervious surfaces (e.g. urban and industrial buildings, roads and railways). These can be more readily identified when the area is larger than the spatial resolution (30 m) provided by the sensor. Open cut extraction sites are often included in AS. However, there is considerable misclassification of NS as AS in areas where vegetated cover is very low and very consistent through the year. 
 
 **Natural Surfaces (NS)** 
 
@@ -354,7 +354,7 @@ Vegetation cover is defined using the statistics of annual fractional cover of P
 
 **Water Seasonality (NAV; 2 classes)** 
 
-Water seasonality refers to the typical hydrological conditions in NAV within a year and is relevant to both coastal and inland wetlands. The current implementation utilises the Water Observations from Space (WOfS) dataset, identifying hydro-periods for NAV areas where water is (semi-) permanent (over 3 months) or temporary or seasonal (under 3 months). 
+Water seasonality refers to the typical hydrological conditions in NAV within a year and is relevant to both coastal and inland wetlands. The current implementation utilises the DEA Water Observations (WO) dataset, identifying hydro-periods for NAV areas where water is (semi-) permanent (over 3 months) or temporary or seasonal (under 3 months). 
 
 **Water State (Water; 1 class)** 
 
@@ -379,7 +379,7 @@ The FAO LCCS taxonomy (Figure 1) is hierarchical and consists of a dichotomous p
 
 ![Diagram showing the portion of the LCCS taxonomy which is implemented in DEA Land Cover v1.0.0](/_files/cmi/cut_back_0.PNG)
 
-*Figure 1 - Diagrammatic representation of the implementation of the FAO LCCS (Version 2) classification within the DEA Land Cover product version 1.0.*
+*Figure 1 - Diagrammatic representation of the implementation of the FAO LCCS (Version 2) classification within the DEA Land Cover product version 2.0.*
 
 At Level 4, vegetated areas are further classified using information that differentiates lifeform (woody and herbaceous) and quantifies vegetation cover percent and water seasonality (for Natural Aquatic Vegetation). Natural Surface areas have information added (bare gradation) which describes the level of remaining vegetation present (sparse, very sparse or not detectable). Non-vegetated aquatic areas (Water) are further described on the basis of their persistence (hydroperiod) over a calendar year. The FAO LCCS differentiates water in different physical states (liquid or frozen; ice or snow), however only liquid water is included in the current release.
 
