@@ -20,6 +20,18 @@ Table 3 contains per-class accuracy information. “Precision” refers to the a
 
 Validation against three datasets were undertaken: validation points resused from collection 2, with the addition of point attributes from Köppen Climate Zone and state/territory, added to facilitate segment analysis. The Blue Gance global datasset of indepenedent 'ground truth' data, and the Land Cover Collection 2 data to understand the extent of change between the versions.
 
+With the addition of validation points, the Collection 2 validation was run again with the following results:
+
+
+![C2 2010 Accuracy](/_files/land_cover/c3_l3-13.png)
+
+![C3 2010 Accuracy](/_files/land_cover/c3_l3-14.png)
+
+![C2 2015 Accuracy](/_files/land_cover/c3_l3-9.png)
+
+![C3 2015 Accuracy](/_files/land_cover/c3_l3-10.png)
+
+
 **Urban Model** 
 
 C3 shows significant improvement in both performance and consistency compared to C2.
