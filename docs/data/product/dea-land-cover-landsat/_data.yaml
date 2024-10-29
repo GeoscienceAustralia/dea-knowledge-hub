@@ -54,6 +54,8 @@ explorers:
 data:
   - link: http://dea-public-data.s3-website-ap-southeast-2.amazonaws.com/?prefix=derivative/ga_ls_landcover_class_cyear_3/
     name: Access the data on AWS
+  - link: https://thredds.nci.org.au/thredds/catalog/jw04/ga_ls_landcover_class_cyear_3/catalog.html
+    name: Access the data on NCI Thredds
 
 code_examples:
   - link: /notebooks/DEA_products/DEA_Land_Cover/
