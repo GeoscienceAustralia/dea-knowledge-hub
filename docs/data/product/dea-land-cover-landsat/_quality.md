@@ -107,7 +107,7 @@ The NTV category can transition into the NS category between years when a highly
 
 **Natural Aquatic Vegetation (NAV)** 
 
-Currently only mangroves are mapped in the NAV class. Other vegetated natural landscapes (e.g. saltmarsh, river red gum forests in the Murray Valley, surface algae and other inland wetlands) where water significantly influences edaphic conditions of substrate are not mapped. This is because, in the current implementation, the water mask is included to assist in the differentiation of vegetation and non-vegetation as the presence of water creates excess noise in the underlying Fractional Cover product. To reduce this noise, the WOfS product is used as a water mask in the Fractional Cover product, and hence it is unlikely to produce the combination of vegetation and water required for the NAV class.
+Currently only mangroves are mapped in the NAV class. Other vegetated natural landscapes (e.g. saltmarsh, river red gum forests in the Murray Valley, surface algae and other inland wetlands) where water significantly influences edaphic conditions of substrate are not mapped. This is because, in the current implementation, the water mask is included to assist in the differentiation of vegetation and non-vegetation as the presence of water creates excess noise in the underlying Fractional Cover product. To reduce this noise, the WO product is used as a water mask in the Fractional Cover product, and hence it is unlikely to produce the combination of vegetation and water required for the NAV class.
 
 **Artificial Surfaces (AS)** 
 
@@ -133,7 +133,7 @@ The cover of vegetation is derived from the fractional cover product (Scarth et 
 
 **Water Seasonality**
 
-This product does not yet identify consecutive months but rather the frequency of wet observations in the year, based on the WOfS product. Therefore, monthly statements are unlikely to be consistent across the continent. Mangroves are currently the only consistently identified NAV and water cannot be easily observed beneath their canopies, which are often dense. Hence, the hydroperiod (and hence seasonality metrics) should be treated with some caution. 
+This product does not yet identify consecutive months but rather the frequency of wet observations in the year, based on the WO product. Therefore, monthly statements are unlikely to be consistent across the continent. Mangroves are currently the only consistently identified NAV and water cannot be easily observed beneath their canopies, which are often dense. Hence, the hydroperiod (and hence seasonality metrics) should be treated with some caution. 
 
 **Water State**
 
