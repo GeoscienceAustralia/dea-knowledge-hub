@@ -67,7 +67,7 @@ custom: null
 
 # History
 
-old_versions: null
+old_versions:
   - version: 1.0.0
     title: Geoscience Australia Landsat Land Cover 25m 
     slug: dea-land-cover-landsat-1.0.0
