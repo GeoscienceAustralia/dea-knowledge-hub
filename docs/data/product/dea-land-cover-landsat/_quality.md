@@ -60,6 +60,8 @@ With the addition of validation points, the Collection 2 validation was run agai
 - The ``Macro-Average`` should be interpreted as "unbiased" due to the highly skewed nature of the ``Validation points``. Since the validity of the ``Validation points`` is questionable, the classification metrics should be understood in relative termsâ€”showing the difference between C2 and C3, rather than the absolute performance of each.
 - The error propagation from the ``Level 1``, Urban, and Cultivated results is within expected limits.
 
+#### Collection 3 Validation of Intermediate Products
+
 **Urban Model** 
 
 C3 shows significant improvement in both performance and consistency compared to C2.
