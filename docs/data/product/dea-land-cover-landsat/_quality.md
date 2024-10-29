@@ -78,7 +78,7 @@ Currently only mangroves are mapped in the NAV class. Other vegetated natural la
 
 **Artificial Surfaces (AS)** 
 
-Misclassification occurs with natural surfaces, particularly in the arid and semi-arid regions, open cut mine sites, salt lakes and pans, sand dunes and beaches. This is attributed to similarities in the variance of spectral signatures over a year. Misclassification occurs in some cultivated areas attributable to the predominance of sparse vegetation or when land is left fallow for most of the year. The current temporal variance mask is 250 m in spatial resolution, compared to the 25 m land cover product, resulting in artefacts appearing in the land cover from the masking process. In addition, urban areas with an area less than 250 m are often excluded. Cloud and data quality issues can lead to incorrect assignment of other land cover classes to AS such as in south-west Tasmania.
+Misclassification occurs with natural surfaces, particularly in the arid and semi-arid regions, open cut mine sites, salt lakes and pans, sand dunes and beaches. This is attributed to similarities in the variance of spectral signatures over a year. Misclassification occurs in some cultivated areas attributable to the predominance of sparse vegetation or when land is left fallow for most of the year. The current temporal variance mask is 250 m in spatial resolution, compared to the 30 m land cover product, resulting in artefacts appearing in the land cover from the masking process. In addition, urban areas with an area less than 250 m are often excluded. Cloud and data quality issues can lead to incorrect assignment of other land cover classes to AS such as in south-west Tasmania.
 
 **Natural Surfaces (NS)** 
 
@@ -86,7 +86,7 @@ Land used for agriculture may be associated with an NS class if ploughing or til
 
 **Water**
 
-Areas of artificial and natural water are not differentiated, although the extent of the former is mapped within the existing Bureau of Meteorology Geofabric product. Due to the 25 m pixel size, rivers and water courses that cover less than a pixel, or with highly vegetated riverbanks are not captured, resulting in a patch-like representation of narrower rivers. Areas of dark, wet soil are often misclassified as water, including in cultivated areas and mud flats.
+Areas of artificial and natural water are not differentiated, although the extent of the former is mapped within the existing Bureau of Meteorology Geofabric product. Due to the 30 m pixel size, rivers and water courses that cover less than a pixel, or with highly vegetated riverbanks are not captured, resulting in a patch-like representation of narrower rivers. Areas of dark, wet soil are often misclassified as water, including in cultivated areas and mud flats.
 :::
 
 :::{dropdown} Level 4 Class Limitations
