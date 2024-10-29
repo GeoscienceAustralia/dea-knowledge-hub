@@ -18,11 +18,11 @@ Table 3 contains per-class accuracy information. “Precision” refers to the a
 
 ### Collection 3 Validation
 
-Validation against three datasets were undertaken: validation points resused from collection 2, with the addition of point attributes from Köppen Climate Zone and state/territory, added to facilitate segment analysis. The Blue Gance global datasset of indepenedent 'ground truth' data, and the Land Cover Collection 2 data to understand the extent of change between the versions.
+Validation against three datasets were undertaken: validation points resused from collection 2, with the addition of point attributes from Köppen Climate Zone and state/territory, added to facilitate segment analysis. The Blue Glance global datasset of indepenedent 'ground truth' data, and the Land Cover Collection 2 data to understand the extent of change between the versions.
 
 With the addition of validation points, the Collection 2 validation was run again with the following results:
 
-**2010**
+**Validation Points 2010**
 
 ![C2 2010 Accuracy](/_files/land_cover/c3_l3-13.png)
 
@@ -32,7 +32,7 @@ With the addition of validation points, the Collection 2 validation was run agai
 
 ![C3 2010 Matrix](/_files/land_cover/c3_l3-16.png)
 
-**2015**
+**Validation Points 2015**
 
 ![C2 2015 Accuracy](/_files/land_cover/c3_l3-9.png)
 
@@ -41,6 +41,24 @@ With the addition of validation points, the Collection 2 validation was run agai
 ![C2 2015 Matrix](/_files/land_cover/c3_l3-11.png)
 
 ![C3 2015 Matrix](/_files/land_cover/c3_l3-12.png)
+
+**GLANCE 2010**
+
+![C2 2010 GLANCE C2](/_files/land_cover/c3_l3-19.png)
+
+![C3 2010 GLANCE C3](/_files/land_cover/c3_l3-20.png)
+
+**GLANCE 2015**
+
+![C2 2015 GLANCE C2](/_files/land_cover/c3_l3-17.png)
+
+![C3 2015 GLANCE C3](/_files/land_cover/c3_l3-18.png)
+
+**Interpretation**:
+
+- As expected from the ``Level 1`` and ML validation results, C3 performs more consistently across both the ``Validation points`` and ``GLANCE datasets`` over all time periods compared to C2.
+- The ``Macro-Average`` should be interpreted as "unbiased" due to the highly skewed nature of the ``Validation points``. Since the validity of the ``Validation points`` is questionable, the classification metrics should be understood in relative termsâ€”showing the difference between C2 and C3, rather than the absolute performance of each.
+- The error propagation from the ``Level 1``, Urban, and Cultivated results is within expected limits.
 
 **Urban Model** 
 
