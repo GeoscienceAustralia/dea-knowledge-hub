@@ -42,9 +42,7 @@ With the addition of validation points, the Collection 2 validation was run agai
 
 ![C3 2015 Matrix](/_files/land_cover/c3_l3-12.png)
 
-- C3 shows slight degradation compared to C2 on the Validation points, with Cultivated Veg and Natural Veg contributing the most to this difference. The Artificial Sfc class has too few points to be considered statistically significant.
-- C3 demonstrates greater consistency and more reasonable classification across all time periods and classes.
-- Both C3 and C2 show average degradation in 2010 compared to 2015, a trend that is propagated from Level 1 and ML results.
+Overall C3 demonstrates greater consistency and more reasonable classification across all time periods and classes than C2. Both C3 and C2 show average degradation in 2010 compared to 2015, a trend that is propagated from Level 1 and ML results. C3 shows slight degradation compared to C2 on the Validation points, with Cultivated Veg and Natural Veg contributing the most to this difference. The Artificial Sfc class has too few points to be considered statistically significant.
 
 **GLANCE 2010**
 
@@ -58,11 +56,11 @@ With the addition of validation points, the Collection 2 validation was run agai
 
 ![C3 2015 GLANCE C3](/_files/land_cover/c3_l3-18.png)
 
-- As expected from the ``Level 1`` and ML validation results, C3 performs more consistently across both the ``Validation points`` and ``GLANCE datasets`` over all time periods compared to C2.
-- The ``Macro-Average`` should be interpreted as "unbiased" due to the highly skewed nature of the ``Validation points``. Since the validity of the ``Validation points`` is questionable, the classification metrics should be understood in relative terms showing the difference between C2 and C3, rather than the absolute performance of each.
-- The error propagation from the ``Level 1``, Urban, and Cultivated results is within expected limits.
+As expected from the ``Level 1`` and ML validation results, C3 performs more consistently across both the ``Validation points`` and ``GLANCE datasets`` over all time periods compared to C2. The ``Macro-Average`` should be interpreted as "unbiased" due to the highly skewed nature of the ``Validation points``. Since the validity of the ``Validation points`` is questionable, the classification metrics should be understood in relative terms showing the difference between C2 and C3, rather than the absolute performance of each. The error propagation from the ``Level 1``, Urban, and Cultivated results is within expected limits.
 
 #### Collection 3 Validation of Intermediate Products
+
+The below section provides a further breakdown for each intermediate product.
 
 **Urban Model** 
 
@@ -82,13 +80,18 @@ C3 demonstrates consistency across different time periods and datasets. The Cult
 - C2 exhibits a greater bias towards ``Natural Veg`` in the wetter/greener year of 2010 compared to the drier/barren year of 2015, on both the ``Validation points`` and ``GLANCE datasets``. In contrast, C3 shows only a marginal bias towards less green vegetation (e.g., ``Agriculture``) but demonstrates strong resistance to bias in "more greenness" (e.g., ``Grassland``). This is partially due to the FC ``PV`` pivot in C3, but primarily attributed to the feature engineering involved in the redevelopment.
 - It is worth noting that the discrepancy between the ``Validation points`` and the ``GLANCE datasets``, particularly in C2 validation results, may raise questions about the validity of the ``Validation points``.
 
+**Woody Cover**
+
+TBC
+
 **Level 1**
+
+C3 demonstrates more consistent performance than C2 across both ``Validation points`` and ``GLANCE datasets``.
 
 - The ``Bare Sfc`` class has the least performance and consistency in both C2 and C3 across all time periods and datasets.
 - C3 shows slight improvement in ``Terrestrial Veg`` and ``Bare Sfc`` for both 2015 and 2010 when compared against the ``Validation datasets``.
 - C3 shows slight degeneration in ``Aquatic Veg`` and ``Water`` for both 2015 and 2010 when compared against the ``Validation points``.
 - C3 shows marginal overall improvement across all classes.
-- C3 demonstrates more consistent performance across both ``Validation points`` and ``GLANCE datasets``.
 - The overall difference between C3 and C2 is ``5%``. The ``Bare Sfc`` class exhibits the largest difference (``10%``).
 - The discrepancy between C3 and C2 is within an acceptable range (``[-10%, 10%]``), considering the changes in the input ARD products.
 
@@ -111,7 +114,7 @@ Currently only mangroves are mapped in the NAV class. Other vegetated natural la
 
 **Artificial Surfaces (AS)** 
 
-Misclassification occurs with natural surfaces, particularly in the arid and semi-arid regions, open cut mine sites, salt lakes and pans, sand dunes and beaches. This is attributed to similarities in the variance of spectral signatures over a year. Misclassification occurs in some cultivated areas attributable to the predominance of sparse vegetation or when land is left fallow for most of the year. The current temporal variance mask is 250 m in spatial resolution, compared to the 30 m land cover product, resulting in artefacts appearing in the land cover from the masking process. In addition, urban areas with an area less than 250 m are often excluded. Cloud and data quality issues can lead to incorrect assignment of other land cover classes to AS such as in south-west Tasmania.
+Misclassification occurs with natural surfaces, particularly in the arid and semi-arid regions, open cut mine sites, salt lakes and pans, sand dunes and beaches. This is attributed to similarities in the variance of spectral signatures over a year. Misclassification occurs in some cultivated areas attributable to the predominance of sparse vegetation or when land is left fallow for most of the year. Cloud and data quality issues can lead to incorrect assignment of other land cover classes to AS such as in south-west Tasmania.
 
 **Natural Surfaces (NS)** 
 
