@@ -22,15 +22,25 @@ Validation against three datasets were undertaken: validation points resused fro
 
 With the addition of validation points, the Collection 2 validation was run again with the following results:
 
+**2010**
 
 ![C2 2010 Accuracy](/_files/land_cover/c3_l3-13.png)
 
 ![C3 2010 Accuracy](/_files/land_cover/c3_l3-14.png)
 
+![C2 2010 Matrix](/_files/land_cover/c3_l3-15.png)
+
+![C3 2010 Matrix](/_files/land_cover/c3_l3-16.png)
+
+**2015**
+
 ![C2 2015 Accuracy](/_files/land_cover/c3_l3-9.png)
 
 ![C3 2015 Accuracy](/_files/land_cover/c3_l3-10.png)
 
+![C2 2015 Matrix](/_files/land_cover/c3_l3-11.png)
+
+![C3 2015 Matrix](/_files/land_cover/c3_l3-12.png)
 
 **Urban Model** 
 
