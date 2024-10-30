@@ -18,11 +18,10 @@ Table 3 contains per-class accuracy information. “Precision” refers to the a
 
 ### Collection 3 Validation
 
-Validation against three data sources was undertaken: validation points reused from collection 2, with the addition of point attributes from Köppen Climate Zone and state/territory, added to facilitate segment analysis. The Blue Glance global dataset of indepenedent 'ground truth' data, and the Land Cover Collection 2 data to understand the extent of change between the versions.
-
-With the addition of validation points, the Collection 2 validation was run again with the following C2 vs C3 comparison results:
+Validation against three data sources was undertaken: validation points reused from collection 2, with the addition of point attributes from Köppen Climate Zone and state/territory, added to facilitate segment analysis, the Blue Glance global dataset of indepenedent 'ground truth' data, and the Land Cover Collection 2 data to understand the extent of change between the versions.
 
 **Validation Points**
+With the addition of validation points, the Collection 2 validation was run again with the following C2 vs C3 comparison results:
 
 Overall C3 demonstrates greater consistency and more reasonable classification across all time periods and classes than C2. Both C3 and C2 show average degradation in 2010 compared to 2015, a trend that is propagated from Level 1 and ML results. C3 shows slight degradation compared to C2 on the Validation points, with Cultivated Veg and Natural Veg contributing the most to this difference. The Artificial Sfc class has too few points to be considered statistically significant.
 
