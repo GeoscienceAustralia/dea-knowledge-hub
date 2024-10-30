@@ -21,8 +21,6 @@ product_ids:
   - ga_ls_landcover_class_cyear_3
 
 parent_products:
-  name: Landsat 5, 7, 8, and 9 NBART and Observational Attributes
-  link: /data/category/dea-surface-reflectance/
   name: Geoscience Australia Landsat Water Observations Collection 3
   link: /data/category/dea-water-observations-landsat/
   name: Geoscience Australia Landsat Water Observation Statistics Collection 3
@@ -39,9 +37,11 @@ parent_products:
   link: /data/category/dea-intertidal-elevation-landsat-1.0.0/
   name: Geoscience Australia Shuttle Radar Topography Mission 1 second DEM version 1.0
   link: /data/category/ga-srtm-1-second-dem/
+  name: Landsat 5, 7, 8, and 9 NBART and Observational Attributes
+  link: /data/category/dea-surface-reflectance/
 
 collection:
-  name: Geoscience Australia Landsat Collection 2
+  name: Geoscience Australia Landsat Collection 3
   link: null
 doi: 10.26186/146090
 ecat: "146090"
