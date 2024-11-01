@@ -1,7 +1,7 @@
 <div class="container">
     <div class="row">
-        <div class="col-12 col-sm-6 col-md-3">
-            <p class="footer-heading">Related websites</p>
+        <div class="col-12 col-sm-6 col-md-3 footer--related-websites">
+            <p class="footer--heading">Related websites</p>
             <ul>
                 <li><a href="https://www.ga.gov.au/">Geoscience Australia</a></li>
                 <li><a href="https://www.ga.gov.au/scientific-topics/dea">Digital Earth Australia</a></li>
@@ -9,23 +9,23 @@
                 <li><a href="https://www.opendatacube.org/">Open Data Cube</a></li>
             </ul>
         </div>
-        <div class="col-12 col-sm-6 col-md-3">
-            <p class="footer-heading">Get support</p>
+        <div class="col-12 col-sm-6 col-md-3 footer--support">
+            <p class="footer--heading">Get support</p>
             <ul>
                 <li><a href="https://www.ga.gov.au/scientific-topics/dea/contact-us">Contact us</a></li>
                 <li><a href="https://gis.stackexchange.com/questions/tagged/open-data-cube">ODC Stack Exchange</a></li>
                 <li><a href="https://discord.com/invite/4hhBQVas5U">ODC Discord chat</a></li>
             </ul>
         </div>
-        <div class="col-12 col-md-6">
-            <div id="acknowledgement-of-country">
-                <p class="footer-heading">Acknowledgement of country</p>
+        <div class="col-12 col-md-6 footer--acknowledgement-of-country">
+            <div>
+                <p class="footer--heading">Acknowledgement of country</p>
                 <p>Geoscience Australia acknowledges the traditional owners and custodians of Country throughout Australia and acknowledges their continuing connection to land, waters and community. We pay our respects to the people, the cultures and the elders past and present. Digital Earth Australia is a program of Geoscience Australia.</p>
             </div>
         </div>
     </div>
     <div class="row">
-        <div class="col-12 policy-links">
+        <div class="col-12 footer--policy-links">
             <div>
                 <hr>
                 <ul>
@@ -39,20 +39,22 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-12">
-            <a href="https://github.com/GeoscienceAustralia/dea-knowledge-hub"><img alt="GitHub License badge for GeoscienceAustralia/dea-knowledge-hub repository" src="https://img.shields.io/github/license/GeoscienceAustralia/dea-knowledge-hub?style=flat&logo=github&label=GitHub%3A%20GeoscienceAustralia%2Fdea-knowledge-hub&labelColor=%23082e41&color=%230b5e4b"></a>
+        <div class="col-12 footer--badges">
+            <div>
+                <a href="https://github.com/GeoscienceAustralia/dea-knowledge-hub"><img alt="GitHub License badge for GeoscienceAustralia/dea-knowledge-hub repository" src="https://img.shields.io/github/license/GeoscienceAustralia/dea-knowledge-hub?style=flat&logo=github&label=GitHub%3A%20GeoscienceAustralia%2Fdea-knowledge-hub&labelColor=%23082e41&color=%230b5e4b"></a>
+            </div>
         </div>
     </div>
     {% if show_copyright and copyright %}
     <div class="row">
-        <div class="col-12">
-            <div class="footer-copyright">
+        <div class="col-12 footer--copyright">
+            <p>
                 {% if hasdoc('copyright') %}
                 {% trans path=pathto('copyright'), copyright=copyright|e %}© <a href="{{ path }}">Copyright</a> {{ copyright }}.{% endtrans %}
                 {% else %}
                 {% trans copyright=copyright|e %}© Copyright {{ copyright }}.{% endtrans %}
                 {% endif %}
-            </div>
+            </p>
         </div>
     </div>
     {% endif %}

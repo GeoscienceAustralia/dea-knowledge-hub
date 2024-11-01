@@ -6,7 +6,7 @@ footer.bd-footer {
         $text-color
     );
 
-    p, a, .footer-copyright {
+    p, li, a {
         color: white;
     }
 
@@ -20,12 +20,6 @@ footer.bd-footer {
         }
     }
 
-    .footer-heading {
-        font-size: 1.375rem;
-        font-weight: bold;
-        margin-bottom: 1.05rem;
-    }
-
     ul {
         list-style-type: none;
         margin: 0;
@@ -34,15 +28,6 @@ footer.bd-footer {
 
     li {
         margin-bottom: 1rem;
-    }
-
-    .policy-links li {
-        display: inline;
-        margin-right: 2rem;
-
-        @media only screen and (max-width: $breakpoint-xl) {
-            line-height: 2rem;
-        }
     }
 
     .footer-items__start,
@@ -55,13 +40,51 @@ footer.bd-footer {
         text-align: left;
     }
 
-    .footer-copyright {
-        margin-top: 1rem;
-    }
+    .footer {
+        &--heading {
+            font-size: 1.375rem;
+            font-weight: bold;
+            margin-bottom: 1.05rem;
+        }
 
-    @media only screen and (max-width: $breakpoint-md) {
-        #acknowledgement-of-country {
-            margin-top: 1rem;
+        &--related-websites {}
+
+        &--support{}
+
+        &--acknowledgement-of-country {
+            & > div {
+                @media only screen and (max-width: $breakpoint-md) {
+                    margin-top: 1rem;
+                }
+            }
+
+        }
+
+        &--policy-links {
+            li {
+                display: inline;
+                margin-right: 2rem;
+
+                @media only screen and (max-width: $breakpoint-xl) {
+                    line-height: 2rem;
+                }
+            }
+        }
+
+        &--badges {
+            & > div {
+                margin-top: 1rem;
+            }
+        }
+
+        &--copyright {
+            & > div {
+                margin-top: 1rem;
+            }
+
+            p {
+                margin-bottom: 0;
+            }
         }
     }
 }
