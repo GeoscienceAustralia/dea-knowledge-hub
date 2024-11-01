@@ -6,7 +6,7 @@ main#main-content article.bd-article details.sd-dropdown {
     border-top: 1px solid var(--pst-color-border) !important;
     border-bottom: 1px solid var(--pst-color-border) !important;
 
-    p, li, blockquote, pre, code, th, tr, caption, figcaption, h1, h2, h3, h4, h5, h6 {
+    p, li, blockquote, pre, code, th, tr, caption, figcaption, label, h1, h2, h3, h4, h5, h6 {
         &:hover {
             cursor: text;
         }
