@@ -15,7 +15,10 @@ This documentation site contains the following features.
 * SASS styling (CSS preprocessing)
 * Image lightbox and link behaviour scripts
 
-Internal staff: [View the internal documentation](https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/index.html)
+**Other relevant repositories:**
 
-Keywords: `DEA Docs, dea-docs, Content Management Interface, CMI`
+* [dea-notebooks](https://github.com/GeoscienceAustralia/dea-notebooks)
 
+**Keywords:** `DEA Docs, dea-docs, Content Management Interface, CMI`
+
+**Internal staff:** [View the internal documentation](https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/index.html)
