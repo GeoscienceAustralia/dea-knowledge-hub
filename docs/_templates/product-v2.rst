@@ -140,17 +140,25 @@
 
 {# Restructured Text head component #}
 
-{% set rst_start_component %}
+{% set rst_head_component %}
 .. role:: raw-html(raw)
    :format: html
 
+.. rst-class:: product-page
+{% endset %}
+
+{# SEO head component #}
+
+{% set seo_head_component %}
 {% if data.meta_description %}
 .. meta::
    :description: {{ data.meta_description }}
 {%- endif %}
+{% endset %}
 
-.. rst-class:: product-page
+{# Page title component #}
 
+{% set page_title_component %}
 {{ "=" * max_page_title_length }}
 {{ page_title | truncate(max_page_title_length) }}
 {{ "=" * max_page_title_length }}
@@ -805,7 +813,11 @@
 
 {# Assembling the page #}
 
-{{ rst_start_component }}
+{{ rst_head_component }}
+
+{{ seo_head_component }}
+
+{{ page_title_component }}
 
 {{ header_panel_component }}
 
