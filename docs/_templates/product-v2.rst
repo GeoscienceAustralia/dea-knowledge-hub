@@ -144,6 +144,11 @@
 .. role:: raw-html(raw)
    :format: html
 
+{% if data.meta_description %}
+.. meta::
+   :description: {{ data.meta_description }}
+{%- endif %}
+
 .. rst-class:: product-page
 
 {{ "=" * max_page_title_length }}
