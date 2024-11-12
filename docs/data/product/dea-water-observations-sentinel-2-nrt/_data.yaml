@@ -73,6 +73,10 @@ custom: null
 
 old_versions: null
 
+# SEO
+
+meta_description: null
+
 # Settings
 
 enable_overview: true

@@ -95,6 +95,10 @@ old_versions:
     title: DEA Surface Reflectance Geomedian (Landsat)
     slug: dea-surface-reflectance-geomedian-landsat-2.0.0
 
+# SEO
+
+meta_description: null
+
 # Settings
 
 enable_overview: true
