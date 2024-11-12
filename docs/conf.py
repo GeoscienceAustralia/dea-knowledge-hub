@@ -59,7 +59,7 @@ elif environment["build_mode"] == "pr-preview": html_baseurl = f"https://{enviro
 else: html_baseurl = ""
 
 html_permalinks = False
-html_last_updated_fmt = '%-d %B %Y'
+html_last_updated_fmt = '%-d %B %Y' # E.g. 1 January 2020
 
 extensions = [
     "sphinx.ext.autodoc",
