@@ -88,6 +88,10 @@ previous_versions:
     title: DEA Fractional Cover Percentiles (Landsat)
     slug: dea-fractional-cover-percentiles-landsat-2.2.1
 
+# SEO
+
+meta_description: null
+
 # Settings
 
 enable_overview: true

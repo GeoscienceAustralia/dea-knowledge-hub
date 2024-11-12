@@ -1,14 +1,6 @@
 {% extends '!layout.html' %}
 
-{% block extrahead %}
-{%- if meta_keywords %}
-<meta name="keywords" content="{{ meta_keywords }}">
-{%- endif %}
-
-<script type="text/javascript" src="/_static/scripts/content-root.js"></script>
-<script type="text/javascript" src="/_static/scripts/custom-behaviour.js"></script>
-<script type="text/javascript" src="/_static/scripts/lightbox.js"></script>
-
+{%- block htmltitle %}
 {%- if google_analytics_ga4_tag %}
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id={{ google_analytics_ga4_tag }}"></script>
@@ -20,5 +12,25 @@
     gtag('config', '{{ google_analytics_ga4_tag }}');
 </script>
 {%- endif %}
+
+{%- if pagename == "index" %} {# Home page #}
+<title>{{ docstitle|e }}</title>
+{%- elif docstitle and not embedded %}
+<title>{{ title|striptags|e }} - {{ docstitle|e }}</title>
+{%- else %}
+<title>{{ title|striptags|e }}</title>
+{%- endif %}
+{%- endblock %}
+
+{% block extrahead %}
+{%- if meta_keywords %}
+<meta name="keywords" content="{{ meta_keywords }}">
+{%- endif %}
+
+<script type="text/javascript" src="/_static/scripts/content-root.js"></script>
+<script type="text/javascript" src="/_static/scripts/custom-behaviour.js"></script>
+<script type="text/javascript" src="/_static/scripts/lightbox.js"></script>
+
+{{ super() }}
 {% endblock %}
 

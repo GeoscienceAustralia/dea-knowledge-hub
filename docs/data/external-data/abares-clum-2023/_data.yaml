@@ -55,6 +55,10 @@ web_services: null
 
 custom: null
 
+# SEO
+
+meta_description: null
+
 # Settings
 
 enable_overview: true

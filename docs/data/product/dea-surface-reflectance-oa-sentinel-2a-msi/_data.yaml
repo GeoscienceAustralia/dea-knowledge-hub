@@ -93,6 +93,10 @@ previous_versions:
   #   title: DEA Cloud and Cloud Shadow Mask (Sentinel-2 MSI)
   #   slug: dea-cloud-and-cloud-shadow-mask-sentinel-2-msi-1.0.0
 
+# SEO
+
+meta_description: null
+
 # Settings
 
 enable_overview: true

@@ -22,6 +22,30 @@
 
 Learn more about the [DEA Summary Product Grid](/guides/reference/collection_3_summary_grid/).
 
+## 18 Oct 2024: DEA upgrade of several Landsat derivative products complete
+
+Digital Earth Australia (DEA) has released Landsat derivative product upgrades for [DEA Water Observations Statistics](/data/product/dea-water-observations-statistics-landsat/), [DEA Fractional Cover Percentiles](/data/product/dea-fractional-cover-percentiles-landsat/), [DEA Tasseled Cap Percentiles (provisional product)](/data/product/dea-tasseled-cap-percentiles-landsat/), and [DEA Mangroves](/data/product/dea-mangrove-canopy-cover-landsat/).
+
+The release [triggered downtime for these products as upgrades were implemented](https://communication.ga.gov.au/link/id/zzzz6711a1122710a348Pzzzz6567c8b713b5b826/page.html).
+
+The upgrades are now complete with all services online and ready to use.
+
+[View the full Tech Alert](https://communication.ga.gov.au/link/id/zzzz6711a11223145221Pzzzz61de67bd94bfe861/page.html)
+
+## 17 Oct 2024: DEA Sandbox has been upgraded
+
+**Note:** Users may encounter caching issues when logging in to the Sandbox for the first time after this upgrade; please **[empty cache and hard reload](https://help.codehs.com/en/articles/4951972-how-to-clear-your-browser-cache-and-hard-refresh)** your Sandbox's browser tab if problems occur.
+
+The DEA Sandbox environment has been successfully upgraded to include new Python packages and software.
+Several new packages have also been added, including `gcfs` (for accessing data on Google Cloud), `xarray-spatial` (for performing spatial analysis with `xarray`), and `pyspark` (unified analytics engine for large-scale data processing).
+ 
+Most significantly, this included an [upgrade to JupyterLab 4.0](https://blog.jupyter.org/jupyterlab-4-0-is-here-388d05e03442), which updated the main Sandbox user interface.
+Please note that some existing Sandbox functionality (code snippet tool and resource monitor graphs) are not currently supported by JupyterLab 4.0 and will be restored as soon as they are available.
+
+## 17 Oct 2024: NCI Explorer outage
+
+NCI Explorer has experienced an outage since yesterday. You may encounter issues when attempting to use this service. We are currently investigating the issue.
+
 ## 16 Oct 2024: Upcoming DEA Sandbox environment upgrade
 
 On 16 October, DEA will be upgrading the DEA Sandbox environment to include new Python packages and software.

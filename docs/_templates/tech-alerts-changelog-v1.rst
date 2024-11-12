@@ -1,3 +1,8 @@
+{% if data.meta_description %}
+.. meta::
+   :description: {{ data.meta_description }}
+{%- endif %}
+
 .. rst-class:: tech-alerts-changelog-page
 
 ======================================================================================================================================================

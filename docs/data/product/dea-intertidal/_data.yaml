@@ -100,6 +100,10 @@ previous_versions:
     title: DEA Intertidal Elevation (Landsat)
     slug: dea-intertidal-elevation-landsat-1.0.0
 
+# SEO
+
+meta_description: null
+
 # Settings
 
 enable_overview: true

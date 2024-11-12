@@ -92,6 +92,10 @@ previous_versions:
     title: DEA Waterbodies (Landsat)
     slug: waterbodies-1.0.0
 
+# SEO
+
+meta_description: null
+
 # Settings
 
 enable_overview: true

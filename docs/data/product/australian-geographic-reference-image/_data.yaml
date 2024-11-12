@@ -71,6 +71,10 @@ access_links_web_services: null
 
 previous_versions: null
 
+# SEO
+
+meta_description: null
+
 # Settings
 
 enable_overview: true

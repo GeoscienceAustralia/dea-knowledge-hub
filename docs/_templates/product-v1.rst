@@ -34,6 +34,11 @@
 {% set product_ids_label = "Product IDs" if valid_product_ids | length > 1 else "Product ID" %}
 {% set product_types_label = "Product types" if valid_product_types | length > 1 else "Product type" %}
 
+{% if data.meta_description %}
+.. meta::
+   :description: {{ data.meta_description }}
+{%- endif %}
+
 .. |nbsp| unicode:: 0xA0
    :trim:
 

@@ -88,6 +88,10 @@ previous_versions:
     title: DEA Water Observations (Landsat)
     slug: dea-water-observations-landsat-1.6.0
 
+# SEO
+
+meta_description: null
+
 # Settings
 
 enable_overview: true
