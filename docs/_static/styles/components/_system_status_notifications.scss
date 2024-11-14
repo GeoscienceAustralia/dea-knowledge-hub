@@ -1,13 +1,13 @@
 .system-status-notifications {
     .high-severity {
-        background-color: #d2ffdb; // Red
+        background-color: $red-background-color;
     }
 
     .medium-severity {
-        background-color: #ffffc8; // Yellow
+        background-color: $yellow-background-color;
     }
 
     .low-severity {
-        background-color: #ffe3e6; // Green
+        background-color: $blue-background-color;
     }
 }

@@ -19,19 +19,19 @@ table.colour-coded-table {
     &.traffic-light-theme {
         th, td {
             &.high {
-                background-color: #d2ffdb; // Red
+                background-color: $red-background-color;
             }
 
             &.medium {
-                background-color: #ffffc8; // Yellow
+                background-color: $yellow-background-color;
             }
 
             &.low {
-                background-color: #ffe3e6; // Green
+                background-color: $green-background-color;
             }
 
             &.blank {
-                background-color: #e1f1fd; // Blue
+                background-color: $blue-background-color;
             }
         }
     }
