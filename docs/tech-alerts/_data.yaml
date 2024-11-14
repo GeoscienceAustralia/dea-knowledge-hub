@@ -9,7 +9,7 @@ quick_links:
     icon: address-card
   - link: https://monitoring.dea.ga.gov.au/
     name: Monitor service status
-    icon: chart-line
+    icon: chart-simple
   - link: https://communication.ga.gov.au/dea-news-subscribe
     name: Subscribe to our newsletter
     icon: file-lines
