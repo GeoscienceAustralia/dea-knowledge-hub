@@ -4,9 +4,15 @@
    "data": load('_data.yaml'),
 } %}
 
+{# Constant values #}
+
+{% set max_page_title_length = 200 %}
+
 {# Computed values #}
 
 {% set quick_links_list = page.data.quick_links | selectattr("link", "!=", None) | list %}
+
+{# Page template #}
 
 {% if page.data.meta_description %}
 .. meta::
@@ -15,13 +21,13 @@
 
 .. rst-class:: tech-alerts-page
 
-======================================================================================================================================================
+{{ "=" * max_page_title_length }}
 {{ page.data.title }}
-======================================================================================================================================================
+{{ "=" * max_page_title_length }}
 
 {{ page.data.description }}
 
-{% if page.data.quick_links | length > 1 %}
+{% if quick_links_list %}
 .. rubric:: Quick links
    :name: quick-links
    :class: h2
