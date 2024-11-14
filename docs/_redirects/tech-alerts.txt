@@ -6,10 +6,10 @@ guides/tech_alerts_changelog  tech-alerts
 
 # The path was changed from 'tech-alerts-changelog' to 'tech-alerts'
 
-tech-alerts-changelog                      tech-alerts
-tech-alerts-changelog/previous-years       tech-alerts/previous-years
-tech-alerts-changelog/previous-years/2023  tech-alerts/previous-years/2023
-tech-alerts-changelog/previous-years/2021  tech-alerts/previous-years/2021
-tech-alerts-changelog/previous-years/2020  tech-alerts/previous-years/2020
-tech-alerts-changelog/previous-years/2019  tech-alerts/previous-years/2019
-tech-alerts-changelog/previous-years/2018  tech-alerts/previous-years/2018
+# tech-alerts-changelog                      tech-alerts
+# tech-alerts-changelog/previous-years       tech-alerts/previous-years
+# tech-alerts-changelog/previous-years/2023  tech-alerts/previous-years/2023
+# tech-alerts-changelog/previous-years/2021  tech-alerts/previous-years/2021
+# tech-alerts-changelog/previous-years/2020  tech-alerts/previous-years/2020
+# tech-alerts-changelog/previous-years/2019  tech-alerts/previous-years/2019
+# tech-alerts-changelog/previous-years/2018  tech-alerts/previous-years/2018
