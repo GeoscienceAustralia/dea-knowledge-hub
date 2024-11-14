@@ -74,19 +74,19 @@
 
       {% for item in system_status_notifications_list %}
       {% if item.severity == 1 %}
-      .. grid-item-card:: Status
+      .. grid-item-card:: :fas:`triangle-exclamation` Status
          :class-item: high-severity
 
          {{ item.description }}
 
       {% elif item.severity == 2 %}
-      .. grid-item-card:: Status
+      .. grid-item-card:: :fas:`circle-exclamation` Status
          :class-item: medium-severity
 
          {{ item.description }}
 
       {% else %}
-      .. grid-item-card:: Status
+      .. grid-item-card:: :fas:`circle-info` Status
          :class-item: low-severity
 
          {{ item.description }}

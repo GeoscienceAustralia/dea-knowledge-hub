@@ -110,4 +110,28 @@
             }
         }
     }
+
+    &.system-status-notifications {
+        .sd-card {
+            border-radius: 0;
+        }
+
+        .high-severity {
+            .sd-card {
+                background-color: $red-background-color !important;
+            }
+        }
+
+        .medium-severity {
+            .sd-card {
+                background-color: $yellow-background-color !important;
+            }
+        }
+
+        .low-severity {
+            .sd-card {
+                background-color: $blue-background-color !important;
+            }
+        }
+    }
 }
