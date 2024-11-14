@@ -28,10 +28,6 @@
 {{ page.data.description }}
 
 {% if quick_links_list %}
-.. rubric:: Quick links
-   :name: quick-links
-   :class: h2
-
 .. container:: card-list icons
    :name: quick-links-cards
 
