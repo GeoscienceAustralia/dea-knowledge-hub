@@ -326,7 +326,7 @@
          {% endfor %}
 
          {% for item in access_links_custom_list %}
-         .. grid-item-card:: :fas:`{{ item.icon }}`
+         .. grid-item-card:: :fas:`{{ item.icon or "link" }}`
             :link: {{ item.link }}
             :link-alt: {{ item.label or "" }}
             :class-card: {{ item.class }}
