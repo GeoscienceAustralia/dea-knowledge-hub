@@ -48,7 +48,7 @@
 {% set quick_links_component %}
 {% if quick_links_list %}
 .. container:: card-list icons
-   :name: quick-links-cards
+   :name: quick-links
 
    .. grid:: 2 2 3 5
       :gutter: 3
@@ -66,29 +66,33 @@
 
 {% set system_status_notifications_component %}
 {% if system_status_notifications_list %}
-.. grid:: 2 2 3 3
-   :gutter: 0
+.. container:: card-list system-status-notifications
+   :name: system-status-notifications
 
-   {% for item in system_status_notifications_list %}
-   .. grid-item-card::
+   .. grid:: 2 2 3 3
+      :gutter: 0
 
+      {% for item in system_status_notifications_list %}
       {% if item.severity == 1 %}
-      .. admonition:: Status
-         :class: danger
+      .. grid-item-card:: Status
+         :class-item: high-severity
 
          {{ item.description }}
+
       {% elif item.severity == 2 %}
-      .. admonition:: Status
-         :class: caution
+      .. grid-item-card:: Status
+         :class-item: medium-severity
 
          {{ item.description }}
+
       {% else %}
-      .. admonition:: Status
-         :class: note
+      .. grid-item-card:: Status
+         :class-item: low-severity
 
          {{ item.description }}
+
       {% endif %}
-   {% endfor %}
+      {% endfor %}
 {%- endif %}
 {% endset %}
 
