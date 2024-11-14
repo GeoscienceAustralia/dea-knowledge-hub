@@ -106,7 +106,7 @@
    :name: previous-years
    :class: h2
 
-`View tech alerts from previous years <./previous-years>`_.
+`View tech alerts from previous years <./previous-years>`_
 {% endset %}
 
 {# Assembling the page #}
