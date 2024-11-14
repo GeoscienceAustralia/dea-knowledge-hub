@@ -168,13 +168,24 @@ This is due to the TERRA MODIS satellite experiencing power problems. The satell
 
 You may notice slow load times or outages with the [DEA Explorer](https://explorer.dea.ga.gov.au/) and [DEA Explorer STAC API](https://explorer.dea.ga.gov.au/stac/). We apologise for any inconvenience that this may cause and we are working to solve this issue.
 
-## 1 May 2024: Six of Australia’s offshore territories now covered by Digital Earth Australia baseline satellite data
+## 1 May 2024: DEA baseline data extended to six offshore territories
 
-In support of Indigenous Communities in the Torres Strait, in addition to government agencies reporting on Ocean Ecosystem Accounts and Marine Parks management, DEA is making baseline satellite data available for 6 offshore territories and islands in the Torres Strait.
+Six of Australia’s offshore territories now covered by Digital Earth Australia baseline satellite data.
+
+Digital Earth Australia is expanding the coverage of our satellite data to include six Australian offshore territories, including islands in the Torres Strait. This expansion supports the management of Australia’s Marine Parks, Ocean Ecosystem Accounting and Indigenous communities in the Torres Strait.
+
+DEA is extending baseline satellite data to include:
+
+* Christmas Island
+* Cocos (Keeling) Islands
+* Coral Sea Islands
+* Heard Island and McDonald Islands
+* Norfolk Island
+* Islands in the Torres Strait
 
 Learn more about the [DEA ARD expanded processing extent](/guides/reference/ard-expanded-processing-extent/).
 
-[Read the Tech Alert](https://communication.ga.gov.au/link/id/zzzz6631c6db2c2e7889Pzzzz61de67bd94bfe861/page.html)
+[View the Tech Alert](https://communication.ga.gov.au/link/id/zzzz6631c6db2c2e7889Pzzzz61de67bd94bfe861/page.html)
 
 ## 23 Apr 2024: It's now easier to cite DEA products
 
@@ -193,7 +204,16 @@ See the latest Daily Validation Summary Report: [2023-11-27: Transect NSW Site 1
 
 ## 17 Apr 2024: DEA trialling Google Earth Engine
 
+Digital Earth Australia is trialling several datasets on the Google Earth Engine (GEE). This will allow users to combine DEA data with the many other datasets available on GEE and enable innovative ways to build new information products in future.
 
+The DEA datasets include:
+
+* Geometric Median and Median Absolute Deviation (GeoMAD)
+* National Intertidal Digital Elevation Model 25m
+* Water Observations Statistics
+* Land Cover
+
+[View the Tech Alert](https://communication.ga.gov.au/link/id/zzzz661f298d890d3863Pzzzz61de67bd94bfe861/page.html)
 
 ## 10 Apr 2024: DEA Intertidal 1.0.0 released
 
@@ -252,9 +272,9 @@ These datasets can be loaded on the DEA Sandbox using the product names `abares_
 
 ## 15 Feb 2024: Upcoming changes to DEA Geomedian, Median Absolute Deviation and other derivative products
 
-The Geoscience Australia [Landsat Geometric Median and Median Absolute Deviation](/data/product/dea-geometric-median-and-median-absolute-deviation-landsat) Collection 3 products v3.1.0 are undergoing a major upgrade which will be released shortly as v4.0.0.
+DEA will soon be releasing an updated version of the [Geometric Median and Median Absolute Deviation products](/data/product/dea-geometric-median-and-median-absolute-deviation-landsat). This version (v4.0.0) will sit alongside the existing version (v3.1.0) for a couple of months to allow users to transition versions.
 
-Find out the details [here](https://communication.ga.gov.au/link/id/zzzz65cd75b153a33890Pzzzz61de67bd94bfe861/page.html).
+[View the Tech Alert](https://communication.ga.gov.au/link/id/zzzz65cd75b153a33890Pzzzz61de67bd94bfe861/page.html)
 
 ## 24 Jan 2024: Water Observations and Fractional Cover Percentiles 2023 annual summaries released
 
