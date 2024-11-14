@@ -223,10 +223,10 @@ entries:
         entries:
           - file: notebooks/Tools/index # Contains its own table of contents.
 
-  # DEA Tech Alerts and Changelog
+  # DEA Tech Alerts
 
   - file: tech-alerts-changelog/index
-    title: Alerts & Changelog
+    title: Tech Alerts
     subtrees:
       - caption: Older entries
         entries:
