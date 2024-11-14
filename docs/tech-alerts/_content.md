@@ -16,7 +16,7 @@ The release [triggered downtime for these products as upgrades were implemented]
 
 The upgrades are now complete with all services online and ready to use.
 
-[View the full Tech Alert](https://communication.ga.gov.au/link/id/zzzz6711a11223145221Pzzzz61de67bd94bfe861/page.html)
+[View the Tech Alert](https://communication.ga.gov.au/link/id/zzzz6711a11223145221Pzzzz61de67bd94bfe861/page.html)
 
 ## 17 Oct 2024: DEA Sandbox has been upgraded
 
@@ -99,6 +99,8 @@ The newly released version 4.0.0 of [DEA Geometric Median and Median Absolute De
 * Prefixed band measurement names.
 
 See the [Version 4.0.0 Changelog](/data/product/dea-geometric-median-and-median-absolute-deviation-landsat/?tab=history) for more information.
+
+[View the Tech Alert](https://communication.ga.gov.au/pub/pubType/EO/pubID/zzzz66a82c6b41998428/interface.html)
 
 ## 1 Aug 2024: Resolved outage of Hotspots S-NPP VIIRS data
 
@@ -223,6 +225,8 @@ This new product suite expands upon the [DEA Intertidal Elevation (Landsat)](/da
 
 See [DEA Intertidal](/data/product/dea-intertidal/) for more information.
 
+[View the Tech Alert](https://communication.ga.gov.au/link/id/zzzz66171e1800bdc553Pzzzz61de67bd94bfe861/page.html)
+
 ## 3 Apr 2024: Terra-derived DEA Hotspots have been restored
 
 Direct Broadcast satellite downloads from the Terra satellite have been restored and have been successfully processed into [DEA Hotspots](/data/product/dea-hotspots/).
@@ -244,6 +248,8 @@ You can monitor the status of DEA’s systems on the [DEA monitoring dashboard](
 ## 25 Mar 2024: DEA Waterbodies version 3.0.0 released
 
 Improvements include additional supporting data for the most recent observations made available through web mapping services (WMS) and DEA Maps, more metadata, Landsat 9 data, and pipeline upgrades. Version 3.0.0 of DEA Waterbodies uses the same underlying polygon set as DEA Waterbodies version 2.0.0. [Learn more](/data/product/dea-waterbodies-landsat/?tab=history)
+
+[View the Tech Alert](https://communication.ga.gov.au/link/id/zzzz664bf3a36fc30456Pzzzz6567c8b713b5b826/page.html)
 
 ## 21 Mar 2024: Terra-derived DEA Hotspots are unavailable (Resolved)
 
