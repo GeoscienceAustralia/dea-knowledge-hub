@@ -15,7 +15,7 @@ quick_links:
     icon: file-lines
 
 system_status_notifications:
-  - description: Expanded extents data processing is currently paused, with data available to May 2024. See below.
+  - description: Expanded extents data processing is currently paused, with data available to May 2024. See below. # NOTE Remember to remove the banner on the page: https://pr-302-preview.khpreview.dea.ga.gov.au/guides/reference/ard-expanded-processing-extent/
     severity: 2
   - description: Misclassification issue with Sentinel-2 ‘s2cloudless’ cloud masking from 2022. See below.
     severity: 2

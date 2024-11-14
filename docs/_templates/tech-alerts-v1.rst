@@ -57,22 +57,7 @@
       .. grid-item-card:: :fas:`{{ item.icon or "link" }}`
          :link: {{ item.link }}
 
-         {% if item.severity == 1 %}
-         .. admonition:: Note
-            :class: danger
-
-            {{ item.name }}
-         {% elif item.severity == 2 %}
-         .. admonition:: Note
-            :class: caution
-
-            {{ item.name }}
-         {% else %}
-         .. admonition:: Note
-            :class: note
-
-            {{ item.name }}
-         {% endif %}
+         {{ item.name }}
       {% endfor %}
 {%- endif %}
 {% endset %}
@@ -87,7 +72,22 @@
    {% for item in system_status_notifications_list %}
    .. grid-item-card::
 
-      {{ item.description }}
+      {% if item.severity == 1 %}
+      .. admonition:: Note
+         :class: danger
+
+         {{ item.description }}
+      {% elif item.severity == 2 %}
+      .. admonition:: Note
+         :class: caution
+
+         {{ item.description }}
+      {% else %}
+      .. admonition:: Note
+         :class: note
+
+         {{ item.description }}
+      {% endif %}
    {% endfor %}
 {%- endif %}
 {% endset %}
