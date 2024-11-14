@@ -26,6 +26,9 @@
 {# Restructured Text head component #}
 
 {% set rst_head_component %}
+.. role:: raw-html(raw)
+   :format: html
+
 .. rst-class:: tech-alerts-page
 {% endset %}
 
@@ -70,26 +73,26 @@ DEA Tech Alerts {{ page.data.year }}
    :name: system-status-notifications
 
    .. grid:: 2 2 3 3
-      :gutter: 0
+      :gutter: 1
 
       {% for item in system_status_notifications_list %}
       {% if item.severity == 1 %}
       .. grid-item-card:: 
          :class-item: high-severity
 
-         :fas:`triangle-exclamation` {{ item.description }}
+         :fas:`triangle-exclamation`:raw-html:`&nbsp;` {{ item.description }}
 
       {% elif item.severity == 2 %}
       .. grid-item-card::
          :class-item: medium-severity
 
-         :fas:`circle-exclamation` {{ item.description }}
+         :fas:`circle-exclamation`:raw-html:`&nbsp;` {{ item.description }}
 
       {% else %}
       .. grid-item-card::
          :class-item: low-severity
 
-         :fas:`circle-info` {{ item.description }}
+         :fas:`circle-info`:raw-html:`&nbsp;` {{ item.description }}
 
       {% endif %}
       {% endfor %}
