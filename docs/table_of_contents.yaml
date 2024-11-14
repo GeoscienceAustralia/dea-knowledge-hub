@@ -225,17 +225,17 @@ entries:
 
   # DEA Tech Alerts
 
-  - file: tech-alerts-changelog/index
+  - file: tech-alerts/index
     title: Tech Alerts
     subtrees:
       - caption: Older entries
         entries:
-          - file: tech-alerts-changelog/previous-years/index
+          - file: tech-alerts/previous-years/index
             title: View previous years
             options:
               reversed: True
             entries:
-              - glob: tech-alerts-changelog/previous-years/*
+              - glob: tech-alerts/previous-years/*
 
   # Validation
 
