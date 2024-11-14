@@ -1,18 +1,16 @@
 % See the DEA Tech Alerts and Changelog documentation:
 % https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/tech_alerts_changelog.html
 
-% How to update the 'System status of DEA':
-% Change the 'class' to either: tip / caution / danger
-% Default content: All DEA systems are working as expected. There are no outstanding incidents or errors to report.
-
-:::{admonition} System status of DEA
-:class: caution
+:::{admonition} System status
+:class: tip
 
 * Expanded extents data processing is currently paused, with data available to May 2024. See below. <!-- NOTE Remember to remove the banner on the page: https://pr-302-preview.khpreview.dea.ga.gov.au/guides/reference/ard-expanded-processing-extent/ -->
 * Misclassification issue with Sentinel-2 's2cloudless' cloud masking from 2022. See below.
 * Terra-derived DEA Hotspots are unavailable. See below.
 * NCI Explorer may experience instability. See below.
 * GeoMAD processing bug. See below.
+
+% Default content: All DEA systems are working as expected. There are no outstanding incidents or errors to report.
 :::
 
 ## In progress: Shift in origin point of DEA Summary Product Grid
