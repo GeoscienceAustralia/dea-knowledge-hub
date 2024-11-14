@@ -50,7 +50,7 @@
 .. container:: card-list icons
    :name: quick-links-cards
 
-   .. grid:: 2 2 3 4
+   .. grid:: 2 2 3 5
       :gutter: 3
 
       {% for item in quick_links_list %}
@@ -66,24 +66,24 @@
 
 {% set system_status_notifications_component %}
 {% if system_status_notifications_list %}
-.. grid:: 2 2 3 5
-   :gutter: 3
+.. grid:: 2 2 3 4
+   :gutter: 0
 
    {% for item in system_status_notifications_list %}
    .. grid-item-card::
 
       {% if item.severity == 1 %}
-      .. admonition:: Note
+      .. admonition::
          :class: danger
 
          {{ item.description }}
       {% elif item.severity == 2 %}
-      .. admonition:: Note
+      .. admonition::
          :class: caution
 
          {{ item.description }}
       {% else %}
-      .. admonition:: Note
+      .. admonition::
          :class: note
 
          {{ item.description }}
