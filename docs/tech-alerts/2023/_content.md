@@ -1,8 +1,3 @@
-# 2023
-
-:::{include} ./_components/previous-years-introduction.md
-:::
-
 ## Nov 2023: Release of version 0.3.0 of DEA Tools
 
 Major update to the [DEA Tools Python package](https://knowledge.dea.ga.gov.au/notebooks/Tools/), including new tools for:

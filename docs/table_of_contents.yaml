@@ -230,12 +230,12 @@ entries:
     subtrees:
       - caption: Previous years
         entries:
-          - file: tech-alerts/previous-years/index
+          - file: tech-alerts/previous-years
             title: View previous years
             options:
               reversed: True
             entries:
-              - glob: tech-alerts/previous-years/*
+              - file: tech-alerts/2023/index
 
   # Validation
 

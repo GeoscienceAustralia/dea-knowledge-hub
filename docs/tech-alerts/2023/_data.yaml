@@ -1,0 +1,17 @@
+year: 2023
+description: null
+
+meta_description: null
+
+quick_links:
+  - link: https://monitoring.dea.ga.gov.au/
+    name: Monitor service status
+    icon: chart-simple
+  - link: https://communication.ga.gov.au/dea-news-subscribe
+    name: Subscribe to our newsletter
+    icon: newspaper
+  - link: https://www.ga.gov.au/scientific-topics/dea/contact-us
+    name: Contact us
+    icon: address-card
+
+system_status_notifications: null
