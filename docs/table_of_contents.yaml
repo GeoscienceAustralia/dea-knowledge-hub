@@ -225,7 +225,7 @@ entries:
 
   # DEA Tech Alerts
 
-  - file: tech-alerts/index
+  - file: tech-alerts/2024/index
     title: Tech Alerts
     subtrees:
       - caption: Previous years

@@ -33,14 +33,14 @@
 
 {% set page_title_component %}
 {{ "=" * max_page_title_length }}
-{{ page.data.title }}
+DEA Tech Alerts {{ page.data.year }}
 {{ "=" * max_page_title_length }}
 {% endset %}
 
 {# Page description component #}
 
 {% set page_description_component %}
-{{ page.data.description }}
+{{ page.data.description or "Keep up with the latest updates, releases, outages, and planned maintenance." }}
 {% endset %}
 
 {# Quick links component #}
