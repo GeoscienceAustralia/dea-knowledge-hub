@@ -174,6 +174,8 @@ In support of Indigenous Communities in the Torres Strait, in addition to govern
 
 Learn more about the [DEA ARD expanded processing extent](/guides/reference/ard-expanded-processing-extent/).
 
+[Read the Tech Alert](https://communication.ga.gov.au/link/id/zzzz6631c6db2c2e7889Pzzzz61de67bd94bfe861/page.html)
+
 ## 23 Apr 2024: It's now easier to cite DEA products
 
 A new 'Cite this product' section has been added to each product page to make it
@@ -188,6 +190,10 @@ See this feature on the [DEA Waterbodies product page](/data/product/dea-waterbo
 The Knowledge Hub contains a new [Validation reports](/validation/) section. This is where you will find reports of Geoscience Australia’s validation data, published periodically. This data can be used to validate Geoscience Australia’s other datasets.
 
 See the latest Daily Validation Summary Report: [2023-11-27: Transect NSW Site 1, Sentinel-2B overpass](/validation/daily-report/2023-11-27/)
+
+## 17 Apr 2024: DEA trialling Google Earth Engine
+
+
 
 ## 10 Apr 2024: DEA Intertidal 1.0.0 released
 

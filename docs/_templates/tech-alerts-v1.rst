@@ -73,17 +73,17 @@
    .. grid-item-card::
 
       {% if item.severity == 1 %}
-      .. admonition::
+      .. admonition:: Alert
          :class: danger
 
          {{ item.description }}
       {% elif item.severity == 2 %}
-      .. admonition::
+      .. admonition:: Warning
          :class: caution
 
          {{ item.description }}
       {% else %}
-      .. admonition::
+      .. admonition:: Note
          :class: note
 
          {{ item.description }}
