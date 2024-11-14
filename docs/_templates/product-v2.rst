@@ -150,9 +150,9 @@
 {# SEO head component #}
 
 {% set seo_head_component %}
-{% if data.meta_description %}
+{% if page.data.meta_description %}
 .. meta::
-   :description: {{ data.meta_description }}
+   :description: {{ page.data.meta_description }}
 {%- endif %}
 {% endset %}
 
