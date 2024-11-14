@@ -20,7 +20,7 @@ system_status_notifications:
   - description: Misclassification issue with Sentinel-2 ‘s2cloudless’ cloud masking from 2022. See below.
     severity: 2
   - description: Terra-derived DEA Hotspots are unavailable. See below.
-    severity: 2
+    severity: 1
   - description: NCI Explorer may experience instability. See below.
     severity: 2
   - description: GeoMAD processing bug. See below.
