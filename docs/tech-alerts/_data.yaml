@@ -3,7 +3,10 @@ description: Keep up with the latest updates, releases, outages, and planned mai
 
 meta_description: Find out about the latest updates to Digital Earth Australia's products and services, planned maintenance, and any outages that may occur.
 
-quick_links: null
+quick_links:
+  - name: Test
+    link: example.com
+    icon: null
 
 # Find out about the latest updates to Digital Earth Australia's products and services, planned maintenance, and any outages that may occur. To check the current status of DEA's services, see the `DEA monitoring dashboard <https://monitoring.dea.ga.gov.au/>`_. And, to stay informed of the latest updates, `subscribe to our newsletter <https://communication.ga.gov.au/dea-news-subscribe>`_.
 

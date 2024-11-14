@@ -2,7 +2,7 @@
 % https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/tech_alerts_changelog.html
 
 :::{admonition} System status
-:class: tip
+:class: note
 
 * Expanded extents data processing is currently paused, with data available to May 2024. See below. <!-- NOTE Remember to remove the banner on the page: https://pr-302-preview.khpreview.dea.ga.gov.au/guides/reference/ard-expanded-processing-extent/ -->
 * Misclassification issue with Sentinel-2 's2cloudless' cloud masking from 2022. See below.
