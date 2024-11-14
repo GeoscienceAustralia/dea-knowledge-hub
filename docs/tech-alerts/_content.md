@@ -239,6 +239,8 @@ Users may be unable to log in to or access their DEA Sandbox account while the i
 
 You can monitor the status of DEA’s systems on the [DEA monitoring dashboard](https://monitoring.dea.ga.gov.au/). If you would like to contact DEA, please email [earth.observation@ga.gov.au](mailto:earth.observation@ga.gov.au)
 
+[View the Tech Alert](https://communication.ga.gov.au/link/id/zzzz6604c9fc9e7bd364Pzzzz61de67bd94bfe861/page.html)
+
 ## 25 Mar 2024: DEA Waterbodies version 3.0.0 released
 
 Improvements include additional supporting data for the most recent observations made available through web mapping services (WMS) and DEA Maps, more metadata, Landsat 9 data, and pipeline upgrades. Version 3.0.0 of DEA Waterbodies uses the same underlying polygon set as DEA Waterbodies version 2.0.0. [Learn more](/data/product/dea-waterbodies-landsat/?tab=history)
