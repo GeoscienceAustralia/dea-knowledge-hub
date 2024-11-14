@@ -79,11 +79,11 @@ licence:
 #     name: Web Feature Service (WFS)
 
 # custom:
-#   - icon: globe
-#     link: https://example.com
-#     label: API
+#   - link: https://example.com
 #     name: Access the API
 #     description: Learn how to `use the API <https://satpathapi.dea.ga.gov.au/user-guide>`_
+#     label: API
+#     icon: globe
 #     class: highlighted
 
 # History
