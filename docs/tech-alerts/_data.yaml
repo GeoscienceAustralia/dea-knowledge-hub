@@ -4,13 +4,13 @@ description: Keep up with the latest updates, releases, outages, and planned mai
 meta_description: null
 
 quick_links:
-  - name: Contact us
-    link: https://www.ga.gov.au/scientific-topics/dea/contact-us
+  - link: https://www.ga.gov.au/scientific-topics/dea/contact-us
+    name: Contact us
     icon: address-card
-  - name: Monitor service status
-    link: https://monitoring.dea.ga.gov.au/
+  - link: https://monitoring.dea.ga.gov.au/
+    name: Monitor service status
     icon: chart-line
-  - name: Subscribe to our newsletter
-    link: https://communication.ga.gov.au/dea-news-subscribe
+  - link: https://communication.ga.gov.au/dea-news-subscribe
+    name: Subscribe to our newsletter
     icon: file-lines
 
