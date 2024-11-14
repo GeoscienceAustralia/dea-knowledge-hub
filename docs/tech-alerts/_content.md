@@ -148,6 +148,14 @@ The [DEA Sandbox](https://app.sandbox.dea.ga.gov.au/) is currently experiencing 
 
 For instructions on how to access this data from ELVIS, visit the [DEA Intertidal page (Access tab)](/data/product/dea-intertidal/?tab=access).
 
+## Jun 2024: Sentinel-2 Collection 3 migration complete
+
+**DEA’s Sentinel-2 ARD product (Surface Reflectance) upgrade to C3 complete**
+
+This is a significant milestone as the ability to combine data from multiple satellites enables us to improve some of Digital Earth Australia's existing products.
+
+[Learn more](https://www.ga.gov.au/scientific-topics/dea/news/significant-milestone-reached-in-sentinel-2-collection-3-migration)
+
 ## 30 May 2024: NCI THREDDS data access links updated to point to the new THREDDS server
 
 NCI has released an upgrade to the THREDDS Data Service and will [decommission the existing THREDDS server after 30th June 2024](https://opus.nci.org.au/display/NDP/THREDDS+Upgrade).
