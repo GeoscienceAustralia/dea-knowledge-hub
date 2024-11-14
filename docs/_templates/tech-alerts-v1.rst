@@ -11,6 +11,7 @@
 {# Computed values #}
 
 {% set quick_links_list = page.data.quick_links | selectattr("link", "!=", None) | list %}
+{% set system_status_notifications_list = page.data.system_status_notifications | selectattr("description", "!=", None) | selectattr("severity", "!=", None) | selectattr("severity", ">", 0) | sort(attribute='severity') | list %}
 
 {# Page template #}
 
@@ -40,6 +41,17 @@
 
          {{ item.name }}
       {% endfor %}
+{%- endif %}
+
+{% if system_status_notifications_list %}
+.. grid:: 2 2 3 5
+   :gutter: 3
+
+   {% for item in system_status_notifications_list %}
+   .. grid-item-card::
+
+      {{ item.description }}
+   {% endfor %}
 {%- endif %}
 
 .. include:: _content.md

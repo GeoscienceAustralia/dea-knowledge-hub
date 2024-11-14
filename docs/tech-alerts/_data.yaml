@@ -14,3 +14,14 @@ quick_links:
     name: Subscribe to our newsletter
     icon: file-lines
 
+system_status_notifications:
+  - description: Expanded extents data processing is currently paused, with data available to May 2024. See below.
+    severity: 2
+  - description: Misclassification issue with Sentinel-2 ‘s2cloudless’ cloud masking from 2022. See below.
+    severity: 2
+  - description: Terra-derived DEA Hotspots are unavailable. See below.
+    severity: 2
+  - description: NCI Explorer may experience instability. See below.
+    severity: 2
+  - description: GeoMAD processing bug. See below.
+    severity: 2
