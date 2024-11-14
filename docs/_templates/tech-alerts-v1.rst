@@ -83,7 +83,7 @@
 
          {{ item.description }}
       {% else %}
-      .. admonition:: Note
+      .. admonition:: Status
          :class: note
 
          {{ item.description }}
