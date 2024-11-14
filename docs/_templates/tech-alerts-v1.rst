@@ -57,10 +57,22 @@
       .. grid-item-card:: :fas:`{{ item.icon or "link" }}`
          :link: {{ item.link }}
 
-         .. admonition:: Alert
+         {% if item.severity == 1 %}
+         .. admonition:: Note
+            :class: danger
+
+            {{ item.name }}
+         {% elif item.severity == 2 %}
+         .. admonition:: Note
+            :class: caution
+
+            {{ item.name }}
+         {% else %}
+         .. admonition:: Note
             :class: note
 
             {{ item.name }}
+         {% endif %}
       {% endfor %}
 {%- endif %}
 {% endset %}
@@ -87,7 +99,7 @@
    :parser: myst_parser.sphinx_
 {% endset %}
 
-{# Older alerts component #}
+{# Previous years component #}
 
 {% set previous_years_component %}
 .. rubric:: Previous years
