@@ -11,7 +11,7 @@
 
 {{ data.description }}
 
-.. include:: _tech_alerts_changelog.md
+.. include:: _content.md
    :parser: myst_parser.sphinx_
 
 .. rubric:: Older entries
