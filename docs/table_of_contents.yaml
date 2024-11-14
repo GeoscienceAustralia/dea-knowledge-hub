@@ -228,7 +228,7 @@ entries:
   - file: tech-alerts/index
     title: Tech Alerts
     subtrees:
-      - caption: Older entries
+      - caption: Previous years
         entries:
           - file: tech-alerts/previous-years/index
             title: View previous years

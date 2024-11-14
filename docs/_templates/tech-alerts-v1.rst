@@ -74,22 +74,22 @@
 
       {% for item in system_status_notifications_list %}
       {% if item.severity == 1 %}
-      .. grid-item-card:: :fas:`triangle-exclamation` Status
+      .. grid-item-card:: 
          :class-item: high-severity
 
-         {{ item.description }}
+         :fas:`triangle-exclamation` {{ item.description }}
 
       {% elif item.severity == 2 %}
-      .. grid-item-card:: :fas:`circle-exclamation` Status
+      .. grid-item-card::
          :class-item: medium-severity
 
-         {{ item.description }}
+         :fas:`circle-exclamation` {{ item.description }}
 
       {% else %}
-      .. grid-item-card:: :fas:`circle-info` Status
+      .. grid-item-card::
          :class-item: low-severity
 
-         {{ item.description }}
+         :fas:`circle-info` {{ item.description }}
 
       {% endif %}
       {% endfor %}
