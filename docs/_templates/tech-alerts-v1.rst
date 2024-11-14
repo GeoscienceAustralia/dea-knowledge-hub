@@ -50,14 +50,17 @@
 .. container:: card-list icons
    :name: quick-links-cards
 
-   .. grid:: 2 2 3 5
+   .. grid:: 2 2 3 4
       :gutter: 3
 
       {% for item in quick_links_list %}
       .. grid-item-card:: :fas:`{{ item.icon or "link" }}`
          :link: {{ item.link }}
 
-         {{ item.name }}
+         .. admonition:: Alert
+            :class: note
+
+            {{ item.name }}
       {% endfor %}
 {%- endif %}
 {% endset %}
