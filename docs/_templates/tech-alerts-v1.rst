@@ -133,15 +133,21 @@ DEA Tech Alerts {{ page.data.year }}
    :parser: myst_parser.sphinx_
 {% endset %}
 
-{# Previous years component #}
+{# Other years component #}
 
-{% set previous_years_component %}
+{% set other_years_component %}
 {% if is_current_year %}
 .. rubric:: Previous years
    :name: previous-years
    :class: h2
 
 `View tech alerts from previous years <./previous-years>`_
+{% else %}
+.. rubric:: Other years
+   :name: other-years
+   :class: h2
+
+View tech alerts from the `current year </tech-alerts/>`_ or `other previous years </tech-alerts/previous-years>`_.
 {% endif %}
 {% endset %}
 
@@ -161,4 +167,4 @@ DEA Tech Alerts {{ page.data.year }}
 
 {{ content_component }}
 
-{{ previous_years_component }}
+{{ other_years_component }}
