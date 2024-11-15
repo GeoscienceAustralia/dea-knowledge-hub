@@ -1,3 +1,6 @@
+% See the DEA Tech Alerts documentation:
+% https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/tech_alerts_changelog.html
+
 ## Nov 2023: Release of version 0.3.0 of DEA Tools
 
 Major update to the [DEA Tools Python package](https://knowledge.dea.ga.gov.au/notebooks/Tools/), including new tools for:

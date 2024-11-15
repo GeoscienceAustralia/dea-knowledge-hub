@@ -1,8 +1,3 @@
-# 2019
-
-:::{include} ./_components/previous-years-introduction.md
-:::
-
 ## 12 Mar 2019: Changes to NCI project codes
 
 Users are now required to join all projects containing data they wish to use. Before this change

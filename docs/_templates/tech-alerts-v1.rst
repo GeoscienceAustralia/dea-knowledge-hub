@@ -73,7 +73,7 @@ DEA Tech Alerts {{ page.data.year }}
    :name: system-status-notifications
 
    .. grid:: 2 2 3 3
-      :gutter: 1
+      :gutter: 2
 
       {% for item in system_status_notifications_list %}
       {% if item.severity == 1 %}

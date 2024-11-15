@@ -1,8 +1,3 @@
-# 2020
-
-:::{include} ./_components/previous-years-introduction.md
-:::
-
 ## 9 Jan 2020: DEA Notebooks updates
 
 The [DEA Notebooks repository](https://github.com/GeoscienceAustralia/dea-notebooks/) and the DEA user guide received a 
