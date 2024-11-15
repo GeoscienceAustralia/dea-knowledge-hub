@@ -225,7 +225,7 @@ entries:
 
   # DEA Tech Alerts
 
-  - file: tech-alerts/2024/index
+  - file: tech-alerts/index
     title: Tech Alerts
     subtrees:
       - caption: Previous years
@@ -235,7 +235,7 @@ entries:
             options:
               reversed: True
             entries:
-              - file: tech-alerts/2023/index
+              - glob: tech-alerts/*/index
 
   # Validation
 
