@@ -37,7 +37,7 @@
 
 {% set page_title_component %}
 {{ "=" * max_page_title_length }}
-{% if is_current_year %}
+{%- if is_current_year %}
 DEA Tech Alerts
 {%- else %}
 DEA Tech Alerts {{ page.data.year }}
