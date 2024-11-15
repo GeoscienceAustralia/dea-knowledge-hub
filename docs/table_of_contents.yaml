@@ -230,7 +230,7 @@ entries:
     subtrees:
       - caption: Previous years
         entries:
-          - file: tech-alerts/previous-years
+          - file: tech-alerts/previous-years/index
             title: View previous years
             options:
               reversed: True
