@@ -51,7 +51,7 @@ DEA Tech Alerts {{ page.data.year }}
 {% if is_current_year %}
 {{ page.data.description or "Keep up with the latest updates, releases, outages, and planned maintenance." }}
 {% else %}
-{{ page.data.description or "View updates, releases, outages, and planned maintenance from {}.".format(page.data.year) }}
+{{ page.data.description or "View updates, releases, outages, and planned maintenance from the previous year of {}.".format(page.data.year) }}
 {% endif %}
 {% endset %}
 
