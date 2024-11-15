@@ -51,7 +51,7 @@ DEA Tech Alerts {{ page.data.year }}
 {% if is_current_year %}
 {{ page.data.description or "Keep up with the latest updates, releases, outages, and planned maintenance." }}
 {% else %}
-{{ page.data.description or "View updates, releases, outages, and planned maintenance from {}. Or, `go back to the current year </tech-alerts/>`_.".format(page.data.year) }}
+{{ page.data.description or "View updates, releases, outages, and planned maintenance from {}.".format(page.data.year) }}
 {% endif %}
 {% endset %}
 
@@ -131,7 +131,7 @@ DEA Tech Alerts {{ page.data.year }}
       .. grid-item-card:: 
          :class-item: no-severity
 
-         **:fas:`circle-info`:raw-html:`&nbsp;` View current year:** `Go back to the current year's tech alerts </tech-alerts/>`_
+         :fas:`backward`:raw-html:`&nbsp;` `Go back to the current year's tech alerts </tech-alerts/>`_
 
    {%- endif %}
 {% endset %}
