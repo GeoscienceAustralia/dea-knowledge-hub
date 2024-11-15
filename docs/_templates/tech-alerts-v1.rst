@@ -48,7 +48,10 @@ DEA Tech Alerts {{ page.data.year }}
 {# Page description component #}
 
 {% set page_description_component %}
+{% if is_current_year %}
 {{ page.data.description or "Keep up with the latest updates, releases, outages, and planned maintenance." }}
+{% else %}
+{{ page.data.description or "View updates, releases, outages, and planned maintenance from {}. Or, go back to the `current tech alerts </tech-alerts/>`_.".format(page.data.year) }}
 {% endset %}
 
 {# Quick links component #}
@@ -83,9 +86,9 @@ DEA Tech Alerts {{ page.data.year }}
       {% endfor %}
 {% endset %}
 
-{# System status notifications component #}
+{# Notifications component #}
 
-{% set system_status_notifications_component %}
+{% set notifications_component %}
 {% if system_status_notifications_list and is_current_year %}
 .. container:: card-list system-status-notifications
    :name: system-status-notifications
@@ -114,6 +117,12 @@ DEA Tech Alerts {{ page.data.year }}
 
       {% endif %}
       {% endfor %}
+{% else %}
+.. admonition:: View current year
+   :class: note
+
+   `Go back to the current year's tech alerts </tech-alerts/>`_
+
 {%- endif %}
 {% endset %}
 
@@ -148,7 +157,7 @@ DEA Tech Alerts {{ page.data.year }}
 
 {{ quick_links_component }}
 
-{{ system_status_notifications_component }}
+{{ notifications_component }}
 
 {{ content_component }}
 

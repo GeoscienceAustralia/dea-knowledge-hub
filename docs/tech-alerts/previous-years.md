@@ -1,6 +1,6 @@
 # Previous years
 
-Here you will find older tech alerts and changelogs. Or, you can go back to the [latest tech alerts and changelog](/tech-alerts-changelog/).
+Here you will find tech alerts from previous years. Or, go back to the [current tech alerts](/tech-alerts/).
 
 :::{tableofcontents}
 :::
