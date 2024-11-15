@@ -27,6 +27,9 @@
 {# Restructured Text head component #}
 
 {% set rst_head_component %}
+.. role:: raw-html(raw)
+   :format: html
+
 .. rst-class:: tech-alerts-page
 {% endset %}
 
