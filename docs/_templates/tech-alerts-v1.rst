@@ -10,7 +10,7 @@
 
 {# Computed values #}
 
-{% set quick_links_list = page.data.quick_links | selectattr("link", "!=", None) | list %}
+{% set quick_links_custom_list = page.data.quick_links_custom | selectattr("link", "!=", None) | list %}
 
 {% set system_status_notifications_list = page.data.system_status_notifications | selectattr("description", "!=", None) | selectattr("severity", "!=", None) | selectattr("severity", ">", 0) | sort(attribute='severity') | list %}
 
@@ -49,20 +49,33 @@ DEA Tech Alerts {{ page.data.year }}
 {# Quick links component #}
 
 {% set quick_links_component %}
-{% if quick_links_list %}
 .. container:: card-list icons
    :name: quick-links
 
    .. grid:: 2 2 3 5
       :gutter: 3
 
-      {% for item in quick_links_list %}
+      .. grid-item-card:: :fas:`chart-simple`
+         :link: https://monitoring.dea.ga.gov.au/
+
+         Monitor service status
+
+      .. grid-item-card:: :fas:`newspaper`
+         :link: https://communication.ga.gov.au/dea-news-subscribe
+
+         Subscribe to our newsletter
+
+      .. grid-item-card:: :fas:`address-card`
+         :link: https://www.ga.gov.au/scientific-topics/dea/contact-us
+
+         Contact us
+
+      {% for item in quick_links_custom_list %}
       .. grid-item-card:: :fas:`{{ item.icon or "link" }}`
          :link: {{ item.link }}
 
          {{ item.name }}
       {% endfor %}
-{%- endif %}
 {% endset %}
 
 {# System status notifications component #}

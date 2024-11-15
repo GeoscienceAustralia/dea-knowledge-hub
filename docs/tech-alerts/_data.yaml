@@ -4,16 +4,7 @@ description: null
 
 meta_description: null
 
-quick_links:
-  - link: https://monitoring.dea.ga.gov.au/
-    name: Monitor service status
-    icon: chart-simple
-  - link: https://communication.ga.gov.au/dea-news-subscribe
-    name: Subscribe to our newsletter
-    icon: newspaper
-  - link: https://www.ga.gov.au/scientific-topics/dea/contact-us
-    name: Contact us
-    icon: address-card
+quick_links_custom: null
 
 system_status_notifications:
   - description: Expanded extents data processing is currently paused, with data available to May 2024. See below. # NOTE Remember to remove the banner on the page: https://pr-302-preview.khpreview.dea.ga.gov.au/guides/reference/ard-expanded-processing-extent/
