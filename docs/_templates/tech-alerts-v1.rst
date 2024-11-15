@@ -39,9 +39,9 @@
 {{ "=" * max_page_title_length }}
 {% if is_current_year %}
 DEA Tech Alerts
-{% else %}
+{%- else %}
 DEA Tech Alerts {{ page.data.year }}
-{% endif %}
+{%- endif %}
 {{ "=" * max_page_title_length }}
 {% endset %}
 
