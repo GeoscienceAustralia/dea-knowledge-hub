@@ -131,7 +131,7 @@ DEA Tech Alerts {{ page.data.year }}
       .. grid-item-card:: 
          :class-item: no-severity
 
-         :fas:`backward`:raw-html:`&nbsp;` `Go back to the current year's tech alerts </tech-alerts/>`_
+         :fas:`angle-left`:raw-html:`&nbsp;` `Go back to the current year's tech alerts </tech-alerts/>`_
 
    {%- endif %}
 {% endset %}
@@ -147,8 +147,8 @@ DEA Tech Alerts {{ page.data.year }}
 
 {% set other_years_component %}
 {% if is_current_year %}
-.. rubric:: Previous years
-   :name: previous-years
+.. rubric:: Other years
+   :name: other-years
    :class: h2
 
 `View tech alerts from previous years </tech-alerts/previous-years>`_
@@ -157,7 +157,7 @@ DEA Tech Alerts {{ page.data.year }}
    :name: other-years
    :class: h2
 
-View tech alerts from the `current year </tech-alerts/>`_ or `other previous years </tech-alerts/previous-years>`_.
+View tech alerts from the `current year </tech-alerts/>`_ or `other years </tech-alerts/previous-years>`_.
 {% endif %}
 {% endset %}
 
