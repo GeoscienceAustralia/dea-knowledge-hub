@@ -90,10 +90,10 @@ DEA Tech Alerts {{ page.data.year }}
 {# Notifications component #}
 
 {% set notifications_component %}
-{% if system_status_notifications_list and is_current_year %}
-.. container:: card-list system-status-notifications
-   :name: system-status-notifications
+.. container:: card-list tech-alert-notifications
+   :name: tech-alert-notifications
 
+   {% if system_status_notifications_list and is_current_year %}
    .. grid:: 2 2 3 3
       :gutter: 3
 
@@ -124,13 +124,16 @@ DEA Tech Alerts {{ page.data.year }}
 
       {% endif %}
       {% endfor %}
-{% else %}
-.. admonition:: View current year
-   :class: note
+   {%- else %}
+   .. grid:: 1 1 1 1
+      :gutter: 3
 
-   `Go back to the current year's tech alerts </tech-alerts/>`_
+      .. grid-item-card:: 
+         :class-item: no-severity
 
-{%- endif %}
+         **:fas:`circle-info`:raw-html:`&nbsp;` View current year:** `Go back to the current year's tech alerts </tech-alerts/>`_
+
+   {%- endif %}
 {% endset %}
 
 {# Content component #}
