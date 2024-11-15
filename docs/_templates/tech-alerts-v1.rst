@@ -108,19 +108,19 @@ DEA Tech Alerts {{ page.data.year }}
       .. grid-item-card::
          :class-item: medium-severity
 
-         :fas:`circle-exclamation` **Ongoing:** {{ item.description }}
+         :fas:`circle-exclamation`:raw-html:`&nbsp;` **Ongoing:** {{ item.description }}
 
       {% elif item.severity == 3 %}
       .. grid-item-card::
          :class-item: low-severity
 
-         :fas:`circle-info` **Ongoing:** {{ item.description }}
+         :fas:`circle-info`:raw-html:`&nbsp;` **Ongoing:** {{ item.description }}
 
       {% else %}
       .. grid-item-card::
          :class-item: no-severity
 
-         :fas:`circle-info` **Ongoing:** {{ item.description }}
+         :fas:`circle-info`:raw-html:`&nbsp;` **Ongoing:** {{ item.description }}
 
       {% endif %}
       {% endfor %}
