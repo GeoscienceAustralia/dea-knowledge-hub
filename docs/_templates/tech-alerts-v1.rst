@@ -109,9 +109,15 @@ DEA Tech Alerts {{ page.data.year }}
 
          :fas:`circle-exclamation`:raw-html:`&nbsp;` {{ item.description }}
 
-      {% else %}
+      {% elif item.severity == 3 %}
       .. grid-item-card::
          :class-item: low-severity
+
+         :fas:`circle-info`:raw-html:`&nbsp;` {{ item.description }}
+
+      {% else %}
+      .. grid-item-card::
+         :class-item: no-severity
 
          :fas:`circle-info`:raw-html:`&nbsp;` {{ item.description }}
 
