@@ -52,6 +52,7 @@ DEA Tech Alerts {{ page.data.year }}
 {{ page.data.description or "Keep up with the latest updates, releases, outages, and planned maintenance." }}
 {% else %}
 {{ page.data.description or "View updates, releases, outages, and planned maintenance from {}. Or, go back to the `current tech alerts </tech-alerts/>`_.".format(page.data.year) }}
+{% endif %}
 {% endset %}
 
 {# Quick links component #}
@@ -147,7 +148,7 @@ DEA Tech Alerts {{ page.data.year }}
    :name: previous-years
    :class: h2
 
-`View tech alerts from previous years <./previous-years>`_
+`View tech alerts from previous years </tech-alerts/previous-years>`_
 {% else %}
 .. rubric:: Other years
    :name: other-years
