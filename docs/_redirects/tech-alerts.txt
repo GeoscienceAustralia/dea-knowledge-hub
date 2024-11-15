@@ -2,7 +2,7 @@
 
 # The Tech Alerts and Changelog was moved out of the User Guides section into its own section of the site.
 
-guides/tech_alerts_changelog  tech-alerts
+# guides/tech_alerts_changelog  tech-alerts
 
 # The path was changed from 'tech-alerts-changelog' to 'tech-alerts'
 
