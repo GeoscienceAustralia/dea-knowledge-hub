@@ -10,6 +10,7 @@
 
 {# Computed values #}
 
+{% set is_current_year = page.data.is_current_year %}
 {% set quick_links_custom_list = page.data.quick_links_custom | selectattr("link", "!=", None) | list %}
 
 {% set system_status_notifications_list = page.data.system_status_notifications | selectattr("description", "!=", None) | selectattr("severity", "!=", None) | selectattr("severity", ">", 0) | sort(attribute='severity') | list %}
@@ -36,7 +37,11 @@
 
 {% set page_title_component %}
 {{ "=" * max_page_title_length }}
+{% if is_current_year %}
+DEA Tech Alerts
+{% else %}
 DEA Tech Alerts {{ page.data.year }}
+{% endif %}
 {{ "=" * max_page_title_length }}
 {% endset %}
 
@@ -81,12 +86,12 @@ DEA Tech Alerts {{ page.data.year }}
 {# System status notifications component #}
 
 {% set system_status_notifications_component %}
-{% if system_status_notifications_list %}
+{% if system_status_notifications_list and is_current_year %}
 .. container:: card-list system-status-notifications
    :name: system-status-notifications
 
    .. grid:: 2 2 3 3
-      :gutter: 2
+      :gutter: 3
 
       {% for item in system_status_notifications_list %}
       {% if item.severity == 1 %}
@@ -122,11 +127,13 @@ DEA Tech Alerts {{ page.data.year }}
 {# Previous years component #}
 
 {% set previous_years_component %}
+{% if is_current_year %}
 .. rubric:: Previous years
    :name: previous-years
    :class: h2
 
 `View tech alerts from previous years <./previous-years>`_
+{% endif %}
 {% endset %}
 
 {# Assembling the page #}
