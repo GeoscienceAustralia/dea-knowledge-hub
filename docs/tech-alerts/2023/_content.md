@@ -56,7 +56,7 @@ An updated version of DEA Coastlines is now available and includes the 2022 cont
 
 [View the Tech Alert](https://communication.ga.gov.au/link/id/zzzz64dc26d23b947590Pzzzz61de67bd94bfe861/page.html)
 
-## Mar 2023: Sentinel-2 ARD GQA coastal scenes error; DEA Burnt Area (S2 NRT, Provisional) decommissioning (Resolved)
+## Aug 2023: Sentinel-2 ARD GQA coastal scenes error; DEA Burnt Area (S2 NRT, Provisional) decommissioning (Resolved)
 
 **Sentinel-2 ARD error &mdash; GQA failing over coastal scenes**
 
@@ -87,3 +87,13 @@ Coastal ARD scenes before March 2023 that have no GQA data will be temporarily u
 Users who have previously accessed Sentinel-2 ARD over coastal areas and filtered by GQA may wish to re-run their workflows to account for the updated data.
 
 If you have any questions about the above, please email us at <earth.observation@ga.gov.au>
+
+[View the Tech Alert](https://communication.ga.gov.au/pub/pubType/EO/pubID/zzzz64dc2b594744b162/interface.html)
+
+## Mar 2023: Sentinel-2 Collection 3 migration complete
+
+**DEA’s Sentinel-2 ARD product (Surface Reflectance) upgrade to C3 complete**
+
+This is a significant milestone as the ability to combine data from multiple satellites enables us to improve some of Digital Earth Australia's existing products.
+
+[Learn more](https://www.ga.gov.au/scientific-topics/dea/news/significant-milestone-reached-in-sentinel-2-collection-3-migration)
