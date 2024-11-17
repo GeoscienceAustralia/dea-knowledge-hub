@@ -10,7 +10,10 @@
 
 {# Computed values #}
 
+{% set current_year = now().year %}
+
 {% set is_current_year = page.data.is_current_year %}
+
 {% set quick_links_custom_list = page.data.quick_links_custom | selectattr("link", "!=", None) | list %}
 
 {% set system_status_notifications_list = page.data.system_status_notifications | selectattr("description", "!=", None) | selectattr("severity", "!=", None) | selectattr("severity", ">", 0) | sort(attribute='severity') | list %}
@@ -131,7 +134,7 @@ DEA Tech Alerts {{ page.data.year }}
       .. grid-item-card:: 
          :class-item: no-severity
 
-         :fas:`angle-left`:raw-html:`&nbsp;` `Go back to the current year's tech alerts </tech-alerts/>`_
+         :fas:`angle-left`:raw-html:`&nbsp;` `Go back to the current year {{ current_year }} </tech-alerts/>`_
 
    {%- endif %}
 {% endset %}
