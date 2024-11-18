@@ -155,7 +155,8 @@ if environment["build_mode"] == "pr-preview":
 html_context = {
     "default_mode": "light",
     "meta_keywords": "DEA, Digital Earth Australia, GA, Geoscience Australia, Knowledge, Documentation, Content, Learn, Learning, Data Products, Metadata, User Guides, DEA Notebooks, Notebooks, Open Data Cube, CMI, Content Management Interface, Developer, Python, Jupyter",
-    "environment": environment
+    "environment": environment,
+    "current_year": utilities.current_year(),
 }
 
 if environment["build_mode"] == "production": html_context["google_analytics_ga4_tag"] = "G-4B9D450HR4"
