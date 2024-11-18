@@ -59,14 +59,6 @@ DEA Tech Alerts {{ year }}
 {% endif %}
 {% endset %}
 
-TEST of `config.html_context`
-
-{{ current_year }}
-
-{{ year }}
-
-{{ is_current_year }}
-
 {# Quick links component #}
 
 {% set quick_links_component %}
