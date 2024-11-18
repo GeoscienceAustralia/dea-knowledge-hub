@@ -60,9 +60,7 @@ DEA Tech Alerts {{ page.data.year }}
 
 TEST of `config.html_context`
 
-{{ config.html_context.current_year }}
-
-{{ config.html_context.environment.current_year }}
+{{ current_year }}
 
 {# Quick links component #}
 
