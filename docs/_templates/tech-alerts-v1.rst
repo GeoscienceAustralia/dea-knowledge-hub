@@ -135,7 +135,7 @@ DEA Tech Alerts {{ year }}
       .. grid-item-card:: 
          :class-item: no-severity
 
-         :fas:`angle-left`:raw-html:`&nbsp;` `Go back to the current year ({{ current_year }}) </tech-alerts/>`_
+         :fas:`angle-left`:raw-html:`&nbsp;` `Go back to DEA Tech Alerts {{ current_year }} </tech-alerts/>`_
 
    {%- endif %}
 {% endset %}
