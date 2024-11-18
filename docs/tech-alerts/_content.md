@@ -8,6 +8,12 @@
 
 Learn more about the [DEA Summary Product Grid](/guides/reference/collection_3_summary_grid/).
 
+## 18 Nov 2024: DEA Hotspots &mdash; Enhancing Bushfire Monitoring with New Satellite Data
+
+We are writing to keep you informed of changes that are occurring to the DEA Hotspots service. While faced with the loss of the MODIS Terra for our morning observations, we can continue to use available satellites to bolster the density and reliability of our afternoon observations. Data from the Visible Infrared Imaging Radiometer Suite (VIIRS) sensor onboard NOAA-21 will be available in DEA Hotspots by early December 2024. Once NOAA-21 data is available, a tech alert will be issued to users.
+
+[View the Tech Alert](https://communication.ga.gov.au/DEA-Hotspots-18Nov)
+
 ## 18 Oct 2024: DEA upgrade of several Landsat derivative products complete
 
 Digital Earth Australia (DEA) has released Landsat derivative product upgrades for [DEA Water Observations Statistics](/data/product/dea-water-observations-statistics-landsat/), [DEA Fractional Cover Percentiles](/data/product/dea-fractional-cover-percentiles-landsat/), [DEA Tasseled Cap Percentiles (provisional product)](/data/product/dea-tasseled-cap-percentiles-landsat/), and [DEA Mangroves](/data/product/dea-mangrove-canopy-cover-landsat/).
