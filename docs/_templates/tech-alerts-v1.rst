@@ -8,11 +8,12 @@
 
 {% set max_page_title_length = 200 %}
 
+{% set year = page.data.year | string %}
 {% set current_year = config.html_context.current_year %}
 
 {# Computed values #}
 
-{% set is_current_year = page.data.year == current_year %}
+{% set is_current_year = year == current_year %}
 
 {% set quick_links_custom_list = page.data.quick_links_custom | selectattr("link", "!=", None) | list %}
 
@@ -43,7 +44,7 @@
 {%- if is_current_year %}
 DEA Tech Alerts
 {%- else %}
-DEA Tech Alerts {{ page.data.year }}
+DEA Tech Alerts {{ year }}
 {%- endif %}
 {{ "=" * max_page_title_length }}
 {% endset %}
@@ -54,13 +55,17 @@ DEA Tech Alerts {{ page.data.year }}
 {% if is_current_year %}
 {{ page.data.description or "Keep up with the latest updates, releases, outages, and planned maintenance." }}
 {% else %}
-{{ page.data.description or "View updates, releases, outages, and planned maintenance from the previous year of {}.".format(page.data.year) }}
+{{ page.data.description or "View updates, releases, outages, and planned maintenance from the previous year of {}.".format(year) }}
 {% endif %}
 {% endset %}
 
 TEST of `config.html_context`
 
 {{ current_year }}
+
+{{ year }}
+
+{{ is_current_year }}
 
 {# Quick links component #}
 
