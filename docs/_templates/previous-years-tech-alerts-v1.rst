@@ -18,7 +18,7 @@ Here you will find tech alerts from previous years.
       .. grid-item-card:: 
          :class-item: no-severity
 
-         :fas:`angle-left`:raw-html:`&nbsp;` `Go back to the current year's tech alerts </tech-alerts/>`_
+         :fas:`angle-left`:raw-html:`&nbsp;` `Go back to DEA Tech Alerts 2024 </tech-alerts/>`_
 
 .. tableofcontents::
 
