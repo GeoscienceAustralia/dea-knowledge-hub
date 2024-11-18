@@ -12,3 +12,4 @@ quick_links_custom: null
 system_status_notifications: null
   # - description: Lorem ipsum
   #   severity: 2
+  #   status_custom: null
