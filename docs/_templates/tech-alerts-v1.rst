@@ -8,7 +8,10 @@
 
 {% set max_page_title_length = 200 %}
 
+{% set page_title = "DEA Tech Alerts" %}
+
 {% set year = page.data.year | string %}
+
 {% set current_year = config.html_context.current_year | string %}
 
 {# Computed values #}
@@ -42,9 +45,9 @@
 {% set page_title_component %}
 {{ "=" * max_page_title_length }}
 {%- if is_current_year %}
-DEA Tech Alerts
+{{ page_title }}
 {%- else %}
-DEA Tech Alerts {{ year }}
+{{ page_title }} {{ year }}
 {%- endif %}
 {{ "=" * max_page_title_length }}
 {% endset %}
@@ -135,7 +138,7 @@ DEA Tech Alerts {{ year }}
       .. grid-item-card:: 
          :class-item: no-severity
 
-         :fas:`angle-left`:raw-html:`&nbsp;` `Go back to DEA Tech Alerts {{ current_year }} </tech-alerts/>`_
+         :fas:`angle-left`:raw-html:`&nbsp;` `Go back to {{ page_title }} {{ current_year }} </tech-alerts/>`_
 
    {%- endif %}
 {% endset %}
