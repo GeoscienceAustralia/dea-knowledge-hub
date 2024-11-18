@@ -10,7 +10,7 @@
 
 {# Computed values #}
 
-{% set is_current_year = page.data.year == html_context.environment.current_year %}
+{% set is_current_year = page.data.year == current_year %}
 
 {% set quick_links_custom_list = page.data.quick_links_custom | selectattr("link", "!=", None) | list %}
 
@@ -132,7 +132,7 @@ DEA Tech Alerts {{ page.data.year }}
       .. grid-item-card:: 
          :class-item: no-severity
 
-         :fas:`angle-left`:raw-html:`&nbsp;` `Go back to the current year ({{ html_context.environment.current_year }}) </tech-alerts/>`_
+         :fas:`angle-left`:raw-html:`&nbsp;` `Go back to the current year ({{ current_year }}) </tech-alerts/>`_
 
    {%- endif %}
 {% endset %}
