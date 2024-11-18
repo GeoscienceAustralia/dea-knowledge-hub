@@ -71,15 +71,15 @@ TEST of `config.html_context`
    .. grid:: 2 2 3 5
       :gutter: 3
 
-      .. grid-item-card:: :fas:`chart-simple`
-         :link: https://monitoring.dea.ga.gov.au/
-
-         Monitor service status
-
       .. grid-item-card:: :fas:`newspaper`
          :link: https://communication.ga.gov.au/dea-news-subscribe
 
          Subscribe to our newsletter
+
+      .. grid-item-card:: :fas:`chart-simple`
+         :link: https://monitoring.dea.ga.gov.au/
+
+         Monitor service status
 
       .. grid-item-card:: :fas:`address-card`
          :link: https://www.ga.gov.au/scientific-topics/dea/contact-us
