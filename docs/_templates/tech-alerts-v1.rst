@@ -10,8 +10,6 @@
 
 {# Computed values #}
 
-{% set current_year = now().year %}
-
 {% set is_current_year = page.data.year == current_year %}
 
 {% set quick_links_custom_list = page.data.quick_links_custom | selectattr("link", "!=", None) | list %}
