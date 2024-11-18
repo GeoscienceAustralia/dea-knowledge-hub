@@ -58,9 +58,16 @@ DEA Tech Alerts {{ page.data.year }}
 {% endif %}
 {% endset %}
 
-{% TODO Testing %}
+TEST of `config.html_context`
+
 {% for key, value in config.html_context.items() %}
 - ``{{key}}`` = ``{{value}}``
+{% endfor %}
+
+TEST of `title in env.titles`
+
+{% for doc, title in env.titles.items() %}
+- ``{{ title }} ({{ doc }})``
 {% endfor %}
 
 {# Quick links component #}
