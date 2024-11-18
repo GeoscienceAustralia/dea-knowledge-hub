@@ -9,7 +9,7 @@
 {% set max_page_title_length = 200 %}
 
 {% set year = page.data.year | string %}
-{% set current_year = config.html_context.current_year %}
+{% set current_year = config.html_context.current_year | string %}
 
 {# Computed values #}
 
