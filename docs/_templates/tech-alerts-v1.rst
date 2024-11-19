@@ -158,13 +158,13 @@
    :name: other-years
    :class: h2
 
-`View tech alerts from previous years </tech-alerts/previous-years>`_
+`View tech alerts from previous years </tech-alerts/previous-years/>`_
 {% else %}
 .. rubric:: Other years
    :name: other-years
    :class: h2
 
-View `{{ page_title }} {{ current_year }} </tech-alerts/>`_ or `other years' tech alerts </tech-alerts/previous-years>`_.
+View `{{ page_title }} {{ current_year }} </tech-alerts/>`_ or `other years' tech alerts </tech-alerts/previous-years/>`_.
 {% endif %}
 {% endset %}
 
