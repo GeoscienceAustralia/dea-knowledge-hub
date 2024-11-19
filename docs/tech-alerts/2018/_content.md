@@ -1,7 +1,5 @@
-# 2018
-
-:::{include} ./_components/previous-years-introduction.md
-:::
+% See the DEA Tech Alerts documentation:
+% https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/tech_alerts_changelog.html
 
 ## 5 Dec 2018: DEA Public Data Changes
 

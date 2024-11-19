@@ -1,19 +1,5 @@
-% See the DEA Tech Alerts and Changelog documentation:
+% See the DEA Tech Alerts documentation:
 % https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/tech_alerts_changelog.html
-
-% How to update the 'System status of DEA':
-% Change the 'class' to either: tip / caution / danger
-% Default content: All DEA systems are working as expected. There are no outstanding incidents or errors to report.
-
-:::{admonition} System status of DEA
-:class: caution
-
-* Expanded extents data processing is currently paused, with data available to May 2024. See below. <!-- NOTE Remember to remove the banner on the page: https://pr-302-preview.khpreview.dea.ga.gov.au/guides/reference/ard-expanded-processing-extent/ -->
-* Misclassification issue with Sentinel-2 's2cloudless' cloud masking from 2022. See below.
-* Terra-derived DEA Hotspots are unavailable. See below.
-* NCI Explorer may experience instability. See below.
-* GeoMAD processing bug. See below.
-:::
 
 ## In progress: Shift in origin point of DEA Summary Product Grid
 
@@ -36,7 +22,7 @@ The release [triggered downtime for these products as upgrades were implemented]
 
 The upgrades are now complete with all services online and ready to use.
 
-[View the full Tech Alert](https://communication.ga.gov.au/link/id/zzzz6711a11223145221Pzzzz61de67bd94bfe861/page.html)
+[View the Tech Alert](https://communication.ga.gov.au/link/id/zzzz6711a11223145221Pzzzz61de67bd94bfe861/page.html)
 
 ## 17 Oct 2024: DEA Sandbox has been upgraded
 
@@ -120,6 +106,8 @@ The newly released version 4.0.0 of [DEA Geometric Median and Median Absolute De
 
 See the [Version 4.0.0 Changelog](/data/product/dea-geometric-median-and-median-absolute-deviation-landsat/?tab=history) for more information.
 
+[View the Tech Alert](https://communication.ga.gov.au/pub/pubType/EO/pubID/zzzz66a82c6b41998428/interface.html)
+
 ## 1 Aug 2024: Resolved outage of Hotspots S-NPP VIIRS data
 
 The Suomi-NPP VIIRS Hotspots sub-product has resumed publishing data because the satellite's issue has been resolved.
@@ -188,11 +176,24 @@ This is due to the TERRA MODIS satellite experiencing power problems. The satell
 
 You may notice slow load times or outages with the [DEA Explorer](https://explorer.dea.ga.gov.au/) and [DEA Explorer STAC API](https://explorer.dea.ga.gov.au/stac/). We apologise for any inconvenience that this may cause and we are working to solve this issue.
 
-## 1 May 2024: Six of Australia’s offshore territories now covered by Digital Earth Australia baseline satellite data
+## 1 May 2024: DEA baseline data extended to six offshore territories
 
-In support of Indigenous Communities in the Torres Strait, in addition to government agencies reporting on Ocean Ecosystem Accounts and Marine Parks management, DEA is making baseline satellite data available for 6 offshore territories and islands in the Torres Strait.
+Six of Australia’s offshore territories now covered by Digital Earth Australia baseline satellite data.
+
+Digital Earth Australia is expanding the coverage of our satellite data to include six Australian offshore territories, including islands in the Torres Strait. This expansion supports the management of Australia’s Marine Parks, Ocean Ecosystem Accounting and Indigenous communities in the Torres Strait.
+
+DEA is extending baseline satellite data to include:
+
+* Christmas Island
+* Cocos (Keeling) Islands
+* Coral Sea Islands
+* Heard Island and McDonald Islands
+* Norfolk Island
+* Islands in the Torres Strait
 
 Learn more about the [DEA ARD expanded processing extent](/guides/reference/ard-expanded-processing-extent/).
+
+[View the Tech Alert](https://communication.ga.gov.au/link/id/zzzz6631c6db2c2e7889Pzzzz61de67bd94bfe861/page.html)
 
 ## 23 Apr 2024: It's now easier to cite DEA products
 
@@ -209,6 +210,19 @@ The Knowledge Hub contains a new [Validation reports](/validation/) section. Thi
 
 See the latest Daily Validation Summary Report: [2023-11-27: Transect NSW Site 1, Sentinel-2B overpass](/validation/daily-report/2023-11-27/)
 
+## 17 Apr 2024: DEA trialling Google Earth Engine
+
+Digital Earth Australia is trialling several datasets on the Google Earth Engine (GEE). This will allow users to combine DEA data with the many other datasets available on GEE and enable innovative ways to build new information products in future.
+
+The DEA datasets include:
+
+* Geometric Median and Median Absolute Deviation (GeoMAD)
+* National Intertidal Digital Elevation Model 25m
+* Water Observations Statistics
+* Land Cover
+
+[View the Tech Alert](https://communication.ga.gov.au/link/id/zzzz661f298d890d3863Pzzzz61de67bd94bfe861/page.html)
+
 ## 10 Apr 2024: DEA Intertidal 1.0.0 released
 
 The [DEA Intertidal](/data/product/dea-intertidal/) product suite maps the changing elevation, exposure and tidal characteristics of Australia’s exposed intertidal zone, the complex zone that defines the interface between land and sea.
@@ -216,6 +230,8 @@ The [DEA Intertidal](/data/product/dea-intertidal/) product suite maps the chang
 This new product suite expands upon the [DEA Intertidal Elevation (Landsat)](/data/old-version/dea-intertidal-elevation-landsat-1.0.0/) product which has now been deprecated.
 
 See [DEA Intertidal](/data/product/dea-intertidal/) for more information.
+
+[View the Tech Alert](https://communication.ga.gov.au/link/id/zzzz66171e1800bdc553Pzzzz61de67bd94bfe861/page.html)
 
 ## 3 Apr 2024: Terra-derived DEA Hotspots have been restored
 
@@ -233,9 +249,13 @@ Users may be unable to log in to or access their DEA Sandbox account while the i
 
 You can monitor the status of DEA’s systems on the [DEA monitoring dashboard](https://monitoring.dea.ga.gov.au/). If you would like to contact DEA, please email [earth.observation@ga.gov.au](mailto:earth.observation@ga.gov.au)
 
+[View the Tech Alert](https://communication.ga.gov.au/link/id/zzzz6604c9fc9e7bd364Pzzzz61de67bd94bfe861/page.html)
+
 ## 25 Mar 2024: DEA Waterbodies version 3.0.0 released
 
 Improvements include additional supporting data for the most recent observations made available through web mapping services (WMS) and DEA Maps, more metadata, Landsat 9 data, and pipeline upgrades. Version 3.0.0 of DEA Waterbodies uses the same underlying polygon set as DEA Waterbodies version 2.0.0. [Learn more](/data/product/dea-waterbodies-landsat/?tab=history)
+
+[View the Tech Alert](https://communication.ga.gov.au/link/id/zzzz664bf3a36fc30456Pzzzz6567c8b713b5b826/page.html)
 
 ## 21 Mar 2024: Terra-derived DEA Hotspots are unavailable (Resolved)
 
@@ -266,9 +286,9 @@ These datasets can be loaded on the DEA Sandbox using the product names `abares_
 
 ## 15 Feb 2024: Upcoming changes to DEA Geomedian, Median Absolute Deviation and other derivative products
 
-The Geoscience Australia [Landsat Geometric Median and Median Absolute Deviation](/data/product/dea-geometric-median-and-median-absolute-deviation-landsat) Collection 3 products v3.1.0 are undergoing a major upgrade which will be released shortly as v4.0.0.
+DEA will soon be releasing an updated version of the [Geometric Median and Median Absolute Deviation products](/data/product/dea-geometric-median-and-median-absolute-deviation-landsat). This version (v4.0.0) will sit alongside the existing version (v3.1.0) for a couple of months to allow users to transition versions.
 
-Find out the details [here](https://communication.ga.gov.au/link/id/zzzz65cd75b153a33890Pzzzz61de67bd94bfe861/page.html).
+[View the Tech Alert](https://communication.ga.gov.au/link/id/zzzz65cd75b153a33890Pzzzz61de67bd94bfe861/page.html)
 
 ## 24 Jan 2024: Water Observations and Fractional Cover Percentiles 2023 annual summaries released
 

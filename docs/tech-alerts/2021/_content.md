@@ -1,8 +1,3 @@
-# 2021
-
-:::{include} ./_components/previous-years-introduction.md
-:::
-
 ## 16 Jul 2021: Collection 3 Landsat data now available
 
 Thanks to the [Geoscience Australia Landsat Collection Upgrade (video)](https://www.youtube.com/watch?v=BNEIG91lu44), 
