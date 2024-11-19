@@ -1,13 +1,18 @@
+.. role:: raw-html(raw)
+   :format: html
+
 .. rst-class:: previous-years-tech-alerts-page
+
+{% if page.data.meta_description %}
+.. meta::
+   :description: {{ page.data.meta_description }}
+{%- endif %}
 
 ==============
 Previous years
 ==============
 
-Here you will find tech alerts from previous years.
-
-.. role:: raw-html(raw)
-   :format: html
+{{ page.data.description or "Here you will find tech alerts from previous years." }}
 
 .. container:: card-list tech-alert-notifications
    :name: tech-alert-notifications
