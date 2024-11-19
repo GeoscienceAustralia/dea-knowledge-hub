@@ -1,3 +1,7 @@
+{% set page = {
+   "data": load('_data.yaml'),
+} %}
+
 .. role:: raw-html(raw)
    :format: html
 
