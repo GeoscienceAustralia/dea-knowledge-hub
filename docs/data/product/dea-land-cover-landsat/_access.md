@@ -70,9 +70,9 @@ C:/landcover/
 
 :::{dropdown} Adding DEA Landcover to QGIS
 
-There are two options for adding DEA Lancover to QGIS.
+There are two options for adding DEA Landcover to QGIS.
 
-1. Adding the web service
+1. Adding the OWS web service
 2. Uploading the downloaded individual tif files 
 
 **Adding the web service:**
