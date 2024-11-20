@@ -70,6 +70,13 @@ C:/landcover/
 
 :::{dropdown} Adding DEA Landcover to QGIS
 
+There are two options for adding DEA Lancover to QGIS.
+
+1. Adding the web service
+2. Uploading the downloaded individual tif files 
+
+**Adding the web service:**
+
 *(for the time dimension to work you need version 3.22+)*
 
 From the drop down menus at the top select `Layer` > `Add Layer` > `Add WMS/WMTS Layer`
@@ -92,6 +99,22 @@ Select `Land and Vegetation` > `DEA Land Cover`, then either:
 Once you have selected a layer, click `Add` at the bottom of the window to add it to your project.
 
 Temporal information can be accessed by clicking the clock icon next to the name of the layer in the layers list.
+
+**Adding the individual tif files:**
+
+Individual tiles can be downloaded from s3 via the above instruction, and can be then uploaded to QGIS.
+
+Once the files are uploaded the styling for the tif files can be downloaded here: ![Level 3 QGIS Style](/_files/land_cover/ga_ls_landcover_class_cyear_3_style.qml)
+
+To add the style,
+
+1. Select the tif files you would like the styling applied to
+
+2. Right click and select 'Properties' then 'Symbology'
+
+3. Select 'Style' and the 'Load Style' in the bottom left hand menu
+
+The styling will now be applied to the tif classification file, to enable a colour representation of the land cover classifications
 
 :::
 
@@ -119,3 +142,9 @@ Now add the layer to your map:
 
 :::
 
+:::{dropdown} Adding DEA Landcover to ArcMap
+
+
+
+
+![Overall accuracy of DEA Land Cover is 80%. 2010 accuracy is 82%, 2015 accuracy is 78%.](/_files/cmi/overall-accuracy_0.PNG)
