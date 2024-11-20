@@ -354,7 +354,7 @@
       * - **DOI**
         - `{{ page.data.doi }} <https://doi.org/{{ page.data.doi }}>`_
       {%- elif page.data.ecat_id %}
-      * - **Persistent ID**
+      * - **Catalogue ID**
         - `{{ page.data.ecat_id }} <https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/{{ page.data.ecat_id }}>`_
       {%- endif %}
       {% if page.data.is_currency_reported and is_cadence_yearly %}
@@ -625,9 +625,9 @@
         - The Digital Object Identifier.
       {%- endif %}
       {%- if page.data.ecat_id %}
-      * - **Persistent ID**
+      * - **Catalogue ID**
         - `{{ page.data.ecat_id }} <https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/{{ page.data.ecat_id }}>`_
-        - The eCat ID (for internal use).
+        - The Data and Publications catalogue ID.
       {%- endif %}
       {%- if page.data.licence_name %}
       * - **Licence**
