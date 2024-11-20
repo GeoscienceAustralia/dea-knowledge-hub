@@ -104,15 +104,15 @@ Temporal information can be accessed by clicking the clock icon next to the name
 
 Individual tiles can be downloaded from s3 via the above instruction, and can be then uploaded to QGIS.
 
-Once the files are uploaded the styling for the tif files can be downloaded here: ![Level 3 QGIS Style](/_files/land_cover/ga_ls_landcover_class_cyear_3_style.qml)
+Once the files are uploaded the styling for the tif files can be downloaded here: [Level 3 QGIS Style](/_files/land_cover/ga_ls_landcover_class_cyear_3_style.qml)
 
 To add the style,
 
 1. Select the tif files you would like the styling applied to
 
-2. Right click and select 'Properties' then 'Symbology'
+2. Right click and select `Properties` then `Symbology`
 
-3. Select 'Style' and the 'Load Style' in the bottom left hand menu
+3. Select `Style` and the `Load Style` in the bottom left hand menu
 
 The styling will now be applied to the tif classification file, to enable a colour representation of the land cover classifications
 
@@ -141,10 +141,3 @@ Now add the layer to your map:
 5. Click `Add`
 
 :::
-
-:::{dropdown} Adding DEA Landcover to ArcMap
-
-
-
-
-![Overall accuracy of DEA Land Cover is 80%. 2010 accuracy is 82%, 2015 accuracy is 78%.](/_files/cmi/overall-accuracy_0.PNG)
