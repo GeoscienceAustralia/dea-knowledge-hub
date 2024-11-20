@@ -1,12 +1,12 @@
 % See the DEA Tech Alerts documentation:
 % https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/tech_alerts_changelog.html
 
-## In progress: Shift in origin point of DEA Summary Product Grid
-
+::::{dropdown} In progress: Shift in origin point of DEA Summary Product Grid
 :::{include} ../_components/shift-in-summary-product-grid-tech-alert.md
 :::
 
 Learn more about the [DEA Summary Product Grid](/guides/reference/collection_3_summary_grid/).
+::::
 
 ## 18 Nov 2024: DEA Hotspots &mdash; Enhancing Bushfire Monitoring with New Satellite Data
 
