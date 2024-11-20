@@ -627,7 +627,7 @@
       {%- if page.data.ecat_id %}
       * - **Catalogue ID**
         - `{{ page.data.ecat_id }} <https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/{{ page.data.ecat_id }}>`_
-        - The Data and Publications catalogue ID.
+        - The Data and Publications catalogue (eCat) ID.
       {%- endif %}
       {%- if page.data.licence_name %}
       * - **Licence**
