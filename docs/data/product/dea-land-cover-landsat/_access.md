@@ -104,7 +104,7 @@ Temporal information can be accessed by clicking the clock icon next to the name
 
 Individual tiles can be downloaded from s3 via the above instruction, and can be then uploaded to QGIS.
 
-Once the files are uploaded the styling for the tif files can be downloaded here: [Level 3 QGIS Style](/_files/land_cover/ga_ls_landcover_class_cyear_3_style.qml)
+Once the files are uploaded the styling for the tif files can be downloaded here: [Level 3 QGIS Style](https://dea-public-data-dev.s3.ap-southeast-2.amazonaws.com/derivative/ga_ls_landcover_class_cyear_3/ga_ls_landcover_class_cyear_3_style.qml) and [Level 4 QGIS Style](https://dea-public-data-dev.s3.ap-southeast-2.amazonaws.com/derivative/ga_ls_landcover_class_cyear_3/ga_ls_landcover_class_cyear_4_style.qml)
 
 To add the style,
 
