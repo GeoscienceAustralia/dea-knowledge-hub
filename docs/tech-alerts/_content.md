@@ -247,7 +247,7 @@ DEA Sandbox users are warned to expect intermittent issues over the next 12 hour
 
 Users may be unable to log in to or access their DEA Sandbox account while the incident is being investigated. Users may also notice reduced performance on other DEA systems during this outage.
 
-You can monitor the status of DEA’s systems on the [DEA monitoring dashboard](https://monitoring.dea.ga.gov.au/). If you would like to contact DEA, please email [earth.observation@ga.gov.au](mailto:earth.observation@ga.gov.au)
+You can monitor the status of DEA’s systems on the [DEA monitoring dashboard](https://status.dea.ga.gov.au/). If you would like to contact DEA, please email [earth.observation@ga.gov.au](mailto:earth.observation@ga.gov.au)
 
 [View the Tech Alert](https://communication.ga.gov.au/link/id/zzzz6604c9fc9e7bd364Pzzzz61de67bd94bfe861/page.html)
 
@@ -265,7 +265,7 @@ We have received notice from NASA that Direct Broadcast satellite downloads from
 
 Outages affecting DEA Open Web Services (OWS) have been resolved. Work will be continuing over the coming months to further improve performance and reliability of these services. 
 
-See the [DEA monitoring dashboard](https://monitoring.dea.ga.gov.au/) to check the current status of DEA's services.
+See the [DEA monitoring dashboard](https://status.dea.ga.gov.au/) to check the current status of DEA's services.
 
 ## 26 Feb 2024: Sentinel-2 contiguity fix reprocessing complete
 
