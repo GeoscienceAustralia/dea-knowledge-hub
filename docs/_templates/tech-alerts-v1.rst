@@ -77,7 +77,7 @@
          Subscribe to our newsletter
 
       .. grid-item-card:: :fas:`chart-simple`
-         :link: https://monitoring.dea.ga.gov.au/
+         :link: https://status.dea.ga.gov.au/
 
          Monitor service status
 
