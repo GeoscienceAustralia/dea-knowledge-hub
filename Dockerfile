@@ -6,16 +6,18 @@ RUN apt-get install -y bash
 RUN apt-get install -y pandoc
 RUN apt-get install -y sass
 
-RUN mkdir -p /setup
-RUN mkdir -p /docs
-RUN mkdir -p /output
+WORKDIR /usr/src/app
 
-COPY docs/requirements.txt /setup
-RUN pip install -r /setup/requirements.txt
+RUN mkdir -p ./setup
+RUN mkdir -p ./docs
+RUN mkdir -p ./output
 
-COPY docs /docs
+COPY docs/requirements.txt ./setup
+RUN pip install -r ./setup/requirements.txt
 
-COPY build-local.sh /setup
-CMD /bin/bash -c "/setup/build-local.sh"
+COPY docs ./docs
+
+COPY build-local.sh ./setup
+CMD /bin/bash -c "./setup/build-local.sh"
 
 EXPOSE 8062
