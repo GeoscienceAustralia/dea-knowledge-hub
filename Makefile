@@ -20,7 +20,7 @@ start-local:
 	| grep --invert-match --regexp ".*GET /_images.*"
 
 build:
-	sphinx-build -b dirhtml -j auto -a /docs /output
+	sphinx-build -b dirhtml -j auto -a ./docs ./output
 
 # Other commands
 
