@@ -11,13 +11,20 @@ rebuild-local:
 	docker build --no-cache -t dea-knowledge-hub .
 
 start-local:
-	docker run -it --rm --name dea-knowledge-hub --publish 8062:8062 --volume ./docs/notebooks:/usr/src/app/docs/notebooks --volume ./output:/usr/src/app/output --env-file .env dea-knowledge-hub \
-	| grep --invert-match --regexp "WARNING.*Document headings start at" \
-	| grep --invert-match --regexp "WARNING.*duplicate label" \
-	| grep --invert-match --regexp "^copying images..." \
-	| grep --invert-match --regexp ".*GET /_static.*" \
-	| grep --invert-match --regexp ".*GET /_files.*" \
-	| grep --invert-match --regexp ".*GET /_images.*"
+	docker run \
+		-it --rm \
+		--name dea-knowledge-hub \
+		--publish 8062:8062 \
+		--volume ./docs/notebooks:/usr/src/app/docs/notebooks \
+		--volume ./output:/usr/src/app/output \
+		--env-file .env \
+		dea-knowledge-hub \
+		| grep --invert-match --regexp "WARNING.*Document headings start at" \
+		| grep --invert-match --regexp "WARNING.*duplicate label" \
+		| grep --invert-match --regexp "^copying images..." \
+		| grep --invert-match --regexp ".*GET /_static.*" \
+		| grep --invert-match --regexp ".*GET /_files.*" \
+		| grep --invert-match --regexp ".*GET /_images.*"
 
 build:
 	sphinx-build -b dirhtml -j auto -a ./docs ./output
