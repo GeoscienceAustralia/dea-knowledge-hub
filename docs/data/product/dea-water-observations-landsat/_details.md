@@ -49,6 +49,11 @@ The table below describes the meaning of each bit set per pixel in each WOFL. Wh
 
 Full details of the original algorithms and features of DEA Water Observations can be found in the Water Observations from Space paper by Mueller et al. (2015).
 
+Here is another table.
+
+:::{include} ../../../_components/water-observations-bitmasking-table.md
+:::
+
 ## Lineage
 
 Digital Earth Australia (DEA) Water Observations is derived from Landsat 5, 7, 8 and 9 imagery. Imagery is initially corrected to Analysis Ready Data (ARD) standard, and masked for cloud, cloud-shadow, data contiguity, steep slope, solar incidence angle, and terrain shadow. Water classification is achieved using a decision tree based on the individual spectral bands of the Landsat satellites and derived normalised difference indicies associated with water and vegetation. The output is then stored as an 8-bit, bit-field with values from 0 - 255 indicating the presence or absence of each mask type and the presence or absence of water.
