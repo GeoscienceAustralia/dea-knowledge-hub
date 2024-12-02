@@ -811,7 +811,7 @@
 {% endif %}
 {% endset %}
 
-{# Assembling the page #}
+{# Assembling the page components #}
 
 {{ rst_head_component }}
 
