@@ -2,7 +2,7 @@
 # Note: This script is designed to be run in the DEA Sandbox environment.
 
 import sys
-import ruamel.yaml
+from ruamel.yaml import YAML
 import datacube
 import numpy as np
 import pandas as pd
@@ -21,7 +21,7 @@ products_df = dc.list_measurements()
 product_df = (
     products_df.loc[CONFIGURATION["product_name"]]
     .drop(["flags_definition"], axis=1)
-    .assign(resolution=CONFIGURATION["resolution"], description="")
+    .assign(resolution=CONFIGURATION["resolution"], description=None)
     .rename({"dtype": "type"}, axis=1)
     .reset_index(drop=True)
 )[["name", "aliases", "resolution", "nodata", "units", "type", "description"]]
@@ -38,7 +38,7 @@ bands_table = product_df.to_dict("records")
 data = {"bands_table": bands_table}
 
 # Convert dictionary to YAML
-yaml = ruamel.yaml.YAML()
+yaml = YAML()
 yaml.indent(mapping=2, sequence=4, offset=2)
-yaml_data = yaml.dump(data, sys.stdout)
-print(yaml_data)
+yaml.dump(data, sys.stdout)
+
