@@ -2,7 +2,6 @@
 # Note: This script is designed to be run in the DEA Sandbox environment.
 
 import sys
-# from ruamel.yaml import YAML
 import yaml
 import datacube
 import numpy as np
@@ -39,9 +38,10 @@ bands_table = product_df.to_dict("records")
 data = {"bands_table": bands_table}
 
 # Convert dictionary to YAML
-# yaml = YAML()
-# yaml.indent(mapping=2, sequence=4, offset=2)
-# yaml.dump(data, sys.stdout)
 
-yaml_data = yaml.dump(data, default_flow_style=False)
+class IndentDumper(yaml.Dumper):
+    def increase_indent(self, flow=False, indentless=False):
+        return super(IndentDumper, self).increase_indent(flow, False)
+
+yaml_data = yaml.dump(data, Dumper=IndentDumper, default_flow_style=False, sort_keys=False)
 print(yaml_data)
