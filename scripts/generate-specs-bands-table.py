@@ -21,7 +21,7 @@ products_df = dc.list_measurements()
 product_df = (
     products_df.loc[CONFIGURATION["product_name"]]
     .drop(["flags_definition"], axis=1)
-    .assign(resolution=CONFIGURATION["resolution"], description=None)
+    .assign(resolution=CONFIGURATION["resolution"], description="")
     .rename({"dtype": "type"}, axis=1)
     .reset_index(drop=True)
 )[["name", "aliases", "resolution", "nodata", "units", "type", "description"]]
@@ -31,9 +31,6 @@ product_df["nodata"] = product_df["nodata"].fillna("NaN")
 product_df["aliases"] = product_df["aliases"].fillna("").apply(list)
 product_df["units"] = (
     product_df["units"].str.upper().str[0] + product_df["units"].str[1:]
-)
-product_df["description"] = (
-    product_df["description"].str[0].str.upper() + product_df["description"].str[1:]
 )
 
 # Convert to a dictionary
