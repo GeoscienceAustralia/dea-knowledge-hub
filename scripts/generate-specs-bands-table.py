@@ -8,16 +8,19 @@ import numpy as np
 import pandas as pd
 
 # Important: Configure these values depending on the product
+
 CONFIGURATION = {
     "product_name": "ga_s2ls_intertidal_cyear_3",
     "resolution": "10 m"
 }
 
 # Connect to datacube and return measurements
+
 dc = datacube.Datacube()
 products_df = dc.list_measurements()
 
 # Select specific product and prepare data
+
 product_df = (
     products_df.loc[CONFIGURATION["product_name"]]
     .drop(["flags_definition"], axis=1)
@@ -27,6 +30,7 @@ product_df = (
 )[["name", "aliases", "resolution", "nodata", "units", "type", "description"]]
 
 # Customise column formats/nodata
+
 product_df["nodata"] = product_df["nodata"].fillna("NaN")
 product_df["aliases"] = product_df["aliases"].fillna("").apply(list)
 product_df["units"] = (
@@ -34,6 +38,7 @@ product_df["units"] = (
 )
 
 # Convert to a dictionary
+
 bands_table = product_df.to_dict("records")
 data = {"bands_table": bands_table}
 
