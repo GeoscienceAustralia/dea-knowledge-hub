@@ -8,8 +8,10 @@ import numpy as np
 import pandas as pd
 
 # Important: Configure these values depending on the product
-PRODUCT_NAME = "ga_s2ls_intertidal_cyear_3"
-RESOLUTION = "10 m"
+CONFIGURATION = {
+    "product_name": "ga_s2ls_intertidal_cyear_3",
+    "resolution": "10 m"
+}
 
 # Connect to datacube and return measurements
 dc = datacube.Datacube()
@@ -17,9 +19,9 @@ products_df = dc.list_measurements()
 
 # Select specific product and prepare data
 product_df = (
-    products_df.loc[PRODUCT_NAME]
+    products_df.loc[CONFIGURATION["product_name"]]
     .drop(["flags_definition"], axis=1)
-    .assign(resolution=RESOLUTION, description=None)
+    .assign(resolution=CONFIGURATION["resolution"], description=None)
     .rename({"dtype": "type"}, axis=1)
     .reset_index(drop=True)
 )[["name", "aliases", "resolution", "nodata", "units", "type", "description"]]
