@@ -9,7 +9,6 @@
 #   - name: example_band_name
 #     aliases: [example_alias_1, example_alias_2]
 #     resolution: 30 m
-#     crs: Multiple (local UTM) 
 #     nodata: -999
 #     units: null
 #     type: int16

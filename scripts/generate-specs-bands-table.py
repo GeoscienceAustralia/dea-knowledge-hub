@@ -17,7 +17,7 @@ import pandas as pd
 # Configure these values before running the script
 
 CONFIGURATION = {
-    "product_id": "ga_s2ls_intertidal_cyear_3",
+    "product_id": "ga_ls5t_gm_cyear_3",
     "resolution": "10 m"
 }
 
