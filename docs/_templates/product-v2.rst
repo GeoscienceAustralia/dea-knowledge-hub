@@ -474,7 +474,13 @@
    .. _nci: https://knowledge.dea.ga.gov.au/guides/setup/NCI/basics/
    .. _stac_api: https://knowledge.dea.ga.gov.au/guides/setup/gis/stac/
 
-   .. list-table::
+   {% if product_ids_list | length > 1 %}
+   .. list-table:: The bands of the products: {{ product_ids_list }}.
+   {%- elif product_ids_list %}
+   .. list-table:: The bands of the {{ product_ids_list }} product.
+   {%- else %}
+   .. list-table:: The bands of the product.
+   {%- endif %}
       :header-rows: 1
       :name: bands-table
 
