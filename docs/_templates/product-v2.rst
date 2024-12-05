@@ -78,6 +78,8 @@
 
 {% set product_ids_list = page.data.product_ids | select("!=", None) | list %}
 
+{% set product_ids_list_text = product_ids_list | join(", ") %}
+
 {% set citations_custom_list = page.data.citations_custom | select("!=", None) | list %}
 
 {% set tags_list = page.data.tags | select("!=", None) | list %}
@@ -183,9 +185,9 @@
       .. rubric:: {{ display_title }}
 
       {% if product_ids_list and page.data.enable_specifications %}
-      `{{ product_ids_list | join(", ") }} <./?tab=specifications>`_
+      `{{ product_ids_list_text }} <./?tab=specifications>`_
       {%- elif product_ids_list %}
-      {{ product_ids_list | join(", ") }}
+      {{ product_ids_list_text }}
       {%- elif spatial_data_type == spatial_data_type_terms.VECTOR and page.data.enable_specifications %}
       `Vector product <./?tab=specifications>`_
       {%- elif spatial_data_type == spatial_data_type_terms.VECTOR %}
@@ -475,9 +477,9 @@
    .. _stac_api: https://knowledge.dea.ga.gov.au/guides/setup/gis/stac/
 
    {% if product_ids_list | length > 1 %}
-   .. list-table:: The bands of the products: {{ product_ids_list }}.
+   .. list-table:: The bands of the products: {{ product_ids_list_text }}.
    {%- elif product_ids_list %}
-   .. list-table:: The bands of the {{ product_ids_list }} product.
+   .. list-table:: The bands of the {{ product_ids_list_text }} product.
    {%- else %}
    .. list-table:: The bands of the product.
    {%- endif %}
