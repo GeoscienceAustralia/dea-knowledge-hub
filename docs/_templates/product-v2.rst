@@ -477,9 +477,9 @@
    .. _stac_api: https://knowledge.dea.ga.gov.au/guides/setup/gis/stac/
 
    {% if product_ids_list | length > 1 %}
-   .. list-table:: The bands of the products: {{ product_ids_list_text }}.
+   .. list-table:: The bands of the products: {{ product_ids_list_text }}
    {%- elif product_ids_list %}
-   .. list-table:: The bands of the {{ product_ids_list_text }} product.
+   .. list-table:: The bands of the product: {{ product_ids_list_text }}
    {%- else %}
    .. list-table:: The bands of the product.
    {%- endif %}

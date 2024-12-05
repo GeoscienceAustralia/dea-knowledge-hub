@@ -3,13 +3,28 @@
 
 # Bands
 
-# bands_footnote: A footnote underneath the table.
+bands_footnote: null
 
-# bands_table:
-#   - name: example_band_name
-#     aliases: [example_alias_1, example_alias_2]
-#     resolution: 30 m
-#     nodata: -999
-#     units: null
-#     type: int16
-#     description: A description of the band.
+bands_table:
+  - name: count_wet
+    aliases: []
+    resolution: 30 m
+    nodata: -999
+    units: null
+    type: int16
+    description: null
+  - name: count_clear
+    aliases: []
+    resolution: 30 m
+    nodata: -999
+    units: null
+    type: int16
+    description: null
+  - name: frequency
+    aliases: []
+    resolution: 30 m
+    nodata: NaN
+    units: null
+    type: float32
+    description: null
+
