@@ -221,11 +221,11 @@
       :Coverage end: {{ page.data.temporal_coverage_end }}
       {%- endif %}
       {%- if is_frequency_ongoing and is_frequency_multiple_words %}
-      :Data updates: '{{ data_update_frequency }}' frequency, {{ data_update_activity }}
+      :Data updates: {{ data_update_frequency }}, {{ data_update_activity }}
       {%- elif is_frequency_ongoing %}
       :Data updates: {{ data_update_frequency }} frequency, {{ data_update_activity }}
       {%- elif is_frequency_multiple_words %}
-      :Data updates: {{ data_update_activity }} (Previously: '{{ data_update_frequency }}' frequency)
+      :Data updates: {{ data_update_activity }} (Previously: {{ data_update_frequency }})
       {%- else %}
       :Data updates: {{ data_update_activity }} (Previously: {{ data_update_frequency }} frequency)
       {%- endif %}
