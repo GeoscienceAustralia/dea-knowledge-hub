@@ -1,0 +1,15 @@
+year: 2020
+is_current_year: true
+description: null
+
+meta_description: null
+
+quick_links_custom: null
+  # - link: https://example.com/
+  #   name: View the example
+  #   icon: link
+
+system_status_notifications: null
+  # - description: Lorem ipsum
+  #   severity: 2
+  #   status_custom: null

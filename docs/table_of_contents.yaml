@@ -223,19 +223,19 @@ entries:
         entries:
           - file: notebooks/Tools/index # Contains its own table of contents.
 
-  # DEA Tech Alerts and Changelog
+  # DEA Tech Alerts
 
-  - file: tech-alerts-changelog/index
-    title: Alerts & Changelog
+  - file: tech-alerts/index
+    title: Tech Alerts
     subtrees:
-      - caption: Older entries
+      - caption: Previous years
         entries:
-          - file: tech-alerts-changelog/previous-years/index
+          - file: tech-alerts/previous-years/index
             title: View previous years
             options:
               reversed: True
             entries:
-              - glob: tech-alerts-changelog/previous-years/*
+              - glob: tech-alerts/*/index
 
   # Validation
 

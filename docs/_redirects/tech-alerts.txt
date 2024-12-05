@@ -1,0 +1,15 @@
+# Tech Alerts and Changelog redirects
+
+# The Tech Alerts and Changelog was moved out of the User Guides section into its own section of the site.
+
+guides/tech_alerts_changelog  tech-alerts
+
+# The path was changed from 'tech-alerts-changelog' to 'tech-alerts' and the 'previous-years' path structure was changed
+
+tech-alerts-changelog                      tech-alerts
+tech-alerts-changelog/previous-years       tech-alerts/previous-years
+tech-alerts-changelog/previous-years/2023  tech-alerts/2023
+tech-alerts-changelog/previous-years/2021  tech-alerts/2021
+tech-alerts-changelog/previous-years/2020  tech-alerts/2020
+tech-alerts-changelog/previous-years/2019  tech-alerts/2019
+tech-alerts-changelog/previous-years/2018  tech-alerts/2018
