@@ -1,5 +1,12 @@
-# This script can be used to generate the 'Bands table' metadata that is displayed in the Specifications tab of product pages. Data is fetched from the Datacube and then is outputted in the correct YAML format which can be copy-pasted into the product's '_specifications.yaml' file. The resulting YAML output will require additional manual editing, e.g. replacing "placeholder" text with correct band descriptions.
-# Note: This script is designed to be run in the DEA Sandbox environment.
+# This script can save you time by generating the 'Bands table' metadata that is displayed in the Specifications tab of product pages on the DEA Knowledge Hub. E.g. https://knowledge.dea.ga.gov.au/data/product/dea-intertidal/?tab=specifications
+
+# How to use this script:
+
+# 1. In the 'CONFIGURATION' dictionary, change the 'product_id' to the Product ID of the relevant product. Ensure that this is correct, as it will be used to fetch metadata from the Datacube.
+# 2. In the 'CONFIGURATION' dictionary, edit the 'resolution' according to the resolution of the product. This will be copied to all bands in the YAML output, but it can be edited manually in the YAML.
+# 3. Run this script in the DEA Sandbox and it will print YAML output.
+# 4. Copy the output and paste it into the '_tables.yaml' file of the relevant product. E.g. https://github.com/GeoscienceAustralia/dea-knowledge-hub/blob/main/docs/data/product/dea-intertidal/_tables.yaml
+# 5. Edit the YAML as needed. It is recommended to write a brief description for each band.
 
 import sys
 import yaml
@@ -10,7 +17,7 @@ import pandas as pd
 # Important: Configure these values depending on the product
 
 CONFIGURATION = {
-    "product_name": "ga_s2ls_intertidal_cyear_3",
+    "product_id": "ga_s2ls_intertidal_cyear_3",
     "resolution": "10 m"
 }
 
@@ -22,7 +29,7 @@ products_df = dc.list_measurements()
 # Select specific product and prepare data
 
 product_df = (
-    products_df.loc[CONFIGURATION["product_name"]]
+    products_df.loc[CONFIGURATION["product_id"]]
     .drop(["flags_definition"], axis=1)
     .assign(resolution=CONFIGURATION["resolution"], description=None)
     .rename({"dtype": "type"}, axis=1)
