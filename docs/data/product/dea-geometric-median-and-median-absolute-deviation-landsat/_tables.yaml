@@ -3,13 +3,76 @@
 
 # Bands
 
-# bands_footnote: A footnote underneath the table.
+bands_footnote: null
 
-# bands_table:
-#   - name: example_band_name
-#     aliases: [example_alias_1, example_alias_2]
-#     resolution: 30 m
-#     nodata: -999
-#     units: null
-#     type: int16
-#     description: A description of the band.
+bands_table:
+  - name: nbart_blue
+    aliases: []
+    resolution: 10 m
+    nodata: -999
+    units: '1'
+    type: int16
+    description: null
+  - name: nbart_green
+    aliases: []
+    resolution: 10 m
+    nodata: -999
+    units: '1'
+    type: int16
+    description: null
+  - name: nbart_red
+    aliases: []
+    resolution: 10 m
+    nodata: -999
+    units: '1'
+    type: int16
+    description: null
+  - name: nbart_nir
+    aliases: []
+    resolution: 10 m
+    nodata: -999
+    units: '1'
+    type: int16
+    description: null
+  - name: nbart_swir_1
+    aliases: []
+    resolution: 10 m
+    nodata: -999
+    units: '1'
+    type: int16
+    description: null
+  - name: nbart_swir_2
+    aliases: []
+    resolution: 10 m
+    nodata: -999
+    units: '1'
+    type: int16
+    description: null
+  - name: sdev
+    aliases: []
+    resolution: 10 m
+    nodata: NaN
+    units: '1'
+    type: float32
+    description: null
+  - name: edev
+    aliases: []
+    resolution: 10 m
+    nodata: NaN
+    units: '1'
+    type: float32
+    description: null
+  - name: bcdev
+    aliases: []
+    resolution: 10 m
+    nodata: NaN
+    units: '1'
+    type: float32
+    description: null
+  - name: count
+    aliases: []
+    resolution: 10 m
+    nodata: -999
+    units: '1'
+    type: int16
+    description: null
