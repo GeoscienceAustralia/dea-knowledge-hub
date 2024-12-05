@@ -32,7 +32,7 @@ products_df = dc.list_measurements()
 try:
     products_df.loc[CONFIGURATION["product_id"]]
 except Exception as e:
-    print(f"The product {CONFIGURATION["product_id"]} was not found in the Datacube.")
+    print(f"The product {CONFIGURATION['product_id']} was not found in the Datacube.")
     exit(1)
 
 product_df = (
