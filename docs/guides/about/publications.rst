@@ -2,7 +2,7 @@
 DEA program publications
 ========================
 
-Scientific articles, conference talks and other publications with Digital Earth Australia authors:
+Scientific articles, conference talks, and other publications with Digital Earth Australia authors.
 
 .. contents:: On this page
    :local:
@@ -184,9 +184,9 @@ Li, F., Jupp, D.L.B., Thankappan, M., Wang, L.W., Sixsmith, J., Lewis, A., and H
 
 Tan, P., Sagar, S., Mueller, N., Lymburner, L., Thankappan, M., Lewis, A., 2015. A surface cover change detection method based on the Australian Geoscience Data Cube, in: 21st International Congress on Modelling and Simulation, Gold Coast, Australia. 
 
-*********
-Pre-2015
-*********
+***********
+Before 2015
+***********
 
 Li, F., Jupp, DLB and Thankappan, M. 2013. Issues in the application of Digital Surface Model data to correct the terrain illumination effects in Landsat images, International Journal of Digital Earth, DOI: 10.1080/17538947.2013.866701  
 
