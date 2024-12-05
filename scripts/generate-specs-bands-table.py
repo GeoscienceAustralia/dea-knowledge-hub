@@ -45,9 +45,9 @@ product_df = (
 
 # Change the format of certain columns and the 'no data' values
 
-product_df["nodata"] = product_df["nodata"].fillna("NaN")
+product_df["nodata"] = product_df["nodata"].fillna("NaN").infer_objects(copy=False)
 
-product_df["aliases"] = product_df["aliases"].fillna("").apply(list)
+product_df["aliases"] = product_df["aliases"].fillna("").infer_objects(copy=False).apply(list)
 
 product_df["units"] = (
     product_df["units"].str.upper().str[0] + product_df["units"].str[1:]
