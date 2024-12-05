@@ -470,19 +470,13 @@
       :name: bands
       :class: h2
 
-   Bands are distinct layers of data within a product that can be loaded using the Open Data Cube (on the `DEA Sandbox <dea_sandbox_>`_ or `NCI <nci_>`_) or DEA's `STAC API <stac_api_>`_.{{ " Note that the Coordinate Reference System (CRS) of these bands is {}.".format(coordinate_reference_system_term) if coordinate_reference_system_term }}
+   {% if product_ids_list | length > 1 %}Here are the bands of the products: {{ product_ids_list_text }}.{%- elif product_ids_list %}Here are the bands of the product: {{ product_ids_list_text }}.{%- endif %} Bands are distinct layers of data within a product that can be loaded using the Open Data Cube (on the `DEA Sandbox <dea_sandbox_>`_ or `NCI <nci_>`_) or DEA's `STAC API <stac_api_>`_.{{ " Note that the Coordinate Reference System (CRS) of these bands is {}.".format(coordinate_reference_system_term) if coordinate_reference_system_term }}
 
    .. _dea_sandbox: https://knowledge.dea.ga.gov.au/guides/setup/Sandbox/sandbox/
    .. _nci: https://knowledge.dea.ga.gov.au/guides/setup/NCI/basics/
    .. _stac_api: https://knowledge.dea.ga.gov.au/guides/setup/gis/stac/
 
-   {% if product_ids_list | length > 1 %}
-   .. list-table:: The bands of the products: {{ product_ids_list_text }}
-   {%- elif product_ids_list %}
-   .. list-table:: The bands of the product: {{ product_ids_list_text }}
-   {%- else %}
-   .. list-table:: The bands of the product.
-   {%- endif %}
+   .. list-table::
       :header-rows: 1
       :name: bands-table
 
