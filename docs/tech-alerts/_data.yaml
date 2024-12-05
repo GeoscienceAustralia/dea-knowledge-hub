@@ -6,6 +6,10 @@ meta_description: null
 quick_links_custom: null
 
 system_status_notifications:
+  - description: NCI database will be upgraded soon. Service disruption is possible but not expected.
+    severity: 2
+    status_custom: null
+
   - description: Expanded extents data processing is currently paused, with data available to May 2024. See below. # NOTE Remember to remove the banner on the page: https://pr-302-preview.khpreview.dea.ga.gov.au/guides/reference/ard-expanded-processing-extent/
     severity: 2
     status_custom: null

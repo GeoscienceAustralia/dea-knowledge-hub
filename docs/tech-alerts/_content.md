@@ -8,6 +8,10 @@
 Learn more about the [DEA Summary Product Grid](/guides/reference/collection_3_summary_grid/).
 ::::
 
+## 5 Dec 2024: NCI database will be upgraded soon. Service disruption is possible but not expected.
+
+The NCI database will soon be upgraded. According to our testing, downtime or major disruption to service is not expected. However, be aware that a service disruption is still possible during this time.
+
 ## 18 Nov 2024: DEA Hotspots &mdash; Enhancing Bushfire Monitoring with New Satellite Data
 
 We are writing to keep you informed of changes that are occurring to the DEA Hotspots service. While faced with the loss of the MODIS Terra for our morning observations, we can continue to use available satellites to bolster the density and reliability of our afternoon observations. Data from the Visible Infrared Imaging Radiometer Suite (VIIRS) sensor onboard NOAA-21 will be available in DEA Hotspots by early December 2024. Once NOAA-21 data is available, a tech alert will be issued to users.
