@@ -13,7 +13,7 @@ bands_table:
     nodata: 255
     units: Percent
     type: uint8
-    description: null
+    description: "BS: The fractional cover of bare soil."
   - name: pv
     aliases:
       - green_veg
@@ -21,7 +21,7 @@ bands_table:
     nodata: 255
     units: Percent
     type: uint8
-    description: "PV: The fraction of green cover over all strata within the Landsat pixel, as percentages."
+    description: "PV: The fractional cover of green vegetation."
   - name: npv
     aliases:
       - dead_veg
@@ -29,7 +29,7 @@ bands_table:
     nodata: 255
     units: Percent
     type: uint8
-    description: null
+    description: "NPV: The fractional cover of non-green vegetation."
   - name: ue
     aliases:
       - err
@@ -37,4 +37,5 @@ bands_table:
     nodata: 255
     units: '1'
     type: uint8
-    description: null
+    description: "UE: The fractional cover unmixing error."
+
