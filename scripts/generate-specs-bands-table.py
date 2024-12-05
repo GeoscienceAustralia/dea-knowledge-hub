@@ -2,7 +2,7 @@
 
 # How to use this script:
 
-# 1. In the 'CONFIGURATION' dictionary, change the 'product_id' to the Product ID of the relevant product. Ensure that this is correct, as it will be used to fetch metadata from the Datacube.
+# 1. In the 'CONFIGURATION' dictionary, change the 'product_id' to the Product ID of the relevant product. Ensure that this is correct, as it will be used to select metadata from the Datacube.
 # 2. In the 'CONFIGURATION' dictionary, edit the 'resolution' according to the resolution of the product. This will be copied to all bands in the YAML output, but it can be edited manually in the YAML.
 # 3. Run this script in the DEA Sandbox and it will print YAML output.
 # 4. Copy the output and paste it into the '_tables.yaml' file of the relevant product. E.g. https://github.com/GeoscienceAustralia/dea-knowledge-hub/blob/main/docs/data/product/dea-intertidal/_tables.yaml
@@ -14,19 +14,20 @@ import datacube
 import numpy as np
 import pandas as pd
 
-# Important: Configure these values depending on the product
+# Configure these values before running the script
 
 CONFIGURATION = {
     "product_id": "ga_s2ls_intertidal_cyear_3",
     "resolution": "10 m"
 }
 
-# Connect to datacube and return measurements
+# Fetch measurements of all products from the Datacube
 
 dc = datacube.Datacube()
+
 products_df = dc.list_measurements()
 
-# Select specific product and prepare data
+# Select specific product and format data
 
 product_df = (
     products_df.loc[CONFIGURATION["product_id"]]
@@ -36,10 +37,12 @@ product_df = (
     .reset_index(drop=True)
 )[["name", "aliases", "resolution", "nodata", "units", "type", "description"]]
 
-# Customise column formats/nodata
+# Change the format of certain columns and the 'no data' values
 
 product_df["nodata"] = product_df["nodata"].fillna("NaN")
+
 product_df["aliases"] = product_df["aliases"].fillna("").apply(list)
+
 product_df["units"] = (
     product_df["units"].str.upper().str[0] + product_df["units"].str[1:]
 )
@@ -47,13 +50,15 @@ product_df["units"] = (
 # Convert to a dictionary
 
 bands_table = product_df.to_dict("records")
+
 data = {"bands_table": bands_table}
 
-# Convert dictionary to YAML
+# Convert to YAML
 
 class IndentDumper(yaml.Dumper):
     def increase_indent(self, flow=False, indentless=False):
         return super(IndentDumper, self).increase_indent(flow, False)
 
 yaml_data = yaml.dump(data, Dumper=IndentDumper, default_flow_style=False, sort_keys=False)
+
 print(yaml_data)
