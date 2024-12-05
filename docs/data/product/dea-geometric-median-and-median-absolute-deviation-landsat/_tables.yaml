@@ -10,69 +10,69 @@ bands_table:
     aliases: []
     resolution: 10 m
     nodata: -999
-    units: '1'
+    units: null
     type: int16
     description: null
   - name: nbart_green
     aliases: []
     resolution: 10 m
     nodata: -999
-    units: '1'
+    units: null
     type: int16
     description: null
   - name: nbart_red
     aliases: []
     resolution: 10 m
     nodata: -999
-    units: '1'
+    units: null
     type: int16
     description: null
   - name: nbart_nir
     aliases: []
     resolution: 10 m
     nodata: -999
-    units: '1'
+    units: null
     type: int16
     description: null
   - name: nbart_swir_1
     aliases: []
     resolution: 10 m
     nodata: -999
-    units: '1'
+    units: null
     type: int16
     description: null
   - name: nbart_swir_2
     aliases: []
     resolution: 10 m
     nodata: -999
-    units: '1'
+    units: null
     type: int16
     description: null
   - name: sdev
     aliases: []
     resolution: 10 m
     nodata: NaN
-    units: '1'
+    units: null
     type: float32
     description: null
   - name: edev
     aliases: []
     resolution: 10 m
     nodata: NaN
-    units: '1'
+    units: null
     type: float32
     description: null
   - name: bcdev
     aliases: []
     resolution: 10 m
     nodata: NaN
-    units: '1'
+    units: null
     type: float32
     description: null
   - name: count
     aliases: []
     resolution: 10 m
     nodata: -999
-    units: '1'
+    units: null
     type: int16
     description: null
