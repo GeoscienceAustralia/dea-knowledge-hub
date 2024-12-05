@@ -35,7 +35,7 @@ bands_table:
       - err
     resolution: 10 m
     nodata: 255
-    units: '1'
+    units: null
     type: uint8
     description: "UE: The fractional cover unmixing error."
 
