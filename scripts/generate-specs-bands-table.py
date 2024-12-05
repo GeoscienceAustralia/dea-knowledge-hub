@@ -53,7 +53,7 @@ bands_table = product_df.to_dict("records")
 
 data = {"bands_table": bands_table}
 
-# Convert to YAML
+# Print as YAML
 
 class IndentDumper(yaml.Dumper):
     def increase_indent(self, flow=False, indentless=False):
