@@ -29,6 +29,12 @@ products_df = dc.list_measurements()
 
 # Select specific product and format data
 
+try:
+    products_df.loc[CONFIGURATION["product_id"]]
+except Exception as e:
+    print(f"The product {CONFIGURATION["product_id"]} was not found in the Datacube.")
+    exit(1)
+
 product_df = (
     products_df.loc[CONFIGURATION["product_id"]]
     .drop(["flags_definition"], axis=1)
