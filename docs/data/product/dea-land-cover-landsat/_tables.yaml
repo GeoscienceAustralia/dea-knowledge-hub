@@ -3,7 +3,7 @@
 
 # Bands
 
-bands_footnote: For more information on these bands, see the `Description tab <./?tab=description>`_.
+bands_footnote: "For more information on these bands, see the `Description tab <./?tab=description>`_."
 
 bands_table:
   - name: level3
