@@ -3,13 +3,48 @@
 
 # Bands
 
-# bands_footnote: A footnote underneath the table.
+bands_footnote: null
 
-# bands_table:
-#   - name: example_band_name
-#     aliases: [example_alias_1, example_alias_2]
-#     resolution: 30 m
-#     nodata: -999
-#     units: null
-#     type: int16
-#     description: A description of the band.
+bands_table:
+  - name: blue
+    aliases: []
+    resolution: 10 m
+    nodata: -999
+    units: Metres
+    type: float32
+    description: null
+  - name: green
+    aliases: []
+    resolution: 10 m
+    nodata: -999
+    units: Metres
+    type: float32
+    description: null
+  - name: red
+    aliases: []
+    resolution: 10 m
+    nodata: -999
+    units: Metres
+    type: float32
+    description: null
+  - name: nir
+    aliases: []
+    resolution: 10 m
+    nodata: -999
+    units: Metres
+    type: float32
+    description: null
+  - name: swir1
+    aliases: []
+    resolution: 10 m
+    nodata: -999
+    units: Metres
+    type: float32
+    description: null
+  - name: swir2
+    aliases: []
+    resolution: 10 m
+    nodata: -999
+    units: Metres
+    type: float32
+    description: null
