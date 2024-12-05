@@ -8,7 +8,7 @@ bands_footnote: "For more information on these bands, see the `Description tab <
 bands_table:
   - name: level3
     aliases: []
-    resolution: 10 m
+    resolution: 25 m
     nodata: 0
     units: null
     type: uint8
@@ -16,7 +16,7 @@ bands_table:
   - name: level4
     aliases:
       - full_classification
-    resolution: 10 m
+    resolution: 25 m
     nodata: 0
     units: null
     type: uint8
@@ -24,7 +24,7 @@ bands_table:
   - name: lifeform_veg_cat_l4a
     aliases:
       - lifeform
-    resolution: 10 m
+    resolution: 25 m
     nodata: 0
     units: null
     type: uint8
@@ -32,7 +32,7 @@ bands_table:
   - name: canopyco_veg_cat_l4d
     aliases:
       - vegetation_cover
-    resolution: 10 m
+    resolution: 25 m
     nodata: 0
     units: null
     type: uint8
@@ -40,7 +40,7 @@ bands_table:
   - name: watersea_veg_cat_l4a_au
     aliases:
       - water_seasonality
-    resolution: 10 m
+    resolution: 25 m
     nodata: 0
     units: null
     type: uint8
@@ -48,7 +48,7 @@ bands_table:
   - name: waterstt_wat_cat_l4a
     aliases:
       - water_state
-    resolution: 10 m
+    resolution: 25 m
     nodata: 0
     units: null
     type: uint8
@@ -56,7 +56,7 @@ bands_table:
   - name: inttidal_wat_cat_l4a
     aliases:
       - intertidal
-    resolution: 10 m
+    resolution: 25 m
     nodata: 0
     units: null
     type: uint8
@@ -64,7 +64,7 @@ bands_table:
   - name: waterper_wat_cat_l4d_au
     aliases:
       - water_persistence
-    resolution: 10 m
+    resolution: 25 m
     nodata: 0
     units: null
     type: uint8
@@ -72,7 +72,7 @@ bands_table:
   - name: baregrad_phy_cat_l4d_au
     aliases:
       - bare_gradation
-    resolution: 10 m
+    resolution: 25 m
     nodata: 0
     units: null
     type: uint8

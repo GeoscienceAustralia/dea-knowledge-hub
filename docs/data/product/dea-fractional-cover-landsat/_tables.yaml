@@ -9,7 +9,7 @@ bands_table:
   - name: bs
     aliases:
       - bare
-    resolution: 10 m
+    resolution: 30 m
     nodata: 255
     units: Percent
     type: uint8
@@ -17,7 +17,7 @@ bands_table:
   - name: pv
     aliases:
       - green_veg
-    resolution: 10 m
+    resolution: 30 m
     nodata: 255
     units: Percent
     type: uint8
@@ -25,7 +25,7 @@ bands_table:
   - name: npv
     aliases:
       - dead_veg
-    resolution: 10 m
+    resolution: 30 m
     nodata: 255
     units: Percent
     type: uint8
@@ -33,7 +33,7 @@ bands_table:
   - name: ue
     aliases:
       - err
-    resolution: 10 m
+    resolution: 30 m
     nodata: 255
     units: null
     type: uint8
