@@ -3,13 +3,34 @@
 
 # Bands
 
-# bands_footnote: A footnote underneath the table.
+bands_footnote: "For more information on these bands, see the `Description tab <./?tab=description>`_."
 
-# bands_table:
-#   - name: example_band_name
-#     aliases: [example_alias_1, example_alias_2]
-#     resolution: 30 m
-#     nodata: -999
-#     units: null
-#     type: int16
-#     description: A description of the band.
+bands_table:
+  - name: delta_nbr
+    aliases: []
+    resolution: 10 m
+    nodata: NaN
+    units: '1'
+    type: float32
+    description: Change in Delta Normalised Burn Ratio ($\Delta$ NBR).
+  - name: delta_ndvi
+    aliases: []
+    resolution: 10 m
+    nodata: NaN
+    units: '1'
+    type: float32
+    description: Change in Delta Normalised Difference Vegetation Index ($\Delta$ NDVI).
+  - name: delta_bsi
+    aliases: []
+    resolution: 10 m
+    nodata: NaN
+    units: '1'
+    type: float32
+    description: Change in Delta Bare Soil Index ($\Delta$ BSI).
+  - name: fmask
+    aliases: []
+    resolution: 10 m
+    nodata: NaN
+    units: '1'
+    type: float32
+    description: Sentinel-2 fmask pixel quality layer.
