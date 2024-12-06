@@ -12,11 +12,11 @@ bands_table:
     nodata: -6666
     units: '0.1'
     type: int16
-    description: "Relative Extents Model: This layer is only used by item_v2."
+    description: "Relative Extents Model: This layer is only used by the item_v2 product."
   - name: stddev
     aliases: []
     resolution: 25 m
     nodata: -6666
     units: '1'
     type: float32
-    description: "Confidence Layer: This layer is only used by item_v2_conf."
+    description: "Confidence Layer: This layer is only used by the item_v2_conf product."
