@@ -3,48 +3,48 @@
 
 # Bands
 
-bands_footnote: null
-
-bands_table:
-  - name: blue
-    aliases: []
-    resolution: 25 m
-    nodata: -999
-    units: Metres
-    type: float32
-    description: null
-  - name: green
-    aliases: []
-    resolution: 25 m
-    nodata: -999
-    units: Metres
-    type: float32
-    description: null
-  - name: red
-    aliases: []
-    resolution: 25 m
-    nodata: -999
-    units: Metres
-    type: float32
-    description: null
-  - name: nir
-    aliases: []
-    resolution: 25 m
-    nodata: -999
-    units: Metres
-    type: float32
-    description: null
-  - name: swir1
-    aliases: []
-    resolution: 25 m
-    nodata: -999
-    units: Metres
-    type: float32
-    description: null
-  - name: swir2
-    aliases: []
-    resolution: 25 m
-    nodata: -999
-    units: Metres
-    type: float32
-    description: null
+# bands_footnote: null
+#
+# bands_table:
+#   - name: blue
+#     aliases: []
+#     resolution: 25 m
+#     nodata: -999
+#     units: Metres
+#     type: float32
+#     description: null
+#   - name: green
+#     aliases: []
+#     resolution: 25 m
+#     nodata: -999
+#     units: Metres
+#     type: float32
+#     description: null
+#   - name: red
+#     aliases: []
+#     resolution: 25 m
+#     nodata: -999
+#     units: Metres
+#     type: float32
+#     description: null
+#   - name: nir
+#     aliases: []
+#     resolution: 25 m
+#     nodata: -999
+#     units: Metres
+#     type: float32
+#     description: null
+#   - name: swir1
+#     aliases: []
+#     resolution: 25 m
+#     nodata: -999
+#     units: Metres
+#     type: float32
+#     description: null
+#   - name: swir2
+#     aliases: []
+#     resolution: 25 m
+#     nodata: -999
+#     units: Metres
+#     type: float32
+#     description: null
