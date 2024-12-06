@@ -3,13 +3,13 @@
 
 # Bands
 
-# bands_footnote: "For more information on these bands, see the `Description tab <./?tab=description>`_."
-#
-# bands_table:
-#   - name: canopy_cover_class
-#     aliases: []
-#     resolution: 30 m
-#     nodata: 255
-#     units: null
-#     type: uint8
-#     description: "The canopy cover classes are: 20-50% (pale green), 50-80% (mid green), 80-100% (dark green)."
+bands_footnote: "For more information on these bands, see the `Description tab <./?tab=description>`_."
+
+bands_table:
+  - name: canopy_cover_class
+    aliases: []
+    resolution: 30 m
+    nodata: 255
+    units: null
+    type: uint8
+    description: "The canopy cover classes are: 20-50% (pale green), 50-80% (mid green), 80-100% (dark green)."
