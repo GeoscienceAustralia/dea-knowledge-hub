@@ -1,7 +1,7 @@
 :::{admonition} Formal documentation
 :class: note
 
-For more information, [read the formal documentation](https://hotspots.dea.ga.gov.au/files/documents)
+For more information, [read the formal documentation](https://hotspots.dea.ga.gov.au/files/documents).
 :::
 
 ## Background
