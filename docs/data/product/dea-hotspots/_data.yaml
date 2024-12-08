@@ -69,11 +69,11 @@ web_services:
     name: GeoJSON (last 3 days)
 
 custom:
-  - icon: book
+  - icon: file
     link: https://hotspots.dea.ga.gov.au/files/documents
-    label: Read the formal documentation
-    name: Formal documentation
-    description: View the Product Description (PDF) for the technical specifications and layers.
+    label: Read the documents
+    name: Product Description and documents
+    description: Read the Product Description (PDF) for the technical specifications and layers. Other documents provide additional information.
     class: null
 
 # History
