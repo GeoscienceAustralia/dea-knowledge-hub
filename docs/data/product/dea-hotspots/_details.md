@@ -1,7 +1,9 @@
-:::{admonition} Formal documentation
+:::{admonition} Product Description and documents
 :class: note
 
-For more information, [read the formal documentation](https://hotspots.dea.ga.gov.au/files/documents).
+Read the Product Description (PDF) for the technical specifications and layers. Other documents provide additional information.
+
+[Read the documents](https://hotspots.dea.ga.gov.au/files/documents)
 :::
 
 ## Background
