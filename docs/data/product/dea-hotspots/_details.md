@@ -1,3 +1,9 @@
+:::{admonition} Formal documentation
+:class: note
+
+For more information, [read the formal documentation](https://hotspots.dea.ga.gov.au/files/documents)
+:::
+
 ## Background
 
 Bushfires are a natural part of the Australian landscape. Many of our native flora and fauna have adapted to the specific fire regimes of the regions in which they live.
