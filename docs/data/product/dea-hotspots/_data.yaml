@@ -68,7 +68,13 @@ web_services:
   - link: https://hotspots.dea.ga.gov.au/data/recent-hotspots.json
     name: GeoJSON (last 3 days)
 
-custom: null
+custom:
+  - icon: book
+    link: https://hotspots.dea.ga.gov.au/files/documents
+    label: Read the formal documentation
+    name: Formal documentation
+    description: Learn more about the product.
+    class: null
 
 # History
 
