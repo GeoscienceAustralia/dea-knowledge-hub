@@ -1,7 +1,7 @@
 :::{admonition} Product Description and documents
 :class: note
 
-Read the Product Description (PDF) for the technical specifications and layers. Other documents provide additional information.
+Read the Product Description (PDF) for the technical specifications and layers.
 
 [Read the documents](https://hotspots.dea.ga.gov.au/files/documents)
 :::

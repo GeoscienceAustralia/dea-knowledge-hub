@@ -73,7 +73,7 @@ custom:
     link: https://hotspots.dea.ga.gov.au/files/documents
     label: Read the documents
     name: Product Description and documents
-    description: Read the Product Description (PDF) for the technical specifications and layers. Other documents provide additional information.
+    description: Read the Product Description (PDF) for the technical specifications and layers.
     class: null
 
 # History
