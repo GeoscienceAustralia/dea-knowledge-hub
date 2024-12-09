@@ -79,7 +79,13 @@ access_links_web_services:
   - link: https://hotspots.dea.ga.gov.au/data/recent-hotspots.json
     name: GeoJSON (last 3 days)
 
-access_links_custom: null
+access_links_custom:
+  - icon: file
+    link: https://hotspots.dea.ga.gov.au/files/documents
+    label: Read the documents
+    name: Product Description and documents
+    description: Read the Product Description (PDF) for the technical specifications and layers.
+    class: null
 
 # History
 
