@@ -29,7 +29,7 @@ DEA Land Cover data can be downloaded from DEA’s public data holdings through 
 
 ***via web browser:***
 
-From [here](https://data.dea.ga.gov.au/?prefix=derivative/ga_ls_landcover_class_cyear_3/2-0-0/), simply navigate to the year and tile* of interest and directly download the GeoTIFF file for the layer you’re after.
+From [here](https://data.dea.ga.gov.au/?prefix=derivative/ga_ls_landcover_class_cyear_2/1-0-0/), simply navigate to the year and tile* of interest and directly download the GeoTIFF file for the layer you’re after.
 
 **To find x and y tile values for an area, see the Explorer [here](https://explorer.dea.ga.gov.au/products/ga_ls_landcover_class_cyear_2).**
 
@@ -39,7 +39,7 @@ First you need to install AWS CLI, instructions [here](https://docs.aws.amazon.c
 
 Then you can download data from the command line with a command such as:  
 ```
-aws s3 --no-sign-request sync s3://dea-public-data/derivative/ga_ls_landcover_class_cyear_3/2-0-0/2020  C:/landcover/ --exclude "*" --include "*_level4.tif"
+aws s3 --no-sign-request sync s3://dea-public-data/derivative/ga_ls_landcover_class_cyear_2/1-0-0/2020  C:/landcover/ --exclude "*" --include "*_level4.tif"
 ```
 
 (This downloads all level4 tiles for 2020 into a folder called ‘landcover’)
@@ -52,7 +52,7 @@ Where:
 
 [1] The s3 bucket and folder to download data from: e.g.,
 ```
-s3://dea-public-data/derivative/ga_ls_landcover_class_cyear_3/2-0-0/2020
+s3://dea-public-data/derivative/ga_ls_landcover_class_cyear_2/1-0-0/2020
 ```
 [2] The directory to download to: e.g.,
 ```
@@ -69,13 +69,6 @@ C:/landcover/
 :::
 
 :::{dropdown} Adding DEA Landcover to QGIS
-
-There are two options for adding DEA Landcover to QGIS.
-
-1. Adding the OWS web service
-2. Uploading the downloaded individual tif files 
-
-**Adding the web service:**
 
 *(for the time dimension to work you need version 3.22+)*
 
@@ -99,22 +92,6 @@ Select `Land and Vegetation` > `DEA Land Cover`, then either:
 Once you have selected a layer, click `Add` at the bottom of the window to add it to your project.
 
 Temporal information can be accessed by clicking the clock icon next to the name of the layer in the layers list.
-
-**Adding the individual tif files:**
-
-Individual tiles can be downloaded from s3 via the above instruction, and can be then uploaded to QGIS.
-
-Once the files are uploaded the styling for the tif files can be downloaded here: [Level 3 QGIS Style](https://dea-public-data-dev.s3.ap-southeast-2.amazonaws.com/derivative/ga_ls_landcover_class_cyear_3/ga_ls_landcover_class_cyear_3_style.qml) and [Level 4 QGIS Style](https://dea-public-data-dev.s3.ap-southeast-2.amazonaws.com/derivative/ga_ls_landcover_class_cyear_3/ga_ls_landcover_class_cyear_4_style.qml)
-
-To add the style,
-
-1. Select the tif files you would like the styling applied to
-
-2. Right click and select `Properties` then `Symbology`
-
-3. Select `Style` and the `Load Style` in the bottom left hand menu
-
-The styling will now be applied to the tif classification file, to enable a colour representation of the land cover classifications
 
 :::
 
@@ -141,3 +118,4 @@ Now add the layer to your map:
 5. Click `Add`
 
 :::
+

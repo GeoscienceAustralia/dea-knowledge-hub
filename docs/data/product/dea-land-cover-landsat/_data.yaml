@@ -4,9 +4,9 @@
 # Overview
 
 title: DEA Land Cover (Landsat)
-long_title: "Geoscience Australia Landsat Land Cover 25m "
+long_title: "Geoscience Australia Landsat Land Cover 30m"
 header_image: /_files/cmi/DEA_Land_Cover_1_0_0_Lvl4_2015.jpg
-version: 1.0.0
+version: 2.0.0
 is_latest_version: true
 latest_version_link: null
 is_provisional: false
@@ -14,17 +14,36 @@ product_type: Derivative
 spatial_data_type: Raster
 time_span:
   start: 1988
-  end: 2020
+  end: Present
 update_frequency: Yearly
-next_update: No updates planned
+next_update: 2025
 product_ids:
-  - ga_ls_landcover_class_cyear_2
+  - ga_ls_landcover_class_cyear_3
 
 parent_products:
-  name: null
+  name: Geoscience Australia Landsat Water Observations Collection 3, Geoscience Australia Landsat Water Observation Statistics Collection 3, Geoscience Australia Landsat Fractional Cover Collection 3, Geoscience Australia Landsat Fractional Cover Percentiles Collection 3, Geoscience Australia Tasseled Cap Percentiles Collection 3, Geoscience Australia Mangrove Canopy Cover Collection 3, National Intertidal Digital Elevation Model 25m 1.0.0, Geoscience Australia Shuttle Radar Topography Mission 1 second DEM version 1.0
   link: null
+  # name: Geoscience Australia Landsat Water Observations Collection 3
+  # link: /data/category/dea-water-observations-landsat/
+  # name: Geoscience Australia Landsat Water Observation Statistics Collection 3
+  # link: /data/category/dea-water-observations-statistics-landsat/
+  # name: Geoscience Australia Landsat Fractional Cover Collection 3
+  # link: /data/category/dea-fractional-cover-landsat/
+  # name: Geoscience Australia Landsat Fractional Cover Percentiles Collection 3
+  # link: /data/category/dea-fractional-cover-percentiles-landsat/
+  # name: Geoscience Australia Tasseled Cap Percentiles Collection 3
+  # link: /data/category/dea-tasseled-cap-percentiles-landsat/
+  # name: Geoscience Australia Mangrove Canopy Cover Collection 3
+  # link: /data/category/dea-mangroves/
+  # name: National Intertidal Digital Elevation Model 25m 1.0.0
+  # link: /data/category/dea-intertidal-elevation-landsat-1.0.0/
+  # name: Geoscience Australia Shuttle Radar Topography Mission 1 second DEM version 1.0
+  # link: /data/category/ga-srtm-1-second-dem/
+  # name: Landsat 5, 7, 8, and 9 NBART and Observational Attributes
+  # link: /data/category/dea-surface-reflectance/
+
 collection:
-  name: Geoscience Australia Landsat Collection 2
+  name: Geoscience Australia Landsat Collection 3
   link: null
 doi: 10.26186/146090
 ecat: "146090"
@@ -48,12 +67,14 @@ maps:
     name: See it on a map
 
 explorers:
-  - link: https://explorer.dea.ga.gov.au/products/ga_ls_landcover_class_cyear_2
+  - link: https://explorer.dea.ga.gov.au/products/ga_ls_landcover_class_cyear_3
     name: Data explorer
 
 data:
-  - link: http://dea-public-data.s3-website-ap-southeast-2.amazonaws.com/?prefix=derivative/ga_ls_landcover_class_cyear_2/
+  - link: http://dea-public-data.s3-website-ap-southeast-2.amazonaws.com/?prefix=derivative/ga_ls_landcover_class_cyear_3/
     name: Access the data on AWS
+  - link: https://thredds.nci.org.au/thredds/catalog/jw04/ga_ls_landcover_class_cyear_3/catalog.html
+    name: Access the data on NCI Thredds
 
 code_examples:
   - link: /notebooks/DEA_products/DEA_Land_Cover/
@@ -67,7 +88,10 @@ custom: null
 
 # History
 
-old_versions: null
+old_versions:
+  - version: 1.0.0
+    title: Geoscience Australia Landsat Land Cover 25m 
+    slug: dea-land-cover-landsat-1.0.0
 
 # SEO
 

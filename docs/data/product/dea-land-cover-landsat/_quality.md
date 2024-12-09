@@ -1,5 +1,9 @@
 ## Accuracy
 
+A validation assessment has been undertaken for both the collection 2 (C2) and 3 (C3) versions of Land Cover. The below section outlines the accuracy of both versions to assist users in understanding the differences between the two versions.
+
+### Collection 2 Validation
+
 The product was validated using 6000 points spatially distributed over Australia. These points were created using a stratified random sampling approach slightly adjusted for oversampling. This process was conducted for 2010 and 2015 creating 12000 samples in total. After removing points with No Data and spurious values the total number was 11750. The sample points were divided into clusters for visual assessment against the outputs from the classification and assessed individually from a pool of 10 people. To compare the individual biases of the individual assessors, an additional set of validation points were created that all assessors evaluated, the results are shown in Table 4. Where assessors could identify a predominant land cover (i.e. not ‘mixed’ pixels or ‘unsure’), all assessors agreed 75 % of the time. 
 
 Table 2 contains the overall accuracy for all classes. The term ‘support’ refers to the number of validation points used in the calculation of that accuracy value. 
@@ -11,6 +15,88 @@ Table 3 contains per-class accuracy information. “Precision” refers to the a
 ![Table showing accuracy per class, including precision, recall, F1 score and support values per class. ](/_files/cmi/per-class-accuracy.PNG)
 
 ![table showing the agreement between assessors.](/_files/cmi/inter-assessor-agreement.PNG)
+
+### Collection 3 Validation
+
+Validation against three data sources was undertaken: validation points reused from collection 2, with the addition of point attributes from Köppen Climate Zone and state/territory, added to facilitate segment analysis, the Blue Glance global dataset of indepenedent 'ground truth' data, and the Land Cover Collection 2 data to understand the extent of change between the versions.
+
+**Validation Points**
+With the addition of validation points, the Collection 2 validation was run again with the following C2 vs C3 comparison results:
+
+Overall C3 demonstrates greater consistency and more reasonable classification across all time periods and classes than C2. Both C3 and C2 show average degradation in 2010 compared to 2015, a trend that is propagated from Level 1 and ML results. C3 shows slight degradation compared to C2 on the Validation points, with Cultivated Veg and Natural Veg contributing the most to this difference. The Artificial Sfc class has too few points to be considered statistically significant.
+
+**Validation Points 2010**
+
+![C2 2010 Accuracy](/_files/land_cover/c3_l3-13.png)
+
+![C3 2010 Accuracy](/_files/land_cover/c3_l3-14.png)
+
+![C2 2010 Matrix](/_files/land_cover/c3_l3-15.png)
+
+![C3 2010 Matrix](/_files/land_cover/c3_l3-16.png)
+
+**Validation Points 2015**
+
+![C2 2015 Accuracy](/_files/land_cover/c3_l3-9.png)
+
+![C3 2015 Accuracy](/_files/land_cover/c3_l3-10.png)
+
+![C2 2015 Matrix](/_files/land_cover/c3_l3-11.png)
+
+![C3 2015 Matrix](/_files/land_cover/c3_l3-12.png)
+
+**GLANCE**
+
+As expected from the ``Level 1`` and ML validation results, overall C3 performs more consistently across both the Validation points and GLANCE datasets over all time periods compared to C2. The ``Macro-Average`` should be interpreted as "unbiased" due to the highly skewed nature of the Validation points. Since the validity of the Validation points is questionable, the classification metrics should be understood in relative terms showing the difference between C2 and C3, rather than the absolute performance of each. The error propagation from the Level 1, Urban, and Cultivated results is within expected limits.
+
+**GLANCE 2010**
+
+![C2 2010 GLANCE C2](/_files/land_cover/c3_l3-19.png)
+
+![C3 2010 GLANCE C3](/_files/land_cover/c3_l3-20.png)
+
+**GLANCE 2015**
+
+![C2 2015 GLANCE C2](/_files/land_cover/c3_l3-17.png)
+
+![C3 2015 GLANCE C3](/_files/land_cover/c3_l3-18.png)
+
+#### Collection 3 Validation of Intermediate Products
+
+The below section provides a further breakdown for each intermediate product.
+
+**Urban Model** 
+
+C3 shows significant improvement in both performance and consistency compared to C2.
+
+- Note that the performance metrics are calculated based on the GLANCE datasets rather than the Validation points, as the data size of ``Artificial Sfc`` in the Validation points is too small to be statistically significant. Additionally, the C2 ``Artificial Sfc`` class captures far fewer points than C3 in the Validation points due to the lack of contiguity in the pixel-based approach. Therefore, the credibility of validation results against Validation points is questionable.
+- C3 shows degradation in 2010 compared to 2015. This is expected, as 2010 has lower-quality inputs from LS7 and LS5`, while 2015 has higher-quality inputs from LS8 and LS7.
+- C3 underestimates the ``Artificial area`` in both 2010 and 2015, which is due to the training data having a significantly larger proportion of ``Non-artificial`` data. Even though great care was taken to augment the data, the results remain biased because the training datasets are limited, and we cannot afford to remove any data to achieve balance.
+- The poor performance of C2 against the GLANCE datasets is not only due to the urban model but also the ``Bare Sfc`` class, as the input for the C2 urban model is the ``Bare Sfc`` class from the Level 1 results 
+
+**Cultivated Model** 
+
+C3 demonstrates consistency across different time periods and datasets. The Cultivated model has an inherent seasonal bias due to the methodology, but C3 shows greater resistance to this bias compared to C2. C3 exhibits a bias towards the ``Cultivated Veg`` class based on results from the Validation points. However, C3 shows significantly better performance and more reasonable classification when evaluated against the GLANCE datasets. The credibility of the Validation points is questionable due to the imbalance between ``Cultivated Veg`` and ``Natural Veg``.
+
+- A significant reduction in Precision for the ``Cultivated Veg`` class in both C2 and C3 is observed in 2010 compared to 2015, primarily due to data quality issues.
+- While C3 shows worse performance than C2 on the Validation point`, it demonstrates much more reasonable classification on the GLANCE datasets, where the ``Agriculture`` class should be intuitively understood as ``Cultivated Veg`` rather than ``Natural Veg``. Similarly, for the ``Grassland`` class, based on the understanding of the Cultivated model, it is more likely to be classified as ``Cultivated Veg`` rather than ``Natural Veg``.
+- C2 exhibits a greater bias towards ``Natural Veg`` in the wetter/greener year of 2010 compared to the drier/barren year of 2015, on both the Validation points and GLANCE datasets. In contrast, C3 shows only a marginal bias towards less green vegetation (e.g., ``Agriculture``) but demonstrates strong resistance to bias in "more greenness" (e.g., ``Grassland``). This is partially due to the FC ``PV`` pivot in C3, but primarily attributed to the feature engineering involved in the redevelopment.
+- It is worth noting that the discrepancy between the Validation points and the GLANCE datasets, particularly in C2 validation results, may raise questions about the validity of the Validation points.
+
+**Woody Cover**
+
+TBC
+
+**Level 1**
+
+C3 demonstrates more consistent performance than C2 across both Validation points and GLANCE datasets.
+
+- The ``Bare Sfc`` class has the least performance and consistency in both C2 and C3 across all time periods and datasets.
+- C3 shows slight improvement in ``Terrestrial Veg`` and ``Bare Sfc`` for both 2015 and 2010 when compared against the Validation datasets.
+- C3 shows slight degeneration in ``Aquatic Veg`` and ``Water`` for both 2015 and 2010 when compared against the Validation points.
+- C3 shows marginal overall improvement across all classes.
+- The overall difference between C3 and C2 is 5%. The ``Bare Sfc`` class exhibits the largest difference (10%).
+- The discrepancy between C3 and C2 is within an acceptable range +/- 10%, considering the changes in the input ARD products.
 
 ### Limitations of the Implementation Method
 
@@ -27,11 +113,11 @@ The NTV category can transition into the NS category between years when a highly
 
 **Natural Aquatic Vegetation (NAV)** 
 
-Currently only mangroves are mapped in the NAV class. Other vegetated natural landscapes (e.g. saltmarsh, river red gum forests in the Murray Valley, surface algae and other inland wetlands) where water significantly influences edaphic conditions of substrate are not mapped. This is because, in the current implementation, the water mask is included to assist in the differentiation of vegetation and non-vegetation as the presence of water creates excess noise in the underlying Fractional Cover product. To reduce this noise, the WOfS product is used as a water mask in the Fractional Cover product, and hence it is unlikely to produce the combination of vegetation and water required for the NAV class.
+Currently only mangroves are mapped in the NAV class. Other vegetated natural landscapes (e.g. saltmarsh, river red gum forests in the Murray Valley, surface algae and other inland wetlands) where water significantly influences edaphic conditions of substrate are not mapped. This is because, in the current implementation, the water mask is included to assist in the differentiation of vegetation and non-vegetation as the presence of water creates excess noise in the underlying Fractional Cover product. To reduce this noise, the WO product is used as a water mask in the Fractional Cover product, and hence it is unlikely to produce the combination of vegetation and water required for the NAV class.
 
 **Artificial Surfaces (AS)** 
 
-Misclassification occurs with natural surfaces, particularly in the arid and semi-arid regions, open cut mine sites, salt lakes and pans, sand dunes and beaches. This is attributed to similarities in the variance of spectral signatures over a year. Misclassification occurs in some cultivated areas attributable to the predominance of sparse vegetation or when land is left fallow for most of the year. The current temporal variance mask is 250 m in spatial resolution, compared to the 25 m land cover product, resulting in artefacts appearing in the land cover from the masking process. In addition, urban areas with an area less than 250 m are often excluded. Cloud and data quality issues can lead to incorrect assignment of other land cover classes to AS such as in south-west Tasmania.
+Misclassification occurs with natural surfaces, particularly in the arid and semi-arid regions, open cut mine sites, salt lakes and pans, sand dunes and beaches. This is attributed to similarities in the variance of spectral signatures over a year. Misclassification occurs in some cultivated areas attributable to the predominance of sparse vegetation or when land is left fallow for most of the year. Cloud and data quality issues can lead to incorrect assignment of other land cover classes to AS such as in south-west Tasmania.
 
 **Natural Surfaces (NS)** 
 
@@ -39,7 +125,7 @@ Land used for agriculture may be associated with an NS class if ploughing or til
 
 **Water**
 
-Areas of artificial and natural water are not differentiated, although the extent of the former is mapped within the existing Bureau of Meteorology Geofabric product. Due to the 25 m pixel size, rivers and water courses that cover less than a pixel, or with highly vegetated riverbanks are not captured, resulting in a patch-like representation of narrower rivers. Areas of dark, wet soil are often misclassified as water, including in cultivated areas and mud flats.
+Areas of artificial and natural water are not differentiated, although the extent of the former is mapped within the existing Bureau of Meteorology Geofabric product. Due to the 30 m pixel size, rivers and water courses that cover less than a pixel, or with highly vegetated riverbanks are not captured, resulting in a patch-like representation of narrower rivers. Areas of dark, wet soil are often misclassified as water, including in cultivated areas and mud flats.
 :::
 
 :::{dropdown} Level 4 Class Limitations
@@ -53,7 +139,7 @@ The cover of vegetation is derived from the fractional cover product (Scarth et 
 
 **Water Seasonality**
 
-This product does not yet identify consecutive months but rather the frequency of wet observations in the year, based on the WOfS product. Therefore, monthly statements are unlikely to be consistent across the continent. Mangroves are currently the only consistently identified NAV and water cannot be easily observed beneath their canopies, which are often dense. Hence, the hydroperiod (and hence seasonality metrics) should be treated with some caution. 
+This product does not yet identify consecutive months but rather the frequency of wet observations in the year, based on the WO product. Therefore, monthly statements are unlikely to be consistent across the continent. Mangroves are currently the only consistently identified NAV and water cannot be easily observed beneath their canopies, which are often dense. Hence, the hydroperiod (and hence seasonality metrics) should be treated with some caution. 
 
 **Water State**
 
@@ -75,9 +161,9 @@ Bare gradation is produced from the fractional cover product. Unlike the Vegetat
 
 ### Earth Observation Limitations
 
-To generate the land cover classification for each calendar year, annual (January – December) statistics derived from Landsat-5, -7 and -8 observations are currently used, with each satellite sensor potentially observing the Australian landscape every 16 days. This brings an intrinsic limitation to land cover mapping as persistent cloud in some regions reduces the number of useable observations. This is particularly evident in Tasmania, and northern Australia during the monsoon period, where areas may not be observed for extended periods and parts or all of the intra-annual land cover cycle may be missed. These limitations can lead to misclassifications of land cover, particularly in dynamic environments. In a future release, a confidence layer will be included to help identify areas with poor observation frequency or other factors impacting the classification. 
+To generate the land cover classification for each calendar year, annual (January – December) statistics derived from Landsat-5, -7, -8 and -9 observations are currently used, with each satellite sensor potentially observing the Australian landscape every 16 days. This brings an intrinsic limitation to land cover mapping as persistent cloud in some regions reduces the number of useable observations. This is particularly evident in Tasmania, and northern Australia during the monsoon period, where areas may not be observed for extended periods and parts or all of the intra-annual land cover cycle may be missed. These limitations can lead to misclassifications of land cover, particularly in dynamic environments. In a future release, a confidence layer will be included to help identify areas with poor observation frequency or other factors impacting the classification. 
 
-An additional limitation of the Landsat series is the availability of data due to the ageing of each satellite. Landsat 5 was operational for over 25 years, but for much of the later years, data were only acquired when sunlight directly illuminated its solar panels. This limited its operation across Australia, with coverage being seasonally dependent, and contracting north to a minimum in winter. In its last years the winter coverage usually only covered the northern coasts of Australia. Landsat 5 ceased regular operations over Australia in 2011, leaving just Landsat 7 until Landsat 8 was launched in 2013. Landsat 7 began service in 1999 as a replacement for Landsat 5. Initially Landsat 5 was switched off, but when Landsat 7 suffered a serious problem in 2003 due to the failure of its scan-line corrector (termed SLC-Off) Landsat 5 resumed service. The SLC-Off failure of Landsat 7 results in severe striping across every image from mid 2003 onwards, apparent in subsequent derived products. Landsat 8 has operated well since launch in 2013, with improved sensitivity, noise characteristics and data correction in comparison to the earlier sensors.
+An additional limitation of the Landsat series is the availability of data due to the ageing of each satellite. Landsat 5 was operational for over 25 years, but for much of the later years, data were only acquired when sunlight directly illuminated its solar panels. This limited its operation across Australia, with coverage being seasonally dependent, and contracting north to a minimum in winter. In its last years the winter coverage usually only covered the northern coasts of Australia. Landsat 5 ceased regular operations over Australia in 2011, leaving just Landsat 7 until Landsat 8 was launched in 2013. Landsat 7 began service in 1999 as a replacement for Landsat 5. Initially Landsat 5 was switched off, but when Landsat 7 suffered a serious problem in 2003 due to the failure of its scan-line corrector (termed SLC-Off) Landsat 5 resumed service. The SLC-Off failure of Landsat 7 results in severe striping across every image from mid 2003 onwards, apparent in subsequent derived products. Landsat 8 has operated well since launch in 2013, and Landsat 9 since 2022 with improved sensitivity, noise characteristics and data correction in comparison to the earlier sensors.
 
 The result of the availability of the satellites is that the most consistent data availability occurs when two satellites are in operation (most of the 2003 to present period). The least data availability is in 2011 – 2012 when only Landsat 7 was available with data containing the SLC-Off striping issue. The overall data availability for the Landsat satellites is shown in Table 5. The datasets used in this analysis are shown in Table 6. 
 
