@@ -1,0 +1,22 @@
+# See the Product metadata fields documentation:
+# https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/product_metadata_fields.html
+
+# Bands
+
+# bands_footnote: "For more information on these bands, see the `Description tab <./?tab=description>`_."
+#
+# bands_table:
+#   - name: relative
+#     aliases: []
+#     resolution: 25 m
+#     nodata: -6666
+#     units: '0.1'
+#     type: int16
+#     description: "Relative Extents Model: This layer is only used by the item_v2 product."
+#   - name: stddev
+#     aliases: []
+#     resolution: 25 m
+#     nodata: -6666
+#     units: '1'
+#     type: float32
+#     description: "Confidence Layer: This layer is only used by the item_v2_conf product."
