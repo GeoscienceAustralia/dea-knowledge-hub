@@ -53,6 +53,26 @@ product_df["units"] = (
     product_df["units"].str.upper().str[0] + product_df["units"].str[1:]
 )
 
+# Load a single dataset
+
+dss = dc.find_datasets(product=CONFIGURATION['product_id'], limit=1)[0]
+
+# Extract grids used across dataset, and resolution from grid transform
+
+grid_dict = {k:int(v["transform"][0]) for k, v in dss.metadata_doc["grids"].items()}
+
+# For each band, cross-reference to grid dataset, using "default" grid if not available 
+
+band_resolutions = []
+for band_name in product_df.name:
+    grid_name = dss.measurements[band_name].get("grid", "default")
+    band_resolutions.append(grid_dict[grid_name])
+
+# Add resolutions back into dataframe
+
+product_df["resolution"] = band_resolutions
+product_df 
+
 # Convert to a dictionary
 
 bands_table = product_df.to_dict("records")
