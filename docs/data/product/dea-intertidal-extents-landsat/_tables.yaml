@@ -3,17 +3,14 @@
 
 # Bands
 
-bands_footnote: |
-  \* See the `Description tab <./?tab=description>`_ for the categories (0-9) of the Relative Extents Model.
-
-  For more information on these bands, see the `Description tab <./?tab=description>`_.
+bands_footnote: \* See the `Description tab <./?tab=description>`_ for the categories (0&ndash;9) of the Relative Extents Model. For more information on any of these bands, see the Description tab.
 
 bands_table:
   - name: relative
     aliases: []
     resolution: 25 m
     nodata: -6666
-    units: "Categorical *"
+    units: Categorical *
     type: int16
     description: "Relative Extents Model: This layer is only used by the item_v2 product."
   - name: stddev
