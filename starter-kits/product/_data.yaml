@@ -3,23 +3,29 @@
 
 # Overview
 
-title: Example product
-# long_title: Long example product title
+official_name: Example product
+# full_technical_name: Long example product title
 # header_image: /_files/example/image.png
-version: 1.0.0
-product_type: Derivative
-spatial_data_type: Vector
-time_span:
-  start: 1 Jan 2020
-  end: null
-update_frequency: Yearly
-next_update: null
-# product_ids:
-#   - example_1
 
+product_version: 1.0.0
 is_latest_version: true
 # latest_version_link: /data/product/example-product/
 is_provisional: false
+
+lineage_type: Derivative
+spatial_data_type: Vector
+
+temporal_coverage_start: 1 Jan 2020
+temporal_coverage_end: Present
+# temporal_coverage_custom: 1986 – 1999 and 2003 – 2011
+
+data_update_frequency: DAILY
+data_update_activity: ONGOING
+is_currency_reported: false
+
+# resolution: 30 m
+# product_ids:
+#   - example_1
 
 # parent_products:
 #   name: Example parent product
@@ -73,12 +79,12 @@ licence:
 #     name: Web Feature Service (WFS)
 
 # custom:
-#   - icon: globe
-#     link: https://example.com
-#     label: Get via API
+#   - link: https://example.com
 #     name: Access the API
 #     description: Learn how to `use the API <https://satpathapi.dea.ga.gov.au/user-guide>`_
-#     class: null
+#     label: API
+#     icon: globe
+#     class: highlighted
 
 # History
 
@@ -90,9 +96,9 @@ licence:
 # Settings
 
 enable_overview: true
-enable_access: true
 enable_details: true
 enable_quality: true
+enable_access: true
 enable_history: true
 enable_faqs: false
 enable_credits: true
