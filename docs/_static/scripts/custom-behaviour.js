@@ -106,7 +106,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
         }
     })();
 
-    // Clicking on a product tab will add its tab ID to the URL. E.g. /example/?tab=details
+    // Clicking on a product tab will add its tab ID to the URL. E.g. /example/?tab=description
 
     (function () {
         if (document.querySelector(".product-page")) {
@@ -135,12 +135,22 @@ document.addEventListener("DOMContentLoaded", function (event) {
                 }
             }
 
+            function switchToTab(tabId) {
+                document.querySelector(`.sd-tab-set > #${tabId}`).click();
+            }
+
             // Handle opening a URL with a 'tab' parameter
 
             if (tabUrlParam === "overview") {
                 removeTabOverviewQueryParameter();
+            } else if (tabUrlParam === "details") {
+                // Redirect for how 'Details' tab was renamed to 'Description'
+                var descriptionTabUrlParam = "description";
+                removeTabOverviewQueryParameter();
+                addTabQueryParameter(descriptionTabUrlParam);
+                switchToTab(descriptionTabUrlParam);
             } else if (tabUrlParam) {
-                document.querySelector(`.sd-tab-set > #${tabUrlParam}`).click();
+                switchToTab(tabUrlParam);
             }
 
             // Handle clicking on a tab

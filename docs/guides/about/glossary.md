@@ -184,6 +184,11 @@ An Australian federal government agency responsible for scientific research.
 
 For more information, see [CSIRO](https://www.csiro.au/).
 
+{#crs}
+## Coordinate reference system (CRS)
+
+A mathematical method of assigning coordinates to locations on the Earth's surface. There are many different CRSs in use, including Australian Albers (EPSG:3577) which is used for DEA's derived products.
+
 {#cophub}
 ## Copernicus Australasia Regional Data Hub
 

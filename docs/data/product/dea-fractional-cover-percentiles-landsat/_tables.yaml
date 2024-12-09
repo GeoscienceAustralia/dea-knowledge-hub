@@ -1,0 +1,79 @@
+# See the Product metadata fields documentation:
+# https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/product_metadata_fields.html
+
+# Bands
+
+# bands_footnote: "For more information on these bands, see the `Description tab <./?tab=description>`_."
+#
+# bands_table:
+#   - name: pv_pc_10
+#     aliases: []
+#     resolution: 30 m
+#     nodata: 255
+#     units: Percent
+#     type: uint8
+#     description: Photosynthetic veg - 10th percentile.
+#   - name: pv_pc_50
+#     aliases: []
+#     resolution: 30 m
+#     nodata: 255
+#     units: Percent
+#     type: uint8
+#     description: Photosynthetic veg - 50th percentile.
+#   - name: pv_pc_90
+#     aliases: []
+#     resolution: 30 m
+#     nodata: 255
+#     units: Percent
+#     type: uint8
+#     description: Photosynthetic veg - 90th percentile.
+#   - name: bs_pc_10
+#     aliases: []
+#     resolution: 30 m
+#     nodata: 255
+#     units: Percent
+#     type: uint8
+#     description: Bare soil - 10th percentile.
+#   - name: bs_pc_50
+#     aliases: []
+#     resolution: 30 m
+#     nodata: 255
+#     units: Percent
+#     type: uint8
+#     description: Bare soil - 50th percentile.
+#   - name: bs_pc_90
+#     aliases: []
+#     resolution: 30 m
+#     nodata: 255
+#     units: Percent
+#     type: uint8
+#     description: Bare soil - 90th percentile.
+#   - name: npv_pc_10
+#     aliases: []
+#     resolution: 30 m
+#     nodata: 255
+#     units: Percent
+#     type: uint8
+#     description: Non-photosynthetic veg - 10th percentile.
+#   - name: npv_pc_50
+#     aliases: []
+#     resolution: 30 m
+#     nodata: 255
+#     units: Percent
+#     type: uint8
+#     description: Non-photosynthetic veg - 50th percentile.
+#   - name: npv_pc_90
+#     aliases: []
+#     resolution: 30 m
+#     nodata: 255
+#     units: Percent
+#     type: uint8
+#     description: Non-photosynthetic veg - 90th percentile.
+#   - name: qa
+#     aliases: []
+#     resolution: 30 m
+#     nodata: 255
+#     units: null
+#     type: uint8
+#     description: Quality Assurance enumeration.
+#
