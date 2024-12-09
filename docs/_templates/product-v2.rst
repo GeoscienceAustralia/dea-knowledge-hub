@@ -489,7 +489,13 @@
         - Description
       {% for band in bands_table_list %}
       * - **{{ band.name }}**
-        - {{ band.aliases|join(', ') if band.aliases else no_data_terms.dash }}
+        - {%- if band.aliases %}
+          {%- for alias in band.aliases %}
+          | {{ alias }}
+          {%- endfor %}
+          {%- else %}
+          {{ no_data_terms.dash }}
+          {%- endif %}
         - {{ band.resolution or no_data_terms.dash }}
         - {{ band.nodata or "" }}
         - {{ band.units or no_data_terms.dash }}
