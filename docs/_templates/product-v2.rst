@@ -766,7 +766,7 @@
    .. list-table::
 
       * - v{{ page.data.version_number }}
-        - is the
+        - \-
         - Current version
       {% for item in previous_versions_list %}
       * - v{{ item.version }}
