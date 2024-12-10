@@ -3,7 +3,7 @@
 
 # Bands
 
-bands_footnote: null
+bands_footnote: "For all 'nbar_' and 'nbart_' bands, Surface Reflectance is scaled between 0 and 10,000."
 
 bands_table:
   - name: nbar_blue
