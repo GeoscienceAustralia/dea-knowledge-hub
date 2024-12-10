@@ -51,6 +51,8 @@ product_df["units"] = (
     product_df["units"].str.upper().str[0] + product_df["units"].str[1:]
 )
 
+product_df.loc[product_df["units"] == "1", "units"] = None
+
 # Load a single dataset
 
 dss = dc.find_datasets(product=CONFIGURATION['product_id'], limit=1)[0]
