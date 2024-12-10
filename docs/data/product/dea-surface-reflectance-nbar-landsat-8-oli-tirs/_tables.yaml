@@ -6,77 +6,77 @@
 bands_footnote: null
 
 bands_table:
-  - name: nbart_coastal_aerosol
+  - name: nbar_coastal_aerosol
     aliases:
-      - nbart_band01
+      - nbar_band01
       - coastal_aerosol
     resolution: 30
     nodata: -999
     units: null
     type: int16
     description: null
-  - name: nbart_blue
+  - name: nbar_blue
     aliases:
-      - nbart_band02
+      - nbar_band02
       - blue
     resolution: 30
     nodata: -999
     units: null
     type: int16
     description: null
-  - name: nbart_green
+  - name: nbar_green
     aliases:
-      - nbart_band03
+      - nbar_band03
       - green
     resolution: 30
     nodata: -999
     units: null
     type: int16
     description: null
-  - name: nbart_red
+  - name: nbar_red
     aliases:
-      - nbart_band04
+      - nbar_band04
       - red
     resolution: 30
     nodata: -999
     units: null
     type: int16
     description: null
-  - name: nbart_nir
+  - name: nbar_nir
     aliases:
-      - nbart_band05
+      - nbar_band05
       - nir
-      - nbart_common_nir
+      - nbar_common_nir
     resolution: 30
     nodata: -999
     units: null
     type: int16
     description: null
-  - name: nbart_swir_1
+  - name: nbar_swir_1
     aliases:
-      - nbart_band06
+      - nbar_band06
       - swir_1
-      - nbart_common_swir_1
+      - nbar_common_swir_1
       - swir1
     resolution: 30
     nodata: -999
     units: null
     type: int16
     description: null
-  - name: nbart_swir_2
+  - name: nbar_swir_2
     aliases:
-      - nbart_band07
+      - nbar_band07
       - swir_2
-      - nbart_common_swir_2
+      - nbar_common_swir_2
       - swir2
     resolution: 30
     nodata: -999
     units: null
     type: int16
     description: null
-  - name: nbart_panchromatic
+  - name: nbar_panchromatic
     aliases:
-      - nbart_band08
+      - nbar_band08
       - panchromatic
     resolution: 15
     nodata: -999
@@ -91,9 +91,9 @@ bands_table:
     units: null
     type: uint8
     description: null
-  - name: oa_nbart_contiguity
+  - name: oa_nbar_contiguity
     aliases:
-      - nbart_contiguity
+      - nbar_contiguity
     resolution: 30
     nodata: 255
     units: null
