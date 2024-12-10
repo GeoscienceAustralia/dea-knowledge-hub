@@ -10,7 +10,7 @@ bands_table:
     aliases:
       - nbart_band01
       - blue
-    resolution: 15-30 m
+    resolution: 30
     nodata: -999
     units: null
     type: int16
@@ -19,7 +19,7 @@ bands_table:
     aliases:
       - nbart_band02
       - green
-    resolution: 15-30 m
+    resolution: 30
     nodata: -999
     units: null
     type: int16
@@ -28,7 +28,7 @@ bands_table:
     aliases:
       - nbart_band03
       - red
-    resolution: 15-30 m
+    resolution: 30
     nodata: -999
     units: null
     type: int16
@@ -38,7 +38,7 @@ bands_table:
       - nbart_band04
       - nir
       - nbart_common_nir
-    resolution: 15-30 m
+    resolution: 30
     nodata: -999
     units: null
     type: int16
@@ -49,7 +49,7 @@ bands_table:
       - swir_1
       - nbart_common_swir_1
       - swir1
-    resolution: 15-30 m
+    resolution: 30
     nodata: -999
     units: null
     type: int16
@@ -60,7 +60,7 @@ bands_table:
       - swir_2
       - nbart_common_swir_2
       - swir2
-    resolution: 15-30 m
+    resolution: 30
     nodata: -999
     units: null
     type: int16
@@ -69,7 +69,7 @@ bands_table:
     aliases:
       - nbart_band08
       - panchromatic
-    resolution: 15-30 m
+    resolution: 15
     nodata: -999
     units: null
     type: int16
@@ -77,7 +77,7 @@ bands_table:
   - name: oa_fmask
     aliases:
       - fmask
-    resolution: 15-30 m
+    resolution: 30
     nodata: 0
     units: null
     type: uint8
@@ -85,7 +85,7 @@ bands_table:
   - name: oa_nbart_contiguity
     aliases:
       - nbart_contiguity
-    resolution: 15-30 m
+    resolution: 30
     nodata: 255
     units: null
     type: uint8
@@ -93,7 +93,7 @@ bands_table:
   - name: oa_azimuthal_exiting
     aliases:
       - azimuthal_exiting
-    resolution: 15-30 m
+    resolution: 30
     nodata: NaN
     units: null
     type: float32
@@ -101,7 +101,7 @@ bands_table:
   - name: oa_azimuthal_incident
     aliases:
       - azimuthal_incident
-    resolution: 15-30 m
+    resolution: 30
     nodata: NaN
     units: null
     type: float32
@@ -109,7 +109,7 @@ bands_table:
   - name: oa_combined_terrain_shadow
     aliases:
       - combined_terrain_shadow
-    resolution: 15-30 m
+    resolution: 30
     nodata: 255
     units: null
     type: uint8
@@ -117,7 +117,7 @@ bands_table:
   - name: oa_exiting_angle
     aliases:
       - exiting_angle
-    resolution: 15-30 m
+    resolution: 30
     nodata: NaN
     units: null
     type: float32
@@ -125,7 +125,7 @@ bands_table:
   - name: oa_incident_angle
     aliases:
       - incident_angle
-    resolution: 15-30 m
+    resolution: 30
     nodata: NaN
     units: null
     type: float32
@@ -133,7 +133,7 @@ bands_table:
   - name: oa_relative_azimuth
     aliases:
       - relative_azimuth
-    resolution: 15-30 m
+    resolution: 30
     nodata: NaN
     units: null
     type: float32
@@ -141,7 +141,7 @@ bands_table:
   - name: oa_relative_slope
     aliases:
       - relative_slope
-    resolution: 15-30 m
+    resolution: 30
     nodata: NaN
     units: null
     type: float32
@@ -149,7 +149,7 @@ bands_table:
   - name: oa_satellite_azimuth
     aliases:
       - satellite_azimuth
-    resolution: 15-30 m
+    resolution: 30
     nodata: NaN
     units: null
     type: float32
@@ -157,7 +157,7 @@ bands_table:
   - name: oa_satellite_view
     aliases:
       - satellite_view
-    resolution: 15-30 m
+    resolution: 30
     nodata: NaN
     units: null
     type: float32
@@ -165,7 +165,7 @@ bands_table:
   - name: oa_solar_azimuth
     aliases:
       - solar_azimuth
-    resolution: 15-30 m
+    resolution: 30
     nodata: NaN
     units: null
     type: float32
@@ -173,7 +173,7 @@ bands_table:
   - name: oa_solar_zenith
     aliases:
       - solar_zenith
-    resolution: 15-30 m
+    resolution: 30
     nodata: NaN
     units: null
     type: float32
@@ -181,7 +181,7 @@ bands_table:
   - name: oa_time_delta
     aliases:
       - time_delta
-    resolution: 15-30 m
+    resolution: 30
     nodata: NaN
     units: null
     type: float32
