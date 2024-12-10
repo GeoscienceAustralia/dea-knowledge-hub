@@ -557,7 +557,7 @@
       {%- elif spatial_data_type == spatial_data_type_terms.VECTOR %}
       * - **Spatial type**
         - {{ spatial_data_type }}
-        - Vector data consists of mathematical polygons.
+        - Vector data consists of spatial polygons.
       {%- else %}
       * - **Spatial type**
         - {{ spatial_data_type }}
@@ -641,7 +641,7 @@
       :name: product-categorisation
       :class: h2
 
-   This metadata categorises the product so that it can be found alongside related products.
+   This metadata describes how the product relates to other DEA products.
 
    .. list-table::
       :name: product-categorisation-table
