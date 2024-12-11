@@ -496,11 +496,11 @@
           {%- else %}
           {{ no_data_terms.dash }}
           {%- endif %}
-        - {{ band.resolution if band.resolution is defined else no_data_terms.dash }}
-        - {{ band.nodata if band.nodata is defined else "" }}
-        - {{ band.units if band.units is defined else no_data_terms.dash }}
-        - {{ band.type if band.type is defined else no_data_terms.dash }}
-        - {{ band.description if band.description is defined else no_data_terms.dash }}
+        - {{ band.resolution if band.resolution or band.resolution == 0 else no_data_terms.dash }}
+        - {{ band.nodata if band.nodata or band.nodata == 0 else "" }}
+        - {{ band.units or no_data_terms.dash }}
+        - {{ band.type or no_data_terms.dash }}
+        - {{ band.description or no_data_terms.dash }}
       {% endfor %}
 
    {{ page.tables.bands_footnote if page.tables.bands_footnote }}
