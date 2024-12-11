@@ -557,7 +557,7 @@
       {%- elif spatial_data_type == spatial_data_type_terms.VECTOR %}
       * - **Spatial type**
         - {{ spatial_data_type }}
-        - Vector data consists of spatial polygons.
+        - Vector data consists of spatial polygons, lines, and points.
       {%- else %}
       * - **Spatial type**
         - {{ spatial_data_type }}
