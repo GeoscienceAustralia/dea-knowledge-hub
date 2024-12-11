@@ -1,0 +1,80 @@
+# See the Product metadata fields documentation:
+# https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/product_metadata_fields.html
+
+# Bands
+
+# bands_footnote: "For more information on these bands, see the `Description tab <./?tab=description>`_."
+#
+# bands_table:
+#   - name: level3
+#     aliases: []
+#     resolution: 25 m
+#     nodata: 0
+#     units: null
+#     type: uint8
+#     description: The base Level 3 land cover classification.
+#   - name: level4
+#     aliases:
+#       - full_classification
+#     resolution: 25 m
+#     nodata: 0
+#     units: null
+#     type: uint8
+#     description: All level 3 and level 4 classes are combined to give a single classification value.
+#   - name: lifeform_veg_cat_l4a
+#     aliases:
+#       - lifeform
+#     resolution: 25 m
+#     nodata: 0
+#     units: null
+#     type: uint8
+#     description: Lifeform represents the dominant vegetation type, discriminating woody from non-woody (herbaceous).
+#   - name: canopyco_veg_cat_l4d
+#     aliases:
+#       - vegetation_cover
+#     resolution: 25 m
+#     nodata: 0
+#     units: null
+#     type: uint8
+#     description: Vegetation cover describes the percentage of an area that is vegetated rather than bare.
+#   - name: watersea_veg_cat_l4a_au
+#     aliases:
+#       - water_seasonality
+#     resolution: 25 m
+#     nodata: 0
+#     units: null
+#     type: uint8
+#     description: Water seasonality identifies where water is permanent (present for over 3 months) or temporary/seasonal (present for under 3 months).
+#   - name: waterstt_wat_cat_l4a
+#     aliases:
+#       - water_state
+#     resolution: 25 m
+#     nodata: 0
+#     units: null
+#     type: uint8
+#     description: Water state establishes whether water is present in liquid form or as snow or ice.
+#   - name: inttidal_wat_cat_l4a
+#     aliases:
+#       - intertidal
+#     resolution: 25 m
+#     nodata: 0
+#     units: null
+#     type: uint8
+#     description: Intertidal water refers to primarily non-vegetated aquatic areas with systematic tidal water variations.
+#   - name: waterper_wat_cat_l4d_au
+#     aliases:
+#       - water_persistence
+#     resolution: 25 m
+#     nodata: 0
+#     units: null
+#     type: uint8
+#     description: Water persistence describes the maximum duration (in months) that water is seen to be covering the surface in the year.
+#   - name: baregrad_phy_cat_l4d_au
+#     aliases:
+#       - bare_gradation
+#     resolution: 25 m
+#     nodata: 0
+#     units: null
+#     type: uint8
+#     description: Bare gradation describes the percentage of bare surface in areas which contain sporadic or little persistent green vegetation throughout the year.
+#

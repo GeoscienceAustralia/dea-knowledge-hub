@@ -1,0 +1,50 @@
+# See the Product metadata fields documentation:
+# https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/product_metadata_fields.html
+
+# Bands
+
+# bands_footnote: null
+#
+# bands_table:
+#   - name: blue
+#     aliases: []
+#     resolution: 25 m
+#     nodata: -999
+#     units: Metres
+#     type: float32
+#     description: null
+#   - name: green
+#     aliases: []
+#     resolution: 25 m
+#     nodata: -999
+#     units: Metres
+#     type: float32
+#     description: null
+#   - name: red
+#     aliases: []
+#     resolution: 25 m
+#     nodata: -999
+#     units: Metres
+#     type: float32
+#     description: null
+#   - name: nir
+#     aliases: []
+#     resolution: 25 m
+#     nodata: -999
+#     units: Metres
+#     type: float32
+#     description: null
+#   - name: swir1
+#     aliases: []
+#     resolution: 25 m
+#     nodata: -999
+#     units: Metres
+#     type: float32
+#     description: null
+#   - name: swir2
+#     aliases: []
+#     resolution: 25 m
+#     nodata: -999
+#     units: Metres
+#     type: float32
+#     description: null

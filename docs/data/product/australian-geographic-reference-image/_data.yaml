@@ -1,41 +1,52 @@
 # See the Product metadata fields documentation:
 # https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/product_metadata_fields.html
 
-# Overview
+# Specifications
 
-title: Australian Geographic Reference Image
-long_title: Australian Geographic Reference Image
+short_name: Australian Geographic Reference Image
+full_technical_name: null
 header_image: /_files/cmi/agri.jpg
-version: 1.0.0
+
+version_number: 1.0.0
 is_latest_version: true
 latest_version_link: null
 is_provisional: false
-product_type: Baseline
-spatial_data_type: Raster
-time_span:
-  start: null
-  end: null
-update_frequency: null
-next_update: No updates planned
+
+lineage_type: BASELINE
+spatial_data_type: RASTER
+
+spatial_coverage: null
+temporal_coverage_start: null
+temporal_coverage_end: null
+temporal_coverage_custom: null
+
+data_update_frequency: AS_NEEDED
+data_update_activity: NO_UPDATES
+is_currency_reported: false
+
+resolution: 2.5-10 m
+coordinate_reference_system: null
+
 product_ids: null
 
 parent_products:
-  name: null
-  link: null
-collection:
-  name: null
-  link: null
-doi: 10.4225/25/5524BA4A047FE
-ecat: "72657"
-nci: null
-licence:
-  name: Creative Commons Attribution 4.0 International Licence
-  link: https://creativecommons.org/licenses/by/4.0/
+  - name: null
+    link: null
 
-citations:
-  data_citation: "Geoscience Australia, 2011. AGRI: The Australian Geographic Reference Image. Geoscience Australia, Canberra. http://dx.doi.org/10.4225/25/5524BA4A047FE"
-  paper_citation: null
-custom_citations: null
+collections:
+  - name: null
+    link: null
+
+doi: 10.4225/25/5524BA4A047FE
+ecat_id: "72657"
+
+licence_name: Creative Commons Attribution 4.0 International Licence
+license_link: https://creativecommons.org/licenses/by/4.0/
+
+citation_data: "Geoscience Australia, 2011. AGRI: The Australian Geographic Reference Image. Geoscience Australia, Canberra. http://dx.doi.org/10.4225/25/5524BA4A047FE"
+citation_paper: null
+
+citations_custom: null
 
 tags:
   - agri
@@ -44,21 +55,21 @@ tags:
 
 # Access
 
-maps: null
+access_links_maps: null
 
-explorers: null
+access_links_explorers: null
 
-data:
+access_links_data:
   - link: https://thredds.nci.org.au/thredds/catalog/fk4/agri/catalog.html
     name: Access the data on NCI
 
-code_examples: null
+access_links_code_examples: null
 
-web_services: null
+access_links_web_services: null
 
 # History
 
-old_versions: null
+previous_versions: null
 
 # SEO
 
@@ -67,9 +78,10 @@ meta_description: null
 # Settings
 
 enable_overview: true
-enable_access: true
-enable_details: true
+enable_description: true
 enable_quality: true
+enable_specifications: true
+enable_access: true
 enable_history: true
 enable_faqs: false
 enable_credits: true
