@@ -8,26 +8,6 @@
 Learn more about the [DEA Summary Product Grid](/guides/reference/collection_3_summary_grid/).
 ::::
 
-## 12 Dec 2024: Christmas-New Year period shutdown (Critical support only)
-
-The Digital Earth Australia staff will be taking some well-earned rest over the Christmas-New Year period. We will be operating at a reduced capacity from Thursday 19 December to Monday 13 January 2025.  
-  
-DEA will not be available to reply to support enquiries until Monday 13 January.   
-  
-The production of DEA Analysis Ready Data (ARD) collections may be delayed, so please make use of our near-real time products for the most up to date information:  
-
-Sentinel-2 Near-Real Time on [DEA Maps](https://maps.dea.ga.gov.au/#share=s-oSISp03WZeAsU83CkUrEdxOzj1Y)
-
-Landsat-9 Near-Real Time on [DEA Maps](https://maps.dea.ga.gov.au/#share=s-mM9itN2WbwT4M8JR81T2RhRLEzr)
-
-[View the Tech Alert](https://communication.ga.gov.au/link/id/zzzz675a766b4e320946Pzzzz6567c8b713b5b826/page.html)
-
-## 12 Dec 2024: DEA Sandbox new user sign-ups temporarily suspended
-
-New user account creation for the [DEA Sandbox](https://app.sandbox.dea.ga.gov.au/) will also be suspended over the shutdown period. Existing DEA Sandbox users should not be affected. New user sign-ups will be available again from Monday 13 January 2024.   
-
-[View the Tech Alert](https://communication.ga.gov.au/link/id/zzzz675a766b4e320946Pzzzz6567c8b713b5b826/page.html)
-
 ## 5 Dec 2024: NCI database will be upgraded soon. Service disruption is possible but not expected.
 
 The NCI database will soon be upgraded. According to our testing, downtime or major disruption to service is not expected. However, be aware that a service disruption is still possible during this time.
