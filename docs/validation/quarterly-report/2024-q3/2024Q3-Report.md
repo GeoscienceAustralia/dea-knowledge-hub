@@ -69,7 +69,7 @@ based on the most recent measurements.
 6 sites were measured, with 9 individual field site captures. The table below summarises these captures:
 
 :::{csv-table} Summary of field site captures
-:class: field-site-captures
+:header-rows: 1
 
 "Date","Field Site","Overpass (Link to site report)","Longitude, Latitude (WGS84)","Instrument","Comments"
 "2024-07-01","NSW1","L9, S-2B","142.10368, -31.81348","Hand-held ASD FR-4","Both satellites affected by cloud – validation data not used."
@@ -134,7 +134,7 @@ values for each individual band, we characterise all results by looking at the m
 platform.
 
 :::{csv-table} Validation Results
-:class: validation-results
+:header-rows: 1
 
 "Satellite Platform","Mean band-by-band scatter","Maximum band-by-band scatter"
 "Landsat 8","2.4%","3.1%"
