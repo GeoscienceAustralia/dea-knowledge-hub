@@ -91,7 +91,7 @@ The Figure shows the locations of the field sites measured in this quarter.
 
 ## Comments on Individual Sites of Interest
 
-NSW6 field site, also known as Boggabri, is situated on the slope of a hill, which rises about 200m over a length of
+<B>NSW6 field site</B>, also known as Boggabri, is situated on the slope of a hill, which rises about 200m over a length of
 around 700m. The bottom of the hill is situated within a canola field, However, the field site is located along the
 slope of the hill, which is covered with native vegetation, mainly comprising of trees. This site was specifically
 selected to be more challenging than typical field sites due to the slope of the hill and the presence of the tree
@@ -106,8 +106,8 @@ shows the elevation profile of the hill, following along the white line drawn in
 
 :::
 :::{figure} ./2024Q3-Boggabri2.jpg
-:::{figure} ./2024Q3-Boggabri3.jpg
-:::{figure} ./2024Q3-Boggabri4.jpg
+{figure} ./2024Q3-Boggabri3.jpg
+{figure} ./2024Q3-Boggabri4.jpg
 
 The Figure shows three images taken by the drone during flight on 6 July 2024, showing the transition between cultivated
 field and native area (left) and examples of tree canopy in the field site area (middle and right). This Figure
