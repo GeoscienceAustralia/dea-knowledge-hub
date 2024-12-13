@@ -28,7 +28,8 @@
 {% set has_access_data = valid_maps or valid_data or valid_explorers or valid_web_services or valid_code_samples or valid_custom %}
 {% set has_key_details = (data.parent_products.name and data.parent_products.link) or (data.collection.name and data.collection.link) or data.collection.name or data.doi or data.ecat or data.published %}
 
-{% set page_title = data.title if is_latest_version else data.version + ": " + data.title %}
+{% set page_title = data.title if is_latest_version else "v" + data.version + ": " + data.title %}
+{% set display_title = data.title if is_latest_version else data.title + " v" + data.version %}
 
 {% set product_ids_label = "Product IDs" if valid_product_ids | length > 1 else "Product ID" %}
 {% set product_types_label = "Product types" if valid_product_types | length > 1 else "Product type" %}
@@ -51,7 +52,7 @@
 
    .. container::
 
-      .. rubric:: {{ page_title }}
+      .. rubric:: {{ display_title }}
 
       {{ data.long_title }}
 
@@ -388,14 +389,14 @@
           <div class="product-tab-table-of-contents"></div>
 
        {% if not is_latest_version %}
-       .. rubric:: Other versions
-          :name: other-versions
+       .. rubric:: Version history
+          :name: version-history
           :class: h2
 
-       You can find the history in the `latest version of the product <{{ data.latest_version_link }}?tab=history>`_.
+       You can find the version history in the `latest version of the product <{{ data.latest_version_link }}?tab=history>`_.
        {% else %}
-       .. rubric:: Old versions
-          :name: old-versions
+       .. rubric:: Version history
+          :name: version-history
           :class: h2
 
        {% if valid_old_versions %}
@@ -405,10 +406,10 @@
        .. list-table::
 
           {% for item in valid_old_versions %}
-          * - `{{ item.version }}: {{ item.title }} </data/old-version/{{ item.slug }}/>`_
+          * - `{{ item.version }}: {{ item.title }} </data/version-history/{{ item.slug }}/>`_
           {% endfor %}
        {% else %}
-       No old versions available.
+       No previous versions available.
        {% endif %}
 
        .. include:: _history.md
@@ -444,3 +445,4 @@
 
    <script type="text/javascript" src="/_static/scripts/access-cards-tooltips.js" /></script>
    <script type="text/javascript" src="/_static/scripts/citation-access-date.js" /></script>
+

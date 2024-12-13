@@ -278,117 +278,117 @@ entries:
 
   - file: operational-reports/index
 
-  # Old versions of products
+  # Version history
 
-  - file: data/old-version/index
+  - file: data/version-history/index
     subtrees:
       - caption: A
         entries:
-          - glob: data/old-version/dea-a*/index
-          - glob: data/old-version/a*/index
+          - glob: data/version-history/dea-a*/index
+          - glob: data/version-history/a*/index
       - caption: B
         entries:
-          - glob: data/old-version/dea-b*/index
-          - glob: data/old-version/b*/index
+          - glob: data/version-history/dea-b*/index
+          - glob: data/version-history/b*/index
       - caption: C
         entries:
-          - glob: data/old-version/dea-c*/index
-          - glob: data/old-version/c*/index
+          - glob: data/version-history/dea-c*/index
+          - glob: data/version-history/c*/index
       - caption: D
         entries:
-          - glob: data/old-version/dea-d*/index
+          - glob: data/version-history/dea-d*/index
       - caption: E
         entries:
-          - glob: data/old-version/dea-e*/index
-          - glob: data/old-version/e*/index
+          - glob: data/version-history/dea-e*/index
+          - glob: data/version-history/e*/index
       - caption: F
         entries:
-          - glob: data/old-version/dea-f*/index
-          - glob: data/old-version/f*/index
+          - glob: data/version-history/dea-f*/index
+          - glob: data/version-history/f*/index
       - caption: G
         entries:
-          - glob: data/old-version/dea-g*/index
-          - glob: data/old-version/g*/index
+          - glob: data/version-history/dea-g*/index
+          - glob: data/version-history/g*/index
       - caption: H
         entries:
-          - glob: data/old-version/dea-h*/index
-          - glob: data/old-version/h*/index
+          - glob: data/version-history/dea-h*/index
+          - glob: data/version-history/h*/index
       - caption: I
         entries:
-          - glob: data/old-version/dea-i*/index
-          - glob: data/old-version/i*/index
+          - glob: data/version-history/dea-i*/index
+          - glob: data/version-history/i*/index
       - caption: J
         entries:
-          - glob: data/old-version/dea-j*/index
-          - glob: data/old-version/j*/index
+          - glob: data/version-history/dea-j*/index
+          - glob: data/version-history/j*/index
       - caption: K
         entries:
-          - glob: data/old-version/dea-k*/index
-          - glob: data/old-version/k*/index
+          - glob: data/version-history/dea-k*/index
+          - glob: data/version-history/k*/index
       - caption: L
         entries:
-          - glob: data/old-version/dea-l*/index
-          - glob: data/old-version/l*/index
+          - glob: data/version-history/dea-l*/index
+          - glob: data/version-history/l*/index
       - caption: M
         entries:
-          - glob: data/old-version/dea-m*/index
-          - glob: data/old-version/m*/index
+          - glob: data/version-history/dea-m*/index
+          - glob: data/version-history/m*/index
       - caption: N
         entries:
-          - glob: data/old-version/dea-n*/index
-          - glob: data/old-version/n*/index
+          - glob: data/version-history/dea-n*/index
+          - glob: data/version-history/n*/index
       - caption: O
         entries:
-          - glob: data/old-version/dea-o*/index
-          - glob: data/old-version/o*/index
+          - glob: data/version-history/dea-o*/index
+          - glob: data/version-history/o*/index
       - caption: P
         entries:
-          - glob: data/old-version/dea-p*/index
-          - glob: data/old-version/p*/index
+          - glob: data/version-history/dea-p*/index
+          - glob: data/version-history/p*/index
       - caption: Q
         entries:
-          - glob: data/old-version/dea-q*/index
-          - glob: data/old-version/q*/index
+          - glob: data/version-history/dea-q*/index
+          - glob: data/version-history/q*/index
       - caption: R
         entries:
-          - glob: data/old-version/dea-r*/index
-          - glob: data/old-version/r*/index
+          - glob: data/version-history/dea-r*/index
+          - glob: data/version-history/r*/index
       - caption: S
         entries:
-          - glob: data/old-version/dea-s*/index
-          - glob: data/old-version/s*/index
+          - glob: data/version-history/dea-s*/index
+          - glob: data/version-history/s*/index
       - caption: T
         entries:
-          - glob: data/old-version/dea-t*/index
-          - glob: data/old-version/t*/index
+          - glob: data/version-history/dea-t*/index
+          - glob: data/version-history/t*/index
       - caption: U
         entries:
-          - glob: data/old-version/dea-u*/index
-          - glob: data/old-version/u*/index
+          - glob: data/version-history/dea-u*/index
+          - glob: data/version-history/u*/index
       - caption: V
         entries:
-          - glob: data/old-version/dea-v*/index
-          - glob: data/old-version/v*/index
+          - glob: data/version-history/dea-v*/index
+          - glob: data/version-history/v*/index
       - caption: W
         entries:
-          - glob: data/old-version/dea-w*/index
-          - glob: data/old-version/w*/index
+          - glob: data/version-history/dea-w*/index
+          - glob: data/version-history/w*/index
       - caption: X
         entries:
-          - glob: data/old-version/dea-x*/index
-          - glob: data/old-version/x*/index
+          - glob: data/version-history/dea-x*/index
+          - glob: data/version-history/x*/index
       - caption: Y
         entries:
-          - glob: data/old-version/dea-y*/index
-          - glob: data/old-version/y*/index
+          - glob: data/version-history/dea-y*/index
+          - glob: data/version-history/y*/index
       - caption: Z
         entries:
-          - glob: data/old-version/dea-z*/index
-          - glob: data/old-version/z*/index
+          - glob: data/version-history/dea-z*/index
+          - glob: data/version-history/z*/index
       - caption: More ...
         entries:
-          - glob: data/old-version/d*/index # This was moved here from the 'D' section because it was disrupting the 'dea-' patterns. If regex is supported in the future, we can make it work properly in the 'D' section.
-          - glob: data/old-version/*/index
+          - glob: data/version-history/d*/index # This was moved here from the 'D' section because it was disrupting the 'dea-' patterns. If regex is supported in the future, we can make it work properly in the 'D' section.
+          - glob: data/version-history/*/index
 
   # Tags
 

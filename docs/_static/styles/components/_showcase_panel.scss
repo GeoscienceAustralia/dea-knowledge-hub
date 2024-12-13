@@ -5,6 +5,22 @@
 
     a {
         font-weight: bold;
+
+        &[data-link-type="query"] {
+            font-weight: normal;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+                text-decoration-style: dashed;
+            }
+        }
+    }
+
+    dl dd, dl dt {
+        p {
+            display: inline;
+        }
     }
 
     & > div:nth-child(1) {
@@ -47,15 +63,15 @@
         flex-direction: row-reverse;
     }
 
-    &[class*="bg-gradient-"] {
-        p, dl, a, a:hover, .rubric {
-            color: white;
-        }
-    }
-
     &.product-header {
         .rubric {
             margin-bottom: 0.25rem;
+        }
+    }
+
+    &[class*="bg-gradient-"] {
+        p, dl, a, a:hover, .rubric {
+            color: white;
         }
     }
 

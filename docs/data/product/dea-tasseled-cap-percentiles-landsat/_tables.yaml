@@ -1,0 +1,71 @@
+# See the Product metadata fields documentation:
+# https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/product_metadata_fields.html
+
+# Bands
+
+# bands_footnote: null
+#
+# bands_table:
+#   - name: wet_pc_10
+#     aliases: []
+#     resolution: 30 m
+#     nodata: -9999
+#     units: Percent
+#     type: int16
+#     description: Wetness - 10th percentile.
+#   - name: wet_pc_50
+#     aliases: []
+#     resolution: 30 m
+#     nodata: -9999
+#     units: Percent
+#     type: int16
+#     description: Wetness - 50th percentile.
+#   - name: wet_pc_90
+#     aliases: []
+#     resolution: 30 m
+#     nodata: -9999
+#     units: Percent
+#     type: int16
+#     description: Wetness - 90th percentile.
+#   - name: green_pc_10
+#     aliases: []
+#     resolution: 30 m
+#     nodata: -9999
+#     units: Percent
+#     type: int16
+#     description: Greenness - 10th percentile.
+#   - name: green_pc_50
+#     aliases: []
+#     resolution: 30 m
+#     nodata: -9999
+#     units: Percent
+#     type: int16
+#     description: Greenness - 50th percentile.
+#   - name: green_pc_90
+#     aliases: []
+#     resolution: 30 m
+#     nodata: -9999
+#     units: Percent
+#     type: int16
+#     description: Greenness - 90th percentile.
+#   - name: bright_pc_10
+#     aliases: []
+#     resolution: 30 m
+#     nodata: -9999
+#     units: Percent
+#     type: int16
+#     description: Brightness - 10th percentile.
+#   - name: bright_pc_50
+#     aliases: []
+#     resolution: 30 m
+#     nodata: -9999
+#     units: Percent
+#     type: int16
+#     description: Brightness - 50th percentile.
+#   - name: bright_pc_90
+#     aliases: []
+#     resolution: 30 m
+#     nodata: -9999
+#     units: Percent
+#     type: int16
+#     description: Brightness - 90th percentile.

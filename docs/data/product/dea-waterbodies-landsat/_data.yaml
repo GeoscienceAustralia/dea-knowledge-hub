@@ -1,41 +1,52 @@
 # See the Product metadata fields documentation:
 # https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/product_metadata_fields.html
 
-# Overview
+# Specifications
 
-title: DEA Waterbodies (Landsat)
-long_title: Geoscience Australia Landsat Waterbodies Collection 3
+short_name: DEA Waterbodies (Landsat)
+full_technical_name: Geoscience Australia Landsat Waterbodies Collection 3
 header_image: /_files/dea-waterbodies/DEA_Waterbodies_v3.0_header_image.jpg
-version: 3.0.0
+
+version_number: 3.0.0
 is_latest_version: true
 latest_version_link: null
 is_provisional: false
-product_type: Derivative
-spatial_data_type: Vector
-time_span:
-  start: 1986
-  end: Present
-update_frequency: Daily
-next_update: null
+
+lineage_type: DERIVATIVE
+spatial_data_type: VECTOR
+
+spatial_coverage: null
+temporal_coverage_start: 1986
+temporal_coverage_end: Present
+temporal_coverage_custom: null
+
+data_update_frequency: DAILY
+data_update_activity: ONGOING
+is_currency_reported: true
+
+resolution: null
+coordinate_reference_system: null
+
 product_ids: null
 
 parent_products:
-  name: DEA Water Observations (Landsat)
-  link: /data/product/dea-water-observations-landsat/
-collection:
-  name: Geoscience Australia Landsat Collection 3
-  link: null
-doi: 10.26186/148920
-ecat: "148920"
-nci: null
-licence:
-  name: Creative Commons Attribution 4.0 International Licence
-  link: https://creativecommons.org/licenses/by/4.0/
+  - name: DEA Water Observations (Landsat)
+    link: /data/product/dea-water-observations-landsat/
 
-citations:
-  data_citation: "Dunn, B., Krause, C., Newey, V., Lymburner, L., Alger, M.J., Adams, C., Yuan, F., Ma, S., Barzinpour, A., Ayers, D., McKenna, C., Schenk, L. 2024. Digital Earth Australia Waterbodies v3.0. Geoscience Australia, Canberra. https://dx.doi.org/10.26186/148920"
-  paper_citation: "Krause, C.E., Newey, V., Alger, M.J. and Lymburner, L., 2021. Mapping and Monitoring the Multi-Decadal Dynamics of Australia’s Open Waterbodies using Landsat. Remote Sensing, 13, 1437. https://doi.org/10.3390/rs13081437"
-custom_citations: null
+collections:
+  - name: Geoscience Australia Landsat Collection 3
+    link: /search/?q=Geoscience+Australia+Landsat+Collection+3
+
+doi: 10.26186/148920
+ecat_id: "148920"
+
+licence_name: Creative Commons Attribution 4.0 International Licence
+license_link: https://creativecommons.org/licenses/by/4.0/
+
+citation_data: "Dunn, B., Krause, C., Newey, V., Lymburner, L., Alger, M.J., Adams, C., Yuan, F., Ma, S., Barzinpour, A., Ayers, D., McKenna, C., Schenk, L. 2024. Digital Earth Australia Waterbodies v3.0. Geoscience Australia, Canberra. https://dx.doi.org/10.26186/148920"
+citation_paper: "Krause, C.E., Newey, V., Alger, M.J. and Lymburner, L., 2021. Mapping and Monitoring the Multi-Decadal Dynamics of Australia’s Open Waterbodies using Landsat. Remote Sensing, 13, 1437. https://doi.org/10.3390/rs13081437"
+
+citations_custom: null
 
 tags:
   - geoscience_australia_landsat_collection_3
@@ -47,33 +58,33 @@ tags:
 
 # Access
 
-maps:
+access_links_maps:
   - link: https://maps.dea.ga.gov.au/story/DEAWaterbodies
-    name: See it on a map
+    name: null
 
-explorers: null
+access_links_explorers: null
 
-data:
+access_links_data:
   - link: https://pid.geoscience.gov.au/dataset/ga/148920
     name: Download the shapefile
   - link: https://data.dea.ga.gov.au/?prefix=derivative/dea_waterbodies/3-0-0/
     name: Access the data on AWS
 
-code_examples:
+access_links_code_examples:
   - link: /notebooks/DEA_products/DEA_Waterbodies/
-    name: Code examples
+    name: null
   - link: https://github.com/GeoscienceAustralia/dea-conflux
     name: GitHub repository
 
-web_services:
+access_links_web_services:
   - link: https://geoserver.dea.ga.gov.au/geoserver/web/?0
     name: Web Mapping Service (WMS)
 
-custom: null
+access_links_custom: null
 
 # History
 
-old_versions:
+previous_versions:
   - version: 2.0.0
     title: DEA Waterbodies (Landsat)
     slug: dea-waterbodies-landsat-2.0.0
@@ -88,9 +99,10 @@ meta_description: null
 # Settings
 
 enable_overview: true
-enable_access: true
-enable_details: true
+enable_description: true
 enable_quality: true
+enable_specifications: true
+enable_access: true
 enable_history: true
 enable_faqs: true
 enable_credits: true

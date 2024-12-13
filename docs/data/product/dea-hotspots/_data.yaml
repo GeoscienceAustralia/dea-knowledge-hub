@@ -1,41 +1,52 @@
 # See the Product metadata fields documentation:
 # https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/product_metadata_fields.html
 
-# Overview
+# Specifications
 
-title: DEA Hotspots
-long_title: Digital Earth Australia Hotspots
+short_name: DEA Hotspots
+full_technical_name: Digital Earth Australia Hotspots
 header_image: /_files/cmi/hotspots.jpg
-version: 1.0.0
+
+version_number: 1.0.0
 is_latest_version: true
 latest_version_link: null
 is_provisional: false
-product_type: Data service
-spatial_data_type: Vector
-time_span:
-  start: 27 Aug 2002
-  end: Present
-update_frequency: Every 10 minutes
-next_update: null
+
+lineage_type: Data service
+spatial_data_type: VECTOR
+
+spatial_coverage: null
+temporal_coverage_start: 27 Aug 2002
+temporal_coverage_end: Present
+temporal_coverage_custom: null
+
+data_update_frequency: 10_MIN
+data_update_activity: ONGOING
+is_currency_reported: true
+
+resolution: null
+coordinate_reference_system: null
+
 product_ids: null
 
 parent_products:
-  name: null
-  link: null
-collection:
-  name: null
-  link: null
-doi: null
-ecat: "111881"
-nci: null
-licence:
-  name: Creative Commons Attribution 4.0 International Licence
-  link: https://creativecommons.org/licenses/by/4.0/
+  - name: null
+    link: null
 
-citations:
-  data_citation: "Geoscience Australia, 2020. Digital Earth Australia Hotspots dataset. Geoscience Australia, Canberra. https://pid.geoscience.gov.au/dataset/ga/111881"
-  paper_citation: null
-custom_citations: null
+collections:
+  - name: null
+    link: null
+
+doi: null
+ecat_id: "111881"
+
+licence_name: Creative Commons Attribution 4.0 International Licence
+license_link: https://creativecommons.org/licenses/by/4.0/
+
+citation_data: "Geoscience Australia, 2020. Digital Earth Australia Hotspots dataset. Geoscience Australia, Canberra. https://pid.geoscience.gov.au/dataset/ga/111881"
+citation_paper: null
+
+citations_custom: null
 
 tags:
   - bushfires
@@ -44,21 +55,21 @@ tags:
 
 # Access
 
-maps:
+access_links_maps:
   - link: https://hotspots.dea.ga.gov.au/
-    name: See it on a map
+    name: null
 
-explorers: null
+access_links_explorers: null
 
-data:
+access_links_data:
   - link: https://hotspots.dea.ga.gov.au/login
     name: DEA Hotspots Secure Access
   - link: https://hotspots.dea.ga.gov.au/files
     name: Access the data on AWS
 
-code_examples: null
+access_links_code_examples: null
 
-web_services:
+access_links_web_services:
   - link: https://hotspots.dea.ga.gov.au/geoserver/wms?service=wms&version=1.1.1&request=getcapabilities
     name: Web Mapping Service (WMS)
   - link: https://hotspots.dea.ga.gov.au/geoserver/wfs?service=wfs&version=1.1.1&request=getcapabilities
@@ -68,7 +79,7 @@ web_services:
   - link: https://hotspots.dea.ga.gov.au/data/recent-hotspots.json
     name: GeoJSON (last 3 days)
 
-custom:
+access_links_custom:
   - icon: file
     link: https://hotspots.dea.ga.gov.au/files/documents
     label: Read the documents
@@ -78,7 +89,7 @@ custom:
 
 # History
 
-old_versions: null
+previous_versions: null
 
 # SEO
 
@@ -87,9 +98,10 @@ meta_description: null
 # Settings
 
 enable_overview: true
-enable_access: true
-enable_details: true
+enable_description: true
 enable_quality: true
+enable_specifications: true
+enable_access: true
 enable_history: false
 enable_faqs: false
 enable_credits: true

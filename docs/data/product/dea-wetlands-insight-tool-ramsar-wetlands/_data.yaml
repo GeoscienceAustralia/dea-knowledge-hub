@@ -1,41 +1,52 @@
 # See the Product metadata fields documentation:
 # https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/product_metadata_fields.html
 
-# Overview
+# Specifications
 
-title: " DEA Wetlands Insight Tool (Ramsar Wetlands)"
-long_title: Wetlands Insight Tool Ramsar Wetlands Polygons
+short_name: " DEA Wetlands Insight Tool (Ramsar Wetlands)"
+full_technical_name: Wetlands Insight Tool Ramsar Wetlands Polygons
 header_image: /_files/cmi/WITthumb.png
-version: 4.0.0
+
+version_number: 4.0.0
 is_latest_version: true
 latest_version_link: null
 is_provisional: false
-product_type: Derivative
-spatial_data_type: Vector
-time_span:
-  start: 1987
-  end: 2021
-update_frequency: As needed
-next_update: null
+
+lineage_type: DERIVATIVE
+spatial_data_type: VECTOR
+
+spatial_coverage: null
+temporal_coverage_start: 1987
+temporal_coverage_end: 2021
+temporal_coverage_custom: null
+
+data_update_frequency: AS_NEEDED
+data_update_activity: ONGOING
+is_currency_reported: false
+
+resolution: null
+coordinate_reference_system: null
+
 product_ids: null
 
 parent_products:
-  name: DEA Water Observations (Collection 2), DEA Fractional Cover (Collection 2), and Landsat 5, 7 and 8 NBART and Observational Attributes (Collection 2)
-  link: null
-collection:
-  name: Geoscience Australia Landsat Collection 2
-  link: null
-doi: null
-ecat: "146165"
-nci: null
-licence:
-  name: Creative Commons Attribution 4.0 International Licence
-  link: https://creativecommons.org/licenses/by/4.0/
+  - name: DEA Water Observations (Collection 2), DEA Fractional Cover (Collection 2), and Landsat 5, 7 and 8 NBART and Observational Attributes (Collection 2)
+    link: null
 
-citations:
-  data_citation: "Geoscience Australia, 2021. Wetlands Insight Tool Ramsar Wetlands Polygons. Geoscience Australia, Canberra. https://pid.geoscience.gov.au/dataset/ga/146165"
-  paper_citation: "Dunn, B., Ai, E., Alger, M.J., Fanson, B., Fickas, K.C., Krause, C.E., Lymburner, L., Nanson, R., Papas, P., Ronan, M., Thomas, R.F., 2023. Wetlands Insight Tool: Characterising the Surface Water and Vegetation Cover Dynamics of Individual Wetlands Using Multidecadal Landsat Satellite Data. Wetlands 43, 37. https://doi.org/10.1007/s13157-023-01682-7"
-custom_citations: null
+collections:
+  - name: Geoscience Australia Landsat Collection 2
+    link: /search/?q=Geoscience+Australia+Landsat+Collection+2
+
+doi: null
+ecat_id: "146165"
+
+licence_name: Creative Commons Attribution 4.0 International Licence
+license_link: https://creativecommons.org/licenses/by/4.0/
+
+citation_data: "Geoscience Australia, 2021. Wetlands Insight Tool Ramsar Wetlands Polygons. Geoscience Australia, Canberra. https://pid.geoscience.gov.au/dataset/ga/146165"
+citation_paper: "Dunn, B., Ai, E., Alger, M.J., Fanson, B., Fickas, K.C., Krause, C.E., Lymburner, L., Nanson, R., Papas, P., Ronan, M., Thomas, R.F., 2023. Wetlands Insight Tool: Characterising the Surface Water and Vegetation Cover Dynamics of Individual Wetlands Using Multidecadal Landsat Satellite Data. Wetlands 43, 37. https://doi.org/10.1007/s13157-023-01682-7"
+
+citations_custom: null
 
 tags:
   - geoscience_australia_landsat_collection_2_deprecated
@@ -44,27 +55,27 @@ tags:
 
 # Access
 
-maps:
+access_links_maps:
   - link: https://maps.dea.ga.gov.au/#share=s-8C1ajm6k7py0B375G4tetZ2JC6s
-    name: See it on a map
+    name: null
 
-explorers: null
+access_links_explorers: null
 
-data:
+access_links_data:
   - link: https://data.dea.ga.gov.au/?prefix=derivative/ga_ls_wit_ramsar_class_myear_3/1-0-0/1986--P35Y/
     name: Access the data on AWS
 
-code_examples:
+access_links_code_examples:
   - link: /notebooks/DEA_products/DEA_Wetlands_Insight_Tool/
-    name: Code examples
+    name: null
 
-web_services: null
+access_links_web_services: null
 
-custom: null
+access_links_custom: null
 
 # History
 
-old_versions: null
+previous_versions: null
 
 # SEO
 
@@ -73,9 +84,10 @@ meta_description: null
 # Settings
 
 enable_overview: true
-enable_access: true
-enable_details: true
+enable_description: true
 enable_quality: true
+enable_specifications: true
+enable_access: true
 enable_history: false
 enable_faqs: false
 enable_credits: true
