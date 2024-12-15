@@ -1,5 +1,5 @@
-<!-- Change '[ ]' to '[x]' to confirm items (if relevant). -->
-
-* [ ] Content was spellchecked (e.g. using Microsoft Word or Grammarly).
-* [ ] Updates are posted to the DEA Tech Alerts page.
+<!--
+* Please spell-check all content using Microsoft Word, Grammarly, or otherwise.
+* See our Markdown cheat sheet: https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/md_and_rst.html
+-->
 
