@@ -10,7 +10,7 @@ Learn more about the [DEA Summary Product Grid](/guides/reference/collection_3_s
 
 ## 16 Dec 2024: Missing Sentinel-2 data between November 2023 and February 2024 in AWS database only
 
-We are aware of missing Sentinel-2 data in DEA's AWS database over inland Australia between November 2023 and February 2024. This was caused by a syncing issue between the NCI and AWS. The data is still available in the NCI database. We are working on restoring this data in our AWS database.
+We are aware of missing Sentinel-2 data in DEA's AWS database over inland Australia between November 2023 and February 2024. This was caused by a syncing issue between the NCI and AWS. You can still access this data from our NCI database. We are working on restoring this data in our AWS database.
 
 ## 12 Dec 2024: Critical support only over Christmas&ndash;New Year
 
