@@ -62,13 +62,9 @@
 
 {# Macros #}
 
-{% macro format_version_number(version_number) %} {# If the version number starts with a number, add a 'v' to it e.g. "v1.0.0". #}
-    {% if (version_number | string)[0].isdigit() %}
-        {{ "v" ~ version_number }}
-    {% else %}
-        {{ version_number }}
-    {% endif %}
-{% endmacro %}
+{% macro format_version_number(version_number) -%} {# If the version number starts with a number, add a 'v' to it e.g. "v1.0.0". #}
+{% if (version_number | string)[0].isdigit() %}{{ "v" ~ version_number }}{% else %}{{ version_number }}{% endif %}
+{%- endmacro %}
 
 {# Computed values #}
 
