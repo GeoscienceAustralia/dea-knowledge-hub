@@ -128,6 +128,7 @@ one-to-one correspondence between field and satellite data. Note that this diago
 fit. It is plotted this way to highlight any trends where the data may be biased away from the line of one-to-one
 correspondence. Statistics, given in the bottom right-hand corner of each panel, show details for the line of best fit
 through all points up to and including this quarter’s data.
+:::
 
 The table below lists overall validation results. These are based on the standard deviation of the scatter that we find
 for each band, for each sensor, when taking all the validation results together, up to, and including, this quarter’s
