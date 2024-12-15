@@ -55,15 +55,15 @@ based on the most recent measurements.
 :header-rows: 1
 
 "Date","Field Site","Overpass (Link to site report)","Longitude, Latitude (WGS84)","Instrument","Comments"
-"2024-07-01","NSW1","L9, S-2B","142.10368, -31.81348","Hand-held ASD FR-4","Both satellites affected by cloud – validation data not used."
-"2024-07-02","NSW2","L8","143.48095, -31.59525","Drone mounted SR-3500","Good matchup"
-"2024-07-02","NSW3","L8","145.47855, -31.52124","Hand-held ASD FR-4","Good matchup"
-"2024-07-03","NSW3","L9, S-2A","145.47862, -31.52124","Hand-held ASD FR-4","Good matchup"
-"2024-07-04","NSW4","L8","146.97750, -31.52760","Drone mounted SR-3500","Good matchup"
-"2024-07-04","NSW5","L8","148.21046, -32.20980","Hand-held ASD FR-4","Good matchup"
-"2024-07-05","NSW5","L9","148.21043, -32.20982","Hand-held ASD FR-4","Good matchup"
-"2024-07-05","NSW6","L9, S-2B","150.02628, -30.78773","Drone mounted SR-3500","Clouds nearby for S-2B overpass but both overpasses show a good matchup. Field site shows a significant slope and is partially over tree canopy."
-"2024-07-06","NSW6","L8","150.02628, -30.78777","Drone mounted SR-3500","Good matchup. Field site shows a significant slope and is partially over tree canopy."
+"2024-07-01","NSW1","<A HREF="../../site-report/2024-07-01-NSW1/">L9, S-2B</A>","142.10368, -31.81348","Hand-held ASD FR-4","Both satellites affected by cloud – validation data not used."
+"2024-07-02","NSW2","<A HREF="../../site-report/2024-07-02-NSW2/">L8</A>","143.48095, -31.59525","Drone mounted SR-3500","Good matchup"
+"2024-07-02","NSW3","<A HREF="../../site-report/2024-07-02-NSW3/">L8</A>","145.47855, -31.52124","Hand-held ASD FR-4","Good matchup"
+"2024-07-03","NSW3","<A HREF="../../site-report/2024-07-03-NSW3/">L9, S-2A</A>","145.47862, -31.52124","Hand-held ASD FR-4","Good matchup"
+"2024-07-04","NSW4","<A HREF="../../site-report/2024-07-04-NSW4/">L8</A>","146.97750, -31.52760","Drone mounted SR-3500","Good matchup"
+"2024-07-04","NSW5","<A HREF="../../site-report/2024-07-04-NSW5/">L8</A>","148.21046, -32.20980","Hand-held ASD FR-4","Good matchup"
+"2024-07-05","NSW5","<A HREF="../../site-report/2024-07-05-NSW5/">L9</A>","148.21043, -32.20982","Hand-held ASD FR-4","Good matchup"
+"2024-07-05","NSW6","<A HREF="../../site-report/2024-07-05-NSW6/">L9, S-2B</A>","150.02628, -30.78773","Drone mounted SR-3500","Clouds nearby for S-2B overpass but both overpasses show a good matchup. Field site shows a significant slope and is partially over tree canopy."
+"2024-07-06","NSW6","<A HREF="../../site-report/2024-07-06-NSW6/">L8</A>","150.02628, -30.78777","Drone mounted SR-3500","Good matchup. Field site shows a significant slope and is partially over tree canopy."
 :::
  
 :::{figure} ./2024Q3_Locations.png
