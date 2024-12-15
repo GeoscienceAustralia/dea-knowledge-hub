@@ -89,6 +89,7 @@ shows the elevation profile of the hill, following along the white line drawn in
 % {figure} ./2024Q3-Boggabri4.jpg
 
 :::{figure} ./2024Q3-Boggabri2.jpg
+
 The Figure shows three images taken by the drone during flight on 6 July 2024, showing the transition between cultivated
 field and native area (left) and examples of tree canopy in the field site area (middle and right). This Figure
 highlights the challenges of validating the site, where the surface reflectance properties vary strongly and individual
@@ -108,10 +109,17 @@ THIS IS A TEST OF FORMATTING:
 ![](./2024Q3-Boggabri4.jpg)
 :::
 ::::
+
+:::{figure}
+
+The Figure shows three images taken by the drone during flight on 6 July 2024, showing the transition between cultivated
+field and native area (left) and examples of tree canopy in the field site area (middle and right). This Figure
+highlights the challenges of validating the site, where the surface reflectance properties vary strongly and individual
+sight lines may land on tree canopy, shadow or somewhere in between.
+:::
      
 ## Summary of Band-by-Band Matching
 
-:::
 :::{figure} ./2024Q3-Matchup.png
 
 The Figure shows comparison data for each platform. Black dots represent data that were collected prior to this quarter.
