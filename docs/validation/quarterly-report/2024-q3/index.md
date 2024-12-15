@@ -66,7 +66,6 @@ based on the most recent measurements.
 "2024-07-06","NSW6","L8","150.02628, -30.78777","Drone mounted SR-3500","Good matchup. Field site shows a significant slope and is partially over tree canopy."
 :::
  
-:::
 :::{figure} ./2024Q3_Locations.png
 
 The Figure shows the locations of the field sites measured in this quarter.
@@ -80,18 +79,16 @@ slope of the hill, which is covered with native vegetation, mainly comprising of
 selected to be more challenging than typical field sites due to the slope of the hill and the presence of the tree
 canopy.
 
-:::
 :::{figure} ./2024Q3-Boggabri1.png
 
 The Figure shows NSW6 field site (blue square), in the context of the surrounding area. The bottom panel of the Figure
 shows the elevation profile of the hill, following along the white line drawn in the upper panel.
 :::
 
-:::
-:::{figure} ./2024Q3-Boggabri2.jpg
-{figure} ./2024Q3-Boggabri3.jpg
-{figure} ./2024Q3-Boggabri4.jpg
+% {figure} ./2024Q3-Boggabri3.jpg
+% {figure} ./2024Q3-Boggabri4.jpg
 
+:::{figure} ./2024Q3-Boggabri2.jpg
 The Figure shows three images taken by the drone during flight on 6 July 2024, showing the transition between cultivated
 field and native area (left) and examples of tree canopy in the field site area (middle and right). This Figure
 highlights the challenges of validating the site, where the surface reflectance properties vary strongly and individual
