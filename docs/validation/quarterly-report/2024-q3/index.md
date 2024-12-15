@@ -97,6 +97,20 @@ field and native area (left) and examples of tree canopy in the field site area 
 highlights the challenges of validating the site, where the surface reflectance properties vary strongly and individual
 sight lines may land on tree canopy, shadow or somewhere in between.
 :::
+
+THIS IS A TEST OF FORMATTING:
+
+::::{grid} 1 1 2 3
+:::{grid-item}
+![](./2024Q3-Boggabri2.jpg)
+:::
+:::{grid-item}
+![](./2024Q3-Boggabri3.jpg)
+:::
+:::{grid-item}
+![](./2024Q3-Boggabri4.jpg)
+:::
+::::
      
 ## Summary of Band-by-Band Matching
 
