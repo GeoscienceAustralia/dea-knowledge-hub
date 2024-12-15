@@ -1,4 +1,4 @@
-# 2024-Q3: DEA Quarterly Validation Report
+# 2024 Q3: DEA Quarterly Validation Report
 
 :::{contents} In this report
 :local:
