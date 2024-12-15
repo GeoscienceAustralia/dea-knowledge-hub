@@ -244,6 +244,8 @@
 
 {# Notification section component #}
 
+TEST: {{ format_version_number(page.data.version_number) }}
+
 {% set notifications_section_component %}
 .. container::
    :name: notifications
