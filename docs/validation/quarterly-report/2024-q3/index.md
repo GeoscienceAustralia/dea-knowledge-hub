@@ -85,19 +85,6 @@ The Figure shows NSW6 field site (blue square), in the context of the surroundin
 shows the elevation profile of the hill, following along the white line drawn in the upper panel.
 :::
 
-% {figure} ./2024Q3-Boggabri3.jpg
-% {figure} ./2024Q3-Boggabri4.jpg
-
-:::{figure} ./2024Q3-Boggabri2.jpg
-
-The Figure shows three images taken by the drone during flight on 6 July 2024, showing the transition between cultivated
-field and native area (left) and examples of tree canopy in the field site area (middle and right). This Figure
-highlights the challenges of validating the site, where the surface reflectance properties vary strongly and individual
-sight lines may land on tree canopy, shadow or somewhere in between.
-:::
-
-THIS IS A TEST OF FORMATTING:
-
 ::::{grid} 1 1 2 3
 :::{grid-item}
 ![](./2024Q3-Boggabri2.jpg)
@@ -110,13 +97,9 @@ THIS IS A TEST OF FORMATTING:
 :::
 ::::
 
-:::{figure}
-
-The Figure shows three images taken by the drone during flight on 6 July 2024, showing the transition between cultivated
-field and native area (left) and examples of tree canopy in the field site area (middle and right). This Figure
-highlights the challenges of validating the site, where the surface reflectance properties vary strongly and individual
-sight lines may land on tree canopy, shadow or somewhere in between.
-:::
+<figure>
+    <figcaption>The Figure shows three images taken by the drone during flight on 6 July 2024, showing the transition between cultivated field and native area (left) and examples of tree canopy in the field site area (middle and right). This Figure highlights the challenges of validating the site, where the surface reflectance properties vary strongly and individual sight lines may land on tree canopy, shadow or somewhere in between.</figcaption>
+</figure>
      
 ## Summary of Band-by-Band Matching
 
