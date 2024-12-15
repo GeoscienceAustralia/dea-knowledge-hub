@@ -62,6 +62,8 @@
 
 {# Computed values #}
 
+{% set version_number_formatted = "v{}".format(page.data.version_number) if (page.data.version_number | string)[0].isdigit() else page.data.version_number %} {# If the version number starts with a number, append a 'v' e.g. 'v1.0.0' #}
+
 {% set access_links_maps_list = page.data.access_links_maps | selectattr("link", "!=", None) | list %}
 
 {% set access_links_data_list = page.data.access_links_data | selectattr("link", "!=", None) | list %}
@@ -90,9 +92,9 @@
 
 {% set bands_table_list = page.tables.bands_table | selectattr("name", "!=", None) | list %}
 
-{% set page_title = page.data.short_name if page.data.is_latest_version else "v{}. {}".format(page.data.version_number, page.data.short_name) %}
+{% set page_title = page.data.short_name if page.data.is_latest_version else "{}. {}".format(version_number_formatted, page.data.short_name) %}
 
-{% set display_title = page.data.short_name if page.data.is_latest_version else "{} v{}".format(page.data.short_name, page.data.version_number) %}
+{% set display_title = page.data.short_name if page.data.is_latest_version else "{} {}".format(page.data.short_name, version_number_formatted) %}
 
 {% set product_ids_label = "Product IDs" if product_ids_list | length > 1 else "Product ID" %}
 
@@ -765,7 +767,7 @@
 
    .. list-table::
 
-      * - v{{ page.data.version_number }}
+      * - {{ version_number_formatted }}
         - \-
         - Current version
       {% for item in previous_versions_list %}
