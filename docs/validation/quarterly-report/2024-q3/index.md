@@ -5,48 +5,31 @@
 :backlinks: none
 :::
 
-
 ## Executive Summary
 
 This Quarterly report summarises validation for DEA surface reflectance products for quarter 3 (July-September), 2024
 and presents aggregate validation results to the end of this quarter.
 
-<UL>
-  <LI>During this quarter, 6 field sites were measured 9 times and can be matched to 11 overpasses.</LI>
-  <LI>Validation of Landsat 8 and 9 and Sentinel-2A all improved in accuracy, taking into account the data from this
-      quarter.</LI>
-  <LI>Validation of Sentinel-2B degraded slightly, which is likely because the only site measurement matched to a
-      Sentinel-2B overpass was over a challenging site with complex terrain and surface morphology.</LI>
-  <LI>On an averaged band-by-band basis, Landsat 8 is validated to 2.4%, Landsat 9 is validated to 13.4%, Sentinel-2A
-      is validated to 2.2% and Sentinel-2B is validated to 2.6%.</LI>
-</UL>
-
-
+* During this quarter, 6 field sites were measured 9 times and can be matched to 11 overpasses.
+* Validation of Landsat 8 and 9 and Sentinel-2A all improved in accuracy, taking into account the data from this quarter.
+* Validation of Sentinel-2B degraded slightly, which is likely because the only site measurement matched to a Sentinel-2B overpass was over a challenging site with complex terrain and surface morphology.
+* On an averaged band-by-band basis, Landsat 8 is validated to 2.4%, Landsat 9 is validated to 13.4%, Sentinel-2A is validated to 2.2% and Sentinel-2B is validated to 2.6%.
 
 ## Introduction
 
 This quarterly report presents a summary of results from Q3 2024 (July-September) from the Digital Earth
 Calibration/Validation team. The report is presented in the following sections:
 
-<UL>
-  <LI>Background outlines the context around this work, with particular attention on historical work leading up to this
-      quarter.</LI>
-  <LI>Summary of Validation Work presents an overall picture of the field site measurements undertaken in a table and
-      map.</LI>
-  <LI>Comments on Individual Sites of Interest focuses on any sites where some aspect of the site or measurement was
-      atypical.</LI>
-  <LI>Summary of Band-by-Band Matching presents comparison data for this quarter’s results, in the context of all
-      previous results.</LI>
-  <LI>Comments on How This Quarter’s Work Has Affected Combined Validation Results discusses how the average results
-      for each sensor have changed with the introduction of new validation data from this quarter. This section combines
-      all band data for each platform to show averaged validation results.</LI>
-</UL>
+* Background outlines the context around this work, with particular attention on historical work leading up to this quarter.
+* Summary of Validation Work presents an overall picture of the field site measurements undertaken in a table and map.
+* Comments on Individual Sites of Interest focuses on any sites where some aspect of the site or measurement was atypical.
+* Summary of Band-by-Band Matching presents comparison data for this quarter’s results, in the context of all previous results.
+* Comments on How This Quarter’s Work Has Affected Combined Validation Results discusses how the average results for each sensor have changed with the introduction of new validation data from this quarter. This section combines all band data for each platform to show averaged validation results.
 
 The Q3, 2024 validation report includes field site measurements that were captured as part of the winter transect work
 across South Australia and New South Wales. Note that one field site measurement for SA1 is part of the Q2 2024
 validation report and not shown here. No other field site measurements were conducted during this quarter.
  
-
 ## Background
 
 The Digital Earth branch within Geoscience Australia offers a suite of Earth observation products, based on data from
@@ -91,7 +74,7 @@ The Figure shows the locations of the field sites measured in this quarter.
 
 ## Comments on Individual Sites of Interest
 
-<B>NSW6 field site</B>, also known as Boggabri, is situated on the slope of a hill, which rises about 200m over a length of
+**NSW6 field site**, also known as Boggabri, is situated on the slope of a hill, which rises about 200m over a length of
 around 700m. The bottom of the hill is situated within a canola field, However, the field site is located along the
 slope of the hill, which is covered with native vegetation, mainly comprising of trees. This site was specifically
 selected to be more challenging than typical field sites due to the slope of the hill and the presence of the tree
@@ -183,8 +166,7 @@ this quarter has slightly degraded validation performance, where the statistics 
 together, Sentinel-2B data can be relied upon to around 1% of the surface reflectance. 
 
  
-## Acknowledgments 
+## Acknowledgments
  
 The field validation data were collected by Geoscience Australia. 
-
 
