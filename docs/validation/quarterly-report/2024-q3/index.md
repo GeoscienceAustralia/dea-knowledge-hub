@@ -97,7 +97,7 @@ shows the elevation profile of the hill, following along the white line drawn in
 :::
 ::::
 
-<figure>
+<figure class="align-default">
     <figcaption>The Figure shows three images taken by the drone during flight on 6 July 2024, showing the transition between cultivated field and native area (left) and examples of tree canopy in the field site area (middle and right). This Figure highlights the challenges of validating the site, where the surface reflectance properties vary strongly and individual sight lines may land on tree canopy, shadow or somewhere in between.</figcaption>
 </figure>
      
