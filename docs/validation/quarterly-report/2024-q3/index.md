@@ -54,7 +54,7 @@ based on the most recent measurements.
 :::{csv-table} Summary of field site captures
 :header-rows: 1
 
-"Site report (Date, Field site, Overpasses)","Longitude, Latitude (WGS84)","Instrument","Comments"
+"Site capture (Date, Field site, Overpasses)","Longitude, Latitude (WGS84)","Instrument","Comments"
 "<a href='/validation/site-report/2024-07-01-NSW1/'>2024-07-01 NSW1: L9, S-2B</a>","142.10368, -31.81348","Hand-held ASD FR-4","Both satellites affected by cloud – validation data not used."
 "<a href='/validation/site-report/2024-07-02-NSW2/'>2024-07-02 NSW2: L8</a>","143.48095, -31.59525","Drone mounted SR-3500","Good matchup"
 "<a href='/validation/site-report/2024-07-02-NSW3/'>2024-07-02 NSW3: L8</a>","145.47855, -31.52124","Hand-held ASD FR-4","Good matchup"
