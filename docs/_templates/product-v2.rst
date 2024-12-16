@@ -62,12 +62,8 @@
 
 {# Macros #}
 
-{% macro format_version_number(version_number) -%} {# If the version number starts with a number, add a 'v' to it e.g. "v1.0.0". #}
-{% if (version_number | string)[0].isdigit() %}
-{{ "v" ~ version_number }}
-{%- else %}
-{{ version_number }}
-{%- endif %}
+{% macro format_version_number() -%}
+TEST This is a macro.
 {%- endmacro %}
 
 {# Computed values #}
@@ -288,7 +284,7 @@
       :class: h2
 
    {% if page.data.enable_access %}
-   For help accessing the data, see the `Access tab <./?tab=access>`_.
+   For help accessing the data, see the `Access tab <./?tab=access>`_. {{ format_version_number() }}
    {% endif %}
 
    .. container:: card-list icons
