@@ -14,7 +14,7 @@ is_provisional: false
 lineage_type: DERIVATIVE
 spatial_data_type: RASTER
 
-spatial_coverage: null
+# spatial_coverage: Australia and expanded extents
 temporal_coverage_start: 1 Jan 2020
 temporal_coverage_end: Present
 # temporal_coverage_custom: 1986 – 1999 and 2003 – 2011
@@ -98,7 +98,7 @@ licence_link: https://creativecommons.org/licenses/by/4.0/
 
 # SEO
 
-meta_description: null
+# meta_description: This field can be used for SEO.
 
 # Settings
 
