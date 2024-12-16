@@ -19,7 +19,7 @@ temporal_coverage_start: 1 Jan 2020
 temporal_coverage_end: Present
 # temporal_coverage_custom: 1986 – 1999 and 2003 – 2011
 
-data_update_frequency: DAILY
+data_update_frequency: YEARLY
 data_update_activity: ONGOING
 is_currency_reported: false
 
