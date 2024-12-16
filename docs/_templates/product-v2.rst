@@ -63,7 +63,11 @@
 {# Macros #}
 
 {% macro format_version_number(version_number) -%} {# If the version number starts with a number, add a 'v' to it e.g. "v1.0.0". #}
-{% if (version_number | string)[0].isdigit() %}{{ "v" ~ version_number }}{% else %}{{ version_number }}{% endif %}
+{% if (version_number | string)[0].isdigit() %}
+{{ "v" ~ version_number }}
+{%- else %}
+{{ version_number }}
+{%- endif %}
 {%- endmacro %}
 
 {# Computed values #}
@@ -96,9 +100,9 @@
 
 {% set bands_table_list = page.tables.bands_table | selectattr("name", "!=", None) | list %}
 
-{% set page_title = page.data.short_name if page.data.is_latest_version else "{}. {}".format(format_version_number(page.data.version_number), page.data.short_name) %}
+{% set page_title = page.data.short_name if page.data.is_latest_version else "{}. {}".format("format_version_number(page.data.version_number)", page.data.short_name) %}
 
-{% set display_title = page.data.short_name if page.data.is_latest_version else "{} {}".format(page.data.short_name, format_version_number(page.data.version_number)) %}
+{% set display_title = page.data.short_name if page.data.is_latest_version else "{} {}".format(page.data.short_name, "format_version_number(page.data.version_number)") %}
 
 {% set product_ids_label = "Product IDs" if product_ids_list | length > 1 else "Product ID" %}
 
@@ -773,7 +777,7 @@ TEST: {{ format_version_number(page.data.version_number) }}
 
    .. list-table::
 
-      * - {{ format_version_number(page.data.version_number) }}
+      * - {{ "format_version_number(page.data.version_number)" }}
         - \-
         - Current version
       {% for item in previous_versions_list %}
