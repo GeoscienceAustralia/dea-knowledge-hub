@@ -1,19 +1,20 @@
 # See the Product metadata fields documentation: https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/product_metadata_fields.html
 
-# Overview
+# Specifications
 
-official_name: Example product
+short_name: Example product
 # full_technical_name: Long example product title
 # header_image: /_files/example/image.png
 
-product_version: 1.0.0
+version_number: 1.0.0
 is_latest_version: true
 # latest_version_link: /data/product/example-product/
 is_provisional: false
 
-lineage_type: Derivative
-spatial_data_type: Vector
+lineage_type: DERIVATIVE
+spatial_data_type: RASTER
 
+spatial_coverage: null
 temporal_coverage_start: 1 Jan 2020
 temporal_coverage_end: Present
 # temporal_coverage_custom: 1986 – 1999 and 2003 – 2011
@@ -23,21 +24,24 @@ data_update_activity: ONGOING
 is_currency_reported: false
 
 # resolution: 30 m
+# coordinate_reference_system: EPSG:3577
+
 # product_ids:
 #   - example_1
 
 # parent_products:
-#   name: Example parent product
-#   link: /data/product/example-parent-product/
-# collection:
-#   name: Geoscience Australia Landsat Collection 3
-#   link: null
+#   - name: Example parent product
+#     link: /data/product/example-parent-product/
+
+# collections:
+#   - name: Geoscience Australia Landsat Collection 3
+#     link: null
+
 # doi: 10.00000/000000
-# ecat: 100000
-# nci: a000
-licence:
-  name: Creative Commons Attribution 4.0 International Licence
-  link: https://creativecommons.org/licenses/by/4.0/
+# ecat_id: "100000"
+
+licence_name: Creative Commons Attribution 4.0 International Licence
+licence_link: https://creativecommons.org/licenses/by/4.0/
 
 # citations:
 #   data_citation: "Bishop-Taylor, R., Nanson, R., Sagar, S., Lymburner, L. (2021). Digital Earth Australia Coastlines. Geoscience Australia, Canberra. https://doi.org/10.26186/116268"
