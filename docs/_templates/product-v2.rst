@@ -84,7 +84,7 @@
 
 {% set access_links_custom_list = page.data.access_links_custom | selectattr("icon", "!=", None) | selectattr("link", "!=", None) | selectattr("name", "!=", None) | list %}
 
-{% set previous_versions_list = page.data.previous_versions | selectattr("slug", "!=", None) | selectattr("version", "!=", None) | selectattr("name", "!=", None) | list %}
+{% set previous_versions_list = page.data.previous_versions | selectattr("slug", "!=", None) | selectattr("version_number", "!=", None) | selectattr("name", "!=", None) | list %}
 
 {% set product_ids_list = page.data.product_ids | select("!=", None) | list %}
 
@@ -779,7 +779,7 @@
         - \-
         - Current version
       {% for item in previous_versions_list %}
-      * - {{ item.version }}
+      * - {{ item.version_number }}
         - of
         - `{{ item.title }} </data/version-history/{{ item.slug }}/>`_
       {% endfor %}

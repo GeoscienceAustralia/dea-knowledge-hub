@@ -1,49 +1,52 @@
-# See the Product metadata fields documentation:
-# https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/product_metadata_fields.html
+# See the Product metadata fields documentation: https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/product_metadata_fields.html
 
-# Overview
+# Specifications
 
-official_name: Example product
+short_name: Example product
 # full_technical_name: Long example product title
 # header_image: /_files/example/image.png
 
-product_version: 1.0.0
+version_number: 1.0.0
 is_latest_version: true
 # latest_version_link: /data/product/example-product/
 is_provisional: false
 
-lineage_type: Derivative
-spatial_data_type: Vector
+lineage_type: DERIVATIVE
+spatial_data_type: RASTER
 
+# spatial_coverage: Australia including external territories
 temporal_coverage_start: 1 Jan 2020
 temporal_coverage_end: Present
 # temporal_coverage_custom: 1986 – 1999 and 2003 – 2011
 
-data_update_frequency: DAILY
+data_update_frequency: YEARLY
 data_update_activity: ONGOING
 is_currency_reported: false
 
 # resolution: 30 m
+# coordinate_reference_system: EPSG:3577
+
 # product_ids:
 #   - example_1
 
 # parent_products:
-#   name: Example parent product
-#   link: /data/product/example-parent-product/
-# collection:
-#   name: Geoscience Australia Landsat Collection 3
-#   link: null
-# doi: 10.00000/000000
-# ecat: 100000
-# nci: a000
-licence:
-  name: Creative Commons Attribution 4.0 International Licence
-  link: https://creativecommons.org/licenses/by/4.0/
+#   - name: Example parent product
+#     link: /data/product/example-parent-product/
 
-# citations:
-#   data_citation: "Bishop-Taylor, R., Nanson, R., Sagar, S., Lymburner, L. (2021). Digital Earth Australia Coastlines. Geoscience Australia, Canberra. https://doi.org/10.26186/116268"
-#   paper_citation: "Bishop-Taylor, R., Nanson, R., Sagar, S., Lymburner, L. (2021). Mapping Australia's dynamic coastline at mean sea level using three decades of Landsat imagery. Remote Sensing of Environment, 267, 112734. https://doi.org/10.1016/j.rse.2021.112734"
-# custom_citations:
+# collections:
+#   - name: Geoscience Australia Landsat Collection 3
+#     link: null
+
+# doi: 10.00000/000000
+# ecat_id: "100000"
+
+licence_name: Creative Commons Attribution 4.0 International Licence
+licence_link: https://creativecommons.org/licenses/by/4.0/
+
+# citation_data: "Bishop-Taylor, R., Nanson, R., Sagar, S., Lymburner, L. (2021). Digital Earth Australia Coastlines. Geoscience Australia, Canberra. https://doi.org/10.26186/116268"
+# citation_paper: "Bishop-Taylor, R., Nanson, R., Sagar, S., Lymburner, L. (2021). Mapping Australia's dynamic coastline at mean sea level using three decades of Landsat imagery. Remote Sensing of Environment, 267, 112734. https://doi.org/10.1016/j.rse.2021.112734"
+
+# citations_custom:
 #   - name: Custom citation
 #     citation: "Bishop-Taylor, R., Nanson, R., Sagar, S., Lymburner, L. (2021). Mapping Australia's dynamic coastline at mean sea level using three decades of Landsat imagery. Remote Sensing of Environment, 267, 112734. https://doi.org/10.1016/j.rse.2021.112734"
 
@@ -52,33 +55,33 @@ licence:
 
 # Access
 
-# maps:
+# access_links_maps:
 #   - link: https://example.com
 #     name: See it on a map
 
-# explorers:
+# access_links_explorers:
 #   - link: https://example.com
 #     name: Data explorer
 
-# data:
+# access_links_data:
 #   - link: https://example.com
 #     name: Access the data on AWS
 #   - link: https://example.com
 #     name: Access the data on NCI
 
-# code_examples:
+# access_links_code_examples:
 #   - link: https://example.com
 #     name: Code examples
 #   - link: https://example.com
 #     name: Github repository
 
-# web_services:
+# access_links_web_services:
 #   - link: https://example.com
 #     name: Web Map Service (WMS)
 #   - link: https://example.com
 #     name: Web Feature Service (WFS)
 
-# custom:
+# access_links_custom:
 #   - link: https://example.com
 #     name: Access the API
 #     description: Learn how to `use the API <https://satpathapi.dea.ga.gov.au/user-guide>`_
@@ -88,18 +91,22 @@ licence:
 
 # History
 
-# old_versions:
-#   - version: 1.0.0
+# previous_versions:
+#   - version_number: 1.0.0
 #     title: Example product
 #     slug: example-product-1.0.0
+
+# SEO
+
+# meta_description: This field can be used for SEO.
 
 # Settings
 
 enable_overview: true
-enable_details: true
+enable_description: true
 enable_quality: true
+enable_specifications: true
 enable_access: true
 enable_history: true
 enable_faqs: false
 enable_credits: true
-

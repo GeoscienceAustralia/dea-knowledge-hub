@@ -1,5 +1,4 @@
-# See the Product metadata fields documentation:
-# https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/product_metadata_fields.html
+# See the Product metadata fields documentation: https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/product_metadata_fields.html
 
 # Specifications
 
@@ -41,7 +40,7 @@ doi: 10.26186/146512
 ecat_id: null
 
 licence_name: Creative Commons Attribution 4.0 International Licence
-license_link: https://creativecommons.org/licenses/by/4.0/
+licence_link: https://creativecommons.org/licenses/by/4.0/
 
 citation_data: "Geoscience Australia, 2022. Geoscience Australia's predictive schedules for public good satellites over Australia. Geoscience Australia, Canberra. https://dx.doi.org/10.26186/146512"
 citation_paper: null
