@@ -1,5 +1,4 @@
-# See the Product metadata fields documentation:
-# https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/product_metadata_fields.html
+# See the Product metadata fields documentation: https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/product_metadata_fields.html
 
 # Specifications
 
@@ -42,7 +41,7 @@ doi: 10.26186/146449
 ecat_id: "146449"
 
 licence_name: Creative Commons Attribution 4.0 International Licence
-license_link: https://creativecommons.org/licenses/by/4.0/
+licence_link: https://creativecommons.org/licenses/by/4.0/
 
 citation_data: "Geoscience Australia, 2022. DEA Burnt Area Characteristic Layers (Sentinel 2 Near Real-Time, Provisional). Geoscience Australia, Canberra. https://dx.doi.org/10.26186/146449"
 citation_paper: null
@@ -73,10 +72,10 @@ access_links_web_services: null
 # History
 
 previous_versions:
-  - version: 2.0.0
+  - version_number: 2.0.0
     title: DEA Burnt Area (Landsat, 2010 and 2015)
     slug: dea-burnt-area-landsat-2010-and-2015-2.0.0
-  - version: 1.0.0
+  - version_number: 1.0.0
     title: DEA Burnt Area Vectors Sentinel-2 Near Real-Time
     slug: dea-burnt-area-vectors-sentinel-2-near-real-time-1.0.0
 

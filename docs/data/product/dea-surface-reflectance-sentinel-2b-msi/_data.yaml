@@ -1,5 +1,4 @@
-# See the Product metadata fields documentation:
-# https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/product_metadata_fields.html
+# See the Product metadata fields documentation: https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/product_metadata_fields.html
 
 # Specifications
 
@@ -43,7 +42,7 @@ ecat_id: "146551"
 nci_code: ka08
 
 licence_name: Creative Commons Attribution 4.0 International Licence
-license_link: https://creativecommons.org/licenses/by/4.0/
+licence_link: https://creativecommons.org/licenses/by/4.0/
 
 citation_data: "Geoscience Australia, 2022. Geoscience Australia Sentinel-2B MSI Analysis Ready Data Collection 3 - DEA Surface Reflectance (Sentinel-2B MSI). Geoscience Australia, Canberra. https://dx.doi.org/10.26186/146551"
 citation_paper: null
@@ -87,7 +86,7 @@ access_links_custom: null
 # History
 
 previous_versions:
-  - version: 1.0.0
+  - version_number: 1.0.0
     title: DEA Surface Reflectance NBAR (Sentinel-2 MSI)
     slug: dea-surface-reflectance-nbar-sentinel-2-msi-1.0.0
 

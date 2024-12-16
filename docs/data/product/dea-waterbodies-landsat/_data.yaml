@@ -1,5 +1,4 @@
-# See the Product metadata fields documentation:
-# https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/product_metadata_fields.html
+# See the Product metadata fields documentation: https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/product_metadata_fields.html
 
 # Specifications
 
@@ -41,7 +40,7 @@ doi: 10.26186/148920
 ecat_id: "148920"
 
 licence_name: Creative Commons Attribution 4.0 International Licence
-license_link: https://creativecommons.org/licenses/by/4.0/
+licence_link: https://creativecommons.org/licenses/by/4.0/
 
 citation_data: "Dunn, B., Krause, C., Newey, V., Lymburner, L., Alger, M.J., Adams, C., Yuan, F., Ma, S., Barzinpour, A., Ayers, D., McKenna, C., Schenk, L. 2024. Digital Earth Australia Waterbodies v3.0. Geoscience Australia, Canberra. https://dx.doi.org/10.26186/148920"
 citation_paper: "Krause, C.E., Newey, V., Alger, M.J. and Lymburner, L., 2021. Mapping and Monitoring the Multi-Decadal Dynamics of Australia’s Open Waterbodies using Landsat. Remote Sensing, 13, 1437. https://doi.org/10.3390/rs13081437"
@@ -85,10 +84,10 @@ access_links_custom: null
 # History
 
 previous_versions:
-  - version: 2.0.0
+  - version_number: 2.0.0
     title: DEA Waterbodies (Landsat)
     slug: dea-waterbodies-landsat-2.0.0
-  - version: 1.0.0
+  - version_number: 1.0.0
     title: DEA Waterbodies (Landsat)
     slug: waterbodies-1.0.0
 
