@@ -288,7 +288,7 @@
       :class: h2
 
    {% if page.data.enable_access %}
-   For help accessing the data, see the `Access tab <./?tab=access>`_. TEST: {{ format_version_number(page.data.version_number) }}
+   For help accessing the data, see the `Access tab <./?tab=access>`_.
    {% endif %}
 
    .. container:: card-list icons
@@ -779,7 +779,7 @@
         - \-
         - Current version
       {% for item in previous_versions_list %}
-      * - {{ format_version_number(item.version) }}
+      * - {{ item.version }}
         - of
         - `{{ item.title }} </data/version-history/{{ item.slug }}/>`_
       {% endfor %}
