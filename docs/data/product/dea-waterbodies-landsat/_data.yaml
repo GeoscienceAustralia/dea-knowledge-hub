@@ -84,10 +84,10 @@ access_links_custom: null
 # History
 
 previous_versions:
-  - version: 2.0.0
+  - version_number: 2.0.0
     title: DEA Waterbodies (Landsat)
     slug: dea-waterbodies-landsat-2.0.0
-  - version: 1.0.0
+  - version_number: 1.0.0
     title: DEA Waterbodies (Landsat)
     slug: waterbodies-1.0.0
 

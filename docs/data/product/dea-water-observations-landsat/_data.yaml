@@ -83,7 +83,7 @@ access_links_custom: null
 # History
 
 previous_versions:
-  - version: 1.6.0
+  - version_number: 1.6.0
     title: DEA Water Observations (Landsat)
     slug: dea-water-observations-landsat-1.6.0
 

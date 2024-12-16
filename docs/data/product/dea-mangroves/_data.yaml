@@ -87,10 +87,10 @@ access_links_custom: null
 # History
 
 previous_versions:
-  - version: 3.0.0
+  - version_number: 3.0.0
     title: DEA Mangrove Canopy Cover (Landsat)
     slug: dea-mangrove-canopy-cover-landsat-3.0.0
-  - version: 2.0.2
+  - version_number: 2.0.2
     title: DEA Mangrove Canopy Cover (Landsat)
     slug: dea-mangrove-canopy-cover-landsat-2.0.2
 

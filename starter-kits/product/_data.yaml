@@ -55,33 +55,33 @@ licence_link: https://creativecommons.org/licenses/by/4.0/
 
 # Access
 
-# maps:
+# access_links_maps:
 #   - link: https://example.com
 #     name: See it on a map
 
-# explorers:
+# access_links_explorers:
 #   - link: https://example.com
 #     name: Data explorer
 
-# data:
+# access_links_data:
 #   - link: https://example.com
 #     name: Access the data on AWS
 #   - link: https://example.com
 #     name: Access the data on NCI
 
-# code_examples:
+# access_links_code_examples:
 #   - link: https://example.com
 #     name: Code examples
 #   - link: https://example.com
 #     name: Github repository
 
-# web_services:
+# access_links_web_services:
 #   - link: https://example.com
 #     name: Web Map Service (WMS)
 #   - link: https://example.com
 #     name: Web Feature Service (WFS)
 
-# custom:
+# access_links_custom:
 #   - link: https://example.com
 #     name: Access the API
 #     description: Learn how to `use the API <https://satpathapi.dea.ga.gov.au/user-guide>`_
@@ -91,8 +91,8 @@ licence_link: https://creativecommons.org/licenses/by/4.0/
 
 # History
 
-# old_versions:
-#   - version: 1.0.0
+# previous_versions:
+#   - version_number: 1.0.0
 #     title: Example product
 #     slug: example-product-1.0.0
 

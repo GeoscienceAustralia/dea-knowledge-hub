@@ -80,10 +80,10 @@ access_links_custom: null
 # History
 
 previous_versions:
-  - version: 3.0.0
+  - version_number: 3.0.0
     title: DEA Fractional Cover Percentiles (Landsat)
     slug: dea-fractional-cover-percentiles-landsat-3.0.0
-  - version: 2.2.1
+  - version_number: 2.2.1
     title: DEA Fractional Cover Percentiles (Landsat)
     slug: dea-fractional-cover-percentiles-landsat-2.2.1
 

@@ -83,7 +83,7 @@ access_links_custom: null
 # History
 
 previous_versions:
-  - version: 1.0.0
+  - version_number: 1.0.0
     title: DEA Surface Reflectance NBART (Sentinel-2 MSI)
     slug: dea-surface-reflectance-nbart-sentinel-2-msi-1.0.0
 

@@ -94,13 +94,13 @@ access_links_custom: null
 # History
 
 previous_versions:
-  - version: 3.1.0
+  - version_number: 3.1.0
     title: DEA Geometric Median and Median Absolute Deviation (Landsat)
     slug: dea-geometric-median-and-median-absolute-deviation-landsat-3.1.0
-  - version: 2.1.0
+  - version_number: 2.1.0
     title: DEA Surface Reflectance Median Absolute Deviation (Landsat)
     slug: dea-surface-reflectance-median-absolute-deviation-landsat-2.1.0
-  - version: 2.0.0
+  - version_number: 2.0.0
     title: DEA Surface Reflectance Geomedian (Landsat)
     slug: dea-surface-reflectance-geomedian-landsat-2.0.0
 
