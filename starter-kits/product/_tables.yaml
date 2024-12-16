@@ -2,7 +2,7 @@
 
 # Bands
 
-# bands_footnote: null
+# bands_footnote: A footnote to display under the bands table.
 
 # bands_table:
 #   - name: example_band_name
