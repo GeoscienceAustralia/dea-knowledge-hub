@@ -54,16 +54,16 @@ based on the most recent measurements.
 :::{csv-table} Summary of field site captures
 :header-rows: 1
 
-"Site capture (Date, Field site, Overpasses)","Longitude, Latitude (WGS84)","Instrument","Comments"
-"<a href='/validation/site-report/2024-07-01-NSW1/'>2024-07-01 NSW1: L9, S-2B</a>","142.10368, -31.81348","Hand-held ASD FR-4","Both satellites affected by cloud – validation data not used."
-"<a href='/validation/site-report/2024-07-02-NSW2/'>2024-07-02 NSW2: L8</a>","143.48095, -31.59525","Drone mounted SR-3500","Good matchup"
-"<a href='/validation/site-report/2024-07-02-NSW3/'>2024-07-02 NSW3: L8</a>","145.47855, -31.52124","Hand-held ASD FR-4","Good matchup"
-"<a href='/validation/site-report/2024-07-03-NSW3/'>2024-07-03 NSW3: L9, S-2A</a>","145.47862, -31.52124","Hand-held ASD FR-4","Good matchup"
-"<a href='/validation/site-report/2024-07-04-NSW4/'>2024-07-04 NSW4: L8</a>","146.97750, -31.52760","Drone mounted SR-3500","Good matchup"
-"<a href='/validation/site-report/2024-07-04-NSW5/'>2024-07-04 NSW5: L8</a>","148.21046, -32.20980","Hand-held ASD FR-4","Good matchup"
-"<a href='/validation/site-report/2024-07-05-NSW5/'>2024-07-05 NSW5: L9</a>","148.21043, -32.20982","Hand-held ASD FR-4","Good matchup"
-"<a href='/validation/site-report/2024-07-05-NSW6/'>2024-07-05 NSW6: L9, S-2B</a>","150.02628, -30.78773","Drone mounted SR-3500","Clouds nearby for S-2B overpass but both overpasses show a good matchup. Field site shows a significant slope and is partially over tree canopy."
-"<a href='/validation/site-report/2024-07-06-NSW6/'>2024-07-06 NSW6: L8</a>","150.02628, -30.78777","Drone mounted SR-3500","Good matchup. Field site shows a significant slope and is partially over tree canopy."
+"Site capture (Date, Field site, Overpasses)","Latitude, Longitude (WGS84)","Instrument","Comments"
+"<a href='/validation/site-report/2024-07-01-NSW1/'>2024-07-01 NSW1: L9, S-2B</a>","-31.81348, 142.10368","Hand-held ASD FR-4","Both satellites affected by cloud – validation data not used."
+"<a href='/validation/site-report/2024-07-02-NSW2/'>2024-07-02 NSW2: L8</a>","-31.59525, 143.48095","Drone mounted SR-3500","Good matchup"
+"<a href='/validation/site-report/2024-07-02-NSW3/'>2024-07-02 NSW3: L8</a>","-31.52124, 145.47855","Hand-held ASD FR-4","Good matchup"
+"<a href='/validation/site-report/2024-07-03-NSW3/'>2024-07-03 NSW3: L9, S-2A</a>","-31.52124, 145.47862","Hand-held ASD FR-4","Good matchup"
+"<a href='/validation/site-report/2024-07-04-NSW4/'>2024-07-04 NSW4: L8</a>","-31.52760, 146.97750","Drone mounted SR-3500","Good matchup"
+"<a href='/validation/site-report/2024-07-04-NSW5/'>2024-07-04 NSW5: L8</a>","-32.20980, 148.21046","Hand-held ASD FR-4","Good matchup"
+"<a href='/validation/site-report/2024-07-05-NSW5/'>2024-07-05 NSW5: L9</a>","-32.20982, 148.21043","Hand-held ASD FR-4","Good matchup"
+"<a href='/validation/site-report/2024-07-05-NSW6/'>2024-07-05 NSW6: L9, S-2B</a>","-30.78773, 150.02628","Drone mounted SR-3500","Clouds nearby for S-2B overpass but both overpasses show a good matchup. Field site shows a significant slope and is partially over tree canopy."
+"<a href='/validation/site-report/2024-07-06-NSW6/'>2024-07-06 NSW6: L8</a>","-30.78777, 150.02628","Drone mounted SR-3500","Good matchup. Field site shows a significant slope and is partially over tree canopy."
 :::
  
 :::{figure} ./2024Q3_Locations.png
