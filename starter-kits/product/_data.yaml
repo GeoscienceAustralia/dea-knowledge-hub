@@ -43,10 +43,10 @@ is_currency_reported: false
 licence_name: Creative Commons Attribution 4.0 International Licence
 licence_link: https://creativecommons.org/licenses/by/4.0/
 
-# citations:
-#   data_citation: "Bishop-Taylor, R., Nanson, R., Sagar, S., Lymburner, L. (2021). Digital Earth Australia Coastlines. Geoscience Australia, Canberra. https://doi.org/10.26186/116268"
-#   paper_citation: "Bishop-Taylor, R., Nanson, R., Sagar, S., Lymburner, L. (2021). Mapping Australia's dynamic coastline at mean sea level using three decades of Landsat imagery. Remote Sensing of Environment, 267, 112734. https://doi.org/10.1016/j.rse.2021.112734"
-# custom_citations:
+# citation_data: "Bishop-Taylor, R., Nanson, R., Sagar, S., Lymburner, L. (2021). Digital Earth Australia Coastlines. Geoscience Australia, Canberra. https://doi.org/10.26186/116268"
+# citation_paper: "Bishop-Taylor, R., Nanson, R., Sagar, S., Lymburner, L. (2021). Mapping Australia's dynamic coastline at mean sea level using three decades of Landsat imagery. Remote Sensing of Environment, 267, 112734. https://doi.org/10.1016/j.rse.2021.112734"
+
+# citations_custom:
 #   - name: Custom citation
 #     citation: "Bishop-Taylor, R., Nanson, R., Sagar, S., Lymburner, L. (2021). Mapping Australia's dynamic coastline at mean sea level using three decades of Landsat imagery. Remote Sensing of Environment, 267, 112734. https://doi.org/10.1016/j.rse.2021.112734"
 
