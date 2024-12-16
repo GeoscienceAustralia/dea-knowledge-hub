@@ -8,6 +8,10 @@
 Learn more about the [DEA Summary Product Grid](/guides/reference/collection_3_summary_grid/).
 ::::
 
+## 16 Dec 2024: DEA Sandbox intermittent outages
+
+The DEA Sandbox is experiencing intermittent outages as of today. We are investigating and will fix the issue as soon as possible.
+
 ## 16 Dec 2024: Missing Sentinel-2 data between November 2023 and February 2024 in AWS database only
 
 We are aware of missing Sentinel-2 data in DEA's AWS database over inland Australia between November 2023 and February 2024. This was caused by a syncing issue between the NCI and AWS. You can still access this data from our NCI database. We are working on restoring this data in our AWS database.
