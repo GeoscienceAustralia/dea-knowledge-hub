@@ -100,9 +100,9 @@
 
 {% set bands_table_list = page.tables.bands_table | selectattr("name", "!=", None) | list %}
 
-{% set page_title = page.data.short_name if page.data.is_latest_version else "{}. {}".format("format_version_number(page.data.version_number)", page.data.short_name) %}
+{% set page_title = page.data.short_name if page.data.is_latest_version else "{}. {}".format("TODO format version number", page.data.short_name) %}
 
-{% set display_title = page.data.short_name if page.data.is_latest_version else "{} {}".format(page.data.short_name, "format_version_number(page.data.version_number)") %}
+{% set display_title = page.data.short_name if page.data.is_latest_version else "{} {}".format(page.data.short_name, "TODO format version number") %}
 
 {% set product_ids_label = "Product IDs" if product_ids_list | length > 1 else "Product ID" %}
 
@@ -248,8 +248,6 @@
 
 {# Notification section component #}
 
-TEST: {{ format_version_number(page.data.version_number) }}
-
 {% set notifications_section_component %}
 .. container::
    :name: notifications
@@ -290,7 +288,7 @@ TEST: {{ format_version_number(page.data.version_number) }}
       :class: h2
 
    {% if page.data.enable_access %}
-   For help accessing the data, see the `Access tab <./?tab=access>`_.
+   For help accessing the data, see the `Access tab <./?tab=access>`_. TEST: {{ format_version_number(page.data.version_number) }}
    {% endif %}
 
    .. container:: card-list icons
@@ -777,7 +775,7 @@ TEST: {{ format_version_number(page.data.version_number) }}
 
    .. list-table::
 
-      * - {{ "format_version_number(page.data.version_number)" }}
+      * - {{ "TODO format version number" }}
         - \-
         - Current version
       {% for item in previous_versions_list %}
