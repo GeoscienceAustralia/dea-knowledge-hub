@@ -8,6 +8,30 @@
 Learn more about the [DEA Summary Product Grid](/guides/reference/collection_3_summary_grid/).
 ::::
 
+## 16 Dec 2024: Sentinel-2 data missing from AWS over inland Australia between November 2023 and February 2024 to be restored
+
+We are aware of missing Sentinel-2 data in [DEA's Amazon Web Services (AWS) database](https://explorer.dea.ga.gov.au/products) over inland Australia between November 2023 and February 2024. This was caused by a syncing issue between the National Computational Infrastructure (NCI) and AWS. You can still access this data from our [NCI database](https://explorer.nci.dea.ga.gov.au/products). We are working on restoring this data in our AWS database.
+
+[View the Tech Alert](https://communication.ga.gov.au/link/id/zzzz675fa96fc6dd0277Pzzzz6567c8b713b5b826/page.html)
+
+## 16 Dec 2024: DEA Sandbox intermittent outages
+
+The DEA Sandbox is experiencing intermittent outages as of today. We are investigating and will fix the issue as soon as possible.
+
+## 12 Dec 2024: Critical support only over Christmas&ndash;New Year
+
+The Digital Earth Australia staff will be taking some well-earned rest over the Christmas-New Year period. We will be operating at a reduced capacity from Thursday 19 December to Monday 13 January 2025.  DEA will not be available to reply to support enquiries until Monday 13 January.   
+  
+The production of DEA Analysis Ready Data (ARD) collections may be delayed, so please make use of our near-real time products for the most up to date information: [Sentinel-2 Near-Real Time on DEA Maps](https://maps.dea.ga.gov.au/#share=s-oSISp03WZeAsU83CkUrEdxOzj1Y) and [Landsat-9 Near-Real Time on DEA Maps](https://maps.dea.ga.gov.au/#share=s-mM9itN2WbwT4M8JR81T2RhRLEzr).
+
+[View the Tech Alert](https://communication.ga.gov.au/link/id/zzzz675a766b4e320946Pzzzz6567c8b713b5b826/page.html)
+
+## 12 Dec 2024: DEA Sandbox new user sign-ups temporarily suspended
+
+New user account creation for the [DEA Sandbox](https://app.sandbox.dea.ga.gov.au/) will be suspended over the shutdown period. Existing DEA Sandbox users should not be affected. New user sign-ups will be available again from Monday 13 January 2024.   
+
+[View the Tech Alert](https://communication.ga.gov.au/link/id/zzzz675a766b4e320946Pzzzz6567c8b713b5b826/page.html)
+
 ## 5 Dec 2024: NCI database will be upgraded soon. Service disruption is possible but not expected.
 
 The NCI database will soon be upgraded. According to our testing, downtime or major disruption to service is not expected. However, be aware that a service disruption is still possible during this time.

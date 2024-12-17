@@ -33,6 +33,7 @@ exclude_patterns = [
     "data/archive",
     "notebooks/Scientific_workflows",
     "notebooks/DEA_notebooks_template.ipynb",
+    "notebooks/DEA_Sandbox.ipynb",
     "notebooks/USAGE.rst",
     "notebooks/Supplementary_data/*.md",
     "notebooks/Supplementary_data/*.rst",

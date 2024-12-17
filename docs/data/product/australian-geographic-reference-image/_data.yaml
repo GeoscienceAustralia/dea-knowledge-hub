@@ -1,5 +1,4 @@
-# See the Product metadata fields documentation:
-# https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/product_metadata_fields.html
+# See the Product metadata fields documentation: https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/product_metadata_fields.html
 
 # Specifications
 
@@ -41,7 +40,7 @@ doi: 10.4225/25/5524BA4A047FE
 ecat_id: "72657"
 
 licence_name: Creative Commons Attribution 4.0 International Licence
-license_link: https://creativecommons.org/licenses/by/4.0/
+licence_link: https://creativecommons.org/licenses/by/4.0/
 
 citation_data: "Geoscience Australia, 2011. AGRI: The Australian Geographic Reference Image. Geoscience Australia, Canberra. http://dx.doi.org/10.4225/25/5524BA4A047FE"
 citation_paper: null

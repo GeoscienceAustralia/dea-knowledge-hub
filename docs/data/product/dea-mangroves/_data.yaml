@@ -1,5 +1,4 @@
-# See the Product metadata fields documentation:
-# https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/product_metadata_fields.html
+# See the Product metadata fields documentation: https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/product_metadata_fields.html
 
 # Specifications
 
@@ -44,7 +43,7 @@ doi: null
 ecat_id: "145497"
 
 licence_name: Creative Commons Attribution 4.0 International Licence
-license_link: https://creativecommons.org/licenses/by/4.0/
+licence_link: https://creativecommons.org/licenses/by/4.0/
 
 citation_data: "Lymburner, L., Lucas, R., Scarth, P., Alam, I., Phillips, C., Ticehurst, C., Held, A., Bunting, P. 2021. Geoscience Australia Mangrove Canopy Cover Collection 3. Geoscience Australia, Canberra. https://pid.geoscience.gov.au/dataset/ga/145497"
 citation_paper: "Lymburner, L., Bunting, P., Lucas, R., Scarth, P., Alam, I., Phillips, C., Ticehurst, C. and Held, A., 2020. Mapping the multi-decadal mangrove dynamics of the Australian coastline. Remote Sensing of Environment, 238, p.111185. https://doi.org/10.1016/j.rse.2019.05.004"
@@ -88,10 +87,10 @@ access_links_custom: null
 # History
 
 previous_versions:
-  - version: 3.0.0
+  - version_number: 3.0.0
     title: DEA Mangrove Canopy Cover (Landsat)
     slug: dea-mangrove-canopy-cover-landsat-3.0.0
-  - version: 2.0.2
+  - version_number: 2.0.2
     title: DEA Mangrove Canopy Cover (Landsat)
     slug: dea-mangrove-canopy-cover-landsat-2.0.2
 

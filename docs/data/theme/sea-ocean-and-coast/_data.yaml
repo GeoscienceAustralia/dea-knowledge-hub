@@ -3,14 +3,14 @@ description: Explore Australia's marine and coastal environments, including dyna
 
 cards:
   - name: DEA Coastlines
-    link: /data/product/dea-coastlines
+    link: /data/product/dea-coastlines/
     image: /_files/cmi/thumbnail_vertical.png
   - name: DEA High and Low Tide Imagery
-    link: /data/product/dea-high-and-low-tide-imagery-landsat
+    link: /data/product/dea-high-and-low-tide-imagery-landsat/
     image: /_files/cmi/HLTCv2.png
   - name: DEA Intertidal
-    link: /data/product/dea-intertidal
+    link: /data/product/dea-intertidal/
     image: /_files/dea-intertidal/DEAIntertidal_prettypic_Elevation_ShoalPointQLD_XS_Size.png
   - name: DEA Intertidal Extents (ITEM)
-    link: /data/product/dea-intertidal-extents-landsat
+    link: /data/product/dea-intertidal-extents-landsat/
     image: /_files/cmi/intertidal_extents.png

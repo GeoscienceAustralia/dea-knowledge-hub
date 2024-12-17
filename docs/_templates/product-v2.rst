@@ -74,7 +74,7 @@
 
 {% set access_links_custom_list = page.data.access_links_custom | selectattr("icon", "!=", None) | selectattr("link", "!=", None) | selectattr("name", "!=", None) | list %}
 
-{% set previous_versions_list = page.data.previous_versions | selectattr("slug", "!=", None) | selectattr("version", "!=", None) | selectattr("name", "!=", None) | list %}
+{% set previous_versions_list = page.data.previous_versions | selectattr("slug", "!=", None) | selectattr("version_number", "!=", None) | selectattr("name", "!=", None) | list %}
 
 {% set product_ids_list = page.data.product_ids | select("!=", None) | list %}
 
@@ -563,7 +563,7 @@
       {%- elif spatial_data_type == spatial_data_type_terms.VECTOR %}
       * - **Spatial type**
         - {{ spatial_data_type }}
-        - Vector data consists of mathematical polygons.
+        - Vector data consists of spatial polygons, lines, and points.
       {%- else %}
       * - **Spatial type**
         - {{ spatial_data_type }}
@@ -647,7 +647,7 @@
       :name: product-categorisation
       :class: h2
 
-   This metadata categorises the product so that it can be found alongside related products.
+   This metadata describes how the product relates to other DEA products.
 
    .. list-table::
       :name: product-categorisation-table
@@ -765,16 +765,18 @@
 
    {% if previous_versions_list | length > 0 %}
 
-   View previous releases of this product. Versions are numbered using the `Semantic Versioning <semver_>`_ scheme (Major.Minor.Patch).
+   Versions are numbered using the `Semantic Versioning <semver_>`_ scheme (Major.Minor.Patch). Note that this list may include name changes and predecessor products.
 
    .. _semver: https://semver.org/
 
    .. list-table::
 
       * - v{{ page.data.version_number }}
+        - \-
         - Current version
       {% for item in previous_versions_list %}
-      * - v{{ item.version }}
+      * - v{{ item.version_number }}
+        - of
         - `{{ item.title }} </data/version-history/{{ item.slug }}/>`_
       {% endfor %}
    {% else %}
