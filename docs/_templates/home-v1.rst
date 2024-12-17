@@ -79,7 +79,7 @@
          :class: no-gallery
 
 .. container:: showcase-panel bg-gradient-space reverse
-   :name: changelog
+   :name: tech-alerts
 
    .. container::
 
