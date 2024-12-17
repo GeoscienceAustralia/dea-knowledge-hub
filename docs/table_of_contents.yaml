@@ -223,20 +223,6 @@ entries:
         entries:
           - file: notebooks/Tools/index # Contains its own table of contents.
 
-  # DEA Tech Alerts
-
-  - file: tech-alerts/index
-    title: Tech Alerts
-    subtrees:
-      - caption: Previous years
-        entries:
-          - file: tech-alerts/previous-years/index
-            title: View previous years
-            options:
-              reversed: True
-            entries:
-              - glob: tech-alerts/*/index
-
   # Validation
 
   - file: validation/index
@@ -281,6 +267,20 @@ entries:
       #         reversed: True
       #       entries:
       #         - glob: validation/yearly-report/*/index
+
+  # DEA Tech Alerts
+
+  - file: tech-alerts/index
+    title: Tech Alerts
+    subtrees:
+      - caption: Previous years
+        entries:
+          - file: tech-alerts/previous-years/index
+            title: View previous years
+            options:
+              reversed: True
+            entries:
+              - glob: tech-alerts/*/index
 
   # Operational reports
 
