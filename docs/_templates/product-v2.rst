@@ -100,9 +100,9 @@
 
 {% set bands_table_list = page.tables.bands_table | selectattr("name", "!=", None) | list %}
 
-{% set page_title = page.data.short_name if page.data.is_latest_version else "{}. {}".format(page.data.version_number, page.data.short_name) %}
+{% set page_title = page.data.short_name if page.data.is_latest_version else "{}. {}".format(format_version_number(page.data.version_number), page.data.short_name) %}
 
-{% set display_title = page.data.short_name if page.data.is_latest_version else "{} {}".format(page.data.short_name, page.data.version_number) %}
+{% set display_title = page.data.short_name if page.data.is_latest_version else "{} {}".format(page.data.short_name, format_version_number(page.data.version_number)) %}
 
 {% set product_ids_label = "Product IDs" if product_ids_list | length > 1 else "Product ID" %}
 
@@ -288,7 +288,7 @@
       :class: h2
 
    {% if page.data.enable_access %}
-   For help accessing the data, see the `Access tab <./?tab=access>`_. TEST {{ format_version_number("1.0.0") }}
+   For help accessing the data, see the `Access tab <./?tab=access>`_.
    {% endif %}
 
    .. container:: card-list icons
@@ -775,11 +775,11 @@
 
    .. list-table::
 
-      * - {{ page.data.version_number }}
+      * - {{ format_version_number(page.data.version_number) }}
         - \-
         - Current version
       {% for item in previous_versions_list %}
-      * - {{ item.version_number }}
+      * - {{ format_version_number(item.version_number) }}
         - of
         - `{{ item.title }} </data/version-history/{{ item.slug }}/>`_
       {% endfor %}
