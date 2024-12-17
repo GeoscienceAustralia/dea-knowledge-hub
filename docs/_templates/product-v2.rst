@@ -60,6 +60,16 @@
    "EPSG:3577": "GDA94 / Australian Albers (EPSG:3577)",
 } %}
 
+{# Macros #}
+
+{% macro format_version_number(version_number) -%} {# If the version number starts with a number, add a 'v' to it e.g. "v1.0.0". #}
+{%- if (version_number|string)[0].isdigit() -%}
+{{ "v" ~ version_number }}
+{%- else -%}
+{{ version_number }}
+{%- endif -%}
+{%- endmacro %}
+
 {# Computed values #}
 
 {% set access_links_maps_list = page.data.access_links_maps | selectattr("link", "!=", None) | list %}
@@ -90,9 +100,9 @@
 
 {% set bands_table_list = page.tables.bands_table | selectattr("name", "!=", None) | list %}
 
-{% set page_title = page.data.short_name if page.data.is_latest_version else "v{}. {}".format(page.data.version_number, page.data.short_name) %}
+{% set page_title = page.data.short_name if page.data.is_latest_version else format_version_number(page.data.version_number) ~ ". " ~ page.data.short_name %}
 
-{% set display_title = page.data.short_name if page.data.is_latest_version else "{} v{}".format(page.data.short_name, page.data.version_number) %}
+{% set display_title = page.data.short_name if page.data.is_latest_version else page.data.short_name ~ " " ~ format_version_number(page.data.version_number) %}
 
 {% set product_ids_label = "Product IDs" if product_ids_list | length > 1 else "Product ID" %}
 
@@ -100,7 +110,7 @@
 
 {% set collections_label = "Collections" if collections_list | length > 1 else "Collection" %}
 
-{% set currency_report_url = "https://mgmt.sandbox.dea.ga.gov.au/public-dashboards/d22241dbfca54b1fa9f73938ef26e645?orgId=1#:~:text={}".format(page.data.short_name | urlencode) %}
+{% set currency_report_url = "https://mgmt.sandbox.dea.ga.gov.au/public-dashboards/d22241dbfca54b1fa9f73938ef26e645?orgId=1#:~:text=" ~ (page.data.short_name | urlencode) %}
 
 {% set lineage_type = lineage_type_terms.get(page.data.lineage_type, page.data.lineage_type) %}
 
@@ -771,11 +781,11 @@
 
    .. list-table::
 
-      * - v{{ page.data.version_number }}
+      * - {{ format_version_number(page.data.version_number) }}
         - \-
         - Current version
       {% for item in previous_versions_list %}
-      * - v{{ item.version_number }}
+      * - {{ format_version_number(item.version_number) }}
         - of
         - `{{ item.title }} </data/version-history/{{ item.slug }}/>`_
       {% endfor %}
