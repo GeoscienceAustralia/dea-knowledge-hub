@@ -206,7 +206,9 @@
       Data product
       {%- endif %}
 
-      {% if page.data.is_latest_version %}
+      {% if page.data.is_latest_version and page.data.enable_history %}
+      :Version: `{{ page.data.version_number }} <./?tab=history>`_
+      {%- elif page.data.is_latest_version %}
       :Version: {{ page.data.version_number }}
       {%- else %}
       :Version: {{ page.data.version_number }} (`See latest version <{{ page.data.latest_version_link }}>`_)
