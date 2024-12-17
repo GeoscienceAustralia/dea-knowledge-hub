@@ -7,7 +7,7 @@ reports:
   - name: Digital Earth Australia Status
     link: https://status.dea.ga.gov.au/
     description: Monitor the status of DEA services in real time. Check if a service is currently online and view historical uptime data.
-    image: /_files/operational-reports/DEA_Published_Product_Currency_Report.png
+    image: /_files/operational-reports/digital-earth-australia-status.png
     custom_link_text: View the real-time status report
 
   - name: DEA Published Product Currency Report
