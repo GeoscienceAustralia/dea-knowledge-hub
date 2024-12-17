@@ -67,11 +67,11 @@
 
    .. container::
 
-      .. rubric:: DEA Tech Alerts and Changelog
+      .. rubric:: DEA Tech Alerts
 
       Find out about the latest updates to DEA's products and services, planned maintenance, and any outages that may occur.
 
-      `Visit the DEA Tech Alerts and Changelog </tech-alerts-changelog/>`_
+      `Visit the DEA Tech Alerts </tech-alerts-changelog/>`_
 
    .. container::
 
