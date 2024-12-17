@@ -62,23 +62,7 @@
       .. image:: /_files/cmi/Kakadu-Mary_TCW-percentiles-wide_1.jpg
          :class: no-gallery
 
-.. container:: showcase-panel bg-gradient-stone
-   :name: changelog
-
-   .. container::
-
-      .. rubric:: DEA Tech Alerts and Changelog
-
-      Find out about the latest updates to DEA's products and services, planned maintenance, and any outages that may occur.
-
-      `Visit the DEA Tech Alerts and Changelog </tech-alerts-changelog/>`_
-
-   .. container::
-
-      .. image:: /_files/reference/Reporting_dashboard.png
-         :class: no-gallery
-
-.. container:: showcase-panel bg-gradient-space reverse
+.. container:: showcase-panel bg-gradient-space
    :name: dea-notebooks
 
    .. container::
@@ -92,6 +76,22 @@
    .. container::
 
       .. image:: /_files/validation/validation-drone-thumbnail.jpg
+         :class: no-gallery
+
+.. container:: showcase-panel bg-gradient-stone reverse
+   :name: changelog
+
+   .. container::
+
+      .. rubric:: DEA Tech Alerts and Changelog
+
+      Find out about the latest updates to DEA's products and services, planned maintenance, and any outages that may occur.
+
+      `Visit the DEA Tech Alerts and Changelog </tech-alerts-changelog/>`_
+
+   .. container::
+
+      .. image:: /_files/reference/Reporting_dashboard.png
          :class: no-gallery
 
 .. container:: showcase-panel
