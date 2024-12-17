@@ -249,6 +249,14 @@ entries:
               reversed: True
             entries:
               - glob: validation/site-report/*/index
+      - caption: Quarterly
+        entries:
+          - file: validation/quarterly-report/index
+            title: Quarterly reports
+            options:
+              reversed: True
+            entries:
+              - glob: validation/quarterly-report/*/index
       - caption: User guides
         entries:
           - file: validation/user-guides
