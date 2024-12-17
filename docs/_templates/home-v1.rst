@@ -63,7 +63,7 @@
          :class: no-gallery
 
 .. container:: showcase-panel bg-gradient-stone
-   :name: dea-notebooks
+   :name: validation-reports
 
    .. container::
 
@@ -83,11 +83,11 @@
 
    .. container::
 
-      .. rubric:: DEA Tech Alerts and Changelog
+      .. rubric:: DEA Tech Alerts
 
       Find out about the latest updates to DEA's products and services, planned maintenance, and any outages that may occur.
 
-      `Visit the DEA Tech Alerts and Changelog </tech-alerts-changelog/>`_
+      `Visit the DEA Tech Alerts </tech-alerts-changelog/>`_
 
    .. container::
 
