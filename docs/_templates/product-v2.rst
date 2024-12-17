@@ -100,9 +100,9 @@
 
 {% set bands_table_list = page.tables.bands_table | selectattr("name", "!=", None) | list %}
 
-{% set page_title = page.data.short_name if page.data.is_latest_version else "{}. {}".format(format_version_number(page.data.version_number), page.data.short_name) %}
+{% set page_title = page.data.short_name if page.data.is_latest_version else format_version_number(page.data.version_number) ~ ". " ~ page.data.short_name %}
 
-{% set display_title = page.data.short_name if page.data.is_latest_version else "{} {}".format(page.data.short_name, format_version_number(page.data.version_number)) %}
+{% set display_title = page.data.short_name if page.data.is_latest_version else page.data.short_name ~ " " ~ format_version_number(page.data.version_number) %}
 
 {% set product_ids_label = "Product IDs" if product_ids_list | length > 1 else "Product ID" %}
 
@@ -110,7 +110,7 @@
 
 {% set collections_label = "Collections" if collections_list | length > 1 else "Collection" %}
 
-{% set currency_report_url = "https://mgmt.sandbox.dea.ga.gov.au/public-dashboards/d22241dbfca54b1fa9f73938ef26e645?orgId=1#:~:text={}".format(page.data.short_name | urlencode) %}
+{% set currency_report_url = "https://mgmt.sandbox.dea.ga.gov.au/public-dashboards/d22241dbfca54b1fa9f73938ef26e645?orgId=1#:~:text=" ~ (page.data.short_name | urlencode) %}
 
 {% set lineage_type = lineage_type_terms.get(page.data.lineage_type, page.data.lineage_type) %}
 
