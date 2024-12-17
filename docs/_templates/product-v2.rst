@@ -196,26 +196,16 @@
 
       .. rubric:: {{ display_title }}
 
-      {% if product_ids_list and page.data.enable_specifications %}
-      `{{ product_ids_list_text }} <./?tab=specifications>`_
-      {%- elif product_ids_list %}
+      {% if product_ids_list %}
       {{ product_ids_list_text }}
-      {%- elif spatial_data_type == spatial_data_type_terms.VECTOR and page.data.enable_specifications %}
-      `Vector product <./?tab=specifications>`_
       {%- elif spatial_data_type == spatial_data_type_terms.VECTOR %}
       Vector product
-      {%- elif page.data.enable_specifications %}
-      `Data product <./?tab=specifications>`_
       {%- else %}
       Data product
       {%- endif %}
 
-      {% if page.data.is_latest_version and page.data.enable_history %}
-      :Version: `{{ page.data.version_number }} <./?tab=history>`_
-      {%- elif page.data.is_latest_version %}
+      {% if page.data.is_latest_version %}
       :Version: {{ page.data.version_number }}
-      {%- elif page.data.enable_history %}
-      :Version: `{{ page.data.version_number }} <./?tab=history>`_ (`See latest version <{{ page.data.latest_version_link }}>`_)
       {%- else %}
       :Version: {{ page.data.version_number }} (`See latest version <{{ page.data.latest_version_link }}>`_)
       {%- endif %}
