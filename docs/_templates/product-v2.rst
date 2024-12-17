@@ -352,6 +352,10 @@
       * - **Technical name**
         - {{ page.data.full_technical_name }}
       {%- endif %}
+      {% if bands_table_list %}
+      * - **Bands**
+        - `View {{ bands_table_list | length }} bands <./?tab=specifications>`_
+      {%- endif %}
       {%- if page.data.doi %}
       * - **DOI**
         - `{{ page.data.doi }} <https://doi.org/{{ page.data.doi }}>`_
