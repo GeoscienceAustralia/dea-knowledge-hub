@@ -63,7 +63,7 @@
 {# Macros #}
 
 {% macro format_version_number(version_number) -%}
-{{ version_number }}
+{{ "v" ~ version_number }}
 {%- endmacro %}
 
 {# Computed values #}
@@ -284,7 +284,7 @@
       :class: h2
 
    {% if page.data.enable_access %}
-   For help accessing the data, see the `Access tab <./?tab=access>`_. {{ format_version_number("TEST 2 This is a test 2.") }}
+   For help accessing the data, see the `Access tab <./?tab=access>`_. TEST {{ format_version_number("1.0.0") }}
    {% endif %}
 
    .. container:: card-list icons
