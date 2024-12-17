@@ -196,7 +196,9 @@
 
       .. rubric:: {{ display_title }}
 
-      {% if product_ids_list %}
+      {% if product_ids_list and page.data.enable_specifications %}
+      `{{ product_ids_list_text }} <./?tab=specifications>`_
+      {%- elif product_ids_list %}
       {{ product_ids_list_text }}
       {%- elif spatial_data_type == spatial_data_type_terms.VECTOR %}
       Vector product
