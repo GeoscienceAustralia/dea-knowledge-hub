@@ -354,7 +354,10 @@
       * - **Technical name**
         - {{ page.data.full_technical_name }}
       {%- endif %}
-      {% if bands_table_list %}
+      {% if bands_table_list and bands_count > 3 %}
+      * - **Bands**
+        - `View {{ bands_count }} bands ({{ bands_table_list[0].name }}, {{ bands_table_list[1].name }}, and more) <./?tab=specifications>`_
+      {%- elif bands_table_list %}
       * - **Bands**
         - `View {{ bands_count }} bands <./?tab=specifications>`_
       {%- endif %}
