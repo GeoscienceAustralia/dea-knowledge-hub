@@ -359,7 +359,7 @@
         - `{{ bands_count }} bands of data ({{ bands_table_list[0].name }}, {{ bands_table_list[1].name }}, and more) <./?tab=specifications>`_
       {%- elif bands_table_list and bands_count == 2 %}
       * - **Bands**
-        - `{{ bands_count }} bands of data ({{ bands_table_list[0].name }}, {{ bands_table_list[1].name }}) <./?tab=specifications>`_
+        - `{{ bands_count }} bands of data ({{ bands_table_list[0].name }} and {{ bands_table_list[1].name }}) <./?tab=specifications>`_
       {%- elif bands_table_list and bands_count == 1 %}
       * - **Bands**
         - `{{ bands_count }} band of data ({{ bands_table_list[0].name }}) <./?tab=specifications>`_
