@@ -63,7 +63,7 @@
 {# Macros #}
 
 {% macro format_version_number(version_number) -%}
-{%- if version_number -%}
+{%- if (version_number|string)[0].isdigit() -%}
 {{ "v" ~ version_number }}
 {%- else -%}
 {{ version_number }}
