@@ -356,10 +356,10 @@
       {%- endif %}
       {% if bands_table_list and bands_count > 3 %}
       * - **Bands**
-        - `This product has {{ bands_count }} bands of data ({{ bands_table_list[0].name }}, {{ bands_table_list[1].name }}, and more) <./?tab=specifications>`_
+        - `{{ bands_count }} bands of data ({{ bands_table_list[0].name }}, {{ bands_table_list[1].name }}, and more) <./?tab=specifications>`_
       {%- elif bands_table_list %}
       * - **Bands**
-        - `This product has {{ bands_count }} bands of data <./?tab=specifications>`_
+        - `{{ bands_count }} bands of data <./?tab=specifications>`_
       {%- endif %}
       {%- if page.data.doi %}
       * - **DOI**
