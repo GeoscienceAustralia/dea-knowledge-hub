@@ -2,13 +2,13 @@
 
 # Bands
 
-# bands_footnote: "For more information on these bands, see the `Description tab <./?tab=description>`_."
-#
-# bands_table:
-#   - name: water
-#     aliases: []
-#     resolution: 30 m
-#     nodata: 1
-#     units: null
-#     type: uint8
-#     description: null
+bands_footnote: "For more information on these bands, see the `Description tab <./?tab=description>`_."
+
+bands_table:
+  - name: water
+    aliases: []
+    resolution: 30 m
+    nodata: 1
+    units: null
+    type: uint8
+    description: null

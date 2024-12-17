@@ -2,195 +2,195 @@
 
 # Bands
 
-# bands_footnote: null
-#
-# bands_table:
-#   - name: nbart_coastal_aerosol
-#     aliases:
-#       - nbart_band01
-#       - coastal_aerosol
-#     resolution: 15-30 m
-#     nodata: -999
-#     units: null
-#     type: int16
-#     description: null
-#   - name: nbart_blue
-#     aliases:
-#       - nbart_band02
-#       - blue
-#     resolution: 15-30 m
-#     nodata: -999
-#     units: null
-#     type: int16
-#     description: null
-#   - name: nbart_green
-#     aliases:
-#       - nbart_band03
-#       - green
-#     resolution: 15-30 m
-#     nodata: -999
-#     units: null
-#     type: int16
-#     description: null
-#   - name: nbart_red
-#     aliases:
-#       - nbart_band04
-#       - red
-#     resolution: 15-30 m
-#     nodata: -999
-#     units: null
-#     type: int16
-#     description: null
-#   - name: nbart_nir
-#     aliases:
-#       - nbart_band05
-#       - nir
-#       - nbart_common_nir
-#     resolution: 15-30 m
-#     nodata: -999
-#     units: null
-#     type: int16
-#     description: null
-#   - name: nbart_swir_1
-#     aliases:
-#       - nbart_band06
-#       - swir_1
-#       - nbart_common_swir_1
-#       - swir1
-#     resolution: 15-30 m
-#     nodata: -999
-#     units: null
-#     type: int16
-#     description: null
-#   - name: nbart_swir_2
-#     aliases:
-#       - nbart_band07
-#       - swir_2
-#       - nbart_common_swir_2
-#       - swir2
-#     resolution: 15-30 m
-#     nodata: -999
-#     units: null
-#     type: int16
-#     description: null
-#   - name: nbart_panchromatic
-#     aliases:
-#       - nbart_band08
-#       - panchromatic
-#     resolution: 15-30 m
-#     nodata: -999
-#     units: null
-#     type: int16
-#     description: null
-#   - name: oa_fmask
-#     aliases:
-#       - fmask
-#     resolution: 15-30 m
-#     nodata: 0
-#     units: null
-#     type: uint8
-#     description: null
-#   - name: oa_nbart_contiguity
-#     aliases:
-#       - nbart_contiguity
-#     resolution: 15-30 m
-#     nodata: 255
-#     units: null
-#     type: uint8
-#     description: null
-#   - name: oa_azimuthal_exiting
-#     aliases:
-#       - azimuthal_exiting
-#     resolution: 15-30 m
-#     nodata: NaN
-#     units: null
-#     type: float32
-#     description: null
-#   - name: oa_azimuthal_incident
-#     aliases:
-#       - azimuthal_incident
-#     resolution: 15-30 m
-#     nodata: NaN
-#     units: null
-#     type: float32
-#     description: null
-#   - name: oa_combined_terrain_shadow
-#     aliases:
-#       - combined_terrain_shadow
-#     resolution: 15-30 m
-#     nodata: 255
-#     units: null
-#     type: uint8
-#     description: null
-#   - name: oa_exiting_angle
-#     aliases:
-#       - exiting_angle
-#     resolution: 15-30 m
-#     nodata: NaN
-#     units: null
-#     type: float32
-#     description: null
-#   - name: oa_incident_angle
-#     aliases:
-#       - incident_angle
-#     resolution: 15-30 m
-#     nodata: NaN
-#     units: null
-#     type: float32
-#     description: null
-#   - name: oa_relative_azimuth
-#     aliases:
-#       - relative_azimuth
-#     resolution: 15-30 m
-#     nodata: NaN
-#     units: null
-#     type: float32
-#     description: null
-#   - name: oa_relative_slope
-#     aliases:
-#       - relative_slope
-#     resolution: 15-30 m
-#     nodata: NaN
-#     units: null
-#     type: float32
-#     description: null
-#   - name: oa_satellite_azimuth
-#     aliases:
-#       - satellite_azimuth
-#     resolution: 15-30 m
-#     nodata: NaN
-#     units: null
-#     type: float32
-#     description: null
-#   - name: oa_satellite_view
-#     aliases:
-#       - satellite_view
-#     resolution: 15-30 m
-#     nodata: NaN
-#     units: null
-#     type: float32
-#     description: null
-#   - name: oa_solar_azimuth
-#     aliases:
-#       - solar_azimuth
-#     resolution: 15-30 m
-#     nodata: NaN
-#     units: null
-#     type: float32
-#     description: null
-#   - name: oa_solar_zenith
-#     aliases:
-#       - solar_zenith
-#     resolution: 15-30 m
-#     nodata: NaN
-#     units: null
-#     type: float32
-#     description: null
-#   - name: oa_time_delta
-#     aliases:
-#       - time_delta
-#     resolution: 15-30 m
-#     nodata: NaN
-#     units: null
-#     type: float32
-#     description: null
+bands_footnote: "For all 'nbar_' bands, Surface Reflectance is scaled between 0 and 10,000."
+
+bands_table:
+  - name: nbar_coastal_aerosol
+    aliases:
+      - nbar_band01
+      - coastal_aerosol
+    resolution: 30
+    nodata: -999
+    units: null
+    type: int16
+    description: null
+  - name: nbar_blue
+    aliases:
+      - nbar_band02
+      - blue
+    resolution: 30
+    nodata: -999
+    units: null
+    type: int16
+    description: null
+  - name: nbar_green
+    aliases:
+      - nbar_band03
+      - green
+    resolution: 30
+    nodata: -999
+    units: null
+    type: int16
+    description: null
+  - name: nbar_red
+    aliases:
+      - nbar_band04
+      - red
+    resolution: 30
+    nodata: -999
+    units: null
+    type: int16
+    description: null
+  - name: nbar_nir
+    aliases:
+      - nbar_band05
+      - nir
+      - nbar_common_nir
+    resolution: 30
+    nodata: -999
+    units: null
+    type: int16
+    description: null
+  - name: nbar_swir_1
+    aliases:
+      - nbar_band06
+      - swir_1
+      - nbar_common_swir_1
+      - swir1
+    resolution: 30
+    nodata: -999
+    units: null
+    type: int16
+    description: null
+  - name: nbar_swir_2
+    aliases:
+      - nbar_band07
+      - swir_2
+      - nbar_common_swir_2
+      - swir2
+    resolution: 30
+    nodata: -999
+    units: null
+    type: int16
+    description: null
+  - name: nbar_panchromatic
+    aliases:
+      - nbar_band08
+      - panchromatic
+    resolution: 15
+    nodata: -999
+    units: null
+    type: int16
+    description: null
+  - name: oa_fmask
+    aliases:
+      - fmask
+    resolution: 30
+    nodata: 0
+    units: null
+    type: uint8
+    description: null
+  - name: oa_nbar_contiguity
+    aliases:
+      - nbar_contiguity
+    resolution: 30
+    nodata: 255
+    units: null
+    type: uint8
+    description: null
+  - name: oa_azimuthal_exiting
+    aliases:
+      - azimuthal_exiting
+    resolution: 30
+    nodata: NaN
+    units: null
+    type: float32
+    description: null
+  - name: oa_azimuthal_incident
+    aliases:
+      - azimuthal_incident
+    resolution: 30
+    nodata: NaN
+    units: null
+    type: float32
+    description: null
+  - name: oa_combined_terrain_shadow
+    aliases:
+      - combined_terrain_shadow
+    resolution: 30
+    nodata: 255
+    units: null
+    type: uint8
+    description: null
+  - name: oa_exiting_angle
+    aliases:
+      - exiting_angle
+    resolution: 30
+    nodata: NaN
+    units: null
+    type: float32
+    description: null
+  - name: oa_incident_angle
+    aliases:
+      - incident_angle
+    resolution: 30
+    nodata: NaN
+    units: null
+    type: float32
+    description: null
+  - name: oa_relative_azimuth
+    aliases:
+      - relative_azimuth
+    resolution: 30
+    nodata: NaN
+    units: null
+    type: float32
+    description: null
+  - name: oa_relative_slope
+    aliases:
+      - relative_slope
+    resolution: 30
+    nodata: NaN
+    units: null
+    type: float32
+    description: null
+  - name: oa_satellite_azimuth
+    aliases:
+      - satellite_azimuth
+    resolution: 30
+    nodata: NaN
+    units: null
+    type: float32
+    description: null
+  - name: oa_satellite_view
+    aliases:
+      - satellite_view
+    resolution: 30
+    nodata: NaN
+    units: null
+    type: float32
+    description: null
+  - name: oa_solar_azimuth
+    aliases:
+      - solar_azimuth
+    resolution: 30
+    nodata: NaN
+    units: null
+    type: float32
+    description: null
+  - name: oa_solar_zenith
+    aliases:
+      - solar_zenith
+    resolution: 30
+    nodata: NaN
+    units: null
+    type: float32
+    description: null
+  - name: oa_time_delta
+    aliases:
+      - time_delta
+    resolution: 30
+    nodata: NaN
+    units: null
+    type: float32
+    description: null

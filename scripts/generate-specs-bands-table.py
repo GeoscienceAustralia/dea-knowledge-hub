@@ -3,10 +3,9 @@
 # How to use this script:
 
 # 1. In the 'CONFIGURATION' dictionary, change the 'product_id' to the Product ID of the relevant product. Ensure that this is correct, as it will be used to select metadata from the Datacube.
-# 2. In the 'CONFIGURATION' dictionary, edit the 'resolution' according to the resolution of the product. This will be copied to all bands in the YAML output, but it can be edited manually in the YAML.
-# 3. Run this script in the DEA Sandbox and it will print YAML output.
-# 4. Copy the output and paste it into the '_tables.yaml' file of the relevant product. E.g. https://github.com/GeoscienceAustralia/dea-knowledge-hub/blob/main/docs/data/product/dea-intertidal/_tables.yaml
-# 5. Edit the YAML as needed. It is recommended to write a brief description for each band.
+# 2. Run this script in the DEA Sandbox and it will print YAML output.
+# 3. Copy the output and paste it into the '_tables.yaml' file of the relevant product. E.g. https://github.com/GeoscienceAustralia/dea-knowledge-hub/blob/main/docs/data/product/dea-intertidal/_tables.yaml
+# 4. Edit the YAML as needed. It is recommended to write a brief description for each band.
 
 import sys
 import yaml
@@ -18,7 +17,6 @@ import pandas as pd
 
 CONFIGURATION = {
     "product_id": "ga_ls5t_gm_cyear_3",
-    "resolution": "10 m"
 }
 
 # Fetch measurements of all products from the Datacube
@@ -38,7 +36,7 @@ except Exception as e:
 product_df = (
     products_df.loc[CONFIGURATION["product_id"]]
     .drop(["flags_definition"], axis=1)
-    .assign(resolution=CONFIGURATION["resolution"], description=None)
+    .assign(resolution=None, description=None)
     .rename({"dtype": "type"}, axis=1)
     .reset_index(drop=True)
 )[["name", "aliases", "resolution", "nodata", "units", "type", "description"]]
@@ -52,6 +50,28 @@ product_df["aliases"] = product_df["aliases"].fillna("").infer_objects(copy=Fals
 product_df["units"] = (
     product_df["units"].str.upper().str[0] + product_df["units"].str[1:]
 )
+
+product_df.loc[product_df["units"] == "1", "units"] = None
+
+# Load a single dataset
+
+dss = dc.find_datasets(product=CONFIGURATION['product_id'], limit=1)[0]
+
+# Extract grids used across dataset, and resolution from grid transform
+
+grid_dict = {k:int(v["transform"][0]) for k, v in dss.metadata_doc["grids"].items()}
+
+# For each band, cross-reference to grid dataset, using "default" grid if not available 
+
+band_resolutions = []
+for band_name in product_df.name:
+    grid_name = dss.measurements[band_name].get("grid", "default")
+    band_resolutions.append(grid_dict[grid_name])
+
+# Add resolutions back into dataframe
+
+product_df["resolution"] = band_resolutions
+product_df 
 
 # Convert to a dictionary
 
