@@ -90,6 +90,8 @@
 
 {% set bands_table_list = page.tables.bands_table | selectattr("name", "!=", None) | list %}
 
+{% set bands_count = bands_table_list | length %}
+
 {% set page_title = page.data.short_name if page.data.is_latest_version else "v{}. {}".format(page.data.version_number, page.data.short_name) %}
 
 {% set display_title = page.data.short_name if page.data.is_latest_version else "{} v{}".format(page.data.short_name, page.data.version_number) %}
@@ -354,7 +356,7 @@
       {%- endif %}
       {% if bands_table_list %}
       * - **Bands**
-        - `View {{ bands_table_list | length }} bands <./?tab=specifications>`_
+        - `View {{ bands_count }} bands <./?tab=specifications>`_
       {%- endif %}
       {%- if page.data.doi %}
       * - **DOI**
