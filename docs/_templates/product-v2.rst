@@ -63,7 +63,11 @@
 {# Macros #}
 
 {% macro format_version_number(version_number) -%}
+{%- if version_number -%}
 {{ "v" ~ version_number }}
+{%- else -%}
+{{ version_number }}
+{%- endif -%}
 {%- endmacro %}
 
 {# Computed values #}
