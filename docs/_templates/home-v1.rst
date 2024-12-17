@@ -62,7 +62,7 @@
       .. image:: /_files/cmi/Kakadu-Mary_TCW-percentiles-wide_1.jpg
          :class: no-gallery
 
-.. container:: showcase-panel bg-gradient-space
+.. container:: showcase-panel bg-gradient-stone
    :name: dea-notebooks
 
    .. container::
@@ -78,7 +78,7 @@
       .. image:: /_files/validation/validation-drone-thumbnail.jpg
          :class: no-gallery
 
-.. container:: showcase-panel bg-gradient-stone reverse
+.. container:: showcase-panel bg-gradient-space reverse
    :name: changelog
 
    .. container::
