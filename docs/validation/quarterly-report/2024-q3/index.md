@@ -48,7 +48,7 @@ based on the most recent measurements.
  
 ## Summary of Validation Work
 
-6 sites were measured, with 9 individual field site captures. The table below summarises these captures.
+6 sites were measured, with 9 individual field site captures. The Table below summarises these captures.
 
 :::{csv-table} Summary of field site captures
 :header-rows: 1
@@ -97,14 +97,14 @@ shows the elevation profile of the hill, following along the white line drawn in
 ::::
 
 <figure class="align-default">
-    <figcaption>The figure shows three images taken by the drone during flight on 6 July 2024, showing the transition between cultivated field and native area (left) and examples of tree canopy in the field site area (middle and right). This figure highlights the challenges of validating the site, where the surface reflectance properties vary strongly and individual sight lines may land on tree canopy, shadow or somewhere in between.</figcaption>
+    <figcaption>The Figure shows three images taken by the drone during flight on 6 July 2024, showing the transition between cultivated field and native area (left) and examples of tree canopy in the field site area (middle and right). This Figure highlights the challenges of validating the site, where the surface reflectance properties vary strongly and individual sight lines may land on tree canopy, shadow or somewhere in between.</figcaption>
 </figure>
      
 ## Summary of Band-by-Band Matching
 
 :::{figure} ./2024Q3-Matchup.png
 
-The figure shows comparison data for each platform. Black dots represent data that were collected prior to this quarter.
+The Figure shows comparison data for each platform. Black dots represent data that were collected prior to this quarter.
 Coloured symbols represent data that were collected in this quarter. The diagonal line in each panel shows the
 one-to-one correspondence between field and satellite data. Note that this diagonal line does NOT show the line of best
 fit. It is plotted this way to highlight any trends where the data may be biased away from the line of one-to-one
@@ -112,7 +112,7 @@ correspondence. The statistics in the bottom-right corner of each panel provide 
 through all points up to and including this quarter’s data.
 :::
 
-The table below lists overall validation results. These are based on the standard deviation of the scatter that we find
+The Table below lists overall validation results. These are based on the standard deviation of the scatter that we find
 for each band of each sensor. This is when taking all the validation results together, up to and including this quarter’s
 results. The band-by-band scatter is representative of the validation performance of each band. Rather than providing
 values for each individual band, we characterise all results by looking at the mean and maximum scatter for each
@@ -128,7 +128,7 @@ platform.
 "Sentinel-2B","2.6%","4.4%"
 :::
 
-For example, the table shows that each Landsat 8 band is typically validated to 2-3%, with the worst performance
+For example, the Table shows that each Landsat 8 band is typically validated to 2-3%, with the worst performance
 of a band being 3.1%. Note that there is much larger scatter for Landsat 9, indicating higher uncertainty in validation.
 This is because there have been fewer field site measurements to coincide with the relatively new Landsat 9 platform.
 

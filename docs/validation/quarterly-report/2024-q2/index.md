@@ -46,7 +46,7 @@ based on the most recent measurements.
  
 ## Summary of Validation Work
 
-2 sites were measured, with 3 individual field site captures. The table below summarises these captures.
+2 sites were measured, with 3 individual field site captures. The Table below summarises these captures.
 
 :::{csv-table} Summary of field site captures
 :header-rows: 1
@@ -59,7 +59,7 @@ based on the most recent measurements.
  
 :::{figure} ./2024Q2_Locations.png
 
-The figure shows the locations of the field sites measured in this quarter.
+The Figure shows the locations of the field sites measured in this quarter.
 ::: 
 
 ## Comments on Individual Sites of Interest
@@ -70,7 +70,7 @@ No sites of particular interest.
 
 :::{figure} ./2024Q2-Matchup.png
 
-The figure shows comparison data for each platform. Black dots represent data that were collected prior to this quarter.
+The Figure shows comparison data for each platform. Black dots represent data that were collected prior to this quarter.
 Coloured symbols represent data that were collected in this quarter. The diagonal line in each panel shows the
 one-to-one correspondence between field and satellite data. Note that this diagonal line does NOT show the line of best
 fit. It is plotted this way to highlight any trends where the data may be biased away from the line of one-to-one
@@ -78,7 +78,7 @@ correspondence. The statistics in the bottom-right corner of each panel provide 
 through all points up to and including this quarter’s data.
 :::
 
-The table below lists overall validation results. These are based on the standard deviation of the scatter that we find
+The Table below lists overall validation results. These are based on the standard deviation of the scatter that we find
 for each band of each sensor. This is when taking all the validation results together, up to and including this quarter’s
 results. The band-by-band scatter is representative of the validation performance of each band. Rather than providing
 values for each individual band, we characterise all results by looking at the mean and maximum scatter for each
@@ -94,7 +94,7 @@ platform.
 "Sentinel-2B","2.5%","4.5%"
 :::
 
-For example, the table shows that each Landsat 8 band is typically validated to 2-3%, with the worst performance
+For example, the Table shows that each Landsat 8 band is typically validated to 2-3%, with the worst performance
 of a band being 3.1%. Note that there is much larger scatter for Landsat 9, indicating higher uncertainty in validation.
 This is because there have been fewer field site measurements to coincide with the relatively new Landsat 9 platform.
 
