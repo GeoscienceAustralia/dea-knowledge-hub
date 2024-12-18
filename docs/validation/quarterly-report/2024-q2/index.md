@@ -7,7 +7,7 @@
 
 ## Executive Summary
 
-This Quarterly report summarises validation for DEA surface reflectance products for quarter 2 (April-June), 2024
+This Quarterly report summarises validation for DEA surface reflectance products for Quarter 2 (April-June) of 2024
 and presents aggregate validation results to the end of this quarter.
 
 * During this quarter, 2 field sites were measured 3 times and can be matched to 3 overpasses.
