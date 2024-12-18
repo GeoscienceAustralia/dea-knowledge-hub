@@ -96,7 +96,7 @@ platform.
 :::
 
 The Table indicates that, for example, each Landsat 8 band is validated to typically 2-3%, with the worst band
-performance being 3.1%. Note that there is much larger scatter (ie. uncertainty in validation) for Landsat 9. This is
+performance being 3.1%. Note that there is much larger scatter (i.e. uncertainty in validation) for Landsat 9. This is
 because there have been fewer field site measurements to coincide with the relatively new Landsat 9 platform.
  
 
