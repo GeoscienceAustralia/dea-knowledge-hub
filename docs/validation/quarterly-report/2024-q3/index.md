@@ -49,7 +49,7 @@ based on the most recent measurements.
  
 ## Summary of Validation Work
 
-6 sites were measured, with 9 individual field site captures. The table below summarises these captures:
+6 sites were measured, with 9 individual field site captures. The table below summarises these captures.
 
 :::{csv-table} Summary of field site captures
 :header-rows: 1
