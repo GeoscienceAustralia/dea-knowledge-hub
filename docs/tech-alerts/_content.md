@@ -10,7 +10,7 @@ Learn more about the [DEA Summary Product Grid](/guides/reference/collection_3_s
 
 ## 19 Dec 2024: NOAA-21-derived DEA Hotspots are now available  
 
-Following our [communication](https://communication.ga.gov.au/link/id/zzzz675f7ce74a008871Pzzzz6567c8b713b5b826/page.html) in November regarding changes to the Hotspots service, we are pleased to advise that Hotspots derived from the Visible Infrared Imaging Radiometer Suite (VIIRS) sensor onboard NOAA-21 are now available. NOAA-21 currently passes over Australia at approximately 3pm and 2am Australian Eastern Standard Time, increasing the density and reliability of the afternoon and nighttime observations.
+Following our [communication](https://communication.ga.gov.au/link/id/zzzz675f7ce74a008871Pzzzz6567c8b713b5b826/page.html) in November regarding changes to the Hotspots service, we are pleased to advise that Hotspots derived from the Visible Infrared Imaging Radiometer Suite (VIIRS) sensor onboard NOAA-21 are now available. NOAA-21 currently passes over Australia at approximately 3pm and 2am Australian Eastern Standard Time, increasing the density and reliability of the afternoon and nighttime observations.
 
 In the Hotspots application, the NOAA-21 feed is off by default. You can include either the VIIRS ‘AFIMG NOAA-21’, or ‘AFMOD NOAA-21’ Hotspots algorithms as additional layers in the Hotspots map interface by selecting these layers from the VIIRS menu in the legend.  
 
