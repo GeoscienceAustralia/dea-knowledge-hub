@@ -20,11 +20,11 @@ and presents aggregate validation results to the end of this quarter.
 This quarterly report presents a summary of results from Q3 2024 from the Digital Earth
 Calibration/Validation team. The report is presented in the following sections:
 
-* Background outlines the context around this work, with particular attention on historical work leading up to this quarter.
-* Summary of Validation Work presents an overall picture of the field site measurements undertaken in a table and map.
-* Comments on Individual Sites of Interest focuses on any sites where some aspect of the site or measurement was atypical.
-* Summary of Band-by-Band Matching presents comparison data for this quarter’s results, in the context of all previous results.
-* Comments on How This Quarter’s Work Has Affected Combined Validation Results discusses how the average results for each sensor have changed with the introduction of new validation data from this quarter. This section combines all band data for each platform to show averaged validation results.
+* Background &mdash; this section outlines the context around this work, with particular attention on historical work leading up to this quarter.
+* Summary of Validation Work &mdash; this section presents an overall picture of the field site measurements undertaken in a table and map.
+* Comments on Individual Sites of Interest &mdash; this section focuses on any sites where some aspect of the site or measurement was atypical.
+* Summary of Band-by-Band Matching &mdash; this section presents comparison data for this quarter’s results, in the context of all previous results.
+* Comments on How This Quarter’s Work Has Affected Combined Validation Results &mdash; this section discusses how the average results for each sensor have changed with the introduction of new validation data from this quarter. This section combines all band data for each platform to show averaged validation results.
 
 The Q3, 2024 validation report includes field site measurements that were captured as part of the winter transect work
 across South Australia and New South Wales. Note that one field site measurement for SA1 is part of the Q2 2024
