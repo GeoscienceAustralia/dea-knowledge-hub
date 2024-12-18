@@ -75,7 +75,7 @@ The Figure shows comparison data for each platform. Black dots represent data th
 Coloured symbols represent data that were collected in this quarter. The diagonal line in each panel shows the
 one-to-one correspondence between field and satellite data. Note that this diagonal line does NOT show the line of best
 fit. It is plotted this way to highlight any trends where the data may be biased away from the line of one-to-one
-correspondence. Statistics, given in the bottom right-hand corner of each panel, show details for the line of best fit
+correspondence. The statistics in the bottom-right corner of each panel provide details for the line of best fit
 through all points up to and including this quarter’s data.
 :::
 
