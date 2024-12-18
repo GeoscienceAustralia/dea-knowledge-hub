@@ -31,17 +31,17 @@ across South Australia. Note that only one field site measurement for SA1 is par
 ## Background
 
 The Digital Earth branch within Geoscience Australia offers a suite of Earth observation products, based on data from
-both Landsat and Sentinel platforms. The core products are Landsat 8 and 9 and Sentinel-2A and -2B surface reflectance.
+both Landsat and Sentinel platforms. The core products are Landsat 8 and 9 and Sentinel-2A and -2B surface reflectance (SR).
 To deliver these products with confidence, the Calibration and Validation (Cal/Val) team perform vicarious validation
 by measuring field sites with hand-held equipment or an Unstaffed Aerial Vehicle (UAV; commonly known as drone) equipment
 close to the time of an overpass. This work began with Phase 1, where measurements were performed by multiple groups
 across continental Australia. Full details on the results and methodology can be found in the Phase 1 report.
 
-Data for both surface reflectance products and from field site measurements are made freely available. For surface reflectance products, you can visualise
+Data for both SR products and from field site measurements are made freely available. For SR products, you can visualise
 the data in [DEA Maps](https://maps.dea.ga.gov.au/), or for a more in-depth understanding and direct access to data, please visit the [DEA Knowledge Hub Data Products section](https://knowledge.dea.ga.gov.au/data/). Field measurement data are made available through the [National Spectral Database](https://www.ga.gov.au/scientific-topics/dea/dea-data-and-products/national-spectral-database).
 
 As more field sites are measured and as newer measurements are made over the same field sites, the overall validation of
-surface reflectance products becomes more accurate. The purpose of this report is to provide an up-to-date status of validation accuracy,
+SR products becomes more accurate. The purpose of this report is to provide an up-to-date status of validation accuracy,
 based on the most recent measurements.
  
 ## Summary of Validation Work

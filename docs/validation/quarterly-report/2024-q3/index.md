@@ -33,17 +33,17 @@ validation report and not shown here. No other field site measurements were cond
 ## Background
 
 The Digital Earth branch within Geoscience Australia offers a suite of Earth observation products, based on data from
-both Landsat and Sentinel platforms. The core products are Landsat 8 and 9 and Sentinel-2A and -2B surface reflectance.
+both Landsat and Sentinel platforms. The core products are Landsat 8 and 9 and Sentinel-2A and -2B surface reflectance (SR).
 To deliver these products with confidence, the Calibration and Validation (Cal/Val) team perform vicarious validation
 by measuring field sites with hand-held equipment or an Unstaffed Aerial Vehicle (UAV; commonly known as drone) equipment
 close to the time of an overpass. This work began with Phase 1, where measurements were performed by multiple groups
 across continental Australia. Full details on the results and methodology can be found in the Phase 1 report.
 
-Data for both surface reflectance products and from field site measurements are made freely available. For surface reflectance products, you can visualise
+Data for both SR products and from field site measurements are made freely available. For SR products, you can visualise
 the data in [DEA Maps](https://maps.dea.ga.gov.au/), or for a more in-depth understanding and direct access to data, please visit the [DEA Knowledge Hub Data Products section](https://knowledge.dea.ga.gov.au/data/). Field measurement data are made available through the [National Spectral Database](https://www.ga.gov.au/scientific-topics/dea/dea-data-and-products/national-spectral-database).
 
 As more field sites are measured and as newer measurements are made over the same field sites, the overall validation of
-surface reflectance products becomes more accurate. The purpose of this report is to provide an up-to-date status of validation accuracy,
+SR products becomes more accurate. The purpose of this report is to provide an up-to-date status of validation accuracy,
 based on the most recent measurements.
  
 ## Summary of Validation Work
@@ -139,32 +139,32 @@ results over all time.
 
 For Landsat 8, this quarter has seen an overall improvement in validation results. There were 5 field site comparison
 measurements. The NIR band for NSW6 on 6 July, 2024 stands out as below the line of equality. This is the Boggabri field
-site, where there is a significant slope to the site, as well as strongly changing surface reflectance within the field
+site, where there is a significant slope to the site, as well as strongly changing surface reflectance (SR) within the field
 site. A BRDF correction to the slope has not yet been applied to the SR-3500 data (expected to be done in Q1, 2025),
 which may also contribute to the discrepancy. Overall, the field data for Landsat 8 overpasses continue to improve the
 validation reliability, where the statistics indicate that, with all bands taken together, Landsat 8 data can be relied
-upon to around 1% of the surface reflectance. 
+upon to around 1% of the SR. 
 
 For Landsat 9, this quarter has seen an overall improvement in validation results. There were 4 field site comparison
 measurements. Again, the NIR band for NSW6 on 5 July, 2024 stands out as below the line of equality. This is the
-Boggabri field site, where there is a significant slope to the site, as well as strongly changing surface reflectance
+Boggabri field site, where there is a significant slope to the site, as well as strongly changing SR
 within the field site. A BRDF correction to the slope has not yet been applied to the data, which may also contribute to
 the discrepancy. Overall, the field data for Landsat 9 overpasses continue to improve the validation reliability, where
 the statistics indicate that, with all bands taken together, Landsat 9 data can be relied upon to around 2% of the
-surface reflectance. The larger uncertainty of Landsat 9, when compared to Landsat 8 above, is most likely due to few
+SR. The larger uncertainty of Landsat 9, when compared to Landsat 8 above, is most likely due to few
 overall field site comparisons with the newer Landsat 9 OLI2 sensor.
 
 For Sentinel-2A, this quarter has seen an overall improvement in validation results. There was 1 field site comparison
 measurement at NSW3 on 3 July, 2024. This measurement shows an excellent match. Overall, the field data for Sentinel-2A
 overpasses continue to improve the validation reliability, where the statistics indicate that, with all bands taken
-together, Sentinel-2A data are consistently within around 1% of the surface reflectance. 
+together, Sentinel-2A data are consistently within around 1% of the SR. 
 
 For Sentinel-2B, this quarter has seen an overall degradation in validation results. There was 1 field site comparison
 measurement at NSW6 on 5 July, 2024. This measurement is the Boggabri field site, where there is a significant slope to
-the site, as well as strongly changing surface reflectance within the field site. A BRDF correction to the slope has not
+the site, as well as strongly changing SR within the field site. A BRDF correction to the slope has not
 yet been applied to the data, which may also contribute to the discrepancy. Overall, the field data for Sentinel-2B in
 this quarter has slightly degraded validation performance, where the statistics indicate that, with all bands taken
-together, Sentinel-2B data can be relied upon to around 1% of the surface reflectance. 
+together, Sentinel-2B data can be relied upon to around 1% of the SR. 
 
  
 ## Acknowledgments
