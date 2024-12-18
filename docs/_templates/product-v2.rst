@@ -100,6 +100,8 @@
 
 {% set bands_table_list = page.tables.bands_table | selectattr("name", "!=", None) | list %}
 
+{% set bands_count = bands_table_list | length %}
+
 {% set page_title = page.data.short_name if page.data.is_latest_version else format_version_number(page.data.version_number) ~ ". " ~ page.data.short_name %}
 
 {% set display_title = page.data.short_name if page.data.is_latest_version else page.data.short_name ~ " " ~ format_version_number(page.data.version_number) %}
@@ -198,12 +200,8 @@
       `{{ product_ids_list_text }} <./?tab=specifications>`_
       {%- elif product_ids_list %}
       {{ product_ids_list_text }}
-      {%- elif spatial_data_type == spatial_data_type_terms.VECTOR and page.data.enable_specifications %}
-      `Vector product <./?tab=specifications>`_
       {%- elif spatial_data_type == spatial_data_type_terms.VECTOR %}
       Vector product
-      {%- elif page.data.enable_specifications %}
-      `Data product <./?tab=specifications>`_
       {%- else %}
       Data product
       {%- endif %}
@@ -212,8 +210,6 @@
       :Version: `{{ page.data.version_number }} <./?tab=history>`_
       {%- elif page.data.is_latest_version %}
       :Version: {{ page.data.version_number }}
-      {%- elif page.data.enable_history %}
-      :Version: `{{ page.data.version_number }} <./?tab=history>`_ (`See latest version <{{ page.data.latest_version_link }}>`_)
       {%- else %}
       :Version: {{ page.data.version_number }} (`See latest version <{{ page.data.latest_version_link }}>`_)
       {%- endif %}
@@ -361,6 +357,16 @@
       {% if page.data.full_technical_name %}
       * - **Technical name**
         - {{ page.data.full_technical_name }}
+      {%- endif %}
+      {% if bands_table_list and bands_count >= 3 %}
+      * - **Bands**
+        - `{{ bands_count }} bands of data ({{ bands_table_list[0].name }}, {{ bands_table_list[1].name }}, and more) <./?tab=specifications>`_
+      {%- elif bands_table_list and bands_count == 2 %}
+      * - **Bands**
+        - `{{ bands_count }} bands of data ({{ bands_table_list[0].name }} and {{ bands_table_list[1].name }}) <./?tab=specifications>`_
+      {%- elif bands_table_list and bands_count == 1 %}
+      * - **Bands**
+        - `Single band of data ({{ bands_table_list[0].name }}) <./?tab=specifications>`_
       {%- endif %}
       {%- if page.data.doi %}
       * - **DOI**
