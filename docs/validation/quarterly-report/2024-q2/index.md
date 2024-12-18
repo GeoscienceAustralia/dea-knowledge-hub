@@ -17,7 +17,7 @@ and presents aggregate validation results to the end of this quarter.
 ## Introduction
 
 This quarterly report presents a summary of results from Q2 2024 from the Digital Earth
-Calibration/Validation team. The report is presented in the following sections:
+Calibration and Validation team. The report is presented in the following sections:
 
 * Background &mdash; this section outlines the context around this work, with particular attention on historical work leading up to this quarter.
 * Summary of Validation Work &mdash; this section presents an overall picture of the field site measurements undertaken in a table and map.
@@ -25,24 +25,24 @@ Calibration/Validation team. The report is presented in the following sections:
 * Summary of Band-by-Band Matching &mdash; this section presents comparison data for this quarter’s results, in the context of all previous results.
 * Comments on How This Quarter’s Work Has Affected Combined Validation Results &mdash; this section discusses how the average results for each sensor have changed with the introduction of new validation data from this quarter. This section combines all band data for each platform to show averaged validation results.
 
-The Q2, 2024 validation report includes field site measurements that were captured as part of the winter transect work
+The Q2 2024 validation report includes field site measurements that were captured as part of the winter transect work
 across South Australia. Note that only one field site measurement for SA1 is part of this report, with other sites appearing in the Q3 2024 validation report.
  
 ## Background
 
 The Digital Earth branch within Geoscience Australia offers a suite of Earth observation products, based on data from
-both Landsat and Sentinel platforms. The core products are Landsat 8 and 9 and Sentinel-2A and -2B surface reflectance
-(SR). To deliver these products with surety, the Calibration and Validation (Cal/Val) team perform vicarious validation
-by measuring field sites with hand-held or Unstaffed Aerial Vehicle (UAV, commonly known as drones)-based equipment
+both Landsat and Sentinel platforms. The core products are Landsat 8 and 9 and Sentinel-2A and -2B surface reflectance.
+To deliver these products with surety, the Calibration and Validation (Cal/Val) team perform vicarious validation
+by measuring field sites with hand-held equipment or an Unstaffed Aerial Vehicle (UAV; commonly known as drone) equipment
 close to the time of an overpass. This work began with Phase 1, where measurements were performed by multiple groups
 across continental Australia. Full details on the results and methodology can be found in the Phase 1 report.
 
-Data for both SR products and from field site measurements are made freely available. For SR products, you can visualise
+Data for both surface reflectance products and from field site measurements are made freely available. For surface reflectance products, you can visualise
 the data at DEA Maps, or for a more in-depth understanding and direct access to data, please visit the DEA Data and
 Products page. Field measurement data are made available through the National Spectral Database.
 
 As more field sites are measured and as newer measurements are made over the same field sites, the overall validation of
-SR products becomes more accurate. The purpose of this report is to provide an up-to-date status of validation accuracy,
+surface reflectance products becomes more accurate. The purpose of this report is to provide an up-to-date status of validation accuracy,
 based on the most recent measurements.
  
 ## Summary of Validation Work
