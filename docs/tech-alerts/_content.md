@@ -8,6 +8,14 @@
 Learn more about the [DEA Summary Product Grid](/guides/reference/collection_3_summary_grid/).
 ::::
 
+## 19 Dec 2024: NOAA-21-derived DEA Hotspots are now available  
+
+Following our [communication](https://communication.ga.gov.au/link/id/zzzz675f7ce74a008871Pzzzz6567c8b713b5b826/page.html) in November regarding changes to the Hotspots service, we are pleased to advise that Hotspots derived from the Visible Infrared Imaging Radiometer Suite (VIIRS) sensor onboard NOAA-21 are now available. NOAA-21 currently passes over Australia at approximately 3pm and 2am Australian Eastern Standard Time, increasing the density and reliability of the afternoon and nighttime observations.
+
+In the Hotspots application, the NOAA-21 feed is off by default. You can include either the VIIRS ‘AFIMG NOAA-21’, or ‘AFMOD NOAA-21’ Hotspots algorithms as additional layers in the Hotspots map interface by selecting these layers from the VIIRS menu in the legend.  
+
+[View the Tech Alert](https://communication.ga.gov.au/DEAHotspots-19Dec24)
+
 ## 16 Dec 2024: Sentinel-2 data missing from AWS over inland Australia between November 2023 and February 2024 to be restored
 
 We are aware of missing Sentinel-2 data in [DEA's Amazon Web Services (AWS) database](https://explorer.dea.ga.gov.au/products) over inland Australia between November 2023 and February 2024. This was caused by a syncing issue between the National Computational Infrastructure (NCI) and AWS. You can still access this data from our [NCI database](https://explorer.nci.dea.ga.gov.au/products). We are working on restoring this data in our AWS database.
