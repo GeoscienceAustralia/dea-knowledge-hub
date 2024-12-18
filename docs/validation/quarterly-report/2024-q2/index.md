@@ -16,7 +16,7 @@ and presents aggregate validation results to the end of this quarter.
 
 ## Introduction
 
-This quarterly report presents a summary of results from Q2 2024 (April-June) from the Digital Earth
+This quarterly report presents a summary of results from Q2 2024 from the Digital Earth
 Calibration/Validation team. The report is presented in the following sections:
 
 * Background outlines the context around this work, with particular attention on historical work leading up to this quarter.
