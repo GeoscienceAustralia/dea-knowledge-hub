@@ -65,7 +65,7 @@ The Figure shows the locations of the field sites measured in this quarter.
 
 ## Comments on Individual Sites of Interest
 
-**No sites of particular interest**
+No sites of particular interest.
      
 ## Summary of Band-by-Band Matching
 
