@@ -38,7 +38,7 @@ close to the time of an overpass. This work began with Phase 1, where measuremen
 across continental Australia. Full details on the results and methodology can be found in the Phase 1 report.
 
 Data for both surface reflectance products and from field site measurements are made freely available. For surface reflectance products, you can visualise
-the data in [DEA Maps](https://maps.dea.ga.gov.au/), or for a more in-depth understanding and direct access to data, please visit the [DEA Knowledge Hub Data Products section](https://knowledge.dea.ga.gov.au/data/). Field measurement data are made available through the National Spectral Database.
+the data in [DEA Maps](https://maps.dea.ga.gov.au/), or for a more in-depth understanding and direct access to data, please visit the [DEA Knowledge Hub Data Products section](https://knowledge.dea.ga.gov.au/data/). Field measurement data are made available through the [National Spectral Database](https://www.ga.gov.au/scientific-topics/dea/dea-data-and-products/national-spectral-database).
 
 As more field sites are measured and as newer measurements are made over the same field sites, the overall validation of
 surface reflectance products becomes more accurate. The purpose of this report is to provide an up-to-date status of validation accuracy,
@@ -59,7 +59,7 @@ based on the most recent measurements.
  
 :::{figure} ./2024Q2_Locations.png
 
-The Figure shows the locations of the field sites measured in this quarter.
+The figure shows the locations of the field sites measured in this quarter.
 ::: 
 
 ## Comments on Individual Sites of Interest
@@ -70,7 +70,7 @@ No sites of particular interest.
 
 :::{figure} ./2024Q2-Matchup.png
 
-The Figure shows comparison data for each platform. Black dots represent data that were collected prior to this quarter.
+The figure shows comparison data for each platform. Black dots represent data that were collected prior to this quarter.
 Coloured symbols represent data that were collected in this quarter. The diagonal line in each panel shows the
 one-to-one correspondence between field and satellite data. Note that this diagonal line does NOT show the line of best
 fit. It is plotted this way to highlight any trends where the data may be biased away from the line of one-to-one
@@ -94,7 +94,7 @@ platform.
 "Sentinel-2B","2.5%","4.5%"
 :::
 
-The table indicates that, for example, each Landsat 8 band is typically validated to 2-3%, with the worst performance
+For example, the table shows that each Landsat 8 band is typically validated to 2-3%, with the worst performance
 of a band being 3.1%. Note that there is much larger scatter for Landsat 9, indicating higher uncertainty in validation.
 This is because there have been fewer field site measurements to coincide with the relatively new Landsat 9 platform.
 
