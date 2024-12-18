@@ -20,11 +20,11 @@ and presents aggregate validation results to the end of this quarter.
 This quarterly report presents a summary of results from Q3 2024 from the Digital Earth
 Calibration and Validation team. The report is presented in the following sections:
 
-* Background &mdash; this section outlines the context around this work, with particular attention on historical work leading up to this quarter.
-* Summary of Validation Work &mdash; this section presents an overall picture of the field site measurements undertaken in a table and map.
+* Background &mdash; this section outlines the context around this work, with particular attention paid ton historical work leading up to this quarter.
+* Summary of Validation Work &mdash; this section provides an overall view of the field site measurements undertaken.
 * Comments on Individual Sites of Interest &mdash; this section focuses on any sites where some aspect of the site or measurement was atypical.
 * Summary of Band-by-Band Matching &mdash; this section presents comparison data for this quarter’s results, in the context of all previous results.
-* Comments on How This Quarter’s Work Has Affected Combined Validation Results &mdash; this section discusses how the average results for each sensor have changed with the introduction of new validation data from this quarter. This section combines all band data for each platform to show averaged validation results.
+* Comments on How This Quarter’s Work Has Affected Combined Validation Results &mdash; this section discusses how the average results for each sensor have changed with the introduction of new validation data this quarter. All band data for each platform is combined to show averaged validation results.
 
 The Q3 2024 validation report includes field site measurements that were captured as part of the winter transect work
 across South Australia and New South Wales. Note that one field site measurement for SA1 is part of the Q2 2024
@@ -34,14 +34,13 @@ validation report and not shown here. No other field site measurements were cond
 
 The Digital Earth branch within Geoscience Australia offers a suite of Earth observation products, based on data from
 both Landsat and Sentinel platforms. The core products are Landsat 8 and 9 and Sentinel-2A and -2B surface reflectance.
-To deliver these products with surety, the Calibration and Validation (Cal/Val) team perform vicarious validation
+To deliver these products with confidence, the Calibration and Validation (Cal/Val) team perform vicarious validation
 by measuring field sites with hand-held equipment or an Unstaffed Aerial Vehicle (UAV; commonly known as drone) equipment
 close to the time of an overpass. This work began with Phase 1, where measurements were performed by multiple groups
 across continental Australia. Full details on the results and methodology can be found in the Phase 1 report.
 
 Data for both surface reflectance products and from field site measurements are made freely available. For surface reflectance products, you can visualise
-the data at DEA Maps, or for a more in-depth understanding and direct access to data, please visit the DEA Data and
-Products page. Field measurement data are made available through the National Spectral Database.
+the data in [DEA Maps](https://maps.dea.ga.gov.au/), or for a more in-depth understanding and direct access to data, please visit the [DEA Knowledge Hub Data Products section](https://knowledge.dea.ga.gov.au/data/). Field measurement data are made available through the [National Spectral Database](https://www.ga.gov.au/scientific-topics/dea/dea-data-and-products/national-spectral-database).
 
 As more field sites are measured and as newer measurements are made over the same field sites, the overall validation of
 surface reflectance products becomes more accurate. The purpose of this report is to provide an up-to-date status of validation accuracy,
@@ -135,8 +134,8 @@ This is because there have been fewer field site measurements to coincide with t
 
 ## Effect on Cumulative Validation Results
 
-This section discusses the effect that this quarter’s validation results have made on the total all-time validation
-results.
+This section discusses the effect that this quarter’s validation results have had on the total validation
+results over all time.
 
 For Landsat 8, this quarter has seen an overall improvement in validation results. There were 5 field site comparison
 measurements. The NIR band for NSW6 on 6 July, 2024 stands out as below the line of equality. This is the Boggabri field
