@@ -114,7 +114,7 @@ through all points up to and including this quarter’s data.
 :::
 
 The table below lists overall validation results. These are based on the standard deviation of the scatter that we find
-for each band, for each sensor, when taking all the validation results together, up to, and including, this quarter’s
+for each band of each sensor. This is when taking all the validation results together, up to and including this quarter’s
 results. The band-by-band scatter is representative of the validation performance of each band. Rather than providing
 values for each individual band, we characterise all results by looking at the mean and maximum scatter for each
 platform.
@@ -122,17 +122,16 @@ platform.
 :::{csv-table} Validation Results
 :header-rows: 1
 
-"Satellite Platform","Mean band-by-band scatter","Maximum band-by-band scatter"
+"Satellite platform","Mean band-by-band scatter","Maximum band-by-band scatter"
 "Landsat 8","2.4%","3.1%"
 "Landsat 9","13.4%","35.9%"
 "Sentinel-2A","2.2%","2.7%"
 "Sentinel-2B","2.6%","4.4%"
 :::
 
-The Table indicates that, for example, each Landsat 8 band is validated to typically 2-3%, with the worst band
-performance being 3.1%. Note that there is much larger scatter (ie. uncertainty in validation) for Landsat 9. This is
-because there have been fewer field site measurements to coincide with the relatively new Landsat 9 platform.
- 
+The table indicates that, for example, each Landsat 8 band is typically validated to 2-3%, with the worst performance
+of a band being 3.1%. Note that there is much larger scatter for Landsat 9, indicating higher uncertainty in validation.
+This is because there have been fewer field site measurements to coincide with the relatively new Landsat 9 platform.
 
 ## Effect on Cumulative Validation Results
 
