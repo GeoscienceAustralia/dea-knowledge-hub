@@ -474,7 +474,7 @@
 
 {% set specifications_tab_component %}
 {% if page.data.enable_specifications %}
-.. tab-item:: Specifications
+.. tab-item:: Specifications (New)
    :name: specifications
 
    .. raw:: html
