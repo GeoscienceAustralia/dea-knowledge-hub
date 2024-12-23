@@ -1,4 +1,4 @@
-name: Link checker
+name: Check for broken links
 
 # on:
 #   repository_dispatch:
