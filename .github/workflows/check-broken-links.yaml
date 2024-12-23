@@ -2,9 +2,6 @@ name: Check for broken links
 
 on:
   workflow_dispatch: # Triggered manually. In GitHub repository, go to Actions tab > click 'Check for broken links' in sidebar > click 'Run workflow' at the top of the page.
-  pull_request:
-    branches:
-      - main
 
 jobs:
   link-checker:
