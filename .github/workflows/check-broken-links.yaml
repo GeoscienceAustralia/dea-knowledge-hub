@@ -1,15 +1,7 @@
 name: Check for broken links
 
-# on:
-#   repository_dispatch:
-#   workflow_dispatch:
-#   schedule:
-#     - cron: "0 8 * * *" # Run every day at 8 AM
-
 on:
-  pull_request:
-    branches:
-      - main
+  workflow_dispatch: # Triggered manually from the Actions tab of the GitHub repository.
 
 jobs:
   link-checker:
