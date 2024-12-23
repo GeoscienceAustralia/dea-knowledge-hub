@@ -541,7 +541,7 @@
         - {{ layer.description or no_data_terms.dash }} This layer contains the following attributes.
 
           {% for attribute in layer.attributes %}
-          * **{{ attribute.name }}** :raw-html:`&mdash` {{ attribute.description }}
+          * **{{ attribute.name }}** :raw-html:`&mdash;` {{ attribute.description }}
           {% endfor %}
       {% endfor %}
 

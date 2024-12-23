@@ -8,8 +8,6 @@ layers_table:
   - name: shorelines_annual
     description: Annual shoreline vectors that represent the median or ‘most representative’ position of the shoreline at approximately 0 m Above Mean Sea Level for each year since 1988.
     attributes:
-      - name: id
-        description:
       - name: year
         description: The year of each annual shoreline.
       - name: certainty
@@ -18,11 +16,10 @@ layers_table:
         description: The tide datum of each annual shoreline (e.g. “0 m AMSL”).
       - name: id_primary
         description: The name of the annual shoreline’s Primary sediment compartment from the `Australian Coastal Sediment Compartments <https://ecat.ga.gov.au/geonetwork/srv/api/records/21a23d9a-00dd-ab19-e053-10a3070a2746>`_ framework.
+
   - name: rates_of_change
     description: A point dataset providing robust rates of coastal change for every 30 m along Australia’s non-rocky coastlines.
     attributes:
-      - name: id
-        description:
       - name: uid
         description:
       - name: rate_time
