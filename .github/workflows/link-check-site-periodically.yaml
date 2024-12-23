@@ -1,0 +1,30 @@
+name: Link checker that checks the entire site periodically
+
+on:
+  repository_dispatch:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 8 * * *" # Run every day at 8 AM
+
+jobs:
+  linkChecker:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Link Checker
+        id: link-checker
+        uses: lycheeverse/lychee-action@v2
+        with:
+          fail: false
+          output: ./link-checker/results.md
+
+      - name: Create issue From file
+        if: steps.link-checker.outputs.exit_code != 0
+        uses: peter-evans/create-issue-from-file@v5
+        with:
+          title: Link checker report
+          content-filepath: ./link-checker/results.md
+          labels: report, automated issue
