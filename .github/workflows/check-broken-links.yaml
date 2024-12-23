@@ -2,6 +2,9 @@ name: Check for broken links
 
 on:
   workflow_dispatch: # Triggered manually from the Actions tab of the GitHub repository.
+  pull_request:
+    branches:
+      - main
 
 jobs:
   link-checker:
