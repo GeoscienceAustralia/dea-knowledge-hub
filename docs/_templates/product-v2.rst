@@ -531,36 +531,21 @@
       :name: layers
       :class: h2
 
-   Lorem ipsum dolor sit amet.
+   This product contains the following layers and attribute fields.
 
    .. list-table::
       :header-rows: 1
       :name: layers-table
 
       * - 
-        - Aliases
-        - Resolution
-        - No-data
-        - Units
-        - Type
         - Description
+        - Attribute fields
       {% for layer in layers_table_list %}
       * - **{{ layer.name }}**
-        - {%- if layer.aliases %}
-          {%- for alias in layer.aliases %}
-          | {{ alias }}
-          {%- endfor %}
-          {%- else %}
-          {{ no_data_terms.dash }}
-          {%- endif %}
-        - {{ layer.resolution if layer.resolution or layer.resolution == 0 else no_data_terms.dash }}
-        - {{ layer.nodata if layer.nodata or layer.nodata == 0 else "" }}
-        - {{ layer.units or no_data_terms.dash }}
-        - {{ layer.type or no_data_terms.dash }}
         - {{ layer.description or no_data_terms.dash }}
       {% endfor %}
 
-   {{ page.tables.bands_footnote if page.tables.bands_footnote }}
+   {{ page.tables.layers_footnote if page.tables.layers_footnote }}
 
    {% endif %}
 
