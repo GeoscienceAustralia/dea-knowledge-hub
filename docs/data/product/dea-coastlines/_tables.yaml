@@ -6,8 +6,10 @@ layers_footnote: "For more information on these bands, see the `Description tab 
 
 layers_table:
   - name: shorelines_annual
-    description: A description of the layer.
+    description: Annual shoreline vectors that represent the median or ‘most representative’ position of the shoreline at approximately 0 m Above Mean Sea Level for each year since 1988.
     attributes:
+      - name: id
+        description:
       - name: year
         description: The year of each annual shoreline.
       - name: certainty
@@ -16,3 +18,82 @@ layers_table:
         description: The tide datum of each annual shoreline (e.g. “0 m AMSL”).
       - name: id_primary
         description: The name of the annual shoreline’s Primary sediment compartment from the `Australian Coastal Sediment Compartments <https://ecat.ga.gov.au/geonetwork/srv/api/records/21a23d9a-00dd-ab19-e053-10a3070a2746>`_ framework.
+  - name: rates_of_change
+    description: A point dataset providing robust rates of coastal change for every 30 m along Australia’s non-rocky coastlines.
+    attributes:
+      - name: id
+        description:
+      - name: uid
+        description:
+      - name: rate_time
+        description:
+      - name: sig_time
+        description:
+      - name: se_time
+        description:
+      - name: outl_time
+        description:
+      - name: dist_1990, dist_1991, etc
+        description:
+      - name: angle_std
+        description:
+      - name: valid_obs
+        description:
+      - name: valid_span
+        description:
+      - name: sce
+        description:
+      - name: nsm
+        description:
+      - name: max_year
+        description:
+      - name: min_year
+        description:
+      - name: certainty
+        description:
+      - name: id_primary
+        description:
+      - name:
+        description:
+      - name:
+        description:
+      - name:
+        description:
+      - name:
+        description:
+      - name:
+        description:
+      - name:
+        description:
+      - name:
+        description:
+      - name:
+        description:
+      - name:
+        description:
+      - name:
+        description:
+      - name:
+        description:
+      - name:
+        description:
+      - name:
+        description:
+      - name:
+        description:
+      - name:
+        description:
+      - name:
+        description:
+      - name:
+        description:
+      - name:
+        description:
+      - name:
+        description:
+      - name:
+        description:
+      - name:
+        description:
+      - name:
+        description:
