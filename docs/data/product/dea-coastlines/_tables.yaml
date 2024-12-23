@@ -12,3 +12,16 @@
 #     units: null
 #     type: int16
 #     description: A description of the band.
+
+# Layers
+
+layers_footnote: A footnote underneath the table.
+
+layers_table:
+  - name: example_layer_name
+    aliases: [example_alias_1, example_alias_2]
+    resolution: 30 m
+    nodata: -999
+    units: null
+    type: int16
+    description: A description of the layer.

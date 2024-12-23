@@ -102,6 +102,10 @@
 
 {% set bands_count = bands_table_list | length %}
 
+{% set layers_table_list = page.tables.layers_table | selectattr("name", "!=", None) | list %}
+
+{% set layers_count = layers_table_list | length %}
+
 {% set page_title = page.data.short_name if page.data.is_latest_version else format_version_number(page.data.version_number) ~ ". " ~ page.data.short_name %}
 
 {% set display_title = page.data.short_name if page.data.is_latest_version else page.data.short_name ~ " " ~ format_version_number(page.data.version_number) %}
@@ -520,6 +524,44 @@
       {% endfor %}
 
    {{ page.tables.bands_footnote if page.tables.bands_footnote }}
+   {% endif %}
+
+   {% if layers_table_list %}
+   .. rubric:: Layers
+      :name: layers
+      :class: h2
+
+   Lorem ipsum dolor sit amet.
+
+   .. list-table::
+      :header-rows: 1
+      :name: layers-table
+
+      * - 
+        - Aliases
+        - Resolution
+        - No-data
+        - Units
+        - Type
+        - Description
+      {% for layer in layers_table_list %}
+      * - **{{ layer.name }}**
+        - {%- if layer.aliases %}
+          {%- for alias in layer.aliases %}
+          | {{ alias }}
+          {%- endfor %}
+          {%- else %}
+          {{ no_data_terms.dash }}
+          {%- endif %}
+        - {{ layer.resolution if layer.resolution or layer.resolution == 0 else no_data_terms.dash }}
+        - {{ layer.nodata if layer.nodata or layer.nodata == 0 else "" }}
+        - {{ layer.units or no_data_terms.dash }}
+        - {{ layer.type or no_data_terms.dash }}
+        - {{ layer.description or no_data_terms.dash }}
+      {% endfor %}
+
+   {{ page.tables.bands_footnote if page.tables.bands_footnote }}
+
    {% endif %}
 
    .. rubric:: Product information
