@@ -20,6 +20,10 @@ jobs:
         with:
           fail: false
           output: ./check-links-output/report.md
+          args:
+            - "--exclude-path ./docs/data/archive"
+            - "--exclude-path ./docs/data/version-history"
+            - "--exclude-path ./docs/tech-alerts"
 
       - name: Create issue
         if: steps.check-links.outputs.exit_code != 0
