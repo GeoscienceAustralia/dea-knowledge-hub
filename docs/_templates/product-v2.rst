@@ -534,15 +534,15 @@
    This product contains the following layers and attribute fields.
 
    .. list-table::
-      :header-rows: 1
       :name: layers-table
 
-      * - 
-        - Description
-        - Attribute fields
       {% for layer in layers_table_list %}
       * - **{{ layer.name }}**
-        - {{ layer.description or no_data_terms.dash }}
+        - {{ layer.description or no_data_terms.dash }} This layer contains the following attributes.
+
+          {% for attribute in layer.attributes %}
+          * **{{ attribute.name }}** :raw-html:`&mdash` {{ attribute.description }}
+          {% endfor %}
       {% endfor %}
 
    {{ page.tables.layers_footnote if page.tables.layers_footnote }}
