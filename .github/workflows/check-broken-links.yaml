@@ -1,7 +1,9 @@
+# Learn how to use this GitHub Action: https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/link_checker.html
+
 name: Check for broken links
 
 on:
-  workflow_dispatch: # Triggered manually. In GitHub repository, go to Actions tab > click 'Check for broken links' in sidebar > click 'Run workflow' at the top of the page.
+  workflow_dispatch: # Triggered manually
 
 jobs:
   link-checker:
