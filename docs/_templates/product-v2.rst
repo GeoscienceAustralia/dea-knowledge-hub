@@ -374,13 +374,13 @@
       {%- endif %}
       {% if layers_table_list and layers_count >= 3 %}
       * - **Layers**
-        - `{{ layers_count }} layers of data ({{ layers_table_list[0].name }}, {{ layers_table_list[1].name }}, and more). See attribute fields of these layers. <./?tab=specifications>`_
+        - `{{ layers_count }} layers of data ({{ layers_table_list[0].name }}, {{ layers_table_list[1].name }}, and more). View their attribute fields. <./?tab=specifications>`_
       {%- elif layers_table_list and layers_count == 2 %}
       * - **Layers**
-        - `{{ layers_count }} layers of data ({{ layers_table_list[0].name }} and {{ layers_table_list[1].name }}). See attribute fields of these layers. <./?tab=specifications>`_
+        - `{{ layers_count }} layers of data ({{ layers_table_list[0].name }} and {{ layers_table_list[1].name }}). View their attribute fields. <./?tab=specifications>`_
       {%- elif layers_table_list and layers_count == 1 %}
       * - **Layers**
-        - `Single layer of data ({{ layers_table_list[0].name }}). See attribute fields of this layer. <./?tab=specifications>`_
+        - `Single layer of data ({{ layers_table_list[0].name }}). View attribute fields. <./?tab=specifications>`_
       {%- endif %}
       {%- if page.data.doi %}
       * - **DOI**
