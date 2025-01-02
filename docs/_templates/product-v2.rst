@@ -372,6 +372,16 @@
       * - **Bands**
         - `Single band of data ({{ bands_table_list[0].name }}) <./?tab=specifications>`_
       {%- endif %}
+      {% if layers_table_list and layers_count >= 3 %}
+      * - **Layers**
+        - `{{ layers_count }} layers of data ({{ layers_table_list[0].name }}, {{ layers_table_list[1].name }}, and more) <./?tab=specifications>`_
+     {%- elif layers_table_list and layers_count == 2 %}
+     * - **Layers**
+       - `{{ layers_count }} layers of data ({{ layers_table_list[0].name }} and {{ layers_table_list[1].name }}) <./?tab=specifications>`_
+     {%- elif layers_table_list and layers_count == 1 %}
+     * - **Layers**
+       - `Single layer of data ({{ layers_table_list[0].name }}) <./?tab=specifications>`_
+      {%- endif %}
       {%- if page.data.doi %}
       * - **DOI**
         - `{{ page.data.doi }} <https://doi.org/{{ page.data.doi }}>`_
