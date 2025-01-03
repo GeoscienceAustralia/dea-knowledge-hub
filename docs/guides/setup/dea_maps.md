@@ -1,11 +1,11 @@
 # DEA Maps
 
-Digital Earth Australia (DEA) Maps is a website for interactive map-based access to DEA's products developed by [Data61 CSIRO](https://data61.csiro.au/) for [Geoscience Australia](http://www.ga.gov.au/). DEA Maps aims to provide easy access to DEA's products to help users to make more informed decisions.
+[DEA Maps](https://maps.dea.ga.gov.au/) is an online platform where you can view Digital Earth Australia (DEA) data products. It aims to make it easy for anyone to access our open-source data &mdash; scientists and non-scientists alike.
 
 :::{admonition} Start exploring
 :class: note
 
-Open the [DEA Maps online platform](https://maps.dea.ga.gov.au/)
+Open [DEA Maps](https://maps.dea.ga.gov.au/)
 :::
 
 :::{contents} In this guide
