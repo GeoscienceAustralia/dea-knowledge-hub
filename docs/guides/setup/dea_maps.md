@@ -13,6 +13,18 @@ Open [DEA Maps](https://maps.dea.ga.gov.au/)
 :backlinks: none
 :::
 
+## Add data to the map
+
+To get started, you will want to add a data product to the map so that you can view the data.
+
+1. Open [DEA Maps](https://maps.dea.ga.gov.au/)
+
+:::{admonition} Filter by location
+:class: note
+
+Lorem ipsum
+:::
+
 ## Getting started with DEA Maps
 
 1. Launch DEA Maps: <https://maps.dea.ga.gov.au/>. A pop-up window will appear:
