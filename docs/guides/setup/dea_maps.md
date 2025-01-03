@@ -17,7 +17,14 @@ Open [DEA Maps](https://maps.dea.ga.gov.au/)
 
 To get started, you will want to add a data product to the map so that you can view the data.
 
-1. Open [DEA Maps](https://maps.dea.ga.gov.au/)
+1. Open [DEA Maps](https://maps.dea.ga.gov.au/).
+1. Click **Explore map data** &gt; in the data catalogue, navigate through the folders to find the data product that you want to access &gt; click it's "**+**" icon or click it's title then click **Add to the map**.
+
+    ![Data catalogue](/_files/dea-maps/dea_maps_4.jpg)
+
+    ![Adding data](/_files/dea-maps/dea_maps_5.jpg)
+
+1. Depending on the product, you may now see the data overlaid on the map. Otherwise, ........
 
 :::{admonition} Filter by location
 :class: note
