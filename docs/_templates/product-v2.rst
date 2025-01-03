@@ -541,10 +541,10 @@
       :name: layers
       :class: h2
 
-   This product contains the following layers and attribute fields.
+   This product contains the following layers, and the attribute fields of each are listed.
 
    {% for layer in layers_table_list %}
-   **{{ layer.name }}**
+   **Layer: {{ layer.name }}**
 
    {{ layer.description or no_data_terms.dash }} Attribute fields:
 
