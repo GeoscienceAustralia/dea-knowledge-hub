@@ -67,7 +67,7 @@ There's a very nice feature that allows you to view two different map configurat
 
 ![Screen splitter](/_files/dea-maps/dea_maps_compare_2.jpg)
 
-## Export data (high-resolution TIFF)
+## Export data as high-resolution TIFF
 
 It's possible to export small areas of DEA data in the high-resolution TIFF image format. This exported data can used in QGIS and ArcGIS. (But for exporting larger volumes of data, you can use the [DEA Sandbox](/guides/setup/Sandbox/sandbox/) or [NCI](/guides/setup/NCI/README/) environments or download directly from the [DEA Public Data S3 Bucket](https://data.dea.ga.gov.au/).)
 
@@ -75,7 +75,7 @@ It's possible to export small areas of DEA data in the high-resolution TIFF imag
 1. Click two points on the map to draw a rectangle.
 1. Click **Download extent** then wait for the TIFF file to be downloaded to your computer. (If the export fails, try zooming in and drawing a rectangle that covers a smaller land area.)
 
-![Export](/files/dea-maps/dea_maps_export_2.jpg)
+![Export](/_files/dea-maps/dea_maps_export_2.jpg)
 
 ## Navigate time and location
 
