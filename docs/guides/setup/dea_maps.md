@@ -6,7 +6,7 @@
 :class: note
 
 * **Start exploring:** [Open DEA Maps](https://maps.dea.ga.gov.au/)
-* **If you don't see any data or the data doesn't cover a particular location:** [Filter by location](#filter-by-location)
+* **If you don't see any data or data doesn't cover a location:** [Filter by location](#filter-by-location)
 :::
 
 :::{contents} In this guide
@@ -19,8 +19,9 @@
 Let's add a data product to the map so that we can view the data.
 
 1. Open [DEA Maps](https://maps.dea.ga.gov.au/).
-1. Click **Explore map data** &gt; in the data catalogue, navigate through the folders to find the data product that you want to access &gt; click it's "**+**" icon to add it to the map (or click it's title then click **Add to the map**).
-1. The data product will be added to the left panel and you may now see data overlaid on the map. But **if you don't see any data or the data doesn't cover a particular location** or , continue to the next section: **Filter by location**.
+1. Click **Explore map data** &gt; in the data catalogue, navigate through the folders to find the data product that you want to access. (E.g. click 'Baseline satellite data' &gt; 'DEA Surface Reflectance (Sentinel-2)' &gt; 'DEA Surface Reflectance (Sentinel-2A MSI)'.)
+1. Click the product's "**+**" icon to add it to the map (or click it's title then click **Add to the map**).
+1. The data product will be added to the left panel and you may now see data overlaid on the map. But **if you don't see any data or data doesn't cover a location** or , continue to the next section: **Filter by location**.
 
     ![Data catalogue](/_files/dea-maps/dea_maps_4.jpg)
 
@@ -32,58 +33,36 @@ Let's add a data product to the map so that we can view the data.
 
 After adding data to the map, if you don't see any data or the data doesn't cover a particular location, you can use the 'Filter by location' tool. This is especially useful for products that are provided as swaths (strips of data that the satellite captures as it travels), e.g. the Baseline satellite data products.
 
-Zoom out on the map and you will often see that swaths of data are visible, but they are not covering the location you are interested in. Or you may find that no data exists for this particular time.
+Zoom out on the map and you will often see that swaths of data are visible, but they are not covering the location you are interested in. Or you may find that no data exists at all for this particular time.
 
-'Filter by location' will automatically switch to the most recent time that data was available for a given location.
+'Filter by location' will show the most recent data that is available for a given location.
 
 1. In the left sidebar, click **Filter by location** for the product you have added the map.
 1. Click a location on the map then wait for it to load.
-1. Data should now be overlaid on that location. Take note that the **Time** value in the left sidebar has changed.
+1. Data should now be overlaid on that location. The left sidebar will indicate that the filter has been applied.
+1. Next, you can either select **Remove filter** or **New location**.
 
     ![Adding data](/_files/dea-maps/dea_maps_6.jpg)
 
+## Navigate time and location
 
+You can navigate through data products across both location and time.
 
-
-
-
-
-
-
-
-## Getting started with DEA Maps
-
-1. Launch DEA Maps: <https://maps.dea.ga.gov.au/>. A pop-up window will appear:
-
-    ![Starting with DEA Maps](/_files/dea-maps/dea_maps_1.jpg)
-
-1. Click `Take the tour`. A series of pop-up tips will appear explaining how to use the main features of DEA Maps. Click `Next` to proceed to the next tip, then finally `Finish` to complete the tour.
-
-    ![Guide to DEA Maps](/_files/dea-maps/dea_maps_2.jpg)
-
-1. Once the tour is complete, experiment with scrolling and zooming in and out of the map (use your mouse wheel, double click, or click the `+` or `-` buttons on the top right). For this example, zoom in to Lake Menindee in western New South Wales.
-
-    Note: You can also zoom to a location by typing into the `Search for locations` box on the top-left, then clicking on your location in the drop-down menu. Try this with \"Lake Menindee\".
-
-    ![Menindee](/_files/dea-maps/dea_maps_3.jpg)
-
-1. Click `Explore map data` on the top-left to start adding data to the map. This will bring up a view of the DEA data catalogue.
-
-    ![Data catalogue](/_files/dea-maps/dea_maps_4.jpg)
-
-1. We can now add data to the map. In this example, we will load 10 m resolution satellite imagery from the Copernicus Sentinel-2 satellites. First, click on `Satellite data` to open this folder, then click on the `DEA Surface Reflectance (Sentinel-2)` product. This will show you a preview of the data we are about to load. When you are ready, click `Add to the map`.
-
-    ![Adding data](/_files/dea-maps/dea_maps_5.jpg)
-
-1. The `DEA Surface Reflectance (Sentinel-2)` product will now be added to the \"workbench\" on the left of the screen. At this point, satellite data may not display on the map - this may be because there were no Sentinel-2 images captured over this location on the select day. To filter our satellite data to all images captured at this location, click `Filter by location`, then click on the map. You will see the filter applied in blue in the workbench on the left.
-
-    ![Adding data](/_files/dea-maps/dea_maps_6.jpg)
-
-1. Sentinel-2 satellite data will now appear on the map. To view imagery for a different date, select a new time by clicking on the date in the workbench, or drag the time slider along the bottom of the map window.
+* Change to a different time by clicking the **Time** value in the left sidebar, or clicking on the timeline at the bottom.
+* Zoom in and out of the map by scrolling the mouse, or use the "**+**" and "**-**" buttons.
+* Move to a different location by dragging with the mouse, or type in the **Search for locations** bar. E.g. search for 'Lake Eyre', then click the option: 'Lake Eyre, SA'.
 
     ![Changing time](/_files/dea-maps/dea_maps_7.jpg)
 
-Note: The time slider can also be used to animate satellite imagery. Click the arrow "Play" button to the left of the time slider, and control the speed of the animation using the "Play faster" and "Play slower" buttons.
+## Additional features
+
+* **Animate satellite imagery** &mdash; The time slider can also be used to animate satellite imagery. Click the arrow "Play" button to the left of the time slider, and control the speed of the animation using the "Play faster" and "Play slower" buttons.
+
+
+
+
+
+
 
 ## Changing styles
 
