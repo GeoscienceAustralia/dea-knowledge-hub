@@ -63,7 +63,10 @@ For example, the 'DEA Surface Reflectance (Sentinel-2)' product can be switched 
 There's a very nice feature that allows you to view two different map configurations side-by-side. For example, you may want to compare two different datasets or the same dataset at two different times. Here's an example map of [DEA High Tide Imagery versus DEA Low Tide Imagery](https://maps.dea.ga.gov.au/#share=s-7YeWZKqWkF0Ctv5Av8RkHSWeNzQ).
 
 1. In the left sidebar, click the three vertical dots ('Show more actions') on a product that you have added to the map &gt; click **Compare**.
-1. A 'screen splitter' will now split the map into two halves. In the sidebar, the product's panel will be split into two panels: one labelled 'Left' and the other 'Right'.
+1. A 'screen splitter' will now split the map into two halves. In the sidebar, the product's panel will be split into two copies: one labelled 'Left' and the other 'Right'.
+1. You can configure each side of the map independently. E.g. you can change the 'Styles' value on the left side.
+1. You can add additional data products and add them to either the **Left** or **Right** side or **Both** by selecting these options in the left panel. E.g. you can add an additional data product only to the left side.
+1. To close this side-by-side view, click the "**&times;**" next to 'Split Screen Mode' in the left sidebar.
 
 ![Screen splitter](/_files/dea-maps/dea_maps_compare_2.jpg)
 
