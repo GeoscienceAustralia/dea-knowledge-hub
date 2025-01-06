@@ -73,6 +73,21 @@ Note that you can share a URL of your comparison by using the **Share / Print** 
 
 ![Screen splitter](/_files/dea-maps/dea_maps_compare_2.jpg)
 
+## Difference tool
+
+The **Difference** tool is similar to the comparison tool, but allows you to find the differences in data over time.
+
+1. In the left sidebar, click the three vertical dots ('Show more actions') on a dataset that you have added to the map &gt; click **Difference**.
+1. The difference tool will appear, replacing the left sidebar.
+1. Select a location on the map to analyse by clicking anywhere on the map.
+1. Under **Data Comparison A** and **Date Comparison B**, choose the two dates to compare. For best results, choose dates that don't have cloud cover.
+1. Click **Choose a difference output** and select an option. For instance, the 'Modified Normalised Difference Water Index - Green, SWIR' is useful for comparing the distribution of water.
+1. Click **Generate change detection**.
+1. The difference will be shown on the map as a new dataset. For instance, the 'Modified Normalised Difference Water Index - Green, SWIR' shows locations that have gotten wetter over time in blue while locations that have gotten dryer are red.
+1. To reopen the left sidebar, click **Show workbench**, and to close the difference tool, click **Exit**. You'll notice that in the left sidebar, the difference dataset has been added.
+
+![Difference 2](/_files/dea-maps/dea_maps_diff_2.jpg)
+
 ## Export data as high-resolution TIFF
 
 It's possible to export small areas of DEA data in the high-resolution TIFF image format. This exported data can used in QGIS and ArcGIS. (But for exporting larger volumes of data, you can use the [DEA Sandbox](/guides/setup/Sandbox/sandbox/) or [NCI](/guides/setup/NCI/README/) environments or download directly from the [DEA Public Data S3 Bucket](https://data.dea.ga.gov.au/).)
