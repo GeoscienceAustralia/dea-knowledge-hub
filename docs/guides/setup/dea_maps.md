@@ -40,6 +40,14 @@ After adding data to the map, if you don't see any data or the data doesn't cove
 
     ![Adding data](/_files/dea-maps/dea_maps_6.jpg)
 
+## Share a URL and save your map
+
+Once you've created a map by adding layers, adjusting settings, and zooming in on a specific location, you will want to share this map with others, or save it so you can continue work on it later. You can do both of these using the **Share URL** feature.
+
+1. Click **Share / Print** on the top right.
+1. Click **Copy** to copy this custom URL to your clipboard.
+1. Anyone who opens this URL will see your map, exactly as you configured it. You can send this URL to others, link to it from a public website, or bookmark it for later.
+
 ## Switch bands and layers
 
 Most data products contain multiple 'bands' or 'layers' of data that reveal different features of the landscape. You can switch between these using the **Styles** dropdown in the left sidebar.
@@ -63,15 +71,6 @@ You can navigate through data products across both location and time.
 * **Animate satellite imagery** &mdash; The time slider can also be used to animate satellite imagery. Click the arrow "Play" button to the left of the time slider, and control the speed of the animation using the "Play faster" and "Play slower" buttons.
 
 ***
-
-1. Experiment with selecting other styles. The list includes several specialised remote sensing indices developed to emphasise different features in the landscape:
-
-* Vegetation (`Normalised Difference Vegetation Index - Red, NIR`)
-* Water (`Normalised Difference Water Index - Green, NIR`, `Modified Normalised Difference Water Index - Green, SWIR`)
-* Algal blooms (`Normalised Difference Chlorophyll Index - Red Edge, Red`)
-* Burnt areas (`Normalised Burn Ratio - NIR, SWIR`)
-
-    ![Other styles](/_files/dea-maps/dea_maps_styles_3.jpg)
 
 ## Sharing and printing
 
