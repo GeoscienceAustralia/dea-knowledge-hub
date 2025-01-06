@@ -69,6 +69,8 @@ There is a **Compare** feature that lets you view two different map configuratio
 1. To compare two different products side-by-side: add an additional product to the map &gt; assign it to the right or left side &gt; remove the existing product that was assigned to that side.
 1. To close this side-by-side view, click the "**&times;**" next to 'Split Screen Mode' in the left sidebar.
 
+Note that you can share a URL of your comparison by using the **Share / Print** feature.
+
 ![Screen splitter](/_files/dea-maps/dea_maps_compare_2.jpg)
 
 ## Export data as high-resolution TIFF
@@ -98,26 +100,6 @@ You can navigate through data products across both location and time.
 * **Capture a high-quality image of your map** &mdash; Follow the steps above to print your map, except on the printer-friendly page, right-click on the image and select **Save image as ...**.
 
 ***
-
-## Compare tool
-
-It can be useful to compare different satellite datasets, or imagery from different dates to investigate change over time. To do this, we can use the "Compare" tool:
-
-1. Load a satellite dataset into your workbench and filter it to your location (e.g. follow the `DEA Surface Reflectance (Sentinel-2)` example above). Click the three vertical dots on the dataset ("Show more actions"), then click `Compare`.
-
-    ![Compare](/_files/dea-maps/dea_maps_compare_1.jpg)
-
-1. A screen splitter will appear at the centre of the map, and a new copy of our dataset will be added to the workbench. The workbench has also updated with orange labels to show that this new copy will be shown on the `Left` of the screen, and our original data shown on the `Right`. 
-
-    ![Screen splitter](/_files/dea-maps/dea_maps_compare_2.jpg)
-
-1. Filter this new copy of our dataset to the same location (e.g. `Filter by location` then click on the map), then select a new date from the "Time" dropdown. The left-hand side of the map will update with Sentinel-2 imagery from this date. Using your mouse, you can now grab the screen splitter in the centre of the screen, and swipe from side to side to compare imagery from these two time periods side-by-side.
-
-    ![Screen splitter 2](/_files/dea-maps/dea_maps_compare_3.jpg)
-
-1. To deactive the "Compare" tool, click the orange "Compare" icon on the top right of the map.
-
-    ![Deactiveate screen splitter](/_files/dea-maps/dea_maps_compare_4.jpg)
 
 ## Difference tool
 
