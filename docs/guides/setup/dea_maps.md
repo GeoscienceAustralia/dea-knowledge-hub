@@ -71,27 +71,10 @@ You can navigate through data products across both location and time.
 ## Additional features
 
 * **Animate satellite imagery** &mdash; The time slider can also be used to animate satellite imagery. Click the arrow "Play" button to the left of the time slider, and control the speed of the animation using the "Play faster" and "Play slower" buttons.
+* **Print your map** &mdash; Click **Share / Print** &gt; **Show Print View** &gt; a new page will open showing a printer-friendly view; click **Print** or press **Ctrl-p** on your keyboard.
+* **Capture a high-quality image of your map** &mdash; Follow the steps above to print your map, except on the printer-friendly page, right-click on the image and select **Save image as ...**.
 
 ***
-
-## Sharing and printing
-
-DEA Maps allows you to easily create print-friendly views of satellite data for sharing outside the interactive website. It also allows you to create custom "share links" which preserve the exact layers you have loaded into the map. 
-
-**Creating a share link**
-
-1. Load one or more satellite datasets into your workbench and filter it them your location (e.g. follow the `DEA Surface Reflectance (Sentinel-2)` example above). Click `Share / Print` at the top-right of the map.
-1. Click `Copy` to copy a customised share link to your clipboard. When opened, this link will contain an identical view of the map containing all the layers you have loaded into the map.
-
-    ![Share 1](/_files/dea-maps/dea_maps_share_1.jpg)
-
-**Showing a print view**
-
-1. After clicking `Share / Print` at the top-right of the map, click `Print` or `Show Print View` to bring up a print-friendly view of your map window.
-
-    ![Share 2](/_files/dea-maps/dea_maps_share_2.jpg)
-
-Hint: To obtain a high quality image of your map, right click on the image at the top of the print view and select `Save image as ...`.
 
 ## Exporting data
 
