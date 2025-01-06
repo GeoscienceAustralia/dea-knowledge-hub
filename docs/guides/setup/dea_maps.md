@@ -23,8 +23,6 @@ Let's add a data product to the map so that we can view the data. Here's an exam
 1. Click the product's "**+**" icon to add it to the map (or click it's title then click **Add to the map**).
 1. The data product will be added to the left panel and you may now see data overlaid on the map. But **if you don't see any data or data doesn't cover a location** or , continue to the next section: **Filter by location**.
 
-    ![Data catalogue](/_files/dea-maps/dea_maps_4.jpg)
-
     ![Adding data](/_files/dea-maps/dea_maps_5.jpg)
 
 <span id="filter-by-location"></span>
@@ -50,7 +48,7 @@ Once you've created a map by adding layers, adjusting settings, and zooming in o
 1. Click **Copy** to copy this custom URL to your clipboard.
 1. Anyone who opens this URL will see your map, exactly as you configured it. You can send this URL to others, link to it from a public website, or bookmark it for later.
 
-![Share](/_images/dea_maps_share_1.jpg)
+![Share](/_files/dea-maps/dea_maps_share_1.jpg)
 
 ## Switch bands and layers
 
