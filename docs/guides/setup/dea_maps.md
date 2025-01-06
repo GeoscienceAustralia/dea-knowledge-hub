@@ -75,7 +75,7 @@ Note that you can share a URL of your comparison by using the **Share / Print** 
 
 ## Difference tool
 
-The **Difference** tool allows you to visualise the changes in a dataset over time. For example, you can view locations that got wetter or dryer over time.
+The **Difference** tool allows you to visualise the changes in a dataset over time. Here is an example map showing [locations that have gotten wetter or dryer over time](https://maps.dea.ga.gov.au/#share=s-oAolm6NEW2vSCtXGJMUmPnIAUx2).
 
 1. In the left sidebar, click the three vertical dots ('Show more actions') on a dataset that you have added to the map &gt; click **Difference**.
 1. The difference tool will appear, replacing the left sidebar.
