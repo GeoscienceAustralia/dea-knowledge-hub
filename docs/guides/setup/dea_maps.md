@@ -2,12 +2,10 @@
 
 [DEA Maps](https://maps.dea.ga.gov.au/) is an online platform where you can view Digital Earth Australia (DEA) data products. It aims to make it easy for anyone to access our open-source data &mdash; whether you are a scientist, educator, journalist, or otherwise.
 
-:::{admonition} Important
-:class: note
+**Quick links**
 
 * **Start exploring:** [Open DEA Maps](https://maps.dea.ga.gov.au/)
 * **If you don't see any data or data doesn't cover a location:** [Filter by location](#filter-by-location)
-:::
 
 :::{contents} In this guide
 :local:
@@ -31,9 +29,7 @@ Let's add a data product to the map so that we can view the data.
 
 ## Filter by location
 
-After adding data to the map, if you don't see any data or the data doesn't cover a particular location, you can use the 'Filter by location' tool. This is especially useful for products that are provided as swaths (strips of data that the satellite captures as it travels), e.g. the Baseline satellite data products.
-
-Zoom out on the map and you will often see that swaths of data are visible, but they are not covering the location you are interested in. Or you may find that no data exists at all for this particular time.
+After adding data to the map, if you don't see any data or the data doesn't cover a particular location, you can use the 'Filter by location' tool. This is especially useful for products that are provided as swaths (strips of data that the satellite captures as it travels), e.g. the Baseline satellite data products. Zoom out on the map and you will often see that swaths of data are visible, but they are not covering the location you are interested in. Or you may find that no data exists at all for this particular time.
 
 'Filter by location' will show the most recent data that is available for a given location.
 
@@ -44,6 +40,14 @@ Zoom out on the map and you will often see that swaths of data are visible, but 
 
     ![Adding data](/_files/dea-maps/dea_maps_6.jpg)
 
+## Switch bands and layers
+
+Most data products contain multiple 'bands' or 'layers' of data that reveal different features of the landscape. You can switch between these using the **Styles** dropdown in the left sidebar.
+
+For example, the 'DEA Surface Reflectance (Sentinel-2)' product can be switched to the 'False colour - Green, SWIR, NIR' style. This style uses wavelengths of light beyond the visible spectrum ('near infrared' and 'short-wave infrared') to highlight waterbodies, vegetation, and other features more distinctly.
+
+![False colour](/_files/dea-maps/dea_maps_styles_2.jpg)
+
 ## Navigate time and location
 
 You can navigate through data products across both location and time.
@@ -52,29 +56,13 @@ You can navigate through data products across both location and time.
 * Zoom in and out of the map by scrolling the mouse, or use the "**+**" and "**-**" buttons.
 * Move to a different location by dragging with the mouse, or type in the **Search for locations** bar. E.g. search for 'Lake Eyre', then click the option: 'Lake Eyre, SA'.
 
-    ![Changing time](/_files/dea-maps/dea_maps_7.jpg)
+![Changing time](/_files/dea-maps/dea_maps_7.jpg)
 
 ## Additional features
 
 * **Animate satellite imagery** &mdash; The time slider can also be used to animate satellite imagery. Click the arrow "Play" button to the left of the time slider, and control the speed of the animation using the "Play faster" and "Play slower" buttons.
 
-
-
-
-
-
-
-## Changing styles
-
-Data on DEA Maps often contains multiple layers for each product that can be visualised to reveal important information about the Australian landscape. To view these layers:
-
-1. Load a satellite dataset into your workbench and filter it to your location (e.g. follow the `DEA Surface Reflectance (Sentinel-2)` example above). Click the white box below `Styles` to bring up a list of available styles for the dataset.
-
-    ![Styles](/_files/dea-maps/dea_maps_styles_1.jpg)
-
-1. From this menu, click `False colour - Green, SWIR, NIR`. This will display a false colour view of the satellite imagery that uses wavelengths of light that are invisible to the human eye (near and short-wave infrared) to highlight the presence of water (blue) and growing vegetation (bright green).
-
-    ![False colour](/_files/dea-maps/dea_maps_styles_2.jpg)
+***
 
 1. Experiment with selecting other styles. The list includes several specialised remote sensing indices developed to emphasise different features in the landscape:
 
