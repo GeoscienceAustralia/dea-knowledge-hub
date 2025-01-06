@@ -1,6 +1,6 @@
 # DEA Maps
 
-[DEA Maps](https://maps.dea.ga.gov.au/) is an online platform where you can view Digital Earth Australia (DEA) data products. It aims to make it easy for anyone to access our open-source data &mdash; whether you are a scientist, educator, journalist, or otherwise.
+[DEA Maps](https://maps.dea.ga.gov.au/) is an online platform where you can view Digital Earth Australia (DEA) datasets. It aims to make it easy for anyone to access our open-source data &mdash; whether you are a scientist, educator, journalist, or otherwise.
 
 :::{admonition} Quick links
 :class: note
@@ -16,12 +16,12 @@
 
 ## Add data to the map
 
-Let's add a data product to the map so that we can view the data. Here's an example map of [DEA Surface Reflectance (Sentinel-2A MSI)](https://maps.dea.ga.gov.au/#share=s-bNYeackQuE5oILJe4O13j1HZjBQ)
+Let's add a dataset to the map so that we can view the data. Here's an example map of [DEA Surface Reflectance (Sentinel-2A MSI)](https://maps.dea.ga.gov.au/#share=s-bNYeackQuE5oILJe4O13j1HZjBQ)
 
 1. Open [DEA Maps](https://maps.dea.ga.gov.au/).
-1. Click **Explore map data** &gt; in the data catalogue, navigate through the folders to find the data product that you want to access. (E.g. click 'Baseline satellite data' &gt; 'DEA Surface Reflectance (Sentinel-2)' &gt; 'DEA Surface Reflectance (Sentinel-2A MSI)'.)
-1. Click the product's "**+**" icon to add it to the map (or click it's title then click **Add to the map**).
-1. The data product will be added to the left panel and you may now see data overlaid on the map. But **if you don't see any data or data doesn't cover a location** or , continue to the next section: **Filter by location**.
+1. Click **Explore map data** &gt; in the data catalogue, navigate through the folders to find the dataset that you want to access. (E.g. click 'Baseline satellite data' &gt; 'DEA Surface Reflectance (Sentinel-2)' &gt; 'DEA Surface Reflectance (Sentinel-2A MSI)'.)
+1. Click the dataset's "**+**" icon to add it to the map (or click it's title then click **Add to the map**).
+1. The dataset will be added to the left panel and you may now see data overlaid on the map. But **if you don't see any data or data doesn't cover a location** or , continue to the next section: **Filter by location**.
 
     ![Adding data](/_files/dea-maps/dea_maps_5.jpg)
 
@@ -29,11 +29,11 @@ Let's add a data product to the map so that we can view the data. Here's an exam
 
 ## Filter by location
 
-After adding data to the map, if you don't see any data or the data doesn't cover a particular location, you can use the 'Filter by location' tool. This is especially useful for products that are provided as swaths (strips of data that the satellite captures as it travels), e.g. the Baseline satellite data products. Zoom out on the map and you will often see that swaths of data are visible, but they are not covering the location you are interested in. Or you may find that no data exists at all for this particular time.
+After adding data to the map, if you don't see any data or the data doesn't cover a particular location, you can use the 'Filter by location' tool. This is especially useful for datasets that are provided as swaths (strips of data that the satellite captures as it travels), e.g. the 'Baseline satellite data' datasets. Zoom out on the map and you will often see that swaths of data are visible, but they are not covering the location you are interested in. Or you may find that no data exists at all for this particular time.
 
 'Filter by location' will show the most recent data that is available for a given location.
 
-1. In the left sidebar, click **Filter by location** for the product you have added the map.
+1. In the left sidebar, click **Filter by location** for the dataset you have added the map.
 1. Click a location on the map then wait for it to load.
 1. Data should now be overlaid on that location. The left sidebar will indicate that the filter has been applied.
 1. Next, you can either select **Remove filter** or **New location**.
@@ -52,9 +52,9 @@ Once you've created a map by adding layers, adjusting settings, and zooming in o
 
 ## Switch bands and layers
 
-Most data products contain multiple 'bands' or 'layers' of data that reveal different features of the landscape. You can switch between these using the **Styles** dropdown in the left sidebar.
+Most datasets contain multiple 'bands' or 'layers' of data that reveal different features of the landscape. You can switch between these using the **Styles** dropdown in the left sidebar.
 
-For example, the 'DEA Surface Reflectance (Sentinel-2)' product can be switched to the 'False colour - Green, SWIR, NIR' style. This style uses wavelengths of light beyond the visible spectrum ('near infrared' and 'short-wave infrared') to highlight waterbodies, vegetation, and other features more distinctly.
+For example, the 'DEA Surface Reflectance (Sentinel-2)' dataset can be switched to the 'False colour - Green, SWIR, NIR' style. This style uses wavelengths of light beyond the visible spectrum ('near infrared' and 'short-wave infrared') to highlight waterbodies, vegetation, and other features more distinctly.
 
 ![False colour](/_files/dea-maps/dea_maps_styles_2.jpg)
 
@@ -62,11 +62,11 @@ For example, the 'DEA Surface Reflectance (Sentinel-2)' product can be switched 
 
 There is a **Compare** feature that lets you view two different map configurations side-by-side. This allows you to compare two different datasets or the same dataset at two different times. Here's an example map of [DEA High Tide Imagery versus DEA Low Tide Imagery](https://maps.dea.ga.gov.au/#share=s-7YeWZKqWkF0Ctv5Av8RkHSWeNzQ).
 
-1. In the left sidebar, click the three vertical dots ('Show more actions') on a product that you have added to the map &gt; click **Compare**.
-1. A 'screen splitter' will now split the map into two halves. In the sidebar, the product's panel will be split into two copies: one labelled 'Left' and the other 'Right'.
+1. In the left sidebar, click the three vertical dots ('Show more actions') on a dataset that you have added to the map &gt; click **Compare**.
+1. A 'screen splitter' will now split the map into two halves. In the sidebar, the dataset's panel will be split into two copies: one labelled 'Left' and the other 'Right'.
 1. You can configure each side of the map independently. E.g. you can change the 'Styles' value on the right side.
-1. Each product can be assigned to either the **Left** or **Right** side or **Both** by selecting the relevant option in the left sidebar.
-1. To compare two different products side-by-side: add an additional product to the map &gt; assign it to the right or left side &gt; remove the existing product that was assigned to that side.
+1. Each dataset can be assigned to either the **Left** or **Right** side or **Both** by selecting the relevant option in the left sidebar.
+1. To compare two different datasets side-by-side: add an additional dataset to the map &gt; assign it to the right or left side &gt; remove the existing dataset that was assigned to that side.
 1. To close this side-by-side view, click the "**&times;**" next to 'Split Screen Mode' in the left sidebar.
 
 Note that you can share a URL of your comparison by using the **Share / Print** feature.
@@ -77,7 +77,7 @@ Note that you can share a URL of your comparison by using the **Share / Print** 
 
 It's possible to export small areas of DEA data in the high-resolution TIFF image format. This exported data can used in QGIS and ArcGIS. (But for exporting larger volumes of data, you can use the [DEA Sandbox](/guides/setup/Sandbox/sandbox/) or [NCI](/guides/setup/NCI/README/) environments or download directly from the [DEA Public Data S3 Bucket](https://data.dea.ga.gov.au/).)
 
-1. In the left sidebar, click the three vertical dots ('Show more actions') on a product that you have added to the map &gt; click **Export**.
+1. In the left sidebar, click the three vertical dots ('Show more actions') on a dataset that you have added to the map &gt; click **Export**.
 1. Click two points on the map to draw a rectangle.
 1. Click **Download extent** then wait for the TIFF file to be downloaded to your computer. (If the export fails, try zooming in and drawing a rectangle that covers a smaller land area.)
 
@@ -85,7 +85,7 @@ It's possible to export small areas of DEA data in the high-resolution TIFF imag
 
 ## Navigate time and location
 
-You can navigate through data products across both location and time.
+You can navigate through datasets across both location and time.
 
 * Change to a different time by clicking the **Time** value in the left sidebar, or clicking on the timeline at the bottom.
 * Zoom in and out of the map by scrolling the mouse, or use the "**+**" and "**-**" buttons.
