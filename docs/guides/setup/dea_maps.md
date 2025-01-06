@@ -98,6 +98,7 @@ You can navigate through datasets across both location and time.
 * **Animate satellite imagery** &mdash; The time slider can also be used to animate satellite imagery. Click the arrow "Play" button to the left of the time slider, and control the speed of the animation using the "Play faster" and "Play slower" buttons.
 * **Print your map** &mdash; Click **Share / Print** &gt; **Show Print View** &gt; a new page will open showing a printer-friendly view; click **Print** or press **Ctrl-p** on your keyboard.
 * **Capture a high-quality image of your map** &mdash; Follow the steps above to print your map, except on the printer-friendly page, right-click on the image and select **Save image as ...**.
+* **Help** &mdash; For more information about using DEA Maps, click **Help** on the top right, then you can take the tour, watch the videos, or read the guides.
 
 ***
 
@@ -157,14 +158,4 @@ The Bureau of Meteorology provides current and historic water discharge data for
 1. You can change the style of the Sentinel-2 data by clicking on the `Styles` dropdown menu in the DEA Surface Reflectance (Sentinel-2) card on your workbench. The example below shows Modified Normalised Difference Water Index – Green, SWIR.
 
     ![Watercourse Discharge Tool 6](/_files/dea-maps/dea_maps_wdt_6.jpg)
-
-## For more assistance
-
-DEA Maps contains additional helpful guides for assisting with exploring our datasets. To access this help at any point, click the `Help` button on the bottom-right:
-
-![Help 1](/_files/dea-maps/dea_maps_help_1.jpg)
-
-This will bring up a menu containing detailed guides to performing useful tasks with DEA Maps:
-
-![Help 2](/_files/dea-maps/dea_maps_help_2.jpg)
 
