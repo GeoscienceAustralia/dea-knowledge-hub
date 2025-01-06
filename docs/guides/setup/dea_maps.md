@@ -16,7 +16,7 @@
 
 ## Add data to the map
 
-Let's add a data product to the map so that we can view the data.
+Let's add a data product to the map so that we can view the data. Here's an example map of [DEA Surface Reflectance (Sentinel-2A MSI)](https://maps.dea.ga.gov.au/#share=s-bNYeackQuE5oILJe4O13j1HZjBQ)
 
 1. Open [DEA Maps](https://maps.dea.ga.gov.au/).
 1. Click **Explore map data** &gt; in the data catalogue, navigate through the folders to find the data product that you want to access. (E.g. click 'Baseline satellite data' &gt; 'DEA Surface Reflectance (Sentinel-2)' &gt; 'DEA Surface Reflectance (Sentinel-2A MSI)'.)
@@ -50,6 +50,8 @@ Once you've created a map by adding layers, adjusting settings, and zooming in o
 1. Click **Copy** to copy this custom URL to your clipboard.
 1. Anyone who opens this URL will see your map, exactly as you configured it. You can send this URL to others, link to it from a public website, or bookmark it for later.
 
+![Share](/_images/dea_maps_share_1.jpg)
+
 ## Switch bands and layers
 
 Most data products contain multiple 'bands' or 'layers' of data that reveal different features of the landscape. You can switch between these using the **Styles** dropdown in the left sidebar.
@@ -57,6 +59,25 @@ Most data products contain multiple 'bands' or 'layers' of data that reveal diff
 For example, the 'DEA Surface Reflectance (Sentinel-2)' product can be switched to the 'False colour - Green, SWIR, NIR' style. This style uses wavelengths of light beyond the visible spectrum ('near infrared' and 'short-wave infrared') to highlight waterbodies, vegetation, and other features more distinctly.
 
 ![False colour](/_files/dea-maps/dea_maps_styles_2.jpg)
+
+## Compare side-by-side
+
+There's a very nice feature that allows you to view two different map configurations side-by-side. For example, you may want to compare two different datasets or the same dataset at two different times. Here's an example map of [DEA High Tide Imagery versus DEA Low Tide Imagery](https://maps.dea.ga.gov.au/#share=s-7YeWZKqWkF0Ctv5Av8RkHSWeNzQ).
+
+1. In the left sidebar, click the three vertical dots ('Show more actions') on a product that you have added to the map &gt; click **Compare**.
+1. A 'screen splitter' will now split the map into two halves. In the sidebar, the product's panel will be split into two panels: one labelled 'Left' and the other 'Right'.
+
+![Screen splitter](/_files/dea-maps/dea_maps_compare_2.jpg)
+
+## Export data (high-resolution TIFF)
+
+It's possible to export small areas of DEA data in the high-resolution TIFF image format. This exported data can used in QGIS and ArcGIS. (But for exporting larger volumes of data, you can use the [DEA Sandbox](/guides/setup/Sandbox/sandbox/) or [NCI](/guides/setup/NCI/README/) environments or download directly from the [DEA Public Data S3 Bucket](https://data.dea.ga.gov.au/).)
+
+1. In the left sidebar, click the three vertical dots ('Show more actions') on a product that you have added to the map &gt; click **Export**.
+1. Click two points on the map to draw a rectangle.
+1. Click **Download extent** then wait for the TIFF file to be downloaded to your computer. (If the export fails, try zooming in and drawing a rectangle that covers a smaller land area.)
+
+![Export](/files/dea-maps/dea_maps_export_2.jpg)
 
 ## Navigate time and location
 
@@ -75,22 +96,6 @@ You can navigate through data products across both location and time.
 * **Capture a high-quality image of your map** &mdash; Follow the steps above to print your map, except on the printer-friendly page, right-click on the image and select **Save image as ...**.
 
 ***
-
-## Exporting data
-
-Note: This method is suitable for exporting small areas of DEA data at high resolution. To download large areas of data or multiple timesteps, please use the [DEA Sandbox](/guides/setup/Sandbox/sandbox/) or [NCI](/guides/setup/NCI/README/) analysis environments, or download directly from DEA\'s Amazon S3 bucket: <https://data.dea.ga.gov.au/>
-   
-To export data directly from DEA Maps for use in GIS software:
-
-1. Load a satellite dataset into your workbench and filter it to your location (e.g. follow the `DEA Surface Reflectance (Sentinel-2)` example above). Click the three vertical dots on the dataset ("Show more actions"), then click `Export`.
-
-    ![Export](/_files/dea-maps/dea_maps_export_1.jpg)
-
-1. Follow the instructions in the pop-up by clicking twice on the map to draw a rectangle. When done, press `Download extent`.
-
-    ![Export 2](/_files/dea-maps/dea_maps_export_2.jpg)
-
-1. Satellite data for this extent will be downloaded to your PC. This data can now be loaded into GIS software like QGIS or ArcGIS.
 
 ## Compare tool
 
