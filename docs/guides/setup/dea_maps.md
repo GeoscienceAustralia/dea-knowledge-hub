@@ -6,7 +6,7 @@
 :class: note
 
 * **Start exploring:** [Open DEA Maps](https://maps.dea.ga.gov.au/)
-* **If you don't see any data:** [Filter by location](#filter-by-location)
+* **If you don't see any data or the data doesn't cover a particular location:** [Filter by location](#filter-by-location)
 :::
 
 :::{contents} In this guide
@@ -20,7 +20,7 @@ Let's add a data product to the map so that we can view the data.
 
 1. Open [DEA Maps](https://maps.dea.ga.gov.au/).
 1. Click **Explore map data** &gt; in the data catalogue, navigate through the folders to find the data product that you want to access &gt; click it's "**+**" icon to add it to the map (or click it's title then click **Add to the map**).
-1. The data product will be added to the left panel and you may now see data overlaid on the map. But **if you don't see any data**, continue to the next section: **Filter by location**.
+1. The data product will be added to the left panel and you may now see data overlaid on the map. But **if you don't see any data or the data doesn't cover a particular location** or , continue to the next section: **Filter by location**.
 
     ![Data catalogue](/_files/dea-maps/dea_maps_4.jpg)
 
@@ -30,15 +30,26 @@ Let's add a data product to the map so that we can view the data.
 
 ## Filter by location
 
-If you don't see any data after adding a data product to the map, it usually means that there is no data available for the particular time. You will need to select a different time for which data is available. You can use the Filter by location tool to automatically select the most recent time where data was available for a given location.
+After adding data to the map, if you don't see any data or the data doesn't cover a particular location, you can use the 'Filter by location' tool. This is especially useful for products that are provided as swaths (strips of data that the satellite captures as it travels), e.g. the Baseline satellite data products.
 
-This feature is useful for products that are based on satellite swathes of the landscape.
+Zoom out on the map and you will often see that swaths of data are visible, but they are not covering the location you are interested in. Or you may find that no data exists for this particular time.
 
-1. For the product you have added to the map, in the left sidebar, click **Filter by location**.
-1. Click a point on the map then wait for it to load.
-1. Data will now be overlaid on the area where you clicked. Take note that the **Time** field in the left sidebar has changed.
+'Filter by location' will automatically switch to the most recent time that data was available for a given location.
+
+1. In the left sidebar, click **Filter by location** for the product you have added the map.
+1. Click a location on the map then wait for it to load.
+1. Data should now be overlaid on that location. Take note that the **Time** value in the left sidebar has changed.
 
     ![Adding data](/_files/dea-maps/dea_maps_6.jpg)
+
+
+
+
+
+
+
+
+
 
 ## Getting started with DEA Maps
 
