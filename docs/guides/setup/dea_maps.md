@@ -75,7 +75,7 @@ Note that you can share a URL of your comparison by using the **Share / Print** 
 
 ## Difference tool
 
-The **Difference** tool is similar to the comparison tool, but allows you to find the differences in data over time.
+The **Difference** tool allows you to visualise the changes in a dataset over time. For example, you can view locations that got wetter or dryer over time.
 
 1. In the left sidebar, click the three vertical dots ('Show more actions') on a dataset that you have added to the map &gt; click **Difference**.
 1. The difference tool will appear, replacing the left sidebar.
@@ -116,36 +116,6 @@ You can navigate through datasets across both location and time.
 * **Help** &mdash; For more information about using DEA Maps, click **Help** on the top right, then you can take the tour, watch the videos, or read the guides.
 
 ***
-
-## Difference tool
-
-The "Compare" tool above allowed us to visually compare different satellite data. However, it can also be useful to quantitatively compare differences between different satellite images to reveal parts of the landscape that have changed significantly over time. To do this, we can use the more advanced "Difference" tool:
-
-1. Load a satellite dataset into your workbench (e.g. follow the `DEA Surface Reflectance (Sentinel-2)` example above). Click the three vertical dots on the dataset ("Show more actions"), then click `Difference`.
-
-    ![Difference](/_files/dea-maps/dea_maps_diff_1.jpg)
-
-1. The "Difference" tool will replace the workbench on the left of the map. This tool allows us to choose satellite images from two different dates, and analyse them to calculate changes across time. As a first step, tell the tool the location we want to analyse by clicking once in the middle of the map.
-
-    ![Difference 2](/_files/dea-maps/dea_maps_diff_2.jpg)
-
-1. Once the data is filtered, click on the date below `Date Comparison A` and `Date Comparison B`, and use the date picker (i.e. click on the dates) to change the dates that are displayed on the left and right of the map. Try and choose two dates without clouds, as these will be used to identify parts of the landscape that have changed through time.
-
-   Note: If using the Lake Menindee example, try setting `Date Comparison A` to `18/04/2021` and `Date Comparison B` to `18/05/2021` for a example of a dry and wet landscape.
-
-    ![Difference 3](/_files/dea-maps/dea_maps_diff_3.jpg)
-
-1. We can now run the change detection computation. Click `Choose a difference output` on the "Difference" tool. This gives us several options that can be used to compare differences in specific landscape characteristics over time (e.g. water, vegetation, fire scars). For this example, select `Modified Normalised Difference Water Index - Green, SWIR` which is useful for comparing the distribution of water in the landscape. When ready, click `Generate change detection`.
-
-    ![Difference 4](/_files/dea-maps/dea_maps_diff_4.jpg)
-
-1. A new layer will appear on the map. Locations that have grown wetter over time are shown in blue, while locations that have have become drier are shown in red. Scroll around the map to explore patterns of change. To close the "Difference" tool, click "Exit" at the top of the window. 
-
-    ![Difference 5](/_files/dea-maps/dea_maps_diff_5.jpg)
-
-1. Your workbench will reappear, with the difference output layer added as a new dataset on the map.
-
-    ![Difference 6](/_files/dea-maps/dea_maps_diff_6.jpg)
 
 ## Watercourse Discharge tool 
 
