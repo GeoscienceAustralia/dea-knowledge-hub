@@ -127,9 +127,9 @@ The [Bureau of Meteorology (BoM)](http://www.bom.gov.au/) provides water dischar
 
 ## Additional features
 
-* **Animate satellite imagery** &mdash; The time slider can also be used to animate satellite imagery. Click the arrow "Play" button to the left of the time slider, and control the speed of the animation using the "Play faster" and "Play slower" buttons.
 * **Print your map** &mdash; Click **Share / Print** &gt; **Show Print View** &gt; a new page will open showing a printer-friendly view; click **Print** or press **Ctrl-p** on your keyboard.
 * **Capture a high-quality image of your map** &mdash; Follow the steps above to print your map, except on the printer-friendly page, right-click on the image and select **Save image as ...**.
-* **Dataset documentation** &mdash; To learn more about a dataset and how to use it on the map, see its [Data Product page](/data/).
+* **Animate satellite imagery** &mdash; Once you have added a dataset to the map, click the 'Play' button on the timeline at the bottom. You can adjust the speed using the 'Play faster' and 'Play slower' buttons.
+* **Dataset documentation** &mdash; To learn more about a dataset and how to use its specific features on the map, see its [Data Product page](/data/). For example, the [DEA Waterbodies (Landsat)](/data/product/dea-waterbodies-landsat/) page explains how to view feature information about waterbodies and compare waterbodies on the map.
 * **Learn more** &mdash; To learn more about using DEA Maps, click **Help** on the top right, then you can take the tour, watch the videos, or read the guides.
 
