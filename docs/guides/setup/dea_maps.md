@@ -21,7 +21,7 @@ Let's add a dataset to the map so that we can view the data. Here's an example m
 1. Open [DEA Maps](https://maps.dea.ga.gov.au/).
 1. Click **Explore map data**.
 1. In the data catalogue, navigate through the folders to find the dataset that you want to access then add it to the map. E.g. click **Baseline satellite data** &gt; **DEA Surface Reflectance (Sentinel-2)** &gt; **DEA Surface Reflectance (Sentinel-2A MSI)** &gt; **Add to the map**.
-1. The dataset will be added to the left panel and you may now see data overlaid on the map. But **if you don't see any data or data doesn't cover a location** or , continue to the next section: **Filter by location**.
+1. The dataset will be added as a card to the left sidebar and you may now see data overlaid on the map. But **if you don't see any data or data doesn't cover a location**, continue to the next section: **Filter by location**.
 
     ![Adding data](/_files/dea-maps/dea_maps_5.jpg)
 
