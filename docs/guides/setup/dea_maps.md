@@ -19,8 +19,8 @@
 Let's add a dataset to the map so that we can view the data. Here's an example map of [DEA Surface Reflectance (Sentinel-2A MSI)](https://maps.dea.ga.gov.au/#share=s-bNYeackQuE5oILJe4O13j1HZjBQ)
 
 1. Open [DEA Maps](https://maps.dea.ga.gov.au/).
-1. Click **Explore map data** &gt; in the data catalogue, navigate through the folders to find the dataset that you want to access. (E.g. click 'Baseline satellite data' &gt; 'DEA Surface Reflectance (Sentinel-2)' &gt; 'DEA Surface Reflectance (Sentinel-2A MSI)'.)
-1. Click the dataset's "**+**" icon to add it to the map (or click it's title then click **Add to the map**).
+1. Click **Explore map data**.
+1. In the data catalogue, navigate through the folders to find the dataset that you want to access then add it to the map. E.g. click **Baseline satellite data** &gt; **DEA Surface Reflectance (Sentinel-2)** &gt; **DEA Surface Reflectance (Sentinel-2A MSI)** &gt; **Add to the map**.
 1. The dataset will be added to the left panel and you may now see data overlaid on the map. But **if you don't see any data or data doesn't cover a location** or , continue to the next section: **Filter by location**.
 
     ![Adding data](/_files/dea-maps/dea_maps_5.jpg)
@@ -117,14 +117,25 @@ You can navigate through datasets across both location and time.
 
 ***
 
-## Watercourse Discharge tool 
+## Watercourse Discharge
 
-The Bureau of Meteorology provides current and historic water discharge data for 3,500 hydrological measurement stations across Australia. The Digital Earth Australia “Watercourse Discharge" tool can be used to match satellite imagery to watercourse discharge information over time at each measuring station. The tool enables the user to plot watercourse discharge and then easily search the related satellite images for the date of measurement.
+The [Bureau of Meteorology (BoM)](http://www.bom.gov.au/) provides water discharge data for 3,500 hydrological measurement stations across Australia. DEA's Water Discharge tool allows you to plot watercourse discharge information on a map and match it to the relevant satellite images for a particular date.
 
-1. Load a satellite dataset into your workbench (e.g. follow the `DEA Surface Reflectance (Sentinel-2)` example above).
-1. Load watercourse discharge data (e.g. the Hydrologic Reference Stations dataset) to your workbench by clicking on `Explore map data`. Scroll down and click `Other` > `Water Regulations Data (BoM)` > `Hydrological Reference Stations` > `Water Discharge`. Then click `Add to the map`.  
+1. Add a dataset to your map, e.g. 'DEA Surface Reflectance (Sentinel-2A MSI)'.
+1. Add the Watercourse Discharge dataset to your map: **Explore map data** &gt; **Other** &gt; **Water Regulations Data (BoM)** &gt; **Hydrologic Reference Stations** &gt; **Watercourse Discharge** &gt; **Add to the map**. The Hydrological Reference Stations will be plotted on the map. These are the locations where watercourse discharge is measured.
+1. Zoom in and click on one of these stations. A 'Feature Information' popup will provide details about the station.
+1. In the popup, click **Show &lt;dataset&gt; at this location**, e.g. 'Show DEA Surface Reflectance (Sentinel-2A MSI) at this location'.
+1. In the popup, click **Expand** to expand the hydrograph of this particular station, then click **&times;** to close the popup.
+1. To add your dataset to the hydrograph, in the left sidebar, on the dataset's panel, click the button: ![](/_files/dea-maps/show-available-times-on-chart-icon.jpg) ('Show available times on chart').
 
-    ![Watercourse Discharge Tool 1](/_files/dea-maps/dea_maps_wdt_1.jpg)
+![Watercourse Discharge Tool 2](/_files/dea-maps/dea_maps_wdt_2.jpg)
+
+
+
+
+
+
+
    
 1. The Hydrological Reference Stations watercourse measuring locations located across the country are shown below. Zoom into the map and click on a station of interest. A pop up with the stations name, location and other details will appear. Click `Show DEA Surface Reflectance (Sentinel-2) at this location`. Then click `Expand` and then close the pop up.
 
