@@ -134,7 +134,7 @@ target.
 {#brdf-albedo}
 ## Bidirectional Reflectance Distribution Function (BRDF) / Albedo Parameter
 
-The Bidirectional Reflectance Distribution Function (BRDF)/Albedo parameters provide:
+The BRDF/Albedo parameters provide:
 * coefficients for mathematical functions that describe the BRDF of each pixel in the seven [MODIS](#modis) 'Land' bands (1- 7); and
 * [albedo](#albedo) measurements derived simultaneously from the BRDF for bands 1-7 as well as three broad bands (0.4-0.7, 0.7-3.0, and 0.4- 3.0 micrometers).
 
@@ -221,7 +221,7 @@ orbiting our planet to detect physical changes across Australia. DEA prepares th
 data and makes it available to governments and industry for easy use. DEA is the Australian implementation of the 
 [Open Data Cube](#odc).
 
-For more information, see [the DEA website](https://www.dea.ga.gov.au/).
+For more information, see the [Digital Earth Australia website](https://www.dea.ga.gov.au/).
 
 {#dea-nb}
 ## DEA Notebooks
@@ -229,7 +229,7 @@ For more information, see [the DEA website](https://www.dea.ga.gov.au/).
 An open-source repository containing [Jupyter notebooks](#jupyter-nb), tools and workflows for 
 geospatial analysis with [Open Data Cube](#odc) and [xarray](#xarray).
 
-For more information, see [the GitHub repository](https://github.com/GeoscienceAustralia/dea-notebooks).
+For more information, see the [dea-notebooks GitHub repository](https://github.com/GeoscienceAustralia/dea-notebooks).
 
 {#dea-sandbox}
 ## DEA Sandbox
@@ -238,14 +238,14 @@ The Digital Earth Australia Sandbox is a learning and analysis environment for g
 [Open Data Cube](#odc). It includes sample data and [Jupyter notebooks](#jupyter-nb) that demonstrate the capability 
 of the [Open Data Cube](#odc).
 
-For more information, see [the getting started wiki](https://github.com/GeoscienceAustralia/dea-notebooks/wiki).
+For more information, see the [DEA Notebooks Wiki](https://github.com/GeoscienceAustralia/dea-notebooks/wiki).
 
 {#deafrica}
 ## Digital Earth Africa (DE Africa)
 
 A sister project to Digital Earth Australia but for the African Continent.
 
-For more information, see [Digital Earth Africa](https://www.digitalearthafrica.org/).
+For more information, see the [Digital Earth Africa website](https://www.digitalearthafrica.org/).
 
 {#dynamic-range}
 ## Dynamic range
@@ -304,7 +304,7 @@ trees during autumn, dying grass, etc.), and bare soils across the Australian co
 Landsat archive since 1987.
 
 For more information, and for details of the methodology, see
-[DEA Fractional Cover](https://www.dea.ga.gov.au/products/dea-fractional-cover).
+[DEA Fractional Cover](/data/category/dea-fractional-cover/).
 
 {#gain}
 ## Gain
@@ -320,7 +320,7 @@ Geoscience Australia is the national public-sector geoscience organisation. It i
 on all aspects of geoscience and is the custodian of geographic and geological data.
 [Digital Earth Australia](#dea) is a program of Geoscience Australia.
 
-For more information, see [Geoscience Australia](https://www.ga.gov.au/).
+For more information, see the [Geoscience Australia website](https://www.ga.gov.au/).
 
 {#geomedian}
 ## Geomedian
@@ -330,7 +330,7 @@ producing a multidimensional median over a timeseries of satellite images.
 
 The Geometric Median provides information on the general conditions of a landscape over a timeseries.
 
-For more information, see [Geomedian](https://doi.org/10.1109/TGRS.2017.2723896).
+For more information, see [DEA Geometric Median and Median Absolute Deviation (Landsat)](/data/product/dea-geometric-median-and-median-absolute-deviation-landsat/).
 
 {#gee}
 ## Google Earth Engine (GEE)
@@ -348,7 +348,7 @@ A system that manages and visualises spatially referenced data.
 Previously called High and Low Tide Composites. DEA High and Low Tide Imagery is a Digital Earth Australia product 
 providing cloud-free imagery mosaics of Australia's coast, estuaries and reefs at low and high tide.
 
-For more information, see [DEA High and Low Tide Imagery](https://www.dea.ga.gov.au/products/dea-high-low).
+For more information, see [DEA High and Low Tide Imagery (Landsat)](/data/product/dea-high-and-low-tide-imagery-landsat/).
 
 {#hpc}
 ## High Performance Computing (HPC)
@@ -376,7 +376,7 @@ For more information, see [DEA dataset maturity](/guides/reference/dataset_matur
 Previously called National Intertidal Digital Elevation Model (NIDEM). A DEA product derived from DEA Intertidal 
 Extents that maps the elevation of the Australian intertidal zone relative to Mean Sea Level.
 
-For more information, see [DEA Intertidal Elevation](https://www.dea.ga.gov.au/products/dea-intertidal-elevation).
+For more information, see [DEA Intertidal](/data/product/dea-intertidal/).
 
 {#item}
 ## Intertidal Extents
@@ -384,7 +384,7 @@ For more information, see [DEA Intertidal Elevation](https://www.dea.ga.gov.au/p
 Previously called Intertidal Extents Model (ITEM). DEA Intertidal Extents is a DEA product that maps the relative 
 extent of the Australian intertidal zone at regular intervals of the observed tidal range.
 
-For more information, see [DEA Intertidal Extents](https://www.dea.ga.gov.au/products/dea-intertidal-extents).
+For more information, see [DEA Intertidal Extents (Landsat)](/data/product/dea-intertidal-extents-landsat/).
 
 {#indexing}
 ## Indexing
@@ -393,7 +393,7 @@ The process of registering a dataset with associated metadata (in a folder or at
 instance so that it is searchable and accessible through the datacube API.
 
 {#jupyter-nb}
-## Jupyter notebooks
+## Jupyter notebook
 
 A computational "notebook" that allows code to be run and presented alongside explanatory documentation, figures, 
 scientific notation etc.
