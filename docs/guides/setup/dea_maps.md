@@ -100,36 +100,36 @@ It's possible to export small areas of DEA data in the high-resolution TIFF imag
 
 ## Navigate time and location
 
-You can navigate through datasets across both location and time.
+You can navigate through datasets across a range of times and locations.
 
 * Change to a different time by clicking the **Time** value in the left sidebar, or clicking on the timeline at the bottom.
 * Zoom in and out of the map by scrolling the mouse, or use the "**+**" and "**-**" buttons.
-* Move to a different location by dragging with the mouse, or type in the **Search for locations** bar. E.g. search for 'Lake Eyre', then click the option: 'Lake Eyre, SA'.
+* Move to a different location by dragging with the mouse, or use the **Search for locations** bar. E.g. search for 'Lake Eyre', then click 'Lake Eyre, SA' to jump straight to this location.
 
 ![Changing time](/_files/dea-maps/dea_maps_7.jpg)
 
 ## Watercourse Discharge
 
-The [Bureau of Meteorology (BoM)](http://www.bom.gov.au/) provides water discharge data for 3,500 hydrological measurement stations across Australia. DEA's Water Discharge tool allows you to plot watercourse discharge information on a map and match it to the relevant satellite images for a particular date.
+The [Bureau of Meteorology](http://www.bom.gov.au/) provides water discharge data for 3,500 hydrological measurement stations across Australia. DEA's Water Discharge tool allows you to plot watercourse discharge information on a map and match it to the relevant satellite images for a particular date.
 
 1. Add a dataset to your map, e.g. 'DEA Surface Reflectance (Sentinel-2A MSI)'.
-1. Add the Watercourse Discharge dataset to your map: **Explore map data** &gt; **Other** &gt; **Water Regulations Data (BoM)** &gt; **Hydrologic Reference Stations** &gt; **Watercourse Discharge** &gt; **Add to the map**. The Hydrological Reference Stations will be plotted on the map. These are the locations where watercourse discharge is measured.
+1. Add the Watercourse Discharge dataset to your map: **Explore map data** &gt; **Other** &gt; **Water Regulations Data (BoM)** &gt; **Hydrologic Reference Stations** &gt; **Watercourse Discharge** &gt; **Add to the map**. The Hydrological Reference Stations will be plotted on the map. These are the locations where watercourse discharge is measured by the Bureau of Meteorology.
 
     ![Watercourse Discharge Tool map](/_files/dea-maps/dea_maps_wdt_2.jpg)
 
 1. Zoom in and click on one of these stations. A 'Feature Information' popup will provide details about the station.
 1. In the popup, click **Show &lt;dataset&gt; at this location**, e.g. 'Show DEA Surface Reflectance (Sentinel-2A MSI) at this location'.
-1. In the popup, click **Expand** to expand the hydrograph of this particular station, then click **&times;** to close the popup. You can hover your mouse over the hydrograph to view the average watercourse discharge for each date.
-1. To add your dataset to the hydrograph, in the left sidebar, on the dataset's card, click the button: ![Button](/_files/dea-maps/show-available-times-on-chart-button.jpg) ('Show available times on chart').
-1. Each capture in your dataset will display as a dot on the hydrograph. To view the dots more clearly, you can zoom in on the hydrograph by scrolling your mouse. Click on a dot to jump to the particular time and location of the capture on the map.
+1. In the popup, click **Expand** to expand the hydrograph of this particular station, then click **&times;** to close the popup. You can hover your mouse over the hydrograph to view the average watercourse discharge value for each date.
+1. To add your chosen dataset to the hydrograph, in the left sidebar, on the dataset's card, click the ![Button](/_files/dea-maps/show-available-times-on-chart-button.jpg) button ('Show available times on chart').
+1. Each capture in your chosen dataset will display as a dot on the hydrograph. To view the dots more clearly, you can zoom in on the hydrograph by scrolling your mouse. Click on a dot to jump to the particular time and location of the capture on the map.
 
     ![Watercourse Discharge Tool hydrograph](/_files/dea-maps/dea_maps_wdt_5.jpg)
 
 ## Additional features
 
 * **Print your map** &mdash; Click **Share / Print** &gt; **Show Print View** &gt; a new page will open showing a printer-friendly view; click **Print** or press **Ctrl-p** on your keyboard.
-* **Capture a high-quality image of your map** &mdash; Follow the steps above to print your map, except on the printer-friendly page, right-click on the image and select **Save image as ...**.
+* **Capture a high-quality image of your map** &mdash; Follow the steps above to print your map, except on the printer-friendly page, right-click on the image and select **Save image as**.
 * **Animate satellite imagery** &mdash; Once you have added a dataset to the map, click the 'Play' button on the timeline at the bottom. You can adjust the speed using the 'Play faster' and 'Play slower' buttons.
-* **Dataset documentation** &mdash; To learn more about a dataset and how to use its specific features on the map, see its [Data Product page](/data/). For example, the [DEA Waterbodies (Landsat)](/data/product/dea-waterbodies-landsat/) page explains how to view feature information about waterbodies and compare waterbodies on the map.
+* **Dataset documentation** &mdash; To learn more about a dataset and how to use its specific features on the map, see its [Data Product page](/data/). For example, the [DEA Waterbodies (Landsat)](/data/product/dea-waterbodies-landsat/) page explains how to view information about waterbodies and compare waterbodies on the map.
 * **Learn more** &mdash; To learn more about using DEA Maps, click **Help** on the top right, then you can take the tour, watch the videos, or read the guides.
 
