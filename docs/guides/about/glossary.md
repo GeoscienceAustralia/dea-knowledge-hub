@@ -1,6 +1,6 @@
-# Digital Earth Australia Glossary
+# DEA Glossary
 
-This glossary provides definitions for the terms we use at DEA, including technical terms and program-specific terms. (They are in alphabetical order.)
+This glossary contains terms that are used by Digital Earth Australia (DEA), including many technical terms used in the field of Earth Observation.
 
 {#acquisition}
 ## Acquisition
