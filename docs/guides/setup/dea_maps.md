@@ -16,7 +16,7 @@
 
 ## Add data to the map
 
-Let's add a dataset to the map so that we can view the data. Here's an example map of [DEA Surface Reflectance (Sentinel-2A MSI)](https://maps.dea.ga.gov.au/#share=s-bNYeackQuE5oILJe4O13j1HZjBQ)
+Let's add a dataset to the map so that we can view the data. Here's an example map of [DEA Surface Reflectance (Sentinel-2A MSI)](https://maps.dea.ga.gov.au/#share=s-bNYeackQuE5oILJe4O13j1HZjBQ).
 
 1. Open [DEA Maps](https://maps.dea.ga.gov.au/).
 1. Click **Explore map data**.
@@ -48,9 +48,9 @@ Once you've created a map by adding datasets, adjusting settings, and zooming in
 1. Click **Copy** to copy this custom URL to your clipboard.
 1. Anyone who opens this URL will see your map, exactly as you configured it. You can send this URL to others, link to it from a public website, or bookmark it for later.
 
-![Share](/_files/dea-maps/dea_maps_share_1.jpg)
+![Share URL](/_files/dea-maps/share-url.jpg)
 
-## Switch bands and layers
+## Switch bands and layers (styles)
 
 Most datasets contain multiple 'bands' or 'layers' of data that reveal different features of the landscape. You can switch between these using the **Styles** dropdown in the left sidebar.
 
