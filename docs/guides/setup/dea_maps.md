@@ -38,7 +38,7 @@ After adding data to the map, if you don't see any data or the data doesn't cove
 1. Data should now be overlaid on that location. The left sidebar will indicate that the filter has been applied.
 1. Next, you can either select **Remove filter** or **New location**.
 
-    ![Adding data](/_files/dea-maps/dea_maps_6.jpg)
+    ![Filtering](/_files/dea-maps/dea_maps_6.jpg)
 
 ## Share a URL and save your map
 
@@ -86,7 +86,7 @@ The **Difference** tool allows you to visualise the changes in a dataset over ti
 1. The difference will be shown on the map as a new dataset. For instance, the 'Modified Normalised Difference Water Index - Green, SWIR' shows locations that have gotten wetter over time in blue while locations that have gotten dryer are red.
 1. To reopen the left sidebar, click **Show workbench**, and to close the difference tool, click **Exit**. You'll notice that in the left sidebar, the difference dataset has been added.
 
-![Difference 2](/_files/dea-maps/dea_maps_diff_2.jpg)
+![Difference](/_files/dea-maps/dea_maps_diff_2.jpg)
 
 ## Export data as high-resolution TIFF
 
@@ -115,15 +115,15 @@ The [Bureau of Meteorology (BoM)](http://www.bom.gov.au/) provides water dischar
 1. Add a dataset to your map, e.g. 'DEA Surface Reflectance (Sentinel-2A MSI)'.
 1. Add the Watercourse Discharge dataset to your map: **Explore map data** &gt; **Other** &gt; **Water Regulations Data (BoM)** &gt; **Hydrologic Reference Stations** &gt; **Watercourse Discharge** &gt; **Add to the map**. The Hydrological Reference Stations will be plotted on the map. These are the locations where watercourse discharge is measured.
 
-    ![Watercourse Discharge Tool 2](/_files/dea-maps/dea_maps_wdt_2.jpg)
+    ![Watercourse Discharge Tool map](/_files/dea-maps/dea_maps_wdt_2.jpg)
 
 1. Zoom in and click on one of these stations. A 'Feature Information' popup will provide details about the station.
 1. In the popup, click **Show &lt;dataset&gt; at this location**, e.g. 'Show DEA Surface Reflectance (Sentinel-2A MSI) at this location'.
 1. In the popup, click **Expand** to expand the hydrograph of this particular station, then click **&times;** to close the popup. You can hover your mouse over the hydrograph to view the average watercourse discharge for each date.
-1. To add your dataset to the hydrograph, in the left sidebar, on the dataset's card, click the button: ![](/_files/dea-maps/show-available-times-on-chart-icon.jpg) ('Show available times on chart').
+1. To add your dataset to the hydrograph, in the left sidebar, on the dataset's card, click the button: ![Button](/_files/dea-maps/show-available-times-on-chart-icon.jpg) ('Show available times on chart').
 1. Each capture in your dataset will display as a dot on the hydrograph. To view the dots more clearly, you can zoom in on the hydrograph by scrolling your mouse. Click on a dot to jump to the particular time and location of the capture on the map.
 
-    ![Watercourse Discharge Tool 5](/_files/dea-maps/dea_maps_wdt_5.jpg)
+    ![Watercourse Discharge Tool hydrograph](/_files/dea-maps/dea_maps_wdt_5.jpg)
 
 ## Additional features
 
