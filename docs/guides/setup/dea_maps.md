@@ -42,7 +42,7 @@ After adding data to the map, if you don't see any data or the data doesn't cove
 
 ## Share a URL and save your map
 
-Once you've created a map by adding layers, adjusting settings, and zooming in on a specific location, you will want to share this map with others, or save it so you can continue work on it later. You can do both of these using the **Share URL** feature.
+Once you've created a map by adding datasets, adjusting settings, and zooming in on a specific location, you will want to share this map with others, or save it so you can continue work on it later. You can do both of these using the **Share URL** feature.
 
 1. Click **Share / Print** on the top right.
 1. Click **Copy** to copy this custom URL to your clipboard.
@@ -63,7 +63,7 @@ For example, the 'DEA Surface Reflectance (Sentinel-2)' dataset can be switched 
 There is a **Compare** feature that lets you view two different map configurations side-by-side. This allows you to compare two different datasets or the same dataset at two different times. Here's an example map of [DEA High Tide Imagery versus DEA Low Tide Imagery](https://maps.dea.ga.gov.au/#share=s-7YeWZKqWkF0Ctv5Av8RkHSWeNzQ).
 
 1. In the left sidebar, click the three vertical dots ('Show more actions') on a dataset that you have added to the map &gt; click **Compare**.
-1. A 'screen splitter' will now split the map into two halves. In the sidebar, the dataset's panel will be split into two copies: one labelled 'Left' and the other 'Right'.
+1. A 'screen splitter' will now split the map into two halves. In the sidebar, the dataset's card will be split into two separate cards: one labelled 'Left' and the other 'Right'.
 1. You can configure each side of the map independently. E.g. you can change the 'Styles' value on the right side.
 1. Each dataset can be assigned to either the **Left** or **Right** side or **Both** by selecting the relevant option in the left sidebar.
 1. To compare two different datasets side-by-side: add an additional dataset to the map &gt; assign it to the right or left side &gt; remove the existing dataset that was assigned to that side.
@@ -108,50 +108,27 @@ You can navigate through datasets across both location and time.
 
 ![Changing time](/_files/dea-maps/dea_maps_7.jpg)
 
-## Additional features
-
-* **Animate satellite imagery** &mdash; The time slider can also be used to animate satellite imagery. Click the arrow "Play" button to the left of the time slider, and control the speed of the animation using the "Play faster" and "Play slower" buttons.
-* **Print your map** &mdash; Click **Share / Print** &gt; **Show Print View** &gt; a new page will open showing a printer-friendly view; click **Print** or press **Ctrl-p** on your keyboard.
-* **Capture a high-quality image of your map** &mdash; Follow the steps above to print your map, except on the printer-friendly page, right-click on the image and select **Save image as ...**.
-* **Help** &mdash; For more information about using DEA Maps, click **Help** on the top right, then you can take the tour, watch the videos, or read the guides.
-
-***
-
 ## Watercourse Discharge
 
 The [Bureau of Meteorology (BoM)](http://www.bom.gov.au/) provides water discharge data for 3,500 hydrological measurement stations across Australia. DEA's Water Discharge tool allows you to plot watercourse discharge information on a map and match it to the relevant satellite images for a particular date.
 
 1. Add a dataset to your map, e.g. 'DEA Surface Reflectance (Sentinel-2A MSI)'.
 1. Add the Watercourse Discharge dataset to your map: **Explore map data** &gt; **Other** &gt; **Water Regulations Data (BoM)** &gt; **Hydrologic Reference Stations** &gt; **Watercourse Discharge** &gt; **Add to the map**. The Hydrological Reference Stations will be plotted on the map. These are the locations where watercourse discharge is measured.
-1. Zoom in and click on one of these stations. A 'Feature Information' popup will provide details about the station.
-1. In the popup, click **Show &lt;dataset&gt; at this location**, e.g. 'Show DEA Surface Reflectance (Sentinel-2A MSI) at this location'.
-1. In the popup, click **Expand** to expand the hydrograph of this particular station, then click **&times;** to close the popup.
-1. To add your dataset to the hydrograph, in the left sidebar, on the dataset's panel, click the button: ![](/_files/dea-maps/show-available-times-on-chart-icon.jpg) ('Show available times on chart').
-
-![Watercourse Discharge Tool 2](/_files/dea-maps/dea_maps_wdt_2.jpg)
-
-
-
-
-
-
-
-   
-1. The Hydrological Reference Stations watercourse measuring locations located across the country are shown below. Zoom into the map and click on a station of interest. A pop up with the stations name, location and other details will appear. Click `Show DEA Surface Reflectance (Sentinel-2) at this location`. Then click `Expand` and then close the pop up.
 
     ![Watercourse Discharge Tool 2](/_files/dea-maps/dea_maps_wdt_2.jpg)
 
-    ![Watercourse Discharge Tool 3](/dea-maps/dea_maps_wdt_3.jpg)
-   
-1. A hydrograph of your chosen station will now be at the bottom of the screen. To link the Sentinel-2 data to the hydrograph, click on the `Show available times` chart symbol in the DEA Surface Reflectance (Sentinel-2) card on your workbench.
-
-    ![Watercourse Discharge Tool 4](/_files/dea-maps/dea_maps_wdt_4.jpg)
-   
-1. Sentinel-2 captures will now appear as dots on the hydrograph. Clicking on a dot will load imagery from that date onto the map. Hovering over a dot will show the date and time of capture and the average watercourse discharge rate. Note: Sentinel-2 data is only available for 2015 onwards. To clearly see the dots on the hydrograph, you may need to zoom in using your mouse wheel. 
+1. Zoom in and click on one of these stations. A 'Feature Information' popup will provide details about the station.
+1. In the popup, click **Show &lt;dataset&gt; at this location**, e.g. 'Show DEA Surface Reflectance (Sentinel-2A MSI) at this location'.
+1. In the popup, click **Expand** to expand the hydrograph of this particular station, then click **&times;** to close the popup. You can hover your mouse over the hydrograph to view the average watercourse discharge for each date.
+1. To add your dataset to the hydrograph, in the left sidebar, on the dataset's card, click the button: ![](/_files/dea-maps/show-available-times-on-chart-icon.jpg) ('Show available times on chart').
+1. Each capture in your dataset will display as a dot on the hydrograph. To view the dots more clearly, you can zoom in on the hydrograph by scrolling your mouse. Click on a dot to jump to the particular time and location of the capture on the map.
 
     ![Watercourse Discharge Tool 5](/_files/dea-maps/dea_maps_wdt_5.jpg)
-   
-1. You can change the style of the Sentinel-2 data by clicking on the `Styles` dropdown menu in the DEA Surface Reflectance (Sentinel-2) card on your workbench. The example below shows Modified Normalised Difference Water Index – Green, SWIR.
 
-    ![Watercourse Discharge Tool 6](/_files/dea-maps/dea_maps_wdt_6.jpg)
+## Additional features
+
+* **Animate satellite imagery** &mdash; The time slider can also be used to animate satellite imagery. Click the arrow "Play" button to the left of the time slider, and control the speed of the animation using the "Play faster" and "Play slower" buttons.
+* **Print your map** &mdash; Click **Share / Print** &gt; **Show Print View** &gt; a new page will open showing a printer-friendly view; click **Print** or press **Ctrl-p** on your keyboard.
+* **Capture a high-quality image of your map** &mdash; Follow the steps above to print your map, except on the printer-friendly page, right-click on the image and select **Save image as ...**.
+* **Learn more** &mdash; To learn more about using DEA Maps, click **Help** on the top right, then you can take the tour, watch the videos, or read the guides.
 
