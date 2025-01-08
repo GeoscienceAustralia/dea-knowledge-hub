@@ -226,7 +226,7 @@ For more information, see the [Digital Earth Australia website](https://www.dea.
 {#dea-nb}
 ## DEA Notebooks
 
-An open-source repository containing [Jupyter notebooks](#jupyter-nb), tools and workflows for 
+An open-source repository containing [Jupyter Notebooks](#jupyter-nb), tools and workflows for 
 geospatial analysis with [Open Data Cube](#odc) and [xarray](#xarray).
 
 For more information, see the [dea-notebooks GitHub repository](https://github.com/GeoscienceAustralia/dea-notebooks).
@@ -235,7 +235,7 @@ For more information, see the [dea-notebooks GitHub repository](https://github.c
 ## DEA Sandbox
 
 The Digital Earth Australia Sandbox is a learning and analysis environment for getting started with DEA and the 
-[Open Data Cube](#odc). It includes sample data and [Jupyter notebooks](#jupyter-nb) that demonstrate the capability 
+[Open Data Cube](#odc). It includes sample data and [Jupyter Notebooks](#jupyter-nb) that demonstrate the capability 
 of the [Open Data Cube](#odc).
 
 For more information, see the [DEA Notebooks Wiki](https://github.com/GeoscienceAustralia/dea-notebooks/wiki).
@@ -393,15 +393,16 @@ The process of registering a dataset with associated metadata (in a folder or at
 instance so that it is searchable and accessible through the datacube API.
 
 {#jupyter-nb}
-## Jupyter notebook
+## Jupyter Notebook
 
-A computational "notebook" that allows code to be run and presented alongside explanatory documentation, figures, 
-scientific notation etc.
+A document format (with .ipynb extension) that contains live code that can be used to analyse data, display charts, and more.
+
+For more information, see the [Introduction to Jupyter notebooks](/notebooks/Beginners_guide/01_Jupyter_notebooks/).
 
 {#jupyter-lab}
 ## JupyterLab
 
-An interactive web-based user interface for editing and running Jupyter notebooks. JupyterLab is used as an analysis 
+An interactive web-based user interface for editing and running Jupyter Notebooks. JupyterLab is used as an analysis 
 environment on both the [DEA Sandbox](#dea-sandbox) and the NCI's [ARE](#are).
 
 {#landsat}
@@ -463,16 +464,16 @@ The point of the celestial sphere that is vertically downward from the observer 
 [zenith](#zenith).
 
 {#nbar}
-## Nadir-corrected [BRDF](#brdf) Adjusted Reflectance (NBAR)
+## Nadir-corrected BRDF Adjusted Reflectance (NBAR)
 
 Surface reflectance data that has been corrected to remove the effects of topography and angular variation using 
-bidirectional reflectance modelling.
+bidirectional reflectance modelling ([BRDF](#brdf)).
 
 {#nbart}
-## Nadir-corrected [BRDF](#brdf) Adjusted Reflectance with Terrain illumination correction (NBART)
+## Nadir-corrected BRDF Adjusted Reflectance with Terrain illumination correction (NBART)
 
 Surface reflectance data that has been corrected to remove the effects of topography and angular variation using 
-bidirectional reflectance modelling, as well as corrected for the effects of terrain shadow.
+bidirectional reflectance modelling ([BRDF](#brdf)), as well as corrected for the effects of terrain shadow.
 
 {#nasa}
 ## National Aeronautics and Space Administration (NASA)
@@ -509,7 +510,7 @@ Calculated from visible and near-infrared ([NIR](#nir)) light reflected by veget
 ## Near Infrared (NIR)
 
 Radiation just beyond the visible light spectrum. In Landsat and Sentinel 2 Earth observation satellites, it refers to 
-radiation between 0.7 - 0.9 micrometers.
+radiation in the range of 0.7 to 0.9 micrometers.
 
 {#nrt}
 ## Near real-time (NRT)
@@ -536,7 +537,7 @@ For more information, see [Open Data Cube](https://www.opendatacube.org).
 
 The Operational Land Imager is carried by the Landsat 8 satellite. It measures in the visible, near infrared 
 [NIR](#nir), and short wave infrared [SWIR](#swir) portions of the spectrum. Its images have 15-meter (49 ft.) 
-[panchromatic](#panchromatic) and 30-meter multi-spectral spatial resolutions along a 185 km(115 miles) wide swath.
+[panchromatic](#panchromatic) and 30-meter multi-spectral spatial resolutions along a 185 km (115 miles) wide swath.
 
 For more information, see [Landsat 8](https://landsat.gsfc.nasa.gov/satellites/landsat-8/).
 
@@ -623,7 +624,7 @@ Relating to, using, or measured by a [radiometer](#radiometer). The measurement 
 {#raster}
 ## Raster data
 
-An abstraction of the real world where spatial data is expressed as a matrix of cells or [pixel](#pixel)s, with spatial 
+An abstraction of the real world where spatial data is expressed as a matrix of cells or [pixels](#pixel), with spatial 
 position implicit in the ordering of the pixels. With the raster data model, spatial data is not continuous but divided 
 into discrete units. This makes raster data particularly suitable for certain types of spatial operations 
 (e.g. overlays or area calculations). Unlike [vector data](#vector), there are no implicit topological relationships.
@@ -703,7 +704,7 @@ Scenes are primarily used for LANDSAT satellite data.
 {#ssh}
 ## Secure Shell (SSH)
 
-SSH or Secure Shell is a means to access remote computers using a text based terminal interface. It comes build in 
+SSH is a technology that enables accessing remote computers using a text based terminal interface. It comes build in 
 with Linux, but requires additional software to use it from Windows computers.
 
 {#sentinel}
@@ -719,7 +720,7 @@ For more information, see [Copernicus: Discover our satellites](https://www.cope
 ## Short-Wave Infrared (SWIR)
 
 Radiation beyond the visible light spectrum. In Landsat and Sentinel 2 Earth observation satellites, it refers to 
-radiation between 1.5 - 2.4 micrometers.
+radiation in the range of 1.5 to 2.4 micrometers.
 
 {#solar-azimuth}
 ## Solar azimuth (degrees)
@@ -748,7 +749,7 @@ that point to the sun.
 
 The area on the ground that an imaging system, such as a satellite sensor, can distinguish.
 
-See also [resolution](#resolution).
+Also see [resolution](#resolution).
 
 {#spectral-response}
 ## Spectral response
