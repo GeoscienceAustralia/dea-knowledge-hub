@@ -19,7 +19,7 @@ with Earth, but remains in orbit.
 An imaging instrument onboard Terra, the flagship satellite of NASA's Earth Observing System (EOS) launched in December 
 1999. ASTER data is used to create detailed maps of land surface temperature, reflectance, and elevation.
 
-For more information, see [NASA: ASTER.](https://asterweb.jpl.nasa.gov/)
+Learn more: [NASA: ASTER.](https://asterweb.jpl.nasa.gov/)
 
 {#avhrr}
 ## Advanced Very-High Resolution Radiometer (AVHRR)
@@ -28,14 +28,14 @@ A radiation-detection sensor that can be used for remotely determining cloud cov
 instruments are carried by the National Oceanic and Atmospheric Administration (NOAA) family of polar orbiting 
 and European MetOp satellites.
 
-For more information, see [ESA: AVHRR.](https://earth.esa.int/eogateway/missions/noaa)
+Learn more: [ESA: AVHRR.](https://earth.esa.int/eogateway/missions/noaa)
 
 {#aerosol-optical-depth}
 ## Aerosol optical depth
 
 Aerosol optical depth is a measure of the extinction of the solar beam by dust and haze.
 
-For more information, see [NASA Earth Observatory.](https://earthobservatory.nasa.gov/global-maps/MODAL2_M_AER_OD)
+Learn more: [NASA Earth Observatory.](https://earthobservatory.nasa.gov/global-maps/MODAL2_M_AER_OD)
 
 {#albedo}
 ## Albedo
@@ -95,7 +95,7 @@ The AGDC has since been superseded by [Digital Earth Australia](#dea).
 The ARE is an interface for using the data and software available on the [NCI](#nci). 
 It is a replacement for the old [VDI](#vdi) system.
 
-For more information, see [Australian Research Environment](https://are.nci.org.au/).
+Learn more: [Australian Research Environment](https://are.nci.org.au/).
 
 {#azimuth}
 ## Azimuth
@@ -138,7 +138,7 @@ The BRDF/Albedo parameters provide:
 * coefficients for mathematical functions that describe the BRDF of each pixel in the seven [MODIS](#modis) 'Land' bands (1- 7); and
 * [albedo](#albedo) measurements derived simultaneously from the BRDF for bands 1-7 as well as three broad bands (0.4-0.7, 0.7-3.0, and 0.4- 3.0 micrometers).
 
-For more information see: [NASA](https://modis.gsfc.nasa.gov/data/dataprod/mod43.php).
+Learn more: [NASA](https://modis.gsfc.nasa.gov/data/dataprod/mod43.php).
 
 {#cog}
 ## Cloud Optimised GeoTIFF (COG)
@@ -182,7 +182,7 @@ The SEO performs historical coverage analyses using the data archives for the La
 
 An Australian federal government agency responsible for scientific research.
 
-For more information, see [CSIRO](https://www.csiro.au/).
+Learn more: [CSIRO](https://www.csiro.au/).
 
 {#crs}
 ## Coordinate reference system (CRS)
@@ -196,7 +196,7 @@ Copernicus Australasia is a regional hub supporting the [Copernicus Program](#co
 Copernicus Australasia Regional Data Hub provides free and open access to data from Europe's Sentinel satellite
 missions for the following South-East Asia and South Pacific region.
 
-For more information, see [Copernicus Australasia](https://www.copernicus.gov.au/).
+Learn more: [Copernicus Australasia](https://www.copernicus.gov.au/).
 
 {#cop-prog}
 ## Copernicus Programme
@@ -205,7 +205,7 @@ The Copernicus Programme, established in 2014, is the European Union (EU)'s Eart
 managed by the European Commission in partnership with the European Space Agency (ESA), the EU Member States and EU 
 Agencies.
 
-For more information, see [Copernicus Programme](https://www.copernicus.eu/en).
+Learn more: [Copernicus Programme](https://www.copernicus.eu/en).
 
 {#dataset}
 ## Dataset
@@ -221,7 +221,7 @@ orbiting our planet to detect physical changes across Australia. DEA prepares th
 data and makes it available to governments and industry for easy use. DEA is the Australian implementation of the 
 [Open Data Cube](#odc).
 
-For more information, see the [Digital Earth Australia website](https://www.dea.ga.gov.au/).
+Learn more: [Digital Earth Australia](https://www.dea.ga.gov.au/).
 
 {#dea-nb}
 ## DEA Notebooks
@@ -229,7 +229,7 @@ For more information, see the [Digital Earth Australia website](https://www.dea.
 An open-source repository containing [Jupyter Notebooks](#jupyter-nb), tools and workflows for 
 geospatial analysis with [Open Data Cube](#odc) and [xarray](#xarray).
 
-For more information, see the [dea-notebooks GitHub repository](https://github.com/GeoscienceAustralia/dea-notebooks).
+Learn more: [dea-notebooks GitHub repository](https://github.com/GeoscienceAustralia/dea-notebooks).
 
 {#dea-sandbox}
 ## DEA Sandbox
@@ -238,14 +238,14 @@ The Digital Earth Australia Sandbox is a learning and analysis environment for g
 [Open Data Cube](#odc). It includes sample data and [Jupyter Notebooks](#jupyter-nb) that demonstrate the capability 
 of the [Open Data Cube](#odc).
 
-For more information, see the [DEA Notebooks Wiki](https://github.com/GeoscienceAustralia/dea-notebooks/wiki).
+Learn more: [DEA Notebooks Wiki](https://github.com/GeoscienceAustralia/dea-notebooks/wiki).
 
 {#deafrica}
 ## Digital Earth Africa (DE Africa)
 
 A sister project to Digital Earth Australia but for the African Continent.
 
-For more information, see the [Digital Earth Africa website](https://www.digitalearthafrica.org/).
+Learn more: [Digital Earth Africa](https://www.digitalearthafrica.org/).
 
 {#dynamic-range}
 ## Dynamic range
@@ -264,7 +264,7 @@ satellite-based observations, as well as drone or aerial images.
 The sensor aboard Landsat 7 that picks up solar radiation reflected by or emitted from the Earth. It is an enhanced 
 version of the [Thematic Mapper](#tm).
 
-For more information, see [NASA Enhanced Thematic Mapper Plus](https://landsat.gsfc.nasa.gov/etm-plus/).
+Learn more: [NASA Enhanced Thematic Mapper Plus](https://landsat.gsfc.nasa.gov/etm-plus/).
 
 {#ephemeris}
 ## Ephemeris
@@ -289,12 +289,13 @@ The angle between a ray reflected from a surface and the line perpendicular to t
 A stage in DEA's dataset maturity lifecycle. DEA’s best quality [ARD](#ard), produced using high quality [ancillary](#ancillary) 
 datasets derived from observed data.
 
-For more information, see [DEA dataset maturity](/guides/reference/dataset_maturity_guide#final).
+Learn more: [DEA dataset maturity](/guides/reference/dataset_maturity_guide#final).
 
 {#fc}
 ## Fractional Cover (FC)
 
 Fractional Cover (FC) is a DEA product that uses an algorithm to split the landscape into three parts, or fractions;
+
 * green (leaves, grass, and growing crops),
 * brown (branches, dry grass or hay, and dead leaf litter), and
 * bare ground (soil or rock).
@@ -303,8 +304,7 @@ FC provides a representation of the proportions of living vegetation, dry and dy
 trees during autumn, dying grass, etc.), and bare soils across the Australian continent for any point in time in the 
 Landsat archive since 1987.
 
-For more information, and for details of the methodology, see
-[DEA Fractional Cover](/data/category/dea-fractional-cover/).
+Learn more: [DEA Fractional Cover](/data/category/dea-fractional-cover/).
 
 {#gain}
 ## Gain
@@ -320,7 +320,7 @@ Geoscience Australia is the national public-sector geoscience organisation. It i
 on all aspects of geoscience and is the custodian of geographic and geological data.
 [Digital Earth Australia](#dea) is a program of Geoscience Australia.
 
-For more information, see the [Geoscience Australia website](https://www.ga.gov.au/).
+Learn more: [Geoscience Australia](https://www.ga.gov.au/).
 
 {#geomedian}
 ## Geomedian
@@ -330,7 +330,7 @@ producing a multidimensional median over a timeseries of satellite images.
 
 The Geometric Median provides information on the general conditions of a landscape over a timeseries.
 
-For more information, see [DEA Geometric Median and Median Absolute Deviation (Landsat)](/data/product/dea-geometric-median-and-median-absolute-deviation-landsat/).
+Learn more: [DEA Geometric Median and Median Absolute Deviation (Landsat)](/data/product/dea-geometric-median-and-median-absolute-deviation-landsat/).
 
 {#gee}
 ## Google Earth Engine (GEE)
@@ -348,7 +348,7 @@ A system that manages and visualises spatially referenced data.
 Previously called High and Low Tide Composites. DEA High and Low Tide Imagery is a Digital Earth Australia product 
 providing cloud-free imagery mosaics of Australia's coast, estuaries and reefs at low and high tide.
 
-For more information, see [DEA High and Low Tide Imagery (Landsat)](/data/product/dea-high-and-low-tide-imagery-landsat/).
+Learn more: [DEA High and Low Tide Imagery (Landsat)](/data/product/dea-high-and-low-tide-imagery-landsat/).
 
 {#hpc}
 ## High Performance Computing (HPC)
@@ -368,7 +368,7 @@ A stage in DEA's dataset maturity lifecycle. Interim production means that one o
 available at the time of production, and the dataset has instead been corrected using a combination of [NRT](#nrt) 
 climatological ancillaries, and [final](#final) observed ancillaries.
 
-For more information, see [DEA dataset maturity](/guides/reference/dataset_maturity_guide#interim).
+Learn more: [DEA dataset maturity](/guides/reference/dataset_maturity_guide#interim).
 
 {#nidem}
 ## Intertidal Elevation
@@ -376,7 +376,7 @@ For more information, see [DEA dataset maturity](/guides/reference/dataset_matur
 Previously called National Intertidal Digital Elevation Model (NIDEM). A DEA product derived from DEA Intertidal 
 Extents that maps the elevation of the Australian intertidal zone relative to Mean Sea Level.
 
-For more information, see [DEA Intertidal](/data/product/dea-intertidal/).
+Learn more: [DEA Intertidal](/data/product/dea-intertidal/).
 
 {#item}
 ## Intertidal Extents
@@ -384,7 +384,7 @@ For more information, see [DEA Intertidal](/data/product/dea-intertidal/).
 Previously called Intertidal Extents Model (ITEM). DEA Intertidal Extents is a DEA product that maps the relative 
 extent of the Australian intertidal zone at regular intervals of the observed tidal range.
 
-For more information, see [DEA Intertidal Extents (Landsat)](/data/product/dea-intertidal-extents-landsat/).
+Learn more: [DEA Intertidal Extents (Landsat)](/data/product/dea-intertidal-extents-landsat/).
 
 {#indexing}
 ## Indexing
@@ -397,7 +397,7 @@ instance so that it is searchable and accessible through the datacube API.
 
 A document format (with .ipynb file extension) that contains live code that can be used to analyse data, display charts, and more.
 
-For more information, see the [Introduction to Jupyter notebooks](/notebooks/Beginners_guide/01_Jupyter_notebooks/).
+Learn more: [Introduction to Jupyter notebooks](/notebooks/Beginners_guide/01_Jupyter_notebooks/).
 
 {#jupyter-lab}
 ## JupyterLab
@@ -411,7 +411,7 @@ environment on both the [DEA Sandbox](#dea-sandbox) and the NCI's [ARE](#are).
 A joint [NASA](#nasa)/[USGS](#usgs) program of medium resolution satellites that have been collecting publicly 
 available Earth observation data continuously since 1972.
 
-For more information, see [Landsat Science](https://landsat.gsfc.nasa.gov/).
+Learn more: [Landsat Science](https://landsat.gsfc.nasa.gov/).
 
 {#lccs}
 ## Land Cover Classification Scheme (LCCS)
@@ -419,7 +419,7 @@ For more information, see [Landsat Science](https://landsat.gsfc.nasa.gov/).
 The Land Cover Classification Scheme was developed by the United Nations Food and Agriculture Organization to provide 
 a consistent framework for the classification and mapping of land cover.
 
-For more information, see [LCCS](https://www.fao.org/land-water/land/land-governance/land-resources-planning-toolbox/category/details/en/c/1036361/).
+Learn more: [LCCS](https://www.fao.org/land-water/land/land-governance/land-resources-planning-toolbox/category/details/en/c/1036361/).
   
 {#mad} 
 ## Median Absolute Deviation (MAD)
@@ -428,7 +428,7 @@ Median Absolute Deviation, used as a form of standard deviation for the geomedia
 
 The Median Absolute Deviation provides information on how a landscape is changing over a timeseries.
 
-For more information, see [MAD](https://doi.org/10.1109/IGARSS.2018.8518312).
+Learn more: [MAD](https://doi.org/10.1109/IGARSS.2018.8518312).
 
 {#modis}
 ## Moderate Resolution Imaging Spectroradiometer (MODIS)
@@ -437,7 +437,7 @@ A sensor aboard NASA’s Terra and Aqua satellites. MODIS instruments view the e
 acquiring data in 36 spectral bands. It plays a vital role in the development of validated, global, interactive 
 Earth system models which aim to accurately predict global change.
 
-For more information, see [NASA: MODIS](https://modis.gsfc.nasa.gov/about/).
+Learn more: [NASA: MODIS](https://modis.gsfc.nasa.gov/about/).
 
 {#msi}
 ## MultiSpectral Instrument (MSI)
@@ -447,7 +447,7 @@ atmosphere is collected by a three-mirror (M1, M2 and M3) telescope and
 focused, via a beam-splitter, onto two Focal Plane Assemblies: one for the ten very-near infrared wavelengths and one 
 for the three shortwave infrared wavelengths.
 
-For more information see: [ESA missions - Sentinel-2](https://sentinel.esa.int/web/sentinel/missions/sentinel-2).
+Learn more: [ESA missions - Sentinel-2](https://sentinel.esa.int/web/sentinel/missions/sentinel-2).
 
 {#mss}
 ## Multispectral Scanner (MSS)
@@ -455,7 +455,7 @@ For more information see: [ESA missions - Sentinel-2](https://sentinel.esa.int/w
 A line-scanning instrument carried by Landsat satellites that continually scans the Earth in a 185 km swath and 
 collects data over a variety of wavelengths.
 
-For more information, see [Landsat: Multispectral Scanner](https://landsat.gsfc.nasa.gov/multispectral-scanner/).
+Learn more: [Landsat: Multispectral Scanner](https://landsat.gsfc.nasa.gov/multispectral-scanner/).
 
 {#nadir}
 ## Nadir
@@ -486,7 +486,7 @@ The United States of America's federal government's civil space, aeronautics and
 A national facility that provides world-class, high-end computing services to Australian researchers, including those 
 working in the data-intensive areas of climate and Earth system science.
 
-For more information, see [National Computational Infrastructure](https://www.nci.org.au/).
+Learn more: [National Computational Infrastructure](https://www.nci.org.au/).
 
 {#noaa}
 ## National Oceanic and Atmospheric Administration (NOAA)
@@ -494,7 +494,7 @@ For more information, see [National Computational Infrastructure](https://www.nc
 A scientific agency within the United States Department of Commerce that focuses on the conditions of the oceans, 
 major waterways and atmosphere.
 
-For more information, see [NOAA](https://www.noaa.gov/).
+Learn more: [NOAA](https://www.noaa.gov/).
 
 {#nbr}
 ## Normalised Burn Ratio (NBR)
@@ -518,7 +518,7 @@ radiation in the range of 0.7 to 0.9 micrometers.
 A stage in DEA's dataset maturity lifecycle. NRT data is a less refined/calibrated dataset, which is available much 
 sooner after satellite acquisition than standard [ARD](#ard) data.
 
-For more information, see [DEA dataset maturity](/guides/reference/dataset_maturity_guide#nrt).
+Learn more: [DEA dataset maturity](/guides/reference/dataset_maturity_guide#nrt).
 
 {#odc}
 ## Open Data Cube (ODC)
@@ -530,7 +530,7 @@ analysis platforms.
 At its core, ODC is a set of Python libraries and a [PostgreSQL](#postgresql) database that allows you to work with 
 geospatial raster data.
 
-For more information, see [Open Data Cube](https://www.opendatacube.org).
+Learn more: [Open Data Cube](https://www.opendatacube.org).
 
 {#oli}
 ## Operational Land Imager (OLI)
@@ -539,7 +539,7 @@ The Operational Land Imager is carried by the Landsat 8 satellite. It measures i
 [NIR](#nir), and short wave infrared [SWIR](#swir) portions of the spectrum. Its images have 15-meter (49 ft.) 
 [panchromatic](#panchromatic) and 30-meter multi-spectral spatial resolutions along a 185 km (115 miles) wide swath.
 
-For more information, see [Landsat 8](https://landsat.gsfc.nasa.gov/satellites/landsat-8/).
+Learn more: [Landsat 8](https://landsat.gsfc.nasa.gov/satellites/landsat-8/).
 
 {#oli2}
 ## Operational Land Imager 2 (OLI2)
@@ -552,7 +552,7 @@ and instrument support electronics. OLI-2 provides data for nine spectral bands 
 (GSD), both in-track and cross track, of 30 m (98 ft) for all bands except the panchromatic band, which has a 15 m 
 (49 ft) GSD.
 
-For more information, see [Landsat 9 instruments](https://landsat.gsfc.nasa.gov/satellites/landsat-9/landsat-9-instruments/).
+Learn more: [Landsat 9 instruments](https://landsat.gsfc.nasa.gov/satellites/landsat-9/landsat-9-instruments/).
 
 {#panchromatic}
 ## Panchromatic band
@@ -561,7 +561,7 @@ A band that measures a wide range of light at high resolution, compared to stand
 narrow range of light at lower resolution. On Landsat 7, 8, and 9, the panchromatic band can be used to "sharpen" 30 
 metre visible bands to higher 15 metre resolution.
 
-For more information, see [Pansharpening Landsat](/notebooks/How_to_guides/Pansharpening/).
+Learn more: [Pansharpening Landsat](/notebooks/How_to_guides/Pansharpening/).
 
 {#pixel}
 ## Pixel
@@ -604,7 +604,7 @@ definition which contains the product description and specification. An example 
 The programming language used to develop the [Open Data Cube](#odc) and most of [Digital Earth Australia](#dea). 
 It is an easy-to-use language, which also provides simple access to high performance processing capabilities.
 
-For more information, see [Python](https://www.python.org/).
+Learn more: [Python](https://www.python.org/).
 
 {#radiance}
 ## Radiance
@@ -714,7 +714,7 @@ A program of satellites from Europe that collect publicly available Earth observ
 different purpose or capability, and together, they address six thematic areas: land, marine, atmosphere, climate 
 change, emergency management and security.
 
-For more information, see [Copernicus: Discover our satellites](https://www.copernicus.eu/en/about-copernicus/infrastructure-overview/discover-our-satellites).
+Learn more: [Copernicus: Discover our satellites](https://www.copernicus.eu/en/about-copernicus/infrastructure-overview/discover-our-satellites).
 
 {#swir}
 ## Short-Wave Infrared (SWIR)
@@ -789,7 +789,7 @@ As a satellite moves around the Earth, it observes a long strip of the Earth's s
 An imaging radar mounted on an instant moving platform. The signal is responsive to surface characteristics like 
 structure and moisture.
 
-For more information, see: [NASA - What is Synthetic Aperture Radar?](https://www.earthdata.nasa.gov/learn/backgrounders/what-is-sar).
+Learn more: [NASA - What is Synthetic Aperture Radar?](https://www.earthdata.nasa.gov/learn/backgrounders/what-is-sar).
 
 {#telemetry}
 ## Telemetry
@@ -804,7 +804,7 @@ An advanced, multispectral-scanning, Earth resources sensor featured on Landsat 
 data to categorise the Earth's surface and is particularly useful for agricultural applications and identification of 
 land use. It continuously scans the surface of the Earth, simultaneously acquiring data in seven spectral channels.
 
-For more information, see [NASA Thematic Mapper Plus](https://landsat.gsfc.nasa.gov/thematic-mapper/).
+Learn more: [NASA Thematic Mapper Plus](https://landsat.gsfc.nasa.gov/thematic-mapper/).
 
 {#thredds}
 ## Thematic Real-time Environmental Distributed Data Services (THREDDS)
@@ -816,7 +816,7 @@ THREDDS serves many of NCI’s open data collections at the file level, as well 
 different types of services to allow individual files to be selected, as well as more advanced services such as OpenDAP, 
 NetCDF subsetting, OGC WCS and WMS.
 
-For more information, see [NCI: Data ](https://nci.org.au/our-services/data-services).
+Learn more: [NCI: Data ](https://nci.org.au/our-services/data-services).
 
 {#tile}
 ## Tile
@@ -839,7 +839,7 @@ A scientific agency of the United States government. The scientists of the USGS 
 States, its natural resources, and the natural hazards that threaten it. The USGS and [NASA](#nasa) jointly run the 
 Landsat program of earth observation satellites.
 
-For more information, see [USGS](https://www.usgs.gov/).
+Learn more: [USGS](https://www.usgs.gov/).
 
 {#vector}
 ## Vector data
@@ -861,7 +861,7 @@ The Visible Infrared Imaging Radiometer Suite (VIIRS) is one of the key instrume
 well as the Suomi-NPP satellite. It collects visible and infrared imagery and global observations of land, atmosphere, 
 cryosphere and oceans.
 
-For more information, see [Joint Polar Satellite System](https://www.nesdis.noaa.gov/our-satellites/currently-flying/joint-polar-satellite-system).
+Learn more: [Joint Polar Satellite System](https://www.nesdis.noaa.gov/our-satellites/currently-flying/joint-polar-satellite-system).
 
 {#wofl}
 ## Water Observation Feature Layer (WOFL)
@@ -874,7 +874,7 @@ A [WO](#wo) observation for one point in time
 Previously called Water Observations from Space. A Digital Earth Australia product that classifies satellite pixels 
 into 'wet', 'dry', or 'invalid' (e.g. cloudy or a poor quality observation).
 
-For more information see [DEA Water Observations](/data/category/dea-water-observations/).
+Learn more: [DEA Water Observations](/data/category/dea-water-observations/).
 
 {#wavelength}
 ## Wavelength
