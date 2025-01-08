@@ -149,7 +149,7 @@ target.
 
 ## Bidirectional Reflectance Distribution Function (BRDF) / Albedo Parameter
 
-The BRDF/Albedo parameters provide: a) coefficients for mathematical functions that describe the BRDF of each pixel in the seven [MODIS](#modis) 'Land' bands (1- 7); and, b) [albedo](#albedo) measurements derived simultaneously from the BRDF for bands 1&ndash;7 as well as three broad bands (0.4&ndash;0.7, 0.7&ndash;3.0, and 0.4&ndash;3.0 micrometers). Learn more: [NASA](https://modis.gsfc.nasa.gov/data/dataprod/mod43.php).
+The BRDF/Albedo parameters provide: a) coefficients for mathematical functions that describe the BRDF of each pixel in the seven [MODIS](#modis) 'Land' bands (1- 7); and, b) [albedo](#albedo) measurements derived simultaneously from the BRDF for bands 1&ndash;7 as well as three broad bands (0.4&ndash;0.7, 0.7&ndash;3.0, and 0.4&ndash;3.0 micrometers). Learn more: [NASA BRDF/Albedo parameters](https://modis.gsfc.nasa.gov/data/dataprod/mod43.php).
 
 <span id="cog"></span>
 
