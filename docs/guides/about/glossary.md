@@ -226,6 +226,10 @@ of the [Open Data Cube](#odc). Learn more:
 
 A sister project to Digital Earth Australia but for the African Continent. Learn more: [Digital Earth Africa](https://www.digitalearthafrica.org/).
 
+## Digital Earth Antarctica (DE Antarctica)
+
+Digital Earth Antarctica is dedicated to enhancing the digital presence of Antarctic Earth Observation (EO) satellite data. Learn more: [Digital Earth Antarctica](https://www.ga.gov.au/scientific-topics/digital-earth-antarctica).
+
 {#dynamic-range}
 ## Dynamic range
 
