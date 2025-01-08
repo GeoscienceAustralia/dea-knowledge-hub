@@ -395,7 +395,7 @@ instance so that it is searchable and accessible through the datacube API.
 {#jupyter-nb}
 ## Jupyter Notebook
 
-A document format (with .ipynb extension) that contains live code that can be used to analyse data, display charts, and more.
+A document format (with .ipynb file extension) that contains live code that can be used to analyse data, display charts, and more.
 
 For more information, see the [Introduction to Jupyter notebooks](/notebooks/Beginners_guide/01_Jupyter_notebooks/).
 
@@ -874,7 +874,7 @@ A [WO](#wo) observation for one point in time
 Previously called Water Observations from Space. A Digital Earth Australia product that classifies satellite pixels 
 into 'wet', 'dry', or 'invalid' (e.g. cloudy or a poor quality observation).
 
-For more information see [DEA Water Observations](https://www.dea.ga.gov.au/products/dea-water-observations).
+For more information see [DEA Water Observations](/data/category/dea-water-observations/).
 
 {#wavelength}
 ## Wavelength
@@ -894,22 +894,22 @@ A HTTP interface for requesting geo-registered map images that can be displayed 
 An interface for querying, modifying and exchanging features or values in a database and retrieving features for use.
 
 {#wrs}
-## Worldwide Reference System
+## Worldwide Reference System (WRS)
 
-Landsat scenes are arranged into a worldwide grid called the World Reference System (WRS) which uses 'path' and 'row'
+Landsat scenes are arranged into a worldwide grid called the World Reference System which uses 'path' and 'row'
 numbers to identify the location of each scene. It is a global indexing scheme based on nominal scene centres.
 Learn more about the [Worldwide Reference System from NASA](https://landsat.gsfc.nasa.gov/about/the-worldwide-reference-system/).
 
 {#xarray}
-## xarray
+## Xarray
 
-An open source project and [Python](#python) package for working with labelled multidimensional arrays such as those 
+An open source project and [Python](#python) package (`xarray`) for working with labelled multidimensional arrays such as those 
 returned by the [Open Data Cube](#odc).
 
 {#yaml}
-## Yet Another Markup Language (YAML)
+## YAML
 
-A human-readable data storage format. It is used throughout [DEA](#dea) for metadata files, product definitions and 
+A human-readable data storage format (with .yaml file extension). It is used throughout [DEA](#dea) for metadata files, product definitions and 
 other configuration files.
 
 {#zenith}
