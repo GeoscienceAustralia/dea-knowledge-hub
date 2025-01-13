@@ -44,7 +44,8 @@ Sentinel-2 `s2cloudless` data from 25 January 2022 to 7 June 2024 is affected, a
 
 In the meantime, we advise the users to avoid using `s2cloudless` for cloud masking on data between these two dates, and consider using the `Fmask` cloud mask as a temporary alternative during this period.
 
-### 25 Oct 2023: Removing Sentinel-2 Level 1 and ARD duplicates (Resolved)
+:::{dropdown} Removing Sentinel-2 Level 1 and ARD duplicates (Resolved)
+### 25 Oct 2023
 
 Duplicate Sentinel-2 Level 1 (s2 l1) and Analysis Ready Data (ARD) has been discovered. The duplicate groups have the same region code and datetime attribute.
 
@@ -64,8 +65,11 @@ This is expected to have minimal impact on users.
 If you have any further questions or encounter issues, please contact <earth.observation@ga.gov.au>
 
 [View the Tech Alert](https://communication.ga.gov.au/link/id/zzzz65384bbe2a28c901Pzzzz61de67bd94bfe861/page.html)
+:::
 
-### Aug 2023: Sentinel-2 ARD GQA coastal scenes error; DEA Burnt Area (S2 NRT, Provisional) decommissioning (Resolved)
+:::{dropdown} Sentinel-2 ARD GQA coastal scenes error; DEA Burnt Area (S2 NRT, Provisional) decommissioning (Resolved)
+
+### Aug 2023
 
 **Sentinel-2 ARD error &mdash; GQA failing over coastal scenes**
 
@@ -98,3 +102,5 @@ Users who have previously accessed Sentinel-2 ARD over coastal areas and filtere
 If you have any questions about the above, please email us at <earth.observation@ga.gov.au>
 
 [View the Tech Alert](https://communication.ga.gov.au/pub/pubType/EO/pubID/zzzz64dc2b594744b162/interface.html)
+
+:::
