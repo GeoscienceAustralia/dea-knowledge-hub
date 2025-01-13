@@ -46,7 +46,7 @@ New user account creation for the [DEA Sandbox](https://app.sandbox.dea.ga.gov.a
 
 [View the Tech Alert](https://communication.ga.gov.au/link/id/zzzz675a766b4e320946Pzzzz6567c8b713b5b826/page.html)
 
-## 5 Dec 2024: NCI database will be upgraded soon. Service disruption is possible but not expected.
+## 5 Dec 2024: NCI database will be upgraded soon. Service disruption is possible but not expected. (Resolved)
 
 The NCI database will soon be upgraded. According to our testing, downtime or major disruption to service is not expected. However, be aware that a service disruption is still possible during this time.
 
