@@ -102,6 +102,10 @@
 
 {% set bands_count = bands_table_list | length %}
 
+{% set layers_table_list = page.tables.layers_table | selectattr("name", "!=", None) | list %}
+
+{% set layers_count = layers_table_list | length %}
+
 {% set page_title = page.data.short_name if page.data.is_latest_version else format_version_number(page.data.version_number) ~ ". " ~ page.data.short_name %}
 
 {% set display_title = page.data.short_name if page.data.is_latest_version else page.data.short_name ~ " " ~ format_version_number(page.data.version_number) %}
@@ -368,6 +372,16 @@
       * - **Bands**
         - `Single band of data ({{ bands_table_list[0].name }}) <./?tab=specifications>`_
       {%- endif %}
+      {% if layers_table_list and layers_count >= 3 %}
+      * - **Layers**
+        - `{{ layers_count }} layers of data ({{ layers_table_list[0].name }}, {{ layers_table_list[1].name }}, and more). View their attribute fields. <./?tab=specifications>`_
+      {%- elif layers_table_list and layers_count == 2 %}
+      * - **Layers**
+        - `{{ layers_count }} layers of data ({{ layers_table_list[0].name }} and {{ layers_table_list[1].name }}). View their attribute fields. <./?tab=specifications>`_
+      {%- elif layers_table_list and layers_count == 1 %}
+      * - **Layers**
+        - `Single layer of data ({{ layers_table_list[0].name }}). View attribute fields. <./?tab=specifications>`_
+      {%- endif %}
       {%- if page.data.doi %}
       * - **DOI**
         - `{{ page.data.doi }} <https://doi.org/{{ page.data.doi }}>`_
@@ -520,6 +534,31 @@
       {% endfor %}
 
    {{ page.tables.bands_footnote if page.tables.bands_footnote }}
+   {% endif %}
+
+   {% if layers_table_list %}
+   .. rubric:: Layers
+      :name: layers
+      :class: h2
+
+   This product contains the following layers, and the attribute fields of each are listed.
+
+   {% for layer in layers_table_list %}
+   **Layer: {{ layer.name }}**
+
+   {{ layer.description or no_data_terms.dash }} Attribute fields:
+
+   .. list-table::
+      :name: layers-table
+
+      {% for attribute in layer.attributes %}
+      * - **{{ attribute.name }}**
+        - {{ attribute.description }}
+      {% endfor %}
+   {% endfor %}
+
+   {{ page.tables.layers_footnote if page.tables.layers_footnote }}
+
    {% endif %}
 
    .. rubric:: Product information
