@@ -1,6 +1,6 @@
-# DEA program publications
+# DEA Publications
 
-Scientific articles, conference talks, and other publications with Digital Earth Australia authors.
+This page is a list of academic articles, conference talks, and other publications for which at least one of the authors was a Digital Earth Australia colleague.
 
 :::{contents} On this page
 :local:
