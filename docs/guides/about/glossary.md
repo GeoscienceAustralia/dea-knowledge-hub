@@ -130,6 +130,11 @@ target.
 
 The BRDF/Albedo parameters provide: a) coefficients for mathematical functions that describe the BRDF of each pixel in the seven [MODIS](#modis) 'Land' bands (1- 7); and, b) [albedo](#albedo) measurements derived simultaneously from the BRDF for bands 1&ndash;7 as well as three broad bands (0.4&ndash;0.7, 0.7&ndash;3.0, and 0.4&ndash;3.0 micrometers). Learn more: [NASA BRDF/Albedo parameters](https://modis.gsfc.nasa.gov/data/dataprod/mod43.php).
 
+{#cloud-masking}
+## Cloud Masking
+
+A process that removes clouds and cloud shadows from Earth observation images to create cloud-free images and analysis ready data (ARD). One application is s2cloudless, a Python package that provides automated cloud detection in Sentinel-2 imagery.
+
 {#cog}
 ## Cloud Optimised GeoTIFF (COG)
 
@@ -206,6 +211,16 @@ orbiting our planet to detect physical changes across Australia. DEA prepares th
 data and makes it available to governments and industry for easy use. DEA is the Australian implementation of the 
 [Open Data Cube](#odc). Learn more: [Digital Earth Australia](https://www.dea.ga.gov.au/).
 
+{#dea-knowledge-hub}
+## DEA Knowledge Hub
+
+The Knowledge Hub brings together information about Digital Earth Australia’s products and services, allowing you to utilise our free and open-source satellite imagery archive.
+
+{#dea-maps}
+## DEA Maps
+
+Digital Earth Australia Maps is a website for map-based access to DEA data products, developed by Data61 CSIRO for Geoscience Australia. [Visit DEA Maps](https://maps.dea.ga.gov.au/).
+
 {#dea-nb}
 ## DEA Notebooks
 
@@ -226,6 +241,7 @@ of the [Open Data Cube](#odc). Learn more:
 
 A sister project to Digital Earth Australia but for the African Continent. Learn more: [Digital Earth Africa](https://www.digitalearthafrica.org/).
 
+{#deantarctica}
 ## Digital Earth Antarctica (DE Antarctica)
 
 Digital Earth Antarctica is dedicated to enhancing the digital presence of Antarctic Earth Observation (EO) satellite data. Learn more: [Digital Earth Antarctica](https://www.ga.gov.au/scientific-topics/digital-earth-antarctica).
