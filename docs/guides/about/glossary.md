@@ -398,6 +398,11 @@ available Earth observation data continuously since 1972. Learn more: [Landsat S
 
 The Land Cover Classification Scheme was developed by the United Nations Food and Agriculture Organization to provide 
 a consistent framework for the classification and mapping of land cover. Learn more: [LCCS](https://www.fao.org/land-water/land/land-governance/land-resources-planning-toolbox/category/details/en/c/1036361/).
+
+{#landsat-next}
+## Landsat Next
+
+The USGS satellite program planned for launch in 2031, Landsat Next will offer higher resolution land imaging data, more frequently, and with greater fidelity than ever before. Learn more: [NASA](https://landsat.gsfc.nasa.gov/satellites/landsat-next/).
   
 {#mad}}
 ## Median Absolute Deviation (MAD)
