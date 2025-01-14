@@ -118,6 +118,11 @@ wavelengths. A single, discrete wavelength interval or range is referred to as a
 An estimate of the spectra of the barest state (i.e. least vegetation) observed from imagery of the Australian 
 continent collected by the Landsat 5, 7, and 8 satellites.
 
+{#baseline-product}
+## Baseline product
+
+A baseline product is produced directly from satellite data, as opposed to being [derived from another data product](#derived-product).
+
 {#brdf}
 ## Bidirectional Reflectance Distribution Function (BRDF)
 
@@ -235,6 +240,11 @@ The Digital Earth Australia Sandbox is a learning and analysis environment for g
 [Open Data Cube](#odc). It includes sample data and [Jupyter Notebooks](#jupyter-nb) that demonstrate the capability 
 of the [Open Data Cube](#odc). Learn more:
 [DEA Notebooks Wiki](https://github.com/GeoscienceAustralia/dea-notebooks/wiki).
+
+{#derivative-product}
+## Derivative product
+
+A derivative product is derived from other satellite data products. Ultimately, it is derived from [baseline data](#baseline-product).
 
 {#deafrica}
 ## Digital Earth Africa (DE Africa)
