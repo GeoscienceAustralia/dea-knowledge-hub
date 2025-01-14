@@ -402,7 +402,7 @@ a consistent framework for the classification and mapping of land cover. Learn m
 {#landsat-next}
 ## Landsat Next
 
-The USGS satellite program planned for launch in 2031, Landsat Next will offer higher resolution land imaging data, more frequently, and with greater fidelity than ever before. Learn more: [NASA](https://landsat.gsfc.nasa.gov/satellites/landsat-next/).
+The USGS satellite program planned for launch in 2031, Landsat Next will offer higher resolution land imaging data, more frequently, and with greater fidelity than ever before. Learn more: [U.S.-Australia Landsat Next partnership](https://www.ga.gov.au/scientific-topics/space/us-australia-landsat-next-partnership).
   
 {#mad}}
 ## Median Absolute Deviation (MAD)
@@ -761,7 +761,7 @@ structure and moisture. Learn more:
 {#tech-alert}
 ## Tech Alert
 
-A DEA communication covering updates, releases, outages, and planned maintenance. See the [DEA Tech Alerts](https://knowledge.dea.ga.gov.au/tech-alerts/) for further details. 
+A DEA communication covering updates, releases, outages, and planned maintenance. See the [DEA Tech Alerts](https://knowledge.dea.ga.gov.au/tech-alerts/) page. 
 
 {#telemetry}
 ## Telemetry
