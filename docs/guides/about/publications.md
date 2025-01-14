@@ -1,16 +1,13 @@
-========================
-DEA program publications
-========================
+# DEA program publications
 
 Scientific articles, conference talks, and other publications with Digital Earth Australia authors.
 
-.. contents:: On this page
-   :local:
-   :backlinks: none
+:::{contents} On this page
+:local:
+:backlinks: none
+:::
 
-****
-2024
-****
+## 2024
 
 Byrne, G., Broomhall, M., Walsh, A., Thankappan, M., Hay, E., Li, F., McAtee, B., Garcia, R., Anstee, J., Kerrisk, G., Drayson, N., Barnetson, J., Samford, I., Denham, R., 2024. Validating Digital Earth Australia NBART for the Landsat 9 Underfly of Landsat 8. Remote Sensing, 16, p. 1233. http://dx.doi.org/10.3390/rs16071233
 
@@ -22,9 +19,7 @@ Mann, J., Maddox, E., Shrestha, M., Irwin, J., Czapla-Myers, J., Gerace, A., Reh
 
 Thankappan, M., Christopherson, J., Cantrell, S., Ryan, R., Pagnutti, M., Bright, C., Naughton, D., Ruslander, K., Wang, L.W., Hudson, D. and Shaw, J., 2024. Concept of a Satellite Cross-Calibration Radiometer for In-Orbit Calibration of Commercial Optical Satellites. Remote Sensing, 16(8), p.1333. https://www.mdpi.com/2072-4292/16/8/1333
 
-****
-2023
-****
+## 2023
 
 Bishop-Taylor, R., Phillips, C., Sagar, S., Newey, V., 2023. Time and Tide: A new pixel-based method for mapping dynamic intertidal topography. Coast to Coast 2023 Conference, 30th Oct - 3rd November 2023, Newcastle, NSW. 
 
@@ -34,9 +29,7 @@ Phillips, C., Bishop-Taylor, R., Sagar, S., Newey, V., 2023. Mapping and investi
 
 Li, F., Jupp, D.L.B., Markham, B.L., Lau, I.C., Ong, C., Byrne, G., Thankappan, M., Oliver, S., Malthus, T., Fearns, P. 2023. Choice of Solar Spectral Irradiance Model for Current and Future Remote Sensing Satellite Missions. Remote Sens 15, 3391. https://doi.org/10.3390/rs15133391
 
-****
-2022
-****
+## 2022
 
 Broomhall, M., Byrne, G., Hay, E., Thankappan, M. and Walsh, A., 2022, July. Validating Landsat and Sentinel-2 Analysis Ready Data with Uav-Mounted Spectrometers. IGARSS 2022-2022 IEEE International Geoscience and Remote Sensing Symposium (pp. 7775-7778). IEEE.
 
@@ -58,9 +51,7 @@ Zhao, L., Liu, J., Peters, S., Li, J., Oliver, S., Mueller, N., 2022. Investigat
 
 Earth Observation: Data, Processing and Applications, https://www.eoa.org.au/earth-observation-textbooks  
 
-****
-2021
-****
+## 2021
 
 Bishop-Taylor, R., Nanson, R., Sagar, S., Lymburner, L., 2021. Mapping Australia's dynamic coastline at mean sea level using three decades of Landsat imagery. Remote Sensing of Environment, 267, 112734. https://doi.org/10.1016/j.rse.2021.112734  
 
@@ -82,9 +73,7 @@ Owers, C.J., Lucas, R.M., Clewley, D., Planque, C., Punalekar, S., Tissott, B., 
 
 Yuan, F., Lewis, A., Leith, A., Dhar, T., Gavin, D., 2021. Analysis Ready Data for Africa, in: 2021 IEEE International Geoscience and Remote Sensing Symposium IGARSS. Presented at the 2021 IEEE International Geoscience and Remote Sensing Symposium IGARSS, pp. 1789–1791. https://doi.org/10.1109/IGARSS47720.2021.9554019 
 
-****
-2020
-****
+## 2020
 
 Berk, A., Jupp, D and Li F., 2020. MODTRAN®61 Generated Single Scattering Adjacency Function. IGARSS 2020-2020 IEEE International Geoscience and Remote Sensing Symposium  
 
@@ -96,9 +85,7 @@ Metternicht, G., Mueller, N., Lucas, R. (2020). Digital Earth for Sustainable De
 
 Younes, N., Northfield, T.D., Joyce, K.E., Maier, S.W., Duke, N.C. and Lymburner, L., 2020. A novel approach to modelling mangrove phenology from satellite images: A case study from northern Australia. Remote Sensing, 12(24), p.4008. https://doi.org/10.3390/rs12244008 
 
-****
-2019
-****
+## 2019
 
 Bishop-Taylor, R., Sagar, S., Lymburner, L., Alam, I. and Sixsmith, J., 2019. Sub-pixel waterline extraction: Characterising accuracy and sensitivity to indices and spectra. Remote Sensing, 11(24), p.2984. https://www.mdpi.com/2072-4292/11/24/2984  
 
@@ -124,9 +111,7 @@ Wang, L-W, Li, F., Alam, I., Jupp, D., Oliver, S. and Thankappan, M., 2019. Anal
 
 Yuan, F., Ticehurst, C., Zhou, Z., Lehmann, E., Lewis, B., Rosenqvist, A., Chua, S., Mueller, N., 2019. Water Mapping with SAR and Optical Data Cube, in: 2019 6th Asia-Pacific Conference on Synthetic Aperture Radar (APSAR). Presented at the 2019 6th Asia-Pacific Conference on Synthetic Aperture Radar (APSAR), pp. 1–4. https://doi.org/10.1109/APSAR46974.2019.9048521 
 
-****
-2018
-****
+## 2018
 
 Doxani, G.,  Vermote, E., Roger, J-C, Gascon, F., Adriaensen, S., Frantz, D., Hagolle, O., Hollstein, A., Kirches, G., Li, F., Louis, J.,  Mangin, A., Pahlevan, N., Pflug, B. and  Vanhellemont, Q., 2018. Atmospheric correction inter-comparison exercise, Remote Sens., 10 (2), p. 352. https://doi.org/10.3390/rs10020352  
 
@@ -140,9 +125,7 @@ Roberts, D., Dunn, B., Mueller, N., "Open Data Cube Products Using High-Dimensio
 
 Sagar, S., Phillips, C., Bala, B., Roberts, D., Lymburner, L., 2018. Generating continental scale pixel-based surface reflectance composites in coastal regions with the use of a multi-resolution tidal model. Remote Sensing. 10, 480. https://doi.org/10.3390/rs10030480 
 
-****
-2017
-****
+## 2017
 
 Dhu, T., Dunn, B., Lewis, B., Lymburner, L., Mueller, N., Telfer, E., Lewis, A., McIntyre, A., Minchin, S. and Phillips, C., 2017. Digital earth Australia–unlocking new value from earth observation data. Big Earth Data, 1(1-2), pp.64-74. https://doi.org/10.1080/20964471.2017.1402490  
 
@@ -158,9 +141,7 @@ Roberts, D., Mueller, N., Mcintyre, A., "High-Dimensional Pixel Composites From 
 
 Sagar, S., Roberts, D., Bala, B., Lymburner, L., 2017. Extracting the intertidal extent and topography of the Australian coastline from a 28 year time series of Landsat observations. Remote Sensing of Environment 195, 153-169. https://doi.org/10.1016/j.rse.2017.04.009 
 
-****
-2016
-**** 
+## 2016
 
 Hoare, A., Tan, K. P., Stocker, C., Lawrie, K., Halas, L., Mueller, N., Symington, N., Brodie, R. C., Tingey, W., Brodie, R. S., Magee, J., (2016) Frontier groundwater investigations in the west Kimberley (Fitzroy) Region: preliminary assessment of groundwater resource potential and the salinity hazard to proposed irrigation developments, ASEG Extended Abstracts, 2016:1, 1-7, https://doi.org/10.1071/ASEG2016ab287  
 
@@ -174,19 +155,13 @@ Lymburner, L., Botha, E., Hestir, E., Anstee, J., Sagar, S., Dekker, A. and Malt
 
 Mueller, N., Lewis, A., Roberts, D., Ring, S., Melrose, R., Sixsmith, J., Lymburner, L., McIntyre, A., Tan, P., Curnow, S. and Ip, A., 2016. Water observations from space: Mapping surface water from 25 years of Landsat imagery across Australia. Remote Sensing of Environment, 174, pp.341-352. https://doi.org/10.1016/j.rse.2015.11.003  
 
- 
-
-****
-2015
-****
+## 2015
 
 Li, F., Jupp, D.L.B., Thankappan, M., Wang, L.W., Sixsmith, J., Lewis, A., and Held, A., 2015. Land surface brightness temperature retrieved from Landsat data. 21st International Congress on Modelling and Simulation, Gold Coast, Australia, 29 Nov to 4 Dec 2015  
 
 Tan, P., Sagar, S., Mueller, N., Lymburner, L., Thankappan, M., Lewis, A., 2015. A surface cover change detection method based on the Australian Geoscience Data Cube, in: 21st International Congress on Modelling and Simulation, Gold Coast, Australia. 
 
-***********
-Before 2015
-***********
+## Before 2015
 
 Li, F., Jupp, DLB and Thankappan, M. 2013. Issues in the application of Digital Surface Model data to correct the terrain illumination effects in Landsat images, International Journal of Digital Earth, DOI: 10.1080/17538947.2013.866701  
 
