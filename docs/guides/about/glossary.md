@@ -725,10 +725,20 @@ diffraction grating, and then measures the amplitudes of the individual waveleng
 
 A process that combines all data for a [tile](#tile) across a specific time range into a single file. 
 
+{#summary-product-grid}
+## Summary Product grid
+
+The tiling grid scheme used to subdivide processing and storage of our continental products covering the Australian mainland and several offshore territories.
+
 {#sun-sync-orbit}
 ## Sun-synchronous orbit
 
 An orbit in which a satellite is always in the same position with respect to the rotating Earth at the same time of day.
+
+{#s-npp}
+## Suomi NPP (S-NPP)
+
+The Suomi National Polar-orbiting Partnership satellite hosts a [Visible Infrared Imaging Radiometer Suite (VIIRS)](#viirs) which provides data for DEA Hotspots.  
 
 {#surface-reflectance}
 ## Surface reflectance
@@ -747,6 +757,11 @@ As a satellite moves around the Earth, it observes a long strip of the Earth's s
 An imaging radar mounted on an instant moving platform. The signal is responsive to surface characteristics like 
 structure and moisture. Learn more:
 [NASA - What is Synthetic Aperture Radar?](https://www.earthdata.nasa.gov/learn/backgrounders/what-is-sar).
+
+{#tech-alert}
+## Tech Alert
+
+A DEA communication covering updates, releases, outages, and planned maintenance. See the [DEA Tech Alerts](https://knowledge.dea.ga.gov.au/tech-alerts/) for further details. 
 
 {#telemetry}
 ## Telemetry
