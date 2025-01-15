@@ -118,6 +118,11 @@ wavelengths. A single, discrete wavelength interval or range is referred to as a
 An estimate of the spectra of the barest state (i.e. least vegetation) observed from imagery of the Australian 
 continent collected by the Landsat 5, 7, and 8 satellites.
 
+{#baseline-product}
+## Baseline product
+
+A baseline product is produced directly from satellite data, as opposed to being [derived from another data product](#derived-product).
+
 {#brdf}
 ## Bidirectional Reflectance Distribution Function (BRDF)
 
@@ -129,6 +134,11 @@ target.
 ## Bidirectional Reflectance Distribution Function (BRDF) / Albedo Parameter
 
 The BRDF/Albedo parameters provide: a) coefficients for mathematical functions that describe the BRDF of each pixel in the seven [MODIS](#modis) 'Land' bands (1- 7); and, b) [albedo](#albedo) measurements derived simultaneously from the BRDF for bands 1&ndash;7 as well as three broad bands (0.4&ndash;0.7, 0.7&ndash;3.0, and 0.4&ndash;3.0 micrometers). Learn more: [NASA BRDF/Albedo parameters](https://modis.gsfc.nasa.gov/data/dataprod/mod43.php).
+
+{#cloud-masking}
+## Cloud Masking
+
+A process that removes clouds and cloud shadows from Earth observation images to create cloud-free images and analysis ready data (ARD). One application is s2cloudless, a Python package that provides automated cloud detection in Sentinel-2 imagery.
 
 {#cog}
 ## Cloud Optimised GeoTIFF (COG)
@@ -206,6 +216,16 @@ orbiting our planet to detect physical changes across Australia. DEA prepares th
 data and makes it available to governments and industry for easy use. DEA is the Australian implementation of the 
 [Open Data Cube](#odc). Learn more: [Digital Earth Australia](https://www.dea.ga.gov.au/).
 
+{#dea-knowledge-hub}
+## DEA Knowledge Hub
+
+The Knowledge Hub brings together information about Digital Earth Australia’s products and services, allowing you to utilise our free and open-source satellite imagery archive.
+
+{#dea-maps}
+## DEA Maps
+
+Digital Earth Australia Maps is a website for map-based access to DEA data products, developed by Data61 CSIRO for Geoscience Australia. [Visit DEA Maps](https://maps.dea.ga.gov.au/).
+
 {#dea-nb}
 ## DEA Notebooks
 
@@ -221,11 +241,17 @@ The Digital Earth Australia Sandbox is a learning and analysis environment for g
 of the [Open Data Cube](#odc). Learn more:
 [DEA Notebooks Wiki](https://github.com/GeoscienceAustralia/dea-notebooks/wiki).
 
+{#derivative-product}
+## Derivative product
+
+A derivative product is derived from other satellite data products. Ultimately, it is derived from [baseline data](#baseline-product).
+
 {#deafrica}
 ## Digital Earth Africa (DE Africa)
 
 A sister project to Digital Earth Australia but for the African Continent. Learn more: [Digital Earth Africa](https://www.digitalearthafrica.org/).
 
+{#deantarctica}
 ## Digital Earth Antarctica (DE Antarctica)
 
 Digital Earth Antarctica is dedicated to enhancing the digital presence of Antarctic Earth Observation (EO) satellite data. Learn more: [Digital Earth Antarctica](https://www.ga.gov.au/scientific-topics/digital-earth-antarctica).
@@ -372,6 +398,11 @@ available Earth observation data continuously since 1972. Learn more: [Landsat S
 
 The Land Cover Classification Scheme was developed by the United Nations Food and Agriculture Organization to provide 
 a consistent framework for the classification and mapping of land cover. Learn more: [LCCS](https://www.fao.org/land-water/land/land-governance/land-resources-planning-toolbox/category/details/en/c/1036361/).
+
+{#landsat-next}
+## Landsat Next
+
+The USGS satellite program planned for launch in 2031, Landsat Next will offer higher resolution land imaging data, more frequently, and with greater fidelity than ever before. Learn more: [U.S.-Australia Landsat Next partnership](https://www.ga.gov.au/scientific-topics/space/us-australia-landsat-next-partnership).
   
 {#mad}}
 ## Median Absolute Deviation (MAD)
@@ -694,10 +725,20 @@ diffraction grating, and then measures the amplitudes of the individual waveleng
 
 A process that combines all data for a [tile](#tile) across a specific time range into a single file. 
 
+{#summary-product-grid}
+## Summary Product grid
+
+The tiling grid scheme used to subdivide processing and storage of our continental products covering the Australian mainland and several offshore territories.
+
 {#sun-sync-orbit}
 ## Sun-synchronous orbit
 
 An orbit in which a satellite is always in the same position with respect to the rotating Earth at the same time of day.
+
+{#s-npp}
+## Suomi NPP (S-NPP)
+
+The Suomi National Polar-orbiting Partnership satellite hosts a [Visible Infrared Imaging Radiometer Suite (VIIRS)](#viirs) which provides data for DEA Hotspots.  
 
 {#surface-reflectance}
 ## Surface reflectance
@@ -716,6 +757,11 @@ As a satellite moves around the Earth, it observes a long strip of the Earth's s
 An imaging radar mounted on an instant moving platform. The signal is responsive to surface characteristics like 
 structure and moisture. Learn more:
 [NASA - What is Synthetic Aperture Radar?](https://www.earthdata.nasa.gov/learn/backgrounders/what-is-sar).
+
+{#tech-alert}
+## Tech Alert
+
+A DEA communication covering updates, releases, outages, and planned maintenance. See the [DEA Tech Alerts](https://knowledge.dea.ga.gov.au/tech-alerts/) page. 
 
 {#telemetry}
 ## Telemetry
