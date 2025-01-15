@@ -1,0 +1,37 @@
+# Learn how to use this GitHub Action: https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/link_checker.html
+
+name: Check for broken links
+
+on:
+  workflow_dispatch: # Triggered manually
+
+jobs:
+  link-checker:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          submodules: true
+
+      - name: Check links
+        id: check-links
+        uses: lycheeverse/lychee-action@v2
+        with:
+          fail: false
+          output: /tmp/broken-links-report.md
+          args: >
+            --exclude-path ./docs/data/archive
+            --exclude-path ./docs/data/version-history
+            --exclude-path ./docs/tech-alerts
+            ./**/*.md ./**/*.rst ./**/*.ipynb ./**/*.yaml ./**/*.yml
+
+      - name: Create issue
+        if: steps.check-links.outputs.exit_code != 0
+        uses: peter-evans/create-issue-from-file@v5
+        with:
+          title: Fix broken links
+          content-filepath: /tmp/broken-links-report.md
+          labels: link-checker

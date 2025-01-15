@@ -1,4 +1,4 @@
-year: 2024
+year: 2025
 description: null
 
 meta_description: null
@@ -6,12 +6,16 @@ meta_description: null
 quick_links_custom: null
 
 system_status_notifications:
-  - description: Expanded extents data processing is currently paused, with data available to May 2024. See below. # NOTE Remember to remove the banner on the page: https://pr-302-preview.khpreview.dea.ga.gov.au/guides/reference/ard-expanded-processing-extent/
+  - description: DEA Maps and OWS services are not updating. See below.
     severity: 2
     status_custom: null
 
+  - description: Expanded extents data processing is currently paused, with data available to May 2024. See below. # NOTE Remember to remove the banner on the page: https://pr-302-preview.khpreview.dea.ga.gov.au/guides/reference/ard-expanded-processing-extent/
+    severity: 3
+    status_custom: null
+
   - description: Misclassification issue with Sentinel-2 ‘s2cloudless’ cloud masking from 2022. See below.
-    severity: 2
+    severity: 3
     status_custom: null
 
   - description: Terra-derived DEA Hotspots are unavailable. See below.
@@ -19,9 +23,5 @@ system_status_notifications:
     status_custom: null
 
   - description: NCI Explorer may experience instability. See below.
-    severity: 3
-    status_custom: null
-
-  - description: GeoMAD processing bug. See below.
     severity: 2
     status_custom: null

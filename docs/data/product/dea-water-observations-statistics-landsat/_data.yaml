@@ -1,22 +1,30 @@
-# See the Product metadata fields documentation:
-# https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/product_metadata_fields.html
+# See the Product metadata fields documentation: https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/product_metadata_fields.html
 
-# Overview
+# Specifications
 
-title: DEA Water Observations Statistics (Landsat)
-long_title: Geoscience Australia Landsat Water Observation Statistics Collection 3
+short_name: DEA Water Observations Statistics (Landsat)
+full_technical_name: Geoscience Australia Landsat Water Observation Statistics Collection 3
 header_image: /_files/cmi/WOfS-Burketown-Normanton-QLD.png
-version: 2.0.0
+version_number: 2.0.0
 is_latest_version: true
 latest_version_link: null
 is_provisional: false
-product_type: Derivative
-spatial_data_type: Raster
-time_span:
-  start: 1986
-  end: Present
-update_frequency: Yearly
-next_update: null
+
+lineage_type: DERIVATIVE
+spatial_data_type: RASTER
+
+spatial_coverage: null
+temporal_coverage_start: 1986
+temporal_coverage_end: Present
+temporal_coverage_custom: null
+
+data_update_frequency: YEARLY
+data_update_activity: ONGOING
+is_currency_reported: true
+
+resolution: 30 m
+coordinate_reference_system: null
+
 product_ids:
   - ga_ls_wo_fq_apr_oct_3
   - ga_ls_wo_fq_nov_mar_3
@@ -24,22 +32,23 @@ product_ids:
   - ga_ls_wo_fq_myear_3
 
 parent_products:
-  name: DEA Water Observations (Landsat)
-  link: /data/product/dea-water-observations-landsat/
-collection:
-  name: Geoscience Australia Landsat Collection 3
-  link: null
-doi: 10.26186/146091
-ecat: "146091"
-nci: null
-licence:
-  name: Creative Commons Attribution 4.0 International Licence
-  link: https://creativecommons.org/licenses/by/4.0/
+  - name: DEA Water Observations (Landsat)
+    link: /data/product/dea-water-observations-landsat/
 
-citations:
-  data_citation: "Mueller, N. 2022. Geoscience Australia Landsat Water Observation Statistics Collection 3. Geoscience Australia, Canberra. https://dx.doi.org/10.26186/146091"
-  paper_citation: null
-custom_citations: null
+collections:
+  - name: Geoscience Australia Landsat Collection 3
+    link: /search/?q=Geoscience+Australia+Landsat+Collection+3
+
+doi: 10.26186/146091
+ecat_id: "146091"
+
+licence_name: Creative Commons Attribution 4.0 International Licence
+licence_link: https://creativecommons.org/licenses/by/4.0/
+
+citation_data: "Mueller, N. 2022. Geoscience Australia Landsat Water Observation Statistics Collection 3. Geoscience Australia, Canberra. https://dx.doi.org/10.26186/146091"
+citation_paper: null
+
+citations_custom: null
 
 tags:
   - geoscience_australia_landsat_collection_3
@@ -50,7 +59,7 @@ tags:
 
 # Access
 
-maps: null
+access_links_maps: null
   # TODO review:
   # - link: https://maps.dea.ga.gov.au/#share=s-yIyPPjQlWxVBLg10WJBQd8KrMgt
   #   name: Apr-Oct summaries on DEA Maps
@@ -61,11 +70,11 @@ maps: null
   # - link: https://maps.dea.ga.gov.au/#share=s-x0R0IFIqxSFDJ54LK6sFDEfjh6i
   #   name: All-time summary on DEA Maps
 
-explorers:
+access_links_explorers:
   - link: https://explorer.dea.ga.gov.au/products#inland-water-group
-    name: Data explorer
+    name: null
 
-data:
+access_links_data:
   - link: https://data.dea.ga.gov.au/?prefix=derivative/ga_ls_wo_fq_apr_oct_3/2-0-0/
     name: Apr-Oct summaries since 1986 - AWS access
   - link: https://data.dea.ga.gov.au/?prefix=derivative/ga_ls_wo_fq_nov_mar_3/2-0-0/
@@ -83,20 +92,20 @@ data:
   - link: https://thredds.nci.org.au/thredds/catalog/jw04/ga_ls_wo_fq_myear_3/catalog.html
     name: All-time summary 1986 to present - NCI access
 
-code_examples:
+access_links_code_examples:
   - link: /notebooks/DEA_products/DEA_Water_Observations/
-    name: Code examples
+    name: null
 
-web_services:
+access_links_web_services:
   - link: https://ows.dea.ga.gov.au/
-    name: Web Services
+    name: null
 
-custom: null
+access_links_custom: null
 
 # History
 
-old_versions:
-  - version: 1.6.0
+previous_versions:
+  - version_number: 1.6.0
     title: DEA Water Observations Statistics (Landsat)
     slug: dea-water-observations-statistics-landsat-1.6.0
 
@@ -107,9 +116,10 @@ meta_description: null
 # Settings
 
 enable_overview: true
-enable_access: true
-enable_details: true
+enable_description: true
 enable_quality: true
+enable_specifications: true
+enable_access: true
 enable_history: true
 enable_faqs: false
 enable_credits: true

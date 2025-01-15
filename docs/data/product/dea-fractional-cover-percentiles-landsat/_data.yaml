@@ -1,42 +1,51 @@
-# See the Product metadata fields documentation:
-# https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/product_metadata_fields.html
+# See the Product metadata fields documentation: https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/product_metadata_fields.html
 
-# Overview
+# Specifications
 
-title: DEA Fractional Cover Percentiles (Landsat)
-long_title: Geoscience Australia Landsat Fractional Cover Percentiles Collection 3
+short_name: DEA Fractional Cover Percentiles (Landsat)
+full_technical_name: Geoscience Australia Landsat Fractional Cover Percentiles Collection 3
 header_image: /_files/cmi/FractionalCover1_0.jpg
-version: 4.0.0
+version_number: 4.0.0
 is_latest_version: true
 latest_version_link: null
 is_provisional: false
-product_type: Derivative
-spatial_data_type: Raster
-time_span:
-  start: 1987
-  end: Present
-update_frequency: Yearly
-next_update: null
+
+lineage_type: DERIVATIVE
+spatial_data_type: RASTER
+
+spatial_coverage: null
+temporal_coverage_start: 1987
+temporal_coverage_end: 2023
+temporal_coverage_custom: null
+
+data_update_frequency: YEARLY
+data_update_activity: ONGOING
+is_currency_reported: true
+
+resolution: 30 m
+coordinate_reference_system: null
+
 product_ids:
   - ga_ls_fc_pc_cyear_3
 
 parent_products:
-  name: DEA Fractional Cover (Landsat)
-  link: /data/product/dea-fractional-cover-landsat/
-collection:
-  name: Geoscience Australia Landsat Collection 3
-  link: null
-doi: null
-ecat: "145501"
-nci: null
-licence:
-  name: Creative Commons Attribution 4.0 International Licence
-  link: https://creativecommons.org/licenses/by/4.0/
+  - name: DEA Fractional Cover (Landsat)
+    link: /data/product/dea-fractional-cover-landsat/
 
-citations:
-  data_citation: "Lymburner, L., 2021. Geoscience Australia Landsat Fractional Cover Percentiles Collection 3. Geoscience Australia, Canberra. https://pid.geoscience.gov.au/dataset/ga/145501"
-  paper_citation: "Scarth, P., Roder, A., Schmidt, M., 2010. Tracking grazing pressure and climate interaction - the role of Landsat fractional cover in time series analysis. Proceedings of the 15th Australasian Remote Sensing & Photogrammetry Conference. http://dx.doi.org/10.6084/M9.FIGSHARE.94250"
-custom_citations: null
+collections:
+  - name: Geoscience Australia Landsat Collection 3
+    link: /search/?q=Geoscience+Australia+Landsat+Collection+3
+
+doi: null
+ecat_id: "145501"
+
+licence_name: Creative Commons Attribution 4.0 International Licence
+licence_link: https://creativecommons.org/licenses/by/4.0/
+
+citation_data: "Lymburner, L., 2021. Geoscience Australia Landsat Fractional Cover Percentiles Collection 3. Geoscience Australia, Canberra. https://pid.geoscience.gov.au/dataset/ga/145501"
+citation_paper: "Scarth, P., Roder, A., Schmidt, M., 2010. Tracking grazing pressure and climate interaction - the role of Landsat fractional cover in time series analysis. Proceedings of the 15th Australasian Remote Sensing & Photogrammetry Conference. http://dx.doi.org/10.6084/M9.FIGSHARE.94250"
+
+citations_custom: null
 
 tags:
   - geoscience_australia_landsat_collection_3
@@ -46,35 +55,35 @@ tags:
 
 # Access
 
-maps:
+access_links_maps:
   - link: https://maps.dea.ga.gov.au/#share=s-dsn0y5piVd34kvlDoOEEi1oSEWk # TODO review: https://maps.dea.ga.gov.au/#share=s-uTFeDOnmZpXV2Ub7kRC50Q0v4vj
     name: See it on a map
 
-explorers:
+access_links_explorers:
   - link: https://explorer.dea.ga.gov.au/products/ga_ls_fc_pc_cyear_3
     name: Data explorer
 
-data:
+access_links_data:
   - link: https://data.dea.ga.gov.au/?prefix=derivative/ga_ls_fc_pc_cyear_3/4-0-0/
     name: Digital Earth Australia - Public Data on AWS
   - link: https://thredds.nci.org.au/thredds/catalog/jw04/ga_ls_fc_pc_cyear_3/4-0-0/catalog.html
     name: Digital Earth Australia - Public Data on NCI
 
-code_examples:
+access_links_code_examples:
   - link: https://explorer.dea.ga.gov.au/products/ga_ls_fc_pc_cyear_3
-    name: Data explorer
+    name: null
 
-web_services: null
+access_links_web_services: null
 
-custom: null
+access_links_custom: null
 
 # History
 
-old_versions:
-  - version: 3.0.0
+previous_versions:
+  - version_number: 3.0.0
     title: DEA Fractional Cover Percentiles (Landsat)
     slug: dea-fractional-cover-percentiles-landsat-3.0.0
-  - version: 2.2.1
+  - version_number: 2.2.1
     title: DEA Fractional Cover Percentiles (Landsat)
     slug: dea-fractional-cover-percentiles-landsat-2.2.1
 
@@ -85,9 +94,10 @@ meta_description: null
 # Settings
 
 enable_overview: true
-enable_access: true
-enable_details: true
+enable_description: true
 enable_quality: true
+enable_specifications: true
+enable_access: true
 enable_history: true
 enable_faqs: false
 enable_credits: true

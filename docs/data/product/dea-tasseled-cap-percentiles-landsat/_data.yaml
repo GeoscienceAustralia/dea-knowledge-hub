@@ -1,42 +1,51 @@
-# See the Product metadata fields documentation:
-# https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/product_metadata_fields.html
+# See the Product metadata fields documentation: https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/product_metadata_fields.html
 
-# Overview
+# Specifications
 
-title: DEA Tasseled Cap Percentiles (Landsat)
-long_title: Geoscience Australia Tasseled Cap Percentiles Collection 3
+short_name: DEA Tasseled Cap Percentiles (Landsat)
+full_technical_name: Geoscience Australia Tasseled Cap Percentiles Collection 3
 header_image: /_files/cmi/TCWpercentiles.png
-version: 2.0.0
+version_number: 2.0.0
 is_latest_version: true
 latest_version_link: null
 is_provisional: false
-product_type: Derivative
-spatial_data_type: Raster
-time_span:
-  start: 1987
-  end: 2023
-update_frequency: Yearly
-next_update: null
+
+lineage_type: DERIVATIVE
+spatial_data_type: RASTER
+
+spatial_coverage: null
+temporal_coverage_start: 1987
+temporal_coverage_end: 2023
+temporal_coverage_custom: null
+
+data_update_frequency: YEARLY
+data_update_activity: ONGOING
+is_currency_reported: true
+
+resolution: 30 m
+coordinate_reference_system: null
+
 product_ids:
   - ga_ls_tc_pc_cyear_3
 
 parent_products:
-  name: Landsat 5, 7, 8 and 9 NBART and Observational Attributes
-  link: /data/category/dea-surface-reflectance/
-collection:
-  name: Geoscience Australia Landsat Collection 3
-  link: null
-doi: null
-ecat: "149765"
-nci: null
-licence:
-  name: Creative Commons Attribution 4.0 International Licence
-  link: https://creativecommons.org/licenses/by/4.0/
+  - name: Landsat 5, 7, 8 and 9 NBART and Observational Attributes
+    link: /data/category/dea-surface-reflectance/
 
-citations:
-  data_citation: "Geoscience Australia, 2023. DEA Tasseled Cap Percentiles (Landsat, Provisional). Geoscience Australia, Canberra."
-  paper_citation: null
-custom_citations: null
+collections:
+  - name: Geoscience Australia Landsat Collection 3
+    link: /search/?q=Geoscience+Australia+Landsat+Collection+3
+
+doi: null
+ecat_id: "149765"
+
+licence_name: Creative Commons Attribution 4.0 International Licence
+licence_link: https://creativecommons.org/licenses/by/4.0/
+
+citation_data: "Geoscience Australia, 2023. DEA Tasseled Cap Percentiles (Landsat, Provisional). Geoscience Australia, Canberra."
+citation_paper: null
+
+citations_custom: null
 
 tags:
   - geoscience_australia_landsat_collection_3
@@ -48,33 +57,33 @@ tags:
 
 # Access
 
-maps:
+access_links_maps:
   - link: https://maps.dea.ga.gov.au/#share=s-hnDwAfLNqJEIuwGzufL9yI5DS0w # TODO review: https://maps.dea.ga.gov.au/#share=s-kpW2fu5nyh8hnS1M0OPsZ5lHlLi
     name: See it on a map
 
-explorers:
+access_links_explorers:
   - link: https://explorer.dea.ga.gov.au/products/ga_ls_tc_pc_cyear_3
-    name: Data explorer
+    name: null
 
-data:
+access_links_data:
   - link: https://data.dea.ga.gov.au/?prefix=derivative/ga_ls_tc_pc_cyear_3/
     name: DEA Tasseled Cap Calendar Year Percentiles - AWS
   - link: https://thredds.nci.org.au/thredds/catalog/jw04/ga_ls_tc_pc_cyear_3/2-0-0/catalog.html
     name:  DEA Tasseled Cap Calendar Year Percentiles - NCI
 
-code_examples: null
+access_links_code_examples: null
 
-web_services:
+access_links_web_services:
   - link: https://ows.dea.ga.gov.au/
-    name: Web Services
+    name: null
 
 # History
 
-old_versions:
-  - version: 2.0.0
+previous_versions:
+  - version_number: 2.0.0
     title: DEA Wetness Percentiles (Landsat)
     slug: dea-wetness-percentiles-landsat-2.0.0
-  - version: 1.0.0
+  - version_number: 1.0.0
     title: DEA Tasseled Cap Percentiles (Landsat)
     slug: dea-tasseled-cap-percentiles-landsat-1.0.0
 
@@ -85,9 +94,10 @@ meta_description: null
 # Settings
 
 enable_overview: true
-enable_access: true
-enable_details: true
+enable_description: true
 enable_quality: true
+enable_specifications: true
+enable_access: true
 enable_history: true
 enable_faqs: false
 enable_credits: true

@@ -8,6 +8,48 @@
 Learn more about the [DEA Summary Product Grid](/guides/reference/collection_3_summary_grid/).
 ::::
 
+## 08 Jan 2025: DEA Maps data not up-to-date
+
+[DEA Maps](/guides/setup/dea_maps/) and [OWS layers](/guides/setup/gis/README/) are not currently up-to-date with the data available on [DEA AWS](/guides/setup/AWS/data_and_metadata/). We are investigating the cause of this issue. 
+
+The affected services will be updated once the issue is resolved. 
+
+## 19 Dec 2024: NOAA-21-derived DEA Hotspots are now available  
+
+Following our [communication](https://communication.ga.gov.au/link/id/zzzz675f7ce74a008871Pzzzz6567c8b713b5b826/page.html) in November regarding changes to the Hotspots service, we are pleased to advise that Hotspots derived from the Visible Infrared Imaging Radiometer Suite (VIIRS) sensor onboard NOAA-21 are now available. NOAA-21 currently passes over Australia at approximately 3pm and 2am Australian Eastern Standard Time, increasing the density and reliability of the afternoon and nighttime observations.
+
+In the Hotspots application, the NOAA-21 feed is off by default. You can include either the VIIRS ‘AFIMG NOAA-21’, or ‘AFMOD NOAA-21’ Hotspots algorithms as additional layers in the Hotspots map interface by selecting these layers from the VIIRS menu in the legend.  
+
+[View the Tech Alert](https://communication.ga.gov.au/DEAHotspots-19Dec24)
+
+## 16 Dec 2024: Sentinel-2 data missing from AWS over inland Australia between November 2023 and February 2024 to be restored
+
+We are aware of missing Sentinel-2 data in [DEA's Amazon Web Services (AWS) database](https://explorer.dea.ga.gov.au/products) over inland Australia between November 2023 and February 2024. This was caused by a syncing issue between the National Computational Infrastructure (NCI) and AWS. You can still access this data from our [NCI database](https://explorer.nci.dea.ga.gov.au/products). We are working on restoring this data in our AWS database.
+
+[View the Tech Alert](https://communication.ga.gov.au/link/id/zzzz675fa96fc6dd0277Pzzzz6567c8b713b5b826/page.html)
+
+## 16 Dec 2024: DEA Sandbox intermittent outages
+
+The DEA Sandbox is experiencing intermittent outages as of today. We are investigating and will fix the issue as soon as possible.
+
+## 12 Dec 2024: Critical support only over Christmas&ndash;New Year
+
+The Digital Earth Australia staff will be taking some well-earned rest over the Christmas-New Year period. We will be operating at a reduced capacity from Thursday 19 December to Monday 13 January 2025.  DEA will not be available to reply to support enquiries until Monday 13 January.   
+  
+The production of DEA Analysis Ready Data (ARD) collections may be delayed, so please make use of our near-real time products for the most up to date information: [Sentinel-2 Near-Real Time on DEA Maps](https://maps.dea.ga.gov.au/#share=s-oSISp03WZeAsU83CkUrEdxOzj1Y) and [Landsat-9 Near-Real Time on DEA Maps](https://maps.dea.ga.gov.au/#share=s-mM9itN2WbwT4M8JR81T2RhRLEzr).
+
+[View the Tech Alert](https://communication.ga.gov.au/link/id/zzzz675a766b4e320946Pzzzz6567c8b713b5b826/page.html)
+
+## 12 Dec 2024: DEA Sandbox new user sign-ups suspended until 13 Jan 2025 for Christmas shutdown
+
+New user account creation for the [DEA Sandbox](https://app.sandbox.dea.ga.gov.au/) will be suspended over the shutdown period. Existing DEA Sandbox users should not be affected. New user sign-ups will be available again from Monday 13 January 2025.
+
+[View the Tech Alert](https://communication.ga.gov.au/link/id/zzzz675a766b4e320946Pzzzz6567c8b713b5b826/page.html)
+
+## 5 Dec 2024: NCI database will be upgraded soon. Service disruption is possible but not expected. (Resolved)
+
+The NCI database will soon be upgraded. According to our testing, downtime or major disruption to service is not expected. However, be aware that a service disruption is still possible during this time.
+
 ## 18 Nov 2024: DEA Hotspots &mdash; Enhancing Bushfire Monitoring with New Satellite Data
 
 We are writing to keep you informed of changes that are occurring to the DEA Hotspots service. While faced with the loss of the MODIS Terra for our morning observations, we can continue to use available satellites to bolster the density and reliability of our afternoon observations. Data from the Visible Infrared Imaging Radiometer Suite (VIIRS) sensor onboard NOAA-21 will be available in DEA Hotspots by early December 2024. Once NOAA-21 data is available, a tech alert will be issued to users.
@@ -227,7 +269,7 @@ The DEA datasets include:
 
 The [DEA Intertidal](/data/product/dea-intertidal/) product suite maps the changing elevation, exposure and tidal characteristics of Australia’s exposed intertidal zone, the complex zone that defines the interface between land and sea.
 
-This new product suite expands upon the [DEA Intertidal Elevation (Landsat)](/data/old-version/dea-intertidal-elevation-landsat-1.0.0/) product which has now been deprecated.
+This new product suite expands upon the [DEA Intertidal Elevation (Landsat)](/data/version-history/dea-intertidal-elevation-landsat-1.0.0/) product which has now been deprecated.
 
 See [DEA Intertidal](/data/product/dea-intertidal/) for more information.
 

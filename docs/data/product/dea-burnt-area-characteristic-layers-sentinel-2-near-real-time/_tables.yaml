@@ -1,0 +1,35 @@
+# See the Product metadata fields documentation: https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/product_metadata_fields.html
+
+# Bands
+
+bands_footnote: "For more information on these bands, see the `Description tab <./?tab=description>`_."
+
+bands_table:
+  - name: delta_nbr
+    aliases: []
+    resolution: 10 m
+    nodata: NaN
+    units: '1'
+    type: float32
+    description: The change in Delta Normalised Burn Ratio ( :math:`\Delta\text{NBR}` ).
+  - name: delta_ndvi
+    aliases: []
+    resolution: 10 m
+    nodata: NaN
+    units: '1'
+    type: float32
+    description: The change in Delta Normalised Difference Vegetation Index ( :math:`\Delta\text{NDVI}` ).
+  - name: delta_bsi
+    aliases: []
+    resolution: 10 m
+    nodata: NaN
+    units: '1'
+    type: float32
+    description: The change in Delta Bare Soil Index ( :math:`\Delta\text{BSI}` ).
+  - name: fmask
+    aliases: []
+    resolution: 10 m
+    nodata: NaN
+    units: '1'
+    type: float32
+    description: Sentinel-2 fmask pixel quality layer.

@@ -63,23 +63,7 @@
          :class: no-gallery
 
 .. container:: showcase-panel bg-gradient-stone
-   :name: changelog
-
-   .. container::
-
-      .. rubric:: DEA Tech Alerts and Changelog
-
-      Find out about the latest updates to DEA's products and services, planned maintenance, and any outages that may occur.
-
-      `Visit the DEA Tech Alerts and Changelog </tech-alerts-changelog/>`_
-
-   .. container::
-
-      .. image:: /_files/reference/Reporting_dashboard.png
-         :class: no-gallery
-
-.. container:: showcase-panel bg-gradient-space reverse
-   :name: dea-notebooks
+   :name: validation-reports
 
    .. container::
 
@@ -92,6 +76,22 @@
    .. container::
 
       .. image:: /_files/validation/validation-drone-thumbnail.jpg
+         :class: no-gallery
+
+.. container:: showcase-panel bg-gradient-space reverse
+   :name: tech-alerts
+
+   .. container::
+
+      .. rubric:: DEA Tech Alerts
+
+      Find out about the latest updates to DEA's products and services, planned maintenance, and any outages that may occur.
+
+      `Visit the DEA Tech Alerts </tech-alerts-changelog/>`_
+
+   .. container::
+
+      .. image:: /_files/reference/Reporting_dashboard.png
          :class: no-gallery
 
 .. container:: showcase-panel
