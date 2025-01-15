@@ -40,9 +40,9 @@ The production of DEA Analysis Ready Data (ARD) collections may be delayed, so p
 
 [View the Tech Alert](https://communication.ga.gov.au/link/id/zzzz675a766b4e320946Pzzzz6567c8b713b5b826/page.html)
 
-## 12 Dec 2024: DEA Sandbox new user sign-ups temporarily suspended
+## 12 Dec 2024: DEA Sandbox new user sign-ups suspended until 13 Jan 2025 for Christmas shutdown
 
-New user account creation for the [DEA Sandbox](https://app.sandbox.dea.ga.gov.au/) will be suspended over the shutdown period. Existing DEA Sandbox users should not be affected. New user sign-ups will be available again from Monday 13 January 2024.   
+New user account creation for the [DEA Sandbox](https://app.sandbox.dea.ga.gov.au/) will be suspended over the shutdown period. Existing DEA Sandbox users should not be affected. New user sign-ups will be available again from Monday 13 January 2025.
 
 [View the Tech Alert](https://communication.ga.gov.au/link/id/zzzz675a766b4e320946Pzzzz6567c8b713b5b826/page.html)
 
