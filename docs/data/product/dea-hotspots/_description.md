@@ -74,4 +74,10 @@ DEA Hotspot sources include the:
 * Visible Infrared Imaging Radiometer Suite (VIIRS) on the Suomi National Polar orbiting Partnership (NPP) satellite, NOAA-20, and NOAA-21 polar orbiting satellites.
 * Advanced Himawari Imager (AHI) sensor operated by the Japan Meteorological Agency (JMA) on the Himawari-9 geostationary satellite.
 
+% ## Lineage
 
+% ## Processing steps
+
+% ## Software
+
+% ## References
