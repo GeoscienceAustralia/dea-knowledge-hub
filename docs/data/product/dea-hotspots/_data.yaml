@@ -101,7 +101,7 @@ enable_description: true
 enable_quality: true
 enable_specifications: true
 enable_access: true
-enable_history: false
+enable_history: true
 enable_faqs: false
 enable_credits: true
 
