@@ -9,6 +9,8 @@ This page is a list of academic articles, conference talks, and other publicatio
 
 ## 2024
 
+Bishop-Taylor, R., Phillips, C., Sagar, S., Newey, V., 2024. Time and Tide: Mapping the Changing 3D Shape of Australia's Coastline Using Petabytes of Open Satellite Imagery. AGU24 Annual Meeting.
+
 Byrne, G., Broomhall, M., Walsh, A., Thankappan, M., Hay, E., Li, F., McAtee, B., Garcia, R., Anstee, J., Kerrisk, G., Drayson, N., Barnetson, J., Samford, I., Denham, R., 2024. Validating Digital Earth Australia NBART for the Landsat 9 Underfly of Landsat 8. Remote Sensing, 16, p. 1233. http://dx.doi.org/10.3390/rs16071233
 
 Lymburner, L., Ticehurst, C., Adame, M. F., Sengupta, A., Kavehei, E. 2024. Seeing the floods through the trees: Using adaptive shortwave infrared thresholds to map inundation under wooded wetlands. Hydrological Processes. 38(6). e15174. https://doi.org/10.1002/hyp.15174
