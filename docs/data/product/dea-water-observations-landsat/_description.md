@@ -47,12 +47,23 @@ The table below describes the meaning of each bit set per pixel in each WOFL. Wh
 | 6   | cloud           | 64            | Pixel masked out due to cloud                                            |
 | 7   | water           | 128           | Water detected                                                           |
 
-Full details of the original algorithms and features of DEA Water Observations can be found in the Water Observations from Space paper by Mueller et al. (2015).
+Here is a table representing bitmasking. The grey boxes are impossible values that cannot occur. The yellow boxes are XXXXXX.
 
-Here is another table.
+Nodata = missing/invalid data
+Contiguity = some input data missing in original image (missing bands generally)
+Low solar angle = angle of the sun causes large shadows, therefore likely misclassifications of shadow as water
+Terrain shadow = “Topographic shadow is similar to cloud shadow in that the underlying spectral characteristics of the surface are not truly represented”, shadows are likely to be misclassified as water
+High slope = classification of water less likely to be correct
+Cloud shadow = shadows likely to be misclassified as water
+Cloud = cloud affecting output data
+Cloudy terrain = cloud + high slope (64+16)
+Shady water = water (128) + cloud shadow (32)
+Cloudy water = water (128) + cloud (64) 
 
 :::{include} ../../../_components/water-observations-bitmasking-table.md
 :::
+
+Full details of the original algorithms and features of DEA Water Observations can be found in the Water Observations from Space paper by Mueller et al. (2015).
 
 ## Lineage
 

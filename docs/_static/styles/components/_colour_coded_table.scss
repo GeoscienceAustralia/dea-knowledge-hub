@@ -39,11 +39,11 @@ table.colour-coded-table {
     &.dea-water-observations-bitflags {
         th, td {
             &.impossible{
-                background-color: #808080;
+                background-color: $grey-background-color;
             }
 
             &.special{
-                background-color: #ffff00;
+                background-color: $yellow-background-color;
             }
         }
     }

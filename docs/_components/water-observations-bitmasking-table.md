@@ -3,12 +3,12 @@
         <tr>
             <th></th>
             <th></th>
-            <th><strong>no_data</strong></th>
+            <th><strong>no data</strong></th>
             <th><strong>contiguity</strong></th>
             <th><strong>low solar angle</strong></th>
             <th><strong>terrain shadow</strong></th>
             <th><strong>high slope</strong></th>
-            <th><strong>cloud_shadow</strong></th>
+            <th><strong>cloud shadow</strong></th>
             <th><strong>cloud</strong></th>
             <th><strong>cloudy terrain</strong></th>
             <th><strong>water</strong></th>
@@ -33,7 +33,7 @@
             <td>192</td>
         </tr>
         <tr>
-            <td><strong>no_data</strong></td>
+            <td><strong>no data</strong></td>
             <td>1</td>
             <td class="impossible">2</td>
             <td class="impossible">3</td>
@@ -108,7 +108,7 @@
             <td>208</td>
         </tr>
         <tr>
-            <td><strong>cloud_shadow</strong></td>
+            <td><strong>cloud shadow</strong></td>
             <td>32</td>
             <td class="impossible">33</td>
             <td class="impossible">34</td>
