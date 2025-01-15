@@ -69,6 +69,7 @@ Thermal infrared sensors on-board the satellites can detect areas with unusually
 ### Satellites and sensors
 
 DEA Hotspot sources include the:
+
 * Moderate Resolution Imaging Spectroradiometer (MODIS) sensor on the National Aeronautics and Space Administration (NASA) Aqua polar orbiting satellite.
 * Advanced Very High Resolution Radiometer (AVHRR) nighttime imagery from the National Oceanic and Atmospheric Administration (NOAA-19) polar orbiting satellite.
 * Visible Infrared Imaging Radiometer Suite (VIIRS) on the Suomi National Polar orbiting Partnership (NPP) satellite, NOAA-20, and NOAA-21 polar orbiting satellites.
