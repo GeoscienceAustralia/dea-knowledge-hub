@@ -104,7 +104,7 @@
                 <td class="impossible">32</td>
                 <td>48</td>
                 <td>80</td>
-                <td>96</td>
+                <td class="impossible">96</td>
                 <td>144</td>
                 <td>176</td>
                 <td>208</td>
@@ -121,7 +121,7 @@
                 <td>96</td>
                 <td>112</td>
                 <td>160</td>
-                <td>192</td>
+                <td class="impossible">192</td>
                 <td>224</td>
             </tr>
             <tr>
@@ -148,7 +148,7 @@
                 <td>88</td>
                 <td class="impossible">96</td>
                 <td>112</td>
-                <td>144</td>
+                <td class="impossible">144</td>
                 <td class="impossible">160</td>
                 <td>208</td>
                 <td>240</td>
@@ -177,7 +177,7 @@
                 <td>164</td>
                 <td>168</td>
                 <td>176</td>
-                <td>192</td>
+                <td class="impossible">192</td>
                 <td>224</td>
                 <td>240</td>
                 <td class="impossible">288</td>
