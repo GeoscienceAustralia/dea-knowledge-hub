@@ -34,9 +34,10 @@ Version 1.6.0 was updated with changes to the way different factors impeding wat
 
 Version 2.0.0 introduces the integration of Landsat 9, providing an increase in available observations from November 2021 onwards.
 
-The table below describes the meaning of each bit set per pixel in each WOFL. Where multiple factors impeding a clear observation are detected all the respective bits will be set. For example a value of 136 indicates water (128) AND terrain shadow (8) were observed for the pixel.
+The table below describes the meaning of each bit set per pixel in each WOFL.
 
 :::{list-table}
+:caption: Classification bit sets
 :header-rows: 1
 
 * - Classification
@@ -84,6 +85,10 @@ The table below describes the meaning of each bit set per pixel in each WOFL. Wh
   - 128
   - Water detected.
 :::
+
+Furthermore, where multiple factors impeding a clear observation are detected, a combination of the bits will be set by adding the relevant bits together, e.g. 4 + 8 = 12. Notable combination values include Cloudy Terrain (Cloud + High Slope; 64 + 16 = 80), Shady Water (Water + Cloud Shadow; 128 + 32 = 160), and Cloudy Water (Water + Cloud; 128 + 64 = 192).
+
+The following table represents these combinations of bit sets. In the table, the grey boxes are impossible values that cannot occur. The yellow boxes are ???????. 
 
 :::{include} ../../../_components/water-observations-bitmasking-table.md
 :::

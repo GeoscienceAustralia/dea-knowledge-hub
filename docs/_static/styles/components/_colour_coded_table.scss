@@ -38,7 +38,7 @@ table.colour-coded-table {
 
     &.dea-water-observations-bitflags {
         th, td {
-            &.classification-decimal {
+            &.classification {
                 background-color: $blue-background-color;
             }
 
@@ -52,7 +52,7 @@ table.colour-coded-table {
             }
         }
 
-        & > thead > tr > th:first-of-type {
+        & th:first-of-type {
             min-width: 150px;
         }
     }
