@@ -1,5 +1,5 @@
 <div class="scroll-horizontally">
-    <table class="colour-coded-table dea-water-observations-bitflags">
+    <table class="colour-coded-table water-observations-combination-decimals-theme">
         <caption>Combination decimal values</caption>
         <thead>
             <tr>
