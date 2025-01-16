@@ -85,7 +85,7 @@ The table below describes the meaning of each bit set per pixel in each WOFL.
   - Water detected.
 :::
 
-Where multiple factors impeding a clear observation are detected, a combination of the decimal values will be set by adding the relevant decimal values together. Notable combination values include Cloudy Terrain (Cloud + High Slope; 64 + 16 = 80), Shady Water (Water + Cloud Shadow; 128 + 32 = 160), and Cloudy Water (Water + Cloud; 128 + 64 = 192). The table also contains combinations of three and four values such as Cloudy Terrain + Shady Water (Cloud + High Slope + Water + Cloud Shadow).
+Where multiple factors impeding a clear observation are detected, a combination of the decimal values will be set by adding the relevant decimal values together. Notable combination values include Cloudy Terrain (Cloud + High Slope; 64 + 16 = 80), Shady Water (Water + Cloud Shadow; 128 + 32 = 160), and Cloudy Water (Water + Cloud; 128 + 64 = 192). The table also contains combinations of three and four values such as Cloudy Terrain + Shady Water (which is composed of Cloud + High Slope + Water + Cloud Shadow).
 
 The following table represents these combinations of decimal values. In the table, the grey boxes are impossible values that cannot occur. The yellow boxes are ???????. 
 
