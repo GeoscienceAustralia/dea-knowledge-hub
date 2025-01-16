@@ -12,10 +12,10 @@
                 <th class="classification"><strong>High Slope</strong></th>
                 <th class="classification"><strong>Cloud Shadow</strong></th>
                 <th class="classification"><strong>Cloud</strong></th>
-                <th class="classification"><strong>Cloudy Terrain</strong></th>
+                <th class="classification"><strong>High Slope + Cloud</strong></th>
                 <th class="classification"><strong>Water</strong></th>
-                <th class="classification"><strong>Shady Water</strong></th>
-                <th class="classification"><strong>Cloudy Water</strong></th>
+                <th class="classification"><strong>Cloud Shadow + Water</strong></th>
+                <th class="classification"><strong>Cloud + Water</strong></th>
             </tr>
         </thead>
         <tbody>
@@ -140,7 +140,7 @@
                 <td class="impossible">256</td>
             </tr>
             <tr>
-                <td class="classification"><strong>Cloudy Terrain</strong></td>
+                <td class="classification"><strong>High Slope + Cloud</strong></td>
                 <td class="classification">80</td>
                 <td class="impossible">81</td>
                 <td class="impossible">82</td>
@@ -170,7 +170,7 @@
                 <td class="impossible">320</td>
             </tr>
             <tr>
-                <td class="classification"><strong>Shady Water</strong></td>
+                <td class="classification"><strong>Cloud Shadow + Water</strong></td>
                 <td class="classification">160</td>
                 <td class="impossible">161</td>
                 <td class="impossible">162</td>
@@ -185,7 +185,7 @@
                 <td class="impossible">352</td>
             </tr>
             <tr>
-                <td class="classification"><strong>Cloudy Water</strong></td>
+                <td class="classification"><strong>Cloud + Water</strong></td>
                 <td class="classification">192</td>
                 <td class="impossible">193</td>
                 <td class="impossible">194</td>
