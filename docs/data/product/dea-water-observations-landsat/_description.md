@@ -40,7 +40,7 @@ The table below describes the meaning of each bit set per pixel in each WOFL. Wh
 :header-rows: 1
 
 * - Bit
-  - Decimal value
+  - Decimal
   - Classification
   - Description
 
@@ -57,33 +57,33 @@ The table below describes the meaning of each bit set per pixel in each WOFL. Wh
 * - 2
   - 4
   - Solar Incidence
-  - Pixel masked out due to solar incidence > 10 degrees.
+  - Low solar angle means that the angle of the sun causes large shadow, therefore causing likely misclassifications of shadow as water. Pixel masked out due to solar incidence of less than 10 degrees.
 
 * - 3
   - 8
   - Terrain Shadow
-  - “Topographic shadow is similar to cloud shadow in that the underlying spectral characteristics of the surface are not truly represented”, shadows are likely to be misclassified as water. Pixel masked out due to terrain shadow.
+  - Topographic features can cast shadows, and these shadows are likely to be misclassified as water. Pixel masked out due to terrain shadow.
 
+* - 4
+  - 16
+  - High Slope
+  - This causes the classification of water to be less likely to be correct. Pixel masked out due to high slope.
+
+* - 5
+  - 32
+  - Cloud Shadow
+  - Shadows are likely to be misclassified as water. Pixel masked out due to cloud shadow.
+
+* - 6
+  - 64
+  - Cloud
+  - Cloud is affecting the output data. Pixel masked out due to cloud.
+
+* - 7
+  - 128
+  - Water
+  - Water detected.
 :::
-
-
-
-
-| Bit | Flagging        | Decimal Value | Description                                                              |
-|-----|-----------------|---------------|--------------------------------------------------------------------------|
-| 3   | terrain shadow  | 8             | Pixel masked out due to terrain shadow                                   |
-| 4   | high slope      | 16            | Pixel masked out due to high slope                                       |
-| 5   | cloud shadow    | 32            | Pixel masked out due to cloud shadow                                     |
-| 6   | cloud           | 64            | Pixel masked out due to cloud                                            |
-| 7   | water           | 128           | Water detected                                                           |
-
-Low solar angle = angle of the sun causes large shadows, therefore likely misclassifications of shadow as water
-High slope = classification of water less likely to be correct
-Cloud shadow = shadows likely to be misclassified as water
-Cloud = cloud affecting output data
-Cloudy terrain = cloud + high slope (64+16)
-Shady water = water (128) + cloud shadow (32)
-Cloudy water = water (128) + cloud (64) 
 
 :::{include} ../../../_components/water-observations-bitmasking-table.md
 :::
