@@ -36,23 +36,48 @@ Version 2.0.0 introduces the integration of Landsat 9, providing an increase in 
 
 The table below describes the meaning of each bit set per pixel in each WOFL. Where multiple factors impeding a clear observation are detected all the respective bits will be set. For example a value of 136 indicates water (128) AND terrain shadow (8) were observed for the pixel.
 
+:::{list-table}
+:header-rows: 1
+
+* - Bit
+  - Decimal value
+  - Classification
+  - Description
+
+* - 0
+  - 1
+  - No Data
+  - Missing or invalid data. Pixel masked out due to NO_DATA in NBART source, 0 = valid data in NBART.
+
+* - 1
+  - 2
+  - Contiguity
+  - Some data is missing in the original image (usually missing bands). Pixel masked out due to lack of data contiguity.
+
+* - 2
+  - 4
+  - Solar Incidence
+  - Pixel masked out due to solar incidence > 10 degrees.
+
+* - 3
+  - 8
+  - Terrain Shadow
+  - “Topographic shadow is similar to cloud shadow in that the underlying spectral characteristics of the surface are not truly represented”, shadows are likely to be misclassified as water. Pixel masked out due to terrain shadow.
+
+:::
+
+
+
+
 | Bit | Flagging        | Decimal Value | Description                                                              |
 |-----|-----------------|---------------|--------------------------------------------------------------------------|
-| 0   | no data         | 1             | Pixel masked out due to NO_DATA in NBART source, 0 = valid data in NBART |
-| 1   | contiguity      | 2             | Pixel masked out due to lack of data contiguity                          |
-| 2   | solar incidence | 4             | Pixel masked out due to solar incidence > 10 degrees                     |
 | 3   | terrain shadow  | 8             | Pixel masked out due to terrain shadow                                   |
 | 4   | high slope      | 16            | Pixel masked out due to high slope                                       |
 | 5   | cloud shadow    | 32            | Pixel masked out due to cloud shadow                                     |
 | 6   | cloud           | 64            | Pixel masked out due to cloud                                            |
 | 7   | water           | 128           | Water detected                                                           |
 
-Here is a table representing bitmasking. The grey boxes are impossible values that cannot occur. The yellow boxes are XXXXXX.
-
-Nodata = missing/invalid data
-Contiguity = some input data missing in original image (missing bands generally)
 Low solar angle = angle of the sun causes large shadows, therefore likely misclassifications of shadow as water
-Terrain shadow = “Topographic shadow is similar to cloud shadow in that the underlying spectral characteristics of the surface are not truly represented”, shadows are likely to be misclassified as water
 High slope = classification of water less likely to be correct
 Cloud shadow = shadows likely to be misclassified as water
 Cloud = cloud affecting output data
