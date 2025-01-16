@@ -44,11 +44,7 @@ table.colour-coded-table {
 
             &.impossible{
                 background-color: $grey-background-color;
-                text-decoration: line-through;
-            }
-
-            &.special{
-                background-color: $yellow-background-color;
+                color: var(--pst-color-text-muted, #48566b)
             }
         }
 

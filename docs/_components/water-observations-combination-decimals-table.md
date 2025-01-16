@@ -74,7 +74,7 @@
                 <td>20</td>
                 <td>36</td>
                 <td>68</td>
-                <td class="special">84</td>
+                <td>84</td>
                 <td>132</td>
                 <td>164</td>
                 <td>196</td>
@@ -144,7 +144,7 @@
                 <td class="classification">80</td>
                 <td class="impossible">81</td>
                 <td class="impossible">82</td>
-                <td class="special">84</td>
+                <td>84</td>
                 <td>88</td>
                 <td class="impossible">96</td>
                 <td>112</td>
