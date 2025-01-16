@@ -1,6 +1,6 @@
 <div class="scroll-horizontally">
     <table class="colour-coded-table dea-water-observations-bitflags">
-        <caption>In this table, the grey boxes are impossible values that cannot occur. The yellow boxes are ???????. Notable crossover values include Cloudy Terrain (Cloud &times; High Slope; 64 &times; 16), Shady Water (Water &times; Cloud Shadow; 128 &times; 32), and Cloudy Water (Water &times; Cloud; 128 &times; 64).</caption>
+        <caption>In this table, the grey boxes are impossible values that cannot occur. The yellow boxes are ???????. Notable crossover values include Cloudy Terrain (Cloud + High Slope; 64 + 16 = 80), Shady Water (Water + Cloud Shadow; 128 + 32 = 160), and Cloudy Water (Water + Cloud; 128 + 64 = 192).</caption>
         <thead>
             <tr>
                 <th></th>
@@ -21,22 +21,22 @@
         <tbody>
             <tr>
                 <td></td>
-                <td></td>
-                <td>1</td>
-                <td>2</td>
-                <td>4</td>
-                <td>8</td>
-                <td>16</td>
-                <td>32</td>
-                <td>64</td>
-                <td>80</td>
-                <td>128</td>
-                <td>160</td>
-                <td>192</td>
+                <td class="classification-decimal"></td>
+                <td class="classification-decimal">1</td>
+                <td class="classification-decimal">2</td>
+                <td class="classification-decimal">4</td>
+                <td class="classification-decimal">8</td>
+                <td class="classification-decimal">16</td>
+                <td class="classification-decimal">32</td>
+                <td class="classification-decimal">64</td>
+                <td class="classification-decimal">80</td>
+                <td class="classification-decimal">128</td>
+                <td class="classification-decimal">160</td>
+                <td class="classification-decimal">192</td>
             </tr>
             <tr>
                 <td><strong>No Data</strong></td>
-                <td>1</td>
+                <td class="classification-decimal">1</td>
                 <td class="impossible">2</td>
                 <td class="impossible">3</td>
                 <td class="impossible">5</td>
@@ -51,7 +51,7 @@
             </tr>
             <tr>
                 <td><strong>Contiguity</strong></td>
-                <td>2</td>
+                <td class="classification-decimal">2</td>
                 <td class="impossible">3</td>
                 <td class="impossible">4</td>
                 <td class="impossible">6</td>
@@ -66,7 +66,7 @@
             </tr>
             <tr>
                 <td><strong>Low Solar Angle</strong></td>
-                <td>4</td>
+                <td class="classification-decimal">4</td>
                 <td class="impossible">5</td>
                 <td class="impossible">6</td>
                 <td class="impossible">8</td>
@@ -81,7 +81,7 @@
             </tr>
             <tr>
                 <td><strong>Terrain Shadow</strong></td>
-                <td>8</td>
+                <td class="classification-decimal">8</td>
                 <td class="impossible">9</td>
                 <td class="impossible">10</td>
                 <td>12</td>
@@ -96,7 +96,7 @@
             </tr>
             <tr>
                 <td><strong>High Slope</strong></td>
-                <td>16</td>
+                <td class="classification-decimal">16</td>
                 <td class="impossible">17</td>
                 <td class="impossible">18</td>
                 <td>20</td>
@@ -111,7 +111,7 @@
             </tr>
             <tr>
                 <td><strong>Cloud Shadow</strong></td>
-                <td>32</td>
+                <td class="classification-decimal">32</td>
                 <td class="impossible">33</td>
                 <td class="impossible">34</td>
                 <td>36</td>
@@ -126,7 +126,7 @@
             </tr>
             <tr>
                 <td><strong>Cloud</strong></td>
-                <td>64</td>
+                <td class="classification-decimal">64</td>
                 <td class="impossible">65</td>
                 <td class="impossible">66</td>
                 <td>68</td>
@@ -141,7 +141,7 @@
             </tr>
             <tr>
                 <td><strong>Cloudy Terrain</strong></td>
-                <td>80</td>
+                <td class="classification-decimal">80</td>
                 <td class="impossible">81</td>
                 <td class="impossible">82</td>
                 <td class="special">84</td>
@@ -156,7 +156,7 @@
             </tr>
             <tr>
                 <td><strong>Water</strong></td>
-                <td>128</td>
+                <td class="classification-decimal">128</td>
                 <td class="impossible">129</td>
                 <td class="impossible">130</td>
                 <td>132</td>
@@ -171,7 +171,7 @@
             </tr>
             <tr>
                 <td><strong>Shady Water</strong></td>
-                <td>160</td>
+                <td class="classification-decimal">160</td>
                 <td class="impossible">161</td>
                 <td class="impossible">162</td>
                 <td>164</td>
@@ -186,7 +186,7 @@
             </tr>
             <tr>
                 <td><strong>Cloudy Water</strong></td>
-                <td>192</td>
+                <td class="classification-decimal">192</td>
                 <td class="impossible">193</td>
                 <td class="impossible">194</td>
                 <td>196</td>

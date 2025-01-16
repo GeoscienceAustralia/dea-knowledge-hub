@@ -38,6 +38,10 @@ table.colour-coded-table {
 
     &.dea-water-observations-bitflags {
         th, td {
+            &.classification-decimal {
+                background-color: $blue-background-color;
+            }
+
             &.impossible{
                 background-color: $grey-background-color;
                 text-decoration: line-through;
