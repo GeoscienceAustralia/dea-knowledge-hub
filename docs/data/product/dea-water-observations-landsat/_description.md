@@ -57,17 +57,17 @@ The table below describes the meaning of each bit set per pixel in each WOFL.
 * - **Low Solar Angle**
   - 2
   - 4
-  - Low solar angle (also known as Solar Incidence) means that the angle of the sun causes large shadow, therefore causing likely misclassifications of shadow as water. Pixel masked out due to solar incidence of less than 10 degrees.
+  - Also known as Solar Incidence. The angle of the sun can cast a large shadow which can be misclassified as water. Pixel masked out due to solar incidence of less than 10 degrees.
 
 * - **Terrain Shadow**
   - 3
   - 8
-  - Topographic features can cast shadows, and these shadows are likely to be misclassified as water. Pixel masked out due to terrain shadow.
+  - Topographic features can cast shadows which can be misclassified as water. Pixel masked out due to terrain shadow.
 
 * - **High Slope**
   - 4
   - 16
-  - This causes the classification of water to be less likely to be correct. Pixel masked out due to high slope.
+  - A highly sloped terrain is less likely to contain water, so therefore, a detection of water on this surface is often inaccurate. Pixel masked out due to high slope.
 
 * - **Cloud Shadow**
   - 5
@@ -82,7 +82,7 @@ The table below describes the meaning of each bit set per pixel in each WOFL.
 * - **Water**
   - 7
   - 128
-  - Water detected.
+  - This pixel is classified as water.
 :::
 
 Where multiple factors impeding a clear observation are detected, a combination of the decimal values will be set by adding the relevant decimal values together. Notable combinations include 'High Slope + Cloud' (64 + 16 = 80), 'Cloud Shadow + Water' (128 + 32 = 160), and 'Cloud + Water' (128 + 64 = 192). Three or more values can be combined, for example High Slope + Cloud + Cloud Shadow + Water which is 240.
