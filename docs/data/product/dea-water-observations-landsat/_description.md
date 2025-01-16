@@ -67,7 +67,7 @@ The table below describes the meaning of each bit set per pixel in each WOFL.
 * - **High Slope**
   - 4
   - 16
-  - A highly sloped terrain is less likely to contain water, so therefore, a detection of water on this surface is often inaccurate. Pixel masked out due to high slope.
+  - A highly sloped terrain is less likely to contain water, so therefore, a detection of water on this surface is often incorrect. Pixel masked out due to high slope.
 
 * - **Cloud Shadow**
   - 5
@@ -85,7 +85,7 @@ The table below describes the meaning of each bit set per pixel in each WOFL.
   - This pixel is classified as water.
 :::
 
-Where multiple factors impeding a clear observation are detected, a combination of the decimal values will be set by adding the relevant decimal values together. Notable combinations include 'High Slope + Cloud' (64 + 16 = 80), 'Cloud Shadow + Water' (128 + 32 = 160), and 'Cloud + Water' (128 + 64 = 192). Three or more values can be combined, for example High Slope + Cloud + Cloud Shadow + Water which is 240.
+Where multiple factors impeding a clear observation are detected, a combination of the decimal values will be set by adding the relevant decimal values together. These combinations include 'High Slope + Cloud' (64 + 16 = 80), 'Cloud Shadow + Water' (128 + 32 = 160), and 'Cloud + Water' (128 + 64 = 192). More than two of these values can be combined, for example 'High Slope + Cloud' + 'Cloud Shadow + Water' (which is 240).
 
 The following table shows these combinations of decimal values. Some values cannot occur, for any of several reasons, and these values are greyed-out in the table.
 
