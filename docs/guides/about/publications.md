@@ -1,6 +1,6 @@
 # DEA Publications
 
-This page is a list of academic articles, conference talks, and other publications for which at least one of the authors was a Digital Earth Australia colleague.
+This page is a list of academic articles, peer-reviewed presentations, and other publications for which at least one of the authors was a Digital Earth Australia colleague.
 
 :::{contents} On this page
 :local:
