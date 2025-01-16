@@ -39,49 +39,49 @@ The table below describes the meaning of each bit set per pixel in each WOFL. Wh
 :::{list-table}
 :header-rows: 1
 
-* - Bit
+* - Classification
+  - Bit
   - Decimal
-  - Classification
   - Description
 
-* - 0
+* - **No Data**
+  - 0
   - 1
-  - No Data
   - Missing or invalid data. Pixel masked out due to NO_DATA in NBART source, 0 = valid data in NBART.
 
-* - 1
+* - **Contiguity**
+  - 1
   - 2
-  - Contiguity
   - Some data is missing in the original image (usually missing bands). Pixel masked out due to lack of data contiguity.
 
-* - 2
+* - **Solar Incidence**
+  - 2
   - 4
-  - Solar Incidence
   - Low solar angle means that the angle of the sun causes large shadow, therefore causing likely misclassifications of shadow as water. Pixel masked out due to solar incidence of less than 10 degrees.
 
-* - 3
+* - **Terrain Shadow**
+  - 3
   - 8
-  - Terrain Shadow
   - Topographic features can cast shadows, and these shadows are likely to be misclassified as water. Pixel masked out due to terrain shadow.
 
-* - 4
+* - **High Slope**
+  - 4
   - 16
-  - High Slope
   - This causes the classification of water to be less likely to be correct. Pixel masked out due to high slope.
 
-* - 5
+* - **Cloud Shadow**
+  - 5
   - 32
-  - Cloud Shadow
   - Shadows are likely to be misclassified as water. Pixel masked out due to cloud shadow.
 
-* - 6
+* - **Cloud**
+  - 6
   - 64
-  - Cloud
   - Cloud is affecting the output data. Pixel masked out due to cloud.
 
-* - 7
+* - **Water**
+  - 7
   - 128
-  - Water
   - Water detected.
 :::
 
