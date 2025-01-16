@@ -1,6 +1,6 @@
 <div class="scroll-horizontally">
     <table class="colour-coded-table dea-water-observations-bitflags">
-        <caption>Combination bit sets</caption>
+        <caption>Combination decimal values</caption>
         <thead>
             <tr>
                 <th></th>

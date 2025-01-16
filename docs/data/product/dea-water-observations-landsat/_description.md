@@ -86,11 +86,11 @@ The table below describes the meaning of each bit set per pixel in each WOFL.
   - Water detected.
 :::
 
-Furthermore, where multiple factors impeding a clear observation are detected, a combination of the bits will be set by adding the relevant bits together, e.g. 4 + 8 = 12. Notable combination values include Cloudy Terrain (Cloud + High Slope; 64 + 16 = 80), Shady Water (Water + Cloud Shadow; 128 + 32 = 160), and Cloudy Water (Water + Cloud; 128 + 64 = 192).
+Furthermore, where multiple factors impeding a clear observation are detected, a combination of the decimal values will be set by adding the relevant decimal values together, e.g. 4 + 8 = 12. Notable combination values include Cloudy Terrain (Cloud + High Slope; 64 + 16 = 80), Shady Water (Water + Cloud Shadow; 128 + 32 = 160), and Cloudy Water (Water + Cloud; 128 + 64 = 192).
 
-The following table represents these combinations of bit sets. In the table, the grey boxes are impossible values that cannot occur. The yellow boxes are ???????. 
+The following table represents these combinations of decimal values. In the table, the grey boxes are impossible values that cannot occur. The yellow boxes are ???????. 
 
-:::{include} ../../../_components/water-observations-bitmasking-table.md
+:::{include} ../../../_components/water-observations-combination-decimals-table.md
 :::
 
 Full details of the original algorithms and features of DEA Water Observations can be found in the Water Observations from Space paper by Mueller et al. (2015).
