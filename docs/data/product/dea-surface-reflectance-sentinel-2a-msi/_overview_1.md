@@ -1,3 +1,9 @@
+:::{admonition} Sentinel-2C is replacing Sentinel-2A
+:class: warning
+
+This Sentinel-2A product will **stop publishing data updates on ???????**. It is being replaced by a new Sentinel-2C product which will **start publishing data updates on ?????**.
+:::
+
 ## About
 
 DEA Surface Reflectance Sentinel-2A Multispectral Instrument (MSI) is part of a suite of Digital Earth Australia's (DEA) Surface Reflectance datasets that represent the vast archive of images which have been captured by the US Geological Survey (USGS) Landsat and European Space Agency (ESA) Sentinel-2 satellite programs, which have been validated, calibrated, and adjusted for Australian conditions — ready for easy analysis.
