@@ -36,8 +36,7 @@ Version 2.0.0 introduces the integration of Landsat 9, providing an increase in 
 
 The table below describes the meaning of each bit set per pixel in each WOFL.
 
-:::{list-table}
-:caption: Classification bit sets
+:::{list-table} Classification bit sets
 :header-rows: 1
 
 * - Classification
