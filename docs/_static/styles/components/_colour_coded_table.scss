@@ -47,6 +47,10 @@ table.colour-coded-table {
                 background-color: $yellow-background-color;
             }
         }
+
+        & > thead > tr > th:first-of-type {
+            min-width: 150px;
+        }
     }
 }
 
