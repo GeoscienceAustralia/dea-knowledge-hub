@@ -5,17 +5,17 @@
             <tr>
                 <th></th>
                 <th></th>
-                <th class="classification"><strong>No Data</strong></th>
-                <th class="classification"><strong>Contiguity</strong></th>
-                <th class="classification"><strong>Low Solar Angle</strong></th>
-                <th class="classification"><strong>Terrain Shadow</strong></th>
-                <th class="classification"><strong>High Slope</strong></th>
-                <th class="classification"><strong>Cloud Shadow</strong></th>
-                <th class="classification"><strong>Cloud</strong></th>
-                <th class="classification"><strong>High Slope + Cloud</strong></th>
-                <th class="classification"><strong>Water</strong></th>
-                <th class="classification"><strong>Cloud Shadow + Water</strong></th>
-                <th class="classification"><strong>Cloud + Water</strong></th>
+                <th class="classification">No Data</th>
+                <th class="classification">Contiguity</th>
+                <th class="classification">Low Solar Angle</th>
+                <th class="classification">Terrain Shadow</th>
+                <th class="classification">High Slope</th>
+                <th class="classification">Cloud Shadow</th>
+                <th class="classification">Cloud</th>
+                <th class="classification">High Slope + Cloud</th>
+                <th class="classification">Water</th>
+                <th class="classification">Cloud Shadow + Water</th>
+                <th class="classification">Cloud + Water</th>
             </tr>
         </thead>
         <tbody>
