@@ -35,5 +35,22 @@ table.colour-coded-table {
             }
         }
     }
+
+    &.water-observations-combination-decimals-theme {
+        th, td {
+            &.classification {
+                background-color: $blue-background-color;
+            }
+
+            &.impossible{
+                background-color: $grey-background-color;
+                color: var(--pst-color-text-muted, #48566b)
+            }
+        }
+
+        & th:first-of-type {
+            min-width: 200px;
+        }
+    }
 }
 
