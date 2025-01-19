@@ -1,7 +1,4 @@
-:::{admonition} Sentinel-2C is replacing Sentinel-2A
-:class: warning
-
-This Sentinel-2A product will **stop publishing data updates on ???????**. It is being replaced by a new Sentinel-2C product which will **start publishing data updates on ?????**.
+:::{include} ../../../_components/sentinel-2c-replace-2a-alert.md
 :::
 
 ## About
