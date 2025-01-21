@@ -20,8 +20,8 @@ temporal_coverage_end: Present
 temporal_coverage_custom: null
 
 data_update_frequency: DAILY
-data_update_activity: ONGOING
-is_currency_reported: true
+data_update_activity: NO_UPDATES
+is_currency_reported: false
 
 resolution: 10-60 m
 coordinate_reference_system: null
