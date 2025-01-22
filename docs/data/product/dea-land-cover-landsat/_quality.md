@@ -79,7 +79,7 @@ A validation assessment has been undertaken for both the collection 2 (C2) and 3
 
 * Collection 3 shows improvement in both performance and consistency compared to Collection 2
 * Overall improvement in artificial surface classification. More urban areas are now correctly identified, although there is a slight increase in false positive identification of urban areas in the central australian desert, refer to Level 3 - Artificial Surfaces (AS) section above
-* Slight improvement is seen in Woody Cover for the `Terrestrial Veg`` and ``Bare Sfc`` classifications
+* Slight improvement is seen in Woody Cover for the Terrestrial Veg and Bare Sfc classifications
 * Significant increase in Landsat 7 stripe artefacts, due to  Landsat 8 scenes being filtered out by bad geometric quality assessments
 * Increase in no data surrounding water bodies, and incorrect classification of water persistence over the ocean
 
