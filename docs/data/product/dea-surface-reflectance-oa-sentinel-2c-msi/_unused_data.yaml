@@ -1,0 +1,114 @@
+# Unused data migrated from the CMI.
+# READ-ONLY - Don't edit this file.
+# This data is saved here for record-keeping purposes and is likely out-of-date; it isn't displayed on the Knowledge Hub.
+
+# General
+
+cmi_node: 677
+cmi_url: https://cmi.ga.gov.au/data-products/dea/677/dea-surface-reflectance-oa-sentinel-2a-msi
+published_date: "2022-03-16"
+author: A. O. @ gmail.com
+created: 2021-09-13T15:10:05+1000
+
+# Basics tab
+
+program: dea
+theme: Baseline satellite data
+catalogue: DEA Surface Reflectance
+collection_slug: geoscience-australia-sentinel-2-collection-3
+is_deprecated: null
+is_primary_record: null
+project_leader: S. O. @ ga.gov.au
+branch_head: M. W. @ ga.gov.au
+related_items:
+  - " DEA Surface Reflectance (Sentinel-2A MSI)"
+  - DEA Surface Reflectance NBART (Sentinel-2A MSI)
+anzsrc_research_code: EARTH SCIENCES
+
+# Access tab
+
+map_names:
+  - DEA Maps
+ecat_url: https://dx.doi.org/10.26186/146568
+doi_url: https://dx.doi.org/10.26186/146568
+open_data_cube_configuration:
+  - https://explorer.sandbox.dea.ga.gov.au/products/ga_s2am_ard_3#definition-doc
+security_classification: Unclassified
+time_span_full:
+  start: null
+  end: null
+
+# Details tab
+
+relevant_websites: null
+
+# Processing tab
+
+data_sources:
+  - SRTM DSM/DEM data
+  - Ephemeris Data
+major_algorithms: null
+schema_spatial_extent:
+  temporal_extent:
+    start: 2015-06-22T15:00:00+1000
+    end: 2050-01-01T05:03:51+1100
+  min_longitude: null
+  max_longitude: null
+  min_latitude: null
+  max_latitude: null
+  coordinate_reference_system: "WGS 84 (EPSG: 4326)"
+  coordinate_reference_system_units: angular_degree
+  cell_size_x: null
+  cell_size_y: null
+  pixel_origin: null
+  spatial_extent:
+    geo_type: Polygon
+    lat: "-27.000277780000"
+    long: "133.500000000000"
+    left: "112.999861110000"
+    top: "-10.000138890000"
+    right: "154.000138890000"
+    bottom: "-44.000416670000"
+    geohash: null
+
+# Media tab
+
+media: null
+case_studies: null
+header_image_alt: null
+files: null
+
+# Credits tab
+
+owners:
+  - Commonwealth of Australia (Geoscience Australia)
+custodians:
+  - Commonwealth of Australia (Geoscience Australia)
+principal_contributors:
+  - F. L.
+  - D. J.
+  - L. W. W.
+  - P. D.
+  - A. V.
+  - I. A.
+  - J. H.
+  - S. O.
+  - M. T.
+  - J. S.
+subject_matter_experts:
+  - F. L.
+  - D. J.
+  - J. S.
+publishing_entities:
+  - Commonwealth of Australia (Geoscience Australia)
+metadata_contacts:
+  - Geoscience Australia - Team Leader, Product Management, Operations Section NEMO
+media_contacts:
+  - Geoscience Australia - GA Media Hotline
+rights_statement: © Commonwealth of Australia (Geoscience Australia) 2022. [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/.).
+data_source_contacts:
+  - "Geoscience Australia - Team Leader, Applications and Systems Support, NEMO "
+approvers_checklist: null
+approvers_checklist_hprm_reference: D2022-10598
+pmp_hprm_reference: D2022-11706
+
