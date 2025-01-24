@@ -4,15 +4,15 @@ The European Space Agency (ESA) has operated medium resolution satellites - Sent
 
 ## What this product offers
 
-This product takes Sentinel-2A imagery captured over the Australian continent and corrects for inconsistencies across land and coastal fringes. The result is accurate and standardised surface reflectance data, which is instrumental in identifying and quantifying environmental change.
+This product takes Sentinel-2C imagery captured over the Australian continent and corrects for inconsistencies across land and coastal fringes. The result is accurate and standardised surface reflectance data, which is instrumental in identifying and quantifying environmental change.
 
-The imagery is captured using the Multispectral Instrument (MSI) sensor aboard Sentinel-2A.
+The imagery is captured using the Multispectral Instrument (MSI) sensor aboard Sentinel-2C.
 
 This product is a single, cohesive Analysis Ready Data (ARD) package, which allows the analysis of surface reflectance data as is, without the need to apply additional corrections.
 
 It contains two sub-products that provide corrections or attribution information:
-* [DEA Surface Reflectance NBART (Sentinel-2A MSI)](/data/product/dea-surface-reflectance-nbart-sentinel-2a-msi)
-* [DEA Surface Reflectance OA (Sentinel-2A MSI)](/data/product/dea-surface-reflectance-oa-sentinel-2a-msi)
+* [DEA Surface Reflectance NBART (Sentinel-2C MSI)](/data/product/dea-surface-reflectance-nbart-sentinel-2c-msi)
+* [DEA Surface Reflectance OA (Sentinel-2C MSI)](/data/product/dea-surface-reflectance-oa-sentinel-2c-msi)
 
 The resolution is a 10/20/60 m grid based on the ESA Level 1C archive.
 *Note: DEA produces NBAR as part of the Landsat ARD. This product is **not produced as part of the Sentinel-2 ARD**.*
@@ -62,17 +62,17 @@ The [technical report](https://pid.geoscience.gov.au/dataset/ga/145101) containi
 
 ### ARD sub-products
 
-1) [DEA Surface Reflectance NBART (Sentinel-2A MSI)](/data/product/dea-surface-reflectance-nbart-sentinel-2a-msi)
+1) [DEA Surface Reflectance NBART (Sentinel-2C MSI)](/data/product/dea-surface-reflectance-nbart-sentinel-2c-msi)
 
 The sub-product produces standardised optical surface reflectance data using robust physical models which correct for variations and inconsistencies in the image of top atmospheric reflectance values. Corrections are performed using Nadir corrected Bidirectional reflectance distribution function Adjusted Reflectance (NBAR) with an additional terrain illumination correction applied (NBART).
 
-2) [DEA Surface Reflectance OA (Sentinel-2A MSI)](/data/product/dea-surface-reflectance-oa-sentinel-2a-msi)
+2) [DEA Surface Reflectance OA (Sentinel-2C MSI)](/data/product/dea-surface-reflectance-oa-sentinel-2c-msi)
 
 The NBART product depends upon the Observation Attributes (OA) product to provide accurate and reliable contextual information about the Sentinel-2B data. This ‘data provenance’ provides a chain of information which allows the data to be replicated or utilised by derivative applications. The OA takes a number of different forms, including satellite, solar and surface geometry and classification attribution labels.
 
 ## Lineage
 
-This product is derived from the ESA Sentinel-2A level 1C archive.
+This product is derived from the ESA Sentinel-2C level 1C archive.
 
 * The Moderate Resolution Imaging Spectroradiometer (MODIS) MCD43A1 Version 6 Bidirectional Reflectance Distribution Function and Albedo (BRDF/Albedo) Model Parameters dataset was provided by the National Aeronautics and Space Administration (NASA). It was produced daily using 16 days of Terra and Aqua MODIS data at 500 m resolution.  
  See [USGS: MCD43A1](https://lpdaac.usgs.gov/products/mcd43a1v006/), [NASA: MODIS BRDF / Albedo Parameter](https://modis.gsfc.nasa.gov/data/dataprod/mod43.php), [Schaaf et al. (2002)](https://www.doi.org/10.1016/s0034-4257(02)00091-3)
