@@ -15,8 +15,8 @@ lineage_type: BASELINE
 spatial_data_type: RASTER
 
 spatial_coverage: null
-temporal_coverage_start: 12 Jul 2015
-temporal_coverage_end: 21 Jan 2025
+temporal_coverage_start: 21 Jan 2025
+temporal_coverage_end: Present
 temporal_coverage_custom: null
 
 data_update_frequency: DAILY
