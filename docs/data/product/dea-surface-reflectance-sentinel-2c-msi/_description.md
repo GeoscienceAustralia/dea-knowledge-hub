@@ -68,7 +68,7 @@ The sub-product produces standardised optical surface reflectance data using rob
 
 2) [DEA Surface Reflectance OA (Sentinel-2C MSI)](/data/product/dea-surface-reflectance-oa-sentinel-2c-msi)
 
-The NBART product depends upon the Observation Attributes (OA) product to provide accurate and reliable contextual information about the Sentinel-2B data. This ‘data provenance’ provides a chain of information which allows the data to be replicated or utilised by derivative applications. The OA takes a number of different forms, including satellite, solar and surface geometry and classification attribution labels.
+The NBART product depends upon the Observation Attributes (OA) product to provide accurate and reliable contextual information about the Sentinel-2C data. This ‘data provenance’ provides a chain of information which allows the data to be replicated or utilised by derivative applications. The OA takes a number of different forms, including satellite, solar and surface geometry and classification attribution labels.
 
 ## Lineage
 
