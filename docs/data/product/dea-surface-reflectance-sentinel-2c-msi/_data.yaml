@@ -60,27 +60,27 @@ tags:
 
 # Access
 
-access_links_maps:
-  - link: https://maps.dea.ga.gov.au/#share=s-mpoGYidqkggb7wfUexuv8LKbDX6
-    name: See it on a map
+access_links_maps: null
+  # - link: https://maps.dea.ga.gov.au/#share=s-mpoGYidqkggb7wfUexuv8LKbDX6
+  #   name: See it on a map
 
-access_links_explorers:
-  - link: https://explorer-aws.dea.ga.gov.au/products/ga_s2cm_ard_3
-    name: DEA Explorer
+access_links_explorers: null
+  # - link: https://explorer-aws.dea.ga.gov.au/products/ga_s2cm_ard_3
+  #   name: DEA Explorer
 
-access_links_data:
-  - link: https://data.dea.ga.gov.au/?prefix=baseline/ga_s2cm_ard_3/
-    name: Access the data on AWS
-  - link: https://thredds.nci.org.au/thredds/catalog/ka08/ga_s2cm_ard_3/catalog.html
-    name: Access the data on NCI
+access_links_data: null
+  # - link: https://data.dea.ga.gov.au/?prefix=baseline/ga_s2cm_ard_3/
+  #   name: Access the data on AWS
+  # - link: https://thredds.nci.org.au/thredds/catalog/ka08/ga_s2cm_ard_3/catalog.html
+  #   name: Access the data on NCI
 
 access_links_code_examples:
   - link: /notebooks/DEA_products/DEA_Sentinel2_Surface_Reflectance/
     name: null
 
-access_links_web_services:
-  - link: https://ows.dea.ga.gov.au
-    name: null
+access_links_web_services: null
+  # - link: https://ows.dea.ga.gov.au
+  #   name: null
 
 access_links_custom: null
 
