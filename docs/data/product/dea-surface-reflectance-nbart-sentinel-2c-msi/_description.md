@@ -2,10 +2,10 @@
 
 :::{admonition} Sub-product
 :class: note
-This is a sub-product of [DEA Surface Reflectance (Sentinel-2A MSI)](/data/product/dea-surface-reflectance-sentinel-2a-msi). See the parent product for more information.
+This is a sub-product of [DEA Surface Reflectance (Sentinel-2C MSI)](/data/product/dea-surface-reflectance-sentinel-2c-msi). See the parent product for more information.
 :::
 
-Reflectance data at top of atmosphere (TOA) collected by Sentinel-2A MSI sensors can be affected by atmospheric conditions, sun position, sensor view angle, surface slope and surface aspect.
+Reflectance data at top of atmosphere (TOA) collected by Sentinel-2C MSI sensors can be affected by atmospheric conditions, sun position, sensor view angle, surface slope and surface aspect.
 
 Surfaces with varying terrain can introduce inconsistencies to optical satellite images through irradiance and bidirectional reflectance distribution function (BRDF) effects. For example, slopes facing the sun appear brighter compared with those facing away from the sun. Likewise, many surfaces on Earth are anisotropic in nature, so the signal picked up by a satellite sensor may differ depending on the sensor’s position.
 
@@ -13,7 +13,7 @@ These inconsistencies need to be reduced or removed to ensure the data can be co
 
 ## What this product offers
 
-This product takes Sentinel-2A MSI imagery captured over the Australian continent and corrects the inconsistencies across the land and coastal fringe. It achieves this using Nadir corrected Bi-directional reflectance distribution function Adjusted Reflectance (NBAR).
+This product takes Sentinel-2C MSI imagery captured over the Australian continent and corrects the inconsistencies across the land and coastal fringe. It achieves this using Nadir corrected Bi-directional reflectance distribution function Adjusted Reflectance (NBAR).
 
 In addition, this product applies terrain illumination correction to correct for varying terrain.
 
@@ -39,7 +39,7 @@ It has been traditionally assumed that satellite imagery displays negligible var
 
 This product represents standardised optical surface reflectance using robust physical models to correct for variations and inconsistencies in image radiance values.
 
-It delivers modelled surface reflectance from Sentinel-2A MSI data using physical rather than empirical models. This ensures that the reflective value differences between imagery acquired at different times by different sensors will be primarily due to on-ground changes in biophysical parameters rather than artefacts of the imaging environment.
+It delivers modelled surface reflectance from Sentinel-2C MSI data using physical rather than empirical models. This ensures that the reflective value differences between imagery acquired at different times by different sensors will be primarily due to on-ground changes in biophysical parameters rather than artefacts of the imaging environment.
 
 This product is created using a physics-based, coupled Bidirectional Reflectance Distribution Function (BRDF) and atmospheric correction model that can be applied to both flat and inclined surfaces (Li et al. 2012). The resulting surface reflectance values are comparable both within individual images and between images acquired at different times.
 

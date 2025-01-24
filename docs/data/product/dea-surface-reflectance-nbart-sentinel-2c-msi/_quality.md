@@ -2,7 +2,7 @@
 
 Atmospheric correction accuracy depends on the quality of aerosol data and total column water vapour available to determine the atmospheric profile at the time of image acquisition (Wang et al., 2009).
 
-BRDF correction is based on low resolution imagery from the Moderate Resolution Imaging Spectroradiometer (MODIS), which is assumed to be relevant to medium resolution imagery such as that captured by Sentinel-2A MSI. A single BRDF shape is applied to each Sentinel-2A tile and it does not account for changes in land cover. 
+BRDF correction is based on low resolution imagery from the Moderate Resolution Imaging Spectroradiometer (MODIS), which is assumed to be relevant to medium resolution imagery such as that captured by Sentinel-2C MSI. A single BRDF shape is applied to each Sentinel-2C tile and it does not account for changes in land cover. 
 
 The algorithm assumes that BRDF effect for inclined surfaces is modelled by the surface slope and does not account for land cover orientation relative to gravity (as occurs for some broadleaf vegetation with vertical leaf orientation).
 
