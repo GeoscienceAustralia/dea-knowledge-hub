@@ -2,14 +2,14 @@
 
 :::{admonition} Sub-product
 :class: note
-This is a sub-product of [DEA Surface Reflectance (Sentinel-2A)](/data/product/dea-surface-reflectance-sentinel-2a-msi). See the parent product for more information.
+This is a sub-product of [DEA Surface Reflectance (Sentinel-2C)](/data/product/dea-surface-reflectance-sentinel-2c-msi). See the parent product for more information.
 :::
 
 The contextual information related to a dataset is just as valuable as the data itself. This information, also known as data provenance or data lineage, includes details such as the data’s origins, derivations, methodology and processes. It allows the data to be replicated and increases the reliability of derivative applications.
 
 Data that is well-labelled and rich in spectral, spatial and temporal attribution can allow users to investigate patterns through space and time. Users are able to gain a deeper understanding of the data environment, which could potentially pave the way for future forecasting and early warning systems.
 
-The surface reflectance data produced by [NBART](/data/product/dea-surface-reflectance-nbart-sentinel-2a-msi) requires accurate and reliable data provenance. Attribution labels, such as the location of cloud and cloud shadow pixels, can be used to mask out these particular features from the surface reflectance analysis, or used as training data for machine learning algorithms. Additionally, the capacity to automatically exclude or include pre-identified pixels could assist with emerging multi-temporal and machine learning analysis techniques.
+The surface reflectance data produced by [NBART](/data/product/dea-surface-reflectance-nbart-sentinel-2c-msi) requires accurate and reliable data provenance. Attribution labels, such as the location of cloud and cloud shadow pixels, can be used to mask out these particular features from the surface reflectance analysis, or used as training data for machine learning algorithms. Additionally, the capacity to automatically exclude or include pre-identified pixels could assist with emerging multi-temporal and machine learning analysis techniques.
 
 ## What this product offers
 
@@ -69,9 +69,9 @@ Pixel-level information on satellite and solar geometries is useful if you wish 
 
 These images depict an area partially occluded by cloud with visible shadow. Applications, such as land cover, can mis-classify regions if cloud or shadow is misinterpreted as ground observation.
 
-![Surface Reflectance (Sentinel-2A NBART)](/_files/cmi/NBART.png)![FMask](/_files/cmi/Fmask.png)![s2cloudless mask](/_files/cmi/s2cloudless_mask.png)![s2cloudless probability](/_files/cmi/s2cloudless_prob.png)
+![Surface Reflectance (Sentinel-2C NBART)](/_files/cmi/NBART.png)![FMask](/_files/cmi/Fmask.png)![s2cloudless mask](/_files/cmi/s2cloudless_mask.png)![s2cloudless probability](/_files/cmi/s2cloudless_prob.png)
 
-*Figure 1. (A) Surface Reflectance (Sentinel-2A) image; (B) Fmask (purple: cloud, yellow: cloud shadow); (C)* *s2cloudless mask (white: cloud, black: clear); (D) s2cloudless probability.*
+*Figure 1. (A) Surface Reflectance (Sentinel-2C) image; (B) Fmask (purple: cloud, yellow: cloud shadow); (C)* *s2cloudless mask (white: cloud, black: clear); (D) s2cloudless probability.*
 
 ### Terminology for satellite, solar and sensing geometries
 
