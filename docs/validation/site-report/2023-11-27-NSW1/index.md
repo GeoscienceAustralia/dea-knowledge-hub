@@ -1,4 +1,4 @@
-# 2023-11-27-NSW1: Transect NSW Site 1, Landsat 9 and Sentinel-2B dual overpass
+# 2023-11-27 NSW1: Transect NSW Site 1, Landsat 9 and Sentinel-2B dual overpass
 
 This is a report of the field data collected on 27 November 2023 at the location of Transect NSW Site 1
 to validate the satellite data of the Landsat 9 and Sentinel-2B dual overpass.

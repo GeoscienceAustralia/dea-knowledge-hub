@@ -1,4 +1,4 @@
-# 2021-11-17-NRM: Narromine, Landsat 8 overpass
+# 2021-11-17 NRM: Narromine, Landsat 8 overpass
 
 This is a report of the field data collected on 17 November 2021 at the location of Narromine
 to validate the satellite data of the Landsat 8 overpass.

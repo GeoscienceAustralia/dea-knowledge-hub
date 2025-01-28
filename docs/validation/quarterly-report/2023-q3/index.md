@@ -50,8 +50,8 @@ based on the most recent measurements.
 :header-rows: 1
 
 "Site capture (Date, Field site, Overpasses)","Latitude, Longitude (WGS84)","Instrument","Comments"
-"<a href='/validation/site-report/2023-07-25-MUL/'>2023-07-25-MUL: S-2A</a>","-35.12279, 148.86261","Hand-held ASD FR-4","Excellent matchup"
-"<a href='/validation/site-report/2023-09-22-MUL/'>2023-09-22-MUL: L8</a>","-35.12274, 148.86260","Hand-held ASD FR-4","Excellent matchup"
+"<a href='/validation/site-report/2023-07-25-MUL/'>2023-07-25 MUL: S-2A</a>","-35.12279, 148.86261","Hand-held ASD FR-4","Excellent matchup"
+"<a href='/validation/site-report/2023-09-22-MUL/'>2023-09-22 MUL: L8</a>","-35.12274, 148.86260","Hand-held ASD FR-4","Excellent matchup"
 :::
  
 :::{figure} ./2023Q3_Locations.png

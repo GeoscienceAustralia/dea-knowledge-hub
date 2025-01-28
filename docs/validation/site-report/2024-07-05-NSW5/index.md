@@ -1,4 +1,4 @@
-# 2024-07-05-NSW5: Transect NSW Site 5, Landsat 9 overpass
+# 2024-07-05 NSW5: Transect NSW Site 5, Landsat 9 overpass
 
 This is a report of the field data collected on 5 July 2024 at the location of Transect NSW Site 5
 to validate the satellite data of the Landsat 9 overpass.

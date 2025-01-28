@@ -1,4 +1,4 @@
-# 2021-11-13-BLD: Baldivis, Landsat 9 overpass
+# 2021-11-13 BLD: Baldivis, Landsat 9 overpass
 
 This is a report of the field data collected on 13 November 2021 at the location of Baldivis
 to validate the satellite data of the Landsat 9 overpass.

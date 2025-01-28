@@ -1,4 +1,4 @@
-# 2024-07-03-NSW3: Transect NSW Site 3, Landsat 9 and Sentinel-2A dual overpass
+# 2024-07-03 NSW3: Transect NSW Site 3, Landsat 9 and Sentinel-2A dual overpass
 
 This is a report of the field data collected on 3 July 2024 at the location of Transect NSW Site 3
 to validate the satellite data of the Landsat 9 and Sentinel-2A dual overpass.

@@ -52,8 +52,8 @@ based on the most recent measurements.
 :header-rows: 1
 
 "Site capture (Date, Field site, Overpasses)","Latitude, Longitude (WGS84)","Instrument","Comments"
-"<a href='/validation/site-report/2023-11-26-SA1/'>2023-11-26-SA1: L8</a>","-32.17493, 140.64202","Hand-held ASD FR-4","Excellent matchup"
-"<a href='/validation/site-report/2023-11-27-NSW1/'>2023-11-27-NSW1: L9, S-2B</a>","-31.81354, 142.10370","Hand-held ASD FR-4","Good matchup. Some cloud nearby."
+"<a href='/validation/site-report/2023-11-26-SA1/'>2023-11-26 SA1: L8</a>","-32.17493, 140.64202","Hand-held ASD FR-4","Excellent matchup"
+"<a href='/validation/site-report/2023-11-27-NSW1/'>2023-11-27 NSW1: L9, S-2B</a>","-31.81354, 142.10370","Hand-held ASD FR-4","Good matchup. Some cloud nearby."
 :::
  
 :::{figure} ./2023Q4_Locations.png

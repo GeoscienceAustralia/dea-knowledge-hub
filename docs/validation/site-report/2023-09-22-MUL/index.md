@@ -1,4 +1,4 @@
-# 2023-09-22-MUL: Mullion, Landsat 8 overpass
+# 2023-09-22 MUL: Mullion, Landsat 8 overpass
 
 This is a report of the field data collected on 22 September 2023 at the location of Mullion
 to validate the satellite data of the Landsat 8 overpass.
