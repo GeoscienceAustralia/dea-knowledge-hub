@@ -257,6 +257,14 @@ entries:
               reversed: True
             entries:
               - glob: validation/quarterly-report/*/index
+      - caption: Yearly
+        entries:
+          - file: validation/yearly-report/index
+            title: Yearly reports
+            options:
+              reversed: True
+            entries:
+              - glob: validation/yearly-report/*/index
       - caption: User guides
         entries:
           - file: validation/user-guides
