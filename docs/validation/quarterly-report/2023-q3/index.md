@@ -20,7 +20,7 @@ and presents aggregate validation results to the end of this quarter.
 This quarterly report presents a summary of results from Q3 2023 from the Digital Earth
 Calibration/Validation team. The report is presented in the following sections:
 
-* Background &mdash; this section outlines the context around this work, with particular attention paid ton historical work leading up to this quarter.
+* Background &mdash; this section outlines the context around this work, with particular attention paid to historical work leading up to this quarter.
 * Summary of Validation Work &mdash; this section provides an overall view of the field site measurements undertaken.
 * Comments on Individual Sites of Interest &mdash; this section focuses on any sites where some aspect of the site or measurement was atypical.
 * Summary of Band-by-Band Matching &mdash; this section presents comparison data for this quarter’s results, in the context of all previous results.

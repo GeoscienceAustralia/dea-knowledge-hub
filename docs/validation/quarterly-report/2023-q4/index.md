@@ -67,7 +67,7 @@ No sites of particular interest.
      
 ## Summary of Band-by-Band Matching
 
-:::{figure} ./2024Q3-Matchup.png
+:::{figure} ./2023Q4-Matchup.png
 
 The Figure shows comparison data for each platform. Black dots represent data that were collected prior to this quarter.
 Coloured symbols represent data that were collected in this quarter. The diagonal line in each panel shows the
