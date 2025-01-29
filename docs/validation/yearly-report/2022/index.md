@@ -5,7 +5,7 @@
 :backlinks: none
 :::
 
-## Executive Summary
+## Summary of Validation Work
 
 No validation measurements were taken during 2022.
 
