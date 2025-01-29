@@ -13,7 +13,7 @@ and presents aggregate validation results to the end of this year.
 * During this year, a total of 4 measurements were taken across 4 field sites, to capture 7 overpasses.
 * Validation of Landsat 8 improved in accuracy, taking into account the data from this year.
 * No new data were captured during Sentinel-2A or Sentinel-2B overpasses.
-* First Landsat 9 validation data were captured during the L8/9 underfly event, which comprised 3 or the 4 measurements taken.
+* The first Landsat 9 validation data were captured during the L8/9 underfly event, which comprised 3 or the 4 measurements taken.
 * On an averaged band-by-band basis, Landsat 8 is validated to 3.5%, Landsat 9 is validated to 222%, Sentinel-2A is validated to 3.0% and Sentinel-2B is validated to 5.2%.
 
 ## Introduction
@@ -65,7 +65,7 @@ The Figure shows the locations of the field sites measured during this year.
 ## Comments on Individual Sites of Interest
 
 Most of the measurements taken during this year were part of the Landsat 8/9 underfly event, which occurred in November, 2021.
-This includes BLD, WLC and NRM. Further details on the underfly results can be found in the refereed journal article: <a href="https://doi.org/10.3390/rs16071233">"Validating Digital Earth Australia NBART for the Landsat 9 Underfly of Landsat 8"</a>.
+This includes BLD, WLC and NRM. Further details on the underfly results can be found in the journal article: <a href="https://doi.org/10.3390/rs16071233">Validating Digital Earth Australia NBART for the Landsat 9 Underfly of Landsat 8</a>.
      
 ## Summary of Band-by-Band Matching
 
@@ -107,7 +107,7 @@ results over all time.
 For Landsat 8, this year has seen an overall improvement in validation results. There were 4 field site comparison
 measurements.
 
-For Landsat 9, this year has seen the first validation results. There were 3 field site comparison
+For Landsat 9, this was the first year that validation data were collected. There were 3 field site comparison
 measurements.
 
 For Sentinel-2A, this quarter has seen no change in validation results. There were no field site comparison
