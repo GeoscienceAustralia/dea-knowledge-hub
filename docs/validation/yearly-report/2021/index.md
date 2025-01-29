@@ -51,10 +51,10 @@ based on the most recent measurements.
 :header-rows: 1
 
 "Site capture (Date, Field site, Overpasses)","Latitude, Longitude (WGS84)","Instrument","Comments"
-"<a href='/validation/site-report/2021-07-30-MUL/'>2021-07-30-MUL: L8</a>","-35.12279, 148.86261","Hand-held ASD FR-4","Good matchup"
-"<a href='/validation/site-report/2021-11-13-BLD/'>2021-11-13-BLD: L8/9</a>","-32.30990, 115.86483","Hand-held ASD FR-4","Excellent matchup; L8/9 underfly"
-"<a href='/validation/site-report/2021-11-15-WLC/'>2021-11-15-WLC: L8/9</a>","-31.44932, 143.82192","Hand-held ASD FR-4","Excellent matchup; L8/9 underfly"
-"<a href='/validation/site-report/2021-11-17-NRM/'>2021-11-17-NRM: L8/9</a>","-32.20974, 148.21012","Hand-held ASD FR-4","Excellent matchup; L8/9 underfly"
+"<a href='/validation/site-report/2021-07-30-MUL/'>2021-07-30 MUL: L8</a>","-35.12279, 148.86261","Hand-held ASD FR-4","Good matchup"
+"<a href='/validation/site-report/2021-11-13-BLD/'>2021-11-13 BLD: L8/9</a>","-32.30990, 115.86483","Hand-held ASD FR-4","Excellent matchup; L8/9 underfly"
+"<a href='/validation/site-report/2021-11-15-WLC/'>2021-11-15 WLC: L8/9</a>","-31.44932, 143.82192","Hand-held ASD FR-4","Excellent matchup; L8/9 underfly"
+"<a href='/validation/site-report/2021-11-17-NRM/'>2021-11-17 NRM: L8/9</a>","-32.20974, 148.21012","Hand-held ASD FR-4","Excellent matchup; L8/9 underfly"
 :::
  
 :::{figure} ./2021_Locations.png
