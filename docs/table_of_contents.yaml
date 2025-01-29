@@ -265,10 +265,10 @@ entries:
               reversed: True
             entries:
               - glob: validation/yearly-report/*/index
-      - caption: User guides
+      - caption: Learn more
         entries:
           - file: validation/user-guides
-            title: Visit the user guides
+            title: Validation report guides
       # - caption: Quarterly Reports
       #   options:
       #     reversed: True

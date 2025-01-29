@@ -11,6 +11,6 @@ cards:
   - name: Yearly reports
     link: ./yearly-report/
     image: /_files/validation/validation-team-sensor-thumbnail.jpg
-  - name: User guides
+  - name: Learn more
     link: /guides/setup/validation/
     image: /_files/validation/user-guides-thumbnail-2.jpg
