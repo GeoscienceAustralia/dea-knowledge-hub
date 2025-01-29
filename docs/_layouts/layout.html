@@ -1,6 +1,18 @@
 {% extends '!layout.html' %}
 
 {%- block htmltitle %}
+{%- if google_analytics_ga4_tag %}
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ google_analytics_ga4_tag }}"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', '{{ google_analytics_ga4_tag }}');
+</script>
+{%- endif %}
+
 {%- if pagename == "index" %} {# Home page #}
 <title>{{ docstitle|e }}</title>
 {%- elif docstitle and not embedded %}
@@ -19,16 +31,6 @@
 <script type="text/javascript" src="/_static/scripts/custom-behaviour.js"></script>
 <script type="text/javascript" src="/_static/scripts/lightbox.js"></script>
 
-{%- if google_analytics_ga4_tag %}
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id={{ google_analytics_ga4_tag }}"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', '{{ google_analytics_ga4_tag }}');
-</script>
-{%- endif %}
+{{ super() }}
 {% endblock %}
 

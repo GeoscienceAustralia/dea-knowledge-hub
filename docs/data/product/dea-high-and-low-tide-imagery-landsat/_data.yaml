@@ -1,43 +1,53 @@
-# See the Product metadata fields documentation:
-# https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/product_metadata_fields.html
+# See the Product metadata fields documentation: https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/product_metadata_fields.html
 
-# Overview
+# Specifications
 
-title: DEA High and Low Tide Imagery (Landsat)
-long_title: "High Tide and Low Tide Composites 25m 2.0.0 "
+short_name: DEA High and Low Tide Imagery (Landsat)
+full_technical_name: "High Tide and Low Tide Composites 25m 2.0.0 "
 header_image: /_files/cmi/HLTCv2.png
-version: 2.0.0
+
+version_number: 2.0.0
 is_latest_version: true
 latest_version_link: null
 is_provisional: false
-product_type: Derivative
-spatial_data_type: Raster
-time_span:
-  start: 1995
-  end: 2017
-update_frequency: As needed
-next_update: No updates planned
+
+lineage_type: DERIVATIVE
+spatial_data_type: RASTER
+
+spatial_coverage: null
+temporal_coverage_start: 1995
+temporal_coverage_end: 2017
+temporal_coverage_custom: null
+
+data_update_frequency: AS_NEEDED
+data_update_activity: NO_UPDATES
+is_currency_reported: false
+
+resolution: 25 m
+coordinate_reference_system: null
+
 product_ids:
   - high_tide_comp_20p
   - low_tide_comp_20p
 
 parent_products:
-  name: Landsat 5, 7 and 8 NBAR and Observational Attributes (Collection 2)
-  link: /data/category/dea-surface-reflectance/
-collection:
-  name: Geoscience Australia Landsat Collection 2
-  link: null
-doi: 10.4225/25/5a615705d20f7
-ecat: "113843"
-nci: null
-licence:
-  name: Creative Commons Attribution 4.0 International Licence
-  link: https://creativecommons.org/licenses/by/4.0/
+  - name: Landsat 5, 7 and 8 NBAR and Observational Attributes (Collection 2)
+    link: /data/category/dea-surface-reflectance/
 
-citations:
-  data_citation: "Sagar, S., Phillips, C., Bala, B., Roberts, D., Lymburner, L., 2017. High tide and low tide composites 25m v. 2.0.0. Geoscience Australia, Canberra. http://dx.doi.org/10.4225/25/5a615705d20f7"
-  paper_citation: "Sagar, S., Phillips, C., Bala, B., Roberts, D., Lymburner, L., 2018. Generating continental scale pixel-based surface reflectance composites in coastal regions with the use of a multi-resolution tidal model. Remote Sensing. 10, 480. https://doi.org/10.3390/rs10030480"
-custom_citations: null
+collections:
+  - name: Geoscience Australia Landsat Collection 2
+    link: /search/?q=Geoscience+Australia+Landsat+Collection+2
+
+doi: 10.4225/25/5a615705d20f7
+ecat_id: "113843"
+
+licence_name: Creative Commons Attribution 4.0 International Licence
+licence_link: https://creativecommons.org/licenses/by/4.0/
+
+citation_data: "Sagar, S., Phillips, C., Bala, B., Roberts, D., Lymburner, L., 2017. High tide and low tide composites 25m v. 2.0.0. Geoscience Australia, Canberra. http://dx.doi.org/10.4225/25/5a615705d20f7"
+citation_paper: "Sagar, S., Phillips, C., Bala, B., Roberts, D., Lymburner, L., 2018. Generating continental scale pixel-based surface reflectance composites in coastal regions with the use of a multi-resolution tidal model. Remote Sensing. 10, 480. https://doi.org/10.3390/rs10030480"
+
+citations_custom: null
 
 tags:
   - geoscience_australia_landsat_collection_2_deprecated
@@ -47,40 +57,45 @@ tags:
 
 # Access
 
-maps:
+access_links_maps:
   - link: https://maps.dea.ga.gov.au/#share=s-7YeWZKqWkF0Ctv5Av8RkHSWeNzQ
     name: See it on a map
 
-explorers:
+access_links_explorers:
   - link: https://explorer.dea.ga.gov.au/products/high_tide_comp_20p
     name: High tide data explorer
   - link: https://explorer.dea.ga.gov.au/products/low_tide_comp_20p
     name: Low tide data explorer
 
-data:
+access_links_data:
   - link: https://thredds.nci.org.au/thredds/catalog/catalogs/fk4/hltc_2_0.html
     name: Access the data on NCI
 
-code_examples:
+access_links_code_examples:
   - link: /notebooks/DEA_products/DEA_High_and_Low_Tide_Imagery/
-    name: Code examples
+    name: null
 
-web_services:
+access_links_web_services:
   - link: https://ows.dea.ga.gov.au/
     name: Web Map Service (WMS)
 
-custom: null
+access_links_custom: null
 
 # History
 
-old_versions: null
+previous_versions: null
+
+# SEO
+
+meta_description: null
 
 # Settings
 
 enable_overview: true
-enable_access: true
-enable_details: true
+enable_description: true
 enable_quality: true
+enable_specifications: true
+enable_access: true
 enable_history: true
 enable_faqs: false
 enable_credits: true

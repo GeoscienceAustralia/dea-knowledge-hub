@@ -74,7 +74,7 @@ To access the service enter the following information:
 
 Enter information about yourself, including contact email and intended use of the database in the Description field. If your institute is not listed, please add your institute. If you are not from an institute, such as a research body or private company, please create a new institute as your name, i.e. "First Name Last Name".
 
-See the [Details tab](./?tab=details) for further information on navigation through the Specchio client and NSD.
+See the [Details tab](./?tab=description) for further information on navigation through the Specchio client and NSD.
 :::
 
 :::{dropdown} How to navigate the client

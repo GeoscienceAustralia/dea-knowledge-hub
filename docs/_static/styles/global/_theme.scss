@@ -6,7 +6,12 @@ $breakpoint-lg: 992px;
 $breakpoint-xl: 1200px;
 $breakpoint-xxl: 1400px;
 
-// Style properties
+// Fonts
+
+$heading-font-family: 'Nimbus Sans Novus', sans-serif;
+$content-font-family: 'Source Sans Pro', Arial, sans-serif;
+
+// Colours
 
 $text-color: #082e41;
 $highlight-color: #00718b;
@@ -15,6 +20,10 @@ $hover-bg-color-white: #f2f2f2;
 $hover-bg-color-grey: #d6e2e5;
 $hover-highlight-color: #005a6f;
 $table-border-color: #dee2e6;
+$red-background-color: #d2ffdb;
+$yellow-background-color: #ffffc8;
+$orange-background-color: #ffe9db;
+$green-background-color: #ffe3e6;
+$blue-background-color: #e1f1fd;
+$grey-background-color: gainsboro;
 
-$heading-font-family: 'Nimbus Sans Novus', sans-serif;
-$content-font-family: 'Source Sans Pro', Arial, sans-serif;

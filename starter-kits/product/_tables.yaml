@@ -1,0 +1,15 @@
+# See the Product metadata fields documentation: https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/product_metadata_fields.html
+
+# Bands
+
+# bands_footnote: A footnote to display under the bands table.
+
+# bands_table:
+#   - name: example_band_name
+#     aliases: [example_alias_1, example_alias_2]
+#     resolution: 30 m
+#     nodata: -999
+#     units: Metres
+#     type: int16
+#     description: A description of the band.
+

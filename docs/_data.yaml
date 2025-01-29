@@ -1,6 +1,8 @@
 title: Welcome to the DEA Knowledge Hub
 description: The Knowledge Hub brings together information about Digital Earth Australia's products and services, allowing you to utilise our free and open-source satellite imagery archive.
 
+meta_description: The Knowledge Hub brings together information about Digital Earth Australia's products and services, allowing you to utilise our free and open-source satellite imagery archive.
+
 product_themes:
   - name: Baseline satellite data
     link: /data/theme/baseline-satellite-data/

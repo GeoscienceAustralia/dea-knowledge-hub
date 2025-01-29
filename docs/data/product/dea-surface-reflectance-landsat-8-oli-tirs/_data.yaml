@@ -1,42 +1,52 @@
-# See the Product metadata fields documentation:
-# https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/product_metadata_fields.html
+# See the Product metadata fields documentation: https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/product_metadata_fields.html
 
-# Overview
+# Specifications
 
-title: DEA Surface Reflectance (Landsat 8 OLI-TIRS)
-long_title: Geoscience Australia Landsat 8 OLI-TIRS Analysis Ready Data Collection 3
+short_name: DEA Surface Reflectance (Landsat 8 OLI-TIRS)
+full_technical_name: Geoscience Australia Landsat 8 OLI-TIRS Analysis Ready Data Collection 3
 header_image: /_files/cmi/surface_reflectance_2_NBARTa_1.png
-version: 3.0.0
+
+version_number: 3.0.0
 is_latest_version: true
 latest_version_link: null
 is_provisional: false
-product_type: Baseline
-spatial_data_type: Raster
-time_span:
-  start: 19 Mar 2013
-  end: Present
-update_frequency: Daily
-next_update: null
+
+lineage_type: BASELINE
+spatial_data_type: RASTER
+
+spatial_coverage: null
+temporal_coverage_start: 19 Mar 2013
+temporal_coverage_end: Present
+temporal_coverage_custom: null
+
+data_update_frequency: DAILY
+data_update_activity: ONGOING
+is_currency_reported: true
+
+resolution: 15-30 m
+coordinate_reference_system: null
+
 product_ids:
   - ga_ls8c_ard_3
 
 parent_products:
-  name: null
-  link: null
-collection:
-  name: Geoscience Australia Landsat Collection 3
-  link: null
-doi: null
-ecat: "132317"
-nci: null
-licence:
-  name: Creative Commons Attribution 4.0 International Licence
-  link: https://creativecommons.org/licenses/by/4.0/
+  - name: null
+    link: null
 
-citations:
-  data_citation: "Fuqin, Li., Jupp, D.L.B., Sixsmith, J., Wang, L., Dorj, P., Vincent, A., Alam, I., Hooke, J., Oliver, S., Thankappan, M. 2019. GA Landsat 8 OLI/TIRS Analysis Ready Data Collection 3. Geoscience Australia, Canberra. https://pid.geoscience.gov.au/dataset/ga/132317"
-  paper_citation: null
-custom_citations: null
+collections:
+  - name: Geoscience Australia Landsat Collection 3
+    link: /search/?q=Geoscience+Australia+Landsat+Collection+3
+
+doi: null
+ecat_id: "132317"
+
+licence_name: Creative Commons Attribution 4.0 International Licence
+licence_link: https://creativecommons.org/licenses/by/4.0/
+
+citation_data: "Fuqin, Li., Jupp, D.L.B., Sixsmith, J., Wang, L., Dorj, P., Vincent, A., Alam, I., Hooke, J., Oliver, S., Thankappan, M. 2019. GA Landsat 8 OLI/TIRS Analysis Ready Data Collection 3. Geoscience Australia, Canberra. https://pid.geoscience.gov.au/dataset/ga/132317"
+citation_paper: null
+
+citations_custom: null
 
 tags:
   - geoscience_australia_landsat_collection_3
@@ -46,38 +56,43 @@ tags:
 
 # Access
 
-maps:
+access_links_maps:
   - link: https://maps.dea.ga.gov.au/#share=s-ie760Ut5KtelVDjm4wauOTKJeg6
     name: See it on a map
 
-explorers:
+access_links_explorers:
   - link: https://explorer.dea.ga.gov.au/products/ga_ls8c_ard_3
-    name: Data explorer
+    name: null
 
-data:
+access_links_data:
   - link: https://data.dea.ga.gov.au/?prefix=baseline/ga_ls8c_ard_3/
     name: Access the data on AWS
   - link: https://thredds.nci.org.au/thredds/catalog/xu18/ga_ls8c_ard_3/catalog.html
     name: Access the data on NCI
 
-code_examples:
+access_links_code_examples:
   - link: /notebooks/DEA_products/DEA_Landsat_Surface_Reflectance/
-    name: Code examples
+    name: null
 
-web_services: null
+access_links_web_services: null
 
-custom: null
+access_links_custom: null
 
 # History
 
-old_versions: null
+previous_versions: null
+
+# SEO
+
+meta_description: null
 
 # Settings
 
 enable_overview: true
-enable_access: true
-enable_details: true
+enable_description: true
 enable_quality: true
+enable_specifications: true
+enable_access: true
 enable_history: true
 enable_faqs: true
 enable_credits: true

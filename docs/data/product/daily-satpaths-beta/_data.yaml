@@ -1,41 +1,51 @@
-# See the Product metadata fields documentation:
-# https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/product_metadata_fields.html
+# See the Product metadata fields documentation: https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/product_metadata_fields.html
 
-# Overview
+# Specifications
 
-title: Daily SatPaths
-long_title: Daily Satellite Paths predictor
+short_name: Daily SatPaths
+full_technical_name: Daily Satellite Paths predictor
 header_image: /_files/cmi/SatPaths_image.png
-version: 1.0.3-beta
+
+version_number: 1.0.3-beta
 is_latest_version: true
 latest_version_link: null
 is_provisional: true
-product_type: Data service
+
+lineage_type: Data service
 spatial_data_type: null
-time_span:
-  start: null
-  end: null
-update_frequency: Daily
-next_update: null
+
+spatial_coverage: null
+temporal_coverage_start: null
+temporal_coverage_end: null
+temporal_coverage_custom: null
+
+data_update_frequency: DAILY
+data_update_activity: ONGOING
+is_currency_reported: false
+
+resolution: null
+coordinate_reference_system: null
+
 product_ids: null
 
 parent_products:
-  name: null
-  link: null
-collection:
-  name: null
-  link: null
-doi: 10.26186/146512
-ecat: null
-nci: null
-licence:
-  name: Creative Commons Attribution 4.0 International Licence
-  link: https://creativecommons.org/licenses/by/4.0/
+  - name: null
+    link: null
 
-citations:
-  data_citation: "Geoscience Australia, 2022. Geoscience Australia's predictive schedules for public good satellites over Australia. Geoscience Australia, Canberra. https://dx.doi.org/10.26186/146512"
-  paper_citation: null
-custom_citations: null
+collections:
+  - name: null
+    link: null
+
+doi: 10.26186/146512
+ecat_id: null
+
+licence_name: Creative Commons Attribution 4.0 International Licence
+licence_link: https://creativecommons.org/licenses/by/4.0/
+
+citation_data: "Geoscience Australia, 2022. Geoscience Australia's predictive schedules for public good satellites over Australia. Geoscience Australia, Canberra. https://dx.doi.org/10.26186/146512"
+citation_paper: null
+
+citations_custom: null
 
 tags:
   - earth_observation
@@ -44,21 +54,21 @@ tags:
 
 # Access
 
-maps: null
+access_links_maps: null
 
-explorers: null
+access_links_explorers: null
 
-data: null
+access_links_data: null
 
-code_examples: null
+access_links_code_examples: null
 
-web_services: null
+access_links_web_services: null
 
-custom:
+access_links_custom:
   - icon: map-location-dot
     link: https://satpath.dea.ga.gov.au/
     label: Get via web interface
-    name: See it on a map
+    name: null
     description: null
     class: null
 
@@ -71,14 +81,19 @@ custom:
 
 # History
 
-old_versions: null
+previous_versions: null
+
+# SEO
+
+meta_description: null
 
 # Settings
 
 enable_overview: true
-enable_access: true
-enable_details: true
+enable_description: true
 enable_quality: true
+enable_specifications: true
+enable_access: true
 enable_history: true
 enable_faqs: false
 enable_credits: true

@@ -1,42 +1,52 @@
-# See the Product metadata fields documentation:
-# https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/product_metadata_fields.html
+# See the Product metadata fields documentation: https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/product_metadata_fields.html
 
-# Overview
+# Specifications
 
-title: DEA Burnt Area Characteristic Layers Sentinel-2 Near Real-Time
-long_title: Geoscience Australia Burnt Area Characteristic Layers Sentinel-2 Near Real-Time
+short_name: DEA Burnt Area Characteristic Layers Sentinel-2 Near Real-Time
+full_technical_name: Geoscience Australia Burnt Area Characteristic Layers Sentinel-2 Near Real-Time
 header_image: /_files/cmi/ga_s2_ba_provisional_3_interim_thumbnail.jpg
-version: 1.0.0
+
+version_number: 1.0.0
 is_latest_version: true
 latest_version_link: null
 is_provisional: true
-product_type: Derivative
-spatial_data_type: Raster
-time_span:
-  start: 1 Jul 2021
-  end: 29 Aug 2023
-update_frequency: Daily
-next_update: No updates planned
+
+lineage_type: DERIVATIVE
+spatial_data_type: RASTER
+
+spatial_coverage: null
+temporal_coverage_start: 1 Jul 2021
+temporal_coverage_end: 29 Aug 2023
+temporal_coverage_custom: null
+
+data_update_frequency: DAILY
+data_update_activity: NO_UPDATES
+is_currency_reported: false
+
+resolution: 10 m
+coordinate_reference_system: null
+
 product_ids:
   - ga_s2_ba_provisional_3
 
 parent_products:
-  name: Sentinel 2A and 2B NBART and Observational Attributes
-  link: /data/category/dea-surface-reflectance/
-collection:
-  name: Geoscience Australia Sentinel-2 Collection 3
-  link: null
-doi: 10.26186/146449
-ecat: "146449"
-nci: null
-licence:
-  name: Creative Commons Attribution 4.0 International Licence
-  link: https://creativecommons.org/licenses/by/4.0/
+  - name: Sentinel 2A and 2B NBART and Observational Attributes
+    link: /data/category/dea-surface-reflectance/
 
-citations:
-  data_citation: "Geoscience Australia, 2022. DEA Burnt Area Characteristic Layers (Sentinel 2 Near Real-Time, Provisional). Geoscience Australia, Canberra. https://dx.doi.org/10.26186/146449"
-  paper_citation: null
-custom_citations: null
+collections:
+  - name: Geoscience Australia Sentinel-2 Collection 3
+    link: /search/?q=Geoscience+Australia+Sentinel-2+Collection+3
+
+doi: 10.26186/146449
+ecat_id: "146449"
+
+licence_name: Creative Commons Attribution 4.0 International Licence
+licence_link: https://creativecommons.org/licenses/by/4.0/
+
+citation_data: "Geoscience Australia, 2022. DEA Burnt Area Characteristic Layers (Sentinel 2 Near Real-Time, Provisional). Geoscience Australia, Canberra. https://dx.doi.org/10.26186/146449"
+citation_paper: null
+
+citations_custom: null
 
 tags:
   - geoscience_australia_sentinel_2_collection_3
@@ -45,36 +55,41 @@ tags:
 
 # Access
 
-maps: null
+access_links_maps: null
 
-explorers:
+access_links_explorers:
   - link: https://explorer.dea.ga.gov.au/products/ga_s2_ba_provisional_3
-    name: Data explorer
+    name: null
 
-data:
+access_links_data:
   - link: https://data.dea.ga.gov.au/?prefix=derivative/ga_s2_ba_provisional_3/1-6-0/
     name: Access the data on AWS
 
-code_examples: null
+access_links_code_examples: null
 
-web_services: null
+access_links_web_services: null
 
 # History
 
-old_versions:
-  - version: 2.0.0
+previous_versions:
+  - version_number: 2.0.0
     title: DEA Burnt Area (Landsat, 2010 and 2015)
     slug: dea-burnt-area-landsat-2010-and-2015-2.0.0
-  - version: 1.0.0
+  - version_number: 1.0.0
     title: DEA Burnt Area Vectors Sentinel-2 Near Real-Time
     slug: dea-burnt-area-vectors-sentinel-2-near-real-time-1.0.0
+
+# SEO
+
+meta_description: null
 
 # Settings
 
 enable_overview: true
-enable_access: true
-enable_details: true
+enable_description: true
 enable_quality: true
+enable_specifications: true
+enable_access: true
 enable_history: true
 enable_faqs: false
 enable_credits: true

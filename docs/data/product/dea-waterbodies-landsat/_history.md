@@ -16,7 +16,7 @@ New supporting data has been added to DEA Maps and web services for the most rec
 * The date that polygons of waterbody boundaries were created.
 * The dataset metadata link.  
 
-Specifications of supporting data are now [available](./?tab=details#data-specification-tables). Data will be uploaded as soon as it is received and processed. There is an approximate 2-week latency in processing of the satellite imagery to an Analysis Ready Data (ARD) standard, from which the water information is then produced. 
+Specifications of supporting data are now [available](./?tab=description#data-specification-tables). Data will be uploaded as soon as it is received and processed. There is an approximate 2-week latency in processing of the satellite imagery to an Analysis Ready Data (ARD) standard, from which the water information is then produced. 
 
 #### Polygon named with 'v3'
 
@@ -24,7 +24,7 @@ DEA Waterbodies 3.0.0 polygon names are the same as those in v2.0.0 but the vers
 
 #### Other changes
 
-* There have been additions to the shapefile specification to support data delivery. Data specification tables have been [added](./?tab=details#data-specification-tables). 
+* There have been additions to the shapefile specification to support data delivery. Data specification tables have been [added](./?tab=description#data-specification-tables). 
 * Our production pipeline has been upgraded for enhanced reliability. 
 
 #### Decommissioning the previous version
@@ -33,11 +33,11 @@ DEA Waterbodies 2.0.0 will be decommissioned in the coming months after thorough
 
 ### Version 2.0.0
 
-[DEA Waterbodies 2.0.0](/data/old-version/dea-waterbodies-landsat-2.0.0/) represents a reprocessing of DEA Waterbodies version 1 on [DEA Collection 3 Water Observations](/data/product/dea-water-observations-landsat), as well as a few incremental improvements. 
+[DEA Waterbodies 2.0.0](/data/version-history/dea-waterbodies-landsat-2.0.0/) represents a reprocessing of DEA Waterbodies version 1 on [DEA Collection 3 Water Observations](/data/product/dea-water-observations-landsat), as well as a few incremental improvements. 
 
 #### Key differences
 
-The key difference between DEA Waterbodies v1 and v2 is the underlying satellite imagery used to derive the polygons, and to generate the accompanying CSVs. DEA Waterbodies v1 was produced on the [DEA Water Observations from Space](/data/product/dea-water-observations-landsat) product, which was derived from [DEA Surface Reflectance NBART (Landsat) collection 2](/data/old-version/dea-water-observations-landsat-2.1.5/) data. This dataset had a resolution of 25 m. 
+The key difference between DEA Waterbodies v1 and v2 is the underlying satellite imagery used to derive the polygons, and to generate the accompanying CSVs. DEA Waterbodies v1 was produced on the [DEA Water Observations from Space](/data/product/dea-water-observations-landsat) product, which was derived from [DEA Surface Reflectance NBART (Landsat) collection 2](/data/version-history/dea-water-observations-landsat-2.1.5/) data. This dataset had a resolution of 25 m. 
 
 DEA Waterbodies v2 has been reprocessed on [DEA Water Observations](/data/product/dea-water-observations-landsat/) which has been run on collection 3 data, with a pixel resolution of 30 m. The reprocessing of DEA datasets to 30 m resolution required that DEA Waterbodies polygon generation be re-run to re-map each waterbody using the new pixel resolution.
 

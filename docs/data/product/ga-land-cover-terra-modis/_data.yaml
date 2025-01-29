@@ -1,42 +1,52 @@
-# See the Product metadata fields documentation:
-# https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/product_metadata_fields.html
+# See the Product metadata fields documentation: https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/product_metadata_fields.html
 
-# Overview
+# Specifications
 
-title: Geoscience Australia Land Cover (Terra MODIS)
-long_title: "Dynamic Land Cover Dataset 250m 2.1.0 "
+short_name: Geoscience Australia Land Cover (Terra MODIS)
+full_technical_name: "Dynamic Land Cover Dataset 250m 2.1.0 "
 header_image: /_files/cmi/dlcd.png
-version: 2.1.0
+
+version_number: 2.1.0
 is_latest_version: true
 latest_version_link: null
 is_provisional: false
-product_type: Derivative
-spatial_data_type: Raster
-time_span:
-  start: 2002
-  end: 2015
-update_frequency: Every 2 years
-next_update: No updates planned
+
+lineage_type: DERIVATIVE
+spatial_data_type: RASTER
+
+spatial_coverage: null
+temporal_coverage_start: 2002
+temporal_coverage_end: 2015
+temporal_coverage_custom: null
+
+data_update_frequency: 2_YEARS
+data_update_activity: NO_UPDATES
+is_currency_reported: false
+
+resolution: 250 m
+coordinate_reference_system: null
+
 product_ids:
   - ga_ter_m_dlcd_ann
 
 parent_products:
-  name: null
-  link: null
-collection:
-  name: null
-  link: null
-doi: null
-ecat: "83868"
-nci: null
-licence:
-  name: Creative Commons Attribution 4.0 International Licence
-  link: https://creativecommons.org/licenses/by/4.0/
+  - name: null
+    link: null
 
-citations:
-  data_citation: "Lymburner, L., Tan, P., McIntyre, A., Thankappan, M., Sixsmith, J. 2015. Dynamic Land Cover Dataset Version 2.1. Geoscience Australia, Canberra. https://pid.geoscience.gov.au/dataset/ga/83868"
-  paper_citation: null
-custom_citations: null
+collections:
+  - name: null
+    link: null
+
+doi: null
+ecat_id: "83868"
+
+licence_name: Creative Commons Attribution 4.0 International Licence
+licence_link: https://creativecommons.org/licenses/by/4.0/
+
+citation_data: "Lymburner, L., Tan, P., McIntyre, A., Thankappan, M., Sixsmith, J. 2015. Dynamic Land Cover Dataset Version 2.1. Geoscience Australia, Canberra. https://pid.geoscience.gov.au/dataset/ga/83868"
+citation_paper: null
+
+citations_custom: null
 
 tags:
   - drought
@@ -47,32 +57,37 @@ tags:
 
 # Access
 
-maps: null
+access_links_maps: null
 
-explorers: null
+access_links_explorers: null
 
-data:
+access_links_data:
   - link: https://thredds.nci.org.au/thredds/catalog/fk4/dlcd/catalog.html
     name: Access the data on NCI
   - link: https://pid.geoscience.gov.au/dataset/ga/83868
     name: Download a zipped .tif
 
-code_examples: null
+access_links_code_examples: null
 
-web_services:
+access_links_web_services:
   - link: http://gaservices.ga.gov.au/site_1/services/Land_Cover_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS
     name: Web Map Service (WMS)
 
 # History
 
-old_versions: null
+previous_versions: null
+
+# SEO
+
+meta_description: null
 
 # Settings
 
 enable_overview: true
-enable_access: true
-enable_details: true
+enable_description: true
 enable_quality: true
+enable_specifications: true
+enable_access: true
 enable_history: true
 enable_faqs: false
 enable_credits: true

@@ -1,10 +1,18 @@
 title: Operational reports
 description: We provide transparent reports to allow stakeholders to assess the performance and quality of our products.
 
+meta_description: null
+
 reports:
+  - name: Digital Earth Australia Status
+    link: https://status.dea.ga.gov.au/
+    description: Monitor the status of DEA services in real time. Check if a service is currently online and view historical uptime data.
+    image: /_files/operational-reports/digital-earth-australia-status.png
+    custom_link_text: View the Digital Earth Australia Status site
+
   - name: DEA Published Product Currency Report
     link: https://mgmt.sandbox.dea.ga.gov.au/public-dashboards/d22241dbfca54b1fa9f73938ef26e645?orgId=1
     description: Currency is a measure of how consistently DEA's data products have been published through DEA in line with the stated update frequency on or before the scheduled publish date. This report tracks the Currency of our data products and if they are on time.
-    image: /_files/operational-reports/DEA_Published_Product_Currency_Report.png
+    image: /_files/operational-reports/dea-published-product-currency-report.png
     custom_link_text: View the DEA Published Product Currency Report
 
