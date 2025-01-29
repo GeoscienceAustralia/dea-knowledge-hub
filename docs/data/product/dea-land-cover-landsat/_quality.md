@@ -83,6 +83,11 @@ A validation assessment has been undertaken for both the collection 2 (C2) and 3
 * Significant increase in Landsat 7 stripe artefacts, due to  Landsat 8 scenes being filtered out by bad geometric quality assessments
 * Increase in no data surrounding water bodies, and incorrect classification of water persistence over the ocean
 
+| *a)* ![GIF 1 Improvement artificial class Degradation water persistance, level 4](/docs/_files/cmi/2.degr_ocean_water_persistance-degr_stripes-impr_urban.gif) | *b)* ![GIF 2 Improvement woody cover, level 4](/docs/_files/cmi/10.improvement-woody_cover_pine_plantation-zoomed-in-level4.gif) | ![Legend LC level ](/docs/_files/cmi/legend_LC_level4.png) | 
+|----------------------------------|----------------------------------|----------------------------------|
+| *c)* ![GIF 3 Degradation stripes, level 4](/docs/_files/cmi/7.degradation-stripes-level4.gif) | *d)* ![GIF 4 Degradation missign pixels around waterbodies, level 3](/docs/_files/cmi/9.degradation-missing_pixels_waterbodies-level_3.gif) | *e)* ![GIF 5 Degradation false positives artificial, level 3](/docs/_files/cmi/1.degradation-urban_false_positives-level3.gif) | 
+
+Figure 1. Animations showing examples of differences between Collection 3 and Collection 2 Land Cover products. a) illustrates both improvements and degradations in Collection 3: the greater Melbourne area is more accurately classified as artificial surface; however, stripe artifacts are present, along with misclassified water persistence in the ocean. b) displays a pine plantation near Kinglake West (VIC), which Collection 3 correctly classifies as > 65% woody cover. c) showcases the limitations of Collection 3 concerning the stripe artifacts originating from Landsat 7 in southeastern South Australia. d) highlights the increase in pixels with missing values around water bodies in Collection 3 at Lake Eildon in Victoria. e) shows Portland (VIC) and the surrounding area, where an improvement in the artificial surface classification in Collection 3 can be observed in the town to the east, although false positives can also be seen on the sandy terrain in the western part of the displayed area.
 
 ### Collection 2 Validation
 
