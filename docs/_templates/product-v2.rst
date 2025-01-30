@@ -10,7 +10,7 @@
 {% set max_page_title_length = 200 %}
 
 {% set no_data_terms = {
-   "dash": "\-",
+   "dash": "\-"
 } %}
 
 {% set access_labels = {
@@ -63,10 +63,14 @@
 {# Macros #}
 
 {% macro format_version_number(version_number) -%} {# If the version number starts with a number, add a 'v' to it e.g. "v1.0.0". #}
-{%- if True -%}
+{%- if version_number -%}
+{%- if (version_number|string)[0].isdigit() -%}
 {{ "v" ~ version_number }}
 {%- else -%}
 {{ version_number }}
+{%- endif -%}
+{%- else -%}
+{{ no_data_terms.dash }}
 {%- endif -%}
 {%- endmacro %}
 
