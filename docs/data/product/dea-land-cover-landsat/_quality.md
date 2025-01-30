@@ -83,18 +83,25 @@ A validation assessment has been undertaken for both the collection 2 (C2) and 3
 * Significant increase in Landsat 7 stripe artefacts, due to  Landsat 8 scenes being filtered out by bad geometric quality assessments
 * Increase in no data surrounding water bodies, and incorrect classification of water persistence over the ocean
 
-|   |   |   |
-|---|---|---|
-| a) ![gif 1 improvement artificial class degradation water persistence, level 4](/_files/cmi/2.degr_ocean_water_persistance-degr_stripes-impr_urban.gif) | b) ![gif 2 improvement woody cover, level 4](/_files/cmi/10.improvement-woody_cover_pine_plantation-zoomed-in-level4.gif) | c) ![gif 3 degradation stripes, level 4](/_files/cmi/7.degradation-stripes-level4.gif) |
+<table>
+  <tr>
+    <td>a) <img src="/_files/cmi/2.degr_ocean_water_persistance-degr_stripes-impr_urban.gif" alt="GIF 1 Improvement artificial class Degradation water persistence, level 4"></td>
+    <td>b) <img src="/_files/cmi/10.improvement-woody_cover_pine_plantation-zoomed-in-level4.gif" alt="GIF 2 Improvement woody cover, level 4"></td>
+    <td>c) <img src="/_files/cmi/7.degradation-stripes-level4.gif" alt="GIF 3 Degradation stripes, level 4"></td>
+  </tr>
+</table>
 
 ![legend level 4](/_files/cmi/legend_lc_level4_horizontal.png)
 
 Figure 1. Animations showing examples of differences in level 4 classification between Collection 3 and Collection 2. *a)* illustrates both improvements and degradations in Collection 3: the greater Melbourne area is more accurately classified as artificial surface; however, stripe artifacts are present, along with misclassified water persistence in the ocean. *b)* displays a pine plantation near Kinglake West (VIC), which Collection 3 correctly classifies as > 65% woody cover. *c)* showcases the limitations of Collection 3 concerning the stripe artifacts originating from Landsat 7, using an area in southeastern South Australia as an example. 
 
-
-|   |   |   |
-|---|---|---|
-| a) ![gif 5 degradation false positives artificial, level 3](/_files/cmi/1.degradation-urban_false_positives-level3.gif) | b) ![gif 6 improvement introduction of woody cultivated correctly classifies cultivated instead of natural, level 3](/_files/cmi/improvement_introduction_cultivated_woody-level3.gif) | c) ![gif 4 degradation missing pixels around waterbodies, level 3](/_files/cmi/9.degradation-missing_pixels_waterbodies-level_3.gif) |
+<table>
+  <tr>
+    <td>a) <img src="/_files/cmi/1.degradation-urban_false_positives-level3.gif" alt="GIF 5 Degradation false positives artificial, level 3"></td>
+    <td>b) <img src="/_files/cmi/improvement_introduction_cultivated_woody-level3.gif" alt="GIF 6 Improvement Introduction of woody cultivated correctly classifies cultivated instead of natural, level 3"></td>
+    <td>c) <img src="/_files/cmi/9.degradation-missing_pixels_waterbodies-level_3.gif" alt="GIF 4 Degradation missing pixels around waterbodies, level 3"></td>
+  </tr>
+</table>
 
 ![legend level 3](/_files/cmi/legend_lc_level3_horizontal.png)
 
