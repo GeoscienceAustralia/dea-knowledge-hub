@@ -9,8 +9,10 @@ version_number: 2.0.0
 is_latest_version: true
 latest_version_link: null
 is_provisional: false
+
 lineage_type: DERIVATIVE
 spatial_data_type: RASTER
+
 spatial_coverage: null
 temporal_coverage_start: 1988
 temporal_coverage_end: Present
@@ -27,30 +29,30 @@ product_ids:
   - ga_ls_landcover_class_cyear_3
 
 parent_products:
-  name: Geoscience Australia Landsat Water Observations Collection 3, Geoscience Australia Landsat Water Observation Statistics Collection 3, Geoscience Australia Landsat Fractional Cover Collection 3, Geoscience Australia Landsat Fractional Cover Percentiles Collection 3, Geoscience Australia Tasseled Cap Percentiles Collection 3, Geoscience Australia Mangrove Canopy Cover Collection 3, National Intertidal Digital Elevation Model 25m 1.0.0, Geoscience Australia Shuttle Radar Topography Mission 1 second DEM version 1.0
-  link: null
-  # name: Geoscience Australia Landsat Water Observations Collection 3
-  # link: /data/category/dea-water-observations-landsat/
-  # name: Geoscience Australia Landsat Water Observation Statistics Collection 3
-  # link: /data/category/dea-water-observations-statistics-landsat/
-  # name: Geoscience Australia Landsat Fractional Cover Collection 3
-  # link: /data/category/dea-fractional-cover-landsat/
-  # name: Geoscience Australia Landsat Fractional Cover Percentiles Collection 3
-  # link: /data/category/dea-fractional-cover-percentiles-landsat/
-  # name: Geoscience Australia Tasseled Cap Percentiles Collection 3
-  # link: /data/category/dea-tasseled-cap-percentiles-landsat/
-  # name: Geoscience Australia Mangrove Canopy Cover Collection 3
-  # link: /data/category/dea-mangroves/
-  # name: National Intertidal Digital Elevation Model 25m 1.0.0
-  # link: /data/category/dea-intertidal-elevation-landsat-1.0.0/
-  # name: Geoscience Australia Shuttle Radar Topography Mission 1 second DEM version 1.0
-  # link: /data/category/ga-srtm-1-second-dem/
-  # name: Landsat 5, 7, 8, and 9 NBART and Observational Attributes
-  # link: /data/category/dea-surface-reflectance/
+  - name: Geoscience Australia Landsat Water Observations Collection 3
+    link: /data/category/dea-water-observations-landsat/
+  - name: Geoscience Australia Landsat Water Observation Statistics Collection 3
+    link: /data/category/dea-water-observations-statistics-landsat/
+  - name: Geoscience Australia Landsat Fractional Cover Collection 3
+    link: /data/category/dea-fractional-cover-landsat/
+  - name: Geoscience Australia Landsat Fractional Cover Percentiles Collection 3
+    link: /data/category/dea-fractional-cover-percentiles-landsat/
+  - name: Geoscience Australia Tasseled Cap Percentiles Collection 3
+    link: /data/category/dea-tasseled-cap-percentiles-landsat/
+  - name: Geoscience Australia Mangrove Canopy Cover Collection 3
+    link: /data/category/dea-mangroves/
+  - name: National Intertidal Digital Elevation Model 25m 1.0.0
+    link: /data/category/dea-intertidal-elevation-landsat-1.0.0/
+  - name: Geoscience Australia Shuttle Radar Topography Mission 1 second DEM version 1.0
+    link: /data/category/ga-srtm-1-second-dem/
+  - name: Landsat 5, 7, 8, and 9 NBART and Observational Attributes
+    link: /data/category/dea-surface-reflectance/
+  # - name: Geoscience Australia Landsat Water Observations Collection 3, Geoscience Australia Landsat Water Observation Statistics Collection 3, Geoscience Australia Landsat Fractional Cover Collection 3, Geoscience Australia Landsat Fractional Cover Percentiles Collection 3, Geoscience Australia Tasseled Cap Percentiles Collection 3, Geoscience Australia Mangrove Canopy Cover Collection 3, National Intertidal Digital Elevation Model 25m 1.0.0, Geoscience Australia Shuttle Radar Topography Mission 1 second DEM version 1.0
+  #   link: null
 
-collection:
-  name: Geoscience Australia Landsat Collection 3
-  link: /search/?q=Geoscience+Australia+Landsat+Collection+3
+collections:
+  - name: Geoscience Australia Landsat Collection 3
+    link: /search/?q=Geoscience+Australia+Landsat+Collection+3
 
 doi: 10.26186/146090
 ecat_id: "146090"
