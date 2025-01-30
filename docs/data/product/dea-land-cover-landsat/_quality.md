@@ -67,9 +67,9 @@ An additional limitation of the Landsat series is the availability of data due t
 
 The result of the availability of the satellites is that the most consistent data availability occurs when two satellites are in operation (most of the 2003 to present period). The least data availability is in 2011 – 2012 when only Landsat 7 was available with data containing the SLC-Off striping issue. The overall data availability for the Landsat satellites is shown in Table 5. The datasets used in this analysis are shown in Table 6. 
 
-![table detailing availability of different Landsat satellites since 1986 and any known issues.](/_files/cmi/eo-limitations-table.PNG)
+![table detailing availability of different Landsat satellites since 1986 and any known issues.](/_files/land_cover/eo-limitations-table.PNG)
 
-![datasets within DEA used to provide essential descriptor information](/_files/cmi/DEA-datasets-used.PNG)
+![datasets within DEA used to provide essential descriptor information](/_files/land_cover/DEA-datasets-used.PNG)
 
 ## Accuracy
 
@@ -85,25 +85,25 @@ A validation assessment has been undertaken for both the collection 2 (C2) and 3
 
 <table>
   <tr>
-    <td>a) <img src="/_files/cmi/2.degr_ocean_water_persistance-degr_stripes-impr_urban.gif" alt="GIF 1 Improvement artificial class Degradation water persistence, level 4"></td>
-    <td>b) <img src="/_files/cmi/10.improvement-woody_cover_pine_plantation-zoomed-in-level4.gif" alt="GIF 2 Improvement woody cover, level 4"></td>
-    <td>c) <img src="/_files/cmi/7.degradation-stripes-level4.gif" alt="GIF 3 Degradation stripes, level 4"></td>
+    <td>a) <img src="/_files/land_cover/2.degr_ocean_water_persistance-degr_stripes-impr_urban.gif" alt="GIF 1 Improvement artificial class Degradation water persistence, level 4"></td>
+    <td>b) <img src="/_files/land_cover/10.improvement-woody_cover_pine_plantation-zoomed-in-level4.gif" alt="GIF 2 Improvement woody cover, level 4"></td>
+    <td>c) <img src="/_files/land_cover/7.degradation-stripes-level4.gif" alt="GIF 3 Degradation stripes, level 4"></td>
   </tr>
 </table>
 
-![legend level 4](/_files/cmi/legend_lc_level4_horizontal.png)
+![legend level 4](/_files/land_cover/legend_lc_level4_horizontal.png)
 
 Figure 1. Animations showing examples of differences in level 4 classification between Collection 3 and Collection 2. *a)* illustrates both improvements and degradations in Collection 3: the greater Melbourne area is more accurately classified as artificial surface; however, stripe artifacts are present, along with misclassified water persistence in the ocean. *b)* displays a pine plantation near Kinglake West (VIC), which Collection 3 correctly classifies as > 65% woody cover. *c)* showcases the limitations of Collection 3 concerning the stripe artifacts originating from Landsat 7, using an area in southeastern South Australia as an example. 
 
 <table>
   <tr>
-    <td>a) <img src="/_files/cmi/1.degradation-urban_false_positives-level3.gif" alt="GIF 5 Degradation false positives artificial, level 3"></td>
-    <td>b) <img src="/_files/cmi/improvement_introduction_cultivated_woody-level3.gif" alt="GIF 6 Improvement Introduction of woody cultivated correctly classifies cultivated instead of natural, level 3"></td>
-    <td>c) <img src="/_files/cmi/9.degradation-missing_pixels_waterbodies-level_3.gif" alt="GIF 4 Degradation missing pixels around waterbodies, level 3"></td>
+    <td>a) <img src="/_files/land_cover/1.degradation-urban_false_positives-level3.gif" alt="GIF 5 Degradation false positives artificial, level 3"></td>
+    <td>b) <img src="/_files/land_cover/improvement_introduction_cultivated_woody-level3.gif" alt="GIF 6 Improvement Introduction of woody cultivated correctly classifies cultivated instead of natural, level 3"></td>
+    <td>c) <img src="/_files/land_cover/9.degradation-missing_pixels_waterbodies-level_3.gif" alt="GIF 4 Degradation missing pixels around waterbodies, level 3"></td>
   </tr>
 </table>
 
-![legend level 3](/_files/cmi/legend_lc_level3_horizontal.png)
+![legend level 3](/_files/land_cover/legend_lc_level3_horizontal.png)
 
 Figure 2. Animations showing examples of differences in level 3 classification between Collection 3 and Collection 2. *a)* shows Portland (VIC) and the surrounding area, where an improvement in the artificial surface classification in Collection 3 can be observed in the town to the east, although false positives can also be seen on the sandy terrain in the western part of the displayed area. *b)* displays how Collection 3 improves  the identification of farming land by introducing a new 'woody cultivated' subclass at level 4 (while the accuracy of this subclass can be low in some areas, it effectively distinguishes cultivated land from natural vegetation) *c)*  highlights the increase in pixels with missing values around water bodies in Collection 3 at Lake Eildon in Victoria. 
 
@@ -114,13 +114,13 @@ The product was validated using 6000 points spatially distributed over Australia
 
 Table 2 contains the overall accuracy for all classes. The term ‘support’ refers to the number of validation points used in the calculation of that accuracy value. 
 
-![Overall accuracy of DEA Land Cover is 80%. 2010 accuracy is 82%, 2015 accuracy is 78%.](/_files/cmi/overall-accuracy_0.PNG)
+![Overall accuracy of DEA Land Cover is 80%. 2010 accuracy is 82%, 2015 accuracy is 78%.](/_files/land_cover/overall-accuracy_0.PNG)
 
 Table 3 contains per-class accuracy information. “Precision” refers to the ability of a classification model to return only relevant instances. “Recall” refers to the ability to identify all relevant instances. The “F1 score” is a combination of precision and recall and an overall measure of accuracy. Classes such as artificial surfaces, natural aquatic vegetation and water had high accuracies. Classifying cultivated terrestrial vegetation and bare surfaces was challenging and accuracies were the lowest of the six classes presented here.
 
-![Table showing accuracy per class, including precision, recall, F1 score and support values per class. ](/_files/cmi/per-class-accuracy.PNG)
+![Table showing accuracy per class, including precision, recall, F1 score and support values per class. ](/_files/land_cover/per-class-accuracy.PNG)
 
-![table showing the agreement between assessors.](/_files/cmi/inter-assessor-agreement.PNG)
+![table showing the agreement between assessors.](/_files/land_cover/inter-assessor-agreement.PNG)
 
 ### Collection 3 Validation
 

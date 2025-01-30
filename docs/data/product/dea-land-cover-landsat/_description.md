@@ -43,8 +43,8 @@ Annual Land Cover information can be used in a number of ways to support the mon
 
 |||
 |---|---|
-| *a)* ![Timeseries Canberra urban expansion](/docs/_files/cmi/North_ACT_urban_expansion_timeseries_lc_lvl3_gmad.gif) | *b)* ![Timeseries Mt Beggary bushfire](/docs/_files/cmi/mt_beggary_bushfire_timeseries_lc_lvl4_gmad.gif) |
-| *c)* ![Timeseries inlet changes](/docs/_files/cmi/shallow_inlet_timeseries_lc_lvl3_gmad.gif) | *d)* ![Timeseries lake Amadeus](/docs/_files/cmi/lake_amadeus_timeseries_lc_lvl4_gmad.gif) |
+| *a)* ![Timeseries Canberra urban expansion](/_files/land_cover/North_ACT_urban_expansion_timeseries_lc_lvl3_gmad.gif) | *b)* ![Timeseries Mt Beggary bushfire](/_files/land_cover/mt_beggary_bushfire_timeseries_lc_lvl4_gmad.gif) |
+| *c)* ![Timeseries inlet changes](/_files/land_cover/shallow_inlet_timeseries_lc_lvl3_gmad.gif) | *d)* ![Timeseries lake Amadeus](/_files/land_cover/lake_amadeus_timeseries_lc_lvl4_gmad.gif) |
 
 *Figure 1 - Examples of phenomena that can be tracked with the land cover product: a) Urban expansion of the northern Australian Capital Territory; b) Vegetation change and recovery following the Mt Beggary bushfire; c) Morphological changes of Shallow Inlet in Victoria; d) Annual variability of Lake Amadeus, a salt lake in the Northern Territory*
 
@@ -307,17 +307,17 @@ The bare gradation describes the percentage of bare surface in areas which conta
 
 The FAO LCCS taxonomy (Figure 2) is hierarchical and consists of a dichotomous phase (Level 1 to 3) and a modular phase (referred to as Level 4). In Level 1, vegetated and non-vegetated areas are first separated. These are then divided into terrestrial or aquatic categories to form Level 2. In the vegetated terrestrial category, cultivated and natural (including semi-natural) areas are differentiated. The non-vegetated category is further divided into artificial surfaces, and natural surfaces incorporating low vegetation cover and bare areas. Including the non-vegetated aquatic class (from Level 2), this results in the creation of six base land cover categories.
 
-![Diagram showing the portion of the LCCS taxonomy which is implemented in DEA Land Cover v1.0.0](/_files/cmi/cut_back_0.PNG)
+![Diagram showing the portion of the LCCS taxonomy which is implemented in DEA Land Cover v1.0.0](/_files/land_cover/cut_back_0.PNG)
 
 *Figure 2 - Diagrammatic representation of the implementation of the FAO LCCS (Version 2) classification within the DEA Land Cover product version 2.0.*
 
 At Level 4, vegetated areas are further classified using information that differentiates lifeform (woody and herbaceous) and quantifies vegetation cover percent and water seasonality (for Natural Aquatic Vegetation). Natural Surface areas have information added (bare gradation) which describes the level of remaining vegetation present (sparse, very sparse or not detectable). Non-vegetated aquatic areas (Water) are further described on the basis of their persistence (hydroperiod) over a calendar year. The FAO LCCS differentiates water in different physical states (liquid or frozen; ice or snow), however only liquid water is included in the current release.
 
-![Diagram showing the data products which go into producing the level 3 classification.](/_files/cmi/level3-dataflow.PNG)
+![Diagram showing the data products which go into producing the level 3 classification.](/_files/land_cover/level3-dataflow.PNG)
 
 *Figure 3 - Input data products used to produce Level 3 classification*
 
-![Diagram showing input data products used to produce the Level 4 classification](/_files/cmi/level4-dataflow.PNG)
+![Diagram showing input data products used to produce the Level 4 classification](/_files/land_cover/level4-dataflow.PNG)
 
 *Figure 4 - Input data products used to produce Level 4 classification*
 
