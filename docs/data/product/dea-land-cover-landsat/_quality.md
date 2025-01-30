@@ -83,13 +83,33 @@ A validation assessment has been undertaken for both the collection 2 (C2) and 3
 * Significant increase in Landsat 7 stripe artefacts, due to  Landsat 8 scenes being filtered out by bad geometric quality assessments
 * Increase in no data surrounding water bodies, and incorrect classification of water persistence over the ocean
 
-<table>
-  <tr>
-    <td>a) <img src="/_files/land_cover/2.degr_ocean_water_persistance-degr_stripes-impr_urban.gif" alt="GIF 1 Improvement artificial class Degradation water persistence, level 4"></td>
-    <td>b) <img src="/_files/land_cover/10.improvement-woody_cover_pine_plantation-zoomed-in-level4.gif" alt="GIF 2 Improvement woody cover, level 4"></td>
-    <td>c) <img src="/_files/land_cover/7.degradation-stripes-level4.gif" alt="GIF 3 Degradation stripes, level 4"></td>
-  </tr>
-</table>
+::::{grid} 1 2 2
+:::{grid-item}
+:class: overflow-x-hidden
+
+<figure>
+    <img src="/_files/land_cover/2.degr_ocean_water_persistance-degr_stripes-impr_urban.gif" alt="Improvement artificial class Degradation water persistence, level 4" style="max-width: 600px;">
+    <figcaption>Improvement artificial class Degradation water persistence, level 4</figcaption>
+</figure>
+:::
+:::{grid-item}
+:class: overflow-x-hidden
+
+<figure>
+    <img src="/_files/land_cover/10.improvement-woody_cover_pine_plantation-zoomed-in-level4.gif" alt="GIF 2 Improvement woody cover, level 4" style="max-width: 600px;">
+    <figcaption>GIF 2 Improvement woody cover, level 4</figcaption>
+</figure>
+:::
+:::{grid-item}
+:class: overflow-x-hidden
+
+<figure>
+    <img src=/_files/land_cover/7.degradation-stripes-level4.gif" alt="GIF 3 Degradation stripes, level 4" style="max-width: 600px;">
+    <figcaption>GIF 3 Degradation stripes, level 4</figcaption>
+</figure>
+:::
+:::{grid-item}
+:class: overflow-x-hidden
 
 ![legend level 4](/_files/land_cover/legend_lc_level4_horizontal.png)
 
