@@ -85,27 +85,27 @@ A validation assessment has been undertaken for both the collection 2 (C2) and 3
 
 <table>
   <tr>
-    <td>a) <img src="/_files/land_cover/2.degr_ocean_water_persistance-degr_stripes-impr_urban.gif" alt="GIF 1 Improvement artificial class Degradation water persistence, level 4"></td>
-    <td>b) <img src="/_files/land_cover/10.improvement-woody_cover_pine_plantation-zoomed-in-level4.gif" alt="GIF 2 Improvement woody cover, level 4"></td>
-    <td>c) <img src="/_files/land_cover/7.degradation-stripes-level4.gif" alt="GIF 3 Degradation stripes, level 4"></td>
+    <td>a) <img src="/_files/land_cover/2.degr_ocean_water_persistance-degr_stripes-impr_urban.gif" alt="Improvement artificial class Degradation water persistence, level 4"></td>
+    <td>b) <img src="/_files/land_cover/10.improvement-woody_cover_pine_plantation-zoomed-in-level4.gif" alt="Improvement woody cover, level 4"></td>
+    <td>c) <img src="/_files/land_cover/11.example_of_uncommon_cultivated_degradation_level4.gif" alt="Degradation cultivated, level 4"></td>
   </tr>
 </table>
 
 ![legend level 4](/_files/land_cover/legend_lc_level4_horizontal.png)
 
-Figure 1. Animations showing examples of differences in level 4 classification between Collection 3 and Collection 2. *a)* illustrates both improvements and degradations in Collection 3: the greater Melbourne area is more accurately classified as artificial surface; however, stripe artifacts are present, along with misclassified water persistence in the ocean. *b)* displays a pine plantation near Kinglake West (VIC), which Collection 3 correctly classifies as > 65% woody cover. *c)* showcases the limitations of Collection 3 concerning the stripe artifacts originating from Landsat 7, using an area in southeastern South Australia as an example. 
+Figure 1. Animations showing examples of differences in level 4 classification between Land Cover V2 and V1. *a)* illustrates the improved artificial surface classification in the greater Melbourne area; stripe artifacts and incorrect water persistence classification can also be observed. *b)* displays a pine plantation near Kinglake West (VIC), which V2 correctly classifies as > 65% woody cover. *c)* shows an example of degradation in cultivated area classification in the Cassowary Coast (northern QLD); while a general improvement has been observed at the continental scale, this type of degradation occurs occasionally in some locations, primarily due to the misclassification of cultivated land as herbaceous natural vegetation.
 
 <table>
   <tr>
-    <td>a) <img src="/_files/land_cover/1.degradation-urban_false_positives-level3.gif" alt="GIF 5 Degradation false positives artificial, level 3"></td>
-    <td>b) <img src="/_files/land_cover/improvement_introduction_cultivated_woody-level3.gif" alt="GIF 6 Improvement Introduction of woody cultivated correctly classifies cultivated instead of natural, level 3"></td>
-    <td>c) <img src="/_files/land_cover/9.degradation-missing_pixels_waterbodies-level_3.gif" alt="GIF 4 Degradation missing pixels around waterbodies, level 3"></td>
+    <td>a) <img src="/_files/land_cover/1.degradation-urban_false_positives-level3.gif" alt="Degradation false positives artificial, level 3"></td>
+    <td>b) <img src="/_files/land_cover/12.improvement_cultivated_level3.gif" alt="Improvement, geenrally cultivated correctly classified, level 3"></td>
+    <td>c) <img src="/_files/land_cover/9.degradation-missing_pixels_waterbodies-level_3.gif" alt="Degradation missing pixels around waterbodies, level 3"></td>
   </tr>
 </table>
 
 ![legend level 3](/_files/land_cover/legend_lc_level3_horizontal.png)
 
-Figure 2. Animations showing examples of differences in level 3 classification between Collection 3 and Collection 2. *a)* shows Portland (VIC) and the surrounding area, where an improvement in the artificial surface classification in Collection 3 can be observed in the town to the east, although false positives can also be seen on the sandy terrain in the western part of the displayed area. *b)* displays how Collection 3 improves  the identification of farming land by introducing a new 'woody cultivated' subclass at level 4 (while the accuracy of this subclass can be low in some areas, it effectively distinguishes cultivated land from natural vegetation) *c)*  highlights the increase in pixels with missing values around water bodies in Collection 3 at Lake Eildon in Victoria. 
+Figure 2. Animations showing examples of differences in level 3 classification between V2 and V1. *a)* shows Portland (VIC) and the surrounding area, where an improvement in the artificial surface classification in V2 can be observed in the town to the east, although false positives can also be seen on the sandy terrain in the western part of the displayed area. *b)* displays an area on the southern coast of WA, illustrating the improvement in the classification of cultivated areas in V2; this improvement is particularly notable at the continental scale, especially in large regional areas dedicated to agriculture and grazing. *c)* highlights the increase in pixels with missing values around water bodies in V2 at Lake Eildon in Victoria. 
 
 
 ### Collection 2 Validation
