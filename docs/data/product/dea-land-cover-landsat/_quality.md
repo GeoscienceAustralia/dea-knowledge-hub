@@ -99,7 +99,7 @@ A validation assessment has been undertaken for both the collection 2 (C2) and 3
 
 ![legend level 3](/_files/land_cover/legend_lc_level3_horizontal.png)
 
-*Figure 2.* Animations showing examples of differences in level 3 classification between V2 and V1. *a)* shows Portland (VIC) and the surrounding area, where an improvement in the artificial surface classification in V2 can be observed in the town to the east, although false positives can also be seen on the sandy terrain in the western part of the displayed area. *b)* displays an instance where V2 more accurately identifies cultivated areas in a region on the southern coast of Western Australia. *c)* highlights the increase in pixels with missing values around water bodies in V2 at Lake Eildon in Victoria. 
+*Figure 2.* Animations showing examples of differences in level 3 classification between V2 and V1. *a)* shows Portland (VIC) and the surrounding area, where an improvement in the artificial surface classification in V2 can be observed in the town to the east, although false positives can also be seen on the sandy terrain in the western part of the displayed area. *b)* displays an instance where V2 more accurately identifies cultivated areas in a region on the southern coast of Western Australia, particularly in the northern part of the image, while the eastern part appears slightly noisier. *c)* highlights the increase in pixels with missing values around water bodies in V2 at Lake Eildon in Victoria. 
 
 
 ### Collection 2 Validation
