@@ -83,40 +83,34 @@ A validation assessment has been undertaken for both the collection 2 (C2) and 3
 * Significant increase in Landsat 7 stripe artefacts, due to  Landsat 8 scenes being filtered out by bad geometric quality assessments
 * Increase in no data surrounding water bodies, and incorrect classification of water persistence over the ocean
 
-<table>
-  <tr>
-    <td>a) <img src="/_files/land_cover/2.degr_ocean_water_persistance-degr_stripes-impr_urban.gif" alt="Improvement artificial class Degradation water persistence, level 4"></td>
-    <td>b) <img src="/_files/land_cover/10.improvement-woody_cover_pine_plantation-zoomed-in-level4.gif" alt="Improvement woody cover, level 4"></td>
-    <td>c) <img src="/_files/land_cover/11.example_of_uncommon_cultivated_degradation_level4.gif" alt="Degradation cultivated, level 4"></td>
-  </tr>
-</table>
+
+|   |   |   |
+|---|---|---|
+| a) ![Improvement artificial class Degradation water persistence, level 4](/_files/land_cover/2.degr_ocean_water_persistance-degr_stripes-impr_urban.gif) | b) ![Improvement woody cover, level 4](/_files/land_cover/10.improvement-woody_cover_pine_plantation-zoomed-in-level4.gif) | c) ![Degradation cultivated, level 4](/_files/land_cover/11b.example_cultivated_degradation_level4._2015gif.gif) |
 
 ![legend level 4](/_files/land_cover/legend_lc_level4_horizontal.png)
 
-Figure 1. Animations showing examples of differences in level 4 classification between Land Cover V2 and V1. *a)* illustrates the improved artificial surface classification in the greater Melbourne area; stripe artifacts and incorrect water persistence classification can also be observed. *b)* displays a pine plantation near Kinglake West (VIC), which V2 correctly classifies as > 65% woody cover. *c)* shows an example of degradation in cultivated area classification in the Cassowary Coast (northern QLD); while a general improvement has been observed at the continental scale, this type of degradation occurs occasionally in some locations, primarily due to the misclassification of cultivated land as herbaceous natural vegetation.
+*Figure 1.* Animations showing examples of differences in level 4 classification between Land Cover V2 and V1. *a)* illustrates the improved artificial surface classification in the greater Melbourne area; stripe artifacts and incorrect water persistence classification can also be observed. *b)* displays a pine plantation near Kinglake West (VIC), which V2 appears to classify correctly as being > 65% woody cover. *c)* shows an example of degradation in cultivated area classification in the Cassowary Coast (northern QLD), primarily due to the misclassification of cultivated land as herbaceous natural vegetation; as mentioned in the limitations, the CTV classification exhibits some inconsistencies, which can occur both spatially and temporally.
 
-<table>
-  <tr>
-    <td>a) <img src="/_files/land_cover/1.degradation-urban_false_positives-level3.gif" alt="Degradation false positives artificial, level 3"></td>
-    <td>b) <img src="/_files/land_cover/12.improvement_cultivated_level3.gif" alt="Improvement, geenrally cultivated correctly classified, level 3"></td>
-    <td>c) <img src="/_files/land_cover/9.degradation-missing_pixels_waterbodies-level_3.gif" alt="Degradation missing pixels around waterbodies, level 3"></td>
-  </tr>
-</table>
+
+|   |   |   |
+|---|---|---|
+| a) ![Degradation false positives artificial, level 3](/_files/land_cover/1.degradation-urban_false_positives-level3.gif) | b) ![Improvement, cultivated better classified, level 3](/_files/land_cover/12b.improvement_cultivated_level3_2015.gif) | c) ![Degradation missing pixels around waterbodies, level 3](/_files/land_cover/9.degradation-missing_pixels_waterbodies-level_3.gif) |
 
 ![legend level 3](/_files/land_cover/legend_lc_level3_horizontal.png)
 
-Figure 2. Animations showing examples of differences in level 3 classification between V2 and V1. *a)* shows Portland (VIC) and the surrounding area, where an improvement in the artificial surface classification in V2 can be observed in the town to the east, although false positives can also be seen on the sandy terrain in the western part of the displayed area. *b)* displays an area on the southern coast of WA, illustrating the improvement in the classification of cultivated areas in V2; this improvement is particularly notable at the continental scale, especially in large regional areas dedicated to agriculture and grazing. *c)* highlights the increase in pixels with missing values around water bodies in V2 at Lake Eildon in Victoria. 
+*Figure 2.* Animations showing examples of differences in level 3 classification between V2 and V1. *a)* shows Portland (VIC) and the surrounding area, where an improvement in the artificial surface classification in V2 can be observed in the town to the east, although false positives can also be seen on the sandy terrain in the western part of the displayed area. *b)* displays an instance where V2 more accurately identifies cultivated areas in a region on the southern coast of Western Australia. *c)* highlights the increase in pixels with missing values around water bodies in V2 at Lake Eildon in Victoria. 
 
 
 ### Collection 2 Validation
 
 The product was validated using 6000 points spatially distributed over Australia. These points were created using a stratified random sampling approach slightly adjusted for oversampling. This process was conducted for 2010 and 2015 creating 12000 samples in total. After removing points with No Data and spurious values the total number was 11750. The sample points were divided into clusters for visual assessment against the outputs from the classification and assessed individually from a pool of 10 people. To compare the individual biases of the individual assessors, an additional set of validation points were created that all assessors evaluated, the results are shown in Table 4. Where assessors could identify a predominant land cover (i.e. not ‘mixed’ pixels or ‘unsure’), all assessors agreed 75 % of the time. 
 
-Table 2 contains the overall accuracy for all classes. The term ‘support’ refers to the number of validation points used in the calculation of that accuracy value. 
+*Table 2* contains the overall accuracy for all classes. The term ‘support’ refers to the number of validation points used in the calculation of that accuracy value. 
 
 ![Overall accuracy of DEA Land Cover is 80%. 2010 accuracy is 82%, 2015 accuracy is 78%.](/_files/land_cover/overall-accuracy_0.PNG)
 
-Table 3 contains per-class accuracy information. “Precision” refers to the ability of a classification model to return only relevant instances. “Recall” refers to the ability to identify all relevant instances. The “F1 score” is a combination of precision and recall and an overall measure of accuracy. Classes such as artificial surfaces, natural aquatic vegetation and water had high accuracies. Classifying cultivated terrestrial vegetation and bare surfaces was challenging and accuracies were the lowest of the six classes presented here.
+*Table 3* contains per-class accuracy information. “Precision” refers to the ability of a classification model to return only relevant instances. “Recall” refers to the ability to identify all relevant instances. The “F1 score” is a combination of precision and recall and an overall measure of accuracy. Classes such as artificial surfaces, natural aquatic vegetation and water had high accuracies. Classifying cultivated terrestrial vegetation and bare surfaces was challenging and accuracies were the lowest of the six classes presented here.
 
 ![Table showing accuracy per class, including precision, recall, F1 score and support values per class. ](/_files/land_cover/per-class-accuracy.PNG)
 
