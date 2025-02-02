@@ -77,10 +77,10 @@ platform.
 :header-rows: 1
 
 "Satellite platform","Mean band-by-band scatter","Maximum band-by-band scatter"
-"Landsat 8","2.5%","3.1%"
-"Landsat 9","15%","29%"
+"Landsat 8","2.6%","3.3%"
+"Landsat 9","9.9%","27%"
 "Sentinel-2A","2.4%","2.9%"
-"Sentinel-2B","2.5%","4.5%"
+"Sentinel-2B","2.5%","4.6%"
 :::
 
 For example, the Table shows that each Landsat 8 band is typically validated to 2-3%, with the worst performance

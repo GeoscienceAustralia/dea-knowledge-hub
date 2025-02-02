@@ -85,7 +85,7 @@ platform.
 :header-rows: 1
 
 "Satellite platform","Mean band-by-band scatter","Maximum band-by-band scatter"
-"Landsat 8","2.7%","3.5%"
+"Landsat 8","2.6%","3.4%"
 "Landsat 9","10.7%","31%"
 "Sentinel-2A","2.4%","2.9%"
 "Sentinel-2B","2.5%","4.7%"
