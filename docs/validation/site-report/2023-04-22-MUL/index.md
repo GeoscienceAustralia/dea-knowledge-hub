@@ -1,4 +1,4 @@
-# 2023-04-22-MUL: Mullion, Sentinel-2B overpass
+# 2023-04-22 MUL: Mullion, Sentinel-2B overpass
 
 This is a report of the field data collected on 22 April 2023 at the location of Mullion
 to validate the satellite data of the Sentinel-2B overpass.
