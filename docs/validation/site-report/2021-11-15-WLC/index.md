@@ -19,10 +19,12 @@ These variables and environmental factors were present on the day the data were 
 
 "Instrument(s) used","ASD FR4 (18179/3)"
 "Time of field site measurements (UTC)","2021-11-15 00:04:33 to 2021-11-15 00:41:26"
-"Time of overpass (UTC)", 2021-11-15 00:14:34
+"Time of Landsat 8 overpass (UTC)", 2021-11-15 00:14:34
+"Time of Landsat 9 overpass (UTC)", 2021-11-15 00:13:57
 "GPS quality","Good"
 "Reference position","143.82192228E, 31.4493214S (WGS84)"
-"Matchup quality","Excellent"
+"Matchup quality for Landsat 8","Excellent"
+"Matchup quality for Landsat 9","Excellent"
 :::
 
 ## Results
