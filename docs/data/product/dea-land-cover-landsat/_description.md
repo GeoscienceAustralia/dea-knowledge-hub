@@ -43,10 +43,10 @@ Annual Land Cover information can be used in a number of ways to support the mon
 
 |||
 |---|---|
-| *a)* ![Timeseries Canberra urban expansion](/_files/land_cover/North_ACT_urban_expansion_timeseries_lc_lvl3_gmad.gif) | *b)* ![Timeseries Mt Beggary bushfire](/_files/land_cover/mt_beggary_bushfire_timeseries_lc_lvl4_gmad.gif) |
+| *a)* ![Timeseries Perth urban expansion](/_files/land_cover/Perth_urban_timeseries_lc_lvl3_gmad.gif) | *b)* ![Timeseries Mt Beggary bushfire](/_files/land_cover/mt_beggary_bushfire_timeseries_lc_lvl4_gmad.gif) |
 | *c)* ![Timeseries inlet changes](/_files/land_cover/shallow_inlet_timeseries_lc_lvl3_gmad.gif) | *d)* ![Timeseries lake Amadeus](/_files/land_cover/lake_amadeus_timeseries_lc_lvl4_gmad.gif) |
 
-*Figure 1 - Examples of phenomena that can be tracked with the land cover product. a) Urban expansion of the northern Australian Capital Territory. b) Vegetation change and recovery following the Mt Beggary bushfire; c) Morphological changes of Shallow Inlet in Victoria. d) Annual variability of Lake Amadeus, a salt lake in the Northern Territory; the water persistence classification can be employed to track changes in its extent.*
+*Figure 1 - Examples of phenomena that can be tracked with the land cover product. a) Urban expansion of the Quinns Rocks (Perth). b) Vegetation change and recovery following the Mt Beggary bushfire; c) Morphological changes of Shallow Inlet in Victoria. d) Annual variability of Lake Amadeus, a salt lake in the Northern Territory; the water persistence classification can be employed to track changes in its extent.*
 
 
 ## Technical information
