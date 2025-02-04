@@ -5,12 +5,6 @@ cards:
   - name: ABARES
     link: /data/category/abares/
     image: /_files/external-data/abares_clum_2020.thumbnail.jpg
-  - name: GA AusBathyTopo 250m
-    link: /data/external-data/ga-ausbathytopo-250m/
+  - name: Geoscience Australia
+    link: /data/category/geoscience-australia/
     image: /_files/external-data/ga_ausbathytopo250m_2023.thumbnail.jpg
-  - name: GA SRTM 1 second DEM
-    link: /data/external-data/ga-srtm-1-second-dem/
-    image: /_files/external-data/ga_srtm_thumbnail.jpg
-  - name: GA Multi-scale Topographic Position
-    link: /data/external-data/ga-multi-scale-topographic-position/
-    image: /_files/external-data/ga_mtpi_thumbnail.jpg
