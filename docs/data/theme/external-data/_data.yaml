@@ -4,7 +4,7 @@ description: DEA provides access to certain external data products to assist wit
 cards:
   - name: ABARES
     link: /data/category/abares/
-    image: /_files/external-data/abares_clum_2020.thumbnail.jpg
+    image: /_files/external-data/ga_srtm_thumbnail.jpg
   - name: Geoscience Australia
     link: /data/category/geoscience-australia/
     image: /_files/external-data/ga_ausbathytopo250m_2023.thumbnail.jpg
