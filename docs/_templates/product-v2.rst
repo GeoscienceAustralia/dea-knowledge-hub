@@ -420,14 +420,14 @@
       {% if page.data.citation_paper %}
       * - **Paper citation**
         - .. code-block:: text
-             :class: citation-table-citation
+             :class: citation-table-citation citation-access-date
 
              {{ page.data.citation_paper }}
       {%- endif %}
       {% for citation in citations_custom_list %}
       * - **{{ citation.name }}**
         - .. code-block:: text
-             :class: citation-table-citation
+             :class: citation-table-citation citation-access-date
 
              {{ citation.citation }}
       {% endfor %}
