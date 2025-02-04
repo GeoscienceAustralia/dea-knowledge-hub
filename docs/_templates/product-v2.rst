@@ -548,13 +548,13 @@
       :name: {{ layer.name }}
       :class: h3
 
-   {{ layer.description or no_data_terms.dash }} The attributes of this layer are as follows.
+   {{ layer.description or no_data_terms.dash }} This layer has the following attributes.
 
    .. list-table::
       :header-rows: 1
       :name: layers-table
 
-      * - Attribute
+      * -
         - Type
         - Units
         - Description
