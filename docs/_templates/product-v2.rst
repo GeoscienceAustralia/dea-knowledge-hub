@@ -548,7 +548,7 @@
       :name: {{ layer.name }}
       :class: h3
 
-   {{ layer.description or no_data_terms.dash }}
+   {{ layer.description or no_data_terms.dash }} The attributes of this layer are as follows.
 
    .. list-table::
       :header-rows: 1
