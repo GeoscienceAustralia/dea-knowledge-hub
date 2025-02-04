@@ -541,7 +541,7 @@
       :name: layers
       :class: h2
 
-   This product contains the following layers, and the attribute fields of each are listed.
+   Vector products contain one or more distinct layers of data, and each layer can contain multiple attribute fields.
 
    {% for layer in layers_table_list %}
    .. rubric:: {{ layer.name }}
