@@ -2,7 +2,7 @@
 
 # Layers
 
-layers_footnote: "For more information on these bands, see the `Description tab <./?tab=description>`_."
+layers_footnote: "For more information on these layers, see the `Description tab <./?tab=description>`_."
 
 layers_table:
   - name: shorelines_annual

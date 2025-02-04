@@ -544,15 +544,24 @@
    This product contains the following layers, and the attribute fields of each are listed.
 
    {% for layer in layers_table_list %}
-   **Layer: {{ layer.name }}**
+   .. rubric:: {{ layer.name }}
+      :name: {{ layer.name }}
+      :class: h3
 
-   {{ layer.description or no_data_terms.dash }} Attribute fields:
+   {{ layer.description or no_data_terms.dash }}
 
    .. list-table::
+      :header-rows: 1
       :name: layers-table
 
+      * - Attribute
+        - Type
+        - Units
+        - Description
       {% for attribute in layer.attributes %}
       * - **{{ attribute.name }}**
+        - Type
+        - Unit
         - {{ attribute.description }}
       {% endfor %}
    {% endfor %}
