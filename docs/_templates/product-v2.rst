@@ -560,8 +560,8 @@
         - Description
       {% for attribute in layer.attributes %}
       * - **{{ attribute.name }}**
-        - Type
-        - Unit
+        - {{ attribute.type or no_data_terms.dash }}
+        - {{ attribute.units or no_data_terms.dash }}
         - {{ attribute.description }}
       {% endfor %}
    {% endfor %}

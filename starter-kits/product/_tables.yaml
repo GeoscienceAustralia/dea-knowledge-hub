@@ -22,4 +22,6 @@
 #     description: A description of the layer.
 #     attributes:
 #       - name: example_attribute_name
+#         type: int16
+#         units: Metres
 #         description: A description of the attribute.

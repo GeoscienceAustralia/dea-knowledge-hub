@@ -9,44 +9,82 @@ layers_table:
     description: Annual shoreline vectors that represent the median or ‘most representative’ position of the shoreline at approximately 0 m Above Mean Sea Level for each year since 1988.
     attributes:
       - name: year
+        type: null
+        units: null
         description: The year of each annual shoreline.
       - name: certainty
+        type: null
+        units: null
         description: A column providing important data quality flags for each annual shoreline.  For more information, see the `Quality tab <./?tab=quality>`_.
       - name: tide_datum
+        type: null
+        units: null
         description: The tide datum of each annual shoreline (e.g. “0 m AMSL”).
       - name: id_primary
+        type: null
+        units: null
         description: The name of the annual shoreline’s Primary sediment compartment from the `Australian Coastal Sediment Compartments <https://ecat.ga.gov.au/geonetwork/srv/api/records/21a23d9a-00dd-ab19-e053-10a3070a2746>`_ framework.
 
   - name: rates_of_change
     description: A point dataset providing robust rates of coastal change for every 30 m along Australia’s non-rocky coastlines.
     attributes:
       - name: uid
+        type: null
+        units: null
         description: A unique geohash identifier for each point.
       - name: rate_time
+        type: null
+        units: null
         description: Annual rates of change (in metres per year) calculated by linearly regressing annual shoreline distances against time (excluding outliers). Negative values indicate retreat and positive values indicate growth.
       - name: sig_time
+        type: null
+        units: null
         description: Significance (p-value) of the linear relationship between annual shoreline distances and time. Small values (e.g. p-value < 0.01 or 0.05) may indicate a coastline is undergoing consistent coastal change through time.
       - name: se_time
+        type: null
+        units: null
         description: Standard error (in metres) of the linear relationship between annual shoreline distances and time. This can be used to generate confidence intervals around the rate of change given by ``rate_time``, e.g. :math:`\text{95% confidence interval} = \text{se_time} \times 1.96`
       - name: outl_time
+        type: null
+        units: null
         description: Individual annual shoreline are noisy estimators of coastline position that can be influenced by environmental conditions (e.g. clouds, breaking waves, sea spray) or modelling issues (e.g. poor tidal modelling results or limited clear satellite observations). To obtain reliable rates of change, outlier shorelines are excluded using a robust Median Absolute Deviation outlier detection algorithm, and recorded in this column.
       - name: dist_1990, dist_1991, etc
+        type: null
+        units: null
         description: Annual shoreline distances (in metres) relative to the most recent baseline shoreline. Negative values indicate that an annual shoreline was located inland of the baseline shoreline. By definition, the most recent baseline column will always have a distance of 0 m.
       - name: angle_std
+        type: null
+        units: null
         description: The mean angle and standard deviation between the baseline point to all annual shorelines. This data is used to calculate how well shorelines fall along a consistent line; high angular standard deviation indicates that derived rates of change are unlikely to be correct.
       - name: valid_obs
+        type: null
+        units: null
         description: The total number of valid (i.e. non-outliers, non-missing) annual shoreline observations, and the maximum number of years between the first and last valid annual shoreline.
       - name: valid_span
+        type: null
+        units: null
         description: The total number of valid (i.e. non-outliers, non-missing) annual shoreline observations, and the maximum number of years between the first and last valid annual shoreline.
       - name: sce
+        type: null
+        units: null
         description: Shoreline Change Envelope (SCE). A measure of the maximum change or variability across all annual shorelines, calculated by computing the maximum distance between any two annual shorelines (excluding outliers). This statistic excludes sub-annual shoreline variability.
       - name: nsm
+        type: null
+        units: null
         description: Net Shoreline Movement (NSM). The distance between the oldest (1988) and most recent annual shoreline (excluding outliers). Negative values indicate the coastline retreated between the oldest and most recent shoreline; positive values indicate growth. This statistic does not reflect sub-annual shoreline variability, so will underestimate the full extent of variability at any given location.
       - name: max_year
+        type: null
+        units: null
         description: The year that annual shorelines were at their maximum (i.e. located furthest towards the ocean), excluding outliers. This statistic excludes sub-annual shoreline variability.
       - name: min_year
+        type: null
+        units: null
         description: The year that annual shorelines were at their minimum (i.e. located furthest inland), excluding outliers. This statistic excludes sub-annual shoreline variability.
       - name: certainty
+        type: null
+        units: null
         description: A column providing important data quality flags for each point in the dataset. For more information, see the `Quality tab <./?tab=quality>`_.
       - name: id_primary
+        type: null
+        units: null
         description: The name of the annual shoreline’s Primary sediment compartment from the `Australian Coastal Sediment Compartments <https://ecat.ga.gov.au/geonetwork/srv/api/records/21a23d9a-00dd-ab19-e053-10a3070a2746>`_ framework.
