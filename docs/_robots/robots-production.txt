@@ -1,4 +1,3 @@
 User-agent: *
-Disallow: /_components/
 
 Sitemap: https://knowledge.dea.ga.gov.au/sitemap.xml
