@@ -552,7 +552,7 @@
       :name: {{ layer.name }}
       :class: h3
 
-   {{ layer.description or no_data_terms.dash }} This layer has the following attributes.
+   {{ layer.description or no_data_terms.dash }}
 
    .. list-table::
       :header-rows: 1
