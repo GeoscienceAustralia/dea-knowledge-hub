@@ -4,11 +4,12 @@
 
 # <https://knowledge.dea.ga.gov.au/validation/>
 
-# How to use this script:
+# How to use these scripts:
 
-# 1. In this directory, run:
+# 1. Upload these scripts to the DEA Sandbox.
+# 2. Run this command in the Sandbox:
 #     python __init__.py
-# 2. The output will be generated, containing Markdown, Image, and CSV files.
+# 3. The output will be generated, containing Markdown, Images, and CSV files.
 
 from . import AddSite
 from . import SingleDualPlot
