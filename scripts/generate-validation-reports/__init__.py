@@ -1,4 +1,4 @@
-# Validation Report scripts
+# Validation Report Scripts
 
 # These scripts are used to generate the Validation Reports which are published to the DEA Knowledge Hub, including Site Reports, Quarterly Reports, and Yearly Reports.
 
