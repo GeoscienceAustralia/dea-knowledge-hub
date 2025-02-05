@@ -533,6 +533,10 @@
         - {{ band.description or no_data_terms.dash }}
       {% endfor %}
 
+   .. raw:: html
+
+      <br />
+
    {{ page.tables.bands_footnote if page.tables.bands_footnote }}
    {% endif %}
 
@@ -565,6 +569,10 @@
         - {{ attribute.description }}
       {% endfor %}
    {% endfor %}
+
+   .. raw:: html
+
+      <br />
 
    {{ page.tables.layers_footnote if page.tables.layers_footnote }}
 
