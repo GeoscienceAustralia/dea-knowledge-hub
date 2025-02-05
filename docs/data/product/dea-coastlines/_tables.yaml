@@ -58,7 +58,7 @@ layers_table:
         description: The mean angle and standard deviation between the baseline point to all annual shorelines. This data is used to calculate how well shorelines fall along a consistent line; high angular standard deviation indicates that derived rates of change are unlikely to be correct.
       - name: valid_obs
         type: Integer
-        units: Count
+        units: null
         description: The total number of valid (i.e. non-outliers, non-missing) annual shoreline observations.
       - name: valid_span
         type: Integer
@@ -98,5 +98,5 @@ layers_table:
         description: The radius of the moving window used to summarise coastal change around this point.
       - name: n
         type: Integer
-        units: Count
+        units: null
         description: The number of 'rates_of_change' points that were used in the moving window calculation.
