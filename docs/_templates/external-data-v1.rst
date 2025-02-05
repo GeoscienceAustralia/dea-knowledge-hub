@@ -287,6 +287,10 @@
             - {{ band.description or none_text }}
           {% endfor %}
 
+       .. raw:: html
+
+          <br />
+
        {{ Specifications.bands.footnotes if Specifications.bands.footnotes }}
        {% endif %}
     {% endif %}
