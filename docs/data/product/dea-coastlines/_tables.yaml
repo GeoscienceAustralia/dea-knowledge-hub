@@ -88,3 +88,15 @@ layers_table:
         type: string
         units: null
         description: The name of the annual shoreline’s Primary sediment compartment from the `Australian Coastal Sediment Compartments <https://ecat.ga.gov.au/geonetwork/srv/api/records/21a23d9a-00dd-ab19-e053-10a3070a2746>`_ framework.
+
+  - name: hotspots_zoom_1, hotspots_zoom_2, hotspots_zoom_3
+    description: Three points layers summarising coastal change within moving 1 km, 5 km and 10 km windows along the coastline, containing several additional attributes.
+    attributes:
+      - name: radius_m
+        type: integer
+        units: metres
+        description: The radius of the moving window used to summarise coastal change around this point.
+      - name: n
+        type: integer
+        units: count
+        description: The number of 'rates_of_change' points that were used in the moving window calculation.
