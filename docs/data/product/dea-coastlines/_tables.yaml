@@ -90,7 +90,7 @@ layers_table:
         description: The name of the point’s Primary sediment compartment from the `Australian Coastal Sediment Compartments <https://ecat.ga.gov.au/geonetwork/srv/api/records/21a23d9a-00dd-ab19-e053-10a3070a2746>`_ framework.
 
   - name: hotspots_zoom_1, hotspots_zoom_2, and hotspots_zoom_3
-    description: "**These three layers contain all attributes of the 'rates_of_change' layer, plus the following additional attributes.** These 'hotspots_zoom' layers summarise coastal change within moving 1 km, 5 km, and 10 km windows along the coastline."
+    description: "**These three layers contain all attributes of the 'rates_of_change' layer, plus the following additional attributes.** These 'hotspots_zoom' layers summarise coastal change within moving 1 km, 5 km, and 10 km windows along the coastline (using moving window analysis)."
     attributes:
       - name: radius_m
         type: Integer
