@@ -30,6 +30,7 @@ exclude_patterns = [
     "**/_*",
     "**/*.scss",
     "_robots",
+    "_components",
     "data/archive",
     "notebooks/Scientific_workflows",
     "notebooks/DEA_notebooks_template.ipynb",
