@@ -509,6 +509,7 @@
    .. list-table::
       :header-rows: 1
       :name: bands-table
+      :class: margin-bottom-2em
 
       * - 
         - Type
@@ -533,10 +534,6 @@
         - {{ band.description or no_data_terms.dash }}
       {% endfor %}
 
-   .. raw:: html
-
-      <br />
-
    {{ page.tables.bands_footnote if page.tables.bands_footnote }}
    {% endif %}
 
@@ -557,6 +554,7 @@
    .. list-table::
       :header-rows: 1
       :name: layers-table
+      :class: margin-bottom-2em
 
       * -
         - Type
@@ -569,10 +567,6 @@
         - {{ attribute.description }}
       {% endfor %}
    {% endfor %}
-
-   .. raw:: html
-
-      <br />
 
    {{ page.tables.layers_footnote if page.tables.layers_footnote }}
 
