@@ -2,9 +2,9 @@ title: External data
 description: DEA provides access to certain external data products to assist with analysing and validating DEA products. These external data products are not produced by DEA and are provided without modifications except where required for compatibility with our systems.
 
 cards:
-  - name: ABARES
-    link: /data/category/abares/
+  - name: Elevation and bathymetry
+    link: /data/category/elevation-and-bathymetry/
     image: /_files/external-data/ga_srtm_thumbnail.jpg
-  - name: Geoscience Australia
-    link: /data/category/geoscience-australia/
+  - name: Land use
+    link: /data/category/land-use/
     image: /_files/external-data/ga_ausbathytopo250m_2023.thumbnail.jpg
