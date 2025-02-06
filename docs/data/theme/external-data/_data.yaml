@@ -7,4 +7,4 @@ cards:
     image: /_files/external-data/ga_srtm_thumbnail.jpg
   - name: Land use
     link: /data/category/land-use/
-    image: /_files/external-data/ga_ausbathytopo250m_2023.thumbnail.jpg
+    image: /_files/external-data/abares_clum_2023.thumbnail.jpg
