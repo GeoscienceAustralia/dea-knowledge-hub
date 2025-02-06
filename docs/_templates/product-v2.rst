@@ -485,13 +485,13 @@
       :name: product-id
       :class: h2
 
-   The Product IDs are {% for product_id in product_ids_list %}{%- if loop.last and loop.index > 1 %}, and {% elif loop.index > 1 %}, {% endif -%}**{{ product_id }}**{% endfor %}. These are used to `load data from the Open Data Cube <load_data_odc_>`_, for example ``dc.load(product="{{ product_ids_list[0] }}", ...)``
+   The Product IDs are {% for product_id in product_ids_list %}{%- if loop.last and loop.index > 1 %}, and {% elif loop.index > 1 %}, {% endif -%}``{{ product_id }}``{% endfor %}. These are used to `load data from the Open Data Cube <load_data_odc_>`_, for example ``dc.load(product="{{ product_ids_list[0] }}", ...)``
    {%- else %}
    .. rubric:: Product ID
       :name: product-id
       :class: h2
 
-   The Product ID is **{{ product_ids_list[0] }}**. This is used to `load data from the Open Data Cube <load_data_odc_>`_, for example ``dc.load(product="{{ product_ids_list[0] }}", ...)``
+   The Product ID is ``{{ product_ids_list[0] }}``. This is used to `load data from the Open Data Cube <load_data_odc_>`_, for example ``dc.load(product="{{ product_ids_list[0] }}", ...)``
    {%- endif %}
 
    .. _load_data_odc: /notebooks/Beginners_guide/04_Loading_data/
