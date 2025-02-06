@@ -481,6 +481,16 @@
 
       <div class="product-tab-table-of-contents"></div>
 
+   {% if product_ids_list %}
+   .. rubric:: {{ product_ids_label }}
+      :name: product-id
+      :class: h2
+
+   The {{ product_ids_label }} are **{{ product_ids_list_text }}**.
+
+   This is used to `load data from the Open Data Cube </notebooks/Beginners_guide/04_Loading_data/>`_.
+   {%- endif %}
+
    {% if bands_table_list %}
    .. rubric:: Bands
       :name: bands
@@ -531,13 +541,6 @@
    .. list-table::
       :name: product-information-table
 
-      {% if product_ids_list %}
-      * - **{{ product_ids_label }}**
-        - {%- for product_id in product_ids_list %}
-          | {{ product_id }}
-          {%- endfor %}
-        - Used to `load data from the Open Data Cube </notebooks/Beginners_guide/04_Loading_data/>`_.
-      {%- endif %}
       * - **Short name**
         - {{ page.data.short_name }}
         - The name that is commonly used to refer to the product.
