@@ -226,14 +226,14 @@
           {% if Data.citations.paper_citation %}
           * - **Paper citation**
             - .. code-block:: text
-                 :class: citation-table-citation
+                 :class: citation-table-citation citation-access-date
 
                  {{ Data.citations.paper_citation }}
           {%- endif %}
           {% for citation in valid_custom_citations %}
           * - **{{ citation.name }}**
             - .. code-block:: text
-                 :class: citation-table-citation
+                 :class: citation-table-citation citation-access-date
 
                  {{ citation.citation }}
           {% endfor %}
