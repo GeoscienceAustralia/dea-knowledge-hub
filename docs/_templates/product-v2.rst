@@ -544,7 +544,7 @@
 
    .. raw:: html
 
-      <p class="margin-bottom-2em">Vector products contain one or more distinct layers of data, and each layer can contain multiple attribute fields. This product contains the following layers: {% for layer in layers_table_list %}<a href="#layer-{{ loop.index }}">{{ layer.name }}</a>{% if not loop.last %}, {% endif %}{% endfor %}.</p>
+      <p class="margin-bottom-2em">Vector products contain one or more distinct layers of data, and each layer can contain multiple attribute fields. This product contains the layers {% for layer in layers_table_list %}{%- if loop.last and loop.index > 1 %}, and {% elif loop.index > 1 %}, {% endif -%}<a href="#layer-{{ loop.index }}">{{ layer.name }}</a>{% endfor %}.</p>
 
    {% for layer in layers_table_list %}
    .. rubric:: {{ layer.name }}
