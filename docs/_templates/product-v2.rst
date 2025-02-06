@@ -106,6 +106,8 @@
 
 {% set display_title = page.data.short_name if page.data.is_latest_version else page.data.short_name ~ " " ~ format_version_number(page.data.version_number) %}
 
+{% set product_ids_label = "Product IDs" if product_ids_list | length > 1 else "Product ID" %}
+
 {% set parent_products_label = "Parent products" if parent_products_list | length > 1 else "Parent product" %}
 
 {% set collections_label = "Collections" if collections_list | length > 1 else "Collection" %}
@@ -547,6 +549,13 @@
    .. list-table::
       :name: product-information-table
 
+      {% if product_ids_list %}
+      * - **{{ product_ids_label }}**
+        - {%- for product_id in product_ids_list %}
+          | {{ product_id }}
+          {%- endfor %}
+        - Used to `load data from the Open Data Cube </notebooks/Beginners_guide/04_Loading_data/>`_.
+      {%- endif %}
       * - **Short name**
         - {{ page.data.short_name }}
         - The name that is commonly used to refer to the product.
