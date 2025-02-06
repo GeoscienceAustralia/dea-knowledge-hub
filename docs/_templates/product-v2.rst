@@ -106,8 +106,6 @@
 
 {% set display_title = page.data.short_name if page.data.is_latest_version else page.data.short_name ~ " " ~ format_version_number(page.data.version_number) %}
 
-{% set product_ids_label = "Product IDs" if product_ids_list | length > 1 else "Product ID" %}
-
 {% set parent_products_label = "Parent products" if parent_products_list | length > 1 else "Parent product" %}
 
 {% set collections_label = "Collections" if collections_list | length > 1 else "Collection" %}
@@ -482,13 +480,19 @@
       <div class="product-tab-table-of-contents"></div>
 
    {% if product_ids_list %}
-   .. rubric:: {{ product_ids_label }}
+   {% if product_ids_list | length > 1 %}
+   .. rubric:: Product IDs
       :name: product-id
       :class: h2
 
-   The {{ product_ids_label }} are **{{ product_ids_list_text }}**.
+   The Product IDs are **{{ product_ids_list_text }}**. These are used to `load data from the Open Data Cube </notebooks/Beginners_guide/04_Loading_data/>`_, for example ``dc.load(product="{{ product_ids_list[0] }}", ...)``
+   {%- else %}
+   .. rubric:: Product ID
+      :name: product-id
+      :class: h2
 
-   This is used to `load data from the Open Data Cube </notebooks/Beginners_guide/04_Loading_data/>`_.
+   The Product ID is **{{ product_ids_list_text }}**. This is used to `load data from the Open Data Cube </notebooks/Beginners_guide/04_Loading_data/>`_, for example ``dc.load(product="{{ product_ids_list[0] }}", ...)``
+   {%- endif %}
    {%- endif %}
 
    {% if bands_table_list %}
