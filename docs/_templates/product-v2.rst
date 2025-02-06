@@ -542,11 +542,11 @@
       :name: layers
       :class: h2
 
-   Vector products contain one or more distinct layers of data, and each layer can contain multiple attribute fields. The product {{ product_ids_list_text }} contains the following layers: {% for layer in layers_table_list %}`{{ layer.name }} <#{{ layer.name }}>`_{% if not loop.last %}, {% endif %}{% endfor %}.
+   Vector products contain one or more distinct layers of data, and each layer can contain multiple attribute fields. The product {{ product_ids_list_text }} contains the following layers: {% for layer in layers_table_list %}`{{ layer.name }} <#layer-{{ loop.index }}>`_{% if not loop.last %}, {% endif %}{% endfor %}.
 
    {% for layer in layers_table_list %}
    .. rubric:: {{ layer.name }}
-      :name: {{ layer.name }}
+      :name: layer-{{ loop.index }}
       :class: h3
 
    {{ layer.description or no_data_terms.dash }}
