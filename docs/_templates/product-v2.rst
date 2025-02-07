@@ -481,12 +481,30 @@
 
       <div class="product-tab-table-of-contents"></div>
 
+   {% if product_ids_list %}
+   {% if product_ids_list | length > 1 %}
+   .. rubric:: Product IDs
+      :name: product-id
+      :class: h2
+
+   The Product IDs are {% for product_id in product_ids_list %}{%- if loop.last and loop.index > 1 %}, and {% elif loop.index > 1 %}, {% endif -%}``{{ product_id }}``{% endfor %}. These IDs are used to `load data from the Open Data Cube (ODC) <load_data_odc_>`_, for example ``dc.load(product="{{ product_ids_list[0] }}", ...)``
+   {%- else %}
+   .. rubric:: Product ID
+      :name: product-id
+      :class: h2
+
+   The Product ID is ``{{ product_ids_list[0] }}``. This ID is used to `load data from the Open Data Cube (ODC) <load_data_odc_>`_, for example ``dc.load(product="{{ product_ids_list[0] }}", ...)``
+   {%- endif %}
+
+   .. _load_data_odc: /notebooks/Beginners_guide/04_Loading_data/
+   {%- endif %}
+
    {% if bands_table_list %}
    .. rubric:: Bands
       :name: bands
       :class: h2
 
-   Bands are distinct layers of data within a product that can be loaded using the Open Data Cube (on the `DEA Sandbox <dea_sandbox_>`_ or `NCI <nci_>`_) or DEA's `STAC API <stac_api_>`_.{{ " Note that the Coordinate Reference System (CRS) of these bands is {}.".format(coordinate_reference_system_term) if coordinate_reference_system_term }}{% if product_ids_list | length > 1 %} Here are the bands of the products: {{ product_ids_list_text }}.{%- elif product_ids_list %} Here are the bands of the product: {{ product_ids_list_text }}.{%- endif %}
+   Bands are distinct layers of data within a product that can be loaded using the Open Data Cube (on the `DEA Sandbox <dea_sandbox_>`_ or `NCI <nci_>`_) or DEA's `STAC API <stac_api_>`_.{{ " Note that the Coordinate Reference System (CRS) of these bands is {}.".format(coordinate_reference_system_term) if coordinate_reference_system_term }}
 
    .. _dea_sandbox: https://knowledge.dea.ga.gov.au/guides/setup/Sandbox/sandbox/
    .. _nci: https://knowledge.dea.ga.gov.au/guides/setup/NCI/basics/
