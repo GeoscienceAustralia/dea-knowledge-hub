@@ -21,36 +21,13 @@ The ability to map shoreline positions for each year provides valuable insights 
 
 ## Technical information
 
-### DEA Coastlines dataset
-
-The DEA Coastlines product contains five layers:
-* Annual shorelines
-* Rates of change points
-* Coastal change hotspots (1 km)
-* Coastal change hotspots (5 km)
-* Coastal change hotspots (10 km)
-
-### Annual shorelines
+### Annual shorelines layer (shorelines_annual)
 
 Annual shoreline vectors that represent the median or ‘most representative’ position of the shoreline at approximately 0 m Above Mean Sea Level for each year since 1988 (Figure 1).
 
 Dashed shorelines have low certainty.
 
-Annual shorelines include the following attribute fields:
-
-:::{list-table}
-
-* - `year`
-  - The year of each annual shoreline.
-* - `certainty`
-  - A column providing important data quality flags for each annual shoreline.
-* - `tide_datum`
-  - The tide datum of each annual shoreline (e.g. "0 m AMSL").
-* - `id_primary`
-  - The name of the annual shoreline's Primary sediment compartment from the [Australian Coastal Sediment Compartments](https://ecat.ga.gov.au/geonetwork/srv/api/records/21a23d9a-00dd-ab19-e053-10a3070a2746) framework.
-:::
-
-To understand the `certainty` field, see the [Quality tab](./?tab=quality).
+For the attributes of this layer, see the [Specifications tab](./?tab=specifications).
 
 :::{figure} /_files/cmi/deacl_coastlines.*
 :alt: DEA CoastLines coastline layer
@@ -58,19 +35,21 @@ To understand the `certainty` field, see the [Quality tab](./?tab=quality).
 Figure 1: Annual coastlines from DEA Coastlines visualised on the [interactive DEA Coastlines web map](https://maps.dea.ga.gov.au/story/DEACoastlines)
 :::
 
-### Rates of change points
+### Rates of change points layer (rates_of_change)
 
 A point dataset providing robust rates of coastal change for every 30 m along Australia’s non-rocky coastlines (Figure 2). The most recent annual shoreline is used as a baseline for measuring rates of change.
+
+On the [interactive DEA Coastlines web map](https://maps.dea.ga.gov.au/story/DEACoastlines), points are shown for locations with statistically significant rates of change (p-value &lt;= 0.01; see `sig_time` below) and good quality data (certainty = "good"; see `certainty` below) only. Each point shows annual rates of change (in metres per year; see `rate_time` below), and an estimate of uncertainty in brackets (95% confidence interval; see `se_time`). For example, there is a 95% chance that a point with a label **\-10.0 m (±1.0 m)** is retreating at a rate of between -9.0 and -11.0 metres per year.
+
+Rates of change points contains the following attribute columns that can be accessed by clicking on labelled points in the web map:
+
+For the attributes of this layer, see the [Specifications tab](./?tab=specifications).
 
 :::{figure} /_files/cmi/deacl_statistics_2.*
 :alt: DEA CoastLines rates of change statistics layer
 
 Figure 2: Rates of change points from DEA Coastlines visualised on the [interactive DEA Coastlines web map](https://maps.dea.ga.gov.au/story/DEACoastlines)
 :::
-
-On the [interactive DEA Coastlines web map](https://maps.dea.ga.gov.au/story/DEACoastlines), points are shown for locations with statistically significant rates of change (p-value &lt;= 0.01; see `sig_time` below) and good quality data (certainty = "good"; see `certainty` below) only. Each point shows annual rates of change (in metres per year; see `rate_time` below), and an estimate of uncertainty in brackets (95% confidence interval; see `se_time`). For example, there is a 95% chance that a point with a label **\-10.0 m (±1.0 m)** is retreating at a rate of between -9.0 and -11.0 metres per year.
-
-Rates of change points contains the following attribute columns that can be accessed by clicking on labelled points in the web map:
 
 #### Annual shoreline distances
 
@@ -117,9 +96,11 @@ Rates of change points contains the following attribute columns that can be acce
   - The total number of valid (i.e. non-outliers, non-missing) annual shoreline observations, and the maximum number of years between the first and last valid annual shoreline.
 :::
 
-### Coastal change hotspots (1 km, 5 km, 10 km)
+### Coastal change hotspots layers (hotspots_zoom_1, hotspots_zoom_2, and hotspots_zoom_3)
 
 Three points layers summarising coastal change within moving 1 km, 5 km and 10 km windows along the coastline (Figure 3). These layers are useful for visualising regional or continental-scale patterns of coastal change. 
+
+For the attributes of this layer, see the [Specifications tab](./?tab=specifications).
 
 :::{figure} /_files/cmi/deacl_summary.*
 :alt: DEA CoastLines summary layer
