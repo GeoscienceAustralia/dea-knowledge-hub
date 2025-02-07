@@ -58,6 +58,7 @@
 
 {% set coordinate_reference_system_terms = {
    "EPSG:3577": "`GDA94 / Australian Albers (EPSG:3577) <https://epsg.org/crs_3577/GDA94-Australian-Albers.html>`_",
+   "EPSG:4326": "`WGS 84 (EPSG:4326) <https://epsg.org/crs_4326/WGS-84.html>`_",
 } %}
 
 {# Macros #}
