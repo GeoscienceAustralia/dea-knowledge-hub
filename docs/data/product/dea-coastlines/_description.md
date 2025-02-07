@@ -21,6 +21,8 @@ The ability to map shoreline positions for each year provides valuable insights 
 
 ## Technical information
 
+This product contains five layers of data.
+
 ### Annual shorelines layer (shorelines_annual)
 
 Annual shoreline vectors that represent the median or ‘most representative’ position of the shoreline at approximately 0 m Above Mean Sea Level for each year since 1988 (Figure 1).
@@ -49,51 +51,6 @@ For the attributes of this layer, see the [Specifications tab](./?tab=specificat
 :alt: DEA CoastLines rates of change statistics layer
 
 Figure 2: Rates of change points from DEA Coastlines visualised on the [interactive DEA Coastlines web map](https://maps.dea.ga.gov.au/story/DEACoastlines)
-:::
-
-#### Annual shoreline distances
-
-:::{list-table}
-
-* - `dist_1990`, `dist_1991`, etc
-  - Annual shoreline distances (in metres) relative to the most recent baseline shoreline. Negative values indicate that an annual shoreline was located inland of the baseline shoreline. By definition, the most recent baseline column will always have a distance of 0 m.
-:::
-
-#### Rates of change statistics
-
-:::{list-table}
-
-* - `rate_time`
-  - Annual rates of change (in metres per year) calculated by linearly regressing annual shoreline distances against time (excluding outliers). Negative values indicate retreat and positive values indicate growth. 
-* - `sig_time`
-  - Significance (p-value) of the linear relationship between annual shoreline distances and time. Small values (e.g. p-value &lt; 0.01 or 0.05) may indicate a coastline is undergoing consistent coastal change through time. 
-* - `se_time`
-  - Standard error (in metres) of the linear relationship between annual shoreline distances and time. This can be used to generate confidence intervals around the rate of change given by *rate\_time* (e.g. 95% confidence interval = *se\_time \* 1.96*)
-* - `outl_time`
-  - Individual annual shoreline are noisy estimators of coastline position that can be influenced by environmental conditions (e.g. clouds, breaking waves, sea spray) or modelling issues (e.g. poor tidal modelling results or limited clear satellite observations). To obtain reliable rates of change, outlier shorelines are excluded using a robust Median Absolute Deviation outlier detection algorithm, and recorded in this column. 
-:::
-
-
-#### Other fields
-
-:::{list-table}
-
-* - `uid`
-  - A unique [geohash](https://en.wikipedia.org/wiki/Geohash) identifier for each point.
-* - `id_primary`
-  - The name of the point's Primary sediment compartment from the [Australian Coastal Sediment Compartments](https://ecat.ga.gov.au/geonetwork/srv/api/records/21a23d9a-00dd-ab19-e053-10a3070a2746) framework. 
-* - `certainty`
-  - A column providing important data quality flags for each point in the dataset (see **Quality assurance** below for more detail about each data quality flag).
-* - `sce`
-  - Shoreline Change Envelope (SCE). A measure of the maximum change or variability across all annual shorelines, calculated by computing the maximum distance between any two annual shorelines (excluding outliers). This statistic excludes sub-annual shoreline variability.
-* - `nsm`
-  - Net Shoreline Movement (NSM). The distance between the oldest (1988) and most recent annual shoreline (excluding outliers). Negative values indicate the coastline retreated between the oldest and most recent shoreline; positive values indicate growth. This statistic does not reflect sub-annual shoreline variability, so will underestimate the full extent of variability at any given location.
-* - `max_year`, `min_year`
-  - The year that annual shorelines were at their maximum (i.e. located furthest towards the ocean) and their minimum (i.e. located furthest inland) respectively (excluding outliers). This statistic excludes sub-annual shoreline variability.
-* - `angle_mean`, `angle_std`
-  - The mean angle and standard deviation between the baseline point to all annual shorelines. This data is used to calculate how well shorelines fall along a consistent line; high angular standard deviation indicates that derived rates of change are unlikely to be correct.
-* - `valid_obs`, `valid_span`
-  - The total number of valid (i.e. non-outliers, non-missing) annual shoreline observations, and the maximum number of years between the first and last valid annual shoreline.
 :::
 
 ### Coastal change hotspots layers (hotspots_zoom_1, hotspots_zoom_2, and hotspots_zoom_3)
