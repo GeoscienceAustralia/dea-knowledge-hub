@@ -27,13 +27,14 @@ The technical report containing the data summary for the Phase 1 DEA Surface Ref
 
 ## Known Issues
 
-### 24 May 2024: Misclassification issue with Sentinel-2 's2cloudless' cloud masking from 2022
+:::{dropdown} 24 May 2024: Misclassification issue with Sentinel-2 's2cloudless' cloud masking from 2022
 
 An issue has been identified that is causing widespread misclassification of clouds in DEA's Sentinel-2 `s2cloudless` cloud mask data generated since January 2022. 
 
 We recommend that you avoid using `s2cloudless` cloud mask data from 2022 onwards until this issue is investigated. 
+:::
 
-### 26 Sep 2024: 's2cloudless' ARD reprocessing underway
+:::{dropdown} 26 Sep 2024: 's2cloudless' ARD reprocessing underway
 
 We have begun reprocessing the older Sentinel-2 ARD data that was impacted by a bug in the s2cloudless cloud masking layer. The bug is '[24 May 2024: Misclassification issue with Sentinel-2 ‘s2cloudless’ cloud masking from 2022](#may-2024-misclassification-issue-with-sentinel-2-s2cloudless-cloud-masking-from-2022)'.
 
@@ -42,9 +43,9 @@ The addition of an offset factor in ESA's Sentinel-2 L1C Processing Baseline 4.0
 Sentinel-2 `s2cloudless` data from 25 January 2022 to 7 June 2024 is affected, and we expect to replace these datasets over the next several months.
 
 In the meantime, we advise the users to avoid using `s2cloudless` for cloud masking on data between these two dates, and consider using the `Fmask` cloud mask as a temporary alternative during this period.
+:::
 
-:::{dropdown} Removing Sentinel-2 Level 1 and ARD duplicates (Resolved)
-### 25 Oct 2023
+:::{dropdown} 25 Oct 2023: Removing Sentinel-2 Level 1 and ARD duplicates (Resolved)
 
 Duplicate Sentinel-2 Level 1 (s2 l1) and Analysis Ready Data (ARD) has been discovered. The duplicate groups have the same region code and datetime attribute.
 
@@ -66,9 +67,7 @@ If you have any further questions or encounter issues, please contact <earth.obs
 [View the Tech Alert](https://communication.ga.gov.au/link/id/zzzz65384bbe2a28c901Pzzzz61de67bd94bfe861/page.html)
 :::
 
-:::{dropdown} Sentinel-2 ARD GQA coastal scenes error; DEA Burnt Area (S2 NRT, Provisional) decommissioning (Resolved)
-
-### Aug 2023
+:::{dropdown} Aug 2023: Sentinel-2 ARD GQA coastal scenes error; DEA Burnt Area (S2 NRT, Provisional) decommissioning (Resolved)
 
 **Sentinel-2 ARD error &mdash; GQA failing over coastal scenes**
 
@@ -101,5 +100,5 @@ Users who have previously accessed Sentinel-2 ARD over coastal areas and filtere
 If you have any questions about the above, please email us at <earth.observation@ga.gov.au>
 
 [View the Tech Alert](https://communication.ga.gov.au/pub/pubType/EO/pubID/zzzz64dc2b594744b162/interface.html)
-
 :::
+
