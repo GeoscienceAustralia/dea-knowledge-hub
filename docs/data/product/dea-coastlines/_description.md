@@ -29,7 +29,7 @@ Annual shoreline vectors that represent the median or ‘most representative’ 
 
 Dashed shorelines have low certainty.
 
-For the attributes of this layer, see the [Specifications tab](./?tab=specifications).
+Learn more about this layer in the [Specifications tab](./?tab=specifications).
 
 :::{figure} /_files/cmi/deacl_coastlines.*
 :alt: DEA CoastLines coastline layer
@@ -45,7 +45,7 @@ On the [interactive DEA Coastlines web map](https://maps.dea.ga.gov.au/story/DEA
 
 Rates of change points contains the following attribute columns that can be accessed by clicking on labelled points in the web map:
 
-For the attributes of this layer, see the [Specifications tab](./?tab=specifications).
+Learn more about this layer in the [Specifications tab](./?tab=specifications).
 
 :::{figure} /_files/cmi/deacl_statistics_2.*
 :alt: DEA CoastLines rates of change statistics layer
@@ -57,7 +57,7 @@ Figure 2: Rates of change points from DEA Coastlines visualised on the [interact
 
 Three points layers summarising coastal change within moving 1 km, 5 km and 10 km windows along the coastline (Figure 3). These layers are useful for visualising regional or continental-scale patterns of coastal change. 
 
-For the attributes of this layer, see the [Specifications tab](./?tab=specifications).
+Learn more about this layer in the [Specifications tab](./?tab=specifications).
 
 :::{figure} /_files/cmi/deacl_summary.*
 :alt: DEA CoastLines summary layer
