@@ -30,6 +30,7 @@ exclude_patterns = [
     "**/_*",
     "**/*.scss",
     "_robots",
+    "_components",
     "data/archive",
     "notebooks/Scientific_workflows",
     "notebooks/DEA_notebooks_template.ipynb",
@@ -136,7 +137,7 @@ html_theme_options = {
     "navigation_with_keys": False,
     "search_bar_text": "Search ...",
     "show_prev_next": False,
-    "header_links_before_dropdown": 4, # The number of header menu items to display before the rest are nested inside the 'More' dropdown.
+    "header_links_before_dropdown": 5, # The number of header menu items to display before the rest are nested inside the 'More' dropdown.
     "logo": {
         "link": "/"
     },

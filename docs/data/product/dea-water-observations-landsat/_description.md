@@ -34,18 +34,63 @@ Version 1.6.0 was updated with changes to the way different factors impeding wat
 
 Version 2.0.0 introduces the integration of Landsat 9, providing an increase in available observations from November 2021 onwards.
 
-The table below describes the meaning of each bit set per pixel in each WOFL. Where multiple factors impeding a clear observation are detected all the respective bits will be set. For example a value of 136 indicates water (128) AND terrain shadow (8) were observed for the pixel.
+The table below describes the meaning of each bit set per pixel in each WOFL.
 
-| Bit | Flagging        | Decimal Value | Description                                                              |
-|-----|-----------------|---------------|--------------------------------------------------------------------------|
-| 0   | no data         | 1             | Pixel masked out due to NO_DATA in NBART source, 0 = valid data in NBART |
-| 1   | contiguity      | 2             | Pixel masked out due to lack of data contiguity                          |
-| 2   | solar incidence | 4             | Pixel masked out due to solar incidence > 10 degrees                     |
-| 3   | terrain shadow  | 8             | Pixel masked out due to terrain shadow                                   |
-| 4   | high slope      | 16            | Pixel masked out due to high slope                                       |
-| 5   | cloud shadow    | 32            | Pixel masked out due to cloud shadow                                     |
-| 6   | cloud           | 64            | Pixel masked out due to cloud                                            |
-| 7   | water           | 128           | Water detected                                                           |
+:::{list-table} Classification bit sets
+:header-rows: 1
+
+* - Classification
+  - Bit
+  - Decimal
+  - Description
+
+* - **No Data**
+  - 0
+  - 1
+  - Missing or invalid data. Pixel masked out due to NO_DATA in NBART source, 0 = valid data in NBART.
+
+* - **Contiguity**
+  - 1
+  - 2
+  - Some data is missing in the original image (usually missing bands). Pixel masked out due to lack of data contiguity.
+
+* - **Low Solar Angle**
+  - 2
+  - 4
+  - Also known as Solar Incidence. The angle of the sun can cast a large shadow which can be misclassified as water. Pixel masked out due to solar incidence of less than 10 degrees.
+
+* - **Terrain Shadow**
+  - 3
+  - 8
+  - Topographic features can cast shadows which can be misclassified as water. Pixel masked out due to terrain shadow.
+
+* - **High Slope**
+  - 4
+  - 16
+  - A highly sloped terrain is less likely to contain water, so therefore, a detection of water on this surface is often incorrect. Pixel masked out due to high slope.
+
+* - **Cloud Shadow**
+  - 5
+  - 32
+  - Shadows are likely to be misclassified as water. Pixel masked out due to cloud shadow.
+
+* - **Cloud**
+  - 6
+  - 64
+  - Cloud is affecting the output data. Pixel masked out due to cloud.
+
+* - **Water**
+  - 7
+  - 128
+  - This pixel is classified as water.
+:::
+
+Where multiple factors impeding a clear observation are detected, a combination of the decimal values will be set by adding the relevant decimal values together. These combinations include 'High Slope + Cloud' (64 + 16 = 80), 'Cloud Shadow + Water' (128 + 32 = 160), and 'Cloud + Water' (128 + 64 = 192). Any number of these values can be combined, for example 'High Slope + Cloud' + 'Cloud Shadow + Water' (which is 240).
+
+The following table shows these combinations of decimal values. Some values cannot occur, for any of several reasons, and these values are greyed-out in the table.
+
+:::{include} ../../../_components/water-observations-combination-decimals-table.md
+:::
 
 Full details of the original algorithms and features of DEA Water Observations can be found in the Water Observations from Space paper by Mueller et al. (2015).
 

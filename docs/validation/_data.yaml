@@ -2,12 +2,15 @@ title: Validation reports
 description: How well does DEA's satellite-derived Analysis Ready Data compare with field-derived surface reflectance data? These reports provide this comparison.
 
 cards:
-  - name: Site Reports
+  - name: Site reports
     link: ./site-report/
     image: /_files/validation/validation-drone-thumbnail.jpg
-  - name: Quarterly Reports
+  - name: Quarterly reports
     link: ./quarterly-report/
     image: /_files/validation/validation-team-sensor-thumbnail.jpg
-  - name: User guides
+  - name: Yearly reports
+    link: ./yearly-report/
+    image: /_files/validation/validation-drone-flying-thumbnail.png
+  - name: Learn more
     link: /guides/setup/validation/
     image: /_files/validation/user-guides-thumbnail-2.jpg

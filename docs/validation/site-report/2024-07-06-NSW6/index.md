@@ -1,4 +1,4 @@
-# 2024-07-06-NSW6: Transect NSW Site 6, Landsat 8 overpass
+# 2024-07-06 NSW6: Transect NSW Site 6, Landsat 8 overpass
 
 This is a report of the field data collected on 6 July 2024 at the location of Transect NSW Site 6
 to validate the satellite data of the Landsat 8 overpass.
