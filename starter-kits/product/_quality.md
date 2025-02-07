@@ -7,5 +7,7 @@
 % ## Known issues
 
 % :::{dropdown} 1 Jan 2020: Example issue
+%
+% Example content
 % :::
 
