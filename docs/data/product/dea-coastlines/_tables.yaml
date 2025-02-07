@@ -15,7 +15,7 @@ layers_table:
       - name: certainty
         type: String
         units: null
-        description: A column providing important data quality flags for each annual shoreline.  For more information, see the `Quality tab <./?tab=quality>`_.
+        description: A column providing important data quality flags for each annual shoreline.  For more information, see the `Quality tab <./?tab=quality#quality-assurance>`_.
       - name: tide_datum
         type: String
         units: null
