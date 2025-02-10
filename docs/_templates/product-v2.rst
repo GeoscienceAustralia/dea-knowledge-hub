@@ -102,6 +102,10 @@
 
 {% set bands_count = bands_table_list | length %}
 
+{% set layers_table_list = page.tables.layers_table | selectattr("name", "!=", None) | list %}
+
+{% set layers_count = layers_table_list | length %}
+
 {% set page_title = page.data.short_name if page.data.is_latest_version else format_version_number(page.data.version_number) ~ ". " ~ page.data.short_name %}
 
 {% set display_title = page.data.short_name if page.data.is_latest_version else page.data.short_name ~ " " ~ format_version_number(page.data.version_number) %}
@@ -368,6 +372,16 @@
       * - **Bands**
         - `Single band of data ({{ bands_table_list[0].name }}) <./?tab=specifications>`_
       {%- endif %}
+      {% if layers_table_list and layers_count >= 3 %}
+      * - **Layers**
+        - `{{ layers_count }} layers of data ({{ layers_table_list[0].name }}, {{ layers_table_list[1].name }}, and more). View their attribute fields. <./?tab=specifications>`_
+      {%- elif layers_table_list and layers_count == 2 %}
+      * - **Layers**
+        - `{{ layers_count }} layers of data ({{ layers_table_list[0].name }} and {{ layers_table_list[1].name }}). View their attribute fields. <./?tab=specifications>`_
+      {%- elif layers_table_list and layers_count == 1 %}
+      * - **Layers**
+        - `Single layer of data ({{ layers_table_list[0].name }}). View attribute fields. <./?tab=specifications>`_
+      {%- endif %}
       {%- if page.data.doi %}
       * - **DOI**
         - `{{ page.data.doi }} <https://doi.org/{{ page.data.doi }}>`_
@@ -513,16 +527,21 @@
    .. list-table::
       :header-rows: 1
       :name: bands-table
+      :class: margin-bottom-2em
 
       * - 
-        - Aliases
+        - Type
+        - Units
         - Resolution
         - No-data
-        - Units
-        - Type
+        - Aliases
         - Description
       {% for band in bands_table_list %}
       * - **{{ band.name }}**
+        - {{ band.type or no_data_terms.dash }}
+        - {{ band.units or no_data_terms.dash }}
+        - {{ band.resolution if band.resolution or band.resolution == 0 else no_data_terms.dash }}
+        - {{ band.nodata if band.nodata or band.nodata == 0 else "" }}
         - {%- if band.aliases %}
           {%- for alias in band.aliases %}
           | {{ alias }}
@@ -530,14 +549,47 @@
           {%- else %}
           {{ no_data_terms.dash }}
           {%- endif %}
-        - {{ band.resolution if band.resolution or band.resolution == 0 else no_data_terms.dash }}
-        - {{ band.nodata if band.nodata or band.nodata == 0 else "" }}
-        - {{ band.units or no_data_terms.dash }}
-        - {{ band.type or no_data_terms.dash }}
         - {{ band.description or no_data_terms.dash }}
       {% endfor %}
 
    {{ page.tables.bands_footnote if page.tables.bands_footnote }}
+   {% endif %}
+
+   {% if layers_table_list %}
+   .. rubric:: Layers
+      :name: layers
+      :class: h2
+
+   .. raw:: html
+
+      <p class="margin-bottom-2em">Vector products contain one or more distinct layers of data, and each layer can contain multiple attribute fields. This product contains the layers {% for layer in layers_table_list %}{%- if loop.last and loop.index > 1 %}, and {% elif loop.index > 1 %}, {% endif -%}<a href="#layer-{{ loop.index }}">{{ layer.name }}</a>{% endfor %}.</p>
+
+   {% for layer in layers_table_list %}
+   .. rubric:: {{ layer.name }}
+      :name: layer-{{ loop.index }}
+      :class: h3
+
+   {{ layer.description or no_data_terms.dash }}
+
+   .. list-table::
+      :header-rows: 1
+      :name: layers-table
+      :class: margin-bottom-2em
+
+      * -
+        - Type
+        - Units
+        - Description
+      {% for attribute in layer.attributes %}
+      * - **{{ attribute.name }}**
+        - {{ attribute.type or no_data_terms.dash }}
+        - {{ attribute.units or no_data_terms.dash }}
+        - {{ attribute.description }}
+      {% endfor %}
+   {% endfor %}
+
+   {{ page.tables.layers_footnote if page.tables.layers_footnote }}
+
    {% endif %}
 
    .. rubric:: Product information
