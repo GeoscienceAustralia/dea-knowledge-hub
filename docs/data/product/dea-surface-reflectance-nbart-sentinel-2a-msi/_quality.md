@@ -28,6 +28,7 @@ The technical report containing the data summary for the Phase 1 DEA Surface Ref
 ## Known Issues
 
 :::{dropdown} 24 May 2024: Misclassification issue with Sentinel-2 's2cloudless' cloud masking from 2022
+:open:
 
 An issue has been identified that is causing widespread misclassification of clouds in DEA's Sentinel-2 `s2cloudless` cloud mask data generated since January 2022. 
 
@@ -35,6 +36,7 @@ We recommend that you avoid using `s2cloudless` cloud mask data from 2022 onward
 :::
 
 :::{dropdown} 26 Sep 2024: 's2cloudless' ARD reprocessing underway
+:open:
 
 We have begun reprocessing the older Sentinel-2 ARD data that was impacted by a bug in the s2cloudless cloud masking layer. The bug is '[24 May 2024: Misclassification issue with Sentinel-2 ‘s2cloudless’ cloud masking from 2022](#may-2024-misclassification-issue-with-sentinel-2-s2cloudless-cloud-masking-from-2022)'.
 

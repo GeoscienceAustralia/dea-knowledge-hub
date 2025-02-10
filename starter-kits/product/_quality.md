@@ -7,7 +7,8 @@
 % ## Known issues
 
 % :::{dropdown} 1 Jan 2020: Example issue
+% :open:
 %
-% Example content
+% This uses the `:open:` option because it is an open issue.
 % :::
 

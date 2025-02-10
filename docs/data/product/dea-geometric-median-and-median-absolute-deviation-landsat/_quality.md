@@ -13,6 +13,7 @@ Also, note that since  the geometric median and MAD are synthetic (not observed 
 ## Known Issues
 
 :::{dropdown} 19 Sep 2024: GeoMAD processing bug
+:open:
 
 In the [DEA Geometric Median and Median Absolute Deviation (Landsat)](/data/product/dea-geometric-median-and-median-absolute-deviation-landsat/) product, a bug in the processing code related to multithreading using numexpr (a fast numerical expression evaluator for Numpy) has been identified which may cause a 400x400 pixel data block to be misplaced within a tile. For the full GeoMAD archive, it is possible that there are around 8-12 tiles with incorrect data (misplaced blocks). It is unknown at this stage which tiles are affected. We are investigating the bug and will provide more information in late 2024 to early 2025.
 :::
