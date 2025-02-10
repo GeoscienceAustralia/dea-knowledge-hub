@@ -57,7 +57,9 @@
 } %}
 
 {% set coordinate_reference_system_terms = {
-   "EPSG:3577": "GDA94 / Australian Albers (EPSG:3577)",
+   "EPSG:3577": "`GDA94 / Australian Albers (EPSG:3577) <https://epsg.org/crs_3577/GDA94-Australian-Albers.html>`_",
+   "EPSG:4326": "`WGS 84 (EPSG:4326) <https://epsg.org/crs_4326/WGS-84.html>`_",
+   "MULTIPLE_UTM": "Multiple UTM zone CRSs",
 } %}
 
 {# Macros #}
@@ -655,11 +657,6 @@
         - {{ spatial_data_type }}
         - The most common spatial types are raster and vector.
       {%- endif %}
-      {%- if coordinate_reference_system_term %}
-      * - **Coordinate Reference System (CRS)**
-        - {{ coordinate_reference_system_term }}
-        - The mathematical method of assigning coordinates to locations on the Earth's surface.
-      {%- endif %}
       {%- if page.data.resolution %}
       * - **Spatial resolution**
         - {{ page.data.resolution }}
@@ -686,6 +683,11 @@
       * - **Temporal coverage**
         - Until {{ page.data.temporal_coverage_end }}
         - The time span for which data is available.
+      {%- endif %}
+      {%- if coordinate_reference_system_term %}
+      * - **Coordinate Reference System (CRS)**
+        - {{ coordinate_reference_system_term }}
+        - The method of mapping spatial data to the Earth's surface.
       {%- endif %}
       {%- if is_frequency_ongoing %}
       * - **Update frequency**

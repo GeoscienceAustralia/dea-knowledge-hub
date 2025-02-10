@@ -24,7 +24,7 @@ data_update_activity: ONGOING
 is_currency_reported: true
 
 resolution: 10 m
-coordinate_reference_system: null
+coordinate_reference_system: MULTIPLE_UTM
 
 product_ids:
   - ga_s2_wo_provisional_3
