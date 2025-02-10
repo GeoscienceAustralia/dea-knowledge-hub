@@ -24,7 +24,7 @@ data_update_activity: NO_UPDATES
 is_currency_reported: false
 
 resolution: 10-60 m
-coordinate_reference_system: null
+coordinate_reference_system: MULTIPLE_UTM
 
 product_ids:
   - ga_s2am_ard_3
