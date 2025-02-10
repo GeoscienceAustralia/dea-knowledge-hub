@@ -605,11 +605,6 @@
         - {{ spatial_data_type }}
         - The most common spatial types are raster and vector.
       {%- endif %}
-      {%- if coordinate_reference_system_term %}
-      * - **Coordinate Reference System (CRS)**
-        - {{ coordinate_reference_system_term }}
-        - The method of mapping spatial data to the Earth's surface.
-      {%- endif %}
       {%- if page.data.resolution %}
       * - **Spatial resolution**
         - {{ page.data.resolution }}
@@ -636,6 +631,11 @@
       * - **Temporal coverage**
         - Until {{ page.data.temporal_coverage_end }}
         - The time span for which data is available.
+      {%- endif %}
+      {%- if coordinate_reference_system_term %}
+      * - **Coordinate Reference System (CRS)**
+        - {{ coordinate_reference_system_term }}
+        - The method of mapping spatial data to the Earth's surface.
       {%- endif %}
       {%- if is_frequency_ongoing %}
       * - **Update frequency**
