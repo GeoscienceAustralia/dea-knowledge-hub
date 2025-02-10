@@ -608,7 +608,7 @@
       {%- if coordinate_reference_system_term %}
       * - **Coordinate Reference System (CRS)**
         - {{ coordinate_reference_system_term }}
-        - The mathematical method of assigning coordinates to locations on the Earth's surface.
+        - The method of mapping spatial data to the Earth's surface.
       {%- endif %}
       {%- if page.data.resolution %}
       * - **Spatial resolution**
