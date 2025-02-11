@@ -8,7 +8,7 @@
 {% set valid_web_services = Data.web_services | selectattr("link",  "!=", None) | list %}
 {% set valid_code_samples = Data.code_examples | selectattr("link",  "!=", None) | list %}
 {% set valid_custom = Data.custom | selectattr("icon",  "!=", None) | selectattr("link",  "!=", None) | selectattr("name",  "!=", None) | list %}
-{% set valid_product_types = [Data.product_type, Data.spatial_data_type] | select("!=", None) | list %}
+{% set valid_product_types = [Data.lineage_type, Data.spatial_data_type] | select("!=", None) | list %}
 {% set valid_product_ids = Data.product_ids | select("!=", None) | list %}
 {% set valid_custom_citations = Data.custom_citations | select("!=", None) | list %}
 {% set valid_tags = Data.tags | select("!=", None) | list %}
@@ -62,13 +62,13 @@
       {% if valid_product_types %}
       :{{ product_types_label }}: {{ valid_product_types | join(", ") }}
       {%- endif %}
-      {%- if Data.time_span %}
-      {%- if Data.time_span.start and Data.time_span.end %}
-      :Coverage: {{ Data.time_span.start }} :raw-html:`&mdash;` {{ Data.time_span.end }}
-      {%- elif Data.time_span.start  %}
-      :Starts at: {{ Data.time_span.start }}
-      {%- elif Data.time_span.end  %}
-      :Ends at: {{ Data.time_span.end }}
+      {%- if Data.temporal_coverage %}
+      {%- if Data.temporal_coverage.start and Data.temporal_coverage.end %}
+      :Coverage: {{ Data.temporal_coverage.start }} :raw-html:`&mdash;` {{ Data.temporal_coverage.end }}
+      {%- elif Data.temporal_coverage.start  %}
+      :Starts at: {{ Data.temporal_coverage.start }}
+      {%- elif Data.temporal_coverage.end  %}
+      :Ends at: {{ Data.temporal_coverage.end }}
       {%- endif %}
       {%- endif %}
       {%- if valid_product_ids %}

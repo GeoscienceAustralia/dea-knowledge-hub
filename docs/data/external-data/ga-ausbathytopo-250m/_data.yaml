@@ -6,9 +6,9 @@
 title: GA AusBathyTopo 250m Grid
 long_title: Geoscience Australia AusBathyTopo 250m (Australia) 2023 Grid
 header_image: /_files/external-data/ga_ausbathytopo250m_2023.thumbnail.jpg
-product_type: null
+lineage_type: null
 spatial_data_type: Raster
-time_span:
+temporal_coverage:
   start: 2023
   end: 2023
 product_ids:
