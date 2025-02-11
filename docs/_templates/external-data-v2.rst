@@ -189,12 +189,14 @@
           :name: key-details
           :class: h2
 
-       {{ Data.long_title }}
-
        .. list-table::
           :name: key-details-table
 
-          {% if Data.doi and Data.ecat %}
+          {% if Data.long_title %}
+          * - **Long title**
+            - {{ Data.long_title }}
+          {%- endif %}
+          {%- if Data.doi and Data.ecat %}
           * - **DOI**
             - `{{ Data.doi }} <https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/{{ Data.ecat }}>`_
           {%- elif Data.doi %}
