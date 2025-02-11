@@ -32,3 +32,4 @@ layers_table:
         type: null
         units: null
         description: The orbit number is determined using the information provided in the NORAD Two Line Element (TLE) file(s).The TLE file provides reference information foran “epoch” orbit that allows the current orbit to be calculated using the acquisition information. A value of -1 indicates the orbit is not reported.
+
