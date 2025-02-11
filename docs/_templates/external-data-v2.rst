@@ -272,7 +272,6 @@
             - Type
             - Units
             - Resolution
-            - CRS
             - Nodata
             - Aliases
             - Description
@@ -281,7 +280,6 @@
             - {{ band.type or not_available_text }}
             - {{ band.units or none_text }}
             - {{ band.resolution or not_available_text }}
-            - {{ band.crs or not_available_text }}
             - {{ band.nodata }}
             - {{ band.aliases|join(', ') if band.aliases else none_text }}
             - {{ band.description or none_text }}
@@ -294,6 +292,21 @@
        {{ Tables.bands.footnotes if Tables.bands.footnotes }}
        {% endif %}
     {% endif %}
+
+    .. rubric:: Product information
+       :name: product-information
+       :class: h2
+
+    This metadata provides general information about the product.
+
+    .. list-table::
+       :name: product-information-table
+
+       {%- if Data.coordinate_reference_system %}
+       * - **Coordinate Reference System (CRS)**
+         - {{ Data.coordinate_reference_system }}
+         - The method of mapping spatial data to the Earth's surface.
+       {%- endif %}
 
     {% if Data.enable_access %}
     .. tab-item:: Access
