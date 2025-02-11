@@ -306,6 +306,16 @@
             - {{ Data.coordinate_reference_system }}
             - The method of mapping spatial data to the Earth's surface.
           {%- endif %}
+          {%- if Data.doi %}
+          * - **DOI**
+            - `{{ Data.doi }} <https://doi.org/{{ Data.doi }}>`_
+            - The Digital Object Identifier.
+          {%- endif %}
+          {%- if Data.ecat %}
+          * - **Catalogue ID**
+            - `{{ Data.ecat }} <https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/{{ Data.ecat }}>`_
+            - The Data and Publications catalogue (eCat) ID.
+          {%- endif %}
     {% endif %}
 
     {% if Data.enable_access %}
