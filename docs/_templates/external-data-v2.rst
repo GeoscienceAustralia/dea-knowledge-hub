@@ -32,7 +32,7 @@
 {% set has_key_details = (Data.licence_name and Data.licence_link) or Data.doi or Data.ecat %}
 
 {% set product_ids_label = "Product IDs" if valid_product_ids | length > 1 else "Product ID" %}
-{% set product_types_label = "Product types" if valid_product_types | length > 1 else "Product type" %}
+{% set product_types_label = "Types" if valid_product_types | length > 1 else "Type" %}
 
 {% set none_text = "None" %}
 {% set not_available_text = "N/A" %}
@@ -64,7 +64,7 @@
       {%- endif %}
       {%- if Data.time_span %}
       {%- if Data.time_span.start and Data.time_span.end %}
-      :Time span: {{ Data.time_span.start }} :raw-html:`&mdash;` {{ Data.time_span.end }}
+      :Coverage: {{ Data.time_span.start }} :raw-html:`&mdash;` {{ Data.time_span.end }}
       {%- elif Data.time_span.start  %}
       :Starts at: {{ Data.time_span.start }}
       {%- elif Data.time_span.end  %}
