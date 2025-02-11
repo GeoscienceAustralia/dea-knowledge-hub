@@ -9,6 +9,8 @@ This page is a list of academic articles, peer-reviewed presentations, and other
 
 ## 2024
 
+Asbridge E, Krause C, Lucas R, et al. Characterising the short- and long-term impacts of tropical cyclones on mangroves using the Landsat archive. Cambridge Prisms: Coastal Futures. Published online 2024:1-41. <https://doi.org/10.1017/cft.2024.19>
+
 Bishop-Taylor, R., Phillips, C., Sagar, S., Newey, V., 2024. Time and Tide: Mapping the Changing 3D Shape of Australia's Coastline Using Petabytes of Open Satellite Imagery. AGU24 Annual Meeting.
 
 Byrne, G., Broomhall, M., Walsh, A., Thankappan, M., Hay, E., Li, F., McAtee, B., Garcia, R., Anstee, J., Kerrisk, G., Drayson, N., Barnetson, J., Samford, I., Denham, R., 2024. Validating Digital Earth Australia NBART for the Landsat 9 Underfly of Landsat 8. Remote Sensing, 16, p. 1233. <http://dx.doi.org/10.3390/rs16071233>
