@@ -210,6 +210,10 @@
           * - **Persistent ID**
             - `{{ Data.ecat }} <https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/{{ Data.ecat }}>`_
           {%- endif %}
+          {%- if valid_tags %}
+          * - **Tags**
+            - {{ valid_tags | join(", ") }}
+          {%- endif %}
           {%- if Data.licence_name and Data.licence_link %}
           * - **Licence**
             - `{{ Data.licence_name }} <{{ Data.licence_link }}>`_
@@ -251,10 +255,6 @@
           {% endfor %}
        {%- endif %}
        {%- endif %}
-
-       .. {%- if valid_tags %}
-       .. .. tags:: {{ valid_tags | join(", ") }}
-       .. {%- endif %}
 
     {% endif %}
 
