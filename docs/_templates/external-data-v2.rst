@@ -1,5 +1,5 @@
 {% set Data = load('_data.yaml') %}
-{% set Specifications = load('_specifications.yaml') %}
+{% set Tables = load('_tables.yaml') %}
 
 {% set valid_maps = Data.maps | selectattr("link",  "!=", None) | list %}
 {% set valid_data = Data.data | selectattr("link",  "!=", None) | list %}
@@ -12,7 +12,7 @@
 {% set valid_product_ids = Data.product_ids | select("!=", None) | list %}
 {% set valid_custom_citations = Data.custom_citations | select("!=", None) | list %}
 {% set valid_tags = Data.tags | select("!=", None) | list %}
-{% set valid_bands = Specifications.bands.bands_table | selectattr("name",  "!=", None) | list %}
+{% set valid_bands = Tables.bands.bands_table | selectattr("name",  "!=", None) | list %}
 
 {% set external_data_label = "Go to the external data page" %}
 {% set map_label = "See it on a map" %}
@@ -291,7 +291,7 @@
 
           <br />
 
-       {{ Specifications.bands.footnotes if Specifications.bands.footnotes }}
+       {{ Tables.bands.footnotes if Tables.bands.footnotes }}
        {% endif %}
     {% endif %}
 
