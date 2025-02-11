@@ -20,9 +20,8 @@ coordinate_reference_system: EPSG:4326
 doi: 10.26186/148758
 ecat: "148758"
 
-licence:
-  name: Creative Commons Attribution 4.0 International Licence
-  link: https://creativecommons.org/licenses/by/4.0/
+licence_name: Creative Commons Attribution 4.0 International Licence
+licence_link: https://creativecommons.org/licenses/by/4.0/
 
 citations:
   data_citation: "Beaman, R. AusBathyTopo 250m (Australia) 2023 Grid - A High-resolution Depth Model for Australia (20230004C). Geoscience Australia, Canberra. https://doi.org/10.26186/148758"

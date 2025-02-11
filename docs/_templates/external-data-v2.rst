@@ -29,7 +29,7 @@
 {% set code_sample_default_name = "Code sample" %}
 
 {% set has_access_data = valid_external_data or valid_maps or valid_data or valid_explorers or valid_web_services or valid_code_samples or valid_custom %}
-{% set has_key_details = (Data.licence.name and Data.licence.link) or Data.doi or Data.ecat %}
+{% set has_key_details = (Data.licence_name and Data.licence_link) or Data.doi or Data.ecat %}
 
 {% set product_ids_label = "Product IDs" if valid_product_ids | length > 1 else "Product ID" %}
 {% set product_types_label = "Product types" if valid_product_types | length > 1 else "Product type" %}
@@ -199,11 +199,12 @@
           * - **Persistent ID**
             - `{{ Data.ecat }} <https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/{{ Data.ecat }}>`_
           {%- endif %}
-          {%- if Data.licence %}
-          {%- if Data.licence.name and Data.licence.link %}
+          {%- if Data.licence_name and Data.licence_link %}
           * - **Licence**
-            - `{{ Data.licence.name }} <{{ Data.licence.link }}>`_
-          {%- endif %}
+            - `{{ Data.licence_name }} <{{ Data.licence_link }}>`_
+          {% elif Data.licence_name %}
+          * - **Licence**
+            - {{ Data.licence_name }}
           {%- endif %}
        {%- endif %}
 
@@ -315,6 +316,15 @@
           * - **Catalogue ID**
             - `{{ Data.ecat }} <https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/{{ Data.ecat }}>`_
             - The Data and Publications catalogue (eCat) ID.
+          {%- endif %}
+          {%- if Data.licence_name and Data.licence_link %}
+          * - **Licence**
+            - `{{ Data.licence_name }} <{{ Data.licence_link }}>`_
+            - 
+          {% elif Data.licence_name %}
+          * - **Licence**
+            - {{ Data.licence_name }}
+            - 
           {%- endif %}
     {% endif %}
 
