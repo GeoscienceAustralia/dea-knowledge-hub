@@ -185,12 +185,16 @@
        {%- endif %}
 
        {% if has_key_details %}
-       .. rubric:: Key details
-          :name: key-details
+       .. rubric:: Key specifications
+          :name: key-specifications
           :class: h2
 
+       {% if Data.enable_specifications %}
+       For more specifications, see the `Specifications tab <./?tab=specifications>`_.
+       {% endif %}
+
        .. list-table::
-          :name: key-details-table
+          :name: key-specifications-table
 
           {% if Data.long_title %}
           * - **Long title**
