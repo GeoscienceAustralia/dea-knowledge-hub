@@ -57,6 +57,14 @@
 
       .. rubric:: {{ Data.title }}
 
+      {% if valid_product_ids and Data.enable_specifications %}
+      `{{ valid_product_ids | join(", ") }} <./?tab=specifications>`_
+      {%- elif valid_product_ids %}
+      {{ valid_product_ids | join(", ") }}
+      {%- else %}
+      External data
+      {%- endif %}
+
       {% if valid_product_types %}
       :{{ product_types_label }}: {{ valid_product_types | join(", ") }}
       {%- endif %}
