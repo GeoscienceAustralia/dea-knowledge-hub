@@ -68,6 +68,8 @@ ga_s2ls_intertidal_cyear_3_x082y139_2022--P1Y_final_elevation.tif
 
 ### Core Product Layers 
 
+See the attributes of these layers in the [Specifications tab](./?tab=specifications).
+
 #### DEA Intertidal Elevation (elevation)
 
 DEA Intertidal Elevation (Figure 1) provides elevation in metre units relative to modelled Mean Sea Level for each pixel of the satellite-observed exposed intertidal zone across the Australian coastline. The elevation model is generated from DEA Landsat and Sentinel-2 surface reflectance data from each 3-year composite period, utilising a pixel-based approach based on [Ensemble Tidal Modelling](#ensemble-tidal-modelling). For every pixel, the time series of surface reflectance data is converted to the Normalised Difference Water Index (NDWI) and each observation tagged with the tidal height modelled at the time of acquisition by the satellite. A rolling median is applied from low to high tide to reduce noise (such as white water, sunglint, and non-tidal water level variability), then analysed to identify the tide height at which the pixel transitions from dry to wet. This tide height represents the elevation of the pixel.
@@ -99,6 +101,8 @@ Figure 3 &mdash; DEA Intertidal Exposure, with low exposure values (i.e. rarely 
 :::
 
 ### Tidal Attribute Layers
+
+See the attributes of these layers in the [Specifications tab](./?tab=specifications).
 
 #### DEA Intertidal tidal spread (ta_spread)
 
@@ -135,6 +139,8 @@ The lowest astronomical tide dataset maps the lowest astronomical tide (LAT) for
 The highest astronomical tide dataset maps the highest astronomical tide (HAT) for each pixel, as modelled by the Ensemble Tidal Model for the analysis epoch. Note that the HAT modelled for each individual analysis epoch may differ from the HAT modelled across ‘all time’ for any given location.
 
 ### Quality Assessment Layers
+
+See the attributes of these layers in the [Specifications tab](./?tab=specifications).
 
 ##### DEA Intertidal NDWI frequency (qa_ndwi_freq)
 
