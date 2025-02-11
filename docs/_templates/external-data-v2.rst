@@ -291,22 +291,22 @@
 
        {{ Tables.bands.footnotes if Tables.bands.footnotes }}
        {% endif %}
+
+       .. rubric:: Product information
+          :name: product-information
+          :class: h2
+
+       This metadata provides general information about the product.
+
+       .. list-table::
+          :name: product-information-table
+
+          {%- if Data.coordinate_reference_system %}
+          * - **Coordinate Reference System (CRS)**
+            - {{ Data.coordinate_reference_system }}
+            - The method of mapping spatial data to the Earth's surface.
+          {%- endif %}
     {% endif %}
-
-    .. rubric:: Product information
-       :name: product-information
-       :class: h2
-
-    This metadata provides general information about the product.
-
-    .. list-table::
-       :name: product-information-table
-
-       {%- if Data.coordinate_reference_system %}
-       * - **Coordinate Reference System (CRS)**
-         - {{ Data.coordinate_reference_system }}
-         - The method of mapping spatial data to the Earth's surface.
-       {%- endif %}
 
     {% if Data.enable_access %}
     .. tab-item:: Access
