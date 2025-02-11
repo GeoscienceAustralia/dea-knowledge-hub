@@ -9,7 +9,7 @@ This page is a list of academic articles, peer-reviewed presentations, and other
 
 ## 2024
 
-Asbridge E, Krause C, Lucas R, et al. Characterising the short- and long-term impacts of tropical cyclones on mangroves using the Landsat archive. Cambridge Prisms: Coastal Futures. Published online 2024:1-41. <https://doi.org/10.1017/cft.2024.19>
+Asbridge, E., Krause, C., Lucas, R., Owers, C. J., Rogers, K., Lymburner, L., Mueller, N., Ai, E., Wong, S. (2024). Characterising the short- and long-term impacts of tropical cyclones on mangroves using the Landsat archive. Cambridge Prisms: Coastal Futures, 1–41. <https://doi.org/10.1017/cft.2024.19>
 
 Bishop-Taylor, R., Phillips, C., Sagar, S., Newey, V., 2024. Time and Tide: Mapping the Changing 3D Shape of Australia's Coastline Using Petabytes of Open Satellite Imagery. AGU24 Annual Meeting.
 
