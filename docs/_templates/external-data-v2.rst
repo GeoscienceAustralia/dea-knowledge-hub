@@ -57,7 +57,13 @@
 
       .. rubric:: {{ Data.title }}
 
-      {{ Data.long_title }}
+      {% if valid_product_ids and page.data.enable_specifications %}
+      `{{ valid_product_ids | join(", ") }} <./?tab=specifications>`_
+      {%- elif valid_product_ids %}
+      {{ valid_product_ids | join(", ") }}
+      {%- else %}
+      External data
+      {%- endif %}
 
       {% if valid_product_types %}
       :{{ product_types_label }}: {{ valid_product_types | join(", ") }}
@@ -70,9 +76,6 @@
       {%- elif Data.temporal_coverage.end  %}
       :Ends at: {{ Data.temporal_coverage.end }}
       {%- endif %}
-      {%- endif %}
-      {%- if valid_product_ids %}
-      :{{ product_ids_label }}: {{ valid_product_ids | join(", ") }}
       {%- endif %}
       :Produced by: {{ Data.external_party }}
 
@@ -185,6 +188,8 @@
        .. rubric:: Key details
           :name: key-details
           :class: h2
+
+       {{ Data.long_title }}
 
        .. list-table::
           :name: key-details-table
@@ -320,11 +325,11 @@
           {%- if Data.licence_name and Data.licence_link %}
           * - **Licence**
             - `{{ Data.licence_name }} <{{ Data.licence_link }}>`_
-            - 
+            - The licence and copyright.
           {% elif Data.licence_name %}
           * - **Licence**
             - {{ Data.licence_name }}
-            - 
+            - The licence and copyright.
           {%- endif %}
     {% endif %}
 
