@@ -302,7 +302,7 @@
        .. list-table::
           :name: product-information-table
 
-          {%- if Data.coordinate_reference_system %}
+          {% if Data.coordinate_reference_system %}
           * - **Coordinate Reference System (CRS)**
             - {{ Data.coordinate_reference_system }}
             - The method of mapping spatial data to the Earth's surface.
