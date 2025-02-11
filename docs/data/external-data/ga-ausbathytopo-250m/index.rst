@@ -1,2 +1,2 @@
 .. datatemplate:nodata::
-   :template: external-data-v1.rst
+   :template: external-data-v2.rst
