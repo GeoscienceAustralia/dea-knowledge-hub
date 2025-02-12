@@ -6,7 +6,6 @@ bands:
     - name: height_depth
       aliases: []
       resolution: 0.0025 degrees
-      crs: "EPSG:4326"
       nodata: -32767
       units: Metres
       type: float32

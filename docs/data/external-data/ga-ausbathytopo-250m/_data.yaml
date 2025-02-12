@@ -6,21 +6,22 @@
 title: GA AusBathyTopo 250m Grid
 long_title: Geoscience Australia AusBathyTopo 250m (Australia) 2023 Grid
 header_image: /_files/external-data/ga_ausbathytopo250m_2023.thumbnail.jpg
-product_type: null
+lineage_type: null
 spatial_data_type: Raster
-time_span:
+temporal_coverage:
   start: 2023
   end: 2023
 product_ids:
   - ga_ausbathytopo250m_2023
 external_party: Geoscience Australia
 
+coordinate_reference_system: EPSG:4326
+
 doi: 10.26186/148758
 ecat: "148758"
-nci: null
-licence:
-  name: Creative Commons Attribution 4.0 International Licence
-  link: https://creativecommons.org/licenses/by/4.0/
+
+licence_name: Creative Commons Attribution 4.0 International Licence
+licence_link: https://creativecommons.org/licenses/by/4.0/
 
 citations:
   data_citation: "Beaman, R. AusBathyTopo 250m (Australia) 2023 Grid - A High-resolution Depth Model for Australia (20230004C). Geoscience Australia, Canberra. https://doi.org/10.26186/148758"
