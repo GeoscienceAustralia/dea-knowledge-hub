@@ -67,9 +67,13 @@ An additional limitation of the Landsat series is the availability of data due t
 
 The result of the availability of the satellites is that the most consistent data availability occurs when two satellites are in operation (most of the 2003 to present period). The least data availability is in 2011 – 2012 when only Landsat 7 was available with data containing the SLC-Off striping issue. The overall data availability for the Landsat satellites is shown in Table 5. The datasets used in this analysis are shown in Table 6. 
 
-![table detailing availability of different Landsat satellites since 1986 and any known issues.](/_files/land_cover/eo-limitations-table.PNG)
+![eo-limitations-table](/_files/land_cover/table5-overall-landsat-sensor-data-availability-in-dea-dc-used-for-lc-classification.PNG)
 
-![datasets within DEA used to provide essential descriptor information](/_files/land_cover/DEA-datasets-used.PNG)
+*Table 1.* Overall Landsat sensor data availability in the DEA data cube used for the Land Cover classification.
+
+![DEA-datasets-used](/_files/land_cover/table6-datasets-DEA-Essential-Descriptor-info-for-DEA-LC-classification.PNG)
+
+*Table 2.* Datasets within DEA used to provide Essential Descriptor information for the DEA Land Cover classification.
 
 ### Inconsistent data presence in three Western Australia tiles
 
@@ -114,46 +118,61 @@ A validation assessment has been undertaken for both the versions of Land Cover:
 
 ### Collection 2 Validation
 
-The product was validated using 6000 points spatially distributed over Australia. These points were created using a stratified random sampling approach slightly adjusted for oversampling. This process was conducted for 2010 and 2015 creating 12000 samples in total. After removing points with No Data and spurious values the total number was 11750. The sample points were divided into clusters for visual assessment against the outputs from the classification and assessed individually from a pool of 10 people. To compare the individual biases of the individual assessors, an additional set of validation points were created that all assessors evaluated, the results are shown in Table 4. Where assessors could identify a predominant land cover (i.e. not ‘mixed’ pixels or ‘unsure’), all assessors agreed 75 % of the time. 
+The product was validated using 6000 points spatially distributed over Australia. These points were created using a stratified random sampling approach slightly adjusted for oversampling. This process was conducted for 2010 and 2015 creating 12000 samples in total. After removing points with No Data and spurious values the total number was 11750. The sample points were divided into clusters for visual assessment against the outputs from the classification and assessed individually from a pool of 10 people. To compare the individual biases of the individual assessors, an additional set of validation points were created that all assessors evaluated, the results are shown in Table 4. Where assessors could identify a predominant land cover (i.e. not “mixed” pixels or “unsure”), all assessors agreed 75 % of the time. 
 
-*Table 2* contains the overall accuracy for all classes. The term ‘support’ refers to the number of validation points used in the calculation of that accuracy value. 
+*Table 3* contains the overall accuracy for all classes. The term “support” refers to the number of validation points used in the calculation of that accuracy value. 
 
-![Overall accuracy of DEA Land Cover is 80%. 2010 accuracy is 82%, 2015 accuracy is 78%.](/_files/land_cover/overall-accuracy_0.PNG)
+![Overall accuracy of DEA Land Cover is 80%. 2010 accuracy is 82%, 2015 accuracy is 78%.](/_files/land_cover/table2-overall-accuracy-dea-lc.PNG)
+*Table 3*. Overall accuracy of DEA Land Cover.
 
-*Table 3* contains per-class accuracy information. “Precision” refers to the ability of a classification model to return only relevant instances. “Recall” refers to the ability to identify all relevant instances. The “F1 score” is a combination of precision and recall and an overall measure of accuracy. Classes such as artificial surfaces, natural aquatic vegetation and water had high accuracies. Classifying cultivated terrestrial vegetation and bare surfaces was challenging and accuracies were the lowest of the six classes presented here.
+*Table 4* contains per-class accuracy information. “Precision” refers to the ability of a classification model to return only relevant instances. “Recall” refers to the ability to identify all relevant instances. The “F1 score” is a combination of precision and recall and an overall measure of accuracy. Classes such as artificial surfaces, natural aquatic vegetation and water had high accuracies. Classifying cultivated terrestrial vegetation and bare surfaces was challenging and accuracies were the lowest of the six classes presented here.
 
-![Table showing accuracy per class, including precision, recall, F1 score and support values per class. ](/_files/land_cover/per-class-accuracy.PNG)
+![Table showing accuracy per class, including precision, recall, F1 score and support values per class. ](/_files/land_cover/table3-per-class-accuracy-info-dea-lc.PNG)
+*Table 4*. Per-class accuracy information for DEA Land Cover.
 
-![table showing the agreement between assessors.](/_files/land_cover/inter-assessor-agreement.PNG)
+![table showing the agreement between assessors.](/_files/land_cover/table4-inter-assessor-agreement.PNG)
+*Table 5*. Inter-assessor agreement.
 
 ### Collection 3 Validation
 
-Validation against three data sources was undertaken: validation points reused from collection 2, with the addition of point attributes from Köppen Climate Zone and state/territory, added to facilitate segment analysis, the Blue Glance global dataset of indepenedent 'ground truth' data, and the Land Cover Collection 2 data to understand the extent of change between the versions.
+Validation against three data sources was undertaken: validation points reused from collection 2, with the addition of point attributes from Köppen Climate Zone and state/territory, added to facilitate segment analysis, the Blue Glance global dataset of indepenedent “ground truth” data, and the Land Cover Collection 2 data to understand the extent of change between the versions.
 
 **Validation Points**
 With the addition of validation points, the Collection 2 validation was run again with the following C2 vs C3 comparison results:
 
-Overall C3 demonstrates greater consistency and more reasonable classification across all time periods and classes than C2. Both C3 and C2 show average degradation in 2010 compared to 2015, a trend that is propagated from Level 1 and ML results. C3 shows slight degradation compared to C2 on the Validation points, with Cultivated Veg and Natural Veg contributing the most to this difference. The Artificial Sfc class has too few points to be considered statistically significant.
+Overall C3 demonstrates greater consistency and more reasonable classification across all time periods and classes than C2. Both C3 and C2 show average degradation in 2010 compared to 2015, a trend that is propagated from Level 1 and ML results. C3 shows slight degradation compared to C2 on the Validation points, with Cultivated Vegetation and Natural Vegetation contributing the most to this difference. The Artificial Surface class has too few points to be considered statistically significant.
 
 **Validation Points 2010**
 
-![C2 2010 Accuracy](/_files/land_cover/c3_l3-13.png)
+|   |   |
+|---|---|
+| a) ![C2 2010 Accuracy](/_files/land_cover/c3_l3-13.png) | b) ![C3 2010 Accuracy](/_files/land_cover/c3_l3-14.png) |
 
-![C3 2010 Accuracy](/_files/land_cover/c3_l3-14.png)
+*Table 6*. Classification metrics of collection 2 (*a*) and collection 3 (*b*) for the year 2010.
 
 ![C2 2010 Matrix](/_files/land_cover/c3_l3-15.png)
 
+*Table 7*. Confusion matrix: Collection 2 predictions vs. Validation Points for 2010.
+
 ![C3 2010 Matrix](/_files/land_cover/c3_l3-16.png)
+
+*Table 8*. Confusion matrix: Collection 3 predictions vs. Validation Points for 2010.
 
 **Validation Points 2015**
 
-![C2 2015 Accuracy](/_files/land_cover/c3_l3-9.png)
+|   |   |
+|---|---|
+| a) ![C2 2015 Accuracy](/_files/land_cover/c3_l3-9.png) | b) ![C3 2015 Accuracy](/_files/land_cover/c3_l3-10.png) |
 
-![C3 2015 Accuracy](/_files/land_cover/c3_l3-10.png)
+*Table 9*. Classification metrics of collection 2 (*a*) and collection 3 (*b*) for the year 2015.
 
 ![C2 2015 Matrix](/_files/land_cover/c3_l3-11.png)
 
+*Table 10*. Confusion matrix: Collection 2 predictions vs. Validation Points for 2015.
+
 ![C3 2015 Matrix](/_files/land_cover/c3_l3-12.png)
+
+*Table 11*. Confusion matrix: Collection 3 predictions vs. Validation Points for 2015.
 
 **GLANCE**
 
@@ -163,13 +182,21 @@ As expected from the ``Level 1`` and ML validation results, overall C3 performs 
 
 ![C2 2010 GLANCE C2](/_files/land_cover/c3_l3-19.png)
 
+*Table 12*. Confusion matrix: Collection 2 predictions vs. GLANCE dataset for 2010.
+
 ![C3 2010 GLANCE C3](/_files/land_cover/c3_l3-20.png)
+
+*Table 13*. Confusion matrix: Collection 3 predictions vs. GLANCE dataset for 2010.
 
 **GLANCE 2015**
 
 ![C2 2015 GLANCE C2](/_files/land_cover/c3_l3-17.png)
 
+*Table 14*. Confusion matrix: Collection 2 predictions vs. GLANCE dataset for 2015.
+
 ![C3 2015 GLANCE C3](/_files/land_cover/c3_l3-18.png)
+
+*Table 15*. Confusion matrix: Collection 3 predictions vs. GLANCE dataset for 2015.
 
 % ## Quality assurance
 
