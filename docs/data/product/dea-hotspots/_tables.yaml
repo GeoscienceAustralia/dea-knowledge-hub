@@ -67,27 +67,27 @@ layers_table:
       - name: Latitude
         type: null
         units: Signed decimal degrees
-        description: Hotspot latitude is based on WGS84 (º). (For more information, see the Product Description.)
+        description: Hotspot latitude is based on WGS84 (º). (For more information, see the `Product Description <https://hotspots.dea.ga.gov.au/files/documents>`_.)
       - name: Longitude
         type: null
         units: Signed decimal degrees
-        description: Hotspot longitude is based on WGS84 (º). (For more information, see the Product Description.)
+        description: Hotspot longitude is based on WGS84 (º). (For more information, see the `Product Description <https://hotspots.dea.ga.gov.au/files/documents>`_.)
       - name: Temperature
         type: null
         units: Degrees Kelvin
-        description: To detect the presence of a Hotspot, a set of detection criteria has been developed. (For more information, see the Product Description.)
+        description: To detect the presence of a Hotspot, a set of detection criteria has been developed. (For more information, see the `Product Description <https://hotspots.dea.ga.gov.au/files/documents>`_.)
       - name: Power\ :sup:`2`
         type: null
         units: Megawatt (MW)
-        description: (For more information, see the Product Description.)
+        description: (For more information, see the `Product Description <https://hotspots.dea.ga.gov.au/files/documents>`_.)
       - name: Confidence
         type: null
         units: None (scalar value)
-        description: The Confidence attribute is intended to help users to gauge the quality of individual fire pixels within the fire mask. GA displays and provides all Hotspots, regardless of confidence. Users can choose to filter on the confidence attribute, according to their use case. (For more information, see the Product Description.)
+        description: The Confidence attribute is intended to help users to gauge the quality of individual fire pixels within the fire mask. GA displays and provides all Hotspots, regardless of confidence. Users can choose to filter on the confidence attribute, according to their use case. (For more information, see the `Product Description <https://hotspots.dea.ga.gov.au/files/documents>`_.)
       - name: Datetime
         type: null
         units: null
-        description: Time of acquisition for the data in which the Hotspot was detected (UTC). This is determined based on the start and end time of the acquisition. For the current satellites the level of accuracy should be of the order of 5 mins. (For more information, see the Product Description.)
+        description: Time of acquisition for the data in which the Hotspot was detected (UTC). This is determined based on the start and end time of the acquisition. For the current satellites the level of accuracy should be of the order of 5 mins. (For more information, see the `Product Description <https://hotspots.dea.ga.gov.au/files/documents>`_.)
       - name: Australian_state
         type: null
         units: null
