@@ -2,13 +2,101 @@
 
 # Layers
 
-# layers_footnote: A footnote to display under the layers table.
+layers_footnote: "For more information on these layers, see the `Product Description <https://hotspots.dea.ga.gov.au/files/documents>`_."
 
-# layers_table:
-#   - name: example_layer_name
-#     description: A description of the layer.
-#     attributes:
-#       - name: example_attribute_name
-#         type: int16
-#         units: Metres
-#         description: A description of the attribute.
+layers_table:
+  - name: Hotspot
+    description: The attributes and metadata included with each Hotspot vary according to the access mechanism used to interact with the Hotspot information. E.g., the Hotspots portal contains a subset of these attributes, while the Geoscience Australia Historic Hotspot database (the Historic database) contains the full metadata record for each Hotspot.
+    attributes:
+      - name: ID
+        type: null
+        units: null
+        description: Numeric ID assigned to the Hotspot.
+      - name: Satellite
+        type: null
+        units: null
+        description: Name of the satellite platform that is carrying the sensor used to acquire the satellite data for hotspots calculation (e.g., Aqua, Suomi NPP, NOAA-20, NOAA-21).
+      - name: Satellite_nssdc_id
+        type: null
+        units: null
+        description: National Space Science Data Centre (NSSDC) unique satellite number. `Learn more <http://nssdc.gsfc.nasa.gov/nmc/>`_
+      - name: Satellite_operating_agency
+        type: null
+        units: null
+        description: Name of the agency providing the satellite data (e.g., NASA).
+      - name: Sensor
+        type: null
+        units: null
+        description: Name of the sensor used to detect the Hotspot (e.g., MODIS, VIIRS, AVHRR, AHI).
+      - name: Orbit
+        type: null
+        units: null
+        description: The orbit number is determined using the information provided in the NORAD Two Line Element (TLE) file(s). The TLE file provides reference information foran “epoch” orbit that allows the current orbit to be calculated using the acquisition information. A value of -1 indicates the orbit is not reported.
+      - name: Start_dt
+        type: null
+        units: null
+        description: Start date and time (in UTC) of the satellite pass acquisition.
+      - name: Stop_dt
+        type: null
+        units: null
+        description: Stop date and time (in UTC) of the satellite pass acquisition. Note that Himawari-9, NOAA-20, and Suomi NPP do not have Stop_dt information. 
+      - name: Filename
+        type: null
+        units: null
+        description: "File name that the Hotspot is contained in and uses the following format: satellite_dateUTC_Hotspot.txt"
+      - name: Process_dt
+        type: null
+        units: null
+        description: Date and time (in UTC) that the Hotspot was processed (file creation time).
+      - name: Process_algorithm
+        type: null
+        units: null
+        description: The name of the algorithm used to producethe Hotspot (e.g., MOD14, AFIMG, BRIGHT AHI).
+      - name: Process_algorithm_version
+        type: null
+        units: null
+        description: Algorithm version number used to produce the Hotspot.
+      - name: Product
+        type: null
+        units: null
+        description: Name of the product within the database (e.g., LANDGATE_AHI, MOD14).
+      - name: Load_dt
+        type: null
+        units: null
+        description: Date and time (in UTC) that the Hotspot was loaded into the database.
+      - name: Latitude
+        type: null
+        units: Signed decimal degrees
+        description: Hotspot latitude is based on WGS84 (º). (For more information, see the `Product Description <https://hotspots.dea.ga.gov.au/files/documents>`_.)
+      - name: Longitude
+        type: null
+        units: Signed decimal degrees
+        description: Hotspot longitude is based on WGS84 (º). (For more information, see the `Product Description <https://hotspots.dea.ga.gov.au/files/documents>`_.)
+      - name: Temperature
+        type: null
+        units: Degrees Kelvin
+        description: To detect the presence of a Hotspot, a set of detection criteria has been developed. (For more information, see the `Product Description <https://hotspots.dea.ga.gov.au/files/documents>`_.)
+      - name: Power²
+        type: null
+        units: Megawatt (MW)
+        description: (For more information, see the `Product Description <https://hotspots.dea.ga.gov.au/files/documents>`_.)
+      - name: Confidence
+        type: null
+        units: None (scalar value)
+        description: The Confidence attribute is intended to help users to gauge the quality of individual fire pixels within the fire mask. GA displays and provides all Hotspots, regardless of confidence. Users can choose to filter on the confidence attribute, according to their use case. (For more information, see the `Product Description <https://hotspots.dea.ga.gov.au/files/documents>`_.)
+      - name: Datetime
+        type: null
+        units: null
+        description: Time of acquisition for the data in which the Hotspot was detected (UTC). This is determined based on the start and end time of the acquisition. For the current satellites the level of accuracy should be of the order of 5 mins. (For more information, see the `Product Description <https://hotspots.dea.ga.gov.au/files/documents>`_.)
+      - name: Australian_state
+        type: null
+        units: null
+        description: State that the Hotspot was captured in (e.g., NSW, ACT, WA, NT, VIC, TAS, QLD, SA).
+      - name: Hours_since_hotspot
+        type: null
+        units: null
+        description: Hours since hotspot detection – only provided with web service access, and only correct at time of access.
+      - name: Accuracy
+        type: null
+        units: null
+        description: Accuracy of the Hotspot detection based on the resolution of the satellite used.
