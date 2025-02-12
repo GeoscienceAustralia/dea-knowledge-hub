@@ -76,7 +76,7 @@ layers_table:
         type: null
         units: Degrees Kelvin
         description: To detect the presence of a Hotspot, a set of detection criteria has been developed. (For more information, see the Product Description.)
-      - name: Power\\ :sup:`2`
+      - name: Power\ :sup:`2`
         type: null
         units: Megawatt (MW)
         description: (For more information, see the Product Description.)
