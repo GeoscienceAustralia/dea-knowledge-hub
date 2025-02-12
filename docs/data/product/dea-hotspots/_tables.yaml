@@ -19,7 +19,7 @@ layers_table:
       - name: Satellite_nssdc_id
         type: null
         units: null
-        description: National Space Science Data Centre (NSSDC) unique satellite number. [Learn more](http://nssdc.gsfc.nasa.gov/nmc/)
+        description: National Space Science Data Centre (NSSDC) unique satellite number. `Learn more <http://nssdc.gsfc.nasa.gov/nmc/>`_
       - name: Satellite_operating_agency
         type: null
         units: null
@@ -76,3 +76,27 @@ layers_table:
         type: null
         units: null
         description: To detect the presence of a Hotspot, a set of detection criteria has been developed. (More information in Product Description.)
+      - name: Power\\ :sup:`2`
+        type: null
+        units: null
+        description: (More information in Product Description.)
+      - name: Confidence
+        type: null
+        units: null
+        description: The Confidence attribute is intended to help users to gauge the quality of individual fire pixels within the fire mask. GA displays and provides all Hotspots, regardless of confidence. Users can choose to filter on the confidence attribute, according to their use case. (More information in Product Description.)
+      - name: Datetime
+        type: null
+        units: null
+        description: Time of acquisition for the data in which the Hotspot was detected (UTC). This is determined based on the start and end time of the acquisition. For the current satellites the level of accuracy should be of the order of 5 mins. (More information in Product Description.)
+      - name: Australian_state
+        type: null
+        units: null
+        description: State that the Hotspot was captured in (e.g., NSW, ACT, WA, NT, VIC, TAS, QLD, SA).
+      - name: Hours_since_hotspot
+        type: null
+        units: null
+        description: Hours since hotspot detection – only provided with web service access, and only correct at time of access.
+      - name: Accuracy
+        type: null
+        units: null
+        description: Accuracy of the Hotspot detection based on the resolution of the satellite used.
