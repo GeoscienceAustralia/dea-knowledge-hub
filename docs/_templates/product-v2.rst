@@ -564,7 +564,7 @@
 
    .. raw:: html
 
-      <p class="margin-bottom-2em">Vector products contain one or more distinct layers of data, and each layer can contain multiple attribute fields. Quick links: {% for layer in layers_table_list %}{%- if loop.index > 1 %}, {% endif -%}<a href="#layer-{{ loop.index }}">{{ layer.name }}</a>{% endfor %}.</p>
+      <p class="margin-bottom-2em">Vector products contain one or more distinct layers of data, and each layer can contain multiple attribute fields.{% if layers_count > 1 %} Quick links: {% for layer in layers_table_list %}{%- if loop.index > 1 %}, {% endif -%}<a href="#layer-{{ loop.index }}">{{ layer.name }}</a>{% endfor %}.{% endif %}</p>
 
    {% for layer in layers_table_list %}
    .. rubric:: {{ layer.name }}
