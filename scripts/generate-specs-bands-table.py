@@ -1,3 +1,5 @@
+# Generate Specifications Bands Table
+
 # This script can save you time by generating the 'Bands table' metadata that is displayed in the Specifications tab of product pages on the DEA Knowledge Hub. E.g. https://knowledge.dea.ga.gov.au/data/product/dea-intertidal/?tab=specifications
 
 # How to use this script:

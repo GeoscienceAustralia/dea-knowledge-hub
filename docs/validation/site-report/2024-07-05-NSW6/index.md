@@ -1,4 +1,4 @@
-# 2024-07-05-NSW6: Transect NSW Site 6, Landsat 9 and Sentinel-2B dual overpass
+# 2024-07-05 NSW6: Transect NSW Site 6, Landsat 9 and Sentinel-2B dual overpass
 
 This is a report of the field data collected on 5 July 2024 at the location of Transect NSW Site 6
 to validate the satellite data of the Landsat 9 and Sentinel-2B dual overpass.

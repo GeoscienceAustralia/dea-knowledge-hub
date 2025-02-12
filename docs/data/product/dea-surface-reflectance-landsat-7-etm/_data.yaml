@@ -24,7 +24,7 @@ data_update_activity: NO_UPDATES
 is_currency_reported: false
 
 resolution: 15-30 m
-coordinate_reference_system: null
+coordinate_reference_system: MULTIPLE_UTM
 
 product_ids:
   - ga_ls7e_ard_3

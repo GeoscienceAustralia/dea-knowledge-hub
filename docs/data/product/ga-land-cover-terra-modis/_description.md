@@ -99,6 +99,8 @@ The first version of the DLCD product suite (DLCDv1) was published in 2011 and w
 
 ## Processing steps
 
+<span></span>
+
 1. Generating Time Series for DLCD
 The MOD13Q1 data for each 16 day interval were concatenated into a data cube to enable retrieval of a time series of EVI values for an individual pixel.
 2. Time series noise removal

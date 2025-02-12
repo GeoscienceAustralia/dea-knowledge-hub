@@ -1,4 +1,4 @@
-# 2024-07-02-NSW3: Transect NSW Site 3, Landsat 8 overpass
+# 2024-07-02 NSW3: Transect NSW Site 3, Landsat 8 overpass
 
 This is a report of the field data collected on 2 July 2024 at the location of Transect NSW Site 3
 to validate the satellite data of the Landsat 8 overpass.

@@ -57,7 +57,9 @@
 } %}
 
 {% set coordinate_reference_system_terms = {
-   "EPSG:3577": "GDA94 / Australian Albers (EPSG:3577)",
+   "EPSG:3577": "`GDA94 / Australian Albers (EPSG:3577) <https://epsg.org/crs_3577/GDA94-Australian-Albers.html>`_",
+   "EPSG:4326": "`WGS 84 (EPSG:4326) <https://epsg.org/crs_4326/WGS-84.html>`_",
+   "MULTIPLE_UTM": "Multiple UTM zone CRSs",
 } %}
 
 {# Macros #}
@@ -105,6 +107,10 @@
 {% set bands_table_list = page.tables.bands_table | selectattr("name", "!=", None) | list %}
 
 {% set bands_count = bands_table_list | length %}
+
+{% set layers_table_list = page.tables.layers_table | selectattr("name", "!=", None) | list %}
+
+{% set layers_count = layers_table_list | length %}
 
 {% set page_title = page.data.short_name if page.data.is_latest_version else format_version_number(page.data.version_number) ~ ". " ~ page.data.short_name %}
 
@@ -372,6 +378,16 @@
       * - **Bands**
         - `Single band of data ({{ bands_table_list[0].name }}) <./?tab=specifications>`_
       {%- endif %}
+      {% if layers_table_list and layers_count >= 3 %}
+      * - **Layers**
+        - `{{ layers_count }} layers of data ({{ layers_table_list[0].name }}, {{ layers_table_list[1].name }}, and more). View their attribute fields. <./?tab=specifications>`_
+      {%- elif layers_table_list and layers_count == 2 %}
+      * - **Layers**
+        - `{{ layers_count }} layers of data ({{ layers_table_list[0].name }} and {{ layers_table_list[1].name }}). View their attribute fields. <./?tab=specifications>`_
+      {%- elif layers_table_list and layers_count == 1 %}
+      * - **Layers**
+        - `Single layer of data ({{ layers_table_list[0].name }}). View attribute fields. <./?tab=specifications>`_
+      {%- endif %}
       {%- if page.data.doi %}
       * - **DOI**
         - `{{ page.data.doi }} <https://doi.org/{{ page.data.doi }}>`_
@@ -424,14 +440,14 @@
       {% if page.data.citation_paper %}
       * - **Paper citation**
         - .. code-block:: text
-             :class: citation-table-citation
+             :class: citation-table-citation citation-access-date
 
              {{ page.data.citation_paper }}
       {%- endif %}
       {% for citation in citations_custom_list %}
       * - **{{ citation.name }}**
         - .. code-block:: text
-             :class: citation-table-citation
+             :class: citation-table-citation citation-access-date
 
              {{ citation.citation }}
       {% endfor %}
@@ -485,12 +501,30 @@
 
       <div class="product-tab-table-of-contents"></div>
 
+   {% if product_ids_list %}
+   {% if product_ids_list | length > 1 %}
+   .. rubric:: Product IDs
+      :name: product-id
+      :class: h2
+
+   The Product IDs are {% for product_id in product_ids_list %}{%- if loop.last and loop.index > 1 %}, and {% elif loop.index > 1 %}, {% endif -%}``{{ product_id }}``{% endfor %}. These IDs are used to `load data from the Open Data Cube (ODC) <load_data_odc_>`_, for example ``dc.load(product="{{ product_ids_list[0] }}", ...)``
+   {%- else %}
+   .. rubric:: Product ID
+      :name: product-id
+      :class: h2
+
+   The Product ID is ``{{ product_ids_list[0] }}``. This ID is used to `load data from the Open Data Cube (ODC) <load_data_odc_>`_, for example ``dc.load(product="{{ product_ids_list[0] }}", ...)``
+   {%- endif %}
+
+   .. _load_data_odc: /notebooks/Beginners_guide/04_Loading_data/
+   {%- endif %}
+
    {% if bands_table_list %}
    .. rubric:: Bands
       :name: bands
       :class: h2
 
-   Bands are distinct layers of data within a product that can be loaded using the Open Data Cube (on the `DEA Sandbox <dea_sandbox_>`_ or `NCI <nci_>`_) or DEA's `STAC API <stac_api_>`_.{{ " Note that the Coordinate Reference System (CRS) of these bands is {}.".format(coordinate_reference_system_term) if coordinate_reference_system_term }}{% if product_ids_list | length > 1 %} Here are the bands of the products: {{ product_ids_list_text }}.{%- elif product_ids_list %} Here are the bands of the product: {{ product_ids_list_text }}.{%- endif %}
+   Bands are distinct layers of data within a product that can be loaded using the Open Data Cube (on the `DEA Sandbox <dea_sandbox_>`_ or `NCI <nci_>`_) or DEA's `STAC API <stac_api_>`_.{{ " Note that the Coordinate Reference System (CRS) of these bands is {}.".format(coordinate_reference_system_term) if coordinate_reference_system_term }}
 
    .. _dea_sandbox: https://knowledge.dea.ga.gov.au/guides/setup/Sandbox/sandbox/
    .. _nci: https://knowledge.dea.ga.gov.au/guides/setup/NCI/basics/
@@ -499,16 +533,21 @@
    .. list-table::
       :header-rows: 1
       :name: bands-table
+      :class: margin-bottom-2em
 
       * - 
-        - Aliases
+        - Type
+        - Units
         - Resolution
         - No-data
-        - Units
-        - Type
+        - Aliases
         - Description
       {% for band in bands_table_list %}
       * - **{{ band.name }}**
+        - {{ band.type or no_data_terms.dash }}
+        - {{ band.units or no_data_terms.dash }}
+        - {{ band.resolution if band.resolution or band.resolution == 0 else no_data_terms.dash }}
+        - {{ band.nodata if band.nodata or band.nodata == 0 else "" }}
         - {%- if band.aliases %}
           {%- for alias in band.aliases %}
           | {{ alias }}
@@ -516,14 +555,47 @@
           {%- else %}
           {{ no_data_terms.dash }}
           {%- endif %}
-        - {{ band.resolution if band.resolution or band.resolution == 0 else no_data_terms.dash }}
-        - {{ band.nodata if band.nodata or band.nodata == 0 else "" }}
-        - {{ band.units or no_data_terms.dash }}
-        - {{ band.type or no_data_terms.dash }}
         - {{ band.description or no_data_terms.dash }}
       {% endfor %}
 
    {{ page.tables.bands_footnote if page.tables.bands_footnote }}
+   {% endif %}
+
+   {% if layers_table_list %}
+   .. rubric:: Layers
+      :name: layers
+      :class: h2
+
+   .. raw:: html
+
+      <p class="margin-bottom-2em">Vector products contain one or more distinct layers of data, and each layer can contain multiple attribute fields.{% if layers_count > 1 %} Quick links: {% for layer in layers_table_list %}{%- if loop.index > 1 %}, {% endif -%}<a href="#layer-{{ loop.index }}">{{ layer.name }}</a>{% endfor %}.{% endif %}</p>
+
+   {% for layer in layers_table_list %}
+   .. rubric:: {{ layer.name }}
+      :name: layer-{{ loop.index }}
+      :class: h3
+
+   {{ layer.description or no_data_terms.dash }}
+
+   .. list-table::
+      :header-rows: 1
+      :name: layers-table
+      :class: margin-bottom-2em
+
+      * -
+        - Type
+        - Units
+        - Description
+      {% for attribute in layer.attributes %}
+      * - **{{ attribute.name }}**
+        - {{ attribute.type or no_data_terms.dash }}
+        - {{ attribute.units or no_data_terms.dash }}
+        - {{ attribute.description }}
+      {% endfor %}
+   {% endfor %}
+
+   {{ page.tables.layers_footnote if page.tables.layers_footnote }}
+
    {% endif %}
 
    .. rubric:: Product information
@@ -589,11 +661,6 @@
         - {{ spatial_data_type }}
         - The most common spatial types are raster and vector.
       {%- endif %}
-      {%- if coordinate_reference_system_term %}
-      * - **Coordinate Reference System (CRS)**
-        - {{ coordinate_reference_system_term }}
-        - The mathematical method of assigning coordinates to locations on the Earth's surface.
-      {%- endif %}
       {%- if page.data.resolution %}
       * - **Spatial resolution**
         - {{ page.data.resolution }}
@@ -620,6 +687,11 @@
       * - **Temporal coverage**
         - Until {{ page.data.temporal_coverage_end }}
         - The time span for which data is available.
+      {%- endif %}
+      {%- if coordinate_reference_system_term %}
+      * - **Coordinate Reference System (CRS)**
+        - {{ coordinate_reference_system_term }}
+        - The method of mapping spatial data to the Earth's surface.
       {%- endif %}
       {%- if is_frequency_ongoing %}
       * - **Update frequency**

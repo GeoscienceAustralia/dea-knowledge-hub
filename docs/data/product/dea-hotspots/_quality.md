@@ -24,3 +24,12 @@ Hotspots may be obscured or missing from the map due to the following reasons:
 * Sensors can be inoperable for extended periods of time, disrupting the detection of Hotspots.  
 * The fire may have been burning during a time when no satellite was looking over the fire ground.  
 
+## Known Issues
+
+:::{dropdown} 13 May 2024: Terra-derived DEA Hotspots are unavailable
+:open:
+
+Direct Broadcast satellite downloads from the Terra satellite have again become unavailable. This means that Terra-derived [DEA Hotspots](https://hotspots.dea.ga.gov.au/) are unavailable until further notice.
+
+This is due to the TERRA MODIS satellite experiencing power problems. The satellite continues to collect data but its direct broadcast has stopped.
+:::

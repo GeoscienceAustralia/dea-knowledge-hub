@@ -1,4 +1,4 @@
-# 2023-11-26-SA1: Transect South Australia Site 1, Landsat 8 overpass
+# 2023-11-26 SA1: Transect South Australia Site 1, Landsat 8 overpass
 
 This is a report of the field data collected on 26 November 2023 at the location of Transect South Australia Site 1
 to validate the satellite data of the Landsat 8 overpass.

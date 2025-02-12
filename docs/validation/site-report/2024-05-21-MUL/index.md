@@ -1,4 +1,4 @@
-# 2024-05-21-MUL: Mullion, Sentinel-2A overpass
+# 2024-05-21 MUL: Mullion, Sentinel-2A overpass
 
 This is a report of the field data collected on 21 May 2024 at the location of Mullion
 to validate the satellite data of the Sentinel-2A overpass.

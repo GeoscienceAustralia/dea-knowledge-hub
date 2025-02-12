@@ -6,10 +6,22 @@
 
 # bands_table:
 #   - name: example_band_name
-#     aliases: [example_alias_1, example_alias_2]
+#     type: int16
+#     units: Metres
 #     resolution: 30 m
 #     nodata: -999
-#     units: Metres
-#     type: int16
+#     aliases: [example_alias_1, example_alias_2]
 #     description: A description of the band.
 
+# Layers
+
+# layers_footnote: A footnote to display under the layers table.
+
+# layers_table:
+#   - name: example_layer_name
+#     description: A description of the layer.
+#     attributes:
+#       - name: example_attribute_name
+#         type: int16
+#         units: Metres
+#         description: A description of the attribute.

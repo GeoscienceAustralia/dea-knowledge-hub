@@ -23,7 +23,7 @@ data_update_activity: ONGOING
 is_currency_reported: true
 
 resolution: 30 m
-coordinate_reference_system: null
+coordinate_reference_system: EPSG:3577
 
 product_ids:
   - ga_ls_wo_fq_apr_oct_3

@@ -4,11 +4,11 @@ bands:
   footnotes: null
   bands_table:
   - name: example_band_name
-    aliases: [example_alias_1, example_alias_2]
+    type: int16 
+    units: null
     resolution: 30 m
     crs: Multiple (local UTM) 
     nodata: -999
-    units: null
-    type: int16 
+    aliases: [example_alias_1, example_alias_2]
     description: A description of the band.
 
