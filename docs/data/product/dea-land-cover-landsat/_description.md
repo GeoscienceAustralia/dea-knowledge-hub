@@ -46,7 +46,7 @@ Annual Land Cover information can be used in a number of ways to support the mon
 | *a)* ![Timeseries Perth urban expansion](/_files/land_cover/Perth_urban_timeseries_lc_lvl3_gmad.gif) | *b)* ![Timeseries Mt Beggary bushfire](/_files/land_cover/mt_beggary_bushfire_timeseries_lc_lvl4_gmad.gif) |
 | *c)* ![Timeseries inlet changes](/_files/land_cover/shallow_inlet_timeseries_lc_lvl3_gmad.gif) | *d)* ![Timeseries lake Amadeus](/_files/land_cover/lake_amadeus_timeseries_lc_lvl4_gmad.gif) |
 
-*Figure 1 - Examples of phenomena that can be tracked with the land cover product. a) Urban expansion of Quinns Rocks (Perth). b) Vegetation change and recovery following the Mt Beggary bushfire; c) Morphological changes of Shallow Inlet in Victoria. d) Annual variability of Lake Amadeus, a salt lake in the Northern Territory; the water persistence classification can be employed to track changes in its extent.*
+*Figure 1*. Examples of phenomena that can be tracked with the land cover product. a) Urban expansion of Quinns Rocks (Perth). b) Vegetation change and recovery following the Mt Beggary bushfire; c) Morphological changes of Shallow Inlet in Victoria. d) Annual variability of Lake Amadeus, a salt lake in the Northern Territory; the water persistence classification can be employed to track changes in its extent.
 
 
 ## Technical information
@@ -309,17 +309,17 @@ The FAO LCCS taxonomy (Figure 2) is hierarchical and consists of a dichotomous p
 
 ![Diagram showing the portion of the LCCS taxonomy which is implemented in DEA Land Cover v1.0.0](/_files/land_cover/cut_back_0.PNG)
 
-*Figure 2 - Diagrammatic representation of the implementation of the FAO LCCS (Version 2) classification within the DEA Land Cover product version 2.0.*
+*Figure 2*. Diagrammatic representation of the implementation of the FAO LCCS (Version 2) classification within the DEA Land Cover product version 2.0.
 
 At Level 4, vegetated areas are further classified using information that differentiates lifeform (woody and herbaceous) and quantifies vegetation cover percent and water seasonality (for Natural Aquatic Vegetation). Natural Surface areas have information added (bare gradation) which describes the level of remaining vegetation present (sparse, very sparse or not detectable). Non-vegetated aquatic areas (Water) are further described on the basis of their persistence (hydroperiod) over a calendar year. The FAO LCCS differentiates water in different physical states (liquid or frozen; ice or snow), however only liquid water is included in the current release.
 
 ![Diagram showing the data products which go into producing the level 3 classification.](/_files/land_cover/level3-dataflow.PNG)
 
-*Figure 3 - Input data products used to produce Level 3 classification*
+*Figure 3*. Input data products used to produce Level 3 classification
 
 ![Diagram showing input data products used to produce the Level 4 classification](/_files/land_cover/level4-dataflow.PNG)
 
-*Figure 4 - Input data products used to produce Level 4 classification*
+*Figure 4*. Input data products used to produce Level 4 classification
 
 % ## Processing steps
 

@@ -71,11 +71,21 @@ The result of the availability of the satellites is that the most consistent dat
 
 ![datasets within DEA used to provide essential descriptor information](/_files/land_cover/DEA-datasets-used.PNG)
 
+### Inconsistent data presence in three Western Australia tiles
+
+An issue has been identified with data presence in three tiles in Western Australia, particularly between 1988 and 2013. The affected tiles are *x39y49*, *x40y47*, *x41y45*. For a quick visualisation of these locations, the [DEA Explorer](https://explorer.dea.ga.gov.au/products/ga_ls_landcover_class_cyear_3) can be consulted. 
+
+This issue arises due to the Ground Quality Assured (GQA) value falling below the acceptable threshold set by the DEA for products derived from Landsat. The root cause of this anomalous behaviour lies in the [Analysis Ready Data (ARD)](https://knowledge.dea.ga.gov.au/guides/reference/analysis_ready_data_corrections/), which serves as the source for the Land Cover product. The areas affected by this issue correspond to regions where ground control points may experience movement over time, such as shifting sand dunes, leading to inconsistencies in the orthorectification process.
+
+![timeseries missing data tiles](/_files/land_cover/.PNG)
+
+*Figure 1.* Timeseries animation showing the frequency of missing data in the tiles x39y49, x40y47, x41y45.
+
 ## Accuracy
 
-A validation assessment has been undertaken for both the collection 2 (C2) and 3 (C3) versions of Land Cover. The below section outlines the accuracy of both versions to assist users in understanding the differences between the two versions.
+A validation assessment has been undertaken for both the versions of Land Cover: the former collection 2 (C2; i.e., version 1), and the current collection 3 (C3; i.e., version 2). The below section outlines the accuracy of both versions to assist users in understanding the differences between the two versions.
 
-### Summary of differences between Land Cover V1 (collection 2) and V2 (collection 3)
+### Summary of differences between Land Cover C2 (version 1) and C3 (version 2)
 
 * Collection 3 shows improvement in both performance and consistency compared to Collection 2
 * Overall improvement in artificial surface classification. More urban areas are now correctly identified, although there is a slight increase in false positive identification of urban areas in the central australian desert, refer to Level 3 - Artificial Surfaces (AS) section above
@@ -90,7 +100,7 @@ A validation assessment has been undertaken for both the collection 2 (C2) and 3
 
 ![legend level 4](/_files/land_cover/legend_lc_level4_horizontal.png)
 
-*Figure 1.* Animations showing examples of differences in level 4 classification between Land Cover V2 and V1. *a)* illustrates the improved artificial surface classification in the greater Melbourne area; stripe artifacts and incorrect water persistence classification can also be observed. *b)* displays a pine plantation near Kinglake West (VIC), which V2 appears to classify correctly as being > 65% woody cover. *c)* shows an example of degradation in cultivated area classification in the Cassowary Coast (northern QLD), primarily due to the misclassification of cultivated land as herbaceous natural vegetation; as mentioned in the limitations, the CTV classification exhibits some inconsistencies, which can occur both spatially and temporally.
+*Figure 2.* Animations showing examples of differences in level 4 classification between Land Cover C3 and C2 (i.e., version 2 (V2) and version 1 (V1), respectively). *a)* illustrates the improved artificial surface classification in the greater Melbourne area; stripe artifacts and incorrect water persistence classification can also be observed. *b)* displays a pine plantation near Kinglake West (VIC), which collection 3 (i.e., V2) appears to classify correctly as being > 65% woody cover. *c)* shows an example of degradation in cultivated area classification in the Cassowary Coast (northern QLD), primarily due to the misclassification of cultivated land as herbaceous natural vegetation; as mentioned in the limitations, the CTV classification exhibits some inconsistencies, which can occur both spatially and temporally.
 
 
 |   |   |   |
@@ -99,7 +109,7 @@ A validation assessment has been undertaken for both the collection 2 (C2) and 3
 
 ![legend level 3](/_files/land_cover/legend_lc_level3_horizontal.png)
 
-*Figure 2.* Animations showing examples of differences in level 3 classification between V2 and V1. *a)* shows Portland (VIC) and the surrounding area, where an improvement in the artificial surface classification in V2 can be observed in the town to the east, although false positives can also be seen on the sandy terrain in the western part of the displayed area. *b)* displays an instance where V2 more accurately identifies cultivated areas in a region on the southern coast of Western Australia, particularly in the northern part of the image, while the eastern part appears slightly noisier. *c)* highlights the increase in pixels with missing values around water bodies in V2 at Lake Eildon in Victoria. 
+*Figure 3.* Animations showing examples of differences in level 3 classification between Land Cover C3 and C2 (i.e., version 2 (V2) and version 1 (V1), respectively). *a)* shows Portland (VIC) and the surrounding area, where an improvement in the artificial surface classification in collection 3 (i.e., V2) can be observed in the town to the east, although false positives can also be seen on the sandy terrain in the western part of the displayed area. *b)* displays an instance where collection 3 (i.e., V2) more accurately identifies cultivated areas in a region on the southern coast of Western Australia, particularly in the northern part of the image, while the eastern part appears slightly noisier. *c)* highlights the increase in pixels with missing values around water bodies in collection 3 (i.e., V2) at Lake Eildon in Victoria. 
 
 
 ### Collection 2 Validation
