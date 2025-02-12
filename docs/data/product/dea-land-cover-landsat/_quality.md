@@ -79,7 +79,7 @@ This issue arises due to the Ground Quality Assured (GQA) value falling below th
 
 ![timeseries missing data tiles](/_files/land_cover/.PNG)
 
-*Figure 1.* Timeseries animation showing the frequency of missing data in the tiles x39y49, x40y47, x41y45.
+*Figure 1.* Timeseries animation showing the frequency of missing data in the tiles *x39y49*, *x40y47*, *x41y45*.
 
 ## Accuracy
 
