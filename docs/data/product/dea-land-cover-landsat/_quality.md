@@ -123,14 +123,17 @@ The product was validated using 6000 points spatially distributed over Australia
 *Table 3* contains the overall accuracy for all classes. The term “support” refers to the number of validation points used in the calculation of that accuracy value. 
 
 ![Overall accuracy of DEA Land Cover is 80%. 2010 accuracy is 82%, 2015 accuracy is 78%.](/_files/land_cover/table2-overall-accuracy-dea-lc.PNG)
+
 *Table 3*. Overall accuracy of DEA Land Cover.
 
 *Table 4* contains per-class accuracy information. “Precision” refers to the ability of a classification model to return only relevant instances. “Recall” refers to the ability to identify all relevant instances. The “F1 score” is a combination of precision and recall and an overall measure of accuracy. Classes such as artificial surfaces, natural aquatic vegetation and water had high accuracies. Classifying cultivated terrestrial vegetation and bare surfaces was challenging and accuracies were the lowest of the six classes presented here.
 
 ![Table showing accuracy per class, including precision, recall, F1 score and support values per class. ](/_files/land_cover/table3-per-class-accuracy-info-dea-lc.PNG)
+
 *Table 4*. Per-class accuracy information for DEA Land Cover.
 
 ![table showing the agreement between assessors.](/_files/land_cover/table4-inter-assessor-agreement.PNG)
+
 *Table 5*. Inter-assessor agreement.
 
 ### Collection 3 Validation
