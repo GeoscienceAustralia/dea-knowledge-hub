@@ -76,7 +76,7 @@ layers_table:
         type: null
         units: Degrees Kelvin
         description: To detect the presence of a Hotspot, a set of detection criteria has been developed. (For more information, see the `Product Description <https://hotspots.dea.ga.gov.au/files/documents>`_.)
-      - name: Power\ :raw-html:`<sup>2</sup>`
+      - name: Power²
         type: null
         units: Megawatt (MW)
         description: (For more information, see the `Product Description <https://hotspots.dea.ga.gov.au/files/documents>`_.)
