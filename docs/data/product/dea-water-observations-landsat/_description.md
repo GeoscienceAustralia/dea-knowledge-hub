@@ -28,7 +28,12 @@ As the WOs are separated from the derived statistics of the associated DEA Water
 
 Digital Earth Australia (DEA) Water Observations (WOs) is a gridded dataset indicating areas where surface water has been observed using the Geoscience Australia (GA) Earth observation satellite data holdings. The current product (version 2.0.0) includes observations taken between 1986 and the present (inclusive) from the Landsat 5, 7, 8 and 9 satellites. WOs cover all of mainland Australia and Tasmania but exclude off-shore Territories. The dataset is updated automatically as each new Landsat scene is acquired and processed to Analysis Ready Data (ARD) state. 
 
-Data is provided as Water Observation Feature Layers (WOFLs) in a 1-to-1 relationship with the input satellite data. Hence there is one WOFL for each satellite dataset processed for the occurrence of water. From version 1.6.0 onward the data type has been changed to a bit field, where multiple bits can be set simultaneously. Hence the value of a pixel in an observation can be X AND Y AND Z, etc, hence values can range from 0 to 255. The meaning of each bit in the WOFLs is given in the table below. (Prior to version 1.6.0, only one bit could be set per pixel, therefore the value of a pixel in an observation could be X OR Y OR Z. Hence in previous versions the WOs values could only be 0 or 1 or 2 or 4 or ... or 128.)
+Data is provided as Water Observation Feature Layers (WOFLs) in a 1-to-1 relationship with the input satellite data. Hence there is one WOFL for each satellite dataset processed for the occurrence of water. The data type is a bit field, which allows multiple bits to be set simultaneously. For example, the value of a pixel in an observation can be Cloud and Water. Hence, values can range from 0 to 255
+
+
+From version 1.6.0 onward the data type has been changed to a bit field, where multiple bits can be set simultaneously. Hence the value of a pixel in an observation can be X AND Y AND Z, etc, hence values can range from 0 to 255. The meaning of each bit in the WOFLs is given in the table below.
+
+The meaning of each bit in the WOFLs is given in the table below.
 
 The table below describes the meaning of each bit set per pixel in each WOFL.
 
