@@ -30,7 +30,7 @@ Digital Earth Australia (DEA) Water Observations (WOs) is a gridded dataset indi
 
 Data is provided as Water Observation Feature Layers (WOFLs) in a 1-to-1 relationship with the input satellite data. Hence there is one WOFL for each satellite dataset processed for the occurrence of water. The data type is a bit field, which allows multiple bits to be set simultaneously. For example, the value of a pixel in an observation can be Water and Cloud Shadow, and the decimal values of those are added together (128 + 32 = 160). Values can range from 0 to 255.
 
-Here is a colour map of the Water Observations classifications.
+Here is a colour map showing how the data displays in a mapping application such as [DEA Maps](https://maps.dea.ga.gov.au/).
 
 ![Colour map of Water Observations product.](/_files/water-observations/colour-map-water-observations.png)
 
