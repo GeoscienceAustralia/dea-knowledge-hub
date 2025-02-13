@@ -12,10 +12,7 @@
                 <th class="classification">High Slope</th>
                 <th class="classification">Cloud Shadow</th>
                 <th class="classification">Cloud</th>
-                <th class="classification">High Slope + Cloud</th>
                 <th class="classification">Water</th>
-                <th class="classification">Cloud Shadow + Water</th>
-                <th class="classification">Cloud + Water</th>
             </tr>
         </thead>
         <tbody>
@@ -29,10 +26,7 @@
                 <td class="classification">16</td>
                 <td class="classification">32</td>
                 <td class="classification">64</td>
-                <td class="classification">80</td>
                 <td class="classification">128</td>
-                <td class="classification">160</td>
-                <td class="classification">192</td>
             </tr>
             <tr>
                 <td class="classification"><strong>No Data</strong></td>
@@ -44,10 +38,7 @@
                 <td class="impossible">17</td>
                 <td class="impossible">33</td>
                 <td class="impossible">65</td>
-                <td class="impossible">81</td>
                 <td class="impossible">129</td>
-                <td class="impossible">161</td>
-                <td class="impossible">193</td>
             </tr>
             <tr>
                 <td class="classification"><strong>Contiguity</strong></td>
@@ -59,10 +50,7 @@
                 <td class="impossible">18</td>
                 <td class="impossible">34</td>
                 <td class="impossible">66</td>
-                <td class="impossible">82</td>
                 <td class="impossible">130</td>
-                <td class="impossible">162</td>
-                <td class="impossible">194</td>
             </tr>
             <tr>
                 <td class="classification"><strong>Low Solar Angle</strong></td>
@@ -74,10 +62,7 @@
                 <td>20</td>
                 <td>36</td>
                 <td>68</td>
-                <td>84</td>
                 <td>132</td>
-                <td>164</td>
-                <td>196</td>
             </tr>
             <tr>
                 <td class="classification"><strong>Terrain Shadow</strong></td>
@@ -89,10 +74,7 @@
                 <td>24</td>
                 <td>40</td>
                 <td>72</td>
-                <td>88</td>
                 <td>136</td>
-                <td>168</td>
-                <td>200</td>
             </tr>
             <tr>
                 <td class="classification"><strong>High Slope</strong></td>
@@ -104,10 +86,7 @@
                 <td class="impossible">32</td>
                 <td>48</td>
                 <td>80</td>
-                <td class="impossible">96</td>
                 <td>144</td>
-                <td>176</td>
-                <td>208</td>
             </tr>
             <tr>
                 <td class="classification"><strong>Cloud Shadow</strong></td>
@@ -119,10 +98,7 @@
                 <td>48</td>
                 <td class="impossible">64</td>
                 <td>96</td>
-                <td>112</td>
                 <td>160</td>
-                <td class="impossible">192</td>
-                <td>224</td>
             </tr>
             <tr>
                 <td class="classification"><strong>Cloud</strong></td>
@@ -134,10 +110,7 @@
                 <td>80</td>
                 <td>96</td>
                 <td class="impossible">128</td>
-                <td class="impossible">144</td>
                 <td>192</td>
-                <td>224</td>
-                <td class="impossible">256</td>
             </tr>
             <tr>
                 <td class="classification"><strong>High Slope + Cloud</strong></td>
@@ -149,10 +122,7 @@
                 <td class="impossible">96</td>
                 <td>112</td>
                 <td class="impossible">144</td>
-                <td class="impossible">160</td>
                 <td>208</td>
-                <td>240</td>
-                <td class="impossible">272</td>
             </tr>
             <tr>
                 <td class="classification"><strong>Water</strong></td>
@@ -164,10 +134,7 @@
                 <td>144</td>
                 <td>160</td>
                 <td>192</td>
-                <td>208</td>
                 <td class="impossible">256</td>
-                <td class="impossible">288</td>
-                <td class="impossible">320</td>
             </tr>
             <tr>
                 <td class="classification"><strong>Cloud Shadow + Water</strong></td>
@@ -179,10 +146,7 @@
                 <td>176</td>
                 <td class="impossible">192</td>
                 <td>224</td>
-                <td>240</td>
                 <td class="impossible">288</td>
-                <td class="impossible">320</td>
-                <td class="impossible">352</td>
             </tr>
             <tr>
                 <td class="classification"><strong>Cloud + Water</strong></td>
@@ -194,10 +158,7 @@
                 <td>208</td>
                 <td>224</td>
                 <td class="impossible">256</td>
-                <td class="impossible">272</td>
                 <td class="impossible">320</td>
-                <td class="impossible">352</td>
-                <td class="impossible">384</td>
             </tr>
         </tbody>
     </table>
