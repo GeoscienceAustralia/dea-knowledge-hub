@@ -28,15 +28,7 @@ As the WOs are separated from the derived statistics of the associated DEA Water
 
 Digital Earth Australia (DEA) Water Observations (WOs) is a gridded dataset indicating areas where surface water has been observed using the Geoscience Australia (GA) Earth observation satellite data holdings. The current product (version 2.0.0) includes observations taken between 1986 and the present (inclusive) from the Landsat 5, 7, 8 and 9 satellites. WOs cover all of mainland Australia and Tasmania but exclude off-shore Territories. The dataset is updated automatically as each new Landsat scene is acquired and processed to Analysis Ready Data (ARD) state. 
 
-Here is a colour map of the Water Observations classifications.
-
-![Colour map of Water Observations product.](/_files/water-observations/colour-map-water-observations.png)
-
-Data is provided as Water Observation Feature Layers (WOFLs), in a 1 to 1 relationship with the input satellite data. Hence there is one WOFL for each satellite dataset processed for the occurrence of water. The meaning of each bit in the WOFLs is given in the table below. Prior to version 1.6.0, only one bit could be set per pixel, therefore the value of a pixel in an observation could be X OR Y OR Z. Hence in previous versions the WOs values could only be 0 or 1 or 2 or 4 or ... or 128. From version 1.6.0 onward the data type has been changed to a bit field, where multiple bits can be set simultaneously. Hence the value of a pixel in an observation can be X AND Y AND Z, etc, hence values can range from 0 to 255.
-
-Version 1.6.0 was updated with changes to the way different factors impeding water detection are dealt with. These changes result in improved detection rates and allow discrimination of different factors impeding water observations. Masking of the ocean with a pre-defined mask has been removed, and the extent of the ocean is now defined by the algorithm. Masking for terrain and solar incident angle have been de-coupled in order to provide better visibility about the reason for masking. The solar incident angle threshold used to remove poor quality observations collected when the sun is at a very low angle has been reduced from 30 degrees to 10 degrees. This change increases the number of observations included in the dataset during winter months while still removing those that are most badly impacted by shadowing caused by low solar incident angle. 
-
-Version 2.0.0 introduces the integration of Landsat 9, providing an increase in available observations from November 2021 onwards.
+Data is provided as Water Observation Feature Layers (WOFLs) in a 1-to-1 relationship with the input satellite data. Hence there is one WOFL for each satellite dataset processed for the occurrence of water. From version 1.6.0 onward the data type has been changed to a bit field, where multiple bits can be set simultaneously. Hence the value of a pixel in an observation can be X AND Y AND Z, etc, hence values can range from 0 to 255. The meaning of each bit in the WOFLs is given in the table below. (Prior to version 1.6.0, only one bit could be set per pixel, therefore the value of a pixel in an observation could be X OR Y OR Z. Hence in previous versions the WOs values could only be 0 or 1 or 2 or 4 or ... or 128.)
 
 The table below describes the meaning of each bit set per pixel in each WOFL.
 
@@ -97,6 +89,10 @@ The following table shows these combinations of decimal values. Some values cann
 :::
 
 Full details of the original algorithms and features of DEA Water Observations can be found in the Water Observations from Space paper by Mueller et al. (2015).
+
+Here is a colour map of the Water Observations classifications.
+
+![Colour map of Water Observations product.](/_files/water-observations/colour-map-water-observations.png)
 
 ## Lineage
 
