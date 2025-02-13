@@ -28,13 +28,13 @@ As the WOs are separated from the derived statistics of the associated DEA Water
 
 Digital Earth Australia (DEA) Water Observations (WOs) is a gridded dataset indicating areas where surface water has been observed using the Geoscience Australia (GA) Earth observation satellite data holdings. The current product (version 2.0.0) includes observations taken between 1986 and the present (inclusive) from the Landsat 5, 7, 8 and 9 satellites. WOs cover all of mainland Australia and Tasmania but exclude off-shore Territories. The dataset is updated automatically as each new Landsat scene is acquired and processed to Analysis Ready Data (ARD) state. 
 
-Data is provided as Water Observation Feature Layers (WOFLs) in a 1-to-1 relationship with the input satellite data. Hence there is one WOFL for each satellite dataset processed for the occurrence of water. The data type is a bit field, which allows multiple bits to be set simultaneously. For example, the value of a pixel in an observation can be Water and Cloud Shadow. Values can range from 0 to 255.
+Data is provided as Water Observation Feature Layers (WOFLs) in a 1-to-1 relationship with the input satellite data. Hence there is one WOFL for each satellite dataset processed for the occurrence of water. The data type is a bit field, which allows multiple bits to be set simultaneously. For example, the value of a pixel in an observation can be Water and Cloud Shadow, and the decimal values of those are added together (128 + 32 = 160). Values can range from 0 to 255.
 
 Here is a colour map of the Water Observations classifications.
 
 ![Colour map of Water Observations product.](/_files/water-observations/colour-map-water-observations.png)
 
-Some of these values are combinations of multiple values, for which the values of these decimals are added together.
+Some of these colours are mapped to combinations of multiple values.
 
 * **Shaded Water** &mdash; Water and Terrain Shadow (128 + 8 = 136).
 * **Cloudy Water** &mdash; Water and Cloud Shadow (128 + 32 = 160).
