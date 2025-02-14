@@ -1,6 +1,6 @@
 ## Limitations of the Implementation Method
 
-DEA Land Cover is created by combining multiple layers that each describe features in the landscape. In doing so the extents of each layer do not necessarily completely align, and some no-data points can cross between outputs. As a result, there are some level 4 classes that only report detail to level 3 as the details of cover fraction and water persistence do not have corresponding data in the respective datasets. This specifically relates the classes of Water, NS and NAV in areas near water bodies and the intertidal zone, however the number of affected pixels is small. 
+DEA Land Cover is created by combining multiple layers that each describe features in the landscape. In doing so the extents of each layer do not necessarily completely align, and some no-data points can cross between outputs. As a result, there are some Level 4 classes that only report detail to Level 3 as the details of cover fraction and water persistence do not have corresponding data in the respective datasets. This specifically relates the classes of Water, Natural Surfaces and Natural Aquatic Vegetation in areas near water bodies and the intertidal zone, however the number of affected pixels is small. 
 
 :::{dropdown} Level 3 Class Limitations
 **Cultivated Terrestrial Vegetation (CTV)** 
@@ -77,56 +77,59 @@ The result of the availability of the satellites is that the most consistent dat
 
 ### Inconsistent data presence in three Western Australia tiles
 
-An issue has been identified with data presence in three tiles in Western Australia, particularly between 1988 and 2013. The affected tiles are *x39y49*, *x40y47*, *x41y45*. For a quick visualisation of these locations, the [DEA Explorer](https://explorer.dea.ga.gov.au/products/ga_ls_landcover_class_cyear_3) can be consulted. 
+An issue has been identified with data presence in three tiles in Western Australia, particularly between 1988 and 2005. The affected tiles are *x39y49*, *x40y47*, *x41y45*. For a quick visualisation of these locations, the [DEA Explorer](https://explorer.dea.ga.gov.au/products/ga_ls_landcover_class_cyear_3) can be consulted. 
 
 This issue arises due to the Ground Quality Assured (GQA) value falling below the acceptable threshold set by the DEA for products derived from Landsat. The root cause of this anomalous behaviour lies in the [Analysis Ready Data (ARD)](https://knowledge.dea.ga.gov.au/guides/reference/analysis_ready_data_corrections/), which serves as the source for the Land Cover product. The areas affected by this issue correspond to regions where ground control points may experience movement over time, such as shifting sand dunes, leading to inconsistencies in the orthorectification process.
 
-![timeseries missing data tiles](/_files/land_cover/.PNG)
+![timeseries missing data tiles](/_files/land_cover/gqa_tiles_timeseries_geomad_obs_count_gmad.gif)
 
-*Figure 1.* Timeseries animation showing the frequency of missing data in the tiles *x39y49*, *x40y47*, *x41y45*.
+*Figure 1.* Timeseries animation showing the frequency of missing data in the tiles *x39y49*, *x40y47*, *x41y45*. On the left, true colours timeseries of the yearly geomedian. On the right, timeseries of the yearly clear observation count.
 
 ## Accuracy
 
-A validation assessment has been undertaken for both the versions of Land Cover: the former collection 2 (C2; i.e., version 1), and the current collection 3 (C3; i.e., version 2). The below section outlines the accuracy of both versions to assist users in understanding the differences between the two versions.
+A validation assessment has been undertaken for both the versions of Land Cover: the former Collection 2 (C2; i.e., Version 1), and the current Collection 3 (C3; i.e., Version 2). The below section outlines the accuracy of both versions to assist users in understanding the differences between the two versions.
+The validation metrics reported were produced for Level 3 and they integrate the results from the validation of the sub-components of Level 1, the Artificial Surface model, and the Cultivated model.
 
 ### Summary of differences between Land Cover C2 (version 1) and C3 (version 2)
 
-* Collection 3 shows improvement in both performance and consistency compared to Collection 2
-* Overall improvement in artificial surface classification. More urban areas are now correctly identified, although there is a slight increase in false positive identification of urban areas in the central australian desert, refer to Level 3 - Artificial Surfaces (AS) section above
-* Slight improvement is seen in Woody Cover for the Terrestrial Veg and Bare Sfc classifications
-* Significant increase in Landsat 7 stripe artefacts, due to  Landsat 8 scenes being filtered out by bad geometric quality assessments
-* Increase in no data surrounding water bodies, and incorrect classification of water persistence over the ocean
+* Collection 3 generally aligns with Collection 2 in terms of classification performance, with trends across time periods and classes mostly consistent. However, some deviations from this pattern have been observed across different locations and times, particularly in the Cultivated Vegetation class.
+* Collection 3 classification shows better overall consistency across different validation methods.
+* An improvement in artificial surface classification was observed in C3. More urban areas appear to be correctly identified, although there is a slight increase in false positive identification of urban areas in the central Australian desert or sandy regions. 
+* Slight improvement is seen in Woody Cover for the Terrestrial Vegetation classification.
+* Substantial increase in Landsat 7 stripe artefacts in C3, due to  Landsat 8 scenes being filtered out by bad geometric quality assessments.
+* General increase in number pixels with no data surrounding water bodies.
+* Misclassification of water persistence over the ocean in C3.
 
 
 |   |   |   |
 |---|---|---|
-| a) ![Improvement artificial class Degradation water persistence, level 4](/_files/land_cover/2.degr_ocean_water_persistance-degr_stripes-impr_urban.gif) | b) ![Improvement woody cover, level 4](/_files/land_cover/10.improvement-woody_cover_pine_plantation-zoomed-in-level4.gif) | c) ![Degradation cultivated, level 4](/_files/land_cover/11b.example_cultivated_degradation_level4._2015gif.gif) |
+| a) ![Improvement artificial class Degradation water persistence, Level 4](/_files/land_cover/2.degr_ocean_water_persistance-degr_stripes-impr_urban.gif) | b) ![Improvement woody cover, Level 4](/_files/land_cover/10.improvement-woody_cover_pine_plantation-zoomed-in-level4.gif) | c) ![Degradation cultivated, Level 4](/_files/land_cover/11b.example_cultivated_degradation_level4._2015gif.gif) |
 
-![legend level 4](/_files/land_cover/legend_lc_level4_horizontal.png)
+![legend Level 4](/_files/land_cover/legend_lc_level4_horizontal.png)
 
-*Figure 2.* Animations showing examples of differences in level 4 classification between Land Cover C3 and C2 (i.e., version 2 (V2) and version 1 (V1), respectively). *a)* illustrates the improved artificial surface classification in the greater Melbourne area; stripe artifacts and incorrect water persistence classification can also be observed. *b)* displays a pine plantation near Kinglake West (VIC), which collection 3 (i.e., V2) appears to classify correctly as being > 65% woody cover. *c)* shows an example of degradation in cultivated area classification in the Cassowary Coast (northern QLD), primarily due to the misclassification of cultivated land as herbaceous natural vegetation; as mentioned in the limitations, the CTV classification exhibits some inconsistencies, which can occur both spatially and temporally.
+*Figure 2.* Animations showing examples of differences in Level 4 classification between Land Cover C3 and C2 (i.e., version 2 (V2) and version 1 (V1), respectively). *a)* illustrates the improved artificial surface classification in the greater Melbourne area; stripe artifacts and incorrect water persistence classification can also be observed. *b)* displays a pine plantation near Kinglake West (VIC), which Collection 3 (i.e., V2) appears to classify correctly as being > 65% woody cover. *c)* shows an example of degradation in cultivated area classification in the Cassowary Coast (northern QLD), primarily due to the misclassification of cultivated land as herbaceous natural vegetation.
 
 
 |   |   |   |
 |---|---|---|
-| a) ![Degradation false positives artificial, level 3](/_files/land_cover/1.degradation-urban_false_positives-level3.gif) | b) ![Improvement, cultivated better classified, level 3](/_files/land_cover/12b.improvement_cultivated_level3_2015.gif) | c) ![Degradation missing pixels around waterbodies, level 3](/_files/land_cover/9.degradation-missing_pixels_waterbodies-level_3.gif) |
+| a) ![Degradation false positives artificial, Level 3](/_files/land_cover/1.degradation-urban_false_positives-level3.gif) | b) ![Improvement, cultivated better classified, Level 3](/_files/land_cover/12b.improvement_cultivated_level3_2015.gif) | c) ![Degradation missing pixels around waterbodies, Level 3](/_files/land_cover/9.degradation-missing_pixels_waterbodies-level_3.gif) |
 
-![legend level 3](/_files/land_cover/legend_lc_level3_horizontal.png)
+![legend Level 3](/_files/land_cover/legend_lc_level3_horizontal.png)
 
-*Figure 3.* Animations showing examples of differences in level 3 classification between Land Cover C3 and C2 (i.e., version 2 (V2) and version 1 (V1), respectively). *a)* shows Portland (VIC) and the surrounding area, where an improvement in the artificial surface classification in collection 3 (i.e., V2) can be observed in the town to the east, although false positives can also be seen on the sandy terrain in the western part of the displayed area. *b)* displays an instance where collection 3 (i.e., V2) more accurately identifies cultivated areas in a region on the southern coast of Western Australia, particularly in the northern part of the image, while the eastern part appears slightly noisier. *c)* highlights the increase in pixels with missing values around water bodies in collection 3 (i.e., V2) at Lake Eildon in Victoria. 
+*Figure 3.* Animations showing examples of differences in Level 3 classification between Land Cover C3 and C2 (i.e., version 2 (V2) and version 1 (V1), respectively). *a)* shows Portland (VIC) and the surrounding area, where an improvement in the artificial surface classification in Collection 3 (i.e., V2) can be observed in the town to the east, although false positives can also be seen on the sandy terrain in the western part of the displayed area. *b)* displays an instance where Collection 3 (i.e., V2) more accurately identifies cultivated areas in a region on the southern coast of Western Australia, particularly in the northern part of the image, while the eastern part appears slightly noisier. *c)* highlights the increase in pixels with missing values around water bodies in Collection 3 (i.e., V2) at Lake Eildon in Victoria. 
 
 
 ### Collection 2 Validation
 
-The product was validated using 6000 points spatially distributed over Australia. These points were created using a stratified random sampling approach slightly adjusted for oversampling. This process was conducted for 2010 and 2015 creating 12000 samples in total. After removing points with No Data and spurious values the total number was 11750. The sample points were divided into clusters for visual assessment against the outputs from the classification and assessed individually from a pool of 10 people. To compare the individual biases of the individual assessors, an additional set of validation points were created that all assessors evaluated, the results are shown in Table 4. Where assessors could identify a predominant land cover (i.e. not “mixed” pixels or “unsure”), all assessors agreed 75 % of the time. 
+The product was validated using 6000 points spatially distributed over Australia. These points were created using a stratified random sampling approach slightly adjusted for oversampling. This process was conducted for 2010 and 2015 creating 12000 samples in total. After removing points with No Data and spurious values the total number was 11750. The sample points were divided into clusters for visual assessment against the outputs from the classification and assessed individually from a pool of 10 people. To compare the individual biases of the individual assessors, an additional set of validation points were created that all assessors evaluated, the results are shown in Table 4. Where assessors could identify a predominant land cover (i.e. not "mixed" pixels or "unsure"), all assessors agreed 75 % of the time. 
 
-*Table 3* contains the overall accuracy for all classes. The term “support” refers to the number of validation points used in the calculation of that accuracy value. 
+*Table 3* contains the overall accuracy for all classes. The term "support" refers to the number of validation points used in the calculation of that accuracy value. 
 
 ![Overall accuracy of DEA Land Cover is 80%. 2010 accuracy is 82%, 2015 accuracy is 78%.](/_files/land_cover/table2-overall-accuracy-dea-lc.PNG)
 
 *Table 3*. Overall accuracy of DEA Land Cover.
 
-*Table 4* contains per-class accuracy information. “Precision” refers to the ability of a classification model to return only relevant instances. “Recall” refers to the ability to identify all relevant instances. The “F1 score” is a combination of precision and recall and an overall measure of accuracy. Classes such as artificial surfaces, natural aquatic vegetation and water had high accuracies. Classifying cultivated terrestrial vegetation and bare surfaces was challenging and accuracies were the lowest of the six classes presented here.
+*Table 4* contains per-class accuracy information. "Precision" refers to the ability of a classification model to return only relevant instances. "Recall" refers to the ability to identify all relevant instances. The “F1 score” is a combination of precision and recall and an overall measure of accuracy. Classes such as artificial surfaces, natural aquatic vegetation and water had high accuracies. Classifying cultivated terrestrial vegetation and bare surfaces was challenging and accuracies were the lowest of the six classes presented here.
 
 ![Table showing accuracy per class, including precision, recall, F1 score and support values per class. ](/_files/land_cover/table3-per-class-accuracy-info-dea-lc.PNG)
 
@@ -138,12 +141,16 @@ The product was validated using 6000 points spatially distributed over Australia
 
 ### Collection 3 Validation
 
-Validation against three data sources was undertaken: validation points reused from collection 2, with the addition of point attributes from Köppen Climate Zone and state/territory, added to facilitate segment analysis, the Blue Glance global dataset of indepenedent “ground truth” data, and the Land Cover Collection 2 data to understand the extent of change between the versions.
+In order to understand the extent of change between the versions, validation against three data sources was undertaken: ``validation points`` reused from Collection 2, with the addition of point attributes from Köppen Climate Zone and State/Territory, added to facilitate segment analysis; the [``GLANCE (Global Land Cover Estimation)``](https://www.nature.com/articles/s41597-023-02798-5) global dataset of independent "ground truth" data; and the Land Cover ``Collection 2 data``. 
 
-**Validation Points**
-With the addition of validation points, the Collection 2 validation was run again with the following C2 vs C3 comparison results:
+To account for the additional validation points, the Collection 2 (C2) validation was run again and compared with the results from Collection 3 (C3).
 
-Overall C3 demonstrates greater consistency and more reasonable classification across all time periods and classes than C2. Both C3 and C2 show average degradation in 2010 compared to 2015, a trend that is propagated from Level 1 and ML results. C3 shows slight degradation compared to C2 on the Validation points, with Cultivated Vegetation and Natural Vegetation contributing the most to this difference. The Artificial Surface class has too few points to be considered statistically significant.
+Both C3 and C2 showed overall degradation in 2010 compared to 2015, a trend that is propagated from the Level 1 and individual ML models results. The performance metrics with the validation points show an overall alignment of the two collections, with minimal differences across categories, except for the Recall values of Cultivated Vegetation and Artificial Surface (both higher in C3 for the year 2010) (*Tables 6 and 9*).
+C3 demonstrated a more reasonable classification on the GLANCE dataset, particularly for the Natural Vegetation class, which can be intuitively interpreted as the Agriculture category of the GLANCE dataset (*Tables 7, 8, 10, 11*).
+
+C3 exhibited better consistency in results against the validation points and the GLANCE data. However, some disalignment between ground truth datasets is present in both collections for certain classes (e.g., Bare Surfaces). Some classes, such as the Artificial Surface, have too few validation points to be considered statistically significant. Hence, the classification metrics should be interpreted with caution and understood in relative terms, highlighting the differences between C2 and C3, rather than the absolute performance of each.
+
+When C3 was compared directly with the output of C2 (*Table 16*), it showed good agreement for most of the Level 3 classes. Two notable exceptions were the Cultivated Vegetation class and the Artificial Surface class. For Cultivated Vegetation, the performance against the validation data did not suggest a substantial difference in overall accuracy between C2 and C3; thus, the disalignment observed in *Table 16* could be due to possible inconsistencies in classification between the two collections, but not necessarily an improvement or degradation. The difference observed in the Artificial Surface classification may be influenced by the increased accuracy of C3. 
 
 **Validation Points 2010**
 
@@ -151,15 +158,19 @@ Overall C3 demonstrates greater consistency and more reasonable classification a
 |---|---|
 | a) ![C2 2010 Accuracy](/_files/land_cover/c2_l3-13.png) | b) ![C3 2010 Accuracy](/_files/land_cover/c3_l3-14.png) |
 
-*Table 6*. Classification metrics of collection 2 (*a*) and collection 3 (*b*) for the year 2010.
+*Table 6*. Classification metrics of Collection 2 (*a*) and Collection 3 (*b*) in the year 2010, using the validation points as ground truth.
+
+The ``Macro-Average`` is the unweighted mean of each metric calculated independently for all classes. Each class contributes equally, regardless of its frequency in the dataset. It should be interpreted as "unbiased" due to the highly skewed nature of the validation points. 
+
+The ``Weighted-Average`` is the average of each metric weighted by the support (TP + FN; i.e., True Positives and False Negatives) for each class. The weight reflects the proportion of each class in the "Truth" such that more frequent classes have a greater impact on the overall average.
 
 ![C2 2010 Matrix](/_files/land_cover/c2_l3-15.png)
 
-*Table 7*. Confusion matrix: Collection 2 predictions vs. Validation Points for 2010.
+*Table 7*. Confusion matrix: Collection 2 predictions vs. validation points for 2010.
 
 ![C3 2010 Matrix](/_files/land_cover/c3_l3-16.png)
 
-*Table 8*. Confusion matrix: Collection 3 predictions vs. Validation Points for 2010.
+*Table 8*. Confusion matrix: Collection 3 predictions vs. validation points for 2010.
 
 **Validation Points 2015**
 
@@ -167,19 +178,15 @@ Overall C3 demonstrates greater consistency and more reasonable classification a
 |---|---|
 | a) ![C2 2015 Accuracy](/_files/land_cover/c2_l3-9.png) | b) ![C3 2015 Accuracy](/_files/land_cover/c3_l3-10.png) |
 
-*Table 9*. Classification metrics of collection 2 (*a*) and collection 3 (*b*) for the year 2015.
+*Table 9*. Classification metrics of Collection 2 (*a*) and Collection 3 (*b*) in the year 2015, using the validation points as ground truth.
 
 ![C2 2015 Matrix](/_files/land_cover/c2_l3-11.png)
 
-*Table 10*. Confusion matrix: Collection 2 predictions vs. Validation Points for 2015.
+*Table 10*. Confusion matrix: Collection 2 predictions vs. validation points for 2015.
 
 ![C3 2015 Matrix](/_files/land_cover/c3_l3-12.png)
 
-*Table 11*. Confusion matrix: Collection 3 predictions vs. Validation Points for 2015.
-
-**GLANCE**
-
-As expected from the ``Level 1`` and ML validation results, overall C3 performs more consistently across both the Validation points and GLANCE datasets over all time periods compared to C2. The ``Macro-Average`` should be interpreted as "unbiased" due to the highly skewed nature of the Validation points. Since the validity of the Validation points is questionable, the classification metrics should be understood in relative terms showing the difference between C2 and C3, rather than the absolute performance of each. The error propagation from the Level 1, Urban, and Cultivated results is within expected limits.
+*Table 11*. Confusion matrix: Collection 3 predictions vs. validation points for 2015.
 
 **GLANCE 2010**
 
@@ -202,4 +209,12 @@ As expected from the ``Level 1`` and ML validation results, overall C3 performs 
 *Table 15*. Confusion matrix: Collection 3 predictions vs. GLANCE dataset for 2015.
 
 % ## Quality assurance
+
+**C3 vs C2**
+
+|   |   |
+|---|---|
+| a) ![C3 vs C2 2010](/_files/land_cover/c3_c2_l3-22.png) | b) ![C3 vs C2 2015](/_files/land_cover/c3_c2_l3-21.png) |
+
+*Table 16*. Classification metrics generated by using C2 data as "ground truth" for the C3 output for 2010 (*a*) and 2015 (*b*) .
 
