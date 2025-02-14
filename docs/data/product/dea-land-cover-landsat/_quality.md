@@ -149,11 +149,11 @@ Overall C3 demonstrates greater consistency and more reasonable classification a
 
 |   |   |
 |---|---|
-| a) ![C2 2010 Accuracy](/_files/land_cover/c3_l3-13.png) | b) ![C3 2010 Accuracy](/_files/land_cover/c3_l3-14.png) |
+| a) ![C2 2010 Accuracy](/_files/land_cover/c2_l3-13.png) | b) ![C3 2010 Accuracy](/_files/land_cover/c3_l3-14.png) |
 
 *Table 6*. Classification metrics of collection 2 (*a*) and collection 3 (*b*) for the year 2010.
 
-![C2 2010 Matrix](/_files/land_cover/c3_l3-15.png)
+![C2 2010 Matrix](/_files/land_cover/c2_l3-15.png)
 
 *Table 7*. Confusion matrix: Collection 2 predictions vs. Validation Points for 2010.
 
@@ -165,11 +165,11 @@ Overall C3 demonstrates greater consistency and more reasonable classification a
 
 |   |   |
 |---|---|
-| a) ![C2 2015 Accuracy](/_files/land_cover/c3_l3-9.png) | b) ![C3 2015 Accuracy](/_files/land_cover/c3_l3-10.png) |
+| a) ![C2 2015 Accuracy](/_files/land_cover/c2_l3-9.png) | b) ![C3 2015 Accuracy](/_files/land_cover/c3_l3-10.png) |
 
 *Table 9*. Classification metrics of collection 2 (*a*) and collection 3 (*b*) for the year 2015.
 
-![C2 2015 Matrix](/_files/land_cover/c3_l3-11.png)
+![C2 2015 Matrix](/_files/land_cover/c2_l3-11.png)
 
 *Table 10*. Confusion matrix: Collection 2 predictions vs. Validation Points for 2015.
 
@@ -183,7 +183,7 @@ As expected from the ``Level 1`` and ML validation results, overall C3 performs 
 
 **GLANCE 2010**
 
-![C2 2010 GLANCE C2](/_files/land_cover/c3_l3-19.png)
+![C2 2010 GLANCE C2](/_files/land_cover/c2_l3-19.png)
 
 *Table 12*. Confusion matrix: Collection 2 predictions vs. GLANCE dataset for 2010.
 
@@ -193,7 +193,7 @@ As expected from the ``Level 1`` and ML validation results, overall C3 performs 
 
 **GLANCE 2015**
 
-![C2 2015 GLANCE C2](/_files/land_cover/c3_l3-17.png)
+![C2 2015 GLANCE C2](/_files/land_cover/c2_l3-17.png)
 
 *Table 14*. Confusion matrix: Collection 2 predictions vs. GLANCE dataset for 2015.
 
