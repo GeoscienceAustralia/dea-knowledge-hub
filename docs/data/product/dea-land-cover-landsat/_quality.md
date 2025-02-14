@@ -139,25 +139,28 @@ The product was validated using 6000 points spatially distributed over Australia
 
 ### Collection 3 Validation - Validation Points and GLANCE global dataset
 
-Validation against three data sources was undertaken: validation points reused from Collection 2, with the addition of point attributes from Köppen Climate Zone and state/territory, added to facilitate segment analysis, the GLANCE global dataset of indepenedent "ground truth" data, and the Land Cover Collection 2 data to understand the extent of change between the versions.
+Validation against three data sources was undertaken: validation points reused from Collection 2, with the addition of point attributes from Köppen Climate Zone and state/territory, added to facilitate segment analysis. The GLANCE global dataset of independent "ground truth" data and the Land Cover Collection 2 data were used to understand the extent of change between the versions.
 
 With the addition of validation points, the Collection 2 (C2) validation was run again and compared with the results from Collection 3 (C3).
-Both C3 and C2 show average degradation in 2010 compared to 2015, a trend that is propagated from Level 1 and ML results. C3 shows slight degradation compared to C2 on the Validation points in the years taken into consideration, with Cultivated Vegetation and Natural Vegetation contributing the most to this difference. The Cultivated Vegetation classification shows a clear decrease in false negatives in C3, as indicated by the higher recall score; however, a decrease in precision, and thus an increase in false positives, is also observed.
+Both C3 and C2 show average degradation in 2010 compared to 2015, a trend that is propagated from Level 1 and ML results. C3 shows slight degradation compared to C2 on the validation points in the years taken into consideration, with Cultivated Vegetation and Natural Vegetation contributing the most to this difference. The Cultivated Vegetation classification shows a clear decrease in false negatives in C3, as indicated by the higher recall score; however, a decrease in precision, and thus an increase in false positives, is also observed.
 The Artificial Surface class has too few points to be considered statistically significant. 
+Given the questionable validity of the validation points, the classification metrics should be understood in relative terms, highlighting the difference between C2 and C3, rather than the absolute performance of each. The error propagation from the Level 1, Urban, and Cultivated results is within expected limits.
 
-The ``Macro-Average`` should be interpreted as "unbiased" due to the highly skewed nature of the Validation points. Given the questionable validity of the validation points, the classification metrics should be understood in relative terms, highlighting the difference between C2 and C3, rather than the absolute performance of each. The error propagation from the Level 1, Urban, and Cultivated results is within expected limits.
+The ``Macro-Average`` is the unweighted mean of each metric calculated independently for all classes. Each class contributes equally, regardless of its frequency in the dataset. It should be interpreted as "unbiased" due to the highly skewed nature of the validation points. 
 
-As expected from the ``Level 1`` and ML validation results, overall C3 performs more consistently across both the Validation points and GLANCE datasets over all time periods compared to C2.
+The ``Weighted-Average`` is the average of each metric weighted by the support (TP + FN; i.e., True Positives and False Negatives) for each class. The weight reflects the proportion of each class in the "Truth" such that more frequent classes have a greater impact on the overall average.
+
+As expected from the [Level 1](https://dea-public-data-dev.s3-ap-southeast-2.amazonaws.com/lccs_validation/c3/html/c3_vs_c2.html) and [ML validation](https://dea-public-data-dev.s3-ap-southeast-2.amazonaws.com/lccs_validation/c3/html/c3_ml.html) results, overall C3 performs more consistently across both the Validation points and GLANCE datasets over all time periods compared to C2.
 
 **Validation Points 2010**
 
 |   |   |
 |---|---|
-| a) ![C2 2010 Accuracy](/_files/land_cover/c3_l3-13.png) | b) ![C3 2010 Accuracy](/_files/land_cover/c3_l3-14.png) |
+| a) ![C2 2010 Accuracy](/_files/land_cover/c2_l3-13.png) | b) ![C3 2010 Accuracy](/_files/land_cover/c3_l3-14.png) |
 
 *Table 6*. Classification metrics of collection 2 (*a*) and collection 3 (*b*) for the year 2010.
 
-![C2 2010 Matrix](/_files/land_cover/c3_l3-15.png)
+![C2 2010 Matrix](/_files/land_cover/c2_l3-15.png)
 
 *Table 7*. Confusion matrix: Collection 2 predictions vs. Validation Points for 2010.
 
@@ -169,11 +172,11 @@ As expected from the ``Level 1`` and ML validation results, overall C3 performs 
 
 |   |   |
 |---|---|
-| a) ![C2 2015 Accuracy](/_files/land_cover/c3_l3-9.png) | b) ![C3 2015 Accuracy](/_files/land_cover/c3_l3-10.png) |
+| a) ![C2 2015 Accuracy](/_files/land_cover/c2_l3-9.png) | b) ![C3 2015 Accuracy](/_files/land_cover/c3_l3-10.png) |
 
 *Table 9*. Classification metrics of collection 2 (*a*) and collection 3 (*b*) for the year 2015.
 
-![C2 2015 Matrix](/_files/land_cover/c3_l3-11.png)
+![C2 2015 Matrix](/_files/land_cover/c2_l3-11.png)
 
 *Table 10*. Confusion matrix: Collection 2 predictions vs. Validation Points for 2015.
 
@@ -183,7 +186,7 @@ As expected from the ``Level 1`` and ML validation results, overall C3 performs 
 
 **GLANCE 2010**
 
-![C2 2010 GLANCE C2](/_files/land_cover/c3_l3-19.png)
+![C2 2010 GLANCE C2](/_files/land_cover/c2_l3-19.png)
 
 *Table 12*. Confusion matrix: Collection 2 predictions vs. GLANCE dataset for 2010.
 
@@ -193,7 +196,7 @@ As expected from the ``Level 1`` and ML validation results, overall C3 performs 
 
 **GLANCE 2015**
 
-![C2 2015 GLANCE C2](/_files/land_cover/c3_l3-17.png)
+![C2 2015 GLANCE C2](/_files/land_cover/c2_l3-17.png)
 
 *Table 14*. Confusion matrix: Collection 2 predictions vs. GLANCE dataset for 2015.
 
