@@ -87,14 +87,15 @@ This issue arises due to the Ground Quality Assured (GQA) value falling below th
 
 ## Accuracy
 
-A validation assessment has been undertaken for both the versions of Land Cover: the former collection 2 (C2; i.e., version 1), and the current collection 3 (C3; i.e., version 2). The below section outlines the accuracy of both versions to assist users in understanding the differences between the two versions.
+A validation assessment has been undertaken for both the versions of Land Cover: the former Collection 2 (C2; i.e., version 1), and the current Collection 3 (C3; i.e., version 2). The below section outlines the accuracy of both versions to assist users in understanding the differences between the two versions.
+The validation metrics reported were produced for Level 3 and they integrate the results from the validation of Level 1, the Artificial Surface model, and the Cultivated model (see the [validation report](https://dea-public-data-dev.s3-ap-southeast-2.amazonaws.com/lccs_validation/c3/html/c3_l3.html) for additonal details)
 
 ### Summary of differences between Land Cover C2 (version 1) and C3 (version 2)
 
 * Collection 3 shows an overall greater consistency across all time periods compared to Collection 2.
 * Overall improvement in artificial surface classification was visually observed. More urban areas are now appear to be correctly identified, although there is a slight increase in false positive identification of urban areas in the central australian desert. Refer to Level 3 - Artificial Surfaces (AS) section above for additional details.
 * Slight improvement is seen in Woody Cover for the Terrestrial Vegetation classification.
-* Decrease in false negatives in Cultivated Vegetation classification in C3. However, an increase in false positives is also noticeable.
+* The C3 Cultivated Vegetation classification appears more reasonable than C2, especially when cross-checked with the global GLANCE dataset. 
 * Significant increase in Landsat 7 stripe artefacts in C3, due to  Landsat 8 scenes being filtered out by bad geometric quality assessments.
 * Increase in no data surrounding water bodies, and incorrect classification of water persistence over the ocean.
 
@@ -142,9 +143,9 @@ The product was validated using 6000 points spatially distributed over Australia
 Validation against three data sources was undertaken: validation points reused from Collection 2, with the addition of point attributes from Köppen Climate Zone and state/territory, added to facilitate segment analysis. The GLANCE global dataset of independent "ground truth" data and the Land Cover Collection 2 data were used to understand the extent of change between the versions.
 
 With the addition of validation points, the Collection 2 (C2) validation was run again and compared with the results from Collection 3 (C3).
-Both C3 and C2 show average degradation in 2010 compared to 2015, a trend that is propagated from Level 1 and ML results. C3 shows slight degradation compared to C2 on the validation points in the years taken into consideration, with Cultivated Vegetation and Natural Vegetation contributing the most to this difference. The Cultivated Vegetation classification shows a clear decrease in false negatives in C3, as indicated by the higher recall score; however, a decrease in precision, and thus an increase in false positives, is also observed.
-The Artificial Surface class has too few points to be considered statistically significant. 
-Given the questionable validity of the validation points, the classification metrics should be understood in relative terms, highlighting the difference between C2 and C3, rather than the absolute performance of each. The error propagation from the Level 1, Urban, and Cultivated results is within expected limits.
+Both C3 and C2 show average degradation in 2010 compared to 2015, a trend that is propagated from Level 1 and ML results. C3 shows slight degradation compared to C2 on the validation points in the years taken into consideration, with Cultivated Vegetation and Natural Vegetation contributing the most to this difference. The Cultivated Vegetation classification shows a decrease in false negatives in C3, as indicated by the higher recall score, and a decrease in precision (i.e., an increase in false positives). However, C3 Cultivated Vegetation classification demonstrates much more reasonable classification on the GLANCE datasets, where the Agriculture class should be intuitively understood as Cultivated Vegetation rather than Natural Vegetation. 
+The Artificial Surface class has too few points to be considered statistically significant. Given the questionable validity of the validation points, the classification metrics should be understood in relative terms, highlighting the difference between C2 and C3, rather than the absolute performance of each. 
+The error propagation from the Level 1, Urban, and Cultivated results is within expected limits.
 
 The ``Macro-Average`` is the unweighted mean of each metric calculated independently for all classes. Each class contributes equally, regardless of its frequency in the dataset. It should be interpreted as "unbiased" due to the highly skewed nature of the validation points. 
 
