@@ -87,13 +87,13 @@ This issue arises due to the Ground Quality Assured (GQA) value falling below th
 
 ## Accuracy
 
-A validation assessment has been undertaken for both the versions of Land Cover: the former Collection 2 (C2; i.e., version 1), and the current Collection 3 (C3; i.e., version 2). The below section outlines the accuracy of both versions to assist users in understanding the differences between the two versions.
+A validation assessment has been undertaken for both the versions of Land Cover: the former Collection 2 (C2; i.e., Version 1), and the current Collection 3 (C3; i.e., Version 2). The below section outlines the accuracy of both versions to assist users in understanding the differences between the two versions.
 The validation metrics reported were produced for Level 3 and they integrate the results from the validation of Level 1, the Artificial Surface model, and the Cultivated model (see the [validation report](https://dea-public-data-dev.s3-ap-southeast-2.amazonaws.com/lccs_validation/c3/html/c3_l3.html) for additonal details)
 
 ### Summary of differences between Land Cover C2 (version 1) and C3 (version 2)
 
 * Collection 3 shows an overall greater consistency across all time periods compared to Collection 2.
-* Overall improvement in artificial surface classification was visually observed. More urban areas are now appear to be correctly identified, although there is a slight increase in false positive identification of urban areas in the central australian desert. Refer to Level 3 - Artificial Surfaces (AS) section above for additional details.
+* Overall improvement in artificial surface classification was visually observed. More urban areas now appear to be correctly identified, although there is a slight increase in false positive identification of urban areas in the central Australian desert or sandy regions. 
 * Slight improvement is seen in Woody Cover for the Terrestrial Vegetation classification.
 * The C3 Cultivated Vegetation classification appears more reasonable than C2, especially when cross-checked with the global GLANCE dataset. 
 * Significant increase in Landsat 7 stripe artefacts in C3, due to  Landsat 8 scenes being filtered out by bad geometric quality assessments.
