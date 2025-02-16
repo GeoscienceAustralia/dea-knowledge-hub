@@ -79,7 +79,7 @@ access_links_explorers:
     name: null
 
 access_links_data:
-  - link: http://dea-public-data.s3-website-ap-southeast-2.amazonaws.com/?prefix=derivative/ga_ls_landcover_class_cyear_3/
+  - link: http://dea-public-data.s3-website-ap-southeast-2.amazonaws.com/?prefix=derivative/ga_ls_landcover_class_cyear_3/2-0-0/
     name: Access the data on AWS
   - link: https://thredds.nci.org.au/thredds/catalog/jw04/ga_ls_landcover_class_cyear_3/catalog.html
     name: Access the data on NCI Thredds
@@ -98,7 +98,7 @@ access_links_custom: null
 
 previous_versions:
   - version: 1.0.0
-    title: Geoscience Australia Landsat Land Cover 25m 
+    title: DEA Land Cover (Landsat)
     slug: dea-land-cover-landsat-1.0.0
 
 # SEO
