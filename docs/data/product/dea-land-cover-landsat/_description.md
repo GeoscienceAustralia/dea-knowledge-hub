@@ -1,45 +1,47 @@
 ## Background
 
-Land cover is the observed physical cover on the Earth's surface including trees, shrubs, grasses, soils, exposed rocks, water bodies, plantations, crops and built structures. A consistent, Australia-wide land cover product helps understanding of how the different parts of the environment change and inter-relate. Earth observation data recorded over a period of time firstly allows the observation of the state of land cover at a specific time and secondly the way that land cover changes by comparison between times.
+Land cover is the observed physical cover on the Earth's surface including trees, shrubs, grasses, soils, exposed rocks, water bodies, plantations, crops, and built structures. An Australia-wide land cover product provides an understanding of how the different parts of the environment change and interrelate. Earth observation data recorded consistently over a period of time allows the observation of the state of land cover at a specific time and also the way that land cover changes by comparison between times.
 
 ## What this product offers
 
 DEA Land Cover provides annual land cover classifications for Australia using the Food and Agriculture Organisation Land Cover Classification System taxonomy Version 2 (Di Gregorio and Jansen, 1998; 2005).
 
-DEA Land Cover divides the landscape into six base land cover types, which are then further detailed through the addition of environmental descriptors. The structure is as follows:
-* Cultivated Terrestrial Vegetation
-  * percentage of cover
-  * life form (herbaceous only)
-* Natural Terrestrial Vegetation
-  * percentage of cover
-  * life form (woody or herbaceous)
-* Natural Aquatic Vegetation
-  * percentage of cover
-  * life form (woody or herbaceous)
-  * water seasonality
-* Artificial Surfaces 
-* Natural Bare
-  * percentage of bare cover
-* Aquatic
-  * water persistence
-  * intertidal area
+DEA Land Cover divides the landscape into six base land cover types, which are then further detailed through the addition of environmental descriptors. The structure is as follows.
+
+* **Cultivated Terrestrial Vegetation**
+    * Percentage of cover
+    * Life form (herbaceous only)
+* **Natural Terrestrial Vegetation**
+    * Percentage of cover
+    * Life form (woody or herbaceous)
+* **Natural Aquatic Vegetation**
+    * Percentage of cover
+    * Life form (woody or herbaceous)
+    * Water seasonality
+* **Artificial Surfaces** 
+* **Natural Bare**
+    * Percentage of bare cover
+* **Aquatic**
+    * Water persistence
+    * Intertidal area
 
 % ## Data description
 
 ## Applications
 
-Annual Land Cover information can be used in a number of ways to support the monitoring and management of environments in Australia. These include, but are not limited to, the following areas in environmental monitoring, primary industries and the interests and safety of the Australian community: 
+Annual Land Cover information can be used in a number of ways to support the monitoring and management of environments in Australia. These include, but are not limited to, the following areas of environmental monitoring, primary industries, and the interests and safety of the Australian community.
+
 * Environmental monitoring 
-  * Ecosystem mapping 
-  * Carbon dynamics 
-  * Erosion management 
+    * Ecosystem mapping 
+    * Carbon dynamics 
+    * Erosion management 
 * Agriculture Sector 
-  * Monitoring crop responses to water availability 
-  * Understanding drought impact on vegetation 
+    * Monitoring crop responses to water availability 
+    * Understanding drought impact on vegetation 
 * Community interests 
-  * Map urban expansion within Australia
-  * Mapping impacts of natural disasters 
-  * Bushfire recovery
+    * Map urban expansion within Australia
+    * Mapping impacts of natural disasters 
+    * Bushfire recovery
 
 |||
 |---|---|
