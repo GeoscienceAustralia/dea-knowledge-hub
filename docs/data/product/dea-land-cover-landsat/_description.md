@@ -43,9 +43,8 @@ Annual Land Cover information can be used in a number of ways to support the mon
     * Mapping impacts of natural disasters 
     * Bushfire recovery
 
-::::{grid} 1 1 1 1
+::::{grid} 1 2 2 2
 :::{grid-item}
-:class: overflow-x-hidden
 
 <figure>
     <img src="/_static/land_cover/Perth_urban_timeseries_lc_lvl3_gmad.gif" alt="Timeseries Perth urban expansion" style="max-width: 600px;">
