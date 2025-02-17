@@ -299,10 +299,10 @@ C3 exhibited better consistency in results against the validation points and the
 
 When C3 was compared directly with the output of C2 (see Table 16), it showed good agreement for most of the Level 3 classes. Two notable exceptions were the Cultivated Vegetation class and the Artificial Surface class. For Cultivated Vegetation, the performance against the validation data did not suggest a substantial difference in overall accuracy between C2 and C3; thus, the misalignment observed in Table 16 could be due to possible inconsistencies in classification between the two collections, but not necessarily an improvement or degradation. The difference observed in the Artificial Surface classification may be influenced by the increased accuracy of C3. 
 
-**Validation Points 2010**
+**Validation points 2010**
 
 <figure>
-    <figcaption>Table 6 (below). Classification metrics of Collection 2 (a) and Collection 3 (b) in the year 2010, using the validation points as ground truth.</figcaption>
+    <figcaption>Table 6 (below). Classification metrics of Collection 2 and Collection 3 in the year 2010, using the validation points as ground truth.</figcaption>
 </figure>
 
 ::::{grid} 1 2 2 2
@@ -312,7 +312,7 @@ When C3 was compared directly with the output of C2 (see Table 16), it showed go
 
 <figure>
     <img src="/_static/land_cover/c2_l3-13.png" alt="C2 2010 Accuracy">
-    <figcaption>a)</figcaption>
+    <figcaption>a) Collection 2</figcaption>
 </figure>
 :::
 
@@ -320,7 +320,7 @@ When C3 was compared directly with the output of C2 (see Table 16), it showed go
 
 <figure>
     <img src="/_static/land_cover/c3_l3-14.png" alt="C3 2010 Accuracy">
-    <figcaption>b)</figcaption>
+    <figcaption>b) Collection 3</figcaption>
 </figure>
 :::
 
@@ -328,21 +328,21 @@ When C3 was compared directly with the output of C2 (see Table 16), it showed go
 
 The Macro-Average is the unweighted mean of each metric calculated independently for all classes. Each class contributes equally, regardless of its frequency in the dataset. It should be interpreted as "unbiased" due to the highly skewed nature of the validation points. 
 
-The Weighted-Average is the average of each metric weighted by the support (TP + FN; i.e., True Positives and False Negatives) for each class. The weight reflects the proportion of each class in the "Truth" such that more frequent classes have a greater impact on the overall average.
+The Weighted-Average is the average of each metric weighted by the support ($TP + FN$; i.e., True Positives and False Negatives) for each class. The weight reflects the proportion of each class in the "Truth" such that more frequent classes have a greater impact on the overall average.
 
 <figure>
-    <figcaption>Table 7 (below). Confusion matrix: Collection 2 predictions vs. validation points for 2010.</figcaption>
+    <figcaption>Table 7 (below). Confusion matrix: Collection 2 predictions vs validation points for 2010.</figcaption>
 </figure>
 
 ![C2 2010 Matrix](/_files/land_cover/c2_l3-15.png)
 
 <figure>
-    <figcaption>Table 8 (below). Confusion matrix: Collection 3 predictions vs. validation points for 2010.</figcaption>
+    <figcaption>Table 8 (below). Confusion matrix: Collection 3 predictions vs validation points for 2010.</figcaption>
 </figure>
 
 ![C3 2010 Matrix](/_files/land_cover/c3_l3-16.png)
 
-**Validation Points 2015**
+**Validation points 2015**
 
 ::::{grid} 1 2 2 2
 :class-container: images-max-width-100-percent
@@ -372,25 +372,25 @@ The Weighted-Average is the average of each metric weighted by the support (TP +
 ![C2 2015 Matrix](/_files/land_cover/c2_l3-11.png)
 
 <figure>
-    <figcaption>Table 10 (below). Confusion matrix: Collection 2 predictions vs. validation points for 2015.</figcaption>
+    <figcaption>Table 10 (below). Confusion matrix: Collection 2 predictions vs validation points for 2015.</figcaption>
 </figure>
 
 ![C3 2015 Matrix](/_files/land_cover/c3_l3-12.png)
 
 <figure>
-    <figcaption>Table 11 (below). Confusion matrix: Collection 3 predictions vs. validation points for 2015.</figcaption>
+    <figcaption>Table 11 (below). Confusion matrix: Collection 3 predictions vs validation points for 2015.</figcaption>
 </figure>
 
 **GLANCE 2010**
 
 <figure>
-    <figcaption>Table 12 (below). Confusion matrix: Collection 2 predictions vs. GLANCE dataset for 2010.</figcaption>
+    <figcaption>Table 12 (below). Confusion matrix: Collection 2 predictions vs GLANCE dataset for 2010.</figcaption>
 </figure>
 
 ![C2 2010 GLANCE C2](/_files/land_cover/c2_l3-19.png)
 
 <figure>
-    <figcaption>Table 13 (below). Confusion matrix: Collection 3 predictions vs. GLANCE dataset for 2010.</figcaption>
+    <figcaption>Table 13 (below). Confusion matrix: Collection 3 predictions vs GLANCE dataset for 2010.</figcaption>
 </figure>
 
 ![C3 2010 GLANCE C3](/_files/land_cover/c3_l3-20.png)
@@ -398,18 +398,22 @@ The Weighted-Average is the average of each metric weighted by the support (TP +
 **GLANCE 2015**
 
 <figure>
-    <figcaption>Table 14 (below). Confusion matrix: Collection 2 predictions vs. GLANCE dataset for 2015.</figcaption>
+    <figcaption>Table 14 (below). Confusion matrix: Collection 2 predictions vs GLANCE dataset for 2015.</figcaption>
 </figure>
 
 ![C2 2015 GLANCE C2](/_files/land_cover/c2_l3-17.png)
 
 <figure>
-    <figcaption>Table 15 (below). Confusion matrix: Collection 3 predictions vs. GLANCE dataset for 2015.</figcaption>
+    <figcaption>Table 15 (below). Confusion matrix: Collection 3 predictions vs GLANCE dataset for 2015.</figcaption>
 </figure>
 
 ![C3 2015 GLANCE C3](/_files/land_cover/c3_l3-18.png)
 
 **Collection 3 vs Collection 2**
+
+<figure>
+    <figcaption>Table 16 (below). Classification metrics generated by using C2 data as "ground truth" for the C3 output for 2010 and 2015.</figcaption>
+</figure>
 
 ::::{grid} 1 2 2 2
 :class-container: images-max-width-100-percent
@@ -418,7 +422,7 @@ The Weighted-Average is the average of each metric weighted by the support (TP +
 
 <figure>
     <img src="/_static/land_cover/c3_c2_l3-22.png" alt="C3 vs C2 2010">
-    <figcaption>a)</figcaption>
+    <figcaption>a) 2010</figcaption>
 </figure>
 :::
 
@@ -426,14 +430,10 @@ The Weighted-Average is the average of each metric weighted by the support (TP +
 
 <figure>
     <img src="/_static/land_cover/c3_c2_l3-21.png" alt="C3 vs C2 2015">
-    <figcaption>b)</figcaption>
+    <figcaption>b) 2015</figcaption>
 </figure>
 :::
 
 ::::
-
-<figure>
-    <figcaption>Table 16. Classification metrics generated by using C2 data as "ground truth" for the C3 output for 2010 (a) and 2015 (b).</figcaption>
-</figure>
 
 % ## Quality assurance
