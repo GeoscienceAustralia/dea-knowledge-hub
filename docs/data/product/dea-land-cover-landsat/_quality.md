@@ -110,6 +110,8 @@ The result of the availability of these satellites is that the most consistent d
 
 :::
 
+<br />
+
 :::{list-table} Table 2. Datasets within DEA used to provide Essential Descriptor information for the DEA Land Cover classification.
 :header-rows: 1
 
@@ -170,7 +172,7 @@ The validation metrics reported were produced for Level 3 and they integrate the
 * An improvement in artificial surface classification was observed in C3. More urban areas appear to be correctly identified, although there is a slight increase in false positive identification of urban areas in the central Australian desert and sandy regions. 
 * Slight improvement is seen in Woody Cover for the Terrestrial Vegetation classification.
 * Substantial increase in Landsat 7 stripe artefacts in C3 due to  Landsat 8 scenes being filtered out by bad geometric quality assessments.
-* General increase in number pixels with no data surrounding water bodies.
+* General increase in C3 in the number pixels with no data surrounding water bodies.
 * Misclassification of water persistence over the ocean in C3.
 
 ::::{grid} 1 2 2 3
@@ -215,18 +217,47 @@ The validation metrics reported were produced for Level 3 and they integrate the
     <figcaption>Figure 2. Animations showing examples of differences in Level 4 classification between Land Cover C3 and C2.</figcaption>
 </figure>
 
+::::{grid} 1 2 2 3
+:class-container: images-max-width-100perc
 
+:::{grid-item}
 
+<figure>
+    <img src="/_files/land_cover/1.degradation-urban_false_positives-level3.gif" alt="Degradation false positives artificial, Level 3" style="max-width: 600px;">
+    <figcaption>a) Shows Portland (VIC) and the surrounding area, where an improvement in the artificial surface classification in Collection 3 (i.e., V2) can be observed in the town to the east, although false positives can also be seen on the sandy terrain in the western part of the displayed area.</figcaption>
+</figure>
+:::
 
+:::{grid-item}
 
-|   |   |   |
-|---|---|---|
-| a) ![Degradation false positives artificial, Level 3](/_files/land_cover/1.degradation-urban_false_positives-level3.gif) | b) ![Improvement, cultivated better classified, Level 3](/_files/land_cover/12b.improvement_cultivated_level3_2015.gif) | c) ![Degradation missing pixels around waterbodies, Level 3](/_files/land_cover/9.degradation-missing_pixels_waterbodies-level_3.gif) |
+<figure>
+    <img src="/_files/land_cover/12b.improvement_cultivated_level3_2015.gif" alt="Improvement, cultivated better classified, Level 3" style="max-width: 600px;">
+    <figcaption>b) Displays an instance where Collection 3 (i.e., V2) more accurately identifies cultivated areas in a region on the southern coast of Western Australia, particularly in the northern part of the image, while the eastern part appears slightly noisier.</figcaption>
+</figure>
+:::
 
+:::{grid-item}
+
+<figure>
+    <img src="/_files/land_cover/9.degradation-missing_pixels_waterbodies-level_3.gif" alt="Degradation missing pixels around waterbodies, Level 3" style="max-width: 600px;">
+    <figcaption>c) Highlights the increase in pixels with missing values around water bodies in Collection 3 (i.e., V2) at Lake Eildon in Victoria.</figcaption>
+</figure>
+:::
+
+::::
+
+::::{grid} 1 1 1 1
+:class-container: images-max-width-100perc
+
+:::{grid-item}
 ![legend Level 3](/_files/land_cover/legend_lc_level3_horizontal.png)
+:::
 
-*Figure 3.* Animations showing examples of differences in Level 3 classification between Land Cover C3 and C2 (i.e., version 2 (V2) and version 1 (V1), respectively). *a)* shows Portland (VIC) and the surrounding area, where an improvement in the artificial surface classification in Collection 3 (i.e., V2) can be observed in the town to the east, although false positives can also be seen on the sandy terrain in the western part of the displayed area. *b)* displays an instance where Collection 3 (i.e., V2) more accurately identifies cultivated areas in a region on the southern coast of Western Australia, particularly in the northern part of the image, while the eastern part appears slightly noisier. *c)* highlights the increase in pixels with missing values around water bodies in Collection 3 (i.e., V2) at Lake Eildon in Victoria. 
+::::
 
+<figure>
+    <figcaption>Figure 3. Animations showing examples of differences in Level 3 classification between Land Cover C3 and C2.</figcaption>
+</figure>
 
 ### Collection 2 Validation
 
