@@ -373,10 +373,6 @@ At Level 4, vegetated areas are further classified using information that differ
 * [LivingEarth LCCS](https://bitbucket.org/au-eoed/livingearth_lccs/)
 * [LivingEarth Australia](https://bitbucket.org/geoscienceaustralia/livingearth_australia/)
 
-## Data Structure
-
-Land Cover version 1.0 contained several TIF files including `waterstt-wat-cat-l4a.tif`, `watersea-veg-cat-l4a-au.tif`, `waterper-wat-cat-l4d-au.tif`, `lifeform-veg-cat-l4a.tif`, `inttidal-wat-cat-l4a.tif`, `canopyco-veg-cat-l4d.tif`, and `baregrad-phy-cat-l4d-au.tif`. These will not be provided in Land Cover 2.0 as the classifications will be contained within the `level4.tif` file, allowing users to filter the results as required.
-
 ## References
 
 Lucas R, Mueller N, Siggins A, Owers C, Clewley D, Bunting P, Kooymans C, Tissott B, Lewis B, Lymburner L, Metternicht G. Land Cover Mapping using Digital Earth Australia. *Data*. 2019; 4(4):143. [https://doi.org/10.3390/data4040143](https://doi.org/10.3390/data4040143)
