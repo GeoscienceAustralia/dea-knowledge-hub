@@ -181,7 +181,7 @@ The validation metrics reported were produced for Level 3 and they integrate the
 :::{grid-item}
 
 <figure>
-    <img src="/_files/land_cover/2.degr_ocean_water_persistance-degr_stripes-impr_urban.gif" alt="Improvement artificial class Degradation water persistence, Level 4" style="max-width: 600px;">
+    <img src="/_static/land_cover/2.degr_ocean_water_persistance-degr_stripes-impr_urban.gif" alt="Improvement artificial class Degradation water persistence, Level 4" style="max-width: 600px;">
     <figcaption>a) Illustrates the improved artificial surface classification in the greater Melbourne area; stripe artifacts and incorrect water persistence classification can also be observed.</figcaption>
 </figure>
 :::
@@ -189,7 +189,7 @@ The validation metrics reported were produced for Level 3 and they integrate the
 :::{grid-item}
 
 <figure>
-    <img src="/_files/land_cover/10.improvement-woody_cover_pine_plantation-zoomed-in-level4.gif" alt="Improvement woody cover, Level 4" style="max-width: 600px;">
+    <img src="/_static/land_cover/10.improvement-woody_cover_pine_plantation-zoomed-in-level4.gif" alt="Improvement woody cover, Level 4" style="max-width: 600px;">
     <figcaption>b) Displays a pine plantation near Kinglake West (VIC), which Collection 3 (i.e., V2) appears to classify correctly as being > 65% woody cover.</figcaption>
 </figure>
 :::
@@ -197,7 +197,7 @@ The validation metrics reported were produced for Level 3 and they integrate the
 :::{grid-item}
 
 <figure>
-    <img src="/_files/land_cover/11b.example_cultivated_degradation_level4._2015gif.gif" alt="Degradation cultivated, Level 4" style="max-width: 600px;">
+    <img src="/_static/land_cover/11b.example_cultivated_degradation_level4._2015gif.gif" alt="Degradation cultivated, Level 4" style="max-width: 600px;">
     <figcaption>c) Shows an example of degradation in cultivated area classification in the Cassowary Coast (northern QLD), primarily due to the misclassification of cultivated land as herbaceous natural vegetation.</figcaption>
 </figure>
 :::
@@ -223,7 +223,7 @@ The validation metrics reported were produced for Level 3 and they integrate the
 :::{grid-item}
 
 <figure>
-    <img src="/_files/land_cover/1.degradation-urban_false_positives-level3.gif" alt="Degradation false positives artificial, Level 3" style="max-width: 600px;">
+    <img src="/_static/land_cover/1.degradation-urban_false_positives-level3.gif" alt="Degradation false positives artificial, Level 3" style="max-width: 600px;">
     <figcaption>a) Shows Portland (VIC) and the surrounding area, where an improvement in the artificial surface classification in Collection 3 (i.e., V2) can be observed in the town to the east, although false positives can also be seen on the sandy terrain in the western part of the displayed area.</figcaption>
 </figure>
 :::
@@ -231,7 +231,7 @@ The validation metrics reported were produced for Level 3 and they integrate the
 :::{grid-item}
 
 <figure>
-    <img src="/_files/land_cover/12b.improvement_cultivated_level3_2015.gif" alt="Improvement, cultivated better classified, Level 3" style="max-width: 600px;">
+    <img src="/_static/land_cover/12b.improvement_cultivated_level3_2015.gif" alt="Improvement, cultivated better classified, Level 3" style="max-width: 600px;">
     <figcaption>b) Displays an instance where Collection 3 (i.e., V2) more accurately identifies cultivated areas in a region on the southern coast of Western Australia, particularly in the northern part of the image, while the eastern part appears slightly noisier.</figcaption>
 </figure>
 :::
@@ -239,7 +239,7 @@ The validation metrics reported were produced for Level 3 and they integrate the
 :::{grid-item}
 
 <figure>
-    <img src="/_files/land_cover/9.degradation-missing_pixels_waterbodies-level_3.gif" alt="Degradation missing pixels around waterbodies, Level 3" style="max-width: 600px;">
+    <img src="/_static/land_cover/9.degradation-missing_pixels_waterbodies-level_3.gif" alt="Degradation missing pixels around waterbodies, Level 3" style="max-width: 600px;">
     <figcaption>c) Highlights the increase in pixels with missing values around water bodies in Collection 3 (i.e., V2) at Lake Eildon in Victoria.</figcaption>
 </figure>
 :::
@@ -261,23 +261,29 @@ The validation metrics reported were produced for Level 3 and they integrate the
 
 ### Collection 2 Validation
 
-The product was validated using 6000 points spatially distributed over Australia. These points were created using a stratified random sampling approach slightly adjusted for oversampling. This process was conducted for 2010 and 2015 creating 12000 samples in total. After removing points with No Data and spurious values the total number was 11750. The sample points were divided into clusters for visual assessment against the outputs from the classification and assessed individually from a pool of 10 people. To compare the individual biases of the individual assessors, an additional set of validation points were created that all assessors evaluated, the results are shown in Table 4. Where assessors could identify a predominant land cover (i.e. not "mixed" pixels or "unsure"), all assessors agreed 75 % of the time. 
+The product was validated using 6000 points spatially distributed over Australia. These points were created using a stratified random sampling approach slightly adjusted for oversampling. This process was conducted for 2010 and 2015, creating 12,000 samples in total. After removing points with No Data and spurious values, the total number was 11,750. The sample points were divided into clusters for visual assessment against the outputs from the classification and assessed individually from a pool of 10 people. To compare the individual biases of the individual assessors, an additional set of validation points were created that were evaluated by all assessors. The results are shown in Table 4. Where assessors could identify a predominant land cover (i.e. not "mixed" pixels or "unsure"), all assessors agreed 75 % of the time. 
 
-*Table 3* contains the overall accuracy for all classes. The term "support" refers to the number of validation points used in the calculation of that accuracy value. 
+Table 3 contains the overall accuracy for all classes. The term 'support' refers to the number of validation points used in the calculation of that accuracy value. 
 
-![Overall accuracy of DEA Land Cover is 80%. 2010 accuracy is 82%, 2015 accuracy is 78%.](/_files/land_cover/table2-overall-accuracy-dea-lc.PNG)
+<figure>
+    <figcaption>Table 3. Overall accuracy of DEA Land Cover.</figcaption>
+</figure>
 
-*Table 3*. Overall accuracy of DEA Land Cover.
+![Overall accuracy of DEA Land Cover is 80%. 2010 accuracy is 82% and 2015 accuracy is 78%.](/_files/land_cover/table2-overall-accuracy-dea-lc.PNG)
 
-*Table 4* contains per-class accuracy information. "Precision" refers to the ability of a classification model to return only relevant instances. "Recall" refers to the ability to identify all relevant instances. The “F1 score” is a combination of precision and recall and an overall measure of accuracy. Classes such as artificial surfaces, natural aquatic vegetation and water had high accuracies. Classifying cultivated terrestrial vegetation and bare surfaces was challenging and accuracies were the lowest of the six classes presented here.
+Table 4 contains per-class accuracy information. 'Precision' refers to the ability of a classification model to return only relevant instances. 'Recall' refers to the ability to identify all relevant instances. The 'F1 score' is a combination of precision and recall and an overall measure of accuracy. Classes such as artificial surfaces, natural aquatic vegetation, and water had high accuracies. Classifying cultivated terrestrial vegetation and bare surfaces was challenging and accuracies were the lowest of the six classes presented here.
 
-![Table showing accuracy per class, including precision, recall, F1 score and support values per class. ](/_files/land_cover/table3-per-class-accuracy-info-dea-lc.PNG)
+<figure>
+    <figcaption>Table 4. Per-class accuracy information for DEA Land Cover.</figcaption>
+</figure>
 
-*Table 4*. Per-class accuracy information for DEA Land Cover.
+![Table showing accuracy per class, including precision, recall, F1 score, and support values per class. ](/_files/land_cover/table3-per-class-accuracy-info-dea-lc.PNG)
 
-![table showing the agreement between assessors.](/_files/land_cover/table4-inter-assessor-agreement.PNG)
+<figure>
+    <figcaption>Table 5. Inter-assessor agreement.</figcaption>
+</figure>
 
-*Table 5*. Inter-assessor agreement.
+![Table showing the agreement between assessors.](/_files/land_cover/table4-inter-assessor-agreement.PNG)
 
 ### Collection 3 Validation
 
@@ -294,59 +300,97 @@ When C3 was compared directly with the output of C2 (*Table 16*), it showed good
 
 **Validation Points 2010**
 
-|   |   |
-|---|---|
-| a) ![C2 2010 Accuracy](/_files/land_cover/c2_l3-13.png) | b) ![C3 2010 Accuracy](/_files/land_cover/c3_l3-14.png) |
+::::{grid} 1 2 2 2
+:class-container: images-max-width-100perc
 
-*Table 6*. Classification metrics of Collection 2 (*a*) and Collection 3 (*b*) in the year 2010, using the validation points as ground truth.
+:::{grid-item}
 
-The ``Macro-Average`` is the unweighted mean of each metric calculated independently for all classes. Each class contributes equally, regardless of its frequency in the dataset. It should be interpreted as "unbiased" due to the highly skewed nature of the validation points. 
+<figure>
+    <img src="/_static/land_cover/c2_l3-13.png" alt="C2 2010 Accuracy" style="max-width: 600px;">
+    <figcaption>a)</figcaption>
+</figure>
+:::
 
-The ``Weighted-Average`` is the average of each metric weighted by the support (TP + FN; i.e., True Positives and False Negatives) for each class. The weight reflects the proportion of each class in the "Truth" such that more frequent classes have a greater impact on the overall average.
+:::{grid-item}
+
+<figure>
+    <img src="/_static/land_cover/c3_l3-14.png" alt="C3 2010 Accuracy" style="max-width: 600px;">
+    <figcaption>b)</figcaption>
+</figure>
+:::
+
+::::
+
+<figure>
+    <figcaption>Table 6. Classification metrics of Collection 2 (a) and Collection 3 (b) in the year 2010, using the validation points as ground truth.</figcaption>
+</figure>
+
+The Macro-Average is the unweighted mean of each metric calculated independently for all classes. Each class contributes equally, regardless of its frequency in the dataset. It should be interpreted as "unbiased" due to the highly skewed nature of the validation points. 
+
+The Weighted-Average is the average of each metric weighted by the support (TP + FN; i.e., True Positives and False Negatives) for each class. The weight reflects the proportion of each class in the "Truth" such that more frequent classes have a greater impact on the overall average.
 
 ![C2 2010 Matrix](/_files/land_cover/c2_l3-15.png)
 
-*Table 7*. Confusion matrix: Collection 2 predictions vs. validation points for 2010.
+Table 7. Confusion matrix: Collection 2 predictions vs. validation points for 2010.
 
 ![C3 2010 Matrix](/_files/land_cover/c3_l3-16.png)
 
-*Table 8*. Confusion matrix: Collection 3 predictions vs. validation points for 2010.
+Table 8. Confusion matrix: Collection 3 predictions vs. validation points for 2010.
 
 **Validation Points 2015**
 
-|   |   |
-|---|---|
-| a) ![C2 2015 Accuracy](/_files/land_cover/c2_l3-9.png) | b) ![C3 2015 Accuracy](/_files/land_cover/c3_l3-10.png) |
+::::{grid} 1 2 2 2
+:class-container: images-max-width-100perc
 
-*Table 9*. Classification metrics of Collection 2 (*a*) and Collection 3 (*b*) in the year 2015, using the validation points as ground truth.
+:::{grid-item}
+
+<figure>
+    <img src="/_static/land_cover/c2_l3-9.png" alt="C2 2015 Accuracy" style="max-width: 600px;">
+    <figcaption>a)</figcaption>
+</figure>
+:::
+
+:::{grid-item}
+
+<figure>
+    <img src="/_static/land_cover/c3_l3-10.png" alt="C3 2015 Accuracy" style="max-width: 600px;">
+    <figcaption>b)</figcaption>
+</figure>
+:::
+
+::::
+
+<figure>
+    <figcaption>Table 9. Classification metrics of Collection 2 (a) and Collection 3 (b) in the year 2015, using the validation points as ground truth.</figcaption>
+</figure>
 
 ![C2 2015 Matrix](/_files/land_cover/c2_l3-11.png)
 
-*Table 10*. Confusion matrix: Collection 2 predictions vs. validation points for 2015.
+Table 10. Confusion matrix: Collection 2 predictions vs. validation points for 2015.
 
 ![C3 2015 Matrix](/_files/land_cover/c3_l3-12.png)
 
-*Table 11*. Confusion matrix: Collection 3 predictions vs. validation points for 2015.
+Table 11. Confusion matrix: Collection 3 predictions vs. validation points for 2015.
 
 **GLANCE 2010**
 
 ![C2 2010 GLANCE C2](/_files/land_cover/c2_l3-19.png)
 
-*Table 12*. Confusion matrix: Collection 2 predictions vs. GLANCE dataset for 2010.
+Table 12. Confusion matrix: Collection 2 predictions vs. GLANCE dataset for 2010.
 
 ![C3 2010 GLANCE C3](/_files/land_cover/c3_l3-20.png)
 
-*Table 13*. Confusion matrix: Collection 3 predictions vs. GLANCE dataset for 2010.
+Table 13. Confusion matrix: Collection 3 predictions vs. GLANCE dataset for 2010.
 
 **GLANCE 2015**
 
 ![C2 2015 GLANCE C2](/_files/land_cover/c2_l3-17.png)
 
-*Table 14*. Confusion matrix: Collection 2 predictions vs. GLANCE dataset for 2015.
+Table 14. Confusion matrix: Collection 2 predictions vs. GLANCE dataset for 2015.
 
 ![C3 2015 GLANCE C3](/_files/land_cover/c3_l3-18.png)
 
-*Table 15*. Confusion matrix: Collection 3 predictions vs. GLANCE dataset for 2015.
+Table 15. Confusion matrix: Collection 3 predictions vs. GLANCE dataset for 2015.
 
 **C3 vs C2**
 
@@ -354,7 +398,6 @@ The ``Weighted-Average`` is the average of each metric weighted by the support (
 |---|---|
 | a) ![C3 vs C2 2010](/_files/land_cover/c3_c2_l3-22.png) | b) ![C3 vs C2 2015](/_files/land_cover/c3_c2_l3-21.png) |
 
-*Table 16*. Classification metrics generated by using C2 data as "ground truth" for the C3 output for 2010 (*a*) and 2015 (*b*) .
-
+Table 16. Classification metrics generated by using C2 data as "ground truth" for the C3 output for 2010 (*a*) and 2015 (*b*) .
 
 % ## Quality assurance
