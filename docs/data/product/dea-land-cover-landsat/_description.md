@@ -49,7 +49,7 @@ Annual Land Cover information can be used in a number of ways to support the mon
 :::{grid-item}
 
 <figure>
-    <img src="/_static/land_cover/Perth_urban_timeseries_lc_lvl3_gmad.gif" alt="Timeseries Perth urban expansion" style="max-width: 600px;">
+    <img src="/_static/land_cover/Perth_urban_timeseries_lc_lvl3_gmad.gif" alt="Timeseries Perth urban expansion">
     <figcaption>a) Urban expansion of Quinns Rocks (Perth).</figcaption>
 </figure>
 :::
@@ -57,7 +57,7 @@ Annual Land Cover information can be used in a number of ways to support the mon
 :::{grid-item}
 
 <figure>
-    <img src="/_static/land_cover/mt_beggary_bushfire_timeseries_lc_lvl4_gmad.gif" alt="Timeseries Mt Beggary bushfire" style="max-width: 600px;">
+    <img src="/_static/land_cover/mt_beggary_bushfire_timeseries_lc_lvl4_gmad.gif" alt="Timeseries Mt Beggary bushfire">
     <figcaption>b) Vegetation change and recovery following the Mt Beggary bushfire.</figcaption>
 </figure>
 :::
@@ -65,7 +65,7 @@ Annual Land Cover information can be used in a number of ways to support the mon
 :::{grid-item}
 
 <figure>
-    <img src="/_static/land_cover/shallow_inlet_timeseries_lc_lvl3_gmad.gif" alt="Timeseries inlet changes" style="max-width: 600px;">
+    <img src="/_static/land_cover/shallow_inlet_timeseries_lc_lvl3_gmad.gif" alt="Timeseries inlet changes">
     <figcaption>c) Morphological changes of Shallow Inlet in Victoria.</figcaption>
 </figure>
 :::
@@ -73,7 +73,7 @@ Annual Land Cover information can be used in a number of ways to support the mon
 :::{grid-item}
 
 <figure>
-    <img src="/_static/land_cover/lake_amadeus_timeseries_lc_lvl4_gmad.gif" alt="Timeseries lake Amadeus" style="max-width: 600px;">
+    <img src="/_static/land_cover/lake_amadeus_timeseries_lc_lvl4_gmad.gif" alt="Timeseries lake Amadeus">
     <figcaption>d) Annual variability of Lake Amadeus, a salt lake in the Northern Territory; the water persistence classification can be employed to track changes in its extent.</figcaption>
 </figure>
 :::

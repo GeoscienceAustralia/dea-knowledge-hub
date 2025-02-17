@@ -181,7 +181,7 @@ The validation metrics reported were produced for Level 3 and they integrate the
 :::{grid-item}
 
 <figure>
-    <img src="/_static/land_cover/2.degr_ocean_water_persistance-degr_stripes-impr_urban.gif" alt="Improvement artificial class Degradation water persistence, Level 4" style="max-width: 600px;">
+    <img src="/_static/land_cover/2.degr_ocean_water_persistance-degr_stripes-impr_urban.gif" alt="Improvement artificial class Degradation water persistence, Level 4">
     <figcaption>a) Illustrates the improved artificial surface classification in the greater Melbourne area; stripe artifacts and incorrect water persistence classification can also be observed.</figcaption>
 </figure>
 :::
@@ -189,7 +189,7 @@ The validation metrics reported were produced for Level 3 and they integrate the
 :::{grid-item}
 
 <figure>
-    <img src="/_static/land_cover/10.improvement-woody_cover_pine_plantation-zoomed-in-level4.gif" alt="Improvement woody cover, Level 4" style="max-width: 600px;">
+    <img src="/_static/land_cover/10.improvement-woody_cover_pine_plantation-zoomed-in-level4.gif" alt="Improvement woody cover, Level 4">
     <figcaption>b) Displays a pine plantation near Kinglake West (VIC), which Collection 3 (i.e., V2) appears to classify correctly as being > 65% woody cover.</figcaption>
 </figure>
 :::
@@ -197,7 +197,7 @@ The validation metrics reported were produced for Level 3 and they integrate the
 :::{grid-item}
 
 <figure>
-    <img src="/_static/land_cover/11b.example_cultivated_degradation_level4._2015gif.gif" alt="Degradation cultivated, Level 4" style="max-width: 600px;">
+    <img src="/_static/land_cover/11b.example_cultivated_degradation_level4._2015gif.gif" alt="Degradation cultivated, Level 4">
     <figcaption>c) Shows an example of degradation in cultivated area classification in the Cassowary Coast (northern QLD), primarily due to the misclassification of cultivated land as herbaceous natural vegetation.</figcaption>
 </figure>
 :::
@@ -223,7 +223,7 @@ The validation metrics reported were produced for Level 3 and they integrate the
 :::{grid-item}
 
 <figure>
-    <img src="/_static/land_cover/1.degradation-urban_false_positives-level3.gif" alt="Degradation false positives artificial, Level 3" style="max-width: 600px;">
+    <img src="/_static/land_cover/1.degradation-urban_false_positives-level3.gif" alt="Degradation false positives artificial, Level 3">
     <figcaption>a) Shows Portland (VIC) and the surrounding area, where an improvement in the artificial surface classification in Collection 3 (i.e., V2) can be observed in the town to the east, although false positives can also be seen on the sandy terrain in the western part of the displayed area.</figcaption>
 </figure>
 :::
@@ -231,7 +231,7 @@ The validation metrics reported were produced for Level 3 and they integrate the
 :::{grid-item}
 
 <figure>
-    <img src="/_static/land_cover/12b.improvement_cultivated_level3_2015.gif" alt="Improvement, cultivated better classified, Level 3" style="max-width: 600px;">
+    <img src="/_static/land_cover/12b.improvement_cultivated_level3_2015.gif" alt="Improvement, cultivated better classified, Level 3">
     <figcaption>b) Displays an instance where Collection 3 (i.e., V2) more accurately identifies cultivated areas in a region on the southern coast of Western Australia, particularly in the northern part of the image, while the eastern part appears slightly noisier.</figcaption>
 </figure>
 :::
@@ -239,7 +239,7 @@ The validation metrics reported were produced for Level 3 and they integrate the
 :::{grid-item}
 
 <figure>
-    <img src="/_static/land_cover/9.degradation-missing_pixels_waterbodies-level_3.gif" alt="Degradation missing pixels around waterbodies, Level 3" style="max-width: 600px;">
+    <img src="/_static/land_cover/9.degradation-missing_pixels_waterbodies-level_3.gif" alt="Degradation missing pixels around waterbodies, Level 3">
     <figcaption>c) Highlights the increase in pixels with missing values around water bodies in Collection 3 (i.e., V2) at Lake Eildon in Victoria.</figcaption>
 </figure>
 :::
@@ -306,7 +306,7 @@ When C3 was compared directly with the output of C2 (*Table 16*), it showed good
 :::{grid-item}
 
 <figure>
-    <img src="/_static/land_cover/c2_l3-13.png" alt="C2 2010 Accuracy" style="max-width: 600px;">
+    <img src="/_static/land_cover/c2_l3-13.png" alt="C2 2010 Accuracy">
     <figcaption>a)</figcaption>
 </figure>
 :::
@@ -314,7 +314,7 @@ When C3 was compared directly with the output of C2 (*Table 16*), it showed good
 :::{grid-item}
 
 <figure>
-    <img src="/_static/land_cover/c3_l3-14.png" alt="C3 2010 Accuracy" style="max-width: 600px;">
+    <img src="/_static/land_cover/c3_l3-14.png" alt="C3 2010 Accuracy">
     <figcaption>b)</figcaption>
 </figure>
 :::
@@ -345,7 +345,7 @@ Table 8. Confusion matrix: Collection 3 predictions vs. validation points for 20
 :::{grid-item}
 
 <figure>
-    <img src="/_static/land_cover/c2_l3-9.png" alt="C2 2015 Accuracy" style="max-width: 600px;">
+    <img src="/_static/land_cover/c2_l3-9.png" alt="C2 2015 Accuracy">
     <figcaption>a)</figcaption>
 </figure>
 :::
@@ -353,7 +353,7 @@ Table 8. Confusion matrix: Collection 3 predictions vs. validation points for 20
 :::{grid-item}
 
 <figure>
-    <img src="/_static/land_cover/c3_l3-10.png" alt="C3 2015 Accuracy" style="max-width: 600px;">
+    <img src="/_static/land_cover/c3_l3-10.png" alt="C3 2015 Accuracy">
     <figcaption>b)</figcaption>
 </figure>
 :::
@@ -400,7 +400,7 @@ Table 15. Confusion matrix: Collection 3 predictions vs. GLANCE dataset for 2015
 :::{grid-item}
 
 <figure>
-    <img src="/_static/land_cover/c3_c2_l3-22.png" alt="C3 vs C2 2010" style="max-width: 600px;">
+    <img src="/_static/land_cover/c3_c2_l3-22.png" alt="C3 vs C2 2010">
     <figcaption>a)</figcaption>
 </figure>
 :::
@@ -408,7 +408,7 @@ Table 15. Confusion matrix: Collection 3 predictions vs. GLANCE dataset for 2015
 :::{grid-item}
 
 <figure>
-    <img src="/_static/land_cover/c3_c2_l3-21.png" alt="C3 vs C2 2015" style="max-width: 600px;">
+    <img src="/_static/land_cover/c3_c2_l3-21.png" alt="C3 vs C2 2015">
     <figcaption>b)</figcaption>
 </figure>
 :::
