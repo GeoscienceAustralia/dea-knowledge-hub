@@ -90,7 +90,9 @@ DEA Land Cover consists of eight datasets: The base (level 3) classification, se
 
 Detailed layer descriptions, including known issues, are provided in the following sections.
 
-:::{dropdown} Level 3
+### Level 3
+
+:::{dropdown} Classifications of Level 3
 
 The base Level 3 land cover classification.
 
@@ -112,7 +114,37 @@ The base Level 3 land cover classification.
 
 :::
 
-:::{dropdown} Level 4
+**Cultivated Terrestrial Vegetation (CTV)**
+
+Cultivated Terrestrial Vegetation (CTV) is associated with agricultural areas where active cultivation has been observed. In version 2.0, only herbaceous cultivation is shown and describes vegetation of strongly varying cover, ranging from bare (e.g. ploughed) areas to fully developed crops. Whilst the continental product describes land cover, interpretation is complicated as the same terminology is used to report on land use.
+
+The definition of cultivated, and the difference from natural or semi-natural land covers, can be contentious, particularly as much of the Australian landscape is used for agricultural food production. This includes areas of natural terrestrial vegetation (NTV) and natural aquatic vegetation (NAV) that are grazed by stock and which can be regarded as either semi-natural or cultivated.
+
+CTV in the DEA Land Cover map is associated with areas where management practices aimed at cultivation (including for grass production) are actively performed during the year being shown. These practices include crop planting and harvesting, fertilisation, and ploughing. These practices often lead to highly dynamic spectral signals within and between years but also regular transitions between vegetation of different cover amounts as well as bare soil. This also means that agricultural areas will transition between natural and cultivated covers as management practices transition an area between actively cropped or grazed, to areas left fallow, areas reduced to low cover due to climate effects such as drought, or to other covers depending on what the predominant conditions are through the year being shown. 
+
+**Natural Terrestrial Vegetation (NTV)** 
+
+Natural Terrestrial Vegetation (NTV) represents areas that have all or most of the characteristics of natural or semi-natural herbaceous or woody vegetation (based primarily on floristics, structure, function, and dynamics). These areas are identified as primarily vegetated, with either a photosynthetic vegetation fraction (PV) or non-photosynthetic fraction (NPV) greater than the bare soil fraction (BS) for at least two consecutive months. This approach considers that vegetation can exist in, and transition between PV and NPV states during the year. In effect, this approach classifies the landscape as primarily vegetated where the vegetated fraction of a pixel is greater than 30 %. Where the proportion of the landscape is less than 30 % vegetated, it is regarded as a sparsely vegetated or natural surface, but the cover proportions can still be quantified. Urban areas that are vegetated (e.g. suburbs with trees) are associated with NTV if the pixel is at least 30 % vegetated but as artificial surfaces (AS) otherwise. The implementation allows areas of semi-natural vegetation (e.g. native grassland and pastureland) to be included in the NTV class.
+
+**Natural Aquatic Vegetation (NAV)**
+
+Natural Aquatic Vegetation (NAV) is associated primarily with wetlands that are dominated by woody or herbaceous vegetation (as with NTV). NAV is generally associated with swamps, fens, flooded forests, saltmarshes, or mangroves. Only mangroves are included in the current release.
+
+**Artificial Surfaces (AS)** 
+
+Artificial Surfaces (AS) are areas of non-vegetated land cover created by human activities and are primarily represented by impervious surfaces (e.g. urban and industrial buildings, roads, and railways). These can be more readily identified when the area is larger than the spatial resolution (30 m) provided by the sensor. Open cut extraction sites are often included in AS. However, there is considerable misclassification of NS as AS in areas where vegetated cover is very low and very consistent through the year. 
+
+**Natural Surfaces (NS)** 
+
+Natural Surfaces (NS) are comprised primarily of unconsolidated (often pervious, e.g. mudflats and saltpans) or consolidated (e.g. bare rock or bare soil) materials. In Australia, the proportional area of natural surfaces is relatively low and primarily confined to the deserts and semi-arid areas, river channels (e.g. dry riverbeds) and the coastline (e.g. mudflats and sand dunes). Much of the interior of Australia is sparsely vegetated and can be dominated by herbaceous (annual or perennial) or woody lifeforms. 
+
+**Water** 
+
+The Water class captures terrestrial and coastal open water such as dams, lakes, large rivers, and the coastal and near-shore zone. 
+
+### Level 4
+
+:::{dropdown} Classifications of Level 4
 
 All level 3 and level 4 classes for a given pixel are combined to give a single classification value.
 
@@ -282,39 +314,6 @@ All level 3 and level 4 classes for a given pixel are combined to give a single 
 
 :::
 
-:::{dropdown} Level 3 Class descriptions
-
-**Cultivated Terrestrial Vegetation (CTV)**
-
-Cultivated Terrestrial Vegetation (CTV) is associated with agricultural areas where active cultivation has been observed. In version 2.0, only herbaceous cultivation is shown and describes vegetation of strongly varying cover, ranging from bare (e.g. ploughed) areas to fully developed crops. Whilst the continental product describes land cover, interpretation is complicated as the same terminology is used to report on land use.
-
-The definition of cultivated, and the difference from natural or semi-natural land covers, can be contentious, particularly as much of the Australian landscape is used for agricultural food production. This includes areas of natural terrestrial vegetation (NTV) and natural aquatic vegetation (NAV) that are grazed by stock and which can be regarded as either semi-natural or cultivated.
-
-CTV in the DEA Land Cover map is associated with areas where management practices aimed at cultivation (including for grass production) are actively performed during the year being shown. These practices include crop planting and harvesting, fertilisation, and ploughing. These practices often lead to highly dynamic spectral signals within and between years but also regular transitions between vegetation of different cover amounts as well as bare soil. This also means that agricultural areas will transition between natural and cultivated covers as management practices transition an area between actively cropped or grazed, to areas left fallow, areas reduced to low cover due to climate effects such as drought, or to other covers depending on what the predominant conditions are through the year being shown. 
-
-**Natural Terrestrial Vegetation (NTV)** 
-
-Natural Terrestrial Vegetation (NTV) represents areas that have all or most of the characteristics of natural or semi-natural herbaceous or woody vegetation (based primarily on floristics, structure, function, and dynamics). These areas are identified as primarily vegetated, with either a photosynthetic vegetation fraction (PV) or non-photosynthetic fraction (NPV) greater than the bare soil fraction (BS) for at least two consecutive months. This approach considers that vegetation can exist in, and transition between PV and NPV states during the year. In effect, this approach classifies the landscape as primarily vegetated where the vegetated fraction of a pixel is greater than 30 %. Where the proportion of the landscape is less than 30 % vegetated, it is regarded as a sparsely vegetated or natural surface, but the cover proportions can still be quantified. Urban areas that are vegetated (e.g. suburbs with trees) are associated with NTV if the pixel is at least 30 % vegetated but as artificial surfaces (AS) otherwise. The implementation allows areas of semi-natural vegetation (e.g. native grassland and pastureland) to be included in the NTV class.
-
-**Natural Aquatic Vegetation (NAV)**
-
-Natural Aquatic Vegetation (NAV) is associated primarily with wetlands that are dominated by woody or herbaceous vegetation (as with NTV). NAV is generally associated with swamps, fens, flooded forests, saltmarshes, or mangroves. Only mangroves are included in the current release.
-
-**Artificial Surfaces (AS)** 
-
-Artificial Surfaces (AS) are areas of non-vegetated land cover created by human activities and are primarily represented by impervious surfaces (e.g. urban and industrial buildings, roads, and railways). These can be more readily identified when the area is larger than the spatial resolution (30 m) provided by the sensor. Open cut extraction sites are often included in AS. However, there is considerable misclassification of NS as AS in areas where vegetated cover is very low and very consistent through the year. 
-
-**Natural Surfaces (NS)** 
-
-Natural Surfaces (NS) are comprised primarily of unconsolidated (often pervious, e.g. mudflats and saltpans) or consolidated (e.g. bare rock or bare soil) materials. In Australia, the proportional area of natural surfaces is relatively low and primarily confined to the deserts and semi-arid areas, river channels (e.g. dry riverbeds) and the coastline (e.g. mudflats and sand dunes). Much of the interior of Australia is sparsely vegetated and can be dominated by herbaceous (annual or perennial) or woody lifeforms. 
-
-**Water** 
-
-The Water class captures terrestrial and coastal open water such as dams, lakes, large rivers, and the coastal and near-shore zone. 
-:::
-
-:::{dropdown} Level 4 Class Descriptions
-
 **Lifeform (NTV, NAV, and CTV; 2 classes)** 
 
 Lifeform represents the dominant vegetation type of a primarily vegetated area, discriminating woody from non-woody (herbaceous) vegetation. The Woody Cover Fraction models woody as vegetation of at least 20 % canopy cover. Hence the dominant vegetation in areas designated as woody in this product is considered to be composed of shrubs and trees. However, where woody vegetation is not dominant in an area, the cover will be essentially herbaceous or bare. Hence some areas containing sparse trees or shrubs will likely be represented as herbaceous.
@@ -342,7 +341,6 @@ Intertidal water refers to primarily non-vegetated aquatic areas with systematic
 **Bare Gradation (NS; 3 classes)**
 
 Bare gradation describes the percentage of bare surface in areas which contain sporadic or little persistent green vegetation through the year. The percentage reflects that much of the remaining area is brown or dead vegetation. This is characteristic of the more arid parts of Australia.
-:::
 
 ## Lineage
 
