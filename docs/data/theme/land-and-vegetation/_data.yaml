@@ -4,7 +4,7 @@ description: See how the land surface and vegetation of Australia have changed o
 cards:
   - name: DEA Land Cover
     link: /data/product/dea-land-cover-landsat/
-    image: /_files/cmi/DEA_Land_Cover_1_0_0_Lvl4_2015.jpg
+    image: /_files/land_cover/land-cover-2-0-0-hero-image-size-50perc.png
   - name: DEA Fractional Cover
     link: /data/category/dea-fractional-cover/
     image: /_files/cmi/FractionalCover1.jpg
