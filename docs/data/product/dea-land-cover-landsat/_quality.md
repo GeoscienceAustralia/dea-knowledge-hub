@@ -259,7 +259,7 @@ The validation metrics reported were produced for Level 3 and they integrate the
     <figcaption>Figure 3. Animations showing examples of differences in Level 3 classification between Land Cover C3 and C2.</figcaption>
 </figure>
 
-### Collection 2 Validation
+### Collection 2 validation
 
 The product was validated using 6000 points spatially distributed over Australia. These points were created using a stratified random sampling approach slightly adjusted for oversampling. This process was conducted for 2010 and 2015, creating 12,000 samples in total. After removing points with No Data and spurious values, the total number was 11,750. The sample points were divided into clusters for visual assessment against the outputs from the classification and assessed individually from a pool of 10 people. To compare the individual biases of the individual assessors, an additional set of validation points were created that were evaluated by all assessors. The results are shown in Table 4. Where assessors could identify a predominant land cover (i.e. not "mixed" pixels or "unsure"), all assessors agreed 75 % of the time. 
 
@@ -285,20 +285,25 @@ Table 4 contains per-class accuracy information. 'Precision' refers to the abili
 
 ![Table showing the agreement between assessors.](/_files/land_cover/table4-inter-assessor-agreement.PNG)
 
-### Collection 3 Validation
+### Collection 3 validation
 
-In order to understand the extent of change between the versions, validation against three data sources was undertaken: ``validation points`` reused from Collection 2, with the addition of point attributes from Köppen Climate Zone and State/Territory, added to facilitate segment analysis; the [``GLANCE (Global Land Cover Estimation)``](https://www.nature.com/articles/s41597-023-02798-5) global dataset of independent "ground truth" data; and the Land Cover ``Collection 2 data``. 
+In order to understand the extent of change between the versions, validation against three data sources was undertaken. These were the **validation points** reused from Collection 2, with the addition of point attributes from Köppen Climate Zone and State/Territory, added to facilitate segment analysis; the **[GLANCE (Global Land Cover Estimation)](https://www.nature.com/articles/s41597-023-02798-5)** global dataset of independent "ground truth" data; and the Land Cover **Collection 2 data**. 
 
 To account for the additional validation points, the Collection 2 (C2) validation was run again and compared with the results from Collection 3 (C3).
 
-Both C3 and C2 showed overall degradation in 2010 compared to 2015, a trend that is propagated from the Level 1 and individual ML models results. The performance metrics with the validation points show an overall alignment of the two collections, with minimal differences across categories, except for the Recall values of Cultivated Vegetation and Artificial Surface (both higher in C3 for the year 2010) (*Tables 6 and 9*).
-C3 demonstrated a more reasonable classification on the GLANCE dataset, particularly for the Natural Vegetation class, which can be intuitively interpreted as the Agriculture category of the GLANCE dataset (*Tables 7, 8, 10, 11*).
+Both C3 and C2 showed overall degradation in 2010 compared to 2015, a trend that is propagated from the Level 1 and individual ML models results. The performance metrics with the validation points show an overall alignment of the two collections, with minimal differences across categories, except for the Recall values of Cultivated Vegetation and Artificial Surface (which are both higher in C3 for the year 2010) (see Tables 6 and 9).
 
-C3 exhibited better consistency in results against the validation points and the GLANCE data. However, some disalignment between ground truth datasets is present in both collections for certain classes (e.g., Bare Surfaces). Some classes, such as the Artificial Surface, have too few validation points to be considered statistically significant. Hence, the classification metrics should be interpreted with caution and understood in relative terms, highlighting the differences between C2 and C3, rather than the absolute performance of each.
+C3 demonstrated a more reasonable classification on the GLANCE dataset, particularly for the Natural Vegetation class, which can be intuitively interpreted as the Agriculture category of the GLANCE dataset (see Tables 7, 8, 10, and 11).
 
-When C3 was compared directly with the output of C2 (*Table 16*), it showed good agreement for most of the Level 3 classes. Two notable exceptions were the Cultivated Vegetation class and the Artificial Surface class. For Cultivated Vegetation, the performance against the validation data did not suggest a substantial difference in overall accuracy between C2 and C3; thus, the disalignment observed in *Table 16* could be due to possible inconsistencies in classification between the two collections, but not necessarily an improvement or degradation. The difference observed in the Artificial Surface classification may be influenced by the increased accuracy of C3. 
+C3 exhibited better consistency in results against the validation points and the GLANCE data. However, some misalignment between ground truth datasets is present in both collections for certain classes (e.g. Bare Surfaces). Some classes, such as the Artificial Surface, have too few validation points to be considered statistically significant. Hence, the classification metrics should be interpreted with caution and understood in relative terms, as a way to highlight the differences between C2 and C3, rather than the absolute performance of each.
+
+When C3 was compared directly with the output of C2 (see Table 16), it showed good agreement for most of the Level 3 classes. Two notable exceptions were the Cultivated Vegetation class and the Artificial Surface class. For Cultivated Vegetation, the performance against the validation data did not suggest a substantial difference in overall accuracy between C2 and C3; thus, the misalignment observed in Table 16 could be due to possible inconsistencies in classification between the two collections, but not necessarily an improvement or degradation. The difference observed in the Artificial Surface classification may be influenced by the increased accuracy of C3. 
 
 **Validation Points 2010**
+
+<figure>
+    <figcaption>Table 6 (below). Classification metrics of Collection 2 (a) and Collection 3 (b) in the year 2010, using the validation points as ground truth.</figcaption>
+</figure>
 
 ::::{grid} 1 2 2 2
 :class-container: images-max-width-100perc
@@ -321,21 +326,21 @@ When C3 was compared directly with the output of C2 (*Table 16*), it showed good
 
 ::::
 
-<figure>
-    <figcaption>Table 6. Classification metrics of Collection 2 (a) and Collection 3 (b) in the year 2010, using the validation points as ground truth.</figcaption>
-</figure>
-
 The Macro-Average is the unweighted mean of each metric calculated independently for all classes. Each class contributes equally, regardless of its frequency in the dataset. It should be interpreted as "unbiased" due to the highly skewed nature of the validation points. 
 
 The Weighted-Average is the average of each metric weighted by the support (TP + FN; i.e., True Positives and False Negatives) for each class. The weight reflects the proportion of each class in the "Truth" such that more frequent classes have a greater impact on the overall average.
 
+<figure>
+    <figcaption>Table 7 (below). Confusion matrix: Collection 2 predictions vs. validation points for 2010.</figcaption>
+</figure>
+
 ![C2 2010 Matrix](/_files/land_cover/c2_l3-15.png)
 
-Table 7. Confusion matrix: Collection 2 predictions vs. validation points for 2010.
+<figure>
+    <figcaption>Table 8 (below). Confusion matrix: Collection 3 predictions vs. validation points for 2010.</figcaption>
+</figure>
 
 ![C3 2010 Matrix](/_files/land_cover/c3_l3-16.png)
-
-Table 8. Confusion matrix: Collection 3 predictions vs. validation points for 2010.
 
 **Validation Points 2015**
 
@@ -361,36 +366,48 @@ Table 8. Confusion matrix: Collection 3 predictions vs. validation points for 20
 ::::
 
 <figure>
-    <figcaption>Table 9. Classification metrics of Collection 2 (a) and Collection 3 (b) in the year 2015, using the validation points as ground truth.</figcaption>
+    <figcaption>Table 9 (below). Classification metrics of Collection 2 (a) and Collection 3 (b) in the year 2015, using the validation points as ground truth.</figcaption>
 </figure>
 
 ![C2 2015 Matrix](/_files/land_cover/c2_l3-11.png)
 
-Table 10. Confusion matrix: Collection 2 predictions vs. validation points for 2015.
+<figure>
+    <figcaption>Table 10 (below). Confusion matrix: Collection 2 predictions vs. validation points for 2015.</figcaption>
+</figure>
 
 ![C3 2015 Matrix](/_files/land_cover/c3_l3-12.png)
 
-Table 11. Confusion matrix: Collection 3 predictions vs. validation points for 2015.
+<figure>
+    <figcaption>Table 11 (below). Confusion matrix: Collection 3 predictions vs. validation points for 2015.</figcaption>
+</figure>
 
 **GLANCE 2010**
 
+<figure>
+    <figcaption>Table 12 (below). Confusion matrix: Collection 2 predictions vs. GLANCE dataset for 2010.</figcaption>
+</figure>
+
 ![C2 2010 GLANCE C2](/_files/land_cover/c2_l3-19.png)
 
-Table 12. Confusion matrix: Collection 2 predictions vs. GLANCE dataset for 2010.
+<figure>
+    <figcaption>Table 13 (below). Confusion matrix: Collection 3 predictions vs. GLANCE dataset for 2010.</figcaption>
+</figure>
 
 ![C3 2010 GLANCE C3](/_files/land_cover/c3_l3-20.png)
 
-Table 13. Confusion matrix: Collection 3 predictions vs. GLANCE dataset for 2010.
-
 **GLANCE 2015**
+
+<figure>
+    <figcaption>Table 14 (below). Confusion matrix: Collection 2 predictions vs. GLANCE dataset for 2015.</figcaption>
+</figure>
 
 ![C2 2015 GLANCE C2](/_files/land_cover/c2_l3-17.png)
 
-Table 14. Confusion matrix: Collection 2 predictions vs. GLANCE dataset for 2015.
+<figure>
+    <figcaption>Table 15 (below). Confusion matrix: Collection 3 predictions vs. GLANCE dataset for 2015.</figcaption>
+</figure>
 
 ![C3 2015 GLANCE C3](/_files/land_cover/c3_l3-18.png)
-
-Table 15. Confusion matrix: Collection 3 predictions vs. GLANCE dataset for 2015.
 
 **Collection 3 vs Collection 2**
 
