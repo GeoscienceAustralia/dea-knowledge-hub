@@ -59,15 +59,55 @@ Bare gradation is produced from the Fractional Cover product. Unlike the Vegetat
 
 ### Earth Observation limitations
 
-To generate the land cover classification for each calendar year, annual (January – December) statistics derived from Landsat-5, -7, -8 and -9 observations are currently used, with each satellite sensor potentially observing the Australian landscape every 16 days. This brings an intrinsic limitation to land cover mapping as persistent cloud in some regions reduces the number of useable observations. This is particularly evident in Tasmania, and northern Australia during the monsoon period, where areas may not be observed for extended periods and parts or all of the intra-annual land cover cycle may be missed. These limitations can lead to misclassifications of land cover, particularly in dynamic environments. In a future release, a confidence layer will be included to help identify areas with poor observation frequency or other factors impacting the classification. 
+To generate the land cover classification for each calendar year, annual (January to December) statistics derived from Landsat-5, -7, -8, and -9 observations are currently used, with each satellite sensor potentially observing the Australian landscape every 16 days. This brings an intrinsic limitation to land cover mapping as persistent cloud in some regions reduces the number of useable observations. This is particularly evident in Tasmania, and northern Australia during the monsoon period, where areas may not be observed for extended periods and parts or all of the intra-annual land cover cycle may be missed due to persistent cloud. These limitations can lead to misclassifications of land cover, particularly in dynamic environments. In a future release, a confidence layer will be included to help identify areas with poor observation frequency or other factors impacting the classification. 
 
-An additional limitation of the Landsat series is the availability of data due to the ageing of each satellite. Landsat 5 was operational for over 25 years, but for much of the later years, data were only acquired when sunlight directly illuminated its solar panels. This limited its operation across Australia, with coverage being seasonally dependent, and contracting north to a minimum in winter. In its last years the winter coverage usually only covered the northern coasts of Australia. Landsat 5 ceased regular operations over Australia in 2011, leaving just Landsat 7 until Landsat 8 was launched in 2013. Landsat 7 began service in 1999 as a replacement for Landsat 5. Initially Landsat 5 was switched off, but when Landsat 7 suffered a serious problem in 2003 due to the failure of its scan-line corrector (termed SLC-Off) Landsat 5 resumed service. The SLC-Off failure of Landsat 7 results in severe striping across every image from mid 2003 onwards, apparent in subsequent derived products. Landsat 8 has operated well since launch in 2013, and Landsat 9 since 2022 with improved sensitivity, noise characteristics and data correction in comparison to the earlier sensors.
+An additional limitation of the Landsat series is the availability of data due to the ageing of each satellite. Landsat 5 was operational for over 25 years, but for much of the later years, data were only acquired when sunlight directly illuminated its solar panels. This limited its operation across Australia, with coverage being seasonally dependent, and contracting north to a minimum in winter. In its last years, the winter coverage usually only covered the northern coasts of Australia. Landsat 5 ceased regular operations over Australia in 2011, leaving just Landsat 7 operational until Landsat 8 was launched in 2013. Landsat 7 began service in 1999 as a replacement for Landsat 5. Initially Landsat 5 was switched off, but when Landsat 7 suffered a serious problem in 2003 due to the failure of its scan-line corrector (termed SLC-Off), Landsat 5 resumed service. The SLC-Off failure of Landsat 7 resulted in severe striping across every image from mid-2003 onwards, and this striping is apparent in subsequent derived products. Landsat 8 has operated well since its launch in 2013. Landsat 9 has operated since 2022 with improved sensitivity, noise characteristics, and data correction in comparison to the earlier sensors.
 
-The result of the availability of the satellites is that the most consistent data availability occurs when two satellites are in operation (most of the 2003 to present period). The least data availability is in 2011 – 2012 when only Landsat 7 was available with data containing the SLC-Off striping issue. The overall data availability for the Landsat satellites is shown in Table 5. The datasets used in this analysis are shown in Table 6. 
+The result of the availability of these satellites is that the most consistent data availability occurs when two satellites are in operation (which occurred in most of the 2003 to present period). The least data availability is in 2011 to 2012 when only Landsat 7 was available, and its data quality was impaired by the SLC-Off striping issue. The overall data availability for the Landsat satellites is shown in Table 5. The datasets used in this analysis are shown in Table 6. 
 
-![eo-limitations-table](/_files/land_cover/table5-overall-landsat-sensor-data-availability-in-dea-dc-used-for-lc-classification.PNG)
+:::{list-table} Table 1. Overall Landsat sensor data availability in the DEA data cube used for the Land Cover classification.
+:header-rows: 1
 
-*Table 1.* Overall Landsat sensor data availability in the DEA data cube used for the Land Cover classification.
+* - Years
+  - Satellite and sensor
+  - Issues
+  - Impact on LCCS product
+
+* - 1986
+  - Landsat 5 Thematic Mapper (TM)
+  - Only part of the year available in DEA.
+  - Very little data available. Year is omitted.
+
+* - 1987 to 1999
+  - Landsat 5 TM
+  - Normal operation
+  - Only single source of data is available.
+
+* - 1999 to early 2003
+  - Landsat 5 TM
+  - Switched off with availability of Landsat 7
+  - Only single source of data is available.
+
+* - 1999 to early 2003
+  - Landsat 7 Enhanced Thematic Mapper (ETM+)
+  - Normal operation
+  - Only single source of data is available.
+
+* - Late 2003 to early 2011
+  - Landsat 5 TM
+  - Gradually degrading operation and increasing observation failure. Total failure in early 2011.
+  - Landsat 5 with Landsat 7 to fill in missed areas (clouds).
+
+* - Late 2003 to present
+  - Landsat 7 ETM+
+  - Operating with SLC-Off stripes in imagery.
+  - Fill in for missed areas in Landsat 5 and 8. Only data available from early 2011 to early 2013.
+
+* - Early 2013 to present
+  - Landsat 8 Optical Land Imager (OLI)
+  - Normal operation
+  - Landsat 8 with Landsat 7 to fill in missed areas (clouds).
+:::
 
 ![DEA-datasets-used](/_files/land_cover/table6-datasets-DEA-Essential-Descriptor-info-for-DEA-LC-classification.PNG)
 
