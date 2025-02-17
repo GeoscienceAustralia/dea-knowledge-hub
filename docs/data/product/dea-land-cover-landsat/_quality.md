@@ -149,37 +149,74 @@ The result of the availability of these satellites is that the most consistent d
 
 ### Inconsistent data presence in three Western Australia tiles
 
-An issue has been identified with data presence in three tiles in Western Australia, particularly between 1988 and 2005. The affected tiles are *x39y49*, *x40y47*, *x41y45*. For a quick visualisation of these locations, the [DEA Explorer](https://explorer.dea.ga.gov.au/products/ga_ls_landcover_class_cyear_3) can be consulted. 
+An issue has been identified with data presence in three tiles in Western Australia, particularly between 1988 and 2005. The affected tiles are `x39y49`, `x40y47`, and `x41y45`. To visualise these locations, see the [DEA Explorer (ga_ls_landcover_class_cyear_3)](https://explorer.dea.ga.gov.au/products/ga_ls_landcover_class_cyear_3). 
 
-This issue arises due to the Ground Quality Assured (GQA) value falling below the acceptable threshold set by the DEA for products derived from Landsat. The root cause of this anomalous behaviour lies in the [Analysis Ready Data (ARD)](https://knowledge.dea.ga.gov.au/guides/reference/analysis_ready_data_corrections/), which serves as the source for the Land Cover product. The areas affected by this issue correspond to regions where ground control points may experience movement over time, such as shifting sand dunes, leading to inconsistencies in the orthorectification process.
+This issue arises due to the Ground Quality Assured (GQA) value falling below the acceptable threshold set by the DEA for products derived from Landsat. The root cause of this anomalous behaviour lies in the [Analysis Ready Data (ARD)](/guides/reference/analysis_ready_data_corrections/), which serves as the source for this Land Cover product. The areas affected by this issue correspond to regions where ground control points may experience movement over time, such as shifting sand dunes, leading to inconsistencies in the orthorectification process.
 
 ![timeseries missing data tiles](/_files/land_cover/gqa_tiles_timeseries_geomad_obs_count_gmad.gif)
 
-*Figure 1.* Timeseries animation showing the frequency of missing data in the tiles *x39y49*, *x40y47*, *x41y45*. On the left, true colours timeseries of the yearly geomedian. On the right, timeseries of the yearly clear observation count.
+Figure 1. Time series animation showing the frequency of missing data in the tiles `x39y49`, `x40y47`, and `x41y45`. On the left is a true colours time series of the yearly geomedian. On the right is a time series of the yearly clear observation count.
 
 ## Accuracy
 
-A validation assessment has been undertaken for both the versions of Land Cover: the former Collection 2 (C2; i.e., Version 1), and the current Collection 3 (C3; i.e., Version 2). The below section outlines the accuracy of both versions to assist users in understanding the differences between the two versions.
+A validation assessment has been undertaken for both of the versions of Land Cover: the former Collection 2 (C2; i.e. Version 1), and the current Collection 3 (C3; i.e. Version 2). The below section outlines the accuracy of both versions to assist users in understanding the differences between them.
+
 The validation metrics reported were produced for Level 3 and they integrate the results from the validation of the sub-components of Level 1, the Artificial Surface model, and the Cultivated model.
 
-### Summary of differences between Land Cover C2 (version 1) and C3 (version 2)
+### Summary of differences between Land Cover C2 and C3
 
-* Collection 3 generally aligns with Collection 2 in terms of classification performance, with trends across time periods and classes mostly consistent. However, some deviations from this pattern have been observed across different locations and times, particularly in the Cultivated Vegetation class.
+* Collection 3 generally aligns with Collection 2 in terms of classification performance, with trends across time periods and classes being mostly consistent. However, some deviations from this pattern have been observed across different locations and times, particularly in the Cultivated Vegetation class.
 * Collection 3 classification shows better overall consistency across different validation methods.
-* An improvement in artificial surface classification was observed in C3. More urban areas appear to be correctly identified, although there is a slight increase in false positive identification of urban areas in the central Australian desert or sandy regions. 
+* An improvement in artificial surface classification was observed in C3. More urban areas appear to be correctly identified, although there is a slight increase in false positive identification of urban areas in the central Australian desert and sandy regions. 
 * Slight improvement is seen in Woody Cover for the Terrestrial Vegetation classification.
-* Substantial increase in Landsat 7 stripe artefacts in C3, due to  Landsat 8 scenes being filtered out by bad geometric quality assessments.
+* Substantial increase in Landsat 7 stripe artefacts in C3 due to  Landsat 8 scenes being filtered out by bad geometric quality assessments.
 * General increase in number pixels with no data surrounding water bodies.
 * Misclassification of water persistence over the ocean in C3.
 
+::::{grid} 1 2 2 3
+:class-container: images-max-width-100perc
 
-|   |   |   |
-|---|---|---|
-| a) ![Improvement artificial class Degradation water persistence, Level 4](/_files/land_cover/2.degr_ocean_water_persistance-degr_stripes-impr_urban.gif) | b) ![Improvement woody cover, Level 4](/_files/land_cover/10.improvement-woody_cover_pine_plantation-zoomed-in-level4.gif) | c) ![Degradation cultivated, Level 4](/_files/land_cover/11b.example_cultivated_degradation_level4._2015gif.gif) |
+:::{grid-item}
 
+<figure>
+    <img src="/_files/land_cover/2.degr_ocean_water_persistance-degr_stripes-impr_urban.gif" alt="Improvement artificial class Degradation water persistence, Level 4" style="max-width: 600px;">
+    <figcaption>a) Illustrates the improved artificial surface classification in the greater Melbourne area; stripe artifacts and incorrect water persistence classification can also be observed.</figcaption>
+</figure>
+:::
+
+:::{grid-item}
+
+<figure>
+    <img src="/_files/land_cover/10.improvement-woody_cover_pine_plantation-zoomed-in-level4.gif" alt="Improvement woody cover, Level 4" style="max-width: 600px;">
+    <figcaption>b) Displays a pine plantation near Kinglake West (VIC), which Collection 3 (i.e., V2) appears to classify correctly as being > 65% woody cover.</figcaption>
+</figure>
+:::
+
+:::{grid-item}
+
+<figure>
+    <img src="/_files/land_cover/11b.example_cultivated_degradation_level4._2015gif.gif" alt="Degradation cultivated, Level 4" style="max-width: 600px;">
+    <figcaption>c) Shows an example of degradation in cultivated area classification in the Cassowary Coast (northern QLD), primarily due to the misclassification of cultivated land as herbaceous natural vegetation.</figcaption>
+</figure>
+:::
+
+::::
+
+::::{grid} 1 1 1 1
+:class-container: images-max-width-100perc
+
+:::{grid-item}
 ![legend Level 4](/_files/land_cover/legend_lc_level4_horizontal.png)
+:::
 
-*Figure 2.* Animations showing examples of differences in Level 4 classification between Land Cover C3 and C2 (i.e., version 2 (V2) and version 1 (V1), respectively). *a)* illustrates the improved artificial surface classification in the greater Melbourne area; stripe artifacts and incorrect water persistence classification can also be observed. *b)* displays a pine plantation near Kinglake West (VIC), which Collection 3 (i.e., V2) appears to classify correctly as being > 65% woody cover. *c)* shows an example of degradation in cultivated area classification in the Cassowary Coast (northern QLD), primarily due to the misclassification of cultivated land as herbaceous natural vegetation.
+::::
+
+<figure>
+    <figcaption>Figure 2. Animations showing examples of differences in Level 4 classification between Land Cover C3 and C2.</figcaption>
+</figure>
+
+
+
 
 
 |   |   |   |
