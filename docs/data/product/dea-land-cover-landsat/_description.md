@@ -45,6 +45,7 @@ Annual Land Cover information can be used in a number of ways to support the mon
 
 ::::{grid} 1 2 2 2
 :::{grid-item}
+:class: images-max-width-100perc
 
 <figure>
     <img src="/_static/land_cover/Perth_urban_timeseries_lc_lvl3_gmad.gif" alt="Timeseries Perth urban expansion" style="max-width: 600px;">
