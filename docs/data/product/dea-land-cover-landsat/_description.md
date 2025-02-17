@@ -96,7 +96,7 @@ Detailed layer descriptions, including known issues, are provided in the followi
 
 The base Level 3 land cover classification.
 
-```
+```text
 0:    No data   
 
 111:  Cultivated Terrestrial Vegetation (CTV)
@@ -148,7 +148,7 @@ The Water class captures terrestrial and coastal open water such as dams, lakes,
 
 All level 3 and level 4 classes for a given pixel are combined to give a single classification value.
 
-```
+```text
 0:    No data  
 
 1:    Cultivated Terrestrial Vegetated  
