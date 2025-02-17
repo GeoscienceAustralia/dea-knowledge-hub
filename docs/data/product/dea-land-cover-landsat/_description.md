@@ -43,7 +43,7 @@ Annual Land Cover information can be used in a number of ways to support the mon
     * Mapping impacts of natural disasters 
     * Bushfire recovery
 
-::::{grid} 1 2 2 2
+::::{grid} 1 1 1 1
 :::{grid-item}
 :class: overflow-x-hidden
 
