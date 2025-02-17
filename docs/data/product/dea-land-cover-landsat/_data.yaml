@@ -95,7 +95,7 @@ access_links_custom: null
 # History
 
 previous_versions:
-  - version: 1.0.0
+  - version_number: 1.0.0
     title: DEA Land Cover (Landsat)
     slug: dea-land-cover-landsat-1.0.0
 
