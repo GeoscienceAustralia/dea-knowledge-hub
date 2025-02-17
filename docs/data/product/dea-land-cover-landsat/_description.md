@@ -48,7 +48,7 @@ Annual Land Cover information can be used in a number of ways to support the mon
 :class: overflow-x-hidden
 
 <figure>
-    <img src="/_files/land_cover/Perth_urban_timeseries_lc_lvl3_gmad.gif" alt="Timeseries Perth urban expansion" style="max-width: 600px;">
+    <img src="/_static/land_cover/Perth_urban_timeseries_lc_lvl3_gmad.gif" alt="Timeseries Perth urban expansion" style="max-width: 600px;">
     <figcaption>a) Urban expansion of Quinns Rocks (Perth).</figcaption>
 </figure>
 :::
@@ -56,7 +56,7 @@ Annual Land Cover information can be used in a number of ways to support the mon
 :class: overflow-x-hidden
 
 <figure>
-    <img src="/_files/land_cover/mt_beggary_bushfire_timeseries_lc_lvl4_gmad.gif" alt="Timeseries Mt Beggary bushfire" style="max-width: 600px;">
+    <img src="/_static/land_cover/mt_beggary_bushfire_timeseries_lc_lvl4_gmad.gif" alt="Timeseries Mt Beggary bushfire" style="max-width: 600px;">
     <figcaption>b) Vegetation change and recovery following the Mt Beggary bushfire.</figcaption>
 </figure>
 :::
@@ -64,7 +64,7 @@ Annual Land Cover information can be used in a number of ways to support the mon
 :class: overflow-x-hidden
 
 <figure>
-    <img src="/_files/land_cover/shallow_inlet_timeseries_lc_lvl3_gmad.gif" alt="Timeseries inlet changes" style="max-width: 600px;">
+    <img src="/_static/land_cover/shallow_inlet_timeseries_lc_lvl3_gmad.gif" alt="Timeseries inlet changes" style="max-width: 600px;">
     <figcaption>c) Morphological changes of Shallow Inlet in Victoria.</figcaption>
 </figure>
 :::
@@ -72,7 +72,7 @@ Annual Land Cover information can be used in a number of ways to support the mon
 :class: overflow-x-hidden
 
 <figure>
-    <img src="/_files/land_cover/lake_amadeus_timeseries_lc_lvl4_gmad.gif" alt="Timeseries lake Amadeus" style="max-width: 600px;">
+    <img src="/_static/land_cover/lake_amadeus_timeseries_lc_lvl4_gmad.gif" alt="Timeseries lake Amadeus" style="max-width: 600px;">
     <figcaption>d) Annual variability of Lake Amadeus, a salt lake in the Northern Territory; the water persistence classification can be employed to track changes in its extent.</figcaption>
 </figure>
 :::
@@ -283,6 +283,7 @@ All level 3 and level 4 classes for a given pixel are combined to give a single 
 :::
 
 :::{dropdown} Level 3 Class descriptions
+
 **Cultivated Terrestrial Vegetation (CTV)**
 
 Cultivated Terrestrial Vegetation (CTV) is associated with agricultural areas where active cultivation has been observed. In version 2.0, only herbaceous cultivation is shown and describes vegetation of strongly varying cover, ranging from bare (e.g. ploughed) areas to fully developed crops. Whilst the continental product describes land cover, interpretation is complicated as the same terminology is used to report on land use.
@@ -313,17 +314,18 @@ The Water class captures terrestrial and coastal open water such as dams, lakes,
 :::
 
 :::{dropdown} Level 4 Class Descriptions
-**Lifeform (NTV, NAV and CTV; 2 classes)** 
 
-Lifeform represents the dominant vegetation type of a primarily vegetated area, discriminating woody from non-woody (herbaceous) vegetation. The Woody Cover Fraction models woody as vegetation of at least 20 % canopy cover. Hence the dominant vegetation in areas designated as woody in this product is considered to be composed of shrubs and trees. However where woody vegetation is not dominant in an area, the cover will be essentially herbaceous or bare. Hence some areas containing sparse trees or shrubs will likely be represented as herbaceous.
+**Lifeform (NTV, NAV, and CTV; 2 classes)** 
 
-**Vegetation Cover (NTV, NAV and CTV; 5 classes)** 
+Lifeform represents the dominant vegetation type of a primarily vegetated area, discriminating woody from non-woody (herbaceous) vegetation. The Woody Cover Fraction models woody as vegetation of at least 20 % canopy cover. Hence the dominant vegetation in areas designated as woody in this product is considered to be composed of shrubs and trees. However, where woody vegetation is not dominant in an area, the cover will be essentially herbaceous or bare. Hence some areas containing sparse trees or shrubs will likely be represented as herbaceous.
 
-Vegetation cover is defined using the statistics of annual fractional cover of PV (for a calendar year). This relates to the upper-most foliage as observed from the Landsat satellite sensor, and describes the percentage of an area that is vegetated rather than bare. 
+**Vegetation Cover (NTV, NAV, and CTV; 5 classes)** 
+
+Vegetation cover is defined using the statistics of annual fractional cover of PV (for a calendar year). This relates to the uppermost foliage as observed from the Landsat satellite sensor, and describes the percentage of an area that is vegetated rather than bare. 
 
 **Water Seasonality (NAV; 2 classes)** 
 
-Water seasonality refers to the typical hydrological conditions in NAV within a year and is relevant to both coastal and inland wetlands. The current implementation utilises the DEA Water Observations (WO) dataset, identifying hydro-periods for NAV areas where water is (semi-) permanent (over 3 months) or temporary or seasonal (under 3 months). 
+Water seasonality refers to the typical hydrological conditions in NAV within a year and is relevant to both coastal and inland wetlands. The current implementation utilises the [DEA Water Observations (WO)](/data/category/dea-water-observations/) dataset, identifying hydro-periods for NAV areas where water is somewhat permanent (over 3 months) or temporary or seasonal (under 3 months). 
 
 **Water State (Water; 1 class)** 
 
@@ -335,11 +337,11 @@ Water persistence (or hydro-period) describes the maximum duration (in months) t
 
 **Intertidal (Water; 1 class)** 
 
-Intertidal water refers to primarily non-vegetated aquatic areas with systematic, tidal water variations. 
+Intertidal water refers to primarily non-vegetated aquatic areas with systematic tidal water variations. 
 
 **Bare Gradation (NS; 3 classes)**
 
-The bare gradation describes the percentage of bare surface in areas which contain sporadic or little persistent green vegetation through the year. The percentage reflects that much of the remaining area is brown or dead vegetation and is characteristic of the more arid parts of Australia.
+Bare gradation describes the percentage of bare surface in areas which contain sporadic or little persistent green vegetation through the year. The percentage reflects that much of the remaining area is brown or dead vegetation. This is characteristic of the more arid parts of Australia.
 :::
 
 ## Lineage
