@@ -346,36 +346,36 @@ Bare gradation describes the percentage of bare surface in areas which contain s
 
 The FAO LCCS taxonomy (Figure 2) is hierarchical and consists of a dichotomous phase (Levels 1 to 3) and a modular phase (Level 4). In Level 1, vegetated and non-vegetated areas are first separated. These are then divided into terrestrial or aquatic categories to form Level 2. In the vegetated terrestrial category, cultivated and natural (including semi-natural) areas are differentiated. The non-vegetated category is further divided into artificial surfaces and natural surfaces. These non-vegetated natural surfaces include low vegetation cover and bare areas. This results in six base land cover categories (including the non-vegetated aquatic class from Level 2).
 
+At Level 4, vegetated areas are further classified using information that differentiates lifeform (woody and herbaceous) and quantifies vegetation cover percent and water seasonality (for Natural Aquatic Vegetation). Natural Surface areas have information added (bare gradation) which describes the level of remaining vegetation present (sparse, very sparse, or not detectable). Non-vegetated aquatic areas (Water) are further described on the basis of their persistence (hydro-period) over a calendar year. The FAO LCCS differentiates water in different physical states (liquid or frozen; ice or snow); however, only liquid water is included in the current release.
+
 ![Diagram showing the portion of the LCCS taxonomy which is implemented in DEA Land Cover.](/_files/land_cover/cut_back_0.PNG)
 
 <figure>
     <figcaption>Figure 2. A diagram of the implementation of the FAO LCCS Version 2 classification within the DEA Land Cover product.</figcaption>
 </figure>
 
-At Level 4, vegetated areas are further classified using information that differentiates lifeform (woody and herbaceous) and quantifies vegetation cover percent and water seasonality (for Natural Aquatic Vegetation). Natural Surface areas have information added (bare gradation) which describes the level of remaining vegetation present (sparse, very sparse, or not detectable). Non-vegetated aquatic areas (Water) are further described on the basis of their persistence (hydro-period) over a calendar year. The FAO LCCS differentiates water in different physical states (liquid or frozen; ice or snow); however, only liquid water is included in the current release.
-
 ![Diagram showing the data products which go into producing the Level 3 classification.](/_files/land_cover/level3-dataflow.PNG)
 
 <figure>
-    <figcaption>Figure 3. Input data products used to produce Level 3 classification.</figcaption>
+    <figcaption>Figure 3. Input data products used to produce the Level 3 classification.</figcaption>
 </figure>
 
 ![Diagram showing input data products used to produce the Level 4 classification](/_files/land_cover/level4-dataflow.PNG)
 
 <figure>
-    <figcaption>Figure 4. Input data products used to produce Level 4 classification.</figcaption>
+    <figcaption>Figure 4. Input data products used to produce the Level 4 classification.</figcaption>
 </figure>
 
 % ## Processing steps
 
 ## Software
 
-* [https://bitbucket.org/au-eoed/livingearth\_lccs/src/main/](https://bitbucket.org/au-eoed/livingearth_lccs/src/main/)
-* [https://bitbucket.org/geoscienceaustralia/livingearth\_australia/src/master/](https://bitbucket.org/geoscienceaustralia/livingearth_australia/src/master/)
+* [LivingEarth LCCS](https://bitbucket.org/au-eoed/livingearth_lccs/)
+* [LivingEarth Australia](https://bitbucket.org/geoscienceaustralia/livingearth_australia/)
 
 ## Data Structure
 
-Landcover version 1.0.0, contained several tif files including: waterstt-wat-cat-l4a.tif, watersea-veg-cat-l4a-au.tif, waterper-wat-cat-l4d-au.tif, lifeform-veg-cat-l4a.tif, inttidal-wat-cat-l4a.tif, canopyco-veg-cat-l4d.tif, baregrad-phy-cat-l4d-au.tif. These will not be provided in version 2.0.0 as the classifications will be contained within the level4.tif file, allowing users to filter the results as required.
+Land Cover version 1.0 contained several TIF files including `waterstt-wat-cat-l4a.tif`, `watersea-veg-cat-l4a-au.tif`, `waterper-wat-cat-l4d-au.tif`, `lifeform-veg-cat-l4a.tif`, `inttidal-wat-cat-l4a.tif`, `canopyco-veg-cat-l4d.tif`, and `baregrad-phy-cat-l4d-au.tif`. These will not be provided in Land Cover 2.0 as the classifications will be contained within the `level4.tif` file, allowing users to filter the results as required.
 
 ## References
 
