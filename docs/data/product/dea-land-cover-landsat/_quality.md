@@ -176,7 +176,7 @@ The validation metrics reported were produced for Level 3 and they integrate the
 * Misclassification of water persistence over the ocean in C3.
 
 ::::{grid} 1 2 2 3
-:class-container: images-max-width-100perc
+:class-container: images-max-width-100-percent
 
 :::{grid-item}
 
@@ -205,7 +205,7 @@ The validation metrics reported were produced for Level 3 and they integrate the
 ::::
 
 ::::{grid} 1 1 1 1
-:class-container: images-max-width-100perc
+:class-container: images-max-width-100-percent
 
 :::{grid-item}
 ![legend Level 4](/_files/land_cover/legend_lc_level4_horizontal.png)
@@ -218,7 +218,7 @@ The validation metrics reported were produced for Level 3 and they integrate the
 </figure>
 
 ::::{grid} 1 2 2 3
-:class-container: images-max-width-100perc
+:class-container: images-max-width-100-percent
 
 :::{grid-item}
 
@@ -247,7 +247,7 @@ The validation metrics reported were produced for Level 3 and they integrate the
 ::::
 
 ::::{grid} 1 1 1 1
-:class-container: images-max-width-100perc
+:class-container: images-max-width-100-percent
 
 :::{grid-item}
 ![legend Level 3](/_files/land_cover/legend_lc_level3_horizontal.png)
@@ -306,7 +306,7 @@ When C3 was compared directly with the output of C2 (see Table 16), it showed go
 </figure>
 
 ::::{grid} 1 2 2 2
-:class-container: images-max-width-100perc
+:class-container: images-max-width-100-percent
 
 :::{grid-item}
 
@@ -345,7 +345,7 @@ The Weighted-Average is the average of each metric weighted by the support (TP +
 **Validation Points 2015**
 
 ::::{grid} 1 2 2 2
-:class-container: images-max-width-100perc
+:class-container: images-max-width-100-percent
 
 :::{grid-item}
 
@@ -412,7 +412,7 @@ The Weighted-Average is the average of each metric weighted by the support (TP +
 **Collection 3 vs Collection 2**
 
 ::::{grid} 1 2 2 2
-:class-container: images-max-width-100perc
+:class-container: images-max-width-100-percent
 
 :::{grid-item}
 

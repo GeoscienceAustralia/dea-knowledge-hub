@@ -44,7 +44,7 @@ Annual Land Cover information can be used in a number of ways to support the mon
     * Bushfire recovery
 
 ::::{grid} 1 2 2 2
-:class-container: images-max-width-100perc
+:class-container: images-max-width-100-percent
 
 :::{grid-item}
 
