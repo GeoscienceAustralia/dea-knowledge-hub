@@ -111,6 +111,6 @@ enable_quality: true
 enable_specifications: true
 enable_access: true
 enable_history: true
-enable_faqs: false
+enable_faqs: true
 enable_credits: true
 
