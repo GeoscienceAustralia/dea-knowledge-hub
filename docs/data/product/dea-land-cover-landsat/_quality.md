@@ -85,12 +85,12 @@ The result of the availability of these satellites is that the most consistent d
 
 * - 1999 to early 2003
   - Landsat 5 TM
-  - Switched off with availability of Landsat 7
+  - Switched off with availability of Landsat 7.
   - Only single source of data is available.
 
 * - 1999 to early 2003
   - Landsat 7 Enhanced Thematic Mapper (ETM+)
-  - Normal operation
+  - Normal operation.
   - Only single source of data is available.
 
 * - Late 2003 to early 2011
@@ -105,13 +105,47 @@ The result of the availability of these satellites is that the most consistent d
 
 * - Early 2013 to present
   - Landsat 8 Optical Land Imager (OLI)
-  - Normal operation
+  - Normal operation.
   - Landsat 8 with Landsat 7 to fill in missed areas (clouds).
+
 :::
 
-![DEA-datasets-used](/_files/land_cover/table6-datasets-DEA-Essential-Descriptor-info-for-DEA-LC-classification.PNG)
+:::{list-table} Table 2. Datasets within DEA used to provide Essential Descriptor information for the DEA Land Cover classification.
+:header-rows: 1
 
-*Table 2.* Datasets within DEA used to provide Essential Descriptor information for the DEA Land Cover classification.
+* - Product
+  - Used for
+  - Dataset reference
+
+* - Fractional Cover (FC)
+  - Vegetation
+  - Scarth et al. (2010), Schmidt et al. (2010)
+
+* - Water Observations from Space (WOfS)
+  - Aquatic
+  - Mueller et al. (2016)
+
+* - Intertidal Extent Model (ITEM)
+  - Aquatic
+  - Sagar et al. (2017)
+
+* - National Mangrove extent
+  - Aquatic
+  - Lymburner et al. (2019)
+
+* - Machine learning applied to annual geometric medians (geomedians) and Median Absolute Deviations (MADs)
+  - Cultivated
+  - Roberts et al. (2017) (geomedians and MADs); Chua (cultivated) DEA (in draft)
+
+* - Machine learning applied to geomedians, MADs, and Woody Cover Fraction
+  - Artificial surfaces
+  - Tan and Chua, DEA (in draft)
+
+* - Woody Cover Fraction (WCF)
+  - Lifeform
+  - Liao et al. (2020 in review)
+
+:::
 
 ### Inconsistent data presence in three Western Australia tiles
 
