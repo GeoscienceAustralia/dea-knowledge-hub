@@ -28,16 +28,16 @@ Additionally, lack of training data for specific sub-classes and filters applied
 Please refer to the [Quality tab](./?tab=quality) for further details.
 :::
 
-:::{dropdown} What Landsat satellites were used for generating the DEA Land Cover classification?
-
-To generate the land cover classification for each calendar year, annual (January to December) statistics derived from Landsat-5, -7, -8, and -9 observations were used (in contrast to Version 1, which only used Landsat-5, -7, and -8). The combination of data from these different satellites enabled the creation of a timeseries of annual Land Cover classifications over more than 35 years. 
-:::
-
 :::{dropdown} What is the difference between DEA Land Cover Level 3 and Level 4?
 
 Level 3 includes macro-categories that represent a higher-level classification, while Level 4 expands these categories into more detailed ones. For example, it differentiates between woody and herbaceous vegetation, as well as between open, closed, or sparse cover. It also provides information on water persistence, such as the number of months in a given year when water was present.
 
 Please refer to the [Description tab](./?tab=description) for further details.
+:::
+
+:::{dropdown} What Landsat satellites were used for generating the DEA Land Cover classification?
+
+To generate the land cover classification for each calendar year, annual (January to December) statistics derived from Landsat-5, -7, -8, and -9 observations were used (in contrast to Version 1, which only used Landsat-5, -7, and -8). The combination of data from these different satellites enabled the creation of a timeseries of annual Land Cover classifications over more than 35 years. 
 :::
 
 :::{dropdown} Is the DEA Land Cover data available for free?
