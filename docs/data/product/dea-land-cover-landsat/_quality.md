@@ -169,11 +169,11 @@ The validation metrics reported were produced for Level 3 and they integrate the
 
 * Collection 3 generally aligns with Collection 2 in terms of classification performance, with trends across time periods and classes being mostly consistent. However, some deviations from this pattern have been observed across different locations and times, particularly in the Cultivated Vegetation class.
 * Collection 3 classification shows better overall consistency across different validation methods.
-* An improvement in artificial surface classification was observed in C3. More urban areas appear to be correctly identified, although there is a slight increase in false positive identification of urban areas in the central Australian desert and sandy regions. 
-* Slight improvement is seen in Woody Cover for the Terrestrial Vegetation classification.
-* Substantial increase in Landsat 7 stripe artefacts in C3 due to  Landsat 8 scenes being filtered out by bad geometric quality assessments.
-* General increase in C3 in the number pixels with no data surrounding water bodies.
-* Misclassification of water persistence over the ocean in C3.
+* An improvement in artificial surface classification was observed in C3. More urban areas appear to be correctly identified, although there is a slight increase in false positive identification of urban areas in the central Australian desert and other sandy regions. 
+* Slight improvement is seen in woody cover for the terrestrial vegetation classification.
+* There is a substantial increase in Landsat 7 stripe artefacts in C3 due to Landsat 8 scenes being filtered out due to poor geometric quality assessments.
+* There is a general increase in the number pixels with no data surrounding water bodies in C3.
+* Misclassification of water persistence over the ocean is observed in C3.
 
 ::::{grid} 1 2 2 3
 :class-container: images-max-width-100-percent
@@ -182,7 +182,7 @@ The validation metrics reported were produced for Level 3 and they integrate the
 
 <figure>
     <img src="/_static/land_cover/2.degr_ocean_water_persistance-degr_stripes-impr_urban.gif" alt="Improvement artificial class Degradation water persistence, Level 4">
-    <figcaption>a) Illustrates the improved artificial surface classification in the greater Melbourne area; stripe artifacts and incorrect water persistence classification can also be observed.</figcaption>
+    <figcaption>a) Improved artificial surface classification in the greater Melbourne area can be seen in Collection 3; stripe artifacts and incorrect water persistence classification can also be observed.</figcaption>
 </figure>
 :::
 
@@ -190,7 +190,7 @@ The validation metrics reported were produced for Level 3 and they integrate the
 
 <figure>
     <img src="/_static/land_cover/10.improvement-woody_cover_pine_plantation-zoomed-in-level4.gif" alt="Improvement woody cover, Level 4">
-    <figcaption>b) Displays a pine plantation near Kinglake West (VIC), which Collection 3 (i.e., V2) appears to classify correctly as being > 65% woody cover.</figcaption>
+    <figcaption>b) Pine plantation near Kinglake West, Victoria. In Collection 3 (C3; version 2) the plantation areas are classified as being > 65% woody cover, more closely reflecting the land cover of the area compared to Collection 2.</figcaption>
 </figure>
 :::
 
@@ -198,7 +198,7 @@ The validation metrics reported were produced for Level 3 and they integrate the
 
 <figure>
     <img src="/_static/land_cover/11b.example_cultivated_degradation_level4._2015gif.gif" alt="Degradation cultivated, Level 4">
-    <figcaption>c) Shows an example of degradation in cultivated area classification in the Cassowary Coast (northern QLD), primarily due to the misclassification of cultivated land as herbaceous natural vegetation.</figcaption>
+    <figcaption>c) Agricultural region in the Cassowary Coast, northern Queensland, where degradation in cultivated area classification in Collection 3 can be seen. This degradation is primarily due to misclassification of cultivated land as herbaceous natural vegetation.</figcaption>
 </figure>
 :::
 
@@ -224,7 +224,7 @@ The validation metrics reported were produced for Level 3 and they integrate the
 
 <figure>
     <img src="/_static/land_cover/1.degradation-urban_false_positives-level3.gif" alt="Degradation false positives artificial, Level 3">
-    <figcaption>a) Shows Portland (VIC) and the surrounding area, where an improvement in the artificial surface classification in Collection 3 (i.e., V2) can be observed in the town to the east, although false positives can also be seen on the sandy terrain in the western part of the displayed area.</figcaption>
+    <figcaption>a)The town of Portland, Victoria, located in the eastern part of the captured region, demonstrates improved artificial surface classification of urban areas in Collection 3. However, some sandy terrains to the southwest of the town are incorrectly classified as artificial surfaces.</figcaption>
 </figure>
 :::
 
@@ -232,7 +232,7 @@ The validation metrics reported were produced for Level 3 and they integrate the
 
 <figure>
     <img src="/_static/land_cover/12b.improvement_cultivated_level3_2015.gif" alt="Improvement, cultivated better classified, Level 3">
-    <figcaption>b) Displays an instance where Collection 3 (i.e., V2) more accurately identifies cultivated areas in a region on the southern coast of Western Australia, particularly in the northern part of the image, while the eastern part appears slightly noisier.</figcaption>
+    <figcaption>b) Classification differences between Collection 2 and Collection 3 are evident across agricultural regions in southern Western Australia. Improved classification of agricultural areas is observed in the north, while degraded classification, characterized by noisier and less defined areas, is seen in the east.</figcaption>
 </figure>
 :::
 
@@ -240,7 +240,7 @@ The validation metrics reported were produced for Level 3 and they integrate the
 
 <figure>
     <img src="/_static/land_cover/9.degradation-missing_pixels_waterbodies-level_3.gif" alt="Degradation missing pixels around waterbodies, Level 3">
-    <figcaption>c) Highlights the increase in pixels with missing values around water bodies in Collection 3 (i.e., V2) at Lake Eildon in Victoria.</figcaption>
+    <figcaption>c) Lake Eildon, Victoria, is an example of a lake affected by the increased number of pixels with missing values found at the edges of water bodies in Collection 3.</figcaption>
 </figure>
 :::
 
@@ -261,9 +261,8 @@ The validation metrics reported were produced for Level 3 and they integrate the
 
 ### Collection 2 validation
 
-The product was validated using 6000 points spatially distributed over Australia. These points were created using a stratified random sampling approach slightly adjusted for oversampling. This process was conducted for 2010 and 2015, creating 12,000 samples in total. After removing points with No Data and spurious values, the total number was 11,750. The sample points were divided into clusters for visual assessment against the outputs from the classification and assessed individually from a pool of 10 people. To compare the individual biases of the individual assessors, an additional set of validation points were created that were evaluated by all assessors. The results are shown in Table 4. Where assessors could identify a predominant land cover (i.e. not "mixed" pixels or "unsure"), all assessors agreed 75 % of the time. 
+The product was validated using 6,000 points spatially distributed across Australia for the years 2010 and 2015, resulting in a total of 12,000 samples. These points were created using a stratified random sampling approach that was adjusted for oversampling. After removing points with 'No Data' and spurious values, the total number of valid points was 11,750. The sample points were divided into clusters for visual assessment against the classification outputs and individually assessed by a pool of 10 people. To compare individual biases among the assessors, an additional set of validation points was created and evaluated by all assessors. Table 3 contains the overall accuracy for all classes. The term 'support' refers to the number of validation points used in the calculation of that accuracy value. 
 
-Table 3 contains the overall accuracy for all classes. The term 'support' refers to the number of validation points used in the calculation of that accuracy value. 
 
 <figure>
     <figcaption>Table 3. Overall accuracy of DEA Land Cover.</figcaption>
@@ -271,7 +270,7 @@ Table 3 contains the overall accuracy for all classes. The term 'support' refers
 
 ![Overall accuracy of DEA Land Cover is 80%. 2010 accuracy is 82% and 2015 accuracy is 78%.](/_files/land_cover/table2-overall-accuracy-dea-lc.PNG)
 
-Table 4 contains per-class accuracy information. 'Precision' refers to the ability of a classification model to return only relevant instances. 'Recall' refers to the ability to identify all relevant instances. The 'F1 score' is a combination of precision and recall and an overall measure of accuracy. Classes such as artificial surfaces, natural aquatic vegetation, and water had high accuracies. Classifying cultivated terrestrial vegetation and bare surfaces was challenging and accuracies were the lowest of the six classes presented here.
+The results, shown in Table 4, indicate that where assessors could identify a predominant land cover (i.e., not 'mixed' pixels or 'unsure'), there was 75% agreement among all assessors. Table 4 also provides per-class accuracy information. 'Precision' refers to the ability of a classification model to return only relevant instances, while 'Recall' refers to the ability to identify all relevant instances. The 'F1 score' combines precision and recall to provide an overall measure of accuracy. Classes such as artificial surfaces, natural aquatic vegetation, and water exhibited high accuracies. However, classifying cultivated terrestrial vegetation and bare surfaces proved challenging, resulting in the lowest accuracies among the six classes presented.
 
 <figure>
     <figcaption>Table 4 (below). Per-class accuracy information for DEA Land Cover.</figcaption>
