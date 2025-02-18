@@ -1,6 +1,6 @@
 ## Frequently Asked Questions
 
-:::{dropdown} I was using Land Cover Collection 2 in my workflow. What are the key differences in Collection 3 that I should be aware of?
+:::{dropdown} I was using Land Cover Version 1 in my workflow. What are the key differences in Version 2 that I should be aware of?
 While Version 1 (Collection 2) was at 25 m spatial resolution, Version 2 (Collection 3) is at 30 m resolution.
 
 The overall performance of Version 2 is in line with that of Version 1. 
