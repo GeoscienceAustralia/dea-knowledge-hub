@@ -136,9 +136,9 @@ Natural Aquatic Vegetation (NAV) is associated primarily with wetlands that are 
 
 Artificial Surfaces (AS) are areas of non-vegetated land cover created by human activities and are primarily represented by impervious surfaces (e.g. urban and industrial buildings, roads, and railways). These can be more readily identified when the area is larger than the spatial resolution (30 m) provided by the sensor. Open cut extraction sites are often included in AS. However, there is considerable misclassification of NS as AS in areas where vegetated cover is very low and very consistent through the year. 
 
-**Natural Surfaces (NS)** 
+**Natural Bare Surfaces (NS)** 
 
-Natural Surfaces (NS) are comprised primarily of unconsolidated (often pervious, e.g. mudflats and saltpans) or consolidated (e.g. bare rock or bare soil) materials. In Australia, the proportional area of natural surfaces is relatively low and primarily confined to the deserts and semi-arid areas, river channels (e.g. dry riverbeds) and the coastline (e.g. mudflats and sand dunes). Much of the interior of Australia is sparsely vegetated and can be dominated by herbaceous (annual or perennial) or woody lifeforms. 
+Natural Bare Surfaces (NS) are comprised primarily of unconsolidated (often pervious, e.g. mudflats and saltpans) or consolidated (e.g. bare rock or bare soil) materials. In Australia, the proportional area of natural surfaces is relatively low and primarily confined to the deserts and semi-arid areas, river channels (e.g. dry riverbeds) and the coastline (e.g. mudflats and sand dunes). Much of the interior of Australia is sparsely vegetated and can be dominated by herbaceous (annual or perennial) or woody lifeforms. 
 
 **Water** 
 
@@ -350,9 +350,9 @@ Water persistence (or hydro-period) describes the maximum duration (in months) t
 
 Intertidal water refers to primarily non-vegetated aquatic areas with systematic tidal water variations. 
 
-**Bare Gradation (NS; 3 classes)**
+**Natural Surface (NS; 3 classes)**
 
-Bare gradation describes the percentage of bare surface in areas which contain sporadic or little persistent green vegetation through the year. The percentage reflects that much of the remaining area is brown or dead vegetation. This is characteristic of the more arid parts of Australia.
+Natural Surface (i.e., bare gradation) describes the percentage of bare surface in areas which contain sporadic or little persistent green vegetation through the year. The percentage reflects that much of the remaining area is brown or dead vegetation. This is characteristic of the more arid parts of Australia.
 
 ## Lineage
 
