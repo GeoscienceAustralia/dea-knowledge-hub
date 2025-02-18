@@ -15,13 +15,13 @@ Please refer to the [Quality tab](./?tab=quality) for further details.
 :::{dropdown} What are the main limitations of the Land Cover product?
 There are limitations originating from both the source satellite data and the algorithms applied to generate the final Land Cover product.
 
-The primary intrinsic limitation of Earth Observation itself is that Landsat observations occur approximately every 16 days, which limits the number of available data points. This can be further reduced if clouds are present in the scene. Extended cloud cover periods can lead to gaps in the data, potentially missing entire intra-annual cycles, which impacts the accuracy of the algorithm. Additionally, the input data for the Land Cover product comes from different satellite missions (Landsat-5, -7, -8, and -9), which affects consistent data availability.
+The primary intrinsic limitation of Earth Observation itself is data availability. Inconsistent data coverage and extended cloud cover periods can lead to gaps in the data, potentially missing entire intra-annual cycles, which impacts the accuracy of the algorithm.
 
-Another limitation arises from the spatial resolution of 30 m. This resolution causes smaller watercourses or highly vegetated riverbanks to be missed, or results in rivers appearing patchy when narrow sections are misclassified as non-water.
+Another limitation arises from the spatial resolution of 30 m. Smaller landscape features could be missed entirely and incorrectly classified as the surrounding terrain.
 
-An issue has been identified in three tiles in Western Australia, particularly between 1988 and 2005, where data is often missing due to the Ground Quality Assured (GQA) value falling below the acceptable threshold set by the DEA.
+Moreover, an issue originating from low Ground Quality Assured (GQA) values resulted in frequent data gaps in three tiles in Western Australia, especially between 1988 and 2005.
 
-Water persistence is often incorrect in the ocean. Thus, a mask that excludes the ocean is necessary when working with coastal tiles.
+Water persistence appears to be often incorrect in the ocean (where it should remain consistently high). Thus, a mask that excludes the ocean is necessary when working with coastal tiles.
 
 Inaccuracies resulting from the performance of the algorithms generally occur when features within the satellite images resemble different types of features, leading to misclassification. For example, events such as fires, inundations, droughts, and rainfall can cause a response in vegetation that mirrors that of agricultural areas. Shadows created by terrain can lead to vegetation being classified as non-vegetated. Canopy in residential suburbs may hinder the correct classification of artificial surfaces. Shadows cast by buildings in dense urban areas can be classified as water. Bright sandy regions can be assigned to the Artificial Surfaces class.
 
