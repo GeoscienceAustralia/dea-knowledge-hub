@@ -266,7 +266,7 @@ The product was validated using 6000 points spatially distributed over Australia
 Table 3 contains the overall accuracy for all classes. The term 'support' refers to the number of validation points used in the calculation of that accuracy value. 
 
 <figure>
-    <figcaption>Table 3. Overall accuracy of DEA Land Cover.</figcaption>
+    <figcaption>Table 3 (below). Overall accuracy of DEA Land Cover.</figcaption>
 </figure>
 
 ![Overall accuracy of DEA Land Cover is 80%. 2010 accuracy is 82% and 2015 accuracy is 78%.](/_files/land_cover/table2-overall-accuracy-dea-lc.PNG)
