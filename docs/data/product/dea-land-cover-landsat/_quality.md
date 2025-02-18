@@ -214,7 +214,7 @@ The validation metrics reported were produced for Level 3 and they integrate the
 ::::
 
 <figure>
-    <figcaption>Figure 2. Animations showing examples of differences in Level 4 classification between Land Cover C3 and C2.</figcaption>
+    <figcaption>Figure 2 (above). Animations showing examples of differences in Level 4 classification between Land Cover C3 and C2.</figcaption>
 </figure>
 
 ::::{grid} 1 2 2 3
@@ -256,7 +256,7 @@ The validation metrics reported were produced for Level 3 and they integrate the
 ::::
 
 <figure>
-    <figcaption>Figure 3. Animations showing examples of differences in Level 3 classification between Land Cover C3 and C2.</figcaption>
+    <figcaption>Figure 3 (above). Animations showing examples of differences in Level 3 classification between Land Cover C3 and C2.</figcaption>
 </figure>
 
 ### Collection 2 validation
@@ -274,13 +274,13 @@ Table 3 contains the overall accuracy for all classes. The term 'support' refers
 Table 4 contains per-class accuracy information. 'Precision' refers to the ability of a classification model to return only relevant instances. 'Recall' refers to the ability to identify all relevant instances. The 'F1 score' is a combination of precision and recall and an overall measure of accuracy. Classes such as artificial surfaces, natural aquatic vegetation, and water had high accuracies. Classifying cultivated terrestrial vegetation and bare surfaces was challenging and accuracies were the lowest of the six classes presented here.
 
 <figure>
-    <figcaption>Table 4. Per-class accuracy information for DEA Land Cover.</figcaption>
+    <figcaption>Table 4 (below). Per-class accuracy information for DEA Land Cover.</figcaption>
 </figure>
 
 ![Table showing accuracy per class, including precision, recall, F1 score, and support values per class. ](/_files/land_cover/table3-per-class-accuracy-info-dea-lc.PNG)
 
 <figure>
-    <figcaption>Table 5. Inter-assessor agreement.</figcaption>
+    <figcaption>Table 5 (below). Inter-assessor agreement.</figcaption>
 </figure>
 
 ![Table showing the agreement between assessors.](/_files/land_cover/table4-inter-assessor-agreement.PNG)
@@ -344,6 +344,10 @@ The Weighted-Average is the average of each metric weighted by the support ($TP 
 
 **Validation points 2015**
 
+<figure>
+    <figcaption>Table 9 (below). Classification metrics of Collection 2 and Collection 3 in the year 2015, using the validation points as ground truth.</figcaption>
+</figure>
+
 ::::{grid} 1 2 2 2
 :class-container: images-max-width-100-percent
 
@@ -351,7 +355,7 @@ The Weighted-Average is the average of each metric weighted by the support ($TP 
 
 <figure>
     <img src="/_static/land_cover/c2_l3-9.png" alt="C2 2015 Accuracy">
-    <figcaption>a)</figcaption>
+    <figcaption>a) Collection 2</figcaption>
 </figure>
 :::
 
@@ -359,27 +363,23 @@ The Weighted-Average is the average of each metric weighted by the support ($TP 
 
 <figure>
     <img src="/_static/land_cover/c3_l3-10.png" alt="C3 2015 Accuracy">
-    <figcaption>b)</figcaption>
+    <figcaption>b) Collection 3</figcaption>
 </figure>
 :::
 
 ::::
 
 <figure>
-    <figcaption>Table 9 (below). Classification metrics of Collection 2 (a) and Collection 3 (b) in the year 2015, using the validation points as ground truth.</figcaption>
+    <figcaption>Table 10 (below). Confusion matrix: Collection 2 predictions vs validation points for 2015.</figcaption>
 </figure>
 
 ![C2 2015 Matrix](/_files/land_cover/c2_l3-11.png)
 
 <figure>
-    <figcaption>Table 10 (below). Confusion matrix: Collection 2 predictions vs validation points for 2015.</figcaption>
+    <figcaption>Table 11 (below). Confusion matrix: Collection 3 predictions vs validation points for 2015.</figcaption>
 </figure>
 
 ![C3 2015 Matrix](/_files/land_cover/c3_l3-12.png)
-
-<figure>
-    <figcaption>Table 11 (below). Confusion matrix: Collection 3 predictions vs validation points for 2015.</figcaption>
-</figure>
 
 **GLANCE 2010**
 
