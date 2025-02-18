@@ -64,7 +64,10 @@ citation_paper: "Lucas, R., Mueller, N., Siggins, A., Owers, C., Clewley, D., Bu
 citations_custom: null
 
 tags:
-  - land_cover_and_land_use
+  - geoscience_australia_landsat_collection_3
+  - land
+  - vegetation
+  - water
 
 # Access
 
