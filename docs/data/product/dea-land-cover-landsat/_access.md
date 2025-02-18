@@ -2,29 +2,27 @@
 
 :::{dropdown} Use constraints
 
-DEA Land Cover is appropriate to use at the national scale where other more detailed information on land cover is not available. Where DEA land cover shows conflicting information to state or local datasets, those datasets should be considered authoritative.
+DEA Land Cover is appropriate to use at the national scale where other more detailed information on land cover is not available. Where DEA Land Cover's data conflicts with state or local datasets, those datasets should be considered authoritative.
 :::
 
 :::{dropdown} How to view the data in a web map
 
-To view and access the data interactively:
-1) Visit [DEA Maps](https://maps.dea.ga.gov.au).
+To view and access the data interactively, follow these steps.
 
-2) Click `Explore map data`.
-
-3) Select `Land and vegetation` > `DEA Land Cover` > `DEA Land Cover (Landsat)`. 
-
-5) Click `Add to the map`, or the `+` symbol to add the data to the map.
+1. Visit [DEA Maps](https://maps.dea.ga.gov.au).
+1. Click **Explore map data**.
+1. Click **Land and vegetation** &gt; **DEA Land Cover** &gt; **DEA Land Cover (Landsat)**. 
+1. Click **Add to the map**, or the '**+**' symbol to add the data to the map.
 :::
 
 :::{dropdown} How to load data with Python in the DEA Sandbox
 
-DEA Sandbox allows you to explore DEA’s Earth Observation datasets in a JupyterLab environment. To sign up for DEA Sandbox see the [user guide](/guides/setup/Sandbox/sandbox/)
+DEA Sandbox allows you to explore DEA’s Earth Observation datasets in a JupyterLab environment. See the guide to [get started with the DEA Sandbox](/guides/setup/Sandbox/sandbox/).
 
-Once you have access, click into the `DEA products` directory to find the `Introduction to DEA Land Cover` notebook on the Sandbox. This notebook will walk you through loading and visualising the DEA Land Cover data.
+Once you have signed up to the Sandbox, click into the **DEA products** directory to find the **Introduction to DEA Land Cover** notebook. This notebook will walk you through loading and visualising the DEA Land Cover data.
 :::
 
-:::{dropdown} Downloading the DEA Landcover data
+:::{dropdown} Downloading the DEA Land Cover data
 
 DEA Land Cover data can be downloaded from DEA’s public data holdings through a web browser, or using Amazon Web Service’s Command Line Interface (AWS CLI). 
 
