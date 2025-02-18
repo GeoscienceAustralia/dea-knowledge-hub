@@ -12,7 +12,7 @@ Some inconsistencies were observed in the areas assigned to the Cultivated Veget
 Please refer to the [Quality tab](./?tab=quality) for further details.
 :::
 
-:::{dropdown} What are the main limitations of the Land Cover product?
+:::{dropdown} What are the main limitations of the Land Cover classification?
 There are limitations originating from both the source satellite data and the algorithms applied to generate the final Land Cover product.
 
 The primary intrinsic limitation of Earth Observation itself is data availability. Inconsistent data coverage and extended cloud cover periods can lead to gaps in the data, potentially missing entire intra-annual cycles, which impacts the accuracy of the algorithm.
