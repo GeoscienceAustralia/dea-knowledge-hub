@@ -30,7 +30,7 @@ Please refer to the [Quality tab](./?tab=quality) for further details.
 
 :::{dropdown} What Landsat satellites were used for generating the Land Cover classification?
 
-To generate the land cover classification for each calendar year, annual (January to December) statistics derived from Landsat-5, -7, -8, and -9 observations were used (in contrast to Version 1, which only used Landsat-5, -7, and -8). The combination of data from these different satellites enabled the creation of a timeseries of annual Land Cover classifications over more than 35 years. However, the frequency of data availability may vary depending on which satellites were operational and the number of satellites in operation at different times.
+To generate the land cover classification for each calendar year, annual (January to December) statistics derived from Landsat-5, -7, -8, and -9 observations were used (in contrast to Version 1, which only used Landsat-5, -7, and -8). The combination of data from these different satellites enabled the creation of a timeseries of annual Land Cover classifications over more than 35 years. 
 :::
 
 % :::{dropdown} QUESTION
