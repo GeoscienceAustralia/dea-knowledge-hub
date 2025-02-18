@@ -63,9 +63,9 @@ To generate the land cover classification for each calendar year, annual (Januar
 
 An additional limitation of the Landsat series is the availability of data due to the ageing of each satellite. Landsat 5 was operational for over 25 years, but for much of the later years, data were only acquired when sunlight directly illuminated its solar panels. This limited its operation across Australia, with coverage being seasonally dependent, and contracting north to a minimum in winter. In its last years, the winter coverage usually only covered the northern coasts of Australia. Landsat 5 ceased regular operations over Australia in 2011, leaving just Landsat 7 operational until Landsat 8 was launched in 2013. Landsat 7 began service in 1999 as a replacement for Landsat 5. Initially Landsat 5 was switched off, but when Landsat 7 suffered a serious problem in 2003 due to the failure of its scan-line corrector (termed SLC-Off), Landsat 5 resumed service. The SLC-Off failure of Landsat 7 resulted in severe striping across every image from mid-2003 onwards, and this striping is apparent in subsequent derived products. Landsat 8 has operated well since its launch in 2013. Landsat 9 has operated since 2022 with improved sensitivity, noise characteristics, and data correction in comparison to the earlier sensors.
 
-The result of the availability of these satellites is that the most consistent data availability occurs when two satellites are in operation (which occurred in most of the 2003 to present period). The least data availability is in 2011 to 2012 when only Landsat 7 was available, and its data quality was impaired by the SLC-Off striping issue. The overall data availability for the Landsat satellites is shown in Table 5. The datasets used in this analysis are shown in Table 6. 
+The result of the availability of these satellites is that the most consistent data availability occurs when two satellites are in operation (which occurred in most of the 2003 to present period). The least data availability is in 2011 to 2012 when only Landsat 7 was available, and its data quality was impaired by the SLC-Off striping issue. The overall data availability for the Landsat satellites is shown in Table 1. The datasets used in this analysis are shown in Table 2. 
 
-:::{list-table} Table 1. Overall Landsat sensor data availability in the DEA data cube used for the Land Cover classification.
+:::{list-table} Table 1 (below). Overall Landsat sensor data availability in the DEA data cube used for the Land Cover classification.
 :header-rows: 1
 
 * - Years
@@ -112,7 +112,7 @@ The result of the availability of these satellites is that the most consistent d
 
 <br />
 
-:::{list-table} Table 2. Datasets within DEA used to provide Essential Descriptor information for the DEA Land Cover classification.
+:::{list-table} Table 2 (below). Datasets within DEA used to provide Essential Descriptor information for the DEA Land Cover classification.
 :header-rows: 1
 
 * - Product
@@ -266,7 +266,7 @@ The product was validated using 6000 points spatially distributed over Australia
 Table 3 contains the overall accuracy for all classes. The term 'support' refers to the number of validation points used in the calculation of that accuracy value. 
 
 <figure class="table-caption">
-    <figcaption>Table 3. Overall accuracy of DEA Land Cover.</figcaption>
+    <figcaption>Table 3 (below). Overall accuracy of DEA Land Cover.</figcaption>
 </figure>
 
 ![Overall accuracy of DEA Land Cover is 80%. 2010 accuracy is 82% and 2015 accuracy is 78%.](/_files/land_cover/table2-overall-accuracy-dea-lc.PNG)
