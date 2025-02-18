@@ -71,6 +71,14 @@ entries:
                     title: Sentinel-2B Surface Reflectance NBART
                   - file: data/product/dea-surface-reflectance-oa-sentinel-2b-msi/index
                     title: Sentinel-2B Observational Attributes
+              - file: data/category/sentinel-2c-analysis-ready-data/index
+                entries:
+                  - file: data/product/dea-surface-reflectance-sentinel-2c-msi/index
+                    title: Sentinel-2C Surface Reflectance
+                  - file: data/product/dea-surface-reflectance-nbart-sentinel-2c-msi/index
+                    title: Sentinel-2C Surface Reflectance NBART
+                  - file: data/product/dea-surface-reflectance-oa-sentinel-2c-msi/index
+                    title: Sentinel-2C Observational Attributes
           - file: data/product/dea-geometric-median-and-median-absolute-deviation-landsat/index
             title: DEA Geometric Median and Median Absolute Deviation (GeoMAD)
           - file: data/product/australian-national-spectral-database/index
