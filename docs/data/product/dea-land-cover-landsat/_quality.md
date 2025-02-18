@@ -286,17 +286,17 @@ The results, shown in Table 4, indicate that where assessors could identify a pr
 
 ### Collection 3 validation
 
-In order to understand the extent of change between the versions, validation against three data sources was undertaken. These were the **validation points** reused from Collection 2, with the addition of point attributes from Köppen Climate Zone and State/Territory, added to facilitate segment analysis; the **[GLANCE (Global Land Cover Estimation)](https://www.nature.com/articles/s41597-023-02798-5)** global dataset of independent "ground truth" data; and the Land Cover **Collection 2 data**. 
+To understand the extent of change between the versions, validation against three data sources was undertaken. These were the **validation points** reused from Collection 2, with the addition of point attributes from Köppen Climate Zone and State/Territory to facilitate segment analysis; the **[GLANCE (Global Land Cover Estimation)](https://www.nature.com/articles/s41597-023-02798-5)** global dataset of independent "ground truth" data; and the Land Cover **Collection 2 data**. 
 
-To account for the additional validation points, the Collection 2 (C2) validation was run again and compared with the results from Collection 3 (C3).
+To account for the additional validation points, the Collection 2 (C2) validation was rerun and compared with the results from Collection 3 (C3).
 
-Both C3 and C2 showed overall degradation in 2010 compared to 2015, a trend that is propagated from the Level 1 and individual ML models results. The performance metrics with the validation points show an overall alignment of the two collections, with minimal differences across categories, except for the Recall values of Cultivated Vegetation and Artificial Surface (which are both higher in C3 for the year 2010) (see Tables 6 and 9).
+Both C3 and C2 showed overall degradation in 2010 compared to 2015, a trend propagated from the Level 1 and individual ML models results. The performance metrics with the validation points show an overall alignment of the two collections, with minimal differences across categories, except for the Recall values of Cultivated Vegetation and Artificial Surface, which are both higher in C3 for the year 2010 (see Tables 6 and 9).
 
 C3 demonstrated a more reasonable classification on the GLANCE dataset, particularly for the Natural Vegetation class, which can be intuitively interpreted as the Agriculture category of the GLANCE dataset (see Tables 7, 8, 10, and 11).
 
-C3 exhibited better consistency in results against the validation points and the GLANCE data. However, some misalignment between ground truth datasets is present in both collections for certain classes (e.g. Bare Surfaces). Some classes, such as the Artificial Surface, have too few validation points to be considered statistically significant. Hence, the classification metrics should be interpreted with caution and understood in relative terms, as a way to highlight the differences between C2 and C3, rather than the absolute performance of each.
+C3 exhibited better consistency in results against the validation points and the GLANCE data. However, some misalignment between ground truth datasets is present in both collections for certain classes (e.g. Bare Surfaces). Some classes, such as Artificial Surface, have too few validation points to be considered statistically significant. Hence, the classification metrics should be interpreted with caution and understood in relative terms, as a way to highlight the differences between C2 and C3, rather than the absolute performance of each.
 
-When C3 was compared directly with the output of C2 (see Table 16), it showed good agreement for most of the Level 3 classes. Two notable exceptions were the Cultivated Vegetation class and the Artificial Surface class. For Cultivated Vegetation, the performance against the validation data did not suggest a substantial difference in overall accuracy between C2 and C3; thus, the misalignment observed in Table 16 could be due to possible inconsistencies in classification between the two collections, but not necessarily an improvement or degradation. The difference observed in the Artificial Surface classification may be influenced by the increased accuracy of C3. 
+When C3 was compared directly with the output of C2 (Table 16), it showed good agreement for most of the Level 3 classes. Two notable exceptions were the Cultivated Vegetation class and the Artificial Surface class. For Cultivated Vegetation, the performance against the validation data did not suggest a substantial difference in overall accuracy between C2 and C3; thus, the misalignment observed in Table 16 could be due to possible inconsistencies in classification between the two collections, but not necessarily an improvement or degradation. The difference observed in the Artificial Surface classification may be influenced by the increased accuracy of C3. 
 
 **Validation points 2010**
 
@@ -325,9 +325,9 @@ When C3 was compared directly with the output of C2 (see Table 16), it showed go
 
 ::::
 
-The Macro-Average is the unweighted mean of each metric calculated independently for all classes. Each class contributes equally, regardless of its frequency in the dataset. It should be interpreted as "unbiased" due to the highly skewed nature of the validation points. 
+The Macro-Average is the unweighted mean of each metric, calculated independently for all classes. Each class contributes equally, regardless of its frequency in the dataset. This average should be interpreted as 'unbiased' due to the highly skewed nature of the validation points. 
 
-The Weighted-Average is the average of each metric weighted by the support ($TP + FN$; i.e., True Positives and False Negatives) for each class. The weight reflects the proportion of each class in the "Truth" such that more frequent classes have a greater impact on the overall average.
+The Weighted-Average, on the other hand, is the average of each metric weighted by the support ($TP + FN$; i.e., True Positives and False Negatives) for each class. The weight reflects the proportion of each class in the 'Truth', meaning that more frequent classes have a greater impact on the overall average.
 
 <figure class="table-caption">
     <figcaption>Table 7 (below). Confusion matrix: Collection 2 predictions vs validation points for 2010.</figcaption>
