@@ -270,13 +270,15 @@ The product was validated using 6,000 points spatially distributed across Austra
 
 ![Overall accuracy of DEA Land Cover is 80%. 2010 accuracy is 82% and 2015 accuracy is 78%.](/_files/land_cover/table2-overall-accuracy-dea-lc.PNG)
 
-The results, shown in Table 4, indicate that where assessors could identify a predominant land cover (i.e., not 'mixed' pixels or 'unsure'), there was 75% agreement among all assessors. Table 4 also provides per-class accuracy information. 'Precision' refers to the ability of a classification model to return only relevant instances, while 'Recall' refers to the ability to identify all relevant instances. The 'F1 score' combines precision and recall to provide an overall measure of accuracy. Classes such as artificial surfaces, natural aquatic vegetation, and water exhibited high accuracies. However, classifying cultivated terrestrial vegetation and bare surfaces proved challenging, resulting in the lowest accuracies among the six classes presented.
+The results, shown in Table 4, also provides per-class accuracy information. 'Precision' refers to the ability of a classification model to return only relevant instances, while 'Recall' refers to the ability to identify all relevant instances. The 'F1 score' combines precision and recall to provide an overall measure of accuracy. Classes such as artificial surfaces, natural aquatic vegetation, and water exhibited high accuracies. However, classifying cultivated terrestrial vegetation and bare surfaces proved challenging, resulting in the lowest accuracies among the six classes presented.
 
 <figure class="table-caption">
     <figcaption>Table 4 (below). Per-class accuracy information for DEA Land Cover.</figcaption>
 </figure>
 
 ![Table showing accuracy per class, including precision, recall, F1 score, and support values per class. ](/_files/land_cover/table3-per-class-accuracy-info-dea-lc.PNG)
+
+Table 5 indicates that where assessors could identify a predominant land cover (i.e., not 'mixed' pixels or 'unsure'), there was 75% agreement among all assessors. 
 
 <figure class="table-caption">
     <figcaption>Table 5 (below). Inter-assessor agreement.</figcaption>
