@@ -1,8 +1,9 @@
 % ## Access constraints
 
-## Use constraints
+:::{dropdown} Use constraints
 
 DEA Land Cover is appropriate to use at the national scale where other more detailed information on land cover is not available. Where DEA land cover shows conflicting information to state or local datasets, those datasets should be considered authoritative.
+:::
 
 :::{dropdown} How to view the data in a web map
 
