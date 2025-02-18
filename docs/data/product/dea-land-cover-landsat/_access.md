@@ -48,54 +48,39 @@ DEA Land Cover data can be downloaded in bulk using Amazon Web Service’s Comma
 
 :::
 
-:::{dropdown} How to add DEA Land Cover to QGIS
+:::{dropdown} How to add DEA Land Cover to QGIS using the OWS web service
 
-There are two options for adding this product to QGIS.
+Note: You must be using QGIS version 3.22 or above to use the time dimension.
 
-1. Adding the OWS web service.
-2. Uploading the downloaded individual TIF files .
+1. From the top menu bar, click **Layer** &gt; **Add Layer** &gt; **Add WMS/WMTS Layer**.
+1. Click **New** to set up a new data source, then enter the following.
+    * Name: `DEA Services`
+    * URL: `https://ows.dea.ga.gov.au/`
+1. Click **Connect**.
+1. Once the items appear, you can choose which layers to add.
+1. Click **Land and Vegetation** &gt; **DEA Land Cover**, then select either of the following options.
+    * **DEA Land Cover Calendar Year (Landsat)**, then select either **basic** or **detailed**.
+    * **DEA Land Cover Environmental Descriptors**, then select any of the various descriptor layers (**lifeform**, **water seasonality**, etc.)
+1. Click **Add**.
 
-**Adding the web service:**
+:::
 
-*(for the time dimension to work you need version 3.22+)*
+:::{dropdown} How to add DEA Land Cover to QGIS using GeoTIFF files
 
-From the drop down menus at the top select `Layer` > `Add Layer` > `Add WMS/WMTS Layer`
+Individual tiles can be downloaded via web browser or AWS by following the above instructions and can then be uploaded to QGIS.
 
-Click 'New' to setup a new data source, then enter
-```
-    Name: DEA Services
+The QGIS style files can be downloaded from the following locations.
 
-    URL: [https://ows.dea.ga.gov.au/](https://ows.dea.ga.gov.au/)
-```
-Click `Connect`
+* [Level 3 QGIS Style](https://dea-public-data-dev.s3.ap-southeast-2.amazonaws.com/derivative/ga_ls_landcover_class_cyear_3/ga_ls_landcover_class_cyear_3_style.qml)
+* [Level 4 QGIS Style](https://dea-public-data-dev.s3.ap-southeast-2.amazonaws.com/derivative/ga_ls_landcover_class_cyear_3/ga_ls_landcover_class_cyear_4_style.qml)
 
-Once the items appear you can choose which layers to add.
+To add the style to QGIS, do the following.
 
-Select `Land and Vegetation` > `DEA Land Cover`, then either:
+1. Select the TIF files you would like the styling applied to.
+1. Right-click that selection then select **Properties** &gt; **Symbology**.
+1. In the bottom left menu, click **Style** &gt; **Load Style**.
 
-* `DEA Land Cover Calendar Year (Landsat)`, then the **basic** or **detailed**
-* `DEA Land Cover Environmental Descriptors`, then any of the various descriptor layers (lifeform, water seasonality etc)
-
-Once you have selected a layer, click `Add` at the bottom of the window to add it to your project.
-
-Temporal information can be accessed by clicking the clock icon next to the name of the layer in the layers list.
-
-**Adding the individual tif files:**
-
-Individual tiles can be downloaded from s3 via the above instruction, and can be then uploaded to QGIS.
-
-Once the files are uploaded the styling for the tif files can be downloaded here: [Level 3 QGIS Style](https://dea-public-data-dev.s3.ap-southeast-2.amazonaws.com/derivative/ga_ls_landcover_class_cyear_3/ga_ls_landcover_class_cyear_3_style.qml) and [Level 4 QGIS Style](https://dea-public-data-dev.s3.ap-southeast-2.amazonaws.com/derivative/ga_ls_landcover_class_cyear_3/ga_ls_landcover_class_cyear_4_style.qml)
-
-To add the style,
-
-1. Select the tif files you would like the styling applied to
-
-2. Right click and select `Properties` then `Symbology`
-
-3. Select `Style` and the `Load Style` in the bottom left hand menu
-
-The styling will now be applied to the tif classification file, to enable a colour representation of the land cover classifications
-
+The styling will now be applied to the TIF classification file, hence enabling a colour representation of the Land Cover classifications.
 :::
 
 :::{dropdown} How to add DEA Land Cover to ArcMap
