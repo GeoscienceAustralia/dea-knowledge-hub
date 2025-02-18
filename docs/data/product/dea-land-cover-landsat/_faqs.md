@@ -7,7 +7,7 @@ However, the classification of Artificial Surface is notably better in C3, meani
 
 Some inconsistencies were observed in the areas assigned to the Cultivated Vegetation class, although the overall accuracy for this class remains similar between the two collections. Moreover, a significant degradation in C3 is the increase in Landsat 7 stripe artefacts. 
 
-Refer to the [Quality tab](./?tab=quality) for further details.
+Please refer to the [Quality tab](./?tab=quality) for further details.
 :::
 
 % :::{dropdown} QUESTION
