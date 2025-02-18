@@ -63,9 +63,9 @@ To generate the land cover classification for each calendar year, annual (Januar
 
 An additional limitation of the Landsat series is the availability of data due to the ageing of each satellite. Landsat 5 was operational for over 25 years, but for much of the later years, data were only acquired when sunlight directly illuminated its solar panels. This limited its operation across Australia, with coverage being seasonally dependent, and contracting north to a minimum in winter. In its last years, the winter coverage usually only covered the northern coasts of Australia. Landsat 5 ceased regular operations over Australia in 2011, leaving just Landsat 7 operational until Landsat 8 was launched in 2013. Landsat 7 began service in 1999 as a replacement for Landsat 5. Initially Landsat 5 was switched off, but when Landsat 7 suffered a serious problem in 2003 due to the failure of its scan-line corrector (termed SLC-Off), Landsat 5 resumed service. The SLC-Off failure of Landsat 7 resulted in severe striping across every image from mid-2003 onwards, and this striping is apparent in subsequent derived products. Landsat 8 has operated well since its launch in 2013. Landsat 9 has operated since 2022 with improved sensitivity, noise characteristics, and data correction in comparison to the earlier sensors.
 
-The result of the availability of these satellites is that the most consistent data availability occurs when two satellites are in operation (which occurred in most of the 2003 to present period). The least data availability is in 2011 to 2012 when only Landsat 7 was available, and its data quality was impaired by the SLC-Off striping issue. The overall data availability for the Landsat satellites is shown in Table 5. The datasets used in this analysis are shown in Table 6. 
+The result of the availability of these satellites is that the most consistent data availability occurs when two satellites are in operation (which occurred in most of the 2003 to present period). The least data availability is in 2011 to 2012 when only Landsat 7 was available, and its data quality was impaired by the SLC-Off striping issue. The overall data availability for the Landsat satellites is shown in Table 1. The datasets used in this analysis are shown in Table 2. 
 
-:::{list-table} Table 1. Overall Landsat sensor data availability in the DEA data cube used for the Land Cover classification.
+:::{list-table} Table 1 (below). Overall Landsat sensor data availability in the DEA data cube used for the Land Cover classification.
 :header-rows: 1
 
 * - Years
@@ -112,7 +112,7 @@ The result of the availability of these satellites is that the most consistent d
 
 <br />
 
-:::{list-table} Table 2. Datasets within DEA used to provide Essential Descriptor information for the DEA Land Cover classification.
+:::{list-table} Table 2 (below). Datasets within DEA used to provide Essential Descriptor information for the DEA Land Cover classification.
 :header-rows: 1
 
 * - Product
@@ -264,21 +264,21 @@ The validation metrics reported were produced for Level 3 and they integrate the
 The product was validated using 6,000 points spatially distributed across Australia for the years 2010 and 2015, resulting in a total of 12,000 samples. These points were created using a stratified random sampling approach that was adjusted for oversampling. After removing points with 'No Data' and spurious values, the total number of valid points was 11,750. The sample points were divided into clusters for visual assessment against the classification outputs and individually assessed by a pool of 10 people. To compare individual biases among the assessors, an additional set of validation points was created and evaluated by all assessors. Table 3 contains the overall accuracy for all classes. The term 'support' refers to the number of validation points used in the calculation of that accuracy value. 
 
 
-<figure>
-    <figcaption>Table 3. Overall accuracy of DEA Land Cover.</figcaption>
+<figure class="table-caption">
+    <figcaption>Table 3 (below). Overall accuracy of DEA Land Cover.</figcaption>
 </figure>
 
 ![Overall accuracy of DEA Land Cover is 80%. 2010 accuracy is 82% and 2015 accuracy is 78%.](/_files/land_cover/table2-overall-accuracy-dea-lc.PNG)
 
 The results, shown in Table 4, indicate that where assessors could identify a predominant land cover (i.e., not 'mixed' pixels or 'unsure'), there was 75% agreement among all assessors. Table 4 also provides per-class accuracy information. 'Precision' refers to the ability of a classification model to return only relevant instances, while 'Recall' refers to the ability to identify all relevant instances. The 'F1 score' combines precision and recall to provide an overall measure of accuracy. Classes such as artificial surfaces, natural aquatic vegetation, and water exhibited high accuracies. However, classifying cultivated terrestrial vegetation and bare surfaces proved challenging, resulting in the lowest accuracies among the six classes presented.
 
-<figure>
+<figure class="table-caption">
     <figcaption>Table 4 (below). Per-class accuracy information for DEA Land Cover.</figcaption>
 </figure>
 
 ![Table showing accuracy per class, including precision, recall, F1 score, and support values per class. ](/_files/land_cover/table3-per-class-accuracy-info-dea-lc.PNG)
 
-<figure>
+<figure class="table-caption">
     <figcaption>Table 5 (below). Inter-assessor agreement.</figcaption>
 </figure>
 
@@ -300,7 +300,7 @@ When C3 was compared directly with the output of C2 (see Table 16), it showed go
 
 **Validation points 2010**
 
-<figure>
+<figure class="table-caption">
     <figcaption>Table 6 (below). Classification metrics of Collection 2 and Collection 3 in the year 2010, using the validation points as ground truth.</figcaption>
 </figure>
 
@@ -329,13 +329,13 @@ The Macro-Average is the unweighted mean of each metric calculated independently
 
 The Weighted-Average is the average of each metric weighted by the support ($TP + FN$; i.e., True Positives and False Negatives) for each class. The weight reflects the proportion of each class in the "Truth" such that more frequent classes have a greater impact on the overall average.
 
-<figure>
+<figure class="table-caption">
     <figcaption>Table 7 (below). Confusion matrix: Collection 2 predictions vs validation points for 2010.</figcaption>
 </figure>
 
 ![C2 2010 Matrix](/_files/land_cover/c2_l3-15.png)
 
-<figure>
+<figure class="table-caption">
     <figcaption>Table 8 (below). Confusion matrix: Collection 3 predictions vs validation points for 2010.</figcaption>
 </figure>
 
@@ -343,7 +343,7 @@ The Weighted-Average is the average of each metric weighted by the support ($TP 
 
 **Validation points 2015**
 
-<figure>
+<figure class="table-caption">
     <figcaption>Table 9 (below). Classification metrics of Collection 2 and Collection 3 in the year 2015, using the validation points as ground truth.</figcaption>
 </figure>
 
@@ -368,13 +368,13 @@ The Weighted-Average is the average of each metric weighted by the support ($TP 
 
 ::::
 
-<figure>
+<figure class="table-caption">
     <figcaption>Table 10 (below). Confusion matrix: Collection 2 predictions vs validation points for 2015.</figcaption>
 </figure>
 
 ![C2 2015 Matrix](/_files/land_cover/c2_l3-11.png)
 
-<figure>
+<figure class="table-caption">
     <figcaption>Table 11 (below). Confusion matrix: Collection 3 predictions vs validation points for 2015.</figcaption>
 </figure>
 
@@ -382,13 +382,13 @@ The Weighted-Average is the average of each metric weighted by the support ($TP 
 
 **GLANCE 2010**
 
-<figure>
+<figure class="table-caption">
     <figcaption>Table 12 (below). Confusion matrix: Collection 2 predictions vs GLANCE dataset for 2010.</figcaption>
 </figure>
 
 ![C2 2010 GLANCE C2](/_files/land_cover/c2_l3-19.png)
 
-<figure>
+<figure class="table-caption">
     <figcaption>Table 13 (below). Confusion matrix: Collection 3 predictions vs GLANCE dataset for 2010.</figcaption>
 </figure>
 
@@ -396,13 +396,13 @@ The Weighted-Average is the average of each metric weighted by the support ($TP 
 
 **GLANCE 2015**
 
-<figure>
+<figure class="table-caption">
     <figcaption>Table 14 (below). Confusion matrix: Collection 2 predictions vs GLANCE dataset for 2015.</figcaption>
 </figure>
 
 ![C2 2015 GLANCE C2](/_files/land_cover/c2_l3-17.png)
 
-<figure>
+<figure class="table-caption">
     <figcaption>Table 15 (below). Confusion matrix: Collection 3 predictions vs GLANCE dataset for 2015.</figcaption>
 </figure>
 
@@ -410,7 +410,7 @@ The Weighted-Average is the average of each metric weighted by the support ($TP 
 
 **Collection 3 vs Collection 2**
 
-<figure>
+<figure class="table-caption">
     <figcaption>Table 16 (below). Classification metrics generated by using C2 data as "ground truth" for the C3 output for 2010 and 2015.</figcaption>
 </figure>
 
