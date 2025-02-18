@@ -11,7 +11,7 @@ bands_table:
     nodata: 0
     units: null
     type: uint8
-    description: The base Level 3 land cover classification.
+    description: The base Level 3 Land Cover classification.
   - name: level4
     aliases:
       - full_classification
@@ -19,4 +19,4 @@ bands_table:
     nodata: 0
     units: null
     type: uint8
-    description: All level 3 and level 4 classes are combined to give a single classification value.
+    description: All Level 3 and Level 4 classes are combined to give a single classification value.
