@@ -4,6 +4,8 @@
 
 While Version 1 (Collection 2) was at 25 m spatial resolution, Version 2 (Collection 3) is at 30 m resolution.
 
+The ‘no data’ value has been changed from ‘0’ to ‘255’ to be consistent with other DEA derivative products.
+
 The overall performance of Version 2 is in line with that of Version 1. 
 
 However, the classification of Artificial Surface is notably better in Version 2, meaning the number of pixels in that class will be considerably higher. The Woody Cover ratio also seems to have improved in Version 2.
