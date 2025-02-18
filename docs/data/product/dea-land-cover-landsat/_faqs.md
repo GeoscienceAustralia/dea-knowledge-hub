@@ -1,6 +1,7 @@
 ## Frequently Asked Questions
 
 :::{dropdown} I was using Land Cover Version 1 in my workflow. What are the key differences in Version 2 that I should be aware of?
+
 While Version 1 (Collection 2) was at 25 m spatial resolution, Version 2 (Collection 3) is at 30 m resolution.
 
 The overall performance of Version 2 is in line with that of Version 1. 
@@ -13,6 +14,7 @@ Please refer to the [Quality tab](./?tab=quality) for further details.
 :::
 
 :::{dropdown} What are the main limitations of the Land Cover classification?
+
 There are limitations originating from both the source satellite data and the algorithms applied to generate the final Land Cover product.
 
 The primary intrinsic limitation of Earth Observation itself is data availability. Inconsistent data coverage and extended cloud cover periods can lead to gaps in the data, potentially missing entire intra-annual cycles, which impacts the accuracy of the algorithm.
@@ -31,6 +33,7 @@ Please refer to the [Quality tab](./?tab=quality) for further details.
 :::
 
 :::{dropdown} What Landsat satellites were used for generating the Land Cover classification?
+
 To generate the land cover classification for each calendar year, annual (January to December) statistics derived from Landsat-5, -7, -8, and -9 observations were used (in contrast to Version 1, which only used Landsat-5, -7, and -8). The combination of data from these different satellites enabled the creation of a timeseries of annual Land Cover classifications over more than 35 years. However, data availability may vary in frequency depending on which and how many satellites were operating at different times.
 
 To generate the land cover classification for each calendar year, annual (January to December) statistics derived from Landsat-5, -7, -8, and -9 observations were used (in contrast to Version 1, which only used Landsat-5, -7, and -8). The combination of data from these different satellites enabled the creation of a timeseries of annual Land Cover classifications over more than 35 years. However, the frequency of data availability may vary depending on which satellites were operational and the number of satellites in operation at different times.
