@@ -52,7 +52,7 @@ collections:
   - name: Geoscience Australia Landsat Collection 3
     link: /search/?q=Geoscience+Australia+Landsat+Collection+3
 
-doi: 10.26186/146090 # TODO UPDATE WHEN APPROVED 
+doi: 10.26186/149976
 ecat_id: "149976"
 
 licence_name: Creative Commons Attribution 4.0 International Licence
