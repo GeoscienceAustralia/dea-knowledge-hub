@@ -21,13 +21,9 @@ The primary intrinsic limitation of Earth Observation itself is data availabilit
 
 Another limitation arises from the spatial resolution of 30 m. Smaller landscape features could be missed entirely and incorrectly classified as the surrounding terrain.
 
-Moreover, an issue originating from low Ground Quality Assured (GQA) values resulted in frequent data gaps in three tiles in Western Australia, especially between 1988 and 2005.
+Inaccuracies resulting from the performance of the algorithms generally occur when features within the satellite images resemble different types of features, leading to misclassification. For example, events such as fires and rainfall can cause a response in vegetation that mirrors that of agricultural areas. Canopy in residential suburbs may hinder the correct identification of Artificial Surfaces. Shadows cast by buildings in dense urban areas can be classified as water. Bright sandy regions can be assigned to the Artificial Surfaces class.
 
-Water persistence appears to be often incorrect in the ocean (where it should remain consistently high). Thus, a mask that excludes the ocean is necessary when working with coastal tiles.
-
-Inaccuracies resulting from the performance of the algorithms generally occur when features within the satellite images resemble different types of features, leading to misclassification. For example, events such as fires, inundations, droughts, and rainfall can cause a response in vegetation that mirrors that of agricultural areas. Shadows created by terrain can lead to vegetation being classified as non-vegetated. Canopy in residential suburbs may hinder the correct classification of artificial surfaces. Shadows cast by buildings in dense urban areas can be classified as water. Bright sandy regions can be assigned to the Artificial Surfaces class.
-
-Additionally, the Cultivated Terrestrial Vegetation (CTV) model has not been trained on CTV-woody areas due to a lack of available training data, leading to possible high rates of misclassification. The Natural Aquatic Vegetation model includes only mangroves, while other environments (such as saltmarshes, river red gum forests, and surface algae areas) are likely to be excluded due to the water mask applied to filter the input images
+Additionally, lack of training data for specific sub-classes and filters applied to the input images can limit the capabilities of the models to detect some environment types.
 
 Please refer to the [Quality tab](./?tab=quality) for further details.
 :::
