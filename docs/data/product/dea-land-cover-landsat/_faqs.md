@@ -10,7 +10,9 @@ The descriptor layers, which aggregate information on specific categories such a
 
 While the overall performance of Version 2 is in line with Version 1, the classification of Artificial Surface (AS) is notably better in Version 2, so the total number of pixels in that class is considerably higher. The Woody Cover ratio also seems to have improved in Version 2.
 
-There is a notable increase in data affected by stripe artefacts from the Landsat 7 SLC-off failure from 2003 to 2011
+Some inconsistencies were observed in the areas assigned to the Cultivated Terrestrial Vegetation class between the two versions. However, the overall accuracy for this class remains similar between the two collections.
+
+There is a notable increase in data affected by stripe artefacts from the Landsat 7 SLC-off failure from 2003 to 2011.
 
 Please refer to the [Quality](./?tab=quality) tab of the Land Cover product for further details.
 
