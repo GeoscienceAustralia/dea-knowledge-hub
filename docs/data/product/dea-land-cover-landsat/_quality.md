@@ -145,7 +145,7 @@ The result of the availability of these satellites is that the most consistent d
 
 * - Woody Cover Fraction (WCF)
   - Lifeform
-  - Liao et al. (2020 in review)
+  - Liao et al. (2020)
 
 :::
 
