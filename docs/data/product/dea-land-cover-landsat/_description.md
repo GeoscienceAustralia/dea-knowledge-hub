@@ -6,7 +6,7 @@ Land cover is the observed physical cover on the Earth's surface including trees
 
 DEA Land Cover provides annual land cover classifications for Australia using the Food and Agriculture Organisation's (FAO) Land Cover Classification System (LCCS) taxonomy Version 2 (Di Gregorio and Jansen, 1998; 2005).
 
-DEA Land Cover divides the landscape into six base land cover types, which are then further detailed through the addition of environmental descriptors. The structure is as follows.
+DEA Land Cover divides the landscape into six base land cover types, which are then further detailed through the addition of environmental descriptors (currenlty only accessible on the [DEA Maps](https://maps.dea.ga.gov.au)). The structure is as follows.
 
 * **Cultivated Terrestrial Vegetation**
     * Percentage of cover
@@ -120,13 +120,13 @@ The base Level 3 land cover classification.
 
 Cultivated Terrestrial Vegetation (CTV) is associated with agricultural areas where active cultivation has been observed. In version 2.0, only herbaceous cultivation is shown and describes vegetation of strongly varying cover, ranging from bare (e.g. ploughed) areas to fully developed crops. Whilst the continental product describes land cover, interpretation is complicated as the same terminology is used to report on land use.
 
-The definition of cultivated, and the difference from natural or semi-natural land covers, can be contentious, particularly as much of the Australian landscape is used for agricultural food production. This includes areas of natural terrestrial vegetation (NTV) and natural aquatic vegetation (NAV) that are grazed by stock and which can be regarded as either semi-natural or cultivated.
+The definition of cultivated, and the difference from natural or semi-natural land covers, can be contentious, particularly as much of the Australian landscape is used for agricultural food production. This includes areas of Natural Terrestrial Vegetation (NTV) and Natural Aquatic Vegetation (NAV) that are grazed by stock and which can be regarded as either semi-natural or cultivated.
 
 CTV in the DEA Land Cover map is associated with areas where management practices aimed at cultivation (including for grass production) are actively performed during the year being shown. These practices include crop planting and harvesting, fertilisation, and ploughing. These practices often lead to highly dynamic spectral signals within and between years but also regular transitions between vegetation of different cover amounts as well as bare soil. This also means that agricultural areas will transition between natural and cultivated covers as management practices transition an area between actively cropped or grazed, to areas left fallow, areas reduced to low cover due to climate effects such as drought, or to other covers depending on what the predominant conditions are through the year being shown. 
 
 **Natural Terrestrial Vegetation (NTV)** 
 
-Natural Terrestrial Vegetation (NTV) represents areas that have all or most of the characteristics of natural or semi-natural herbaceous or woody vegetation (based primarily on floristics, structure, function, and dynamics). These areas are identified as primarily vegetated, with either a photosynthetic vegetation fraction (PV) or non-photosynthetic fraction (NPV) greater than the bare soil fraction (BS) for at least two consecutive months. This approach considers that vegetation can exist in, and transition between PV and NPV states during the year. In effect, this approach classifies the landscape as primarily vegetated where the vegetated fraction of a pixel is greater than 30 %. Where the proportion of the landscape is less than 30 % vegetated, it is regarded as a sparsely vegetated or natural surface, but the cover proportions can still be quantified. Urban areas that are vegetated (e.g. suburbs with trees) are associated with NTV if the pixel is at least 30 % vegetated but as artificial surfaces (AS) otherwise. The implementation allows areas of semi-natural vegetation (e.g. native grassland and pastureland) to be included in the NTV class.
+Natural Terrestrial Vegetation (NTV) represents areas that have all or most of the characteristics of natural or semi-natural herbaceous or woody vegetation (based primarily on floristics, structure, function, and dynamics). These areas are identified as primarily vegetated, with either a photosynthetic vegetation fraction (PV) or non-photosynthetic fraction (NPV) greater than the bare soil fraction (BS) for at least two consecutive months. This approach considers that vegetation can exist in, and transition between PV and NPV states during the year. In effect, this approach classifies the landscape as primarily vegetated where the vegetated fraction of a pixel is greater than 30 %. Where the proportion of the landscape is less than 30 % vegetated, it is regarded as a sparsely vegetated or Natural Bare Surface, but the cover proportions can still be quantified. Urban areas that are vegetated (e.g. suburbs with trees) are associated with NTV if the pixel is at least 30 % vegetated but as Artificial Surfaces (AS) otherwise. The implementation allows areas of semi-natural vegetation (e.g. native grassland and pastureland) to be included in the NTV class.
 
 **Natural Aquatic Vegetation (NAV)**
 
@@ -136,9 +136,9 @@ Natural Aquatic Vegetation (NAV) is associated primarily with wetlands that are 
 
 Artificial Surfaces (AS) are areas of non-vegetated land cover created by human activities and are primarily represented by impervious surfaces (e.g. urban and industrial buildings, roads, and railways). These can be more readily identified when the area is larger than the spatial resolution (30 m) provided by the sensor. Open cut extraction sites are often included in AS. However, there is considerable misclassification of NS as AS in areas where vegetated cover is very low and very consistent through the year. 
 
-**Natural Surfaces (NS)** 
+**Natural Bare Surfaces (NS)** 
 
-Natural Surfaces (NS) are comprised primarily of unconsolidated (often pervious, e.g. mudflats and saltpans) or consolidated (e.g. bare rock or bare soil) materials. In Australia, the proportional area of natural surfaces is relatively low and primarily confined to the deserts and semi-arid areas, river channels (e.g. dry riverbeds) and the coastline (e.g. mudflats and sand dunes). Much of the interior of Australia is sparsely vegetated and can be dominated by herbaceous (annual or perennial) or woody lifeforms. 
+Natural Bare Surfaces (NS) are comprised primarily of unconsolidated (often pervious, e.g. mudflats and saltpans) or consolidated (e.g. bare rock or bare soil) materials. In Australia, the proportional area of Natural Bare Surfaces is relatively low and primarily confined to the deserts and semi-arid areas, river channels (e.g. dry riverbeds) and the coastline (e.g. mudflats and sand dunes). Much of the interior of Australia is sparsely vegetated and can be dominated by herbaceous (annual or perennial) or woody lifeforms. 
 
 **Water** 
 
@@ -332,31 +332,31 @@ Lifeform represents the dominant vegetation type of a primarily vegetated area, 
 
 **Vegetation Cover (NTV, NAV, and CTV; 5 classes)** 
 
-Vegetation cover is defined using the statistics of annual fractional cover of PV (for a calendar year). This relates to the uppermost foliage as observed from the Landsat satellite sensor, and describes the percentage of an area that is vegetated rather than bare. 
+Vegetation Cover is defined using the statistics of annual fractional cover of PV (for a calendar year). This relates to the uppermost foliage as observed from the Landsat satellite sensor, and describes the percentage of an area that is vegetated rather than bare. 
 
 **Water Seasonality (NAV; 2 classes)** 
 
-Water seasonality refers to the typical hydrological conditions in NAV within a year and is relevant to both coastal and inland wetlands. The current implementation utilises the [DEA Water Observations (WO)](/data/category/dea-water-observations/) dataset, identifying hydro-periods for NAV areas where water is somewhat permanent (over 3 months) or temporary or seasonal (under 3 months). 
+Water Seasonality refers to the typical hydrological conditions in NAV within a year and is relevant to both coastal and inland wetlands. The current implementation utilises the [DEA Water Observations (WO)](/data/category/dea-water-observations/) dataset, identifying hydro-periods for NAV areas where water is somewhat permanent (over 3 months) or temporary or seasonal (under 3 months). 
 
 **Water State (Water; 1 class)** 
 
-Water state establishes whether water is present in liquid form or as snow or ice. The current product only identifies areas where water is present as liquid for at least 20 % of observations (based on WOfS). 
+Water State establishes whether water is present in liquid form or as snow or ice. The current product only identifies areas where water is present as liquid for at least 20 % of observations (based on WOfS). 
 
 **Water Persistence (Water; 4 classes)** 
 
-Water persistence (or hydro-period) describes the maximum duration (in months) that water is seen to be covering the surface in the year.
+Water Persistence (or hydro-period) describes the maximum duration (in months) that water is seen to be covering the surface in the year.
 
 **Intertidal (Water; 1 class)** 
 
 Intertidal water refers to primarily non-vegetated aquatic areas with systematic tidal water variations. 
 
-**Bare Gradation (NS; 3 classes)**
+**Natural Surface (NS; 3 classes)**
 
-Bare gradation describes the percentage of bare surface in areas which contain sporadic or little persistent green vegetation through the year. The percentage reflects that much of the remaining area is brown or dead vegetation. This is characteristic of the more arid parts of Australia.
+Natural Surface (i.e., bare gradation) describes the percentage of bare surface in areas which contain sporadic or little persistent green vegetation through the year. The percentage reflects that much of the remaining area is brown or dead vegetation. This is characteristic of the more arid parts of Australia.
 
 ## Lineage
 
-The FAO LCCS taxonomy (Figure 2) is hierarchical and consists of a dichotomous phase (Levels 1 to 3) and a modular phase (Level 4). In Level 1, vegetated and non-vegetated areas are first separated. These are then divided into terrestrial or aquatic categories to form Level 2. In the vegetated terrestrial category, cultivated and natural (including semi-natural) areas are differentiated. The non-vegetated category is further divided into artificial surfaces and natural surfaces. These non-vegetated natural surfaces include low vegetation cover and bare areas. This results in six base land cover categories (including the non-vegetated aquatic class from Level 2).
+The FAO LCCS taxonomy (Figure 2) is hierarchical and consists of a dichotomous phase (Levels 1 to 3) and a modular phase (Level 4). In Level 1, vegetated and non-vegetated areas are first separated. These are then divided into terrestrial or aquatic categories to form Level 2. In the vegetated terrestrial category, cultivated and natural (including semi-natural) areas are differentiated. The non-vegetated category is further divided into Artificial Surface and Natural Surface. These non-vegetated Natural Surface include low vegetation cover and bare areas. This results in six base land cover categories (including the non-vegetated aquatic class from Level 2).
 
 At Level 4, vegetated areas are further classified using information that differentiates lifeform (woody and herbaceous) and quantifies vegetation cover percent and water seasonality (for Natural Aquatic Vegetation). Natural Surface areas have information added (bare gradation) which describes the level of remaining vegetation present (sparse, very sparse, or not detectable). Non-vegetated aquatic areas (Water) are further described on the basis of their persistence (hydro-period) over a calendar year. The FAO LCCS differentiates water in different physical states (liquid or frozen; ice or snow); however, only liquid water is included in the current release.
 

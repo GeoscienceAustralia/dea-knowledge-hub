@@ -1,6 +1,6 @@
 ## About
 
-Digital Earth Australia (DEA) Land Cover translates over 30 years of satellite imagery into evidence of how Australia's land, vegetation and waterbodies have changed over time.
+Digital Earth Australia (DEA) Land Cover translates over 35 years of satellite imagery into evidence of how Australia's land, vegetation and waterbodies have changed over time.
 
 :::{admonition} This version includes breaking changes
 :class: note
