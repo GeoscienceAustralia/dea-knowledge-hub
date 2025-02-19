@@ -120,13 +120,13 @@ The base Level 3 land cover classification.
 
 Cultivated Terrestrial Vegetation (CTV) is associated with agricultural areas where active cultivation has been observed. In version 2.0, only herbaceous cultivation is shown and describes vegetation of strongly varying cover, ranging from bare (e.g. ploughed) areas to fully developed crops. Whilst the continental product describes land cover, interpretation is complicated as the same terminology is used to report on land use.
 
-The definition of cultivated, and the difference from natural or semi-natural land covers, can be contentious, particularly as much of the Australian landscape is used for agricultural food production. This includes areas of natural terrestrial vegetation (NTV) and natural aquatic vegetation (NAV) that are grazed by stock and which can be regarded as either semi-natural or cultivated.
+The definition of cultivated, and the difference from natural or semi-natural land covers, can be contentious, particularly as much of the Australian landscape is used for agricultural food production. This includes areas of Natural Terrestrial Vegetation (NTV) and Natural Aquatic Vegetation (NAV) that are grazed by stock and which can be regarded as either semi-natural or cultivated.
 
 CTV in the DEA Land Cover map is associated with areas where management practices aimed at cultivation (including for grass production) are actively performed during the year being shown. These practices include crop planting and harvesting, fertilisation, and ploughing. These practices often lead to highly dynamic spectral signals within and between years but also regular transitions between vegetation of different cover amounts as well as bare soil. This also means that agricultural areas will transition between natural and cultivated covers as management practices transition an area between actively cropped or grazed, to areas left fallow, areas reduced to low cover due to climate effects such as drought, or to other covers depending on what the predominant conditions are through the year being shown. 
 
 **Natural Terrestrial Vegetation (NTV)** 
 
-Natural Terrestrial Vegetation (NTV) represents areas that have all or most of the characteristics of natural or semi-natural herbaceous or woody vegetation (based primarily on floristics, structure, function, and dynamics). These areas are identified as primarily vegetated, with either a photosynthetic vegetation fraction (PV) or non-photosynthetic fraction (NPV) greater than the bare soil fraction (BS) for at least two consecutive months. This approach considers that vegetation can exist in, and transition between PV and NPV states during the year. In effect, this approach classifies the landscape as primarily vegetated where the vegetated fraction of a pixel is greater than 30 %. Where the proportion of the landscape is less than 30 % vegetated, it is regarded as a sparsely vegetated or natural surface, but the cover proportions can still be quantified. Urban areas that are vegetated (e.g. suburbs with trees) are associated with NTV if the pixel is at least 30 % vegetated but as artificial surfaces (AS) otherwise. The implementation allows areas of semi-natural vegetation (e.g. native grassland and pastureland) to be included in the NTV class.
+Natural Terrestrial Vegetation (NTV) represents areas that have all or most of the characteristics of natural or semi-natural herbaceous or woody vegetation (based primarily on floristics, structure, function, and dynamics). These areas are identified as primarily vegetated, with either a photosynthetic vegetation fraction (PV) or non-photosynthetic fraction (NPV) greater than the bare soil fraction (BS) for at least two consecutive months. This approach considers that vegetation can exist in, and transition between PV and NPV states during the year. In effect, this approach classifies the landscape as primarily vegetated where the vegetated fraction of a pixel is greater than 30 %. Where the proportion of the landscape is less than 30 % vegetated, it is regarded as a sparsely vegetated or natural surface, but the cover proportions can still be quantified. Urban areas that are vegetated (e.g. suburbs with trees) are associated with NTV if the pixel is at least 30 % vegetated but as Artificial Surfaces (AS) otherwise. The implementation allows areas of semi-natural vegetation (e.g. native grassland and pastureland) to be included in the NTV class.
 
 **Natural Aquatic Vegetation (NAV)**
 
@@ -332,19 +332,19 @@ Lifeform represents the dominant vegetation type of a primarily vegetated area, 
 
 **Vegetation Cover (NTV, NAV, and CTV; 5 classes)** 
 
-Vegetation cover is defined using the statistics of annual fractional cover of PV (for a calendar year). This relates to the uppermost foliage as observed from the Landsat satellite sensor, and describes the percentage of an area that is vegetated rather than bare. 
+Vegetation Cover is defined using the statistics of annual fractional cover of PV (for a calendar year). This relates to the uppermost foliage as observed from the Landsat satellite sensor, and describes the percentage of an area that is vegetated rather than bare. 
 
 **Water Seasonality (NAV; 2 classes)** 
 
-Water seasonality refers to the typical hydrological conditions in NAV within a year and is relevant to both coastal and inland wetlands. The current implementation utilises the [DEA Water Observations (WO)](/data/category/dea-water-observations/) dataset, identifying hydro-periods for NAV areas where water is somewhat permanent (over 3 months) or temporary or seasonal (under 3 months). 
+Water Seasonality refers to the typical hydrological conditions in NAV within a year and is relevant to both coastal and inland wetlands. The current implementation utilises the [DEA Water Observations (WO)](/data/category/dea-water-observations/) dataset, identifying hydro-periods for NAV areas where water is somewhat permanent (over 3 months) or temporary or seasonal (under 3 months). 
 
 **Water State (Water; 1 class)** 
 
-Water state establishes whether water is present in liquid form or as snow or ice. The current product only identifies areas where water is present as liquid for at least 20 % of observations (based on WOfS). 
+Water State establishes whether water is present in liquid form or as snow or ice. The current product only identifies areas where water is present as liquid for at least 20 % of observations (based on WOfS). 
 
 **Water Persistence (Water; 4 classes)** 
 
-Water persistence (or hydro-period) describes the maximum duration (in months) that water is seen to be covering the surface in the year.
+Water Persistence (or hydro-period) describes the maximum duration (in months) that water is seen to be covering the surface in the year.
 
 **Intertidal (Water; 1 class)** 
 
