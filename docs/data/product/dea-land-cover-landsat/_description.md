@@ -99,8 +99,6 @@ Detailed layer descriptions, including known issues, are provided in the followi
 The base Level 3 land cover classification.
 
 ```text
-0:    No data   
-
 111:  Cultivated Terrestrial Vegetation (CTV)
 
 112:  (Semi-)Natural Terrestrial Vegetation (NTV)
@@ -112,6 +110,8 @@ The base Level 3 land cover classification.
 216:  Natural Bare Surface (NS)
 
 220:  Water
+
+255: No data
 ```
 
 :::
@@ -151,8 +151,6 @@ The Water class captures terrestrial and coastal open water such as dams, lakes,
 All level 3 and level 4 classes for a given pixel are combined to give a single classification value.
 
 ```text
-0:    No data  
-
 1:    Cultivated Terrestrial Vegetated  
 
 3:    Cultivated Terrestrial Vegetated: Herbaceous  
@@ -322,6 +320,8 @@ All level 3 and level 4 classes for a given pixel are combined to give a single 
 103:  Water: (Water) Non-perennial (4 to 6 months)  
 
 104:  Water: (Water) Non-perennial (1 to 3 months)
+
+255: No data
 ```
 
 :::
