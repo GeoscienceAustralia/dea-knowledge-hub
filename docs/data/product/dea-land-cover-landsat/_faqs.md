@@ -1,20 +1,17 @@
 ## Frequently Asked Questions
 
-:::{dropdown} I was using DEA Land Cover Version 1 in my workflow. What are the key differences in Version 2 that I should be aware of?
+:::{dropdown} What are the differences between Version 1.0 and Version 2.0 of this product?
 
-Version 1 (Collection 2) had a spatial resolution of 25 m, while Version 2 (Collection 3) has a spatial resolution of 30 m.
+The main differences are as follows.
 
-The 'no data' value has changed from '0' to '255', to maintain consistency with other DEA derivative products.
+* Version 1.0 (Collection 2) had a spatial resolution of 25 m, while Version 2.0 (Collection 3) has a spatial resolution of 30 m.
+* The 'No data' value has changed from '0' to '255'. This is for consistency with other DEA derivative products.
+* The descriptor layers are now only accessible on [DEA Maps](https://maps.dea.ga.gov.au). These layers aggregate information on specific categories such as the distinction between 'Herbaceous' and 'Woody' Natural Terrestrial Vegetation.
+* While the overall performance of Version 2.0 is similar to Version 1.0, the classification of Artificial Surface (AS) is notably better in Version 2.0, so the total number of pixels in that class is considerably higher. The Woody Cover ratio also seems to have improved in Version 2.0.
+* Some inconsistencies were observed in the areas assigned to the Cultivated Terrestrial Vegetation class between the two versions; however, the overall accuracy for this class remains similar between the two collections.
+* There is a notable increase in data affected by stripe artefacts from the Landsat 7 SLC-off failure from 2003 to 2011.
 
-The descriptor layers, which aggregate information on specific categories such as the distinction between 'Herbaceous' and 'Woody' Natural Terrestrial Vegetation, are now only accessible on [DEA Maps](https://maps.dea.ga.gov.au).
-
-While the overall performance of Version 2 is in line with Version 1, the classification of Artificial Surface (AS) is notably better in Version 2, so the total number of pixels in that class is considerably higher. The Woody Cover ratio also seems to have improved in Version 2.
-
-Some inconsistencies were observed in the areas assigned to the Cultivated Terrestrial Vegetation class between the two versions. However, the overall accuracy for this class remains similar between the two collections.
-
-There is a notable increase in data affected by stripe artefacts from the Landsat 7 SLC-off failure from 2003 to 2011.
-
-Please refer to the [Quality](./?tab=quality) tab of the Land Cover product for further details.
+For more details, see the [Quality tab](./?tab=quality).
 
 :::
 
@@ -30,7 +27,7 @@ Inaccuracies resulting from the performance of the algorithms generally occur wh
 
 Additionally, lack of training data for specific sub-classes and filters applied to the input images can limit the capabilities of the models to detect some environment types.
 
-Please refer to the [Quality](./?tab=quality) tab of the Land Cover product for further details.
+For more details, see the [Quality tab](./?tab=quality).
 :::
 
 :::{dropdown} What is the difference between DEA Land Cover Level 3 and Level 4?
@@ -39,8 +36,7 @@ DEA Land Cover is based on the globally applicable Food and Agriculture Organisa
 
 The Level 4 classifications combine the Level 3 classes with their associated descriptors, resulting in more granular classes. For example, it differentiates between woody and herbaceous vegetation, as well as between open, closed, or sparse cover. It also provides information on water persistence, which corresponds to the number of months in a given year when water was present.
 
-Please refer to the [Description](./?tab=description) tab of the Land Cover product for more details.
-
+For more details, see the [Quality tab](./?tab=quality).
 :::
 
 :::{dropdown} What Landsat satellites were used for generating the DEA Land Cover classification?
@@ -55,7 +51,6 @@ Please refer to the [Specifications](./?tab=specifications) and [Quality](./?tab
 Yes, the DEA Land Cover data is free of charge and released under the [Creative Commons Attribution 4.0 International Licence](https://creativecommons.org/licenses/by/4.0/). However, licenses for specific platforms where the Land Cover data can be accessed, as well as additional data available on those platforms, may vary.
 
 Please refer to the [Access](./?tab=access) and [Credits](./?tab=credits) tabs of the Land Cover product for more details.
-
 :::
 
 % :::{dropdown} QUESTION
