@@ -298,6 +298,8 @@ C3 exhibited better consistency in results against the validation points and the
 
 When C3 was compared directly with the output of C2 (Table 16), it showed good agreement for most of the Level 3 classes. Two notable exceptions were the Cultivated Terrestrial Vegetation (CTV) class and the Artificial Surface (AS) class. For CTV, the performance against the validation data did not suggest a substantial difference in overall accuracy between C2 and C3; thus, the misalignment observed in Table 16 could be due to possible inconsistencies in classification between the two collections, but not necessarily an improvement or degradation. The difference observed in the AS classification may be influenced by the increased accuracy of C3. 
 
+In the classification metrics tables below, two types of averages are used to summarise the performance across different classes: Macro-Average and Weighted-Average.
+
 The Macro-Average is the unweighted mean of each metric, calculated independently for all classes. Each class contributes equally, regardless of its frequency in the dataset. This average should be interpreted as 'unbiased' due to the highly skewed nature of the validation points. 
 
 The Weighted-Average, on the other hand, is the average of each metric weighted by the support ($TP + FN$; i.e., True Positives and False Negatives) for each class. The weight reflects the proportion of each class in the 'Truth', meaning that more frequent classes have a greater impact on the overall average.
