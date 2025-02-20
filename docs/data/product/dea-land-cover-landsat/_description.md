@@ -6,7 +6,7 @@ Land cover is the observed physical cover on the Earth's surface including trees
 
 DEA Land Cover provides annual land cover classifications for Australia using the Food and Agriculture Organisation's (FAO) Land Cover Classification System (LCCS) taxonomy Version 2 (Di Gregorio and Jansen, 1998; 2005).
 
-DEA Land Cover divides the landscape into six base land cover types, which are then further detailed through the addition of environmental descriptors (currenlty only accessible on the [DEA Maps](https://maps.dea.ga.gov.au)). The structure is as follows.
+DEA Land Cover divides the landscape into six base land cover types, which are then further detailed through the addition of environmental descriptors (currently only accessible on [DEA Maps](https://maps.dea.ga.gov.au)). The structure is as follows.
 
 * **Cultivated Terrestrial Vegetation**
     * Percentage of cover
