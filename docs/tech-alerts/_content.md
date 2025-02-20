@@ -8,9 +8,9 @@
 Learn more about the [DEA Summary Product Grid](/guides/reference/collection_3_summary_grid/).
 ::::
 
-## 20 Feb 2025: DEA data not up-to-date
+## 20 Feb 2025: DEA near-real-time data not up-to-date
 
-DEA ARD datasets are currently not up-to-date. We are investigating the cause of this issue. 
+DEA near-real-time ARD datasets are currently not up-to-date. We are investigating the cause of this issue. 
 
 ## 20 Feb 2025: DEA Sandbox unplanned outage (Resolved)
 
