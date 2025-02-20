@@ -12,7 +12,7 @@ Learn more about the [DEA Summary Product Grid](/guides/reference/collection_3_s
 
 DEA near-real-time ARD datasets are currently not up-to-date. We are investigating the cause of this issue. 
 
-## 20 Feb 2025: DEA Sandbox unplanned outage
+## 20 Feb 2025: DEA Sandbox unplanned outage (Resolved)
 
 The DEA Sandbox is currently unavailable. We are currently working to restore the service. 
 
