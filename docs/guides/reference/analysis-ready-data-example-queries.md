@@ -41,19 +41,19 @@ data = dc.load(
 
 The Data Cube query produces the following images:
 
-![AB 3](/_files/cmi/figure_AB_new_3.JPG)
+![AB 3](/_media/cmi/figure_AB_new_3.JPG)
 
 **Image A** is the false colour composite ['nbart_nir', 'nbart_red', 'nbart_green'] displayed as [Red, Green, Blue] from the **GA Landsat 5 TM NBART Collection 3 **product.
 
 **Image B** is the false colour composite ['nbart_nir', 'nbart_red', 'nbart_green'] displayed as [Red, Green, Blue] from the **GA Landsat 5 TM NBAR Collection 3 **product.
 
-![CD 2](/_files/cmi/figure_CD_new_2.JPG)
+![CD 2](/_media/cmi/figure_CD_new_2.JPG)
 
 **Image C** is another **GA Landsat 5 TM NBART Collection 3** false colour composite, but uses a different combination of spectral bands ['nbart_swir_2', 'nbart_nir', 'nbart_blue'] displayed as [Red, Green, Blue].
 
 **Image D** is the relative slope dataset.
 
-![E 2](/_files/cmi/figure_E_new_2.JPG)
+![E 2](/_media/cmi/figure_E_new_2.JPG)
 
 **Image E** is the Fmask classification result from the **GA Landsat 5 TM NBART Collection 3** product. The colours for the Fmask classification are displayed as:
 
@@ -63,7 +63,7 @@ The Data Cube query produces the following images:
 -   Cyan = snow
 -   Dark blue = water
 
-![FG 1](/_files/cmi/figure_FG_new_0.JPG)
+![FG 1](/_media/cmi/figure_FG_new_0.JPG)
 
 **Images F and G** represent the **GA Landsat 5TM NBART Collection 3** false colour composite, with pre- and post-application of the contiguity mask, respectively.
 
@@ -94,7 +94,7 @@ data = dc.load(
 
 The Data Cube query produces the following image, which is the false colour composite ['nbar_nir', 'nbar_red', 'nbar_green'] displayed as [Red, Green, Blue].
 
-![nbar new](/_files/cmi/nbar_new.JPG)
+![nbar new](/_media/cmi/nbar_new.JPG)
 
 ## Example 3 &ndash; NBART product
 
@@ -121,7 +121,7 @@ data = dc.load(
 
 The Data Cube query produces the following images:
 
-![nbart new](/_files/cmi/nbart_new.JPG)
+![nbart new](/_media/cmi/nbart_new.JPG)
 
 **Image A** is the false colour composite ['nbart_nir', 'nbart_red', 'nbart_green'] displayed as [Red, Green, Blue].
 
@@ -198,7 +198,7 @@ The fields are defined as follows:
 
 ### Flow process for determining the label (nrt, interim or final)
 
-![logic max](/_files/cmi/nrt-interim-final-logic.png)
+![logic max](/_media/cmi/nrt-interim-final-logic.png)
 
 ### Example files
 

@@ -244,7 +244,7 @@
 
    .. container::
 
-      .. image:: {{ page.data.header_image or "/_files/default/dea-earth-thumbnail.jpg" }}
+      .. image:: {{ page.data.header_image or "/_media/default/dea-earth-thumbnail.jpg" }}
          :class: no-gallery
 {% endset %}
 

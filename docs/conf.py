@@ -17,7 +17,7 @@ project = "DEA Knowledge Hub"
 copyright = f"{current_year}, Geoscience Australia"
 author = "Geoscience Australia"
 
-html_static_path = ["_static", "_files"]
+html_static_path = ["_static", "_media"]
 templates_path = ["_layouts", "_templates"]
 html_extra_path = ["robots.txt"]
 source_suffix = [".rst", ".md"]
@@ -51,7 +51,7 @@ exclude_patterns += utilities.optional_exclude_pattern("LOCAL_ENABLE_OPERATIONAL
 exclude_patterns += utilities.optional_exclude_pattern("LOCAL_ENABLE_TECH_ALERTS_CHANGELOG", "tech-alerts-changelog")
 
 html_title = "DEA Knowledge Hub"
-html_logo = "_files/logos/ga-dea-combined-logo.svg"
+html_logo = "_media/logos/ga-dea-combined-logo.svg"
 html_favicon = "_static/favicons/dea-favicon.ico"
 html_theme = 'pydata_sphinx_theme'
 language = "en"
@@ -101,7 +101,7 @@ if (
 sitemap_url_scheme = "{link}"
 
 ogp_site_url = "https://knowledge.dea.ga.gov.au/"
-ogp_image = "/_files/logos/dea-logo-inline.png"
+ogp_image = "/_media/logos/dea-logo-inline.png"
 
 sys.path.insert(0, os.path.abspath("./notebooks/Tools"))
 autosummary_generate = ["./notebooks/Tools/index.rst"]

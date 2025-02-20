@@ -31,7 +31,7 @@ Dashed shorelines have low certainty.
 
 Learn more about this layer in the [Specifications tab](./?tab=specifications).
 
-:::{figure} /_files/cmi/deacl_coastlines.*
+:::{figure} /_media/cmi/deacl_coastlines.*
 :alt: DEA CoastLines coastline layer
 
 Figure 1: Annual coastlines from DEA Coastlines visualised on the [interactive DEA Coastlines web map](https://maps.dea.ga.gov.au/story/DEACoastlines)
@@ -47,7 +47,7 @@ Rates of change points contains the following attribute columns that can be acce
 
 Learn more about this layer in the [Specifications tab](./?tab=specifications).
 
-:::{figure} /_files/cmi/deacl_statistics_2.*
+:::{figure} /_media/cmi/deacl_statistics_2.*
 :alt: DEA CoastLines rates of change statistics layer
 
 Figure 2: Rates of change points from DEA Coastlines visualised on the [interactive DEA Coastlines web map](https://maps.dea.ga.gov.au/story/DEACoastlines)
@@ -59,7 +59,7 @@ Three points layers summarising coastal change within moving 1 km, 5 km and 10 k
 
 Learn more about this layer in the [Specifications tab](./?tab=specifications).
 
-:::{figure} /_files/cmi/deacl_summary.*
+:::{figure} /_media/cmi/deacl_summary.*
 :alt: DEA CoastLines summary layer
 
 Figure 3: Coastal change hotspots from DEA Coastlines visualised on the [interactive DEA Coastlines web map](https://maps.dea.ga.gov.au/story/DEACoastlines)

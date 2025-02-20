@@ -28,7 +28,7 @@
 
    .. container::
 
-      .. image:: {{ report.image or "/_files/default/dea-earth-thumbnail.jpg" }}
+      .. image:: {{ report.image or "/_media/default/dea-earth-thumbnail.jpg" }}
          :class: no-gallery
          :target: {{ report.link }}
 {% endfor %}

@@ -5,7 +5,7 @@
 
 title: DEA Surface Reflectance Geomedian (Landsat)
 long_title: Surface Reflectance 25m Geomedian 2.0.0
-header_image: /_files/cmi/geomedian_banner.jpg
+header_image: /_media/cmi/geomedian_banner.jpg
 version: 2.0.0
 is_latest_version: false
 latest_version_link: /data/product/dea-geometric-median-and-median-absolute-deviation-landsat/

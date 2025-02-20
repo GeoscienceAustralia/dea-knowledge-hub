@@ -61,7 +61,7 @@ files required to set up Datacube.
 Type `gdata/v10` into the :guilabel:`Storage` box, then use the dropdown to select other
 projects containing data you wish to access. See :ref:`nci_data_access`.
 
-.. figure:: /_files/nci/are_highlight_v10_storage_setting.png
+.. figure:: /_media/nci/are_highlight_v10_storage_setting.png
 
 **DEA Environment**
 

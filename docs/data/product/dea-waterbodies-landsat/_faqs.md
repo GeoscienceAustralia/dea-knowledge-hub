@@ -118,7 +118,7 @@ Some of the waterbody polygons contain holes or are quite irregularly shaped. Th
 
 The **DEA Water Observations** classifier that determines where water is observed does not work well where water is combined with vegetation. If there is vegetation obscuring the water (like a tree leaning across a river or a wetland), the classifier will not see this as water and the resulting mapped waterbody may be patchy. For example, water under mangroves. 
 
-:::{figure} /_files/dea-waterbodies/DEA_Waterbodies_v3.0_mangroves_faq.jpg
+:::{figure} /_media/dea-waterbodies/DEA_Waterbodies_v3.0_mangroves_faq.jpg
 :alt: Screenshot of DEA Waterbodies showing marked line boundaries of blue water shape
 
 Mangroves at the mouth of Fitzroy River near Rockhampton as mapped within DEA Waterbodies.

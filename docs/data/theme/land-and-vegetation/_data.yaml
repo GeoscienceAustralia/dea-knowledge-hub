@@ -4,13 +4,13 @@ description: See how the land surface and vegetation of Australia have changed o
 cards:
   - name: DEA Land Cover
     link: /data/product/dea-land-cover-landsat/
-    image: /_files/cmi/DEA_Land_Cover_1_0_0_Lvl4_2015.jpg
+    image: /_media/cmi/DEA_Land_Cover_1_0_0_Lvl4_2015.jpg
   - name: DEA Fractional Cover
     link: /data/category/dea-fractional-cover/
-    image: /_files/cmi/FractionalCover1.jpg
+    image: /_media/cmi/FractionalCover1.jpg
   - name: DEA Mangroves
     link: /data/product/dea-mangrove-canopy-cover-landsat/
-    image: /_files/cmi/DEA-mangroves.jpg
+    image: /_media/cmi/DEA-mangroves.jpg
   - name: DEA Tasseled Cap Percentiles
     link: /data/product/dea-tasseled-cap-percentiles-landsat/
-    image: /_files/cmi/TCWpercentiles.png
+    image: /_media/cmi/TCWpercentiles.png

@@ -4,7 +4,7 @@
 
 short_name: DEA Intertidal Extents (Landsat)
 full_technical_name: Intertidal Extents Model 25m
-header_image: /_files/cmi/intertidal_extents.png
+header_image: /_media/cmi/intertidal_extents.png
 
 version_number: 2.0.0
 is_latest_version: true

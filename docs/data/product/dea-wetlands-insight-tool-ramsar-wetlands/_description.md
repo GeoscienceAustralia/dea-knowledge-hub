@@ -8,7 +8,7 @@ The Ramsar Wetlands of Australia Dataset is available under a [Creative Commons 
 
 The Wetlands Insight Tool (Ramsar Wetlands) summarises how the amount of water, green vegetation, dry vegetation and bare soil varies over time within each wetland boundary. It provides the user with the ability to compare how the wetland is behaving now with how it has behaved in the past.  This allows users to identify how changes in water availability have affected the wetland. It achieves this by presenting a combined view of Water Observations from Space (DEA Water Observations), Tasseled Cap Wetness (DEA Wetness Percentiles) and Fractional Cover (DEA Fractional Cover) measurements from the Landsat series of satellites, summarised as a stacked line plot to show how that wetland has changed over time. 
 
-![Wetlands Insight Tool plot for Narran Lakes Nature Reserve, New South Wales, showing variations in open water, wet, green vegetation, dry vegetation and bare soil from 1987 to 2021](/_files/cmi/NarranLakesNatureReserveNSWWIT.png)
+![Wetlands Insight Tool plot for Narran Lakes Nature Reserve, New South Wales, showing variations in open water, wet, green vegetation, dry vegetation and bare soil from 1987 to 2021](/_media/cmi/NarranLakesNatureReserveNSWWIT.png)
 
 % ## Data description
 
@@ -28,7 +28,7 @@ Care should be used when interpreting Wetlands Insight Tool (Ramsar Wetlands) re
 
 Every pixel within a wetland polygon is evaluated using this decision tree at every time step, and the results are tabulated to create the input data to the stacked line plot for that wetland. The image shows a flow chart where a pixel is checked to see if it is cloudy or nodata, classified by WOfS as water, the Tasseled Cap Wetness value is greater than negative 350. if yes the pixel is classified as cloudy or notdata, then open water, then wet, and if no then the Fractional Cover of Vegetation percentage is retrieved for the pixel and the percentage of green vegetation, dry vegetation and bare soil is returned.
 
-![WIT flow chart](/_files/cmi/WITflowChartv2_950x615.PNG)
+![WIT flow chart](/_media/cmi/WITflowChartv2_950x615.PNG)
 
 The code base used to generate the Ramsar Wetlands Insight Tool results is available at [https://github.com/GeoscienceAustralia/wit\_tooling](https://github.com/GeoscienceAustralia/wit_tooling)
 

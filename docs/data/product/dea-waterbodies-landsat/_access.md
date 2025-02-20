@@ -14,7 +14,7 @@ Or, you can manually add the DEA Waterbodies layer to DEA Maps:
 1. Click **Add to the map**, or the **+** symbol to add the data to the map.
 1. You will now see the waterbodies overlaid on the map.
 
-![DEA Maps with DEA Waterbodies loaded](/_files/dea-waterbodies/DEA_Waterbodies_v3.0_overview.jpg)
+![DEA Maps with DEA Waterbodies loaded](/_media/dea-waterbodies/DEA_Waterbodies_v3.0_overview.jpg)
 
 :::
 
@@ -29,7 +29,7 @@ On the map, you can click any identified waterbody to view more information abou
     * **Pc Wet** &mdash; The ‘percentage of total surface area observed as wet’. This is the percentage of the total surface area of the waterbody that has been classified as ‘wet’ for each time step. (Note that this is not a volume.)
     * **Px Wet** &mdash; The ‘Wet Pixel Count’. This is the total number of pixels that have been classified as ‘wet’ for each time step. This value is useful if you need to calculate an area of wet pixels, since each pixel is 30 m × 30 m.
 
-![DEA Maps loaded with DEA Waterbodies and showing Feature Information](/_files/dea-waterbodies/DEA_Waterbodies_v3.0_user_guide.jpg)
+![DEA Maps loaded with DEA Waterbodies and showing Feature Information](/_media/dea-waterbodies/DEA_Waterbodies_v3.0_user_guide.jpg)
 
 :::
 
@@ -39,7 +39,7 @@ On the map, you can click any identified waterbody to view more information abou
 1. Follow the same steps to add another waterbody to the time series chart.
 1. It’s possible to compare even more waterbodies on this chart!
 
-![DEA Maps loaded with DEA Waterbodies and comparing two waterbodies](/_files/dea-waterbodies/DEA_Waterbodies_v3.0_user_guide_compare.jpg)
+![DEA Maps loaded with DEA Waterbodies and comparing two waterbodies](/_media/dea-waterbodies/DEA_Waterbodies_v3.0_user_guide_compare.jpg)
 
 :::
 

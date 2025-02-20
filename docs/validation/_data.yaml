@@ -4,13 +4,13 @@ description: How well does DEA's satellite-derived Analysis Ready Data compare w
 cards:
   - name: Site reports
     link: ./site-report/
-    image: /_files/validation/validation-drone-thumbnail.jpg
+    image: /_media/validation/validation-drone-thumbnail.jpg
   - name: Quarterly reports
     link: ./quarterly-report/
-    image: /_files/validation/validation-team-sensor-thumbnail.jpg
+    image: /_media/validation/validation-team-sensor-thumbnail.jpg
   - name: Yearly reports
     link: ./yearly-report/
-    image: /_files/validation/validation-drone-flying-thumbnail.png
+    image: /_media/validation/validation-drone-flying-thumbnail.png
   - name: Learn more
     link: /guides/setup/validation/
-    image: /_files/validation/user-guides-thumbnail-2.jpg
+    image: /_media/validation/user-guides-thumbnail-2.jpg

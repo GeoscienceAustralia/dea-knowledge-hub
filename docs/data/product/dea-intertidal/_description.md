@@ -83,7 +83,7 @@ ga_s2ls_intertidal_cyear_3_x082y139_2022--P1Y_final_elevation.tif
 
 DEA Intertidal Elevation (Figure 1) provides elevation in metre units relative to modelled Mean Sea Level for each pixel of the satellite-observed exposed intertidal zone across the Australian coastline. The elevation model is generated from DEA Landsat and Sentinel-2 surface reflectance data from each 3-year composite period, utilising a pixel-based approach based on [Ensemble Tidal Modelling](#ensemble-tidal-modelling). For every pixel, the time series of surface reflectance data is converted to the Normalised Difference Water Index (NDWI) and each observation tagged with the tidal height modelled at the time of acquisition by the satellite. A rolling median is applied from low to high tide to reduce noise (such as white water, sunglint, and non-tidal water level variability), then analysed to identify the tide height at which the pixel transitions from dry to wet. This tide height represents the elevation of the pixel.
 
-:::{figure} /_files/dea-intertidal/DEAIntertidal_layer_elevation.*
+:::{figure} /_media/dea-intertidal/DEAIntertidal_layer_elevation.*
 :alt: DEA Intertidal Elevation layer
 
 Figure 1 &mdash; DEA Intertidal Elevation, with low elevation values shown in dark colours and high elevation shown in light colours.
@@ -104,7 +104,7 @@ Figure 1 &mdash; DEA Intertidal Elevation, with low elevation values shown in da
 
 DEA Intertidal Elevation Uncertainty (Figure 2) provides a measure of the quality of each modelled elevation value in metre units. Uncertainty is calculated by assessing how cleanly the modelled elevation separates satellite observations into dry and wet observations. This is achieved by identifying satellite observations that were misclassified by the modelled elevation (for instance, pixels that were observed as wet at tide heights lower than the modelled elevation, or alternately, observed as dry at higher tide heights). The spread of tide heights from these misclassified observations is summarised using a robust Median Absolute Deviation (MAD) statistic, and reported as $0.5 \times MAD$ to represent one-sided uncertainty bounds (i.e. ± uncertainty on either side of the pixel's elevation). Common causes of high elevation uncertainty can be poor tidal model performance, rapidly changing intertidal morphology, or noisy underlying satellite data.
 
-:::{figure} /_files/dea-intertidal/DEAIntertidal_layer_elevation_uncertainty.*
+:::{figure} /_media/dea-intertidal/DEAIntertidal_layer_elevation_uncertainty.*
 :alt: DEA Intertidal Elevation Uncertainty layer
 
 Figure 2 &mdash; DEA Intertidal Elevation Uncertainty, with high uncertainty shown in light colours.
@@ -127,7 +127,7 @@ Figure 2 &mdash; DEA Intertidal Elevation Uncertainty, with high uncertainty sho
 
 DEA Intertidal Exposure (Figure 3) models the percentage of time that any intertidal pixel of known elevation is exposed from tidal inundation. Exposure is calculated by comparing the pixel elevation back against a high temporal resolution model of tide heights for that location, based on the [Ensemble Tidal Modelling](#ensemble-tidal-modelling) approach. Exposure percentage is calculated as the fraction of exposed observations relative to the total number of observations generated in the high temporal resolution tidal model for the 3-year product epoch.
 
-:::{figure} /_files/dea-intertidal/DEAIntertidal_layer_exposure.*
+:::{figure} /_media/dea-intertidal/DEAIntertidal_layer_exposure.*
 :alt: DEA Intertidal Exposure layer
 
 Figure 3 &mdash; DEA Intertidal Exposure, with low exposure values (i.e. rarely exposed pixels) shown in dark colours.
@@ -186,7 +186,7 @@ The low tide offset dataset quantifies the proportion of the lowest tides not 
 
 The high tide offset dataset quantifies the proportion of the highest tides not observed at any time during the analysis epoch by satellites at each pixel (as a percentage of the astronomical tide range). It is calculated by measuring the offset between the highest astronomical tide (HAT) and the highest satellite-observed tide (HOT; see Figure 4c). A high value indicates that DEA Intertidal datasets may not map the highest regions of the intertidal zone.
 
-:::{figure} /_files/dea-intertidal/tidalattributes.*
+:::{figure} /_media/dea-intertidal/tidalattributes.*
 :alt: Tidal Attributes Description Figure
 
 Figure 4 &mdash; Illustration of the concept of observed tide heights (dots corresponding to satellite acquisition time) compared to the full modelled tidal range (blue lines). Descriptions of Spread (a), Lowtide offset (b), and Hightide offset (c) are detailed in the text.
@@ -303,7 +303,7 @@ The tidal models listed below were implemented within the DEA environment using 
 
 The ensemble process utilises ancillary data (in this case, the correlation of the NDWI values to each individual tidal model output) to weight and selects the top 3 tidal models for a given location. A single ensemble tidal output from these 3 optimal models is then generated for use in all downstream product workflows.   
 
-:::{figure} /_files/dea-intertidal/ensembletides.*
+:::{figure} /_media/dea-intertidal/ensembletides.*
 :alt: Ensemble tide validation Figure
 :::
 

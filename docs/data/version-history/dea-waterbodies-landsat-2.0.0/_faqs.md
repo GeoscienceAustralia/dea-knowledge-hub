@@ -105,7 +105,7 @@ Some of the waterbody polygons contain holes, or are quite irregularly shaped. T
 
 Additionally the **DEA Water Observations** classifier that determines where water is observed does not work well where water is combined with vegetation. If there is vegetation obscuring the water (like a tree leaning across a river or a wetland), the classifier will not see this as water and the resulting mapped waterbody may be patchy.
 
-:::{figure} /_files/dea-waterbodies/dea-waterbodies-kati-thanda-lake-eyre.png
+:::{figure} /_media/dea-waterbodies/dea-waterbodies-kati-thanda-lake-eyre.png
 :alt: Screenshot of DEA Waterbodies website showing marked line boundaries of blue water shape
 
 Kati Thanda–Lake Eyre as mapped within DEA Waterbodies

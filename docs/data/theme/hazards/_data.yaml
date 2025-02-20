@@ -4,7 +4,7 @@ description: Gain insight into the behaviour and history of fires across Austral
 cards:
   - name: DEA Hotspots
     link: /data/product/dea-hotspots/
-    image: /_files/cmi/hotspots.jpg
+    image: /_media/cmi/hotspots.jpg
   - name: DEA Burnt Area Characteristic Layers Sentinel-2 Near-Real Time
     link: /data/product/dea-burnt-area-characteristic-layers-sentinel-2-near-real-time/
-    image: /_files/cmi/ga_s2_ba_provisional_3_interim_thumbnail.jpg
+    image: /_media/cmi/ga_s2_ba_provisional_3_interim_thumbnail.jpg

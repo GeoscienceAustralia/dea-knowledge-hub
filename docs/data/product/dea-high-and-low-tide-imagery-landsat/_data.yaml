@@ -4,7 +4,7 @@
 
 short_name: DEA High and Low Tide Imagery (Landsat)
 full_technical_name: "High Tide and Low Tide Composites 25m 2.0.0 "
-header_image: /_files/cmi/HLTCv2.png
+header_image: /_media/cmi/HLTCv2.png
 
 version_number: 2.0.0
 is_latest_version: true

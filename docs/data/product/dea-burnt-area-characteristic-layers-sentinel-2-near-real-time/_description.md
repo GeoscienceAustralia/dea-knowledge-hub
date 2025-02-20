@@ -58,7 +58,7 @@ $$
 
 The delta NBR layer displays values between -1 and +1, with positive value being more indicative that an area has been burnt, colour bar provided below.
 
-![colourbar ranging from -1 to +1](/_files/dea-burnt-area/legend_dnbr.png)
+![colourbar ranging from -1 to +1](/_media/dea-burnt-area/legend_dnbr.png)
 
 ### Delta Bare Soil Index ($\Delta$BSI) 
 
@@ -78,7 +78,7 @@ $$
 
 Delta BSI is multiplied by negative 1 in order to reverse the scaling so that it can be presented the same way as the other delta indexes, which all have positive values for areas that shows characteristics of being burnt. The $\Delta$BSI layer displays values between -1 and +1, with a positive value being more indicative that an area has increased exposure of bare soil. Colour bar provided, below.
 
-![Colourbar for dBSI product between -1 to +1](/_files/dea-burnt-area/legend_dbsi.png)
+![Colourbar for dBSI product between -1 to +1](/_media/dea-burnt-area/legend_dbsi.png)
 
 ### Delta Normalised Difference Vegetation Index ($\Delta$NDVI) 
 
@@ -98,7 +98,7 @@ $$
 
 The $\Delta$NDVI layer displays values between -1 and +1, with positive values being more indicative that green vegetation in an area has decreased, and therefore showing the characteristics of being burnt.
 
-![Colourbar for dNDVI product between -1 to +1](/_files/dea-burnt-area/legend_dndvi.png)
+![Colourbar for dNDVI product between -1 to +1](/_media/dea-burnt-area/legend_dndvi.png)
 
 ## Lineage
 

@@ -10,7 +10,7 @@ Reprocessing for the [Sentinel-2 contiguity fix](https://communication.ga.gov.au
 </figure>
 
 ```{eval-rst}
-:download:`Download the list of affected scenes (CSV) </_files/reprocessing/s2b.csv>`
+:download:`Download the list of affected scenes (CSV) </_media/reprocessing/s2b.csv>`
 
 ```
 

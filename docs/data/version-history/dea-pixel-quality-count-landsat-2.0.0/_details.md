@@ -64,7 +64,7 @@ This product will allow users to evaluate how mission factors (such as scan-line
 
 The darkest blue tones indicate the lowest observation counts, whereas the darkest red tones indicate the highest observation counts.  Roebuck Bay in Western Australia (shown below) falls within the sidelap between adjacent paths, and is therefore observed twice as frequently.  However errors of commission with the cloud masks and sensor saturation over bright targets reduce the number of 'clear' observations over some coastal cover types.  The 'venetian' blinds artefacts exist because the Landsat 7 scan-line-corrector (SLC) errors are not randomly distributed, so there are areas with higher and lower frequency of SLC gaps.
 
-![Clear observation count for Roebuck Bay in Western Australia](/_files/cmi/Observation_density.png)
+![Clear observation count for Roebuck Bay in Western Australia](/_media/cmi/Observation_density.png)
 
 % ## Lineage
 

@@ -24,7 +24,7 @@ To evaluate the accuracy of DEA Intertidal Elevation, we calculated RMSE, MAE, c
 | Slope       | 0.44       | 0.80      | **1.03**   |
 :::
 
-:::{figure} /_files/dea-intertidal/tiderangevalidation.*
+:::{figure} /_media/dea-intertidal/tiderangevalidation.*
 :alt: Validation at different tidal ranges
 
 Figure 6 &mdash; DEA Intertidal Elevation validation heatmaps comparing performance across microtidal, mesotidal and macrotidal coastlines. 

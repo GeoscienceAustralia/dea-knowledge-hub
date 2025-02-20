@@ -5,7 +5,7 @@
 
 title: DEA Fractional Cover Percentiles (Landsat)
 long_title: Fractional Cover 25m Percentiles 2.2.1
-header_image: /_files/cmi/FractionalCover1_0.jpg
+header_image: /_media/cmi/FractionalCover1_0.jpg
 version: 2.2.1
 is_latest_version: false
 latest_version_link: /data/product/dea-fractional-cover-percentiles-landsat/

@@ -78,7 +78,7 @@
 
    .. container::
 
-      .. image:: {{ Data.header_image or "/_files/default/dea-earth-thumbnail.jpg" }}
+      .. image:: {{ Data.header_image or "/_media/default/dea-earth-thumbnail.jpg" }}
          :class: no-gallery
 
 .. container::

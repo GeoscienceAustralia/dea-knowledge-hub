@@ -42,7 +42,7 @@ To download the data from the ELVIS (Elevation Information System) platform, fol
 1. Enter your industry and email address, then click **Order dataset**.
 1. Your data will be emailed to you as a zipped folder containing DEA Intertidal Elevation and Elevation Uncertainty GeoTIFF rasters.
 
-:::{figure} /_files/dea-intertidal/DEAIntertidal_ELVIS_access.*
+:::{figure} /_media/dea-intertidal/DEAIntertidal_ELVIS_access.*
 :alt: Accessing DEA Intertidal on ELVIS
 
 Accessing DEA Intertidal Elevation data on ELVIS
