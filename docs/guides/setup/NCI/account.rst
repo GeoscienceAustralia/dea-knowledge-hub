@@ -5,7 +5,7 @@
  Account Registration
 ======================
 
-.. image:: /_files/nci/nci_user_registration.png
+.. image:: /_media/nci/nci_user_registration.png
    :alt: description
    :align: right
    :scale: 20%

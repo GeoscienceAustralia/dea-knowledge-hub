@@ -5,7 +5,7 @@
 
 title: GA Multi-scale Topographic Position
 long_title: Geoscience Australia Multi-scale Topographic Position Image of Australia
-header_image: /_files/external-data/ga_mtpi_thumbnail.jpg
+header_image: /_media/external-data/ga_mtpi_thumbnail.jpg
 product_type: null
 spatial_data_type: Raster
 time_span:

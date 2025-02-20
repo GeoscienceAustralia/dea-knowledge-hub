@@ -4,10 +4,10 @@ description: Analyse inland water across Australia, including changes in water e
 cards:
   - name: DEA Wetlands Insight Tool
     link: /data/category/dea-wetlands-insight-tool/
-    image: /_files/cmi/PlaceholderWIT.PNG
+    image: /_media/cmi/PlaceholderWIT.PNG
   - name: DEA Water Observations
     link: /data/category/dea-water-observations/
-    image: /_files/cmi/WOfS-Burketown-Normanton-QLD.png
+    image: /_media/cmi/WOfS-Burketown-Normanton-QLD.png
   - name: DEA Waterbodies
     link: /data/product/dea-waterbodies-landsat/
-    image: /_files/cmi/waterbodies.jpg
+    image: /_media/cmi/waterbodies.jpg

@@ -4,7 +4,7 @@ description: DEA provides access to certain external data products to assist wit
 cards:
   - name: Elevation and bathymetry
     link: /data/category/elevation-and-bathymetry/
-    image: /_files/external-data/ga_srtm_thumbnail.jpg
+    image: /_media/external-data/ga_srtm_thumbnail.jpg
   - name: Land use
     link: /data/category/land-use/
-    image: /_files/external-data/abares_clum_2023.thumbnail.jpg
+    image: /_media/external-data/abares_clum_2023.thumbnail.jpg

@@ -25,13 +25,13 @@ Surface reflectance products over Australian offshore territories differ in qual
 
 The full list of locations, including the additional locations, is shown in the following maps and table.
 
-:::{figure} /_files/ard-expanded-processing-extent/extent_ls.png
+:::{figure} /_media/ard-expanded-processing-extent/extent_ls.png
 :alt: A map of Australia and surrounding areas annotated with rectangles to indicate the locations of additional Landsat scenes.
 
 The locations of the Landsat scenes.
 :::
 
-:::{figure} /_files/ard-expanded-processing-extent/extent_s2.png
+:::{figure} /_media/ard-expanded-processing-extent/extent_s2.png
 :alt: A map of Australia and surrounding areas annotated with rectangles to indicate the locations of additional Sentinel-2 scenes.
 
 The locations of the Sentinel-2 tiles.
@@ -102,7 +102,7 @@ This update features the addition of Landsat scenes and Sentinel 2 tiles over is
 
 The following map represents the density of USGS Level 1 L1TP scenes over the extended area. These scenes are used as input for Landsat ARD generation and represent higher geometric accuracy as ground control points and a digital elevation model is incorporated into ortho-processing. Locations with L1TP Level 1 inputs are scenes that contain islands, land or reef features that can be used as a control. Locations entirely over shallow Ocean have been added for bathymetric purposes and have low geometric accuracy.
 
-:::{figure} /_files/ard-expanded-processing-extent/LS5_7_8_9_L1TP_Density_and_Coverage.png
+:::{figure} /_media/ard-expanded-processing-extent/LS5_7_8_9_L1TP_Density_and_Coverage.png
 :alt: A map of Australia and surrounding areas annotated with rectangles representing density and coverage.
 
 Landsat 5, 7, 8, and 9 L1TP Density and Coverage

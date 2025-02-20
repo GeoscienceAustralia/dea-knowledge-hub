@@ -66,7 +66,7 @@ in the product metadata and as part of the filename, enabling users to choose an
 maturity level to suit their requirements. Datasets with lower maturity level will be replaced by more 
 mature dataset versions (interim and final) as they are generated. 
 
-![dataset_maturity_flowchart](/_files/reference/dataset_maturity_flowchart.drawio.svg)
+![dataset_maturity_flowchart](/_media/reference/dataset_maturity_flowchart.drawio.svg)
 
 **Tip:** to view larger, right-click then select **open image in new tab**
 

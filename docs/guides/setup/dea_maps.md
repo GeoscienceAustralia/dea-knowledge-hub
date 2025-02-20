@@ -23,7 +23,7 @@ Let's add a dataset to the map so that we can view the data. Here's an [example 
 1. In the data catalogue, navigate through the folders to find the dataset that you want to access then add it to the map. E.g. click **Baseline satellite data** &gt; **DEA Surface Reflectance (Sentinel-2)** &gt; **DEA Surface Reflectance (Sentinel-2A MSI)** &gt; **Add to the map**.
 1. The dataset will be added as a card to the left sidebar and you may now see data overlaid on the map. But **if you don't see any data or data doesn't cover a location**, continue to the next section: **Filter by location**.
 
-    ![Adding data](/_files/dea-maps/dea_maps_5.jpg)
+    ![Adding data](/_media/dea-maps/dea_maps_5.jpg)
 
 <span id="filter-by-location"></span>
 
@@ -38,7 +38,7 @@ After adding data to the map, if you don't see any data or the data doesn't cove
 1. Data should now be overlaid on that location. The left sidebar will indicate that the filter has been applied.
 1. Next, you can either select **Remove filter** or **New location**.
 
-    ![Filtering](/_files/dea-maps/dea_maps_6.jpg)
+    ![Filtering](/_media/dea-maps/dea_maps_6.jpg)
 
 ## Share a URL and save your map
 
@@ -48,7 +48,7 @@ Once you've created a map by adding datasets, adjusting map settings, and zoomin
 1. Click **Copy** to copy this custom URL to your clipboard.
 1. Anyone who opens this URL will see your map exactly as you configured it. You can send this URL to others, link to it from a public website, or bookmark it for later.
 
-![Share URL](/_files/dea-maps/share-url.jpg)
+![Share URL](/_media/dea-maps/share-url.jpg)
 
 ## Switch styles (bands and layers)
 
@@ -56,13 +56,13 @@ Most datasets contain multiple 'bands' or 'layers' of data that reveal different
 
 For example, the 'DEA Surface Reflectance (Sentinel-2)' dataset can be switched to the 'False colour - Green, SWIR, NIR' style. This style uses wavelengths of light beyond the visible spectrum ('near infrared' and 'short-wave infrared') to highlight waterbodies, vegetation, and other features more distinctly.
 
-![False colour](/_files/dea-maps/dea_maps_styles_2.jpg)
+![False colour](/_media/dea-maps/dea_maps_styles_2.jpg)
 
 ## Compare side-by-side
 
 There is a **Compare** feature that lets you view two different map configurations side-by-side. This allows you to compare two different datasets or the same dataset at two different times. Here's an [example map of DEA High Tide Imagery versus DEA Low Tide Imagery](https://maps.dea.ga.gov.au/#share=s-7YeWZKqWkF0Ctv5Av8RkHSWeNzQ).
 
-1. In the left sidebar, click the ![Button](/_files/dea-maps/show-more-actions-button.jpg) button ('Show more actions') on a dataset that you have added to the map &gt; click **Compare**.
+1. In the left sidebar, click the ![Button](/_media/dea-maps/show-more-actions-button.jpg) button ('Show more actions') on a dataset that you have added to the map &gt; click **Compare**.
 1. The map will now be split into two halves. In the sidebar, the dataset's card will be split into two separate cards: one labelled 'Left' and the other 'Right'.
 1. You can configure each side of the map independently. E.g. you can change the 'Styles' value on the right side.
 1. Each dataset can be assigned to either the **Left** or **Right** side or **Both** by selecting the relevant option in the left sidebar.
@@ -71,13 +71,13 @@ There is a **Compare** feature that lets you view two different map configuratio
 
 Note that you can share a URL of your comparison by using the **Share / Print** feature.
 
-![Screen splitter](/_files/dea-maps/dea_maps_compare_2.jpg)
+![Screen splitter](/_media/dea-maps/dea_maps_compare_2.jpg)
 
 ## Difference tool
 
 The **Difference** tool allows you to visualise the changes in a dataset over time. Here is an [example map showing locations that have gotten wetter or dryer over time](https://maps.dea.ga.gov.au/#share=s-oAolm6NEW2vSCtXGJMUmPnIAUx2).
 
-1. In the left sidebar, click the ![Button](/_files/dea-maps/show-more-actions-button.jpg) button ('Show more actions') on a dataset that you have added to the map &gt; click **Difference**.
+1. In the left sidebar, click the ![Button](/_media/dea-maps/show-more-actions-button.jpg) button ('Show more actions') on a dataset that you have added to the map &gt; click **Difference**.
 1. The difference tool will appear, replacing the left sidebar.
 1. Select a location on the map to analyse by clicking anywhere on the map.
 1. Under **Data Comparison A** and **Date Comparison B**, choose the two dates to compare. For best results, choose dates that don't have cloud cover.
@@ -86,17 +86,17 @@ The **Difference** tool allows you to visualise the changes in a dataset over ti
 1. The difference will be shown on the map as a new dataset. For instance, the 'Modified Normalised Difference Water Index - Green, SWIR' shows locations that have gotten wetter over time in blue while locations that have gotten dryer are red.
 1. To reopen the left sidebar, click **Show workbench**, and to close the difference tool, click **Exit**. You'll notice that in the left sidebar, the difference has been added as a dataset.
 
-![Difference](/_files/dea-maps/dea_maps_diff_2.jpg)
+![Difference](/_media/dea-maps/dea_maps_diff_2.jpg)
 
 ## Export data as high-resolution TIFF
 
 It's possible to export small areas of DEA data in the high-resolution TIFF image format. This exported data can used in GIS applications like QGIS and ArcGIS. (But for exporting larger volumes of data, you can use the [DEA Sandbox](/guides/setup/Sandbox/sandbox/) or [NCI](/guides/setup/NCI/README/) environments or download directly from the [DEA Public Data S3 Bucket](https://data.dea.ga.gov.au/).)
 
-1. In the left sidebar, click the ![Button](/_files/dea-maps/show-more-actions-button.jpg) button ('Show more actions') on a dataset that you have added to the map &gt; click **Export**.
+1. In the left sidebar, click the ![Button](/_media/dea-maps/show-more-actions-button.jpg) button ('Show more actions') on a dataset that you have added to the map &gt; click **Export**.
 1. Click two locations on the map to draw a rectangle.
 1. Click **Download extent** then wait for the TIFF file to be downloaded to your computer. (If the export fails, try zooming in and drawing a rectangle that covers a smaller land area.)
 
-![Export](/_files/dea-maps/dea_maps_export_2.jpg)
+![Export](/_media/dea-maps/dea_maps_export_2.jpg)
 
 ## Navigate time and location
 
@@ -106,7 +106,7 @@ You can navigate through datasets across a range of times and locations.
 * Zoom in and out of the map by scrolling the mouse, or use the "**+**" and "**-**" buttons.
 * Move to a different location by dragging with the mouse, or use the **Search for locations** bar. E.g. search for 'Lake Eyre', then click 'Lake Eyre, SA' to jump straight to this location.
 
-![Changing time](/_files/dea-maps/dea_maps_7.jpg)
+![Changing time](/_media/dea-maps/dea_maps_7.jpg)
 
 ## Watercourse Discharge
 
@@ -115,15 +115,15 @@ The [Bureau of Meteorology](http://www.bom.gov.au/) provides water discharge dat
 1. Add a dataset to your map, e.g. 'DEA Surface Reflectance (Sentinel-2A MSI)'.
 1. Add the Watercourse Discharge dataset to your map: **Explore map data** &gt; **Other** &gt; **Water Regulations Data (BoM)** &gt; **Hydrologic Reference Stations** &gt; **Watercourse Discharge** &gt; **Add to the map**. The Hydrological Reference Stations will be plotted on the map. These are the locations where watercourse discharge is measured by the Bureau of Meteorology.
 
-    ![Watercourse Discharge Tool map](/_files/dea-maps/dea_maps_wdt_2.jpg)
+    ![Watercourse Discharge Tool map](/_media/dea-maps/dea_maps_wdt_2.jpg)
 
 1. Zoom in and click on one of these stations. A 'Feature Information' popup will provide details about the station.
 1. In the popup, click **Show &lt;dataset&gt; at this location**, e.g. 'Show DEA Surface Reflectance (Sentinel-2A MSI) at this location'.
 1. In the popup, click **Expand** to expand the hydrograph of this particular station, then click **&times;** to close the popup. You can hover your mouse over the hydrograph to view the average watercourse discharge value for each date.
-1. To add your chosen dataset to the hydrograph, in the left sidebar, on the dataset's card, click the ![Button](/_files/dea-maps/show-available-times-on-chart-button.jpg) button ('Show available times on chart').
+1. To add your chosen dataset to the hydrograph, in the left sidebar, on the dataset's card, click the ![Button](/_media/dea-maps/show-available-times-on-chart-button.jpg) button ('Show available times on chart').
 1. Each capture in your chosen dataset will display as a dot on the hydrograph. To view the dots more clearly, you can zoom in on the hydrograph by scrolling your mouse. Click on a dot to jump to the particular time and location of the capture on the map.
 
-    ![Watercourse Discharge Tool hydrograph](/_files/dea-maps/dea_maps_wdt_5.jpg)
+    ![Watercourse Discharge Tool hydrograph](/_media/dea-maps/dea_maps_wdt_5.jpg)
 
 ## Additional features
 

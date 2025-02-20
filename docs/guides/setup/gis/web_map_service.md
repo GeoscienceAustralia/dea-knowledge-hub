@@ -20,11 +20,11 @@ Although this tutorial focuses on QGIS, the same process can be used to connect 
 2. On the Menu Bar click on **Layer**. 
 3. A sub-menu tab will show below Layer; click on **Add Layer**, choose **Add WMS/WMTS Layer**.
 
-![QGIS - Add Layer](/_files/web-services/ows_tutorial_1.png)
+![QGIS - Add Layer](/_media/web-services/ows_tutorial_1.png)
 
 4. A dialogue will open as shown below. Click on the **New** button.
 
-![QGIS - New Layer](/_files/web-services/ows_tutorial_2.png)
+![QGIS - New Layer](/_media/web-services/ows_tutorial_2.png)
 
 5. A dialogue will open, as shown below: Provide the following details, these can be found at the URL [https://ows.dea.ga.gov.au/](https://ows.dea.ga.gov.au/).
 
@@ -32,13 +32,13 @@ Although this tutorial focuses on QGIS, the same process can be used to connect 
 
 `URL:  https://ows.dea.ga.gov.au/?service=WMS&version=1.3.0&request=GetCapabilities`
 
-![QGIS - Create New Connection](/_files/web-services/ows_tutorial_3.png)
+![QGIS - Create New Connection](/_media/web-services/ows_tutorial_3.png)
 
 6. After providing the details above, click on **OK**. 
 7. The previous dialogue will show up, in the dropdown above the **New** button, you will see DEA Services. If it is not there click the dropdown button below and select it.
 8. The **Connect** button will be activated, click on it to load the layers. Anytime this page is open, because the connection has already been established, click on **Connect** to load the data.
 
-![QGIS - View Connection](/_files/web-services/ows_tutorial_4.png)
+![QGIS - View Connection](/_media/web-services/ows_tutorial_4.png)
 
 9. The layer will be loaded as shown below in the dialogue. 
 10. Navigate through layers and choose the layer you will need to display on the Map Page. 

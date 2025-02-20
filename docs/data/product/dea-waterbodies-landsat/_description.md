@@ -31,7 +31,7 @@ The code used in the development of this product is available on [GitHub](https:
 The DEA Waterbodies v3.0.0 shapefile and CSV contain the following data.
 
 ```{eval-rst}
-:download:`Download the Data Specification Tables as a PDF </_files/dea-waterbodies/DEA_Waterbodies_v3.0_Data_Spec_Table.pdf>`
+:download:`Download the Data Specification Tables as a PDF </_media/dea-waterbodies/DEA_Waterbodies_v3.0_Data_Spec_Table.pdf>`
 
 ```
 
@@ -172,7 +172,7 @@ This product is based on [DEA Water Observations](/data/product/dea-water-observ
 
 DEA Waterbodies is a polygon-based view of DEA Water Observations (DEA WO), derived through the automatic processing of DEA WO to identify the outlines of persistent waterbodies across Australia. 
 
-:::{figure} /_files/cmi/V2Workflow.JPG
+:::{figure} /_media/cmi/V2Workflow.JPG
 :alt: DEA Waterbodies workflow
 
 Flow diagram outlining the steps taken to produce DEA Waterbodies polygons.

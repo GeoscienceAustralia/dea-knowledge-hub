@@ -111,7 +111,7 @@ When the time series cloud and cloud shadow detection procedure completed. The d
 
 In this step, pixels in the time series with BA>0.45 is labelled as cloud (with mask value = 3), while BA<=-0.0999 is labelled as invalid (with mask value = 1). The procedure is shown in Figure 1.
 
-:::{figure} /_files/dea-cloud-and-cloud-shadow-mask/cloud_1.png
+:::{figure} /_media/dea-cloud-and-cloud-shadow-mask/cloud_1.png
 :alt: identify extreme data
 
 Figure 1. Identify extreme and invalid data.
@@ -121,7 +121,7 @@ Figure 1. Identify extreme and invalid data.
 
 The updated time series is shown in Figure 2.
 
-:::{figure} /_files/dea-cloud-and-cloud-shadow-mask/cloud_2.png
+:::{figure} /_media/dea-cloud-and-cloud-shadow-mask/cloud_2.png
 :alt: Updated time series with extreme and invalid pixels removed
 
 Figure 2. Updated time series with extreme and invalid pixels removed
@@ -131,7 +131,7 @@ Figure 2. Updated time series with extreme and invalid pixels removed
 
 This is done by applying local time series noise filter on the whole time series, the time series with identified cloud and cloud shadow pixels is shown in Figure 3.
 
-:::{figure} /_files/dea-cloud-and-cloud-shadow-mask/cloud_3.png
+:::{figure} /_media/dea-cloud-and-cloud-shadow-mask/cloud_3.png
 :alt: Time series with cloud and cloud shadow pixels identified
 
 Figure 3. Time series with cloud and cloud shadow pixels identified
@@ -141,7 +141,7 @@ Figure 3. Time series with cloud and cloud shadow pixels identified
 
 In the current implementation, the local time series noise filter was applied 3 times with N=1,  2 times with N=2 and 1 time with N=3, where 3N is the length of the local time series noise filter. The filtered time series after Step 4 is shown in Figure 4.
 
-:::{figure} /_files/dea-cloud-and-cloud-shadow-mask/cloud_4.png
+:::{figure} /_media/dea-cloud-and-cloud-shadow-mask/cloud_4.png
 :alt: Time series with cloud and cloud shadow pixels removed
 
 Figure 4. Time series with cloud and cloud shadow pixels removed
@@ -151,7 +151,7 @@ Figure 4. Time series with cloud and cloud shadow pixels removed
 
 Detect ground objects which are wrongly classified as clouds and cloud shadows. Output the identified cloud and cloud shadow pixels as a cloud and cloud shadow mask, as shown in Figure 5.
 
-:::{figure} /_files/dea-cloud-and-cloud-shadow-mask/cloud_5.png
+:::{figure} /_media/dea-cloud-and-cloud-shadow-mask/cloud_5.png
 :alt: The output of cloud and cloud shadow mask for the time series
 
 Figure 5. The output of cloud and cloud shadow mask for the time series

@@ -70,7 +70,7 @@ The extent of this grid is based upon the maximal extents of:
 Shown here is an image of the new grid in EPSG:3577 projection, with tiles shown
 where we expect to have land imagery available:
 
-![](/_files/reference/collection_3_grid.jpeg)
+![](/_media/reference/collection_3_grid.jpeg)
 
 ## How can I use this grid?
 

@@ -43,7 +43,7 @@
 
    .. container::
 
-      .. image:: /_files/default/dea-earth-thumbnail.jpg
+      .. image:: /_media/default/dea-earth-thumbnail.jpg
          :class: no-gallery
 
 .. container:: showcase-panel bg-gradient-forest reverse
@@ -59,7 +59,7 @@
 
    .. container::
 
-      .. image:: /_files/cmi/Kakadu-Mary_TCW-percentiles-wide_1.jpg
+      .. image:: /_media/cmi/Kakadu-Mary_TCW-percentiles-wide_1.jpg
          :class: no-gallery
 
 .. container:: showcase-panel bg-gradient-stone
@@ -75,7 +75,7 @@
 
    .. container::
 
-      .. image:: /_files/validation/validation-drone-thumbnail.jpg
+      .. image:: /_media/validation/validation-drone-thumbnail.jpg
          :class: no-gallery
 
 .. container:: showcase-panel bg-gradient-space reverse
@@ -91,7 +91,7 @@
 
    .. container::
 
-      .. image:: /_files/reference/Reporting_dashboard.png
+      .. image:: /_media/reference/Reporting_dashboard.png
          :class: no-gallery
 
 .. container:: showcase-panel
@@ -111,5 +111,5 @@
 
    .. container::
 
-      .. image:: /_files/themes/sea-ocean-and-coast.* 
+      .. image:: /_media/themes/sea-ocean-and-coast.* 
          :class: no-gallery

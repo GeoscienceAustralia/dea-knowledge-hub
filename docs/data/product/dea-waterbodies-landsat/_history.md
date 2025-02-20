@@ -56,7 +56,7 @@ In v2, the size has been lowered slightly to 2,700 m<sup>2</sup>, which equates 
 
 This change has resulted in the inclusion of some smaller waterbodies that were not mapped in v1. 
 
-:::{figure} /_files/cmi/WaterbodySize_0.JPG
+:::{figure} /_media/cmi/WaterbodySize_0.JPG
 :alt: Waterbodies size distribution
 
 Comparison of the size distributions of DEA Waterbodies v1 and v2. a) Size distribution for polygons smaller than 1 km<sup>2</sup>. b) Small waterbodies identified in v2 that were not included in v1.
@@ -76,7 +76,7 @@ Our automated waterbody polygon detection produces subpar results for large, ver
 
 As an example, Kati Thanda-Lake Eyre is a particularly complex polygon when mapped using automated methods, resulting in 3,118 polygons ranging from 900 m<sup>2</sup> to 4,609 km<sup>2</sup>. Kati Thanda-Lake Eyre and Lake Everard in v1 and v2 are shown below. 
 
-:::{figure} /_files/cmi/SaltLakesSwap.JPG
+:::{figure} /_media/cmi/SaltLakesSwap.JPG
 :alt: Complex polygons swapped for mapped polygons
 
 Complex polygons replaced for large salt lakes in South Australia. Original polygons are shown in red. Blue areas show where polygons were infilled by replacement with the Surface Hydrology Polygons (Regional). a) Focus on the northern edge of Kati Thanda-Lake Eyre, SA, showing the complexity of the automatically detected polygons. b) Lake Everard, SA.

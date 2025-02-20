@@ -24,7 +24,7 @@ With the path pointing to the 1.8 JRE.
 
 Note 2: Data within the NSD are stored hierarchically so data should be exported by selecting the folder above the desired data. If you do not download data from its root folder, you will lose folder sub-structure labels. See below for an example:
 
-:::{figure} /_files/cmi/NSD_known_issues.png
+:::{figure} /_media/cmi/NSD_known_issues.png
 :alt: NSD browser screen grab
 :::
 

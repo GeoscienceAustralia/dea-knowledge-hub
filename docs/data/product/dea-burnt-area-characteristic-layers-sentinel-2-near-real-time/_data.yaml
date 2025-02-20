@@ -4,7 +4,7 @@
 
 short_name: DEA Burnt Area Characteristic Layers Sentinel-2 Near Real-Time
 full_technical_name: Geoscience Australia Burnt Area Characteristic Layers Sentinel-2 Near Real-Time
-header_image: /_files/cmi/ga_s2_ba_provisional_3_interim_thumbnail.jpg
+header_image: /_media/cmi/ga_s2_ba_provisional_3_interim_thumbnail.jpg
 
 version_number: 1.0.0
 is_latest_version: true

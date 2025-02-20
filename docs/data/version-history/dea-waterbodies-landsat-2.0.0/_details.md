@@ -30,7 +30,7 @@ The DEA Waterbodies product is comprised of two key components:
 
 DEA Waterbodies is a polygon-based view of DEA Water Observations (DEA WO), derived through the automatic processing of DEA WO to identify the outlines of persistent waterbodies across Australia (Figure 1). 
 
-:::{figure} /_files/cmi/V2Workflow.JPG
+:::{figure} /_media/cmi/V2Workflow.JPG
 :alt: DEA Waterbodies workflow
 
 Figure 1: Flow diagram outlining the steps taken to produce DEA Waterbodies v2 polygons

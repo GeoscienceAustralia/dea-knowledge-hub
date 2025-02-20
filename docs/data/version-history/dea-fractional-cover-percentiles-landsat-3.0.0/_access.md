@@ -15,6 +15,6 @@ To view and access the data interactively:
 
 5) Chose the Percentile you would like to display from the drop down Styles menu
 
-![DEA Maps menu for choosing percentile](/_files/cmi/Maps-percentiles-dropdown-menu.png)
+![DEA Maps menu for choosing percentile](/_media/cmi/Maps-percentiles-dropdown-menu.png)
 :::
 

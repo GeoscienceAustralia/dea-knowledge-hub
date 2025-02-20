@@ -58,7 +58,7 @@ Changes may be made at any time, without prior notice, to these Terms. Should ne
 3) Run the application. Launch the Specchio client from your install directory or command line, it is called "specchio-client.jar".
 4) Get started with the NSD: Select "Database" from the top left-hand corner of the client, then "Create a user account". See below: 
 
-![connection_tab](/_files/cmi/connection.jpg)
+![connection_tab](/_media/cmi/connection.jpg)
 
 To access the service enter the following information:
 
@@ -83,19 +83,19 @@ The NSD contains datasets or campaigns of data that can be viewed in two ways.
 
 1) View the NSD folder structure via the data browser:
 
-![data_browser](/_files/cmi/data_browser.jpg)
+![data_browser](/_media/cmi/data_browser.jpg)
 
-![data_browser_2](/_files/cmi/data_browser2.jpg)
+![data_browser_2](/_media/cmi/data_browser2.jpg)
 
 Expand folders to the desired level, then view (show report), plot spectra, and export data. You may also manually subset data from folders by selecting multiple individual files, shown above. The report applies to the selected spectra: either at the folder or individual file level. 
 
 2) Query the NSD for specific metadata parameters:
 
-![query_builder](/_files/cmi/query_1.jpg)
+![query_builder](/_media/cmi/query_1.jpg)
 
 Select the metadata category you wish to filter by on the left-hand side. For example, to retrieve all entries for NSW, select the Location category on the left, then add "NSW" to the "State/Territory" field and hit Run Query on the right:
 
-![query_2](/_files/cmi/query_2.jpg)
+![query_2](/_media/cmi/query_2.jpg)
 
 As in the Data Browser, spectra found from the Query Builder can be viewed and exported in the same way.
 

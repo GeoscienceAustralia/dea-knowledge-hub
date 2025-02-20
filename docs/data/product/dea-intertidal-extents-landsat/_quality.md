@@ -2,7 +2,7 @@
 
 Due the sun-synchronous nature of the various Landsat sensor observations; it is unlikely that the full physical extents of the tidal range in any cell will be observed. Hence, terminology has been adopted for the product to reflect the highest modelled tide observed in a given cell (HOT) and the lowest modelled tide observed (LOT) (Figure 1). These measures are relative to Mean Sea Level, and have no consistent relationship to Lowest (LAT) and Highest Astronomical Tide (HAT).
 
-:::{figure} /_files/cmi/item_2.png
+:::{figure} /_media/cmi/item_2.png
 :alt: tide range
 
 Figure 1: Tidal range showing the HOT and LOT.

@@ -70,7 +70,7 @@ Median composites are a method for creating large image mosaics using an algorit
 
 The benefit of using the median composite algorithm is that it is very fast to compute. The problem, however, is that satellite imagery pixels hold information for multiple bands and simple medians lose the relationships in this information, creating unnatural results. Therefore, a geometric median algorithm is used instead, since it can handle multi-dimensional data and maintain the relationships between bands for each pixel.
 
-:::{figure} /_files/geomedian/geomedian-alg-composite_techspecs.jpg
+:::{figure} /_media/geomedian/geomedian-alg-composite_techspecs.jpg
 :alt: Median compositing algorithm diagram
 
 A simple median considers data from each band independently. This can be seen in Step 2 of the median compositing algorithm. (Source: [Digital Earth Africa &mdash; Introduction to the Digital Earth Africa Sandbox](https://learn.digitalearthafrica.org/courses/course-v1:digitalearthafrica+DEA101+2021/))
@@ -97,7 +97,7 @@ The geometric median is a pixel-composite mosaic of a time series of earth obser
 
 An **annual geometric median** is a high-dimensional median calculated from the reflectance values recorded over a one-year period. The annual geometric median is available for each full calendar year since 1986.
 
-:::{figure} /_files/geomedian/geomedian-composite_techspecs.jpg
+:::{figure} /_media/geomedian/geomedian-composite_techspecs.jpg
 :alt: geometric median algorithm diagram
 
 Each band adds a dimension to the geometric median calculation. For a three-band dataset &mdash; such as the RGB dataset shown in this figure &mdash; each point can be represented on a three-dimensional scatter plot. The geometric median is the minimised ‘sum of distances’ between all of these points. (Source: [Digital Earth Africa &mdash; Introduction to the Digital Earth Africa Sandbox](https://learn.digitalearthafrica.org/courses/course-v1:digitalearthafrica+DEA101+2021/))
@@ -134,7 +134,7 @@ Note that only Landsat 7 geometric median data is available between 2000 and 200
 
 The primary uses of geometric median pixel composites are for change detection within baselines and for broad regional image composites (such as national and continental mosaics).
 
-:::{figure} /_files/landsat/landsat-timeline-2024.png
+:::{figure} /_media/landsat/landsat-timeline-2024.png
 :alt: Landsat geometric median time coverage diagram
 
 Timeline of Landsat satellite and sensor availability.
@@ -179,7 +179,7 @@ The mathematical derivation of the three MADs can be found in Roberts et al. (20
 ::::{dropdown} Euclidean MAD (EMAD)
 The most logical place to start thinking about any of the MADs is the Euclidean MAD (EMAD). This is because EMAD comes from Euclidean distance, and Euclidean distance can be explained with a physical analogy: it is how we measure straight-line distances between points. In our three-dimensional world, it may look like this:
 
-:::{figure} /_files/geomedian/cartesian_euclidean.JPG
+:::{figure} /_media/geomedian/cartesian_euclidean.JPG
 :alt: Euclidean distance in three dimensions
 
 Euclidean distance in three dimensions.
@@ -189,7 +189,7 @@ In the case of satellite data, we are measuring the Euclidean distance between a
 
 For example, if we had three bands of data (red, green, and blue), and three timesteps of data, then we can calculate the Euclidean distances as follows:
 
-:::{figure} /_files/geomedian/bands_euclidean.JPG
+:::{figure} /_media/geomedian/bands_euclidean.JPG
 :alt: Euclidean distance in three dimensions over three timesteps.
 
 Euclidean distance in three dimensions over three timesteps.
@@ -235,7 +235,7 @@ The spectral MAD (SMAD) is based on the median absolute deviations in the cosine
 
 In two dimensions, cosine distance can be graphically compared to Euclidean distance by the following figure:
 
-:::{figure} /_files/geomedian/cosine_distance.JPG
+:::{figure} /_media/geomedian/cosine_distance.JPG
 :alt: Relative relationships between Euclidean and cosine distances.
 
 Relative relationships between Euclidean and cosine distances.
@@ -315,7 +315,7 @@ BCMAD takes on values from 0 to 1.
 
 ## Lineage
 
-:::{figure} /_files/geomedian/lineage.svg
+:::{figure} /_media/geomedian/lineage.svg
 :alt: Lineage diagram.
 
 Landsat 5, 7, 8, and 9 Surface Reflectance includes NBART and Observational Attributes products. GeoMAD stands for Geometric Median and Median Absolute Deviation.
