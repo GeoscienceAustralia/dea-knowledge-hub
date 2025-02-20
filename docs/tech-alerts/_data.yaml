@@ -6,14 +6,10 @@ meta_description: null
 quick_links_custom: null
 
 system_status_notifications:
-  - description: Unplanned outage of DEA Sandbox
+  - description: DEA data not up-to-date
     severity: 2
     status_custom: null
 
   - description: Expanded extents data processing is currently paused, with data available to May 2024. See below. # NOTE Remember to remove the banner on the page: https://pr-302-preview.khpreview.dea.ga.gov.au/guides/reference/ard-expanded-processing-extent/
-    severity: 3
-    status_custom: null
-
-  - description: Misclassification issue with Sentinel-2 ‘s2cloudless’ cloud masking from 2022. See below.
     severity: 3
     status_custom: null

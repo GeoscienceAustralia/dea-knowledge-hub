@@ -8,7 +8,11 @@
 Learn more about the [DEA Summary Product Grid](/guides/reference/collection_3_summary_grid/).
 ::::
 
-## 20 Feb 2025: DEA Sandbox unplanned outage
+## 20 Feb 2025: DEA data not up-to-date
+
+DEA ARD datasets are currently not up-to-date. We are investigating the cause of this issue. 
+
+## 20 Feb 2025: DEA Sandbox unplanned outage (Resolved)
 
 The DEA Sandbox is currently unavailable. We are currently working to restore the service. 
 
@@ -29,9 +33,3 @@ The affected services will be updated once the issue is resolved.
 This year, we [expanded the processing extents](/guides/reference/ard-expanded-processing-extent/) for our [Surface Reflectance products](/data/category/dea-surface-reflectance/) and derivative products.
 
 Unfortunately, due to unanticipated issues with an external network connection, we have needed to pause the back-processing of this expanded extent data since May 2024. You may have noticed this issue, for example, if you attempted to access ARD from the Heard Island and McDonald Islands and found that there are no images more recent than May 2024.
-
-## 24 May 2024: Misclassification issue with Sentinel-2 's2cloudless' cloud masking from 2022
-
-An issue has been identified that is causing widespread misclassification of clouds in DEA's Sentinel-2 `s2cloudless` cloud mask data generated since January 2022. 
-
-We recommend that you avoid using `s2cloudless` cloud mask data from 2022 onwards until this issue is investigated. 

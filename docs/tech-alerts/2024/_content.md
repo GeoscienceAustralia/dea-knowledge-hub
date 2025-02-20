@@ -189,7 +189,7 @@ NCI has released an upgrade to the THREDDS Data Service and will [decommission t
 
 To prepare for this change, all THREDDS data access links in the Knowledge Hub have been updated to point to the new THREDDS server: all `https://dapds00.nci.org.au/thredds/...` links have been changed to `https://thredds.nci.org.au/thredds/...`.
 
-## 24 May 2024: Misclassification issue with Sentinel-2 's2cloudless' cloud masking from 2022
+## 24 May 2024: Misclassification issue with Sentinel-2 's2cloudless' cloud masking from 2022 (Resolved)
 
 An issue has been identified that is causing widespread misclassification of clouds in DEA's Sentinel-2 `s2cloudless` cloud mask data generated since January 2022. 
 
