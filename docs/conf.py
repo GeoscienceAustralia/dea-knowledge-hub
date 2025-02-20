@@ -61,7 +61,6 @@ elif is_pr_preview: html_baseurl = f"https://{pr_preview_subdomain}.khpreview.de
 else: html_baseurl = ""
 
 html_permalinks = False
-html_last_updated_fmt = '%-d %B %Y' # E.g. 1 January 2020
 
 extensions = [
     "sphinx.ext.autodoc",
