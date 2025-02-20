@@ -48,9 +48,9 @@ This is an improvement over Version 1.0, which only used Landsat 5, Landsat 7, a
 For more details, see the [Specifications tab](./?tab=specifications) and [Quality tab](./?tab=quality).
 :::
 
-:::{dropdown} Is the DEA Land Cover data available for free?
+:::{dropdown} Is this data available for free?
 
-Yes, the DEA Land Cover data is free of charge and released under the [Creative Commons Attribution 4.0 International Licence](https://creativecommons.org/licenses/by/4.0/). However, licenses for specific platforms where the Land Cover data can be accessed, as well as additional data available on those platforms, may vary.
+Yes, the DEA Land Cover data is free of charge and released under the Creative Commons Attribution 4.0 International Licence. However, licenses for specific platforms where the Land Cover data can be accessed, as well as additional data available on those platforms may vary.
 
 For more details, see the [Access tab](./?tab=access) and [Credits tab](./?tab=credits).
 :::
