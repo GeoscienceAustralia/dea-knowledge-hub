@@ -6,7 +6,7 @@ meta_description: null
 quick_links_custom: null
 
 system_status_notifications:
-  - description: DEA data not up-to-date
+  - description: DEA near-real-time data not up-to-date. See below.
     severity: 2
     status_custom: null
 
