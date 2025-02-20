@@ -85,6 +85,7 @@ myst_enable_extensions = [
     "attrs_block",
     "dollarmath",
 ]
+
 myst_heading_anchors = 6
 myst_all_links_external = True
 
