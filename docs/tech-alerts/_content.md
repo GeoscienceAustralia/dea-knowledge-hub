@@ -22,7 +22,7 @@ Digital Earth Australia’s Sentinel-2A data products will stop publishing data 
 
 [View the Tech Alert](https://communication.ga.gov.au/link/id/zzzz678f06dcdfdd9113Pzzzz6567c8b713b5b826/page.html)
 
-## 08 Jan 2025: DEA Maps data not up-to-date (Resolved)
+## 8 Jan 2025: DEA Maps data not up-to-date (Resolved)
 
 [DEA Maps](/guides/setup/dea_maps/) and [OWS layers](/guides/setup/gis/README/) are not currently up-to-date with the data available on [DEA AWS](/guides/setup/AWS/data_and_metadata/). We are investigating the cause of this issue. 
 
