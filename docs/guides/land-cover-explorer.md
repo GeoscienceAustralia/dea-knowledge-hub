@@ -13,11 +13,15 @@ Open the [Land Cover Explorer][Explorer]
 :backlinks: none
 :::
 
+![Land Cover Explorer](/_files/land_cover/land-cover-explorer.png)
+
 ## Navigate across time and place
 
 To navigate to a place on a map, use your mouse to zoom in and drag to move around. Or, enter an address or place into the search bar on the top left to jump directly to a location, e.g. "Warragamba Dam"
 
 To navigate through time, ensure that **Animate** is selected in the bottom panel, then drag the slider underneath **Choose a year to view** on the bottom panel. You can view data for any year for which there is coverage, from 1988 onwards.
+
+![Year selector timeline](/_files/land_cover/timeline-year-selector.png)
 
 ## View Level 3
 
