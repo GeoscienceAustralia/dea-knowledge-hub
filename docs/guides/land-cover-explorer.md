@@ -17,7 +17,7 @@ Open the [Land Cover Explorer][Explorer]
 
 To navigate to a place on a map, use your mouse to zoom in and drag to move around. Or, enter an address or place into the search bar on the top left to jump directly to a location, e.g. "Warragamba Dam"
 
-To navigate through time, drag the slider underneath **Choose a year to view** on the bottom panel. You can view data for any year for which there is coverage, from 1988 onwards.
+To navigate through time, ensure that **Animate** is selected in the bottom panel, then drag the slider underneath **Choose a year to view** on the bottom panel. You can view data for any year for which there is coverage, from 1988 onwards.
 
 ## Level 3 vs Level 4
 
@@ -46,6 +46,14 @@ The Level 4 dataset includes the six base Land Cover classes as well as the sub-
 
 Learn more about the [Level 4 dataset](/data/product/dea-land-cover-landsat/?tab=description).
 
+## Animate changes over time
+
+1. Ensure that **Animate** is selected in the bottom panel
+1. Select the year that you wish to start the animation from.
+1. Click the play icon.
+1. Click the "**&times;**" (Close) button at the top right to exit the animation.
+
+## Swipe to compare two years
 
 
 [Explorer]: https://dev.mapexplorer.dea.ga.gov.au/landcoverexplorer/index.html
