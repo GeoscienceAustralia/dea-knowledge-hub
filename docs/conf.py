@@ -97,7 +97,7 @@ external_toc_path = "table_of_contents.yaml"
 
 if (
     is_production or is_pr_preview or enable_redirects
-): rediraffe_redirects = redirects.source_redirects_in_custom_format("_redirects/*.txt")
+): rediraffe_redirects = redirects.source_redirects_glob_in_custom_format("_redirects/*.txt")
 
 sitemap_url_scheme = "{link}"
 
