@@ -126,7 +126,7 @@ The [Bureau of Meteorology](http://www.bom.gov.au/) provides water discharge dat
 
     ![Watercourse Discharge Tool hydrograph](/_files/dea-maps/dea_maps_wdt_5.jpg)
 
-## Additional features
+## Other useful features
 
 * **Print your map** &mdash; Click **Share / Print** &gt; **Show Print View** &gt; a new page will open showing a printer-friendly view; click **Print** or press **Ctrl-p** on your keyboard.
 * **Capture a high-quality image of your map** &mdash; Follow the steps above to print your map, except on the printer-friendly page, right-click on the image and select **Save image as**.

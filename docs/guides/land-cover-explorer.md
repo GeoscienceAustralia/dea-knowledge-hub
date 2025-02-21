@@ -13,29 +13,23 @@ Open the [Land Cover Explorer][Explorer]
 :backlinks: none
 :::
 
-## Navigate through time and place
+## Navigate across time and place
 
 To navigate to a place on a map, use your mouse to zoom in and drag to move around. Or, enter an address or place into the search bar on the top left to jump directly to a location, e.g. "Warragamba Dam"
 
 To navigate through time, ensure that **Animate** is selected in the bottom panel, then drag the slider underneath **Choose a year to view** on the bottom panel. You can view data for any year for which there is coverage, from 1988 onwards.
 
-## Level 3 vs Level 4
-
-DEA Land Cover consists of two datasets: Level 3 and Level 4. Level 3 contains a hierarchy of classifications, and Level 4 extends this by adding further sub-classifications. Learn more about the [Level 3 and Level 4 datasets][LandCoverDescription].
-
 ## View Level 3
 
-Click **Level 3** in the bottom panel to view the Level 3 dataset.
+Click **Level 3** in the bottom panel to view the Level 3 dataset. (Learn more about the [Level 3 dataset][LandCoverDescription].)
 
 The Level 3 dataset allows viewing the six base Land Cover classes. These are displayed in the **Land Use/Land Cover Classes** section in the bottom panel as **Cultivated Terrestrial Vegetation**, **Natural Terrestrial Vegetation**, **Natural Aquatic Vegetation**, **Artificial Surface**, **Natural Bare Surface**, and **Water**. They are colour coded so that you can identify them on the map.
 
 Click on a Land Cover class to view only that selected class on the map. Click the same class again to revert to viewing all the classes on the map. (By default, all classes are displayed on the map.)
 
-Learn more about the [Level 3 dataset][LandCoverDescription].
-
 ## View Level 4
 
-Click **Level 4** in the bottom panel to view the Level 4 dataset.
+Click **Level 4** in the bottom panel to view the Level 4 dataset. (Learn more about the [Level 3 dataset][LandCoverDescription].)
 
 The Level 4 dataset includes the six base Land Cover classes as well as the sub-classifications of each of these. You can selectively view any classification or compilation of classifications on the map by using the **Land Use/Land Cover Classes** section in the bottom panel. (By default, all classes are displayed on the map.)
 
@@ -48,7 +42,9 @@ Learn more about the [Level 4 dataset][LandCoverDescription].
 
 ## History of a location
 
-Click any location on the map and a popup will appear showing how the classification of that coordinate over time. For example, you can see that at 'Lat -33.896, Lon 150.775', in Level 3, the classification has varied between Natural Terrestrial Vegetation, Natural Bare Surface, and Water over time.
+Click any location on the map and a popup will appear showing how the classification of that coordinate over time. For example, you can see that at 'Lat -33.91, Lon 150.689', in Level 3, the classification has varied between Water, Natural Terrestrial Vegetation, and Cultivated Terrestrial Vegetation over time.
+
+!['History of location' popup](/_files/land_cover/location-history-popup.png)
 
 ## Animate changes over time
 
@@ -64,6 +60,13 @@ Click any location on the map and a popup will appear showing how the classifica
 1. The left side of the map will now display 1990 data and the right side will display 2010 data.
 1. You can drag the divider to easily see the difference between the two years.
 1. To exit the 'swipe' view, click the **Animate** option in the bottom panel.
+
+## Other useful features
+
+* **Copy link to this app in its current state** &mdash; This will copy a URL to the clipboard that contains the current map as-is, including the viewing location and settings you have configured.
+
+Anyone who opens this URL will see your map exactly as you configured it. You can send this URL to others, link to it from a public website, or bookmark it for later.
+
 
 [Explorer]: https://dev.mapexplorer.dea.ga.gov.au/landcoverexplorer/index.html
 [LandCover]: /data/product/dea-land-cover-landsat/
