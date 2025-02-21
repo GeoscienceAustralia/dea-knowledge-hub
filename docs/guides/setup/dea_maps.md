@@ -64,6 +64,7 @@ There is a **Compare** feature that lets you view two different map configuratio
 
 1. In the left sidebar, click the ![Button](/_files/dea-maps/show-more-actions-button.jpg) button ('Show more actions') on a dataset that you have added to the map &gt; click **Compare**.
 1. The map will now be split into two halves. In the sidebar, the dataset's card will be split into two separate cards: one labelled 'Left' and the other 'Right'.
+1. You can drag the divider to easily see the difference between the two sides.
 1. You can configure each side of the map independently. E.g. you can change the 'Styles' value on the right side.
 1. Each dataset can be assigned to either the **Left** or **Right** side or **Both** by selecting the relevant option in the left sidebar.
 1. To compare two different datasets side-by-side: add an additional dataset to the map &gt; assign it to the right or left side &gt; remove the existing dataset that was assigned to that side.
