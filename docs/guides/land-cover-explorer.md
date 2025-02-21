@@ -27,6 +27,8 @@ The Level 3 dataset allows viewing the six base Land Cover classes. These are di
 
 Click on a Land Cover class to view only that selected class on the map. Click the same class again to revert to viewing all the classes on the map. (By default, all classes are displayed on the map.)
 
+![Land Cover Classes section for Level 3](/_files/land_cover/land-cover-classes-level-3.png)
+
 ## View Level 4
 
 Click **Level 4** in the bottom panel to view the Level 4 dataset. (Learn more about the [Level 3 dataset][LandCoverDescription].)
