@@ -21,7 +21,7 @@ To navigate through time, ensure that **Animate** is selected in the bottom pane
 
 ## Level 3 vs Level 4
 
-DEA Land Cover consists of two datasets: Level 3 and Level 4. Level 3 contains a hierarchy of classifications, and Level 4 extends this by adding further sub-classifications. Learn more about the [Level 3 and Level 4 datasets](/data/product/dea-land-cover-landsat/?tab=description).
+DEA Land Cover consists of two datasets: Level 3 and Level 4. Level 3 contains a hierarchy of classifications, and Level 4 extends this by adding further sub-classifications. Learn more about the [Level 3 and Level 4 datasets][LandCoverDescription].
 
 ## View Level 3
 
@@ -31,7 +31,7 @@ The Level 3 dataset allows viewing the six base Land Cover classes. These are di
 
 Click on a Land Cover class to view only that selected class on the map. Click the same class again to revert to viewing all the classes on the map. (By default, all classes are displayed on the map.)
 
-Learn more about the [Level 3 dataset](/data/product/dea-land-cover-landsat/?tab=description).
+Learn more about the [Level 3 dataset][LandCoverDescription].
 
 ## View Level 4
 
@@ -44,9 +44,11 @@ The Level 4 dataset includes the six base Land Cover classes as well as the sub-
 * Any combination of base classes and sub-classifications can be selectively viewed on the map.
 * To reset this section to the default values, tick then untick each of the base classes.
 
-Learn more about the [Level 4 dataset](/data/product/dea-land-cover-landsat/?tab=description).
+Learn more about the [Level 4 dataset][LandCoverDescription].
 
 ## History of a location
+
+Click any location on the map and a popup will appear showing how the classification of that coordinate over time. For example, you can see that at 'Lat -33.896, Lon 150.775', in Level 3, the classification has varied between Natural Terrestrial Vegetation, Natural Bare Surface, and Water over time.
 
 ## Animate changes over time
 
@@ -65,3 +67,4 @@ Learn more about the [Level 4 dataset](/data/product/dea-land-cover-landsat/?tab
 
 [Explorer]: https://dev.mapexplorer.dea.ga.gov.au/landcoverexplorer/index.html
 [LandCover]: /data/product/dea-land-cover-landsat/
+[LandCoverDescription]: /data/product/dea-land-cover-landsat/
