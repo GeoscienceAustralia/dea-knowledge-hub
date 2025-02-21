@@ -2,9 +2,10 @@ import os
 import sys
 sys.path.append(os.path.abspath("./_extensions"))
 sys.path.insert(0, os.path.abspath('.'))
-from _modules import utilities
 from _modules import mock_imports
+from _modules import source_redirects
 from _modules import pr_preview
+from _modules import utilities
 
 build_mode = os.environ.get("BUILD_MODE")
 git_branch = os.environ.get("BRANCH")
