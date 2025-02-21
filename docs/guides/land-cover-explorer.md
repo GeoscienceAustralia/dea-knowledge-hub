@@ -71,10 +71,9 @@ Click any location on the map and a popup will appear showing how the classifica
 
 ## Other useful features
 
-* **Copy link to this app in its current state** &mdash; This will copy a URL to the clipboard that contains the current map as-is, including the viewing location and settings you have configured.
-
-Anyone who opens this URL will see your map exactly as you configured it. You can send this URL to others, link to it from a public website, or bookmark it for later.
-
+* **Save this map view as an image** &mdash; This button is on the left side of the page. This will save the current map view as an image to your computer.
+* **Copy link to this app in its current state** &mdash; This button is on the left side of the page. This will copy a URL to the clipboard of the map in its current state. Anyone who opens this URL will see the map in the same state, with the same configurations and viewing location. You can send this URL to others, link to it from a public website, or bookmark it for later.
+* **Accessible colours** &mdash; This will change the colour scheme of the map to increase contrast. This may be useful for people who have difficulty distinguishing colours.
 
 [Explorer]: https://dev.mapexplorer.dea.ga.gov.au/landcoverexplorer/index.html
 [LandCover]: /data/product/dea-land-cover-landsat/

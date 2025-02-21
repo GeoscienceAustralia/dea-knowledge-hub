@@ -46,7 +46,7 @@ Once you've created a map by adding datasets, adjusting map settings, and zoomin
 
 1. Click **Share / Print** on the top right.
 1. Click **Copy** to copy this custom URL to your clipboard.
-1. Anyone who opens this URL will see your map exactly as you configured it. You can send this URL to others, link to it from a public website, or bookmark it for later.
+1. Anyone who opens this URL will see the map with the same configurations and viewing location. You can send this URL to others, link to it from a public website, or bookmark it for later.
 
 ![Share URL](/_files/dea-maps/share-url.jpg)
 
