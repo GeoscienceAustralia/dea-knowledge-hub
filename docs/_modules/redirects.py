@@ -1,7 +1,7 @@
 import glob
 import re
 
-def source_redirects(file_paths_glob):
+def source_redirects_in_custom_format(file_paths_glob):
     comment_syntax = r"# .*"
     redirect_syntax = r"\"?([^\"\s]*)\"?\s*\"?([^\"\s]*)\"?"
     redirects = {}
