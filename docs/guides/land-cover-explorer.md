@@ -23,8 +23,6 @@ To navigate through time, drag the slider underneath **Choose a year to view** o
 
 DEA Land Cover consists of two datasets: Level 3 and Level 4. Level 3 contains a hierarchy of classifications, and Level 4 extends this by adding further sub-classifications. Learn more about the [Level 3 and Level 4 datasets](/data/product/dea-land-cover-landsat/?tab=description).
 
-![Diagram showing the portion of the LCCS taxonomy which is implemented in DEA Land Cover v1.0.0](/_files/cmi/cut_back_0.PNG)
-
 ## View Level 3
 
 Click **Level 3** in the bottom panel to view the Level 3 dataset.
@@ -45,18 +43,6 @@ The Level 4 dataset includes the six base Land Cover classes as well as the sub-
 * Click the name of any of these base classes to view its sub-classifications, and tick the checkbox of any of these to selectively view them on the map.
 * Any combination of base classes and sub-classifications can be selectively viewed on the map.
 * To reset this tool to the default values, tick then untick each of the base classes.
-
-
-
-
-
-
-
-
-
-Click on a Land Cover class to view only that selected class on the map. Click the same class again to revert to viewing all the classes on the map. 
-
-
 
 Learn more about the [Level 4 dataset](/data/product/dea-land-cover-landsat/?tab=description).
 
