@@ -1,10 +1,11 @@
 import os
 import sys
-sys.path.append(os.path.abspath("./_ext"))
+sys.path.append(os.path.abspath("./_extensions"))
 sys.path.insert(0, os.path.abspath('.'))
-from _modules import utilities
 from _modules import mock_imports
+from _modules import redirects
 from _modules import pr_preview
+from _modules import utilities
 
 build_mode = os.environ.get("BUILD_MODE")
 git_branch = os.environ.get("BRANCH")
@@ -51,7 +52,7 @@ exclude_patterns += utilities.optional_exclude_pattern("LOCAL_ENABLE_OPERATIONAL
 exclude_patterns += utilities.optional_exclude_pattern("LOCAL_ENABLE_TECH_ALERTS_CHANGELOG", "tech-alerts-changelog")
 
 html_title = "DEA Knowledge Hub"
-html_logo = "_files/logos/ga-dea-combined-logo.svg"
+html_logo = "_static/logos/ga-dea-combined-logo.svg"
 html_favicon = "_static/favicons/dea-favicon.ico"
 html_theme = 'pydata_sphinx_theme'
 language = "en"
@@ -61,19 +62,18 @@ elif is_pr_preview: html_baseurl = f"https://{pr_preview_subdomain}.khpreview.de
 else: html_baseurl = ""
 
 html_permalinks = False
-html_last_updated_fmt = '%-d %B %Y' # E.g. 1 January 2020
 
 extensions = [
     "sphinx.ext.autodoc",
     "sphinx.ext.autosummary",
     "sphinx.ext.viewcode",
-    "sphinx.ext.mathjax",
     "sphinx.ext.napoleon",
+    "sphinx.ext.mathjax",
     "myst_parser",
     "nbsphinx",
     "sphinx_design",
-    "sphinxext.rediraffe",
     "sphinxcontrib.datatemplates",
+    "sphinxext.rediraffe",
     "sphinx_external_toc",
     "sphinx_sitemap",
     "notfound.extension",
@@ -86,6 +86,7 @@ myst_enable_extensions = [
     "attrs_block",
     "dollarmath",
 ]
+
 myst_heading_anchors = 6
 myst_all_links_external = True
 
@@ -96,12 +97,12 @@ external_toc_path = "table_of_contents.yaml"
 
 if (
     is_production or is_pr_preview or enable_redirects
-): rediraffe_redirects = utilities.source_redirects("_redirects/*.txt")
+): rediraffe_redirects = redirects.source_redirects_glob_in_custom_format("_redirects/*.txt")
 
 sitemap_url_scheme = "{link}"
 
 ogp_site_url = "https://knowledge.dea.ga.gov.au/"
-ogp_image = "/_files/logos/dea-logo-inline.png"
+ogp_image = "/_static/logos/dea-logo-inline.png"
 
 sys.path.insert(0, os.path.abspath("./notebooks/Tools"))
 autosummary_generate = ["./notebooks/Tools/index.rst"]
