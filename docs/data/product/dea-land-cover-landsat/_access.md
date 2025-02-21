@@ -1,121 +1,98 @@
 % ## Access constraints
 
-## Use constraints
+:::{dropdown} Use constraints
 
-DEA Land Cover is appropriate to use at the national scale where other more detailed information on land cover is not available. Where DEA land cover shows conflicting information to state or local datasets, those datasets should be considered authoritative.
+DEA Land Cover is appropriate to use at the national scale where other more detailed information on land cover is not available. Where DEA Land Cover's data conflicts with state or local datasets, those datasets should be considered authoritative.
+:::
 
 :::{dropdown} How to view the data in a web map
 
-To view and access the data interactively:
-1) Visit [DEA Maps](https://maps.dea.ga.gov.au).
+To view and access the data interactively, follow these steps.
 
-2) Click `Explore map data`.
-
-3) Select `Land and vegetation` > `DEA Land Cover` > `DEA Land Cover (Landsat)`. 
-
-5) Click `Add to the map`, or the `+` symbol to add the data to the map.
+1. Visit [DEA Maps](https://maps.dea.ga.gov.au).
+1. Click **Explore map data**.
+1. Click **Land and vegetation** &gt; **DEA Land Cover** &gt; **DEA Land Cover (Landsat)**. 
+1. Click **Add to the map**, or the '**+**' symbol to add the data to the map.
 :::
 
 :::{dropdown} How to load data with Python in the DEA Sandbox
 
-DEA Sandbox allows you to explore DEA’s Earth Observation datasets in a JupyterLab environment. To sign up for DEA Sandbox see the [user guide](/guides/setup/Sandbox/sandbox/)
+DEA Sandbox allows you to explore DEA’s Earth Observation datasets in a JupyterLab environment. See the guide to [get started with the DEA Sandbox](/guides/setup/Sandbox/sandbox/).
 
-Once you have access, click into the `DEA products` directory to find the `Introduction to DEA Land Cover` notebook on the Sandbox. This notebook will walk you through loading and visualising the DEA Land Cover data.
+Once you have signed up to the Sandbox, click into the **DEA products** directory to find the **Introduction to DEA Land Cover** notebook. This notebook will walk you through loading and visualising the DEA Land Cover data.
 :::
 
-:::{dropdown} Downloading the DEA Landcover data
+:::{dropdown} How to download data via web browser
 
-DEA Land Cover data can be downloaded from DEA’s public data holdings through a web browser, or using Amazon Web Service’s Command Line Interface (AWS CLI). 
+From [DEA's public data (ga_ls_landcover_class_cyear_3)](https://data.dea.ga.gov.au/?prefix=derivative/ga_ls_landcover_class_cyear_3/2-0-0/), navigate through the folders to the year and tile of interest, then click the GeoTIFF file of the relevant layer to download it directly.
 
-***via web browser:***
-
-From [here](https://data.dea.ga.gov.au/?prefix=derivative/ga_ls_landcover_class_cyear_2/1-0-0/), simply navigate to the year and tile* of interest and directly download the GeoTIFF file for the layer you’re after.
-
-**To find x and y tile values for an area, see the Explorer [here](https://explorer.dea.ga.gov.au/products/ga_ls_landcover_class_cyear_2).**
-
-***Bulk download using AWS CLI (for technical users):***
-
-First you need to install AWS CLI, instructions [here](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
-
-Then you can download data from the command line with a command such as:  
-```
-aws s3 --no-sign-request sync s3://dea-public-data/derivative/ga_ls_landcover_class_cyear_2/1-0-0/2020  C:/landcover/ --exclude "*" --include "*_level4.tif"
-```
-
-(This downloads all level4 tiles for 2020 into a folder called ‘landcover’)
-
-**Basis of the command:**
-```
-aws s3 --no-sign-request sync [1][2][3][4]
-```
-Where:
-
-[1] The s3 bucket and folder to download data from: e.g.,
-```
-s3://dea-public-data/derivative/ga_ls_landcover_class_cyear_2/1-0-0/2020
-```
-[2] The directory to download to: e.g.,
-```
-C:/landcover/
-```
-[3] When you want to specify specific files to download, first you need to exclude everything
-```
---exclude "*"
-```
-[4] Then you can define what you want to include (you can add this multiple times), e.g.,
-```
---include "*_level4.tif" --include "*_level4_rgb.tif"
-```
+To find the X and Y tile values for a particular area, you can use the [DEA Explorer](https://explorer.dea.ga.gov.au/products/ga_ls_landcover_class_cyear_3).
 :::
 
-:::{dropdown} Adding DEA Landcover to QGIS
+:::{dropdown} How to download data via AWS
 
-*(for the time dimension to work you need version 3.22+)*
+DEA Land Cover data can be downloaded in bulk using Amazon Web Service’s Command Line Interface (AWS CLI). This method is for technical users.
 
-From the drop down menus at the top select `Layer` > `Add Layer` > `Add WMS/WMTS Layer`
+1. [Install the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html).
+1. You can now download data from the command line using a command such as this example which downloads all level4 tiles for 2020 into a folder called ‘landcover’. You will need to modify the command based on your particular use case.
 
-Click 'New' to setup a new data source, then enter
-```
-    Name: DEA Services
+    ```bash
+    aws s3 --no-sign-request sync s3://dea-public-data/derivative/ga_ls_landcover_class_cyear_3/2-0-0/2020  C:/landcover/ --exclude "*" --include "*_level4.tif" --include "*_level4_rgb.tif"
+    ```
 
-    URL: [https://ows.dea.ga.gov.au/](https://ows.dea.ga.gov.au/)
-```
-Click `Connect`
+    In this command,
 
-Once the items appear you can choose which layers to add.
-
-Select `Land and Vegetation` > `DEA Land Cover`, then either:
-
-* `DEA Land Cover Calendar Year (Landsat)`, then the **basic** or **detailed**
-* `DEA Land Cover Environmental Descriptors`, then any of the various descriptor layers (lifeform, water seasonality etc)
-
-Once you have selected a layer, click `Add` at the bottom of the window to add it to your project.
-
-Temporal information can be accessed by clicking the clock icon next to the name of the layer in the layers list.
+    * The S3 bucket and folder to download data from is `s3://dea-public-data/derivative/ga_ls_landcover_class_cyear_3/2-0-0/2020`
+    * The directory to download to is `C:/landcover/`
+    * When you want to specify specific files to download, first you need to exclude everything, then you can define which files to include: `--exclude "*" --include "*_level4.tif" --include "*_level4_rgb.tif"`
 
 :::
 
-:::{dropdown} Adding DEA Landcover to ArcMap
+:::{dropdown} How to add DEA Land Cover to QGIS using the OWS web service
 
-First add Digital Earth Australia to the GIS Servers:
+Note: You must be using QGIS version 3.22 or above to use the time dimension.
 
-1. Select `Windows` > `Catalog` > `GIS Servers` > `Add WMTS Server`
-
-2. Enter [https://ows.dea.ga.gov.au/](https://ows.dea.ga.gov.au/) into the URL field
-
-3. Click `OK`
-
-Now add the layer to your map:
-
-1. From the drop down menus at the top select `File` > `Add Data` > `Add Data...`
-
-2. Click the `Look in` selector, and choose `GIS Servers`
-
-3. Double click `Digital Earth Australia – OGC Web Services...`
-
-4. Select `DEA Land Cover Calendar Year (Landsat)` or `DEA Land Cover Environmental Descriptors`
-
-5. Click `Add`
+1. From the top menu bar, click **Layer** &gt; **Add Layer** &gt; **Add WMS/WMTS Layer**.
+1. Click **New** to set up a new data source, then enter the following.
+    * Name: `DEA Services`
+    * URL: `https://ows.dea.ga.gov.au/`
+1. Click **Connect**.
+1. Once the items appear, you can choose which layers to add.
+1. Click **Land and Vegetation** &gt; **DEA Land Cover**, then select either of the following options.
+    * **DEA Land Cover Calendar Year (Landsat)**, then select either **basic** or **detailed**.
+    * **DEA Land Cover Environmental Descriptors**, then select any of the various descriptor layers (**lifeform**, **water seasonality**, etc.)
+1. Click **Add**.
 
 :::
 
+:::{dropdown} How to add DEA Land Cover to QGIS using GeoTIFF files
+
+Individual tiles can be downloaded via web browser or AWS by following the above instructions and can then be uploaded to QGIS.
+
+The QGIS style files can be downloaded from the following locations.
+
+* [Level 3 QGIS Style](https://dea-public-data-dev.s3.ap-southeast-2.amazonaws.com/derivative/ga_ls_landcover_class_cyear_3/ga_ls_landcover_class_cyear_3_style.qml)
+* [Level 4 QGIS Style](https://dea-public-data-dev.s3.ap-southeast-2.amazonaws.com/derivative/ga_ls_landcover_class_cyear_3/ga_ls_landcover_class_cyear_4_style.qml)
+
+To add the style to QGIS, do the following.
+
+1. Select the TIF files you would like the styling applied to.
+1. Right-click that selection then select **Properties** &gt; **Symbology**.
+1. In the bottom left menu, click **Style** &gt; **Load Style**.
+
+The styling will now be applied to the TIF classification file, hence enabling a colour representation of the Land Cover classifications.
+:::
+
+:::{dropdown} How to add DEA Land Cover to ArcMap
+
+1. Add Digital Earth Australia to the GIS Servers:
+    1. Click **Windows** &gt; **Catalog** &gt; &gt; **GIS Servers** &gt; **Add WMTS Server**.
+    1. Enter `https://ows.dea.ga.gov.au/` into the URL field, then click **Ok**.
+1. Add the layer to your map:
+    1. In the top menu bar, click **File** &gt; **Add Data** &gt; **Add Data...**
+    1. Click the **Look in** selector then choose **GIS Servers**.
+    1. Double-click **Digital Earth Australia – OGC Web Services...**
+    1. Select **DEA Land Cover Calendar Year (Landsat)** or **DEA Land Cover Environmental Descriptors**.
+    1. Click **Add**.
+
+:::

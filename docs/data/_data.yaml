@@ -7,7 +7,7 @@ cards:
     image: /_files/themes/baseline-satellite-data.*
   - name: Land and vegetation
     link: /data/theme/land-and-vegetation/
-    image: /_files/themes/land-and-vegetation.*
+    image: /_files/land_cover/land-cover-2-0-0-hero-image-size-50perc.png
   - name: Inland water
     link: /data/theme/inland-water/
     image: /_files/themes/inland-water.*

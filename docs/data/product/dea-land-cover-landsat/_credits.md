@@ -1,11 +1,12 @@
 ## Acknowledgments
 
-DEA acknowledges the contribution of several collaborators who helped to create this Land Cover product:
-* CSIRO - Anna Richards, Becky Schmidt, Kristen Williams
-* UNSW - Graciela Metternicht
-* Department of Agriculture, Water and Environment - Jane Stewart, Lucy Randall, Lucy Gramenz
-* ANU - Albert van Dijk
-* Tasmania DPIPWE - Lindsay Mitchell
+DEA acknowledges the contribution of several collaborators who helped to create this Land Cover product.
+
+* CSIRO &mdash; Anna Richards, Becky Schmidt, Kristen Williams
+* UNSW &mdash; Graciela Metternicht
+* Department of Agriculture, Water and Environment &mdash; Jane Stewart, Lucy Randall, Lucy Gramenz
+* ANU &mdash; Albert van Dijk
+* Tasmania DPIPWE &mdash; Lindsay Mitchell
 
 ## License and copyright
 
