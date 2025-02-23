@@ -13,7 +13,7 @@ Open the [Land Cover Explorer][Explorer]
 :backlinks: none
 :::
 
-<a href="https://dev.mapexplorer.dea.ga.gov.au/landcoverexplorer/index.html"><img href="/_static/land_cover/land-cover-explorer.png" alt="Land Cover Explorer"></img></a>
+![Land Cover Explorer](/_files/land_cover/land-cover-explorer.png)
 
 ## Navigate across time and place
 
