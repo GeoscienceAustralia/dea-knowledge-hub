@@ -48,7 +48,7 @@ The Level 4 dataset includes the six base Land Cover classes as well as the sub-
 
 ## History of a location
 
-Click any location on the map and a popup will appear showing how the classification of that coordinate over time. For example, you can see that at 'Lat -33.91, Lon 150.689', in Level 3, the classification has varied between Water, Natural Terrestrial Vegetation, and Cultivated Terrestrial Vegetation over time.
+Click any location on the map and a popup will appear showing how the classification of that coordinate changes over time. For example, you can see that at 'Lat -33.91, Lon 150.689', in Level 3, the classification has varied between Water, Natural Terrestrial Vegetation, and Cultivated Terrestrial Vegetation over time.
 
 !['History of location' popup](/_files/land_cover/location-history-popup.png)
 
