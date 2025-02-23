@@ -67,7 +67,7 @@ To animate changes, follow these steps.
 
 ## Swipe to compare two years
 
-**How to exit the 'swipe' mode:** Click the **Animate** option in the bottom panel.
+**How to exit a 'swipe' comparison:** Click the **Animate** option in the bottom panel.
 
 To compare two years, follow these steps.
 
