@@ -17,7 +17,7 @@ Open the [Land Cover Explorer][Explorer]
 
 ## Navigate across time and place
 
-To navigate to a place on a map, use your mouse to zoom in and drag to move around. Or, enter an address or place into the search bar on the top left to jump directly to a location, e.g. "Warragamba Dam"
+To navigate to a place on a map, use your mouse to zoom in and drag to move around. Or, enter an address or place into the search bar on the top left to jump directly to a location, e.g. "Ballarat".
 
 To navigate through time, ensure that **Animate** is selected in the bottom panel, then drag the slider underneath **Choose a year to view** on the bottom panel. You can view data for any year for which there is coverage, from 1988 onwards.
 
