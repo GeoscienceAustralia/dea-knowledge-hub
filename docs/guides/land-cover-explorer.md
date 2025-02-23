@@ -54,6 +54,8 @@ Click any location on the map and a popup will appear showing how the classifica
 
 ## Animate changes over time
 
+Note: This feature doesn't currently support animating a specific selection of Land Cover classes.
+
 1. Ensure that **Animate** is selected in the bottom panel
 1. Select the year that you wish to start the animation from.
 1. Click the play icon.
@@ -70,7 +72,7 @@ Click any location on the map and a popup will appear showing how the classifica
 ## Other useful features
 
 * **Save this map view as an image** &mdash; This button is on the left side of the page. This will save the current map view as an image to your computer.
-* **Copy link to this app in its current state** &mdash; This button is on the left side of the page. This will copy a URL to the clipboard of the map in its current state. Anyone who opens this URL will see the map in the same state, with the same configurations and viewing location. You can send this URL to others, link to it from a public website, or bookmark it for later.
+* **Copy link to this app in its current state** &mdash; This button is on the left side of the page. This will copy a URL to the clipboard of the map in its current state. Anyone who opens this URL will see the map in the same state, with the same configurations and viewing location. You can send this URL to others, link to it from a public website, or bookmark it for later. (Note: This feature doesn't currently save your selection of Land Cover classes.)
 * **Accessible colours** &mdash; This will change the colour scheme of the map to increase contrast. This may be useful for people who have difficulty distinguishing colours.
 
 [Explorer]: https://dev.mapexplorer.dea.ga.gov.au/landcoverexplorer/index.html
