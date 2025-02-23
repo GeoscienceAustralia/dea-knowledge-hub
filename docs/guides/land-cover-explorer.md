@@ -54,7 +54,11 @@ Click any location on the map and a popup will appear showing how the classifica
 
 ## Animate changes over time
 
-Note: This feature doesn't currently support animating a specific selection of Land Cover classes.
+**How to exit an animation:** Click the "**&times;**" (Close) button at the top right.
+
+**Note:** This feature doesn't currently support animating a specific selection of Land Cover classes.
+
+To animate changes, follow these steps.
 
 1. Ensure that **Animate** is selected in the bottom panel
 1. Select the year that you wish to start the animation from.
@@ -62,6 +66,10 @@ Note: This feature doesn't currently support animating a specific selection of L
 1. To exit the animation, click the "**&times;**" (Close) button at the top right.
 
 ## Swipe to compare two years
+
+**How to exit the 'swipe' mode:** Click the **Animate** option in the bottom panel.
+
+To compare two years, follow these steps.
 
 1. Ensure that **Swipe** is selected in the bottom panel. The map will now be divided into two sides.
 1. You can now select two years using the **Choose two years to compare** section in the bottom panel, for example: '1990' and '2010'.
@@ -72,7 +80,7 @@ Note: This feature doesn't currently support animating a specific selection of L
 ## Other useful features
 
 * **Save this map view as an image** &mdash; This button is on the left side of the page. This will save the current map view as an image to your computer.
-* **Copy link to this app in its current state** &mdash; This button is on the left side of the page. This will copy a URL to the clipboard of the map in its current state. Anyone who opens this URL will see the map in the same state, with the same configurations, viewing location, and year. You can send this URL to others, link to it from a public website, or bookmark it for later. (Note: This feature doesn't currently save your selection of Land Cover classes.)
+* **Copy link to this app in its current state** &mdash; This button is on the left side of the page. This will copy a URL to the clipboard of the map in its current state. Anyone who opens this URL will see the map in the same state, with the same configurations, viewing location, and year. You can send this URL to others, link to it from a public website, or bookmark it for later. (**Note:** This feature doesn't currently save your selection of Land Cover classes.)
 * **Accessible colours** &mdash; This will change the colour scheme of the map to increase contrast. This may be useful for people who have difficulty distinguishing colours.
 
 [Explorer]: https://dev.mapexplorer.dea.ga.gov.au/landcoverexplorer/index.html
