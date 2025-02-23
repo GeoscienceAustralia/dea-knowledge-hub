@@ -27,7 +27,7 @@ To navigate through time, ensure that **Animate** is selected in the bottom pane
 
 Click **Level 3** in the bottom panel to view the Level 3 dataset. (Learn more about the [Level 3 dataset][LandCoverDescription].)
 
-The Level 3 dataset allows viewing the six base Land Cover classes. These are displayed in the **Land Use/Land Cover Classes** section in the bottom panel as **Cultivated Terrestrial Vegetation**, **Natural Terrestrial Vegetation**, **Natural Aquatic Vegetation**, **Artificial Surface**, **Natural Bare Surface**, and **Water**. They are colour coded so that you can identify them on the map.
+The Level 3 dataset allows viewing the six base Land Cover classes. These are displayed in the **Land Use/Land Cover Classes** section in the bottom panel as **Cultivated Terrestrial Vegetation**, **Natural Terrestrial Vegetation**, **Natural Aquatic Vegetation**, **Artificial Surface**, **Natural Bare Surface**, and **Water**. They are colour-coded so that you can identify them on the map.
 
 Click on a Land Cover class to view only that selected class on the map. Click the same class again to revert to viewing all the classes on the map. (By default, all classes are displayed on the map.)
 
@@ -60,7 +60,7 @@ Click any location on the map and a popup will appear showing how the classifica
 
 To animate changes, follow these steps.
 
-1. Ensure that **Animate** is selected in the bottom panel
+1. Ensure that **Animate** is selected in the bottom panel.
 1. Select the year that you wish to start the animation from.
 1. Click the play icon.
 1. To exit the animation, click the "**&times;**" (Close) button at the top right.
