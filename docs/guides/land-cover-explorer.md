@@ -25,7 +25,7 @@ To navigate through time, ensure that **Animate** is selected in the bottom pane
 
 ## View Level 3
 
-Click **Level 3** in the bottom panel to view the Level 3 dataset. (Learn more about the [Level 3 dataset][LandCoverDescription].)
+Click **Level 3** in the bottom panel to view the [Level 3 dataset][LandCoverDescription].
 
 The Level 3 dataset allows viewing the six base Land Cover classes. These are displayed in the **Land Use/Land Cover Classes** section in the bottom panel as **Cultivated Terrestrial Vegetation**, **Natural Terrestrial Vegetation**, **Natural Aquatic Vegetation**, **Artificial Surface**, **Natural Bare Surface**, and **Water**. They are colour-coded so that you can identify them on the map.
 
@@ -35,14 +35,14 @@ Click on a Land Cover class to view only that selected class on the map. Click t
 
 ## View Level 4
 
-Click **Level 4** in the bottom panel to view the Level 4 dataset. (Learn more about the [Level 4 dataset][LandCoverDescription].)
+Click **Level 4** in the bottom panel to view the [Level 4 dataset][LandCoverDescription].
 
-The Level 4 dataset includes the six base Land Cover classes as well as the sub-classifications of each of these. These sub-classifications each have their own colour code. You can selectively view any classification or compilation of classifications on the map by using the **Land Use/Land Cover Classes** section in the bottom panel. (By default, all classes are displayed on the map.)
+The Level 4 dataset includes the six base Land Cover classes as well as the sub-classifications of each of these. These sub-classifications each have their own colour code. You can selectively view any classification or combination of classifications on the map by using the **Land Use/Land Cover Classes** section in the bottom panel. (By default, all classes are displayed on the map.)
 
-* Tick the checkbox of any of the six base classes to view only that selected class on the map, including all sub-classifications.
-* Click the name of any of these base classes to view its sub-classifications, and tick the checkbox of any of these to selectively view them on the map.
-* Any combination of base classes and sub-classifications can be selectively viewed on the map.
-* To reset this section to the default values, tick then untick each of the base classes.
+1. Tick the checkbox of any of the six base classes to view only that selected class on the map, including all sub-classifications.
+1. Click the name of any of these base classes to view its sub-classifications, and tick the checkbox of any of these to selectively view them on the map.
+1. Any combination of base classes and sub-classifications can be selectively viewed on the map.
+1. To reset this section to the default values, tick then untick each of the base classes.
 
 ![Land Cover Classes section for Level 4](/_files/land_cover/land-cover-classes-section-level-4.png)
 
@@ -67,7 +67,7 @@ To animate changes, follow these steps.
 
 ## Swipe to compare two years
 
-**How to exit a 'swipe' comparison:** Click the **Animate** option in the bottom panel.
+**How to exit the 'swipe' view:** Click the **Animate** option in the bottom panel.
 
 To compare two years, follow these steps.
 
