@@ -72,9 +72,14 @@
       :gutter: 3
 
       .. grid-item-card:: :fas:`newspaper`
-         :link: https://communication.ga.gov.au/dea-news-subscribe
+         :link: https://ga.gov.au/news/subscribe
 
          Subscribe to our newsletter
+
+      .. grid-item-card:: :fas:`box-archive`
+         :link: https://communication.ga.gov.au/dea-news-subscribe
+
+         View archive of newsletters
 
       .. grid-item-card:: :fas:`chart-simple`
          :link: https://status.dea.ga.gov.au/
