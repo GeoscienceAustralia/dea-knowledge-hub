@@ -77,6 +77,8 @@ To compare two years, follow these steps.
 1. You can drag the divider to easily see the difference between the two years.
 1. To exit the 'swipe' view, click the **Animate** option in the bottom panel.
 
+![Swipe view comparing 1990 to 2010.](/_files/land_cover/swipe-view.png)
+
 ## Other useful features
 
 * **Save this map view as an image** &mdash; This button is on the left side of the page. This will save the current map view as an image to your computer.
