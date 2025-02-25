@@ -94,7 +94,20 @@ access_links_web_services:
   - link: https://ows.dea.ga.gov.au/
     name: null
 
-access_links_custom: null
+access_links_custom:
+  - link: https://dev.mapexplorer.dea.ga.gov.au/landcoverexplorer/index.html
+    name: Land Cover Explorer
+    description: Learn how to `use the Land Cover Explorer </guides/land-cover-explorer/>`_
+    label: Land Cover Explorer
+    icon: map-location-dot
+    class: null
+  - link: https://www.google.com/
+    name: Esri web services
+    description: Learn how to `use Esri web services <https://www.google.com/>`_
+    label: Esri web services
+    icon: globe
+    class: null
+
 
 # History
 
