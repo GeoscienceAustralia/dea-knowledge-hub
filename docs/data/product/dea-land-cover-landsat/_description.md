@@ -2,6 +2,12 @@
 
 Land cover is the observed physical cover on the Earth's surface including trees, shrubs, grasses, soils, exposed rocks, water bodies, plantations, crops, and built structures. An Australia-wide land cover product provides an understanding of how the different parts of the environment change and interrelate. Earth observation data recorded consistently over a period of time allows the observation of the state of land cover at a specific time and also the way that land cover changes by comparison between times.
 
+## Use constraints
+
+DEA Land Cover is appropriate to use at the national scale where other more detailed information on land cover is not available. Where DEA Land Cover's data conflicts with state or local datasets, those datasets should be considered authoritative.
+
+% ## Access constraints
+
 ## What this product offers
 
 DEA Land Cover provides annual land cover classifications for Australia using the Food and Agriculture Organisation's (FAO) Land Cover Classification System (LCCS) taxonomy Version 2 (Di Gregorio and Jansen, 1998; 2005).
