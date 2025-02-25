@@ -96,6 +96,6 @@ The styling will now be applied to the TIF classification file, hence enabling a
 
 :::{dropdown} How to use the Land Cover Explorer
 
-[Land Cover Explorer](https://dev.mapexplorer.dea.ga.gov.au/landcoverexplorer/index.html) is a web application developed by Esri. See the [Land Cover Explorer user guide](/guides/land-cover-explorer/).
+[Land Cover Explorer](https://dev.mapexplorer.dea.ga.gov.au/landcoverexplorer/index.html) is a web application developed by Esri. Learn [how to use the Land Cover Explorer](/guides/land-cover-explorer/).
 
 :::
