@@ -93,8 +93,8 @@ access_links_code_examples:
 access_links_custom:
   - link: https://www.dev.mapexplorer.daa.ga.gov.au/landcoverexplorer/index.html#mapCenter=134.11300%2C-27.09700%2C4&mode=step&timeExtent=1988%2C2023&year=2023
     name: Land Cover Explorer (Digital Atlas)
-    description: Learn how to `use the Land Cover Explorer (Digital Atlas) </guides/land-cover-explorer/>`_
-    label: Land Cover Explorer (Digital Atlas)
+    description: Learn how to `use the Land Cover Explorer </guides/land-cover-explorer/>`_
+    label: Land Cover Explorer
     icon: map-location-dot
     class: null
   - link: https://ows.dea.ga.gov.au/
