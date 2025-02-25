@@ -92,9 +92,27 @@ access_links_code_examples:
 
 access_links_web_services:
   - link: https://ows.dea.ga.gov.au/
-    name: null
+    name: OGC web services
 
-access_links_custom: null
+access_links_custom:
+  - link: https://www.dev.mapexplorer.daa.ga.gov.au/landcoverexplorer/index.html#mapCenter=134.11300%2C-27.09700%2C4&mode=step&timeExtent=1988%2C2023&year=2023
+    name: Land Cover Explorer (Digital Atlas)
+    description: Learn how to `use the Land Cover Explorer </guides/land-cover-explorer/>`_
+    label: Land Cover Explorer (Digital Atlas)
+    icon: map-location-dot
+    class: null
+  - link: https://gov.atlas.gov.au/portal/home/item.html?id=4879aeb3e4a7446ba3f0aba4f5d4635e
+    name: "Esri web service: DEA Land Cover Level 3"
+    description: Learn how to `use Esri web services <https://pro.arcgis.com/en/pro-app/latest/help/projects/available-online-resources.htm>`_
+    label: Esri web services
+    icon: globe
+    class: null
+  - link: https://gov.atlas.gov.au/portal/home/item.html?id=3626a8506a3c4ab9a424d51774131441
+    name: "Esri web service: DEA Land Cover Level 4"
+    description: Learn how to `use Esri web services <https://pro.arcgis.com/en/pro-app/latest/help/projects/available-online-resources.htm>`_
+    label: Esri web services
+    icon: globe
+    class: null
 
 # History
 
