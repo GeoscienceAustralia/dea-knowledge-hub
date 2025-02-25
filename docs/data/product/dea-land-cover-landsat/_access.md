@@ -120,7 +120,7 @@ Learn more about [how to add Esri web services to an ArcGIS environment](https:/
 
 :::{dropdown} How to use the Digital Atlas of Australia Land Cover Explorer
 
-The Land Cover Explorer is a web application in [the Digital Atlas of Australia](https://digital.atlas.gov.au/). It has been developed by Esri and contains tools for navigating and visualising both the Level 3 and Level 4 datasets, providing a simpler alternative to plotting DEA Land Cover data yourself. 
+[Land Cover Explorer](https://www.dev.mapexplorer.daa.ga.gov.au/landcoverexplorer/index.html#mapCenter=134.11300%2C-27.09700%2C4&mode=step&timeExtent=1988%2C2023&year=2023) is a web application in the [Digital Atlas of Australia](https://digital.atlas.gov.au/), developed by Esri. It allows you to navigate and visualise the DEA Land Cover datasets.
 
 Learn [how to use the Land Cover Explorer](/guides/land-cover-explorer/).
 
