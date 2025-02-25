@@ -1,6 +1,6 @@
 # Land Cover Explorer
 
-[Land Cover Explorer][Explorer] is a web application developed by Esri for exploring [DEA Land Cover][LandCover] data. It contains tools for navigating and visualising both the Level 3 and Level 4 datasets. (This is an easy alternative to [plotting Land Cover data yourself](/notebooks/DEA_products/DEA_Land_Cover/).)
+[Land Cover Explorer][Explorer] is a web application in the [Digital Atlas of Australia](https://digital.atlas.gov.au/), developed by Esri. It allows you to navigate and visualise the [DEA Land Cover][LandCover] datasets. (This is an easy alternative to [plotting Land Cover data yourself](/notebooks/DEA_products/DEA_Land_Cover/).)
 
 :::{admonition} Start exploring
 :class: note
