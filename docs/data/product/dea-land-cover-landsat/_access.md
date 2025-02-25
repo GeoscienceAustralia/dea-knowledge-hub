@@ -86,9 +86,7 @@ The [Digital Atlas of Australia](https://digital.atlas.gov.au/) brings together 
 
 To get started, use either of these methods.
 
-* An easy way to create a map containing a DEA Land Cover dataset is to go to either of these catalogue pages, then click **Open in Map Viewer**.
-    * [DEA Land Cover Level 3](https://gov.atlas.gov.au/portal/home/item.html?id=4879aeb3e4a7446ba3f0aba4f5d4635e)
-    * [DEA Land Cover Level 4](https://gov.atlas.gov.au/portal/home/item.html?id=3626a8506a3c4ab9a424d51774131441) 
+* An easy way to create a map containing a DEA Land Cover dataset is to go to either of these catalogue pages: [DEA Land Cover Level 3](https://gov.atlas.gov.au/portal/home/item.html?id=4879aeb3e4a7446ba3f0aba4f5d4635e) or [DEA Land Cover Level 4](https://gov.atlas.gov.au/portal/home/item.html?id=3626a8506a3c4ab9a424d51774131441), then click **Open in Map Viewer**.
 * Or, follow these steps to [create a map using the Digital Atlas](https://digital.atlas.gov.au/apps/6b0a217d5c704e8fb6c353d6245585ce/explore) and then add the DEA Land Cover datasets (along with as any other datasets that are of interest).
 
 :::
