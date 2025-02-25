@@ -1,10 +1,3 @@
-% ## Access constraints
-
-:::{dropdown} Use constraints
-
-DEA Land Cover is appropriate to use at the national scale where other more detailed information on land cover is not available. Where DEA Land Cover's data conflicts with state or local datasets, those datasets should be considered authoritative.
-:::
-
 :::{dropdown} How to view the data in a web map
 
 To view and access the data interactively, follow these steps.
@@ -13,6 +6,7 @@ To view and access the data interactively, follow these steps.
 1. Click **Explore map data**.
 1. Click **Land and vegetation** &gt; **DEA Land Cover** &gt; **DEA Land Cover (Landsat)**. 
 1. Click **Add to the map**, or the '**+**' symbol to add the data to the map.
+
 :::
 
 :::{dropdown} How to load data with Python in the DEA Sandbox
@@ -20,6 +14,7 @@ To view and access the data interactively, follow these steps.
 DEA Sandbox allows you to explore DEA’s Earth Observation datasets in a JupyterLab environment. See the guide to [get started with the DEA Sandbox](/guides/setup/Sandbox/sandbox/).
 
 Once you have signed up to the Sandbox, click into the **DEA products** directory to find the **Introduction to DEA Land Cover** notebook. This notebook will walk you through loading and visualising the DEA Land Cover data.
+
 :::
 
 :::{dropdown} How to download data via web browser
@@ -27,6 +22,7 @@ Once you have signed up to the Sandbox, click into the **DEA products** director
 From [DEA's public data (ga_ls_landcover_class_cyear_3)](https://data.dea.ga.gov.au/?prefix=derivative/ga_ls_landcover_class_cyear_3/2-0-0/), navigate through the folders to the year and tile of interest, then click the GeoTIFF file of the relevant layer to download it directly.
 
 To find the X and Y tile values for a particular area, you can use the [DEA Explorer](https://explorer.dea.ga.gov.au/products/ga_ls_landcover_class_cyear_3).
+
 :::
 
 :::{dropdown} How to download data via AWS
@@ -45,6 +41,12 @@ DEA Land Cover data can be downloaded in bulk using Amazon Web Service’s Comma
     * The S3 bucket and folder to download data from is `s3://dea-public-data/derivative/ga_ls_landcover_class_cyear_3/2-0-0/2020`
     * The directory to download to is `C:/landcover/`
     * When you want to specify specific files to download, first you need to exclude everything, then you can define which files to include: `--exclude "*" --include "*_level4.tif" --include "*_level4_rgb.tif"`
+
+:::
+
+:::{dropdown} How to add DEA Land Cover to a Digital Atlas of Australia map
+
+The Digital Atlas of Australia brings together trusted national data in a central platform. Follow these steps to [create a map using the Digital Atlas](https://digital.atlas.gov.au/apps/6b0a217d5c704e8fb6c353d6245585ce/explore) and ensure to add the Land Cover layer.
 
 :::
 
@@ -81,6 +83,7 @@ To add the style to QGIS, do the following.
 1. In the bottom left menu, click **Style** &gt; **Load Style**.
 
 The styling will now be applied to the TIF classification file, hence enabling a colour representation of the Land Cover classifications.
+
 :::
 
 :::{dropdown} How to add DEA Land Cover to ArcMap
@@ -94,5 +97,11 @@ The styling will now be applied to the TIF classification file, hence enabling a
     1. Double-click **Digital Earth Australia – OGC Web Services...**
     1. Select **DEA Land Cover Calendar Year (Landsat)** or **DEA Land Cover Environmental Descriptors**.
     1. Click **Add**.
+
+:::
+
+:::{dropdown} How to use the Land Cover Explorer
+
+[Land Cover Explorer](https://dev.mapexplorer.dea.ga.gov.au/landcoverexplorer/index.html) is a web application developed by Esri. Learn [how to use the Land Cover Explorer](/guides/land-cover-explorer/).
 
 :::

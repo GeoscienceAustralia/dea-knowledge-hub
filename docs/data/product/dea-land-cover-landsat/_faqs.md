@@ -19,38 +19,40 @@ For more details, see the [Quality tab](./?tab=quality).
 
 There are limitations originating from both the source satellite data and the algorithms applied to generate the final Land Cover product.
 
-The primary intrinsic limitation of Earth Observation itself is data availability. Inconsistent data coverage and extended cloud cover periods can lead to gaps in the data, potentially missing entire intra-annual cycles, which impacts the accuracy of the algorithm.
+A fundamental limitation of any form of Earth Observation is data availability. Inconsistent data coverage and extended cloud cover periods can lead to gaps in the data, potentially missing entire intra-annual cycles, and this impairs the accuracy of the algorithm.
 
 Another limitation arises from the spatial resolution of 30 m. Smaller landscape features could be missed entirely and incorrectly classified as the surrounding terrain.
 
-Inaccuracies resulting from the performance of the algorithms generally occur when features within the satellite images resemble different types of features, leading to misclassification. For example, events such as fires and rainfall can cause a response in vegetation that mirrors that of agricultural areas. Canopy in residential suburbs may hinder the correct identification of Artificial Surfaces. Shadows cast by buildings in dense urban areas can be classified as water. Bright sandy regions can be assigned to the Artificial Surfaces class.
+Inaccuracies resulting from the performance of the algorithms generally occur when features within the satellite images resemble different features, leading to misclassification. Some examples are as follows: a) Events such as fires and rainfall can cause a response in vegetation that mirrors that of agricultural areas; b) Canopy in residential suburbs may obscure the correct identification of Artificial Surfaces; c) Shadows cast by buildings in dense urban areas can be classified as water; d) Bright sandy regions can be assigned to the Artificial Surfaces class.
 
 Additionally, lack of training data for specific sub-classes and filters applied to the input images can limit the capabilities of the models to detect some environment types.
 
 For more details, see the [Quality tab](./?tab=quality).
 :::
 
-:::{dropdown} What is the difference between DEA Land Cover Level 3 and Level 4?
+:::{dropdown} What is the difference between Level 3 and Level 4 of the product?
 
-DEA Land Cover is based on the globally applicable Food and Agriculture Organisation’s (FAO) Land Cover Classification System (LCCS). The Level 3 classifications are higher-level, macro-categories that broadly classify the continent into six classes.
+DEA Land Cover is based on the globally applicable Food and Agriculture Organisation’s (FAO) Land Cover Classification System (LCCS). The Level 3 classifications are high-level macro-categories that broadly classify the continent into six classes.
 
-The Level 4 classifications combine the Level 3 classes with their associated descriptors, resulting in more granular classes. For example, it differentiates between woody and herbaceous vegetation, as well as between open, closed, or sparse cover. It also provides information on water persistence, which corresponds to the number of months in a given year when water was present.
+The Level 4 classifications combine the Level 3 classes with their associated descriptors, resulting in more granular classes. For example, it differentiates between woody and herbaceous vegetation, as well as between open, closed, and sparse cover. It also provides information on water persistence, which corresponds to the number of months in a given year when water was present.
 
 For more details, see the [Quality tab](./?tab=quality).
 :::
 
-:::{dropdown} What Landsat satellites were used for generating the DEA Land Cover classification?
+:::{dropdown} Which Landsat satellites were used for generating the DEA Land Cover classification?
 
-To generate the land cover classification for each calendar year, annual statistics (January to December) derived from Landsat-5, -7, -8, and -9 observations were used. This is an improvement over Version 1, which only used Landsat-5, -7, and -8.
+To generate the Land Cover classification for each calendar year, annual statistics (January to December) derived from the following Landsat satellites were used: Landsat 5, Landsat 7, Landsat 8, Landsat 9
 
-Please refer to the [Specifications](./?tab=specifications) and [Quality](./?tab=quality) tabs of the Land Cover product for more details.
+This is an improvement over Version 1.0, which only used Landsat 5, Landsat 7, and Landsat 8.
+
+For more details, see the [Specifications tab](./?tab=specifications) and [Quality tab](./?tab=quality).
 :::
 
-:::{dropdown} Is the DEA Land Cover data available for free?
+:::{dropdown} Is this data available for free?
 
-Yes, the DEA Land Cover data is free of charge and released under the [Creative Commons Attribution 4.0 International Licence](https://creativecommons.org/licenses/by/4.0/). However, licenses for specific platforms where the Land Cover data can be accessed, as well as additional data available on those platforms, may vary.
+Yes, the DEA Land Cover data is free of charge and released under the Creative Commons Attribution 4.0 International Licence. However, licenses for specific platforms where the Land Cover data can be accessed, as well as additional data available on those platforms may vary.
 
-Please refer to the [Access](./?tab=access) and [Credits](./?tab=credits) tabs of the Land Cover product for more details.
+For more details, see the [Access tab](./?tab=access) and [Credits tab](./?tab=credits).
 :::
 
 % :::{dropdown} QUESTION
