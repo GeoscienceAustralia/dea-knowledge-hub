@@ -95,7 +95,7 @@ access_links_web_services:
     name: null
 
 access_links_custom:
-  - link: https://dev.mapexplorer.dea.ga.gov.au/landcoverexplorer/index.html
+  - link: https://www.dev.mapexplorer.daa.ga.gov.au/landcoverexplorer/index.html#mapCenter=134.11300%2C-27.09700%2C4&mode=step&timeExtent=1988%2C2023&year=2023
     name: Land Cover Explorer
     description: Learn how to `use the Land Cover Explorer </guides/land-cover-explorer/>`_
     label: Land Cover Explorer
