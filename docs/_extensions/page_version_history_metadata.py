@@ -47,7 +47,7 @@ def page_version_history_metadata(app, pagename, templatename, context, doctree)
             ]
         )
 
-        print(git_log_results)
+        print(git_log_results) # TODO Remove this after testing
 
         context["page_version_history_metadata"]["last_updated_hash"] = git_log_results[0]
 
@@ -75,7 +75,7 @@ def page_version_history_metadata(app, pagename, templatename, context, doctree)
             ]
         )
 
-        print(git_log_results)
+        print(git_log_results) # TODO Remove this after testing
 
         context["page_version_history_metadata"]["created_at_hash"] = git_log_results[0]
 
