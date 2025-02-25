@@ -44,12 +44,6 @@ DEA Land Cover data can be downloaded in bulk using Amazon Web Service’s Comma
 
 :::
 
-:::{dropdown} How to add DEA Land Cover to a Digital Atlas of Australia map
-
-The Digital Atlas of Australia brings together trusted national data in a central platform. Follow these steps to [create a map using the Digital Atlas](https://digital.atlas.gov.au/apps/6b0a217d5c704e8fb6c353d6245585ce/explore) and ensure to add the layer [DEA Land Cover Level 3](https://gov.atlas.gov.au/portal/home/item.html?id=4879aeb3e4a7446ba3f0aba4f5d4635e) or [DEA Land Cover Level 4](https://gov.atlas.gov.au/portal/home/item.html?id=3626a8506a3c4ab9a424d51774131441).
-
-:::
-
 :::{dropdown} How to add DEA Land Cover to QGIS using the OWS web service
 
 Note: You must be using QGIS version 3.22 or above to use the time dimension.
@@ -86,11 +80,22 @@ The styling will now be applied to the TIF classification file, hence enabling a
 
 :::
 
-:::{dropdown} How to add DEA Land Cover to ArcMap
+:::{dropdown} How to view DEA Land Cover in the Digital Atlas of Australia
 
-1. Add Digital Earth Australia to the GIS Servers.
-    1. Click **Windows** &gt; **Catalog** &gt; &gt; **GIS Servers** &gt; **Add WMTS Server**.
-    1. Enter `https://ows.dea.ga.gov.au/` into the URL field, then click **Ok**.
+[The Digital Atlas of Australia](https://digital.atlas.gov.au/) brings together trusted national data in a central platform. The Digital Atlas provides a platform for anyone, anywhere to explore, analyse and visualise spatial data. 
+
+Follow these steps to [create a map using the Digital Atlas](https://digital.atlas.gov.au/apps/6b0a217d5c704e8fb6c353d6245585ce/explore). You can then bring in which ever datasets available in Digital Atlas are of interest to you, including the DEA Land Cover products.
+
+You can also open the 
+* [DEA Land Cover Level 3](https://gov.atlas.gov.au/portal/home/item.html?id=4879aeb3e4a7446ba3f0aba4f5d4635e), or 
+* [DEA Land Cover Level 4](https://gov.atlas.gov.au/portal/home/item.html?id=3626a8506a3c4ab9a424d51774131441) 
+
+catalogue items, and select "Open in Map Viewer" to open a map with the data already pre-loaded.
+
+:::
+
+:::{dropdown} How to add DEA Land Cover to your own Esri environment
+
 1. Add the layer to your map.
     1. In the top menu bar, click **File** &gt; **Add Data** &gt; **Add Data...**
     1. Select **Add layer from URL** then add one of the following URLs.
@@ -114,8 +119,10 @@ Learn more about [how to add Esri web services to an ArcGIS environment](https:/
 
 :::
 
-:::{dropdown} How to use the Land Cover Explorer
+:::{dropdown} How to use the Digital Atlas of Australia Land Cover Explorer
 
-Land Cover Explorer is a web application developed by Esri. Learn [how to use the Land Cover Explorer](/guides/land-cover-explorer/).
+The Land Cover Explorer is a web application in [the Digital Atlas of Australia](https://digital.atlas.gov.au/). It has been developed by Esri and contains tools for navigating and visualising both the Level 3 and Level 4 datasets, providing a simpler alternative to plotting DEA Land Cover data yourself. 
+
+Learn [how to use the Land Cover Explorer](/guides/land-cover-explorer/).
 
 :::
