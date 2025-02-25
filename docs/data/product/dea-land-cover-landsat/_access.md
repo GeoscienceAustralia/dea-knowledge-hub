@@ -46,7 +46,7 @@ DEA Land Cover data can be downloaded in bulk using Amazon Web Service’s Comma
 
 :::{dropdown} How to add DEA Land Cover to a Digital Atlas of Australia map
 
-The Digital Atlas of Australia brings together trusted national data in a central platform. Follow these steps to [create a map using the Digital Atlas](https://digital.atlas.gov.au/apps/6b0a217d5c704e8fb6c353d6245585ce/explore) and ensure to add the Land Cover layer.
+The Digital Atlas of Australia brings together trusted national data in a central platform. Follow these steps to [create a map using the Digital Atlas](https://digital.atlas.gov.au/apps/6b0a217d5c704e8fb6c353d6245585ce/explore) and ensure to add the layer **DEA Land Cover Level 3** or **DEA Land Cover Level 4**.
 
 :::
 
