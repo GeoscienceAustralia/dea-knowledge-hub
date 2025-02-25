@@ -104,9 +104,9 @@ The styling will now be applied to the TIF classification file, hence enabling a
             ```
     1. Note that the layer type is **ArcGIS Server web service**.
     1. Click **Add**.
-1. Set the time internal to 1 year.
+1. Set the time internal to '1 year'.
     1. Ensure that the time slider is enabled to allow you to navigate through the annual layers in the dataset.
-    1. By default, three years of data will be displayed. You'll need to change this; open the **Time slider options** &gt; open **Time intervals** &gt; set the **Length of one interval** to 1 year.
+    1. By default, three years of data will be displayed. You'll need to change this; open the **Time slider options** &gt; open **Time intervals** &gt; set the **Length of one interval** to '1 year'.
 
 Learn more about [how to add Esri web services to an ArcGIS environment](https://pro.arcgis.com/en/pro-app/latest/help/projects/available-online-resources.htm).
 
