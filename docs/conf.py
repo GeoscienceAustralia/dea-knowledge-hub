@@ -1,6 +1,6 @@
 import os
 import sys
-sys.path.append(os.path.abspath("./_ext"))
+sys.path.append(os.path.abspath("./_extensions"))
 sys.path.insert(0, os.path.abspath('.'))
 from _modules import utilities
 from _modules import mock_imports
