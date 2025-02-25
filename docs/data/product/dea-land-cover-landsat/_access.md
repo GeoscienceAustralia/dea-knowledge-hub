@@ -6,6 +6,7 @@ To view and access the data interactively, follow these steps.
 1. Click **Explore map data**.
 1. Click **Land and vegetation** &gt; **DEA Land Cover** &gt; **DEA Land Cover (Landsat)**. 
 1. Click **Add to the map**, or the '**+**' symbol to add the data to the map.
+
 :::
 
 :::{dropdown} How to load data with Python in the DEA Sandbox
@@ -13,6 +14,7 @@ To view and access the data interactively, follow these steps.
 DEA Sandbox allows you to explore DEA’s Earth Observation datasets in a JupyterLab environment. See the guide to [get started with the DEA Sandbox](/guides/setup/Sandbox/sandbox/).
 
 Once you have signed up to the Sandbox, click into the **DEA products** directory to find the **Introduction to DEA Land Cover** notebook. This notebook will walk you through loading and visualising the DEA Land Cover data.
+
 :::
 
 :::{dropdown} How to download data via web browser
@@ -20,6 +22,7 @@ Once you have signed up to the Sandbox, click into the **DEA products** director
 From [DEA's public data (ga_ls_landcover_class_cyear_3)](https://data.dea.ga.gov.au/?prefix=derivative/ga_ls_landcover_class_cyear_3/2-0-0/), navigate through the folders to the year and tile of interest, then click the GeoTIFF file of the relevant layer to download it directly.
 
 To find the X and Y tile values for a particular area, you can use the [DEA Explorer](https://explorer.dea.ga.gov.au/products/ga_ls_landcover_class_cyear_3).
+
 :::
 
 :::{dropdown} How to download data via AWS
@@ -74,6 +77,7 @@ To add the style to QGIS, do the following.
 1. In the bottom left menu, click **Style** &gt; **Load Style**.
 
 The styling will now be applied to the TIF classification file, hence enabling a colour representation of the Land Cover classifications.
+
 :::
 
 :::{dropdown} How to add DEA Land Cover to ArcMap
