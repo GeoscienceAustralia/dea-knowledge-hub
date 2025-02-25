@@ -94,8 +94,14 @@ The styling will now be applied to the TIF classification file, hence enabling a
 1. Add the layer to your map.
     1. In the top menu bar, click **File** &gt; **Add Data** &gt; **Add Data...**
     1. Select **Add layer from URL** then add one of the following URLs.
-        * For [DEA Land Cover Level 3](https://gov.atlas.gov.au/portal/home/item.html?id=4879aeb3e4a7446ba3f0aba4f5d4635e): `https://di-daa.img.arcgis.com/arcgis/rest/services/Land_and_vegetation/DEA_Landcover_Landsat_Level3/ImageServer`
-        * For [DEA Land Cover Level 4](https://gov.atlas.gov.au/portal/home/item.html?id=3626a8506a3c4ab9a424d51774131441): `https://di-daa.img.arcgis.com/arcgis/rest/services/Land_and_vegetation/DEA_Landcover_Landsat_Level4/ImageServer`
+        * For [DEA Land Cover Level 3](https://gov.atlas.gov.au/portal/home/item.html?id=4879aeb3e4a7446ba3f0aba4f5d4635e):
+            ```
+            https://di-daa.img.arcgis.com/arcgis/rest/services/Land_and_vegetation/DEA_Landcover_Landsat_Level3/ImageServer
+            ```
+        * For [DEA Land Cover Level 4](https://gov.atlas.gov.au/portal/home/item.html?id=3626a8506a3c4ab9a424d51774131441):
+            ```
+            https://di-daa.img.arcgis.com/arcgis/rest/services/Land_and_vegetation/DEA_Landcover_Landsat_Level4/ImageServer
+            ```
     1. Note that the layer type is **ArcGIS Server web service**.
     1. Click **Add**.
 1. Set the time internal to 1 year.
