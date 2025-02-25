@@ -77,7 +77,7 @@
          Subscribe to our newsletter
 
       .. grid-item-card:: :fas:`box-archive`
-         :link: https://communication.ga.gov.au/dea-news-subscribe
+         :link: https://communication.ga.gov.au/dea-newsletter-archive
 
          View archive of newsletters
 
