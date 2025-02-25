@@ -100,6 +100,22 @@ The styling will now be applied to the TIF classification file, hence enabling a
 
 :::
 
+:::{dropdown} How to add DEA Land Cover to ArcMap
+
+To add the layers to a map, select "Add layer from URL".
+
+For Land Cover Level 3: https://di-daa.img.arcgis.com/arcgis/rest/services/Land_and_vegetation/DEA_Landcover_Landsat_Level3/ImageServer 
+
+For Land Cover Level 4: https://di-daa.img.arcgis.com/arcgis/rest/services/Land_and_vegetation/DEA_Landcover_Landsat_Level4/ImageServer 
+
+The layer type is "ArcGIS Server web service"
+
+**Note** When the layers are brought into your map, ensure that the time slider is enabled to allow you to navigate through the annual layers in the dataset. The default settings in the time slider displays three years of data at a time, so open the time slider options and using the "time intervals" setting, set the "length of one interval" to 1 year to make the data display properly. 
+
+![Esri time slider options window](/_files/land_cover/Esri_time_options.PNG)
+
+:::
+
 :::{dropdown} How to use the Land Cover Explorer
 
 Land Cover Explorer is a web application developed by Esri. Learn [how to use the Land Cover Explorer](/guides/land-cover-explorer/).
