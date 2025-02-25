@@ -4,17 +4,17 @@
 
 DEA Land Cover is appropriate to use at the national scale where other more detailed information on land cover is not available. Where DEA land cover shows conflicting information to state or local datasets, those datasets should be considered authoritative.
 
-:::{dropdown} How to view the data in a web map
-
-To view and access the data interactively:
-1) Visit [DEA Maps](https://maps.dea.ga.gov.au).
-
-2) Click `Explore map data`.
-
-3) Select `Land and vegetation` > `DEA Land Cover` > `DEA Land Cover (Landsat)`. 
-
-5) Click `Add to the map`, or the `+` symbol to add the data to the map.
-:::
+% :::{dropdown} How to view the data in a web map
+% 
+% To view and access the data interactively:
+% 1) Visit [DEA Maps](https://maps.dea.ga.gov.au).
+% 
+% 2) Click `Explore map data`.
+% 
+% 3) Select `Land and vegetation` > `DEA Land Cover` > `DEA Land Cover (Landsat)`. 
+% 
+% 5) Click `Add to the map`, or the `+` symbol to add the data to the map.
+% :::
 
 :::{dropdown} How to load data with Python in the DEA Sandbox
 

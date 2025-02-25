@@ -53,9 +53,9 @@ tags:
 
 # Access
 
-access_links_maps:
-  - link: https://maps.dea.ga.gov.au/story/DEALandCover
-    name: null
+access_links_maps: null
+  # - link: https://maps.dea.ga.gov.au/story/DEALandCover
+  #   name: null
 
 access_links_explorers:
   - link: https://explorer.dea.ga.gov.au/products/ga_ls_landcover_class_cyear_2
@@ -65,13 +65,13 @@ access_links_data:
   - link: http://dea-public-data.s3-website-ap-southeast-2.amazonaws.com/?prefix=derivative/ga_ls_landcover_class_cyear_2/
     name: Access the data on AWS
 
-access_links_code_examples:
-  - link: /notebooks/DEA_products/DEA_Land_Cover/
-    name: null
+access_links_code_examples: null
+  # - link: /notebooks/DEA_products/DEA_Land_Cover/
+  #   name: null
 
-access_links_web_services:
-  - link: https://ows.dea.ga.gov.au/
-    name: null
+access_links_web_services: null
+  # - link: https://ows.dea.ga.gov.au/
+  #   name: null
 
 access_links_custom: null
 
