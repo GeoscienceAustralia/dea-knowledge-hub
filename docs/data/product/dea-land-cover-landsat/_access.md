@@ -46,7 +46,7 @@ DEA Land Cover data can be downloaded in bulk using Amazon Web Service’s Comma
 
 :::{dropdown} How to add DEA Land Cover to a Digital Atlas of Australia map
 
-The Digital Atlas of Australia brings together trusted national data in a central platform. Follow these steps to [create a map using the Digital Atlas](https://digital.atlas.gov.au/apps/6b0a217d5c704e8fb6c353d6245585ce/explore) and ensure to add the layer **DEA Land Cover Level 3** or **DEA Land Cover Level 4**.
+The Digital Atlas of Australia brings together trusted national data in a central platform. Follow these steps to [create a map using the Digital Atlas](https://digital.atlas.gov.au/apps/6b0a217d5c704e8fb6c353d6245585ce/explore) and ensure to add the layer [DEA Land Cover Level 3](https://gov.atlas.gov.au/portal/home/item.html?id=4879aeb3e4a7446ba3f0aba4f5d4635e) or [DEA Land Cover Level 4](https://gov.atlas.gov.au/portal/home/item.html?id=3626a8506a3c4ab9a424d51774131441).
 
 :::
 
@@ -88,29 +88,19 @@ The styling will now be applied to the TIF classification file, hence enabling a
 
 :::{dropdown} How to add DEA Land Cover to ArcMap
 
-1. Add Digital Earth Australia to the GIS Servers:
+1. Add Digital Earth Australia to the GIS Servers.
     1. Click **Windows** &gt; **Catalog** &gt; &gt; **GIS Servers** &gt; **Add WMTS Server**.
     1. Enter `https://ows.dea.ga.gov.au/` into the URL field, then click **Ok**.
-1. Add the layer to your map:
+1. Add the layer to your map.
     1. In the top menu bar, click **File** &gt; **Add Data** &gt; **Add Data...**
-    1. Click the **Look in** selector then choose **GIS Servers**.
-    1. Double-click **Digital Earth Australia – OGC Web Services...**
-    1. Select **DEA Land Cover Calendar Year (Landsat)** or **DEA Land Cover Environmental Descriptors**.
+    1. Select **Add layer from URL** then add one of the following URLs.
+        * For Land Cover Level 3: `https://di-daa.img.arcgis.com/arcgis/rest/services/Land_and_vegetation/DEA_Landcover_Landsat_Level3/ImageServer`
+        * For Land Cover Level 4: `https://di-daa.img.arcgis.com/arcgis/rest/services/Land_and_vegetation/DEA_Landcover_Landsat_Level4/ImageServer`
+    1. Note that the layer type is **ArcGIS Server web service**.
     1. Click **Add**.
-
-:::
-
-:::{dropdown} How to add DEA Land Cover to ArcMap
-
-To add the layers to a map, select "Add layer from URL".
-
-For Land Cover Level 3: https://di-daa.img.arcgis.com/arcgis/rest/services/Land_and_vegetation/DEA_Landcover_Landsat_Level3/ImageServer 
-
-For Land Cover Level 4: https://di-daa.img.arcgis.com/arcgis/rest/services/Land_and_vegetation/DEA_Landcover_Landsat_Level4/ImageServer 
-
-The layer type is "ArcGIS Server web service"
-
-**Note** When the layers are brought into your map, ensure that the time slider is enabled to allow you to navigate through the annual layers in the dataset. The default settings in the time slider displays three years of data at a time, so open the time slider options and using the "time intervals" setting, set the "length of one interval" to 1 year to make the data display properly. 
+1. Set the time internal to 1 year.
+    1. Ensure that the time slider is enabled to allow you to navigate through the annual layers in the dataset.
+    1. By default, three years of data will be displayed. Open the time slider options and in the **Time intervals** section, set the **Length of one interval** to 1 year.
 
 ![Esri time slider options window](/_files/land_cover/Esri_time_options.PNG)
 
