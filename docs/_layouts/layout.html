@@ -34,3 +34,16 @@
 {{ super() }}
 {% endblock %}
 
+{% block body %}
+{{ super() }}
+
+{% if page_version_history_metadata.last_updated_hash or page_version_history_metadata.created_at_hash %}
+<div class="page-version-history-metadata">
+    <div>
+        {% if page_version_history_metadata.last_updated_hash %}<div>Last updated on {{ page_version_history_metadata.last_updated_date }}</div>{% endif %}
+        {% if page_version_history_metadata.created_at_hash %}<div>Created on {{ page_version_history_metadata.created_at_date }}</div>{% endif %}
+    </div>
+</div>
+{% endif %}
+{% endblock %}
+
