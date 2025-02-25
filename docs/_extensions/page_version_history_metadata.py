@@ -47,6 +47,8 @@ def page_version_history_metadata(app, pagename, templatename, context, doctree)
             ]
         )
 
+        print(git_log_results)
+
         context["page_version_history_metadata"]["last_updated_hash"] = git_log_results[0]
 
         context["page_version_history_metadata"]["last_updated_date"] = git_log_results[1]
@@ -72,6 +74,8 @@ def page_version_history_metadata(app, pagename, templatename, context, doctree)
                 page_filepath_absolute_with_extension_glob,
             ]
         )
+
+        print(git_log_results)
 
         context["page_version_history_metadata"]["created_at_hash"] = git_log_results[0]
 
