@@ -62,7 +62,7 @@ To animate changes, follow these steps.
 
 1. Ensure that **Animate** is selected in the bottom panel.
 1. Select the year that you wish to start the animation from.
-1. Click the play icon.
+1. Click the "**&#9205;**" (Play) icon.
 1. To exit the animation, click the "**&times;**" (Close) button at the top right.
 
 ## Swipe to compare two years
