@@ -154,7 +154,9 @@ The Water class captures terrestrial and coastal open water such as dams, lakes,
 
 :::{dropdown} Classifications of Level 4
 
-All Level 3 and Level 4 classes for a given pixel are combined to give a single classification value.
+All categories from Level 3 and Level 4 algorithms are combined to give a single classification value for a given pixel.
+
+The list below includes classes of different hierarchies, reflecting different levels of detail. The higher-level classes are used as fallback classes in cases where a confident detailed classification was not possible, and they are generally rare.
 
 ```text
 1:    Cultivated Terrestrial Vegetated
