@@ -54,7 +54,7 @@ Click any location on the map and a popup will appear showing how the classifica
 
 ## Animate changes over time
 
-**How to exit an animation:** Click the "**&times;**" (Close) button at the top right.
+**How to exit an animation:** Either click "**&times;**" next to the timeline or the "**&times;**" button at the top right.
 
 **Note:** This feature doesn't currently support animating a specific selection of Land Cover classes.
 
@@ -63,7 +63,8 @@ To animate changes, follow these steps.
 1. Ensure that **Animate** is selected in the bottom panel.
 1. Select the year that you wish to start the animation from.
 1. Click the "**&#9205;**" (Play) icon.
-1. To exit the animation, click the "**&times;**" (Close) button at the top right.
+1. You can use the "**&#9208;**" button to pause the animation.
+1. To exit the animation, either click "**&times;**" next to the timeline or the "**&times;**" button at the top right.
 
 ## Swipe to compare two years
 
