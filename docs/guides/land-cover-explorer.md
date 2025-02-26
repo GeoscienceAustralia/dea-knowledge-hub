@@ -5,7 +5,7 @@
 :::{admonition} Start exploring
 :class: note
 
-Open the [Land Cover Explorer][Explorer]
+Open the [Land Cover Explorer (Digital Atlas)][Explorer]
 :::
 
 :::{contents} In this guide
