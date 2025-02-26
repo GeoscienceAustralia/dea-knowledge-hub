@@ -157,7 +157,9 @@ The Water class captures terrestrial and coastal open water such as dams, lakes,
 All Level 3 and Level 4 classes for a given pixel are combined to give a single classification value.
 
 ```text
-1:    Cultivated Terrestrial Vegetated  
+1:    Cultivated Terrestrial Vegetated
+
+2:    Cultivated Terrestrial Vegetated: Woody
 
 3:    Cultivated Terrestrial Vegetated: Herbaceous  
 
