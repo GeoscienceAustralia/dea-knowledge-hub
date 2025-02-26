@@ -85,7 +85,7 @@ To compare two years, follow these steps.
 * **Save this map view as an image** &mdash; This button is on the left side of the page. This will save the current map view as an image to your computer.
 * **Copy link to this app in its current state** &mdash; This button is on the left side of the page. This will copy a URL to the clipboard of the map in its current state. Anyone who opens this URL will see the map in the same state, with the same configurations, viewing location, and year. You can send this URL to others, link to it from a public website, or bookmark it for later. (**Note:** This feature doesn't currently save your selection of Land Cover classes.)
 * **Accessible colours** &mdash; This button is on the right side of the page. This will change the colour scheme of the map to increase contrast. This may be useful for people who have difficulty distinguishing colours.
-* **About this app** &mdash; This button is at the top left of the page. It provides you with more information about this web application and its data.
+* **About this app** &mdash; This button (**&#9432;**) is at the top left of the page. It provides you with more information about this web application and its data.
 
 [Explorer]: https://www.dev.mapexplorer.daa.ga.gov.au/landcoverexplorer/index.html#mapCenter=134.11300%2C-27.09700%2C4&mode=step&timeExtent=1988%2C2023&year=2023
 [LandCover]: /data/product/dea-land-cover-landsat/
