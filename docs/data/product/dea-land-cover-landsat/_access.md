@@ -67,8 +67,8 @@ Individual tiles can be downloaded via web browser or AWS by following the above
 
 The QGIS style files can be downloaded from the following locations.
 
-* [Level 3 QGIS Style](https://dea-public-data-dev.s3.ap-southeast-2.amazonaws.com/derivative/ga_ls_landcover_class_cyear_3/ga_ls_landcover_class_cyear_3_style.qml)
-* [Level 4 QGIS Style](https://dea-public-data-dev.s3.ap-southeast-2.amazonaws.com/derivative/ga_ls_landcover_class_cyear_3/ga_ls_landcover_class_cyear_4_style.qml)
+* [Level 3 QGIS Style](https://dea-public-data.s3.ap-southeast-2.amazonaws.com/derivative/ga_ls_landcover_class_cyear_3/ga_ls_landcover_class_cyear_3_style.qml)
+* [Level 4 QGIS Style](https://dea-public-data.s3.ap-southeast-2.amazonaws.com/derivative/ga_ls_landcover_class_cyear_3/ga_ls_landcover_class_cyear_4_style.qml)
 
 To add the style to QGIS, do the following.
 
