@@ -14,12 +14,14 @@ We are excited to announce the release of [DEA Land Cover 2.0.0](/data/product/d
 
 * **Breaking change:** Shift in grid origin point
 * **Breaking change:** Data structure changes
-* Enhanced cloud masking to reduce noise
+* Improved cloud masking to reduce noise
 * Landsat 9 included
-* Collection Upgrade
 * Machine Learning Upgrade
+* Pixel resolution
 * Product ID Update
 * 'No data' value changed
+* Level 4 classification update
+* Collection Upgrade
 
 DEA Land Cover 1.0.0 will be decommissioned in June 2025.
 
