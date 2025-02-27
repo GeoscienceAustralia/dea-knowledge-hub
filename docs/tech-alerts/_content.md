@@ -13,9 +13,9 @@ Learn more about the [DEA Summary Product Grid](/guides/reference/collection_3_s
 We are excited to announce the release of [DEA Land Cover 2.0.0](/data/product/dea-land-cover-landsat/). This latest version introduces improvements to the DEA Land Cover product, enhancing the translation of over three decades of satellite imagery into evidence of how Australia’s land, vegetation, and waterbodies have changed over time.
 
 * **Breaking change:** Shift in grid origin point
+* **Breaking change:** Data structure changes
 * Enhanced cloud masking to reduce noise
 * Landsat 9 included
-* Data Structure Changes
 * Collection Upgrade
 * Machine Learning Upgrade
 * Product ID Update
