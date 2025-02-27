@@ -21,7 +21,7 @@ def handle_exception(error):
     pass
 
 def page_version_history_metadata(app, pagename, templatename, context, doctree):
-    page_filepath_absolute_with_extension_glob = os.path.join(app.srcdir, pagename + ".*")
+    page_filepath_absolute_with_extension_glob = os.path.join(app.srcdir, pagename + ".md")
 
     context["page_version_history_metadata"] = {
         "last_updated_hash": None,
