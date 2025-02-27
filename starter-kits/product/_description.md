@@ -2,6 +2,10 @@
 
 % ## Background
 
+% ## Access constraints
+
+% ## Use constraints
+
 ## Applications
 
 ## Technical information
