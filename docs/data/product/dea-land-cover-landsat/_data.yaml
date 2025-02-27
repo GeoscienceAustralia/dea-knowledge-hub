@@ -4,7 +4,7 @@
 
 short_name: DEA Land Cover (Landsat)
 full_technical_name: "Geoscience Australia Landsat Land Cover 30m"
-header_image: /_files/land_cover/land-cover-2-0-0-hero-image-size-50perc.png
+header_image: /_files/land_cover/lake_carnegie_size_50_percent.png
 version_number: 2.0.0
 is_latest_version: true
 latest_version_link: null
