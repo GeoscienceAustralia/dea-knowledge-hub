@@ -28,10 +28,6 @@ def page_version_history_metadata(app, pagename, templatename, context, doctree)
         "last_updated_date": None,
         "last_updated_author_name": None,
         "last_updated_subject": None,
-        "created_at_hash": None,
-        "created_at_date": None,
-        "created_at_author_name": None,
-        "created_at_subject": None,
     }
 
     try:
@@ -56,34 +52,6 @@ def page_version_history_metadata(app, pagename, templatename, context, doctree)
         context["page_version_history_metadata"]["last_updated_author_name"] = git_log_results[2]
 
         context["page_version_history_metadata"]["last_updated_subject"] = git_log_results[3]
-
-    except (ValueError, Exception) as e:
-        handle_exception(e)
-
-    try:
-        git_log_results = run_git_log(
-            [
-                "git",
-                "log",
-                "-1",
-                "--follow",
-                "--diff-filter=A",
-                "--date=format:%-d %b %Y",
-                "--pretty=format:%H|%ad|%an|%s",
-                "--",
-                page_filepath_absolute_with_extension_glob,
-            ]
-        )
-
-        print(git_log_results) # TODO Remove this after testing
-
-        context["page_version_history_metadata"]["created_at_hash"] = git_log_results[0]
-
-        context["page_version_history_metadata"]["created_at_date"] = git_log_results[1]
-
-        context["page_version_history_metadata"]["created_at_author_name"] = git_log_results[2]
-
-        context["page_version_history_metadata"]["created_at_subject"] = git_log_results[3]
 
     except (ValueError, Exception) as e:
         handle_exception(e)
