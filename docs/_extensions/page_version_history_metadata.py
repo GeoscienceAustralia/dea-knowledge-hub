@@ -43,6 +43,7 @@ def page_version_history_metadata(app, pagename, templatename, context, doctree)
             ]
         )
 
+        print(page_filepath_absolute_with_extension_glob) # TODO Remove this after testing
         print(git_log_results) # TODO Remove this after testing
 
         context["page_version_history_metadata"]["last_updated_hash"] = git_log_results[0]
