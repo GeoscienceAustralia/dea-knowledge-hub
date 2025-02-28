@@ -85,7 +85,7 @@ The following table defines each of the basic classifications in the WOFL. Each 
   - This pixel is classified as water.
 :::
 
-A pixel can be classified by multiple of these classifications at once. This is encoded into the WOFL by adding the decimal values of multiple classifications together. For example, a pixel with the decimal value 160 is both Water and Cloud shadow because 128 + 32 = 160.
+A pixel can be classified by multiple of these classifications at once. This is encoded into the WOFL by adding the decimal values of multiple classifications together. For example, a pixel with the decimal value 160 is both Water and Cloud shadow (because 128 + 32 = 160).
 
 More than two classifications can be combined. For example, pixel with the decimal value 56 is classified as High slope and Cloud shadow and Terrain shadow (because 16 + 32 + 8 = 56).
 
