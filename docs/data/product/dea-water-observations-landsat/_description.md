@@ -34,12 +34,6 @@ Here is a colour map showing how the data displays in a mapping application such
 
 ![Colour map of Water Observations product.](/_files/water-observations/colour-map-water-observations.png)
 
-Some of these colours are mapped to combinations of multiple values.
-
-* **Shaded Water** &mdash; Water and Terrain Shadow (128 + 8 = 136).
-* **Cloudy Water** &mdash; Water and Cloud Shadow (128 + 32 = 160).
-* **Cloudy Steep Terrain** &mdash; Steep Terrain and Terrain Shadow (16 + 8 = 24).
-
 More than two of these values can be combined, for example Steep Terrain and Cloud Shadow and Terrain Shadow (16 + 32 + 8 = 56).
 
 The table below describes the meaning of each bit set per pixel in each WOFL.
@@ -52,7 +46,7 @@ The table below describes the meaning of each bit set per pixel in each WOFL.
   - Decimal
   - Description
 
-* - **No Data**
+* - **No data**
   - 0
   - 1
   - Missing or invalid data. Pixel masked out due to NO_DATA in NBART source, 0 = valid data in NBART.
@@ -62,12 +56,12 @@ The table below describes the meaning of each bit set per pixel in each WOFL.
   - 2
   - Some data is missing in the original image (usually missing bands). Pixel masked out due to lack of data contiguity.
 
-* - **Low Solar Angle**
+* - **Low solar angle**
   - 2
   - 4
   - Also known as Solar Incidence. The angle of the sun can cast a large shadow which can be misclassified as water. Pixel masked out due to solar incidence of less than 10 degrees.
 
-* - **Terrain Shadow**
+* - **Terrain shadow**
   - 3
   - 8
   - Topographic features can cast shadows which can be misclassified as water. Pixel masked out due to terrain shadow.
@@ -77,7 +71,7 @@ The table below describes the meaning of each bit set per pixel in each WOFL.
   - 16
   - A highly sloped terrain is less likely to contain water, so therefore, a detection of water on this surface is often incorrect. Pixel masked out due to high slope.
 
-* - **Cloud Shadow**
+* - **Cloud shadow**
   - 5
   - 32
   - Shadows are likely to be misclassified as water. Pixel masked out due to cloud shadow.
@@ -93,7 +87,9 @@ The table below describes the meaning of each bit set per pixel in each WOFL.
   - This pixel is classified as water.
 :::
 
-The following table shows the combinations of decimal values. Some values cannot occur, for any of several reasons, and these values are greyed-out in the table.
+Learn more about bit flags in the [DEA Notebook: Introduction to DEA Water Observations](/notebooks/DEA_products/DEA_Water_Observations/).
+
+The following table shows the combinations of decimal values. Some values cannot occur (for any of several reasons), and these values are greyed-out in the table.
 
 :::{include} ../../../_components/water-observations-combination-decimals-table.md
 :::
