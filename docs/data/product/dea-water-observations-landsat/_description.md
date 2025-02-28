@@ -28,21 +28,19 @@ As the WOs are separated from the derived statistics of the associated DEA Water
 
 Digital Earth Australia (DEA) Water Observations (WOs) is a gridded dataset indicating areas where surface water has been observed using the Geoscience Australia (GA) Earth observation satellite data holdings. The current product (version 2.0.0) includes observations taken between 1986 and the present (inclusive) from the Landsat 5, 7, 8 and 9 satellites. WOs cover all of mainland Australia and Tasmania but exclude off-shore Territories. The dataset is updated automatically as each new Landsat scene is acquired and processed to Analysis Ready Data (ARD) state. 
 
-Data is provided as Water Observation Feature Layers (WOFLs) in a 1-to-1 relationship with the input satellite data. Hence there is one WOFL for each satellite dataset processed for the occurrence of water. The data type is a bit field, which allows multiple bits to be set simultaneously. For example, the value of a pixel in an observation can be Water and Cloud Shadow, and the decimal values of those are added together (128 + 32 = 160). Values can range from 0 to 255.
+Data is provided as Water Observation Feature Layers (WOFLs) in a 1-to-1 relationship with the input satellite data. Hence there is one WOFL for each satellite dataset processed for the occurrence of water. The data type is a bit field, which allows multiple bits to be set simultaneously.
 
-Here is a colour map showing how the data displays in a mapping application such as [DEA Maps](https://maps.dea.ga.gov.au/).
+Here is a colour map showing how the data displays in a mapping application such as [DEA Maps](https://maps.dea.ga.gov.au/). These colours represent bit flags or combinations of bit flags.
 
 ![Colour map of Water Observations product.](/_files/water-observations/colour-map-water-observations.png)
 
-More than two of these values can be combined, for example Steep Terrain and Cloud Shadow and Terrain Shadow (16 + 32 + 8 = 56).
+The following table defines each of the basic classifications in the WOFL. Each pixel is encoded as a bit flag which represents a decimal. Learn more about bit flags in the [DEA Notebook: Introduction to DEA Water Observations](/notebooks/DEA_products/DEA_Water_Observations/).
 
-The table below describes the meaning of each bit set per pixel in each WOFL.
-
-:::{list-table} Classification bit sets
+:::{list-table} Classifications
 :header-rows: 1
 
 * - Classification
-  - Bit
+  - Bit flag
   - Decimal
   - Description
 
@@ -87,14 +85,16 @@ The table below describes the meaning of each bit set per pixel in each WOFL.
   - This pixel is classified as water.
 :::
 
-Learn more about bit flags in the [DEA Notebook: Introduction to DEA Water Observations](/notebooks/DEA_products/DEA_Water_Observations/).
+These classifications can be combined by adding the decimal values together. For example, the value of a pixel is both Water and Cloud shadow if it's decimal value is 160 (because 128 + 32 = 160). Values can range from 0 to 255.
 
-The following table shows the combinations of decimal values. Some values cannot occur (for any of several reasons), and these values are greyed-out in the table.
+More than two of these values can be combined, for example High slope and Cloud shadow and Terrain shadow is 56 (because 16 + 32 + 8 = 56).
+
+The following table shows the combinations of two classifications. Some values cannot occur (for any of several reasons) and these are greyed out. This table doesn't show classifications of more than two values.
 
 :::{include} ../../../_components/water-observations-combination-decimals-table.md
 :::
 
-Full details of the original algorithms and features of DEA Water Observations can be found in the Water Observations from Space paper by Mueller et al. (2015).
+Full details of the original algorithms and features of DEA Water Observations can be found in the paper: [Water observations from space by Mueller et al. (2016)](https://doi.org/10.1016/j.rse.2015.11.003).
 
 ## Lineage
 

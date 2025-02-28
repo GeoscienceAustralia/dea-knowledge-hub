@@ -1,6 +1,6 @@
 <div class="scroll-horizontally">
     <table class="colour-coded-table water-observations-combination-decimals-theme">
-        <caption>Combination decimal values</caption>
+        <caption>Combinations of two classifications</caption>
         <thead>
             <tr>
                 <th></th>
