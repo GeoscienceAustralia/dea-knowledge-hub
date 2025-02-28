@@ -72,7 +72,7 @@ The table below describes the meaning of each bit set per pixel in each WOFL.
   - 8
   - Topographic features can cast shadows which can be misclassified as water. Pixel masked out due to terrain shadow.
 
-* - **Steep Terrain**
+* - **High slope**
   - 4
   - 16
   - A highly sloped terrain is less likely to contain water, so therefore, a detection of water on this surface is often incorrect. Pixel masked out due to high slope.
