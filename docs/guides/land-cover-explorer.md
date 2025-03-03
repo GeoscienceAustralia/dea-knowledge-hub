@@ -87,6 +87,6 @@ To compare two years, follow these steps.
 * **Accessible colours** &mdash; This button is on the right side of the page. This will change the colour scheme of the map to increase contrast. This may be useful for people who have difficulty distinguishing colours.
 * **About this app** &mdash; This button (**&#9432;**) is at the top left of the page. It provides you with more information about this web application and its data.
 
-[Explorer]: https://www.dev.mapexplorer.daa.ga.gov.au/landcoverexplorer/index.html#mapCenter=134.11300%2C-27.09700%2C4&mode=step&timeExtent=1988%2C2023&year=2023
+[Explorer]: https://digital.atlas.gov.au/apps/16e1fac8143341aaa87f761a8a2c330e/explore
 [LandCover]: /data/product/dea-land-cover-landsat/
-[LandCoverDescription]: /data/product/dea-land-cover-landsat/
+[LandCoverDescription]: /data/product/dea-land-cover-landsat/?tab=description
