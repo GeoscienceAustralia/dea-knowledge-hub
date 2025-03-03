@@ -46,7 +46,7 @@ Once you've created a map by adding datasets, adjusting map settings, and zoomin
 
 1. Click **Share / Print** on the top right.
 1. Click **Copy** to copy this custom URL to your clipboard.
-1. Anyone who opens this URL will see your map exactly as you configured it. You can send this URL to others, link to it from a public website, or bookmark it for later.
+1. Anyone who opens this URL will see the map with the same configurations and viewing location. You can send this URL to others, link to it from a public website, or bookmark it for later.
 
 ![Share URL](/_files/dea-maps/share-url.jpg)
 
@@ -64,6 +64,7 @@ There is a **Compare** feature that lets you view two different map configuratio
 
 1. In the left sidebar, click the ![Button](/_files/dea-maps/show-more-actions-button.jpg) button ('Show more actions') on a dataset that you have added to the map &gt; click **Compare**.
 1. The map will now be split into two halves. In the sidebar, the dataset's card will be split into two separate cards: one labelled 'Left' and the other 'Right'.
+1. You can drag the divider to easily see the difference between the two sides.
 1. You can configure each side of the map independently. E.g. you can change the 'Styles' value on the right side.
 1. Each dataset can be assigned to either the **Left** or **Right** side or **Both** by selecting the relevant option in the left sidebar.
 1. To compare two different datasets side-by-side: add an additional dataset to the map &gt; assign it to the right or left side &gt; remove the existing dataset that was assigned to that side.
@@ -125,7 +126,7 @@ The [Bureau of Meteorology](http://www.bom.gov.au/) provides water discharge dat
 
     ![Watercourse Discharge Tool hydrograph](/_files/dea-maps/dea_maps_wdt_5.jpg)
 
-## Additional features
+## Other useful features
 
 * **Print your map** &mdash; Click **Share / Print** &gt; **Show Print View** &gt; a new page will open showing a printer-friendly view; click **Print** or press **Ctrl-p** on your keyboard.
 * **Capture a high-quality image of your map** &mdash; Follow the steps above to print your map, except on the printer-friendly page, right-click on the image and select **Save image as**.
