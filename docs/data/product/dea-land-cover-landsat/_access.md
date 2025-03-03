@@ -86,7 +86,7 @@ The [Digital Atlas of Australia](https://digital.atlas.gov.au/) brings together 
 
 To get started, use either of these methods.
 
-* An easy way to create a map containing a DEA Land Cover dataset is to go to either of these catalogue pages: [DEA Land Cover Level 3](https://gov.atlas.gov.au/portal/home/item.html?id=4879aeb3e4a7446ba3f0aba4f5d4635e) or [DEA Land Cover Level 4](https://gov.atlas.gov.au/portal/home/item.html?id=3626a8506a3c4ab9a424d51774131441), then click **Open in Map Viewer**.
+* An easy way to create a map containing a DEA Land Cover dataset is to go to either of these catalogue pages: [DEA Land Cover Level 3](https://digital.atlas.gov.au/datasets/4879aeb3e4a7446ba3f0aba4f5d4635e/explore) or [DEA Land Cover Level 4](https://digital.atlas.gov.au/datasets/3626a8506a3c4ab9a424d51774131441/explore), then click **Open in Map Viewer**.
 * Or, follow these steps to [create a map using the Digital Atlas](https://digital.atlas.gov.au/apps/6b0a217d5c704e8fb6c353d6245585ce/explore) and then add the DEA Land Cover datasets (along with as any other datasets that are of interest).
 
 :::
@@ -96,11 +96,11 @@ To get started, use either of these methods.
 1. Add the layer to your map.
     1. In the top menu bar, click **File** &gt; **Add Data** &gt; **Add Data...**
     1. Select **Add layer from URL** then add one of the following URLs.
-        * For [DEA Land Cover Level 3](https://gov.atlas.gov.au/portal/home/item.html?id=4879aeb3e4a7446ba3f0aba4f5d4635e):
+        * For [DEA Land Cover Level 3](https://digital.atlas.gov.au/datasets/4879aeb3e4a7446ba3f0aba4f5d4635e/explore):
             ```
             https://di-daa.img.arcgis.com/arcgis/rest/services/Land_and_vegetation/DEA_Landcover_Landsat_Level3/ImageServer
             ```
-        * For [DEA Land Cover Level 4](https://gov.atlas.gov.au/portal/home/item.html?id=3626a8506a3c4ab9a424d51774131441):
+        * For [DEA Land Cover Level 4](https://digital.atlas.gov.au/datasets/3626a8506a3c4ab9a424d51774131441/explore):
             ```
             https://di-daa.img.arcgis.com/arcgis/rest/services/Land_and_vegetation/DEA_Landcover_Landsat_Level4/ImageServer
             ```
@@ -118,7 +118,7 @@ Learn more about [how to add Esri web services to an ArcGIS environment](https:/
 
 :::{dropdown} How to use the Digital Atlas of Australia Land Cover Explorer
 
-[Land Cover Explorer](https://www.dev.mapexplorer.daa.ga.gov.au/landcoverexplorer/index.html#mapCenter=134.11300%2C-27.09700%2C4&mode=step&timeExtent=1988%2C2023&year=2023) is a web application in the [Digital Atlas of Australia](https://digital.atlas.gov.au/), developed by Esri. It allows you to navigate and visualise the DEA Land Cover datasets.
+[Land Cover Explorer](https://digital.atlas.gov.au/apps/16e1fac8143341aaa87f761a8a2c330e/explore) is a web application in the [Digital Atlas of Australia](https://digital.atlas.gov.au/), developed by Esri. It allows you to navigate and visualise the DEA Land Cover datasets.
 
 Learn [how to use the Land Cover Explorer](/guides/land-cover-explorer/).
 
