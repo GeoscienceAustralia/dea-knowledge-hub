@@ -2,7 +2,7 @@
 
 To view and access the data interactively, follow these steps.
 
-1. Visit [DEA Maps](https://maps.dea.ga.gov.au).
+1. Visit [DEA Maps](https://maps.dea.ga.gov.au/#share=s-q22pbMQyjP2OS4k9LwjQImAZ0rs).
 1. Click **Explore map data**.
 1. Click **Land and vegetation** &gt; **DEA Land Cover** &gt; **DEA Land Cover (Landsat)**. 
 1. Click **Add to the map**, or the '**+**' symbol to add the data to the map.
