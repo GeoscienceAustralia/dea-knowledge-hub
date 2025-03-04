@@ -12,9 +12,10 @@ This product is contained in the Open Data Cube instance managed by Digital Eart
 :::{dropdown} How to access DEA Maps
 
 To view and access the data interactively via a web map interface:
+
 1. Visit [DEA Maps](https://maps.dea.ga.gov.au/)
-2. Click "Explore map data"
-3. Select "Baseline satellite data" -> "DEA Surface Reflectance (Sentinel-2)"
-4. Click "Add to the map"
+1. Click **Explore map data**
+1. Select **Baseline satellite data** &gt; **DEA Surface Reflectance (Sentinel-2)**
+1. Click **Add to the map**
 :::
 
