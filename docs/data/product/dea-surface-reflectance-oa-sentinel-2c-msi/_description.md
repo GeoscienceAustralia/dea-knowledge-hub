@@ -2,14 +2,14 @@
 
 :::{admonition} Sub-product
 :class: note
-This is a sub-product of [DEA Surface Reflectance (Sentinel-2C)](/data/product/dea-surface-reflectance-sentinel-2c-msi). See the parent product for more information.
+This is a sub-product of [DEA Surface Reflectance (Sentinel-2C)](/data/product/dea-surface-reflectance-sentinel-2c-msi/). See the parent product for more information.
 :::
 
 The contextual information related to a dataset is just as valuable as the data itself. This information, also known as data provenance or data lineage, includes details such as the data’s origins, derivations, methodology and processes. It allows the data to be replicated and increases the reliability of derivative applications.
 
 Data that is well-labelled and rich in spectral, spatial and temporal attribution can allow users to investigate patterns through space and time. Users are able to gain a deeper understanding of the data environment, which could potentially pave the way for future forecasting and early warning systems.
 
-The surface reflectance data produced by [NBART](/data/product/dea-surface-reflectance-nbart-sentinel-2c-msi) requires accurate and reliable data provenance. Attribution labels, such as the location of cloud and cloud shadow pixels, can be used to mask out these particular features from the surface reflectance analysis, or used as training data for machine learning algorithms. Additionally, the capacity to automatically exclude or include pre-identified pixels could assist with emerging multi-temporal and machine learning analysis techniques.
+The surface reflectance data produced by [NBART](/data/product/dea-surface-reflectance-nbart-sentinel-2c-msi/) requires accurate and reliable data provenance. Attribution labels, such as the location of cloud and cloud shadow pixels, can be used to mask out these particular features from the surface reflectance analysis, or used as training data for machine learning algorithms. Additionally, the capacity to automatically exclude or include pre-identified pixels could assist with emerging multi-temporal and machine learning analysis techniques.
 
 ## What this product offers
 
