@@ -8,6 +8,29 @@
 Learn more about the [DEA Summary Product Grid](/guides/reference/collection_3_summary_grid/).
 ::::
 
+## 5 Mar 2025: Version 2.0.0 of DEA Land Cover released
+
+We are excited to announce the release of [DEA Land Cover 2.0.0](/data/product/dea-land-cover-landsat/). This latest version introduces improvements to the DEA Land Cover product, enhancing the translation of over three decades of satellite imagery into evidence of how Australia’s land, vegetation, and waterbodies have changed over time.
+
+* **Breaking change:** Shift in grid origin point
+* **Breaking change:** Data structure changes
+* Improved cloud masking to reduce noise
+* Landsat 9 included
+* Machine Learning Upgrade
+* Pixel resolution
+* Product ID Update
+* 'No data' value changed
+* Level 4 classification update
+* Collection Upgrade
+
+DEA Land Cover 1.0.0 will be decommissioned in June 2025.
+
+See the [Version 2.0.0 Changelog](/data/product/dea-land-cover-landsat/?tab=history) for more information.
+
+The product page also includes [known issues and limitations](/data/product/dea-land-cover-landsat/?tab=quality), some of which are being actively worked on.
+
+<!-- [View the Tech Alert]() -->
+
 ## 20 Feb 2025: DEA near-real-time data not up-to-date
 
 DEA near-real-time ARD datasets are currently not up-to-date. We are investigating the cause of this issue. 
