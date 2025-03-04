@@ -25,11 +25,11 @@ We are excited to announce the release of [DEA Land Cover 2.0.0](/data/product/d
 
 DEA Land Cover 1.0.0 will be decommissioned in June 2025.
 
-See the [Version 2.0.0 Changelog](/data/product/dea-land-cover-landsat/) for more information.
+See the [Version 2.0.0 Changelog](/data/product/dea-land-cover-landsat/?tab=history) for more information.
 
-The product page also includes [known issues and limitations](/data/product/dea-land-cover-landsat/), some of which are being actively worked on.
+The product page also includes [known issues and limitations](/data/product/dea-land-cover-landsat/?tab=quality), some of which are being actively worked on.
 
-[View the Tech Alert]()
+<!-- [View the Tech Alert]() -->
 
 ## 20 Feb 2025: DEA near-real-time data not up-to-date
 
