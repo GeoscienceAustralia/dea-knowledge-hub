@@ -1,10 +1,8 @@
 <div class="scroll-horizontally">
-    <table>
+    <table class="colour-coded-table water-observations-classifications-theme">
         <caption>Classifications</caption>
         <thead>
             <tr>
-                <th></th>
-                <th></th>
                 <th>Classification</th>
                 <th>Bit flag</th>
                 <th>Decimal</th>
