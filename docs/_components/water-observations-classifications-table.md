@@ -64,6 +64,18 @@
                 <td>192</td>
                 <td>Water + Cloud (128 + 64)</td>
             </tr>
+            <tr>
+                <td><span class="colour shaded-water"></span><strong>Shaded Water</strong></td>
+                <td></td>
+                <td>160</td>
+                <td>Water + Cloud Shadow (128 + 32)</td>
+            </tr>
+            <tr>
+                <td><span class="colour cloudy-steep-terrain"></span><strong>Cloudy Steep Terrain</strong></td>
+                <td></td>
+                <td>48</td>
+                <td>High Slope + Cloud Shadow (16 + 32)</td>
+            </tr>
         </tbody>
     </table>
 </div>
