@@ -42,51 +42,51 @@ table.colour-coded-table {
             height: 0.9em;
             width: 2em;
 
-            & + .dry {
+            &.dry {
                 background-color: #96966e;
             }
 
-            & + .water {
+            &.water {
                 background-color: #4F81BD;
             }
 
-            & + .high-slope {
+            &.high-slope {
                 background-color: #776857;
             }
 
-            & + .terrain-shadow {
+            &.terrain-shadow {
                 background-color: #2f2922;
             }
 
-            & + .cloud-shadow {
+            &.cloud-shadow {
                 background-color: #4b4b37;
             }
 
-            & + .cloud {
+            &.cloud {
                 background-color: #c2c1c0;
             }
 
-            & + .no-data {
+            &.no-data {
                 background-color: #707070;
             }
 
-            & + .non-contiguous {
+            &.non-contiguous {
                 background-color: #707070;
             }
 
-            & + .low-solar-angle {
+            &.low-solar-angle {
                 background-color: #707070;
             }
 
-            & + .cloudy-water {
+            &.cloudy-water {
                 background-color: #bad4f2;
             }
 
-            & + .shaded-water {
+            &.shaded-water {
                 background-color: #335277;
             }
 
-            & + .cloudy-steep-terrain {
+            &.cloudy-steep-terrain {
                 background-color: #f2dcb4;
             }
         }
