@@ -39,8 +39,9 @@ table.colour-coded-table {
     &.water-observations-classifications-theme {
         .colour {
             display: inline-block;
-            height: 0.9em;
-            width: 2em;
+            height: 1.1em;
+            width: 1.1em;
+            border-radius: 50%;
 
             &.dry {
                 background-color: #96966e;
