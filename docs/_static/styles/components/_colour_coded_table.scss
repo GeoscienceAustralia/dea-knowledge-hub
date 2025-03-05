@@ -71,7 +71,11 @@ table.colour-coded-table {
             }
 
             & + .non-contiguous {
-                background-color: #000000;
+                background-color: #707070;
+            }
+
+            & + .low-solar-angle {
+                background-color: #707070;
             }
 
             & + .cloudy-water {
