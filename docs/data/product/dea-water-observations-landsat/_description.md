@@ -32,9 +32,10 @@ Data is provided as Water Observation Feature Layers (WOFLs) in a one-to-one rel
 
 Here is a colour map showing how the data displays in a mapping application such as [DEA Maps](https://maps.dea.ga.gov.au/). These colours represent bit flags or combinations of bit flags.
 
-![Colour map of Water Observations product.](/_files/water-observations/colour-map-water-observations.png)
-
 The following table defines each of the basic classifications in the WOFL. Each pixel is encoded as a bit flag which represents a decimal. Learn more about bit flags in the [DEA Notebook: Introduction to DEA Water Observations](/notebooks/DEA_products/DEA_Water_Observations/).
+
+:::{include} ../../../_components/water-observations-classifications-table.md
+:::
 
 :::{list-table} Classifications
 :header-rows: 1
@@ -84,6 +85,8 @@ The following table defines each of the basic classifications in the WOFL. Each 
   - 128
   - This pixel is classified as water.
 :::
+
+![Colour map of Water Observations product.](/_files/water-observations/colour-map-water-observations.png)
 
 A pixel can be classified by multiple of these classifications at once. This is encoded into the WOFL by adding the decimal values of multiple classifications together. For example, a pixel with the decimal value 160 is both Water and Cloud shadow (because 128 + 32 = 160).
 
