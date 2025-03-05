@@ -37,11 +37,11 @@ Note that decimal values in the WOFL can range from 0 to 255.
 
 For more information about the original algorithms and features of DEA Water Observations, see the paper: [Water observations from space by Mueller et al. (2016)](https://doi.org/10.1016/j.rse.2015.11.003).
 
-<figure>
-    <figcaption>Figure 1. Map colours example.</figcaption>
-</figure>
-
 ![Colour map of Water Observations product.](/_files/water-observations/water-observations-colours-example.png)
+
+<figure>
+    <figcaption>Figure 1 (above). Map colours example.</figcaption>
+</figure>
 
 :::{include} ../../../_components/water-observations-classifications-table.html
 :::
