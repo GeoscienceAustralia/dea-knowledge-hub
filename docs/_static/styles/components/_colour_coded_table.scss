@@ -46,6 +46,18 @@ table.colour-coded-table {
             position: relative;
             top: 0.2em;
 
+            &.no-data {
+                background-color: #707070;
+            }
+
+            &.non-contiguous {
+                background-color: #707070;
+            }
+
+            &.low-solar-angle {
+                background-color: #707070;
+            }
+
             &.dry {
                 background-color: #96966e;
             }
@@ -68,18 +80,6 @@ table.colour-coded-table {
 
             &.cloud {
                 background-color: #c2c1c0;
-            }
-
-            &.no-data {
-                background-color: #707070;
-            }
-
-            &.non-contiguous {
-                background-color: #707070;
-            }
-
-            &.low-solar-angle {
-                background-color: #707070;
             }
 
             &.cloudy-water {
