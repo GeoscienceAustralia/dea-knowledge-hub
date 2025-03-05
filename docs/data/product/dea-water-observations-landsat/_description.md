@@ -34,59 +34,14 @@ Here is a colour map showing how the data displays in a mapping application such
 
 The following table defines each of the basic classifications in the WOFL. Each pixel is encoded as a bit flag which represents a decimal. Learn more about bit flags in the [DEA Notebook: Introduction to DEA Water Observations](/notebooks/DEA_products/DEA_Water_Observations/).
 
-:::{include} ../../../_components/water-observations-classifications-table.md
+<figure>
+    <figcaption>An example of Water Observations coloured classifications.</figcaption>
+</figure>
+
+![Colour map of Water Observations product.](/_files/water-observations-colours-example.png)
+
+:::{include} ../../../_components/water-observations-classifications-table.html
 :::
-
-:::{list-table} Classifications
-:header-rows: 1
-
-* - Classification
-  - Bit flag
-  - Decimal
-  - Description
-
-* - **No data**
-  - 0
-  - 1
-  - Missing or invalid data. Pixel masked out due to NO_DATA in NBART source, 0 = valid data in NBART.
-
-* - **Contiguity**
-  - 1
-  - 2
-  - Some data is missing in the original image (usually missing bands). Pixel masked out due to lack of data contiguity.
-
-* - **Low solar angle**
-  - 2
-  - 4
-  - Also known as Solar Incidence. The angle of the sun can cast a large shadow which can be misclassified as water. Pixel masked out due to solar incidence of less than 10 degrees.
-
-* - **Terrain shadow**
-  - 3
-  - 8
-  - Topographic features can cast shadows which can be misclassified as water. Pixel masked out due to terrain shadow.
-
-* - **High slope**
-  - 4
-  - 16
-  - A highly sloped terrain is less likely to contain water, so therefore, a detection of water on this surface is often incorrect. Pixel masked out due to high slope.
-
-* - **Cloud shadow**
-  - 5
-  - 32
-  - Shadows are likely to be misclassified as water. Pixel masked out due to cloud shadow.
-
-* - **Cloud**
-  - 6
-  - 64
-  - Cloud is affecting the output data. Pixel masked out due to cloud.
-
-* - **Water**
-  - 7
-  - 128
-  - This pixel is classified as water.
-:::
-
-![Colour map of Water Observations product.](/_files/water-observations/colour-map-water-observations.png)
 
 A pixel can be classified by multiple of these classifications at once. This is encoded into the WOFL by adding the decimal values of multiple classifications together. For example, a pixel with the decimal value 160 is both Water and Cloud shadow (because 128 + 32 = 160).
 
@@ -96,7 +51,7 @@ Decimal values in the WOFL can range from 0 to 255.
 
 The following table shows the decimal values for the combinations of two classifications. Some values are greyed out because they cannot occur. For instance, a classification cannot be combined with itself. This table doesn't show combinations of more than two classifications.
 
-:::{include} ../../../_components/water-observations-combination-decimals-table.md
+:::{include} ../../../_components/water-observations-combination-decimals-table.html
 :::
 
 Full details of the original algorithms and features of DEA Water Observations can be found in the paper: [Water observations from space by Mueller et al. (2016)](https://doi.org/10.1016/j.rse.2015.11.003).
