@@ -34,6 +34,16 @@ Here is a colour map showing how the data displays in a mapping application such
 
 The following table defines each of the basic classifications in the WOFL. Each pixel is encoded as a bit flag which represents a decimal. Learn more about bit flags in the [DEA Notebook: Introduction to DEA Water Observations](/notebooks/DEA_products/DEA_Water_Observations/).
 
+A pixel can be classified by multiple of these classifications at once. This is encoded into the WOFL by adding the decimal values of multiple classifications together. For example, a pixel with the decimal value 160 is both Water and Cloud shadow (because 128 + 32 = 160).
+
+More than two classifications can be combined. For example, pixel with the decimal value 56 is classified as High slope and Cloud shadow and Terrain shadow (because 16 + 32 + 8 = 56).
+
+Decimal values in the WOFL can range from 0 to 255.
+
+The following table shows the decimal values for the combinations of two classifications. Some values are greyed out because they cannot occur. For instance, a classification cannot be combined with itself. This table doesn't show combinations of more than two classifications.
+
+Full details of the original algorithms and features of DEA Water Observations can be found in the paper: [Water observations from space by Mueller et al. (2016)](https://doi.org/10.1016/j.rse.2015.11.003).
+
 <figure>
     <figcaption>An example of Water Observations coloured classifications.</figcaption>
 </figure>
@@ -43,18 +53,8 @@ The following table defines each of the basic classifications in the WOFL. Each 
 :::{include} ../../../_components/water-observations-classifications-table.html
 :::
 
-A pixel can be classified by multiple of these classifications at once. This is encoded into the WOFL by adding the decimal values of multiple classifications together. For example, a pixel with the decimal value 160 is both Water and Cloud shadow (because 128 + 32 = 160).
-
-More than two classifications can be combined. For example, pixel with the decimal value 56 is classified as High slope and Cloud shadow and Terrain shadow (because 16 + 32 + 8 = 56).
-
-Decimal values in the WOFL can range from 0 to 255.
-
-The following table shows the decimal values for the combinations of two classifications. Some values are greyed out because they cannot occur. For instance, a classification cannot be combined with itself. This table doesn't show combinations of more than two classifications.
-
 :::{include} ../../../_components/water-observations-combination-decimals-table.html
 :::
-
-Full details of the original algorithms and features of DEA Water Observations can be found in the paper: [Water observations from space by Mueller et al. (2016)](https://doi.org/10.1016/j.rse.2015.11.003).
 
 ## Lineage
 
