@@ -19,6 +19,7 @@ The Water Observations show the extent of water in a corresponding Landsat scene
 ## Applications
 
 The DEA Water Observations (WOs) are used to determine the area of surface water present in the corresponding satellite scene, and can be used for several water monitoring applications. Uses of the individual WOs include:
+
 * flood extent
 * amount of water in water bodies, major rivers and the coastal zone.
 
@@ -30,7 +31,7 @@ Data is provided as Water Observation Feature Layers (WOFLs) in a one-to-one rel
 
 In the WOFL, each pixel is encoded as a bit flag which represents a decimal. This decimal corresponds to a classification or a combination of classifications. These classifications and combinations of classifications are mapped to colours on [DEA Maps](https://maps.dea.ga.gov.au/) and in the output of the `plot_wo` function. This allows you to easily view these classifications of the landscape. See Figure 1 for an example of these map colours and see Table 1 for details of these classifications. Learn more about bit flags in the [DEA Notebook: Introduction to DEA Water Observations](/notebooks/DEA_products/DEA_Water_Observations/).
 
-A pixel in the WOFL can have a combination of multiple classifications. This is encoded by adding the decimal values of these classifications together. For example, a pixel with a decimal value of 192 is classified as both Water and Cloud (because 128 + 64). Furthermore, more than two classifications can be combined. For example, a pixel with a decimal value of 56 is classified as High Slope and Cloud Shadow and Terrain Shadow (because 16 + 32 + 8 = 56). The most commonplace of these combinations have been given their own names and colours so they can be easily seen on the map: Cloudy Water, Shaded Water, and Cloudy Steep Terrain. See Table 2 for the decimal values of all combinations of two classifications. Some values are greyed out because they cannot occur for any of several reasons. For instance, a classification cannot be combined with itself, so Cloud + Cloud is greyed out.
+A pixel in the WOFL can have a combination of multiple classifications. This is encoded by adding the decimal values of these classifications together. For example, a pixel with a decimal value of 192 is classified as both Water and Cloud (because 128 + 64 = 192). Furthermore, more than two classifications can be combined. For example, a pixel with a decimal value of 56 is classified as High Slope and Cloud Shadow and Terrain Shadow (because 16 + 32 + 8 = 56). The most commonplace of these combinations have been given their own names and colours so they can be easily seen on the map: Cloudy Water, Shaded Water, and Cloudy Steep Terrain. See Table 2 for the decimal values of all combinations of two classifications. Some values are greyed out because they cannot occur for any of several reasons. For instance, a classification cannot be combined with itself, so Cloud + Cloud is greyed out.
 
 Note that decimal values in the WOFL can range from 0 to 255.
 
