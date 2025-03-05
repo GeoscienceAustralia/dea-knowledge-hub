@@ -48,7 +48,7 @@ Full details of the original algorithms and features of DEA Water Observations c
     <figcaption>An example of Water Observations coloured classifications.</figcaption>
 </figure>
 
-![Colour map of Water Observations product.](/_files/water-observations-colours-example.png)
+![Colour map of Water Observations product.](/_files/water-observations/water-observations-colours-example.png)
 
 :::{include} ../../../_components/water-observations-classifications-table.html
 :::
