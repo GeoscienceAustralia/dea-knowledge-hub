@@ -112,7 +112,7 @@
 
 {% set layers_count = layers_table_list | length %}
 
-{% set page_title = page.data.short_name if page.data.is_latest_version else format_version_number(page.data.version_number) ~ ". " ~ page.data.short_name %}
+{% set page_title = page.data.short_name if page.data.is_latest_version else format_version_number(page.data.version_number) ~ " " ~ page.data.short_name %}
 
 {% set display_title = page.data.short_name if page.data.is_latest_version else page.data.short_name ~ " " ~ format_version_number(page.data.version_number) %}
 
