@@ -93,18 +93,17 @@ Learn [how to use the Land Cover Explorer](/guides/land-cover-explorer/).
 The [Digital Atlas of Australia](https://digital.atlas.gov.au/) brings together trusted national data in a central platform. It is a platform where anyone can explore, analyse, and visualise spatial data.
 
 To create a map containing a DEA Land Cover dataset:
+
 1. Go to either of these catalogue pages: 
-  * [DEA Land Cover Level 3](https://digital.atlas.gov.au/datasets/4879aeb3e4a7446ba3f0aba4f5d4635e/explore) or 
-  * [DEA Land Cover Level 4](https://digital.atlas.gov.au/datasets/3626a8506a3c4ab9a424d51774131441/explore) 
-2. Select the bright blue "I want to use this" menu bar from the bottom of the left-hand column
-3. Select "Create a Map"
-4. Select "ArcGIS Map Viewer"
-
-You will now have a blank map with your DEA Land Cover layer already added in, ready to use. 
-
-5. Set the time internal to '1 year'.
-  * Ensure that the time slider is enabled to allow you to navigate through the annual layers in the dataset.
-  * By default, three years of data will be displayed. You'll need to change this; open the **Time slider options** from the three dots to the right of the time slider bar &gt; open **Time intervals** &gt; set the **Length of one interval** to '1 year'.
+    * [DEA Land Cover Level 3](https://digital.atlas.gov.au/datasets/4879aeb3e4a7446ba3f0aba4f5d4635e/explore) or
+    * [DEA Land Cover Level 4](https://digital.atlas.gov.au/datasets/3626a8506a3c4ab9a424d51774131441/explore) 
+1. Click the **I want to use this** menu bar from the bottom of the left-hand column
+1. Click **Create a Map**
+1. Click **ArcGIS Map Viewer**
+1. You will now have a blank map with your DEA Land Cover layer already added in, ready to use.
+1. Set the time internal to '1 year'.
+    * Ensure that the time slider is enabled to allow you to navigate through the annual layers in the dataset.
+    * By default, three years of data will be displayed. You'll need to change this: open the **Time slider options** from the three dots to the right of the time slider bar &gt; open **Time intervals** &gt; set the **Length of one interval** to '1 year'.
 
 ![Esri time slider options panel.](/_files/land_cover/Esri_time_options.png)
 
@@ -129,7 +128,7 @@ Alternatively, follow these steps to [create a map using the Digital Atlas](http
     1. Click **Add**.
 1. Set the time internal to '1 year'.
     1. Ensure that the time slider is enabled to allow you to navigate through the annual layers in the dataset.
-    1. By default, three years of data will be displayed. You'll need to change this; open the **Time slider options**  from the three dots to the right of the time slider bar &gt; open **Time intervals** &gt; set the **Length of one interval** to '1 year'.
+    1. By default, three years of data will be displayed. You'll need to change this: open the **Time slider options**  from the three dots to the right of the time slider bar &gt; open **Time intervals** &gt; set the **Length of one interval** to '1 year'.
 
 Learn more about [how to add Esri web services to an ArcGIS environment](https://pro.arcgis.com/en/pro-app/latest/help/projects/available-online-resources.htm).
 
