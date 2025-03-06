@@ -29,7 +29,7 @@ See the [Version 2.0.0 Changelog](/data/product/dea-land-cover-landsat/?tab=hist
 
 The product page also includes [known issues and limitations](/data/product/dea-land-cover-landsat/?tab=quality), some of which are being actively worked on.
 
-<!-- [View the Tech Alert]() -->
+[View the Tech Alert](https://communication.ga.gov.au/link/id/zzzz67c92c7428d1a912Pzzzz6567c8b713b5b826/page.html)
 
 ## 20 Feb 2025: DEA near-real-time data not up-to-date
 
