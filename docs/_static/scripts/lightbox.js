@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const imageSelector = 'article *:not(figure) > img:not(.no-lightbox), article figure:not(.no-gallery) > img';
+    const imageSelector = 'article *:not(figure) > img:not(.no-lightbox), article figure:not(.no-lightbox) > img';
 
     const articleImages = document.querySelectorAll(imageSelector);
     
