@@ -17,7 +17,7 @@
           .. container:: image-container
 
              .. image:: {{ card.image or "/_files/default/dea-earth-thumbnail.jpg" }}
-                :class: no-gallery
+                :class: no-lightbox
 
           .. rubric:: {{ card.name }}
 

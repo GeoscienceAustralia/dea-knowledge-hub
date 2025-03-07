@@ -84,7 +84,7 @@
    .. container::
 
       .. image:: {{ data.header_image or "/_files/default/dea-earth-thumbnail.jpg" }}
-         :class: no-gallery
+         :class: no-lightbox
 
 .. container::
    :name: notifications
