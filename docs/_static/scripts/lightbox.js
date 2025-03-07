@@ -1,5 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const articleImages = document.querySelectorAll('article img');
+    const imageSelector = 'article *:not(figure) > img:not(.no-lightbox), article figure:not(.no-gallery) > img';
+
+    const articleImages = document.querySelectorAll(imageSelector);
     
     for (let i = 0; i < articleImages.length; i++) {
         let image = articleImages[i];
