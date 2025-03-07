@@ -44,7 +44,7 @@
    .. container::
 
       .. image:: /_files/default/dea-earth-thumbnail.jpg
-         :class: no-gallery
+         :class: no-lightbox
 
 .. container:: showcase-panel bg-gradient-forest reverse
    :name: dea-notebooks
@@ -60,7 +60,7 @@
    .. container::
 
       .. image:: /_files/cmi/Kakadu-Mary_TCW-percentiles-wide_1.jpg
-         :class: no-gallery
+         :class: no-lightbox
 
 .. container:: showcase-panel bg-gradient-stone
    :name: validation-reports
@@ -76,7 +76,7 @@
    .. container::
 
       .. image:: /_files/validation/validation-drone-thumbnail.jpg
-         :class: no-gallery
+         :class: no-lightbox
 
 .. container:: showcase-panel bg-gradient-space reverse
    :name: tech-alerts
@@ -92,7 +92,7 @@
    .. container::
 
       .. image:: /_files/reference/Reporting_dashboard.png
-         :class: no-gallery
+         :class: no-lightbox
 
 .. container:: showcase-panel
    :name: about-dea
@@ -112,4 +112,4 @@
    .. container::
 
       .. image:: /_files/themes/sea-ocean-and-coast.* 
-         :class: no-gallery
+         :class: no-lightbox
