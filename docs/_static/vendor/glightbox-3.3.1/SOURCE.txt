@@ -1,0 +1,1 @@
+Source: https://github.com/biati-digital/glightbox/tree/master
