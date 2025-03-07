@@ -39,7 +39,8 @@ def page_version_history_metadata(app, pagename, templatename, context, doctree)
                 "--date=format:%-d %b %Y",
                 "--pretty=format:%H|%ad|%an|%s",
                 "--",
-                page_filepath_absolute_with_extension_glob,
+                # page_filepath_absolute_with_extension_glob,
+                "/home/runner/work/dea-knowledge-hub/dea-knowledge-hub/", # TODO This is a test
             ]
         )
 
