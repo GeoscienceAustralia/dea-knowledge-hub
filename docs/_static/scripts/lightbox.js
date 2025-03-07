@@ -16,5 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
     GLightbox({
         selector: '.lightbox',
         loop: true,
+        openEffect: "none",
+        closeEffect: "none",
     });
 });
