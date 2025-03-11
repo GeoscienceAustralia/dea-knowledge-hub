@@ -79,6 +79,7 @@ extensions = [
     "sphinx_sitemap",
     "notfound.extension",
     "sphinx_copybutton",
+    "page_version_history_metadata",
 ]
 
 myst_enable_extensions = [
