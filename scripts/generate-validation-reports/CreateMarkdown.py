@@ -273,7 +273,7 @@ The line of best fit is not shown, but its parameters are given in the bottom-ri
     content_template = content_template.replace("MarkDownTable", markdown_table)
     
     content_template = content_template.replace("FieldTxtDay", reformDate(field_data))
-    content_template = content_template.replace("FieldDay", formDate+'-'+field_data[0])
+    content_template = content_template.replace("FieldDay", formDate+' '+field_data[0])
     
     if 'Sentinel' in field_data[6] or 'Landsat' in field_data[6]:
         content_template = content_template.replace("PNS", PlatNamesSpace[field_data[3]]+" and "+PlatNamesSpace[field_data[6]]+" dual")
