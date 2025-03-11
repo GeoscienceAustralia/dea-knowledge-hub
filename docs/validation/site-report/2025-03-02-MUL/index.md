@@ -1,4 +1,4 @@
-# 2025-03-02-MUL: Mullion, Landsat 9 and Sentinel-2B dual overpass
+# 2025-03-02 MUL: Mullion, Landsat 9 and Sentinel-2B dual overpass
 
 This is a report of the field data collected on 2 March 2025 at the location of Mullion
 to validate the satellite data of the Landsat 9 and Sentinel-2B dual overpass.
