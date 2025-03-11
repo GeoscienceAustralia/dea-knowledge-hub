@@ -59,27 +59,10 @@ The values for this product are as follows:
 * For the fractional cover bands (PV, NPV, BS)
 * 0-100 = fractional cover values that range between 0 and 100%
 
-Due to model uncertainties and the limitations of the training data, some areas may show cover values in excess of 100%. These areas can either be excluded or treated as equivalent to 100%
-
-The DEA Landsat Collection 3 Fractional Cover Percentiles Summary products share the following attributes:
-
-**Family name** : DEA Fractional Cover Percentiles
-
-| bands       | data type | nodata values | purpose                                               |
-|-------------|-----------|---------------|-------------------------------------------------------|
-| `bs_pc_10`  | uint8     | nodata 255    | bare soil - 10th percentile                           |
-| `pv_pc_10`  | uint8     | nodata 255    | photosynthetic veg - 10th percentile                  |
-| `npv_pc_10` | uint8     | nodata 255    | non-photosynthetic veg - 10th percentile              |
-| `bs_pc_50`  | uint8     | nodata 255    | bare soil - 50th percentile                           |
-| `pv_pc_50`  | uint8     | nodata 255    | photosynthetic veg - 50th percentile                  |
-| `npv_pc_50` | uint8     | nodata 255    | non-photosynthetic veg - 50th percentile              |
-| `bs_pc_90`  | uint8     | nodata 255    | bare soil - 90th percentile                           |
-| `pv_pc_90`  | uint8     | nodata 255    | photosynthetic veg - 90th percentile                  |
-| `npv_pc_90` | uint8     | nodata 255    | non-photosynthetic veg - 90th percentile              |
-| `qa`        | uint8     | nodata 255    | Quality Assurance enumeration - see below for details |
-
 ### Quality Assurance:
+
 This layer provides a breakdown of each FCP pixel between,
+
 * sufficient observations
 * insufficient observations dry
 * insufficient observations wet
