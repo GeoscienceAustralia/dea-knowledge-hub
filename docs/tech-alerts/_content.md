@@ -8,6 +8,12 @@
 Learn more about the [DEA Summary Product Grid](/guides/reference/collection_3_summary_grid/).
 ::::
 
+## 11 Mar 2025: Landsat near-real-time data downtime (6 March to 9 March) due to planned USGS maintenance (Resolved)
+
+DEA's Landsat near-real-time (NRT) data experienced downtime from 6 March to 9 March (UTC) due to planned USGS maintenance. This has now resolved and the NRT data has resumed being published as normal from 10 March (UTC) onwards.
+
+We are currently working to fill in the gap in the data to the greatest extent possible.
+
 ## 5 Mar 2025: Version 2.0.0 of DEA Land Cover released
 
 We are excited to announce the release of [DEA Land Cover 2.0.0](/data/product/dea-land-cover-landsat/). This latest version introduces improvements to the DEA Land Cover product, enhancing the translation of over three decades of satellite imagery into evidence of how Australia’s land, vegetation, and waterbodies have changed over time.
