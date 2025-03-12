@@ -8,11 +8,11 @@
 Learn more about the [DEA Summary Product Grid](/guides/reference/collection_3_summary_grid/).
 ::::
 
-## 11 Mar 2025: Landsat near-real-time data downtime (6 March to 9 March) due to planned USGS maintenance (Resolved)
+## 12 Mar 2025: Landsat near-real-time (NRT) data outage (6 March to the present) due to planned USGS maintenance and a subsequent issue
 
-DEA's Landsat near-real-time (NRT) data experienced downtime from 6 March to 9 March (UTC) due to planned USGS maintenance. This has now resolved and the NRT data has resumed being published as normal from 10 March (UTC) onwards.
+Planned USGS maintenance caused DEA's Landsat near-real-time (NRT) data to experience downtime. This planned maintenance occurred from 6 March to 9 March (UTC); however, a subsequent issue in our (DEA's) own data systems has caused the outage to continue to the present time. We are currently working on the issue and expect it to be resolved by the end of the day.
 
-We are now working to retroactively fill in data gap as much as possible.
+We will then work to retroactively fill in the gaps in the data to the greatest extent possible.
 
 ## 5 Mar 2025: Version 2.0.0 of DEA Land Cover released
 
