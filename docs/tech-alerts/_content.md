@@ -8,6 +8,10 @@
 Learn more about the [DEA Summary Product Grid](/guides/reference/collection_3_summary_grid/).
 ::::
 
+## 13 Mar 2025: Landsat near-real-time (NRT) data outage (Resolved)
+
+Landsat near-real-time (NRT) data is now being published on its normal cadence, as the issue in our (DEA's) data systems has been resolved. The data gap caused by the downtime from 9 March onwards has now been backfilled and the data is available. (Note that there is still a data gap from 6 March to 9 March (UTC) due to the planned USGS maintenance.)
+
 ## 12 Mar 2025: Landsat near-real-time (NRT) data outage (6 March to the present) due to planned USGS maintenance and a subsequent issue
 
 Planned USGS maintenance caused DEA's Landsat near-real-time (NRT) data to experience downtime. This planned maintenance occurred from 6 March to 9 March (UTC); however, a subsequent issue in our (DEA's) own data systems has caused the outage to continue to the present time. We are currently working on the issue and expect it to be resolved by the end of the day.
