@@ -35,7 +35,7 @@ Hotspots can indicate possible active fires in some circumstances. Taken as an e
 
 This application allows you to visualise, search and download current and historic Hotspot data for any location Australia-wide.
 
-You can also overlay satellite passes, topography, burnt areas, and other imagery sources such as Sentinel 2A & 2B Near Real-Time products.
+You can also overlay satellite passes, topography, burnt areas, and other imagery sources such as Sentinel 2 Near Real-Time products.
 
 The system can be used by:
 * emergency services

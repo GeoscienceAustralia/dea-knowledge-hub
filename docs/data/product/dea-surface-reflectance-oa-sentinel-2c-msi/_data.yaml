@@ -2,8 +2,8 @@
 
 # Specifications
 
-short_name: DEA Surface Reflectance OA (Sentinel-2B MSI)
-full_technical_name: Geoscience Australia Sentinel-2B Observation Attributes Collection 3
+short_name: DEA Surface Reflectance OA (Sentinel-2C MSI)
+full_technical_name: Geoscience Australia Sentinel-2C Observation Attributes Collection 3
 header_image: /_files/cmi/surface_reflectance_2_NBARTa_1.png
 
 version_number: 3.2.1
@@ -15,19 +15,19 @@ lineage_type: BASELINE
 spatial_data_type: RASTER
 
 spatial_coverage: null
-temporal_coverage_start: 30 Jun 2017
+temporal_coverage_start: 21 Jan 2025
 temporal_coverage_end: Present
 temporal_coverage_custom: null
 
 data_update_frequency: DAILY
 data_update_activity: ONGOING
-is_currency_reported: true
+is_currency_reported: false
 
 resolution: 10-60 m
-coordinate_reference_system: MULTIPLE_UTM
+coordinate_reference_system: null
 
 product_ids:
-  - ga_s2bm_ard_3
+  - ga_s2cm_ard_3
 
 parent_products:
   - name: null
@@ -37,13 +37,16 @@ collections:
   - name: Geoscience Australia Sentinel-2 Collection 3
     link: /search/?q=Geoscience+Australia+Sentinel-2+Collection+3
 
-doi: 10.26186/146570
-ecat_id: "146570"
+# doi: 10.26186/150143
+# ecat_id: "150143"
+doi: null
+ecat_id: null
 
 licence_name: Creative Commons Attribution 4.0 International Licence
 licence_link: https://creativecommons.org/licenses/by/4.0/
 
-citation_data: "Geoscience Australia, 2022. Geoscience Australia Sentinel-2B Observation Attributes Collection 3 - DEA Surface Reflectance OA (Sentinel-2B MSI). Geoscience Australia, Canberra. https://dx.doi.org/10.26186/146570"
+# citation_data: "Geoscience Australia, 2022. Geoscience Australia Sentinel-2A Observation Attributes Collection 3 - DEA Surface Reflectance OA (Sentinel-2A MSI). Geoscience Australia, Canberra. https://dx.doi.org/10.26186/146568"
+citation_data: null
 citation_paper: null
 
 citations_custom: null
@@ -57,18 +60,18 @@ tags:
 
 # Access
 
-access_links_maps:
-  - link: https://maps.dea.ga.gov.au/#share=s-gUnjTYg5uC5fDf0iTXDqo7hrlrw
-    name: See it on a map
+access_links_maps: null
+  # - link: https://maps.dea.ga.gov.au/#share=s-mpoGYidqkggb7wfUexuv8LKbDX6
+  #   name: null
 
 access_links_explorers:
-  - link: https://explorer.dea.ga.gov.au/products/ga_s2bm_ard_3
-    name: DEA Explorer
+  - link: https://explorer.dea.ga.gov.au/products/ga_s2cm_ard_3
+    name: null
 
 access_links_data:
-  - link: https://data.dea.ga.gov.au/?prefix=baseline/ga_s2bm_ard_3/
+  - link: https://data.dea.ga.gov.au/?prefix=baseline/ga_s2cm_ard_3/
     name: Access the data on AWS
-  - link: https://thredds.nci.org.au/thredds/catalog/ka08/ga_s2bm_ard_3/catalog.html
+  - link: https://thredds.nci.org.au/thredds/catalog/ka08/ga_s2cm_ard_3/catalog.html
     name: Access the data on NCI
 
 access_links_code_examples:
