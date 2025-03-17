@@ -1,0 +1,13 @@
+# Bands
+
+bands:
+  footnotes: null
+  bands_table:
+    - name: alum_class
+      aliases: []
+      resolution: 50 metres
+      crs: "EPSG:3577"
+      nodata: 0
+      units: null
+      type: int16
+      description: "Australian Land Use and Management (ALUM) Classification class"

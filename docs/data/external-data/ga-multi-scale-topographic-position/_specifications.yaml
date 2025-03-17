@@ -1,10 +1,8 @@
-# See the Product metadata fields documentation: https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/product_metadata_fields.html
-
 # Bands
 
-bands_footnote: null
-
-bands_table:
+bands:
+  footnotes: null
+  bands_table:
   - name: local
     aliases: []
     resolution: 0.000833 degrees
