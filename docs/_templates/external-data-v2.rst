@@ -371,11 +371,27 @@
             - {{ valid_product_types | join(", ") }}
             - 
           {%- endif %}
+          {%- if Data.temporal_coverage.start and Data.temporal_coverage.end %}
+          * - **Temporal coverage**
+            - {{ Data.temporal_coverage.start }} to {{ Data.temporal_coverage.end }}
+            - The time span for which data is available.
+          {%- elif Data.temporal_coverage.start %}
+          * - **Temporal coverage**
+            - Since {{ Data.temporal_coverage.start }}
+            - The time span for which data is available.
+          {%- elif Data.temporal_coverage.end %}
+          * - **Temporal coverage**
+            - Until {{ Data.temporal_coverage.end }}
+            - The time span for which data is available.
+          {%- endif %}
           {% if Data.coordinate_reference_system %}
           * - **Coordinate Reference System (CRS)**
             - {{ coordinate_reference_system_term }}
             - The method of mapping spatial data to the Earth's surface.
           {%- endif %}
+          * - **Produced by**
+            - {{ Data.external_party }}
+            - The external party that produces this data.
           {%- if Data.doi %}
           * - **DOI**
             - `{{ Data.doi }} <https://doi.org/{{ Data.doi }}>`_
