@@ -12,7 +12,7 @@
 {% set valid_product_ids = Data.product_ids | select("!=", None) | list %}
 {% set valid_custom_citations = Data.custom_citations | select("!=", None) | list %}
 {% set valid_tags = Data.tags + ['external_data'] | select("!=", None) | list %}
-{% set valid_bands = Tables.bands.bands_table | selectattr("name",  "!=", None) | list %}
+{% set valid_bands = Tables.bands_table | selectattr("name",  "!=", None) | list %}
 {% set product_ids_list = Data.product_ids | select("!=", None) | list %}
 {% set product_ids_list_text = product_ids_list | join(", ") %}
 
@@ -209,6 +209,13 @@
        .. list-table::
           :name: key-specifications-table
 
+          {% if product_ids_list %}
+          * - **{{ product_ids_label }}**
+            - {%- for product_id in product_ids_list %}
+              | {{ product_id }}
+              {%- endfor %}
+            - Used to `load data from the Open Data Cube </notebooks/Beginners_guide/04_Loading_data/>`_.
+          {%- endif %}
           {% if Data.long_title %}
           * - **Long title**
             - {{ Data.long_title }}
@@ -342,7 +349,7 @@
 
           <br />
 
-       {{ Tables.bands.footnotes if Tables.bands.footnotes }}
+       {{ Tables.bands_footnote if Tables.bands_footnote }}
        {% endif %}
 
        .. rubric:: Product information

@@ -1,9 +1,11 @@
+# See the Product metadata fields documentation: https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/product_metadata_fields.html
+
 # Bands
 
-bands:
-  footnotes: >
-    :sup:`1` The 'Nodata' value is ``-340282346638528859811704183484516925440``; however, ocean pixels in ``dem`` and ``dem_s`` are instead assigned a value of ``0``.
-  bands_table:
+bands_footnote: >
+  :sup:`1` The 'Nodata' value is ``-340282346638528859811704183484516925440``; however, ocean pixels in ``dem`` and ``dem_s`` are instead assigned a value of ``0``.
+
+bands_table:
   - name: dem
     aliases: []
     resolution: 0.00027 degrees
