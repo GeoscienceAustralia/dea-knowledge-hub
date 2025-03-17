@@ -13,6 +13,8 @@
 {% set valid_custom_citations = Data.custom_citations | select("!=", None) | list %}
 {% set valid_tags = Data.tags + ['external_data'] | select("!=", None) | list %}
 {% set valid_bands = Tables.bands.bands_table | selectattr("name",  "!=", None) | list %}
+{% set product_ids_list = Data.product_ids | select("!=", None) | list %}
+{% set product_ids_list_text = product_ids_list | join(", ") %}
 
 {% set external_data_label = "Go to the external data page" %}
 {% set map_label = "See it on a map" %}
@@ -286,6 +288,24 @@
        .. raw:: html
 
           <div class="product-tab-table-of-contents"></div>
+
+       {% if product_ids_list %}
+       {% if product_ids_list | length > 1 %}
+       .. rubric:: Product IDs
+          :name: product-id
+          :class: h2
+
+       The Product IDs are {% for product_id in product_ids_list %}{%- if loop.last and loop.index > 1 %}, and {% elif loop.index > 1 %}, {% endif -%}``{{ product_id }}``{% endfor %}. These IDs are used to `load data from the Open Data Cube (ODC) <load_data_odc_>`_, for example ``dc.load(product="{{ product_ids_list[0] }}", ...)``
+       {%- else %}
+       .. rubric:: Product ID
+          :name: product-id
+          :class: h2
+
+       The Product ID is ``{{ product_ids_list[0] }}``. This ID is used to `load data from the Open Data Cube (ODC) <load_data_odc_>`_, for example ``dc.load(product="{{ product_ids_list[0] }}", ...)``
+       {%- endif %}
+
+       .. _load_data_odc: /notebooks/Beginners_guide/04_Loading_data/
+       {%- endif %}
 
        {% if valid_bands %}
        .. rubric:: Bands
