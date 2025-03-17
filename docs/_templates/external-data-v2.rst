@@ -60,7 +60,7 @@
 {# Tags list component #}
 
 {% set tags_list_component -%}
-{% for tag in tags_list %}`{{tag}} </search/?q=Tag+{{tag}}>`_{% if not loop.last %}, {% endif %}{% endfor %}
+{% for tag in valid_tags %}`{{tag}} </search/?q=Tag+{{tag}}>`_{% if not loop.last %}, {% endif %}{% endfor %}
 {%- endset %}
 
 .. role:: raw-html(raw)
