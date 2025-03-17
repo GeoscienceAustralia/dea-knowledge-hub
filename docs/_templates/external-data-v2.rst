@@ -70,11 +70,11 @@
       {%- endif %}
       {%- if Data.temporal_coverage %}
       {%- if Data.temporal_coverage.start and Data.temporal_coverage.end %}
-      :Coverage: {{ Data.temporal_coverage.start }} :raw-html:`&mdash;` {{ Data.temporal_coverage.end }}
+      :Coverage: {{ Data.temporal_coverage.start }} to {{ Data.temporal_coverage.end }}
       {%- elif Data.temporal_coverage.start  %}
-      :Starts at: {{ Data.temporal_coverage.start }}
+      :Coverage start: {{ Data.temporal_coverage.start }}
       {%- elif Data.temporal_coverage.end  %}
-      :Ends at: {{ Data.temporal_coverage.end }}
+      :Coverage end: {{ Data.temporal_coverage.end }}
       {%- endif %}
       {%- endif %}
       :Produced by: {{ Data.external_party }}
@@ -212,7 +212,7 @@
           {%- endif %}
           {%- if valid_tags %}
           * - **Tags**
-            - {{ valid_tags | join(", ") }}
+            - {% for tag in valid_tags %}`{{tag}} </search/?q=Tag+{{tag}}>`_{% if not loop.last %}, {% endif %}{% endfor %}
           {%- endif %}
           {%- if Data.licence_name and Data.licence_link %}
           * - **Licence**
