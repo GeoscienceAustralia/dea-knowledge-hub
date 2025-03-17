@@ -370,6 +370,9 @@
             - {{ Data.long_title }}
             -
           {%- endif %}
+          * - **External producer**
+            - {{ Data.external_party }}
+            - The external party that produces this data.
           {% if valid_product_types %}
           * - **{{ product_types_label }}**
             - {{ valid_product_types | join(", ") }}
@@ -393,9 +396,6 @@
             - {{ coordinate_reference_system_term }}
             - The method of mapping spatial data to the Earth's surface.
           {%- endif %}
-          * - **External producer**
-            - {{ Data.external_party }}
-            - The external party that produces this data.
           {%- if Data.doi %}
           * - **DOI**
             - `{{ Data.doi }} <https://doi.org/{{ Data.doi }}>`_
