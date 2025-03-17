@@ -368,7 +368,7 @@
           {% if Data.long_title %}
           * - **Long name**
             - {{ Data.long_title }}
-            -
+            - The full name or technical name of the product.
           {%- endif %}
           * - **External producer**
             - {{ Data.external_party }}
@@ -376,7 +376,7 @@
           {% if valid_product_types %}
           * - **{{ product_types_label }}**
             - {{ valid_product_types | join(", ") }}
-            - 
+            - This may specify the spatial type, lineage type, or both.
           {%- endif %}
           {%- if Data.temporal_coverage.start and Data.temporal_coverage.end %}
           * - **Temporal coverage**
