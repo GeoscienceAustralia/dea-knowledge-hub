@@ -735,7 +735,7 @@
       :name: product-categorisation
       :class: h2
 
-   This metadata describes how the product relates to other DEA products.
+   This metadata describes how the product relates to other products.
 
    .. list-table::
       :name: product-categorisation-table
