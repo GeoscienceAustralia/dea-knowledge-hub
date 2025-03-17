@@ -376,7 +376,7 @@
           {%- endif %}
           * - **Producer**
             - {{ page.data.external_party }}
-            - The external party that produces this data.
+            - The external party (outside Digital Earth Australia) that produces this data.
           {% if valid_product_types %}
           * - **{{ product_types_label }}**
             - {{ valid_product_types | join(", ") }}
