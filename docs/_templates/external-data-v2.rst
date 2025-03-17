@@ -90,7 +90,9 @@
       :{{ product_types_label }}: {{ valid_product_types | join(", ") }}
       {%- endif %}
       {%- if page.data.temporal_coverage %}
-      {%- if page.data.temporal_coverage.start and page.data.temporal_coverage.end %}
+      {%- if page.data.temporal_coverage.custom %}
+      :Coverage: {{ page.data.temporal_coverage.custom }}
+      {%- elif page.data.temporal_coverage.start and page.data.temporal_coverage.end %}
       :Coverage: {{ page.data.temporal_coverage.start }} to {{ page.data.temporal_coverage.end }}
       {%- elif page.data.temporal_coverage.start  %}
       :Coverage start: {{ page.data.temporal_coverage.start }}
@@ -380,7 +382,11 @@
             - {{ valid_product_types | join(", ") }}
             - This may specify the spatial type, lineage type, or both.
           {%- endif %}
-          {%- if page.data.temporal_coverage.start and page.data.temporal_coverage.end %}
+          {%- if page.data.temporal_coverage.custom %}
+          * - **Temporal coverage**
+            - {{ page.data.temporal_coverage.custom }}
+            - The time span for which data is available.
+          {%- elif page.data.temporal_coverage.start and page.data.temporal_coverage.end %}
           * - **Temporal coverage**
             - {{ page.data.temporal_coverage.start }} to {{ page.data.temporal_coverage.end }}
             - The time span for which data is available.

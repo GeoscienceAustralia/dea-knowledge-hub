@@ -9,8 +9,9 @@ header_image: /_files/external-data/ga_ausbathytopo250m_2023.thumbnail.jpg
 lineage_type: null
 spatial_data_type: Raster
 temporal_coverage:
-  start: 2023
-  end: 2023
+  start: null
+  end: null
+  custom: 2023
 product_ids:
   - ga_ausbathytopo250m_2023
 external_party: Geoscience Australia
