@@ -1,19 +1,21 @@
-{% set Data = load('_data.yaml') %}
-{% set Tables = load('_tables.yaml') %}
+{% set page = {
+   "data": load('_data.yaml'),
+   "tables": load('_tables.yaml'),
+} %}
 
-{% set valid_maps = Data.maps | selectattr("link",  "!=", None) | list %}
-{% set valid_data = Data.data | selectattr("link",  "!=", None) | list %}
-{% set valid_external_data = Data.external_data_page if Data.external_data_page and Data.external_data_page.link %}
-{% set valid_explorers = Data.explorers | selectattr("link",  "!=", None) | list %}
-{% set valid_web_services = Data.web_services | selectattr("link",  "!=", None) | list %}
-{% set valid_code_samples = Data.code_examples | selectattr("link",  "!=", None) | list %}
-{% set valid_custom = Data.custom | selectattr("icon",  "!=", None) | selectattr("link",  "!=", None) | selectattr("name",  "!=", None) | list %}
-{% set valid_product_types = [Data.lineage_type, Data.spatial_data_type] | select("!=", None) | list %}
-{% set valid_product_ids = Data.product_ids | select("!=", None) | list %}
-{% set valid_custom_citations = Data.custom_citations | select("!=", None) | list %}
-{% set valid_tags = Data.tags + ['external_data'] | select("!=", None) | list %}
-{% set valid_bands = Tables.bands_table | selectattr("name",  "!=", None) | list %}
-{% set product_ids_list = Data.product_ids | select("!=", None) | list %}
+{% set valid_maps = page.data.maps | selectattr("link",  "!=", None) | list %}
+{% set valid_data = page.data.data | selectattr("link",  "!=", None) | list %}
+{% set valid_external_data = page.data.external_data_page if page.data.external_data_page and page.data.external_data_page.link %}
+{% set valid_explorers = page.data.explorers | selectattr("link",  "!=", None) | list %}
+{% set valid_web_services = page.data.web_services | selectattr("link",  "!=", None) | list %}
+{% set valid_code_samples = page.data.code_examples | selectattr("link",  "!=", None) | list %}
+{% set valid_custom = page.data.custom | selectattr("icon",  "!=", None) | selectattr("link",  "!=", None) | selectattr("name",  "!=", None) | list %}
+{% set valid_product_types = [page.data.lineage_type, page.data.spatial_data_type] | select("!=", None) | list %}
+{% set valid_product_ids = page.data.product_ids | select("!=", None) | list %}
+{% set valid_custom_citations = page.data.custom_citations | select("!=", None) | list %}
+{% set valid_tags = page.data.tags + ['external_data'] | select("!=", None) | list %}
+{% set valid_bands = page.tables.bands_table | selectattr("name",  "!=", None) | list %}
+{% set product_ids_list = page.data.product_ids | select("!=", None) | list %}
 {% set product_ids_list_text = product_ids_list | join(", ") %}
 
 {% set external_data_label = "Go to the external data page" %}
@@ -37,7 +39,7 @@
 } %}
 
 {% set has_access_data = valid_external_data or valid_maps or valid_data or valid_explorers or valid_web_services or valid_code_samples or valid_custom %}
-{% set has_key_details = (Data.licence_name and Data.licence_link) or Data.doi or Data.ecat %}
+{% set has_key_details = (page.data.licence_name and page.data.licence_link) or page.data.doi or page.data.ecat %}
 
 {% set product_ids_label = "Product IDs" if valid_product_ids | length > 1 else "Product ID" %}
 {% set product_types_label = "Types" if valid_product_types | length > 1 else "Type" %}
@@ -45,9 +47,9 @@
 {% set none_text = "None" %}
 {% set not_available_text = "N/A" %}
 
-{% set coordinate_reference_system_term = coordinate_reference_system_terms.get(Data.coordinate_reference_system, Data.coordinate_reference_system) %}
+{% set coordinate_reference_system_term = coordinate_reference_system_terms.get(page.data.coordinate_reference_system, page.data.coordinate_reference_system) %}
 
-{% set bands_table_list = Tables.bands_table | selectattr("name", "!=", None) | list %}
+{% set bands_table_list = page.tables.bands_table | selectattr("name", "!=", None) | list %}
 {% set bands_count = bands_table_list | length %}
 
 {% if data.meta_description %}
@@ -67,16 +69,16 @@
 .. rst-class:: product-page
 
 ======================================================================================================================================================
-{{ Data.title }}
+{{ page.data.title }}
 ======================================================================================================================================================
 
 .. container:: showcase-panel product-header bg-gradient-primary
 
    .. container::
 
-      .. rubric:: {{ Data.title }}
+      .. rubric:: {{ page.data.title }}
 
-      {% if valid_product_ids and Data.enable_specifications %}
+      {% if valid_product_ids and page.data.enable_specifications %}
       `{{ valid_product_ids | join(", ") }} <./?tab=specifications>`_
       {%- elif valid_product_ids %}
       {{ valid_product_ids | join(", ") }}
@@ -87,20 +89,20 @@
       {% if valid_product_types %}
       :{{ product_types_label }}: {{ valid_product_types | join(", ") }}
       {%- endif %}
-      {%- if Data.temporal_coverage %}
-      {%- if Data.temporal_coverage.start and Data.temporal_coverage.end %}
-      :Coverage: {{ Data.temporal_coverage.start }} to {{ Data.temporal_coverage.end }}
-      {%- elif Data.temporal_coverage.start  %}
-      :Coverage start: {{ Data.temporal_coverage.start }}
-      {%- elif Data.temporal_coverage.end  %}
-      :Coverage end: {{ Data.temporal_coverage.end }}
+      {%- if page.data.temporal_coverage %}
+      {%- if page.data.temporal_coverage.start and page.data.temporal_coverage.end %}
+      :Coverage: {{ page.data.temporal_coverage.start }} to {{ page.data.temporal_coverage.end }}
+      {%- elif page.data.temporal_coverage.start  %}
+      :Coverage start: {{ page.data.temporal_coverage.start }}
+      {%- elif page.data.temporal_coverage.end  %}
+      :Coverage end: {{ page.data.temporal_coverage.end }}
       {%- endif %}
       {%- endif %}
-      :Produced by: {{ Data.external_party }}
+      :Produced by: {{ page.data.external_party }}
 
    .. container::
 
-      .. image:: {{ Data.header_image or "/_files/default/dea-earth-thumbnail.jpg" }}
+      .. image:: {{ page.data.header_image or "/_files/default/dea-earth-thumbnail.jpg" }}
          :class: no-gallery
 
 .. container::
@@ -115,13 +117,13 @@
       {% if valid_external_data.custom_label %}
       `{{ valid_external_data.custom_label }} <{{ valid_external_data.link }}>`_
       {% else %}
-      `{{ external_data_label }} ({{ Data.external_party }}) <{{ valid_external_data.link }}>`_
+      `{{ external_data_label }} ({{ page.data.external_party }}) <{{ valid_external_data.link }}>`_
       {% endif %}
       {% endif %}
 
 .. tab-set::
 
-    {% if Data.enable_overview %}
+    {% if page.data.enable_overview %}
     .. tab-item:: Overview
        :name: overview
 
@@ -208,16 +210,16 @@
           :name: key-specifications
           :class: h2
 
-       {% if Data.enable_specifications %}
+       {% if page.data.enable_specifications %}
        For more specifications, see the `Specifications tab <./?tab=specifications>`_.
        {% endif %}
 
        .. list-table::
           :name: key-specifications-table
 
-          {% if Data.long_title %}
+          {% if page.data.long_title %}
           * - **Long name**
-            - {{ Data.long_title }}
+            - {{ page.data.long_title }}
           {%- endif %}
           {% if bands_table_list and bands_count >= 3 %}
           * - **Bands**
@@ -229,29 +231,29 @@
           * - **Bands**
             - `Single band of data ({{ bands_table_list[0].name }}) <./?tab=specifications>`_
           {%- endif %}
-          {%- if Data.doi and Data.ecat %}
+          {%- if page.data.doi and page.data.ecat %}
           * - **DOI**
-            - `{{ Data.doi }} <https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/{{ Data.ecat }}>`_
-          {%- elif Data.doi %}
+            - `{{ page.data.doi }} <https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/{{ page.data.ecat }}>`_
+          {%- elif page.data.doi %}
           * - **DOI**
-            - `{{ Data.doi }} <https://doi.org/{{ Data.doi }}>`_
-          {%- elif Data.ecat %}
+            - `{{ page.data.doi }} <https://doi.org/{{ page.data.doi }}>`_
+          {%- elif page.data.ecat %}
           * - **Persistent ID**
-            - `{{ Data.ecat }} <https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/{{ Data.ecat }}>`_
+            - `{{ page.data.ecat }} <https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/{{ page.data.ecat }}>`_
           {%- endif %}
           * - **Tags**
             - {{ tags_list_component }}
-          {%- if Data.licence_name and Data.licence_link %}
+          {%- if page.data.licence_name and page.data.licence_link %}
           * - **Licence**
-            - `{{ Data.licence_name }} <{{ Data.licence_link }}>`_
-          {% elif Data.licence_name %}
+            - `{{ page.data.licence_name }} <{{ page.data.licence_link }}>`_
+          {% elif page.data.licence_name %}
           * - **Licence**
-            - {{ Data.licence_name }}
+            - {{ page.data.licence_name }}
           {%- endif %}
        {%- endif %}
 
-       {% if Data.citations %}
-       {% if Data.citations.data_citation or Data.citations.paper_citation %}
+       {% if page.data.citations %}
+       {% if page.data.citations.data_citation or page.data.citations.paper_citation %}
        .. rubric:: Cite this product
           :name: citations
           :class: h2
@@ -259,19 +261,19 @@
        .. list-table::
           :name: citation-table
 
-          {% if Data.citations.data_citation %}
+          {% if page.data.citations.data_citation %}
           * - **Data citation**
             - .. code-block:: text
                  :class: citation-table-citation citation-access-date
 
-                 {{ Data.citations.data_citation }}
+                 {{ page.data.citations.data_citation }}
           {%- endif %}
-          {% if Data.citations.paper_citation %}
+          {% if page.data.citations.paper_citation %}
           * - **Paper citation**
             - .. code-block:: text
                  :class: citation-table-citation citation-access-date
 
-                 {{ Data.citations.paper_citation }}
+                 {{ page.data.citations.paper_citation }}
           {%- endif %}
           {% for citation in valid_custom_citations %}
           * - **{{ citation.name }}**
@@ -285,7 +287,7 @@
 
     {% endif %}
 
-    {% if Data.enable_specifications %}
+    {% if page.data.enable_specifications %}
     .. tab-item:: Specifications
        :name: specifications
 
@@ -346,7 +348,7 @@
 
           <br />
 
-       {{ Tables.bands_footnote if Tables.bands_footnote }}
+       {{ page.tables.bands_footnote if page.tables.bands_footnote }}
        {% endif %}
 
        .. rubric:: Product information
@@ -365,54 +367,54 @@
               {%- endfor %}
             - Used to `load data from the Open Data Cube </notebooks/Beginners_guide/04_Loading_data/>`_.
           {%- endif %}
-          {% if Data.long_title %}
+          {% if page.data.long_title %}
           * - **Long name**
-            - {{ Data.long_title }}
+            - {{ page.data.long_title }}
             - The full name or technical name of the product.
           {%- endif %}
           * - **External producer**
-            - {{ Data.external_party }}
+            - {{ page.data.external_party }}
             - The external party that produces this data.
           {% if valid_product_types %}
           * - **{{ product_types_label }}**
             - {{ valid_product_types | join(", ") }}
             - This may specify the spatial type, lineage type, or both.
           {%- endif %}
-          {%- if Data.temporal_coverage.start and Data.temporal_coverage.end %}
+          {%- if page.data.temporal_coverage.start and page.data.temporal_coverage.end %}
           * - **Temporal coverage**
-            - {{ Data.temporal_coverage.start }} to {{ Data.temporal_coverage.end }}
+            - {{ page.data.temporal_coverage.start }} to {{ page.data.temporal_coverage.end }}
             - The time span for which data is available.
-          {%- elif Data.temporal_coverage.start %}
+          {%- elif page.data.temporal_coverage.start %}
           * - **Temporal coverage**
-            - Since {{ Data.temporal_coverage.start }}
+            - Since {{ page.data.temporal_coverage.start }}
             - The time span for which data is available.
-          {%- elif Data.temporal_coverage.end %}
+          {%- elif page.data.temporal_coverage.end %}
           * - **Temporal coverage**
-            - Until {{ Data.temporal_coverage.end }}
+            - Until {{ page.data.temporal_coverage.end }}
             - The time span for which data is available.
           {%- endif %}
-          {% if Data.coordinate_reference_system %}
+          {% if page.data.coordinate_reference_system %}
           * - **Coordinate Reference System (CRS)**
             - {{ coordinate_reference_system_term }}
             - The method of mapping spatial data to the Earth's surface.
           {%- endif %}
-          {%- if Data.doi %}
+          {%- if page.data.doi %}
           * - **DOI**
-            - `{{ Data.doi }} <https://doi.org/{{ Data.doi }}>`_
+            - `{{ page.data.doi }} <https://doi.org/{{ page.data.doi }}>`_
             - The Digital Object Identifier.
           {%- endif %}
-          {%- if Data.ecat %}
+          {%- if page.data.ecat %}
           * - **Catalogue ID**
-            - `{{ Data.ecat }} <https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/{{ Data.ecat }}>`_
+            - `{{ page.data.ecat }} <https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/{{ page.data.ecat }}>`_
             - The Data and Publications catalogue (eCat) ID.
           {%- endif %}
-          {%- if Data.licence_name and Data.licence_link %}
+          {%- if page.data.licence_name and page.data.licence_link %}
           * - **Licence**
-            - `{{ Data.licence_name }} <{{ Data.licence_link }}>`_
+            - `{{ page.data.licence_name }} <{{ page.data.licence_link }}>`_
             - The licence and copyright.
-          {% elif Data.licence_name %}
+          {% elif page.data.licence_name %}
           * - **Licence**
-            - {{ Data.licence_name }}
+            - {{ page.data.licence_name }}
             - The licence and copyright.
           {%- endif %}
     {% endif %}
@@ -429,7 +431,7 @@
        * - **Tags**
          - {{ tags_list_component }}
 
-    {% if Data.enable_access %}
+    {% if page.data.enable_access %}
     .. tab-item:: Access
        :name: access
 
