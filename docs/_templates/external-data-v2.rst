@@ -43,7 +43,10 @@
 {% set none_text = "None" %}
 {% set not_available_text = "N/A" %}
 
-{% set coordinate_reference_system_term = coordinate_reference_system_terms.get(page.data.coordinate_reference_system, page.data.coordinate_reference_system) %}
+{% set coordinate_reference_system_term = coordinate_reference_system_terms.get(Data.coordinate_reference_system, Data.coordinate_reference_system) %}
+
+{% set bands_table_list = Tables.bands_table | selectattr("name", "!=", None) | list %}
+{% set bands_count = bands_table_list | length %}
 
 {% if data.meta_description %}
 .. meta::
@@ -207,6 +210,16 @@
           {% if Data.long_title %}
           * - **Long title**
             - {{ Data.long_title }}
+          {%- endif %}
+          {% if bands_table_list and bands_count >= 3 %}
+          * - **Bands**
+            - `{{ bands_count }} bands of data ({{ bands_table_list[0].name }}, {{ bands_table_list[1].name }}, and more) <./?tab=specifications>`_
+          {%- elif bands_table_list and bands_count == 2 %}
+          * - **Bands**
+            - `{{ bands_count }} bands of data ({{ bands_table_list[0].name }} and {{ bands_table_list[1].name }}) <./?tab=specifications>`_
+          {%- elif bands_table_list and bands_count == 1 %}
+          * - **Bands**
+            - `Single band of data ({{ bands_table_list[0].name }}) <./?tab=specifications>`_
           {%- endif %}
           {%- if Data.doi and Data.ecat %}
           * - **DOI**
