@@ -11,7 +11,7 @@
 {% set valid_product_types = [Data.lineage_type, Data.spatial_data_type] | select("!=", None) | list %}
 {% set valid_product_ids = Data.product_ids | select("!=", None) | list %}
 {% set valid_custom_citations = Data.custom_citations | select("!=", None) | list %}
-{% set valid_tags = Data.tags | select("!=", None) | list %}
+{% set valid_tags = Data.tags + ['external_data'] | select("!=", None) | list %}
 {% set valid_bands = Tables.bands.bands_table | selectattr("name",  "!=", None) | list %}
 
 {% set external_data_label = "Go to the external data page" %}
