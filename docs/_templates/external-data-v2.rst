@@ -209,13 +209,6 @@
        .. list-table::
           :name: key-specifications-table
 
-          {% if product_ids_list %}
-          * - **{{ product_ids_label }}**
-            - {%- for product_id in product_ids_list %}
-              | {{ product_id }}
-              {%- endfor %}
-            - Used to `load data from the Open Data Cube </notebooks/Beginners_guide/04_Loading_data/>`_.
-          {%- endif %}
           {% if Data.long_title %}
           * - **Long title**
             - {{ Data.long_title }}
@@ -361,6 +354,23 @@
        .. list-table::
           :name: product-information-table
 
+          {% if product_ids_list %}
+          * - **{{ product_ids_label }}**
+            - {%- for product_id in product_ids_list %}
+              | {{ product_id }}
+              {%- endfor %}
+            - Used to `load data from the Open Data Cube </notebooks/Beginners_guide/04_Loading_data/>`_.
+          {%- endif %}
+          {% if Data.long_title %}
+          * - **Long title**
+            - {{ Data.long_title }}
+            -
+          {%- endif %}
+          {% if valid_product_types %}
+          * - **{{ product_types_label }}**
+            - {{ valid_product_types | join(", ") }}
+            - 
+          {%- endif %}
           {% if Data.coordinate_reference_system %}
           * - **Coordinate Reference System (CRS)**
             - {{ coordinate_reference_system_term }}
