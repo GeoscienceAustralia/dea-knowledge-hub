@@ -374,7 +374,7 @@
             - {{ page.data.long_title }}
             - The full name or technical name of the product.
           {%- endif %}
-          * - **External producer**
+          * - **Producer**
             - {{ page.data.external_party }}
             - The external party that produces this data.
           {% if valid_product_types %}
