@@ -55,6 +55,12 @@
    :description: {{ data.meta_description }}
 {%- endif %}
 
+{# Tags list component #}
+
+{% set tags_list_component -%}
+{% for tag in tags_list %}`{{tag}} </search/?q=Tag+{{tag}}>`_{% if not loop.last %}, {% endif %}{% endfor %}
+{%- endset %}
+
 .. role:: raw-html(raw)
    :format: html
 
@@ -233,10 +239,8 @@
           * - **Persistent ID**
             - `{{ Data.ecat }} <https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/{{ Data.ecat }}>`_
           {%- endif %}
-          {%- if valid_tags %}
           * - **Tags**
-            - {% for tag in valid_tags %}`{{tag}} </search/?q=Tag+{{tag}}>`_{% if not loop.last %}, {% endif %}{% endfor %}
-          {%- endif %}
+            - {{ tags_list_component }}
           {%- if Data.licence_name and Data.licence_link %}
           * - **Licence**
             - `{{ Data.licence_name }} <{{ Data.licence_link }}>`_
@@ -412,6 +416,18 @@
             - The licence and copyright.
           {%- endif %}
     {% endif %}
+
+    .. rubric:: Product categorisation
+       :name: product-categorisation
+       :class: h2
+
+    This metadata describes how the product relates to other products.
+
+    .. list-table::
+       :name: product-categorisation-table
+
+       * - **Tags**
+         - {{ tags_list_component }}
 
     {% if Data.enable_access %}
     .. tab-item:: Access
