@@ -216,7 +216,7 @@
           :name: key-specifications-table
 
           {% if Data.long_title %}
-          * - **Long title**
+          * - **Long name**
             - {{ Data.long_title }}
           {%- endif %}
           {% if bands_table_list and bands_count >= 3 %}
@@ -366,7 +366,7 @@
             - Used to `load data from the Open Data Cube </notebooks/Beginners_guide/04_Loading_data/>`_.
           {%- endif %}
           {% if Data.long_title %}
-          * - **Long title**
+          * - **Long name**
             - {{ Data.long_title }}
             -
           {%- endif %}
@@ -393,7 +393,7 @@
             - {{ coordinate_reference_system_term }}
             - The method of mapping spatial data to the Earth's surface.
           {%- endif %}
-          * - **Produced by**
+          * - **External producer**
             - {{ Data.external_party }}
             - The external party that produces this data.
           {%- if Data.doi %}
