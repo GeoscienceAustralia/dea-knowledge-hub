@@ -1,4 +1,3 @@
 .env
 output
 .ipynb_checkpoints/
-docs/_static/vendor/**/SOURCE.txt
