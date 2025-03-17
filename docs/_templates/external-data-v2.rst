@@ -28,6 +28,12 @@
 {% set web_service_default_name = "Web service" %}
 {% set code_sample_default_name = "Code sample" %}
 
+{% set coordinate_reference_system_terms = {
+   "EPSG:3577": "`GDA94 / Australian Albers (EPSG:3577) <https://epsg.org/crs_3577/GDA94-Australian-Albers.html>`_",
+   "EPSG:4326": "`WGS 84 (EPSG:4326) <https://epsg.org/crs_4326/WGS-84.html>`_",
+   "MULTIPLE_UTM": "Multiple UTM zone CRSs",
+} %}
+
 {% set has_access_data = valid_external_data or valid_maps or valid_data or valid_explorers or valid_web_services or valid_code_samples or valid_custom %}
 {% set has_key_details = (Data.licence_name and Data.licence_link) or Data.doi or Data.ecat %}
 
@@ -36,6 +42,8 @@
 
 {% set none_text = "None" %}
 {% set not_available_text = "N/A" %}
+
+{% set coordinate_reference_system_term = coordinate_reference_system_terms.get(page.data.coordinate_reference_system, page.data.coordinate_reference_system) %}
 
 {% if data.meta_description %}
 .. meta::
@@ -315,7 +323,7 @@
 
           {% if Data.coordinate_reference_system %}
           * - **Coordinate Reference System (CRS)**
-            - {{ Data.coordinate_reference_system }}
+            - {{ coordinate_reference_system_term }}
             - The method of mapping spatial data to the Earth's surface.
           {%- endif %}
           {%- if Data.doi %}
