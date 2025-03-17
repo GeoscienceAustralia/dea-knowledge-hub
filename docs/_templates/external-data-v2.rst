@@ -417,19 +417,19 @@
             - {{ page.data.licence_name }}
             - The licence and copyright.
           {%- endif %}
+
+       .. rubric:: Product categorisation
+          :name: product-categorisation
+          :class: h2
+
+       This metadata describes how the product relates to other products.
+
+       .. list-table::
+          :name: product-categorisation-table
+
+          * - **Tags**
+            - {{ tags_list_component }}
     {% endif %}
-
-    .. rubric:: Product categorisation
-       :name: product-categorisation
-       :class: h2
-
-    This metadata describes how the product relates to other products.
-
-    .. list-table::
-       :name: product-categorisation-table
-
-       * - **Tags**
-         - {{ tags_list_component }}
 
     {% if page.data.enable_access %}
     .. tab-item:: Access
