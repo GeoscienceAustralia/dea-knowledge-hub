@@ -1,26 +1,29 @@
-# See the Product metadata fields documentation:
-# https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/product_metadata_fields.html
+# See the Product metadata fields documentation: https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/product_metadata_fields.html
 
 # Overview
 
 title: ABARES CLUM 2023
 long_title: ABARES Catchment Scale Land Use of Australia - Update December 2023
 header_image: /_files/external-data/abares_clum_2023.thumbnail.jpg
-product_type: null
+
 spatial_data_type: Raster
-time_span:
+temporal_coverage:
   start: 2023
   end: 2023
+  custom: null
+
+external_party: Australian Bureau of Agricultural and Resource Economics and Sciences
+
+coordinate_reference_system: EPSG:3577
+
 product_ids:
   - abares_clum_2023
-external_party: Australian Bureau of Agricultural and Resource Economics and Sciences
 
 doi: 10.25814/2w2p-ph98
 ecat: null
-nci: null
-licence:
-  name: Creative Commons Attribution 4.0 International Licence
-  link: https://creativecommons.org/licenses/by/4.0/
+
+licence_name: Creative Commons Attribution 4.0 International Licence
+licence_link: https://creativecommons.org/licenses/by/4.0/
 
 citations:
   data_citation: "ABARES 2024, Catchment Scale Land Use of Australia - Update December 2023, Australian Bureau of Agricultural and Resource Economics and Sciences, Canberra, February, CC BY 4.0, DOI: 10.25814/2w2p-ph98"
@@ -34,26 +37,26 @@ tags:
 
 # Access
 
-external_data_page:
+access_links_external_data_page:
   link: https://www.agriculture.gov.au/abares/aclump/land-use/catchment-scale-land-use-and-commodities-update-2023
   custom_label: null
   custom_description: null
 
-maps: null
+access_links_maps: null
 
-explorers:
+access_links_explorers:
   - link: https://explorer.dea.ga.gov.au/products/abares_clum_2023
     name: Data Explorer
 
-data:
+access_links_data:
   - link: https://data.dea.ga.gov.au/?prefix=projects/abares_clum_2023/
     name: Access the data on AWS
 
-code_examples: null
+access_links_code_examples: null
 
-web_services: null
+access_links_web_services: null
 
-custom: null
+access_links_custom: null
 
 # SEO
 
