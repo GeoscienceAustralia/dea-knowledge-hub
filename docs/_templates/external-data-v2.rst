@@ -10,7 +10,6 @@
 {% set valid_web_services = page.data.web_services | selectattr("link",  "!=", None) | list %}
 {% set valid_code_samples = page.data.code_examples | selectattr("link",  "!=", None) | list %}
 {% set valid_custom = page.data.custom | selectattr("icon",  "!=", None) | selectattr("link",  "!=", None) | selectattr("name",  "!=", None) | list %}
-{% set valid_product_types = [page.data.lineage_type, page.data.spatial_data_type] | select("!=", None) | list %}
 {% set valid_product_ids = page.data.product_ids | select("!=", None) | list %}
 {% set valid_custom_citations = page.data.custom_citations | select("!=", None) | list %}
 {% set valid_tags = page.data.tags + ['external_data'] | select("!=", None) | list %}
@@ -42,7 +41,6 @@
 {% set has_key_details = (page.data.licence_name and page.data.licence_link) or page.data.doi or page.data.ecat %}
 
 {% set product_ids_label = "Product IDs" if valid_product_ids | length > 1 else "Product ID" %}
-{% set product_types_label = "Types" if valid_product_types | length > 1 else "Type" %}
 
 {% set none_text = "None" %}
 {% set not_available_text = "N/A" %}
@@ -86,8 +84,8 @@
       External data
       {%- endif %}
 
-      {% if valid_product_types %}
-      :{{ product_types_label }}: {{ valid_product_types | join(", ") }}
+      {% if page.data.spatial_data_type %}
+      :Type: {{ page.data.spatial_data_type }}
       {%- endif %}
       {%- if page.data.temporal_coverage %}
       {%- if page.data.temporal_coverage.custom %}
@@ -377,10 +375,10 @@
           * - **Producer**
             - {{ page.data.external_party }}
             - The external party (outside Digital Earth Australia) that produces this data.
-          {% if valid_product_types %}
-          * - **{{ product_types_label }}**
-            - {{ valid_product_types | join(", ") }}
-            - This may specify the spatial type, lineage type, or both.
+          {% if page.data.spatial_data_type %}
+          * - **Spatial type**
+            - {{ page.data.spatial_data_type }}
+            - The most common spatial types are raster and vector.
           {%- endif %}
           {%- if page.data.temporal_coverage.custom %}
           * - **Temporal coverage**
