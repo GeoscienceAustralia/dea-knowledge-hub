@@ -156,12 +156,6 @@
 {% for collection in collections_list %}{% if collection.link %}`{{ collection.name }} <{{ collection.link }}>`_{% else %}{{ collection.name }}{% endif %}{% if not loop.last %}, {% endif %}{% endfor %}
 {%- endset %}
 
-{# Tags list component #}
-
-{% set tags_list_component -%}
-{% for tag in tags_list %}`{{tag}} </search/?q=Tag+{{tag}}>`_{% if not loop.last %}, {% endif %}{% endfor %}
-{%- endset %}
-
 {# Restructured Text head component #}
 
 {% set rst_head_component %}
@@ -409,10 +403,6 @@
       {%- if collections_list %}
       * - **{{ collections_label }}**
         - {{ collections_list_component }}
-      {%- endif %}
-      {%- if tags_list %}
-      * - **Tags**
-        - {{ tags_list_component }}
       {%- endif %}
       {%- if page.data.licence_name and page.data.licence_link %}
       * - **Licence**
@@ -754,7 +744,7 @@
       {%- endif %}
       {%- if tags_list %}
       * - **Tags**
-        - {{ tags_list_component }}
+        - {% for tag in tags_list %}`{{tag}} </search/?q=Tag+{{tag}}>`_{% if not loop.last %}, {% endif %}{% endfor %}
       {%- endif %}
 
 {% endif %}
