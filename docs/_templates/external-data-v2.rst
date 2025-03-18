@@ -221,15 +221,18 @@
           * - **Long name**
             - {{ page.data.long_title }}
           {%- endif %}
-          {% if bands_table_list and bands_count >= 3 %}
+          {% if bands_table_list and bands_count >= 4 %}
           * - **Bands**
-            - `{{ bands_count }} bands of data ({{ bands_table_list[0].name }}, {{ bands_table_list[1].name }}, and more) <./?tab=specifications>`_
+            - `{{ bands_count }} bands: {{ bands_table_list[0].name }}, {{ bands_table_list[1].name }}, and more <./?tab=specifications>`_
+          {%- elif bands_table_list and bands_count == 3 %}
+          * - **Bands**
+            - `{{ bands_table_list[0].name }}, {{ bands_table_list[1].name }}, {{ bands_table_list[2].name }} <./?tab=specifications>`_
           {%- elif bands_table_list and bands_count == 2 %}
           * - **Bands**
-            - `{{ bands_count }} bands of data ({{ bands_table_list[0].name }} and {{ bands_table_list[1].name }}) <./?tab=specifications>`_
+            - `{{ bands_table_list[0].name }}, {{ bands_table_list[1].name }} <./?tab=specifications>`_
           {%- elif bands_table_list and bands_count == 1 %}
           * - **Bands**
-            - `Single band of data ({{ bands_table_list[0].name }}) <./?tab=specifications>`_
+            - `{{ bands_table_list[0].name }} <./?tab=specifications>`_
           {%- endif %}
           {%- if page.data.doi and page.data.ecat %}
           * - **DOI**

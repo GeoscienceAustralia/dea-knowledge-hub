@@ -364,25 +364,31 @@
       * - **Technical name**
         - {{ page.data.full_technical_name }}
       {%- endif %}
-      {% if bands_table_list and bands_count >= 3 %}
+      {% if bands_table_list and bands_count >= 4 %}
       * - **Bands**
-        - `{{ bands_count }} bands of data ({{ bands_table_list[0].name }}, {{ bands_table_list[1].name }}, and more) <./?tab=specifications>`_
+        - `{{ bands_count }} bands: {{ bands_table_list[0].name }}, {{ bands_table_list[1].name }}, and more <./?tab=specifications>`_
+      {%- elif bands_table_list and bands_count == 3 %}
+      * - **Bands**
+        - `{{ bands_table_list[0].name }}, {{ bands_table_list[1].name }}, {{ bands_table_list[2].name }} <./?tab=specifications>`_
       {%- elif bands_table_list and bands_count == 2 %}
       * - **Bands**
-        - `{{ bands_count }} bands of data ({{ bands_table_list[0].name }} and {{ bands_table_list[1].name }}) <./?tab=specifications>`_
+        - `{{ bands_table_list[0].name }}, {{ bands_table_list[1].name }} <./?tab=specifications>`_
       {%- elif bands_table_list and bands_count == 1 %}
       * - **Bands**
-        - `Single band of data ({{ bands_table_list[0].name }}) <./?tab=specifications>`_
+        - `{{ bands_table_list[0].name }} <./?tab=specifications>`_
       {%- endif %}
-      {% if layers_table_list and layers_count >= 3 %}
+      {% if layers_table_list and layers_count >= 4 %}
       * - **Layers**
-        - `{{ layers_count }} layers of data ({{ layers_table_list[0].name }}, {{ layers_table_list[1].name }}, and more). View their attribute fields. <./?tab=specifications>`_
+        - `{{ layers_count }} layers: {{ layers_table_list[0].name }}, {{ layers_table_list[1].name }}, and more <./?tab=specifications>`_
+      {% elif layers_table_list and layers_count == 3 %}
+      * - **Layers**
+        - `{{ layers_table_list[0].name }}, {{ layers_table_list[1].name }}, {{ layers_table_list[2].name }} <./?tab=specifications>`_
       {%- elif layers_table_list and layers_count == 2 %}
       * - **Layers**
-        - `{{ layers_count }} layers of data ({{ layers_table_list[0].name }} and {{ layers_table_list[1].name }}). View their attribute fields. <./?tab=specifications>`_
+        - `{{ layers_table_list[0].name }}, {{ layers_table_list[1].name }} <./?tab=specifications>`_
       {%- elif layers_table_list and layers_count == 1 %}
       * - **Layers**
-        - `Single layer of data ({{ layers_table_list[0].name }}). View attribute fields. <./?tab=specifications>`_
+        - `{{ layers_table_list[0].name }} <./?tab=specifications>`_
       {%- endif %}
       {%- if page.data.doi %}
       * - **DOI**
