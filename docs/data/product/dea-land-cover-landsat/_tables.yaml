@@ -8,7 +8,7 @@ bands_table:
   - name: level3
     aliases: []
     resolution: 30 m
-    nodata: 0
+    nodata: 255
     units: null
     type: uint8
     description: The base Level 3 Land Cover classification.
@@ -16,7 +16,7 @@ bands_table:
     aliases:
       - full_classification
     resolution: 30 m
-    nodata: 0
+    nodata: 255
     units: null
     type: uint8
     description: All Level 3 and Level 4 classes are combined to give a single classification value.
