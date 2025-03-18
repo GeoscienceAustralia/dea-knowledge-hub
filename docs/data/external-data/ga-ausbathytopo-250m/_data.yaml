@@ -1,21 +1,23 @@
-# See the Product metadata fields documentation:
-# https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/product_metadata_fields.html
+# See the Product metadata fields documentation: https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/product_metadata_fields.html
 
 # Overview
 
 title: GA AusBathyTopo 250m Grid
 long_title: Geoscience Australia AusBathyTopo 250m (Australia) 2023 Grid
 header_image: /_files/external-data/ga_ausbathytopo250m_2023.thumbnail.jpg
+
 spatial_data_type: Raster
 temporal_coverage:
   start: null
   end: null
   custom: 2023
-product_ids:
-  - ga_ausbathytopo250m_2023
+
 external_party: Geoscience Australia
 
 coordinate_reference_system: EPSG:4326
+
+product_ids:
+  - ga_ausbathytopo250m_2023
 
 doi: 10.26186/148758
 ecat: "148758"
