@@ -1,26 +1,29 @@
-# See the Product metadata fields documentation:
-# https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/product_metadata_fields.html
+# See the Product metadata fields documentation: https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/product_metadata_fields.html
 
 # Overview
 
 title: GA SRTM 1 second DEM
 long_title: Geoscience Australia Shuttle Radar Topography Mission 1 second DEM version 1.0
 header_image: /_files/external-data/ga_srtm_thumbnail.jpg
-product_type: null
+
 spatial_data_type: Raster
-time_span:
+temporal_coverage:
   start: 2014
   end: 2014
+  custom: null
+
+external_party: Geoscience Australia
+
+coordinate_reference_system: EPSG:4326
+
 product_ids:
   - ga_srtm_dem1sv1_0
-external_party: Geoscience Australia
 
 doi: null
 ecat: "72759"
-nci: null
-licence:
-  name: Creative Commons Attribution 4.0 International Licence
-  link: https://creativecommons.org/licenses/by/4.0/
+
+licence_name: Creative Commons Attribution 4.0 International Licence
+licence_link: https://creativecommons.org/licenses/by/4.0/
 
 citations:
   data_citation: "Gallant, J., Wilson, N., Dowling, T., Read, A., Inskeep, C. 2011. SRTM-derived 1 Second Digital Elevation Models Version 1.0. Record 1. Geoscience Australia, Canberra."
@@ -33,28 +36,28 @@ tags:
 
 # Access
 
-external_data_page:
+access_links_external_data_page:
   link: https://pid.geoscience.gov.au/dataset/ga/72759
   custom_label: null
   custom_description: null
 
-maps: null
+access_links_maps: null
 
-explorers:
+access_links_explorers:
   - link: https://explorer.dea.ga.gov.au/products/ga_srtm_dem1sv1_0
     name: Data Explorer
 
-data:
+access_links_data:
   - link: https://data.dea.ga.gov.au/?prefix=projects/elevation/ga_srtm_dem1sv1_0/
     name: Access the data on AWS
 
-code_examples:
+access_links_code_examples:
   - link: /notebooks/How_to_guides/Contour_extraction/
     name: Code examples
 
-web_services: null
+access_links_web_services: null
 
-custom: null
+access_links_custom: null
 
 # SEO
 
