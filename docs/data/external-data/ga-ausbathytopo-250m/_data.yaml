@@ -34,26 +34,26 @@ tags:
 
 # Access
 
-external_data_page:
+access_links_external_data_page:
   link: https://portal.ga.gov.au/metadata/elevation-and-depth/bathymetry-compilations/australian-bathymetry-and-topography-250m-2023-new-/13fd7f3c-7d54-4719-8aea-c69d00055742
   custom_label: null
   custom_description: null
 
-maps: null
+access_links_maps: null
 
-explorers:
+access_links_explorers:
   - link: https://explorer.dea.ga.gov.au/products/ga_ausbathytopo250m_2023
     name: Data Explorer
 
-data:
+access_links_data:
   - link: https://data.dea.ga.gov.au/?prefix=projects/ga_ausbathytopo250m_2023/
     name: Access the data on AWS
 
-code_examples: null
+access_links_code_examples: null
 
-web_services: null
+access_links_web_services: null
 
-custom: null
+access_links_custom: null
 
 # SEO
 

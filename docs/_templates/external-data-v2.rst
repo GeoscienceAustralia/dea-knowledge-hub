@@ -3,13 +3,13 @@
    "tables": load('_tables.yaml'),
 } %}
 
-{% set valid_maps = page.data.maps | selectattr("link",  "!=", None) | list %}
-{% set valid_data = page.data.data | selectattr("link",  "!=", None) | list %}
-{% set valid_external_data = page.data.external_data_page if page.data.external_data_page and page.data.external_data_page.link %}
-{% set valid_explorers = page.data.explorers | selectattr("link",  "!=", None) | list %}
-{% set valid_web_services = page.data.web_services | selectattr("link",  "!=", None) | list %}
-{% set valid_code_samples = page.data.code_examples | selectattr("link",  "!=", None) | list %}
-{% set valid_custom = page.data.custom | selectattr("icon",  "!=", None) | selectattr("link",  "!=", None) | selectattr("name",  "!=", None) | list %}
+{% set valid_maps = page.data.access_links_maps | selectattr("link",  "!=", None) | list %}
+{% set valid_data = page.data.access_links_data | selectattr("link",  "!=", None) | list %}
+{% set valid_external_data = page.data.access_links_external_data_page if page.data.access_links_external_data_page and page.data.access_links_external_data_page.link %}
+{% set valid_explorers = page.data.access_links_explorers | selectattr("link",  "!=", None) | list %}
+{% set valid_web_services = page.data.access_links_web_services | selectattr("link",  "!=", None) | list %}
+{% set valid_code_samples = page.data.access_links_code_examples | selectattr("link",  "!=", None) | list %}
+{% set valid_custom = page.data.access_links_custom | selectattr("icon",  "!=", None) | selectattr("link",  "!=", None) | selectattr("name",  "!=", None) | list %}
 {% set valid_product_ids = page.data.product_ids | select("!=", None) | list %}
 {% set valid_custom_citations = page.data.custom_citations | select("!=", None) | list %}
 {% set valid_tags = page.data.tags + ['external_data'] | select("!=", None) | list %}
