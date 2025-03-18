@@ -1,26 +1,29 @@
-# See the Product metadata fields documentation:
-# https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/product_metadata_fields.html
+# See the Product metadata fields documentation: https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/product_metadata_fields.html
 
 # Overview
 
 title: Example product
 # long_title: Long example product title
 # header_image: /_files/example/image.png
-product_type: Derivative
+
 spatial_data_type: Vector
-time_span:
+temporal_coverage:
   start: 1 Jan 2020
   end: null
+  custom: null
+
+external_party: Example Organisation
+
+coordinate_reference_system: EPSG:4326
+
 # product_ids:
 #   - example_1
-external_party: Example Organisation
 
 # doi: 10.00000/000000
 # ecat: 100000
-# nci: a000
-licence:
-  name: Creative Commons Attribution 4.0 International Licence
-  link: https://creativecommons.org/licenses/by/4.0/
+
+licence_name: Creative Commons Attribution 4.0 International Licence
+licence_link: https://creativecommons.org/licenses/by/4.0/
 
 # citations:
 #   data_citation: "Bishop-Taylor, R., Nanson, R., Sagar, S., Lymburner, L. (2021). Digital Earth Australia Coastlines. Geoscience Australia, Canberra. https://doi.org/10.26186/116268"
@@ -34,44 +37,48 @@ licence:
 
 # Access
 
-# external_data_page:
+# access_links_external_data_page:
 #   link: https://example.com
 #   custom_label: null
 #   custom_description: null
 
-# maps:
+# access_links_maps:
 #   - link: https://example.com
 #     name: See it on a map
 
-# explorers:
+# access_links_explorers:
 #   - link: https://example.com
 #     name: Data explorer
 
-# data:
+# access_links_data:
 #   - link: https://example.com
 #     name: Access the data on AWS
 #   - link: https://example.com
 #     name: Access the data on NCI
 
-# code_examples:
+# access_links_code_examples:
 #   - link: https://example.com
 #     name: Code examples
 #   - link: https://example.com
 #     name: Github repository
 
-# web_services:
+# access_links_web_services:
 #   - link: https://example.com
 #     name: Web Map Service (WMS)
 #   - link: https://example.com
 #     name: Web Feature Service (WFS)
 
-# custom:
+# access_links_custom:
 #   - icon: globe
 #     link: https://example.com
 #     label: Get via API
 #     name: Access the API
 #     description: Learn how to `use the API <https://satpathapi.dea.ga.gov.au/user-guide>`_
 #     class: null
+
+# SEO
+
+meta_description: null
 
 # Settings
 
