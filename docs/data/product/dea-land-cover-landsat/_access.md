@@ -54,9 +54,9 @@ Note: You must be using QGIS version 3.22 or above to use the time dimension.
     * URL: `https://ows.dea.ga.gov.au/`
 1. Click **Connect**.
 1. Once the items appear, you can choose which layers to add.
-1. Click **Land and Vegetation** &gt; **DEA Land Cover**, then select either of the following options.
-    * **DEA Land Cover Calendar Year (Landsat)**, then select either **basic** or **detailed**.
-    * **DEA Land Cover Environmental Descriptors**, then select any of the various descriptor layers (**lifeform**, **water seasonality**, etc.)
+1. Click **Land and Vegetation** &gt; **DEA Land Cover Collection 3**, then select either of the following options.
+    * **DEA Land Cover Collection 3 Calendar Year (Landsat)**, then select either **Basic** or **Detailed**.
+    * **DEA Land Cover Environmental Descriptors**, then select any of the various descriptor layers (**Lifeform**, **Water Seasonality**, etc.)
 1. Click **Add**.
 
 :::
