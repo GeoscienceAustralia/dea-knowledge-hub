@@ -55,12 +55,6 @@
    :description: {{ data.meta_description }}
 {%- endif %}
 
-{# Tags list component #}
-
-{% set tags_list_component -%}
-{% for tag in valid_tags %}`{{tag}} </search/?q=Tag+{{tag}}>`_{% if not loop.last %}, {% endif %}{% endfor %}
-{%- endset %}
-
 .. role:: raw-html(raw)
    :format: html
 
@@ -244,8 +238,6 @@
           * - **Persistent ID**
             - `{{ page.data.ecat }} <https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/{{ page.data.ecat }}>`_
           {%- endif %}
-          * - **Tags**
-            - {{ tags_list_component }}
           {%- if page.data.licence_name and page.data.licence_link %}
           * - **Licence**
             - `{{ page.data.licence_name }} <{{ page.data.licence_link }}>`_
@@ -435,7 +427,7 @@
           :name: product-categorisation-table
 
           * - **Tags**
-            - {{ tags_list_component }}
+            - {% for tag in valid_tags %}`{{tag}} </search/?q=Tag+{{tag}}>`_{% if not loop.last %}, {% endif %}{% endfor %}
     {% endif %}
 
     {% if page.data.enable_access %}
