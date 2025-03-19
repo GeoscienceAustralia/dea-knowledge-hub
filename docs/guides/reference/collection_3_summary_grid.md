@@ -77,7 +77,7 @@ DEA Collection 3 summary product.
 Unfortunately, there is no one-to-one mapping of the new Albers
 Collection 3 grid to the old Albers Collection 2 grid.
 
-## Shift in origin point of DEA Summary Product Grid
+## Shift in origin point
 
 To accommodate an expanded area of coverage of Australia's external territories, the DEA Summary Product Grid has being shifted. The south-west origin point of the grid has been being shifted from `-5472000.0, -2688000.0` to `-6912000.0, -4416000.0` (EPSG:3577). Therefore, all tile grid references have shifted 18 tiles west and 15 tiles south. For instance, a tile reference of `x10y10` has changed to `x28y25`. For a preview, see the [provisional version of the expanded DEA Summary Product Grid](https://maps.dea.ga.gov.au/#share=s-avXJqwjUtf55qGUmweYY5KYoVnI) on DEA Maps. [Download the new grid from AWS S3](https://dea-public-data.s3.ap-southeast-2.amazonaws.com/derivative/ga_summary_grid_c3_expanded.geojson)
 
