@@ -8,9 +8,9 @@ header_image: /_files/external-data/abares_clum_2020.thumbnail.jpg
 
 spatial_data_type: Raster
 temporal_coverage:
-  start: 2020
-  end: 2020
-  custom: null
+  start: null
+  end: null
+  custom: 2020
 
 external_party: Australian Bureau of Agricultural and Resource Economics and Sciences
 

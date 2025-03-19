@@ -8,9 +8,9 @@ header_image: /_files/external-data/ga_srtm_thumbnail.jpg
 
 spatial_data_type: Raster
 temporal_coverage:
-  start: 2014
-  end: 2014
-  custom: null
+  start: null
+  end: null
+  custom: 2014
 
 external_party: Geoscience Australia
 

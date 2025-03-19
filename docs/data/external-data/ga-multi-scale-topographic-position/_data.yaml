@@ -8,9 +8,9 @@ header_image: /_files/external-data/ga_mtpi_thumbnail.jpg
 
 spatial_data_type: Raster
 temporal_coverage:
-  start: 2018
-  end: 2018
-  custom: null
+  start: null
+  end: null
+  custom: 2018
 
 external_party: Geoscience Australia
 
