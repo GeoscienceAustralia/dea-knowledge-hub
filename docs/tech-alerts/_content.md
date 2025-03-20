@@ -24,6 +24,8 @@ DEA has implemented a fix to the Sentinel-2 s2cloudless cloud mask correction. D
 
 Reprocessing of affected Sentinel-2 data has been ongoing since October 2024 and is now complete. Users can again use s2cloudless to cloud mask Sentinel-2 data, particularly for the now-corrected observations between the period of 25 January 2022 and 7 June 2024.  
 
+<!-- [View the Tech Alert]() -->
+
 ## 13 Mar 2025: Landsat near-real-time (NRT) data outage (Resolved)
 
 Landsat near-real-time (NRT) data is now being published on its normal cadence, as the issue in our (DEA's) data systems has been resolved. The data gap caused by the downtime from 9 March onwards has now been backfilled and the data is available. (Note that there is still a data gap from 6 March to 9 March (UTC) due to the planned USGS maintenance.)
