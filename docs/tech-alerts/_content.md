@@ -8,6 +8,22 @@
 Learn more about the [DEA Summary Product Grid](/guides/reference/collection_3_summary_grid/).
 ::::
 
+## 20 Mar 2025: DEA Sentinel-2C data now operational  
+
+Sentinel-2C data are now operational and supplying DEA products. DEA’s [ga_s2cm_ard_3](https://knowledge.dea.ga.gov.au/data/product/dea-surface-reflectance-sentinel-2c-msi/) product is receiving data for both our NRT and definitive offerings, which should now be fed into user workflows. [DEA Maps](http://maps.dea.ga.gov.au/#share=s-oeiMObC1NOBrld9OlCY9hcjdzNB), the [DEA Sandbox](https://app.sandbox.dea.ga.gov.au/hub/login), and [DEA Notebooks](https://knowledge.dea.ga.gov.au/notebooks/DEA_products/DEA_Sentinel2_Surface_Reflectance/) have all been updated to include Sentinel-2C data.
+
+Users of our Sentinel-2A products (ga_s2am_ard_3) should switch to our Sentinel-2C data products. Please note Sentinel-2B continued to provide data throughout and hence our Sentinel-2B product ([ga_s2bm_ard_3](https://knowledge.dea.ga.gov.au/data/product/dea-surface-reflectance-sentinel-2b-msi/)) is affected by this switchover process.
+
+In February, the [European Commission](https://communication.ga.gov.au/link/id/zzzz67db6439c4d9b829Pzzzz61de67bd94bfe861/page.html) announced an “exceptional and temporary extension” to the life and availability of data from the Sentinel-2A satellite mission for one year. We plan to evaluate the quality of data coming out of this mission, and if satisfactory, will add them to DEA data holdings in addition to Sentinel-2C. 
+
+<!-- [View the Tech Alert]() -->
+
+## 20 Mar 2025: s2cloudless cloud mask data reprocessed
+
+DEA has implemented a fix to the Sentinel-2 s2cloudless cloud mask correction. Due to this issue, Sentinel-2 observations between 25 January 2022 and 7 June 2024 using the cloud mask data were previously unusable. [The error arose](https://sentiwiki.copernicus.eu/web/s2-processing) with the addition of an offset factor introduced in ESA's Sentinel-2 L1C Processing Baseline 4.0.0 on 25 January 2022. This resulted in widespread over-classification of cloud after this date, particularly over bare regions and agricultural regions. DEA has reprocessed the affected data with new offset factors to produce correct cloud classifications.
+
+Reprocessing of affected Sentinel-2 data has been ongoing since October 2024 and is now complete. Users can again use s2cloudless to cloud mask Sentinel-2 data, particularly for the now-corrected observations between the period of 25 January 2022 and 7 June 2024.  
+
 ## 13 Mar 2025: Landsat near-real-time (NRT) data outage (Resolved)
 
 Landsat near-real-time (NRT) data is now being published on its normal cadence, as the issue in our (DEA's) data systems has been resolved. The data gap caused by the downtime from 9 March onwards has now been backfilled and the data is available. (Note that there is still a data gap from 6 March to 9 March (UTC) due to the planned USGS maintenance.)
