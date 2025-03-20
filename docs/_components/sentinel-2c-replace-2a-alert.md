@@ -1,7 +1,7 @@
-:::{admonition} Sentinel-2C has replaced Sentinel-2A
+:::{admonition} Switch-over to Sentinel-2C
 :class: warning
 
-This Sentinel-2A product has **stopped publishing data updates on 21 January 2025**. It has been replaced by the new [Sentinel-2C products](https://knowledge.dea.ga.gov.au/data/category/sentinel-2c-analysis-ready-data/).
+This Sentinel-2A product has stopped publishing data updates on 21 January 2025 and has been replaced by the new Sentinel-2C products ([ga_s2cm_ard_3](/data/product/dea-surface-reflectance-sentinel-2c-msi/)).
 
-[View the Sentinel-2C Analysis Ready Data products](https://knowledge.dea.ga.gov.au/data/category/sentinel-2c-analysis-ready-data/)
+[View the Sentinel-2C Analysis Ready Data products](/data/category/sentinel-2c-analysis-ready-data/)
 :::
