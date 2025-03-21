@@ -1,8 +1,9 @@
 import os
 import sys
-sys.path.append(os.path.abspath("./_ext"))
+sys.path.append(os.path.abspath("./_extensions"))
 sys.path.insert(0, os.path.abspath('.'))
 from _modules import utilities
+from _modules import redirects
 from _modules import mock_imports
 from _modules import pr_preview
 
@@ -31,6 +32,7 @@ exclude_patterns = [
     "**/*.scss",
     "_robots",
     "_components",
+    "_static/vendor/*/SOURCE.txt",
     "data/archive",
     "notebooks/Scientific_workflows",
     "notebooks/DEA_notebooks_template.ipynb",
@@ -96,7 +98,7 @@ external_toc_path = "table_of_contents.yaml"
 
 if (
     is_production or is_pr_preview or enable_redirects
-): rediraffe_redirects = utilities.source_redirects("_redirects/*.txt")
+): rediraffe_redirects = redirects.source_redirects_glob_in_custom_format("_redirects/*.txt")
 
 sitemap_url_scheme = "{link}"
 

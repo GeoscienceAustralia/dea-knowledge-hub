@@ -3,10 +3,9 @@
 # Specifications
 
 short_name: DEA Land Cover (Landsat)
-full_technical_name: "Geoscience Australia Landsat Land Cover 25m "
-header_image: /_files/cmi/DEA_Land_Cover_1_0_0_Lvl4_2015.jpg
-
-version_number: 1.0.0
+full_technical_name: "Geoscience Australia Landsat Land Cover 30m"
+header_image: /_files/land_cover/lake_carnegie_size_50_percent.png
+version_number: 2.0.0
 is_latest_version: true
 latest_version_link: null
 is_provisional: false
@@ -16,29 +15,45 @@ spatial_data_type: RASTER
 
 spatial_coverage: null
 temporal_coverage_start: 1988
-temporal_coverage_end: 2020
+temporal_coverage_end: Present
 temporal_coverage_custom: null
 
 data_update_frequency: YEARLY
-data_update_activity: NO_UPDATES
+data_update_activity: ONGOING
 is_currency_reported: true
 
-resolution: 25 m
-coordinate_reference_system: EPSG:3577
+resolution: 30 m
+coordinate_reference_system: null
 
 product_ids:
-  - ga_ls_landcover_class_cyear_2
+  - ga_ls_landcover_class_cyear_3
 
 parent_products:
-  - name: null
-    link: null
+  - name: DEA Water Observations (Landsat)
+    link: /data/product/dea-water-observations-landsat/
+  - name: DEA Water Observations Statistics (Landsat)
+    link: /data/product/dea-water-observations-statistics-landsat/
+  - name: DEA Fractional Cover (Landsat)
+    link: /data/product/dea-fractional-cover-landsat/
+  - name: DEA Fractional Cover Percentiles (Landsat)
+    link: /data/product/dea-fractional-cover-percentiles-landsat/
+  - name: DEA Tasseled Cap Percentiles (Landsat)
+    link: /data/product/dea-tasseled-cap-percentiles-landsat/
+  - name: DEA Mangroves (Landsat)
+    link: /data/product/dea-mangroves/
+  - name: DEA Intertidal Elevation (Landsat) v1.0.0
+    link: /data/version-history/dea-intertidal-elevation-landsat-1.0.0/
+  - name: GA SRTM 1 second DEM
+    link: /data/external-data/ga-srtm-1-second-dem/
+  - name: Landsat 5, 7, 8, and 9 NBART and Observational Attributes
+    link: /data/category/dea-surface-reflectance/
 
 collections:
-  - name: Geoscience Australia Landsat Collection 2
+  - name: Geoscience Australia Landsat Collection 3
     link: /search/?q=Geoscience+Australia+Landsat+Collection+3
 
-doi: 10.26186/146090
-ecat_id: "146090"
+doi: 10.26186/149976
+ecat_id: "149976"
 
 licence_name: Creative Commons Attribution 4.0 International Licence
 licence_link: https://creativecommons.org/licenses/by/4.0/
@@ -49,7 +64,11 @@ citation_paper: "Lucas, R., Mueller, N., Siggins, A., Owers, C., Clewley, D., Bu
 citations_custom: null
 
 tags:
-  - land_cover_and_land_use
+  - geoscience_australia_landsat_collection_3
+  - land
+  - vegetation
+  - water
+  - urban
 
 # Access
 
@@ -58,26 +77,51 @@ access_links_maps:
     name: null
 
 access_links_explorers:
-  - link: https://explorer.dea.ga.gov.au/products/ga_ls_landcover_class_cyear_2
+  - link: https://explorer.dea.ga.gov.au/products/ga_ls_landcover_class_cyear_3
     name: null
 
 access_links_data:
-  - link: http://dea-public-data.s3-website-ap-southeast-2.amazonaws.com/?prefix=derivative/ga_ls_landcover_class_cyear_2/
+  - link: http://dea-public-data.s3-website-ap-southeast-2.amazonaws.com/?prefix=derivative/ga_ls_landcover_class_cyear_3/2-0-0/
     name: Access the data on AWS
+  - link: https://thredds.nci.org.au/thredds/catalog/jw04/ga_ls_landcover_class_cyear_3/catalog.html
+    name: Access the data on NCI Thredds
 
 access_links_code_examples:
   - link: /notebooks/DEA_products/DEA_Land_Cover/
     name: null
 
-access_links_web_services:
+access_links_custom:
+  - link: https://digital.atlas.gov.au/apps/16e1fac8143341aaa87f761a8a2c330e/explore
+    name: Land Cover Explorer (Digital Atlas)
+    description: Learn how to `use the Land Cover Explorer </guides/land-cover-explorer/>`_.
+    label: Web application
+    icon: map-location-dot
+    class: null
   - link: https://ows.dea.ga.gov.au/
-    name: null
-
-access_links_custom: null
+    name: OGC web services
+    description: Learn how to `use DEA's web services </guides/setup/gis/README/>`_.
+    label: Web services
+    icon: globe
+    class: null
+  - link: https://digital.atlas.gov.au/datasets/4879aeb3e4a7446ba3f0aba4f5d4635e/explore
+    name: "Esri web service: DEA Land Cover Level 3"
+    description: Learn how to `create a map using Digital Atlas <https://digital.atlas.gov.au/apps/6b0a217d5c704e8fb6c353d6245585ce/explore>`_.
+    label: Web services
+    icon: globe
+    class: null
+  - link: https://digital.atlas.gov.au/datasets/3626a8506a3c4ab9a424d51774131441/explore
+    name: "Esri web service: DEA Land Cover Level 4"
+    description: Learn how to `create a map using Digital Atlas <https://digital.atlas.gov.au/apps/6b0a217d5c704e8fb6c353d6245585ce/explore>`_.
+    label: Web services
+    icon: globe
+    class: null
 
 # History
 
-previous_versions: null
+previous_versions:
+  - version_number: 1.0.0
+    title: DEA Land Cover (Landsat)
+    slug: dea-land-cover-landsat-1.0.0
 
 # SEO
 
@@ -91,6 +135,6 @@ enable_quality: true
 enable_specifications: true
 enable_access: true
 enable_history: true
-enable_faqs: false
+enable_faqs: true
 enable_credits: true
 

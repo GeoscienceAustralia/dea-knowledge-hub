@@ -10,7 +10,7 @@
 {% set max_page_title_length = 200 %}
 
 {% set no_data_terms = {
-   "dash": "\-",
+   "dash": "\-"
 } %}
 
 {% set access_labels = {
@@ -65,10 +65,14 @@
 {# Macros #}
 
 {% macro format_version_number(version_number) -%} {# If the version number starts with a number, add a 'v' to it e.g. "v1.0.0". #}
+{%- if version_number -%}
 {%- if (version_number|string)[0].isdigit() -%}
 {{ "v" ~ version_number }}
 {%- else -%}
 {{ version_number }}
+{%- endif -%}
+{%- else -%}
+{{ no_data_terms.dash }}
 {%- endif -%}
 {%- endmacro %}
 
@@ -108,7 +112,7 @@
 
 {% set layers_count = layers_table_list | length %}
 
-{% set page_title = page.data.short_name if page.data.is_latest_version else format_version_number(page.data.version_number) ~ ". " ~ page.data.short_name %}
+{% set page_title = page.data.short_name if page.data.is_latest_version else format_version_number(page.data.version_number) ~ " - " ~ page.data.short_name %}
 
 {% set display_title = page.data.short_name if page.data.is_latest_version else page.data.short_name ~ " " ~ format_version_number(page.data.version_number) %}
 
@@ -150,12 +154,6 @@
 
 {% set collections_list_component -%}
 {% for collection in collections_list %}{% if collection.link %}`{{ collection.name }} <{{ collection.link }}>`_{% else %}{{ collection.name }}{% endif %}{% if not loop.last %}, {% endif %}{% endfor %}
-{%- endset %}
-
-{# Tags list component #}
-
-{% set tags_list_component -%}
-{% for tag in tags_list %}`{{tag}} </search/?q=Tag+{{tag}}>`_{% if not loop.last %}, {% endif %}{% endfor %}
 {%- endset %}
 
 {# Restructured Text head component #}
@@ -245,7 +243,7 @@
    .. container::
 
       .. image:: {{ page.data.header_image or "/_files/default/dea-earth-thumbnail.jpg" }}
-         :class: no-gallery
+         :class: no-lightbox
 {% endset %}
 
 {# Notification section component #}
@@ -412,10 +410,6 @@
       * - **{{ collections_label }}**
         - {{ collections_list_component }}
       {%- endif %}
-      {%- if tags_list %}
-      * - **Tags**
-        - {{ tags_list_component }}
-      {%- endif %}
       {%- if page.data.licence_name and page.data.licence_link %}
       * - **Licence**
         - `{{ page.data.licence_name }} <{{ page.data.licence_link }}>`_
@@ -570,7 +564,7 @@
 
    .. raw:: html
 
-      <p class="margin-bottom-2em">Vector products contain one or more distinct layers of data, and each layer can contain multiple attribute fields. This product contains the layers {% for layer in layers_table_list %}{%- if loop.last and loop.index > 1 %}, and {% elif loop.index > 1 %}, {% endif -%}<a href="#layer-{{ loop.index }}">{{ layer.name }}</a>{% endfor %}.</p>
+      <p class="margin-bottom-2em">Vector products contain one or more distinct layers of data, and each layer can contain multiple attribute fields.{% if layers_count > 1 %} Quick links: {% for layer in layers_table_list %}{%- if loop.index > 1 %}, {% endif -%}<a href="#layer-{{ loop.index }}">{{ layer.name }}</a>{% endfor %}.{% endif %}</p>
 
    {% for layer in layers_table_list %}
    .. rubric:: {{ layer.name }}
@@ -756,7 +750,7 @@
       {%- endif %}
       {%- if tags_list %}
       * - **Tags**
-        - {{ tags_list_component }}
+        - {% for tag in tags_list %}`{{tag}} </search/?q=Tag+{{tag}}>`_{% if not loop.last %}, {% endif %}{% endfor %}
       {%- endif %}
 
 {% endif %}

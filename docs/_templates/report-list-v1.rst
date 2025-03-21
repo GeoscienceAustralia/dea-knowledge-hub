@@ -29,6 +29,6 @@
    .. container::
 
       .. image:: {{ report.image or "/_files/default/dea-earth-thumbnail.jpg" }}
-         :class: no-gallery
+         :class: no-lightbox
          :target: {{ report.link }}
 {% endfor %}

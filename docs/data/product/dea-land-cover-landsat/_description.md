@@ -1,402 +1,399 @@
 ## Background
 
-Land cover is the observed physical cover on the Earth's surface including trees, shrubs, grasses, soils, exposed rocks, water bodies, plantations, crops and built structures. A consistent, Australia-wide land cover product helps understanding of how the different parts of the environment change and inter-relate. Earth observation data recorded over a period of time firstly allows the observation of the state of land cover at a specific time and secondly the way that land cover changes by comparison between times.
+Land cover is the observed physical cover on the Earth's surface including trees, shrubs, grasses, soils, exposed rocks, water bodies, plantations, crops, and built structures. An Australia-wide land cover product provides an understanding of how the different parts of the environment change and interrelate. Earth observation data recorded consistently over a period of time allows the observation of the state of land cover at a specific time and also the way that land cover changes by comparison between times.
+
+## Use constraints
+
+DEA Land Cover is appropriate to use at the national scale where other more detailed information on land cover is not available. Where DEA Land Cover's data conflicts with state or local datasets, those datasets should be considered authoritative.
+
+% ## Access constraints
 
 ## What this product offers
 
-DEA Land Cover provides annual land cover classifications for Australia using the Food and Agriculture Organisation Land Cover Classification System taxonomy Version 2 (Di Gregorio and Jansen, 1998; 2005).
+DEA Land Cover provides annual land cover classifications for Australia using the Food and Agriculture Organisation's (FAO) Land Cover Classification System (LCCS) taxonomy Version 2 (Di Gregorio and Jansen, 1998; 2005).
 
-DEA Land Cover divides the landscape into six base land cover types, which are then further detailed through the addition of environmental descriptors. The structure is as follows:
-* Cultivated Terrestrial Vegetation
-  * percentage of cover
-  * life form (herbaceous only)
-* Natural Terrestrial Vegetation
-  * percentage of cover
-  * life form (woody or herbaceous)
-* Natural Aquatic Vegetation
-  * percentage of cover
-  * life form (woody or herbaceous)
-  * water seasonality
-* Artificial Surfaces 
-* Natural Bare
-  * percentage of bare cover
-* Aquatic
-  * water persistence
-  * intertidal area
+DEA Land Cover divides the landscape into six base land cover types, which are then further detailed through the addition of environmental descriptors (currently only accessible on [DEA Maps](https://maps.dea.ga.gov.au)). The structure is as follows.
+
+* **Cultivated Terrestrial Vegetation**
+    * Percentage of cover
+    * Life form (woody or herbaceous only)
+* **Natural Terrestrial Vegetation**
+    * Percentage of cover
+    * Life form (woody or herbaceous)
+* **Natural Aquatic Vegetation**
+    * Percentage of cover
+    * Life form (woody or herbaceous)
+    * Water seasonality
+* **Artificial Surfaces** 
+* **Natural Bare**
+    * Percentage of bare cover
+* **Water**
+    * Water persistence
+    * Intertidal area
 
 % ## Data description
 
 ## Applications
 
-Annual Land Cover information can be used in a number of ways to support the monitoring and management of environments in Australia. These include, but are not limited to, the following areas in environmental monitoring, primary industries and the interests and safety of the Australian community: 
+Annual Land Cover information can be used in a number of ways to support the monitoring and management of environments in Australia. These include, but are not limited to, the following areas of environmental monitoring, primary industries, and the interests and safety of the Australian community.
+
 * Environmental monitoring 
-  * Ecosystem mapping 
-  * Carbon dynamics 
-  * Erosion management 
+    * Ecosystem mapping 
+    * Carbon dynamics 
+    * Erosion management 
 * Agriculture Sector 
-  * Monitoring crop responses to water availability 
-  * Understanding drought impact on vegetation 
+    * Monitoring crop responses to water availability 
+    * Understanding drought impact on vegetation 
 * Community interests 
-  * Map urban expansion within Australia
-  * Mapping impacts of natural disasters 
-  * Bushfire recovery
+    * Map urban expansion within Australia
+    * Mapping impacts of natural disasters 
+    * Bushfire recovery
+
+::::{grid} 1 2 2 2
+:class-container: images-max-width-100-percent
+
+:::{grid-item}
+
+<figure>
+    <img src="/_static/land_cover/Perth_urban_timeseries_lc_lvl3_gmad.gif" alt="Timeseries Perth urban expansion">
+    <figcaption>a) Urban expansion of Quinns Rocks (Perth).</figcaption>
+</figure>
+:::
+
+:::{grid-item}
+
+<figure>
+    <img src="/_static/land_cover/mt_beggary_bushfire_timeseries_lc_lvl4_gmad.gif" alt="Timeseries Mt Beggary bushfire">
+    <figcaption>b) Vegetation change and recovery following the Mt Beggary bushfire.</figcaption>
+</figure>
+:::
+
+:::{grid-item}
+
+<figure>
+    <img src="/_static/land_cover/shallow_inlet_timeseries_lc_lvl3_gmad.gif" alt="Timeseries inlet changes">
+    <figcaption>c) Morphological changes of Shallow Inlet in Victoria.</figcaption>
+</figure>
+:::
+
+:::{grid-item}
+
+<figure>
+    <img src="/_static/land_cover/lake_amadeus_timeseries_lc_lvl4_gmad.gif" alt="Timeseries lake Amadeus">
+    <figcaption>d) Annual variability of Lake Amadeus, a salt lake in the Northern Territory; the water persistence classification can be employed to track changes in its extent.</figcaption>
+</figure>
+:::
+
+::::
+
+<figure>
+    <figcaption>Figure 1. Examples of phenomena that can be tracked with the land cover product.</figcaption>
+</figure>
 
 ## Technical information
 
-DEA Land Cover is based on the globally applicable Food and Agriculture Organisation's (FAO) Land Cover Classification System (LCCS) taxonomy Version 2 (Di Gregorio and Jansen, 1998; 2005). DEA Land Cover classifications have been generated by combining quantitative (continuous) or qualitative (thematic) environmental information (referred to as Essential Descriptors; EDs) derived from Landsat satellite sensor data. Several EDs have been generated previously by Geoscience Australia, including [annual water summaries](/data/product/dea-water-observations-statistics-landsat/) (Mueller et al., 2016), [vegetation fractional cover](/data/category/dea-fractional-cover/) (Scarth et al., 2010), [mangrove extent](/data/product/dea-mangrove-canopy-cover-landsat/) (Lymburner et al., 2020) and the [Inter Tidal Extent Model](/data/product/dea-intertidal-extents-landsat/) (ITEM; Sagar et al., 2017), whilst others have been developed more recently. These EDs have been combined to generate detailed, consistent and expandable annual classifications of Australia’s land cover from 1986 through to 2020.
+DEA Land Cover is based on the globally applicable Food and Agriculture Organisation's (FAO) Land Cover Classification System (LCCS) taxonomy Version 2 (Di Gregorio and Jansen, 1998; 2005). DEA Land Cover classifications have been generated by combining quantitative (continuous) or qualitative (thematic) environmental information (referred to as Essential Descriptors; EDs) derived from Landsat satellite sensor data. Several EDs have been generated previously by Geoscience Australia, including [annual water summaries](/data/product/dea-water-observations-statistics-landsat/) (Mueller et al., 2016), [vegetation fractional cover](/data/category/dea-fractional-cover/) (Scarth et al., 2010), [mangrove extent](/data/product/dea-mangrove-canopy-cover-landsat/) (Lymburner et al., 2020) and the [Intertidal Extent Model](/data/product/dea-intertidal-extents-landsat/) (ITEM; Sagar et al., 2017), whilst others have been developed more recently. These EDs have been combined to generate detailed, consistent, and expandable annual classifications of Australia’s land cover from 1986 through to the present.
 
-DEA Land Cover consists of eight datasets: The base (level 3) classification, seven additional descriptor layers, and the final (level 4) classification combining the base classes with their associated descriptors.
+DEA Land Cover consists of two datasets: The base (Level 3) classification, and the final (Level 4) classification which combines the base classes with their associated descriptors.
 
 Detailed layer descriptions, including known issues, are provided in the following sections.
 
-### Datasets, values and definitions
+### Level 3
 
-:::{dropdown} Level 3
-The base Level 3 land cover classification
+:::{dropdown} Classifications of Level 3
 
-    0: No data   
+The base Level 3 land cover classification.
 
-    111: Cultivated Terrestrial Vegetation (CTV)
+```text
+111:  Cultivated Terrestrial Vegetation (CTV)
 
-    112: (Semi-)Natural Terrestrial Vegetation (NTV)
+112:  (Semi-)Natural Terrestrial Vegetation (NTV)
 
-    124: Natural Aquatic Vegetation (NAV)
+124:  Natural Aquatic Vegetation (NAV)
 
-    215: Artificial Surface (AS)
+215:  Artificial Surface (AS)
 
-    216: Natural Bare Surface (NS)
+216:  Natural Bare Surface (NS)
 
-    220: Water
+220:  Water
 
-**Lifeform**
+255: No data
+```
 
-Describes the detail of vegetated classes, separating woody from herbaceous
-
-    0: Not applicable (such as in water areas)
-
-    1: Woody (trees, shrubs)
-
-    2: Herbaceous (grasses, forbs)
-
-**Vegetation Cover**
-
-The measured cover of vegetated areas
-
-    0: Not applicable (such as in bare areas)
-
-    10: Closed (>65 %) 
-
-    12: Open (40 to 65 %)
-
-    13: Open (15 to 40 %)
-
-    15: Sparse (4 to 15 %)
-
-    16: Scattered (1 to 4 %) 
-
-**Water Seasonality**
-
-The length of time an aquatic vegetated area was measured as being inundated
-
-    0: Not applicable (not an aquatic environment) 
-
-    1: Semi-permanent or permanent (> 3 months) 
-
-    2: Temporary or seasonal (< 3 months) 
-
-**Water State**
-
-Describes whether the detected water is snow, ice or liquid water. Only liquid water is described in this release
-
-    0: Not applicable (not water)
-
-    1: Water
-
-**Intertidal**
-
-Delineates the intertidal zone 
-
-    0: Not applicable (not intertidal) 
-
-    3: Intertidal zone 
-
-**Water Persistence**
-
-Describes the number of months a water body contains water
-
-    0: Not applicable (not an aquatic environment) 
-
-    1: > 9 months 
-
-    7: 7-9 months 
-
-    8: 4-6 months 
-
-    9: 1-3 months 
-
-**Bare Gradation**
-
-Describes the percentage of bare in naturally bare areas
-
-    0: Not applicable (not a naturally bare area)
-
-    10: Sparsely vegetated (< 20 % bare)
-
-    12: Very sparsely vegetated (20 to 60 % bare)
-
-    15: Bare areas, unvegetated (> 60 % bare)
 :::
 
-:::{dropdown} Level 4
-All level 3 and level 4 classes for a given pixel are combined to give a single classification value
-
-    0:      No data  
-
-    1:      Cultivated Terrestrial Vegetated  
-
-    3:      Cultivated Terrestrial Vegetated: Herbaceous  
-
-    4:      Cultivated Terrestrial Vegetated: Closed (> 65 %)  
-
-    5:      Cultivated Terrestrial Vegetated: Open (40 to 65 %)  
-
-    6:      Cultivated Terrestrial Vegetated: Open (15 to 40 %)  
-
-    7:      Cultivated Terrestrial Vegetated: Sparse (4 to 15 %)  
-
-    8:      Cultivated Terrestrial Vegetated: Scattered (1 to 4 %)  
-
-    14:      Cultivated Terrestrial Vegetated: Herbaceous Closed (> 65 %)  
-
-    15:      Cultivated Terrestrial Vegetated: Herbaceous Open (40 to 65 %)  
-
-    16:      Cultivated Terrestrial Vegetated: Herbaceous Open (15 to 40 %)  
-
-    17:      Cultivated Terrestrial Vegetated: Herbaceous Sparse (4 to 15 %)  
-
-    18:      Cultivated Terrestrial Vegetated: Herbaceous Scattered (1 to 4 %)  
-
-    19:      Natural Terrestrial Vegetated  
-
-    20:      Natural Terrestrial Vegetated: Woody  
-
-    21:      Natural Terrestrial Vegetated: Herbaceous  
-
-    22:      Natural Terrestrial Vegetated: Closed (> 65 %)  
-
-    23:      Natural Terrestrial Vegetated: Open (40 to 65 %)  
-
-    24:      Natural Terrestrial Vegetated: Open (15 to 40 %)  
-
-    25:      Natural Terrestrial Vegetated: Sparse (4 to 15 %)  
-
-    26:      Natural Terrestrial Vegetated: Scattered (1 to 4 %)  
-
-    27:      Natural Terrestrial Vegetated: Woody Closed (> 65 %)  
-
-    28:      Natural Terrestrial Vegetated: Woody Open (40 to 65 %)  
-
-    29:      Natural Terrestrial Vegetated: Woody Open (15 to 40 %)  
-
-    30:      Natural Terrestrial Vegetated: Woody Sparse (4 to 15 %)  
-
-    31:      Natural Terrestrial Vegetated: Woody Scattered (1 to 4 %)  
-
-    32:      Natural Terrestrial Vegetated: Herbaceous Closed (> 65 %)  
-
-    33:      Natural Terrestrial Vegetated: Herbaceous Open (40 to 65 %)  
-
-    34:      Natural Terrestrial Vegetated: Herbaceous Open (15 to 40 %)  
-
-    35:      Natural Terrestrial Vegetated: Herbaceous Sparse (4 to 15 %)  
-
-    36:      Natural Terrestrial Vegetated: Herbaceous Scattered (1 to 4 %)  
-
-    55:      Natural Aquatic Vegetated  
-
-    56:      Natural Aquatic Vegetated: Woody  
-
-    57:      Natural Aquatic Vegetated: Herbaceous  
-
-    58:      Natural Aquatic Vegetated: Closed (> 65 %)  
-
-    59:      Natural Aquatic Vegetated: Open (40 to 65 %)  
-
-    60:      Natural Aquatic Vegetated: Open (15 to 40 %)  
-
-    61:      Natural Aquatic Vegetated: Sparse (4 to 15 %)  
-
-    62:      Natural Aquatic Vegetated: Scattered (1 to 4 %)  
-
-    63:      Natural Aquatic Vegetated: Woody Closed (> 65 %)  
-
-    64:      Natural Aquatic Vegetated: Woody Closed (> 65 %) Water > 3 months (semi-) permanent  
-
-    65:      Natural Aquatic Vegetated: Woody Closed (> 65 %) Water < 3 months (temporary or seasonal)  
-
-    66:      Natural Aquatic Vegetated: Woody Open (40 to 65 %)  
-
-    67:      Natural Aquatic Vegetated: Woody Open (40 to 65 %) Water > 3 months (semi-) permanent  
-
-    68:      Natural Aquatic Vegetated: Woody Open (40 to 65 %) Water < 3 months (temporary or seasonal)  
-
-    69:      Natural Aquatic Vegetated: Woody Open (15 to 40 %)  
-
-    70:      Natural Aquatic Vegetated: Woody Open (15 to 40 %) Water > 3 months (semi-) permanent  
-
-    71:      Natural Aquatic Vegetated: Woody Open (15 to 40 %) Water < 3 months (temporary or seasonal)  
-
-    72:      Natural Aquatic Vegetated: Woody Sparse (4 to 15 %)  
-
-    73:      Natural Aquatic Vegetated: Woody Sparse (4 to 15 %) Water > 3 months (semi-) permanent  
-
-    74:      Natural Aquatic Vegetated: Woody Sparse (4 to 15 %) Water < 3 months (temporary or seasonal)  
-
-    75:      Natural Aquatic Vegetated: Woody Scattered (1 to 4 %)  
-
-    76:      Natural Aquatic Vegetated: Woody Scattered (1 to 4 %) Water > 3 months (semi-) permanent  
-
-    77:      Natural Aquatic Vegetated: Woody Scattered (1 to 4 %) Water < 3 months (temporary or seasonal)  
-
-    78:      Natural Aquatic Vegetated: Herbaceous Closed (> 65 %)  
-
-    79:      Natural Aquatic Vegetated: Herbaceous Closed (> 65 %) Water > 3 months (semi-) permanent  
-
-    80:      Natural Aquatic Vegetated: Herbaceous Closed (> 65 %) Water < 3 months (temporary or seasonal)  
-
-    81:      Natural Aquatic Vegetated: Herbaceous Open (40 to 65 %)  
-
-    82:      Natural Aquatic Vegetated: Herbaceous Open (40 to 65 %) Water > 3 months (semi-) permanent  
-
-    83:      Natural Aquatic Vegetated: Herbaceous Open (40 to 65 %) Water < 3 months (temporary or seasonal)  
-
-    84:      Natural Aquatic Vegetated: Herbaceous Open (15 to 40 %)  
-
-    85:      Natural Aquatic Vegetated: Herbaceous Open (15 to 40 %) Water > 3 months (semi-) permanent  
-
-    86:      Natural Aquatic Vegetated: Herbaceous Open (15 to 40 %) Water < 3 months (temporary or seasonal)  
-
-    87:      Natural Aquatic Vegetated: Herbaceous Sparse (4 to 15 %)  
-
-    88:      Natural Aquatic Vegetated: Herbaceous Sparse (4 to 15 %) Water > 3 months (semi-) permanent  
-
-    89:      Natural Aquatic Vegetated: Herbaceous Sparse (4 to 15 %) Water < 3 months (temporary or seasonal)  
-
-    90:      Natural Aquatic Vegetated: Herbaceous Scattered (1 to 4 %)  
-
-    91:      Natural Aquatic Vegetated: Herbaceous Scattered (1 to 4 %) Water > 3 months (semi-) permanent  
-
-    92:      Natural Aquatic Vegetated: Herbaceous Scattered (1 to 4 %) Water < 3 months (temporary or seasonal)  
-
-    93:      Artificial Surface  
-
-    94:      Natural Surface  
-
-    95:      Natural Surface: Sparsely vegetated  
-
-    96:      Natural Surface: Very sparsely vegetated  
-
-    97:      Natural Surface: Bare areas, unvegetated  
-
-    98:      Water  
-
-    99:      Water: (Water)  
-
-    100:      Water: (Water) Tidal area  
-
-    101:      Water: (Water) Perennial (> 9 months)  
-
-    102:      Water: (Water) Non-perennial (7 to 9 months)  
-
-    103:      Water: (Water) Non-perennial (4 to 6 months)  
-
-    104:      Water: (Water) Non-perennial (1 to 3 months)
-:::
-
-:::{dropdown} Level 3 Class descriptions
 **Cultivated Terrestrial Vegetation (CTV)**
 
-Cultivated Terrestrial Vegetation (CTV) is associated with agricultural areas where active cultivation has been observed. In version 1.0 only herbaceous cultivation is shown and describes vegetation of strongly varying cover, ranging from bare (e.g. ploughed) areas to fully developed crops. Whilst the continental product describes land cover, interpretation is complicated as the same terminology is used to report on land use.
+Cultivated Terrestrial Vegetation (CTV) is associated with agricultural areas where active cultivation has been observed. In version 2.0, only herbaceous cultivation is shown and describes vegetation of strongly varying cover, ranging from bare (e.g. ploughed) areas to fully developed crops. Whilst the continental product describes land cover, interpretation is complicated as the same terminology is used to report on land use.
 
-The definition of cultivated, and the difference to natural or semi-natural land covers, can be contentious particularly as much of the Australian landscape is used for agricultural food production. This includes areas of natural terrestrial vegetation (NTV) and natural aquatic vegetation (NAV) that are grazed by stock and which can be regarded as either semi-natural or cultivated.
+The definition of cultivated, and the difference from natural or semi-natural land covers, can be contentious, particularly as much of the Australian landscape is used for agricultural food production. This includes areas of Natural Terrestrial Vegetation (NTV) and Natural Aquatic Vegetation (NAV) that are grazed by stock and which can be regarded as either semi-natural or cultivated.
 
-CTV in the DEA Land Cover map is associated with areas where management practices aimed at cultivation (including for grass production) are actively performed during the year being shown. These practices include crop planting and harvesting, fertilization and ploughing. These practices often lead to highly dynamic spectral signals within and between years but also regular transitions between vegetation of different cover amounts as well as bare soil. This also means that agricultural areas will transition between natural and cultivated covers as management practices transition an area between actively cropped or grazed, to areas left fallow, areas reduced to low cover due to climate effects such as drought, or to other covers depending on what the predominant conditions are through the year being shown. 
+CTV in the DEA Land Cover map is associated with areas where management practices aimed at cultivation (including for grass production) are actively performed during the year being shown. These practices include crop planting and harvesting, fertilisation, and ploughing. These practices often lead to highly dynamic spectral signals within and between years but also regular transitions between vegetation of different cover amounts as well as bare soil. This also means that agricultural areas will transition between natural and cultivated covers as management practices transition an area between actively cropped or grazed, to areas left fallow, areas reduced to low cover due to climate effects such as drought, or to other covers depending on what the predominant conditions are through the year being shown. 
 
 **Natural Terrestrial Vegetation (NTV)** 
 
-Natural Terrestrial Vegetation (NTV) represents areas that have all or most of the characteristics of natural or semi-natural herbaceous or woody vegetation (based primarily on floristics, structure, function and dynamics). These areas are identified as primarily vegetated, with either a photosynthetic vegetation fraction (PV) or non-photosynthetic fraction (NPV) greater than the bare soil fraction (BS) for at least two consecutive months. This approach considers that vegetation can exist in, and transition between, PV and NPV states during the year. In effect this approach classifies the landscape as primarily vegetated where the vegetated fraction of a pixel is greater than 30 %. Where the proportion of the landscape is under 30 % vegetated, it is regarded as sparsely vegetated or natural surface, but the cover proportions can still be quantified. Urban areas that are vegetated (e.g. suburbs with trees) are associated with NTV if the pixel is at least 30 % vegetated but artificial surfaces (AS) otherwise. The implementation allows areas of semi-natural vegetation (e.g. native grasslands/pastureland) to be included in the NTV class.
+Natural Terrestrial Vegetation (NTV) represents areas that have all or most of the characteristics of natural or semi-natural herbaceous or woody vegetation (based primarily on floristics, structure, function, and dynamics). These areas are identified as primarily vegetated, with either a photosynthetic vegetation fraction (PV) or non-photosynthetic fraction (NPV) greater than the bare soil fraction (BS) for at least two consecutive months. This approach considers that vegetation can exist in, and transition between PV and NPV states during the year. In effect, this approach classifies the landscape as primarily vegetated where the vegetated fraction of a pixel is greater than 30 %. Where the proportion of the landscape is less than 30 % vegetated, it is regarded as a sparsely vegetated or Natural Bare Surface, but the cover proportions can still be quantified. Urban areas that are vegetated (e.g. suburbs with trees) are associated with NTV if the pixel is at least 30 % vegetated but as Artificial Surfaces (AS) otherwise. The implementation allows areas of semi-natural vegetation (e.g. native grassland and pastureland) to be included in the NTV class.
 
 **Natural Aquatic Vegetation (NAV)**
 
-Natural Aquatic Vegetation (NAV) is associated primarily with wetlands that are dominated by woody and/or herbaceous vegetation (as with NTV). NAV is generally associated with swamps, fens, flooded forests, saltmarshes or mangroves. Only mangroves are included in the current release.
+Natural Aquatic Vegetation (NAV) is associated primarily with wetlands that are dominated by woody or herbaceous vegetation (as with NTV). NAV is generally associated with swamps, fens, flooded forests, saltmarshes, or mangroves. Only mangroves are included in the current release.
 
 **Artificial Surfaces (AS)** 
 
-Artificial Surfaces (AS) are areas of non-vegetated land cover created by human activities and are primarily represented by impervious surfaces (e.g. urban and industrial buildings, roads and railways). These can be more readily identified when the area is larger than the spatial resolution (25 m) provided by the sensor. Open cut extraction sites are often included in AS. However, there is considerable misclassification of NS as AS in areas where vegetated cover is very low and very consistent through the year. 
+Artificial Surfaces (AS) are areas of non-vegetated land cover created by human activities and are primarily represented by impervious surfaces (e.g. urban and industrial buildings, roads, and railways). These can be more readily identified when the area is larger than the spatial resolution (30 m) provided by the sensor. Open cut extraction sites are often included in AS. However, there is considerable misclassification of NS as AS in areas where vegetated cover is very low and very consistent through the year. 
 
-**Natural Surfaces (NS)** 
+**Natural Bare Surfaces (NS)** 
 
-Natural Surfaces (NS) are comprised primarily of unconsolidated (often pervious, e.g. mudflats, saltpans) and/or consolidated (e.g. bare rock or bare soil) materials. In Australia, the proportional area of natural surfaces is relatively low and primarily confined to the deserts and semi-arid areas, river channels (e.g. dry riverbeds) and the coastline (e.g. sand dunes, mudflats). Much of the interior of Australia is sparsely vegetated and can be dominated by herbaceous (annual or perennial) or woody lifeforms. 
+Natural Bare Surfaces (NS) are comprised primarily of unconsolidated (often pervious, e.g. mudflats and saltpans) or consolidated (e.g. bare rock or bare soil) materials. In Australia, the proportional area of Natural Bare Surfaces is relatively low and primarily confined to the deserts and semi-arid areas, river channels (e.g. dry riverbeds) and the coastline (e.g. mudflats and sand dunes). Much of the interior of Australia is sparsely vegetated and can be dominated by herbaceous (annual or perennial) or woody lifeforms. 
 
 **Water** 
 
-The Water class captures terrestrial and coastal open water such as dams, lakes, large rivers and the coastal and near-shore zone. 
+The Water class captures terrestrial and coastal open water such as dams, lakes, large rivers, and the coastal and near-shore zone. 
+
+### Level 4
+
+:::{dropdown} Classifications of Level 4
+
+All categories from Level 3 and Level 4 algorithms are combined to give a single classification value for a given pixel.
+
+The list below includes classes of different hierarchies, reflecting different levels of detail. The higher-level classes are used as fallback classes in cases where a confident detailed classification was not possible, and they are generally rare.
+
+```text
+1:    Cultivated Terrestrial Vegetated
+
+2:    Cultivated Terrestrial Vegetated: Woody
+
+3:    Cultivated Terrestrial Vegetated: Herbaceous  
+
+4:    Cultivated Terrestrial Vegetated: Closed (> 65 %)  
+
+5:    Cultivated Terrestrial Vegetated: Open (40 to 65 %)  
+
+6:    Cultivated Terrestrial Vegetated: Open (15 to 40 %)  
+
+7:    Cultivated Terrestrial Vegetated: Sparse (4 to 15 %)  
+
+8:    Cultivated Terrestrial Vegetated: Scattered (1 to 4 %)  
+
+9:    Cultivated Terrestrial Vegetated: Woody Closed (> 65 %)
+
+10:   Cultivated Terrestrial Vegetated: Woody Open (40 to 65 %)
+
+11:   Cultivated Terrestrial Vegetated: Woody Open (15 to 40 %)
+
+12:   Cultivated Terrestrial Vegetated: Woody Sparse (4 to 15 %)
+
+13:   Cultivated Terrestrial Vegetated: Woody Scattered (1 to 4 %)
+
+14:   Cultivated Terrestrial Vegetated: Herbaceous Closed (> 65 %)  
+
+15:   Cultivated Terrestrial Vegetated: Herbaceous Open (40 to 65 %)  
+
+16:   Cultivated Terrestrial Vegetated: Herbaceous Open (15 to 40 %)  
+
+17:   Cultivated Terrestrial Vegetated: Herbaceous Sparse (4 to 15 %)  
+
+18:   Cultivated Terrestrial Vegetated: Herbaceous Scattered (1 to 4 %)  
+
+19:   Natural Terrestrial Vegetated  
+
+20:   Natural Terrestrial Vegetated: Woody  
+
+21:   Natural Terrestrial Vegetated: Herbaceous  
+
+22:   Natural Terrestrial Vegetated: Closed (> 65 %)  
+
+23:   Natural Terrestrial Vegetated: Open (40 to 65 %)  
+
+24:   Natural Terrestrial Vegetated: Open (15 to 40 %)  
+
+25:   Natural Terrestrial Vegetated: Sparse (4 to 15 %)  
+
+26:   Natural Terrestrial Vegetated: Scattered (1 to 4 %)  
+
+27:   Natural Terrestrial Vegetated: Woody Closed (> 65 %)  
+
+28:   Natural Terrestrial Vegetated: Woody Open (40 to 65 %)  
+
+29:   Natural Terrestrial Vegetated: Woody Open (15 to 40 %)  
+
+30:   Natural Terrestrial Vegetated: Woody Sparse (4 to 15 %)  
+
+31:   Natural Terrestrial Vegetated: Woody Scattered (1 to 4 %)  
+
+32:   Natural Terrestrial Vegetated: Herbaceous Closed (> 65 %)  
+
+33:   Natural Terrestrial Vegetated: Herbaceous Open (40 to 65 %)  
+
+34:   Natural Terrestrial Vegetated: Herbaceous Open (15 to 40 %)  
+
+35:   Natural Terrestrial Vegetated: Herbaceous Sparse (4 to 15 %)  
+
+36:   Natural Terrestrial Vegetated: Herbaceous Scattered (1 to 4 %)  
+
+55:   Natural Aquatic Vegetated  
+
+56:   Natural Aquatic Vegetated: Woody  
+
+57:   Natural Aquatic Vegetated: Herbaceous  
+
+58:   Natural Aquatic Vegetated: Closed (> 65 %)  
+
+59:   Natural Aquatic Vegetated: Open (40 to 65 %)  
+
+60:   Natural Aquatic Vegetated: Open (15 to 40 %)  
+
+61:   Natural Aquatic Vegetated: Sparse (4 to 15 %)  
+
+62:   Natural Aquatic Vegetated: Scattered (1 to 4 %)  
+
+63:   Natural Aquatic Vegetated: Woody Closed (> 65 %)  
+
+64:   Natural Aquatic Vegetated: Woody Closed (> 65 %) Water > 3 months (semi-) permanent  
+
+65:   Natural Aquatic Vegetated: Woody Closed (> 65 %) Water < 3 months (temporary or seasonal)  
+
+66:   Natural Aquatic Vegetated: Woody Open (40 to 65 %)  
+
+67:   Natural Aquatic Vegetated: Woody Open (40 to 65 %) Water > 3 months (semi-) permanent  
+
+68:   Natural Aquatic Vegetated: Woody Open (40 to 65 %) Water < 3 months (temporary or seasonal)  
+
+69:   Natural Aquatic Vegetated: Woody Open (15 to 40 %)  
+
+70:   Natural Aquatic Vegetated: Woody Open (15 to 40 %) Water > 3 months (semi-) permanent  
+
+71:   Natural Aquatic Vegetated: Woody Open (15 to 40 %) Water < 3 months (temporary or seasonal)  
+
+72:   Natural Aquatic Vegetated: Woody Sparse (4 to 15 %)  
+
+73:   Natural Aquatic Vegetated: Woody Sparse (4 to 15 %) Water > 3 months (semi-) permanent  
+
+74:   Natural Aquatic Vegetated: Woody Sparse (4 to 15 %) Water < 3 months (temporary or seasonal)  
+
+75:   Natural Aquatic Vegetated: Woody Scattered (1 to 4 %)  
+
+76:   Natural Aquatic Vegetated: Woody Scattered (1 to 4 %) Water > 3 months (semi-) permanent  
+
+77:   Natural Aquatic Vegetated: Woody Scattered (1 to 4 %) Water < 3 months (temporary or seasonal)  
+
+78:   Natural Aquatic Vegetated: Herbaceous Closed (> 65 %)  
+
+79:   Natural Aquatic Vegetated: Herbaceous Closed (> 65 %) Water > 3 months (semi-) permanent  
+
+80:   Natural Aquatic Vegetated: Herbaceous Closed (> 65 %) Water < 3 months (temporary or seasonal)  
+
+81:   Natural Aquatic Vegetated: Herbaceous Open (40 to 65 %)  
+
+82:   Natural Aquatic Vegetated: Herbaceous Open (40 to 65 %) Water > 3 months (semi-) permanent  
+
+83:   Natural Aquatic Vegetated: Herbaceous Open (40 to 65 %) Water < 3 months (temporary or seasonal)  
+
+84:   Natural Aquatic Vegetated: Herbaceous Open (15 to 40 %)  
+
+85:   Natural Aquatic Vegetated: Herbaceous Open (15 to 40 %) Water > 3 months (semi-) permanent  
+
+86:   Natural Aquatic Vegetated: Herbaceous Open (15 to 40 %) Water < 3 months (temporary or seasonal)  
+
+87:   Natural Aquatic Vegetated: Herbaceous Sparse (4 to 15 %)  
+
+88:   Natural Aquatic Vegetated: Herbaceous Sparse (4 to 15 %) Water > 3 months (semi-) permanent  
+
+89:   Natural Aquatic Vegetated: Herbaceous Sparse (4 to 15 %) Water < 3 months (temporary or seasonal)  
+
+90:   Natural Aquatic Vegetated: Herbaceous Scattered (1 to 4 %)  
+
+91:   Natural Aquatic Vegetated: Herbaceous Scattered (1 to 4 %) Water > 3 months (semi-) permanent  
+
+92:   Natural Aquatic Vegetated: Herbaceous Scattered (1 to 4 %) Water < 3 months (temporary or seasonal)  
+
+93:   Artificial Surface  
+
+94:   Natural Surface  
+
+95:   Natural Surface: Sparsely vegetated  
+
+96:   Natural Surface: Very sparsely vegetated  
+
+97:   Natural Surface: Bare areas, unvegetated  
+
+98:   Water  
+
+99:   Water: (Water)  
+
+100:  Water: (Water) Tidal area  
+
+101:  Water: (Water) Perennial (> 9 months)  
+
+102:  Water: (Water) Non-perennial (7 to 9 months)  
+
+103:  Water: (Water) Non-perennial (4 to 6 months)  
+
+104:  Water: (Water) Non-perennial (1 to 3 months)
+
+255: No data
+```
+
 :::
 
-:::{dropdown} Level 4 Class Descriptions
-**Lifeform (NTV, NAV and CTV; 2 classes)** 
+**Lifeform (NTV, NAV, and CTV; 2 classes)** 
 
-Lifeform represents the dominant vegetation type of a primarily vegetated area, discriminating woody from non-woody (herbaceous) vegetation. The Woody Cover Fraction models woody as vegetation of at least 2m in height and at least 20 % canopy cover. Hence the dominant vegetation in areas designated as woody in this product is considered to be composed of shrubs and trees. However where woody vegetation is not dominant in an area, the cover will be essentially herbaceous or bare. Hence some areas containing sparse trees or shrubs will likely be represented as herbaceous.
+Lifeform represents the dominant vegetation type of a primarily vegetated area, discriminating woody from non-woody (herbaceous) vegetation. The Woody Cover Fraction models woody as vegetation of at least 20 % canopy cover. Hence the dominant vegetation in areas designated as woody in this product is considered to be composed of shrubs and trees. However, where woody vegetation is not dominant in an area, the cover will be essentially herbaceous or bare. Hence some areas containing sparse trees or shrubs will likely be represented as herbaceous.
 
-**Vegetation Cover (NTV, NAV and CTV; 5 classes)** 
+**Vegetation Cover (NTV, NAV, and CTV; 5 classes)** 
 
-Vegetation cover is defined using the statistics of annual fractional cover of PV (for a calendar year). This relates to the upper-most foliage as observed from the Landsat satellite sensor, and describes the percentage of an area that is vegetated rather than bare. 
+Vegetation Cover is defined using the statistics of annual fractional cover of PV (for a calendar year). This relates to the uppermost foliage as observed from the Landsat satellite sensor, and describes the percentage of an area that is vegetated rather than bare. 
 
 **Water Seasonality (NAV; 2 classes)** 
 
-Water seasonality refers to the typical hydrological conditions in NAV within a year and is relevant to both coastal and inland wetlands. The current implementation utilises the Water Observations from Space (WOfS) dataset, identifying hydro-periods for NAV areas where water is (semi-) permanent (over 3 months) or temporary or seasonal (under 3 months). 
+Water Seasonality refers to the typical hydrological conditions in NAV within a year and is relevant to both coastal and inland wetlands. The current implementation utilises the [DEA Water Observations (WO)](/data/category/dea-water-observations/) dataset, identifying hydro-periods for NAV areas where water is somewhat permanent (over 3 months) or temporary or seasonal (under 3 months). 
 
 **Water State (Water; 1 class)** 
 
-Water state establishes whether water is present in liquid form or as snow or ice. The current product only identifies areas where water is present as liquid for at least 20 % of observations (based on WOfS). 
+Water State establishes whether water is present in liquid form or as snow or ice. The current product only identifies areas where water is present as liquid for at least 20 % of observations (based on WOfS). 
 
 **Water Persistence (Water; 4 classes)** 
 
-Water persistence (or hydro-period) describes the maximum duration (in months) that water is seen to be covering the surface in the year.
+Water Persistence (or hydro-period) describes the maximum duration (in months) that water is seen to be covering the surface in the year.
 
 **Intertidal (Water; 1 class)** 
 
-Intertidal water refers to primarily non-vegetated aquatic areas with systematic, tidal water variations. 
+Intertidal water refers to primarily non-vegetated aquatic areas with systematic tidal water variations. 
 
-**Bare Gradation (NS; 3 classes)**
+**Natural Surface (NS; 3 classes)**
 
-The bare gradation describes the percentage of bare surface in areas which contain sporadic or little persistent green vegetation through the year. The percentage reflects that much of the remaining area is brown or dead vegetation and is characteristic of the more arid parts of Australia.
-:::
+Natural Surface (i.e., bare gradation) describes the percentage of bare surface in areas which contain sporadic or little persistent green vegetation through the year. The percentage reflects that much of the remaining area is brown or dead vegetation. This is characteristic of the more arid parts of Australia.
 
 ## Lineage
 
-The FAO LCCS taxonomy (Figure 1) is hierarchical and consists of a dichotomous phase (Level 1 to 3) and a modular phase (referred to as Level 4). In Level 1, vegetated and non-vegetated areas are first separated. These are then divided into terrestrial or aquatic categories to form Level 2. In the vegetated terrestrial category, cultivated and natural (including semi-natural) areas are differentiated. The non-vegetated category is further divided into artificial surfaces, and natural surfaces incorporating low vegetation cover and bare areas. Including the non-vegetated aquatic class (from Level 2), this results in the creation of six base land cover categories.
+The FAO LCCS taxonomy (Figure 2) is hierarchical and consists of a dichotomous phase (Levels 1 to 3) and a modular phase (Level 4). In Level 1, vegetated and non-vegetated areas are first separated. These are then divided into terrestrial or aquatic categories to form Level 2. In the vegetated terrestrial category, cultivated and natural (including semi-natural) areas are differentiated. The non-vegetated category is further divided into Artificial Surface and Natural Surface. These non-vegetated Natural Surface include low vegetation cover and bare areas. This results in six base land cover categories (including the non-vegetated aquatic class from Level 2).
 
-![Diagram showing the portion of the LCCS taxonomy which is implemented in DEA Land Cover v1.0.0](/_files/cmi/cut_back_0.PNG)
+At Level 4, vegetated areas are further classified using information that differentiates lifeform (woody and herbaceous) and quantifies vegetation cover percent and water seasonality (for Natural Aquatic Vegetation). Natural Surface areas have information added (bare gradation) which describes the level of remaining vegetation present (sparse, very sparse, or not detectable). Non-vegetated aquatic areas (Water) are further described on the basis of their persistence (hydro-period) over a calendar year. The FAO LCCS differentiates water in different physical states (liquid or frozen; ice or snow); however, only liquid water is included in the current release.
 
-*Figure 1 - Diagrammatic representation of the implementation of the FAO LCCS (Version 2) classification within the DEA Land Cover product version 1.0.*
+![Diagram showing the portion of the LCCS taxonomy which is implemented in DEA Land Cover.](/_files/land_cover/cut_back_0.PNG)
 
-At Level 4, vegetated areas are further classified using information that differentiates lifeform (woody and herbaceous) and quantifies vegetation cover percent and water seasonality (for Natural Aquatic Vegetation). Natural Surface areas have information added (bare gradation) which describes the level of remaining vegetation present (sparse, very sparse or not detectable). Non-vegetated aquatic areas (Water) are further described on the basis of their persistence (hydroperiod) over a calendar year. The FAO LCCS differentiates water in different physical states (liquid or frozen; ice or snow), however only liquid water is included in the current release.
+<figure>
+    <figcaption>Figure 2 (above). A diagram of the implementation of the FAO LCCS Version 2 classification within the DEA Land Cover product.</figcaption>
+</figure>
 
-![Diagram showing the data products which go into producing the level 3 classification.](/_files/cmi/level3-dataflow.PNG)
+![Diagram showing the data products which go into producing the Level 3 classification.](/_files/land_cover/level3-dataflow.PNG)
 
-*Figure 2 - Input data products used to produce Level 3 classification*
+<figure>
+    <figcaption>Figure 3 (above). Input data products used to produce the Level 3 classification.</figcaption>
+</figure>
 
-![Diagram showing input data products used to produce the Level 4 classification](/_files/cmi/level4-dataflow.PNG)
+![Diagram showing input data products used to produce the Level 4 classification](/_files/land_cover/level4-dataflow.PNG)
 
-*Figure 3 - Input data products used to produce Level 4 classification*
+<figure>
+    <figcaption>Figure 4 (above). Input data products used to produce the Level 4 classification.</figcaption>
+</figure>
 
 % ## Processing steps
 
 ## Software
 
-* [https://bitbucket.org/au-eoed/livingearth\_lccs/src/main/](https://bitbucket.org/au-eoed/livingearth_lccs/src/main/)
-* [https://bitbucket.org/geoscienceaustralia/livingearth\_australia/src/master/](https://bitbucket.org/geoscienceaustralia/livingearth_australia/src/master/)
+* [LivingEarth LCCS](https://bitbucket.org/au-eoed/livingearth_lccs/)
+* [LivingEarth Australia](https://bitbucket.org/geoscienceaustralia/livingearth_australia/)
 
 ## References
 

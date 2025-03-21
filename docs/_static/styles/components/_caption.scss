@@ -1,3 +1,8 @@
 figure figcaption, table caption {
     color: var(--pst-color-text-base) !important;
 }
+
+figure.table-caption {
+    margin-bottom: 0;
+    margin-top: 1rem;
+}
