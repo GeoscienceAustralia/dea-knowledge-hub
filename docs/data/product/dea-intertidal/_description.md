@@ -66,7 +66,7 @@ ga_s2ls_intertidal_cyear_3_x082y139_2022--P1Y_final_elevation.tif
 
 * [DEA Intertidal Github](https://github.com/GeoscienceAustralia/dea-intertidal) &mdash; A codebase for DEA Intertidal product generation workflows 
 * [EO-Tides Github](https://github.com/GeoscienceAustralia/eo-tides) &mdash; A codebase for integrating satellite Earth observations with tide modelling
-* [DEA Tools Github](https://github.com/GeoscienceAustralia/dea-notebooks) &mdash; Parallelised tide modelling and data manipulation tools 
+* [DEA Tools Github](https://github.com/GeoscienceAustralia/dea-notebooks) &mdash; Earth observation data manipulation tools 
 * [PyTMD Github](https://github.com/tsutterley/pyTMD) &mdash; Python-based tidal prediction software 
 
 ### Core Product Layers 
@@ -109,15 +109,15 @@ DEA Intertidal Extents is a categorical dataset classifying coastal areas into f
  
 The class definitions of the Intertidal Extents layer are as follows.
 
-Land - Pixels that are wet in less than 50 % of observations.
+Ocean and coastal waters - Pixels that are wet in 50 % or more of observations and are located within the coastal mask (see Inland waters). (Value = 1)
 
-Inland waters- Pixels that are wet in more than 50 % of observations and fall outside of the coastal mask, a cost-distance connectivity mask combining elevation with distance from the ocean.
-
-Exposed intertidal (low confidence) - Pixels that have a correlation between tide height and ndwi > 0.15 and are located within the coastal mask (see Inland waters).
+Exposed intertidal (low confidence) - Pixels that have a correlation between tide height and ndwi > 0.15 and are located within the coastal mask (see Inland waters). (Value = 2)
  
-Exposed intertidal (high confidence) - Pixels that are included in the intertidal elevation dataset 
+Exposed intertidal (high confidence) - Pixels that are included in the intertidal elevation dataset. (Value = 3)
 
-Ocean and coastal waters - Pixels that are wet in 50 % or more of observations and are located within the coastal mask (see Inland waters).
+Inland waters- Pixels that are wet in more than 50 % of observations and fall outside of the coastal mask, a cost-distance connectivity mask combining elevation with distance from the ocean. (Value = 4)
+
+Land - Pixels that are wet in less than 50 % of observations. (Value = 5)
 
 :::#TODO {figure}  /_files/dea-intertidal/DEAIntertidal_layer_exposure.*
 :alt: DEA Intertidal Extents layer

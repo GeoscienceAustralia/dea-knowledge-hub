@@ -27,6 +27,13 @@ bands_table:
     units: Percent
     type: uint8
     description: Percentage of time that any intertidal pixel of known elevation was exposed from tidal inundation during the analysis epoch
+- name: extents
+    aliases: []
+    resolution: 10 m
+    nodata: 255
+    units: Class
+    type: uint8
+    description: Categorical classification of coastal cover types based on wetting characteristics and coastal proximity. 
   - name: ta_spread
     aliases:
     - spread
@@ -99,3 +106,11 @@ bands_table:
     units: Correlation
     type: float32
     description: Pearson correlations between NDWI satellite observations and tide heights during the analysis epoch
+ - name: qa_count_clear
+    aliases:
+    - count_clear
+    resolution: 10 m
+    nodata: -999
+    units: Count
+    type: int16
+    description: The count of clear and valid observations per pixel used to calculate DEA Intertidal Elevation and derived datasets
