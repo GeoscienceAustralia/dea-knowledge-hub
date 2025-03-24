@@ -24,7 +24,7 @@ The DEA Intertidal product suite provides annual continental-scale elevation and
 
 ### DEA Intertidal features
 
-The DEA Intertidal product suite contains 3 core product layers, 7 tidal attribute (`ta`) layers, and 2 quality assessment (`qa`) layers, all provided as continental 10 m resolution GeoTIFFs for the Australian coastal and intertidal region.
+The DEA Intertidal product suite contains 4 core product layers, 7 tidal attribute (`ta`) layers, and 3 quality assessment (`qa`) layers, all provided as continental 10 m resolution GeoTIFFs for the Australian coastal and intertidal region.
 
 All datasets are produced annually from a 3-year composite of input data from the combined Sentinel-2 and Landsat 7, 8, and 9 DEA Collection 3 surface reflectance products. The product time series commences from 2016, with datasets labelled by the middle year of data. For example, the 2017 layer combines data from 2016, 2017, and 2018. Updates to the product suite are scheduled annually. 
 
@@ -46,6 +46,8 @@ NIDEM was the first 3D model of Australia’s intertidal zone &mdash; the area o
 
 * The implementation of an ensemble tidal modelling approach, acknowledging the wide range of global and regional tide models available and their varying performance across different regions of Australia. See [Ensemble Tidal Modelling](./?tab=description#ensemble-tidal-modelling).
 
+* A coastal extents classification model that identifies five categorical classes to compliment the Elevation and Exposure products. This helps users to characterise different environments in the coastal zone in terms of their inundation characteristics and drivers, mapping confidence and nature of water cover.
+
 ### File Naming Convention 
 
 File names use the format:
@@ -63,6 +65,7 @@ ga_s2ls_intertidal_cyear_3_x082y139_2022--P1Y_final_elevation.tif
 ### Code repositories
 
 * [DEA Intertidal Github](https://github.com/GeoscienceAustralia/dea-intertidal) &mdash; A codebase for DEA Intertidal product generation workflows 
+* [EO-Tides Github](https://github.com/GeoscienceAustralia/eo-tides) &mdash; A codebase for integrating satellite Earth observations with tide modelling
 * [DEA Tools Github](https://github.com/GeoscienceAustralia/dea-notebooks) &mdash; Parallelised tide modelling and data manipulation tools 
 * [PyTMD Github](https://github.com/tsutterley/pyTMD) &mdash; Python-based tidal prediction software 
 
@@ -100,26 +103,48 @@ DEA Intertidal Exposure (Figure 3) models the percentage of time that any intert
 Figure 3 &mdash; DEA Intertidal Exposure, with low exposure values (i.e. rarely exposed pixels) shown in dark colours.
 :::
 
+#### DEA Intertidal Extents (extents)
+
+DEA Intertidal Extents is a categorical dataset classifying coastal areas into five classes (Figure 4), including the satellite-observed extents of the intertidal zone. This classification is based on DEA Intertidal Elevation outputs and other satellite-derived data including the inundation frequency of each pixel and correlations between inundation patterns and modelled tide heights. See Quality Assessment Layers. The "intensive urban" land use summary class of the Catchment-scale Land Use Map (CLUM) (ABARES, 2021) dataset was used to mask pixel misclassifications in urban areas.
+ 
+The class definitions of the Intertidal Extents layer are as follows.
+
+Land - Pixels that are wet in less than 50 % of observations.
+
+Inland waters- Pixels that are wet in more than 50 % of observations and fall outside of the coastal mask, a cost-distance connectivity mask combining elevation with distance from the ocean.
+
+Exposed intertidal (low confidence) - Pixels that have a correlation between tide height and ndwi > 0.15 and are located within the coastal mask (see Inland waters).
+ 
+Exposed intertidal (high confidence) - Pixels that are included in the intertidal elevation dataset 
+
+Ocean and coastal waters - Pixels that are wet in 50 % or more of observations and are located within the coastal mask (see Inland waters).
+
+:::#TODO {figure}  /_files/dea-intertidal/DEAIntertidal_layer_exposure.*
+:alt: DEA Intertidal Extents layer
+
+Figure 4 &mdash; DEA Intertidal Extents
+:::
+
 ### Tidal Attribute Layers
 
 See the attributes of these layers in the [Specifications tab](./?tab=specifications).
 
 #### DEA Intertidal tidal spread (ta_spread)
 
-The tidal spread dataset provides the percentage of the full astronomical tidal range observed by the time series of satellite observations at each pixel (see Figure 4a). DEA Intertidal Spread takes the concept of satellite tide bias, introduced in Bishop-Taylor et al (2019), and applies it at a pixel scale to demonstrate the fraction of the full tide range that was sensor observed during the analysis epoch at that location. In this work, the astronomical tide range is defined as that modelled by the [Ensemble Tidal Modelling](#ensemble-tidal-modelling) approach. 
+The tidal spread dataset provides the percentage of the full astronomical tidal range observed by the time series of satellite observations at each pixel (see Figure 5a). DEA Intertidal Spread takes the concept of satellite tide bias, introduced in Bishop-Taylor et al (2019), and applies it at a pixel scale to demonstrate the fraction of the full tide range that was sensor observed during the analysis epoch at that location. In this work, the astronomical tide range is defined as that modelled by the [Ensemble Tidal Modelling](#ensemble-tidal-modelling) approach. 
 
 #### DEA Intertidal low tide offset (ta_offset_low)
 
-The low tide offset dataset quantifies the proportion of the lowest tides not observed at any time during the analysis epoch by satellites at each pixel (as a percentage of the astronomical tide range). It is calculated by measuring the offset between the lowest astronomical tide (LAT) and the lowest satellite-observed tide (LOT; see Figure 4b). A high value indicates that DEA Intertidal datasets may not map the lowest regions of the intertidal zone.
+The low tide offset dataset quantifies the proportion of the lowest tides not observed at any time during the analysis epoch by satellites at each pixel (as a percentage of the astronomical tide range). It is calculated by measuring the offset between the lowest astronomical tide (LAT) and the lowest satellite-observed tide (LOT; see Figure 5b). A high value indicates that DEA Intertidal datasets may not map the lowest regions of the intertidal zone.
 
 #### DEA Intertidal high tide offset (ta_offset_high)
 
-The high tide offset dataset quantifies the proportion of the highest tides not observed at any time during the analysis epoch by satellites at each pixel (as a percentage of the astronomical tide range). It is calculated by measuring the offset between the highest astronomical tide (HAT) and the highest satellite-observed tide (HOT; see Figure 4c). A high value indicates that DEA Intertidal datasets may not map the highest regions of the intertidal zone.
+The high tide offset dataset quantifies the proportion of the highest tides not observed at any time during the analysis epoch by satellites at each pixel (as a percentage of the astronomical tide range). It is calculated by measuring the offset between the highest astronomical tide (HAT) and the highest satellite-observed tide (HOT; see Figure 5c). A high value indicates that DEA Intertidal datasets may not map the highest regions of the intertidal zone.
 
 :::{figure} /_files/dea-intertidal/tidalattributes.*
 :alt: Tidal Attributes Description Figure
 
-Figure 4 &mdash; Illustration of the concept of observed tide heights (dots corresponding to satellite acquisition time) compared to the full modelled tidal range (blue lines). Descriptions of Spread (a), Lowtide offset (b), and Hightide offset (c) are detailed in the text.
+Figure 5 &mdash; Illustration of the concept of observed tide heights (dots corresponding to satellite acquisition time) compared to the full modelled tidal range (blue lines). Descriptions of Spread (a), Lowtide offset (b), and Hightide offset (c) are detailed in the text.
 :::
 
 #### DEA Intertidal lowest observed tide (ta_lot)
@@ -150,20 +175,20 @@ This quality assessment band provides the inundation frequency of each pixel acr
 
 This quality assessment dataset provides pixel-level Pearson correlations between NDWI satellite observations and tide heights from the [Ensemble Tidal Model](#ensemble-tidal-modelling) over the analysis epoch. High values indicate that patterns of inundation were positively correlated with tide, indicating that the pixel was likely to be tidally influenced.
 
+#### DEA Intertidal Clear Count
+
+This quality assessment dataset returns the number of clear and valid satellite observations for every pixel. By default, a minimum number of 5 clear and cloud-free satellite observations are required to calculate intertidal elevation and exposure.
+
 ### Ensemble Tidal Modelling
 
-The Ensemble Tidal Modelling approach was implemented to account for the varying performance and biases of 7 commonly used global tidal models when applied to the various regions and tidal regimes of continental Australia (Figure 5).
+The Ensemble Tidal Modelling approach was implemented to account for the varying performance and biases of 10 commonly used global tidal models when applied to the various regions and tidal regimes of continental Australia (Figure 6).
 
-The tidal models listed below were implemented within the DEA environment using the [pyTMD](https://github.com/tsutterley/pyTMD) and [DEA Tools](https://github.com/GeoscienceAustralia/dea-notebooks) Python packages: 
+The tidal models listed below were implemented within the DEA environment using the [eo-tides](https://github.com/GeoscienceAustralia/eo-tides) Python package which integrates satellite Earth observation data with tide modelling and leverages tide modelling functionality from the [pyTMD](https://github.com/tsutterley/pyTMD) package with the following models:
 
- 
-* FES2014 (Lydard et al., 2021) 
-* FES2012 (Carrère et al., 2012) 
-* TPXO8-atlas-v1 (Egbert & Erofeeva, 2002) 
-* TPXO9-atlas-v5  (Egbert & Erofeeva, 2002) 
-* EOT20 (Hart-Davis et al., 2021) 
-* HAMTIDE11 (Taguchi et al., 2014) 
-* GOT4.10 (Ray, 2013) 
+* Empirical Ocean Tide Model (EOT20; Hart-Davis et al., 2021)
+* Finite Element Solution tide models (FES2012, FES2014, FES2022; Carrère et al., 2012; Lyard et al., 2021)
+* TOPEX/POSEIDON global tide models (TPXO8, TPXO9, TPXO10; Egbert and Erofeeva., 2002, 2010)
+* Global Ocean Tide models (GOT4.10, GOT5.5, GOT5.6; Ray, 2013, Padman et al., 2018)
 
 The ensemble process utilises ancillary data (in this case, the correlation of the NDWI values to each individual tidal model output) to weight and selects the top 3 tidal models for a given location. A single ensemble tidal output from these 3 optimal models is then generated for use in all downstream product workflows.   
 
@@ -171,7 +196,7 @@ The ensemble process utilises ancillary data (in this case, the correlation of t
 :alt: Ensemble tide validation Figure
 :::
 
-Figure 5 &mdash; Global tide models validated at Australian Baseline Sea Level Monitoring Project (ABSLMP) and Global Extreme Sea Level Analysis (GESLA) tide gauges
+Figure 6 &mdash; Global tide models validated at Australian Baseline Sea Level Monitoring Project (ABSLMP) and Global Extreme Sea Level Analysis (GESLA) tide gauges
 
 ## Lineage
 
@@ -181,27 +206,27 @@ This shift to a more dynamic product suite is achieved through a pixel-based alg
 
 ## Processing Steps
 
-1. Satellite data from Sentinel-2A and -2B, Landsat 7, 8, and 9 are loaded. 
+1. Satellite data from Sentinel-2A, -2B and -2C, Landsat 7, 8, and 9 are loaded. 
 
-1. Satellite data cloud masked and converted to NDWI. 
+2. Satellite data cloud masked and converted to NDWI. 
 
-1. Tides modelled for every satellite pixel using [Ensemble Tidal Modelling](#ensemble-tidal-modelling). 
+3. Tides modelled for every satellite pixel using [Ensemble Tidal Modelling](#ensemble-tidal-modelling). 
 
-1. Satellite data filtered to probable intertidal pixels using NDWI inundation frequency and tide correlation and masked to remove deep ocean water using bathymetry from [GA Australian 250m Bathymetry and Topography Grid](https://explorer.dea.ga.gov.au/products/ga_ausbathytopo250m_2023) (Beaman, 2023). 
+4. Satellite data filtered to probable intertidal pixels using NDWI inundation frequency and tide correlation and masked as coastal or non-coastal using cost-distance weightings of [SRTM-elevations](https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/72759) relative to sea-level
 
-1. Pixel-based rolling median applied from low to high tide. 
+5. Pixel-based rolling median applied from low to high tide. 
 
-1. Intertidal elevation modelled based on tide height at which a rolling median transitions from dry to wet. 
+6. Intertidal elevation modelled based on tide height at which a rolling median transitions from dry to wet. 
 
-1. Intertidal elevation uncertainty modelled based on how cleanly modelled elevation divides satellite observations into dry and wet. 
+7. Intertidal elevation uncertainty modelled based on how cleanly modelled elevation divides satellite observations into dry and wet. 
 
-1. Intertidal exposure calculated by comparing Intertidal elevation against high frequency modelled tides. 
+8. Intertidal extents classes calculated based on Intertidal elevation and NDWI inundation frequency and tide correlation, with additional masking to remove urban false positives using abares_clum_2020 (ABARES, 2021).
 
-1. Tidal metrics calculated by comparing satellite-observed tides against high frequency modelled tides. 
+9. Intertidal exposure calculated by comparing Intertidal elevation against high frequency modelled tides. 
+
+10. Tidal metrics calculated by comparing satellite-observed tides against high frequency modelled tides. 
 
 ## References
-
-Beaman, R. 2023. AusBathyTopo 250m (Australia) 2023 Grid - A High-resolution Depth Model for Australia (20230004C). Geoscience Australia, Canberra. 
 
 Bishop-Taylor, R., Sagar, S., Lymburner, L., Beaman, R.J., 2019. Between the tides: Modelling the elevation of Australia’s exposed intertidal zone at continental scale. *Estuarine, Coastal and Shelf Science* 23, 115–128.
 
