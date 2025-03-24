@@ -6,9 +6,9 @@ short_name: DEA Intertidal
 full_technical_name: Geoscience Australia Sentinel-2 Landsat Intertidal Calendar Year Collection 3  
 header_image: /_files/dea-intertidal/DEAIntertidal_prettypic_Elevation_ShoalPointQLD_XS_Size.png
 
-version_number: 2.0.0
-is_latest_version: true
-latest_version_link: null
+version_number: 1.0.0
+is_latest_version: false
+latest_version_link: /data/product/dea-intertidal/
 is_provisional: false
 
 lineage_type: DERIVATIVE
@@ -95,9 +95,6 @@ access_links_custom: null
 # History
 
 previous_versions:
-  - version_number: 1.0.0
-    title: DEA Intertidal
-    slug: dea-intertidal-1.0.0
   - version_number: 1.0.0
     title: DEA Intertidal Elevation (Landsat)
     slug: dea-intertidal-elevation-landsat-1.0.0
