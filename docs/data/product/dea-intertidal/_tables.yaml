@@ -27,7 +27,7 @@ bands_table:
     units: Percent
     type: uint8
     description: Percentage of time that any intertidal pixel of known elevation was exposed from tidal inundation during the analysis epoch
-- name: extents
+  - name: extents
     aliases: []
     resolution: 10 m
     nodata: 255
