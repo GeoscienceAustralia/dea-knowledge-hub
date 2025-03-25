@@ -187,7 +187,7 @@ The Ensemble Tidal Modelling approach was implemented to account for the varying
 The tidal models listed below were implemented within the DEA environment using the [eo-tides](https://github.com/GeoscienceAustralia/eo-tides) Python package which integrates satellite Earth observation data with tide modelling and leverages tide modelling functionality from the [pyTMD](https://github.com/tsutterley/pyTMD) package with the following models:
 
 * Empirical Ocean Tide Model (EOT20; Hart-Davis et al., 2021)
-* Finite Element Solution tide models (FES2012, FES2014, FES2022; Carrère et al., 2012; Lyard et al., 2021)
+* Finite Element Solution tide models (FES2012, FES2014, FES2022; Carrère et al., 2012; Lyard et al., 2021; Carrère et al., 2022)
 * TOPEX/POSEIDON global tide models (TPXO8, TPXO9, TPXO10; Egbert and Erofeeva., 2002, 2010)
 * Global Ocean Tide models (GOT4.10, GOT5.5, GOT5.6; Ray, 2013, Padman et al., 2018)
 
@@ -233,15 +233,20 @@ Bishop-Taylor, R., Sagar, S., Lymburner, L., Beaman, R.J., 2019. Between the tid
 
 Carrère L., F. Lyard, M. Cancet, A. Guillot, L. Roblou, 2012. FES2012: A new global tidal model taking advantage of nearly 20 years of altimetry, *Proceedings of meeting "20 Years of Altimetry"*, Venice 2012 
 
+Carrère L., F. Lyard, M. Cancet, D. Allain, M. Dabat, E. Fouchet, E. Sahuc, Y. Faugere, G. Dibarboure, N. Picot, 2022. A new barotropic tide model for global ocean: FES2022, *2022 Ocean Surface Topography Science Team Meeting"*, Venice 2022 
+
 Egbert, G.D., Erofeeva, S.Y., 2002. Efficient Inverse Modeling of Barotropic Ocean Tides. *J. Atmospheric Ocean. Technol.* 19, 183–204.
+
+Egbert, G.D., Erofeeva, S.Y., 2010. The OSU TOPEX/Poseiden Global Inverse Solution TPXO. *TPXO8*-atlas Version 1.0*
 
 Hart-Davis, M.G., Piccioni, G., Dettmering, D., Schwatke, C., Passaro, M., Seitz, F., 2021. EOT20: a global ocean tide model from multi-mission satellite altimetry. *Earth System Science Data* 13, 3869–3884. 
 
 Lyard, F.H., Allain, D.J., Cancet, M., Carrère, L., Picot, N., 2021. FES2014 global ocean tide atlas: design and performance. *Ocean Science* 17, 615–649. 
 
+Padman, L., Siegfried, M.R., Fricker, H.A., 2018. Ocean Tide Influences on the Antarctic and Greenland Ice Sheets, *Reviews of Geophysics*, 56, 142-184.
+
+Ray, R. D., 2013. Precise comparisons of bottom-pressure and altimetric ocean tides. Journal of Geophysical Research: Oceans, 118(9), 4570–4584.
+
 Sagar, S., Roberts, D., Bala, B., Lymburner, L., 2017. Extracting the intertidal extent and topography of the Australian coastline from a 28 year time series of Landsat observations. *Remote Sensing of Environment* 195, 153–169.
 
-Ray, R. D. (2013). Precise comparisons of bottom-pressure and altimetric ocean tides. *Journal of Geophysical Research: Oceans*, 118(9), 4570–4584. 
-
-Taguchi, E., Stammer, D., and Zahel, W. (2014), Inferring deep ocean tidal energy dissipation from the global high-resolution data-assimilative HAMTIDE model, *J. Geophys. Res. Oceans*, 119, 4573– 4592. 
 
