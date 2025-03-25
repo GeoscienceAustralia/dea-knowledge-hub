@@ -119,8 +119,9 @@ Inland waters- Pixels that are wet in more than 50 % of observations and fall ou
 
 Land - Pixels that are wet in less than 50 % of observations. (Value = 5)
 
-:::#TODO {figure}  /_files/dea-intertidal/DEAIntertidal_layer_exposure.*
+:::{figure}  /_files/dea-intertidal/DEA_Intertidal_Extents_2022.*
 :alt: DEA Intertidal Extents layer
+:width: 1200px
 
 Figure 4 &mdash; DEA Intertidal Extents
 :::
