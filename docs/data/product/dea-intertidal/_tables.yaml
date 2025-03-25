@@ -106,7 +106,7 @@ bands_table:
     units: Correlation
     type: float32
     description: Pearson correlations between NDWI satellite observations and tide heights during the analysis epoch
- - name: qa_count_clear
+  - name: qa_count_clear
     aliases:
     - count_clear
     resolution: 10 m
