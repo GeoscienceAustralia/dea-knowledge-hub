@@ -234,6 +234,10 @@
       :Data updates: {{ data_update_frequency }}, {{ data_update_activity }}
       {%- elif is_frequency_ongoing and page.data.is_latest_version %}
       :Data updates: {{ data_update_frequency }} frequency, {{ data_update_activity }}
+      {%- elif is_frequency_multiple_words and not page.data.is_latest_version %}
+      :Data updates: {{ data_update_activity_terms.NO_UPDATES }} (Previously: {{ data_update_frequency }})
+      {%- elif not page.data.is_latest_version %}
+      :Data updates: {{ data_update_activity_terms.NO_UPDATES }} (Previously: {{ data_update_frequency }} frequency)
       {%- elif is_frequency_multiple_words %}
       :Data updates: {{ data_update_activity }} (Previously: {{ data_update_frequency }})
       {%- else %}
@@ -695,7 +699,7 @@
         - The expected frequency of data updates. Also called 'Temporal resolution'.
       {%- else %}
       * - **Update frequency**
-        - {{ data_update_frequency }} (Inactive)
+        - {{ data_update_frequency }} ({{ data_update_activity_terms.NO_UPDATES }})
         - Previously, when data updates were active, this was their expected frequency. Also called 'Temporal resolution'.
       {%- endif %}
       {%- if page.data.is_latest_version %}
