@@ -30,7 +30,7 @@ product_ids:
   - ga_s2ls_intertidal_cyear_3
 
 parent_products:
-  - name: Sentinel-2A and -2B and Landsat 7, 8, and 9 NBART and Observational Attributes 
+  - name: Sentinel-2A, -2B and -2C and Landsat 7, 8, and 9 NBART and Observational Attributes 
     link: /data/category/dea-surface-reflectance/
 
 collections:
