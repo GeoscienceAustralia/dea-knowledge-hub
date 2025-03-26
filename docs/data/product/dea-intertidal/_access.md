@@ -6,7 +6,7 @@
 To explore DEA Intertidal on the interactive DEA Maps platform, visit the link below:
 [https://maps.dea.ga.gov.au/story/DEAIntertidal](https://maps.dea.ga.gov.au/story/DEAIntertidal)
 
-To add DEA Coastlines to DEA Maps manually:
+To add DEA Intertidal to DEA Maps manually:
 
 1. Open [DEA Maps](https://maps.dea.ga.gov.au/).
 1. Select **Explore map data** on the top-left.
