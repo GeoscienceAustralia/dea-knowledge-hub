@@ -2,11 +2,11 @@
 
 # Specifications
 
-short_name: DEA High and Low Tide Imagery (Landsat)
-full_technical_name: "High Tide and Low Tide Composites 25m 2.0.0 "
-header_image: /_files/cmi/HLTCv2.png
+short_name: DEA Tidal Imagery
+full_technical_name: "Geoscience Australia Sentinel-2 Tidal Imagery Calendar Year Collection 3"
+#header_image: /_files/cmi/HLTCv2.png #TODO
 
-version_number: 2.0.0
+version_number: 1.0.0
 is_latest_version: true
 latest_version_link: null
 is_provisional: false
@@ -15,75 +15,85 @@ lineage_type: DERIVATIVE
 spatial_data_type: RASTER
 
 spatial_coverage: null
-temporal_coverage_start: 1995
-temporal_coverage_end: 2017
+temporal_coverage_start: 2016
+temporal_coverage_end: 2023
 temporal_coverage_custom: null
 
-data_update_frequency: AS_NEEDED
-data_update_activity: NO_UPDATES
-is_currency_reported: false
+data_update_frequency: YEARLY
+data_update_activity: ONGOING
+is_currency_reported: true
 
-resolution: 25 m
+resolution: 10 m
 coordinate_reference_system: EPSG:3577
 
 product_ids:
-  - high_tide_comp_20p
-  - low_tide_comp_20p
+  - ga_s2_high_tidal_imagery_cyear_3
+  - ga_s2_low_tidal_imagery_cyear_3
 
 parent_products:
-  - name: Landsat 5, 7 and 8 NBAR and Observational Attributes (Collection 2)
+  - name: Sentinel -2A, -2B and -2C and Observational Attributes (Collection 2)
     link: /data/category/dea-surface-reflectance/
 
 collections:
-  - name: Geoscience Australia Landsat Collection 2
-    link: /search/?q=Geoscience+Australia+Landsat+Collection+2
+  - name: Geoscience Australia Sentinel-2 Collection 3
+    link: /search/?q=Geoscience+Australia+Sentinel-2+Collection+3
 
-doi: 10.4225/25/5a615705d20f7
-ecat_id: "113843"
+#doi: 10.4225/25/5a615705d20f7 #TODO
+#ecat_id: "113843" #TODO
 
 licence_name: Creative Commons Attribution 4.0 International Licence
 licence_link: https://creativecommons.org/licenses/by/4.0/
 
-citation_data: "Sagar, S., Phillips, C., Bala, B., Roberts, D., Lymburner, L., 2017. High tide and low tide composites 25m v. 2.0.0. Geoscience Australia, Canberra. http://dx.doi.org/10.4225/25/5a615705d20f7"
+#citation_data: "Newey, V., Bishop-Taylor, R., Phillips, C., Sagar, S. (2025). Digital EArth Australia Tidal Imagery. Geoscience Australia, Canberra." # TODO - add DOI
 citation_paper: "Sagar, S., Phillips, C., Bala, B., Roberts, D., Lymburner, L., 2018. Generating continental scale pixel-based surface reflectance composites in coastal regions with the use of a multi-resolution tidal model. Remote Sensing. 10, 480. https://doi.org/10.3390/rs10030480"
 
 citations_custom: null
 
 tags:
-  - geoscience_australia_landsat_collection_2_deprecated
+  - geoscience_australia_sentinel_2_collection_3
+  - marine_and_coastal
+  - coast
+  - intertidal
+  - coastal_change
   - geomedian
   - tidal_modelling
-  - nbar
+  - composite
+  - high_and_low_tide_imagery
+  - high_and_low_tide_composites
+  - hltc
 
-# Access
+## Access #TODO
 
-access_links_maps:
-  - link: https://maps.dea.ga.gov.au/#share=s-7YeWZKqWkF0Ctv5Av8RkHSWeNzQ
-    name: See it on a map
+#access_links_maps:
+#  - link: https://maps.dea.ga.gov.au/#share=s-7YeWZKqWkF0Ctv5Av8RkHSWeNzQ
+#    name: See it on a map
 
-access_links_explorers:
-  - link: https://explorer.dea.ga.gov.au/products/high_tide_comp_20p
-    name: High tide data explorer
-  - link: https://explorer.dea.ga.gov.au/products/low_tide_comp_20p
-    name: Low tide data explorer
+#access_links_explorers:
+#  - link: https://explorer.dea.ga.gov.au/products/high_tide_comp_20p
+#    name: High tide data explorer
+#  - link: https://explorer.dea.ga.gov.au/products/low_tide_comp_20p
+#    name: Low tide data explorer
 
-access_links_data:
-  - link: https://thredds.nci.org.au/thredds/catalog/catalogs/fk4/hltc_2_0.html
-    name: Access the data on NCI
+#access_links_data:
+#  - link: https://thredds.nci.org.au/thredds/catalog/catalogs/fk4/hltc_2_0.html
+#    name: Access the data on NCI
 
-access_links_code_examples:
-  - link: /notebooks/DEA_products/DEA_High_and_Low_Tide_Imagery/
-    name: null
+#access_links_code_examples:
+#  - link: /notebooks/DEA_products/DEA_High_and_Low_Tide_Imagery/
+#    name: null
 
-access_links_web_services:
-  - link: https://ows.dea.ga.gov.au/
-    name: Web Map Service (WMS)
+#access_links_web_services:
+#  - link: https://ows.dea.ga.gov.au/
+#    name: Web Map Service (WMS)
 
-access_links_custom: null
+#access_links_custom: null
 
 # History
 
-previous_versions: null
+previous_versions:
+  - version_number: 2.0.0
+    title: DEA High and Low Tide Imagery (Landsat)
+    slug: dea-high-and-low-tide-imagery-landsat-2.0.0
 
 # SEO
 
