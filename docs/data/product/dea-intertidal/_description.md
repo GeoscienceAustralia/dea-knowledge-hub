@@ -105,25 +105,25 @@ Figure 3 &mdash; DEA Intertidal Exposure, with low exposure values (i.e. rarely 
 
 #### DEA Intertidal Extents (extents)
 
-DEA Intertidal Extents is a categorical dataset classifying coastal areas into five classes (Figure 4), including the satellite-observed extents of the intertidal zone. This classification is based on DEA Intertidal Elevation outputs and other satellite-derived data including the inundation frequency of each pixel and correlations between inundation patterns and modelled tide heights. See Quality Assessment Layers. The "intensive urban" land use summary class of the Catchment-scale Land Use Map (CLUM) (ABARES, 2021) dataset was used to mask pixel misclassifications in urban areas.
+DEA Intertidal Extents is a categorical dataset classifying coastal areas into five classes (Figure 4), including the satellite-observed extents of the intertidal zone. This classification is based on DEA Intertidal Elevation outputs and other satellite-derived data including the inundation frequency of each pixel and correlations between inundation patterns and modelled tide heights. See [Quality Assessment Layers](quality-assessment-layers). The "intensive urban" land use summary class of the Catchment-scale Land Use Map (CLUM) (ABARES, 2021) dataset was used to mask pixel misclassifications in urban areas.
  
 The class definitions of the Intertidal Extents layer are as follows.
 
-Ocean and coastal waters - Pixels that are wet in 50 % or more of observations and are located within the coastal mask (see Inland waters). (Value = 1)
+**Ocean and coastal waters** - Pixels that are wet in 50 % or more of satellite observations and are located within the coastal mask, a cost-distance connectivity mask combining elevation with distance from the ocean. (Value = 1)
 
-Exposed intertidal (low confidence) - Pixels that have a correlation between tide height and ndwi > 0.15 and are located within the coastal mask (see Inland waters). (Value = 2)
+**Exposed intertidal (low confidence)** - Pixels that have a correlation between tide height and ndwi > 0.15 and are located within the coastal mask (see Ocean and coastal waters). (Value = 2)
  
-Exposed intertidal (high confidence) - Pixels that are included in the intertidal elevation dataset. (Value = 3)
+**Exposed intertidal (high confidence)** - Pixels that are included in the intertidal elevation dataset. (Value = 3)
 
-Inland waters- Pixels that are wet in more than 50 % of observations and fall outside of the coastal mask, a cost-distance connectivity mask combining elevation with distance from the ocean. (Value = 4)
+**Inland waters** - Pixels that are wet in more than 50 % of satellite observations and fall outside of the coastal mask (see Ocean and coastal waters). (Value = 4)
 
-Land - Pixels that are wet in less than 50 % of observations. (Value = 5)
+**Land** - Pixels that are wet in less than 50 % of satellite observations. (Value = 5)
 
 :::{figure}  /_files/dea-intertidal/DEA_Intertidal_Extents_2022.*
 :alt: DEA Intertidal Extents layer
 :width: 1200px
 
-Figure 4 &mdash; DEA Intertidal Extents
+Figure 4 &mdash; DEA Intertidal Extents, the five coastal classes include ocean and coastal waters (dark blue), low confidence intertidal (yellow), high confidence intertidal (orange), inland waters (light blue) and land (white).
 :::
 
 ### Tidal Attribute Layers
@@ -228,6 +228,8 @@ This shift to a more dynamic product suite is achieved through a pixel-based alg
 10. Tidal metrics calculated by comparing satellite-observed tides against high frequency modelled tides. 
 
 ## References
+
+ABARES, 2021. Catchment Scale Land Use of Australia - Update December 2020, Australian Bureau of Agricultural and Resource Economics and Sciences, Canberra
 
 Bishop-Taylor, R., Sagar, S., Lymburner, L., Beaman, R.J., 2019. Between the tides: Modelling the elevation of Australia’s exposed intertidal zone at continental scale. *Estuarine, Coastal and Shelf Science* 23, 115–128.
 
