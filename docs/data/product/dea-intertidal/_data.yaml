@@ -99,7 +99,7 @@ previous_versions:
     title: DEA Intertidal
     slug: dea-intertidal-1.0.0
   - version_number: 1.0.0
-    title: DEA Intertidal Elevation (Landsat)
+    title: National Intertidal Digital Elevation Model
     slug: national-intertidal-digital-elevation-model-1.0.0
   - version_number: 2.0.0
     title: Intertidal Extents Model
