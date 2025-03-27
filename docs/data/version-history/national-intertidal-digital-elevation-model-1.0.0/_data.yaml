@@ -21,8 +21,8 @@ product_ids:
   - nidem
 
 parent_products:
-  name: DEA Intertidal Extents (ITEM)
-  link: /data/product/dea-intertidal-extents-landsat/
+  name: Intertidal Extents Model (ITEM)
+  link: docs/data/version-history/intertidal-extents-model-2.0.0
 collection:
   name: Geoscience Australia Landsat Collection 2
   link: null
