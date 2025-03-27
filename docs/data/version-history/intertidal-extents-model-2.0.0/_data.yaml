@@ -2,13 +2,13 @@
 
 # Specifications
 
-short_name: DEA Intertidal Extents (Landsat)
+short_name: Intertidal Extents Model
 full_technical_name: Intertidal Extents Model 25m
 header_image: /_files/cmi/intertidal_extents.png
 
 version_number: 2.0.0
-is_latest_version: true
-latest_version_link: null
+is_latest_version: false
+latest_version_link: /data/product/dea-intertidal/
 is_provisional: false
 
 lineage_type: DERIVATIVE
