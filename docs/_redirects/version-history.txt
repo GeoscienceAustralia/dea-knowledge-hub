@@ -2,7 +2,7 @@
 
 # These products have been superseded by newer versions.
 
-data/product/dea-intertidal-elevation-landsat  data/version-history/national-intertidal-digital-elevation-model-1.0.0
+data/product/dea-intertidal-elevation-landsat  data/version-history/dea-intertidal-elevation-landsat-1.0.0
 
 data/old-version                                                                   data/version-history
 data/old-version/dea-burnt-area-landsat-2010-and-2015-2.0.0                        data/version-history/dea-burnt-area-landsat-2010-and-2015-2.0.0
@@ -10,7 +10,7 @@ data/old-version/dea-burnt-area-vectors-sentinel-2-near-real-time-1.0.0         
 data/old-version/dea-fractional-cover-landsat-2.2.1                                data/version-history/dea-fractional-cover-landsat-2.2.1
 data/old-version/dea-fractional-cover-percentiles-landsat-2.2.1                    data/version-history/dea-fractional-cover-percentiles-landsat-2.2.1
 data/old-version/dea-geometric-median-and-median-absolute-deviation-landsat-3.1.0  data/version-history/dea-geometric-median-and-median-absolute-deviation-landsat-3.1.0
-data/old-version/dea-intertidal-elevation-landsat-1.0.0                            data/version-history/national-intertidal-digital-elevation-model-1.0.0
+data/old-version/dea-intertidal-elevation-landsat-1.0.0                            data/version-history/dea-intertidal-elevation-landsat-1.0.0
 data/old-version/dea-mangrove-canopy-cover-landsat-2.0.2                           data/version-history/dea-mangrove-canopy-cover-landsat-2.0.2
 data/old-version/dea-pixel-quality-count-landsat-2.0.0                             data/version-history/dea-pixel-quality-count-landsat-2.0.0
 data/old-version/dea-pixel-quality-landsat-2.0.0                                   data/version-history/dea-pixel-quality-landsat-2.0.0
