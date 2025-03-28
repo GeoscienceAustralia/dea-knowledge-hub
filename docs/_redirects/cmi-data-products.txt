@@ -200,13 +200,13 @@ data-products/dea/634/dea-mangrove-canopy-cover-landsat-c3       data/product/de
 data-products/dea/634/ga_ls_mangrove_cover_cyear_3               data/product/dea-mangrove-canopy-cover-landsat
 data-products/dea/ga_ls_mangrove_cover_cyear_3                   data/product/dea-mangrove-canopy-cover-landsat
 
-node/174                                                  data/product/dea-intertidal
-data-products/dea/174/dea-intertidal-extents-landsat      data/product/dea-intertidal
-intertidal_extents_model_25m_2.0.0                        data/product/dea-intertidal
-data-products/dea/174/intertidal-extents-model            data/product/dea-intertidal
-data-products/dea/174/intertidal-extents-model-25m-2.0.0  data/product/dea-intertidal
-data-products/dea/174/intertidal-extents-2-landsat        data/product/dea-intertidal
-data-products/dea/item_v2                                 data/product/dea-intertidal
+node/174                                                  data/product/dea-intertidal-extents-landsat
+data-products/dea/174/dea-intertidal-extents-landsat      data/product/dea-intertidal-extents-landsat
+intertidal_extents_model_25m_2.0.0                        data/product/dea-intertidal-extents-landsat
+data-products/dea/174/intertidal-extents-model            data/product/dea-intertidal-extents-landsat
+data-products/dea/174/intertidal-extents-model-25m-2.0.0  data/product/dea-intertidal-extents-landsat
+data-products/dea/174/intertidal-extents-2-landsat        data/product/dea-intertidal-extents-landsat
+data-products/dea/item_v2                                 data/product/dea-intertidal-extents-landsat
 
 node/630                                                                data/product/dea-fractional-cover-percentiles-landsat
 data-products/dea/630/dea-fractional-cover-percentiles-landsat          data/product/dea-fractional-cover-percentiles-landsat
