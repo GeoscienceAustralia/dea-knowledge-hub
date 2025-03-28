@@ -98,12 +98,12 @@ previous_versions:
   - version_number: 1.0.0
     title: DEA Intertidal
     slug: dea-intertidal-1.0.0
-  - version_number: 1.0.0
-    title: National Intertidal Digital Elevation Model
-    slug: national-intertidal-digital-elevation-model-1.0.0
-  - version_number: 2.0.0
-    title: Intertidal Extents Model
-    slug: intertidal-extents-model-2.0.0
+  # - version_number: 1.0.0
+  #   title: National Intertidal Digital Elevation Model
+  #   slug: national-intertidal-digital-elevation-model-1.0.0
+  # - version_number: 2.0.0
+  #   title: Intertidal Extents Model
+  #   slug: intertidal-extents-model-2.0.0
 
 # SEO
 
