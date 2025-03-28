@@ -22,7 +22,7 @@ product_ids:
 
 parent_products:
   name: Intertidal Extents Model (ITEM)
-  link: docs/data/version-history/intertidal-extents-model-2.0.0
+  link: docs/data/version-history/dea-intertidal-extents-landsat/
 collection:
   name: Geoscience Australia Landsat Collection 2
   link: null
