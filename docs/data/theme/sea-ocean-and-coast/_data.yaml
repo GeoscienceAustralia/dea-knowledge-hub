@@ -11,6 +11,3 @@ cards:
   - name: DEA Intertidal
     link: /data/product/dea-intertidal/
     image: /_files/dea-intertidal/DEAIntertidal_prettypic_Elevation_ShoalPointQLD_XS_Size.png
-  - name: DEA Intertidal Extents (ITEM)
-    link: /data/product/dea-intertidal-extents-landsat/
-    image: /_files/cmi/intertidal_extents.png
