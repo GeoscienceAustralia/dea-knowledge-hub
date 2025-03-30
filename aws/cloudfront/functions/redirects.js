@@ -79,4 +79,6 @@ async function handler(event) {
     return request;
 }
 
+// This line is only for testing. Don't include it when you deploy to AWS.
+
 module.exports = { handler };
