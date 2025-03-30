@@ -2,7 +2,7 @@
 // Learn how to test and deploy these redirects:
 // https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/aws_redirects.html
 
-// This function handles redirect logic
+// This function handles redirect logic.  Note: The redirects are sequenced in a specific order.
 
 async function handler(event) {
     const request = event.request;
