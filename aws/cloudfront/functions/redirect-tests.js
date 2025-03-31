@@ -54,6 +54,7 @@ describe("Doesn't Redirect Tests", () => {
     const tests = [
         "/data/product/dea-coastlines/",
         "/data/product/dea-coastlines/?tab=overview",
+        "/data/product/dea-coastlines/#about-us",
         "/notebooks/Tools/gen/dea_tools.plotting/",
         "/notebooks/Tools/gen/dea_tools.app.animations/"
     ];
