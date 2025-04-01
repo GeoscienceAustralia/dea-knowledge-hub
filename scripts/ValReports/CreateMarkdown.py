@@ -169,7 +169,7 @@ def create_markdown(today_data, today_data1, today_data2, allASDdata, allSR3500d
     
     
     # Define your content with a placeholder for dynamic values
-    content_template = """# FieldDay: SiteName, PNS overpass
+    content_template = """# FieldSpaceDay: SiteName, PNS overpass
 
 This is a report of the field data collected on FieldTxtDay at the location of SiteName
 to validate the satellite data of the PNS overpass.
@@ -274,6 +274,7 @@ The line of best fit is not shown, but its parameters are given in the bottom-ri
     
     content_template = content_template.replace("FieldTxtDay", reformDate(field_data))
     content_template = content_template.replace("FieldDay", formDate+'-'+field_data[0])
+    content_template = content_template.replace("FieldSpaceDay", formDate+' '+field_data[0])
     
     if 'Sentinel' in field_data[6] or 'Landsat' in field_data[6]:
         content_template = content_template.replace("PNS", PlatNamesSpace[field_data[3]]+" and "+PlatNamesSpace[field_data[6]]+" dual")
@@ -339,6 +340,8 @@ The line of best fit is not shown, but its parameters are given in the bottom-ri
         # If dual overpass with Landsat listed 2nd
         if 'Landsat' in field_data[6]:
             replStr1 = "Time of " + PlatNamesSpace[field_data[3]] + " overpass (UTC)"
+            replStr2 = ", " + np.datetime_as_string(s2_sat_array.time.values[0], unit='s').replace('T', ' ') + '\n"Time of ' + \
+                       PlatNamesSpace[field_data[6]] +' overpass (UTC)"' + ", " + np.datetime_as_string(ls_sat_array.time.values[0], unit='s').replace('T', ' ')
             content_template = content_template.replace("Time of overpass (UTC)", replStr1)
             content_template = content_template.replace(", overpassDateTime", replStr2)
         else:
