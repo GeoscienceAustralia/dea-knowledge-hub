@@ -3,7 +3,7 @@
 
 ## 1 Apr 2025: NOAA-21 Hotspots will be integrated with other VIIRS Sensors from 8 April
 
-In [DEA Hotspots](https://knowledge.dea.ga.gov.au/data/product/dea-hotspots/), the NOAA-21 feed can currently be selected through ‘AFIMG NOAA-21’, or ‘AFMOD NOAA-21’, but will be incorporated into the standard ‘AFMOD’ and ‘AFMIG’ filter from 8 April 2025.
+In [DEA Hotspots](/data/product/dea-hotspots/), the NOAA-21 feed can currently be selected through ‘AFIMG NOAA-21’, or ‘AFMOD NOAA-21’, but will be incorporated into the standard ‘AFMOD’ and ‘AFMIG’ filter from 8 April 2025.
  
 NOAA-21 data can also be downloaded from the Sentinel S3 bucket with the Satellite ID ‘J02’. 
 
