@@ -35,7 +35,7 @@ This allows the data to be used to validate Geoscience Australia's other dataset
 ```{eval-rst}
 .. container:: 
 
-   :download:`Download results as CSV <./SiteValidationResults-2025-02-07 MUL.csv>`
+   :download:`Download results as CSV <./SiteValidationResults-2025-02-07-MUL.csv>`
 ```
 
 :::{csv-table} Results of Field data versus Landsat 9 Satellite
@@ -74,7 +74,7 @@ The following figures provide visual representations of the data. (Click a figur
 
 :::::{grid} 1 1 2 3
 ::::{grid-item}
-:::{figure} ./RGB-2025-02-07 MUL.png
+:::{figure} ./RGB-2025-02-07-MUL.png
 
 Satellite imagery tiles of true colour (RGB) surface reflectance.
 They each cover an area of approximately 2&nbsp;km &times; 2&nbsp;km.
@@ -83,7 +83,7 @@ of the field site.
 :::
 ::::
 ::::{grid-item}
-:::{figure} ./SiteComparison-2025-02-07 MUL.png
+:::{figure} ./SiteComparison-2025-02-07-MUL.png
 
 Band-by-band plots of surface reflectance for field data versus each satellite.
 Satellite uncertainty error bars for each band are the standard deviation
@@ -94,7 +94,7 @@ averaging all spectra within the same satellite pixels.
 :::
 ::::
 ::::{grid-item}
-:::{figure} ./OverallComparison-2025-02-07 MUL.png
+:::{figure} ./OverallComparison-2025-02-07-MUL.png
 
 Plots of Satellite Surface Reflectance for each satellite versus Field Site Surface Reflectance on this day.
 The solid line represents the one-to-one equality between field and satellite measurements.
