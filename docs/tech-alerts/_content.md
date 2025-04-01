@@ -1,6 +1,14 @@
 % See the DEA Tech Alerts documentation:
 % https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/tech_alerts_changelog.html
 
+## 1 Apr 2025: NOAA-21 Hotspots will be integrated with other VIIRS Sensors from 8 April
+
+In [DEA Hotspots](/data/product/dea-hotspots/), the NOAA-21 feed can currently be selected through ‘AFIMG NOAA-21’, or ‘AFMOD NOAA-21’, but will be incorporated into the standard ‘AFMOD’ and ‘AFMIG’ filter from 8 April 2025.
+ 
+NOAA-21 data can also be downloaded from the Sentinel S3 bucket with the Satellite ID ‘J02’. 
+
+[View the Tech Alert](https://communication.ga.gov.au/NOAA-21-Hotspots-Integrated-with-other-VIIRS-Sensors)
+
 ## 20 Mar 2025: DEA Sentinel-2C data now operational  
 
 Sentinel-2C data are now operational and supplying DEA products. DEA’s [ga_s2cm_ard_3](https://knowledge.dea.ga.gov.au/data/product/dea-surface-reflectance-sentinel-2c-msi/) product is receiving data for both our NRT and definitive offerings, which should now be fed into user workflows. [DEA Maps](http://maps.dea.ga.gov.au/#share=s-oeiMObC1NOBrld9OlCY9hcjdzNB), the [DEA Sandbox](https://app.sandbox.dea.ga.gov.au/hub/login), and [DEA Notebooks](https://knowledge.dea.ga.gov.au/notebooks/DEA_products/DEA_Sentinel2_Surface_Reflectance/) have all been updated to include Sentinel-2C data.
@@ -9,7 +17,7 @@ Users of our Sentinel-2A products ([ga_s2am_ard_3](https://knowledge.dea.ga.gov.
 
 In February, the [European Commission](https://communication.ga.gov.au/link/id/zzzz67db6439c4d9b829Pzzzz61de67bd94bfe861/page.html) announced an “exceptional and temporary extension” to the life and availability of data from the Sentinel-2A satellite mission for one year. We plan to evaluate the quality of data coming out of this mission, and if satisfactory, will add them to DEA data holdings in addition to Sentinel-2C. 
 
-<!-- [View the Tech Alert]() -->
+[View the Tech Alert](https://communication.ga.gov.au/link/id/zzzz67db8854cd6cd573Pzzzz6567c8b713b5b826/page.html)
 
 ## 20 Mar 2025: s2cloudless cloud mask data reprocessed
 
@@ -17,7 +25,7 @@ DEA has implemented a fix to the Sentinel-2 s2cloudless cloud mask correction. D
 
 Reprocessing of affected Sentinel-2 data has been ongoing since October 2024 and is now complete. Users can again use s2cloudless to cloud mask Sentinel-2 data, particularly for the now-corrected observations between the period of 25 January 2022 and 7 June 2024.  
 
-<!-- [View the Tech Alert]() -->
+[View the Tech Alert](https://communication.ga.gov.au/link/id/zzzz67db8854cd6cd573Pzzzz6567c8b713b5b826/page.html)
 
 ## 13 Mar 2025: Landsat near-real-time (NRT) data outage (Resolved)
 
