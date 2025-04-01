@@ -1,4 +1,4 @@
-# 2025-02-27-MUL: Mullion, Sentinel-2B overpass
+# 2025-02-27 MUL: Mullion, Sentinel-2B overpass
 
 This is a report of the field data collected on 27 February 2025 at the location of Mullion
 to validate the satellite data of the Sentinel-2B overpass.
@@ -33,7 +33,7 @@ This allows the data to be used to validate Geoscience Australia's other dataset
 ```{eval-rst}
 .. container:: 
 
-   :download:`Download results as CSV <./SiteValidationResults-2025-02-27-MUL.csv>`
+   :download:`Download results as CSV <./SiteValidationResults-2025-02-27 MUL.csv>`
 ```
 
 :::{csv-table} Results of Field data versus Sentinel-2B Satellite
@@ -59,7 +59,7 @@ The following figures provide visual representations of the data. (Click a figur
 
 :::::{grid} 1 1 2 3
 ::::{grid-item}
-:::{figure} ./RGB-2025-02-27-MUL.png
+:::{figure} ./RGB-2025-02-27 MUL.png
 
 A satellite imagery tile of true colour (RGB) surface reflectance.
 It covers an area of approximately 2&nbsp;km &times; 2&nbsp;km.
@@ -68,7 +68,7 @@ of the field site.
 :::
 ::::
 ::::{grid-item}
-:::{figure} ./SiteComparison-2025-02-27-MUL.png
+:::{figure} ./SiteComparison-2025-02-27 MUL.png
 
 A band-by-band plot of surface reflectance for satellite and field data.
 Satellite uncertainty error bars for each band are the standard deviation
@@ -79,7 +79,7 @@ averaging all spectra within the same satellite pixels.
 :::
 ::::
 ::::{grid-item}
-:::{figure} ./OverallComparison-2025-02-27-MUL.png
+:::{figure} ./OverallComparison-2025-02-27 MUL.png
 
 A plot of Satellite Surface Reflectance versus Field Site Surface Reflectance on this day.
 The solid line represents the one-to-one equality between field and satellite measurements.
