@@ -14,7 +14,7 @@ Users of our Sentinel-2A products ([ga_s2am_ard_3](https://knowledge.dea.ga.gov.
 
 In February, the [European Commission](https://communication.ga.gov.au/link/id/zzzz67db6439c4d9b829Pzzzz61de67bd94bfe861/page.html) announced an “exceptional and temporary extension” to the life and availability of data from the Sentinel-2A satellite mission for one year. We plan to evaluate the quality of data coming out of this mission, and if satisfactory, will add them to DEA data holdings in addition to Sentinel-2C. 
 
-<!-- [View the Tech Alert]() -->
+[View the Tech Alert](https://communication.ga.gov.au/link/id/zzzz67db8854cd6cd573Pzzzz6567c8b713b5b826/page.html)
 
 ## 20 Mar 2025: s2cloudless cloud mask data reprocessed
 
@@ -22,7 +22,7 @@ DEA has implemented a fix to the Sentinel-2 s2cloudless cloud mask correction. D
 
 Reprocessing of affected Sentinel-2 data has been ongoing since October 2024 and is now complete. Users can again use s2cloudless to cloud mask Sentinel-2 data, particularly for the now-corrected observations between the period of 25 January 2022 and 7 June 2024.  
 
-<!-- [View the Tech Alert]() -->
+[View the Tech Alert](https://communication.ga.gov.au/link/id/zzzz67db8854cd6cd573Pzzzz6567c8b713b5b826/page.html)
 
 ## 13 Mar 2025: Landsat near-real-time (NRT) data outage (Resolved)
 
