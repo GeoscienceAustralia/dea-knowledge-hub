@@ -107,7 +107,7 @@ def dual_plot(PlatNames, PlatNamesSpace, field_data, prev_data1, today_data1, pr
         markY1 = [0.908, 0.856, 0.804, 0.752, 0.700, 0.648, 0.596]
         textY1 = [0.717, 0.675, 0.633, 0.591, 0.549, 0.507, 0.465]
 
-        if 'S' in PlatNames[field_data[3]]:
+        if 'S' in PlatNames[field_data[6]]:
             bands2 = ['CA', 'blue', 'green', 'red', 'RE1', 'RE2', 'RE3', 'nir_1', 'nir_2', 'swir_2', 'swir_3']
             cols2 = ['#0077FF', '#0000FF', '#00FF00', '#FF0000', '#FF0077', '#FF7777', '#FF7700', '#FF00FF', '#FF0077', '#007700', '#003300']
             bandNames2 = ['Coastal Aerosol', 'Blue', 'Green', 'Red', 'Red Edge 1', 'Red Edge 2', 'Red Edge 3', 'NIR 1', 'NIR 2', 'SWIR 2', 'SWIR 3']
@@ -130,12 +130,22 @@ def dual_plot(PlatNames, PlatNamesSpace, field_data, prev_data1, today_data1, pr
         markY1 = [0.908, 0.856, 0.804, 0.752, 0.700, 0.648, 0.596, 0.544, 0.492, 0.440, 0.388]
         textY1 = [0.717, 0.675, 0.633, 0.591, 0.549, 0.507, 0.465, 0.425, 0.385, 0.345, 0.305]
 
-        bands2 = ['CA', 'blue', 'green', 'red', 'nir', 'swir1', 'swir2']
-        cols2 = ['#0077FF', '#0000FF', '#00FF00', '#FF0000', '#FF00FF', '#007700', '#003300']
-        bandNames2 = ['Coastal Aerosol', 'Blue', 'Green', 'Red', 'NIR', 'SWIR 1', 'SWIR 2']
-        mark2 = ['o', '^', 's', '+', 'X', 'D', '*']
-        markY2 = [0.908, 0.856, 0.804, 0.752, 0.700, 0.648, 0.596]
-        textY2 = [0.717, 0.675, 0.633, 0.591, 0.549, 0.507, 0.465]
+        if 'L' in PlatNames[field_data[6]]:
+            bands2 = ['CA', 'blue', 'green', 'red', 'nir', 'swir1', 'swir2']
+            cols2 = ['#0077FF', '#0000FF', '#00FF00', '#FF0000', '#FF00FF', '#007700', '#003300']
+            bandNames2 = ['Coastal Aerosol', 'Blue', 'Green', 'Red', 'NIR', 'SWIR 1', 'SWIR 2']
+            mark2 = ['o', '^', 's', '+', 'X', 'D', '*']
+            markY2 = [0.908, 0.856, 0.804, 0.752, 0.700, 0.648, 0.596]
+            textY2 = [0.717, 0.675, 0.633, 0.591, 0.549, 0.507, 0.465]
+        else:
+            bands2 = ['CA', 'blue', 'green', 'red', 'RE1', 'RE2', 'RE3', 'nir_1', 'nir_2', 'swir_2', 'swir_3']
+            cols2 = ['#0077FF', '#0000FF', '#00FF00', '#FF0000', '#FF0077', '#FF7777', '#FF7700', '#FF00FF', '#FF0077', '#007700', '#003300']
+            bandNames2 = ['Coastal Aerosol', 'Blue', 'Green', 'Red', 'Red Edge 1', 'Red Edge 2', 'Red Edge 3', 'NIR 1', 'NIR 2', 'SWIR 2', 'SWIR 3']
+            mark2 = ['o', '^', 's', '+', '+', '+', '+', 'X', 'X', 'D', '*']
+            markY2 = [0.908, 0.856, 0.804, 0.752, 0.700, 0.648, 0.596, 0.544, 0.492, 0.440, 0.388]
+            textY2 = [0.717, 0.675, 0.633, 0.591, 0.549, 0.507, 0.465, 0.425, 0.385, 0.345, 0.305]
+
+
 
     #
     # Setup plot
