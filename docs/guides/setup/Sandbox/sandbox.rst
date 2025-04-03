@@ -3,6 +3,11 @@
 DEA Sandbox
 ===========
 
+.. admonition:: Offline
+   :class: danger
+
+   The DEA Sandbox will be offline from 4pm Friday 4 April 2025 until further notice. `View the Tech Alert <https://communication.ga.gov.au/link/id/zzzz67edf098d41fd019Pzzzz6567c8b713b5b826/page.html>`_
+
 The Digital Earth Australia (DEA) Sandbox is a learning and analysis environment
 for getting started with DEA data and our `Open Data Cube`_. The Sandbox includes
 sample data and Jupyter notebooks that allow you to experiment with DEA’s Earth
