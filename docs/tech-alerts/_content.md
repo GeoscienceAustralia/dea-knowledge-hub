@@ -5,9 +5,9 @@
 
 Digital Earth Australia (DEA) is conducting a review of the DEA Sandbox to address ongoing technical issues. The DEA Sandbox will be offline from **4pm AEDT Friday 4 April 2025**. Users will not be able to access the DEA Sandbox environment while the review takes place.
 
-Users will continue to have access to other DEA data and products, including DEA Maps and DEA Explorer, which will continue to update with Landsat and Sentinel data as normal. Users can also refer to [user guides](/guides/setup/dea_maps/) on how to download DEA data or access DEA web services. The 'Access' tab for each Product on the [DEA Knowledge Hub Data Product Catalogue](/data/) also contains targeted information on how to access and interact with each DEA product specifically. 
+Users will continue to have access to other DEA data and products, including DEA Maps and DEA Explorer, which will continue to update with Landsat and Sentinel data as normal. Users can also refer to [user guides](/guides/) on how to download DEA data or access DEA web services. The 'Access' tab for each Product on the [DEA Knowledge Hub Data Product Catalogue](/data/) also contains targeted information on how to access and interact with each DEA product specifically. 
 
-The DEA notebooks provided in the DEA Sandbox are still available to users via the [DEA Knowledge Hub - DEA Notebooks section](https://knowledge.dea.ga.gov.au/dea-notebooks/).
+The DEA notebooks provided in the DEA Sandbox are still available to users via the [DEA Knowledge Hub - DEA Notebooks section](/dea-notebooks/).
 
 [View the Tech Alert](https://communication.ga.gov.au/link/id/zzzz67edf098d41fd019Pzzzz6567c8b713b5b826/page.html)
 
