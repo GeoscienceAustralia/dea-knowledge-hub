@@ -13,6 +13,11 @@ cores with 16GB of RAM, 10GB of storage, and regularly used Python packages
 pre-installed. The Sandbox also includes Jupyter notebook user guides to help you
 get started with DEA and the Open Data Cube.
 
+.. admonition:: Offline
+   :class: danger
+
+   The DEA Sandbox will be offline from 4pm Friday 4 April 2025 until further notice. `View the Tech Alert <https://communication.ga.gov.au/link/id/zzzz67edf098d41fd019Pzzzz6567c8b713b5b826/page.html>`_
+
 .. admonition:: Get started
    :class: note
 
