@@ -26,7 +26,7 @@ The DEA Intertidal product suite provides annual continental-scale elevation and
 
 The DEA Intertidal product suite contains 4 core product layers, 7 tidal attribute (`ta`) layers, and 3 quality assessment (`qa`) layers, all provided as continental 10 m resolution GeoTIFFs for the Australian coastal and intertidal region.
 
-All datasets are produced annually from a 3-year composite of input data from the combined Sentinel-2 and Landsat 7, 8, and 9 DEA Collection 3 surface reflectance products. The product time series commences from 2016, with datasets labelled by the middle year of data. For example, the 2017 layer combines data from 2016, 2017, and 2018. Updates to the product suite are scheduled annually. 
+All datasets are produced annually from a 3-year composite of input data from combined Sentinel-2 and Landsat DEA Collection 3 surface reflectance products. The product time series commences from 2016, with datasets labelled by the middle year of data. For example, the 2017 layer combines data from 2016, 2017, and 2018. Updates to the product suite are scheduled annually. 
 
 ### What this product offers
 
@@ -35,17 +35,11 @@ The DEA Intertidal product suite is the next generation of intertidal products d
 NIDEM was the first 3D model of Australia’s intertidal zone &mdash; the area of coastline exposed and flooded by ocean tides. The DEA Intertidal suite fundamentally changes and improves the way in which the exposed intertidal zone is modelled compared to the original NIDEM elevation model: 
 
 * The addition of Sentinel-2 data improves the spatial resolution of the model to 10 m, compared to the 25m of the original NIDEM.
-
 * Incorporation of a new pixel-based method supports a reduction in the temporal epoch of the product to 3 years (in comparison to 28 years in NIDEM), improving the ability to capture the current state of dynamic coastal environments and enabling ‘change over time' applications using annual epochs.
-
 * Quantification of the vertical uncertainty of the elevation model.
-
 * An Intertidal Exposure model at 10 m resolution to examine the spatiotemporal patterns of exposure and inundation across the intertidal zone, supporting migratory species studies and habitat mapping applications.
-
 * Tidal metrics to enable users to understand the varied ranges and distributions of tidal stages observed by the Landsat and Sentinel-2 satellites across Australia, and how this information can be used to better understand and interpret the products.
-
 * The implementation of an ensemble tidal modelling approach, acknowledging the wide range of global and regional tide models available and their varying performance across different regions of Australia. See [Ensemble Tidal Modelling](./?tab=description#ensemble-tidal-modelling).
-
 * A coastal extents classification model that identifies five categorical classes to compliment the Elevation and Exposure products. This helps users to characterise different environments in the coastal zone in terms of their inundation characteristics and drivers, mapping confidence and nature of water cover.
 
 ### File Naming Convention 
@@ -105,19 +99,15 @@ Figure 3 &mdash; DEA Intertidal Exposure, with low exposure values (i.e. rarely 
 
 #### DEA Intertidal Extents (extents)
 
-DEA Intertidal Extents is a categorical dataset classifying coastal areas into five classes (Figure 4), including the satellite-observed extents of the intertidal zone. This classification is based on DEA Intertidal Elevation outputs and other satellite-derived data including the inundation frequency of each pixel and correlations between inundation patterns and modelled tide heights. See [Quality Assessment Layers](quality-assessment-layers). The "intensive urban" land use summary class of the Catchment-scale Land Use Map (CLUM) (ABARES, 2021) dataset was used to mask pixel misclassifications in urban areas.
+DEA Intertidal Extents is a categorical dataset classifying coastal areas into five classes (Figure 4), including the satellite-observed extents of the exposed (i.e. non-vegetated) intertidal zone. This classification is based on DEA Intertidal Elevation outputs and other satellite-derived data including the inundation frequency of each pixel and correlations between inundation patterns and modelled tide heights. See [Quality Assessment Layers](quality-assessment-layers). The "intensive urban" land use summary class of the Catchment-scale Land Use Map (CLUM) (ABARES, 2021) dataset was used to mask pixel misclassifications in urban areas.
  
-The class definitions of the Intertidal Extents layer are as follows.
+The class definitions of the Intertidal Extents layer are as follows:
 
-**Ocean and coastal waters** - Pixels that are wet in 50 % or more of satellite observations and are located within the coastal mask, a cost-distance connectivity mask combining elevation with distance from the ocean. (Value = 1)
-
-**Exposed intertidal (low confidence)** - Pixels that have a correlation between tide height and ndwi > 0.15 and are located within the coastal mask (see Ocean and coastal waters). (Value = 2)
- 
-**Exposed intertidal (high confidence)** - Pixels that are included in the intertidal elevation dataset. (Value = 3)
-
-**Inland waters** - Pixels that are wet in more than 50 % of satellite observations and fall outside of the coastal mask (see Ocean and coastal waters). (Value = 4)
-
-**Land** - Pixels that are wet in less than 50 % of satellite observations. (Value = 5)
+* **Ocean and coastal waters (1)** - Pixels that are wet in 50% or more of satellite observations and are located within the coastal mask (a cost-distance connectivity mask combining elevation with distance from the ocean)
+* **Exposed intertidal - low confidence (2)** - Pixels that have a correlation between tide height and NDWI of at least 0.15, and are located within the coastal mask (see Ocean and coastal waters)
+* **Exposed intertidal - high confidence (3)** - Pixels that are included in the intertidal elevation dataset
+* **Inland waters (4)** - Pixels that are wet in more than 50% of satellite observations, and fall outside of the coastal mask (see Ocean and coastal waters)
+* **Land (5)** - Pixels that are wet in less than 50% of satellite observations
 
 :::{figure}  /_files/dea-intertidal/DEA_Intertidal_Extents_2022.*
 :alt: DEA Intertidal Extents layer
@@ -176,22 +166,20 @@ This quality assessment band provides the inundation frequency of each pixel acr
 
 This quality assessment dataset provides pixel-level Pearson correlations between NDWI satellite observations and tide heights from the [Ensemble Tidal Model](#ensemble-tidal-modelling) over the analysis epoch. High values indicate that patterns of inundation were positively correlated with tide, indicating that the pixel was likely to be tidally influenced.
 
-#### DEA Intertidal Clear Count
+#### DEA Intertidal Clear Count (qa_count_clear)
 
 This quality assessment dataset returns the number of clear and valid satellite observations for every pixel. By default, a minimum number of 5 clear and cloud-free satellite observations are required to calculate intertidal elevation and exposure.
 
 ### Ensemble Tidal Modelling
 
-The Ensemble Tidal Modelling approach was implemented to account for the varying performance and biases of 10 commonly used global tidal models when applied to the various regions and tidal regimes of continental Australia (Figure 6).
+The Ensemble Tidal Modelling approach was implemented to account for the varying performance and biases of existing global ocean tide models across the various regions and complex tidal regimes of Australia (Figure 6). The ensemble process utilises ancillary data to weight and select the top 3 tidal models for a given location, based on how well each model correlated with satellite-observed patterns of tidal inundation, and water levels measured by satellite altimetry. A single ensemble tidal output from the 3 optimal models at any given coastal location was then used for all downstream product workflows.   
 
-The tidal models listed below were implemented within the DEA environment using the [eo-tides](https://github.com/GeoscienceAustralia/eo-tides) Python package which integrates satellite Earth observation data with tide modelling and leverages tide modelling functionality from the [pyTMD](https://github.com/tsutterley/pyTMD) package with the following models:
+Ensemble tide modelling was implemented in the [eo-tides](https://github.com/GeoscienceAustralia/eo-tides) Python package which integrates satellite Earth observation data with tide modelling, leveraging tide modelling functionality from the [pyTMD](https://github.com/tsutterley/pyTMD) package. The ensemble was based on 10 commonly-used global ocean tidal models:
 
 * Empirical Ocean Tide Model (EOT20; Hart-Davis et al., 2021)
 * Finite Element Solution tide models (FES2012, FES2014, FES2022; Carrère et al., 2012; Lyard et al., 2021; Carrère et al., 2022)
 * TOPEX/POSEIDON global tide models (TPXO8, TPXO9, TPXO10; Egbert and Erofeeva., 2002, 2010)
 * Global Ocean Tide models (GOT4.10, GOT5.5, GOT5.6; Ray, 2013, Padman et al., 2018)
-
-The ensemble process utilises ancillary data (in this case, the correlation of the NDWI values to each individual tidal model output) to weight and selects the top 3 tidal models for a given location. A single ensemble tidal output from these 3 optimal models is then generated for use in all downstream product workflows.   
 
 :::{figure} /_files/dea-intertidal/ensembletides.*
 :alt: Ensemble tide validation Figure
@@ -207,25 +195,16 @@ This shift to a more dynamic product suite is achieved through a pixel-based alg
 
 ## Processing Steps
 
-1. Satellite data from Sentinel-2A, -2B and -2C, Landsat 7, 8, and 9 are loaded. 
-
-2. Satellite data cloud masked and converted to NDWI. 
-
-3. Tides modelled for every satellite pixel using [Ensemble Tidal Modelling](#ensemble-tidal-modelling). 
-
-4. Satellite data filtered to probable intertidal pixels using NDWI inundation frequency and tide correlation and masked as coastal or non-coastal using cost-distance weightings of [SRTM-elevations](https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/72759) relative to sea-level
-
-5. Pixel-based rolling median applied from low to high tide. 
-
-6. Intertidal elevation modelled based on tide height at which a rolling median transitions from dry to wet. 
-
-7. Intertidal elevation uncertainty modelled based on how cleanly modelled elevation divides satellite observations into dry and wet. 
-
-8. Intertidal extents classes calculated based on Intertidal elevation and NDWI inundation frequency and tide correlation, with additional masking to remove urban false positives using abares_clum_2020 (ABARES, 2021).
-
-9. Intertidal exposure calculated by comparing Intertidal elevation against high frequency modelled tides. 
-
-10. Tidal metrics calculated by comparing satellite-observed tides against high frequency modelled tides. 
+1. Satellite data from Sentinel-2A, -2B and -2C, Landsat 7, 8, and 9 are loaded
+2. Satellite data cloud masked and converted to Normalised Difference water Index (NDWI)
+3. Tides modelled for every satellite pixel using [Ensemble Tidal Modelling](#ensemble-tidal-modelling)
+4. Satellite data filtered to probable intertidal pixels using NDWI inundation frequency and tide correlation, and masked as coastal or non-coastal using cost-distance connectivity analysis of [SRTM elevation data](https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/72759)
+5. Pixel-based rolling median applied from low to high tide
+6. Intertidal elevation modelled based on tide height at which a rolling median transitions from dry to wet
+7. Intertidal elevation uncertainty modelled based on how cleanly modelled elevation divides satellite observations into dry and wet
+8. Intertidal extents classes calculated based on Intertidal elevation and NDWI inundation frequency and tide correlation, with additional masking to remove urban false positives using abares_clum_2020 (ABARES, 2021)
+9. Intertidal exposure calculated by comparing Intertidal elevation against high frequency modelled tides
+10. Tidal metrics calculated by comparing satellite-observed tides against high frequency modelled tides
 
 ## References
 
