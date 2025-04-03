@@ -1,7 +1,7 @@
 % See the DEA Tech Alerts documentation:
 % https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/tech_alerts_changelog.html
 
-## 3 Apr 2025: DEA Sandbox will be offline from 4 April for technical review
+## 3 Apr 2025: DEA Sandbox will be offline from 4pm Friday 4 April 2025 until further notice
 
 Digital Earth Australia (DEA) is conducting a review of the DEA Sandbox to address ongoing technical issues. The DEA Sandbox will be offline from **4pm AEDT Friday 4 April 2025**. Users will not be able to access the DEA Sandbox environment while the review takes place.
 
@@ -9,7 +9,7 @@ Users will continue to have access to other DEA data and products, including DEA
 
 The DEA notebooks provided in the DEA Sandbox are still available to users via the [DEA Knowledge Hub - DEA Notebooks section](https://knowledge.dea.ga.gov.au/dea-notebooks/).
 
-<!-- [View the Tech Alert]() -->
+[View the Tech Alert](https://communication.ga.gov.au/link/id/zzzz67edf098d41fd019Pzzzz6567c8b713b5b826/page.html)
 
 ## 1 Apr 2025: NOAA-21 Hotspots will be integrated with other VIIRS Sensors from 8 April
 
