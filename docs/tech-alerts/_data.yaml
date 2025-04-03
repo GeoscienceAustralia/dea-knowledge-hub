@@ -7,7 +7,7 @@ quick_links_custom: null
 
 system_status_notifications:
   - description: The DEA Sandbox will be offline from 4pm Friday 4 April 2025 until further notice. See below.
-    severity: 1
+    severity: 4
     status_custom: null
 
   - description: DEA near-real-time data not up-to-date. See below.
