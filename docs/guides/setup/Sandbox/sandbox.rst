@@ -18,6 +18,13 @@ get started with DEA and the Open Data Cube.
 
    The DEA Sandbox will be offline from 4pm Friday 4 April 2025 until further notice. `View the Tech Alert <https://communication.ga.gov.au/link/id/zzzz67edf098d41fd019Pzzzz6567c8b713b5b826/page.html>`_
 
+.. admonition:: Access request form
+   :class: note
+
+   External users who have an existing DEA Sandbox user account can request for their access to be restored while the Sandbox functionality review is taking place where there is a critical use case for access. To request your account be considered for reinstatement, please fill out this form:
+
+   `Geoscience Australia Sandbox Access Request <https://forms.office.com/Pages/DesignPageV2.aspx?subpage=design&id=OmFbZEymUEKXX19peH0CjVZhXxFrFTpIrbjv7UdBedZUQ1lVVUdFUjZKV0pLOUZLUTlLRDhURFU3QS4u&topview=Preview>`_
+
 .. admonition:: Get started
    :class: note
 
