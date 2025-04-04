@@ -12,6 +12,10 @@ External users who have an existing DEA Sandbox user account can request for the
 <a href="https://forms.office.com/Pages/DesignPageV2.aspx?subpage=design&id=OmFbZEymUEKXX19peH0CjVZhXxFrFTpIrbjv7UdBedZUQ1lVVUdFUjZKV0pLOUZLUTlLRDhURFU3QS4u&topview=Preview">Geoscience Australia Sandbox Access Request</a>
 :::
 
+:::{eval-rst}
+`Geoscience Australia Sandbox Access Request <https://forms.office.com/Pages/DesignPageV2.aspx?subpage=design&id=OmFbZEymUEKXX19peH0CjVZhXxFrFTpIrbjv7UdBedZUQ1lVVUdFUjZKV0pLOUZLUTlLRDhURFU3QS4u&topview=Preview>`_
+:::
+
 Digital Earth Australia (DEA) is conducting a review of the [DEA Sandbox](https://app.sandbox.dea.ga.gov.au/) to address ongoing technical issues. DEA Sandbox is offline while the review takes place. We will communicate updates with you throughout the review process. We apologise for any inconvenience and appreciate your understanding.
 
 Users will continue to have access to other DEA data and products, including [DEA Maps](/guides/setup/dea_maps/), and [DEA Explorer](/guides/setup/explorer_guide/), which will continue to update with Landsat and Sentinel data as normal.    
