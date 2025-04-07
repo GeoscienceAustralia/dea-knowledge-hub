@@ -6,9 +6,9 @@ short_name: DEA Coastlines
 full_technical_name: Geoscience Australia Landsat Coastlines Collection 3
 header_image: /_files/cmi/thumbnail_vertical.png
 
-version_number: 3.0.0
-is_latest_version: true
-latest_version_link: null
+version_number: 2.2.0
+is_latest_version: false
+latest_version_link: /data/product/dea-coastlines/
 is_provisional: false
 
 lineage_type: DERIVATIVE
@@ -16,7 +16,7 @@ spatial_data_type: VECTOR
 
 spatial_coverage: null
 temporal_coverage_start: 1988
-temporal_coverage_end: 2024
+temporal_coverage_end: 2023
 temporal_coverage_custom: null
 
 data_update_frequency: YEARLY
@@ -87,10 +87,7 @@ access_links_custom: null
 
 # History
 
-previous_versions:
-  - version: 2.2.0
-    title: DEA Coastlines
-    slug: dea-coastlines-2.2.0
+previous_versions: null
 
 # SEO
 
