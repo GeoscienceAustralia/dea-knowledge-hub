@@ -7,7 +7,7 @@ cards:
     image: /_files/cmi/thumbnail_vertical.png
   - name: DEA Tidal Imagery
     link: /data/product/dea-tidal-imagery/
-    %image: /_files/cmi/HLTCv2.png
+    #image: /_files/cmi/HLTCv2.png
   - name: DEA Intertidal
     link: /data/product/dea-intertidal/
     image: /_files/dea-intertidal/DEAIntertidal_prettypic_Elevation_ShoalPointQLD_XS_Size.png
