@@ -36,6 +36,66 @@ table.colour-coded-table {
         }
     }
 
+    &.water-observations-classifications-theme {
+        .colour {
+            display: inline-block;
+            height: 1.2em;
+            width: 1.2em;
+            border-radius: 50%;
+            margin-right: 0.5em;
+            position: relative;
+            top: 0.2em;
+
+            &.no-data {
+                background-color: #707070;
+            }
+
+            &.non-contiguous {
+                background-color: #707070;
+            }
+
+            &.low-solar-angle {
+                background-color: #707070;
+            }
+
+            &.dry {
+                background-color: #96966e;
+            }
+
+            &.water {
+                background-color: #4F81BD;
+            }
+
+            &.high-slope {
+                background-color: #776857;
+            }
+
+            &.terrain-shadow {
+                background-color: #2f2922;
+            }
+
+            &.cloud-shadow {
+                background-color: #4b4b37;
+            }
+
+            &.cloud {
+                background-color: #c2c1c0;
+            }
+
+            &.cloudy-water {
+                background-color: #bad4f2;
+            }
+
+            &.shaded-water {
+                background-color: #335277;
+            }
+
+            &.cloudy-steep-terrain {
+                background-color: #f2dcb4;
+            }
+        }
+    }
+
     &.water-observations-combination-decimals-theme {
         th, td {
             &.classification {
