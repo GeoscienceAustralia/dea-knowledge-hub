@@ -1,12 +1,15 @@
+// If a class of the format 'access-link--something' exists in a classList, return 'something'.
 function labelFromClassList(classList) {
     let list = Array.prototype.slice.call(classList)
-    let regex = /access-link-[a-zA-Z0-9]+/;
+    var prefix = "access-list--";
+
     for (var i = 0; i < list.length; i++) {
-        if (regex.test(list[i])) {
-            return list[i];
+        if ([i].indexOf(prefix) === 0) {
+            return list[i].substring(prefix.length);
+        } else {
+            return null;
         }
     }
-    return null;
 }
 
 document.addEventListener('DOMContentLoaded', function() {
