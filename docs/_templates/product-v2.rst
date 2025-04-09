@@ -230,10 +230,14 @@
       {%- elif page.data.temporal_coverage_end %}
       :Coverage end: {{ page.data.temporal_coverage_end }}
       {%- endif %}
-      {%- if is_frequency_ongoing and is_frequency_multiple_words %}
+      {%- if is_frequency_ongoing and is_frequency_multiple_words and page.data.is_latest_version %}
       :Data updates: {{ data_update_frequency }}, {{ data_update_activity }}
-      {%- elif is_frequency_ongoing %}
+      {%- elif is_frequency_ongoing and page.data.is_latest_version %}
       :Data updates: {{ data_update_frequency }} frequency, {{ data_update_activity }}
+      {%- elif is_frequency_multiple_words and not page.data.is_latest_version %}
+      :Data updates: {{ data_update_activity_terms.NO_UPDATES }} (Previously: {{ data_update_frequency }})
+      {%- elif not page.data.is_latest_version %}
+      :Data updates: {{ data_update_activity_terms.NO_UPDATES }} (Previously: {{ data_update_frequency }} frequency)
       {%- elif is_frequency_multiple_words %}
       :Data updates: {{ data_update_activity }} (Previously: {{ data_update_frequency }})
       {%- else %}
@@ -689,18 +693,24 @@
         - {{ coordinate_reference_system_term }}
         - The method of mapping spatial data to the Earth's surface.
       {%- endif %}
-      {%- if is_frequency_ongoing %}
+      {%- if is_frequency_ongoing and page.data.is_latest_version %}
       * - **Update frequency**
         - {{ data_update_frequency }}
         - The expected frequency of data updates. Also called 'Temporal resolution'.
       {%- else %}
       * - **Update frequency**
-        - {{ data_update_frequency }} (Inactive)
+        - {{ data_update_frequency }} ({{ data_update_activity_terms.NO_UPDATES }})
         - Previously, when data updates were active, this was their expected frequency. Also called 'Temporal resolution'.
       {%- endif %}
+      {%- if page.data.is_latest_version %}
       * - **Update activity**
         - {{ data_update_activity }}
         - The activity status of data updates.
+      {%- else %}
+      * - **Update activity**
+        - {{ data_update_activity_terms.NO_UPDATES }}
+        - The activity status of data updates.
+      {%- endif %}
       {%- if page.data.is_currency_reported %}
       * - **Currency**
         - `See the Currency Report <{{ currency_report_url }}>`_
