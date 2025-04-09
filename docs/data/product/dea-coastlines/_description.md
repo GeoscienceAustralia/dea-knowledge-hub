@@ -31,7 +31,7 @@ Dashed shorelines have low certainty.
 
 See the attributes of this layer in the [Specifications tab](./?tab=specifications).
 
-:::{figure} /_files/cmi/deacl_coastlines.*
+:::{figure} /_files/cmi/2024_Coastlines_KH_update.*
 :alt: DEA CoastLines coastline layer
 
 Figure 1: Annual coastlines from DEA Coastlines visualised on the [interactive DEA Coastlines web map](https://maps.dea.ga.gov.au/story/DEACoastlines)
