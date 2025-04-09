@@ -2,7 +2,7 @@
 
 ### 2024 DEA Coastlines update
 
-In April 2025, the DEA Coastlines product [was updated to version 3.0.0](https://github.com/GeoscienceAustralia/dea-coastlines). This update applies new [Ensemble Tidal Modelling](#ensemble-tidal-modelling) to calculate pixel-based tide heights. Subsequently, tide heights for all historical annual layers have been revised and the 2024 shoreline is included in this new release.
+In April 2025, the DEA Coastlines product [was updated to version 3.0.0](https://github.com/GeoscienceAustralia/dea-coastlines). This update applies new [Ensemble Tidal Modelling](#ensemble-tidal-modelling) to the calculation of all shorelines from 1988 to 2024.
 
 ### 2023 DEA Coastlines update
 
