@@ -114,7 +114,7 @@ bands_table:
     units: Count
     type: int16
     description: The count of clear and valid observations per pixel used to calculate DEA Intertidal Elevation and derived datasets
- - name: qa_coastal_mask
+  - name: qa_coastal_mask
     aliases:
     - coastal_mask
     resolution: 10 m
