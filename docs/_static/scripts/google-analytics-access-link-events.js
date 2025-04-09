@@ -20,10 +20,10 @@ document.addEventListener('DOMContentLoaded', function() {
                 "value": event.target.href,
             });
             // gtag("event", "click", {
-                //     "category": "access-link",
-                //     "label": event.target.classList,
-                //     "value": event.target.href,
-                // });
+            //     "category": "access-link",
+            //     "label": event.target.classList,
+            //     "value": event.target.href,
+            // });
         });
     }
 });
