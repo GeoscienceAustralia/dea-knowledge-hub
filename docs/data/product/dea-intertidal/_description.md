@@ -24,7 +24,7 @@ The DEA Intertidal product suite provides annual continental-scale elevation and
 
 ### DEA Intertidal features
 
-The DEA Intertidal product suite contains 4 core product layers, 7 tidal attribute (`ta`) layers, and 3 quality assessment (`qa`) layers, all provided as continental 10 m resolution GeoTIFFs for the Australian coastal and intertidal region.
+The DEA Intertidal product suite contains 4 core product layers, 7 tidal attribute (`ta`) layers, and 4 quality assessment (`qa`) layers, all provided as continental 10 m resolution GeoTIFFs for the Australian coastal and intertidal region.
 
 All datasets are produced annually from a 3-year composite of input data from combined Sentinel-2 and Landsat DEA Collection 3 surface reflectance products. The product time series commences from 2016, with datasets labelled by the middle year of data. For example, the 2017 layer combines data from 2016, 2017, and 2018. Updates to the product suite are scheduled annually. 
 
@@ -169,6 +169,10 @@ This quality assessment dataset provides pixel-level Pearson correlations betwee
 #### DEA Intertidal Clear Count (qa_count_clear)
 
 This quality assessment dataset returns the number of clear and valid satellite observations for every pixel. By default, a minimum number of 5 clear and cloud-free satellite observations are required to calculate intertidal elevation and exposure.
+
+#### DEA Intertidal Coastal Mask (qa_coastal_mask)
+
+This quality assessment dataset returns the coastal mask used to support the identification of high confidence intertidal pixels in DEA Intertidal Elevation and to separate coastal from inland water classes in the DEA Intertidal Extents layer. It is a cost-distance connectivity mask that combines SRTM elevations with distance from the ocean and is delivered as a thresholded binary coastal/non-coastal mask. We have thresholded conservatively to identify intertidal environments. We advise caution in using this data layer for other types of coastal investigations outside of the intertidal zone.
 
 ### Ensemble Tidal Modelling
 
