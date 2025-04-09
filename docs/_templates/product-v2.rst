@@ -792,7 +792,7 @@
       {% if access_links_explorers_list %}
       * - **{{ access_labels.explorer }}**
         - {% for item in access_links_explorers_list %}
-          * `{{ item.name or access_names.explorer }} <{{ item.link }}>`_
+          * :raw-html:`<a href="{{ item.link }}" class="access-link access-link-explorer">{{ item.name or access_names.explorer }}</a>`
           {% endfor %}
         - Learn how to `use the DEA Explorer </setup/explorer_guide/>`_.
       {% endif %}
@@ -800,7 +800,7 @@
       {% if access_links_data_list %}
       * - **{{ access_labels.data }}**
         - {% for item in access_links_data_list %}
-          * `{{ item.name or access_names.data }} <{{ item.link }}>`_
+          * :raw-html:`<a href="{{ item.link }}" class="access-link access-link-data">{{ item.name or access_names.data }}</a>`
           {% endfor %}
         - Learn how to `access the data via AWS </guides/about/faq/#download-dea-data>`_.
       {% endif %}
@@ -808,7 +808,7 @@
       {% if access_links_code_samples_list %}
       * - **{{ access_labels.code_sample }}**
         - {% for item in access_links_code_samples_list %}
-          * `{{ item.name or access_names.code_sample }} <{{ item.link }}>`_
+          * :raw-html:`<a href="{{ item.link }}" class="access-link access-link-code-example">{{ item.name or access_names.code_sample }}</a>`
           {% endfor %}
         - Learn how to `use the DEA Sandbox </guides/setup/Sandbox/sandbox/>`_.
       {% endif %}
@@ -816,14 +816,14 @@
       {% if access_links_web_services_list %}
       * - **{{ access_labels.web_service }}**
         - {% for item in access_links_web_services_list %}
-          * `{{ item.name or access_names.web_service }} <{{ item.link }}>`_
+          * :raw-html:`<a href="{{ item.link }}" class="access-link access-link-web-service">{{ item.name or access_names.web_service }}</a>`
           {% endfor %}
         - Learn how to `use DEA's web services </guides/setup/gis/README/>`_.
       {% endif %}
 
       {% for item in access_links_custom_list %}
       * - **{{ item.label or "" }}**
-        - * `{{ item.name }} <{{ item.link }}>`_
+        - * :raw-html:`<a href="{{ item.link }}" class="access-link access-link-custom">{{ item.name }}</a>`
         - {{ item.description or "" }}
       {% endfor %}
    {% else %}
