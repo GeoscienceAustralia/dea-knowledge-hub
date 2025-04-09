@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
         accessLinks[i].addEventListener("click", function(event) {
             console.log({
                 "category": "access-link",
-                "label": labelFromClassList(event.target.classList),
+                "label": labelFromClassList(event.currentTarget.classList),
                 "value": event.target.href,
             });
             // gtag("event", "click", {
