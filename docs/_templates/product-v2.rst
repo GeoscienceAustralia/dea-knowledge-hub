@@ -784,7 +784,7 @@
       {% if access_links_maps_list %}
       * - **{{ access_labels.map }}**
         - {% for item in access_links_maps_list %}
-          * `{{ item.name or access_names.map }} <{{ item.link }}>`_
+          * :raw-html:`<a href="{{ item.link }}" class="access-link access-link-map">{{ item.name or access_names.map }}</a>`
           {% endfor %}
         - Learn how to `use DEA Maps </guides/setup/dea_maps/>`_.
       {% endif %}
