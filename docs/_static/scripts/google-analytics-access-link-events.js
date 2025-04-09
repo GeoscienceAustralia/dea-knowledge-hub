@@ -12,6 +12,17 @@ function labelFromClassList(classList) {
     }
 }
 
+function convertTorelativeUrl(url) {
+    var rootUrl = window.location.protocol + "//" + window.location.hostname + (window.location.port ? ":" + window.location.port : "");
+
+    if (url.indexOf(rootUrl) === 0) {
+        var relativeUrl = url.substring(rootUrl.length);
+        return relativeUrl;
+    } else {
+        return url;
+    }
+}
+
 document.addEventListener('DOMContentLoaded', function() {
     var accessLinks = document.querySelectorAll("[class^='access-link-']");
 
@@ -20,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
             console.log({
                 "category": "access-link",
                 "label": labelFromClassList(event.currentTarget.classList),
-                "value": event.target.href,
+                "value": convertTorelativeUrl(event.target.href),
             });
             // gtag("event", "click", {
             //     "category": "access-link",
