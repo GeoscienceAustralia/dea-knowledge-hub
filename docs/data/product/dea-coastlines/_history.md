@@ -2,7 +2,7 @@
 
 ### 2024 DEA Coastlines update
 
-In April 2025, the DEA Coastlines product [was updated to version 3.0.0](https://github.com/GeoscienceAustralia/dea-coastlines). This update applies new [Ensemble Tidal Modelling](#ensemble-tidal-modelling) to the calculation of all shorelines from 1988 to 2024.
+In April 2025, the DEA Coastlines product [was updated to version 3.0.0](https://github.com/GeoscienceAustralia/dea-coastlines/releases/tag/3.0.0). The major improvement in this release is the application of new [Ensemble Tidal Modelling](#ensemble-tidal-modelling) to the calculation of all shorelines from 1988 to 2024.
 
 ### 2023 DEA Coastlines update
 
