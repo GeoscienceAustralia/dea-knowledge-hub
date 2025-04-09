@@ -35,8 +35,8 @@ document.addEventListener('DOMContentLoaded', function() {
             });
             // gtag("event", "click", {
             //     "category": "access-link",
-            //     "label": event.target.classList,
-            //     "value": event.target.href,
+            //     "label": labelFromClassList(event.currentTarget.classList),
+            //     "value": convertTorelativeUrl(event.target.href),
             // });
         });
     }
