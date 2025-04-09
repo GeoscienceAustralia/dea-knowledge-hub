@@ -2,7 +2,7 @@
 
 ### Annual shoreline accuracy and precision
 
-An extensive validation against independent coastal monitoring datasets was conducted to evaluate the positional accuracy and precision of DEA Coastlines annual shorelines, and the accuracy of our modelled long-term rates of coastal change (i.e. metres retreat or growth per year). In total, 57,662 independent measurements of coastline position were acquired across coastal Australia from the following data sources (Figure 4):
+An extensive validation against independent coastal monitoring datasets was conducted to evaluate the positional accuracy and precision of DEA Coastlines annual shorelines, and the accuracy of our modelled long-term rates of coastal change (i.e. metres retreat or growth per year). In total, 57,662 independent measurements of coastline position were acquired across coastal Australia from the following data sources (Figure 5):
 * City of Gold Coast ETA Lines (Strauss et al., 2017)
 * Moruya and Pedro Beach survey (Short et al. 2014)
 * [Narrabeen-Collaroy Beach Survey Program](http://narrabeen.wrl.unsw.edu.au/) (Turner et al., 2016)
@@ -16,12 +16,12 @@ An extensive validation against independent coastal monitoring datasets was cond
 :::{figure} /_files/cmi/Figure1_validation_temporal.png
 :alt: Validation sites
 
-Figure 4: The spatial and temporal distribution of the independent validation data that was compared against DEA Coastlines annual shorelines and rates of change.   
+Figure 5: The spatial and temporal distribution of the independent validation data that was compared against DEA Coastlines annual shorelines and rates of change.   
 :::
 
 ### Annual shoreline accuracy and precision
 
-This validation assessed the ability of DEA Coastlines to reproduce a specific shoreline proxy: the median annual position of the shoreline at mean sea level (0 m Above Mean Sea Level; AMSL). Validations were performed using existing beach profile lines where possible. For each validation profile line, we identified the median annual position of the 0 m AMSL tide datum across all annual validation observations, and compared this to the position of the corresponding DEA Coastlines shoreline for each year (Figure 5).
+This validation assessed the ability of DEA Coastlines to reproduce a specific shoreline proxy: the median annual position of the shoreline at mean sea level (0 m Above Mean Sea Level; AMSL). Validations were performed using existing beach profile lines where possible. For each validation profile line, we identified the median annual position of the 0 m AMSL tide datum across all annual validation observations, and compared this to the position of the corresponding DEA Coastlines shoreline for each year (Figure 6).
 
 To ensure a like-for-like comparison, we selected a subset of validation data with an annual survey frequency approximately equivalent to the Landsat satellite imagery used to generate DEA Coastlines data (i.e. 22 annual observations or greater based on a 16 day overpass frequency). Absolute mapping accuracy (i.e. how far the mapped shorelines were from the median annual position of the shoreline for each year, after correcting for tide) was assessed using Mean Absolute Error (MAE) and Root Mean Squared Error (RMSE):
 
@@ -53,7 +53,7 @@ To evaluate our long-term rates of change, we identified 330 validation transect
 :::{figure} /_files/cmi/Figure4_subpixel.png
 :alt: Validation results
 
-Figure 5: DEA Coastlines annual shorelines compared against a) aerial photogrammetry-derived annual ~0 m AMSL shorelines from the Western Australian Department of Transport Coastline Movements dataset, and b) transect-based in-situ validation data for three example locations that demonstrate sub-pixel precision shoreline extraction: Narrabeen Beach, Tugun Beach, and West Beach. DEA Coastlines transect data in panel b represent the 0 m AMSL Median Annual Shoreline Position shoreline proxy, and have been corrected for consistent local inland biases to assess the ability to capture relative coastline dynamics through time.
+Figure 6: DEA Coastlines annual shorelines compared against a) aerial photogrammetry-derived annual ~0 m AMSL shorelines from the Western Australian Department of Transport Coastline Movements dataset, and b) transect-based in-situ validation data for three example locations that demonstrate sub-pixel precision shoreline extraction: Narrabeen Beach, Tugun Beach, and West Beach. DEA Coastlines transect data in panel b represent the 0 m AMSL Median Annual Shoreline Position shoreline proxy, and have been corrected for consistent local inland biases to assess the ability to capture relative coastline dynamics through time.
 :::
 
 ## Caveats and limitations
@@ -71,7 +71,7 @@ Figure 5: DEA Coastlines annual shorelines compared against a) aerial photogramm
 
 ### Data quality issues
 
-* Annual shorelines may be less accurate in regions with complex tidal dynamics or large tidal ranges, and low-lying intertidal flats where small tidal modelling errors can lead to large horizontal offsets in coastline positions (Figure 6). Annual shoreline accuracy in intertidal environments may also be reduced by the influence of wet muddy substrate or intertidal vegetation, which can make it difficult to extract a single unambiguous coastline (Bishop-Taylor et al. 2019a, 2019b, 2021). It is anticipated that future versions of this product will show improved results due to integrating more advanced methods for waterline detection in intertidal regions, and through improvements in tidal modelling methods. Regions significantly affected by intertidal issues include:
+* Annual shorelines may be less accurate in regions with complex tidal dynamics or large tidal ranges, and low-lying intertidal flats where small tidal modelling errors can lead to large horizontal offsets in coastline positions (Figure 7). Annual shoreline accuracy in intertidal environments may also be reduced by the influence of wet muddy substrate or intertidal vegetation, which can make it difficult to extract a single unambiguous coastline (Bishop-Taylor et al. 2019a, 2019b, 2021). It is anticipated that future versions of this product will show improved results due to integrating more advanced methods for waterline detection in intertidal regions, and through improvements in tidal modelling methods. Regions significantly affected by intertidal issues include:
   * The Pilbara coast, Western Australia from Onslow to Pardoo
   * The Mackay region, Queensland from Proserpine to Broad Sound
   * The upper Spencer Gulf, South Australia from Port Broughton to Port Augusta
@@ -92,7 +92,7 @@ Figure 5: DEA Coastlines annual shorelines compared against a) aerial photogramm
 :::{figure} /_files/cmi/Figure10_intertidal.png
 :alt: Intertidal issues
 
-Figure 6: Potentially spurious shorelines in macrotidal coastal regions characterised by gently sloped tidal flat environments: a) Broad Sound and b) Shoalwater Bay, Queensland. Dashed shorelines indicate data that was flagged as affected by tidal modelling issues based on MNDWI standard deviation. In these locations, the TPXO 8 tidal model was unable to effectively sort satellite observations by tide heights, resulting in output shorelines that did not adequately suppress the influence of the tide.
+Figure 7: Potentially spurious shorelines in macrotidal coastal regions characterised by gently sloped tidal flat environments: a) Broad Sound and b) Shoalwater Bay, Queensland. Dashed shorelines indicate data that was flagged as affected by tidal modelling issues based on MNDWI standard deviation. In these locations, the TPXO 8 tidal model was unable to effectively sort satellite observations by tide heights, resulting in output shorelines that did not adequately suppress the influence of the tide.
 :::
 
 ## Quality assurance
