@@ -299,61 +299,55 @@
 
          {% for item in access_links_maps_list %}
          .. grid-item-card:: :fas:`map-location-dot`
-            :name: access-link-map
             :link: {{ item.link }}
             :link-alt: {{ access_labels.map }}
-            :class-item: access-link
+            :class-item: access-link access-link-map
 
             {{ item.name or access_names.map }}
          {% endfor %}
 
          {% for item in access_links_explorers_list %}
          .. grid-item-card:: :fas:`magnifying-glass`
-            :name: access-link-explorer
             :link: {{ item.link }}
             :link-alt: {{ access_labels.explorer }}
-            :class-item: access-link
+            :class-item: access-link access-link-explorer
 
             {{ item.name or access_names.explorer }}
          {% endfor %}
 
          {% for item in access_links_data_list %}
          .. grid-item-card:: :fas:`database`
-            :name: access-link-data
             :link: {{ item.link }}
             :link-alt: {{ access_labels.data }}
-            :class-item: access-link
+            :class-item: access-link access-link-data
 
             {{ item.name or access_names.data }}
          {% endfor %}
 
          {% for item in access_links_code_samples_list %}
          .. grid-item-card:: :fas:`laptop-code`
-            :name: access-link-code-example
             :link: {{ item.link }}
             :link-alt: {{ access_labels.code_sample }}
-            :class-item: access-link
+            :class-item: access-link access-link-code-example
 
             {{ item.name or access_names.code_sample }}
          {% endfor %}
 
          {% for item in access_links_web_services_list %}
          .. grid-item-card:: :fas:`globe`
-            :name: access-link-web-service
             :link: {{ item.link }}
             :link-alt: {{ access_labels.web_service }}
-            :class-item: access-link
+            :class-item: access-link access-link-web-service
 
             {{ item.name or access_names.web_service }}
          {% endfor %}
 
          {% for item in access_links_custom_list %}
          .. grid-item-card:: :fas:`{{ item.icon or "link" }}`
-            :name: access-link-custom
             :link: {{ item.link }}
             :link-alt: {{ item.label or "" }}
             :class-card: {{ item.class }}
-            :class-item: access-link
+            :class-item: access-link access-link-custom
 
             {{ item.name }}
          {% endfor %}
