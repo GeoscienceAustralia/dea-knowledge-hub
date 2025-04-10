@@ -12,6 +12,7 @@ function labelFromClassList(classList) {
     }
 }
 
+// Convert absolute URLs to relative URLs by removing the domain, e.g. 'https://knowledge.dea.ga.gov.au/category/page' => '/category/page'
 function convertTorelativeUrl(url) {
     var rootUrl = window.location.protocol + "//" + window.location.hostname + (window.location.port ? ":" + window.location.port : "");
 
