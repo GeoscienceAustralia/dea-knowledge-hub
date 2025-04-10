@@ -4,11 +4,11 @@ function labelFromClassList(classList) {
     var prefix = "access-link-";
 
     for (var i = 0; i < list.length; i++) {
-        if ([i].indexOf(prefix) === 0) {
+        if (list[i].indexOf(prefix) === 0) {
             return list[i].substring(prefix.length);
-        } else {
-            return null;
         }
+
+        return null;
     }
 }
 
