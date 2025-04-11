@@ -89,7 +89,7 @@ myst_enable_extensions = [
     "dollarmath",
 ]
 myst_heading_anchors = 6
-myst_all_links_external = True
+myst_all_links_external = False
 
 nbsphinx_requirejs_path = ""
 nbsphinx_execute = "never"
