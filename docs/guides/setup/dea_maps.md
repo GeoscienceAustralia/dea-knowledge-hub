@@ -1,3 +1,5 @@
+(dea-maps)=
+
 # DEA Maps
 
 [DEA Maps](https://maps.dea.ga.gov.au/) is an online platform where you can view Digital Earth Australia (DEA) datasets. It aims to make it easy for anyone to access our open-source data &mdash; whether you are a scientist, educator, journalist, or otherwise.
