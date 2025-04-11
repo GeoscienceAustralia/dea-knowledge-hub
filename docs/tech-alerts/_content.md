@@ -1,6 +1,8 @@
 % See the DEA Tech Alerts documentation:
 % https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/tech_alerts_changelog.html
 
+(tech-alerts)=
+
 ## 4 Apr 2025: URGENT: The DEA Sandbox is offline until further notice 
 
 ::::{admonition} Access request form
