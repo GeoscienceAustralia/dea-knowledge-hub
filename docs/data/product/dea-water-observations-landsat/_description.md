@@ -10,15 +10,16 @@ This product shows where surface water was observed by the Landsat satellites on
 
 ## What this product offers
 
-DEA Water Observations provides surface water observations derived from Landsat satellite imagery for all of Australia from 1986 to present.
+DEA Water Observations is a gridded dataset indicating areas where surface water has been observed using the Geoscience Australia (GA) Earth observation satellite data holdings. The current product (version 2.0.0) includes observations taken between 1986 and the present (inclusive) from the Landsat 5, 7, 8, and 9 satellites. WOs cover all of mainland Australia and Tasmania but exclude offshore Territories. The dataset is updated automatically as each new Landsat scene is acquired and processed to Analysis Ready Data (ARD) state. 
 
-The Water Observations show the extent of water in a corresponding Landsat scene, along with the degree to which the scene was obscured by clouds, shadows or where sensor problems cause parts of a scene to not be observable.
+The Water Observations show the extent of water in a corresponding Landsat scene, along with the degree to which the scene was obscured by clouds, shadows, or where sensor problems cause parts of a scene to not be observable.
 
 % ## Data description
 
 ## Applications
 
 The DEA Water Observations (WOs) are used to determine the area of surface water present in the corresponding satellite scene, and can be used for several water monitoring applications. Uses of the individual WOs include:
+
 * flood extent
 * amount of water in water bodies, major rivers and the coastal zone.
 
@@ -26,73 +27,26 @@ As the WOs are separated from the derived statistics of the associated DEA Water
 
 ## Technical information
 
-Digital Earth Australia (DEA) Water Observations (WOs) is a gridded dataset indicating areas where surface water has been observed using the Geoscience Australia (GA) Earth observation satellite data holdings. The current product (version 2.0.0) includes observations taken between 1986 and the present (inclusive) from the Landsat 5, 7, 8 and 9 satellites. WOs cover all of mainland Australia and Tasmania but exclude off-shore Territories. The dataset is updated automatically as each new Landsat scene is acquired and processed to Analysis Ready Data (ARD) state. 
+Data is provided as Water Observation Feature Layers (WOFLs) in a one-to-one relationship with the input satellite data. Hence there is one WOFL for each satellite dataset processed for the occurrence of water. The data type is a bit field, which allows multiple bits to be set simultaneously.
 
-Data is provided as Water Observation Feature Layers (WOFLs), in a 1 to 1 relationship with the input satellite data. Hence there is one WOFL for each satellite dataset processed for the occurrence of water. The meaning of each bit in the WOFLs is given in the table below. Prior to version 1.6.0, only one bit could be set per pixel, therefore the value of a pixel in an observation could be X OR Y OR Z. Hence in previous versions the WOs values could only be 0 or 1 or 2 or 4 or ... or 128. From version 1.6.0 onward the data type has been changed to a bit field, where multiple bits can be set simultaneously. Hence the value of a pixel in an observation can be X AND Y AND Z, etc, hence values can range from 0 to 255.
+In the WOFL, each pixel is encoded as a bit flag which represents a decimal. This decimal corresponds to a classification or a combination of classifications. These classifications and combinations of classifications are mapped to colours on [DEA Maps](https://maps.dea.ga.gov.au/) and in the output of the `plot_wo` function. This allows you to easily view these classifications of the landscape. See Figure 1 for an example of these map colours and see Table 1 for details of these classifications. Learn more about bit flags in the [DEA Notebook: Introduction to DEA Water Observations](/notebooks/DEA_products/DEA_Water_Observations/).
 
-Version 1.6.0 was updated with changes to the way different factors impeding water detection are dealt with. These changes result in improved detection rates and allow discrimination of different factors impeding water observations. Masking of the ocean with a pre-defined mask has been removed, and the extent of the ocean is now defined by the algorithm. Masking for terrain and solar incident angle have been de-coupled in order to provide better visibility about the reason for masking. The solar incident angle threshold used to remove poor quality observations collected when the sun is at a very low angle has been reduced from 30 degrees to 10 degrees. This change increases the number of observations included in the dataset during winter months while still removing those that are most badly impacted by shadowing caused by low solar incident angle. 
+A pixel in the WOFL can have a combination of multiple classifications. This is encoded by adding the decimal values of these classifications together. For example, a pixel with a decimal value of 192 is classified as both Water and Cloud (because 128 + 64 = 192). Furthermore, more than two classifications can be combined. For example, a pixel with a decimal value of 56 is classified as High Slope and Cloud Shadow and Terrain Shadow (because 16 + 32 + 8 = 56). The most commonplace of these combinations have been given their own names and colours so they can be easily seen on the map: Cloudy Water, Shaded Water, and Cloudy Steep Terrain. See Table 2 for the decimal values of all combinations of two classifications. Some values are greyed out because they cannot occur for any of several reasons. For instance, a classification cannot be combined with itself, so Cloud + Cloud is greyed out.
 
-Version 2.0.0 introduces the integration of Landsat 9, providing an increase in available observations from November 2021 onwards.
+Note that decimal values in the WOFL can range from 0 to 255.
 
-The table below describes the meaning of each bit set per pixel in each WOFL.
+For more information about the original algorithms and features of DEA Water Observations, see the paper: [Water observations from space by Mueller et al. (2016)](https://doi.org/10.1016/j.rse.2015.11.003).
 
-:::{list-table} Classification bit sets
-:header-rows: 1
+<figure>
+    <img src="/_static/water-observations/water-observations-colours-example.png" alt="Colour map of Water Observations product." />
+    <figcaption>Figure 1. Map colours example.</figcaption>
+</figure>
 
-* - Classification
-  - Bit
-  - Decimal
-  - Description
-
-* - **No Data**
-  - 0
-  - 1
-  - Missing or invalid data. Pixel masked out due to NO_DATA in NBART source, 0 = valid data in NBART.
-
-* - **Contiguity**
-  - 1
-  - 2
-  - Some data is missing in the original image (usually missing bands). Pixel masked out due to lack of data contiguity.
-
-* - **Low Solar Angle**
-  - 2
-  - 4
-  - Also known as Solar Incidence. The angle of the sun can cast a large shadow which can be misclassified as water. Pixel masked out due to solar incidence of less than 10 degrees.
-
-* - **Terrain Shadow**
-  - 3
-  - 8
-  - Topographic features can cast shadows which can be misclassified as water. Pixel masked out due to terrain shadow.
-
-* - **High Slope**
-  - 4
-  - 16
-  - A highly sloped terrain is less likely to contain water, so therefore, a detection of water on this surface is often incorrect. Pixel masked out due to high slope.
-
-* - **Cloud Shadow**
-  - 5
-  - 32
-  - Shadows are likely to be misclassified as water. Pixel masked out due to cloud shadow.
-
-* - **Cloud**
-  - 6
-  - 64
-  - Cloud is affecting the output data. Pixel masked out due to cloud.
-
-* - **Water**
-  - 7
-  - 128
-  - This pixel is classified as water.
+:::{include} ../../../_components/water-observations-classifications-table.html
 :::
 
-Where multiple factors impeding a clear observation are detected, a combination of the decimal values will be set by adding the relevant decimal values together. These combinations include 'High Slope + Cloud' (64 + 16 = 80), 'Cloud Shadow + Water' (128 + 32 = 160), and 'Cloud + Water' (128 + 64 = 192). Any number of these values can be combined, for example 'High Slope + Cloud' + 'Cloud Shadow + Water' (which is 240).
-
-The following table shows these combinations of decimal values. Some values cannot occur, for any of several reasons, and these values are greyed-out in the table.
-
-:::{include} ../../../_components/water-observations-combination-decimals-table.md
+:::{include} ../../../_components/water-observations-combination-decimals-table.html
 :::
-
-Full details of the original algorithms and features of DEA Water Observations can be found in the Water Observations from Space paper by Mueller et al. (2015).
 
 ## Lineage
 
