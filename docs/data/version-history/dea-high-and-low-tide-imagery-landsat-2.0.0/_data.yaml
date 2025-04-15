@@ -8,7 +8,7 @@ header_image: /_files/cmi/HLTCv2.png
 
 version_number: 2.0.0
 is_latest_version: false
-latest_version_link: /data/product/dea-tidal-imagery/
+latest_version_link: /data/product/dea-tidal-composites/
 is_provisional: false
 
 lineage_type: DERIVATIVE

@@ -133,14 +133,14 @@ ga_landsat_7_etm_oa_collection_3                                data/product/dea
 data-products/dea/478/ga-landsat-7-etm-oa-collection-3          data/product/dea-surface-reflectance-oa-landsat-7-etm
 data-products/dea/478/surface-reflectance-oa-3-landsat-7-etm    data/product/dea-surface-reflectance-oa-landsat-7-etm
 
-node/133                                                           data/product/dea-high-and-low-tide-imagery-landsat
-data-products/dea/133/dea-high-and-low-tide-imagery-landsat        data/product/dea-high-and-low-tide-imagery-landsat
-high_tide_and_low_tide_composites_25m_2.0.0                        data/product/dea-high-and-low-tide-imagery-landsat
-data-products/dea/133/high-tide-and-low-tide-composites            data/product/dea-high-and-low-tide-imagery-landsat
-data-products/dea/133/high-and-low-tides-3-landsat                 data/product/dea-high-and-low-tide-imagery-landsat
-data-products/dea/133/high-tide-and-low-tide-composites-25m-2.0.0  data/product/dea-high-and-low-tide-imagery-landsat
-data-products/dea/133/high-and-low-tides-2-landsat                 data/product/dea-high-and-low-tide-imagery-landsat
-data-products/dea/133/high-and-low-tide-imagery-2-landsat          data/product/dea-high-and-low-tide-imagery-landsat
+node/133                                                           data/product/dea-tidal-composites
+data-products/dea/133/dea-high-and-low-tide-imagery-landsat        data/product/dea-tidal-composites
+high_tide_and_low_tide_composites_25m_2.0.0                        data/product/dea-tidal-composites
+data-products/dea/133/high-tide-and-low-tide-composites            data/product/dea-tidal-composites
+data-products/dea/133/high-and-low-tides-3-landsat                 data/product/dea-tidal-composites
+data-products/dea/133/high-tide-and-low-tide-composites-25m-2.0.0  data/product/dea-tidal-composites
+data-products/dea/133/high-and-low-tides-2-landsat                 data/product/dea-tidal-composites
+data-products/dea/133/high-and-low-tide-imagery-2-landsat          data/product/dea-tidal-composites
 
 node/400                                                                data/product/dea-surface-reflectance-nbart-landsat-8-oli-tirs
 data-products/dea/400/dea-surface-reflectance-nbart-landsat-8-oli-tirs  data/product/dea-surface-reflectance-nbart-landsat-8-oli-tirs
