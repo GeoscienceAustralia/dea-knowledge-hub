@@ -6,7 +6,7 @@ cards:
     link: /data/product/dea-coastlines/
     image: /_files/cmi/thumbnail_vertical.png
   - name: DEA Tidal Imagery
-    link: /data/product/dea-tidal-imagery/
+    link: /data/product/dea-tidal-composites/
     #image: /_files/cmi/HLTCv2.png
   - name: DEA Intertidal
     link: /data/product/dea-intertidal/
