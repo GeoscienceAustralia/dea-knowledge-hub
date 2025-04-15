@@ -2,8 +2,8 @@
 
 # Specifications
 
-short_name: DEA Tidal Imagery
-full_technical_name: "Geoscience Australia Sentinel-2 Tidal Imagery Calendar Year Collection 3"
+short_name: DEA Tidal Composites
+full_technical_name: "Geoscience Australia Sentinel-2 Tidal Composites Calendar Year Collection 3"
 #header_image: /_files/cmi/HLTCv2.png #TODO
 
 version_number: 1.0.0
@@ -27,9 +27,7 @@ resolution: 10 m
 coordinate_reference_system: EPSG:3577
 
 product_ids:
-  - ga_s2_intertidal_composites_cyear_3 
- # - ga_s2_high_tidal_imagery_cyear_3
- # - ga_s2_low_tidal_imagery_cyear_3
+  - ga_s2_tidal_composites_cyear_3 
 
 parent_products:
   - name: Sentinel -2A, -2B and -2C and Observational Attributes (Collection 2)
