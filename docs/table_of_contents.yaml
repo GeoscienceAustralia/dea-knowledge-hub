@@ -130,8 +130,8 @@ entries:
             title: All
 
           - file: data/product/dea-coastlines/index
-          - file: data/product/dea-tidal-imagery/index
-            title: DEA Tidal Imagery
+          - file: data/product/dea-tidal-composites/index
+            title: DEA Tidal Composites
           - file: data/product/dea-intertidal/index
           - file: data/product/dea-intertidal-extents-landsat/index
             title: DEA Intertidal Extents (ITEM)
