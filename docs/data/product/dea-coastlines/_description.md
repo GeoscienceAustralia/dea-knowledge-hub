@@ -148,6 +148,8 @@ South Australian Coast Protection Board, 2000. Monitoring Sand Movements along t
 
 Strauss, D., Murray, T., Harry, M., Todd, D., 2017. Coastal data collection and profile surveys on the Gold Coast: 50 years on. Australasian Coasts & Ports 2017: Working with Nature 1030. 
 
+T. C. Sutterley, K. Alley, K. Brunt, S. Howard, L. Padman, and M. Siegfried, “pyTMD: Python-based tidal prediction software”, (2017). doi: 10.5281/zenodo.5555395
+
 TASMARC, 2021. TASMARC (The Tasmanian Shoreline Monitoring and Archiving Project) (2019) TASMARC database. Available: h[ttp://www.tasmarc.info/](http://www.tasmarc.info/)
 
 Turner, I. L., Harley, M. D., Short, A. D., Simmons, J. A., Bracs, M. A., Phillips, M. S., & Splinter, K. D. (2016). A multi-decade dataset of monthly beach profile surveys and inshore wave forcing at Narrabeen, Australia. *Scientific data*, *3*(1), 1-13. Available: [http://narrabeen.wrl.unsw.edu.au/](http://narrabeen.wrl.unsw.edu.au/)
