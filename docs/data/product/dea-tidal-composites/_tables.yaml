@@ -159,3 +159,24 @@ bands_table:
     units: 1
     type: int16
     description: null
+  - name: qa_low_threshold
+    aliases: [low_threshold]
+    resolution: 10 m
+    nodata: .nan
+    units: metres above MSL
+    type: float32
+    description: null
+  - name: qa_high_threshold
+    aliases: [high_threshold]
+    resolution: 10 m
+    nodata: .nan
+    units: metres above MSL
+    type: float32
+    description: null
+  - name: qa_count_clear
+    aliases: [count_clear]
+    resolution: 10 m
+    nodata: -999
+    units: count
+    type: int16
+    description: null
