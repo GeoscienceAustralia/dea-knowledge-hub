@@ -5,45 +5,157 @@
 bands_footnote: null
 
 bands_table:
-  - name: blue
-    aliases: []
-    resolution: 25 m
+  - name: low_coastal_aerosol
+    aliases: [low_band01]
+    resolution: 60 m
     nodata: -999
-    units: Metres
-    type: float32
+    units: 1
+    type: int16
     description: null
-  - name: green
-    aliases: []
-    resolution: 25 m
+  - name: low_blue
+    aliases: [low_band02]
+    resolution: 10 m
     nodata: -999
-    units: Metres
-    type: float32
+    units: 1
+    type: int16
     description: null
-  - name: red
-    aliases: []
-    resolution: 25 m
+  - name: low_green
+    aliases: [low_band03]
+    resolution: 10 m
     nodata: -999
-    units: Metres
-    type: float32
+    units: 1
+    type: int16
     description: null
-  - name: nir
-    aliases: []
-    resolution: 25 m
+  - name: low_red
+    aliases: [low_band04]
+    resolution: 10 m
     nodata: -999
-    units: Metres
-    type: float32
+    units: 1
+    type: int16
     description: null
-  - name: swir1
-    aliases: []
-    resolution: 25 m
+  - name: low_red_edge_1
+    aliases: [low_band05]
+    resolution: 20 m
     nodata: -999
-    units: Metres
-    type: float32
+    units: 1
+    type: int16
     description: null
-  - name: swir2
-    aliases: []
-    resolution: 25 m
+  - name: low_red_edge_2
+    aliases: [low_band06]
+    resolution: 20 m
     nodata: -999
-    units: Metres
-    type: float32
+    units: 1
+    type: int16
+    description: null
+  - name: low_red_edge_3
+    aliases: [low_band07]
+    resolution: 20 m
+    nodata: -999
+    units: 1
+    type: int16
+    description: null
+  - name: low_nir_1
+    aliases: [low_band08]
+    resolution: 10 m
+    nodata: -999
+    units: 1
+    type: int16
+    description: null
+  - name: low_nir_2
+    aliases: [low_band8a]
+    resolution: 20 m
+    nodata: -999
+    units: 1
+    type: int16
+    description: null
+  - name: low_swir_2
+    aliases: [low_band11]
+    resolution: 20 m
+    nodata: -999
+    units: 1
+    type: int16
+    description: null
+  - name: low_swir_3
+    aliases: [low_band12]
+    resolution: 20 m
+    nodata: -999
+    units: 1
+    type: int16
+    description: null
+  - name: high_coastal_aerosol
+    aliases: [high_band01]
+    resolution: 60 m
+    nodata: -999
+    units: 1
+    type: int16
+    description: null
+  - name: high_blue
+    aliases: [high_band02]
+    resolution: 10 m
+    nodata: -999
+    units: 1
+    type: int16
+    description: null
+  - name: high_green
+    aliases: [high_band03]
+    resolution: 10 m
+    nodata: -999
+    units: 1
+    type: int16
+    description: null
+  - name: high_red
+    aliases: [high_band04]
+    resolution: 10 m
+    nodata: -999
+    units: 1
+    type: int16
+    description: null
+  - name: high_red_edge_1
+    aliases: [high_band05]
+    resolution: 20 m
+    nodata: -999
+    units: 1
+    type: int16
+    description: null
+  - name: high_red_edge_2
+    aliases: [high_band06]
+    resolution: 20 m
+    nodata: -999
+    units: 1
+    type: int16
+    description: null
+  - name: high_red_edge_3
+    aliases: [high_band07]
+    resolution: 20 m
+    nodata: -999
+    units: 1
+    type: int16
+    description: null
+  - name: high_nir_1
+    aliases: [high_band08]
+    resolution: 10 m
+    nodata: -999
+    units: 1
+    type: int16
+    description: null
+  - name: high_nir_2
+    aliases: [high_band8a]
+    resolution: 20 m
+    nodata: -999
+    units: 1
+    type: int16
+    description: null
+  - name: high_swir_2
+    aliases: [high_band11]
+    resolution: 20 m
+    nodata: -999
+    units: 1
+    type: int16
+    description: null
+  - name: high_swir_3
+    aliases: [high_band12]
+    resolution: 20 m
+    nodata: -999
+    units: 1
+    type: int16
     description: null
