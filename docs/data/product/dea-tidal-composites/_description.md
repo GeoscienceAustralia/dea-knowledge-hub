@@ -47,42 +47,30 @@ The [**file naming convention**](https://knowledge.dea.ga.gov.au/guides/referenc
 
 e.g. `ga_s2_tidal_composites_cyear_3_x080y125_2022--P1Y_final_low-red-edge-3.tif`
 
+## Code repositories
+
+## Product layers
+
+## Ensemble tide modelling
+
 ## Lineage
 
 The product has been developed to provide a geomedian composite dataset of coastal regions of Australia for the highest and lowest 20% of the observed tidal range in the Sentinel-2 catalogue, enabling both visualisation and spectral analysis. Coastal Sentinel-2 observations are composited relative to tidal modelling of the Australian coastline using an ensemble of global tide models, leveraging python packages [eo-tides](https://github.com/GeoscienceAustralia/eo-tides) and [pyTMD](https://github.com/tsutterley/pyTMD).
 
 ## Processing steps
 
-### 1. Create a continental scale tidal modelling framework
+1. Load and pre-process data
+    - [Load](https://github.com/GeoscienceAustralia/dea-intertidal/blob/develop/intertidal/io.py#L166) analysis ready satellite data from Sentinel-2A, -2B and -2C
+    - Filter based on [geometric quality assessment](https://knowledge.dea.ga.gov.au/notebooks/DEA_products/DEA_Sentinel2_Surface_Reflectance/#Filtering-by-metadata-to-remove-poorly-georeferenced-scenes) to remove poorly georeferenced scenes
+    - Remove sunglinted pixels by masking out pixels with glint angles less than 20 degrees
+    - Proceed with tide modelling and geomedian calculation only if the time-series of input satellite images has 20 or more observations
+2. Calculate high and low tide geomedian composites
 
-Create a continental scale tidal modelling framework utilising continental scale tidal prediction software developed by Oregon State University (OTPS, Egbert and Erofeeva, 2002, 2010). OTPS tide heights were attributed to Landsat observations in the DEA at corresponding times and dates, per location
+    - [Model tide heights](https://github.com/GeoscienceAustralia/eo-tides/blob/main/eo_tides/eo.py#L306) for the spatial extent and timesteps of the loaded satellite data array
+    - Attribute tide heights to the valid satellite observations and calculate the satellite observed tide range
+    - Calculate the [quantile](https://github.com/opendatacube/odc-algo/blob/main/odc/algo/_percentile.py#L85) tide range and identify the absolute tide value thresholds associated with the top and bottom 20th percentiles of the tide range
+    - Select satellite observations below and above the low and high tide thresholds. Calculate a [geomedian](https://github.com/opendatacube/odc-algo/blob/main/odc/algo/_geomedian.py#L188) on each subset and count the contributing number of clear observations.
 
-The modelling process utilises continental scale tidal prediction software developed by Oregon State University (OTPS, Egbert and Erofeeva, 2002, 2010). OTPS tide heights were attributed to Landsat observations in the DEA at corresponding times and dates, per location.
-
-To account for geographic and seasonal variations in tidal regimes and ranges, twelve tidal height rasters of the study region at 1km resolution were created utilising the OTPS model, at a randomly selected monthly epoch across a full year. Utilising these raster layers, the tidal modelling spatial framework was constructed with the following steps:
-* Perform a multi-resolution segmentation using eCognition software, utilising all twelve tidal height inputs, to create a spatial representation of the multi-epoch tidal variation across the continent.
-* Extract the centroids of the object segments created in eCognition and generate a Voronoi Polygon tessellation of the region.
-* Perform a visual assessment and manual adjustment of the Voronoi polygon boundaries and nodes to ensure alignment with natural boundaries and coastal/island features.
-
-Through this process, the coastal zone is divided into Voronoi polygons that capture the tidal complexity of the Australian coast, with areas of complex tidal behaviour represented using smaller polygons. The nodes of the polygons can then be used for the tidal attribution process as described in Sagar et al., (2017). 
-
-### 2. Generate HOT and LOT composite imagery
-
-Generate HOT and LOT composite imagery: Landsat TM and OLI NBAR extracted for each tidal model polygon for 2010-17 range; pixel filtered; tagged and sorted by tidal height (OTPS); pixel based geomedian composites created from HT and LT composite subsets.
-
-The high and low tide composite generation comprises the following steps:
-* Landsat TM and OLI NBAR time-series observations archived in the DEA are extracted for each tidal model polygon for the 2010-17 time range..
-* Data is then filtered on a pixel basis to remove poor quality data including cloud, cloud shadow and band saturation.
-* Observations are tagged with a tidal height relative to Mean Sea Level (MSL) utilising the OTPS model, time of acquisition and location of the polygon model node.
-* Observations are sorted by tidal height to allow identify subsets acquired at high and low tide:
-  * the lower 20th percentile of the observed tidal range, which are used to calculate the low tide composite,  and,
-  * the upper 20th percentile of the observed tidal range which are used to calculate the high tide composite.
-* Pixel based geomedian composites are then created from the high and low tide composite subsets.
-* The composite is visually inspected to assess the quality (ie. remnant cloud noise, lack of data). If required, steps 1-5 are then repeated with an additional 5 years of archival data added to the process. Ultimately, highest observed tide (HOT) composites ranged from either 1995-17 or 2000-17 per polygon. Lowest observed tide (LOT) composites ranged from either 2000-17, 2005-17 or 2010-17 per polygon. 
-
-* Due the sun-synchronous nature of the various Landsat sensor observations; it is unlikely that the full physical extents of the tidal range in any cell will be observed. Hence, terminology has been adopted for the product to reflect the highest modelled tide observed in a given cell (HOT) and the lowest modelled tide observed (LOT). These measures are relative to Mean Sea Level, and have no consistent relationship to Lowest (LAT) and Highest Astronomical Tide (HAT).
-
-% ## Software
 
 ## References
 
