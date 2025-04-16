@@ -5,14 +5,14 @@ They also characterise critical coastal habitats and ecosystems, and support a w
 Increasingly though, these dynamic environments are faced with threats from land reclaimation, coastal erosion and rising sea levels, amongst others.
 
 The ever-changing nature of the tides makes it hard to systematically capture consistent imagery of the intertidal zone, particularly across large regions and especially in remote areas of the country.
-[Geomedian statistical techniques](https://knowledge.dea.ga.gov.au/data/product/dea-geometric-median-and-median-absolute-deviation-landsat/) provide a valuable method to combine time-series satellite imagery and identify the most representative and artefact free data in imagery 'composites'.
+[Geomedian statistical techniques](https://knowledge.dea.ga.gov.au/data/product/dea-geometric-median-and-median-absolute-deviation-landsat/) provide a robust method to combine tide-attributed time-series satellite imagery and produce representative and artefact free imagery 'composites' of Australia's coastal high and low tide environments.
 
 ## What this product offers
 
-This product is a suite of cloud-free composite imagery of the intertidal zones at high and low tide around the Australian coast. 
-It calculates the geometric median (geomedian) of the highest and lowest 20% of the observed tidal range in Digital Earth Australia (DEA)’s archive of Sentinel-2 satellite images.
+This product provides a suite of cloud-free composite Sentinel-2 satellite data that enables imaging of Australian coastal intertidal zones at both high and low tide. 
+Using a geometric median (geomedian), the highest and lowest 20% of observed tidal ranges in Digital Earth Australia (DEA)’s Sentinel-2 imagery archive are combined to deliver annual snapshots of Australian coastal high and low tide environments.
 
-To generate these composites, the archive of Sentinel-2 images has been paired with pixel-based local tidal modelling, generated from a selected ensemble of the best performing global tide models under local conditions.
+Sentinel-2 satellite images are tidally attributed though pairing with pixel-based local tidal modelling, generated from a selected ensemble of the best performing global tide models under local conditions.
 Tidal attribution allows the imagery archive to be sorted by tide height rather than date, so the intertidal zone can be visualised during any stage of the tide regime.  
 
 The composite high and low tide imagery is delivered at a 10 m spatial resolution and is updated annually using 3 year rolling epochs of input data.
@@ -23,61 +23,33 @@ The composite high and low tide imagery is delivered at a 10 m spatial resolutio
 
 * Mapping cover types within the intertidal zone
 * Visualising the full observed extent of the tidal range around the Australian continental coastline
+* Monitoring for change in Australian coastal environments
 
 ## Technical information
 
-Inter-tidal zones are difficult regions to characterise due to the dynamic nature of the tide. They are highly changeable environments, subject to forcings from the land, sea and atmosphere and yet they form critical habitats for a wide range of organisms from birds to fish and sea grass. By harnessing the long archive of satellite imagery over Australia's coastal zones in the DEA and pairing the images with regional tidal modelling, the archive can be sorted by tide height rather than date, enabling the inter-tidal zone to be viewed at any stage of the tide regime.
+Inter-tidal zones are difficult regions to characterise due to the dynamic nature of the tide. They are highly changeable environments, subject to forcings from the land, sea and atmosphere and yet they form critical habitats for a wide range of organisms from birds to fish, mangroves and seagrass. By harnessing the archive of satellite imagery over Australia's coastal zones and pairing images with pixel based tide modelling, the archive can be sorted by tide height rather than date, enabling the intertidal zone to be viewed at any stage of the tide regime.
 
-The High Low Tide Composites (HLTC_25) product is composed of two mosaics, distinguished by tide height, representing a composite image of the synthetic geomedian surface reflectance from Landsats 5 TM, Landsat 7 ETM+ and Landsat 8 OLI NBAR data (Li et al., 2012; Roberts et al., 2017). These products have been produced using Digital Earth Australia (DEA). The two mosaics allow cloud free and noise reduced visualisation of the shallow water and inter-tidal coastal regions of Australia, as observed at high and low tide respectively (Sagar et al., 2018).
+DEA Tidal Composites include 25 layers of data, separated into lowtide, hightide and quality assurance categories. Lowtide and hightide layers represent composites of the synthetic geomedian surface reflectance from Sentinel-2a, b and c NBART analysis-ready data streams to ensure a valid surface reflectance spectra suitable for uses such as habitat mapping (Li et al., 2012; Roberts et al., 2017). Combining respective lowtide and hightide data layers delivers cloud free and noise reduced visualisation of the shallow water and intertidal coastal regions of Australia (Sagar et al., 2018). Quality assurance layers are provided to support interpretation of the lowtide and hightide datasets and include the tide-height thresholds above/below which associated images were included in the compositing process and the count of clear input images that contributed to each pixel in the composites.
 
-The composites are generated utilising the geomedian approach of Roberts et al (2017) to ensure a valid surface reflectance spectra suitable for uses such as habitat mapping. The time range used for composite generation in each polygon of the mosaic is tailored to ensure dynamic coastal features are captured whilst still allowing a clean and cloud free composite to be generated. The concepts of the Observed Tidal Range (OTR), and Highest and Lowest Observed Tide (HOT, LOT) are discussed and described fully in Sagar et al. (2017) and the product description for the ITEM v 1.0 product (Geoscience Australia, 2016).
+Spatially and temporally aligned to the [DEA Intertidal product suite](https://knowledge.dea.ga.gov.au/data/product/dea-intertidal/), DEA Tidal Composites are an annually updated data suite, generated from rolling 3-year epochs, with a minimum of 10 m spatial resolution.
 
-Oregon State Tidal Prediction (OTPS) software (Egbert and Erofeeva, 2002, 2010) was used to generate tide heights, relative to mean sea level, for the Australian continental coastline, split into 306 distinct tidal regions. These time and date stamped tidal values were then attributed to all coastal tile observations for their time of acquisition, creating a range of observed tide heights for the Australian coastline. The two mosaics in HLTC_25 are composited from the highest and lowest 20 % of observed tide in the ensemble and are termed HOT and LOT respectively. A geomedian composite for each Landsat band is calculated from the tiles in each ensemble subset to produce the respective HOT and LOT composites (Sagar et al., 2018). Note that Landsat 7 ETM+ observations are excluded after May 2003 due to a large number of data artefacts.
-
-The time range used for composite generation in each of the 306 polygons of the mosaics is tailored to ensure dynamic coastal features are captured whilst still allowing a clean and cloud free composite to be generated. The maximum epoch for which the products are calculated is between 1995-2017, although this varies due to data resolution and observation quality. The product also includes a count of clear observations per pixel for both mosaics.
-
-Observations are filtered to remove poor quality observations including cloud, cloud shadow and band saturation (of any band).
+An [ensemble tidal modelling](ensemble-tidal-modelling) approach was implemented to account for the varying performance and biases of existing global ocean tide models across the complex tidal regimes and coastal regions of Australia. The ensemble process utilises ancillary data to select and weight tidal models at any given coastal location, based on how well each model correlates with local satellite-observed patterns of tidal inundation, and water levels measured by satellite altimetry. A single ensemble tidal output was generated by combining the top 3 locally optimal models, and then used for all downstream product workflows.
 
 ### Features
 
-The High and Low Tide Composites product is a 6-band mosaic, consistent with Landsat, produced to allow visualisation of the shallow water and inter-tidal coastal regions as observed at high or low tide. It is continental (coastal) in coverage and includes geomedian surface reflectance, along with pixel and polygon level metadata for each of the 306 polygons contained in each of the HOT and LOT mosaics.
+The DEA Tidal Composites product is a 25-band mosaic, consistent with Sentinel-2, produced to allow visualisation of the shallow water and intertidal coastal regions as observed at high or low tide. It is continental (coastal) in coverage and includes geomedian surface reflectance, along with pixel level metadata for each of the high and low tide mosaics.
 
-The supporting polygon level metadata includes the following **attributes**:
-
-|                |                                                                                                                                                                                           |
-|----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **ID**         | polygon ID number                                                                                                                                                                         |
-| **lon**        | polygon centroid longitude                                                                                                                                                                |
-| **lat**        | polygon centroid latitude                                                                                                                                                                 |
-| **date_range** | range of input dates                                                                                                                                                                      |
-| **modelLow**   | lowest modelled tide height between the input dates                                                                                                                                       |
-| **modelHigh**  | highest modelled tide height between the input dates                                                                                                                                      |
-| **MaximumObs** | maximum count of clear observations for any pixel in the polygon                                                                                                                          |
-| **LIT**        | lowest input tide height to the composite image                                                                                                                                           |
-| **HIT**        | highest input tide height to the composite image                                                                                                                                          |
-| **stages**     | the count of each observed tide stage in the composite image. Where: <br /> **e** = ebbing tide <br /> **f** = flowing tide <br /> **ph** = peak high tide <br /> **pl** = peak low tide |
-
-The tide stages were calculated by comparison to the modeled tide data for 15 minutes either side of the observation to determine the ebb, flow or peak movement of the tide.
-
-The ***composites* file naming convention** is as follows:
+The [**file naming convention**](https://knowledge.dea.ga.gov.au/guides/reference/collection_3_naming/#different-types-of-products) is as follows:
 
 ```
-COMPOSITE_[HIGH or LOW]_[polygon ID]_[centroid longitude]_[centroid latitude]_[input date range]_PER_20.[nc or tif]
+[ORGANISATION]_[PLATFORM]_[PRODUCT]_[REPORTING PERIOD]_[COLLECTION]_[TILE REFERENCE]--[DATA PERIOD]_[PRODUCT STATUS]_[BAND NAME].[FILE EXTENSION]
 ```
 
-e.g. `COMPOSITE_HIGH_297_120.3_-19.36_20000101_20170101_PER_20.nc`
-
-The ***maximum pixel count* naming convention** is as follows:
-
-```
-COUNT_[HIGH or LOW]_[polygon ID]_[centroid longitude]_[centroid latitude]_[input date range]_PER_20.[nc or tif]
-```
-
-e.g. `COUNT_HIGH_297_120.3_-19.36_20000101_20170101_PER_20.nc`
+e.g. `ga_s2_tidal_composites_cyear_3_x080y125_2022--P1Y_final_low-red-edge-3.tif`
 
 ## Lineage
 
-The product has been developed to provide a geomedian composite visualisation of coastal regions of Australia for the highest and lowest 20% of the observed tidal range in the Landsat catalogue.  Coastal Landsat observations are composited relative to tidal modelling of the Australian coastline (split into 306 polygons, characterised by similar tidal characteristics) using Oregon State Tidal Prediction Software (OTPS, Egbert and Erofeeva, 2002, 2010)).
+The product has been developed to provide a geomedian composite dataset of coastal regions of Australia for the highest and lowest 20% of the observed tidal range in the Sentinel-2 catalogue, enabling both visualisation and spectral analysis. Coastal Sentinel-2 observations are composited relative to tidal modelling of the Australian coastline using an ensemble of global tide models, leveraging python packages [eo-tides](https://github.com/GeoscienceAustralia/eo-tides) and [pyTMD](https://github.com/tsutterley/pyTMD).
 
 ## Processing steps
 
