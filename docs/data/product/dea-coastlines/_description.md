@@ -43,7 +43,7 @@ A point dataset providing robust rates of coastal change for every 30 m along Au
 
 On the [interactive DEA Coastlines web map](https://maps.dea.ga.gov.au/story/DEACoastlines), points are shown for locations with statistically significant rates of change (p-value &lt;= 0.01; see `sig_time` below) and good quality data (certainty = "good"; see `certainty` below) only. Each point shows annual rates of change (in metres per year; see `rate_time` below), and an estimate of uncertainty in brackets (95% confidence interval; see `se_time`). For example, there is a 95% chance that a point with a label **\-10.0 m (±1.0 m)** is retreating at a rate of between -9.0 and -11.0 metres per year.
 
-Rates of change points contains the following attribute columns that can be accessed by clicking on labelled points in the web map:
+Rates of change points contain attribute columns that can be accessed by clicking on labelled points in the web map.
 
 See the attributes of this layer in the [Specifications tab](./?tab=specifications).
 
