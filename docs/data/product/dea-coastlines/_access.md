@@ -19,10 +19,11 @@ To load OGC GeoPackage data in QGIS:
 :::
 
 :::{dropdown} How to explore DEA Maps
-To explore DEA Coastlines on the interactive DEA Maps platform, visit the link below:
-[https://maps.dea.ga.gov.au/story/DEACoastlines](https://maps.dea.ga.gov.au/#share=s-DEACoastlines&playStory=1)
 
-To add DEA Coastlines to DEA Maps manually:
+Start exploring [DEA Coastlines on DEA Maps](https://maps.dea.ga.gov.au/#share=s-DEACoastlines).
+
+Or, to add DEA Coastlines to DEA Maps manually:
+
 1. Open [DEA Maps](https://maps.dea.ga.gov.au/).
 2. Select `Explore map data` on the top-left.
 3. Select `Sea, ocean and coast > DEA Coastlines > DEA Coastlines`
