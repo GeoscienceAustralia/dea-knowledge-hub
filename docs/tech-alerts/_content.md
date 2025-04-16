@@ -1,6 +1,10 @@
 % See the DEA Tech Alerts documentation:
 % https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/tech_alerts_changelog.html
 
+## 17 Apr 2025: DEA Coastlines 3.0.0 released
+
+The DEA Coastlines product [was updated to version 3.0.0](https://github.com/GeoscienceAustralia/dea-coastlines/releases/tag/3.0.0). The major improvement in this release is the application of [Ensemble Tidal Modelling](/data/product/dea-coastlines/?tab=description#ensemble-tidal-modelling) to the calculation of all shorelines from 1988 to 2024.
+
 ## 4 Apr 2025: URGENT: The DEA Sandbox is offline until further notice 
 
 ::::{admonition} Access request form
