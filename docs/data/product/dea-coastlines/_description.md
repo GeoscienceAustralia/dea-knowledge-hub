@@ -34,7 +34,7 @@ See the attributes of this layer in the [Specifications tab](./?tab=specificatio
 :::{figure} /_files/cmi/2024_Coastlines_KH_update.*
 :alt: DEA CoastLines coastline layer
 
-Figure 1: Annual coastlines from DEA Coastlines visualised on the [interactive DEA Coastlines web map](https://maps.dea.ga.gov.au/story/DEACoastlines)
+Figure 1. Annual coastlines from DEA Coastlines visualised on the [interactive DEA Coastlines web map](https://maps.dea.ga.gov.au/story/DEACoastlines)
 :::
 
 ### Rates of change points layer (rates_of_change)
@@ -50,7 +50,7 @@ See the attributes of this layer in the [Specifications tab](./?tab=specificatio
 :::{figure} /_files/cmi/deacl_statistics_2.*
 :alt: DEA CoastLines rates of change statistics layer
 
-Figure 2: Rates of change points from DEA Coastlines visualised on the [interactive DEA Coastlines web map](https://maps.dea.ga.gov.au/story/DEACoastlines)
+Figure 2. Rates of change points from DEA Coastlines visualised on the [interactive DEA Coastlines web map](https://maps.dea.ga.gov.au/story/DEACoastlines)
 :::
 
 ### Coastal change hotspots layers (hotspots_zoom_1, hotspots_zoom_2, and hotspots_zoom_3)
@@ -62,7 +62,7 @@ See the attributes of this layer in the [Specifications tab](./?tab=specificatio
 :::{figure} /_files/cmi/deacl_summary.*
 :alt: DEA CoastLines summary layer
 
-Figure 3: Coastal change hotspots from DEA Coastlines visualised on the [interactive DEA Coastlines web map](https://maps.dea.ga.gov.au/story/DEACoastlines)
+Figure 3. Coastal change hotspots from DEA Coastlines visualised on the [interactive DEA Coastlines web map](https://maps.dea.ga.gov.au/story/DEACoastlines)
 :::
 
 % ## Lineage
@@ -101,7 +101,7 @@ Ensemble tide modelling was implemented in the [eo-tides](https://github.com/Geo
 :::{figure} /_files/dea-intertidal/ensembletides.*
 :alt: Ensemble tide validation Figure
 
-Figure 4 &mdash; Global tide models validated at Australian Baseline Sea Level Monitoring Project (ABSLMP) and Global Extreme Sea Level Analysis (GESLA) tide gauges
+Figure 4. Global tide models validated at Australian Baseline Sea Level Monitoring Project (ABSLMP) and Global Extreme Sea Level Analysis (GESLA) tide gauges
 :::
 
 ## References

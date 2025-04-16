@@ -16,7 +16,7 @@ An extensive validation against independent coastal monitoring datasets was cond
 :::{figure} /_files/cmi/Figure1_validation_temporal.png
 :alt: Validation sites
 
-Figure 5: The spatial and temporal distribution of the independent validation data that was compared against DEA Coastlines annual shorelines and rates of change.   
+Figure 5. The spatial and temporal distribution of the independent validation data that was compared against DEA Coastlines annual shorelines and rates of change.   
 :::
 
 ### Annual shoreline accuracy and precision
@@ -53,7 +53,7 @@ To evaluate our long-term rates of change, we identified 330 validation transect
 :::{figure} /_files/cmi/Figure4_subpixel.png
 :alt: Validation results
 
-Figure 6: DEA Coastlines annual shorelines compared against a) aerial photogrammetry-derived annual ~0 m AMSL shorelines from the Western Australian Department of Transport Coastline Movements dataset, and b) transect-based in-situ validation data for three example locations that demonstrate sub-pixel precision shoreline extraction: Narrabeen Beach, Tugun Beach, and West Beach. DEA Coastlines transect data in panel b represent the 0 m AMSL Median Annual Shoreline Position shoreline proxy, and have been corrected for consistent local inland biases to assess the ability to capture relative coastline dynamics through time.
+Figure 6. DEA Coastlines annual shorelines compared against a) aerial photogrammetry-derived annual ~0 m AMSL shorelines from the Western Australian Department of Transport Coastline Movements dataset, and b) transect-based in-situ validation data for three example locations that demonstrate sub-pixel precision shoreline extraction: Narrabeen Beach, Tugun Beach, and West Beach. DEA Coastlines transect data in panel b represent the 0 m AMSL Median Annual Shoreline Position shoreline proxy, and have been corrected for consistent local inland biases to assess the ability to capture relative coastline dynamics through time.
 :::
 
 ## Caveats and limitations
@@ -92,7 +92,7 @@ Figure 6: DEA Coastlines annual shorelines compared against a) aerial photogramm
 :::{figure} /_files/cmi/Figure10_intertidal.png
 :alt: Intertidal issues
 
-Figure 7: Potentially spurious shorelines in macrotidal coastal regions characterised by gently sloped tidal flat environments: a) Broad Sound and b) Shoalwater Bay, Queensland. Dashed shorelines indicate data that was flagged as affected by tidal modelling issues based on MNDWI standard deviation. In these locations, the TPXO 8 tidal model was unable to effectively sort satellite observations by tide heights, resulting in output shorelines that did not adequately suppress the influence of the tide.
+Figure 7. Potentially spurious shorelines in macrotidal coastal regions characterised by gently sloped tidal flat environments: a) Broad Sound and b) Shoalwater Bay, Queensland. Dashed shorelines indicate data that was flagged as affected by tidal modelling issues based on MNDWI standard deviation. In these locations, the TPXO 8 tidal model was unable to effectively sort satellite observations by tide heights, resulting in output shorelines that did not adequately suppress the influence of the tide.
 :::
 
 ## Quality assurance
