@@ -49,7 +49,7 @@ e.g. `ga_s2_tidal_composites_cyear_3_x080y125_2022--P1Y_final_low-red-edge-3.tif
 
 ## Code repositories
 
-## Product layers
+#Remove in favour of description column in tables.yaml? ## Product layers
 
 ## Ensemble tide modelling
 
