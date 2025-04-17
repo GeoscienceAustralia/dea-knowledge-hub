@@ -74,7 +74,7 @@ DEA Intertidal Elevation (Figure 1) provides elevation in metre units relative t
 :::{figure} /_files/dea-intertidal/DEAIntertidal_layer_elevation.*
 :alt: DEA Intertidal Elevation layer
 
-Figure 1 &mdash; DEA Intertidal Elevation, with low elevation values shown in dark colours and high elevation shown in light colours.
+Figure 1. DEA Intertidal Elevation, with low elevation values shown in dark colours and high elevation shown in light colours.
 :::
 
 #### DEA Intertidal Elevation Uncertainty (elevation_uncertainty)
@@ -84,7 +84,7 @@ DEA Intertidal Elevation Uncertainty (Figure 2) provides a measure of the qualit
 :::{figure} /_files/dea-intertidal/DEAIntertidal_layer_elevation_uncertainty.*
 :alt: DEA Intertidal Elevation Uncertainty layer
 
-Figure 2 &mdash; DEA Intertidal Elevation Uncertainty, with high uncertainty shown in light colours.
+Figure 2. DEA Intertidal Elevation Uncertainty, with high uncertainty shown in light colours.
 :::
 
 #### DEA Intertidal Exposure (exposure)
@@ -94,7 +94,7 @@ DEA Intertidal Exposure (Figure 3) models the percentage of time that any intert
 :::{figure} /_files/dea-intertidal/DEAIntertidal_layer_exposure.*
 :alt: DEA Intertidal Exposure layer
 
-Figure 3 &mdash; DEA Intertidal Exposure, with low exposure values (i.e. rarely exposed pixels) shown in dark colours.
+Figure 3. DEA Intertidal Exposure, with low exposure values (i.e. rarely exposed pixels) shown in dark colours.
 :::
 
 #### DEA Intertidal Extents (extents)
@@ -113,7 +113,7 @@ The class definitions of the Intertidal Extents layer are as follows:
 :alt: DEA Intertidal Extents layer
 :width: 1200px
 
-Figure 4 &mdash; DEA Intertidal Extents, the five coastal classes include ocean and coastal waters (dark blue), low confidence intertidal (yellow), high confidence intertidal (orange), inland waters (light blue) and land (white).
+Figure 4. DEA Intertidal Extents, the five coastal classes include ocean and coastal waters (dark blue), low confidence intertidal (yellow), high confidence intertidal (orange), inland waters (light blue) and land (white).
 :::
 
 ### Tidal Attribute Layers
@@ -135,7 +135,7 @@ The high tide offset dataset quantifies the proportion of the highest tides no
 :::{figure} /_files/dea-intertidal/tidalattributes.*
 :alt: Tidal Attributes Description Figure
 
-Figure 5 &mdash; Illustration of the concept of observed tide heights (dots corresponding to satellite acquisition time) compared to the full modelled tidal range (blue lines). Descriptions of Spread (a), Lowtide offset (b), and Hightide offset (c) are detailed in the text.
+Figure 5. Illustration of the concept of observed tide heights (dots corresponding to satellite acquisition time) compared to the full modelled tidal range (blue lines). Descriptions of Spread (a), Lowtide offset (b), and Hightide offset (c) are detailed in the text.
 :::
 
 #### DEA Intertidal lowest observed tide (ta_lot)
@@ -189,7 +189,7 @@ Ensemble tide modelling was implemented in the [eo-tides](https://github.com/Geo
 :alt: Ensemble tide validation Figure
 :::
 
-Figure 6 &mdash; Global tide models validated at Australian Baseline Sea Level Monitoring Project (ABSLMP) and Global Extreme Sea Level Analysis (GESLA) tide gauges
+Figure 6. Global tide models validated at Australian Baseline Sea Level Monitoring Project (ABSLMP) and Global Extreme Sea Level Analysis (GESLA) tide gauges
 
 ## Lineage
 
