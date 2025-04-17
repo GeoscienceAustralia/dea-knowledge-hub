@@ -99,21 +99,21 @@ Figure 3. DEA Intertidal Exposure, with low exposure values (i.e. rarely exposed
 
 #### DEA Intertidal Extents (extents)
 
-DEA Intertidal Extents is a categorical dataset classifying coastal areas into five classes (Figure 4), including the satellite-observed extents of the exposed (i.e. non-vegetated) intertidal zone. This classification is based on DEA Intertidal Elevation outputs and other satellite-derived data including the inundation frequency of each pixel and correlations between inundation patterns and modelled tide heights. See [Quality Assessment Layers](quality-assessment-layers). The "intensive urban" land use summary class of the Catchment-scale Land Use Map (CLUM) (ABARES, 2021) dataset was used to mask pixel misclassifications in urban areas.
- 
+DEA Intertidal Extents is a categorical dataset that classifies coastal areas into five classes (Figure 4), including the satellite-observed extents of the exposed (i.e. non-vegetated) intertidal zone. This classification is based on DEA Intertidal Elevation outputs and other satellite-derived data including the inundation frequency of each pixel and correlations between inundation patterns and modelled tide heights. See [Quality Assessment Layers](#dea-intertidal-quality-assessment-layers). The "intensive urban" land use summary class of the Catchment-scale Land Use Map (CLUM) (ABARES, 2021) dataset was used to mask pixel misclassifications in urban areas.
+
 The class definitions of the Intertidal Extents layer are as follows:
 
-* **Ocean and coastal waters (1)** - Pixels that are wet in 50% or more of satellite observations and are located within the coastal mask (a cost-distance connectivity mask combining elevation with distance from the ocean)
-* **Exposed intertidal - low confidence (2)** - Pixels that have a correlation between tide height and NDWI of at least 0.15, and are located within the coastal mask (see Ocean and coastal waters)
-* **Exposed intertidal - high confidence (3)** - Pixels that are included in the intertidal elevation dataset
-* **Inland waters (4)** - Pixels that are wet in more than 50% of satellite observations, and fall outside of the coastal mask (see Ocean and coastal waters)
-* **Land (5)** - Pixels that are wet in less than 50% of satellite observations
+* **Ocean and coastal waters (1)** &mdash; Pixels that are wet in 50% or more of satellite observations and are located within the coastal mask (a cost-distance connectivity mask combining elevation with distance from the ocean).
+* **Exposed intertidal - low confidence (2)** &mdash; Pixels that have a correlation between tide height and NDWI of at least 0.15, and are located within the coastal mask (see Ocean and coastal waters).
+* **Exposed intertidal - high confidence (3)** &mdash; Pixels that are included in the intertidal elevation dataset.
+* **Inland waters (4)** &mdash; Pixels that are wet in more than 50% of satellite observations, and fall outside of the coastal mask (see Ocean and coastal waters).
+* **Land (5)** &mdash; Pixels that are wet in less than 50% of satellite observations.
 
 :::{figure}  /_files/dea-intertidal/DEA_Intertidal_Extents_2022.*
 :alt: DEA Intertidal Extents layer
 :width: 1200px
 
-Figure 4. DEA Intertidal Extents, the five coastal classes include ocean and coastal waters (dark blue), low confidence intertidal (yellow), high confidence intertidal (orange), inland waters (light blue) and land (white).
+Figure 4. DEA Intertidal Extents, the five coastal classes include ocean and coastal waters (dark blue), low confidence intertidal (yellow), high confidence intertidal (orange), inland waters (light blue), and land (white).
 :::
 
 ### Tidal Attribute Layers
@@ -153,6 +153,8 @@ The lowest astronomical tide dataset maps the lowest astronomical tide (LAT) for
 #### DEA Intertidal highest astronomical tide (ta_hat)
 
 The highest astronomical tide dataset maps the highest astronomical tide (HAT) for each pixel, as modelled by the Ensemble Tidal Model for the analysis epoch. Note that the HAT modelled for each individual analysis epoch may differ from the HAT modelled across ‘all time’ for any given location.
+
+(dea-intertidal-quality-assessment-layers)=
 
 ### Quality Assessment Layers
 
