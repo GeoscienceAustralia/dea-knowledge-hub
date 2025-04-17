@@ -3,7 +3,7 @@
 
 ## 17 Apr 2025: DEA Coastlines 3.0.0 released
 
-The DEA Coastlines product [was upgraded to version 3.0.0](https://github.com/GeoscienceAustralia/dea-coastlines/releases/tag/3.0.0). The major improvement in this release is the application of [Ensemble Tidal Modelling](/data/product/dea-coastlines/?tab=description#ensemble-tidal-modelling) to the calculation of all shorelines from 1988 to 2024.
+The [DEA Coastlines](/data/product/dea-coastlines/) product [was upgraded to version 3.0.0](https://github.com/GeoscienceAustralia/dea-coastlines/releases/tag/3.0.0). The major improvement in this release is the application of [Ensemble Tidal Modelling](/data/product/dea-coastlines/?tab=description#ensemble-tidal-modelling) to the calculation of all shorelines from 1988 to 2024.
 
 ## 4 Apr 2025: URGENT: The DEA Sandbox is offline until further notice 
 
