@@ -60,7 +60,7 @@ Figure 7. DEA Intertidal Elevation validation heatmaps comparing performance acr
     * Daly River, Northern Territory
     * Broad Sound, Queensland
 
-* The DEA Intertidal Extents layer classifies two categories of intertidal pixels. Rigorous methods and conservative thresholds are used to identify pixels that are highly likely to be intertidal and are classed as "high confidence" intertidal pixels. Pixels that are less certain to be intertidal (i.e those that meet most but not all of the qualifying criteria) are instead classified as "low confidence" intertidal. These "low confidence" pixels are not included in our Elevation and Exposure datasets. Caution should be applied when interpreting or using "low confidence" intertidal pixel data, as this class is likely to include noisy or inaccurate data.
+* The DEA Intertidal Extents layer classifies two categories of intertidal pixels. Rigorous methods and conservative thresholds are used to identify pixels that are highly likely to be intertidal and are classed as "high confidence" intertidal pixels. Pixels that are less certain to be intertidal (i.e those that meet most but not all of the qualifying criteria) are instead classified as "low confidence" intertidal. These "low confidence" pixels are not included in our Elevation and Exposure datasets. Caution should be applied when interpreting or using "low confidence" intertidal pixel data, as this class is likely to include noisy and inaccurate data.
 
 ## Quality Assurance
 
