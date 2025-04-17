@@ -17,7 +17,12 @@ The authors would like to sincerely thank the following organisations and indivi
 
 This research was undertaken with the assistance of resources from the National Computational Infrastructure (NCI), which is supported by the Australian Government.
 
-Tidal modelling is provided by the FES2014 global tidal model, implemented using the pyTMD Python package. FES2014 was produced by NOVELTIS, LEGOS, CLS Space Oceanography Division and CNES. It is distributed by AVISO, with support from CNES ([http://www.aviso.altimetry.fr/](http://www.aviso.altimetry.fr/)).
+Tide modelling via `eo-tides` was underpinned by the `pyTMD` Python package and we thank its author Tyler Sutterly for his support.
+
+The FES2014 global tide model was produced by NOVELTIS, LEGOS, CLS Space Oceanography Division and CNES. It is distributed by AVISO, with support from CNES ([http://www.aviso.altimetry.fr/](http://www.aviso.altimetry.fr/)).
+
+The FES2022 Tide product was funded by CNES, produced by LEGOS, NOVELTIS and CLS and made freely available by AVISO". CNES, 2024. FES2022 (Finite Element Solution) Tidal model 
+Version 2024) [Data set]. CNES. https://doi.org/10.24400/527896/A01-2024.004
 
 ## License and copyright
 
