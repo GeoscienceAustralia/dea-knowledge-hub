@@ -58,10 +58,10 @@ ga_s2ls_intertidal_cyear_3_x082y139_2022--P1Y_final_elevation.tif
 
 ### Code repositories
 
-* [DEA Intertidal Github](https://github.com/GeoscienceAustralia/dea-intertidal) &mdash; A codebase for DEA Intertidal product generation workflows 
-* [EO-Tides Github](https://github.com/GeoscienceAustralia/eo-tides) &mdash; A codebase for integrating satellite Earth observations with tide modelling
-* [DEA Tools Github](https://github.com/GeoscienceAustralia/dea-notebooks) &mdash; Earth observation data manipulation tools 
-* [PyTMD Github](https://github.com/tsutterley/pyTMD) &mdash; Python-based tidal prediction software 
+* [DEA Intertidal GitHub repository](https://github.com/GeoscienceAustralia/dea-intertidal) &mdash; A codebase for DEA Intertidal product generation workflows 
+* [EO-Tides GitHub repository](https://github.com/GeoscienceAustralia/eo-tides) &mdash; A codebase for integrating satellite Earth observations with tide modelling
+* [DEA Tools GitHub repository](https://github.com/GeoscienceAustralia/dea-notebooks) &mdash; Earth observation data manipulation tools 
+* [PyTMD GitHub repository](https://github.com/tsutterley/pyTMD) &mdash; Python-based tidal prediction software 
 
 ### Core Product Layers 
 
