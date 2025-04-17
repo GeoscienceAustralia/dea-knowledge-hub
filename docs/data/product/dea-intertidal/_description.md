@@ -170,7 +170,7 @@ This quality assessment dataset provides pixel-level Pearson correlations betwee
 
 #### DEA Intertidal Clear Count (qa_count_clear)
 
-This quality assessment dataset returns the number of clear and valid satellite observations for every pixel. By default, a minimum number of 5 clear and cloud-free satellite observations are required to calculate intertidal elevation and exposure.
+This quality assessment dataset returns the number of clear and valid satellite observations for every pixel. By default, a minimum number of five clear and cloud-free satellite observations are required to calculate intertidal elevation and exposure.
 
 #### DEA Intertidal Coastal Mask (qa_coastal_mask)
 
