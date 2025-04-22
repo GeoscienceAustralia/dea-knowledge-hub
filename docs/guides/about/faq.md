@@ -11,9 +11,16 @@ There are several options for downloading data from DEA depending on your use ca
 
 Use [DEA Maps](/guides/setup/dea_maps/) to directly export a small amount of data from the map using the [Export functionality](/guides/setup/dea_maps/#dea-maps-exporting). This is the easiest method, but it is not suitable for downloading large areas of data or multiple steps (see below).
 
-**2) You want to download all available data for a bounding box and/or time range**
+**2) You want to access all available data for a bounding box and/or time range**
 
-Use DEA's STAC metadata to find the data you are interested in using the [Downloading and streaming data using STAC metadata guide](/notebooks/How_to_guides/Downloading_data_with_STAC/).
+The DEA STAC API and the Open Data Cube `odc-stac` package allows users to query and load data from DEA products. STAC is a particularly useful if:
+
+* You want to easily find and load DEA satellite data products through time or across large spatial areas
+* You want to access satellite data on your own computing environment
+* Your analysis requires more memory or processing power than provided by DEA’s managed Sandbox or NCI environments
+* You want to combine DEA data with data from other external sources (e.g. Microsoft Planetary Computer, Element 84 Earth Search)
+
+To get started, refer to the [SpatioTemporal Asset Catalogue (STAC)](/guides/setup/gis/stac/) guide, which demonstrates how to efficiently load data directly from the cloud without having to download individual files. To learn about how to download data with STAC, refer to the [Downloading and streaming data using STAC metadata guide](/notebooks/How_to_guides/Downloading_data_with_STAC/).
 
 **3) You want to download specific files from DEA's Amazon S3 buckets**
 
