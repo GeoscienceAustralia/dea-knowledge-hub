@@ -3,8 +3,8 @@
 % ## Use constraints
 
 :::{dropdown} How to explore DEA Maps
-To explore DEA Intertidal on the interactive DEA Maps platform, visit the link below:
-[https://maps.dea.ga.gov.au/story/DEAIntertidal](https://maps.dea.ga.gov.au/story/DEAIntertidal)
+
+Start exploring [DEA Intertidal on DEA Maps](https://maps.dea.ga.gov.au/story/DEAIntertidal).
 
 To add DEA Intertidal to DEA Maps manually:
 
@@ -23,6 +23,7 @@ To query an absolute value for any of the product layers, click on a location to
 :::{dropdown} How to access the data on AWS
 
 To download DEA Intertidal data:
+
 1. Click the [Access the data on AWS](https://data.dea.ga.gov.au/?prefix=derivative/ga_s2ls_intertidal_cyear_3/) link above.
 1. Click on the [ga_summary_grid_c3_32km_coastal.geojson](https://data.dea.ga.gov.au/derivative/ga_s2ls_intertidal_cyear_3/ga_summary_grid_c3_32km_coastal.geojson) file to download to your computer. This file can be used in a GIS package to identify the product tiles that you require for a given location. Alternatively, you can access this file via DEA Maps to identify required tiles (**Sea, ocean and coast** &gt; **DEA Intertidal** &gt; **DEA Intertidal 32 km tile grid**). 
 1. Navigate to the required tile folder, first using the tile 'x' reference (e.g. `x079`) and then the tile 'y' reference (e.g. `y123`). Then select your year of interest.
