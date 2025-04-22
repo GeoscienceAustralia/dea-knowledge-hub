@@ -1,18 +1,27 @@
 % See the DEA Tech Alerts documentation:
 % https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/tech_alerts_changelog.html
 
-## 4 Apr 2025: URGENT: The DEA Sandbox is offline until further notice 
+## 22 Apr 2025: DEA Sandbox technical review update
 
-::::{admonition} Access request form
+:::{admonition} Access request form
 :class: note
 
 External users who have an existing DEA Sandbox user account can request for their access to be restored while the Sandbox functionality review is taking place where there is a critical use case for access. To request your account be considered for reinstatement, please fill out this form:
 
-:::{raw} html
-<a href="https://forms.office.com/Pages/DesignPageV2.aspx?subpage=design&id=OmFbZEymUEKXX19peH0CjVZhXxFrFTpIrbjv7UdBedZUQ1lVVUdFUjZKV0pLOUZLUTlLRDhURFU3QS4u&topview=Preview">Geoscience Australia Sandbox Access Request</a>
+[Geoscience Australia Sandbox Access Request](https://forms.office.com/Pages/ResponsePage.aspx?id=OmFbZEymUEKXX19peH0CjVZhXxFrFTpIrbjv7UdBedZUQ1lVVUdFUjZKV0pLOUZLUTlLRDhURFU3QS4u)
 :::
 
-::::
+The technical review of the DEA Sandbox has been completed, and we are working towards implementing solutions for improved Sandbox user vetting and content management.  We are already in the process of reopening Sandbox accounts to select groups (e.g. Government and academia) where there is an immediate requirement for access. The form to request account reactivation is available on the DEA Sandbox website, or [here](https://forms.office.com/Pages/ResponsePage.aspx?id=OmFbZEymUEKXX19peH0CjVZhXxFrFTpIrbjv7UdBedZUQ1lVVUdFUjZKV0pLOUZLUTlLRDhURFU3QS4u).
+
+DEA is not currently accepting new account creations; however, broader reactivations and new registrations will become feasible as technical solutions are successfully implemented over the coming months. 
+
+## 22 Apr 2025: STAC API/Explorer
+
+We are experiencing a heavy load on our systems causing ongoing issues with our services. Many other open data providers have been experiencing similar issues in recent years.  We are actively working to find ways to mitigate this traffic without impacting users and hope to at least improve uptimes over the next few days. 
+
+We are aware that these two outages occurring simultaneously is particularly inconvenient for all our users, and our power-users and organisational partners in particular.  We apologise for this inconvenience.
+
+## 4 Apr 2025: URGENT: The DEA Sandbox is offline until further notice 
 
 Digital Earth Australia (DEA) is conducting a review of the [DEA Sandbox](https://app.sandbox.dea.ga.gov.au/) to address ongoing technical issues. DEA Sandbox is offline while the review takes place. We will communicate updates with you throughout the review process. We apologise for any inconvenience and appreciate your understanding.
 
