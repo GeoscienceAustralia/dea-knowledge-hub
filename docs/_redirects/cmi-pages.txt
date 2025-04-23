@@ -2,13 +2,13 @@
 
 # Redirects from miscellaneous pages on the old CMI site to the new Knowledge Hub.
 
-node                     index
-404                      404-not-found
-search/user              search
-search/node              search
-about                    index
-resources                guides
-references-articles      guides
-references-articles-two  guides
-data-products            data
-data-products/dea        data
+/node/                     /
+/404/                      /404-not-found/
+/search/user/              /search/
+/search/node/              /search/
+/about/                    /
+/resources/                /guides/
+/references-articles/      /guides/
+/references-articles-two/  /guides/
+/data-products/            /data/
+/data-products/dea/        /data/

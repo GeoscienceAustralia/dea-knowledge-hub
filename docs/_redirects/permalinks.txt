@@ -2,4 +2,4 @@
 
 # A permalink is a link that is not likely to change. It should be based on a constant value, such as a product's eCat number (e.g. 'permalink/146090').
 
-# permalink/146090  data/product/dea-land-cover-landsat
+# /permalink/146090/  /data/product/dea-land-cover-landsat/

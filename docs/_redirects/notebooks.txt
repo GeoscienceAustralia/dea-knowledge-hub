@@ -2,16 +2,16 @@
 
 # The new DEA Notebooks cover page is on a different URL.
 
-notebooks  dea-notebooks
+/notebooks/  /dea-notebooks/
 
 # Notebooks category URLs automatically redirect to the README page for the category.
 
-notebooks/Beginners_guide      notebooks/Beginners_guide/README
-notebooks/DEA_products         notebooks/DEA_products/README
-notebooks/How_to_guides        notebooks/How_to_guides/README
-notebooks/Interactive_apps     notebooks/Interactive_apps/README
-notebooks/Real_world_examples  notebooks/Real_world_examples/README
+/notebooks/Beginners_guide/      /notebooks/Beginners_guide/README/
+/notebooks/DEA_products/         /notebooks/DEA_products/README/
+/notebooks/How_to_guides/        /notebooks/How_to_guides/README/
+/notebooks/Interactive_apps/     /notebooks/Interactive_apps/README/
+/notebooks/Real_world_examples/  /notebooks/Real_world_examples/README/
 
 # The DEA Sandbox landing page was removed from this site.
 
-notebooks/DEA_Sandbox  dea-notebooks
+/notebooks/DEA_Sandbox/  /dea-notebooks/
