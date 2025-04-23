@@ -120,17 +120,17 @@ Figure 4. DEA Intertidal Extents, the five coastal classes include ocean and coa
 
 See the attributes of these layers in the [Specifications tab](./?tab=specifications).
 
-#### DEA Intertidal tidal spread (ta_spread)
+#### Tidal spread (ta_spread)
 
-The tidal spread dataset provides the percentage of the full astronomical tidal range observed by the time series of satellite observations at each pixel (see Figure 5a). DEA Intertidal Spread takes the concept of satellite tide bias, introduced in Bishop-Taylor et al (2019), and applies it at a pixel scale to demonstrate the fraction of the full tide range that was sensor observed during the analysis epoch at that location. In this work, the astronomical tide range is defined as that modelled by the [Ensemble Tidal Modelling](#ensemble-tidal-modelling) approach. 
+The percentage of the full astronomical tidal range observed by the time series of satellite observations at each pixel (see Figure 5a). DEA Intertidal Spread takes the concept of satellite tide bias, introduced in Bishop-Taylor et al (2019), and applies it at a pixel scale to demonstrate the fraction of the full tide range that was sensor observed during the analysis epoch at that location. In this work, the astronomical tide range is defined as that modelled by the [Ensemble Tidal Modelling](#ensemble-tidal-modelling) approach. 
 
-#### DEA Intertidal low tide offset (ta_offset_low)
+#### Low tide offset (ta_offset_low)
 
-The low tide offset dataset quantifies the proportion of the lowest tides not observed at any time during the analysis epoch by satellites at each pixel (as a percentage of the astronomical tide range). It is calculated by measuring the offset between the lowest astronomical tide (LAT) and the lowest satellite-observed tide (LOT; see Figure 5b). A high value indicates that DEA Intertidal datasets may not map the lowest regions of the intertidal zone.
+The proportion of the lowest tides not observed at any time during the analysis epoch by satellites at each pixel (as a percentage of the astronomical tide range). It is calculated by measuring the offset between the lowest astronomical tide (LAT) and the lowest satellite-observed tide (LOT; see Figure 5b). A high value indicates that DEA Intertidal datasets may not map the lowest regions of the intertidal zone.
 
-#### DEA Intertidal high tide offset (ta_offset_high)
+#### High tide offset (ta_offset_high)
 
-The high tide offset dataset quantifies the proportion of the highest tides not observed at any time during the analysis epoch by satellites at each pixel (as a percentage of the astronomical tide range). It is calculated by measuring the offset between the highest astronomical tide (HAT) and the highest satellite-observed tide (HOT; see Figure 5c). A high value indicates that DEA Intertidal datasets may not map the highest regions of the intertidal zone.
+The proportion of the highest tides not observed at any time during the analysis epoch by satellites at each pixel (as a percentage of the astronomical tide range). It is calculated by measuring the offset between the highest astronomical tide (HAT) and the highest satellite-observed tide (HOT; see Figure 5c). A high value indicates that DEA Intertidal datasets may not map the highest regions of the intertidal zone.
 
 :::{figure} /_files/dea-intertidal/tidalattributes.*
 :alt: Tidal Attributes Description Figure
@@ -138,19 +138,19 @@ The high tide offset dataset quantifies the proportion of the highest tides no
 Figure 5. Illustration of the concept of observed tide heights (dots corresponding to satellite acquisition time) compared to the full modelled tidal range (blue lines). Descriptions of Spread (a), Lowtide offset (b), and Hightide offset (c) are detailed in the text.
 :::
 
-#### DEA Intertidal lowest observed tide (ta_lot)
+#### Lowest observed tide (ta_lot)
 
 The lowest observed tide dataset maps the lowest satellite-observed tide (LOT) of the satellite time series at each pixel during the analysis epoch, based on [Ensemble Tidal Modelling](#ensemble-tidal-modelling).
 
-#### DEA Intertidal highest observed tide (ta_hot)
+#### Highest observed tide (ta_hot)
 
 The highest observed tide dataset maps the highest satellite-observed tide (HOT) of the satellite time-series at each pixel during the analysis epoch, based on [Ensemble Tidal Modelling](#ensemble-tidal-modelling).
 
-#### DEA Intertidal lowest astronomical tide (ta_lat)
+#### Lowest astronomical tide (ta_lat)
 
 The lowest astronomical tide dataset maps the lowest astronomical tide (LAT) for each pixel, as modelled by the [Ensemble Tidal Model](#ensemble-tidal-modelling) for the analysis epoch. Note that the LAT modelled for each individual analysis epoch may differ from the LAT modelled across ‘all time’ for any given location.
 
-#### DEA Intertidal highest astronomical tide (ta_hat)
+#### Highest astronomical tide (ta_hat)
 
 The highest astronomical tide dataset maps the highest astronomical tide (HAT) for each pixel, as modelled by the Ensemble Tidal Model for the analysis epoch. Note that the HAT modelled for each individual analysis epoch may differ from the HAT modelled across ‘all time’ for any given location.
 
@@ -160,21 +160,21 @@ The highest astronomical tide dataset maps the highest astronomical tide (HAT) f
 
 See the attributes of these layers in the [Specifications tab](./?tab=specifications).
 
-##### DEA Intertidal NDWI frequency (qa_ndwi_freq)
+##### NDWI frequency (qa_ndwi_freq)
 
-This quality assessment band provides the inundation frequency of each pixel across the analysis epoch, as measured by NDWI. High values indicate that a pixel was observed as being inundated regularly in satellite observations.
+Inundation frequency of each pixel across the analysis epoch, as measured by NDWI. High values indicate that a pixel was observed as being inundated regularly in satellite observations.
 
-#### DEA Intertidal NDWI correlation (qa_ndwi_corr)
+#### NDWI correlation (qa_ndwi_corr)
 
-This quality assessment dataset provides pixel-level Pearson correlations between NDWI satellite observations and tide heights from the [Ensemble Tidal Model](#ensemble-tidal-modelling) over the analysis epoch. High values indicate that patterns of inundation were positively correlated with tide, indicating that the pixel was likely to be tidally influenced.
+Pixel-level Pearson correlations between NDWI satellite observations and tide heights from the [Ensemble Tidal Model](#ensemble-tidal-modelling) over the analysis epoch. High values indicate that patterns of inundation were positively correlated with tide, indicating that the pixel was likely to be tidally influenced.
 
-#### DEA Intertidal Clear Count (qa_count_clear)
+#### Clear count (qa_count_clear)
 
-This quality assessment dataset returns the number of clear and valid satellite observations for every pixel. By default, a minimum number of five clear and cloud-free satellite observations are required to calculate intertidal elevation and exposure.
+The number of clear and valid satellite observations for every pixel. By default, a minimum number of five clear and cloud-free satellite observations are required to calculate intertidal elevation and exposure.
 
-#### DEA Intertidal Coastal Mask (qa_coastal_mask)
+#### Coastal connectivity (qa_coastal_connectivity)
 
-This quality assessment dataset returns the coastal mask used to support the identification of high confidence intertidal pixels in DEA Intertidal Elevation and to separate coastal from inland water classes in the DEA Intertidal Extents layer. It is a cost-distance connectivity mask that combines SRTM elevations with distance from the ocean and is delivered as a thresholded binary coastal/non-coastal mask. We have thresholded conservatively to identify intertidal environments. We advise caution in using this data layer for other types of coastal investigations outside of the intertidal zone.
+An accumulated cost-distance connectivity layer used to constrain DEA Intertidal analysis to likely coastal pixels and distinguish coastal from inland water classes in the DEA Intertidal Extents layer. Values represent the cumulative elevation above the local Highest Astronomical Tide that must be traversed along the shortest path from tidally influenced coastal waters and mangroves. Lower values indicate likely coastal pixels, reflecting both distance inland and topography (e.g. low-lying, flat terrain may yield low values even far inland).
 
 ### Ensemble Tidal Modelling
 
