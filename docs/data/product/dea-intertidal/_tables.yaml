@@ -33,7 +33,7 @@ bands_table:
     nodata: 255
     units: Class
     type: uint8
-    description: A categorical classification of coastal cover types based on wetting characteristics and coastal proximity.
+    description: "A categorical classification of coastal cover types based on wetting characteristics and coastal proximity. Classes: ``1`` = Ocean and coastal waters; ``2`` = Exposed intertidal - low confidence; ``3`` = Exposed intertidal - high confidence; ``4`` = Inland waters; ``5`` = Land."
   - name: ta_spread
     aliases:
     - spread
