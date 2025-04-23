@@ -113,12 +113,12 @@ bands_table:
     nodata: -999
     units: Count
     type: int16
-    description: The count of clear and valid observations per pixel. This is used to calculate DEA Intertidal Elevation and derived datasets.
-  - name: qa_coastal_mask
+    description: The count of clear and valid observations per pixel.
+  - name: qa_coastal_connectivity
     aliases:
-    - coastal_mask
+    - coastal_connectivity
     resolution: 10 m
-    nodata: 255
-    units: Mask
-    type: uint8
-    description: The binary coastal mask used to support the identification of intertidal, coastal/ocean, and inland water pixels.
+    nodata: 65535
+    units: Cost distance
+    type: uint16
+    description: Accumulated cost-distance coastal connectivity, used to identify likely coastal pixels.
