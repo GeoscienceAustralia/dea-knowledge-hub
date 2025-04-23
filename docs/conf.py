@@ -74,7 +74,7 @@ extensions = [
     "myst_parser",
     "nbsphinx",
     "sphinx_design",
-    "sphinx-reredirects",
+    "sphinx_reredirects",
     "sphinxcontrib.datatemplates",
     "sphinx_external_toc",
     "sphinx_sitemap",
