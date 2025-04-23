@@ -201,15 +201,16 @@ This shift to a more dynamic product suite is achieved through a pixel-based alg
 
 ## Processing Steps
 
-1. Satellite data from Sentinel-2A, -2B and -2C, Landsat 7, 8, and 9 are loaded.
+1. Satellite data from Sentinel-2A, -2B and -2C, Landsat 7, 8, and 9 are loaded for the year of interest (e.g. 2020), and the preceding and subsequent year (e.g. 2019, 2021).
 1. Satellite data cloud masked and converted to Normalised Difference water Index (NDWI).
-1. Tides modelled for every satellite pixel using [Ensemble Tidal Modelling](#ensemble-tidal-modelling).
-1. Satellite data filtered to probable intertidal pixels using NDWI inundation frequency and tide correlation and masked as coastal or non-coastal using cost-distance connectivity analysis of [SRTM elevation data](https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/72759).
-1. Pixel-based rolling median applied from low to high tide.
-1. Intertidal elevation modelled based on tide height at which a rolling median transitions from dry to wet.
+1. Tide heights modelled for every satellite pixel using [Ensemble Tidal Modelling](#ensemble-tidal-modelling).
+1. Analysis constrained to likely coastal pixels using coastal cost-distance connectivity analysis and bathymetry masking.
+1. Satellite data filtered to probable intertidal pixels using NDWI inundation frequency and tide correlation, identifying pixels with patterns of inundation that are influenced by the tide.
+1. Satellite data processed using a pixel-based rolling median applied from low to high tide, to produce a clean dataset of typical NDWI terrain wetness at each stage of the tide.
+1. Intertidal elevation modelled by identifying the tide height at which the rolling median NDWI first transitions from dry to wet (representing the pixel becoming inundated by the tide).
 1. Intertidal elevation uncertainty modelled based on how cleanly modelled elevation divides satellite observations into dry and wet.
 1. Intertidal extents classes calculated based on Intertidal elevation and NDWI inundation frequency and tide correlation with additional masking to remove urban false positives using abares_clum_2020 (ABARES, 2021).
-1. Intertidal exposure calculated by comparing Intertidal elevation against high-frequency modelled tides.
+1. Intertidal exposure calculated by comparing Intertidal elevation against high-frequency modelled tides, calculating the percentage of time a pixel was exposed from tidal inundation.
 1. Tidal metrics calculated by comparing satellite-observed tides against high-frequency modelled tides.
 
 ## References
