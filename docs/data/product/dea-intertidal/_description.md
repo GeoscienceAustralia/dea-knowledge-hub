@@ -210,7 +210,7 @@ This shift to a more dynamic product suite is achieved through a pixel-based alg
 1. Intertidal elevation modelled by identifying the tide height at which the rolling median NDWI first transitions from dry to wet (representing the pixel becoming inundated by the tide).
 1. Intertidal elevation uncertainty modelled based on how cleanly modelled elevation divides satellite observations into dry and wet.
 1. Intertidal extents classes calculated based on Intertidal elevation and NDWI inundation frequency and tide correlation with additional masking to remove urban false positives using abares_clum_2020 (ABARES, 2021).
-1. Intertidal exposure calculated by comparing Intertidal elevation against high-frequency modelled tides, calculating the percentage of time a pixel was exposed from tidal inundation.
+1. Intertidal exposure calculated by comparing Intertidal elevation against high-frequency modelled tides, calculating the percentage of time a pixel was exposed during the regular rise and fall of the tide.
 1. Tidal metrics calculated by comparing satellite-observed tides against high-frequency modelled tides.
 
 ## References
