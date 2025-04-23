@@ -38,12 +38,12 @@ def band_plot(ls_finner_df, ls_fstat_WSdf, s2_finner_df, PlatNamesSpace, formDat
             fid2 = ls_finner_df.rename(index={'Band1': '1', 'Band2': '2', 'Band3': '3', 'Band4': '4', 'Band5': '5', 'Band6': '6', 'Band7': '7'},
                                 columns={'Field_inner_mean': 'Field'})
             fsd2 = ls_fstat_WSdf.rename(index={'Band1': '1', 'Band2': '2', 'Band3': '3', 'Band4': '4', 'Band5': '5', 'Band6': '6', 'Band7': '7'},
-                            columns={'Sat_mean': afield_data[6]})
-            fsd2.plot(y=PlatNamesSpace[field_data[6]], ax=axes[1], color='blue', linewidth=0.7)
-            axes[1].errorbar(x=fsd2.index, y=fsd2[PlatNamesSpace[field_data[6]]], yerr=fsd2['Sat_SD'], color='blue', capsize=3, linewidth=0.7)
+                            columns={'Sat_mean': field_data[6]})
+            fsd2.plot(y=field_data[6], ax=axes[1], color='blue', linewidth=0.7)
+            axes[1].errorbar(x=fsd2.index, y=fsd2[field_data[6]], yerr=fsd2['Sat_SD'], color='blue', capsize=3, linewidth=0.7)
     
         else:
-            print('Satellite name should be one of Landsat8/9 or Sentinel2a/b. I got', afield_data[3])
+            print('Satellite name should be one of Landsat8/9 or Sentinel2a/b. I got', field_data[3])
     
         fid.plot(y='Field', ax=axes[0], color='red', linewidth=0.7)
         fid2.plot(y='Field', ax=axes[1], color='red', linewidth=0.7)
@@ -87,7 +87,7 @@ def band_plot(ls_finner_df, ls_fstat_WSdf, s2_finner_df, PlatNamesSpace, formDat
             plt.errorbar(x=fid.index, y=fid[PlatNamesSpace[field_data[3]]], yerr=fid['Sat_SD'], color='blue', capsize=3, linewidth=0.7)
     
         else:
-            print('Satellite name should be one of Landsat8/9 or Sentinel2a/b. I got', afield_data[3])
+            print('Satellite name should be one of Landsat8/9 or Sentinel2a/b. I got', field_data[3])
     
         fid.plot(y='Field', ax=axes, color='red', linewidth=0.7)
         plt.errorbar(x=fid.index, y=fid['Field'], yerr=fid['Field_SD'], color='red', capsize=3, linewidth=0.7)

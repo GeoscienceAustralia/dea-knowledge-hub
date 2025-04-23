@@ -11,6 +11,56 @@ In May 2025, DEA Intertidal was [updated to version 2.0.0](https://github.com/Ge
 
 Learn more: [DEA Intertidal 2.0.0 product page](/data/product/dea-intertidal/)
 
+## 22 Apr 2025: DEA Sandbox technical review update
+
+:::{admonition} Access request form
+:class: note
+
+External users who have an existing DEA Sandbox user account can request for their access to be restored while the Sandbox functionality review is taking place where there is a critical use case for access. To request your account be considered for reinstatement, please fill out this form:
+
+[Geoscience Australia Sandbox Access Request](https://forms.office.com/Pages/ResponsePage.aspx?id=OmFbZEymUEKXX19peH0CjVZhXxFrFTpIrbjv7UdBedZUQ1lVVUdFUjZKV0pLOUZLUTlLRDhURFU3QS4u)
+:::
+
+The technical review of the DEA Sandbox has been completed, and we are working towards implementing solutions for improved Sandbox user vetting and content management.  We are already in the process of reopening Sandbox accounts to select groups (e.g. Government and academia) where there is an immediate requirement for access. The form to request account reactivation is available on the DEA Sandbox website, or [here](https://forms.office.com/Pages/ResponsePage.aspx?id=OmFbZEymUEKXX19peH0CjVZhXxFrFTpIrbjv7UdBedZUQ1lVVUdFUjZKV0pLOUZLUTlLRDhURFU3QS4u).
+
+DEA is not currently accepting new account creations; however, broader reactivations and new registrations will become feasible as technical solutions are successfully implemented over the coming months. 
+
+## 22 Apr 2025: STAC API/Explorer
+
+We are experiencing a heavy load on our systems causing ongoing issues with our services. Many other open data providers have been experiencing similar issues in recent years.  We are actively working to find ways to mitigate this traffic without impacting users and hope to at least improve uptimes over the next few days. 
+
+We are aware that these two outages occurring simultaneously is particularly inconvenient for all our users, and our power-users and organisational partners in particular.  We apologise for this inconvenience.
+
+## 4 Apr 2025: URGENT: The DEA Sandbox is offline until further notice 
+
+Digital Earth Australia (DEA) is conducting a review of the [DEA Sandbox](https://app.sandbox.dea.ga.gov.au/) to address ongoing technical issues. DEA Sandbox is offline while the review takes place. We will communicate updates with you throughout the review process. We apologise for any inconvenience and appreciate your understanding.
+
+Users will continue to have access to other DEA data and products, including [DEA Maps](/guides/setup/dea_maps/), and [DEA Explorer](/guides/setup/explorer_guide/), which will continue to update with Landsat and Sentinel data as normal.    
+
+Users can also refer to user guides on how to [download DEA data](/guides/about/faq/), or [access DEA web services](/guides/setup/gis/README/). The ['Access' tab for each Product](/data/product/dea-land-cover-landsat/?tab=access) on the DEA Knowledge Hub Data Product Catalogue also contains targeted information on how to access and interact with each DEA product specifically. 
+
+The DEA Notebooks provided in the DEA Sandbox are still available to users via the [DEA Knowledge Hub](/dea-notebooks/). 
+
+[View the Tech Alert](https://communication.ga.gov.au/link/id/zzzz67ef677b62d6b850Pzzzz6567c8b713b5b826/page.html)
+
+## 3 Apr 2025: URGENT: DEA Sandbox will be offline from 4pm Friday 4 April 2025 until further notice
+
+Digital Earth Australia (DEA) is conducting a review of the DEA Sandbox to address ongoing technical issues. The DEA Sandbox will be offline from **4pm AEDT Friday 4 April 2025**. Users will not be able to access the DEA Sandbox environment while the review takes place.
+
+Users will continue to have access to other DEA data and products, including DEA Maps and DEA Explorer, which will continue to update with Landsat and Sentinel data as normal. Users can also refer to [user guides](/guides/) on how to download DEA data or access DEA web services. The 'Access' tab for each Product on the [DEA Knowledge Hub Data Product Catalogue](/data/) also contains targeted information on how to access and interact with each DEA product specifically. 
+
+The DEA notebooks provided in the DEA Sandbox are still available to users via the [DEA Knowledge Hub - DEA Notebooks section](/dea-notebooks/).
+
+[View the Tech Alert](https://communication.ga.gov.au/link/id/zzzz67edf098d41fd019Pzzzz6567c8b713b5b826/page.html)
+
+## 1 Apr 2025: NOAA-21 Hotspots will be integrated with other VIIRS Sensors from 8 April
+
+In [DEA Hotspots](/data/product/dea-hotspots/), the NOAA-21 feed can currently be selected through ‘AFIMG NOAA-21’, or ‘AFMOD NOAA-21’, but will be incorporated into the standard ‘AFMOD’ and ‘AFMIG’ filter from 8 April 2025.
+ 
+NOAA-21 data can also be downloaded from the Sentinel S3 bucket with the Satellite ID ‘J02’. 
+
+[View the Tech Alert](https://communication.ga.gov.au/NOAA-21-Hotspots-Integrated-with-other-VIIRS-Sensors)
+
 ## 20 Mar 2025: DEA Sentinel-2C data now operational  
 
 Sentinel-2C data are now operational and supplying DEA products. DEA’s [ga_s2cm_ard_3](https://knowledge.dea.ga.gov.au/data/product/dea-surface-reflectance-sentinel-2c-msi/) product is receiving data for both our NRT and definitive offerings, which should now be fed into user workflows. [DEA Maps](http://maps.dea.ga.gov.au/#share=s-oeiMObC1NOBrld9OlCY9hcjdzNB), the [DEA Sandbox](https://app.sandbox.dea.ga.gov.au/hub/login), and [DEA Notebooks](https://knowledge.dea.ga.gov.au/notebooks/DEA_products/DEA_Sentinel2_Surface_Reflectance/) have all been updated to include Sentinel-2C data.
@@ -19,7 +69,7 @@ Users of our Sentinel-2A products ([ga_s2am_ard_3](https://knowledge.dea.ga.gov.
 
 In February, the [European Commission](https://communication.ga.gov.au/link/id/zzzz67db6439c4d9b829Pzzzz61de67bd94bfe861/page.html) announced an “exceptional and temporary extension” to the life and availability of data from the Sentinel-2A satellite mission for one year. We plan to evaluate the quality of data coming out of this mission, and if satisfactory, will add them to DEA data holdings in addition to Sentinel-2C. 
 
-<!-- [View the Tech Alert]() -->
+[View the Tech Alert](https://communication.ga.gov.au/link/id/zzzz67db8854cd6cd573Pzzzz6567c8b713b5b826/page.html)
 
 ## 20 Mar 2025: s2cloudless cloud mask data reprocessed
 
@@ -27,7 +77,7 @@ DEA has implemented a fix to the Sentinel-2 s2cloudless cloud mask correction. D
 
 Reprocessing of affected Sentinel-2 data has been ongoing since October 2024 and is now complete. Users can again use s2cloudless to cloud mask Sentinel-2 data, particularly for the now-corrected observations between the period of 25 January 2022 and 7 June 2024.  
 
-<!-- [View the Tech Alert]() -->
+[View the Tech Alert](https://communication.ga.gov.au/link/id/zzzz67db8854cd6cd573Pzzzz6567c8b713b5b826/page.html)
 
 ## 13 Mar 2025: Landsat near-real-time (NRT) data outage (Resolved)
 
