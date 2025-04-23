@@ -1,6 +1,16 @@
 % See the DEA Tech Alerts documentation:
 % https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/tech_alerts_changelog.html
 
+## 15 May 2025: DEA Intertidal 2.0.0 released
+
+In May 2025, DEA Intertidal was [updated to version 2.0.0](https://github.com/GeoscienceAustralia/dea-intertidal/releases/tag/2.0.0) and 2023 data was added to all layers in the product suite. This update also includes the following changes.
+
+* The [DEA Intertidal Extents](/data/product/dea-intertidal/?tab=description#core-product-layers) layer was added. This new data layer, in combination with the existing elevation and exposure layers supersedes the [DEA Intertidal Extents Model (ITEM)](/data/version-history/dea-intertidal-extents-landsat-2.0.0/) product. (The ITEM product has hence been deprecated.)
+* [Ensemble tide modelling](/data/product/dea-intertidal/?tab=description#ensemble-tidal-modelling) is now delivered via the [eo-tides](https://github.com/GeoscienceAustralia/eo-tides) tide modelling Python package.
+* New quality assessment layers were added: [qa_count_clear](/data/product/dea-intertidal/?tab=description#quality-assessment-layers) and [qa_coastal_connectivity](/data/product/dea-intertidal/?tab=description#quality-assessment-layers). 
+
+Learn more: [DEA Intertidal 2.0.0 product page](/data/product/dea-intertidal/)
+
 ## 20 Mar 2025: DEA Sentinel-2C data now operational  
 
 Sentinel-2C data are now operational and supplying DEA products. DEA’s [ga_s2cm_ard_3](https://knowledge.dea.ga.gov.au/data/product/dea-surface-reflectance-sentinel-2c-msi/) product is receiving data for both our NRT and definitive offerings, which should now be fed into user workflows. [DEA Maps](http://maps.dea.ga.gov.au/#share=s-oeiMObC1NOBrld9OlCY9hcjdzNB), the [DEA Sandbox](https://app.sandbox.dea.ga.gov.au/hub/login), and [DEA Notebooks](https://knowledge.dea.ga.gov.au/notebooks/DEA_products/DEA_Sentinel2_Surface_Reflectance/) have all been updated to include Sentinel-2C data.
