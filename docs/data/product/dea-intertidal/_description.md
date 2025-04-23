@@ -166,7 +166,7 @@ Inundation frequency of each pixel across the analysis epoch, as measured by NDW
 
 #### NDWI correlation (qa_ndwi_corr)
 
-Pixel-level Pearson correlations between NDWI satellite observations and tide heights from the [Ensemble Tidal Model](#ensemble-tidal-modelling) over the analysis epoch. High values indicate that patterns of inundation were positively correlated with tide, indicating that the pixel was likely to be tidally influenced.
+Pearson correlations between NDWI satellite observations and tide heights from the [Ensemble Tidal Model](#ensemble-tidal-modelling) over the analysis epoch. High values indicate that patterns of inundation were positively correlated with tide, indicating that the pixel was likely to be tidally influenced.
 
 #### Clear count (qa_count_clear)
 
