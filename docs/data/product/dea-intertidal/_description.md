@@ -174,7 +174,7 @@ The number of clear and valid satellite observations for every pixel. By default
 
 #### Coastal connectivity (qa_coastal_connectivity)
 
-An accumulated cost-distance connectivity layer used to constrain DEA Intertidal analysis to likely coastal pixels and distinguish coastal from inland water classes in the DEA Intertidal Extents layer. Values represent the cumulative elevation above the local Highest Astronomical Tide that must be traversed along the shortest path from tidally influenced coastal waters and mangroves. Lower values indicate likely coastal pixels, reflecting both distance inland and topography (e.g. low-lying, flat terrain may yield low values even far inland).
+An accumulated cost-distance connectivity layer used to constrain DEA Intertidal analysis to likely coastal pixels and distinguish coastal from inland water classes in the DEA Intertidal Extents layer. Values represent the cumulative elevation above Highest Astronomical Tide that must be traversed along the shortest path from tidally influenced coastal waters and mangroves. Lower values indicate likely coastal pixels, reflecting both distance inland and topography.
 
 ### Ensemble Tidal Modelling
 
