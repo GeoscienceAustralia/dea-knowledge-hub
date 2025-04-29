@@ -490,7 +490,7 @@
 
 {% set specifications_tab_component %}
 {% if page.data.enable_specifications %}
-.. tab-item:: Specifications :raw-html:`&#x2728;`
+.. tab-item:: Specifications
    :name: specifications
 
    .. raw:: html
