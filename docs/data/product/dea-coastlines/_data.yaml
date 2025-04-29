@@ -68,7 +68,7 @@ access_links_maps:
 access_links_explorers: null
 
 access_links_data:
-  - link: https://data.dea.ga.gov.au/?prefix=derivative/dea_coastlines/
+  - link: https://data.dea.ga.gov.au/?prefix=derivative/dea_coastlines/3-0-0/
     name: Access the data on AWS
 
 access_links_code_examples:
