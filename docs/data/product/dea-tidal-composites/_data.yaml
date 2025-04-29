@@ -30,7 +30,7 @@ product_ids:
   - ga_s2_tidal_composites_cyear_3 
 
 parent_products:
-  - name: Sentinel -2A, -2B and -2C and Observational Attributes (Collection 2)
+  - name: Sentinel -2A, -2B and -2C and Observational Attributes (Collection 3)
     link: /data/category/dea-surface-reflectance/
 
 collections:
