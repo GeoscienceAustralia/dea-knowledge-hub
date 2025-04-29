@@ -4,7 +4,7 @@ Intertidal zones are coastal environments exposed to both air and water, at low 
 They also characterise critical coastal habitats and ecosystems, and support a wide range of species and ecosystem-services.
 Increasingly though, these dynamic environments are faced with threats from land reclaimation, coastal erosion and rising sea levels, amongst others.
 
-The ever-changing nature of the tides makes it hard to systematically capture consistent imagery of the intertidal zone, particularly across large regions and especially in remote areas of the country.
+The ever-changing nature of the tides makes it difficult to systematically capture consistent imagery of the intertidal zone, particularly across large regions and especially in remote areas of the country.
 [Geomedian statistical techniques](https://knowledge.dea.ga.gov.au/data/product/dea-geometric-median-and-median-absolute-deviation-landsat/) provide a robust method to combine tide-attributed time-series satellite imagery and produce representative and artefact free imagery 'composites' of Australia's coastal high and low tide environments.
 
 ## Applications
@@ -26,7 +26,7 @@ Tidal attribution allows the imagery archive to be sorted by tide height rather 
 
 Spatially and temporally aligned to the [DEA Intertidal product suite](https://knowledge.dea.ga.gov.au/data/product/dea-intertidal/), DEA Tidal Composites are an annually updated data suite, generated from rolling 3-year epochs, with a minimum of 10 m spatial resolution.
 
-DEA Tidal Composites include 25 layers of data, separated into lowtide, hightide and quality assurance categories. Lowtide and hightide layers represent composites of the synthetic geomedian surface reflectance from Sentinel-2A, -2B and -2C analysis-ready data streams. The geomedian calculation maintains the spectral relationships between bands, ensuring that the DEA Tidal Composites product delivers robust and valid surface reflectance spectra suitable for uses such as habitat mapping (Li et al., 2012; Roberts et al., 2017) and delivers cloud free and noise reduced visualisation of the shallow water and intertidal coastal regions of Australia (Sagar et al., 2018). Quality assurance layers are provided to support interpretation of the lowtide and hightide datasets and include the tide-height thresholds above and below which associated images were included in the compositing process and the count of clear input images that contributed to each pixel in the composites.
+DEA Tidal Composites include low and high tide imagery products and their associated quality assurance layers. Lowtide and hightide layers represent composites of the synthetic geomedian surface reflectance from Sentinel-2A, -2B and -2C analysis-ready data streams. The geomedian calculation maintains the spectral relationships between bands, ensuring that the DEA Tidal Composites product delivers robust and valid surface reflectance spectra suitable for uses such as habitat mapping (Li et al., 2012; Roberts et al., 2017) and delivers cloud free and noise reduced visualisation of the shallow water and intertidal coastal regions of Australia (Sagar et al., 2018). Quality assurance layers are provided to support interpretation of the lowtide and hightide datasets and include the tide-height thresholds above and below which associated images were included in the compositing process and the count of clear input images that contributed to each pixel in the composites.
 
 ## Features
 
