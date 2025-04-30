@@ -1,6 +1,14 @@
 % See the DEA Tech Alerts documentation:
 % https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/tech_alerts_changelog.html
 
+## 30 Apr 2025: DEA Coastlines 3.0 and 2024 data are now available 
+
+* Digital Earth Australia has released v3.0.0 of its [DEA Coastlines](/data/product/dea-coastlines/) product. 
+* This updated v3.0.0 release incorporates improved ensemble tidal modelling into the product workflow using DEA’s [eo-tides](https://github.com/GeoscienceAustralia/eo-tides) package. 
+* The DEA Coastlines 3.0 release also includes 2024 calendar year data. 
+
+[View the Tech Alert](https://communication.ga.gov.au/link/id/zzzz6811a2b8e79e7668Pzzzz6567c8b713b5b826/page.html)
+
 ## 30 Apr 2025: DEA Terrestrial products 2024 calendar year updates now available
 
 Digital Earth Australia (DEA) has released its 2024 calendar year data for its terrestrial products, including:  
