@@ -1,8 +1,8 @@
 ## Changelog
 
-### DEA Coastlines 3.0.0
+### DEA Coastlines 3.0.0 and 2024 annual data
 
-In April 2025, the DEA Coastlines product [was upgraded to version 3.0.0](https://github.com/GeoscienceAustralia/dea-coastlines/releases/tag/3.0.0). The major improvement in this release is the application of [Ensemble Tidal Modelling](/data/product/dea-coastlines/?tab=description#ensemble-tidal-modelling) to the calculation of all shorelines from 1988 to 2024.
+In April 2025, the DEA Coastlines product [was upgraded to version 3.0.0](https://github.com/GeoscienceAustralia/dea-coastlines/releases/tag/3.0.0). The major improvement in this release is the application of [Ensemble Tidal Modelling](/data/product/dea-coastlines/?tab=description#ensemble-tidal-modelling) to the calculation of all shorelines from 1988 to 2024. The release also includes the 2024 annual data. You are now able to [access the latest data](./?tab=access) via DEA Maps and other methods. [View the Tech Alert](https://communication.ga.gov.au/link/id/zzzz6811a2b8e79e7668Pzzzz6567c8b713b5b826/page.html).
 
 ### DEA Coastlines 2.2.0
 
