@@ -1,6 +1,21 @@
 % See the DEA Tech Alerts documentation:
 % https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/tech_alerts_changelog.html
 
+## 30 Apr 2025: DEA Terrestrial products 2024 calendar year updates now available
+
+Digital Earth Australia (DEA) has released its 2024 calendar year data for its terrestrial products, including:  
+
+* [DEA Fractional Cover](/data/product/dea-fractional-cover-landsat/)
+* [DEA Geometric Median and Median Absolute Deviation (GeoMAD)](/data/product/dea-geometric-median-and-median-absolute-deviation-landsat/)
+* [DEA Land Cover](/data/product/dea-land-cover-landsat/)
+* [DEA Tasseled Cap Percentiles](/data/product/dea-tasseled-cap-percentiles-landsat/)
+* [DEA Water Observations](/data/product/dea-water-observations-landsat/)
+* [DEA Mangroves](/data/product/dea-mangroves/)
+
+You are now able to access the 2024 calendar year data via [DEA Maps](https://maps.dea.ga.gov.au/) and the DEA Knowledge Hub. 
+
+[View the Tech Alert](https://communication.ga.gov.au/link/id/zzzz6811775c5a24b812Pzzzz6567c8b713b5b826/page.html)
+
 ## 22 Apr 2025: DEA Sandbox technical review update
 
 :::{admonition} Access request form
