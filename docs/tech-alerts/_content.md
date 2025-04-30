@@ -1,6 +1,10 @@
 % See the DEA Tech Alerts documentation:
 % https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/tech_alerts_changelog.html
 
+## 1 May 2025: Missing Sentinel-2C data on AWS datacube is being restored
+
+We are aware that some [Sentinel-2C](/data/category/sentinel-2c-analysis-ready-data/) data is missing from the AWS datacube, primarily from January and February 2025. We are working to restore this data as soon as possible. We're sorry for any inconvenience this may cause.
+
 ## 30 Apr 2025: DEA Coastlines 3.0 and 2024 data are now available
 
 * Digital Earth Australia has released v3.0.0 of its [DEA Coastlines](/data/product/dea-coastlines/) product. 
