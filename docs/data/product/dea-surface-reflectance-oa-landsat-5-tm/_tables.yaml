@@ -143,7 +143,7 @@ bands_table:
     nodata: NaN
     units: null
     type: float32
-    description: null
+    description: An array of sensor (viewing) azimuth angles in degrees.
   - name: oa_satellite_view
     aliases:
       - satellite_view
@@ -151,7 +151,7 @@ bands_table:
     nodata: NaN
     units: null
     type: float32
-    description: null
+    description: An array of sensor (viewing) zenith angles in degrees.
   - name: oa_solar_azimuth
     aliases:
       - solar_azimuth
@@ -159,7 +159,7 @@ bands_table:
     nodata: NaN
     units: null
     type: float32
-    description: null
+    description: An array of solar azimuth angles in degrees.
   - name: oa_solar_zenith
     aliases:
       - solar_zenith
@@ -167,7 +167,7 @@ bands_table:
     nodata: NaN
     units: null
     type: float32
-    description: null
+    description: An array of solar zenith angles in degrees.
   - name: oa_time_delta
     aliases:
       - time_delta
