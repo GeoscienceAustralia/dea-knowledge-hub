@@ -9,10 +9,8 @@ To view and access the data interactively:
 
 2) Click `Explore map data`.
 
-3) Select `Sea, ocean and coast` > `DEA High and Low Tide Imagery (HLTC)` > `DEA Low Tide Imagery (Landsat)`. 
+3) Select `Sea, ocean and coast` > `DEA Tidal Composites` > `DEA Tidal Composites (Sentinel-2)`. 
 4) Click `Add to the map`, or the `+` symbol to add the data to the map.
-
-5) Select `Sea, ocean and coast` > `DEA High and Low Tide Imagery (HLTC)` > `DEA High Tide Imagery (Landsat)`. 
-6) Click `Add to the map`, or the `+` symbol to add the data to the map.
+5) Explore using the `Time` and `Styles` options in the left-hand workbench
 :::
 
