@@ -7,6 +7,7 @@ cards:
     image: /_files/cmi/thumbnail_vertical.png
   - name: DEA Tidal Composites
     link: /data/product/dea-tidal-composites/
+    image: /_files/dea-tidal-composites/DEA_Tidal_Composite_Low_True-colour_2023_Buccaneer-Archipelago-Island_WA.png
     #image: /_files/cmi/HLTCv2.png
   - name: DEA Intertidal
     link: /data/product/dea-intertidal/
