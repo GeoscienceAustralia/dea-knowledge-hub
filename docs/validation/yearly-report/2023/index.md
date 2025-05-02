@@ -49,9 +49,6 @@ based on the most recent measurements.
 :::{csv-table} Summary of field site captures
 :header-rows: 1
 
-2023-11-27 NSW1: Transect NSW Site 1, Landsat 9 and Sentinel-2B dual overpass
-2023-11-26 SA1: Transect South Australia Site 1, Landsat 8 overpass
-2023-09-22 MUL: Mullion, Landsat 8 overpass
 "Site capture (Date, Field site, Overpasses)","Latitude, Longitude (WGS84)","Instrument","Comments"
 "<a href='/validation/site-report/2023-01-17-MUL/'>2023-01-17 MUL: L9</a>","-35.122792, 148.86264","Hand-held ASD FR-4","Good matchup"
 "<a href='/validation/site-report/2023-04-22-MUL/'>2023-04-22 MUL: S-2B</a>","-35.123137, 148.86276","Hand-held ASD FR-4","Excellent matchup"
