@@ -18,24 +18,28 @@ The ever-changing nature of the tides makes it difficult to systematically captu
 ## What this product offers
 
 This product provides a suite of cloud-free composite Sentinel-2 satellite datasets that enable imaging of Australian coastal intertidal zones at both high and low tide. 
-Using a geometric median (geomedian), the highest and lowest 20% of observed tidal ranges in Digital Earth Australia (DEA)’s Sentinel-2 imagery archive are combined to deliver annual snapshots of Australian coastal high and low tide environments.
+Using a geometric median (geomedian), the highest and lowest 15 % of satellite-observed tide heights from the Digital Earth Australia (DEA) Sentinel-2 imagery archive are combined to deliver annual snapshots of Australian coastal high and low tide environments.
 
-Sentinel-2 satellite images are tidally attributed though pairing with pixel-based local tidal modelling, generated from a selected ensemble of the best performing global tide models under local conditions.
+Sentinel-2 satellite images are tidally attributed though pairing with pixel-based tidal modelling, generated from a selected ensemble of the best performing global tide models under local conditions.
 The [ensemble tidal modelling](ensemble-tidal-modelling) approach was implemented to account for the varying performance and biases of existing global ocean tide models across the complex tidal regimes and coastal regions of Australia.
-Tidal attribution allows the imagery archive to be sorted by tide height rather than date, so the intertidal zone can be visualised during any stage of the tide regime.  
+Tidal attribution allows the imagery archive to be sorted by tide height rather than date, enabling visualisation of the intertidal zone during any stage of the tidal cycle.  
 
 Spatially and temporally aligned to the [DEA Intertidal product suite](https://knowledge.dea.ga.gov.au/data/product/dea-intertidal/), DEA Tidal Composites are an annually updated data suite, generated from rolling 3-year epochs, at a 10 m spatial resolution.
 
-DEA Tidal Composites include low and high tide imagery products and their associated quality assurance layers. Lowtide and hightide layers represent composites of the synthetic geomedian surface reflectance from Sentinel-2A, -2B and -2C analysis-ready data streams. The geomedian calculation maintains the spectral relationships between bands, ensuring that the DEA Tidal Composites product delivers robust and valid surface reflectance spectra suitable for uses such as habitat mapping (Li et al., 2012; Roberts et al., 2017) and delivers cloud free and noise reduced visualisation of the shallow water and intertidal coastal regions of Australia (Sagar et al., 2018). Quality assurance layers are provided to support interpretation of the lowtide and hightide datasets and include the tide-height thresholds above and below which associated images were included in the compositing process and the count of clear input images that contributed to each pixel in the composites.
+DEA Tidal Composites include low and high tide imagery products and their associated quality assurance layers. 
+Lowtide and hightide layers represent composites of the synthetic geomedian surface reflectance from Sentinel-2A, -2B and -2C analysis-ready data streams. 
+The geomedian calculation maintains the spectral relationships between bands (Roberts et al., 2017), ensuring that the DEA Tidal Composites product delivers robust and valid surface reflectance spectra suitable for uses such as habitat mapping (Li et al., 2012) and delivers cloud free and noise reduced visualisation of the shallow water and intertidal coastal regions of Australia (Sagar et al., 2018). 
+Quality assurance layers are provided to support interpretation of the lowtide and hightide datasets and include the tide-height thresholds above and below which associated images were included in the compositing process and the count of clear input images that contributed to each pixel in the composites.
 
 ## Features
 
-The DEA Tidal Composites product is a 25-band mosaic, consistent with Sentinel-2, produced to allow visualisation of the shallow water and intertidal coastal regions as observed at high or low tide. It is continental (coastal) in coverage and includes geomedian surface reflectance, along with pixel level metadata for each of the high and low tide mosaics.
+The DEA Tidal Composites product is a 25-band mosaic, consistent with Sentinel-2, and produced to allow visualisation of the shallow water and intertidal coastal regions as observed at high or low tide. 
+It is continental (coastal) in coverage and includes geomedian surface reflectance, along with pixel level metadata for each of the high and low tide mosaics.
 
 The [file naming convention](https://knowledge.dea.ga.gov.au/guides/reference/collection_3_naming/#different-types-of-products) is as follows:
 
 ```
-[ORGANISATION]_[PLATFORM]_[PRODUCT]_[REPORTING PERIOD]_[COLLECTION]_[TILE REFERENCE]--[DATA PERIOD]_[PRODUCT STATUS]_[BAND NAME].[FILE EXTENSION]
+[ORGANISATION]_[PLATFORM]_[PRODUCT]_[REPORTING PERIOD]_[COLLECTION]_[TILE REFERENCE]_[DATA DATE]--[DATA PERIOD]_[PRODUCT STATUS]_[BAND NAME].[FILE EXTENSION]
 ```
 
 For example:
@@ -60,11 +64,17 @@ See the attributes of these layers in the [Specifications tab](./?tab=specificat
 
 ### Low tide composites
 
-11 bands, prefixed with `low` in the product file name, are delivered in the spectral and spatial resolution of the Sentinel-2 band set and are detailed in the [Specifications tab](./?tab=specifications). Each band represents synthetic data, derived from the geomedian calculation of the input Sentinel-2 satellite data from the lowest 20 % of observed tides during each 3-year analysis epoch. Maintenance of the spectral relationships between geomedian bands ensures they can be combined to produce lowtide imagery and analysis in coastal environments. 
+11 bands, prefixed by `low` in the product file name, are delivered in the spectral resolution of the Sentinel-2 band set. 
+All bands are reported at 10 m spatial resolution and are detailed in the [Specifications tab](./?tab=specifications). 
+Each band represents synthetic data, derived from the geomedian calculation of the input Sentinel-2 satellite data from the lowest 15 % of satellite-observed tide heights during each 3-year analysis epoch. 
+Maintenance of the spectral relationships between geomedian bands ensures they can be combined to produce lowtide imagery and analysis in coastal environments. 
 
 ### High tide composites
 
-11 bands, prefixed with `high` in the product file name, are delivered in the spectral and spatial resolution of the Sentinel-2 band set and are detailed in the [Specifications tab](./?tab=specifications). Each band represents synthetic data, derived from the geomedian calculation of the input Sentinel-2 satellite data from the highest 20 % of observed tides during each 3-year analysis epoch. Maintenance of the spectral relationships between geomedian bands ensures they can be combined to produce hightide imagery and analysis in coastal environments.
+11 bands, prefixed by `high` in the product file name, are delivered in the spectral resolution of the Sentinel-2 band set.
+All bands are reported at 10 m spatial resolution and are detailed in the [Specifications tab](./?tab=specifications). 
+Each band represents synthetic data, derived from the geomedian calculation of the input Sentinel-2 satellite data from the highest 15 % of satellite-observed tide heights during each 3-year analysis epoch. 
+Maintenance of the spectral relationships between geomedian bands ensures they can be combined to produce hightide imagery and analysis in coastal environments.
 
 ### Quality assurance
 
@@ -72,21 +82,32 @@ Three bands are delivered to provide quality assurance with DEA Tidal Composites
 
 #### Low threshold
 
-A pixel-based quality assurance layer, identifying the lowest 20th percentile observed tide height. All satellite observations associated with tide heights lower than this value, per-pixel, are included in the lowtide geomedian composites.
+A pixel-based quality assurance layer, identifying the lowest 15th percentile satellite-observed tide height. 
+All satellite observations associated with tide heights lower than this value, per-pixel, are included in the lowtide geomedian composites.
+Pixels with less than 20 clear observations are gapfilled up to 20 with the next lowest satellite-observed tide height observations to ensure sufficient data density to produce a clear composite image.
+When a pixel is gapfilled, the highest tide height is reported in the `Low threshold` layer.
 
 #### High threshold
 
-A pixel-based quality assurance layer, identifying the highest 20th percentile observed tide height. All satellite observations associated with tide heights higher than this value, per-pixel, are included in the hightide geomedian composites.
+A pixel-based quality assurance layer, identifying the highest 15th percentile satellite-observed tide height. 
+All satellite observations associated with tide heights higher than this value, per-pixel, are included in the hightide geomedian composites.
+Pixels with less than 20 clear observations are gapfilled up to 20 with the next highest satellite-observed tide height observations to ensure sufficient data density to produce a clear composite image.
+When a pixel is gapfilled, the lowest tide height is reported in the `High threshold` layer.
 
 #### Count clear
 
-A pixel-based quality assurance layer, identifying the number of clear satellite observations in 20 percent of all observations per-pixel. This represents the number of clear observations per-pixel that are used in both the high and low tide composites.
+The `Count clear` pixel-based quality assurance layer represents the number of clear observations per-pixel that are used in both the high and low tide composites.
+The layer typically identifies the number of clear satellite observations in 15 percent of all observations per-pixel. 
+When the observation count in 15 percent of all observations is less than 20, the nearest tide-height observations are used to gapfill up to a count of 20 clear observations.
 
 ## Ensemble tide modelling
 
-The Ensemble Tidal Modelling approach was implemented to account for the varying [performance and biases](https://knowledge.dea.ga.gov.au/data/product/dea-intertidal/?tab=description#ensemble-tidal-modelling) of existing global ocean tide models across the complex tidal regimes and coastal regions of Australia. The ensemble process utilises ancillary data to select and weight tidal models at any given coastal location, based on how well each model correlates with local satellite-observed patterns of tidal inundation, and water levels measured by satellite altimetry. A single ensemble tidal output was generated by combining the top 3 locally optimal models, and then used for all downstream product workflows.
+The Ensemble Tidal Modelling approach was implemented to account for the varying [performance and biases](https://knowledge.dea.ga.gov.au/data/product/dea-intertidal/?tab=description#ensemble-tidal-modelling) of existing global ocean tide models across the complex tidal regimes and coastal regions of Australia. 
+The ensemble process utilises ancillary data to select and weight tidal models at any given coastal location, based on how well each model correlates with local satellite-observed patterns of tidal inundation, and water levels measured by satellite altimetry. 
+A single ensemble tidal output was generated by combining the top 3 locally optimal models, and then used for all downstream product workflows.
 
-Ensemble tide modelling was implemented in the [eo-tides](https://github.com/GeoscienceAustralia/eo-tides) Python package which integrates satellite Earth observation data with tide modelling, leveraging tide modelling functionality from the [pyTMD](https://github.com/tsutterley/pyTMD) package. The ensemble was based on 10 commonly-used global ocean tidal models:
+Ensemble tide modelling was implemented in the [eo-tides](https://github.com/GeoscienceAustralia/eo-tides) Python package which integrates satellite Earth observation data with tide modelling, leveraging tide modelling functionality from the [pyTMD](https://github.com/tsutterley/pyTMD) package. 
+The ensemble was based on 10 commonly-used global ocean tidal models:
 
 * Empirical Ocean Tide Model (EOT20; Hart-Davis et al., 2021)
 * Finite Element Solution tide models (FES2012, FES2014, FES2022; Carrère et al., 2012; Lyard et al., 2021; Carrère et al., 2022)
@@ -95,15 +116,15 @@ Ensemble tide modelling was implemented in the [eo-tides](https://github.com/Geo
 
 ## Lineage
 
-The product has been developed to provide a geomedian composite dataset of coastal regions of Australia for the highest and lowest 20% of the observed tidal range in the Sentinel-2 catalogue, enabling both visualisation and spectral analysis. Coastal Sentinel-2 observations are composited relative to tidal modelling of the Australian coastline using an ensemble of global tide models, leveraging python packages [eo-tides](https://github.com/GeoscienceAustralia/eo-tides) and [pyTMD](https://github.com/tsutterley/pyTMD).
+The product has been developed to provide a geomedian composite dataset of coastal regions of Australia for the highest and lowest 15 % of satellite-observed tides in the Sentinel-2 catalogue, enabling both visualisation and spectral analysis. 
+Coastal Sentinel-2 observations are composited relative to tidal modelling of the Australian coastline using an ensemble of global tide models, leveraging python packages [eo-tides](https://github.com/GeoscienceAustralia/eo-tides) and [pyTMD](https://github.com/tsutterley/pyTMD).
 
 ## Processing steps
 
 1. Load and pre-process data
-    - [Load](https://github.com/GeoscienceAustralia/dea-intertidal/blob/develop/intertidal/io.py#L166) analysis ready satellite data from Sentinel-2A, -2B and -2C
-    - Filter based on [geometric quality assessment](https://knowledge.dea.ga.gov.au/notebooks/DEA_products/DEA_Sentinel2_Surface_Reflectance/#Filtering-by-metadata-to-remove-poorly-georeferenced-scenes) to remove poorly georeferenced scenes
+    - [Load](https://github.com/GeoscienceAustralia/dea-intertidal/blob/develop/intertidal/io.py#L166) analysis ready satellite data from Sentinel-2A, -2B and -2C for the epoch of interest
     - Remove [sunglinted](https://github.com/GeoscienceAustralia/dea-notebooks/blob/develop/Tools/dea_tools/coastal.py#L2327) pixels by masking out pixels with glint angles less than 20 degrees
-    - Proceed with tide modelling and geomedian calculation only if the time-series of input satellite images has 20 or more observations
+    - Proceed with tide modelling and geomedian calculation only if the full time-series of input satellite images has 50 or more observations
 2. Calculate high and low tide geomedian composites
 
     - [Model tide heights](https://github.com/GeoscienceAustralia/eo-tides/blob/main/eo_tides/eo.py#L306) for the spatial extent and timesteps of the loaded satellite data array
