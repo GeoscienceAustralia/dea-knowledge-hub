@@ -12,7 +12,7 @@ and presents aggregate validation results to the end of this quarter.
 
 * During this quarter, a total of 3 measurements were taken across 1 field site, to capture 5 overpasses.
 * Validation of Landsat 8 and Sentinel-2A remained the same, as no new overpasses were captured during this quarter.
-* Validation of iLandsat 9 and Sentinel-2B both improved.
+* Validation of Landsat 9 and Sentinel-2B both improved.
 * On an averaged band-by-band basis, Landsat 8 is validated to 2.4%, Landsat 9 is validated to 10.7%, Sentinel-2A is validated to 2.2% and Sentinel-2B is validated to 2.4%.
 
 ## Introduction
