@@ -4,7 +4,7 @@
 
 short_name: DEA Tidal Composites
 full_technical_name: "Geoscience Australia Sentinel-2 Tidal Composites Calendar Year Collection 3"
-#header_image: /_files/cmi/HLTCv2.png #TODO
+header_image: /_files/dea-tidal-composites/DEA_Tidal_Composite_Low_True-colour_2022_Montgomery-Reef_WA_cropped.png
 
 version_number: 1.0.0
 is_latest_version: true
