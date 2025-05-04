@@ -72,7 +72,7 @@ extensions = [
     "sphinx.ext.mathjax",
     "sphinx.ext.napoleon",
     "myst_parser",
-    "nbsphinx",
+    # "nbsphinx",
     "sphinx_design",
     "sphinxext.rediraffe",
     "sphinxcontrib.datatemplates",
