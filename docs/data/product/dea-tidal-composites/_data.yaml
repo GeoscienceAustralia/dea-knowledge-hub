@@ -61,29 +61,27 @@ tags:
   - high_and_low_tide_composites
   - hltc
 
-## Access #TODO
+# Access #TODO
 
-#access_links_maps:
-#  - link: https://maps.dea.ga.gov.au/#share=s-7YeWZKqWkF0Ctv5Av8RkHSWeNzQ
-#    name: See it on a map
+access_links_maps:
+  - link: https://maps.dea.ga.gov.au # TODO - update sharelink or storymap link
+    name: See it on a map
 
-#access_links_explorers:
-#  - link: https://explorer.dea.ga.gov.au/products/high_tide_comp_20p
-#    name: High tide data explorer
-#  - link: https://explorer.dea.ga.gov.au/products/low_tide_comp_20p
-#    name: Low tide data explorer
+access_links_explorers:
+  - link: https://explorer.dea.ga.gov.au/products/ga_s2_tidal_composites_cyear_3
+    name: DEA Tidal Composites explorer
 
 #access_links_data:
 #  - link: https://thredds.nci.org.au/thredds/catalog/catalogs/fk4/hltc_2_0.html
 #    name: Access the data on NCI
 
 #access_links_code_examples:
-#  - link: /notebooks/DEA_products/DEA_High_and_Low_Tide_Imagery/
+#  - link: /notebooks/DEA_products/DEA_High_and_Low_Tide_Imagery/ # TODO - update notebook
 #    name: null
 
-#access_links_web_services:
-#  - link: https://ows.dea.ga.gov.au/
-#    name: Web Map Service (WMS)
+access_links_web_services:
+  - link: https://ows.dea.ga.gov.au/
+    name: Web Map Service (WMS)
 
 #access_links_custom: null
 
