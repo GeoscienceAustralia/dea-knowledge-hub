@@ -66,20 +66,20 @@ html_permalinks = True
 html_last_updated_fmt = '%-d %B %Y' # E.g. 1 January 2020
 
 extensions = [
-    # "sphinx.ext.autodoc",
-    # "sphinx.ext.autosummary",
-    # "sphinx.ext.viewcode",
-    # "sphinx.ext.mathjax",
-    # "sphinx.ext.napoleon",
+    "sphinx.ext.autodoc",
+    "sphinx.ext.autosummary",
+    "sphinx.ext.viewcode",
+    "sphinx.ext.mathjax",
+    "sphinx.ext.napoleon",
     "myst_parser",
     # "nbsphinx",
     "sphinx_design",
     # "sphinxext.rediraffe",
-    # "sphinxcontrib.datatemplates",
-    # "sphinx_external_toc",
-    # "sphinx_sitemap",
-    # "notfound.extension",
-    # "sphinx_copybutton",
+    "sphinxcontrib.datatemplates",
+    "sphinx_external_toc",
+    "sphinx_sitemap",
+    "notfound.extension",
+    "sphinx_copybutton",
 ]
 
 myst_enable_extensions = [
