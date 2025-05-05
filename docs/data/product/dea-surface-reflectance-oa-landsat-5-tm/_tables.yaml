@@ -93,9 +93,9 @@ bands_table:
       - azimuthal_incident
     resolution: 30
     nodata: NaN
-    units: null
+    units: Degrees
     type: float32
-    description: null
+    description: "Azimuthal incident: The angle between true north and the incident direction in the slope geometry."
   - name: oa_combined_terrain_shadow
     aliases:
       - combined_terrain_shadow
@@ -109,17 +109,17 @@ bands_table:
       - exiting_angle
     resolution: 30
     nodata: NaN
-    units: null
+    units: Degrees
     type: float32
-    description: null
+    description: "Exiting angle: The angle between a ray reflected from a surface and the line perpendicular to the surface at the point of emergence."
   - name: oa_incident_angle
     aliases:
       - incident_angle
     resolution: 30
     nodata: NaN
-    units: null
+    units: Degrees
     type: float32
-    description: null
+    description: "Incident angle: The angle between a ray incident on a surface and the line perpendicular to the surface at the point of incidence."
   - name: oa_relative_azimuth
     aliases:
       - relative_azimuth
@@ -141,9 +141,9 @@ bands_table:
       - satellite_azimuth
     resolution: 30
     nodata: NaN
-    units: null
+    units: Degrees
     type: float32
-    description: An array of sensor (viewing) azimuth angles in degrees.
+    description: "Satellite azimuth: The angle of the satellite’s position from true north; i.e. the angle between true north and a vertical circle passing through the satellite and the point being imaged on Earth."
   - name: oa_satellite_view
     aliases:
       - satellite_view
