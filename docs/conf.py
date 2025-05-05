@@ -89,7 +89,8 @@ myst_enable_extensions = [
     "dollarmath",
 ]
 myst_heading_anchors = 6
-myst_all_links_external = False
+# myst_all_links_external = False
+myst_url_schemes = ["http", "https", "ftp", "mailto", "root"]
 
 nbsphinx_requirejs_path = ""
 nbsphinx_execute = "never"
