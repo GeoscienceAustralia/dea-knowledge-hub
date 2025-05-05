@@ -123,14 +123,15 @@ Coastal Sentinel-2 observations are composited relative to tidal modelling of th
 
 1. Load and pre-process data
     - [Load](https://github.com/GeoscienceAustralia/dea-intertidal/blob/develop/intertidal/io.py#L166) analysis ready satellite data from Sentinel-2A, -2B and -2C for the epoch of interest
-    - Remove [sunglinted](https://github.com/GeoscienceAustralia/dea-notebooks/blob/develop/Tools/dea_tools/coastal.py#L2327) pixels by masking out pixels with glint angles less than 20 degrees
+    - Remove [sunglinted](https://github.com/GeoscienceAustralia/dea-notebooks/blob/develop/Tools/dea_tools/coastal.py#L2327) pixels by masking out pixels with acquisition angles of less than 20 degrees
     - Proceed with tide modelling and geomedian calculation only if the full time-series of input satellite images has 50 or more observations
 2. Calculate high and low tide geomedian composites
-
     - [Model tide heights](https://github.com/GeoscienceAustralia/eo-tides/blob/main/eo_tides/eo.py#L306) for the spatial extent and timesteps of the loaded satellite data array
-    - Attribute tide heights to the valid satellite observations and calculate the satellite observed tide range
-    - Calculate the [quantile](https://github.com/opendatacube/odc-algo/blob/main/odc/algo/_percentile.py#L85) tide range and identify the absolute tide value thresholds associated with the top and bottom 20th percentiles of the tide range
-    - Select satellite observations below and above the low and high tide thresholds. Calculate a [geomedian](https://github.com/opendatacube/odc-algo/blob/main/odc/algo/_geomedian.py#L188) on each subset and count the contributing number of clear observations.
+    - Attribute tide heights to the valid satellite observations
+    - Rank all observations by ascending tide height
+    - Select the observations in the top and bottom 15 percent of satellite observed tide heights by identifying their associated tide height rankings
+    - If the number of observations in the top and bottom 15 percent is less than 20, gapfill up to 20 by taking the next highest or lowest tide heights from the full stack of satellite observations respectively
+    - Calculate a [geomedian](https://github.com/opendatacube/odc-algo/blob/main/odc/algo/_geomedian.py#L188) on each subset and count the contributing number of clear observations.
 
 
 ## References
