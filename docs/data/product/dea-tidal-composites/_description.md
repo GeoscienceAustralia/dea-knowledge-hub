@@ -82,23 +82,23 @@ Three bands are delivered to provide quality assurance with DEA Tidal Composites
 
 #### Low threshold
 
-A pixel-based quality assurance layer, identifying the lowest 15th percentile satellite-observed tide height. 
-All satellite observations associated with tide heights lower than this value, per-pixel, are included in the lowtide geomedian composites.
-Pixels with less than 20 clear observations are gapfilled up to 20 with the next lowest satellite-observed tide height observations to ensure sufficient data density to produce a clear composite image.
-When a pixel is gapfilled, the highest tide height is reported in the `Low threshold` layer.
+A pixel-based quality assurance layer, identifying the maximum tide height included in the low tide composite.
+Usually, this value corresponds to the lowest 15th percentile satellite-observed tide height. 
+Pixels with less than 20 clear observations in this 15th percentile range are gapfilled up to 20 with the next lowest satellite-observed tide height observations to ensure sufficient data density to produce a clear composite image.
+When a pixel is gapfilled, the highest gapfilled tide height is reported for that pixel in the `Low threshold` layer.
 
 #### High threshold
 
-A pixel-based quality assurance layer, identifying the highest 15th percentile satellite-observed tide height. 
-All satellite observations associated with tide heights higher than this value, per-pixel, are included in the hightide geomedian composites.
-Pixels with less than 20 clear observations are gapfilled up to 20 with the next highest satellite-observed tide height observations to ensure sufficient data density to produce a clear composite image.
-When a pixel is gapfilled, the lowest tide height is reported in the `High threshold` layer.
+A pixel-based quality assurance layer, identifying the minimum tide height included in the high tide composite.
+Usually, this value corresponds to the highest 15th percentile satellite-observed tide height. 
+Pixels with less than 20 clear observations in this 15th percentile range are gapfilled up to 20 with the next highest satellite-observed tide height observations to ensure sufficient data density to produce a clear composite image.
+When a pixel is gapfilled, the lowest gapfilled tide height is reported for that pixel in the `High threshold` layer.
 
 #### Count clear
 
 The `Count clear` pixel-based quality assurance layer represents the number of clear observations per-pixel that are used in both the high and low tide composites.
 The layer typically identifies the number of clear satellite observations in 15 percent of all observations per-pixel. 
-When the observation count in 15 percent of all observations is less than 20, the nearest tide-height observations are used to gapfill up to a count of 20 clear observations.
+When the observation count in 15 percent of all observations is less than 20, the nearest tide-height observations are used to gapfill up to a count of 20 clear observations, if available.
 
 ## Ensemble tide modelling
 
@@ -123,7 +123,7 @@ Coastal Sentinel-2 observations are composited relative to tidal modelling of th
 
 1. Load and pre-process data
     - [Load](https://github.com/GeoscienceAustralia/dea-intertidal/blob/develop/intertidal/io.py#L166) analysis ready satellite data from Sentinel-2A, -2B and -2C for the epoch of interest
-    - Remove [sunglinted](https://github.com/GeoscienceAustralia/dea-notebooks/blob/develop/Tools/dea_tools/coastal.py#L2327) pixels by masking out pixels with acquisition angles of less than 20 degrees
+    - Remove [sunglinted](https://github.com/GeoscienceAustralia/dea-notebooks/blob/develop/Tools/dea_tools/coastal.py#L2327) pixels by masking out pixels with glint angles of less than 20 degrees
     - Proceed with tide modelling and geomedian calculation only if the full time-series of input satellite images has 50 or more observations
 2. Calculate high and low tide geomedian composites
     - [Model tide heights](https://github.com/GeoscienceAustralia/eo-tides/blob/main/eo_tides/eo.py#L306) for the spatial extent and timesteps of the loaded satellite data array
