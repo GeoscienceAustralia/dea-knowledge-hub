@@ -157,17 +157,17 @@ bands_table:
       - solar_azimuth
     resolution: 30
     nodata: NaN
-    units: null
+    units: Degrees
     type: float32
-    description: An array of solar azimuth angles in degrees.
+    description: The angle of the sun’s position from true north; i.e. the angle between true north and a vertical circle passing through the sun and the point being imaged on Earth.
   - name: oa_solar_zenith
     aliases:
       - solar_zenith
     resolution: 30
     nodata: NaN
-    units: null
+    units: Degrees
     type: float32
-    description: An array of solar zenith angles in degrees.
+    description: The angle between the zenith and the centre of the sun’s disc.
   - name: oa_time_delta
     aliases:
       - time_delta
