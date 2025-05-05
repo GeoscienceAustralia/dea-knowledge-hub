@@ -149,9 +149,9 @@ bands_table:
       - satellite_view
     resolution: 30
     nodata: NaN
-    units: null
+    units: Degrees
     type: float32
-    description: An array of sensor (viewing) zenith angles in degrees.
+    description: "Satellite view or satellite zenith: The angle between the zenith and the satellite. (The zenith is the point in the sky or celestial sphere directly above the point being imaged on Earth.)"
   - name: oa_solar_azimuth
     aliases:
       - solar_azimuth
@@ -159,7 +159,7 @@ bands_table:
     nodata: NaN
     units: Degrees
     type: float32
-    description: The angle of the sun’s position from true north; i.e. the angle between true north and a vertical circle passing through the sun and the point being imaged on Earth.
+    description: "Solar azimuth: The angle of the sun’s position from true north; i.e. the angle between true north and a vertical circle passing through the sun and the point being imaged on Earth."
   - name: oa_solar_zenith
     aliases:
       - solar_zenith
