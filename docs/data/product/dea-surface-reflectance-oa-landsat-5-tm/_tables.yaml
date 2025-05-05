@@ -2,7 +2,7 @@
 
 # Bands
 
-bands_footnote: "For all 'nbart_' bands, Surface Reflectance is scaled between 0 and 10,000."
+bands_footnote: "For all 'nbart_' bands, Surface Reflectance is scaled between 0 and 10,000. For more information on these bands, see the `Description tab <./?tab=description>`_."
 
 bands_table:
   - name: nbart_blue
@@ -69,9 +69,9 @@ bands_table:
       - fmask
     resolution: 30
     nodata: 0
-    units: null
+    units: Classification
     type: uint8
-    description: null
+    description: "Fmask: This allows you to have pre-classified image content for use within their applications. Classifications: ``0`` = null; ``1`` = clear; ``2`` = cloud; ``3`` = cloud shadow; ``4`` = snow; ``5`` = water."
   - name: oa_nbart_contiguity
     aliases:
       - nbart_contiguity
@@ -79,7 +79,7 @@ bands_table:
     nodata: 255
     units: null
     type: uint8
-    description: null
+    description: "nbart-contiguity: "
   - name: oa_azimuthal_exiting
     aliases:
       - azimuthal_exiting
@@ -101,9 +101,9 @@ bands_table:
       - combined_terrain_shadow
     resolution: 30
     nodata: 255
-    units: null
+    units: Classification
     type: uint8
-    description: null
+    description: "combined-terrain-shadow: Terrain shadow. Classifications: ``0`` = terrain shadow; ``1`` = not terrain shadow."
   - name: oa_exiting_angle
     aliases:
       - exiting_angle
