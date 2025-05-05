@@ -85,9 +85,9 @@ bands_table:
       - azimuthal_exiting
     resolution: 30
     nodata: NaN
-    units: null
+    units: Degrees
     type: float32
-    description: null
+    description: "Azimuthal exiting: The angle between true north and the exiting direction in the slope geometry."
   - name: oa_azimuthal_incident
     aliases:
       - azimuthal_incident
@@ -125,17 +125,17 @@ bands_table:
       - relative_azimuth
     resolution: 30
     nodata: NaN
-    units: null
+    units: Degrees
     type: float32
-    description: null
+    description: "Relative azimuth: The relative azimuth angle between the sun and view directions."
   - name: oa_relative_slope
     aliases:
       - relative_slope
     resolution: 30
     nodata: NaN
-    units: null
+    units: Degrees
     type: float32
-    description: null
+    description: "Relative slope: The relative azimuth angle between the incident and exiting directions in the slope geometry."
   - name: oa_satellite_azimuth
     aliases:
       - satellite_azimuth
@@ -173,6 +173,7 @@ bands_table:
       - time_delta
     resolution: 30
     nodata: NaN
-    units: null
+    units: Seconds
     type: float32
-    description: null
+    description: "Timedelta: The time from satellite apogee (the point of orbit at which the satellite is furthest from the Earth)."
+
