@@ -79,7 +79,7 @@ bands_table:
     nodata: 255
     units: null
     type: uint8
-    description: "nbart-contiguity: "
+    description: "NBART contiguity: The spectrally contiguous pixels which have a valid observation in each spectral band. Classifications: ``0`` = non-contiguous; ``1`` = contiguous."
   - name: oa_azimuthal_exiting
     aliases:
       - azimuthal_exiting
@@ -103,7 +103,7 @@ bands_table:
     nodata: 255
     units: Classification
     type: uint8
-    description: "combined-terrain-shadow: Terrain shadow. Classifications: ``0`` = terrain shadow; ``1`` = not terrain shadow."
+    description: "Combined terrain shadow: Terrain shadow. Classifications: ``0`` = terrain shadow; ``1`` = not terrain shadow."
   - name: oa_exiting_angle
     aliases:
       - exiting_angle
