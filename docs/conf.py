@@ -62,7 +62,7 @@ if is_production: html_baseurl = "https://knowledge.dea.ga.gov.au/"
 elif is_pr_preview: html_baseurl = f"https://{pr_preview_subdomain}.khpreview.dea.ga.gov.au/"
 else: html_baseurl = ""
 
-html_permalinks = True
+html_permalinks = False
 html_last_updated_fmt = '%-d %B %Y' # E.g. 1 January 2020
 
 extensions = [
@@ -74,7 +74,7 @@ extensions = [
     "myst_parser",
     "nbsphinx",
     "sphinx_design",
-    # "sphinxext.rediraffe",
+    "sphinxext.rediraffe",
     "sphinxcontrib.datatemplates",
     "sphinx_external_toc",
     "sphinx_sitemap",
@@ -89,7 +89,7 @@ myst_enable_extensions = [
     "dollarmath",
 ]
 myst_heading_anchors = 6
-myst_all_links_external = False
+myst_all_links_external = True
 
 nbsphinx_requirejs_path = ""
 nbsphinx_execute = "never"
