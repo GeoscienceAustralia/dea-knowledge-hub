@@ -96,7 +96,11 @@ myst_url_schemes = {
     "https": None,
     "ftp": None,
     "mailto": None,
-    "root": "https://knowledge.dea.ga.gov.au/{{path}}#{{fragment}}",
+    "root": "https://knowledge.dea.ga.gov.au{{path}}#{{fragment}}",
+    "rootb": "{{path}}#{{fragment}}",
+    "rootc": "/{{path}}#{{fragment}}",
+    "rootd": "{{uri}}",
+    "roote": "/{{uri}}",
 }
 
 nbsphinx_requirejs_path = ""
