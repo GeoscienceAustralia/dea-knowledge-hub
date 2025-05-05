@@ -72,7 +72,7 @@ extensions = [
     "sphinx.ext.mathjax",
     "sphinx.ext.napoleon",
     "myst_parser",
-    "nbsphinx",
+    # "nbsphinx",
     "sphinx_design",
     # "sphinxext.rediraffe",
     "sphinxcontrib.datatemplates",
@@ -84,8 +84,8 @@ extensions = [
 
 myst_enable_extensions = [
     "colon_fence",
-    # "attrs_inline",
-    # "attrs_block",
+    "attrs_inline",
+    "attrs_block",
     "dollarmath",
 ]
 myst_heading_anchors = 6
