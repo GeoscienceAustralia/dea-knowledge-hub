@@ -90,7 +90,14 @@ myst_enable_extensions = [
 ]
 myst_heading_anchors = 6
 # myst_all_links_external = False
-myst_url_schemes = ["http", "https", "ftp", "mailto", "root"]
+# myst_url_schemes = ["http", "https", "ftp", "mailto", "root"]
+myst_url_schemes = {
+    "http": None,
+    "https": None,
+    "ftp": None,
+    "mailto": None,
+    "root": "https://knowledge.dea.ga.gov.au/{{path}}#{{fragment}}",
+}
 
 nbsphinx_requirejs_path = ""
 nbsphinx_execute = "never"
