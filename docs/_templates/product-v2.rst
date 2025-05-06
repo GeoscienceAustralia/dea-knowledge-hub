@@ -284,6 +284,14 @@
    :ref:`Test link DEA Maps 2 <#dea-maps>`
 
    :ref:`Test link DEA Maps 3 </guides/setup/dea_maps/>`
+
+   :doc:`Test link DEA Maps 4 </guides/setup/dea_maps/>`
+
+   :any:`Test link DEA Maps 5 <dea-maps>`
+
+   :any:`Test link DEA Maps 6 <#dea-maps>`
+
+   :any:`Test link DEA Maps 7 </guides/setup/dea_maps/>`
       
    .. include:: _overview_1.md
       :parser: myst_parser.sphinx_
