@@ -98,6 +98,8 @@ myst_url_schemes = {
     "mailto": None,
     "root": "/{{path}};{{params}}?{{query}}#{{fragment}}",
     "rootb": "/{{path}}#{{fragment}}",
+    "rootc": "/#{{uri}}",
+    "rootd": "/#{{uri}}",
 }
 
 nbsphinx_requirejs_path = ""
