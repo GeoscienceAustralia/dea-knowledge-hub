@@ -99,7 +99,7 @@ myst_url_schemes = {
     "root": "/{{path}};{{params}}?{{query}}#{{fragment}}",
     "rootb": "/{{path}}#{{fragment}}",
     "rootc": "/#{{uri}}",
-    "rootd": "/#{{uri}}",
+    "rootd": "/{{path}}?{{query}}#{{fragment}}",
 }
 
 nbsphinx_requirejs_path = ""
