@@ -72,7 +72,7 @@ bands_table:
     nodata: -999
     units: null
     type: int16
-    description: null
+    description: "NBART surface reflectance for the Shortwave Infrared (SWIR) 2 spectral band (wavelength: 2.11–2.29 µm)."
   - name: nbart_panchromatic
     aliases:
       - nbart_band08
