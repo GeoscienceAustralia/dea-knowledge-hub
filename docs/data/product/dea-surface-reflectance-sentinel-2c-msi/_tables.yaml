@@ -113,113 +113,113 @@ bands_table:
       - fmask
     resolution: 20
     nodata: 0
-    units: null
+    units: Classification
     type: uint8
-    description: null
+    description: "Fmask: A categorical classification layer produced using the automated Fmask ('Function of mask') algorithm, used to mask out unwanted observations in satellite imagery (e.g. cloud or shadow). Classification values: ``0`` = null; ``1`` = clear; ``2`` = cloud; ``3`` = cloud shadow; ``4`` = snow; ``5`` = water."
   - name: oa_nbart_contiguity
     aliases:
       - nbart_contiguity
     resolution: 10
     nodata: 255
-    units: null
+    units: Classification
     type: uint8
-    description: null
+    description: "NBART contiguity: A layer indicating whether each pixel is 'spectrally contiguous', meaning that it contains valid observations in every spectral band. Classification values: ``0`` = non-contiguous; ``1`` = contiguous."
   - name: oa_azimuthal_exiting
     aliases:
       - azimuthal_exiting
     resolution: 20
     nodata: NaN
-    units: null
+    units: Degrees
     type: float32
-    description: null
+    description: "Azimuthal exiting: The angle between true north and the exiting direction in the slope geometry."
   - name: oa_azimuthal_incident
     aliases:
       - azimuthal_incident
     resolution: 20
     nodata: NaN
-    units: null
+    units: Degrees
     type: float32
-    description: null
+    description: "Azimuthal incident: The angle between true north and the incident direction in the slope geometry."
   - name: oa_combined_terrain_shadow
     aliases:
       - combined_terrain_shadow
     resolution: 20
     nodata: 255
-    units: null
+    units: Classification
     type: uint8
-    description: null
+    description: "Combined terrain shadow: Terrain shadow. Classification values: ``0`` = terrain shadow; ``1`` = not terrain shadow."
   - name: oa_exiting_angle
     aliases:
       - exiting_angle
     resolution: 20
     nodata: NaN
-    units: null
+    units: Degrees
     type: float32
-    description: null
+    description: "Exiting angle: The angle between a ray reflected from a surface and the line perpendicular to the surface at the point of emergence."
   - name: oa_incident_angle
     aliases:
       - incident_angle
     resolution: 20
     nodata: NaN
-    units: null
+    units: Degrees
     type: float32
-    description: null
+    description: "Incident angle: The angle between a ray incident on a surface and the line perpendicular to the surface at the point of incidence."
   - name: oa_relative_azimuth
     aliases:
       - relative_azimuth
     resolution: 20
     nodata: NaN
-    units: null
+    units: Degrees
     type: float32
-    description: null
+    description: "Relative azimuth: The relative azimuth angle between the sun and view directions."
   - name: oa_relative_slope
     aliases:
       - relative_slope
     resolution: 20
     nodata: NaN
-    units: null
+    units: Degrees
     type: float32
-    description: null
+    description: "Relative slope: The relative azimuth angle between the incident and exiting directions in the slope geometry."
   - name: oa_satellite_azimuth
     aliases:
       - satellite_azimuth
     resolution: 20
     nodata: NaN
-    units: null
+    units: Degrees
     type: float32
-    description: null
+    description: "Satellite azimuth: The angle of the satellite’s position from true north; i.e. the angle between true north and a vertical circle passing through the satellite and the point being imaged on Earth."
   - name: oa_satellite_view
     aliases:
       - satellite_view
     resolution: 20
     nodata: NaN
-    units: null
+    units: Degrees
     type: float32
-    description: null
+    description: "Satellite view or satellite zenith: The angle between the zenith and the satellite. (The zenith is the point in the sky or celestial sphere directly above the point being imaged on Earth.)"
   - name: oa_solar_azimuth
     aliases:
       - solar_azimuth
     resolution: 20
     nodata: NaN
-    units: null
+    units: Degrees
     type: float32
-    description: null
+    description: "Solar azimuth: The angle of the sun’s position from true north; i.e. the angle between true north and a vertical circle passing through the sun and the point being imaged on Earth."
   - name: oa_solar_zenith
     aliases:
       - solar_zenith
     resolution: 20
     nodata: NaN
-    units: null
+    units: Degrees
     type: float32
-    description: null
+    description: The angle between the zenith and the centre of the sun’s disc.
   - name: oa_time_delta
     aliases:
       - time_delta
     resolution: 20
     nodata: NaN
-    units: null
+    units: Seconds
     type: float32
-    description: null
+    description: "Timedelta: The time from satellite apogee (the point of orbit at which the satellite is furthest from the Earth)."
   - name: oa_s2cloudless_mask
     aliases:
       - s2cloudless_mask
