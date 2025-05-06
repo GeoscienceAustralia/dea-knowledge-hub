@@ -14,65 +14,65 @@ bands_table:
     units: null
     type: int16
     description: null
-  - name: nbar_blue
+  - name: nbart_blue
     aliases:
-      - nbar_band01
+      - nbart_band02
       - blue
     resolution: 30
     nodata: -999
     units: null
     type: int16
-    description: "NBAR surface reflectance for the blue spectral band (wavelength: 0.45–0.52 µm)."
-  - name: nbar_green
+    description: null
+  - name: nbart_green
     aliases:
-      - nbar_band02
+      - nbart_band03
       - green
     resolution: 30
     nodata: -999
     units: null
     type: int16
-    description: "NBAR surface reflectance for the green spectral band (wavelength: 0.52–0.60 µm)."
-  - name: nbar_red
+    description: null
+  - name: nbart_red
     aliases:
-      - nbar_band03
+      - nbart_band04
       - red
     resolution: 30
     nodata: -999
     units: null
     type: int16
-    description: "NBAR surface reflectance for the red spectral band (wavelength: 0.63–0.69 µm)."
-  - name: nbar_nir
+    description: null
+  - name: nbart_nir
     aliases:
-      - nbar_band04
+      - nbart_band05
       - nir
-      - nbar_common_nir
+      - nbart_common_nir
     resolution: 30
     nodata: -999
     units: null
     type: int16
-    description: "NBAR surface reflectance for the Near Infrared (NIR) spectral band (wavelength: 0.77–0.90 µm)."
-  - name: nbar_swir_1
+    description: null
+  - name: nbart_swir_1
     aliases:
-      - nbar_band05
+      - nbart_band06
       - swir_1
-      - nbar_common_swir_1
+      - nbart_common_swir_1
       - swir1
     resolution: 30
     nodata: -999
     units: null
     type: int16
-    description: "NBAR surface reflectance for the Shortwave Infrared (SWIR) 1 spectral band (wavelength: 1.55–1.75 µm)."
-  - name: nbar_swir_2
+    description: null
+  - name: nbart_swir_2
     aliases:
-      - nbar_band07
+      - nbart_band07
       - swir_2
-      - nbar_common_swir_2
+      - nbart_common_swir_2
       - swir2
     resolution: 30
     nodata: -999
     units: null
     type: int16
-    description: "NBAR surface reflectance for the Shortwave Infrared (SWIR) 2 spectral band (wavelength: 2.09–2.35 µm)."
+    description: null
   - name: nbart_panchromatic
     aliases:
       - nbart_band08
