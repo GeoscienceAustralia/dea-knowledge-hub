@@ -3,11 +3,7 @@
 TESTS:
 
 * Target: [Test link: DEA Maps](#dea-maps)
-* Root-relative `root`: [DEA Surface Reflectance (Sentinel-2A MSI)](root:/data/product/dea-surface-reflectance-sentinel-2a-msi/) 
-* Root-relative `rootb`: [DEA Surface Reflectance (Sentinel-2A MSI)](rootb:/data/product/dea-surface-reflectance-sentinel-2a-msi/) 
-* Root-relative `rootc`: [DEA Surface Reflectance (Sentinel-2A MSI)](rootc:data/product/dea-surface-reflectance-sentinel-2a-msi/) 
-* Root-relative `rootd`: [DEA Surface Reflectance (Sentinel-2A MSI)](rootd:/data/product/dea-surface-reflectance-sentinel-2a-msi/) 
-* Root-relative `roote`: [DEA Surface Reflectance (Sentinel-2A MSI)](roote:data/product/dea-surface-reflectance-sentinel-2a-msi/) 
+* Root-relative `root`: [DEA Surface Reflectance (Sentinel-2A MSI)](root:data/product/dea-surface-reflectance-sentinel-2a-msi/) 
 
 [Land Cover Explorer][Explorer] is a web application in the [Digital Atlas of Australia](https://digital.atlas.gov.au/), developed by Esri. It allows you to navigate and visualise the [DEA Land Cover][LandCover] datasets. (This is an easy alternative to [plotting Land Cover data yourself](/notebooks/DEA_products/DEA_Land_Cover/).)
 
