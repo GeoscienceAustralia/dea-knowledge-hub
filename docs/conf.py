@@ -96,7 +96,8 @@ myst_url_schemes = {
     "https": None,
     "ftp": None,
     "mailto": None,
-    "root": "https://pr-460-preview.khpreview.dea.ga.gov.au/{{uri}}",
+    "root": "/{{path}};{{params}}?{{query}}#{{fragment}}",
+    "rootb": "/{{path}}#{{fragment}}",
 }
 
 nbsphinx_requirejs_path = ""
