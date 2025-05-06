@@ -76,8 +76,6 @@ access_links_code_examples:
     name: null
   - link: https://github.com/GeoscienceAustralia/dea-coastlines
     name: GitHub repository
-  - link: "#dea-maps"
-    name: "Test: DEA Maps"
 
 access_links_web_services:
   - link: https://geoserver.dea.ga.gov.au/geoserver/wms

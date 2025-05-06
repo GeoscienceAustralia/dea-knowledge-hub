@@ -279,6 +279,10 @@
 
       <div class="product-tab-table-of-contents"></div>
 
+   :ref:`Test link DEA Maps 1 <#dea-maps>`
+
+   :ref:`Test link DEA Maps 2 </guides/setup/dea_maps/>`
+      
    .. include:: _overview_1.md
       :parser: myst_parser.sphinx_
 
