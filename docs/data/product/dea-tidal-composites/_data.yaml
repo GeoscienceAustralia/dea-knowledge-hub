@@ -35,7 +35,7 @@ parent_products:
 
 collections:
   - name: Geoscience Australia Sentinel-2 Collection 3
-    link: /search/?q=Geoscience+Australia+Sentinel-2+Collection+3
+    link: /data/category/dea-surface-reflectance/
 
 doi: 10.26186/150381 #TBC
 ecat_id: "150381" #TBC
@@ -61,7 +61,7 @@ tags:
   - high_and_low_tide_composites
   - hltc
 
-# Access #TODO
+# Access 
 
 access_links_maps:
   - link: https://maps.dea.ga.gov.au # TODO - update sharelink or storymap link
