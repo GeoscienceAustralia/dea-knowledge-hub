@@ -86,6 +86,7 @@ A pixel-based quality assurance layer, identifying the maximum tide height inclu
 Usually, this value corresponds to the lowest 15th percentile satellite-observed tide height. 
 Pixels with less than 20 clear observations in this 15th percentile range are gapfilled up to 20 with the next lowest satellite-observed tide height observations to ensure sufficient data density to produce a clear composite image.
 When a pixel is gapfilled, the highest gapfilled tide height is reported for that pixel in the `Low threshold` layer.
+The `Low threshold` layer is only valid for marine and coastal pixels.
 
 #### High threshold
 
@@ -93,6 +94,7 @@ A pixel-based quality assurance layer, identifying the minimum tide height inclu
 Usually, this value corresponds to the highest 15th percentile satellite-observed tide height. 
 Pixels with less than 20 clear observations in this 15th percentile range are gapfilled up to 20 with the next highest satellite-observed tide height observations to ensure sufficient data density to produce a clear composite image.
 When a pixel is gapfilled, the lowest gapfilled tide height is reported for that pixel in the `High threshold` layer.
+The `High threshold` layer is only valid for marine and coastal pixels.
 
 #### Count clear
 
