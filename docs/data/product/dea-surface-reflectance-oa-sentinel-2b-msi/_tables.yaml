@@ -18,7 +18,7 @@ bands_table:
       - nbart_contiguity
     resolution: 10
     nodata: 255
-    units: null
+    units: Classification
     type: uint8
     description: "NBART contiguity: A layer indicating whether each pixel is 'spectrally contiguous', meaning that it contains valid observations in every spectral band. Classification values: ``0`` = non-contiguous; ``1`` = contiguous."
   - name: oa_azimuthal_exiting
