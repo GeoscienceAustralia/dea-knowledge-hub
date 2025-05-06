@@ -22,7 +22,7 @@ bands_table:
     nodata: -999
     units: null
     type: int16
-    description: null
+    description: "NBART surface reflectance for the blue spectral band."
   - name: nbart_green
     aliases:
       - nbart_band03
@@ -31,7 +31,7 @@ bands_table:
     nodata: -999
     units: null
     type: int16
-    description: null
+    description: "NBART surface reflectance for the green spectral band."
   - name: nbart_red
     aliases:
       - nbart_band04
@@ -40,7 +40,7 @@ bands_table:
     nodata: -999
     units: null
     type: int16
-    description: null
+    description: "NBART surface reflectance for the red spectral band."
   - name: nbart_red_edge_1
     aliases:
       - nbart_band05
