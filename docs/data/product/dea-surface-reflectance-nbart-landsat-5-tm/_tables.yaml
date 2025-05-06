@@ -13,7 +13,7 @@ bands_table:
     nodata: -999
     units: null
     type: int16
-    description: null
+    description: "NBART surface reflectance for the blue spectral band (wavelength: 0.45–0.52 µm)"
   - name: nbart_green
     aliases:
       - nbart_band02
@@ -22,7 +22,7 @@ bands_table:
     nodata: -999
     units: null
     type: int16
-    description: null
+    description: "NBART surface reflectance for the green spectral band (wavelength: 0.52–0.60 µm)"
   - name: nbart_red
     aliases:
       - nbart_band03
@@ -31,7 +31,7 @@ bands_table:
     nodata: -999
     units: null
     type: int16
-    description: null
+    description: "NBART surface reflectance for the red spectral band (wavelength: 0.63–0.69 µm)"
   - name: nbart_nir
     aliases:
       - nbart_band04
@@ -41,7 +41,7 @@ bands_table:
     nodata: -999
     units: null
     type: int16
-    description: null
+    description: "NBART surface reflectance for the Near Infrared (NIR) spectral band (wavelength: 0.76–0.90 µm)"
   - name: nbart_swir_1
     aliases:
       - nbart_band05
@@ -52,7 +52,7 @@ bands_table:
     nodata: -999
     units: null
     type: int16
-    description: null
+    description: "NBART surface reflectance for the Shortwave Infrared (SWIR) 1 spectral band (wavelength: 1.55–1.75 µm)"
   - name: nbart_swir_2
     aliases:
       - nbart_band07
@@ -63,4 +63,4 @@ bands_table:
     nodata: -999
     units: null
     type: int16
-    description: null
+    description: "NBART surface reflectance for the Shortwave Infrared (SWIR) 2 spectral band (wavelength: 2.08–2.35 µm)"
