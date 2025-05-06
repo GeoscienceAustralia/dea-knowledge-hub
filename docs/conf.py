@@ -96,10 +96,7 @@ myst_url_schemes = {
     "https": None,
     "ftp": None,
     "mailto": None,
-    "root": "/{{path}};{{params}}?{{query}}#{{fragment}}",
-    "rootb": "/{{path}}#{{fragment}}",
-    "rootc": "/#{{uri}}",
-    "rootd": "/{{path}}?{{query}}#{{fragment}}",
+    "root": "/{{path}}?{{query}}#{{fragment}}",
 }
 
 nbsphinx_requirejs_path = ""
