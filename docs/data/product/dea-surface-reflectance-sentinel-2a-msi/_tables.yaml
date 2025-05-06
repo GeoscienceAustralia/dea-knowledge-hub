@@ -22,7 +22,7 @@ bands_table:
     nodata: -999
     units: null
     type: int16
-    description: null
+    description: "NBART surface reflectance for the blue spectral band (wavelength: 0.45–0.52 µm)."
   - name: nbart_green
     aliases:
       - nbart_band03
