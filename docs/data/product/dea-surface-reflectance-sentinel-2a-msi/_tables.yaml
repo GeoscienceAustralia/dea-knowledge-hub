@@ -51,7 +51,7 @@ bands_table:
     nodata: -999
     units: null
     type: int16
-    description: "NBART surface reflectance of the near-infrared range used for detecting vegetation. Equivalent wavelength: 704.1 nm; Bandwidth: 14 nm."
+    description: "NBART surface reflectance of the near-infrared (NIR) range used for detecting vegetation. Equivalent wavelength: 704.1 nm; Bandwidth: 14 nm."
   - name: nbart_red_edge_2
     aliases:
       - nbart_band06
@@ -60,7 +60,7 @@ bands_table:
     nodata: -999
     units: null
     type: int16
-    description: "NBART surface reflectance of the near-infrared range used for detecting vegetation. Equivalent wavelength: 740.5 nm; Bandwidth: 14 nm."
+    description: "NBART surface reflectance of the near-infrared range (NIR) used for detecting vegetation. Equivalent wavelength: 740.5 nm; Bandwidth: 14 nm."
   - name: nbart_red_edge_3
     aliases:
       - nbart_band07
@@ -69,7 +69,7 @@ bands_table:
     nodata: -999
     units: null
     type: int16
-    description: "NBART surface reflectance of the near-infrared range used for detecting vegetation. Equivalent wavelength: 782.8 nm; Bandwidth: 20 nm."
+    description: "NBART surface reflectance of the near-infrared (NIR) range used for detecting vegetation. Equivalent wavelength: 782.8 nm; Bandwidth: 20 nm."
   - name: nbart_nir_1
     aliases:
       - nbart_band08
@@ -79,7 +79,7 @@ bands_table:
     nodata: -999
     units: null
     type: int16
-    description: "Equivalent wavelength: 832.8 nm; Bandwidth: 118 nm."
+    description: "NBART surface reflectance of the near-infrared (NIR) range. Equivalent wavelength: 832.8 nm; Bandwidth: 118 nm."
   - name: nbart_nir_2
     aliases:
       - nbart_band8a
@@ -88,7 +88,7 @@ bands_table:
     nodata: -999
     units: null
     type: int16
-    description: "Equivalent wavelength: 864.7 nm; Bandwidth: 20 nm."
+    description: "NBART surface reflectance of the near-infrared (NIR) range which is narrower than 'nbart_nir_1'. Equivalent wavelength: 864.7 nm; Bandwidth: 20 nm."
   - name: nbart_swir_2
     aliases:
       - nbart_band11
