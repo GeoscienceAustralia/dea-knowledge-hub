@@ -13,7 +13,7 @@ bands_table:
     nodata: -999
     units: null
     type: int16
-    description: "NBAR surface reflectance for the blue spectral band (wavelength: 0.45–0.52 µm)."
+    description: "NBAR surface reflectance for the blue spectral band. Wavelength: 0.45–0.52 µm."
   - name: nbar_green
     aliases:
       - nbar_band02
@@ -22,7 +22,7 @@ bands_table:
     nodata: -999
     units: null
     type: int16
-    description: "NBAR surface reflectance for the green spectral band (wavelength: 0.52–0.60 µm)."
+    description: "NBAR surface reflectance for the green spectral band. Wavelength: 0.52–0.60 µm."
   - name: nbar_red
     aliases:
       - nbar_band03
@@ -31,7 +31,7 @@ bands_table:
     nodata: -999
     units: null
     type: int16
-    description: "NBAR surface reflectance for the red spectral band (wavelength: 0.63–0.69 µm)."
+    description: "NBAR surface reflectance for the red spectral band. Wavelength: 0.63–0.69 µm."
   - name: nbar_nir
     aliases:
       - nbar_band04
@@ -41,7 +41,7 @@ bands_table:
     nodata: -999
     units: null
     type: int16
-    description: "NBAR surface reflectance for the Near Infrared (NIR) spectral band (wavelength: 0.76–0.90 µm)."
+    description: "NBAR surface reflectance for the Near Infrared (NIR) spectral band. Wavelength: 0.76–0.90 µm."
   - name: nbar_swir_1
     aliases:
       - nbar_band05
@@ -52,7 +52,7 @@ bands_table:
     nodata: -999
     units: null
     type: int16
-    description: "NBAR surface reflectance for the Shortwave Infrared (SWIR) 1 spectral band (wavelength: 1.55–1.75 µm)."
+    description: "NBAR surface reflectance for the Shortwave Infrared (SWIR) 1 spectral band. Wavelength: 1.55–1.75 µm."
   - name: nbar_swir_2
     aliases:
       - nbar_band07
@@ -63,4 +63,4 @@ bands_table:
     nodata: -999
     units: null
     type: int16
-    description: "NBAR surface reflectance for the Shortwave Infrared (SWIR) 2 spectral band (wavelength: 2.08–2.35 µm)."
+    description: "NBAR surface reflectance for the Shortwave Infrared (SWIR) 2 spectral band. Wavelength: 2.08–2.35 µm."
