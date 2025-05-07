@@ -74,7 +74,7 @@ bands_table:
     nodata: -999
     units: null
     type: int16
-    description: null
+    description: "The panchromatic band is high resolution and can be used for pan-sharpening. Wavelength: 0.50–0.68 µm."
   - name: oa_fmask
     aliases:
       - fmask
