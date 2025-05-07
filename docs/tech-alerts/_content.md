@@ -10,6 +10,33 @@ In May 2025, DEA Intertidal was [updated to version 2.0.0](https://github.com/Ge
 * New quality assessment layers were added: [qa_count_clear](/data/product/dea-intertidal/?tab=description#quality-assessment-layers) and [qa_coastal_connectivity](/data/product/dea-intertidal/?tab=description#quality-assessment-layers). 
 
 Learn more: [DEA Intertidal 2.0.0 product page](/data/product/dea-intertidal/)
+=======
+## 1 May 2025: Missing Sentinel-2C data on AWS datacube is being restored
+
+We are aware that some [Sentinel-2C](/data/category/sentinel-2c-analysis-ready-data/) data are missing from the AWS datacube, primarily from January and February 2025. We are working to restore this data as soon as possible. We're sorry for any inconvenience this may cause.
+
+## 30 Apr 2025: DEA Coastlines 3.0 and 2024 data are now available
+
+* Digital Earth Australia has released v3.0.0 of its [DEA Coastlines](/data/product/dea-coastlines/) product. 
+* This updated v3.0.0 release incorporates improved ensemble tidal modelling into the product workflow using DEA’s [eo-tides](https://github.com/GeoscienceAustralia/eo-tides) package. 
+* The DEA Coastlines 3.0 release also includes 2024 calendar year data. 
+
+[View the Tech Alert](https://communication.ga.gov.au/link/id/zzzz6811a2b8e79e7668Pzzzz6567c8b713b5b826/page.html)
+
+## 30 Apr 2025: DEA Terrestrial products 2024 calendar year updates now available
+
+Digital Earth Australia (DEA) has released its 2024 calendar year data for its terrestrial products, including:  
+
+* [DEA Fractional Cover](/data/product/dea-fractional-cover-landsat/)
+* [DEA Geometric Median and Median Absolute Deviation (GeoMAD)](/data/product/dea-geometric-median-and-median-absolute-deviation-landsat/)
+* [DEA Land Cover](/data/product/dea-land-cover-landsat/)
+* [DEA Tasseled Cap Percentiles](/data/product/dea-tasseled-cap-percentiles-landsat/)
+* [DEA Water Observations](/data/product/dea-water-observations-landsat/)
+* [DEA Mangroves](/data/product/dea-mangroves/)
+
+You are now able to access the 2024 calendar year data via [DEA Maps](https://maps.dea.ga.gov.au/) and the DEA Knowledge Hub. 
+
+[View the Tech Alert](https://communication.ga.gov.au/link/id/zzzz6811775c5a24b812Pzzzz6567c8b713b5b826/page.html)
 
 ## 22 Apr 2025: DEA Sandbox technical review update
 
