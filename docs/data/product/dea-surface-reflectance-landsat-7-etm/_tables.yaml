@@ -178,7 +178,7 @@ bands_table:
     nodata: NaN
     units: Degrees
     type: float32
-    description: The angle between the zenith and the centre of the sun’s disc.
+    description: "Solar zenith: The angle between the zenith and the centre of the sun’s disc."
   - name: oa_time_delta
     aliases:
       - time_delta
