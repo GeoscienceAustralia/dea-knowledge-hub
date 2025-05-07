@@ -227,9 +227,9 @@ bands_table:
       - s2cloudless_mask
     resolution: 60
     nodata: 0
-    units: null
+    units: Classification
     type: uint8
-    description: null
+    description: "The s2cloudless cloud mask band (CLM) identifies the presence of clouds. Classification values: ``0`` = No cloud; ``1`` = Cloud."
   - name: oa_s2cloudless_prob
     aliases:
       - s2cloudless_prob
@@ -237,4 +237,4 @@ bands_table:
     nodata: NaN
     units: null
     type: float64
-    description: null
+    description: "The s2cloudless cloud probabilities band (CLP) provides the probabilities of cloud presence as values between 0 and 255."
