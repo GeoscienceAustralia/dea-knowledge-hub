@@ -6,9 +6,9 @@ short_name: DEA Coastlines
 full_technical_name: Geoscience Australia Landsat Coastlines Collection 3
 header_image: /_files/cmi/thumbnail_vertical.png
 
-version_number: 3.0.0
-is_latest_version: true
-latest_version_link: null
+version_number: 2.2.0
+is_latest_version: false
+latest_version_link: /data/product/dea-coastlines/
 is_provisional: false
 
 lineage_type: DERIVATIVE
@@ -16,7 +16,7 @@ spatial_data_type: VECTOR
 
 spatial_coverage: null
 temporal_coverage_start: 1988
-temporal_coverage_end: 2024
+temporal_coverage_end: 2023
 temporal_coverage_custom: null
 
 data_update_frequency: YEARLY
@@ -61,36 +61,33 @@ tags:
 
 # Access
 
-access_links_maps:
-  - link: https://maps.dea.ga.gov.au/story/DEACoastlines
-    name: null
+access_links_maps: null
+  # - link: https://maps.dea.ga.gov.au/story/DEACoastlines
+  #   name: null
 
 access_links_explorers: null
 
 access_links_data:
-  - link: https://data.dea.ga.gov.au/?prefix=derivative/dea_coastlines/3-0-0/
+  - link: https://data.dea.ga.gov.au/?prefix=derivative/dea_coastlines/2-2-0/
     name: Access the data on AWS
 
 access_links_code_examples:
-  - link: /notebooks/DEA_products/DEA_Coastlines/
-    name: null
+  # - link: /notebooks/DEA_products/DEA_Coastlines/
+  #   name: null
   - link: https://github.com/GeoscienceAustralia/dea-coastlines
     name: GitHub repository
 
-access_links_web_services:
-  - link: https://geoserver.dea.ga.gov.au/geoserver/wms
-    name: Web Map Service (WMS)
-  - link: http://geoserver.dea.ga.gov.au/geoserver/wfs?service=WFS&version=1.1.0
-    name: Web Feature Service (WFS)
+access_links_web_services: null
+  # - link: https://geoserver.dea.ga.gov.au/geoserver/wms
+  #   name: Web Map Service (WMS)
+  # - link: http://geoserver.dea.ga.gov.au/geoserver/wfs?service=WFS&version=1.1.0
+  #   name: Web Feature Service (WFS)
 
 access_links_custom: null
 
 # History
 
-previous_versions:
-  - version_number: 2.2.0
-    title: DEA Coastlines
-    slug: dea-coastlines-2.2.0
+previous_versions: null
 
 # SEO
 
