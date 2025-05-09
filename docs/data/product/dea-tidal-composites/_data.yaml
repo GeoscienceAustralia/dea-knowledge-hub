@@ -30,8 +30,12 @@ product_ids:
   - ga_s2_tidal_composites_cyear_3 
 
 parent_products:
-  - name: Sentinel -2A, -2B and -2C and Observational Attributes (Collection 3)
-    link: /data/category/dea-surface-reflectance/
+  - name: Sentinel-2A Analysis Ready Data
+    link: /data/category/sentinel-2a-analysis-ready-data/
+  - name: Sentinel-2B Analysis Ready Data
+    link: /data/category/sentinel-2b-analysis-ready-data/
+  - name: Sentinel-2C Analysis Ready Data
+    link: /data/category/sentinel-2c-analysis-ready-data/
 
 collections:
   - name: Geoscience Australia Sentinel-2 Collection 3
