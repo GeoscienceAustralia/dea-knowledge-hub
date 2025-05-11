@@ -1,6 +1,6 @@
 ## Changelog
 
-## DEA Tidal Composites 1.0.0
+### DEA Tidal Composites 1.0.0
 
 In May 2025, DEA Tidal Composites version 1.0.0, was released. This release results in the deprecation of the Landsat-based [DEA High and Low Tide Composites product](https://knowledge.dea.ga.gov.au/data/version-history/dea-high-and-low-tide-imagery-landsat-2.0.0/). Data from this historical product will still be accessible, however users are advised to transition to use of DEA Tidal Composites where possible.
 
