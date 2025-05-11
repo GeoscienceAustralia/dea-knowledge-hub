@@ -66,25 +66,21 @@ The ensemble was based on 10 commonly-used global ocean tidal models:
 
 See the attributes of these layers in the [Specifications tab](./?tab=specifications).
 
-#### Low tide composites
+#### Low tide composites (multiple 'low_' bands)
 
-11 bands, prefixed by `low` in the product file name, are delivered in the spectral resolution of the Sentinel-2 band set. 
+11 bands, prefixed by `low_` in the product file name, are delivered in the spectral resolution of the Sentinel-2 band set. 
 All bands are reported at 10 m spatial resolution and are detailed in the [Specifications tab](./?tab=specifications). 
 Each band represents synthetic data, derived from the geomedian calculation of the input Sentinel-2 satellite data from the lowest 15 % of satellite-observed tide heights during each 3-year analysis epoch. 
 Maintenance of the spectral relationships between geomedian bands ensures they can be combined to produce lowtide imagery and analysis in coastal environments. 
 
-#### High tide composites
+#### High tide composites (multiple 'high_' bands)
 
-11 bands, prefixed by `high` in the product file name, are delivered in the spectral resolution of the Sentinel-2 band set.
+11 bands, prefixed by `high_` in the product file name, are delivered in the spectral resolution of the Sentinel-2 band set.
 All bands are reported at 10 m spatial resolution and are detailed in the [Specifications tab](./?tab=specifications). 
 Each band represents synthetic data, derived from the geomedian calculation of the input Sentinel-2 satellite data from the highest 15 % of satellite-observed tide heights during each 3-year analysis epoch. 
 Maintenance of the spectral relationships between geomedian bands ensures they can be combined to produce hightide imagery and analysis in coastal environments.
 
-#### Quality assurance
-
-Three bands are delivered to provide quality assurance with DEA Tidal Composites.
-
-#### Low threshold
+#### Quality assurance: Low threshold (qa_low_threshold)
 
 A pixel-based quality assurance layer, identifying the maximum tide height included in the low tide composite.
 Usually, this value corresponds to the lowest 15th percentile satellite-observed tide height. 
@@ -92,7 +88,7 @@ Pixels with less than 20 clear observations in this 15th percentile range are ga
 When a pixel is gapfilled, the highest gapfilled tide height is reported for that pixel in the `Low threshold` layer.
 The `Low threshold` layer is only valid for marine and coastal pixels.
 
-#### High threshold
+#### Quality assurance: High threshold (qa_high_threshold)
 
 A pixel-based quality assurance layer, identifying the minimum tide height included in the high tide composite.
 Usually, this value corresponds to the highest 15th percentile satellite-observed tide height. 
@@ -100,7 +96,7 @@ Pixels with less than 20 clear observations in this 15th percentile range are ga
 When a pixel is gapfilled, the lowest gapfilled tide height is reported for that pixel in the `High threshold` layer.
 The `High threshold` layer is only valid for marine and coastal pixels.
 
-#### Count clear
+#### Quality assurance: Count clear (qa_count_clear)
 
 The `Count clear` pixel-based quality assurance layer represents the number of clear observations per-pixel that are used in both the high and low tide composites.
 The layer typically identifies the number of clear satellite observations in 15 percent of all observations per-pixel. 
