@@ -29,7 +29,9 @@ To *stream* continental data mosaics of the individual annual bands:
 9) Select `ok` to stream the layer 
 10) For more on streaming cloud datasets, see:
     * [QGIS: tutorial](https://cogeo.org/qgis-tutorial.html)
-    * :::{dropdown} [ESRI: Create Cloud Storage Connection](https://pro.arcgis.com/en/pro-app/latest/help/projects/connect-to-cloud-stores.htm) using the following settings, leaving all others blank:
+    * :::{dropdown} [ESRI: tutorial](https://pro.arcgis.com/en/pro-app/latest/help/projects/connect-to-cloud-stores.htm) 
+    
+    Create a cloud storage connection using the following settings, leaving all others blank:
 
         |  Parameter  |  Setting  |
         |  ---------  |  -------  |
