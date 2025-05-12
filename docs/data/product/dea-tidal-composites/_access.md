@@ -21,17 +21,17 @@ This allows you to rapidly access data from the entire Australian continent, wit
 DEA Tidal Composite data is extremely large (e.g. up to 15 gb per file). We **strongly recommend streaming data** rather than downloading individual raster files. If you encounter difficulty with the instructions below or the COG files themselves, please reach out to earth.observation@ga.gov.au for assistance.
 :::
 
-:::{dropdown}* **Streaming continental COG mosaics in QGIS**
-
-1) Navigate into the DEA Tidal Composites [continental_mosaics](https://data.dea.ga.gov.au/?prefix=derivative/ga_s2_tidal_composites_cyear_3/1-0-0/continental_mosaics/) directory on Amazon S3
-2) Select your year of interest e.g. `2018--P1Y/`
-3) Right click the `.tif` file (band) of interest e.g. `ga_s2_tidal_composites_cyear_3_2018_low-blue.tif`
-4) Select `Copy link address`
-5) Open QGIS
-6) Select `Layer` > `Add Layer` > `Add Raster Layer`
-7) Select `Source Type` protocol as `HTTP(S)` or `cloud` etc, and ensure `Type` is set to `HTTP/HTTPS/FTP`
-8) Paste the link into the `URI` dialogue box
-9) Select `Add` to stream the layer. Data should appear on the map after a few seconds delay (or several minutes on slow internet connections)
+:::{dropdown}   * **Streaming continental COG mosaics in QGIS**
+    
+1. Navigate into the DEA Tidal Composites [continental_mosaics](https://data.dea.ga.gov.au/?prefix=derivative/ga_s2_tidal_composites_cyear_3/1-0-0/continental_mosaics/) directory on Amazon S3
+1. Select your year of interest e.g. `2018--P1Y/`
+1. Right click the `.tif` file (band) of interest e.g. `ga_s2_tidal_composites_cyear_3_2018_low-blue.tif`
+1. Select `Copy link address`
+1. Open QGIS
+1. Select `Layer` > `Add Layer` > `Add Raster Layer`
+1. Select `Source Type` protocol as `HTTP(S)` or `cloud` etc, and ensure `Type` is set to `HTTP/HTTPS/FTP`
+1. Paste the link into the `URI` dialogue box
+1. Select `Add` to stream the layer. Data should appear on the map after a few seconds delay (or several minutes on slow internet connections)
 
 :::{tip}
 
@@ -39,7 +39,7 @@ For more on streaming cloud datasets, see: [QGIS Tutorial: How to read a Cloud O
 :::
 :::
 
-:::{dropdown}* **Streaming multi-band continental COG mosaics in QGIS**
+:::{dropdown}   * **Streaming multi-band continental COG mosaics in QGIS**
 
 :::{note}
 
@@ -51,11 +51,10 @@ These Virtual Rasters stream data from the cloud by default, avoiding you to hav
 2) Select the year of interest e.g. `2018--P1Y/`
 3) Left click to download the `.vrt` file of interest e.g. `ga_s2_tidal_composites_cyear_3_2018_vrt-low-truecolour.vrt`
 4) From your `Downloads` folder, drag the `.vrt` file into your GIS project
-5) The multi-band dataset will stream seamlessly into your QGIS project via the `.vrt` file which contains instructions for combining, streaming and viewing multiple COG files simultaneously.
-
+5) The multi-band dataset will stream seamlessly into your QGIS project via the `.vrt` file which contains instructions for combining, streaming and viewing multiple COG files simultaneously. 
 :::
 
-:::{dropdown}* **Streaming continental COG mosaics in Esri ArcPro**
+:::{dropdown}   * **Streaming continental COG mosaics in Esri ArcPro**
 
 1) Follow the Esri [connect to a cloud store tutorial](https://pro.arcgis.com/en/pro-app/latest/help/projects/connect-to-cloud-stores.htm) to connect Esri ArcPro to DEA's Amazon S3 bucket
 
@@ -74,7 +73,7 @@ These Virtual Rasters stream data from the cloud by default, avoiding you to hav
 
 :::
 
-:::{dropdown}* **Downloading data from individual tiles**
+:::{dropdown}   * **Downloading data from individual tiles**
 
 :::{note}
 
