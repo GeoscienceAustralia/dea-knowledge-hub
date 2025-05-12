@@ -38,26 +38,6 @@ DEA Tidal Composite data is extremely large (e.g. up to 15 gb per file). We **st
 For more on streaming cloud datasets, see: [QGIS Tutorial: How to read a Cloud Optimized GeoTIFF with QGIS](https://cogeo.org/qgis-tutorial.html)
 :::
 
-**Streaming continental COG mosaics in Esri ArcPro**
-
-1) Follow the Esri [Connect to a cloud store tutorial](https://pro.arcgis.com/en/pro-app/latest/help/projects/connect-to-cloud-stores.htm) to connect Esri ArcPro to DEA's Amazon S3 bucket
-
-2) Create a cloud storage connection using the following settings, leaving all others blank:
-
-:::{dropdown} Cloud storage connection settings
-
-|  Parameter  |  Setting  |
-|  ---------  |  -------  |
-|  Connection File Name |  DEA data  |
-|  Service Provider  |  AMAZON  |
-|  Bucket (Container) Name  |  dea-public-data  |
-|  Folder  |  derivative  |
-|  Region (Environment)  |  Asia Pacific (Sydney)  |
-|  Service Endpoint  |  s3.ap-southeast-2.amazonaws.com  |
-|  Provider Options  |  ARC_DEEP_CRAWL=NO  |
-|  Provider Options  |  AWS_NO_SIGN_REQUEST=TRUE  |
-:::
-
 **Streaming multi-band continental COG mosaics in QGIS**
 
 :::{note}
@@ -72,12 +52,28 @@ These Virtual Rasters stream data from the cloud by default, avoiding you to hav
 4) From your `Downloads` folder, drag the `.vrt` file into your GIS project
 5) The multi-band dataset will stream seamlessly into your QGIS project via the `.vrt` file which contains instructions for combining, streaming and viewing multiple COG files simultaneously.
 
+**Streaming continental COG mosaics in Esri ArcPro**
+
+1) Follow the Esri [connect to a cloud store tutorial](https://pro.arcgis.com/en/pro-app/latest/help/projects/connect-to-cloud-stores.htm) to connect Esri ArcPro to DEA's Amazon S3 bucket
+
+2) Create a cloud storage connection using the following settings, leaving all others blank:
+
+    |  Parameter  |  Setting  |
+    |  ---------  |  -------  |
+    |  Connection File Name |  DEA data  |
+    |  Service Provider  |  AMAZON  |
+    |  Bucket (Container) Name  |  dea-public-data  |
+    |  Folder  |  derivative  |
+    |  Region (Environment)  |  Asia Pacific (Sydney)  |
+    |  Service Endpoint  |  s3.ap-southeast-2.amazonaws.com  |
+    |  Provider Options  |  ARC_DEEP_CRAWL=NO  |
+    |  Provider Options  |  AWS_NO_SIGN_REQUEST=TRUE  |
+
 **Downloading data from individual tiles**
 
 :::{note}
 
-Downloading individual tiles is not recommended, but can be useful for accessing small amounts of data.
-:::
+Downloading individual tiles is not recommended, but can be useful for accessing small amounts of data.:::
 
 1) Navigate into the [ga_s2ls_intertidal_cyear_3](https://data.dea.ga.gov.au/?prefix=derivative/ga_s2_tidal_composites_cyear_3/1-0-0/continental_mosaics/) directory on Amazon S3
 
