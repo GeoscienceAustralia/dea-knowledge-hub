@@ -19,7 +19,7 @@ This allows you to rapidly access data from the entire Australian continent, wit
 ```{important}
 DEA Tidal Composite data is extremely large (e.g. up to 15 gb per file). We **strongly recommend streaming data** rather than downloading individual raster files. If you encounter difficulty with the instructions below or the COG files themselves, please reach out to earth.observation@ga.gov.au for assistance.
 ```
-
+---
 
 **Streaming continental COG mosaics in QGIS**
     
@@ -36,7 +36,7 @@ DEA Tidal Composite data is extremely large (e.g. up to 15 gb per file). We **st
 ```{tip}
 For more on streaming cloud datasets, see: [QGIS Tutorial: How to read a Cloud Optimized GeoTIFF with QGIS](https://cogeo.org/qgis-tutorial.html)
 ```
-
+---
 **Streaming multi-band continental COG mosaics in QGIS**
 
 ```{note}
@@ -50,7 +50,7 @@ These Virtual Rasters stream data from the cloud by default, avoiding you to hav
 1. From your `Downloads` folder, drag the `.vrt` file into your GIS project
 1. The multi-band dataset will stream seamlessly into your QGIS project via the `.vrt` file which contains instructions for combining, streaming and viewing multiple COG files simultaneously. 
 
-
+---
 **Streaming continental COG mosaics in Esri ArcPro**
 
 1. Follow the Esri [connect to a cloud store tutorial](https://pro.arcgis.com/en/pro-app/latest/help/projects/connect-to-cloud-stores.htm) to connect Esri ArcPro to DEA's Amazon S3 bucket
@@ -67,6 +67,7 @@ These Virtual Rasters stream data from the cloud by default, avoiding you to hav
     |  Provider Options  |  ARC_DEEP_CRAWL=NO  |
     |  Provider Options  |  AWS_NO_SIGN_REQUEST=TRUE  |
 
+---
 **Downloading data from individual tiles**
 
 ```{note}
