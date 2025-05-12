@@ -42,7 +42,8 @@ To *stream* continental data mosaics of the individual annual bands:
         |  Region (Environment)  |  Asia Pacific (Sydney)  |
         |  Service Endpoint  |  s3.ap-southeast-2.amazonaws.com  |
         |  Provider Options -->  Name  |  ARC_DEEP_CRAWL  |
-        |  Provider Options --> Value  |  NO  |:::
+        |  Provider Options --> Value  |  NO  |
+        :::
 
 
 To *stream* annual continental multi-band imagery mosaics:
