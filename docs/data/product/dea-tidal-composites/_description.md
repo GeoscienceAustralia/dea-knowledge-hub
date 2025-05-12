@@ -4,8 +4,6 @@ Intertidal zones are coastal environments that are exposed to both air and water
 
 The ever-changing nature of the tides makes it difficult to systematically capture consistent imagery of an intertidal zone, particularly across large regions and in remote areas of the country. This is why [Geomedian statistical techniques](/data/product/dea-geometric-median-and-median-absolute-deviation-landsat/) where used. These are robust techniques which combine tide-attributed time-series satellite imagery to produce representative and artefact-free imagery 'composites' of Australia's coastal high- and low-tide environments.
 
-## What this product offers
-
 This product provides a suite of cloud-free composite Sentinel-2 satellite datasets that enable imaging of Australian coastal intertidal zones at both high and low tide. 
 Using a geometric median (geomedian), the highest and lowest 15 % of satellite-observed tide heights from the Digital Earth Australia (DEA) Sentinel-2 imagery archive are combined to deliver annual snapshots of Australian coastal high and low tide environments.
 
