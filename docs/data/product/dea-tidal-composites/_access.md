@@ -16,8 +16,9 @@ The easiest way to access DEA Tidal Composite data is via our provided continent
 The COG file format is a type of GeoTIFF (i.e. `.tif`) raster file that allows you to quickly and efficiently "stream" data directly from the cloud (e.g. Amazon S3), without having to download them to your computer.
 This allows you to rapidly access data from the entire Australian continent, without having to wait for data to download.
 
->[!IMPORTANT]
+:::{important}
 DEA Tidal Composite data is extremely large (e.g. up to 15 gb per file). We **strongly recommend streaming data** rather than downloading individual raster files. If you encounter difficulty with the instructions below or the COG files themselves, please reach out to earth.observation@ga.gov.au for assistance.
+:::
 
 
 :::{dropdown} - Streaming continental COG mosaics in QGIS
@@ -84,4 +85,27 @@ For more on streaming cloud datasets, see: [QGIS Tutorial: How to read a Cloud O
 
 :::
 
- 
+:::{dropdown} Test
+
+This is a test of the top dropdown:
+
+* list 1
+:::{dropdown} * list 2
+    * list 2.1
+    :::
+
+:::{dropdown} 1. This will be nested dropdown number 2
+
+:::
+
+:::{dropdown}1. This will be nested dropdown number 3
+
+:::
+
+:::{important}
+This is important information
+:::
+
+End of nested dropdown test
+:::
+
