@@ -53,7 +53,7 @@ To *stream* annual continental multi-band imagery mosaics:
 
 To *download* data, either:
 
-1) [Not recommended]: Follow steps `1-3` above and left-click any `.tif` to download. **Beware** the continental mosaic files are huge in volume.
+1) [Not recommended]: Follow steps `1-2` above and left-click any `.tif` to download. **Beware** the continental mosaic files are huge in volume.
 
     or
 
