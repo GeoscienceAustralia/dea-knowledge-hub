@@ -28,7 +28,7 @@ DEA Tidal Composite data is extremely large (e.g. up to 15 gb per file). We **st
 3) Right click the `.tif` file (band) of interest e.g. `ga_s2_tidal_composites_cyear_3_2018_low-blue.tif`
 4) Select `Copy link address`
 5) Open QGIS
-6) Select `Layer` > `Add Layer` > `Add Raster Layer` (or equivalent)
+6) Select `Layer` > `Add Layer` > `Add Raster Layer`
 7) Select `Source Type` protocol as `HTTP(S)` or `cloud` etc, and ensure `Type` is set to `HTTP/HTTPS/FTP`
 8) Paste the link into the `URI` dialogue box
 9) Select `Add` to stream the layer. Data should appear on the map after a few seconds delay (or several minutes on slow internet connections)
@@ -38,33 +38,30 @@ DEA Tidal Composite data is extremely large (e.g. up to 15 gb per file). We **st
 For more on streaming cloud datasets, see: [QGIS Tutorial: How to read a Cloud Optimized GeoTIFF with QGIS](https://cogeo.org/qgis-tutorial.html)
 :::
 
-### Streaming continental COG mosaics in Esri ArcPro
-
-1) Follow the Esri [Connect to a cloud store tutorial](https://pro.arcgis.com/en/pro-app/latest/help/projects/connect-to-cloud-stores.htm) to connect Esri ArcPro to DEA's Amazon S3 bucket
-
-2) Create a cloud storage connection using the following settings, leaving all others blank:
-
-:::{dropdown} Cloud storage connection settings
-
-|  Parameter  |  Setting  |
-|  ---------  |  -------  |
-|  Connection File Name |  DEA data  |
-|  Service Provider  |  AMAZON  |
-|  Bucket (Container) Name  |  dea-public-data  |
-|  Folder  |  derivative  |
-|  Region (Environment)  |  Asia Pacific (Sydney)  |
-|  Service Endpoint  |  s3.ap-southeast-2.amazonaws.com  |
-|  Provider Options  |  ARC_DEEP_CRAWL=NO  |
-|  Provider Options  |  AWS_NO_SIGN_REQUEST=TRUE  |
-:::
-
 ### Streaming multi-band continental COG mosaics in QGIS
 
 1) Navigate into the DEA Tidal Composites [continental_mosaics](https://data.dea.ga.gov.au/?prefix=derivative/ga_s2_tidal_composites_cyear_3/1-0-0/continental_mosaics/) directory on Amazon S3
 2) Select the year of interest e.g. `2018--P1Y/`
 3) Left click to download the `.vrt` file of interest e.g. `ga_s2_tidal_composites_cyear_3_2018_vrt-low-truecolour.vrt`
 4) From your `Downloads` folder, drag the `.vrt` file into your GIS project
-5) The multi-band dataset will stream in your project as the `.vrt` file contains the instructions for combining, streaming and viewing multiple COG files simultaneously.
+5) The multi-band dataset will stream seamlessly into your QGIS project via the `.vrt` file which contains instructions for combining, streaming and viewing multiple COG files simultaneously.
+
+### Streaming continental COG mosaics in Esri ArcPro
+
+[ESRI: tutorial](https://pro.arcgis.com/en/pro-app/latest/help/projects/connect-to-cloud-stores.htm) 
+
+ESRI ArcPro users will need to create a cloud storage connection using the following settings to stream COG files. Following the tutorial instructions, use the following settings, leaving all others blank:
+
+    |  Parameter  |  Setting  |
+    |  ---------  |  -------  |
+    |  Connection File Name |  DEA data  |
+    |  Service Provider  |  AMAZON  |
+    |  Bucket (Container) Name  |  dea-public-data  |
+    |  Folder  |  derivative  |
+    |  Region (Environment)  |  Asia Pacific (Sydney)  |
+    |  Service Endpoint  |  s3.ap-southeast-2.amazonaws.com  |
+    |  Provider Options -->  Name, Value  |  ARC_DEEP_CRAWL, NO  |
+    |  Provider Options --> Name, Value  |  AWS_NO_SIGN_REQUEST, YES  |
 
 ### Downloading data from individual tiles
 
@@ -77,8 +74,8 @@ Downloading individual tiles is not recommended, but can be useful for accessing
 
 2) Left-click on the `ga_summary_grid_c3_32km_coastal.geojson` file to download to your computer. This file can be used in a GIS package to identify the product tiles that you require for a given location. Alternatively, you can access this file via DEA Maps to identify required tiles (Sea, ocean and coast > DEA Intertidal > DEA Intertidal 32 km tile grid).
 
-3) Navigate to the [DEA Tidal Composites](https://data.dea.ga.gov.au/?prefix=derivative/ga_s2_tidal_composites_cyear_3/1-0-0/) bucket and select the required tile folder, first using the tile ‘x’ reference (e.g. x079) and then the tile ‘y’ reference (e.g. y123). Then select your year of interest.
+3) Navigate to the [DEA Tidal Composites](https://data.dea.ga.gov.au/?prefix=derivative/ga_s2_tidal_composites_cyear_3/1-0-0/) directory and select the required tile folder, first using the tile ‘x’ reference (e.g. x079) and then the tile ‘y’ reference (e.g. y123). Then select your year of interest.
 
-4) Click on the required product layer to download. See [Technical Information](./?tab=description#product-layers) for details on file naming and product layer details.
+4) Left-click on the required product layer to download. See [Technical Information](./?tab=description#product-layers) for details on file naming and product layer details.
 
 :::
