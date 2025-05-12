@@ -21,7 +21,7 @@ This allows you to rapidly access data from the entire Australian continent, wit
 DEA Tidal Composite data is extremely large (e.g. up to 15 gb per file). We **strongly recommend streaming data** rather than downloading individual raster files. If you encounter difficulty with the instructions below or the COG files themselves, please reach out to earth.observation@ga.gov.au for assistance.
 :::
 
-### Streaming continental COG mosaics in QGIS
+**Streaming continental COG mosaics in QGIS**
 
 1) Navigate into the DEA Tidal Composites [continental_mosaics](https://data.dea.ga.gov.au/?prefix=derivative/ga_s2_tidal_composites_cyear_3/1-0-0/continental_mosaics/) directory on Amazon S3
 2) Select your year of interest e.g. `2018--P1Y/`
@@ -38,7 +38,33 @@ DEA Tidal Composite data is extremely large (e.g. up to 15 gb per file). We **st
 For more on streaming cloud datasets, see: [QGIS Tutorial: How to read a Cloud Optimized GeoTIFF with QGIS](https://cogeo.org/qgis-tutorial.html)
 :::
 
-### Streaming multi-band continental COG mosaics in QGIS
+**Streaming continental COG mosaics in Esri ArcPro**
+
+1) Follow the Esri [Connect to a cloud store tutorial](https://pro.arcgis.com/en/pro-app/latest/help/projects/connect-to-cloud-stores.htm) to connect Esri ArcPro to DEA's Amazon S3 bucket
+
+2) Create a cloud storage connection using the following settings, leaving all others blank:
+
+:::{dropdown} Cloud storage connection settings
+
+|  Parameter  |  Setting  |
+|  ---------  |  -------  |
+|  Connection File Name |  DEA data  |
+|  Service Provider  |  AMAZON  |
+|  Bucket (Container) Name  |  dea-public-data  |
+|  Folder  |  derivative  |
+|  Region (Environment)  |  Asia Pacific (Sydney)  |
+|  Service Endpoint  |  s3.ap-southeast-2.amazonaws.com  |
+|  Provider Options  |  ARC_DEEP_CRAWL=NO  |
+|  Provider Options  |  AWS_NO_SIGN_REQUEST=TRUE  |
+:::
+
+**Streaming multi-band continental COG mosaics in QGIS**
+
+:::{note}
+
+To make it easier to visualise DEA Tidal Composite bands in true and false colour, we provide several Virtual Raster (`.vrt`) files that can be loaded into QGIS.
+These Virtual Rasters stream data from the cloud by default, avoiding you to have to download multiple files.
+:::
 
 1) Navigate into the DEA Tidal Composites [continental_mosaics](https://data.dea.ga.gov.au/?prefix=derivative/ga_s2_tidal_composites_cyear_3/1-0-0/continental_mosaics/) directory on Amazon S3
 2) Select the year of interest e.g. `2018--P1Y/`
@@ -46,24 +72,7 @@ For more on streaming cloud datasets, see: [QGIS Tutorial: How to read a Cloud O
 4) From your `Downloads` folder, drag the `.vrt` file into your GIS project
 5) The multi-band dataset will stream seamlessly into your QGIS project via the `.vrt` file which contains instructions for combining, streaming and viewing multiple COG files simultaneously.
 
-### Streaming continental COG mosaics in Esri ArcPro
-
-[ESRI: tutorial](https://pro.arcgis.com/en/pro-app/latest/help/projects/connect-to-cloud-stores.htm) 
-
-ESRI ArcPro users will need to create a cloud storage connection using the following settings to stream COG files. Following the tutorial instructions, use the following settings, leaving all others blank:
-
-    |  Parameter  |  Setting  |
-    |  ---------  |  -------  |
-    |  Connection File Name |  DEA data  |
-    |  Service Provider  |  AMAZON  |
-    |  Bucket (Container) Name  |  dea-public-data  |
-    |  Folder  |  derivative  |
-    |  Region (Environment)  |  Asia Pacific (Sydney)  |
-    |  Service Endpoint  |  s3.ap-southeast-2.amazonaws.com  |
-    |  Provider Options -->  Name, Value  |  ARC_DEEP_CRAWL, NO  |
-    |  Provider Options --> Name, Value  |  AWS_NO_SIGN_REQUEST, YES  |
-
-### Downloading data from individual tiles
+**Downloading data from individual tiles**
 
 :::{note}
 
