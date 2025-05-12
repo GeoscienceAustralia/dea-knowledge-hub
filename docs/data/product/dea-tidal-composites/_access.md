@@ -89,11 +89,13 @@ For more on streaming cloud datasets, see: [QGIS Tutorial: How to read a Cloud O
 
 This is a test of the top dropdown:
 
-* list 1
+:::{dropdown} * list 1
+    Some indented text
+:::
+
 :::{dropdown} * list 2
     * list 2.1
 :::
-
 :::{dropdown} 1. This will be nested dropdown number 2
 
 :::
