@@ -52,6 +52,7 @@ These Virtual Rasters stream data from the cloud by default, avoiding you to hav
 3) Left click to download the `.vrt` file of interest e.g. `ga_s2_tidal_composites_cyear_3_2018_vrt-low-truecolour.vrt`
 4) From your `Downloads` folder, drag the `.vrt` file into your GIS project
 5) The multi-band dataset will stream seamlessly into your QGIS project via the `.vrt` file which contains instructions for combining, streaming and viewing multiple COG files simultaneously.
+
 :::
 
 :::{dropdown}* **Streaming continental COG mosaics in Esri ArcPro**
