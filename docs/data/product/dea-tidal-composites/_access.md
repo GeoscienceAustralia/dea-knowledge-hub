@@ -31,7 +31,7 @@ To *stream* continental data mosaics of the individual annual bands:
     * [QGIS: tutorial](https://cogeo.org/qgis-tutorial.html)
     * :::{dropdown} [ESRI: tutorial](https://pro.arcgis.com/en/pro-app/latest/help/projects/connect-to-cloud-stores.htm) 
     
-    Create a cloud storage connection using the following settings, leaving all others blank:
+        Create a cloud storage connection using the following settings, leaving all others blank:
 
         |  Parameter  |  Setting  |
         |  ---------  |  -------  |
