@@ -124,28 +124,28 @@ When the observation count in 15 % of all observations is less than 20, the near
 
 **1. Load and pre-process data**
 
-1. [Load](https://github.com/GeoscienceAustralia/dea-intertidal/blob/develop/intertidal/io.py#L166) analysis ready satellite data from Sentinel-2A, -2B and -2C for the epoch of interest
-1. Remove [sunglinted](https://github.com/GeoscienceAustralia/dea-notebooks/blob/develop/Tools/dea_tools/coastal.py#L2327) pixels by masking out pixels with glint angles of less than 20 degrees
-1. Proceed with tide modelling and geomedian calculation only if the full time-series of input satellite images has 50 or more observations
+1. [Load](https://github.com/GeoscienceAustralia/dea-intertidal/blob/develop/intertidal/io.py#L166) analysis ready satellite data from Sentinel-2A, -2B, and -2C for the epoch of interest.
+1. Remove [sunglinted](https://github.com/GeoscienceAustralia/dea-notebooks/blob/develop/Tools/dea_tools/coastal.py#L2327) pixels by masking out pixels with glint angles of less than 20 degrees.
+1. Proceed with tide modelling and geomedian calculation only if the full time-series of input satellite images has 50 or more observations.
 
-**2. Calculate high and low tide geomedian composites**
+**2. Calculate high- and low-tide geomedian composites**
 
-1. [Model tide heights](https://github.com/GeoscienceAustralia/eo-tides/blob/main/eo_tides/eo.py#L306) for the spatial extent and timesteps of the loaded satellite data array
-1. Attribute tide heights to the valid satellite observations
-1. Rank all observations by ascending tide height
-1. Select the observations in the top and bottom 15 percent of satellite observed tide heights by identifying their associated tide height rankings
-1. If the number of observations in the top and bottom 15 percent is less than 20, gapfill up to 20 by taking the next highest or lowest tide heights from the full stack of satellite observations respectively
+1. [Model tide heights](https://github.com/GeoscienceAustralia/eo-tides/blob/main/eo_tides/eo.py#L306) for the spatial extent and timesteps of the loaded satellite data array.
+1. Attribute tide heights to the valid satellite observations.
+1. Rank all observations by ascending tide height.
+1. Select the observations in the top and bottom 15 % of satellite-observed tide heights by identifying their associated tide height rankings.
+1. If the number of observations in the top and bottom 15 % is less than 20, gapfill up to the count of 20 observations by taking the next highest or lowest tide heights from the full stack of satellite observations respectively.
 1. Calculate a [geomedian](https://github.com/opendatacube/odc-algo/blob/main/odc/algo/_geomedian.py#L188) on each subset and count the contributing number of clear observations.
 
 ## Software
 
 This work was enabled by a range of Python libraries and packages whose code repositories include:
 
-* [DEA Intertidal Github](https://github.com/GeoscienceAustralia/dea-intertidal) &mdash; A codebase for DEA Intertidal product generation workflows 
-* [EO-Tides Github](https://github.com/GeoscienceAustralia/eo-tides) &mdash; A codebase for integrating satellite Earth observations with tide modelling
-* [DEA Tools Github](https://github.com/GeoscienceAustralia/dea-notebooks) &mdash; Earth observation data manipulation tools 
-* [PyTMD Github](https://github.com/tsutterley/pyTMD) &mdash; Python-based tidal prediction software
-* [odc-algo](https://github.com/opendatacube/odc-algo) &mdash; A codebase containing algorithms to use with Open Data Cube workflows
+* [DEA Intertidal](https://github.com/GeoscienceAustralia/dea-intertidal) &mdash; DEA Intertidal product generation workflows.
+* [eo-tides](https://github.com/GeoscienceAustralia/eo-tides) &mdash; Tools for integrating satellite Earth observations with tide modelling.
+* [DEA Tools](https://github.com/GeoscienceAustralia/dea-notebooks/tree/develop/Tools) &mdash; Earth observation data manipulation tools.
+* [PyTMD](https://github.com/tsutterley/pyTMD) &mdash; Python-based tidal prediction software.
+* [odc-algo](https://github.com/opendatacube/odc-algo) &mdash; Algorithms for use with Open Data Cube workflows.
 
 ## References
 
