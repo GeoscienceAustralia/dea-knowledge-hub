@@ -21,7 +21,7 @@ DEA Tidal Composite data is extremely large (e.g. up to 15 gb per file). We **st
 :::
 
 
-:::{dropdown} - Streaming continental COG mosaics in QGIS
+**Streaming continental COG mosaics in QGIS**
     
 1. Navigate into the DEA Tidal Composites [continental_mosaics](https://data.dea.ga.gov.au/?prefix=derivative/ga_s2_tidal_composites_cyear_3/1-0-0/continental_mosaics/) directory on Amazon S3
 1. Select your year of interest e.g. `2018--P1Y/`
@@ -34,27 +34,25 @@ DEA Tidal Composite data is extremely large (e.g. up to 15 gb per file). We **st
 1. Select `Add` to stream the layer. Data should appear on the map after a few seconds delay (or several minutes on slow internet connections)
 
 :::{tip}
-
 For more on streaming cloud datasets, see: [QGIS Tutorial: How to read a Cloud Optimized GeoTIFF with QGIS](https://cogeo.org/qgis-tutorial.html)
 :::
+
+**Streaming multi-band continental COG mosaics in QGIS**
+
+:::{note}
+
+To make it easier to visualise DEA Tidal Composite bands in true and false colour, we provide several Virtual Raster (`.vrt`) files that can be loaded into QGIS.
+These Virtual Rasters stream data from the cloud by default, avoiding you to have to download multiple files.
 :::
-
-:::{dropdown} - Streaming multi-band continental COG mosaics in QGIS
-
-.. note::
-
-    To make it easier to visualise DEA Tidal Composite bands in true and false colour, we provide several Virtual Raster (`.vrt`) files that can be loaded into QGIS.
-    These Virtual Rasters stream data from the cloud by default, avoiding you to have to download multiple files.
-
 
 1. Navigate into the DEA Tidal Composites [continental_mosaics](https://data.dea.ga.gov.au/?prefix=derivative/ga_s2_tidal_composites_cyear_3/1-0-0/continental_mosaics/) directory on Amazon S3
 1. Select the year of interest e.g. `2018--P1Y/`
 1. Left click to download the `.vrt` file of interest e.g. `ga_s2_tidal_composites_cyear_3_2018_vrt-low-truecolour.vrt`
 1. From your `Downloads` folder, drag the `.vrt` file into your GIS project
 1. The multi-band dataset will stream seamlessly into your QGIS project via the `.vrt` file which contains instructions for combining, streaming and viewing multiple COG files simultaneously. 
-:::
 
-:::{dropdown} - Streaming continental COG mosaics in Esri ArcPro
+
+**Streaming continental COG mosaics in Esri ArcPro**
 
 1. Follow the Esri [connect to a cloud store tutorial](https://pro.arcgis.com/en/pro-app/latest/help/projects/connect-to-cloud-stores.htm) to connect Esri ArcPro to DEA's Amazon S3 bucket
 1. Create a cloud storage connection using the following settings, leaving all others blank:
@@ -70,13 +68,12 @@ For more on streaming cloud datasets, see: [QGIS Tutorial: How to read a Cloud O
     |  Provider Options  |  ARC_DEEP_CRAWL=NO  |
     |  Provider Options  |  AWS_NO_SIGN_REQUEST=TRUE  |
 
+**Downloading data from individual tiles**
+
+:::{note}
+
+Downloading individual tiles is not recommended, but can be useful for accessing small amounts of data. 
 :::
-
-:::{dropdown} - Downloading data from individual tiles
-
-.. note::
-
-    Downloading individual tiles is not recommended, but can be useful for accessing small amounts of data. 
 
 1. Navigate into the [ga_s2ls_intertidal_cyear_3](https://data.dea.ga.gov.au/?prefix=derivative/ga_s2_tidal_composites_cyear_3/1-0-0/continental_mosaics/) directory on Amazon S3
 1. Left-click on the `ga_summary_grid_c3_32km_coastal.geojson` file to download to your computer. This file can be used in a GIS package to identify the product tiles that you require for a given location. Alternatively, you can access this file via DEA Maps to identify required tiles (Sea, ocean and coast > DEA Intertidal > DEA Intertidal 32 km tile grid).
@@ -84,30 +81,3 @@ For more on streaming cloud datasets, see: [QGIS Tutorial: How to read a Cloud O
 1. Left-click on the required product layer to download. See [Technical Information](./?tab=description#product-layers) for details on file naming and product layer details.
 
 :::
-
-:::{dropdown} Test
-
-This is a test of the top dropdown:
-
-:::{dropdown} * list 1
-    Some indented text
-:::
-
-:::{dropdown} * list 2
-    * list 2.1
-:::
-:::{dropdown} 1. This will be nested dropdown number 2
-
-:::
-
-:::{dropdown}1. This will be nested dropdown number 3
-
-:::
-
-:::{important}
-This is important information
-:::
-
-End of nested dropdown test
-:::
-
