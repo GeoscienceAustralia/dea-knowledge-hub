@@ -91,7 +91,7 @@ This is a test of the top dropdown:
 
 * list 1
 :::{dropdown} * list 2
-* list 2.1
+    * list 2.1
 :::
 
 :::{dropdown} 1. This will be nested dropdown number 2
