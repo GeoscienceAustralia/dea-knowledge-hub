@@ -1,11 +1,8 @@
 ## Background
 
-Intertidal zones are coastal environments exposed to both air and water, at low and high tide consecutively, and include sandy beaches, tidal flats, rocky shores and reefs.
-They also characterise critical coastal habitats and ecosystems, and support a wide range of species and ecosystem-services.
-Increasingly though, these dynamic environments are faced with threats from land reclaimation, coastal erosion and rising sea levels, amongst others.
+Intertidal zones are coastal environments that are exposed to both air and water at different times due to the cycle of low and high tides. These zones can include sandy beaches, tidal flats, rocky shores, and reefs. Many of them are critical coastal habitats and ecosystems which support a wide range of species and ecosystem services. Increasingly, these dynamic environments are faced with threats such as land reclamation, coastal erosion, and rising sea levels.
 
-The ever-changing nature of the tides makes it difficult to systematically capture consistent imagery of the intertidal zone, particularly across large regions and especially in remote areas of the country.
-[Geomedian statistical techniques](https://knowledge.dea.ga.gov.au/data/product/dea-geometric-median-and-median-absolute-deviation-landsat/) provide a robust method to combine tide-attributed time-series satellite imagery and produce representative and artefact free imagery 'composites' of Australia's coastal high and low tide environments.
+The ever-changing nature of the tides makes it difficult to systematically capture consistent imagery of an intertidal zone, particularly across large regions and in remote areas of the country. This is why [Geomedian statistical techniques](/data/product/dea-geometric-median-and-median-absolute-deviation-landsat/) where used. These are robust techniques which combine tide-attributed time-series satellite imagery to produce representative and artefact-free imagery 'composites' of Australia's coastal high- and low-tide environments.
 
 ## What this product offers
 
@@ -16,7 +13,7 @@ Sentinel-2 satellite images are tidally attributed though pairing with pixel-bas
 The [ensemble tidal modelling](ensemble-tidal-modelling) approach was implemented to account for the varying performance and biases of existing global ocean tide models across the complex tidal regimes and coastal regions of Australia.
 Tidal attribution allows the imagery archive to be sorted by tide height rather than date, enabling visualisation of the intertidal zone during any stage of the tidal cycle.  
 
-Spatially and temporally aligned to the [DEA Intertidal product suite](https://knowledge.dea.ga.gov.au/data/product/dea-intertidal/), DEA Tidal Composites are an annually updated data suite, generated from rolling 3-year epochs, at a 10 m spatial resolution.
+Spatially and temporally aligned to the [DEA Intertidal product suite](/data/product/dea-intertidal/), DEA Tidal Composites are an annually updated data suite, generated from rolling 3-year epochs, at a 10 m spatial resolution.
 
 DEA Tidal Composites include low and high tide imagery products and their associated quality assurance layers. 
 Lowtide and hightide layers represent composites of the synthetic geomedian surface reflectance from Sentinel-2A, -2B and -2C analysis-ready data streams. 
@@ -36,7 +33,7 @@ Quality assurance layers are provided to support interpretation of the lowtide a
 The DEA Tidal Composites product is a 25-band mosaic, consistent with Sentinel-2, and produced to allow visualisation of the shallow water and intertidal coastal regions as observed at high or low tide. 
 It is continental (coastal) in coverage and includes geomedian surface reflectance, along with pixel level metadata for each of the high and low tide mosaics.
 
-The [file naming convention](https://knowledge.dea.ga.gov.au/guides/reference/collection_3_naming/#different-types-of-products) is as follows:
+The [file naming convention](/guides/reference/collection_3_naming/#different-types-of-products) is as follows:
 
 ```
 [ORGANISATION]_[PLATFORM]_[PRODUCT]_[REPORTING PERIOD]_[COLLECTION]_[TILE REFERENCE]_[DATA DATE]--[DATA PERIOD]_[PRODUCT STATUS]_[BAND NAME].[FILE EXTENSION]
@@ -50,7 +47,7 @@ For example:
 
 ### Ensemble tide modelling
 
-The Ensemble Tidal Modelling approach was implemented to account for the varying [performance and biases](https://knowledge.dea.ga.gov.au/data/product/dea-intertidal/?tab=description#ensemble-tidal-modelling) of existing global ocean tide models across the complex tidal regimes and coastal regions of Australia. 
+The Ensemble Tidal Modelling approach was implemented to account for the varying [performance and biases](/data/product/dea-intertidal/?tab=description#ensemble-tidal-modelling) of existing global ocean tide models across the complex tidal regimes and coastal regions of Australia. 
 The ensemble process utilises ancillary data to select and weight tidal models at any given coastal location, based on how well each model correlates with local satellite-observed patterns of tidal inundation, and water levels measured by satellite altimetry. 
 A single ensemble tidal output was generated by combining the top 3 locally optimal models, and then used for all downstream product workflows.
 
