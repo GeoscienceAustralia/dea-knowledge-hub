@@ -5,24 +5,24 @@ Intertidal zones are coastal environments that are exposed to both air and water
 The ever-changing nature of the tides makes it difficult to systematically capture consistent imagery of an intertidal zone, particularly across large regions and in remote areas of the country. This is why [Geomedian statistical techniques](/data/product/dea-geometric-median-and-median-absolute-deviation-landsat/) where used. These are robust techniques which combine tide-attributed time-series satellite imagery to produce representative and artefact-free imagery 'composites' of Australia's coastal high- and low-tide environments.
 
 This product provides a suite of cloud-free composite Sentinel-2 satellite datasets that enable imaging of Australian coastal intertidal zones at both high and low tide. 
-Using a geometric median (geomedian), the highest and lowest 15 % of satellite-observed tide heights from the Digital Earth Australia (DEA) Sentinel-2 imagery archive are combined to deliver annual snapshots of Australian coastal high and low tide environments.
+Using a geometric median (geomedian), the highest and lowest 15 % of satellite-observed tide heights from the Digital Earth Australia (DEA) Sentinel-2 imagery archive are combined to deliver annual snapshots of Australian coastal high- and low-tide environments.
 
 Sentinel-2 satellite images are tidally attributed though pairing with pixel-based tidal modelling, generated from a selected ensemble of the best performing global tide models under local conditions.
-The [ensemble tidal modelling](ensemble-tidal-modelling) approach was implemented to account for the varying performance and biases of existing global ocean tide models across the complex tidal regimes and coastal regions of Australia.
-Tidal attribution allows the imagery archive to be sorted by tide height rather than date, enabling visualisation of the intertidal zone during any stage of the tidal cycle.  
+The ensemble tidal modelling approach (see below) was implemented to account for the varying performances and biases of existing global ocean tide models across the complex tidal regimes and coastal regions of Australia.
+Tidal attribution allows the imagery archive to be sorted by tide height rather than date, enabling you to selectively view the intertidal zone at any stage of the tidal cycle.  
 
-Spatially and temporally aligned to the [DEA Intertidal product suite](/data/product/dea-intertidal/), DEA Tidal Composites are an annually updated data suite, generated from rolling 3-year epochs, at a 10 m spatial resolution.
+DEA Tidal Composites is an annually updated data suite, generated from rolling 3-year epochs, at a 10 m spatial resolution. It is spatially and temporally aligned to the [DEA Intertidal product suite](/data/product/dea-intertidal/).
 
-DEA Tidal Composites include low and high tide imagery products and their associated quality assurance layers. 
-Lowtide and hightide layers represent composites of the synthetic geomedian surface reflectance from Sentinel-2A, -2B and -2C analysis-ready data streams. 
-The geomedian calculation maintains the spectral relationships between bands (Roberts et al., 2017), ensuring that the DEA Tidal Composites product delivers robust and valid surface reflectance spectra suitable for uses such as habitat mapping (Li et al., 2012) and delivers cloud free and noise reduced visualisation of the shallow water and intertidal coastal regions of Australia (Sagar et al., 2018). 
-Quality assurance layers are provided to support interpretation of the lowtide and hightide datasets and include the tide-height thresholds above and below which associated images were included in the compositing process and the count of clear input images that contributed to each pixel in the composites.
+DEA Tidal Composites includes both low- and high-tide imagery products and their associated quality assurance layers. 
+The low tide and high tide layers represent composites of the synthetic Geomedian surface reflectance from Sentinel-2A, -2B, and -2C analysis-ready data streams. 
+The Geomedian calculation maintains the spectral relationships between bands (Roberts et al., 2017), ensuring that the DEA Tidal Composites product delivers robust and valid surface reflectance spectra suitable for uses such as habitat mapping (Li et al., 2012) and delivers a cloud-free and noise-reduced visualisation of the shallow water and intertidal coastal regions of Australia (Sagar et al., 2018). 
+Quality assurance layers are provided for the low tide and high tide datasets. These include the tide-height thresholds above and below which associated images were included in the compositing process and they also include the count of clear input images that contributed to each pixel in the composites.
 
 ## Applications
 
-* Mapping cover types within the intertidal zone
-* Visualising the full observed extent of the tidal range around the Australian continental coastline
-* Monitoring for change in Australian coastal environments
+* Mapping cover types within the intertidal zone.
+* Visualising the full observed extent of the tidal range around the Australian continental coastline.
+* Monitoring for change in Australian coastal environments.
 
 ## Technical information
 
@@ -40,7 +40,7 @@ The [file naming convention](/guides/reference/collection_3_naming/#different-ty
 For example:
 
 ```
- `ga_s2_tidal_composites_cyear_3_x080y125_2022--P1Y_final_low-red-edge-3.tif`
+`ga_s2_tidal_composites_cyear_3_x080y125_2022--P1Y_final_low-red-edge-3.tif`
 ```
 
 ### Ensemble tide modelling
