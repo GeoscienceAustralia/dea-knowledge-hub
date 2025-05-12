@@ -42,10 +42,32 @@ The [file naming convention](https://knowledge.dea.ga.gov.au/guides/reference/co
 [ORGANISATION]_[PLATFORM]_[PRODUCT]_[REPORTING PERIOD]_[COLLECTION]_[TILE REFERENCE]_[DATA DATE]--[DATA PERIOD]_[PRODUCT STATUS]_[BAND NAME].[FILE EXTENSION]
 ```
 
-For example:
+#### Datasets
+
+Annual files for each of the 25 product bands are available on Amazon Web Services in two formats: 32 km2 tiles and continental mosaics.
+Additionally, multi-band continental imagery composites are also available.
+For access and usage information, see the [Access tab](./?tab=access)
+
+32 km2 grid tiles are available as downloadable geotiff files, for example:
 
 ```
  `ga_s2_tidal_composites_cyear_3_x080y125_2022--P1Y_final_low-red-edge-3.tif`
+```
+
+Single-band annual continental data mosaics are delivered to support access and navigability of DEA Tidal Composites data in geospatial information system (GIS) environments.
+These datasets, delivered in cloud-optimised geotiff (COG) format, are recommended for fast and efficient data streaming of single-band layers of the DEA Tidal Composites product.
+An example of the COG file naming convention is:
+
+```
+`ga_s2_tidal_composites_cyear_3_2022_low-red-edge-3.tif`
+```
+
+Multi-band annual continental data mosaics are provided for fast and efficient streaming of true (red-green-blue) and false colour (green-swir-nir) imagery composites.
+Delivered in virtual raster format (VRT), these files stream and compile multiple single-band COG datasets and are recommended to streamline imagery exploration in GIS environments.
+The VRT file naming convention looks like:
+
+```
+`ga_s2_tidal_composites_cyear_3_2022_vrt-low-truecolour.vrt`
 ```
 
 ### Ensemble tide modelling
