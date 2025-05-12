@@ -21,7 +21,7 @@ This allows you to rapidly access data from the entire Australian continent, wit
 DEA Tidal Composite data is extremely large (e.g. up to 15 gb per file). We **strongly recommend streaming data** rather than downloading individual raster files. If you encounter difficulty with the instructions below or the COG files themselves, please reach out to earth.observation@ga.gov.au for assistance.
 :::
 
-:::{dropdown} * **Streaming continental COG mosaics in QGIS**
+:::{dropdown}* **Streaming continental COG mosaics in QGIS**
 
 1) Navigate into the DEA Tidal Composites [continental_mosaics](https://data.dea.ga.gov.au/?prefix=derivative/ga_s2_tidal_composites_cyear_3/1-0-0/continental_mosaics/) directory on Amazon S3
 2) Select your year of interest e.g. `2018--P1Y/`
@@ -39,7 +39,7 @@ For more on streaming cloud datasets, see: [QGIS Tutorial: How to read a Cloud O
 :::
 :::
 
-:::{dropdown} * **Streaming multi-band continental COG mosaics in QGIS**
+:::{dropdown}* **Streaming multi-band continental COG mosaics in QGIS**
 
 :::{note}
 
@@ -54,7 +54,7 @@ These Virtual Rasters stream data from the cloud by default, avoiding you to hav
 5) The multi-band dataset will stream seamlessly into your QGIS project via the `.vrt` file which contains instructions for combining, streaming and viewing multiple COG files simultaneously.
 :::
 
-:::{dropdown} * **Streaming continental COG mosaics in Esri ArcPro**
+:::{dropdown}* **Streaming continental COG mosaics in Esri ArcPro**
 
 1) Follow the Esri [connect to a cloud store tutorial](https://pro.arcgis.com/en/pro-app/latest/help/projects/connect-to-cloud-stores.htm) to connect Esri ArcPro to DEA's Amazon S3 bucket
 
@@ -73,11 +73,11 @@ These Virtual Rasters stream data from the cloud by default, avoiding you to hav
 
 :::
 
-:::{dropdown} * **Downloading data from individual tiles**
+:::{dropdown}* **Downloading data from individual tiles**
 
 :::{note}
 
-Downloading individual tiles is not recommended, but can be useful for accessing small amounts of data.:::
+Downloading individual tiles is not recommended, but can be useful for accessing small amounts of data. :::
 
 1) Navigate into the [ga_s2ls_intertidal_cyear_3](https://data.dea.ga.gov.au/?prefix=derivative/ga_s2_tidal_composites_cyear_3/1-0-0/continental_mosaics/) directory on Amazon S3
 
@@ -86,5 +86,7 @@ Downloading individual tiles is not recommended, but can be useful for accessing
 3) Navigate to the [DEA Tidal Composites](https://data.dea.ga.gov.au/?prefix=derivative/ga_s2_tidal_composites_cyear_3/1-0-0/) directory and select the required tile folder, first using the tile ‘x’ reference (e.g. x079) and then the tile ‘y’ reference (e.g. y123). Then select your year of interest.
 
 4) Left-click on the required product layer to download. See [Technical Information](./?tab=description#product-layers) for details on file naming and product layer details.
+
 :::
 :::
+ 
