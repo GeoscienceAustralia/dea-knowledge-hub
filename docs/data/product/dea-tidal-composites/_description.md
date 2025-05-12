@@ -100,7 +100,7 @@ Maintenance of the spectral relationships between geomedian bands ensures they c
 
 A pixel-based quality assurance layer for identifying the maximum tide height included in the low-tide composite.
 Usually, this value corresponds to the lowest 15th percentile satellite-observed tide height. 
-Pixels with less than 20 clear observations in this 15th percentile range are gapfilled up to 20 with the next lowest satellite-observed tide height observations. This is done to ensure sufficient data density to produce a clear composite image.
+Pixels with less than 20 clear observations in this 15th percentile range are gapfilled up to a count of 20 observations using the next lowest satellite-observed tide height observations. This is done to ensure sufficient data density to produce a clear composite image.
 When a pixel is gapfilled, the highest gapfilled tide height is reported for that pixel in this 'low threshold' layer.
 This 'low threshold' layer is only valid for marine and coastal pixels.
 
@@ -108,7 +108,7 @@ This 'low threshold' layer is only valid for marine and coastal pixels.
 
 A pixel-based quality assurance layer for identifying the minimum tide height included in the high-tide composite.
 Usually, this value corresponds to the highest 15th percentile satellite-observed tide height. 
-Pixels with less than 20 clear observations in this 15th percentile range are gapfilled up to 20 with the next highest satellite-observed tide height observations. This is done to ensure sufficient data density to produce a clear composite image.
+Pixels with less than 20 clear observations in this 15th percentile range are gapfilled up to a count of 20 observations using the next highest satellite-observed tide height observations. This is done to ensure sufficient data density to produce a clear composite image.
 When a pixel is gapfilled, the lowest gapfilled tide height is reported for that pixel in this 'high threshold' layer.
 This 'high threshold' layer is only valid for marine and coastal pixels.
 
@@ -118,10 +118,7 @@ This pixel-based quality assurance layer represents the number of clear observat
 This layer typically identifies the number of clear satellite observations in 15 % of all observations per pixel. 
 When the observation count in 15 % of all observations is less than 20, the nearest tide-height observations (if available) are used to gapfill up to a count of 20 clear observations.
 
-## Lineage
-
-The product has been developed to provide a geomedian composite dataset of coastal regions of Australia for the highest and lowest 15 % of satellite-observed tides in the Sentinel-2 catalogue, enabling both visualisation and spectral analysis. 
-Coastal Sentinel-2 observations are composited relative to tidal modelling of the Australian coastline using an ensemble of global tide models, leveraging python packages [eo-tides](https://github.com/GeoscienceAustralia/eo-tides) and [pyTMD](https://github.com/tsutterley/pyTMD).
+% ## Lineage
 
 ## Processing steps
 
