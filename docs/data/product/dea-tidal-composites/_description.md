@@ -115,7 +115,7 @@ This 'high threshold' layer is only valid for marine and coastal pixels.
 #### Quality assurance: Count clear (qa_count_clear)
 
 This pixel-based quality assurance layer represents the number of clear observations per pixel that are used in both the high- and low-tide composites.
-This layer typically identifies the number of clear satellite observations in 15 % of all observations per pixel. 
+This layer typically identifies 15 % of all observations. 
 When the observation count in 15 % of all observations is less than 20, the nearest tide-height observations (if available) are used to gapfill up to a count of 20 clear observations.
 
 % ## Lineage
