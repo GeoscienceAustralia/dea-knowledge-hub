@@ -1,17 +1,18 @@
 :::{dropdown} How to view the data on DEA Maps
 
-To view and access the data interactively:
+To add DEA Tidal Composites to DEA Maps manually:
 
-1. Open [DEA Maps](https://maps.dea.ga.gov.au).
-1. Click `Explore map data`.
-1. Select `Sea, ocean and coast` > `DEA Tidal Composites` > `DEA Tidal Composites (Sentinel-2)`. 
-1. Click `Add to the map`, or the `+` symbol to add the data to the map.
-1. Explore using the `Time` and `Styles` options in the left-hand workbench
+1. Open [DEA Maps](https://maps.dea.ga.gov.au/).
+1. Select **Explore map data** on the top-left.
+1. Select **Sea, ocean and coast** &gt; **DEA Tidal Composites** &gt; **DEA Tidal Composites (Sentinel-2)**.
+1. Click the blue **Add to the map** button on top-right.
+
+Now you can explore using the **Time** and **Styles** options in the left-hand workbench.
 :::
 
 :::{dropdown} How to access the data on AWS
 
-To *stream* continental data mosaics of the individual annual bands:
+To stream continental data mosaics of the individual annual bands:
 
 1) Navigate into the DEA Tidal Composites [continental_mosaics](https://data.dea.ga.gov.au/?prefix=derivative/ga_s2_tidal_composites_cyear_3/1-0-0/continental_mosaics/) AWS S3 bucket
 2) Select the year of interest e.g. `2018--P1Y/`
