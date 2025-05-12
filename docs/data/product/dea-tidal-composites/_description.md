@@ -2,10 +2,10 @@
 
 Intertidal zones are coastal environments that are exposed to both air and water at different times due to the cycle of low and high tides. These zones can include sandy beaches, tidal flats, rocky shores, and reefs. Many of them are critical coastal habitats and ecosystems which support a wide range of species and ecosystem services. Increasingly, these dynamic environments are faced with threats such as land reclamation, coastal erosion, and rising sea levels.
 
-The ever-changing nature of the tides makes it difficult to systematically capture consistent imagery of an intertidal zone, particularly across large regions and in remote areas of the country. This is why [Geomedian statistical techniques](/data/product/dea-geometric-median-and-median-absolute-deviation-landsat/) where used. These are robust techniques which combine tide-attributed time-series satellite imagery to produce representative and artefact-free imagery 'composites' of Australia's coastal high- and low-tide environments.
+The ever-changing nature of the tides makes it difficult to systematically capture consistent imagery of an intertidal zone, particularly across large regions and in remote areas of the country. This is why [Geomedian statistical techniques](/data/product/dea-geometric-median-and-median-absolute-deviation-landsat/) where used. These are robust techniques which combine tide-attributed time-series satellite imagery to produce representative and artefact-free imagery 'composites' of Australia's coastal high- and low tide environments.
 
 This product provides a suite of cloud-free composite Sentinel-2 satellite datasets that enable imaging of Australian coastal intertidal zones at both high and low tide. 
-Using a geometric median (geomedian), the highest and lowest 15 % of satellite-observed tide heights from the Digital Earth Australia (DEA) Sentinel-2 imagery archive are combined to deliver annual snapshots of Australian coastal high- and low-tide environments.
+Using a geometric median (geomedian), the highest and lowest 15 % of satellite-observed tide heights from the Digital Earth Australia (DEA) Sentinel-2 imagery archive are combined to deliver annual snapshots of Australian coastal high and low tide environments.
 
 Sentinel-2 satellite images are tidally attributed though pairing with pixel-based tidal modelling, generated from a selected ensemble of the best performing global tide models under local conditions.
 The ensemble tidal modelling approach (see below) was implemented to account for the varying performance and biases of existing global ocean tide models across the complex tidal regimes and coastal regions of Australia.
@@ -30,7 +30,7 @@ Here are some of the ways this data product can be used.
 
 ### Features
 
-This product is a 25-band mosaic, consistent with Sentinel-2. It is continental (coastal) in coverage and includes geomedian surface reflectance along with pixel-level metadata for each of the high- and low-tide mosaics.
+This product is a 25-band mosaic, consistent with Sentinel-2. It is continental (coastal) in coverage and includes geomedian surface reflectance along with pixel-level metadata for each of the high and low tide mosaics.
 
 The [file naming convention](/guides/reference/collection_3_naming/) is as follows:
 
@@ -88,7 +88,7 @@ See the attributes of these layers in the [Specifications tab](./?tab=specificat
 
 The 11 bands whose names start with `low_` are delivered in the spectral resolution of the Sentinel-2 band set. 
 Each band represents synthetic data, derived from the geomedian calculation of the input Sentinel-2 satellite data from the lowest 15 % of satellite-observed tide heights during each 3-year analysis epoch. 
-Maintenance of the spectral relationships between geomedian bands ensures they can be combined to produce low-tide imagery and analysis in coastal environments. 
+Maintenance of the spectral relationships between geomedian bands ensures they can be combined to produce low tide imagery and analysis in coastal environments. 
 
 #### High tide composites (multiple 'high_' bands)
 
@@ -98,7 +98,7 @@ Maintenance of the spectral relationships between geomedian bands ensures they c
 
 #### Quality assurance: Low threshold (qa_low_threshold)
 
-A pixel-based quality assurance layer for identifying the maximum tide height included in the low-tide composite.
+A pixel-based quality assurance layer for identifying the maximum tide height included in the low tide composite.
 Usually, this value corresponds to the lowest 15th percentile satellite-observed tide height. 
 Pixels with less than 20 clear observations in this 15th percentile range are gapfilled up to a count of 20 observations using the next lowest satellite-observed tide height observations. This is done to ensure sufficient data density to produce a clear composite image.
 When a pixel is gapfilled, the highest gapfilled tide height is reported for that pixel in this 'low threshold' layer.
@@ -114,7 +114,7 @@ This 'high threshold' layer is only valid for marine and coastal pixels.
 
 #### Quality assurance: Count clear (qa_count_clear)
 
-This pixel-based quality assurance layer represents the number of clear observations per pixel that are used in both the high- and low-tide composites.
+This pixel-based quality assurance layer represents the number of clear observations per pixel that are used in both the high and low tide composites.
 This layer typically identifies 15 % of all observations. 
 When the observation count in 15 % of all observations is less than 20, the nearest tide-height observations (if available) are used to gapfill up to a count of 20 clear observations.
 
@@ -128,7 +128,7 @@ When the observation count in 15 % of all observations is less than 20, the near
 1. Remove [sunglinted](https://github.com/GeoscienceAustralia/dea-notebooks/blob/develop/Tools/dea_tools/coastal.py#L2327) pixels by masking out pixels with glint angles of less than 20 degrees.
 1. Proceed with tide modelling and geomedian calculation only if the full time-series of input satellite images has 50 or more observations.
 
-**2. Calculate high- and low-tide geomedian composites**
+**2. Calculate high and low tide geomedian composites**
 
 1. [Model tide heights](https://github.com/GeoscienceAustralia/eo-tides/blob/main/eo_tides/eo.py#L306) for the spatial extent and timesteps of the loaded satellite data array.
 1. Attribute tide heights to the valid satellite observations.

@@ -165,14 +165,14 @@ bands_table:
     nodata: .nan
     units: Metres above MSL
     type: float32
-    description: Maximum tide height threshold used to identify low-tide satellite observations.
+    description: Maximum tide height threshold used to identify low tide satellite observations.
   - name: qa_high_threshold
     aliases: [high_threshold]
     resolution: 10 m
     nodata: .nan
     units: Metres above MSL
     type: float32
-    description: Minimum tide height threshold used to identify high-tide satellite observations.
+    description: Minimum tide height threshold used to identify high tide satellite observations.
   - name: qa_count_clear
     aliases: [count_clear]
     resolution: 10 m
