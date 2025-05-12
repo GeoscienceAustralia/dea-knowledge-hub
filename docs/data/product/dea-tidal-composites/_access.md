@@ -29,7 +29,7 @@ To *stream* continental data mosaics of the individual annual bands:
 9) Select `ok` to stream the layer 
 10) For more on streaming cloud datasets, see:
     * [QGIS: tutorial](https://cogeo.org/qgis-tutorial.html)
-    * [ESRI: Create Cloud Storage Connection](https://pro.arcgis.com/en/pro-app/latest/help/projects/connect-to-cloud-stores.htm) using the following settings, leaving all others blank:
+    * :::{dropdown} [ESRI: Create Cloud Storage Connection](https://pro.arcgis.com/en/pro-app/latest/help/projects/connect-to-cloud-stores.htm) using the following settings, leaving all others blank:
 
         |  Parameter  |  Setting  |
         |  ---------  |  -------  |
@@ -40,7 +40,7 @@ To *stream* continental data mosaics of the individual annual bands:
         |  Region (Environment)  |  Asia Pacific (Sydney)  |
         |  Service Endpoint  |  s3.ap-southeast-2.amazonaws.com  |
         |  Provider Options -->  Name  |  ARD_DEEP_CRAWL  |
-        |  Provider Options --> Value  |  NO  |
+        |  Provider Options --> Value  |  NO  |:::
 
 
 To *stream* annual continental multi-band imagery mosaics:
