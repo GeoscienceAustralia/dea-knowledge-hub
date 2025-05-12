@@ -43,6 +43,7 @@ To *stream* continental data mosaics of the individual annual bands:
         |  Service Endpoint  |  s3.ap-southeast-2.amazonaws.com  |
         |  Provider Options -->  Name  |  ARC_DEEP_CRAWL  |
         |  Provider Options --> Value  |  NO  |
+        |  ---------  |  -------  |
         :::
 
 
