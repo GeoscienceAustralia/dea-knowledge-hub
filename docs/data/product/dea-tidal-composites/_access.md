@@ -42,15 +42,13 @@ Learn more about streaming cloud datasets: [How to read a Cloud Optimized GeoTIF
 
 **Streaming multi-band continental COG mosaics in QGIS**
 
-:::{note}
-To make it easier to visualise DEA Tidal Composite bands in true and false colour, we provide several Virtual Raster (`.vrt`) files that can be loaded into QGIS.
-These Virtual Rasters stream data from the cloud by default, avoiding you to have to download multiple files by providing the instructions for combining, streaming and viewing multiple COG files simultaneously. 
-:::
+To make it easier to visualise DEA Tidal Composite bands in true and false colour, we provide several Virtual Raster files (`.vrt`) that can be loaded into QGIS.
+These Virtual Rasters stream data from the cloud automatically, avoiding the need to download multiple files. They also provide instructions for combining, streaming, and viewing multiple COG files simultaneously. 
 
-1. Navigate into the DEA Tidal Composites [continental_mosaics](https://data.dea.ga.gov.au/?prefix=derivative/ga_s2_tidal_composites_cyear_3/1-0-0/continental_mosaics/) directory on Amazon S3
-1. Select the year of interest e.g. `2018--P1Y/`
-1. Left click to download the `.vrt` file of interest e.g. `ga_s2_tidal_composites_cyear_3_2018_vrt-low-truecolour.vrt`
-1. From your `Downloads` folder, drag the `.vrt` file into your GIS project
+1. Open the DEA Tidal Composites [continental_mosaics](https://data.dea.ga.gov.au/?prefix=derivative/ga_s2_tidal_composites_cyear_3/1-0-0/continental_mosaics/) directory in our Amazon S3 bucket.
+1. Enter a directory of a particular year, e.g. `2018--P1Y/`
+1. Click to download the `.vrt` file of interest, e.g. `ga_s2_tidal_composites_cyear_3_2018_vrt-low-truecolour.vrt`
+1. On your computer, drag the downloaded `.vrt` file into your GIS project.
 1. The multi-band dataset will stream seamlessly into your QGIS project.
 
 **Streaming continental COG mosaics in Esri ArcPro**
