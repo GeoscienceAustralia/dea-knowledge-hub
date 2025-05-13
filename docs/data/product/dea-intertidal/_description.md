@@ -58,7 +58,7 @@ ga_s2ls_intertidal_cyear_3_x082y139_2022--P1Y_final_elevation.tif
 
 ### Datasets
 
-Annual files for each of the 25 product bands are available in DEA's Amazon S3 bucket in two formats: 32 km&sup2; tiles and continental mosaics.
+Annual files for each of the product bands are available in DEA's Amazon S3 bucket in two formats: 32 km&sup2; tiles and continental mosaics.
 Multi-band continental imagery composites are also available.
 For access and usage information, see the [Access tab](./?tab=access).
 
