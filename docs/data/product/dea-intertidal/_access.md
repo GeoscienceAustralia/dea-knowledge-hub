@@ -24,16 +24,6 @@ Note that the colour ramp for the **Elevation** and **Elevation Uncertainty** pr
 To query an absolute value for any of the product layers, click on a location to see a plain text summary of all the DEA Intertidal product suite data values at that pixel location.
 :::
 
-:::{dropdown} How to access the data on AWS
-
-To download DEA Intertidal data, follow these steps.
-
-1. Open our [AWS folder (ga_s2ls_intertidal_cyear_3)](https://data.dea.ga.gov.au/?prefix=derivative/ga_s2ls_intertidal_cyear_3/).
-1. Click on the **ga_summary_grid_c3_32km_coastal.geojson** file to download it to your computer. This file can be used in a GIS package to identify the product tiles that you require for a given location. Alternatively, you can access this file via DEA Maps to identify required tiles (**Sea, ocean and coast** &gt; **DEA Intertidal** &gt; **DEA Intertidal 32 km tile grid**). 
-1. Navigate to the required tile folder, using the tile's 'x' and 'y' references (e.g. `x079` and `y123`) then select your year of interest.
-1. Click on the required product layer to download. To learn more about file naming and product layers, see [Technical information](./?tab=description#technical-information).
-:::
-
 :::{dropdown} How to stream data from AWS (Recommended)
 
 The easiest way to access DEA Intertidal data is via our continental-scale cloud-optimised GeoTIFF mosaics (COGs).
