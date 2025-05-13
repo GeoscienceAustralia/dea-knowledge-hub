@@ -48,7 +48,7 @@ These Virtual Rasters stream data from the cloud automatically, avoiding the nee
 1. Open the DEA Tidal Composites [continental_mosaics](https://data.dea.ga.gov.au/?prefix=derivative/ga_s2_tidal_composites_cyear_3/1-0-0/continental_mosaics/) directory in DEA's Amazon S3 bucket.
 1. Enter a directory of a particular year, e.g. `2018--P1Y`
 1. Click to download the `.vrt` file of interest, e.g. `ga_s2_tidal_composites_cyear_3_2018_vrt-low-truecolour.vrt`
-1. On your computer, drag the downloaded `.vrt` file into your GIS project.
+1. On your computer, drag the downloaded `.vrt` file into your QGIS project.
 1. The multi-band dataset will stream seamlessly into your QGIS project.
 
 **Stream continental COG mosaics in Esri ArcPro**
