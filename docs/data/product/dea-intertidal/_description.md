@@ -119,7 +119,7 @@ The high tide offset dataset quantifies the proportion of the highest tides no
 :::{figure} /_files/dea-intertidal/tidalattributes.*
 :alt: Tidal Attributes Description Figure
 
-Figure 4 &mdash; Illustration of the concept of observed tide heights (dots corresponding to satellite acquisition time) compared to the full modelled tidal range (blue lines). Descriptions of Spread (a), Lowtide offset (b), and Hightide offset (c) are detailed in the text.
+Figure 4 &mdash; Illustration of the concept of observed tide heights (dots corresponding to satellite acquisition time) compared to the full modelled tidal range (blue lines). Descriptions of Spread (a), low tide offset (b), and high tide offset (c) are detailed in the text.
 :::
 
 #### DEA Intertidal lowest observed tide (ta_lot)

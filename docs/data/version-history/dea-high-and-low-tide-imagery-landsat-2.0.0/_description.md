@@ -96,16 +96,17 @@ Through this process, the coastal zone is divided into Voronoi polygons that cap
 Generate HOT and LOT composite imagery: Landsat TM and OLI NBAR extracted for each tidal model polygon for 2010-17 range; pixel filtered; tagged and sorted by tidal height (OTPS); pixel based geomedian composites created from HT and LT composite subsets.
 
 The high and low tide composite generation comprises the following steps:
-* Landsat TM and OLI NBAR time-series observations archived in the DEA are extracted for each tidal model polygon for the 2010-17 time range..
-* Data is then filtered on a pixel basis to remove poor quality data including cloud, cloud shadow and band saturation.
-* Observations are tagged with a tidal height relative to Mean Sea Level (MSL) utilising the OTPS model, time of acquisition and location of the polygon model node.
-* Observations are sorted by tidal height to allow identify subsets acquired at high and low tide:
+
+1. Landsat TM and OLI NBAR time-series observations archived in the DEA are extracted for each tidal model polygon for the 2010-17 time range.
+1. Data is then filtered on a pixel basis to remove poor quality data including cloud, cloud shadow and band saturation.
+1. Observations are tagged with a tidal height relative to Mean Sea Level (MSL) utilising the OTPS model, time of acquisition and location of the polygon model node.
+1. Observations are sorted by tidal height to allow identify subsets acquired at high and low tide:
   * the lower 20th percentile of the observed tidal range, which are used to calculate the low tide composite,  and,
   * the upper 20th percentile of the observed tidal range which are used to calculate the high tide composite.
-* Pixel based geomedian composites are then created from the high and low tide composite subsets.
-* The composite is visually inspected to assess the quality (ie. remnant cloud noise, lack of data). If required, steps 1-5 are then repeated with an additional 5 years of archival data added to the process. Ultimately, highest observed tide (HOT) composites ranged from either 1995-17 or 2000-17 per polygon. Lowest observed tide (LOT) composites ranged from either 2000-17, 2005-17 or 2010-17 per polygon. 
+1. Pixel based geomedian composites are then created from the high and low tide composite subsets.
+1. The composite is visually inspected to assess the quality (ie. remnant cloud noise, lack of data). If required, steps 1-5 are then repeated with an additional 5 years of archival data added to the process. Ultimately, highest observed tide (HOT) composites ranged from either 1995-17 or 2000-17 per polygon. Lowest observed tide (LOT) composites ranged from either 2000-17, 2005-17 or 2010-17 per polygon. 
 
-* Due the sun-synchronous nature of the various Landsat sensor observations; it is unlikely that the full physical extents of the tidal range in any cell will be observed. Hence, terminology has been adopted for the product to reflect the highest modelled tide observed in a given cell (HOT) and the lowest modelled tide observed (LOT). These measures are relative to Mean Sea Level, and have no consistent relationship to Lowest (LAT) and Highest Astronomical Tide (HAT).
+Due the sun-synchronous nature of the various Landsat sensor observations; it is unlikely that the full physical extents of the tidal range in any cell will be observed. Hence, terminology has been adopted for the product to reflect the highest modelled tide observed in a given cell (HOT) and the lowest modelled tide observed (LOT). These measures are relative to Mean Sea Level, and have no consistent relationship to Lowest (LAT) and Highest Astronomical Tide (HAT).
 
 % ## Software
 
