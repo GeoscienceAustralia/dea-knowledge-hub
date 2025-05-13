@@ -77,7 +77,7 @@ access_links_explorers:
 
 access_links_data:
   - link: https://data.dea.ga.gov.au/?prefix=derivative/ga_s2_tidal_composites_cyear_3/1-0-0/
-    name: Access the data on AWS
+    name: AWS data
   - link: ./?tab=access#access-guides
     name: How to stream data from AWS
 #  - link: https://thredds.nci.org.au/thredds/catalog/catalogs/fk4/hltc_2_0.html # TODO
