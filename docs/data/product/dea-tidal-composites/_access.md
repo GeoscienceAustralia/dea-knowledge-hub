@@ -65,7 +65,7 @@ To connect Esri ArcPro to DEA's Amazon S3 bucket, follow Esri's tutorial: [Conne
     * `ARC_DEEP_CRAWL=NO`
     * `AWS_NO_SIGN_REQUEST=TRUE`
 
-Note: When adding COG files to ArcPro, select `no` when asked whether to build statistics for the layer
+Note: When adding COG files to ArcPro, select **No** when asked whether to build statistics for the layer
 
 If you encounter difficulty with any of these instructions, or with the COG files themselves, please contact us at earth.observation@ga.gov.au
 :::
