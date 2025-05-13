@@ -18,7 +18,7 @@ To add DEA Tidal Composites to DEA Maps manually:
 Now you can explore using the **Time** and **Styles** options in the left-hand workbench.
 :::
 
-:::{dropdown} How to stream data from AWS
+:::{dropdown} How to stream data from AWS (Recommended)
 
 The easiest way to access DEA Tidal Composite data is via our continental-scale cloud-optimised GeoTIFF mosaics (COGs).
 The COG file format is a type of GeoTIFF raster file (`.tif`) that allows you to quickly and efficiently 'stream' data directly from the Amazon S3 cloud without having to download files to your computer.
