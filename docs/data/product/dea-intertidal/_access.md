@@ -3,7 +3,7 @@
 :::{admonition} Streaming data from AWS is strongly recommended
 :class: note
 
-DEA Intertidal data is extremely large with files up to 15 GB in size. We strongly recommend streaming rather than downloading the data. Please see the instructions below: **How to stream data from AWS**
+DEA Intertidal data is extremely large with files up to 6 GB in size. We strongly recommend streaming rather than downloading the data. Please see the instructions below: **How to stream data from AWS**
 :::
 
 :::{dropdown} How to explore DEA Maps
@@ -34,9 +34,9 @@ See the following guides for how to access the data depending on your use case.
 
 **Stream continental COG mosaics in QGIS**
     
-1. Open the DEA Intertidal [continental_mosaics](https://data.dea.ga.gov.au/?prefix=derivative/ga_s2_tidal_composites_cyear_3/1-0-0/continental_mosaics/) directory in DEA's Amazon S3 bucket.
+1. Open the DEA Intertidal [continental_mosaics](https://data.dea.ga.gov.au/?prefix=derivative/ga_s2ls_intertidal_cyear_3/2-0-0/continental_mosaics/) directory in DEA's Amazon S3 bucket.
 1. Enter a directory of a particular year, e.g. `2018--P1Y`
-1. Right click one of the `.tif` files representing a particular band e.g. `ga_s2_tidal_composites_cyear_3_2018_low-blue.tif` &gt; click **Copy link address**.
+1. Right click one of the `.tif` files representing a particular band e.g. `ga_s2ls_intertidal_cyear_3_2018_elevation.tif` &gt; click **Copy link address**.
 1. Open QGIS on your computer.
 1. In QGIS, click **Layer** &gt; **Add Layer** &gt; **Add Raster Layer**.
     1. For **Source Type** protocol, select **HTTP(S)** or **cloud** or otherwise.
@@ -45,17 +45,6 @@ See the following guides for how to access the data depending on your use case.
 1. Click **Add** to start streaming the layer. Data should appear on the map after a few seconds (or after several minutes on slow internet connections).
 
 Learn more about streaming cloud datasets: [How to read a Cloud Optimized GeoTIFF with QGIS](https://cogeo.org/qgis-tutorial.html).
-
-**Stream multi-band continental COG mosaics in QGIS**
-
-To make it easier to visualise DEA Intertidal bands in true and false colour, we provide several Virtual Raster files (`.vrt`) that can be loaded into QGIS.
-These Virtual Rasters stream data from the cloud automatically, avoiding the need to download multiple files. They also provide instructions for combining, streaming, and viewing multiple COG files simultaneously. 
-
-1. Open the DEA Intertidal [continental_mosaics](https://data.dea.ga.gov.au/?prefix=derivative/ga_s2_tidal_composites_cyear_3/1-0-0/continental_mosaics/) directory in DEA's Amazon S3 bucket.
-1. Enter a directory of a particular year, e.g. `2018--P1Y`
-1. Click to download the `.vrt` file of interest, e.g. `ga_s2_tidal_composites_cyear_3_2018_vrt-low-truecolour.vrt`
-1. On your computer, drag the downloaded `.vrt` file into your GIS project.
-1. The multi-band dataset will stream seamlessly into your QGIS project.
 
 **Stream continental COG mosaics in Esri ArcPro**
 
@@ -70,6 +59,8 @@ To connect Esri ArcPro to DEA's Amazon S3 bucket, follow Esri's tutorial: [Conne
 * **Provider Options**
     * `ARC_DEEP_CRAWL=NO`
     * `AWS_NO_SIGN_REQUEST=TRUE`
+
+Note: When adding COG files to ArcPro, select `no` when asked whether to build statistics for the layer
 
 If you encounter difficulty with any of these instructions, or with the COG files themselves, please contact us at earth.observation@ga.gov.au
 :::
@@ -94,10 +85,10 @@ To download the data from the ELVIS (Elevation Information System) platform, fol
 
 Downloading individual tiles is **not recommended**, but can be useful for accessing small amounts of data. 
 
-1. Open the DEA Intertidal [ga_s2ls_intertidal_cyear_3](https://data.dea.ga.gov.au/?prefix=derivative/ga_s2_tidal_composites_cyear_3/1-0-0/continental_mosaics/) directory in DEA's Amazon S3 bucket.
+1. Open the [DEA Intertidal] (https://data.dea.ga.gov.au/?prefix=derivative/ga_s2ls_intertidal_cyear_3/) directory in DEA's Amazon S3 bucket.
 1. Click on `ga_summary_grid_c3_32km_coastal.geojson` to download the file to your computer. This file can be used in a GIS package to identify the product tiles that you require for a given location. (Alternatively, you can access this file via DEA Maps to identify the required tiles: **Sea, ocean and coast** &gt; **DEA Intertidal** &gt; **DEA Intertidal 32 km tile grid**.)
-1. Open the [DEA Intertidal](https://data.dea.ga.gov.au/?prefix=derivative/ga_s2_tidal_composites_cyear_3/1-0-0/) directory in DEA's Amazon S3 bucket and navigate into the folder of the tile that you require. The folder names are based on the 'x' and 'y' coordinate references. E.g. first enter the `x079` folder, then the `y123`.
+1. Open the [DEA Intertidal](https://data.dea.ga.gov.au/?prefix=derivative/ga_s2ls_intertidal_cyear_3/2-0-0/) directory in DEA's Amazon S3 bucket and navigate into the folder of the tile that you require. The folder names are based on the 'x' and 'y' coordinate references. E.g. first enter the `x082` folder, then the `y122`.
 1. Enter a directory of a particular year, e.g. `2018--P1Y`
-1. Click to download the product layer of interest, e.g. `ga_s2_tidal_composites_cyear_3_x079y123_2018--P1Y_final_low-red.tif`. Learn more about file naming and product layers: [Technical Information](./?tab=description#product-layers).
+1. Click to download the product layer of interest, e.g. `ga_s2ls_intertidal_cyear_3_x082y122_2021--P1Y_final_extents.tif`. Learn more about file naming and product layers: [Technical Information](./?tab=description#product-layers).
 :::
 

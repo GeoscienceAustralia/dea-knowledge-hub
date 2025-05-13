@@ -44,28 +44,22 @@ NIDEM was the first 3D model of Australia’s intertidal zone &mdash; the area o
 
 ### File Naming Convention 
 
-File names use the format:
+The [file naming convention](/guides/reference/collection_3_naming/) is as follows:
 
 ```text
-{product_name}_{x tile code}{y tile code}_{year--frequency}_{dataset maturity}_{layer_name}.tif
+{Organisation}_{Platform}_{Product}_{Reporting period}_{Collection}_{Tile reference}_{Data date}--{Data period}_{Product status}_{Band name}.{File extension}
 ```
 
-For example: 
-
-```text
-ga_s2ls_intertidal_cyear_3_x082y139_2022--P1Y_final_elevation.tif
-```
 
 ### Datasets
 
 Annual files for each of the product bands are available in DEA's Amazon S3 bucket in two formats: 32 km&sup2; tiles and continental mosaics.
-Multi-band continental imagery composites are also available.
 For access and usage information, see the [Access tab](./?tab=access).
 
 32 km&sup2; grid tiles are available as downloadable GeoTIFF files, for example:
 
 ```text
-ga_s2_tidal_composites_cyear_3_x080y125_2022--P1Y_final_low-red-edge-3.tif
+ga_s2ls_intertidal_cyear_3_x082y139_2022--P1Y_final_elevation.tif
 ```
 
 Single-band annual continental data mosaics are delivered to support access and navigability of DEA Intertidal data in geospatial information system (GIS) environments.
@@ -73,16 +67,9 @@ These datasets, delivered in cloud-optimised GeoTIFF (COG) format, are recommend
 Here's an example of the COG file naming convention:
 
 ```text
-ga_s2_tidal_composites_cyear_3_2022_low-red-edge-3.tif
+ga_s2ls_intertidal_cyear_3_2017_exposure.tif
 ```
 
-Multi-band annual continental data mosaics are provided for fast and efficient streaming of true colour (red/green/blue) and false colour (green/SWIR/NIR) imagery composites.
-Delivered in virtual raster format (VRT), these files stream and compile multiple single-band COG datasets and are used to simplify imagery exploration in GIS environments.
-Here's an example of the VRT file naming convention:
-
-```text
-ga_s2_tidal_composites_cyear_3_2022_vrt-low-truecolour.vrt
-```
 
 ### Code repositories
 
