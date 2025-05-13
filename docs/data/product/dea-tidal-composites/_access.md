@@ -21,24 +21,24 @@ Now you can explore using the **Time** and **Styles** options in the left-hand w
 :::{dropdown} How to stream data from AWS
 
 The easiest way to access DEA Tidal Composite data is via our continental-scale Cloud Optimised GeoTIFF mosaics (COGs).
-The COG file format is a type of GeoTIFF (i.e. `.tif`) raster file that allows you to quickly and efficiently "stream" data directly from the Amazon S3 cloud without having to download them to your computer.
-This allows you to rapidly access data from the entire Australian continent without having to download large amounts of data.
+The COG file format is a type of GeoTIFF raster file (`.tif`) that allows you to quickly and efficiently 'stream' data directly from the Amazon S3 cloud without having to download files to your computer.
+This allows you to rapidly access data from the entire Australian continent without having to download large files.
+
+See the following guides for how to access the data depending on your use case.
 
 **Streaming continental COG mosaics in QGIS**
     
-1. Navigate into the DEA Tidal Composites [continental_mosaics](https://data.dea.ga.gov.au/?prefix=derivative/ga_s2_tidal_composites_cyear_3/1-0-0/continental_mosaics/) directory on Amazon S3
-1. Select your year of interest e.g. `2018--P1Y/`
-1. Right click the `.tif` file (band) of interest e.g. `ga_s2_tidal_composites_cyear_3_2018_low-blue.tif`
-1. Select `Copy link address`
-1. Open QGIS
-1. Select `Layer` > `Add Layer` > `Add Raster Layer`
-1. Select `Source Type` protocol as `HTTP(S)` or `cloud` etc, and ensure `Type` is set to `HTTP/HTTPS/FTP`
-1. Paste the link into the `URI` dialogue box
-1. Select `Add` to stream the layer. Data should appear on the map after a few seconds delay (or several minutes on slow internet connections)
+1. Open the DEA Tidal Composites [continental_mosaics](https://data.dea.ga.gov.au/?prefix=derivative/ga_s2_tidal_composites_cyear_3/1-0-0/continental_mosaics/) directory in our Amazon S3 bucket.
+1. Enter a directory of a particular year, e.g. `2018--P1Y/`
+1. Right click one of the `.tif` files representing a particular band e.g. `ga_s2_tidal_composites_cyear_3_2018_low-blue.tif` &gt; click **Copy link address**.
+1. Open QGIS on your computer.
+1. In QGIS, click **Layer** &gt; **Add Layer** &gt; **Add Raster Layer**.
+    1. For **Source Type** protocol, select **HTTP(S)** or **cloud** or otherwise.
+    1. For **Type**, select **HTTP/HTTPS/FTP**.
+    1. In the **URI** field, paste the link to the band that you copied to the clipboard.
+1. Click **Add** to start streaming the layer. Data should appear on the map after a few seconds (or after several minutes on slow internet connections).
 
-:::{tip}
-For more on streaming cloud datasets, see: [QGIS Tutorial: How to read a Cloud Optimized GeoTIFF with QGIS](https://cogeo.org/qgis-tutorial.html)
-:::
+Learn more about streaming cloud datasets: [How to read a Cloud Optimized GeoTIFF with QGIS](https://cogeo.org/qgis-tutorial.html).
 
 **Streaming multi-band continental COG mosaics in QGIS**
 
