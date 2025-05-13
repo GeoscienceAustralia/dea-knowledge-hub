@@ -1,6 +1,16 @@
 % See the DEA Tech Alerts documentation:
 % https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/tech_alerts_changelog.html
 
+## 15 May 2025: DEA Intertidal 2.0.0 released
+
+In May 2025, DEA Intertidal was [updated to version 2.0.0](https://github.com/GeoscienceAustralia/dea-intertidal/releases/tag/2.0.0) and 2023 data was added to all layers in the product suite. This update also includes the following changes.
+
+* The [DEA Intertidal Extents](/data/product/dea-intertidal/?tab=description#core-product-layers) layer was added. This new data layer, in combination with the existing elevation and exposure layers supersedes the [DEA Intertidal Extents Model (ITEM)](/data/version-history/dea-intertidal-extents-landsat-2.0.0/) product. (The ITEM product has hence been deprecated.)
+* [Ensemble tide modelling](/data/product/dea-intertidal/?tab=description#ensemble-tidal-modelling) is now delivered via the [eo-tides](https://github.com/GeoscienceAustralia/eo-tides) tide modelling Python package.
+* New quality assessment layers were added: [qa_count_clear](/data/product/dea-intertidal/?tab=description#quality-assessment-layers) and [qa_coastal_connectivity](/data/product/dea-intertidal/?tab=description#quality-assessment-layers). 
+
+Learn more: [DEA Intertidal 2.0.0 product page](/data/product/dea-intertidal/)
+=======
 ## 1 May 2025: Missing Sentinel-2C data on AWS datacube is being restored
 
 We are aware that some [Sentinel-2C](/data/category/sentinel-2c-analysis-ready-data/) data are missing from the AWS datacube, primarily from January and February 2025. We are working to restore this data as soon as possible. We're sorry for any inconvenience this may cause.

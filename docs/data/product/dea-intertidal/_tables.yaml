@@ -11,7 +11,7 @@ bands_table:
     nodata: NaN
     units: Metres
     type: float32
-    description: Elevation relative to modelled Mean Sea Level for each pixel of the satellite-observed exposed intertidal zone
+    description: Elevation relative to modelled Mean Sea Level for each pixel of the satellite-observed exposed intertidal zone.
   - name: elevation_uncertainty
     aliases:
     - uncertainty
@@ -19,14 +19,21 @@ bands_table:
     nodata: NaN
     units: Metres
     type: float32
-    description: A measure of the vertical uncertainty of each modelled elevation value
+    description: A measure of the vertical uncertainty of each modelled elevation value.
   - name: exposure
     aliases: []
     resolution: 10 m
     nodata: 255
     units: Percent
     type: uint8
-    description: Percentage of time that any intertidal pixel of known elevation was exposed from tidal inundation during the analysis epoch
+    description: The percentage of time that any intertidal pixel of known elevation was exposed from tidal inundation during the analysis epoch.
+  - name: extents
+    aliases: []
+    resolution: 10 m
+    nodata: 255
+    units: Class
+    type: uint8
+    description: "A categorical classification of coastal cover types based on wetting characteristics and coastal proximity. Classes: ``1`` = Ocean and coastal waters; ``2`` = Exposed intertidal - low confidence; ``3`` = Exposed intertidal - high confidence; ``4`` = Inland waters; ``5`` = Land."
   - name: ta_spread
     aliases:
     - spread
@@ -34,7 +41,7 @@ bands_table:
     nodata: 255
     units: Percent
     type: uint8
-    description: Percentage of the astronomical tidal range observed by satellites at any time during the analysis epoch
+    description: The percentage of the astronomical tidal range observed by satellites at any time during the analysis epoch.
   - name: ta_offset_low
     aliases:
     - offset_low
@@ -42,7 +49,7 @@ bands_table:
     nodata: 255
     units: Percent
     type: uint8
-    description: Proportion of the lowest tides not observed by satellites (as a percentage of astronomical tide range) at any time during the analysis epoch
+    description: The proportion of the lowest tides not observed by satellites (as a percentage of astronomical tide range) at any time during the analysis epoch.
   - name: ta_offset_high
     aliases:
     - offset_high
@@ -50,7 +57,7 @@ bands_table:
     nodata: 255
     units: Percent
     type: uint8
-    description: Proportion of the highest tides not observed by satellites (as a percentage of astronomical tide range) at any time during the analysis epoch
+    description: The proportion of the highest tides not observed by satellites (as a percentage of astronomical tide range) at any time during the analysis epoch.
   - name: ta_lat
     aliases:
     - lat
@@ -58,7 +65,7 @@ bands_table:
     nodata: NaN
     units: Metres
     type: float32
-    description: Lowest astronomical tide (HAT) during the analysis epoch
+    description: The lowest astronomical tide (LAT) during the analysis epoch.
   - name: ta_hat
     aliases:
     - hat
@@ -66,7 +73,7 @@ bands_table:
     nodata: NaN
     units: Metres
     type: float32
-    description: Highest astronomical tide (HAT) during the analysis epoch
+    description: The highest astronomical tide (HAT) during the analysis epoch.
   - name: ta_lot
     aliases:
     - lot
@@ -74,7 +81,7 @@ bands_table:
     nodata: NaN
     units: Metres
     type: float32
-    description: Lowest satellite-observed tide (HOT) during the analysis epoch
+    description: The lowest satellite-observed tide (LOT) during the analysis epoch.
   - name: ta_hot
     aliases:
     - hot
@@ -82,7 +89,7 @@ bands_table:
     nodata: NaN
     units: Metres
     type: float32
-    description: Highest satellite-observed tide (HOT) during the analysis epoch
+    description: The highest satellite-observed tide (HOT) during the analysis epoch.
   - name: qa_ndwi_freq
     aliases:
     - ndwi_freq
@@ -90,7 +97,7 @@ bands_table:
     nodata: 255
     units: Percent
     type: uint8
-    description: Inundation frequency of each pixel during the analysis epoch
+    description: The inundation frequency of each pixel during the analysis epoch.
   - name: qa_ndwi_corr
     aliases:
     - ndwi_corr
@@ -98,4 +105,20 @@ bands_table:
     nodata: NaN
     units: Correlation
     type: float32
-    description: Pearson correlations between NDWI satellite observations and tide heights during the analysis epoch
+    description: Pearson correlations between NDWI satellite observations and tide heights during the analysis epoch.
+  - name: qa_count_clear
+    aliases:
+    - count_clear
+    resolution: 10 m
+    nodata: -999
+    units: Count
+    type: int16
+    description: The count of clear and valid observations per pixel.
+  - name: qa_coastal_connectivity
+    aliases:
+    - coastal_connectivity
+    resolution: 10 m
+    nodata: 65535
+    units: Cost distance
+    type: uint16
+    description: Accumulated cost-distance coastal connectivity, used to identify likely coastal pixels.

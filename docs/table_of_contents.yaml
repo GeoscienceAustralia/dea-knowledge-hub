@@ -133,8 +133,6 @@ entries:
           - file: data/product/dea-tidal-composites/index
             title: DEA Tidal Composites
           - file: data/product/dea-intertidal/index
-          - file: data/product/dea-intertidal-extents-landsat/index
-            title: DEA Intertidal Extents (ITEM)
 
       - caption: Hazards
         entries:
