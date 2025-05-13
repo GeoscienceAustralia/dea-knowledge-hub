@@ -56,6 +56,34 @@ For example:
 ga_s2ls_intertidal_cyear_3_x082y139_2022--P1Y_final_elevation.tif
 ```
 
+### Datasets
+
+Annual files for each of the 25 product bands are available in DEA's Amazon S3 bucket in two formats: 32 km&sup2; tiles and continental mosaics.
+Multi-band continental imagery composites are also available.
+For access and usage information, see the [Access tab](./?tab=access).
+
+32 km&sup2; grid tiles are available as downloadable GeoTIFF files, for example:
+
+```text
+ga_s2_tidal_composites_cyear_3_x080y125_2022--P1Y_final_low-red-edge-3.tif
+```
+
+Single-band annual continental data mosaics are delivered to support access and navigability of DEA Tidal Composites data in geospatial information system (GIS) environments.
+These datasets, delivered in cloud-optimised GeoTIFF (COG) format, are recommended for fast and efficient data streaming of single-band layers of the DEA Tidal Composites product.
+Here's an example of the COG file naming convention:
+
+```text
+ga_s2_tidal_composites_cyear_3_2022_low-red-edge-3.tif
+```
+
+Multi-band annual continental data mosaics are provided for fast and efficient streaming of true colour (red/green/blue) and false colour (green/SWIR/NIR) imagery composites.
+Delivered in virtual raster format (VRT), these files stream and compile multiple single-band COG datasets and are used to simplify imagery exploration in GIS environments.
+Here's an example of the VRT file naming convention:
+
+```text
+ga_s2_tidal_composites_cyear_3_2022_vrt-low-truecolour.vrt
+```
+
 ### Code repositories
 
 * [DEA Intertidal GitHub repository](https://github.com/GeoscienceAustralia/dea-intertidal) &mdash; A codebase for DEA Intertidal product generation workflows 
