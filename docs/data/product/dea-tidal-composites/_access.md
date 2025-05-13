@@ -1,6 +1,10 @@
-:::{important}
-DEA Tidal Composite data is extremely large (e.g. up to 15 gb per file). We **strongly recommend streaming data** rather than downloading individual raster files. If you encounter difficulty with the instructions below or the COG files themselves, please reach out to earth.observation@ga.gov.au for assistance.
+:::{admonition} Streaming is strongly recommended
+:class: note
+
+DEA Tidal Composite data is extremely large with files up to 15 GB in size. We strongly recommend streaming rather than downloading the data. Please see the instructions below: **How to stream data from AWS**
 :::
+
+(access-guides)=
 
 :::{dropdown} How to view the data on DEA Maps
 
@@ -14,7 +18,7 @@ To add DEA Tidal Composites to DEA Maps manually:
 Now you can explore using the **Time** and **Styles** options in the left-hand workbench.
 :::
 
-:::{dropdown} How to stream data from AWS (Recommended)
+:::{dropdown} How to stream data from AWS
 
 The easiest way to access DEA Tidal Composite data is via our continental-scale Cloud Optimised GeoTIFF mosaics (COGs).
 The COG file format is a type of GeoTIFF (i.e. `.tif`) raster file that allows you to quickly and efficiently "stream" data directly from the Amazon S3 cloud without having to download them to your computer.
@@ -77,3 +81,8 @@ Downloading individual tiles is not recommended, but can be useful for accessing
 1. Left-click on the required product layer to download. See [Technical Information](./?tab=description#product-layers) for details on file naming and product layer details.
 
 :::
+
+
+
+
+If you encounter difficulty with the instructions below or the COG files themselves, please reach out to earth.observation@ga.gov.au for assistance.
