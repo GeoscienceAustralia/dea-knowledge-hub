@@ -22,7 +22,7 @@ The DEA Intertidal product suite provides annual continental-scale elevation and
 
 ## Technical Information
 
-### DEA Intertidal features
+### Features
 
 The DEA Intertidal product suite contains 4 core product layers, 7 tidal attribute (`ta`) layers, and 4 quality assessment (`qa`) layers, all provided as continental 10 m resolution GeoTIFFs for the Australian coastal and intertidal region.
 
