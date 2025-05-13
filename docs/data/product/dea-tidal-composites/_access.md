@@ -53,16 +53,17 @@ These Virtual Rasters stream data from the cloud automatically, avoiding the nee
 
 **Stream continental COG mosaics in Esri ArcPro**
 
-1. To connect Esri ArcPro to DEA's Amazon S3 bucket, follow Esri's tutorial: [Connect to a cloud store](https://pro.arcgis.com/en/pro-app/latest/help/projects/connect-to-cloud-stores.htm). Use the following configurations for your cloud storage connection and leave the other fields blank:
-    * **Connection File Name** &mdash; `DEA data`
-    * **Service Provider** &mdash; `AMAZON`
-    * **Bucket Name (Container)** &mdash; `dea-public-data`
-    * **Folder** &mdash; `derivative`
-    * **Region (Environment)** &mdash; `Asia Pacific (Sydney)`
-    * **Service Endpoint** &mdash; `s3.ap-southeast-2.amazonaws.com`
-    * **Provider Options**
-        * `ARC_DEEP_CRAWL=NO`
-        * `AWS_NO_SIGN_REQUEST=TRUE`
+To connect Esri ArcPro to DEA's Amazon S3 bucket, follow Esri's tutorial: [Connect to a cloud store](https://pro.arcgis.com/en/pro-app/latest/help/projects/connect-to-cloud-stores.htm). Use the following configurations for your cloud storage connection and leave the other fields blank:
+
+* **Connection File Name** &mdash; `DEA data`
+* **Service Provider** &mdash; `AMAZON`
+* **Bucket Name (Container)** &mdash; `dea-public-data`
+* **Folder** &mdash; `derivative`
+* **Region (Environment)** &mdash; `Asia Pacific (Sydney)`
+* **Service Endpoint** &mdash; `s3.ap-southeast-2.amazonaws.com`
+* **Provider Options**
+    * `ARC_DEEP_CRAWL=NO`
+    * `AWS_NO_SIGN_REQUEST=TRUE`
 
 **Download data from individual tiles (Not recommended)**
 
