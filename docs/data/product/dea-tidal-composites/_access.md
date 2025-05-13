@@ -1,10 +1,10 @@
+(access-guides)=
+
 :::{admonition} Streaming data from AWS is strongly recommended
 :class: note
 
 DEA Tidal Composite data is extremely large with files up to 15 GB in size. We strongly recommend streaming rather than downloading the data. Please see the instructions below: **How to stream data from AWS**
 :::
-
-(access-guides)=
 
 :::{dropdown} How to view the data on DEA Maps
 
