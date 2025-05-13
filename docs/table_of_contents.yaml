@@ -130,8 +130,8 @@ entries:
             title: All
 
           - file: data/product/dea-coastlines/index
-          - file: data/product/dea-high-and-low-tide-imagery-landsat/index
-            title: DEA High and Low Tide Imagery
+          - file: data/product/dea-tidal-composites/index
+            title: DEA Tidal Composites
           - file: data/product/dea-intertidal/index
 
       - caption: Hazards

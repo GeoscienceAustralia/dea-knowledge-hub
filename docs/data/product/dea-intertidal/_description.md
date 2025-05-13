@@ -150,7 +150,7 @@ The proportion of the highest tides not observed at any time during the analysis
 :::{figure} /_files/dea-intertidal/tidalattributes.*
 :alt: Tidal Attributes Description Figure
 
-Figure 5. Illustration of the concept of observed tide heights (dots corresponding to satellite acquisition time) compared to the full modelled tidal range (blue lines). Descriptions of Spread (a), Lowtide offset (b), and Hightide offset (c) are detailed in the text.
+Figure 5. Illustration of the concept of observed tide heights (dots corresponding to satellite acquisition time) compared to the full modelled tidal range (blue lines). Descriptions of  (a) spread,  (b) low tide offset, and (c) high tide offset are detailed in the text.
 :::
 
 #### Lowest observed tide (ta_lot)
