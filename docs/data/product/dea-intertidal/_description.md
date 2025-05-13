@@ -68,8 +68,8 @@ For access and usage information, see the [Access tab](./?tab=access).
 ga_s2_tidal_composites_cyear_3_x080y125_2022--P1Y_final_low-red-edge-3.tif
 ```
 
-Single-band annual continental data mosaics are delivered to support access and navigability of DEA Tidal Composites data in geospatial information system (GIS) environments.
-These datasets, delivered in cloud-optimised GeoTIFF (COG) format, are recommended for fast and efficient data streaming of single-band layers of the DEA Tidal Composites product.
+Single-band annual continental data mosaics are delivered to support access and navigability of DEA Intertidal data in geospatial information system (GIS) environments.
+These datasets, delivered in cloud-optimised GeoTIFF (COG) format, are recommended for fast and efficient data streaming of single-band layers of the DEA Intertidal product.
 Here's an example of the COG file naming convention:
 
 ```text
