@@ -28,7 +28,7 @@ See the following guides for how to access the data depending on your use case.
 
 **Streaming continental COG mosaics in QGIS**
     
-1. Open the DEA Tidal Composites [continental_mosaics](https://data.dea.ga.gov.au/?prefix=derivative/ga_s2_tidal_composites_cyear_3/1-0-0/continental_mosaics/) directory in our Amazon S3 bucket.
+1. Open the DEA Tidal Composites [continental_mosaics](https://data.dea.ga.gov.au/?prefix=derivative/ga_s2_tidal_composites_cyear_3/1-0-0/continental_mosaics/) directory in DEA's Amazon S3 bucket.
 1. Enter a directory of a particular year, e.g. `2018--P1Y/`
 1. Right click one of the `.tif` files representing a particular band e.g. `ga_s2_tidal_composites_cyear_3_2018_low-blue.tif` &gt; click **Copy link address**.
 1. Open QGIS on your computer.
@@ -45,7 +45,7 @@ Learn more about streaming cloud datasets: [How to read a Cloud Optimized GeoTIF
 To make it easier to visualise DEA Tidal Composite bands in true and false colour, we provide several Virtual Raster files (`.vrt`) that can be loaded into QGIS.
 These Virtual Rasters stream data from the cloud automatically, avoiding the need to download multiple files. They also provide instructions for combining, streaming, and viewing multiple COG files simultaneously. 
 
-1. Open the DEA Tidal Composites [continental_mosaics](https://data.dea.ga.gov.au/?prefix=derivative/ga_s2_tidal_composites_cyear_3/1-0-0/continental_mosaics/) directory in our Amazon S3 bucket.
+1. Open the DEA Tidal Composites [continental_mosaics](https://data.dea.ga.gov.au/?prefix=derivative/ga_s2_tidal_composites_cyear_3/1-0-0/continental_mosaics/) directory in DEA's Amazon S3 bucket.
 1. Enter a directory of a particular year, e.g. `2018--P1Y/`
 1. Click to download the `.vrt` file of interest, e.g. `ga_s2_tidal_composites_cyear_3_2018_vrt-low-truecolour.vrt`
 1. On your computer, drag the downloaded `.vrt` file into your GIS project.
@@ -53,19 +53,16 @@ These Virtual Rasters stream data from the cloud automatically, avoiding the nee
 
 **Streaming continental COG mosaics in Esri ArcPro**
 
-1. Follow the Esri [connect to a cloud store tutorial](https://pro.arcgis.com/en/pro-app/latest/help/projects/connect-to-cloud-stores.htm) to connect Esri ArcPro to DEA's Amazon S3 bucket
-1. Create a cloud storage connection using the following settings, leaving all others blank:
-
-    |  Parameter  |  Setting  |
-    |  ---------  |  -------  |
-    |  Connection File Name |  DEA data  |
-    |  Service Provider  |  AMAZON  |
-    |  Bucket (Container) Name  |  dea-public-data  |
-    |  Folder  |  derivative  |
-    |  Region (Environment)  |  Asia Pacific (Sydney)  |
-    |  Service Endpoint  |  s3.ap-southeast-2.amazonaws.com  |
-    |  Provider Options  |  ARC_DEEP_CRAWL=NO  |
-    |  Provider Options  |  AWS_NO_SIGN_REQUEST=TRUE  |
+1. To connect Esri ArcPro to DEA's Amazon S3 bucket, follow Esri's tutorial: [Connect to a cloud store](https://pro.arcgis.com/en/pro-app/latest/help/projects/connect-to-cloud-stores.htm). Use the following configurations for your cloud storage connection and leave the other fields blank:
+    * **Connection File Name** &mdash; `DEA data`
+    * **Service Provider** &mdash; `AMAZON`
+    * **Bucket Name (Container)** &mdash; `dea-public-data`
+    * **Folder** &mdash; `derivative`
+    * **Region (Environment)** &mdash; `Asia Pacific (Sydney)`
+    * **Service Endpoint** &mdash; `s3.ap-southeast-2.amazonaws.com`
+    * **Provider Options**
+        * `ARC_DEEP_CRAWL=NO`
+        * `AWS_NO_SIGN_REQUEST=TRUE`
 
 **Downloading data from individual tiles**
 
