@@ -40,7 +40,7 @@ The [file naming convention](/guides/reference/collection_3_naming/) is as follo
 
 #### Datasets
 
-Annual files for each of the 25 product bands are available in DEA's Amazon S3 bucket in two formats: 32 km&sup2; tiles and continental mosaics.
+Annual files for each of the product bands are available in DEA's Amazon S3 bucket in two formats: 32 km&sup2; tiles and continental mosaics.
 Multi-band continental imagery composites are also available.
 For access and usage information, see the [Access tab](./?tab=access).
 
