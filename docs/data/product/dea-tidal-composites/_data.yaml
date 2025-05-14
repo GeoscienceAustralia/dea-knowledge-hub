@@ -68,7 +68,7 @@ tags:
 # Access 
 
 access_links_maps:
-  - link: https://maps.dea.ga.gov.au # TODO - update sharelink or storymap link
+  - link: https://maps.dea.ga.gov.au/#share=s-2Bvn7osEExcZbawi029aSeSqkyG
     name: See it on a map
 
 access_links_explorers:
@@ -113,7 +113,7 @@ access_links_custom:
 
 previous_versions:
   - version_number: 2.0.0
-    title: DEA High and Low Tide Imagery (Landsat)
+    title: High and Low Tide Composites (HLTC)
     slug: dea-high-and-low-tide-imagery-landsat-2.0.0
 
 # SEO

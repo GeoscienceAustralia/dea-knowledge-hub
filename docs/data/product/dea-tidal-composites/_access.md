@@ -3,7 +3,7 @@
 :::{admonition} Streaming data from AWS is strongly recommended
 :class: note
 
-DEA Tidal Composite data is extremely large with files up to 15 GB in size. We strongly recommend streaming rather than downloading the data. Please see the instructions below: **How to stream data from AWS**
+DEA Tidal Composite data is extremely large with files up to 15 GB in size. We strongly recommend streaming data directly from the cloud rather than downloading the data. Please see the instructions below: **How to stream data from AWS**
 :::
 
 :::{dropdown} How to view the data on DEA Maps
@@ -43,7 +43,7 @@ Learn more about streaming cloud datasets: [How to read a Cloud Optimized GeoTIF
 **Stream multi-band continental COG mosaics in QGIS**
 
 To make it easier to visualise DEA Tidal Composite bands in true and false colour, we provide several Virtual Raster files (`.vrt`) that can be loaded into QGIS.
-These Virtual Rasters stream data from the cloud automatically, avoiding the need to download multiple files. They also provide instructions for combining, streaming, and viewing multiple COG files simultaneously. 
+These Virtual Rasters combine, stream and visualise data from multiple COG files in the cloud simultaneously, avoiding the need to download multiple files.
 
 1. Open the DEA Tidal Composites [continental_mosaics](https://data.dea.ga.gov.au/?prefix=derivative/ga_s2_tidal_composites_cyear_3/1-0-0/continental_mosaics/) directory in DEA's Amazon S3 bucket.
 1. Enter a directory of a particular year, e.g. `2018--P1Y`
