@@ -1,15 +1,23 @@
 % See the DEA Tech Alerts documentation:
 % https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/tech_alerts_changelog.html
 
-<!-- ## 15 May 2025: DEA Intertidal 2.0.0 released -->
-<!--  -->
-<!-- In May 2025, DEA Intertidal was [updated to version 2.0.0](https://github.com/GeoscienceAustralia/dea-intertidal/releases/tag/2.0.0) and 2023 data was added to all layers in the product suite. This update also includes the following changes. -->
-<!--  -->
-<!-- * The [DEA Intertidal Extents](/data/product/dea-intertidal/?tab=description#core-product-layers) layer was added. This new data layer, in combination with the existing elevation and exposure layers supersedes the [DEA Intertidal Extents Model (ITEM)](/data/version-history/dea-intertidal-extents-landsat-2.0.0/) product. (The ITEM product has hence been deprecated.) -->
-<!-- * [Ensemble tide modelling](/data/product/dea-intertidal/?tab=description#ensemble-tidal-modelling) is now delivered via the [eo-tides](https://github.com/GeoscienceAustralia/eo-tides) tide modelling Python package. -->
-<!-- * New quality assessment layers were added: [qa_count_clear](/data/product/dea-intertidal/?tab=description#quality-assessment-layers) and [qa_coastal_connectivity](/data/product/dea-intertidal/?tab=description#quality-assessment-layers).  -->
-<!--  -->
-<!-- Learn more: [DEA Intertidal 2.0.0 product page](/data/product/dea-intertidal/) -->
+## 15 May 2025: DEA Intertidal 2.0.0 released incorporating 2023 data
+
+Digital Earth Australia has released v2.0.0 of its [DEA Intertidal](/data/product/dea-intertidal/) product. This updated v2.0.0 release incorporates improved ensemble tidal modelling into the product workflow using DEA’s [eo-tides](https://github.com/GeoscienceAustralia/eo-tides) package. It includes 2023 calendar year data, as well as a new Intertidal Extents product layer. DEA Intertidal is now available as continental-scale Cloud Optimised GeoTIFF (COG) mosaics, enabling seamless streaming of data across the entire Australian coastline into GIS platforms like QGIS and ArcGIS Pro. 
+
+You are able to access this product and its 2023 calendar year data via [DEA Maps](https://maps.dea.ga.gov.au/story/DEAIntertidal) and the DEA Knowledge Hub. 
+
+The new products in this release will result in the deprecation of two of our historical Landsat-based DEA products ([DEA Intertidal Extents (ITEM)](/data/version-history/dea-intertidal-extents-landsat-2.0.0/) and [DEA High and Low Tide Composites](/data/version-history/dea-high-and-low-tide-imagery-landsat-2.0.0/)) over the coming weeks. Whilst data from these products will remain accessible, it is recommended users transition to the new products where possible.  
+
+[View the Tech Alert](https://communication.ga.gov.au/link/id/zzzz68253ddc82e48602Pzzzz6567c8b713b5b826/page.html)
+
+## 15 May 2025: DEA Tidal Composites released
+
+The new [DEA Tidal Composites](/data/product/dea-tidal-composites/) product has been made available. This product compliments the DEA Intertidal suite by providing high resolution cloud-free 10m composite imagery from the Sentinel-2 constellation, visualising the Australian coastline at high and low tide.
+
+The new products in this release will result in the deprecation of two of our historical Landsat-based DEA products ([DEA Intertidal Extents (ITEM)](/data/version-history/dea-intertidal-extents-landsat-2.0.0/) and [DEA High and Low Tide Composites](/data/version-history/dea-high-and-low-tide-imagery-landsat-2.0.0/)) over the coming weeks. Whilst data from these products will remain accessible, it is recommended users transition to the new products where possible.  
+
+[View the Tech Alert](https://communication.ga.gov.au/link/id/zzzz68253ddc82e48602Pzzzz6567c8b713b5b826/page.html)
 
 ## 1 May 2025: Missing Sentinel-2C data on AWS datacube is being restored
 
