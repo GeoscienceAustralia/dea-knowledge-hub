@@ -50,15 +50,24 @@ Learn more about streaming cloud datasets: [How to read a Cloud Optimized GeoTIF
 :alt: Streaming COGs in QGIS
 ```
 
-**Stream continental COG mosaics in Esri ArcPro**
+**Stream continental COG mosaics in Esri ArcGIS Pro**
 
-To connect Esri ArcPro to DEA's Amazon S3 bucket, follow Esri's tutorial: [Connect to a cloud store](https://pro.arcgis.com/en/pro-app/latest/help/projects/connect-to-cloud-stores.htm). Use the following configurations for your cloud storage connection:
+To connect Esri ArcGIS Pro to DEA's Amazon S3 bucket, follow Esri's tutorial: [Connect to a cloud store](https://pro.arcgis.com/en/pro-app/latest/help/projects/connect-to-cloud-stores.htm). 
+
+1. Use the following configurations for your **cloud storage connection**:
 
 ```{figure} /_files/dea-tidal-composites/arcpro_cog_settings.*
 :alt: Streaming COGs in ArcPro
 ```
 
-Note: When adding COG files to ArcPro, select `no` when asked whether to build statistics for the layer
+1. In the **Catalog** pane:
+    1. Expand **Cloud Stores**.
+    1. Expand the **DEA derivative data** cloud store.
+    1. Navigate to `ga_s2ls_intertidal_cyear_3/2-0-0/continental_mosaics/`.
+    1. Enter a directory of a particular year, e.g. `2018--P1Y`.
+    1. Drag and drop the `.tif` file representing a particular band e.g. `ga_s2ls_intertidal_cyear_3_2018_elevation.tif` onto the map.
+
+1. **Important:** When adding COG files to ArcGIS Pro, select `no` when asked whether to build statistics for the layer.
 
 If you encounter difficulty with any of these instructions, or with the COG files themselves, please contact us at earth.observation@ga.gov.au
 :::
