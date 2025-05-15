@@ -376,16 +376,10 @@ At Level 4, vegetated areas are further classified using information that differ
     <figcaption>Figure 2 (above). A diagram of the implementation of the FAO LCCS Version 2 classification within the DEA Land Cover product.</figcaption>
 </figure>
 
-![Diagram showing the data products which go into producing the Level 3 classification.](/_files/land_cover/level3-dataflow.PNG)
+![Diagram showing how the LC product is generated.](/_files/land_cover/lc-level3-level4-flowchart.PNG) 
 
 <figure>
-    <figcaption>Figure 3 (above). Input data products used to produce the Level 3 classification.</figcaption>
-</figure>
-
-![Diagram showing input data products used to produce the Level 4 classification](/_files/land_cover/level4-dataflow.PNG)
-
-<figure>
-    <figcaption>Figure 4 (above). Input data products used to produce the Level 4 classification.</figcaption>
+    <figcaption>Figure 3 (above). Diagram illustrating the input data products and the process used to produce the Land Cover classification.</figcaption>
 </figure>
 
 % ## Processing steps
