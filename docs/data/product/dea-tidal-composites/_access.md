@@ -40,9 +40,9 @@ See the following guides for how to access the data depending on your use case.
 
 Learn more about streaming cloud datasets: [How to read a Cloud Optimized GeoTIFF with QGIS](https://cogeo.org/qgis-tutorial.html).
 
-:::{figure} /_files/dea-tidal-composites/streaming-cogs.*
+```{figure} /_files/dea-tidal-composites/streaming-cogs.*
 :alt: Streaming COGs in QGIS
-:::
+```
 
 **Stream multi-band continental COG mosaics in QGIS**
 
