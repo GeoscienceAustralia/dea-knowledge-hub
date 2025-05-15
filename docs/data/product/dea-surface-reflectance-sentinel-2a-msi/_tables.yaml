@@ -15,7 +15,7 @@ bands_table:
     nodata: -999
     units: null
     type: int16
-    description: "NBART surface reflectance for shallow water and fine atmospheric particles like dust and smoke. Equivalent wavelength: 442.7 nm; Bandwidth: 20 nm."
+    description: "NBART surface reflectance useful for shallow water and fine atmospheric particles like dust and smoke. Equivalent wavelength: 442.7 nm; Bandwidth: 20 nm."
   - name: nbart_blue
     aliases:
       - nbart_band02
