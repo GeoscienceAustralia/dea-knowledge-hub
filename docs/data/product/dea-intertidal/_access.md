@@ -52,17 +52,11 @@ Learn more about streaming cloud datasets: [How to read a Cloud Optimized GeoTIF
 
 **Stream continental COG mosaics in Esri ArcPro**
 
-To connect Esri ArcPro to DEA's Amazon S3 bucket, follow Esri's tutorial: [Connect to a cloud store](https://pro.arcgis.com/en/pro-app/latest/help/projects/connect-to-cloud-stores.htm). Use the following configurations for your cloud storage connection and leave the other fields blank:
+To connect Esri ArcPro to DEA's Amazon S3 bucket, follow Esri's tutorial: [Connect to a cloud store](https://pro.arcgis.com/en/pro-app/latest/help/projects/connect-to-cloud-stores.htm). Use the following configurations for your cloud storage connection:
 
-* **Connection File Name** &mdash; `DEA data`
-* **Service Provider** &mdash; `AMAZON`
-* **Bucket Name (Container)** &mdash; `dea-public-data`
-* **Folder** &mdash; `derivative`
-* **Region (Environment)** &mdash; `Asia Pacific (Sydney)`
-* **Service Endpoint** &mdash; `s3.ap-southeast-2.amazonaws.com`
-* **Provider Options**
-    * `ARC_DEEP_CRAWL=NO`
-    * `AWS_NO_SIGN_REQUEST=TRUE`
+```{figure} /_files/dea-tidal-composites/arcpro_cog_settings.*
+:alt: Streaming COGs in ArcPro
+```
 
 Note: When adding COG files to ArcPro, select `no` when asked whether to build statistics for the layer
 
