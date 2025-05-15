@@ -3,7 +3,7 @@
 
 ## 15 May 2025: DEA Tidal Composites released
 
-The new [DEA Tidal Composites](/data/product/dea-tidal-composites/) product is also being made available to compliment the DEA Intertidal suite of products. This product compliments the DEA Intertidal suite by providing high resolution cloud-free 10m composite imagery from the Sentinel-2 constellation, visualising the Australian coastline at high and low tide.
+The new [DEA Tidal Composites](/data/product/dea-tidal-composites/) product has also been made available. This product compliments the DEA Intertidal suite by providing high resolution cloud-free 10m composite imagery from the Sentinel-2 constellation, visualising the Australian coastline at high and low tide.
 
 The new products in this release will result in the deprecation of two of our historical Landsat-based DEA products ([DEA Intertidal Extents (ITEM)](/data/version-history/dea-intertidal-extents-landsat-2.0.0/) and [DEA High and Low Tide Composites](/data/version-history/dea-high-and-low-tide-imagery-landsat-2.0.0/)) over the coming weeks. Whilst data from these products will remain accessible, it is recommended users transition to the new products where possible.  
 
