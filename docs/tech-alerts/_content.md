@@ -11,7 +11,7 @@ The new products in this release will result in the deprecation of two of our hi
 
 ## 15 May 2025: DEA Intertidal 2.0.0 released incorporating 2023 data
 
-Digital Earth Australia has released v2.0.0 of its [DEA Intertidal](/data/product/dea-intertidal/) product. This updated v2.0.0 release incorporates improved ensemble tidal modelling into the product workflow using DEA’s [eo-tides](https://github.com/GeoscienceAustralia/eo-tides) package. It also includes 2023 calendar year data, as well as a new Intertidal Extents product layer. DEA Intertidal is now available as continental-scale Cloud Optimised GeoTIFF (COG) mosaics, enabling seamless streaming of data across the entire Australian coastline into GIS platforms like QGIS and ArcGIS Pro. 
+Digital Earth Australia has released v2.0.0 of its [DEA Intertidal](/data/product/dea-intertidal/) product. This updated v2.0.0 release incorporates improved ensemble tidal modelling into the product workflow using DEA’s [eo-tides](https://github.com/GeoscienceAustralia/eo-tides) package. It includes 2023 calendar year data, as well as a new Intertidal Extents product layer. DEA Intertidal is now available as continental-scale Cloud Optimised GeoTIFF (COG) mosaics, enabling seamless streaming of data across the entire Australian coastline into GIS platforms like QGIS and ArcGIS Pro. 
 
 You are able to access this product and its 2023 calendar year data via [DEA Maps](https://maps.dea.ga.gov.au/story/DEAIntertidal) and the DEA Knowledge Hub. 
 
