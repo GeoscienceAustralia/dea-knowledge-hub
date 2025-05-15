@@ -33,12 +33,16 @@ See the following guides for how to access the data depending on your use case.
 1. Right click one of the `.tif` files representing a particular band e.g. `ga_s2_tidal_composites_cyear_3_2018_low-blue.tif` &gt; click **Copy link address**.
 1. Open QGIS on your computer.
 1. In QGIS, click **Layer** &gt; **Add Layer** &gt; **Add Raster Layer**.
-    1. For **Source Type** protocol, select **HTTP(S)** or **cloud** or otherwise.
-    1. For **Type**, select **HTTP/HTTPS/FTP**.
+    1. For **Source Type**, select **Protocol: HTTP(S), cloud, etc.**.
+    1. For **Protocol Type**, select **HTTP/HTTPS/FTP**.
     1. In the **URI** field, paste the link to the band that you copied to the clipboard.
 1. Click **Add** to start streaming the layer. Data should appear on the map after a few seconds (or after several minutes on slow internet connections).
 
 Learn more about streaming cloud datasets: [How to read a Cloud Optimized GeoTIFF with QGIS](https://cogeo.org/qgis-tutorial.html).
+
+```{figure} /_files/dea-tidal-composites/streaming-cogs.*
+:alt: Streaming COGs in QGIS
+```
 
 **Stream multi-band continental COG mosaics in QGIS**
 
@@ -51,23 +55,26 @@ These Virtual Rasters combine, stream and visualise data from multiple COG files
 1. On your computer, drag the downloaded `.vrt` file into your QGIS project.
 1. The multi-band dataset will stream seamlessly into your QGIS project.
 
-**Stream continental COG mosaics in Esri ArcPro**
+**Stream continental COG mosaics in Esri ArcGIS Pro**
 
-To connect Esri ArcPro to DEA's Amazon S3 bucket, follow Esri's tutorial: [Connect to a cloud store](https://pro.arcgis.com/en/pro-app/latest/help/projects/connect-to-cloud-stores.htm). Use the following configurations for your cloud storage connection and leave the other fields blank:
+To connect Esri ArcGIS Pro to DEA's Amazon S3 bucket, follow Esri's tutorial: [Connect to a cloud store](https://pro.arcgis.com/en/pro-app/latest/help/projects/connect-to-cloud-stores.htm). 
 
-* **Connection File Name** &mdash; `DEA data`
-* **Service Provider** &mdash; `AMAZON`
-* **Bucket Name (Container)** &mdash; `dea-public-data`
-* **Folder** &mdash; `derivative`
-* **Region (Environment)** &mdash; `Asia Pacific (Sydney)`
-* **Service Endpoint** &mdash; `s3.ap-southeast-2.amazonaws.com`
-* **Provider Options**
-    * `ARC_DEEP_CRAWL=NO`
-    * `AWS_NO_SIGN_REQUEST=TRUE`
+1. Use the following configurations for your **cloud storage connection**:
 
-Note: When adding COG files to ArcPro, select **No** when asked whether to build statistics for the layer
+```{figure} /_files/dea-tidal-composites/arcpro_cog_settings.*
+:alt: Streaming COGs in ArcPro
+```
 
-If you encounter difficulty with any of these instructions, or with the COG files themselves, please contact us at earth.observation@ga.gov.au
+1. In the **Catalog** pane:
+    1. Expand **Cloud Stores**.
+    1. Expand the **DEA derivative data** cloud store.
+    1. Navigate to `ga_s2_tidal_composites_cyear_3/1-0-0/continental_mosaics/`.
+    1. Enter a directory of a particular year, e.g. `2018--P1Y`.
+    1. Drag and drop the `.tif` COG file representing a particular band e.g. `ga_s2_tidal_composites_cyear_3_2018_low-nir-1.tif` onto the map.
+
+1. **Important:** When adding COG files to ArcGIS Pro, select `No` when asked whether to build statistics for the layer.
+
+If you encounter difficulty with any of these instructions, or with the COG files themselves, please contact us at [earth.observation@ga.gov.au](mailto:earth.observation@ga.gov.au)
 :::
 
 :::{dropdown} How to download data from individual tiles (Not recommended)

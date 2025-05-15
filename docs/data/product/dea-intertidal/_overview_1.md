@@ -7,5 +7,5 @@ Incorporating both Sentinel-2 and Landsat data, the product suite provides an an
 :::{admonition} Streaming data from AWS is strongly recommended
 :class: note
 
-DEA Intertidal data is extremely large with files up to 15 GB in size. We strongly recommend streaming rather than downloading the data. Please see the instructions on the Access tab: [How to stream data from AWS](./?tab=access#access-guides)
+DEA Intertidal data is extremely large with files up to 15 GB in size. We strongly recommend streaming data directly from the cloud rather than downloading the data. Please see the instructions on the Access tab: [How to stream data from AWS](./?tab=access#access-guides)
 :::
