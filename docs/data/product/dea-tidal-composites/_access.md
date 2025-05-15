@@ -77,8 +77,6 @@ To connect Esri ArcGIS Pro to DEA's Amazon S3 bucket, follow Esri's tutorial: [C
 If you encounter difficulty with any of these instructions, or with the COG files themselves, please contact us at [earth.observation@ga.gov.au](mailto:earth.observation@ga.gov.au)
 :::
 
-:::
-
 :::{dropdown} How to download data from individual tiles (Not recommended)
 
 Downloading individual tiles is **not recommended**, but can be useful for accessing small amounts of data. 
