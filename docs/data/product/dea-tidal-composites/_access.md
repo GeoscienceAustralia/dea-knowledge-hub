@@ -55,17 +55,28 @@ These Virtual Rasters combine, stream and visualise data from multiple COG files
 1. On your computer, drag the downloaded `.vrt` file into your QGIS project.
 1. The multi-band dataset will stream seamlessly into your QGIS project.
 
-**Stream continental COG mosaics in Esri ArcPro**
+**Stream continental COG mosaics in Esri ArcGIS Pro**
 
-To connect Esri ArcPro to DEA's Amazon S3 bucket, follow Esri's tutorial: [Connect to a cloud store](https://pro.arcgis.com/en/pro-app/latest/help/projects/connect-to-cloud-stores.htm). Use the following configurations for your cloud storage connection:
+To connect Esri ArcGIS Pro to DEA's Amazon S3 bucket, follow Esri's tutorial: [Connect to a cloud store](https://pro.arcgis.com/en/pro-app/latest/help/projects/connect-to-cloud-stores.htm). 
+
+1. Use the following configurations for your **cloud storage connection**:
 
 ```{figure} /_files/dea-tidal-composites/arcpro_cog_settings.*
 :alt: Streaming COGs in ArcPro
 ```
 
-Note: When adding COG files to ArcPro, select **No** when asked whether to build statistics for the layer
+1. In the **Catalog** pane:
+    1. Expand **Cloud Stores**.
+    1. Expand the **DEA derivative data** cloud store.
+    1. Navigate to `ga_s2_tidal_composites_cyear_3/1-0-0/continental_mosaics/`.
+    1. Enter a directory of a particular year, e.g. `2018--P1Y`.
+    1. Drag and drop the `.tif` COG file representing a particular band e.g. `ga_s2_tidal_composites_cyear_3_2018_low-nir-1.tif` onto the map.
 
-If you encounter difficulty with any of these instructions, or with the COG files themselves, please contact us at earth.observation@ga.gov.au
+1. **Important:** When adding COG files to ArcGIS Pro, select `No` when asked whether to build statistics for the layer.
+
+If you encounter difficulty with any of these instructions, or with the COG files themselves, please contact us at [earth.observation@ga.gov.au](mailto:earth.observation@ga.gov.au)
+:::
+
 :::
 
 :::{dropdown} How to download data from individual tiles (Not recommended)
