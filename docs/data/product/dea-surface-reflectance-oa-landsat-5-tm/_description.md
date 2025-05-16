@@ -77,7 +77,7 @@ These images depict an area containing high topographic relief, terrain shadow, 
 * **Zenith**  
  The point in the sky or celestial sphere directly above a point of interest (in this case, the point being imaged on Earth).
 * **Solar zenith (degrees)**  
- The angle between the zenith and the centre of the sun’s disc.
+ "Solar zenith: The angle between the zenith and the centre of the sun’s disc."
 * **Solar azimuth (degrees)**  
  The angle of the sun’s position from true north; i.e. the angle between true north and a vertical circle passing through the sun and the point being imaged on Earth. 
 * **Satellite view or satellite zenith (degrees)**  
