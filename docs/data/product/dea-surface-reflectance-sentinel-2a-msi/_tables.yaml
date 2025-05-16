@@ -237,4 +237,4 @@ bands_table:
     nodata: NaN
     units: null
     type: float64
-    description: "The s2cloudless cloud probabilities band (CLP) provides the probabilities of cloud presence as values between 0 and 255. Divide by 255 to get the probability of 0–1."
+    description: "The s2cloudless cloud probabilities band provides the probabilities of cloud presence as values between 0.0 and 1.0."
