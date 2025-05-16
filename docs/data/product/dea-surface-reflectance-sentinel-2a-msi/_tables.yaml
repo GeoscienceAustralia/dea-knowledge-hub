@@ -51,7 +51,7 @@ bands_table:
     nodata: -999
     units: null
     type: int16
-    description: "NBART surface reflectance of the near-infrared (NIR) range used for detecting vegetation. Equivalent wavelength: 704.1 nm; Bandwidth: 14 nm."
+    description: "NBART surface reflectance of the near-infrared (NIR) range useful for detecting vegetation. Equivalent wavelength: 704.1 nm; Bandwidth: 14 nm."
   - name: nbart_red_edge_2
     aliases:
       - nbart_band06
