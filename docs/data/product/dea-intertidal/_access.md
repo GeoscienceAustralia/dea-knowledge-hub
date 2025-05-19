@@ -63,7 +63,7 @@ To connect Esri ArcGIS Pro to DEA's Amazon S3 bucket, follow Esri's tutorial: [C
     1. Enter a directory of a particular year, e.g. `2018--P1Y`.
     1. Drag and drop the `.tif` COG file representing a particular band e.g. `ga_s2ls_intertidal_cyear_3_2018_elevation.tif` onto the map.
 
-1. **Important:** When adding COG files to ArcGIS Pro, select `No` when asked whether to build statistics for the layer.
+1. **Important:** When adding COG files to ArcGIS Pro, select **No** when asked whether to build statistics for the layer.
 
 If you encounter difficulty with any of these instructions, or with the COG files themselves, please contact us at <earth.observation@ga.gov.au>
 :::
