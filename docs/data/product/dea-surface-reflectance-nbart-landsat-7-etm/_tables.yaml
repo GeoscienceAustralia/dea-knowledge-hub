@@ -72,4 +72,4 @@ bands_table:
     nodata: -999
     units: null
     type: int16
-    description: null
+    description: "The panchromatic band is high resolution and can be used for pan-sharpening Landsat 7's green, red, and NIR bands. Wavelength: 0.52–0.90 µm."
