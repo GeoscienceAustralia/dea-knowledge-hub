@@ -97,7 +97,7 @@ bands_table:
     nodata: -999
     units: null
     type: int16
-    description: "NBART surface reflectance of the short-wave infrared (SWIR) range. Equivalent wavelength: 1612.0 nm; Bandwidth: 89 nm."
+    description: "NBART surface reflectance of the short-wave infrared (SWIR-2) range. Equivalent wavelength: 1612.0 nm; Bandwidth: 89 nm."
   - name: nbart_swir_3
     aliases:
       - nbart_band12
@@ -107,4 +107,4 @@ bands_table:
     nodata: -999
     units: null
     type: int16
-    description: "NBART surface reflectance of the short-wave infrared (SWIR) range. Equivalent wavelength: 2191.3 nm; Bandwidth: 182 nm."
+    description: "NBART surface reflectance of the short-wave infrared (SWIR-3) range. Equivalent wavelength: 2191.3 nm; Bandwidth: 182 nm."
