@@ -13,7 +13,7 @@ bands_table:
     nodata: -999
     units: null
     type: int16
-    description: null
+    description: "NBAR surface reflectance for the coastal aerosol band. Wavelength: 0.43-0.45 µm."
   - name: nbar_blue
     aliases:
       - nbar_band02
