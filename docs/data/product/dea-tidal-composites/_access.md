@@ -59,9 +59,20 @@ To connect Esri ArcGIS Pro to DEA's Amazon S3 bucket, follow Esri's tutorial: [C
 
 1. Use the following configurations for your **cloud storage connection**:
 
-![Streaming COGs in ArcPro](/_files/dea-tidal-composites/arcpro_cog_settings.png)
+    * **Connection File Name** &mdash; `DEA derived data`
+    * **Service Provider** &mdash; `AMAZON`
+    * **Bucket Name (Container)** &mdash; `data-public-data`
+    * **Folder** &mdash; `derivative`
+    * **Region (Environment)** &mdash; `Asia Pacific (Sydney)`
+    * **Service Endpoint** &mdash; `s3.ap-southeast-2.amazonaws.com`
+    * **Provider Options**
+        * `ARC_DEEP_CRAWL` &mdash; `NO`
+        * `AWS_NO_SIGN_REQUEST` &mdash; `TRUE`
+
+    ![Streaming COGs in ArcPro](/_files/dea-tidal-composites/arcpro_cog_settings.png)
 
 1. In the **Catalog** pane:
+
     1. Expand **Cloud Stores**.
     1. Expand the **DEA derivative data** cloud store.
     1. Navigate to `ga_s2_tidal_composites_cyear_3/1-0-0/continental_mosaics/`.
