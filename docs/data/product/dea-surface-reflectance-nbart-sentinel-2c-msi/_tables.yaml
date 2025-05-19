@@ -13,7 +13,7 @@ bands_table:
     nodata: -999
     units: null
     type: int16
-    description: null
+    description: "NBART surface reflectance useful for shallow water and fine atmospheric particles like dust and smoke. Equivalent wavelength: 444.2 nm; Bandwidth: 21 nm."
   - name: nbart_blue
     aliases:
       - nbart_band02
@@ -22,7 +22,7 @@ bands_table:
     nodata: -999
     units: null
     type: int16
-    description: null
+    description: "NBART surface reflectance for the blue spectral band. Equivalent wavelength: 489.0 nm; Bandwidth: 65 nm."
   - name: nbart_green
     aliases:
       - nbart_band03
@@ -31,7 +31,7 @@ bands_table:
     nodata: -999
     units: null
     type: int16
-    description: null
+    description: "NBART surface reflectance for the green spectral band. Equivalent wavelength: 560.6 nm; Bandwidth: 36 nm."
   - name: nbart_red
     aliases:
       - nbart_band04
@@ -40,7 +40,7 @@ bands_table:
     nodata: -999
     units: null
     type: int16
-    description: null
+    description: "NBART surface reflectance for the red spectral band. Equivalent wavelength: 666.5 nm; Bandwidth: 30 nm."
   - name: nbart_red_edge_1
     aliases:
       - nbart_band05
@@ -49,7 +49,7 @@ bands_table:
     nodata: -999
     units: null
     type: int16
-    description: null
+    description: "NBART surface reflectance of the near-infrared (NIR) range useful for detecting vegetation. Equivalent wavelength: 707.1 nm; Bandwidth: 15 nm."
   - name: nbart_red_edge_2
     aliases:
       - nbart_band06
@@ -58,7 +58,7 @@ bands_table:
     nodata: -999
     units: null
     type: int16
-    description: null
+    description: "NBART surface reflectance of the near-infrared range (NIR) useful for detecting vegetation. Equivalent wavelength: 741.1 nm; Bandwidth: 15 nm."
   - name: nbart_red_edge_3
     aliases:
       - nbart_band07
@@ -67,7 +67,7 @@ bands_table:
     nodata: -999
     units: null
     type: int16
-    description: null
+    description: "NBART surface reflectance of the near-infrared (NIR) range useful for detecting vegetation. Equivalent wavelength: 784.7 nm; Bandwidth: 21 nm."
   - name: nbart_nir_1
     aliases:
       - nbart_band08
@@ -77,7 +77,7 @@ bands_table:
     nodata: -999
     units: null
     type: int16
-    description: null
+    description: "NBART surface reflectance of the near-infrared (NIR) range. Equivalent wavelength: 834.6 nm; Bandwidth: 114 nm."
   - name: nbart_nir_2
     aliases:
       - nbart_band8a
@@ -86,7 +86,7 @@ bands_table:
     nodata: -999
     units: null
     type: int16
-    description: null
+    description: "NBART surface reflectance of the near-infrared (NIR) range which is narrower than 'nbart_nir_1'. Equivalent wavelength: 865.6 nm; Bandwidth: 20 nm."
   - name: nbart_swir_2
     aliases:
       - nbart_band11
@@ -97,7 +97,7 @@ bands_table:
     nodata: -999
     units: null
     type: int16
-    description: null
+    description: "NBART surface reflectance of the short-wave infrared (SWIR) range. Equivalent wavelength: 1612.0 nm; Bandwidth: 89 nm."
   - name: nbart_swir_3
     aliases:
       - nbart_band12
@@ -107,4 +107,4 @@ bands_table:
     nodata: -999
     units: null
     type: int16
-    description: null
+    description: "NBART surface reflectance of the short-wave infrared (SWIR) range. Equivalent wavelength: 2191.3 nm; Bandwidth: 182 nm."
