@@ -46,9 +46,7 @@ See the following guides for how to access the data depending on your use case.
 
 Learn more about streaming cloud datasets: [How to read a Cloud Optimized GeoTIFF with QGIS](https://cogeo.org/qgis-tutorial.html).
 
-```{figure} /_files/dea-tidal-composites/streaming-cogs.*
-:alt: Streaming COGs in QGIS
-```
+![Streaming COGs in QGIS](/_files/dea-tidal-composites/streaming-cogs.jpg)
 
 **Stream continental COG mosaics in Esri ArcGIS Pro**
 
@@ -56,9 +54,7 @@ To connect Esri ArcGIS Pro to DEA's Amazon S3 bucket, follow Esri's tutorial: [C
 
 1. Use the following configurations for your **cloud storage connection**:
 
-```{figure} /_files/dea-tidal-composites/arcpro_cog_settings.*
-:alt: Streaming COGs in ArcPro
-```
+![Streaming COGs in ArcPro](/_files/dea-tidal-composites/arcpro_cog_settings.png)
 
 1. In the **Catalog** pane:
     1. Expand **Cloud Stores**.
@@ -69,7 +65,7 @@ To connect Esri ArcGIS Pro to DEA's Amazon S3 bucket, follow Esri's tutorial: [C
 
 1. **Important:** When adding COG files to ArcGIS Pro, select `No` when asked whether to build statistics for the layer.
 
-If you encounter difficulty with any of these instructions, or with the COG files themselves, please contact us at [earth.observation@ga.gov.au](mailto:earth.observation@ga.gov.au)
+If you encounter difficulty with any of these instructions, or with the COG files themselves, please contact us at <earth.observation@ga.gov.au>
 :::
 
 :::{dropdown} How to download data from ELVIS
