@@ -62,8 +62,9 @@ To connect Esri ArcGIS Pro to DEA's Amazon S3 bucket, follow Esri's tutorial: [C
     * **Provider Options**
         * `ARC_DEEP_CRAWL` &mdash; `NO`
         * `AWS_NO_SIGN_REQUEST` &mdash; `TRUE`
-
-![Creating a cloud connection to stream Cloud Optimised GeoTIFF (COG) rasters in ArcGIS Pro](/_files/dea-tidal-composites/cog_arcgispro_cloud_connection.jpg)
+    
+    <br>
+    ![Creating a cloud connection to stream Cloud Optimised GeoTIFF (COG) rasters in ArcGIS Pro](/_files/dea-tidal-composites/cog_arcgispro_cloud_connection.jpg)
 
 1. In the **Catalog** pane:
 
@@ -72,8 +73,9 @@ To connect Esri ArcGIS Pro to DEA's Amazon S3 bucket, follow Esri's tutorial: [C
     1. Navigate to `derivative/ga_s2ls_intertidal_cyear_3/2-0-0/continental_mosaics/`.
     1. Enter a directory of a particular year, e.g. `2018--P1Y`.
     1. Drag and drop the `.tif` COG file representing a particular band e.g. `ga_s2ls_intertidal_cyear_3_2018_elevation.tif` onto the map.
-
-![Cloud store to stream Cloud Optimised GeoTIFF (COG) rasters in ArcGIS Pro](/_files/dea-tidal-composites/cog_arcgispro_cloud_store.jpg)
+    
+    <br>
+    ![Cloud store to stream Cloud Optimised GeoTIFF (COG) rasters in ArcGIS Pro](/_files/dea-tidal-composites/cog_arcgispro_cloud_store.jpg)
 
 1. **Important:** When adding COG files to ArcGIS Pro, select **No** when asked whether to build statistics for the layer.
 
