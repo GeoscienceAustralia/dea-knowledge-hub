@@ -79,8 +79,6 @@ To connect Esri ArcGIS Pro to DEA's Amazon S3 bucket, follow Esri's tutorial: [C
 
     ![Cloud store to stream Cloud Optimised GeoTIFF (COG) rasters in ArcGIS Pro](/_files/dea-tidal-composites/cog_arcgispro_cloud_store.jpg)
 
-1. **Important:** When adding COG files to ArcGIS Pro, select **No** when asked whether to build statistics for the layer.
-
 ```{important} Important
 When adding COG files to ArcGIS Pro, select **No** when asked whether to build statistics for the layer.
 ```
