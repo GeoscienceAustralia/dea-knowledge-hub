@@ -46,35 +46,41 @@ See the following guides for how to access the data depending on your use case.
 
 Learn more about streaming cloud datasets: [How to read a Cloud Optimized GeoTIFF with QGIS](https://cogeo.org/qgis-tutorial.html).
 
-![Streaming COGs in QGIS](/_files/dea-tidal-composites/streaming-cogs.jpg)
+![Streaming COGs in QGIS](/_files/dea-tidal-composites/cogs_qgis_streaming.jpg)
 
 **Stream continental COG mosaics in Esri ArcGIS Pro**
 
-To connect Esri ArcGIS Pro to DEA's Amazon S3 bucket, follow Esri's tutorial: [Connect to a cloud store](https://pro.arcgis.com/en/pro-app/latest/help/projects/connect-to-cloud-stores.htm). 
+To connect Esri ArcGIS Pro to DEA's Amazon S3 bucket, follow Esri's tutorial: [Create a cloud storage connection](https://pro.arcgis.com/en/pro-app/latest/help/projects/connect-to-cloud-stores.htm#ESRI_SECTION1_82576579B8CC43E6AE261E39FACFA947). 
 
-1. Use the following configurations for your **cloud storage connection**:
+1. Add the following details to the **Create Cloud Storage Connection** dialogue box:
 
-    * **Connection File Name** &mdash; `DEA derived data`
+    * **Connection File Name** &mdash; `DEA_data`
     * **Service Provider** &mdash; `AMAZON`
     * **Bucket Name (Container)** &mdash; `data-public-data`
-    * **Folder** &mdash; `derivative`
     * **Region (Environment)** &mdash; `Asia Pacific (Sydney)`
     * **Service Endpoint** &mdash; `s3.ap-southeast-2.amazonaws.com`
     * **Provider Options**
         * `ARC_DEEP_CRAWL` &mdash; `NO`
         * `AWS_NO_SIGN_REQUEST` &mdash; `TRUE`
 
-    ![Streaming COGs in ArcPro](/_files/dea-tidal-composites/arcpro_cog_settings.png)
+
+    ![Creating a cloud connection to stream Cloud Optimised GeoTIFF (COG) rasters in ArcGIS Pro](/_files/dea-tidal-composites/cog_arcgispro_cloud_connection.jpg)
 
 1. In the **Catalog** pane:
 
     1. Expand **Cloud Stores**.
-    1. Expand the **DEA derivative data** cloud store.
-    1. Navigate to `ga_s2ls_intertidal_cyear_3/2-0-0/continental_mosaics/`.
+    1. Expand the **DEA_data.acs** cloud store.
+    1. Navigate to `derivative/ga_s2ls_intertidal_cyear_3/2-0-0/continental_mosaics/`.
     1. Enter a directory of a particular year, e.g. `2018--P1Y`.
     1. Drag and drop the `.tif` COG file representing a particular band e.g. `ga_s2ls_intertidal_cyear_3_2018_elevation.tif` onto the map.
 
+
+    ![Cloud store to stream Cloud Optimised GeoTIFF (COG) rasters in ArcGIS Pro](/_files/dea-tidal-composites/cog_arcgispro_cloud_store.jpg)
+
 1. **Important:** When adding COG files to ArcGIS Pro, select **No** when asked whether to build statistics for the layer.
+
+
+
 
 If you encounter difficulty with any of these instructions, or with the COG files themselves, please contact us at <earth.observation@ga.gov.au>
 :::
