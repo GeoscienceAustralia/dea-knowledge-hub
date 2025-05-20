@@ -110,6 +110,22 @@ bands_table:
     units: null
     type: int16
     description: "NBART surface reflectance of the short-wave infrared (SWIR-3) range. Equivalent wavelength: 2191.3 nm; Bandwidth: 182 nm."
+  - name: oa_s2cloudless_mask
+    aliases:
+      - s2cloudless_mask
+    resolution: 60
+    nodata: 0
+    units: Classification
+    type: uint8
+    description: "The s2cloudless cloud mask band identifies the presence of clouds. Classification values: ``0`` = No cloud; ``1`` = Cloud."
+  - name: oa_s2cloudless_prob
+    aliases:
+      - s2cloudless_prob
+    resolution: 60
+    nodata: NaN
+    units: null
+    type: float64
+    description: "The s2cloudless cloud probabilities band provides the probabilities of cloud presence as values between 0.0 and 1.0."
   - name: oa_fmask
     aliases:
       - fmask
@@ -222,19 +238,3 @@ bands_table:
     units: Seconds
     type: float32
     description: "Timedelta: The time from satellite apogee (the point of orbit at which the satellite is furthest from the Earth)."
-  - name: oa_s2cloudless_mask
-    aliases:
-      - s2cloudless_mask
-    resolution: 60
-    nodata: 0
-    units: Classification
-    type: uint8
-    description: "The s2cloudless cloud mask band identifies the presence of clouds. Classification values: ``0`` = No cloud; ``1`` = Cloud."
-  - name: oa_s2cloudless_prob
-    aliases:
-      - s2cloudless_prob
-    resolution: 60
-    nodata: NaN
-    units: null
-    type: float64
-    description: "The s2cloudless cloud probabilities band provides the probabilities of cloud presence as values between 0.0 and 1.0."
