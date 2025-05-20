@@ -58,7 +58,7 @@ tags:
 # Access
 
 access_links_maps:
-  - link: https://maps.dea.ga.gov.au/#share=s-hnDwAfLNqJEIuwGzufL9yI5DS0w # TODO review: https://maps.dea.ga.gov.au/#share=s-kpW2fu5nyh8hnS1M0OPsZ5lHlLi
+  - link: https://maps.dea.ga.gov.au/#share=s-kpW2fu5nyh8hnS1M0OPsZ5lHlLi
     name: See it on a map
 
 access_links_explorers:
