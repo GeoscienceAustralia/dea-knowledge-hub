@@ -56,7 +56,7 @@ To connect Esri ArcGIS Pro to DEA's Amazon S3 bucket, follow Esri's tutorial: [C
 
     * **Connection File Name** &mdash; `DEA_data`
     * **Service Provider** &mdash; `AMAZON`
-    * **Bucket Name (Container)** &mdash; `data-public-data`
+    * **Bucket Name (Container)** &mdash; `dea-public-data`
     * **Region (Environment)** &mdash; `Asia Pacific (Sydney)`
     * **Service Endpoint** &mdash; `s3.ap-southeast-2.amazonaws.com`
     * **Provider Options**
