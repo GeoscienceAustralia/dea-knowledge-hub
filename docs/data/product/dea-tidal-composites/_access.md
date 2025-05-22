@@ -56,7 +56,7 @@ Learn more about streaming cloud datasets: [How to read a Cloud Optimized GeoTIF
 
 To connect Esri ArcGIS Pro to DEA's Amazon S3 bucket, follow Esri's tutorial: [Create a cloud storage connection](https://pro.arcgis.com/en/pro-app/latest/help/projects/connect-to-cloud-stores.htm#ESRI_SECTION1_82576579B8CC43E6AE261E39FACFA947).
 
-1. In ArcGIS Pro, click the **Insert** tab, then in the Project group click **Connections** &gt; **Cloud Store** &gt; **New Cloud Storage Connection**.
+1. In ArcGIS Pro, click the **Insert** tab, then click **Connections** &gt; **Cloud Store** &gt; **New Cloud Storage Connection**.
 
     <br>
 
