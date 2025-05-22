@@ -30,7 +30,7 @@ The easiest way to access DEA Intertidal data is via our continental-scale cloud
 The COG file format is a type of GeoTIFF raster file (`.tif`) that allows you to quickly and efficiently 'stream' data directly from the Amazon S3 cloud without having to download files to your computer.
 This allows you to rapidly access data from the entire Australian continent without having to download large files.
 
-```{tip} Tip
+```{tip}
 If you encounter difficulty with any of these instructions, or with the COG files themselves, please contact us at <earth.observation@ga.gov.au>.
 ```
 
@@ -81,7 +81,7 @@ To connect Esri ArcGIS Pro to DEA's Amazon S3 bucket, follow Esri's tutorial: [C
 
     ![Cloud store to stream Cloud Optimised GeoTIFF (COG) rasters in ArcGIS Pro](/_files/dea-tidal-composites/cog_arcgispro_cloud_store.jpg)
 
-```{important} Important
+```{important}
 When adding COG files to ArcGIS Pro, select **No** when asked whether to build statistics for the layer.
 ```
 
