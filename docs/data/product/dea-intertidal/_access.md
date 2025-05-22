@@ -53,7 +53,7 @@ Learn more about streaming cloud datasets: [How to read a Cloud Optimized GeoTIF
 
 To connect Esri ArcGIS Pro to DEA's Amazon S3 bucket, follow Esri's tutorial: [Create a cloud storage connection](https://pro.arcgis.com/en/pro-app/latest/help/projects/connect-to-cloud-stores.htm#ESRI_SECTION1_82576579B8CC43E6AE261E39FACFA947).
 
-1. In ArcGIS Pro, click the **Insert** tab, then in the Project group click **Connections > Cloud Store > New Cloud Storage Connection**.
+1. In ArcGIS Pro, click the **Insert** tab, then in the Project group click **Connections** &gt; **Cloud Store** &gt; **New Cloud Storage Connection**.
 1. Add the following details to the **Create Cloud Storage Connection** dialogue box:
 
     * **Connection File Name** &mdash; `DEA_data`
@@ -105,7 +105,9 @@ To download the data from the ELVIS (Elevation Information System) platform, fol
 
 :::{dropdown} How to download data from individual tiles (Not recommended)
 
-Downloading individual tiles is **not recommended**, but can be useful for accessing small amounts of data. 
+```{warning}
+Downloading individual tiles is **not recommended**, but can be useful for accessing small amounts of data.
+```
 
 1. Open the [DEA Intertidal](https://data.dea.ga.gov.au/?prefix=derivative/ga_s2ls_intertidal_cyear_3/) directory in DEA's Amazon S3 bucket.
 1. Click on `ga_summary_grid_c3_32km_coastal.geojson` to download the file to your computer. This file can be used in a GIS package to identify the product tiles that you require for a given location. (Alternatively, you can access this file via DEA Maps to identify the required tiles: **Sea, ocean and coast** &gt; **DEA Intertidal** &gt; **DEA Intertidal 32 km tile grid**.)
