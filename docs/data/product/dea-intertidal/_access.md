@@ -37,7 +37,6 @@ See the following guides for how to access the data depending on your use case.
 1. Open the DEA Intertidal [continental_mosaics](https://data.dea.ga.gov.au/?prefix=derivative/ga_s2ls_intertidal_cyear_3/2-0-0/continental_mosaics/) directory in DEA's Amazon S3 bucket.
 1. Enter a directory of a particular year, e.g. `2018--P1Y`
 1. Right click one of the `.tif` files representing a particular band e.g. `ga_s2ls_intertidal_cyear_3_2018_elevation.tif` &gt; click **Copy link address**.
-1. Open QGIS on your computer.
 1. In QGIS, click **Layer** &gt; **Add Layer** &gt; **Add Raster Layer**.
     1. For **Source Type**, select **Protocol: HTTP(S), cloud, etc.**.
     1. For **Protocol Type**, select **HTTP/HTTPS/FTP**.
@@ -52,6 +51,7 @@ Learn more about streaming cloud datasets: [How to read a Cloud Optimized GeoTIF
 
 To connect Esri ArcGIS Pro to DEA's Amazon S3 bucket, follow Esri's tutorial: [Create a cloud storage connection](https://pro.arcgis.com/en/pro-app/latest/help/projects/connect-to-cloud-stores.htm#ESRI_SECTION1_82576579B8CC43E6AE261E39FACFA947).
 
+1. In ArcGIS Pro, click the **Insert** tab, then in the Project group click **Connections > Cloud Store > New Cloud Storage Connection**.
 1. Add the following details to the **Create Cloud Storage Connection** dialogue box:
 
     * **Connection File Name** &mdash; `DEA_data`
@@ -73,7 +73,7 @@ To connect Esri ArcGIS Pro to DEA's Amazon S3 bucket, follow Esri's tutorial: [C
     1. Expand the **DEA_data.acs** cloud store.
     1. Navigate to `derivative/ga_s2ls_intertidal_cyear_3/2-0-0/continental_mosaics/`.
     1. Enter a directory of a particular year, e.g. `2018--P1Y`.
-    1. Drag and drop the `.tif` COG file representing a particular band e.g. `ga_s2ls_intertidal_cyear_3_2018_elevation.tif` onto the map.
+    1. Drag and drop the `.tif` COG file representing a particular band e.g. `ga_s2ls_intertidal_cyear_3_2018_elevation.tif` onto the map (or right-click and "Add to map").
     
     <br>
 
