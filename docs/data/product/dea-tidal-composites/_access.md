@@ -30,7 +30,7 @@ If you encounter difficulty with any of these instructions, or with the COG file
 
 **Stream continental COG mosaics in QGIS**
 
-To load single-band DEA Tidal Composites in QGIS:
+To load single-band DEA Tidal Composites bands in QGIS:
 
 1. Open the DEA Tidal Composites [continental_mosaics](https://data.dea.ga.gov.au/?prefix=derivative/ga_s2_tidal_composites_cyear_3/1-0-0/continental_mosaics/) directory in DEA's Amazon S3 bucket.
 1. Enter a directory of a particular year, e.g. `2018--P1Y`
@@ -41,11 +41,11 @@ To load single-band DEA Tidal Composites in QGIS:
     1. In the **URI** field, paste the link to the band that you copied to the clipboard.
 1. Click **Add** to start streaming the layer. Data should appear on the map after a few seconds (or after several minutes on slow internet connections).
 
-To make it easier to visualise DEA Tidal Composite bands in true and false colour, we also provide several Virtual Raster files (`.vrt`) that can be loaded into QGIS.
-These Virtual Rasters combine, stream and visualise data from multiple COG files in the cloud simultaneously, avoiding the need to download multiple files.
+We also provide several Virtual Raster (`.vrt`) files to help you easily visualise multiple DEA Tidal Composites bands in true and false colour.
+These files combine and stream data from multiple cloud-based COGs, avoiding the need to download multiple files.
 To add these to QGIS:
 
-1. Follow the instructions 1-3 above, coping the link to one of the `.vrt` virtual raster files e.g. `ga_s2_tidal_composites_cyear_3_2020_vrt-low-falsecolour.vrt` &gt; click **Copy link address**.
+1. Follow the instructions 1-3 above, coping the link to one of the Virtual Raster (`.vrt`) files, e.g. `ga_s2_tidal_composites_cyear_3_2020_vrt-low-falsecolour.vrt`.
 1. Continue with steps 4-5 to start streaming the layer. Data should appear on the map after a few seconds (or after several minutes on slow internet connections).
 
 Learn more about streaming cloud datasets: [How to read a Cloud Optimized GeoTIFF with QGIS](https://cogeo.org/qgis-tutorial.html).
@@ -57,6 +57,11 @@ Learn more about streaming cloud datasets: [How to read a Cloud Optimized GeoTIF
 To connect Esri ArcGIS Pro to DEA's Amazon S3 bucket, follow Esri's tutorial: [Create a cloud storage connection](https://pro.arcgis.com/en/pro-app/latest/help/projects/connect-to-cloud-stores.htm#ESRI_SECTION1_82576579B8CC43E6AE261E39FACFA947).
 
 1. In ArcGIS Pro, click the **Insert** tab, then in the Project group click **Connections** &gt; **Cloud Store** &gt; **New Cloud Storage Connection**.
+
+<br>
+
+![Accessing the Connections and Cloud store menu in ArcGIS Pro](/_files/dea-tidal-composites/cog_arcgispro_connections.jpg)
+
 1. Add the following details to the **Create Cloud Storage Connection** dialogue box:
 
     * **Connection File Name** &mdash; `DEA_data`
