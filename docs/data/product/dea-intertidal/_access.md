@@ -55,9 +55,9 @@ To connect Esri ArcGIS Pro to DEA's Amazon S3 bucket, follow Esri's tutorial: [C
 
 1. In ArcGIS Pro, click the **Insert** tab, then in the Project group click **Connections** &gt; **Cloud Store** &gt; **New Cloud Storage Connection**.
 
-<br>
+    <br>
 
-![Accessing the Connections and Cloud store menu in ArcGIS Pro](/_files/dea-tidal-composites/cog_arcgispro_connections.jpg)
+    ![Accessing the Connections and Cloud store menu in ArcGIS Pro](/_files/dea-tidal-composites/cog_arcgispro_connections.jpg)
 
 1. Add the following details to the **Create Cloud Storage Connection** dialogue box:
 
