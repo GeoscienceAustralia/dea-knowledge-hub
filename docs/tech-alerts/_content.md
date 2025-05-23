@@ -1,6 +1,14 @@
 % See the DEA Tech Alerts documentation:
 % https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/tech_alerts_changelog.html
 
+## 23 May 2025: NOAA-19-derived DEA Hotspots to be discontinued from 16 June 2025
+
+The National Oceanic and Atmospheric Administration (NOAA) has announced the discontinuation of data collection from the NOAA-19 satellite from 16 June 2025. The satellite's Advanced Very High-Resolution Radiometer (AVHRR) is currently used for capturing thermal anomalies and providing a night-time overpass for DEA Hotspots under the Landgate AVHRR layer which will no longer be available from this date. 
+
+No action is required. Users can prepare by transitioning to the Visible Infrared Imaging Radiometer Suite (VIIRS) Hotspots and Himawari-9 Hotspots which remain available. VIIRS Hotspots from Suomi NPP, NOAA-20, and NOAA-21 are available and provide coverage in the afternoon and night-time, whilst Himawari-9 Hotspots are updated continuously every ten minutes. 
+
+[View the Tech Alert](https://communication.ga.gov.au/link/id/zzzz68300b1054dd3242Pzzzz6567c8b713b5b826/page.html)
+
 ## 15 May 2025: DEA Intertidal 2.0.0 released incorporating 2023 data
 
 Digital Earth Australia has released v2.0.0 of its [DEA Intertidal](/data/product/dea-intertidal/) product. This updated v2.0.0 release incorporates improved ensemble tidal modelling into the product workflow using DEA’s [eo-tides](https://github.com/GeoscienceAustralia/eo-tides) package. It includes 2023 calendar year data, as well as a new Intertidal Extents product layer. DEA Intertidal is now available as continental-scale Cloud Optimised GeoTIFF (COG) mosaics, enabling seamless streaming of data across the entire Australian coastline into GIS platforms like QGIS and ArcGIS Pro. 
