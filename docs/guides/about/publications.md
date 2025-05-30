@@ -11,6 +11,8 @@ This page is a list of academic articles, peer-reviewed presentations, and other
 
 Asbridge, E., Krause, C., Lucas, R., Owers, C. J., Rogers, K., Lymburner, L., Mueller, N., Ai, E., Wong, S., 2025. Characterising the short- and long-term impacts of tropical cyclones on mangroves using the Landsat archive. Cambridge Prisms: Coastal Futures, 3, p. e4. <https://doi.org/10.1017/cft.2024.19>
 
+Bishop-Taylor, R., Phillips, C., Sagar, S., Newey, V., & Sutterley, T., 2025. eo-tides: Tide modelling tools for large-scale satellite Earth observation analysis. Journal of Open Source Software, 10(109), 7786, <https://doi.org/10.21105/joss.07786>
+
 ## 2024
 
 Bishop-Taylor, R., Phillips, C., Sagar, S., Newey, V., 2024. Time and Tide: Mapping the Changing 3D Shape of Australia's Coastline Using Petabytes of Open Satellite Imagery. AGU24 Annual Meeting.
