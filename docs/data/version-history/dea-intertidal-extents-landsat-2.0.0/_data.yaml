@@ -2,21 +2,21 @@
 
 # Specifications
 
-short_name: DEA High and Low Tide Imagery (Landsat)
-full_technical_name: "High Tide and Low Tide Composites 25m 2.0.0 "
-header_image: /_files/cmi/HLTCv2.png
+short_name: Intertidal Extents Model (ITEM)
+full_technical_name: Intertidal Extents Model 25m
+header_image: /_files/cmi/intertidal_extents.png
 
 version_number: 2.0.0
-is_latest_version: true
-latest_version_link: null
+is_latest_version: false
+latest_version_link: /data/product/dea-intertidal/
 is_provisional: false
 
 lineage_type: DERIVATIVE
 spatial_data_type: RASTER
 
 spatial_coverage: null
-temporal_coverage_start: 1995
-temporal_coverage_end: 2017
+temporal_coverage_start: 1986
+temporal_coverage_end: 2016
 temporal_coverage_custom: null
 
 data_update_frequency: AS_NEEDED
@@ -27,8 +27,8 @@ resolution: 25 m
 coordinate_reference_system: EPSG:3577
 
 product_ids:
-  - high_tide_comp_20p
-  - low_tide_comp_20p
+  - item_v2
+  - item_v2_conf
 
 parent_products:
   - name: Landsat 5, 7 and 8 NBAR and Observational Attributes (Collection 2)
@@ -36,44 +36,45 @@ parent_products:
 
 collections:
   - name: Geoscience Australia Landsat Collection 2
-    link: /search/?q=Geoscience+Australia+Landsat+Collection+2
+    link: /search/?q=Geoscience+Australia+Landsat+Collection+3
 
-doi: 10.4225/25/5a615705d20f7
-ecat_id: "113843"
+doi: 10.4225/25/5a602cc9eb358
+ecat_id: "113842"
 
 licence_name: Creative Commons Attribution 4.0 International Licence
 licence_link: https://creativecommons.org/licenses/by/4.0/
 
-citation_data: "Sagar, S., Phillips, C., Bala, B., Roberts, D., Lymburner, L., 2017. High tide and low tide composites 25m v. 2.0.0. Geoscience Australia, Canberra. http://dx.doi.org/10.4225/25/5a615705d20f7"
-citation_paper: "Sagar, S., Phillips, C., Bala, B., Roberts, D., Lymburner, L., 2018. Generating continental scale pixel-based surface reflectance composites in coastal regions with the use of a multi-resolution tidal model. Remote Sensing. 10, 480. https://doi.org/10.3390/rs10030480"
+citation_data: "Sagar, S., Roberts, D., Bala, B., Lymburner, L., 2017. Intertidal Extents Model 25m v. 2.0.0. Geoscience Australia, Canberra. http://dx.doi.org/10.4225/25/5a602cc9eb358"
+citation_paper: "Sagar, S., Roberts, D., Bala, B., Lymburner, L., 2017. Extracting the intertidal extent and topography of the Australian coastline from a 28 year time series of Landsat observations. Remote Sensing of Environment 195, 153-169. https://doi.org/10.1016/j.rse.2017.04.009"
 
 citations_custom: null
 
 tags:
   - geoscience_australia_landsat_collection_2_deprecated
-  - geomedian
-  - tidal_modelling
-  - nbar
+  - item
+  - topography
+  - habitat_mapping
+  - geomorphology
 
 # Access
 
 access_links_maps:
-  - link: https://maps.dea.ga.gov.au/#share=s-7YeWZKqWkF0Ctv5Av8RkHSWeNzQ
+  - link: https://maps.dea.ga.gov.au/#share=s-1I12IwkLvoIRxnJkzeiGTAJ3qEL
     name: See it on a map
 
 access_links_explorers:
-  - link: https://explorer.dea.ga.gov.au/products/high_tide_comp_20p
-    name: High tide data explorer
-  - link: https://explorer.dea.ga.gov.au/products/low_tide_comp_20p
-    name: Low tide data explorer
+  - link: https://explorer.dea.ga.gov.au/products/item_v2
+    name: null
+  - link: https://explorer.dea.ga.gov.au/products/item_v2_conf
+    name: Confidence data explorer
 
 access_links_data:
-  - link: https://thredds.nci.org.au/thredds/catalog/catalogs/fk4/hltc_2_0.html
+  - link: https://data.dea.ga.gov.au/?prefix=item_v2/v2.0.1/
+    name: Access the data on AWS
+  - link: https://thredds.nci.org.au/thredds/catalog/catalogs/fk4/item_2_0.html
     name: Access the data on NCI
 
-access_links_code_examples:
-  - link: /notebooks/DEA_products/DEA_High_and_Low_Tide_Imagery/
-    name: null
+access_links_code_examples: null
 
 access_links_web_services:
   - link: https://ows.dea.ga.gov.au/

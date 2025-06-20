@@ -1,6 +1,6 @@
 ## Acknowledgments
 
-The authors would like to sincerely thank the following individuals and organisations for validation data and valuable feedback on preliminary versions of this product: 
+The authors would like to sincerely thank the following individuals and organisations for validation data and valuable feedback on preliminary versions of this product.
 
 * Mick O’Leary/Ryan Lowe &mdash; University of Western Australia 
 * Jenna Hounslow/Adrian Gleiss &mdash; Murdoch University 

@@ -1,6 +1,32 @@
 % See the DEA Tech Alerts documentation:
 % https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/tech_alerts_changelog.html
 
+## 23 May 2025: NOAA-19-derived DEA Hotspots to be discontinued from 16 June 2025
+
+The National Oceanic and Atmospheric Administration (NOAA) has announced the discontinuation of data collection from the NOAA-19 satellite from 16 June 2025. The satellite's Advanced Very High-Resolution Radiometer (AVHRR) is currently used for capturing thermal anomalies and providing a night-time overpass for DEA Hotspots under the Landgate AVHRR layer which will no longer be available from this date. 
+
+No action is required. Users can prepare by transitioning to the Visible Infrared Imaging Radiometer Suite (VIIRS) Hotspots and Himawari-9 Hotspots which remain available. VIIRS Hotspots from Suomi NPP, NOAA-20, and NOAA-21 are available and provide coverage in the afternoon and night-time, whilst Himawari-9 Hotspots are updated continuously every ten minutes. 
+
+[View the Tech Alert](https://communication.ga.gov.au/link/id/zzzz68300b1054dd3242Pzzzz6567c8b713b5b826/page.html)
+
+## 15 May 2025: DEA Intertidal 2.0.0 released incorporating 2023 data
+
+Digital Earth Australia has released v2.0.0 of its [DEA Intertidal](/data/product/dea-intertidal/) product. This updated v2.0.0 release incorporates improved ensemble tidal modelling into the product workflow using DEA’s [eo-tides](https://github.com/GeoscienceAustralia/eo-tides) package. It includes 2023 calendar year data, as well as a new Intertidal Extents product layer. DEA Intertidal is now available as continental-scale Cloud Optimised GeoTIFF (COG) mosaics, enabling seamless streaming of data across the entire Australian coastline into GIS platforms like QGIS and ArcGIS Pro. 
+
+You are able to access this product and its 2023 calendar year data via [DEA Maps](https://maps.dea.ga.gov.au/story/DEAIntertidal) and the DEA Knowledge Hub. 
+
+The new products in this release will result in the deprecation of two of our historical Landsat-based DEA products ([DEA Intertidal Extents (ITEM)](/data/version-history/dea-intertidal-extents-landsat-2.0.0/) and [DEA High and Low Tide Composites](/data/version-history/dea-high-and-low-tide-imagery-landsat-2.0.0/)) over the coming weeks. Whilst data from these products will remain accessible, it is recommended users transition to the new products where possible.  
+
+[View the Tech Alert](https://communication.ga.gov.au/link/id/zzzz68253ddc82e48602Pzzzz6567c8b713b5b826/page.html)
+
+## 15 May 2025: DEA Tidal Composites released
+
+The new [DEA Tidal Composites](/data/product/dea-tidal-composites/) product has been made available. This product compliments the DEA Intertidal suite by providing high resolution cloud-free 10m composite imagery from the Sentinel-2 constellation, visualising the Australian coastline at high and low tide.
+
+The new products in this release will result in the deprecation of two of our historical Landsat-based DEA products ([DEA Intertidal Extents (ITEM)](/data/version-history/dea-intertidal-extents-landsat-2.0.0/) and [DEA High and Low Tide Composites](/data/version-history/dea-high-and-low-tide-imagery-landsat-2.0.0/)) over the coming weeks. Whilst data from these products will remain accessible, it is recommended users transition to the new products where possible.  
+
+[View the Tech Alert](https://communication.ga.gov.au/link/id/zzzz68253ddc82e48602Pzzzz6567c8b713b5b826/page.html)
+
 ## 1 May 2025: Missing Sentinel-2C data on AWS datacube is being restored
 
 We are aware that some [Sentinel-2C](/data/category/sentinel-2c-analysis-ready-data/) data are missing from the AWS datacube, primarily from January and February 2025. We are working to restore this data as soon as possible. We're sorry for any inconvenience this may cause.
