@@ -77,7 +77,7 @@ To connect Esri ArcGIS Pro to DEA's Amazon S3 bucket, follow Esri's tutorial: [C
     1. Expand the **DEA_data.acs** cloud store.
     1. Navigate to `derivative/ga_ls_landcover_class_cyear_3/2-0-0/continental_mosaics/`.
     1. Enter a directory of a particular year, e.g. `2024--P1Y`.
-    1. Drag and drop the `.tif` COG file representing a particular band e.g. `ga_ls_landcover_class_cyear_3_mosaic_2024--P1Y_level4.vrt` onto the map (or right-click and "Add to map").
+    1. Drag and drop the `.tif` or `.vrt` file representing a particular Land Cover level (e.g. `ga_ls_landcover_class_cyear_3_mosaic_2024--P1Y_level4.vrt`) onto the map (or right-click and "Add to map").
     
     <br>
 
