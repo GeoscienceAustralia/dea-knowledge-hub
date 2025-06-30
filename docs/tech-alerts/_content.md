@@ -3,7 +3,7 @@
 
 ## 26 Jun 2025: Tech Alert
 
-Our [latest tech alert](https://communication.ga.gov.au/link/id/zzzz685c9f34c9582777Pzzzz6567c8b713b5b826/page.html) contains some key information:
+Our [latest tech alert](https://communication.ga.gov.au/link/id/zzzz685c9f34c9582777Pzzzz6567c8b713b5b826/page.html) contains some key information, some of which has already been posted in previous tech alerts.
 
 * You can now access the latest releases of Digital Earth Australia (DEA) terrestrial and coastal products with 2024 data included.
 * DEA Water Observation Statistics (Nov 2024 - Mar 2025) data update is now available .
