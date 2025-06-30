@@ -9,6 +9,14 @@ No action is required. Users can prepare by transitioning to the Visible Infrare
 
 [View the Tech Alert](https://communication.ga.gov.au/link/id/zzzz68300b1054dd3242Pzzzz6567c8b713b5b826/page.html)
 
+## 21 May 2025: DEA Waterbodies 3.0
+
+[DEA Waterbodies 3.0.0](/data/product/dea-waterbodies-landsat/) uses the same underlying polygon set as v2.0.0 but contains several improvements. Improvements include additional supporting data for the most recent observations available through web mapping services (WMS) and DEA Maps, more metadata availability, and pipeline improvements.
+
+The update from version 2.0.0 to version 3.0.0 of the DEA Waterbodies product and service was created through a collaboration between Geoscience Australia, the National Aerial Firefighting Centre, Natural Hazards Research Australia, and FrontierSI to make the product more useful in hazard applications.
+
+[View the Tech Alert](https://communication.ga.gov.au/pub/pubType/EO/pubID/zzzz66455dd1707af276/interface.html)
+
 ## 15 May 2025: DEA Intertidal 2.0.0 released incorporating 2023 data
 
 Digital Earth Australia has released v2.0.0 of its [DEA Intertidal](/data/product/dea-intertidal/) product. This updated v2.0.0 release incorporates improved ensemble tidal modelling into the product workflow using DEA’s [eo-tides](https://github.com/GeoscienceAustralia/eo-tides) package. It includes 2023 calendar year data, as well as a new Intertidal Extents product layer. DEA Intertidal is now available as continental-scale Cloud Optimised GeoTIFF (COG) mosaics, enabling seamless streaming of data across the entire Australian coastline into GIS platforms like QGIS and ArcGIS Pro. 
