@@ -1,6 +1,21 @@
 % See the DEA Tech Alerts documentation:
 % https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/tech_alerts_changelog.html
 
+## 26 Jun 2025: Tech Alert
+
+Our [latest tech alert](https://communication.ga.gov.au/link/id/zzzz685c9f34c9582777Pzzzz6567c8b713b5b826/page.html) contains some key information:
+
+* You can now access the latest releases of Digital Earth Australia (DEA) terrestrial and coastal products with 2024 data included.
+* DEA Water Observation Statistics (Nov 2024 - Mar 2025) data update is now available .
+* DEA Coastal products: new versions, new calendar data and new modelling.
+* DEA Land Cover 2.0 now available.
+* New user guide for DEA Maps: how to use its powerful features.
+* Farewell Landsat-7.
+* DEA Waterbodies v1 and 2 decommissioning.
+* Tech Alerts and Comms Archives.
+
+[View the Tech Alert](https://communication.ga.gov.au/link/id/zzzz685c9f34c9582777Pzzzz6567c8b713b5b826/page.html)
+
 ## 23 May 2025: NOAA-19-derived DEA Hotspots to be discontinued from 16 June 2025
 
 The National Oceanic and Atmospheric Administration (NOAA) has announced the discontinuation of data collection from the NOAA-19 satellite from 16 June 2025. The satellite's Advanced Very High-Resolution Radiometer (AVHRR) is currently used for capturing thermal anomalies and providing a night-time overpass for DEA Hotspots under the Landgate AVHRR layer which will no longer be available from this date. 
@@ -8,6 +23,14 @@ The National Oceanic and Atmospheric Administration (NOAA) has announced the dis
 No action is required. Users can prepare by transitioning to the Visible Infrared Imaging Radiometer Suite (VIIRS) Hotspots and Himawari-9 Hotspots which remain available. VIIRS Hotspots from Suomi NPP, NOAA-20, and NOAA-21 are available and provide coverage in the afternoon and night-time, whilst Himawari-9 Hotspots are updated continuously every ten minutes. 
 
 [View the Tech Alert](https://communication.ga.gov.au/link/id/zzzz68300b1054dd3242Pzzzz6567c8b713b5b826/page.html)
+
+## 21 May 2025: DEA Waterbodies 3.0
+
+[DEA Waterbodies 3.0.0](/data/product/dea-waterbodies-landsat/) uses the same underlying polygon set as v2.0.0 but contains several improvements. Improvements include additional supporting data for the most recent observations available through web mapping services (WMS) and DEA Maps, more metadata availability, and pipeline improvements.
+
+The update from version 2.0.0 to version 3.0.0 of the DEA Waterbodies product and service was created through a collaboration between Geoscience Australia, the National Aerial Firefighting Centre, Natural Hazards Research Australia, and FrontierSI to make the product more useful in hazard applications.
+
+[View the Tech Alert](https://communication.ga.gov.au/pub/pubType/EO/pubID/zzzz66455dd1707af276/interface.html)
 
 ## 15 May 2025: DEA Intertidal 2.0.0 released incorporating 2023 data
 
