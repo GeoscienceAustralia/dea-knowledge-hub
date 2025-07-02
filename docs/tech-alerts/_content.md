@@ -1,14 +1,6 @@
 % See the DEA Tech Alerts documentation:
 % https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/tech_alerts_changelog.html
 
-## 2 Jul 2025: The AVHRR layer has been removed from Hotspots portal
-
-Since our station stopped receiving AVHRR data on 18 June, the AVHRR layer has hence been removed from the [DEA Hotspots portal](https://hotspots.dea.ga.gov.au/).
-
-You may need to 'hard refresh' the portal to see this change. In many web browsers, this can be performed by pressing Ctrl+F5.
-
-Note that Murdoch station is now the sole receiver of data. See the [Murdoch station data](https://hotspots.dea.ga.gov.au/files/L0/NOAA/Station/mur).
-
 ## 26 Jun 2025: Tech Alert
 
 Our [latest tech alert](https://communication.ga.gov.au/link/id/zzzz685c9f34c9582777Pzzzz6567c8b713b5b826/page.html) contains some key information, some of which has already been posted in previous tech alerts.
