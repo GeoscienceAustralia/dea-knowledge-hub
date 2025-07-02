@@ -1,7 +1,7 @@
 % See the DEA Tech Alerts documentation:
 % https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/tech_alerts_changelog.html
 
-## 2 Jul 2025: The AVHRR layer has been removed from Hotspots portal
+## 2 Jul 2025: AVHRR layer removed from Hotspots portal
 
 Since our station stopped receiving AVHRR data on 18 June, the AVHRR layer has hence been removed from the [DEA Hotspots portal](https://hotspots.dea.ga.gov.au/).
 
