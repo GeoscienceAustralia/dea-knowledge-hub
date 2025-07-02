@@ -30,8 +30,8 @@ product_ids:
   - ga_ls_mangrove_cover_cyear_3
 
 parent_products:
-  - name: DEA Fractional Cover (Landsat)
-    link: /data/product/dea-fractional-cover-landsat/
+  - name: DEA Fractional Cover Percentiles (Landsat)
+    link: /data/product/dea-fractional-cover-percentiles-landsat/
   - name: DEA Tasseled Cap Percentiles (Landsat)
     link: /data/product/dea-tasseled-cap-percentiles-landsat/
 
