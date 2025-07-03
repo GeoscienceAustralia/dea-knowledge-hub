@@ -41,7 +41,7 @@ The product development follows a three-stage methodology:
 
 **Stage 1: Determine the maximum spatial extent of mangroves**
 
-1. Establish the potential mangrove area from 1987 to 2019 by combining mangrove maps from multiple time periods (1996, 2007-2010, and 2015/16) generated through the Japanese Aerospace Exploration Agency (JAXA) Global Mangrove Watch (GMW).
+1. Establish the potential mangrove area by combining mangrove maps from multiple time periods (1996, 2007-2010, and 2015/16) generated through the Japanese Aerospace Exploration Agency (JAXA) Global Mangrove Watch (GMW).
 2. Refine this combined map using State and Territory mangrove mapping products.
 
 **Stage 2: Calibrate thresholding values for mangrove canopy cover classes**
