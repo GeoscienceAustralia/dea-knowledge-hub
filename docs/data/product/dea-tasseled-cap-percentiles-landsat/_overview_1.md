@@ -1,12 +1,16 @@
 ## About
 
+Tasseled Cap percentiles provide an annual summary of how the environment has varied through a year. The Tasseled Cap percentiles provide the upper, lower and middle conditions as described by the 90th, 10th and 50th percentiles respectively, of greenness, wetness and brightness across the landscape.
+
+These percentiles are intended for use as inputs into classification algorithms to identify such environmental features as wetlands and groundwater dependent ecosystems, and characterise salt flats, clay pans, salt lakes and coastal land forms.
+<!-- 
 The DEA Tasseled Cap Percentiles product provides an annual summary of environmental conditions across the Australian landscape using Tasseled Cap indices, a method that transforms raw reflectance data into three components:
 
  - Brightness: Indicates the overall reflectivity of the land surface, often highlighting bare soil, urban areas or dry conditions.
  - Greenness: Reflects the presence and vigor of photosynthetic vegetation.
  - Wetness: Captures moisture content in soil and vegetation, helping to identify waterlogged or saturated areas.
 
-These percentile summaries are useful for identifying and monitoring environmental features such as wetlands, groundwater-dependent ecosystems, salt lakes, clay pans, and coastal landforms. They are designed to support environmental classification, change detection, and long-term landscape monitoring.
+These percentile summaries are useful for identifying and monitoring environmental features such as wetlands, groundwater-dependent ecosystems, salt lakes, clay pans, and coastal landforms. They are designed to support environmental classification, change detection, and long-term landscape monitoring. -->
 
 
 :::{admonition} This version includes breaking changes

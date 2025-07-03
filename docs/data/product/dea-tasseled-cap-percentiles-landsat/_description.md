@@ -42,7 +42,7 @@ The Tasseled Cap Percentiles are useful for:
 
 The Tasseled Cap transformation used to generate this product implements the coefficients described by Crist et al. (1985), adapted for Landsat surface reflectance data. The Tasseled Cap Transformation (TCT) is a linear transformation that projects multispectral data into a new coordinate system defined by three components: Brightness, Greenness, and Wetness. 
 
-In other words, the transformation reduces a larger number of spectral bands into three composite indices that are easier to interpret and apply in analyses. These indices are designed to capture the dominant modes avenues spectral variation in terrestrial landscapes:
+In other words, the transformation reduces a larger number of spectral bands into three composite indices that are easier to interpret and apply in analyses. These indices are designed to capture the dominant avenues of spectral variation in terrestrial landscapes:
 
 - Brightness is a weighted sum of all bands and reflects overall surface albedo.
 - Greenness contrasts the visible and near-infrared bands to highlight photosynthetically active vegetation.
@@ -68,11 +68,11 @@ Percentiles are used instead of minimum, maximum, or mean values because they ar
 
 These percentile layers are particularly valuable for land cover classification, wetland mapping, coastal zone monitoring, and ecosystem condition assessment, especially in environments where vegetation, water, and bare ground co-occur or fluctuate seasonally.
 
-The percentile-based approach used in this dataset aligns with best practices in time-series analysis of Earth observation data, as seen in related products such as [DEA Geometric Median and Median Absolute Deviation](/data/product/dea-geometric-median-and-median-absolute-deviation-landsat/), [DEA Fractional Cover Percentiles](/data/product/dea-fractional-cover-percentiles-landsat/), and [DEA Water Observations from Space (WOFS)](/data/product/dea-water-observations-statistics-landsat/). Together, these products form a complementary suite of tools for understanding landscape dynamics across Australia.
+The percentile-based approach used in this dataset aligns with best practices in time-series analysis of Earth observation data, as seen in related products such as [DEA Geometric Median and Median Absolute Deviation](https://knowledge.dea.ga.gov.au/data/product/dea-geometric-median-and-median-absolute-deviation-landsat/), [DEA Fractional Cover Percentiles](https://knowledge.dea.ga.gov.au/data/product/dea-fractional-cover-percentiles-landsat/), and [DEA Water Observations from Space (WOFS)](https://knowledge.dea.ga.gov.au/data/product/dea-water-observations-statistics-landsat/). Together, these products form a complementary suite of tools for understanding landscape dynamics across Australia.
 
 ## Lineage
 
-The Tasseled Cap Percentiles are derived from Landsat surface reflectance data from the [Surface Reflectance NBART Collection 3 (Landsat)](/data/category/dea-surface-reflectance/). This input dataset includes terrain-corrected, analysis-ready data (ARD) from Landsat 5, Landsat 7, Landsat 8, and Landsat 9.
+The Tasseled Cap Percentiles are derived from Landsat surface reflectance data from the [Surface Reflectance NBART Collection 3 (Landsat)](https://knowledge.dea.ga.gov.au/data/category/dea-surface-reflectance/). This input dataset includes terrain-corrected, analysis-ready data (ARD) from Landsat 5, Landsat 7, Landsat 8, and Landsat 9.
 
 To ensure data quality, all input imagery is masked for cloud and shadow contamination, with a 6-pixel buffer applied around detected cloud and shadow areas. This step reduces the influence of atmospheric interference and improves the reliability of the percentile calculations.
 
