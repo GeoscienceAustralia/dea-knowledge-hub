@@ -15,17 +15,16 @@ During the upgrade from Collection 2 to Collection 3, the thresholding values fo
 
 ### Known Limitations
 
-The Global Mangrove Watch (GMW) polygon, created using methods described in Lucas et al. 2014 ([https://doi.org/10.1071/MF13177](https://doi.org/10.1071/MF13177)), provides the consistent reference frame for this product. However, this reference dataset has inherent limitations that impact the DEA Mangroves product:
-
-**Omission errors:** Areas that were mangrove habitat prior to 2010 but were not identified as mangrove in the 2010 GMW dataset may be excluded from the DEA Mangroves time series maps.
-
-**Commission errors:** Some small areas of coastal non-mangrove woody vegetation (such as Casuarina and Melaleuca species) are incorrectly included within the GMW mangrove extent polygons. While efforts have been made to minimize these errors, some non-mangrove vegetation will still be classified as mangrove in the final product.
+* The Global Mangrove Watch (GMW) polygon, created using methods described in Lucas et al. 2014 ([https://doi.org/10.1071/MF13177](https://doi.org/10.1071/MF13177)), provides the consistent reference frame for this product. However, this reference dataset has inherent limitations that impact the DEA Mangroves product:
+    * **Omission errors:** Areas that were mangrove habitat prior to 2010 but were not identified as mangrove in the 2010 GMW dataset may be excluded from the DEA Mangroves time series maps.
+    * **Commission errors:** Some small areas of coastal non-mangrove woody vegetation (such as Casuarina and Melaleuca species) are incorrectly included within the GMW mangrove extent polygons. While efforts have been made to minimize these errors, some non-mangrove vegetation will still be classified as mangrove in the final product.
 
 ## Quality Assurance
 
-Product quality depends on the underlying Fractional Cover product quality. Quality issues occur during periods of limited satellite coverage:
+Product quality depends on the underlying Fractional Cover product quality. Quality issues occur during periods of limited satellite coverage.
 
 **Problem Periods:**
+
 - **2004-2010:** Landsat 5 performance degradation
 - **2011-2012:** Landsat 7 sensor failure
 
