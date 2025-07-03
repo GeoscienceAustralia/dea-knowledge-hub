@@ -7,7 +7,5 @@ The 2024 annual data for this product was published on 30 April 2025. You are no
 ### Version 4.0.0
 
 - **Breaking change: Shift in grid origin point** — The south-west origin point of the DEA Summary Product Grid has been shifted 18 tiles west and 15 tiles south. All tile grid references have changed (e.g., `x10y10` is now `x28y25`). This affects all summary derivative products, but baseline and scene derivative products remain unaffected.
-
 - **Enhanced cloud masking to reduce noise** — Cloud masking improvements use 6-pixel dilation on cloud and shadows to reduce noise in source datasets. Some high-reflectance areas (sand dunes, ocean) may show increased noise or data gaps, but these occurrences are infrequent with minimal impact.
-
 - **Additional inputs from Landsat 9** — Landsat 9 data incorporated from 2022 onwards.
