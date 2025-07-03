@@ -39,18 +39,18 @@ Mangrove canopy classification is performed using DEA Fractional Cover Percentil
 
 The product development follows a three-stage methodology:
 
-### Stage 1: Determine the maximum spatial extent of mangroves
+**Stage 1: Determine the maximum spatial extent of mangroves**
 
 1. Establish the potential mangrove area from 1987 to 2019 by combining mangrove maps from multiple time periods (1996, 2007-2010, and 2015/16) generated through the Japanese Aerospace Exploration Agency (JAXA) Global Mangrove Watch (GMW).
 2. Refine this combined map using State and Territory mangrove mapping products.
 
-### Stage 2: Calibrate thresholding values for mangrove canopy cover classes
+**Stage 2: Calibrate thresholding values for mangrove canopy cover classes**
 
 1. Extract Planimetric Canopy Cover Percentage (PCC%) from high-resolution Light Detection and Ranging (LiDAR) data (1 m resolution).
 2. Perform regression analysis between satellite-derived `pv_pc_10` values and LiDAR-derived PCC% for corresponding locations and time periods.
 3. Determine the specific `pv_pc_10` threshold values that correspond to 20%, 50%, and 80% PCC% levels.
 
-### Stage 3: Classify mangrove canopy density
+**Stage 3: Classify mangrove canopy density**
 
 1. Refine the mangrove footprint by applying `wet_pc_10` thresholds within the maximum spatial extent established in Stage 1.
 2. Classify pixels within the refined mangrove footprint by applying the calibrated `pv_pc_10` threshold values (from Stage 2) to assign appropriate canopy cover classes.
