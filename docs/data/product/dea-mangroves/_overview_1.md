@@ -6,9 +6,6 @@ This dataset provides critical environmental intelligence for climate change mon
 By tracking mangrove health and extent over time, it enables assessment of how cyclones, sea level rise, and extreme weather events impact these critical carbon storage ecosystems, 
 supporting evidence-based coastal management and conservation decisions. The ongoing maintenance and annual updates of this long-term monitoring resource advances scientific research and supports sustainable coastal management for public benefit.
 -->
-
-
-
 Tracking changes in the canopy density of mangroves, Digital Earth Australia (DEA) Mangroves reveals how these extraordinary trees may be responding to sea level rise, severe tropical cyclones, drought, climatic cycles, changing temperatures and large storm events.
 
 :::{admonition} This version includes breaking changes
