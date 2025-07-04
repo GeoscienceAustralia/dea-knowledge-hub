@@ -36,12 +36,12 @@ In addition, a confidence-filtered Multi-Year Summary is under development, whic
 :::{admonition} 
 :class: note
 
-When loading the data array of any Water Observations summary using the `datacube` Python library, the central date of the observation period is returned. This date typically corresponds to:
+When loading the data of any Water Observations summary using the `datacube` Python library or when using [DEA Maps](https://maps.dea.ga.gov.au/), the central date of the observation period is returned. This date typically corresponds to:
 
 * 15 January for the November to March season
 * 16 July for the April to October season
 * 2 July for calendar year summaries
-  
+
 For example, the November to March 2020–2021 season is reported with a central date of 15 January 2021.
 :::
 
