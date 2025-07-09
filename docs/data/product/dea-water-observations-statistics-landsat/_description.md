@@ -33,6 +33,18 @@ WO-STATS is available in multiple forms, depending on the length of time over wh
 
 In addition, a confidence-filtered Multi-Year Summary is under development, which will contain a confidence layer and subsequent filtered water frequency layer. This provides a noise-reduced view of the unfiltered multi-year summary.
 
+:::{admonition} 
+:class: note
+
+When loading the data of any Water Observations summary using the `datacube` Python library or when using [DEA Maps](https://maps.dea.ga.gov.au/), the central date of the observation period is returned. This date typically corresponds to:
+
+* 15 January for the November to March season
+* 16 July for the April to October season
+* 2 July for calendar year summaries
+
+For example, the November to March 2020–2021 season is reported with a central date of 15 January 2021.
+:::
+
 ## Lineage
 
 This product is created from the WO water classification (Water Observations (Landsat)). Every pixel location is analysed statistically to derive the count of clear observations, the count of clear-wet observations and then to calculate the percentage of clear observations that were also wet. This provides a 'normalised' water frequency product for all of Australia.
