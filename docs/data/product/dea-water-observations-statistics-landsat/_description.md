@@ -33,7 +33,7 @@ WO-STATS is available in multiple forms, depending on the length of time over wh
 
 In addition, a confidence-filtered Multi-Year Summary is under development, which will contain a confidence layer and subsequent filtered water frequency layer. This provides a noise-reduced view of the unfiltered multi-year summary.
 
-:::{admonition} 
+:::{admonition} Note
 :class: note
 
 When loading the data of any Water Observations summary using the `datacube` Python library or when using [DEA Maps](https://maps.dea.ga.gov.au/), the central date of the observation period is returned. This date typically corresponds to:
