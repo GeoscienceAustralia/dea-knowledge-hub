@@ -27,7 +27,7 @@ layers_table:
       - name: Sensor
         type: null
         units: null
-        description: Name of the sensor used to detect the Hotspot (e.g., MODIS, VIIRS, AVHRR, AHI).
+        description: Name of the sensor used to detect the Hotspot (e.g., MODIS, VIIRS, AHI).
       - name: Orbit
         type: null
         units: null

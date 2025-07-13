@@ -1,5 +1,13 @@
 ## Changelog
 
+## 23 May 2025: NOAA-19-derived DEA Hotspots discontinued from 16 June 2025
+
+The National Oceanic and Atmospheric Administration (NOAA) has announced the discontinuation of data collection from the NOAA-19 satellite from 16 June 2025. The satellite's Advanced Very High-Resolution Radiometer (AVHRR) is currently used for capturing thermal anomalies and providing a night-time overpass for DEA Hotspots under the Landgate AVHRR layer which will no longer be available from this date. 
+
+No action is required. Users can prepare by transitioning to the Visible Infrared Imaging Radiometer Suite (VIIRS) Hotspots and Himawari-9 Hotspots which remain available. VIIRS Hotspots from Suomi NPP, NOAA-20, and NOAA-21 are available and provide coverage in the afternoon and night-time, whilst Himawari-9 Hotspots are updated continuously every ten minutes. 
+
+[View the Tech Alert](https://communication.ga.gov.au/link/id/zzzz68300b1054dd3242Pzzzz6567c8b713b5b826/page.html)
+
 ### 19 Dec 2024: NOAA-21-derived DEA Hotspots are now available
 
 Following our [communication](https://communication.ga.gov.au/link/id/zzzz675f7ce74a008871Pzzzz6567c8b713b5b826/page.html) in November regarding changes to the Hotspots service, we are pleased to advise that Hotspots derived from the Visible Infrared Imaging Radiometer Suite (VIIRS) sensor onboard NOAA-21 are now available. NOAA-21 currently passes over Australia at approximately 3pm and 2am Australian Eastern Standard Time, increasing the density and reliability of the afternoon and nighttime observations.

@@ -16,7 +16,7 @@ Our [latest tech alert](https://communication.ga.gov.au/link/id/zzzz685c9f34c958
 
 [View the Tech Alert](https://communication.ga.gov.au/link/id/zzzz685c9f34c9582777Pzzzz6567c8b713b5b826/page.html)
 
-## 23 May 2025: NOAA-19-derived DEA Hotspots to be discontinued from 16 June 2025
+## 23 May 2025: NOAA-19-derived DEA Hotspots discontinued from 16 June 2025
 
 The National Oceanic and Atmospheric Administration (NOAA) has announced the discontinuation of data collection from the NOAA-19 satellite from 16 June 2025. The satellite's Advanced Very High-Resolution Radiometer (AVHRR) is currently used for capturing thermal anomalies and providing a night-time overpass for DEA Hotspots under the Landgate AVHRR layer which will no longer be available from this date. 
 
