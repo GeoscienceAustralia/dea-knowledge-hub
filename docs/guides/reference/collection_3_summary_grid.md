@@ -25,27 +25,31 @@ in an effort to reduce:
 * size on disk,
 * lossy re-projection of data from native coordinate reference system.
 
-To make information across Australia comparable, continental-scale, 
+To make information across continental-Australia comparable,  
 statistical summary products are produced in a common grid based upon 
 Australian Albers (Albers Collection 3 grid). This page
 describes how we developed this grid and how it differs from the
 previous Australian Albers grid (Albers Collection 2 grid).
 
-## How did we develop the new Collection 3 grid?
+## How did we develop the new Collection 3 grids?
 
-In developing this new grid, we had several goals:
+Landsat and Sentinel derivative products are built using two distinct grids.
 
-* be compatible with the new resolution of Landsat ($30m^2$ from
-   $25m^2$)
-* be interoperable between both Landsat ($30m^2$) and Sentinel-2
-   ($10m^2$, $20m^2$ and $60m^2$)
-* have a naming convention that was non-negative, removing the need for
-   plus and minus symbols that can be problematic for some software applications
+We call these:
+* DEA Landsat Summary Product Grid (Collection 3) and,
+* DEA Sentinel Summary Product Grid (Collection 3)
 
-The tile size is defined as $96km^2$. For Landsat, this will result
-in a raster size of $3200 \times 3200 pixels$ of $30m^2$. For 
-Sentinel-2, this will result in a raster size of $9600 \times 9600 pixels$ 
-of $10m^2$.
+The Landsat tile size is defined as $96km^2$. This results
+in a raster size of $3200 \times 3200 pixels$ of $30m^2$. 
+
+For Sentinel based products, the tile size is $32km^2$ this results in a 
+raster size of $3200 \times 3200 pixels$ of $10m^2$
+
+We build products from diferent grid schema because the volume of data
+in Sentinel-2 makes it difficult to run batch processing jobs using the
+$96km^2$ grid used for Landsat products. Both grids are built from the same
+origin point, so the smaller tile size of the Sentinel grid fits neatly within
+the Landsat grid (i.e 9 Sentinel tiles fit within 1 Landsat tile)
 
 For compatibility with file system and web access tools and protocols,
 the grid has been defined to be non-negative, with the x00,y00 cell
@@ -60,22 +64,21 @@ The extent of this grid is based upon the maximal extents of:
 * Digital Earth Australia's Sentinel-2 Collection,
 * With a 3-cell buffer for future growth.
 
-Shown here is an image of the new grid in EPSG:3577 projection, with tiles shown
-where we expect to have land imagery available:
+Shown below is an image of both tile grids and their extents
 
-![](/_files/reference/collection_3_grid.jpeg)
+![](/_files/reference/collection_3_grids.png)
 
-## How can I use this grid?
+## How can I use these grids?
 
-This tiling grid scheme has been used to subdivide processing and
+These tiling grids schema have been used to subdivide processing and
 storage of our continental products.
 
-This tiling grid can be used as an overlay in other spatial systems to
+These tiling grids can be used as an overlay in other spatial systems to
 determine the xMyN reference of a given area of interest from within a
 DEA Collection 3 summary product.
 
-Unfortunately, there is no one-to-one mapping of the new Albers
-Collection 3 grid to the old Albers Collection 2 grid.
+Unfortunately, there is no one-to-one mapping of these Albers
+Collection 3 grid to the older Albers Collection 2 grid.
 
 ## Shift in origin point
 
@@ -85,6 +88,7 @@ The latest versions of all of our 'summary derivative products' have now been up
 
 ## References
 
-* [View the Grid in an online map](https://maps.dea.ga.gov.au/#share=s-yUPQrYI0zfAYDldoQSqxzHjpeKx)
-* [Download the Grid in GeoJSON map](https://data.dea.ga.gov.au/derivative/ga_summary_grid_c3.geojson)
-* [The Grid as implemented in ODC Statistician](https://github.com/opendatacube/odc-tools/blob/dff7b984464a4cc9d6bd9f6f444ef4a292c730d0/libs/dscache/odc/dscache/tools/tiling.py#L13-L41)
+* [Download the Landsat grid in GeoJSON map](https://data.dea.ga.gov.au/derivative/ga_landsat_summary_grid_c3.geojson)
+* [Download the Sentinel grid in GeoJSON map](https://data.dea.ga.gov.au/derivative/ga_sentinel_summary_grid_c3.geojson)
+* [View the Landsat grid in an online map](https://maps.dea.ga.gov.au/#share=s-yUPQrYI0zfAYDldoQSqxzHjpeKx)
+* [Both grids are implemented in odc-dscache](https://github.com/opendatacube/odc-dscache/blob/2dc288b379945627ba2b1c58b1fa175bbaf2189b/odc/dscache/tools/tiling.py#L51C4-L71C7)
