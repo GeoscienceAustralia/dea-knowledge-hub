@@ -26,10 +26,10 @@ Each dataset in this product consists of the following datasets:
 As no confidence filtering is applied to this product, it is affected by noise where misclassifications have occurred in the input water classifications, and can be difficult to interpret on its own. 
 
 WO-STATS is available in multiple forms, depending on the length of time over which the statistics are calculated. At present the following are available:
-* **DEA WO Multi-Year:** `ga_ls_wo_fq_myear_3`: statistics calculated from the full depth of time series (1986 to present) unfiltered
-* **DEA WO Calendar Year:** `ga_ls_wo_fq_cyear_3`: statistics calculated from each calendar year (1986 to present)
-* **DEA WO November to March:** `ga_ls_wo_fq_nov_mar_3`: statistics calculated yearly from November to March (1986 to present)
-* **DEA WO April to October:** `ga_ls_wo_fq_apr_oct_3`: statistics calculated yearly from April to October (1986 to present)
+* **DEA WO Multi-Year:** `ga_ls_wo_fq_myear_3`: statistics calculated from the full depth of time series (1986 to 2023) unfiltered
+* **DEA WO Calendar Year:** `ga_ls_wo_fq_cyear_3`: statistics calculated from each calendar year (1986 to 2024)
+* **DEA WO November to March:** `ga_ls_wo_fq_nov_mar_3`: statistics calculated yearly from November to March (1986 to 2024)
+* **DEA WO April to October:** `ga_ls_wo_fq_apr_oct_3`: statistics calculated yearly from April to October (1986 to 2024)
 
 In addition, a confidence-filtered Multi-Year Summary is under development, which will contain a confidence layer and subsequent filtered water frequency layer. This provides a noise-reduced view of the unfiltered multi-year summary.
 
@@ -65,7 +65,12 @@ For each WO pixel through time:
 1. count the number of clear observations that are wet to produce wet count dataset;
 1. create the ratio of wet to clear from the wet and clear count datasets and produce as a percentage dataset.
 
-% ## Software
+
+## Latest updates
+
+1.  Water Observation Statistics (Annual) &mdash; This product was updated with the 2024 calendar year data in April 2025.
+2.  Water Observation Statistics (Apr - Oct) &mdash; This product was updated with seasonal data (period: April 2024 to October 2024) in April 2025.
+3.  Water Observation Statistics (Nov - Mar) &mdash; This product was updated with seasonal data (period: November 2024 to March 2025) in June 2025.
 
 ## References
 
