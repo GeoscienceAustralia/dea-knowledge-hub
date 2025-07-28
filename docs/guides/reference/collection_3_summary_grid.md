@@ -34,8 +34,7 @@ The Landsat tile size is defined as $96km^2$. This results
 in a raster size of $3200 \times 3200$ pixels of $30m^2$. 
 
 For Sentinel based products, the tile size is $32km^2$ this results in a 
-raster size of $3200 \times 3200$ pixels of $10m^2$
-
+raster size of $3200 \times 3200$ pixels of $10m^2$.
 We build Sentinel products using smaller grid tiles to enable more efficient
 batch processing given the large data volumes involved.
 
@@ -65,14 +64,13 @@ mainland Australia so the grid sizes are visible.
 
 These tiling grids schema have been used to subdivide processing and
 storage of our continental products.
-
 These tiling grids can be used as an overlay in other spatial systems to
 determine the `xMyN` reference of a given area of interest from within a
 DEA Collection 3 summary product.
 
 ## Data access
 
-Use the links below to download (as a GeoJSON) and/or view the grid extents.
+Use the links below to download the grids (as a GeoJSON), and/or view the grid extents.
 
 * [Download the Landsat grid](https://data.dea.ga.gov.au/derivative/ga_landsat_summary_grid_c3.geojson)
 * [Download the Sentinel grid](https://data.dea.ga.gov.au/derivative/ga_sentinel_summary_grid_c3.geojson)
