@@ -33,7 +33,7 @@ We call these:
 The Landsat tile size is defined as $96km^2$. This results
 in a raster size of $3200 \times 3200$ pixels of $30m^2$. 
 
-For Sentinel based products, the tile size is $32km^2$ this results in a 
+For Sentinel based products, the tile size is $32km^2$ which results in a 
 raster size of $3200 \times 3200$ pixels of $10m^2$.
 We build Sentinel products using smaller grid tiles to enable more efficient
 batch processing given the large data volumes involved.
