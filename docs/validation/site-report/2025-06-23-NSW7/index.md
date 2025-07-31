@@ -22,7 +22,7 @@ These variables and environmental factors were present on the day the data were 
 "Time of overpass (UTC)", 2025-06-22 00:05:43
 "GPS quality","Good"
 "Reference position","151.4831771E, 30.98591782S (WGS84)"
-"Matchup quality","Poor"
+"Matchup quality","Mediocre"
 :::
 
 ## Results
