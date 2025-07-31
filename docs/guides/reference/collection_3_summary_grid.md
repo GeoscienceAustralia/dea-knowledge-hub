@@ -76,7 +76,7 @@ Use the links below to download the grids (as a GeoJSON), and/or view the grid e
 ```
 
 ```{eval-rst}
-:download:`Download the Sentinel grid </_files/reference/ga_sentinel_summary_grid_c3.geojson`
+:download:`Download the Sentinel grid </_files/reference/ga_sentinel_summary_grid_c3.geojson>`
 ```
 
 [View the Landsat grid in an online map](https://maps.dea.ga.gov.au/#share=s-yUPQrYI0zfAYDldoQSqxzHjpeKx)
