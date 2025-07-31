@@ -72,7 +72,7 @@ DEA Collection 3 summary product.
 
 Use the links below to download the grids (as a GeoJSON), and/or view the grid extents.
 ```{eval-rst}
-:download:`Download the Landsat grid </_files/reference/ga_sentinel_summary_grid_c3.geojson>`
+:download:`Download the Landsat grid </_files/reference/ga_landsat_summary_grid_c3.geojson>`
 ```
 
 ```{eval-rst}
