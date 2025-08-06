@@ -1,0 +1,100 @@
+# See the Product metadata fields documentation: https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/product_metadata_fields.html
+
+# Specifications
+
+short_name: DEA Fuel Moisture Content (Sentinel-2)
+full_technical_name: Geoscience Australia Sentinel-2 Fuel Moisture Content
+header_image: /_files/cmi/FMC_Header_Grampians_2020.png
+
+version_number: 1.0.0
+is_latest_version: true
+latest_version_link: null
+is_provisional: false
+
+lineage_type: DERIVATIVE
+spatial_data_type: RASTER
+
+spatial_coverage: null
+temporal_coverage_start: 12 July 2015
+temporal_coverage_end: Present
+temporal_coverage_custom: null
+
+data_update_frequency: WEEKLY
+data_update_activity: ONGOING
+is_currency_reported: false
+
+resolution: 20 m
+coordinate_reference_system: MULTIPLE_UTM
+
+product_ids:
+  - ga_s2am_fmc
+  - ga_s2bm_fmc
+  - ga_s2cm_fmc
+
+parent_products:
+  - name: Sentinel-2A, 2B & 2C Surface Reflectance NBART
+    link: /data/category/dea-surface-reflectance/
+
+collections:
+  - name: Geoscience Australia Sentinel-2 Collection 3
+    link: null
+
+doi: 10.26186/150554
+ecat_id: "150554"
+
+licence_name: Creative Commons Attribution 4.0 International Licence
+licence_link: https://creativecommons.org/licenses/by/4.0/
+
+citation_data: "Geoscience Australia, 2025. DEA Fuel Moisture Content (Sentinel-2). Geoscience Australia, Canberra. https://dx.doi.org/10.26186/150554"
+citation_paper: "Yebra, M., Quan, X., Riaño, D., Rozas Larraondo, P., van Dijk, A. I. J. M., & Cary, G. J., 2018. A fuel moisture content and flammability monitoring methodology for continental Australia based on optical remote sensing. Remote Sensing of Environment, 212, 260–272. https://doi.org/10.1016/j.rse.2018.04.053"
+
+citations_custom: null
+
+tags:
+  - geoscience_australia_sentinel_collection_3
+  - fuel_moisture_content
+  - vegetation
+  - hazards
+
+# Access
+
+access_links_maps:
+  - link: https://maps.dea.ga.gov.au/
+    name: See it on a map
+
+access_links_explorers:
+  - link: https://explorer.dea.ga.gov.au/products/ga_s2am_fmc
+    name: Data explorer
+
+access_links_data:
+  - link: https://data.dea.ga.gov.au/?prefix=derivative/ga_s2am_fmc/
+    name: Access the data on AWS
+
+access_links_code_examples:
+  - link: /notebooks/DEA_products/DEA_Fuel_Moisture_Content/
+    name: Code examples
+
+access_links_web_services:
+  - link: https://ows.dea.ga.gov.au
+    name: Web Map Service (WMS)
+
+access_links_custom: null
+
+# History
+
+previous_versions: null
+
+# SEO
+
+meta_description: null
+
+# Settings
+
+enable_overview: true
+enable_description: true
+enable_quality: true
+enable_specifications: true
+enable_access: true
+enable_history: true
+enable_faqs: true
+enable_credits: true
