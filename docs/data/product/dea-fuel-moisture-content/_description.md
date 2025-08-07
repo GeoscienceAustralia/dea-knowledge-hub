@@ -9,7 +9,7 @@ This product is not meant to replace field measurements of fuel moisture. It is 
 
 ## What this product offers
 
-The Fuel Moisture Content (FMC) product communicates the moisture content of vegetation. It measures the percentage of water mass relative to dry mass in living vegetation. Values range from 0–300%, where 300 would mean there is three times as much water (by weight) than dry plant material. Vegetation moisture is a critical variable for understanding vegetation flammability and fire potential. Values between 0–150% are particularly relevant for fire behaviour analysis, as variations within this range are most strongly associated with changes in vegetation flammability and the likelihood of ignition.
+The DEA Fuel Moisture Content (FMC) product is a remotely sensed proxy for the moisture content of vegetation. It estimates the percentage of water mass relative to dry mass in living vegetation based on the spectral signature. Values range from 0–300%, where 300 would mean there is three times as much water (by weight) than dry plant material. Vegetation moisture is a critical variable for understanding vegetation flammability and fire potential. Values between 0–150% are particularly relevant for fire behaviour analysis, as variations within this range are most strongly associated with changes in vegetation flammability and the likelihood of ignition.
 
 FMC is derived from Sentinel 2A, 2B & 2C satellite imagery at a 20m resolution for all of Australia from 12 July 2015 to present. This product shows FMC values calculated for each pixel in the corresponding Sentinel-2 scene with applied masking cloud, cloud shadow, water and terrain shadow.
 
