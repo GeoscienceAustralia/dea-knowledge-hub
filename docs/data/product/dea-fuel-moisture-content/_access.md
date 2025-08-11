@@ -11,14 +11,14 @@ Or, you can manually add the DEA Fuel Moisture Content layer to DEA Maps:
 
 :::
 
-:::{dropdown} How to load data with Python in the DEA Sandbox
+:::{dropdown} How to load data with Python in the DEA Sandbox (Recommended)
 
 DEA Sandbox allows you to explore DEA’s Earth Observation datasets in a JupyterLab environment. See the guide to [get started with the DEA Sandbox](/guides/setup/Sandbox/sandbox/).
 
 Once you have signed up to the Sandbox, click into the **DEA products** directory to find the **Introduction to DEA Fuel Moisture Content** notebook. This notebook will walk you through loading and visualising the DEA Fuel Moisture Content data.
 
 **If using your own local or virtual Python environment:**
-* Use the DEA Explorer [Spatio-Temporal Asset Catalog (STAC) API](https://knowledge.dea.ga.gov.au/guides/setup/gis/stac/) to load DEA data through the odc-stac Python package.
+* Use the [DEA Explorer Spatio-Temporal Asset Catalog (STAC) API](https://knowledge.dea.ga.gov.au/guides/setup/gis/stac/) to load DEA data through the [odc-stac](https://odc-stac.readthedocs.io/en/latest/) Python package.
 * Use **"ga_s2am_fmc"**, **"ga_s2bm_fmc"**, **"ga_s2cm_fmc"** for the STAC "collection" ID for DEA Fuel Moisture Content.
 
 :::
@@ -56,6 +56,7 @@ Note: You must be using QGIS version 3.22 or above to use the time dimension.
 :::{dropdown} How to download data via web browser
 
 **DEA Explorer**
+
 Using the [DEA Explorer site](https://explorer.dea.ga.gov.au/products/):
 
 1. Navigate to either the [DEA FMC Sentinel-2A](https://explorer.dea.ga.gov.au/products/ga_s2am_fmc), [DEA FMC Sentinel-2B](https://explorer.dea.ga.gov.au/products/ga_s2bm_fmc) or [DEA FMC Sentinel-2C](https://explorer.dea.ga.gov.au/products/ga_s2cm_fmc) page

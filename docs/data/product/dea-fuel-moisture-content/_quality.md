@@ -1,13 +1,13 @@
 ## Limitations
 
-Observation of the landscape by this service depends on having clear skies. Both cloud and smoke will obstruct the observation of the Earth’s surface. Furthermore, the satellites do not observe all places all of the time. The three Sentinel-2 satellites (A, B and C), which are the basis for this service, each view a given 320 kilometre wide strip of Australia only once every 10 days. This means there will be up to a five-day gap between observations of any point on the Australian continent. The observations show only what was visible on the day of the satellite pass and at the time it is overhead.
+This product depends on having clear skies in order to observe the landscape, as both cloud and smoke will obstruct the observation of the Earth’s surface. Furthermore, the three Sentinel-2 satellites (A, B, and C) which are the basis of this service each view a given 320 km wide strip of Australia once every 10 days. This means there will be up to a 5-day gap between observations of any point on the Australian continent. The observations show only what was visible at the time that the satellite passed overhead. Since weather conditions can change rapidly, the actual condition of vegetation on the ground may change between the last time that the satellite went overhead and the next time it passes the same location.
 
-Weather conditions can change rapidly and the condition of vegetation on the ground may differ from what this product reports. No decisions on life or property should be made based on this data. For local updates and alerts, please refer to your state emergency or fire service.
+No decisions on life or property should be made based on this data. For local updates and alerts, please refer to your state emergency or fire service
 
 ## Quality assurance
 
-The quality of the data is dependent on the underpinning EO data (ARD) – if the ARD scenes do not pass a quality check for georectification they will not be processed for FMC and are left out of the product.
+The quality of the data is dependent on the underlying Analysis Ready Data (ARD). If the ARD scenes do not pass a quality check for georectification they will not be included in the FMC product.
 
-The cloud masking of the product is conducted using Sentinel-2 Fmask algorithm. This algorithm’s performance on Sentinel-2 has known issues and false negatives in cloud detection are a known issue. This is due to Sentinel-2 A, B and C not having a thermal IR band which is beneficial for the detection of clouds. At the time of publication, the Fmask cloud algorithm was the best choice available. In the future other options will be explored as they become available.
+Cloud masking is conducted using the Sentinel-2 Fmask algorithm. This algorithm’s performance on Sentinel-2 has known issues, in particular the issue of false negatives in cloud detection. This is due to Sentinel-2 A, B, and C lacking a thermal IR band which would be used for detecting clouds. At the time of publication, the Fmask cloud algorithm is the best choice available; however, in the future, other options may become available.
 
 % ## Accuracy

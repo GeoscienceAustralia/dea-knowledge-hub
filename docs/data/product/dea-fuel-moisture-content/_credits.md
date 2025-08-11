@@ -1,6 +1,5 @@
-% See the Product metadata fields documentation: https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/product_metadata_fields.html
-
-% ## Acknowledgments
+## Acknowledgments
+The fuel moisture content algorithm was developed by the Australian National University (ANU) with support from Natural Hazards Research Australia. 
 
 ## License and copyright
 
