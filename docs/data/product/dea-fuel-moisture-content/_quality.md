@@ -9,5 +9,3 @@ No decisions on life or property should be made based on this data. For local up
 The quality of the data is dependent on the underlying Analysis Ready Data (ARD). If the ARD scenes do not pass a quality check for georectification they will not be included in the FMC product.
 
 Cloud masking is conducted using the Sentinel-2 Fmask algorithm. This algorithm’s performance on Sentinel-2 has known issues, in particular the issue of false negatives in cloud detection. This is due to Sentinel-2 A, B, and C lacking a thermal IR band which would be used for detecting clouds. At the time of publication, the Fmask cloud algorithm is the best choice available; however, in the future, other options may become available.
-
-% ## Accuracy
