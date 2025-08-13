@@ -71,13 +71,10 @@ DEA Collection 3 summary product.
 ## Data access
 
 Use the links below to download the grids (as a GeoJSON), and/or view the grid extents.
-```{eval-rst}
-:download:`Download the Landsat grid </_files/reference/ga_landsat_summary_grid_c3.geojson>`
-```
 
-```{eval-rst}
-:download:`Download the Sentinel grid </_files/reference/ga_sentinel_summary_grid_c3.geojson>`
-```
+[Download the Landsat grid](https://data.dea.ga.gov.au/derivative/ga_summary_grid_landsat_c3.geojson)
+
+[Download the Sentinel grid](https://data.dea.ga.gov.au/derivative/ga_summary_grid_sentinel_c3.geojson)
 
 [View the Landsat grid in an online map](https://maps.dea.ga.gov.au/#share=s-yUPQrYI0zfAYDldoQSqxzHjpeKx)
 
