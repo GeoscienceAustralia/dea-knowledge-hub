@@ -23,6 +23,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
+          fetch-depth: 0 # Full commit history is needed for the 'Last updated / Created on' feature to display correctly on pages.
           submodules: true
 
       - name: Pull latest from submodules
