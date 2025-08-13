@@ -65,7 +65,12 @@ For each WO pixel through time:
 1. count the number of clear observations that are wet to produce wet count dataset;
 1. create the ratio of wet to clear from the wet and clear count datasets and produce as a percentage dataset.
 
-% ## Software
+
+## Latest updates
+
+1.  Water Observation Statistics (Annual) &mdash; This product was updated with the 2024 calendar year data in April 2025.
+2.  Water Observation Statistics (Apr - Oct) &mdash; This product was updated with seasonal data (period: April 2024 to October 2024) in April 2025.
+3.  Water Observation Statistics (Nov - Mar) &mdash; This product was updated with seasonal data (period: November 2024 to March 2025) in June 2025.
 
 ## References
 
