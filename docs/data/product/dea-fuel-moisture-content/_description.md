@@ -15,7 +15,7 @@ The DEA Fuel Moisture Content (FMC) product is a remotely sensed proxy for the m
 Values range from 0 – 300%, representing by weight percent the amount of water in leaves compared to dry plant material. A value of 0% would indicate that there is no water content. A value of 100% indicates there is an equal weight of water and dry plant material. A value of 300% would mean there is approximately three times as much water as dry plant material.
 Values in the range of 0 – 150% are particularly relevant to fire behaviour analysis, as this range is strongly associated with changes in vegetation flammability and the likelihood of ignition.
 
-DEA FMC is derived from [Sentinel 2A, 2B, and 2C NBART](https://knowledge.dea.ga.gov.au/notebooks/DEA_products/DEA_Sentinel2_Surface_Reflectance/) satellite imagery at a 20 m resolution for all of Australia from 12 July 2015 to the present. It provides pixel-level FMC values for each corresponding Sentinel-2 scene, with masking applied to exclude clouds, cloud shadows, water, and terrain shadows.
+DEA FMC is derived from [Sentinel 2 NBART](https://knowledge.dea.ga.gov.au/notebooks/DEA_products/DEA_Sentinel2_Surface_Reflectance/) satellite imagery at a 20 m resolution for all of Australia from 12 July 2015 to the present. It provides pixel-level FMC values for each corresponding Sentinel-2 scene, with masking applied to exclude clouds, cloud shadows, water, and terrain shadows.
 
 ## Applications
 

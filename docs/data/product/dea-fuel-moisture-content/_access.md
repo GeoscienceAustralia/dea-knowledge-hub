@@ -19,7 +19,7 @@ Once you have signed up to the Sandbox, click into the **DEA products** director
 
 **If using your own local or virtual Python environment:**
 * Use the [DEA Explorer Spatio-Temporal Asset Catalog (STAC) API](https://knowledge.dea.ga.gov.au/guides/setup/gis/stac/) to load DEA data through the [odc-stac](https://odc-stac.readthedocs.io/en/latest/) Python package.
-* Use **"ga_s2am_fmc_3"**, **"ga_s2bm_fmc_3"**, **"ga_s2cm_fmc_3"** for the STAC "collection" ID for DEA Fuel Moisture Content.
+* Use **"ga_s2_fmc_3"** for the STAC "collection" ID for DEA Fuel Moisture Content.
 
 :::
 
@@ -59,7 +59,7 @@ Note: You must be using QGIS version 3.22 or above to use the time dimension.
 
 Using the [DEA Explorer site](https://explorer.dea.ga.gov.au/products/):
 
-1. Navigate to either the [DEA FMC Sentinel-2A](https://explorer.dea.ga.gov.au/products/ga_s2am_fmc_3), [DEA FMC Sentinel-2B](https://explorer.dea.ga.gov.au/products/ga_s2bm_fmc_3) or [DEA FMC Sentinel-2C](https://explorer.dea.ga.gov.au/products/ga_s2cm_fmc_3) page
+1. Navigate to the [DEA FMC Sentinel-2](https://explorer.dea.ga.gov.au/products/ga_s2_fmc_3) page
 2. Using the interactive map and time filters, select the tile of interest.
 3. Find the GeoTIFF file under **Location** and click to download it directly.
 
@@ -67,7 +67,7 @@ Using the [DEA Explorer site](https://explorer.dea.ga.gov.au/products/):
 
 Using [DEA's Public Data site](https://data.dea.ga.gov.au/?prefix=derivative/):
 
-1. Navigate to either the [DEA FMC Sentinel-2A](https://data.dea.ga.gov.au/?prefix=derivative/ga_s2am_fmc_3/1-0-0/), [DEA FMC Sentinel-2B](https://data.dea.ga.gov.au/?prefix=derivative/ga_s2bm_fmc_3/1-0-0/) or [DEA FMC Sentinel-2C](https://data.dea.ga.gov.au/?prefix=derivative/ga_s2cm_fmc_3/1-0-0/) data folder.
+1. Navigate to the [DEA FMC Sentinel-2](https://data.dea.ga.gov.au/?prefix=derivative/ga_s2_fmc_3/1-0-0/) data folder.
 2. Follow through the folders to the tile and date of interest, then click the GeoTIFF file of the relevant layer to download it directly.
 
 To find the X and Y tile values for a particular area, you can use the interactive map in DEA Explorer (see above).
