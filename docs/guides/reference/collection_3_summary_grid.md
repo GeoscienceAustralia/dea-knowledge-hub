@@ -11,8 +11,8 @@ Digital Earth Australia (DEA) maintains and distributes collections of
 satellite-derived information sourced from a growing number of different
 satellite missions.
 
-For DEA Collection 3, ARD and single-observation derivative products (e.g fractional cover) are
-distributed in their native UTM projection in an effort to reduce:
+For DEA Collection 3, Analysis Ready Data and single-observation derivative products (e.g Fractional Cover, Water Observations) are
+distributed in their native Universal Transverse Mercator (UTM) projection in an effort to reduce:
 
 * complexity of our pipelines,
 * size on disk,
@@ -51,11 +51,11 @@ The extent of these grids is based upon:
 
 * GDA94 / Australian Albers projection coordinate reference system
   (EPSG:3577),
-* Digital Earth Australia's Landsat Collection 3,
-* Digital Earth Australia's Sentinel-2 Collection,
-* The expanded extents of offshore islands, as detailed in the KH page: [DEA's ARD expanded processing extent](https://knowledge.dea.ga.gov.au/guides/reference/ard-expanded-processing-extent/)
+* DEA's Landsat Collection 3,
+* DEA's Sentinel-2 Collection,
+* The expanded extents of offshore islands, as detailed in [DEA's ARD expanded processing extent](https://knowledge.dea.ga.gov.au/guides/reference/ard-expanded-processing-extent/)
 
-Shown below is an image of both tile grids and their extents, clipped to just the region around 
+Shown below is an image of both tile grids and their extents, clipped to 
 mainland Australia so the grid sizes are visible.
 
 ![](/_files/reference/collection_3_grids.png)
