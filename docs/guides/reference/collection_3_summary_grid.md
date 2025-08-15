@@ -19,7 +19,7 @@ distributed in their native UTM projection in an effort to reduce:
 * lossy re-projection of data from native coordinate reference system.
 
 However, statistical summary  products (e.g. geomedians) are
-produced in a common grid based upon Australian Albers projection (["EPSG:3577"](https://epsg.io/3577)).
+produced from grids based upon Australian Albers projection (["EPSG:3577"](https://epsg.io/3577)).
 This makes all of DEA's derivative products comparable across Australia.
 
 ## What are the Collection 3 grids?
@@ -27,8 +27,8 @@ This makes all of DEA's derivative products comparable across Australia.
 Landsat and Sentinel derivative products are built using two distinct grids.
 
 We call these:
-* DEA Landsat Summary Product Grid (Collection 3)
-* DEA Sentinel Summary Product Grid (Collection 3)
+* DEA Summary Grid Landsat (Collection 3)
+* DEA Summary Grid Sentinel (Collection 3)
 
 The Landsat tile size is defined as $96km^2$. This results
 in a raster size of $3200 \times 3200$ pixels of $30m^2$. 
@@ -62,7 +62,7 @@ mainland Australia so the grid sizes are visible.
 
 ## How can I use these grids?
 
-These tiling grids schema have been used to subdivide processing and
+These tiling grids have been used to subdivide processing and
 storage of our continental products.
 These tiling grids can be used as an overlay in other spatial systems to
 determine the `xMyN` reference of a given area of interest from within a
