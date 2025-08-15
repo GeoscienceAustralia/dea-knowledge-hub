@@ -8,6 +8,8 @@ One key measure used for this purpose is Fuel Moisture Content (FMC) which refer
 
 This product is not meant to replace field measurements of fuel moisture. It is intended to be used in conjunction with that information and interpreted by people with expert knowledge.
 
+The DEA Fuel Moisture Content product is provided under a [Creative Commons Attribution 4.0 International Licence](http://creativecommons.org/licenses/by/4.0/legalcode). This product is provided subject to the Disclaimer of Warranties and Limitation of Liability in section 5 of the Creative Commons Attribution 4.0 International Licence. Your use of, reliance on, and any further distribution of any aspect of the DEA Fuel Moisture Content product is entirely at your own risk.
+
 ## What this product offers
 
 The DEA Fuel Moisture Content (FMC) product is a remotely sensed proxy for the moisture content of vegetation. It estimates the percentage of water mass relative to dry mass in living vegetation based on its spectral signature. Vegetation moisture is a critical variable for understanding vegetation flammability and fire potential.
