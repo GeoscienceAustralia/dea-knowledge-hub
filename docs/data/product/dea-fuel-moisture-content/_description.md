@@ -1,6 +1,6 @@
 ## Background
 
-Australia’s hot, dry climate and expansive bushland make it one of the most fire-prone regions in the world and hence understanding vegetation dryness is critical for managing bushfire risk.
+Australia’s hot, dry climate and expansive bushland make it one of the most fire-prone regions in the world and hence understanding vegetation dryness is critical for managing bushfire risk. 
 
 One key measure used for this purpose is Fuel Moisture Content (FMC) which refers to the amount of water contained in vegetation, expressed as a percentage of its dry weight. FMC plays a vital role in fire management because it indicates how easily vegetation can ignite and sustain fire; lower FMC levels mean drier and more flammable fuel.
 
@@ -32,13 +32,13 @@ Please note that this product should not be used to make safety of life decision
 
 DEA Fuel Moisture Content (FMC) is a gridded dataset indicating the moisture content of vegetation. This product includes measurements taken between 12 July 2015 and the present (inclusive) from the Sentinel 2A, 2B, and 2C satellites. FMC covers all of mainland Australia and Tasmania but excludes offshore Territories. The dataset is updated automatically as each new Sentinel-2 scene is acquired and processed as Analysis Ready Data (ARD).
 
-The calculation of DEA FMC is done using a random forest machine learning model which is an emulator of the model used in the MODIS-based Australian flammability monitoring system (Yebra et al, 2018). The inputs to the model are the Sentinel 2 bands (blue, green, red, red edge 1, 2, and 3, NIR 1 and 2, and SWIR 2 and 3). In addition, two normalised difference indices are used (NDVI Rouse (1973) and NDVII Hunt and Rock (1989)). All input bands are loaded at 20 x 20 m resolution. The visible light bands that have a resolution of 10 m are resampled using Bilinear sampling. Masking for cloud, cloud shadow, water, and terrain shadow are also applied.
+The calculation of DEA FMC is done using a random forest machine learning model which is an emulator of the model used in the MODIS-based Australian Flammability Monitoring System (AFMS) (Yebra et al, 2018). The inputs to the model are the Sentinel 2 bands (blue, green, red, red edge 1, 2, and 3, NIR 1 and 2, and SWIR 2 and 3). In addition, two normalised difference indices are used (NDVI Rouse (1973) and NDVII Hunt and Rock (1989)). All input bands are loaded at 20 x 20 m resolution. The visible light bands that have a resolution of 10 m are resampled using Bilinear sampling. Masking for cloud, cloud shadow, water, and terrain shadow are also applied.
 
 ## Lineage
 
-This product is based on the work of Dr. Marta Yebra and the team at the Bushfire Research Centre of Excellence at the Australian National University (ANU). Remotely sensed FMC was developed and delivered as the Australian flammability monitoring system with the support of the former Bushfire and Natural Hazards Cooperative Research Centre (now Natural Hazards Research Australia).
+This product is based on the work of Dr. Marta Yebra and the team at the Bushfire Research Centre of Excellence at the Australian National University (ANU). Remotely sensed FMC was developed and delivered as the Australian Flammability Monitoring System (AFMS) with the support of the former Bushfire and Natural Hazards Cooperative Research Centre (now Natural Hazards Research Australia).
 
-DEA Fuel Moisture Content replaces the MODIS-based Australian flammability monitoring system, improving the spatial resolution from 500 m to 20 m.
+DEA Fuel Moisture Content replaces the MODIS-based AFMS, improving the spatial resolution from 500 m to 20 m.
 
 ## References
 

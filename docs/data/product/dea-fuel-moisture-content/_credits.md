@@ -1,5 +1,5 @@
 ## Acknowledgments
-The fuel moisture content algorithm was developed by the Australian National University (ANU) with support from Natural Hazards Research Australia. 
+The fuel moisture content algorithm was developed by the Australian National University (ANU) with support from Natural Hazards Research Australia and is described in [Yebra et al. (2018)](https://doi.org/10.1016/j.rse.2018.04.053).  
 
 ## License and copyright
 
