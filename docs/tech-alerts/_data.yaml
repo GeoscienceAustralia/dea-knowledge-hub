@@ -6,6 +6,6 @@ meta_description: null
 quick_links_custom: null
 
 system_status_notifications:
-  - description: The DEA Sandbox is offline until further notice. See below.
+  - description: The DEA Sandbox is offline until further notice. `An access request is needed </guides/setup/Sandbox/sandbox/>`_.
     severity: 1
     status_custom: null
