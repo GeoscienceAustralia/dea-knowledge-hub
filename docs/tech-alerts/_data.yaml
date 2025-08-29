@@ -6,6 +6,6 @@ meta_description: null
 quick_links_custom: null
 
 system_status_notifications:
-  - description: The DEA Sandbox is offline until further notice. `An access request is needed </guides/setup/Sandbox/sandbox/>`_.
+  - description: The DEA Sandbox is offline until further notice. `Submit an Access Request <https://forms.office.com/Pages/ResponsePage.aspx?id=OmFbZEymUEKXX19peH0CjVZhXxFrFTpIrbjv7UdBedZUQ1lVVUdFUjZKV0pLOUZLUTlLRDhURFU3QS4u>`_.
     severity: 1
     status_custom: null
