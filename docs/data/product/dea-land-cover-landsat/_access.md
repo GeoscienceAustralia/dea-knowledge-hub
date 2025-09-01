@@ -40,7 +40,7 @@ If you encounter difficulty with any of these instructions, or with the COG file
        
 1. Click **Add** to start streaming the layer. Data should appear on the map after a few seconds (or after several minutes on slow internet connections).
 
-![Accessing VRT using QGIS](/_files/dea-land-cover-landsat/load-lc-cog-qgis.png)
+![Accessing VRT using QGIS](/_files/land_cover/load-lc-cog-qgis.png)
 
 ```{tip}
 You can avoid prompting the pop-up by adding `/vsicurl/` before the HTTPS URL when specifying the raster source. For example: `/vsicurl/https://data.dea.ga.gov.au/?prefix=derivative/ga_ls_landcover_class_cyear_3/2-0-0/continental_mosaics/2024--P1Y/ga_ls_landcover_class_cyear_3_mosaic_2024--P1Y_level4.vrt`.
