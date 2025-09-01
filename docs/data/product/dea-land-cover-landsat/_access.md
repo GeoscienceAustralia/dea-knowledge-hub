@@ -40,7 +40,7 @@ If you encounter difficulty with any of these instructions, or with the COG file
        
 1. Click **Add** to start streaming the layer. Data should appear on the map after a few seconds (or after several minutes on slow internet connections).
 
-![ADD SCREENSHOT THAT USES LANDCOVER](/_files/dea-land-cover-landsat/.jpg)
+![Accessing VRT using QGIS](/_files/dea-land-cover-landsat/load-lc-cog-qgis.png)
 
 ```{tip}
 You can avoid prompting the pop-up by adding `/vsicurl/` before the HTTPS URL when specifying the raster source. For example: `/vsicurl/https://data.dea.ga.gov.au/?prefix=derivative/ga_ls_landcover_class_cyear_3/2-0-0/continental_mosaics/2024--P1Y/ga_ls_landcover_class_cyear_3_mosaic_2024--P1Y_level4.vrt`.
@@ -89,6 +89,21 @@ When adding COG files to ArcGIS Pro, select **No** when asked whether to build s
 
 :::
 
+:::{dropdown} How to integrate continental COG mosacis into Python workflow
+
+You can seamlessly open a Land Cover mosaic, such as Level 4 for year 2024, using Python and the `rioxarray` library. For example:
+
+```python
+import rioxarray
+cog_url = 'https://data.dea.ga.gov.au/derivative/ga_ls_landcover_class_cyear_3/2-0-0/continental_mosaics/2024--P1Y/ga_ls_landcover_class_cyear_3_mosaic_2024--P1Y_level4.tif'
+cog = rioxarray.open_rasterio(cog_url, chunks=True)
+```
+
+This loads the remote dataset directly into an xarray DataArray.
+At this point, you can continue analysing the data as you would with any other raster array.
+
+:::
+
 :::{dropdown} How to download data via web browser
 
 From [DEA's public data (ga_ls_landcover_class_cyear_3)](https://data.dea.ga.gov.au/?prefix=derivative/ga_ls_landcover_class_cyear_3/2-0-0/), navigate through the folders to the year and tile of interest, then click the GeoTIFF file of the relevant layer to download it directly.
@@ -133,7 +148,7 @@ Note: You must be using QGIS version 3.22 or above to use the time dimension.
 
 :::
 
-:::{dropdown} How to add DEA Land Cover to QGIS using GeoTIFF files
+:::{dropdown} How to add DEA Land Cover to QGIS using GeoTIFF tiles (Not recommended)
 
 Individual tiles can be downloaded via web browser or AWS by following the above instructions and can then be uploaded to QGIS.
 
@@ -183,7 +198,7 @@ Alternatively, follow these steps to [create a map using the Digital Atlas](http
 
 :::
 
-:::{dropdown} How to add DEA Land Cover to your own Esri environment
+:::{dropdown} How to add DEA Land Cover from the Digital Atlas of Australia to your own Esri environment
 
 1. Add the layer to your map.
     1. In the top menu bar, click **File** &gt; **Add Data** &gt; **Add Data...**
