@@ -99,7 +99,7 @@ When adding COG files to ArcGIS Pro, select **No** when asked whether to build s
 
 :::
 
-:::{dropdown} How to integrate DEA Land Cover continental mosaics into Python workflow
+:::{dropdown} How to integrate DEA Land Cover continental mosaics into your own Python workflow
 
 You can seamlessly open a Land Cover mosaic, such as Level 4 for year 2024, using Python and the `rioxarray` library. For example:
 
