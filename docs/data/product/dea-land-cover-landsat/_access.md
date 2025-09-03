@@ -1,4 +1,4 @@
-:::{dropdown} How to view the data in a web map
+:::{dropdown} How to view DEA Land Cover in a web map
 
 To view and access the data interactively, follow these steps.
 
@@ -9,7 +9,7 @@ To view and access the data interactively, follow these steps.
 
 :::
 
-:::{dropdown} How to load data with Python in the DEA Sandbox (Recommended)
+:::{dropdown} How to load DEA Land Cover with Python in the DEA Sandbox (Recommended)
 
 DEA Sandbox allows you to explore DEA’s Earth Observation datasets in a JupyterLab environment. See the guide to [get started with the DEA Sandbox](/guides/setup/Sandbox/sandbox/).
 
@@ -17,7 +17,7 @@ Once you have signed up to the Sandbox, click into the **DEA products** director
 
 :::
 
-:::{dropdown} How to stream continental mosaics in QGIS from AWS (Recommended)
+:::{dropdown} How to stream DEA Land Cover continental mosaics in QGIS from AWS (Recommended)
 
 The easiest way to access DEA Land Cover data is via our continental-scale cloud-optimised GeoTIFF mosaics (COGs).
 The COG file format is a type of GeoTIFF raster file (`.tif`) that allows you to quickly and efficiently 'stream' data directly from the Amazon S3 cloud without having to download files to your computer.
@@ -46,7 +46,7 @@ You can avoid prompting the pop-up by adding `/vsicurl/` before the HTTPS URL wh
 
 :::
 
-:::{dropdown} How to stream continental mosaics in Esri ArcGIS Pro from AWS (Recommended)
+:::{dropdown} How to stream DEA Land Cover continental mosaics in Esri ArcGIS Pro from AWS (Recommended)
 
 The easiest way to access DEA Land Cover data is via our continental-scale cloud-optimised GeoTIFF mosaics (COGs).
 The COG file format is a type of GeoTIFF raster file (`.tif`) that allows you to quickly and efficiently 'stream' data directly from the Amazon S3 cloud without having to download files to your computer.
@@ -99,7 +99,7 @@ When adding COG files to ArcGIS Pro, select **No** when asked whether to build s
 
 :::
 
-:::{dropdown} How to integrate continental COG mosaics into Python workflow
+:::{dropdown} How to integrate DEA Land Cover continental mosaics into Python workflow
 
 You can seamlessly open a Land Cover mosaic, such as Level 4 for year 2024, using Python and the `rioxarray` library. For example:
 
@@ -114,7 +114,7 @@ At this point, you can continue analysing the data as you would with any other r
 
 :::
 
-:::{dropdown} How to download data via web browser
+:::{dropdown} How to download DEA Land Cover data via web browser
 
 From [DEA's public data (ga_ls_landcover_class_cyear_3)](https://data.dea.ga.gov.au/?prefix=derivative/ga_ls_landcover_class_cyear_3/2-0-0/), navigate through the folders to the year and tile of interest, then click the GeoTIFF file of the relevant layer to download it directly.
 
@@ -122,7 +122,7 @@ To find the X and Y tile values for a particular area, you can use the [DEA Expl
 
 :::
 
-:::{dropdown} How to download data via AWS
+:::{dropdown} How to download DEA Land Cover data via AWS
 
 DEA Land Cover data can be downloaded in bulk using Amazon Web Service’s Command Line Interface (AWS CLI). This method is for technical users.
 
