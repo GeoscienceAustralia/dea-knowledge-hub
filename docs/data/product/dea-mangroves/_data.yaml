@@ -85,7 +85,7 @@ access_links_web_services:
 access_links_custom:
   - link: https://digital.atlas.gov.au/apps/4e861a4ea2cb4597b91539988e1f242c
     name: DEA Mangroves (Landsat) Explorer
-    description: The Digital Atlas of Australia brings together trusted national data in a central platform.
+    description: The `Digital Atlas of Australia <https://digital.atlas.gov.au/>`_ brings together trusted national data in a central platform.
     label: Web application
     icon: map-location-dot
     class: null
