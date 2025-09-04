@@ -86,7 +86,7 @@ access_links_web_services:
 access_links_custom:
   - link: https://digital.atlas.gov.au/apps/dd64505be18249959f3355ff05772f4e
     name: DEA Coastlines Explorer (Digital Atlas)
-    description: The Digital Atlas of Australia brings together trusted national data in a central platform.
+    description: The `Digital Atlas of Australia <https://digital.atlas.gov.au/>`_ brings together trusted national data in a central platform.
     label: Web application
     icon: map-location-dot
     class: null
