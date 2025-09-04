@@ -83,7 +83,13 @@ access_links_web_services:
   - link: http://geoserver.dea.ga.gov.au/geoserver/wfs?service=WFS&version=1.1.0
     name: Web Feature Service (WFS)
 
-access_links_custom: null
+access_links_custom:
+  - link: https://digital.atlas.gov.au/apps/dd64505be18249959f3355ff05772f4e
+    name: DEA Coastlines Explorer (Digital Atlas)
+    description: null
+    label: Web application
+    icon: map-location-dot
+    class: null
 
 # History
 
