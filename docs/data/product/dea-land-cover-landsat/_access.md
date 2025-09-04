@@ -28,7 +28,7 @@ If you want to view the COGs with the official DEA Land Cover colour scheme, you
 ![Animation-showing-COG-zoom-in](/_files/land_cover/zoom_cog_landcover.gif) 
 
 <figure>
-    <figcaption>The animation above shows the DEA Land Cover continental COG mosaic moving from the continental-scale down to the 30m x 30m pixel level.</figcaption>
+    <figcaption>The animation above shows the DEA Land Cover COG mosaic moving from the continental-scale down to the 30m x 30m pixel level.</figcaption>
 </figure>
 
 ```{tip}
