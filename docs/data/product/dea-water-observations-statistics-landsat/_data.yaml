@@ -103,19 +103,19 @@ access_links_custom:
   - link: https://digital.atlas.gov.au/apps/16e1fac8143341aaa87f761a8a2c330e/explore
     name: Water Observations Multi-Year Summary Explorer (Digital Atlas)
     description: Learn more about the `Digital Atlas of Australia <https://digital.atlas.gov.au/pages/about>`_.
-    label: Web application
+    label: Digital Atlas application
     icon: map-location-dot
     class: null
   - link: https://digital.atlas.gov.au/datasets/f2d6989a225d4172bc9c2f49f7d35ae6/explore
     name: "Esri web service: DEA Water Observations Multi-Year Summary – Clear Count"
     description: Learn how to `create a map using Digital Atlas <https://digital.atlas.gov.au/apps/6b0a217d5c704e8fb6c353d6245585ce/explore>`_.
-    label: Web services
+    label: Esri web services
     icon: globe
     class: null
   - link: https://digital.atlas.gov.au/datasets/cf7486a7638c4b83b258b98cbbfdd084/explore
     name: "Esri web service: DEA Water Observations Multi-Year Summary – Water Frequency"
-    description: Learn how to `create a map using Digital Atlas <https://digital.atlas.gov.au/apps/6b0a217d5c704e8fb6c353d6245585ce/explore>`_.
-    label: Web services
+    description: null
+    label: null
     icon: globe
     class: null
 
