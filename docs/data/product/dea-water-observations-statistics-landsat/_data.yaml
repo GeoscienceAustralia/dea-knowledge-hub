@@ -107,13 +107,13 @@ access_links_custom:
     icon: map-location-dot
     class: null
   - link: https://digital.atlas.gov.au/datasets/f2d6989a225d4172bc9c2f49f7d35ae6/explore
-    name: "Esri web service: DEA Water Observations Multi-Year Summary – Clear Count"
+    name: "Digital Atlas Layer: DEA Water Observations Multi-Year Summary – Clear Count"
     description: Learn how to `create a map using Digital Atlas <https://digital.atlas.gov.au/apps/6b0a217d5c704e8fb6c353d6245585ce/explore>`_.
-    label: Esri web services
+    label: Digital Atlas Layers
     icon: globe
     class: null
   - link: https://digital.atlas.gov.au/datasets/cf7486a7638c4b83b258b98cbbfdd084/explore
-    name: "Esri web service: DEA Water Observations Multi-Year Summary – Water Frequency"
+    name: "Digital Atlas Layer: DEA Water Observations Multi-Year Summary – Water Frequency"
     description: null
     label: null
     icon: globe
