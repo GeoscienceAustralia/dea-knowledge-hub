@@ -309,7 +309,7 @@
          :gutter: 3
 
          {% for item in access_links_advanced_list %}
-         {% set item_icon = mapping.get(access_icons, access_icons.default) %}
+         {% set item_icon = access_icons.get(item.icon, access_icons.default) %}
          {% set item_link = item.link %}
          .. grid-item-card:: :fas:`{{ item_icon }}`
             :link: {{ item_link }}
