@@ -14,7 +14,6 @@
 } %}
 
 {% set access_icons = {
-   "default": "cube",
    "map": "map-location-dot",
 } %}
 
@@ -309,13 +308,15 @@
          :gutter: 3
 
          {% for item in access_links_advanced_list %}
-         {% set item_icon = access_icons.get(item.icon, access_icons.default) %}
+         {% set item_icon = access_icons.get(item.type, item.icon) %}
          {% set item_link = item.link %}
+         {% set item_label = access_labels.get(item.type, item.label) %}
+         {% set item_name = access_names.get(item.type, item.name) %}
          .. grid-item-card:: :fas:`{{ item_icon }}`
             :link: {{ item_link }}
-            :link-alt: {{ access_labels.map }}
+            :link-alt: {{ item_label }}
 
-            {{ item.name or access_names.map }}
+            {{ item_name }}
          {% endfor %}
 
          {% for item in access_links_maps_list %}
