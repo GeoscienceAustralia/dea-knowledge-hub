@@ -64,6 +64,14 @@ tags:
 access_links_advanced:
   - type: map
     link: https://maps.dea.ga.gov.au/story/DEACoastlines
+  - type: data
+    link: https://data.dea.ga.gov.au/?prefix=derivative/dea_coastlines/3-0-0/
+    name: Access the data on AWS
+  - type: code_sample
+    link: /notebooks/DEA_products/DEA_Coastlines/
+  - type: code_sample
+    link: https://github.com/GeoscienceAustralia/dea-coastlines
+    name: GitHub repository
 
 access_links_maps:
   - link: https://maps.dea.ga.gov.au/story/DEACoastlines
