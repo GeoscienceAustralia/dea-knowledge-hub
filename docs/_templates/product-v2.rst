@@ -83,7 +83,7 @@
 
 {# Computed values #}
 
-{% set access_links_advanced_list = page.data.access_links_advanced | selectattr("type", "!=", None) | list %}
+{% set access_links_advanced_list = page.data.access_links_advanced | selectattr("type", "!=", None) | selectattr("link", "!=", None) | list %}
 
 {% set access_links_maps_list = page.data.access_links_maps | selectattr("link", "!=", None) | list %}
 
@@ -310,8 +310,9 @@
 
          {% for item in access_links_advanced_list %}
          {% set item_icon = mapping.get(access_icons, access_icons.default) %}
+         {% set item_link = item.link %}
          .. grid-item-card:: :fas:`{{ item_icon }}`
-            :link: {{ item.link }}
+            :link: {{ item_link }}
             :link-alt: {{ access_labels.map }}
 
             {{ item.name or access_names.map }}
