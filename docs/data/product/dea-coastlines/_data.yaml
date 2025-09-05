@@ -61,6 +61,10 @@ tags:
 
 # Access
 
+access_links_advanced:
+  - type: map
+    link: https://maps.dea.ga.gov.au/story/DEACoastlines
+
 access_links_maps:
   - link: https://maps.dea.ga.gov.au/story/DEACoastlines
     name: null
