@@ -13,6 +13,19 @@
    "dash": "\-"
 } %}
 
+{% set access_types = [
+   "custom",
+   "map",
+   "explorer",
+   "data",
+   "web_service",
+   "code_sample",
+] %}
+
+{% set access_icons = {
+   "map": "map-location-dot",
+} %}
+
 {% set access_labels = {
    "map": "DEA Maps",
    "explorer": "DEA Explorer",
@@ -77,6 +90,8 @@
 {%- endmacro %}
 
 {# Computed values #}
+
+{% set access_links_advanced_list = page.data.access_links_advanced | selectattr("type", "!=", None) | selectattr("link", "!=", None) | list %}
 
 {% set access_links_maps_list = page.data.access_links_maps | selectattr("link", "!=", None) | list %}
 
@@ -300,6 +315,19 @@
 
       .. grid:: 2 2 3 5
          :gutter: 3
+
+         {% for item in access_links_advanced_list %}
+         {% set item_type = access_types.get(item.type, "custom") %}
+         {% set item_icon = access_icons.get(item_type, item.icon) %}
+         {% set item_link = item.link %}
+         {% set item_label = access_labels.get(item_type, item.label) %}
+         {% set item_name = access_names.get(item_type, item.name) %}
+         .. grid-item-card:: :fas:`{{ item_icon }}`
+            :link: {{ item_link }}
+            :link-alt: {{ item_label }}
+
+            {{ item_name }}
+         {% endfor %}
 
          {% for item in access_links_maps_list %}
          .. grid-item-card:: :fas:`map-location-dot`
