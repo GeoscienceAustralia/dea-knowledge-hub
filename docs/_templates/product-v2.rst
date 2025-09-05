@@ -13,6 +13,11 @@
    "dash": "\-"
 } %}
 
+{% set access_icons = {
+   "default": "cube",
+   "map": "map-location-dot",
+} %}
+
 {% set access_labels = {
    "map": "DEA Maps",
    "explorer": "DEA Explorer",
@@ -304,7 +309,7 @@
          :gutter: 3
 
          {% for item in access_links_advanced_list %}
-         {% set item_icon = item.icon or 'map-location-dot' %}
+         {% set item_icon = mapping.get(access_icons, access_icons.default) %}
          .. grid-item-card:: :fas:`{{ item_icon }}`
             :link: {{ item.link }}
             :link-alt: {{ access_labels.map }}
