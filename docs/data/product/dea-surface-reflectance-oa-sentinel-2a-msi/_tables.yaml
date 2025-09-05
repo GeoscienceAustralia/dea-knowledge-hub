@@ -12,7 +12,7 @@ bands_table:
     nodata: 0
     units: Classification
     type: uint8
-    description: "The s2cloudless cloud mask band identifies the presence of clouds. Classification values: ``0`` = No cloud; ``1`` = Cloud."
+    description: "The s2cloudless cloud mask band identifies the presence of clouds. Classification values: ``0`` = No data; ``1`` = Valid; ``2`` = Cloud."
   - name: oa_s2cloudless_prob
     aliases:
       - s2cloudless_prob
