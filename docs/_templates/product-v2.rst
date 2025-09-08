@@ -383,10 +383,10 @@
 
          {% for item in access_links_advanced_list %}
          {% set item_type = item.type if item.type in access_types else "custom" %}
-         {% set item_icon = access_icons.get(item_type, item.icon) %}
+         {% set item_icon = item.icon or access_icons.get(item_type, access_icons.custom) %}
          {% set item_link = item.link %}
-         {% set item_label = access_labels.get(item_type, item.label) %}
-         {% set item_name = access_names.get(item_type, item.name) %}
+         {% set item_label = item.label or access_labels.get(item_type, access_labels.custom) %}
+         {% set item_name = item.name or access_names.get(item_type, access_names.custom) %}
          .. grid-item-card:: :fas:`{{ item_icon }}`
             :link: {{ item_link }}
             :link-alt: {{ item_label }}
