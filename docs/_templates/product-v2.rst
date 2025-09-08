@@ -820,15 +820,18 @@
    .. list-table::
       :name: access-table
 
-      {% for label, items in access_links_advanced_list|groupby("label") %}
-      * - **{{ label }}**
+      {% for type, items in access_links_advanced_list|groupby("type") %}
+      {% set item_type = type if type in access_types else "custom" %}
+      {% set item_label = access_labels.get(item_type, access_labels.custom) %}
+      {% set item_description = "Learn more `example <https://www.google.com/>`_" %}
+      * - **{{ item_label }}**
         - {% for item in items %}
           {% set item_type = item.type if item.type in access_types else "custom" %}
           {% set item_link = item.link %}
           {% set item_name = access_names.get(item_type, item.name) %}
           * `{{ item_name }} <{{ item_link }}>`_
           {% endfor %}
-        - Test
+        - {{ item_description }}
       {% endfor %}
 
       {% if access_links_explorers_list %}

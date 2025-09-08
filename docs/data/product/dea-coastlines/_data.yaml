@@ -61,33 +61,13 @@ tags:
 
 # Access
 
-access_links_advanced:
-  - type: map
-    link: https://maps.dea.ga.gov.au/story/DEACoastlines
-  - type: data
-    link: https://data.dea.ga.gov.au/?prefix=derivative/dea_coastlines/3-0-0/
-    name: Access the data on AWS
-  - type: code_sample
-    link: /notebooks/DEA_products/DEA_Coastlines/
-  - type: code_sample
-    link: https://github.com/GeoscienceAustralia/dea-coastlines
-    name: GitHub repository
-
-access_links_maps:
-  - link: https://maps.dea.ga.gov.au/story/DEACoastlines
-    name: null
+access_links_maps: null
 
 access_links_explorers: null
 
-access_links_data:
-  - link: https://data.dea.ga.gov.au/?prefix=derivative/dea_coastlines/3-0-0/
-    name: Access the data on AWS
+access_links_data: null
 
-access_links_code_examples:
-  - link: /notebooks/DEA_products/DEA_Coastlines/
-    name: null
-  - link: https://github.com/GeoscienceAustralia/dea-coastlines
-    name: GitHub repository
+access_links_code_examples: null
 
 access_links_web_services:
   - link: https://geoserver.dea.ga.gov.au/geoserver/wms
@@ -120,6 +100,18 @@ access_links_custom:
     label: null
     icon: globe
     class: null
+
+access_links_advanced:
+  - type: map
+    link: https://maps.dea.ga.gov.au/story/DEACoastlines
+  - type: data
+    link: https://data.dea.ga.gov.au/?prefix=derivative/dea_coastlines/3-0-0/
+    name: Access the data on AWS
+  - type: code_sample
+    link: /notebooks/DEA_products/DEA_Coastlines/
+  - type: code_sample
+    link: https://github.com/GeoscienceAustralia/dea-coastlines
+    name: GitHub repository
 
 # History
 
