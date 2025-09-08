@@ -2,7 +2,7 @@
 
 :::{dropdown} Why does the colour bar only go up to 150% whereas the FMC values go to 300%?
 
-In DEA Maps, the DEA FMC product is visualised using a colour scale that only represents values in the range of 0% to 150%. All values above 150% are displayed in a constant dark blue colour. This provides a more focused view of the 0-150% range which is the range that is of most interest to understanding flammability.
+In DEA Maps, the DEA FMC product is visualised using a colour scale that only represents values in the range of 0% to 150%. All values above 150% are displayed in a constant dark blue colour. This provides a more focused view of the 0-150% range which is the range that is of most interest to understand flammability.
 
 :::
 
