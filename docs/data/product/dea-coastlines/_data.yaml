@@ -94,26 +94,23 @@ access_links_advanced:
     link: http://geoserver.dea.ga.gov.au/geoserver/wfs?service=WFS&version=1.1.0
     name: Web Feature Service (WFS)
 
-  - type: custom
+  - type: map
     link: https://digital.atlas.gov.au/apps/dd64505be18249959f3355ff05772f4e
     name: DEA Coastlines Explorer (Digital Atlas)
     description: Learn more about the `Digital Atlas of Australia <https://digital.atlas.gov.au/pages/about>`_.
     label: Digital Atlas application
-    icon: map-location-dot
-  - type: custom
+
+  - type: web_service
     link: https://digital.atlas.gov.au/maps/f98e0742e7ea47bb8ed2893406f8eb50
     name: "Esri web service: DEA Coastlines rates of coastal change"
     description: Learn how to `create a map using Digital Atlas <https://digital.atlas.gov.au/apps/6b0a217d5c704e8fb6c353d6245585ce/explore>`_.
     label: Esri web services
-    icon: globe
-  - type: custom
+  - type: web_service
     link: https://digital.atlas.gov.au/maps/b2d32c1bd5614e48ad52a5989c063a10
     name: "Esri web service: DEA Coastlines coastal change hotspots"
-    icon: globe
-  - type: custom
+  - type: web_service
     link: https://digital.atlas.gov.au/maps/b8830a374a764d18864cd4e04d922c6b
     name: "Esri web service: DEA Coastlines annual shorelines"
-    icon: globe
 
 # History
 
