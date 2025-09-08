@@ -49,6 +49,15 @@
    "custom": "View the link",
 } %}
 
+{% set access_descriptions = {
+   "map": "Learn how to `use DEA Maps </guides/setup/dea_maps/>`_.",
+   "explorer": "Learn how to `use the DEA Explorer </setup/explorer_guide/>`_.",
+   "data": "Learn how to `access the data via AWS </guides/about/faq/#download-dea-data>`_.",
+   "web_service": "Learn how to `use DEA's web services </guides/setup/gis/README/>`_.",
+   "code_sample": "Learn how to `use the DEA Sandbox </guides/setup/Sandbox/sandbox/>`_.",
+   "custom": "",
+} %}
+
 {% set lineage_type_terms = {
    "BASELINE": "Baseline",
    "DERIVATIVE": "Derivative",
@@ -833,6 +842,14 @@
           {% endfor %}
         - {{ item_description }}
       {% endfor %}
+
+      {% if access_links_maps_list %}
+      * - **{{ access_labels.map }}**
+        - {% for item in access_links_maps_list %}
+          * `{{ item.name or access_names.map }} <{{ item.link }}>`_
+          {% endfor %}
+        - Learn how to `use DEA Maps </guides/setup/dea_maps/>`_.
+      {% endif %}
 
       {% if access_links_explorers_list %}
       * - **{{ access_labels.explorer }}**
