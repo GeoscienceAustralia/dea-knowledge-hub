@@ -173,7 +173,7 @@
 
 {% set is_frequency_multiple_words = data_update_frequency.split(" ") | length > 1 %}
 
-{% set has_access_data = access_links_maps_list or access_links_data_list or access_links_explorers_list or access_links_web_services_list or access_links_code_samples_list or access_links_custom_list %}
+{% set has_access_data = access_links_maps_list or access_links_data_list or access_links_explorers_list or access_links_web_services_list or access_links_code_samples_list or access_links_custom_list or access_links_advanced_list %}
 
 {# Parent products component #}
 
