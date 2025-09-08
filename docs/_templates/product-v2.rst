@@ -883,10 +883,11 @@
       * - **{{ item_label }}**
         - {% for item in items %}
           {% set item_link = item.link %}
-          {% set item_name = access_names.get(item_type, item.name) %}
+          {% set item_name = item.name or access_names.get(item_type, access_names.custom) %}
           * `{{ item_name }} <{{ item_link }}>`_
           {% endfor %}
         - {{ item_description }}
+      {% endfor %}
       {% endfor %}
    {% else %}
    There are no data source links available at the present time.
