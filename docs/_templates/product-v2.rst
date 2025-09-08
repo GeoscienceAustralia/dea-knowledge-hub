@@ -877,8 +877,7 @@
 
       {% for type, items_by_type in access_links_advanced_list|groupby("type") %}
       {% set item_type = type if type in access_types else "custom" %}
-      {% for label, items in items_by_type|groupby("label") %}
-      {% set item_label = label or access_labels.get(item_type, access_labels.custom) %}
+      {% set item_label = access_labels.get(item_type, access_labels.custom) %}
       {% set item_description = items[0].description or access_descriptions.get(item_type, access_descriptions.custom) %}
       * - **{{ item_label }}**
         - {% for item in items %}
@@ -887,7 +886,6 @@
           * `{{ item_name }} <{{ item_link }}>`_
           {% endfor %}
         - {{ item_description }}
-      {% endfor %}
       {% endfor %}
    {% else %}
    There are no data source links available at the present time.
