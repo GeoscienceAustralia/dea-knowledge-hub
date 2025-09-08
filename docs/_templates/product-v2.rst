@@ -332,19 +332,6 @@
       .. grid:: 2 2 3 5
          :gutter: 3
 
-         {% for item in access_links_advanced_list %}
-         {% set item_type = item.type if item.type in access_types else "custom" %}
-         {% set item_icon = access_icons.get(item_type, item.icon) %}
-         {% set item_link = item.link %}
-         {% set item_label = access_labels.get(item_type, item.label) %}
-         {% set item_name = access_names.get(item_type, item.name) %}
-         .. grid-item-card:: :fas:`{{ item_icon }}`
-            :link: {{ item_link }}
-            :link-alt: {{ item_label }}
-
-            {{ item_name }}
-         {% endfor %}
-
          {% for item in access_links_maps_list %}
          .. grid-item-card:: :fas:`map-location-dot`
             :link: {{ item.link }}
@@ -392,6 +379,19 @@
             :class-card: {{ item.class }}
 
             {{ item.name }}
+         {% endfor %}
+
+         {% for item in access_links_advanced_list %}
+         {% set item_type = item.type if item.type in access_types else "custom" %}
+         {% set item_icon = access_icons.get(item_type, item.icon) %}
+         {% set item_link = item.link %}
+         {% set item_label = access_labels.get(item_type, item.label) %}
+         {% set item_name = access_names.get(item_type, item.name) %}
+         .. grid-item-card:: :fas:`{{ item_icon }}`
+            :link: {{ item_link }}
+            :link-alt: {{ item_label }}
+
+            {{ item_name }}
          {% endfor %}
    {%- endif %}
 
@@ -829,20 +829,6 @@
    .. list-table::
       :name: access-table
 
-      {% for type, items in access_links_advanced_list|groupby("type") %}
-      {% set item_type = type if type in access_types else "custom" %}
-      {% set item_label = access_labels.get(item_type, access_labels.custom) %}
-      {% set item_description = access_descriptions.get(item_type, access_descriptions.custom) %}
-      * - **{{ item_label }}**
-        - {% for item in items %}
-          {% set item_type = item.type if item.type in access_types else "custom" %}
-          {% set item_link = item.link %}
-          {% set item_name = access_names.get(item_type, item.name) %}
-          * `{{ item_name }} <{{ item_link }}>`_
-          {% endfor %}
-        - {{ item_description }}
-      {% endfor %}
-
       {% if access_links_maps_list %}
       * - **{{ access_labels.map }}**
         - {% for item in access_links_maps_list %}
@@ -887,6 +873,20 @@
       * - **{{ item.label or "" }}**
         - * `{{ item.name }} <{{ item.link }}>`_
         - {{ item.description or "" }}
+      {% endfor %}
+
+      {% for type, items in access_links_advanced_list|groupby("type") %}
+      {% set item_type = type if type in access_types else "custom" %}
+      {% set item_label = access_labels.get(item_type, access_labels.custom) %}
+      {% set item_description = access_descriptions.get(item_type, access_descriptions.custom) %}
+      * - **{{ item_label }}**
+        - {% for item in items %}
+          {% set item_type = item.type if item.type in access_types else "custom" %}
+          {% set item_link = item.link %}
+          {% set item_name = access_names.get(item_type, item.name) %}
+          * `{{ item_name }} <{{ item_link }}>`_
+          {% endfor %}
+        - {{ item_description }}
       {% endfor %}
    {% else %}
    There are no data source links available at the present time.
