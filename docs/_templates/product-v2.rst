@@ -876,7 +876,6 @@
       {% endfor %}
 
       {% for type, items in access_links_advanced_list|groupby("type") %}
-      {% for label, items in items|groupby("label") %}
       {% set item_type = type if type in access_types else "custom" %}
       {% set item_label = access_labels.get(item_type, access_labels.custom) %}
       {% set item_description = access_descriptions.get(item_type, access_descriptions.custom) %}
@@ -888,7 +887,6 @@
           * `{{ item_name }} <{{ item_link }}>`_
           {% endfor %}
         - {{ item_description }}
-      {% endfor %}
       {% endfor %}
    {% else %}
    There are no data source links available at the present time.
