@@ -37,6 +37,7 @@
    "data": "Data sources",
    "web_service": "Web services",
    "code_sample": "Code examples",
+   "custom": "Access links"
 } %}
 
 {% set access_names = {
@@ -45,6 +46,7 @@
    "data": "Get the data online",
    "web_service": "Get via web service",
    "code_sample": "View code examples",
+   "custom": "View the link",
 } %}
 
 {% set lineage_type_terms = {
