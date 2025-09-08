@@ -834,7 +834,7 @@
         - {% for item in access_links_maps_list %}
           * `{{ item.name or access_names.map }} <{{ item.link }}>`_
           {% endfor %}
-        - Learn how to `use DEA Maps </guides/setup/dea_maps/>`_.
+        - {{ access_descriptions.map }}
       {% endif %}
 
       {% if access_links_explorers_list %}
@@ -842,7 +842,7 @@
         - {% for item in access_links_explorers_list %}
           * `{{ item.name or access_names.explorer }} <{{ item.link }}>`_
           {% endfor %}
-        - Learn how to `use the DEA Explorer </setup/explorer_guide/>`_.
+        - {{ access_descriptions.explorer }}
       {% endif %}
 
       {% if access_links_data_list %}
@@ -850,7 +850,7 @@
         - {% for item in access_links_data_list %}
           * `{{ item.name or access_names.data }} <{{ item.link }}>`_
           {% endfor %}
-        - Learn how to `access the data via AWS </guides/about/faq/#download-dea-data>`_.
+        - {{ access_descriptions.data }}
       {% endif %}
 
       {% if access_links_code_samples_list %}
@@ -858,7 +858,7 @@
         - {% for item in access_links_code_samples_list %}
           * `{{ item.name or access_names.code_sample }} <{{ item.link }}>`_
           {% endfor %}
-        - Learn how to `use the DEA Sandbox </guides/setup/Sandbox/sandbox/>`_.
+        - {{ access_descriptions.code_sample }}
       {% endif %}
 
       {% if access_links_web_services_list %}
@@ -866,13 +866,13 @@
         - {% for item in access_links_web_services_list %}
           * `{{ item.name or access_names.web_service }} <{{ item.link }}>`_
           {% endfor %}
-        - Learn how to `use DEA's web services </guides/setup/gis/README/>`_.
+        - {{ access_descriptions.web_service }}
       {% endif %}
 
       {% for item in access_links_custom_list %}
       * - **{{ item.label or "" }}**
         - * `{{ item.name }} <{{ item.link }}>`_
-        - {{ item.description or "" }}
+        - {{ item.description or access_descriptions.custom }}
       {% endfor %}
 
       {% for type, items in access_links_advanced_list|groupby("type") %}
