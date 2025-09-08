@@ -879,7 +879,7 @@
       {% set item_type = type if type in access_types else "custom" %}
       {% for label, items in items_by_type|groupby("label") %}
       {% set item_label = label or access_labels.get(item_type, access_labels.custom) %}
-      {% set item_description = access_descriptions.get(item_type, access_descriptions.custom) %}
+      {% set item_description = items[0].description or access_descriptions.get(item_type, access_descriptions.custom) %}
       * - **{{ item_label }}**
         - {% for item in items %}
           {% set item_link = item.link %}
