@@ -820,13 +820,16 @@
    .. list-table::
       :name: access-table
 
-      {% if access_links_maps_list %}
-      * - **{{ access_labels.map }}**
-        - {% for item in access_links_maps_list %}
-          * `{{ item.name or access_names.map }} <{{ item.link }}>`_
+      {% for label, items in access_links_advanced_list|groupby("label") %}
+      * - **{{ label }}**
+        - {% for item in items %}
+          {% set item_type = item.type if item.type in access_types else "custom" %}
+          {% set item_link = item.link %}
+          {% set item_name = access_names.get(item_type, item.name) %}
+          * `{{ item_name }} <{{ item_link }}>`_
           {% endfor %}
-        - Learn how to `use DEA Maps </guides/setup/dea_maps/>`_.
-      {% endif %}
+        - Test
+      {% endfor %}
 
       {% if access_links_explorers_list %}
       * - **{{ access_labels.explorer }}**
