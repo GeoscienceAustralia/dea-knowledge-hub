@@ -14,16 +14,21 @@
 } %}
 
 {% set access_types = [
-   "custom",
    "map",
    "explorer",
    "data",
    "web_service",
    "code_sample",
+   "custom",
 ] %}
 
 {% set access_icons = {
    "map": "map-location-dot",
+   "explorer": "magnifying-glass",
+   "data": "database",
+   "web_service": "globe",
+   "code_sample": "laptop-code",
+   "custom": "link",
 } %}
 
 {% set access_labels = {
