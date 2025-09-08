@@ -875,13 +875,13 @@
         - {{ item.description or access_descriptions.custom }}
       {% endfor %}
 
-      {% for type, items in access_links_advanced_list|groupby("type") %}
+      {% for type, items_by_type in access_links_advanced_list|groupby("type") %}
       {% set item_type = type if type in access_types else "custom" %}
-      {% set item_label = access_labels.get(item_type, access_labels.custom) %}
+      {% for label, items in items_by_type|groupby("label") %}
+      {% set item_label = label or access_labels.get(item_type, access_labels.custom) %}
       {% set item_description = access_descriptions.get(item_type, access_descriptions.custom) %}
       * - **{{ item_label }}**
         - {% for item in items %}
-          {% set item_type = item.type if item.type in access_types else "custom" %}
           {% set item_link = item.link %}
           {% set item_name = access_names.get(item_type, item.name) %}
           * `{{ item_name }} <{{ item_link }}>`_
