@@ -875,7 +875,7 @@
         - {{ access_descriptions.web_service }}
       {% endif %}
 
-      {# Group the 'access_links_custom_list' by 'type' and 'label' and then render it as the access links table. #}
+      {# Group the 'access_links_custom_list' by 'label' and then render this grouped list as the access links table. #}
       {% set access_table = namespace(groups={}) %}
       {% for item in access_links_custom_list %}
          {% set item_type = item.type if item.type in access_types else "custom" %}
