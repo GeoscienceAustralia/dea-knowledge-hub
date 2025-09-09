@@ -96,19 +96,21 @@ access_links_custom:
     link: https://digital.atlas.gov.au/apps/dd64505be18249959f3355ff05772f4e
     name: DEA Coastlines Explorer (Digital Atlas)
     description: Learn more about the `Digital Atlas of Australia <https://digital.atlas.gov.au/pages/about>`_.
-    label: Digital Atlas application
+    label: Digital Atlas applications
 
   - type: web_service
     link: https://digital.atlas.gov.au/maps/f98e0742e7ea47bb8ed2893406f8eb50
-    name: "Esri web service: DEA Coastlines rates of coastal change"
+    name: "Digital Atlas Layer: DEA Coastlines rates of coastal change"
     description: Learn how to `create a map using Digital Atlas <https://digital.atlas.gov.au/apps/6b0a217d5c704e8fb6c353d6245585ce/explore>`_.
-    label: Esri web services
+    label: Digital Atlas Layers
   - type: web_service
     link: https://digital.atlas.gov.au/maps/b2d32c1bd5614e48ad52a5989c063a10
-    name: "Esri web service: DEA Coastlines coastal change hotspots"
+    name: "Digital Atlas Layer: DEA Coastlines coastal change hotspots"
+    label: Digital Atlas Layers
   - type: web_service
     link: https://digital.atlas.gov.au/maps/b8830a374a764d18864cd4e04d922c6b
-    name: "Esri web service: DEA Coastlines annual shorelines"
+    name: "Digital Atlas Layer: DEA Coastlines annual shorelines"
+    label: Digital Atlas Layers
 
 # History
 
