@@ -116,8 +116,6 @@
 
 {# Computed values #}
 
-{% set access_links_advanced_list = page.data.access_links_advanced | selectattr("type", "!=", None) | selectattr("link", "!=", None) | list %}
-
 {% set access_links_maps_list = page.data.access_links_maps | selectattr("link", "!=", None) | list %}
 
 {% set access_links_data_list = page.data.access_links_data | selectattr("link", "!=", None) | list %}
@@ -128,7 +126,7 @@
 
 {% set access_links_code_samples_list = page.data.access_links_code_examples | selectattr("link", "!=", None) | list %}
 
-{% set access_links_custom_list = page.data.access_links_custom | selectattr("icon", "!=", None) | selectattr("link", "!=", None) | selectattr("name", "!=", None) | list %}
+{% set access_links_custom_list = page.data.access_links_custom | selectattr("link", "!=", None) | list %}
 
 {% set previous_versions_list = page.data.previous_versions | selectattr("slug", "!=", None) | selectattr("version_number", "!=", None) | selectattr("name", "!=", None) | list %}
 
@@ -182,7 +180,7 @@
 
 {% set is_frequency_multiple_words = data_update_frequency.split(" ") | length > 1 %}
 
-{% set has_access_data = access_links_maps_list or access_links_data_list or access_links_explorers_list or access_links_web_services_list or access_links_code_samples_list or access_links_custom_list or access_links_advanced_list %}
+{% set has_access_data = access_links_maps_list or access_links_data_list or access_links_explorers_list or access_links_web_services_list or access_links_code_samples_list or access_links_custom_list %}
 
 {# Parent products component #}
 
@@ -387,15 +385,6 @@
          {% endfor %}
 
          {% for item in access_links_custom_list %}
-         .. grid-item-card:: :fas:`{{ item.icon or "link" }}`
-            :link: {{ item.link }}
-            :link-alt: {{ item.label or access_labels.custom }}
-            :class-card: {{ item.class or access_css_classes.custom }}
-
-            {{ item.name or access_names.custom }}
-         {% endfor %}
-
-         {% for item in access_links_advanced_list %}
          {% set item_type = item.type if item.type in access_types else "custom" %}
          {% set item_icon = item.icon or access_icons.get(item_type, access_icons.custom) %}
          {% set item_link = item.link %}
@@ -885,13 +874,7 @@
         - {{ access_descriptions.web_service }}
       {% endif %}
 
-      {% for item in access_links_custom_list %}
-      * - **{{ item.label or "" }}**
-        - * `{{ item.name }} <{{ item.link }}>`_
-        - {{ item.description or access_descriptions.custom }}
-      {% endfor %}
-
-      {% for type, items in access_links_advanced_list|groupby("type") %}
+      {% for type, items in access_links_custom_list|groupby("type") %}
       {% set item_type = type if type in access_types else "custom" %}
       {% set item_label = items[0].label or access_labels.get(item_type, access_labels.custom) %}
       {% set item_description = items[0].description or access_descriptions.get(item_type, access_descriptions.custom) %}
