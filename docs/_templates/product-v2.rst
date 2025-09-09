@@ -333,41 +333,46 @@
          :gutter: 3
 
          {% for item in access_links_maps_list %}
-         .. grid-item-card:: :fas:`map-location-dot`
+         .. grid-item-card:: :fas:`{{ item.icon or "map-location-dot" }}`
             :link: {{ item.link }}
-            :link-alt: {{ access_labels.map }}
+            :link-alt: {{ item.label or access_labels.map }}
+            :class-card: {{ item.class or "" }}
 
             {{ item.name or access_names.map }}
          {% endfor %}
 
          {% for item in access_links_explorers_list %}
-         .. grid-item-card:: :fas:`magnifying-glass`
+         .. grid-item-card:: :fas:`{{ item.icon or "magnifying-glass" }}`
             :link: {{ item.link }}
-            :link-alt: {{ access_labels.explorer }}
+            :link-alt: {{ item.label or access_labels.explorer }}
+            :class-card: {{ item.class or "" }}
 
             {{ item.name or access_names.explorer }}
          {% endfor %}
 
          {% for item in access_links_data_list %}
-         .. grid-item-card:: :fas:`database`
+         .. grid-item-card:: :fas:`{{ item.icon or "database" }}`
             :link: {{ item.link }}
-            :link-alt: {{ access_labels.data }}
+            :link-alt: {{ item.label or access_labels.data }}
+            :class-card: {{ item.class or "" }}
 
             {{ item.name or access_names.data }}
          {% endfor %}
 
          {% for item in access_links_code_samples_list %}
-         .. grid-item-card:: :fas:`laptop-code`
+         .. grid-item-card:: :fas:`{{ item.icon or "laptop-code" }}`
             :link: {{ item.link }}
-            :link-alt: {{ access_labels.code_sample }}
+            :link-alt: {{ item.label or access_labels.code_sample }}
+            :class-card: {{ item.class or "" }}
 
             {{ item.name or access_names.code_sample }}
          {% endfor %}
 
          {% for item in access_links_web_services_list %}
-         .. grid-item-card:: :fas:`globe`
+         .. grid-item-card:: :fas:`{{ item.icon or "globe" }}`
             :link: {{ item.link }}
-            :link-alt: {{ access_labels.web_service }}
+            :link-alt: {{ item.label or access_labels.web_service }}
+            :class-card: {{ item.class or "" }}
 
             {{ item.name or access_names.web_service }}
          {% endfor %}
@@ -375,10 +380,10 @@
          {% for item in access_links_custom_list %}
          .. grid-item-card:: :fas:`{{ item.icon or "link" }}`
             :link: {{ item.link }}
-            :link-alt: {{ item.label or "" }}
-            :class-card: {{ item.class }}
+            :link-alt: {{ item.label or access_labels.custom }}
+            :class-card: {{ item.class or "" }}
 
-            {{ item.name }}
+            {{ item.name or access_names.custom }}
          {% endfor %}
 
          {% for item in access_links_advanced_list %}
@@ -387,9 +392,11 @@
          {% set item_link = item.link %}
          {% set item_label = item.label or access_labels.get(item_type, access_labels.custom) %}
          {% set item_name = item.name or access_names.get(item_type, access_names.custom) %}
+         {% set item_class = item.class or "" %}
          .. grid-item-card:: :fas:`{{ item_icon }}`
             :link: {{ item_link }}
             :link-alt: {{ item_label }}
+            :class-card: {{ item_class }}
 
             {{ item_name }}
          {% endfor %}
