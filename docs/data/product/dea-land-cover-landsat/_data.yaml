@@ -94,7 +94,7 @@ access_links_custom:
   - link: https://digital.atlas.gov.au/apps/16e1fac8143341aaa87f761a8a2c330e/explore
     name: Land Cover Explorer (Digital Atlas)
     description: Learn how to `use the Land Cover Explorer </guides/land-cover-explorer/>`_.
-    label: Web application
+    label: Digital Atlas application
     icon: map-location-dot
     class: null
   - link: https://ows.dea.ga.gov.au/
@@ -104,15 +104,15 @@ access_links_custom:
     icon: globe
     class: null
   - link: https://digital.atlas.gov.au/datasets/4879aeb3e4a7446ba3f0aba4f5d4635e/explore
-    name: "Esri web service: DEA Land Cover Level 3"
+    name: "Digital Atlas Layer: DEA Land Cover Level 3"
     description: Learn how to `create a map using Digital Atlas <https://digital.atlas.gov.au/apps/6b0a217d5c704e8fb6c353d6245585ce/explore>`_.
-    label: Web services
+    label: Digital Atlas Layers
     icon: globe
     class: null
   - link: https://digital.atlas.gov.au/datasets/3626a8506a3c4ab9a424d51774131441/explore
-    name: "Esri web service: DEA Land Cover Level 4"
+    name: "Digital Atlas Layer: DEA Land Cover Level 4"
     description: Learn how to `create a map using Digital Atlas <https://digital.atlas.gov.au/apps/6b0a217d5c704e8fb6c353d6245585ce/explore>`_.
-    label: Web services
+    label: Digital Atlas Layers
     icon: globe
     class: null
 
