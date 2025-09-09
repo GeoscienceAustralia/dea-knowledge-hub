@@ -873,27 +873,30 @@
           {% endfor %}
         - {{ access_descriptions.web_service }}
       {% endif %}
+
+      {# Group the 'access_links_custom_list' by 'type' and 'label' and then render it as the access links table. #}
+      {% set access_table = namespace(groups={}) %}
+      {% for item in access_links_custom_list %}
+         {% set item_type = item.type if item.type in access_types else "custom" %}
+         {% set item_label = item.label or access_labels.get(item_type, access_labels.custom) %}
+         {% if item_label not in access_table.groups %}
+            {% set _ = access_table.groups.update({item_label: []}) %}
+         {% endif %}
+         {% set _ = access_table.groups[item_label].append(item) %}
+      {% endfor %}
+      {% for label, items in access_table.groups.items() %}
+      {% set item_description = items[0].description or access_descriptions.get(items[0].type, access_descriptions.custom) %}
+      * - **{{ label }}**
+        - {% for item in items %}
+          {% set item_link = item.link %}
+          {% set item_name = item.name or access_names.get(item.type, access_names.custom) %}
+          * `{{ item_name }} <{{ item_link }}>`_
+          {% endfor %}
+        - {{ item_description }}
+      {% endfor %}
    {% else %}
    There are no data source links available at the present time.
    {% endif %}
-
-   {% set access_table = namespace(groups={}) %}
-
-   {% for item in access_links_custom_list %}
-      {% set item_type = item.type if item.type in access_types else "custom" %}
-      {% set item_label = item.label or access_labels.get(item_type, access_labels.custom) %}
-      {% if item_label not in access_table.groups %}
-         {% set _ = access_table.groups.update({item_label: []}) %}
-      {% endif %}
-      {% set _ = access_table.groups[item_label].append(item) %}
-   {% endfor %}
-
-   {% for label, items in access_table.groups.items() %}
-   * {{ label }}
-     {% for item in items %}
-     * {{ item.name or item.link }}
-     {% endfor %}
-   {% endfor %}
 
    .. include:: _access.md
       :parser: myst_parser.sphinx_
