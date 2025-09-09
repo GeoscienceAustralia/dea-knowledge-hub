@@ -882,7 +882,8 @@
          {% if item_label not in access_table.groups %}
             {% set _ = access_table.groups.update({item_label: []}) %}
          {% endif %}
-         {% set _ = access_table.groups[item_label].append(item) %}
+         {% set item_formatted = item | combine({ 'type': item_type, 'label': item_label }) %}
+         {% set _ = access_table.groups[item_label].append(item_formatted) %}
       {% endfor %}
       {% for label, items in access_table.groups.items() %}
       {% set item_description = items[0].description or access_descriptions.get(items[0].type, access_descriptions.custom) %}
