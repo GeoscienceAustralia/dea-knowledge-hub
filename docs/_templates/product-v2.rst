@@ -888,10 +888,10 @@
       {% set _ = access_table.groups[item_label].append(item) %}
    {% endfor %}
 
-   {% for label, items in access_table.groups.items() -%}
+   {% for label, items in access_table.groups.items() %}
    * {{ label }}
-     {% for item in items -%}
-     * {{ item }}
+     {% for item in items %}
+     * {{ item.name or item.link }}
      {% endfor %}
    {% endfor %}
 
