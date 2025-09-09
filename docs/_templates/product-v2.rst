@@ -890,6 +890,24 @@
    There are no data source links available at the present time.
    {% endif %}
 
+   {% set access_table = namespace(groups={}) %}
+
+   {% for item in access_links_custom_list %}
+      {% set item_type = item.type if item.type in access_types else "custom" %}
+      {% set item_label = item.label or access_labels.get(item_type, access_labels.custom) %}
+      {% if item_label not in access_table.groups %}
+         {% set _ = access_table.groups.update({item_label: []}) %}
+      {% endif %}
+      {% set _ = groups.data[item_label].append(item) %}
+   {% endfor %}
+
+   {% for label, items in access_table.groups.items() -%}
+   * {{ label }}
+     {% for item in items -%}
+     * {{ item }}
+     {% endfor %}
+   {% endfor %}
+
    .. include:: _access.md
       :parser: myst_parser.sphinx_
 {% endif %}
