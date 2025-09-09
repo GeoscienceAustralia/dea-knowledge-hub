@@ -58,6 +58,15 @@
    "custom": "",
 } %}
 
+{% set access_css_classes = {
+   "map": "access-link-map",
+   "explorer": "access-link-explorer",
+   "data": "access-link-data",
+   "web_service": "access-link-web-service",
+   "code_sample": "access-link-code-sample",
+   "custom": "access-link-custom",
+} %}
+
 {% set lineage_type_terms = {
    "BASELINE": "Baseline",
    "DERIVATIVE": "Derivative",
@@ -336,7 +345,7 @@
          .. grid-item-card:: :fas:`{{ item.icon or "map-location-dot" }}`
             :link: {{ item.link }}
             :link-alt: {{ item.label or access_labels.map }}
-            :class-card: {{ item.class or "" }}
+            :class-card: {{ item.class or access_css_classes.map }}
 
             {{ item.name or access_names.map }}
          {% endfor %}
@@ -345,7 +354,7 @@
          .. grid-item-card:: :fas:`{{ item.icon or "magnifying-glass" }}`
             :link: {{ item.link }}
             :link-alt: {{ item.label or access_labels.explorer }}
-            :class-card: {{ item.class or "" }}
+            :class-card: {{ item.class or access_css_classes.explorer }}
 
             {{ item.name or access_names.explorer }}
          {% endfor %}
@@ -354,7 +363,7 @@
          .. grid-item-card:: :fas:`{{ item.icon or "database" }}`
             :link: {{ item.link }}
             :link-alt: {{ item.label or access_labels.data }}
-            :class-card: {{ item.class or "" }}
+            :class-card: {{ item.class or access_css_classes.data }}
 
             {{ item.name or access_names.data }}
          {% endfor %}
@@ -363,7 +372,7 @@
          .. grid-item-card:: :fas:`{{ item.icon or "laptop-code" }}`
             :link: {{ item.link }}
             :link-alt: {{ item.label or access_labels.code_sample }}
-            :class-card: {{ item.class or "" }}
+            :class-card: {{ item.class or access_css_classes.code_sample }}
 
             {{ item.name or access_names.code_sample }}
          {% endfor %}
@@ -372,7 +381,7 @@
          .. grid-item-card:: :fas:`{{ item.icon or "globe" }}`
             :link: {{ item.link }}
             :link-alt: {{ item.label or access_labels.web_service }}
-            :class-card: {{ item.class or "" }}
+            :class-card: {{ item.class or access_css_classes.web_service }}
 
             {{ item.name or access_names.web_service }}
          {% endfor %}
@@ -381,7 +390,7 @@
          .. grid-item-card:: :fas:`{{ item.icon or "link" }}`
             :link: {{ item.link }}
             :link-alt: {{ item.label or access_labels.custom }}
-            :class-card: {{ item.class or "" }}
+            :class-card: {{ item.class or access_css_classes.custom }}
 
             {{ item.name or access_names.custom }}
          {% endfor %}
@@ -392,7 +401,7 @@
          {% set item_link = item.link %}
          {% set item_label = item.label or access_labels.get(item_type, access_labels.custom) %}
          {% set item_name = item.name or access_names.get(item_type, access_names.custom) %}
-         {% set item_class = item.class or "" %}
+         {% set item_class = item.class or access_css_classes.get(item_type, access_css_classes.custom) %}
          .. grid-item-card:: :fas:`{{ item_icon }}`
             :link: {{ item_link }}
             :link-alt: {{ item_label }}
