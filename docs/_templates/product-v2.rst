@@ -886,7 +886,7 @@
          {% set item_icon = item.icon or access_icons.get(item_type, access_icons.custom) %}
          {% set item_class = item.class or access_css_classes.get(item_type, access_css_classes.custom) %}
          {% if item_label not in access_table.groups %}
-            {% set _ = access_table.groups.update({item_label: []}) %}
+         {% set _ = access_table.groups.update({item_label: []}) %}
          {% endif %}
          {% set item_formatted = namespace(value={}) %}
          {% set _ = item_formatted.value.update(item) %}
