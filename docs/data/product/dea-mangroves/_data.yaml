@@ -92,7 +92,7 @@ access_links_custom:
   - link: https://digital.atlas.gov.au/datasets/94a28751a66d483297bca0f6545cb41a
     name: "Digital Atlas Layer: DEA Mangroves (Landsat)"
     description: Learn how to `create a map using Digital Atlas <https://digital.atlas.gov.au/apps/6b0a217d5c704e8fb6c353d6245585ce/explore>`_.
-    label: Esri web services
+    label: Digital Atlas Layers
     icon: globe
     class: null
 
