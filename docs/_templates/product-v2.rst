@@ -888,8 +888,10 @@
          {% if item_label not in access_table.groups %}
             {% set _ = access_table.groups.update({item_label: []}) %}
          {% endif %}
-         {% set item_formatted = item | combine({ 'type': item_type, 'link': item_link, 'name': item_name, 'description': item_description, 'label': item_label, 'icon': item_icon, 'class': item_class }) %}
-         {% set _ = access_table.groups[item_label].append(item_formatted) %}
+         {% set item_formatted = namespace(value={}) %}
+         {% set _ = item_formatted.value.update(item) %}
+         {% set _ = item_formatted.value.update({ 'type': item_type, 'link': item_link, 'name': item_name, 'description': item_description, 'label': item_label, 'icon': item_icon, 'class': item_class }) %}
+         {% set _ = access_table.groups[item_label].append(item_formatted.value) %}
       {% endfor %}
       {% for label, items in access_table.groups.items() %}
       * - **{{ label }}**
