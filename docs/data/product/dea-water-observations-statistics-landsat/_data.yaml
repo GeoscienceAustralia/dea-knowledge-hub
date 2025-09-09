@@ -113,7 +113,7 @@ access_links_custom:
     icon: globe
     class: null
   - link: https://digital.atlas.gov.au/datasets/ef2b925f63e84219b34fc064d8316931/explore
-    name: "Digital Earth Australia Water Observations Multi-Year Summary – Wet Count"
+    name: "Digital Atlas Layer: Digital Earth Australia Water Observations Multi-Year Summary – Wet Count"
     description: null
     label: null
     icon: globe
