@@ -885,7 +885,7 @@
       {% if item_label not in access_table.groups %}
          {% set _ = access_table.groups.update({item_label: []}) %}
       {% endif %}
-      {% set _ = groups.data[item_label].append(item) %}
+      {% set _ = access_table.groups[item_label].append(item) %}
    {% endfor %}
 
    {% for label, items in access_table.groups.items() -%}
