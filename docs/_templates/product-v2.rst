@@ -13,12 +13,31 @@
    "dash": "\-"
 } %}
 
+{% set access_types = [
+   "map",
+   "explorer",
+   "data",
+   "web_service",
+   "code_sample",
+   "custom",
+] %}
+
+{% set access_icons = {
+   "map": "map-location-dot",
+   "explorer": "magnifying-glass",
+   "data": "database",
+   "web_service": "globe",
+   "code_sample": "laptop-code",
+   "custom": "link",
+} %}
+
 {% set access_labels = {
    "map": "DEA Maps",
    "explorer": "DEA Explorer",
    "data": "Data sources",
    "web_service": "Web services",
    "code_sample": "Code examples",
+   "custom": "Access links"
 } %}
 
 {% set access_names = {
@@ -27,6 +46,25 @@
    "data": "Get the data online",
    "web_service": "Get via web service",
    "code_sample": "View code examples",
+   "custom": "View the link",
+} %}
+
+{% set access_descriptions = {
+   "map": "Learn how to `use DEA Maps </guides/setup/dea_maps/>`_.",
+   "explorer": "Learn how to `use the DEA Explorer </setup/explorer_guide/>`_.",
+   "data": "Learn how to `access the data via AWS </guides/about/faq/#download-dea-data>`_.",
+   "web_service": "Learn how to `use DEA's web services </guides/setup/gis/README/>`_.",
+   "code_sample": "Learn how to `use the DEA Sandbox </guides/setup/Sandbox/sandbox/>`_.",
+   "custom": "",
+} %}
+
+{% set access_css_classes = {
+   "map": "access-link-map",
+   "explorer": "access-link-explorer",
+   "data": "access-link-data",
+   "web_service": "access-link-web-service",
+   "code_sample": "access-link-code-sample",
+   "custom": "access-link-custom",
 } %}
 
 {% set lineage_type_terms = {
@@ -88,7 +126,7 @@
 
 {% set access_links_code_samples_list = page.data.access_links_code_examples | selectattr("link", "!=", None) | list %}
 
-{% set access_links_custom_list = page.data.access_links_custom | selectattr("icon", "!=", None) | selectattr("link", "!=", None) | selectattr("name", "!=", None) | list %}
+{% set access_links_custom_list = page.data.access_links_custom | selectattr("link", "!=", None) | list %}
 
 {% set previous_versions_list = page.data.previous_versions | selectattr("slug", "!=", None) | selectattr("version_number", "!=", None) | selectattr("name", "!=", None) | list %}
 
@@ -302,52 +340,64 @@
          :gutter: 3
 
          {% for item in access_links_maps_list %}
-         .. grid-item-card:: :fas:`map-location-dot`
+         .. grid-item-card:: :fas:`{{ item.icon or "map-location-dot" }}`
             :link: {{ item.link }}
-            :link-alt: {{ access_labels.map }}
+            :link-alt: {{ item.label or access_labels.map }}
+            :class-card: {{ item.class or access_css_classes.map }}
 
             {{ item.name or access_names.map }}
          {% endfor %}
 
          {% for item in access_links_explorers_list %}
-         .. grid-item-card:: :fas:`magnifying-glass`
+         .. grid-item-card:: :fas:`{{ item.icon or "magnifying-glass" }}`
             :link: {{ item.link }}
-            :link-alt: {{ access_labels.explorer }}
+            :link-alt: {{ item.label or access_labels.explorer }}
+            :class-card: {{ item.class or access_css_classes.explorer }}
 
             {{ item.name or access_names.explorer }}
          {% endfor %}
 
          {% for item in access_links_data_list %}
-         .. grid-item-card:: :fas:`database`
+         .. grid-item-card:: :fas:`{{ item.icon or "database" }}`
             :link: {{ item.link }}
-            :link-alt: {{ access_labels.data }}
+            :link-alt: {{ item.label or access_labels.data }}
+            :class-card: {{ item.class or access_css_classes.data }}
 
             {{ item.name or access_names.data }}
          {% endfor %}
 
          {% for item in access_links_code_samples_list %}
-         .. grid-item-card:: :fas:`laptop-code`
+         .. grid-item-card:: :fas:`{{ item.icon or "laptop-code" }}`
             :link: {{ item.link }}
-            :link-alt: {{ access_labels.code_sample }}
+            :link-alt: {{ item.label or access_labels.code_sample }}
+            :class-card: {{ item.class or access_css_classes.code_sample }}
 
             {{ item.name or access_names.code_sample }}
          {% endfor %}
 
          {% for item in access_links_web_services_list %}
-         .. grid-item-card:: :fas:`globe`
+         .. grid-item-card:: :fas:`{{ item.icon or "globe" }}`
             :link: {{ item.link }}
-            :link-alt: {{ access_labels.web_service }}
+            :link-alt: {{ item.label or access_labels.web_service }}
+            :class-card: {{ item.class or access_css_classes.web_service }}
 
             {{ item.name or access_names.web_service }}
          {% endfor %}
 
          {% for item in access_links_custom_list %}
-         .. grid-item-card:: :fas:`{{ item.icon or "link" }}`
-            :link: {{ item.link }}
-            :link-alt: {{ item.label or "" }}
-            :class-card: {{ item.class }}
+         {% set item_type = item.type if item.type in access_types else "custom" %}
+         {% set item_link = item.link %}
+         {% set item_name = item.name or access_names.get(item_type, access_names.custom) %}
+         {% set item_description = item.description or access_descriptions.get(item_type, access_descriptions.custom) %}
+         {% set item_label = item.label or access_labels.get(item_type, access_labels.custom) %}
+         {% set item_icon = item.icon or access_icons.get(item_type, access_icons.custom) %}
+         {% set item_class = item.class or access_css_classes.get(item_type, access_css_classes.custom) %}
+         .. grid-item-card:: :fas:`{{ item_icon }}`
+            :link: {{ item_link }}
+            :link-alt: {{ item_label }}
+            :class-card: {{ item_class }}
 
-            {{ item.name }}
+            {{ item_name }}
          {% endfor %}
    {%- endif %}
 
@@ -790,7 +840,7 @@
         - {% for item in access_links_maps_list %}
           * `{{ item.name or access_names.map }} <{{ item.link }}>`_
           {% endfor %}
-        - Learn how to `use DEA Maps </guides/setup/dea_maps/>`_.
+        - {{ access_descriptions.map }}
       {% endif %}
 
       {% if access_links_explorers_list %}
@@ -798,7 +848,7 @@
         - {% for item in access_links_explorers_list %}
           * `{{ item.name or access_names.explorer }} <{{ item.link }}>`_
           {% endfor %}
-        - Learn how to `use the DEA Explorer </setup/explorer_guide/>`_.
+        - {{ access_descriptions.explorer }}
       {% endif %}
 
       {% if access_links_data_list %}
@@ -806,7 +856,7 @@
         - {% for item in access_links_data_list %}
           * `{{ item.name or access_names.data }} <{{ item.link }}>`_
           {% endfor %}
-        - Learn how to `access the data via AWS </guides/about/faq/#download-dea-data>`_.
+        - {{ access_descriptions.data }}
       {% endif %}
 
       {% if access_links_code_samples_list %}
@@ -814,7 +864,7 @@
         - {% for item in access_links_code_samples_list %}
           * `{{ item.name or access_names.code_sample }} <{{ item.link }}>`_
           {% endfor %}
-        - Learn how to `use the DEA Sandbox </guides/setup/Sandbox/sandbox/>`_.
+        - {{ access_descriptions.code_sample }}
       {% endif %}
 
       {% if access_links_web_services_list %}
@@ -822,13 +872,33 @@
         - {% for item in access_links_web_services_list %}
           * `{{ item.name or access_names.web_service }} <{{ item.link }}>`_
           {% endfor %}
-        - Learn how to `use DEA's web services </guides/setup/gis/README/>`_.
+        - {{ access_descriptions.web_service }}
       {% endif %}
 
+      {# Group the 'access_links_custom_list' by 'label' and then render this grouped list as the access links table. #}
+      {% set access_table = namespace(groups={}) %}
       {% for item in access_links_custom_list %}
-      * - **{{ item.label or "" }}**
-        - * `{{ item.name }} <{{ item.link }}>`_
-        - {{ item.description or "" }}
+         {% set item_type = item.type if item.type in access_types else "custom" %}
+         {% set item_link = item.link %}
+         {% set item_name = item.name or access_names.get(item_type, access_names.custom) %}
+         {% set item_description = item.description or access_descriptions.get(item_type, access_descriptions.custom) %}
+         {% set item_label = item.label or access_labels.get(item_type, access_labels.custom) %}
+         {% set item_icon = item.icon or access_icons.get(item_type, access_icons.custom) %}
+         {% set item_class = item.class or access_css_classes.get(item_type, access_css_classes.custom) %}
+         {% if item_label not in access_table.groups %}
+         {% set _ = access_table.groups.update({item_label: []}) %}
+         {% endif %}
+         {% set item_formatted = namespace(value={}) %}
+         {% set _ = item_formatted.value.update(item) %}
+         {% set _ = item_formatted.value.update({ 'type': item_type, 'link': item_link, 'name': item_name, 'description': item_description, 'label': item_label, 'icon': item_icon, 'class': item_class }) %}
+         {% set _ = access_table.groups[item_label].append(item_formatted.value) %}
+      {% endfor %}
+      {% for label, items in access_table.groups.items() %}
+      * - **{{ label }}**
+        - {% for item in items %}
+          * `{{ item.name }} <{{ item.link }}>`_
+          {% endfor %}
+        - {{ items[0].description }}
       {% endfor %}
    {% else %}
    There are no data source links available at the present time.
