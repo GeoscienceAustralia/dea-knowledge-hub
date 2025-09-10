@@ -1,6 +1,10 @@
 % See the DEA Tech Alerts documentation:
 % https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/tech_alerts_changelog.html
 
+## 10 Sep 2025: DEA Land Cover updates; New Digital Atlas of Australia datasets
+
+
+
 ## 26 Jun 2025: Tech Alert
 
 Our [latest tech alert](https://communication.ga.gov.au/link/id/zzzz685c9f34c9582777Pzzzz6567c8b713b5b826/page.html) contains some key information, some of which has already been posted in previous tech alerts.
