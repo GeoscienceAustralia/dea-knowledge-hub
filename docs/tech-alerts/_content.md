@@ -7,6 +7,17 @@
 
 ## 10 Sep 2025: Old product versions being deprecated soon
 
+Several older DEA products versions are being deprecated soon, having been superseded by newer versions. These new versions are all available on DEA Knowledge Hub. If you have not already updated your workflows we strongly recommend moving to the latest versions to benefit from improved data quality and usability. Deprecation of the superseded products is expected to take place throughout **October 2025**.
+
+| Version to be deprecated | Latest version |
+|---|---|
+| DEA Geometric Median and Median Absolute Deviation (Landsat) v3.0.0 | [v4.0.0](/data/product/dea-geometric-median-and-median-absolute-deviation-landsat/) |
+| DEA Land Cover (Landsat) v1.0.0   | [v2.0.0](/data/product/dea-land-cover-landsat/) |
+| DEA Fractional Cover Percentiles (Landsat) v3.0.0 | [v4.0.0](/data/product/dea-fractional-cover-percentiles-landsat/) |
+| DEA Tasseled Cap Percentiles (Landsat) v1.0.0 | [v2.0.0](/data/product/dea-tasseled-cap-percentiles-landsat/) |
+| DEA Mangroves (Landsat) v3.0.0 | [v4.0.0](/data/product/dea-mangroves/) |
+| DEA Water Observations Statistics (Landsat) v1.6.0 | [v2.0.0](/data/product/dea-water-observations-statistics-landsat/) |
+
 [View the Tech Alert](https://communication.ga.gov.au/link/id/zzzz68c0df3fa6de5146Pzzzz6567c8b713b5b826/page.html)
 
 ## 10 Sep 2025: DEA data in the Digital Atlas of Australia
