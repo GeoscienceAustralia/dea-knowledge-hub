@@ -83,18 +83,17 @@ access_links_web_services:
     name: Web Map Service (WMS)
 
 access_links_custom:
-  - link: https://digital.atlas.gov.au/apps/4e861a4ea2cb4597b91539988e1f242c
-    name: DEA Mangroves (Landsat) Explorer
+  - type: map
+    link: https://digital.atlas.gov.au/apps/4e861a4ea2cb4597b91539988e1f242c
+    name: DEA Mangroves (Landsat) Explorer (Digital Atlas application)
     description: Learn more about the `Digital Atlas of Australia <https://digital.atlas.gov.au/pages/about>`_.
-    label: Digital Atlas application
-    icon: map-location-dot
-    class: null
-  - link: https://digital.atlas.gov.au/datasets/94a28751a66d483297bca0f6545cb41a
-    name: "Digital Atlas Layer: DEA Mangroves (Landsat)"
+    label: Digital Atlas applications
+
+  - type: web_service
+    link: https://digital.atlas.gov.au/datasets/94a28751a66d483297bca0f6545cb41a
+    name: "DEA Mangroves (Landsat) (Digital Atlas Layer)"
     description: Learn how to `create a map using Digital Atlas <https://digital.atlas.gov.au/apps/6b0a217d5c704e8fb6c353d6245585ce/explore>`_.
     label: Digital Atlas Layers
-    icon: globe
-    class: null
 
 # History
 
