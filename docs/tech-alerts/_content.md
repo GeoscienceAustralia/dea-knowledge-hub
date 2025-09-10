@@ -7,7 +7,7 @@
 
 ## 10 Sep 2025: Old product versions being deprecated soon
 
-Several older DEA products versions are being deprecated soon, having been superseded by newer versions. These new versions are all available on DEA Knowledge Hub. If you have not already updated your workflows we strongly recommend moving to the latest versions to benefit from improved data quality and usability. Deprecation of the superseded products is expected to take place throughout **October 2025**.
+Several older DEA product versions are being deprecated soon, having been superseded by newer versions. These new versions are all available on DEA Knowledge Hub. If you have not already updated your workflows we strongly recommend moving to the latest versions to benefit from improved data quality and usability. Deprecation of these product versions is expected to take place throughout **October 2025**.
 
 | Version to be deprecated | Latest version |
 |---|---|
