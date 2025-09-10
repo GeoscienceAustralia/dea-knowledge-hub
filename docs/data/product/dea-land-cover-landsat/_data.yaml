@@ -93,9 +93,9 @@ access_links_code_examples:
 access_links_custom:
   - type: map
     link: https://digital.atlas.gov.au/apps/16e1fac8143341aaa87f761a8a2c330e/explore
-    name: Land Cover Explorer (Digital Atlas)
+    name: Land Cover Explorer (Digital Atlas application)
     description: Learn how to `use the Land Cover Explorer </guides/land-cover-explorer/>`_.
-    label: Digital Atlas application
+    label: Digital Atlas applications
 
   - type: web_service
     link: https://ows.dea.ga.gov.au/
