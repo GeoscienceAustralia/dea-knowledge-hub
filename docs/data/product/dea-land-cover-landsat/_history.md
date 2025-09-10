@@ -1,5 +1,31 @@
 ## Changelog
 
+### 10 Sep 2025: DEA Land Cover continental mosaics
+
+We've added a new way to access our [DEA Land Cover](/data/product/dea-land-cover-landsat/) product; it is now available as continental mosaics, in Cloud-optimised GeoTIFF (COG) format. These mosaics provide a single-file representation of land cover data for **each year available** in the time series, removing the complexity of managing tiled datasets and making it easier to work with land cover data across Australia. 
+
+These COG mosaics are designed for fast and efficient streaming over the internet, loading only the portions of the file that are visible in your current view. This makes them ideal for use in **GIS platforms** such as **QGIS** and **ESRI’s software**, where users can interact with the DEA Land Cover dataset without needing to download entire files.
+
+To enhance visualisation and interpretation, we also provide **Virtual Raster (VRT) files** with embedded colour styling aligned to the official DEA colour scheme. These VRTs make the data ready-to-use and visually meaningful out of the box. 
+
+The mosaics and VRTs can also be streamed for use in Python workflows using tools such as **rioxarray**.
+
+[Explore the latest year's continental mosaics (2024)](https://data.dea.ga.gov.au/?prefix=derivative/ga_ls_landcover_class_cyear_3/2-0-0/continental_mosaics/2024--P1Y/)
+
+[Learn how to use DEA Land Cover continental mosaics](/data/product/dea-land-cover-landsat/?tab=access#access-the-data-2)
+
+![Animation showing COG zoom in](/_files/land_cover/zoom_cog_landcover.gif)
+
+[View the Tech Alert](https://communication.ga.gov.au/link/id/zzzz68c0df3fa6de5146Pzzzz6567c8b713b5b826/page.html)
+
+### 10 Sep 2025: DEA data in the Digital Atlas of Australia
+
+The [DEA Coastlines](/data/product/dea-coastlines/), [DEA Mangroves](/data/product/dea-mangroves/), and [DEA Water Observations](/data/category/dea-water-observations/) datasets have now been added to the Digital Atlas, joining [DEA Land Cover](/data/product/dea-land-cover-landsat/). This integration marks a significant milestone in how DEA data can be accessed, visualised, and applied. By embedding DEA products into the Digital Atlas, users can now interact with trusted Earth observation datasets alongside other authoritative national data — unlocking powerful new opportunities for cross-sector analysis and decision-making. 
+
+[Explore the DEA datasets and tools in the Digital Atlas](https://digital.atlas.gov.au/search?source=Digital%2520Earth%2520Australia)
+
+[View the Tech Alert](https://communication.ga.gov.au/link/id/zzzz68c0df3fa6de5146Pzzzz6567c8b713b5b826/page.html)
+
 ### 30 Apr 2025: The 2024 annual data is now available
 
 The 2024 annual data for this product was published on 30 April 2025. You are now able to [access the latest data](./?tab=access) via DEA Maps and other methods. [View the Tech Alert](https://communication.ga.gov.au/link/id/zzzz6811775c5a24b812Pzzzz6567c8b713b5b826/page.html).
