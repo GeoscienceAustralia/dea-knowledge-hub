@@ -3,7 +3,7 @@
 
 ## 10 Sep 2025: DEA Land Cover continental mosaics
 
-We've added a new way to access our [DEA Land Cover](/data/product/dea-land-cover-landsat/) product; DEA Land Cover is now available as continental mosaics, in Cloud-optimised GeoTIFF (COG) format. These mosaics provide a single-file representation of land cover data for **each year available** in the time series, removing the complexity of managing tiled datasets and making it easier to work with land cover data across Australia. 
+We've added a new way to access our [DEA Land Cover](/data/product/dea-land-cover-landsat/) product; it is now available as continental mosaics, in Cloud-optimised GeoTIFF (COG) format. These mosaics provide a single-file representation of land cover data for **each year available** in the time series, removing the complexity of managing tiled datasets and making it easier to work with land cover data across Australia. 
 
 These COG mosaics are designed for fast and efficient streaming over the internet, loading only the portions of the file that are visible in your current view. This makes them ideal for use in **GIS platforms** such as **QGIS** and **ESRI’s software**, where users can interact with the DEA Land Cover dataset without needing to download entire files.
 
@@ -15,7 +15,7 @@ The mosaics and VRTs can also be streamed for use in Python workflows using tool
 
 [Learn how to use DEA Land Cover continental mosaics](/data/product/dea-land-cover-landsat/?tab=access#access-the-data-2)
 
-![Animation-showing-COG-zoom-in](/_files/land_cover/zoom_cog_landcover.gif)
+![Animation showing COG zoom in](/_files/land_cover/zoom_cog_landcover.gif)
 
 [View the Tech Alert](https://communication.ga.gov.au/link/id/zzzz68c0df3fa6de5146Pzzzz6567c8b713b5b826/page.html)
 
