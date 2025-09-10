@@ -106,10 +106,12 @@ access_links_custom:
   - type: web_service
     link: https://digital.atlas.gov.au/maps/b2d32c1bd5614e48ad52a5989c063a10
     name: "DEA Coastlines coastal change hotspots (Digital Atlas Layer)"
+    description: Learn how to `create a map using Digital Atlas <https://digital.atlas.gov.au/apps/6b0a217d5c704e8fb6c353d6245585ce/explore>`_.
     label: Digital Atlas Layers
   - type: web_service
     link: https://digital.atlas.gov.au/maps/b8830a374a764d18864cd4e04d922c6b
     name: "DEA Coastlines annual shorelines (Digital Atlas Layer)"
+    description: Learn how to `create a map using Digital Atlas <https://digital.atlas.gov.au/apps/6b0a217d5c704e8fb6c353d6245585ce/explore>`_.
     label: Digital Atlas Layers
 
 # History
