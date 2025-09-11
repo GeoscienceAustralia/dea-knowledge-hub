@@ -1,6 +1,47 @@
 % See the DEA Tech Alerts documentation:
 % https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/tech_alerts_changelog.html
 
+## 10 Sep 2025: DEA Land Cover continental mosaics
+
+We've added a new way to access our [DEA Land Cover](/data/product/dea-land-cover-landsat/) product; it is now available as continental mosaics, in Cloud-optimised GeoTIFF (COG) format. These mosaics provide a single-file representation of land cover data for **each year available** in the time series, removing the complexity of managing tiled datasets and making it easier to work with land cover data across Australia. 
+
+These COG mosaics are designed for fast and efficient streaming over the internet, loading only the portions of the file that are visible in your current view. This makes them ideal for use in **GIS platforms** such as **QGIS** and **ESRI’s software**, where users can interact with the DEA Land Cover dataset without needing to download entire files.
+
+To enhance visualisation and interpretation, we also provide **Virtual Raster (VRT) files** with embedded colour styling aligned to the official DEA colour scheme. These VRTs make the data ready-to-use and visually meaningful out of the box. 
+
+The mosaics and VRTs can also be streamed for use in Python workflows using tools such as **rioxarray**.
+
+[Explore the latest year's continental mosaics (2024)](https://data.dea.ga.gov.au/?prefix=derivative/ga_ls_landcover_class_cyear_3/2-0-0/continental_mosaics/2024--P1Y/)
+
+[Learn how to use DEA Land Cover continental mosaics](/data/product/dea-land-cover-landsat/?tab=access#access-the-data-2)
+
+![Animation showing COG zoom in](/_files/land_cover/zoom_cog_landcover.gif)
+
+[View the Tech Alert](https://communication.ga.gov.au/link/id/zzzz68c0df3fa6de5146Pzzzz6567c8b713b5b826/page.html)
+
+## 10 Sep 2025: Old product versions being deprecated soon
+
+Several older DEA product versions are being deprecated soon, having been superseded by newer versions. These new versions are all available on DEA Knowledge Hub. If you have not already updated your workflows we strongly recommend moving to the latest versions to benefit from improved data quality and usability. Deprecation of these product versions is expected to take place throughout **October 2025**.
+
+| Version to be deprecated | Latest version |
+|---|---|
+| DEA Geometric Median and Median Absolute Deviation (Landsat) v3.0.0 | [v4.0.0](/data/product/dea-geometric-median-and-median-absolute-deviation-landsat/) |
+| DEA Land Cover (Landsat) v1.0.0   | [v2.0.0](/data/product/dea-land-cover-landsat/) |
+| DEA Fractional Cover Percentiles (Landsat) v3.0.0 | [v4.0.0](/data/product/dea-fractional-cover-percentiles-landsat/) |
+| DEA Tasseled Cap Percentiles (Landsat) v1.0.0 | [v2.0.0](/data/product/dea-tasseled-cap-percentiles-landsat/) |
+| DEA Mangroves (Landsat) v3.0.0 | [v4.0.0](/data/product/dea-mangroves/) |
+| DEA Water Observations Statistics (Landsat) v1.6.0 | [v2.0.0](/data/product/dea-water-observations-statistics-landsat/) |
+
+[View the Tech Alert](https://communication.ga.gov.au/link/id/zzzz68c0df3fa6de5146Pzzzz6567c8b713b5b826/page.html)
+
+## 10 Sep 2025: DEA data in the Digital Atlas of Australia
+
+The [DEA Coastlines](/data/product/dea-coastlines/), [DEA Mangroves](/data/product/dea-mangroves/), and [DEA Water Observations Multi-Year Summary](/data/product/dea-water-observations-statistics-landsat/) datasets have now been added to the Digital Atlas, joining [DEA Land Cover](/data/product/dea-land-cover-landsat/). This integration marks a significant milestone in how DEA data can be accessed, visualised, and applied. By embedding DEA products into the Digital Atlas, users can now interact with trusted Earth observation datasets alongside other authoritative national data — unlocking powerful new opportunities for cross-sector analysis and decision-making. 
+
+[Explore the DEA datasets and tools in the Digital Atlas](https://digital.atlas.gov.au/search?source=Digital%2520Earth%2520Australia)
+
+[View the Tech Alert](https://communication.ga.gov.au/link/id/zzzz68c0df3fa6de5146Pzzzz6567c8b713b5b826/page.html)
+
 ## 26 Jun 2025: Tech Alert
 
 Our [latest tech alert](https://communication.ga.gov.au/link/id/zzzz685c9f34c9582777Pzzzz6567c8b713b5b826/page.html) contains some key information, some of which has already been posted in previous tech alerts.

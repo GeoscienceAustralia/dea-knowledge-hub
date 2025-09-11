@@ -74,14 +74,19 @@ access_links_web_services: null
 access_links_custom:
   - type: map
     link: https://maps.dea.ga.gov.au/story/DEACoastlines
+  - type: map
+    link: https://digital.atlas.gov.au/apps/dd64505be18249959f3355ff05772f4e
+    name: DEA Coastlines Explorer (Digital Atlas application)
+    description: Learn more about the `Digital Atlas of Australia <https://digital.atlas.gov.au/pages/about>`_.
+    label: Digital Atlas applications
 
   - type: data
     link: https://data.dea.ga.gov.au/?prefix=derivative/dea_coastlines/3-0-0/
     name: Access the data on AWS
 
-  - type: code_sample
+  - type: code_example
     link: /notebooks/DEA_products/DEA_Coastlines/
-  - type: code_sample
+  - type: code_example
     link: https://github.com/GeoscienceAustralia/dea-coastlines
     name: GitHub repository
 
@@ -91,13 +96,6 @@ access_links_custom:
   - type: web_service
     link: http://geoserver.dea.ga.gov.au/geoserver/wfs?service=WFS&version=1.1.0
     name: Web Feature Service (WFS)
-
-  - type: map
-    link: https://digital.atlas.gov.au/apps/dd64505be18249959f3355ff05772f4e
-    name: DEA Coastlines Explorer (Digital Atlas application)
-    description: Learn more about the `Digital Atlas of Australia <https://digital.atlas.gov.au/pages/about>`_.
-    label: Digital Atlas applications
-
   - type: web_service
     link: https://digital.atlas.gov.au/maps/f98e0742e7ea47bb8ed2893406f8eb50
     name: "DEA Coastlines rates of coastal change (Digital Atlas Layer)"
