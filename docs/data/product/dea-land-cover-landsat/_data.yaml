@@ -72,25 +72,31 @@ tags:
 
 # Access
 
-access_links_maps:
-  - link: https://maps.dea.ga.gov.au/story/DEALandCover
-    name: null
+access_links_maps: null
 
-access_links_explorers:
-  - link: https://explorer.dea.ga.gov.au/products/ga_ls_landcover_class_cyear_3
-    name: null
+access_links_explorers: null
 
-access_links_data:
-  - link: http://dea-public-data.s3-website-ap-southeast-2.amazonaws.com/?prefix=derivative/ga_ls_landcover_class_cyear_3/2-0-0/
-    name: Access the data on AWS
-  - link: https://thredds.nci.org.au/thredds/catalog/jw04/ga_ls_landcover_class_cyear_3/catalog.html
-    name: Access the data on NCI Thredds
+access_links_data: null
 
-access_links_code_examples:
-  - link: /notebooks/DEA_products/DEA_Land_Cover/
-    name: null
+access_links_code_examples: null
 
 access_links_custom:
+  - type: map
+    link: https://maps.dea.ga.gov.au/story/DEALandCover
+
+  - type: explorer
+    link: https://explorer.dea.ga.gov.au/products/ga_ls_landcover_class_cyear_3
+
+  - type: data
+    link: http://dea-public-data.s3-website-ap-southeast-2.amazonaws.com/?prefix=derivative/ga_ls_landcover_class_cyear_3/2-0-0/
+    name: Access the data on AWS
+  - type: data
+    link: https://thredds.nci.org.au/thredds/catalog/jw04/ga_ls_landcover_class_cyear_3/catalog.html
+    name: Access the data on NCI Thredds
+
+  - type: code_sample
+    link: /notebooks/DEA_products/DEA_Land_Cover/
+
   - type: map
     link: https://digital.atlas.gov.au/apps/16e1fac8143341aaa87f761a8a2c330e/explore
     name: Land Cover Explorer (Digital Atlas application)
