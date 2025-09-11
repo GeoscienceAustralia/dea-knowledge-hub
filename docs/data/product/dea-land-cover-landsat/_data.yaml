@@ -99,7 +99,7 @@ access_links_custom:
     link: https://thredds.nci.org.au/thredds/catalog/jw04/ga_ls_landcover_class_cyear_3/catalog.html
     name: Access the data on NCI Thredds
 
-  - type: code_sample
+  - type: code_example
     link: /notebooks/DEA_products/DEA_Land_Cover/
 
   - type: web_service
