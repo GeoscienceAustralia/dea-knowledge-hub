@@ -36,7 +36,7 @@ Several older DEA product versions are being deprecated soon, having been supers
 
 ## 10 Sep 2025: DEA data in the Digital Atlas of Australia
 
-The [DEA Coastlines](/data/product/dea-coastlines/), [DEA Mangroves](/data/product/dea-mangroves/), and [DEA Water Observations](/data/category/dea-water-observations/) datasets have now been added to the Digital Atlas, joining [DEA Land Cover](/data/product/dea-land-cover-landsat/). This integration marks a significant milestone in how DEA data can be accessed, visualised, and applied. By embedding DEA products into the Digital Atlas, users can now interact with trusted Earth observation datasets alongside other authoritative national data — unlocking powerful new opportunities for cross-sector analysis and decision-making. 
+The [DEA Coastlines](/data/product/dea-coastlines/), [DEA Mangroves](/data/product/dea-mangroves/), and [DEA Water Observations Multi-Year Summary](/data/product/dea-water-observations-statistics-landsat/) datasets have now been added to the Digital Atlas, joining [DEA Land Cover](/data/product/dea-land-cover-landsat/). This integration marks a significant milestone in how DEA data can be accessed, visualised, and applied. By embedding DEA products into the Digital Atlas, users can now interact with trusted Earth observation datasets alongside other authoritative national data — unlocking powerful new opportunities for cross-sector analysis and decision-making. 
 
 [Explore the DEA datasets and tools in the Digital Atlas](https://digital.atlas.gov.au/search?source=Digital%2520Earth%2520Australia)
 
