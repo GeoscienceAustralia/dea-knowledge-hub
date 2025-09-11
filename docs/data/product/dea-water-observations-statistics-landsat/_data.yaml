@@ -59,53 +59,68 @@ tags:
 
 # Access
 
-access_links_maps:
-  - link: https://maps.dea.ga.gov.au/#share=s-yIyPPjQlWxVBLg10WJBQd8KrMgt
-    name: Apr-Oct summaries on DEA Maps
-  - link: https://maps.dea.ga.gov.au/#share=s-vT2uXq2ZYxfuKzHZTYM7Xc9kXY0
-    name: Nov-Mar summaries on DEA Maps
-  - link: https://maps.dea.ga.gov.au/#share=s-5fLlPp0Fk11iLTxUpCQPxTkVAH3
-    name: Annual calendar year summaries on DEA Maps
-  - link: https://maps.dea.ga.gov.au/#share=s-x0R0IFIqxSFDJ54LK6sFDEfjh6i
-    name: All-time summary on DEA Maps
+access_links_maps: null
 
-access_links_explorers:
-  - link: https://explorer.dea.ga.gov.au/products#inland-water-group
-    name: null
+access_links_explorers: null
 
-access_links_data:
-  - link: https://data.dea.ga.gov.au/?prefix=derivative/ga_ls_wo_fq_apr_oct_3/2-0-0/
-    name: Apr-Oct summaries since 1986 - AWS access
-  - link: https://data.dea.ga.gov.au/?prefix=derivative/ga_ls_wo_fq_nov_mar_3/2-0-0/
-    name: Nov-Mar summaries since 1986 - AWS access
-  - link: https://data.dea.ga.gov.au/?prefix=derivative/ga_ls_wo_fq_cyear_3/2-0-0/
-    name: Annual calendar year summaries since 1986 - AWS access
-  - link: https://data.dea.ga.gov.au/?prefix=derivative/ga_ls_wo_fq_myear_3/2-0-0/
-    name: All-time summary 1986 to present - AWS access
-  - link: https://thredds.nci.org.au/thredds/catalog/jw04/ga_ls_wo_fq_apr_oct_3/catalog.html
-    name: Apr-Oct summaries since 1986 - NCI access
-  - link: https://thredds.nci.org.au/thredds/catalog/jw04/ga_ls_wo_fq_nov_mar_3/catalog.html
-    name: Nov-Mar summaries since 1986 - NCI access
-  - link: https://thredds.nci.org.au/thredds/catalog/jw04/ga_ls_wo_fq_cyear_3/catalog.html
-    name: Annual calendar year summaries since 1986 - NCI access
-  - link: https://thredds.nci.org.au/thredds/catalog/jw04/ga_ls_wo_fq_myear_3/catalog.html
-    name: All-time summary 1986 to present - NCI access
+access_links_data: null
 
-access_links_code_examples:
-  - link: /notebooks/DEA_products/DEA_Water_Observations/
-    name: null
+access_links_code_examples: null
 
-access_links_web_services:
-  - link: https://ows.dea.ga.gov.au/
-    name: null
+access_links_web_services: null
 
 access_links_custom:
+  - type: map
+    link: https://maps.dea.ga.gov.au/#share=s-yIyPPjQlWxVBLg10WJBQd8KrMgt
+    name: Apr-Oct summaries on DEA Maps
+  - type: map
+    link: https://maps.dea.ga.gov.au/#share=s-vT2uXq2ZYxfuKzHZTYM7Xc9kXY0
+    name: Nov-Mar summaries on DEA Maps
+  - type: map
+    link: https://maps.dea.ga.gov.au/#share=s-5fLlPp0Fk11iLTxUpCQPxTkVAH3
+    name: Annual calendar year summaries on DEA Maps
+  - type: map
+    link: https://maps.dea.ga.gov.au/#share=s-x0R0IFIqxSFDJ54LK6sFDEfjh6i
+    name: All-time summary on DEA Maps
   - type: map
     link: https://digital.atlas.gov.au/apps/16e1fac8143341aaa87f761a8a2c330e/explore
     name: Water Observations Multi-Year Summary Explorer (Digital Atlas application)
     description: Learn more about the `Digital Atlas of Australia <https://digital.atlas.gov.au/pages/about>`_.
     label: Digital Atlas applications
 
+  - type: explorer
+    link: https://explorer.dea.ga.gov.au/products#inland-water-group
+
+  - type: data
+    link: https://data.dea.ga.gov.au/?prefix=derivative/ga_ls_wo_fq_apr_oct_3/2-0-0/
+    name: Apr-Oct summaries since 1986 - AWS access
+  - type: data
+    link: https://data.dea.ga.gov.au/?prefix=derivative/ga_ls_wo_fq_nov_mar_3/2-0-0/
+    name: Nov-Mar summaries since 1986 - AWS access
+  - type: data
+    link: https://data.dea.ga.gov.au/?prefix=derivative/ga_ls_wo_fq_cyear_3/2-0-0/
+    name: Annual calendar year summaries since 1986 - AWS access
+  - type: data
+    link: https://data.dea.ga.gov.au/?prefix=derivative/ga_ls_wo_fq_myear_3/2-0-0/
+    name: All-time summary 1986 to present - AWS access
+  - type: data
+    link: https://thredds.nci.org.au/thredds/catalog/jw04/ga_ls_wo_fq_apr_oct_3/catalog.html
+    name: Apr-Oct summaries since 1986 - NCI access
+  - type: data
+    link: https://thredds.nci.org.au/thredds/catalog/jw04/ga_ls_wo_fq_nov_mar_3/catalog.html
+    name: Nov-Mar summaries since 1986 - NCI access
+  - type: data
+    link: https://thredds.nci.org.au/thredds/catalog/jw04/ga_ls_wo_fq_cyear_3/catalog.html
+    name: Annual calendar year summaries since 1986 - NCI access
+  - type: data
+    link: https://thredds.nci.org.au/thredds/catalog/jw04/ga_ls_wo_fq_myear_3/catalog.html
+    name: All-time summary 1986 to present - NCI access
+
+  - type: code_sample
+    link: /notebooks/DEA_products/DEA_Water_Observations/
+
+  - type: web_service
+    link: https://ows.dea.ga.gov.au/
   - type: web_service
     link: https://digital.atlas.gov.au/datasets/cf7486a7638c4b83b258b98cbbfdd084/explore
     name: "DEA Water Observations Multi-Year Summary – Water Frequency (Digital Atlas Layer)"
