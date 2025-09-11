@@ -342,7 +342,6 @@
          {% for item in access_links_maps_list %}
          .. grid-item-card:: :fas:`{{ item.icon or "map-location-dot" }}`
             :link: {{ item.link }}
-            :link-alt: {{ item.label or access_labels.map }}
             :class-card: {{ item.class or access_css_classes.map }}
 
             {{ item.name or access_names.map }}
@@ -351,7 +350,6 @@
          {% for item in access_links_explorers_list %}
          .. grid-item-card:: :fas:`{{ item.icon or "magnifying-glass" }}`
             :link: {{ item.link }}
-            :link-alt: {{ item.label or access_labels.explorer }}
             :class-card: {{ item.class or access_css_classes.explorer }}
 
             {{ item.name or access_names.explorer }}
@@ -360,7 +358,6 @@
          {% for item in access_links_data_list %}
          .. grid-item-card:: :fas:`{{ item.icon or "database" }}`
             :link: {{ item.link }}
-            :link-alt: {{ item.label or access_labels.data }}
             :class-card: {{ item.class or access_css_classes.data }}
 
             {{ item.name or access_names.data }}
@@ -369,7 +366,6 @@
          {% for item in access_links_code_examples_list %}
          .. grid-item-card:: :fas:`{{ item.icon or "laptop-code" }}`
             :link: {{ item.link }}
-            :link-alt: {{ item.label or access_labels.code_example }}
             :class-card: {{ item.class or access_css_classes.code_example }}
 
             {{ item.name or access_names.code_example }}
@@ -378,7 +374,6 @@
          {% for item in access_links_web_services_list %}
          .. grid-item-card:: :fas:`{{ item.icon or "globe" }}`
             :link: {{ item.link }}
-            :link-alt: {{ item.label or access_labels.web_service }}
             :class-card: {{ item.class or access_css_classes.web_service }}
 
             {{ item.name or access_names.web_service }}
@@ -388,13 +383,10 @@
          {% set item_type = item.type if item.type in access_types else "custom" %}
          {% set item_link = item.link %}
          {% set item_name = item.name or access_names.get(item_type, access_names.custom) %}
-         {% set item_description = item.description or access_descriptions.get(item_type, access_descriptions.custom) %}
-         {% set item_label = item.label or access_labels.get(item_type, access_labels.custom) %}
          {% set item_icon = item.icon or access_icons.get(item_type, access_icons.custom) %}
          {% set item_class = item.class or access_css_classes.get(item_type, access_css_classes.custom) %}
          .. grid-item-card:: :fas:`{{ item_icon }}`
             :link: {{ item_link }}
-            :link-alt: {{ item_label }}
             :class-card: {{ item_class }}
 
             {{ item_name }}
@@ -883,8 +875,6 @@
          {% set item_name = item.name or access_names.get(item_type, access_names.custom) %}
          {% set item_description = item.description or access_descriptions.get(item_type, access_descriptions.custom) %}
          {% set item_label = item.label or access_labels.get(item_type, access_labels.custom) %}
-         {% set item_icon = item.icon or access_icons.get(item_type, access_icons.custom) %}
-         {% set item_class = item.class or access_css_classes.get(item_type, access_css_classes.custom) %}
          {% if item_label not in access_table.groups %}
          {% set _ = access_table.groups.update({item_label: []}) %}
          {% endif %}
