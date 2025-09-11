@@ -383,8 +383,6 @@
          {% set item_type = item.type if item.type in access_types else "custom" %}
          {% set item_link = item.link %}
          {% set item_name = item.name or access_names.get(item_type, access_names.custom) %}
-         {% set item_description = item.description or access_descriptions.get(item_type, access_descriptions.custom) %}
-         {% set item_label = item.label or access_labels.get(item_type, access_labels.custom) %}
          {% set item_icon = item.icon or access_icons.get(item_type, access_icons.custom) %}
          {% set item_class = item.class or access_css_classes.get(item_type, access_css_classes.custom) %}
          .. grid-item-card:: :fas:`{{ item_icon }}`
@@ -877,8 +875,6 @@
          {% set item_name = item.name or access_names.get(item_type, access_names.custom) %}
          {% set item_description = item.description or access_descriptions.get(item_type, access_descriptions.custom) %}
          {% set item_label = item.label or access_labels.get(item_type, access_labels.custom) %}
-         {% set item_icon = item.icon or access_icons.get(item_type, access_icons.custom) %}
-         {% set item_class = item.class or access_css_classes.get(item_type, access_css_classes.custom) %}
          {% if item_label not in access_table.groups %}
          {% set _ = access_table.groups.update({item_label: []}) %}
          {% endif %}
