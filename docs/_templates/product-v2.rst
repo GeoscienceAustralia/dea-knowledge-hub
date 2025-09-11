@@ -342,7 +342,6 @@
          {% for item in access_links_maps_list %}
          .. grid-item-card:: :fas:`{{ item.icon or "map-location-dot" }}`
             :link: {{ item.link }}
-            :link-alt: {{ item.label or access_labels.map }}
             :class-card: {{ item.class or access_css_classes.map }}
 
             {{ item.name or access_names.map }}
@@ -351,7 +350,6 @@
          {% for item in access_links_explorers_list %}
          .. grid-item-card:: :fas:`{{ item.icon or "magnifying-glass" }}`
             :link: {{ item.link }}
-            :link-alt: {{ item.label or access_labels.explorer }}
             :class-card: {{ item.class or access_css_classes.explorer }}
 
             {{ item.name or access_names.explorer }}
@@ -360,7 +358,6 @@
          {% for item in access_links_data_list %}
          .. grid-item-card:: :fas:`{{ item.icon or "database" }}`
             :link: {{ item.link }}
-            :link-alt: {{ item.label or access_labels.data }}
             :class-card: {{ item.class or access_css_classes.data }}
 
             {{ item.name or access_names.data }}
@@ -369,7 +366,6 @@
          {% for item in access_links_code_examples_list %}
          .. grid-item-card:: :fas:`{{ item.icon or "laptop-code" }}`
             :link: {{ item.link }}
-            :link-alt: {{ item.label or access_labels.code_example }}
             :class-card: {{ item.class or access_css_classes.code_example }}
 
             {{ item.name or access_names.code_example }}
@@ -378,7 +374,6 @@
          {% for item in access_links_web_services_list %}
          .. grid-item-card:: :fas:`{{ item.icon or "globe" }}`
             :link: {{ item.link }}
-            :link-alt: {{ item.label or access_labels.web_service }}
             :class-card: {{ item.class or access_css_classes.web_service }}
 
             {{ item.name or access_names.web_service }}
@@ -394,7 +389,6 @@
          {% set item_class = item.class or access_css_classes.get(item_type, access_css_classes.custom) %}
          .. grid-item-card:: :fas:`{{ item_icon }}`
             :link: {{ item_link }}
-            :link-alt: {{ item_label }}
             :class-card: {{ item_class }}
 
             {{ item_name }}
