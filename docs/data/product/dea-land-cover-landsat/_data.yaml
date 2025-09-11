@@ -83,6 +83,11 @@ access_links_code_examples: null
 access_links_custom:
   - type: map
     link: https://maps.dea.ga.gov.au/story/DEALandCover
+  - type: map
+    link: https://digital.atlas.gov.au/apps/16e1fac8143341aaa87f761a8a2c330e/explore
+    name: Land Cover Explorer (Digital Atlas application)
+    description: Learn how to `use the Land Cover Explorer </guides/land-cover-explorer/>`_.
+    label: Digital Atlas applications
 
   - type: explorer
     link: https://explorer.dea.ga.gov.au/products/ga_ls_landcover_class_cyear_3
@@ -97,18 +102,11 @@ access_links_custom:
   - type: code_sample
     link: /notebooks/DEA_products/DEA_Land_Cover/
 
-  - type: map
-    link: https://digital.atlas.gov.au/apps/16e1fac8143341aaa87f761a8a2c330e/explore
-    name: Land Cover Explorer (Digital Atlas application)
-    description: Learn how to `use the Land Cover Explorer </guides/land-cover-explorer/>`_.
-    label: Digital Atlas applications
-
   - type: web_service
     link: https://ows.dea.ga.gov.au/
     name: OGC web services
     description: Learn how to `use DEA's web services </guides/setup/gis/README/>`_.
     label: Web services
-
   - type: web_service
     link: https://digital.atlas.gov.au/datasets/4879aeb3e4a7446ba3f0aba4f5d4635e/explore
     name: "DEA Land Cover Level 3 (Digital Atlas Layer)"
