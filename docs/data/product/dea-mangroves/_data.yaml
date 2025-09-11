@@ -89,7 +89,7 @@ access_links_custom:
     link: https://thredds.nci.org.au/thredds/catalog/jw04/ga_ls_mangrove_cover_cyear_3/4-0-0/catalog.html
     name: Access the data on NCI
 
-  - type: code_sample
+  - type: code_example
     link: /notebooks/DEA_products/DEA_Mangroves/
 
   - type: web_service
