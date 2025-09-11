@@ -72,49 +72,51 @@ tags:
 
 # Access
 
-access_links_maps:
-  - link: https://maps.dea.ga.gov.au/story/DEALandCover
-    name: null
+access_links_maps: null
 
-access_links_explorers:
-  - link: https://explorer.dea.ga.gov.au/products/ga_ls_landcover_class_cyear_3
-    name: null
+access_links_explorers: null
 
-access_links_data:
-  - link: http://dea-public-data.s3-website-ap-southeast-2.amazonaws.com/?prefix=derivative/ga_ls_landcover_class_cyear_3/2-0-0/
-    name: Access the data on AWS
-  - link: https://thredds.nci.org.au/thredds/catalog/jw04/ga_ls_landcover_class_cyear_3/catalog.html
-    name: Access the data on NCI Thredds
+access_links_data: null
 
-access_links_code_examples:
-  - link: /notebooks/DEA_products/DEA_Land_Cover/
-    name: null
+access_links_code_examples: null
 
 access_links_custom:
-  - link: https://digital.atlas.gov.au/apps/16e1fac8143341aaa87f761a8a2c330e/explore
-    name: Land Cover Explorer (Digital Atlas)
+  - type: map
+    link: https://maps.dea.ga.gov.au/story/DEALandCover
+  - type: map
+    link: https://digital.atlas.gov.au/apps/16e1fac8143341aaa87f761a8a2c330e/explore
+    name: Land Cover Explorer (Digital Atlas application)
     description: Learn how to `use the Land Cover Explorer </guides/land-cover-explorer/>`_.
-    label: Web application
-    icon: map-location-dot
-    class: null
-  - link: https://ows.dea.ga.gov.au/
+    label: Digital Atlas applications
+
+  - type: explorer
+    link: https://explorer.dea.ga.gov.au/products/ga_ls_landcover_class_cyear_3
+
+  - type: data
+    link: http://dea-public-data.s3-website-ap-southeast-2.amazonaws.com/?prefix=derivative/ga_ls_landcover_class_cyear_3/2-0-0/
+    name: Access the data on AWS
+  - type: data
+    link: https://thredds.nci.org.au/thredds/catalog/jw04/ga_ls_landcover_class_cyear_3/catalog.html
+    name: Access the data on NCI Thredds
+
+  - type: code_example
+    link: /notebooks/DEA_products/DEA_Land_Cover/
+
+  - type: web_service
+    link: https://ows.dea.ga.gov.au/
     name: OGC web services
     description: Learn how to `use DEA's web services </guides/setup/gis/README/>`_.
     label: Web services
-    icon: globe
-    class: null
-  - link: https://digital.atlas.gov.au/datasets/4879aeb3e4a7446ba3f0aba4f5d4635e/explore
-    name: "Esri web service: DEA Land Cover Level 3"
+  - type: web_service
+    link: https://digital.atlas.gov.au/datasets/4879aeb3e4a7446ba3f0aba4f5d4635e/explore
+    name: "DEA Land Cover Level 3 (Digital Atlas Layer)"
     description: Learn how to `create a map using Digital Atlas <https://digital.atlas.gov.au/apps/6b0a217d5c704e8fb6c353d6245585ce/explore>`_.
-    label: Web services
-    icon: globe
-    class: null
-  - link: https://digital.atlas.gov.au/datasets/3626a8506a3c4ab9a424d51774131441/explore
-    name: "Esri web service: DEA Land Cover Level 4"
+    label: Digital Atlas Layers
+  - type: web_service
+    link: https://digital.atlas.gov.au/datasets/3626a8506a3c4ab9a424d51774131441/explore
+    name: "DEA Land Cover Level 4 (Digital Atlas Layer)"
     description: Learn how to `create a map using Digital Atlas <https://digital.atlas.gov.au/apps/6b0a217d5c704e8fb6c353d6245585ce/explore>`_.
-    label: Web services
-    icon: globe
-    class: null
+    label: Digital Atlas Layers
 
 # History
 
