@@ -84,9 +84,9 @@ access_links_custom:
     link: https://data.dea.ga.gov.au/?prefix=derivative/dea_coastlines/3-0-0/
     name: Access the data on AWS
 
-  - type: code_sample
+  - type: code_example
     link: /notebooks/DEA_products/DEA_Coastlines/
-  - type: code_sample
+  - type: code_example
     link: https://github.com/GeoscienceAustralia/dea-coastlines
     name: GitHub repository
 
