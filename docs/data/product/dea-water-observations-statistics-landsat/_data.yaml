@@ -116,7 +116,7 @@ access_links_custom:
     link: https://thredds.nci.org.au/thredds/catalog/jw04/ga_ls_wo_fq_myear_3/catalog.html
     name: All-time summary 1986 to present - NCI access
 
-  - type: code_sample
+  - type: code_example
     link: /notebooks/DEA_products/DEA_Water_Observations/
 
   - type: web_service
