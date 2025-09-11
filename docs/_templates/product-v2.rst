@@ -18,7 +18,7 @@
    "explorer",
    "data",
    "web_service",
-   "code_sample",
+   "code_example",
    "custom",
 ] %}
 
@@ -27,7 +27,7 @@
    "explorer": "magnifying-glass",
    "data": "database",
    "web_service": "globe",
-   "code_sample": "laptop-code",
+   "code_example": "laptop-code",
    "custom": "link",
 } %}
 
@@ -36,7 +36,7 @@
    "explorer": "DEA Explorer",
    "data": "Data sources",
    "web_service": "Web services",
-   "code_sample": "Code examples",
+   "code_example": "Code examples",
    "custom": "Access links"
 } %}
 
@@ -45,7 +45,7 @@
    "explorer": "Explore data availability",
    "data": "Get the data online",
    "web_service": "Get via web service",
-   "code_sample": "View code examples",
+   "code_example": "View code examples",
    "custom": "View the link",
 } %}
 
@@ -54,7 +54,7 @@
    "explorer": "Learn how to `use the DEA Explorer </setup/explorer_guide/>`_.",
    "data": "Learn how to `access the data via AWS </guides/about/faq/#download-dea-data>`_.",
    "web_service": "Learn how to `use DEA's web services </guides/setup/gis/README/>`_.",
-   "code_sample": "Learn how to `use the DEA Sandbox </guides/setup/Sandbox/sandbox/>`_.",
+   "code_example": "Learn how to `use the DEA Sandbox </guides/setup/Sandbox/sandbox/>`_.",
    "custom": "",
 } %}
 
@@ -63,7 +63,7 @@
    "explorer": "access-link-explorer",
    "data": "access-link-data",
    "web_service": "access-link-web-service",
-   "code_sample": "access-link-code-sample",
+   "code_example": "access-link-code-sample",
    "custom": "access-link-custom",
 } %}
 
@@ -124,7 +124,7 @@
 
 {% set access_links_web_services_list = page.data.access_links_web_services | selectattr("link", "!=", None) | list %}
 
-{% set access_links_code_samples_list = page.data.access_links_code_examples | selectattr("link", "!=", None) | list %}
+{% set access_links_code_examples_list = page.data.access_links_code_examples | selectattr("link", "!=", None) | list %}
 
 {% set access_links_custom_list = page.data.access_links_custom | selectattr("link", "!=", None) | list %}
 
@@ -180,7 +180,7 @@
 
 {% set is_frequency_multiple_words = data_update_frequency.split(" ") | length > 1 %}
 
-{% set has_access_data = access_links_maps_list or access_links_data_list or access_links_explorers_list or access_links_web_services_list or access_links_code_samples_list or access_links_custom_list %}
+{% set has_access_data = access_links_maps_list or access_links_data_list or access_links_explorers_list or access_links_web_services_list or access_links_code_examples_list or access_links_custom_list %}
 
 {# Parent products component #}
 
@@ -366,13 +366,13 @@
             {{ item.name or access_names.data }}
          {% endfor %}
 
-         {% for item in access_links_code_samples_list %}
+         {% for item in access_links_code_examples_list %}
          .. grid-item-card:: :fas:`{{ item.icon or "laptop-code" }}`
             :link: {{ item.link }}
-            :link-alt: {{ item.label or access_labels.code_sample }}
-            :class-card: {{ item.class or access_css_classes.code_sample }}
+            :link-alt: {{ item.label or access_labels.code_example }}
+            :class-card: {{ item.class or access_css_classes.code_example }}
 
-            {{ item.name or access_names.code_sample }}
+            {{ item.name or access_names.code_example }}
          {% endfor %}
 
          {% for item in access_links_web_services_list %}
@@ -859,12 +859,12 @@
         - {{ access_descriptions.data }}
       {% endif %}
 
-      {% if access_links_code_samples_list %}
-      * - **{{ access_labels.code_sample }}**
-        - {% for item in access_links_code_samples_list %}
-          * `{{ item.name or access_names.code_sample }} <{{ item.link }}>`_
+      {% if access_links_code_examples_list %}
+      * - **{{ access_labels.code_example }}**
+        - {% for item in access_links_code_examples_list %}
+          * `{{ item.name or access_names.code_example }} <{{ item.link }}>`_
           {% endfor %}
-        - {{ access_descriptions.code_sample }}
+        - {{ access_descriptions.code_example }}
       {% endif %}
 
       {% if access_links_web_services_list %}
