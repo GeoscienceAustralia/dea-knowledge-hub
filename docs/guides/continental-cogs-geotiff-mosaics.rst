@@ -9,8 +9,8 @@ These datasets are made available as **Cloud-Optimised GeoTIFFs (COGs)**, a form
 
 Not all DEA products provide continental-scale COGs. Currently, this access method is only available for selected products:
 
-- `DEA Land Cover <../../../data/product/dea-land-cover-landsat/_description.md>`__
-- `DEA Intertidal <../../../data/product/dea-intertidal/_description.md>`__
+- `DEA Land Cover </data/product/dea-land-cover-landsat/>`_
+- `DEA Intertidal </data/product/dea-intertidal/>`_
 
 **VRT (Virtual Raster) files** are provided alongside the `.tif` mosaics. These files serve as lightweight wrappers around the main data and can be used to open data in GIS software with visual settings already applied. We use VRTs to provide:
 
@@ -39,7 +39,7 @@ To stream DEA COGs directly in **QGIS**, follow these steps:
    - Click **Add**.
    - If prompted with a message asking whether to stream the data, click **Yes** to avoid downloading the entire file.
 
-   .. image:: ../../../_files/land_cover/load-lc-cog-qgis.png
+   .. image:: /_files/land_cover/load-lc-cog-qgis.png
       :alt: Accessing VRT using QGIS
 
    **Option 2:**
@@ -50,7 +50,7 @@ To stream DEA COGs directly in **QGIS**, follow these steps:
    - In the **URI** field, paste the copied link.
    - Click **Add** to start streaming the layer.
 
-   .. image:: ../../../_files/dea-tidal-composites/cogs_qgis_streaming.jpg
+   .. image:: /_files/dea-tidal-composites/cogs_qgis_streaming.jpg
       :alt: Streaming COGs in QGIS
 
 .. admonition:: Tip
@@ -65,7 +65,7 @@ To connect Esri ArcGIS Pro to DEA's Amazon S3 bucket, follow these steps:
 
 1. In **ArcGIS Pro**, click the **Insert** tab → **Connections** → **Cloud Store** → **New Cloud Storage Connection**.
 
-   .. image:: ../../../_files/dea-tidal-composites/cog_arcgispro_connections.jpg
+   .. image:: /_files/dea-tidal-composites/cog_arcgispro_connections.jpg
       :alt: Accessing the Connections and Cloud store menu in ArcGIS Pro
 
 2. Add the following details to the **Create Cloud Storage Connection** dialog box:
@@ -79,7 +79,7 @@ To connect Esri ArcGIS Pro to DEA's Amazon S3 bucket, follow these steps:
      - `ARC_DEEP_CRAWL` — `NO`  
      - `AWS_NO_SIGN_REQUEST` — `TRUE`
 
-   .. image:: ../../../_files/dea-tidal-composites/cog_arcgispro_cloud_connection.jpg
+   .. image:: /_files/dea-tidal-composites/cog_arcgispro_cloud_connection.jpg
       :alt: Creating a cloud connection to stream Cloud Optimised GeoTIFF (COG) rasters in ArcGIS Pro
 
 3. In the **Catalog** pane:
@@ -92,7 +92,7 @@ To connect Esri ArcGIS Pro to DEA's Amazon S3 bucket, follow these steps:
    - Enter a directory of a particular year, e.g. `2018--P1Y` or `2024--P1Y`.
    - Drag and drop the `.tif` or `.vrt` COG file onto the map (or right-click and select "Add to map").
 
-   .. image:: ../../../_files/dea-tidal-composites/cog_arcgispro_cloud_store.jpg
+   .. image:: /_files/dea-tidal-composites/cog_arcgispro_cloud_store.jpg
       :alt: Navigating to COGs in ArcGIS Pro
 
 .. important::
