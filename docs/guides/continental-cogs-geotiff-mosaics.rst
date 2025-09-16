@@ -17,8 +17,6 @@ Not all DEA products provide continental-scale COGs. Currently, this access meth
 - Predefined **colour legends** for classified products like Land Cover
 - **Band combinations**, such as true colour (RGB), for easier visualisation
 
----
-
 Accessing COG Mosaics in QGIS
 -----------------------------
 
@@ -101,10 +99,7 @@ To connect Esri ArcGIS Pro to DEA's Amazon S3 bucket, follow these steps:
 
    When adding COG files to ArcGIS Pro, select **No** when asked whether to build statistics for the layer.
 
----
-
 .. note::
    If you experience any issues accessing or streaming DEA COG files, please contact:  
    **earth.observation@ga.gov.au**
 
----
