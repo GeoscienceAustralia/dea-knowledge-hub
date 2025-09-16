@@ -11,6 +11,7 @@ Not all DEA products provide continental-scale COGs. Currently, this access meth
 
 - `DEA Land Cover </data/product/dea-land-cover-landsat/>`_
 - `DEA Intertidal </data/product/dea-intertidal/>`_
+- `DEA Tidal Composites </data/product/dea-tidal-composites/>`_
 
 **VRT (Virtual Raster) files** are provided alongside the ``.tif`` mosaics. These files serve as lightweight wrappers around the main data and can be used to open data in GIS software with visual settings already applied. We use VRTs to provide:
 
@@ -25,6 +26,7 @@ To stream DEA COGs directly in **QGIS**, follow these steps:
 1. Navigate to the AWS S3 directory for the relevant DEA product:
    - `Land Cover COGs <https://data.dea.ga.gov.au/?prefix=derivative/ga_ls_landcover_class_cyear_3/2-0-0/continental_mosaics/>`__
    - `Intertidal COGs <https://data.dea.ga.gov.au/?prefix=derivative/ga_s2ls_intertidal_cyear_3/2-0-0/continental_mosaics/>`__
+   - `Tidal Composites COGs <https://data.dea.ga.gov.au/?prefix=derivative/ga_s2_tidal_composites_cyear_3/1-0-0/continental_mosaics/>`__
 
 2. Choose a specific year (e.g. ``2024--P1Y``).
 
