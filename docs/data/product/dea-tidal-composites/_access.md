@@ -26,7 +26,7 @@ This allows you to rapidly access data from the entire Australian continent with
 
 VRT (Virtual Raster) files are also provided alongside the .tif mosaics. These files serve as lightweight wrappers around the main data and can be used to open data in GIS software with visual settings already applied.
 
-For detailed instructions, please visit the [Continental Cloud-Optimised GeoTIFF Mosaics page](/guides/setup/continental-cogs-geotiff-mosaics/)
+For detailed instructions, please visit the [Continental Cloud-Optimised GeoTIFF Mosaics page](/guides/continental-cogs-geotiff-mosaics/)
 
 :::
 
