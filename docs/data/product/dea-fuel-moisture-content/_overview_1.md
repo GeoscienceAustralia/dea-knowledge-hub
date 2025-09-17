@@ -1,6 +1,6 @@
 :::{admonition} Important
 :class: danger
-DEA Fuel Moisture Content is not to be used for safety of life decisions.
+DEA Fuel Moisture Content (FMC) is not to be used for real-time emergency response or safety-of-life decisions.
 :::
 
 ## About

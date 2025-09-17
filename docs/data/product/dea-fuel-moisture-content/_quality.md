@@ -10,4 +10,4 @@ Cloud masking is conducted using the Sentinel-2 Fmask algorithm. This algorithmâ
 
 ## Accuracy
 
-Ongoing validation campaigns are being undertaken to evaluate the accuracy of the remotely sensed FMC estimates across a range of vegetation types and environmental conditions. These field-based data collections provide important reference measurements that will support further refinement of the product and help ensure confidence in its use. Validation results and reference values will become available as more validation campaigns are completed.
+Validation campaigns are being undertaken to evaluate the accuracy of the remotely sensed FMC estimates across a range of vegetation types and environmental conditions. These field-based data collections provide important reference measurements that will support further refinement of the product and help ensure confidence in its use. Validation results and reference values will become available as more validation campaigns are completed.
