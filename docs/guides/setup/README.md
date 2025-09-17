@@ -48,7 +48,7 @@ DEA provides multiple services which enable you to access our data and resources
             <td class="high">No</td>
             <td class="medium">Partial</td>
             <td class="medium">Partial</td>
-            <td class="low"><a href="/guides/setup/Continental-COGs/continental_cogs/">View continental mosaics</a></td>
+            <td class="low"><a href="/guides/continental-cogs-geotiff-mosaics/">View continental mosaics</a></td>
             <td class="low"><a href="/guides/setup/gis/stac/">View data using STAC</a></td>
             <td class="high">No</td>
             <td class="low"><a href="/guides/setup/gis/web_map_service/">View on the WMS</a></td>
@@ -74,7 +74,7 @@ DEA provides multiple services which enable you to access our data and resources
             <td class="high">No</td>
             <td class="low"><a href="/guides/setup/Sandbox/sandbox/">Analyse in the Sandbox</a></td>
             <td class="low"><a href="/guides/setup/NCI/README/">Analyse in the NCI</a></td>
-            <td class="low"><a href="/guides/setup/Continental-COGs/continental_cogs/">Analyse continental mosaics</a></td>
+            <td class="low"><a href="/guides/continental-cogs-geotiff-mosaics/">Analyse continental mosaics</a></td>
             <td class="medium">Partial</td>
             <td class="high">No</td>
             <td class="high">No</td>
