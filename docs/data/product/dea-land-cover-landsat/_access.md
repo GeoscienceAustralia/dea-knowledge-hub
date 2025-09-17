@@ -17,93 +17,21 @@ Once you have signed up to the Sandbox, click into the **DEA products** director
 
 :::
 
-:::{dropdown} How to stream DEA Land Cover continental mosaics in QGIS from AWS (Recommended)
+:::{dropdown} How to stream DEA Land Cover continental mosaics in QGIS or ESRI ArcGIS Pro from AWS (Recommended)
 
 The easiest way to access DEA Land Cover data is via our continental-scale cloud-optimised GeoTIFF mosaics (COGs).
 The COG file format is a type of GeoTIFF raster file (`.tif`) that allows you to quickly and efficiently 'stream' data directly from the Amazon S3 cloud without having to download files to your computer.
 This allows you to rapidly access data from the entire Australian continent without having to download large files.
 
-If you want to view the COGs with the official DEA Land Cover colour scheme, you can use VRT (Virtual Raster) files. These virtual rasters reference the COGs and apply a predefined legend that includes distinct colours and labels for each land cover class.
+VRT (Virtual Raster) files are also provided alongside the .tif mosaics. These files serve as lightweight wrappers around the main data and can be used to open data in GIS software with visual settings already applied.
+
+For detailed instructions, please visit the [Continental Cloud-Optimised GeoTIFF Mosaics page](/guides/continental-cogs-geotiff-mosaics/)
 
 ![Animation-showing-COG-zoom-in](/_files/land_cover/zoom_cog_landcover.gif) 
 
 <figure>
     <figcaption>The animation above shows the DEA Land Cover COG mosaic moving from the continental-scale down to the 30m x 30m pixel level.</figcaption>
 </figure>
-
-```{tip}
-If you encounter difficulty with any of these instructions, or with the COG files themselves, please contact us at <earth.observation@ga.gov.au>.
-```
-    
-1. Access the directory to the DEA Land Cover data using the AWS S3 link listed above, then click on the folder `continental_mosaics`.
-1. Enter a directory of a particular year, e.g. `2024--P1Y`.
-1. Right click one of the `.tif` or `.vrt` files representing a particular Land Cover level e.g. `ga_ls_landcover_class_cyear_3_mosaic_2024--P1Y_level4.vrt` &gt; click **Copy link address**.
-1. In QGIS, click **Layer** &gt; **Add Layer** &gt; **Add Raster Layer**.
-    1. Under **Source**, next to **Raster dataset(s)** paste the URL you copied to the clipboard.
-    1. A pop-up window will appear asking if you want to stream the data instead of downloading it. Click **Yes** to efficiently stream the data without downloading the entire file.
-       
-1. Click **Add** to start streaming the layer. Data should appear on the map after a few seconds (or after several minutes on slow internet connections).
-
-![Accessing VRT using QGIS](/_files/land_cover/load-lc-cog-qgis.png)
-
-```{tip}
-You can avoid prompting the pop-up by adding `/vsicurl/` before the HTTPS URL when specifying the raster source. For example: `/vsicurl/https://data.dea.ga.gov.au/?prefix=derivative/ga_ls_landcover_class_cyear_3/2-0-0/continental_mosaics/2024--P1Y/ga_ls_landcover_class_cyear_3_mosaic_2024--P1Y_level4.vrt`.
-```
-
-:::
-
-:::{dropdown} How to stream DEA Land Cover continental mosaics in Esri ArcGIS Pro from AWS (Recommended)
-
-The easiest way to access DEA Land Cover data is via our continental-scale cloud-optimised GeoTIFF mosaics (COGs).
-The COG file format is a type of GeoTIFF raster file (`.tif`) that allows you to quickly and efficiently 'stream' data directly from the Amazon S3 cloud without having to download files to your computer.
-This allows you to rapidly access data from the entire Australian continent without having to download large files.
-
-If you want to view the COGs with the official DEA Land Cover colour scheme, you can use VRT (Virtual Raster) files. These virtual rasters reference the COGs and apply a predefined legend that includes distinct colours and labels for each land cover class.
-
-```{tip}
-If you encounter difficulty with any of these instructions, or with the COG files themselves, please contact us at <earth.observation@ga.gov.au>.
-```
-
-To connect Esri ArcGIS Pro to DEA's Amazon S3 bucket, follow Esri's tutorial: [Create a cloud storage connection](https://pro.arcgis.com/en/pro-app/latest/help/projects/connect-to-cloud-stores.htm#ESRI_SECTION1_82576579B8CC43E6AE261E39FACFA947).
-
-1. In ArcGIS Pro, click the **Insert** tab, then click **Connections** &gt; **Cloud Store** &gt; **New Cloud Storage Connection**.
-
-    <br>
-
-    ![Accessing the Connections and Cloud store menu in ArcGIS Pro](/_files/dea-tidal-composites/cog_arcgispro_connections.jpg)
-
-1. Add the following details to the **Create Cloud Storage Connection** dialogue box:
-
-    * **Connection File Name** &mdash; `DEA_data`
-    * **Service Provider** &mdash; `AMAZON`
-    * **Bucket Name (Container)** &mdash; `dea-public-data`
-    * **Region (Environment)** &mdash; `Asia Pacific (Sydney)`
-    * **Service Endpoint** &mdash; `s3.ap-southeast-2.amazonaws.com`
-    * **Provider Options**
-        * `ARC_DEEP_CRAWL` &mdash; `NO`
-        * `AWS_NO_SIGN_REQUEST` &mdash; `TRUE`
-    
-    <br>
-
-    ![Creating a cloud connection to stream Cloud Optimised GeoTIFF (COG) rasters in ArcGIS Pro](/_files/dea-tidal-composites/cog_arcgispro_cloud_connection.jpg)
-
-1. In the **Catalog** pane:
-
-    1. Expand **Cloud Stores**.
-    1. Expand the **DEA_data.acs** cloud store.
-    1. Navigate to `derivative/ga_ls_landcover_class_cyear_3/2-0-0/continental_mosaics/`.
-    1. Enter a directory of a particular year, e.g. `2024--P1Y`.
-    1. Drag and drop the `.tif` or `.vrt` file representing a particular Land Cover level (e.g. `ga_ls_landcover_class_cyear_3_mosaic_2024--P1Y_level4.vrt`) onto the map (or right-click and "Add to map").
-    
-    <br>
-
-    ![Cloud store to stream Cloud Optimised GeoTIFF (COG) rasters in ArcGIS Pro](/_files/dea-tidal-composites/cog_arcgispro_cloud_store.jpg)
-
-```{important}
-When adding COG files to ArcGIS Pro, select **No** when asked whether to build statistics for the layer.
-```
-
-:::
 
 :::{dropdown} How to integrate DEA Land Cover continental mosaics into your own Python workflow
 
