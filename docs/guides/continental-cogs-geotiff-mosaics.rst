@@ -63,7 +63,7 @@ To stream DEA COGs directly in **QGIS**, follow these steps:
 Accessing COG Mosaics in Esri ArcGIS Pro
 ----------------------------------------
 
-To connect Esri ArcGIS Pro to DEA's Amazon S3 bucket, follow these steps:
+To connect Esri ArcGIS Pro to DEA's Amazon S3 bucket, follow Esri's tutorial: [Create a cloud storage connection](https://pro.arcgis.com/en/pro-app/latest/help/projects/connect-to-cloud-stores.htm#ESRI_SECTION1_82576579B8CC43E6AE261E39FACFA947).
 
 1. In **ArcGIS Pro**, click the **Insert** tab → **Connections** → **Cloud Store** → **New Cloud Storage Connection**.
 
@@ -98,7 +98,6 @@ To connect Esri ArcGIS Pro to DEA's Amazon S3 bucket, follow these steps:
       :alt: Navigating to COGs in ArcGIS Pro
 
 .. important::
-
    When adding COG files to ArcGIS Pro, select **No** when asked whether to build statistics for the layer.
 
 .. note::
