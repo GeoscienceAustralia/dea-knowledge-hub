@@ -43,20 +43,17 @@ Note: You must be using QGIS version 3.22 or above to use the time dimension.
 :::{dropdown} How to add data to Esri using the OWS web service
 
 1. From the top menu bar, click **Insert** &gt; **Connections** &gt; **Server** &gt; **New WMS Server**.
-1. Enter the following into Server URL:
-    * `https://ows.dea.ga.gov.au/`
+1. Enter the following into Server URL: `https://ows.dea.ga.gov.au/`
 1. Click **OK**.
 1. Once the WMS server appears in the Servers folder in the Catalog, you can choose which layers to add.
-1. Open each group using the drop down arrow and navigate to **Hazards** &gt; **DEA Fuel Moisture Content**, then select either of the following options:
+1. Open each group using the dropdown arrow and navigate to **Hazards** &gt; **DEA Fuel Moisture Content**, then select either of the following options:
     * **DEA FMC Sentinel-2 (A, B & C)** or,
     * **DEA FMC Sentinel-2 Most Recent Observation**
 1. Right-click and **Add to current map** or drag onto Map.
 
 :::
 
-:::{dropdown} How to download data via web browser
-
-**DEA Explorer**
+:::{dropdown} How to download data via web browser from DEA Explorer
 
 Using the [DEA Explorer site](https://explorer.dea.ga.gov.au/products/):
 
@@ -64,7 +61,9 @@ Using the [DEA Explorer site](https://explorer.dea.ga.gov.au/products/):
 2. Using the interactive map and time filters, select the tile of interest.
 3. Find the GeoTIFF file under **Location** and click to download it directly.
 
-**DEA Public Data AWS**
+:::
+
+:::{dropdown} How to download data via web browser from DEA Public Data AWS
 
 Using [DEA's Public Data site](https://data.dea.ga.gov.au/?prefix=derivative/):
 
