@@ -13,15 +13,3 @@ bands_table:
     aliases: null
     description: null
 
-# Layers
-
-# layers_footnote: A footnote to display under the layers table.
-
-# layers_table:
-#   - name: example_layer_name
-#     description: A description of the layer.
-#     attributes:
-#       - name: example_attribute_name
-#         type: int16
-#         units: Metres
-#         description: A description of the attribute.
