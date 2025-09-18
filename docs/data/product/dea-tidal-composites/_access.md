@@ -8,6 +8,10 @@ DEA Tidal Composite data is extremely large with files up to 15 GB in size. We s
 
 :::{dropdown} How to view the data on DEA Maps
 
+Take a Storymap walk-through of the dataset to see some of its features and applications.
+
+- Open DEA Maps [Tidal Composites Storymap](https://maps.dea.ga.gov.au/story/DEATidalComposites)
+
 To add DEA Tidal Composites to DEA Maps manually:
 
 1. Open [DEA Maps](https://maps.dea.ga.gov.au/).
