@@ -14,8 +14,8 @@ Your use of, reliance on, and any further distribution of any aspect of the DEA 
 
 DEA Fuel Moisture Content (FMC) product is a remotely sensed proxy for the moisture content of vegetation. It estimates the percentage of water mass relative to dry mass in living vegetation based on its spectral signature. Vegetation moisture is a critical variable for understanding vegetation flammability and fire potential.
 
-Values range from 0 – 300%, representing by weight percent the amount of water in leaves compared to dry plant material. A value of 0% would indicate that there is no water content. A value of 100% indicates there is an equal weight of water and dry plant material. A value of 300% would mean there is approximately three times as much water as dry plant material.
-Values in the range of 0 – 150% are particularly relevant to fire behaviour analysis, as this range is strongly associated with changes in vegetation flammability and the likelihood of ignition.
+Values range from 0&ndash;300%, representing by weight percent the amount of water in leaves compared to dry plant material. A value of 0% would indicate that there is no water content. A value of 100% indicates there is an equal weight of water and dry plant material. A value of 300% would mean there is approximately three times as much water as dry plant material.
+Values in the range of 0&ndash;150% are particularly relevant to fire behaviour analysis, as this range is strongly associated with changes in vegetation flammability and the likelihood of ignition.
 
 DEA FMC is derived from [Sentinel-2 NBART](https://knowledge.dea.ga.gov.au/notebooks/DEA_products/DEA_Sentinel2_Surface_Reflectance/) satellite imagery at a 20 m resolution for all of Australia from 12 July 2015 to the present. It provides pixel-level FMC values for each corresponding Sentinel-2 scene, with masking applied to exclude clouds, cloud shadows, water, and terrain shadows.
 
@@ -32,7 +32,7 @@ Please note that this product should not be used to make safety of life decision
 
 DEA Fuel Moisture Content (FMC) is a gridded dataset indicating the moisture content of vegetation. This product includes measurements taken between 12 July 2015 and the present (inclusive) from the Sentinel-2A, 2B, and 2C satellites. DEA FMC covers all of mainland Australia and Tasmania but excludes offshore territories. The dataset is updated automatically as each new Sentinel-2 scene is acquired and processed as Analysis Ready Data (ARD).
 
-The calculation of DEA FMC is done using a random forest machine learning model which is an emulator of the model used in the MODIS-based Australian Flammability Monitoring System (AFMS) (Yebra et al, 2018). The inputs to the model are the Sentinel-2 bands (blue, green, red, red edge 1, 2, and 3, NIR 1 and 2, and SWIR 2 and 3). In addition, two normalised difference indices are used (NDVI Rouse (1973) and NDVII Hunt and Rock (1989)). All input bands are loaded at 20 x 20 m resolution. The visible light bands that have a resolution of 10 m are resampled using Bilinear sampling. Masking for cloud, cloud shadow, water, and terrain shadow are also applied.
+The calculation of DEA FMC is done using a random forest machine learning model which is an emulator of the model used in the MODIS-based Australian Flammability Monitoring System (AFMS) (Yebra et al, 2018). The inputs to the model are the Sentinel-2 bands (blue, green, red, red edge 1, 2, and 3, NIR 1 and 2, and SWIR 2 and 3). In addition, two normalised difference indices are used (NDVI Rouse (1973) and NDVII Hunt and Rock (1989)). All input bands are loaded at 20 &times; 20 m resolution. The visible light bands that have a resolution of 10 m are resampled using Bilinear sampling. Masking for cloud, cloud shadow, water, and terrain shadow are also applied.
 
 ## Lineage
 

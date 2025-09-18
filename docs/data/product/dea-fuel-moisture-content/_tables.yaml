@@ -4,14 +4,14 @@
 
 # bands_footnote: A footnote to display under the bands table.
 
-# bands_table:
-#   - name: example_band_name
-#     type: int16
-#     units: Metres
-#     resolution: 30 m
-#     nodata: -999
-#     aliases: [example_alias_1, example_alias_2]
-#     description: A description of the band.
+bands_table:
+  - name: fmc
+    type: null
+    units: null
+    resolution: 20 m
+    nodata: null
+    aliases: null
+    description: null
 
 # Layers
 
