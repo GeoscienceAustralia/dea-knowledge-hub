@@ -47,7 +47,7 @@ To stream DEA COGs directly in **QGIS**, follow these steps:
    **Option 2:**
 
    - Click **Layer** → **Add Layer** → **Add Raster Layer**.
-   - For **Source Type**, select **Protocol: HTTP(S), cloud, etc.**.
+   - For **Source Type**, select **Protocol: HTTP(S), cloud, etc.**
    - For **Protocol Type**, select **HTTP/HTTPS/FTP**.
    - In the **URI** field, paste the copied link.
    - Click **Add** to start streaming the layer.
