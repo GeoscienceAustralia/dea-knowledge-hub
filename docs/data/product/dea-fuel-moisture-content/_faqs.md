@@ -8,6 +8,6 @@ In DEA Maps, the DEA FMC product is visualised using a colour scale that only re
 
 :::{dropdown} Where is the data for the latest Sentinel-2 satellite overpass?
 
-DEA FMC uses Sentinel-2A, 2B, and 2C Analysis Ready Data (ARD) products at the ‘Final’ maturity level. Unlike the ‘Near Real Time’ (NRT) ARD dataset, the ‘Final’ ARD is generated using higher-quality ancillary datasets, which require more time to become available. As a result, there is a delay between the time of satellite acquisition and the time that the finalised ARD imagery used in FMC processing becomes available.  For more information, see the [DEA Dataset Maturity guide](https://knowledge.dea.ga.gov.au/guides/reference/dataset_maturity_guide/).
+DEA FMC uses Sentinel-2A, 2B, and 2C Analysis Ready Data (ARD) products at the ‘Final’ maturity level. Unlike the ‘Near Real Time’ (NRT) ARD dataset, the ‘Final’ ARD is generated using higher-quality ancillary datasets, which require more time to become available. As a result, there is a delay between the time of satellite acquisition and the time that the finalised ARD imagery used in FMC processing becomes available.  For more information, see the [DEA Dataset Maturity guide](/guides/reference/dataset_maturity_guide/).
 
 :::
