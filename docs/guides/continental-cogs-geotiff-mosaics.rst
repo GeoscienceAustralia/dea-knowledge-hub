@@ -58,7 +58,10 @@ To stream DEA COGs directly in **QGIS**, follow these steps:
 .. admonition:: Tip
 
    You can avoid prompting the pop-up by adding ``/vsicurl/`` before the HTTPS URL when specifying the raster source. For example:  
-   ``/vsicurl/https://data.dea.ga.gov.au/?prefix=derivative/ga_ls_landcover_class_cyear_3/2-0-0/continental_mosaics/2024--P1Y/ga_ls_landcover_class_cyear_3_mosaic_2024--P1Y_level4.vrt``
+
+   .. code-block:: none
+
+      /vsicurl/https://data.dea.ga.gov.au/?prefix=derivative/ga_ls_landcover_class_cyear_3/2-0-0/continental_mosaics/2024--P1Y/ga_ls_landcover_class_cyear_3_mosaic_2024--P1Y_level4.vrt
 
 Accessing COG Mosaics in Esri ArcGIS Pro
 ----------------------------------------
