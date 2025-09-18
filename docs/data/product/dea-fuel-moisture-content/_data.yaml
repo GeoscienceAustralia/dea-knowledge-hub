@@ -30,8 +30,12 @@ product_ids:
   - ga_s2_fmc_3_v1
 
 parent_products:
-  - name: Sentinel-2A, 2B & 2C Surface Reflectance NBART
-    link: /data/category/dea-surface-reflectance/
+  - name: DEA Surface Reflectance NBART (Sentinel-2A MSI)
+    link: /data/product/dea-surface-reflectance-nbart-sentinel-2a-msi/
+  - name: DEA Surface Reflectance NBART (Sentinel-2B MSI)
+    link: /data/product/dea-surface-reflectance-nbart-sentinel-2b-msi/
+  - name: DEA Surface Reflectance NBART (Sentinel-2C MSI)
+    link: /data/product/dea-surface-reflectance-nbart-sentinel-2c-msi/
 
 collections:
   - name: Geoscience Australia Sentinel-2 Collection 3
