@@ -4,7 +4,7 @@
 
 short_name: DEA Fuel Moisture Content (Sentinel-2)
 full_technical_name: Geoscience Australia Sentinel-2 Fuel Moisture Content
-header_image: /_files/cmi/FMC_Header_Grampians_2020.png
+header_image: /_files/dea-fuel-moisture-content/FMC_Header_Grampians_2020_thumbnail.png
 
 version_number: 1.0.0
 is_latest_version: true
