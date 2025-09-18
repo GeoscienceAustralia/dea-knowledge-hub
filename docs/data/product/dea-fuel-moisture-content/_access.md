@@ -17,9 +17,13 @@ DEA Sandbox allows you to explore DEA’s Earth Observation datasets in a Jupyte
 
 Once you have signed up to the Sandbox, click into the **DEA products** directory to find the **Introduction to DEA Fuel Moisture Content** notebook. This notebook will walk you through loading and visualising the DEA Fuel Moisture Content data.
 
-**If using your own local or virtual Python environment:**
-* Use the [DEA Explorer Spatio-Temporal Asset Catalog (STAC) API](/guides/setup/gis/stac/) to load DEA data through the [odc-stac](https://odc-stac.readthedocs.io/en/latest/) Python package.
-* Use `ga_s2_fmc_3_v1` for the STAC "collection" ID for DEA Fuel Moisture Content.
+:::
+
+:::{dropdown} How to load data into a local environment using Python and STAC (Recommended)
+
+Use the [DEA Explorer Spatio-Temporal Asset Catalog (STAC) API](/guides/setup/gis/stac/) to load DEA data through the [odc-stac](https://odc-stac.readthedocs.io/en/latest/) Python package.
+
+Use `ga_s2_fmc_3_v1` for the STAC "collection" ID for DEA Fuel Moisture Content.
 
 :::
 
