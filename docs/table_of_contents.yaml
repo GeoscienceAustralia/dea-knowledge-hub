@@ -143,6 +143,7 @@ entries:
           - file: data/product/dea-burnt-area-characteristic-layers-sentinel-2-near-real-time/index
             title: DEA Burnt Area Characteristic Layers (Provisional)
           - file: data/product/dea-fuel-moisture-content/index 
+            title: DEA Fuel Moisture Content
 
       - caption: External data
         entries:
