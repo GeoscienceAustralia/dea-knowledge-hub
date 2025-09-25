@@ -1,6 +1,15 @@
 % See the DEA Tech Alerts documentation:
 % https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/tech_alerts_changelog.html
 
+# 25 Sep 2025: New release - DEA Tidal Composites
+
+[Digital Earth Australia (DEA) Tidal Composites](/data/product/dea-tidal-composites/) provides time series imagery of Australia’s coastline at high and low tide.
+
+* DEA Tidal Composites provide invaluable insights into dynamic coastal environments, offering clear, cloud-free views of Australia's coasts, estuaries, and reefs.
+* It produces annual imagery mosaics by calculating the geometric median of the highest and lowest 15% of tides observed by Sentinel-2 satellites from 2016 onwards. This approach offers clear views of coastal areas without the interference of clouds, breaking water, and sun-glint.
+
+[View the Tech Alert](https://communication.ga.gov.au/link/id/zzzz68d497b07084e722Pzzzz6567c8b713b5b826/page.html)
+
 ## 10 Sep 2025: DEA Land Cover continental mosaics
 
 We've added a new way to access our [DEA Land Cover](/data/product/dea-land-cover-landsat/) product; it is now available as continental mosaics, in Cloud-optimised GeoTIFF (COG) format. These mosaics provide a single-file representation of land cover data for **each year available** in the time series, removing the complexity of managing tiled datasets and making it easier to work with land cover data across Australia. 
