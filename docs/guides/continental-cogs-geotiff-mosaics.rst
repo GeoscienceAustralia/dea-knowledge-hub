@@ -7,11 +7,17 @@ Some Digital Earth Australia (DEA) products are provided as **continental-scale 
 
 These datasets are made available as **Cloud-Optimised GeoTIFFs (COGs)**, a format that enables users to efficiently *stream* raster data directly from the cloud without downloading the files. This provides a fast and convenient way to access full-continental coverage from tools like QGIS or ArcGIS Pro, especially when working with large datasets.
 
+COGs include overviews, which are lower-resolution pyramid layers that allow fast rendering at different zoom levels. When zooming out, GIS software displays a coarser overview to improve performance. These layers are generated using a **resampling algorithm**, which determines how pixel values are aggregated when reducing spatial resolution. For DEA products, the choice of resampling algorithm depends on the nature of the data:
+
+- **MODE** – used for **categorical data**; assigns the most frequent value within the extent of an overview pixel.
+- **BILINEAR** – used for **continuous data** with minimal missing values; interpolates pixels to produce a smooth gradient.
+- **NEAREST** – used for **continuous data with a "narrow" appearance**; each overview pixel takes the value of the higher-resolution pixel closest to its centroid. This algorithm maximises the visualisation of products where valid pixels are surrounded by many no-data pixels. Using a different algorithm would, in most cases, cause no-data values to dominate high-level overviews.
+
 Not all DEA products provide continental-scale COGs. Currently, this access method is only available for selected products:
 
-- `DEA Land Cover </data/product/dea-land-cover-landsat/>`_
-- `DEA Intertidal </data/product/dea-intertidal/>`_
-- `DEA Tidal Composites </data/product/dea-tidal-composites/>`_
+- `DEA Land Cover </data/product/dea-land-cover-landsat/>`_ - uses `MODE` as the overview resampling algorithm
+- `DEA Intertidal </data/product/dea-intertidal/>`_ - uses `NEAREST` as the overview resampling algorithm
+- `DEA Tidal Composites </data/product/dea-tidal-composites/>`_ - uses `NEAREST` as the overview resampling algorithm
 
 **VRT (Virtual Raster) files** are provided alongside the ``.tif`` mosaics. These files serve as lightweight wrappers around the main data and can be used to open data in GIS software with visual settings already applied. We use VRTs to provide:
 
