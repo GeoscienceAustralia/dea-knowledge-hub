@@ -25,6 +25,9 @@ This allows you to rapidly access data from the entire Australian continent with
 
 VRT (Virtual Raster) files are also provided alongside the .tif mosaics. These files serve as lightweight wrappers around the main data and can be used to open data in GIS software with visual settings already applied.
 
+.. important::
+   The overviews (pyramid layers) embedded in the DEA Land Cover COG mosaics were generated using the `**MODE**` resampling algorithm. This means that when viewing the data at coarser zoom levels, each overview pixel is assigned the most common land cover class within its corresponding area.
+   
 For detailed instructions, please visit the [Continental Cloud-Optimised GeoTIFF Mosaics page](/guides/continental-cogs-geotiff-mosaics/)
 
 ![Animation-showing-COG-zoom-in](/_files/land_cover/zoom_cog_landcover.gif) 
