@@ -38,6 +38,7 @@ For detailed instructions, please visit the [Continental Cloud-Optimised GeoTIFF
     <figcaption>The animation above shows the DEA Land Cover COG mosaic moving from the continental-scale down to the 30m x 30m pixel level.</figcaption>
 </figure>
 
+
 :::
 
 :::{dropdown} How to integrate DEA Land Cover continental mosaics into your own Python workflow
