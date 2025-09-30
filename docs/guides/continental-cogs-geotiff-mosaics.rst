@@ -11,7 +11,7 @@ COGs include overviews, which are lower-resolution pyramid layers that allow fas
 
 - **MODE** – used for **categorical data**; assigns the most frequent value within the extent of an overview pixel.
 - **BILINEAR** – used for **continuous data** with minimal missing values; interpolates pixels to produce a smooth gradient.
-- **NEAREST** – used for **continuous or categorical data with many missing values**; each overview pixel takes the value of the higher-resolution pixel closest to its centroid. This algorithm maximises the visualisation of products where valid pixels are surrounded by many no-data pixels. Using a different algorithm would, in most cases, cause no-data values to dominate high-level overviews.
+- **NEAREST** – used for **continuous or categorical data with many missing values**; each overview pixel takes the value of the higher-resolution pixel closest to its centroid. This algorithm appears to maximise the visualisation of products where valid pixels are surrounded by many no-data pixels.
 
 Not all DEA products provide continental-scale COGs. Currently, this access method is only available for selected products:
 
