@@ -36,7 +36,7 @@ For detailed instructions, please visit the [Continental Cloud-Optimised GeoTIFF
 :::{admonition} Note
 :class: note
 
-   The overviews (pyramid layers) embedded in the DEA Land Cover COG mosaics were generated using the **MODE** resampling algorithm. This means that, when viewing the data at coarser zoom levels, each overview pixel is assigned the most common land cover class within its corresponding area.
+The overviews (pyramid layers) embedded in the DEA Land Cover COG mosaics were generated using the **MODE** resampling algorithm. This means that, when viewing the data at coarser zoom levels, each overview pixel is assigned the most common land cover class within its corresponding area.
 
 :::
 
