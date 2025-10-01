@@ -26,6 +26,18 @@ The [DEA Coastlines](/data/product/dea-coastlines/), [DEA Mangroves](/data/produ
 
 [View the Tech Alert](https://communication.ga.gov.au/link/id/zzzz68c0df3fa6de5146Pzzzz6567c8b713b5b826/page.html)
 
+### June 2025: Resolved issue with missing data and artefacts in northern Western Australia
+
+An issue was identified affecting data availability and causing classification artefacts across several tiles in northern Western Australia, particularly between 1988 and 2005. The primary affected tiles were `x39y49`, `x40y47`, and `x41y45`, although a total of 17 adjacent tiles (including the three mentioned) experienced the issue.
+
+The root cause was traced to Geometric Quality Assessment (GQA) values falling below the acceptable threshold set by the DEA. This threshold was used to filter out low-quality Landsat scenes from the [Analysis Ready Data (ARD)](/guides/reference/analysis_ready_data_corrections/) inputs used to generate DEA Land Cover. The areas affected by this issue corresponded to regions where ground control points may shift over time, such as areas with shifting sand dunes, leading to inconsistencies in the orthorectification process. As a result, a large number of ARD scenes, not necessarily unusable, were excluded due to their lower GQA scores, reducing data coverage in the output product.
+
+The issue was resolved by disabling GQA-based filtering in the affected areas, after observing that this had no noticeable impact on image sharpness or output quality.
+ 
+![timeseries missing data tiles](/_files/land_cover/gqa_tiles_timeseries_geomad_obs_count_gmad.gif)
+
+Figure 1. Time series animation showing the frequency of missing data in the affected region. On the left is a true-colour time series of the yearly geomedian, for reference. On the right is a time series of the yearly clear observation count.
+
 ### 30 Apr 2025: The 2024 annual data is now available
 
 The 2024 annual data for this product was published on 30 April 2025. You are now able to [access the latest data](./?tab=access) via DEA Maps and other methods. [View the Tech Alert](https://communication.ga.gov.au/link/id/zzzz6811775c5a24b812Pzzzz6567c8b713b5b826/page.html).
