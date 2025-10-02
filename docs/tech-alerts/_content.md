@@ -1,6 +1,16 @@
 % See the DEA Tech Alerts documentation:
 % https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/tech_alerts_changelog.html
 
+## 2 Oct 2025: Digital Earth currently not disrupted by US government shutdown
+
+Geoscience Australia is currently not experiencing any disruption to services enabled by Digital Earth following the US government entering shutdown.
+
+The United States federal government has shut down as of 1400 on 1st October 2025 (AEST). Digital Earth relies on the United States managed satellite data feeds for delivery of specific services. 
+
+Products at risk of being impacted include DEA Hotspots and DEA Landsat Analysis Ready Data.
+
+Geoscience Australia will continue to monitor the situation and provide updates as appropriate.
+
 ## 10 Sep 2025: DEA Land Cover continental mosaics
 
 We've added a new way to access our [DEA Land Cover](/data/product/dea-land-cover-landsat/) product; it is now available as continental mosaics, in Cloud-optimised GeoTIFF (COG) format. These mosaics provide a single-file representation of land cover data for **each year available** in the time series, removing the complexity of managing tiled datasets and making it easier to work with land cover data across Australia. 
