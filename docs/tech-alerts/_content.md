@@ -1,6 +1,14 @@
 % See the DEA Tech Alerts documentation:
 % https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/tech_alerts_changelog.html
 
+:::{admonition} DEA Sandbox Access Request Form
+:class: note
+
+External users who have an existing DEA Sandbox user account can request for their access to be restored while the Sandbox functionality review is taking place where there is a critical use case for access. To request for your account to be considered for reinstatement, please fill out this form:
+
+[Geoscience Australia Sandbox Access Request](https://forms.office.com/Pages/ResponsePage.aspx?id=OmFbZEymUEKXX19peH0CjVZhXxFrFTpIrbjv7UdBedZUQ1lVVUdFUjZKV0pLOUZLUTlLRDhURFU3QS4u)
+:::
+
 ## 2 Oct 2025: US Government Shutdown Impact: Geoscience Australia’s Digital Earth not currently experiencing any disruption to services
 
 The United States federal government has shut down as of 1400 on 1st October 2025 (AEST). Digital Earth relies on the United States managed satellite data feeds for delivery of specific services. Product at risk of being impacted include DEA Hotspots, and DEA Analysis Ready Data.
@@ -129,14 +137,6 @@ You are now able to access the 2024 calendar year data via [DEA Maps](https://ma
 [View the Tech Alert](https://communication.ga.gov.au/link/id/zzzz6811775c5a24b812Pzzzz6567c8b713b5b826/page.html)
 
 ## 22 Apr 2025: DEA Sandbox technical review update
-
-:::{admonition} Access request form
-:class: note
-
-External users who have an existing DEA Sandbox user account can request for their access to be restored while the Sandbox functionality review is taking place where there is a critical use case for access. To request your account be considered for reinstatement, please fill out this form:
-
-[Geoscience Australia Sandbox Access Request](https://forms.office.com/Pages/ResponsePage.aspx?id=OmFbZEymUEKXX19peH0CjVZhXxFrFTpIrbjv7UdBedZUQ1lVVUdFUjZKV0pLOUZLUTlLRDhURFU3QS4u)
-:::
 
 The technical review of the DEA Sandbox has been completed, and we are working towards implementing solutions for improved Sandbox user vetting and content management.  We are already in the process of reopening Sandbox accounts to select groups (e.g. Government and academia) where there is an immediate requirement for access. The form to request account reactivation is available on the DEA Sandbox website, or [here](https://forms.office.com/Pages/ResponsePage.aspx?id=OmFbZEymUEKXX19peH0CjVZhXxFrFTpIrbjv7UdBedZUQ1lVVUdFUjZKV0pLOUZLUTlLRDhURFU3QS4u).
 
