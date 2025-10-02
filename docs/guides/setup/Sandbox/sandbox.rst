@@ -13,12 +13,12 @@ cores with 16GB of RAM, 10GB of storage, and regularly used Python packages
 pre-installed. The Sandbox also includes Jupyter notebook user guides to help you
 get started with DEA and the Open Data Cube.
 
-.. admonition:: Access request is needed
+.. admonition:: DEA Sandbox Access Request Form
    :class: danger
 
-   The DEA Sandbox is offline from 4pm Friday 4 April 2025 until further notice. External users who have an existing DEA Sandbox user account can request for their access to be restored while the Sandbox functionality review is taking place where there is a critical use case for access. To request your account be considered for reinstatement, please fill out this form:
+   External users who have an existing DEA Sandbox user account can request for their access to be restored while the Sandbox functionality review is taking place where there is a critical use case for access. To request for your account to be considered for reinstatement, please fill out this form:
 
-   `Submit a Sandbox Access Request <https://forms.office.com/Pages/ResponsePage.aspx?id=OmFbZEymUEKXX19peH0CjVZhXxFrFTpIrbjv7UdBedZUQ1lVVUdFUjZKV0pLOUZLUTlLRDhURFU3QS4u>`_
+   `Geoscience Australia Sandbox Access Request <https://forms.office.com/Pages/ResponsePage.aspx?id=OmFbZEymUEKXX19peH0CjVZhXxFrFTpIrbjv7UdBedZUQ1lVVUdFUjZKV0pLOUZLUTlLRDhURFU3QS4u>`_
 
 .. admonition:: Get started
    :class: note
