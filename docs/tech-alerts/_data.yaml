@@ -7,6 +7,6 @@ quick_links_custom: null
 
 system_status_notifications:
   - description: "US Government Shutdown Impact: Geoscience Australia’s Digital Earth not currently experiencing any disruption to services"
-    severity: 4
+    severity: 3
     status_custom: null
 
