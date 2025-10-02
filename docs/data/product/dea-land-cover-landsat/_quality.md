@@ -149,16 +149,6 @@ The result of the availability of these satellites is that the most consistent d
 
 :::
 
-### Inconsistent data presence in three Western Australia tiles
-
-An issue has been identified with data presence in three tiles in Western Australia, particularly between 1988 and 2005. The affected tiles are `x39y49`, `x40y47`, and `x41y45`. To visualise these locations, see the [DEA Explorer (ga_ls_landcover_class_cyear_3)](https://explorer.dea.ga.gov.au/products/ga_ls_landcover_class_cyear_3). 
-
-This issue arises due to the Ground Quality Assured (GQA) value falling below the acceptable threshold set by the DEA for products derived from Landsat. The root cause of this anomalous behaviour lies in the [Analysis Ready Data (ARD)](/guides/reference/analysis_ready_data_corrections/), which serves as the source for this Land Cover product. The areas affected by this issue correspond to regions where ground control points may experience movement over time, such as shifting sand dunes, leading to inconsistencies in the orthorectification process.
-
-![timeseries missing data tiles](/_files/land_cover/gqa_tiles_timeseries_geomad_obs_count_gmad.gif)
-
-Figure 1. Time series animation showing the frequency of missing data in the tiles `x39y49`, `x40y47`, and `x41y45`. On the left is a true colours time series of the yearly geomedian. On the right is a time series of the yearly clear observation count.
-
 ## Accuracy
 
 A validation assessment has been undertaken for both of the versions of Land Cover: the former Collection 2 (C2; i.e. Version 1), and the current Collection 3 (C3; i.e. Version 2). The below section outlines the accuracy of both versions to assist users in understanding the differences between them. The validation metrics reported were produced for Level 3 and they integrate the results from the validation of the sub-components of Level 1, the Artificial Surface model, and the Cultivated Terrestrial Vegetation model.
