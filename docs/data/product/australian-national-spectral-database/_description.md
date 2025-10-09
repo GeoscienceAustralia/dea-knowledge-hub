@@ -40,6 +40,12 @@ Additionally, the NSD features the Aquatic Substrate Library, a dataset covering
 % ## Processing steps
 
 ## Software
+SPECCHIO is only compatible with Java 1.8. Running it on newer Java versions may cause class-loading or JAXB runtime errors.
+If you must use a newer JVM, you can try launching the client with the following flag to disable bytecode optimization (a potential workaround, not officially supported): 
+```
+java -Dcom.sun.xml.bind.v2.bytecode.ClassTailor.noOptimize=true -jar specchio-client.jar
+```
+Use this option at your own discretion — stability and compatibility are not guaranteed outside Java 1.8.
 
 Direct download links: [Specchio client zip file](https://github.com/EricHay/NSD_Guides/raw/main/specchio-client.zip) or [.jar installer package](https://github.com/EricHay/NSD_Guides/raw/main/specchio-installer.jar). For further download options see the Specchio website [Downloads page](https://specchio.ch/downloads/).
 
