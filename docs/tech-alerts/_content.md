@@ -1,6 +1,18 @@
 % See the DEA Tech Alerts documentation:
 % https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/tech_alerts_changelog.html
 
+## 14 Oct 2025: New release &mdash; DEA Fuel Moisture Content
+
+Digital Earth Australia (DEA), in partnership with Australian National University’s (ANU) Bushfire Research Centre of Excellence, has launched a new DEA Fuel Moisture Content (FMC) product. This satellite-derived dataset provides high-resolution (20m) insights into the moisture content of live vegetation across the Australian continent. DEA FMC is a key indicator of vegetation flammability and supports identification of fire risk and is a valuable tool for planning mitigation activities. 
+
+**Explore the Data:** Access DEA FMC through [DEA Maps](https://maps.dea.ga.gov.au/#share=s-bbkJz9vaB0EHQ0WEBGo99Fu4Gqn), the [DEA Website](https://www.ga.gov.au/scientific-topics/dea/dea-data-and-products/dea-fuel-moisture-content), the [DEA Knowledge Hub](/data/product/dea-fuel-moisture-content/) or the [DEA Notebook](/notebooks/DEA_products/DEA_Fuel_Moisture_Content/).
+
+**Experiment and Integrate:** Use DEA FMC in combination with other DEA products to enhance your workflows. 
+
+**Provide Feedback:** Share your use cases, insights, and suggestions to help shape the future of the product. This is a co-designed tool, and your input is vital. 
+
+[View the Tech Alert](https://communication.ga.gov.au/link/id/zzzz68edde0229c4b918Pzzzz6567c8b713b5b826/page.html)
+
 ## 14 Oct 2025: DEA Sandbox access update
 
 The outcome of the Digital Earth Australia (DEA) technical review into the DEA Sandbox identified some improvements to our service. The availability of the DEA Sandbox has changed to support government and education users. We have also improved security by implementing multifactor authentication on user accounts.
