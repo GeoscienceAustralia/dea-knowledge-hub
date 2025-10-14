@@ -91,13 +91,13 @@ The PDF form will ask for:
 
 Your DEA Sandbox account will be “pending” until the PDF form is received and processed by the DEA team. Once your request has been assessed, we will contact you to let you know your account is active and ready to be utilised.  
 
+Access
+------
+
 When you log into your account you will be sent a SMS with a verification code to the mobile number you provided in your application, that you will need to enter on the sign in screen. You will be prompted to enter a new SMS verification code each time you log into your account. 
 
 .. image:: /_files/sandbox/sandbox-sms-verification-page.png
    :alt: Enter your SMS verification code into this DEA Sandbox page.
-
-Access
-------
 
 After signing in, the DEA Sandbox will prepare a JupyterLab environment for you.
 All necessary software is provided as part of this environment, so no additional
