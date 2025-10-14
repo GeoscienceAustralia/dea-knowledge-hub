@@ -59,13 +59,15 @@ Select “Sign up” to be taken to the sign up page where you will be asked to 
   * At least 8 characters 
   * Must not contain a leading or trailing space 
 
-.. image:: ./Picture1.jpg
+.. image:: ./sandbox-sign-up-page.jpg
+   :alt: The 'Sign up' page of the DEA Sandbox.
 
 Once you have entered your details, they will be verified. If you do not meet our :any:`eligibility criteria <sandbox-eligibility>`, you will not be able to complete this step.  
 
 An automated email will be sent to the email address you have entered. You will need to click on the verification link in the email.  
 
-.. image:: ./Picture2.png
+.. image:: ./sandbox-email-verification-instructions-page.png
+   :alt: A page that provides instructions on email verification.
 
 When your email has been verified, you will be sent a PDF form that will need to be completed and emailed back to `earth.observation@ga.gov.au <mailto:earth.observation@ga.gov.au>`_
 
@@ -84,7 +86,8 @@ Your DEA Sandbox account will be “pending” until the PDF form is received an
 
 When you log into your account you will be sent a SMS with a verification code to the mobile number you provided in your application, that you will need to enter on the sign in screen. You will be prompted to enter a new SMS verification code each time you log into your account. 
 
-.. image:: ./Picture3.png
+.. image:: ./sandbox-sms-verification-page.png
+   :alt: Enter your SMS verification code into this DEA Sandbox page.
 
 Access
 ------
