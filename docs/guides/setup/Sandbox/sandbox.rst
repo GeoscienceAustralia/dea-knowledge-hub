@@ -5,7 +5,16 @@ DEA Sandbox
 
 The Digital Earth Australia (DEA) Sandbox is an Earth observation (EO) learning and analysis environment supporting Australian government and education users to get started with `DEA Data Products </data/>`_. The Sandbox includes sample data and Jupyter notebooks that allow you to experiment with DEA’s EO datasets and explore proof-of-concept applications.  
 
-The Sandbox is available to eligible users, is free to use, and provides you with a managed environment with 2 cores with 16GB of RAM and10GB of storage. It has regularly-used Python packages pre-installed. The Sandbox also includes the `DEA Notebooks Jupyter notebook user guides </dea-notebooks/>`_ to help you get started. 
+The Sandbox is available to eligible users, is free to use, and provides you with a managed environment with 2 cores with 16GB of RAM and 10GB of storage. It has regularly-used Python packages pre-installed. The Sandbox also includes the `DEA Notebooks Jupyter notebook user guides </dea-notebooks/>`_ to help you get started. 
+
+.. admonition:: Get started
+   :class: note
+
+   Open the `DEA Sandbox <https://app.sandbox.dea.ga.gov.au>`_
+
+.. contents:: In this guide
+   :local:
+   :backlinks: none
 
 .. _sandbox-eligibility:
 
@@ -75,48 +84,6 @@ When you log into your account you will be sent a SMS with a verification code t
 
 .. image:: https://picsum.photos/200/300
    :alt: Example
-
-Old content
------------
-
-The Digital Earth Australia (DEA) Sandbox is a learning and analysis environment
-for getting started with DEA data and our `Open Data Cube`_. The Sandbox includes
-sample data and Jupyter notebooks that allow you to experiment with DEA’s Earth
-Observation datasets and explore proof-of-concept applications.
-
-The Sandbox is free to use, and provides you with a managed environment with 2
-cores with 16GB of RAM, 10GB of storage, and regularly used Python packages
-pre-installed. The Sandbox also includes Jupyter notebook user guides to help you
-get started with DEA and the Open Data Cube.
-
-.. admonition:: DEA Sandbox Access Request Form
-   :class: note
-
-   External users who have an existing DEA Sandbox user account can request for their access to be restored while the Sandbox functionality review is taking place where there is a critical use case for access. To request for your account to be considered for reinstatement, please fill out this form:
-
-   `Geoscience Australia Sandbox Access Request <https://forms.office.com/Pages/ResponsePage.aspx?id=OmFbZEymUEKXX19peH0CjVZhXxFrFTpIrbjv7UdBedZUQ1lVVUdFUjZKV0pLOUZLUTlLRDhURFU3QS4u>`_
-
-.. admonition:: Get started
-   :class: note
-
-   Open the `DEA Sandbox <https://app.sandbox.dea.ga.gov.au>`_
-
-.. _Open Data Cube: https://www.dea.ga.gov.au/about/open-data-cube
-
-.. contents:: In this guide
-   :local:
-   :backlinks: none
-
-Register
---------
-
-The DEA Sandbox is free to use. Visit https://app.sandbox.dea.ga.gov.au to sign up
-for a new account, or sign in if you have an existing account. A verification
-code will be sent to the email address you register with.
-
-.. image:: /_files/sandbox/sandbox_signup.jpg
-   :align: center
-   :alt: Sandbox register
 
 Access
 ------
