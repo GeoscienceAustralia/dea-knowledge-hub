@@ -35,6 +35,9 @@ The sponsor:
 * Should be a supervisor or line manager to the account requestor (or at least have familiarity with the role of the account requestor to be able to speak on their behalf) 
 * Must be a senior executive/SES1 (for government and industry users) or professor, lead lecturer or course convenor (for education users). 
 
+.. _sandbox-register:
+.. _register:
+
 Register 
 --------
 
