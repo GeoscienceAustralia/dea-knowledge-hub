@@ -28,9 +28,7 @@ Industry who are working directly with Australian government on government-direc
 Account sponsorship
 ~~~~~~~~~~~~~~~~~~~
 
-All users requesting an account will need to provide the details of a sponsor for the account. The sponsor information is collected to verify identity, and as a secondary point of contact for the account. The sponsor will be asked to acknowledge the :any:`DEA Sandbox disclaimer <sandbox-disclaimer>` alongside the user.
-
-The sponsor: 
+All users requesting an account will need to provide the details of a sponsor for the account. The sponsor information is collected to verify identity, and as a secondary point of contact for the account. The sponsor will be asked to acknowledge the :any:`DEA Sandbox disclaimer <sandbox-disclaimer>` alongside the user. The sponsor: 
 
 * Should be a supervisor or line manager to the account requestor (or at least have familiarity with the role of the account requestor to be able to speak on their behalf) 
 * Must be a senior executive/SES1 (for government and industry users) or professor, lead lecturer or course convenor (for education users). 
@@ -47,7 +45,7 @@ Click the blue “Login or Sign up" button.
 
 Select “Sign up” to be taken to the sign up page where you will be asked to enter: 
 
-* You email address 
+* Your email address 
 * Your phone number 
 * Your given name 
 * Your family name 
