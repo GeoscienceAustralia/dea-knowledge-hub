@@ -5,6 +5,9 @@
 
 The outcome of the Digital Earth Australia (DEA) technical review into the DEA Sandbox identified some improvements to our service. The availability of the DEA Sandbox has changed to support government and education users. We have also improved security by implementing multifactor authentication on user accounts.
 
+* [Users who are permitted](/guides/setup/Sandbox/sandbox/#eligibility) a DEA Sandbox account are changing.
+* The [registration process](/guides/setup/Sandbox/sandbox/#register) is changing.
+
 [View the Tech Alert](https://communication.ga.gov.au/link/id/zzzz68edcb00717b5755Pzzzz6567c8b713b5b826/page.html)
 
 ## 2 Oct 2025: US Government Shutdown Impact: Geoscience Australia’s Digital Earth not currently experiencing any disruption to services
