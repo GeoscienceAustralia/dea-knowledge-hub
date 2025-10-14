@@ -17,6 +17,7 @@ The Sandbox is available to eligible users, is free to use, and provides you wit
    :backlinks: none
 
 .. _sandbox-eligibility:
+.. _eligibility:
 
 Eligibility
 -----------

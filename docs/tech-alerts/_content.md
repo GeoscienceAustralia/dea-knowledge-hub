@@ -1,6 +1,15 @@
 % See the DEA Tech Alerts documentation:
 % https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/tech_alerts_changelog.html
 
+## 14 Oct 2025: DEA Sandbox access update  
+
+The outcome of the Digital Earth Australia (DEA) technical review into the DEA Sandbox identified some improvements to our service. The availability of the DEA Sandbox has changed to support government and education users. We have also improved security by implementing multifactor authentication on user accounts.
+
+* [Users who are permitted](/guides/setup/Sandbox/sandbox/#eligibility) a DEA Sandbox account are changing.
+* The [registration process](/guides/setup/Sandbox/sandbox/#register) is changing.
+
+[View the Tech Alert](https://communication.ga.gov.au/link/id/zzzz68edcb00717b5755Pzzzz6567c8b713b5b826/page.html)
+
 ## 2 Oct 2025: US Government Shutdown Impact: Geoscience Australia’s Digital Earth not currently experiencing any disruption to services
 
 The United States federal government has shut down as of 1400 on 1st October 2025 (AEST). Digital Earth relies on the United States managed satellite data feeds for delivery of specific services. Product at risk of being impacted include DEA Hotspots, and DEA Analysis Ready Data.
