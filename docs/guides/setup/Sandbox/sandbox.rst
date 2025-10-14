@@ -3,6 +3,82 @@
 DEA Sandbox
 ===========
 
+The Digital Earth Australia (DEA) Sandbox is an Earth observation (EO) learning and analysis environment supporting Australian government and education users to get started with `DEA Data Products </data/>`_. The Sandbox includes sample data and Jupyter notebooks that allow you to experiment with DEA’s EO datasets and explore proof-of-concept applications.  
+
+The Sandbox is available to eligible users, is free to use, and provides you with a managed environment with 2 cores with 16GB of RAM and10GB of storage. It has regularly-used Python packages pre-installed. The Sandbox also includes the `DEA Notebooks Jupyter notebook user guides </dea-notebooks/>`_ to help you get started. 
+
+.. _sandbox-eligibility:
+
+Eligibility
+-----------
+
+The DEA Sandbox service is available to Australian government and education users who have recognised Australian government or education institute email addresses (`.gov.au` or `.edu.au` or equivalent).  
+
+Industry who are working directly with Australian government on government-directed outcomes will be able to put forward their use-case application for consideration. In these cases, a government sponsor needs to be provided.  
+
+Account sponsorship
+~~~~~~~~~~~~~~~~~~~
+
+All users requesting an account will need to provide the details of a sponsor for the account. The sponsor information is collected to verify identity, and as a secondary point of contact for the account. The sponsor will be asked to acknowledge the :any:`DEA Sandbox disclaimer <sandbox-disclaimer>` alongside the user. The sponsor: 
+
+The sponsor: 
+
+* Should be a supervisor or line manager to the account requestor (or at least have familiarity with the role of the account requestor to be able to speak on their behalf) 
+* Must be a senior executive/SES1 (for government and industry users) or professor, lead lecturer or course convenor (for education users). 
+
+Register 
+--------
+
+Visit <https://app.sandbox.dea.ga.gov.au> to sign up for a new account or sign in if you have an existing account.  
+
+Click the blue “Login or Sign up" button.  
+
+Select “Sign up” to be taken to the sign up page where you will be asked to enter: 
+
+* You email address 
+* Your phone number 
+* Your given name 
+* Your family name 
+* Password (must contain)... 
+   * A lower case letter 
+   * An upper case letter 
+   * A number 
+   * At least 8 characters 
+   * Must not contain a leading or trailing space 
+
+.. image:: https://picsum.photos/200/300
+   :alt: Example
+
+Once you have entered your details, they will be verified. If you do not meet our :any:`eligibility criteria <sandbox-eligibility>`, you will not be able to complete this step.  
+
+An automated email will be sent to the email address you have entered. You will need to click on the verification link in the email.  
+
+.. image:: https://picsum.photos/200/300
+   :alt: Example
+
+When your email has been verified, you will be sent a PDF form that will need to be completed and emailed back to <earth.observation@ga.gov.au> 
+
+The PDF form will ask for:
+
+* Your name 
+* Your professional affiliation 
+* Your period of access required for the DEA Sandbox 
+* What is your intended use of the DEA Sandbox? 
+* How does the DEA Sandbox contribute to the outcomes of your work? 
+* Who (if anyone) are you collaborating with at Geoscience Australia? 
+* Your sponsor’s information (name, title, affiliation, email and phone number) 
+* Both yourself and your sponsor to agree to the :any:`DEA Sandbox disclaimer <sandbox-disclaimer>` and `Privacy Policy <https://www.ga.gov.au/privacy>` 
+
+Your DEA Sandbox account will be “pending” until the PDF form is received and processed by the DEA team. Once your request has been assessed, we will contact you to let you know your account is active and ready to be utilised.  
+
+When you log into your account you will be sent a SMS with a verification code to the mobile number you provided in your application, that you will need to enter on the sign in screen. You will be prompted to enter a new SMS verification code each time you log into your account. 
+
+.. image:: https://picsum.photos/200/300
+   :alt: Example
+
+Old content
+-----------
+
 The Digital Earth Australia (DEA) Sandbox is a learning and analysis environment
 for getting started with DEA data and our `Open Data Cube`_. The Sandbox includes
 sample data and Jupyter notebooks that allow you to experiment with DEA’s Earth
@@ -128,6 +204,8 @@ You can also join our `Open Data Cube Discord chat`_ for help setting up or usin
 
 .. _Open Data Cube Stack Exchange: https://gis.stackexchange.com/questions/tagged/open-data-cube
 .. _Open Data Cube Discord chat: https://discord.com/invite/4hhBQVas5U
+
+.. _sandbox-disclaimer:
 
 DEA Sandbox disclaimer
 ----------------------
