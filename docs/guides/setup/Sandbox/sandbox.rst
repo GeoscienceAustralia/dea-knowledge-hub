@@ -189,12 +189,12 @@ DEA Sandbox disclaimer
    registration for, or use of, the Digital Earth Australia Sandbox (including any associated data or services).
 
 Purpose
-#######
+~~~~~~~
 
 The Digital Earth Australia (DEA) Sandbox is a learning and analysis environment for getting started with DEA data and our `Open Data Cube`_. It is intended to enable you to experiment and learn how to use DEA's Earth Observation datasets and enable you to explore proof-of-concept applications that you may wish to implement in your own production environment.
 
 Availability
-############
+~~~~~~~~~~~~
 
 Geoscience Australia makes no guarantee on the availability of the DEA Sandbox and may discontinue offering the DEA Sandbox without notice. We may change the features and datasets offered in response to user feedback and future assessments of budget and security.
 
@@ -211,12 +211,12 @@ As explained below, we may suspend accounts that we consider have misused the DE
 You can view the current system status `here`_. If you are experiencing an issue with the Sandbox that isn't identified on the status page, please submit this issue to `earth.observation@ga.gov.au`_ as we may be able to assist you to the extent we consider appropriate.
 
 Security
-########
+~~~~~~~~
 
 Geoscience Australia cannot guarantee the security of data in your account and you should not use your account with sensitive or confidential data.
 
 Misuse of the DEA Sandbox
-#########################
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Geoscience Australia will consider that the following is misuse of the DEA Sandbox and may choose to suspend your account:
 
@@ -225,7 +225,7 @@ Geoscience Australia will consider that the following is misuse of the DEA Sandb
     - uploading any sensitive or restricted data or code to your Sandbox account.
 
 Collection of personal information
-##################################
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Your personal information provided at sign up is collected under the Privacy Act 1988 (Cth) (Privacy Act). We will only use and disclose your personal information to administer, evaluate and improve the DEA Sandbox, unless you provide consent or we are otherwise required or authorised by law to use or disclose it. Your files will not be intentionally shown to other users or shared with third parties but as explained above we cannot guarantee the security of your account.
 
@@ -238,7 +238,7 @@ The information we collect may, for example, be used to:
 For more information please see `Geoscience Australia's privacy policy`_.
 
 Intellectual Property
-#####################
+~~~~~~~~~~~~~~~~~~~~~
 
 The pre-loaded notebooks provided in the DEA Sandbox are provided under the `Creative Commons by Attribution 4.0 license`_. They are provided as a starting point for Sandbox users, and can be shared and adapted as required. If the notebooks are used, they should be cited:
 
@@ -247,7 +247,7 @@ The pre-loaded notebooks provided in the DEA Sandbox are provided under the `Cre
     Geoscience Australia, Canberra. https://doi.org/10.26186/145234
 
 Account closure
-###############
+~~~~~~~~~~~~~~~
 
 You can close your account at any time by emailing the DEA team (`earth.observation@ga.gov.au`_).
 
