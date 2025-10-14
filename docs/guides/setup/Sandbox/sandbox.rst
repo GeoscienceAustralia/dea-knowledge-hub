@@ -53,11 +53,11 @@ Select “Sign up” to be taken to the sign up page where you will be asked to 
 * Your family name 
 * Password (must contain) ...
 
-   * A lower case letter 
-   * An upper case letter 
-   * A number 
-   * At least 8 characters 
-   * Must not contain a leading or trailing space 
+  * A lower case letter 
+  * An upper case letter 
+  * A number 
+  * At least 8 characters 
+  * Must not contain a leading or trailing space 
 
 .. image:: ./Picture1.jpg
 
