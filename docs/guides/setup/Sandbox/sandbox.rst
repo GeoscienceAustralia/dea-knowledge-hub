@@ -7,10 +7,10 @@ The Digital Earth Australia (DEA) Sandbox is an Earth observation (EO) learning 
 
 The Sandbox is available to eligible users, is free to use, and provides you with a managed environment with 2 cores with 16GB of RAM and 10GB of storage. It has regularly-used Python packages pre-installed. The Sandbox also includes the `DEA Notebooks Jupyter notebook user guides </dea-notebooks/>`_ to help you get started. 
 
-.. admonition:: Get started
-   :class: note
-
-   Open the `DEA Sandbox <https://app.sandbox.dea.ga.gov.au>`_
+.. .. admonition:: Get started
+..    :class: note
+..
+..    Open the `DEA Sandbox <https://app.sandbox.dea.ga.gov.au>`_
 
 .. contents:: In this guide
    :local:
@@ -38,7 +38,7 @@ The sponsor:
 Register 
 --------
 
-Visit <https://app.sandbox.dea.ga.gov.au> to sign up for a new account or sign in if you have an existing account.  
+Visit `https://app.sandbox.dea.ga.gov.au <https://app.sandbox.dea.ga.gov.au>`_ to sign up for a new account or sign in if you have an existing account.  
 
 Click the blue “Login or Sign up" button.  
 
@@ -48,7 +48,8 @@ Select “Sign up” to be taken to the sign up page where you will be asked to 
 * Your phone number 
 * Your given name 
 * Your family name 
-* Password (must contain)... 
+* Password (must contain) ...
+
    * A lower case letter 
    * An upper case letter 
    * A number 
@@ -63,7 +64,7 @@ An automated email will be sent to the email address you have entered. You will 
 
 .. image:: ./Picture2.png
 
-When your email has been verified, you will be sent a PDF form that will need to be completed and emailed back to <earth.observation@ga.gov.au> 
+When your email has been verified, you will be sent a PDF form that will need to be completed and emailed back to `earth.observation@ga.gov.au <mailto:earth.observation@ga.gov.au>`_
 
 The PDF form will ask for:
 
