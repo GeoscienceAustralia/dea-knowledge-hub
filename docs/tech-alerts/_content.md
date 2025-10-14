@@ -1,12 +1,17 @@
 % See the DEA Tech Alerts documentation:
 % https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/tech_alerts_changelog.html
 
-## 14 Oct 2025: DEA Sandbox access update  
+## 14 Oct 2025: DEA Sandbox access update
 
 The outcome of the Digital Earth Australia (DEA) technical review into the DEA Sandbox identified some improvements to our service. The availability of the DEA Sandbox has changed to support government and education users. We have also improved security by implementing multifactor authentication on user accounts.
 
 * [Users who are permitted](/guides/setup/Sandbox/sandbox/#eligibility) a DEA Sandbox account are changing.
 * The [registration process](/guides/setup/Sandbox/sandbox/#register) is changing.
+* All users requesting an account will need to provide the details of a sponsor for the account. The sponsor will be asked to acknowledge the [DEA Sandbox disclaimer](/guides/setup/Sandbox/sandbox/#dea-sandbox-disclaimer) alongside the user.
+
+**What if you aren't eligible for DEA Sandbox access?** &mdash; All users will continue to have access to other DEA data and products, including [DEA Maps](/guides/setup/dea_maps/), and [DEA Explorer](/guides/setup/explorer_guide/). Users can also refer to user guides on how to [download DEA data](/guides/about/faq/), or [access DEA web services](/guides/setup/gis/README/). We are improving the ways that DEA data can be accessed by users, providing a [STAC endpoint for our raster datasets](/guides/setup/gis/stac/), and newly released [continental COG mosaics](/guides/continental-cogs-geotiff-mosaics/) to improve usability of national-scale webservices. The DEA notebooks provided in the DEA Sandbox are still available to users via the [DEA Knowledge Hub](/dea-notebooks/).
+
+**What do you need to do?** &mdash; If you are a current DEA Sandbox user, next time you log into the Sandbox you will be required to reset your password by clicking on the “Forgot your password?” link below the sign in box. If you are a new user wanting to sign up and meet the eligibility criteria, you can sign up by clicking the blue “login or sign up” button on the DEA Sandbox landing page and [follow the sign up process](/guides/setup/Sandbox/sandbox/).
 
 [View the Tech Alert](https://communication.ga.gov.au/DEA-Sandbox-access-update)
 

@@ -183,6 +183,7 @@ You can also join our `Open Data Cube Discord chat`_ for help setting up or usin
 .. _Open Data Cube Stack Exchange: https://gis.stackexchange.com/questions/tagged/open-data-cube
 .. _Open Data Cube Discord chat: https://discord.com/invite/4hhBQVas5U
 
+.. _dea-sandbox-disclaimer:
 .. _sandbox-disclaimer:
 
 DEA Sandbox disclaimer
