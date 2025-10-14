@@ -28,7 +28,7 @@ Industry who are working directly with Australian government on government-direc
 Account sponsorship
 ~~~~~~~~~~~~~~~~~~~
 
-All users requesting an account will need to provide the details of a sponsor for the account. The sponsor information is collected to verify identity, and as a secondary point of contact for the account. The sponsor will be asked to acknowledge the :any:`DEA Sandbox disclaimer <sandbox-disclaimer>` alongside the user. The sponsor: 
+All users requesting an account will need to provide the details of a sponsor for the account. The sponsor information is collected to verify identity, and as a secondary point of contact for the account. The sponsor will be asked to acknowledge the :any:`DEA Sandbox disclaimer <sandbox-disclaimer>` alongside the user.
 
 The sponsor: 
 
