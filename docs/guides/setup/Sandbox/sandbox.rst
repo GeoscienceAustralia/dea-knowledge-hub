@@ -21,7 +21,7 @@ The Sandbox is available to eligible users, is free to use, and provides you wit
 Eligibility
 -----------
 
-The DEA Sandbox service is available to Australian government and education users who have recognised Australian government or education institute email addresses (`.gov.au` or `.edu.au` or equivalent).  
+The DEA Sandbox service is available to Australian government and education users who have recognised Australian government or education institute email addresses (``.gov.au`` or ``.edu.au`` or equivalent).  
 
 Industry who are working directly with Australian government on government-directed outcomes will be able to put forward their use-case application for consideration. In these cases, a government sponsor needs to be provided.  
 
@@ -78,7 +78,7 @@ The PDF form will ask for:
 * How does the DEA Sandbox contribute to the outcomes of your work? 
 * Who (if anyone) are you collaborating with at Geoscience Australia? 
 * Your sponsor’s information (name, title, affiliation, email and phone number) 
-* Both yourself and your sponsor to agree to the :any:`DEA Sandbox disclaimer <sandbox-disclaimer>` and `Privacy Policy <https://www.ga.gov.au/privacy>` 
+* Both yourself and your sponsor to agree to the :any:`DEA Sandbox disclaimer <sandbox-disclaimer>` and `Privacy Policy <https://www.ga.gov.au/privacy>`_
 
 Your DEA Sandbox account will be “pending” until the PDF form is received and processed by the DEA team. Once your request has been assessed, we will contact you to let you know your account is active and ready to be utilised.  
 
