@@ -1,6 +1,6 @@
 :::{dropdown} How to view the data in a web map
 
-To view and access the data interactively, start by exploring [DEA Fuel Moisture Content on DEA Maps](https://maps.dea.ga.gov.au/).
+To view and access the data interactively, start by exploring [DEA Fuel Moisture Content on DEA Maps](https://maps.dea.ga.gov.au/story/DEAFuelMoistureContent).
 
 Or, you can manually add the DEA Fuel Moisture Content layer to DEA Maps:
 
