@@ -2,12 +2,16 @@ title: Sea, Ocean, and Coast
 description: Explore Australia's marine and coastal environments, including dynamic coastlines and the intertidal zone.
 
 cards:
+  - name: DEA Coastal Ecosystem Mapping
+    link: /data/product/dea-coastal-ecosystem-mapping/
+    image: /_files/dea-intertidal/DEAIntertidal_prettypic_Elevation_ShoalPointQLD_XS_Size.png # Placeholder
   - name: DEA Coastlines
     link: /data/product/dea-coastlines/
     image: /_files/cmi/thumbnail_vertical.png
-  - name: DEA Tidal Composites
-    link: /data/product/dea-tidal-composites/
-    image: /_files/dea-tidal-composites/DEA_Tidal_Composite_Low_True-colour_2022_Montgomery-Reef_WA_cropped.png
   - name: DEA Intertidal
     link: /data/product/dea-intertidal/
     image: /_files/dea-intertidal/DEAIntertidal_prettypic_Elevation_ShoalPointQLD_XS_Size.png
+  - name: DEA Tidal Composites
+    link: /data/product/dea-tidal-composites/
+    image: /_files/dea-tidal-composites/DEA_Tidal_Composite_Low_True-colour_2022_Montgomery-Reef_WA_cropped.png
+
