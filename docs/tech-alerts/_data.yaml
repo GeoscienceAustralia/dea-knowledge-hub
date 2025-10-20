@@ -6,7 +6,10 @@ meta_description: null
 quick_links_custom: null
 
 system_status_notifications:
-  - description: "US Government Shutdown Impact: Geoscience Australia’s Digital Earth not currently experiencing any disruption to services"
-    severity: 3
+  - description: "Landsat production currently impacted by outage"
+    severity: 2
     status_custom: null
+  # - description: "US Government Shutdown Impact: Geoscience Australia’s Digital Earth not currently experiencing any disruption to services"
+  #   severity: 3
+  #   status_custom: null
 

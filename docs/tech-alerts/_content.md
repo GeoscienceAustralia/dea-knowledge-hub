@@ -1,6 +1,19 @@
 % See the DEA Tech Alerts documentation:
 % https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/tech_alerts_changelog.html
 
+## 20 Oct 2025: Landsat production currently impacted by outage
+
+Landsat data collected by Landsat 9 since 17 October is unavailable. Landsat 8 higher quality data is also experiencing an outage; however, access to Landsat 8 near real-time data remains operational.  
+
+Digital Earth Australia products are currently impacted by this outage: 
+
+* [Landsat 9 Analysis Ready Data](/data/category/landsat-9-analysis-ready-data/)
+* [DEA Water Observations (Landsat)](/data/product/dea-water-observations-landsat/)
+* [DEA Fractional Cover (Landsat)](/data/product/dea-fractional-cover-landsat/)
+* [DEA Waterbodies (Landsat)](/data/product/dea-waterbodies-landsat/)
+
+Geoscience Australia will continue to monitor data availability from the United States and update our products when new data becomes available.
+
 ## 14 Oct 2025: New release &mdash; DEA Fuel Moisture Content
 
 Digital Earth Australia (DEA), in partnership with Australian National University’s (ANU) Bushfire Research Centre of Excellence, has launched a new DEA Fuel Moisture Content (FMC) product. This satellite-derived dataset provides high-resolution (20m) insights into the moisture content of live vegetation across the Australian continent. DEA FMC is a key indicator of vegetation flammability and supports identification of fire risk and is a valuable tool for planning mitigation activities. 
