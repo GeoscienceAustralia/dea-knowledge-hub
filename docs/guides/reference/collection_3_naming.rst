@@ -79,48 +79,25 @@ ga_s2_fmc_3_v1
 ga_s2_fmc_3_v2 
 ga_s2_fmc_3_v3 
 
+Path, Dataset versioning and naming
+-----------------------------------
+
+Dataset versioning will be included in the base part of the filename only, 
+providing explicit clarity about its makeup, enabling a datafile to be 
+standalone and self-describing. For example: 
+• ga_s2_fmc_3_v1/55/HEC/2024/12/07/20241207T011213/ga_s2_fmc_3_v1-0-0_55HEC_2024-12-07_final_fmc.tif 
+• ga_s2_fmc_3_v1 science data product name 
+• 55/HEC spatial identifier (x then y) 
+• 2024-12-07 acquisition date 
+• 20241207T011213 datatake sensing start time 
+• 0-0 dataset version identifier 
+
+The dataset versioning identifier permits appending to an existing product when 
+there’s a minor or patch increment due to an update in the algorithmic 
+methodology and/or the compute environment. 
 
 
 
-Filename Examples
------------------
-
-Landsat ARD
-^^^^^^^^^^^
-|ard_ls_image|
-
-Sentinel-2 ARD
-^^^^^^^^^^^^^^
-|ard_s2_image|
-
-Landsat Fractional Cover
-^^^^^^^^^^^^^^^^^^^^^^^^
-|fc_ls_image|
-
-Sentinel-2 Water Observations
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-|wo_s2_image|
-
-Landsat Geomedian Summary
-^^^^^^^^^^^^^^^^^^^^^^^^^
-|summary_image|
-
-ODC Product Examples
---------------------
-
-Landsat ARD ODC Product
-^^^^^^^^^^^^^^^^^^^^^^^
-|odc_ard_image|
-
-Landsat Fractional Cover ODC Product
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-|odc_fc_image|
-
-
-Versioning
-----------
-
-Products use the 'Semantic Versioning' format: Major.Minor.Patch. E.g. ``2.1.0``. The 'Major' number is incremented when there are incompatible changes (non-backward-compatible changes); the 'minor' number is incremented when there are backward-compatible changes; and, the 'Patch' number is incremented for backward-compatible bug fixes.
 
 References
 ----------
@@ -131,10 +108,4 @@ References
    System <https://en.wikipedia.org/wiki/Military_Grid_Reference_System>`__
 -  `DEA Summary Product Grid (Collection 3) </guides/reference/collection_3_summary_grid/>`__
 
-.. |ard_ls_image| image:: /_files/reference/ARD_Landsat_Filename.svg
-.. |ard_s2_image| image:: /_files/reference/ARD_S-2_Filename.svg
-.. |fc_ls_image| image:: /_files/reference/Landsat_Fractional_Cover.svg
-.. |wo_s2_image| image:: /_files/reference/S-2_Water_Observations.svg
-.. |summary_image| image:: /_files/reference/Derivative_Summary_Product.svg
-.. |odc_ard_image| image:: /_files/reference/ODC_Product_ID_LS_ARD.svg
-.. |odc_fc_image| image:: /_files/reference/ODC_Product_ID_LS_FC.svg
+
