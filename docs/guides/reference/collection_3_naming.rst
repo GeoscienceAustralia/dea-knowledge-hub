@@ -17,6 +17,24 @@ sourced from a growing number of different satellite missions. The DEA Naming
 Conventions aim to make naming of data collections consistent across science 
 data products and platforms. 
 
+Diffterent types of Science Data Products
+-----------------------------------------
+
+Depending on the type of science data product, or from which satellite mission 
+the data was sourced, science data products published by DEA come in three 
+principle forms: 
+
+- Baseline Analysis Ready Data (ARD) or surface reflectance. This can use the 
+World Reference System (WRS-2) as its spatial reference if sourced from 
+Landsat, or the Military Grid Reference System (MGRS) if sourced from 
+Sentinel-2. 
+- Derivative (of ARD) data that has a one-to-one correspondence of pixels and 
+datasets to its parent ARD. This can use WRS-2 as its spatial reference if 
+sourced from Landsat, or MGRS if sourced from Sentinel-2. 
+- Derivative summary data, or a summary of a time period (monthly, seasonal, 
+calendar year, financial year, all of available time). These will use the 
+Collection 3 grid specification for its spatial reference. 
+
 Naming components
 -----------------
 DEA product names include the following components:
@@ -52,24 +70,6 @@ DEA product names include the following components:
   of Landsat 8's green band.
 - file extension - suffix of file to indicate format, in most cases this will be
   .tif for cloud optimized geotiff.
-
-Different types of products
----------------------------
-
-Depending on the type of digital product, or from which satellite 
-mission the data was sourced, products published by DEA come in three 
-principle forms:
-
-- Analysis Ready Data (ARD) or surface reflectance. This can use 
-  the World Reference System (WRS-2) as its spatial reference if sourced 
-  from Landsat, or the Military Grid Reference System (MGRS) if sourced 
-  from Sentinel-2.
-- Derivative (of ARD) data that has a one-to-one corresponence of 
-  pixels and datasets to its parent ARD. This can use WRS-2 as its
-  spatial reference if sourced from Landsat, or MGRS if sourced from Sentinel-2.
-- Derivative summary data, or a summary of a time period (monthly,
-  seasonal, calendar year, financial year, all of available time). These 
-  will use the Collection 3 grid specification for its spatial reference.
 
 Filename Examples
 -----------------
