@@ -8,15 +8,14 @@ DEA Naming Conventions (Collection 3)
 Introduction
 ------------
 
-This page explains the naming convention of files/datasets found within 
-DEA's digital products as well as the Open Data Cube (ODC) product naming
-convention.
+This page explains the naming convention of files/datasets found within Digital 
+Earth Australia's (DEA)science data products as well as the 
+Open Data Cube (ODC) science data product naming convention. 
 
-Digital Earth Australia (DEA) maintains and distributes collections of
-satellite-derived information sourced from a growing number of different
-satellite missions.
-The DEA Naming Conventions aim to make naming of data collections consistent 
-across products and platforms.
+DEA maintains and distributes collections of satellite-derived information 
+sourced from a growing number of different satellite missions. The DEA Naming 
+Conventions aim to make naming of data collections consistent across science 
+data products and platforms. 
 
 Naming components
 -----------------
