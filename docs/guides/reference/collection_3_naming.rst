@@ -96,7 +96,33 @@ The dataset versioning identifier permits appending to an existing product when
 there’s a minor or patch increment due to an update in the algorithmic 
 methodology and/or the compute environment. 
 
+Science Data Products requiring a one-to-one relationship with data acquisitions
+--------------------------------------------------------------------------------
 
+An additional directory layer for including the DATATAKE_SENSING_START_TIME 
+that enables more than one acquisition over a given region in a single solar 
+day to be stored without collision. 
+
+For future roll-outs, this DATATAKE_SENSING_START_TIME, or BURST_TIME for the 
+SAR case, will also include this information in the base filename itself. 
+
+Science Data Products not requiring a one-to-one relationship with data acquisitions
+------------------------------------------------------------------------------------ 
+
+Updates (whether that be compute environment, algorithmic, methodology etc) to 
+a science data product that result in a significant difference given the same 
+input, will result in a new science data product. This is considered a breaking 
+change, and a bump in the major version identifier that is also carried across 
+into the new science data product name. 
+
+This enables concurrent access for any users/systems requiring use of the 
+previous instance of the science data product. 
+
+If the updated components of the algorithm and/or the compute environment 
+produce an equivalent dataset (within tolerance) given the same input, there 
+is no need to produce a new science data product, and appending to the existing 
+data product can take place, albeit with a bump in the minor or patch 
+increments of the dataset versioning. 
 
 
 References
