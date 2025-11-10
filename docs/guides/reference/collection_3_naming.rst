@@ -35,6 +35,27 @@ sourced from Landsat, or MGRS if sourced from Sentinel-2.
 calendar year, financial year, all of available time). These will use the 
 Collection 3 grid specification for its spatial reference. 
 
+Science Data Product naming principles
+--------------------------------------
+
+Science data product names meet the following principles: 
+
+1. Unique names/identifiers. 
+2. Human readable.
+3. Ease of navigation to enable spatio-temporal navigation and minimise number 
+of directory levels.
+4. Consistency terminology between different representations of the data.
+5. Concise directory structure that provides logical context for each step.
+6. Informative base filenames that provide what, when and where.
+7. No redundant information in the filename.
+8. Provides distinction between other providers of similar data.
+9. Provides distinction between different instances of data (i.e. maturity levels. 
+10. Provides distinction between different versions of a science data product.
+11. Correct level of science data product abstraction.
+12. Understand limitations on filesystems.
+13. Works consistently between different platforms.
+14. Directories must have less than 1000 items contained within.
+
 Naming components
 -----------------
 DEA product names include the following components:
