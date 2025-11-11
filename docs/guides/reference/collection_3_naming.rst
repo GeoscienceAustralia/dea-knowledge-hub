@@ -84,16 +84,19 @@ Path, Dataset versioning and naming
 
 Dataset versioning will be included in the base part of the filename only, 
 providing explicit clarity about its makeup, enabling a datafile to be 
-standalone and self-describing. For example: 
-• ga_s2_fmc_3_v1/55/HEC/2024/12/07/20241207T011213/ga_s2_fmc_3_v1-0-0_55HEC_2024-12-07_final_fmc.tif 
-• ga_s2_fmc_3_v1 science data product name 
-• 55/HEC spatial identifier (x then y) 
-• 2024-12-07 acquisition date 
-• 20241207T011213 datatake sensing start time 
-• 0-0 dataset version identifier 
+standalone and self-describing. 
+
+For example: 
+
+ga_s2_fmc_3_v1/55/HEC/2024/12/07/20241207T011213/ga_s2_fmc_3_v1-0-0_55HEC_2024-12-07_final_fmc.tif 
+- ga_s2_fmc_3_v1 science data product name 
+- 55/HEC spatial identifier (x then y) 
+- 2024-12-07 acquisition date 
+- 20241207T011213 datatake sensing start time 
+- 0-0 dataset version identifier 
 
 The dataset versioning identifier permits appending to an existing product when 
-there’s a minor or patch increment due to an update in the algorithmic 
+there is a minor or patch increment due to an update in the algorithmic 
 methodology and/or the compute environment. 
 
 Science Data Products requiring a one-to-one relationship with data acquisitions
@@ -124,6 +127,213 @@ is no need to produce a new science data product, and appending to the existing
 data product can take place, albeit with a bump in the minor or patch 
 increments of the dataset versioning. 
 
+.. list-table:: 
+   :widths: 25 25
+   :header-rows: 1
+
+   * - Organisation Code
+     - 
+   * - ga 
+     - Geoscience Australia
+   * - usgs	
+     - United States Geological Survey
+   * - nasa	
+     - National Aeronautics and Space Administration
+   * - esa	
+     - European Space Agency
+   * - noaa	
+     - National Oceanic and Atmospheric Administration
+   * - jaxa	
+     - Japan Aerospace Exploration Agency
+
+.. list-table:: 
+   :widths: 25 25
+   :header-rows: 1
+
+   * - Platform Code
+     - 
+   * - ls5
+     - Landsat 5
+   * - ls7
+     - Landsat 7
+   * - ls8
+     - Landsat 8
+   * - ls9
+     - Landsat 9
+   * - ls
+     - Landsat
+   * - s1a
+     - Sentinel 1A
+   * - s1b
+     - Sentinel 1B
+   * - s1
+     - Sentinel 1
+   * - s2a
+     - Sentinel 2A
+   * - s2b
+     - Sentinel 2B
+   * - s2
+     - Sentinel 2
+   * - s3a
+     - Sentinel 3A
+   * - s3b
+     - Sentinel 3B
+   * - s3
+     - Sentinel 3
+   * - hi8
+     - Himawari 8
+   * - ter
+     - Terra
+   * - aqu
+     - Aqua
+
+.. list-table:: 
+   :widths: 25 25
+   :header-rows: 1
+
+   * - Sensor Code
+     - 
+   * - m
+     - multispectral instrument (MSI)
+   * - e
+     - Enhanced Thematic Mapper Plus (ETM+)
+   * - t
+     - Thermal Infrared Sensor (TIRS)
+   * - c
+     - Combined Operational Land Imager and the Thermal Infrared Sensor
+   * - o
+     - Operational Land Imager (OLI)
+   * - t
+     - Thematic Mapper (TM)
+
+.. list-table:: 
+   :widths: 25 25
+   :header-rows: 1
+
+   * - Product Code
+     - 
+   * - ard
+     - Analysis Ready Data
+   * - nbar
+     - Nadir-corrected BRDF Adjusted Reflectance
+   * - nbart
+     - Nadir-corrected BRDF Adjusted Reflectance - Terrain   corrected
+   * - oa
+     - Observation attributes
+   * - level1
+     - Level 1
+   * - level2
+     - Level 2
+   * - wofs
+     - Water Observations from Space
+   * - wofsstats
+     - Water Observations from Space statistics
+   * - nidem
+     - National Intertidal Digital Elevation Model
+   * - item
+     - Intertidal Extents Model
+   * - hltc
+     - High and Low Tide Composites
+   * - fc
+     - Fractional Cover
+   * - geomed
+     - Geomedian
+   * - dlcd
+     - Dynamic Land Cover Dataset
+   * - ba
+     - Burnt Area
+   * - tidal composites
+     - Composites
+   * - tc
+     - Tassled Cap
+   * - mangrove
+     - Mangroves
+   * - fmc
+     - Fuel Moisture Content
+   * - wit
+     - Wetlands Insight Tool
+   * - clum
+     - Catchment Scale Land Use of Australia
+
+.. list-table:: 
+   :widths: 25 25
+   :header-rows: 1
+
+   * - Maturity Code
+     - 
+   * - nrt
+     - Near Real Time
+   * - interim
+     - Interim
+   * - final
+     - Final
+
+.. list-table:: 
+   :widths: 25 25
+   :header-rows: 1
+
+   * - Period Designation Code
+     - 
+   * - ann	
+     - Annual 
+   * - mth	
+     - Monthly
+   * - apr-nov
+     - April to November
+   * - nov-mar
+     - November to March
+   * - myear
+     - Multi year
+   * - cyear
+     - Calendar year
+   * - yyyy-P1Y
+     - 1 year period
+
+.. list-table:: 
+   :widths: 25 25
+   :header-rows: 1
+
+   * - Summary Code
+     - 
+   * - pc
+     - Percentile
+   * - gm
+     - Geomedian
+   * - fq
+     - Frequency
+   * - image
+     - Image
+   * - count
+     - Count
+   * - extent
+     - Extent
+   * - be
+     - Barest earth
+   * - filter
+     - Filtered summary
+   * - conf
+     - Confidence
+
+.. list-table:: 
+   :widths: 25 25
+   :header-rows: 1
+
+   * - Statistic Code
+     - 
+   * - c
+     - count
+   * - pc
+     - percentiles
+   * - fq
+     - frequency
+   * - cf
+     - confidence
+   * - gm
+     - geomedian
+   * - mad
+     - Median Absolute Deviation
+   * - class
+     - classification
 
 References
 ----------
