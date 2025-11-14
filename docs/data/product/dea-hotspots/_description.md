@@ -12,6 +12,14 @@ Bushfires are a natural part of the Australian landscape. Many of our native flo
 
 It is important we are able to accurately map and monitor fires on a near real-time basis. This information allows emergency services to control bushfires and develop risk assessments and disaster relief plans.
 
+## Use constraints
+
+**DEA Hotspots is not to be used for safety of life decisions.**
+
+The information displayed on DEA Hotspots (the “Service”) is for general informational purposes only, and is not intended to provide any commercial, financial, or legal advice.
+
+Please see the Geoscience Australia website for the full [disclaimer notice](https://www.ga.gov.au/copyright).
+
 ## What this product offers
 
 Digital Earth Australia (DEA) Hotspots is a national bushfire monitoring system that provides timely information about hotspots to emergency service managers and critical infrastructure providers across Australia. Updated with new information every 10 minutes, the mapping system uses satellite sensors to detect areas producing high levels of infrared radiation (called Hotspots) to allow users to identify potential fire locations with a possible risk to communities and property.
