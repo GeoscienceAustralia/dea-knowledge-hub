@@ -73,13 +73,13 @@ For further information how these Probability layers can be interpreted and used
 
 [Placeholder Figure B]
 
-### Quality Assurance Layers (todo: links and figs)
+### Quality Assurance Layers
 Two quality assurance layers (Figure C) are included in the DEA CEM product suite: 
-#### Clear count (*qa-count-clear*)
+#### Clear count (*qa-count-clear*) (todo: links and figs)
 
 A layer showing the distribution of clear and valid satellite observations at each Sentinel-2 (link to S2 ARD) pixel during the analysis period. Artefacts that can invalidate pixels include cloud cover/shadow and low geometric accuracy. A pixel only proceeds into the DEA Coastal Ecosystem Map workflow if it has more than 10 valid observations. The qa-count-clear layer shows that the maximum number of clear observations for any single pixel was 130 +/-1 in both years of the dataset.
 
-#### Coastal connectivity (*qa-coastal-connectivity*)
+#### Coastal connectivity (*qa-coastal-connectivity*) (todo: links and figs)
 An accumulated cost-distance connectivity layer used as a covariate layer within the modelling process, and as an additional contextual editing layer for the Saltmarsh class. Values represent the cumulative elevation above Highest Astronomical Tide that must be traversed along the shortest path from tidally influenced coastal waters and mangroves. Lower values indicate likely coastal pixels, reflecting both distance inland and topography. The values of the coastal connectivity layer are dimensionless.
 
 [Placeholder: Figure C]
@@ -226,15 +226,19 @@ Covariate data stacks were generated using a combination of Sentinel-2 Analysis 
 | Coastal Connectivity | Cost-distance |  | 1 |
 |Total Covariates |  |  | 131 |
 
-#### Coastal Connectivity (todo: links)
-The Coastal connectivity layer (also published as a QA product layer) is designed as an accumulated cost-distance dataset to indicate likely coastal pixels. This is achieved by determining the cumulative elevation above Highest Astronomical Tide that must be traversed along the shortest path from tidally influenced coastal waters and mangroves at each pixel location (Figure G), using the following datasets:
+#### Coastal Connectivity
+The Coastal connectivity layer (also published as a [QA product layer](#quality-assurance-layers)) is designed as an accumulated cost-distance dataset to indicate likely coastal pixels. This is achieved by determining the cumulative elevation above Highest Astronomical Tide that must be traversed along the shortest path from tidally influenced coastal waters and mangroves at each pixel location (Fig. 7), using the following datasets:
 
 - Shuttle Radar Topography Mission (SRTM) Digital Elevation Model Version 1 (Gallant et al., 2011)
-- A Highest Astronomical Tide Dataset developed at CSIRO (https://data.csiro.au/collection/csiro%3A61319v1)
+- A Highest Astronomical Tide Dataset developed at CSIRO [(Branson, 2023)](https://data.csiro.au/collection/csiro%3A61319v1)
 - The extent of the DEA Mangroves product
 Coastal connectivity is used here as a covariate layer within the modelling process, and as an additional contextual editing layer for the Saltmarsh class. 
 
-[Placeholder: Figure G (new fig demonstrating coastal connectivity)]
+:::{figure} /_files/dea-coastalecosystems/connectivity Mallacoota.png
+
+**Figure 7**  *a*) Mallacoota, Victoria; *b*) Highly connected areas have low connectivity values e.g. low elevations, connected to tidally influenced areas, have low connectivity values(light grey). Elevated areas are penalised with high connectivity values (dark grey), even if located close to tidally influenced areas.
+
+:::
 
 ### 3. Machine Learning
 #### Training Point Attribution
@@ -295,3 +299,4 @@ The following rules and processes were applied, with justifications or links to 
 
 ## References (todo)
 
+Branson, Paul (2023): Coastal carbon - Australia's blue forest future - Water Levels. v1. CSIRO. Data Collection. https://doi.org/10.25919/6672-jx11
