@@ -242,16 +242,16 @@ Coastal connectivity is used here as a covariate layer within the modelling proc
 
 ### 3. Machine Learning
 #### Training Point Attribution
-The full expanded Training Point dataset was attributed with covariate data from both the 2021 and 2022 modelling year covariate stacks. Training points where covariates were derived from <10 clear observations in either modelling year were removed from the relevant modelling year dataset, along with training points for the Sub-tidal Seagrass classification (see Future Work).
+The full expanded Training Point dataset was attributed with covariate data from both the 2021 and 2022 modelling year covariate stacks. Training points where covariates were derived from <10 clear observations in either modelling year were removed from the relevant modelling year dataset, along with training points for the Sub-tidal Seagrass classification (see [Future Work](./?tab=quality)).
 
 Both of these attributed annual Training Point datasets were then combined to form the final datasets for Model training.
 #### Model training (todo: links and expert review)
-The DEA Coastal Ecosystem Map workflow trains two random-forest classifiers for each of the seven modelled regions (link to scikitlearn Random Forest doco https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html, link to modelling regions) from the covariate-attributed stack of training data: 
+The DEA Coastal Ecosystem Map workflow trains two [random-forest classifiers](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html) for each of the seven [modelled regions](#regional-modelling) from the covariate-attributed stack of training data: 
 
-- a multi-class ecosystem model (mangrove, saltmarsh and salt flat) and 
-- an Intertidal model (intertidal and intertidal-seagrass). 
+- a multi-class ecosystem model (mangrove, saltmarsh and salt flat) and;
+- an intertidal model (intertidal and intertidal-seagrass). 
 
-The multi-class ecosystem model utilized all data in the training data datasets while the Intertidal model were developed using only training data points located within the DEA Intertidal Extents high confidence intertidal region (link). Functionally, this meant that within the bounded extents of the Intertidal modelled region, any training points included in the model that were not defined as Intertidal Seagrass were considered Intertidal. For a discussion on the implications of this aspect of the model classification see Intertidal Caveat section
+The multi-class ecosystem model utilized all data in the training data datasets while the Intertidal model were developed using only training data points located within the [DEA Intertidal Extents high confidence intertidal region](https://knowledge.dea.ga.gov.au/data/product/dea-intertidal/#core-product-layers). Functionally, this meant that within the bounded extents of the Intertidal modelled region, any training points included in the model that were not defined as Intertidal Seagrass were considered Intertidal. For a discussion on the implications of this aspect of the model classification see Intertidal [Caveat](./?tab=quality) section.
 
 Multi-class and binary random-forest models were fit for each region using:
 
@@ -260,19 +260,23 @@ Multi-class and binary random-forest models were fit for each region using:
 - Minimum samples leaf of 1
 - Maximum (tree? Branch?) depth of 10
 
-Each model was first trained and evaluated using a k-fold cross-validation train/test split of the training data (https://scikit-learn.org/stable/modules/cross_validation.html#computing-cross-validated-metrics) to report accuracy statistics and refine optimal model parameters. Using a 5-fold cross-validation, the overall mean of the regional ecosystem model accuracy-means was 0.95 with a mean standard deviation of 0.01. Optimized model parameters were then used to retrain the final random-forest classifiers using the full training data set for the multi-class model and the intertidal masked training data set for the seagrass model.
-The combined 2021 and 2022 stacks of covariate-trained training data ensure the classifier models are suitable for prediction into both years. Common covariates that exhibited a top-10 feature importance for the ecosystem models include the NDVI and MNDWI percentiles as well as the coastal-connectivity (Figure H).
+Each model was first trained and evaluated using a [k-fold cross-validation train/test split](https://scikit-learn.org/stable/modules/cross_validation.html#computing-cross-validated-metrics) of the training data  to report accuracy statistics and refine optimal model parameters. Overall model accuracy statistics are reported in the [Quality](./?tab=quality) tab. Optimized model parameters were then used to retrain the final random-forest classifiers using the full training data set for the multi-class model and the intertidal masked training data set for the seagrass model.
+The combined 2021 and 2022 stacks of covariate-trained training data ensure the classifier models are suitable for prediction into both years. Common covariates that exhibited a top-10 feature importance for the ecosystem models include the NDVI and MNDWI percentiles as well as the coastal-connectivity (Fig. 8).
 
-[Placeholder: Figure H]
+:::{figure} /_files/dea-coastalecosystems/ML Feature Importance.png
 
-#### Ecosystem prediction (todo: links)
+**Figure 8** shows the commonality between covariates that appear in the top 10 most important covariates for each of the seven regional ecosystem models. The y-axis represents the number of regional models where the covariate features in the top-10.
+
+:::
+
+#### Ecosystem prediction
 Coastal ecosystems were predicted into the Covariates stacks created for the CEM product extents for each modelling year.
 
 Initial predictions were made using the multi-class ecosystem model, generating interim probability layers for mangrove, saltmarsh and salt flat ecosystems. An interim classified ecosystem output layer is also generated to capture the highest probability ecosystem class predicted for each pixel by the model.
 
-The interim classified ecosystem output layer includes mangrove, saltmarsh and saltflat classes (See Interim Outputs, Figure B). Water and Terrestrial classes in this interim layer are then classified as NoData. 
+The interim classified ecosystem output layer includes mangrove, saltmarsh and saltflat classes ([Fig. 4](#workflow)). Water and Terrestrial classes in this interim layer are classified as `NoData`. 
 
-The Intertidal modelling extent is then set using the high confidence intertidal extent from the DEA Intertidal dataset. The Intertidal model is then used to predict Intertidal seagrass into the annual covariate stacks masked to this modelling extent. The output from this process is the interim Intertidal seagrass probability layer.
+The Intertidal modelling extent is then set using the high confidence intertidal extent from the [DEA Intertidal](https://knowledge.dea.ga.gov.au/data/product/dea-intertidal/#core-product-layers) dataset. The Intertidal model is then used to predict Intertidal seagrass into the annual covariate stacks masked to this modelling extent. The output from this process is the interim Intertidal seagrass probability layer.
 
 ### 4. Contextual editing
 The interim classified ecosystem layer defines classes based on the highest probability class for each pixel, which can result in a classification based on relatively low probability values were a pixel is modelled as a likely mixed ecosystem. Combined with the inherent uncertainty and resulting misclassification when applying a ML mapping methodology at a continental scale, this meant that a range of rulesets and post-processing operations were applied, collectively termed ‘contextual editing’, to deliver the final Classification CEM product layer.
