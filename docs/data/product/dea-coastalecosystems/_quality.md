@@ -39,7 +39,7 @@ Comprehensive methodology notes are documented in [Validation README](validation
 | 7 | 0.947 [0.889, 0.981] |
 
 ### Regional summary per region (combined years)
-#### Region 1 [_state_]
+#### Region 1 [North West]
 | Class | User's Accuracy | Producer's Accuracy |
 |-------|-----------------|---------------------|
 | Tidal flat | 0.877 [0.671, 0.983] | 0.945 [0.861, 0.985] |
@@ -47,7 +47,7 @@ Comprehensive methodology notes are documented in [Validation README](validation
 | Saltmarsh | 0.900 [0.523, 0.991] | 0.635 [0.373, 0.823] |
 | Seagrass | 0.000 [0.000, 0.211] | 0.000 [0.000, 0.015] |
 
-#### Region 2 [_state_]
+#### Region 2 [North East]
 | Class | User's Accuracy | Producer's Accuracy |
 |-------|-----------------|---------------------|
 | Tidal flat | 0.777 [0.637, 0.904] | 0.927 [0.832, 0.980] |
@@ -55,7 +55,7 @@ Comprehensive methodology notes are documented in [Validation README](validation
 | Saltmarsh | 0.803 [0.551, 0.945] | 0.571 [0.408, 0.772] |
 | Seagrass | 0.881 [0.731, 0.973] | 0.651 [0.423, 0.826] |
 
-#### Region 3 [_state_]
+#### Region 3 [Gulf of Carpentaria]
 | Class | User's Accuracy | Producer's Accuracy |
 |-------|-----------------|---------------------|
 | Tidal flat | 0.611 [0.387, 0.827] | 0.864 [0.649, 0.972] |
@@ -63,7 +63,7 @@ Comprehensive methodology notes are documented in [Validation README](validation
 | Saltmarsh | 0.895 [0.416, 0.983] | 0.766 [0.580, 0.907] |
 | Seagrass | 0.891 [0.691, 0.981] | 0.676 [0.311, 0.887] |
 
-#### Region 4 [_state_]
+#### Region 4 [West]
 | Class | User's Accuracy | Producer's Accuracy |
 |-------|-----------------|---------------------|
 | Tidal flat | 0.843 [0.675, 0.994] | 0.982 [0.932, 1.000] |
@@ -71,7 +71,7 @@ Comprehensive methodology notes are documented in [Validation README](validation
 | Saltmarsh | 0.865 [0.565, 0.988] | 0.800 [0.471, 0.949] |
 | Seagrass | 0.938 [0.163, 1.000] | 0.775 [0.148, 1.000] |
 
-#### Region 5 [_state_]
+#### Region 5 [South West]
 | Class | User's Accuracy | Producer's Accuracy |
 |-------|-----------------|---------------------|
 | Tidal flat | 0.852 [0.000, 1.000] | 0.886 [0.000, 1.000] |
@@ -79,7 +79,7 @@ Comprehensive methodology notes are documented in [Validation README](validation
 | Saltmarsh | 0.866 [0.618, 0.974] | 0.621 [0.257, 0.900] |
 | Seagrass | 0.863 [0.186, 1.000] | 0.895 [0.311, 1.000] |
 
-#### Region 6 [_state_]
+#### Region 6 [South East]
 | Class | User's Accuracy | Producer's Accuracy |
 |-------|-----------------|---------------------|
 | Tidal flat | 0.862 [0.709, 0.958] | 0.925 [0.775, 0.985] |
@@ -87,7 +87,7 @@ Comprehensive methodology notes are documented in [Validation README](validation
 | Saltmarsh | 0.919 [0.821, 0.969] | 0.782 [0.592, 0.911] |
 | Seagrass | 0.933 [0.848, 0.985] | 0.939 [0.853, 0.977] |
 
-#### Region 7 [_state_]
+#### Region 7 [Tasmania]
 | Class | User's Accuracy | Producer's Accuracy |
 |-------|-----------------|---------------------|
 | Tidal flat | 0.951 [0.781, 1.000] | 0.969 [0.674, 1.000] |

@@ -120,7 +120,8 @@ The dataset integrated occurrence records from four data sources:
 - Australia saltmarsh mapping (Navarro et. al, 2023)
 - Global intertidal change (Murray et. al, 2019; Murray et al., 2022)
 
-[Placeholder: Figure E]
+:::{figure} /_files/dea-coastalecosystems/Original_training_point_distribution.png
+**Figure 5** after Canto et al., 2023; Becker et al., 2023. 40,934 expert labelled point occurrences of coastal ecosystem types, distributed continentally around the Australian coastline.
 
 #### Ecosystem definitions
 The training data definitions for Australian coastal ecosystems (Table 1, Canto et al., 2023) were sourced from the Blue Carbon Method (CER 2022) and the International Union for Conservation of Nature Global Ecosystem Typology (Keith et al., 2022). 

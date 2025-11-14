@@ -57,3 +57,4 @@ bands_table:
     type: int16
     description: Accumulated cost-distance coastal connectivity, used to identify likely coastal pixels.   
 
+
