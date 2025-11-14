@@ -109,10 +109,14 @@ These components are discussed in further detail below. The validation process i
 :::{figure} /_files/dea-coastalecosystems/CEM_flowchart.png
 
 **Figure 4** Primary components and outputs of the DEA Coastal Ecosystem Map workflow
+:::
 
 ### 1. Training data
+
 #### Data curation
+
 [Continental training data](https://github.com/GeoscienceAustralia/dea-coastalecosystems/blob/main/data/training_data_input/MultEcosy_TData_v1_0.geojson), developed for [this work](https://github.com/GeoscienceAustralia/dea-coastalecosystems/blob/main/docs/publications/JCU_Coastal_Training_Data_Report_1_27012023_FR%20.pdf) (Canto et al., 2023), comprised a point-record training set of 40,934 Australian coastal ecosystem type occurrences (Fig. E). Development of this dataset was completed for use with multi-ecosystem classification models.
+
 The dataset integrated occurrence records from four data sources:
 
 - Australia coastal ecosystem mapping (Becker et. al, 2023)
@@ -123,6 +127,7 @@ The dataset integrated occurrence records from four data sources:
 :::{figure} /_files/dea-coastalecosystems/Original_training_point_distribution.png
 
 **Figure 5** after Canto et al., 2023; Becker et al., 2023. 40,934 expert labelled point occurrences of coastal ecosystem types, distributed continentally around the Australian coastline.
+:::
 
 #### Ecosystem definitions
 The training data definitions for Australian coastal ecosystems (Table 1, Canto et al., 2023) were sourced from the Blue Carbon Method (CER, 2022) and the International Union for Conservation of Nature Global Ecosystem Typology (Keith et al., 2022). 
