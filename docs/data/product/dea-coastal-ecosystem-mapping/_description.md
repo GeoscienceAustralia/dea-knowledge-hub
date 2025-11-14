@@ -13,11 +13,11 @@ This collaboration ensures the resulting maps are ecologically meaningful and co
 ## What this product offers
 The DEA Coastal Ecosystem Map product suite is designed to offer users a categorical classification of four intertidal coastal ecosystems, supported by probability layers for each of the individual ecosystems and selected quality assurance layers to support product interpretation.
 Key features of the product suite include:
--	Sentinel-2 10m resolution derived classified ecosystem maps for 2021 and 2022 defining dominant ecosystem extents of mangroves, saltmarsh, intertidal, and intertidal seagrass.
--	Probability layers for mapped ecosystems to enable user interpretation of mixed and transitional classes. 
--	QA/QC layers to provide confidence and assist in product interpretation.
--	Publication of ancillary layers used for masking and constraints in the mapping workflow.
--	Publication of the national training dataset, metadata, classification schema and acquisition protocol.
+- Sentinel-2 10m resolution derived classified ecosystem maps for 2021 and 2022 defining dominant ecosystem extents of mangroves, saltmarsh, intertidal, and intertidal seagrass.
+- Probability layers for mapped ecosystems to enable user interpretation of mixed and transitional classes. 
+- QA/QC layers to provide confidence and assist in product interpretation.
+- Publication of ancillary layers used for masking and constraints in the mapping workflow.
+- Publication of the national training dataset, metadata, classification schema and acquisition protocol.
 
 % ## Access constraints
 
@@ -25,11 +25,11 @@ Key features of the product suite include:
 
 ## Applications (still todo)
 
--	Accounts – shorter version of text below
--	SoE reporting
--	Complmenting periodic high resolution expert mapping
--	Intergration with other terrestrial and ocean data sets (see Future work)
--	Other?
+- Accounts – shorter version of text below
+- SoE reporting
+- Complmenting periodic high resolution expert mapping
+- Intergration with other terrestrial and ocean data sets (see Future work)
+- Other?
 
 ## Lineage (todo fix links)
 
@@ -53,10 +53,10 @@ Five core layers are included in The DEA Coastal Ecosystem Map: the classificati
 The primary layer of the DEA Coastal Ecosystem Map is a categorical classification of the extent of mangrove, saltmarsh, intertidal and intertidal seagrass coastal ecosystems (Figure A). The layer is built from thresholds of the ecosystem probability layers (link to below), and constrained, modified and masked with a range of ancillary datasets and QA/QC processes (See Contextual Editing).
 Product layers for each calendar year of the product time range are published with the following categorical class values:
 
--	Intertidal (2)
--	Mangrove (3)
--	Saltmarsh (4)
--	Intertidal Seagrass (5) 
+- Intertidal (2)
+- Mangrove (3)
+- Saltmarsh (4)
+- Intertidal Seagrass (5) 
 
 [Placeholder Figure A]
 
@@ -92,8 +92,8 @@ A standard DEA naming convention (link to KH user guide) has been adopted for DE
 `ga_s2_coastalecosystems_cyear_3_v1-0-0_AU_2021—P1Y_final_classification.tif`
 
 interpreted as `[Product ID]_[Layer specifics]` where:
--	Product ID = `[Geoscience Australia]_[Sentinel-2 dataset]_[Product Name]_[Temporal resolution-calendar year]_[Imagery collection]_[Major product version]`
--	Layer specifics = `[Product minor/patch version]_[Spatial resolution - Australia]_[Year]--[Frequency]_[Dataset maturity]_[Layer name].[filetype]`
+- Product ID = `[Geoscience Australia]_[Sentinel-2 dataset]_[Product Name]_[Temporal resolution-calendar year]_[Imagery collection]_[Major product version]`
+- Layer specifics = `[Product minor/patch version]_[Spatial resolution - Australia]_[Year]--[Frequency]_[Dataset maturity]_[Layer name].[filetype]`
 
 ## Processing steps
 
@@ -109,10 +109,10 @@ These components are discussed in further detail below. The validation process i
 Continental training data, developed for this work (Canto et al., 2023 https://github.com/GeoscienceAustralia/dea-coastalecosystems/blob/main/docs/publications/JCU_Coastal_Training_Data_Report_1_27012023_FR%20.pdf, https://github.com/GeoscienceAustralia/dea-coastalecosystems/blob/main/data/training_data_input/MultEcosy_TData_v1_0.geojson ),comprised a point-record training set of 40,934 Australian coastal ecosystem type occurrences (Fig. E). Development of this dataset was completed for use with multi-ecosystem classification models.
 The dataset integrated occurrence records from four data sources:
 
--	Australia coastal ecosystem mapping (Becker et. al, 2023)
--	Australia seagrass mapping (Navarro et. al, 2022)
--	Australia saltmarsh mapping (Navarro et. al, 2023)
--	Global intertidal change (Murray et. al, 2019; Murray et al., 2022)
+- Australia coastal ecosystem mapping (Becker et. al, 2023)
+- Australia seagrass mapping (Navarro et. al, 2022)
+- Australia saltmarsh mapping (Navarro et. al, 2023)
+- Global intertidal change (Murray et. al, 2019; Murray et al., 2022)
 
 [Placeholder: Figure E]
 
@@ -153,9 +153,9 @@ Covariate data stacks were generated using a combination of Sentinel-2 Analysis 
 #### Coastal Connectivity (todo: links)
 The Coastal connectivity layer (also published as a QA product layer) is designed as an accumulated cost-distance dataset to indicate likely coastal pixels. This is achieved by determining the cumulative elevation above Highest Astronomical Tide that must be traversed along the shortest path from tidally influenced coastal waters and mangroves at each pixel location (Figure G), using the following datasets:
 
--	Shuttle Radar Topography Mission (SRTM) Digital Elevation Model Version 1 (Gallant et al., 2011)
--	A Highest Astronomical Tide Dataset developed at CSIRO (https://data.csiro.au/collection/csiro%3A61319v1)
--	The extent of the DEA Mangroves product
+- Shuttle Radar Topography Mission (SRTM) Digital Elevation Model Version 1 (Gallant et al., 2011)
+- A Highest Astronomical Tide Dataset developed at CSIRO (https://data.csiro.au/collection/csiro%3A61319v1)
+- The extent of the DEA Mangroves product
 Coastal connectivity is used here as a covariate layer within the modelling process, and as an additional contextual editing layer for the Saltmarsh class. 
 
 [Placeholder: Figure G (new fig demonstrating coastal connectivity)]
@@ -168,17 +168,17 @@ Both of these attributed annual Training Point datasets were then combined to fo
 #### Model training (todo: links and expert review)
 The DEA Coastal Ecosystem Map workflow trains two random-forest classifiers for each of the seven modelled regions (link to scikitlearn Random Forest doco https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html, link to modelling regions) from the covariate-attributed stack of training data: 
 
--	a multi-class ecosystem model (mangrove, saltmarsh and salt flat) and 
--	an Intertidal model (intertidal and intertidal-seagrass). 
+- a multi-class ecosystem model (mangrove, saltmarsh and salt flat) and 
+- an Intertidal model (intertidal and intertidal-seagrass). 
 
 The multi-class ecosystem model utilized all data in the training data datasets while the Intertidal model were developed using only training data points located within the DEA Intertidal Extents high confidence intertidal region (link). Functionally, this meant that within the bounded extents of the Intertidal modelled region, any training points included in the model that were not defined as Intertidal Seagrass were considered Intertidal. For a discussion on the implications of this aspect of the model classification see Intertidal Caveat section
 
 Multi-class and binary random-forest models were fit for each region using:
 
--	800 estimators (trees?)
--	Minimum samples split of 2
--	Minimum samples leaf of 1
--	Maximum (tree? Branch?) depth of 10
+- 800 estimators (trees?)
+- Minimum samples split of 2
+- Minimum samples leaf of 1
+- Maximum (tree? Branch?) depth of 10
 
 Each model was first trained and evaluated using a k-fold cross-validation train/test split of the training data (https://scikit-learn.org/stable/modules/cross_validation.html#computing-cross-validated-metrics) to report accuracy statistics and refine optimal model parameters. Using a 5-fold cross-validation, the overall mean of the regional ecosystem model accuracy-means was 0.95 with a mean standard deviation of 0.01. Optimized model parameters were then used to retrain the final random-forest classifiers using the full training data set for the multi-class model and the intertidal masked training data set for the seagrass model.
 The combined 2021 and 2022 stacks of covariate-trained training data ensure the classifier models are suitable for prediction into both years. Common covariates that exhibited a top-10 feature importance for the ecosystem models include the NDVI and MNDWI percentiles as well as the coastal-connectivity (Figure H).
@@ -203,17 +203,17 @@ The following rules and processes were applied, with justifications or links to 
 
 #### Classifier rulesets
 
-1.	**Remove unused classes**: The ecosystem classification output layer was masked to remove all saltflat pixels (link to Caveats section in Quality tab). 
-2.	**Apply probability thresholds**: A probability threshold of 50% was applied to the Saltmarsh and Mangrove pixels within the interim ecosystem classification layer, with pixels of these classes with a probability below this threshold assigned as “nodata”. A 50% probability threshold was selected based on the alignment of the outputs with external mapping products, and the conservative consideration that 50% provides a clear majority vote by the ML models.
-3.	**Apply environmental corrections**: Saltmarsh pixels were masked to the observed coastal-connectivity range identified by the saltmarsh training data points. To exclude outliers, the saltmarsh connectivity mask was thresholded to the 99.5th percentile connectivity value for all region-combined saltmarsh points from the training data set. This choice was made to remove misclassifications of saltmarsh in regions considered unconnected to coastal regions (see Connectivity Layer). For further discussion on the implications of thresholding based on existing distribution of training data see Saltmarsh Connect Caveat
+1. **Remove unused classes**: The ecosystem classification output layer was masked to remove all saltflat pixels (link to Caveats section in Quality tab). 
+1. **Apply probability thresholds**: A probability threshold of 50% was applied to the Saltmarsh and Mangrove pixels within the interim ecosystem classification layer, with pixels of these classes with a probability below this threshold assigned as “nodata”. A 50% probability threshold was selected based on the alignment of the outputs with external mapping products, and the conservative consideration that 50% provides a clear majority vote by the ML models.
+1. **Apply environmental corrections**: Saltmarsh pixels were masked to the observed coastal-connectivity range identified by the saltmarsh training data points. To exclude outliers, the saltmarsh connectivity mask was thresholded to the 99.5th percentile connectivity value for all region-combined saltmarsh points from the training data set. This choice was made to remove misclassifications of saltmarsh in regions considered unconnected to coastal regions (see Connectivity Layer). For further discussion on the implications of thresholding based on existing distribution of training data see Saltmarsh Connect Caveat
 #### Classifier masking
-1.	**Apply mangrove mask**: Mangrove pixels that fell outside of the mangrove habitat layer, identified by Global Mangrove Watch (link to dataset) were removed. This habitat mask is widely used in Mangrove mapping studies (do we need a ref?) to define the ecologically suitable habitats that Mangrovesexisting and, and was used here to align our Mangrove mapping with these global approaches and minimize the false positives of Mangrove classification in not-suitable areas.
-2.	**Apply Intertidal seagrass probability threshold**: Within the defined Intertidal model extent the Intertidal seagrass probability layer was used to define the Intertidal seagrass classification at a probability of greater than or equal to 70 %. The 70 % threshold was selected as conservative value to account for the inter-annual variability of seagrass meadows (see Prob layer discussion)
-3.	**Apply manual mask**: A manual masking process was applied to the Classification layer, based on expert identified misclassifications in the layer (including roads, urban areas, terrain shadow, data noise). For full traceability this polygon masking layer is provided here. (link to dataset on Github??)
-4.	**Apply land use mask**: Industrial, urban or road areas as identified in the Australian Catchment Scale Land Use and Management dataset (ACLUM) (link to dataset) were removed.
-5.	**Remove and replace isolated pixel groups**: To reduce pixel based noise in the data, the classification layer was sieved to remove and replace isolated pixels in groups of 9 or less with the dominant surrounding class type.
+1. **Apply mangrove mask**: Mangrove pixels that fell outside of the mangrove habitat layer, identified by Global Mangrove Watch (link to dataset) were removed. This habitat mask is widely used in Mangrove mapping studies (do we need a ref?) to define the ecologically suitable habitats that Mangrovesexisting and, and was used here to align our Mangrove mapping with these global approaches and minimize the false positives of Mangrove classification in not-suitable areas.
+1. **Apply Intertidal seagrass probability threshold**: Within the defined Intertidal model extent the Intertidal seagrass probability layer was used to define the Intertidal seagrass classification at a probability of greater than or equal to 70 %. The 70 % threshold was selected as conservative value to account for the inter-annual variability of seagrass meadows (see Prob layer discussion)
+1. **Apply manual mask**: A manual masking process was applied to the Classification layer, based on expert identified misclassifications in the layer (including roads, urban areas, terrain shadow, data noise). For full traceability this polygon masking layer is provided here. (link to dataset on Github??)
+1. **Apply land use mask**: Industrial, urban or road areas as identified in the Australian Catchment Scale Land Use and Management dataset (ACLUM) (link to dataset) were removed.
+1. **Remove and replace isolated pixel groups**: To reduce pixel based noise in the data, the classification layer was sieved to remove and replace isolated pixels in groups of 9 or less with the dominant surrounding class type.
 #### Probability masking
-1.	**Apply probability threshold**: Pixels with values of less than 20 % were removed from the Mangrove, Saltmarsh and Saltflat probability layers to remove very low confidence pixels and noise from the dataset to improve interpretability.
+1. **Apply probability threshold**: Pixels with values of less than 20 % were removed from the Mangrove, Saltmarsh and Saltflat probability layers to remove very low confidence pixels and noise from the dataset to improve interpretability.
 
 
 ## Software (todo)
