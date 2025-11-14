@@ -4,66 +4,81 @@
 
 bands_footnote: A footnote to display under the bands table.
 
-bands_table:
-  - name: classification
-    type: uint8
-    units: Class
-    resolution: 10 m
-    nodata: 255
-    #aliases: [example_alias_1, example_alias_2]
-    description: A high confidence categorical classifier of coastal ecosystem types. Classes: 2 = intertidal, 3= mangrove, 4= saltmarsh, 5= intertidal seagrass 
-  - name: mangrove-prob
-    type: uint8
-    units: Percent
-    resolution: 10 m
-    nodata: 255
-    #aliases: [example_alias_1, example_alias_2]
-    description: A probability distribution for mangroves
-  - name: saltmarsh-prob
-    type: uint8
-    units: Percent
-    resolution: 10 m
-    nodata: 255
-    #aliases: [example_alias_1, example_alias_2]
-    description: A probability distribution for saltmarshes
-  - name: saltflat-prob
-    type: uint8
-    units: Percent
-    resolution: 10 m
-    nodata: 255
-    #aliases: [example_alias_1, example_alias_2]
-    description: A probability distribution for saltflats
-  - name: seagrass-prob
-    type: uint8
-    units: Percent
-    resolution: 10 m
-    nodata: 255
-    #aliases: [example_alias_1, example_alias_2]
-    description: A probability distribution of seagrass inside the DEA Intertidal high confidence extent
-  - name: qa-count-clear
-    type: int16
-    units: Count
-    resolution: 10 m
-    nodata: -999
-    aliases: [count-clear]
-    description: The count of clear and valid observations per pixel.
-  - name: qa-coastal-connectivity
-    type: int16
-    units: Cost distance
-    resolution: 10 m
-    nodata: 65535
-    aliases: [coastal-connectivity]
-    description: Accumulated cost-distance coastal connectivity, used to identify likely coastal pixels.   
+% # bands_table:
 
 # Layers
 
 # layers_footnote: A footnote to display under the layers table.
 
-# layers_table:
-#   - name: example_layer_name
-#     description: A description of the layer.
-#     attributes:
-#       - name: example_attribute_name
-#         type: int16
-#         units: Metres
-#         description: A description of the attribute.
+ layers_table:
+   - name: example_layer_name
+     description: A description of the layer.
+     attributes:
+       - name: example_attribute_name
+         type: int16
+         units: Metres
+         description: A description of the attribute.
+   - name: classification
+     attributes:
+       - name: classification
+         type: uint8
+         units: Class
+         resolution: 10 m
+         nodata: 255
+         #aliases: [example_alias_1, example_alias_2]
+     description: A high confidence categorical classifier of coastal ecosystem types. Classes: 2 = intertidal, 3= mangrove, 4= saltmarsh, 5= intertidal seagrass 
+   - name: mangrove-prob
+     attributes:
+       - name: mangrove-prob
+         type: uint8
+         units: Percent
+         resolution: 10 m
+         nodata: 255
+         #aliases: [example_alias_1, example_alias_2]
+     description: A probability distribution for mangroves
+   - name: saltmarsh-prob
+     attributes:
+       - name: saltmarsh-prob
+         type: uint8
+         units: Percent
+         resolution: 10 m
+         nodata: 255
+         #aliases: [example_alias_1, example_alias_2]
+     description: A probability distribution for saltmarshes
+   - name: saltflat-prob
+     attributes:
+       - name: saltflat-prob
+         type: uint8
+         units: Percent
+         resolution: 10 m
+         nodata: 255
+         #aliases: [example_alias_1, example_alias_2]
+     description: A probability distribution for saltflats
+   - name: seagrass-prob
+     attributes:
+       - name: seagrass-prob
+         type: uint8
+         units: Percent
+         resolution: 10 m
+         nodata: 255
+         #aliases: [example_alias_1, example_alias_2]
+     description: A probability distribution of seagrass inside the DEA Intertidal high confidence extent
+   - name: qa-count-clear
+     attributes:
+       - name: qa-count-clear
+         type: int16
+         units: Count
+         resolution: 10 m
+         nodata: -999
+         aliases: [count-clear]
+     description: The count of clear and valid observations per pixel.
+   - name: qa-coastal-connectivity
+     attributes:
+       - name: qa-coastal-connectivity
+         type: int16
+         units: Cost distance
+         resolution: 10 m
+         nodata: 65535
+         aliases: [coastal-connectivity]
+     description: Accumulated cost-distance coastal connectivity, used to identify likely coastal pixels.   
+
