@@ -15,8 +15,8 @@ lineage_type: DERIVATIVE
 spatial_data_type: RASTER
 
 spatial_coverage: Australia excluding external territories
-# temporal_coverage_start: null
-# temporal_coverage_end: null
+temporal_coverage_start: 2021
+temporal_coverage_end: 2022
 temporal_coverage_custom: 2021 – 2022
 
 data_update_frequency: NOT APPLICABLE
