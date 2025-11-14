@@ -2,39 +2,41 @@
 
 # Specifications
 
-short_name: Example product
-# full_technical_name: Long example product title
+short_name: DEA Coastal Ecosystem Map
+full_technical_name: Geoscience Australia Sentinel-2 Coastal Ecosystem Map Calendar Year Collection 3 
 # header_image: /_files/example/image.png
 
 version_number: 1.0.0
 is_latest_version: true
-# latest_version_link: /data/product/example-product/
+latest_version_link: /data/product/dea-coastal-ecosystem-mapping/
 is_provisional: false
 
 lineage_type: DERIVATIVE
 spatial_data_type: RASTER
 
-# spatial_coverage: Australia including external territories
-temporal_coverage_start: 1 Jan 2020
-temporal_coverage_end: Present
-# temporal_coverage_custom: 1986 – 1999 and 2003 – 2011
+spatial_coverage: Australia excluding external territories
+# temporal_coverage_start: 1 Jan 2021
+# temporal_coverage_end: Present
+temporal_coverage_custom: 2021 – 2022
 
-data_update_frequency: YEARLY
-data_update_activity: ONGOING
+data_update_frequency: NOT APPLICABLE
+data_update_activity: NON-ONGOING
 is_currency_reported: false
 
-# resolution: 30 m
-# coordinate_reference_system: EPSG:3577
+resolution: 10 m
+coordinate_reference_system: EPSG:3577
 
 # product_ids:
 #   - example_1
 
-# parent_products:
-#   - name: Example parent product
-#     link: /data/product/example-parent-product/
+parent_products:
+  - name: DEA Surface Reflectance NBART Sentinel-2a MSI
+    link: /data/product/dea-surface-reflectance-nbart-sentinel-2a-msi
+  - name: DEA Surface Reflectance NBART Sentinel-2b MSI
+    link: /data/product/dea-surface-reflectance-nbart-sentinel-2b-msi
 
-# collections:
-#   - name: Geoscience Australia Landsat Collection 3
+collections:
+  - name: Geoscience Australia Sentinel-2 Collection 3
 #     link: null
 
 # doi: 10.00000/000000
