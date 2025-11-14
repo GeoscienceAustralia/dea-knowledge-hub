@@ -111,7 +111,7 @@ These components are discussed in further detail below. The validation process i
 **Figure 4** Primary components and outputs of the DEA Coastal Ecosystem Map workflow
 
 ### 1.	Training data
-#### Data curation (todo: figure)
+#### Data curation
 [Continental training data](https://github.com/GeoscienceAustralia/dea-coastalecosystems/blob/main/data/training_data_input/MultEcosy_TData_v1_0.geojson), developed for [this work](https://github.com/GeoscienceAustralia/dea-coastalecosystems/blob/main/docs/publications/JCU_Coastal_Training_Data_Report_1_27012023_FR%20.pdf) (Canto et al., 2023), comprised a point-record training set of 40,934 Australian coastal ecosystem type occurrences (Fig. E). Development of this dataset was completed for use with multi-ecosystem classification models.
 The dataset integrated occurrence records from four data sources:
 
@@ -121,10 +121,11 @@ The dataset integrated occurrence records from four data sources:
 - Global intertidal change (Murray et. al, 2019; Murray et al., 2022)
 
 :::{figure} /_files/dea-coastalecosystems/Original_training_point_distribution.png
+
 **Figure 5** after Canto et al., 2023; Becker et al., 2023. 40,934 expert labelled point occurrences of coastal ecosystem types, distributed continentally around the Australian coastline.
 
 #### Ecosystem definitions
-The training data definitions for Australian coastal ecosystems (Table 1, Canto et al., 2023) were sourced from the Blue Carbon Method (CER 2022) and the International Union for Conservation of Nature Global Ecosystem Typology (Keith et al., 2022). 
+The training data definitions for Australian coastal ecosystems (Table 1, Canto et al., 2023) were sourced from the Blue Carbon Method (CER, 2022) and the International Union for Conservation of Nature Global Ecosystem Typology (Keith et al., 2022). 
 
 Training point class descriptors (level 2, L2) were aggregated into broader level 1 (L1) class categories to form the basis of the DEA Coastal Ecosystem Map. The mapping of L2 to L1 ecosystem types, and their definitions, are described in Table 1
 
@@ -158,9 +159,19 @@ The development of the original Training data set on Landsat 30m data, coupled w
 
 This was achieved by resampling the original training data points to 10 m resolution, sampling the surrounding 9 pixels of each original training point, to increase the overall number of training data points, to approx 368,000.
 
-This approach balanced the need for increased training data volume across all seven modelling regions (Table 2) while maintaining data quality and ecological validity. The process also included more spatial and spectral variability in the modelling process, resulting in a small but consistent improvement in accuracy when using the expanded training data set (see Quality/Validation)
+This approach balanced the need for increased training data volume across all seven modelling regions (Table 2) while maintaining data quality and ecological validity. The process also included more spatial and spectral variability in the modelling process, resulting in a small but consistent improvement in [accuracy](./?tab=quality) when using the expanded training data set.
 
-[Placeholder: Table 2]
+| Region | Water | Mudflat | Mangrove | Saltmarsh | Saltflat | Terrestrial/Other | Intertidal seagrass | Total |
+|--------|-------|---------|----------|-----------|----------|-------------------|---------------------|-------|
+| NW | 4959 | 3135 | 7893 | 4641 | 5583 | 28734 | 186 | 55131 |
+| NE | 9354 | 6424 | 8617 | 4473 | 3169 | 20664 | 5072 | 57773 |
+| Gulf | 2754 | 2473 | 3960 | 3267 | 2526 | 7818 | 3464 | 26262 |
+| West | 1638 | 2385 | 2241 | 2481 | 2898 | 12471 | 1765 | 25879 |
+| SW | 2718 | 816 | 441 | 1926 | 126 | 46512 | 1377 | 53916 |
+| SE | 9234 | 3891 | 7514 | 15512 | 422 | 64705 | 9734 | 111012 |
+| Tas. | 2697 | 1359 | 0 | 3120 | 0 | 5622 | 1319 | 14117 |
+
+**Table 2** Expanded training data distribution across model regions. Modelling regions: North West (NW), North East (NE), Gulf of Carpentaria (Gulf), West, South West (SW), South East (SE) and Tasmania (Tas.). **N.b.** No mangroves or saltflat are recorded in Tasmania.
 
 ### 2.	Covariate Data (todo: links and table)
 Covariate data stacks were generated using a combination of Sentinel-2 Analysis Ready Data, calculated indices and derived datasets (Tables 3-4). These covariate stacks of 131 total variables were generated for the extent of the CEM Product Grid (reference/link), for each of the modelling years.

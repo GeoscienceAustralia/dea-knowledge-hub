@@ -3,12 +3,12 @@
 # Specifications
 
 short_name: DEA Coastal Ecosystem Map
-full_technical_name: Geoscience Australia Sentinel-2 Coastal Ecosystem Map Calendar Year Collection 3 
+full_technical_name: Geoscience Australia Sentinel-2 Coastal Ecosystems Calendar Year Collection 3 
 # header_image: /_files/example/image.png
 
 version_number: 1.0.0
 is_latest_version: true
-latest_version_link: /data/product/dea-coastal-ecosystem-mapping/
+latest_version_link: /data/product/dea-coastalecosystems/
 is_provisional: false
 
 lineage_type: DERIVATIVE
