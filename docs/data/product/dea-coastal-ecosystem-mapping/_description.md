@@ -88,12 +88,16 @@ An accumulated cost-distance connectivity layer used as a covariate layer within
 #### Cloud-optimised GeoTIFF
 Layers of the DEA Coastal Ecosystem Map are provided as single continental scale cloud-optimised GeoTIFFs. For data access and use in geospatial information system (GIS) environments, streaming (link to mosaic access KH page) of these datasets is strongly recommended over downloading of the datasets. Web mapping services (WMS) are also available for all DEA datasets (link to access page).
 #### Product naming convention
-A standard DEA naming convention (link to KH user guide) has been adopted for DEA Coastal Ecosystem Map datasets. For example, the 2021 DEA Coastal Ecosystem Map classification layer is named
-`ga_s2_coastalecosystems_cyear_3_v1-0-0_AU_2021—P1Y_final_classification.tif`
+The DEA standard [file naming convention](/guides/reference/collection_3_naming/) has been applied as follows:
 
-interpreted as `[Product ID]_[Layer specifics]` where:
-- Product ID = `[Geoscience Australia]_[Sentinel-2 dataset]_[Product Name]_[Temporal resolution-calendar year]_[Imagery collection]_[Major product version]`
-- Layer specifics = `[Product minor/patch version]_[Spatial resolution - Australia]_[Year]--[Frequency]_[Dataset maturity]_[Layer name].[filetype]`
+```text
+{Organisation}_{Platform}_{Product}_{Reporting period}_{Collection}_{Version}_{Tile reference}_{Data date}--{Data period}_{Product status}_{Band name}.{File extension}
+```
+
+For example, the 2021 DEA Coastal Ecosystem Map classification layer is named
+```
+ga_s2_coastalecosystems_cyear_3_v1-0-0_AU_2021—P1Y_final_classification.tif
+```
 
 ## Processing steps
 
@@ -105,8 +109,8 @@ These components are discussed in further detail below. The validation process i
 [Placeholder: Figure D]
 
 ### 1.	Training data
-#### Data curation (todo: links and figs)
-Continental training data, developed for this work (Canto et al., 2023 https://github.com/GeoscienceAustralia/dea-coastalecosystems/blob/main/docs/publications/JCU_Coastal_Training_Data_Report_1_27012023_FR%20.pdf, https://github.com/GeoscienceAustralia/dea-coastalecosystems/blob/main/data/training_data_input/MultEcosy_TData_v1_0.geojson ),comprised a point-record training set of 40,934 Australian coastal ecosystem type occurrences (Fig. E). Development of this dataset was completed for use with multi-ecosystem classification models.
+#### Data curation (todo: figure)
+[Continental training data](https://github.com/GeoscienceAustralia/dea-coastalecosystems/blob/main/data/training_data_input/MultEcosy_TData_v1_0.geojson), developed for [this work](https://github.com/GeoscienceAustralia/dea-coastalecosystems/blob/main/docs/publications/JCU_Coastal_Training_Data_Report_1_27012023_FR%20.pdf) (Canto et al., 2023), comprised a point-record training set of 40,934 Australian coastal ecosystem type occurrences (Fig. E). Development of this dataset was completed for use with multi-ecosystem classification models.
 The dataset integrated occurrence records from four data sources:
 
 - Australia coastal ecosystem mapping (Becker et. al, 2023)
@@ -116,12 +120,22 @@ The dataset integrated occurrence records from four data sources:
 
 [Placeholder: Figure E]
 
-#### Ecosystem definitions (todo: links and figs)
-The training data definitions for Australian coastal ecosystems (Fig q, Canto et al., 2023) were sourced from the Blue Carbon Method (a tidal restoration of blue carbon ecosystems method by the Clean Energy Regulator, CER 2022) and the International Union for Conservation of Nature Global Ecosystem Typology (Keith et al., 2022). 
+#### Ecosystem definitions
+The training data definitions for Australian coastal ecosystems (Table 1, Canto et al., 2023) were sourced from the Blue Carbon Method (CER 2022) and the International Union for Conservation of Nature Global Ecosystem Typology (Keith et al., 2022). 
 
-The granular level 2 class descriptors (L2) of the training datapoints were aggregated into broader level 1 class (L1) categories which form the basis of the DEA Coastal Ecosystem Map. The mapping of L2 to L1 ecosystem types, and their definitions, are described in Table 1
+Training point class descriptors (level 2, L2) were aggregated into broader level 1 (L1) class categories to form the basis of the DEA Coastal Ecosystem Map. The mapping of L2 to L1 ecosystem types, and their definitions, are described in Table 1
 
-[Placeholder: table 1]
+**Table 1** Ecosystem definitions and class mappings
+
+| L2 ecosystem type | L1 ecosystem type | L1 Definition |
+|-------------------|-------------------|---------------|
+| • Land<br>• Supratidal forest<br>• Freshwater wetland<br>• Sand<br>• Water | Terrestrial/Other | Includes natural or anthropogenic land cover types that occur in non-intertidal areas but within the coastal zone such as supratidal forests, frequently inundated croplands, freshwater wetlands and permanent sand dunes. |
+| • Seagrass (subtidal) | Permanent water | Refers to a variety of permanent water bodies around the coast but not within the intertidal zone. These water bodies range from deep permanent ocean to freshwater rivers and lakes and include clear and turbid waters. Includes submerged vegetation and substrates such as subtidal seagrass if the bottom is visible. |
+| • Mudflat<br>• Intertidal non-vegetated soft sediments | Intertidal | Ecosystem occurring in low-sloping areas of the intertidal zone. Includes muddy, sandy and rocky substrates. Can readily transition to seagrass, mangrove or saltmarsh ecosystems if conditions become favorable for the colonization of vegetation through changes in sea level or freshwater inundation over time. |
+| • Mangrove | Mangrove | Ecosystem comprised of trees and shrubs which a) occupy the intertidal zone or floodplains, including marine and estuarine areas; and b) grow in saline or brackish water. |
+| • Saltmarsh<br>• Algal Mats | Saltmarsh | Ecosystem comprised of a) salt tolerant herbaceous plants and occasionally woody shrubs; and b) occur on floodplains and in estuaries and can be flushed with water from a combinations of sources including rainfall, rivers, groundwater and seawater. This includes saltmarsh in sparsely vegetated saline or hypersaline ecosystems. |
+| • Seagrass (intertidal) | Intertidal seagrass | Ecosystem comprised of grass-like plants that grow in shallow intertidal coastal waters. Seagrasses are aquatic flowering plants that form meadows in temperate and tropical regions of Australia. |
+| • Saltflat | Saltflat | A subtype of saltmarsh ecosystems comprising bare saltmarsh. Saltflats include sparsely vegetated saline or hypersaline ecosystems |
 
 #### Regional modelling (todo: links and figs)
 A bioregional approach was used to improve modelling performance by accounting for regional ecological variations while maintaining the ability to apply a consistent classification schema. 
