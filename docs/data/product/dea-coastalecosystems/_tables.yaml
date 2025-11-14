@@ -52,7 +52,7 @@ bands_table:
     aliases: 
     - coastal-connectivity
     resolution: 10 m
-    nodata: 65535
+    nodata: 32767
     units: Cost distance
     type: int16
     description: Accumulated cost-distance coastal connectivity, used to identify likely coastal pixels.   
