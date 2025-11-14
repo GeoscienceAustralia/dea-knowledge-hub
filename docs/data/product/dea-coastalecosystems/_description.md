@@ -234,7 +234,7 @@ The Coastal connectivity layer (also published as a [QA product layer](#quality-
 - The extent of the DEA Mangroves product
 Coastal connectivity is used here as a covariate layer within the modelling process, and as an additional contextual editing layer for the Saltmarsh class. 
 
-:::{figure} /_files/dea-coastalecosystems/connectivity Mallacoota.png
+:::{figure} /_files/dea-coastalecosystems/connectivity_Mallacoota.png
 
 **Figure 7**  *a*) Mallacoota, Victoria; *b*) Highly connected areas have low connectivity values e.g. low elevations, connected to tidally influenced areas, have low connectivity values(light grey). Elevated areas are penalised with high connectivity values (dark grey), even if located close to tidally influenced areas.
 
@@ -263,7 +263,7 @@ Multi-class and binary random-forest models were fit for each region using:
 Each model was first trained and evaluated using a [k-fold cross-validation train/test split](https://scikit-learn.org/stable/modules/cross_validation.html#computing-cross-validated-metrics) of the training data  to report accuracy statistics and refine optimal model parameters. Overall model accuracy statistics are reported in the [Quality](./?tab=quality) tab. Optimized model parameters were then used to retrain the final random-forest classifiers using the full training data set for the multi-class model and the intertidal masked training data set for the seagrass model.
 The combined 2021 and 2022 stacks of covariate-trained training data ensure the classifier models are suitable for prediction into both years. Common covariates that exhibited a top-10 feature importance for the ecosystem models include the NDVI and MNDWI percentiles as well as the coastal-connectivity (Fig. 8).
 
-:::{figure} /_files/dea-coastalecosystems/ML Feature Importance.png
+:::{figure} /_files/dea-coastalecosystems/ML_Feature_Importance.png
 
 **Figure 8** shows the commonality between covariates that appear in the top 10 most important covariates for each of the seven regional ecosystem models. The y-axis represents the number of regional models where the covariate features in the top-10.
 
