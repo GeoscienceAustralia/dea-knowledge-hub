@@ -31,21 +31,21 @@ Key features of the product suite include:
 - Intergration with other terrestrial and ocean data sets (see Future work)
 - Other?
 
-## Lineage (todo fix links)
+## Lineage
 
 The DEA Coastal Ecosystem Map was initiated as a collaborative project to support the Commonwealth Department of Climate Change, Energy, the Environment and Water (DCCEEW) to underpin the creation of Environmental Economic Accounts (EEA) for ecosystems in Australia’s coastal zone. This followed experimental Ocean Accounts, delivered in 2022 and based on selected individual ecosystem earth observation derived datasets.
 
-Leveraging a methodology that mapped global shifts in tidal wetlands (https://www.science.org/doi/10.1126/science.abm9583), Geoscience Australia has collaborated with James Cook University and the University of New South Wales to deliver a similar approach for Australia in this Coastal Ecosystem Map product suite. Initial Beta versions of the DEA Coastal Ecosystem Map have been used to underpin the February 2025 release of the National Ecosystem Accounts experimental estimates for the Coastal Realm (https://www.abs.gov.au/statistics/environment/environmental-accounts/national-ecosystem-accounts-experimental-estimates/latest-release#coastal-realm), with the first V1.0.0 release of the DEA Coastal Ecosystem Map expected to contribute to the upcoming 2026 National Ecosystem Account released by the Australian Bureau of Statistics (ABS)
+Leveraging a methodology that mapped [global shifts in tidal wetlands](https://www.science.org/doi/10.1126/science.abm9583), Geoscience Australia has collaborated with James Cook University and the University of New South Wales to deliver a similar approach for Australia in this Coastal Ecosystem Map product suite. Initial Beta versions of the DEA Coastal Ecosystem Map have been used to underpin the February 2025 release of the [National Ecosystem Accounts experimental estimates for the Coastal Realm](https://www.abs.gov.au/statistics/environment/environmental-accounts/national-ecosystem-accounts-experimental-estimates/latest-release#coastal-realm), with the first V1.0.0 release of the DEA Coastal Ecosystem Map expected to contribute to the upcoming 2026 National Ecosystem Account released by the Australian Bureau of Statistics (ABS)
 
 Targeted stakeholder engagement and product feedback sessions have been conducted throughout the development of the product to ensure where possible a complementary alignment of the DEA Coastal Ecosystem Map product to State Government and Academic mapping efforts. These efforts are aimed at ensuring the ease of uptake and integration of the product into a range of environmental reporting applications across jurisdictions (e.g State of the Environment).
 
-Stakeholder engagement at all levels will continue to drive the development of the Coastal Ecosystem Map product in a cycle of continuous improvement, validation, feedback integration and inclusion of additional ecosystem types (see Caveats/FAQS). 
+Stakeholder engagement at all levels will continue to drive the development of the Coastal Ecosystem Map product in a cycle of continuous improvement, validation, feedback integration and inclusion of additional ecosystem types (see [Caveats/FAQS](./?tab=quality)). 
 
 ## Technical information
 
 ### Product Features
 
-The DEA Coastal Ecosystem Map is a multi-layered dataset and is produced for two years, 2021 and 2022. See [Specifications](_tables.yaml) for individual layer metadata.
+The DEA Coastal Ecosystem Map is a multi-layered dataset and is produced for two years, 2021 and 2022. See [Specifications](./?tab=specifications) for individual layer metadata.
 
 ### Core Product Layers
 Five core layers are included in The DEA Coastal Ecosystem Map: the classification and four probability layers.

@@ -15,8 +15,8 @@ lineage_type: DERIVATIVE
 spatial_data_type: RASTER
 
 spatial_coverage: Australia excluding external territories
-# temporal_coverage_start: 1 Jan 2021
-# temporal_coverage_end: Present
+temporal_coverage_start: null
+temporal_coverage_end: null
 temporal_coverage_custom: 2021 – 2022
 
 data_update_frequency: NOT APPLICABLE
@@ -26,18 +26,16 @@ is_currency_reported: false
 resolution: 10 m
 coordinate_reference_system: EPSG:3577
 
-# product_ids:
-#   - example_1
+product_ids:
+  - ga_s2_coastalecosystems_cyear_3_v1
 
 parent_products:
-  - name: DEA Surface Reflectance NBART Sentinel-2a MSI
-    link: /data/product/dea-surface-reflectance-nbart-sentinel-2a-msi
-  - name: DEA Surface Reflectance NBART Sentinel-2b MSI
-    link: /data/product/dea-surface-reflectance-nbart-sentinel-2b-msi
+  - name: Sentinel-2A and -2B NBART and Observational Attributes
+    link: /data/category/dea-surface-reflectance/
 
 collections:
   - name: Geoscience Australia Sentinel-2 Collection 3
-#     link: null
+    link: /search/?q=Geoscience+Australia+Sentinel-2+Collection+3
 
 # doi: 10.00000/000000
 # ecat_id: "100000"
