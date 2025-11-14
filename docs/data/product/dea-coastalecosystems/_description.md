@@ -115,7 +115,7 @@ These components are discussed in further detail below. The validation process i
 
 #### Data curation
 
-[Continental training data](https://github.com/GeoscienceAustralia/dea-coastalecosystems/blob/main/data/training_data_input/MultEcosy_TData_v1_0.geojson), developed for [this work](https://github.com/GeoscienceAustralia/dea-coastalecosystems/blob/main/docs/publications/JCU_Coastal_Training_Data_Report_1_27012023_FR%20.pdf) (Canto et al., 2023), comprised a point-record training set of 40,934 Australian coastal ecosystem type occurrences (Fig. E). Development of this dataset was completed for use with multi-ecosystem classification models.
+[Continental training data](https://github.com/GeoscienceAustralia/dea-coastalecosystems/blob/main/data/training_data_input/MultEcosy_TData_v1_0.geojson), developed for [this work](https://github.com/GeoscienceAustralia/dea-coastalecosystems/blob/main/docs/publications/JCU_Coastal_Training_Data_Report_1_27012023_FR%20.pdf) (Canto et al., 2023), comprised a point-record training set of 40,934 Australian coastal ecosystem type occurrences (Fig. 5). Development of this dataset was completed for use with multi-ecosystem classification models.
 
 The dataset integrated occurrence records from four data sources:
 
@@ -146,25 +146,29 @@ Training point class descriptors (level 2, L2) were aggregated into broader leve
 | • Seagrass (intertidal) | Intertidal seagrass | Ecosystem comprised of grass-like plants that grow in shallow intertidal coastal waters. Seagrasses are aquatic flowering plants that form meadows in temperate and tropical regions of Australia. |
 | • Saltflat | Saltflat | A subtype of saltmarsh ecosystems comprising bare saltmarsh. Saltflats include sparsely vegetated saline or hypersaline ecosystems |
 
-#### Regional modelling (todo: links and figs)
+#### Regional modelling
 A bioregional approach was used to improve modelling performance by accounting for regional ecological variations while maintaining the ability to apply a consistent classification schema. 
 
-Seven bioregions (Fig F) were developed with expert consultation across Geoscience Australia, University of Queensland, James Cook University and University of New South Wales, guided by Natural Resource Management regions, tidal regimes, climate forcing and ecosystem dynamics. 
+Seven bioregions (Fig. 6) were developed with expert consultation across Geoscience Australia, University of Queensland, James Cook University and University of New South Wales, guided by Natural Resource Management regions, tidal regimes, climate forcing and ecosystem dynamics. 
 
 These regions enabled models to be developed with regional specific training data to account for differences across the common ecosystem classes (e.g. the varied ecological nature of saltmarsh across the country), as well as regional climate and seasonal impacts on the covariate data inputs.
 
 It is important that these regions be regarded as a pragmatic technical choice rather than an attempt at a comprehensive bioregionalization. 
 
-[Placeholder: Figure F]
+:::{figure} /_files/dea-coastalecosystems/Labelled_tile_regions.png
 
-#### Training Point Expansion (todo: links and table)
+***Figure 6*** Seven biogregions were used to model coastal ecosystems
+
+:::
+
+#### Training Point Expansion
 Introducing the modelling regions had implications for the size and balance of the training data sets once split across the seven bioregions, with many ecosystem training point classes falling below a reasonable representative sample number. 
 
-The development of the original Training data set on Landsat 30m data, coupled with an acquisition protocol focused on spatially homogenous regions, presented an opportunity to expand the training data sets when considering the increased resolution of the CEM product. With Sentinel-2's 10m resolution pixels falling within the tolerance established for the training data point validity (30-40m), a semi-automated process was implemented to expand the existing training dataset. This semi-automated approach was particularly effective for expanding coverage in homogeneous ecosystem patches while maintaining data quality.
+The development of the original training data set on Landsat 30m data, coupled with an acquisition protocol focused on spatially homogenous regions, presented an opportunity to expand the training data sets when considering the increased resolution of the CEM product. With Sentinel-2's 10m resolution pixels falling within the tolerance established for the training data point validity (30-40m), a semi-automated process was implemented to expand the existing training dataset. This semi-automated approach was particularly effective for expanding coverage in homogeneous ecosystem patches while maintaining data quality.
 
 This was achieved by resampling the original training data points to 10 m resolution, sampling the surrounding 9 pixels of each original training point, to increase the overall number of training data points, to approx 368,000.
 
-This approach balanced the need for increased training data volume across all seven modelling regions (Table 2) while maintaining data quality and ecological validity. The process also included more spatial and spectral variability in the modelling process, resulting in a small but consistent improvement in [accuracy](./?tab=quality) when using the expanded training data set.
+This approach balanced the need for increased training data volume across all seven modelling regions while maintaining data quality and ecological validity (Table 2). The process also included more spatial and spectral variability in the modelling process, resulting in a small but consistent improvement in [accuracy](./?tab=quality) when using the expanded training data set.
 
 | Region | Water | Mudflat | Mangrove | Saltmarsh | Saltflat | Terrestrial/Other | Intertidal seagrass | Total |
 |--------|-------|---------|----------|-----------|----------|-------------------|---------------------|-------|
@@ -178,10 +182,49 @@ This approach balanced the need for increased training data volume across all se
 
 **Table 2** Expanded training data distribution across model regions. Modelling regions: North West (NW), North East (NE), Gulf of Carpentaria (Gulf), West, South West (SW), South East (SE) and Tasmania (Tas.). **N.b.** No mangroves or saltflat are recorded in Tasmania.
 
-### 2. Covariate Data (todo: links and table)
-Covariate data stacks were generated using a combination of Sentinel-2 Analysis Ready Data, calculated indices and derived datasets (Tables 3-4). These covariate stacks of 131 total variables were generated for the extent of the CEM Product Grid (reference/link), for each of the modelling years.
+### 2. Covariate Data
+Covariate data stacks were generated using a combination of Sentinel-2 Analysis Ready Data, calculated indices and derived datasets (Table 3). These covariate stacks of 131 total variables were generated for each of the modelling years.
 
-[Placeholders: Tables 3,4]
+**Table 3** Covariate datasets used to model coastal ecosystems
+| Data Source | Variable | Percentiles | Total Count |
+|-----|-----|-----|-----|
+|[Sentinel-2 ARD Reflectance](https://knowledge.dea.ga.gov.au/data/category/dea-surface-reflectance/) | nbart_blue | 10,20,40,60,80 | 5 |
+|  | nbart_green | 10,20,40,60,80 | 5 |
+|  | nbart_red | 10,20,40,60,80 | 5 |
+|  | nbart_red_edge_1 | 10,20,40,60,80 | 5 |
+|  | nbart_red_edge_2 | 10,20,40,60,80 | 5 |
+|  | nbart_red_edge_3 | 10,20,40,60,80 | 5 |
+|  | nbart_nir | 10,20,40,60,80 | 5 |
+|  | nbart_nir_1 | 10,20,40,60,80 | 5 |
+|  | nbart_nir_2 | 10,20,40,60,80 | 5 |
+|  | nbart_swir_1 | 10,20,40,60,80 | 5 |
+|  | nbart_swir_2 | 10,20,40,60,80 | 5 |
+|  | nbart_swir_3 | 10,20,40,60,80 | 5 |
+| **Sentinel-2 derived indices** |  |  |  |
+|- Automated Water Extraction Index (no shadow) Feyisa 2014 | AWEI_ns | 10,20,40,60,80 | 5 |
+|- Automated Water Extraction Index (shadow) Feyisa 2014 | AWEI_sh | 10,20,40,60,80 | 5 |
+|- Enhanced Vegetation Index Huete 2002 | EVI | 10,20,40,60,80 | 5 |
+|- Leaf Area Index Boegh 2002 | LAI | 10,20,40,60,80 | 5 |
+|- Modified Normalized Difference Water Index Xu 1996 | MNDWI | 10,20,40,60,80 | 5 |
+|- Normalized Difference Vegetation Index Rouse 1973 | NDVI | 10,20,40,60,80 | 5 |
+|- Normalized Difference Water Index McFeeters 1996 | NDWI | 10,20,40,60,80 | 5 |
+|- Tasseled Cap Brightness Crist 1985 | TCB | 10,20,40,60,80 | 5 |
+|- Tasseled Cap Greenness Crist 1985 | TCG | 10,20,40,60,80 | 5 |
+|- Tasseled Cap Wetness Crist 1985 | TCW | 10,20,40,60,80 | 5 |
+|- Tasseled Cap Wetness (GSO variant) Nedkov 2017 | TCW_GSO | 10,20,40,60,80 | 5 |
+|- Water Index Fisher 2016 | WI | 10,20,40,60,80 | 5 |
+| [DEA Tidal Composites](https://knowledge.dea.ga.gov.au/data/product/dea-tidal-composites/?tab=specifications) | low_blue |  | 1 |
+|  | low_green |  | 1 |
+|  | low_red |  | 1 |
+|  | low_red_edge_1 |  | 1 |
+|  | low_red_edge_2 |  | 1 |
+|  | low_red_edge_3 |  | 1 |
+|  | low_nir_1 |  | 1 |
+|  | low_nir_2 |  | 1 |
+|  | low_swir_2 |  | 1 |
+|  | low_swir_3 |  | 1 |
+| Coastal Connectivity | Cost-distance |  | 1 |
+|Total Covariates |  |  | 131 |
 
 #### Coastal Connectivity (todo: links)
 The Coastal connectivity layer (also published as a QA product layer) is designed as an accumulated cost-distance dataset to indicate likely coastal pixels. This is achieved by determining the cumulative elevation above Highest Astronomical Tide that must be traversed along the shortest path from tidally influenced coastal waters and mangroves at each pixel location (Figure G), using the following datasets:
