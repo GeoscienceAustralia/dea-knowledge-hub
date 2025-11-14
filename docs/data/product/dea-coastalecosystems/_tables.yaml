@@ -11,7 +11,7 @@ bands_table:
     nodata: 255
     units: Class
     type: uint8
-    description: A high confidence categorical classifier of coastal ecosystem types. Classes: 2 = intertidal, 3= mangrove, 4= saltmarsh, 5= intertidal seagrass 
+    description: A high confidence categorical classifier of coastal ecosystem types. Class 2 = intertidal, 3= mangrove, 4= saltmarsh, 5= intertidal seagrass 
   - name: mangrove-prob
     aliases: []
     resolution: 10 m
