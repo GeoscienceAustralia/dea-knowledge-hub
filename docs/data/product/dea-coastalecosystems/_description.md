@@ -61,7 +61,7 @@ Product layers for 2021 and 2022 are published with the following categorical cl
 
 :::{figure} /_files/dea-coastalecosystems/low_tide_composite_2021_bermagui.png
 
-{figure} /_files/dea-coastalecosystems/classification_bermagui_2021.png
+:::{figure} /_files/dea-coastalecosystems/classification_bermagui_2021.png
 
 **Figure 1** Bermagui, NSW. Above: the 2021 low tide [DEA Tidal Composite](https://knowledge.dea.ga.gov.au/data/product/dea-tidal-composites/). Below: the 2021 DEA Coastal Ecosystem Map.
 
