@@ -60,6 +60,7 @@ Product layers for 2021 and 2022 are published with the following categorical cl
 - Intertidal Seagrass (5) 
 
 :::{figure} /_files/dea-coastalecosystems/low_tide_composite_2021_bermagui.png
+
 {figure} /_files/dea-coastalecosystems/classification_bermagui_2021.png
 
 **Figure 1** Bermagui, NSW. Above: the 2021 low tide [DEA Tidal Composite](https://knowledge.dea.ga.gov.au/data/product/dea-tidal-composites/). Below: the 2021 DEA Coastal Ecosystem Map.
@@ -75,7 +76,7 @@ Probability layers for ecosystem layers in the Ecosystem Model (Mangroves, Saltm
 
 The Saltflat ecosystem has been excluded from the classification product layer, though the probability layer generated for this ecosystem as part of the Ecosystem Model has been provided. For the reasoning behind this decision, and a discussion on further work required on this ecosystem class, see Saltflats [Caveats](./?tab=quality) section.
 
-For further information how these Probability layers can be interpreted and used to aid in interpretation of the classified ecosystem map, including for mixed or transitional classes, see [Prob Caveats]((./?tab=quality)).
+For further information how these Probability layers can be interpreted and used to aid in interpretation of the classified ecosystem map, including for mixed or transitional classes, see [Probability Caveats]((./?tab=quality)).
 
 :::{figure} /_files/dea-coastalecosystems/probabilities_Bermagui_2021.png
 
@@ -311,7 +312,7 @@ The following rules and processes were applied, with justifications or links to 
 
 ## Software (todo)
 
-## References (todo)
+## References
 
 1. Branson, Paul (2023): Coastal carbon - Australia's blue forest future - Water Levels. v1. CSIRO. Data Collection. https://doi.org/10.25919/6672-jx11
 1. Becker, M.L., Navarro, A., Canto, R., & Murray, N.J. (2023) [An Australian coastal ecosystem training library for remote sensing classification models.](https://github.com/GeoscienceAustralia/dea-coastalecosystems/blob/main/docs/publications/JCU_Coastal_Training_Data_Report_1_27012023_FR%20.pdf) Unpublished report to the Department of Climate Change, Energy, the Environment and Water. James Cook University, Townsville.
