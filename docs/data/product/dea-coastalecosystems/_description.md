@@ -201,18 +201,18 @@ Covariate data stacks were generated using a combination of Sentinel-2 Analysis 
 |  | nbart_swir_2 | 10,20,40,60,80 | 5 |
 |  | nbart_swir_3 | 10,20,40,60,80 | 5 |
 | **Sentinel-2 derived indices** |  |  |  |
-|- Automated Water Extraction Index (no shadow) Feyisa 2014 | AWEI_ns | 10,20,40,60,80 | 5 |
-|- Automated Water Extraction Index (shadow) Feyisa 2014 | AWEI_sh | 10,20,40,60,80 | 5 |
-|- Enhanced Vegetation Index Huete 2002 | EVI | 10,20,40,60,80 | 5 |
-|- Leaf Area Index Boegh 2002 | LAI | 10,20,40,60,80 | 5 |
-|- Modified Normalized Difference Water Index Xu 1996 | MNDWI | 10,20,40,60,80 | 5 |
-|- Normalized Difference Vegetation Index Rouse 1973 | NDVI | 10,20,40,60,80 | 5 |
-|- Normalized Difference Water Index McFeeters 1996 | NDWI | 10,20,40,60,80 | 5 |
-|- Tasseled Cap Brightness Crist 1985 | TCB | 10,20,40,60,80 | 5 |
-|- Tasseled Cap Greenness Crist 1985 | TCG | 10,20,40,60,80 | 5 |
-|- Tasseled Cap Wetness Crist 1985 | TCW | 10,20,40,60,80 | 5 |
-|- Tasseled Cap Wetness (GSO variant) Nedkov 2017 | TCW_GSO | 10,20,40,60,80 | 5 |
-|- Water Index Fisher 2016 | WI | 10,20,40,60,80 | 5 |
+|- Automated Water Extraction Index (no shadow) (Feyisa et al., 2014) | AWEI_ns | 10,20,40,60,80 | 5 |
+|- Automated Water Extraction Index (shadow) (Feyisa et al., 2014) | AWEI_sh | 10,20,40,60,80 | 5 |
+|- Enhanced Vegetation Index (Huete et al., 2002) | EVI | 10,20,40,60,80 | 5 |
+|- Leaf Area Index (Boegh et al., 2002) | LAI | 10,20,40,60,80 | 5 |
+|- Modified Normalized Difference Water Index (Xu, 1996) | MNDWI | 10,20,40,60,80 | 5 |
+|- Normalized Difference Vegetation Index (Rouse et al., 1973) | NDVI | 10,20,40,60,80 | 5 |
+|- Normalized Difference Water Index (McFeeters, 1996) | NDWI | 10,20,40,60,80 | 5 |
+|- Tasseled Cap Brightness (Crist, 1985) | TCB | 10,20,40,60,80 | 5 |
+|- Tasseled Cap Greenness (Crist, 1985) | TCG | 10,20,40,60,80 | 5 |
+|- Tasseled Cap Wetness (Crist, 1985) | TCW | 10,20,40,60,80 | 5 |
+|- Tasseled Cap Wetness (GSO variant) (Nedkov, 2017) | TCW_GSO | 10,20,40,60,80 | 5 |
+|- Water Index (Fisher et al., 2016) | WI | 10,20,40,60,80 | 5 |
 | [DEA Tidal Composites](https://knowledge.dea.ga.gov.au/data/product/dea-tidal-composites/?tab=specifications) | low_blue |  | 1 |
 |  | low_green |  | 1 |
 |  | low_red |  | 1 |
@@ -291,7 +291,7 @@ The following rules and processes were applied, with justifications or links to 
 1. **Apply probability thresholds**: A probability threshold of 50% was applied to the Saltmarsh and Mangrove pixels within the interim ecosystem classification layer, with pixels of these classes with a probability below this threshold assigned as “nodata”. A 50% probability threshold was selected based on the alignment of the outputs with external mapping products, and the conservative consideration that 50% provides a clear majority vote by the ML models.
 1. **Apply environmental corrections**: Saltmarsh pixels were masked to the observed coastal-connectivity range identified by the saltmarsh training data points. To exclude outliers, the saltmarsh connectivity mask was thresholded to the 99.5th percentile connectivity value for all region-combined saltmarsh points from the training data set. This choice was made to remove misclassifications of saltmarsh in regions considered unconnected to coastal regions (see Connectivity Layer). For further discussion on the implications of thresholding based on existing distribution of training data see Saltmarsh Connect Caveat
 #### Classifier masking
-1. **Apply mangrove mask**: Mangrove pixels that fell outside of the mangrove habitat layer, identified by Global Mangrove Watch (link to dataset) were removed. This habitat mask is widely used in Mangrove mapping studies (do we need a ref?) to define the ecologically suitable habitats that Mangrovesexisting and, and was used here to align our Mangrove mapping with these global approaches and minimize the false positives of Mangrove classification in not-suitable areas.
+1. **Apply mangrove mask**: Mangrove pixels that fell outside of the mangrove habitat layer, identified by Global Mangrove Watch (Bunting et al., 2022 link to dataset) were removed. This habitat mask is widely used in Mangrove mapping studies (do we need a ref?) to define the ecologically suitable habitats that Mangrovesexisting and, and was used here to align our Mangrove mapping with these global approaches and minimize the false positives of Mangrove classification in not-suitable areas.
 1. **Apply Intertidal seagrass probability threshold**: Within the defined Intertidal model extent the Intertidal seagrass probability layer was used to define the Intertidal seagrass classification at a probability of greater than or equal to 70 %. The 70 % threshold was selected as conservative value to account for the inter-annual variability of seagrass meadows (see Prob layer discussion)
 1. **Apply manual mask**: A manual masking process was applied to the Classification layer, based on expert identified misclassifications in the layer (including roads, urban areas, terrain shadow, data noise). For full traceability this polygon masking layer is provided here. (link to dataset on Github??)
 1. **Apply land use mask**: Industrial, urban or road areas as identified in the Australian Catchment Scale Land Use and Management dataset (ACLUM) (link to dataset) were removed.
@@ -303,4 +303,25 @@ The following rules and processes were applied, with justifications or links to 
 
 ## References (todo)
 
-Branson, Paul (2023): Coastal carbon - Australia's blue forest future - Water Levels. v1. CSIRO. Data Collection. https://doi.org/10.25919/6672-jx11
+1. Branson, Paul (2023): Coastal carbon - Australia's blue forest future - Water Levels. v1. CSIRO. Data Collection. https://doi.org/10.25919/6672-jx11
+1. Becker, M.L., Navarro, A., Canto, R., & Murray, N.J. (2023) [An Australian coastal ecosystem training library for remote sensing classification models.](https://github.com/GeoscienceAustralia/dea-coastalecosystems/blob/main/docs/publications/JCU_Coastal_Training_Data_Report_1_27012023_FR%20.pdf) Unpublished report to the Department of Climate Change, Energy, the Environment and Water. James Cook University, Townsville.
+1. Boegh, E., Soegaard, H., Broge, N., Hasager, C. B., Jensen, N. O., Schelde, K., & Thomsen, A. (2002). Airborne multispectral data for quantifying leaf area index, nitrogen concentration, and photosynthetic efficiency in agriculture. Remote sensing of Environment, 81(2-3), 179-193.
+1. Bunting, P., Rosenqvist, A., Hilarides, L., Lucas, R., Thomas, N., Tadono, T., Worthington, T., Spalding, M., Murray, N., Rebelo, L.-M., (2022) Global Mangrove Watch (1996 - 2020) Version 3.0 Dataset. https://doi.org/10.5281/zenodo.6894273
+1. Canto. R., Navarro., A.,Becker, M., Murray, N.J., (2023) [Australian coastal ecosystem training library](https://github.com/GeoscienceAustralia/dea-coastalecosystems/blob/main/data/training_data_input/MultEcosy_TData_v1_0.geojson). Unpublished dataset.
+1. Crist, E. P. (1985). A TM Tasseled Cap equivalent transformation for reflectance factor data. Remote Sensing of Environment, 17(3), 301–306. https://doi.org/10.1016/0034-4257(85)90102-6
+1. Feyisa, G. L., Meilby, H., Fensholt, R., & Proud, S. R. (2014). Automated Water Extraction Index: A new technique for surface water mapping using Landsat imagery. Remote sensing of environment, 140, 23-35.
+1. Fisher, A., Flood, N., & Danaher, T. (2016). Comparing Landsat water index methods for automated water classification in eastern Australia. Remote Sensing of Environment, 175, 167-182.
+1. Gallant, J.C., Dowling, T.I., Read, A.M., Wilson, N., Tickle, P. and Inskeep, C., 2011. 1 second SRTM Derived Digital Elevation Models User Guide. Geoscience Australia www.ga.gov.au/topographic-mapping/digital-elevationdata.html 
+1. Huete, A., Didan, K., Miura, T., Rodriguez, E. P., Gao, X., & Ferreira, L. G. (2002). Overview of the radiometric and biophysical performance of the MODIS vegetation indices. Remote sensing of environment, 83(1-2), 195-213.
+1. Keith, D.A., Ferrer-Paris, J.R., Nicholson, E. et al. (2022) A function-based typology for Earth’s ecosystems. Nature 610, 513–518 [https://www.nature.com/articles/s41586-022-05318-4](https://doi.org/10.1038/s41586-022-05318-4). 
+1. Lovelock, C.E., Sippo, J., Fernanda Adame, M., Dittmann, S., Hickey, S., Hutley, L., Jones, A., Kelleway, J., Lavery, P., Macreadie, P., Maher, D., Mosely, L. and Rogers, K (2021) [Blue carbon accounting model (BlueCAM) technical overview](https://cer.gov.au/document/blue-carbon-accounting-model-bluecam-technical-overview). Report to the Clean Energy Regulator. University of Queensland.
+1. Lyons, M.B., Keith, D.A., Phinn, S.R., Mason, T.J., & Elith, J. (2018). A comparison of resampling methods for remote sensing classification and accuracy assessment. Remote Sensing of Environment, 208, 145-153. https://doi.org/10.1016/j.rse.2018.02.026
+1. McFeeters, S. K. (1996). The use of the Normalized Difference Water Index (NDWI) in the delineation of open water features. International journal of remote sensing, 17(7), 1425-1432.
+1. Murray N. J., Canto, R., Worthington, T. A., Lyons, M.B. (2022) Supplementary Data S1 to Losses and gains of Earth's tidal wetlands. Figshare. https://doi.org/10.6084/m9.figshare.19121660.
+1. Murray, N. J., Phinn, S. R., DeWitt, M., Ferrari, R., Johnston, R., Lyons, M. B., Clinton, N., Thau, D. & Fuller, R. A. (2019). The global distribution and trajectory of tidal flats. Nature, 565, 222-225
+1. Murray, N.J., et al., High-resolution mapping of losses and gains of Earth’s tidal wetlands. Science 376, 744-749(2022). [DOI:10.1126/science.abm9583](https://www.science.org/doi/10.1126/science.abm9583)
+1. Navarro, A., Canto, R., Toor, M., & Murray, N.J. (2022) An Australian intertidal seagrass training library for remote sensing classification models. Unpublished report to the Department of Agriculture, Water and the Environment. James Cook University, Townsville.
+1. Navarro, A., Canto, R., Toor, M., Becker, M.L., Lyons, M. & Murray, N.J. (2023) Australian Saltmarsh Map. Unpublished report to the Clean Energy Regulator. James Cook University, Townsville. 
+1. Nedkov, R., (2017). “Orthogonal transformation of segmented images from the satellite Sentinel-2,” Comptes Rendus De lAcad. Bulgare Sci., vol.  70, no.  5, pp.  687–692.
+1. Rouse Jr, J. W., Haas, R. H., Schell, J. A., & Deering, D. W. (1973). Monitoring the vernal advancement and retrogradation (green wave effect) of natural vegetation (No. NASA-CR-132982).
+1. Xu, H. (2006). Modification of normalised difference water index (NDWI) to enhance open water features in remotely sensed imagery. International journal of remote sensing, 27(14), 3025-3033. 
