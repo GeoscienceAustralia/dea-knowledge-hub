@@ -85,15 +85,13 @@ For further information how these Probability layers can be interpreted and used
 :::
 
 ### Quality Assurance Layers
-Two quality assurance layers (Figure C) are included in the DEA CEM product suite: 
-#### Clear count (*qa-count-clear*) (todo: links and figs)
+Two quality assurance layers are included in the DEA CEM product suite: 
+#### Clear count (*qa-count-clear*) (todo: links)
 
 A layer showing the distribution of clear and valid satellite observations at each Sentinel-2 (link to S2 ARD) pixel during the analysis period. Artefacts that can invalidate pixels include cloud cover/shadow and low geometric accuracy. A pixel only proceeds into the DEA Coastal Ecosystem Map workflow if it has more than 10 valid observations. The qa-count-clear layer shows that the maximum number of clear observations for any single pixel was 130 +/-1 in both years of the dataset.
 
-#### Coastal connectivity (*qa-coastal-connectivity*) (todo: links and figs)
+#### Coastal connectivity (*qa-coastal-connectivity*) (todo: links)
 An accumulated cost-distance connectivity layer used as a covariate layer within the modelling process, and as an additional contextual editing layer for the Saltmarsh class. Values represent the cumulative elevation above Highest Astronomical Tide that must be traversed along the shortest path from tidally influenced coastal waters and mangroves. Lower values indicate likely coastal pixels, reflecting both distance inland and topography. The values of the coastal connectivity layer are dimensionless.
-
-[Placeholder: Figure C]
 
 ### Data Format (todo: links)
 #### Cloud-optimised GeoTIFF
@@ -113,20 +111,20 @@ ga_s2_coastalecosystems_cyear_3_v1-0-0_AU_2021—P1Y_final_classification.tif
 ## Processing steps
 
 ### Workflow
-The DEA Coastal Ecosystem Map is a machine learning workflow comprised of four primary components (Figure 4): Training data, Covariate data, Machine learning and Contextual editing. 
+The DEA Coastal Ecosystem Map is a machine learning workflow comprised of four primary components (Fig 3): Training data, Covariate data, Machine learning and Contextual editing. 
 
 These components are discussed in further detail below. The validation process is discussed in the [Quality](./?tab=quality) tab.
 
 :::{figure} /_files/dea-coastalecosystems/CEM_flowchart.png
 
-**Figure 4** Primary components and outputs of the DEA Coastal Ecosystem Map workflow
+**Figure 3** Primary components and outputs of the DEA Coastal Ecosystem Map workflow
 :::
 
 ### 1. Training data
 
 #### Data curation
 
-[Continental training data](https://github.com/GeoscienceAustralia/dea-coastalecosystems/blob/main/data/training_data_input/MultEcosy_TData_v1_0.geojson), developed for [this work](https://github.com/GeoscienceAustralia/dea-coastalecosystems/blob/main/docs/publications/JCU_Coastal_Training_Data_Report_1_27012023_FR%20.pdf) (Canto et al., 2023), comprised a point-record training set of 40,934 Australian coastal ecosystem type occurrences (Fig. 5). Development of this dataset was completed for use with multi-ecosystem classification models.
+[Continental training data](https://github.com/GeoscienceAustralia/dea-coastalecosystems/blob/main/data/training_data_input/MultEcosy_TData_v1_0.geojson), developed for [this work](https://github.com/GeoscienceAustralia/dea-coastalecosystems/blob/main/docs/publications/JCU_Coastal_Training_Data_Report_1_27012023_FR%20.pdf) (Canto et al., 2023), comprised a point-record training set of 40,934 Australian coastal ecosystem type occurrences (Fig. 4). Development of this dataset was completed for use with multi-ecosystem classification models.
 
 The dataset integrated occurrence records from four data sources:
 
@@ -137,7 +135,7 @@ The dataset integrated occurrence records from four data sources:
 
 :::{figure} /_files/dea-coastalecosystems/Original_training_point_distribution.png
 
-**Figure 5** after Canto et al., 2023; Becker et al., 2023. 40,934 expert labelled point occurrences of coastal ecosystem types, distributed continentally around the Australian coastline.
+**Figure 4** after Canto et al., 2023; Becker et al., 2023. 40,934 expert labelled point occurrences of coastal ecosystem types, distributed continentally around the Australian coastline.
 :::
 
 #### Ecosystem definitions
@@ -160,7 +158,7 @@ Training point class descriptors (level 2, L2) were aggregated into broader leve
 #### Regional modelling
 A bioregional approach was used to improve modelling performance by accounting for regional ecological variations while maintaining the ability to apply a consistent classification schema. 
 
-Seven bioregions (Fig. 6) were developed with expert consultation across Geoscience Australia, University of Queensland, James Cook University and University of New South Wales, guided by Natural Resource Management regions, tidal regimes, climate forcing and ecosystem dynamics. 
+Seven bioregions (Fig. 5) were developed with expert consultation across Geoscience Australia, University of Queensland, James Cook University and University of New South Wales, guided by Natural Resource Management regions, tidal regimes, climate forcing and ecosystem dynamics. 
 
 These regions enabled models to be developed with regional specific training data to account for differences across the common ecosystem classes (e.g. the varied ecological nature of saltmarsh across the country), as well as regional climate and seasonal impacts on the covariate data inputs.
 
@@ -168,7 +166,7 @@ It is important that these regions be regarded as a pragmatic technical choice r
 
 :::{figure} /_files/dea-coastalecosystems/Labelled_tile_regions.png
 
-***Figure 6*** Seven biogregions were used to model coastal ecosystems
+***Figure 5*** Seven biogregions were used to model coastal ecosystems
 
 :::
 
@@ -181,6 +179,8 @@ This was achieved by resampling the original training data points to 10 m resolu
 
 This approach balanced the need for increased training data volume across all seven modelling regions while maintaining data quality and ecological validity (Table 2). The process also included more spatial and spectral variability in the modelling process, resulting in a small but consistent improvement in [accuracy](./?tab=quality) when using the expanded training data set.
 
+**Table 2** Expanded training data distribution across model regions. Modelling regions: North West (NW), North East (NE), Gulf of Carpentaria (Gulf), West, South West (SW), South East (SE) and Tasmania (Tas.). **N.b.** No mangroves or saltflat are recorded in Tasmania.
+
 | Region | Water | Mudflat | Mangrove | Saltmarsh | Saltflat | Terrestrial/Other | Intertidal seagrass | Total |
 |--------|-------|---------|----------|-----------|----------|-------------------|---------------------|-------|
 | NW | 4959 | 3135 | 7893 | 4641 | 5583 | 28734 | 186 | 55131 |
@@ -190,8 +190,6 @@ This approach balanced the need for increased training data volume across all se
 | SW | 2718 | 816 | 441 | 1926 | 126 | 46512 | 1377 | 53916 |
 | SE | 9234 | 3891 | 7514 | 15512 | 422 | 64705 | 9734 | 111012 |
 | Tas. | 2697 | 1359 | 0 | 3120 | 0 | 5622 | 1319 | 14117 |
-
-**Table 2** Expanded training data distribution across model regions. Modelling regions: North West (NW), North East (NE), Gulf of Carpentaria (Gulf), West, South West (SW), South East (SE) and Tasmania (Tas.). **N.b.** No mangroves or saltflat are recorded in Tasmania.
 
 ### 2. Covariate Data
 Covariate data stacks were generated using a combination of Sentinel-2 Analysis Ready Data, calculated indices and derived datasets (Table 3). These covariate stacks of 131 total variables were generated for each of the modelling years.
@@ -238,7 +236,7 @@ Covariate data stacks were generated using a combination of Sentinel-2 Analysis 
 |Total Covariates |  |  | 131 |
 
 #### Coastal Connectivity
-The Coastal connectivity layer (also published as a [QA product layer](#quality-assurance-layers)) is designed as an accumulated cost-distance dataset to indicate likely coastal pixels. This is achieved by determining the cumulative elevation above Highest Astronomical Tide that must be traversed along the shortest path from tidally influenced coastal waters and mangroves at each pixel location (Fig. 7), using the following datasets:
+The Coastal connectivity layer (also published as a [QA product layer](#quality-assurance-layers)) is designed as an accumulated cost-distance dataset to indicate likely coastal pixels. This is achieved by determining the cumulative elevation above Highest Astronomical Tide that must be traversed along the shortest path from tidally influenced coastal waters and mangroves at each pixel location (Fig. 6), using the following datasets:
 
 - Shuttle Radar Topography Mission (SRTM) Digital Elevation Model Version 1 (Gallant et al., 2011)
 - A Highest Astronomical Tide Dataset developed at CSIRO [(Branson, 2023)](https://data.csiro.au/collection/csiro%3A61319v1)
@@ -247,7 +245,7 @@ Coastal connectivity is used here as a covariate layer within the modelling proc
 
 :::{figure} /_files/dea-coastalecosystems/connectivity_Mallacoota.png
 
-**Figure 7**  *a*) Mallacoota, Victoria; *b*) Highly connected areas have low connectivity values e.g. low elevations, connected to tidally influenced areas, have low connectivity values(light grey). Elevated areas are penalised with high connectivity values (dark grey), even if located close to tidally influenced areas.
+**Figure 6**  *a*) Mallacoota, Victoria; *b*) Highly connected areas have low connectivity values e.g. low elevations, connected to tidally influenced areas, have low connectivity values(light grey). Elevated areas are penalised with high connectivity values (dark grey), even if located close to tidally influenced areas.
 
 :::
 
@@ -256,6 +254,7 @@ Coastal connectivity is used here as a covariate layer within the modelling proc
 The full expanded Training Point dataset was attributed with covariate data from both the 2021 and 2022 modelling year covariate stacks. Training points where covariates were derived from <10 clear observations in either modelling year were removed from the relevant modelling year dataset, along with training points for the Sub-tidal Seagrass classification (see [Future Work](./?tab=quality)).
 
 Both of these attributed annual Training Point datasets were then combined to form the final datasets for Model training.
+
 #### Model training (todo: links and expert review)
 The DEA Coastal Ecosystem Map workflow trains two [random-forest classifiers](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html) for each of the seven [modelled regions](#regional-modelling) from the covariate-attributed stack of training data: 
 
@@ -272,11 +271,11 @@ Multi-class and binary random-forest models were fit for each region using:
 - Maximum (tree? Branch?) depth of 10
 
 Each model was first trained and evaluated using a [k-fold cross-validation train/test split](https://scikit-learn.org/stable/modules/cross_validation.html#computing-cross-validated-metrics) of the training data  to report accuracy statistics and refine optimal model parameters. Overall model accuracy statistics are reported in the [Quality](./?tab=quality) tab. Optimized model parameters were then used to retrain the final random-forest classifiers using the full training data set for the multi-class model and the intertidal masked training data set for the seagrass model.
-The combined 2021 and 2022 stacks of covariate-trained training data ensure the classifier models are suitable for prediction into both years. Common covariates that exhibited a top-10 feature importance for the ecosystem models include the NDVI and MNDWI percentiles as well as the coastal-connectivity (Fig. 8).
+The combined 2021 and 2022 stacks of covariate-trained training data ensure the classifier models are suitable for prediction into both years. Common covariates that exhibited a top-10 feature importance for the ecosystem models include the NDVI and MNDWI percentiles as well as the coastal-connectivity (Fig. 7).
 
 :::{figure} /_files/dea-coastalecosystems/ML_Feature_Importance.png
 
-**Figure 8** shows the commonality between covariates that appear in the top 10 most important covariates for each of the seven regional ecosystem models. The y-axis represents the number of regional models where the covariate features in the top-10.
+**Figure 7** shows the commonality between covariates that appear in the top 10 most important covariates for each of the seven regional ecosystem models. The y-axis represents the number of regional models where the covariate features in the top-10.
 
 :::
 
@@ -285,7 +284,7 @@ Coastal ecosystems were predicted into the Covariates stacks created for the CEM
 
 Initial predictions were made using the multi-class ecosystem model, generating interim probability layers for mangrove, saltmarsh and salt flat ecosystems. An interim classified ecosystem output layer is also generated to capture the highest probability ecosystem class predicted for each pixel by the model.
 
-The interim classified ecosystem output layer includes mangrove, saltmarsh and saltflat classes ([Fig. 4](#workflow)). Water and Terrestrial classes in this interim layer are classified as `NoData`. 
+The interim classified ecosystem output layer includes mangrove, saltmarsh and saltflat classes ([Fig. 3](#workflow)). Water and Terrestrial classes in this interim layer are classified as `NoData`. 
 
 The Intertidal modelling extent is then set using the high confidence intertidal extent from the [DEA Intertidal](https://knowledge.dea.ga.gov.au/data/product/dea-intertidal/#core-product-layers) dataset. The Intertidal model is then used to predict Intertidal seagrass into the annual covariate stacks masked to this modelling extent. The output from this process is the interim Intertidal seagrass probability layer.
 
@@ -310,7 +309,11 @@ The following rules and processes were applied, with justifications or links to 
 #### Probability masking
 1. **Apply probability threshold**: Pixels with values of less than 20 % were removed from the Mangrove, Saltmarsh and Saltflat probability layers to remove very low confidence pixels and noise from the dataset to improve interpretability.
 
-## Software (todo)
+## Software
+
+- The [Coastal Ecosystems GitHub](https://github.com/GeoscienceAustralia/dea-coastalecosystems) code repository contains the core functionality required to run the DEA Coastal Ecosystem Map workflow. The code leverages functions from [DEA Tools](https://knowledge.dea.ga.gov.au/notebooks/Tools/) that have dependencies on [Scikitlearn](https://scikit-learn.org/stable/).
+- The [DEA Tools](https://knowledge.dea.ga.gov.au/notebooks/Tools/) library contains essential functionality required to generate random-forest models on [DEA Analysis-Ready-Data](https://knowledge.dea.ga.gov.au/data/category/dea-surface-reflectance/)
+- The [Scikitlearn](https://scikit-learn.org/stable/) library provided the random-forest classification methodologies.
 
 ## References
 
