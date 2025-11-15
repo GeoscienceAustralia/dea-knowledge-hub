@@ -49,29 +49,39 @@ The DEA Coastal Ecosystem Map is a multi-layered dataset and is produced for two
 
 ### Core Product Layers
 Five core layers are included in The DEA Coastal Ecosystem Map: the classification and four probability layers.
-#### *Classification* (todo: fix links, add figures)
-The primary layer of the DEA Coastal Ecosystem Map is a categorical classification of the extent of mangrove, saltmarsh, intertidal and intertidal seagrass coastal ecosystems (Figure A). The layer is built from thresholds of the ecosystem probability layers (link to below), and constrained, modified and masked with a range of ancillary datasets and QA/QC processes (See Contextual Editing).
-Product layers for each calendar year of the product time range are published with the following categorical class values:
+#### *Classification*
+The primary layer of the DEA Coastal Ecosystem Map is a categorical classification of the extent of mangrove, saltmarsh, intertidal and intertidal seagrass coastal ecosystems (Fig 1). The layer is built from thresholds of the ecosystem probability layers (below), and constrained, modified and masked with a range of ancillary datasets and QA/QC processes (See [Contextual Editing](#4-contextual-editing)).
+
+Product layers for 2021 and 2022 are published with the following categorical class values:
 
 - Intertidal (2)
 - Mangrove (3)
 - Saltmarsh (4)
 - Intertidal Seagrass (5) 
 
-[Placeholder Figure A]
+:::{figure} /_files/dea-coastalecosystems/low_tide_composite_2021_bermagui.png
+{figure} /_files/dea-coastalecosystems/classification_bermagui_2021.png
 
-#### *Probability* (todo: links and figures)
-Individual ecosystem probability layers are provided as supporting datasets to aid the interpretation of extents for four ecosystem classes, Mangroves, Saltmarsh, Saltflat and Intertidal Seagrass (Figure B). Probability values in these layers represent the percentage of random-forest trees that vote at each pixel for a given ecosystem in the relevant Machine Learning model; the Ecosystem Model (Mangroves, Saltmarsh, Saltflat) and the Intertidal Model (Intertidal Seagrass).
+**Figure 1** Bermagui, NSW. Above: the 2021 low tide [DEA Tidal Composite](https://knowledge.dea.ga.gov.au/data/product/dea-tidal-composites/). Below: the 2021 DEA Coastal Ecosystem Map.
 
-The Intertidal class within the Intertidal model has been fixed to the extent of the DEA Intertidal Extents product (see Machine Learning/Ecosystem Prediction), so the probability layer for this ecosystem is not provided. As the Intertidal Seagrass is modelled within this fixed extent, the corresponding probability layer is also constrained to these extents.
+:::
+
+#### *Probability*
+Individual ecosystem probability layers are provided as supporting datasets to aid the interpretation of extents for four ecosystem classes, Mangrove, Saltmarsh, Saltflat and Intertidal Seagrass (Fig 2). Probability values in these layers represent the percentage of random-forest trees that vote at each pixel for a given ecosystem in the relevant [Machine Learning model](#model-training); the Ecosystem Model (Mangroves, Saltmarsh, Saltflat) and the Intertidal Model (Intertidal Seagrass).
+
+The Intertidal class within the Intertidal model has been fixed to the extent of the [DEA Intertidal Extents product](https://knowledge.dea.ga.gov.au/data/product/dea-intertidal/?tab=description#core-product-layers) (see [Ecosystem Prediction](#ecosystem-prediction)), so the probability layer for this ecosystem is not provided. As the Intertidal Seagrass is modelled within this fixed extent, the corresponding probability layer is also constrained to these extents.
 
 Probability layers for ecosystem layers in the Ecosystem Model (Mangroves, Saltmarsh and Saltflat) are masked below 20% probability to remove very low confidence pixels and noise from the dataset to improve interpretability.
 
-The Saltflat ecosystem has been excluded from the classification product layer, though the probability layer generated for this ecosystem as part of the Ecosystem Model has been provided. For the reasoning behind this decision, and a discussion on further work required on this ecosystem class, see Saltflats Caveats section.
+The Saltflat ecosystem has been excluded from the classification product layer, though the probability layer generated for this ecosystem as part of the Ecosystem Model has been provided. For the reasoning behind this decision, and a discussion on further work required on this ecosystem class, see Saltflats [Caveats](./?tab=quality) section.
 
-For further information how these Probability layers can be interpreted and used to aid in interpretation of the classified ecosystem map, including for mixed or transitional classes, see Prob Caveats 
+For further information how these Probability layers can be interpreted and used to aid in interpretation of the classified ecosystem map, including for mixed or transitional classes, see [Prob Caveats]((./?tab=quality)).
 
-[Placeholder Figure B]
+:::{figure} /_files/dea-coastalecosystems/probabilities_Bermagui_2021.png
+
+**Figure 2** Bermagui, NSW. DEA Coastal Ecosystem Map probability layers.
+
+:::
 
 ### Quality Assurance Layers
 Two quality assurance layers (Figure C) are included in the DEA CEM product suite: 
