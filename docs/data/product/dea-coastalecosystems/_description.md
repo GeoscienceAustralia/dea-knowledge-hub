@@ -60,6 +60,7 @@ Product layers for 2021 and 2022 are published with the following categorical cl
 - Intertidal Seagrass (5) 
 
 :::{figure} /_files/dea-coastalecosystems/low_tide_composite_2021_bermagui.png
+:::
 
 :::{figure} /_files/dea-coastalecosystems/classification_bermagui_2021.png
 
