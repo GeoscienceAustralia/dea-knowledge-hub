@@ -124,7 +124,8 @@ These components are discussed in further detail below. The validation process i
 **Figure 3** Primary components and outputs of the DEA Coastal Ecosystem Map workflow
 :::
 
-### 1. Training data
+
+:::{dropdown} 1. Training data
 
 #### Data curation
 
@@ -195,7 +196,9 @@ This approach balanced the need for increased training data volume across all se
 | SE | 9234 | 3891 | 7514 | 15512 | 422 | 64705 | 9734 | 111012 |
 | Tas. | 2697 | 1359 | 0 | 3120 | 0 | 5622 | 1319 | 14117 |
 
-### 2. Covariate Data
+:::
+
+:::{dropdown} 2. Covariate Data
 Covariate data describes the input datasets used to train the ML models. Covariate data stacks were generated using a combination of [Sentinel-2 Analysis Ready Data]((https://knowledge.dea.ga.gov.au/data/category/dea-surface-reflectance/)), remote-sensing indices and derived datasets (Table 3). These covariate stacks of 131 total variables were generated for each of the modelling years.
 
 **Table 3** Covariate datasets used to model coastal ecosystems
@@ -253,7 +256,9 @@ Coastal connectivity is used here as a covariate layer within the modelling proc
 **Figure 6**  *a*) Mallacoota, Victoria low-tide [DEA Tidal Composite](https://knowledge.dea.ga.gov.au/data/product/dea-tidal-composites/) for 2021; *b*) Low elevation areas, highly connected to tidally-influenced coastlines, have low connectivity values (light grey). Elevated areas are penalised with high connectivity values (dark grey), even if located close to tidally influenced areas.
 :::
 
-### 3. Machine Learning
+:::
+
+:::{dropdown} 3. Machine Learning
 #### Training Point Attribution
 The full expanded Training Point dataset was attributed with covariate data from both the 2021 and 2022 modelling year covariate stacks. Training points where covariates were derived from <10 clear observations in either modelling year were removed from the relevant modelling year dataset.
 
@@ -291,7 +296,9 @@ Initial predictions were made using the multi-class ecosystem model, generating 
 
 The Intertidal modelling extent was then set using the high confidence intertidal extent from the [DEA Intertidal](https://knowledge.dea.ga.gov.au/data/product/dea-intertidal/#core-product-layers) dataset. The Intertidal model was then used to predict Intertidal seagrass from the annual covariate stacks masked to this modelling extent. The output from this process is the interim Intertidal seagrass probability layer ([Fig. 3](#workflow)).
 
-### 4. Contextual editing
+:::
+
+:::{dropdown} 4. Contextual editing
 The interim classified ecosystem layer defines classes based on the highest probability class for each pixel, which can result in a classification based on relatively low probability values were a pixel is modelled as a likely mixed ecosystem. Combined with the inherent uncertainty and resulting misclassification when applying a ML mapping methodology at a continental scale, this meant that a range of rulesets and post-processing operations were applied, collectively termed ‘contextual editing’, to deliver the final *classification* layer.
 
 Probability layers were also masked in this contextual editing process, as described in the [probability layer description](#probability).
@@ -312,6 +319,8 @@ All classifier rulesets were applied to the interim ecosystem classification lay
 1. **Remove and replace isolated pixel groups**: To reduce pixel based noise in the data, the *classification* layer was sieved to remove and replace isolated pixels in groups of 9 or less with the dominant surrounding class type.
 #### Probability masking
 1. **Apply probability threshold**: Pixels with values of less than 20 % were removed from the Mangrove, Saltmarsh and Saltflat probability layers to remove very low confidence pixels and noise from the dataset to improve interpretability.
+
+:::
 
 ## Software
 
