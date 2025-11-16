@@ -125,9 +125,9 @@ These components are discussed in further detail below. The validation process i
 :::
 
 
-:::{dropdown} 1. Training data
+### 1. Training data
 
-#### Data curation
+:::{dropdown} Data curation
 
 [Continental training data](https://github.com/GeoscienceAustralia/dea-coastalecosystems/blob/main/data/training_data_input/MultEcosy_TData_v1_0.geojson), developed for [this work](https://github.com/GeoscienceAustralia/dea-coastalecosystems/blob/main/docs/publications/JCU_Coastal_Training_Data_Report_1_27012023_FR%20.pdf) (Canto et al., 2023), comprised a point-record training set of 40,934 Australian coastal ecosystem type occurrences (Fig. 4). Development of this dataset was completed for use with multi-ecosystem classification models.
 
@@ -142,8 +142,9 @@ The dataset integrated occurrence records from four data sources:
 
 **Figure 4** (after Canto et al., 2023; Becker et al., 2023). 40,934 expert labelled point occurrences of coastal ecosystem types, distributed continentally around the Australian coastline.
 :::
+:::
 
-#### Ecosystem definitions
+:::{dropdown} Ecosystem definitions
 The training data definitions for Australian coastal ecosystems (Table 1, Canto et al., 2023) were sourced from the Blue Carbon Method (CER, 2022) and the International Union for Conservation of Nature Global Ecosystem Typology (Keith et al., 2022). 
 
 Training point class descriptors (level 2, L2) were aggregated into broader level 1 (L1) class categories to form the basis of the DEA Coastal Ecosystem Map. The mapping of L2 to L1 ecosystem types, and their definitions, are described in Table 1.
@@ -159,8 +160,9 @@ Training point class descriptors (level 2, L2) were aggregated into broader leve
 | • Saltmarsh<br>• Algal Mats | Saltmarsh | Ecosystem comprised of a) salt tolerant herbaceous plants and occasionally woody shrubs; and b) occur on floodplains and in estuaries and can be flushed with water from a combinations of sources including rainfall, rivers, groundwater and seawater. This includes saltmarsh in sparsely vegetated saline or hypersaline ecosystems. |
 | • Seagrass (intertidal) | Intertidal seagrass | Ecosystem comprised of grass-like plants that grow in shallow intertidal coastal waters. Seagrasses are aquatic flowering plants that form meadows in temperate and tropical regions of Australia. |
 | • Saltflat | Saltflat | A subtype of saltmarsh ecosystems comprising bare saltmarsh. Saltflats include sparsely vegetated saline or hypersaline ecosystems |
+:::
 
-#### Regional modelling
+:::{dropdown} Regional modelling
 A bioregional approach was used to improve modelling performance by accounting for regional ecological variations while maintaining the ability to apply a consistent classification schema. 
 
 Seven bioregions (Fig. 5) were developed with expert consultation across Geoscience Australia, University of Queensland, James Cook University and University of New South Wales, guided by Natural Resource Management regions, tidal regimes, climate forcing and ecosystem dynamics. 
@@ -174,8 +176,9 @@ It is important that these regions be regarded as a pragmatic technical choice r
 ***Figure 5*** Seven biogregions were used to model coastal ecosystems
 
 :::
+:::
 
-#### Training Point Expansion
+:::{dropdown} Training Point Expansion
 Introducing modelling regions had implications for the size and balance of the training data sets once split across the seven bioregions, with many ecosystem training point classes falling below a reasonable representative sample number. 
 
 The development of the original training data set on Landsat 30 m data, coupled with an acquisition protocol focused on spatially homogenous regions, presented an opportunity to expand the training data sets when considering the increased resolution of the Sentinel-2 based CEM product. With Sentinel-2's 10 m resolution pixels falling within the tolerance established for the training data point validity (30-40 m), a semi-automated process was implemented to expand the existing training dataset. This semi-automated approach was particularly effective for densifying training data coverage in homogeneous ecosystem patches while maintaining data quality.
@@ -198,7 +201,8 @@ This approach balanced the need for increased training data volume across all se
 
 :::
 
-:::{dropdown} 2. Covariate Data
+### 2. Covariate Data
+:::{dropdown} Covariate Data Stack
 Covariate data describes the input datasets used to train the ML models. Covariate data stacks were generated using a combination of [Sentinel-2 Analysis Ready Data]((https://knowledge.dea.ga.gov.au/data/category/dea-surface-reflectance/)), remote-sensing indices and derived datasets (Table 3). These covariate stacks of 131 total variables were generated for each of the modelling years.
 
 **Table 3** Covariate datasets used to model coastal ecosystems
@@ -242,7 +246,9 @@ Covariate data describes the input datasets used to train the ML models. Covaria
 | Coastal Connectivity | Cost-distance |  | 1 |
 |Total Covariates |  |  | 131 |
 
-#### Coastal Connectivity
+:::
+
+:::{dropdown} Coastal Connectivity
 The Coastal Connectivity layer (also published as a [QA product layer](#quality-assurance-layers)) was designed as an accumulated cost-distance dataset to indicate likely coastal pixels. This was achieved by determining the cumulative elevation above Highest Astronomical Tide that must be traversed along the shortest path from tidally influenced coastal waters and mangroves at each pixel location (Fig. 6), using the following datasets:
 
 - Shuttle Radar Topography Mission Digital Elevation Model Version 1 (Gallant et al., 2011)
@@ -258,13 +264,14 @@ Coastal connectivity is used here as a covariate layer within the modelling proc
 
 :::
 
-:::{dropdown} 3. Machine Learning
-#### Training Point Attribution
+### 3. Machine Learning
+:::{dropdown} Training Point Attribution
 The full expanded Training Point dataset was attributed with covariate data from both the 2021 and 2022 modelling year covariate stacks. Training points where covariates were derived from <10 clear observations in either modelling year were removed from the relevant modelling year dataset.
 
 Both of these attributed annual Training Point datasets were then combined to form the final datasets for Model training.
+:::
 
-#### Model training (TODO: EXPERT REVIEW)
+:::{dropdown} Model training (TODO: EXPERT REVIEW)
 The DEA Coastal Ecosystem Map workflow trains two [random-forest classifiers](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html) for each of the seven [modelled regions](#regional-modelling) from the covariate-attributed stack of training data: 
 
 - a multi-class ecosystem model (mangrove, saltmarsh and salt flat) and;
@@ -288,8 +295,9 @@ The combined 2021 and 2022 stacks of covariate-trained training data ensure the 
 **Figure 7** shows the commonality between covariates that appear in the top 10 most important covariates for each of the seven regional ecosystem models. The y-axis represents the number of regional models where the covariate features in the top-10.
 
 :::
+:::
 
-#### Ecosystem prediction
+:::{dropdown} Ecosystem prediction
 Coastal ecosystems were predicted using Covariate data stacks created for each modelling year.
 
 Initial predictions were made using the multi-class ecosystem model, generating interim probability layers for mangrove, saltmarsh and salt flat ecosystems ([Fig. 3](#workflow)). An interim classified ecosystem output layer was also generated to capture the highest probability ecosystem class predicted for each pixel and included mangrove, saltmarsh and saltflat classes. Water and Terrestrial classes in this interim layer were classified as `nodata`. 
@@ -298,13 +306,16 @@ The Intertidal modelling extent was then set using the high confidence intertida
 
 :::
 
-:::{dropdown} 4. Contextual editing
+### 4. Contextual editing
+:::{dropdown} Rationale
 The interim classified ecosystem layer defines classes based on the highest probability class for each pixel, which can result in a classification based on relatively low probability values were a pixel is modelled as a likely mixed ecosystem. Combined with the inherent uncertainty and resulting misclassification when applying a ML mapping methodology at a continental scale, this meant that a range of rulesets and post-processing operations were applied, collectively termed ‘contextual editing’, to deliver the final *classification* layer.
 
 Probability layers were also masked in this contextual editing process, as described in the [probability layer description](#probability).
 
-The following rules and processes were applied, with justifications or links to further discussion points included below:
+The following section details the rules and processes that were applied, with justifications or links to further discussion points.
+:::
 
+:::{dropdown} Classifier rulesets and masking
 #### Classifier rulesets
 All classifier rulesets were applied to the interim ecosystem classification layer ([Fig. 3](#workflow)) to produce the final *classification* dataset.
 
@@ -317,7 +328,8 @@ All classifier rulesets were applied to the interim ecosystem classification lay
 1. **Apply manual mask**: A manual masking process was applied to the *classification* layer, based on expert identified misclassifications (including roads, urban areas, terrain shadow, data noise). For full traceability this polygon masking layer is provided here. **TODO (link to dataset on Github??)**
 1. **Apply land use mask**: Industrial, urban or road areas as identified in the Australian Catchment Scale Land Use and Management dataset (ABARES,2021) were removed.
 1. **Remove and replace isolated pixel groups**: To reduce pixel based noise in the data, the *classification* layer was sieved to remove and replace isolated pixels in groups of 9 or less with the dominant surrounding class type.
-#### Probability masking
+:::
+:::{dropdown} Probability masking
 1. **Apply probability threshold**: Pixels with values of less than 20 % were removed from the Mangrove, Saltmarsh and Saltflat probability layers to remove very low confidence pixels and noise from the dataset to improve interpretability.
 
 :::
