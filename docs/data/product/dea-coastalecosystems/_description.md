@@ -117,12 +117,12 @@ ga_s2_coastalecosystems_cyear_3_v1-0-0_AU_2021—P1Y_final_classification.tif
 ### Workflow
 The DEA Coastal Ecosystem Map is a machine learning workflow comprised of four primary components (Fig 3): Training data, Covariate data, Machine learning and Contextual editing. 
 
-These components are discussed in further detail below. The validation process is discussed in the [Quality](./?tab=quality) section.
-
 :::{figure} /_files/dea-coastalecosystems/CEM_flowchart.png
 
 **Figure 3** Primary components and outputs of the DEA Coastal Ecosystem Map workflow
 :::
+
+These components are discussed in further detail below. The validation process is discussed in the [Quality](./?tab=quality) section.
 
 ### 1. Training data
 :::{dropdown} Data curation
