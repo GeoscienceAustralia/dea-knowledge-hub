@@ -59,10 +59,7 @@ Product layers for 2021 and 2022 are published with the following categorical cl
 - Saltmarsh (4)
 - Intertidal Seagrass (5) 
 
-:::{figure} /_files/dea-coastalecosystems/low_tide_composite_2021_bermagui.png
-:::
-
-:::{figure} /_files/dea-coastalecosystems/classification_bermagui_2021.png
+:::{figure} /_files/dea-coastalecosystems/classification_bermagui_2021_LTC.png
 
 **Figure 1** Bermagui, NSW. Above: the 2021 low-tide [DEA Tidal Composite](https://knowledge.dea.ga.gov.au/data/product/dea-tidal-composites/). Below: the 2021 DEA Coastal Ecosystem Map.
 
@@ -278,11 +275,11 @@ Multi-class and binary random-forest models were fit for each region using: **CO
 
 Each model was first trained and evaluated using a [k-fold cross-validation train/test split](https://scikit-learn.org/stable/modules/cross_validation.html#computing-cross-validated-metrics) of the training data  to report accuracy statistics and refine optimal model parameters. Overall model accuracy statistics are reported in the [Quality](./?tab=quality) tab. Optimized model parameters were then used to retrain the final random-forest classifiers using the full training data set for the multi-class model and the intertidal masked training data set for the seagrass model. 
 
-The combined 2021 and 2022 stacks of covariate-trained training data ensure the classifier models are suitable for prediction into both years. Common covariates that exhibited a top-10 feature importance for the ecosystem models include the NDVI and MNDWI percentiles as well as the coastal-connectivity (Fig. 7). **Is this meaningful? Should I reproduce for seagrass?**
+The combined 2021 and 2022 stacks of covariate-trained training data ensured the classifier models were suitable for prediction into both years. Common covariates that exhibited a top-10 feature importance for the ecosystem models included the NDVI and MNDWI percentiles as well as the coastal-connectivity. Common top-10 feature importance covariates for the seagrass models included the tasselled cap wetness percentiles and red_edge, nir and swir bands from the low-tide [DEA Tidal Composite](https://knowledge.dea.ga.gov.au/data/product/dea-tidal-composites/) (Fig. 7).
 
 :::{figure} /_files/dea-coastalecosystems/ML_Feature_Importance.png
 
-**Figure 7** shows the commonality between covariates that appear in the top 10 most important covariates for each of the seven regional ecosystem models. The y-axis represents the number of regional models where the covariate features in the top-10.
+**Figure 7** shows commonality in the top 10 most important covariates for each of the seven regional ecosystem (above) and seagrass (below) models. The y-axis represents the number of regional models where the covariate features in the top-10.
 :::
 :::
 :::{dropdown} Ecosystem prediction
