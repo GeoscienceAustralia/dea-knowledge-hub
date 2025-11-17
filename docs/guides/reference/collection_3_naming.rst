@@ -17,52 +17,44 @@ sourced from a growing number of different satellite missions. The DEA Naming
 Conventions aim to make naming of data collections consistent across science 
 data products and platforms. 
 
-Diffterent types of Science Data Products
+Different types of science data products
 -----------------------------------------
 
 Depending on the type of science data product, or from which satellite mission 
 the data was sourced, science data products published by DEA come in three 
 principle forms: 
 
-- Baseline Analysis Ready Data (ARD) or surface reflectance. This can use the 
-World Reference System (WRS-2) as its spatial reference if sourced from 
-Landsat, or the Military Grid Reference System (MGRS) if sourced from 
-Sentinel-2. 
-- Derivative (of ARD) data that has a one-to-one correspondence of pixels and 
-datasets to its parent ARD. This can use WRS-2 as its spatial reference if 
-sourced from Landsat, or MGRS if sourced from Sentinel-2. 
-- Derivative summary data, or a summary of a time period (monthly, seasonal, 
-calendar year, financial year, all of available time). These will use the 
-Collection 3 grid specification for its spatial reference. 
+- Baseline Analysis Ready Data (ARD) or surface reflectance. This can use the World Reference System (WRS-2) as its spatial reference if sourced from Landsat, or the Military Grid Reference System (MGRS) if sourced from Sentinel-2.
+- Derivative (of ARD) data that has a one-to-one correspondence of pixels and datasets to its parent ARD. This can use WRS-2 as its spatial reference if sourced from Landsat, or MGRS if sourced from Sentinel-2. 
+- Derivative summary data, or a summary of a time period (monthly, seasonal, calendar year, financial year, all of available time). These will use the Collection 3 grid specification for its spatial reference. 
 
-Science Data Product naming principles
+Science data product naming principles
 --------------------------------------
 
-Science data product names meet the following principles: 
+Science data product names are designed to meet the following principles: 
 
 1. Unique names/identifiers. 
 2. Human readable.
-3. Ease of navigation to enable spatio-temporal navigation and minimise number 
-of directory levels.
+3. Ease of navigation to enable spatio-temporal navigation and minimise number of directory levels.
 4. Consistency terminology between different representations of the data.
 5. Concise directory structure that provides logical context for each step.
 6. Informative base filenames that provide what, when and where.
 7. No redundant information in the filename.
 8. Provides distinction between other providers of similar data.
-9. Provides distinction between different instances of data (i.e. maturity levels. 
+9. Provides distinction between different instances of data (i.e. maturity levels.)
 10. Provides distinction between different versions of a science data product.
 11. Correct level of science data product abstraction.
 12. Understand limitations on filesystems.
 13. Works consistently between different platforms.
 14. Directories must have less than 1000 items contained within.
 
-Science Data Product versioning and naming
+Science data product versioning and naming
 ------------------------------------------
 
 The product name consists of the organisation, platform/sensor, data science 
 product code, collection number and version.  
 
-ga_s2_fmc_3_v1  
+- ga_s2_fmc_3_v1  
 
 The collection number is inherited from the base product that the data science 
 product was derived from. For examples, derivative products which are produced 
@@ -75,11 +67,11 @@ are backwards incompatible. The purpose of appending the version to the end of
 the science data product name is to prevent collisions in data management 
 systems such as Open Data Cube (ODC).  
 
-ga_s2_fmc_3_v1 
-ga_s2_fmc_3_v2 
-ga_s2_fmc_3_v3 
+- ga_s2_fmc_3_v1 
+- ga_s2_fmc_3_v2 
+- ga_s2_fmc_3_v3 
 
-Path, Dataset versioning and naming
+Path, dataset versioning and naming
 -----------------------------------
 
 Dataset versioning will be included in the base part of the filename only, 
@@ -89,6 +81,7 @@ standalone and self-describing.
 For example: 
 
 ga_s2_fmc_3_v1/55/HEC/2024/12/07/20241207T011213/ga_s2_fmc_3_v1-0-0_55HEC_2024-12-07_final_fmc.tif 
+
 - ga_s2_fmc_3_v1 science data product name 
 - 55/HEC spatial identifier (x then y) 
 - 2024-12-07 acquisition date 
@@ -99,7 +92,7 @@ The dataset versioning identifier permits appending to an existing product when
 there is a minor or patch increment due to an update in the algorithmic 
 methodology and/or the compute environment. 
 
-Science Data Products requiring a one-to-one relationship with data acquisitions
+Science data products requiring a one-to-one relationship with data acquisitions
 --------------------------------------------------------------------------------
 
 An additional directory layer for including the DATATAKE_SENSING_START_TIME 
@@ -107,7 +100,7 @@ that enables more than one acquisition over a given region in a single solar
 day to be stored without collision. 
 
 For future roll-outs, this DATATAKE_SENSING_START_TIME, or BURST_TIME for the 
-SAR case, will also include this information in the base filename itself. 
+SAR (Synthetic Aperture Radar) case, will also include this information in the base filename itself. 
 
 Science Data Products not requiring a one-to-one relationship with data acquisitions
 ------------------------------------------------------------------------------------ 
@@ -163,25 +156,25 @@ increments of the dataset versioning.
    * - ls
      - Landsat
    * - s1a
-     - Sentinel 1A
+     - Sentinel-1A
    * - s1b
-     - Sentinel 1B
+     - Sentinel-1B
    * - s1
-     - Sentinel 1
+     - Sentinel-1
    * - s2a
-     - Sentinel 2A
+     - Sentinel-2A
    * - s2b
-     - Sentinel 2B
+     - Sentinel-2B
    * - s2
-     - Sentinel 2
+     - Sentinel-2
    * - s3a
-     - Sentinel 3A
+     - Sentinel-3A
    * - s3b
-     - Sentinel 3B
+     - Sentinel-3B
    * - s3
-     - Sentinel 3
+     - Sentinel-3
    * - hi8
-     - Himawari 8
+     - Himawari-8
    * - ter
      - Terra
    * - aqu
@@ -200,7 +193,7 @@ increments of the dataset versioning.
    * - t
      - Thermal Infrared Sensor (TIRS)
    * - c
-     - Combined Operational Land Imager and the Thermal Infrared Sensor
+     - Combined; eg OLI and TIRS
    * - o
      - Operational Land Imager (OLI)
    * - t
