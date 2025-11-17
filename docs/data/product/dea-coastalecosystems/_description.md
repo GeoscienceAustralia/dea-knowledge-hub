@@ -124,11 +124,8 @@ These components are discussed in further detail below. The validation process i
 **Figure 3** Primary components and outputs of the DEA Coastal Ecosystem Map workflow
 :::
 
-
 ### 1. Training data
-
 :::{dropdown} Data curation
-
 [Continental training data](https://github.com/GeoscienceAustralia/dea-coastalecosystems/blob/main/data/training_data_input/MultEcosy_TData_v1_0.geojson), developed for [this work](https://github.com/GeoscienceAustralia/dea-coastalecosystems/blob/main/docs/publications/JCU_Coastal_Training_Data_Report_1_27012023_FR%20.pdf) (Canto et al., 2023), comprised a point-record training set of 40,934 Australian coastal ecosystem type occurrences (Fig. 4). Development of this dataset was completed for use with multi-ecosystem classification models.
 
 The dataset integrated occurrence records from four data sources:
@@ -143,7 +140,6 @@ The dataset integrated occurrence records from four data sources:
 **Figure 4** (after Canto et al., 2023; Becker et al., 2023). 40,934 expert labelled point occurrences of coastal ecosystem types, distributed continentally around the Australian coastline.
 :::
 :::
-
 :::{dropdown} Ecosystem definitions
 The training data definitions for Australian coastal ecosystems (Table 1, Canto et al., 2023) were sourced from the Blue Carbon Method (CER, 2022) and the International Union for Conservation of Nature Global Ecosystem Typology (Keith et al., 2022). 
 
@@ -161,7 +157,6 @@ Training point class descriptors (level 2, L2) were aggregated into broader leve
 | • Seagrass (intertidal) | Intertidal seagrass | Ecosystem comprised of grass-like plants that grow in shallow intertidal coastal waters. Seagrasses are aquatic flowering plants that form meadows in temperate and tropical regions of Australia. |
 | • Saltflat | Saltflat | A subtype of saltmarsh ecosystems comprising bare saltmarsh. Saltflats include sparsely vegetated saline or hypersaline ecosystems |
 :::
-
 :::{dropdown} Regional modelling
 A bioregional approach was used to improve modelling performance by accounting for regional ecological variations while maintaining the ability to apply a consistent classification schema. 
 
@@ -174,10 +169,8 @@ It is important that these regions be regarded as a pragmatic technical choice r
 :::{figure} /_files/dea-coastalecosystems/Labelled_tile_regions.png
 
 ***Figure 5*** Seven biogregions were used to model coastal ecosystems
-
 :::
 :::
-
 :::{dropdown} Training Point Expansion
 Introducing modelling regions had implications for the size and balance of the training data sets once split across the seven bioregions, with many ecosystem training point classes falling below a reasonable representative sample number. 
 
@@ -247,7 +240,6 @@ Covariate data describes the input datasets used to train the ML models. Covaria
 |Total Covariates |  |  | 131 |
 
 :::
-
 :::{dropdown} Coastal Connectivity
 The Coastal Connectivity layer (also published as a [QA product layer](#quality-assurance-layers)) was designed as an accumulated cost-distance dataset to indicate likely coastal pixels. This was achieved by determining the cumulative elevation above Highest Astronomical Tide that must be traversed along the shortest path from tidally influenced coastal waters and mangroves at each pixel location (Fig. 6), using the following datasets:
 
@@ -261,7 +253,6 @@ Coastal connectivity is used here as a covariate layer within the modelling proc
 
 **Figure 6**  *a*) Mallacoota, Victoria low-tide [DEA Tidal Composite](https://knowledge.dea.ga.gov.au/data/product/dea-tidal-composites/) for 2021; *b*) Low elevation areas, highly connected to tidally-influenced coastlines, have low connectivity values (light grey). Elevated areas are penalised with high connectivity values (dark grey), even if located close to tidally influenced areas.
 :::
-
 :::
 
 ### 3. Machine Learning
@@ -270,7 +261,6 @@ The full expanded Training Point dataset was attributed with covariate data from
 
 Both of these attributed annual Training Point datasets were then combined to form the final datasets for Model training.
 :::
-
 :::{dropdown} Model training (TODO: EXPERT REVIEW)
 The DEA Coastal Ecosystem Map workflow trains two [random-forest classifiers](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html) for each of the seven [modelled regions](#regional-modelling) from the covariate-attributed stack of training data: 
 
@@ -293,17 +283,14 @@ The combined 2021 and 2022 stacks of covariate-trained training data ensure the 
 :::{figure} /_files/dea-coastalecosystems/ML_Feature_Importance.png
 
 **Figure 7** shows the commonality between covariates that appear in the top 10 most important covariates for each of the seven regional ecosystem models. The y-axis represents the number of regional models where the covariate features in the top-10.
-
 :::
 :::
-
 :::{dropdown} Ecosystem prediction
 Coastal ecosystems were predicted using Covariate data stacks created for each modelling year.
 
 Initial predictions were made using the multi-class ecosystem model, generating interim probability layers for mangrove, saltmarsh and salt flat ecosystems ([Fig. 3](#workflow)). An interim classified ecosystem output layer was also generated to capture the highest probability ecosystem class predicted for each pixel and included mangrove, saltmarsh and saltflat classes. Water and Terrestrial classes in this interim layer were classified as `nodata`. 
 
 The Intertidal modelling extent was then set using the high confidence intertidal extent from the [DEA Intertidal](https://knowledge.dea.ga.gov.au/data/product/dea-intertidal/#core-product-layers) dataset. The Intertidal model was then used to predict Intertidal seagrass from the annual covariate stacks masked to this modelling extent. The output from this process is the interim Intertidal seagrass probability layer ([Fig. 3](#workflow)).
-
 :::
 
 ### 4. Contextual editing
