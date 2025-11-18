@@ -136,7 +136,7 @@
 
       {% endif %}
       {% endfor %}
-   {%- else %}
+   {%- elif not is_current_year %}
    .. grid:: 1 1 1 1
       :gutter: 3
 
