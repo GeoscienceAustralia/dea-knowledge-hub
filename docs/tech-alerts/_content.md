@@ -1,7 +1,7 @@
 % See the DEA Tech Alerts documentation:
 % https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/tech_alerts_changelog.html
 
-## 20 Oct 2025: Landsat production currently impacted by outage
+## 20 Oct 2025: Landsat production currently impacted by outage (Resolved)
 
 Landsat data collected by Landsat 9 since 17 October is unavailable. Landsat 8 higher quality data is also experiencing an outage; however, access to Landsat 8 near real-time data remains operational.  
 
@@ -179,7 +179,7 @@ We are experiencing a heavy load on our systems causing ongoing issues with our 
 
 We are aware that these two outages occurring simultaneously is particularly inconvenient for all our users, and our power-users and organisational partners in particular.  We apologise for this inconvenience.
 
-## 4 Apr 2025: URGENT: The DEA Sandbox is offline until further notice 
+## 4 Apr 2025: URGENT: The DEA Sandbox is offline until further notice (Resolved)
 
 Digital Earth Australia (DEA) is conducting a review of the [DEA Sandbox](https://app.sandbox.dea.ga.gov.au/) to address ongoing technical issues. DEA Sandbox is offline while the review takes place. We will communicate updates with you throughout the review process. We apologise for any inconvenience and appreciate your understanding.
 
@@ -191,7 +191,7 @@ The DEA Notebooks provided in the DEA Sandbox are still available to users via t
 
 [View the Tech Alert](https://communication.ga.gov.au/link/id/zzzz67ef677b62d6b850Pzzzz6567c8b713b5b826/page.html)
 
-## 3 Apr 2025: URGENT: DEA Sandbox will be offline from 4pm Friday 4 April 2025 until further notice
+## 3 Apr 2025: URGENT: DEA Sandbox will be offline from 4pm Friday 4 April 2025 until further notice (Resolved)
 
 Digital Earth Australia (DEA) is conducting a review of the DEA Sandbox to address ongoing technical issues. The DEA Sandbox will be offline from **4pm AEDT Friday 4 April 2025**. Users will not be able to access the DEA Sandbox environment while the review takes place.
 
