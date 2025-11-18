@@ -1,6 +1,16 @@
 % See the DEA Tech Alerts documentation:
 % https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/tech_alerts_changelog.html
 
+## 18 Nov 2025: Digital Earth access to Landsat 8 and 9 data restored
+
+Geoscience Australia access to Landsat 8 and 9 data has been restored following the reopening of the US Government.
+
+Digital Earth Australia is currently processing the backlog of Landsat 8 and 9 data products affected by this outage.
+
+Information regarding the status of data and products is available using the [DEA Explorer](/guides/setup/explorer_guide/) application.
+
+[View the Tech Alert](https://communication.ga.gov.au/link/id/zzzz691c124bb9fb7765Pzzzz61de67bd94bfe861/page.html)
+
 ## 20 Oct 2025: Landsat production currently impacted by outage (Resolved)
 
 Landsat data collected by Landsat 9 since 17 October is unavailable. Landsat 8 higher quality data is also experiencing an outage; however, access to Landsat 8 near real-time data remains operational.  
