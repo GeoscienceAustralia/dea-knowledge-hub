@@ -27,8 +27,8 @@ Key features of the product suite include:
 
 - National environmental economic accounting of Australia's coastal ecosystem extents
 - State of the Environment reporting
-- Complmenting periodic high resolution expert mapping
-- Intergration with other terrestrial and ocean data sets (see [Future work](./?tab=quality))
+- Complementing periodic high resolution expert mapping
+- Integration with other terrestrial and ocean data sets (see [Future work](./?tab=quality))
 
 ## Lineage
 
