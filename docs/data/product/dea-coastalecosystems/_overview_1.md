@@ -2,4 +2,6 @@
 
 ## About
 
-The Digital Earth Australia Coastal Ecosystem Map product suite includes a categorical classification of four coastal ecosystems, supported by probability layers for individual ecosystems and selected quality assurance layers to support product interpretation, for the years 2021 and 2022 and 10 m spatial resolution.
+The DEA Coastal Ecosystems product suite maps the extent and spatial distribution of coastal ecosystems within Australia’s coastal zone, with a focus on those situated landward of the low-tide boundary.
+
+Developed using Sentinel-2 data, the product suite provides an annual 10 m resolution extent classification layer for four ecosystem classes, enabling users to better monitor and understand the distribution of these ecosystems at a continental scale. The classification layer is supported by ecosystem probability layers for each class, to allow a more nuanced interpretation of the modelled ecosystem extents and to provide users flexibilty for tailored mapping approaches.
