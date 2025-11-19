@@ -34,11 +34,14 @@ The [Global Mangrove Watch (GMW) Habitat Mask](https://doi.org/10.5281/zenodo.74
 
 The Mangroves probability layer has not been masked by the GMW Habitat Mask, and it is possible that users may be able to identify small areas of high probability Mangroves not mapped by the masked classification layer. It is encouraged to provide DEA with this feedback, so that we can continue to help the GMW initiative to provide the most suitable masking and mapping layers.
 
-### Interpretation of Probability Layer and Implications for Change Applications
+### Interpretation of Probability Layers and Implications for Change Applications
+
 **Mixed and Transitional ecosystems:** Many ecosystems exist as highly mixed types or transitional ecosystems. These types of ecosystems, particularly when they exist in relatively even cover proportions, are not well represented by categorical mapping products. These zones are often not captured in the 50% probability thresholded Classification layer, and may for example consist of pixels that are modelled with 34% Mangrove, 40% Saltmarsh and 26% Saltflat Probabilities.
+
 **Probability Thresholding and Interpretation:** The 50% probability threshold applied to the Classification of Saltmarsh and Mangroves in the Classification layers is designed to provide a high confidence model of the dominant ecosystem in each coastal pixel. As described above, in mixed or transitional pixels not mapped by the classification layer; or in instances where local knowledge of ecosystem characteristics or vegetation density/canopy cover requires a more nuanced approach, the Ecosystem probability layers are designed to support this interpretation.
 
 Intertidal Seagrass is thresholded in the Classified layer at a 70% probability, primarily to account for inter-annual variability in this ecosystem, aimed at mapping regions of persistent cover over time. It is expected that the Probability layers for this ecosystem are used by seagrass mapping practitioners to enable a more detailed analysis of specific regions or ecosystem characterisation.
+
 **Implications for Change Applications**: Change based applications utilising the Classification layers are to be approached with caution:
 - For classified ecosystems that are mapped at a probability of >50%, these classes are still often in transition and may shift across those thresholds from year to year. Using the classified layer could potentially note the loss (or gain) of that ecosystem erroneously - users should make use of the model probability layers to identify these areas and make case-specific judgement on usage. 
 - In mixed or transitional ecosystems it is expected that change metrics will be highly sensitive and potentially erroneous in these cases – again, users should make use of the model probability layers to identify these areas and make case-specific judgement on usage. 
