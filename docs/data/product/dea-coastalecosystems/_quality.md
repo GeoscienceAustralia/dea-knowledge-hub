@@ -27,18 +27,18 @@ By constraining the extent of this model, we are forcing the classification of p
 Future work will involve densification of the training data to include a more fully representative range of L2 classes considered in this Intertidal class.
 
 ### Connectivity Masking and Saltmarsh
-The Saltmarsh connectivity thresholding assumes that the training data (which are located in predominantly near-shore coastal locations) encompass all possible saltmarsh locations and connectivity values. The limitations of this approach are acknowledged, as demonstrated by hard boundaries visible in the classified saltmarsh dataset such as in Bowling Green Bay QLD. Future work will broaden the spatial range of saltmarsh training data that will improve the connectivity masking threshold used in this part of the workflow.
+The Saltmarsh connectivity thresholding assumes that the training data (which are located in predominantly near-shore coastal locations) encompass all possible saltmarsh locations and connectivity values. The limitations of this approach are acknowledged, as demonstrated by hard boundaries visible in the classified saltmarsh dataset such as in Princess Charlotte Bay QLD. Future work will broaden the spatial range of saltmarsh training data that will improve the connectivity masking threshold used in this part of the workflow.
 
 ### Global Mangrove Watch Masking
 The [Global Mangrove Watch (GMW) Habitat Mask](https://doi.org/10.5281/zenodo.74784913) (Bunting et al. 2025) is widely used in the coastal mapping and scientific community as a layer to constrain the mapping of Mangroves to suitable ecological conditions and zones. It is however acknowledged as a living dataset, with updates contributed by the community of new identified mangroves and mapping extents. For example, in early stages of this project, new regions not captured by the GMW were identified in Batemans Bay, NSW, and these regions were added by GMW to the most recent version of the Habitat mask. 
 
-The Mangroves probability layer has not been masked by the GMW Habitat Mask, and it is possible that users may be able to identify small areas of high probability Mangroves not mapped by the masked classification layer. It is encouraged to provide DEA with this feedback, so that we can continue to help the GMW initiative to provide the most suitable masking and mapping layers.
+Although the Classification layer has been masked by the GMW Habitat Mask, the Mangroves probability layer has not, and it is possible that users may be able to identify small areas of high probability Mangroves not mapped by the masked classification layer. Users are encouraged to provide DEA with this feedback, so that we can continue to help the GMW initiative to provide the most suitable masking and mapping layers.
 
 ### Interpretation of Probability Layers and Implications for Change Applications
 
 **Mixed and Transitional ecosystems:** Many ecosystems exist as highly mixed types or transitional ecosystems. These types of ecosystems, particularly when they exist in relatively even cover proportions, are not well represented by categorical mapping products. These zones are often not captured in the 50% probability thresholded Classification layer, and may for example consist of pixels that are modelled with 34% Mangrove, 40% Saltmarsh and 26% Saltflat Probabilities.
 
-**Probability Thresholding and Interpretation:** The 50% probability threshold applied to the Classification of Saltmarsh and Mangroves in the Classification layers is designed to provide a high confidence model of the dominant ecosystem in each coastal pixel. As described above, in mixed or transitional pixels not mapped by the classification layer; or in instances where local knowledge of ecosystem characteristics or vegetation density/canopy cover requires a more nuanced approach, the Ecosystem probability layers are designed to support this interpretation.
+**Probability Thresholding and Interpretation:** The 50% probability threshold applied to the Classification of Saltmarsh and Mangroves in the Classification layer is designed to provide a high confidence model of the dominant ecosystem in each coastal pixel. As described above, in mixed or transitional pixels not mapped by the classification layer; or in instances where local knowledge of ecosystem characteristics or vegetation density/canopy cover requires a more nuanced approach, the Ecosystem probability layers are designed to support this interpretation.
 
 Intertidal Seagrass is thresholded in the Classified layer at a 70% probability, primarily to account for inter-annual variability in this ecosystem, aimed at mapping regions of persistent cover over time. It is expected that the Probability layers for this ecosystem are used by seagrass mapping practitioners to enable a more detailed analysis of specific regions or ecosystem characterisation.
 
@@ -56,9 +56,9 @@ Whilst the modelling process in this product has been designed to mitigate these
 
 ## Accuracy
 
-The DEA Coastal Ecosystems mapping was validated using a Monte Carlo resampling workflow with spatial stratification (32 km tiles) to limit spatial autocorrelation (Lyons et al. 2018). Each iteration trains on ~80 % of tiles, tests on the remainder, filters predictions by a ≥50 % class-probability threshold (to replicate the mapping methodology), and then reports accuracy for both the ecosystem model and the final output after seagrass modelling is applied to the tidal flat area. The validation metrics are thus indicative of the accuracy of the final categorical classification product, and are not strictly relevant tot the model probability layers. Final accuracy metrics are summarised from the sampling distributions as the median with a 95 % interval (which can be used as area multipliers if desired). Validation statistics are reported separately for the 2021 and 2022 mapping.
+The DEA Coastal Ecosystems mapping was validated using a Monte Carlo resampling workflow with spatial stratification (32 km tiles) to limit spatial autocorrelation (Lyons et al. 2018). Each iteration trains on ~80 % of tiles, tests on the remainder, filters predictions by a ≥50 % class-probability threshold (to replicate the mapping methodology), and then reports accuracy for both the ecosystem model and the final output after seagrass modelling is applied to the tidal flat area. The validation metrics are thus indicative of the accuracy of the final categorical classification product, and are not strictly relevant to the model probability layers. Final accuracy metrics are summarised from the sampling distributions as the median with a 95 % interval (which can be used as area multipliers if desired). Validation statistics are reported separately for the 2021 and 2022 mapping.
 
-Comprehensive methodology notes are documented in [Validation README](https://github.com/GeoscienceAustralia/dea-coastalecosystems/blob/main/docs/validation_readme.md), and the complete per-class/per-year outputs are available in [full validation results](https://github.com/GeoscienceAustralia/dea-coastalecosystems/blob/main/docs/coastal_ecosystem_validation_results.md).
+Comprehensive methodology notes are documented in the code repository [Validation](https://github.com/GeoscienceAustralia/dea-coastalecosystems/blob/main/docs/validation_readme.md) section, and the complete per-class/per-year outputs are available in the[full validation results](https://github.com/GeoscienceAustralia/dea-coastalecosystems/blob/main/docs/coastal_ecosystem_validation_results.md).
 
 ### Regional summary per year
 **Year 2021**
@@ -83,7 +83,7 @@ Comprehensive methodology notes are documented in [Validation README](https://gi
 | 6 | 0.945 [0.913, 0.970] |
 | 7 | 0.947 [0.889, 0.981] |
 
-### Regional summary per region (combined years)
+### Regional summary per class (combined years)
 #### Region 1 [North West]
 | Class | User's Accuracy | Producer's Accuracy |
 |-------|-----------------|---------------------|
