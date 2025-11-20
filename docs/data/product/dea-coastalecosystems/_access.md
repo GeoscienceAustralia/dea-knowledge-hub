@@ -8,20 +8,18 @@ DEA Coastal Ecosytems data is large with files up to 2-3 GB in size. We strongly
 
 :::{dropdown} How to explore DEA Maps (To be completed with StoryMap)
 
-Start exploring [DEA Intertidal on DEA Maps](https://maps.dea.ga.gov.au/story/DEAIntertidal).
+Start exploring [DEA Coastal Ecosystems on DEA Maps](https://maps.dea.ga.gov.au/story/DEACoastalEcosystems).
 
-To add DEA Intertidal to DEA Maps manually:
+To add DEA Coastal Ecosystems to DEA Maps manually:
 
 1. Open [DEA Maps](https://maps.dea.ga.gov.au/).
 1. Select **Explore map data** on the top-left.
-1. Select **Sea, ocean and coast** &gt; **DEA Intertidal** &gt; **DEA Intertidal (Sentinel-2, Landsat)**
+1. Select **Sea, ocean and coast** &gt; **DEA Coastal Ecosystems** &gt; **DEA Coastal Ecosystems (Sentinel-2)**
 1. Click the **Add to the map** button on top-right.
 
 View the product layer required by selecting the layer from the **Styles** dropdown menu, and use the **Time** selector to view the annual time-series of each product layer.
 
-Note that the colour ramp for the **Elevation** and **Elevation Uncertainty** product layers is scaled dynamically from 'low' to 'high' to account for the wide variation of tidal ranges and elevations found across Australia, and provide the best contrast on the DEA Maps platform. 
-
-To query an absolute value for any of the product layers, click on a location to see a plain text summary of all the DEA Intertidal product suite data values at that pixel location.
+% TODO To query an absolute value for any of the product layers, click on a location to see a plain text summary of all the DEA Intertidal product suite data values at that pixel location.
 :::
 
 :::{dropdown} How to stream data from AWS (Recommended)
