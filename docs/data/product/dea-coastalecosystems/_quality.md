@@ -4,7 +4,7 @@
 
 ### Accuracy Considerations
 
-- **Training data composition:** Regional training sets remain unbalanced for rare classes (e.g. salt flat, seagrass in Region 1), which contributes to wider accuracy intervals and should be considered when interpreting those classes.
+- **Training data composition:** Regional training sets remain unbalanced for rare classes ([e.g. salt flat, seagrass in Region 1](./?tab=description#training-data)), which contributes to wider accuracy intervals and should be considered when interpreting those classes.
 - **Probability masking:** Accuracy statistics only include samples with ≥50 % model probability. Areas with persistent cloud, haze, or spectral ambiguity may be masked operationally and will not have associated accuracy estimates.
 - **Spatial extrapolation:** Spatial stratification reduces autocorrelation bias, but accuracy can still degrade in locations far from labelled samples or outside the environmental gradients represented in the combined parquet.
 - **Model uncertainty:** Reported medians and 95 % intervals reflect Monte Carlo sampling only; additional uncertainty from sensor noise, ancillary covariates, or downstream post-processing is not captured here.

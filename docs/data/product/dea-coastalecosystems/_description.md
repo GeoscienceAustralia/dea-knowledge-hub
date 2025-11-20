@@ -84,7 +84,7 @@ Further information on how these Probability layers can be individually interpre
 :::
 
 ### Quality Assurance Layers
-Two quality assurance layers are included in the DEA CEM product suite: 
+Two quality assurance layers are included in the DEA Coastal Ecosystems product suite: 
 
 #### Clear count (*qa-count-clear*)
 
@@ -174,7 +174,7 @@ Introducing modelling regions had implications for the size and balance of the t
 
 The development of the original training data set on Landsat 30 m data, coupled with an acquisition protocol focused on spatially homogenous regions, presented an opportunity to expand the training data sets when considering the increased resolution of the Sentinel-2 based product. With Sentinel-2's 10 m resolution pixels falling within the tolerance established for the training data point validity (30-40 m), a semi-automated process was implemented to expand the existing training dataset. This semi-automated approach was particularly effective for densifying training data coverage in homogeneous ecosystem patches while maintaining data quality.
 
-Training data densification was achieved by resampling the original training data points to 10 m resolution, sampling the surrounding 9 pixels of each original training point, to increase the overall number of training data points to approx 368,000.
+Training data densification was achieved by resampling the original training data points to 10 m resolution. By sampling the surrounding 9 pixels of each original training point, the overall number of training data points was increased to approximately 368,000.
 
 This approach balanced the need for increased training data volume across all seven modelling regions while maintaining data quality and ecological validity (Table 2). The process also included more spatial and spectral variability in the modelling process, resulting in a small but consistent improvement in [accuracy](./?tab=quality#accuracy) when models used the expanded training data set.
 
@@ -233,7 +233,7 @@ Covariate data describes the input datasets used to train the ML models. Covaria
 |  | low_swir_2 |  | 1 |
 |  | low_swir_3 |  | 1 |
 | Coastal Connectivity | Cost-distance |  | 1 |
-|Total Covariates |  |  | 131 |
+|Total Covariates |  |  | 121 |
 
 :::
 :::{dropdown} Coastal Connectivity
@@ -258,7 +258,7 @@ For the v1.0.0 implementation of the model, the full expanded Training Point dat
 Both of these attributed annual Training Point datasets were then combined to form the final datasets for Model training.
 :::
 :::{dropdown} Model training
-The DEA Coastal Ecosystem Map workflow trains two [random-forest classifiers](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html) for each of the seven [modelled regions](#regional-modelling) from the covariate-attributed stack of training data: 
+The DEA Coastal Ecosystems workflow trains two [random-forest classifiers](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html) for each of the seven [modelled regions](#regional-modelling) from the covariate-attributed stack of training data: 
 
 - a multi-class ecosystem model (mangrove, saltmarsh and salt flat) and;
 - an intertidal model (intertidal and intertidal-seagrass). 
@@ -291,7 +291,7 @@ The Intertidal modelling extent was then set using the high confidence intertida
 
 ### 4. Contextual editing
 :::{dropdown} Rationale
-The interim classified ecosystem layer defines classes based on the highest probability class for each pixel, which can result in a classification based on relatively low probability values were a pixel is modelled as a likely mixed ecosystem. Combined with the inherent uncertainty and resulting misclassification when applying a ML mapping methodology at a continental scale, this meant that a range of rulesets and post-processing operations were applied, collectively termed ‘contextual editing’, to deliver the final *classification* layer.
+The interim classified ecosystem layer defines classes based on the highest probability class for each pixel, which can result in a classification based on relatively low probability values were a pixel is modelled as a likely mixed ecosystem. Combined with the inherent uncertainty and resulting misclassification when applying a ML mapping methodology at a continental scale, this meant that a range of rulesets and post-processing operations were applied, collectively termed ‘contextual editing’, to deliver the final Classification layer.
 
 Probability layers were also masked in this contextual editing process, as described in the [probability layer description](#probability).
 
@@ -300,7 +300,7 @@ The following section details the rules and processes that were applied, with ju
 
 :::{dropdown} Classifier rulesets and masking
 #### Classifier rulesets
-All classifier rulesets were applied to the interim ecosystem classification layer ([Fig. 3](#workflow)) to produce the final *classification* dataset.
+All classifier rulesets were applied to the interim ecosystem classification layer ([Fig. 3](#workflow)) to produce the final Classification dataset.
 
 1. **Remove unused classes**: The ecosystem classification output layer was masked to remove all saltflat pixels (see [Caveats and Limitations](./?tab=quality#saltflat-mapping)). 
 1. **Apply probability thresholds**: A probability threshold of 50% was applied to the Saltmarsh and Mangrove pixels, with pixels below this threshold reassigned as `nodata`. A 50% probability threshold was selected based on the alignment of the outputs with external mapping products, and the conservative consideration that 50% provides a clear majority vote by the ML models.
@@ -308,9 +308,9 @@ All classifier rulesets were applied to the interim ecosystem classification lay
 #### Classifier masking
 1. **Apply mangrove mask**: Mangrove pixels that fell outside of the [Global Mangrove Watch (GMW) Habitat Mask](https://doi.org/10.5281/zenodo.74784913) (Bunting et al. 2025) were removed. This habitat mask defines an ecologically suitable niche for Mangrove occupation, and was used here to align our Mangrove mapping with global approaches and to minimize false positive Mangrove classification in inhospitable environments.
 1. **Apply Intertidal seagrass probability threshold**: Within the defined Intertidal model extent, the Intertidal seagrass probability layer was used to define the Intertidal seagrass classification at a probability of greater than or equal to 70 %. The 70 % threshold was selected as a conservative value to account for inter-annual variability in seagrass meadows (see [Caveats and Limitations](./?tab=quality#interpretation-of-probability-layers-and-implications-for-change-applications)).
-1. **Apply manual mask**: A manual masking process was applied to the *classification* layer, based on expert identified misclassifications (including roads, urban areas, terrain shadow, data noise). For full traceability this polygon masking layer is provided [here](http://dea-public-data-dev.s3-website-ap-southeast-2.amazonaws.com/?prefix=derivative/dea_coastalecosystems/supplementary/).
+1. **Apply manual mask**: A manual masking process was applied to the Classification layer, based on expert identified misclassifications (including roads, urban areas, terrain shadow, data noise). For full traceability this polygon masking layer is provided [here](http://dea-public-data-dev.s3-website-ap-southeast-2.amazonaws.com/?prefix=derivative/dea_coastalecosystems/supplementary/).
 1. **Apply land use mask**: Industrial, urban or road areas as identified in the Australian Catchment Scale Land Use and Management dataset (ABARES,2021) were removed.
-1. **Remove and replace isolated pixel groups**: To reduce pixel based noise in the data, the *classification* layer was sieved to remove and replace isolated pixels in groups of 9 or less with the dominant surrounding class type.
+1. **Remove and replace isolated pixel groups**: To reduce pixel based noise in the data, the Classification layer was sieved to remove and replace isolated pixels in groups of 9 or less with the dominant surrounding class type.
 :::
 :::{dropdown} Probability masking
 1. **Apply probability threshold**: Pixels with values of less than 20 % were removed from the Mangrove, Saltmarsh and Saltflat probability layers to remove very low confidence pixels and noise from the dataset to improve interpretability.
@@ -319,7 +319,7 @@ All classifier rulesets were applied to the interim ecosystem classification lay
 
 ## Software
 
-- The [Coastal Ecosystems GitHub](https://github.com/GeoscienceAustralia/dea-coastalecosystems) code repository contains the core functionality required to run the DEA Coastal Ecosystem Map workflow. The code leverages functions from [DEA Tools](https://knowledge.dea.ga.gov.au/notebooks/Tools/) that have dependencies on [Scikitlearn](https://scikit-learn.org/stable/).
+- The [Coastal Ecosystems GitHub](https://github.com/GeoscienceAustralia/dea-coastalecosystems) code repository contains the core functionality required to run the DEA Coastal Ecosystems workflow. The code leverages functions from [DEA Tools](https://knowledge.dea.ga.gov.au/notebooks/Tools/) that have dependencies on [Scikitlearn](https://scikit-learn.org/stable/).
 - The [DEA Tools](https://knowledge.dea.ga.gov.au/notebooks/Tools/) library contains essential functionality required to generate random-forest models using [DEA Analysis-Ready-Data](https://knowledge.dea.ga.gov.au/data/category/dea-surface-reflectance/)
 - The [Scikitlearn](https://scikit-learn.org/stable/) library provided the random-forest classification methodologies.
 
