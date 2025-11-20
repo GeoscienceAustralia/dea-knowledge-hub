@@ -256,7 +256,7 @@ The full expanded Training Point dataset was attributed with covariate data from
 
 Both of these attributed annual Training Point datasets were then combined to form the final datasets for Model training.
 :::
-:::{dropdown} Model training (TODO: EXPERT REVIEW)
+:::{dropdown} Model training
 The DEA Coastal Ecosystem Map workflow trains two [random-forest classifiers](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html) for each of the seven [modelled regions](#regional-modelling) from the covariate-attributed stack of training data: 
 
 - a multi-class ecosystem model (mangrove, saltmarsh and salt flat) and;
@@ -264,14 +264,14 @@ The DEA Coastal Ecosystem Map workflow trains two [random-forest classifiers](ht
 
 The multi-class ecosystem model utilized all data in the training data library while the Intertidal model was developed using only training data points located within the [DEA Intertidal Extents high confidence intertidal region](https://knowledge.dea.ga.gov.au/data/product/dea-intertidal/#core-product-layers). Functionally, this meant that within the bounded extents of the Intertidal modelled region, any training points included in the model that were not defined as Intertidal Seagrass were considered Intertidal. For a discussion on the implications of this aspect of the model classification see Intertidal [Caveat](./?tab=quality) section.
 
-Multi-class and binary random-forest models were fit for each region using: **CONFIRMATION PLEASE - looking for plain English descriptions**
+Multi-class and binary random-forest models were fit for each region using: 
 
-- 800 estimators (trees?)
-- Minimum samples split of 2 (branches?)
-- Minimum samples leaf of 1 (leaves?)
-- Maximum depth of 10 (decisions/splits/branches?)
+- Number of trees (800): A large ensemble size ensures stable, reliable predictions by aggregating insights from many diverse trees, reducing the impact of any single tree's errors.
+- Minimum samples per split (2): Set to the minimum allowed value to give the model maximum flexibility in finding predictive patterns, particularly useful when relationships in the data are complex or subtle.
+- Minimum samples per leaf (1): Allows the model to capture fine-grained patterns and edge cases in the data without artificially constraining individual tree decisions. The large number of trees (800) provides natural protection against overfitting.
+- Maximum depth (10): Limits tree complexity to prevent overfitting while still allowing enough depth to capture meaningful multi-level interactions between variables. Strikes a balance between model expressiveness and generalizability.
 
-Each model was first trained and evaluated using a [k-fold cross-validation train/test split](https://scikit-learn.org/stable/modules/cross_validation.html#computing-cross-validated-metrics) of the training data  to report accuracy statistics and refine optimal model parameters. Overall model accuracy statistics are reported in the [Quality](./?tab=quality) tab. Optimized model parameters were then used to retrain the final random-forest classifiers using the full training data set for the multi-class model and the intertidal masked training data set for the seagrass model. 
+A [k-fold cross-validation](https://scikit-learn.org/stable/modules/cross_validation.html#computing-cross-validated-metrics) approach was used to assess model behaviour and optimise the model parameters. Optimized model parameters were used to fit the final models using the full training data set for the multi-class model and the intertidal masked training data set for the seagrass model. A monte carlo resampling framework was used to validate the mapping products and calculate accuracy metrics including overall accuracy, class-based accuracy and relevant confidence intervals. Overall model accuracy statistics are reported in the [Quality](https://pr-512-preview.khpreview.dea.ga.gov.au/data/product/dea-coastalecosystems/?tab=quality) tab. 
 
 The combined 2021 and 2022 stacks of covariate-trained training data ensured the classifier models were suitable for prediction into both years. Common covariates that exhibited a top-10 feature importance for the ecosystem models included the NDVI and MNDWI percentiles as well as the coastal-connectivity. Common top-10 feature importance covariates for the seagrass models included the tasselled cap wetness percentiles and red_edge, nir and swir bands from the low-tide [DEA Tidal Composite](https://knowledge.dea.ga.gov.au/data/product/dea-tidal-composites/) (Fig. 7).
 
