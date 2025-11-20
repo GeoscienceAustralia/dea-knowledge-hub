@@ -193,7 +193,7 @@ This approach balanced the need for increased training data volume across all se
 
 ### 2. Covariate Data
 :::{dropdown} Covariate Data Stack
-Covariate data describes the input datasets used to train the ML models. Covariate data stacks were generated using a combination of [Sentinel-2 Analysis Ready Data]((https://knowledge.dea.ga.gov.au/data/category/dea-surface-reflectance/)), remote-sensing indices and derived datasets (Table 3). These covariate stacks of 131 total variables were generated for each of the modelling years.
+Covariate data describes the input datasets used to train the ML models. Covariate data stacks were generated using a combination of [Sentinel-2 Analysis Ready Data]((https://knowledge.dea.ga.gov.au/data/category/dea-surface-reflectance/)), remote-sensing indices and derived datasets (Table 3). These covariate stacks of 121 total variables were generated for each of the modelling years.
 
 **Table 3** Covariate datasets used to model coastal ecosystems
 | Data Source | Variable | Percentiles | Total Count |
@@ -204,10 +204,8 @@ Covariate data describes the input datasets used to train the ML models. Covaria
 |  | nbart_red_edge_1 | 10,20,40,60,80 | 5 |
 |  | nbart_red_edge_2 | 10,20,40,60,80 | 5 |
 |  | nbart_red_edge_3 | 10,20,40,60,80 | 5 |
-|  | nbart_nir | 10,20,40,60,80 | 5 |
 |  | nbart_nir_1 | 10,20,40,60,80 | 5 |
 |  | nbart_nir_2 | 10,20,40,60,80 | 5 |
-|  | nbart_swir_1 | 10,20,40,60,80 | 5 |
 |  | nbart_swir_2 | 10,20,40,60,80 | 5 |
 |  | nbart_swir_3 | 10,20,40,60,80 | 5 |
 | **Sentinel-2 derived indices** |  |  |  |
