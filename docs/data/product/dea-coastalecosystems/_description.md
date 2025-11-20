@@ -25,10 +25,11 @@ Key features of the product suite include:
 
 ## Applications
 
-- National environmental economic accounting of Australia's coastal ecosystem extents
-- State of the Environment reporting
-- Complementing periodic high resolution expert mapping
-- Integration with other terrestrial and ocean data sets (see [Future work](./?tab=quality))
+- National Environmental Ecosystem Accounts
+- National and Regional State of the Environment reporting
+- A complementary mapping product to fill spatial and temporal gaps in higher resolution expert mapping (aerial and drone mapping, field surveys)
+- Future integration with other terrestrial and ocean data sets (e.g. Land Cover and Marine Tenure)
+- Coastal protection and Hazard modelling
 
 ## Lineage
 
@@ -74,7 +75,7 @@ Probabilities for layers in the Ecosystem Model (Mangroves, Saltmarsh and Saltfl
 
 The Saltflat ecosystem has been excluded from the classification product layer, though the probability layer generated for this ecosystem as part of the Ecosystem Model has been provided. Reasoning and further discussion on this decision can be found in the [Caveats and Limitations](./?tab=quality#saltflat-mapping) section.
 
-Further information on how these Probability layers can be individually interpreted and used to aid in interpretation of the classified ecosystem map, including for mixed or transitional classes, can be found in the [Caveats and Limitations]((./?tab=quality#interpretation-of-probability-layers-and-implications-for-change-applications)).
+Further information on how these Probability layers can be individually interpreted and used to aid in interpretation of the classified ecosystem map, including for mixed or transitional classes, can be found in the [Caveats and Limitations](./?tab=quality#interpretation-of-probability-layers-and-implications-for-change-applications).
 
 :::{figure} /_files/dea-coastalecosystems/probabilities_Bermagui_2021.png
 

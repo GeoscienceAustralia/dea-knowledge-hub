@@ -68,7 +68,7 @@ access_links_maps:
      name: null
 
 access_links_explorers:
-  - link: https://explorer.dea.ga.gov.au/products/ga_s2_coastalecosystems_cyear_3
+  - link: https://explorer.dea.ga.gov.au/products/ga_s2_coastalecosystems_cyear_3_v1
     name: null
 
 # access_links_data:
@@ -89,7 +89,7 @@ access_links_web_services:
 
 
 access_links_custom:
-  - link: https://data.dea.ga.gov.au/?prefix=derivative/ga_s2_coastalecosystems_cyear_3/1-0-0/
+  - link: https://data.dea.ga.gov.au/?prefix=derivative/ga_s2_coastalecosystems_cyear_3_v1/AU
     icon: database
     label: Data sources
     name: AWS data
