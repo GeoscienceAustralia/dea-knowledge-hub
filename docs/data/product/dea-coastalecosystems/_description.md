@@ -6,14 +6,14 @@ Mapping coastal ecosystems is vital for understanding, managing, and protecting 
 
 Achieving this at a continental scale, however, poses significant challenges. Traditional methods such as field surveys, aerial photography, and local-scale sampling are costly, labour-intensive, and constrained in spatial and temporal scope—limitations that are particularly relevant in a country as vast and remote as Australia. Earth Observation (EO) provides an efficient and consistent alternative, allowing large-scale, high-resolution, and repeatable mapping through the use of publicly available satellite imagery.
 
-The **Digital Earth Australia (DEA) Coastal Ecosystem Map** was developed in response to this need for consistent, continent-wide monitoring. It provides the first national dataset to simultaneously map Australia’s mangrove, saltmarsh, intertidal, and intertidal seagrass ecosystems at 10 m resolution, using Sentinel-2 satellite imagery for the years 2021 and 2022. The mapping process employs a machine learning (ML) framework originally developed by the University of New South Wales (UNSW) and James Cook University (JCU) for global coastal ecosystem mapping on the Google Earth Engine platform (Murray et al., 2022). To tailor the approach for Australian conditions, JCU — commissioned by the Department of Climate Change, Energy, the Environment and Water (DCCEEW) — compiled a national training dataset of more than 40,000 annotated points across the continent (Canto et al., 2023; Becker et al., 2023).
+The **Digital Earth Australia (DEA) Coastal Ecosystem** product suite was developed in response to this need for consistent, continent-wide monitoring. It provides the first national dataset to simultaneously map Australia’s mangrove, saltmarsh, intertidal, and intertidal seagrass ecosystems at 10 m resolution, using annual time-series of Sentinel-2 satellite imagery for consistent mapping at a continental scale. The mapping process employs a machine learning (ML) framework originally developed by the University of New South Wales (UNSW) and James Cook University (JCU) for global coastal ecosystem mapping on the Google Earth Engine platform (Murray et al., 2022). To tailor the approach for Australian conditions, JCU — commissioned by the Department of Climate Change, Energy, the Environment and Water (DCCEEW) — compiled a national training dataset of more than 40,000 annotated points across the continent (Canto et al., 2023; Becker et al., 2023).
 
 This collaboration ensures the resulting maps are ecologically meaningful and complementary to expert mapping undertaken by State Governments and academia. providing a strong foundation for environmental management and reporting, restoration planning, environmental-economic accounting, and long-term coastal conservation.
 
 ## What this product offers
-The DEA Coastal Ecosystem Map product suite offers users a categorical classification of four coastal ecosystems, supported by probability layers for individual ecosystems and selected quality assurance layers to support product interpretation.
+The DEA Coastal Ecosystems product suite offers users a categorical classification of four coastal ecosystems, supported by probability layers for individual ecosystems and selected quality assurance layers to support product interpretation.
 Key features of the product suite include:
-- Sentinel-2 10 m resolution derived classified ecosystem maps for 2021 and 2022, defining dominant ecosystem extents of mangroves, saltmarsh, intertidal, and intertidal seagrass.
+- Sentinel-2 10 m resolution derived annual classification ecosystem maps, defining dominant ecosystem extents of mangroves, saltmarsh, intertidal, and intertidal seagrass.
 - Probability layers for mapped ecosystems to enable user interpretation of mixed and transitional classes. 
 - QA/QC layers to provide confidence and assist in product interpretation.
 - Publication of ancillary layers used for masking and constraints in the mapping workflow.
@@ -32,27 +32,27 @@ Key features of the product suite include:
 
 ## Lineage
 
-The DEA Coastal Ecosystem Map was initiated as a collaborative project to support the Commonwealth Department of Climate Change, Energy, the Environment and Water (DCCEEW) to underpin the creation of Environmental Economic Accounts (EEA) for ecosystems in Australia’s coastal zone. This followed experimental Ocean Accounts, delivered in 2022 and based on selected individual ecosystem earth observation derived datasets.
+DEA Coastal Ecosystems was initiated as a collaborative project to support the Commonwealth Department of Climate Change, Energy, the Environment and Water (DCCEEW) to underpin the creation of Environmental Economic Accounts (EEA) for ecosystems in Australia’s coastal zone. This followed experimental Ocean Accounts, delivered in 2022 and based on selected individual ecosystem earth observation derived datasets.
 
-Leveraging a methodology that mapped [global shifts in tidal wetlands](https://www.science.org/doi/10.1126/science.abm9583), Geoscience Australia has collaborated with James Cook University and the University of New South Wales to deliver a similar approach for Australia in the DEA Coastal Ecosystem Map product suite. Initial Beta versions of the DEA Coastal Ecosystem Map were used to underpin the February 2025 release of the [National Ecosystem Accounts experimental estimates for the Coastal Realm](https://www.abs.gov.au/statistics/environment/environmental-accounts/national-ecosystem-accounts-experimental-estimates/latest-release#coastal-realm), with the first V1.0.0 release of the DEA Coastal Ecosystem Map expected to contribute to the upcoming 2026 National Ecosystem Account released by the Australian Bureau of Statistics (ABS)
+Leveraging a methodology that mapped [global shifts in tidal wetlands](https://www.science.org/doi/10.1126/science.abm9583), Geoscience Australia has collaborated with James Cook University and the University of New South Wales to deliver a similar approach for Australia in the DEA Coastal Ecosystems product suite. Initial Beta versions of the  product were used to underpin the February 2025 release of the [National Ecosystem Accounts experimental estimates for the Coastal Realm](https://www.abs.gov.au/statistics/environment/environmental-accounts/national-ecosystem-accounts-experimental-estimates/latest-release#coastal-realm), with the first V1.0.0 release of the DEA Coastal Ecosystems product suite expected to contribute to the upcoming 2026 National Ecosystem Account released by the Australian Bureau of Statistics (ABS)
 
-Targeted stakeholder engagement and product feedback sessions have been conducted throughout the development of the product to ensure, where possible, a complementary alignment of the DEA Coastal Ecosystem Map product to State Government and Academic mapping efforts. These engagements aimed to ensure ease of uptake and integration of the product into a range of environmental reporting applications across jurisdictions (e.g State of the Environment).
+Targeted stakeholder engagement and product feedback sessions have been conducted throughout the development of the product to ensure, where possible, a complementary alignment of the DEA Coastal Ecosystems product suite to State Government and Academic mapping efforts. These engagements aimed to ensure ease of uptake and integration of the product into a range of environmental reporting applications across jurisdictions (e.g State of the Environment).
 
-Stakeholder engagement at all levels will continue to drive the development of the DEA Coastal Ecosystem Map product in a cycle of continuous improvement, validation, feedback integration and inclusion of additional ecosystem types (see [Caveats/FAQS](./?tab=quality)). 
+Stakeholder engagement at all levels will continue to drive the development of DEA Coastal Ecosystems product in a cycle of continuous improvement, validation, feedback integration and inclusion of additional ecosystem types (see [Caveats/FAQS](./?tab=quality)). 
 
 ## Technical information
 
 ### Product Features
 
-The DEA Coastal Ecosystem Map is a multi-layered dataset and is produced for two years, 2021 and 2022. See [Specifications](./?tab=specifications) for individual layer metadata.
+The DEA Coastal Ecosystems product suite is a multi-layered dataset produced delivered as annual summary products. See [Specifications](./?tab=specifications) for individual layer metadata.
 
 ### Core Product Layers
-Five core layers are included in The DEA Coastal Ecosystem Map: the classification and four probability layers.
+Five core layers are included in The DEA Coastal Ecosystems product suite: the classification and four probability layers.
 
 #### *Classification*
-The primary layer of the DEA Coastal Ecosystem Map is a categorical classification of the extent of mangrove, saltmarsh, intertidal and intertidal seagrass coastal ecosystems (Fig 1). The layer is built from thresholds of the ecosystem probability layers (below), and constrained, modified and masked with a range of ancillary datasets and QA/QC processes (See [Contextual Editing](#4-contextual-editing)).
+The primary layer of DEA Coastal Ecosystems is a categorical classification of the extent of mangrove, saltmarsh, intertidal and intertidal seagrass coastal ecosystems (Fig 1). The layer is built from thresholds of the ecosystem probability layers (below), and constrained, modified and masked with a range of ancillary datasets and QA/QC processes (See [Contextual Editing](#4-contextual-editing)).
 
-Product layers for 2021 and 2022 are published with the following categorical class values:
+Annual classification layers are published with the following categorical class values:
 
 - Intertidal (2)
 - Mangrove (3)
@@ -61,7 +61,7 @@ Product layers for 2021 and 2022 are published with the following categorical cl
 
 :::{figure} /_files/dea-coastalecosystems/classification_bermagui_2021_LTC.png
 
-**Figure 1** Bermagui, NSW. Above: the 2021 low-tide [DEA Tidal Composite](https://knowledge.dea.ga.gov.au/data/product/dea-tidal-composites/). Below: the 2021 DEA Coastal Ecosystem Map.
+**Figure 1** Bermagui, NSW. Above: the 2021 low-tide [DEA Tidal Composite](https://knowledge.dea.ga.gov.au/data/product/dea-tidal-composites/). Below: the 2021 DEA Coastal Ecosystems classification layer.
 
 :::
 
@@ -72,13 +72,13 @@ The Intertidal class within the Intertidal model has been fixed to the extent of
 
 Probabilities for layers in the Ecosystem Model (Mangroves, Saltmarsh and Saltflat) are masked below 20% probability to remove very low confidence pixels and noise from the dataset to improve interpretability.
 
-The Saltflat ecosystem has been excluded from the classification product layer, though the probability layer generated for this ecosystem as part of the Ecosystem Model has been provided. Reasoning and further discussion on this decision can be found in the Saltflats [Caveats](./?tab=quality) section.
+The Saltflat ecosystem has been excluded from the classification product layer, though the probability layer generated for this ecosystem as part of the Ecosystem Model has been provided. Reasoning and further discussion on this decision can be found in the [Caveats and Limitations](./?tab=quality/saltflat-mapping) section.
 
-Further information on how these Probability layers can be individually interpreted and used to aid in interpretation of the classified ecosystem map, including for mixed or transitional classes, can be found in the [Caveats]((./?tab=quality)).
+Further information on how these Probability layers can be individually interpreted and used to aid in interpretation of the classified ecosystem map, including for mixed or transitional classes, can be found in the [Caveats and Limitations]((./?tab=quality/interpretation-of-probability-layers-and-implications-for-change-applications)).
 
 :::{figure} /_files/dea-coastalecosystems/probabilities_Bermagui_2021.png
 
-**Figure 2** Bermagui, NSW. DEA Coastal Ecosystem Map probability layers.
+**Figure 2** Bermagui, NSW. DEA Coastal Ecosystems probability layers.
 
 :::
 
@@ -87,7 +87,7 @@ Two quality assurance layers are included in the DEA CEM product suite:
 
 #### Clear count (*qa-count-clear*)
 
-A layer showing the distribution of clear and valid satellite observations at each [Sentinel-2 pixel](https://knowledge.dea.ga.gov.au/data/category/dea-surface-reflectance/) during the analysis period. Artefacts that can invalidate pixels include cloud cover/shadow and low geometric accuracy. A pixel only proceeds into the DEA Coastal Ecosystem Map workflow if it has more than 10 valid observations in a year. In 2021, the mean number of observations used per pixel was 49&plusmn;20 (1 $\sigma$). This changed only slightly in 2022 to 48&plusmn;19 (1 $\sigma$).
+A layer showing the distribution of clear and valid satellite observations at each [Sentinel-2 pixel](https://knowledge.dea.ga.gov.au/data/category/dea-surface-reflectance/) during the analysis period. Artefacts that can invalidate pixels include cloud cover/shadow and low geometric accuracy. A pixel only proceeds into the DEA Coastal Ecosystems workflow if it has more than 10 valid observations in a modelling year. 
 
 #### Coastal connectivity (*qa-coastal-connectivity*)
 An accumulated cost-distance connectivity layer used as a [covariate](#coastal-connectivity) within the modelling process, and as an additional [contextual editing](#4-contextual-editing) layer for the Saltmarsh class. Values represent the cumulative elevation above Highest Astronomical Tide that must be traversed along the shortest path from tidally influenced coastal waters and mangroves. Lower values indicate likely coastal pixels, reflecting both distance inland and topography. The values of the coastal connectivity layer are dimensionless with low values representing high coastal connectivity and high values indicating lower coastal connectivity.
@@ -95,7 +95,7 @@ An accumulated cost-distance connectivity layer used as a [covariate](#coastal-c
 ### Data Format
 
 #### Cloud-optimised GeoTIFF
-Layers of the DEA Coastal Ecosystem Map are provided as single continental scale cloud-optimised GeoTIFFs (COG). For data access and use in geospatial information system (GIS) environments, [streaming](https://knowledge.dea.ga.gov.au/guides/continental-cogs-geotiff-mosaics/) of these datasets is strongly recommended over downloading. Web mapping services (WMS) are also available for all [DEA datasets](./?tab=access).
+Layers of the DEA Coastal Ecosystems product suite are provided as single continental scale cloud-optimised GeoTIFFs (COG). For data access and use in geospatial information system (GIS) environments, [streaming](https://knowledge.dea.ga.gov.au/guides/continental-cogs-geotiff-mosaics/) of these datasets is strongly recommended over downloading. Web mapping services (WMS) are also available for all [DEA datasets](./?tab=access).
 
 #### Product naming convention
 To stream COG versions of DEA data, you will need to identify the data layers by their full product name. The DEA standard [file naming convention](/guides/reference/collection_3_naming/) has been applied as follows:
@@ -104,7 +104,7 @@ To stream COG versions of DEA data, you will need to identify the data layers by
 {Organisation}_{Platform}_{Product}_{Reporting period}_{Collection}_{Version}_{Tile reference}_{Data date}--{Data period}_{Product status}_{Band name}.{File extension}
 ```
 
-For example, the 2021 DEA Coastal Ecosystem Map classification layer is named
+For example, the 2021 DEA Coastal Ecosystems classification layer is named
 ```
 ga_s2_coastalecosystems_cyear_3_v1-0-0_AU_2021—P1Y_final_classification.tif
 ```
@@ -112,11 +112,11 @@ ga_s2_coastalecosystems_cyear_3_v1-0-0_AU_2021—P1Y_final_classification.tif
 ## Processing steps
 
 ### Workflow
-The DEA Coastal Ecosystem Map is a machine learning workflow comprised of four primary components (Fig 3): Training data, Covariate data, Machine learning and Contextual editing. 
+DEA Coastal Ecosystems is a machine learning workflow comprised of four primary components (Fig 3): Training data, Covariate data, Machine learning and Contextual editing. 
 
 :::{figure} /_files/dea-coastalecosystems/CEM_flowchart.png
 
-**Figure 3** Primary components and outputs of the DEA Coastal Ecosystem Map workflow
+**Figure 3** Primary components and outputs of the DEA Coastal Ecosystems workflow
 :::
 
 These components are discussed in further detail below. The validation process is discussed in the [Quality](./?tab=quality) section.
@@ -140,7 +140,7 @@ The dataset integrated occurrence records from four data sources:
 :::{dropdown} Ecosystem definitions
 The training data definitions for Australian coastal ecosystems (Table 1, Canto et al., 2023) were sourced from the Blue Carbon Method (CER, 2022) and the International Union for Conservation of Nature Global Ecosystem Typology (Keith et al., 2022). 
 
-Training point class descriptors (level 2, L2) were aggregated into broader level 1 (L1) class categories to form the basis of the DEA Coastal Ecosystem Map. The mapping of L2 to L1 ecosystem types, and their definitions, are described in Table 1.
+Training point class descriptors (level 2, L2) were aggregated into broader level 1 (L1) class categories to form the basis of the DEA Coastal Ecosystems classification schema. The mapping of L2 to L1 ecosystem types, and their definitions, are described in Table 1.
 
 **Table 1** Ecosystem definitions and class mappings
 
@@ -171,11 +171,11 @@ It is important that these regions be regarded as a pragmatic technical choice r
 :::{dropdown} Training Point Expansion
 Introducing modelling regions had implications for the size and balance of the training data sets once split across the seven bioregions, with many ecosystem training point classes falling below a reasonable representative sample number. 
 
-The development of the original training data set on Landsat 30 m data, coupled with an acquisition protocol focused on spatially homogenous regions, presented an opportunity to expand the training data sets when considering the increased resolution of the Sentinel-2 based CEM product. With Sentinel-2's 10 m resolution pixels falling within the tolerance established for the training data point validity (30-40 m), a semi-automated process was implemented to expand the existing training dataset. This semi-automated approach was particularly effective for densifying training data coverage in homogeneous ecosystem patches while maintaining data quality.
+The development of the original training data set on Landsat 30 m data, coupled with an acquisition protocol focused on spatially homogenous regions, presented an opportunity to expand the training data sets when considering the increased resolution of the Sentinel-2 based product. With Sentinel-2's 10 m resolution pixels falling within the tolerance established for the training data point validity (30-40 m), a semi-automated process was implemented to expand the existing training dataset. This semi-automated approach was particularly effective for densifying training data coverage in homogeneous ecosystem patches while maintaining data quality.
 
 Training data densification was achieved by resampling the original training data points to 10 m resolution, sampling the surrounding 9 pixels of each original training point, to increase the overall number of training data points to approx 368,000.
 
-This approach balanced the need for increased training data volume across all seven modelling regions while maintaining data quality and ecological validity (Table 2). The process also included more spatial and spectral variability in the modelling process, resulting in a small but consistent improvement in [accuracy](./?tab=quality) when models used the expanded training data set.
+This approach balanced the need for increased training data volume across all seven modelling regions while maintaining data quality and ecological validity (Table 2). The process also included more spatial and spectral variability in the modelling process, resulting in a small but consistent improvement in [accuracy](./?tab=quality/accuracy) when models used the expanded training data set.
 
 **Table 2** Expanded training data distribution across model regions. Modelling regions: North West (NW), North East (NE), Gulf of Carpentaria (Gulf), West, South West (SW), South East (SE) and Tasmania (Tas.). **N.b.** No mangroves or saltflat are recorded in Tasmania.
 
@@ -240,7 +240,7 @@ The Coastal Connectivity layer (also published as a [QA product layer](#quality-
 
 - Shuttle Radar Topography Mission Digital Elevation Model Version 1 (Gallant et al., 2011)
 - Highest Astronomical Tide [(Branson, 2023)](https://data.csiro.au/collection/csiro%3A61319v1)
-- The extent of the [DEA Mangroves](https://knowledge.dea.ga.gov.au/data/product/dea-mangroves/) product, itself derived from Global Mangrove Watch (Bunting et al., 2022)
+- The extent of the [DEA Mangroves](https://knowledge.dea.ga.gov.au/data/product/dea-mangroves/) product.
 
 Coastal connectivity is used here as a covariate layer within the modelling process, and as an additional contextual editing layer for the Saltmarsh class. 
 
@@ -252,7 +252,7 @@ Coastal connectivity is used here as a covariate layer within the modelling proc
 
 ### 3. Machine Learning
 :::{dropdown} Training Point Attribution
-The full expanded Training Point dataset was attributed with covariate data from both the 2021 and 2022 modelling year covariate stacks. Training points where covariates were derived from <10 clear observations in either modelling year were removed from the relevant modelling year dataset.
+For the v1.0.0 implementation of the model, the full expanded Training Point dataset was attributed with covariate data from both the 2021 and 2022 modelling year covariate stacks. Training points where covariates were derived from <10 clear observations in either modelling year were removed from the relevant modelling year dataset.
 
 Both of these attributed annual Training Point datasets were then combined to form the final datasets for Model training.
 :::
@@ -262,7 +262,7 @@ The DEA Coastal Ecosystem Map workflow trains two [random-forest classifiers](ht
 - a multi-class ecosystem model (mangrove, saltmarsh and salt flat) and;
 - an intertidal model (intertidal and intertidal-seagrass). 
 
-The multi-class ecosystem model utilized all data in the training data library while the Intertidal model was developed using only training data points located within the [DEA Intertidal Extents high confidence intertidal region](https://knowledge.dea.ga.gov.au/data/product/dea-intertidal/#core-product-layers). Functionally, this meant that within the bounded extents of the Intertidal modelled region, any training points included in the model that were not defined as Intertidal Seagrass were considered Intertidal. For a discussion on the implications of this aspect of the model classification see Intertidal [Caveat](./?tab=quality) section.
+The multi-class ecosystem model utilized all data in the training data library while the Intertidal model was developed using only training data points located within the [DEA Intertidal Extents high confidence intertidal region](https://knowledge.dea.ga.gov.au/data/product/dea-intertidal/#core-product-layers). Functionally, this meant that within the bounded extents of the Intertidal modelled region, any training points included in the model that were not defined as Intertidal Seagrass were considered Intertidal. For a discussion on the implications of this aspect of the model classification see [Caveats and Limitations](./?tab=quality/constraint-of-the-intertidal-model-and-definition-of-the-intertidal-class) section.
 
 Multi-class and binary random-forest models were fit for each region using: 
 
@@ -271,7 +271,7 @@ Multi-class and binary random-forest models were fit for each region using:
 - Minimum samples per leaf (1): Allows the model to capture fine-grained patterns and edge cases in the data without artificially constraining individual tree decisions. The large number of trees (800) provides natural protection against overfitting.
 - Maximum depth (10): Limits tree complexity to prevent overfitting while still allowing enough depth to capture meaningful multi-level interactions between variables. Strikes a balance between model expressiveness and generalizability.
 
-A [k-fold cross-validation](https://scikit-learn.org/stable/modules/cross_validation.html#computing-cross-validated-metrics) approach was used to assess model behaviour and optimise the model parameters. Optimized model parameters were used to fit the final models using the full training data set for the multi-class model and the intertidal masked training data set for the seagrass model. A monte carlo resampling framework was used to validate the mapping products and calculate accuracy metrics including overall accuracy, class-based accuracy and relevant confidence intervals. Overall model accuracy statistics are reported in the [Quality](https://pr-512-preview.khpreview.dea.ga.gov.au/data/product/dea-coastalecosystems/?tab=quality) tab. 
+A [k-fold cross-validation](https://scikit-learn.org/stable/modules/cross_validation.html#computing-cross-validated-metrics) approach was used to assess model behaviour and optimise the model parameters. Optimized model parameters were used to fit the final models using the full training data set for the multi-class model and the intertidal masked training data set for the seagrass model. A monte carlo resampling framework was used to validate the mapping products and calculate accuracy metrics including overall accuracy, class-based accuracy and relevant confidence intervals. Overall model accuracy statistics are reported in the [Quality](./?tab=quality/accuracy) tab. 
 
 The combined 2021 and 2022 stacks of covariate-trained training data ensured the classifier models were suitable for prediction into both years. Common covariates that exhibited a top-10 feature importance for the ecosystem models included the NDVI and MNDWI percentiles as well as the coastal-connectivity. Common top-10 feature importance covariates for the seagrass models included the tasselled cap wetness percentiles and red_edge, nir and swir bands from the low-tide [DEA Tidal Composite](https://knowledge.dea.ga.gov.au/data/product/dea-tidal-composites/) (Fig. 7).
 
@@ -301,12 +301,12 @@ The following section details the rules and processes that were applied, with ju
 #### Classifier rulesets
 All classifier rulesets were applied to the interim ecosystem classification layer ([Fig. 3](#workflow)) to produce the final *classification* dataset.
 
-1. **Remove unused classes**: The ecosystem classification output layer was masked to remove all saltflat pixels (see [Caveats](./?tab=quality)). 
+1. **Remove unused classes**: The ecosystem classification output layer was masked to remove all saltflat pixels (see [Caveats and Limitations](./?tab=quality/saltflat-mapping)). 
 1. **Apply probability thresholds**: A probability threshold of 50% was applied to the Saltmarsh and Mangrove pixels, with pixels below this threshold reassigned as `nodata`. A 50% probability threshold was selected based on the alignment of the outputs with external mapping products, and the conservative consideration that 50% provides a clear majority vote by the ML models.
-1. **Apply environmental corrections**: Saltmarsh pixels were masked to the observed coastal-connectivity range identified by the saltmarsh training data points. To exclude outliers, the saltmarsh connectivity mask was thresholded to the 99.5th percentile connectivity value (254) for all region-combined saltmarsh points from the training data set. This choice was made to remove misclassifications of saltmarsh in regions considered unconnected to coastal regions (see [Coastal Connectivity](#coastal-connectivity)). See the [Saltmarsh Caveat](./?tab=quality) for further discussion on the implications of thresholding based on existing distribution of Saltmarsh training data.
+1. **Apply environmental corrections**: Saltmarsh pixels were masked to the observed coastal-connectivity range identified by the saltmarsh training data points. To exclude outliers, the saltmarsh connectivity mask was thresholded to the 99.5th percentile connectivity value (254) for all region-combined saltmarsh points from the training data set. This choice was made to remove misclassifications of saltmarsh in regions considered unconnected to coastal regions (see [Coastal Connectivity](#coastal-connectivity)). See [Caveats and Limitations](./?tab=quality/connectivity-masking-and-saltmarsh) for further discussion on the implications of thresholding based on existing distribution of Saltmarsh training data.
 #### Classifier masking
 1. **Apply mangrove mask**: Mangrove pixels that fell outside of the [Global Mangrove Watch (GMW) Habitat Mask](https://doi.org/10.5281/zenodo.74784913) (Bunting et al. 2025) were removed. This habitat mask defines an ecologically suitable niche for Mangrove occupation, and was used here to align our Mangrove mapping with global approaches and to minimize false positive Mangrove classification in inhospitable environments.
-1. **Apply Intertidal seagrass probability threshold**: Within the defined Intertidal model extent, the Intertidal seagrass probability layer was used to define the Intertidal seagrass classification at a probability of greater than or equal to 70 %. The 70 % threshold was selected as a conservative value to account for inter-annual variability in seagrass meadows (see [Probability layers](#probability)).
+1. **Apply Intertidal seagrass probability threshold**: Within the defined Intertidal model extent, the Intertidal seagrass probability layer was used to define the Intertidal seagrass classification at a probability of greater than or equal to 70 %. The 70 % threshold was selected as a conservative value to account for inter-annual variability in seagrass meadows (see [Caveats and Limitations](./?tab=quality/interpretation-of-probability-layers-and-implications-for-change-applications)).
 1. **Apply manual mask**: A manual masking process was applied to the *classification* layer, based on expert identified misclassifications (including roads, urban areas, terrain shadow, data noise). For full traceability this polygon masking layer is provided [here](http://dea-public-data-dev.s3-website-ap-southeast-2.amazonaws.com/?prefix=derivative/dea_coastalecosystems/supplementary/).
 1. **Apply land use mask**: Industrial, urban or road areas as identified in the Australian Catchment Scale Land Use and Management dataset (ABARES,2021) were removed.
 1. **Remove and replace isolated pixel groups**: To reduce pixel based noise in the data, the *classification* layer was sieved to remove and replace isolated pixels in groups of 9 or less with the dominant surrounding class type.

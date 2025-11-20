@@ -50,18 +50,26 @@ licence_link: https://creativecommons.org/licenses/by/4.0/
 #   - name: Custom citation
 #     citation: "Bishop-Taylor, R., Nanson, R., Sagar, S., Lymburner, L. (2021). Mapping Australia's dynamic coastline at mean sea level using three decades of Landsat imagery. Remote Sensing of Environment, 267, 112734. https://doi.org/10.1016/j.rse.2021.112734"
 
-# tags:
-#   - example_tag
+tags:
+  - geoscience_australia_sentinel_2_collection_3
+  - coastal_ecosystems
+  - marine_and_coastal
+  - coast
+  - machine_learning
+  - intertidal
+  - coastal_change
+
+
 
 # Access
 
-# access_links_maps:
-#   - link: https://example.com
-#     name: See it on a map
+access_links_maps:
+   - link: https://maps.dea.ga.gov.au/story/DEACoastalecosystems
+     name: null
 
-# access_links_explorers:
-#   - link: https://example.com
-#     name: Data explorer
+access_links_explorers:
+  - link: https://explorer.dea.ga.gov.au/products/ga_s2_coastalecosystems_cyear_3
+    name: null
 
 # access_links_data:
 #   - link: https://example.com
@@ -69,25 +77,30 @@ licence_link: https://creativecommons.org/licenses/by/4.0/
 #   - link: https://example.com
 #     name: Access the data on NCI
 
-# access_links_code_examples:
-#   - link: https://example.com
-#     name: Code examples
-#   - link: https://example.com
-#     name: Github repository
+access_links_code_examples:
+  - link: /notebooks/DEA_products/DEA_Coastalecosystems/
+    name: null
+  - link: https://github.com/GeoscienceAustralia/dea-coastalecosystems
+    name: GitHub repository
 
-# access_links_web_services:
-#   - link: https://example.com
-#     name: Web Map Service (WMS)
-#   - link: https://example.com
-#     name: Web Feature Service (WFS)
+access_links_web_services:
+  - link: https://ows.dea.ga.gov.au/
+    name: Web Map Service (WMS)
 
-# access_links_custom:
-#   - link: https://example.com
-#     name: Access the API
-#     description: Learn how to `use the API <https://satpathapi.dea.ga.gov.au/user-guide>`_
-#     label: API
-#     icon: globe
-#     class: highlighted
+
+access_links_custom:
+  - link: https://data.dea.ga.gov.au/?prefix=derivative/ga_s2_coastalecosystems_cyear_3/1-0-0/
+    icon: database
+    label: Data sources
+    name: AWS data
+    description: null
+    class: null
+#  - link: ./?tab=access#access-guides
+#    icon: database
+#    label: Data sources
+#    name: How to stream data from AWS
+#    description: null
+#    class: null
 
 # History
 
