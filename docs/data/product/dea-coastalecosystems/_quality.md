@@ -58,86 +58,86 @@ Whilst the modelling process in this product has been designed to mitigate these
 
 The DEA Coastal Ecosystems mapping was validated using a Monte Carlo resampling workflow with spatial stratification (32 km tiles) to limit spatial autocorrelation (Lyons et al. 2018). Each iteration trains on ~80 % of tiles, tests on the remainder, filters predictions by a ≥50 % class-probability threshold (to replicate the mapping methodology), and then reports accuracy for both the ecosystem model and the final output after seagrass modelling is applied to the tidal flat area. The validation metrics are thus indicative of the accuracy of the final categorical classification product, and are not strictly relevant to the model probability layers. Final accuracy metrics are summarised from the sampling distributions as the median with a 95 % interval (which can be used as area multipliers if desired). Validation statistics are reported separately for the 2021 and 2022 mapping.
 
-Comprehensive methodology notes are documented in the code repository [Validation](https://github.com/GeoscienceAustralia/dea-coastalecosystems/blob/main/docs/validation_readme.md) section, and the complete per-class/per-year outputs are available in the[full validation results](https://github.com/GeoscienceAustralia/dea-coastalecosystems/blob/main/docs/coastal_ecosystem_validation_results.md).
+Comprehensive methodology notes are documented in the code repository ([Validation](https://github.com/GeoscienceAustralia/dea-coastalecosystems/blob/main/docs/validation_readme.md)), and the complete per-class/per-year outputs are available in the [full validation results](https://github.com/GeoscienceAustralia/dea-coastalecosystems/blob/main/docs/coastal_ecosystem_validation_results.md).
 
 ### Regional summary per year
 **Year 2021**
 | Region | Overall Accuracy (Median [95% interval]) |
 |--------|----------------------------------------|
-| 1 | 0.948 [0.905, 0.971] |
-| 2 | 0.914 [0.880, 0.943] |
-| 3 | 0.881 [0.796, 0.932] |
-| 4 | 0.932 [0.898, 0.969] |
-| 5 | 0.973 [0.938, 0.993] |
+| 1 | 0.949 [0.909, 0.971] |
+| 2 | 0.915 [0.880, 0.944] |
+| 3 | 0.883 [0.793, 0.930] |
+| 4 | 0.932 [0.899, 0.970] |
+| 5 | 0.973 [0.939, 0.994] |
 | 6 | 0.947 [0.915, 0.970] |
-| 7 | 0.942 [0.879, 0.977] |
+| 7 | 0.941 [0.878, 0.976] |
 
 **Year 2022**
 | Region | Overall Accuracy (Median [95% interval]) |
 |--------|----------------------------------------|
-| 1 | 0.944 [0.896, 0.969] |
-| 2 | 0.908 [0.873, 0.944] |
-| 3 | 0.873 [0.779, 0.922] |
-| 4 | 0.935 [0.900, 0.969] |
-| 5 | 0.972 [0.936, 0.993] |
-| 6 | 0.945 [0.913, 0.970] |
-| 7 | 0.947 [0.889, 0.981] |
+| 1 | 0.945 [0.901, 0.968] |
+| 2 | 0.911 [0.871, 0.945] |
+| 3 | 0.875 [0.785, 0.926] |
+| 4 | 0.936 [0.904, 0.969] |
+| 5 | 0.972 [0.939, 0.993] |
+| 6 | 0.945 [0.914, 0.970] |
+| 7 | 0.946 [0.888, 0.979] |
 
 ### Regional summary per class (combined years)
 #### Region 1 [North West]
 | Class | User's Accuracy | Producer's Accuracy |
 |-------|-----------------|---------------------|
-| Tidal flat | 0.877 [0.671, 0.983] | 0.945 [0.861, 0.985] |
+| Tidal flat | 0.874 [0.671, 0.979] | 0.947 [0.859, 0.986] |
 | Mangrove | 0.989 [0.960, 0.999] | 0.982 [0.963, 0.995] |
-| Saltmarsh | 0.900 [0.523, 0.991] | 0.635 [0.373, 0.823] |
-| Seagrass | 0.000 [0.000, 0.211] | 0.000 [0.000, 0.015] |
+| Saltmarsh | 0.909 [0.512, 0.989] | 0.634 [0.348, 0.821] |
+| Seagrass | 0.000 [0.000, 0.933] | 0.000 [0.000, 0.033] |
 
 #### Region 2 [North East]
 | Class | User's Accuracy | Producer's Accuracy |
 |-------|-----------------|---------------------|
-| Tidal flat | 0.777 [0.637, 0.904] | 0.927 [0.832, 0.980] |
-| Mangrove | 0.970 [0.928, 0.994] | 0.977 [0.932, 0.993] |
-| Saltmarsh | 0.803 [0.551, 0.945] | 0.571 [0.408, 0.772] |
-| Seagrass | 0.881 [0.731, 0.973] | 0.651 [0.423, 0.826] |
+| Tidal flat | 0.780 [0.641, 0.909] | 0.928 [0.839, 0.980] |
+| Mangrove | 0.971 [0.933, 0.995] | 0.978 [0.934, 0.993] |
+| Saltmarsh | 0.808 [0.537, 0.951] | 0.573 [0.417, 0.777] |
+| Seagrass | 0.883 [0.746, 0.969] | 0.668 [0.433, 0.827] |
 
 #### Region 3 [Gulf of Carpentaria]
 | Class | User's Accuracy | Producer's Accuracy |
 |-------|-----------------|---------------------|
-| Tidal flat | 0.611 [0.387, 0.827] | 0.864 [0.649, 0.972] |
-| Mangrove | 0.989 [0.962, 1.000] | 0.990 [0.974, 1.000] |
-| Saltmarsh | 0.895 [0.416, 0.983] | 0.766 [0.580, 0.907] |
-| Seagrass | 0.891 [0.691, 0.981] | 0.676 [0.311, 0.887] |
+| Tidal flat | 0.620 [0.393, 0.843] | 0.870 [0.711, 0.977] |
+| Mangrove | 0.989 [0.961, 1.000] | 0.990 [0.973, 1.000] |
+| Saltmarsh | 0.904 [0.455, 0.983] | 0.764 [0.605, 0.913] |
+| Seagrass | 0.891 [0.664, 0.983] | 0.685 [0.296, 0.897] |
 
 #### Region 4 [West]
 | Class | User's Accuracy | Producer's Accuracy |
 |-------|-----------------|---------------------|
-| Tidal flat | 0.843 [0.675, 0.994] | 0.982 [0.932, 1.000] |
-| Mangrove | 0.992 [0.909, 1.000] | 0.991 [0.939, 1.000] |
-| Saltmarsh | 0.865 [0.565, 0.988] | 0.800 [0.471, 0.949] |
-| Seagrass | 0.938 [0.163, 1.000] | 0.775 [0.148, 1.000] |
+| Tidal flat | 0.845 [0.671, 0.970] | 0.982 [0.930, 1.000] |
+| Mangrove | 0.993 [0.907, 1.000] | 0.990 [0.941, 1.000] |
+| Saltmarsh | 0.864 [0.582, 0.980] | 0.805 [0.501, 0.951] |
+| Seagrass | 0.929 [0.066, 1.000] | 0.768 [0.059, 1.000] |
 
 #### Region 5 [South West]
 | Class | User's Accuracy | Producer's Accuracy |
 |-------|-----------------|---------------------|
-| Tidal flat | 0.852 [0.000, 1.000] | 0.886 [0.000, 1.000] |
-| Mangrove | 0.994 [0.000, 1.000] | 0.897 [0.000, 1.000] |
-| Saltmarsh | 0.866 [0.618, 0.974] | 0.621 [0.257, 0.900] |
-| Seagrass | 0.863 [0.186, 1.000] | 0.895 [0.311, 1.000] |
+| Tidal flat | 0.858 [0.000, 1.000] | 0.873 [0.000, 1.000] |
+| Mangrove | 0.992 [0.000, 1.000] | 0.897 [0.000, 1.000] |
+| Saltmarsh | 0.858 [0.608, 0.975] | 0.632 [0.294, 0.904] |
+| Seagrass | 0.867 [0.104, 1.000] | 0.896 [0.306, 1.000] |
 
 #### Region 6 [South East]
 | Class | User's Accuracy | Producer's Accuracy |
 |-------|-----------------|---------------------|
-| Tidal flat | 0.862 [0.709, 0.958] | 0.925 [0.775, 0.985] |
-| Mangrove | 0.951 [0.855, 0.992] | 0.945 [0.810, 0.982] |
-| Saltmarsh | 0.919 [0.821, 0.969] | 0.782 [0.592, 0.911] |
-| Seagrass | 0.933 [0.848, 0.985] | 0.939 [0.853, 0.977] |
+| Tidal flat | 0.865 [0.701, 0.956] | 0.923 [0.791, 0.987] |
+| Mangrove | 0.949 [0.843, 0.993] | 0.951 [0.813, 0.982] |
+| Saltmarsh | 0.919 [0.816, 0.968] | 0.786 [0.584, 0.908] |
+| Seagrass | 0.934 [0.859, 0.984] | 0.941 [0.874, 0.977] |
 
 #### Region 7 [Tasmania]
 | Class | User's Accuracy | Producer's Accuracy |
 |-------|-----------------|---------------------|
-| Tidal flat | 0.951 [0.781, 1.000] | 0.969 [0.674, 1.000] |
-| Saltmarsh | 0.928 [0.732, 0.995] | 0.893 [0.682, 0.978] |
-| Seagrass | 0.970 [0.549, 1.000] | 0.928 [0.763, 1.000] |
+| Tidal flat | 0.947 [0.786, 1.000] | 0.964 [0.654, 1.000] |
+| Saltmarsh | 0.926 [0.729, 0.996] | 0.894 [0.684, 0.975] |
+| Seagrass | 0.969 [0.519, 1.000] | 0.927 [0.764, 1.000] |
 
 ## Quality assurance
 
