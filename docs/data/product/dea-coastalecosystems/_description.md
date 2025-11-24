@@ -317,8 +317,7 @@ Probability layers were also masked in this contextual editing process, as descr
 The following section details the rules and processes that were applied, with justifications or links to further discussion points.
 :::
 
-:::{dropdown} Classifier rulesets and masking
-#### Classifier rulesets
+:::{dropdown} Classifier rulesets
 
 All classifier rulesets were applied to the interim ecosystem classification layer ([Fig. 3](#workflow)) to produce the final Classification dataset.
 
@@ -326,13 +325,16 @@ All classifier rulesets were applied to the interim ecosystem classification lay
 1. **Apply probability thresholds**: A probability threshold of 50% was applied to the Saltmarsh and Mangrove pixels, with pixels below this threshold reassigned as `nodata`. A 50% probability threshold was selected based on the alignment of the outputs with external mapping products, and the conservative consideration that 50% provides a clear majority vote by the ML models.
 1. **Apply environmental corrections**: Saltmarsh pixels were masked to the observed coastal-connectivity range identified by the saltmarsh training data points. To exclude outliers, the saltmarsh connectivity mask was thresholded to the 99.5th percentile connectivity value (254) for all region-combined saltmarsh points from the training data set. This choice was made to remove misclassifications of saltmarsh in regions considered unconnected to coastal regions (see [Coastal Connectivity](#coastal-connectivity)). See [Caveats and Limitations](./?tab=quality#connectivity-masking-and-saltmarsh) for further discussion on the implications of thresholding based on existing distribution of Saltmarsh training data.
 
-#### Classifier masking
+:::
+
+:::{dropdown} Classifier masking
 
 1. **Apply mangrove mask**: Mangrove pixels that fell outside of the [Global Mangrove Watch (GMW) Habitat Mask](https://doi.org/10.5281/zenodo.74784913) (Bunting et al. 2025) were removed. This habitat mask defines an ecologically suitable niche for Mangrove occupation, and was used here to align our Mangrove mapping with global approaches and to minimize false positive Mangrove classification in inhospitable environments.
 1. **Apply Intertidal seagrass probability threshold**: Within the defined Intertidal model extent, the Intertidal seagrass probability layer was used to define the Intertidal seagrass classification at a probability of greater than or equal to 70 %. The 70 % threshold was selected as a conservative value to account for inter-annual variability in seagrass meadows (see [Caveats and Limitations](./?tab=quality#interpretation-of-probability-layers-and-implications-for-change-applications)).
 1. **Apply manual mask**: A manual masking process was applied to the Classification layer, based on expert identified misclassifications (including roads, urban areas, terrain shadow, data noise). For full traceability this polygon masking layer is provided [here](http://dea-public-data-dev.s3-website-ap-southeast-2.amazonaws.com/?prefix=derivative/dea_coastalecosystems/supplementary/).
 1. **Apply land use mask**: Industrial, urban or road areas as identified in the Australian Catchment Scale Land Use and Management dataset (ABARES,2021) were removed.
 1. **Remove and replace isolated pixel groups**: To reduce pixel based noise in the data, the Classification layer was sieved to remove and replace isolated pixels in groups of 9 or less with the dominant surrounding class type.
+
 :::
 
 :::{dropdown} Probability masking
