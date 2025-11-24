@@ -11,6 +11,7 @@ The **Digital Earth Australia (DEA) Coastal Ecosystems** product suite was devel
 This collaboration ensures the resulting maps are ecologically meaningful and complementary to expert mapping undertaken by State Governments and academia. providing a strong foundation for environmental management and reporting, restoration planning, environmental-economic accounting, and long-term coastal conservation.
 
 ## What this product offers
+
 The DEA Coastal Ecosystems product suite offers users a categorical classification of four coastal ecosystems, supported by probability layers for individual ecosystems and selected quality assurance layers to support product interpretation.
 Key features of the product suite include:
 - Sentinel-2 10 m resolution derived annual classification ecosystem maps, defining dominant ecosystem extents of mangroves, saltmarsh, intertidal, and intertidal seagrass.
@@ -50,7 +51,8 @@ The DEA Coastal Ecosystems product suite is a multi-layered dataset produced del
 ### Core Product Layers
 Five core layers are included in The DEA Coastal Ecosystems product suite: the classification and four probability layers.
 
-#### *Classification*
+#### Classification layer (classification)
+
 The primary layer of DEA Coastal Ecosystems is a categorical classification of the extent of mangrove, saltmarsh, intertidal and intertidal seagrass coastal ecosystems (Fig 1). The layer is built from thresholds of the ecosystem probability layers (below), and constrained, modified and masked with a range of ancillary datasets and QA/QC processes (See [Contextual Editing](#4-contextual-editing)).
 
 Annual classification layers are published with the following categorical class values:
@@ -66,7 +68,8 @@ Annual classification layers are published with the following categorical class 
 
 :::
 
-#### *Probability*
+#### Probability layers (mangrove-prob, saltmarsh-prob, saltflat-prob, seagrass-prob)
+
 Individual ecosystem probability layers are provided as supporting datasets to aid the interpretation of extents for four ecosystem classes, Mangrove, Saltmarsh, Saltflat and Intertidal Seagrass (Fig 2). Probability values in these layers represent the percentage of random-forest trees that vote at each pixel for a given ecosystem in the relevant [Machine Learning model](#model-training); the Ecosystem Model (Mangroves, Saltmarsh, Saltflat) or the Intertidal Model (Intertidal Seagrass).
 
 The Intertidal class within the Intertidal model has been fixed to the extent of the [DEA Intertidal Extents product](https://knowledge.dea.ga.gov.au/data/product/dea-intertidal/?tab=description#core-product-layers) (see [Ecosystem Prediction](#ecosystem-prediction)), so the probability layer for this ecosystem is not provided. As the Intertidal Seagrass is modelled within this fixed extent, the corresponding probability layer is also constrained to these extents.
@@ -84,13 +87,15 @@ Further information on how these Probability layers can be individually interpre
 :::
 
 ### Quality Assurance Layers
-Two quality assurance layers are included in the DEA Coastal Ecosystems product suite: 
 
-#### Clear count (*qa-count-clear*)
+Two quality assurance layers are included in the DEA Coastal Ecosystems product suite.
+
+#### Clear count layer (qa-count-clear)
 
 A layer showing the distribution of clear and valid satellite observations at each [Sentinel-2 pixel](https://knowledge.dea.ga.gov.au/data/category/dea-surface-reflectance/) during the analysis period. Artefacts that can invalidate pixels include cloud cover/shadow and low geometric accuracy. A pixel only proceeds into the DEA Coastal Ecosystems workflow if it has more than 10 valid observations in a modelling year. 
 
-#### Coastal connectivity (*qa-coastal-connectivity*)
+#### Coastal connectivity layer (qa-coastal-connectivity)
+
 An accumulated cost-distance connectivity layer used as a [covariate](#coastal-connectivity) within the modelling process, and as an additional [contextual editing](#4-contextual-editing) layer for the Saltmarsh class. Values represent the cumulative elevation above Highest Astronomical Tide that must be traversed along the shortest path from tidally influenced coastal waters and mangroves. Lower values indicate likely coastal pixels, reflecting both distance inland and topography. The values of the coastal connectivity layer are dimensionless with low values representing high coastal connectivity and high values indicating lower coastal connectivity.
 
 ### Data Format
