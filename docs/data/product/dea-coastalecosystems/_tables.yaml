@@ -11,35 +11,35 @@ bands_table:
     nodata: 255
     units: Class
     type: uint8
-    description: A high confidence categorical classifier of coastal ecosystem types. Class 2 = intertidal, 3= mangrove, 4= saltmarsh, 5= intertidal seagrass 
+    description: "A high confidence categorical classifier of coastal ecosystem types. Classes: 2 = intertidal; 3 = mangrove; 4 = saltmarsh; 5 = intertidal seagrass."
   - name: mangrove-prob
     aliases: []
     resolution: 10 m
     nodata: 255
     units: Percent
     type: uint8
-    description: A probability distribution for mangroves
+    description: A probability distribution for mangroves.
   - name: saltmarsh-prob
     aliases: []
     resolution: 10 m
     nodata: 255
     units: Percent
     type: uint8
-    description: A probability distribution for saltmarshes
+    description: A probability distribution for saltmarshes.
   - name: saltflat-prob
     aliases: []
     resolution: 10 m
     nodata: 255
     units: Percent
     type: uint8
-    description: A probability distribution for saltflats
+    description: A probability distribution for saltflats.
   - name: seagrass-prob
     aliases: []
     resolution: 10 m
     nodata: 255
     units: Percent
     type: uint8
-    description: A probability distribution of seagrass inside the DEA Intertidal high confidence extent
+    description: A probability distribution of seagrass inside the DEA Intertidal high confidence extent.
   - name: qa-count-clear
     aliases: 
     - count-clear
