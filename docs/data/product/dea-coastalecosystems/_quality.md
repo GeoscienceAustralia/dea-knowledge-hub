@@ -11,7 +11,7 @@
 
 ### Sensor Tidal Bias
 
-- **Sensor coverage and tidal phase:** Sentinel 2 acquisitions do not uniformly sample the [tidal cycle](https://knowledge.dea.ga.gov.au/data/product/dea-intertidal/?tab=quality#caveats-and-limitations), so in some regions intertidal habitats may be under-represented or not fully characterised in either the training data or the predictions. For example, in a region where the highest portion of the tidal range/cycle is not observed by the sensor, training data and the associated covariates for classes such as saltmarsh may be biased towards a lower tide representation of that class.
+- **Sensor coverage and tidal phase:** Sentinel 2 acquisitions do not uniformly sample the [tidal cycle](/data/product/dea-intertidal/?tab=quality#caveats-and-limitations), so in some regions intertidal habitats may be under-represented or not fully characterised in either the training data or the predictions. For example, in a region where the highest portion of the tidal range/cycle is not observed by the sensor, training data and the associated covariates for classes such as saltmarsh may be biased towards a lower tide representation of that class.
 - **Intertidal Seagrass Training Points:** Due to sensor tidal bias, some Intertidal Seagrass training points fall outside of the Intertidal Extent that is observed by the sensor, and which is used to constrain the extent of Intertidal/Seagrass model. These training data points are excluded from the model, as they fall below the Lowest Observed Tide of the sensor, meaning they will only be observed as sub-tidal seagrass points.
 
 ### Saltflat Mapping

@@ -64,7 +64,7 @@ Annual classification layers are published with the following categorical class 
 
 :::{figure} /_files/dea-coastalecosystems/classification_bermagui_2021_LTC.png
 
-**Figure 1** Bermagui, NSW. Above: the 2021 low-tide [DEA Tidal Composite](https://knowledge.dea.ga.gov.au/data/product/dea-tidal-composites/). Below: the 2021 DEA Coastal Ecosystems classification layer.
+**Figure 1** Bermagui, NSW. Above: the 2021 low-tide [DEA Tidal Composite](/data/product/dea-tidal-composites/). Below: the 2021 DEA Coastal Ecosystems classification layer.
 
 :::
 
@@ -72,7 +72,7 @@ Annual classification layers are published with the following categorical class 
 
 Individual ecosystem probability layers are provided as supporting datasets to aid the interpretation of extents for four ecosystem classes, Mangrove, Saltmarsh, Saltflat and Intertidal Seagrass (Fig 2). Probability values in these layers represent the percentage of random-forest trees that vote at each pixel for a given ecosystem in the relevant [Machine Learning model](#model-training); the Ecosystem Model (Mangroves, Saltmarsh, Saltflat) or the Intertidal Model (Intertidal Seagrass).
 
-The Intertidal class within the Intertidal model has been fixed to the extent of the [DEA Intertidal Extents product](https://knowledge.dea.ga.gov.au/data/product/dea-intertidal/?tab=description#core-product-layers) (see [Ecosystem Prediction](#ecosystem-prediction)), so the probability layer for this ecosystem is not provided. As the Intertidal Seagrass is modelled within this fixed extent, the corresponding probability layer is also constrained to these extents.
+The Intertidal class within the Intertidal model has been fixed to the extent of the [DEA Intertidal Extents product](/data/product/dea-intertidal/?tab=description#core-product-layers) (see [Ecosystem Prediction](#ecosystem-prediction)), so the probability layer for this ecosystem is not provided. As the Intertidal Seagrass is modelled within this fixed extent, the corresponding probability layer is also constrained to these extents.
 
 Probabilities for layers in the Ecosystem Model (Mangroves, Saltmarsh and Saltflat) are masked below 20% probability to remove very low confidence pixels and noise from the dataset to improve interpretability.
 
@@ -92,7 +92,7 @@ Two quality assurance layers are included in the DEA Coastal Ecosystems product 
 
 #### Clear count layer (qa-count-clear)
 
-A layer showing the distribution of clear and valid satellite observations at each [Sentinel-2 pixel](https://knowledge.dea.ga.gov.au/data/category/dea-surface-reflectance/) during the analysis period. Artefacts that can invalidate pixels include cloud cover/shadow and low geometric accuracy. A pixel only proceeds into the DEA Coastal Ecosystems workflow if it has more than 10 valid observations in a modelling year. 
+A layer showing the distribution of clear and valid satellite observations at each [Sentinel-2 pixel](/data/category/dea-surface-reflectance/) during the analysis period. Artefacts that can invalidate pixels include cloud cover/shadow and low geometric accuracy. A pixel only proceeds into the DEA Coastal Ecosystems workflow if it has more than 10 valid observations in a modelling year. 
 
 #### Coastal connectivity layer (qa-coastal-connectivity)
 
@@ -102,7 +102,7 @@ An accumulated cost-distance connectivity layer used as a [covariate](#coastal-c
 
 #### Cloud-optimised GeoTIFF
 
-Layers of the DEA Coastal Ecosystems product suite are provided as single continental scale cloud-optimised GeoTIFFs (COG). For data access and use in geospatial information system (GIS) environments, [streaming](https://knowledge.dea.ga.gov.au/guides/continental-cogs-geotiff-mosaics/) of these datasets is strongly recommended over downloading. Web mapping services (WMS) are also available for all [DEA datasets](./?tab=access).
+Layers of the DEA Coastal Ecosystems product suite are provided as single continental scale cloud-optimised GeoTIFFs (COG). For data access and use in geospatial information system (GIS) environments, [streaming](/guides/continental-cogs-geotiff-mosaics/) of these datasets is strongly recommended over downloading. Web mapping services (WMS) are also available for all [DEA datasets](./?tab=access).
 
 #### Product naming convention
 
@@ -208,12 +208,12 @@ This approach balanced the need for increased training data volume across all se
 ### 2. Covariate Data
 
 :::{dropdown} Covariate Data Stack
-Covariate data describes the input datasets used to train the ML models. Covariate data stacks were generated using a combination of [Sentinel-2 Analysis Ready Data]((https://knowledge.dea.ga.gov.au/data/category/dea-surface-reflectance/)), remote-sensing indices and derived datasets (Table 3). These covariate stacks of 121 total variables were generated for each of the modelling years.
+Covariate data describes the input datasets used to train the ML models. Covariate data stacks were generated using a combination of [Sentinel-2 Analysis Ready Data](/data/category/dea-surface-reflectance/), remote-sensing indices and derived datasets (Table 3). These covariate stacks of 121 total variables were generated for each of the modelling years.
 
 **Table 3** Covariate datasets used to model coastal ecosystems
 | Data Source | Variable | Percentiles | Total Count |
 |-----|-----|-----|-----|
-|[Sentinel-2 ARD Reflectance](https://knowledge.dea.ga.gov.au/data/category/dea-surface-reflectance/) | nbart_blue | 10,20,40,60,80 | 5 |
+|[Sentinel-2 ARD Reflectance](/data/category/dea-surface-reflectance/) | nbart_blue | 10,20,40,60,80 | 5 |
 |  | nbart_green | 10,20,40,60,80 | 5 |
 |  | nbart_red | 10,20,40,60,80 | 5 |
 |  | nbart_red_edge_1 | 10,20,40,60,80 | 5 |
@@ -236,7 +236,7 @@ Covariate data describes the input datasets used to train the ML models. Covaria
 |- Tasseled Cap Wetness (Crist, 1985) | TCW | 10,20,40,60,80 | 5 |
 |- Tasseled Cap Wetness (GSO variant) (Nedkov, 2017) | TCW_GSO | 10,20,40,60,80 | 5 |
 |- Water Index (Fisher et al., 2016) | WI | 10,20,40,60,80 | 5 |
-| [DEA Tidal Composites](https://knowledge.dea.ga.gov.au/data/product/dea-tidal-composites/?tab=specifications) | low_blue |  | 1 |
+| [DEA Tidal Composites](/data/product/dea-tidal-composites/?tab=specifications) | low_blue |  | 1 |
 |  | low_green |  | 1 |
 |  | low_red |  | 1 |
 |  | low_red_edge_1 |  | 1 |
@@ -256,13 +256,13 @@ The Coastal Connectivity layer (also published as a [QA product layer](#quality-
 
 - Shuttle Radar Topography Mission Digital Elevation Model Version 1 (Gallant et al., 2011)
 - Highest Astronomical Tide [(Branson, 2023)](https://data.csiro.au/collection/csiro%3A61319v1)
-- The extent of the [DEA Mangroves](https://knowledge.dea.ga.gov.au/data/product/dea-mangroves/) product.
+- The extent of the [DEA Mangroves](/data/product/dea-mangroves/) product.
 
 Coastal connectivity is used here as a covariate layer within the modelling process, and as an additional contextual editing layer for the Saltmarsh class. 
 
 :::{figure} /_files/dea-coastalecosystems/connectivity_Mallacoota.png
 
-**Figure 6**  *a*) Mallacoota, Victoria low-tide [DEA Tidal Composite](https://knowledge.dea.ga.gov.au/data/product/dea-tidal-composites/) for 2021; *b*) Low elevation areas, highly connected to tidally-influenced coastlines, have low connectivity values (light grey). Elevated areas are penalised with high connectivity values (dark grey), even if located close to tidally influenced areas.
+**Figure 6**  *a*) Mallacoota, Victoria low-tide [DEA Tidal Composite](/data/product/dea-tidal-composites/) for 2021; *b*) Low elevation areas, highly connected to tidally-influenced coastlines, have low connectivity values (light grey). Elevated areas are penalised with high connectivity values (dark grey), even if located close to tidally influenced areas.
 :::
 ::::
 
@@ -280,7 +280,7 @@ The DEA Coastal Ecosystems workflow trains two [random-forest classifiers](https
 - a multi-class ecosystem model (mangrove, saltmarsh and salt flat) and;
 - an intertidal model (intertidal and intertidal-seagrass). 
 
-The multi-class ecosystem model utilized all data in the training data library while the Intertidal model was developed using only training data points located within the [DEA Intertidal Extents high confidence intertidal region](https://knowledge.dea.ga.gov.au/data/product/dea-intertidal/#core-product-layers). Functionally, this meant that within the bounded extents of the Intertidal modelled region, any training points included in the model that were not defined as Intertidal Seagrass were considered Intertidal. For a discussion on the implications of this aspect of the model classification see [Caveats and Limitations](./?tab=quality#constraint-of-the-intertidal-model-and-definition-of-the-intertidal-class) section.
+The multi-class ecosystem model utilized all data in the training data library while the Intertidal model was developed using only training data points located within the [DEA Intertidal Extents high confidence intertidal region](/data/product/dea-intertidal/#core-product-layers). Functionally, this meant that within the bounded extents of the Intertidal modelled region, any training points included in the model that were not defined as Intertidal Seagrass were considered Intertidal. For a discussion on the implications of this aspect of the model classification see [Caveats and Limitations](./?tab=quality#constraint-of-the-intertidal-model-and-definition-of-the-intertidal-class) section.
 
 Multi-class and binary random-forest models were fit for each region using: 
 
@@ -291,7 +291,7 @@ Multi-class and binary random-forest models were fit for each region using:
 
 A [k-fold cross-validation](https://scikit-learn.org/stable/modules/cross_validation.html#computing-cross-validated-metrics) approach was used to assess model behaviour and optimise the model parameters. Optimized model parameters were used to fit the final models using the full training data set for the multi-class model and the intertidal masked training data set for the seagrass model. A monte carlo resampling framework was used to validate the mapping products and calculate accuracy metrics including overall accuracy, class-based accuracy and relevant confidence intervals. Overall model accuracy statistics are reported in the [Quality](./?tab=quality#accuracy) tab. 
 
-The combined 2021 and 2022 stacks of covariate-trained training data ensured the classifier models were suitable for prediction into both years. Common covariates that exhibited a top-10 feature importance for the ecosystem models included the NDVI and MNDWI percentiles as well as the coastal-connectivity. Common top-10 feature importance covariates for the seagrass models included the tasselled cap wetness percentiles and red_edge, nir and swir bands from the low-tide [DEA Tidal Composite](https://knowledge.dea.ga.gov.au/data/product/dea-tidal-composites/) (Fig. 7).
+The combined 2021 and 2022 stacks of covariate-trained training data ensured the classifier models were suitable for prediction into both years. Common covariates that exhibited a top-10 feature importance for the ecosystem models included the NDVI and MNDWI percentiles as well as the coastal-connectivity. Common top-10 feature importance covariates for the seagrass models included the tasselled cap wetness percentiles and red_edge, nir and swir bands from the low-tide [DEA Tidal Composite](/data/product/dea-tidal-composites/) (Fig. 7).
 
 :::{figure} /_files/dea-coastalecosystems/ML_Feature_Importance.png
 
@@ -304,7 +304,7 @@ Coastal ecosystems were predicted using Covariate data stacks created for each m
 
 Initial predictions were made using the multi-class ecosystem model, generating interim probability layers for mangrove, saltmarsh and salt flat ecosystems ([Fig. 3](#workflow)). An interim classified ecosystem output layer was also generated to capture the highest probability ecosystem class predicted for each pixel and included mangrove, saltmarsh and saltflat classes. Water and Terrestrial classes in this interim layer were classified as `nodata`. 
 
-The Intertidal modelling extent was then set using the high confidence intertidal extent from the [DEA Intertidal](https://knowledge.dea.ga.gov.au/data/product/dea-intertidal/#core-product-layers) dataset. The Intertidal model was then used to predict Intertidal seagrass from the annual covariate stacks masked to this modelling extent. The output from this process is the interim Intertidal seagrass probability layer ([Fig. 3](#workflow)).
+The Intertidal modelling extent was then set using the high confidence intertidal extent from the [DEA Intertidal](/data/product/dea-intertidal/#core-product-layers) dataset. The Intertidal model was then used to predict Intertidal seagrass from the annual covariate stacks masked to this modelling extent. The output from this process is the interim Intertidal seagrass probability layer ([Fig. 3](#workflow)).
 :::
 
 ### 4. Contextual editing
@@ -344,8 +344,8 @@ All classifier rulesets were applied to the interim ecosystem classification lay
 
 ## Software
 
-- The [Coastal Ecosystems GitHub](https://github.com/GeoscienceAustralia/dea-coastalecosystems) code repository contains the core functionality required to run the DEA Coastal Ecosystems workflow. The code leverages functions from [DEA Tools](https://knowledge.dea.ga.gov.au/notebooks/Tools/) that have dependencies on [Scikitlearn](https://scikit-learn.org/stable/).
-- The [DEA Tools](https://knowledge.dea.ga.gov.au/notebooks/Tools/) library contains essential functionality required to generate random-forest models using [DEA Analysis-Ready-Data](https://knowledge.dea.ga.gov.au/data/category/dea-surface-reflectance/)
+- The [Coastal Ecosystems GitHub](https://github.com/GeoscienceAustralia/dea-coastalecosystems) code repository contains the core functionality required to run the DEA Coastal Ecosystems workflow. The code leverages functions from [DEA Tools](/notebooks/Tools/) that have dependencies on [Scikitlearn](https://scikit-learn.org/stable/).
+- The [DEA Tools](/notebooks/Tools/) library contains essential functionality required to generate random-forest models using [DEA Analysis-Ready-Data](/data/category/dea-surface-reflectance/)
 - The [Scikitlearn](https://scikit-learn.org/stable/) library provided the random-forest classification methodologies.
 
 ## References
