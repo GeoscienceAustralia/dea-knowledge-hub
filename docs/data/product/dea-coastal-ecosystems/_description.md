@@ -135,7 +135,7 @@ These components are discussed in further detail below. The validation process i
 ### 1. Training data
 
 ::::{dropdown} Data curation
-[Continental training data](https://github.com/GeoscienceAustralia/dea-coastalecosystems/blob/main/data/training_data_input/MultEcosy_TData_v1_0.geojson), developed for [this work](https://github.com/GeoscienceAustralia/dea-coastalecosystems/blob/main/docs/publications/JCU_Coastal_Training_Data_Report_1_27012023_FR%20.pdf) (Canto et al., 2023), comprised a point-record training set of 40,934 Australian coastal ecosystem type occurrences (Fig. 4). Development of this dataset was completed for use with multi-ecosystem classification models.
+[Continental training data](https://github.com/GeoscienceAustralia/dea-coastalecosystems/blob/main/data/training_data_input/MultEcosy_TData_v1_0.geojson), developed for [this work](https://github.com/GeoscienceAustralia/dea-coastalecosystems/blob/main/docs/publications/JCU_Coastal_Training_Data_Report_1_27012023_FR%20.pdf) (Canto et al., 2023), comprised a point-record training set of 40,934 Australian coastal ecosystem type occurrences (Figure 4). Development of this dataset was completed for use with multi-ecosystem classification models.
 
 The dataset integrated occurrence records from four data sources:
 
@@ -146,24 +146,26 @@ The dataset integrated occurrence records from four data sources:
 
 :::{figure} /_files/dea-coastalecosystems/Original_training_point_distribution.png
 
-**Figure 4** (after Canto et al., 2023; Becker et al., 2023). 40,934 expert labelled point occurrences of coastal ecosystem types, distributed continentally around the Australian coastline.
+**Figure 4.** (After Canto et al., 2023; Becker et al., 2023.) 40,934 expert labelled point occurrences of coastal ecosystem types, distributed continentally around the Australian coastline.
 :::
 ::::
 
 :::{dropdown} Ecosystem definitions
-The training data definitions for Australian coastal ecosystems (Table 1, Canto et al., 2023) were sourced from the Blue Carbon Method (CER, 2022) and the International Union for Conservation of Nature Global Ecosystem Typology (Keith et al., 2022). 
+The training data definitions for Australian coastal ecosystems (Table 1; Canto et al., 2023) were sourced from the Blue Carbon Method (CER, 2022) and the International Union for Conservation of Nature Global Ecosystem Typology (Keith et al., 2022). 
 
 Training point class descriptors (level 2, L2) were aggregated into broader level 1 (L1) class categories to form the basis of the DEA Coastal Ecosystems classification schema. The mapping of L2 to L1 ecosystem types, and their definitions, are described in Table 1.
 
-**Table 1** Ecosystem definitions and class mappings
+<figure>
+    <figcaption>Table 1. Ecosystem definitions and class mappings.</figcaption>
+</figure>
 
 | L2 ecosystem type | L1 ecosystem type | L1 Definition |
 |-------------------|-------------------|---------------|
 | • Land<br>• Supratidal forest<br>• Freshwater wetland<br>• Sand<br>• Water | Terrestrial/Other | Includes natural or anthropogenic land cover types that occur in non-intertidal areas but within the coastal zone such as supratidal forests, frequently inundated croplands, freshwater wetlands and permanent sand dunes. |
 | • Seagrass (subtidal) | Permanent water | Refers to a variety of permanent water bodies around the coast but not within the intertidal zone. These water bodies range from deep permanent ocean to freshwater rivers and lakes and include clear and turbid waters. Includes submerged vegetation and substrates such as subtidal seagrass if the bottom is visible. |
-| • Mudflat<br>• Intertidal non-vegetated soft sediments | Intertidal | Ecosystem occurring in low-sloping areas of the intertidal zone. Includes muddy, sandy and rocky substrates. In soft sediments, can readily transition to seagrass, mangrove or saltmarsh ecosystems if conditions become favorable for the colonization of vegetation through changes in sea level or freshwater inundation over time. |
+| • Mudflat<br>• Intertidal non-vegetated soft sediments | Intertidal | Ecosystem occurring in low-sloping areas of the intertidal zone. Includes muddy, sandy and rocky substrates. In soft sediments, can readily transition to seagrass, mangrove or saltmarsh ecosystems if conditions become favorable for the colonisation of vegetation through changes in sea level or freshwater inundation over time. |
 | • Mangrove | Mangrove | Ecosystem comprised of trees and shrubs which a) occupy the intertidal zone or floodplains, including marine and estuarine areas; and b) grow in saline or brackish water. |
-| • Saltmarsh<br>• Algal Mats | Saltmarsh | Ecosystem comprised of a) salt tolerant herbaceous plants and occasionally woody shrubs; and b) occur on floodplains and in estuaries and can be flushed with water from a combinations of sources including rainfall, rivers, groundwater and seawater. This includes saltmarsh in sparsely vegetated saline or hypersaline ecosystems. |
+| • Saltmarsh<br>• Algal Mats | Saltmarsh | Ecosystem comprised of a) salt-tolerant herbaceous plants and occasionally woody shrubs; and b) occur on floodplains and in estuaries and can be flushed with water from a combinations of sources including rainfall, rivers, groundwater and seawater. This includes saltmarsh in sparsely vegetated saline or hypersaline ecosystems. |
 | • Seagrass (intertidal) | Intertidal seagrass | Ecosystem comprised of grass-like plants that grow in shallow intertidal coastal waters. Seagrasses are aquatic flowering plants that form meadows in temperate and tropical regions of Australia. |
 | • Saltflat | Saltflat | A subtype of saltmarsh ecosystems comprising bare saltmarsh. Saltflats include sparsely vegetated saline or hypersaline ecosystems |
 :::
@@ -171,7 +173,7 @@ Training point class descriptors (level 2, L2) were aggregated into broader leve
 ::::{dropdown} Regional modelling
 A bioregional approach was used to improve modelling performance by accounting for regional ecological variations while maintaining the ability to apply a consistent classification schema. 
 
-Seven bioregions (Fig. 5) were developed with expert consultation across Geoscience Australia, University of Queensland, James Cook University and University of New South Wales, guided by Natural Resource Management regions, tidal regimes, climate forcing and ecosystem dynamics. 
+Seven bioregions (Figure 5) were developed with expert consultation across Geoscience Australia, University of Queensland, James Cook University and University of New South Wales, guided by Natural Resource Management regions, tidal regimes, climate forcing and ecosystem dynamics. 
 
 These regions enabled models to be developed with regional specific training data to account for differences across the common ecosystem classes (e.g. the varied ecological nature of saltmarsh across the country), as well as regional climate and seasonal impacts on the covariate data inputs.
 
@@ -179,20 +181,22 @@ It is important that these regions be regarded as a pragmatic technical choice r
 
 :::{figure} /_files/dea-coastalecosystems/Labelled_tile_regions.png
 
-***Figure 5*** Seven biogregions were used to model coastal ecosystems
+**Figure 5.** Seven biogregions were used to model coastal ecosystems.
 :::
 ::::
 
 :::{dropdown} Training Point Expansion
 Introducing modelling regions had implications for the size and balance of the training data sets once split across the seven bioregions, with many ecosystem training point classes falling below a reasonable representative sample number. 
 
-The development of the original training data set on Landsat 30 m data, coupled with an acquisition protocol focused on spatially homogenous regions, presented an opportunity to expand the training data sets when considering the increased resolution of the Sentinel-2 based product. With Sentinel-2's 10 m resolution pixels falling within the tolerance established for the training data point validity (30-40 m), a semi-automated process was implemented to expand the existing training dataset. This semi-automated approach was particularly effective for densifying training data coverage in homogeneous ecosystem patches while maintaining data quality.
+The development of the original training data set on Landsat 30 m data, coupled with an acquisition protocol focused on spatially homogenous regions, presented an opportunity to expand the training data sets when considering the increased resolution of the Sentinel-2-based product. With Sentinel-2's 10 m resolution pixels falling within the tolerance established for the training data point validity (30&ndash;40 m), a semi-automated process was implemented to expand the existing training dataset. This semi-automated approach was particularly effective for densifying training data coverage in homogeneous ecosystem patches while maintaining data quality.
 
 Training data densification was achieved by resampling the original training data points to 10 m resolution. By sampling the surrounding 9 pixels of each original training point, the overall number of training data points was increased to approximately 368,000.
 
 This approach balanced the need for increased training data volume across all seven modelling regions while maintaining data quality and ecological validity (Table 2). The process also included more spatial and spectral variability in the modelling process, resulting in a small but consistent improvement in [accuracy](./?tab=quality#accuracy) when models used the expanded training data set.
 
-**Table 2** Expanded training data distribution across model regions. Modelling regions: North West (NW), North East (NE), Gulf of Carpentaria (Gulf), West, South West (SW), South East (SE) and Tasmania (Tas.). **N.b.** No mangroves or saltflat are recorded in Tasmania.
+<figure>
+    <figcaption>Table 2. Expanded training data distribution across model regions. Modelling regions: North West (NW), North East (NE), Gulf of Carpentaria (Gulf), West, South West (SW), South East (SE) and Tasmania (Tas.). Note that no mangroves or saltflat are recorded in Tasmania.</figcaption>
+</figure>
 
 | Region | Water | Mudflat | Mangrove | Saltmarsh | Saltflat | Terrestrial/Other | Intertidal seagrass | Total |
 |--------|-------|---------|----------|-----------|----------|-------------------|---------------------|-------|
@@ -209,9 +213,12 @@ This approach balanced the need for increased training data volume across all se
 ### 2. Covariate Data
 
 :::{dropdown} Covariate Data Stack
-Covariate data describes the input datasets used to train the ML models. Covariate data stacks were generated using a combination of [Sentinel-2 Analysis Ready Data](/data/category/dea-surface-reflectance/), remote-sensing indices and derived datasets (Table 3). These covariate stacks of 121 total variables were generated for each of the modelling years.
+Covariate data describes the input datasets used to train the ML models. Covariate data stacks were generated using a combination of Sentinel-2 Analysis Ready Data, remote-sensing indices and derived datasets (Table 3). These covariate stacks of 121 total variables were generated for each of the modelling years.
 
-**Table 3** Covariate datasets used to model coastal ecosystems
+<figure>
+    <figcaption>Table 3. Covariate datasets used to model coastal ecosystems.</figcaption>
+</figure>
+
 | Data Source | Variable | Percentiles | Total Count |
 |-----|-----|-----|-----|
 |[Sentinel-2 ARD Reflectance](/data/category/dea-surface-reflectance/) | nbart_blue | 10,20,40,60,80 | 5 |
