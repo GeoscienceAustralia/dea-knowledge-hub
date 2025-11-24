@@ -30,8 +30,14 @@ product_ids:
   - ga_s2_coastalecosystems_cyear_3_v1
 
 parent_products:
-  - name: Sentinel-2A and -2B NBART and Observational Attributes
-    link: /data/category/dea-surface-reflectance/
+  - name: Sentinel-2A Surface Reflectance NBART
+    link: /data/product/dea-surface-reflectance-nbart-sentinel-2a-msi/
+  - name: Sentinel-2A Observational Attributes
+    link: /data/product/dea-surface-reflectance-oa-sentinel-2a-msi/
+  - name: Sentinel-2B Surface Reflectance NBART
+    link: /data/product/dea-surface-reflectance-nbart-sentinel-2b-msi/
+  - name: Sentinel-2B Observational Attributes
+    link: /data/product/dea-surface-reflectance-oa-sentinel-2b-msi/
 
 collections:
   - name: Geoscience Australia Sentinel-2 Collection 3
