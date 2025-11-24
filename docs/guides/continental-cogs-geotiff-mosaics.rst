@@ -12,7 +12,7 @@ Not all DEA products provide continental-scale COGs. Currently, this access meth
 - `DEA Land Cover </data/product/dea-land-cover-landsat/>`_
 - `DEA Intertidal </data/product/dea-intertidal/>`_
 - `DEA Tidal Composites </data/product/dea-tidal-composites/>`_
-- `DEA Coastal Ecosystem Map </data/product/dea-coastalecosystems/>`_
+- `DEA Coastal Ecosystem Map </data/product/dea-coastal-ecosystems/>`_
 
 **VRT (Virtual Raster) files** are provided alongside the ``.tif`` mosaics. These files serve as lightweight wrappers around the main data and can be used to open data in GIS software with visual settings already applied. We use VRTs to provide:
 

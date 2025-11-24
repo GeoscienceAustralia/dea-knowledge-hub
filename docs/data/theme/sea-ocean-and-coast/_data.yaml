@@ -3,7 +3,7 @@ description: Explore Australia's marine and coastal environments, including dyna
 
 cards:
   - name: DEA Coastal Ecosystems
-    link: /data/product/dea-coastalecosystems/
+    link: /data/product/dea-coastal-ecosystems/
     image: /_files/dea-coastalecosystems/classification_Shoalwater_2021_thumbnail.png
   - name: DEA Coastlines
     link: /data/product/dea-coastlines/

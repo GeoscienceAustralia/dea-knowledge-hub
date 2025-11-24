@@ -129,7 +129,7 @@ entries:
           - file: data/theme/sea-ocean-and-coast/index
             title: All
 
-          - file: data/product/dea-coastalecosystems/index
+          - file: data/product/dea-coastal-ecosystems/index
           - file: data/product/dea-coastlines/index
           - file: data/product/dea-intertidal/index
           - file: data/product/dea-tidal-composites/index
