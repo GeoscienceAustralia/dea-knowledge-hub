@@ -36,7 +36,7 @@ Key features of the product suite include:
 
 DEA Coastal Ecosystems was initiated as a collaborative project to support the Commonwealth Department of Climate Change, Energy, the Environment and Water (DCCEEW) to underpin the creation of Environmental Economic Accounts (EEA) for ecosystems in Australia’s coastal zone. This followed experimental Ocean Accounts, delivered in 2022 and based on selected individual ecosystem earth observation derived datasets.
 
-Leveraging a methodology that mapped [global shifts in tidal wetlands](https://www.science.org/doi/10.1126/science.abm9583), Geoscience Australia has collaborated with James Cook University and the University of New South Wales to deliver a similar approach for Australia in the DEA Coastal Ecosystems product suite. Initial Beta versions of the  product were used to underpin the February 2025 release of the [National Ecosystem Accounts experimental estimates for the Coastal Realm](https://www.abs.gov.au/statistics/environment/environmental-accounts/national-ecosystem-accounts-experimental-estimates/latest-release#coastal-realm), with the first V1.0.0 release of the DEA Coastal Ecosystems product suite expected to contribute to the upcoming 2026 National Ecosystem Account released by the Australian Bureau of Statistics (ABS)
+Leveraging a methodology that mapped [global shifts in tidal wetlands](https://www.science.org/doi/10.1126/science.abm9583), Geoscience Australia has collaborated with James Cook University and the University of New South Wales to deliver a similar approach for Australia in the DEA Coastal Ecosystems product suite. Initial Beta versions of the  product were used to underpin the February 2025 release of the [National Ecosystem Accounts experimental estimates for the Coastal Realm](https://www.abs.gov.au/statistics/environment/environmental-accounts/national-ecosystem-accounts-experimental-estimates/latest-release#coastal-realm), with the first version 1.0.0 release of the DEA Coastal Ecosystems product suite expected to contribute to the upcoming 2026 National Ecosystem Account released by the Australian Bureau of Statistics (ABS)
 
 Targeted stakeholder engagement and product feedback sessions have been conducted throughout the development of the product to ensure, where possible, a complementary alignment of the DEA Coastal Ecosystems product suite to State Government and Academic mapping efforts. These engagements aimed to ensure ease of uptake and integration of the product into a range of environmental reporting applications across jurisdictions (e.g State of the Environment).
 
@@ -49,11 +49,12 @@ Stakeholder engagement at all levels will continue to drive the development of D
 The DEA Coastal Ecosystems product suite is a multi-layered dataset produced delivered as annual summary products. See [Specifications](./?tab=specifications) for individual layer metadata.
 
 ### Core Product Layers
-Five core layers are included in The DEA Coastal Ecosystems product suite: the classification and four probability layers.
+
+Five core layers are included in The DEA Coastal Ecosystems product suite: the classification layer and four probability layers.
 
 #### Classification layer (classification)
 
-The primary layer of DEA Coastal Ecosystems is a categorical classification of the extent of mangrove, saltmarsh, intertidal and intertidal seagrass coastal ecosystems (Fig 1). The layer is built from thresholds of the ecosystem probability layers (below), and constrained, modified and masked with a range of ancillary datasets and QA/QC processes (See [Contextual Editing](#4-contextual-editing)).
+The primary layer of DEA Coastal Ecosystems is a categorical classification of the extent of mangrove, saltmarsh, intertidal and intertidal seagrass coastal ecosystems (Figure 1). The layer is built from thresholds of the ecosystem probability layers (below), and constrained, modified and masked with a range of ancillary datasets and QA/QC processes (See [Contextual Editing](#4-contextual-editing)).
 
 Annual classification layers are published with the following categorical class values:
 
@@ -64,25 +65,25 @@ Annual classification layers are published with the following categorical class 
 
 :::{figure} /_files/dea-coastalecosystems/classification_bermagui_2021_LTC.png
 
-**Figure 1** Bermagui, NSW. Above: the 2021 low-tide [DEA Tidal Composite](/data/product/dea-tidal-composites/). Below: the 2021 DEA Coastal Ecosystems classification layer.
+**Figure 1.** Bermagui, NSW. Top: The 2021 low-tide [DEA Tidal Composite](/data/product/dea-tidal-composites/). Bottom: The 2021 DEA Coastal Ecosystems classification layer.
 
 :::
 
 #### Probability layers (mangrove-prob, saltmarsh-prob, saltflat-prob, seagrass-prob)
 
-Individual ecosystem probability layers are provided as supporting datasets to aid the interpretation of extents for four ecosystem classes, Mangrove, Saltmarsh, Saltflat and Intertidal Seagrass (Fig 2). Probability values in these layers represent the percentage of random-forest trees that vote at each pixel for a given ecosystem in the relevant [Machine Learning model](#model-training); the Ecosystem Model (Mangroves, Saltmarsh, Saltflat) or the Intertidal Model (Intertidal Seagrass).
+Individual ecosystem probability layers are provided as supporting datasets to aid the interpretation of extents for four ecosystem classes: Mangrove, Saltmarsh, Saltflat and Intertidal Seagrass (Figure 2). Probability values in these layers represent the percentage of random-forest trees that vote at each pixel for a given ecosystem in the relevant [Machine Learning model](#model-training); the Ecosystem Model (Mangroves, Saltmarsh, Saltflat) or the Intertidal Model (Intertidal Seagrass).
 
 The Intertidal class within the Intertidal model has been fixed to the extent of the [DEA Intertidal Extents product](/data/product/dea-intertidal/?tab=description#core-product-layers) (see [Ecosystem Prediction](#ecosystem-prediction)), so the probability layer for this ecosystem is not provided. As the Intertidal Seagrass is modelled within this fixed extent, the corresponding probability layer is also constrained to these extents.
 
 Probabilities for layers in the Ecosystem Model (Mangroves, Saltmarsh and Saltflat) are masked below 20% probability to remove very low confidence pixels and noise from the dataset to improve interpretability.
 
-The Saltflat ecosystem has been excluded from the classification product layer, though the probability layer generated for this ecosystem as part of the Ecosystem Model has been provided. Reasoning and further discussion on this decision can be found in the [Caveats and Limitations](./?tab=quality#saltflat-mapping) section.
+The Saltflat ecosystem has been excluded from the classification product layer, though the probability layer generated for this ecosystem as part of the Ecosystem Model has been provided. Reasoning and further discussion on this decision can be found in the [Caveats and Limitations](./?tab=quality) section.
 
-Further information on how these Probability layers can be individually interpreted and used to aid in interpretation of the classified ecosystem map, including for mixed or transitional classes, can be found in the [Caveats and Limitations](./?tab=quality#interpretation-of-probability-layers-and-implications-for-change-applications).
+Further information on how these Probability layers can be individually interpreted and used to aid in interpretation of the classified ecosystem map, including for mixed or transitional classes, can be found in the Caveats and Limitations.
 
 :::{figure} /_files/dea-coastalecosystems/probabilities_Bermagui_2021.png
 
-**Figure 2** Bermagui, NSW. DEA Coastal Ecosystems probability layers.
+**Figure 2.** Bermagui, NSW. DEA Coastal Ecosystems probability layers.
 
 :::
 
@@ -102,7 +103,7 @@ An accumulated cost-distance connectivity layer used as a [covariate](#coastal-c
 
 #### Cloud-optimised GeoTIFF
 
-Layers of the DEA Coastal Ecosystems product suite are provided as single continental scale cloud-optimised GeoTIFFs (COG). For data access and use in geospatial information system (GIS) environments, [streaming](/guides/continental-cogs-geotiff-mosaics/) of these datasets is strongly recommended over downloading. Web mapping services (WMS) are also available for all [DEA datasets](./?tab=access).
+Layers of the DEA Coastal Ecosystems product suite are provided as single continental scale cloud-optimised GeoTIFFs (COG). For data access and use in geospatial information system (GIS) environments, [streaming](/guides/continental-cogs-geotiff-mosaics/) of these datasets is strongly recommended rather than downloading. Web mapping services (WMS) are also available for all [DEA datasets](./?tab=access).
 
 #### Product naming convention
 
@@ -122,11 +123,11 @@ ga_s2_coastalecosystems_cyear_3_v1-0-0_AU_2021—P1Y_final_classification.tif
 
 ### Workflow
 
-DEA Coastal Ecosystems is a machine learning workflow comprised of four primary components (Fig 3): Training data, Covariate data, Machine learning and Contextual editing. 
+DEA Coastal Ecosystems is a machine learning workflow comprised of four primary components (Figure 3): Training data, Covariate data, Machine learning and Contextual editing. 
 
 :::{figure} /_files/dea-coastalecosystems/CEM_flowchart.png
 
-**Figure 3** Primary components and outputs of the DEA Coastal Ecosystems workflow
+**Figure 3.** Primary components and outputs of the DEA Coastal Ecosystems workflow.
 :::
 
 These components are discussed in further detail below. The validation process is discussed in the [Quality](./?tab=quality) section.
