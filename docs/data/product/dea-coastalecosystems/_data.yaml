@@ -37,8 +37,8 @@ collections:
   - name: Geoscience Australia Sentinel-2 Collection 3
     link: /search/?q=Geoscience+Australia+Sentinel-2+Collection+3
 
-# doi: 10.00000/000000
-# ecat_id: "100000"
+doi: 10.26186/150770
+ecat_id: "150770"
 
 licence_name: Creative Commons Attribution 4.0 International Licence
 licence_link: https://creativecommons.org/licenses/by/4.0/
