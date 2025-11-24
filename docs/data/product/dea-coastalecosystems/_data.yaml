@@ -17,10 +17,10 @@ spatial_data_type: RASTER
 spatial_coverage: Australia excluding external territories
 temporal_coverage_start: 2021
 temporal_coverage_end: 2022
-temporal_coverage_custom: 2021 – 2022
+temporal_coverage_custom: null
 
-data_update_frequency: NOT APPLICABLE
-data_update_activity: NON-ONGOING
+data_update_frequency: Not applicable
+data_update_activity: Non-ongoing
 is_currency_reported: false
 
 resolution: 10 m
