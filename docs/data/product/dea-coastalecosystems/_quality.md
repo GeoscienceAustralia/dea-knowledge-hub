@@ -8,10 +8,14 @@
 - **Probability masking:** Accuracy statistics only include samples with ≥50 % model probability. Areas with persistent cloud, haze, or spectral ambiguity may be masked operationally and will not have associated accuracy estimates.
 - **Spatial extrapolation:** Spatial stratification reduces autocorrelation bias, but accuracy can still degrade in locations far from labelled samples or outside the environmental gradients represented in the combined parquet.
 - **Model uncertainty:** Reported medians and 95 % intervals reflect Monte Carlo sampling only; additional uncertainty from sensor noise, ancillary covariates, or downstream post-processing is not captured here.
+
 ### Sensor Tidal Bias
+
 - **Sensor coverage and tidal phase:** Sentinel 2 acquisitions do not uniformly sample the [tidal cycle](https://knowledge.dea.ga.gov.au/data/product/dea-intertidal/?tab=quality#caveats-and-limitations), so in some regions intertidal habitats may be under-represented or not fully characterised in either the training data or the predictions. For example, in a region where the highest portion of the tidal range/cycle is not observed by the sensor, training data and the associated covariates for classes such as saltmarsh may be biased towards a lower tide representation of that class.
 - **Intertidal Seagrass Training Points:** Due to sensor tidal bias, some Intertidal Seagrass training points fall outside of the Intertidal Extent that is observed by the sensor, and which is used to constrain the extent of Intertidal/Seagrass model. These training data points are excluded from the model, as they fall below the Lowest Observed Tide of the sensor, meaning they will only be observed as sub-tidal seagrass points.
+
 ### Saltflat Mapping
+
 Saltflat mapping accuracy results in the Classification layer were observed to be highly variable between the regional models. Reasons for this may include -  
 - limited proportional representation of Training Points for this class for regions where Saltflat is known to exist (e.g in the South-East), 
 - lack of similar terrestrial class training points for differentiation resulting in false positives across Urban and Sand/Beach areas, and 
@@ -20,6 +24,7 @@ Saltflat mapping accuracy results in the Classification layer were observed to b
 For these reasons, the Saltflat class has been removed from the core Classification layer, so these issues can be addressed in future versions of the product. The Saltflat probability layer has been retained, so users can make their own interpretation of the mapping extents based on local and regional knowledge, whilst considering the issues highlighted above.
 
 ### Constraint of the Intertidal Model and Definition of the Intertidal Class
+
 To align with the extents of the DEA Intertidal product, the extent of the Intertidal/Seagrass model has been constrained to the high confidence DEA Intertidal Extents product. All training data points that are located in this extent, and are not Intertidal Seagrass, are considered Intertidal for the purposes of the binary Intertidal/Seagrass model. 
 
 By constraining the extent of this model, we are forcing the classification of pixels in this Intertidal class that likely represent L2 classes beyond Mudflats and Intertidal soft sediments that are not represented in the training data (e.g rocky intertidal substratum, exposed coral reefs/platforms). This may have implications on the binary classification of the Intertidal Seagrass in the model and is an additional reason why we have conservatively mapped this class at a 70% probability in the classification model.
@@ -27,9 +32,11 @@ By constraining the extent of this model, we are forcing the classification of p
 Future work will involve densification of the training data to include a more fully representative range of L2 classes considered in this Intertidal class.
 
 ### Connectivity Masking and Saltmarsh
+
 The Saltmarsh connectivity thresholding assumes that the training data (which are located in predominantly near-shore coastal locations) encompass all possible saltmarsh locations and connectivity values. The limitations of this approach are acknowledged, as demonstrated by hard boundaries visible in the classified saltmarsh dataset such as in Princess Charlotte Bay QLD. Future work will broaden the spatial range of saltmarsh training data that will improve the connectivity masking threshold used in this part of the workflow.
 
 ### Global Mangrove Watch Masking
+
 The [Global Mangrove Watch (GMW) Habitat Mask](https://doi.org/10.5281/zenodo.74784913) (Bunting et al. 2025) is widely used in the coastal mapping and scientific community as a layer to constrain the mapping of Mangroves to suitable ecological conditions and zones. It is however acknowledged as a living dataset, with updates contributed by the community of new identified mangroves and mapping extents. For example, in early stages of this project, new regions not captured by the GMW were identified in Batemans Bay, NSW, and these regions were added by GMW to the most recent version of the Habitat mask. 
 
 Although the Classification layer has been masked by the GMW Habitat Mask, the Mangroves probability layer has not, and it is possible that users may be able to identify small areas of high probability Mangroves not mapped by the masked classification layer. Users are encouraged to provide DEA with this feedback, so that we can continue to help the GMW initiative to provide the most suitable masking and mapping layers.
@@ -53,7 +60,6 @@ It is important to note that annual models of ecosystem extents are influenced b
 
 Whilst the modelling process in this product has been designed to mitigate these influences and differences between annual products where possible, each of these factors impacts the modelling accuracy and characteristics of both the probability and classified layers of the product for each year. This should be considered when using any of the Product layers for change applications, and we recommend utilising the full suite of QA/QC layers and Accuracy results to assist with any change applications or metrics.
 
-
 ## Accuracy
 
 The DEA Coastal Ecosystems mapping was validated using a Monte Carlo resampling workflow with spatial stratification (32 km tiles) to limit spatial autocorrelation (Lyons et al. 2018). Each iteration trains on ~80 % of tiles, tests on the remainder, filters predictions by a ≥50 % class-probability threshold (to replicate the mapping methodology), and then reports accuracy for both the ecosystem model and the final output after seagrass modelling is applied to the tidal flat area. The validation metrics are thus indicative of the accuracy of the final categorical classification product, and are not strictly relevant to the model probability layers. Final accuracy metrics are summarised from the sampling distributions as the median with a 95 % interval (which can be used as area multipliers if desired). Validation statistics are reported separately for the 2021 and 2022 mapping.
@@ -61,7 +67,9 @@ The DEA Coastal Ecosystems mapping was validated using a Monte Carlo resampling 
 Comprehensive methodology notes are documented in the code repository ([Validation](https://github.com/GeoscienceAustralia/dea-coastalecosystems/blob/main/docs/validation_readme.md)), and the complete per-class/per-year outputs are available in the [full validation results](https://github.com/GeoscienceAustralia/dea-coastalecosystems/blob/main/docs/coastal_ecosystem_validation_results.md).
 
 ### Regional summary per year
+
 **Year 2021**
+
 | Region | Overall Accuracy (Median [95% interval]) |
 |--------|----------------------------------------|
 | 1 | 0.949 [0.909, 0.971] |
@@ -73,6 +81,7 @@ Comprehensive methodology notes are documented in the code repository ([Validati
 | 7 | 0.941 [0.878, 0.976] |
 
 **Year 2022**
+
 | Region | Overall Accuracy (Median [95% interval]) |
 |--------|----------------------------------------|
 | 1 | 0.945 [0.901, 0.968] |
@@ -84,7 +93,9 @@ Comprehensive methodology notes are documented in the code repository ([Validati
 | 7 | 0.946 [0.888, 0.979] |
 
 ### Regional summary per class (combined years)
+
 #### Region 1 [North West]
+
 | Class | User's Accuracy | Producer's Accuracy |
 |-------|-----------------|---------------------|
 | Tidal flat | 0.874 [0.671, 0.979] | 0.947 [0.859, 0.986] |
@@ -93,6 +104,7 @@ Comprehensive methodology notes are documented in the code repository ([Validati
 | Seagrass | 0.000 [0.000, 0.933] | 0.000 [0.000, 0.033] |
 
 #### Region 2 [North East]
+
 | Class | User's Accuracy | Producer's Accuracy |
 |-------|-----------------|---------------------|
 | Tidal flat | 0.780 [0.641, 0.909] | 0.928 [0.839, 0.980] |
@@ -101,6 +113,7 @@ Comprehensive methodology notes are documented in the code repository ([Validati
 | Seagrass | 0.883 [0.746, 0.969] | 0.668 [0.433, 0.827] |
 
 #### Region 3 [Gulf of Carpentaria]
+
 | Class | User's Accuracy | Producer's Accuracy |
 |-------|-----------------|---------------------|
 | Tidal flat | 0.620 [0.393, 0.843] | 0.870 [0.711, 0.977] |
@@ -109,6 +122,7 @@ Comprehensive methodology notes are documented in the code repository ([Validati
 | Seagrass | 0.891 [0.664, 0.983] | 0.685 [0.296, 0.897] |
 
 #### Region 4 [West]
+
 | Class | User's Accuracy | Producer's Accuracy |
 |-------|-----------------|---------------------|
 | Tidal flat | 0.845 [0.671, 0.970] | 0.982 [0.930, 1.000] |
@@ -117,6 +131,7 @@ Comprehensive methodology notes are documented in the code repository ([Validati
 | Seagrass | 0.929 [0.066, 1.000] | 0.768 [0.059, 1.000] |
 
 #### Region 5 [South West]
+
 | Class | User's Accuracy | Producer's Accuracy |
 |-------|-----------------|---------------------|
 | Tidal flat | 0.858 [0.000, 1.000] | 0.873 [0.000, 1.000] |
@@ -125,6 +140,7 @@ Comprehensive methodology notes are documented in the code repository ([Validati
 | Seagrass | 0.867 [0.104, 1.000] | 0.896 [0.306, 1.000] |
 
 #### Region 6 [South East]
+
 | Class | User's Accuracy | Producer's Accuracy |
 |-------|-----------------|---------------------|
 | Tidal flat | 0.865 [0.701, 0.956] | 0.923 [0.791, 0.987] |
@@ -133,6 +149,7 @@ Comprehensive methodology notes are documented in the code repository ([Validati
 | Seagrass | 0.934 [0.859, 0.984] | 0.941 [0.874, 0.977] |
 
 #### Region 7 [Tasmania]
+
 | Class | User's Accuracy | Producer's Accuracy |
 |-------|-----------------|---------------------|
 | Tidal flat | 0.947 [0.786, 1.000] | 0.964 [0.654, 1.000] |
@@ -152,5 +169,6 @@ Code used to generate the DEA Coastal Ecosystem Map is [run against automated in
 % :::
 
 ## References
+
 **Lyons, M.B., Keith, D.A., Phinn, S.R., Mason, T.J., & Elith, J. (2018).** A comparison of resampling methods for remote sensing classification and accuracy assessment. *Remote Sensing of Environment*, 208, 145-153. https://doi.org/10.1016/j.rse.2018.02.026
 
