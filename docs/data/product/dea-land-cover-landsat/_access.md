@@ -33,6 +33,13 @@ For detailed instructions, please visit the [Continental Cloud-Optimised GeoTIFF
     <figcaption>The animation above shows the DEA Land Cover COG mosaic moving from the continental-scale down to the 30m x 30m pixel level.</figcaption>
 </figure>
 
+:::{admonition} Note
+:class: note
+
+The overviews (pyramid layers) embedded in the DEA Land Cover COG mosaics were generated using the **MODE** resampling algorithm. This means that, when viewing the data at coarser zoom levels, each overview pixel is assigned the most common land cover class within its corresponding area.
+
+:::
+
 :::{dropdown} How to integrate DEA Land Cover continental mosaics into your own Python workflow
 
 You can seamlessly open a Land Cover mosaic, such as Level 4 for year 2024, using Python and the `rioxarray` library. For example:
