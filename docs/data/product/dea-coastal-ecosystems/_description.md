@@ -46,7 +46,7 @@ Stakeholder engagement at all levels will continue to drive the development of D
 
 ### Product Features
 
-The DEA Coastal Ecosystems product suite is a multi-layered dataset produced delivered as annual summary products. See [Specifications](./?tab=specifications) for individual layer metadata.
+The DEA Coastal Ecosystems product suite is a multi-layered dataset delivered as annual summary products. See [Specifications](./?tab=specifications) for individual layer metadata.
 
 ### Core Product Layers
 
