@@ -103,7 +103,7 @@ An accumulated cost-distance connectivity layer used as a [covariate](#coastal-c
 
 #### Cloud-optimised GeoTIFF
 
-Layers of the DEA Coastal Ecosystems product suite are provided as single continental scale cloud-optimised GeoTIFFs (COG). For data access and use in geospatial information system (GIS) environments, [streaming](/guides/continental-cogs-geotiff-mosaics/) of these datasets is strongly recommended rather than downloading. Web mapping services (WMS) are also available for all [DEA datasets](./?tab=access).
+Layers of the DEA Coastal Ecosystems product suite are provided as single continental scale cloud-optimised GeoTIFFs (COGs). For data access and use in geospatial information system (GIS) environments, [streaming](/guides/continental-cogs-geotiff-mosaics/) of these datasets is strongly recommended rather than downloading. Web mapping services (WMS) are also available for all [DEA datasets](./?tab=access).
 
 #### Product naming convention
 

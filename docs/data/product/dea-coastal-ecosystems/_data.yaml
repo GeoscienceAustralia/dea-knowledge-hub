@@ -75,9 +75,7 @@ access_links_explorers:
   - link: https://explorer.dea.ga.gov.au/products/ga_s2_coastalecosystems_cyear_3_v1
     name: null
 
-access_links_data:
-  - link: https://data.dea.ga.gov.au/?prefix=derivative/ga_s2_coastalecosystems_cyear_3_v1/AU
-    name: Access the data on AWS
+access_links_data: null
 
 access_links_code_examples:
   - link: /notebooks/DEA_products/DEA_Coastalecosystems/
@@ -88,11 +86,17 @@ access_links_web_services:
     name: Web Map Service (WMS)
 
 access_links_custom:
+ - link: https://data.dea.ga.gov.au/?prefix=derivative/ga_s2_coastalecosystems_cyear_3_v1/AU
+   icon: database
+   label: Data sources
+   name: Access the data on AWS
+   description: "Learn **how to stream data from AWS below** or `other ways to download from AWS </guides/about/faq/#download-dea-data>`_."
+   class: null
  - link: https://github.com/GeoscienceAustralia/dea-coastalecosystems
    icon: code-branch
    label: Source code
    name: "Source code on GitHub"
-   description: "The GitHub repository: GeoscienceAustralia/dea-coastalecosystems"
+   description: "GitHub repository: GeoscienceAustralia/dea-coastalecosystems"
    class: null
 
 # History
