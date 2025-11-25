@@ -176,9 +176,9 @@
 
 {% set coordinate_reference_system_term = coordinate_reference_system_terms.get(page.data.coordinate_reference_system, page.data.coordinate_reference_system) %}
 
-{% set is_frequency_ongoing = data_update_activity == data_update_activity_terms.ONGOING %}
+{% set is_activity_ongoing = data_update_activity == data_update_activity_terms.ONGOING %}
 
-{% set is_frequency_non_ongoing = data_update_activity == data_update_activity_terms.NON_ONGOING or data_update_frequency_terms.NONE %}
+{% set is_activity_non_ongoing = data_update_activity == data_update_activity_terms.NON_ONGOING or data_update_frequency_terms.NONE %}
 
 {% set is_cadence_yearly = data_update_frequency == data_update_frequency_terms.YEARLY %}
 
@@ -272,12 +272,12 @@
       {%- elif page.data.temporal_coverage_end %}
       :Coverage end: {{ page.data.temporal_coverage_end }}
       {%- endif %}
-      {%- if is_frequency_ongoing and is_frequency_multiple_words and page.data.is_latest_version %}
+      {%- if is_activity_ongoing and is_frequency_multiple_words and page.data.is_latest_version %}
       :Data updates: {{ data_update_frequency }}, {{ data_update_activity }}
-      {%- elif is_frequency_ongoing and page.data.is_latest_version %}
+      {%- elif is_activity_ongoing and page.data.is_latest_version %}
       :Data updates: {{ data_update_frequency }} frequency, {{ data_update_activity }}
-      {%- elif is_frequency_non_ongoing and page.data.is_latest_version %}
-      :Data updates: {{ data_update_frequency }}
+      {%- elif is_activity_non_ongoing and page.data.is_latest_version %}
+      :Data updates: {{ data_update_activity }}
       {%- elif is_frequency_multiple_words and not page.data.is_latest_version %}
       :Data updates: {{ data_update_activity_terms.NO_UPDATES }} (Previously: {{ data_update_frequency }})
       {%- elif not page.data.is_latest_version %}
@@ -741,7 +741,7 @@
         - {{ coordinate_reference_system_term }}
         - The method of mapping spatial data to the Earth's surface.
       {%- endif %}
-      {%- if is_frequency_ongoing and page.data.is_latest_version %}
+      {%- if is_activity_ongoing and page.data.is_latest_version %}
       * - **Update frequency**
         - {{ data_update_frequency }}
         - The expected frequency of data updates. Also called 'Temporal resolution'.
