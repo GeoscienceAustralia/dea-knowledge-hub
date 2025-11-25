@@ -745,6 +745,10 @@
       * - **Update frequency**
         - {{ data_update_frequency }}
         - The expected frequency of data updates. Also called 'Temporal resolution'.
+      {%- elif is_activity_non_ongoing and page.data.is_latest_version %}
+      * - **Update frequency**
+        - {{ data_update_frequency }}
+        - The expected frequency of data updates. Also called 'Temporal resolution'.
       {%- else %}
       * - **Update frequency**
         - {{ data_update_frequency }} ({{ data_update_activity_terms.NO_UPDATES }})
