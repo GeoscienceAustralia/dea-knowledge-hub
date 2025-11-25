@@ -78,6 +78,7 @@
 } %}
 
 {% set data_update_frequency_terms = {
+   "NONE": "None",
    "AS_NEEDED": "As needed",
    "DAILY": "Daily",
    "WEEKLY": "Weekly",
@@ -89,6 +90,7 @@
 
 {% set data_update_activity_terms = {
    "ONGOING": "Ongoing",
+   "NON_ONGOING": "Non-ongoing",
    "NO_UPDATES": "No further updates",
    "DEVELOPMENT": "Awaiting development",
    "PAUSED": "Currently paused",
@@ -175,6 +177,8 @@
 {% set coordinate_reference_system_term = coordinate_reference_system_terms.get(page.data.coordinate_reference_system, page.data.coordinate_reference_system) %}
 
 {% set is_frequency_ongoing = data_update_activity == data_update_activity_terms.ONGOING %}
+
+{% set is_frequency_non_ongoing = data_update_activity == data_update_activity_terms.NON_ONGOING or data_update_frequency_terms.NONE %}
 
 {% set is_cadence_yearly = data_update_frequency == data_update_frequency_terms.YEARLY %}
 
@@ -272,6 +276,8 @@
       :Data updates: {{ data_update_frequency }}, {{ data_update_activity }}
       {%- elif is_frequency_ongoing and page.data.is_latest_version %}
       :Data updates: {{ data_update_frequency }} frequency, {{ data_update_activity }}
+      {%- elif is_frequency_non_ongoing and page.data.is_latest_version %}
+      :Data updates: {{ data_update_frequency }}
       {%- elif is_frequency_multiple_words and not page.data.is_latest_version %}
       :Data updates: {{ data_update_activity_terms.NO_UPDATES }} (Previously: {{ data_update_frequency }})
       {%- elif not page.data.is_latest_version %}

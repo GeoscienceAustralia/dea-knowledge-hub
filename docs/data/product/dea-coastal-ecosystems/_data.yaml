@@ -19,8 +19,8 @@ temporal_coverage_start: 2021
 temporal_coverage_end: 2022
 temporal_coverage_custom: null
 
-data_update_frequency: Not applicable
-data_update_activity: Non-ongoing
+data_update_frequency: NONE
+data_update_activity: NON_ONGOING
 is_currency_reported: false
 
 resolution: 10 m
