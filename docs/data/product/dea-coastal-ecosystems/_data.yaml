@@ -91,7 +91,7 @@ access_links_custom:
  - link: https://github.com/GeoscienceAustralia/dea-coastalecosystems
    icon: code-branch
    label: Source code
-   name: "Source code (GitHub)"
+   name: "Source code on GitHub"
    description: "The GitHub repository: GeoscienceAustralia/dea-coastalecosystems"
    class: null
 

@@ -36,7 +36,7 @@ Key features of the product suite include:
 
 DEA Coastal Ecosystems was initiated as a collaborative project to support the Commonwealth Department of Climate Change, Energy, the Environment and Water (DCCEEW) to underpin the creation of Environmental Economic Accounts (EEA) for ecosystems in Australia’s coastal zone. This followed experimental Ocean Accounts, delivered in 2022 and based on selected individual ecosystem earth observation derived datasets.
 
-Leveraging a methodology that mapped [global shifts in tidal wetlands](https://www.science.org/doi/10.1126/science.abm9583), Geoscience Australia has collaborated with James Cook University and the University of New South Wales to deliver a similar approach for Australia in the DEA Coastal Ecosystems product suite. Initial Beta versions of the  product were used to underpin the February 2025 release of the [National Ecosystem Accounts experimental estimates for the Coastal Realm](https://www.abs.gov.au/statistics/environment/environmental-accounts/national-ecosystem-accounts-experimental-estimates/latest-release#coastal-realm), with the first version 1.0.0 release of the DEA Coastal Ecosystems product suite expected to contribute to the upcoming 2026 National Ecosystem Account released by the Australian Bureau of Statistics (ABS)
+Leveraging a methodology that mapped [global shifts in tidal wetlands](https://www.science.org/doi/10.1126/science.abm9583), Geoscience Australia has collaborated with James Cook University and the University of New South Wales to deliver a similar approach for Australia in the DEA Coastal Ecosystems product suite. Initial Beta versions of the  product were used to underpin the February 2025 release of the [National Ecosystem Accounts experimental estimates for the Coastal Realm](https://www.abs.gov.au/statistics/environment/environmental-accounts/national-ecosystem-accounts-experimental-estimates/latest-release#coastal-realm), with the first v1.0.0 release of the DEA Coastal Ecosystems product suite expected to contribute to the upcoming 2026 National Ecosystem Account released by the Australian Bureau of Statistics (ABS)
 
 Targeted stakeholder engagement and product feedback sessions have been conducted throughout the development of the product to ensure, where possible, a complementary alignment of the DEA Coastal Ecosystems product suite to State Government and Academic mapping efforts. These engagements aimed to ensure ease of uptake and integration of the product into a range of environmental reporting applications across jurisdictions (e.g State of the Environment).
 
@@ -231,19 +231,19 @@ Covariate data describes the input datasets used to train the ML models. Covaria
 |  | nbart_nir_2 | 10,20,40,60,80 | 5 |
 |  | nbart_swir_2 | 10,20,40,60,80 | 5 |
 |  | nbart_swir_3 | 10,20,40,60,80 | 5 |
-| **Sentinel-2 derived indices** |  |  |  |
-|- Automated Water Extraction Index (no shadow) (Feyisa et al., 2014) | AWEI_ns | 10,20,40,60,80 | 5 |
-|- Automated Water Extraction Index (shadow) (Feyisa et al., 2014) | AWEI_sh | 10,20,40,60,80 | 5 |
-|- Enhanced Vegetation Index (Huete et al., 2002) | EVI | 10,20,40,60,80 | 5 |
-|- Leaf Area Index (Boegh et al., 2002) | LAI | 10,20,40,60,80 | 5 |
-|- Modified Normalized Difference Water Index (Xu, 1996) | MNDWI | 10,20,40,60,80 | 5 |
-|- Normalized Difference Vegetation Index (Rouse et al., 1973) | NDVI | 10,20,40,60,80 | 5 |
-|- Normalized Difference Water Index (McFeeters, 1996) | NDWI | 10,20,40,60,80 | 5 |
-|- Tasseled Cap Brightness (Crist, 1985) | TCB | 10,20,40,60,80 | 5 |
-|- Tasseled Cap Greenness (Crist, 1985) | TCG | 10,20,40,60,80 | 5 |
-|- Tasseled Cap Wetness (Crist, 1985) | TCW | 10,20,40,60,80 | 5 |
-|- Tasseled Cap Wetness (GSO variant) (Nedkov, 2017) | TCW_GSO | 10,20,40,60,80 | 5 |
-|- Water Index (Fisher et al., 2016) | WI | 10,20,40,60,80 | 5 |
+| Sentinel-2-derived indices |  |  |  |
+|• Automated Water Extraction Index (no shadow) (Feyisa et al., 2014) | AWEI_ns | 10,20,40,60,80 | 5 |
+|• Automated Water Extraction Index (shadow) (Feyisa et al., 2014) | AWEI_sh | 10,20,40,60,80 | 5 |
+|• Enhanced Vegetation Index (Huete et al., 2002) | EVI | 10,20,40,60,80 | 5 |
+|• Leaf Area Index (Boegh et al., 2002) | LAI | 10,20,40,60,80 | 5 |
+|• Modified Normalized Difference Water Index (Xu, 1996) | MNDWI | 10,20,40,60,80 | 5 |
+|• Normalized Difference Vegetation Index (Rouse et al., 1973) | NDVI | 10,20,40,60,80 | 5 |
+|• Normalized Difference Water Index (McFeeters, 1996) | NDWI | 10,20,40,60,80 | 5 |
+|• Tasseled Cap Brightness (Crist, 1985) | TCB | 10,20,40,60,80 | 5 |
+|• Tasseled Cap Greenness (Crist, 1985) | TCG | 10,20,40,60,80 | 5 |
+|• Tasseled Cap Wetness (Crist, 1985) | TCW | 10,20,40,60,80 | 5 |
+|• Tasseled Cap Wetness (GSO variant) (Nedkov, 2017) | TCW_GSO | 10,20,40,60,80 | 5 |
+|• Water Index (Fisher et al., 2016) | WI | 10,20,40,60,80 | 5 |
 | [DEA Tidal Composites](/data/product/dea-tidal-composites/?tab=specifications) | low_blue |  | 1 |
 |  | low_green |  | 1 |
 |  | low_red |  | 1 |
@@ -260,17 +260,17 @@ Covariate data describes the input datasets used to train the ML models. Covaria
 :::
 
 ::::{dropdown} Coastal Connectivity
-The Coastal Connectivity layer (also published as a [QA product layer](#quality-assurance-layers)) was designed as an accumulated cost-distance dataset to indicate likely coastal pixels. This was achieved by determining the cumulative elevation above Highest Astronomical Tide that must be traversed along the shortest path from tidally influenced coastal waters and mangroves at each pixel location (Fig. 6), using the following datasets:
+The Coastal Connectivity layer (also published as a [QA product layer](#quality-assurance-layers)) was designed as an accumulated cost-distance dataset to indicate likely coastal pixels. This was achieved by determining the cumulative elevation above Highest Astronomical Tide that must be traversed along the shortest path from tidally influenced coastal waters and mangroves at each pixel location (Figure 6), using the following datasets:
 
-- Shuttle Radar Topography Mission Digital Elevation Model Version 1 (Gallant et al., 2011)
-- Highest Astronomical Tide [(Branson, 2023)](https://data.csiro.au/collection/csiro%3A61319v1)
+- Shuttle Radar Topography Mission Digital Elevation Model Version 1 (Gallant et al., 2011).
+- Highest Astronomical Tide ([Branson, 2023](https://data.csiro.au/collection/csiro%3A61319v1)).
 - The extent of the [DEA Mangroves](/data/product/dea-mangroves/) product.
 
 Coastal connectivity is used here as a covariate layer within the modelling process, and as an additional contextual editing layer for the Saltmarsh class. 
 
 :::{figure} /_files/dea-coastalecosystems/connectivity_Mallacoota.png
 
-**Figure 6**  *a*) Mallacoota, Victoria low-tide [DEA Tidal Composite](/data/product/dea-tidal-composites/) for 2021; *b*) Low elevation areas, highly connected to tidally-influenced coastlines, have low connectivity values (light grey). Elevated areas are penalised with high connectivity values (dark grey), even if located close to tidally influenced areas.
+**Figure 6.** a) Mallacoota, Victoria low-tide [DEA Tidal Composite](/data/product/dea-tidal-composites/) for 2021; b) Low elevation areas, highly connected to tidally-influenced coastlines, have low connectivity values (light grey). Elevated areas are penalised with high connectivity values (dark grey), even if located close to tidally influenced areas.
 :::
 ::::
 
@@ -288,37 +288,37 @@ The DEA Coastal Ecosystems workflow trains two [random-forest classifiers](https
 - a multi-class ecosystem model (mangrove, saltmarsh and salt flat) and;
 - an intertidal model (intertidal and intertidal-seagrass). 
 
-The multi-class ecosystem model utilized all data in the training data library while the Intertidal model was developed using only training data points located within the [DEA Intertidal Extents high confidence intertidal region](/data/product/dea-intertidal/#core-product-layers). Functionally, this meant that within the bounded extents of the Intertidal modelled region, any training points included in the model that were not defined as Intertidal Seagrass were considered Intertidal. For a discussion on the implications of this aspect of the model classification see [Caveats and Limitations](./?tab=quality#constraint-of-the-intertidal-model-and-definition-of-the-intertidal-class) section.
+The multi-class ecosystem model utilized all data in the training data library while the Intertidal model was developed using only training data points located within the [DEA Intertidal Extents high confidence intertidal region](/data/product/dea-intertidal/#core-product-layers). Functionally, this meant that within the bounded extents of the Intertidal modelled region, any training points included in the model that were not defined as Intertidal Seagrass were considered Intertidal. For a discussion on the implications of this aspect of the model classification see the [Caveats and Limitations](./?tab=quality#constraint-of-the-intertidal-model-and-definition-of-the-intertidal-class) section.
 
 Multi-class and binary random-forest models were fit for each region using: 
 
 - Number of trees (800): A large ensemble size ensures stable, reliable predictions by aggregating insights from many diverse trees, reducing the impact of any single tree's errors.
-- Minimum samples per split (2): Set to the minimum allowed value to give the model maximum flexibility in finding predictive patterns, particularly useful when relationships in the data are complex or subtle.
+- Minimum samples per split (2): Set to the minimum allowed value to give the model maximum flexibility in finding predictive patterns. This is particularly useful when relationships in the data are complex or subtle.
 - Minimum samples per leaf (1): Allows the model to capture fine-grained patterns and edge cases in the data without artificially constraining individual tree decisions. The large number of trees (800) provides natural protection against overfitting.
 - Maximum depth (10): Limits tree complexity to prevent overfitting while still allowing enough depth to capture meaningful multi-level interactions between variables. Strikes a balance between model expressiveness and generalizability.
 
 A [k-fold cross-validation](https://scikit-learn.org/stable/modules/cross_validation.html#computing-cross-validated-metrics) approach was used to assess model behaviour and optimise the model parameters. Optimized model parameters were used to fit the final models using the full training data set for the multi-class model and the intertidal masked training data set for the seagrass model. A monte carlo resampling framework was used to validate the mapping products and calculate accuracy metrics including overall accuracy, class-based accuracy and relevant confidence intervals. Overall model accuracy statistics are reported in the [Quality](./?tab=quality#accuracy) tab. 
 
-The combined 2021 and 2022 stacks of covariate-trained training data ensured the classifier models were suitable for prediction into both years. Common covariates that exhibited a top-10 feature importance for the ecosystem models included the NDVI and MNDWI percentiles as well as the coastal-connectivity. Common top-10 feature importance covariates for the seagrass models included the tasselled cap wetness percentiles and red_edge, nir and swir bands from the low-tide [DEA Tidal Composite](/data/product/dea-tidal-composites/) (Fig. 7).
+The combined 2021 and 2022 stacks of covariate-trained training data ensured the classifier models were suitable for prediction into both years. Common covariates that exhibited a top-10 feature importance for the ecosystem models included the NDVI and MNDWI percentiles as well as the coastal-connectivity. Common top-10 feature importance covariates for the seagrass models included the tasselled cap wetness percentiles and 'red_edge', 'nir' and 'swir' bands from the low-tide [DEA Tidal Composite](/data/product/dea-tidal-composites/) (Figure 7).
 
 :::{figure} /_files/dea-coastalecosystems/ML_Feature_Importance.png
 
-**Figure 7** shows commonality in the top 10 most important covariates for each of the seven regional ecosystem (above) and seagrass (below) models. The y-axis represents the number of regional models where the covariate features in the top-10.
+**Figure 7.** Commonality in the top 10 most important covariates for each of the seven regional ecosystem (top) and seagrass (bottom) models. The y-axis represents the number of regional models where the covariate features in the top 10.
 :::
 ::::
 
 :::{dropdown} Ecosystem prediction
 Coastal ecosystems were predicted using Covariate data stacks created for each modelling year.
 
-Initial predictions were made using the multi-class ecosystem model, generating interim probability layers for mangrove, saltmarsh and salt flat ecosystems ([Fig. 3](#workflow)). An interim classified ecosystem output layer was also generated to capture the highest probability ecosystem class predicted for each pixel and included mangrove, saltmarsh and saltflat classes. Water and Terrestrial classes in this interim layer were classified as `nodata`. 
+Initial predictions were made using the multi-class ecosystem model, generating interim probability layers for mangrove, saltmarsh and salt flat ecosystems ([Figure 3](#workflow)). An interim classified ecosystem output layer was also generated to capture the highest probability ecosystem class predicted for each pixel and included mangrove, saltmarsh and saltflat classes. Water and Terrestrial classes in this interim layer were classified as `nodata`. 
 
-The Intertidal modelling extent was then set using the high confidence intertidal extent from the [DEA Intertidal](/data/product/dea-intertidal/#core-product-layers) dataset. The Intertidal model was then used to predict Intertidal seagrass from the annual covariate stacks masked to this modelling extent. The output from this process is the interim Intertidal seagrass probability layer ([Fig. 3](#workflow)).
+The Intertidal modelling extent was then set using the high confidence intertidal extent from the [DEA Intertidal](/data/product/dea-intertidal/#core-product-layers) dataset. The Intertidal model was then used to predict Intertidal seagrass from the annual covariate stacks masked to this modelling extent. The output from this process is the interim Intertidal seagrass probability layer (Figure 3).
 :::
 
 ### 4. Contextual editing
 
 :::{dropdown} Rationale
-The interim classified ecosystem layer defines classes based on the highest probability class for each pixel, which can result in a classification based on relatively low probability values were a pixel is modelled as a likely mixed ecosystem. Combined with the inherent uncertainty and resulting misclassification when applying a ML mapping methodology at a continental scale, this meant that a range of rulesets and post-processing operations were applied, collectively termed ‘contextual editing’, to deliver the final Classification layer.
+The interim classified ecosystem layer defines classes based on the highest probability class for each pixel, which can result in a classification based on relatively low probability values were a pixel is modelled as a likely mixed ecosystem. Combined with the inherent uncertainty and resulting misclassification when applying a machine learning mapping methodology at a continental scale, this meant that a range of rulesets and post-processing operations were applied, collectively termed ‘contextual editing’, to deliver the final Classification layer.
 
 Probability layers were also masked in this contextual editing process, as described in the [probability layer description](#probability).
 
@@ -327,57 +327,80 @@ The following section details the rules and processes that were applied, with ju
 
 :::{dropdown} Classifier rulesets
 
-All classifier rulesets were applied to the interim ecosystem classification layer ([Fig. 3](#workflow)) to produce the final Classification dataset.
+All classifier rulesets were applied to the interim ecosystem classification layer ([Figure 3](#workflow)) to produce the final Classification dataset.
 
 1. **Remove unused classes**: The ecosystem classification output layer was masked to remove all saltflat pixels (see [Caveats and Limitations](./?tab=quality#saltflat-mapping)). 
-1. **Apply probability thresholds**: A probability threshold of 50% was applied to the Saltmarsh and Mangrove pixels, with pixels below this threshold reassigned as `nodata`. A 50% probability threshold was selected based on the alignment of the outputs with external mapping products, and the conservative consideration that 50% provides a clear majority vote by the ML models.
+1. **Apply probability thresholds**: A probability threshold of 50% was applied to the Saltmarsh and Mangrove pixels, with pixels below this threshold reassigned as `nodata`. A 50% probability threshold was selected based on the alignment of the outputs with external mapping products, and the conservative consideration that 50% provides a clear majority vote by the machine learning models.
 1. **Apply environmental corrections**: Saltmarsh pixels were masked to the observed coastal-connectivity range identified by the saltmarsh training data points. To exclude outliers, the saltmarsh connectivity mask was thresholded to the 99.5th percentile connectivity value (254) for all region-combined saltmarsh points from the training data set. This choice was made to remove misclassifications of saltmarsh in regions considered unconnected to coastal regions (see [Coastal Connectivity](#coastal-connectivity)). See [Caveats and Limitations](./?tab=quality#connectivity-masking-and-saltmarsh) for further discussion on the implications of thresholding based on existing distribution of Saltmarsh training data.
 
 :::
 
 :::{dropdown} Classifier masking
 
-1. **Apply mangrove mask**: Mangrove pixels that fell outside of the [Global Mangrove Watch (GMW) Habitat Mask](https://doi.org/10.5281/zenodo.74784913) (Bunting et al. 2025) were removed. This habitat mask defines an ecologically suitable niche for Mangrove occupation, and was used here to align our Mangrove mapping with global approaches and to minimize false positive Mangrove classification in inhospitable environments.
-1. **Apply Intertidal seagrass probability threshold**: Within the defined Intertidal model extent, the Intertidal seagrass probability layer was used to define the Intertidal seagrass classification at a probability of greater than or equal to 70 %. The 70 % threshold was selected as a conservative value to account for inter-annual variability in seagrass meadows (see [Caveats and Limitations](./?tab=quality#interpretation-of-probability-layers-and-implications-for-change-applications)).
-1. **Apply manual mask**: A manual masking process was applied to the Classification layer, based on expert identified misclassifications (including roads, urban areas, terrain shadow, data noise). For full traceability this polygon masking layer is provided [here](http://dea-public-data-dev.s3-website-ap-southeast-2.amazonaws.com/?prefix=derivative/dea_coastalecosystems/supplementary/).
-1. **Apply land use mask**: Industrial, urban or road areas as identified in the Australian Catchment Scale Land Use and Management dataset (ABARES,2021) were removed.
-1. **Remove and replace isolated pixel groups**: To reduce pixel based noise in the data, the Classification layer was sieved to remove and replace isolated pixels in groups of 9 or less with the dominant surrounding class type.
+1. **Apply mangrove mask**: Mangrove pixels that fell outside of the [Global Mangrove Watch (GMW) Habitat Mask](https://doi.org/10.5281/zenodo.74784913) (Bunting et al. 2025) were removed. This habitat mask defines an ecologically suitable niche for Mangrove occupation, and was used here to align our Mangrove mapping with global approaches and to minimize false-positive Mangrove classification in inhospitable environments.
+1. **Apply Intertidal seagrass probability threshold**: Within the defined Intertidal model extent, the Intertidal seagrass probability layer was used to define the Intertidal seagrass classification at a probability of ≥70%. The 70% threshold was selected as a conservative value to account for inter-annual variability in seagrass meadows (see [Caveats and Limitations](./?tab=quality#interpretation-of-probability-layers-and-implications-for-change-applications)).
+1. **Apply manual mask**: A manual masking process was applied to the Classification layer, based on expert-identified misclassifications (including roads, urban areas, terrain shadow, and data noise). For full traceability, this polygon masking layer is provided here: [supplementary files](http://dea-public-data-dev.s3-website-ap-southeast-2.amazonaws.com/?prefix=derivative/dea_coastalecosystems/supplementary/).
+1. **Apply land use mask**: Industrial, urban or road areas as identified in the Australian Catchment Scale Land Use and Management dataset (ABARES, 2021) were removed.
+1. **Remove and replace isolated pixel groups**: To reduce pixel-based noise in the data, the Classification layer was sieved to remove and replace isolated pixels in groups of 9 or less with the dominant surrounding class type.
 
 :::
 
 :::{dropdown} Probability masking
-1. **Apply probability threshold**: Pixels with values of less than 20 % were removed from the Mangrove, Saltmarsh and Saltflat probability layers to remove very low confidence pixels and noise from the dataset to improve interpretability.
+1. **Apply probability threshold**: Pixels with values of less than 20% were removed from the Mangrove, Saltmarsh and Saltflat probability layers to remove very low confidence pixels and noise from the dataset to improve interpretability.
 
 :::
 
 ## Software
 
 - The [Coastal Ecosystems GitHub](https://github.com/GeoscienceAustralia/dea-coastalecosystems) code repository contains the core functionality required to run the DEA Coastal Ecosystems workflow. The code leverages functions from [DEA Tools](/notebooks/Tools/) that have dependencies on [Scikitlearn](https://scikit-learn.org/stable/).
-- The [DEA Tools](/notebooks/Tools/) library contains essential functionality required to generate random-forest models using [DEA Analysis-Ready-Data](/data/category/dea-surface-reflectance/)
+- The [DEA Tools](/notebooks/Tools/) library contains essential functionality required to generate random-forest models using [DEA Analysis Ready Data](/data/category/dea-surface-reflectance/).
 - The [Scikitlearn](https://scikit-learn.org/stable/) library provided the random-forest classification methodologies.
 
 ## References
 
-1. ABARES 2021, Catchment Scale Land Use of Australia – Update December 2020, Australian Bureau of Agricultural and Resource Economics and Sciences, Canberra, February, CC BY 4.0, DOI: 10.25814/aqjw-rq15
-1. Branson, Paul (2023): Coastal carbon - Australia's blue forest future - Water Levels. v1. CSIRO. Data Collection. https://doi.org/10.25919/6672-jx11
-1. Becker, M.L., Navarro, A., Canto, R., & Murray, N.J. (2023) [An Australian coastal ecosystem training library for remote sensing classification models.](https://github.com/GeoscienceAustralia/dea-coastalecosystems/blob/main/docs/publications/JCU_Coastal_Training_Data_Report_1_27012023_FR%20.pdf) Unpublished report to the Department of Climate Change, Energy, the Environment and Water. James Cook University, Townsville.
-1. Boegh, E., Soegaard, H., Broge, N., Hasager, C. B., Jensen, N. O., Schelde, K., & Thomsen, A. (2002). Airborne multispectral data for quantifying leaf area index, nitrogen concentration, and photosynthetic efficiency in agriculture. Remote sensing of Environment, 81(2-3), 179-193.
-1. Bunting, P., Rosenqvist, A., Hilarides. (2025) Global Mangrove Watch: Mangrove Habitat Mask v27.0 Dataset. https://doi.org/10.5281/zenodo.7478491
-1. Canto. R., Navarro., A.,Becker, M., Murray, N.J., (2023) [Australian coastal ecosystem training library](https://github.com/GeoscienceAustralia/dea-coastalecosystems/blob/main/data/training_data_input/MultEcosy_TData_v1_0.geojson). Unpublished dataset.
-1. Crist, E. P. (1985). A TM Tasseled Cap equivalent transformation for reflectance factor data. Remote Sensing of Environment, 17(3), 301–306. https://doi.org/10.1016/0034-4257(85)90102-6
-1. Feyisa, G. L., Meilby, H., Fensholt, R., & Proud, S. R. (2014). Automated Water Extraction Index: A new technique for surface water mapping using Landsat imagery. Remote sensing of environment, 140, 23-35.
-1. Fisher, A., Flood, N., & Danaher, T. (2016). Comparing Landsat water index methods for automated water classification in eastern Australia. Remote Sensing of Environment, 175, 167-182.
-1. Gallant, J.C., Dowling, T.I., Read, A.M., Wilson, N., Tickle, P. and Inskeep, C., 2011. 1 second SRTM Derived Digital Elevation Models User Guide. Geoscience Australia www.ga.gov.au/topographic-mapping/digital-elevationdata.html 
-1. Huete, A., Didan, K., Miura, T., Rodriguez, E. P., Gao, X., & Ferreira, L. G. (2002). Overview of the radiometric and biophysical performance of the MODIS vegetation indices. Remote sensing of environment, 83(1-2), 195-213.
-1. Keith, D.A., Ferrer-Paris, J.R., Nicholson, E. et al. (2022) A function-based typology for Earth’s ecosystems. Nature 610, 513–518 [https://www.nature.com/articles/s41586-022-05318-4](https://doi.org/10.1038/s41586-022-05318-4). 
-1. Lovelock, C.E., Sippo, J., Fernanda Adame, M., Dittmann, S., Hickey, S., Hutley, L., Jones, A., Kelleway, J., Lavery, P., Macreadie, P., Maher, D., Mosely, L. and Rogers, K (2021) [Blue carbon accounting model (BlueCAM) technical overview](https://cer.gov.au/document/blue-carbon-accounting-model-bluecam-technical-overview). Report to the Clean Energy Regulator. University of Queensland.
-1. Lyons, M.B., Keith, D.A., Phinn, S.R., Mason, T.J., & Elith, J. (2018). A comparison of resampling methods for remote sensing classification and accuracy assessment. Remote Sensing of Environment, 208, 145-153. https://doi.org/10.1016/j.rse.2018.02.026
-1. McFeeters, S. K. (1996). The use of the Normalized Difference Water Index (NDWI) in the delineation of open water features. International journal of remote sensing, 17(7), 1425-1432.
-1. Murray N. J., Canto, R., Worthington, T. A., Lyons, M.B. (2022) Supplementary Data S1 to Losses and gains of Earth's tidal wetlands. Figshare. https://doi.org/10.6084/m9.figshare.19121660.
-1. Murray, N. J., Phinn, S. R., DeWitt, M., Ferrari, R., Johnston, R., Lyons, M. B., Clinton, N., Thau, D. & Fuller, R. A. (2019). The global distribution and trajectory of tidal flats. Nature, 565, 222-225
-1. Murray, N.J., et al., High-resolution mapping of losses and gains of Earth’s tidal wetlands. Science 376, 744-749(2022). [DOI:10.1126/science.abm9583](https://www.science.org/doi/10.1126/science.abm9583)
-1. Navarro, A., Canto, R., Toor, M., & Murray, N.J. (2022) An Australian intertidal seagrass training library for remote sensing classification models. Unpublished report to the Department of Agriculture, Water and the Environment. James Cook University, Townsville.
-1. Navarro, A., Canto, R., Toor, M., Becker, M.L., Lyons, M. & Murray, N.J. (2023) Australian Saltmarsh Map. Unpublished report to the Clean Energy Regulator. James Cook University, Townsville. 
-1. Nedkov, R., (2017). “Orthogonal transformation of segmented images from the satellite Sentinel-2,” Comptes Rendus De lAcad. Bulgare Sci., vol.  70, no.  5, pp.  687–692.
-1. Rouse Jr, J. W., Haas, R. H., Schell, J. A., & Deering, D. W. (1973). Monitoring the vernal advancement and retrogradation (green wave effect) of natural vegetation (No. NASA-CR-132982).
-1. Xu, H. (2006). Modification of normalised difference water index (NDWI) to enhance open water features in remotely sensed imagery. International journal of remote sensing, 27(14), 3025-3033. 
+ABARES 2021, Catchment Scale Land Use of Australia – Update December 2020, Australian Bureau of Agricultural and Resource Economics and Sciences, Canberra, February, CC BY 4.0, DOI: 10.25814/aqjw-rq15
+
+Branson, Paul (2023): Coastal carbon - Australia's blue forest future - Water Levels. v1. CSIRO. Data Collection. https://doi.org/10.25919/6672-jx11
+
+Becker, M.L., Navarro, A., Canto, R., & Murray, N.J. (2023) [An Australian coastal ecosystem training library for remote sensing classification models.](https://github.com/GeoscienceAustralia/dea-coastalecosystems/blob/main/docs/publications/JCU_Coastal_Training_Data_Report_1_27012023_FR%20.pdf) Unpublished report to the Department of Climate Change, Energy, the Environment and Water. James Cook University, Townsville.
+
+Boegh, E., Soegaard, H., Broge, N., Hasager, C. B., Jensen, N. O., Schelde, K., & Thomsen, A. (2002). Airborne multispectral data for quantifying leaf area index, nitrogen concentration, and photosynthetic efficiency in agriculture. Remote sensing of Environment, 81(2-3), 179-193.
+
+Bunting, P., Rosenqvist, A., Hilarides. (2025) Global Mangrove Watch: Mangrove Habitat Mask v27.0 Dataset. https://doi.org/10.5281/zenodo.7478491
+
+Canto. R., Navarro., A.,Becker, M., Murray, N.J., (2023) [Australian coastal ecosystem training library](https://github.com/GeoscienceAustralia/dea-coastalecosystems/blob/main/data/training_data_input/MultEcosy_TData_v1_0.geojson). Unpublished dataset.
+
+Crist, E. P. (1985). A TM Tasseled Cap equivalent transformation for reflectance factor data. Remote Sensing of Environment, 17(3), 301–306. https://doi.org/10.1016/0034-4257(85)90102-6
+
+Feyisa, G. L., Meilby, H., Fensholt, R., & Proud, S. R. (2014). Automated Water Extraction Index: A new technique for surface water mapping using Landsat imagery. Remote sensing of environment, 140, 23-35.
+
+Fisher, A., Flood, N., & Danaher, T. (2016). Comparing Landsat water index methods for automated water classification in eastern Australia. Remote Sensing of Environment, 175, 167-182.
+
+Gallant, J.C., Dowling, T.I., Read, A.M., Wilson, N., Tickle, P. and Inskeep, C., 2011. 1 second SRTM Derived Digital Elevation Models User Guide. Geoscience Australia www.ga.gov.au/topographic-mapping/digital-elevationdata.html 
+
+Huete, A., Didan, K., Miura, T., Rodriguez, E. P., Gao, X., & Ferreira, L. G. (2002). Overview of the radiometric and biophysical performance of the MODIS vegetation indices. Remote sensing of environment, 83(1-2), 195-213.
+
+Keith, D.A., Ferrer-Paris, J.R., Nicholson, E. et al. (2022) A function-based typology for Earth’s ecosystems. Nature 610, 513–518 [https://www.nature.com/articles/s41586-022-05318-4](https://doi.org/10.1038/s41586-022-05318-4). 
+
+Lovelock, C.E., Sippo, J., Fernanda Adame, M., Dittmann, S., Hickey, S., Hutley, L., Jones, A., Kelleway, J., Lavery, P., Macreadie, P., Maher, D., Mosely, L. and Rogers, K (2021) [Blue carbon accounting model (BlueCAM) technical overview](https://cer.gov.au/document/blue-carbon-accounting-model-bluecam-technical-overview). Report to the Clean Energy Regulator. University of Queensland.
+
+Lyons, M.B., Keith, D.A., Phinn, S.R., Mason, T.J., & Elith, J. (2018). A comparison of resampling methods for remote sensing classification and accuracy assessment. Remote Sensing of Environment, 208, 145-153. https://doi.org/10.1016/j.rse.2018.02.026
+
+McFeeters, S. K. (1996). The use of the Normalized Difference Water Index (NDWI) in the delineation of open water features. International journal of remote sensing, 17(7), 1425-1432.
+
+Murray N. J., Canto, R., Worthington, T. A., Lyons, M.B. (2022) Supplementary Data S1 to Losses and gains of Earth's tidal wetlands. Figshare. https://doi.org/10.6084/m9.figshare.19121660.
+
+Murray, N. J., Phinn, S. R., DeWitt, M., Ferrari, R., Johnston, R., Lyons, M. B., Clinton, N., Thau, D. & Fuller, R. A. (2019). The global distribution and trajectory of tidal flats. Nature, 565, 222-225
+
+Murray, N.J., et al., High-resolution mapping of losses and gains of Earth’s tidal wetlands. Science 376, 744-749(2022). DOI: [10.1126/science.abm9583](https://www.science.org/doi/10.1126/science.abm9583)
+
+Navarro, A., Canto, R., Toor, M., & Murray, N.J. (2022) An Australian intertidal seagrass training library for remote sensing classification models. Unpublished report to the Department of Agriculture, Water and the Environment. James Cook University, Townsville.
+
+Navarro, A., Canto, R., Toor, M., Becker, M.L., Lyons, M. & Murray, N.J. (2023) Australian Saltmarsh Map. Unpublished report to the Clean Energy Regulator. James Cook University, Townsville. 
+
+Nedkov, R., (2017). “Orthogonal transformation of segmented images from the satellite Sentinel-2,” Comptes Rendus De lAcad. Bulgare Sci., vol.  70, no.  5, pp.  687–692.
+
+Rouse Jr, J. W., Haas, R. H., Schell, J. A., & Deering, D. W. (1973). Monitoring the vernal advancement and retrogradation (green wave effect) of natural vegetation (No. NASA-CR-132982).
+
+Xu, H. (2006). Modification of normalised difference water index (NDWI) to enhance open water features in remotely sensed imagery. International journal of remote sensing, 27(14), 3025-3033. 
+
