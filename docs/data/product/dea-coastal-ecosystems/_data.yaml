@@ -90,13 +90,13 @@ access_links_custom:
    icon: database
    label: Data sources
    name: Access the data on AWS
-   description: "Learn **how to stream data from AWS below** or `other ways to download from AWS </guides/about/faq/#download-dea-data>`_."
+   description: "Learn **how to stream data from AWS below (the recommended method)** or `other ways to download from AWS </guides/about/faq/#download-dea-data>`_."
    class: null
  - link: https://github.com/GeoscienceAustralia/dea-coastalecosystems
    icon: code-branch
    label: Source code
    name: "Source code on GitHub"
-   description: "GitHub repository: GeoscienceAustralia/dea-coastalecosystems"
+   description: "The GitHub repository is GeoscienceAustralia/dea-coastalecosystems."
    class: null
 
 # History
