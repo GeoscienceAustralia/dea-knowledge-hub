@@ -2,9 +2,9 @@
 
 ## Background
 
-Mapping coastal ecosystems is vital for understanding, managing, and protecting the diverse habitats that line our shorelines. These ecosystems—ranging from mangroves and saltmarshes to seagrass meadows and coral reefs—provide essential environmental services, including carbon storage, coastal protection, and habitat for marine biodiversity. From an economic standpoint, they sustain industries such as fisheries and tourism while reducing costs associated with coastal erosion and storm damage. Accurate and comprehensive mapping underpins management, restoration, and conservation efforts, allowing planners to identify priority areas, monitor ecological change, and assess the effectiveness of interventions.
+Mapping coastal ecosystems is vital for understanding, managing, and protecting the diverse habitats that line our shorelines. These ecosystems — ranging from mangroves and saltmarshes to seagrass meadows and coral reefs — provide essential environmental services, including carbon storage, coastal protection, and habitat for marine biodiversity. From an economic standpoint, they sustain industries such as fisheries and tourism while reducing costs associated with coastal erosion and storm damage. Accurate and comprehensive mapping underpins management, restoration, and conservation efforts, allowing planners to identify priority areas, monitor ecological change, and assess the effectiveness of interventions.
 
-Achieving this at a continental scale, however, poses significant challenges. Traditional methods such as field surveys, aerial photography, and local-scale sampling are costly, labour-intensive, and constrained in spatial and temporal scope—limitations that are particularly relevant in a country as vast and remote as Australia. Earth Observation (EO) provides an efficient and consistent alternative, allowing large-scale, high-resolution, and repeatable mapping through the use of publicly available satellite imagery.
+Achieving this at a continental scale, however, poses significant challenges. Traditional methods such as field surveys, aerial photography, and local-scale sampling are costly, labour-intensive, and constrained in spatial and temporal scope — limitations that are particularly relevant in a country as vast and remote as Australia. Earth Observation (EO) provides an efficient and consistent alternative, allowing large-scale, high-resolution, and repeatable mapping through the use of publicly available satellite imagery.
 
 The **Digital Earth Australia (DEA) Coastal Ecosystems** product suite was developed in response to this need for consistent, continent-wide monitoring. It provides the first national dataset to simultaneously map Australia’s mangrove, saltmarsh, intertidal, and intertidal seagrass ecosystems at 10 m resolution, using annual time-series of Sentinel-2 satellite imagery for consistent mapping at a continental scale. The mapping process employs a machine learning (ML) framework originally developed by the University of New South Wales (UNSW) and James Cook University (JCU) for global coastal ecosystem mapping on the Google Earth Engine platform (Murray et al., 2022). To tailor the approach for Australian conditions, JCU — commissioned by the Department of Climate Change, Energy, the Environment and Water (DCCEEW) — compiled a national training dataset of more than 40,000 annotated points across the continent (Canto et al., 2023; Becker et al., 2023).
 
@@ -116,7 +116,7 @@ To stream COG versions of DEA data, you will need to identify the data layers by
 For example, the 2021 DEA Coastal Ecosystems classification layer is named
 
 ```text
-ga_s2_coastalecosystems_cyear_3_v1-0-0_AU_2021—P1Y_final_classification.tif
+ga_s2_coastalecosystems_cyear_3_v1-0-0_AU_2021-P1Y_final_classification.tif
 ```
 
 ## Processing steps

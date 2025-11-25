@@ -41,6 +41,6 @@ Learn more about [Continental Cloud-Optimised GeoTIFF Mosaics](/guides/continent
 
 1. Open the [DEA Coastal Ecosystems](https://data.dea.ga.gov.au/?prefix=derivative/ga_s2_coastalecosystems_cyear_3_v1/AU/) directory in DEA's Amazon S3 bucket: 
 1. Enter a directory of a particular year, e.g. `2021--P1Y`
-1. Click to download the product layer of interest, e.g. `ga_s2_coastalecosystems_cyear_3_v1-0-0_AU_2021—P1Y_final_classification.tif`. Learn more about file naming and product layers: [Technical Information](./?tab=description#core-product-layers).
+1. Click to download the product layer of interest, e.g. `ga_s2_coastalecosystems_cyear_3_v1-0-0_AU_2021-P1Y_final_classification.tif`. Learn more about file naming and product layers: [Technical Information](./?tab=description#core-product-layers).
 :::
 
