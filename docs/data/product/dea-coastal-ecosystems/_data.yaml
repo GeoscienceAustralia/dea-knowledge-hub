@@ -49,7 +49,7 @@ ecat_id: "150770"
 licence_name: Creative Commons Attribution 4.0 International Licence
 licence_link: https://creativecommons.org/licenses/by/4.0/
 
-# citation_data: "Bishop-Taylor, R., Nanson, R., Sagar, S., Lymburner, L. (2021). Digital Earth Australia Coastlines. Geoscience Australia, Canberra. https://doi.org/10.26186/116268"
+citation_data: "Phillips, C., Newey, V., Lyons, M., Sagar, S., Bishop-Taylor, R., DEA Coastal Ecosystems. Commonwealth of Australia (Geoscience Australia). https://doi.org/10.26186/150770"
 # citation_paper: "Bishop-Taylor, R., Nanson, R., Sagar, S., Lymburner, L. (2021). Mapping Australia's dynamic coastline at mean sea level using three decades of Landsat imagery. Remote Sensing of Environment, 267, 112734. https://doi.org/10.1016/j.rse.2021.112734"
 
 # citations_custom:
