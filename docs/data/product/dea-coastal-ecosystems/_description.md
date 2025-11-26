@@ -79,7 +79,7 @@ Probabilities for layers in the Ecosystem Model (Mangroves, Saltmarsh and Saltfl
 
 The Saltflat ecosystem has been excluded from the classification product layer, though the probability layer generated for this ecosystem as part of the Ecosystem Model has been provided. Reasoning and further discussion on this decision can be found in the [Caveats and Limitations](./?tab=quality) section.
 
-Further information on how these Probability layers can be individually interpreted and used to aid in interpretation of the classified ecosystem map, including for mixed or transitional classes, can be found in the Caveats and Limitations.
+Further information on how these Probability layers can be individually interpreted and used to aid in interpretation of the classified ecosystem map, including for mixed or transitional classes, can be found in the [Caveats and Limitations](./?tab=quality).
 
 :::{figure} /_files/dea-coastalecosystems/probabilities_Bermagui_2021.png
 
