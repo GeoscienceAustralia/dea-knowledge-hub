@@ -67,7 +67,7 @@ Whilst the modelling process in this product has been designed to mitigate these
 
 The DEA Coastal Ecosystems mapping was validated using a Monte Carlo resampling workflow with spatial stratification (32 km tiles) to limit spatial autocorrelation (Lyons et al. 2018). Each iteration trains on ~80% of tiles, tests on the remainder, filters predictions by a greater-than-or-equal-to 50% class-probability threshold (to replicate the mapping methodology), and then reports accuracy for both the ecosystem model and the final output after seagrass modelling is applied to the tidal flat area. The validation metrics are thus indicative of the accuracy of the final categorical classification product, and are not strictly relevant to the model probability layers. Final accuracy metrics are summarised from the sampling distributions as the median with a 95% interval (which can be used as area multipliers if desired). Validation statistics are reported separately for the 2021 and 2022 mapping.
 
-Comprehensive methodology notes are documented in the code repository (see the [Validation README](https://github.com/GeoscienceAustralia/dea-coastalecosystems/blob/main/docs/validation_readme.md)), and the complete per-class/per-year outputs are available in the [full validation results](https://github.com/GeoscienceAustralia/dea-coastalecosystems/blob/main/docs/coastal_ecosystem_validation_results.md).
+Comprehensive methodology notes are documented in the code repository (see the [Validation README](https://data.dev.dea.ga.gov.au/derivative/ga_s2_coastalecosystems_cyear_3_v1/auxiliaries/validation/Validation%20readme.pdf)), and the complete per-class/per-year outputs are available in the [full validation results](https://data.dev.dea.ga.gov.au/derivative/ga_s2_coastalecosystems_cyear_3_v1/auxiliaries/validation/coastal_ecosystem_validation_results.pdf).
 
 ### Regional summary per year
 
@@ -161,7 +161,7 @@ Comprehensive methodology notes are documented in the code repository (see the [
 
 ## Quality assurance
 
-Code used to generate the DEA Coastal Ecosystem Map is [run against automated integration tests](https://github.com/GeoscienceAustralia/dea-coastalecosystems/tree/main/tests) to ensure that product quality is maintained as updates and improvements are made. These tests verify that the entire product generation workflow is performing as expected and track changes in product accuracy over time.
+Code used to generate the DEA Coastal Ecosystem Map is run against automated integration tests to ensure that product quality is maintained as updates and improvements are made. These tests verify that the entire product generation workflow is performing as expected and track changes in product accuracy over time.
 
 % ## Known issues
 

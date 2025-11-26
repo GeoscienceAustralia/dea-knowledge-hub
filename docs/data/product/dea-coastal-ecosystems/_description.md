@@ -135,7 +135,7 @@ These components are discussed in further detail below. The validation process i
 ### 1. Training data
 
 ::::{dropdown} Data curation
-[Continental training data](https://github.com/GeoscienceAustralia/dea-coastalecosystems/blob/main/data/training_data_input/MultEcosy_TData_v1_0.geojson), developed for [this work](https://github.com/GeoscienceAustralia/dea-coastalecosystems/blob/main/docs/publications/JCU_Coastal_Training_Data_Report_1_27012023_FR%20.pdf) (Canto et al., 2023), comprised a point-record training set of 40,934 Australian coastal ecosystem type occurrences (Figure 4). Development of this dataset was completed for use with multi-ecosystem classification models.
+[Continental training data](https://data.dev.dea.ga.gov.au/derivative/ga_s2_coastalecosystems_cyear_3_v1/auxiliaries/training_data/MultEcosy_TData_v1_0.geojson), developed for [this work](https://data.dev.dea.ga.gov.au/derivative/ga_s2_coastalecosystems_cyear_3_v1/auxiliaries/publications/JCU_Coastal_Training_Data_Report_1_27012023_FR.pdf) (Canto et al., 2023), comprised a point-record training set of 40,934 Australian coastal ecosystem type occurrences (Figure 4). Development of this dataset was completed for use with multi-ecosystem classification models.
 
 The dataset integrated occurrence records from four data sources:
 
@@ -339,7 +339,7 @@ All classifier rulesets were applied to the interim ecosystem classification lay
 
 1. **Apply mangrove mask**: Mangrove pixels that fell outside of the [Global Mangrove Watch (GMW) Habitat Mask](https://doi.org/10.5281/zenodo.74784913) (Bunting et al. 2025) were removed. This habitat mask defines an ecologically suitable niche for Mangrove occupation, and was used here to align our Mangrove mapping with global approaches and to minimize false-positive Mangrove classification in inhospitable environments.
 1. **Apply Intertidal seagrass probability threshold**: Within the defined Intertidal model extent, the Intertidal seagrass probability layer was used to define the Intertidal seagrass classification at a probability of greater than or equal to 70%. The 70% threshold was selected as a conservative value to account for inter-annual variability in seagrass meadows (see [Caveats and Limitations](./?tab=quality#interpretation-of-probability-layers-and-implications-for-change-applications)).
-1. **Apply manual mask**: A manual masking process was applied to the Classification layer, based on expert-identified misclassifications (including roads, urban areas, terrain shadow, and data noise). For full traceability, this polygon masking layer is provided here: [supplementary files](http://dea-public-data-dev.s3-website-ap-southeast-2.amazonaws.com/?prefix=derivative/dea_coastalecosystems/supplementary/).
+1. **Apply manual mask**: A manual masking process was applied to the Classification layer, based on expert-identified misclassifications (including roads, urban areas, terrain shadow, and data noise). For full traceability, this polygon masking layer is provided here: [manual mask](https://data.dev.dea.ga.gov.au/derivative/ga_s2_coastalecosystems_cyear_3_v1/auxiliaries/contextual_editing/cem_manual_edits_3577_v1.parquet).
 1. **Apply land use mask**: Industrial, urban or road areas as identified in the Australian Catchment Scale Land Use and Management dataset (ABARES, 2021) were removed.
 1. **Remove and replace isolated pixel groups**: To reduce pixel-based noise in the data, the Classification layer was sieved to remove and replace isolated pixels in groups of 9 or less with the dominant surrounding class type.
 
@@ -352,7 +352,7 @@ All classifier rulesets were applied to the interim ecosystem classification lay
 
 ## Software
 
-- The [Coastal Ecosystems GitHub](https://github.com/GeoscienceAustralia/dea-coastalecosystems) code repository contains the core functionality required to run the DEA Coastal Ecosystems workflow. The code leverages functions from [DEA Tools](/notebooks/Tools/) that have dependencies on [Scikitlearn](https://scikit-learn.org/stable/).
+- The DEA Coastal Ecosystems workflow leverages functions from [DEA Tools](/notebooks/Tools/) that have dependencies on [Scikitlearn](https://scikit-learn.org/stable/).
 - The [DEA Tools](/notebooks/Tools/) library contains essential functionality required to generate random-forest models using [DEA Analysis Ready Data](/data/category/dea-surface-reflectance/).
 - The [Scikitlearn](https://scikit-learn.org/stable/) library provided the random-forest classification methodologies.
 
