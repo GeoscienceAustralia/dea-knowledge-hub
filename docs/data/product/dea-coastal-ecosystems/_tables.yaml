@@ -44,17 +44,17 @@ bands_table:
     aliases: 
     - count-clear
     resolution: 10 m
-    nodata: -999
+    nodata: 255
     units: Count
-    type: int16
+    type: uint8
     description: The count of clear and valid observations per pixel.
   - name: qa-coastal-connectivity
     aliases: 
     - coastal-connectivity
     resolution: 10 m
-    nodata: 32767
+    nodata: 65535
     units: Cost distance
-    type: int16
+    type: uint16
     description: Accumulated cost-distance coastal connectivity, used to identify likely coastal pixels.   
 
 
