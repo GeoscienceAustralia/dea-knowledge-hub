@@ -68,7 +68,7 @@ tags:
 # Access
 
 access_links_maps:
-   - link: https://maps.dea.ga.gov.au/story/DEACoastalecosystems
+   - link: https://maps.dea.ga.gov.au/story/DEACoastalEcosystems
      name: null
 
 access_links_explorers:
@@ -78,7 +78,7 @@ access_links_explorers:
 access_links_data: null
 
 access_links_code_examples:
-  - link: /notebooks/DEA_products/DEA_Coastalecosystems/
+  - link: /notebooks/DEA_products/DEA_Coastal_Ecosystems/
     name: View code examples (DEA Notebook)
 
 access_links_web_services:

@@ -6,7 +6,7 @@
 DEA Coastal Ecosytems data is large with files up to 3 GB in size. We strongly recommend streaming data directly from the cloud rather than downloading the data. Please see the instructions below: **How to stream data from AWS**
 :::
 
-:::{dropdown} How to explore DEA Maps (To be completed with StoryMap)
+:::{dropdown} How to explore DEA Maps
 
 Start exploring [DEA Coastal Ecosystems on DEA Maps](https://maps.dea.ga.gov.au/story/DEACoastalEcosystems).
 
@@ -27,8 +27,6 @@ View the product layer required by selecting the layer from the **Styles** dropd
 The easiest way to access DEA Coastal Ecosystems data is via our continental-scale cloud-optimised GeoTIFF mosaics (COGs).
 The COG file format is a type of GeoTIFF raster file (`.tif`) that allows you to quickly and efficiently 'stream' data directly from the Amazon S3 cloud without having to download files to your computer.
 This allows you to rapidly access data from the entire Australian continent without having to download large files.
-
-VRT (Virtual Raster) files are also provided alongside the mosaics. These files serve as lightweight wrappers around the main data and can be used to open data in GIS software with visual settings already applied.
 
 Learn more about [Continental Cloud-Optimised GeoTIFF Mosaics](/guides/continental-cogs-geotiff-mosaics/).
 
