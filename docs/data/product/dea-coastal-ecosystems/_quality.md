@@ -38,7 +38,7 @@ The Saltmarsh connectivity thresholding assumes that the training data (which ar
 
 ### Global Mangrove Watch Masking
 
-The [Global Mangrove Watch (GMW) Habitat Mask](https://doi.org/10.5281/zenodo.74784913) (Bunting et al. 2025) is widely used in the coastal mapping and scientific community as a layer to constrain the mapping of Mangroves to suitable ecological conditions and zones. It is however acknowledged as a living dataset, with updates contributed by the community of new identified mangroves and mapping extents. For example, in the early stages of this project, new regions not captured by the GMW were identified in Batemans Bay, NSW, and these regions were added by GMW to the most recent version of the Habitat mask. 
+The [Global Mangrove Watch (GMW) Habitat Mask](https://doi.org/10.5281/zenodo.7478491) (Bunting et al. 2025) is widely used in the coastal mapping and scientific community as a layer to constrain the mapping of Mangroves to suitable ecological conditions and zones. It is however acknowledged as a living dataset, with updates contributed by the community of new identified mangroves and mapping extents. For example, in the early stages of this project, new regions not captured by the GMW were identified in Batemans Bay, NSW, and these regions were added by GMW to the most recent version of the Habitat mask. 
 
 Although the Classification layer has been masked by the GMW Habitat Mask, the Mangroves probability layer has not, and it is possible that users may be able to identify small areas of high-probability Mangroves not mapped by the masked classification layer. Users are encouraged to provide DEA with this feedback, so that we can continue to help the GMW initiative to provide the most suitable masking and mapping layers.
 
