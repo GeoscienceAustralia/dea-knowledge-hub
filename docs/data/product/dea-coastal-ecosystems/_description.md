@@ -8,7 +8,7 @@ Achieving this at a continental scale, however, poses significant challenges. Tr
 
 The **Digital Earth Australia (DEA) Coastal Ecosystems** product suite was developed in response to this need for consistent, continent-wide monitoring. It provides the first national dataset to simultaneously map Australia’s mangrove, saltmarsh, intertidal, and intertidal seagrass ecosystems at 10 m resolution, using annual time-series of Sentinel-2 satellite imagery for consistent mapping at a continental scale. The mapping process employs a machine learning (ML) framework originally developed by the University of New South Wales (UNSW) and James Cook University (JCU) for global coastal ecosystem mapping on the Google Earth Engine platform (Murray et al., 2022). To tailor the approach for Australian conditions, JCU — commissioned by the Department of Climate Change, Energy, the Environment and Water (DCCEEW) — compiled a national training dataset of more than 40,000 annotated points across the continent (Canto et al., 2023; Becker et al., 2023).
 
-This collaboration ensures the resulting maps are ecologically meaningful and complementary to expert mapping undertaken by State Governments and academia. providing a strong foundation for environmental management and reporting, restoration planning, environmental-economic accounting, and long-term coastal conservation.
+This collaboration ensures the resulting maps are ecologically meaningful and complementary to expert mapping undertaken by State Governments and academia, and could be used to support a national foundation for environmental management and reporting, restoration planning, environmental-economic accounting, and long-term coastal conservation.
 
 ## What this product offers
 
