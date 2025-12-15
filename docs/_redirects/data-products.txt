@@ -19,3 +19,8 @@ data/product/dea-intertidal-extents-landsat  data/product/dea-intertidal
 # DEA Tidal Composites has superseded High and Low Tide Composites (HLTC)
 
 data/product/dea-high-and-low-tide-imagery-landsat  data/product/dea-tidal-composites
+
+# A development URL for DEA Coastal Ecosystems
+
+data/product/dea-coastalecosystems  data/product/dea-coastal-ecosystems
+
