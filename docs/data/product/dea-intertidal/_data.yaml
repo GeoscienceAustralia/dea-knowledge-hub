@@ -63,44 +63,46 @@ tags:
 
 # Access
 
-access_links_maps:
-  - link: https://maps.dea.ga.gov.au/story/DEAIntertidal
-    name: null
+access_links_maps: null
 
-access_links_explorers:
-  - link: https://explorer.dea.ga.gov.au/products/ga_s2ls_intertidal_cyear_3
-    name: null
+access_links_explorers: null
 
-access_links_data:
-  - link: https://elevation.fsdf.org.au/
-    name: Download the data from ELVIS
-  - link: https://thredds.nci.org.au/thredds/catalog/jw04/ga_s2ls_intertidal_cyear_3/catalog.html
-    name: Access the data on NCI
+access_links_data: null
 
-access_links_code_examples:
-  - link: /notebooks/DEA_products/DEA_Intertidal/
-    name: null
-  - link: https://github.com/GeoscienceAustralia/dea-intertidal
-    name: GitHub repository
+access_links_code_examples: null
 
-access_links_web_services:
-  - link: https://ows.dea.ga.gov.au/
-    name: Web Map Service (WMS)
-
+access_links_web_services: null
 
 access_links_custom:
-  - link: https://data.dea.ga.gov.au/?prefix=derivative/ga_s2ls_intertidal_cyear_3/2-0-0/
-    icon: database
-    label: Data sources
-    name: AWS data
-    description: null
-    class: null
-  - link: ./?tab=access#access-guides
-    icon: database
-    label: Data sources
+  - type: map
+    link: https://maps.dea.ga.gov.au/story/DEAIntertidal
+
+  - type: explorer
+    link: https://explorer.dea.ga.gov.au/products/ga_s2ls_intertidal_cyear_3
+
+  - type: data
+    link: https://data.dea.ga.gov.au/?prefix=derivative/ga_s2ls_intertidal_cyear_3/2-0-0/
+    name: Access the data on AWS
+  - type: data
+    link: ./?tab=access#access-guides
     name: How to stream data from AWS
     description: null
-    class: null
+  - type: data
+    link: https://elevation.fsdf.org.au/
+    name: Download the data from ELVIS
+  - type: data
+    link: https://thredds.nci.org.au/thredds/catalog/jw04/ga_s2ls_intertidal_cyear_3/catalog.html
+    name: Access the data on NCI
+
+  - type: code_example
+    link: /notebooks/DEA_products/DEA_Intertidal/
+  - type: code_example
+    link: https://github.com/GeoscienceAustralia/dea-intertidal
+    name: GitHub repository
+
+  - type: web_service
+    link: https://ows.dea.ga.gov.au/
+    name: Web Map Service (WMS)  
 
 # History
 
