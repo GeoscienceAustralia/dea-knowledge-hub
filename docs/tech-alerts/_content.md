@@ -1,6 +1,18 @@
 % See the DEA Tech Alerts documentation:
 % https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/tech_alerts_changelog.html
 
+## 17 Dec 2025: New release &mdash; Digital Earth Australia Coastal Ecosystems
+
+Geoscience Australia, in collaboration with University of NSW and James Cook University, has launched the Digital Earth Australia (DEA) Coastal Ecosystems product suite. 
+
+[DEA Coastal Ecosystems](/data/product/dea-coastal-ecosystems/) uses Sentinel-2 Earth observation (EO) data, to produce 10-metre-resolution maps of four key Australian coastal ecosystem types. 
+
+It is the first national product to simultaneously map Australia’s mangrove, saltmarsh, intertidal, and intertidal seagrass ecosystems, providing users with a consistent, continent-wide view of ecosystem extent and distribution. 
+
+The product is derived from a national training dataset of more than 40,000 expertly annotated ecosystem observations, enabling robust modelling and mapping of ecosystem extents across Australia at Sentinel-2’s 10-metre resolution for the years 2021 and 2022. 
+
+[View the Tech Alert](https://communication.ga.gov.au/link/id/zzzz694216cf55920714Pzzzz6567c8b713b5b826/page.html)
+
 ## 18 Nov 2025: Digital Earth access to Landsat 8 and 9 data restored
 
 Geoscience Australia access to Landsat 8 and 9 data has been restored following the reopening of the US Government.
