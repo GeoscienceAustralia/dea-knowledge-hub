@@ -1,6 +1,16 @@
 % See the DEA Tech Alerts documentation:
 % https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/tech_alerts_changelog.html
 
+## 18 Dec 2025: Shutdown period
+
+Geoscience Australia observes an agency-wide shut down between 24 December 2025 and 5 January 2026. Just like previous years, during this time, our products remain active and accessible; however, no active monitoring or user support will be provided during this period. Should any service interruptions occur, they will be addressed as soon as possible once operations resume on 5 January 2026.
+
+In the event of production of DEA Analysis Ready Data (ARD) collections being delayed, please make use of our near-real time products for the most up to date information:
+
+[Sentinel-2 Near-Real Time on DEA Maps](https://maps.dea.ga.gov.au/#share=s-vECOedEnBVcWpQEEJT0HIcg3dmT)
+
+[Landsat-9 Near-Real Time on DEA Maps](https://maps.dea.ga.gov.au/#share=s-cYqLX5UCEbwM9KsaylIx4ahzlWF)
+
 ## 17 Dec 2025: New release &mdash; Digital Earth Australia Coastal Ecosystems
 
 Geoscience Australia, in collaboration with University of NSW and James Cook University, has launched the Digital Earth Australia (DEA) Coastal Ecosystems product suite. 
