@@ -7,9 +7,9 @@ Geoscience Australia observes an agency-wide shut down between 24 December 2025 
 
 In the event of production of DEA Analysis Ready Data (ARD) collections being delayed, please make use of our near-real time products for the most up to date information:
 
-Sentinel-2 Near-Real Time on DEA Maps
+[Sentinel-2 Near-Real Time on DEA Maps](https://maps.dea.ga.gov.au/#share=s-vECOedEnBVcWpQEEJT0HIcg3dmT)
 
-Landsat-9 Near-Real Time on DEA Maps
+[Landsat-9 Near-Real Time on DEA Maps](https://maps.dea.ga.gov.au/#share=s-cYqLX5UCEbwM9KsaylIx4ahzlWF)
 
 ## 17 Dec 2025: New release &mdash; Digital Earth Australia Coastal Ecosystems
 
