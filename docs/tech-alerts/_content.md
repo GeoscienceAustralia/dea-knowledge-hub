@@ -5,7 +5,7 @@
 
 The following Tech Alerts were posted to this page in the previous year. To read these, [view DEA Tech Alerts 2025](/tech-alerts/2025/).
 
-| Date posted | Title of Tech Alert |
+| Date&nbsp;posted | Title of Tech Alert |
 |---|---|
 | 18 Dec 2025 | Shutdown period |
 | 17 Dec 2025 | New release &mdash; Digital Earth Australia Coastal Ecosystems |
