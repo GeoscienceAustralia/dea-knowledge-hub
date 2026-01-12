@@ -110,7 +110,7 @@ Multiple web services are experiencing an outage: DEA Explorer (Prod), DEA WCS (
 
 <span id="2024-09-02-expanded-extent-paused"></span>
 
-## 2 Sep 2024: Expanded extents data processing is currently paused, with data available to May 2024 <!-- NOTE Remember to remove the banner on the page: https://pr-302-preview.khpreview.dea.ga.gov.au/guides/reference/ard-expanded-processing-extent/ -->
+## 2 Sep 2024: Expanded extents data processing is currently paused, with data available to May 2024
 
 This year, we [expanded the processing extents](/guides/reference/ard-expanded-processing-extent/) for our [Surface Reflectance products](/data/category/dea-surface-reflectance/) and derivative products.
 
