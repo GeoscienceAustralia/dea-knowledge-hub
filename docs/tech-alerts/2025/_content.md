@@ -318,8 +318,3 @@ Digital Earth Australia’s Sentinel-2A data products will stop publishing data 
 
 The affected services will be updated once the issue is resolved. 
 
-## 2 Sep 2024: Expanded extents data processing is currently paused, with data available to May 2024
-
-This year, we [expanded the processing extents](/guides/reference/ard-expanded-processing-extent/) for our [Surface Reflectance products](/data/category/dea-surface-reflectance/) and derivative products.
-
-Unfortunately, due to unanticipated issues with an external network connection, we have needed to pause the back-processing of this expanded extent data since May 2024. You may have noticed this issue, for example, if you attempted to access ARD from the Heard Island and McDonald Islands and found that there are no images more recent than May 2024.
