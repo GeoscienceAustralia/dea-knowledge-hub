@@ -7,7 +7,7 @@ The following Tech Alerts were posted to this page in the previous year. To read
 
 | Date&nbsp;posted | Title of Tech Alert |
 |---|---|
-| 18 Dec 2025 | Shutdown period |
+| 18 Dec 2025 | Shutdown period (Resumed) |
 | 17 Dec 2025 | New release &mdash; Digital Earth Australia Coastal Ecosystems |
 | 18 Nov 2025 | Digital Earth access to Landsat 8 and 9 data restored |
 | 20 Oct 2025 | Landsat production currently impacted by outage (Resolved) |
