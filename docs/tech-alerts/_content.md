@@ -1,7 +1,7 @@
 % See the DEA Tech Alerts documentation:
 % https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/tech_alerts_changelog.html
 
-## 18 Dec 2025: Shutdown period
+## 18 Dec 2025: Shutdown period (Resumed)
 
 Geoscience Australia observes an agency-wide shut down between 24 December 2025 and 5 January 2026. Just like previous years, during this time, our products remain active and accessible; however, no active monitoring or user support will be provided during this period. Should any service interruptions occur, they will be addressed as soon as possible once operations resume on 5 January 2026.
 
