@@ -318,7 +318,7 @@ Digital Earth Australia’s Sentinel-2A data products will stop publishing data 
 
 The affected services will be updated once the issue is resolved. 
 
-## 2 Sep 2024: Expanded extents data processing is currently paused, with data available to May 2024 <!-- NOTE Remember to remove the banner on the page: https://pr-302-preview.khpreview.dea.ga.gov.au/guides/reference/ard-expanded-processing-extent/ -->
+## 2 Sep 2024: Expanded extents data processing is currently paused, with data available to May 2024
 
 This year, we [expanded the processing extents](/guides/reference/ard-expanded-processing-extent/) for our [Surface Reflectance products](/data/category/dea-surface-reflectance/) and derivative products.
 
