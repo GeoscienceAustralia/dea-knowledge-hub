@@ -116,7 +116,7 @@ To stream COG versions of DEA data, you will need to identify the data layers by
 For example, the 2021 DEA Coastal Ecosystems classification layer is named
 
 ```text
-ga_s2_coastalecosystems_cyear_3_v1-0-0_AU_2021-P1Y_final_classification.tif
+ga_s2_coastalecosystems_cyear_3_v1-0-0_AU_2021--P1Y_final_classification.tif
 ```
 
 ## Processing steps
