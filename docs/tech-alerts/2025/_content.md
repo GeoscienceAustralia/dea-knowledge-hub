@@ -23,11 +23,9 @@ The product is derived from a national training dataset of more than 40,000 expe
 
 [View the Tech Alert](https://communication.ga.gov.au/link/id/zzzz694216cf55920714Pzzzz6567c8b713b5b826/page.html)
 
-## 19 Nov 2025: The Landsat 9 satellite experienced an interruption in October but has since resumed normal operations
+## 19 Nov 2025: The Landsat 9 satellite outage 17-23 October 2025 (Resolved)
 
 The Landsat 9 satellite's image collection was briefly interrupted in October due to a technical issue. During this interruption, the satellite did not collect any imagery data.
-
-The duration of the interruption is as follows.
 
 > The safehold lasted for six days. It began on Friday, October 17, 2025 (DOY 290) at 11:31 a.m. CDT (16:31z), and the mission returned to nominal spacecraft operations at 11:37 a.m. CDT (16:37z) on October 23, 2025 (DOY 296). Nominal science mission operations and data collection resumed after system checkouts were successful.  
 
