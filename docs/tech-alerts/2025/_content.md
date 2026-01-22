@@ -23,6 +23,18 @@ The product is derived from a national training dataset of more than 40,000 expe
 
 [View the Tech Alert](https://communication.ga.gov.au/link/id/zzzz694216cf55920714Pzzzz6567c8b713b5b826/page.html)
 
+## 19 Nov 2025: The Landsat 9 satellite experienced an interruption in October but has resumed normal operations
+
+The Landsat 9 satellite's image collection was briefly interrupted in October due to a technical issue. During this interruption, the satellite did not collect any imagery data.
+
+The duration of the interruption is provided by USGS:
+
+> The safehold lasted for six days. It began on Friday, October 17, 2025 (DOY 290) at 11:31 a.m. CDT (16:31z), and the mission returned to nominal spacecraft operations at 11:37 a.m. CDT (16:37z) on October 23, 2025 (DOY 296). Nominal science mission operations and data collection resumed after system checkouts were successful.  
+
+([Source: USGS](https://www.usgs.gov/landsat-missions/news/landsat-9-returns-normal-operations-following-brief-safehold))
+
+For more information, see the USGS news item: [Landsat 9 Returns to Normal Operations Following Brief Safehold](https://www.usgs.gov/landsat-missions/news/landsat-9-returns-normal-operations-following-brief-safehold)
+
 ## 18 Nov 2025: Digital Earth access to Landsat 8 and 9 data restored
 
 Geoscience Australia access to Landsat 8 and 9 data has been restored following the reopening of the US Government.
