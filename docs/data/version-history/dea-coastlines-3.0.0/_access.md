@@ -10,7 +10,7 @@ DEA Coastlines data for the entire Australian coastline is available to download
 
 To download DEA Coastlines data:
 
-1. Click the [Link to data](https://data.dea.ga.gov.au/?prefix=derivative/dea_coastlines/3-1-0/) link above
+1. Click the [Link to data](https://data.dea.ga.gov.au/?prefix=derivative/dea_coastlines/3-0-0/) link above
 1. Click on either the OGC GeoPackage (`coastlines_*.gpkg`) or Esri Shapefiles (`coastlines_*.shp.zip`) to download the data to your computer.
 1. If you downloaded the Esri Shapefiles data, unzip the zip file by right clicking on the downloaded file and selecting **Extract all**.
 
