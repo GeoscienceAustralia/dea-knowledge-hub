@@ -118,6 +118,9 @@ previous_versions:
   - version_number: 3.0.0
     title: DEA Coastlines
     slug: dea-coastlines-3.0.0
+  - version_number: 2.2.0
+    title: DEA Coastlines
+    slug: dea-coastlines-2.2.0
 
 # SEO
 
