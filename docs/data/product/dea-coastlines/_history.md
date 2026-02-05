@@ -1,5 +1,10 @@
 ## Changelog
 
+### DEA Coastlines 3.1.0 and 2025 annual data
+
+In April 2025, the DEA Coastlines product [was upgraded to version 3.1.0](https://github.com/GeoscienceAustralia/dea-coastlines/releases/tag/3.1.0). 
+This upgrade consists of the addition of interim annual shoreline data for 2025. The 2025 shoreline is interim data that is subject to change, and will be updated to a final version in the next DEA Coastlines upgrade (April 2027). You are now able to [access the latest data](./?tab=access) via DEA Maps and other methods. 
+
 ### 10 Sep 2025: DEA data in the Digital Atlas of Australia
 
 The [DEA Coastlines](/data/product/dea-coastlines/), [DEA Mangroves](/data/product/dea-mangroves/), and [DEA Water Observations Multi-Year Summary](/data/product/dea-water-observations-statistics-landsat/) datasets have now been added to the Digital Atlas, joining [DEA Land Cover](/data/product/dea-land-cover-landsat/). This integration marks a significant milestone in how DEA data can be accessed, visualised, and applied. By embedding DEA products into the Digital Atlas, users can now interact with trusted Earth observation datasets alongside other authoritative national data — unlocking powerful new opportunities for cross-sector analysis and decision-making. 
