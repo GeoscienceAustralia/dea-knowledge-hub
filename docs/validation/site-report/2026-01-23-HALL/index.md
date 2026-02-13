@@ -81,6 +81,9 @@ A plot of Satellite Surface Reflectance versus Field Site Surface Reflectance on
 The solid line represents the one-to-one equality between field and satellite measurements.
 The black dots are the values from all field site measurements prior to this date.
 The line of best fit is not shown, but its parameters are given in the bottom-right corner.
+:::
+::::
+:::::
 
 ## Fractional Cover
 
