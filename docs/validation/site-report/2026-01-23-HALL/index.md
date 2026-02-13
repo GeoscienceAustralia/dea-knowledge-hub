@@ -82,10 +82,6 @@ The solid line represents the one-to-one equality between field and satellite me
 The black dots are the values from all field site measurements prior to this date.
 The line of best fit is not shown, but its parameters are given in the bottom-right corner.
 
-:::
-::::
-:::::
-
 ## Fractional Cover
 
 The following figures provide a comparison of Fractional Cover derived from Landsat and
@@ -109,6 +105,10 @@ The four panels show FC values for today (blue) and previous (black) field site 
 The solid line represents that one-to-one equality between field and satellite measurements.
 Error bars are shown with today's data, which represent the variation in the pixel values over
 the field site.
+
+:::
+::::
+:::::
 
 % :::{tags} validation, site_validation, mullion_validation, landsat_8_validation
 % :::
