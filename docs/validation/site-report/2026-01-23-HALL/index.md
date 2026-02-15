@@ -84,7 +84,6 @@ The line of best fit is not shown, but its parameters are given in the bottom-ri
 
 :::
 ::::
-
 :::::
 
 ## Fractional Cover
@@ -92,9 +91,10 @@ The line of best fit is not shown, but its parameters are given in the bottom-ri
 The following figures provide a comparison of Fractional Cover derived from Landsat and
 field data. (Click a figure to view it at full size.)
 
-:::::{grid} 1 2
+:::::{grid} 1 1 2 2
 ::::{grid-item}
 :::{figure} ./FCStats-2026-01-23-HALL.png
+
 Rows show results for Bare Soil (BS), Non-Photosynthetic Vegetation (NPV), Photosynthetic
 Vegetation (PV) and Unmixing Error (UE), respectively. The left column shows the range of FC
 values, on a pixel-by-pixel basis, using the satellite data. The middle panels show the 
