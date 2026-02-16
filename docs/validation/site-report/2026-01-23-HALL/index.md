@@ -25,7 +25,7 @@ These variables and environmental factors were present on the day the data were 
 "Matchup quality","Mediocre"
 :::
 
-## Results
+## Surface Reflectance Results
 
 The surface reflectance statistics collected on this day are grouped into bands.
 This allows the data to be used to validate Geoscience Australia's other datasets that use the same standardised bands.
@@ -51,7 +51,7 @@ This allows the data to be used to validate Geoscience Australia's other dataset
 
 ## Figures
 
-The following figures provide visual representations of the data. (Click a figure to view it at full size.)
+The following figures provide visual representations of the surface reflectance data. (Click a figure to view it at full size.)
 
 :::::{grid} 1 1 2 3
 ::::{grid-item}
@@ -88,13 +88,17 @@ The line of best fit is not shown, but its parameters are given in the bottom-ri
 
 ## Fractional Cover
 
-The following figures provide a comparison of Fractional Cover derived from Landsat and
-field data. (Click a figure to view it at full size.)
+[DEA Fractional Cover (FC)](https://www.ga.gov.au/scientific-topics/dea/dea-data-and-products/dea-fractional-cover)
+is a derivative product, based on measured surface reflectance. Here, we apply
+the same processing to the field measurements to compare the satellite- and
+field-derived FC values. There is currently no FC product based on Sentinel
+measurements, so we only validate Landsat-derived FC.
+The following figures provide a comparison of FC
+derived from Landsat and field data, where available. (Click a figure to view it at full size.)
 
-:::::{grid} 1 1 2 2
+:::::{grid} 1 2
 ::::{grid-item}
 :::{figure} ./FCStats-2026-01-23-HALL.png
-
 Rows show results for Bare Soil (BS), Non-Photosynthetic Vegetation (NPV), Photosynthetic
 Vegetation (PV) and Unmixing Error (UE), respectively. The left column shows the range of FC
 values, on a pixel-by-pixel basis, using the satellite data. The middle panels show the 
@@ -111,10 +115,6 @@ The solid line represents that one-to-one equality between field and satellite m
 Error bars are shown with today's data, which represent the variation in the pixel values over
 the field site.
 
-:::
-::::
-:::::
-
-% :::{tags} validation, site_validation, mullion_validation, landsat_8_validation
+% :::{tags} validation, site_validation, landsat_8_validation, sentinel_2_validation
 % :::
     
