@@ -2,6 +2,14 @@
 
 <span id="v4.0.0"></span>
 
+### 16 Feb 2026: Issue notification removed
+
+A potential issue was identified in September 2024 affecting the [DEA Geometric Median and Median Absolute Deviation (Landsat)](/data/product/dea-geometric-median-and-median-absolute-deviation-landsat/) product. A bug in the processing code related to multithreading with `numexpr` may have caused a 400 × 400 pixel data block to be misplaced (effectively, duplicated) within a small number of tiles.
+Initial estimates suggested that approximately 8–12 tiles across the full GeoMAD archive could have been affected; however, the specific tiles were unknown. 
+The underlying cause was subsequently identified and fixed in the codebase.
+In late 2025, the entire GeoMAD data repository was programmatically reviewed to detect any duplicated 400 × 400 pixel data blocks within each tile, excluding blocks that were fully no‑data. No evidence of affected tiles was found.
+Based on this investigation, the issue is now considered resolved, and the notification has been moved to the change log.
+
 ### 30 Apr 2025: The 2024 annual data is now available
 
 The 2024 annual data for this product was published on 30 April 2025. You are now able to [access the latest data](./?tab=access) via DEA Maps and other methods. [View the Tech Alert](https://communication.ga.gov.au/link/id/zzzz6811775c5a24b812Pzzzz6567c8b713b5b826/page.html).
