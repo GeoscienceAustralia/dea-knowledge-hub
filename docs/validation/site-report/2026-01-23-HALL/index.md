@@ -3,7 +3,8 @@
 This is a report of the field data collected on 23 January 2026 at the location of CSIRO Hall
 to validate the satellite data of the Landsat 8 overpass.
 The full collection of data is contained in the [National Spectral Database](https://www.ga.gov.au/scientific-topics/dea/dea-data-and-products/national-spectral-database).
-Satellite data can be found on [DEA maps](https://maps.dea.ga.gov.au/).
+Satellite data can be found on [DEA maps](https://maps.dea.ga.gov.au/). An explanation of how to read these reports can be found on the
+[Daily Validation Summary Reports](https://knowledge.dea.ga.gov.au/guides/setup/validation/daily-summary-reports/) page.
 
 :::{contents} In this report
 :local:
