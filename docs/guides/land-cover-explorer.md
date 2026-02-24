@@ -1,5 +1,13 @@
 # Land Cover Explorer
 
+TESTS:
+
+* Target &mdash; [DEA Maps](#dea-maps)
+* `root:` &mdash; [DEA Coastlines](root:data/product/dea-coastlines/)
+* `root:` &mdash; [DEA Coastlines](root:data/product/dea-coastlines/#key-specifications)
+* `root:` &mdash; [DEA Coastlines](root:data/product/dea-coastlines/?tab=specifications)
+* `root:` &mdash; [DEA Coastlines](root:data/product/dea-coastlines/?tab=specifications#product-information)
+
 [Land Cover Explorer][Explorer] is a web application in the [Digital Atlas of Australia](https://digital.atlas.gov.au/), developed by Esri. It allows you to navigate and visualise the [DEA Land Cover][LandCover] datasets. (This is an easy alternative to [plotting Land Cover data yourself](/notebooks/DEA_products/DEA_Land_Cover/).)
 
 :::{admonition} Start exploring
