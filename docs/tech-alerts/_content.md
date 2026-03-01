@@ -5,13 +5,25 @@
 
 Digital Earth Australia (DEA) has removed more than 87,000 redundant Near-Real Time (NRT) data tiles from our Surface Reflectance data to ensure consistency within the definitive DEA tile set.
 
-NRT is the [rapid dataset maturity level](/guides/reference/dataset_maturity_guide/) produced within 48 hours of image capture, but it is considered of lower quality than our final Anaysis Ready Data (ARD) products. These NRT data are later converted to the definitive or ‘final’ maturity level when high quality ancillary data is available.
+NRT is the [rapid dataset maturity level](/guides/reference/dataset_maturity_guide/) produced within 48 hours of image capture, but it is considered of lower quality than our final Anaysis Ready Data (ARD) products. These NRT data are later converted to the definitive or ‘final’ maturity level when high quality ancillary data is available.
 
 To better manage our data and improve system processing we have begun cleaning up these redundant packets that have been superseded by the final definitive data.
 
+We have also updated the processing tile sets for Landsat and Sentinel-2 and synchronised the [NCI](https://explorer.nci.dea.ga.gov.au/products) and [AWS](https://explorer.dea.ga.gov.au/products) processing so both services now work off the same core tile set.
+
+For the Landsat tile set there will be additional tiles processed to AWS while for Sentinel-2 some tiles will be removed as well as some tiles added. This will result in a net reduction in the number of tiles processed to AWS, and a minor net-gain for NCI. The majority of the NRT tiles are over the ocean and deemed unlikely to include relevant EO data.  
+
+By removing the old NRT data and synchronising NCI and AWS tile processing we will provide better overall data management and consistency across these DEA services.  
+
+This process has been completed and we will continue to monitor the changes into the near future.  
+
 ![](/_files/tech-alerts/2026-03-02-nrt-data-removed.jpeg)
 
-The DEA Landsat and Sentinel tile grids showing redundant tiles that have been removed circled in red.
+<figure>
+    <figcaption>The DEA Landsat and Sentinel tile grids showing redundant tiles that have been removed circled in red.</figcaption>
+</figure>
+
+[View the Tech Alert](https://communication.ga.gov.au/link/id/zzzz699fea3b3ab52484Pzzzz61de67bd94bfe861/page.html)
 
 ## Summary of DEA Tech Alerts 2025
 
