@@ -1,4 +1,4 @@
-:::{include} ../../../_components/sentinel-2c-replace-2a-alert.md
+:::{include} ../../../_components/sentinel-2a-re-enabled-alert.md
 :::
 
 ## About

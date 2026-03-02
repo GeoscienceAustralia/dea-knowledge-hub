@@ -1,6 +1,8 @@
 % See the DEA Tech Alerts documentation:
 % https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/tech_alerts_changelog.html
 
+(s2a-re-enabled-tech-alert)=
+
 ## 2 Mar 2026: New Sentinel-2A ARD made available after mission continuation
 
 DEA has reenabled Sentinel-2A data following the European Space Agency (ESA) announcing in early 2025 the satellite mission will continue in a modified orbit adjacent to Sentinel-2B.
