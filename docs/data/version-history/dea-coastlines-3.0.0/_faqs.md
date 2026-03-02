@@ -12,6 +12,14 @@ Cloud cover can also reduce the accuracy of the product by reducing the availabi
 For detailed information about the accuracy and limitations of DEA Coastlines, refer to the [Quality tab](./?tab=quality).
 :::
 
+:::{dropdown} DEA Coastlines 2021 dataset incorporates Landsat 9 data and uses a new tidal model. How might this affect my pre-2020 modelling?
+The addition of Landsat 9 satellite data to the underlying source data of DEA Coastlines will affect all annual shorelines from 2021 onwards. The additional data is expected to improve the overall quality of the annual shorelines by providing cleaner and more stable annual layers.
+
+The integration of a new global tidal model (FES2014) may result in minor changes to the product’s historical coastlines and derived rates of coastal change. These changes are likely to be greatest in macrotidal regions of Australia such as north-western Western Australia and central Queensland. A comparison of annual shoreline accuracy at the microtidal Narrabeen Beach in Sydney shows consistent results between DEA Coastlines version 1.1.0 and the newer version 2.0.0.
+
+Where specific changes or issues have been identified, they are noted on this product page.
+:::
+
 :::{dropdown} What causes changing coastlines?
 DEA Coastlines presents a historical record of coastal change since 1988 – it does not assign a reason or cause for coastal change or make predictions about future patterns or rates of coastal change.
 
