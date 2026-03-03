@@ -1,28 +1,6 @@
 % See the DEA Tech Alerts documentation:
 % https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/tech_alerts_changelog.html
 
-(s2a-re-enabled-tech-alert)=
-
-## 3 Mar 2026: New Sentinel-2A ARD made available after mission continuation
-
-DEA has reenabled Sentinel-2A (S2A) data following the European Space Agency (ESA) announcing in early 2025 the satellite mission [will continue in a modified orbit adjacent to Sentinel-2B (S2B)](https://dataspace.copernicus.eu/news/2025-1-27-sentinel-2a-exceptional-temporary-extension-campaign-starting-march-2025).
-
-This extended campaign includes a unique tandem acquisition period between January and March 2026. This will allow the two satellites to capture scenes in nearly identical conditions, further enhancing radiometric performance and consistency. You can read more at the [Copernicus Data Space Ecosystem website](https://dataspace.copernicus.eu/news/2025-12-19-sentinel-2a-and-sentinel-2b-tandem-acquisitions) and [here](https://sentiwiki.copernicus.eu/web/s2-mission).
-
-The current estimate of the S2A datasets to be added to the collection as of 09/02/2026 is around 28,000. For comparison, the numbers of Sentinel-2B and Sentinel-2C datasets for the same period are 66,011 and 63,449 respectively. 
-
-Sentinel-2A has been collecting data for nearly 12 months. This data will now be added to our ARD collection. 
-
-The additional S2A datasets are now available. You can now see the temporary tandem acquisitions of S2A and S2B swaths on [DEA Maps](https://maps.dea.ga.gov.au/#share=s-t7l2lP0FPHEW2eWsC9a6ez4AupT).
-
-Even though Sentinel-2A is now on the modified orbit following Sentinel-2B, the orbital parameters of the satellite remain largely unchanged.  
-
-DEA users with existing workflows consuming Sentinel-2B and Sentinel-2C data should not see any impact, and no further action should be required. However, users running automatic workflows that are not filtering out Sentinel-2A data may see an uptick in data volume as we process and publish our Sentinel-2A data backlog. 
-
-If you do not want to process these S2A data in your workflows, please make sure to exclude them. 
-
-[View the Tech Alert](https://communication.ga.gov.au/link/id/zzzz69a654f53b90d720Pzzzz61de67bd94bfe861/page.html)
-
 ## 3 Mar 2026: Redundant Sentinel-2 Near Real Time data removed
 
 Digital Earth Australia (DEA) has removed more than 87,000 redundant Near-Real Time (NRT) data tiles from our Surface Reflectance data to ensure consistency within the definitive DEA tile set.
@@ -48,6 +26,28 @@ This process has been completed and we will continue to monitor the changes into
 <figure>
     <figcaption>The DEA Landsat and Sentinel tile grids showing redundant tiles that have been removed circled in red.</figcaption>
 </figure>
+
+[View the Tech Alert](https://communication.ga.gov.au/link/id/zzzz69a654f53b90d720Pzzzz61de67bd94bfe861/page.html)
+
+(s2a-re-enabled-tech-alert)=
+
+## 3 Mar 2026: New Sentinel-2A ARD made available after mission continuation
+
+DEA has reenabled Sentinel-2A (S2A) data following the European Space Agency (ESA) announcing in early 2025 the satellite mission [will continue in a modified orbit adjacent to Sentinel-2B (S2B)](https://dataspace.copernicus.eu/news/2025-1-27-sentinel-2a-exceptional-temporary-extension-campaign-starting-march-2025).
+
+This extended campaign includes a unique tandem acquisition period between January and March 2026. This will allow the two satellites to capture scenes in nearly identical conditions, further enhancing radiometric performance and consistency. You can read more at the [Copernicus Data Space Ecosystem website](https://dataspace.copernicus.eu/news/2025-12-19-sentinel-2a-and-sentinel-2b-tandem-acquisitions) and [here](https://sentiwiki.copernicus.eu/web/s2-mission).
+
+The current estimate of the S2A datasets to be added to the collection as of 09/02/2026 is around 28,000. For comparison, the numbers of Sentinel-2B and Sentinel-2C datasets for the same period are 66,011 and 63,449 respectively. 
+
+Sentinel-2A has been collecting data for nearly 12 months. This data will now be added to our ARD collection. 
+
+The additional S2A datasets are now available. You can now see the temporary tandem acquisitions of S2A and S2B swaths on [DEA Maps](https://maps.dea.ga.gov.au/#share=s-t7l2lP0FPHEW2eWsC9a6ez4AupT).
+
+Even though Sentinel-2A is now on the modified orbit following Sentinel-2B, the orbital parameters of the satellite remain largely unchanged.  
+
+DEA users with existing workflows consuming Sentinel-2B and Sentinel-2C data should not see any impact, and no further action should be required. However, users running automatic workflows that are not filtering out Sentinel-2A data may see an uptick in data volume as we process and publish our Sentinel-2A data backlog. 
+
+If you do not want to process these S2A data in your workflows, please make sure to exclude them. 
 
 [View the Tech Alert](https://communication.ga.gov.au/link/id/zzzz69a654f53b90d720Pzzzz61de67bd94bfe861/page.html)
 
