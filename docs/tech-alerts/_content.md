@@ -3,6 +3,12 @@
 
 ## 3 Mar 2026: Redundant Sentinel-2 Near Real Time data removed
 
+![](/_files/tech-alerts/2026-03-03-nrt-data-removed.jpeg)
+
+<figure>
+    <figcaption>The DEA Landsat and Sentinel tile grids showing redundant tiles that have been removed circled in red.</figcaption>
+</figure>
+
 Digital Earth Australia (DEA) has removed more than 87,000 redundant Near-Real Time (NRT) data tiles from our Surface Reflectance data to ensure consistency within the definitive DEA tile set.
 
 NRT is the [rapid dataset maturity level](/guides/reference/dataset_maturity_guide/) produced within 48 hours of image capture, but it is considered of lower quality than our final Anaysis Ready Data (ARD) products. These NRT data are later converted to the definitive or ‘final’ maturity level when high quality ancillary data is available.
@@ -20,12 +26,6 @@ For the Landsat tile set there will be additional tiles processed to AWS while f
 By removing the old NRT data and synchronising NCI and AWS tile processing we will provide better overall data management and consistency across these DEA services.  
 
 This process has been completed and we will continue to monitor the changes into the near future.  
-
-![](/_files/tech-alerts/2026-03-03-nrt-data-removed.jpeg)
-
-<figure>
-    <figcaption>The DEA Landsat and Sentinel tile grids showing redundant tiles that have been removed circled in red.</figcaption>
-</figure>
 
 [View the Tech Alert](https://communication.ga.gov.au/link/id/zzzz69a654f53b90d720Pzzzz61de67bd94bfe861/page.html)
 
