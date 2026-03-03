@@ -91,6 +91,7 @@ The line of best fit is not shown, but its parameters are given in the bottom-ri
 
 A more detailed description of these results can be found at
 [Daily Validation Summary Reports](https://knowledge.dea.ga.gov.au/guides/setup/validation/daily-summary-reports/).
+
 [DEA Fractional Cover (FC)](https://www.ga.gov.au/scientific-topics/dea/dea-data-and-products/dea-fractional-cover)
 is a derivative product, based on measured surface reflectance. Here, we apply
 the same processing to the field measurements to compare the satellite- and
