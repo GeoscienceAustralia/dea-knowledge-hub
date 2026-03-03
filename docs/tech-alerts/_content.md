@@ -27,7 +27,7 @@ By removing the old NRT data and synchronising NCI and AWS tile processing we wi
 
 This process has been completed and we will continue to monitor the changes into the near future.  
 
-[View the Tech Alert](https://communication.ga.gov.au/link/id/zzzz69a654f53b90d720Pzzzz61de67bd94bfe861/page.html)
+[View the Tech Alert](https://communication.ga.gov.au/link/id/zzzz69a66543ec0f4562Pzzzz6567c8b713b5b826/page.html)
 
 (s2a-re-enabled-tech-alert)=
 
@@ -49,7 +49,7 @@ DEA users with existing workflows consuming Sentinel-2B and Sentinel-2C data sho
 
 If you do not want to process these S2A data in your workflows, please make sure to exclude them. 
 
-[View the Tech Alert](https://communication.ga.gov.au/link/id/zzzz69a654f53b90d720Pzzzz61de67bd94bfe861/page.html)
+[View the Tech Alert](https://communication.ga.gov.au/link/id/zzzz69a66543ec0f4562Pzzzz6567c8b713b5b826/page.html)
 
 ## Summary of DEA Tech Alerts 2025
 
