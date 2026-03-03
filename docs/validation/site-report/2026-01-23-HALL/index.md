@@ -89,15 +89,19 @@ The line of best fit is not shown, but its parameters are given in the bottom-ri
 
 ## Fractional Cover
 
+A more detailed description of these results can be found at
+[Daily Validation Summary Reports](https://knowledge.dea.ga.gov.au/guides/setup/validation/daily-summary-reports/).
 [DEA Fractional Cover (FC)](https://www.ga.gov.au/scientific-topics/dea/dea-data-and-products/dea-fractional-cover)
 is a derivative product, based on measured surface reflectance. Here, we apply
 the same processing to the field measurements to compare the satellite- and
-field-derived FC values. There is currently no FC product based on Sentinel
+field-derived FC values. Please note, this is not validation of DEA Fractional Cover,
+but rather quantifying the differences between field and satellite measurements an
+their impact on derivative products. There is currently no FC product based on Sentinel
 measurements, so we only validate Landsat-derived FC.
 The following figures provide a comparison of FC
 derived from Landsat and field data, where available. (Click a figure to view it at full size.)
 
-:::::{grid} 1 1 2 2
+:::::{grid} 1 2
 ::::{grid-item}
 :::{figure} ./FCStats-2026-01-23-HALL.png
 Rows show results for Bare Soil (BS), Non-Photosynthetic Vegetation (NPV), Photosynthetic
