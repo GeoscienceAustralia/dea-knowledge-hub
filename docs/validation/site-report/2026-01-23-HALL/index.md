@@ -101,7 +101,7 @@ measurements, so we only validate Landsat-derived FC.
 The following figures provide a comparison of FC
 derived from Landsat and field data, where available. (Click a figure to view it at full size.)
 
-:::::{grid} 1 2
+:::::{grid} 1 1 2 2
 ::::{grid-item}
 :::{figure} ./FCStats-2026-01-23-HALL.png
 Rows show results for Bare Soil (BS), Non-Photosynthetic Vegetation (NPV), Photosynthetic
@@ -126,4 +126,3 @@ the field site.
 
 % :::{tags} validation, site_validation, landsat_8_validation, sentinel_2_validation
 % :::
-    
