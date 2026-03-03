@@ -17,7 +17,7 @@ View the [Daily Validation Summary Reports](/validation/daily-report/)
 
 A Daily Validation Summary Report gives a summary of the results from a single comparison of ground-based (or occasionally drone-based) data with satellite-based overpass data. The Landsat 8/9 and Sentinel-2A/-2B/-2C satellite data is used. DEA's Surface reflectance products (i.e. NBAR/NBART) are used for these comparisons. This comparison of field vs satellite data can be evaluated alongside the Daily Validation Summary Reports of previous days. 
 
-Here’s one example of a Daily Validation Summary Report: [2023-11-27](/validation/daily-report/2023-11-27/). 
+Here’s one example of a Daily Validation Summary Report: [2023-07-25](/validation/daily-report/2023-07-25/). 
 
 This guide will help you understand each of the sections of this report and the data it contains. 
 
