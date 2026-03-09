@@ -7,9 +7,13 @@ This page is a list of academic articles, peer-reviewed presentations, and other
 :backlinks: none
 :::
 
+## 2026 
+
+Adame, M.F., Kavehei, E., Dunn, B., Jackson, S., Duncan, P., Minjerribah-Moorgumpin Elders in Council, Cahill, J., Nadji, N., Brown, C.J., Lymburner, L., 2026. Improving wetland management through First Nations’ knowledge and a spatial visualisation tool. Ambio 2026, <https://doi.org/10.1007/s13280-025-02326-2>
+
 ## 2025
 
-Asbridge, E., Krause, C., Lucas, R., Owers, C. J., Rogers, K., Lymburner, L., Mueller, N., Ai, E., Wong, S., 2025. Characterising the short- and long-term impacts of tropical cyclones on mangroves using the Landsat archive. Cambridge Prisms: Coastal Futures, 3, p. e4. <https://doi.org/10.1017/cft.2024.19>
+Asbridge, E., Krause, C., Lucas, R., Owers, C. J., Rogers, K., Lymburner, L., Mueller, N., Ai, E., Wong, S., 2025. Characterising the short- and long-term impacts of tropical cyclones on mangroves using the Landsat archive. Cambridge Prisms: Coastal Futures, 3, p. e4., <https://doi.org/10.1017/cft.2024.19>
 
 Bishop-Taylor, R., Phillips, C., Sagar, S., Newey, V., & Sutterley, T., 2025. eo-tides: Tide modelling tools for large-scale satellite Earth observation analysis. Journal of Open Source Software, 10(109), 7786, <https://doi.org/10.21105/joss.07786>
 
