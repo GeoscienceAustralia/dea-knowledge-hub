@@ -96,7 +96,7 @@ Instead, the SR data from both satellite and field are processed through the sam
 measurements will highlight the effect of these differences on the FC product, providing a measure of the robustness of FC.
 There is currently no FC product based on Sentinel measurements, so only Landsat-derived FC is tested.
 
-* **Figure 4** &mdash; A comparison between the satellite- and field-based results for FC, separated into Bare Soil (BS; top row), Non-Photosynthetis Vegetation (NPV; upper row),
+* **Figure 4** &mdash; A comparison between the satellite- and field-based results for FC, separated into Bare Soil (BS; top row), Non-Photosynthetic Vegetation (NPV; upper row),
 Photosynthetic Vegetation (PV; lower row) and Unmixing Error (UE, bottom row). Each coloured pixel corresponds to the value at the location of the Landsat pixel derived either from
 Landsat or field-based measurements, where each pixel is 30 x 30m. The left column shows FC values based on the Landsat data (ie. the FC product), with the colours representing the fractional
 percent contribution of each parameter. In this example, green is equivalent to approximately 21% BS, 65% NPV and 13.5% PV, with UE between 7-8%. The middle column shows the difference between
