@@ -87,3 +87,34 @@ The figures provided in this report are as follows.
     :alt: Figure 3 of the Daily validation summary report
     :figwidth: 450px
     :::
+
+## Fractional Cover
+
+[DEA Fractional Cover (FC)](https://www.ga.gov.au/scientific-topics/dea/dea-data-and-products/dea-fractional-cover) is a derivative product, based on measured surface reflectance.
+Since there is no agreed upon measurement standard of FC for the purposes of validating each site, the results presented here do not provide definitive validation of the FC product.
+Instead, the SR data from both satellite and field are processed through the same pipeline that generates the FC product. In this way, any differences between satellite- and field-based
+measurements will highlight the effect of these differences on the FC product, providing a measure of the robustness of FC.
+There is currently no FC product based on Sentinel measurements, so only Landsat-derived FC is tested.
+
+* **Figure 4** &mdash; A comparison between the satellite- and field-based results for FC, separated into Bare Soil (BS; top row), Non-Photosynthetic Vegetation (NPV; upper row),
+Photosynthetic Vegetation (PV; lower row) and Unmixing Error (UE, bottom row). Each coloured pixel corresponds to the value at the location of the Landsat pixel derived either from
+Landsat or field-based measurements, where each pixel is 30 x 30m. The left column shows FC values based on the Landsat data (ie. the FC product), with the colours representing the fractional
+percent contribution of each parameter. In this example, green is equivalent to approximately 21% BS, 65% NPV and 13.5% PV, with UE between 7-8%. The middle column shows the difference between
+Landsat- and field-derived FC, as a percentage. The colours of the pixels, together with the scale on the colour wedge indicate how much difference and how much spread there is between Landsat-
+and field-based measurements, in terms of FC. The right-hand column shows histograms of the scatter of pixel value differences, together with statistics of the
+mean, standard deviation (SD) and median. In this example, it can be seen that the BS and NPV values derived from field measurements are lower than those values
+derived from satellite measurements, whereas the opposite is true for PV.
+
+    :::{figure} /_files/validation/Daily_Summary_Report_Figure_4_FCStats-2026-01-17-HALL.png
+    :alt: Figure 4 of the Daily Summary Report
+    :figwidth: 450px
+    :::
+
+* **Figure 5** &mdash; A comparison between all satellite and field-based results for FC, with previous data shown as black dots and current data shown as blue dots with uncertainties.
+The dashed line in each panel represents the line of equality between satellite and field results and is NOT the line of best fit.
+
+    :::{figure} /_files/validation/Daily_Summary_Report_Figure_5_FC-2026-01-17-HALL.png
+    :alt: Figure 5 of the Daily Summary Report
+    :figwidth: 450px
+    :::
+
