@@ -1,6 +1,6 @@
 ## Background
 
-These are the statistics generated from the DEA Water Observations (Water Observations from Space) suite of products, which gives summaries of how often surface water was observed by the Landsat satellites for various periods (per year, per season and for the period from 1986 to the present).
+These are the statistics generated from the DEA Water Observations (Water Observations from Space) suite of products, which gives summaries of how often surface water was observed by the Landsat satellites for various periods (per year, per season and for the period from 1986 to near present).
 
 Water Observations Statistics (WO-STATS) provides information on how many times the Landsat satellites were able to clearly see an area, how many times those observations were wet, and what that means for the percentage of time that water was observed in the landscape.
 
@@ -26,10 +26,10 @@ Each dataset in this product consists of the following datasets:
 As no confidence filtering is applied to this product, it is affected by noise where misclassifications have occurred in the input water classifications, and can be difficult to interpret on its own. 
 
 WO-STATS is available in multiple forms, depending on the length of time over which the statistics are calculated. At present the following are available:
-* **DEA WO Multi-Year:** `ga_ls_wo_fq_myear_3`: statistics calculated from the full depth of time series (1986 to 2023) unfiltered
-* **DEA WO Calendar Year:** `ga_ls_wo_fq_cyear_3`: statistics calculated from each calendar year (1986 to 2024)
-* **DEA WO November to March:** `ga_ls_wo_fq_nov_mar_3`: statistics calculated yearly from November to March (1986 to 2025)
-* **DEA WO April to October:** `ga_ls_wo_fq_apr_oct_3`: statistics calculated yearly from April to October (1986 to 2024)
+* **DEA WO Multi-Year:** `ga_ls_wo_fq_myear_3`: statistics calculated from the full depth of time series (1986 to 2025) unfiltered
+* **DEA WO Calendar Year:** `ga_ls_wo_fq_cyear_3`: statistics calculated from each calendar year (1986 to 2025)
+* **DEA WO November to March:** `ga_ls_wo_fq_nov_mar_3`: statistics calculated yearly from November to March (1986 to March 2025)
+* **DEA WO April to October:** `ga_ls_wo_fq_apr_oct_3`: statistics calculated yearly from April to October (1986 to October 2025)
 
 In addition, a confidence-filtered Multi-Year Summary is under development, which will contain a confidence layer and subsequent filtered water frequency layer. This provides a noise-reduced view of the unfiltered multi-year summary.
 
