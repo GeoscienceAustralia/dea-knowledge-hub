@@ -15,7 +15,7 @@ spatial_data_type: RASTER
 
 spatial_coverage: null
 temporal_coverage_start: 1986
-temporal_coverage_end: March 2025
+temporal_coverage_end: 2025
 temporal_coverage_custom: null
 
 data_update_frequency: YEARLY
@@ -102,7 +102,7 @@ access_links_custom:
     name: Annual calendar year summaries since 1986 - AWS access
   - type: data
     link: https://data.dea.ga.gov.au/?prefix=derivative/ga_ls_wo_fq_myear_3/2-0-0/
-    name: All-time summary 1986 to present - AWS access
+    name: All-time summary 1986 to near present - AWS access
   - type: data
     link: https://thredds.nci.org.au/thredds/catalog/jw04/ga_ls_wo_fq_apr_oct_3/catalog.html
     name: Apr-Oct summaries since 1986 - NCI access
@@ -114,7 +114,7 @@ access_links_custom:
     name: Annual calendar year summaries since 1986 - NCI access
   - type: data
     link: https://thredds.nci.org.au/thredds/catalog/jw04/ga_ls_wo_fq_myear_3/catalog.html
-    name: All-time summary 1986 to present - NCI access
+    name: All-time summary 1986 to near present - NCI access
 
   - type: code_example
     link: /notebooks/DEA_products/DEA_Water_Observations/
