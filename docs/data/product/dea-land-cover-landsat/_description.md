@@ -136,7 +136,7 @@ Natural Terrestrial Vegetation (NTV) represents areas that have all or most of t
 
 **Natural Aquatic Vegetation (NAV)**
 
-Natural Aquatic Vegetation (NAV) is associated primarily with wetlands that are dominated by woody or herbaceous vegetation (as with NTV). NAV is generally associated with mangroves, but could also include other types of aquatic vegetation.
+Natural Aquatic Vegetation (NAV) is associated primarily with wetlands that are dominated by woody or herbaceous vegetation (as with NTV). NAV is most commonly associated with mangroves, but may also include other forms of aquatic vegetation occurring within the maximum extent expected from mangroves.
 
 **Artificial Surfaces (AS)** 
 
