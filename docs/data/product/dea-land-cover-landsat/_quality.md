@@ -14,7 +14,7 @@ The NTV category can transition into the NS category between years when a highly
 
 **Natural Aquatic Vegetation (NAV)** 
 
-Currently only mangroves are mapped in the NAV class. Other vegetated natural landscapes (e.g. saltmarsh, river red gum forests in the Murray Valley, surface algae, and other inland wetlands) where water significantly influences edaphic conditions of the substrate are not mapped. This is because in the current implementation the water mask is included to assist in differentiating vegetation and non-vegetation, as the presence of water creates excess noise in the underlying [Fractional Cover](/data/product/dea-fractional-cover-landsat/) product. To reduce this noise, the [DEA Water Observations](/data/category/dea-water-observations/) product is used as a water mask in the Fractional Cover product, and hence it is unlikely to produce the combination of vegetation and water required for the NAV class.
+At Level 3, Natural Aquatic Vegetation (NAV) is represented as a merged class and does not distinguish between woody and herbaceous vegetation types. As a result, mangroves are the dominant vegetation type mapped within this class. However, other forms of natural aquatic vegetation may also be classified as NAV where they occur within the extent typically expected for mangroves.
 
 **Artificial Surfaces (AS)** 
 
@@ -34,13 +34,15 @@ Areas of artificial and natural water are not differentiated, although the exten
 
 Woody discrimination is implemented using the Woody Cover Fraction product (Liao et al, 2020) which models woody cover from inputs of LiDAR including ICESat/GLAS, L-band SAR, field observation, and Landsat satellite data. Issues arise in this dataset in areas dominated by short, woody vegetation such as heathland, and swampy regions with underlying water. Areas of woody savannah are also under-represented due to the influence of the herbaceous underlying cover dominating the observation.
 
+A distinction between woody and herbaceous vegetation within NAV is introduced at Level 4. At this level, woody NAV corresponds to mangroves. Non‑woody (herbaceous) NAV may also be present within the maximum extent in which mangroves can occur. However, the herbaceous NAV has not been independently validated. Consequently, its presence and spatial distribution should be interpreted with caution.
+
 **Vegetation Cover**
 
 The cover of vegetation is derived from the Fractional Cover product (Scarth et al, 2010), and as such it reflects the limitations of that product, mainly difficulty with measurement of non-photosynthetic vegetation, and noise due to the presence of water in a pixel. Therefore, arid areas can be difficult to fully analyse for cover, leading to misclassifications between NTV, NS, and CTV where cover is sparse (lower than 15 %). 
 
 **Water Seasonality**
 
-This product does not yet identify consecutive months but rather the frequency of wet observations in the year, based on the Water Observations product. Therefore, monthly statements are unlikely to be consistent across the continent. Mangroves are currently the only consistently identified NAV and water cannot be easily observed beneath their dense canopies. Hence, the hydro-period (and seasonality metrics) should be treated with some caution. 
+This product does not yet identify consecutive months but rather the frequency of wet observations in the year, based on the Water Observations product. Therefore, monthly statements are unlikely to be consistent across the continent. Water beneath mangroves cannot be easily observed due to their dense canopies. Hence, the hydro-period (and seasonality metrics) should be treated with some caution. 
 
 **Water State**
 
@@ -127,9 +129,9 @@ The result of the availability of these satellites is that the most consistent d
   - Aquatic
   - Mueller et al. (2016)
 
-* - Intertidal Extent Model (ITEM)
+* - National Intertidal Digital Elevation Model (NIDEM)
   - Aquatic
-  - Sagar et al. (2017)
+  - Bishop-Taylor et al. (2018)
 
 * - National Mangrove extent
   - Aquatic
