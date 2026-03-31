@@ -14,14 +14,13 @@ To evaluate the accuracy of DEA Intertidal Elevation, we calculated RMSE, MAE, c
 
 :::{table} Table 1. DEA Intertidal Elevation validation statistics comparing performance across microtidal, mesotidal, and macrotidal coastlines.
 
-|             | Microtidal | Mesotidal | Macrotidal |
+|             | Macrotidal | Mesotidal | Microtidal |
 |-------------|------------|-----------|------------|
-| Correlation | 0.6        | 0.86      | **0.96**   |
-| R-squared   | 0.36       | 0.74      | **0.92**   |
-| RMSE (m)    | 0.28       | **0.27**  | 0.28       |
-| MAE (m)     | 0.21       | 0.21      | **0.20**   |
-| Bias (m)    | 0.14       | 0.16      | **0.12**   |
-| Slope       | 0.44       | 0.80      | **1.03**   |
+| Correlation | 0.90       | 0.96      | 0.61       |
+| R-squared   | 0.80       | 0.93      | 0.37       |
+| RMSE (m)    | 0.32       | 0.33      | 0.27       |
+| MAE (m)     | 0.25       | 0.25      | 0.20       |
+| Bias (m)    | 0.20       | 0.22      | 0.12       |
 :::
 
 :::{figure} /_files/dea-intertidal/tiderangevalidation.*
@@ -34,7 +33,7 @@ Figure 7. DEA Intertidal Elevation validation heatmaps comparing performance acr
 
 * DEA Intertidal covers the exposed intertidal zone which includes sandy beaches and shores, tidal flats and rocky shores and reefs. The model excludes intertidal vegetation communities such as mangroves.
 
-* Model performance improves with increasing tide range, being lowest in microtidal coastlines and highest in mesotidal and macrotidal coastlines. Due to the limited spatial extent of the intertidal zone in microtidal environments and the dominance of non-tidal water level influences (e.g. storm surge and ocean waves in high energy wave dominated environments), DEA Intertidal should be used with caution in microtidal environments. 
+* Although absolute elevation mapping accuracy was similar across all environments, DEA Intertidal's accuracy relative to the total tide range was significantly greater in meso-tidal and macro-tidal environments. Due to the narrow intertidal zone in microtidal environments and the dominance of non-tidal water level influences like storm surge and ocean waves, DEA Intertidal should be used with caution in microtidal environments. 
 
 * DEA Intertidal relies on accurate tide modelling for reliable results. Although the Ensemble Tidal Modelling approach used in this product attempts to obtain the best local tide modelling data for any given location, areas of poor quality tide modelling still remain. This is particularly the case in areas of complex and unpredictable tide dynamics, such as embayments and estuaries where global ocean tide modelling results may produce highly inaccurate outputs. In these environments, modelled elevations and exposure should be used with caution and evaluated with reference to modelled elevation uncertainty data. Examples of areas affected by poor quality tide modelling inputs include: 
 
@@ -44,7 +43,7 @@ Figure 7. DEA Intertidal Elevation validation heatmaps comparing performance acr
     * Van Diemen Gulf, Northern Territory 
     * Torres Strait Islands, Queensland
 
-* Due to biases in the tidal coverage of satellite sensors like Landsat and Sentinel-2, DEA Intertidal outputs are unlikely to cover the full extent of the intertidal zone from Lowest to Highest Astronomical tide (e.g. Figure 6). These tidal biases can be evaluated using the product’s Tidal Attribute Layers which highlight regions where DEA Intertidal will underestimate the lower, upper or full extent of the intertidal zone. 
+* Due to biases in the tidal coverage of satellite sensors like Landsat and Sentinel-2, DEA Intertidal outputs rarely cover the full extent of the intertidal zone from Lowest to Highest Astronomical tide (e.g. Figure 6). These tidal biases can be evaluated using the product’s Tidal Attribute Layers which highlight regions where DEA Intertidal will underestimate the lower, upper or full extent of the intertidal zone. 
 
 * Areas of false positive intertidal data over water exist in areas with low satellite coverage and high levels of environmental or sensor noise. Areas affected include: 
 
@@ -61,6 +60,8 @@ Figure 7. DEA Intertidal Elevation validation heatmaps comparing performance acr
     * Broad Sound, Queensland
 
 * The DEA Intertidal Extents layer classifies two categories of intertidal pixels. Rigorous methods and conservative thresholds are used to identify pixels that are highly likely to be intertidal and are classed as "high confidence" intertidal pixels. Pixels that are less certain to be intertidal (i.e those that meet most but not all of the qualifying criteria) are instead classified as "low confidence" intertidal. These "low confidence" pixels are not included in our Elevation and Exposure datasets. Caution should be applied when interpreting or using "low confidence" intertidal pixel data, as this class is likely to include noisy and inaccurate data.
+
+* Several DEA Intertidal tidal metric layers (e.g. "ta_spread", "ta_offset_low", "ta_offset_high", "ta_lot", "ta_hot") are affected by minor artefacts along processing tile grid boundaries. These artefacts are being investigated, and will likely be fixed in future product updates.
 
 ## Quality Assurance
 
