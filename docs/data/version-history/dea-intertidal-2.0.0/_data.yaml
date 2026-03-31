@@ -6,7 +6,7 @@ short_name: DEA Intertidal
 full_technical_name: Geoscience Australia Sentinel-2 Landsat Intertidal Calendar Year Collection 3  
 header_image: /_files/dea-intertidal/DEAIntertidal_prettypic_Elevation_ShoalPointQLD_XS_Size.png
 
-version_number: 2.1.0
+version_number: 2.0.0
 is_latest_version: true
 latest_version_link: null
 is_provisional: false
@@ -16,7 +16,7 @@ spatial_data_type: RASTER
 
 spatial_coverage: null
 temporal_coverage_start: 2016
-temporal_coverage_end: 2024
+temporal_coverage_end: 2023
 temporal_coverage_custom: null
 
 data_update_frequency: YEARLY
@@ -89,7 +89,7 @@ access_links_web_services:
 
 
 access_links_custom:
-  - link: https://data.dea.ga.gov.au/?prefix=derivative/ga_s2ls_intertidal_cyear_3/2-1-0/
+  - link: https://data.dea.ga.gov.au/?prefix=derivative/ga_s2ls_intertidal_cyear_3/2-0-0/
     icon: database
     label: Data sources
     name: AWS data
@@ -105,9 +105,9 @@ access_links_custom:
 # History
 
 previous_versions:
-  - version_number: 2.0.0
+  - version_number: 1.0.0
     title: DEA Intertidal
-    slug: dea-intertidal-2.0.0
+    slug: dea-intertidal-1.0.0
   - version_number: 2.0.0
     title: Intertidal Extents Model (ITEM)
     slug: dea-intertidal-extents-landsat-2.0.0

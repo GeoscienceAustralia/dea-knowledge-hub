@@ -1,12 +1,5 @@
 ## Changelog
 
-## DEA Intertidal 2.1.0
-
-In May 2025, DEA Intertidal was updated to version 2.1.0, and 2024 data was added to all layers in the product suite. This update also includes the following changes.
-
-* DEA Intertidal data is now provided natively as continental Cloud Optimised GeoTIFF mosaics. Visit the [Continental Cloud-Optimised GeoTIFF Mosaics page](/guides/continental-cogs-geotiff-mosaics/) for further details.
-* Minor improvements to tide modelling functionality used to model intertidal elevation
-
 ## DEA Intertidal 2.0.0
 
 In May 2025, DEA Intertidal was [updated to version 2.0.0](https://github.com/GeoscienceAustralia/dea-intertidal/releases/tag/2.0.0) and 2023 data was added to all layers in the product suite. This update also includes the following changes.
