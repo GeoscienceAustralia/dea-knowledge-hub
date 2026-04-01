@@ -16,24 +16,24 @@ To evaluate the accuracy of DEA Intertidal Elevation, we calculated RMSE, MAE, c
 
 |             | Macrotidal | Mesotidal | Microtidal |
 |-------------|------------|-----------|------------|
-| Correlation | 0.90       | 0.96      | 0.61       |
-| R-squared   | 0.80       | 0.93      | 0.37       |
-| RMSE (m)    | 0.32       | 0.33      | 0.27       |
+| Correlation | 0.96       | 0.90      | 0.61       |
+| R-squared   | 0.93       | 0.80      | 0.37       |
+| RMSE (m)    | 0.33       | 0.32      | 0.27       |
 | MAE (m)     | 0.25       | 0.25      | 0.20       |
-| Bias (m)    | 0.20       | 0.22      | 0.12       |
+| Bias (m)    | 0.22       | 0.20      | 0.12       |
 :::
 
 :::{figure} /_files/dea-intertidal/tiderangevalidation.*
 :alt: Validation at different tidal ranges
 
-Figure 7. DEA Intertidal Elevation validation heatmaps comparing performance across microtidal, mesotidal and macrotidal coastlines. 
+Figure 7. Scatterplot comparing DEA Intertidal elevations against independent validation data across macro-, meso- and microtidal intertidal environments.
 :::
 
 ### Caveats and limitations
 
 * DEA Intertidal covers the exposed intertidal zone which includes sandy beaches and shores, tidal flats and rocky shores and reefs. The model excludes intertidal vegetation communities such as mangroves.
 
-* Although absolute elevation mapping accuracy was similar across all environments, DEA Intertidal's accuracy relative to the total tide range was significantly greater in meso-tidal and macro-tidal environments. Due to the narrow intertidal zone in microtidal environments and the dominance of non-tidal water level influences like storm surge and ocean waves, DEA Intertidal should be used with caution in microtidal environments. 
+* Although DEA Intertidal's absolute elevation mapping accuracy was similar across all environments, accuracy relative to the total tide range was significantly greater in meso-tidal and macro-tidal environments. Due to the narrow intertidal zone in microtidal environments and the dominance of non-tidal water level influences like storm surge and ocean waves, DEA Intertidal should be used with caution in microtidal environments.
 
 * DEA Intertidal relies on accurate tide modelling for reliable results. Although the Ensemble Tidal Modelling approach used in this product attempts to obtain the best local tide modelling data for any given location, areas of poor quality tide modelling still remain. This is particularly the case in areas of complex and unpredictable tide dynamics, such as embayments and estuaries where global ocean tide modelling results may produce highly inaccurate outputs. In these environments, modelled elevations and exposure should be used with caution and evaluated with reference to modelled elevation uncertainty data. Examples of areas affected by poor quality tide modelling inputs include: 
 
