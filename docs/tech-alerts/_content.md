@@ -1,6 +1,47 @@
 % See the DEA Tech Alerts documentation:
 % https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/tech_alerts_changelog.html
 
+## 2 Apr 2026: Interim Processing Approach to Digital Earth ARD Dataset
+
+**What’s happening?**
+
+Digital Earth Australia (DEA)’s Landsat and Sentinel 2 [Analysis Ready Data (ARD) products](/data/category/dea-surface-reflectance/) currently use third party datasets to correct the data for Australian conditions. A dataset used in this correction - the National Oceanic and Atmospheric Administration’s NCEP/NCAR Reanalysis 1 water vapour dataset has been discontinued.
+
+To address this the Digital Earth team will be incorporating the European Centre for Medium Weather Forecast (ECMWF) data source into its ARD corrections, which has been assessed and found suitable as an alternative source of water vapour data. This action will provide Digital Earth the time to undertake an assessment of other data sources to identify the long-term solution.
+
+DEA derivative data products will experience an interruption in service while ECMWF is incorporated into our processing pipelines. The products that will be affected include:
+
+* [DEA Water Observations (Landsat)](/data/product/dea-water-observations-landsat/)
+* [DEA Fractional Cover (Landsat)](/data/product/dea-fractional-cover-landsat/)
+* [DEA Waterbodies (Landsat)](/data/product/dea-waterbodies-landsat/)
+* [DEA Fuel Moisture Content (Sentinel 2)](/data/product/dea-fuel-moisture-content/)
+
+**DEA ARD dataset maturity**
+
+DEA ARD data will continue to be produced until a suitable alternative water vapour dataset is available. The ARD correction will continue to be applied to DEA data using a pre-calculated climatology, which is currently used in the “near-real time” (NRT) ARD products.
+
+Data produced using this climatology will be flagged with the “interim” maturity flag to make it easy to identify in metadata. More information about DEA dataset maturity [can be found here](/guides/reference/dataset_maturity_guide/).
+
+Once the ECMWF data is incorporated into our processes, the interim flagged data will be reprocessed, and a “final” maturity product will be produced using this data source.
+
+DEA’s downstream data products will only be processed from “final” quality data and will experience a disruption in production while this activity is underway.
+
+**When’s it happening?**
+
+DEA Landsat and Sentinel 2 ARD products will begin to see production of “interim” data from 9 April 2026.
+
+Once this occurs, the impacted DEA derivative products listed will stop updating.
+
+At this stage, we anticipate that ARD corrections using ECMWF will resume by early May 2026. We will notify DEA users with a Tech Alert when available.
+
+Once a suitable long-term replacement water vapour dataset is available, we will advise DEA users of how we intend to incorporate it into our data collection.
+
+**What action do you need to take?**
+
+No action by users is required.
+
+[View the Tech Alert](https://communication.ga.gov.au/link/id/zzzz69cdf18461773486Pzzzz6567c8b713b5b826/page.html)
+
 ## 3 Mar 2026: Redundant Sentinel-2 Near Real Time data removed
 
 ![](/_files/tech-alerts/2026-03-03-nrt-data-removed.jpeg)
@@ -17,15 +58,15 @@ To better manage our data and improve system processing we have begun cleaning u
 
 During this process we have identified NRT that are not available in the final datasets, as well as tiles in the definitive datasets that are not available in NRT.
 
-To address this we have removed redundant Sentinel-2 tiles in the NRT processing only, leaving the definitive tile set in place. 
+To address this we have removed redundant Sentinel-2 tiles in the NRT processing only, leaving the definitive tile set in place.
 
 We have also updated the processing tile sets for Landsat and Sentinel-2 and synchronised the [NCI](https://explorer.nci.dea.ga.gov.au/products) and [AWS](https://explorer.dea.ga.gov.au/products) processing so both services now work off the same core tile set.
 
-For the Landsat tile set there will be additional tiles processed to AWS while for Sentinel-2 some tiles will be removed as well as some tiles added. This will result in a net reduction in the number of tiles processed to AWS, and a minor net-gain for NCI. The majority of the NRT tiles are over the ocean and deemed unlikely to include relevant EO data.  
+For the Landsat tile set there will be additional tiles processed to AWS while for Sentinel-2 some tiles will be removed as well as some tiles added. This will result in a net reduction in the number of tiles processed to AWS, and a minor net-gain for NCI. The majority of the NRT tiles are over the ocean and deemed unlikely to include relevant EO data.
 
-By removing the old NRT data and synchronising NCI and AWS tile processing we will provide better overall data management and consistency across these DEA services.  
+By removing the old NRT data and synchronising NCI and AWS tile processing we will provide better overall data management and consistency across these DEA services.
 
-This process has been completed and we will continue to monitor the changes into the near future.  
+This process has been completed and we will continue to monitor the changes into the near future.
 
 [View the Tech Alert](https://communication.ga.gov.au/link/id/zzzz69a66543ec0f4562Pzzzz6567c8b713b5b826/page.html)
 
@@ -37,17 +78,17 @@ DEA has reenabled Sentinel-2A (S2A) data following the European Space Agency (ES
 
 This extended campaign includes a unique tandem acquisition period between January and March 2026. This will allow the two satellites to capture scenes in nearly identical conditions, further enhancing radiometric performance and consistency. You can read more at the [Copernicus Data Space Ecosystem website](https://dataspace.copernicus.eu/news/2025-12-19-sentinel-2a-and-sentinel-2b-tandem-acquisitions) and [here](https://sentiwiki.copernicus.eu/web/s2-mission).
 
-The current estimate of the S2A datasets to be added to the collection as of 09/02/2026 is around 28,000. For comparison, the numbers of Sentinel-2B and Sentinel-2C datasets for the same period are 66,011 and 63,449 respectively. 
+The current estimate of the S2A datasets to be added to the collection as of 09/02/2026 is around 28,000. For comparison, the numbers of Sentinel-2B and Sentinel-2C datasets for the same period are 66,011 and 63,449 respectively.
 
-Sentinel-2A has been collecting data for nearly 12 months. This data will now be added to our ARD collection. 
+Sentinel-2A has been collecting data for nearly 12 months. This data will now be added to our ARD collection.
 
 The additional S2A datasets are now available. You can now see the temporary tandem acquisitions of S2A and S2B swaths on [DEA Maps](https://maps.dea.ga.gov.au/#share=s-t7l2lP0FPHEW2eWsC9a6ez4AupT).
 
-Even though Sentinel-2A is now on the modified orbit following Sentinel-2B, the orbital parameters of the satellite remain largely unchanged.  
+Even though Sentinel-2A is now on the modified orbit following Sentinel-2B, the orbital parameters of the satellite remain largely unchanged.
 
-DEA users with existing workflows consuming Sentinel-2B and Sentinel-2C data should not see any impact, and no further action should be required. However, users running automatic workflows that are not filtering out Sentinel-2A data may see an uptick in data volume as we process and publish our Sentinel-2A data backlog. 
+DEA users with existing workflows consuming Sentinel-2B and Sentinel-2C data should not see any impact, and no further action should be required. However, users running automatic workflows that are not filtering out Sentinel-2A data may see an uptick in data volume as we process and publish our Sentinel-2A data backlog.
 
-If you do not want to process these S2A data in your workflows, please make sure to exclude them. 
+If you do not want to process these S2A data in your workflows, please make sure to exclude them.
 
 [View the Tech Alert](https://communication.ga.gov.au/link/id/zzzz69a66543ec0f4562Pzzzz6567c8b713b5b826/page.html)
 
