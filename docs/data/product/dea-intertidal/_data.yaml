@@ -81,7 +81,7 @@ access_links_custom:
     link: https://explorer.dea.ga.gov.au/products/ga_s2ls_intertidal_cyear_3
 
   - type: data
-    link: https://data.dea.ga.gov.au/?prefix=derivative/ga_s2ls_intertidal_cyear_3/2-0-0/
+    link: https://data.dea.ga.gov.au/?prefix=derivative/ga_s2ls_intertidal_cyear_3/2-1-0/
     name: Access the data on AWS
   - type: data
     link: ./?tab=access#access-guides
