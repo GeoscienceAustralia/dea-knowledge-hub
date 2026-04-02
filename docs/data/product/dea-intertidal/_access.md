@@ -30,8 +30,6 @@ The easiest way to access DEA Intertidal data is via our continental-scale cloud
 The COG file format is a type of GeoTIFF raster file (`.tif`) that allows you to quickly and efficiently 'stream' data directly from the Amazon S3 cloud without having to download files to your computer.
 This allows you to rapidly access data from the entire Australian continent without having to download large files.
 
-VRT (Virtual Raster) files are also provided alongside the .tif mosaics. These files serve as lightweight wrappers around the main data and can be used to open data in GIS software with visual settings already applied.
-
 For detailed instructions, please visit the [Continental Cloud-Optimised GeoTIFF Mosaics page](/guides/continental-cogs-geotiff-mosaics/)
 
 :::
