@@ -1,13 +1,5 @@
 ## Changelog
 
-### DEA Tidal Composites 1.1.0
-
-In April 2026, DEA Tidal Composites was updated to version 1.1.0, and 2024 data was added to all layers. This update also includes the following changes:
-
-* DEA Tidal Composites data is now provided natively as continental Cloud Optimised GeoTIFF mosaics. Visit the [Continental Cloud-Optimised GeoTIFF Mosaics page](/guides/continental-cogs-geotiff-mosaics/) for further details.
-* Minor improvements to the ensemble tide modelling functionality used to filter satellite data by tide height.
-
-
 ### DEA Tidal Composites 1.0.0
 
 In May 2025, DEA Tidal Composites version 1.0.0, was released. This release involved deprecating the [High and Low Tide Composites (HLTC)](/data/version-history/dea-high-and-low-tide-imagery-landsat-2.0.0/) product. Data from this legacy product will still be accessible; however, users are advised to transition to using DEA Tidal Composites instead, where possible.
