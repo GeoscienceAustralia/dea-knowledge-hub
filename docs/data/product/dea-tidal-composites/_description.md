@@ -92,7 +92,7 @@ Ensemble tide modelling was implemented in the [eo-tides](https://github.com/Geo
 
 ## Lineage
 
-The DEA Tidal Composites product suite extends the concepts developed in the [High and Low Tide Composites (HLTC)](/data/version-history/dea-high-and-low-tide-imagery-landsat-2.0.0) product (Sagar et al. 2018), using higher resolution 10 m Sentinel-2 data in place of the original 30 m Landsat data and improved tide modelling techniques to improve high and low tide representation.
+The DEA Tidal Composites product suite extends the concepts developed in the [High and Low Tide Composites (HLTC)](/data/version-history/dea-high-and-low-tide-imagery-landsat-2.0.0/) product (Sagar et al. 2018), using higher resolution 10 m Sentinel-2 data in place of the original 30 m Landsat data and improved tide modelling techniques to improve high and low tide representation.
 
 ## Processing steps
 
