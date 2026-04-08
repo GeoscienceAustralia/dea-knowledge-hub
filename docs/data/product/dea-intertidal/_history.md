@@ -1,13 +1,13 @@
 ## Changelog
 
-## DEA Intertidal 2.1.0
+### DEA Intertidal 2.1.0
 
 In April 2026, DEA Intertidal was updated to version 2.1.0, and 2024 data was added to all layers in the product suite. This update also includes the following changes:
 
 * DEA Intertidal data is now provided natively as continental Cloud Optimised GeoTIFF mosaics. Visit the [Continental Cloud-Optimised GeoTIFF Mosaics page](/guides/continental-cogs-geotiff-mosaics/) for further details.
 * Minor improvements to the ensemble tide modelling functionality used to model intertidal elevation.
 
-## DEA Intertidal 2.0.0
+### DEA Intertidal 2.0.0
 
 In May 2025, DEA Intertidal was [updated to version 2.0.0](https://github.com/GeoscienceAustralia/dea-intertidal/releases/tag/2.0.0) and 2023 data was added to all layers in the product suite. This update also includes the following changes:
 
@@ -15,7 +15,7 @@ In May 2025, DEA Intertidal was [updated to version 2.0.0](https://github.com/Ge
 * [Ensemble tide modelling](/data/product/dea-intertidal/?tab=description#ensemble-tidal-modelling) is now delivered via the [eo-tides](https://github.com/GeoscienceAustralia/eo-tides) tide modelling Python package.
 * New quality assessment layers were added: [qa_count_clear](/data/product/dea-intertidal/?tab=description#quality-assessment-layers) and [qa_coastal_connectivity](/data/product/dea-intertidal/?tab=description#quality-assessment-layers). 
 
-## DEA Intertidal 1.0.0
+### DEA Intertidal 1.0.0
 
 In April 2024, [version 1.0.0 was released](https://github.com/GeoscienceAustralia/dea-intertidal/releases/tag/1.0.0) of the DEA Intertidal product suite. The elevation data layer of this product supersedes the [National Intertidal Digital Elevation Model](/data/version-history/dea-intertidal-elevation-landsat-1.0.0/) product. (The National Intertidal Digital Elevation Model product has hence been deprecated.)
 
