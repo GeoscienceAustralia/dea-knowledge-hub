@@ -2,28 +2,26 @@
 
 Intertidal zones are coastal environments that are exposed to both air and water at different times due to the cycle of low and high tides. These zones can include sandy beaches, tidal flats, rocky shores, and reefs. Many of them are critical coastal habitats and ecosystems which support a wide range of species and ecosystem services. Increasingly, these dynamic environments are faced with threats such as land reclamation, coastal erosion, and rising sea levels.
 
-The ever-changing nature of the tides makes it difficult to systematically capture consistent imagery of an intertidal zone, particularly across large regions and in remote areas of the country. This is where [Geomedian statistical techniques](/data/product/dea-geometric-median-and-median-absolute-deviation-landsat/) can be used. These are robust techniques which combine tide-attributed time-series satellite imagery to produce representative and artefact-free imagery 'composites' of Australia's coastal high and low tide environments.
+The ever-changing nature of the tides makes it difficult to systematically capture consistent imagery of coastal environments, particularly across large regions and in remote areas of the country. This is where [Geomedian statistical techniques](/data/product/dea-geometric-median-and-median-absolute-deviation-landsat/) can be used. These are robust techniques which combine tide-attributed time-series satellite imagery to produce representative and artefact-free imagery 'composites' of Australia's coastal high and low tide environments.
 
-The DEA Tidal Composites product provides a suite of cloud-free satellite imagery composites that capture the Australian coastal zone at high and low tide. 
-Using a geometric median (geomedian), the highest and lowest 15% of satellite-observed tide heights from the Digital Earth Australia (DEA) Sentinel-2 imagery archive are combined to deliver annual snapshots of Australian coastal high and low tide environments.
+## What this product offers
 
-Sentinel-2 satellite images are tidally attributed using pixel-based tidal modelling generated from a locally optimised ensemble of the best performing global tide models.
-The ensemble tidal modelling approach (see below) was implemented to account for the varying performance and biases of existing global ocean tide models across the complex tidal regimes and coastal regions of Australia.
-Tidal attribution allows the imagery archive to be sorted by tide height rather than date, enabling you to selectively view the intertidal zone at low and high stages of the tidal cycle.  
+The DEA Tidal Composites product provides cloud-free satellite imagery composites capturing the Australian coastal zone at high and low tide. By applying a geometric median (geomedian) calculation to the highest and lowest 15% of satellite-observed tidal conditions, multiple satellite images from the Digital Earth Australia (DEA) Sentinel-2 analysis-ready data (ARD) archive are combined into high quality annual imagery composites.
 
-DEA Tidal Composites includes both low- and high-tide imagery products and their associated quality assurance layers. 
-The low tide and high tide layers represent geomedian composites of low and high tide surface reflectance pixels from DEA's Sentinel-2A, -2B, and -2C analysis-ready data. 
-The geomedian calculation maintains the spectral relationships between bands (Roberts et al., 2017), ensuring that the DEA Tidal Composites product delivers robust and valid surface reflectance spectra suitable for uses such as habitat mapping (Li et al., 2012), and delivers a cloud-free and noise-reduced visualisation of the shallow water and intertidal coastal regions of Australia (Sagar et al., 2018). 
-Quality assurance layers are provided for the low tide and high tide datasets. These include the tide-height thresholds above and below which associated satellite pixels were included in the compositing process, and a count of clear input satellite observations that contributed to each pixel in the composites.
+Input satellite images are tidally filtered using pixel-based tide modelling generated from a locally optimised ensemble of top-performing global tide models ([see below](#ensemble-tide-modelling)). This ensemble approach was implemented to account for the varying performance and biases of individual ocean models across Australia's complex coastal regimes.
+
+Because the geomedian calculation maintains the spectral relationships between satellite bands (Roberts et al., 2017), the composites deliver robust and valid surface reflectance spectra. This provides clean, cloud-free imagery covering the shallow water and intertidal regions of Australia (Sagar et al., 2018), suitable for downstream applications such as habitat mapping and Machine Learning (ML) classification (Li et al., 2012) .
+
+Alongside low and high tide imagery, the product includes associated quality assurance layers that detail the specific tide-height thresholds used to filter the pixels during the compositing process, as well as a count of the clear satellite observations that contributed to each pixel.
 
 ## Applications
 
-Here are some of the ways this data product can be used.
+Here are some of the ways this data product can be used:
 
-* Mapping cover types within the intertidal zone.
-* Mapping coastal environments usually hidden beneath the ocean surface​ at high tide
-* Visualising the full observed extent of the tidal range around the Australian continental coastline.
-* Monitoring for change in Australian coastal environments.
+* Mapping coastal environments and cover types usually hidden beneath the ocean's surface at high tide​.
+* Monitoring for change across Australia's dynamic coastal environments.
+* Visualising how ocean tides influence Australia's coastal environments.
+* Training machine learning models and classifiers that require high quality coastal imagery.
 
 ## Technical information
 
@@ -95,7 +93,7 @@ When the observation count in 15% of all observations is less than 20, the neare
 
 ### Ensemble tide modelling
 
-The Ensemble Tidal Modelling approach was implemented to account for the varying performance and biases of existing global ocean tide models across the complex tidal regimes and coastal regions of Australia. The ensemble process utilises ancillary data to select and weight tidal models at any given coastal location based on how well each model correlates with local satellite-observed patterns of tidal inundation and water levels measured by satellite altimetry. A single ensemble tidal output was generated by combining the top three locally optimal models, and used for all downstream product workflows. This ensemble significantly improves the quality of the resulting intertidal DEMs compared to using a single tide model (Figure 6).
+The Ensemble Tidal Modelling approach was implemented to account for the varying performance and biases of existing global ocean tide models across the complex tidal regimes and coastal regions of Australia. The ensemble process utilises ancillary data to select and weight tidal models at any given coastal location based on how well each model correlates with local satellite-observed patterns of tidal inundation and water levels measured by satellite altimetry. A single ensemble tidal output was generated by combining the top three locally optimal models, and used for all downstream product workflows.
 
 Ensemble tide modelling was implemented in the [eo-tides](https://github.com/GeoscienceAustralia/eo-tides) Python package which integrates satellite Earth observation data with tide modelling (Bishop-Taylor et al. 2025). It leverages tide modelling functionality from the [pyTMD](https://github.com/tsutterley/pyTMD) package. The ensemble was based on 9 commonly-used global ocean tidal models:
 
@@ -121,9 +119,9 @@ The DEA Tidal Composites product suite extends the concepts developed in the [Hi
 1. [Model tide heights](https://github.com/GeoscienceAustralia/eo-tides/blob/main/eo_tides/eo.py#L306) for the spatial extent and timesteps of the loaded satellite data array.
 1. Attribute tide heights to the valid satellite observations.
 1. Rank all observations by ascending tide height.
-1. Select the observations in the top and bottom 15 % of satellite-observed tide heights by identifying their associated tide height rankings.
-1. If the number of observations in the top and bottom 15 % is less than 20, gapfill up to the count of 20 observations by taking the next highest or lowest tide heights from the full stack of satellite observations respectively.
-1. Calculate a [geomedian](https://github.com/opendatacube/odc-algo/blob/main/odc/algo/_geomedian.py#L188) on each subset and count the contributing number of clear observations.
+1. Select the observations in the top and bottom 15% of satellite-observed tide heights by identifying their associated tide height rankings.
+1. If the number of observations in the top and bottom 15% is less than 20, gapfill up to the count of 20 observations by taking the next highest or lowest tide heights from the full stack of satellite observations respectively.
+1. Calculate a [geomedian](https://github.com/opendatacube/odc-algo/blob/main/odc/algo/_geomedian.py#L188) on each tidally-filtered subset and count the contributing number of clear observations.
 
 ## Software
 
