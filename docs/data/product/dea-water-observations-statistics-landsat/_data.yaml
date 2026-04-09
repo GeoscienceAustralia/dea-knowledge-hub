@@ -72,7 +72,7 @@ access_links_web_services: null
 access_links_custom:
   - type: map
     link: https://maps.dea.ga.gov.au/#share=s-x0R0IFIqxSFDJ54LK6sFDEfjh6i
-    name: Multi-Year Summary on DEA Maps
+    name: Multi-year summary on DEA Maps
   - type: map
     link: https://maps.dea.ga.gov.au/#share=s-yIyPPjQlWxVBLg10WJBQd8KrMgt
     name: Apr-Oct summaries on DEA Maps
@@ -93,10 +93,10 @@ access_links_custom:
 
   - type: data
     link: https://data.dea.ga.gov.au/?prefix=derivative/ga_ls_wo_fq_myear_3/2-0-0/
-    name: Multi-Year Summary 1986 to near present - AWS access
+    name: Multi-year summary 1986 to near present - AWS access
   - type: data
     link: https://thredds.nci.org.au/thredds/catalog/jw04/ga_ls_wo_fq_myear_3/catalog.html
-    name: Multi-Year Summary 1986 to near present - NCI access
+    name: Multi-year summary 1986 to near present - NCI access
   - type: data
     link: https://data.dea.ga.gov.au/?prefix=derivative/ga_ls_wo_fq_apr_oct_3/2-0-0/
     name: Apr-Oct summaries - AWS access
@@ -123,17 +123,17 @@ access_links_custom:
     link: https://ows.dea.ga.gov.au/
   - type: web_service
     link: https://digital.atlas.gov.au/datasets/cf7486a7638c4b83b258b98cbbfdd084/explore
-    name: "Digital Atlas: Multi-Year Summary - Water Frequency"
+    name: "Multi-Year Summary - Water Frequency (Digital Atlas Layer)"
     description: Learn how to `create a map using Digital Atlas <https://digital.atlas.gov.au/apps/6b0a217d5c704e8fb6c353d6245585ce/explore>`_.
     label: Digital Atlas Layers
   - type: web_service
     link: https://digital.atlas.gov.au/datasets/ef2b925f63e84219b34fc064d8316931/explore
-    name: "Digital Atlas: Multi-Year Summary - Wet Count"
+    name: "Multi-Year Summary - Wet Count (Digital Atlas Layer)"
     description: Learn how to `create a map using Digital Atlas <https://digital.atlas.gov.au/apps/6b0a217d5c704e8fb6c353d6245585ce/explore>`_.
     label: Digital Atlas Layers
   - type: web_service
     link: https://digital.atlas.gov.au/datasets/f2d6989a225d4172bc9c2f49f7d35ae6/explore
-    name: "Digital Atlas: Multi-Year Summary - Clear Count"
+    name: "Multi-Year Summary - Clear Count (Digital Atlas Layer)"
     description: Learn how to `create a map using Digital Atlas <https://digital.atlas.gov.au/apps/6b0a217d5c704e8fb6c353d6245585ce/explore>`_.
     label: Digital Atlas Layers
 
