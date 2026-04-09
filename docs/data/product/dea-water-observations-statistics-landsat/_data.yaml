@@ -107,14 +107,14 @@ access_links_custom:
     link: https://data.dea.ga.gov.au/?prefix=derivative/ga_ls_wo_fq_cyear_3/2-0-0/
     name: Annual calendar year summaries - AWS access
   - type: data
+    link: https://thredds.nci.org.au/thredds/catalog/jw04/ga_ls_wo_fq_cyear_3/catalog.html
+    name: Annual calendar year summaries - NCI access
+  - type: data
     link: https://thredds.nci.org.au/thredds/catalog/jw04/ga_ls_wo_fq_apr_oct_3/catalog.html
     name: Apr-Oct summaries - NCI access
   - type: data
     link: https://thredds.nci.org.au/thredds/catalog/jw04/ga_ls_wo_fq_nov_mar_3/catalog.html
     name: Nov-Mar summaries - NCI access
-  - type: data
-    link: https://thredds.nci.org.au/thredds/catalog/jw04/ga_ls_wo_fq_cyear_3/catalog.html
-    name: Annual calendar year summaries - NCI access
 
   - type: code_example
     link: /notebooks/DEA_products/DEA_Water_Observations/
