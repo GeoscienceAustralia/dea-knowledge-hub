@@ -1,5 +1,11 @@
 ## Changelog
 
+### 9 Apr 2026: Latest updates
+
+* DEA WO Multi-Year (`ga_ls_wo_fq_myear_3`) was updated to 2.1.0. (The other three products remain on version 2.0.0: `ga_ls_wo_fq_cyear_3`, `ga_ls_wo_fq_nov_mar_3`, `ga_ls_wo_fq_apr_oct_3`.)
+* All four products were updated to include 2025 data.
+* DEA WO Multi-Year (`ga_ls_wo_fq_myear_3`) and DEA WO November to March (`ga_ls_wo_fq_nov_mar_3`) data coverage now starts from 1987 (instead of 1986).
+
 ### 10 Sep 2025: DEA data in the Digital Atlas of Australia
 
 The [DEA Coastlines](/data/product/dea-coastlines/), [DEA Mangroves](/data/product/dea-mangroves/), and [DEA Water Observations Multi-Year Summary](/data/product/dea-water-observations-statistics-landsat/) datasets have now been added to the Digital Atlas, joining [DEA Land Cover](/data/product/dea-land-cover-landsat/). This integration marks a significant milestone in how DEA data can be accessed, visualised, and applied. By embedding DEA products into the Digital Atlas, users can now interact with trusted Earth observation datasets alongside other authoritative national data — unlocking powerful new opportunities for cross-sector analysis and decision-making. 
