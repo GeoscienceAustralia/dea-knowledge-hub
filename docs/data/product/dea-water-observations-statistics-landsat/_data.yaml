@@ -71,6 +71,9 @@ access_links_web_services: null
 
 access_links_custom:
   - type: map
+    link: https://maps.dea.ga.gov.au/#share=s-x0R0IFIqxSFDJ54LK6sFDEfjh6i
+    name: Multi-year summary on DEA Maps
+  - type: map
     link: https://maps.dea.ga.gov.au/#share=s-yIyPPjQlWxVBLg10WJBQd8KrMgt
     name: Apr-Oct summaries on DEA Maps
   - type: map
@@ -79,9 +82,6 @@ access_links_custom:
   - type: map
     link: https://maps.dea.ga.gov.au/#share=s-5fLlPp0Fk11iLTxUpCQPxTkVAH3
     name: Annual calendar year summaries on DEA Maps
-  - type: map
-    link: https://maps.dea.ga.gov.au/#share=s-x0R0IFIqxSFDJ54LK6sFDEfjh6i
-    name: Multi-year summary on DEA Maps
   - type: map
     link: https://digital.atlas.gov.au/apps/16e1fac8143341aaa87f761a8a2c330e/explore
     name: Water Observations Multi-Year Summary Explorer (Digital Atlas application)
@@ -92,6 +92,12 @@ access_links_custom:
     link: https://explorer.dea.ga.gov.au/products#inland-water-group
 
   - type: data
+    link: https://data.dea.ga.gov.au/?prefix=derivative/ga_ls_wo_fq_myear_3/2-0-0/
+    name: Multi-year summary 1986 to near present - AWS access
+  - type: data
+    link: https://thredds.nci.org.au/thredds/catalog/jw04/ga_ls_wo_fq_myear_3/catalog.html
+    name: Multi-year summary 1986 to near present - NCI access
+  - type: data
     link: https://data.dea.ga.gov.au/?prefix=derivative/ga_ls_wo_fq_apr_oct_3/2-0-0/
     name: Apr-Oct summaries - AWS access
   - type: data
@@ -101,9 +107,6 @@ access_links_custom:
     link: https://data.dea.ga.gov.au/?prefix=derivative/ga_ls_wo_fq_cyear_3/2-0-0/
     name: Annual calendar year summaries - AWS access
   - type: data
-    link: https://data.dea.ga.gov.au/?prefix=derivative/ga_ls_wo_fq_myear_3/2-0-0/
-    name: Multi-year summary 1986 to near present - AWS access
-  - type: data
     link: https://thredds.nci.org.au/thredds/catalog/jw04/ga_ls_wo_fq_apr_oct_3/catalog.html
     name: Apr-Oct summaries - NCI access
   - type: data
@@ -112,9 +115,6 @@ access_links_custom:
   - type: data
     link: https://thredds.nci.org.au/thredds/catalog/jw04/ga_ls_wo_fq_cyear_3/catalog.html
     name: Annual calendar year summaries - NCI access
-  - type: data
-    link: https://thredds.nci.org.au/thredds/catalog/jw04/ga_ls_wo_fq_myear_3/catalog.html
-    name: Multi-year summary 1986 to near present - NCI access
 
   - type: code_example
     link: /notebooks/DEA_products/DEA_Water_Observations/
