@@ -16,7 +16,7 @@ spatial_data_type: RASTER
 spatial_coverage: null
 temporal_coverage_start: null
 temporal_coverage_end: null
-temporal_coverage_custom: 1986/1987 to 2025 (see Technical information)
+temporal_coverage_custom: "1986/1987 to 2025 (see `Technical information <./?tab=description#technical-information>`_)"
 
 data_update_frequency: YEARLY
 data_update_activity: ONGOING
