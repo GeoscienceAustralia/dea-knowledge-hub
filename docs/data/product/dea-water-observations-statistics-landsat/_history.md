@@ -2,7 +2,7 @@
 
 ### 9 Apr 2026: Latest updates
 
-* DEA WO Multi-Year (`ga_ls_wo_fq_myear_3`) was updated to 2.1.0. (The other three products remain on version 2.0.0: `ga_ls_wo_fq_cyear_3`, `ga_ls_wo_fq_nov_mar_3`, `ga_ls_wo_fq_apr_oct_3`.)
+* DEA WO Multi-Year (`ga_ls_wo_fq_myear_3`) was updated from version 2.0.0 to 2.1.0. (The other three products remain on version 2.0.0: `ga_ls_wo_fq_cyear_3`, `ga_ls_wo_fq_nov_mar_3`, `ga_ls_wo_fq_apr_oct_3`.)
 * All four products were updated to include 2025 data.
 * DEA WO Multi-Year (`ga_ls_wo_fq_myear_3`) and DEA WO November to March (`ga_ls_wo_fq_nov_mar_3`) data coverage now starts from 1987 (instead of 1986).
 
