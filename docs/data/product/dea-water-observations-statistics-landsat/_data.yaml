@@ -82,11 +82,11 @@ access_links_custom:
   - type: map
     link: https://maps.dea.ga.gov.au/#share=s-5fLlPp0Fk11iLTxUpCQPxTkVAH3
     name: Annual calendar year summaries on DEA Maps
-  # - type: map
-  #   link: https://digital.atlas.gov.au/apps/16e1fac8143341aaa87f761a8a2c330e/explore
-  #   name: Water Observations Multi-Year Summary Explorer (Digital Atlas application)
-  #   description: Learn more about the `Digital Atlas of Australia <https://digital.atlas.gov.au/pages/about>`_.
-  #   label: Digital Atlas applications
+  - type: map
+    link: https://digital.atlas.gov.au/apps/2d1387b93e6a44c7bc02d4dd29624c1c/explore
+    name: Water Observations Multi-Year Summary Explorer (Digital Atlas application)
+    description: Learn more about the `Digital Atlas of Australia <https://digital.atlas.gov.au/pages/about>`_.
+    label: Digital Atlas applications
 
   - type: explorer
     link: https://explorer.dea.ga.gov.au/products#inland-water-group
