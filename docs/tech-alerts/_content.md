@@ -1,6 +1,16 @@
 % See the DEA Tech Alerts documentation:
 % https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/tech_alerts_changelog.html
 
+## 15 April 2026: Upcoming updates to DEA Water Observations Multi-Year, Mangroves and Land Cover summary products
+
+As part of Digital Earth Australia’s (DEA) planned 2025 annual product update in the coming weeks, [DEA Water Observations Multi-Year Summary data](/data/product/dea-water-observations-statistics-landsat/) will be made available to include an additional two years of data. The existing version will be replaced with the expanded time series.
+
+Additionally, the [DEA Mangroves](/data/product/dea-mangroves/) and [Land Cover](/data/product/dea-land-cover-landsat/) products will have an update to **Tile x28y46** on the West Australian coast as a classification error was identified. Some areas of ocean in this tile were misclassified as mangroves and will be corrected in the historical records.
+
+These updates are expected to take place during the **week of 27 April 2026**, alongside DEA’s 2025 annual product update.
+
+No action is required; temporary disruptions could be experienced to the DEA Water Observations Multi-Year Summary, DEA Land Cover and Mangroves products during the data transition period.
+
 ## 2 Apr 2026: Interim Processing Approach to Digital Earth ARD Dataset
 
 **What’s happening?**
