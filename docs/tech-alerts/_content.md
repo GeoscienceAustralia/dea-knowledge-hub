@@ -11,6 +11,8 @@ These updates are expected to take place during the **week of 27 April 2026**, a
 
 No action is required; temporary disruptions could be experienced to the DEA Water Observations Multi-Year Summary, DEA Land Cover and Mangroves products during the data transition period.
 
+[View the Tech Alert](https://communication.ga.gov.au/link/id/zzzz69deeb5f9e03e642Pzzzz6567c8b713b5b826/page.html)
+
 ## 2 Apr 2026: Interim Processing Approach to Digital Earth ARD Dataset
 
 **What’s happening?**
