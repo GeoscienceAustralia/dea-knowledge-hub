@@ -5,7 +5,7 @@
 In April 2026, DEA Tidal Composites was updated to version 1.1.0, and 2024 data was added to all layers. This update also includes the following changes:
 
 * DEA Tidal Composites data is now provided natively as continental Cloud Optimised GeoTIFF mosaics. Visit the [Continental Cloud-Optimised GeoTIFF Mosaics page](/guides/continental-cogs-geotiff-mosaics/) for further details.
-* All annual layers updated with minor improvements to the ensemble tide modelling functionality used to filter satellite data by tide height.
+* All annual datasets updated with minor improvements to the ensemble tide modelling functionality used to filter satellite data by tide height.
 
 
 ### DEA Tidal Composites 1.0.0
