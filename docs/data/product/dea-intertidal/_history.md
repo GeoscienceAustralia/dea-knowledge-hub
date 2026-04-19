@@ -5,7 +5,7 @@
 In April 2026, DEA Intertidal was updated to version 2.1.0, and 2024 data was added to all layers in the product suite. This update also includes the following changes:
 
 * DEA Intertidal data is now provided natively as continental Cloud Optimised GeoTIFF mosaics. Visit the [Continental Cloud-Optimised GeoTIFF Mosaics page](/guides/continental-cogs-geotiff-mosaics/) for further details.
-* * All annual layers updated with minor improvements to the ensemble tide modelling functionality used to model intertidal elevation.
+* * All annual datasets updated with minor improvements to the ensemble tide modelling functionality used to model intertidal elevation.
 
 ### DEA Intertidal 2.0.0
 
