@@ -30,7 +30,7 @@ All datasets are produced annually from a 3-year composite of input data from co
 
 ### What this product offers
 
-The DEA Intertidal product suite is the next generation of intertidal products developed in DEA. It improves on the former [National Intertidal Digital Elevation Model](/data/product/dea-intertidal-elevation-landsat/) (NIDEM; Bishop-Taylor et al., 2019) and adds several new features and products to help users better understand the intertidal environment.
+The DEA Intertidal product suite is the next generation of intertidal products developed in DEA. It improves on the DEA Intertidal Elevation Model (also known as the [National Intertidal Digital Elevation Model](/data/product/dea-intertidal-elevation-landsat/) or NIDEM)  (Bishop-Taylor et al., 2019) and adds several new features and products to help users better understand the intertidal environment.
 
 NIDEM was the first 3D model of Australia’s intertidal zone &mdash; the area of coastline exposed and flooded by ocean tides. The DEA Intertidal suite fundamentally changes and improves the way in which the exposed intertidal zone is modelled compared to the original NIDEM elevation model: 
 
@@ -42,24 +42,39 @@ NIDEM was the first 3D model of Australia’s intertidal zone &mdash; the area o
 * The implementation of an ensemble tidal modelling approach, acknowledging the wide range of global and regional tide models available and their varying performance across different regions of Australia. See [Ensemble Tidal Modelling](./?tab=description#ensemble-tidal-modelling).
 * A coastal extents classification model that identifies five categorical classes to compliment the Elevation and Exposure products. This helps users to characterise different environments in the coastal zone in terms of their inundation characteristics and drivers, mapping confidence and nature of water cover.
 
-### Datasets
+### File Naming Convention 
 
-Annual raster files for each of the product bands are available in DEA's Amazon S3 bucket as continental mosaics in cloud-optimised GeoTIFF (COG) format.
-These files support [fast and efficient data streaming](/guides/continental-cogs-geotiff-mosaics/) of single-band layers of the DEA Intertidal product.
-
-For access and usage information, see the [Access tab](./?tab=access).
-
-DEA Intertidal data follows the [DEA Collection 3 naming conventions](/guides/reference/collection_3_naming/):
+The [file naming convention](/guides/reference/collection_3_naming/) is as follows:
 
 ```text
-ga_s2ls_intertidal_cyear_3_mosaic_2024--P1Y_elevation.tif
-{Organisation}_{Platform}_{Product}_{Reporting period}_{Collection}_{Region}_{Data date}--{Data period}_{Band name}.{File extension}
+{Organisation}_{Platform}_{Product}_{Reporting period}_{Collection}_{Tile reference}_{Data date}--{Data period}_{Product status}_{Band name}.{File extension}
 ```
+
+
+### Datasets
+
+Annual files for each of the product bands are available in DEA's Amazon S3 bucket in two formats: 32 km&sup2; tiles and continental mosaics.
+For access and usage information, see the [Access tab](./?tab=access).
+
+32 km&sup2; grid tiles are available as downloadable GeoTIFF files, for example:
+
+```text
+ga_s2ls_intertidal_cyear_3_x082y139_2022--P1Y_final_elevation.tif
+```
+
+Single-band annual continental data mosaics are delivered to support access and navigability of DEA Intertidal data in geospatial information system (GIS) environments.
+These datasets, delivered in cloud-optimised GeoTIFF (COG) format, are recommended for fast and efficient data streaming of single-band layers of the DEA Intertidal product.
+Here's an example of the COG file naming convention:
+
+```text
+ga_s2ls_intertidal_cyear_3_2017_exposure.tif
+```
+
 
 ### Code repositories
 
 * [DEA Intertidal GitHub repository](https://github.com/GeoscienceAustralia/dea-intertidal) &mdash; A codebase for DEA Intertidal product generation workflows 
-* [eo-tides GitHub repository](https://github.com/GeoscienceAustralia/eo-tides) &mdash; A codebase for integrating satellite Earth observations with tide modelling
+* [EO-Tides GitHub repository](https://github.com/GeoscienceAustralia/eo-tides) &mdash; A codebase for integrating satellite Earth observations with tide modelling
 * [DEA Tools GitHub repository](https://github.com/GeoscienceAustralia/dea-notebooks) &mdash; Earth observation data manipulation tools 
 * [PyTMD GitHub repository](https://github.com/tsutterley/pyTMD) &mdash; Python-based tidal prediction software 
 
@@ -178,26 +193,26 @@ An accumulated cost-distance connectivity layer used to constrain DEA Intertidal
 
 ### Ensemble Tidal Modelling
 
-The Ensemble Tidal Modelling approach was implemented to account for the varying performance and biases of existing global ocean tide models across the complex tidal regimes and coastal regions of Australia. The ensemble process utilises ancillary data to select and weight tidal models at any given coastal location based on how well each model correlates with local satellite-observed patterns of tidal inundation and water levels measured by satellite altimetry. A single ensemble tidal output was generated by combining the top three locally optimal models, and used for all downstream product workflows. This ensemble significantly improves the quality of the resulting intertidal DEMs compared to using a single tide model (Figure 6).
+The Ensemble Tidal Modelling approach was implemented to account for the varying performance and biases of existing global ocean tide models across the complex tidal regimes and coastal regions of Australia (Figure 6). The ensemble process utilises ancillary data to select and weight tidal models at any given coastal location based on how well each model correlates with local satellite-observed patterns of tidal inundation and also based on water levels measured by satellite altimetry. A single ensemble tidal output was generated by combining the top three locally optimal models and then this was used for all downstream product workflows.
 
-Ensemble tide modelling was implemented in the [eo-tides](https://github.com/GeoscienceAustralia/eo-tides) Python package which integrates satellite Earth observation data with tide modelling (Bishop-Taylor et al. 2025). It leverages tide modelling functionality from the [pyTMD](https://github.com/tsutterley/pyTMD) package. The ensemble was based on 9 commonly-used global ocean tidal models:
+Ensemble tide modelling was implemented in the [eo-tides](https://github.com/GeoscienceAustralia/eo-tides) Python package which integrates satellite Earth observation data with tide modelling. It leverages tide modelling functionality from the [pyTMD](https://github.com/tsutterley/pyTMD) package. The ensemble was based on 10 commonly-used global ocean tidal models:
 
 * Empirical Ocean Tide Model (EOT20; Hart-Davis et al., 2021)
 * Finite Element Solution tide models (FES2012, FES2014, FES2022; Carrère et al., 2012; Lyard et al., 2021; Carrère et al., 2022)
 * TOPEX/POSEIDON global tide models (TPXO8, TPXO9, TPXO10; Egbert and Erofeeva., 2002, 2010)
-* Global Ocean Tide models (GOT4.10, GOT5.6; Ray, 2013, Padman et al., 2018)
+* Global Ocean Tide models (GOT4.10, GOT5.5, GOT5.6; Ray, 2013, Padman et al., 2018)
 
-:::{figure} /_files/dea-intertidal/ensembletides_updated.*
+:::{figure} /_files/dea-intertidal/ensembletides.*
 :alt: Ensemble tide validation Figure
 
-Figure 6. Comparison of intertidal DEMs generated using (a) a single standard tide model (FES2014), and (b) the ensemble tide modelling approach.
+Figure 6. Global tide models validated at Australian Baseline Sea Level Monitoring Project (ABSLMP) and Global Extreme Sea Level Analysis (GESLA) tide gauges.
 :::
 
 ## Lineage
 
-The DEA Intertidal product suite extends the concepts developed in the [National Intertidal Digital Elevation Model (NIDEM)](/data/version-history/dea-intertidal-elevation-landsat-1.0.0) product, integrating higher resolution 10 m Sentinel-2 data with the original 30 m Landsat data to create annual elevation models and exposure product layers for Australia’s intertidal zone.
+The DEA Intertidal product suite extends the concepts developed in the DEA Intertidal Elevation (NIDEM) product, integrating higher resolution 10 m Sentinel-2 data with the original 30 m Landsat data to create annual elevation models and exposure product layers for Australia’s intertidal zone.   
 
-This shift to a more dynamic product suite is achieved through a pixel-based algorithm, replacing the waterline interpolation methods of NIDEM, and an improved tidal modelling process to better leverage the increased data resolution and density provided by the inclusion of Sentinel-2 data.
+This shift to a more dynamic product suite is achieved through a pixel-based algorithm, replacing the waterline interpolation methods of NIDEM, and an improved tidal modelling process to better leverage the increased data resolution and density provided by the inclusion of Sentinel-2 data.  
 
 ## Processing Steps
 
@@ -216,8 +231,6 @@ This shift to a more dynamic product suite is achieved through a pixel-based alg
 ## References
 
 ABARES, 2021. Catchment Scale Land Use of Australia - Update December 2020, Australian Bureau of Agricultural and Resource Economics and Sciences, Canberra
-
-Bishop-Taylor, R., Phillips, C., Sagar, S., Newey, V., & Sutterley, T., 2025. eo-tides: Tide modelling tools for large-scale satellite Earth observation analysis. *Journal of Open Source Software*, 10(109), 7786. https://doi.org/10.21105/joss.07786
 
 Bishop-Taylor, R., Sagar, S., Lymburner, L., Beaman, R.J., 2019. Between the tides: Modelling the elevation of Australia’s exposed intertidal zone at continental scale. *Estuarine, Coastal and Shelf Science* 23, 115–128.
 
