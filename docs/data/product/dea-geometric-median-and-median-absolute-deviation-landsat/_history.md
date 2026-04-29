@@ -10,9 +10,8 @@ The underlying cause was subsequently identified and fixed in the codebase.
 In late 2025, the entire GeoMAD data repository was programmatically reviewed to detect any duplicated 400 × 400 pixel data blocks within each tile, excluding blocks that were fully no‑data. No evidence of affected tiles was found.
 Based on this investigation, the issue is now considered resolved, and the notification has been moved to the change log.
 
-### 30 Apr 2025: The 2024 annual data is now available
-
-The 2024 annual data for this product was published on 30 April 2025. You are now able to [access the latest data](./?tab=access) via DEA Maps and other methods. [View the Tech Alert](https://communication.ga.gov.au/link/id/zzzz6811775c5a24b812Pzzzz6567c8b713b5b826/page.html).
+:::{include} ../../../_components/tech-alert-2024-annual-product-update.md
+:::
 
 ### Version 4.0.0
 
