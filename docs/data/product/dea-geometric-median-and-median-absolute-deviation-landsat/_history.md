@@ -1,5 +1,8 @@
 ## Changelog
 
+:::{include} ../_components/tech-alert-terrestrial-2025-annual-product-update.md
+:::
+
 <span id="v4.0.0"></span>
 
 ### 16 Feb 2026: Issue notification removed

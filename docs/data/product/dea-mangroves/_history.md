@@ -1,5 +1,8 @@
 ## Changelog
 
+:::{include} ../_components/tech-alert-terrestrial-2025-annual-product-update.md
+:::
+
 ### 10 Sep 2025: DEA data in the Digital Atlas of Australia
 
 The [DEA Coastlines](/data/product/dea-coastlines/), [DEA Mangroves](/data/product/dea-mangroves/), and [DEA Water Observations Multi-Year Summary](/data/product/dea-water-observations-statistics-landsat/) datasets have now been added to the Digital Atlas, joining [DEA Land Cover](/data/product/dea-land-cover-landsat/). This integration marks a significant milestone in how DEA data can be accessed, visualised, and applied. By embedding DEA products into the Digital Atlas, users can now interact with trusted Earth observation datasets alongside other authoritative national data — unlocking powerful new opportunities for cross-sector analysis and decision-making. 
