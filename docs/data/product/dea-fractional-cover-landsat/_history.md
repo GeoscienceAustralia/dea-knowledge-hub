@@ -1,6 +1,6 @@
 ## Changelog
 
-:::{include} ../../../_components/tech-alert-2024-annual-product-update.md
+:::{include} ../../../_components/tech-alert-2024-annual-product-update-summary.md
 :::
 
 ### Version: 2.5.0 and 2.5.1

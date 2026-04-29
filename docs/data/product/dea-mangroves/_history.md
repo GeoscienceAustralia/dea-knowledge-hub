@@ -8,7 +8,7 @@ The [DEA Coastlines](/data/product/dea-coastlines/), [DEA Mangroves](/data/produ
 
 [View the Tech Alert](https://communication.ga.gov.au/link/id/zzzz68c0df3fa6de5146Pzzzz6567c8b713b5b826/page.html)
 
-:::{include} ../../../_components/tech-alert-2024-annual-product-update.md
+:::{include} ../../../_components/tech-alert-2024-annual-product-update-summary.md
 :::
 
 ### Version 4.0.0

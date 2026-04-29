@@ -10,7 +10,7 @@ The underlying cause was subsequently identified and fixed in the codebase.
 In late 2025, the entire GeoMAD data repository was programmatically reviewed to detect any duplicated 400 × 400 pixel data blocks within each tile, excluding blocks that were fully no‑data. No evidence of affected tiles was found.
 Based on this investigation, the issue is now considered resolved, and the notification has been moved to the change log.
 
-:::{include} ../../../_components/tech-alert-2024-annual-product-update.md
+:::{include} ../../../_components/tech-alert-2024-annual-product-update-summary.md
 :::
 
 ### Version 4.0.0

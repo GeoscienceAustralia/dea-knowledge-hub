@@ -38,7 +38,7 @@ The issue was resolved by disabling GQA-based filtering in the affected areas, a
 
 Figure 1. Time series animation showing the frequency of missing data in the affected region. On the left is a true-colour time series of the yearly geomedian, for reference. On the right is a time series of the yearly clear observation count.
 
-:::{include} ../../../_components/tech-alert-2024-annual-product-update.md
+:::{include} ../../../_components/tech-alert-2024-annual-product-update-summary.md
 :::
 
 ### Version 2.0.0
