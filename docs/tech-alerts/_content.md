@@ -3,7 +3,7 @@
 
 ## 30 April 2026: DEA coastal products &mdash; annual update now available
 
-![]()
+![](/_files/tech-alerts/DEA_Coastlines_-_1988-2025_-_Cervantes_WA_-_Annual_coastline_data_showing_37_years_of_coastal_change.png)
 
 <figure>
     <figcaption>DEA Coastlines showing Cervantes, WA with annual coastline data of 37 years of coastal change (1988-2025).</figcaption>
@@ -17,7 +17,7 @@ The latest annual product update is now available for the following DEA coastal 
 
 These annual updates support year-to-year comparison of shoreline and coastal change, including in areas with rapid or significant coastal dynamics.
 
-![]()
+![](/_files/tech-alerts/DEA_Intertidal_-_2024_-_Arnhem_Land_Northern_Territory_-_Intertidal_elevation.png)
 
 <figure>
     <figcaption>DEA Intertidal shows Arnhem Land, Northern Territory in 2024 using Intertidal Elevation layer.</figcaption>
@@ -27,7 +27,7 @@ DEA users now have access to the latest annual coastal data, with 2025 Coastline
 
 The Intertidal and Tidal Composites products continue to be generated using a three-year rolling window (this release draws on 2023–2025 observations) to provide the best view of the median year, 2024. This supports robust year-to-year assessment of Australia’s dynamic coastal environments.
 
-![]()
+![](/_files/tech-alerts/DEA_Tidal_Composites_-_2024_-_Cambridge_Gulf_Western_Australia_-_False_colour_view_of_high_tide_flooding.png)
 
 <figure>
     <figcaption>DEA Tidal Composites false colour view of the Cambridge Gulf, Western Australia in 2024 showing high tide flooding.</figcaption>
