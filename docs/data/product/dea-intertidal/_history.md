@@ -1,5 +1,8 @@
 ## Changelog
 
+:::{include} ../../../_components/tech-alert-coastal-2024-2025-annual-product-update-summary.md
+:::
+
 ### DEA Intertidal 2.1.0
 
 In April 2026, DEA Intertidal was updated to version 2.1.0, and 2024 data was added to all layers in the product suite. This update also includes the following changes:

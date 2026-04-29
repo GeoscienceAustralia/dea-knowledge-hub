@@ -1,5 +1,8 @@
 ## Changelog
 
+:::{include} ../../../_components/tech-alert-coastal-2024-2025-annual-product-update-summary.md
+:::
+
 ### DEA Tidal Composites 1.1.0
 
 In April 2026, DEA Tidal Composites was updated to version 1.1.0, and 2024 data was added to all layers. This update also includes the following changes:
