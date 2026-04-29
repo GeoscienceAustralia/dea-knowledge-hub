@@ -1,6 +1,6 @@
 ## Changelog
 
-:::{include} ../_components/tech-alert-terrestrial-2025-annual-product-update.md
+:::{include} ../_components/tech-alert-terrestrial-2025-annual-product-update-summary.md
 :::
 
 ### 30 Apr 2025: The 2024 annual data is now available

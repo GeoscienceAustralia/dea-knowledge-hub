@@ -1,6 +1,6 @@
 ## Changelog
 
-:::{include} ../../../_components/tech-alert-terrestrial-2025-annual-product-update.md
+:::{include} ../../../_components/tech-alert-terrestrial-2025-annual-product-update-summary.md
 :::
 
 ### Version 4.0.0
