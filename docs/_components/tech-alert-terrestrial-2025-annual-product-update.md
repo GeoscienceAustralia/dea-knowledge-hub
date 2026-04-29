@@ -1,6 +1,6 @@
 ## 30 April 2026: DEA Terrestrial products - 2025 annual product now available
 
-![]() <!--TODO-->
+![](/_files/tech-alerts/DEA_Lake_Eyre_LandCover_L4_630x400.gif)
 
 <figure>
     <figcaption>DEA Land Cover classification (level 4) for 2025 showing Lake Eyre filling up with water following record breaking rainfall in the 2024-25 wet season, across Central Australia’s Channel Country.</figcaption>
@@ -18,7 +18,7 @@ The terrestrial products included in the 2025 annual product update are:
 * [DEA Water Observation Multi-Year Summary](/data/product/dea-water-observations-statistics-landsat/)
 * [DEA Mangroves](/data/product/dea-mangroves/)
 
-![]() <!--TODO-->
+![](/_files/tech-alerts/DEA_GeoMAD_false_colour_G_S1_NIR.gif)
 
 <figure>
     <figcaption>A DEA GeoMAD false colour (short wave infrared, near infrared, and green band) animation of Central Australia's Channel Country enhancing contrast in vegetation, water, and bare surfaces to highlight greening between 2024 and 2025 after record rainfall.</figcaption>
