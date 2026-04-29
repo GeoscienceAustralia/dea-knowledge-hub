@@ -1,6 +1,42 @@
 % See the DEA Tech Alerts documentation:
 % https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/tech_alerts_changelog.html
 
+## 30 April 2026: DEA coastal products &mdash; annual update now available
+
+![]()
+
+<figure>
+    <figcaption>DEA Coastlines showing Cervantes, WA with annual coastline data of 37 years of coastal change (1988-2025).</figcaption>
+</figure>
+
+The latest annual product update is now available for the following DEA coastal products:
+
+* [DEA Coastlines](/data/product/dea-coastlines/) &mdash; 2025 annual data
+* [DEA Intertidal](/data/product/dea-intertidal/) &mdash; 2024 annual data
+* [DEA Tidal Composites](/data/product/dea-tidal-composites/) &mdash; 2024 annual data
+
+These annual updates support year-to-year comparison of shoreline and coastal change, including in areas with rapid or significant coastal dynamics.
+
+![]()
+
+<figure>
+    <figcaption>DEA Intertidal shows Arnhem Land, Northern Territory in 2024 using Intertidal Elevation layer.</figcaption>
+</figure>
+
+DEA users now have access to the latest annual coastal data, with 2025 Coastlines and 2024 Intertidal and Tidal Composites available for analysis and comparison.
+
+The Intertidal and Tidal Composites products continue to be generated using a three-year rolling window (this release draws on 2023–2025 observations) to provide the best view of the median year, 2024. This supports robust year-to-year assessment of Australia’s dynamic coastal environments.
+
+![]()
+
+<figure>
+    <figcaption>DEA Tidal Composites false colour view of the Cambridge Gulf, Western Australia in 2024 showing high tide flooding.</figcaption>
+</figure>
+
+Together, these updates provide a nationally consistent view of Australia’s coastlines and align coastal datasets with DEA’s annual terrestrial data cycle, helping users confidently monitor and compare change across land, water and coastal zones.
+
+[View the Tech Alert]()
+
 ## 15 April 2026: Upcoming updates to DEA Water Observations Multi-Year, Mangroves and Land Cover summary products
 
 As part of Digital Earth Australia’s (DEA) planned 2025 annual product update in the coming weeks, [DEA Water Observations Multi-Year Summary data](/data/product/dea-water-observations-statistics-landsat/) will be made available to include an additional two years of data. The existing version will be replaced with the expanded time series.
