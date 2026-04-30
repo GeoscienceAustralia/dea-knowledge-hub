@@ -1,4 +1,4 @@
-### 30 April 2026: Annual update now available
+### 30 Apr 2026: Annual update now available
 
 The latest annual product update is now available for the following DEA coastal products:
 
