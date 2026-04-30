@@ -1,5 +1,8 @@
 ## Changelog
 
+:::{include} ../../../_components/tech-alert-terrestrial-2025-annual-product-update-summary.md
+:::
+
 :::{include} ../../../_components/tech-alert-2024-annual-product-update-summary.md
 :::
 

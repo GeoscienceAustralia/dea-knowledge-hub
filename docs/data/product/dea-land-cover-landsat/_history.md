@@ -1,5 +1,8 @@
 ## Changelog
 
+:::{include} ../../../_components/tech-alert-terrestrial-2025-annual-product-update-summary.md
+:::
+
 ### 10 Sep 2025: DEA Land Cover continental mosaics
 
 We've added a new way to access our [DEA Land Cover](/data/product/dea-land-cover-landsat/) product; it is now available as continental mosaics, in Cloud-optimised GeoTIFF (COG) format. These mosaics provide a single-file representation of land cover data for **each year available** in the time series, removing the complexity of managing tiled datasets and making it easier to work with land cover data across Australia. 
