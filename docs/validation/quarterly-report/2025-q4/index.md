@@ -112,8 +112,21 @@ so few measurements have been made from the relatively new Sentinel-2C platform,
  
 ## Fractional Cover Validation
 
+::::{grid} 2
+
+:::{grid-item}
 :::{figure} ./FCSummary-L8.png
+:width: 100%
+:::
+:::
+
+:::{grid-item}
 :::{figure} ./FCSummary-L9.png
+:width: 100%
+:::
+:::
+
+::::
 
 The above Figures show a comparison of this Quarter's validation data (shown in blue) vs. previous data (black) for Landsat 8 and 9.
 
