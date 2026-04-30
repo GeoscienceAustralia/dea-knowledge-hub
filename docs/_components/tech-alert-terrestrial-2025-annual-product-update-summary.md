@@ -1,4 +1,4 @@
-### 30 April 2026: 2025 annual update now available
+### 30 Apr 2026: 2025 annual update now available
 
 Digital Earth Australia (DEA) delivers refreshed 2025 annual data for a suite of terrestrial and inland water products, ensuring they reflect the most recent full calendar year of observations and remain consistent across the DEA product catalogue. 
 
