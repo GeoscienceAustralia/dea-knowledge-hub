@@ -110,6 +110,13 @@ For Sentinel-2B, this quarter has seen an overall improvement in validation resu
 For Sentinel-2C, this quarter has seen an overall degradation in validation results. There were 2 field site comparison measurements. The degradation appears to be largely due to the NSW6 field site measurement and that, since
 so few measurements have been made from the relatively new Sentinel-2C platform, a single measurement can have a large effect on overall results.
  
+## Fractional Cover Validation
+
+:::{figure} ./FCSummary-L8.png
+:::{figure} ./FCSummary-L9.png
+
+The above Figures show a comparison of this Quarter's validation data (shown in blue) vs. previous data (black) for Landsat 8 and 9.
+
 ## Acknowledgments
  
 The field validation data were collected by Geoscience Australia. 
