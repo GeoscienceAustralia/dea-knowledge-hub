@@ -1,7 +1,7 @@
 % See the DEA Tech Alerts documentation:
 % https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/tech_alerts_changelog.html
 
-## 30 April 2026: DEA Terrestrial products &mdash; 2025 annual product now available
+## 30 April 2026: DEA Terrestrial products &mdash; 2025 annual update now available
 
 ![](/_files/tech-alerts/lake_eyre_l4_animation_630x400.gif)
 
