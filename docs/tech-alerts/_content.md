@@ -3,7 +3,7 @@
 
 ## 30 April 2026: DEA Terrestrial products &mdash; 2025 annual product now available
 
-![](/_files/tech-alerts/DEA_Lake_Eyre_LandCover_L4_630x400.gif)
+![](/_files/tech-alerts/lake_eyre_l4_animation_630x400.gif)
 
 <figure>
     <figcaption>DEA Land Cover classification (level 4) for 2025 showing Lake Eyre filling up with water following record breaking rainfall in the 2024-25 wet season, across Central Australia’s Channel Country.</figcaption>
