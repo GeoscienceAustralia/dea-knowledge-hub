@@ -33,7 +33,7 @@ These updated datasets support consistent, year‑to‑year analysis of Australi
 
 By refreshing these products on an annual cycle, DEA continues to provide a nationally consistent foundation for land and water analysis, aligned across the broader DEA product catalogue.
 
-[View the Tech Alert]() <!--TODO-->
+[View the Tech Alert](https://communication.ga.gov.au/link/id/zzzz69f2bd4eb04f7853Pzzzz6567c8b713b5b826/page.html)
 
 ## 15 April 2026: Upcoming updates to DEA Water Observations Multi-Year, Mangroves and Land Cover summary products
 
