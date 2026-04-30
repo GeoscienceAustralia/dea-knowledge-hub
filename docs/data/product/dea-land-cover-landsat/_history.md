@@ -1,5 +1,8 @@
 ## Changelog
 
+:::{include} ../../../_components/tech-alert-terrestrial-2025-annual-product-update-summary.md
+:::
+
 ### 10 Sep 2025: DEA Land Cover continental mosaics
 
 We've added a new way to access our [DEA Land Cover](/data/product/dea-land-cover-landsat/) product; it is now available as continental mosaics, in Cloud-optimised GeoTIFF (COG) format. These mosaics provide a single-file representation of land cover data for **each year available** in the time series, removing the complexity of managing tiled datasets and making it easier to work with land cover data across Australia. 
@@ -38,9 +41,8 @@ The issue was resolved by disabling GQA-based filtering in the affected areas, a
 
 Figure 1. Time series animation showing the frequency of missing data in the affected region. On the left is a true-colour time series of the yearly geomedian, for reference. On the right is a time series of the yearly clear observation count.
 
-### 30 Apr 2025: The 2024 annual data is now available
-
-The 2024 annual data for this product was published on 30 April 2025. You are now able to [access the latest data](./?tab=access) via DEA Maps and other methods. [View the Tech Alert](https://communication.ga.gov.au/link/id/zzzz6811775c5a24b812Pzzzz6567c8b713b5b826/page.html).
+:::{include} ../../../_components/tech-alert-2024-annual-product-update-summary.md
+:::
 
 ### Version 2.0.0
 

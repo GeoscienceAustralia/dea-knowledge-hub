@@ -91,6 +91,9 @@ access_links_custom:
     link: ./?tab=access#access-guides
     name: How to stream data from AWS
     description: null
+  - type: data
+    link: https://thredds.nci.org.au/thredds/catalog/jw04/ga_s2_tidal_composites_cyear_3/catalog.html
+    name: Access the data on NCI
 
   - type: code_example
     link: https://github.com/GeoscienceAustralia/dea-intertidal
