@@ -12,4 +12,4 @@ The Intertidal and Tidal Composites products continue to be generated using a th
 
 Together, these updates provide a nationally consistent view of Australia’s coastlines and align coastal datasets with DEA’s annual terrestrial data cycle, helping users confidently monitor and compare change across land, water and coastal zones.
 
-[View the Tech Alert]()
+[View the Tech Alert](https://communication.ga.gov.au/link/id/zzzz69f2e31c01f73761Pzzzz6567c8b713b5b826/page.html)
