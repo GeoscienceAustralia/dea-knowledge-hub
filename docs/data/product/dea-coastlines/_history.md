@@ -1,5 +1,8 @@
 ## Changelog
 
+:::{include} ../../../_components/tech-alert-coastal-2024-2025-annual-product-update-summary.md
+:::
+
 ### DEA Coastlines 3.1.0 and 2025 annual data
 
 In April 2026, the DEA Coastlines product [was upgraded to version 3.1.0](https://github.com/GeoscienceAustralia/dea-coastlines/releases/tag/3.1.0). 
