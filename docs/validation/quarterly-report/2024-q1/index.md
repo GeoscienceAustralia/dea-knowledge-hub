@@ -94,6 +94,33 @@ results over all time.
 
 Since no new measurements were taken during this quarter, validation performance remains the same.
  
+## Fractional Cover Validation
+
+::::{grid} 2
+
+:::{grid-item}
+:::{figure} ./FCSummary-L8.png
+:width: 100%
+:::
+:::
+
+:::{grid-item}
+:::{figure} ./FCSummary-L9.png
+:width: 100%
+:::
+:::
+
+::::
+
+The above Figures show a comparison of this Quarter's validation data (shown in blue) vs. previous data (black) for Landsat 8 and 9. The diagonal dashed lines show the one-to-one
+correspondence and NOT the line of best fit between the points. The line of best fit is represented by the parameters shown in the bottom-right of each panel, including $R^2$ correlation
+coefficient, slope, intercept and standard deviation. Blue points, which include data for this Quarter, also show uncertainty error bars. Black dots represent data that were collected
+prior to this Quarter. For each Figure, panels show the four Fractional Cover (FC) parameters: Bare Soil (BS, top-left), Non-Photosynthetic Vegetation (NPV, top-right), Photosynthetic
+Vegetation (PV, bottom-left) and Unmixing Error (UE, bottom-right).
+
+Note that the Fractional Cover (FC) comparison does not compare results with a 'ground truth', but is a comparison of derived FC parameters based on satellite SR (vertical axis) and field
+SR (horizontal axis).
+
 ## Acknowledgments
  
 The field validation data were collected by Geoscience Australia. 
