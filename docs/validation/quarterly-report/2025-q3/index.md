@@ -77,14 +77,14 @@ platform.
 :header-rows: 1
 
 "Satellite platform","Mean band-by-band scatter","Maximum band-by-band scatter"
-"Landsat 8","2.2%","2.7%"
-"Landsat 9","8.9%","12.6%"
-"Sentinel-2B","2.3%","3.9%"
-"Sentinel-2C","12.8%","28.7%"
+"Landsat 8","2.4%","3.2%"
+"Landsat 9","7.3%","11.8%"
+"Sentinel-2B","3.7%","7.6%"
+"Sentinel-2C","17.4%","38.7%"
 :::
 
-For example, the Table shows that each Landsat 8 band is typically validated to 2.2%, with the worst performance
-of a band being 2.7%. Note that there is much larger scatter for Landsat 9 and Sentinel-2C, indicating higher uncertainty in validation.
+For example, the Table shows that each Landsat 8 band is typically validated to 2.4%, with the worst performance
+of a band being 3.2%. Note that there is much larger scatter for Landsat 9 and Sentinel-2C, indicating higher uncertainty in validation.
 This is because there have been fewer field site measurements to coincide with the relatively new Landsat 9 and Sentinel-2C platforms.
 
 ## Effect on Cumulative Validation Results
@@ -92,8 +92,43 @@ This is because there have been fewer field site measurements to coincide with t
 This section discusses the effect that this quarter’s validation results have had on the total validation
 results over all time.
 
-Since no new measurements were taken during this quarter, validation performance remains the same.
+For Landsat 8, this quarter has seen an overall improvement in validation results. There was 1 field site comparison measurement. Overall, the field data for Landsat 8 overpasses continues
+ to improve the validation reliability.
+
+For Landsat 9, this quarter has seen no change in validation results. There were no field site comparison measurements.
+
+For Sentinel-2B, this quarter has seen an overall improvement in validation results. There was 1 field site comparison measurement. Overall, the field data for Sentinel-2B overpasses conti
+nue to improve the validation reliability.
+
+For Sentinel-2C, this quarter has seen no change in validation results. There were no field site comparison measurements.
  
+## Fractional Cover Validation
+
+::::{grid} 2
+
+:::{grid-item}
+:::{figure} ./FCSummary-L8.png
+:width: 100%
+:::
+:::
+
+:::{grid-item}
+:::{figure} ./FCSummary-L9.png
+:width: 100%
+:::
+:::
+
+::::
+
+The above Figures show a comparison of this Quarter's validation data (shown in blue) vs. previous data (black) for Landsat 8 and 9. The diagonal dashed lines show the one-to-one
+correspondence and NOT the line of best fit between the points. The line of best fit is represented by the parameters shown in the bottom-right of each panel, including $R^2$ correlation
+coefficient, slope, intercept and standard deviation. Blue points, which include data for this Quarter, also show uncertainty error bars. Black dots represent data that were collected
+prior to this Quarter. For each Figure, panels show the four Fractional Cover (FC) parameters: Bare Soil (BS, top-left), Non-Photosynthetic Vegetation (NPV, top-right), Photosynthetic
+Vegetation (PV, bottom-left) and Unmixing Error (UE, bottom-right).
+
+Note that the Fractional Cover (FC) comparison does not compare results with a 'ground truth', but is a comparison of derived FC parameters based on satellite SR (vertical axis) and field
+SR (horizontal axis).
+
 ## Acknowledgments
  
 The field validation data were collected by Geoscience Australia. 

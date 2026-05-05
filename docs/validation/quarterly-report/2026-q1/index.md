@@ -1,4 +1,4 @@
-# 2024 Q4: DEA Quarterly Validation Report
+# 2026 Q1: DEA Quarterly Validation Report
 
 :::{contents} In this report
 :local:
@@ -7,16 +7,16 @@
 
 ## Executive Summary
 
-This Quarterly report summarises validation for DEA surface reflectance products for Quarter 4 (October-December) of 2024
+This Quarterly report summarises validation for DEA surface reflectance products for Quarter 1 (January-March) of 2026
 and presents aggregate validation results to the end of this quarter.
 
-* During this quarter, no new measurements were taken.
-* Validation of Landsat 8, 9 and Sentinel-2A, -2B all remained the same.
-* On an averaged band-by-band basis, Landsat 8 is validated to 2.4%, Landsat 9 is validated to 11.5%, Sentinel-2A is validated to 2.2% and Sentinel-2B is validated to 2.5%.
+* During this quarter, a total of 2 measurements were taken across 1 field site, to capture 3 overpasses.
+* Validation of Landsat 8, 9 and Sentinel-2C all improved. Validation of Sentinel-2B remained the same.
+* On an averaged band-by-band basis, Landsat 8 is validated to 2.4%, Landsat 9 is validated to 6.8%, Sentinel-2B is validated to R3.5 and Sentinel-2C is validated to 17.3%.
 
 ## Introduction
 
-This quarterly report presents a summary of results from Q4 2024 from the Digital Earth
+This quarterly report presents a summary of results from Q1 2026 from the Earth Observation
 Calibration/Validation team. The report is presented in the following sections:
 
 * Background &mdash; this section outlines the context around this work, with particular attention paid ton historical work leading up to this quarter.
@@ -28,8 +28,8 @@ Calibration/Validation team. The report is presented in the following sections:
 ## Background
 
 The Digital Earth branch within Geoscience Australia offers a suite of Earth observation products, based on data from
-both Landsat and Sentinel platforms. The core products are Landsat 8 and 9 and Sentinel-2A and -2B surface reflectance (SR).
-To deliver these products with confidence, the Calibration/Validation team perform vicarious validation
+both Landsat and Sentinel platforms. The core products are Landsat 8 and 9 and Sentinel-2B and -2C surface reflectance (SR).
+To deliver these products with confidence, the EO Calibration/Validation team perform vicarious validation
 by measuring field sites with hand-held equipment or an Unstaffed Aerial Vehicle (UAV; commonly known as drone) equipment
 close to the time of an overpass. This work began with Phase 1, where measurements were performed by multiple groups
 across continental Australia. Full details on the results and methodology can be found in the Phase 1 report.
@@ -43,21 +43,27 @@ based on the most recent measurements.
  
 ## Summary of Validation Work
 
-No new sites were measured.
+1 site was measured, with 2 individual field site captures. The Table below summarises these captures.
 
 :::{csv-table} Summary of field site captures
 :header-rows: 1
-
 "Site capture (Date, Field site, Overpasses)","Latitude, Longitude (WGS84)","Instrument","Comments"
+"<a href='/validation/site-report/2026-01-23-HALL/'>2026-01-23 HALL: L8</a>","-35.182133, 149.066000, 142.104200","Hand-held SR-3500","Mediocre matchup"
+"<a href='/validation/site-report/2026-02-17-HALL/'>2026-02-17 HALL: L9, S-2C</a>","-35.182133, 149.066000","Hand-held ASD FR-4","L9: good matchup; S-2C: excellent matchup"
 :::
  
+:::{figure} ./2026Q1_Locations.png
+
+The Figure shows the locations of the field sites measured in this quarter.
+::: 
+
 ## Comments on Individual Sites of Interest
 
 No sites of particular interest.
      
 ## Summary of Band-by-Band Matching
 
-:::{figure} ./2024Q4-Matchup.png
+:::{figure} ./2026Q1-Matchup.png
 
 The Figure shows comparison data for each platform. Black dots represent data that were collected prior to this quarter.
 Coloured symbols represent data that were collected in this quarter. The diagonal line in each panel shows the
@@ -77,22 +83,28 @@ platform.
 :header-rows: 1
 
 "Satellite platform","Mean band-by-band scatter","Maximum band-by-band scatter"
-"Landsat 8","2.5%","3.5%"
-"Landsat 9","17.0%","42.3%"
-"Sentinel-2A","2.6%","3.5%"
-"Sentinel-2B","4.0%","10.2%"
+"Landsat 8","2.4%","3.2%"
+"Landsat 9","6.8%","10.9%"
+"Sentinel-2B","3.5%","7.3%"
+"Sentinel-2C","17.3%","34.7%"
 :::
 
-For example, the Table shows that each Landsat 8 band is typically validated to 2-3%, with the worst performance
-of a band being 3.5%. Note that there is much larger scatter for Landsat 9, indicating higher uncertainty in validation.
-This is because there have been fewer field site measurements to coincide with the relatively new Landsat 9 platform.
+For example, the Table shows that each Landsat 8 band is typically validated to 2.4%, with the worst performance
+of a band being 3.2%. Note that there is much larger scatter for Landsat 9 and Sentinel-2C, indicating higher uncertainty in validation.
+This is because there have been fewer field site measurements to coincide with the relatively new Landsat 9 and Sentinel-2C platforms.
 
 ## Effect on Cumulative Validation Results
 
 This section discusses the effect that this quarter’s validation results have had on the total validation
 results over all time.
 
-Since no new measurements were taken during this quarter, validation performance remains the same.
+For Landsat 8, this quarter has seen an overall degradation in validation results. There was 1 field site comparison measurement. Overall, the field data for Landsat 8 overpasses has degraded the validation reliability.
+
+For Landsat 9, this quarter has seen an overall improvement in validation results. There was 1 field site comparison measurement. Overall, the field data for Landsat 9 overpasses continue to improve the validation reliability.
+
+For Sentinel-2B, this quarter has seen no change in validation results. There were no field site comparison measurements.
+
+For Sentinel-2C, this quarter has seen an overall improvement in validation results. There was 1 field site comparison measurement. Overall, the field data for Sentinel-2C overpasses continue to improve the validation reliability.
  
 ## Fractional Cover Validation
 

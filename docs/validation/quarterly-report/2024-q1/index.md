@@ -77,14 +77,14 @@ platform.
 :header-rows: 1
 
 "Satellite platform","Mean band-by-band scatter","Maximum band-by-band scatter"
-"Landsat 8","2.6%","3.3%"
-"Landsat 9","9.9%","27%"
-"Sentinel-2A","2.4%","2.9%"
-"Sentinel-2B","2.5%","4.6%"
+"Landsat 8","2.9%","3.9%"
+"Landsat 9","15.5%","37%"
+"Sentinel-2A","2.7%","3.6%"
+"Sentinel-2B","2.8%","4.1%"
 :::
 
 For example, the Table shows that each Landsat 8 band is typically validated to 2-3%, with the worst performance
-of a band being 3.1%. Note that there is much larger scatter for Landsat 9, indicating higher uncertainty in validation.
+of a band being 3.9%. Note that there is much larger scatter for Landsat 9, indicating higher uncertainty in validation.
 This is because there have been fewer field site measurements to coincide with the relatively new Landsat 9 platform.
 
 ## Effect on Cumulative Validation Results
