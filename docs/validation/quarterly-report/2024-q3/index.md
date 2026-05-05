@@ -11,9 +11,9 @@ This Quarterly report summarises validation for DEA surface reflectance products
 and presents aggregate validation results to the end of this quarter.
 
 * During this quarter, a total of 9 measurements were taken across 6 field sites, to capture 11 overpasses.
-* Validation of Landsat 8 and 9 and Sentinel-2A all improved in accuracy, taking into account the data from this quarter.
-* Validation of Sentinel-2B degraded slightly, which is likely because the only site measurement matched to a Sentinel-2B overpass was over a challenging site with complex terrain and surface morphology.
-* On an averaged band-by-band basis, Landsat 8 is validated to 2.4%, Landsat 9 is validated to 13.4%, Sentinel-2A is validated to 2.2% and Sentinel-2B is validated to 2.6%.
+* Validation of Landsat 8 and Sentinel-2A all improved in accuracy, taking into account the data from this quarter.
+* Validation of Landsat 9 and Sentinel-2B degraded slightly, which is likely because the only site measurement matched to a Sentinel-2B overpass was over a challenging site with complex terrain and surface morphology.
+* On an averaged band-by-band basis, Landsat 8 is validated to 2.5%, Landsat 9 is validated to 17.0%, Sentinel-2A is validated to 2.6% and Sentinel-2B is validated to 4.0%.
 
 ## Introduction
 

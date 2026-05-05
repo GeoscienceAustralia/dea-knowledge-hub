@@ -12,7 +12,7 @@ and presents aggregate validation results to the end of this quarter.
 
 * During this quarter, no new measurements were taken.
 * Validation of Landsat 8, 9 and Sentinel-2A, -2B all remained the same.
-* On an averaged band-by-band basis, Landsat 8 is validated to 2.4%, Landsat 9 is validated to 11.5%, Sentinel-2A is validated to 2.2% and Sentinel-2B is validated to 2.5%.
+* On an averaged band-by-band basis, Landsat 8 is validated to 2.5%, Landsat 9 is validated to 17.0%, Sentinel-2A is validated to 2.6% and Sentinel-2B is validated to 4.0%.
 
 ## Introduction
 

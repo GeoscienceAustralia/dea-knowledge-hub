@@ -12,7 +12,7 @@ and presents aggregate validation results to the end of this quarter.
 
 * During this quarter, a total of 5 measurements were taken across 5 field sites, to capture 9 overpasses.
 * Validation of Landsat 8, 9 and Sentinel-2B all improved. Validation of Sentinel-2C worsened.
-* On an averaged band-by-band basis, Landsat 8 is validated to 2.1%, Landsat 9 is validated to 8.2%, Sentinel-2B is validated to 2.3% and Sentinel-2C is validated to 21.1%.
+* On an averaged band-by-band basis, Landsat 8 is validated to 2.3%, Landsat 9 is validated to 6.9%, Sentinel-2B is validated to 3.5% and Sentinel-2C is validated to 21.5%.
 
 ## Introduction
 
