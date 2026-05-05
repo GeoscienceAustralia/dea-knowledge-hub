@@ -10,9 +10,9 @@
 This Quarterly report summarises validation for DEA surface reflectance products for Quarter 3 (July-September) of 2025
 and presents aggregate validation results to the end of this quarter.
 
-* During this quarter, no new measurements were taken.
-* Validation of Landsat 8, 9 and Sentinel-2A, -2B all remained the same.
-* On an averaged band-by-band basis, Landsat 8 is validated to 2.2%, Landsat 9 is validated to 5.0%, Sentinel-2B is validated to 3.4% and Sentinel-2C is validated to 12.8%.
+* During this quarter, 1 new measurement was taken.
+* Validation of Landsat 8 and Sentinel-2B improved, whilst validation of Landsat 9 and Sentinel-2C remained the same.
+* On an averaged band-by-band basis, Landsat 8 is validated to 2.4%, Landsat 9 is validated to 7.3%, Sentinel-2B is validated to 3.7% and Sentinel-2C is validated to 17.4%.
 
 ## Introduction
 
@@ -43,14 +43,20 @@ based on the most recent measurements.
  
 ## Summary of Validation Work
 
-No new sites were measured.
+1 site was measured, with 1 individual field site capture. The Table below summarises these captures.
 
 :::{csv-table} Summary of field site captures
 :header-rows: 1
 
 "Site capture (Date, Field site, Overpasses)","Latitude, Longitude (WGS84)","Instrument","Comments"
+"<a href='/validation/site-report/2025-09-18-MUL/'>2025-09-18 MUL: L8, S-2B</a>","-35.123400, 148.863117","Hand-held ASD FR-4","L8: excellent matchup; S-2B: excellent matchup"
 :::
  
+:::{figure} ./2025Q3_Locations.png
+
+The Figure shows the locations of the field sites measured in this quarter.
+::: 
+
 ## Comments on Individual Sites of Interest
 
 No sites of particular interest.
