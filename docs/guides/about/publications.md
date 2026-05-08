@@ -59,6 +59,8 @@ Wang, L-W, Garthwaite, M, Du, Z, Deane, A, McCubbine, J, Wheeler, M, O'Hehir, A 
 
 Yuan, F, Repse, M, Leith, A, Rosenqvist, A, Milcinski, G, Moghaddam, NF, Dhar, T, Burton, C, Hall, L, Jorand, C & Lewis, A 2022, 'An operational analysis ready radar backscatter dataset for the African continent', *Remote Sensing*, vol. 14, no. 2, <https://doi.org/10.3390/rs14020351>.
 
+Zhao, L, Liu, J, Peters, S, Li, J, Oliver, S & Mueller, N 2022, 'Investigating the impact of using IR bands on early fire smoke detection from Landsat imagery with a lightweight CNN model', *Remote Sensing*, vol. 14, no. 13, <https://doi.org/10.3390/rs14133047>.
+
 # 2021
 Bishop-Taylor, R, Nanson, R, Sagar, S & Lymburner, L 2021, 'Mapping Australia's dynamic coastline at mean sea level using three decades of Landsat imagery', *Remote Sensing of Environment*, vol. 267, <https://doi.org/10.1016/j.rse.2021.112734>.
 
@@ -114,6 +116,8 @@ Ticehurst, C, Zhou, ZS, Lehmann, E, Yuan, F, Thankappan, M, Rosenqvist, A, Lewis
 
 Wang, L-W, Li, F, Alam, I, Jupp, D, Oliver, S & Thankappan, M 2019, 'Analysis Ready Data sensitivity analyses', in *IGARSS 2019 - 2019 IEEE International Geoscience and Remote Sensing Symposium*, pp. 5642-5, <https://doi.org/10.1109/IGARSS.2019.8898667>.
 
+Yuan, F, Ticehurst, C, Zhou, Z-S, Lehmann, E, Lewis, B, Rosenqvist, A, Chua, S & Mueller, N 2019, 'Water mapping with SAR and Optical Data Cube', in *2019 6th Asia-Pacific Conference on Synthetic Aperture Radar (APSAR)*, pp. 1-4, <https://doi.org/10.1109/APSAR46974.2019.9048521>.
+
 # 2018
 Doxani, G, Vermote, E, Roger, JC, Gascon, F, Adriaensen, S, Frantz, D, Hagolle, O, Hollstein, A, Kirches, G, Li, F, Louis, J, Mangin, A, Pahlevan, N, Pflug, B & Vanhellemont, Q 2018, 'Atmospheric correction inter-comparison exercise', Remote Sensing, vol. 10, no. 2, <https://doi.org/10.3390/rs10020352>.
 
@@ -161,7 +165,7 @@ Li, F, Jupp, DLB, Thankappan, M, Wang, LW, Sixsmith, J, Lewis, A & Held, A 2015,
 Tan, P, Sagar, S, Mueller, N, Lymburner, L, Thankappan, M & Lewis, A 2015, 'A surface cover change detection method based on the Australian Geoscience Data Cube', in *21st International Congress on Modelling and Simulation*, Gold Coast, Australia.
 
 # Before 2015
-Guerschman, JP, Warren, G, Byrne, G, Lymburner, L, Mueller, N & Dijk, AV 2011, MODIS-based standing water detection for flood and large reservoir mapping: algorithm development and applications for the Australian continent.
+Guerschman, JP, Warren, G, Byrne, G, Lymburner, L, Mueller, N & Dijk, AV 2011, MODIS-based standing water detection for flood and large reservoir mapping: algorithm development and applications for the Australian continent, 1835-095X, *CSIRO: Water for a Healthy Country National Research Flagship Report*, Canberra, Australia, <https://www.researchgate.net/publication/237733601_MODIS-based_standing_water_detection_for_flood_and_large_reservoir_mapping_algorithm_development_and_applications_for_the_Australian_continent>
 
 Li, F, Jupp, DLB, Lymburner, L, Tan, P, McIntyre, A, Thankappan, M, Lewis, A & Held, A 2013, Characteristics of MODIS BRDF shape and its relationship with land cover classes in Australia, *20th international congress on modelling and simulation*, Adelaide, Australia.
 
@@ -174,6 +178,8 @@ Li, F, Jupp, DLB, Thankappan, M, Lymburner, L, Mueller, N, Lewis, A & Held, A 20
 Li, F, Jupp, DLB, Thankappan, M, Paget, M, Lewis, A & Held, A 2013, 'The variability of satellite derived surface BRDF shape over Australia from 2001 to 2011', in *2013 IEEE International Geoscience and Remote Sensing Symposium - IGARSS*, pp. 255-8, <https://doi.org/10.1109/IGARSS.2013.6721140>.
 
 Lymburner, L, McIntyre, A, Li, F, Ip, A, Thankappan, M & Sixsmith, J 2013, 'Creating multi-sensor time series using data from Landsat-5 TM and Landsat-7 ETM+ to characterise vegetation dynamics', in *2013 IEEE International Geoscience and Remote Sensing Symposium - IGARSS*, pp. 961-3, <https://doi.org/10.1109/IGARSS.2013.6721321>.
+
+Ravanbakhsh, M, Wang, LW, Fraser, CS & Lewis, A 2012, 'Generation of the Australian geographic reference image through long-strip ALOS prism orientation', *The International Archives of the Photogrammetry, Remote Sensing and Spatial Information Sciences*, vol. XXXIX-B1, pp. 225–9, <https://doi.org/10.5194/isprsarchives-XXXIX-B1-225-2012>.
 
 Sixsmith, J, Oliver, S & Lymburner, L 2013, 'A hybrid approach to automated landsat pixel quality', in *2013 IEEE International Geoscience and Remote Sensing Symposium - IGARSS*, pp. 4146-9, <https://doi.org/10.1109/IGARSS.2013.6723746>.
 
