@@ -1,5 +1,7 @@
 # See the Product metadata fields documentation: https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/product_metadata_fields.html
 
+# Sentinel-2 band wavelengths and bandwidths are from this source: https://sentiwiki.copernicus.eu/web/s2-mission
+
 # Bands
 
 bands_footnote: "For all 'nbart_' bands, Surface Reflectance is scaled between 0 and 10,000."
@@ -13,7 +15,7 @@ bands_table:
     nodata: -999
     units: null
     type: int16
-    description: null
+    description: "NBART surface reflectance useful for shallow water and fine atmospheric particles like dust and smoke. Equivalent wavelength: 442.7 nm; Bandwidth: 20 nm."
   - name: nbart_blue
     aliases:
       - nbart_band02
@@ -22,7 +24,7 @@ bands_table:
     nodata: -999
     units: null
     type: int16
-    description: null
+    description: "NBART surface reflectance for the blue spectral band. Equivalent wavelength: 492.7 nm; Bandwidth: 64 nm."
   - name: nbart_green
     aliases:
       - nbart_band03
@@ -31,7 +33,7 @@ bands_table:
     nodata: -999
     units: null
     type: int16
-    description: null
+    description: "NBART surface reflectance for the green spectral band. Equivalent wavelength: 559.8 nm; Bandwidth: 35 nm."
   - name: nbart_red
     aliases:
       - nbart_band04
@@ -40,7 +42,7 @@ bands_table:
     nodata: -999
     units: null
     type: int16
-    description: null
+    description: "NBART surface reflectance for the red spectral band. Equivalent wavelength: 664.6 nm; Bandwidth: 30 nm."
   - name: nbart_red_edge_1
     aliases:
       - nbart_band05
@@ -49,7 +51,7 @@ bands_table:
     nodata: -999
     units: null
     type: int16
-    description: null
+    description: "NBART surface reflectance of the near-infrared (NIR) range useful for detecting vegetation. Equivalent wavelength: 704.1 nm; Bandwidth: 14 nm."
   - name: nbart_red_edge_2
     aliases:
       - nbart_band06
@@ -58,7 +60,7 @@ bands_table:
     nodata: -999
     units: null
     type: int16
-    description: null
+    description: "NBART surface reflectance of the near-infrared range (NIR) useful for detecting vegetation. Equivalent wavelength: 740.5 nm; Bandwidth: 14 nm."
   - name: nbart_red_edge_3
     aliases:
       - nbart_band07
@@ -67,7 +69,7 @@ bands_table:
     nodata: -999
     units: null
     type: int16
-    description: null
+    description: "NBART surface reflectance of the near-infrared (NIR) range useful for detecting vegetation. Equivalent wavelength: 782.8 nm; Bandwidth: 20 nm."
   - name: nbart_nir_1
     aliases:
       - nbart_band08
@@ -77,7 +79,7 @@ bands_table:
     nodata: -999
     units: null
     type: int16
-    description: null
+    description: "NBART surface reflectance of the near-infrared (NIR) range. Equivalent wavelength: 832.8 nm; Bandwidth: 118 nm."
   - name: nbart_nir_2
     aliases:
       - nbart_band8a
@@ -86,7 +88,7 @@ bands_table:
     nodata: -999
     units: null
     type: int16
-    description: null
+    description: "NBART surface reflectance of the near-infrared (NIR) range which is narrower than 'nbart_nir_1'. Equivalent wavelength: 864.7 nm; Bandwidth: 20 nm."
   - name: nbart_swir_2
     aliases:
       - nbart_band11
@@ -97,7 +99,7 @@ bands_table:
     nodata: -999
     units: null
     type: int16
-    description: null
+    description: "NBART surface reflectance of the short-wave infrared (SWIR-2) range. Equivalent wavelength: 1613.7 nm; Bandwidth: 88 nm."
   - name: nbart_swir_3
     aliases:
       - nbart_band12
@@ -107,127 +109,15 @@ bands_table:
     nodata: -999
     units: null
     type: int16
-    description: null
-  - name: oa_fmask
-    aliases:
-      - fmask
-    resolution: 20
-    nodata: 0
-    units: null
-    type: uint8
-    description: null
-  - name: oa_nbart_contiguity
-    aliases:
-      - nbart_contiguity
-    resolution: 10
-    nodata: 255
-    units: null
-    type: uint8
-    description: null
-  - name: oa_azimuthal_exiting
-    aliases:
-      - azimuthal_exiting
-    resolution: 20
-    nodata: NaN
-    units: null
-    type: float32
-    description: null
-  - name: oa_azimuthal_incident
-    aliases:
-      - azimuthal_incident
-    resolution: 20
-    nodata: NaN
-    units: null
-    type: float32
-    description: null
-  - name: oa_combined_terrain_shadow
-    aliases:
-      - combined_terrain_shadow
-    resolution: 20
-    nodata: 255
-    units: null
-    type: uint8
-    description: null
-  - name: oa_exiting_angle
-    aliases:
-      - exiting_angle
-    resolution: 20
-    nodata: NaN
-    units: null
-    type: float32
-    description: null
-  - name: oa_incident_angle
-    aliases:
-      - incident_angle
-    resolution: 20
-    nodata: NaN
-    units: null
-    type: float32
-    description: null
-  - name: oa_relative_azimuth
-    aliases:
-      - relative_azimuth
-    resolution: 20
-    nodata: NaN
-    units: null
-    type: float32
-    description: null
-  - name: oa_relative_slope
-    aliases:
-      - relative_slope
-    resolution: 20
-    nodata: NaN
-    units: null
-    type: float32
-    description: null
-  - name: oa_satellite_azimuth
-    aliases:
-      - satellite_azimuth
-    resolution: 20
-    nodata: NaN
-    units: null
-    type: float32
-    description: null
-  - name: oa_satellite_view
-    aliases:
-      - satellite_view
-    resolution: 20
-    nodata: NaN
-    units: null
-    type: float32
-    description: null
-  - name: oa_solar_azimuth
-    aliases:
-      - solar_azimuth
-    resolution: 20
-    nodata: NaN
-    units: null
-    type: float32
-    description: null
-  - name: oa_solar_zenith
-    aliases:
-      - solar_zenith
-    resolution: 20
-    nodata: NaN
-    units: null
-    type: float32
-    description: null
-  - name: oa_time_delta
-    aliases:
-      - time_delta
-    resolution: 20
-    nodata: NaN
-    units: null
-    type: float32
-    description: null
+    description: "NBART surface reflectance of the short-wave infrared (SWIR-3) range. Equivalent wavelength: 2202.4 nm; Bandwidth: 179 nm."
   - name: oa_s2cloudless_mask
     aliases:
       - s2cloudless_mask
     resolution: 60
     nodata: 0
-    units: null
+    units: Classification
     type: uint8
-    description: null
+    description: "The s2cloudless cloud mask band identifies the presence of clouds. Classification values: ``0`` = No cloud; ``1`` = Cloud."
   - name: oa_s2cloudless_prob
     aliases:
       - s2cloudless_prob
@@ -235,4 +125,116 @@ bands_table:
     nodata: NaN
     units: null
     type: float64
-    description: null
+    description: "The s2cloudless cloud probabilities band provides the probabilities of cloud presence as values between 0.0 and 1.0."
+  - name: oa_fmask
+    aliases:
+      - fmask
+    resolution: 20
+    nodata: 0
+    units: Classification
+    type: uint8
+    description: "Fmask: A categorical classification layer produced using the automated Fmask ('Function of mask') algorithm, used to mask out unwanted observations in satellite imagery (e.g. cloud or shadow). Classification values: ``0`` = null; ``1`` = clear; ``2`` = cloud; ``3`` = cloud shadow; ``4`` = snow; ``5`` = water."
+  - name: oa_nbart_contiguity
+    aliases:
+      - nbart_contiguity
+    resolution: 10
+    nodata: 255
+    units: Classification
+    type: uint8
+    description: "NBART contiguity: A layer indicating whether each pixel is 'spectrally contiguous', meaning that it contains valid observations in every spectral band. Classification values: ``0`` = non-contiguous; ``1`` = contiguous."
+  - name: oa_azimuthal_exiting
+    aliases:
+      - azimuthal_exiting
+    resolution: 20
+    nodata: NaN
+    units: Degrees
+    type: float32
+    description: "Azimuthal exiting: The angle between true north and the exiting direction in the slope geometry."
+  - name: oa_azimuthal_incident
+    aliases:
+      - azimuthal_incident
+    resolution: 20
+    nodata: NaN
+    units: Degrees
+    type: float32
+    description: "Azimuthal incident: The angle between true north and the incident direction in the slope geometry."
+  - name: oa_combined_terrain_shadow
+    aliases:
+      - combined_terrain_shadow
+    resolution: 20
+    nodata: 255
+    units: Classification
+    type: uint8
+    description: "Combined terrain shadow: Terrain shadow. Classification values: ``0`` = terrain shadow; ``1`` = not terrain shadow."
+  - name: oa_exiting_angle
+    aliases:
+      - exiting_angle
+    resolution: 20
+    nodata: NaN
+    units: Degrees
+    type: float32
+    description: "Exiting angle: The angle between a ray reflected from a surface and the line perpendicular to the surface at the point of emergence."
+  - name: oa_incident_angle
+    aliases:
+      - incident_angle
+    resolution: 20
+    nodata: NaN
+    units: Degrees
+    type: float32
+    description: "Incident angle: The angle between a ray incident on a surface and the line perpendicular to the surface at the point of incidence."
+  - name: oa_relative_azimuth
+    aliases:
+      - relative_azimuth
+    resolution: 20
+    nodata: NaN
+    units: Degrees
+    type: float32
+    description: "Relative azimuth: The relative azimuth angle between the sun and view directions."
+  - name: oa_relative_slope
+    aliases:
+      - relative_slope
+    resolution: 20
+    nodata: NaN
+    units: Degrees
+    type: float32
+    description: "Relative slope: The relative azimuth angle between the incident and exiting directions in the slope geometry."
+  - name: oa_satellite_azimuth
+    aliases:
+      - satellite_azimuth
+    resolution: 20
+    nodata: NaN
+    units: Degrees
+    type: float32
+    description: "Satellite azimuth: The angle of the satellite’s position from true north; i.e. the angle between true north and a vertical circle passing through the satellite and the point being imaged on Earth."
+  - name: oa_satellite_view
+    aliases:
+      - satellite_view
+    resolution: 20
+    nodata: NaN
+    units: Degrees
+    type: float32
+    description: "Satellite view or satellite zenith: The angle between the zenith and the satellite. (The zenith is the point in the sky or celestial sphere directly above the point being imaged on Earth.)"
+  - name: oa_solar_azimuth
+    aliases:
+      - solar_azimuth
+    resolution: 20
+    nodata: NaN
+    units: Degrees
+    type: float32
+    description: "Solar azimuth: The angle of the sun’s position from true north; i.e. the angle between true north and a vertical circle passing through the sun and the point being imaged on Earth."
+  - name: oa_solar_zenith
+    aliases:
+      - solar_zenith
+    resolution: 20
+    nodata: NaN
+    units: Degrees
+    type: float32
+    description: "Solar zenith: The angle between the zenith and the centre of the sun’s disc."
+  - name: oa_time_delta
+    aliases:
+      - time_delta
+    resolution: 20
+    nodata: NaN
+    units: Seconds
+    type: float32
+    description: "Timedelta: The time from satellite apogee (the point of orbit at which the satellite is furthest from the Earth)."

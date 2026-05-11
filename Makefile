@@ -35,7 +35,7 @@ ssh:
 	docker exec -it dea-knowledge-hub /bin/sh
 
 test-redirects:
-	npx mocha ./aws/cloudfront/functions/*.js
+	npx mocha ./infrastructure/aws-cloudfront/functions/*.js
 
 clean:
 	rm -rf ./output

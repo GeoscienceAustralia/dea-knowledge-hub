@@ -16,7 +16,7 @@ spatial_data_type: RASTER
 
 spatial_coverage: null
 temporal_coverage_start: 1987
-temporal_coverage_end: 2023
+temporal_coverage_end: 2025
 temporal_coverage_custom: null
 
 data_update_frequency: YEARLY
@@ -30,8 +30,8 @@ product_ids:
   - ga_ls_mangrove_cover_cyear_3
 
 parent_products:
-  - name: DEA Fractional Cover (Landsat)
-    link: /data/product/dea-fractional-cover-landsat/
+  - name: DEA Fractional Cover Percentiles (Landsat)
+    link: /data/product/dea-fractional-cover-percentiles-landsat/
   - name: DEA Tasseled Cap Percentiles (Landsat)
     link: /data/product/dea-tasseled-cap-percentiles-landsat/
 
@@ -39,8 +39,8 @@ collections:
   - name: Geoscience Australia Landsat Collection 3
     link: /search/?q=Geoscience+Australia+Landsat+Collection+3
 
-doi: null
-ecat_id: "145497"
+doi: 10.26186/150571
+ecat_id: "150571"
 
 licence_name: Creative Commons Attribution 4.0 International Licence
 licence_link: https://creativecommons.org/licenses/by/4.0/
@@ -60,29 +60,46 @@ tags:
 
 # Access
 
-access_links_maps:
-  - link: https://maps.dea.ga.gov.au/#share=s-riBc1GkNNMcUQoRWviu1Sst88or # TODO review: https://maps.dea.ga.gov.au/#share=s-1WoTW0dJY5MKU58ovTgOcZEYc48
-    name: null
+access_links_maps: null
 
-access_links_explorers:
-  - link: https://explorer.dea.ga.gov.au/products/ga_ls_mangrove_cover_cyear_3
-    name: null
+access_links_explorers: null
 
-access_links_data:
-  - link: https://data.dea.ga.gov.au/?prefix=derivative/ga_ls_mangrove_cover_cyear_3/4-0-0/
+access_links_data: null
+
+access_links_code_examples: null
+
+access_links_web_services: null
+
+access_links_custom:
+  - type: map
+    link: https://maps.dea.ga.gov.au/#share=s-ghl3uS1XtMVtyHg6LXSy6J3cklg
+  - type: map
+    link: https://digital.atlas.gov.au/apps/4e861a4ea2cb4597b91539988e1f242c
+    name: DEA Mangroves (Landsat) Explorer (Digital Atlas application)
+    description: Learn more about the `Digital Atlas of Australia <https://digital.atlas.gov.au/pages/about>`_.
+    label: Digital Atlas applications
+
+  - type: explorer
+    link: https://explorer.dea.ga.gov.au/products/ga_ls_mangrove_cover_cyear_3
+
+  - type: data
+    link: https://data.dea.ga.gov.au/?prefix=derivative/ga_ls_mangrove_cover_cyear_3/4-0-0/
     name: Access the data on AWS
-  - link: https://thredds.nci.org.au/thredds/catalog/jw04/ga_ls_mangrove_cover_cyear_3/4-0-0/catalog.html
+  - type: data
+    link: https://thredds.nci.org.au/thredds/catalog/jw04/ga_ls_mangrove_cover_cyear_3/4-0-0/catalog.html
     name: Access the data on NCI
 
-access_links_code_examples:
-  - link: /notebooks/DEA_products/DEA_Mangroves/
-    name: null
+  - type: code_example
+    link: /notebooks/DEA_products/DEA_Mangroves/
 
-access_links_web_services:
-  - link: https://ows.dea.ga.gov.au/
+  - type: web_service
+    link: https://ows.dea.ga.gov.au/
     name: Web Map Service (WMS)
-
-access_links_custom: null
+  - type: web_service
+    link: https://digital.atlas.gov.au/datasets/94a28751a66d483297bca0f6545cb41a
+    name: "DEA Mangroves (Landsat) (Digital Atlas Layer)"
+    description: Learn how to `create a map using Digital Atlas <https://digital.atlas.gov.au/apps/6b0a217d5c704e8fb6c353d6245585ce/explore>`_.
+    label: Digital Atlas Layers
 
 # History
 

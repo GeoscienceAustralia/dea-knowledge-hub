@@ -3,7 +3,7 @@
 
 # Overview
 
-title: DEA Intertidal Elevation (Landsat)
+title: National Intertidal Digital Elevation Model (NIDEM)
 long_title: "National Intertidal Digital Elevation Model 25m 1.0.0 "
 header_image: /_files/cmi/nidem_2_-_crop_3_1.jpg
 version: 1.0.0
@@ -21,8 +21,8 @@ product_ids:
   - nidem
 
 parent_products:
-  name: DEA Intertidal Extents (ITEM)
-  link: /data/product/dea-intertidal-extents-landsat/
+  name: Intertidal Extents Model (ITEM)
+  link: docs/data/version-history/dea-intertidal-extents-landsat/
 collection:
   name: Geoscience Australia Landsat Collection 2
   link: null

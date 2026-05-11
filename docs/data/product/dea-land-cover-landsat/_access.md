@@ -1,4 +1,4 @@
-:::{dropdown} How to view the data in a web map
+:::{dropdown} How to view DEA Land Cover in a web map
 
 To view and access the data interactively, follow these steps.
 
@@ -9,7 +9,7 @@ To view and access the data interactively, follow these steps.
 
 :::
 
-:::{dropdown} How to load data with Python in the DEA Sandbox
+:::{dropdown} How to load DEA Land Cover with Python in the DEA Sandbox (Recommended)
 
 DEA Sandbox allows you to explore DEA’s Earth Observation datasets in a JupyterLab environment. See the guide to [get started with the DEA Sandbox](/guides/setup/Sandbox/sandbox/).
 
@@ -17,7 +17,38 @@ Once you have signed up to the Sandbox, click into the **DEA products** director
 
 :::
 
-:::{dropdown} How to download data via web browser
+:::{dropdown} How to stream DEA Land Cover continental mosaics in QGIS or ESRI ArcGIS Pro from AWS (Recommended)
+
+The easiest way to access DEA Land Cover data is via our continental-scale cloud-optimised GeoTIFF mosaics (COGs).
+The COG file format is a type of GeoTIFF raster file (`.tif`) that allows you to quickly and efficiently 'stream' data directly from the Amazon S3 cloud without having to download files to your computer.
+This allows you to rapidly access data from the entire Australian continent without having to download large files.
+
+VRT (Virtual Raster) files are also provided alongside the .tif mosaics. These files serve as lightweight wrappers around the main data and can be used to open data in GIS software with visual settings already applied.
+
+For detailed instructions, please visit the [Continental Cloud-Optimised GeoTIFF Mosaics page](/guides/continental-cogs-geotiff-mosaics/)
+
+![Animation-showing-COG-zoom-in](/_files/land_cover/zoom_cog_landcover.gif) 
+
+<figure>
+    <figcaption>The animation above shows the DEA Land Cover COG mosaic moving from the continental-scale down to the 30m x 30m pixel level.</figcaption>
+</figure>
+
+:::{dropdown} How to integrate DEA Land Cover continental mosaics into your own Python workflow
+
+You can seamlessly open a Land Cover mosaic, such as Level 4 for year 2024, using Python and the `rioxarray` library. For example:
+
+```python
+import rioxarray
+cog_url = 'https://data.dea.ga.gov.au/derivative/ga_ls_landcover_class_cyear_3/2-0-0/continental_mosaics/2024--P1Y/ga_ls_landcover_class_cyear_3_mosaic_2024--P1Y_level4.tif'
+cog = rioxarray.open_rasterio(cog_url, chunks=True)
+```
+
+This loads the remote dataset directly into an xarray DataArray.
+At this point, you can continue analysing the data as you would with any other raster array.
+
+:::
+
+:::{dropdown} How to download DEA Land Cover data via web browser
 
 From [DEA's public data (ga_ls_landcover_class_cyear_3)](https://data.dea.ga.gov.au/?prefix=derivative/ga_ls_landcover_class_cyear_3/2-0-0/), navigate through the folders to the year and tile of interest, then click the GeoTIFF file of the relevant layer to download it directly.
 
@@ -25,7 +56,7 @@ To find the X and Y tile values for a particular area, you can use the [DEA Expl
 
 :::
 
-:::{dropdown} How to download data via AWS
+:::{dropdown} How to download DEA Land Cover data via AWS
 
 DEA Land Cover data can be downloaded in bulk using Amazon Web Service’s Command Line Interface (AWS CLI). This method is for technical users.
 
@@ -61,7 +92,7 @@ Note: You must be using QGIS version 3.22 or above to use the time dimension.
 
 :::
 
-:::{dropdown} How to add DEA Land Cover to QGIS using GeoTIFF files
+:::{dropdown} How to add DEA Land Cover to QGIS using GeoTIFF tiles (Not recommended)
 
 Individual tiles can be downloaded via web browser or AWS by following the above instructions and can then be uploaded to QGIS.
 
@@ -111,7 +142,7 @@ Alternatively, follow these steps to [create a map using the Digital Atlas](http
 
 :::
 
-:::{dropdown} How to add DEA Land Cover to your own Esri environment
+:::{dropdown} How to add DEA Land Cover from the Digital Atlas of Australia to your own Esri environment
 
 1. Add the layer to your map.
     1. In the top menu bar, click **File** &gt; **Add Data** &gt; **Add Data...**

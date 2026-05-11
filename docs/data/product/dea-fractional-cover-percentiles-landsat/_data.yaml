@@ -15,7 +15,7 @@ spatial_data_type: RASTER
 
 spatial_coverage: null
 temporal_coverage_start: 1987
-temporal_coverage_end: 2023
+temporal_coverage_end: 2025
 temporal_coverage_custom: null
 
 data_update_frequency: YEARLY
@@ -36,8 +36,8 @@ collections:
   - name: Geoscience Australia Landsat Collection 3
     link: /search/?q=Geoscience+Australia+Landsat+Collection+3
 
-doi: null
-ecat_id: "145501"
+doi: 10.26186/150570
+ecat_id: "150570"
 
 licence_name: Creative Commons Attribution 4.0 International Licence
 licence_link: https://creativecommons.org/licenses/by/4.0/
@@ -56,7 +56,7 @@ tags:
 # Access
 
 access_links_maps:
-  - link: https://maps.dea.ga.gov.au/#share=s-dsn0y5piVd34kvlDoOEEi1oSEWk # TODO review: https://maps.dea.ga.gov.au/#share=s-uTFeDOnmZpXV2Ub7kRC50Q0v4vj
+  - link: https://maps.dea.ga.gov.au/#share=s-uTFeDOnmZpXV2Ub7kRC50Q0v4vj
     name: See it on a map
 
 access_links_explorers:

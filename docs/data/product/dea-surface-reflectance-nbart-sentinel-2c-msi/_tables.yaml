@@ -13,7 +13,7 @@ bands_table:
     nodata: -999
     units: null
     type: int16
-    description: null
+    description: "NBART surface reflectance useful for shallow water and fine atmospheric particles like dust and smoke. Equivalent wavelength: 444.2 nm; Bandwidth: 21 nm."
   - name: nbart_blue
     aliases:
       - nbart_band02
@@ -22,7 +22,7 @@ bands_table:
     nodata: -999
     units: null
     type: int16
-    description: null
+    description: "NBART surface reflectance for the blue spectral band. Equivalent wavelength: 489.0 nm; Bandwidth: 65 nm."
   - name: nbart_green
     aliases:
       - nbart_band03
@@ -31,7 +31,7 @@ bands_table:
     nodata: -999
     units: null
     type: int16
-    description: null
+    description: "NBART surface reflectance for the green spectral band. Equivalent wavelength: 560.6 nm; Bandwidth: 36 nm."
   - name: nbart_red
     aliases:
       - nbart_band04
@@ -40,7 +40,7 @@ bands_table:
     nodata: -999
     units: null
     type: int16
-    description: null
+    description: "NBART surface reflectance for the red spectral band. Equivalent wavelength: 666.5 nm; Bandwidth: 30 nm."
   - name: nbart_red_edge_1
     aliases:
       - nbart_band05
@@ -49,7 +49,7 @@ bands_table:
     nodata: -999
     units: null
     type: int16
-    description: null
+    description: "NBART surface reflectance of the near-infrared (NIR) range useful for detecting vegetation. Equivalent wavelength: 707.1 nm; Bandwidth: 15 nm."
   - name: nbart_red_edge_2
     aliases:
       - nbart_band06
@@ -58,7 +58,7 @@ bands_table:
     nodata: -999
     units: null
     type: int16
-    description: null
+    description: "NBART surface reflectance of the near-infrared range (NIR) useful for detecting vegetation. Equivalent wavelength: 741.1 nm; Bandwidth: 15 nm."
   - name: nbart_red_edge_3
     aliases:
       - nbart_band07
@@ -67,7 +67,7 @@ bands_table:
     nodata: -999
     units: null
     type: int16
-    description: null
+    description: "NBART surface reflectance of the near-infrared (NIR) range useful for detecting vegetation. Equivalent wavelength: 784.7 nm; Bandwidth: 21 nm."
   - name: nbart_nir_1
     aliases:
       - nbart_band08
@@ -77,7 +77,7 @@ bands_table:
     nodata: -999
     units: null
     type: int16
-    description: null
+    description: "NBART surface reflectance of the near-infrared (NIR) range. Equivalent wavelength: 834.6 nm; Bandwidth: 114 nm."
   - name: nbart_nir_2
     aliases:
       - nbart_band8a
@@ -86,7 +86,7 @@ bands_table:
     nodata: -999
     units: null
     type: int16
-    description: null
+    description: "NBART surface reflectance of the near-infrared (NIR) range which is narrower than 'nbart_nir_1'. Equivalent wavelength: 865.6 nm; Bandwidth: 20 nm."
   - name: nbart_swir_2
     aliases:
       - nbart_band11
@@ -97,7 +97,7 @@ bands_table:
     nodata: -999
     units: null
     type: int16
-    description: null
+    description: "NBART surface reflectance of the short-wave infrared (SWIR-2) range. Equivalent wavelength: 1612.0 nm; Bandwidth: 89 nm."
   - name: nbart_swir_3
     aliases:
       - nbart_band12
@@ -107,132 +107,4 @@ bands_table:
     nodata: -999
     units: null
     type: int16
-    description: null
-  - name: oa_fmask
-    aliases:
-      - fmask
-    resolution: 20
-    nodata: 0
-    units: null
-    type: uint8
-    description: null
-  - name: oa_nbart_contiguity
-    aliases:
-      - nbart_contiguity
-    resolution: 10
-    nodata: 255
-    units: null
-    type: uint8
-    description: null
-  - name: oa_azimuthal_exiting
-    aliases:
-      - azimuthal_exiting
-    resolution: 20
-    nodata: NaN
-    units: null
-    type: float32
-    description: null
-  - name: oa_azimuthal_incident
-    aliases:
-      - azimuthal_incident
-    resolution: 20
-    nodata: NaN
-    units: null
-    type: float32
-    description: null
-  - name: oa_combined_terrain_shadow
-    aliases:
-      - combined_terrain_shadow
-    resolution: 20
-    nodata: 255
-    units: null
-    type: uint8
-    description: null
-  - name: oa_exiting_angle
-    aliases:
-      - exiting_angle
-    resolution: 20
-    nodata: NaN
-    units: null
-    type: float32
-    description: null
-  - name: oa_incident_angle
-    aliases:
-      - incident_angle
-    resolution: 20
-    nodata: NaN
-    units: null
-    type: float32
-    description: null
-  - name: oa_relative_azimuth
-    aliases:
-      - relative_azimuth
-    resolution: 20
-    nodata: NaN
-    units: null
-    type: float32
-    description: null
-  - name: oa_relative_slope
-    aliases:
-      - relative_slope
-    resolution: 20
-    nodata: NaN
-    units: null
-    type: float32
-    description: null
-  - name: oa_satellite_azimuth
-    aliases:
-      - satellite_azimuth
-    resolution: 20
-    nodata: NaN
-    units: null
-    type: float32
-    description: null
-  - name: oa_satellite_view
-    aliases:
-      - satellite_view
-    resolution: 20
-    nodata: NaN
-    units: null
-    type: float32
-    description: null
-  - name: oa_solar_azimuth
-    aliases:
-      - solar_azimuth
-    resolution: 20
-    nodata: NaN
-    units: null
-    type: float32
-    description: null
-  - name: oa_solar_zenith
-    aliases:
-      - solar_zenith
-    resolution: 20
-    nodata: NaN
-    units: null
-    type: float32
-    description: null
-  - name: oa_time_delta
-    aliases:
-      - time_delta
-    resolution: 20
-    nodata: NaN
-    units: null
-    type: float32
-    description: null
-  - name: oa_s2cloudless_mask
-    aliases:
-      - s2cloudless_mask
-    resolution: 60
-    nodata: 0
-    units: null
-    type: uint8
-    description: null
-  - name: oa_s2cloudless_prob
-    aliases:
-      - s2cloudless_prob
-    resolution: 60
-    nodata: NaN
-    units: null
-    type: float64
-    description: null
+    description: "NBART surface reflectance of the short-wave infrared (SWIR-3) range. Equivalent wavelength: 2191.3 nm; Bandwidth: 182 nm."

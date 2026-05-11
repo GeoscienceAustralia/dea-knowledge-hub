@@ -13,12 +13,31 @@
    "dash": "\-"
 } %}
 
+{% set access_types = [
+   "map",
+   "explorer",
+   "data",
+   "web_service",
+   "code_example",
+   "custom",
+] %}
+
+{% set access_icons = {
+   "map": "map-location-dot",
+   "explorer": "magnifying-glass",
+   "data": "database",
+   "web_service": "globe",
+   "code_example": "laptop-code",
+   "custom": "link",
+} %}
+
 {% set access_labels = {
    "map": "DEA Maps",
    "explorer": "DEA Explorer",
    "data": "Data sources",
    "web_service": "Web services",
-   "code_sample": "Code examples",
+   "code_example": "Code examples",
+   "custom": "Access links"
 } %}
 
 {% set access_names = {
@@ -26,7 +45,26 @@
    "explorer": "Explore data availability",
    "data": "Get the data online",
    "web_service": "Get via web service",
-   "code_sample": "View code examples",
+   "code_example": "View code examples",
+   "custom": "View the link",
+} %}
+
+{% set access_descriptions = {
+   "map": "Learn how to `use DEA Maps </guides/setup/dea_maps/>`_.",
+   "explorer": "Learn how to `use the DEA Explorer </setup/explorer_guide/>`_.",
+   "data": "Learn how to `access the data via AWS </guides/about/faq/#download-dea-data>`_.",
+   "web_service": "Learn how to `use DEA's web services </guides/setup/gis/README/>`_.",
+   "code_example": "Learn how to `use the DEA Sandbox </guides/setup/Sandbox/sandbox/>`_.",
+   "custom": "",
+} %}
+
+{% set access_css_classes = {
+   "map": "access-link-map",
+   "explorer": "access-link-explorer",
+   "data": "access-link-data",
+   "web_service": "access-link-web-service",
+   "code_example": "access-link-code-sample",
+   "custom": "access-link-custom",
 } %}
 
 {% set lineage_type_terms = {
@@ -40,6 +78,7 @@
 } %}
 
 {% set data_update_frequency_terms = {
+   "NONE": "None",
    "AS_NEEDED": "As needed",
    "DAILY": "Daily",
    "WEEKLY": "Weekly",
@@ -51,6 +90,7 @@
 
 {% set data_update_activity_terms = {
    "ONGOING": "Ongoing",
+   "NON_ONGOING": "Non-ongoing",
    "NO_UPDATES": "No further updates",
    "DEVELOPMENT": "Awaiting development",
    "PAUSED": "Currently paused",
@@ -86,9 +126,9 @@
 
 {% set access_links_web_services_list = page.data.access_links_web_services | selectattr("link", "!=", None) | list %}
 
-{% set access_links_code_samples_list = page.data.access_links_code_examples | selectattr("link", "!=", None) | list %}
+{% set access_links_code_examples_list = page.data.access_links_code_examples | selectattr("link", "!=", None) | list %}
 
-{% set access_links_custom_list = page.data.access_links_custom | selectattr("icon", "!=", None) | selectattr("link", "!=", None) | selectattr("name", "!=", None) | list %}
+{% set access_links_custom_list = page.data.access_links_custom | selectattr("link", "!=", None) | list %}
 
 {% set previous_versions_list = page.data.previous_versions | selectattr("slug", "!=", None) | selectattr("version_number", "!=", None) | selectattr("name", "!=", None) | list %}
 
@@ -136,13 +176,15 @@
 
 {% set coordinate_reference_system_term = coordinate_reference_system_terms.get(page.data.coordinate_reference_system, page.data.coordinate_reference_system) %}
 
-{% set is_frequency_ongoing = data_update_activity == data_update_activity_terms.ONGOING %}
+{% set is_activity_ongoing = data_update_activity == data_update_activity_terms.ONGOING %}
+
+{% set is_activity_non_ongoing = data_update_activity == data_update_activity_terms.NON_ONGOING or data_update_frequency_terms.NONE %}
 
 {% set is_cadence_yearly = data_update_frequency == data_update_frequency_terms.YEARLY %}
 
 {% set is_frequency_multiple_words = data_update_frequency.split(" ") | length > 1 %}
 
-{% set has_access_data = access_links_maps_list or access_links_data_list or access_links_explorers_list or access_links_web_services_list or access_links_code_samples_list or access_links_custom_list %}
+{% set has_access_data = access_links_maps_list or access_links_data_list or access_links_explorers_list or access_links_web_services_list or access_links_code_examples_list or access_links_custom_list %}
 
 {# Parent products component #}
 
@@ -230,10 +272,16 @@
       {%- elif page.data.temporal_coverage_end %}
       :Coverage end: {{ page.data.temporal_coverage_end }}
       {%- endif %}
-      {%- if is_frequency_ongoing and is_frequency_multiple_words %}
+      {%- if is_activity_ongoing and is_frequency_multiple_words and page.data.is_latest_version %}
       :Data updates: {{ data_update_frequency }}, {{ data_update_activity }}
-      {%- elif is_frequency_ongoing %}
+      {%- elif is_activity_ongoing and page.data.is_latest_version %}
       :Data updates: {{ data_update_frequency }} frequency, {{ data_update_activity }}
+      {%- elif is_activity_non_ongoing and page.data.is_latest_version %}
+      :Data updates: {{ data_update_activity }}
+      {%- elif is_frequency_multiple_words and not page.data.is_latest_version %}
+      :Data updates: {{ data_update_activity_terms.NO_UPDATES }} (Previously: {{ data_update_frequency }})
+      {%- elif not page.data.is_latest_version %}
+      :Data updates: {{ data_update_activity_terms.NO_UPDATES }} (Previously: {{ data_update_frequency }} frequency)
       {%- elif is_frequency_multiple_words %}
       :Data updates: {{ data_update_activity }} (Previously: {{ data_update_frequency }})
       {%- else %}
@@ -298,52 +346,56 @@
          :gutter: 3
 
          {% for item in access_links_maps_list %}
-         .. grid-item-card:: :fas:`map-location-dot`
+         .. grid-item-card:: :fas:`{{ item.icon or "map-location-dot" }}`
             :link: {{ item.link }}
-            :link-alt: {{ access_labels.map }}
+            :class-card: {{ item.class or access_css_classes.map }}
 
             {{ item.name or access_names.map }}
          {% endfor %}
 
          {% for item in access_links_explorers_list %}
-         .. grid-item-card:: :fas:`magnifying-glass`
+         .. grid-item-card:: :fas:`{{ item.icon or "magnifying-glass" }}`
             :link: {{ item.link }}
-            :link-alt: {{ access_labels.explorer }}
+            :class-card: {{ item.class or access_css_classes.explorer }}
 
             {{ item.name or access_names.explorer }}
          {% endfor %}
 
          {% for item in access_links_data_list %}
-         .. grid-item-card:: :fas:`database`
+         .. grid-item-card:: :fas:`{{ item.icon or "database" }}`
             :link: {{ item.link }}
-            :link-alt: {{ access_labels.data }}
+            :class-card: {{ item.class or access_css_classes.data }}
 
             {{ item.name or access_names.data }}
          {% endfor %}
 
-         {% for item in access_links_code_samples_list %}
-         .. grid-item-card:: :fas:`laptop-code`
+         {% for item in access_links_code_examples_list %}
+         .. grid-item-card:: :fas:`{{ item.icon or "laptop-code" }}`
             :link: {{ item.link }}
-            :link-alt: {{ access_labels.code_sample }}
+            :class-card: {{ item.class or access_css_classes.code_example }}
 
-            {{ item.name or access_names.code_sample }}
+            {{ item.name or access_names.code_example }}
          {% endfor %}
 
          {% for item in access_links_web_services_list %}
-         .. grid-item-card:: :fas:`globe`
+         .. grid-item-card:: :fas:`{{ item.icon or "globe" }}`
             :link: {{ item.link }}
-            :link-alt: {{ access_labels.web_service }}
+            :class-card: {{ item.class or access_css_classes.web_service }}
 
             {{ item.name or access_names.web_service }}
          {% endfor %}
 
          {% for item in access_links_custom_list %}
-         .. grid-item-card:: :fas:`{{ item.icon or "link" }}`
-            :link: {{ item.link }}
-            :link-alt: {{ item.label or "" }}
-            :class-card: {{ item.class }}
+         {% set item_type = item.type if item.type in access_types else "custom" %}
+         {% set item_link = item.link %}
+         {% set item_name = item.name or access_names.get(item_type, access_names.custom) %}
+         {% set item_icon = item.icon or access_icons.get(item_type, access_icons.custom) %}
+         {% set item_class = item.class or access_css_classes.get(item_type, access_css_classes.custom) %}
+         .. grid-item-card:: :fas:`{{ item_icon }}`
+            :link: {{ item_link }}
+            :class-card: {{ item_class }}
 
-            {{ item.name }}
+            {{ item_name }}
          {% endfor %}
    {%- endif %}
 
@@ -490,7 +542,7 @@
 
 {% set specifications_tab_component %}
 {% if page.data.enable_specifications %}
-.. tab-item:: Specifications :raw-html:`&#x2728;`
+.. tab-item:: Specifications
    :name: specifications
 
    .. raw:: html
@@ -689,18 +741,28 @@
         - {{ coordinate_reference_system_term }}
         - The method of mapping spatial data to the Earth's surface.
       {%- endif %}
-      {%- if is_frequency_ongoing %}
+      {%- if is_activity_ongoing and page.data.is_latest_version %}
+      * - **Update frequency**
+        - {{ data_update_frequency }}
+        - The expected frequency of data updates. Also called 'Temporal resolution'.
+      {%- elif is_activity_non_ongoing and page.data.is_latest_version %}
       * - **Update frequency**
         - {{ data_update_frequency }}
         - The expected frequency of data updates. Also called 'Temporal resolution'.
       {%- else %}
       * - **Update frequency**
-        - {{ data_update_frequency }} (Inactive)
+        - {{ data_update_frequency }} ({{ data_update_activity_terms.NO_UPDATES }})
         - Previously, when data updates were active, this was their expected frequency. Also called 'Temporal resolution'.
       {%- endif %}
+      {%- if page.data.is_latest_version %}
       * - **Update activity**
         - {{ data_update_activity }}
         - The activity status of data updates.
+      {%- else %}
+      * - **Update activity**
+        - {{ data_update_activity_terms.NO_UPDATES }}
+        - The activity status of data updates.
+      {%- endif %}
       {%- if page.data.is_currency_reported %}
       * - **Currency**
         - `See the Currency Report <{{ currency_report_url }}>`_
@@ -780,7 +842,7 @@
         - {% for item in access_links_maps_list %}
           * `{{ item.name or access_names.map }} <{{ item.link }}>`_
           {% endfor %}
-        - Learn how to `use DEA Maps </guides/setup/dea_maps/>`_.
+        - {{ access_descriptions.map }}
       {% endif %}
 
       {% if access_links_explorers_list %}
@@ -788,7 +850,7 @@
         - {% for item in access_links_explorers_list %}
           * `{{ item.name or access_names.explorer }} <{{ item.link }}>`_
           {% endfor %}
-        - Learn how to `use the DEA Explorer </setup/explorer_guide/>`_.
+        - {{ access_descriptions.explorer }}
       {% endif %}
 
       {% if access_links_data_list %}
@@ -796,15 +858,15 @@
         - {% for item in access_links_data_list %}
           * `{{ item.name or access_names.data }} <{{ item.link }}>`_
           {% endfor %}
-        - Learn how to `access the data via AWS </guides/about/faq/#download-dea-data>`_.
+        - {{ access_descriptions.data }}
       {% endif %}
 
-      {% if access_links_code_samples_list %}
-      * - **{{ access_labels.code_sample }}**
-        - {% for item in access_links_code_samples_list %}
-          * `{{ item.name or access_names.code_sample }} <{{ item.link }}>`_
+      {% if access_links_code_examples_list %}
+      * - **{{ access_labels.code_example }}**
+        - {% for item in access_links_code_examples_list %}
+          * `{{ item.name or access_names.code_example }} <{{ item.link }}>`_
           {% endfor %}
-        - Learn how to `use the DEA Sandbox </guides/setup/Sandbox/sandbox/>`_.
+        - {{ access_descriptions.code_example }}
       {% endif %}
 
       {% if access_links_web_services_list %}
@@ -812,13 +874,31 @@
         - {% for item in access_links_web_services_list %}
           * `{{ item.name or access_names.web_service }} <{{ item.link }}>`_
           {% endfor %}
-        - Learn how to `use DEA's web services </guides/setup/gis/README/>`_.
+        - {{ access_descriptions.web_service }}
       {% endif %}
 
+      {# Group the 'access_links_custom_list' by 'label' and then render this grouped list as the access links table. #}
+      {% set access_table = namespace(groups={}) %}
       {% for item in access_links_custom_list %}
-      * - **{{ item.label or "" }}**
-        - * `{{ item.name }} <{{ item.link }}>`_
-        - {{ item.description or "" }}
+         {% set item_type = item.type if item.type in access_types else "custom" %}
+         {% set item_link = item.link %}
+         {% set item_name = item.name or access_names.get(item_type, access_names.custom) %}
+         {% set item_description = item.description or access_descriptions.get(item_type, access_descriptions.custom) %}
+         {% set item_label = item.label or access_labels.get(item_type, access_labels.custom) %}
+         {% if item_label not in access_table.groups %}
+         {% set _ = access_table.groups.update({item_label: []}) %}
+         {% endif %}
+         {% set item_formatted = namespace(value={}) %}
+         {% set _ = item_formatted.value.update(item) %}
+         {% set _ = item_formatted.value.update({ 'type': item_type, 'link': item_link, 'name': item_name, 'description': item_description, 'label': item_label, 'icon': item_icon, 'class': item_class }) %}
+         {% set _ = access_table.groups[item_label].append(item_formatted.value) %}
+      {% endfor %}
+      {% for label, items in access_table.groups.items() %}
+      * - **{{ label }}**
+        - {% for item in items %}
+          * `{{ item.name }} <{{ item.link }}>`_
+          {% endfor %}
+        - {{ items[0].description }}
       {% endfor %}
    {% else %}
    There are no data source links available at the present time.

@@ -96,7 +96,7 @@ Full details of the original algorithms and features of DEA Water Observations c
 
 ## Lineage
 
-Digital Earth Australia (DEA) Water Observations is derived from Landsat 5, 7, 8 and 9 imagery. Imagery is initially corrected to Analysis Ready Data (ARD) standard, and masked for cloud, cloud-shadow, data contiguity, steep slope, solar incidence angle, and terrain shadow. Water classification is achieved using a decision tree based on the individual spectral bands of the Landsat satellites and derived normalised difference indicies associated with water and vegetation. The output is then stored as an 8-bit, bit-field with values from 0 - 255 indicating the presence or absence of each mask type and the presence or absence of water.
+Digital Earth Australia (DEA) Water Observations is derived from Landsat 5, 7, 8 and 9 imagery. All input imagery is first processed to Analysis Ready Data (ARD) standard. Only images with a mean XY Geometric Quality Assessment (GQA, a measure of average horizontal positional accuracy) score of 1.0 or lower are retained; images with values greater than 1.0 are discarded. The retained images are then masked for cloud, cloud-shadow, data contiguity, steep slope, solar incidence angle, and terrain shadow. Water classification is performed using a decision tree based on the individual spectral bands of the Landsat satellites and derived normalised difference indicies associated with water and vegetation. The final output is stored as an 8‑bit bit‑field (values 0–255), encoding the presence or absence of water and the presence or absence of each mask type.
 
 ## Processing steps
 

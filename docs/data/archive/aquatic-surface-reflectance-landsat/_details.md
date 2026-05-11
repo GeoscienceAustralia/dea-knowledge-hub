@@ -17,7 +17,7 @@ This product takes Landsat 8 imagery captured over the Australian continent and 
 * sediment transport
 * erosion
 * shallow water bathymetry
-* The development of refined information products, such as: {TODO; populate with aquatic related items areal units of detected surface water areal units of deforestation yield predictions of agricultural parcels}
+* The development of refined information products, such as: <!-- Populate with aquatic related items areal units of detected surface water areal units of deforestation yield predictions of agricultural parcels -->
 * The development of management practices such as:
 * Compliance surveys
 * Emergency management of water ways, water courses, town supply

@@ -9,7 +9,7 @@ To view and access the data interactively:
 
 2) Click `Explore map data`.
 
-3) Select `Sea, ocean and coast` > `Other` > `DEA Intertidal Elevation (Landsat)`. 
+3) Select `Sea, ocean and coast` > `Other` > `National Intertidal Digital Elevation Model`. 
 
 5) Click `Add to the map`, or the `+` symbol to add the data to the map.
 :::

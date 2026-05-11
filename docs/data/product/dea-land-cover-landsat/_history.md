@@ -1,5 +1,49 @@
 ## Changelog
 
+:::{include} ../../../_components/tech-alert-terrestrial-2025-annual-product-update-summary.md
+:::
+
+### 10 Sep 2025: DEA Land Cover continental mosaics
+
+We've added a new way to access our [DEA Land Cover](/data/product/dea-land-cover-landsat/) product; it is now available as continental mosaics, in Cloud-optimised GeoTIFF (COG) format. These mosaics provide a single-file representation of land cover data for **each year available** in the time series, removing the complexity of managing tiled datasets and making it easier to work with land cover data across Australia. 
+
+These COG mosaics are designed for fast and efficient streaming over the internet, loading only the portions of the file that are visible in your current view. This makes them ideal for use in **GIS platforms** such as **QGIS** and **ESRI’s software**, where users can interact with the DEA Land Cover dataset without needing to download entire files.
+
+To enhance visualisation and interpretation, we also provide **Virtual Raster (VRT) files** with embedded colour styling aligned to the official DEA colour scheme. These VRTs make the data ready-to-use and visually meaningful out of the box. 
+
+The mosaics and VRTs can also be streamed for use in Python workflows using tools such as **rioxarray**.
+
+[Explore the latest year's continental mosaics (2024)](https://data.dea.ga.gov.au/?prefix=derivative/ga_ls_landcover_class_cyear_3/2-0-0/continental_mosaics/2024--P1Y/)
+
+[Learn how to use DEA Land Cover continental mosaics](/data/product/dea-land-cover-landsat/?tab=access#access-the-data-2)
+
+![Animation showing COG zoom in](/_files/land_cover/zoom_cog_landcover.gif)
+
+[View the Tech Alert](https://communication.ga.gov.au/link/id/zzzz68c0df3fa6de5146Pzzzz6567c8b713b5b826/page.html)
+
+### 10 Sep 2025: DEA data in the Digital Atlas of Australia
+
+The [DEA Coastlines](/data/product/dea-coastlines/), [DEA Mangroves](/data/product/dea-mangroves/), and [DEA Water Observations Multi-Year Summary](/data/product/dea-water-observations-statistics-landsat/) datasets have now been added to the Digital Atlas, joining [DEA Land Cover](/data/product/dea-land-cover-landsat/). This integration marks a significant milestone in how DEA data can be accessed, visualised, and applied. By embedding DEA products into the Digital Atlas, users can now interact with trusted Earth observation datasets alongside other authoritative national data — unlocking powerful new opportunities for cross-sector analysis and decision-making. 
+
+[Explore the DEA datasets and tools in the Digital Atlas](https://digital.atlas.gov.au/search?source=Digital%2520Earth%2520Australia)
+
+[View the Tech Alert](https://communication.ga.gov.au/link/id/zzzz68c0df3fa6de5146Pzzzz6567c8b713b5b826/page.html)
+
+### June 2025: Resolved issue with missing data and artefacts in northern Western Australia
+
+An issue was identified affecting data availability and causing classification artefacts across several tiles in northern Western Australia, particularly between 1988 and 2005. The primary affected tiles were `x39y49`, `x40y47`, and `x41y45`, although a total of 17 adjacent tiles (including the three mentioned) experienced the issue.
+
+The root cause was traced to Geometric Quality Assessment (GQA) values falling below the acceptable threshold set. This threshold was used to filter out low-quality Landsat scenes from the [Analysis Ready Data (ARD)](/guides/reference/analysis_ready_data_corrections/) inputs used to generate DEA Land Cover. The areas affected by this issue corresponded to regions where ground control points may shift over time, such as areas with shifting sand dunes, leading to inconsistencies in the orthorectification process. As a result, a large number of ARD scenes, not necessarily unusable, were excluded due to their lower GQA scores, reducing data coverage in the output product.
+
+The issue was resolved by disabling GQA-based filtering in the affected areas, after observing that this had no noticeable impact on image sharpness or output quality.
+ 
+![timeseries missing data tiles](/_files/land_cover/gqa_tiles_timeseries_geomad_obs_count_gmad.gif)
+
+Figure 1. Time series animation showing the frequency of missing data in the affected region. On the left is a true-colour time series of the yearly geomedian, for reference. On the right is a time series of the yearly clear observation count.
+
+:::{include} ../../../_components/tech-alert-2024-annual-product-update-summary.md
+:::
+
 ### Version 2.0.0
 
 This latest version introduces improvements to the DEA Land Cover product, enhancing the translation of over three decades of satellite imagery into evidence of how Australia’s land, vegetation and waterbodies have changed over time. 

@@ -6,7 +6,7 @@ short_name: Daily SatPaths
 full_technical_name: Daily Satellite Paths predictor
 header_image: /_files/cmi/SatPaths_image.png
 
-version_number: 1.0.3-beta
+version_number: 1.0.4-beta
 is_latest_version: true
 latest_version_link: null
 is_provisional: true

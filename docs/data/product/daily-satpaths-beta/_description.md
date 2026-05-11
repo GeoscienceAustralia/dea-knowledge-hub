@@ -37,6 +37,7 @@ Daily SatPaths calculates predictive schedules for flyovers over Australia and g
   * METOP-C: 2,900km swath
 * Visible Infrared Imaging Radiometer Suite (VIIRS)
   * NOAA 20: 2,940km swath 
+  * NOAA 21: 2,940km swath 
   * Suomi NPP: 3,040km swath 
 * Landsat
   * Landsat 7 (ETM+): 185km swath 
@@ -47,6 +48,7 @@ Daily SatPaths calculates predictive schedules for flyovers over Australia and g
   * Sentinel 1B (C-SAR): 250km – Interferometric Wide Swath Mode 
   * Sentinel 2A (MSI): 290km swath 
   * Sentinel 2B (MSI): 290km swath 
+  * Sentinel 2C (MSI): 290km swath 
   * Sentinel 3A (SLSTR): 1,270km swath 
   * Sentinel 3B (SLSTR): 1.270km swath 
 

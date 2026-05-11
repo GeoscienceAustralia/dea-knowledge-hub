@@ -5,7 +5,7 @@
 short_name: DEA Water Observations Statistics (Landsat)
 full_technical_name: Geoscience Australia Landsat Water Observation Statistics Collection 3
 header_image: /_files/cmi/WOfS-Burketown-Normanton-QLD.png
-version_number: 2.0.0
+version_number: "2.0.0 (except ga_ls_wo_fq_myear_3 is 2.1.0)"
 is_latest_version: true
 latest_version_link: null
 is_provisional: false
@@ -14,9 +14,9 @@ lineage_type: DERIVATIVE
 spatial_data_type: RASTER
 
 spatial_coverage: null
-temporal_coverage_start: 1986
-temporal_coverage_end: Present
-temporal_coverage_custom: null
+temporal_coverage_start: null
+temporal_coverage_end: null
+temporal_coverage_custom: "1986/1987 to 2025 (see `Technical information <./?tab=description#technical-information>`_)"
 
 data_update_frequency: YEARLY
 data_update_activity: ONGOING
@@ -39,8 +39,8 @@ collections:
   - name: Geoscience Australia Landsat Collection 3
     link: /search/?q=Geoscience+Australia+Landsat+Collection+3
 
-doi: 10.26186/146091
-ecat_id: "146091"
+doi: 10.26186/150573
+ecat_id: "150573"
 
 licence_name: Creative Commons Attribution 4.0 International Licence
 licence_link: https://creativecommons.org/licenses/by/4.0/
@@ -60,47 +60,82 @@ tags:
 # Access
 
 access_links_maps: null
-  # TODO review:
-  # - link: https://maps.dea.ga.gov.au/#share=s-yIyPPjQlWxVBLg10WJBQd8KrMgt
-  #   name: Apr-Oct summaries on DEA Maps
-  # - link: https://maps.dea.ga.gov.au/#share=s-vT2uXq2ZYxfuKzHZTYM7Xc9kXY0
-  #   name: Nov-Mar summaries on DEA Maps
-  # - link: https://maps.dea.ga.gov.au/#share=s-5fLlPp0Fk11iLTxUpCQPxTkVAH3
-  #   name: Annual calendar year summaries on DEA Maps
-  # - link: https://maps.dea.ga.gov.au/#share=s-x0R0IFIqxSFDJ54LK6sFDEfjh6i
-  #   name: All-time summary on DEA Maps
 
-access_links_explorers:
-  - link: https://explorer.dea.ga.gov.au/products#inland-water-group
-    name: null
+access_links_explorers: null
 
-access_links_data:
-  - link: https://data.dea.ga.gov.au/?prefix=derivative/ga_ls_wo_fq_apr_oct_3/2-0-0/
-    name: Apr-Oct summaries since 1986 - AWS access
-  - link: https://data.dea.ga.gov.au/?prefix=derivative/ga_ls_wo_fq_nov_mar_3/2-0-0/
-    name: Nov-Mar summaries since 1986 - AWS access
-  - link: https://data.dea.ga.gov.au/?prefix=derivative/ga_ls_wo_fq_cyear_3/2-0-0/
-    name: Annual calendar year summaries since 1986 - AWS access
-  - link: https://data.dea.ga.gov.au/?prefix=derivative/ga_ls_wo_fq_myear_3/2-0-0/
-    name: All-time summary 1986 to present - AWS access
-  - link: https://thredds.nci.org.au/thredds/catalog/jw04/ga_ls_wo_fq_apr_oct_3/catalog.html
-    name: Apr-Oct summaries since 1986 - NCI access
-  - link: https://thredds.nci.org.au/thredds/catalog/jw04/ga_ls_wo_fq_nov_mar_3/catalog.html
-    name: Nov-Mar summaries since 1986 - NCI access
-  - link: https://thredds.nci.org.au/thredds/catalog/jw04/ga_ls_wo_fq_cyear_3/catalog.html
-    name: Annual calendar year summaries since 1986 - NCI access
-  - link: https://thredds.nci.org.au/thredds/catalog/jw04/ga_ls_wo_fq_myear_3/catalog.html
-    name: All-time summary 1986 to present - NCI access
+access_links_data: null
 
-access_links_code_examples:
-  - link: /notebooks/DEA_products/DEA_Water_Observations/
-    name: null
+access_links_code_examples: null
 
-access_links_web_services:
-  - link: https://ows.dea.ga.gov.au/
-    name: null
+access_links_web_services: null
 
-access_links_custom: null
+access_links_custom:
+  - type: map
+    link: https://maps.dea.ga.gov.au/#share=s-x0R0IFIqxSFDJ54LK6sFDEfjh6i
+    name: Multi-year summary on DEA Maps
+  - type: map
+    link: https://maps.dea.ga.gov.au/#share=s-yIyPPjQlWxVBLg10WJBQd8KrMgt
+    name: Apr-Oct summaries on DEA Maps
+  - type: map
+    link: https://maps.dea.ga.gov.au/#share=s-vT2uXq2ZYxfuKzHZTYM7Xc9kXY0
+    name: Nov-Mar summaries on DEA Maps
+  - type: map
+    link: https://maps.dea.ga.gov.au/#share=s-5fLlPp0Fk11iLTxUpCQPxTkVAH3
+    name: Annual calendar year summaries on DEA Maps
+  - type: map
+    link: https://digital.atlas.gov.au/apps/2d1387b93e6a44c7bc02d4dd29624c1c/explore
+    name: Water Observations Multi-Year Summary Explorer (Digital Atlas application)
+    description: Learn more about the `Digital Atlas of Australia <https://digital.atlas.gov.au/pages/about>`_.
+    label: Digital Atlas applications
+
+  - type: explorer
+    link: https://explorer.dea.ga.gov.au/products#inland-water-group
+
+  - type: data
+    link: https://data.dea.ga.gov.au/?prefix=derivative/ga_ls_wo_fq_myear_3/2-0-0/
+    name: Multi-year summary 1986 to near present - AWS access
+  - type: data
+    link: https://thredds.nci.org.au/thredds/catalog/jw04/ga_ls_wo_fq_myear_3/catalog.html
+    name: Multi-year summary 1986 to near present - NCI access
+  - type: data
+    link: https://data.dea.ga.gov.au/?prefix=derivative/ga_ls_wo_fq_apr_oct_3/2-0-0/
+    name: Apr-Oct summaries - AWS access
+  - type: data
+    link: https://data.dea.ga.gov.au/?prefix=derivative/ga_ls_wo_fq_nov_mar_3/2-0-0/
+    name: Nov-Mar summaries - AWS access
+  - type: data
+    link: https://data.dea.ga.gov.au/?prefix=derivative/ga_ls_wo_fq_cyear_3/2-0-0/
+    name: Annual calendar year summaries - AWS access
+  - type: data
+    link: https://thredds.nci.org.au/thredds/catalog/jw04/ga_ls_wo_fq_cyear_3/catalog.html
+    name: Annual calendar year summaries - NCI access
+  - type: data
+    link: https://thredds.nci.org.au/thredds/catalog/jw04/ga_ls_wo_fq_apr_oct_3/catalog.html
+    name: Apr-Oct summaries - NCI access
+  - type: data
+    link: https://thredds.nci.org.au/thredds/catalog/jw04/ga_ls_wo_fq_nov_mar_3/catalog.html
+    name: Nov-Mar summaries - NCI access
+
+  - type: code_example
+    link: /notebooks/DEA_products/DEA_Water_Observations/
+
+  - type: web_service
+    link: https://ows.dea.ga.gov.au/
+  - type: web_service
+    link: https://digital.atlas.gov.au/datasets/cf7486a7638c4b83b258b98cbbfdd084/explore
+    name: "Multi-Year Summary - Water Frequency (Digital Atlas Layer)"
+    description: Learn how to `create a map using Digital Atlas <https://digital.atlas.gov.au/apps/6b0a217d5c704e8fb6c353d6245585ce/explore>`_.
+    label: Digital Atlas Layers
+  - type: web_service
+    link: https://digital.atlas.gov.au/datasets/ef2b925f63e84219b34fc064d8316931/explore
+    name: "Multi-Year Summary - Wet Count (Digital Atlas Layer)"
+    description: Learn how to `create a map using Digital Atlas <https://digital.atlas.gov.au/apps/6b0a217d5c704e8fb6c353d6245585ce/explore>`_.
+    label: Digital Atlas Layers
+  - type: web_service
+    link: https://digital.atlas.gov.au/datasets/f2d6989a225d4172bc9c2f49f7d35ae6/explore
+    name: "Multi-Year Summary - Clear Count (Digital Atlas Layer)"
+    description: Learn how to `create a map using Digital Atlas <https://digital.atlas.gov.au/apps/6b0a217d5c704e8fb6c353d6245585ce/explore>`_.
+    label: Digital Atlas Layers
 
 # History
 

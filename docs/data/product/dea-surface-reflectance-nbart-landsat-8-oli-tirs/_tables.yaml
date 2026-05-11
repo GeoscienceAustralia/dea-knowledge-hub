@@ -13,7 +13,7 @@ bands_table:
     nodata: -999
     units: null
     type: int16
-    description: null
+    description: "NBART surface reflectance for the coastal aerosol band. Wavelength: 0.43-0.45 µm."
   - name: nbart_blue
     aliases:
       - nbart_band02
@@ -22,7 +22,7 @@ bands_table:
     nodata: -999
     units: null
     type: int16
-    description: null
+    description: "NBART surface reflectance for the blue spectral band. Wavelength: 0.45–0.51 µm."
   - name: nbart_green
     aliases:
       - nbart_band03
@@ -31,7 +31,7 @@ bands_table:
     nodata: -999
     units: null
     type: int16
-    description: null
+    description: "NBART surface reflectance for the green spectral band. Wavelength: 0.53–0.59 µm."
   - name: nbart_red
     aliases:
       - nbart_band04
@@ -40,7 +40,7 @@ bands_table:
     nodata: -999
     units: null
     type: int16
-    description: null
+    description: "NBART surface reflectance for the red spectral band. Wavelength: 0.64–0.67 µm."
   - name: nbart_nir
     aliases:
       - nbart_band05
@@ -50,7 +50,7 @@ bands_table:
     nodata: -999
     units: null
     type: int16
-    description: null
+    description: "NBART surface reflectance for the Near Infrared (NIR) spectral band. Wavelength: 0.85–0.88 µm."
   - name: nbart_swir_1
     aliases:
       - nbart_band06
@@ -61,7 +61,7 @@ bands_table:
     nodata: -999
     units: null
     type: int16
-    description: null
+    description: "NBART surface reflectance for the Shortwave Infrared (SWIR) 1 spectral band. Wavelength: 1.57–1.65 µm."
   - name: nbart_swir_2
     aliases:
       - nbart_band07
@@ -72,7 +72,7 @@ bands_table:
     nodata: -999
     units: null
     type: int16
-    description: null
+    description: "NBART surface reflectance for the Shortwave Infrared (SWIR) 2 spectral band. Wavelength: 2.11–2.29 µm."
   - name: nbart_panchromatic
     aliases:
       - nbart_band08
@@ -81,116 +81,4 @@ bands_table:
     nodata: -999
     units: null
     type: int16
-    description: null
-  - name: oa_fmask
-    aliases:
-      - fmask
-    resolution: 30
-    nodata: 0
-    units: null
-    type: uint8
-    description: null
-  - name: oa_nbart_contiguity
-    aliases:
-      - nbart_contiguity
-    resolution: 30
-    nodata: 255
-    units: null
-    type: uint8
-    description: null
-  - name: oa_azimuthal_exiting
-    aliases:
-      - azimuthal_exiting
-    resolution: 30
-    nodata: NaN
-    units: null
-    type: float32
-    description: null
-  - name: oa_azimuthal_incident
-    aliases:
-      - azimuthal_incident
-    resolution: 30
-    nodata: NaN
-    units: null
-    type: float32
-    description: null
-  - name: oa_combined_terrain_shadow
-    aliases:
-      - combined_terrain_shadow
-    resolution: 30
-    nodata: 255
-    units: null
-    type: uint8
-    description: null
-  - name: oa_exiting_angle
-    aliases:
-      - exiting_angle
-    resolution: 30
-    nodata: NaN
-    units: null
-    type: float32
-    description: null
-  - name: oa_incident_angle
-    aliases:
-      - incident_angle
-    resolution: 30
-    nodata: NaN
-    units: null
-    type: float32
-    description: null
-  - name: oa_relative_azimuth
-    aliases:
-      - relative_azimuth
-    resolution: 30
-    nodata: NaN
-    units: null
-    type: float32
-    description: null
-  - name: oa_relative_slope
-    aliases:
-      - relative_slope
-    resolution: 30
-    nodata: NaN
-    units: null
-    type: float32
-    description: null
-  - name: oa_satellite_azimuth
-    aliases:
-      - satellite_azimuth
-    resolution: 30
-    nodata: NaN
-    units: null
-    type: float32
-    description: null
-  - name: oa_satellite_view
-    aliases:
-      - satellite_view
-    resolution: 30
-    nodata: NaN
-    units: null
-    type: float32
-    description: null
-  - name: oa_solar_azimuth
-    aliases:
-      - solar_azimuth
-    resolution: 30
-    nodata: NaN
-    units: null
-    type: float32
-    description: null
-  - name: oa_solar_zenith
-    aliases:
-      - solar_zenith
-    resolution: 30
-    nodata: NaN
-    units: null
-    type: float32
-    description: null
-  - name: oa_time_delta
-    aliases:
-      - time_delta
-    resolution: 30
-    nodata: NaN
-    units: null
-    type: float32
-    description: null
+    description: "The panchromatic band is high resolution and can be used for pan-sharpening Landsat 8 and 9's blue, green, and red bands. Wavelength: 0.50-0.68 µm."

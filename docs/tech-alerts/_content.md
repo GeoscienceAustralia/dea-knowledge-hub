@@ -1,93 +1,217 @@
 % See the DEA Tech Alerts documentation:
 % https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/tech_alerts_changelog.html
 
-## 1 Apr 2025: NOAA-21 Hotspots will be integrated with other VIIRS Sensors from 8 April
+## 30 Apr 2026: DEA coastal products &mdash; annual update now available
 
-In [DEA Hotspots](/data/product/dea-hotspots/), the NOAA-21 feed can currently be selected through ‘AFIMG NOAA-21’, or ‘AFMOD NOAA-21’, but will be incorporated into the standard ‘AFMOD’ and ‘AFMIG’ filter from 8 April 2025.
- 
-NOAA-21 data can also be downloaded from the Sentinel S3 bucket with the Satellite ID ‘J02’. 
+![](/_files/tech-alerts/DEA_Coastlines_-_1988-2025_-_Cervantes_WA_-_Annual_coastline_data_showing_37_years_of_coastal_change.png)
 
-[View the Tech Alert](https://communication.ga.gov.au/NOAA-21-Hotspots-Integrated-with-other-VIIRS-Sensors)
+<figure>
+    <figcaption>DEA Coastlines showing Cervantes, WA with annual coastline data of 37 years of coastal change (1988-2025).</figcaption>
+</figure>
 
-## 20 Mar 2025: DEA Sentinel-2C data now operational  
+The latest annual product update is now available for the following DEA coastal products:
 
-Sentinel-2C data are now operational and supplying DEA products. DEA’s [ga_s2cm_ard_3](https://knowledge.dea.ga.gov.au/data/product/dea-surface-reflectance-sentinel-2c-msi/) product is receiving data for both our NRT and definitive offerings, which should now be fed into user workflows. [DEA Maps](http://maps.dea.ga.gov.au/#share=s-oeiMObC1NOBrld9OlCY9hcjdzNB), the [DEA Sandbox](https://app.sandbox.dea.ga.gov.au/hub/login), and [DEA Notebooks](https://knowledge.dea.ga.gov.au/notebooks/DEA_products/DEA_Sentinel2_Surface_Reflectance/) have all been updated to include Sentinel-2C data.
+* [DEA Coastlines](/data/product/dea-coastlines/) &mdash; 2025 annual data
+* [DEA Intertidal](/data/product/dea-intertidal/) &mdash; 2024 annual data
+* [DEA Tidal Composites](/data/product/dea-tidal-composites/) &mdash; 2024 annual data
 
-Users of our Sentinel-2A products ([ga_s2am_ard_3](https://knowledge.dea.ga.gov.au/data/product/dea-surface-reflectance-sentinel-2a-msi/)) should switch to our Sentinel-2C data products. Please note Sentinel-2B continued to provide data throughout and hence our Sentinel-2B product ([ga_s2bm_ard_3](https://knowledge.dea.ga.gov.au/data/product/dea-surface-reflectance-sentinel-2b-msi/)) is not affected by this switch-over process.
+These annual updates support year-to-year comparison of shoreline and coastal change, including in areas with rapid or significant coastal dynamics.
 
-In February, the [European Commission](https://communication.ga.gov.au/link/id/zzzz67db6439c4d9b829Pzzzz61de67bd94bfe861/page.html) announced an “exceptional and temporary extension” to the life and availability of data from the Sentinel-2A satellite mission for one year. We plan to evaluate the quality of data coming out of this mission, and if satisfactory, will add them to DEA data holdings in addition to Sentinel-2C. 
+![](/_files/tech-alerts/DEA_Intertidal_-_2024_-_Arnhem_Land_Northern_Territory_-_Intertidal_elevation.png)
 
-[View the Tech Alert](https://communication.ga.gov.au/link/id/zzzz67db8854cd6cd573Pzzzz6567c8b713b5b826/page.html)
+<figure>
+    <figcaption>DEA Intertidal shows Arnhem Land, Northern Territory in 2024 using Intertidal Elevation layer.</figcaption>
+</figure>
 
-## 20 Mar 2025: s2cloudless cloud mask data reprocessed
+DEA users now have access to the latest annual coastal data, with 2025 Coastlines and 2024 Intertidal and Tidal Composites available for analysis and comparison.
 
-DEA has implemented a fix to the Sentinel-2 s2cloudless cloud mask correction. Due to this issue, Sentinel-2 observations between 25 January 2022 and 7 June 2024 using the cloud mask data were previously unusable. [The error arose](https://sentiwiki.copernicus.eu/web/s2-processing) with the addition of an offset factor introduced in ESA's Sentinel-2 L1C Processing Baseline 4.0.0 on 25 January 2022. This resulted in widespread over-classification of cloud after this date, particularly over bare regions and agricultural regions. DEA has reprocessed the affected data with new offset factors to produce correct cloud classifications.
+The Intertidal and Tidal Composites products continue to be generated using a three-year rolling window (this release draws on 2023–2025 observations) to provide the best view of the median year, 2024. This supports robust year-to-year assessment of Australia’s dynamic coastal environments.
 
-Reprocessing of affected Sentinel-2 data has been ongoing since October 2024 and is now complete. Users can again use s2cloudless to cloud mask Sentinel-2 data, particularly for the now-corrected observations between the period of 25 January 2022 and 7 June 2024.  
+![](/_files/tech-alerts/DEA_Tidal_Composites_-_2024_-_Cambridge_Gulf_Western_Australia_-_False_colour_view_of_high_tide_flooding.png)
 
-[View the Tech Alert](https://communication.ga.gov.au/link/id/zzzz67db8854cd6cd573Pzzzz6567c8b713b5b826/page.html)
+<figure>
+    <figcaption>DEA Tidal Composites false colour view of the Cambridge Gulf, Western Australia in 2024 showing high tide flooding.</figcaption>
+</figure>
 
-## 13 Mar 2025: Landsat near-real-time (NRT) data outage (Resolved)
+Together, these updates provide a nationally consistent view of Australia’s coastlines and align coastal datasets with DEA’s annual terrestrial data cycle, helping users confidently monitor and compare change across land, water and coastal zones.
 
-Landsat near-real-time (NRT) data is now being published on its normal cadence, as the issue in our (DEA's) data systems has been resolved. The data gap caused by the downtime from 9 March onwards has now been backfilled and the data is available. (Note that there is still a data gap from 6 March to 9 March (UTC) due to the planned USGS maintenance.)
+[View the Tech Alert](https://communication.ga.gov.au/link/id/zzzz69f2e31c01f73761Pzzzz6567c8b713b5b826/page.html)
 
-## 12 Mar 2025: Landsat near-real-time (NRT) data outage (6 March to the present) due to planned USGS maintenance and a subsequent issue
+## 30 Apr 2026: DEA Terrestrial products &mdash; 2025 annual update now available
 
-Planned USGS maintenance caused DEA's Landsat near-real-time (NRT) data to experience downtime. This planned maintenance occurred from 6 March to 9 March (UTC); however, a subsequent issue in our (DEA's) own data systems has caused the outage to continue to the present time. We are currently working on the issue and expect it to be resolved by the end of the day.
+![](/_files/tech-alerts/lake_eyre_l4_animation_630x400.gif)
 
-## 5 Mar 2025: Shift in origin point of DEA Summary Product Grid
+<figure>
+    <figcaption>DEA Land Cover classification (level 4) for 2025 showing Lake Eyre filling up with water following record breaking rainfall in the 2024-25 wet season, across Central Australia’s Channel Country.</figcaption>
+</figure>
 
-To accommodate an expanded area of coverage of Australia's external territories, the [DEA Summary Product Grid](/guides/reference/collection_3_summary_grid/) has being shifted. The south-west origin point of the grid has been being shifted from `-5472000.0, -2688000.0` to `-6912000.0, -4416000.0` (EPSG:3577). Therefore, all tile grid references have shifted 18 tiles west and 15 tiles south. For instance, a tile reference of `x10y10` has changed to `x28y25`. For a preview, see the [provisional version of the expanded DEA Summary Product Grid](https://maps.dea.ga.gov.au/#share=s-avXJqwjUtf55qGUmweYY5KYoVnI) on DEA Maps. [Download the new grid from AWS S3](https://dea-public-data.s3.ap-southeast-2.amazonaws.com/derivative/ga_summary_grid_c3_expanded.geojson)
+Digital Earth Australia (DEA) delivers refreshed 2025 annual data for a suite of terrestrial and inland water products, ensuring they reflect the most recent full calendar year of observations and remain consistent across the DEA product catalogue. 
 
-The latest versions of all of our 'summary derivative products' have now been updated to the new origin point (but existing versions of the products were not be changed). The last product to be updated was [DEA Land Cover](/data/product/dea-land-cover-landsat/) in its version 2.0.0 release on 5 March 2025.
+The terrestrial products included in the 2025 annual product update are: 
 
-Learn more about the [DEA Summary Product Grid](/guides/reference/collection_3_summary_grid/).
+* [DEA Fractional Cover Percentiles](/data/product/dea-fractional-cover-percentiles-landsat/)
+* [DEA Geometric Median and Median Absolute Deviation (GeoMAD)](/data/product/dea-geometric-median-and-median-absolute-deviation-landsat/)
+* [DEA Land Cover](/data/product/dea-land-cover-landsat/)
+* [DEA Tasseled Cap Percentiles](/data/product/dea-tasseled-cap-percentiles-landsat/)
+* [DEA Water Observation (annual and seasonal summary)](/data/product/dea-water-observations-statistics-landsat/)
+* [DEA Water Observation Multi-Year Summary](/data/product/dea-water-observations-statistics-landsat/)
+* [DEA Mangroves](/data/product/dea-mangroves/)
 
-## 5 Mar 2025: Version 2.0.0 of DEA Land Cover released
+![](/_files/tech-alerts/DEA_GeoMAD_false_colour_G_S1_NIR.gif)
 
-We are excited to announce the release of [DEA Land Cover 2.0.0](/data/product/dea-land-cover-landsat/). This latest version introduces improvements to the DEA Land Cover product, enhancing the translation of over three decades of satellite imagery into evidence of how Australia’s land, vegetation, and waterbodies have changed over time.
+<figure>
+    <figcaption>A DEA GeoMAD false colour (short wave infrared, near infrared, and green band) animation of Central Australia's Channel Country enhancing contrast in vegetation, water, and bare surfaces to highlight greening between 2024 and 2025 after record rainfall.</figcaption>
+</figure>
 
-* **Breaking change:** Shift in grid origin point
-* **Breaking change:** Data structure changes
-* Improved cloud masking to reduce noise
-* Landsat 9 included
-* Machine Learning Upgrade
-* Pixel resolution
-* Product ID Update
-* 'No data' value changed
-* Level 4 classification update
-* Collection Upgrade
+DEA users now have access to 2025 calendar year data across DEA’s core terrestrial and inland water products, reflecting the most recent full year of satellite observations.
 
-DEA Land Cover 1.0.0 will be decommissioned in June 2025.
+These updated datasets support consistent, year‑to‑year analysis of Australia’s land and inland water environments, helping users monitor change, compare trends over time, and apply the latest information with confidence. 
 
-See the [Version 2.0.0 Changelog](/data/product/dea-land-cover-landsat/?tab=history) for more information.
+By refreshing these products on an annual cycle, DEA continues to provide a nationally consistent foundation for land and water analysis, aligned across the broader DEA product catalogue.
 
-The product page also includes [known issues and limitations](/data/product/dea-land-cover-landsat/?tab=quality), some of which are being actively worked on.
+[View the Tech Alert](https://communication.ga.gov.au/link/id/zzzz69f2bd4eb04f7853Pzzzz6567c8b713b5b826/page.html)
 
-[View the Tech Alert](https://communication.ga.gov.au/link/id/zzzz67c92c7428d1a912Pzzzz6567c8b713b5b826/page.html)
+## 15 April 2026: Upcoming updates to DEA Water Observations Multi-Year, Mangroves and Land Cover summary products
 
-## 20 Feb 2025: DEA near-real-time data not up-to-date
+As part of Digital Earth Australia’s (DEA) planned 2025 annual product update in the coming weeks, [DEA Water Observations Multi-Year Summary data](/data/product/dea-water-observations-statistics-landsat/) will be made available to include an additional two years of data. The existing version will be replaced with the expanded time series.
 
-DEA near-real-time ARD datasets are currently not up-to-date. We are investigating the cause of this issue. 
+Additionally, the [DEA Mangroves](/data/product/dea-mangroves/) and [Land Cover](/data/product/dea-land-cover-landsat/) products will have an update to **Tile x28y46** on the West Australian coast as a classification error was identified. Some areas of ocean in this tile were misclassified as mangroves and will be corrected in the historical records.
 
-## 20 Feb 2025: DEA Sandbox unplanned outage (Resolved)
+These updates are expected to take place during the **week of 27 April 2026**, alongside DEA’s 2025 annual product update.
 
-The DEA Sandbox is currently unavailable. We are currently working to restore the service. 
+No action is required; temporary disruptions could be experienced to the DEA Water Observations Multi-Year Summary, DEA Land Cover and Mangroves products during the data transition period.
 
-## 21 Jan 2025: Sentinel-2A data switching over to Sentinel-2C
+[View the Tech Alert](https://communication.ga.gov.au/link/id/zzzz69deeb5f9e03e642Pzzzz6567c8b713b5b826/page.html)
 
-Digital Earth Australia’s Sentinel-2A data products will stop publishing data updates on 21 January 2025. They will be replaced with equivalent Sentinel-2C data products, which will begin publishing data shortly after. For further information on the precise timing of the transfer, please see [Sentinel Online](https://sentinel.esa.int/web/sentinel/-/precise-timing-of-transfer-of-duty-from-sentinel-2a-to-sentinel-2c-on-21-january). The historical Sentinel-2A data will still be provided as public data. A new ga_s2cm_ard_3 product will begin receiving data for both our NRT and definitive offerings within the coming weeks. 
+## 2 Apr 2026: Interim Processing Approach to Digital Earth ARD Dataset
 
-[View the Tech Alert](https://communication.ga.gov.au/link/id/zzzz678f06dcdfdd9113Pzzzz6567c8b713b5b826/page.html)
+**What’s happening?**
 
-## 8 Jan 2025: DEA Maps data not up-to-date (Resolved)
+Digital Earth Australia (DEA)’s Landsat and Sentinel 2 [Analysis Ready Data (ARD) products](/data/category/dea-surface-reflectance/) currently use third party datasets to correct the data for Australian conditions. A dataset used in this correction - the National Oceanic and Atmospheric Administration’s NCEP/NCAR Reanalysis 1 water vapour dataset has been discontinued.
 
-[DEA Maps](/guides/setup/dea_maps/) and [OWS layers](/guides/setup/gis/README/) are not currently up-to-date with the data available on [DEA AWS](/guides/setup/AWS/data_and_metadata/). We are investigating the cause of this issue. 
+To address this the Digital Earth team will be incorporating the European Centre for Medium Weather Forecast (ECMWF) data source into its ARD corrections, which has been assessed and found suitable as an alternative source of water vapour data. This action will provide Digital Earth the time to undertake an assessment of other data sources to identify the long-term solution.
 
-The affected services will be updated once the issue is resolved. 
+DEA derivative data products will experience an interruption in service while ECMWF is incorporated into our processing pipelines. The products that will be affected include:
 
-## 2 Sep 2024: Expanded extents data processing is currently paused, with data available to May 2024 <!-- NOTE Remember to remove the banner on the page: https://pr-302-preview.khpreview.dea.ga.gov.au/guides/reference/ard-expanded-processing-extent/ -->
+* [DEA Water Observations (Landsat)](/data/product/dea-water-observations-landsat/)
+* [DEA Fractional Cover (Landsat)](/data/product/dea-fractional-cover-landsat/)
+* [DEA Waterbodies (Landsat)](/data/product/dea-waterbodies-landsat/)
+* [DEA Fuel Moisture Content (Sentinel 2)](/data/product/dea-fuel-moisture-content/)
 
-This year, we [expanded the processing extents](/guides/reference/ard-expanded-processing-extent/) for our [Surface Reflectance products](/data/category/dea-surface-reflectance/) and derivative products.
+**DEA ARD dataset maturity**
 
-Unfortunately, due to unanticipated issues with an external network connection, we have needed to pause the back-processing of this expanded extent data since May 2024. You may have noticed this issue, for example, if you attempted to access ARD from the Heard Island and McDonald Islands and found that there are no images more recent than May 2024.
+DEA ARD data will continue to be produced until a suitable alternative water vapour dataset is available. The ARD correction will continue to be applied to DEA data using a pre-calculated climatology, which is currently used in the “near-real time” (NRT) ARD products.
+
+Data produced using this climatology will be flagged with the “interim” maturity flag to make it easy to identify in metadata. More information about DEA dataset maturity [can be found here](/guides/reference/dataset_maturity_guide/).
+
+Once the ECMWF data is incorporated into our processes, the interim flagged data will be reprocessed, and a “final” maturity product will be produced using this data source.
+
+DEA’s downstream data products will only be processed from “final” quality data and will experience a disruption in production while this activity is underway.
+
+**When’s it happening?**
+
+DEA Landsat and Sentinel 2 ARD products will begin to see production of “interim” data from 9 April 2026.
+
+Once this occurs, the impacted DEA derivative products listed will stop updating.
+
+At this stage, we anticipate that ARD corrections using ECMWF will resume by early May 2026. We will notify DEA users with a Tech Alert when available.
+
+Once a suitable long-term replacement water vapour dataset is available, we will advise DEA users of how we intend to incorporate it into our data collection.
+
+**What action do you need to take?**
+
+No action by users is required.
+
+[View the Tech Alert](https://communication.ga.gov.au/link/id/zzzz69cdf18461773486Pzzzz6567c8b713b5b826/page.html)
+
+## 3 Mar 2026: Redundant Sentinel-2 Near Real Time data removed
+
+![](/_files/tech-alerts/2026-03-03-nrt-data-removed.jpeg)
+
+<figure>
+    <figcaption>The DEA Landsat and Sentinel tile grids showing redundant tiles that have been removed circled in red.</figcaption>
+</figure>
+
+Digital Earth Australia (DEA) has removed more than 87,000 redundant Near-Real Time (NRT) data tiles from our Surface Reflectance data to ensure consistency within the definitive DEA tile set.
+
+NRT is the [rapid dataset maturity level](/guides/reference/dataset_maturity_guide/) produced within 48 hours of image capture, but it is considered of lower quality than our final Anaysis Ready Data (ARD) products. These NRT data are later converted to the definitive or ‘final’ maturity level when high quality ancillary data is available.
+
+To better manage our data and improve system processing we have begun cleaning up these redundant packets that have been superseded by the final definitive data.
+
+During this process we have identified NRT that are not available in the final datasets, as well as tiles in the definitive datasets that are not available in NRT.
+
+To address this we have removed redundant Sentinel-2 tiles in the NRT processing only, leaving the definitive tile set in place.
+
+We have also updated the processing tile sets for Landsat and Sentinel-2 and synchronised the [NCI](https://explorer.nci.dea.ga.gov.au/products) and [AWS](https://explorer.dea.ga.gov.au/products) processing so both services now work off the same core tile set.
+
+For the Landsat tile set there will be additional tiles processed to AWS while for Sentinel-2 some tiles will be removed as well as some tiles added. This will result in a net reduction in the number of tiles processed to AWS, and a minor net-gain for NCI. The majority of the NRT tiles are over the ocean and deemed unlikely to include relevant EO data.
+
+By removing the old NRT data and synchronising NCI and AWS tile processing we will provide better overall data management and consistency across these DEA services.
+
+This process has been completed and we will continue to monitor the changes into the near future.
+
+[View the Tech Alert](https://communication.ga.gov.au/link/id/zzzz69a66543ec0f4562Pzzzz6567c8b713b5b826/page.html)
+
+(s2a-re-enabled-tech-alert)=
+
+## 3 Mar 2026: New Sentinel-2A ARD made available after mission continuation
+
+DEA has reenabled Sentinel-2A (S2A) data following the European Space Agency (ESA) announcing in early 2025 the satellite mission [will continue in a modified orbit adjacent to Sentinel-2B (S2B)](https://dataspace.copernicus.eu/news/2025-1-27-sentinel-2a-exceptional-temporary-extension-campaign-starting-march-2025).
+
+This extended campaign includes a unique tandem acquisition period between January and March 2026. This will allow the two satellites to capture scenes in nearly identical conditions, further enhancing radiometric performance and consistency. You can read more at the [Copernicus Data Space Ecosystem website](https://dataspace.copernicus.eu/news/2025-12-19-sentinel-2a-and-sentinel-2b-tandem-acquisitions) and [here](https://sentiwiki.copernicus.eu/web/s2-mission).
+
+The current estimate of the S2A datasets to be added to the collection as of 09/02/2026 is around 28,000. For comparison, the numbers of Sentinel-2B and Sentinel-2C datasets for the same period are 66,011 and 63,449 respectively.
+
+Sentinel-2A has been collecting data for nearly 12 months. This data will now be added to our ARD collection.
+
+The additional S2A datasets are now available. You can now see the temporary tandem acquisitions of S2A and S2B swaths on [DEA Maps](https://maps.dea.ga.gov.au/#share=s-t7l2lP0FPHEW2eWsC9a6ez4AupT).
+
+Even though Sentinel-2A is now on the modified orbit following Sentinel-2B, the orbital parameters of the satellite remain largely unchanged.
+
+DEA users with existing workflows consuming Sentinel-2B and Sentinel-2C data should not see any impact, and no further action should be required. However, users running automatic workflows that are not filtering out Sentinel-2A data may see an uptick in data volume as we process and publish our Sentinel-2A data backlog.
+
+If you do not want to process these S2A data in your workflows, please make sure to exclude them.
+
+[View the Tech Alert](https://communication.ga.gov.au/link/id/zzzz69a66543ec0f4562Pzzzz6567c8b713b5b826/page.html)
+
+## Summary of DEA Tech Alerts 2025
+
+The following Tech Alerts were posted to this page in the previous year. To read these, [view DEA Tech Alerts 2025](/tech-alerts/2025/).
+
+| Date&nbsp;posted | Title of Tech Alert |
+|---|---|
+| 18 Dec 2025 | Shutdown period (Resumed) |
+| 17 Dec 2025 | New release &mdash; Digital Earth Australia Coastal Ecosystems |
+| 19 Nov 2025 | The Landsat 9 satellite outage 17&ndash;23 October 2025 (Resolved) |
+| 18 Nov 2025 | Digital Earth access to Landsat 8 and 9 data restored |
+| 20 Oct 2025 | Landsat production currently impacted by outage (Resolved) |
+| 14 Oct 2025 | New release &mdash; DEA Fuel Moisture Content |
+| 14 Oct 2025 | DEA Sandbox access update |
+| 2 Oct 2025 | US Government Shutdown Impact: Geoscience Australia’s Digital Earth not currently experiencing any disruption to services |
+| 10 Sep 2025 | DEA Land Cover continental mosaics |
+| 10 Sep 2025 | Old product versions being deprecated soon |
+| 10 Sep 2025 | DEA data in the Digital Atlas of Australia |
+| 26 Jun 2025 | Tech Alert |
+| 23 May 2025 | NOAA-19-derived DEA Hotspots discontinued from 16 June 2025 |
+| 21 May 2025 | DEA Waterbodies 3.0 |
+| 15 May 2025 | DEA Intertidal 2.0.0 released incorporating 2023 data |
+| 15 May 2025 | DEA Tidal Composites released |
+| 1 May 2025 | Missing Sentinel-2C data on AWS datacube is being restored |
+| 30 Apr 2025 | DEA Coastlines 3.0 and 2024 data are now available |
+| 30 Apr 2025 | DEA Terrestrial products 2024 calendar year updates now available |
+| 22 Apr 2025 | DEA Sandbox technical review update |
+| 22 Apr 2025 | STAC API/Explorer |
+| 4 Apr 2025 | URGENT: The DEA Sandbox is offline until further notice (Resolved) |
+| 3 Apr 2025 | URGENT: DEA Sandbox will be offline from 4pm Friday 4 April 2025 until further notice (Resolved) |
+| 1 Apr 2025 | NOAA-21 Hotspots will be integrated with other VIIRS Sensors from 8 April |
+| 20 Mar 2025 | DEA Sentinel-2C data now operational   |
+| 20 Mar 2025 | s2cloudless cloud mask data reprocessed |
+| 13 Mar 2025 | Landsat near-real-time (NRT) data outage (Resolved) |
+| 12 Mar 2025 | Landsat near-real-time (NRT) data outage (6 March to the present) due to planned USGS maintenance and a subsequent issue |
+| 5 Mar 2025 | Shift in origin point of DEA Summary Product Grid |
+| 5 Mar 2025 | Version 2.0.0 of DEA Land Cover released |
+| 20 Feb 2025 | DEA near-real-time data not up-to-date |
+| 20 Feb 2025 | DEA Sandbox unplanned outage (Resolved) |
+| 21 Jan 2025 | Sentinel-2A data switching over to Sentinel-2C |
+| 8 Jan 2025 | DEA Maps data not up-to-date (Resolved) |
+

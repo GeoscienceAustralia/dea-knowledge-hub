@@ -1,7 +1,21 @@
 ## Changelog
 
-### Version  4.0.0
+:::{include} ../../../_components/tech-alert-terrestrial-2025-annual-product-update-summary.md
+:::
 
-* **Breaking change: Shift in grid origin point** &mdash; The south-west origin point of the DEA Summary Product Grid has been shifted 18 tiles west and 15 tiles south. Therefore, all tile grid references have been changed. For instance, a tile reference of `x10y10` has changed to `x28y25`. The tile grid references of all derivative products generated from 2024 onwards will also be changed; however, Analysis Ready Data products will not be affected.
-* **Enhanced cloud masking to reduce noise** &mdash; An enhancement to cloud masking has reduced cloud and shadow noise. This enhancement (known as 'cloud buffering') involved cleaning cloud masks using a 6-pixel dilation on cloud and shadows. Note that some areas of very high surface reflectance (e.g. sand dunes and ocean areas) may exhibit worsened noise or data gaps, but these are infrequent occurrences with low impact.
-* **Landsat 9 product** &mdash; Landsat 9 is processed from 2022 onwards.
+### 10 Sep 2025: DEA data in the Digital Atlas of Australia
+
+The [DEA Coastlines](/data/product/dea-coastlines/), [DEA Mangroves](/data/product/dea-mangroves/), and [DEA Water Observations Multi-Year Summary](/data/product/dea-water-observations-statistics-landsat/) datasets have now been added to the Digital Atlas, joining [DEA Land Cover](/data/product/dea-land-cover-landsat/). This integration marks a significant milestone in how DEA data can be accessed, visualised, and applied. By embedding DEA products into the Digital Atlas, users can now interact with trusted Earth observation datasets alongside other authoritative national data — unlocking powerful new opportunities for cross-sector analysis and decision-making. 
+
+[Explore the DEA datasets and tools in the Digital Atlas](https://digital.atlas.gov.au/search?source=Digital%2520Earth%2520Australia)
+
+[View the Tech Alert](https://communication.ga.gov.au/link/id/zzzz68c0df3fa6de5146Pzzzz6567c8b713b5b826/page.html)
+
+:::{include} ../../../_components/tech-alert-2024-annual-product-update-summary.md
+:::
+
+### Version 4.0.0
+
+- **Breaking change: Shift in grid origin point** — The south-west origin point of the DEA Summary Product Grid has been shifted 18 tiles west and 15 tiles south. All tile grid references have changed (e.g., `x10y10` is now `x28y25`). This affects all summary derivative products, but baseline and scene derivative products remain unaffected.
+- **Enhanced cloud masking to reduce noise** — Cloud masking improvements use 6-pixel dilation on cloud and shadows to reduce noise in source datasets. Some high-reflectance areas (sand dunes, ocean) may show increased noise or data gaps, but these occurrences are infrequent with minimal impact.
+- **Additional inputs from Landsat 9** — Landsat 9 data incorporated from 2022 onwards.

@@ -129,12 +129,12 @@ entries:
           - file: data/theme/sea-ocean-and-coast/index
             title: All
 
+          - file: data/product/dea-coastal-ecosystems/index
           - file: data/product/dea-coastlines/index
-          - file: data/product/dea-high-and-low-tide-imagery-landsat/index
-            title: DEA High and Low Tide Imagery
           - file: data/product/dea-intertidal/index
-          - file: data/product/dea-intertidal-extents-landsat/index
-            title: DEA Intertidal Extents (ITEM)
+          - file: data/product/dea-tidal-composites/index
+            title: DEA Tidal Composites
+          
 
       - caption: Hazards
         entries:
@@ -144,6 +144,8 @@ entries:
           - file: data/product/dea-hotspots/index
           - file: data/product/dea-burnt-area-characteristic-layers-sentinel-2-near-real-time/index
             title: DEA Burnt Area Characteristic Layers (Provisional)
+          - file: data/product/dea-fuel-moisture-content/index 
+            title: DEA Fuel Moisture Content
 
       - caption: External data
         entries:
@@ -181,6 +183,7 @@ entries:
               - file: guides/setup/NCI/account
               - file: guides/setup/NCI/basics
               - file: guides/setup/NCI/advanced
+          - file: guides/continental-cogs-geotiff-mosaics
           - file: guides/setup/gis/stac
           - file: guides/setup/AWS/data_and_metadata
           - file: guides/setup/gis/README
