@@ -12,7 +12,7 @@ and presents aggregate validation results to the end of this year.
 
 * During this year, a total of 21 measurements were taken across 9 field sites, to capture 33 overpasses.
 * Validation of all platforms improved in accuracy, taking into account the data from this year. This year also saw the first validation measurement for Sentinel-2C.
-* On an averaged band-by-band basis, Landsat 8 is validated to 2.1%, Landsat 9 is validated to 8.2%, Sentinel-2B is validated to 2.3% and Sentinel-2C is validated to 21.1%.
+* On an averaged band-by-band basis, Landsat 8 is validated to 2.3%, Landsat 9 is validated to 6.9%, Sentinel-2B is validated to 3.5% and Sentinel-2C is validated to 21.5%.
 
 ## Introduction
 
@@ -108,10 +108,10 @@ platform.
 :header-rows: 1
 
 "Satellite platform","Mean band-by-band scatter","Maximum band-by-band scatter"
-"Landsat 8","2.1%","2.7%"
-"Landsat 9","8.3%","12.1%"
-"Sentinel-2B","2.3%","3.7%"
-"Sentinel-2C","21.1%","44.4%"
+"Landsat 8","2.3%","3.1%"
+"Landsat 9","6.9%","11.0%"
+"Sentinel-2B","3.5%","7.3%"
+"Sentinel-2C","21.5%","44.5%"
 :::
 
 For example, the Table shows that each Landsat 8 band is typically validated to 2.1%, with the worst performance
