@@ -1,6 +1,6 @@
 ## 15 May 2026: Digital Atlas of Australia DEA Coastlines layer changes and new 2025 data
 
-![]()
+![](/_files/tech-alerts/DAA_DEACoastlines_2025.JPG)
 
 <figure>
     <figcaption>New 2025 annual shoreline data from DEA Coastlines in the Digital Atlas of Australia.</figcaption>
