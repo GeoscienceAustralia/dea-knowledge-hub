@@ -25,3 +25,4 @@ The layers affected include:
 To view the DEA Coastlines layers in Digital Atlas in an easy-to-use application, try out the [DEA Coastlines Esri application](https://digital.atlas.gov.au/apps/dd64505be18249959f3355ff05772f4e).
 
 [View the Tech Alert]()
+
