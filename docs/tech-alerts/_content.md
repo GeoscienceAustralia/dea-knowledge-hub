@@ -1,6 +1,40 @@
 % See the DEA Tech Alerts documentation:
 % https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/tech_alerts_changelog.html
 
+## 15 May 2026: Interim ARD processing issue resolved; DEA has integrated ECMWF data into atmospheric correction workflows
+
+![]()
+
+<figure>
+    <figcaption>Farmland (red and purple) and forest (green) near Dalby, Queensland, seen through DEA Fractional Cover.</figcaption>
+</figure>
+
+Digital Earth Australia (DEA) has successfully integrated [European Centre for Medium-Range Weather Forecasts (ECMWF)](https://www.ecmwf.int/) datasets into our products to fix a critical atmospheric correction dependency in our final‑quality surface reflectance products.  
+
+DEA historically relied on NOAA NCEP/NCAR Reanalysis 1 water vapour data as a third-party input for data corrections.  
+
+While that dataset has been discontinued, we have now incorporated the ECMWF datasets into DEA analysis ready data (ARD) as we continue to investigate a long-term replacement.  
+
+This issue was first flagged in a [DEA Tech Alert issued 2 April](https://communication.ga.gov.au/pub/pubType/EO/pubID/zzzz69cdbd8d27eed619/interface.html), indicating interim data processing would be begin 9 April. 
+
+DEA has now successfully integrated ECMWF into our workflows to provide an immediate continuation of final-maturity processing. 
+
+Atmospheric water vapour is a key input to radiative transfer models used to produce DEA ARD.
+
+Products that have been restored include: 
+
+* [Landsat and Sentinel 2 Analysis Ready Data (ARD)](/data/category/dea-surface-reflectance/)
+* [DEA Water Observations (Landsat)](/data/product/dea-water-observations-landsat/)
+* [DEA Fractional Cover (Landsat)](/data/product/dea-fractional-cover-landsat/)
+* [DEA Waterbodies (Landsat)](/data/product/dea-waterbodies-landsat/)
+* [DEA Fuel Moisture Content (Sentinel 2)](/data/product/dea-fuel-moisture-content/)
+
+Affected products have been backfilled to the beginning of the outage period. 
+
+When a suitable long-term replacement water vapour dataset has been selected, we will advise DEA users of how we intend to incorporate it into our data collection.
+
+[View the Tech Alert]()
+
 ## 30 Apr 2026: DEA coastal products &mdash; annual update now available
 
 ![](/_files/tech-alerts/DEA_Coastlines_-_1988-2025_-_Cervantes_WA_-_Annual_coastline_data_showing_37_years_of_coastal_change.png)
