@@ -1,4 +1,4 @@
-## 15 May 2026: Interim ARD processing issue resolved; DEA has integrated ECMWF data into atmospheric correction workflows
+### 15 May 2026: Interim ARD processing issue resolved; DEA has integrated ECMWF data into atmospheric correction workflows
 
 Digital Earth Australia (DEA) has successfully integrated [European Centre for Medium-Range Weather Forecasts (ECMWF)](https://www.ecmwf.int/) datasets into our products to fix a critical atmospheric correction dependency in our final‑quality surface reflectance products.  
 
