@@ -57,14 +57,14 @@ ymin, xmax = -33.66, 115.30
 
 # Set up WFS requests for annual shorelines & rates of change points
 deacl_annualshorelines_wfs = (
-    f"https://nonprod.geoserver.dea.ga.gov.au/geoserver/dea/wfs?"
+    f"https://geoserver.dea.ga.gov.au/geoserver/dea/wfs?"
     f"service=WFS&version=1.1.0&request=GetFeature"
     f"&typeName=dea:shorelines_annual&maxFeatures=1000"
     f"&bbox={ymin},{xmin},{ymax},{xmax},"
     f"urn:ogc:def:crs:EPSG:4326"
 )
 deacl_ratesofchange_wfs = (
-    f"https://nonprod.geoserver.dea.ga.gov.au/geoserver/dea/wfs?"
+    f"https://geoserver.dea.ga.gov.au/geoserver/dea/wfs?"
     f"service=WFS&version=1.1.0&request=GetFeature"
     f"&typeName=dea:rates_of_change&maxFeatures=1000"
     f"&bbox={ymin},{xmin},{ymax},{xmax},"
