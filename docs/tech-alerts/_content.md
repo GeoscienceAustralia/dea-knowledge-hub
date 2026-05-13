@@ -3,7 +3,7 @@
 
 ## 15 May 2026: Interim ARD processing issue resolved; DEA has integrated ECMWF data into atmospheric correction workflows
 
-![]()
+![](/_files/tech-alerts/DEA_TA_fractional_cover_Dalby_Qld_630.jpg)
 
 <figure>
     <figcaption>Farmland (red and purple) and forest (green) near Dalby, Queensland, seen through DEA Fractional Cover.</figcaption>
