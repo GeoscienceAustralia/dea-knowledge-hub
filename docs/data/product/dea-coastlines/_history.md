@@ -1,5 +1,8 @@
 ## Changelog
 
+:::{include} ../../../_components/tech-alert-may-2026-dea-coastlines.md
+:::
+
 :::{include} ../../../_components/tech-alert-coastal-2024-2025-annual-product-update-summary.md
 :::
 
