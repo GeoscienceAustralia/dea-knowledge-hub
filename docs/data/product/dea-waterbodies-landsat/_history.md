@@ -1,5 +1,8 @@
 ## Changelog
 
+:::{include} ../../../_components/tech-alert-may-2026-ecmwf-data-summary.md
+:::
+
 ### Version 3.0.0
 
 DEA Waterbodies 3.0.0 uses the same underlying polygon set as v2.0.0 but contains several improvements. Improvements include additional supporting data for the most recent observations available through web mapping services (WMS) and DEA Maps, more metadata availability, and pipeline improvements.

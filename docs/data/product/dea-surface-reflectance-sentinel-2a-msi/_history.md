@@ -1,5 +1,10 @@
 ## Changelog
 
+:::{include} ../../../_components/tech-alert-may-2026-ecmwf-data-summary.md
+:::
+
+### Previous history
+
 **This Collection 3 (C3) product** and has been created by reprocessing Collection 1 (C1) and making improvements to the processing pipeline and packaging.
 
 Packaging updates include:  
