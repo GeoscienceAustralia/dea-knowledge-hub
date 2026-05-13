@@ -6,6 +6,8 @@ DEA historically relied on NOAA NCEP/NCAR Reanalysis 1 water vapour data as a th
 
 While that dataset has been discontinued, we have now incorporated the ECMWF datasets into DEA analysis ready data (ARD) as we continue to investigate a long-term replacement.  
 
+This issue was first flagged in a [DEA Tech Alert issued 2 April](https://communication.ga.gov.au/pub/pubType/EO/pubID/zzzz69cdbd8d27eed619/interface.html), indicating interim data processing would be begin 9 April. 
+
 Atmospheric water vapour is a key input to radiative transfer models used to produce DEA ARD.
 
 Affected products have been backfilled to the beginning of the outage period. 
