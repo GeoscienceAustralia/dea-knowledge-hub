@@ -97,8 +97,8 @@ platform.
 "Sentinel-2B","4.0%","10.2%"
 :::
 
-For example, the Table shows that each Landsat 8 band is typically validated to 2.3%, with the worst performance
-of a band being 2.9%. Note that there is much larger scatter for Landsat 9, indicating higher uncertainty in validation.
+For example, the Table shows that each Landsat 8 band is typically validated to 2.5%, with the worst performance
+of a band being 3.5%. Note that there is much larger scatter for Landsat 9, indicating higher uncertainty in validation.
 This is because Landsat 9 is a newer platform, with fewer validation matchups.
 
 ## Effect on Cumulative Validation Results

@@ -114,8 +114,8 @@ platform.
 "Sentinel-2C","21.5%","44.5%"
 :::
 
-For example, the Table shows that each Landsat 8 band is typically validated to 2.1%, with the worst performance
-of a band being 2.7%. Note that there is much larger scatter for Landsat 9 and Sentinel-2C, indicating higher uncertainty in validation.
+For example, the Table shows that each Landsat 8 band is typically validated to 2.3%, with the worst performance
+of a band being 3.1%. Note that there is much larger scatter for Landsat 9 and Sentinel-2C, indicating higher uncertainty in validation.
 This is because there have been fewer field site measurements to coincide with the relatively new Landsat 9 and Sentinel-2C platforms.
 
 ## Effect on Cumulative Validation Results
