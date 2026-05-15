@@ -4,9 +4,9 @@
     <figcaption>New 2025 annual shoreline data from DEA Coastlines in the Digital Atlas.</figcaption>
 </figure>
 
-DEA Coastlines layers are being updated in the Digital Atlas to include new 2025 annual data.
+DEA Coastlines layers have been updated in the Digital Atlas to include new 2025 annual data.
 
-As part of this update, the previous DEA Coastlines layers are being removed, and new items will be published. The new items have different URLs and APIs. Any maps, applications or bookmarks will need to be updated to reference the new item URL or APIs, available through the new DEA Coastlines item details page. No other DEA services in the Digital Atlas are affected.
+As part of this update, the previous DEA Coastlines layers have been removed, and new items have been published. The new items have different URLs and APIs. Any maps, applications or bookmarks will need to be updated to reference the new item URL or APIs, available through the new DEA Coastlines item details page. No other DEA services in the Digital Atlas are affected.
 
 Changes occurred at midday today on Friday, 15 May 2026 Australian Eastern Standard Time (AEST).
 
