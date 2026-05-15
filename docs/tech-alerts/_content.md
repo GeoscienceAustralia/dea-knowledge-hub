@@ -1,6 +1,11 @@
 % See the DEA Tech Alerts documentation:
 % https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/tech_alerts_changelog.html
 
+## 15 May 2026: Digital Atlas DEA Coastlines layer changes and new 2025 data
+
+:::{include} ../_components/tech-alert-may-2026-dea-coastlines.md
+:::
+
 ## 30 Apr 2026: DEA coastal products &mdash; annual update now available
 
 ![](/_files/tech-alerts/DEA_Coastlines_-_1988-2025_-_Cervantes_WA_-_Annual_coastline_data_showing_37_years_of_coastal_change.png)
