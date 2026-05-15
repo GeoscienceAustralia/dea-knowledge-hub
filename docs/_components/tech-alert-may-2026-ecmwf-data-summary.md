@@ -10,7 +10,7 @@ This issue was first flagged in a [DEA Tech Alert issued 2 April](https://commun
 
 Atmospheric water vapour is a key input to radiative transfer models used to produce DEA ARD.
 
-Affected products have been backfilled to the beginning of the outage period.
+Affected products will continue to be backfilled to the beginning of the outage period.
 
 When a suitable long-term replacement water vapour dataset has been selected, we will advise DEA users of how we intend to incorporate it into our data collection.
 

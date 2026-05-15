@@ -29,7 +29,7 @@ Products that have been restored include:
 * [DEA Waterbodies (Landsat)](/data/product/dea-waterbodies-landsat/)
 * [DEA Fuel Moisture Content (Sentinel 2)](/data/product/dea-fuel-moisture-content/)
 
-Affected products have been backfilled to the beginning of the outage period.
+Affected products will continue to be backfilled to the beginning of the outage period.
 
 When a suitable long-term replacement water vapour dataset has been selected, we will advise DEA users of how we intend to incorporate it into our data collection.
 
