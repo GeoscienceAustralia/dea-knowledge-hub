@@ -16,7 +16,7 @@ Users of the DEA Coastlines layers in Digital Atlas will need to re-add the serv
 
 The affected layers include:
 
-* [DEA Coastlines annual shorelines](https://digital.atlas.gov.au/maps/3d8122f306544826a7601735805bcde1)
+* [DEA Coastlines annual shorelines](https://digital.atlas.gov.au/maps/4859a427575d4babb994044e09f00e45)
 * [DEA Coastlines rates of coastal change](https://digital.atlas.gov.au/maps/5beca3ad601447928386e607f6133340)
 * [DEA Coastlines coastal change hotspots](https://digital.atlas.gov.au/maps/62053d9d6100487aae7d720b753970c8)
 
