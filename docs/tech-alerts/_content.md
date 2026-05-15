@@ -35,6 +35,11 @@ When a suitable long-term replacement water vapour dataset has been selected, we
 
 [View the Tech Alert](https://communication.ga.gov.au/link/id/zzzz6a053acf63838720Pzzzz68dddaf52ac19353/page.html)
 
+## 15 May 2026: Digital Atlas DEA Coastlines layer changes and new 2025 data
+
+:::{include} ../_components/tech-alert-may-2026-dea-coastlines.md
+:::
+
 ## 30 Apr 2026: DEA coastal products &mdash; annual update now available
 
 ![](/_files/tech-alerts/DEA_Coastlines_-_1988-2025_-_Cervantes_WA_-_Annual_coastline_data_showing_37_years_of_coastal_change.png)

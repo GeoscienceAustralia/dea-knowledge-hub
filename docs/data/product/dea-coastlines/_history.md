@@ -1,5 +1,10 @@
 ## Changelog
 
+### 15 May 2026: Digital Atlas DEA Coastlines layer changes and new 2025 data
+
+:::{include} ../../../_components/tech-alert-may-2026-dea-coastlines.md
+:::
+
 :::{include} ../../../_components/tech-alert-coastal-2024-2025-annual-product-update-summary.md
 :::
 
