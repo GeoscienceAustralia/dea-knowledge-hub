@@ -14,5 +14,5 @@ Affected products will continue to be backfilled to the beginning of the outage 
 
 When a suitable long-term replacement water vapour dataset has been selected, we will advise DEA users of how we intend to incorporate it into our data collection.
 
-[View the Tech Alert](https://communication.ga.gov.au/link/id/zzzz6a053acf63838720Pzzzz68dddaf52ac19353/page.html)
+[View the Tech Alert](https://communication.ga.gov.au/link/id/zzzz6a0685cb39a76258Pzzzz6567c8b713b5b826/page.html)
 

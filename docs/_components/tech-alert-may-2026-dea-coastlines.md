@@ -22,5 +22,5 @@ The affected layers include:
 
 To view the DEA Coastlines layers in Digital Atlas in an easy-to-use application, try out the [DEA Coastlines Explorer](https://digital.atlas.gov.au/apps/dd64505be18249959f3355ff05772f4e).
 
-[View the Tech Alert](https://communication.ga.gov.au/link/id/zzzz6a053acf63838720Pzzzz68dddaf52ac19353/page.html)
+[View the Tech Alert](https://communication.ga.gov.au/link/id/zzzz6a0685cb39a76258Pzzzz6567c8b713b5b826/page.html)
 
