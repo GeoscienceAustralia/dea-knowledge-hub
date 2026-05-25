@@ -1,6 +1,28 @@
 % See the DEA Tech Alerts documentation:
 % https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/tech_alerts_changelog.html
 
+## 25 May 2026: Upcoming DEA Sandbox upgrade on 2 June 2026
+
+On 2 June 2026, the DEA Sandbox environment will be upgraded to include new Python packages and software. This will include major updates to the following packages:
+
+- `datacube` (1.8.19 to 1.9.10)
+- `numpy` (1.26.4 to 2.2.6)
+- `geopandas` (0.14.4 to 1.1.1)
+- `xarray` (2024.9.0 to 2025.6.1)
+- `odc-stac` (0.3.10 to 0.4.0)
+- `odc-geo` (0.4.8 to 0.5.0rc1)
+- `dea-tools` (0.3.5 to 0.4.10)
+
+The following new packages will also be available:
+
+- `geomad` (tools for generating geometric median composites, replacing legacy `odc-algo` implementation)
+- `eo-tides` (tools for combining tide modelling with satellite data)
+- `LightGBM` (high performance gradient boosting framework)
+- `shap` (tools for explaining machine learning models)
+- `pyogrio` (high performance vector reading and writing)
+
+For a complete list of packages and versions that will be included in the new Sandbox environment, see the [detailed list](https://github.com/GeoscienceAustralia/dea-sandbox/pull/329#issuecomment-4503997539).
+
 ## 15 May 2026: Interim ARD processing issue resolved; DEA has integrated ECMWF data into atmospheric correction workflows
 
 ![](/_files/tech-alerts/DEA_TA_fractional_cover_Dalby_Qld_630.jpg)
