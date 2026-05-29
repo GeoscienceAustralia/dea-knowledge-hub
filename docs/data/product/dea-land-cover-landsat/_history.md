@@ -5,7 +5,7 @@
 
 ### 29 Apr 2026: Patching of misclassified data
 
-:::{include} ../../../_components/tech-alert-2025-patching-misclassified-data.md
+:::{include} ../../../_components/tech-alert-2026-patching-misclassified-data.md
 :::
 
 ### 10 Sep 2025: DEA Land Cover continental mosaics

@@ -73,7 +73,7 @@ By refreshing these products on an annual cycle, DEA continues to provide a nati
 
 ## 29 Apr 2026: Patching of misclassified data for DEA Land Cover and DEA Mangroves
 
-:::{include} ../../_components/tech-alert-2025-patching-misclassified-data.md
+:::{include} ../../_components/tech-alert-2026-patching-misclassified-data.md
 :::
 
 ## 15 April 2026: Upcoming updates to DEA Water Observations Multi-Year, Mangroves and Land Cover summary products
