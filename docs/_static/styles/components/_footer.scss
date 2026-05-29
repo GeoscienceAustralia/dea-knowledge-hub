@@ -60,7 +60,8 @@ footer.bd-footer {
 
         }
 
-        &--policy-links {
+        &--policy-links,
+        &--github-repository {
             li {
                 display: inline;
                 margin-right: 2rem;
@@ -68,12 +69,6 @@ footer.bd-footer {
                 @media only screen and (max-width: $breakpoint-xl) {
                     line-height: 2rem;
                 }
-            }
-        }
-
-        &--badges {
-            & > div {
-                margin-top: 1rem;
             }
         }
 
