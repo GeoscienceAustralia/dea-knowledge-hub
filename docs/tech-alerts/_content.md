@@ -71,7 +71,7 @@ By refreshing these products on an annual cycle, DEA continues to provide a nati
 
 [View the Tech Alert](https://communication.ga.gov.au/link/id/zzzz69f2bd4eb04f7853Pzzzz6567c8b713b5b826/page.html)
 
-## 29 Apr 2026: Patching of misclassified data for DEA Land Cover and DEA Mangroves
+## 29 Apr 2026: Patching of misclassified data for DEA Mangroves and DEA Land Cover
 
 :::{include} ../_components/tech-alert-2026-patching-misclassified-data.md
 :::
