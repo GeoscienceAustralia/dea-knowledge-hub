@@ -92,7 +92,7 @@ access_links_custom:
     link: https://explorer.dea.ga.gov.au/products#inland-water-group
 
   - type: data
-    link: https://data.dea.ga.gov.au/?prefix=derivative/ga_ls_wo_fq_myear_3/2-0-0/
+    link: https://data.dea.ga.gov.au/?prefix=derivative/ga_ls_wo_fq_myear_3/2-1-0/
     name: Multi-year summary 1986 to near present - AWS access
   - type: data
     link: https://thredds.nci.org.au/thredds/catalog/jw04/ga_ls_wo_fq_myear_3/catalog.html
