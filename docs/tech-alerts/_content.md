@@ -1,9 +1,9 @@
 % See the DEA Tech Alerts documentation:
 % https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/tech_alerts_changelog.html
 
-## 2 June 2026: DEA Sandbox environment Python packages and software upgrade
+## 2 June 2026: (On 9 June 2026) DEA Sandbox environment Python packages and software upgrade
 
-**On 9 June 2026**, the DEA Sandbox environment will be upgraded to include new Python packages and software.
+On 9 June 2026, the DEA Sandbox environment will be upgraded to include new Python packages and software.
 
 The upgrade will provide users with access to new versions of core python packages, as well as Digital Earth-produced tools that support analysis of our archive of satellite data. It will allow users to make use of newly released features, improving the user experience on the DEA Sandbox.
 
