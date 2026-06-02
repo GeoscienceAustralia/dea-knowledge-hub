@@ -1,27 +1,39 @@
 % See the DEA Tech Alerts documentation:
 % https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/tech_alerts_changelog.html
 
-## 25 May 2026: Upcoming DEA Sandbox upgrade on 2 June 2026
+## 2 Jun 2026: (On 9 Jun 2026) DEA Sandbox environment Python packages and software upgrade
 
-On 2 June 2026, the DEA Sandbox environment will be upgraded to include new Python packages and software. This will include major updates to the following packages:
+On 9 June 2026, the DEA Sandbox environment will be upgraded to include new Python packages and software.
 
-- `datacube` (1.8.19 to 1.9.10)
-- `numpy` (1.26.4 to 2.2.6)
-- `geopandas` (0.14.4 to 1.1.1)
-- `xarray` (2024.9.0 to 2025.6.1)
-- `odc-stac` (0.3.10 to 0.4.0)
-- `odc-geo` (0.4.8 to 0.5.0rc1)
-- `dea-tools` (0.3.5 to 0.4.10)
+The upgrade will provide users with access to new versions of core python packages, as well as Digital Earth-produced tools that support analysis of our archive of satellite data. It will allow users to make use of newly released features, improving the user experience on the DEA Sandbox.
+
+This process will include major updates to the following packages:
+
+* **datacube** (1.8.19 to 1.9.10)
+* **numpy** (1.26.4 to 2.2.6)
+* **geopandas** (0.14.4 to 1.1.1)
+* **xarray** (2024.9.0 to 2025.6.1)
+* **odc-stac** (0.3.10 to 0.4.0)
+* **odc-geo** (0.4.8 to 0.5.0rc1)
+* **dea-tools** (0.3.5 to 0.4.10)
 
 The following new packages will also be available:
 
-- `geomad` (tools for generating geometric median composites, replacing legacy `odc-algo` implementation)
-- `eo-tides` (tools for combining tide modelling with satellite data)
-- `LightGBM` (high performance gradient boosting framework)
-- `shap` (tools for explaining machine learning models)
-- `pyogrio` (high performance vector reading and writing)
+* **geomad** (tools for generating geometric median composites, replacing legacy odc-algo implementation)
+* **eo-tides** (tools for combining tide modelling with satellite data)
+* **LightGBM** (high performance gradient boosting framework)
+* **shap** (tools for explaining machine learning models)
+* **pyogrio** (high performance vector reading and writing)
 
-For a complete list of packages and versions that will be included in the new Sandbox environment, see the [detailed list](https://github.com/GeoscienceAustralia/dea-sandbox/pull/329#issuecomment-4503997539).
+Note that Python will remain unchanged at version 3.10.
+
+For a complete list of packages and versions that will be included in the new Sandbox environment, see the [detailed list on Github](https://github.com/GeoscienceAustralia/dea-sandbox/pull/329#issuecomment-4503997539).
+
+The new environment will be available automatically upon login from COB 9 June.
+
+If a Jupyterlab session is still running during the switch it will be unaffected and continue to use the older environment until the next time a session is started.  If you wish to start a new session to ensure the new environment is loaded, this can be done within a Jupyterlab session by clicking:
+
+**File** &gt; **Hub Control Panel** &gt; **Stop My Server** &gt; **Start My Server**
 
 ## 15 May 2026: Interim ARD processing issue resolved; DEA has integrated ECMWF data into atmospheric correction workflows
 
@@ -106,9 +118,9 @@ Together, these updates provide a nationally consistent view of Australia’s co
     <figcaption>DEA Land Cover classification (level 4) for 2025 showing Lake Eyre filling up with water following record breaking rainfall in the 2024-25 wet season, across Central Australia’s Channel Country.</figcaption>
 </figure>
 
-Digital Earth Australia (DEA) delivers refreshed 2025 annual data for a suite of terrestrial and inland water products, ensuring they reflect the most recent full calendar year of observations and remain consistent across the DEA product catalogue. 
+Digital Earth Australia (DEA) delivers refreshed 2025 annual data for a suite of terrestrial and inland water products, ensuring they reflect the most recent full calendar year of observations and remain consistent across the DEA product catalogue.
 
-The terrestrial products included in the 2025 annual product update are: 
+The terrestrial products included in the 2025 annual product update are:
 
 * [DEA Fractional Cover Percentiles](/data/product/dea-fractional-cover-percentiles-landsat/)
 * [DEA Geometric Median and Median Absolute Deviation (GeoMAD)](/data/product/dea-geometric-median-and-median-absolute-deviation-landsat/)
@@ -126,7 +138,7 @@ The terrestrial products included in the 2025 annual product update are:
 
 DEA users now have access to 2025 calendar year data across DEA’s core terrestrial and inland water products, reflecting the most recent full year of satellite observations.
 
-These updated datasets support consistent, year‑to‑year analysis of Australia’s land and inland water environments, helping users monitor change, compare trends over time, and apply the latest information with confidence. 
+These updated datasets support consistent, year‑to‑year analysis of Australia’s land and inland water environments, helping users monitor change, compare trends over time, and apply the latest information with confidence.
 
 By refreshing these products on an annual cycle, DEA continues to provide a nationally consistent foundation for land and water analysis, aligned across the broader DEA product catalogue.
 
