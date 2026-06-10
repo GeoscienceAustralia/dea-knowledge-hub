@@ -1,13 +1,13 @@
 % See the DEA Tech Alerts documentation:
 % https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/tech_alerts_changelog.html
 
-## 2 Jun 2026: (On 9 Jun 2026) DEA Sandbox environment Python packages and software upgrade
+## 9 Jun 2026: DEA Sandbox environment Python packages and software upgraded
 
-**On 9 June 2026**, the DEA Sandbox environment will be upgraded to include new Python packages and software.
+On 9 June 2026, the DEA Sandbox environment was upgraded to include new Python packages and software.
 
-The upgrade will provide users with access to new versions of core python packages, as well as Digital Earth-produced tools that support analysis of our archive of satellite data. It will allow users to make use of newly released features, improving the user experience on the DEA Sandbox.
+The upgrade provides users with access to new versions of core python packages, as well as Digital Earth-produced tools that support analysis of our archive of satellite data. It will allow users to make use of newly released features, improving the user experience on the DEA Sandbox.
 
-This process will include major updates to the following packages:
+This process includes major updates to the following packages:
 
 * **datacube** (1.8.19 to 1.9.10)
 * **numpy** (1.26.4 to 2.2.6)
@@ -17,7 +17,7 @@ This process will include major updates to the following packages:
 * **odc-geo** (0.4.8 to 0.5.0rc1)
 * **dea-tools** (0.3.5 to 0.4.10)
 
-The following new packages will also be available:
+The following new packages are also now available:
 
 * **geomad** (tools for generating geometric median composites, replacing legacy odc-algo implementation)
 * **eo-tides** (tools for combining tide modelling with satellite data)
@@ -25,13 +25,13 @@ The following new packages will also be available:
 * **shap** (tools for explaining machine learning models)
 * **pyogrio** (high performance vector reading and writing)
 
-Note that Python will remain unchanged at version 3.10.
+Note that Python remains unchanged at version 3.10.
 
-For a complete list of packages and versions that will be included in the new Sandbox environment, see the [detailed list on Github](https://github.com/GeoscienceAustralia/dea-sandbox/pull/329#issuecomment-4503997539).
+For a complete list of packages and versions that are included in the new Sandbox environment, see the [detailed list on Github](https://github.com/GeoscienceAustralia/dea-sandbox/pull/329#issuecomment-4503997539).
 
-The new environment will be available automatically upon login from COB 9 June.
+The new environment is available automatically upon login from COB 9 June.
 
-If a Jupyterlab session is still running during the switch it will be unaffected and continue to use the older environment until the next time a session is started.  If you wish to start a new session to ensure the new environment is loaded, this can be done within a Jupyterlab session by clicking:
+If a Jupyterlab session was still running from before the switch it will be unaffected and continue to use the older environment until the next time a session is started.  If you wish to start a new session to ensure the new environment is loaded, this can be done within a Jupyterlab session by clicking:
 
 **File** &gt; **Hub Control Panel** &gt; **Stop My Server** &gt; **Start My Server**
 
