@@ -31,7 +31,7 @@ For a complete list of packages and versions that are included in the new Sandbo
 
 The new environment is available automatically upon login from COB 9 June.
 
-If a Jupyterlab session was still running from before the switch it will be unaffected and continue to use the older environment until the next time a session is started.  If you wish to start a new session to ensure the new environment is loaded, this can be done within a Jupyterlab session by clicking:
+If a Jupyterlab session is still running from before the switch it will be unaffected and continue to use the older environment until the next time a session is started.  If you wish to start a new session to ensure the new environment is loaded, this can be done within a Jupyterlab session by clicking:
 
 **File** &gt; **Hub Control Panel** &gt; **Stop My Server** &gt; **Start My Server**
 
