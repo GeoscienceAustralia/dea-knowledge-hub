@@ -1,6 +1,16 @@
 % See the DEA Tech Alerts documentation:
 % https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/tech_alerts_changelog.html
 
+## 9 Jun 2026: DEA Sandbox environment Python packages and software upgraded
+
+On 9 June 2026, the DEA Sandbox environment was upgraded to include new Python packages and software.
+
+The upgrade provides users with access to new versions of core python packages, as well as Digital Earth-produced tools that support analysis of our archive of satellite data. It will allow users to make use of newly released features, improving the user experience on the DEA Sandbox.
+
+The [Tech Alert](https://communication.ga.gov.au/link/id/zzzz6a1e650093057106Pzzzz6567c8b713b5b826/page.html) contains the details of which packages were updated, which new packages are available, and how to load the new environment.
+
+[View the Tech Alert](https://communication.ga.gov.au/link/id/zzzz6a1e650093057106Pzzzz6567c8b713b5b826/page.html)
+
 ## 2 Jun 2026: (On 9 Jun 2026) DEA Sandbox environment Python packages and software upgrade
 
 **On 9 June 2026**, the DEA Sandbox environment will be upgraded to include new Python packages and software.
@@ -34,6 +44,8 @@ The new environment will be available automatically upon login from COB 9 June.
 If a Jupyterlab session is still running during the switch it will be unaffected and continue to use the older environment until the next time a session is started.  If you wish to start a new session to ensure the new environment is loaded, this can be done within a Jupyterlab session by clicking:
 
 **File** &gt; **Hub Control Panel** &gt; **Stop My Server** &gt; **Start My Server**
+
+[View the Tech Alert](https://communication.ga.gov.au/link/id/zzzz6a1e650093057106Pzzzz6567c8b713b5b826/page.html)
 
 ## 15 May 2026: Interim ARD processing issue resolved; DEA has integrated ECMWF data into atmospheric correction workflows
 
