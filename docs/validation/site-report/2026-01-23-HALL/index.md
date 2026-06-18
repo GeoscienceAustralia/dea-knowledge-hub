@@ -22,7 +22,7 @@ These variables and environmental factors were present on the day the data were 
 "Time of field site measurements (UTC)","2026-01-23 01:28:28 to 2026-01-23 01:58:23"
 "Time of overpass (UTC)", 2026-01-23 23:56:35
 "GPS quality","Good"
-"Reference position","149.06602167E, 35.18213333S (WGS84)"
+"Reference position","149.066E, 35.18213333S (WGS84)"
 "Matchup quality","Mediocre"
 :::
 
@@ -41,13 +41,13 @@ This allows the data to be used to validate Geoscience Australia's other dataset
 :class: validation-report-results-table
 
 "Band","Sat Mean","Sat rms","Field mean","Field rms"
-"CA","0.059","0.003","0.082","0.008"
-"blue","0.08","0.005","0.103","0.01"
-"green","0.12","0.007","0.142","0.013"
-"red","0.165","0.011","0.187","0.017"
-"NIR","0.277","0.009","0.291","0.023"
-"SWIR1","0.421","0.018","0.444","0.037"
-"SWIR2","0.282","0.015","0.311","0.033"
+"CA","0.058","0.004","0.082","0.008"
+"blue","0.079","0.005","0.103","0.01"
+"green","0.119","0.008","0.142","0.013"
+"red","0.163","0.012","0.187","0.017"
+"NIR","0.276","0.009","0.291","0.023"
+"SWIR1","0.416","0.023","0.444","0.037"
+"SWIR2","0.278","0.02","0.311","0.033"
 :::
 
 ## Figures
@@ -109,7 +109,7 @@ Rows show results for Bare Soil (BS), Non-Photosynthetic Vegetation (NPV), Photo
 Vegetation (PV) and Unmixing Error (UE), respectively. The left column shows the range of FC
 values, on a pixel-by-pixel basis, using the satellite data. The middle panels show the 
 difference between satellite- and field-derived FC values. The right panels show a histogram
-of differences, together with summary statstics for the field site.
+of differences, together with summary statistics for the field site.
 
 :::
 ::::
@@ -124,6 +124,9 @@ the field site.
 :::
 ::::
 :::::
+    
+
 
 % :::{tags} validation, site_validation, landsat_8_validation, sentinel_2_validation
 % :::
+    

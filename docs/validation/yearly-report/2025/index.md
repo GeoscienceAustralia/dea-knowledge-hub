@@ -12,7 +12,7 @@ and presents aggregate validation results to the end of this year.
 
 * During this year, a total of 21 measurements were taken across 9 field sites, to capture 33 overpasses.
 * Validation of all platforms improved in accuracy, taking into account the data from this year. This year also saw the first validation measurement for Sentinel-2C.
-* On an averaged band-by-band basis, Landsat 8 is validated to 2.1%, Landsat 9 is validated to 8.2%, Sentinel-2B is validated to 2.3% and Sentinel-2C is validated to 21.1%.
+* On an averaged band-by-band basis, Landsat 8 is validated to 2.3%, Landsat 9 is validated to 6.9%, Sentinel-2B is validated to 3.5% and Sentinel-2C is validated to 21.5%.
 
 ## Introduction
 
@@ -108,14 +108,14 @@ platform.
 :header-rows: 1
 
 "Satellite platform","Mean band-by-band scatter","Maximum band-by-band scatter"
-"Landsat 8","2.1%","2.7%"
-"Landsat 9","8.3%","12.1%"
-"Sentinel-2B","2.3%","3.7%"
-"Sentinel-2C","21.1%","44.4%"
+"Landsat 8","2.3%","3.1%"
+"Landsat 9","6.9%","11.0%"
+"Sentinel-2B","3.5%","7.3%"
+"Sentinel-2C","21.5%","44.5%"
 :::
 
-For example, the Table shows that each Landsat 8 band is typically validated to 2.1%, with the worst performance
-of a band being 2.7%. Note that there is much larger scatter for Landsat 9 and Sentinel-2C, indicating higher uncertainty in validation.
+For example, the Table shows that each Landsat 8 band is typically validated to 2.3%, with the worst performance
+of a band being 3.1%. Note that there is much larger scatter for Landsat 9 and Sentinel-2C, indicating higher uncertainty in validation.
 This is because there have been fewer field site measurements to coincide with the relatively new Landsat 9 and Sentinel-2C platforms.
 
 ## Effect on Cumulative Validation Results
@@ -130,6 +130,33 @@ For Landsat 9, this year has seen an overall improvement in validation results. 
 For Sentinel-2B, this year has seen an overall improvement in validation results. There were 8 field site comparison measurements. Overall, the field data for Sentinel-2B overpasses continue to improve the validation reliability.
 
 For Sentinel-2C, this year has seen the first validation results, as this platform replaced Sentinel-2A. There were 6 field site comparison measurements.
+
+## Fractional Cover Validation
+
+::::{grid} 2
+
+:::{grid-item}
+:::{figure} ./FCSummary-L8.png
+:width: 100%
+:::
+:::
+
+:::{grid-item}
+:::{figure} ./FCSummary-L9.png
+:width: 100%
+:::
+:::
+
+::::
+
+The above Figures show a comparison of this Year's validation data (shown in blue) vs. previous data (black) for Landsat 8 and 9. The diagonal dashed lines show the one-to-one
+correspondence and NOT the line of best fit between the points. The line of best fit is represented by the parameters shown in the bottom-right of each panel, including $R^2$ correlation
+coefficient, slope, intercept and standard deviation. Blue points, which include data for this Quarter, also show uncertainty error bars. Black dots represent data that were collected
+prior to this Quarter. For each Figure, panels show the four Fractional Cover (FC) parameters: Bare Soil (BS, top-left), Non-Photosynthetic Vegetation (NPV, top-right), Photosynthetic
+Vegetation (PV, bottom-left) and Unmixing Error (UE, bottom-right).
+
+Note that the Fractional Cover (FC) comparison does not compare results with a 'ground truth', but is a comparison of derived FC parameters based on satellite SR (vertical axis) and field
+SR (horizontal axis).
 
 ## Acknowledgments
  

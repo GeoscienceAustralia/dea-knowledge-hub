@@ -9,6 +9,10 @@
 
 No validation measurements were taken during 2022.
 
+## Fractional Cover Validation
+
+No validation measurements were taken during 2022.
+
 ## Acknowledgments
  
 The field validation data were collected by Geoscience Australia. 

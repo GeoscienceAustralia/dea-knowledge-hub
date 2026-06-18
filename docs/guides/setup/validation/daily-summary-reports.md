@@ -111,7 +111,9 @@ derived from satellite measurements, whereas the opposite is true for PV.
     :::
 
 * **Figure 5** &mdash; A comparison between all satellite and field-based results for FC, with previous data shown as black dots and current data shown as blue dots with uncertainties.
-The dashed line in each panel represents the line of equality between satellite and field results and is NOT the line of best fit.
+The dashed line in each panel represents the line of equality between satellite and field results and is NOT the line of best fit. Statistics in the bottom-right corner of each panel
+are based on the (unshown) line of best fit through the data points. A $R^2$ correlation coefficient close to $1$ means a very high degree of correlation between field and satellite-derived
+FC parameters. A slope close to $1$ and intercept close to $0$ together indicate that overall, the field and satellite-derived FC parameters match up closely.
 
     :::{figure} /_files/validation/Daily_Summary_Report_Figure_5_FC-2026-01-17-HALL.png
     :alt: Figure 5 of the Daily Summary Report

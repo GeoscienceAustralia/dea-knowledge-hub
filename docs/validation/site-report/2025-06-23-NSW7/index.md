@@ -3,7 +3,8 @@
 This is a report of the field data collected on 23 June 2025 at the location of Transect NSW Site 7
 to validate the satellite data of the Sentinel-2C overpass.
 The full collection of data is contained in the [National Spectral Database](https://www.ga.gov.au/scientific-topics/dea/dea-data-and-products/national-spectral-database).
-Satellite data can be found on [DEA maps](https://maps.dea.ga.gov.au/#share=s-i2o7JwB5gvXOQefhMmTLJaA14b0).
+Satellite data can be found on [DEA maps](https://maps.dea.ga.gov.au/). An explanation of how to read these reports can be found on the
+[Daily Validation Summary Reports](https://knowledge.dea.ga.gov.au/guides/setup/validation/daily-summary-reports/) page.
 
 :::{contents} In this report
 :local:
@@ -25,7 +26,7 @@ These variables and environmental factors were present on the day the data were 
 "Matchup quality","Mediocre"
 :::
 
-## Results
+## Surface Reflectance Results
 
 The surface reflectance statistics collected on this day are grouped into bands.
 This allows the data to be used to validate Geoscience Australia's other datasets that use the same standardised bands.
@@ -47,15 +48,15 @@ This allows the data to be used to validate Geoscience Australia's other dataset
 "RE1","0.163","0.011","0.154","0.012"
 "RE2","0.265","0.023","0.26","0.026"
 "RE3","0.285","0.024","0.289","0.029"
-"NIR1","0.32","0.028","0.335","0.032"
+"NIR1","0.32","0.028","0.321","0.03"
 "NIR2","0.33","0.027","0.339","0.031"
-"SWIR2","0.258","0.014","0.318","0.022"
-"SWIR3","0.139","0.009","0.177","0.017"
+"SWIR2","0.258","0.014","0.308","0.021"
+"SWIR3","0.139","0.009","0.181","0.018"
 :::
 
 ## Figures
 
-The following figures provide visual representations of the data. (Click a figure to view it at full size.)
+The following figures provide visual representations of the surface reflectance data. (Click a figure to view it at full size.)
 
 :::::{grid} 1 1 2 3
 ::::{grid-item}
@@ -90,6 +91,20 @@ The line of best fit is not shown, but its parameters are given in the bottom-ri
 ::::
 :::::
 
-% :::{tags} validation, site_validation, mullion_validation, landsat_8_validation
+## Fractional Cover
+
+A more detailed description of these results can be found at
+[Daily Validation Summary Reports](https://knowledge.dea.ga.gov.au/guides/setup/validation/daily-summary-reports/).
+
+[DEA Fractional Cover (FC)](https://www.ga.gov.au/scientific-topics/dea/dea-data-and-products/dea-fractional-cover)
+is a derivative product, based on measured surface reflectance. Here, we apply
+the same processing to the field measurements to compare the satellite- and
+field-derived FC values. Please note, this is not validation of DEA Fractional Cover,
+but rather quantifying the differences between field and satellite measurements an
+their impact on derivative products. There is currently no FC product based on Sentinel
+measurements, so we only validate Landsat-derived FC.
+No Landsat overpasses were matched to this dataset.
+
+% :::{tags} validation, site_validation, landsat_8_validation, sentinel_2_validation
 % :::
     
