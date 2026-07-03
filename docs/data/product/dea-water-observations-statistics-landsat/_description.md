@@ -1,6 +1,6 @@
 ## Background
 
-These are the statistics generated from the DEA Water Observations (Water Observations from Space) suite of products, which gives summaries of how often surface water was observed by the Landsat satellites for various periods (per year, per season and for the period from 1986/1987 to 2025/2026).
+These are the statistics generated from the DEA Water Observations (Water Observations from Space) suite of products, which gives summaries of how often surface water was observed by the Landsat satellites for various periods (per year, per season and for the multi-year period from 1987 to 2025).
 
 Water Observations Statistics (WO-STATS) provides information on how many times the Landsat satellites were able to clearly see an area, how many times those observations were wet, and what that means for the percentage of time that water was observed in the landscape.
 
@@ -50,7 +50,7 @@ For example, the November to March 2020–2021 season is reported with a central
 
 This product is created from the WO water classification (Water Observations (Landsat)). Every pixel location is analysed statistically to derive the count of clear observations, the count of clear-wet observations and then to calculate the percentage of clear observations that were also wet. This provides a 'normalised' water frequency product for all of Australia.
 
-Each product within the WO-STATS set is derived from the available Landsat observations within the respective period: calendar years; Apr-Oct each year; Nov-Mar each year; multiple years (1986/1987 to 2025/2026).
+Each product within the WO-STATS set is derived from the available Landsat observations within the respective period: calendar years; Apr-Oct each year; Nov-Mar each year; multiple years (1987 to 2025).
 
 To create the confidence layer required for the filtered product, a logistic regression is created between the un-filtered product and information about terrain, built-up areas, and coarse national water observations. In this way the confidence reflects the likelihood that the observed water is scientifically feasible at every pixel.
 
