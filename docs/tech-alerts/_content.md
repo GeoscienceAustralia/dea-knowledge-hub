@@ -1,6 +1,36 @@
 % See the DEA Tech Alerts documentation:
 % https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/tech_alerts_changelog.html
 
+## 3 Jul 2026: Minor correction to outdated and conflicting grid references in DEA Maps, summary files
+![The DEA Summary Product Grid (Collection 3, expanded) as seen on DEA Maps.](../_files/tech-alerts/2026-07-03-DEA-Maps-grid.jpeg)
+
+On 3 July 2026, the Landsat C3 grid file will be briefly offline to allow minor updates to certain outdated grid references on [DEA](https://communication.ga.gov.au/link/id/zzzz6a460556a9c22045Pzzzz6567c8b713b5b826/page.html) Maps and summary files.
+
+This process will replace the existing Landsat C3 grid file with a corrected version while live outdated and incorrect grids from AWS S3 will be decommissioned.  
+
+DEA will implement a formal patch to correct erroneous grid information across the expanded grid.
+
+**How will it impact DEA users?**
+Users should not expect major disruptions. The invalid versions will be removed and replaced with correct variants within a window of a few minutes. 
+ 
+Steps have been taken to ensure the [Knowledge Hub](https://knowledge.dea.ga.gov.au/) links remain valid and that existing URLs are pointing to correct and up-to-date files.  
+ 
+The following summary files will be decommissioned and archived: 
+* **ga_summary_grid_c2.geojson**  
+* **ga_summary_grid_c3.geojson**
+* **ga_summary_grid_c3_expanded.geojson**
+
+**What actions do you need to take?**
+
+Most users will not need to take any action. Users with systems / services pointing to the URIs for the following summary files: 
+* **ga_summary_grid_c2.geojson**
+* **ga_summary_grid_c3.geojson**
+* **ga_summary_grid_c3_expanded.geojson**
+
+will need to update to point to **ga_summary_grid_landsat_c3.geojson**
+
+[View the Tech Alert](https://communication.ga.gov.au/landsat-c3-updates)
+
 ## 9 Jun 2026: DEA Sandbox environment Python packages and software upgraded
 
 On 9 June 2026, the DEA Sandbox environment was upgraded to include new Python packages and software.
