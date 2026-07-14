@@ -1,12 +1,11 @@
 ## Changelog
 
-:::{include} ../../../_components/tech-alert-terrestrial-2025-annual-product-update-summary.md
-:::
-
-### July 2026: Latest updates
+### 14 July 2026: Latest updates
 
 Water Observation Statistics (Nov – Mar) (`ga_ls_wo_fq_nov_mar_3`) was updated with seasonal data (period: November 2025 to March 2026).
 
+:::{include} ../../../_components/tech-alert-terrestrial-2025-annual-product-update-summary.md
+:::
 
 ### 9 Apr 2026: Latest updates
 
