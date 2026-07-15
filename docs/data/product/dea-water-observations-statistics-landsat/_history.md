@@ -1,5 +1,10 @@
 ## Changelog
 
+### 15 Jul 2026: DEA Water Observations Statistics Nov-Mar summaries now available
+
+:::{include} ../../../_components/tech-alert-jul-2026-wo-stats-nov-mar-summaries-available.md
+:::
+
 ### 14 July 2026: Latest updates
 
 Water Observation Statistics (Nov – Mar) (`ga_ls_wo_fq_nov_mar_3`) was updated with seasonal data (period: November 2025 to March 2026).
