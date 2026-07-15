@@ -14,4 +14,4 @@ These seasonal products complement DEA’s long-term water datasets, offering ad
 
 You are now able to access the data via [DEA Maps](https://maps.dea.ga.gov.au/#share=s-bQPsM0RuRszMOBTEUM3XdD4rk86 ) with further information available on the [DEA Knowledge Hub](/data/product/dea-water-observations-statistics-landsat/ ). 
 
-[View the Tech Alert]()
+[View the newsletter]()
