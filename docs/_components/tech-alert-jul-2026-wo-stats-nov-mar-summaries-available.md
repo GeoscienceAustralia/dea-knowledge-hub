@@ -1,7 +1,7 @@
 ![](/_files/tech-alerts/kati_thanda_nov-mar_2025-2026_630px.gif)
 
 <figure>
-    <figcaption>An animation shows seasonal changes in surface water availability in Kati Thanda–Lake Eyre, Nov 2024–Mar 2025 and Nov 2025–Mar 2026.</figcaption>
+    <figcaption><em>An animation shows seasonal changes in surface water availability in Kati Thanda–Lake Eyre, Nov 2024–Mar 2025 and Nov 2025–Mar 2026.</em></figcaption>
 </figure>
 
 Digital Earth Australia has released the latest Water Observations Statistics (Nov–Mar) seasonal summaries for 2025–26.  
