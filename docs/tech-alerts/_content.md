@@ -1,6 +1,11 @@
 % See the DEA Tech Alerts documentation:
 % https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/tech_alerts_changelog.html
 
+## 15 Jul 2026: DEA Water Observations Statistics Nov-Mar summaries now available
+
+:::{include} ../_components/tech-alert-jul-2026-wo-stats-nov-mar-summaries-available.md
+:::
+
 ## 3 Jul 2026: Minor correction to outdated and conflicting grid references in DEA Maps, summary files
 
 ![The DEA Summary Product Grid (Collection 3, expanded) as seen on DEA Maps.](/_files/tech-alerts/2026-07-03-DEA-Maps-grid.jpeg)
