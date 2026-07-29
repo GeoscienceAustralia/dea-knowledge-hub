@@ -13,7 +13,7 @@ Adame, MF, Kavehei, E, Dunn, B, Jackson, S, Duncan, P, Minjerribah-Moorgumpin El
 
 Bishop-Taylor, R, Sagar, S, Phillips, C & Newey, V 2026, 'Optimising coastal tide predictions: an ensemble satellite altimetry and optical remote sensing approach', *International Journal of Remote Sensing*, pp. 1-20, <https://doi.org/10.1080/01431161.2026.2666912>.
 
-Ma, S, Li, Z & Taylor, JA 2026, 'Landsat30-AU: A Vision-Language Dataset for Australian Landsat Imagery', in S Koenig, C Jenkins & ME Taylor (eds), *Fortieth AAAI Conference on Artificial Intelligence*, Singapore, vol. 40, pp. 7809–17, <https://doi.org/10.1609/aaai.v40i10.37724>.
+Ma, S, Li, Z & Taylor, JA 2026, 'Landsat30-AU: a vision-language dataset for Australian Landsat imagery', in S Koenig, C Jenkins & ME Taylor (eds), *Fortieth AAAI Conference on Artificial Intelligence*, Singapore, vol. 40, pp. 7809–17, <https://doi.org/10.1609/aaai.v40i10.37724>.
 
 
 ## 2025
@@ -40,7 +40,7 @@ Thankappan, M, Christopherson, J, Cantrell, S, Ryan, R, Pagnutti, M, Bright, C, 
 
 ## 2023
 
-Bishop-Taylor, R, Phillips, C, Sagar, S & Newey, V 2023, 'Time and tide: a new pixel-based method for mapping dynamic intertidal topography', in Coast to Coast 2023 Conference, Newcastle, Australia.
+Bishop-Taylor, R, Phillips, C, Sagar, S & Newey, V 2023, 'Time and tide: a new pixel-based method for mapping dynamic intertidal topography', in *Coast to Coast 2023 Conference*, Newcastle, Australia.
 
 Dunn, B, Ai, E, Alger, MJ, Fanson, B, Fickas, KC, Krause, CE, Lymburner, L, Nanson, R, Papas, P, Ronan, M & Thomas, RF 2023, 'Wetlands Insight Tool: characterising the surface water and vegetation cover dynamics of individual wetlands using multidecadal Landsat satellite data', *Wetlands*, vol. 43, no. 4, <https://doi.org/10.1007/s13157-023-01682-7>.
 
@@ -56,11 +56,11 @@ Sudmanns, M, Augustin, H, Killough, B, Giuliani, G, Tiede, D, Leith, A, Yuan, F 
 
 Broomhall, M, Byrne, G, Hay, E, Thankappan, M & Walsh, A 2022, 'Validating Landsat and Sentinel-2 Analysis Ready Data with UAV-mounted spectrometers', in *IGARSS 2022 - 2022 IEEE International Geoscience and Remote Sensing Symposium*, pp. 7775-8, <https://doi.org/10.1109/IGARSS46834.2022.9883977>.
 
-Cooperative Research Centre for Spatial, I, Commonwealth, S, Industrial Research, O, Geoscience, A, Bushfire, Natural Hazards Cooperative Research, C & FrontierSi 2022, Earth observation: data, processing and applications, <https://www.eoa.org.au/earth-observation-textbooks>
+Cooperative Research Centre for Spatial Information, 2022, *Earth observation: data, processing and applications*, ed. BA Harrison, DLB Jupp, MM Lewis, BC Forster, N Mueller, S Phinn, I Coppa, D Hudson, C Smith, I Grant, J Anstee, AG Dekker, C Ong, I Lau, T Sparks, G Byrne, AG Dekker, R Gibson, G Bastin, R Thackway, EA King, A Huete, G Donald, M Lyons, & Q Xie, Australia and New Zealand CRC for Spatial Information, Melbourne, <https://www.eoa.org.au/earth-observation-textbooks>
 
 Lucas, RM, German, S, Metternicht, G, Schmidt, RK, Owers, CJ, Prober, SM, Richards, AE, Tetreault-Campbell, S, Williams, KJ, Mueller, N, Tissott, B, Chua, SMT, Cowood, A, Hills, T, Gunawardana, D, McIntyre, A, Chognard, S, Hurford, C, Planque, C, Punalekar, S, Clewley, D, Sonnenschein, R, Murray, NJ, Manakos, I, Blonda, P, Owers, K, Roxburgh, S, Kay, H, Bunting, P & Horton, C 2022, 'A globally relevant change taxonomy and evidence-based change framework for land monitoring', *Global Change Biology*, vol. 28, no. 21, pp. 6293-317, <https://doi.org/10.1111/gcb.16346>.
 
-Nanson, R, Bishop-Taylor, R, Sagar, S & Lymburner, L 2022, 'Geomorphic insights into Australia's coastal change using a national dataset derived from the multi-decadal landsat archive', *Estuarine, Coastal and Shelf Science*, vol. 265, <https://doi.org/10.1016/j.ecss.2021.107712>.
+Nanson, R, Bishop-Taylor, R, Sagar, S & Lymburner, L 2022, 'Geomorphic insights into Australia's coastal change using a national dataset derived from the multi-decadal Landsat archive', *Estuarine, Coastal and Shelf Science*, vol. 265, <https://doi.org/10.1016/j.ecss.2021.107712>.
 
 Owers, CJ, Lucas, RM, Clewley, D, Tissott, B, Chua, SMT, Hunt, G, Mueller, N, Planque, C, Punalekar, SM, Bunting, P, Tan, P & Metternicht, G 2022, 'Operational continental-scale land cover mapping of Australia using the Open Data Cube', *International Journal of Digital Earth*, vol. 15, no. 1, pp. 1715-37, <https://doi.org/10.1080/17538947.2022.2130461>.
 
@@ -78,7 +78,7 @@ Bishop-Taylor, R, Nanson, R, Sagar, S & Lymburner, L 2021, 'Mapping Australia's 
 
 Forghani, A, Reddy, S, Thankappan, M & Cechet, B 2021, 'Validation of MODIS and AVHRR fire detections in Australia', *International Journal of Geoinformatics*, vol. 17, no. 3, pp. 117-31, <https://doi.org/10.52939/ijg.v17i3.1907>.
 
-Krause, C, Dunn, B, Bishop-Taylor, R, Adams, C, Burton, CA, Alger, MJ, Chua, S, Phillips, C, Newey, V, Kouzoubov, K, Leith, A, Ayers, D & Hicks, A 2021, *Digital Earth Australia notebooks and tools repository*, 2021/3, <https://doi.org/10.26186/145234>.
+Krause, C, Dunn, B, Bishop-Taylor, R, Adams, C, Burton, CA, Alger, MJ, Chua, S, Phillips, C, Newey, V, Kouzoubov, K, Leith, A, Ayers, D & Hicks, A 2021, *Digital Earth Australia notebooks and tools repository*, Geoscience Australia, Canberra, <https://doi.org/10.26186/145234>.
 
 Krause, CE, Newey, V, Alger, MJ & Lymburner, L 2021, 'Mapping and monitoring the multi-decadal dynamics of Australia’s open waterbodies using Landsat', *Remote Sensing*, vol. 13, no. 8, <https://doi.org/10.3390/rs13081437>.
 
@@ -86,9 +86,9 @@ Li, F, Jupp, DLB, Sagar, S & Schroeder, T 2021, 'The impact of choice of solar s
 
 Li, F, Jupp, DLB, Schroeder, T, Sagar, S, Sixsmith, J & Dorji, P 2021, 'Assessing an atmospheric correction algorithm for time series of satellite-based water-leaving reflectance using match-up sites in Australian coastal waters', *Remote Sensing*, vol. 13, no. 10, <https://doi.org/10.3390/rs13101927>.
 
-Nolde, M, Mueller, N, Strunz, G, Fichtner, F, Plank, S & Riedlinger, T 2021, Wildfire extreme events: large-scale developments in fire activity of New South Wales, Australia, 2021/3, <https://doi.org/10.5194/egusphere-egu21-8805>.
+Nolde, M, Mueller, N, Strunz, G, Fichtner, F, Plank, S & Riedlinger, T 2021, 'Wildfire extreme events: large-scale developments in fire activity of New South Wales, Australia', in *EGU General Assembly 2021*, online, EGU21-8805, <https://doi.org/10.5194/egusphere-egu21-8805>.
 
-Nolde, M, Mueller, N, Strunz, G & Riedlinger, T 2021, 'Assessment of wildfire activity development trends for eastern australia using multi-sensor earth observation data', *Remote Sensing*, vol. 13, no. 24, <https://doi.org/10.3390/rs13244975>.
+Nolde, M, Mueller, N, Strunz, G & Riedlinger, T 2021, 'Assessment of wildfire activity development trends for eastern Australia using multi-sensor earth observation data', *Remote Sensing*, vol. 13, no. 24, <https://doi.org/10.3390/rs13244975>.
 
 Owers, CJ, Lucas, RM, Clewley, D, Planque, C, Punalekar, S, Tissott, B, Chua, SMT, Bunting, P, Mueller, N & Metternicht, G 2021, 'Living Earth: implementing national standardised land cover classification systems for Earth Observation in support of sustainable development', *Big Earth Data*, vol. 5, no. 3, pp. 368-90, <https://doi.org/10.1080/20964471.2021.1948179>.
 
@@ -104,7 +104,7 @@ Botha, EJ, Anstee, JM, Sagar, S, Lehmann, E & Medeiros, TAG 2020, 'Classificatio
 
 Lymburner, L, Bunting, P, Lucas, R, Scarth, P, Alam, I, Phillips, C, Ticehurst, C & Held, A 2020, 'Mapping the multi-decadal mangrove dynamics of the Australian coastline', *Remote Sensing of Environment*, vol. 238, <https://doi.org/10.1016/j.rse.2019.05.004>.
 
-Metternicht, G, Mueller, N & Lucas, R 2020, 'Digital Earth for Sustainable Development Goals', in H Guo, MF Goodchild & A Annoni (eds), *Manual of Digital Earth*, Springer Singapore, pp. 443-71, <https://https://doi.org/10.1007/978-981-32-9915-3_13>.
+Metternicht, G, Mueller, N & Lucas, R 2020, 'Digital Earth for Sustainable Development Goals', in H Guo, MF Goodchild & A Annoni (eds), *Manual of Digital Earth*, Springer Singapore, Singapore, pp. 443-71, <https://https://doi.org/10.1007/978-981-32-9915-3_13>.
 
 Younes, N, Northfield, TD, Joyce, KE, Maier, SW, Duke, NC & Lymburner, L 2020, 'A novel approach to modelling mangrove phenology from satellite images: a case study from Northern Australia', *Remote Sensing*, vol. 12, no. 24, pp. 1-24, <https://doi.org/10.3390/rs12244008>.
 
@@ -125,11 +125,11 @@ Li, F, Jupp, D, Sagar, S & Schroeder, T 2019, 'Atmospheric correction and water 
 
 Lucas, R, Mueller, N, Siggins, A, Owers, C, Clewley, D, Bunting, P, Kooymans, C, Tissott, B, Lewis, B, Lymburner, L & Metternicht, G 2019, 'Land cover mapping using Digital Earth Australia', *Data*, vol. 4, no. 4, <https://doi.org/10.3390/data4040143>.
 
-Renzullo, LJ, Tian, S, Van Dijk, A, Rozas Larraondo, P, Yebra, M, Yuan, F & Mueller, N 2019, Burn extent and severity mapping by spectral anomaly detection in the Landsat data cube, in *23rd International Congress on Modelling and Simulation*, Canberra, ACT, Australia, 1 to 6 December, <https://mssanz.org.au/modsim2019>.
+Renzullo, LJ, Tian, S, Van Dijk, A, Rozas Larraondo, P, Yebra, M, Yuan, F & Mueller, N 2019, Burn extent and severity mapping by spectral anomaly detection in the Landsat Data Cube, in *23rd International Congress on Modelling and Simulation*, Canberra, ACT, Australia, 1 to 6 December, <https://mssanz.org.au/modsim2019>.
 
 Roberts, D, Wilford, J & Ghattas, O 2019, 'Exposed soil and mineral map of the Australian continent revealing the land at its barest', *Nature Communications*, vol. 10, no. 1, <https://doi.org/10.1038/s41467-019-13276-1>.
 
-Ticehurst, C, Zhou, ZS, Lehmann, E, Yuan, F, Thankappan, M, Rosenqvist, A, Lewis, B & Paget, M 2019, 'Building a SAR-enabled data cube capability in Australia using SAR analysis ready data', *Data*, vol. 4, no. 3, <https://doi.org/10.3390/data4030100>.
+Ticehurst, C, Zhou, ZS, Lehmann, E, Yuan, F, Thankappan, M, Rosenqvist, A, Lewis, B & Paget, M 2019, 'Building a SAR-enabled data cube capability in Australia using SAR Analysis Ready Data', *Data*, vol. 4, no. 3, <https://doi.org/10.3390/data4030100>.
 
 Wang, L-W, Li, F, Alam, I, Jupp, D, Oliver, S & Thankappan, M 2019, 'Analysis Ready Data sensitivity analyses', in *IGARSS 2019 - 2019 IEEE International Geoscience and Remote Sensing Symposium*, pp. 5642-5, <https://doi.org/10.1109/IGARSS.2019.8898667>.
 
@@ -155,7 +155,7 @@ Sagar, S, Phillips, C, Bala, B, Roberts, D & Lymburner, L 2018, 'Generating cont
 
 ## 2017
 
-Dhu, T, Dunn, B, Lewis, B, Lymburner, L, Mueller, N, Telfer, E, Lewis, A, McIntyre, A, Minchin, S & Phillips, C 2017, 'Digital Earth Australia–unlocking new value from Earth Observation data', *Big Earth Data*, vol. 1, no. 1-2, pp. 64-74, <https://doi.org/10.1080/20964471.2017.1402490>.
+Dhu, T, Dunn, B, Lewis, B, Lymburner, L, Mueller, N, Telfer, E, Lewis, A, McIntyre, A, Minchin, S & Phillips, C 2017, 'Digital Earth Australia–unlocking new value from earth observation data', *Big Earth Data*, vol. 1, no. 1-2, pp. 64-74, <https://doi.org/10.1080/20964471.2017.1402490>.
 
 Lewis, A, Oliver, S, Lymburner, L, Evans, B, Wyborn, L, Mueller, N, Raevksi, G, Hooke, J, Woodcock, R, Sixsmith, J, Wu, W, Tan, P, Li, F, Killough, B, Minchin, S, Roberts, D, Ayers, D, Bala, B, Dwyer, J, Dekker, A, Dhu, T, Hicks, A, Ip, A, Purss, M, Richards, C, Sagar, S, Trenham, C, Wang, P & Wang, LW 2017, 'The Australian Geoscience Data Cube — foundations and lessons learned', *Remote Sensing of Environment*, vol. 202, pp. 276-92, <https://doi.org/10.1016/j.rse.2017.03.015>.
 
@@ -195,11 +195,11 @@ Tan, P, Sagar, S, Mueller, N, Lymburner, L, Thankappan, M & Lewis, A 2015, 'A su
 
 Guerschman, JP, Warren, G, Byrne, G, Lymburner, L, Mueller, N & Dijk, AV 2011, MODIS-based standing water detection for flood and large reservoir mapping: algorithm development and applications for the Australian continent, 1835-095X, *National Research Flagships: Water for a Healthy Country*, CSIRO Publishing, Canberra, Australia, <https://doi.org/10.4225/08/58518bd176131>.
 
-Li, F, Jupp, DLB, Lymburner, L, Tan, P, McIntyre, A, Thankappan, M, Lewis, A & Held, A 2013, Characteristics of MODIS BRDF shape and its relationship with land cover classes in Australia, *20th international congress on modelling and simulation*, Adelaide, Australia.
+Li, F, Jupp, DLB, Lymburner, L, Tan, P, McIntyre, A, Thankappan, M, Lewis, A & Held, A 2013, Characteristics of MODIS BRDF shape and its relationship with land cover classes in Australia, in *20th international congress on modelling and simulation*, Adelaide, Australia.
 
 Li, F, Jupp, DLB, Reddy, S, Lymburner, L, Mueller, N, Tan, P & Islam, A 2010, 'An evaluation of the use of atmospheric and BRDF correction to standardize Landsat data', *IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing*, vol. 3, no. 3, pp. 257-70, <https://doi.org/10.1109/JSTARS.2010.2042281>.
 
-Li, F, Jupp, DLB, Thankappan, M & Au, DJc 2011, Using high resolution DSM data to correct the terrain illumination effect in Landsat data, *Proceedings of the 19th International Congress on Modelling and Simulation*, Perth, Australia. 
+Li, F, Jupp, DLB, & Thankappan 2011, 'Using high resolution DSM data to correct the terrain illumination effect in Landsat data', in *Proceedings of the 19th International Congress on Modelling and Simulation*, Perth, Australia. 
 
 Li, F, Jupp, DLB, Thankappan, M, Lymburner, L, Mueller, N, Lewis, A & Held, A 2012, 'A physics-based atmospheric and BRDF correction for Landsat data over mountainous terrain', *Remote Sensing of Environment*, vol. 124, pp. 756-70, <https://doi.org/10.1016/j.rse.2012.06.018>.
 
