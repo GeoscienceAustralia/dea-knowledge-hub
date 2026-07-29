@@ -80,7 +80,7 @@ Forghani, A, Reddy, S, Thankappan, M & Cechet, B 2021, 'Validation of MODIS and 
 
 Krause, C, Dunn, B, Bishop-Taylor, R, Adams, C, Burton, CA, Alger, MJ, Chua, S, Phillips, C, Newey, V, Kouzoubov, K, Leith, A, Ayers, D & Hicks, A 2021, *Digital Earth Australia notebooks and tools repository*, 2021/3, <https://doi.org/10.26186/145234>.
 
-Krause, CE, Newey, V, Alger, MJ & Lymburner, L 2021, 'Mapping and monitoring the multi-decadal dynamics of Australia’s open waterbodies using landsat', *Remote Sensing*, vol. 13, no. 8, <https://doi.org/10.3390/rs13081437>.
+Krause, CE, Newey, V, Alger, MJ & Lymburner, L 2021, 'Mapping and monitoring the multi-decadal dynamics of Australia’s open waterbodies using Landsat', *Remote Sensing*, vol. 13, no. 8, <https://doi.org/10.3390/rs13081437>.
 
 Li, F, Jupp, DLB, Sagar, S & Schroeder, T 2021, 'The impact of choice of solar spectral irradiance model on atmospheric correction of Landsat 8 OLI satellite data', *IEEE Transactions on Geoscience and Remote Sensing*, vol. 59, no. 5, pp. 4094-104, <https://doi.org/10.1109/TGRS.2020.3011006>.
 
