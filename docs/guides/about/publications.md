@@ -9,7 +9,7 @@ This page is a list of academic articles, peer-reviewed presentations, and other
 
 ## 2026 
 
-Adame, MF, Kavehei, E, Dunn, B, Jackson, S, Duncan, P, Minjerribah-Moorgumpin Elders In, C, Cahill, J, Nadji, N, Brown, CJ & Lymburner, L 2026, 'Improving wetland management through First Nations' knowledge and a spatial visualisation tool', *Ambio*, <https://doi.org/10.1007/s13280-025-02326-2>.
+Adame, MF, Kavehei, E, Dunn, B, Jackson, S, Duncan, P, Minjerribah-Moorgumpin Elders in Council, Cahill, J, Nadji, N, Brown, CJ & Lymburner, L 2026, 'Improving wetland management through First Nations' knowledge and a spatial visualisation tool', *Ambio*, <https://doi.org/10.1007/s13280-025-02326-2>.
 
 Bishop-Taylor, R, Sagar, S, Phillips, C & Newey, V 2026, 'Optimising coastal tide predictions: an ensemble satellite altimetry and optical remote sensing approach', *International Journal of Remote Sensing*, pp. 1-20, <https://doi.org/10.1080/01431161.2026.2666912>.
 
