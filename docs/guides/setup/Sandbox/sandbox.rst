@@ -183,8 +183,7 @@ You can also join our `Open Data Cube Discord chat`_ for help setting up or usin
 .. _Open Data Cube Stack Exchange: https://gis.stackexchange.com/questions/tagged/open-data-cube
 .. _Open Data Cube Discord chat: https://discord.com/invite/4hhBQVas5U
 
-.. _dea-sandbox-disclaimer:
-.. _sandbox-disclaimer:
+.. _tertiary-courses:
 
 Academic and university courses using the DEA Sandbox
 -----------------------------------------------------
@@ -225,6 +224,9 @@ To give us enough time to prepare and to fix any sign-up issues, we recommend st
 #. After the course end date (which you provided earlier), we will deactivate the DEA Sandbox accounts of the class list that you provided in the previous step.
 
 Please note, the DEA Sandbox is not an assured offering. It is an R&D solution designed to enable exploration of Earth Observation data and is maintained with best efforts.
+
+.. _dea-sandbox-disclaimer:
+.. _sandbox-disclaimer:
 
 DEA Sandbox disclaimer
 ----------------------
