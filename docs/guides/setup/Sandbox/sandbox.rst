@@ -197,13 +197,13 @@ To give us enough time to prepare and to fix any sign-up issues, we recommend st
 
 #. Contact us at earth.observation@ga.gov.au in advance of the course start date. Please provide the following details:
 
-   #. The **name of the academic course**.
-   #. The **course code**.
-   #. The **start date** of the course.
-   #. The **census date** of the course.
-   #. The **end date** of the course.
-   #. The **expected number of sign-ups**; i.e. the number of teachers plus the number of students in the cohort who will be signing up for a DEA Sandbox account.
-   #. The **email address domains of the teachers and students**; e.g. they will be signing up with ``@example.edu.au`` and ``@student.example.edu.au`` email addresses.
+   * The **name of the academic course**.
+   * The **course code**.
+   * The **start date** of the course.
+   * The **census date** of the course.
+   * The **end date** of the course.
+   * The **expected number of sign-ups**; i.e. the number of teachers plus the number of students in the cohort who will be signing up for a DEA Sandbox account.
+   * The **email address domains of the teachers and students**; e.g. they will be signing up with ``@example.edu.au`` and ``@student.example.edu.au`` email addresses.
 
 #. We will send you a PDF form which you will need to complete and then email back to earth.observation@ga.gov.au which asks for some details about your affiliation and use case. It also requires a professor, lead lecturer, or course convenor to sign it as a sponsor.
 #. We will assess the form that you submitted to us and will notify you of our decision of whether we have approved it. If approved, we will move onto the next step. Once endorsed, the following steps should be followed.
