@@ -183,6 +183,48 @@ You can also join our `Open Data Cube Discord chat`_ for help setting up or usin
 .. _Open Data Cube Stack Exchange: https://gis.stackexchange.com/questions/tagged/open-data-cube
 .. _Open Data Cube Discord chat: https://discord.com/invite/4hhBQVas5U
 
+.. _tertiary-courses:
+
+Academic and university courses using the DEA Sandbox
+-----------------------------------------------------
+
+Currently, Geoscience Australia supports use of the DEA Sandbox as a learning tool for tertiary education courses.
+
+To utilise the DEA Sandbox as part of a university course, TAFE course, or other tertiary course, course leadership should first engage Digital Earth to articulate intent and seek agreement. This should occur for each occasion the DEA Sandbox is sought.
+
+To give us enough time to prepare and to fix any sign-up issues, we recommend starting this process **at least one month before the start date of the course**.
+
+#. Contact us at earth.observation@ga.gov.au in advance of the course start date. Please provide the following details:
+
+   * The **name of the academic course**.
+   * The **course code**.
+   * The **start date** of the course.
+   * The **census date** of the course.
+   * The **end date** of the course.
+   * The **expected number of sign-ups**; i.e. the number of teachers plus the number of students in the cohort who will be signing up for a DEA Sandbox account.
+   * The **email address domains of the teachers and students**; e.g. they will be signing up with ``@example.edu.au`` and ``@student.example.edu.au`` email addresses.
+
+#. We will send you a PDF form which you will need to complete and then email back to earth.observation@ga.gov.au which asks for some details about your affiliation and use case. It also requires a professor, lead lecturer, or course convenor to sign it as a sponsor.
+#. We will assess the form that you submitted to us and will notify you of our decision of whether we have approved it. If approved, we will move onto the next step. Once endorsed, the following steps should be followed.
+#. We will temporarily ‘whitelist’ the email address domains that you provided to us. This will allow your cohort to sign up to the DEA Sandbox and gain express approval without needing to fill out the standard PDF request form. Please ensure your cohort don’t sign up to the DEA Sandbox before we implement the whitelist; otherwise, they will need to contact us for support at earth.observation@ga.gov.au
+#. After we notify you that we have implemented the whitelist, you can then instruct your student cohort to sign up for a DEA Sandbox account. Please do this in advance of the start date of your course to give enough time for us to fix any sign-up issues that may occur. Here are the necessary instructions to communicate to your staff and students:
+
+   #. Go to the DEA Sandbox: https://app.sandbox.dea.ga.gov.au/hub/login
+   #. Click **Login or Sign Up** then on the next page, click the **Sign up** link at the bottom.
+   #. Enter your details to sign up. Importantly, ensure to use your student email address and double-check that you enter your phone number correctly!
+   #. Ignore the email that you receive asking you to fill out a PDF form. Don’t fill out the PDF form because it is not needed.
+   #. Return to the DEA Sandbox and log in using the email address and password that you entered when signing up. Please check that you are able to log in before the course start date!
+   #. If you encounter any issues during this process, please email Digital Earth at earth.observation@ga.gov.au for technical assistance.
+   #. Note that your DEA Sandbox account will be deactivated after the end date of this course, so please back up any work that you save in your DEA Sandbox account.
+
+#. The teaching staff of this cohort (e.g. the lecturer and tutors) can sign up using the same method as the students.
+#. The class can now be conducted using the DEA Sandbox.
+#. After the census date (which you provided earlier), we will remove the ‘whitelist’ on your email domains. This means that any additional staff or students who want to sign up for a DEA Sandbox account after this date will need to go through a separate approval process.
+#. We will then request the class list of this cohort — the list of email addresses of students and teachers. We will use this to deactivate accounts after the course end date.
+#. After the course end date (which you provided earlier), we will deactivate the DEA Sandbox accounts of the class list that you provided in the previous step.
+
+Please note, the DEA Sandbox is not an assured offering. It is an R&D solution designed to enable exploration of Earth Observation data and is maintained with best efforts.
+
 .. _dea-sandbox-disclaimer:
 .. _sandbox-disclaimer:
 
