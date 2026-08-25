@@ -38,13 +38,13 @@ collections:
   - name: Geoscience Australia Landsat Collection 3
     link: /search/?q=Geoscience+Australia+Landsat+Collection+3
 
-doi: 10.26186/146261
+doi: 10.26186/149305
 ecat_id: "149305"
 
 licence_name: Creative Commons Attribution 4.0 International Licence
 licence_link: https://creativecommons.org/licenses/by/4.0/
 
-citation_data: "Geoscience Australia, 2022. DEA Geometric Median and Median Absolute Deviation (Landsat). Geoscience Australia, Canberra. https://dx.doi.org/10.26186/146261"
+citation_data: "Geoscience Australia, 2022. DEA Geometric Median and Median Absolute Deviation (Landsat). Geoscience Australia, Canberra. https://dx.doi.org/10.26186/149305/"
 citation_paper: null
 
 citations_custom:
