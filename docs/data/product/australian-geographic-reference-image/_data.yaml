@@ -59,8 +59,8 @@ access_links_maps: null
 access_links_explorers: null
 
 access_links_data:
-  - link: https://thredds.nci.org.au/thredds/catalog/fk4/agri/catalog.html
-    name: Access the data on NCI
+  - link: https://data.dea.ga.gov.au/?prefix=derivative/agri/1.0
+    name: Access data on AWS
 
 access_links_code_examples: null
 
