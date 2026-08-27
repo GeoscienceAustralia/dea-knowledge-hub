@@ -1,11 +1,11 @@
 % See the DEA Tech Alerts documentation:
 % https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/tech_alerts_changelog.html
 
-## 27 Aug 2026: DEA Explorer "API key required" message on base map
+## 27 Aug 2026: DEA Explorer "API key required" message on basemap
 
-DEA Explorer is displaying an "API key required" message on the base maps that it uses on its pages such as this one: [ga_s2am_ard_3](https://explorer.prod.dea.ga.gov.au/products/ga_s2am_ard_3/2026/8/16)
+DEA Explorer is displaying an "API key required" message on the basemaps that it uses on its pages such as this one: [ga_s2am_ard_3](https://explorer.prod.dea.ga.gov.au/products/ga_s2am_ard_3/2026/8/16)
 
-This does **not** affect the functionality of the DEA Explorer and it does **not** affect any data within DE's data products. It only affects the display of the base map on the DEA Explorer website. This base map is provided by an external platform (CARTO).
+This does **not** affect the functionality of the DEA Explorer and it does **not** affect any data within DE's data products. It only affects the display of the basemap on the DEA Explorer website. This basemap is provided by an external provider (CARTO).
 
 We are currently working to fix this issue.
 
