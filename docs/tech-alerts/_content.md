@@ -1,6 +1,14 @@
 % See the DEA Tech Alerts documentation:
 % https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/tech_alerts_changelog.html
 
+## 3 Sep 2026: Long-term solution for atmospheric water vapour ARD
+
+DEA has found a long-term solution using the European Centre for Medium-Range Weather Forecasts (ECMWF) datasets to produce atmospheric correction dependency in our final‑quality surface reflectance products. 
+
+Atmospheric water vapour is a key input to radiative transfer models used to produce DEA analysis ready data (ARD). With the successful integration of ECMWF datasets, DEA is confident this solution will suit end-user needs and will be maintained long-term. 
+
+This issue was first flagged in a **DEA Tech Alert on 2 April**, with an interim solution presented in a **DEA Tech Alert on 15 May**.
+
 ## 27 Aug 2026: DEA Explorer "API key required" message on basemap
 
 DEA Explorer is displaying an "API key required" message on the basemaps that it uses on its pages such as this one: [ga_s2am_ard_3](https://explorer.prod.dea.ga.gov.au/products/ga_s2am_ard_3/2026/8/16)
