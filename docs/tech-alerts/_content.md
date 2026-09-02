@@ -3,11 +3,11 @@
 
 ## 3 Sep 2026: Long-term solution for atmospheric water vapour ARD
 
-DEA has found a long-term solution using the European Centre for Medium-Range Weather Forecasts (ECMWF) datasets to produce atmospheric correction dependency in our final‑quality surface reflectance products. 
+DEA has utilised the European Centre for Medium-Range Weather Forecasts (ECMWF) datasets as a long-term solution for an atmospheric correction dependency in our final‑quality surface reflectance products.
 
-Atmospheric water vapour is a key input to radiative transfer models used to produce DEA analysis ready data (ARD). With the successful integration of ECMWF datasets, DEA is confident this solution will suit end-user needs and will be maintained long-term. 
+Atmospheric water vapour is a key input to radiative transfer models used to produce DEA analysis ready data (ARD). With the successful integration of ECMWF datasets, DEA is confident this solution will suit end-user needs and will be maintained long-term.
 
-This issue was first flagged in a **DEA Tech Alert on 2 April**, with an interim solution presented in a **DEA Tech Alert on 15 May**.
+This issue was first flagged in a [DEA Tech Alert on 2 April](https://communication.ga.gov.au/link/id/zzzz69cdf18461773486Pzzzz6567c8b713b5b826/page.html), with an interim solution presented in a [DEA Tech Alert on 15 May](https://communication.ga.gov.au/link/id/zzzz6a0685cb39a76258Pzzzz6567c8b713b5b826/page.html).
 
 ## 27 Aug 2026: DEA Explorer "API key required" message on basemap
 
