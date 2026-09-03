@@ -1,6 +1,11 @@
 % See the DEA Tech Alerts documentation:
 % https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/tech_alerts_changelog.html
 
+## 3 Sep 2026: Long-term solution for atmospheric water vapour ARD
+
+:::{include} ../_components/tech-alert-sep-2026-ecmwf-long-term-solution.md
+:::
+
 ## 27 Aug 2026: DEA Explorer "API key required" message on basemap
 
 DEA Explorer is displaying an "API key required" message on the basemaps that it uses on its pages such as this one: [ga_s2am_ard_3](https://explorer.prod.dea.ga.gov.au/products/ga_s2am_ard_3/2026/8/16)
