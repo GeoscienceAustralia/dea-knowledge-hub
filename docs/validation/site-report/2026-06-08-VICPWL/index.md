@@ -72,7 +72,7 @@ The following figures provide visual representations of the surface reflectance 
 
 A satellite imagery tile of true colour (RGB) surface reflectance.
 It covers an area of approximately 2&nbsp;km &times; 2&nbsp;km.
-The white box indicates the size and location
+The white box indicates the approximate location
 of the field site.
 :::
 ::::
