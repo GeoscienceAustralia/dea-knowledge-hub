@@ -20,10 +20,10 @@ These variables and environmental factors were present on the day the data were 
 
 "Instrument(s) used","ASD FR4 (18179/3)"
 "Time of field site measurements (UTC)","2026-06-11 00:06:59 to 2026-06-11 00:41:01"
-"Time of overpass (UTC)", 2026-06-11 00:37:13
+"Time of overpass (UTC)", "2026-06-11 00:47:26 for Sentinel-2A, 2026-06-11 00:37:13 for Sentinel-2B"
 "GPS quality","Good"
 "Reference position","140.97013627E, 36.37677168S (WGS84)"
-"Matchup quality","Good"
+"Matchup quality","Excellent for Sentinel-2A, Good for Sentinel-2B"
 :::
 
 ## Surface Reflectance Results
