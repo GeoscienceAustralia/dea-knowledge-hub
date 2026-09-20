@@ -83,10 +83,13 @@ spectra is shown below:
 
 :::{figure} ./VICCB-ASD-SR3500.png
      
-**VICPW - Port Welshpool Long and Short** This site is an extended intertidal zone that was measured close to low tide, using the UAV-mounted SR3500. Two flights were used to measure two adjacent
-areas. The first area - VICPW Long - was 1km long and consisted of two transects, separated by 12m. The second area - VICPW Short - was 500m long and
-consisted of four transects, separated by 12m, as shown below:
+**VICPW - Port Welshpool Long and Short** This site is an extended intertidal zone that was measured close to low tide, using the UAV-mounted SR3500.
+Two flights were used to measure two adjacent areas. The first area - VICPW Long - was 1km long and consisted of two transects, separated by 12m. The
+second area - VICPW Short - was 500m long and consisted of four transects, separated by 12m, as shown below:
 
+:::{figure} ./VICPW-Map.png
+     
+In the figure, the blue lines show the location of VICPW Long and the yellow lines show the location of VICPW Short.
 
 ## Summary of Band-by-Band Matching
 
