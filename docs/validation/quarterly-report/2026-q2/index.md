@@ -89,7 +89,10 @@ second area - VICPW Short - was 500m long and consisted of four transects, separ
 
 :::{figure} ./VICPW-Map.png
      
-In the figure, the blue lines show the location of VICPW Long and the yellow lines show the location of VICPW Short.
+In the figure, the blue lines show the location of VICPW Long and the yellow lines show the location of VICPW Short. The overpass data from
+Landsat 8 are affected by the poor AOD correction for this location and date, resulting in a less than ideal comparison between field and overpass
+data. However, this work was the first successful demonstration of full-range spectrometer data collected over an intertial zone, which would have
+been exceedingly difficult with hand-held instrumentation.
 
 ## Summary of Band-by-Band Matching
 
