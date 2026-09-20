@@ -83,6 +83,10 @@ spectra is shown below:
 
 :::{figure} ./VICCB-ASD-SR3500.png
      
+**VICPW - Port Welshpool Long and Short**
+This site is an extended intertidal zone that was measured close to low tide.
+
+
 ## Summary of Band-by-Band Matching
 
 :::{figure} ./2026Q2-Matchup.png
