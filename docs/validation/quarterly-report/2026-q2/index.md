@@ -95,7 +95,14 @@ data. However, this work was the first successful demonstration of full-range sp
 been exceedingly difficult with hand-held instrumentation. Comparison plots for each band are shown below:
 
 :::{figure} ./VICPWL.png
+
+The above plots show a comparison of satellite (left) and field SR for VICPW Long. Whilst the abosolute values are different, the qualitative
+structure matches well between the two datasets.
+
 :::{figure} ./VICPWS.png
+
+The above plots show a comparison of satellite (left) and field SR for VICPW Short. Whilst the abosolute values are different, the qualitative
+structure matches well between the two datasets.
 
 The band-by-band plots show that at least qualitatively, there is a good match between satellite- and UAV-based measurements.
 
