@@ -106,6 +106,29 @@ structure matches well between the two datasets.
 
 The band-by-band plots show that at least qualitatively, there is a good match between satellite- and UAV-based measurements.
 
+**VICWAR - Warrangine Park Flights 1 and 2** This site is also an extended intertidal zone, which was measured close to low tide, using the
+UAV-mounted SR3500. Two flights were used to measure two adjacent areas. Both areas - VICWAR1 and VICWAR2 - were 1km long and each consisted of
+two transects, separated by 12m, as shown below:
+
+:::{figure} ./VICWAR-Map.png
+     
+In the figure, the blue line shows the location of VICWAR1 and the yellow line shows the location of VICWAR2. The overpass data from
+Landsat 8 are affected by the poor AOD correction for this location and date, resulting in a less than ideal comparison between field and overpass
+data. However, this work was a successful demonstration of full-range spectrometer data collected over an intertial zone, which would have
+been exceedingly difficult with hand-held instrumentation. Comparison plots for each band are shown below:
+
+:::{figure} ./VICWAR1.png
+
+The above plots show a comparison of satellite (left) and field SR for VICWAR1. Whilst the abosolute values are different, the qualitative
+structure matches well between the two datasets.
+
+:::{figure} ./VICWAR2.png
+
+The above plots show a comparison of satellite (left) and field SR for VICWAR2. Whilst the abosolute values are different, the qualitative
+structure matches well between the two datasets.
+
+The band-by-band plots show that at least qualitatively, there is a good match between satellite- and UAV-based measurements.
+
 ## Summary of Band-by-Band Matching
 
 :::{figure} ./2026Q2-Matchup.png
