@@ -148,7 +148,12 @@ difference is a BRDF effect due to the side-look of each sensor.
 
 The work carried out in this Quarter has highlighted a significant error in GA's SR products: the poor correction of
 Atmospheric Optical Depth (AOD) in south-eastern Australia leads to anomalously low SR measurements for some bands.
-In order to characterise this,
+An example of a discontinuity is shown below:
+
+:::{figure} ./VIC-AOD1.png
+
+A diagonal discontinuity is seen in Landsat 8 data from 8th June, 2026, where SR (in RGB colours) below the discontinuity
+appears darker than above.
 
 ## Summary of Band-by-Band Matching
 
