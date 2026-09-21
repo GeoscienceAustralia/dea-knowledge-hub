@@ -84,8 +84,8 @@ spectra is shown below:
 :::{figure} ./VICCB-ASD-SR3500.png
      
 **VICPW - Port Welshpool Long and Short** This site is an extended intertidal zone that was measured close to low tide, using the UAV-mounted SR3500.
-Two flights were used to measure two adjacent areas. The first area - VICPW Long - was 1km long and consisted of two transects, separated by 12m. The
-second area - VICPW Short - was 500m long and consisted of four transects, separated by 12m, as shown below:
+Two flights were used to measure two adjacent areas. The first area - VICPW Long - was 1km long and consisted of two transects, separated by 6m. The
+second area - VICPW Short - was 500m long and consisted of four transects, separated by 6m, as shown below:
 
 :::{figure} ./VICPW-Map.png
      
@@ -108,7 +108,7 @@ The band-by-band plots show that at least qualitatively, there is a good match b
 
 **VICWAR - Warrangine Park Flights 1 and 2** This site is also an extended intertidal zone, which was measured close to low tide, using the
 UAV-mounted SR3500. Two flights were used to measure two adjacent areas. Both areas - VICWAR1 and VICWAR2 - were 1km long and each consisted of
-two transects, separated by 12m, as shown below:
+two transects, separated by 6m, as shown below:
 
 :::{figure} ./VICWAR-Map.png
      
@@ -128,6 +128,27 @@ The above plots show a comparison of satellite (left) and field SR for VICWAR2. 
 structure matches well between the two datasets.
 
 The band-by-band plots show that at least qualitatively, there is a good match between satellite- and UAV-based measurements.
+
+**VICSRV - Serviceton** This site was measured using the hand-held ASD. It was not affected by poor AOD correction. However, The site was in the
+overlap zone between adjacent overpasses of Sentinel-2A and 2B. The overpasses occurred such that Sentinel-2A followed 2B by 10
+minutes and 13 seconds, giving a new opportunity to cross-compare results. The figure below shows the band-by-band
+spectra for each overpass, compared to the field data:
+
+:::{figure} ../../site-report/2026-06-11-VICSRV/SiteComparison-2026-06-11-VICSRV.png
+
+Whilst there are excellent mathces between field and overpass data for each of Sentinel-2A and 2B, it is clear that
+the Sentinel-2A data more closely matches field data and that 2B data appears to be slightly darker (ie. lower SR),
+compared to either field data or 2A. Even though the overpasses were closely aligned in time, we suspect the reason
+for the difference is because the two overpasses were not aligned along the swath direction and instead the centre
+of the 2A swath was to the west, with centre of the 2B swath to the east, of the field site. Therefore, 2B would
+have been looking away from the Sun, whereas 2A would have been looking more towards the Sun, implying that the small
+difference is a BRDF effect due to the side-look of each sensor.
+
+## Effects of poor AOD correction
+
+The work carried out in this Quarter has highlighted a significant error in GA's SR products: the poor correction of
+Atmospheric Optical Depth (AOD) in south-eastern Australia leads to anomalously low SR measurements for some bands.
+In order to characterise this,
 
 ## Summary of Band-by-Band Matching
 
