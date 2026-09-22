@@ -79,22 +79,19 @@ The figure shows the locations of each spectrum for ASD (black circles) and SR35
 or the area of ground that each spectrum is gathered from. Because the ASD spectra are gathered from such a small area (approximately 15cm in diameter), they
 appear as black dots, compared to the much larger SR3500 circles (approximately 12m in diameter). This Figure shows that the orientation of the two sites are
 not aligned, which means that a direct comparison between the two must be treated with caution.
-:::
 
 A band-by-band comparison of ASD and SR3500
 spectra is shown below:
 
 :::{figure} ./VICCB-ASD-SR3500.png
-:::
-
+     
 **VICPW - Port Welshpool Long and Short** This site is an extended intertidal zone that was measured close to low tide, using the UAV-mounted SR3500.
 Two flights were used to measure two adjacent areas. The first area - VICPW Long - was 1km long and consisted of two transects, separated by 6m. The
 second area - VICPW Short - was 500m long and consisted of four transects, separated by 6m, as shown below:
 
 :::{figure} ./VICPW-Map.png
-
+     
 In the figure, the blue line shows the location of VICPW Long and the yellow line shows the location of VICPW Short.
-:::
 
 The overpass data from
 Landsat 8 are affected by the poor AOD correction for this location and date, resulting in a less than ideal comparison between field and overpass
@@ -105,13 +102,11 @@ been exceedingly difficult with hand-held instrumentation. Comparison plots for 
 
 The above plots show a comparison of satellite (left) and field SR for VICPW Long. Whilst the abosolute values are different, the qualitative
 structure matches well between the two datasets.
-:::
 
 :::{figure} ./VICPWS.png
 
 The above plots show a comparison of satellite (left) and field SR for VICPW Short. Whilst the abosolute values are different, the qualitative
 structure matches well between the two datasets.
-:::
 
 The band-by-band plots show that at least qualitatively, there is a good match between satellite- and UAV-based measurements.
 
@@ -120,11 +115,8 @@ UAV-mounted SR3500. Two flights were used to measure two adjacent areas. Both ar
 two transects, separated by 6m, as shown below:
 
 :::{figure} ./VICWAR-Map.png
-
-In the figure, the blue line shows the location of VICWAR1 and the yellow line shows the location of VICWAR2.
-:::
-
-The overpass data from
+     
+In the figure, the blue line shows the location of VICWAR1 and the yellow line shows the location of VICWAR2. The overpass data from
 Landsat 8 are affected by the poor AOD correction for this location and date, resulting in a less than ideal comparison between field and overpass
 data. However, this work was a successful demonstration of full-range spectrometer data collected over an intertial zone, which would have
 been exceedingly difficult with hand-held instrumentation. Comparison plots for each band are shown below:
@@ -133,13 +125,11 @@ been exceedingly difficult with hand-held instrumentation. Comparison plots for 
 
 The above plots show a comparison of satellite (left) and field SR for VICWAR1. Whilst the abosolute values are different, the qualitative
 structure matches well between the two datasets.
-:::
 
 :::{figure} ./VICWAR2.png
 
 The above plots show a comparison of satellite (left) and field SR for VICWAR2. Whilst the abosolute values are different, the qualitative
 structure matches well between the two datasets.
-:::
 
 The band-by-band plots show that at least qualitatively, there is a good match between satellite- and UAV-based measurements.
 
@@ -149,7 +139,6 @@ minutes and 13 seconds, giving a new opportunity to cross-compare results. The f
 spectra for each overpass, compared to the field data:
 
 :::{figure} ../../site-report/2026-06-11-VICSRV/SiteComparison-2026-06-11-VICSRV.png
-:::
 
 Whilst there are excellent mathces between field and overpass data for each of Sentinel-2A and 2B, it is clear that
 the Sentinel-2A data more closely matches field data and that 2B data appears to be slightly darker (ie. lower SR),
@@ -171,10 +160,8 @@ A diagonal discontinuity is seen in Landsat 8 data from 8th June, 2026, where SR
 appears darker than above. Further investigation by GA's ARD team indicated that it is likely the result of poor AOD
 modelling in southern Victoria, where the darker area is in error, with a magnitude typically 2-3% of total SR across the
 bands.
-:::
 
 Further investigation into the effect indicates the following:
-
 1. Land away from the coast (ie. a tile that is wholly contained on land) does not appear to be affected. 
 2. Coastal regions around the entirety of the Australian mainland and Tasmania appear to be occasionally affected at a 
 low level - typically no worse than 1-2%.
