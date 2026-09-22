@@ -157,7 +157,18 @@ An example of a discontinuity is shown below:
 :::{figure} ./VIC-AOD1.png
 
 A diagonal discontinuity is seen in Landsat 8 data from 8th June, 2026, where SR (in RGB colours) below the discontinuity
-appears darker than above.
+appears darker than above. Further investigation by GA's ARD team indicated that it is likely the result of poor AOD
+modelling in southern Victoria, where the darker area is in error, with a magnitude typically 2-3% of total SR across the
+bands.
+
+Further investigation into the effect indicates the following:
+1. Land away from the coast (ie. a tile that is wholly contained on land) does not appear to be affected. 
+2. Coastal regions around the entirety of the Australian mainland and Tasmania appear to be occasionally affected at a 
+low level - typically no worse than 1-2%.
+3. Significantly larger errors are found in south-eastern Victoria and Tasmania (up to 15%), but appear to be restricted
+to the months of May and June.
+4. Both Landsat and Sentinel products are affected.
+
 
 ## Summary of Band-by-Band Matching
 
