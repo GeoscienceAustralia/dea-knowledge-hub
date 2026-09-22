@@ -75,10 +75,12 @@ mounted on an UAV. This site was also walked with the ASD, although there is a s
 
 :::{figure} ./VICCB-Footprints.png
 
-The Figure shows the locations of each spectrum for ASD (black circles) and SR3500 (blue circles). Note that the size of the circles represents the footprint,
+The figure shows the locations of each spectrum for ASD (black circles) and SR3500 (blue circles). Note that the size of the circles represents the footprint,
 or the area of ground that each spectrum is gathered from. Because the ASD spectra are gathered from such a small area (approximately 15cm in diameter), they
 appear as black dots, compared to the much larger SR3500 circles (approximately 12m in diameter). This Figure shows that the orientation of the two sites are
-not aligned, which means that a direct comparison between the two must be treated with caution. Nevertheless, a band-by-band comparison of ASD and SR3500
+not aligned, which means that a direct comparison between the two must be treated with caution.
+
+A band-by-band comparison of ASD and SR3500
 spectra is shown below:
 
 :::{figure} ./VICCB-ASD-SR3500.png
@@ -89,7 +91,9 @@ second area - VICPW Short - was 500m long and consisted of four transects, separ
 
 :::{figure} ./VICPW-Map.png
      
-In the figure, the blue line shows the location of VICPW Long and the yellow line shows the location of VICPW Short. The overpass data from
+In the figure, the blue line shows the location of VICPW Long and the yellow line shows the location of VICPW Short.
+
+The overpass data from
 Landsat 8 are affected by the poor AOD correction for this location and date, resulting in a less than ideal comparison between field and overpass
 data. However, this work was the first successful demonstration of full-range spectrometer data collected over an intertial zone, which would have
 been exceedingly difficult with hand-held instrumentation. Comparison plots for each band are shown below:
