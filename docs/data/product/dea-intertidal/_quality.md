@@ -2,23 +2,18 @@
 
 Product accuracy was validated against high resolution external Digital Elevation Model (DEM) data sources from across the Australian coastline, including aerial LiDAR and multibeam bathymetry datasets: 
 
-:::{table} Table 1. Data sources used to validate DEA Intertidal.
+* Elvis Elevation and Depth portal
+* Airborne Research Australia Gulf of Carpentaria Airborne Mangrove Dieback Mapping Project
+* National Indigenous Australians Agency 2021 Gulf of Carpentaria LiDAR survey
+* University of Western Australia Dampier Archipelago bathymetric LiDAR
+* Victoria Department of Energy, Environment and Climate Action 10 m VIC Coastal DEM
+* Western Australia Department of Transport WA Bathymetry Portal
 
-| Source | Type | Temporal coverage | Spatial coverage |
-|--------|------|-------------------|------------------|
-| Elvis Elevation and Depth portal | Aerial LiDAR<br>Multibeam bathymetry | 2016-2022 | Continental |
-| Airborne Research Australia Gulf of Carpentaria Airborne Mangrove Dieback Mapping Project | Aerial LiDAR | 2017 | Regional (Gulf of Carpentaria) |
-| National Indigenous Australians Agency 2021 Gulf of Carpentaria LiDAR survey | Aerial LiDAR | 2021 | Regional (Gulf of Carpentaria) |
-| University of Western Australia Dampier Archipelago bathymetric LiDAR | Aerial LiDAR | 2017 | Regional (Dampier Archipelago) |
-| Victoria Department of Energy, Environment and Climate Action 10 m VIC Coastal DEM | Aerial LiDAR | 2021 | Regional (Victoria) |
-| Western Australia Department of Transport WA Bathymetry Portal | Aerial LiDAR<br>Multibeam bathymetry | 2016-2022 | Regional (Western Australia) |
-:::
-
-For a consistent comparison, data from all validation data sources were mosaicked and reprojected into annual 10 m continental-scale DEM rasters, and transformed to match the Mean Sea level vertical datum of DEA Intertidal. To evaluate accuracy, we calculated RMSE, MAE, correlation, bias, and R-squared statistics by comparing DEA Intertidal Elevation against validation data from the same year. To provide insights into product performance across different coastal environments, this analysis was conducted separately on microtidal (tide range &lt; 2 m), mesotidal (2&ndash;4 m) and macrotidal (&gt; 4 m) coastlines (Table 2, Figure 7). 
+For a consistent comparison, data from all validation data sources were mosaicked and reprojected into annual 10 m continental-scale DEM rasters, and transformed to match the Mean Sea level vertical datum of DEA Intertidal. To evaluate accuracy, we calculated RMSE, MAE, correlation, bias, and R-squared statistics by comparing DEA Intertidal Elevation against validation data from the same year. To provide insights into product performance across different coastal environments, this analysis was conducted separately on microtidal (tide range &lt; 2 m), mesotidal (2&ndash;4 m) and macrotidal (&gt; 4 m) coastlines (Table 1, Figure 7). 
 
 For a detailed description of the validation approach, refer to [Bishop-Taylor et al., (2026)](https://doi.org/10.1016/j.rse.2026.115663).
 
-:::{table} Table 2. Validation statistics assessing the performance of DEA Intertidal against independent validation data across macro-, meso- and microtidal intertidal environments. RMSE, MAE and bias statistics are given in both absolute units (m), and as a percentage (%) of the local tide range.
+:::{table} Table 1. Validation statistics assessing the performance of DEA Intertidal against independent validation data across macro-, meso- and microtidal intertidal environments. RMSE, MAE and bias statistics are given in both absolute units (m), and as a percentage (%) of the local tide range.
 
 |                 | Macrotidal            | Mesotidal             | Microtidal           |
 |-----------------|-----------------------|-----------------------|--------------------- |
@@ -43,7 +38,7 @@ For more detail about DEA Intertidal caveats and limitations, refer to [Bishop-T
 
 * DEA Intertidal covers the exposed intertidal zone which includes sandy beaches and shores, tidal flats and rocky shores and reefs. The model excludes intertidal vegetation communities such as mangroves.
 
-* Although DEA Intertidal's absolute elevation mapping accuracy is similar across all environments (Table 2), accuracy relative to the total tide range is significantly greater in meso-tidal and macro-tidal environments. Due to the narrow intertidal zone in microtidal environments and the dominance of non-tidal water level influences like storm surge and ocean waves, DEA Intertidal should be used with caution in microtidal environments.
+* Although DEA Intertidal's absolute elevation mapping accuracy is similar across all environments (Table 1), accuracy relative to the total tide range is significantly greater in meso-tidal and macro-tidal environments. Due to the narrow intertidal zone in microtidal environments and the dominance of non-tidal water level influences like storm surge and ocean waves, DEA Intertidal should be used with caution in microtidal environments.
 
 * DEA Intertidal relies on accurate tide modelling for reliable results. Although the Ensemble Tidal Modelling approach used in this product attempts to obtain the best local tide modelling data for any given location, areas of poor quality tide modelling still remain. This is particularly the case in areas of complex and unpredictable tide dynamics, such as embayments and estuaries where global ocean tide modelling results may produce highly inaccurate outputs. In these environments, modelled elevations and exposure should be used with caution and evaluated with reference to modelled elevation uncertainty data. Examples of areas affected by poor quality tide modelling inputs include: 
 
@@ -80,4 +75,4 @@ Code used to generate DEA Intertidal is [run against automated integration tests
 
 ## References
 
-Bishop-Taylor, R., Phillips, C., Sagar, S., & Newey, V., 2026. Time and tide: Mapping the changing 3D shape of Australia's dynamic intertidal zone using time series satellite data. *Remote Sensing of Environment*, 347, 115663. https://doi.org/10.1016/j.rse.2026.115663
+Bishop-Taylor, R., Phillips, C., Sagar, S., & Newey, V., 2026. Time and tide: Mapping the changing 3D shape of Australia's dynamic intertidal zone using time series satellite data. *Remote Sensing of Environment*, 347, 115663. [https://doi.org/10.1016/j.rse.2026.115663](https://doi.org/10.1016/j.rse.2026.115663)

@@ -217,11 +217,11 @@ This shift to a more dynamic product suite is achieved through a pixel-based alg
 
 ABARES, 2021. Catchment Scale Land Use of Australia - Update December 2020, Australian Bureau of Agricultural and Resource Economics and Sciences, Canberra
 
-Bishop-Taylor, R., Phillips, C., Sagar, S., Newey, V., & Sutterley, T., 2025. eo-tides: Tide modelling tools for large-scale satellite Earth observation analysis. *Journal of Open Source Software*, 10(109), 7786. https://doi.org/10.21105/joss.07786
+Bishop-Taylor, R., Phillips, C., Sagar, S., Newey, V., & Sutterley, T., 2025. eo-tides: Tide modelling tools for large-scale satellite Earth observation analysis. *Journal of Open Source Software*, 10(109), 7786. [https://doi.org/10.21105/joss.07786](https://doi.org/10.21105/joss.07786)
 
-Bishop-Taylor, R., Phillips, C., Sagar, S., & Newey, V., 2026. Time and tide: Mapping the changing 3D shape of Australia's dynamic intertidal zone using time series satellite data. *Remote Sensing of Environment*, 347, 115663. https://doi.org/10.1016/j.rse.2026.115663
+Bishop-Taylor, R., Phillips, C., Sagar, S., & Newey, V., 2026. Time and tide: Mapping the changing 3D shape of Australia's dynamic intertidal zone using time series satellite data. *Remote Sensing of Environment*, 347, 115663. [https://doi.org/10.1016/j.rse.2026.115663](https://doi.org/10.1016/j.rse.2026.115663)
 
-Bishop-Taylor, R., Sagar, S., Lymburner, L., Beaman, R.J., 2019. Between the tides: Modelling the elevation of Australia’s exposed intertidal zone at continental scale. *Estuarine, Coastal and Shelf Science* 23, 115–128. https://doi.org/10.1016/j.ecss.2019.03.006
+Bishop-Taylor, R., Sagar, S., Lymburner, L., Beaman, R.J., 2019. Between the tides: Modelling the elevation of Australia’s exposed intertidal zone at continental scale. *Estuarine, Coastal and Shelf Science* 23, 115–128. [https://doi.org/10.1016/j.ecss.2019.03.006](https://doi.org/10.1016/j.ecss.2019.03.006)
 
 Carrère L., F. Lyard, M. Cancet, A. Guillot, L. Roblou, 2012. FES2012: A new global tidal model taking advantage of nearly 20 years of altimetry, *Proceedings of meeting "20 Years of Altimetry"*, Venice 2012 
 
