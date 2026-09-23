@@ -6,7 +6,7 @@ Intertidal zones are being increasingly faced with threats including coastal ero
 
 The intertidal zone also forms a critical habitat and foraging ground for migratory shore birds and other species. An improved characterisation of the exposure patterns of these dynamic environments is important to support conservation efforts and to gain a better understanding of migratory species pathways. However, this data is expensive and challenging to map across the entire intertidal zone of a continent the size of Australia.
 
-The DEA Intertidal product suite provides annual continental-scale elevation and exposure product layers for Australia's exposed intertidal zone, mapped at a 10 m resolution from DEA's archive of open-source Landsat and Sentinel-2 satellite data. The exposed intertidal zone consists of coastal  regions periodically inundated by tidal flows, not including areas obscured by vegetation cover such as mangroves. These intertidal products enable users to better monitor and understand some of the most dynamic regions of Australia's coastlines.
+The DEA Intertidal product suite provides annual continental-scale elevation and exposure product layers for Australia's exposed intertidal zone, mapped at a 10 m resolution from DEA's archive of open-source Landsat and Sentinel-2 satellite data. The exposed intertidal zone consists of coastal regions periodically inundated by tidal flows, not including areas obscured by vegetation cover such as mangroves. These intertidal products enable users to better monitor and understand some of the most dynamic regions of Australia's coastlines.
 
 ## Applications
 
@@ -24,23 +24,30 @@ The DEA Intertidal product suite provides annual continental-scale elevation and
 
 ### Features
 
-The DEA Intertidal product suite contains 4 core product layers, 7 tidal attribute (`ta`) layers, and 4 quality assessment (`qa`) layers, all provided as continental 10 m resolution GeoTIFFs for the Australian coastal and intertidal region.
+The DEA Intertidal product suite contains four core intertidal mapping layers, seven tidal attribute (`ta`) layers, and four quality assessment (`qa`) layers, all provided as continental 10 m resolution GeoTIFFs for the Australian coastal and intertidal region.
 
-All datasets are produced annually from a 3-year composite of input data from combined Sentinel-2 and Landsat DEA Collection 3 surface reflectance products. The product time series commences from 2016, with datasets labelled by the middle year of data. For example, the 2017 layer combines data from 2016, 2017, and 2018. Updates to the product suite are scheduled annually. 
+All datasets are produced annually from a 3-year composite of input data from combined Sentinel-2 and Landsat DEA Collection 3 surface reflectance products. The product time series commences in 2016, with datasets labelled by the middle year of data. For example, the 2017 layer combines data from 2016, 2017, and 2018. Updates to the product suite are scheduled annually. 
 
 ### What this product offers
 
-The DEA Intertidal product suite is the next generation of intertidal products developed in DEA. It improves on the former [National Intertidal Digital Elevation Model](/data/product/dea-intertidal-elevation-landsat/) (NIDEM; Bishop-Taylor et al., 2019) and adds several new features and products to help users better understand the intertidal environment.
+The DEA Intertidal product suite is the next generation of intertidal products developed by DEA [(Bishop-Taylor et al., 2026)](https://doi.org/10.1016/j.rse.2026.115663). It improves on the former [National Intertidal Digital Elevation Model](/data/product/dea-intertidal-elevation-landsat/) (NIDEM; Bishop-Taylor et al., 2019) and introduces several new features to help users better understand the intertidal environment.
 
-NIDEM was the first 3D model of Australia’s intertidal zone &mdash; the area of coastline exposed and flooded by ocean tides. The DEA Intertidal suite fundamentally changes and improves the way in which the exposed intertidal zone is modelled compared to the original NIDEM elevation model: 
+While NIDEM provided the first 3D model of Australia's intertidal zone &mdash; the area of coastline exposed and flooded by ocean tides &mdash; the DEA Intertidal suite fundamentally advances how these dynamic coastal environments are mapped (Figure 1):
 
-* The addition of Sentinel-2 data improves the spatial resolution of the model to 10 m, compared to the 25m of the original NIDEM.
-* Incorporation of a new pixel-based method supports a reduction in the temporal epoch of the product to 3 years (in comparison to 28 years in NIDEM), improving the ability to capture the current state of dynamic coastal environments and enabling ‘change over time' applications using annual epochs.
-* Quantification of the vertical uncertainty of the elevation model.
-* An Intertidal Exposure model at 10 m resolution to examine the spatiotemporal patterns of exposure and inundation across the intertidal zone, supporting migratory species studies and habitat mapping applications.
-* Tidal metrics to enable users to understand the varied ranges and distributions of tidal stages observed by the Landsat and Sentinel-2 satellites across Australia, and how this information can be used to better understand and interpret the products.
-* The implementation of an ensemble tidal modelling approach, acknowledging the wide range of global and regional tide models available and their varying performance across different regions of Australia. See [Ensemble Tidal Modelling](./?tab=description#ensemble-tidal-modelling).
-* A coastal extents classification model that identifies five categorical classes to compliment the Elevation and Exposure products. This helps users to characterise different environments in the coastal zone in terms of their inundation characteristics and drivers, mapping confidence and nature of water cover.
+* Improved 10 m spatial resolution (upgraded fron the original 30 m NIDEM) through the integration of Sentinel-2 satellite data.
+* Improved temporal resolution providing annual timesteps from 2016 onward (upgraded from the original static 28-year NIDEM epoch), using a new pixel-based modelling method that supports mapping dynamic coastal environments and tracking change over time.
+* New elevation uncertainty data quantifying the vertical uncertainty of the elevation model.
+* A new intertidal exposure model mapping spatio-temporal patterns of tidal inundation and exposure, supporting migratory species studies and habitat mapping.
+* A new coastal extents classification model introducing five categorical classes to complement the elevation and exposure products, helping users characterise coastal environments by tidal inundation, mapping confidence, and cover type.
+* New tidal metrics to help users understand the tidal conditions observed by the input satellite data (i.e. Landsat and Sentinel-2) across Australia and how these influence product interpretation.
+* Enhanced tide modelling using an ensemble approach to account for regional performance differences across available global tide models. See [Ensemble Tidal Modelling](./?tab=description#ensemble-tidal-modelling).
+
+:::{figure} /_files/dea-intertidal/DEA_Intertidal_vs_nidem.*
+:alt: NIDEM compared to DEA Intertidal
+
+Figure 1. The original NIDEM (left) and the improved DEA Intertidal Elevation (right)
+:::
+
 
 ### Datasets
 
@@ -69,37 +76,37 @@ See the attributes of these layers in the [Specifications tab](./?tab=specificat
 
 #### DEA Intertidal Elevation (elevation)
 
-DEA Intertidal Elevation (Figure 1) provides elevation in metre units relative to modelled Mean Sea Level for each pixel of the satellite-observed exposed intertidal zone across the Australian coastline. The elevation model is generated from DEA Landsat and Sentinel-2 surface reflectance data from each 3-year composite period, utilising a pixel-based approach based on [Ensemble Tidal Modelling](#ensemble-tidal-modelling). For every pixel, the time series of surface reflectance data is converted to the Normalised Difference Water Index (NDWI) and each observation tagged with the tidal height modelled at the time of acquisition by the satellite. A rolling median is applied from low to high tide to reduce noise (such as white water, sunglint, and non-tidal water level variability), then analysed to identify the tide height at which the pixel transitions from dry to wet. This tide height represents the elevation of the pixel.
+DEA Intertidal Elevation (Figure 2) provides elevation in metre units relative to modelled Mean Sea Level for each pixel of the satellite-observed exposed intertidal zone across the Australian coastline. The elevation model is generated from DEA Landsat and Sentinel-2 surface reflectance data from each 3-year composite period, utilising a pixel-based approach based on [Ensemble Tidal Modelling](#ensemble-tidal-modelling). For every pixel, the time series of surface reflectance data is converted to the Normalised Difference Water Index (NDWI) and each observation tagged with the tidal height modelled at the time of acquisition by the satellite. A rolling median is applied from low to high tide to reduce noise (such as white water, sunglint, and non-tidal water level variability), then analysed to identify the tide height at which the pixel transitions from dry to wet. This tide height represents the elevation of the pixel.
 
 :::{figure} /_files/dea-intertidal/DEAIntertidal_layer_elevation.*
 :alt: DEA Intertidal Elevation layer
 
-Figure 1. DEA Intertidal Elevation, with low elevation values shown in dark colours and high elevation shown in light colours.
+Figure 2. DEA Intertidal Elevation, with low elevation values shown in dark colours and high elevation shown in light colours.
 :::
 
 #### DEA Intertidal Elevation Uncertainty (elevation_uncertainty)
 
-DEA Intertidal Elevation Uncertainty (Figure 2) provides a measure of the quality of each modelled elevation value in metre units. Uncertainty is calculated by assessing how cleanly the modelled elevation separates satellite observations into dry and wet observations. This is achieved by identifying satellite observations that were misclassified by the modelled elevation (for instance, pixels that were observed as wet at tide heights lower than the modelled elevation, or alternately, observed as dry at higher tide heights). The spread of tide heights from these misclassified observations is summarised using a robust Median Absolute Deviation (MAD) statistic, and reported as $0.5 \times MAD$ to represent one-sided uncertainty bounds (i.e. ± uncertainty on either side of the pixel's elevation). Common causes of high elevation uncertainty can be poor tidal model performance, rapidly changing intertidal morphology, or noisy underlying satellite data.
+DEA Intertidal Elevation Uncertainty (Figure 3) provides a measure of the quality of each modelled elevation value in metre units. Uncertainty is calculated by assessing how cleanly the modelled elevation separates satellite observations into dry and wet observations. This is achieved by identifying satellite observations that were misclassified by the modelled elevation (for instance, pixels that were observed as wet at tide heights lower than the modelled elevation, or alternately, observed as dry at higher tide heights). The spread of tide heights from these misclassified observations is summarised using a robust Median Absolute Deviation (MAD) statistic, and reported as $0.5 \times MAD$ to represent one-sided uncertainty bounds (i.e. ± uncertainty on either side of the pixel's elevation). Common causes of high elevation uncertainty can be poor tidal model performance, rapidly changing intertidal morphology, or noisy underlying satellite data.
 
 :::{figure} /_files/dea-intertidal/DEAIntertidal_layer_elevation_uncertainty.*
 :alt: DEA Intertidal Elevation Uncertainty layer
 
-Figure 2. DEA Intertidal Elevation Uncertainty, with high uncertainty shown in light colours.
+Figure 3. DEA Intertidal Elevation Uncertainty, with high uncertainty shown in light colours.
 :::
 
 #### DEA Intertidal Exposure (exposure)
 
-DEA Intertidal Exposure (Figure 3) models the percentage of time that any intertidal pixel of known elevation is exposed from tidal inundation. Exposure is calculated by comparing the pixel elevation back against a high temporal resolution model of tide heights for that location, based on the [Ensemble Tidal Modelling](#ensemble-tidal-modelling) approach. Exposure percentage is calculated as the fraction of exposed observations relative to the total number of observations generated in the high temporal resolution tidal model for the 3-year product epoch.
+DEA Intertidal Exposure (Figure 4) models the percentage of time that any intertidal pixel of known elevation is exposed from tidal inundation. Exposure is calculated by comparing the pixel elevation back against a high temporal resolution model of tide heights for that location, based on the [Ensemble Tidal Modelling](#ensemble-tidal-modelling) approach. Exposure percentage is calculated as the fraction of exposed observations relative to the total number of observations generated in the high temporal resolution tidal model for the 3-year product epoch.
 
 :::{figure} /_files/dea-intertidal/DEAIntertidal_layer_exposure.*
 :alt: DEA Intertidal Exposure layer
 
-Figure 3. DEA Intertidal Exposure, with low exposure values (i.e. rarely exposed pixels) shown in dark colours.
+Figure 4. DEA Intertidal Exposure, with low exposure values (i.e. rarely exposed pixels) shown in dark colours.
 :::
 
 #### DEA Intertidal Extents (extents)
 
-DEA Intertidal Extents is a categorical dataset that classifies coastal areas into five classes (Figure 4), including the satellite-observed extents of the exposed (i.e. non-vegetated) intertidal zone. This classification is based on DEA Intertidal Elevation outputs and other satellite-derived data including the inundation frequency of each pixel and correlations between inundation patterns and modelled tide heights. See [Quality Assessment Layers](#dea-intertidal-quality-assessment-layers). The "intensive urban" land use summary class of the Catchment-scale Land Use Map (CLUM) (ABARES, 2021) dataset was used to mask pixel misclassifications in urban areas.
+DEA Intertidal Extents is a categorical dataset that classifies coastal areas into five classes (Figure 5), including the satellite-observed extents of the exposed (i.e. non-vegetated) intertidal zone. This classification is based on DEA Intertidal Elevation outputs and other satellite-derived data including the inundation frequency of each pixel and correlations between inundation patterns and modelled tide heights. See [Quality Assessment Layers](#dea-intertidal-quality-assessment-layers). The "intensive urban" land use summary class of the Catchment-scale Land Use Map (CLUM) (ABARES, 2021) dataset was used to mask pixel misclassifications in urban areas.
 
 The class definitions of the Intertidal Extents layer are as follows.
 
@@ -113,7 +120,7 @@ The class definitions of the Intertidal Extents layer are as follows.
 :alt: DEA Intertidal Extents layer
 :width: 1200px
 
-Figure 4. DEA Intertidal Extents, the five coastal classes include ocean and coastal waters (dark blue), low confidence intertidal (yellow), high confidence intertidal (orange), inland waters (light blue), and land (white).
+Figure 5. DEA Intertidal Extents, the five coastal classes include ocean and coastal waters (dark blue), low confidence intertidal (yellow), high confidence intertidal (orange), inland waters (light blue), and land (white).
 :::
 
 ### Tidal Attribute Layers
@@ -122,20 +129,20 @@ See the attributes of these layers in the [Specifications tab](./?tab=specificat
 
 #### Tidal spread (ta_spread)
 
-The percentage of the full astronomical tidal range observed by the time series of satellite observations at each pixel (see Figure 5a). DEA Intertidal Spread takes the concept of satellite tide bias, introduced in Bishop-Taylor et al (2019), and applies it at a pixel scale to demonstrate the fraction of the full tide range that was sensor observed during the analysis epoch at that location. In this work, the astronomical tide range is defined as that modelled by the [Ensemble Tidal Modelling](#ensemble-tidal-modelling) approach. 
+The percentage of the full astronomical tidal range observed by the time series of satellite observations at each pixel (see Figure 6a). DEA Intertidal Spread takes the concept of satellite tide bias, introduced in Bishop-Taylor et al (2019), and applies it at a pixel scale to demonstrate the fraction of the full tide range that was sensor observed during the analysis epoch at that location. In this work, the astronomical tide range is defined as that modelled by the [Ensemble Tidal Modelling](#ensemble-tidal-modelling) approach. 
 
 #### Low tide offset (ta_offset_low)
 
-The proportion of the lowest tides not observed at any time during the analysis epoch by satellites at each pixel (as a percentage of the astronomical tide range). It is calculated by measuring the offset between the lowest astronomical tide (LAT) and the lowest satellite-observed tide (LOT; see Figure 5b). A high value indicates that DEA Intertidal datasets may not map the lowest regions of the intertidal zone.
+The proportion of the lowest tides not observed at any time during the analysis epoch by satellites at each pixel (as a percentage of the astronomical tide range). It is calculated by measuring the offset between the lowest astronomical tide (LAT) and the lowest satellite-observed tide (LOT; see Figure 6b). A high value indicates that DEA Intertidal datasets may not map the lowest regions of the intertidal zone.
 
 #### High tide offset (ta_offset_high)
 
-The proportion of the highest tides not observed at any time during the analysis epoch by satellites at each pixel (as a percentage of the astronomical tide range). It is calculated by measuring the offset between the highest astronomical tide (HAT) and the highest satellite-observed tide (HOT; see Figure 5c). A high value indicates that DEA Intertidal datasets may not map the highest regions of the intertidal zone.
+The proportion of the highest tides not observed at any time during the analysis epoch by satellites at each pixel (as a percentage of the astronomical tide range). It is calculated by measuring the offset between the highest astronomical tide (HAT) and the highest satellite-observed tide (HOT; see Figure 6c). A high value indicates that DEA Intertidal datasets may not map the highest regions of the intertidal zone.
 
 :::{figure} /_files/dea-intertidal/tidalattributes.*
 :alt: Tidal Attributes Description Figure
 
-Figure 5. Illustration of the concept of observed tide heights (dots corresponding to satellite acquisition time) compared to the full modelled tidal range (blue lines). Descriptions of  (a) spread,  (b) low tide offset, and (c) high tide offset are detailed in the text.
+Figure 6. Illustration of the concept of observed tide heights (dots corresponding to satellite acquisition time) compared to the full modelled tidal range (blue lines). Descriptions of  (a) spread,  (b) low tide offset, and (c) high tide offset are detailed in the text.
 :::
 
 #### Lowest observed tide (ta_lot)
@@ -178,7 +185,7 @@ An accumulated cost-distance connectivity layer used to constrain DEA Intertidal
 
 ### Ensemble Tidal Modelling
 
-The Ensemble Tidal Modelling approach was implemented to account for the varying performance and biases of existing global ocean tide models across the complex tidal regimes and coastal regions of Australia. The ensemble process utilises ancillary data to select and weight tidal models at any given coastal location based on how well each model correlates with local satellite-observed patterns of tidal inundation and water levels measured by satellite altimetry. A single ensemble tidal output was generated by combining the top three locally optimal models, and used for all downstream product workflows. This ensemble significantly improves the quality of the resulting intertidal DEMs compared to using a single tide model (Figure 6).
+The Ensemble Tidal Modelling approach was implemented to account for the varying performance and biases of existing global ocean tide models across the complex tidal regimes and coastal regions of Australia. The ensemble process utilises ancillary data to select and weight tidal models at any given coastal location based on how well each model correlates with local satellite-observed patterns of tidal inundation and water levels measured by satellite altimetry. A single ensemble tidal output was generated by combining the top three locally optimal models, and used for all downstream product workflows. This ensemble significantly improves the quality of the resulting intertidal DEMs compared to using a single tide model (Figure 7).
 
 Ensemble tide modelling was implemented in the [eo-tides](https://github.com/GeoscienceAustralia/eo-tides) Python package which integrates satellite Earth observation data with tide modelling (Bishop-Taylor et al., 2025). It leverages tide modelling functionality from the [pyTMD](https://github.com/tsutterley/pyTMD) package. The ensemble was based on 9 commonly-used global ocean tidal models:
 
@@ -190,7 +197,7 @@ Ensemble tide modelling was implemented in the [eo-tides](https://github.com/Geo
 :::{figure} /_files/dea-intertidal/ensembletides_updated.*
 :alt: Ensemble tide validation Figure
 
-Figure 6. Comparison of intertidal DEMs generated using (a) a single standard tide model (FES2014), and (b) the ensemble tide modelling approach.
+Figure 7. Comparison of intertidal DEMs generated using (a) a single standard tide model (FES2014), and (b) the ensemble tide modelling approach.
 :::
 
 ## Lineage
@@ -200,6 +207,8 @@ The DEA Intertidal product suite extends the concepts developed in the [National
 This shift to a more dynamic product suite is achieved through a pixel-based algorithm, replacing the waterline interpolation methods of NIDEM, and an improved tidal modelling process to better leverage the increased data resolution and density provided by the inclusion of Sentinel-2 data.
 
 ## Processing Steps
+
+For more detailed processing steps, refer to [Bishop-Taylor et al., (2026)](https://doi.org/10.1016/j.rse.2026.115663).
 
 1. Satellite data from Sentinel-2A, -2B and -2C, Landsat 7, 8, and 9 are loaded for the year of interest (e.g. 2020), and the preceding and subsequent year (e.g. 2019, 2021).
 1. Satellite data cloud masked and converted to Normalised Difference water Index (NDWI).

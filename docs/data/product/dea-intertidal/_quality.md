@@ -9,7 +9,7 @@ Product accuracy was validated against high resolution external Digital Elevatio
 * Victoria Department of Energy, Environment and Climate Action 10 m VIC Coastal DEM
 * Western Australia Department of Transport WA Bathymetry Portal
 
-For a consistent comparison, data from all validation data sources were mosaicked and reprojected into annual 10 m continental-scale DEM rasters, and transformed to match the Mean Sea level vertical datum of DEA Intertidal. To evaluate accuracy, we calculated RMSE, MAE, correlation, bias, and R-squared statistics by comparing DEA Intertidal Elevation against validation data from the same year. To provide insights into product performance across different coastal environments, this analysis was conducted separately on microtidal (tide range &lt; 2 m), mesotidal (2&ndash;4 m) and macrotidal (&gt; 4 m) coastlines (Table 1, Figure 7). 
+For a consistent comparison, data from all validation data sources were mosaicked and reprojected into annual 10 m continental-scale DEM rasters, and transformed to match the Mean Sea level vertical datum of DEA Intertidal. To evaluate accuracy, we calculated RMSE, MAE, correlation, bias, and R-squared statistics by comparing DEA Intertidal Elevation against validation data from the same year. To provide insights into product performance across different coastal environments, this analysis was conducted separately on microtidal (tide range &lt; 2 m), mesotidal (2&ndash;4 m) and macrotidal (&gt; 4 m) coastlines (Table 1, Figure 8). 
 
 For a detailed description of the validation approach, refer to [Bishop-Taylor et al., (2026)](https://doi.org/10.1016/j.rse.2026.115663).
 
@@ -29,7 +29,7 @@ For a detailed description of the validation approach, refer to [Bishop-Taylor e
 :::{figure} /_files/dea-intertidal/tiderangevalidation.*
 :alt: Validation at different tidal ranges
 
-Figure 7. Comparison of DEA Intertidal elevation against independent validation data. Panels (a-c) show modelled versus validation elevations across macro-, meso-, and microtidal environments. Panels (d-f) show errors grouped by (d) intertidal elevation, (e) intertidal slope, and (f) clear satellite observations at each pixel. Distributions are visualised by interquartile range (boxes) and 10-90th percentiles (whiskers).
+Figure 8. Comparison of DEA Intertidal elevation against independent validation data. Panels (a-c) show modelled versus validation elevations across macro-, meso-, and microtidal environments. Panels (d-f) show errors grouped by (d) intertidal elevation, (e) intertidal slope, and (f) clear satellite observations at each pixel. Distributions are visualised by interquartile range (boxes) and 10-90th percentiles (whiskers).
 :::
 
 ### Caveats and limitations
