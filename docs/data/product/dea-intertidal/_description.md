@@ -8,27 +8,7 @@ The intertidal zone also forms a critical habitat and foraging ground for migrat
 
 The DEA Intertidal product suite provides annual continental-scale elevation and exposure product layers for Australia's exposed intertidal zone, mapped at a 10 m resolution from DEA's archive of open-source Landsat and Sentinel-2 satellite data. The exposed intertidal zone consists of coastal regions periodically inundated by tidal flows, not including areas obscured by vegetation cover such as mangroves. These intertidal products enable users to better monitor and understand some of the most dynamic regions of Australia's coastlines.
 
-## Applications
-
-* Integration with existing topographic and bathymetric data to seamlessly map the elevation of the coastal zone. 
-
-* Providing baseline elevation data to assist coastal hazard impact assessment from extreme weather and inundation events. 
-
-* Investigating coastal erosion and sediment transport processes. 
-
-* Supporting habitat mapping and modelling for coastal ecosystems extending across the terrestrial to marine boundary. 
-
-* Characterise the spatio-temporal exposure patterns of the intertidal zone to support migratory species studies and applications. 
-
-## Technical Information
-
-### Features
-
-The DEA Intertidal product suite contains four core intertidal mapping layers, seven tidal attribute (`ta`) layers, and four quality assessment (`qa`) layers, all provided as continental 10 m resolution GeoTIFFs for the Australian coastal and intertidal region.
-
-All datasets are produced annually from a 3-year composite of input data from combined Sentinel-2 and Landsat DEA Collection 3 surface reflectance products. The product time series commences in 2016, with datasets labelled by the middle year of data. For example, the 2017 layer combines data from 2016, 2017, and 2018. Updates to the product suite are scheduled annually. 
-
-### What this product offers
+## What this product offers
 
 The DEA Intertidal product suite is the next generation of intertidal products developed by DEA [(Bishop-Taylor et al., 2026)](https://doi.org/10.1016/j.rse.2026.115663). It improves on the former [National Intertidal Digital Elevation Model](/data/product/dea-intertidal-elevation-landsat/) (NIDEM; Bishop-Taylor et al., 2019) and introduces several new features to help users better understand the intertidal environment.
 
@@ -48,6 +28,25 @@ While NIDEM provided the first 3D model of Australia's intertidal zone &mdash; t
 Figure 1. The original NIDEM (left) and the improved DEA Intertidal Elevation (right)
 :::
 
+## Applications
+
+* Integration with existing topographic and bathymetric data to seamlessly map the elevation of the coastal zone. 
+
+* Providing baseline elevation data to assist coastal hazard impact assessment from extreme weather and inundation events. 
+
+* Investigating coastal erosion and sediment transport processes. 
+
+* Supporting habitat mapping and modelling for coastal ecosystems extending across the terrestrial to marine boundary. 
+
+* Characterise the spatio-temporal exposure patterns of the intertidal zone to support migratory species studies and applications. 
+
+## Technical Information
+
+### Features
+
+The DEA Intertidal product suite contains four core intertidal mapping layers, seven tidal attribute (`ta`) layers, and four quality assessment (`qa`) layers, all provided as continental 10 m resolution GeoTIFFs for the Australian coastal and intertidal region.
+
+All datasets are produced annually from a 3-year composite of input data from combined Sentinel-2 and Landsat DEA Collection 3 surface reflectance products. The product time series commences in 2016, with datasets labelled by the middle year of data. For example, the 2017 layer combines data from 2016, 2017, and 2018. Updates to the product suite are scheduled annually. 
 
 ### Datasets
 
