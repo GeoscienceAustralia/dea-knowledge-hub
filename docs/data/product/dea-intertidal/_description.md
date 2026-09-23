@@ -46,9 +46,9 @@ Figure 1. The original NIDEM (left) and the improved DEA Intertidal Elevation (r
 
 The DEA Intertidal product suite contains four core intertidal mapping layers, seven tidal attribute (`ta`) layers, and four quality assessment (`qa`) layers, all provided as continental 10 m resolution GeoTIFFs for the Australian coastal and intertidal region.
 
-All datasets are produced annually from a 3-year composite of input data from combined Sentinel-2 and Landsat DEA Collection 3 surface reflectance products. The product time series commences in 2016, with datasets labelled by the middle year of data. For example, the 2017 layer combines data from 2016, 2017, and 2018. Updates to the product suite are scheduled annually. 
+All datasets are produced annually from a 3-year epoch of input data from combined Sentinel-2 and Landsat DEA Collection 3 surface reflectance products. The product time series commences in 2016, with datasets labelled by the middle year of data. For example, the 2017 layer combines data from 2016, 2017, and 2018. Updates to the product suite are scheduled annually. 
 
-### Datasets
+#### Datasets
 
 Annual raster files for each of the product bands are available in DEA's Amazon S3 bucket as continental mosaics in cloud-optimised GeoTIFF (COG) format.
 These files support [fast and efficient data streaming](/guides/continental-cogs-geotiff-mosaics/) of single-band layers of the DEA Intertidal product.
@@ -62,20 +62,13 @@ ga_s2ls_intertidal_cyear_3_mosaic_2024--P1Y_elevation.tif
 {Organisation}_{Platform}_{Product}_{Reporting period}_{Collection}_{Region}_{Data date}--{Data period}_{Band name}.{File extension}
 ```
 
-### Code repositories
-
-* [DEA Intertidal GitHub repository](https://github.com/GeoscienceAustralia/dea-intertidal) &mdash; A codebase for DEA Intertidal product generation workflows 
-* [eo-tides GitHub repository](https://github.com/GeoscienceAustralia/eo-tides) &mdash; A codebase for integrating satellite Earth observations with tide modelling
-* [DEA Tools GitHub repository](https://github.com/GeoscienceAustralia/dea-notebooks) &mdash; Earth observation data manipulation tools 
-* [PyTMD GitHub repository](https://github.com/tsutterley/pyTMD) &mdash; Python-based tidal prediction software 
-
-### Core Product Layers 
+### Core product layers 
 
 See the attributes of these layers in the [Specifications tab](./?tab=specifications).
 
 #### DEA Intertidal Elevation (elevation)
 
-DEA Intertidal Elevation (Figure 2) provides elevation in metre units relative to modelled Mean Sea Level for each pixel of the satellite-observed exposed intertidal zone across the Australian coastline. The elevation model is generated from DEA Landsat and Sentinel-2 surface reflectance data from each 3-year composite period, utilising a pixel-based approach based on [Ensemble Tidal Modelling](#ensemble-tidal-modelling). For every pixel, the time series of surface reflectance data is converted to the Normalised Difference Water Index (NDWI) and each observation tagged with the tidal height modelled at the time of acquisition by the satellite. A rolling median is applied from low to high tide to reduce noise (such as white water, sunglint, and non-tidal water level variability), then analysed to identify the tide height at which the pixel transitions from dry to wet. This tide height represents the elevation of the pixel.
+DEA Intertidal Elevation (Figure 2) provides elevation in metre units relative to modelled Mean Sea Level for each pixel of the satellite-observed exposed intertidal zone across the Australian coastline. The elevation model is generated from DEA Landsat and Sentinel-2 surface reflectance data from each 3-year epoch, utilising a pixel-based approach based on [Ensemble Tidal Modelling](#ensemble-tidal-modelling). For every pixel, the time series of surface reflectance data is converted to the Normalised Difference Water Index (NDWI) and each observation tagged with the tidal height modelled at the time of acquisition by the satellite. A rolling median is applied from low to high tide to reduce noise (such as white water, sunglint, and non-tidal water level variability), then analysed to identify the tide height at which the pixel transitions from dry to wet. This tide height represents the elevation of the pixel.
 
 :::{figure} /_files/dea-intertidal/DEAIntertidal_layer_elevation.*
 :alt: DEA Intertidal Elevation layer
@@ -95,7 +88,7 @@ Figure 3. DEA Intertidal Elevation Uncertainty, with high uncertainty shown in l
 
 #### DEA Intertidal Exposure (exposure)
 
-DEA Intertidal Exposure (Figure 4) models the percentage of time that any intertidal pixel of known elevation is exposed from tidal inundation. Exposure is calculated by comparing the pixel elevation back against a high temporal resolution model of tide heights for that location, based on the [Ensemble Tidal Modelling](#ensemble-tidal-modelling) approach. Exposure percentage is calculated as the fraction of exposed observations relative to the total number of observations generated in the high temporal resolution tidal model for the 3-year product epoch.
+DEA Intertidal Exposure (Figure 4) models the percentage of time that a intertidal pixel of known elevation is exposed from tidal inundation. Exposure is calculated by comparing the pixel elevation back against a high frequency time-series of tide heights generated for that location and the relevant 3-year epoch using the [Ensemble Tidal Modelling](#ensemble-tidal-modelling) approach. Exposure percentage is calculated as the fraction of exposed observations relative to the total number of observations in the high frequency tide height time-series.
 
 :::{figure} /_files/dea-intertidal/DEAIntertidal_layer_exposure.*
 :alt: DEA Intertidal Exposure layer
@@ -128,15 +121,15 @@ See the attributes of these layers in the [Specifications tab](./?tab=specificat
 
 #### Tidal spread (ta_spread)
 
-The percentage of the full astronomical tidal range observed by the time series of satellite observations at each pixel (see Figure 6a). DEA Intertidal Spread takes the concept of satellite tide bias, introduced in Bishop-Taylor et al (2019), and applies it at a pixel scale to demonstrate the fraction of the full tide range that was sensor observed during the analysis epoch at that location. In this work, the astronomical tide range is defined as that modelled by the [Ensemble Tidal Modelling](#ensemble-tidal-modelling) approach. 
+The percentage of the full astronomical tidal range observed by the time series of satellite observations at each pixel (see Figure 6a). DEA Intertidal Spread takes the concept of satellite tide bias, introduced in Bishop-Taylor et al (2019), and applies it at a pixel scale to demonstrate the fraction of the full tide range that was sensor observed during the analysis epoch at that location. In this work, the astronomical tide range is defined as that modelled by the [Ensemble Tidal Modelling](#ensemble-tidal-modelling) approach. 
 
 #### Low tide offset (ta_offset_low)
 
-The proportion of the lowest tides not observed at any time during the analysis epoch by satellites at each pixel (as a percentage of the astronomical tide range). It is calculated by measuring the offset between the lowest astronomical tide (LAT) and the lowest satellite-observed tide (LOT; see Figure 6b). A high value indicates that DEA Intertidal datasets may not map the lowest regions of the intertidal zone.
+The proportion of the lowest tides never observed during the analysis epoch by satellites at each pixel (as a percentage of the astronomical tide range). It is calculated by measuring the offset between the lowest astronomical tide (LAT) and the lowest satellite-observed tide (LOT; see Figure 6b). A high value indicates that DEA Intertidal datasets may not map the lowest regions of the intertidal zone.
 
 #### High tide offset (ta_offset_high)
 
-The proportion of the highest tides not observed at any time during the analysis epoch by satellites at each pixel (as a percentage of the astronomical tide range). It is calculated by measuring the offset between the highest astronomical tide (HAT) and the highest satellite-observed tide (HOT; see Figure 6c). A high value indicates that DEA Intertidal datasets may not map the highest regions of the intertidal zone.
+The proportion of the highest tides never observed during the analysis epoch by satellites at each pixel (as a percentage of the astronomical tide range). It is calculated by measuring the offset between the highest astronomical tide (HAT) and the highest satellite-observed tide (HOT; see Figure 6c). A high value indicates that DEA Intertidal datasets may not map the highest regions of the intertidal zone.
 
 :::{figure} /_files/dea-intertidal/tidalattributes.*
 :alt: Tidal Attributes Description Figure
@@ -154,11 +147,11 @@ The highest observed tide dataset maps the highest satellite-observed tide (HOT)
 
 #### Lowest astronomical tide (ta_lat)
 
-The lowest astronomical tide dataset maps the lowest astronomical tide (LAT) for each pixel, as modelled by the [Ensemble Tidal Model](#ensemble-tidal-modelling) for the analysis epoch. Note that the LAT modelled for each individual analysis epoch may differ from the LAT modelled across ‘all time’ for any given location.
+The lowest astronomical tide dataset maps the lowest astronomical tide (LAT) for each pixel, as modelled by the [Ensemble Tidal Model](#ensemble-tidal-modelling) for the analysis epoch. Note that the LAT modelled for each individual analysis epoch may differ from the LAT modelled across 'all time' for any given location.
 
 #### Highest astronomical tide (ta_hat)
 
-The highest astronomical tide dataset maps the highest astronomical tide (HAT) for each pixel, as modelled by the Ensemble Tidal Model for the analysis epoch. Note that the HAT modelled for each individual analysis epoch may differ from the HAT modelled across ‘all time’ for any given location.
+The highest astronomical tide dataset maps the highest astronomical tide (HAT) for each pixel, as modelled by the Ensemble Tidal Model for the analysis epoch. Note that the HAT modelled for each individual analysis epoch may differ from the HAT modelled across 'all time' for any given location.
 
 (dea-intertidal-quality-assessment-layers)=
 
@@ -201,7 +194,7 @@ Figure 7. Comparison of intertidal DEMs generated using (a) a single standard ti
 
 ## Lineage
 
-The DEA Intertidal product suite extends the concepts developed in the [National Intertidal Digital Elevation Model (NIDEM)](/data/version-history/dea-intertidal-elevation-landsat-1.0.0) product, integrating higher resolution 10 m Sentinel-2 data with the original 30 m Landsat data to create annual elevation models and exposure product layers for Australia’s intertidal zone.
+The DEA Intertidal product suite extends the concepts developed in the [National Intertidal Digital Elevation Model (NIDEM)](/data/version-history/dea-intertidal-elevation-landsat-1.0.0) product, integrating higher resolution 10 m Sentinel-2 data with the original 30 m Landsat data to create annual elevation models and exposure product layers for Australia's intertidal zone.
 
 This shift to a more dynamic product suite is achieved through a pixel-based algorithm, replacing the waterline interpolation methods of NIDEM, and an improved tidal modelling process to better leverage the increased data resolution and density provided by the inclusion of Sentinel-2 data.
 
@@ -220,6 +213,13 @@ For more detailed processing steps, refer to [Bishop-Taylor et al., (2026)](http
 1. Intertidal extents classes calculated based on Intertidal elevation and NDWI inundation frequency and tide correlation with additional masking to remove urban false positives using abares_clum_2020 (ABARES, 2021).
 1. Intertidal exposure calculated by comparing Intertidal elevation against high-frequency modelled tides, calculating the percentage of time a pixel was exposed during the regular rise and fall of the tide.
 1. Tidal metrics calculated by comparing satellite-observed tides against high-frequency modelled tides.
+
+## Software
+
+* [DEA Intertidal](https://github.com/GeoscienceAustralia/dea-intertidal) &mdash; DEA Intertidal product generation code and workflows.
+* [eo-tides](https://github.com/GeoscienceAustralia/eo-tides) &mdash; Tools for integrating satellite Earth observation data with tide modelling.
+* [DEA Tools](https://github.com/GeoscienceAustralia/dea-notebooks) &mdash; Earth observation data manipulation tools.
+* [PyTMD](https://github.com/tsutterley/pyTMD) &mdash; Python-based tidal prediction software.
 
 ## References
 
