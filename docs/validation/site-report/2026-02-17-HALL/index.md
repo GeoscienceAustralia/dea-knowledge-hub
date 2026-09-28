@@ -71,9 +71,17 @@ This allows the data to be used to validate Geoscience Australia's other dataset
 
 ## Figures
 
-The following figures provide visual representations of the surface reflectance data. (Click a figure to view it at full size.)
+The following figures show the site imagery, swath location and surface reflectance comparisons. (Click a figure to view it at full size.)
 
-:::::{grid} 1 1 2 3
+### Swath location relative to the site
+
+The swath figure shows the field site within the satellite image coverage. The yellow star with a black border marks the site, the cyan outline shows the indexed image footprint, and the white dashed line marks the estimated swath midline. The RGB imagery uses a fixed 0–3000 display scale.
+
+The signed view angle in each panel title describes the viewing geometry at the site: negative values indicate the left side and positive values the right side of the estimated descending track. The angle magnitude is the satellite-view zenith angle at the ground, not the spacecraft off-nadir angle. Track position and cross-track distances are estimates derived from image footprints; incomplete tile coverage can affect them. Blank areas represent missing imagery in the displayed mosaic, not necessarily the edge of the satellite swath.
+
+Where two satellites are shown, the panels follow the satellite order used in this report. The swath plot can select a nearby acquisition within its configured search window, so its acquisition date may differ from the field date.
+
+:::::{grid} 1 1 2 2
 ::::{grid-item}
 :::{figure} ./RGB-2026-02-17-HALL.png
 
@@ -81,6 +89,16 @@ Satellite imagery tiles of true colour (RGB) surface reflectance.
 They each cover an area of approximately 2&nbsp;km &times; 2&nbsp;km.
 The white box indicates the size and location
 of the field site.
+:::
+::::
+::::{grid-item}
+:::{figure} ./Swath-2026-02-17-HALL.png
+
+Satellite swath coverage relative to the field site. The yellow star marks the site,
+the cyan outline shows the indexed image footprint, and the dashed white line shows
+the estimated swath midline. Panel titles give the satellite and signed view angle
+at the site. A dual-overpass report shows both satellites within this figure.
+
 :::
 ::::
 ::::{grid-item}
