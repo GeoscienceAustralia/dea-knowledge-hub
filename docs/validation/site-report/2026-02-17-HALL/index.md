@@ -75,12 +75,6 @@ The following figures show the site imagery, swath location and surface reflecta
 
 ### Swath location relative to the site
 
-The swath figure shows the field site within the satellite image coverage. The yellow star with a black border marks the site, the cyan outline shows the indexed image footprint, and the white dashed line marks the estimated swath midline. The RGB imagery uses a fixed 0–3000 display scale.
-
-The signed view angle in each panel title describes the viewing geometry at the site: negative values indicate the left side and positive values the right side of the estimated descending track. The angle magnitude is the satellite-view zenith angle at the ground, not the spacecraft off-nadir angle. Track position and cross-track distances are estimates derived from image footprints; incomplete tile coverage can affect them. Blank areas represent missing imagery in the displayed mosaic, not necessarily the edge of the satellite swath.
-
-Where two satellites are shown, the panels follow the satellite order used in this report. The swath plot can select a nearby acquisition within its configured search window, so its acquisition date may differ from the field date.
-
 :::::{grid} 1 1 2 2
 ::::{grid-item}
 :::{figure} ./RGB-2026-02-17-HALL.png
@@ -95,9 +89,9 @@ of the field site.
 :::{figure} ./Swath-2026-02-17-HALL.png
 
 Satellite swath coverage relative to the field site. The yellow star marks the site,
-the cyan outline shows the indexed image footprint, and the dashed white line shows
+the RGB picture shows the image footprint, and the dashed white line shows
 the estimated swath midline. Panel titles give the satellite and signed view angle
-at the site. A dual-overpass report shows both satellites within this figure.
+at the site.
 
 :::
 ::::
