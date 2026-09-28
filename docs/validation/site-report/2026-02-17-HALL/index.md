@@ -73,8 +73,6 @@ This allows the data to be used to validate Geoscience Australia's other dataset
 
 The following figures show the site imagery, swath location and surface reflectance comparisons. (Click a figure to view it at full size.)
 
-### Swath location relative to the site
-
 :::::{grid} 1 1 2 2
 ::::{grid-item}
 :::{figure} ./RGB-2026-02-17-HALL.png

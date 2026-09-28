@@ -41,20 +41,20 @@ This allows the data to be used to validate Geoscience Australia's other dataset
 :class: validation-report-results-table
 
 "Band","Sat Mean","Sat rms","Field mean","Field rms"
-"CA","0.033","0.002","0.034","0.005"
-"blue","0.042","0.002","0.04","0.007"
-"green","0.076","0.004","0.073","0.009"
+"CA","0.033","0.002","0.033","0.005"
+"blue","0.042","0.002","0.04","0.006"
+"green","0.077","0.004","0.073","0.009"
 "red","0.077","0.005","0.071","0.011"
-"NIR","0.336","0.02","0.326","0.031"
-"SWIR1","0.223","0.015","0.22","0.028"
-"SWIR2","0.122","0.01","0.119","0.019"
+"NIR","0.345","0.02","0.33","0.032"
+"SWIR1","0.219","0.015","0.218","0.028"
+"SWIR2","0.116","0.01","0.114","0.019"
 :::
 
 ## Figures
 
-The following figures provide visual representations of the surface reflectance data. (Click a figure to view it at full size.)
+The following figures show the site imagery, swath location and surface reflectance comparisons. (Click a figure to view it at full size.)
 
-:::::{grid} 1 1 2 3
+:::::{grid} 1 1 2 2
 ::::{grid-item}
 :::{figure} ./RGB-2026-08-13-HALL.png
 
@@ -62,6 +62,16 @@ A satellite imagery tile of true colour (RGB) surface reflectance.
 It covers an area of approximately 2&nbsp;km &times; 2&nbsp;km.
 The white box indicates the size and location
 of the field site.
+:::
+::::
+::::{grid-item}
+:::{figure} ./Swath-2026-08-13-HALL.png
+
+Satellite swath coverage relative to the field site. The yellow star marks the site,
+the RGB picture shows the image footprint, and the dashed white line shows
+the estimated swath midline. Panel titles give the satellite and signed view angle
+at the site.
+
 :::
 ::::
 ::::{grid-item}
