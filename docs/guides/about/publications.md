@@ -11,6 +11,8 @@ This page is a list of academic articles, peer-reviewed presentations, and other
 
 Adame, MF, Kavehei, E, Dunn, B, Jackson, S, Duncan, P, Minjerribah-Moorgumpin Elders in Council, Cahill, J, Nadji, N, Brown, CJ & Lymburner, L 2026, 'Improving wetland management through First Nations' knowledge and a spatial visualisation tool', *Ambio*, <https://doi.org/10.1007/s13280-025-02326-2>.
 
+Bishop-Taylor, R, Philllips, S, Sagar, S & Newey, V 2026, 'Time and tide: mapping the changing 3D shape of Australia's dynamic intertidal zone using time series satellite data', *Remote Sensing of Environment*, vol. 347, <https://doi.org/10.1016/j.rse.2026.115663>. 
+
 Bishop-Taylor, R, Sagar, S, Phillips, C & Newey, V 2026, 'Optimising coastal tide predictions: an ensemble satellite altimetry and optical remote sensing approach', *International Journal of Remote Sensing*, pp. 1-20, <https://doi.org/10.1080/01431161.2026.2666912>.
 
 Ma, S, Li, Z & Taylor, JA 2026, 'Landsat30-AU: a vision-language dataset for Australian Landsat imagery', in S Koenig, C Jenkins & ME Taylor (eds), *Fortieth AAAI Conference on Artificial Intelligence*, Singapore, vol. 40, pp. 7809–17, <https://doi.org/10.1609/aaai.v40i10.37724>.
