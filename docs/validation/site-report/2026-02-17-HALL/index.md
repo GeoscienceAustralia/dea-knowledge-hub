@@ -71,9 +71,9 @@ This allows the data to be used to validate Geoscience Australia's other dataset
 
 ## Figures
 
-The following figures provide visual representations of the surface reflectance data. (Click a figure to view it at full size.)
+The following figures show the site imagery, swath location and surface reflectance comparisons. (Click a figure to view it at full size.)
 
-:::::{grid} 1 1 2 3
+:::::{grid} 1 1 2 2
 ::::{grid-item}
 :::{figure} ./RGB-2026-02-17-HALL.png
 
@@ -81,6 +81,16 @@ Satellite imagery tiles of true colour (RGB) surface reflectance.
 They each cover an area of approximately 2&nbsp;km &times; 2&nbsp;km.
 The white box indicates the size and location
 of the field site.
+:::
+::::
+::::{grid-item}
+:::{figure} ./Swath-2026-02-17-HALL.png
+
+Satellite swath coverage relative to the field site. The yellow star marks the site,
+the RGB picture shows the image footprint, and the dashed white line shows
+the estimated swath midline. Panel titles give the satellite and signed view angle
+at the site.
+
 :::
 ::::
 ::::{grid-item}
