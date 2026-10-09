@@ -1,6 +1,40 @@
 % See the DEA Tech Alerts documentation:
 % https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/tech_alerts_changelog.html
 
+## 20 Oct 2026: Sandbox environment upgrade
+
+The [Digital Earth Australia Sandbox](/guides/setup/Sandbox/sandbox/) environment upgrade provides access to updated package functionality, ongoing support and performance improvements that may make some notebooks and workflows run faster and feel more responsive.
+
+**Action required **
+
+If you rely on specific package versions, custom notebooks or existing workflows, review the package changes below and assess any impacts to notebooks, scripts or workflows. 
+
+JupyterLab sessions use the environment that was available when the session started. To access the updated packages and new module, start a new JupyterLab session: 
+
+**File** &gt; **Hub Control Panel** &gt; **Stop My Server** &gt; **Start My Server**.
+
+**Key package updates**
+
+| Package | Previous version | Upgrade version |
+|---|---|---|
+| Python | 3.10 | 3.12 |
+| odc-stats | 1.9 | 1.9.13 |
+| hdstats | 0.1.8.post1 | 0.2.1 |
+| dask | 2025.7.0 | 2025.10.0 |
+| distributed | 2025.7.0 | 2025.10.0 |
+| odc-algo | 1.1.1 | 1.2.2 |
+| odc-geo | 0.5.0rc1 | 0.5.3 |
+
+**New module**
+
+| Module | Description |
+|---|---|
+| scikit-fmm | Distance and travel-time analysis across raster datasets |
+
+A complete list of package and version changes is available on GitHub: [Release 2.2.1](https://github.com/GeoscienceAustralia/dea-sandbox/releases/tag/2.2.1)
+
+If you have any questions, contact [Earth.Observation@ga.gov.au](mailto:Earth.Observation@ga.gov.au)
+
 ## 3 Sep 2026: Long-term solution for atmospheric water vapour ARD
 
 :::{include} ../_components/tech-alert-sep-2026-ecmwf-long-term-solution.md
