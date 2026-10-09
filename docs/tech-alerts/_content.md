@@ -5,7 +5,7 @@
 
 The [Digital Earth Australia Sandbox](/guides/setup/Sandbox/sandbox/) environment upgrade provides access to updated package functionality, ongoing support and performance improvements that may make some notebooks and workflows run faster and feel more responsive.
 
-**Action required**
+### Action required
 
 If you rely on specific package versions, custom notebooks or existing workflows, review the package changes below and assess any impacts to notebooks, scripts or workflows. 
 
@@ -13,7 +13,7 @@ JupyterLab sessions use the environment that was available when the session star
 
 **File** &gt; **Hub Control Panel** &gt; **Stop My Server** &gt; **Start My Server**.
 
-**Key package updates:**
+### Key package updates
 
 | Package | Previous version | Upgrade version |
 |---|---|---|
@@ -25,7 +25,7 @@ JupyterLab sessions use the environment that was available when the session star
 | odc-algo | 1.1.1 | 1.2.2 |
 | odc-geo | 0.5.0rc1 | 0.5.3 |
 
-**New module:**
+### New module
 
 | Module | Description |
 |---|---|
