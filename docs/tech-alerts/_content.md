@@ -1,6 +1,8 @@
 % See the DEA Tech Alerts documentation:
 % https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/tech_alerts_changelog.html
 
+(oct-2026-sandbox-environment-upgrade)=
+
 ## 20 Oct 2026: Sandbox environment upgrade
 
 The [Digital Earth Australia Sandbox](/guides/setup/Sandbox/sandbox/) environment upgrade provides access to updated package functionality, ongoing support and performance improvements that may make some notebooks and workflows run faster and feel more responsive.
