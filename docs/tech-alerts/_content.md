@@ -42,7 +42,7 @@ If you have any questions, contact [Earth.Observation@ga.gov.au](mailto:Earth.Ob
 :::{include} ../_components/tech-alert-sep-2026-ecmwf-long-term-solution.md
 :::
 
-## 27 Aug 2026: DEA Explorer "API key required" message on basemap
+## 27 Aug 2026: DEA Explorer "API key required" message on basemap (Resolved)
 
 DEA Explorer is displaying an "API key required" message on the basemaps that it uses on its pages such as this one: [ga_s2am_ard_3](https://explorer.prod.dea.ga.gov.au/products/ga_s2am_ard_3/2026/8/16)
 
