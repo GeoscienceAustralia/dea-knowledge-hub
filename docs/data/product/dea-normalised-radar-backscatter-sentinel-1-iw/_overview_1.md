@@ -1,0 +1,5 @@
+% See the Product metadata fields documentation: https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/product_metadata_fields.html
+
+## About
+
+Geoscience Australia's Sentinel-1 Normalised Radar Backscatter (NRB), also known as Radiometrically Terrain Corrected (RTC) data, is an analysis-ready data (ARD) product derived from Level-1 Single Look Complex (SLC) data acquired in Interferometric Wide (IW) mode. The product covers the Australian continent and the Antarctic coastal zone from late 2014 onwards. It provides calibrated, noise-corrected backscatter at 20 m pixel spacing, with radiometric and geometric terrain corrections applied using a region specific digital elevation model (DEM). Values are on a linear scale in the gamma-nought (gamma0) convention, which reduces variation caused by differing observation geometries and is recommended for most land applications. The product is approved as meeting the Committee on Earth Observation Satellites (CEOS) ARD requirements for NRB. The geographic extent of this product covers Australia and its external territories, Antarctica, and the sub-Antarctic Islands. 
