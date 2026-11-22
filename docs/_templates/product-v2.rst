@@ -327,6 +327,16 @@
 
       <div class="product-tab-table-of-contents"></div>
 
+   :any:`Test link DEA Maps <dea-maps>`
+
+   :any:`Test link DEA Maps </guides/setup/dea_maps/>`
+
+   :any:`DEA Coastlines </data/product/dea-intertidal/#key-specifications>`
+
+   :any:`DEA Coastlines </data/product/dea-intertidal/?tab=specifications>`
+
+   :any:`DEA Coastlines </data/product/dea-intertidal/?tab=specifications#product-information>`
+
    .. include:: _overview_1.md
       :parser: myst_parser.sphinx_
 
