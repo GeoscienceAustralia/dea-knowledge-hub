@@ -2,8 +2,8 @@
 
 # Specifications
 
-short_name: Example product
-# full_technical_name: Long example product title
+short_name: GA Sentinel-1 IW Normalised Radar Backscatter
+full_technical_name: Geoscience Australia Sentinel-1 Interferometric Wide Normalised Radar Backscatter Collection 1 
 # header_image: /_files/example/image.png
 
 version_number: 1.0.0
@@ -11,31 +11,34 @@ is_latest_version: true
 # latest_version_link: /data/product/example-product/
 is_provisional: false
 
-lineage_type: DERIVATIVE
+lineage_type: BASELINE
 spatial_data_type: RASTER
 
 # spatial_coverage: Australia including external territories
-temporal_coverage_start: 1 Jan 2020
+temporal_coverage_start: 4 Oct 2014
 temporal_coverage_end: Present
 # temporal_coverage_custom: 1986 – 1999 and 2003 – 2011
 
-data_update_frequency: YEARLY
+data_update_frequency: DAILY
 data_update_activity: ONGOING
 is_currency_reported: false
 
-# resolution: 30 m
-# coordinate_reference_system: EPSG:3577
+resolution: 20 m
+coordinate_reference_system: MULTIPLE_UTM
 
-# product_ids:
-#   - example_1
+product_ids:
+  - ga_s1_nrb_iw_vv_1
+  - ga_s1_nrb_iw_vv_vh_1
+  - ga_s1_nrb_iw_hh_1
+  - ga_s1_nrb_iw_hh_hv_1
 
-# parent_products:
-#   - name: Example parent product
-#     link: /data/product/example-parent-product/
+parent_products:
+  - name: null
+    link: null
 
-# collections:
-#   - name: Geoscience Australia Landsat Collection 3
-#     link: null
+collections:
+  - name: Geoscience Australia Sentinel-1 Collection 1   
+    link: null
 
 # doi: 10.00000/000000
 # ecat_id: "100000"
@@ -43,15 +46,18 @@ is_currency_reported: false
 licence_name: Creative Commons Attribution 4.0 International Licence
 licence_link: https://creativecommons.org/licenses/by/4.0/
 
-# citation_data: "Bishop-Taylor, R., Nanson, R., Sagar, S., Lymburner, L. (2021). Digital Earth Australia Coastlines. Geoscience Australia, Canberra. https://doi.org/10.26186/116268"
-# citation_paper: "Bishop-Taylor, R., Nanson, R., Sagar, S., Lymburner, L. (2021). Mapping Australia's dynamic coastline at mean sea level using three decades of Landsat imagery. Remote Sensing of Environment, 267, 112734. https://doi.org/10.1016/j.rse.2021.112734"
+citation_data: "Geoscience Australia, 2026. Geoscience Australia Sentinel-1 IW Normalised Radar Backscatter Collection 1 - GA Sentinel-1 IW Normalised Radar Backscatter. Geoscience Australia, Canberra. *DOI link goes here* https://dx.doi.org/xxxxxxxxx  [Accessed DD Month YYYY]. "
+citation_paper: null
 
-# citations_custom:
+citations_custom: null
 #   - name: Custom citation
 #     citation: "Bishop-Taylor, R., Nanson, R., Sagar, S., Lymburner, L. (2021). Mapping Australia's dynamic coastline at mean sea level using three decades of Landsat imagery. Remote Sensing of Environment, 267, 112734. https://doi.org/10.1016/j.rse.2021.112734"
 
-# tags:
-#   - example_tag
+tags:
+  - geoscience_australia_sentinel_1_collection_1
+  - analysis_ready_data
+  - satellite_images
+  - earth_observation  
 
 # Access
 
@@ -98,7 +104,7 @@ licence_link: https://creativecommons.org/licenses/by/4.0/
 
 # SEO
 
-# meta_description: This field can be used for SEO.
+meta_description: null
 
 # Settings
 
@@ -107,6 +113,6 @@ enable_description: true
 enable_quality: true
 enable_specifications: true
 enable_access: true
-enable_history: true
+enable_history: false
 enable_faqs: false
 enable_credits: true
