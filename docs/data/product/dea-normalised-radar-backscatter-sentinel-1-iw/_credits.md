@@ -1,5 +1,3 @@
-% See the Product metadata fields documentation: https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/product_metadata_fields.html
-
 ## Acknowledgments
 
 Contains modified Copernicus Sentinel-1 data processed by Geoscience Australia. Sentinel-1 data were acquired through the European Union’s Copernicus Programme and supplied by the European Space Agency.

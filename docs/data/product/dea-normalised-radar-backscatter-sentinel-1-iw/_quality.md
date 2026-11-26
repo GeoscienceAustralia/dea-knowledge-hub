@@ -1,6 +1,3 @@
-% See the Product metadata fields documentation: https://docs.dev.dea.ga.gov.au/public_services/dea_knowledge_hub/product_metadata_fields.html
-
-
 ## Accuracy 
 
 The accuracy of the product is influenced by the Sentinel-1 observations, orbit information, digital elevation model and radar viewing geometry. Terrain correction is only as accurate as the digital elevation model. Changing ice surfaces, including calving fronts, ice-shelf edges and surging glaciers, may not be represented by the DEM and can produce radiometric or geometric artefacts. The impact of these artefacts can be reduced by applying the associated conversion layers, such as converting to sigma-nought (σ0) referenced to the ellipsoid, which is independent of the underlying terrain. 
