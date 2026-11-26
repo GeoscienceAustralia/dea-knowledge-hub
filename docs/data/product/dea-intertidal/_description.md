@@ -10,7 +10,7 @@ The DEA Intertidal product suite provides annual continental-scale elevation and
 
 ## What this product offers
 
-The DEA Intertidal product suite is the next generation of intertidal products developed by DEA [(Bishop-Taylor et al., 2026)](https://doi.org/10.1016/j.rse.2026.115663). It improves on the former [National Intertidal Digital Elevation Model](/data/product/dea-intertidal-elevation-landsat/) (NIDEM; Bishop-Taylor et al., 2019) and introduces several new features to help users better understand the intertidal environment.
+The DEA Intertidal product suite is the next generation of intertidal products developed by DEA ([Bishop-Taylor et al., 2026](https://doi.org/10.1016/j.rse.2026.115663)). It improves on the former [National Intertidal Digital Elevation Model](/data/product/dea-intertidal-elevation-landsat/) (NIDEM; [Bishop-Taylor et al., 2019](https://doi.org/10.1016/j.ecss.2019.03.006)) and introduces several new features to help users better understand the intertidal environment.
 
 While NIDEM provided the first 3D model of Australia's intertidal zone &mdash; the area of coastline exposed and flooded by ocean tides &mdash; the DEA Intertidal suite fundamentally advances how these dynamic coastal environments are mapped (Figure 1):
 
