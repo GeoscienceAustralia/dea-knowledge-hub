@@ -14,7 +14,7 @@ For more detailed technical information, view the [Hotspots Product Description 
 
 ## Satellites and sensors
 
-Currently, DEA Hotspots uses these sources of information.
+Currently, DEA Hotspots uses the following sources of information.
 
 | Satellite                      | Sensors used                                                     |
 |--------------------------------|------------------------------------------------------------------|
