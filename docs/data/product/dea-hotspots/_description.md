@@ -14,11 +14,14 @@ For more detailed technical information, view the [Hotspots Product Description 
 
 ## Satellites and sensors
 
-DEA Hotspot sources include the following.
+Currently, DEA Hotspots uses these sources of information.
 
-* Moderate Resolution Imaging Spectroradiometer (MODIS) sensor on the National Aeronautics and Space Administration (NASA) Aqua polar orbiting satellite.
-* Visible Infrared Imaging Radiometer Suite (VIIRS) on the Suomi National Polar orbiting Partnership (NPP) satellite, NOAA-20, and NOAA-21 polar orbiting satellites.
-* Advanced Himawari Imager (AHI) sensor operated by the Japan Meteorological Agency (JMA) on the Himawari-9 geostationary satellite.
+| Satellite | Sensors used |
+|---|---|
+| [NASA's Aqua spacecraft](https://science.nasa.gov/mission/aqua/about-aqua-spacecraft-and-instruments/) | * [Moderate Resolution Imaging Spectroradiometer (MODIS)](https://science.nasa.gov/mission/aqua/modis/) |
+| [NOAA-20](https://ncc.nesdis.noaa.gov/NOAA-20/index.php) | * Visible Infrared Imaging Radiometer Suite (VIIRS) |
+| [NOAA-21](https://ncc.nesdis.noaa.gov/NOAA-21/index.php) | * Visible Infrared Imaging Radiometer Suite (VIIRS) |
+| [JMA's Himawari-9 satellite](https://www.jma.go.jp/jma/jma-eng/satellite/himawari89.html) | * [Advanced Himawari Imager (AHI)](https://www.data.jma.go.jp/mscweb/en/himawari89/space_segment/spsg_ahi.html) |
 
 <!-- There are two versions of the DEA Hotspots system: -->
 <!-- * DEA Hotspots public version_number: [https://hotspots.dea.ga.gov.au/](https://hotspots.dea.ga.gov.au/) -->
