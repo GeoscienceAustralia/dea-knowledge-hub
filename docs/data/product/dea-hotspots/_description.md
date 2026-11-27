@@ -16,6 +16,14 @@ For more detailed technical information, view the [Hotspots Product Description 
 
 Currently, DEA Hotspots uses these sources of information.
 
+| Satellite                      | Sensors used                                                     |
+|--------------------------------|------------------------------------------------------------------|
+| [NASA's Aqua spacecraft][Aqua] | * [Moderate Resolution Imaging Spectroradiometer (MODIS)][MODIS] |
+| [NASA's Aqua spacecraft][Aqua] | * [Moderate Resolution Imaging Spectroradiometer (MODIS)][MODIS] |
+
+[Aqua]: https://science.nasa.gov/mission/aqua/about-aqua-spacecraft-and-instruments/
+[MODIS]: https://science.nasa.gov/mission/aqua/modis/
+
 | Satellite | Sensors used |
 |---|---|
 | [NASA's Aqua spacecraft](https://science.nasa.gov/mission/aqua/about-aqua-spacecraft-and-instruments/) | * [Moderate Resolution Imaging Spectroradiometer (MODIS)](https://science.nasa.gov/mission/aqua/modis/) |
