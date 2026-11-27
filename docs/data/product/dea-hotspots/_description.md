@@ -16,7 +16,7 @@ For more detailed technical information, view the [Hotspots Product Description 
 
 Currently, DEA Hotspots uses the following sources of information.
 
-<table>
+<table class="table">
     <thead>
         <tr>
             <th>Satellite</th>
