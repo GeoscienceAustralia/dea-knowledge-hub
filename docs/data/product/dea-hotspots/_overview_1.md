@@ -1,5 +1,6 @@
 :::{admonition} Important
 :class: danger
+
 Hotspots data is not published in real-time and should not be used for safety of life decisions.
 :::
 
