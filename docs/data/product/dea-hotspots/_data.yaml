@@ -15,11 +15,11 @@ lineage_type: Data service
 spatial_data_type: VECTOR
 
 spatial_coverage: null
-temporal_coverage_start: 27 Aug 2002
-temporal_coverage_end: Present
+temporal_coverage_start: 27 August 2002
+temporal_coverage_end: present
 temporal_coverage_custom: null
 
-data_update_frequency: 10_MIN
+data_update_frequency: Varies by data source
 data_update_activity: ONGOING
 is_currency_reported: true
 

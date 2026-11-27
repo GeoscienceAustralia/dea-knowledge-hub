@@ -264,28 +264,28 @@
       :Resolution: {{ page.data.resolution }}
       {%- endif %}
       {%- if page.data.temporal_coverage_custom %}
-      :Coverage: {{ page.data.temporal_coverage_custom }}
+      :Temporal coverage: {{ page.data.temporal_coverage_custom }}
       {%- elif page.data.temporal_coverage_start and page.data.temporal_coverage_end %}
-      :Coverage: {{ page.data.temporal_coverage_start }} to {{ page.data.temporal_coverage_end }}
+      :Temporal coverage: {{ page.data.temporal_coverage_start }} to {{ page.data.temporal_coverage_end }}
       {%- elif page.data.temporal_coverage_start %}
-      :Coverage start: {{ page.data.temporal_coverage_start }}
+      :Temporal coverage: Since {{ page.data.temporal_coverage_start }}
       {%- elif page.data.temporal_coverage_end %}
-      :Coverage end: {{ page.data.temporal_coverage_end }}
+      :Temporal coverage: Until {{ page.data.temporal_coverage_end }}
       {%- endif %}
       {%- if is_activity_ongoing and is_frequency_multiple_words and page.data.is_latest_version %}
-      :Data updates: {{ data_update_frequency }}, {{ data_update_activity }}
+      :Update frequency: {{ data_update_frequency }}, {{ data_update_activity }}
       {%- elif is_activity_ongoing and page.data.is_latest_version %}
-      :Data updates: {{ data_update_frequency }} frequency, {{ data_update_activity }}
+      :Update frequency: {{ data_update_frequency }} frequency, {{ data_update_activity }}
       {%- elif is_activity_non_ongoing and page.data.is_latest_version %}
-      :Data updates: {{ data_update_activity }}
+      :Update frequency: {{ data_update_activity }}
       {%- elif is_frequency_multiple_words and not page.data.is_latest_version %}
-      :Data updates: {{ data_update_activity_terms.NO_UPDATES }} (Previously: {{ data_update_frequency }})
+      :Update frequency: {{ data_update_activity_terms.NO_UPDATES }} (Previously: {{ data_update_frequency }})
       {%- elif not page.data.is_latest_version %}
-      :Data updates: {{ data_update_activity_terms.NO_UPDATES }} (Previously: {{ data_update_frequency }} frequency)
+      :Update frequency: {{ data_update_activity_terms.NO_UPDATES }} (Previously: {{ data_update_frequency }} frequency)
       {%- elif is_frequency_multiple_words %}
-      :Data updates: {{ data_update_activity }} (Previously: {{ data_update_frequency }})
+      :Update frequency: {{ data_update_activity }} (Previously: {{ data_update_frequency }})
       {%- else %}
-      :Data updates: {{ data_update_activity }} (Previously: {{ data_update_frequency }} frequency)
+      :Update frequency: {{ data_update_activity }} (Previously: {{ data_update_frequency }} frequency)
       {%- endif %}
 
    .. container::
