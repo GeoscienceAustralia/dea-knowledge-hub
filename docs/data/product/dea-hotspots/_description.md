@@ -16,20 +16,48 @@ For more detailed technical information, view the [Hotspots Product Description 
 
 Currently, DEA Hotspots uses the following sources of information.
 
-| Satellite                      | Sensors used                                                     |
-|--------------------------------|------------------------------------------------------------------|
-| [NASA's Aqua spacecraft][Aqua] | * [Moderate Resolution Imaging Spectroradiometer (MODIS)][MODIS] |
-| [NASA's Aqua spacecraft][Aqua] | * [Moderate Resolution Imaging Spectroradiometer (MODIS)][MODIS] |
-
-[Aqua]: https://science.nasa.gov/mission/aqua/about-aqua-spacecraft-and-instruments/
-[MODIS]: https://science.nasa.gov/mission/aqua/modis/
-
-| Satellite | Sensors used |
-|---|---|
-| [NASA's Aqua spacecraft](https://science.nasa.gov/mission/aqua/about-aqua-spacecraft-and-instruments/) | * [Moderate Resolution Imaging Spectroradiometer (MODIS)](https://science.nasa.gov/mission/aqua/modis/) |
-| [NOAA-20](https://ncc.nesdis.noaa.gov/NOAA-20/index.php) | * Visible Infrared Imaging Radiometer Suite (VIIRS) |
-| [NOAA-21](https://ncc.nesdis.noaa.gov/NOAA-21/index.php) | * Visible Infrared Imaging Radiometer Suite (VIIRS) |
-| [JMA's Himawari-9 satellite](https://www.jma.go.jp/jma/jma-eng/satellite/himawari89.html) | * [Advanced Himawari Imager (AHI)](https://www.data.jma.go.jp/mscweb/en/himawari89/space_segment/spsg_ahi.html) |
+<table>
+    <thead>
+        <tr>
+            <th>Satellite</th>
+            <th>Sensors used</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><a href="https://science.nasa.gov/mission/aqua/about-aqua-spacecraft-and-instruments/">NASA’s Aqua spacecraft</a></td>
+            <td>
+                <ul>
+                    <li><a href="https://science.nasa.gov/mission/aqua/modis/">Moderate Resolution Imaging Spectroradiometer (MODIS)</a></li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td><a href="https://ncc.nesdis.noaa.gov/NOAA-20/index.php">NOAA-20</a></td>
+            <td>
+                <ul>
+                    <li>Visible Infrared Imaging Radiometer Suite (VIIRS)</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td><a href="https://ncc.nesdis.noaa.gov/NOAA-21/index.php">NOAA-21</a></td>
+            <td>
+                <ul>
+                    <li>Visible Infrared Imaging Radiometer Suite (VIIRS)</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td><a href="https://www.jma.go.jp/jma/jma-eng/satellite/himawari89.html">JMA’s Himawari-9 satellite</a></td>
+            <td>
+                <ul>
+                    <li><a href="https://www.data.jma.go.jp/mscweb/en/himawari89/space_segment/spsg_ahi.html">Advanced Himawari Imager (AHI)</a></li>
+                </ul>
+            </td>
+        </tr>
+    </tbody>
+</table>
 
 <!-- There are two versions of the DEA Hotspots system: -->
 <!-- * DEA Hotspots public version_number: [https://hotspots.dea.ga.gov.au/](https://hotspots.dea.ga.gov.au/) -->
